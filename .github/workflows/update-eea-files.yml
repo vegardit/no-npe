@@ -26,7 +26,6 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    concurrency: ci-${{ github.ref }}
     steps:
 
     - name: Git Checkout
@@ -72,7 +71,7 @@ jobs:
         
         updates=$(git -C . ls-files -o -m -d --exclude-standard)
 
-        if [[ -z $updates ]] then
+        if [[ -z $updates ]]; then
           echo "::set-output name=updates::"
         else
           # see https://trstringer.com/github-actions-multiline-strings/
