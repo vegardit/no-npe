@@ -1,0 +1,71 @@
+class org/apache/commons/lang3/Functions
+
+accept
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableBiConsumer<TO1;TO2;TT;>;TO1;TO2;)V
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableBiConsumer<TO1;TO2;TT;>;TO1;TO2;)V
+accept
+ <O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableConsumer<TO;TT;>;TO;)V
+ <O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableConsumer<TO;TT;>;TO;)V
+apply
+ <I:Ljava/lang/Object;O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableFunction<TI;TO;TT;>;TI;)TO;
+ <I:Ljava/lang/Object;O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableFunction<TI;TO;TT;>;TI;)TO;
+apply
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableBiFunction<TO1;TO2;TO;TT;>;TO1;TO2;)TO;
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableBiFunction<TO1;TO2;TO;TT;>;TO1;TO2;)TO;
+asBiConsumer
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableBiConsumer<TO1;TO2;*>;)Ljava/util/function/BiConsumer<TO1;TO2;>;
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableBiConsumer<TO1;TO2;*>;)Ljava/util/function/BiConsumer<TO1;TO2;>;
+asBiFunction
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;O:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableBiFunction<TO1;TO2;TO;*>;)Ljava/util/function/BiFunction<TO1;TO2;TO;>;
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;O:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableBiFunction<TO1;TO2;TO;*>;)Ljava/util/function/BiFunction<TO1;TO2;TO;>;
+asBiPredicate
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableBiPredicate<TO1;TO2;*>;)Ljava/util/function/BiPredicate<TO1;TO2;>;
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableBiPredicate<TO1;TO2;*>;)Ljava/util/function/BiPredicate<TO1;TO2;>;
+asCallable
+ <O:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableCallable<TO;*>;)Ljava/util/concurrent/Callable<TO;>;
+ <O:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableCallable<TO;*>;)Ljava/util/concurrent/Callable<TO;>;
+asConsumer
+ <I:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableConsumer<TI;*>;)Ljava/util/function/Consumer<TI;>;
+ <I:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableConsumer<TI;*>;)Ljava/util/function/Consumer<TI;>;
+asFunction
+ <I:Ljava/lang/Object;O:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableFunction<TI;TO;*>;)Ljava/util/function/Function<TI;TO;>;
+ <I:Ljava/lang/Object;O:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableFunction<TI;TO;*>;)Ljava/util/function/Function<TI;TO;>;
+asPredicate
+ <I:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailablePredicate<TI;*>;)Ljava/util/function/Predicate<TI;>;
+ <I:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailablePredicate<TI;*>;)Ljava/util/function/Predicate<TI;>;
+asRunnable
+ (Lorg/apache/commons/lang3/Functions$FailableRunnable<*>;)Ljava/lang/Runnable;
+ (Lorg/apache/commons/lang3/Functions$FailableRunnable<*>;)Ljava/lang/Runnable;
+asSupplier
+ <O:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableSupplier<TO;*>;)Ljava/util/function/Supplier<TO;>;
+ <O:Ljava/lang/Object;>(Lorg/apache/commons/lang3/Functions$FailableSupplier<TO;*>;)Ljava/util/function/Supplier<TO;>;
+call
+ <O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableCallable<TO;TT;>;)TO;
+ <O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableCallable<TO;TT;>;)TO;
+get
+ <O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableSupplier<TO;TT;>;)TO;
+ <O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableSupplier<TO;TT;>;)TO;
+rethrow
+ (Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+ (Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+run
+ <T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableRunnable<TT;>;)V
+ <T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableRunnable<TT;>;)V
+stream
+ <O:Ljava/lang/Object;>(Ljava/util/Collection<TO;>;)Lorg/apache/commons/lang3/Streams$FailableStream<TO;>;
+ <O:Ljava/lang/Object;>(Ljava/util/Collection<TO;>;)Lorg/apache/commons/lang3/Streams$FailableStream<TO;>;
+stream
+ <O:Ljava/lang/Object;>(Ljava/util/stream/Stream<TO;>;)Lorg/apache/commons/lang3/Streams$FailableStream<TO;>;
+ <O:Ljava/lang/Object;>(Ljava/util/stream/Stream<TO;>;)Lorg/apache/commons/lang3/Streams$FailableStream<TO;>;
+test
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableBiPredicate<TO1;TO2;TT;>;TO1;TO2;)Z
+ <O1:Ljava/lang/Object;O2:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailableBiPredicate<TO1;TO2;TT;>;TO1;TO2;)Z
+test
+ <O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailablePredicate<TO;TT;>;TO;)Z
+ <O:Ljava/lang/Object;T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/Functions$FailablePredicate<TO;TT;>;TO;)Z
+tryWithResources
+ (Lorg/apache/commons/lang3/Functions$FailableRunnable<+Ljava/lang/Throwable;>;Lorg/apache/commons/lang3/Functions$FailableConsumer<Ljava/lang/Throwable;+Ljava/lang/Throwable;>;[Lorg/apache/commons/lang3/Functions$FailableRunnable<+Ljava/lang/Throwable;>;)V
+ (Lorg/apache/commons/lang3/Functions$FailableRunnable<+Ljava/lang/Throwable;>;Lorg/apache/commons/lang3/Functions$FailableConsumer<Ljava/lang/Throwable;+Ljava/lang/Throwable;>;[Lorg/apache/commons/lang3/Functions$FailableRunnable<+Ljava/lang/Throwable;>;)V
+tryWithResources
+ (Lorg/apache/commons/lang3/Functions$FailableRunnable<+Ljava/lang/Throwable;>;[Lorg/apache/commons/lang3/Functions$FailableRunnable<+Ljava/lang/Throwable;>;)V
+ (Lorg/apache/commons/lang3/Functions$FailableRunnable<+Ljava/lang/Throwable;>;[Lorg/apache/commons/lang3/Functions$FailableRunnable<+Ljava/lang/Throwable;>;)V

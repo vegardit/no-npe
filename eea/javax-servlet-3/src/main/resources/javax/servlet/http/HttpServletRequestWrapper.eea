@@ -1,0 +1,86 @@
+class javax/servlet/http/HttpServletRequestWrapper
+
+<init>
+ (Ljavax/servlet/http/HttpServletRequest;)V
+ (Ljavax/servlet/http/HttpServletRequest;)V
+authenticate
+ (Ljavax/servlet/http/HttpServletResponse;)Z
+ (Ljavax/servlet/http/HttpServletResponse;)Z
+changeSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getAuthType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getContextPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCookies
+ ()[Ljavax/servlet/http/Cookie;
+ ()[Ljavax/servlet/http/Cookie;
+getDateHeader
+ (Ljava/lang/String;)J
+ (Ljava/lang/String;)J
+getHeader
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getHeaderNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getHeaders
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+getIntHeader
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+getMethod
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPart
+ (Ljava/lang/String;)Ljavax/servlet/http/Part;
+ (Ljava/lang/String;)Ljavax/servlet/http/Part;
+getParts
+ ()Ljava/util/Collection<Ljavax/servlet/http/Part;>;
+ ()Ljava/util/Collection<Ljavax/servlet/http/Part;>;
+getPathInfo
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPathTranslated
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getQueryString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRemoteUser
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRequestURI
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRequestURL
+ ()Ljava/lang/StringBuffer;
+ ()Ljava/lang/StringBuffer;
+getRequestedSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getServletPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSession
+ ()Ljavax/servlet/http/HttpSession;
+ ()Ljavax/servlet/http/HttpSession;
+getSession
+ (Z)Ljavax/servlet/http/HttpSession;
+ (Z)Ljavax/servlet/http/HttpSession;
+getUserPrincipal
+ ()Ljava/security/Principal;
+ ()Ljava/security/Principal;
+isUserInRole
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+login
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+upgrade
+ <T::Ljavax/servlet/http/HttpUpgradeHandler;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljavax/servlet/http/HttpUpgradeHandler;>(Ljava/lang/Class<TT;>;)TT;
