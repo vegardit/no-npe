@@ -1,0 +1,24 @@
+class org/apache/commons/io/file/CleaningPathVisitor
+
+withBigIntegerCounters
+ ()Lorg/apache/commons/io/file/CountingPathVisitor;
+ ()Lorg/apache/commons/io/file/CountingPathVisitor;
+withLongCounters
+ ()Lorg/apache/commons/io/file/CountingPathVisitor;
+ ()Lorg/apache/commons/io/file/CountingPathVisitor;
+
+<init>
+ (Lorg/apache/commons/io/file/Counters$PathCounters;[Ljava/lang/String;)V
+ (Lorg/apache/commons/io/file/Counters$PathCounters;[Ljava/lang/String;)V
+<init>
+ (Lorg/apache/commons/io/file/Counters$PathCounters;[Lorg/apache/commons/io/file/DeleteOption;[Ljava/lang/String;)V
+ (Lorg/apache/commons/io/file/Counters$PathCounters;[Lorg/apache/commons/io/file/DeleteOption;[Ljava/lang/String;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+preVisitDirectory
+ (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+ (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+visitFile
+ (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+ (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;

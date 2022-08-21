@@ -1,0 +1,48 @@
+class java/net/URLClassLoader
+
+newInstance
+ ([Ljava/net/URL;)Ljava/net/URLClassLoader;
+ ([Ljava/net/URL;)Ljava/net/URLClassLoader;
+newInstance
+ ([Ljava/net/URL;Ljava/lang/ClassLoader;)Ljava/net/URLClassLoader;
+ ([Ljava/net/URL;Ljava/lang/ClassLoader;)Ljava/net/URLClassLoader;
+
+<init>
+ (Ljava/lang/String;[Ljava/net/URL;Ljava/lang/ClassLoader;)V
+ (Ljava/lang/String;[Ljava/net/URL;Ljava/lang/ClassLoader;)V
+<init>
+ (Ljava/lang/String;[Ljava/net/URL;Ljava/lang/ClassLoader;Ljava/net/URLStreamHandlerFactory;)V
+ (Ljava/lang/String;[Ljava/net/URL;Ljava/lang/ClassLoader;Ljava/net/URLStreamHandlerFactory;)V
+<init>
+ ([Ljava/net/URL;)V
+ ([Ljava/net/URL;)V
+<init>
+ ([Ljava/net/URL;Ljava/lang/ClassLoader;)V
+ ([Ljava/net/URL;Ljava/lang/ClassLoader;)V
+<init>
+ ([Ljava/net/URL;Ljava/lang/ClassLoader;Ljava/net/URLStreamHandlerFactory;)V
+ ([Ljava/net/URL;Ljava/lang/ClassLoader;Ljava/net/URLStreamHandlerFactory;)V
+addURL
+ (Ljava/net/URL;)V
+ (Ljava/net/URL;)V
+definePackage
+ (Ljava/lang/String;Ljava/util/jar/Manifest;Ljava/net/URL;)Ljava/lang/Package;
+ (Ljava/lang/String;Ljava/util/jar/Manifest;Ljava/net/URL;)Ljava/lang/Package;
+findClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+findResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+findResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+getPermissions
+ (Ljava/security/CodeSource;)Ljava/security/PermissionCollection;
+ (Ljava/security/CodeSource;)Ljava/security/PermissionCollection;
+getResourceAsStream
+ (Ljava/lang/String;)Ljava/io/InputStream;
+ (Ljava/lang/String;)Ljava/io/InputStream;
+getURLs
+ ()[Ljava/net/URL;
+ ()[Ljava/net/URL;
