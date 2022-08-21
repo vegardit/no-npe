@@ -1,0 +1,84 @@
+class org/apache/commons/lang3/reflect/TypeUtils
+
+WILDCARD_ALL
+ Ljava/lang/reflect/WildcardType;
+ L1java/lang/reflect/WildcardType;
+
+containsTypeVariables
+ (Ljava/lang/reflect/Type;)Z
+ (Ljava/lang/reflect/Type;)Z
+determineTypeArguments
+ (Ljava/lang/Class<*>;Ljava/lang/reflect/ParameterizedType;)Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;
+ (Ljava/lang/Class<*>;Ljava/lang/reflect/ParameterizedType;)Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;
+equals
+ (Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Z
+ (Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Z
+genericArrayType
+ (Ljava/lang/reflect/Type;)Ljava/lang/reflect/GenericArrayType;
+ (Ljava/lang/reflect/Type;)Ljava/lang/reflect/GenericArrayType;
+getArrayComponentType
+ (Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+ (Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+getImplicitBounds
+ (Ljava/lang/reflect/TypeVariable<*>;)[Ljava/lang/reflect/Type;
+ (Ljava/lang/reflect/TypeVariable<*>;)[Ljava/lang/reflect/Type;
+getImplicitLowerBounds
+ (Ljava/lang/reflect/WildcardType;)[Ljava/lang/reflect/Type;
+ (Ljava/lang/reflect/WildcardType;)[Ljava/lang/reflect/Type;
+getImplicitUpperBounds
+ (Ljava/lang/reflect/WildcardType;)[Ljava/lang/reflect/Type;
+ (Ljava/lang/reflect/WildcardType;)[Ljava/lang/reflect/Type;
+getRawType
+ (Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Ljava/lang/Class<*>;
+ (Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Ljava/lang/Class<*>;
+getTypeArguments
+ (Ljava/lang/reflect/ParameterizedType;)Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;
+ (Ljava/lang/reflect/ParameterizedType;)Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;
+getTypeArguments
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;)Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;)Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;
+isArrayType
+ (Ljava/lang/reflect/Type;)Z
+ (Ljava/lang/reflect/Type;)Z
+isAssignable
+ (Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Z
+ (Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Z
+isInstance
+ (Ljava/lang/Object;Ljava/lang/reflect/Type;)Z
+ (Ljava/lang/Object;Ljava/lang/reflect/Type;)Z
+normalizeUpperBounds
+ ([Ljava/lang/reflect/Type;)[Ljava/lang/reflect/Type;
+ ([Ljava/lang/reflect/Type;)[Ljava/lang/reflect/Type;
+parameterize
+ (Ljava/lang/Class<*>;Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;)Ljava/lang/reflect/ParameterizedType;
+ (Ljava/lang/Class<*>;Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;)Ljava/lang/reflect/ParameterizedType;
+parameterize
+ (Ljava/lang/Class<*>;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/ParameterizedType;
+ (Ljava/lang/Class<*>;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/ParameterizedType;
+parameterizeWithOwner
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;)Ljava/lang/reflect/ParameterizedType;
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;)Ljava/lang/reflect/ParameterizedType;
+parameterizeWithOwner
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/ParameterizedType;
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/ParameterizedType;
+toLongString
+ (Ljava/lang/reflect/TypeVariable<*>;)Ljava/lang/String;
+ (Ljava/lang/reflect/TypeVariable<*>;)Ljava/lang/String;
+toString
+ (Ljava/lang/reflect/Type;)Ljava/lang/String;
+ (Ljava/lang/reflect/Type;)Ljava/lang/String;
+typesSatisfyVariables
+ (Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;)Z
+ (Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;)Z
+unrollVariables
+ (Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+ (Ljava/util/Map<Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/reflect/Type;>;Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+wildcardType
+ ()Lorg/apache/commons/lang3/reflect/TypeUtils$WildcardTypeBuilder;
+ ()Lorg/apache/commons/lang3/reflect/TypeUtils$WildcardTypeBuilder;
+wrap
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/apache/commons/lang3/reflect/Typed<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/apache/commons/lang3/reflect/Typed<TT;>;
+wrap
+ <T:Ljava/lang/Object;>(Ljava/lang/reflect/Type;)Lorg/apache/commons/lang3/reflect/Typed<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/reflect/Type;)Lorg/apache/commons/lang3/reflect/Typed<TT;>;

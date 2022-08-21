@@ -1,0 +1,38 @@
+class org/apache/commons/io/filefilter/AndFileFilter
+
+<init>
+ (Ljava/util/List<Lorg/apache/commons/io/filefilter/IOFileFilter;>;)V
+ (Ljava/util/List<Lorg/apache/commons/io/filefilter/IOFileFilter;>;)V
+<init>
+ (Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)V
+ (Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)V
+<init>
+ ([Lorg/apache/commons/io/filefilter/IOFileFilter;)V
+ ([Lorg/apache/commons/io/filefilter/IOFileFilter;)V
+accept
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+accept
+ (Ljava/io/File;Ljava/lang/String;)Z
+ (Ljava/io/File;Ljava/lang/String;)Z
+accept
+ (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+ (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+addFileFilter
+ (Lorg/apache/commons/io/filefilter/IOFileFilter;)V
+ (Lorg/apache/commons/io/filefilter/IOFileFilter;)V
+addFileFilter
+ ([Lorg/apache/commons/io/filefilter/IOFileFilter;)V
+ ([Lorg/apache/commons/io/filefilter/IOFileFilter;)V
+getFileFilters
+ ()Ljava/util/List<Lorg/apache/commons/io/filefilter/IOFileFilter;>;
+ ()Ljava/util/List<Lorg/apache/commons/io/filefilter/IOFileFilter;>;
+removeFileFilter
+ (Lorg/apache/commons/io/filefilter/IOFileFilter;)Z
+ (Lorg/apache/commons/io/filefilter/IOFileFilter;)Z
+setFileFilters
+ (Ljava/util/List<Lorg/apache/commons/io/filefilter/IOFileFilter;>;)V
+ (Ljava/util/List<Lorg/apache/commons/io/filefilter/IOFileFilter;>;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

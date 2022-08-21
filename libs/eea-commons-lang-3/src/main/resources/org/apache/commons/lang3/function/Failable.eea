@@ -1,0 +1,98 @@
+class org/apache/commons/lang3/function/Failable
+
+accept
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableDoubleConsumer<TE;>;D)V
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableDoubleConsumer<TE;>;D)V
+accept
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableIntConsumer<TE;>;I)V
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableIntConsumer<TE;>;I)V
+accept
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableLongConsumer<TE;>;J)V
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableLongConsumer<TE;>;J)V
+accept
+ <T:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableConsumer<TT;TE;>;TT;)V
+ <T:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableConsumer<TT;TE;>;TT;)V
+accept
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBiConsumer<TT;TU;TE;>;TT;TU;)V
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBiConsumer<TT;TU;TE;>;TT;TU;)V
+apply
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableFunction<TT;TR;TE;>;TT;)TR;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableFunction<TT;TR;TE;>;TT;)TR;
+apply
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBiFunction<TT;TU;TR;TE;>;TT;TU;)TR;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBiFunction<TT;TU;TR;TE;>;TT;TU;)TR;
+applyAsDouble
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableDoubleBinaryOperator<TE;>;DD)D
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableDoubleBinaryOperator<TE;>;DD)D
+asBiConsumer
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableBiConsumer<TT;TU;*>;)Ljava/util/function/BiConsumer<TT;TU;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableBiConsumer<TT;TU;*>;)Ljava/util/function/BiConsumer<TT;TU;>;
+asBiFunction
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableBiFunction<TT;TU;TR;*>;)Ljava/util/function/BiFunction<TT;TU;TR;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableBiFunction<TT;TU;TR;*>;)Ljava/util/function/BiFunction<TT;TU;TR;>;
+asBiPredicate
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableBiPredicate<TT;TU;*>;)Ljava/util/function/BiPredicate<TT;TU;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableBiPredicate<TT;TU;*>;)Ljava/util/function/BiPredicate<TT;TU;>;
+asCallable
+ <V:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableCallable<TV;*>;)Ljava/util/concurrent/Callable<TV;>;
+ <V:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableCallable<TV;*>;)Ljava/util/concurrent/Callable<TV;>;
+asConsumer
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableConsumer<TT;*>;)Ljava/util/function/Consumer<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableConsumer<TT;*>;)Ljava/util/function/Consumer<TT;>;
+asFunction
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableFunction<TT;TR;*>;)Ljava/util/function/Function<TT;TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableFunction<TT;TR;*>;)Ljava/util/function/Function<TT;TR;>;
+asPredicate
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailablePredicate<TT;*>;)Ljava/util/function/Predicate<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailablePredicate<TT;*>;)Ljava/util/function/Predicate<TT;>;
+asRunnable
+ (Lorg/apache/commons/lang3/function/FailableRunnable<*>;)Ljava/lang/Runnable;
+ (Lorg/apache/commons/lang3/function/FailableRunnable<*>;)Ljava/lang/Runnable;
+asSupplier
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableSupplier<TT;*>;)Ljava/util/function/Supplier<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableSupplier<TT;*>;)Ljava/util/function/Supplier<TT;>;
+call
+ <V:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableCallable<TV;TE;>;)TV;
+ <V:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableCallable<TV;TE;>;)TV;
+get
+ <T:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableSupplier<TT;TE;>;)TT;
+ <T:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableSupplier<TT;TE;>;)TT;
+getAsBoolean
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBooleanSupplier<TE;>;)Z
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBooleanSupplier<TE;>;)Z
+getAsDouble
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableDoubleSupplier<TE;>;)D
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableDoubleSupplier<TE;>;)D
+getAsInt
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableIntSupplier<TE;>;)I
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableIntSupplier<TE;>;)I
+getAsLong
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableLongSupplier<TE;>;)J
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableLongSupplier<TE;>;)J
+getAsShort
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableShortSupplier<TE;>;)S
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableShortSupplier<TE;>;)S
+rethrow
+ (Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+ (Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+run
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableRunnable<TE;>;)V
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableRunnable<TE;>;)V
+stream
+ <E:Ljava/lang/Object;>(Ljava/util/Collection<TE;>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TE;>;
+ <E:Ljava/lang/Object;>(Ljava/util/Collection<TE;>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TE;>;
+stream
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TT;>;
+test
+ <T:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailablePredicate<TT;TE;>;TT;)Z
+ <T:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailablePredicate<TT;TE;>;TT;)Z
+test
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBiPredicate<TT;TU;TE;>;TT;TU;)Z
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBiPredicate<TT;TU;TE;>;TT;TU;)Z
+tryWithResources
+ (Lorg/apache/commons/lang3/function/FailableRunnable<+Ljava/lang/Throwable;>;Lorg/apache/commons/lang3/function/FailableConsumer<Ljava/lang/Throwable;+Ljava/lang/Throwable;>;[Lorg/apache/commons/lang3/function/FailableRunnable<+Ljava/lang/Throwable;>;)V
+ (Lorg/apache/commons/lang3/function/FailableRunnable<+Ljava/lang/Throwable;>;Lorg/apache/commons/lang3/function/FailableConsumer<Ljava/lang/Throwable;+Ljava/lang/Throwable;>;[Lorg/apache/commons/lang3/function/FailableRunnable<+Ljava/lang/Throwable;>;)V
+tryWithResources
+ (Lorg/apache/commons/lang3/function/FailableRunnable<+Ljava/lang/Throwable;>;[Lorg/apache/commons/lang3/function/FailableRunnable<+Ljava/lang/Throwable;>;)V
+ (Lorg/apache/commons/lang3/function/FailableRunnable<+Ljava/lang/Throwable;>;[Lorg/apache/commons/lang3/function/FailableRunnable<+Ljava/lang/Throwable;>;)V

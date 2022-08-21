@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+   <!--
+   SPDX-FileCopyrightText: © 2022 Vegard IT GmbH (https://vegardit.com) and contributors.
+   SPDX-License-Identifier: EPL-2.0
+
+   Author: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
+   -->
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.vegardit.maven</groupId>
+    <artifactId>vegardit-maven-parent</artifactId>
+    <version>3.0.4</version>
+  </parent>
+
+  <groupId>com.vegardit.no-npe</groupId>
+  <artifactId>no-npe-parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+
+  <description>Eclipse External (null) Annotations for better static Null Analysis</description>
+  <url>https://github.com/vegardit/no-npe</url>
+  <inceptionYear>2010</inceptionYear>
+  <organization>
+    <!-- used as Specification/Implementation-Vendor in MANIFEST.MF -->
+    <name>No NPE!</name>
+  </organization>
+  <licenses>
+    <license>
+      <name>Eclipse Public License 2.0</name>
+      <distribution>repo</distribution>
+      <url>https://spdx.org/licenses/EPL-2.0</url>
+    </license>
+  </licenses>
+
+
+  <properties>
+    <java.version>11</java.version>
+
+    <skip.japicmp.cmp>true</skip.japicmp.cmp>
+
+    <nexus-staging-maven-plugin.nexusUrl>https://s01.oss.sonatype.org/</nexus-staging-maven-plugin.nexusUrl>
+
+    <eea-generator.action>validate</eea-generator.action>
+  </properties>
+
+
+  <modules>
+    <module>eea-generator</module>
+    <module>libs/eea-commons-io-2</module>
+    <module>libs/eea-commons-lang-3</module>
+    <module>libs/eea-java-11</module>
+    <module>libs/eea-java-17</module>
+    <module>libs/eea-javax-mail-1</module>
+    <module>libs/eea-javax-servlet-4</module>
+    <module>libs/eea-junit-5</module>
+    <module>libs/eea-osgi-core-8</module>
+    <module>libs/eea-slf4j-1</module>
+    <module>libs/eea-slf4j-2</module>
+    <module>libs/eea-xstream-1</module>
+    <module>eea-all</module>
+  </modules>
+
+  <scm>
+    <!-- http://maven.apache.org/scm/git.html -->
+    <url>https://github.com/vegardit/no-npe</url>
+    <connection>scm:git:https://github.com/vegardit/no-npe.git</connection>
+    <developerConnection>scm:git:https://github.com/vegardit/no-npe.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+
+  <issueManagement>
+    <system>github.com</system>
+    <url>https://github.com/vegardit/no-npe/issues</url>
+  </issueManagement>
+
+
+  <ciManagement>
+    <system>github.com</system>
+    <url>https://github.com/vegardit/no-npe/actions</url>
+  </ciManagement>
+
+
+  <profiles>
+    <profile>
+      <id>process-eeas</id>
+      <activation>
+        <file>
+          <exists>eea-generator.properties</exists>
+        </file>
+      </activation>
+
+      <dependencies>
+        <dependency>
+          <!-- TODO this should actually a plugin dependency of exec-maven-plugin but the classpath management
+                 of the exec:exec goal is broken, see https://github.com/mojohaus/exec-maven-plugin/issues/79 -->
+          <groupId>com.vegardit.no-npe</groupId>
+          <artifactId>no-npe-eea-generator</artifactId>
+          <version>${project.version}</version>
+          <optional>true</optional>
+        </dependency>
+      </dependencies>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+              <execution>
+                <id>process-eeas</id>
+                <phase>generate-resources</phase>
+                <goals>
+                  <goal>exec</goal>
+                </goals>
+                <configuration>
+                  <executableDependency>
+                    <groupId>com.vegardit.no-npe</groupId>
+                    <artifactId>no-npe-eea-generator</artifactId>
+                  </executableDependency>
+                  <executable>java</executable>
+                  <arguments>
+                    <argument>-Deea-generator.action=${eea-generator.action}</argument>
+                    <argument>-classpath</argument>
+                    <classpath />
+                    <argument>com.vegardit.no_npe.eea_generator.EEAGenerator</argument>
+                    <argument>${project.basedir}/eea-generator.properties</argument>
+                  </arguments>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

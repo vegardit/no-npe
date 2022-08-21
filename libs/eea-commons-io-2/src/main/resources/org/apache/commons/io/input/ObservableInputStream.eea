@@ -1,0 +1,29 @@
+class org/apache/commons/io/input/ObservableInputStream
+
+<init>
+ (Ljava/io/InputStream;)V
+ (Ljava/io/InputStream;)V
+<init>
+ (Ljava/io/InputStream;[Lorg/apache/commons/io/input/ObservableInputStream$Observer;)V
+ (Ljava/io/InputStream;[Lorg/apache/commons/io/input/ObservableInputStream$Observer;)V
+add
+ (Lorg/apache/commons/io/input/ObservableInputStream$Observer;)V
+ (Lorg/apache/commons/io/input/ObservableInputStream$Observer;)V
+getObservers
+ ()Ljava/util/List<Lorg/apache/commons/io/input/ObservableInputStream$Observer;>;
+ ()Ljava/util/List<Lorg/apache/commons/io/input/ObservableInputStream$Observer;>;
+noteDataBytes
+ ([BII)V
+ ([BII)V
+noteError
+ (Ljava/io/IOException;)V
+ (Ljava/io/IOException;)V
+read
+ ([B)I
+ ([B)I
+read
+ ([BII)I
+ ([BII)I
+remove
+ (Lorg/apache/commons/io/input/ObservableInputStream$Observer;)V
+ (Lorg/apache/commons/io/input/ObservableInputStream$Observer;)V

@@ -1,0 +1,98 @@
+# SPDX-FileCopyrightText: © 2022 Vegard IT GmbH (https://vegardit.com) and contributors.
+# SPDX-License-Identifier: EPL-2.0
+#
+# Author: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
+#
+# https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
+name: Update EEA Files
+
+on:
+  schedule:
+    # https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows
+    - cron: '0 5 * * *' # daily at 5 a.m.
+  workflow_dispatch:
+    # https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+    inputs:
+      additional_maven_args:
+        description: 'Additional Maven Args'
+        required: false
+        default: ''
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Git Checkout
+      uses: actions/checkout@v3 # https://github.com/actions/checkout
+    - name: Git Checkout
+      uses: actions/checkout@v3 # https://github.com/actions/checkout
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3 # https://github.com/actions/setup-java
+      with:
+        distribution: temurin
+        java-version: 11
+    - run: echo "JAVA11_HOME=$JAVA_HOME" >> $GITHUB_ENV
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3 # https://github.com/actions/setup-java
+      with:
+        distribution: temurin
+        java-version: 17
+    - run: echo "JAVA17_HOME=$JAVA_HOME" >> $GITHUB_ENV
+
+    - name: "Cache: Local Maven Repository"
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.m2/repository
+          !~/.m2/**/*SNAPSHOT*
+        key: ${{ runner.os }}-mvnrepo-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-mvnrepo-
+
+    - name: Set up Maven
+      uses: stCarolas/setup-maven@v4.4
+      with:
+        maven-version: 3.8.6
+
+    - name: Update EEA Files
+      id: eea_updates
+      run: |
+        set -euo pipefail
+        
+        bash .ci/update-eea-files.sh ${{ github.event.inputs.additional_maven_args }}
+        
+        updates=$(git -C . ls-files -o -m -d --exclude-standard)
+
+        if [[ -z $updates ]]; then
+          echo "::set-output name=updates::"
+        else
+          # see https://trstringer.com/github-actions-multiline-strings/
+          updates="${updates//'%'/'%25'}"
+          updates="${updates//$'\n'/'%0A'}"
+          updates="${updates//$'\r'/'%0D'}"
+          
+          echo "::set-output name=updates::${updates}"
+        fi
+        
+    - name: Create PR
+      id: create-pr
+      uses: peter-evans/create-pull-request@v4 # https://github.com/peter-evans/create-pull-request
+      if: "${{ steps.eea_updates.outputs.updates != '' }}"
+      with:
+        title: "chore: Update EEA Files"
+        author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+        committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+        commit-message: "chore: Update EEA Files"
+        body: ${{ steps.eea_updates.outputs.updates }}
+        add-paths: libs
+        branch: eea_updates
+        delete-branch: true
+        token: ${{ github.token }}

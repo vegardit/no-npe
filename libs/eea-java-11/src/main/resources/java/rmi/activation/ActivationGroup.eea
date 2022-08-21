@@ -1,0 +1,27 @@
+class java/rmi/activation/ActivationGroup
+
+createGroup
+ (Ljava/rmi/activation/ActivationGroupID;Ljava/rmi/activation/ActivationGroupDesc;J)Ljava/rmi/activation/ActivationGroup;
+ (Ljava/rmi/activation/ActivationGroupID;Ljava/rmi/activation/ActivationGroupDesc;J)Ljava/rmi/activation/ActivationGroup;
+currentGroupID
+ ()Ljava/rmi/activation/ActivationGroupID;
+ ()Ljava/rmi/activation/ActivationGroupID;
+getSystem
+ ()Ljava/rmi/activation/ActivationSystem;
+ ()Ljava/rmi/activation/ActivationSystem;
+setSystem
+ (Ljava/rmi/activation/ActivationSystem;)V
+ (Ljava/rmi/activation/ActivationSystem;)V
+
+<init>
+ (Ljava/rmi/activation/ActivationGroupID;)V
+ (Ljava/rmi/activation/ActivationGroupID;)V
+activeObject
+ (Ljava/rmi/activation/ActivationID;Ljava/rmi/MarshalledObject<+Ljava/rmi/Remote;>;)V
+ (Ljava/rmi/activation/ActivationID;Ljava/rmi/MarshalledObject<+Ljava/rmi/Remote;>;)V
+activeObject
+ (Ljava/rmi/activation/ActivationID;Ljava/rmi/Remote;)V
+ (Ljava/rmi/activation/ActivationID;Ljava/rmi/Remote;)V
+inactiveObject
+ (Ljava/rmi/activation/ActivationID;)Z
+ (Ljava/rmi/activation/ActivationID;)Z

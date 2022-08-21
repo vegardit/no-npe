@@ -1,0 +1,33 @@
+class org/apache/commons/io/function/IOFunction
+
+identity
+ <T:Ljava/lang/Object;>()Lorg/apache/commons/io/function/IOFunction<TT;TT;>;
+ <T:Ljava/lang/Object;>()Lorg/apache/commons/io/function/IOFunction<TT;TT;>;
+
+andThen
+ (Ljava/util/function/Consumer<-TR;>;)Lorg/apache/commons/io/function/IOConsumer<TT;>;
+ (Ljava/util/function/Consumer<-TR;>;)Lorg/apache/commons/io/function/IOConsumer<TT;>;
+andThen
+ (Lorg/apache/commons/io/function/IOConsumer<-TR;>;)Lorg/apache/commons/io/function/IOConsumer<TT;>;
+ (Lorg/apache/commons/io/function/IOConsumer<-TR;>;)Lorg/apache/commons/io/function/IOConsumer<TT;>;
+andThen
+ <V:Ljava/lang/Object;>(Ljava/util/function/Function<-TR;+TV;>;)Lorg/apache/commons/io/function/IOFunction<TT;TV;>;
+ <V:Ljava/lang/Object;>(Ljava/util/function/Function<-TR;+TV;>;)Lorg/apache/commons/io/function/IOFunction<TT;TV;>;
+andThen
+ <V:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOFunction<-TR;+TV;>;)Lorg/apache/commons/io/function/IOFunction<TT;TV;>;
+ <V:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOFunction<-TR;+TV;>;)Lorg/apache/commons/io/function/IOFunction<TT;TV;>;
+apply
+ (TT;)TR;
+ (TT;)TR;
+compose
+ (Ljava/util/function/Supplier<+TT;>;)Lorg/apache/commons/io/function/IOSupplier<TR;>;
+ (Ljava/util/function/Supplier<+TT;>;)Lorg/apache/commons/io/function/IOSupplier<TR;>;
+compose
+ (Lorg/apache/commons/io/function/IOSupplier<+TT;>;)Lorg/apache/commons/io/function/IOSupplier<TR;>;
+ (Lorg/apache/commons/io/function/IOSupplier<+TT;>;)Lorg/apache/commons/io/function/IOSupplier<TR;>;
+compose
+ <V:Ljava/lang/Object;>(Ljava/util/function/Function<-TV;+TT;>;)Lorg/apache/commons/io/function/IOFunction<TV;TR;>;
+ <V:Ljava/lang/Object;>(Ljava/util/function/Function<-TV;+TT;>;)Lorg/apache/commons/io/function/IOFunction<TV;TR;>;
+compose
+ <V:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOFunction<-TV;+TT;>;)Lorg/apache/commons/io/function/IOFunction<TV;TR;>;
+ <V:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOFunction<-TV;+TT;>;)Lorg/apache/commons/io/function/IOFunction<TV;TR;>;
