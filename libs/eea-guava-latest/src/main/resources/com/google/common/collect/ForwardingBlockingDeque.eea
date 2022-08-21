@@ -1,0 +1,47 @@
+class com/google/common/collect/ForwardingBlockingDeque
+
+delegate
+ ()Ljava/util/concurrent/BlockingDeque<TE;>;
+ ()Ljava/util/concurrent/BlockingDeque<TE;>;
+drainTo
+ (Ljava/util/Collection<-TE;>;)I
+ (Ljava/util/Collection<-TE;>;)I
+drainTo
+ (Ljava/util/Collection<-TE;>;I)I
+ (Ljava/util/Collection<-TE;>;I)I
+offer
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+offerFirst
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+offerLast
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+poll
+ (JLjava/util/concurrent/TimeUnit;)TE;
+ (JLjava/util/concurrent/TimeUnit;)TE;
+pollFirst
+ (JLjava/util/concurrent/TimeUnit;)TE;
+ (JLjava/util/concurrent/TimeUnit;)TE;
+pollLast
+ (JLjava/util/concurrent/TimeUnit;)TE;
+ (JLjava/util/concurrent/TimeUnit;)TE;
+put
+ (TE;)V
+ (TE;)V
+putFirst
+ (TE;)V
+ (TE;)V
+putLast
+ (TE;)V
+ (TE;)V
+take
+ ()TE;
+ ()TE;
+takeFirst
+ ()TE;
+ ()TE;
+takeLast
+ ()TE;
+ ()TE;

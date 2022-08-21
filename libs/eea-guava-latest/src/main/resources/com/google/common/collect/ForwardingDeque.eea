@@ -1,0 +1,56 @@
+class com/google/common/collect/ForwardingDeque
+
+addFirst
+ (TE;)V
+ (TE;)V
+addLast
+ (TE;)V
+ (TE;)V
+delegate
+ ()Ljava/util/Deque<TE;>;
+ ()Ljava/util/Deque<TE;>;
+descendingIterator
+ ()Ljava/util/Iterator<TE;>;
+ ()Ljava/util/Iterator<TE;>;
+getFirst
+ ()TE;
+ ()TE;
+getLast
+ ()TE;
+ ()TE;
+offerFirst
+ (TE;)Z
+ (TE;)Z
+offerLast
+ (TE;)Z
+ (TE;)Z
+peekFirst
+ ()TE;
+ ()TE;
+peekLast
+ ()TE;
+ ()TE;
+pollFirst
+ ()TE;
+ ()TE;
+pollLast
+ ()TE;
+ ()TE;
+pop
+ ()TE;
+ ()TE;
+push
+ (TE;)V
+ (TE;)V
+removeFirst
+ ()TE;
+ ()TE;
+removeFirstOccurrence
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+removeLast
+ ()TE;
+ ()TE;
+removeLastOccurrence
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z

@@ -1,0 +1,33 @@
+class com/google/common/base/Converter
+
+from
+ <A:Ljava/lang/Object;B:Ljava/lang/Object;>(Lcom/google/common/base/Function<-TA;+TB;>;Lcom/google/common/base/Function<-TB;+TA;>;)Lcom/google/common/base/Converter<TA;TB;>;
+ <A:Ljava/lang/Object;B:Ljava/lang/Object;>(Lcom/google/common/base/Function<-TA;+TB;>;Lcom/google/common/base/Function<-TB;+TA;>;)Lcom/google/common/base/Converter<TA;TB;>;
+identity
+ <T:Ljava/lang/Object;>()Lcom/google/common/base/Converter<TT;TT;>;
+ <T:Ljava/lang/Object;>()Lcom/google/common/base/Converter<TT;TT;>;
+
+andThen
+ <C:Ljava/lang/Object;>(Lcom/google/common/base/Converter<TB;TC;>;)Lcom/google/common/base/Converter<TA;TC;>;
+ <C:Ljava/lang/Object;>(Lcom/google/common/base/Converter<TB;TC;>;)Lcom/google/common/base/Converter<TA;TC;>;
+apply
+ (TA;)TB;
+ (TA;)TB;
+convert
+ (TA;)TB;
+ (TA;)TB;
+convertAll
+ (Ljava/lang/Iterable<+TA;>;)Ljava/lang/Iterable<TB;>;
+ (Ljava/lang/Iterable<+TA;>;)Ljava/lang/Iterable<TB;>;
+doBackward
+ (TB;)TA;
+ (TB;)TA;
+doForward
+ (TA;)TB;
+ (TA;)TB;
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+reverse
+ ()Lcom/google/common/base/Converter<TB;TA;>;
+ ()Lcom/google/common/base/Converter<TB;TA;>;

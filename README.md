@@ -144,7 +144,7 @@ Updating EEA files will:
 
 ### <a name="new_module"></a>Adding a new Maven module
 
-1. Create a new sub-directory under `libs/` using the name pattern `eea-[LIBRARY_NAME]-[LIBRARY_MAJOR_VERSION]`
+1. Create a new sub-directory under `libs/` using the name pattern `eea-[LIBRARY_NAME]-[LIBRARY_MAJOR_VERSION|latest]`
 
 1. Create a pom.xml in the new directory like this:
 

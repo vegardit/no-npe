@@ -1,0 +1,30 @@
+class com/google/common/graph/ValueGraphBuilder
+
+directed
+ ()Lcom/google/common/graph/ValueGraphBuilder<Ljava/lang/Object;Ljava/lang/Object;>;
+ ()Lcom/google/common/graph/ValueGraphBuilder<Ljava/lang/Object;Ljava/lang/Object;>;
+from
+ <N:Ljava/lang/Object;V:Ljava/lang/Object;>(Lcom/google/common/graph/ValueGraph<TN;TV;>;)Lcom/google/common/graph/ValueGraphBuilder<TN;TV;>;
+ <N:Ljava/lang/Object;V:Ljava/lang/Object;>(Lcom/google/common/graph/ValueGraph<TN;TV;>;)Lcom/google/common/graph/ValueGraphBuilder<TN;TV;>;
+undirected
+ ()Lcom/google/common/graph/ValueGraphBuilder<Ljava/lang/Object;Ljava/lang/Object;>;
+ ()Lcom/google/common/graph/ValueGraphBuilder<Ljava/lang/Object;Ljava/lang/Object;>;
+
+allowsSelfLoops
+ (Z)Lcom/google/common/graph/ValueGraphBuilder<TN;TV;>;
+ (Z)Lcom/google/common/graph/ValueGraphBuilder<TN;TV;>;
+build
+ <N1:TN;V1:TV;>()Lcom/google/common/graph/MutableValueGraph<TN1;TV1;>;
+ <N1:TN;V1:TV;>()Lcom/google/common/graph/MutableValueGraph<TN1;TV1;>;
+expectedNodeCount
+ (I)Lcom/google/common/graph/ValueGraphBuilder<TN;TV;>;
+ (I)Lcom/google/common/graph/ValueGraphBuilder<TN;TV;>;
+immutable
+ <N1:TN;V1:TV;>()Lcom/google/common/graph/ImmutableValueGraph$Builder<TN1;TV1;>;
+ <N1:TN;V1:TV;>()Lcom/google/common/graph/ImmutableValueGraph$Builder<TN1;TV1;>;
+incidentEdgeOrder
+ <N1:TN;>(Lcom/google/common/graph/ElementOrder<TN1;>;)Lcom/google/common/graph/ValueGraphBuilder<TN1;TV;>;
+ <N1:TN;>(Lcom/google/common/graph/ElementOrder<TN1;>;)Lcom/google/common/graph/ValueGraphBuilder<TN1;TV;>;
+nodeOrder
+ <N1:TN;>(Lcom/google/common/graph/ElementOrder<TN1;>;)Lcom/google/common/graph/ValueGraphBuilder<TN1;TV;>;
+ <N1:TN;>(Lcom/google/common/graph/ElementOrder<TN1;>;)Lcom/google/common/graph/ValueGraphBuilder<TN1;TV;>;

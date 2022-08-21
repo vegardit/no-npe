@@ -1,0 +1,23 @@
+class com/google/common/util/concurrent/ForwardingBlockingQueue
+
+delegate
+ ()Ljava/util/concurrent/BlockingQueue<TE;>;
+ ()Ljava/util/concurrent/BlockingQueue<TE;>;
+drainTo
+ (Ljava/util/Collection<-TE;>;)I
+ (Ljava/util/Collection<-TE;>;)I
+drainTo
+ (Ljava/util/Collection<-TE;>;I)I
+ (Ljava/util/Collection<-TE;>;I)I
+offer
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+poll
+ (JLjava/util/concurrent/TimeUnit;)TE;
+ (JLjava/util/concurrent/TimeUnit;)TE;
+put
+ (TE;)V
+ (TE;)V
+take
+ ()TE;
+ ()TE;

@@ -1,0 +1,32 @@
+class com/google/common/cache/ForwardingCache
+
+asMap
+ ()Ljava/util/concurrent/ConcurrentMap<TK;TV;>;
+ ()Ljava/util/concurrent/ConcurrentMap<TK;TV;>;
+delegate
+ ()Lcom/google/common/cache/Cache<TK;TV;>;
+ ()Lcom/google/common/cache/Cache<TK;TV;>;
+get
+ (TK;Ljava/util/concurrent/Callable<+TV;>;)TV;
+ (TK;Ljava/util/concurrent/Callable<+TV;>;)TV;
+getAllPresent
+ (Ljava/lang/Iterable<+Ljava/lang/Object;>;)Lcom/google/common/collect/ImmutableMap<TK;TV;>;
+ (Ljava/lang/Iterable<+Ljava/lang/Object;>;)Lcom/google/common/collect/ImmutableMap<TK;TV;>;
+getIfPresent
+ (Ljava/lang/Object;)TV;
+ (Ljava/lang/Object;)TV;
+invalidate
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+invalidateAll
+ (Ljava/lang/Iterable<+Ljava/lang/Object;>;)V
+ (Ljava/lang/Iterable<+Ljava/lang/Object;>;)V
+put
+ (TK;TV;)V
+ (TK;TV;)V
+putAll
+ (Ljava/util/Map<+TK;+TV;>;)V
+ (Ljava/util/Map<+TK;+TV;>;)V
+stats
+ ()Lcom/google/common/cache/CacheStats;
+ ()Lcom/google/common/cache/CacheStats;

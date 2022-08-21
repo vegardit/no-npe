@@ -1,0 +1,53 @@
+class com/google/common/graph/AbstractNetwork
+
+adjacentEdges
+ (TE;)Ljava/util/Set<TE;>;
+ (TE;)Ljava/util/Set<TE;>;
+asGraph
+ ()Lcom/google/common/graph/Graph<TN;>;
+ ()Lcom/google/common/graph/Graph<TN;>;
+degree
+ (TN;)I
+ (TN;)I
+edgeConnecting
+ (Lcom/google/common/graph/EndpointPair<TN;>;)Ljava/util/Optional<TE;>;
+ (Lcom/google/common/graph/EndpointPair<TN;>;)Ljava/util/Optional<TE;>;
+edgeConnecting
+ (TN;TN;)Ljava/util/Optional<TE;>;
+ (TN;TN;)Ljava/util/Optional<TE;>;
+edgeConnectingOrNull
+ (Lcom/google/common/graph/EndpointPair<TN;>;)TE;
+ (Lcom/google/common/graph/EndpointPair<TN;>;)TE;
+edgeConnectingOrNull
+ (TN;TN;)TE;
+ (TN;TN;)TE;
+edgesConnecting
+ (Lcom/google/common/graph/EndpointPair<TN;>;)Ljava/util/Set<TE;>;
+ (Lcom/google/common/graph/EndpointPair<TN;>;)Ljava/util/Set<TE;>;
+edgesConnecting
+ (TN;TN;)Ljava/util/Set<TE;>;
+ (TN;TN;)Ljava/util/Set<TE;>;
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+hasEdgeConnecting
+ (Lcom/google/common/graph/EndpointPair<TN;>;)Z
+ (Lcom/google/common/graph/EndpointPair<TN;>;)Z
+hasEdgeConnecting
+ (TN;TN;)Z
+ (TN;TN;)Z
+inDegree
+ (TN;)I
+ (TN;)I
+isOrderingCompatible
+ (Lcom/google/common/graph/EndpointPair<*>;)Z
+ (Lcom/google/common/graph/EndpointPair<*>;)Z
+outDegree
+ (TN;)I
+ (TN;)I
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+validateEndpoints
+ (Lcom/google/common/graph/EndpointPair<*>;)V
+ (Lcom/google/common/graph/EndpointPair<*>;)V
