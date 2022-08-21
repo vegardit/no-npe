@@ -64,23 +64,36 @@ jobs:
         maven-version: 3.8.6
 
     - name: Update EEA Files
-      env:
-        GITHUB_USER: ${{ github.actor }}
-        GITHUB_API_KEY: ${{ github.token }}
+      id: eea_updates
       run: |
+        set -euo pipefail
+        
         bash .ci/update-eea-files.sh ${{ github.event.inputs.additional_maven_args }}
+        
+        updates=$(git -C . ls-files -o -m -d --exclude-standard)
 
+        if [[ -z $updates ]] then
+          echo "::set-output name=updates::"
+        else
+          # see https://trstringer.com/github-actions-multiline-strings/
+          updates="${updates//'%'/'%25'}"
+          updates="${updates//$'\n'/'%0A'}"
+          updates="${updates//$'\r'/'%0D'}"
+          
+          echo "::set-output name=updates::${updates}"
+        fi
+        
     - name: Create PR
       id: create-pr
       uses: peter-evans/create-pull-request@v4 # https://github.com/peter-evans/create-pull-request
-      if: "${{ steps.update_deps.outputs.updates != '' }}"
+      if: "${{ steps.eea_updates.outputs.updates != '' }}"
       with:
         title: "chore: Update EEA Files"
         author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
         committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
         commit-message: "chore: Update EEA Files"
-        body: ${{ steps.update_deps.outputs.updates }}
+        body: ${{ steps.eea_updates.outputs.updates }}
         add-paths: eea
-        branch: eea-file-updates
+        branch: eea_updates
         delete-branch: true
         token: ${{ github.token }}

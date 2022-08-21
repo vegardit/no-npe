@@ -70,9 +70,6 @@ jobs:
     - name: Test with Maven
       id: maven-test
       if: ${{ github.ref != 'refs/heads/main' }}
-      env:
-        GITHUB_USER: ${{ github.actor }}
-        GITHUB_API_KEY: ${{ github.token }}
       run: |
         bash .ci/build.sh ${{ github.event.inputs.additional_maven_args }}
 
@@ -117,8 +114,6 @@ jobs:
       id: maven-build
       if: ${{ github.ref == 'refs/heads/main' }}
       env:
-        GITHUB_USER: ${{ github.actor }}
-        GITHUB_API_KEY: ${{ github.token }}
         MAY_CREATE_RELEASE: true
         SIGN_KEY: ${{ secrets.GPG_SIGN_KEY }}
         SIGN_KEY_PASS: ${{ secrets.GPG_SIGN_KEY_PWD }}
