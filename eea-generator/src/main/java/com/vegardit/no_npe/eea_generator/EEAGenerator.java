@@ -170,6 +170,12 @@ public abstract class EEAGenerator {
             result.put(eeaFile.relativePath, eeaFile);
          }
       }
+
+      // TODO workaround for https://github.com/classgraph/classgraph/issues/703
+      if (("java".equals(rootPackageName) || rootPackageName.startsWith("java.lang")) //
+         && !result.containsKey(EEAFile.TEMPLATE_OBJECT.relativePath)) {
+         result.put(EEAFile.TEMPLATE_OBJECT.relativePath, new EEAFile(EEAFile.TEMPLATE_OBJECT));
+      }
       return result;
    }
 
@@ -256,6 +262,7 @@ public abstract class EEAGenerator {
                      }
                   }
                });
+
             LOG.log(Level.INFO, "{0} EEA file(s) modified for package [{1}]", pkgModifications.longValue(), packageName);
             totalModifications += pkgModifications.longValue();
          }
