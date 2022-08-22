@@ -22,6 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 import org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider;
@@ -89,6 +90,21 @@ public class EEAFile {
    }
 
    private static final Logger LOG = System.getLogger(EEAFile.class.getName());
+
+   /**
+    * Used to match the 0/1 null annotation of types generic type variables, which is especially tricky
+    * in cases such as
+    *
+    * <pre>
+    * {@code
+    * (L1com/example/L1;)V
+    * <T1:Ljava/lang/Object;>(Ljava/lang/Class<T1T1;>)V
+    * }
+    * </pre>
+    *
+    * where the name of the type variable itself is T0 or T1 or when the class name itself is L0 or L1.
+    */
+   private static final Pattern PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES = Pattern.compile("[TL]([01])[a-zA-Z_][a-zA-Z_0-9$\\/*]*[<;]");
 
    private static final EEAFile TEMPLATE_SERIALIZABLE;
    private static final EEAFile TEMPLATE_EXTERNALIZABLE;
@@ -327,10 +343,11 @@ public class EEAFile {
          lineNumber++;
          if (annotatedSignature == null)
             throw new IOException("Illegal format for annotated signature at " + path + ":" + lineNumber);
-         if (!originalSignature.equals(removeNullAnnotations(annotatedSignature)))
+         if (!originalSignature.equals(annotatedSignature) && !originalSignature.equals(removeNullAnnotations(annotatedSignature)))
             throw new IOException("Signature mismatch at " + path + ":" + lineNumber + "\n" //
-               + "1: " + originalSignature + "\n" //
-               + "2: " + annotatedSignature + "\n");
+               + "          Original: " + originalSignature + "\n" //
+               + "Annotated Stripped: " + removeNullAnnotations(annotatedSignature) + "\n" //
+               + "         Annotated: " + annotatedSignature + "\n");
 
          // store the parsed member entry
          entries.add(entry);
@@ -345,19 +362,18 @@ public class EEAFile {
     * see https://wiki.eclipse.org/JDT_Core/Null_Analysis/External_Annotations#Textual_encoding_of_signatures
     */
    protected String removeNullAnnotations(final String annotatedSignature) {
-      return annotatedSignature //
+      var strippedSignature = annotatedSignature //
          .replace("[0", "[") //
          .replace("[1", "[") //
-         .replace("L0", "L") //
-         .replace("L1", "L") //
-         .replace("T0", "T") //
-         .replace("T1", "T") //
          .replace("-0", "-") //
          .replace("-1", "-") //
          .replace("+0", "+") //
          .replace("+1", "+") //
          .replace("*0", "*") //
          .replace("*1", "*");
+
+      strippedSignature = replaceAll(strippedSignature, PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES, 1, match -> "");
+      return strippedSignature;
    }
 
    protected void removeTrailingEmptyLines() {

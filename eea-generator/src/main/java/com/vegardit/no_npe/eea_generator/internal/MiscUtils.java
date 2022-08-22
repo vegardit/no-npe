@@ -14,10 +14,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
+import java.util.function.UnaryOperator;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
+import java.util.regex.Pattern;
 
 /**
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
@@ -61,6 +63,29 @@ public abstract class MiscUtils {
          last = e;
       }
       return last;
+   }
+
+   /**
+    * Replaces the given capturing group of all matches.
+    */
+   public static String replaceAll(final String searchIn, final Pattern searchFor, final int groupToReplace,
+      final UnaryOperator<String> replaceWith) {
+      if (searchIn.isEmpty())
+         return searchIn;
+      final var matcher = searchFor.matcher(searchIn);
+      int lastPos = 0;
+      final var sb = new StringBuilder();
+      while (matcher.find()) {
+         final var start = matcher.start(groupToReplace);
+         sb.append(searchIn.substring(lastPos, start));
+         sb.append(replaceWith.apply(matcher.group(groupToReplace)));
+         lastPos = matcher.end(groupToReplace);
+      }
+      if (lastPos == 0)
+         return searchIn;
+
+      sb.append(searchIn.substring(lastPos));
+      return sb.toString();
    }
 
    public static <T extends Throwable> T sanitizeStackTraces(final T ex) {
