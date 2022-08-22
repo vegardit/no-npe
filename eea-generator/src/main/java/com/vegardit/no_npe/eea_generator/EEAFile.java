@@ -104,12 +104,13 @@ public class EEAFile {
     *
     * where the name of the type variable itself is T0 or T1 or when the class name itself is L0 or L1.
     */
-   private static final Pattern PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES = Pattern.compile("[TL]([01])[a-zA-Z_][a-zA-Z_0-9$\\/*]*[<;]");
+   protected static final Pattern PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES = Pattern.compile(
+      "[TL]([01])[a-zA-Z_][a-zA-Z_0-9$\\/*]*[<;]");
 
-   private static final EEAFile TEMPLATE_SERIALIZABLE;
-   private static final EEAFile TEMPLATE_EXTERNALIZABLE;
-   private static final EEAFile TEMPLATE_OBJECT;
-   private static final EEAFile TEMPLATE_THROWABLE;
+   protected static final EEAFile TEMPLATE_SERIALIZABLE;
+   protected static final EEAFile TEMPLATE_EXTERNALIZABLE;
+   protected static final EEAFile TEMPLATE_OBJECT;
+   protected static final EEAFile TEMPLATE_THROWABLE;
 
    static {
       try (var reader = getUTF8ResourceAsReader(EEAFile.class, "Serializable.eea")) {
