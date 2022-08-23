@@ -4,18 +4,19 @@
  */
 package com.vegardit.no_npe.eea_generator;
 
+import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.*;
 import static org.assertj.core.api.Assertions.*;
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 
 import org.junit.jupiter.api.Test;
 
-import com.vegardit.no_npe.eea_generator.EEAFile.ClassMember;
-
 /**
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
  */
+@SuppressWarnings("null")
 public class EEAFileTest {
 
    public static final class TestEntity {
@@ -40,11 +41,28 @@ public class EEAFileTest {
    void testEEAFile() throws IOException {
       final var eeaFile = new EEAFile(TestEntity.class.getName());
       eeaFile.load(Path.of("src/test/resources/valid"));
-      assertThat(eeaFile.className).isEqualTo(TestEntity.class.getName());
+
+      assertThat(eeaFile.className.value).isEqualTo(TestEntity.class.getName());
+      assertThat(eeaFile.className.comment).isEqualTo("# a class comment");
+      assertThat(eeaFile.className.toString()).isEqualTo(TestEntity.class.getName() + " # a class comment");
       assertThat(eeaFile.relativePath).isEqualTo(Path.of(TEST_ENTITY_NAME_WITH_SLASHES + ".eea"));
+
       assertThat(eeaFile.getClassMembers()).isNotEmpty();
-      assertThat(eeaFile.containsMember(new ClassMember("STATIC_STRING", "Ljava/lang/String;"))).isTrue();
-      assertThat(eeaFile.getAnnotatedSignature(new ClassMember("STATIC_STRING", "Ljava/lang/String;"))).isEqualTo("L1java/lang/String;");
+      final var field = eeaFile.findMatchingClassMember("STATIC_STRING", "Ljava/lang/String;").get();
+
+      assertThat(field.name.comment).isEqualTo("# a field comment");
+      assertThat(field.originalSignature.value).isEqualTo("Ljava/lang/String;");
+      assertThat(field.originalSignature.comment).isEqualTo("# an original signature comment");
+
+      final var annotatedSignature = field.annotatedSignature;
+      assertThat(annotatedSignature).isNotNull();
+      assert annotatedSignature != null;
+
+      assertThat(annotatedSignature.value).isEqualTo("L1java/lang/String;");
+      assertThat(annotatedSignature.comment).isEqualTo("# an annotated signature comment");
+
+      assertThat(normalizeNewLines(eeaFile.renderFileContent())) //
+         .isEqualTo(normalizeNewLines(Files.readString(Path.of("src/test/resources/valid").resolve(eeaFile.relativePath))));
    }
 
    @Test
@@ -56,16 +74,22 @@ public class EEAFileTest {
    }
 
    @Test
-   void testLoadAnnotations() throws IOException {
-      final var eeaFiles = EEAGenerator.computeEEAFiles(EEAFileTest.class.getPackageName(), null);
-      final var eeaFile = eeaFiles.get(Path.of(TEST_ENTITY_NAME_WITH_SLASHES + ".eea"));
-      assertThat(eeaFile).isNotNull();
+   void testApplyAnnotationsAndCommentsFrom() throws IOException {
+      final var computedEEAFiles = EEAGenerator.computeEEAFiles(EEAFileTest.class.getPackageName(), null);
+      final var computedEEAFile = computedEEAFiles.get(Path.of(TEST_ENTITY_NAME_WITH_SLASHES + ".eea"));
+      assertThat(computedEEAFile).isNotNull();
+      assert computedEEAFile != null;
 
-      final var entry = new EEAFile.ClassMember("name", "Ljava/lang/String;");
-      assertThat(eeaFile.getClassMembers()).contains(entry);
-      assertThat(eeaFile.getAnnotatedSignature(entry)).isNull();
+      final var method = computedEEAFile.findMatchingClassMember("name", "Ljava/lang/String;").get();
+      assertThat(method.annotatedSignature).isNull();
+      assertThat(method.name.comment).isNull();
 
-      eeaFile.load(Path.of("src/test/resources/valid"));
-      assertThat(eeaFile.getAnnotatedSignature(entry)).isEqualTo("L1java/lang/String;");
+      final var loadedEEAFile = new EEAFile(computedEEAFile.className.value);
+      loadedEEAFile.load(Path.of("src/test/resources/valid"));
+      computedEEAFile.applyAnnotationsAndCommentsFrom(loadedEEAFile, false);
+      final var annotatedSignature = method.annotatedSignature;
+      assert annotatedSignature != null;
+      assertThat(annotatedSignature.value).isEqualTo("L1java/lang/String;");
+      assertThat(method.name.comment).isEqualTo("# a method comment");
    }
 }

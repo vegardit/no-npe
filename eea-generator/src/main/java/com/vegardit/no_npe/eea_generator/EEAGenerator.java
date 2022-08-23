@@ -20,10 +20,13 @@ import java.util.concurrent.atomic.LongAdder;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+import org.eclipse.jdt.annotation.NonNull;
+import org.eclipse.jdt.annotation.Nullable;
 import org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider;
 
 import com.vegardit.no_npe.eea_generator.EEAFile.LoadOptions;
 import com.vegardit.no_npe.eea_generator.EEAFile.SaveOptions;
+import com.vegardit.no_npe.eea_generator.EEAFile.ValueWithComment;
 import com.vegardit.no_npe.eea_generator.internal.Props;
 
 import io.github.classgraph.ClassGraph;
@@ -48,38 +51,42 @@ public abstract class EEAGenerator {
    public static final String PROPERTY_PACKAGES_INCLUDE = "packages.include";
 
    public static class Config {
-      public String[] packages;
+      public @NonNull String[] packages;
       public Path outputDir;
       public Predicate<ClassInfo> classFilter = c -> true;
+
+      public Config(final Path outputDir, final @NonNull String... packages) {
+         this.outputDir = outputDir;
+         this.packages = packages;
+      }
    }
 
    /**
     * args[0]: optional path to properties file
     */
-   public static void main(final String[] args) throws IOException {
+   public static void main(final @NonNull String... args) throws IOException {
       configureJUL();
 
       // load properties from file if specified
       Path filePropsPath = null;
-      if (args != null && args.length > 0) {
+      if (args.length > 0) {
          filePropsPath = Path.of(args[0]);
       } else if (Files.exists(DEFAULT_PROPERTES_FILE)) {
          filePropsPath = DEFAULT_PROPERTES_FILE;
       }
       final var props = new Props(JVM_PROPERTY_PREFIX, filePropsPath);
 
-      final var config = new Config();
       final var action = props.get(PROPERTY_ACTION, null).value;
-      config.packages = props.get(PROPERTY_PACKAGES_INCLUDE, null).value.split(",");
-
-      final var outputDir = props.get(PROPERTY_OUTPUT_DIR, "src/main/resources");
-      config.outputDir = Path.of(outputDir.value);
-      if (outputDir.source instanceof Path && !config.outputDir.isAbsolute()) {
+      final var packages = props.get(PROPERTY_PACKAGES_INCLUDE, null).value.split(",");
+      final var outputDirProp = props.get(PROPERTY_OUTPUT_DIR, "src/main/resources");
+      var outputDir = Path.of(outputDirProp.value);
+      if (outputDirProp.source instanceof Path && !outputDir.isAbsolute()) {
          // if the specified outputDir value is relative and was source from properties file,
          // then make it relative to the properties file
-         config.outputDir = ((Path) outputDir.source).resolve(config.outputDir);
+         outputDir = ((Path) outputDirProp.source).resolve(outputDir);
       }
 
+      final var config = new Config(outputDir, packages);
       switch (action) {
          case "generate":
             updateEEAFiles(config);
@@ -101,21 +108,29 @@ public abstract class EEAGenerator {
       final var fields = classInfo.getDeclaredFieldInfo();
       final var methods = classInfo.getDeclaredMethodAndConstructorInfo();
 
+      final var typeSig = classInfo.getTypeSignature();
+      if (typeSig != null && !typeSig.getTypeParameters().isEmpty()) {
+         final var typeParams = getSubstringBetweenBalanced(classInfo.getTypeSignatureStr(), '<', '>');
+         if (typeParams == null || !typeParams.isEmpty()) {
+            eeaFile.classSignatureOriginal = new ValueWithComment('<' + typeParams + '>');
+         }
+      }
+
       // static fields
-      for (final var field : getFields(fields, true)) {
-         final var member = eeaFile.addMember(field.getName(), field.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
-         if (field.isFinal()) {
+      for (final var f : getFields(fields, true)) {
+         final var member = eeaFile.addMember(f.getName(), f.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
+         if (f.isFinal()) {
             // if the static non-primitive field is final we by default expect it to be non-null,
             // which can be manually adjusted in the generated field
-            eeaFile.setAnnotatedSignature(member, new StringBuilder(member.originalSignature).insert(1, '1').toString());
+            member.annotatedSignature = new ValueWithComment(insert(member.originalSignature.value, 1, "1"));
          }
       }
 
       eeaFile.addEmptyLine();
 
       // static methods
-      for (final var member : getMethods(methods, true)) {
-         eeaFile.addMember(member.getName(), member.getTypeSignatureOrTypeDescriptorStr());
+      for (final var m : getMethods(methods, true)) {
+         eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr());
       }
       eeaFile.addEmptyLine();
 
@@ -124,8 +139,8 @@ public abstract class EEAGenerator {
       eeaFile.addEmptyLine();
 
       // instance methods
-      for (final var member : getMethods(methods, false)) {
-         eeaFile.addMember(member.getName(), member.getTypeSignatureOrTypeDescriptorStr());
+      for (final var m : getMethods(methods, false)) {
+         eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr());
       }
       return eeaFile;
    }
@@ -138,7 +153,7 @@ public abstract class EEAGenerator {
     */
    public static SortedMap<Path, EEAFile> computeEEAFiles( //
       final String rootPackageName, //
-      final Predicate<ClassInfo> filter //
+      @Nullable final Predicate<ClassInfo> filter //
    ) {
       final var result = new TreeMap<Path, EEAFile>();
       try (ScanResult scanResult = new ClassGraph() //
@@ -165,7 +180,6 @@ public abstract class EEAGenerator {
             }
 
             LOG.log(Level.DEBUG, "Scanning class [{0}]...", classInfo.getName());
-
             final var eeaFile = computeEEAFile(classInfo);
             result.put(eeaFile.relativePath, eeaFile);
          }
@@ -174,7 +188,7 @@ public abstract class EEAGenerator {
       // TODO workaround for https://github.com/classgraph/classgraph/issues/703
       if (("java".equals(rootPackageName) || rootPackageName.startsWith("java.lang")) //
          && !result.containsKey(EEAFile.TEMPLATE_OBJECT.relativePath)) {
-         result.put(EEAFile.TEMPLATE_OBJECT.relativePath, new EEAFile(EEAFile.TEMPLATE_OBJECT));
+         result.put(EEAFile.TEMPLATE_OBJECT.relativePath, EEAFile.TEMPLATE_OBJECT);
       }
       return result;
    }
@@ -238,9 +252,9 @@ public abstract class EEAGenerator {
             final var eeaFiles = computeEEAFiles(packageName, config.classFilter);
             LOG.log(Level.INFO, "Found {0} types on classpath.", eeaFiles.size());
             for (final var computedEEAFile : eeaFiles.values()) {
-               final var existingEEAFile = new EEAFile(computedEEAFile.className);
+               final var existingEEAFile = new EEAFile(computedEEAFile.className.value);
                existingEEAFile.load(config.outputDir, LoadOptions.IGNORE_NONE_EXISTING);
-               computedEEAFile.applyAnnotatedSignaturesFrom(existingEEAFile, true);
+               computedEEAFile.applyAnnotationsAndCommentsFrom(existingEEAFile, true);
                if (computedEEAFile.save(config.outputDir, SaveOptions.REPLACE_EXISTING)) {
                   pkgModifications.increment();
                }
@@ -269,8 +283,9 @@ public abstract class EEAGenerator {
          return totalModifications;
       } catch (final RuntimeException ex) {
          sanitizeStackTraces(ex);
-         if (ex.getCause() instanceof IOException)
-            throw (IOException) ex.getCause();
+         final var cause = ex.getCause();
+         if (cause instanceof IOException)
+            throw (IOException) cause;
          throw ex;
       }
    }
@@ -311,15 +326,15 @@ public abstract class EEAGenerator {
                      }
 
                      // check if the type actually exists
-                     if (!computedEEAFiles.containsKey(relativePath))
-                        throw new IllegalStateException("Type [" + className + "] not found on classpath [" + path + "]");
                      final var computedEEAFile = computedEEAFiles.get(relativePath);
+                     if (computedEEAFile == null)
+                        throw new IllegalStateException("Type [" + className + "] not found on classpath [" + path + "]");
 
                      // check the EEA file does not contain declarations of non existing fields/methods
                      for (final var parsedMember : parsedEEAFile.getClassMembers().collect(Collectors.toList())) {
-                        if (!computedEEAFile.containsMember(parsedMember)) {
+                        if (computedEEAFile.findMatchingClassMember(parsedMember).isEmpty()) {
                            final var candidates = computedEEAFile //
-                              .getClassMembersWithName(parsedMember.name) //
+                              .getClassMembers().filter(m -> m.name.equals(parsedMember.name)) //
                               .map(m -> m.name + "\n" + " " + m.originalSignature) //
                               .collect(Collectors.joining("\n"));
                            throw new IllegalStateException("Unknown member declaration found in [" + path + "]: " + parsedMember
@@ -334,8 +349,9 @@ public abstract class EEAGenerator {
          return totalValidations;
       } catch (final RuntimeException ex) {
          sanitizeStackTraces(ex);
-         if (ex.getCause() instanceof IOException)
-            throw (IOException) ex.getCause();
+         final var cause = ex.getCause();
+         if (cause instanceof IOException)
+            throw (IOException) cause;
          throw ex;
       }
    }

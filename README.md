@@ -251,6 +251,7 @@ generating/packaging/validating of EEA files/archives has been taken.
 - Using external null annotations https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.jdt.doc.user/tasks/task-using_external_null_annotations.htm
 - Type Signature Syntax https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.jdt.doc.isv/reference/api/org/eclipse/jdt/core/Signature.html
 - NullPointerException presentation given at EclipseCon Europe 2016 https://www.slideshare.net/mikervorburger/the-end-of-the-world-as-we-know-it-aka-your-last-nullpointerexception-1b-bugs
+- Field Descriptors https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.3.2
 
 
 ## <a name="license"></a>License

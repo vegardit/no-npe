@@ -5,14 +5,13 @@
 package com.vegardit.no_npe.eea_generator.internal;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Objects;
 import java.util.function.UnaryOperator;
 import java.util.logging.ConsoleHandler;
@@ -21,12 +20,15 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import java.util.regex.Pattern;
 
+import org.eclipse.jdt.annotation.NonNull;
+import org.eclipse.jdt.annotation.Nullable;
+
 /**
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
  */
-public abstract class MiscUtils {
+public final class MiscUtils {
 
-   public static boolean arrayContains(final Object[] searchIn, final Object searchFor) {
+   public static boolean arrayContains(final Object @Nullable [] searchIn, final Object searchFor) {
       if (searchIn == null || searchIn.length == 0)
          return false;
       for (final var e : searchIn) {
@@ -39,7 +41,7 @@ public abstract class MiscUtils {
    public static void configureJUL() {
       final var mainLogger = Logger.getLogger("com.vegardit.no_npe");
       mainLogger.setUseParentHandlers(false);
-      final ConsoleHandler handler = new ConsoleHandler();
+      final var handler = new ConsoleHandler();
       handler.setFormatter(new SimpleFormatter() {
          @Override
          public synchronized String format(final LogRecord lr) {
@@ -53,11 +55,18 @@ public abstract class MiscUtils {
       mainLogger.addHandler(handler);
    }
 
+   public static String normalizeNewLines(final String str) {
+      return str //
+         .replace("\r\n", "\n") //
+         .replace('\r', '\n');
+   }
+
    public static BufferedReader getUTF8ResourceAsReader(final Class<?> clazz, final String resourceName) {
       return new BufferedReader(new InputStreamReader(clazz.getResourceAsStream(resourceName), StandardCharsets.UTF_8));
    }
 
-   public static <E> E getLastElement(final Collection<E> c) {
+   public static <E> @Nullable E getLastElement(final Collection<E> c) {
+      @Nullable
       E last = null;
       for (final E e : c) {
          last = e;
@@ -78,7 +87,9 @@ public abstract class MiscUtils {
       while (matcher.find()) {
          final var start = matcher.start(groupToReplace);
          sb.append(searchIn.substring(lastPos, start));
-         sb.append(replaceWith.apply(matcher.group(groupToReplace)));
+         final var textToReplace = matcher.group(groupToReplace);
+         assert textToReplace != null;
+         sb.append(replaceWith.apply(textToReplace));
          lastPos = matcher.end(groupToReplace);
       }
       if (lastPos == 0)
@@ -88,7 +99,32 @@ public abstract class MiscUtils {
       return sb.toString();
    }
 
-   public static <T extends Throwable> T sanitizeStackTraces(final T ex) {
+   @Nullable
+   public static String getSubstringBetweenBalanced(@Nullable final String searchIn, final char startDelimiter, final char endDelimiter) {
+      if (searchIn == null)
+         return null;
+      int depth = 0;
+      int lastStartDelimiter = -1;
+      for (int i = 0, l = searchIn.length(); i < l; i++) {
+         final char c = searchIn.charAt(i);
+         if (c == startDelimiter) {
+            depth++;
+            if (depth == 1) {
+               lastStartDelimiter = i + 1;
+            }
+         } else if (c == endDelimiter) {
+            if (depth == 1)
+               return searchIn.substring(lastStartDelimiter, i);
+            if (depth > 0) {
+               depth--;
+            }
+         }
+      }
+      return null;
+   }
+
+   @Nullable
+   public static <T extends Throwable> T sanitizeStackTraces(@Nullable final T ex) {
       if (ex == null)
          return null;
 
@@ -96,7 +132,7 @@ public abstract class MiscUtils {
       if (stacktrace.length < 3)
          return ex;
 
-      final List<StackTraceElement> sanitized = new ArrayList<>(stacktrace.length - 2);
+      final var sanitized = new ArrayList<StackTraceElement>(stacktrace.length - 2);
       // we leave the first two elements untouched to keep the context
       sanitized.add(stacktrace[0]);
       sanitized.add(stacktrace[1]);
@@ -119,18 +155,33 @@ public abstract class MiscUtils {
          sanitized.add(ste);
       }
 
-      final StackTraceElement[] arr = new StackTraceElement[sanitized.size()];
-      ex.setStackTrace(sanitized.toArray(arr));
+      @SuppressWarnings("null")
+      final @NonNull StackTraceElement[] arr = sanitized.toArray(StackTraceElement[]::new);
+      ex.setStackTrace(arr);
       if (ex.getCause() != null) {
          sanitizeStackTraces(ex.getCause());
       }
       return ex;
    }
 
-   public static void writeLine(final BufferedWriter w, final Object... content) throws IOException {
+   public static String insert(final String str, final int pos, final String insertion) {
+      return str.substring(0, pos) + insertion + str.substring(pos);
+   }
+
+   public static void writeLine(final Appendable w, final Object... content) throws IOException {
+      for (final var e : content) {
+         w.append(Objects.toString(e));
+      }
+      w.append("\n");
+   }
+
+   public static void writeLine(final Writer w, final Object... content) throws IOException {
       for (final var e : content) {
          w.write(Objects.toString(e));
       }
-      w.newLine();
+      w.write(System.lineSeparator());
+   }
+
+   private MiscUtils() {
    }
 }

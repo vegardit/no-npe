@@ -11,10 +11,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Properties;
 
+import org.eclipse.jdt.annotation.Nullable;
+
 /**
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
  */
-public class Props {
+public final class Props {
 
    private static final Logger LOG = System.getLogger(Props.class.getName());
 
@@ -46,34 +48,35 @@ public class Props {
    }
 
    public final String jvmPropertyPrefix;
-   public final Path propertiesFile;
-   private final Properties properties;
+   public final @Nullable Path propertiesFile;
+   private final @Nullable Properties properties;
 
-   public Props(final String jvmPropertyPrefix, final Path propertiesFilePath) throws IOException {
+   public Props(final String jvmPropertyPrefix, final @Nullable Path propertiesFilePath) throws IOException {
       this.jvmPropertyPrefix = jvmPropertyPrefix;
       propertiesFile = propertiesFilePath;
 
       if (propertiesFilePath == null) {
          properties = null;
       } else {
-         properties = new Properties();
+         final var properties = this.properties = new Properties();
          try (var r = Files.newBufferedReader(propertiesFilePath)) {
             properties.load(r);
          }
       }
    }
 
-   public Prop<String> get(final String propName, final String defaultValue) {
+   public Prop<String> get(final String propName, final @Nullable String defaultValue) {
       var propValue = System.getProperty(jvmPropertyPrefix + propName);
       Prop<String> prop = null;
       if (propValue != null) {
          prop = new Prop<>(Prop.SOURCE_JVM_SYSTEM_ROPERTY, propName, propValue);
       }
 
+      final var properties = this.properties;
       if (prop == null && properties != null) {
          propValue = properties.getProperty(propName);
          if (propValue != null) {
-
+            assert propertiesFile != null;
             prop = new Prop<>(propertiesFile, propName, propValue);
          }
       }
