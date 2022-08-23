@@ -79,6 +79,7 @@ public class EEAFile {
 
    public enum SaveOptions {
       SAVE_EMPTY,
+      OMIT_REDUNDANT_ANNOTATED_SIGNATURES,
       REPLACE_EXISTING
    }
 
@@ -404,7 +405,7 @@ public class EEAFile {
       }
    }
 
-   protected String renderFileContent() throws IOException {
+   protected String renderFileContent(final boolean omitRedundantAnnotatedSignatures) throws IOException {
       final var sb = new StringBuilder();
       writeLine(sb, ExternalAnnotationProvider.CLASS_PREFIX, new ValueWithComment(className.value.replace('.', '/'), className.comment));
       if (classSignatureOriginal != null) {
@@ -424,6 +425,8 @@ public class EEAFile {
             final var guessedSig = guessAnnotatedSignature(member);
             if (guessedSig != null) {
                annotatedSig = new ValueWithComment(guessedSig);
+            } else if (!omitRedundantAnnotatedSignatures) {
+               annotatedSig = member.originalSignature;
             }
          }
          if (annotatedSig != null) {
@@ -463,8 +466,9 @@ public class EEAFile {
       final boolean exists = exists(rootPath);
       final boolean replaceExisting = arrayContains(options, SaveOptions.REPLACE_EXISTING);
       final boolean saveEmpty = arrayContains(options, SaveOptions.SAVE_EMPTY);
+      final boolean omitRedundantAnnotatedSignatures = arrayContains(options, SaveOptions.OMIT_REDUNDANT_ANNOTATED_SIGNATURES);
 
-      final var content = renderFileContent();
+      final var content = renderFileContent(omitRedundantAnnotatedSignatures);
 
       if (exists) {
          if (replaceExisting) {

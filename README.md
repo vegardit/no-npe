@@ -214,6 +214,17 @@ Updating EEA files will:
    packages.include=org.example.cool-library.api,org.example.cool-library.spi
    ```
 
+   The following options are available:
+   |name|description|default|
+   |-|-|-|
+   |`packages.include`| The packages to recursively scan for class files| n/a
+   |`action`| The default action (`validate` or `generate` to perform during `mvn compile`) | `validate`
+   |`output.dir`| Path to the root directory containing the .eea files.| `src/main/resources`
+   |`omitRedundantAnnotatedSignatures`| It `true` lines with annotated signatures are not written to the file if they don't contain any null annotations | `false`
+
+   These options can also be specified in the command line as system properties like `-Deea-generator.<OPTION_NAME>=`,
+   e.g. `-Deea-generator.omitRedundantAnnotatedSignatures=true`
+
 1. In the parent project's pom reference the module in the `<modules>` section.
 
 1. Run the generator inside parent project to create the EEA files

@@ -61,8 +61,11 @@ public class EEAFileTest {
       assertThat(annotatedSignature.value).isEqualTo("L1java/lang/String;");
       assertThat(annotatedSignature.comment).isEqualTo("# an annotated signature comment");
 
-      assertThat(normalizeNewLines(eeaFile.renderFileContent())) //
+      assertThat(normalizeNewLines(eeaFile.renderFileContent(false))) //
          .isEqualTo(normalizeNewLines(Files.readString(Path.of("src/test/resources/valid").resolve(eeaFile.relativePath))));
+
+      assertThat(normalizeNewLines(eeaFile.renderFileContent(true))) //
+         .isNotEqualTo(normalizeNewLines(Files.readString(Path.of("src/test/resources/valid").resolve(eeaFile.relativePath))));
    }
 
    @Test

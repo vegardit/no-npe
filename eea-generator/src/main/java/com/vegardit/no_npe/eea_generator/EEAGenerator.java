@@ -49,11 +49,13 @@ public abstract class EEAGenerator {
    public static final String PROPERTY_ACTION = "action";
    public static final String PROPERTY_OUTPUT_DIR = "output.dir";
    public static final String PROPERTY_PACKAGES_INCLUDE = "packages.include";
+   public static final String PROPERTY_OMIT_REDUNDAND_ANNOTTED_SIGNATURES = "omitRedundantAnnotatedSignatures";
 
    public static class Config {
       public @NonNull String[] packages;
       public Path outputDir;
       public Predicate<ClassInfo> classFilter = c -> true;
+      public boolean omitRedundantAnnotatedSignatures;
 
       public Config(final Path outputDir, final @NonNull String... packages) {
          this.outputDir = outputDir;
@@ -87,6 +89,7 @@ public abstract class EEAGenerator {
       }
 
       final var config = new Config(outputDir, packages);
+      config.omitRedundantAnnotatedSignatures = Boolean.parseBoolean(props.get(PROPERTY_OMIT_REDUNDAND_ANNOTTED_SIGNATURES, "false").value);
       switch (action) {
          case "generate":
             updateEEAFiles(config);
