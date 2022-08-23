@@ -1,0 +1,63 @@
+class io/github/classgraph/Resource
+
+byteBuffer
+ Ljava/nio/ByteBuffer;
+ Ljava/nio/ByteBuffer;
+inputStream
+ Ljava/io/InputStream;
+ Ljava/io/InputStream;
+
+<init>
+ (Lio/github/classgraph/ClasspathElement;J)V
+ (Lio/github/classgraph/ClasspathElement;J)V
+compareTo
+ (Lio/github/classgraph/Resource;)I
+ (Lio/github/classgraph/Resource;)I
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+getClasspathElementFile
+ ()Ljava/io/File;
+ ()Ljava/io/File;
+getClasspathElementURI
+ ()Ljava/net/URI;
+ ()Ljava/net/URI;
+getClasspathElementURL
+ ()Ljava/net/URL;
+ ()Ljava/net/URL;
+getContentAsString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getModuleRef
+ ()Lio/github/classgraph/ModuleRef;
+ ()Lio/github/classgraph/ModuleRef;
+getPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPathRelativeToClasspathElement
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPosixFilePermissions
+ ()Ljava/util/Set<Ljava/nio/file/attribute/PosixFilePermission;>;
+ ()Ljava/util/Set<Ljava/nio/file/attribute/PosixFilePermission;>;
+getURI
+ ()Ljava/net/URI;
+ ()Ljava/net/URI;
+getURL
+ ()Ljava/net/URL;
+ ()Ljava/net/URL;
+load
+ ()[B
+ ()[B
+open
+ ()Ljava/io/InputStream;
+ ()Ljava/io/InputStream;
+read
+ ()Ljava/nio/ByteBuffer;
+ ()Ljava/nio/ByteBuffer;
+readCloseable
+ ()Lio/github/classgraph/CloseableByteBuffer;
+ ()Lio/github/classgraph/CloseableByteBuffer;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

@@ -1,0 +1,159 @@
+class io/github/classgraph/ScanResult
+
+fromJSON
+ (Ljava/lang/String;)Lio/github/classgraph/ScanResult;
+ (Ljava/lang/String;)Lio/github/classgraph/ScanResult;
+
+getAllAnnotations
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getAllClasses
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getAllClassesAsMap
+ ()Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;
+getAllEnums
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getAllInterfaces
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getAllInterfacesAndAnnotations
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getAllRecords
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getAllResources
+ ()Lio/github/classgraph/ResourceList;
+ ()Lio/github/classgraph/ResourceList;
+getAllResourcesAsMap
+ ()Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ResourceList;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ResourceList;>;
+getAllStandardClasses
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getAnnotationsOnClass
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+getClassDependencyMap
+ ()Ljava/util/Map<Lio/github/classgraph/ClassInfo;Lio/github/classgraph/ClassInfoList;>;
+ ()Ljava/util/Map<Lio/github/classgraph/ClassInfo;Lio/github/classgraph/ClassInfoList;>;
+getClassInfo
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfo;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfo;
+getClassesImplementing
+ (Ljava/lang/Class<*>;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/Class<*>;)Lio/github/classgraph/ClassInfoList;
+getClassesImplementing
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+getClassesWithAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/ClassInfoList;
+getClassesWithAnnotation
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+getClassesWithFieldAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/ClassInfoList;
+getClassesWithFieldAnnotation
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+getClassesWithMethodAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/ClassInfoList;
+getClassesWithMethodAnnotation
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+getClassesWithMethodParameterAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/ClassInfoList;
+getClassesWithMethodParameterAnnotation
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+getClasspath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getClasspathFiles
+ ()Ljava/util/List<Ljava/io/File;>;
+ ()Ljava/util/List<Ljava/io/File;>;
+getClasspathURIs
+ ()Ljava/util/List<Ljava/net/URI;>;
+ ()Ljava/util/List<Ljava/net/URI;>;
+getClasspathURLs
+ ()Ljava/util/List<Ljava/net/URL;>;
+ ()Ljava/util/List<Ljava/net/URL;>;
+getInterfaces
+ (Ljava/lang/Class<*>;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/Class<*>;)Lio/github/classgraph/ClassInfoList;
+getInterfaces
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+getModuleInfo
+ ()Lio/github/classgraph/ModuleInfoList;
+ ()Lio/github/classgraph/ModuleInfoList;
+getModuleInfo
+ (Ljava/lang/String;)Lio/github/classgraph/ModuleInfo;
+ (Ljava/lang/String;)Lio/github/classgraph/ModuleInfo;
+getModulePathInfo
+ ()Lio/github/classgraph/ModulePathInfo;
+ ()Lio/github/classgraph/ModulePathInfo;
+getModules
+ ()Ljava/util/List<Lio/github/classgraph/ModuleRef;>;
+ ()Ljava/util/List<Lio/github/classgraph/ModuleRef;>;
+getPackageInfo
+ ()Lio/github/classgraph/PackageInfoList;
+ ()Lio/github/classgraph/PackageInfoList;
+getPackageInfo
+ (Ljava/lang/String;)Lio/github/classgraph/PackageInfo;
+ (Ljava/lang/String;)Lio/github/classgraph/PackageInfo;
+getResourcesMatchingPattern
+ (Ljava/util/regex/Pattern;)Lio/github/classgraph/ResourceList;
+ (Ljava/util/regex/Pattern;)Lio/github/classgraph/ResourceList;
+getResourcesMatchingWildcard
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+getResourcesWithExtension
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+getResourcesWithLeafName
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+getResourcesWithPath
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+getResourcesWithPathIgnoringAccept
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+getResourcesWithPathIgnoringWhitelist
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+ (Ljava/lang/String;)Lio/github/classgraph/ResourceList;
+getReverseClassDependencyMap
+ ()Ljava/util/Map<Lio/github/classgraph/ClassInfo;Lio/github/classgraph/ClassInfoList;>;
+ ()Ljava/util/Map<Lio/github/classgraph/ClassInfo;Lio/github/classgraph/ClassInfoList;>;
+getSubclasses
+ (Ljava/lang/Class<*>;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/Class<*>;)Lio/github/classgraph/ClassInfoList;
+getSubclasses
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+getSuperclasses
+ (Ljava/lang/Class<*>;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/Class<*>;)Lio/github/classgraph/ClassInfoList;
+getSuperclasses
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/ClassInfoList;
+loadClass
+ (Ljava/lang/String;Z)Ljava/lang/Class<*>;
+ (Ljava/lang/String;Z)Ljava/lang/Class<*>;
+loadClass
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;Z)Ljava/lang/Class<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;Z)Ljava/lang/Class<TT;>;
+toJSON
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+toJSON
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;

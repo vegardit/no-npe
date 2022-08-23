@@ -1,0 +1,86 @@
+class io/github/classgraph/MethodInfo
+
+compareTo
+ (Lio/github/classgraph/MethodInfo;)I
+ (Lio/github/classgraph/MethodInfo;)I
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+findReferencedClassInfo
+ (Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;Ljava/util/Set<Lio/github/classgraph/ClassInfo;>;Lnonapi/io/github/classgraph/utils/LogNode;)V
+ (Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;Ljava/util/Set<Lio/github/classgraph/ClassInfo;>;Lnonapi/io/github/classgraph/utils/LogNode;)V
+getAnnotationInfo
+ ()Lio/github/classgraph/AnnotationInfoList;
+ ()Lio/github/classgraph/AnnotationInfoList;
+getAnnotationInfo
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/AnnotationInfo;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/AnnotationInfo;
+getAnnotationInfo
+ (Ljava/lang/String;)Lio/github/classgraph/AnnotationInfo;
+ (Ljava/lang/String;)Lio/github/classgraph/AnnotationInfo;
+getAnnotationInfoRepeatable
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/AnnotationInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/AnnotationInfoList;
+getAnnotationInfoRepeatable
+ (Ljava/lang/String;)Lio/github/classgraph/AnnotationInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/AnnotationInfoList;
+getClassInfo
+ ()Lio/github/classgraph/ClassInfo;
+ ()Lio/github/classgraph/ClassInfo;
+getClassName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getModifiersStr
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+getParameterInfo
+ ()[Lio/github/classgraph/MethodParameterInfo;
+ ()[Lio/github/classgraph/MethodParameterInfo;
+getThrownExceptionNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getThrownExceptions
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getTypeDescriptor
+ ()Lio/github/classgraph/MethodTypeSignature;
+ ()Lio/github/classgraph/MethodTypeSignature;
+getTypeDescriptorStr
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTypeSignature
+ ()Lio/github/classgraph/MethodTypeSignature;
+ ()Lio/github/classgraph/MethodTypeSignature;
+getTypeSignatureOrTypeDescriptor
+ ()Lio/github/classgraph/MethodTypeSignature;
+ ()Lio/github/classgraph/MethodTypeSignature;
+getTypeSignatureOrTypeDescriptorStr
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+getTypeSignatureStr
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+hasAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+hasAnnotation
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasParameterAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+hasParameterAnnotation
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+loadClassAndGetConstructor
+ ()Ljava/lang/reflect/Constructor<*>;
+ ()Ljava/lang/reflect/Constructor<*>;
+loadClassAndGetMethod
+ ()Ljava/lang/reflect/Method;
+ ()Ljava/lang/reflect/Method;
+toString
+ (ZLjava/lang/StringBuilder;)V
+ (ZLjava/lang/StringBuilder;)V

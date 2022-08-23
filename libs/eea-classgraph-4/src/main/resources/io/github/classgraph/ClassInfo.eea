@@ -1,0 +1,267 @@
+class io/github/classgraph/ClassInfo
+
+classfileResource
+ Lio/github/classgraph/Resource;
+ Lio/github/classgraph/Resource;
+name
+ Ljava/lang/String;
+ Ljava/lang/String;
+typeSignatureStr
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ljava/lang/String;ILio/github/classgraph/Resource;)V
+ (Ljava/lang/String;ILio/github/classgraph/Resource;)V
+compareTo
+ (Lio/github/classgraph/ClassInfo;)I
+ (Lio/github/classgraph/ClassInfo;)I
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+extendsSuperclass
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+extendsSuperclass
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+findReferencedClassInfo
+ (Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;Ljava/util/Set<Lio/github/classgraph/ClassInfo;>;Lnonapi/io/github/classgraph/utils/LogNode;)V
+ (Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;Ljava/util/Set<Lio/github/classgraph/ClassInfo;>;Lnonapi/io/github/classgraph/utils/LogNode;)V
+getAnnotationDefaultParameterValues
+ ()Lio/github/classgraph/AnnotationParameterValueList;
+ ()Lio/github/classgraph/AnnotationParameterValueList;
+getAnnotationInfo
+ ()Lio/github/classgraph/AnnotationInfoList;
+ ()Lio/github/classgraph/AnnotationInfoList;
+getAnnotationInfo
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/AnnotationInfo;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/AnnotationInfo;
+getAnnotationInfo
+ (Ljava/lang/String;)Lio/github/classgraph/AnnotationInfo;
+ (Ljava/lang/String;)Lio/github/classgraph/AnnotationInfo;
+getAnnotationInfoRepeatable
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/AnnotationInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/AnnotationInfoList;
+getAnnotationInfoRepeatable
+ (Ljava/lang/String;)Lio/github/classgraph/AnnotationInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/AnnotationInfoList;
+getAnnotations
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getClassDependencies
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getClassInfo
+ ()Lio/github/classgraph/ClassInfo;
+ ()Lio/github/classgraph/ClassInfo;
+getClassName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getClassesImplementing
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getClassesWithAnnotation
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getClassesWithFieldAnnotation
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getClassesWithMethodAnnotation
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getClassesWithMethodParameterAnnotation
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getClasspathElementFile
+ ()Ljava/io/File;
+ ()Ljava/io/File;
+getClasspathElementURI
+ ()Ljava/net/URI;
+ ()Ljava/net/URI;
+getClasspathElementURL
+ ()Ljava/net/URL;
+ ()Ljava/net/URL;
+getConstructorInfo
+ ()Lio/github/classgraph/MethodInfoList;
+ ()Lio/github/classgraph/MethodInfoList;
+getDeclaredConstructorInfo
+ ()Lio/github/classgraph/MethodInfoList;
+ ()Lio/github/classgraph/MethodInfoList;
+getDeclaredFieldInfo
+ ()Lio/github/classgraph/FieldInfoList;
+ ()L1io/github/classgraph/FieldInfoList;
+getDeclaredFieldInfo
+ (Ljava/lang/String;)Lio/github/classgraph/FieldInfo;
+ (L0java/lang/String;)Lio/github/classgraph/FieldInfo;
+getDeclaredMethodAndConstructorInfo
+ ()Lio/github/classgraph/MethodInfoList;
+ ()L1io/github/classgraph/MethodInfoList;
+getDeclaredMethodInfo
+ ()Lio/github/classgraph/MethodInfoList;
+ ()Lio/github/classgraph/MethodInfoList;
+getDeclaredMethodInfo
+ (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
+getEnumConstantObjects
+ ()Ljava/util/List<Ljava/lang/Object;>;
+ ()Ljava/util/List<Ljava/lang/Object;>;
+getEnumConstants
+ ()Lio/github/classgraph/FieldInfoList;
+ ()Lio/github/classgraph/FieldInfoList;
+getFieldAnnotations
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getFieldInfo
+ ()Lio/github/classgraph/FieldInfoList;
+ ()Lio/github/classgraph/FieldInfoList;
+getFieldInfo
+ (Ljava/lang/String;)Lio/github/classgraph/FieldInfo;
+ (Ljava/lang/String;)Lio/github/classgraph/FieldInfo;
+getFullyQualifiedDefiningMethodName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInnerClasses
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getInterfaces
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getMethodAndConstructorInfo
+ ()Lio/github/classgraph/MethodInfoList;
+ ()Lio/github/classgraph/MethodInfoList;
+getMethodAnnotations
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getMethodInfo
+ ()Lio/github/classgraph/MethodInfoList;
+ ()Lio/github/classgraph/MethodInfoList;
+getMethodInfo
+ (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
+getMethodParameterAnnotations
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getModifiersStr
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getModuleInfo
+ ()Lio/github/classgraph/ModuleInfo;
+ ()Lio/github/classgraph/ModuleInfo;
+getModuleRef
+ ()Lio/github/classgraph/ModuleRef;
+ ()Lio/github/classgraph/ModuleRef;
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+getOuterClasses
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getPackageInfo
+ ()Lio/github/classgraph/PackageInfo;
+ ()Lio/github/classgraph/PackageInfo;
+getPackageName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getResource
+ ()Lio/github/classgraph/Resource;
+ ()Lio/github/classgraph/Resource;
+getSimpleName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSubclasses
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getSuperclass
+ ()Lio/github/classgraph/ClassInfo;
+ ()Lio/github/classgraph/ClassInfo;
+getSuperclasses
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
+getTypeDescriptor
+ ()Lio/github/classgraph/ClassTypeSignature;
+ ()Lio/github/classgraph/ClassTypeSignature;
+getTypeSignature
+ ()Lio/github/classgraph/ClassTypeSignature;
+ ()Lio/github/classgraph/ClassTypeSignature;
+getTypeSignatureOrTypeDescriptor
+ ()Lio/github/classgraph/ClassTypeSignature;
+ ()Lio/github/classgraph/ClassTypeSignature;
+getTypeSignatureStr
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+hasAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+hasAnnotation
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasDeclaredField
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasDeclaredFieldAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+hasDeclaredFieldAnnotation
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasDeclaredMethod
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasDeclaredMethodAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+hasDeclaredMethodAnnotation
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasDeclaredMethodParameterAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+hasDeclaredMethodParameterAnnotation
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasField
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasFieldAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+hasFieldAnnotation
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasMethod
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasMethodAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+hasMethodAnnotation
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasMethodParameterAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+hasMethodParameterAnnotation
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+implementsInterface
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+implementsInterface
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+loadClass
+ ()Ljava/lang/Class<*>;
+ ()Ljava/lang/Class<*>;
+loadClass
+ (Z)Ljava/lang/Class<*>;
+ (Z)Ljava/lang/Class<*>;
+loadClass
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/lang/Class<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/lang/Class<TT;>;
+loadClass
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)Ljava/lang/Class<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)Ljava/lang/Class<TT;>;
+toString
+ (ZLjava/lang/StringBuilder;)V
+ (ZLjava/lang/StringBuilder;)V
