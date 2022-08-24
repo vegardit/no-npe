@@ -217,10 +217,11 @@ Updating EEA files will:
    The following options are available:
    |name|description|default|
    |-|-|-|
-   |`packages.include`| The packages to recursively scan for class files| n/a
+   |`packages.include`| The comma separated packages to recursively scan for class files| n/a
    |`action`| The default action (`validate` or `generate` to perform during `mvn compile`) | `validate`
-   |`output.dir`| Path to the root directory containing the .eea files.| `src/main/resources`
-   |`omitRedundantAnnotatedSignatures`| It `true` lines with annotated signatures are not written to the file if they don't contain any null annotations | `false`
+   |`output.dir`| Path to the root directory containing the .eea files. Used for validation and generation.| `src/main/resources`
+   |`input.dirs`| Comma separated additional paths of root directories containing .eea files to read null annotations from on `generate`.| n/a
+   |`omitRedundantAnnotatedSignatures`| If `true` lines with annotated signatures are not written to the file if they don't contain any null annotations | `false`
 
    These options can also be specified in the command line as system properties like `-Deea-generator.<OPTION_NAME>=`,
    e.g. `-Deea-generator.omitRedundantAnnotatedSignatures=true`

@@ -308,28 +308,31 @@ public class EEAFile {
    /**
     * Populates this instance with the content of a corresponding file on the local file system.
     *
+    * @return true if the loading the file changed the effective content of this instance
     * @throws IOException in case the file cannot be read or contains syntax errors
     */
-   public void load(final Path rootPath, final LoadOptions... options) throws IOException {
+   public boolean load(final Path rootPath, final LoadOptions... options) throws IOException {
 
       final var path = rootPath.resolve(relativePath);
 
       if (arrayContains(options, LoadOptions.IGNORE_NONE_EXISTING) && !exists(rootPath)) {
          LOG.log(Level.DEBUG, "File [{0}] does not exist, skipping.", path);
-         return;
+         return false;
       }
 
       try (var r = Files.newBufferedReader(path)) {
-         load(path.toAbsolutePath().toString(), r);
+         return load(path.toAbsolutePath().toString(), r);
       }
    }
 
-   protected void load(final String path, final BufferedReader reader) throws IOException {
-      load(path, reader.lines().collect(Collectors.toCollection(ArrayDeque::new)));
+   protected boolean load(final String path, final BufferedReader reader) throws IOException {
+      return load(path, reader.lines().collect(Collectors.toCollection(ArrayDeque::new)));
    }
 
-   protected void load(final String path, final Deque<String> lines) throws IOException {
+   protected boolean load(final String path, final Deque<String> lines) throws IOException {
       LOG.log(Level.DEBUG, "Loading [{0}]...", path);
+
+      final var contentBeforeLoad = renderFileContent(true);
 
       // clean slate
       members.clear();
@@ -403,6 +406,9 @@ public class EEAFile {
          // store the parsed member entry
          members.add(member);
       }
+
+      final var contentAfterLoad = renderFileContent(true);
+      return !contentAfterLoad.equals(contentBeforeLoad);
    }
 
    protected String renderFileContent(final boolean omitRedundantAnnotatedSignatures) throws IOException {

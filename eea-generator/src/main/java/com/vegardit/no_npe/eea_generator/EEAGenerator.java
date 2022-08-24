@@ -12,6 +12,8 @@ import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.SortedMap;
 import java.util.SortedSet;
 import java.util.TreeMap;
@@ -47,13 +49,16 @@ public abstract class EEAGenerator {
    public static final Path DEFAULT_PROPERTES_FILE = Path.of("eea-generator.properties");
    public static final String JVM_PROPERTY_PREFIX = "eea-generator.";
    public static final String PROPERTY_ACTION = "action";
+   public static final String PROPERTY_INPUT_DIRS = "input.dirs";
    public static final String PROPERTY_OUTPUT_DIR = "output.dir";
    public static final String PROPERTY_PACKAGES_INCLUDE = "packages.include";
    public static final String PROPERTY_OMIT_REDUNDAND_ANNOTTED_SIGNATURES = "omitRedundantAnnotatedSignatures";
 
    public static class Config {
-      public @NonNull String[] packages;
-      public Path outputDir;
+      public final @NonNull String[] packages;
+      /** defaults to outputDir if not set */
+      public final List<Path> inputDirs = new ArrayList<>();
+      public final Path outputDir;
       public Predicate<ClassInfo> classFilter = c -> true;
       public boolean omitRedundantAnnotatedSignatures;
 
@@ -78,18 +83,34 @@ public abstract class EEAGenerator {
       }
       final var props = new Props(JVM_PROPERTY_PREFIX, filePropsPath);
 
-      final var action = props.get(PROPERTY_ACTION, null).value;
       final var packages = props.get(PROPERTY_PACKAGES_INCLUDE, null).value.split(",");
       final var outputDirProp = props.get(PROPERTY_OUTPUT_DIR, "src/main/resources");
       var outputDir = Path.of(outputDirProp.value);
       if (outputDirProp.source instanceof Path && !outputDir.isAbsolute()) {
          // if the specified outputDir value is relative and was source from properties file,
          // then make it relative to the properties file
-         outputDir = ((Path) outputDirProp.source).resolve(outputDir);
+         outputDir = ((Path) outputDirProp.source).getParent().resolve(outputDir);
       }
+      outputDir = outputDir.normalize().toAbsolutePath();
 
       final var config = new Config(outputDir, packages);
       config.omitRedundantAnnotatedSignatures = Boolean.parseBoolean(props.get(PROPERTY_OMIT_REDUNDAND_ANNOTTED_SIGNATURES, "false").value);
+
+      final var inputDirsProp = props.get(PROPERTY_INPUT_DIRS, "");
+      for (final var inputDirStr : inputDirsProp.value.split(",")) {
+         var inputDir = Path.of(inputDirStr);
+         if (inputDirsProp.source instanceof Path && !inputDir.isAbsolute()) {
+            // if the specified inputDir value is relative and was source from properties file,
+            // then make it relative to the properties file
+            inputDir = ((Path) inputDirsProp.source).getParent().resolve(inputDir);
+         }
+         config.inputDirs.add(inputDir.normalize().toAbsolutePath());
+      }
+      final var action = props.get(PROPERTY_ACTION, null).value;
+
+      LOG.log(Level.INFO, "Effective input directories: " + config.inputDirs);
+      LOG.log(Level.INFO, "Effective output directory: " + outputDir);
+
       switch (action) {
          case "generate":
             updateEEAFiles(config);
@@ -246,18 +267,23 @@ public abstract class EEAGenerator {
     * @throws IllegalArgumentException if no class was found
     */
    public static long updateEEAFiles(final Config config) throws IOException {
+      final var inputDirs = new ArrayList<>(config.inputDirs);
+      inputDirs.add(config.outputDir);
       try {
          long totalModifications = 0;
          for (final var packageName : config.packages) {
             LOG.log(Level.INFO, "Updating EEA files of package [{0}]...", packageName);
-            final var pkgModifications = new LongAdder();
-
             final var eeaFiles = computeEEAFiles(packageName, config.classFilter);
             LOG.log(Level.INFO, "Found {0} types on classpath.", eeaFiles.size());
+
+            final var pkgModifications = new LongAdder();
             for (final var computedEEAFile : eeaFiles.values()) {
                final var existingEEAFile = new EEAFile(computedEEAFile.className.value);
-               existingEEAFile.load(config.outputDir, LoadOptions.IGNORE_NONE_EXISTING);
-               computedEEAFile.applyAnnotationsAndCommentsFrom(existingEEAFile, true);
+               for (final var inputDir : inputDirs) {
+                  if (existingEEAFile.load(inputDir, LoadOptions.IGNORE_NONE_EXISTING)) {
+                     computedEEAFile.applyAnnotationsAndCommentsFrom(existingEEAFile, true);
+                  }
+               }
                if (computedEEAFile.save(config.outputDir, SaveOptions.REPLACE_EXISTING)) {
                   pkgModifications.increment();
                }
