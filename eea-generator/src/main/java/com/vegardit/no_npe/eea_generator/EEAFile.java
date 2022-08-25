@@ -346,13 +346,13 @@ public class EEAFile {
 
       // read type signature if present
       line = lines.peekFirst();
-      if (line != null && !line.isBlank() && line.startsWith(" ")) {
+      if (line != null && !line.isBlank() && line.startsWith(" <" /* ExternalAnnotationProvider.TYPE_PARAMETER_PREFIX */ )) {
          lines.removeFirst();
          lineNumber++;
          classSignatureOriginal = ValueWithComment.parse(line);
 
          line = lines.peekFirst();
-         if (line != null && !line.isBlank() && line.startsWith(" ")) {
+         if (line != null && !line.isBlank() && line.startsWith(" <" /* ExternalAnnotationProvider.TYPE_PARAMETER_PREFIX */ )) {
             lines.removeFirst();
             lineNumber++;
             classSignatureAnnotated = ValueWithComment.parse(line);
