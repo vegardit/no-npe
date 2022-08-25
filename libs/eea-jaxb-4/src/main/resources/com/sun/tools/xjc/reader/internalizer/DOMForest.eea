@@ -1,0 +1,81 @@
+class com/sun/tools/xjc/reader/internalizer/DOMForest
+
+locatorTable
+ Lcom/sun/tools/xjc/reader/internalizer/LocatorTable;
+ Lcom/sun/tools/xjc/reader/internalizer/LocatorTable;
+logic
+ Lcom/sun/tools/xjc/reader/internalizer/InternalizationLogic;
+ Lcom/sun/tools/xjc/reader/internalizer/InternalizationLogic;
+outerMostBindings
+ Ljava/util/Set<Lorg/w3c/dom/Element;>;
+ Ljava/util/Set<Lorg/w3c/dom/Element;>;
+
+<init>
+ (Lcom/sun/tools/xjc/reader/internalizer/InternalizationLogic;Lcom/sun/tools/xjc/Options;)V
+ (Lcom/sun/tools/xjc/reader/internalizer/InternalizationLogic;Lcom/sun/tools/xjc/Options;)V
+<init>
+ (Ljavax/xml/parsers/SAXParserFactory;Ljavax/xml/parsers/DocumentBuilder;Lcom/sun/tools/xjc/reader/internalizer/InternalizationLogic;)V
+ (Ljavax/xml/parsers/SAXParserFactory;Ljavax/xml/parsers/DocumentBuilder;Lcom/sun/tools/xjc/reader/internalizer/InternalizationLogic;)V
+checkSchemaCorrectness
+ (Lcom/sun/tools/xjc/ErrorReceiver;)Z
+ (Lcom/sun/tools/xjc/ErrorReceiver;)Z
+createParser
+ ()Lcom/sun/xml/xsom/parser/XMLParser;
+ ()Lcom/sun/xml/xsom/parser/XMLParser;
+createSAXSource
+ (Ljava/lang/String;)Ljavax/xml/transform/sax/SAXSource;
+ (Ljava/lang/String;)Ljavax/xml/transform/sax/SAXSource;
+dump
+ (Ljava/io/OutputStream;)V
+ (Ljava/io/OutputStream;)V
+get
+ (Ljava/lang/String;)Lorg/w3c/dom/Document;
+ (Ljava/lang/String;)Lorg/w3c/dom/Document;
+getEntityResolver
+ ()Lorg/xml/sax/EntityResolver;
+ ()Lorg/xml/sax/EntityResolver;
+getErrorHandler
+ ()Lcom/sun/tools/xjc/ErrorReceiver;
+ ()Lcom/sun/tools/xjc/ErrorReceiver;
+getOneDocument
+ ()Lorg/w3c/dom/Document;
+ ()Lorg/w3c/dom/Document;
+getParserHandler
+ (Ljava/lang/String;Z)Lcom/sun/tools/xjc/reader/internalizer/DOMForest$Handler;
+ (Ljava/lang/String;Z)Lcom/sun/tools/xjc/reader/internalizer/DOMForest$Handler;
+getRootDocuments
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getSystemId
+ (Lorg/w3c/dom/Document;)Ljava/lang/String;
+ (Lorg/w3c/dom/Document;)Ljava/lang/String;
+listDocuments
+ ()[Lorg/w3c/dom/Document;
+ ()[Lorg/w3c/dom/Document;
+listSystemIDs
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+parse
+ (Ljava/lang/String;Ljavax/xml/stream/XMLStreamReader;Z)Lorg/w3c/dom/Document;
+ (Ljava/lang/String;Ljavax/xml/stream/XMLStreamReader;Z)Lorg/w3c/dom/Document;
+parse
+ (Ljava/lang/String;Lorg/xml/sax/InputSource;Z)Lorg/w3c/dom/Document;
+ (Ljava/lang/String;Lorg/xml/sax/InputSource;Z)Lorg/w3c/dom/Document;
+parse
+ (Ljava/lang/String;Z)Lorg/w3c/dom/Document;
+ (Ljava/lang/String;Z)Lorg/w3c/dom/Document;
+parse
+ (Lorg/xml/sax/InputSource;Z)Lorg/w3c/dom/Document;
+ (Lorg/xml/sax/InputSource;Z)Lorg/w3c/dom/Document;
+setEntityResolver
+ (Lorg/xml/sax/EntityResolver;)V
+ (Lorg/xml/sax/EntityResolver;)V
+setErrorHandler
+ (Lcom/sun/tools/xjc/ErrorReceiver;)V
+ (Lcom/sun/tools/xjc/ErrorReceiver;)V
+transform
+ (Z)Lcom/sun/tools/xjc/reader/internalizer/SCDBasedBindingSet;
+ (Z)Lcom/sun/tools/xjc/reader/internalizer/SCDBasedBindingSet;
+weakSchemaCorrectnessCheck
+ (Ljavax/xml/validation/SchemaFactory;)V
+ (Ljavax/xml/validation/SchemaFactory;)V

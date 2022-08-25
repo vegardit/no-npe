@@ -1,0 +1,124 @@
+class com/sun/tools/xjc/Options
+
+getBuildID
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+normalizeSystemId
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+
+activePlugins
+ Ljava/util/List<Lcom/sun/tools/xjc/Plugin;>;
+ Ljava/util/List<Lcom/sun/tools/xjc/Plugin;>;
+classNameAllocator
+ Lcom/sun/tools/xjc/api/ClassNameAllocator;
+ Lcom/sun/tools/xjc/api/ClassNameAllocator;
+classNameReplacer
+ Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+classpaths
+ Ljava/util/List<Ljava/net/URL;>;
+ Ljava/util/List<Ljava/net/URL;>;
+defaultPackage
+ Ljava/lang/String;
+ Ljava/lang/String;
+defaultPackage2
+ Ljava/lang/String;
+ Ljava/lang/String;
+encoding
+ Ljava/lang/String;
+ Ljava/lang/String;
+entityResolver
+ Lorg/xml/sax/EntityResolver;
+ Lorg/xml/sax/EntityResolver;
+pluginURIs
+ Ljava/util/Set<Ljava/lang/String;>;
+ Ljava/util/Set<Ljava/lang/String;>;
+proxyAuth
+ Ljava/lang/String;
+ Ljava/lang/String;
+target
+ Lcom/sun/tools/xjc/api/SpecVersion;
+ Lcom/sun/tools/xjc/api/SpecVersion;
+targetDir
+ Ljava/io/File;
+ Ljava/io/File;
+
+addBindFile
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+addBindFile
+ (Lorg/xml/sax/InputSource;)V
+ (Lorg/xml/sax/InputSource;)V
+addBindFileRecursive
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+addCatalog
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+addGrammar
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+addGrammar
+ (Lorg/xml/sax/InputSource;)V
+ (Lorg/xml/sax/InputSource;)V
+addGrammarRecursive
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+createCodeWriter
+ ()Lcom/sun/codemodel/CodeWriter;
+ ()Lcom/sun/codemodel/CodeWriter;
+createCodeWriter
+ (Lcom/sun/codemodel/CodeWriter;)Lcom/sun/codemodel/CodeWriter;
+ (Lcom/sun/codemodel/CodeWriter;)Lcom/sun/codemodel/CodeWriter;
+getAllPlugins
+ ()Ljava/util/List<Lcom/sun/tools/xjc/Plugin;>;
+ ()Ljava/util/List<Lcom/sun/tools/xjc/Plugin;>;
+getBindFiles
+ ()[Lorg/xml/sax/InputSource;
+ ()[Lorg/xml/sax/InputSource;
+getFieldRendererFactory
+ ()Lcom/sun/tools/xjc/generator/bean/field/FieldRendererFactory;
+ ()Lcom/sun/tools/xjc/generator/bean/field/FieldRendererFactory;
+getGrammars
+ ()[Lorg/xml/sax/InputSource;
+ ()[Lorg/xml/sax/InputSource;
+getModuleName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getNameConverter
+ ()Lorg/glassfish/jaxb/core/api/impl/NameConverter;
+ ()Lorg/glassfish/jaxb/core/api/impl/NameConverter;
+getPrologComment
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSchemaLanguage
+ ()Lcom/sun/tools/xjc/Language;
+ ()Lcom/sun/tools/xjc/Language;
+getUserClassLoader
+ (Ljava/lang/ClassLoader;)Ljava/lang/ClassLoader;
+ (Ljava/lang/ClassLoader;)Ljava/lang/ClassLoader;
+guessSchemaLanguage
+ ()Lcom/sun/tools/xjc/Language;
+ ()Lcom/sun/tools/xjc/Language;
+parseArgument
+ ([Ljava/lang/String;I)I
+ ([Ljava/lang/String;I)I
+parseArguments
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+requireArgument
+ (Ljava/lang/String;[Ljava/lang/String;I)Ljava/lang/String;
+ (Ljava/lang/String;[Ljava/lang/String;I)Ljava/lang/String;
+scanEpisodeFile
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+setFieldRendererFactory
+ (Lcom/sun/tools/xjc/generator/bean/field/FieldRendererFactory;Lcom/sun/tools/xjc/Plugin;)V
+ (Lcom/sun/tools/xjc/generator/bean/field/FieldRendererFactory;Lcom/sun/tools/xjc/Plugin;)V
+setNameConverter
+ (Lorg/glassfish/jaxb/core/api/impl/NameConverter;Lcom/sun/tools/xjc/Plugin;)V
+ (Lorg/glassfish/jaxb/core/api/impl/NameConverter;Lcom/sun/tools/xjc/Plugin;)V
+setSchemaLanguage
+ (Lcom/sun/tools/xjc/Language;)V
+ (Lcom/sun/tools/xjc/Language;)V

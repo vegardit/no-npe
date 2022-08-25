@@ -1,0 +1,42 @@
+class com/sun/tools/xjc/reader/dtd/TDTDReader
+
+parse
+ (Lorg/xml/sax/InputSource;Lorg/xml/sax/InputSource;Lcom/sun/tools/xjc/ErrorReceiver;Lcom/sun/tools/xjc/Options;)Lcom/sun/tools/xjc/model/Model;
+ (Lorg/xml/sax/InputSource;Lorg/xml/sax/InputSource;Lcom/sun/tools/xjc/ErrorReceiver;Lcom/sun/tools/xjc/Options;)Lcom/sun/tools/xjc/model/Model;
+
+<init>
+ (Lcom/sun/tools/xjc/ErrorReceiver;Lcom/sun/tools/xjc/Options;Lorg/xml/sax/InputSource;)V
+ (Lcom/sun/tools/xjc/ErrorReceiver;Lcom/sun/tools/xjc/Options;Lorg/xml/sax/InputSource;)V
+attributeDecl
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;SLjava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;SLjava/lang/String;)V
+childElement
+ (Ljava/lang/String;S)V
+ (Ljava/lang/String;S)V
+createAttribute
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;SLjava/lang/String;)Lcom/sun/tools/xjc/model/CPropertyInfo;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;SLjava/lang/String;)Lcom/sun/tools/xjc/model/CPropertyInfo;
+endContentModel
+ (Ljava/lang/String;S)V
+ (Ljava/lang/String;S)V
+error
+ (Lorg/xml/sax/Locator;Ljava/lang/String;[Ljava/lang/Object;)V
+ (Lorg/xml/sax/Locator;Ljava/lang/String;[Ljava/lang/Object;)V
+error
+ (Lorg/xml/sax/SAXParseException;)V
+ (Lorg/xml/sax/SAXParseException;)V
+fatalError
+ (Lorg/xml/sax/SAXParseException;)V
+ (Lorg/xml/sax/SAXParseException;)V
+setDocumentLocator
+ (Lorg/xml/sax/Locator;)V
+ (Lorg/xml/sax/Locator;)V
+startContentModel
+ (Ljava/lang/String;S)V
+ (Ljava/lang/String;S)V
+startDTD
+ (Lcom/sun/xml/dtdparser/InputEntity;)V
+ (Lcom/sun/xml/dtdparser/InputEntity;)V
+warning
+ (Lorg/xml/sax/SAXParseException;)V
+ (Lorg/xml/sax/SAXParseException;)V

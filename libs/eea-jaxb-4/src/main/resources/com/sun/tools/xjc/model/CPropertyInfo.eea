@@ -1,0 +1,70 @@
+class com/sun/tools/xjc/model/CPropertyInfo
+
+needsExplicitTypeName
+ (Lcom/sun/tools/xjc/model/TypeUse;Ljavax/xml/namespace/QName;)Z
+ (Lcom/sun/tools/xjc/model/TypeUse;Ljavax/xml/namespace/QName;)Z
+
+baseType
+ Lcom/sun/codemodel/JType;
+ Lcom/sun/codemodel/JType;
+defaultValue
+ Lcom/sun/tools/xjc/model/CDefaultValue;
+ Lcom/sun/tools/xjc/model/CDefaultValue;
+javadoc
+ Ljava/lang/String;
+ Ljava/lang/String;
+locator
+ Lorg/xml/sax/Locator;
+ Lorg/xml/sax/Locator;
+realization
+ Lcom/sun/tools/xjc/generator/bean/field/FieldRenderer;
+ Lcom/sun/tools/xjc/generator/bean/field/FieldRenderer;
+
+<init>
+ (Ljava/lang/String;ZLcom/sun/xml/xsom/XSComponent;Lcom/sun/tools/xjc/model/CCustomizations;Lorg/xml/sax/Locator;)V
+ (Ljava/lang/String;ZLcom/sun/xml/xsom/XSComponent;Lcom/sun/tools/xjc/model/CCustomizations;Lorg/xml/sax/Locator;)V
+accept
+ <R:Ljava/lang/Object;P:Ljava/lang/Object;>(Lcom/sun/tools/xjc/model/CPropertyVisitor2<TR;TP;>;TP;)TR;
+ <R:Ljava/lang/Object;P:Ljava/lang/Object;>(Lcom/sun/tools/xjc/model/CPropertyVisitor2<TR;TP;>;TP;)TR;
+accept
+ <V:Ljava/lang/Object;>(Lcom/sun/tools/xjc/model/CPropertyVisitor<TV;>;)TV;
+ <V:Ljava/lang/Object;>(Lcom/sun/tools/xjc/model/CPropertyVisitor<TV;>;)TV;
+collectElementNames
+ (Ljava/util/Map<Ljavax/xml/namespace/QName;Lcom/sun/tools/xjc/model/CPropertyInfo;>;)Ljavax/xml/namespace/QName;
+ (Ljava/util/Map<Ljavax/xml/namespace/QName;Lcom/sun/tools/xjc/model/CPropertyInfo;>;)Ljavax/xml/namespace/QName;
+displayName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getAdapter
+ ()Lcom/sun/tools/xjc/model/CAdapter;
+ ()Lcom/sun/tools/xjc/model/CAdapter;
+getCustomizations
+ ()Lcom/sun/tools/xjc/model/CCustomizations;
+ ()L1com/sun/tools/xjc/model/CCustomizations;
+getLocator
+ ()Lorg/xml/sax/Locator;
+ ()Lorg/xml/sax/Locator;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getName
+ (Z)Ljava/lang/String;
+ (Z)Ljava/lang/String;
+getSchemaComponent
+ ()Lcom/sun/xml/xsom/XSComponent;
+ ()Lcom/sun/xml/xsom/XSComponent;
+hasAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+parent
+ ()Lcom/sun/tools/xjc/model/CTypeInfo;
+ ()Lcom/sun/tools/xjc/model/CTypeInfo;
+readAnnotation
+ <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)TA;
+ <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)TA;
+ref
+ ()Ljava/util/Collection<+Lcom/sun/tools/xjc/model/CTypeInfo;>;
+ ()Ljava/util/Collection<+Lcom/sun/tools/xjc/model/CTypeInfo;>;
+setName
+ (ZLjava/lang/String;)V
+ (ZLjava/lang/String;)V

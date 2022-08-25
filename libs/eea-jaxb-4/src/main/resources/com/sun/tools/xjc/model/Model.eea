@@ -1,0 +1,111 @@
+class com/sun/tools/xjc/model/Model
+
+codeModel
+ Lcom/sun/codemodel/JCodeModel;
+ Lcom/sun/codemodel/JCodeModel;
+defaultSymbolSpace
+ Lcom/sun/tools/xjc/model/SymbolSpace;
+ Lcom/sun/tools/xjc/model/SymbolSpace;
+options
+ Lcom/sun/tools/xjc/Options;
+ Lcom/sun/tools/xjc/Options;
+rootClass
+ Lcom/sun/codemodel/JClass;
+ Lcom/sun/codemodel/JClass;
+rootInterface
+ Lcom/sun/codemodel/JClass;
+ Lcom/sun/codemodel/JClass;
+schemaComponent
+ Lcom/sun/xml/xsom/XSSchemaSet;
+ Lcom/sun/xml/xsom/XSSchemaSet;
+serialVersionUID
+ Ljava/lang/Long;
+ Ljava/lang/Long;
+strategy
+ Lcom/sun/tools/xjc/generator/bean/ImplStructureStrategy;
+ Lcom/sun/tools/xjc/generator/bean/ImplStructureStrategy;
+
+<init>
+ (Lcom/sun/tools/xjc/Options;Lcom/sun/codemodel/JCodeModel;Lorg/glassfish/jaxb/core/api/impl/NameConverter;Lcom/sun/tools/xjc/api/ClassNameAllocator;Lcom/sun/xml/xsom/XSSchemaSet;)V
+ (Lcom/sun/tools/xjc/Options;Lcom/sun/codemodel/JCodeModel;Lorg/glassfish/jaxb/core/api/impl/NameConverter;Lcom/sun/tools/xjc/api/ClassNameAllocator;Lcom/sun/xml/xsom/XSSchemaSet;)V
+arrays
+ ()Ljava/util/Map<Lcom/sun/tools/xjc/model/nav/NType;+Lcom/sun/tools/xjc/model/CArrayInfo;>;
+ ()Ljava/util/Map<Lcom/sun/tools/xjc/model/nav/NType;+Lcom/sun/tools/xjc/model/CArrayInfo;>;
+beans
+ ()Ljava/util/Map<Lcom/sun/tools/xjc/model/nav/NClass;Lcom/sun/tools/xjc/model/CClassInfo;>;
+ ()Ljava/util/Map<Lcom/sun/tools/xjc/model/nav/NClass;Lcom/sun/tools/xjc/model/CClassInfo;>;
+builtins
+ ()Ljava/util/Map<Lcom/sun/tools/xjc/model/nav/NType;+Lcom/sun/tools/xjc/model/CBuiltinLeafInfo;>;
+ ()Ljava/util/Map<Lcom/sun/tools/xjc/model/nav/NType;+Lcom/sun/tools/xjc/model/CBuiltinLeafInfo;>;
+createTopLevelBindings
+ ()Ljava/util/Map<Ljavax/xml/namespace/QName;Lcom/sun/tools/xjc/model/CClassInfo;>;
+ ()Ljava/util/Map<Ljavax/xml/namespace/QName;Lcom/sun/tools/xjc/model/CClassInfo;>;
+dump
+ (Ljavax/xml/transform/Result;)V
+ (Ljavax/xml/transform/Result;)V
+enums
+ ()Ljava/util/Map<Lcom/sun/tools/xjc/model/nav/NClass;Lcom/sun/tools/xjc/model/CEnumLeafInfo;>;
+ ()Ljava/util/Map<Lcom/sun/tools/xjc/model/nav/NClass;Lcom/sun/tools/xjc/model/CEnumLeafInfo;>;
+generateCode
+ (Lcom/sun/tools/xjc/Options;Lcom/sun/tools/xjc/ErrorReceiver;)Lcom/sun/tools/xjc/outline/Outline;
+ (Lcom/sun/tools/xjc/Options;Lcom/sun/tools/xjc/ErrorReceiver;)Lcom/sun/tools/xjc/outline/Outline;
+getAllElements
+ ()Ljava/lang/Iterable<+Lcom/sun/tools/xjc/model/CElementInfo;>;
+ ()Ljava/lang/Iterable<+Lcom/sun/tools/xjc/model/CElementInfo;>;
+getAnyTypeInfo
+ ()Lcom/sun/tools/xjc/model/CBuiltinLeafInfo;
+ ()Lcom/sun/tools/xjc/model/CBuiltinLeafInfo;
+getAttributeFormDefault
+ (Ljava/lang/String;)Ljakarta/xml/bind/annotation/XmlNsForm;
+ (Ljava/lang/String;)Ljakarta/xml/bind/annotation/XmlNsForm;
+getClassInfo
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/CClassInfo;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/CClassInfo;
+getCustomizations
+ ()Lcom/sun/tools/xjc/model/CCustomizations;
+ ()Lcom/sun/tools/xjc/model/CCustomizations;
+getElementFormDefault
+ (Ljava/lang/String;)Ljakarta/xml/bind/annotation/XmlNsForm;
+ (Ljava/lang/String;)Ljakarta/xml/bind/annotation/XmlNsForm;
+getElementInfo
+ (Lcom/sun/tools/xjc/model/nav/NClass;Ljavax/xml/namespace/QName;)Lcom/sun/tools/xjc/model/CElementInfo;
+ (Lcom/sun/tools/xjc/model/nav/NClass;Ljavax/xml/namespace/QName;)Lcom/sun/tools/xjc/model/CElementInfo;
+getElementMappings
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/util/Map<Ljavax/xml/namespace/QName;Lcom/sun/tools/xjc/model/CElementInfo;>;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/util/Map<Ljavax/xml/namespace/QName;Lcom/sun/tools/xjc/model/CElementInfo;>;
+getLocator
+ ()Lorg/xml/sax/Locator;
+ ()Lorg/xml/sax/Locator;
+getNameConverter
+ ()Lorg/glassfish/jaxb/core/api/impl/NameConverter;
+ ()Lorg/glassfish/jaxb/core/api/impl/NameConverter;
+getNavigator
+ ()Lorg/glassfish/jaxb/core/v2/model/nav/Navigator<Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;Ljava/lang/Void;Ljava/lang/Void;>;
+ ()Lorg/glassfish/jaxb/core/v2/model/nav/Navigator<Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;Ljava/lang/Void;Ljava/lang/Void;>;
+getPackage
+ (Lcom/sun/codemodel/JPackage;)Lcom/sun/tools/xjc/model/CClassInfoParent$Package;
+ (Lcom/sun/codemodel/JPackage;)Lcom/sun/tools/xjc/model/CClassInfoParent$Package;
+getSchemaComponent
+ ()Lcom/sun/xml/xsom/XSComponent;
+ ()Lcom/sun/xml/xsom/XSComponent;
+getSchemaLocations
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getSymbolSpace
+ (Ljava/lang/String;)Lcom/sun/tools/xjc/model/SymbolSpace;
+ (Ljava/lang/String;)Lcom/sun/tools/xjc/model/SymbolSpace;
+getTypeInfo
+ (Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/CNonElement;
+ (Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/CNonElement;
+getTypeInfo
+ (Lorg/glassfish/jaxb/core/v2/model/core/Ref<Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;>;)Lcom/sun/tools/xjc/model/CNonElement;
+ (Lorg/glassfish/jaxb/core/v2/model/core/Ref<Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;>;)Lcom/sun/tools/xjc/model/CNonElement;
+getXmlNs
+ (Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+setNameConverter
+ (Lorg/glassfish/jaxb/core/api/impl/NameConverter;)V
+ (Lorg/glassfish/jaxb/core/api/impl/NameConverter;)V
+typeUses
+ ()Ljava/util/Map<Ljavax/xml/namespace/QName;Lcom/sun/tools/xjc/model/TypeUse;>;
+ ()Ljava/util/Map<Ljavax/xml/namespace/QName;Lcom/sun/tools/xjc/model/TypeUse;>;

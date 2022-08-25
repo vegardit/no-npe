@@ -1,0 +1,17 @@
+class com/sun/codemodel/JAnnotatable
+
+annotate
+ (Lcom/sun/codemodel/JClass;)Lcom/sun/codemodel/JAnnotationUse;
+ (Lcom/sun/codemodel/JClass;)Lcom/sun/codemodel/JAnnotationUse;
+annotate
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lcom/sun/codemodel/JAnnotationUse;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lcom/sun/codemodel/JAnnotationUse;
+annotate2
+ <W::Lcom/sun/codemodel/JAnnotationWriter<+Ljava/lang/annotation/Annotation;>;>(Ljava/lang/Class<TW;>;)TW;
+ <W::Lcom/sun/codemodel/JAnnotationWriter<+Ljava/lang/annotation/Annotation;>;>(Ljava/lang/Class<TW;>;)TW;
+annotations
+ ()Ljava/util/Collection<Lcom/sun/codemodel/JAnnotationUse;>;
+ ()L1java/util/Collection<L1com/sun/codemodel/JAnnotationUse;>;
+removeAnnotation
+ (Lcom/sun/codemodel/JAnnotationUse;)Z
+ (Lcom/sun/codemodel/JAnnotationUse;)Z

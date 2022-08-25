@@ -1,0 +1,60 @@
+class com/sun/tools/xjc/generator/bean/BeanGenerator
+
+generate
+ (Lcom/sun/tools/xjc/model/Model;Lcom/sun/tools/xjc/ErrorReceiver;)Lcom/sun/tools/xjc/outline/Outline;
+ (Lcom/sun/tools/xjc/model/Model;Lcom/sun/tools/xjc/ErrorReceiver;)Lcom/sun/tools/xjc/outline/Outline;
+
+addRuntime
+ (Ljava/lang/Class<*>;)Lcom/sun/codemodel/JClass;
+ (Ljava/lang/Class<*>;)Lcom/sun/codemodel/JClass;
+generateAdapterIfNecessary
+ (Lcom/sun/tools/xjc/model/CPropertyInfo;Lcom/sun/codemodel/JAnnotatable;)V
+ (Lcom/sun/tools/xjc/model/CPropertyInfo;Lcom/sun/codemodel/JAnnotatable;)V
+generateStaticClass
+ (Ljava/lang/Class<*>;Lcom/sun/codemodel/JPackage;)Lcom/sun/codemodel/JClass;
+ (Ljava/lang/Class<*>;Lcom/sun/codemodel/JPackage;)Lcom/sun/codemodel/JClass;
+getAllPackageContexts
+ ()Ljava/lang/Iterable<+Lcom/sun/tools/xjc/outline/PackageOutline;>;
+ ()Ljava/lang/Iterable<+Lcom/sun/tools/xjc/outline/PackageOutline;>;
+getClassFactory
+ ()Lcom/sun/tools/xjc/util/CodeModelClassFactory;
+ ()Lcom/sun/tools/xjc/util/CodeModelClassFactory;
+getClasses
+ ()Ljava/util/Collection<Lcom/sun/tools/xjc/generator/bean/ClassOutlineImpl;>;
+ ()Ljava/util/Collection<Lcom/sun/tools/xjc/generator/bean/ClassOutlineImpl;>;
+getClazz
+ (Lcom/sun/tools/xjc/model/CClassInfo;)Lcom/sun/tools/xjc/generator/bean/ClassOutlineImpl;
+ (Lcom/sun/tools/xjc/model/CClassInfo;)Lcom/sun/tools/xjc/generator/bean/ClassOutlineImpl;
+getCodeModel
+ ()Lcom/sun/codemodel/JCodeModel;
+ ()Lcom/sun/codemodel/JCodeModel;
+getContainer
+ (Lcom/sun/tools/xjc/model/CClassInfoParent;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JClassContainer;
+ (Lcom/sun/tools/xjc/model/CClassInfoParent;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JClassContainer;
+getElement
+ (Lcom/sun/tools/xjc/model/CElementInfo;)Lcom/sun/tools/xjc/outline/ElementOutline;
+ (Lcom/sun/tools/xjc/model/CElementInfo;)Lcom/sun/tools/xjc/outline/ElementOutline;
+getEnum
+ (Lcom/sun/tools/xjc/model/CEnumLeafInfo;)Lcom/sun/tools/xjc/outline/EnumOutline;
+ (Lcom/sun/tools/xjc/model/CEnumLeafInfo;)Lcom/sun/tools/xjc/outline/EnumOutline;
+getEnums
+ ()Ljava/util/Collection<Lcom/sun/tools/xjc/outline/EnumOutline;>;
+ ()Ljava/util/Collection<Lcom/sun/tools/xjc/outline/EnumOutline;>;
+getErrorReceiver
+ ()Lcom/sun/tools/xjc/ErrorReceiver;
+ ()Lcom/sun/tools/xjc/ErrorReceiver;
+getField
+ (Lcom/sun/tools/xjc/model/CPropertyInfo;)Lcom/sun/tools/xjc/outline/FieldOutline;
+ (Lcom/sun/tools/xjc/model/CPropertyInfo;)Lcom/sun/tools/xjc/outline/FieldOutline;
+getModel
+ ()Lcom/sun/tools/xjc/model/Model;
+ ()Lcom/sun/tools/xjc/model/Model;
+getPackageContext
+ (Lcom/sun/codemodel/JPackage;)Lcom/sun/tools/xjc/generator/bean/PackageOutlineImpl;
+ (Lcom/sun/codemodel/JPackage;)Lcom/sun/tools/xjc/generator/bean/PackageOutlineImpl;
+getUsedPackages
+ (Lcom/sun/tools/xjc/outline/Aspect;)[Lcom/sun/codemodel/JPackage;
+ (Lcom/sun/tools/xjc/outline/Aspect;)[Lcom/sun/codemodel/JPackage;
+resolve
+ (Lcom/sun/tools/xjc/model/CTypeRef;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JType;
+ (Lcom/sun/tools/xjc/model/CTypeRef;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JType;

@@ -1,0 +1,47 @@
+class com/sun/tools/xjc/outline/Outline
+
+addRuntime
+ (Ljava/lang/Class<*>;)Lcom/sun/codemodel/JClass;
+ (Ljava/lang/Class<*>;)Lcom/sun/codemodel/JClass;
+getAllPackageContexts
+ ()Ljava/lang/Iterable<+Lcom/sun/tools/xjc/outline/PackageOutline;>;
+ ()L1java/lang/Iterable<+L1com/sun/tools/xjc/outline/PackageOutline;>;
+getClassFactory
+ ()Lcom/sun/tools/xjc/util/CodeModelClassFactory;
+ ()Lcom/sun/tools/xjc/util/CodeModelClassFactory;
+getClasses
+ ()Ljava/util/Collection<+Lcom/sun/tools/xjc/outline/ClassOutline;>;
+ ()L1java/util/Collection<+L1com/sun/tools/xjc/outline/ClassOutline;>;
+getClazz
+ (Lcom/sun/tools/xjc/model/CClassInfo;)Lcom/sun/tools/xjc/outline/ClassOutline;
+ (Lcom/sun/tools/xjc/model/CClassInfo;)Lcom/sun/tools/xjc/outline/ClassOutline;
+getCodeModel
+ ()Lcom/sun/codemodel/JCodeModel;
+ ()L1com/sun/codemodel/JCodeModel;
+getContainer
+ (Lcom/sun/tools/xjc/model/CClassInfoParent;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JClassContainer;
+ (Lcom/sun/tools/xjc/model/CClassInfoParent;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JClassContainer;
+getElement
+ (Lcom/sun/tools/xjc/model/CElementInfo;)Lcom/sun/tools/xjc/outline/ElementOutline;
+ (Lcom/sun/tools/xjc/model/CElementInfo;)Lcom/sun/tools/xjc/outline/ElementOutline;
+getEnum
+ (Lcom/sun/tools/xjc/model/CEnumLeafInfo;)Lcom/sun/tools/xjc/outline/EnumOutline;
+ (Lcom/sun/tools/xjc/model/CEnumLeafInfo;)Lcom/sun/tools/xjc/outline/EnumOutline;
+getEnums
+ ()Ljava/util/Collection<Lcom/sun/tools/xjc/outline/EnumOutline;>;
+ ()L1java/util/Collection<L1com/sun/tools/xjc/outline/EnumOutline;>;
+getErrorReceiver
+ ()Lcom/sun/tools/xjc/ErrorReceiver;
+ ()Lcom/sun/tools/xjc/ErrorReceiver;
+getField
+ (Lcom/sun/tools/xjc/model/CPropertyInfo;)Lcom/sun/tools/xjc/outline/FieldOutline;
+ (Lcom/sun/tools/xjc/model/CPropertyInfo;)Lcom/sun/tools/xjc/outline/FieldOutline;
+getModel
+ ()Lcom/sun/tools/xjc/model/Model;
+ ()L1com/sun/tools/xjc/model/Model;
+getPackageContext
+ (Lcom/sun/codemodel/JPackage;)Lcom/sun/tools/xjc/outline/PackageOutline;
+ (Lcom/sun/codemodel/JPackage;)Lcom/sun/tools/xjc/outline/PackageOutline;
+resolve
+ (Lcom/sun/tools/xjc/model/CTypeRef;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JType;
+ (Lcom/sun/tools/xjc/model/CTypeRef;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JType;

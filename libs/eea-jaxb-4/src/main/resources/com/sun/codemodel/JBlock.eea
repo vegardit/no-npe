@@ -1,0 +1,86 @@
+class com/sun/codemodel/JBlock
+
+_break
+ (Lcom/sun/codemodel/JLabel;)V
+ (Lcom/sun/codemodel/JLabel;)V
+_continue
+ (Lcom/sun/codemodel/JLabel;)V
+ (Lcom/sun/codemodel/JLabel;)V
+_do
+ (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JDoLoop;
+ (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JDoLoop;
+_for
+ ()Lcom/sun/codemodel/JForLoop;
+ ()Lcom/sun/codemodel/JForLoop;
+_if
+ (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JConditional;
+ (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JConditional;
+_return
+ (Lcom/sun/codemodel/JExpression;)V
+ (Lcom/sun/codemodel/JExpression;)V
+_switch
+ (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JSwitch;
+ (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JSwitch;
+_throw
+ (Lcom/sun/codemodel/JExpression;)V
+ (Lcom/sun/codemodel/JExpression;)V
+_try
+ ()Lcom/sun/codemodel/JTryBlock;
+ ()Lcom/sun/codemodel/JTryBlock;
+_while
+ (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JWhileLoop;
+ (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JWhileLoop;
+add
+ (Lcom/sun/codemodel/JStatement;)Lcom/sun/codemodel/JBlock;
+ (Lcom/sun/codemodel/JStatement;)Lcom/sun/codemodel/JBlock;
+assign
+ (Lcom/sun/codemodel/JAssignmentTarget;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JBlock;
+ (Lcom/sun/codemodel/JAssignmentTarget;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JBlock;
+assignPlus
+ (Lcom/sun/codemodel/JAssignmentTarget;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JBlock;
+ (Lcom/sun/codemodel/JAssignmentTarget;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JBlock;
+block
+ ()Lcom/sun/codemodel/JBlock;
+ ()Lcom/sun/codemodel/JBlock;
+decl
+ (ILcom/sun/codemodel/JType;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JVar;
+ (ILcom/sun/codemodel/JType;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JVar;
+decl
+ (Lcom/sun/codemodel/JType;Ljava/lang/String;)Lcom/sun/codemodel/JVar;
+ (Lcom/sun/codemodel/JType;Ljava/lang/String;)Lcom/sun/codemodel/JVar;
+decl
+ (Lcom/sun/codemodel/JType;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JVar;
+ (Lcom/sun/codemodel/JType;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JVar;
+directStatement
+ (Ljava/lang/String;)Lcom/sun/codemodel/JStatement;
+ (Ljava/lang/String;)Lcom/sun/codemodel/JStatement;
+forEach
+ (Lcom/sun/codemodel/JType;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JForEach;
+ (Lcom/sun/codemodel/JType;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JForEach;
+generate
+ (Lcom/sun/codemodel/JFormatter;)V
+ (Lcom/sun/codemodel/JFormatter;)V
+getContents
+ ()Ljava/util/List<Ljava/lang/Object;>;
+ ()Ljava/util/List<Ljava/lang/Object;>;
+invoke
+ (Lcom/sun/codemodel/JExpression;Lcom/sun/codemodel/JMethod;)Lcom/sun/codemodel/JInvocation;
+ (Lcom/sun/codemodel/JExpression;Lcom/sun/codemodel/JMethod;)Lcom/sun/codemodel/JInvocation;
+invoke
+ (Lcom/sun/codemodel/JExpression;Ljava/lang/String;)Lcom/sun/codemodel/JInvocation;
+ (Lcom/sun/codemodel/JExpression;Ljava/lang/String;)Lcom/sun/codemodel/JInvocation;
+invoke
+ (Lcom/sun/codemodel/JMethod;)Lcom/sun/codemodel/JInvocation;
+ (Lcom/sun/codemodel/JMethod;)Lcom/sun/codemodel/JInvocation;
+invoke
+ (Ljava/lang/String;)Lcom/sun/codemodel/JInvocation;
+ (Ljava/lang/String;)Lcom/sun/codemodel/JInvocation;
+label
+ (Ljava/lang/String;)Lcom/sun/codemodel/JLabel;
+ (Ljava/lang/String;)Lcom/sun/codemodel/JLabel;
+state
+ (Lcom/sun/codemodel/JFormatter;)V
+ (Lcom/sun/codemodel/JFormatter;)V
+staticInvoke
+ (Lcom/sun/codemodel/JClass;Ljava/lang/String;)Lcom/sun/codemodel/JInvocation;
+ (Lcom/sun/codemodel/JClass;Ljava/lang/String;)Lcom/sun/codemodel/JInvocation;

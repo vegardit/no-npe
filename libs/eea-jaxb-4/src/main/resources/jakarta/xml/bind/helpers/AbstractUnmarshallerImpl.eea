@@ -1,0 +1,86 @@
+class jakarta/xml/bind/helpers/AbstractUnmarshallerImpl
+
+createUnmarshalException
+ (Lorg/xml/sax/SAXException;)Ljakarta/xml/bind/UnmarshalException;
+ (Lorg/xml/sax/SAXException;)Ljakarta/xml/bind/UnmarshalException;
+getAdapter
+ <A:Ljakarta/xml/bind/annotation/adapters/XmlAdapter<**>;>(Ljava/lang/Class<TA;>;)TA;
+ <A:Ljakarta/xml/bind/annotation/adapters/XmlAdapter<**>;>(Ljava/lang/Class<TA;>;)TA;
+getAttachmentUnmarshaller
+ ()Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;
+ ()Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;
+getEventHandler
+ ()Ljakarta/xml/bind/ValidationEventHandler;
+ ()Ljakarta/xml/bind/ValidationEventHandler;
+getListener
+ ()Ljakarta/xml/bind/Unmarshaller$Listener;
+ ()Ljakarta/xml/bind/Unmarshaller$Listener;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getSchema
+ ()Ljavax/xml/validation/Schema;
+ ()Ljavax/xml/validation/Schema;
+getXMLReader
+ ()Lorg/xml/sax/XMLReader;
+ ()Lorg/xml/sax/XMLReader;
+setAdapter
+ <A:Ljakarta/xml/bind/annotation/adapters/XmlAdapter<**>;>(Ljava/lang/Class<TA;>;TA;)V
+ <A:Ljakarta/xml/bind/annotation/adapters/XmlAdapter<**>;>(Ljava/lang/Class<TA;>;TA;)V
+setAdapter
+ <A:Ljakarta/xml/bind/annotation/adapters/XmlAdapter<**>;>(TA;)V
+ <A:Ljakarta/xml/bind/annotation/adapters/XmlAdapter<**>;>(TA;)V
+setAttachmentUnmarshaller
+ (Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;)V
+ (Ljakarta/xml/bind/attachment/AttachmentUnmarshaller;)V
+setEventHandler
+ (Ljakarta/xml/bind/ValidationEventHandler;)V
+ (Ljakarta/xml/bind/ValidationEventHandler;)V
+setListener
+ (Ljakarta/xml/bind/Unmarshaller$Listener;)V
+ (Ljakarta/xml/bind/Unmarshaller$Listener;)V
+setProperty
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+setSchema
+ (Ljavax/xml/validation/Schema;)V
+ (Ljavax/xml/validation/Schema;)V
+unmarshal
+ (Ljava/io/File;)Ljava/lang/Object;
+ (Ljava/io/File;)Ljava/lang/Object;
+unmarshal
+ (Ljava/io/InputStream;)Ljava/lang/Object;
+ (Ljava/io/InputStream;)Ljava/lang/Object;
+unmarshal
+ (Ljava/io/Reader;)Ljava/lang/Object;
+ (Ljava/io/Reader;)Ljava/lang/Object;
+unmarshal
+ (Ljava/net/URL;)Ljava/lang/Object;
+ (Ljava/net/URL;)Ljava/lang/Object;
+unmarshal
+ (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;
+ (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;
+unmarshal
+ (Ljavax/xml/stream/XMLStreamReader;)Ljava/lang/Object;
+ (Ljavax/xml/stream/XMLStreamReader;)Ljava/lang/Object;
+unmarshal
+ (Ljavax/xml/transform/Source;)Ljava/lang/Object;
+ (Ljavax/xml/transform/Source;)Ljava/lang/Object;
+unmarshal
+ (Lorg/xml/sax/InputSource;)Ljava/lang/Object;
+ (Lorg/xml/sax/InputSource;)Ljava/lang/Object;
+unmarshal
+ (Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)Ljava/lang/Object;
+ (Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)Ljava/lang/Object;
+unmarshal
+ <T:Ljava/lang/Object;>(Ljavax/xml/stream/XMLEventReader;Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/JAXBElement<TT;>;
+ <T:Ljava/lang/Object;>(Ljavax/xml/stream/XMLEventReader;Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/JAXBElement<TT;>;
+unmarshal
+ <T:Ljava/lang/Object;>(Ljavax/xml/stream/XMLStreamReader;Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/JAXBElement<TT;>;
+ <T:Ljava/lang/Object;>(Ljavax/xml/stream/XMLStreamReader;Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/JAXBElement<TT;>;
+unmarshal
+ <T:Ljava/lang/Object;>(Ljavax/xml/transform/Source;Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/JAXBElement<TT;>;
+ <T:Ljava/lang/Object;>(Ljavax/xml/transform/Source;Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/JAXBElement<TT;>;
+unmarshal
+ <T:Ljava/lang/Object;>(Lorg/w3c/dom/Node;Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/JAXBElement<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/w3c/dom/Node;Ljava/lang/Class<TT;>;)Ljakarta/xml/bind/JAXBElement<TT;>;

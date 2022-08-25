@@ -1,0 +1,172 @@
+class com/sun/tools/xjc/model/nav/NavigatorImpl
+
+theInstance
+ Lcom/sun/tools/xjc/model/nav/NavigatorImpl;
+ L1com/sun/tools/xjc/model/nav/NavigatorImpl;
+
+create
+ (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
+create
+ (Ljava/lang/reflect/Type;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Ljava/lang/reflect/Type;)Lcom/sun/tools/xjc/model/nav/NType;
+createParameterizedType
+ (Lcom/sun/tools/xjc/model/nav/NClass;[Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Lcom/sun/tools/xjc/model/nav/NClass;[Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+createParameterizedType
+ (Ljava/lang/Class;[Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Ljava/lang/Class;[Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+
+asDecl
+ (Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NClass;
+asDecl
+ (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
+erasure
+ <T:Ljava/lang/Object;>(Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+ <T:Ljava/lang/Object;>(Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+getBaseClass
+ (Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/nav/NType;
+getClassLocation
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Lorg/glassfish/jaxb/core/v2/runtime/Location;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Lorg/glassfish/jaxb/core/v2/runtime/Location;
+getClassName
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/lang/String;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/lang/String;
+getClassShortName
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/lang/String;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/lang/String;
+getComponentType
+ (Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+getDeclaredField
+ (Lcom/sun/tools/xjc/model/nav/NClass;Ljava/lang/String;)Ljava/lang/Void;
+ (Lcom/sun/tools/xjc/model/nav/NClass;Ljava/lang/String;)Ljava/lang/Void;
+getDeclaredFields
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/util/Collection<+Ljava/lang/Void;>;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/util/Collection<+Ljava/lang/Void;>;
+getDeclaredMethods
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/util/Collection<+Ljava/lang/Void;>;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/util/Collection<+Ljava/lang/Void;>;
+getDeclaringClassForField
+ (Ljava/lang/Void;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Ljava/lang/Void;)Lcom/sun/tools/xjc/model/nav/NClass;
+getDeclaringClassForMethod
+ (Ljava/lang/Void;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Ljava/lang/Void;)Lcom/sun/tools/xjc/model/nav/NClass;
+getEnumConstants
+ (Lcom/sun/tools/xjc/model/nav/NClass;)[Ljava/lang/Void;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)[Ljava/lang/Void;
+getFieldLocation
+ (Ljava/lang/Void;)Lorg/glassfish/jaxb/core/v2/runtime/Location;
+ (Ljava/lang/Void;)Lorg/glassfish/jaxb/core/v2/runtime/Location;
+getFieldName
+ (Ljava/lang/Void;)Ljava/lang/String;
+ (Ljava/lang/Void;)Ljava/lang/String;
+getFieldType
+ (Ljava/lang/Void;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Ljava/lang/Void;)Lcom/sun/tools/xjc/model/nav/NType;
+getMethodLocation
+ (Ljava/lang/Void;)Lorg/glassfish/jaxb/core/v2/runtime/Location;
+ (Ljava/lang/Void;)Lorg/glassfish/jaxb/core/v2/runtime/Location;
+getMethodName
+ (Ljava/lang/Void;)Ljava/lang/String;
+ (Ljava/lang/Void;)Ljava/lang/String;
+getMethodParameters
+ (Ljava/lang/Void;)[Lcom/sun/tools/xjc/model/nav/NType;
+ (Ljava/lang/Void;)[Lcom/sun/tools/xjc/model/nav/NType;
+getPackageName
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/lang/String;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/lang/String;
+getPrimitive
+ (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NType;
+getReturnType
+ (Ljava/lang/Void;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Ljava/lang/Void;)Lcom/sun/tools/xjc/model/nav/NType;
+getSuperClass
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/nav/NClass;
+getTypeArgument
+ (Lcom/sun/tools/xjc/model/nav/NType;I)Lcom/sun/tools/xjc/model/nav/NType;
+ (Lcom/sun/tools/xjc/model/nav/NType;I)Lcom/sun/tools/xjc/model/nav/NType;
+getTypeName
+ (Lcom/sun/tools/xjc/model/nav/NType;)Ljava/lang/String;
+ (Lcom/sun/tools/xjc/model/nav/NType;)Ljava/lang/String;
+getVoidType
+ ()Lcom/sun/tools/xjc/model/nav/NType;
+ ()Lcom/sun/tools/xjc/model/nav/NType;
+hasDefaultConstructor
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+isAbstract
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+isArray
+ (Lcom/sun/tools/xjc/model/nav/NType;)Z
+ (Lcom/sun/tools/xjc/model/nav/NType;)Z
+isArrayButNotByteArray
+ (Lcom/sun/tools/xjc/model/nav/NType;)Z
+ (Lcom/sun/tools/xjc/model/nav/NType;)Z
+isBridgeMethod
+ (Ljava/lang/Void;)Z
+ (Ljava/lang/Void;)Z
+isEnum
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+isFinal
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+isFinalMethod
+ (Ljava/lang/Void;)Z
+ (Ljava/lang/Void;)Z
+isInnerClass
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+isInterface
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Z
+isOverriding
+ (Ljava/lang/Void;Lcom/sun/tools/xjc/model/nav/NClass;)Z
+ (Ljava/lang/Void;Lcom/sun/tools/xjc/model/nav/NClass;)Z
+isParameterizedType
+ (Lcom/sun/tools/xjc/model/nav/NType;)Z
+ (Lcom/sun/tools/xjc/model/nav/NType;)Z
+isPrimitive
+ (Lcom/sun/tools/xjc/model/nav/NType;)Z
+ (Lcom/sun/tools/xjc/model/nav/NType;)Z
+isPublicField
+ (Ljava/lang/Void;)Z
+ (Ljava/lang/Void;)Z
+isPublicMethod
+ (Ljava/lang/Void;)Z
+ (Ljava/lang/Void;)Z
+isSameType
+ (Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NType;)Z
+ (Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NType;)Z
+isStaticField
+ (Ljava/lang/Void;)Z
+ (Ljava/lang/Void;)Z
+isStaticMethod
+ (Ljava/lang/Void;)Z
+ (Ljava/lang/Void;)Z
+isSubClassOf
+ (Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NType;)Z
+ (Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NType;)Z
+isTransient
+ (Ljava/lang/Void;)Z
+ (Ljava/lang/Void;)Z
+loadObjectFactory
+ (Lcom/sun/tools/xjc/model/nav/NClass;Ljava/lang/String;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Lcom/sun/tools/xjc/model/nav/NClass;Ljava/lang/String;)Lcom/sun/tools/xjc/model/nav/NClass;
+ref
+ (Lcom/sun/codemodel/JClass;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Lcom/sun/codemodel/JClass;)Lcom/sun/tools/xjc/model/nav/NClass;
+ref
+ (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
+use
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/nav/NType;

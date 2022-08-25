@@ -1,0 +1,26 @@
+class com/sun/tools/xjc/Plugin
+
+getCustomizationURIs
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()L1java/util/List<L1java/lang/String;>;
+getOptionName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getUsage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+isCustomizationTagName
+ (Ljava/lang/String;Ljava/lang/String;)Z
+ (L1java/lang/String;L1java/lang/String;)Z
+onActivated
+ (Lcom/sun/tools/xjc/Options;)V
+ (Lcom/sun/tools/xjc/Options;)V
+parseArgument
+ (Lcom/sun/tools/xjc/Options;[Ljava/lang/String;I)I
+ (Lcom/sun/tools/xjc/Options;[Ljava/lang/String;I)I
+postProcessModel
+ (Lcom/sun/tools/xjc/model/Model;Lorg/xml/sax/ErrorHandler;)V
+ (Lcom/sun/tools/xjc/model/Model;Lorg/xml/sax/ErrorHandler;)V
+run
+ (Lcom/sun/tools/xjc/outline/Outline;Lcom/sun/tools/xjc/Options;Lorg/xml/sax/ErrorHandler;)Z
+ (L1com/sun/tools/xjc/outline/Outline;L1com/sun/tools/xjc/Options;L1org/xml/sax/ErrorHandler;)Z
