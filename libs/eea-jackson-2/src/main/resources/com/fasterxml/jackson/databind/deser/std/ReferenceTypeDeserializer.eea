@@ -1,0 +1,70 @@
+class com/fasterxml/jackson/databind/deser/std/ReferenceTypeDeserializer
+ <T:Ljava/lang/Object;>
+
+_fullType
+ Lcom/fasterxml/jackson/databind/JavaType;
+ Lcom/fasterxml/jackson/databind/JavaType;
+_valueDeserializer
+ Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+ Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+_valueInstantiator
+ Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;
+ Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;
+_valueTypeDeserializer
+ Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;
+ Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;
+
+<init>
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)V
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)V
+<init>
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)V
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)V
+createContextual
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
+deserialize
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;
+deserialize
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;TT;)TT;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;TT;)TT;
+deserializeWithType
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+getEmptyAccessPattern
+ ()Lcom/fasterxml/jackson/databind/util/AccessPattern;
+ ()Lcom/fasterxml/jackson/databind/util/AccessPattern;
+getEmptyValue
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+getNullAccessPattern
+ ()Lcom/fasterxml/jackson/databind/util/AccessPattern;
+ ()Lcom/fasterxml/jackson/databind/util/AccessPattern;
+getNullValue
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;
+getReferenced
+ (TT;)Ljava/lang/Object;
+ (TT;)Ljava/lang/Object;
+getValueInstantiator
+ ()Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;
+ ()Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;
+getValueType
+ ()Lcom/fasterxml/jackson/databind/JavaType;
+ ()Lcom/fasterxml/jackson/databind/JavaType;
+logicalType
+ ()Lcom/fasterxml/jackson/databind/type/LogicalType;
+ ()Lcom/fasterxml/jackson/databind/type/LogicalType;
+referenceValue
+ (Ljava/lang/Object;)TT;
+ (Ljava/lang/Object;)TT;
+supportsUpdate
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+updateReference
+ (TT;Ljava/lang/Object;)TT;
+ (TT;Ljava/lang/Object;)TT;
+withResolved
+ (Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)Lcom/fasterxml/jackson/databind/deser/std/ReferenceTypeDeserializer<TT;>;
+ (Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)Lcom/fasterxml/jackson/databind/deser/std/ReferenceTypeDeserializer<TT;>;

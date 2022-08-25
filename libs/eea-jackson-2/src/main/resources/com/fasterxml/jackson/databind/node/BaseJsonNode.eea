@@ -1,0 +1,35 @@
+class com/fasterxml/jackson/databind/node/BaseJsonNode
+
+asToken
+ ()Lcom/fasterxml/jackson/core/JsonToken;
+ ()Lcom/fasterxml/jackson/core/JsonToken;
+findPath
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+numberType
+ ()Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+ ()Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+required
+ (I)Lcom/fasterxml/jackson/databind/JsonNode;
+ (I)Lcom/fasterxml/jackson/databind/JsonNode;
+required
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+serialize
+ (Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
+ (Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
+serializeWithType
+ (Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V
+ (Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V
+toPrettyString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+traverse
+ ()Lcom/fasterxml/jackson/core/JsonParser;
+ ()Lcom/fasterxml/jackson/core/JsonParser;
+traverse
+ (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonParser;
+ (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonParser;

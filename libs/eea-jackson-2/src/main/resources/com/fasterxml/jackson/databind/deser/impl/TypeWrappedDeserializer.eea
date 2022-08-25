@@ -1,0 +1,42 @@
+class com/fasterxml/jackson/databind/deser/impl/TypeWrappedDeserializer
+
+_deserializer
+ Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+ Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+_typeDeserializer
+ Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;
+ Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;
+
+<init>
+ (Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)V
+ (Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)V
+deserialize
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+deserialize
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;)Ljava/lang/Object;
+deserializeWithType
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+getDelegatee
+ ()Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
+ ()Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
+getEmptyValue
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+getKnownPropertyNames
+ ()Ljava/util/Collection<Ljava/lang/Object;>;
+ ()Ljava/util/Collection<Ljava/lang/Object;>;
+getNullValue
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+handledType
+ ()Ljava/lang/Class<*>;
+ ()Ljava/lang/Class<*>;
+logicalType
+ ()Lcom/fasterxml/jackson/databind/type/LogicalType;
+ ()Lcom/fasterxml/jackson/databind/type/LogicalType;
+supportsUpdate
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
