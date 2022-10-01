@@ -142,6 +142,13 @@ public abstract class EEAGenerator {
 
       // static fields
       for (final var f : getFields(fields, true)) {
+         if (classInfo.isEnum()) {
+            // omit enum values as they are always treated as non-null by eclipse compiler
+            if (f.isFinal() && classInfo.getTypeSignatureStr().startsWith("Ljava/lang/Enum<" + f.getTypeDescriptorStr() + ">;")) {
+               continue;
+            }
+         }
+
          final var member = eeaFile.addMember(f.getName(), f.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
          if (f.isFinal()) {
             // if the static non-primitive field is final we by default expect it to be non-null,
@@ -250,6 +257,22 @@ public abstract class EEAGenerator {
       });
 
       for (final var m : methods) {
+         // omit auto-generated methods of enums as they are always treated as non-null by eclipse compiler
+         if (m.getClassInfo().isEnum()) {
+            switch (m.getName()) {
+               case "values":
+                  if (m.getParameterInfo().length == 0) {
+                     continue;
+                  }
+                  break;
+               case "valueOf":
+                  if (m.getParameterInfo().length == 1 && String.class.getName().equals(m.getParameterInfo()[0].getTypeDescriptor()
+                     .toString())) {
+                     continue;
+                  }
+                  break;
+            }
+         }
          if (!m.isSynthetic() //
             && (selectStatic ? m.isStatic() : !m.isStatic()) //
             && (m.isProtected() || m.isPublic()) //
