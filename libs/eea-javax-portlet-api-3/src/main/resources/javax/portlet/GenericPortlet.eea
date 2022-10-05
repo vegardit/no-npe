@@ -1,0 +1,99 @@
+class javax/portlet/GenericPortlet
+
+AUTOMATIC_RESOURCE_DISPATCH
+ Ljava/lang/String;
+ L1java/lang/String;
+
+dispatchAnnotatedActionMethod
+ (Ljava/lang/String;Ljavax/portlet/ActionRequest;Ljavax/portlet/ActionResponse;)Z
+ (Ljava/lang/String;Ljavax/portlet/ActionRequest;Ljavax/portlet/ActionResponse;)Z
+dispatchAnnotatedEventMethod
+ (Ljava/lang/String;Ljavax/portlet/EventRequest;Ljavax/portlet/EventResponse;)Z
+ (Ljava/lang/String;Ljavax/portlet/EventRequest;Ljavax/portlet/EventResponse;)Z
+dispatchAnnotatedRenderMethod
+ (Ljava/lang/String;Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)Z
+ (Ljava/lang/String;Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)Z
+doDispatch
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+doEdit
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+doHeaders
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+doHelp
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+doView
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+getContainerRuntimeOptions
+ ()Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+getDefaultNamespace
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInitParameter
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getInitParameterNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getNextPossiblePortletModes
+ (Ljavax/portlet/RenderRequest;)Ljava/util/Collection<Ljavax/portlet/PortletMode;>;
+ (Ljavax/portlet/RenderRequest;)Ljava/util/Collection<Ljavax/portlet/PortletMode;>;
+getPortletConfig
+ ()Ljavax/portlet/PortletConfig;
+ ()Ljavax/portlet/PortletConfig;
+getPortletContext
+ ()Ljavax/portlet/PortletContext;
+ ()Ljavax/portlet/PortletContext;
+getPortletModes
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljavax/portlet/PortletMode;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljavax/portlet/PortletMode;>;
+getPortletName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProcessingEventQNames
+ ()Ljava/util/Enumeration<Ljavax/xml/namespace/QName;>;
+ ()Ljava/util/Enumeration<Ljavax/xml/namespace/QName;>;
+getPublicRenderParameterDefinitions
+ ()Ljava/util/Map<Ljava/lang/String;Ljavax/xml/namespace/QName;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljavax/xml/namespace/QName;>;
+getPublicRenderParameterNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getPublishingEventQNames
+ ()Ljava/util/Enumeration<Ljavax/xml/namespace/QName;>;
+ ()Ljava/util/Enumeration<Ljavax/xml/namespace/QName;>;
+getResourceBundle
+ (Ljava/util/Locale;)Ljava/util/ResourceBundle;
+ (Ljava/util/Locale;)Ljava/util/ResourceBundle;
+getSupportedLocales
+ ()Ljava/util/Enumeration<Ljava/util/Locale;>;
+ ()Ljava/util/Enumeration<Ljava/util/Locale;>;
+getTitle
+ (Ljavax/portlet/RenderRequest;)Ljava/lang/String;
+ (Ljavax/portlet/RenderRequest;)Ljava/lang/String;
+getWindowStates
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljavax/portlet/WindowState;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljavax/portlet/WindowState;>;
+init
+ (Ljavax/portlet/PortletConfig;)V
+ (Ljavax/portlet/PortletConfig;)V
+processAction
+ (Ljavax/portlet/ActionRequest;Ljavax/portlet/ActionResponse;)V
+ (Ljavax/portlet/ActionRequest;Ljavax/portlet/ActionResponse;)V
+processEvent
+ (Ljavax/portlet/EventRequest;Ljavax/portlet/EventResponse;)V
+ (Ljavax/portlet/EventRequest;Ljavax/portlet/EventResponse;)V
+render
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+ (Ljavax/portlet/RenderRequest;Ljavax/portlet/RenderResponse;)V
+renderHeaders
+ (Ljavax/portlet/HeaderRequest;Ljavax/portlet/HeaderResponse;)V
+ (Ljavax/portlet/HeaderRequest;Ljavax/portlet/HeaderResponse;)V
+serveResource
+ (Ljavax/portlet/ResourceRequest;Ljavax/portlet/ResourceResponse;)V
+ (Ljavax/portlet/ResourceRequest;Ljavax/portlet/ResourceResponse;)V
