@@ -21,13 +21,13 @@ addJspFile
  (Ljava/lang/String;Ljava/lang/String;)Ljavax/servlet/ServletRegistration$Dynamic;
 addListener
  (Ljava/lang/Class<+Ljava/util/EventListener;>;)V
- (Ljava/lang/Class<+Ljava/util/EventListener;>;)V
+ (L1java/lang/Class<+Ljava/util/EventListener;>;)V
 addListener
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V
 addListener
  <T::Ljava/util/EventListener;>(TT;)V
- <T::Ljava/util/EventListener;>(TT;)V
+ <T::L1java/util/EventListener;>(TT;)V
 addServlet
  (Ljava/lang/String;Ljava/lang/Class<+Ljavax/servlet/Servlet;>;)Ljavax/servlet/ServletRegistration$Dynamic;
  (Ljava/lang/String;Ljava/lang/Class<+Ljavax/servlet/Servlet;>;)Ljavax/servlet/ServletRegistration$Dynamic;
@@ -60,7 +60,7 @@ getClassLoader
  ()Ljava/lang/ClassLoader;
 getContext
  (Ljava/lang/String;)Ljavax/servlet/ServletContext;
- (Ljava/lang/String;)Ljavax/servlet/ServletContext;
+ (Ljava/lang/String;)L0javax/servlet/ServletContext;
 getContextPath
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -102,10 +102,10 @@ getRequestDispatcher
  (Ljava/lang/String;)Ljavax/servlet/RequestDispatcher;
 getResource
  (Ljava/lang/String;)Ljava/net/URL;
- (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)L0java/net/URL;
 getResourceAsStream
  (Ljava/lang/String;)Ljava/io/InputStream;
- (Ljava/lang/String;)Ljava/io/InputStream;
+ (Ljava/lang/String;)L0java/io/InputStream;
 getResourcePaths
  (Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
  (Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
