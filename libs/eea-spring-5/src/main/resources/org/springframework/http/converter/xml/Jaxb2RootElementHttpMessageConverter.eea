@@ -1,0 +1,20 @@
+class org/springframework/http/converter/xml/Jaxb2RootElementHttpMessageConverter
+
+canRead
+ (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+canWrite
+ (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+processSource
+ (Ljavax/xml/transform/Source;)Ljavax/xml/transform/Source;
+ (Ljavax/xml/transform/Source;)Ljavax/xml/transform/Source;
+readFromSource
+ (Ljava/lang/Class<*>;Lorg/springframework/http/HttpHeaders;Ljavax/xml/transform/Source;)Ljava/lang/Object;
+ (Ljava/lang/Class<*>;Lorg/springframework/http/HttpHeaders;Ljavax/xml/transform/Source;)Ljava/lang/Object;
+supports
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+writeToResult
+ (Ljava/lang/Object;Lorg/springframework/http/HttpHeaders;Ljavax/xml/transform/Result;)V
+ (Ljava/lang/Object;Lorg/springframework/http/HttpHeaders;Ljavax/xml/transform/Result;)V

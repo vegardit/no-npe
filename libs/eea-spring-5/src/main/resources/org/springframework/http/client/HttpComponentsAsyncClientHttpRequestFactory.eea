@@ -1,0 +1,29 @@
+class org/springframework/http/client/HttpComponentsAsyncClientHttpRequestFactory
+
+<init>
+ (Lorg/apache/http/client/HttpClient;Lorg/apache/http/nio/client/HttpAsyncClient;)V
+ (Lorg/apache/http/client/HttpClient;Lorg/apache/http/nio/client/HttpAsyncClient;)V
+<init>
+ (Lorg/apache/http/impl/client/CloseableHttpClient;Lorg/apache/http/impl/nio/client/CloseableHttpAsyncClient;)V
+ (Lorg/apache/http/impl/client/CloseableHttpClient;Lorg/apache/http/impl/nio/client/CloseableHttpAsyncClient;)V
+<init>
+ (Lorg/apache/http/impl/nio/client/CloseableHttpAsyncClient;)V
+ (Lorg/apache/http/impl/nio/client/CloseableHttpAsyncClient;)V
+<init>
+ (Lorg/apache/http/nio/client/HttpAsyncClient;)V
+ (Lorg/apache/http/nio/client/HttpAsyncClient;)V
+createAsyncRequest
+ (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)Lorg/springframework/http/client/AsyncClientHttpRequest;
+ (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)Lorg/springframework/http/client/AsyncClientHttpRequest;
+getAsyncClient
+ ()Lorg/apache/http/nio/client/HttpAsyncClient;
+ ()Lorg/apache/http/nio/client/HttpAsyncClient;
+getHttpAsyncClient
+ ()Lorg/apache/http/impl/nio/client/CloseableHttpAsyncClient;
+ ()Lorg/apache/http/impl/nio/client/CloseableHttpAsyncClient;
+setAsyncClient
+ (Lorg/apache/http/nio/client/HttpAsyncClient;)V
+ (Lorg/apache/http/nio/client/HttpAsyncClient;)V
+setHttpAsyncClient
+ (Lorg/apache/http/impl/nio/client/CloseableHttpAsyncClient;)V
+ (Lorg/apache/http/impl/nio/client/CloseableHttpAsyncClient;)V

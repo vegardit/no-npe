@@ -1,0 +1,23 @@
+class org/springframework/http/converter/json/KotlinSerializationJsonHttpMessageConverter
+
+<init>
+ (Lkotlinx/serialization/json/Json;)V
+ (Lkotlinx/serialization/json/Json;)V
+canRead
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+canWrite
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+read
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
+readInternal
+ (Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
+ (Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
+supports
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+writeInternal
+ (Ljava/lang/Object;Ljava/lang/reflect/Type;Lorg/springframework/http/HttpOutputMessage;)V
+ (Ljava/lang/Object;Ljava/lang/reflect/Type;Lorg/springframework/http/HttpOutputMessage;)V

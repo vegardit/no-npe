@@ -1,0 +1,48 @@
+class org/apache/commons/configuration2/INIConfiguration
+
+COMMENT_CHARS
+ Ljava/lang/String;
+ L1java/lang/String;
+SEPARATOR_CHARS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+getCommentLeadingCharsUsedInInput
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSection
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/SubnodeConfiguration;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/SubnodeConfiguration;
+getSections
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getSeparatorUsedInInput
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSeparatorUsedInOutput
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+isCommentLine
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isSectionLine
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+read
+ (Ljava/io/Reader;)V
+ (Ljava/io/Reader;)V
+setCommentLeadingCharsUsedInInput
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setSeparatorUsedInInput
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setSeparatorUsedInOutput
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+write
+ (Ljava/io/Writer;)V
+ (Ljava/io/Writer;)V

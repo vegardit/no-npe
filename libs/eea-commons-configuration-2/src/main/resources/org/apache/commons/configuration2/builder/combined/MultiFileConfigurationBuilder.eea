@@ -1,0 +1,45 @@
+class org/apache/commons/configuration2/builder/combined/MultiFileConfigurationBuilder
+ <T::Lorg/apache/commons/configuration2/FileBasedConfiguration;>
+
+<init>
+ (Ljava/lang/Class<+TT;>;)V
+ (Ljava/lang/Class<+TT;>;)V
+<init>
+ (Ljava/lang/Class<+TT;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+ (Ljava/lang/Class<+TT;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+<init>
+ (Ljava/lang/Class<+TT;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Z)V
+ (Ljava/lang/Class<+TT;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Z)V
+addEventListener
+ <E:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TE;>;Lorg/apache/commons/configuration2/event/EventListener<-TE;>;)V
+ <E:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TE;>;Lorg/apache/commons/configuration2/event/EventListener<-TE;>;)V
+configure
+ ([Lorg/apache/commons/configuration2/builder/BuilderParameters;)Lorg/apache/commons/configuration2/builder/combined/MultiFileConfigurationBuilder<TT;>;
+ ([Lorg/apache/commons/configuration2/builder/BuilderParameters;)Lorg/apache/commons/configuration2/builder/combined/MultiFileConfigurationBuilder<TT;>;
+constructFileName
+ (Lorg/apache/commons/configuration2/builder/combined/MultiFileBuilderParametersImpl;)Ljava/lang/String;
+ (Lorg/apache/commons/configuration2/builder/combined/MultiFileBuilderParametersImpl;)Ljava/lang/String;
+createInitializedManagedBuilder
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/apache/commons/configuration2/builder/FileBasedConfigurationBuilder<TT;>;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/apache/commons/configuration2/builder/FileBasedConfigurationBuilder<TT;>;
+createInterpolator
+ ()Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+ ()Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+createManagedBuilder
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/apache/commons/configuration2/builder/FileBasedConfigurationBuilder<TT;>;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/apache/commons/configuration2/builder/FileBasedConfigurationBuilder<TT;>;
+getConfiguration
+ ()TT;
+ ()TT;
+getInterpolator
+ ()Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+ ()Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+getManagedBuilder
+ ()Lorg/apache/commons/configuration2/builder/FileBasedConfigurationBuilder<TT;>;
+ ()Lorg/apache/commons/configuration2/builder/FileBasedConfigurationBuilder<TT;>;
+getManagedBuilders
+ ()Ljava/util/concurrent/ConcurrentMap<Ljava/lang/String;Lorg/apache/commons/configuration2/builder/FileBasedConfigurationBuilder<TT;>;>;
+ ()Ljava/util/concurrent/ConcurrentMap<Ljava/lang/String;Lorg/apache/commons/configuration2/builder/FileBasedConfigurationBuilder<TT;>;>;
+removeEventListener
+ <E:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TE;>;Lorg/apache/commons/configuration2/event/EventListener<-TE;>;)Z
+ <E:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TE;>;Lorg/apache/commons/configuration2/event/EventListener<-TE;>;)Z

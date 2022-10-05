@@ -1,0 +1,66 @@
+class org/apache/commons/configuration2/CombinedConfiguration
+
+COMBINED_INVALIDATE
+ Lorg/apache/commons/configuration2/event/EventType<Lorg/apache/commons/configuration2/event/ConfigurationEvent;>;
+ L1org/apache/commons/configuration2/event/EventType<Lorg/apache/commons/configuration2/event/ConfigurationEvent;>;
+
+<init>
+ (Lorg/apache/commons/configuration2/tree/NodeCombiner;)V
+ (Lorg/apache/commons/configuration2/tree/NodeCombiner;)V
+addConfiguration
+ (Lorg/apache/commons/configuration2/Configuration;)V
+ (Lorg/apache/commons/configuration2/Configuration;)V
+addConfiguration
+ (Lorg/apache/commons/configuration2/Configuration;Ljava/lang/String;)V
+ (Lorg/apache/commons/configuration2/Configuration;Ljava/lang/String;)V
+addConfiguration
+ (Lorg/apache/commons/configuration2/Configuration;Ljava/lang/String;Ljava/lang/String;)V
+ (Lorg/apache/commons/configuration2/Configuration;Ljava/lang/String;Ljava/lang/String;)V
+clone
+ ()Ljava/lang/Object;
+ ()L1java/lang/Object;
+getConfiguration
+ (I)Lorg/apache/commons/configuration2/Configuration;
+ (I)Lorg/apache/commons/configuration2/Configuration;
+getConfiguration
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+getConfigurationNameList
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getConfigurationNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getConfigurations
+ ()Ljava/util/List<Lorg/apache/commons/configuration2/Configuration;>;
+ ()Ljava/util/List<Lorg/apache/commons/configuration2/Configuration;>;
+getConversionExpressionEngine
+ ()Lorg/apache/commons/configuration2/tree/ExpressionEngine;
+ ()Lorg/apache/commons/configuration2/tree/ExpressionEngine;
+getNodeCombiner
+ ()Lorg/apache/commons/configuration2/tree/NodeCombiner;
+ ()Lorg/apache/commons/configuration2/tree/NodeCombiner;
+getSource
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+getSources
+ (Ljava/lang/String;)Ljava/util/Set<Lorg/apache/commons/configuration2/Configuration;>;
+ (Ljava/lang/String;)Ljava/util/Set<Lorg/apache/commons/configuration2/Configuration;>;
+onEvent
+ (Lorg/apache/commons/configuration2/event/ConfigurationEvent;)V
+ (Lorg/apache/commons/configuration2/event/ConfigurationEvent;)V
+removeConfiguration
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+removeConfiguration
+ (Lorg/apache/commons/configuration2/Configuration;)Z
+ (Lorg/apache/commons/configuration2/Configuration;)Z
+removeConfigurationAt
+ (I)Lorg/apache/commons/configuration2/Configuration;
+ (I)Lorg/apache/commons/configuration2/Configuration;
+setConversionExpressionEngine
+ (Lorg/apache/commons/configuration2/tree/ExpressionEngine;)V
+ (Lorg/apache/commons/configuration2/tree/ExpressionEngine;)V
+setNodeCombiner
+ (Lorg/apache/commons/configuration2/tree/NodeCombiner;)V
+ (Lorg/apache/commons/configuration2/tree/NodeCombiner;)V

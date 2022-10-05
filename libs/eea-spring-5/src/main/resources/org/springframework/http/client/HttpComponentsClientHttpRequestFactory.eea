@@ -1,0 +1,32 @@
+class org/springframework/http/client/HttpComponentsClientHttpRequestFactory
+
+<init>
+ (Lorg/apache/http/client/HttpClient;)V
+ (Lorg/apache/http/client/HttpClient;)V
+createHttpContext
+ (Lorg/springframework/http/HttpMethod;Ljava/net/URI;)Lorg/apache/http/protocol/HttpContext;
+ (Lorg/springframework/http/HttpMethod;Ljava/net/URI;)Lorg/apache/http/protocol/HttpContext;
+createHttpUriRequest
+ (Lorg/springframework/http/HttpMethod;Ljava/net/URI;)Lorg/apache/http/client/methods/HttpUriRequest;
+ (Lorg/springframework/http/HttpMethod;Ljava/net/URI;)Lorg/apache/http/client/methods/HttpUriRequest;
+createRequest
+ (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)Lorg/springframework/http/client/ClientHttpRequest;
+ (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)Lorg/springframework/http/client/ClientHttpRequest;
+createRequestConfig
+ (Ljava/lang/Object;)Lorg/apache/http/client/config/RequestConfig;
+ (Ljava/lang/Object;)Lorg/apache/http/client/config/RequestConfig;
+getHttpClient
+ ()Lorg/apache/http/client/HttpClient;
+ ()Lorg/apache/http/client/HttpClient;
+mergeRequestConfig
+ (Lorg/apache/http/client/config/RequestConfig;)Lorg/apache/http/client/config/RequestConfig;
+ (Lorg/apache/http/client/config/RequestConfig;)Lorg/apache/http/client/config/RequestConfig;
+postProcessHttpRequest
+ (Lorg/apache/http/client/methods/HttpUriRequest;)V
+ (Lorg/apache/http/client/methods/HttpUriRequest;)V
+setHttpClient
+ (Lorg/apache/http/client/HttpClient;)V
+ (Lorg/apache/http/client/HttpClient;)V
+setHttpContextFactory
+ (Ljava/util/function/BiFunction<Lorg/springframework/http/HttpMethod;Ljava/net/URI;Lorg/apache/http/protocol/HttpContext;>;)V
+ (Ljava/util/function/BiFunction<Lorg/springframework/http/HttpMethod;Ljava/net/URI;Lorg/apache/http/protocol/HttpContext;>;)V

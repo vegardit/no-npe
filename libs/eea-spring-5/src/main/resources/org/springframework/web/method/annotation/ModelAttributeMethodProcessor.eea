@@ -1,0 +1,42 @@
+class org/springframework/web/method/annotation/ModelAttributeMethodProcessor
+
+logger
+ Lorg/apache/commons/logging/Log;
+ Lorg/apache/commons/logging/Log;
+
+bindRequestParameters
+ (Lorg/springframework/web/bind/WebDataBinder;Lorg/springframework/web/context/request/NativeWebRequest;)V
+ (Lorg/springframework/web/bind/WebDataBinder;Lorg/springframework/web/context/request/NativeWebRequest;)V
+constructAttribute
+ (Ljava/lang/reflect/Constructor<*>;Ljava/lang/String;Lorg/springframework/core/MethodParameter;Lorg/springframework/web/bind/support/WebDataBinderFactory;Lorg/springframework/web/context/request/NativeWebRequest;)Ljava/lang/Object;
+ (Ljava/lang/reflect/Constructor<*>;Ljava/lang/String;Lorg/springframework/core/MethodParameter;Lorg/springframework/web/bind/support/WebDataBinderFactory;Lorg/springframework/web/context/request/NativeWebRequest;)Ljava/lang/Object;
+createAttribute
+ (Ljava/lang/String;Lorg/springframework/core/MethodParameter;Lorg/springframework/web/bind/support/WebDataBinderFactory;Lorg/springframework/web/context/request/NativeWebRequest;)Ljava/lang/Object;
+ (Ljava/lang/String;Lorg/springframework/core/MethodParameter;Lorg/springframework/web/bind/support/WebDataBinderFactory;Lorg/springframework/web/context/request/NativeWebRequest;)Ljava/lang/Object;
+handleReturnValue
+ (Ljava/lang/Object;Lorg/springframework/core/MethodParameter;Lorg/springframework/web/method/support/ModelAndViewContainer;Lorg/springframework/web/context/request/NativeWebRequest;)V
+ (Ljava/lang/Object;Lorg/springframework/core/MethodParameter;Lorg/springframework/web/method/support/ModelAndViewContainer;Lorg/springframework/web/context/request/NativeWebRequest;)V
+isBindExceptionRequired
+ (Lorg/springframework/core/MethodParameter;)Z
+ (Lorg/springframework/core/MethodParameter;)Z
+isBindExceptionRequired
+ (Lorg/springframework/web/bind/WebDataBinder;Lorg/springframework/core/MethodParameter;)Z
+ (Lorg/springframework/web/bind/WebDataBinder;Lorg/springframework/core/MethodParameter;)Z
+resolveArgument
+ (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/method/support/ModelAndViewContainer;Lorg/springframework/web/context/request/NativeWebRequest;Lorg/springframework/web/bind/support/WebDataBinderFactory;)Ljava/lang/Object;
+ (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/method/support/ModelAndViewContainer;Lorg/springframework/web/context/request/NativeWebRequest;Lorg/springframework/web/bind/support/WebDataBinderFactory;)Ljava/lang/Object;
+resolveConstructorArgument
+ (Ljava/lang/String;Ljava/lang/Class<*>;Lorg/springframework/web/context/request/NativeWebRequest;)Ljava/lang/Object;
+ (Ljava/lang/String;Ljava/lang/Class<*>;Lorg/springframework/web/context/request/NativeWebRequest;)Ljava/lang/Object;
+supportsParameter
+ (Lorg/springframework/core/MethodParameter;)Z
+ (Lorg/springframework/core/MethodParameter;)Z
+supportsReturnType
+ (Lorg/springframework/core/MethodParameter;)Z
+ (Lorg/springframework/core/MethodParameter;)Z
+validateIfApplicable
+ (Lorg/springframework/web/bind/WebDataBinder;Lorg/springframework/core/MethodParameter;)V
+ (Lorg/springframework/web/bind/WebDataBinder;Lorg/springframework/core/MethodParameter;)V
+validateValueIfApplicable
+ (Lorg/springframework/web/bind/WebDataBinder;Lorg/springframework/core/MethodParameter;Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/Object;)V
+ (Lorg/springframework/web/bind/WebDataBinder;Lorg/springframework/core/MethodParameter;Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/Object;)V

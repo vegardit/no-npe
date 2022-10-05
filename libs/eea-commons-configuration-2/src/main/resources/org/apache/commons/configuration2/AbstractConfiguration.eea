@@ -1,0 +1,263 @@
+class org/apache/commons/configuration2/AbstractConfiguration
+
+addProperty
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+addPropertyDirect
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+addPropertyInternal
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+append
+ (Lorg/apache/commons/configuration2/Configuration;)V
+ (Lorg/apache/commons/configuration2/Configuration;)V
+clearProperty
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+clearPropertyDirect
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+cloneInterpolator
+ (Lorg/apache/commons/configuration2/AbstractConfiguration;)V
+ (Lorg/apache/commons/configuration2/AbstractConfiguration;)V
+containsKey
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+containsKeyInternal
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+copy
+ (Lorg/apache/commons/configuration2/Configuration;)V
+ (Lorg/apache/commons/configuration2/Configuration;)V
+get
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;)TT;
+get
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;TT;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;TT;)TT;
+getArray
+ (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Object;
+getArray
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+getBigDecimal
+ (Ljava/lang/String;)Ljava/math/BigDecimal;
+ (Ljava/lang/String;)Ljava/math/BigDecimal;
+getBigDecimal
+ (Ljava/lang/String;Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+ (Ljava/lang/String;Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+getBigInteger
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+getBigInteger
+ (Ljava/lang/String;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+ (Ljava/lang/String;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+getBoolean
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+getBoolean
+ (Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+ (Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+getBoolean
+ (Ljava/lang/String;Z)Z
+ (Ljava/lang/String;Z)Z
+getByte
+ (Ljava/lang/String;)B
+ (Ljava/lang/String;)B
+getByte
+ (Ljava/lang/String;B)B
+ (Ljava/lang/String;B)B
+getByte
+ (Ljava/lang/String;Ljava/lang/Byte;)Ljava/lang/Byte;
+ (Ljava/lang/String;Ljava/lang/Byte;)Ljava/lang/Byte;
+getCollection
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;Ljava/util/Collection<TT;>;)Ljava/util/Collection<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;Ljava/util/Collection<TT;>;)Ljava/util/Collection<TT;>;
+getCollection
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;Ljava/util/Collection<TT;>;Ljava/util/Collection<TT;>;)Ljava/util/Collection<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;Ljava/util/Collection<TT;>;Ljava/util/Collection<TT;>;)Ljava/util/Collection<TT;>;
+getConfigurationDecoder
+ ()Lorg/apache/commons/configuration2/ConfigurationDecoder;
+ ()Lorg/apache/commons/configuration2/ConfigurationDecoder;
+getConversionHandler
+ ()Lorg/apache/commons/configuration2/convert/ConversionHandler;
+ ()Lorg/apache/commons/configuration2/convert/ConversionHandler;
+getDouble
+ (Ljava/lang/String;)D
+ (Ljava/lang/String;)D
+getDouble
+ (Ljava/lang/String;D)D
+ (Ljava/lang/String;D)D
+getDouble
+ (Ljava/lang/String;Ljava/lang/Double;)Ljava/lang/Double;
+ (Ljava/lang/String;Ljava/lang/Double;)Ljava/lang/Double;
+getDuration
+ (Ljava/lang/String;)Ljava/time/Duration;
+ (Ljava/lang/String;)Ljava/time/Duration;
+getDuration
+ (Ljava/lang/String;Ljava/time/Duration;)Ljava/time/Duration;
+ (Ljava/lang/String;Ljava/time/Duration;)Ljava/time/Duration;
+getEncodedString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getEncodedString
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/ConfigurationDecoder;)Ljava/lang/String;
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/ConfigurationDecoder;)Ljava/lang/String;
+getFloat
+ (Ljava/lang/String;)F
+ (Ljava/lang/String;)F
+getFloat
+ (Ljava/lang/String;F)F
+ (Ljava/lang/String;F)F
+getFloat
+ (Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;
+ (Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;
+getInt
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+getInt
+ (Ljava/lang/String;I)I
+ (Ljava/lang/String;I)I
+getInteger
+ (Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;
+ (Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;
+getInterpolator
+ ()Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+ ()Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+getKeys
+ ()Ljava/util/Iterator<Ljava/lang/String;>;
+ ()Ljava/util/Iterator<Ljava/lang/String;>;
+getKeys
+ (Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
+getKeysInternal
+ ()Ljava/util/Iterator<Ljava/lang/String;>;
+ ()Ljava/util/Iterator<Ljava/lang/String;>;
+getKeysInternal
+ (Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
+getList
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/Object;>;
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/Object;>;
+getList
+ (Ljava/lang/String;Ljava/util/List<*>;)Ljava/util/List<Ljava/lang/Object;>;
+ (Ljava/lang/String;Ljava/util/List<*>;)Ljava/util/List<Ljava/lang/Object;>;
+getList
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;)Ljava/util/List<TT;>;
+getList
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;Ljava/util/List<TT;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;Ljava/util/List<TT;>;)Ljava/util/List<TT;>;
+getListDelimiterHandler
+ ()Lorg/apache/commons/configuration2/convert/ListDelimiterHandler;
+ ()Lorg/apache/commons/configuration2/convert/ListDelimiterHandler;
+getLogger
+ ()Lorg/apache/commons/configuration2/io/ConfigurationLogger;
+ ()Lorg/apache/commons/configuration2/io/ConfigurationLogger;
+getLong
+ (Ljava/lang/String;)J
+ (Ljava/lang/String;)J
+getLong
+ (Ljava/lang/String;J)J
+ (Ljava/lang/String;J)J
+getLong
+ (Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;
+ (Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;
+getProperties
+ (Ljava/lang/String;)Ljava/util/Properties;
+ (Ljava/lang/String;)Ljava/util/Properties;
+getProperties
+ (Ljava/lang/String;Ljava/util/Properties;)Ljava/util/Properties;
+ (Ljava/lang/String;Ljava/util/Properties;)Ljava/util/Properties;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getPropertyInternal
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getShort
+ (Ljava/lang/String;)S
+ (Ljava/lang/String;)S
+getShort
+ (Ljava/lang/String;Ljava/lang/Short;)Ljava/lang/Short;
+ (Ljava/lang/String;Ljava/lang/Short;)Ljava/lang/Short;
+getShort
+ (Ljava/lang/String;S)S
+ (Ljava/lang/String;S)S
+getString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getString
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getStringArray
+ (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[Ljava/lang/String;
+getSynchronizer
+ ()Lorg/apache/commons/configuration2/sync/Synchronizer;
+ ()Lorg/apache/commons/configuration2/sync/Synchronizer;
+immutableSubset
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/ImmutableConfiguration;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/ImmutableConfiguration;
+initLogger
+ (Lorg/apache/commons/configuration2/io/ConfigurationLogger;)V
+ (Lorg/apache/commons/configuration2/io/ConfigurationLogger;)V
+installInterpolator
+ (Ljava/util/Map<Ljava/lang/String;+Lorg/apache/commons/configuration2/interpol/Lookup;>;Ljava/util/Collection<+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+ (Ljava/util/Map<Ljava/lang/String;+Lorg/apache/commons/configuration2/interpol/Lookup;>;Ljava/util/Collection<+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+interpolate
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+interpolate
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+interpolatedConfiguration
+ ()Lorg/apache/commons/configuration2/Configuration;
+ ()Lorg/apache/commons/configuration2/Configuration;
+isScalarValue
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+lock
+ (Lorg/apache/commons/configuration2/sync/LockMode;)V
+ (Lorg/apache/commons/configuration2/sync/LockMode;)V
+setConfigurationDecoder
+ (Lorg/apache/commons/configuration2/ConfigurationDecoder;)V
+ (Lorg/apache/commons/configuration2/ConfigurationDecoder;)V
+setConversionHandler
+ (Lorg/apache/commons/configuration2/convert/ConversionHandler;)V
+ (Lorg/apache/commons/configuration2/convert/ConversionHandler;)V
+setDefaultLookups
+ (Ljava/util/Collection<+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+ (Ljava/util/Collection<+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+setInterpolator
+ (Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;)V
+ (Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;)V
+setListDelimiterHandler
+ (Lorg/apache/commons/configuration2/convert/ListDelimiterHandler;)V
+ (Lorg/apache/commons/configuration2/convert/ListDelimiterHandler;)V
+setLogger
+ (Lorg/apache/commons/configuration2/io/ConfigurationLogger;)V
+ (Lorg/apache/commons/configuration2/io/ConfigurationLogger;)V
+setParentInterpolator
+ (Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;)V
+ (Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;)V
+setPrefixLookups
+ (Ljava/util/Map<Ljava/lang/String;+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+ (Ljava/util/Map<Ljava/lang/String;+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+setProperty
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+setPropertyInternal
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+setSynchronizer
+ (Lorg/apache/commons/configuration2/sync/Synchronizer;)V
+ (Lorg/apache/commons/configuration2/sync/Synchronizer;)V
+subset
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+unlock
+ (Lorg/apache/commons/configuration2/sync/LockMode;)V
+ (Lorg/apache/commons/configuration2/sync/LockMode;)V

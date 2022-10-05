@@ -1,0 +1,35 @@
+class org/springframework/remoting/httpinvoker/HttpComponentsHttpInvokerRequestExecutor
+
+<init>
+ (Lorg/apache/http/client/HttpClient;)V
+ (Lorg/apache/http/client/HttpClient;)V
+createHttpPost
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;)Lorg/apache/http/client/methods/HttpPost;
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;)Lorg/apache/http/client/methods/HttpPost;
+createRequestConfig
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;)Lorg/apache/http/client/config/RequestConfig;
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;)Lorg/apache/http/client/config/RequestConfig;
+doExecuteRequest
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Ljava/io/ByteArrayOutputStream;)Lorg/springframework/remoting/support/RemoteInvocationResult;
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Ljava/io/ByteArrayOutputStream;)Lorg/springframework/remoting/support/RemoteInvocationResult;
+executeHttpPost
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/apache/http/client/HttpClient;Lorg/apache/http/client/methods/HttpPost;)Lorg/apache/http/HttpResponse;
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/apache/http/client/HttpClient;Lorg/apache/http/client/methods/HttpPost;)Lorg/apache/http/HttpResponse;
+getHttpClient
+ ()Lorg/apache/http/client/HttpClient;
+ ()Lorg/apache/http/client/HttpClient;
+getResponseBody
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/apache/http/HttpResponse;)Ljava/io/InputStream;
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/apache/http/HttpResponse;)Ljava/io/InputStream;
+isGzipResponse
+ (Lorg/apache/http/HttpResponse;)Z
+ (Lorg/apache/http/HttpResponse;)Z
+setHttpClient
+ (Lorg/apache/http/client/HttpClient;)V
+ (Lorg/apache/http/client/HttpClient;)V
+setRequestBody
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/apache/http/client/methods/HttpPost;Ljava/io/ByteArrayOutputStream;)V
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/apache/http/client/methods/HttpPost;Ljava/io/ByteArrayOutputStream;)V
+validateResponse
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/apache/http/HttpResponse;)V
+ (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/apache/http/HttpResponse;)V

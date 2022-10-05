@@ -1,0 +1,65 @@
+class org/springframework/validation/beanvalidation/LocalValidatorFactoryBean
+
+getConstraintValidatorFactory
+ ()Ljavax/validation/ConstraintValidatorFactory;
+ ()Ljavax/validation/ConstraintValidatorFactory;
+getMessageInterpolator
+ ()Ljavax/validation/MessageInterpolator;
+ ()Ljavax/validation/MessageInterpolator;
+getParameterNameProvider
+ ()Ljavax/validation/ParameterNameProvider;
+ ()Ljavax/validation/ParameterNameProvider;
+getTraversableResolver
+ ()Ljavax/validation/TraversableResolver;
+ ()Ljavax/validation/TraversableResolver;
+getValidationPropertyMap
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getValidator
+ ()Ljavax/validation/Validator;
+ ()Ljavax/validation/Validator;
+postProcessConfiguration
+ (Ljavax/validation/Configuration<*>;)V
+ (Ljavax/validation/Configuration<*>;)V
+setApplicationContext
+ (Lorg/springframework/context/ApplicationContext;)V
+ (Lorg/springframework/context/ApplicationContext;)V
+setConfigurationInitializer
+ (Ljava/util/function/Consumer<Ljavax/validation/Configuration<*>;>;)V
+ (Ljava/util/function/Consumer<Ljavax/validation/Configuration<*>;>;)V
+setConstraintValidatorFactory
+ (Ljavax/validation/ConstraintValidatorFactory;)V
+ (Ljavax/validation/ConstraintValidatorFactory;)V
+setMappingLocations
+ ([Lorg/springframework/core/io/Resource;)V
+ ([Lorg/springframework/core/io/Resource;)V
+setMessageInterpolator
+ (Ljavax/validation/MessageInterpolator;)V
+ (Ljavax/validation/MessageInterpolator;)V
+setParameterNameDiscoverer
+ (Lorg/springframework/core/ParameterNameDiscoverer;)V
+ (Lorg/springframework/core/ParameterNameDiscoverer;)V
+setProviderClass
+ (Ljava/lang/Class;)V
+ (Ljava/lang/Class;)V
+setTraversableResolver
+ (Ljavax/validation/TraversableResolver;)V
+ (Ljavax/validation/TraversableResolver;)V
+setValidationMessageSource
+ (Lorg/springframework/context/MessageSource;)V
+ (Lorg/springframework/context/MessageSource;)V
+setValidationProperties
+ (Ljava/util/Properties;)V
+ (Ljava/util/Properties;)V
+setValidationPropertyMap
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+setValidationProviderResolver
+ (Ljavax/validation/ValidationProviderResolver;)V
+ (Ljavax/validation/ValidationProviderResolver;)V
+unwrap
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+usingContext
+ ()Ljavax/validation/ValidatorContext;
+ ()Ljavax/validation/ValidatorContext;

@@ -1,0 +1,44 @@
+class org/springframework/jca/cci/connection/CciLocalTransactionManager
+
+<init>
+ (Ljavax/resource/cci/ConnectionFactory;)V
+ (Ljavax/resource/cci/ConnectionFactory;)V
+doBegin
+ (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
+ (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
+doCleanupAfterCompletion
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+doCommit
+ (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+ (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+doGetTransaction
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+doResume
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+doRollback
+ (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+ (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+doSetRollbackOnly
+ (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+ (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+doSuspend
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+getConnectionFactory
+ ()Ljavax/resource/cci/ConnectionFactory;
+ ()Ljavax/resource/cci/ConnectionFactory;
+getResourceFactory
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+isExistingTransaction
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isRollbackOnly
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+setConnectionFactory
+ (Ljavax/resource/cci/ConnectionFactory;)V
+ (Ljavax/resource/cci/ConnectionFactory;)V

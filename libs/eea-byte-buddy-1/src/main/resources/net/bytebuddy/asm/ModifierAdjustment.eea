@@ -1,0 +1,71 @@
+class net/bytebuddy/asm/ModifierAdjustment
+
+<init>
+ (Ljava/util/List<Lnet/bytebuddy/asm/ModifierAdjustment$Adjustment<Lnet/bytebuddy/description/type/TypeDescription;>;>;Ljava/util/List<Lnet/bytebuddy/asm/ModifierAdjustment$Adjustment<Lnet/bytebuddy/description/field/FieldDescription$InDefinedShape;>;>;Ljava/util/List<Lnet/bytebuddy/asm/ModifierAdjustment$Adjustment<Lnet/bytebuddy/description/method/MethodDescription;>;>;)V
+ (Ljava/util/List<Lnet/bytebuddy/asm/ModifierAdjustment$Adjustment<Lnet/bytebuddy/description/type/TypeDescription;>;>;Ljava/util/List<Lnet/bytebuddy/asm/ModifierAdjustment$Adjustment<Lnet/bytebuddy/description/field/FieldDescription$InDefinedShape;>;>;Ljava/util/List<Lnet/bytebuddy/asm/ModifierAdjustment$Adjustment<Lnet/bytebuddy/description/method/MethodDescription;>;>;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+withConstructorModifiers
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withConstructorModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withConstructorModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withConstructorModifiers
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withFieldModifiers
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForField;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForField;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withFieldModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/field/FieldDescription$InDefinedShape;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForField;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/field/FieldDescription$InDefinedShape;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForField;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withFieldModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/field/FieldDescription$InDefinedShape;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForField;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/field/FieldDescription$InDefinedShape;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForField;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withFieldModifiers
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForField;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForField;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withInvokableModifiers
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withInvokableModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withInvokableModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withInvokableModifiers
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withMethodModifiers
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withMethodModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withMethodModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withMethodModifiers
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withTypeModifiers
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withTypeModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;>;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withTypeModifiers
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;)Lnet/bytebuddy/asm/ModifierAdjustment;
+withTypeModifiers
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;)Lnet/bytebuddy/asm/ModifierAdjustment;
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;)Lnet/bytebuddy/asm/ModifierAdjustment;
+wrap
+ (Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/jar/asm/ClassVisitor;Lnet/bytebuddy/implementation/Implementation$Context;Lnet/bytebuddy/pool/TypePool;Lnet/bytebuddy/description/field/FieldList<Lnet/bytebuddy/description/field/FieldDescription$InDefinedShape;>;Lnet/bytebuddy/description/method/MethodList<*>;II)Lnet/bytebuddy/asm/ModifierAdjustment$ModifierAdjustingClassVisitor;
+ (Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/jar/asm/ClassVisitor;Lnet/bytebuddy/implementation/Implementation$Context;Lnet/bytebuddy/pool/TypePool;Lnet/bytebuddy/description/field/FieldList<Lnet/bytebuddy/description/field/FieldDescription$InDefinedShape;>;Lnet/bytebuddy/description/method/MethodList<*>;II)Lnet/bytebuddy/asm/ModifierAdjustment$ModifierAdjustingClassVisitor;

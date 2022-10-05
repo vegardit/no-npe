@@ -1,0 +1,43 @@
+class org/springframework/jca/context/SpringContextResourceAdapter
+
+CONFIG_LOCATION_DELIMITERS
+ Ljava/lang/String;
+ L1java/lang/String;
+DEFAULT_CONTEXT_CONFIG_LOCATION
+ Ljava/lang/String;
+ L1java/lang/String;
+
+logger
+ Lorg/apache/commons/logging/Log;
+ Lorg/apache/commons/logging/Log;
+
+createApplicationContext
+ (Ljavax/resource/spi/BootstrapContext;)Lorg/springframework/context/ConfigurableApplicationContext;
+ (Ljavax/resource/spi/BootstrapContext;)Lorg/springframework/context/ConfigurableApplicationContext;
+createEnvironment
+ ()Lorg/springframework/core/env/ConfigurableEnvironment;
+ ()Lorg/springframework/core/env/ConfigurableEnvironment;
+endpointActivation
+ (Ljavax/resource/spi/endpoint/MessageEndpointFactory;Ljavax/resource/spi/ActivationSpec;)V
+ (Ljavax/resource/spi/endpoint/MessageEndpointFactory;Ljavax/resource/spi/ActivationSpec;)V
+endpointDeactivation
+ (Ljavax/resource/spi/endpoint/MessageEndpointFactory;Ljavax/resource/spi/ActivationSpec;)V
+ (Ljavax/resource/spi/endpoint/MessageEndpointFactory;Ljavax/resource/spi/ActivationSpec;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+getContextConfigLocation
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getXAResources
+ ([Ljavax/resource/spi/ActivationSpec;)[Ljavax/transaction/xa/XAResource;
+ ([Ljavax/resource/spi/ActivationSpec;)[Ljavax/transaction/xa/XAResource;
+loadBeanDefinitions
+ (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;[Ljava/lang/String;)V
+ (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;[Ljava/lang/String;)V
+setContextConfigLocation
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+start
+ (Ljavax/resource/spi/BootstrapContext;)V
+ (Ljavax/resource/spi/BootstrapContext;)V

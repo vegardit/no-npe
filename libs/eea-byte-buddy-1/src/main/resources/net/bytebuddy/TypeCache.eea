@@ -1,0 +1,25 @@
+class net/bytebuddy/TypeCache
+ <T:Ljava/lang/Object;>
+
+cache
+ Ljava/util/concurrent/ConcurrentMap<Lnet/bytebuddy/TypeCache$StorageKey;Ljava/util/concurrent/ConcurrentMap<TT;Ljava/lang/Object;>;>;
+ Ljava/util/concurrent/ConcurrentMap<Lnet/bytebuddy/TypeCache$StorageKey;Ljava/util/concurrent/ConcurrentMap<TT;Ljava/lang/Object;>;>;
+sort
+ Lnet/bytebuddy/TypeCache$Sort;
+ Lnet/bytebuddy/TypeCache$Sort;
+
+<init>
+ (Lnet/bytebuddy/TypeCache$Sort;)V
+ (Lnet/bytebuddy/TypeCache$Sort;)V
+find
+ (Ljava/lang/ClassLoader;TT;)Ljava/lang/Class<*>;
+ (Ljava/lang/ClassLoader;TT;)Ljava/lang/Class<*>;
+findOrInsert
+ (Ljava/lang/ClassLoader;TT;Ljava/util/concurrent/Callable<Ljava/lang/Class<*>;>;)Ljava/lang/Class<*>;
+ (Ljava/lang/ClassLoader;TT;Ljava/util/concurrent/Callable<Ljava/lang/Class<*>;>;)Ljava/lang/Class<*>;
+findOrInsert
+ (Ljava/lang/ClassLoader;TT;Ljava/util/concurrent/Callable<Ljava/lang/Class<*>;>;Ljava/lang/Object;)Ljava/lang/Class<*>;
+ (Ljava/lang/ClassLoader;TT;Ljava/util/concurrent/Callable<Ljava/lang/Class<*>;>;Ljava/lang/Object;)Ljava/lang/Class<*>;
+insert
+ (Ljava/lang/ClassLoader;TT;Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
+ (Ljava/lang/ClassLoader;TT;Ljava/lang/Class<*>;)Ljava/lang/Class<*>;

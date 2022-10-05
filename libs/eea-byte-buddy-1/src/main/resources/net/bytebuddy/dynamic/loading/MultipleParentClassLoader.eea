@@ -1,0 +1,23 @@
+class net/bytebuddy/dynamic/loading/MultipleParentClassLoader
+
+<init>
+ (Ljava/lang/ClassLoader;Ljava/util/List<+Ljava/lang/ClassLoader;>;)V
+ (Ljava/lang/ClassLoader;Ljava/util/List<+Ljava/lang/ClassLoader;>;)V
+<init>
+ (Ljava/lang/ClassLoader;Ljava/util/List<+Ljava/lang/ClassLoader;>;Z)V
+ (Ljava/lang/ClassLoader;Ljava/util/List<+Ljava/lang/ClassLoader;>;Z)V
+<init>
+ (Ljava/util/List<+Ljava/lang/ClassLoader;>;)V
+ (Ljava/util/List<+Ljava/lang/ClassLoader;>;)V
+doDefineClasses
+ (Ljava/util/Map<Ljava/lang/String;[B>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<*>;>;
+ (Ljava/util/Map<Ljava/lang/String;[B>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<*>;>;
+getResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+getResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+loadClass
+ (Ljava/lang/String;Z)Ljava/lang/Class<*>;
+ (Ljava/lang/String;Z)Ljava/lang/Class<*>;

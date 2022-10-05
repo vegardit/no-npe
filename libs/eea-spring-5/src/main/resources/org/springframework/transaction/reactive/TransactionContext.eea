@@ -1,0 +1,32 @@
+class org/springframework/transaction/reactive/TransactionContext
+
+getContextId
+ ()Ljava/util/UUID;
+ ()Ljava/util/UUID;
+getCurrentTransactionIsolationLevel
+ ()Ljava/lang/Integer;
+ ()Ljava/lang/Integer;
+getCurrentTransactionName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getParent
+ ()Lorg/springframework/transaction/reactive/TransactionContext;
+ ()Lorg/springframework/transaction/reactive/TransactionContext;
+getResources
+ ()Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+getSynchronizations
+ ()Ljava/util/Set<Lorg/springframework/transaction/reactive/TransactionSynchronization;>;
+ ()Ljava/util/Set<Lorg/springframework/transaction/reactive/TransactionSynchronization;>;
+setCurrentTransactionIsolationLevel
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V
+setCurrentTransactionName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setSynchronizations
+ (Ljava/util/Set<Lorg/springframework/transaction/reactive/TransactionSynchronization;>;)V
+ (Ljava/util/Set<Lorg/springframework/transaction/reactive/TransactionSynchronization;>;)V

@@ -1,0 +1,36 @@
+class org/springframework/remoting/rmi/RmiRegistryFactoryBean
+
+logger
+ Lorg/apache/commons/logging/Log;
+ Lorg/apache/commons/logging/Log;
+
+getHost
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getObject
+ ()Ljava/rmi/registry/Registry;
+ ()Ljava/rmi/registry/Registry;
+getObjectType
+ ()Ljava/lang/Class<+Ljava/rmi/registry/Registry;>;
+ ()Ljava/lang/Class<+Ljava/rmi/registry/Registry;>;
+getRegistry
+ (I)Ljava/rmi/registry/Registry;
+ (I)Ljava/rmi/registry/Registry;
+getRegistry
+ (ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/registry/Registry;
+ (ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/registry/Registry;
+getRegistry
+ (Ljava/lang/String;ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/registry/Registry;
+ (Ljava/lang/String;ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/registry/Registry;
+setClientSocketFactory
+ (Ljava/rmi/server/RMIClientSocketFactory;)V
+ (Ljava/rmi/server/RMIClientSocketFactory;)V
+setHost
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setServerSocketFactory
+ (Ljava/rmi/server/RMIServerSocketFactory;)V
+ (Ljava/rmi/server/RMIServerSocketFactory;)V
+testRegistry
+ (Ljava/rmi/registry/Registry;)V
+ (Ljava/rmi/registry/Registry;)V

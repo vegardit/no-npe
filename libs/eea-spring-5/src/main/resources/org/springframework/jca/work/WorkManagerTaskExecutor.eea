@@ -1,0 +1,59 @@
+class org/springframework/jca/work/WorkManagerTaskExecutor
+
+<init>
+ (Ljavax/resource/spi/work/WorkManager;)V
+ (Ljavax/resource/spi/work/WorkManager;)V
+doWork
+ (Ljavax/resource/spi/work/Work;)V
+ (Ljavax/resource/spi/work/Work;)V
+doWork
+ (Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V
+ (Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V
+execute
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+execute
+ (Ljava/lang/Runnable;J)V
+ (Ljava/lang/Runnable;J)V
+getDefaultWorkManager
+ ()Ljavax/resource/spi/work/WorkManager;
+ ()Ljavax/resource/spi/work/WorkManager;
+scheduleWork
+ (Ljavax/resource/spi/work/Work;)V
+ (Ljavax/resource/spi/work/Work;)V
+scheduleWork
+ (Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V
+ (Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V
+setBootstrapContext
+ (Ljavax/resource/spi/BootstrapContext;)V
+ (Ljavax/resource/spi/BootstrapContext;)V
+setTaskDecorator
+ (Lorg/springframework/core/task/TaskDecorator;)V
+ (Lorg/springframework/core/task/TaskDecorator;)V
+setWorkListener
+ (Ljavax/resource/spi/work/WorkListener;)V
+ (Ljavax/resource/spi/work/WorkListener;)V
+setWorkManager
+ (Ljavax/resource/spi/work/WorkManager;)V
+ (Ljavax/resource/spi/work/WorkManager;)V
+setWorkManagerName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+startWork
+ (Ljavax/resource/spi/work/Work;)J
+ (Ljavax/resource/spi/work/Work;)J
+startWork
+ (Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J
+ (Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J
+submit
+ (Ljava/lang/Runnable;)Ljava/util/concurrent/Future<*>;
+ (Ljava/lang/Runnable;)Ljava/util/concurrent/Future<*>;
+submit
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Ljava/util/concurrent/Future<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Ljava/util/concurrent/Future<TT;>;
+submitListenable
+ (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+submitListenable
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;

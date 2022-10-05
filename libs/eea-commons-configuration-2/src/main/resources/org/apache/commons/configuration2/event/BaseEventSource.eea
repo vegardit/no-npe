@@ -1,0 +1,32 @@
+class org/apache/commons/configuration2/event/BaseEventSource
+
+addEventListener
+ <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventListener<-TT;>;)V
+ <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventListener<-TT;>;)V
+clone
+ ()Ljava/lang/Object;
+ ()L1java/lang/Object;
+copyEventListeners
+ (Lorg/apache/commons/configuration2/event/BaseEventSource;)V
+ (Lorg/apache/commons/configuration2/event/BaseEventSource;)V
+createErrorEvent
+ (Lorg/apache/commons/configuration2/event/EventType<+Lorg/apache/commons/configuration2/event/ConfigurationErrorEvent;>;Lorg/apache/commons/configuration2/event/EventType<*>;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Throwable;)Lorg/apache/commons/configuration2/event/ConfigurationErrorEvent;
+ (Lorg/apache/commons/configuration2/event/EventType<+Lorg/apache/commons/configuration2/event/ConfigurationErrorEvent;>;Lorg/apache/commons/configuration2/event/EventType<*>;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Throwable;)Lorg/apache/commons/configuration2/event/ConfigurationErrorEvent;
+createEvent
+ <T:Lorg/apache/commons/configuration2/event/ConfigurationEvent;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Ljava/lang/String;Ljava/lang/Object;Z)Lorg/apache/commons/configuration2/event/ConfigurationEvent;
+ <T:Lorg/apache/commons/configuration2/event/ConfigurationEvent;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Ljava/lang/String;Ljava/lang/Object;Z)Lorg/apache/commons/configuration2/event/ConfigurationEvent;
+fireError
+ <T:Lorg/apache/commons/configuration2/event/ConfigurationErrorEvent;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventType<*>;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Throwable;)V
+ <T:Lorg/apache/commons/configuration2/event/ConfigurationErrorEvent;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventType<*>;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Throwable;)V
+fireEvent
+ <T:Lorg/apache/commons/configuration2/event/ConfigurationEvent;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Ljava/lang/String;Ljava/lang/Object;Z)V
+ <T:Lorg/apache/commons/configuration2/event/ConfigurationEvent;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Ljava/lang/String;Ljava/lang/Object;Z)V
+getEventListenerRegistrations
+ ()Ljava/util/List<Lorg/apache/commons/configuration2/event/EventListenerRegistrationData<*>;>;
+ ()Ljava/util/List<Lorg/apache/commons/configuration2/event/EventListenerRegistrationData<*>;>;
+getEventListeners
+ <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;)Ljava/util/Collection<Lorg/apache/commons/configuration2/event/EventListener<-TT;>;>;
+ <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;)Ljava/util/Collection<Lorg/apache/commons/configuration2/event/EventListener<-TT;>;>;
+removeEventListener
+ <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventListener<-TT;>;)Z
+ <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventListener<-TT;>;)Z

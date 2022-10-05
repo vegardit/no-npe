@@ -1,0 +1,151 @@
+class net/bytebuddy/implementation/MethodCall
+
+call
+ (Ljava/util/concurrent/Callable<*>;)Lnet/bytebuddy/implementation/Implementation$Composable;
+ (Ljava/util/concurrent/Callable<*>;)Lnet/bytebuddy/implementation/Implementation$Composable;
+construct
+ (Ljava/lang/reflect/Constructor<*>;)Lnet/bytebuddy/implementation/MethodCall;
+ (Ljava/lang/reflect/Constructor<*>;)Lnet/bytebuddy/implementation/MethodCall;
+construct
+ (Lnet/bytebuddy/description/method/MethodDescription;)Lnet/bytebuddy/implementation/MethodCall;
+ (Lnet/bytebuddy/description/method/MethodDescription;)Lnet/bytebuddy/implementation/MethodCall;
+invoke
+ (Ljava/lang/reflect/Constructor<*>;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+ (Ljava/lang/reflect/Constructor<*>;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+invoke
+ (Ljava/lang/reflect/Method;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+ (Ljava/lang/reflect/Method;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+invoke
+ (Lnet/bytebuddy/description/method/MethodDescription;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+ (Lnet/bytebuddy/description/method/MethodDescription;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+invoke
+ (Lnet/bytebuddy/implementation/MethodCall$MethodLocator$Factory;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+ (Lnet/bytebuddy/implementation/MethodCall$MethodLocator$Factory;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+invoke
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+invoke
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;)Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+invokeSelf
+ ()Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+ ()Lnet/bytebuddy/implementation/MethodCall$WithoutSpecifiedTarget;
+invokeSuper
+ ()Lnet/bytebuddy/implementation/MethodCall;
+ ()Lnet/bytebuddy/implementation/MethodCall;
+run
+ (Ljava/lang/Runnable;)Lnet/bytebuddy/implementation/Implementation$Composable;
+ (Ljava/lang/Runnable;)Lnet/bytebuddy/implementation/Implementation$Composable;
+
+argumentLoaders
+ Ljava/util/List<Lnet/bytebuddy/implementation/MethodCall$ArgumentLoader$Factory;>;
+ Ljava/util/List<Lnet/bytebuddy/implementation/MethodCall$ArgumentLoader$Factory;>;
+assigner
+ Lnet/bytebuddy/implementation/bytecode/assign/Assigner;
+ Lnet/bytebuddy/implementation/bytecode/assign/Assigner;
+methodInvoker
+ Lnet/bytebuddy/implementation/MethodCall$MethodInvoker$Factory;
+ Lnet/bytebuddy/implementation/MethodCall$MethodInvoker$Factory;
+methodLocator
+ Lnet/bytebuddy/implementation/MethodCall$MethodLocator$Factory;
+ Lnet/bytebuddy/implementation/MethodCall$MethodLocator$Factory;
+targetHandler
+ Lnet/bytebuddy/implementation/MethodCall$TargetHandler$Factory;
+ Lnet/bytebuddy/implementation/MethodCall$TargetHandler$Factory;
+terminationHandler
+ Lnet/bytebuddy/implementation/MethodCall$TerminationHandler$Factory;
+ Lnet/bytebuddy/implementation/MethodCall$TerminationHandler$Factory;
+typing
+ Lnet/bytebuddy/implementation/bytecode/assign/Assigner$Typing;
+ Lnet/bytebuddy/implementation/bytecode/assign/Assigner$Typing;
+
+<init>
+ (Lnet/bytebuddy/implementation/MethodCall$MethodLocator$Factory;Lnet/bytebuddy/implementation/MethodCall$TargetHandler$Factory;Ljava/util/List<Lnet/bytebuddy/implementation/MethodCall$ArgumentLoader$Factory;>;Lnet/bytebuddy/implementation/MethodCall$MethodInvoker$Factory;Lnet/bytebuddy/implementation/MethodCall$TerminationHandler$Factory;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/implementation/bytecode/assign/Assigner$Typing;)V
+ (Lnet/bytebuddy/implementation/MethodCall$MethodLocator$Factory;Lnet/bytebuddy/implementation/MethodCall$TargetHandler$Factory;Ljava/util/List<Lnet/bytebuddy/implementation/MethodCall$ArgumentLoader$Factory;>;Lnet/bytebuddy/implementation/MethodCall$MethodInvoker$Factory;Lnet/bytebuddy/implementation/MethodCall$TerminationHandler$Factory;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/implementation/bytecode/assign/Assigner$Typing;)V
+andThen
+ (Lnet/bytebuddy/implementation/Implementation$Composable;)Lnet/bytebuddy/implementation/Implementation$Composable;
+ (Lnet/bytebuddy/implementation/Implementation$Composable;)Lnet/bytebuddy/implementation/Implementation$Composable;
+andThen
+ (Lnet/bytebuddy/implementation/Implementation;)Lnet/bytebuddy/implementation/Implementation;
+ (Lnet/bytebuddy/implementation/Implementation;)Lnet/bytebuddy/implementation/Implementation;
+appender
+ (Lnet/bytebuddy/implementation/Implementation$Target;)Lnet/bytebuddy/implementation/bytecode/ByteCodeAppender;
+ (Lnet/bytebuddy/implementation/Implementation$Target;)Lnet/bytebuddy/implementation/bytecode/ByteCodeAppender;
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+prepare
+ (Lnet/bytebuddy/dynamic/scaffold/InstrumentedType;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType;
+ (Lnet/bytebuddy/dynamic/scaffold/InstrumentedType;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType;
+setsField
+ (Ljava/lang/reflect/Field;)Lnet/bytebuddy/implementation/MethodCall$FieldSetting;
+ (Ljava/lang/reflect/Field;)Lnet/bytebuddy/implementation/MethodCall$FieldSetting;
+setsField
+ (Lnet/bytebuddy/description/field/FieldDescription;)Lnet/bytebuddy/implementation/MethodCall$FieldSetting;
+ (Lnet/bytebuddy/description/field/FieldDescription;)Lnet/bytebuddy/implementation/MethodCall$FieldSetting;
+setsField
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/field/FieldDescription;>;)Lnet/bytebuddy/implementation/MethodCall$FieldSetting;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/field/FieldDescription;>;)Lnet/bytebuddy/implementation/MethodCall$FieldSetting;
+with
+ (Ljava/util/List<+Lnet/bytebuddy/implementation/MethodCall$ArgumentLoader$Factory;>;)Lnet/bytebuddy/implementation/MethodCall;
+ (Ljava/util/List<+Lnet/bytebuddy/implementation/MethodCall$ArgumentLoader$Factory;>;)Lnet/bytebuddy/implementation/MethodCall;
+with
+ (Lnet/bytebuddy/implementation/bytecode/StackManipulation;Ljava/lang/reflect/Type;)Lnet/bytebuddy/implementation/MethodCall;
+ (Lnet/bytebuddy/implementation/bytecode/StackManipulation;Ljava/lang/reflect/Type;)Lnet/bytebuddy/implementation/MethodCall;
+with
+ (Lnet/bytebuddy/implementation/bytecode/StackManipulation;Lnet/bytebuddy/description/type/TypeDefinition;)Lnet/bytebuddy/implementation/MethodCall;
+ (Lnet/bytebuddy/implementation/bytecode/StackManipulation;Lnet/bytebuddy/description/type/TypeDefinition;)Lnet/bytebuddy/implementation/MethodCall;
+with
+ ([Ljava/lang/Object;)Lnet/bytebuddy/implementation/MethodCall;
+ ([Ljava/lang/Object;)Lnet/bytebuddy/implementation/MethodCall;
+with
+ ([Lnet/bytebuddy/description/enumeration/EnumerationDescription;)Lnet/bytebuddy/implementation/MethodCall;
+ ([Lnet/bytebuddy/description/enumeration/EnumerationDescription;)Lnet/bytebuddy/implementation/MethodCall;
+with
+ ([Lnet/bytebuddy/description/type/TypeDescription;)Lnet/bytebuddy/implementation/MethodCall;
+ ([Lnet/bytebuddy/description/type/TypeDescription;)Lnet/bytebuddy/implementation/MethodCall;
+with
+ ([Lnet/bytebuddy/implementation/MethodCall$ArgumentLoader$Factory;)Lnet/bytebuddy/implementation/MethodCall;
+ ([Lnet/bytebuddy/implementation/MethodCall$ArgumentLoader$Factory;)Lnet/bytebuddy/implementation/MethodCall;
+with
+ ([Lnet/bytebuddy/utility/JavaConstant;)Lnet/bytebuddy/implementation/MethodCall;
+ ([Lnet/bytebuddy/utility/JavaConstant;)Lnet/bytebuddy/implementation/MethodCall;
+withAllArguments
+ ()Lnet/bytebuddy/implementation/MethodCall;
+ ()Lnet/bytebuddy/implementation/MethodCall;
+withArgument
+ ([I)Lnet/bytebuddy/implementation/MethodCall;
+ ([I)Lnet/bytebuddy/implementation/MethodCall;
+withArgumentArray
+ ()Lnet/bytebuddy/implementation/MethodCall;
+ ()Lnet/bytebuddy/implementation/MethodCall;
+withArgumentArrayElements
+ (I)Lnet/bytebuddy/implementation/MethodCall;
+ (I)Lnet/bytebuddy/implementation/MethodCall;
+withArgumentArrayElements
+ (II)Lnet/bytebuddy/implementation/MethodCall;
+ (II)Lnet/bytebuddy/implementation/MethodCall;
+withArgumentArrayElements
+ (III)Lnet/bytebuddy/implementation/MethodCall;
+ (III)Lnet/bytebuddy/implementation/MethodCall;
+withAssigner
+ (Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/implementation/bytecode/assign/Assigner$Typing;)Lnet/bytebuddy/implementation/Implementation$Composable;
+ (Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/implementation/bytecode/assign/Assigner$Typing;)Lnet/bytebuddy/implementation/Implementation$Composable;
+withField
+ (Lnet/bytebuddy/dynamic/scaffold/FieldLocator$Factory;[Ljava/lang/String;)Lnet/bytebuddy/implementation/MethodCall;
+ (Lnet/bytebuddy/dynamic/scaffold/FieldLocator$Factory;[Ljava/lang/String;)Lnet/bytebuddy/implementation/MethodCall;
+withField
+ ([Ljava/lang/String;)Lnet/bytebuddy/implementation/MethodCall;
+ ([Ljava/lang/String;)Lnet/bytebuddy/implementation/MethodCall;
+withMethodCall
+ (Lnet/bytebuddy/implementation/MethodCall;)Lnet/bytebuddy/implementation/MethodCall;
+ (Lnet/bytebuddy/implementation/MethodCall;)Lnet/bytebuddy/implementation/MethodCall;
+withOwnType
+ ()Lnet/bytebuddy/implementation/MethodCall;
+ ()Lnet/bytebuddy/implementation/MethodCall;
+withReference
+ ([Ljava/lang/Object;)Lnet/bytebuddy/implementation/MethodCall;
+ ([Ljava/lang/Object;)Lnet/bytebuddy/implementation/MethodCall;
+withThis
+ ()Lnet/bytebuddy/implementation/MethodCall;
+ ()Lnet/bytebuddy/implementation/MethodCall;

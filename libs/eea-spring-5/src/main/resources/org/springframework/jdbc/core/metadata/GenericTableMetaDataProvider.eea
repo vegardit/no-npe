@@ -1,0 +1,42 @@
+class org/springframework/jdbc/core/metadata/GenericTableMetaDataProvider
+
+logger
+ Lorg/apache/commons/logging/Log;
+ L1org/apache/commons/logging/Log;
+
+<init>
+ (Ljava/sql/DatabaseMetaData;)V
+ (Ljava/sql/DatabaseMetaData;)V
+catalogNameToUse
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getDatabaseVersion
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDefaultSchema
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSimpleQueryForGetGeneratedKey
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getTableParameterMetaData
+ ()Ljava/util/List<Lorg/springframework/jdbc/core/metadata/TableParameterMetaData;>;
+ ()Ljava/util/List<Lorg/springframework/jdbc/core/metadata/TableParameterMetaData;>;
+initializeWithMetaData
+ (Ljava/sql/DatabaseMetaData;)V
+ (Ljava/sql/DatabaseMetaData;)V
+initializeWithTableColumnMetaData
+ (Ljava/sql/DatabaseMetaData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/sql/DatabaseMetaData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+metaDataCatalogNameToUse
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+metaDataSchemaNameToUse
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+schemaNameToUse
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+tableNameToUse
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;

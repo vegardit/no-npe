@@ -1,0 +1,65 @@
+class org/apache/commons/configuration2/BaseHierarchicalConfiguration
+
+<init>
+ (Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+<init>
+ (Lorg/apache/commons/configuration2/tree/NodeModel<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Lorg/apache/commons/configuration2/tree/NodeModel<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+childConfigurationsAt
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+childConfigurationsAt
+ (Ljava/lang/String;Z)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+ (Ljava/lang/String;Z)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+cloneNodeModel
+ ()Lorg/apache/commons/configuration2/tree/NodeModel<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+ ()Lorg/apache/commons/configuration2/tree/NodeModel<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+configurationAt
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+configurationAt
+ (Ljava/lang/String;Z)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+ (Ljava/lang/String;Z)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+configurationsAt
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+configurationsAt
+ (Ljava/lang/String;Z)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+ (Ljava/lang/String;Z)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+createSubConfigurationForTrackedNode
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/InMemoryNodeModelSupport;)Lorg/apache/commons/configuration2/SubnodeConfiguration;
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/InMemoryNodeModelSupport;)Lorg/apache/commons/configuration2/SubnodeConfiguration;
+getNodeModel
+ ()Lorg/apache/commons/configuration2/tree/InMemoryNodeModel;
+ ()Lorg/apache/commons/configuration2/tree/InMemoryNodeModel;
+getSubConfigurationNodeSelector
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/tree/NodeSelector;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/tree/NodeSelector;
+getSubConfigurationParentModel
+ ()Lorg/apache/commons/configuration2/tree/InMemoryNodeModel;
+ ()Lorg/apache/commons/configuration2/tree/InMemoryNodeModel;
+immutableChildConfigurationsAt
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/configuration2/ImmutableHierarchicalConfiguration;>;
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/configuration2/ImmutableHierarchicalConfiguration;>;
+immutableConfigurationAt
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/ImmutableHierarchicalConfiguration;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/ImmutableHierarchicalConfiguration;
+immutableConfigurationAt
+ (Ljava/lang/String;Z)Lorg/apache/commons/configuration2/ImmutableHierarchicalConfiguration;
+ (Ljava/lang/String;Z)Lorg/apache/commons/configuration2/ImmutableHierarchicalConfiguration;
+immutableConfigurationsAt
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/configuration2/ImmutableHierarchicalConfiguration;>;
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/configuration2/ImmutableHierarchicalConfiguration;>;
+initSubConfigurationForThisParent
+ (Lorg/apache/commons/configuration2/SubnodeConfiguration;)V
+ (Lorg/apache/commons/configuration2/SubnodeConfiguration;)V
+interpolatedConfiguration
+ ()Lorg/apache/commons/configuration2/Configuration;
+ ()Lorg/apache/commons/configuration2/Configuration;
+subnodeConfigurationChanged
+ (Lorg/apache/commons/configuration2/event/ConfigurationEvent;)V
+ (Lorg/apache/commons/configuration2/event/ConfigurationEvent;)V
+subset
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;

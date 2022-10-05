@@ -1,0 +1,17 @@
+class org/springframework/remoting/rmi/RmiClientInterceptorUtils
+
+convertRmiAccessException
+ (Ljava/lang/reflect/Method;Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Exception;
+ (Ljava/lang/reflect/Method;Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Exception;
+convertRmiAccessException
+ (Ljava/lang/reflect/Method;Ljava/rmi/RemoteException;Ljava/lang/String;)Ljava/lang/Exception;
+ (Ljava/lang/reflect/Method;Ljava/rmi/RemoteException;Ljava/lang/String;)Ljava/lang/Exception;
+convertRmiAccessException
+ (Ljava/lang/reflect/Method;Ljava/rmi/RemoteException;ZLjava/lang/String;)Ljava/lang/Exception;
+ (Ljava/lang/reflect/Method;Ljava/rmi/RemoteException;ZLjava/lang/String;)Ljava/lang/Exception;
+invokeRemoteMethod
+ (Lorg/aopalliance/intercept/MethodInvocation;Ljava/lang/Object;)Ljava/lang/Object;
+ (Lorg/aopalliance/intercept/MethodInvocation;Ljava/lang/Object;)Ljava/lang/Object;
+isConnectFailure
+ (Ljava/rmi/RemoteException;)Z
+ (Ljava/rmi/RemoteException;)Z

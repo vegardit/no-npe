@@ -1,0 +1,39 @@
+class org/springframework/web/multipart/commons/CommonsMultipartFile
+
+logger
+ Lorg/apache/commons/logging/Log;
+ L1org/apache/commons/logging/Log;
+
+<init>
+ (Lorg/apache/commons/fileupload/FileItem;)V
+ (Lorg/apache/commons/fileupload/FileItem;)V
+getBytes
+ ()[B
+ ()[B
+getContentType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFileItem
+ ()Lorg/apache/commons/fileupload/FileItem;
+ ()Lorg/apache/commons/fileupload/FileItem;
+getInputStream
+ ()Ljava/io/InputStream;
+ ()Ljava/io/InputStream;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getOriginalFilename
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getStorageDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+transferTo
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+transferTo
+ (Ljava/nio/file/Path;)V
+ (Ljava/nio/file/Path;)V

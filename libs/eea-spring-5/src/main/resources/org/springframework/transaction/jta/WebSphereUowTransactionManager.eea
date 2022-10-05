@@ -1,0 +1,27 @@
+class org/springframework/transaction/jta/WebSphereUowTransactionManager
+
+DEFAULT_UOW_MANAGER_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lcom/ibm/wsspi/uow/UOWManager;)V
+ (Lcom/ibm/wsspi/uow/UOWManager;)V
+doRegisterAfterCompletionWithJtaTransaction
+ (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
+ (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
+execute
+ <T:Ljava/lang/Object;>(Lorg/springframework/transaction/TransactionDefinition;Lorg/springframework/transaction/support/TransactionCallback<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lorg/springframework/transaction/TransactionDefinition;Lorg/springframework/transaction/support/TransactionCallback<TT;>;)TT;
+lookupDefaultUowManager
+ ()Lcom/ibm/wsspi/uow/UOWManager;
+ ()Lcom/ibm/wsspi/uow/UOWManager;
+lookupUowManager
+ (Ljava/lang/String;)Lcom/ibm/wsspi/uow/UOWManager;
+ (Ljava/lang/String;)Lcom/ibm/wsspi/uow/UOWManager;
+setUowManager
+ (Lcom/ibm/wsspi/uow/UOWManager;)V
+ (Lcom/ibm/wsspi/uow/UOWManager;)V
+setUowManagerName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

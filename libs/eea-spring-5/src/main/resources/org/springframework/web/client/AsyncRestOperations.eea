@@ -1,0 +1,95 @@
+class org/springframework/web/client/AsyncRestOperations
+
+delete
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+delete
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+delete
+ (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+exchange
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+exchange
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+exchange
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+exchange
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+exchange
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+exchange
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+execute
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+execute
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+execute
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+getForEntity
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+getForEntity
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+getForEntity
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+getRestOperations
+ ()Lorg/springframework/web/client/RestOperations;
+ ()Lorg/springframework/web/client/RestOperations;
+headForHeaders
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/HttpHeaders;>;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/HttpHeaders;>;
+headForHeaders
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/HttpHeaders;>;
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/HttpHeaders;>;
+headForHeaders
+ (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/HttpHeaders;>;
+ (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/HttpHeaders;>;
+optionsForAllow
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
+optionsForAllow
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
+optionsForAllow
+ (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
+ (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
+postForEntity
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+postForEntity
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+postForEntity
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+postForLocation
+ (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
+ (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
+postForLocation
+ (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
+ (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
+postForLocation
+ (Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
+ (Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
+put
+ (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+put
+ (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+put
+ (Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;

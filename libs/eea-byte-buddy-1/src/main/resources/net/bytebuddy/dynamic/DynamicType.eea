@@ -1,0 +1,32 @@
+class net/bytebuddy/dynamic/DynamicType
+
+getAllTypes
+ ()Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;
+ ()Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;
+getAuxiliaryTypes
+ ()Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;
+ ()Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;
+getBytes
+ ()[B
+ ()[B
+getLoadedTypeInitializers
+ ()Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/implementation/LoadedTypeInitializer;>;
+ ()Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/implementation/LoadedTypeInitializer;>;
+getTypeDescription
+ ()Lnet/bytebuddy/description/type/TypeDescription;
+ ()Lnet/bytebuddy/description/type/TypeDescription;
+inject
+ (Ljava/io/File;)Ljava/io/File;
+ (Ljava/io/File;)Ljava/io/File;
+inject
+ (Ljava/io/File;Ljava/io/File;)Ljava/io/File;
+ (Ljava/io/File;Ljava/io/File;)Ljava/io/File;
+saveIn
+ (Ljava/io/File;)Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Ljava/io/File;>;
+ (Ljava/io/File;)Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Ljava/io/File;>;
+toJar
+ (Ljava/io/File;)Ljava/io/File;
+ (Ljava/io/File;)Ljava/io/File;
+toJar
+ (Ljava/io/File;Ljava/util/jar/Manifest;)Ljava/io/File;
+ (Ljava/io/File;Ljava/util/jar/Manifest;)Ljava/io/File;

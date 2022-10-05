@@ -1,0 +1,66 @@
+class net/bytebuddy/jar/asm/commons/MethodRemapper
+
+remapper
+ Lnet/bytebuddy/jar/asm/commons/Remapper;
+ Lnet/bytebuddy/jar/asm/commons/Remapper;
+
+<init>
+ (ILnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/jar/asm/commons/Remapper;)V
+ (ILnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/jar/asm/commons/Remapper;)V
+<init>
+ (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/jar/asm/commons/Remapper;)V
+ (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/jar/asm/commons/Remapper;)V
+createAnnotationRemapper
+ (Ljava/lang/String;Lnet/bytebuddy/jar/asm/AnnotationVisitor;)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ (Ljava/lang/String;Lnet/bytebuddy/jar/asm/AnnotationVisitor;)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+createAnnotationRemapper
+ (Lnet/bytebuddy/jar/asm/AnnotationVisitor;)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ (Lnet/bytebuddy/jar/asm/AnnotationVisitor;)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+visitAnnotation
+ (Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ (Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+visitAnnotationDefault
+ ()Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ ()Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+visitFieldInsn
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+visitFrame
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+visitInsnAnnotation
+ (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+visitInvokeDynamicInsn
+ (Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Handle;[Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Handle;[Ljava/lang/Object;)V
+visitLdcInsn
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+visitLocalVariable
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;I)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;I)V
+visitLocalVariableAnnotation
+ (ILnet/bytebuddy/jar/asm/TypePath;[Lnet/bytebuddy/jar/asm/Label;[Lnet/bytebuddy/jar/asm/Label;[ILjava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ (ILnet/bytebuddy/jar/asm/TypePath;[Lnet/bytebuddy/jar/asm/Label;[Lnet/bytebuddy/jar/asm/Label;[ILjava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+visitMethodInsn
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+visitMultiANewArrayInsn
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+visitParameterAnnotation
+ (ILjava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ (ILjava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+visitTryCatchAnnotation
+ (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+visitTryCatchBlock
+ (Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Ljava/lang/String;)V
+ (Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Ljava/lang/String;)V
+visitTypeAnnotation
+ (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+visitTypeInsn
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V

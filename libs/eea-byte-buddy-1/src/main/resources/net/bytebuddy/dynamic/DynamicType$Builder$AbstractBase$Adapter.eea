@@ -1,0 +1,154 @@
+class net/bytebuddy/dynamic/DynamicType$Builder$AbstractBase$Adapter
+ <U:Ljava/lang/Object;>
+
+annotationRetention
+ Lnet/bytebuddy/implementation/attribute/AnnotationRetention;
+ Lnet/bytebuddy/implementation/attribute/AnnotationRetention;
+annotationValueFilterFactory
+ Lnet/bytebuddy/implementation/attribute/AnnotationValueFilter$Factory;
+ Lnet/bytebuddy/implementation/attribute/AnnotationValueFilter$Factory;
+asmVisitorWrapper
+ Lnet/bytebuddy/asm/AsmVisitorWrapper;
+ Lnet/bytebuddy/asm/AsmVisitorWrapper;
+auxiliaryTypeNamingStrategy
+ Lnet/bytebuddy/implementation/auxiliary/AuxiliaryType$NamingStrategy;
+ Lnet/bytebuddy/implementation/auxiliary/AuxiliaryType$NamingStrategy;
+auxiliaryTypes
+ Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;
+ Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;
+classFileVersion
+ Lnet/bytebuddy/ClassFileVersion;
+ Lnet/bytebuddy/ClassFileVersion;
+classWriterStrategy
+ Lnet/bytebuddy/dynamic/scaffold/ClassWriterStrategy;
+ Lnet/bytebuddy/dynamic/scaffold/ClassWriterStrategy;
+fieldRegistry
+ Lnet/bytebuddy/dynamic/scaffold/FieldRegistry;
+ Lnet/bytebuddy/dynamic/scaffold/FieldRegistry;
+ignoredMethods
+ Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;
+ Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;
+implementationContextFactory
+ Lnet/bytebuddy/implementation/Implementation$Context$Factory;
+ Lnet/bytebuddy/implementation/Implementation$Context$Factory;
+instrumentedType
+ Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
+ Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
+methodGraphCompiler
+ Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;
+ Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;
+methodRegistry
+ Lnet/bytebuddy/dynamic/scaffold/MethodRegistry;
+ Lnet/bytebuddy/dynamic/scaffold/MethodRegistry;
+recordComponentRegistry
+ Lnet/bytebuddy/dynamic/scaffold/RecordComponentRegistry;
+ Lnet/bytebuddy/dynamic/scaffold/RecordComponentRegistry;
+typeAttributeAppender
+ Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;
+ Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;
+typeValidation
+ Lnet/bytebuddy/dynamic/scaffold/TypeValidation;
+ Lnet/bytebuddy/dynamic/scaffold/TypeValidation;
+visibilityBridgeStrategy
+ Lnet/bytebuddy/dynamic/VisibilityBridgeStrategy;
+ Lnet/bytebuddy/dynamic/VisibilityBridgeStrategy;
+
+<init>
+ (Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;Lnet/bytebuddy/dynamic/scaffold/FieldRegistry;Lnet/bytebuddy/dynamic/scaffold/MethodRegistry;Lnet/bytebuddy/dynamic/scaffold/RecordComponentRegistry;Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;Lnet/bytebuddy/asm/AsmVisitorWrapper;Lnet/bytebuddy/ClassFileVersion;Lnet/bytebuddy/implementation/auxiliary/AuxiliaryType$NamingStrategy;Lnet/bytebuddy/implementation/attribute/AnnotationValueFilter$Factory;Lnet/bytebuddy/implementation/attribute/AnnotationRetention;Lnet/bytebuddy/implementation/Implementation$Context$Factory;Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;Lnet/bytebuddy/dynamic/scaffold/TypeValidation;Lnet/bytebuddy/dynamic/VisibilityBridgeStrategy;Lnet/bytebuddy/dynamic/scaffold/ClassWriterStrategy;Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;)V
+ (Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;Lnet/bytebuddy/dynamic/scaffold/FieldRegistry;Lnet/bytebuddy/dynamic/scaffold/MethodRegistry;Lnet/bytebuddy/dynamic/scaffold/RecordComponentRegistry;Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;Lnet/bytebuddy/asm/AsmVisitorWrapper;Lnet/bytebuddy/ClassFileVersion;Lnet/bytebuddy/implementation/auxiliary/AuxiliaryType$NamingStrategy;Lnet/bytebuddy/implementation/attribute/AnnotationValueFilter$Factory;Lnet/bytebuddy/implementation/attribute/AnnotationRetention;Lnet/bytebuddy/implementation/Implementation$Context$Factory;Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;Lnet/bytebuddy/dynamic/scaffold/TypeValidation;Lnet/bytebuddy/dynamic/VisibilityBridgeStrategy;Lnet/bytebuddy/dynamic/scaffold/ClassWriterStrategy;Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;)V
+annotateType
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+attribute
+ (Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+declaredTypes
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+defineConstructor
+ (I)Lnet/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition$ParameterDefinition$Initial<TU;>;
+ (I)Lnet/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition$ParameterDefinition$Initial<TU;>;
+defineField
+ (Ljava/lang/String;Lnet/bytebuddy/description/type/TypeDefinition;I)Lnet/bytebuddy/dynamic/DynamicType$Builder$FieldDefinition$Optional$Valuable<TU;>;
+ (Ljava/lang/String;Lnet/bytebuddy/description/type/TypeDefinition;I)Lnet/bytebuddy/dynamic/DynamicType$Builder$FieldDefinition$Optional$Valuable<TU;>;
+defineMethod
+ (Ljava/lang/String;Lnet/bytebuddy/description/type/TypeDefinition;I)Lnet/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition$ParameterDefinition$Initial<TU;>;
+ (Ljava/lang/String;Lnet/bytebuddy/description/type/TypeDefinition;I)Lnet/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition$ParameterDefinition$Initial<TU;>;
+defineRecordComponent
+ (Ljava/lang/String;Lnet/bytebuddy/description/type/TypeDefinition;)Lnet/bytebuddy/dynamic/DynamicType$Builder$RecordComponentDefinition$Optional<TU;>;
+ (Ljava/lang/String;Lnet/bytebuddy/description/type/TypeDefinition;)Lnet/bytebuddy/dynamic/DynamicType$Builder$RecordComponentDefinition$Optional<TU;>;
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+field
+ (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/field/FieldDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$FieldDefinition$Valuable<TU;>;
+ (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/field/FieldDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$FieldDefinition$Valuable<TU;>;
+ignoreAlso
+ (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+implement
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDefinition;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition$ImplementationDefinition$Optional<TU;>;
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDefinition;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition$ImplementationDefinition$Optional<TU;>;
+initializer
+ (Lnet/bytebuddy/implementation/LoadedTypeInitializer;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Lnet/bytebuddy/implementation/LoadedTypeInitializer;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+initializer
+ (Lnet/bytebuddy/implementation/bytecode/ByteCodeAppender;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Lnet/bytebuddy/implementation/bytecode/ByteCodeAppender;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+innerTypeOf
+ (Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;)Lnet/bytebuddy/dynamic/DynamicType$Builder$InnerTypeDefinition<TU;>;
+ (Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;)Lnet/bytebuddy/dynamic/DynamicType$Builder$InnerTypeDefinition<TU;>;
+innerTypeOf
+ (Lnet/bytebuddy/description/type/TypeDescription;)Lnet/bytebuddy/dynamic/DynamicType$Builder$InnerTypeDefinition$ForType<TU;>;
+ (Lnet/bytebuddy/description/type/TypeDescription;)Lnet/bytebuddy/dynamic/DynamicType$Builder$InnerTypeDefinition$ForType<TU;>;
+invokable
+ (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition$ImplementationDefinition<TU;>;
+ (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition$ImplementationDefinition<TU;>;
+materialize
+ (Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;Lnet/bytebuddy/dynamic/scaffold/FieldRegistry;Lnet/bytebuddy/dynamic/scaffold/MethodRegistry;Lnet/bytebuddy/dynamic/scaffold/RecordComponentRegistry;Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;Lnet/bytebuddy/asm/AsmVisitorWrapper;Lnet/bytebuddy/ClassFileVersion;Lnet/bytebuddy/implementation/auxiliary/AuxiliaryType$NamingStrategy;Lnet/bytebuddy/implementation/attribute/AnnotationValueFilter$Factory;Lnet/bytebuddy/implementation/attribute/AnnotationRetention;Lnet/bytebuddy/implementation/Implementation$Context$Factory;Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;Lnet/bytebuddy/dynamic/scaffold/TypeValidation;Lnet/bytebuddy/dynamic/VisibilityBridgeStrategy;Lnet/bytebuddy/dynamic/scaffold/ClassWriterStrategy;Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;Lnet/bytebuddy/dynamic/scaffold/FieldRegistry;Lnet/bytebuddy/dynamic/scaffold/MethodRegistry;Lnet/bytebuddy/dynamic/scaffold/RecordComponentRegistry;Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;Lnet/bytebuddy/asm/AsmVisitorWrapper;Lnet/bytebuddy/ClassFileVersion;Lnet/bytebuddy/implementation/auxiliary/AuxiliaryType$NamingStrategy;Lnet/bytebuddy/implementation/attribute/AnnotationValueFilter$Factory;Lnet/bytebuddy/implementation/attribute/AnnotationRetention;Lnet/bytebuddy/implementation/Implementation$Context$Factory;Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;Lnet/bytebuddy/dynamic/scaffold/TypeValidation;Lnet/bytebuddy/dynamic/VisibilityBridgeStrategy;Lnet/bytebuddy/dynamic/scaffold/ClassWriterStrategy;Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+merge
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+modifiers
+ (I)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (I)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+name
+ (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+nestHost
+ (Lnet/bytebuddy/description/type/TypeDescription;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Lnet/bytebuddy/description/type/TypeDescription;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+nestMembers
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+permittedSubclass
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+recordComponent
+ (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/type/RecordComponentDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$RecordComponentDefinition<TU;>;
+ (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/type/RecordComponentDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$RecordComponentDefinition<TU;>;
+require
+ (Ljava/util/Collection<Lnet/bytebuddy/dynamic/DynamicType;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Ljava/util/Collection<Lnet/bytebuddy/dynamic/DynamicType;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+suffix
+ (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+toTypeDescription
+ ()Lnet/bytebuddy/description/type/TypeDescription;
+ ()Lnet/bytebuddy/description/type/TypeDescription;
+topLevelType
+ ()Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ ()Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+transform
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription$Generic;>;Lnet/bytebuddy/dynamic/Transformer<Lnet/bytebuddy/description/type/TypeVariableToken;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription$Generic;>;Lnet/bytebuddy/dynamic/Transformer<Lnet/bytebuddy/description/type/TypeVariableToken;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+typeVariable
+ (Ljava/lang/String;Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDefinition;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$TypeVariableDefinition<TU;>;
+ (Ljava/lang/String;Ljava/util/Collection<+Lnet/bytebuddy/description/type/TypeDefinition;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$TypeVariableDefinition<TU;>;
+unsealed
+ ()Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ ()Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+visit
+ (Lnet/bytebuddy/asm/AsmVisitorWrapper;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+ (Lnet/bytebuddy/asm/AsmVisitorWrapper;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;

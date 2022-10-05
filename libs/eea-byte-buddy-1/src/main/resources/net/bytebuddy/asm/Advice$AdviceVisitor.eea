@@ -1,0 +1,30 @@
+class net/bytebuddy/asm/Advice$AdviceVisitor
+
+argumentHandler
+ Lnet/bytebuddy/asm/Advice$ArgumentHandler$ForInstrumentedMethod;
+ Lnet/bytebuddy/asm/Advice$ArgumentHandler$ForInstrumentedMethod;
+instrumentedMethod
+ Lnet/bytebuddy/description/method/MethodDescription;
+ Lnet/bytebuddy/description/method/MethodDescription;
+methodExit
+ Lnet/bytebuddy/asm/Advice$Dispatcher$Bound;
+ Lnet/bytebuddy/asm/Advice$Dispatcher$Bound;
+methodSizeHandler
+ Lnet/bytebuddy/asm/Advice$MethodSizeHandler$ForInstrumentedMethod;
+ Lnet/bytebuddy/asm/Advice$MethodSizeHandler$ForInstrumentedMethod;
+stackMapFrameHandler
+ Lnet/bytebuddy/asm/Advice$StackMapFrameHandler$ForInstrumentedMethod;
+ Lnet/bytebuddy/asm/Advice$StackMapFrameHandler$ForInstrumentedMethod;
+
+<init>
+ (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/implementation/Implementation$Context;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/implementation/bytecode/StackManipulation;Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/method/MethodDescription;Lnet/bytebuddy/asm/Advice$Dispatcher$Resolved$ForMethodEnter;Lnet/bytebuddy/asm/Advice$Dispatcher$Resolved$ForMethodExit;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;II)V
+ (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/implementation/Implementation$Context;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/implementation/bytecode/StackManipulation;Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/method/MethodDescription;Lnet/bytebuddy/asm/Advice$Dispatcher$Resolved$ForMethodEnter;Lnet/bytebuddy/asm/Advice$Dispatcher$Resolved$ForMethodExit;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;II)V
+onVisitFrame
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+visitLocalVariable
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;I)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;I)V
+visitLocalVariableAnnotation
+ (ILnet/bytebuddy/jar/asm/TypePath;[Lnet/bytebuddy/jar/asm/Label;[Lnet/bytebuddy/jar/asm/Label;[ILjava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
+ (ILnet/bytebuddy/jar/asm/TypePath;[Lnet/bytebuddy/jar/asm/Label;[Lnet/bytebuddy/jar/asm/Label;[ILjava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;

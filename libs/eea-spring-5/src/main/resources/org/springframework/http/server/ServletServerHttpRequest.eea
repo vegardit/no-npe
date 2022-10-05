@@ -1,0 +1,39 @@
+class org/springframework/http/server/ServletServerHttpRequest
+
+FORM_CHARSET
+ Ljava/nio/charset/Charset;
+ L1java/nio/charset/Charset;
+
+<init>
+ (Ljavax/servlet/http/HttpServletRequest;)V
+ (Ljavax/servlet/http/HttpServletRequest;)V
+getAsyncRequestControl
+ (Lorg/springframework/http/server/ServerHttpResponse;)Lorg/springframework/http/server/ServerHttpAsyncRequestControl;
+ (Lorg/springframework/http/server/ServerHttpResponse;)Lorg/springframework/http/server/ServerHttpAsyncRequestControl;
+getBody
+ ()Ljava/io/InputStream;
+ ()Ljava/io/InputStream;
+getHeaders
+ ()Lorg/springframework/http/HttpHeaders;
+ ()Lorg/springframework/http/HttpHeaders;
+getLocalAddress
+ ()Ljava/net/InetSocketAddress;
+ ()Ljava/net/InetSocketAddress;
+getMethod
+ ()Lorg/springframework/http/HttpMethod;
+ ()Lorg/springframework/http/HttpMethod;
+getMethodValue
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPrincipal
+ ()Ljava/security/Principal;
+ ()Ljava/security/Principal;
+getRemoteAddress
+ ()Ljava/net/InetSocketAddress;
+ ()Ljava/net/InetSocketAddress;
+getServletRequest
+ ()Ljavax/servlet/http/HttpServletRequest;
+ ()Ljavax/servlet/http/HttpServletRequest;
+getURI
+ ()Ljava/net/URI;
+ ()Ljava/net/URI;

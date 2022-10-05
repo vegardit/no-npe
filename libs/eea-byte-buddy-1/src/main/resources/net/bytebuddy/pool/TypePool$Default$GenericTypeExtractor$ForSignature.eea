@@ -1,0 +1,32 @@
+class net/bytebuddy/pool/TypePool$Default$GenericTypeExtractor$ForSignature
+ <T::Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$GenericTypeToken$Resolution;>
+
+extract
+ <S::Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$GenericTypeToken$Resolution;>(Ljava/lang/String;Lnet/bytebuddy/pool/TypePool$Default$GenericTypeExtractor$ForSignature<TS;>;)TS;
+ <S::Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$GenericTypeToken$Resolution;>(Ljava/lang/String;Lnet/bytebuddy/pool/TypePool$Default$GenericTypeExtractor$ForSignature<TS;>;)TS;
+
+currentBounds
+ Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$GenericTypeToken;>;
+ Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$GenericTypeToken;>;
+currentTypeParameter
+ Ljava/lang/String;
+ Ljava/lang/String;
+typeVariableTokens
+ Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$GenericTypeToken$OfFormalTypeVariable;>;
+ Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$GenericTypeToken$OfFormalTypeVariable;>;
+
+register
+ (Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$GenericTypeToken;)V
+ (Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$GenericTypeToken;)V
+resolve
+ ()TT;
+ ()TT;
+visitClassBound
+ ()Lnet/bytebuddy/jar/asm/signature/SignatureVisitor;
+ ()Lnet/bytebuddy/jar/asm/signature/SignatureVisitor;
+visitFormalTypeParameter
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitInterfaceBound
+ ()Lnet/bytebuddy/jar/asm/signature/SignatureVisitor;
+ ()Lnet/bytebuddy/jar/asm/signature/SignatureVisitor;

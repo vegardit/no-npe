@@ -1,0 +1,24 @@
+class org/springframework/jdbc/support/lob/DefaultLobHandler
+
+logger
+ Lorg/apache/commons/logging/Log;
+ Lorg/apache/commons/logging/Log;
+
+getBlobAsBinaryStream
+ (Ljava/sql/ResultSet;I)Ljava/io/InputStream;
+ (Ljava/sql/ResultSet;I)Ljava/io/InputStream;
+getBlobAsBytes
+ (Ljava/sql/ResultSet;I)[B
+ (Ljava/sql/ResultSet;I)[B
+getClobAsAsciiStream
+ (Ljava/sql/ResultSet;I)Ljava/io/InputStream;
+ (Ljava/sql/ResultSet;I)Ljava/io/InputStream;
+getClobAsCharacterStream
+ (Ljava/sql/ResultSet;I)Ljava/io/Reader;
+ (Ljava/sql/ResultSet;I)Ljava/io/Reader;
+getClobAsString
+ (Ljava/sql/ResultSet;I)Ljava/lang/String;
+ (Ljava/sql/ResultSet;I)Ljava/lang/String;
+getLobCreator
+ ()Lorg/springframework/jdbc/support/lob/LobCreator;
+ ()Lorg/springframework/jdbc/support/lob/LobCreator;

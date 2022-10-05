@@ -1,0 +1,17 @@
+class net/bytebuddy/build/Plugin$Engine$AbstractBase
+
+apply
+ (Ljava/io/File;Ljava/io/File;Ljava/util/List<+Lnet/bytebuddy/build/Plugin$Factory;>;)Lnet/bytebuddy/build/Plugin$Engine$Summary;
+ (Ljava/io/File;Ljava/io/File;Ljava/util/List<+Lnet/bytebuddy/build/Plugin$Factory;>;)Lnet/bytebuddy/build/Plugin$Engine$Summary;
+apply
+ (Ljava/io/File;Ljava/io/File;[Lnet/bytebuddy/build/Plugin$Factory;)Lnet/bytebuddy/build/Plugin$Engine$Summary;
+ (Ljava/io/File;Ljava/io/File;[Lnet/bytebuddy/build/Plugin$Factory;)Lnet/bytebuddy/build/Plugin$Engine$Summary;
+apply
+ (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/build/Plugin$Engine$Target;[Lnet/bytebuddy/build/Plugin$Factory;)Lnet/bytebuddy/build/Plugin$Engine$Summary;
+ (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/build/Plugin$Engine$Target;[Lnet/bytebuddy/build/Plugin$Factory;)Lnet/bytebuddy/build/Plugin$Engine$Summary;
+withErrorHandlers
+ ([Lnet/bytebuddy/build/Plugin$Engine$ErrorHandler;)Lnet/bytebuddy/build/Plugin$Engine;
+ ([Lnet/bytebuddy/build/Plugin$Engine$ErrorHandler;)Lnet/bytebuddy/build/Plugin$Engine;
+withParallelTransformation
+ (I)Lnet/bytebuddy/build/Plugin$Engine;
+ (I)Lnet/bytebuddy/build/Plugin$Engine;

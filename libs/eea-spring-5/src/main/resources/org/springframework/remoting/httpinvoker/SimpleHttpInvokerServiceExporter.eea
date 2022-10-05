@@ -1,0 +1,23 @@
+class org/springframework/remoting/httpinvoker/SimpleHttpInvokerServiceExporter
+
+decorateInputStream
+ (Lcom/sun/net/httpserver/HttpExchange;Ljava/io/InputStream;)Ljava/io/InputStream;
+ (Lcom/sun/net/httpserver/HttpExchange;Ljava/io/InputStream;)Ljava/io/InputStream;
+decorateOutputStream
+ (Lcom/sun/net/httpserver/HttpExchange;Ljava/io/OutputStream;)Ljava/io/OutputStream;
+ (Lcom/sun/net/httpserver/HttpExchange;Ljava/io/OutputStream;)Ljava/io/OutputStream;
+handle
+ (Lcom/sun/net/httpserver/HttpExchange;)V
+ (Lcom/sun/net/httpserver/HttpExchange;)V
+readRemoteInvocation
+ (Lcom/sun/net/httpserver/HttpExchange;)Lorg/springframework/remoting/support/RemoteInvocation;
+ (Lcom/sun/net/httpserver/HttpExchange;)Lorg/springframework/remoting/support/RemoteInvocation;
+readRemoteInvocation
+ (Lcom/sun/net/httpserver/HttpExchange;Ljava/io/InputStream;)Lorg/springframework/remoting/support/RemoteInvocation;
+ (Lcom/sun/net/httpserver/HttpExchange;Ljava/io/InputStream;)Lorg/springframework/remoting/support/RemoteInvocation;
+writeRemoteInvocationResult
+ (Lcom/sun/net/httpserver/HttpExchange;Lorg/springframework/remoting/support/RemoteInvocationResult;)V
+ (Lcom/sun/net/httpserver/HttpExchange;Lorg/springframework/remoting/support/RemoteInvocationResult;)V
+writeRemoteInvocationResult
+ (Lcom/sun/net/httpserver/HttpExchange;Lorg/springframework/remoting/support/RemoteInvocationResult;Ljava/io/OutputStream;)V
+ (Lcom/sun/net/httpserver/HttpExchange;Lorg/springframework/remoting/support/RemoteInvocationResult;Ljava/io/OutputStream;)V

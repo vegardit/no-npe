@@ -1,0 +1,58 @@
+class net/bytebuddy/utility/visitor/StackAwareMethodVisitor
+
+UNADJUSTED_PROPERTY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+of
+ (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/description/method/MethodDescription;)Lnet/bytebuddy/jar/asm/MethodVisitor;
+ (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/description/method/MethodDescription;)Lnet/bytebuddy/jar/asm/MethodVisitor;
+
+<init>
+ (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/description/method/MethodDescription;)V
+ (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/description/method/MethodDescription;)V
+drainStack
+ (IILnet/bytebuddy/implementation/bytecode/StackSize;)I
+ (IILnet/bytebuddy/implementation/bytecode/StackSize;)I
+register
+ (Lnet/bytebuddy/jar/asm/Label;Ljava/util/List<Lnet/bytebuddy/implementation/bytecode/StackSize;>;)V
+ (Lnet/bytebuddy/jar/asm/Label;Ljava/util/List<Lnet/bytebuddy/implementation/bytecode/StackSize;>;)V
+visitFieldInsn
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+visitFrame
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+visitInvokeDynamicInsn
+ (Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Handle;[Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Handle;[Ljava/lang/Object;)V
+visitJumpInsn
+ (ILnet/bytebuddy/jar/asm/Label;)V
+ (ILnet/bytebuddy/jar/asm/Label;)V
+visitLabel
+ (Lnet/bytebuddy/jar/asm/Label;)V
+ (Lnet/bytebuddy/jar/asm/Label;)V
+visitLdcInsn
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+visitLineNumber
+ (ILnet/bytebuddy/jar/asm/Label;)V
+ (ILnet/bytebuddy/jar/asm/Label;)V
+visitLookupSwitchInsn
+ (Lnet/bytebuddy/jar/asm/Label;[I[Lnet/bytebuddy/jar/asm/Label;)V
+ (Lnet/bytebuddy/jar/asm/Label;[I[Lnet/bytebuddy/jar/asm/Label;)V
+visitMethodInsn
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+visitMultiANewArrayInsn
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+visitTableSwitchInsn
+ (IILnet/bytebuddy/jar/asm/Label;[Lnet/bytebuddy/jar/asm/Label;)V
+ (IILnet/bytebuddy/jar/asm/Label;[Lnet/bytebuddy/jar/asm/Label;)V
+visitTryCatchBlock
+ (Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Ljava/lang/String;)V
+ (Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Ljava/lang/String;)V
+visitTypeInsn
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V

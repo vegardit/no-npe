@@ -1,0 +1,29 @@
+class org/springframework/web/server/ResponseStatusException
+
+<init>
+ (ILjava/lang/String;Ljava/lang/Throwable;)V
+ (ILjava/lang/String;Ljava/lang/Throwable;)V
+<init>
+ (Lorg/springframework/http/HttpStatus;)V
+ (Lorg/springframework/http/HttpStatus;)V
+<init>
+ (Lorg/springframework/http/HttpStatus;Ljava/lang/String;)V
+ (Lorg/springframework/http/HttpStatus;Ljava/lang/String;)V
+<init>
+ (Lorg/springframework/http/HttpStatus;Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Lorg/springframework/http/HttpStatus;Ljava/lang/String;Ljava/lang/Throwable;)V
+getHeaders
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getMessage
+ ()Ljava/lang/String;
+ ()L0java/lang/String;
+getReason
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getResponseHeaders
+ ()Lorg/springframework/http/HttpHeaders;
+ ()Lorg/springframework/http/HttpHeaders;
+getStatus
+ ()Lorg/springframework/http/HttpStatus;
+ ()Lorg/springframework/http/HttpStatus;

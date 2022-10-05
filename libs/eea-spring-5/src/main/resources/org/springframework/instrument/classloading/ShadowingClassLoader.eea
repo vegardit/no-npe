@@ -1,0 +1,33 @@
+class org/springframework/instrument/classloading/ShadowingClassLoader
+
+DEFAULT_EXCLUDED_PACKAGES
+ [Ljava/lang/String;
+ [1Ljava/lang/String;
+
+<init>
+ (Ljava/lang/ClassLoader;)V
+ (Ljava/lang/ClassLoader;)V
+<init>
+ (Ljava/lang/ClassLoader;Z)V
+ (Ljava/lang/ClassLoader;Z)V
+addTransformer
+ (Ljava/lang/instrument/ClassFileTransformer;)V
+ (Ljava/lang/instrument/ClassFileTransformer;)V
+copyTransformers
+ (Lorg/springframework/instrument/classloading/ShadowingClassLoader;)V
+ (Lorg/springframework/instrument/classloading/ShadowingClassLoader;)V
+getResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+getResourceAsStream
+ (Ljava/lang/String;)Ljava/io/InputStream;
+ (Ljava/lang/String;)Ljava/io/InputStream;
+getResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+isEligibleForShadowing
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+loadClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;

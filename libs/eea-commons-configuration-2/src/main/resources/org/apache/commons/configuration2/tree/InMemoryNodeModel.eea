@@ -1,0 +1,86 @@
+class org/apache/commons/configuration2/tree/InMemoryNodeModel
+
+<init>
+ (Lorg/apache/commons/configuration2/tree/ImmutableNode;)V
+ (Lorg/apache/commons/configuration2/tree/ImmutableNode;)V
+addNodes
+ (Ljava/lang/String;Ljava/util/Collection<+Lorg/apache/commons/configuration2/tree/ImmutableNode;>;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Ljava/lang/String;Ljava/util/Collection<+Lorg/apache/commons/configuration2/tree/ImmutableNode;>;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+addNodes
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Ljava/util/Collection<+Lorg/apache/commons/configuration2/tree/ImmutableNode;>;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Ljava/util/Collection<+Lorg/apache/commons/configuration2/tree/ImmutableNode;>;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+addProperty
+ (Ljava/lang/String;Ljava/lang/Iterable<*>;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Ljava/lang/String;Ljava/lang/Iterable<*>;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+addProperty
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Ljava/lang/Iterable<*>;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Ljava/lang/Iterable<*>;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+clear
+ (Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+clearProperty
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+clearProperty
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+clearTree
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Ljava/util/List<Lorg/apache/commons/configuration2/tree/QueryResult<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Ljava/util/List<Lorg/apache/commons/configuration2/tree/QueryResult<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+clearTree
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Ljava/util/List<Lorg/apache/commons/configuration2/tree/QueryResult<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Ljava/util/List<Lorg/apache/commons/configuration2/tree/QueryResult<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
+getInMemoryRepresentation
+ ()Lorg/apache/commons/configuration2/tree/ImmutableNode;
+ ()Lorg/apache/commons/configuration2/tree/ImmutableNode;
+getNodeHandler
+ ()Lorg/apache/commons/configuration2/tree/NodeHandler<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+ ()Lorg/apache/commons/configuration2/tree/NodeHandler<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+getReferenceNodeHandler
+ ()Lorg/apache/commons/configuration2/tree/ReferenceNodeHandler;
+ ()Lorg/apache/commons/configuration2/tree/ReferenceNodeHandler;
+getRootNode
+ ()Lorg/apache/commons/configuration2/tree/ImmutableNode;
+ ()Lorg/apache/commons/configuration2/tree/ImmutableNode;
+getTrackedNode
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;)Lorg/apache/commons/configuration2/tree/ImmutableNode;
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;)Lorg/apache/commons/configuration2/tree/ImmutableNode;
+getTrackedNodeHandler
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;)Lorg/apache/commons/configuration2/tree/NodeHandler<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;)Lorg/apache/commons/configuration2/tree/NodeHandler<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+isTrackedNodeDetached
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;)Z
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;)Z
+mergeRoot
+ (Lorg/apache/commons/configuration2/tree/ImmutableNode;Ljava/lang/String;Ljava/util/Map<Lorg/apache/commons/configuration2/tree/ImmutableNode;*>;Ljava/lang/Object;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Lorg/apache/commons/configuration2/tree/ImmutableNode;Ljava/lang/String;Ljava/util/Map<Lorg/apache/commons/configuration2/tree/ImmutableNode;*>;Ljava/lang/Object;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+replaceRoot
+ (Lorg/apache/commons/configuration2/tree/ImmutableNode;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Lorg/apache/commons/configuration2/tree/ImmutableNode;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+replaceTrackedNode
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/ImmutableNode;)V
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/ImmutableNode;)V
+selectAndTrackNodes
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Ljava/util/Collection<Lorg/apache/commons/configuration2/tree/NodeSelector;>;
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Ljava/util/Collection<Lorg/apache/commons/configuration2/tree/NodeSelector;>;
+setProperty
+ (Ljava/lang/String;Ljava/lang/Object;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Ljava/lang/String;Ljava/lang/Object;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+setProperty
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Ljava/lang/Object;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeSelector;Ljava/lang/Object;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+setRootNode
+ (Lorg/apache/commons/configuration2/tree/ImmutableNode;)V
+ (Lorg/apache/commons/configuration2/tree/ImmutableNode;)V
+trackChildNodeWithCreation
+ (Ljava/lang/String;Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Lorg/apache/commons/configuration2/tree/NodeSelector;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Lorg/apache/commons/configuration2/tree/NodeSelector;
+trackChildNodes
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Ljava/util/Collection<Lorg/apache/commons/configuration2/tree/NodeSelector;>;
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)Ljava/util/Collection<Lorg/apache/commons/configuration2/tree/NodeSelector;>;
+trackNode
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/NodeKeyResolver<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;)V
+untrackNode
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;)V
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;)V

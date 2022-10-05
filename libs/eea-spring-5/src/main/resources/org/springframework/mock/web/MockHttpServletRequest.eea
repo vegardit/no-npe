@@ -1,0 +1,312 @@
+class org/springframework/mock/web/MockHttpServletRequest
+
+DEFAULT_PROTOCOL
+ Ljava/lang/String;
+ L1java/lang/String;
+DEFAULT_REMOTE_ADDR
+ Ljava/lang/String;
+ L1java/lang/String;
+DEFAULT_REMOTE_HOST
+ Ljava/lang/String;
+ L1java/lang/String;
+DEFAULT_SCHEME
+ Ljava/lang/String;
+ L1java/lang/String;
+DEFAULT_SERVER_ADDR
+ Ljava/lang/String;
+ L1java/lang/String;
+DEFAULT_SERVER_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+<init>
+ (Ljavax/servlet/ServletContext;)V
+ (Ljavax/servlet/ServletContext;)V
+<init>
+ (Ljavax/servlet/ServletContext;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljavax/servlet/ServletContext;Ljava/lang/String;Ljava/lang/String;)V
+addHeader
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+addParameter
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+addParameter
+ (Ljava/lang/String;[Ljava/lang/String;)V
+ (Ljava/lang/String;[Ljava/lang/String;)V
+addParameters
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+addPart
+ (Ljavax/servlet/http/Part;)V
+ (Ljavax/servlet/http/Part;)V
+addPreferredLocale
+ (Ljava/util/Locale;)V
+ (Ljava/util/Locale;)V
+addUserRole
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+authenticate
+ (Ljavax/servlet/http/HttpServletResponse;)Z
+ (Ljavax/servlet/http/HttpServletResponse;)Z
+changeSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getAsyncContext
+ ()Ljavax/servlet/AsyncContext;
+ ()Ljavax/servlet/AsyncContext;
+getAttribute
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getAttributeNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getAuthType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCharacterEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getContentAsByteArray
+ ()[B
+ ()[B
+getContentAsString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getContentType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getContextPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCookies
+ ()[Ljavax/servlet/http/Cookie;
+ ()[Ljavax/servlet/http/Cookie;
+getDateHeader
+ (Ljava/lang/String;)J
+ (Ljava/lang/String;)J
+getDispatcherType
+ ()Ljavax/servlet/DispatcherType;
+ ()Ljavax/servlet/DispatcherType;
+getHeader
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getHeaderNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getHeaders
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+getInputStream
+ ()Ljavax/servlet/ServletInputStream;
+ ()Ljavax/servlet/ServletInputStream;
+getIntHeader
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+getLocalAddr
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLocalName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLocale
+ ()Ljava/util/Locale;
+ ()Ljava/util/Locale;
+getLocales
+ ()Ljava/util/Enumeration<Ljava/util/Locale;>;
+ ()Ljava/util/Enumeration<Ljava/util/Locale;>;
+getMethod
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getParameter
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getParameterMap
+ ()Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+getParameterNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getParameterValues
+ (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[Ljava/lang/String;
+getPart
+ (Ljava/lang/String;)Ljavax/servlet/http/Part;
+ (Ljava/lang/String;)Ljavax/servlet/http/Part;
+getParts
+ ()Ljava/util/Collection<Ljavax/servlet/http/Part;>;
+ ()Ljava/util/Collection<Ljavax/servlet/http/Part;>;
+getPathInfo
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPathTranslated
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProtocol
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getQueryString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getReader
+ ()Ljava/io/BufferedReader;
+ ()Ljava/io/BufferedReader;
+getRealPath
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getRemoteAddr
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRemoteHost
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRemoteUser
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRequestDispatcher
+ (Ljava/lang/String;)Ljavax/servlet/RequestDispatcher;
+ (Ljava/lang/String;)Ljavax/servlet/RequestDispatcher;
+getRequestURI
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRequestURL
+ ()Ljava/lang/StringBuffer;
+ ()Ljava/lang/StringBuffer;
+getRequestedSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getScheme
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getServerName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getServletContext
+ ()Ljavax/servlet/ServletContext;
+ ()Ljavax/servlet/ServletContext;
+getServletPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSession
+ ()Ljavax/servlet/http/HttpSession;
+ ()Ljavax/servlet/http/HttpSession;
+getSession
+ (Z)Ljavax/servlet/http/HttpSession;
+ (Z)Ljavax/servlet/http/HttpSession;
+getUserPrincipal
+ ()Ljava/security/Principal;
+ ()Ljava/security/Principal;
+isUserInRole
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+login
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+removeAttribute
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeHeader
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeParameter
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setAsyncContext
+ (Lorg/springframework/mock/web/MockAsyncContext;)V
+ (Lorg/springframework/mock/web/MockAsyncContext;)V
+setAttribute
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+setAuthType
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setCharacterEncoding
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setContent
+ ([B)V
+ ([B)V
+setContentType
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setContextPath
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setCookies
+ ([Ljavax/servlet/http/Cookie;)V
+ ([Ljavax/servlet/http/Cookie;)V
+setDispatcherType
+ (Ljavax/servlet/DispatcherType;)V
+ (Ljavax/servlet/DispatcherType;)V
+setLocalAddr
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setLocalName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setMethod
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setParameter
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+setParameter
+ (Ljava/lang/String;[Ljava/lang/String;)V
+ (Ljava/lang/String;[Ljava/lang/String;)V
+setParameters
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+setPathInfo
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setPreferredLocales
+ (Ljava/util/List<Ljava/util/Locale;>;)V
+ (Ljava/util/List<Ljava/util/Locale;>;)V
+setProtocol
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setQueryString
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setRemoteAddr
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setRemoteHost
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setRemoteUser
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setRequestURI
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setRequestedSessionId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setScheme
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setServerName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setServletPath
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setSession
+ (Ljavax/servlet/http/HttpSession;)V
+ (Ljavax/servlet/http/HttpSession;)V
+setUserPrincipal
+ (Ljava/security/Principal;)V
+ (Ljava/security/Principal;)V
+startAsync
+ ()Ljavax/servlet/AsyncContext;
+ ()Ljavax/servlet/AsyncContext;
+startAsync
+ (Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljavax/servlet/AsyncContext;
+ (Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)Ljavax/servlet/AsyncContext;
+upgrade
+ <T::Ljavax/servlet/http/HttpUpgradeHandler;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljavax/servlet/http/HttpUpgradeHandler;>(Ljava/lang/Class<TT;>;)TT;

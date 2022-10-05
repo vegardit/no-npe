@@ -1,0 +1,57 @@
+class org/springframework/web/context/request/ServletRequestAttributes
+
+DESTRUCTION_CALLBACK_NAME_PREFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+immutableValueTypes
+ Ljava/util/Set<Ljava/lang/Class<*>;>;
+ L1java/util/Set<Ljava/lang/Class<*>;>;
+
+<init>
+ (Ljavax/servlet/http/HttpServletRequest;)V
+ (Ljavax/servlet/http/HttpServletRequest;)V
+<init>
+ (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+ (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+getAttribute
+ (Ljava/lang/String;I)Ljava/lang/Object;
+ (Ljava/lang/String;I)Ljava/lang/Object;
+getAttributeNames
+ (I)[Ljava/lang/String;
+ (I)[Ljava/lang/String;
+getRequest
+ ()Ljavax/servlet/http/HttpServletRequest;
+ ()Ljavax/servlet/http/HttpServletRequest;
+getResponse
+ ()Ljavax/servlet/http/HttpServletResponse;
+ ()Ljavax/servlet/http/HttpServletResponse;
+getSession
+ (Z)Ljavax/servlet/http/HttpSession;
+ (Z)Ljavax/servlet/http/HttpSession;
+getSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSessionMutex
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+isImmutableSessionAttribute
+ (Ljava/lang/String;Ljava/lang/Object;)Z
+ (Ljava/lang/String;Ljava/lang/Object;)Z
+registerDestructionCallback
+ (Ljava/lang/String;Ljava/lang/Runnable;I)V
+ (Ljava/lang/String;Ljava/lang/Runnable;I)V
+registerSessionDestructionCallback
+ (Ljava/lang/String;Ljava/lang/Runnable;)V
+ (Ljava/lang/String;Ljava/lang/Runnable;)V
+removeAttribute
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+resolveReference
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+setAttribute
+ (Ljava/lang/String;Ljava/lang/Object;I)V
+ (Ljava/lang/String;Ljava/lang/Object;I)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

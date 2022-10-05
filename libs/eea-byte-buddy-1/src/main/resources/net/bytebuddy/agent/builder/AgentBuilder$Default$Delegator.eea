@@ -1,0 +1,128 @@
+class net/bytebuddy/agent/builder/AgentBuilder$Default$Delegator
+
+assureReadEdgeFromAndTo
+ (Ljava/lang/instrument/Instrumentation;Ljava/util/Collection<+Lnet/bytebuddy/utility/JavaModule;>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Ljava/lang/instrument/Instrumentation;Ljava/util/Collection<+Lnet/bytebuddy/utility/JavaModule;>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+assureReadEdgeFromAndTo
+ (Ljava/lang/instrument/Instrumentation;[Ljava/lang/Class<*>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Ljava/lang/instrument/Instrumentation;[Ljava/lang/Class<*>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+assureReadEdgeFromAndTo
+ (Ljava/lang/instrument/Instrumentation;[Lnet/bytebuddy/utility/JavaModule;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Ljava/lang/instrument/Instrumentation;[Lnet/bytebuddy/utility/JavaModule;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+assureReadEdgeTo
+ (Ljava/lang/instrument/Instrumentation;Ljava/util/Collection<+Lnet/bytebuddy/utility/JavaModule;>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Ljava/lang/instrument/Instrumentation;Ljava/util/Collection<+Lnet/bytebuddy/utility/JavaModule;>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+assureReadEdgeTo
+ (Ljava/lang/instrument/Instrumentation;[Ljava/lang/Class<*>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Ljava/lang/instrument/Instrumentation;[Ljava/lang/Class<*>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+assureReadEdgeTo
+ (Ljava/lang/instrument/Instrumentation;[Lnet/bytebuddy/utility/JavaModule;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Ljava/lang/instrument/Instrumentation;[Lnet/bytebuddy/utility/JavaModule;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+disableClassFormatChanges
+ ()Lnet/bytebuddy/agent/builder/AgentBuilder;
+ ()Lnet/bytebuddy/agent/builder/AgentBuilder;
+disableNativeMethodPrefix
+ ()Lnet/bytebuddy/agent/builder/AgentBuilder;
+ ()Lnet/bytebuddy/agent/builder/AgentBuilder;
+enableNativeMethodPrefix
+ (Ljava/lang/String;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Ljava/lang/String;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ignore
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$RawMatcher;)Lnet/bytebuddy/agent/builder/AgentBuilder$Ignored;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$RawMatcher;)Lnet/bytebuddy/agent/builder/AgentBuilder$Ignored;
+ignore
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Ignored;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Ignored;
+ignore
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/ClassLoader;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Ignored;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/ClassLoader;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Ignored;
+ignore
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/ClassLoader;>;Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/utility/JavaModule;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Ignored;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/ClassLoader;>;Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/utility/JavaModule;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Ignored;
+installOn
+ (Ljava/lang/instrument/Instrumentation;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+ (Ljava/lang/instrument/Instrumentation;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+installOnByteBuddyAgent
+ ()Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+ ()Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+makeRaw
+ ()Ljava/lang/instrument/ClassFileTransformer;
+ ()Ljava/lang/instrument/ClassFileTransformer;
+materialize
+ ()Lnet/bytebuddy/agent/builder/AgentBuilder;
+ ()Lnet/bytebuddy/agent/builder/AgentBuilder;
+patchOn
+ (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+ (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+patchOn
+ (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Lnet/bytebuddy/agent/builder/AgentBuilder$PatchMode;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+ (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Lnet/bytebuddy/agent/builder/AgentBuilder$PatchMode;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+patchOnByteBuddyAgent
+ (Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+ (Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+patchOnByteBuddyAgent
+ (Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Lnet/bytebuddy/agent/builder/AgentBuilder$PatchMode;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+ (Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Lnet/bytebuddy/agent/builder/AgentBuilder$PatchMode;)Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
+type
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$RawMatcher;)Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$RawMatcher;)Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;
+type
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;
+type
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/ClassLoader;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/ClassLoader;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;
+type
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/ClassLoader;>;Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/utility/JavaModule;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;
+ (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/ClassLoader;>;Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/utility/JavaModule;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;
+warmUp
+ (Ljava/util/Collection<Ljava/lang/Class<*>;>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Ljava/util/Collection<Ljava/lang/Class<*>;>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+warmUp
+ ([Ljava/lang/Class<*>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ ([Ljava/lang/Class<*>;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/ByteBuddy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/ByteBuddy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$CircularityLock;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$CircularityLock;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$ClassFileBufferStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$ClassFileBufferStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$DescriptionStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$DescriptionStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$FallbackStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$FallbackStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$InitializationStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$InitializationStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$InjectionStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$InjectionStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$InstallationListener;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$InstallationListener;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$LambdaInstrumentationStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$LambdaInstrumentationStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$Listener;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$Listener;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionListenable$WithoutBatchStrategy;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionListenable$WithoutBatchStrategy;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$TransformerDecorator;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$TransformerDecorator;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+with
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$TypeStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;
+ (Lnet/bytebuddy/agent/builder/AgentBuilder$TypeStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder;

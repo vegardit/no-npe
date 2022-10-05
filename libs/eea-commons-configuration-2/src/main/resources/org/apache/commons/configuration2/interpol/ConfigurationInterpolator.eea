@@ -1,0 +1,64 @@
+class org/apache/commons/configuration2/interpol/ConfigurationInterpolator
+
+DEFAULT_PREFIX_LOOKUPS_PROPERTY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+fromSpecification
+ (Lorg/apache/commons/configuration2/interpol/InterpolatorSpecification;)Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+ (Lorg/apache/commons/configuration2/interpol/InterpolatorSpecification;)Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+getDefaultPrefixLookups
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/commons/configuration2/interpol/Lookup;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/commons/configuration2/interpol/Lookup;>;
+nullSafeLookup
+ (Lorg/apache/commons/configuration2/interpol/Lookup;)Lorg/apache/commons/configuration2/interpol/Lookup;
+ (Lorg/apache/commons/configuration2/interpol/Lookup;)Lorg/apache/commons/configuration2/interpol/Lookup;
+
+addDefaultLookup
+ (Lorg/apache/commons/configuration2/interpol/Lookup;)V
+ (Lorg/apache/commons/configuration2/interpol/Lookup;)V
+addDefaultLookups
+ (Ljava/util/Collection<+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+ (Ljava/util/Collection<+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+deregisterLookup
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+fetchLookupForPrefix
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/interpol/Lookup;
+ (Ljava/lang/String;)Lorg/apache/commons/configuration2/interpol/Lookup;
+getDefaultLookups
+ ()Ljava/util/List<Lorg/apache/commons/configuration2/interpol/Lookup;>;
+ ()Ljava/util/List<Lorg/apache/commons/configuration2/interpol/Lookup;>;
+getLookups
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/commons/configuration2/interpol/Lookup;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/commons/configuration2/interpol/Lookup;>;
+getParentInterpolator
+ ()Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+ ()Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;
+getStringConverter
+ ()Ljava/util/function/Function<Ljava/lang/Object;Ljava/lang/String;>;
+ ()Ljava/util/function/Function<Ljava/lang/Object;Ljava/lang/String;>;
+interpolate
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+prefixSet
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+registerLookup
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/interpol/Lookup;)V
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/interpol/Lookup;)V
+registerLookups
+ (Ljava/util/Map<Ljava/lang/String;+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+ (Ljava/util/Map<Ljava/lang/String;+Lorg/apache/commons/configuration2/interpol/Lookup;>;)V
+removeDefaultLookup
+ (Lorg/apache/commons/configuration2/interpol/Lookup;)Z
+ (Lorg/apache/commons/configuration2/interpol/Lookup;)Z
+resolve
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+setParentInterpolator
+ (Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;)V
+ (Lorg/apache/commons/configuration2/interpol/ConfigurationInterpolator;)V
+setStringConverter
+ (Ljava/util/function/Function<Ljava/lang/Object;Ljava/lang/String;>;)V
+ (Ljava/util/function/Function<Ljava/lang/Object;Ljava/lang/String;>;)V

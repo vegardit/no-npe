@@ -1,0 +1,26 @@
+class org/springframework/remoting/rmi/RmiClientInterceptor
+
+doInvoke
+ (Lorg/aopalliance/intercept/MethodInvocation;Ljava/rmi/Remote;)Ljava/lang/Object;
+ (Lorg/aopalliance/intercept/MethodInvocation;Ljava/rmi/Remote;)Ljava/lang/Object;
+doInvoke
+ (Lorg/aopalliance/intercept/MethodInvocation;Lorg/springframework/remoting/rmi/RmiInvocationHandler;)Ljava/lang/Object;
+ (Lorg/aopalliance/intercept/MethodInvocation;Lorg/springframework/remoting/rmi/RmiInvocationHandler;)Ljava/lang/Object;
+getStub
+ ()Ljava/rmi/Remote;
+ ()Ljava/rmi/Remote;
+invoke
+ (Lorg/aopalliance/intercept/MethodInvocation;)Ljava/lang/Object;
+ (Lorg/aopalliance/intercept/MethodInvocation;)Ljava/lang/Object;
+isConnectFailure
+ (Ljava/rmi/RemoteException;)Z
+ (Ljava/rmi/RemoteException;)Z
+lookupStub
+ ()Ljava/rmi/Remote;
+ ()Ljava/rmi/Remote;
+refreshAndRetry
+ (Lorg/aopalliance/intercept/MethodInvocation;)Ljava/lang/Object;
+ (Lorg/aopalliance/intercept/MethodInvocation;)Ljava/lang/Object;
+setRegistryClientSocketFactory
+ (Ljava/rmi/server/RMIClientSocketFactory;)V
+ (Ljava/rmi/server/RMIClientSocketFactory;)V
