@@ -171,7 +171,19 @@ public abstract class EEAGenerator {
 
       // instance methods
       for (final var m : getMethods(methods, false)) {
-         eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr());
+         final var member = eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
+
+         // mark the parameter of single-parameter methods as @NonNull,
+         // if the class name matches "*Listener" and the parameter type name matches "*Event"
+         if (classInfo.isInterface() //
+            && classInfo.getName().endsWith("Listener") //
+            && m.getTypeSignatureOrTypeDescriptorStr().endsWith(")V")) {
+            final var paramInfo = m.getParameterInfo();
+            if (paramInfo.length == 1 //
+               && paramInfo[0].getTypeDescriptor().toString().endsWith("Event")) {
+               member.annotatedSignature = new ValueWithComment(insert(member.originalSignature.value, 2, "1"), null);
+            }
+         }
       }
       return eeaFile;
    }
