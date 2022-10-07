@@ -218,6 +218,7 @@ Updating EEA files will:
    |name|description|default|
    |-|-|-|
    |`packages.include`| The comma separated packages to recursively scan for class files| n/a
+   |`classes.exclude`| A comma separated list of regex patterns that are matched against fully qualified class names to exclude them from scanning| n/a
    |`action`| The default action (`validate` or `generate` to perform during `mvn compile`) | `validate`
    |`output.dir`| Path to the root directory containing the .eea files. Used for validation and generation.| `src/main/resources`
    |`input.dirs`| Comma separated additional paths of root directories containing .eea files to read null annotations from on `generate`.| n/a

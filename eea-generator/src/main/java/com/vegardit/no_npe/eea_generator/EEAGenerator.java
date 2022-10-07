@@ -13,6 +13,7 @@ import java.lang.System.Logger.Level;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.SortedMap;
 import java.util.SortedSet;
@@ -20,6 +21,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.function.Predicate;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import org.eclipse.jdt.annotation.NonNull;
@@ -52,6 +54,7 @@ public abstract class EEAGenerator {
    public static final String PROPERTY_INPUT_DIRS = "input.dirs";
    public static final String PROPERTY_OUTPUT_DIR = "output.dir";
    public static final String PROPERTY_PACKAGES_INCLUDE = "packages.include";
+   public static final String PROPERTY_CLASSES_EXCLUDE = "classes.exclude";
    public static final String PROPERTY_OMIT_REDUNDAND_ANNOTTED_SIGNATURES = "omitRedundantAnnotatedSignatures";
 
    public static class Config {
@@ -59,7 +62,7 @@ public abstract class EEAGenerator {
       /** defaults to outputDir if not set */
       public final List<Path> inputDirs = new ArrayList<>();
       public final Path outputDir;
-      public Predicate<ClassInfo> classFilter = c -> true;
+      public Predicate<ClassInfo> classFilter = clazz -> true;
       public boolean omitRedundantAnnotatedSignatures;
 
       public Config(final Path outputDir, final @NonNull String... packages) {
@@ -84,6 +87,8 @@ public abstract class EEAGenerator {
       final var props = new Props(JVM_PROPERTY_PREFIX, filePropsPath);
 
       final var packages = props.get(PROPERTY_PACKAGES_INCLUDE, null).value.split(",");
+      final var classExclusions = Arrays.stream(props.get(PROPERTY_CLASSES_EXCLUDE, "").value.split(",")) //
+         .map(Pattern::compile).toArray(Pattern[]::new);
       final var outputDirProp = props.get(PROPERTY_OUTPUT_DIR, "src/main/resources");
       var outputDir = Path.of(outputDirProp.value);
       if (outputDirProp.source instanceof Path && !outputDir.isAbsolute()) {
@@ -95,6 +100,13 @@ public abstract class EEAGenerator {
 
       final var config = new Config(outputDir, packages);
       config.omitRedundantAnnotatedSignatures = Boolean.parseBoolean(props.get(PROPERTY_OMIT_REDUNDAND_ANNOTTED_SIGNATURES, "false").value);
+      config.classFilter = clazz -> {
+         for (final var classExclusion : classExclusions) {
+            if (classExclusion.matcher(clazz.getName()).matches())
+               return false;
+         }
+         return true;
+      };
 
       final var inputDirsProp = props.get(PROPERTY_INPUT_DIRS, "");
       for (final var inputDirStr : inputDirsProp.value.split(",")) {
