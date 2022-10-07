@@ -122,6 +122,34 @@
       <build>
         <plugins>
           <plugin>
+            <!-- https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html -->
+            <!-- https://github.com/apache/felix-dev/tree/master/tools/maven-bundle-plugin -->
+            <groupId>org.apache.felix</groupId>
+            <artifactId>maven-bundle-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>manifest@process-classes</id>
+                <phase>process-classes</phase>
+                <goals>
+                  <goal>manifest</goal>
+                </goals>
+                <configuration>
+                  <!-- https://bnd.bndtools.org/chapters/825-instructions-ref.html -->
+                  <instructions>
+                    <!--
+                      Declares that this plugin exports its external annotations (.eea files) and
+                      be considered by clients performing annotation based null analysis.
+                      See https://bugs.eclipse.org/bugs/show_bug.cgi?id=526011 and
+                      https://github.com/eclipse-pde/eclipse.pde/commit/3f9f33643122a8109460e88362593d67fde42ed5
+                    -->
+                    <Eclipse-ExportExternalAnnotations>true</Eclipse-ExportExternalAnnotations>
+                  </instructions>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
             <version>3.1.0</version>
