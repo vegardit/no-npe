@@ -25,10 +25,11 @@
 
   <description>Eclipse External (null) Annotations for better static Null Analysis</description>
   <url>https://github.com/vegardit/no-npe</url>
-  <inceptionYear>2010</inceptionYear>
+  <inceptionYear>2022</inceptionYear>
   <organization>
     <!-- used as Specification/Implementation-Vendor in MANIFEST.MF -->
-    <name>No NPE!</name>
+    <name>Vegard IT GmbH, Germany</name>
+    <url>https://vegardit.com/</url>
   </organization>
   <licenses>
     <license>
@@ -76,6 +77,7 @@
     <module>eea-all</module>
   </modules>
 
+
   <scm>
     <!-- http://maven.apache.org/scm/git.html -->
     <url>https://github.com/vegardit/no-npe</url>
@@ -108,8 +110,8 @@
 
       <dependencies>
         <dependency>
-          <!-- TODO this should actually a plugin dependency of exec-maven-plugin but the classpath management
-                 of the exec:exec goal is broken, see https://github.com/mojohaus/exec-maven-plugin/issues/79 -->
+          <!-- TODO this should actually be a plugin dependency of exec-maven-plugin but the classpath management
+               of the exec:exec goal is broken, see https://github.com/mojohaus/exec-maven-plugin/issues/79 -->
           <groupId>com.vegardit.no-npe</groupId>
           <artifactId>no-npe-eea-generator</artifactId>
           <version>${project.version}</version>
