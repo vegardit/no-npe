@@ -1,0 +1,48 @@
+class org/eclipse/equinox/internal/p2/engine/InstallableUnitPhase
+
+PARM_ARTIFACT
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_INSTALL_FOLDER
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_IU
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+<init>
+ (Ljava/lang/String;IZ)V
+ (Ljava/lang/String;IZ)V
+completeOperand
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/InstallableUnitOperand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/InstallableUnitOperand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+completeOperand
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/Operand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/Operand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+getActions
+ (Lorg/eclipse/equinox/internal/p2/engine/InstallableUnitOperand;)Ljava/util/List<Lorg/eclipse/equinox/p2/engine/spi/ProvisioningAction;>;
+ (Lorg/eclipse/equinox/internal/p2/engine/InstallableUnitOperand;)Ljava/util/List<Lorg/eclipse/equinox/p2/engine/spi/ProvisioningAction;>;
+getActions
+ (Lorg/eclipse/equinox/internal/p2/engine/Operand;)Ljava/util/List<Lorg/eclipse/equinox/p2/engine/spi/ProvisioningAction;>;
+ (Lorg/eclipse/equinox/internal/p2/engine/Operand;)Ljava/util/List<Lorg/eclipse/equinox/p2/engine/spi/ProvisioningAction;>;
+getActions
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;Ljava/lang/String;)Ljava/util/List<Lorg/eclipse/equinox/p2/engine/spi/ProvisioningAction;>;
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;Ljava/lang/String;)Ljava/util/List<Lorg/eclipse/equinox/p2/engine/spi/ProvisioningAction;>;
+initializeOperand
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/InstallableUnitOperand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/InstallableUnitOperand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+initializeOperand
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/Operand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/Operand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+initializePhase
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/equinox/p2/engine/IProfile;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/equinox/p2/engine/IProfile;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/core/runtime/IStatus;
+isApplicable
+ (Lorg/eclipse/equinox/internal/p2/engine/InstallableUnitOperand;)Z
+ (Lorg/eclipse/equinox/internal/p2/engine/InstallableUnitOperand;)Z
+isApplicable
+ (Lorg/eclipse/equinox/internal/p2/engine/Operand;)Z
+ (Lorg/eclipse/equinox/internal/p2/engine/Operand;)Z

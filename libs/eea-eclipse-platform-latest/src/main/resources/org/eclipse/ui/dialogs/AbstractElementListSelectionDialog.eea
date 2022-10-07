@@ -1,0 +1,51 @@
+class org/eclipse/ui/dialogs/AbstractElementListSelectionDialog
+
+fFilteredList
+ Lorg/eclipse/ui/dialogs/FilteredList;
+ Lorg/eclipse/ui/dialogs/FilteredList;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/jface/viewers/ILabelProvider;)V
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/jface/viewers/ILabelProvider;)V
+createFilterText
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
+createFilteredList
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/dialogs/FilteredList;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/dialogs/FilteredList;
+createMessageArea
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Label;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Label;
+getFilter
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFoldedElements
+ (I)[Ljava/lang/Object;
+ (I)[Ljava/lang/Object;
+getSelectedElements
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+getSelectionIndices
+ ()[I
+ ()[I
+getValidator
+ ()Lorg/eclipse/ui/dialogs/ISelectionStatusValidator;
+ ()Lorg/eclipse/ui/dialogs/ISelectionStatusValidator;
+setEmptyListMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setEmptySelectionMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setFilter
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setListElements
+ ([Ljava/lang/Object;)V
+ ([Ljava/lang/Object;)V
+setSelection
+ ([Ljava/lang/Object;)V
+ ([Ljava/lang/Object;)V
+setValidator
+ (Lorg/eclipse/ui/dialogs/ISelectionStatusValidator;)V
+ (Lorg/eclipse/ui/dialogs/ISelectionStatusValidator;)V

@@ -1,0 +1,45 @@
+class org/eclipse/ui/internal/dialogs/ImportExportPage
+
+DIALOG_SETTING_SECTION_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/ui/IWorkbench;Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+ (Lorg/eclipse/ui/IWorkbench;Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createTreeViewer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+expandPreviouslyExpandedCategories
+ (Ljava/lang/String;Lorg/eclipse/ui/wizards/IWizardCategory;Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (Ljava/lang/String;Lorg/eclipse/ui/wizards/IWizardCategory;Lorg/eclipse/jface/viewers/TreeViewer;)V
+getNextPage
+ ()Lorg/eclipse/jface/wizard/IWizardPage;
+ ()Lorg/eclipse/jface/wizard/IWizardPage;
+getTreeViewer
+ ()Lorg/eclipse/jface/viewers/TreeViewer;
+ ()Lorg/eclipse/jface/viewers/TreeViewer;
+getTriggerPoint
+ ()Lorg/eclipse/ui/activities/ITriggerPoint;
+ ()Lorg/eclipse/ui/activities/ITriggerPoint;
+listSelectionChanged
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+selectPreviouslySelected
+ (Ljava/lang/String;Lorg/eclipse/ui/wizards/IWizardCategory;Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (Ljava/lang/String;Lorg/eclipse/ui/wizards/IWizardCategory;Lorg/eclipse/jface/viewers/TreeViewer;)V
+setTreeViewer
+ (Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (Lorg/eclipse/jface/viewers/TreeViewer;)V
+storeExpandedCategories
+ (Ljava/lang/String;Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/viewers/TreeViewer;)V
+storeSelectedCategoryAndWizard
+ (Ljava/lang/String;Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/viewers/TreeViewer;)V
+treeDoubleClicked
+ (Lorg/eclipse/jface/viewers/DoubleClickEvent;)V
+ (Lorg/eclipse/jface/viewers/DoubleClickEvent;)V

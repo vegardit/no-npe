@@ -1,0 +1,32 @@
+class org/eclipse/core/commands/contexts/ContextManager
+
+addActiveContext
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addContextManagerListener
+ (Lorg/eclipse/core/commands/contexts/IContextManagerListener;)V
+ (Lorg/eclipse/core/commands/contexts/IContextManagerListener;)V
+contextChanged
+ (Lorg/eclipse/core/commands/contexts/ContextEvent;)V
+ (Lorg/eclipse/core/commands/contexts/ContextEvent;)V
+getActiveContextIds
+ ()Ljava/util/Set;
+ ()Ljava/util/Set;
+getContext
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/contexts/Context;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/contexts/Context;
+getDefinedContextIds
+ ()Ljava/util/Set;
+ ()Ljava/util/Set;
+getDefinedContexts
+ ()[Lorg/eclipse/core/commands/contexts/Context;
+ ()[Lorg/eclipse/core/commands/contexts/Context;
+removeActiveContext
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeContextManagerListener
+ (Lorg/eclipse/core/commands/contexts/IContextManagerListener;)V
+ (Lorg/eclipse/core/commands/contexts/IContextManagerListener;)V
+setActiveContextIds
+ (Ljava/util/Set;)V
+ (Ljava/util/Set;)V

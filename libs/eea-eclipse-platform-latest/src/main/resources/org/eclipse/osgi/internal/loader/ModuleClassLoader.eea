@@ -1,0 +1,96 @@
+class org/eclipse/osgi/internal/loader/ModuleClassLoader
+
+ALLPERMISSIONS
+ Ljava/security/PermissionCollection;
+ L1java/security/PermissionCollection;
+
+<init>
+ (Ljava/lang/ClassLoader;)V
+ (Ljava/lang/ClassLoader;)V
+createClassPathEntry
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Lorg/eclipse/osgi/internal/loader/classpath/ClasspathEntry;
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Lorg/eclipse/osgi/internal/loader/classpath/ClasspathEntry;
+createProtectionDomain
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Ljava/security/ProtectionDomain;
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Ljava/security/ProtectionDomain;
+defineClass
+ (Ljava/lang/String;[BLorg/eclipse/osgi/internal/loader/classpath/ClasspathEntry;)Lorg/eclipse/osgi/internal/loader/ModuleClassLoader$DefineClassResult;
+ (Ljava/lang/String;[BLorg/eclipse/osgi/internal/loader/classpath/ClasspathEntry;)Lorg/eclipse/osgi/internal/loader/ModuleClassLoader$DefineClassResult;
+findClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+findClass
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Class<*>;
+findEntries
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/List<Ljava/net/URL;>;
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/List<Ljava/net/URL;>;
+findLibrary
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+findLocalClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+findLocalResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+findLocalResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+findResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+findResource
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/net/URL;
+findResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+getBundle
+ ()Lorg/osgi/framework/Bundle;
+ ()Lorg/osgi/framework/Bundle;
+getBundleLoader
+ ()Lorg/eclipse/osgi/internal/loader/BundleLoader;
+ ()Lorg/eclipse/osgi/internal/loader/BundleLoader;
+getClasspathManager
+ ()Lorg/eclipse/osgi/internal/loader/classpath/ClasspathManager;
+ ()Lorg/eclipse/osgi/internal/loader/classpath/ClasspathManager;
+getConfiguration
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxConfiguration;
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxConfiguration;
+getDebug
+ ()Lorg/eclipse/osgi/internal/debug/Debug;
+ ()Lorg/eclipse/osgi/internal/debug/Debug;
+getGeneration
+ ()Lorg/eclipse/osgi/storage/BundleInfo$Generation;
+ ()Lorg/eclipse/osgi/storage/BundleInfo$Generation;
+getResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+getResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+listLocalResources
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Collection<Ljava/lang/String;>;
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Collection<Ljava/lang/String;>;
+listResources
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Collection<Ljava/lang/String;>;
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Collection<Ljava/lang/String;>;
+loadClass
+ (Ljava/lang/String;Z)Ljava/lang/Class<*>;
+ (Ljava/lang/String;Z)Ljava/lang/Class<*>;
+loadFragments
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/ModuleRevision;>;)V
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/ModuleRevision;>;)V
+publicDefinePackage
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;)Ljava/lang/Package;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;)Ljava/lang/Package;
+publicFindLoaded
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+publicGetPackage
+ (Ljava/lang/String;)Ljava/lang/Package;
+ (Ljava/lang/String;)Ljava/lang/Package;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

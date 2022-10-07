@@ -1,0 +1,30 @@
+class org/eclipse/osgi/storage/url/BundleURLConnection
+
+bundleEntry
+ Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+ Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+contentType
+ Ljava/lang/String;
+ Ljava/lang/String;
+in
+ Ljava/io/InputStream;
+ Ljava/io/InputStream;
+
+<init>
+ (Ljava/net/URL;Lorg/eclipse/osgi/container/ModuleContainer;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;)V
+ (Ljava/net/URL;Lorg/eclipse/osgi/container/ModuleContainer;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;)V
+getBundle
+ ()Lorg/osgi/framework/Bundle;
+ ()Lorg/osgi/framework/Bundle;
+getContentType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFileURL
+ ()Ljava/net/URL;
+ ()Ljava/net/URL;
+getInputStream
+ ()Ljava/io/InputStream;
+ ()Ljava/io/InputStream;
+getLocalURL
+ ()Ljava/net/URL;
+ ()Ljava/net/URL;

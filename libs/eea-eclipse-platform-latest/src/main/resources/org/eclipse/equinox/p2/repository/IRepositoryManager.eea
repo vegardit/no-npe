@@ -1,0 +1,30 @@
+class org/eclipse/equinox/p2/repository/IRepositoryManager
+ <T:Ljava/lang/Object;>
+
+addRepository
+ (Ljava/net/URI;)V
+ (Ljava/net/URI;)V
+contains
+ (Ljava/net/URI;)Z
+ (Ljava/net/URI;)Z
+getAgent
+ ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+ ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+getKnownRepositories
+ (I)[Ljava/net/URI;
+ (I)[Ljava/net/URI;
+getRepositoryProperty
+ (Ljava/net/URI;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/net/URI;Ljava/lang/String;)Ljava/lang/String;
+isEnabled
+ (Ljava/net/URI;)Z
+ (Ljava/net/URI;)Z
+removeRepository
+ (Ljava/net/URI;)Z
+ (Ljava/net/URI;)Z
+setEnabled
+ (Ljava/net/URI;Z)V
+ (Ljava/net/URI;Z)V
+setRepositoryProperty
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;)V

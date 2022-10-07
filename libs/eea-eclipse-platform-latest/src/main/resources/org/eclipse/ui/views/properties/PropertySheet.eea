@@ -1,0 +1,72 @@
+class org/eclipse/ui/views/properties/PropertySheet
+
+HELP_CONTEXT_PROPERTY_SHEET_VIEW
+ Ljava/lang/String;
+ L1java/lang/String;
+
+added
+ ([Lorg/eclipse/core/runtime/IExtension;)V
+ ([Lorg/eclipse/core/runtime/IExtension;)V
+added
+ ([Lorg/eclipse/core/runtime/IExtensionPoint;)V
+ ([Lorg/eclipse/core/runtime/IExtensionPoint;)V
+createDefaultPage
+ (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+ (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createPropertySheetPage
+ (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+ (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+doCreatePage
+ (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
+ (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
+doDestroyPage
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
+getBootstrapPart
+ ()Lorg/eclipse/ui/IWorkbenchPart;
+ ()Lorg/eclipse/ui/IWorkbenchPart;
+getSaveablePart
+ ()Lorg/eclipse/ui/ISaveablePart;
+ ()Lorg/eclipse/ui/ISaveablePart;
+getShowInContext
+ ()Lorg/eclipse/ui/part/ShowInContext;
+ ()Lorg/eclipse/ui/part/ShowInContext;
+getViewAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+init
+ (Lorg/eclipse/ui/IViewSite;)V
+ (Lorg/eclipse/ui/IViewSite;)V
+isImportant
+ (Lorg/eclipse/ui/IWorkbenchPart;)Z
+ (Lorg/eclipse/ui/IWorkbenchPart;)Z
+partActivated
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+partClosed
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+partHidden
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+partVisible
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+removed
+ ([Lorg/eclipse/core/runtime/IExtension;)V
+ ([Lorg/eclipse/core/runtime/IExtension;)V
+removed
+ ([Lorg/eclipse/core/runtime/IExtensionPoint;)V
+ ([Lorg/eclipse/core/runtime/IExtensionPoint;)V
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+selectionChanged
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)V
+show
+ (Lorg/eclipse/ui/part/ShowInContext;)Z
+ (Lorg/eclipse/ui/part/ShowInContext;)Z

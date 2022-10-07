@@ -1,0 +1,178 @@
+class org/eclipse/equinox/internal/p2/metadata/InstallableUnit
+
+MEMBER_ARTIFACTS
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_COPYRIGHT
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_FILTER
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_LICENSES
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_PROFILE_PROPERTIES
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_PROPERTIES
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_PROVIDED_CAPABILITIES
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_REQUIREMENTS
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_SINGLETON
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_TOUCHPOINT_DATA
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_TOUCHPOINT_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_TRANSLATED_PROPERTIES
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_UPDATE_DESCRIPTOR
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_VERSION
+ Ljava/lang/String;
+ L1java/lang/String;
+
+contextIU
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;
+contextIU
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;
+parseFilter
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IMatchExpression<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IMatchExpression<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+
+addTouchpointData
+ (Lorg/eclipse/equinox/p2/metadata/ITouchpointData;)V
+ (Lorg/eclipse/equinox/p2/metadata/ITouchpointData;)V
+compareTo
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)I
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)I
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+getArtifacts
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
+getCopyright
+ ()Lorg/eclipse/equinox/p2/metadata/ICopyright;
+ ()Lorg/eclipse/equinox/p2/metadata/ICopyright;
+getCopyright
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/ICopyright;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/ICopyright;
+getFilter
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IMatchExpression<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IMatchExpression<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+getFragments
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnitFragment;>;
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnitFragment;>;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLicenses
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/ILicense;>;
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/ILicense;>;
+getLicenses
+ (Ljava/lang/String;)Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/ILicense;>;
+ (Ljava/lang/String;)Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/ILicense;>;
+getLocalizedProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getMember
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getMetaRequirements
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IRequirement;>;
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IRequirement;>;
+getProperties
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getProperty
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getProvidedCapabilities
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IProvidedCapability;>;
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IProvidedCapability;>;
+getRequirements
+ ()Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IRequirement;>;
+ ()Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IRequirement;>;
+getTouchpointData
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/ITouchpointData;>;
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/ITouchpointData;>;
+getTouchpointType
+ ()Lorg/eclipse/equinox/p2/metadata/ITouchpointType;
+ ()Lorg/eclipse/equinox/p2/metadata/ITouchpointType;
+getUpdateDescriptor
+ ()Lorg/eclipse/equinox/p2/metadata/IUpdateDescriptor;
+ ()Lorg/eclipse/equinox/p2/metadata/IUpdateDescriptor;
+getVersion
+ ()Lorg/eclipse/equinox/p2/metadata/Version;
+ ()Lorg/eclipse/equinox/p2/metadata/Version;
+satisfies
+ (Lorg/eclipse/equinox/p2/metadata/IRequirement;)Z
+ (Lorg/eclipse/equinox/p2/metadata/IRequirement;)Z
+setArtifacts
+ ([Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)V
+ ([Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)V
+setCapabilities
+ ([Lorg/eclipse/equinox/p2/metadata/IProvidedCapability;)V
+ ([Lorg/eclipse/equinox/p2/metadata/IProvidedCapability;)V
+setCopyright
+ (Lorg/eclipse/equinox/p2/metadata/ICopyright;)V
+ (Lorg/eclipse/equinox/p2/metadata/ICopyright;)V
+setFilter
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setFilter
+ (Lorg/eclipse/equinox/p2/metadata/expression/IMatchExpression<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+ (Lorg/eclipse/equinox/p2/metadata/expression/IMatchExpression<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+setId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setLicenses
+ ([Lorg/eclipse/equinox/p2/metadata/ILicense;)V
+ ([Lorg/eclipse/equinox/p2/metadata/ILicense;)V
+setLocalizedProperty
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+setMetaRequiredCapabilities
+ ([Lorg/eclipse/equinox/p2/metadata/IRequirement;)V
+ ([Lorg/eclipse/equinox/p2/metadata/IRequirement;)V
+setProperty
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+setRequiredCapabilities
+ ([Lorg/eclipse/equinox/p2/metadata/IRequirement;)V
+ ([Lorg/eclipse/equinox/p2/metadata/IRequirement;)V
+setTouchpointType
+ (Lorg/eclipse/equinox/p2/metadata/ITouchpointType;)V
+ (Lorg/eclipse/equinox/p2/metadata/ITouchpointType;)V
+setUpdateDescriptor
+ (Lorg/eclipse/equinox/p2/metadata/IUpdateDescriptor;)V
+ (Lorg/eclipse/equinox/p2/metadata/IUpdateDescriptor;)V
+setVersion
+ (Lorg/eclipse/equinox/p2/metadata/Version;)V
+ (Lorg/eclipse/equinox/p2/metadata/Version;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+unresolved
+ ()Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;
+ ()Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;

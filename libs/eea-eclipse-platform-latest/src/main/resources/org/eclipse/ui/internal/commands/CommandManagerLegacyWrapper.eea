@@ -1,0 +1,69 @@
+class org/eclipse/ui/internal/commands/CommandManagerLegacyWrapper
+
+DEBUG_HANDLERS_COMMAND_ID
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Lorg/eclipse/jface/bindings/BindingManager;Lorg/eclipse/core/commands/CommandManager;Lorg/eclipse/core/commands/contexts/ContextManager;)V
+ (Lorg/eclipse/jface/bindings/BindingManager;Lorg/eclipse/core/commands/CommandManager;Lorg/eclipse/core/commands/contexts/ContextManager;)V
+addCommandManagerListener
+ (Lorg/eclipse/ui/commands/ICommandManagerListener;)V
+ (Lorg/eclipse/ui/commands/ICommandManagerListener;)V
+bindingManagerChanged
+ (Lorg/eclipse/jface/bindings/BindingManagerEvent;)V
+ (Lorg/eclipse/jface/bindings/BindingManagerEvent;)V
+commandManagerChanged
+ (Lorg/eclipse/core/commands/CommandManagerEvent;)V
+ (Lorg/eclipse/core/commands/CommandManagerEvent;)V
+contextManagerChanged
+ (Lorg/eclipse/core/commands/contexts/ContextManagerEvent;)V
+ (Lorg/eclipse/core/commands/contexts/ContextManagerEvent;)V
+getActiveContextIds
+ ()Ljava/util/Set;
+ ()Ljava/util/Set;
+getActiveKeyConfigurationId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getActiveLocale
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getActivePlatform
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCategory
+ (Ljava/lang/String;)Lorg/eclipse/ui/commands/ICategory;
+ (Ljava/lang/String;)Lorg/eclipse/ui/commands/ICategory;
+getCommand
+ (Ljava/lang/String;)Lorg/eclipse/ui/commands/ICommand;
+ (Ljava/lang/String;)Lorg/eclipse/ui/commands/ICommand;
+getDefinedCategoryIds
+ ()Ljava/util/Set;
+ ()Ljava/util/Set;
+getDefinedCommandIds
+ ()Ljava/util/Set;
+ ()Ljava/util/Set;
+getDefinedKeyConfigurationIds
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getKeyConfiguration
+ (Ljava/lang/String;)Lorg/eclipse/ui/commands/IKeyConfiguration;
+ (Ljava/lang/String;)Lorg/eclipse/ui/commands/IKeyConfiguration;
+getPartialMatches
+ (Lorg/eclipse/ui/keys/KeySequence;)Ljava/util/Map<Lorg/eclipse/ui/keys/KeySequence;Lorg/eclipse/jface/bindings/Binding;>;
+ (Lorg/eclipse/ui/keys/KeySequence;)Ljava/util/Map<Lorg/eclipse/ui/keys/KeySequence;Lorg/eclipse/jface/bindings/Binding;>;
+getPerfectMatch
+ (Lorg/eclipse/ui/keys/KeySequence;)Ljava/lang/String;
+ (Lorg/eclipse/ui/keys/KeySequence;)Ljava/lang/String;
+isPartialMatch
+ (Lorg/eclipse/ui/keys/KeySequence;)Z
+ (Lorg/eclipse/ui/keys/KeySequence;)Z
+isPerfectMatch
+ (Lorg/eclipse/ui/keys/KeySequence;)Z
+ (Lorg/eclipse/ui/keys/KeySequence;)Z
+removeCommandManagerListener
+ (Lorg/eclipse/ui/commands/ICommandManagerListener;)V
+ (Lorg/eclipse/ui/commands/ICommandManagerListener;)V
+setHandlersByCommandId
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;>;)V

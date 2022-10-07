@@ -1,0 +1,27 @@
+class org/eclipse/core/resources/team/TeamHook
+
+defaultFactory
+ Lorg/eclipse/core/resources/IResourceRuleFactory;
+ Lorg/eclipse/core/resources/IResourceRuleFactory;
+
+<init>
+ (Lorg/eclipse/core/resources/IWorkspace;)V
+ (Lorg/eclipse/core/resources/IWorkspace;)V
+getRuleFactory
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/resources/IResourceRuleFactory;
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/resources/IResourceRuleFactory;
+setRuleFactory
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/resources/IResourceRuleFactory;)V
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/resources/IResourceRuleFactory;)V
+validateCreateLink
+ (Lorg/eclipse/core/resources/IFile;ILjava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IFile;ILjava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
+validateCreateLink
+ (Lorg/eclipse/core/resources/IFile;ILorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IFile;ILorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;
+validateCreateLink
+ (Lorg/eclipse/core/resources/IFolder;ILjava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IFolder;ILjava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
+validateCreateLink
+ (Lorg/eclipse/core/resources/IFolder;ILorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IFolder;ILorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;

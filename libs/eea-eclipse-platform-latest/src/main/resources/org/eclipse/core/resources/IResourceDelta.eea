@@ -1,0 +1,41 @@
+class org/eclipse/core/resources/IResourceDelta
+
+accept
+ (Lorg/eclipse/core/resources/IResourceDeltaVisitor;)V
+ (Lorg/eclipse/core/resources/IResourceDeltaVisitor;)V
+accept
+ (Lorg/eclipse/core/resources/IResourceDeltaVisitor;I)V
+ (Lorg/eclipse/core/resources/IResourceDeltaVisitor;I)V
+accept
+ (Lorg/eclipse/core/resources/IResourceDeltaVisitor;Z)V
+ (Lorg/eclipse/core/resources/IResourceDeltaVisitor;Z)V
+findMember
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IResourceDelta;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IResourceDelta;
+getAffectedChildren
+ ()[Lorg/eclipse/core/resources/IResourceDelta;
+ ()[Lorg/eclipse/core/resources/IResourceDelta;
+getAffectedChildren
+ (I)[Lorg/eclipse/core/resources/IResourceDelta;
+ (I)[Lorg/eclipse/core/resources/IResourceDelta;
+getAffectedChildren
+ (II)[Lorg/eclipse/core/resources/IResourceDelta;
+ (II)[Lorg/eclipse/core/resources/IResourceDelta;
+getFullPath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getMarkerDeltas
+ ()[Lorg/eclipse/core/resources/IMarkerDelta;
+ ()[Lorg/eclipse/core/resources/IMarkerDelta;
+getMovedFromPath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getMovedToPath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getProjectRelativePath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getResource
+ ()Lorg/eclipse/core/resources/IResource;
+ ()Lorg/eclipse/core/resources/IResource;

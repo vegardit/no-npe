@@ -1,0 +1,26 @@
+class org/eclipse/ui/IPerspectiveRegistry
+
+clonePerspective
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/ui/IPerspectiveDescriptor;)Lorg/eclipse/ui/IPerspectiveDescriptor;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/ui/IPerspectiveDescriptor;)Lorg/eclipse/ui/IPerspectiveDescriptor;
+deletePerspective
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+findPerspectiveWithId
+ (Ljava/lang/String;)Lorg/eclipse/ui/IPerspectiveDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IPerspectiveDescriptor;
+findPerspectiveWithLabel
+ (Ljava/lang/String;)Lorg/eclipse/ui/IPerspectiveDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IPerspectiveDescriptor;
+getDefaultPerspective
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPerspectives
+ ()[Lorg/eclipse/ui/IPerspectiveDescriptor;
+ ()[Lorg/eclipse/ui/IPerspectiveDescriptor;
+revertPerspective
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+setDefaultPerspective
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

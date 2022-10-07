@@ -1,0 +1,99 @@
+class org/eclipse/core/internal/resources/MarkerManager
+
+cache
+ Lorg/eclipse/core/internal/resources/MarkerTypeDefinitionCache;
+ Lorg/eclipse/core/internal/resources/MarkerTypeDefinitionCache;
+currentDeltas
+ Ljava/util/Map<Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/resources/MarkerSet;>;
+ Ljava/util/Map<Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/resources/MarkerSet;>;
+deltaManager
+ Lorg/eclipse/core/internal/resources/MarkerDeltaManager;
+ Lorg/eclipse/core/internal/resources/MarkerDeltaManager;
+workspace
+ Lorg/eclipse/core/internal/resources/Workspace;
+ Lorg/eclipse/core/internal/resources/Workspace;
+writer
+ Lorg/eclipse/core/internal/resources/MarkerWriter;
+ Lorg/eclipse/core/internal/resources/MarkerWriter;
+
+<init>
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+add
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/internal/resources/MarkerInfo;)V
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/internal/resources/MarkerInfo;)V
+basicFindMatching
+ (Lorg/eclipse/core/internal/resources/MarkerSet;Ljava/lang/String;Z)[Lorg/eclipse/core/internal/resources/MarkerInfo;
+ (Lorg/eclipse/core/internal/resources/MarkerSet;Ljava/lang/String;Z)[Lorg/eclipse/core/internal/resources/MarkerInfo;
+basicFindMaxSeverity
+ (Lorg/eclipse/core/internal/resources/MarkerSet;Ljava/lang/String;Z)I
+ (Lorg/eclipse/core/internal/resources/MarkerSet;Ljava/lang/String;Z)I
+basicRemoveMarkers
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;Lorg/eclipse/core/internal/watson/IPathRequestor;Ljava/lang/String;Z)V
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;Lorg/eclipse/core/internal/watson/IPathRequestor;Ljava/lang/String;Z)V
+buildMarkers
+ ([Lorg/eclipse/core/internal/resources/IMarkerSetElement;Lorg/eclipse/core/runtime/IPath;ILjava/util/ArrayList<Lorg/eclipse/core/resources/IMarker;>;)V
+ ([Lorg/eclipse/core/internal/resources/IMarkerSetElement;Lorg/eclipse/core/runtime/IPath;ILjava/util/ArrayList<Lorg/eclipse/core/resources/IMarker;>;)V
+changedMarkers
+ (Lorg/eclipse/core/resources/IResource;[Lorg/eclipse/core/internal/resources/IMarkerSetElement;)V
+ (Lorg/eclipse/core/resources/IResource;[Lorg/eclipse/core/internal/resources/IMarkerSetElement;)V
+doFindMarkers
+ (Lorg/eclipse/core/resources/IResource;Ljava/util/ArrayList<Lorg/eclipse/core/resources/IMarker;>;Ljava/lang/String;ZI)V
+ (Lorg/eclipse/core/resources/IResource;Ljava/util/ArrayList<Lorg/eclipse/core/resources/IMarker;>;Ljava/lang/String;ZI)V
+findMarker
+ (Lorg/eclipse/core/resources/IResource;J)Lorg/eclipse/core/resources/IMarker;
+ (Lorg/eclipse/core/resources/IResource;J)Lorg/eclipse/core/resources/IMarker;
+findMarkerInfo
+ (Lorg/eclipse/core/resources/IResource;J)Lorg/eclipse/core/internal/resources/MarkerInfo;
+ (Lorg/eclipse/core/resources/IResource;J)Lorg/eclipse/core/internal/resources/MarkerInfo;
+findMarkers
+ (Lorg/eclipse/core/resources/IResource;Ljava/lang/String;ZI)[Lorg/eclipse/core/resources/IMarker;
+ (Lorg/eclipse/core/resources/IResource;Ljava/lang/String;ZI)[Lorg/eclipse/core/resources/IMarker;
+findMaxProblemSeverity
+ (Lorg/eclipse/core/resources/IResource;Ljava/lang/String;ZI)I
+ (Lorg/eclipse/core/resources/IResource;Ljava/lang/String;ZI)I
+getMarkerDeltas
+ (J)Ljava/util/Map<Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/resources/MarkerSet;>;
+ (J)Ljava/util/Map<Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/resources/MarkerSet;>;
+isPersistent
+ (Lorg/eclipse/core/internal/resources/MarkerInfo;)Z
+ (Lorg/eclipse/core/internal/resources/MarkerInfo;)Z
+isPersistentType
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isSubtype
+ (Ljava/lang/String;Ljava/lang/String;)Z
+ (Ljava/lang/String;Ljava/lang/String;)Z
+moved
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;I)V
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;I)V
+removeMarker
+ (Lorg/eclipse/core/resources/IResource;J)V
+ (Lorg/eclipse/core/resources/IResource;J)V
+removeMarkers
+ (Lorg/eclipse/core/resources/IResource;I)V
+ (Lorg/eclipse/core/resources/IResource;I)V
+removeMarkers
+ (Lorg/eclipse/core/resources/IResource;Ljava/lang/String;ZI)V
+ (Lorg/eclipse/core/resources/IResource;Ljava/lang/String;ZI)V
+restore
+ (Lorg/eclipse/core/resources/IResource;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IResource;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+restoreFromSave
+ (Lorg/eclipse/core/resources/IResource;Z)V
+ (Lorg/eclipse/core/resources/IResource;Z)V
+restoreFromSnap
+ (Lorg/eclipse/core/resources/IResource;)V
+ (Lorg/eclipse/core/resources/IResource;)V
+save
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;Lorg/eclipse/core/internal/watson/IPathRequestor;Ljava/io/DataOutputStream;Ljava/util/List<Ljava/lang/String;>;)V
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;Lorg/eclipse/core/internal/watson/IPathRequestor;Ljava/io/DataOutputStream;Ljava/util/List<Ljava/lang/String;>;)V
+shutdown
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+snap
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;Lorg/eclipse/core/internal/watson/IPathRequestor;Ljava/io/DataOutputStream;)V
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;Lorg/eclipse/core/internal/watson/IPathRequestor;Ljava/io/DataOutputStream;)V
+startup
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V

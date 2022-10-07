@@ -1,0 +1,53 @@
+class org/eclipse/ui/texteditor/MarkerRulerAction
+
+<init>
+ (Ljava/util/ResourceBundle;Ljava/lang/String;Lorg/eclipse/jface/text/source/IVerticalRuler;Lorg/eclipse/ui/texteditor/ITextEditor;Ljava/lang/String;Z)V
+ (Ljava/util/ResourceBundle;Ljava/lang/String;Lorg/eclipse/jface/text/source/IVerticalRuler;Lorg/eclipse/ui/texteditor/ITextEditor;Ljava/lang/String;Z)V
+<init>
+ (Ljava/util/ResourceBundle;Ljava/lang/String;Lorg/eclipse/ui/texteditor/ITextEditor;Lorg/eclipse/jface/text/source/IVerticalRulerInfo;Ljava/lang/String;Z)V
+ (Ljava/util/ResourceBundle;Ljava/lang/String;Lorg/eclipse/ui/texteditor/ITextEditor;Lorg/eclipse/jface/text/source/IVerticalRulerInfo;Ljava/lang/String;Z)V
+askForLabel
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Z
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Z
+getAnnotationModel
+ ()Lorg/eclipse/ui/texteditor/AbstractMarkerAnnotationModel;
+ ()Lorg/eclipse/ui/texteditor/AbstractMarkerAnnotationModel;
+getDocument
+ ()Lorg/eclipse/jface/text/IDocument;
+ ()Lorg/eclipse/jface/text/IDocument;
+getInitialAttributes
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+getLabelProposal
+ (Lorg/eclipse/jface/text/IDocument;II)Ljava/lang/String;
+ (Lorg/eclipse/jface/text/IDocument;II)Ljava/lang/String;
+getMarkers
+ ()Ljava/util/List<Lorg/eclipse/core/resources/IMarker;>;
+ ()Ljava/util/List<Lorg/eclipse/core/resources/IMarker;>;
+getResource
+ ()Lorg/eclipse/core/resources/IResource;
+ ()Lorg/eclipse/core/resources/IResource;
+getResourceBundle
+ ()Ljava/util/ResourceBundle;
+ ()Ljava/util/ResourceBundle;
+getResourceKeyPrefix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTextEditor
+ ()Lorg/eclipse/ui/texteditor/ITextEditor;
+ ()Lorg/eclipse/ui/texteditor/ITextEditor;
+getVerticalRuler
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+getVerticalRulerInfo
+ ()Lorg/eclipse/jface/text/source/IVerticalRulerInfo;
+ ()Lorg/eclipse/jface/text/source/IVerticalRulerInfo;
+handleCoreException
+ (Lorg/eclipse/core/runtime/CoreException;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/CoreException;Ljava/lang/String;)V
+includesRulerLine
+ (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/IDocument;)Z
+ (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/IDocument;)Z
+removeMarkers
+ (Ljava/util/List<+Lorg/eclipse/core/resources/IMarker;>;)V
+ (Ljava/util/List<+Lorg/eclipse/core/resources/IMarker;>;)V

@@ -1,0 +1,46 @@
+class org/eclipse/core/internal/runtime/Activator
+
+PLUGIN_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getDefault
+ ()Lorg/eclipse/core/internal/runtime/Activator;
+ ()Lorg/eclipse/core/internal/runtime/Activator;
+getURLConverter
+ (Ljava/net/URL;)Lorg/eclipse/osgi/service/urlconversion/URLConverter;
+ (Ljava/net/URL;)Lorg/eclipse/osgi/service/urlconversion/URLConverter;
+
+getBundle
+ (Ljava/lang/String;)Lorg/osgi/framework/Bundle;
+ (Ljava/lang/String;)Lorg/osgi/framework/Bundle;
+getBundleId
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+getConfigurationLocation
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+getDebugOptions
+ ()Lorg/eclipse/osgi/service/debug/DebugOptions;
+ ()Lorg/eclipse/osgi/service/debug/DebugOptions;
+getFragments
+ (Lorg/osgi/framework/Bundle;)[Lorg/osgi/framework/Bundle;
+ (Lorg/osgi/framework/Bundle;)[Lorg/osgi/framework/Bundle;
+getFrameworkLog
+ ()Lorg/eclipse/osgi/framework/log/FrameworkLog;
+ ()Lorg/eclipse/osgi/framework/log/FrameworkLog;
+getInstallLocation
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+getInstanceLocation
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+getLocalization
+ (Lorg/osgi/framework/Bundle;Ljava/lang/String;)Ljava/util/ResourceBundle;
+ (Lorg/osgi/framework/Bundle;Ljava/lang/String;)Ljava/util/ResourceBundle;
+start
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V
+stop
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V

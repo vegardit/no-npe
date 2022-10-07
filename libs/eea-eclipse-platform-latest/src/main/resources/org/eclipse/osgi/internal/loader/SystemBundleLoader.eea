@@ -1,0 +1,33 @@
+class org/eclipse/osgi/internal/loader/SystemBundleLoader
+
+EQUINOX_EE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/osgi/container/ModuleWiring;Lorg/eclipse/osgi/internal/framework/EquinoxContainer;Ljava/lang/ClassLoader;)V
+ (Lorg/eclipse/osgi/container/ModuleWiring;Lorg/eclipse/osgi/internal/framework/EquinoxContainer;Ljava/lang/ClassLoader;)V
+findClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+findLocalClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+findLocalResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+findLocalResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+findResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+findResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+getClassLoader
+ ()Ljava/lang/ClassLoader;
+ ()Ljava/lang/ClassLoader;
+getModuleClassLoader
+ ()Lorg/eclipse/osgi/internal/loader/ModuleClassLoader;
+ ()Lorg/eclipse/osgi/internal/loader/ModuleClassLoader;

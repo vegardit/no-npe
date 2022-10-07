@@ -1,0 +1,71 @@
+class org/eclipse/ui/texteditor/DefaultMarkerAnnotationAccess
+
+BOOKMARK_SYSTEM_IMAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+ERROR_SYSTEM_IMAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+INFO_SYSTEM_IMAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+TASK_SYSTEM_IMAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+UNKNOWN
+ Ljava/lang/String;
+ L1java/lang/String;
+WARNING_SYSTEM_IMAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getSharedImageName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+
+fMarkerAnnotationPreferences
+ Lorg/eclipse/ui/texteditor/MarkerAnnotationPreferences;
+ Lorg/eclipse/ui/texteditor/MarkerAnnotationPreferences;
+
+<init>
+ (Lorg/eclipse/ui/texteditor/MarkerAnnotationPreferences;)V
+ (Lorg/eclipse/ui/texteditor/MarkerAnnotationPreferences;)V
+getAnnotationPreferenceLookup
+ ()Lorg/eclipse/ui/texteditor/AnnotationPreferenceLookup;
+ ()Lorg/eclipse/ui/texteditor/AnnotationPreferenceLookup;
+getAnnotationTypeHierarchy
+ ()Lorg/eclipse/ui/internal/texteditor/AnnotationTypeHierarchy;
+ ()Lorg/eclipse/ui/internal/texteditor/AnnotationTypeHierarchy;
+getLayer
+ (Lorg/eclipse/jface/text/source/Annotation;)I
+ (Lorg/eclipse/jface/text/source/Annotation;)I
+getSupertypes
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getType
+ (Lorg/eclipse/jface/text/source/Annotation;)Ljava/lang/Object;
+ (Lorg/eclipse/jface/text/source/Annotation;)Ljava/lang/Object;
+getTypeLabel
+ (Lorg/eclipse/jface/text/source/Annotation;)Ljava/lang/String;
+ (Lorg/eclipse/jface/text/source/Annotation;)Ljava/lang/String;
+hasQuickFix
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+isMultiLine
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+isPaintable
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+isSubtype
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+isTemporary
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+paint
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/widgets/Canvas;Lorg/eclipse/swt/graphics/Rectangle;)V
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/widgets/Canvas;Lorg/eclipse/swt/graphics/Rectangle;)V
+setQuickAssistAssistant
+ (Lorg/eclipse/jface/text/quickassist/IQuickAssistAssistant;)V
+ (Lorg/eclipse/jface/text/quickassist/IQuickAssistAssistant;)V

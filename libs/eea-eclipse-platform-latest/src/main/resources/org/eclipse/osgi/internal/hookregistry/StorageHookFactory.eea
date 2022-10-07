@@ -1,0 +1,25 @@
+class org/eclipse/osgi/internal/hookregistry/StorageHookFactory
+ <S:Ljava/lang/Object;L:Ljava/lang/Object;H:Lorg/eclipse/osgi/internal/hookregistry/StorageHookFactory$StorageHook<TS;TL;>;>
+
+KEY
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+createLoadContext
+ (I)TL;
+ (I)TL;
+createSaveContext
+ ()TS;
+ ()TS;
+createStorageHook
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;)TH;
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;)TH;
+createStorageHookAndValidateFactoryClass
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;)TH;
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;)TH;
+getKey
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+handleContentConnection
+ (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Ljava/io/InputStream;)Ljava/net/URLConnection;
+ (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Ljava/io/InputStream;)Ljava/net/URLConnection;

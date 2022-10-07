@@ -1,0 +1,29 @@
+class org/eclipse/core/internal/localstore/IHistoryStore
+
+addState
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/filesystem/IFileInfo;Z)Lorg/eclipse/core/resources/IFileState;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/filesystem/IFileInfo;Z)Lorg/eclipse/core/resources/IFileState;
+allFiles
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Set<Lorg/eclipse/core/runtime/IPath;>;
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Set<Lorg/eclipse/core/runtime/IPath;>;
+clean
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+closeHistoryStore
+ (Lorg/eclipse/core/resources/IResource;)V
+ (Lorg/eclipse/core/resources/IResource;)V
+copyHistory
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;Z)V
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;Z)V
+exists
+ (Lorg/eclipse/core/resources/IFileState;)Z
+ (Lorg/eclipse/core/resources/IFileState;)Z
+getContents
+ (Lorg/eclipse/core/resources/IFileState;)Ljava/io/InputStream;
+ (Lorg/eclipse/core/resources/IFileState;)Ljava/io/InputStream;
+getStates
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IFileState;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IFileState;
+remove
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V

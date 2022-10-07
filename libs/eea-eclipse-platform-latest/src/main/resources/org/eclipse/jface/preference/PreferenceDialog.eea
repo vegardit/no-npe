@@ -1,0 +1,129 @@
+class org/eclipse/jface/preference/PreferenceDialog
+
+PREF_DLG_IMG_TITLE_ERROR
+ Ljava/lang/String;
+ L1java/lang/String;
+PREF_DLG_TITLE_IMG
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/jface/preference/PreferenceManager;)V
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/jface/preference/PreferenceManager;)V
+addListeners
+ (Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (Lorg/eclipse/jface/viewers/TreeViewer;)V
+addPageChangedListener
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+configureShell
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+createButtonsForButtonBar
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createContents
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+createDialogArea
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+createPage
+ (Lorg/eclipse/jface/preference/IPreferenceNode;)V
+ (Lorg/eclipse/jface/preference/IPreferenceNode;)V
+createPageContainer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+createPageControl
+ (Lorg/eclipse/jface/preference/IPreferencePage;Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/jface/preference/IPreferencePage;Lorg/eclipse/swt/widgets/Composite;)V
+createSash
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/swt/widgets/Control;)Lorg/eclipse/swt/widgets/Sash;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/swt/widgets/Control;)Lorg/eclipse/swt/widgets/Sash;
+createTitleArea
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+createTreeAreaContents
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+createTreeViewer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/TreeViewer;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/TreeViewer;
+findNodeMatching
+ (Ljava/lang/String;)Lorg/eclipse/jface/preference/IPreferenceNode;
+ (Ljava/lang/String;)Lorg/eclipse/jface/preference/IPreferenceNode;
+firePageChanged
+ (Lorg/eclipse/jface/dialogs/PageChangedEvent;)V
+ (Lorg/eclipse/jface/dialogs/PageChangedEvent;)V
+getCurrentPage
+ ()Lorg/eclipse/jface/preference/IPreferencePage;
+ ()Lorg/eclipse/jface/preference/IPreferencePage;
+getPage
+ (Lorg/eclipse/jface/preference/IPreferenceNode;)Lorg/eclipse/jface/preference/IPreferencePage;
+ (Lorg/eclipse/jface/preference/IPreferenceNode;)Lorg/eclipse/jface/preference/IPreferencePage;
+getPageContainer
+ ()Lorg/eclipse/swt/widgets/Composite;
+ ()Lorg/eclipse/swt/widgets/Composite;
+getPageLayout
+ ()Lorg/eclipse/swt/widgets/Layout;
+ ()Lorg/eclipse/swt/widgets/Layout;
+getPreferenceManager
+ ()Lorg/eclipse/jface/preference/PreferenceManager;
+ ()Lorg/eclipse/jface/preference/PreferenceManager;
+getPreferenceStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+getSelectedNodePreference
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSelectedPage
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getSingleSelection
+ (Lorg/eclipse/jface/viewers/ISelection;)Lorg/eclipse/jface/preference/IPreferenceNode;
+ (Lorg/eclipse/jface/viewers/ISelection;)Lorg/eclipse/jface/preference/IPreferenceNode;
+getTreeViewer
+ ()Lorg/eclipse/jface/viewers/TreeViewer;
+ ()Lorg/eclipse/jface/viewers/TreeViewer;
+layoutTreeAreaControl
+ (Lorg/eclipse/swt/widgets/Control;)V
+ (Lorg/eclipse/swt/widgets/Control;)V
+removePageChangedListener
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+setCurrentPage
+ (Lorg/eclipse/jface/preference/IPreferencePage;)V
+ (Lorg/eclipse/jface/preference/IPreferencePage;)V
+setErrorMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setMessage
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+setMinimumPageSize
+ (Lorg/eclipse/swt/graphics/Point;)V
+ (Lorg/eclipse/swt/graphics/Point;)V
+setPageContainer
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+setPreferenceStore
+ (Lorg/eclipse/jface/preference/IPreferenceStore;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;)V
+setSelectedNode
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setSelectedNodePreference
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setTreeViewer
+ (Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (Lorg/eclipse/jface/viewers/TreeViewer;)V
+showPage
+ (Lorg/eclipse/jface/preference/IPreferenceNode;)Z
+ (Lorg/eclipse/jface/preference/IPreferenceNode;)Z
+updateTreeFont
+ (Lorg/eclipse/swt/graphics/Font;)V
+ (Lorg/eclipse/swt/graphics/Font;)V

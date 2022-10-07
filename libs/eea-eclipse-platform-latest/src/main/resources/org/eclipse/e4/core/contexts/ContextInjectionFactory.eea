@@ -1,0 +1,29 @@
+class org/eclipse/e4/core/contexts/ContextInjectionFactory
+
+inject
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+inject
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+invoke
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+invoke
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;Ljava/lang/Object;)Ljava/lang/Object;
+invoke
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/core/contexts/IEclipseContext;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/core/contexts/IEclipseContext;Ljava/lang/Object;)Ljava/lang/Object;
+make
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;)TT;
+make
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/core/contexts/IEclipseContext;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/core/contexts/IEclipseContext;)TT;
+setDefault
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+uninject
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V

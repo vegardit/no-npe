@@ -1,0 +1,86 @@
+class org/eclipse/ui/internal/preferences/WorkingCopyPreferences
+
+<init>
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;Lorg/eclipse/ui/preferences/WorkingCopyManager;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;Lorg/eclipse/ui/preferences/WorkingCopyManager;)V
+absolutePath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+accept
+ (Lorg/eclipse/core/runtime/preferences/IPreferenceNodeVisitor;)V
+ (Lorg/eclipse/core/runtime/preferences/IPreferenceNodeVisitor;)V
+addNodeChangeListener
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+addPreferenceChangeListener
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+childrenNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+get
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getBoolean
+ (Ljava/lang/String;Z)Z
+ (Ljava/lang/String;Z)Z
+getByteArray
+ (Ljava/lang/String;[B)[B
+ (Ljava/lang/String;[B)[B
+getDouble
+ (Ljava/lang/String;D)D
+ (Ljava/lang/String;D)D
+getFloat
+ (Ljava/lang/String;F)F
+ (Ljava/lang/String;F)F
+getInt
+ (Ljava/lang/String;I)I
+ (Ljava/lang/String;I)I
+getLong
+ (Ljava/lang/String;J)J
+ (Ljava/lang/String;J)J
+keys
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+name
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+node
+ (Ljava/lang/String;)Lorg/osgi/service/prefs/Preferences;
+ (Ljava/lang/String;)Lorg/osgi/service/prefs/Preferences;
+nodeExists
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+parent
+ ()Lorg/osgi/service/prefs/Preferences;
+ ()Lorg/osgi/service/prefs/Preferences;
+put
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+putBoolean
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+putByteArray
+ (Ljava/lang/String;[B)V
+ (Ljava/lang/String;[B)V
+putDouble
+ (Ljava/lang/String;D)V
+ (Ljava/lang/String;D)V
+putFloat
+ (Ljava/lang/String;F)V
+ (Ljava/lang/String;F)V
+putInt
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+putLong
+ (Ljava/lang/String;J)V
+ (Ljava/lang/String;J)V
+remove
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeNodeChangeListener
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+removePreferenceChangeListener
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V

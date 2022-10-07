@@ -1,0 +1,33 @@
+class org/eclipse/jface/text/rules/DefaultDamagerRepairer
+
+fDefaultTextAttribute
+ Lorg/eclipse/jface/text/TextAttribute;
+ Lorg/eclipse/jface/text/TextAttribute;
+fDocument
+ Lorg/eclipse/jface/text/IDocument;
+ Lorg/eclipse/jface/text/IDocument;
+fScanner
+ Lorg/eclipse/jface/text/rules/ITokenScanner;
+ Lorg/eclipse/jface/text/rules/ITokenScanner;
+
+<init>
+ (Lorg/eclipse/jface/text/rules/ITokenScanner;)V
+ (Lorg/eclipse/jface/text/rules/ITokenScanner;)V
+<init>
+ (Lorg/eclipse/jface/text/rules/ITokenScanner;Lorg/eclipse/jface/text/TextAttribute;)V
+ (Lorg/eclipse/jface/text/rules/ITokenScanner;Lorg/eclipse/jface/text/TextAttribute;)V
+addRange
+ (Lorg/eclipse/jface/text/TextPresentation;IILorg/eclipse/jface/text/TextAttribute;)V
+ (Lorg/eclipse/jface/text/TextPresentation;IILorg/eclipse/jface/text/TextAttribute;)V
+createPresentation
+ (Lorg/eclipse/jface/text/TextPresentation;Lorg/eclipse/jface/text/ITypedRegion;)V
+ (Lorg/eclipse/jface/text/TextPresentation;Lorg/eclipse/jface/text/ITypedRegion;)V
+getDamageRegion
+ (Lorg/eclipse/jface/text/ITypedRegion;Lorg/eclipse/jface/text/DocumentEvent;Z)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/ITypedRegion;Lorg/eclipse/jface/text/DocumentEvent;Z)Lorg/eclipse/jface/text/IRegion;
+getTokenTextAttribute
+ (Lorg/eclipse/jface/text/rules/IToken;)Lorg/eclipse/jface/text/TextAttribute;
+ (Lorg/eclipse/jface/text/rules/IToken;)Lorg/eclipse/jface/text/TextAttribute;
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V

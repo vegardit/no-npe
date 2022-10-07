@@ -1,0 +1,103 @@
+class org/eclipse/core/internal/watson/ElementTree
+
+findOldest
+ ([Lorg/eclipse/core/internal/watson/ElementTree;)I
+ ([Lorg/eclipse/core/internal/watson/ElementTree;)I
+hasChanges
+ (Lorg/eclipse/core/internal/watson/ElementTree;Lorg/eclipse/core/internal/watson/ElementTree;Lorg/eclipse/core/internal/watson/IElementComparator;Z)Z
+ (Lorg/eclipse/core/internal/watson/ElementTree;Lorg/eclipse/core/internal/watson/ElementTree;Lorg/eclipse/core/internal/watson/IElementComparator;Z)Z
+
+tree
+ Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+userData
+ Lorg/eclipse/core/internal/watson/IElementTreeData;
+ Lorg/eclipse/core/internal/watson/IElementTreeData;
+
+<init>
+ (Lorg/eclipse/core/internal/dtree/DataTreeNode;)V
+ (Lorg/eclipse/core/internal/dtree/DataTreeNode;)V
+<init>
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)V
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)V
+<init>
+ (Lorg/eclipse/core/internal/watson/ElementTree;)V
+ (Lorg/eclipse/core/internal/watson/ElementTree;)V
+collapseTo
+ (Lorg/eclipse/core/internal/watson/ElementTree;)Lorg/eclipse/core/internal/watson/ElementTree;
+ (Lorg/eclipse/core/internal/watson/ElementTree;)Lorg/eclipse/core/internal/watson/ElementTree;
+createElement
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)V
+createSubtree
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/watson/ElementTree;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/watson/ElementTree;)V
+deleteElement
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+elementNotFound
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+getChildCount
+ (Lorg/eclipse/core/runtime/IPath;)I
+ (Lorg/eclipse/core/runtime/IPath;)I
+getChildIDs
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/runtime/IPath;
+getChildren
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/runtime/IPath;
+getDataTree
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+getElementData
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/lang/Object;
+getElementDataIgnoreCase
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/lang/Object;
+getNamesOfChildren
+ (Lorg/eclipse/core/runtime/IPath;)[Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IPath;)[Ljava/lang/String;
+getParent
+ ()Lorg/eclipse/core/internal/watson/ElementTree;
+ ()Lorg/eclipse/core/internal/watson/ElementTree;
+getRoot
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getSubtree
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/watson/ElementTree;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/watson/ElementTree;
+getTreeData
+ ()Lorg/eclipse/core/internal/watson/IElementTreeData;
+ ()Lorg/eclipse/core/internal/watson/IElementTreeData;
+includes
+ (Lorg/eclipse/core/runtime/IPath;)Z
+ (Lorg/eclipse/core/runtime/IPath;)Z
+includesIgnoreCase
+ (Lorg/eclipse/core/runtime/IPath;)Z
+ (Lorg/eclipse/core/runtime/IPath;)Z
+mergeDeltaChain
+ (Lorg/eclipse/core/runtime/IPath;[Lorg/eclipse/core/internal/watson/ElementTree;)Lorg/eclipse/core/internal/watson/ElementTree;
+ (Lorg/eclipse/core/runtime/IPath;[Lorg/eclipse/core/internal/watson/ElementTree;)Lorg/eclipse/core/internal/watson/ElementTree;
+newEmptyDelta
+ ()Lorg/eclipse/core/internal/watson/ElementTree;
+ ()Lorg/eclipse/core/internal/watson/ElementTree;
+openElementData
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/lang/Object;
+setElementData
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)V
+setTreeData
+ (Lorg/eclipse/core/internal/watson/IElementTreeData;)V
+ (Lorg/eclipse/core/internal/watson/IElementTreeData;)V
+shareStrings
+ (Lorg/eclipse/core/internal/utils/StringPool;)V
+ (Lorg/eclipse/core/internal/utils/StringPool;)V
+toDebugString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

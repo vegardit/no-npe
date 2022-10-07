@@ -1,0 +1,30 @@
+class org/eclipse/equinox/internal/p2/artifact/repository/simple/BlobStore
+
+store
+ Ljava/net/URI;
+ Ljava/net/URI;
+
+<init>
+ (Ljava/net/URI;I)V
+ (Ljava/net/URI;I)V
+deleteBlob
+ ([B)V
+ ([B)V
+deleteBlobs
+ (Ljava/util/Set<[B>;)V
+ (Ljava/util/Set<[B>;)V
+fileFor
+ ([B)Ljava/net/URI;
+ ([B)Ljava/net/URI;
+folderFor
+ ([B)Ljava/net/URI;
+ ([B)Ljava/net/URI;
+getBlob
+ ([B)Ljava/io/InputStream;
+ ([B)Ljava/io/InputStream;
+getOutputStream
+ ([B)Ljava/io/OutputStream;
+ ([B)Ljava/io/OutputStream;
+hashUUIDbytes
+ ([B)B
+ ([B)B

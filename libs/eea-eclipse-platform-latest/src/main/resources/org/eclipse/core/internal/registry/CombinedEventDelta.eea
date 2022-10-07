@@ -1,0 +1,30 @@
+class org/eclipse/core/internal/registry/CombinedEventDelta
+
+recordAddition
+ ()Lorg/eclipse/core/internal/registry/CombinedEventDelta;
+ ()Lorg/eclipse/core/internal/registry/CombinedEventDelta;
+recordRemoval
+ ()Lorg/eclipse/core/internal/registry/CombinedEventDelta;
+ ()Lorg/eclipse/core/internal/registry/CombinedEventDelta;
+
+getExtensionPoints
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtensionPoint;
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtensionPoint;
+getExtensions
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtension;
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtension;
+getObjectManager
+ ()Lorg/eclipse/core/internal/registry/IObjectManager;
+ ()Lorg/eclipse/core/internal/registry/IObjectManager;
+rememberExtension
+ (Lorg/eclipse/core/internal/registry/ExtensionPoint;I)V
+ (Lorg/eclipse/core/internal/registry/ExtensionPoint;I)V
+rememberExtensionPoint
+ (Lorg/eclipse/core/internal/registry/ExtensionPoint;)V
+ (Lorg/eclipse/core/internal/registry/ExtensionPoint;)V
+rememberExtensions
+ (Lorg/eclipse/core/internal/registry/ExtensionPoint;[I)V
+ (Lorg/eclipse/core/internal/registry/ExtensionPoint;[I)V
+setObjectManager
+ (Lorg/eclipse/core/internal/registry/IObjectManager;)V
+ (Lorg/eclipse/core/internal/registry/IObjectManager;)V

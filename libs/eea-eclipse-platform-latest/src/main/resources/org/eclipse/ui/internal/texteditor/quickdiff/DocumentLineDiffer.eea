@@ -1,0 +1,44 @@
+class org/eclipse/ui/internal/texteditor/quickdiff/DocumentLineDiffer
+
+addAnnotation
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;)V
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;)V
+addAnnotationModelListener
+ (Lorg/eclipse/jface/text/source/IAnnotationModelListener;)V
+ (Lorg/eclipse/jface/text/source/IAnnotationModelListener;)V
+connect
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+disconnect
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+documentAboutToBeChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+documentChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+fireModelChanged
+ (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
+ (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
+getAnnotationIterator
+ ()Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
+ ()Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
+getLineInfo
+ (I)Lorg/eclipse/jface/text/source/ILineDiffInfo;
+ (I)Lorg/eclipse/jface/text/source/ILineDiffInfo;
+getPosition
+ (Lorg/eclipse/jface/text/source/Annotation;)Lorg/eclipse/jface/text/Position;
+ (Lorg/eclipse/jface/text/source/Annotation;)Lorg/eclipse/jface/text/Position;
+getReferenceProvider
+ ()Lorg/eclipse/ui/texteditor/quickdiff/IQuickDiffReferenceProvider;
+ ()Lorg/eclipse/ui/texteditor/quickdiff/IQuickDiffReferenceProvider;
+removeAnnotation
+ (Lorg/eclipse/jface/text/source/Annotation;)V
+ (Lorg/eclipse/jface/text/source/Annotation;)V
+removeAnnotationModelListener
+ (Lorg/eclipse/jface/text/source/IAnnotationModelListener;)V
+ (Lorg/eclipse/jface/text/source/IAnnotationModelListener;)V
+setReferenceProvider
+ (Lorg/eclipse/ui/texteditor/quickdiff/IQuickDiffReferenceProvider;)V
+ (Lorg/eclipse/ui/texteditor/quickdiff/IQuickDiffReferenceProvider;)V

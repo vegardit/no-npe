@@ -1,0 +1,28 @@
+class org/eclipse/ui/actions/MoveResourceAction
+
+ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+destinations
+ Ljava/util/List;
+ Ljava/util/List;
+
+<init>
+ (Lorg/eclipse/jface/window/IShellProvider;)V
+ (Lorg/eclipse/jface/window/IShellProvider;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+createOperation
+ ()Lorg/eclipse/ui/actions/CopyFilesAndFoldersOperation;
+ ()Lorg/eclipse/ui/actions/CopyFilesAndFoldersOperation;
+getDestinations
+ ()Ljava/util/List;
+ ()Ljava/util/List;
+getResources
+ (Ljava/util/List;)[Lorg/eclipse/core/resources/IResource;
+ (Ljava/util/List;)[Lorg/eclipse/core/resources/IResource;
+runOperation
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)V
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)V

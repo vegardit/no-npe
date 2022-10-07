@@ -1,0 +1,38 @@
+class org/eclipse/core/runtime/content/IContentType
+
+getBaseType
+ ()Lorg/eclipse/core/runtime/content/IContentType;
+ ()Lorg/eclipse/core/runtime/content/IContentType;
+getDefaultCharset
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDefaultDescription
+ ()Lorg/eclipse/core/runtime/content/IContentDescription;
+ ()Lorg/eclipse/core/runtime/content/IContentDescription;
+getDescriptionFor
+ (Ljava/io/InputStream;[Lorg/eclipse/core/runtime/QualifiedName;)Lorg/eclipse/core/runtime/content/IContentDescription;
+ (Ljava/io/InputStream;[Lorg/eclipse/core/runtime/QualifiedName;)Lorg/eclipse/core/runtime/content/IContentDescription;
+getDescriptionFor
+ (Ljava/io/Reader;[Lorg/eclipse/core/runtime/QualifiedName;)Lorg/eclipse/core/runtime/content/IContentDescription;
+ (Ljava/io/Reader;[Lorg/eclipse/core/runtime/QualifiedName;)Lorg/eclipse/core/runtime/content/IContentDescription;
+getFileSpecs
+ (I)[Ljava/lang/String;
+ (I)[Ljava/lang/String;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSettings
+ (Lorg/eclipse/core/runtime/preferences/IScopeContext;)Lorg/eclipse/core/runtime/content/IContentTypeSettings;
+ (Lorg/eclipse/core/runtime/preferences/IScopeContext;)Lorg/eclipse/core/runtime/content/IContentTypeSettings;
+isAssociatedWith
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isAssociatedWith
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IScopeContext;)Z
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IScopeContext;)Z
+isKindOf
+ (Lorg/eclipse/core/runtime/content/IContentType;)Z
+ (Lorg/eclipse/core/runtime/content/IContentType;)Z

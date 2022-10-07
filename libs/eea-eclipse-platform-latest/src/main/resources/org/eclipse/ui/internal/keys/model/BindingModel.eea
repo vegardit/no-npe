@@ -1,0 +1,57 @@
+class org/eclipse/ui/internal/keys/model/BindingModel
+
+PROP_BINDINGS
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_BINDING_ADD
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_BINDING_ELEMENT_MAP
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_BINDING_FILTER
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_BINDING_REMOVE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_CONFLICT_ELEMENT_MAP
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/ui/internal/keys/model/KeyController;)V
+ (Lorg/eclipse/ui/internal/keys/model/KeyController;)V
+copy
+ (Lorg/eclipse/ui/internal/keys/model/BindingElement;)V
+ (Lorg/eclipse/ui/internal/keys/model/BindingElement;)V
+getBindingToElement
+ ()Ljava/util/Map<Lorg/eclipse/jface/bindings/Binding;Lorg/eclipse/ui/internal/keys/model/BindingElement;>;
+ ()Ljava/util/Map<Lorg/eclipse/jface/bindings/Binding;Lorg/eclipse/ui/internal/keys/model/BindingElement;>;
+getBindings
+ ()Ljava/util/HashSet<Lorg/eclipse/ui/internal/keys/model/BindingElement;>;
+ ()Ljava/util/HashSet<Lorg/eclipse/ui/internal/keys/model/BindingElement;>;
+getCommandToElement
+ ()Ljava/util/Map<Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/ui/internal/keys/model/BindingElement;>;
+ ()Ljava/util/Map<Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/ui/internal/keys/model/BindingElement;>;
+init
+ (Lorg/eclipse/ui/services/IServiceLocator;Lorg/eclipse/jface/bindings/BindingManager;Lorg/eclipse/ui/internal/keys/model/ContextModel;)V
+ (Lorg/eclipse/ui/services/IServiceLocator;Lorg/eclipse/jface/bindings/BindingManager;Lorg/eclipse/ui/internal/keys/model/ContextModel;)V
+refresh
+ (Lorg/eclipse/ui/internal/keys/model/ContextModel;)V
+ (Lorg/eclipse/ui/internal/keys/model/ContextModel;)V
+remove
+ (Lorg/eclipse/ui/internal/keys/model/BindingElement;)V
+ (Lorg/eclipse/ui/internal/keys/model/BindingElement;)V
+restoreBinding
+ (Lorg/eclipse/ui/internal/keys/model/BindingElement;)V
+ (Lorg/eclipse/ui/internal/keys/model/BindingElement;)V
+restoreBinding
+ (Lorg/eclipse/ui/internal/keys/model/ContextModel;)V
+ (Lorg/eclipse/ui/internal/keys/model/ContextModel;)V
+setBindingToElement
+ (Ljava/util/Map<Lorg/eclipse/jface/bindings/Binding;Lorg/eclipse/ui/internal/keys/model/BindingElement;>;)V
+ (Ljava/util/Map<Lorg/eclipse/jface/bindings/Binding;Lorg/eclipse/ui/internal/keys/model/BindingElement;>;)V
+setBindings
+ (Ljava/util/HashSet<Lorg/eclipse/ui/internal/keys/model/BindingElement;>;)V
+ (Ljava/util/HashSet<Lorg/eclipse/ui/internal/keys/model/BindingElement;>;)V

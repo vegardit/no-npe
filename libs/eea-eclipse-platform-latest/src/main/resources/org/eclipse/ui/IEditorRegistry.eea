@@ -1,0 +1,54 @@
+class org/eclipse/ui/IEditorRegistry
+
+SYSTEM_EXTERNAL_EDITOR_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+SYSTEM_INPLACE_EDITOR_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addPropertyListener
+ (Lorg/eclipse/ui/IPropertyListener;)V
+ (Lorg/eclipse/ui/IPropertyListener;)V
+findEditor
+ (Ljava/lang/String;)Lorg/eclipse/ui/IEditorDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IEditorDescriptor;
+getDefaultEditor
+ ()Lorg/eclipse/ui/IEditorDescriptor;
+ ()Lorg/eclipse/ui/IEditorDescriptor;
+getDefaultEditor
+ (Ljava/lang/String;)Lorg/eclipse/ui/IEditorDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IEditorDescriptor;
+getDefaultEditor
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/content/IContentType;)Lorg/eclipse/ui/IEditorDescriptor;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/content/IContentType;)Lorg/eclipse/ui/IEditorDescriptor;
+getEditors
+ (Ljava/lang/String;)[Lorg/eclipse/ui/IEditorDescriptor;
+ (Ljava/lang/String;)[Lorg/eclipse/ui/IEditorDescriptor;
+getEditors
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/content/IContentType;)[Lorg/eclipse/ui/IEditorDescriptor;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/content/IContentType;)[Lorg/eclipse/ui/IEditorDescriptor;
+getFileEditorMappings
+ ()[Lorg/eclipse/ui/IFileEditorMapping;
+ ()[Lorg/eclipse/ui/IFileEditorMapping;
+getImageDescriptor
+ (Ljava/lang/String;)Lorg/eclipse/jface/resource/ImageDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/jface/resource/ImageDescriptor;
+getImageDescriptor
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/content/IContentType;)Lorg/eclipse/jface/resource/ImageDescriptor;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/content/IContentType;)Lorg/eclipse/jface/resource/ImageDescriptor;
+getSystemExternalEditorImageDescriptor
+ (Ljava/lang/String;)Lorg/eclipse/jface/resource/ImageDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/jface/resource/ImageDescriptor;
+isSystemExternalEditorAvailable
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isSystemInPlaceEditorAvailable
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removePropertyListener
+ (Lorg/eclipse/ui/IPropertyListener;)V
+ (Lorg/eclipse/ui/IPropertyListener;)V
+setDefaultEditor
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V

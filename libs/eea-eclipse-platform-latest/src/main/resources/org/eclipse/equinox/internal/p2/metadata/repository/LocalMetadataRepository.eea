@@ -1,0 +1,58 @@
+class org/eclipse/equinox/internal/p2/metadata/repository/LocalMetadataRepository
+
+getActualLocation
+ (Ljava/net/URI;)Ljava/io/File;
+ (Ljava/net/URI;)Ljava/io/File;
+
+repositories
+ Ljava/util/HashSet<Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;
+ Ljava/util/HashSet<Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;
+units
+ Lorg/eclipse/equinox/internal/p2/metadata/IUMap;
+ Lorg/eclipse/equinox/internal/p2/metadata/IUMap;
+
+<init>
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+<init>
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;Ljava/net/URI;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;Ljava/net/URI;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+addInstallableUnits
+ (Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+ (Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+addReferences
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;)V
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;)V
+compress
+ (Lorg/eclipse/equinox/p2/core/IPool<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+ (Lorg/eclipse/equinox/p2/core/IPool<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+everything
+ ()Ljava/util/Iterator<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ ()Ljava/util/Iterator<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+executeBatch
+ (Lorg/eclipse/equinox/p2/repository/IRunnableWithProgress;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/repository/IRunnableWithProgress;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+getIndex
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/index/IIndex<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/index/IIndex<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+getManagedProperty
+ (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+getReferences
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;
+initialize
+ (Lorg/eclipse/equinox/p2/repository/metadata/spi/AbstractMetadataRepository$RepositoryState;)V
+ (Lorg/eclipse/equinox/p2/repository/metadata/spi/AbstractMetadataRepository$RepositoryState;)V
+initializeAfterLoad
+ (Ljava/net/URI;)V
+ (Ljava/net/URI;)V
+query
+ (Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryResult<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryResult<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+removeInstallableUnits
+ (Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)Z
+ (Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)Z
+setProperty
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;

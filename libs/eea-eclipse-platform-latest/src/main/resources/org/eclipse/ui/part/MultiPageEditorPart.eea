@@ -1,0 +1,80 @@
+class org/eclipse/ui/part/MultiPageEditorPart
+
+addPage
+ (ILorg/eclipse/swt/widgets/Control;)V
+ (ILorg/eclipse/swt/widgets/Control;)V
+addPage
+ (ILorg/eclipse/ui/IEditorPart;Lorg/eclipse/ui/IEditorInput;)V
+ (ILorg/eclipse/ui/IEditorPart;Lorg/eclipse/ui/IEditorInput;)V
+addPage
+ (Lorg/eclipse/swt/widgets/Control;)I
+ (Lorg/eclipse/swt/widgets/Control;)I
+addPage
+ (Lorg/eclipse/ui/IEditorPart;Lorg/eclipse/ui/IEditorInput;)I
+ (Lorg/eclipse/ui/IEditorPart;Lorg/eclipse/ui/IEditorInput;)I
+addPageChangedListener
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+createContainer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/custom/CTabFolder;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/custom/CTabFolder;
+createItem
+ (ILorg/eclipse/swt/widgets/Control;)Lorg/eclipse/swt/custom/CTabItem;
+ (ILorg/eclipse/swt/widgets/Control;)Lorg/eclipse/swt/custom/CTabItem;
+createPageContainer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createSite
+ (Lorg/eclipse/ui/IEditorPart;)Lorg/eclipse/ui/IEditorSite;
+ (Lorg/eclipse/ui/IEditorPart;)Lorg/eclipse/ui/IEditorSite;
+findEditors
+ (Lorg/eclipse/ui/IEditorInput;)[Lorg/eclipse/ui/IEditorPart;
+ (Lorg/eclipse/ui/IEditorInput;)[Lorg/eclipse/ui/IEditorPart;
+getActiveEditor
+ ()Lorg/eclipse/ui/IEditorPart;
+ ()Lorg/eclipse/ui/IEditorPart;
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getContainer
+ ()Lorg/eclipse/swt/widgets/Composite;
+ ()Lorg/eclipse/swt/widgets/Composite;
+getControl
+ (I)Lorg/eclipse/swt/widgets/Control;
+ (I)Lorg/eclipse/swt/widgets/Control;
+getEditor
+ (I)Lorg/eclipse/ui/IEditorPart;
+ (I)Lorg/eclipse/ui/IEditorPart;
+getPageImage
+ (I)Lorg/eclipse/swt/graphics/Image;
+ (I)Lorg/eclipse/swt/graphics/Image;
+getPageSite
+ (I)Lorg/eclipse/ui/services/IServiceLocator;
+ (I)Lorg/eclipse/ui/services/IServiceLocator;
+getPageText
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;
+getSelectedPage
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+init
+ (Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
+removePageChangedListener
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+setActiveEditor
+ (Lorg/eclipse/ui/IEditorPart;)V
+ (Lorg/eclipse/ui/IEditorPart;)V
+setControl
+ (ILorg/eclipse/swt/widgets/Control;)V
+ (ILorg/eclipse/swt/widgets/Control;)V
+setPageImage
+ (ILorg/eclipse/swt/graphics/Image;)V
+ (ILorg/eclipse/swt/graphics/Image;)V
+setPageText
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V

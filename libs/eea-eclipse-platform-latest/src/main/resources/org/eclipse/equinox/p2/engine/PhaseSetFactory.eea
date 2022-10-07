@@ -1,0 +1,36 @@
+class org/eclipse/equinox/p2/engine/PhaseSetFactory
+
+PHASE_CHECK_TRUST
+ Ljava/lang/String;
+ Ljava/lang/String;
+PHASE_COLLECT
+ Ljava/lang/String;
+ Ljava/lang/String;
+PHASE_CONFIGURE
+ Ljava/lang/String;
+ Ljava/lang/String;
+PHASE_INSTALL
+ Ljava/lang/String;
+ Ljava/lang/String;
+PHASE_PROPERTY
+ Ljava/lang/String;
+ Ljava/lang/String;
+PHASE_UNCONFIGURE
+ Ljava/lang/String;
+ Ljava/lang/String;
+PHASE_UNINSTALL
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+createDefaultPhaseSet
+ ()Lorg/eclipse/equinox/p2/engine/IPhaseSet;
+ ()Lorg/eclipse/equinox/p2/engine/IPhaseSet;
+createDefaultPhaseSetExcluding
+ ([Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IPhaseSet;
+ ([Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IPhaseSet;
+createPhaseSetIncluding
+ ([Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IPhaseSet;
+ ([Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IPhaseSet;
+createSizingPhaseSet
+ ()Lorg/eclipse/equinox/p2/engine/ISizingPhaseSet;
+ ()Lorg/eclipse/equinox/p2/engine/ISizingPhaseSet;

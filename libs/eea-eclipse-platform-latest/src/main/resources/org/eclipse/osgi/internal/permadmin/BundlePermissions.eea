@@ -1,0 +1,20 @@
+class org/eclipse/osgi/internal/permadmin/BundlePermissions
+
+<init>
+ (Lorg/osgi/framework/Bundle;Lorg/eclipse/osgi/internal/permadmin/SecurityAdmin;Lorg/eclipse/osgi/internal/permadmin/PermissionInfoCollection;Lorg/eclipse/osgi/internal/permadmin/PermissionInfoCollection;)V
+ (Lorg/osgi/framework/Bundle;Lorg/eclipse/osgi/internal/permadmin/SecurityAdmin;Lorg/eclipse/osgi/internal/permadmin/PermissionInfoCollection;Lorg/eclipse/osgi/internal/permadmin/PermissionInfoCollection;)V
+add
+ (Ljava/security/Permission;)V
+ (Ljava/security/Permission;)V
+addWovenPermission
+ (Lorg/osgi/framework/PackagePermission;)V
+ (Lorg/osgi/framework/PackagePermission;)V
+elements
+ ()Ljava/util/Enumeration<Ljava/security/Permission;>;
+ ()Ljava/util/Enumeration<Ljava/security/Permission;>;
+getBundle
+ ()Lorg/osgi/framework/Bundle;
+ ()Lorg/osgi/framework/Bundle;
+implies
+ (Ljava/security/Permission;)Z
+ (Ljava/security/Permission;)Z

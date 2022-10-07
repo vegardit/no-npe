@@ -1,0 +1,224 @@
+class org/eclipse/jface/viewers/StructuredViewer
+
+addDoubleClickListener
+ (Lorg/eclipse/jface/viewers/IDoubleClickListener;)V
+ (Lorg/eclipse/jface/viewers/IDoubleClickListener;)V
+addDragSupport
+ (I[Lorg/eclipse/swt/dnd/Transfer;Lorg/eclipse/swt/dnd/DragSourceListener;)V
+ (I[Lorg/eclipse/swt/dnd/Transfer;Lorg/eclipse/swt/dnd/DragSourceListener;)V
+addDropSupport
+ (I[Lorg/eclipse/swt/dnd/Transfer;Lorg/eclipse/swt/dnd/DropTargetListener;)V
+ (I[Lorg/eclipse/swt/dnd/Transfer;Lorg/eclipse/swt/dnd/DropTargetListener;)V
+addFilter
+ (Lorg/eclipse/jface/viewers/ViewerFilter;)V
+ (Lorg/eclipse/jface/viewers/ViewerFilter;)V
+addOpenListener
+ (Lorg/eclipse/jface/viewers/IOpenListener;)V
+ (Lorg/eclipse/jface/viewers/IOpenListener;)V
+addPostSelectionChangedListener
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+assertContentProviderType
+ (Lorg/eclipse/jface/viewers/IContentProvider;)V
+ (Lorg/eclipse/jface/viewers/IContentProvider;)V
+assertElementsNotNull
+ ([Ljava/lang/Object;)V
+ ([Ljava/lang/Object;)V
+associate
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Item;)V
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Item;)V
+buildLabel
+ (Lorg/eclipse/jface/viewers/ViewerLabel;Ljava/lang/Object;)V
+ (Lorg/eclipse/jface/viewers/ViewerLabel;Ljava/lang/Object;)V
+disassociate
+ (Lorg/eclipse/swt/widgets/Item;)V
+ (Lorg/eclipse/swt/widgets/Item;)V
+doFindInputItem
+ (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
+doFindItem
+ (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
+doUpdateItem
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;Z)V
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;Z)V
+equals
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+filter
+ ([Ljava/lang/Object;)[Ljava/lang/Object;
+ ([Ljava/lang/Object;)[Ljava/lang/Object;
+findItem
+ (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
+findItems
+ (Ljava/lang/Object;)[Lorg/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;)[Lorg/eclipse/swt/widgets/Widget;
+fireDoubleClick
+ (Lorg/eclipse/jface/viewers/DoubleClickEvent;)V
+ (Lorg/eclipse/jface/viewers/DoubleClickEvent;)V
+fireOpen
+ (Lorg/eclipse/jface/viewers/OpenEvent;)V
+ (Lorg/eclipse/jface/viewers/OpenEvent;)V
+firePostSelectionChanged
+ (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
+ (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
+getColorAndFontCollector
+ ()Lorg/eclipse/jface/viewers/StructuredViewer$ColorAndFontCollector;
+ ()Lorg/eclipse/jface/viewers/StructuredViewer$ColorAndFontCollector;
+getComparator
+ ()Lorg/eclipse/jface/viewers/ViewerComparator;
+ ()Lorg/eclipse/jface/viewers/ViewerComparator;
+getComparer
+ ()Lorg/eclipse/jface/viewers/IElementComparer;
+ ()Lorg/eclipse/jface/viewers/IElementComparer;
+getFilteredChildren
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getFilters
+ ()[Lorg/eclipse/jface/viewers/ViewerFilter;
+ ()[Lorg/eclipse/jface/viewers/ViewerFilter;
+getItem
+ (II)Lorg/eclipse/swt/widgets/Item;
+ (II)Lorg/eclipse/swt/widgets/Item;
+getRawChildren
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getRoot
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getSelection
+ ()Lorg/eclipse/jface/viewers/ISelection;
+ ()Lorg/eclipse/jface/viewers/ISelection;
+getSelectionFromWidget
+ ()Ljava/util/List;
+ ()Ljava/util/List;
+getSortedChildren
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getSorter
+ ()Lorg/eclipse/jface/viewers/ViewerSorter;
+ ()Lorg/eclipse/jface/viewers/ViewerSorter;
+getStructuredSelection
+ ()Lorg/eclipse/jface/viewers/IStructuredSelection;
+ ()Lorg/eclipse/jface/viewers/IStructuredSelection;
+handleDispose
+ (Lorg/eclipse/swt/events/DisposeEvent;)V
+ (Lorg/eclipse/swt/events/DisposeEvent;)V
+handleDoubleSelect
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+handleInvalidSelection
+ (Lorg/eclipse/jface/viewers/ISelection;Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;Lorg/eclipse/jface/viewers/ISelection;)V
+handleLabelProviderChanged
+ (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
+ (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
+handleOpen
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+handlePostSelect
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+handleSelect
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+hookControl
+ (Lorg/eclipse/swt/widgets/Control;)V
+ (Lorg/eclipse/swt/widgets/Control;)V
+internalRefresh
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+internalRefresh
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+internalUpdate
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;[Ljava/lang/String;)V
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;[Ljava/lang/String;)V
+mapElement
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+needsRefilter
+ (Ljava/lang/Object;Ljava/lang/String;)Z
+ (Ljava/lang/Object;Ljava/lang/String;)Z
+preservingSelection
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+refresh
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+refresh
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+refreshItem
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;)V
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;)V
+removeDoubleClickListener
+ (Lorg/eclipse/jface/viewers/IDoubleClickListener;)V
+ (Lorg/eclipse/jface/viewers/IDoubleClickListener;)V
+removeFilter
+ (Lorg/eclipse/jface/viewers/ViewerFilter;)V
+ (Lorg/eclipse/jface/viewers/ViewerFilter;)V
+removeOpenListener
+ (Lorg/eclipse/jface/viewers/IOpenListener;)V
+ (Lorg/eclipse/jface/viewers/IOpenListener;)V
+removePostSelectionChangedListener
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+reveal
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setComparator
+ (Lorg/eclipse/jface/viewers/ViewerComparator;)V
+ (Lorg/eclipse/jface/viewers/ViewerComparator;)V
+setComparer
+ (Lorg/eclipse/jface/viewers/IElementComparer;)V
+ (Lorg/eclipse/jface/viewers/IElementComparer;)V
+setContentProvider
+ (Lorg/eclipse/jface/viewers/IContentProvider;)V
+ (Lorg/eclipse/jface/viewers/IContentProvider;)V
+setFilters
+ ([Lorg/eclipse/jface/viewers/ViewerFilter;)V
+ ([Lorg/eclipse/jface/viewers/ViewerFilter;)V
+setInput
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setLabelProvider
+ (Lorg/eclipse/jface/viewers/IBaseLabelProvider;)V
+ (Lorg/eclipse/jface/viewers/IBaseLabelProvider;)V
+setSelection
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+setSelectionToWidget
+ (Ljava/util/List;Z)V
+ (Ljava/util/List;Z)V
+setSelectionToWidget
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+setSorter
+ (Lorg/eclipse/jface/viewers/ViewerSorter;)V
+ (Lorg/eclipse/jface/viewers/ViewerSorter;)V
+testFindItem
+ (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
+testFindItems
+ (Ljava/lang/Object;)[Lorg/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;)[Lorg/eclipse/swt/widgets/Widget;
+unmapElement
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+unmapElement
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+update
+ (Ljava/lang/Object;[Ljava/lang/String;)V
+ (Ljava/lang/Object;[Ljava/lang/String;)V
+update
+ ([Ljava/lang/Object;[Ljava/lang/String;)V
+ ([Ljava/lang/Object;[Ljava/lang/String;)V
+updateItem
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;)V
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;)V
+updateSelection
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;)V

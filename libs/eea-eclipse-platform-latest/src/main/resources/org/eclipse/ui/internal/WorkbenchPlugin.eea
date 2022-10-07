@@ -1,0 +1,142 @@
+class org/eclipse/ui/internal/WorkbenchPlugin
+
+PI_WORKBENCH
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+createExtension
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Ljava/lang/Object;
+getBundleForExecutableExtension
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Lorg/osgi/framework/Bundle;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Lorg/osgi/framework/Bundle;
+getDefault
+ ()Lorg/eclipse/ui/internal/WorkbenchPlugin;
+ ()Lorg/eclipse/ui/internal/WorkbenchPlugin;
+getSplashShell
+ (Lorg/eclipse/swt/widgets/Display;)Lorg/eclipse/swt/widgets/Shell;
+ (Lorg/eclipse/swt/widgets/Display;)Lorg/eclipse/swt/widgets/Shell;
+getStatus
+ (Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/IStatus;
+hasExecutableExtension
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Z
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Z
+isBundleLoadedForExecutableExtension
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Z
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Z
+log
+ (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Throwable;)V
+log
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+log
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+log
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IStatus;)V
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IStatus;)V
+log
+ (Ljava/lang/Throwable;)V
+ (Ljava/lang/Throwable;)V
+log
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V
+newError
+ (Ljava/lang/String;Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/IStatus;
+unsetSplashShell
+ (Lorg/eclipse/swt/widgets/Display;)V
+ (Lorg/eclipse/swt/widgets/Display;)V
+
+createImageRegistry
+ ()Lorg/eclipse/jface/resource/ImageRegistry;
+ ()Lorg/eclipse/jface/resource/ImageRegistry;
+getActionSetRegistry
+ ()Lorg/eclipse/ui/internal/registry/ActionSetRegistry;
+ ()Lorg/eclipse/ui/internal/registry/ActionSetRegistry;
+getAppName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getBundleContext
+ ()Lorg/osgi/framework/BundleContext;
+ ()Lorg/osgi/framework/BundleContext;
+getBundles
+ ()[Lorg/osgi/framework/Bundle;
+ ()[Lorg/osgi/framework/Bundle;
+getDataLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getDebugOptions
+ ()Lorg/eclipse/osgi/service/debug/DebugOptions;
+ ()Lorg/eclipse/osgi/service/debug/DebugOptions;
+getDecoratorManager
+ ()Lorg/eclipse/ui/internal/decorators/DecoratorManager;
+ ()Lorg/eclipse/ui/internal/decorators/DecoratorManager;
+getEditorRegistry
+ ()Lorg/eclipse/ui/IEditorRegistry;
+ ()Lorg/eclipse/ui/IEditorRegistry;
+getElementFactory
+ (Ljava/lang/String;)Lorg/eclipse/ui/IElementFactory;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IElementFactory;
+getExportWizardRegistry
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+getImportWizardRegistry
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+getIntroRegistry
+ ()Lorg/eclipse/ui/internal/intro/IIntroRegistry;
+ ()Lorg/eclipse/ui/internal/intro/IIntroRegistry;
+getNewWizardRegistry
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+getOperationSupport
+ ()Lorg/eclipse/ui/operations/IWorkbenchOperationSupport;
+ ()Lorg/eclipse/ui/operations/IWorkbenchOperationSupport;
+getPerspectiveRegistry
+ ()Lorg/eclipse/ui/IPerspectiveRegistry;
+ ()Lorg/eclipse/ui/IPerspectiveRegistry;
+getPreferenceManager
+ ()Lorg/eclipse/jface/preference/PreferenceManager;
+ ()Lorg/eclipse/jface/preference/PreferenceManager;
+getProductName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSharedImages
+ ()Lorg/eclipse/ui/ISharedImages;
+ ()Lorg/eclipse/ui/ISharedImages;
+getTestableObject
+ ()Lorg/eclipse/ui/testing/TestableObject;
+ ()Lorg/eclipse/ui/testing/TestableObject;
+getThemeRegistry
+ ()Lorg/eclipse/ui/internal/themes/IThemeRegistry;
+ ()Lorg/eclipse/ui/internal/themes/IThemeRegistry;
+getViewRegistry
+ ()Lorg/eclipse/ui/views/IViewRegistry;
+ ()Lorg/eclipse/ui/views/IViewRegistry;
+getWindowImages
+ ()[Lorg/eclipse/jface/resource/ImageDescriptor;
+ ()[Lorg/eclipse/jface/resource/ImageDescriptor;
+getWorkingSetManager
+ ()Lorg/eclipse/ui/IWorkingSetManager;
+ ()Lorg/eclipse/ui/IWorkingSetManager;
+getWorkingSetRegistry
+ ()Lorg/eclipse/ui/internal/registry/WorkingSetRegistry;
+ ()Lorg/eclipse/ui/internal/registry/WorkingSetRegistry;
+initializeContext
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+initializeDefaultPreferences
+ (Lorg/eclipse/jface/preference/IPreferenceStore;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;)V
+isStarting
+ (Lorg/osgi/framework/Bundle;)Z
+ (Lorg/osgi/framework/Bundle;)Z
+start
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V
+stop
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V

@@ -1,0 +1,158 @@
+class org/eclipse/equinox/internal/p2/repository/helpers/AbstractRepositoryManager
+ <T:Ljava/lang/Object;>
+
+ATTR_SUFFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+EL_FACTORY
+ Ljava/lang/String;
+ L1java/lang/String;
+EL_FILTER
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_DESCRIPTION
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_ENABLED
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_NICKNAME
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_PROVIDER
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_SUFFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_SYSTEM
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_URI
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_URL
+ Ljava/lang/String;
+ L1java/lang/String;
+KEY_VERSION
+ Ljava/lang/String;
+ L1java/lang/String;
+NODE_REPOSITORIES
+ Ljava/lang/String;
+ L1java/lang/String;
+
+agent
+ Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+ Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+eventBus
+ Lorg/eclipse/equinox/internal/provisional/p2/core/eventbus/IProvisioningEventBus;
+ Lorg/eclipse/equinox/internal/provisional/p2/core/eventbus/IProvisioningEventBus;
+repositories
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/equinox/internal/p2/repository/helpers/AbstractRepositoryManager$RepositoryInfo<TT;>;>;
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/equinox/internal/p2/repository/helpers/AbstractRepositoryManager$RepositoryInfo<TT;>;>;
+repositoryLock
+ Ljava/lang/Object;
+ Ljava/lang/Object;
+unavailableRepositories
+ Ljava/lang/ref/SoftReference<Ljava/util/List<Ljava/net/URI;>;>;
+ Ljava/lang/ref/SoftReference<Ljava/util/List<Ljava/net/URI;>;>;
+
+<init>
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+addRepository
+ (Ljava/net/URI;)V
+ (Ljava/net/URI;)V
+addRepository
+ (Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;ZLjava/lang/String;)V
+ (Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;ZLjava/lang/String;)V
+basicGetRepository
+ (Ljava/net/URI;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+basicRefreshRepository
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+contains
+ (Ljava/net/URI;)Z
+ (Ljava/net/URI;)Z
+createExecutableExtension
+ (Lorg/eclipse/core/runtime/IExtension;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IExtension;Ljava/lang/String;)Ljava/lang/Object;
+doCreateRepository
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+factoryCreate
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/core/runtime/IExtension;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/core/runtime/IExtension;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+factoryLoad
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IExtension;ILorg/eclipse/core/runtime/SubMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IExtension;ILorg/eclipse/core/runtime/SubMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+findMatchingRepositoryExtensions
+ (Ljava/lang/String;Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtension;
+ (Ljava/lang/String;Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtension;
+getAgent
+ ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+ ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+getAllSuffixes
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getBundleId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDefaultSuffix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getKnownRepositories
+ (I)[Ljava/net/URI;
+ (I)[Ljava/net/URI;
+getPreferredRepositorySearchOrder
+ (Lorg/eclipse/equinox/internal/p2/repository/helpers/LocationProperties;)[Ljava/lang/String;
+ (Lorg/eclipse/equinox/internal/p2/repository/helpers/LocationProperties;)[Ljava/lang/String;
+getRepositoryProperty
+ (Ljava/net/URI;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/net/URI;Ljava/lang/String;)Ljava/lang/String;
+getRepositoryProviderExtensionPointId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRepositorySystemProperty
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTransport
+ ()Lorg/eclipse/equinox/internal/p2/repository/Transport;
+ ()Lorg/eclipse/equinox/internal/p2/repository/Transport;
+isEnabled
+ (Ljava/net/URI;)Z
+ (Ljava/net/URI;)Z
+loadRepository
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/String;I)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/String;I)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+log
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+notify
+ (Ljava/util/EventObject;)V
+ (Ljava/util/EventObject;)V
+putValue
+ (Lorg/osgi/service/prefs/Preferences;Ljava/lang/String;Ljava/lang/String;)Z
+ (Lorg/osgi/service/prefs/Preferences;Ljava/lang/String;Ljava/lang/String;)Z
+query
+ (Lorg/eclipse/equinox/p2/query/IQuery<TT;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryResult<TT;>;
+ (Lorg/eclipse/equinox/p2/query/IQuery<TT;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryResult<TT;>;
+removeRepository
+ (Ljava/net/URI;)Z
+ (Ljava/net/URI;)Z
+setEnabled
+ (Ljava/net/URI;Z)V
+ (Ljava/net/URI;Z)V
+setRepositoryProperty
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;)V
+sortSuffixes
+ ([Ljava/lang/String;Ljava/net/URI;[Ljava/lang/String;)[Ljava/lang/String;
+ ([Ljava/lang/String;Ljava/net/URI;[Ljava/lang/String;)[Ljava/lang/String;

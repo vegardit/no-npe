@@ -1,0 +1,50 @@
+class org/eclipse/jface/viewers/ViewerDropAdapter
+
+<init>
+ (Lorg/eclipse/jface/viewers/Viewer;)V
+ (Lorg/eclipse/jface/viewers/Viewer;)V
+determineLocation
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)I
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)I
+determineTarget
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)Ljava/lang/Object;
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)Ljava/lang/Object;
+dragEnter
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+dragOperationChanged
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+dragOver
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+drop
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+dropAccept
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+getBounds
+ (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/graphics/Rectangle;
+ (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/graphics/Rectangle;
+getCurrentEvent
+ ()Lorg/eclipse/swt/dnd/DropTargetEvent;
+ ()Lorg/eclipse/swt/dnd/DropTargetEvent;
+getCurrentTarget
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getSelectedObject
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getViewer
+ ()Lorg/eclipse/jface/viewers/Viewer;
+ ()Lorg/eclipse/jface/viewers/Viewer;
+handleException
+ (Ljava/lang/Throwable;Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+ (Ljava/lang/Throwable;Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+performDrop
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+validateDrop
+ (Ljava/lang/Object;ILorg/eclipse/swt/dnd/TransferData;)Z
+ (Ljava/lang/Object;ILorg/eclipse/swt/dnd/TransferData;)Z

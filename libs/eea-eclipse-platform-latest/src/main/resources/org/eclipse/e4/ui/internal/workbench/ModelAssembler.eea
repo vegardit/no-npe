@@ -1,0 +1,32 @@
+class org/eclipse/e4/ui/internal/workbench/ModelAssembler
+
+init
+ (Lorg/eclipse/e4/ui/model/application/MApplication;Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/ui/di/UISynchronize;)V
+ (Lorg/eclipse/e4/ui/model/application/MApplication;Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/ui/di/UISynchronize;)V
+processFragment
+ (Lorg/eclipse/e4/ui/model/fragment/MModelFragments;Lorg/eclipse/e4/ui/model/fragment/MModelFragment;Ljava/lang/String;Ljava/lang/String;Z)V
+ (Lorg/eclipse/e4/ui/model/fragment/MModelFragments;Lorg/eclipse/e4/ui/model/fragment/MModelFragment;Ljava/lang/String;Ljava/lang/String;Z)V
+processFragmentWrappers
+ (Ljava/util/Collection<Lorg/eclipse/e4/ui/internal/workbench/ModelFragmentWrapper;>;)V
+ (Ljava/util/Collection<Lorg/eclipse/e4/ui/internal/workbench/ModelFragmentWrapper;>;)V
+processFragments
+ (Ljava/util/Collection<Lorg/eclipse/e4/ui/internal/workbench/ModelFragmentWrapper;>;)V
+ (Ljava/util/Collection<Lorg/eclipse/e4/ui/internal/workbench/ModelFragmentWrapper;>;)V
+processModelFragment
+ (Lorg/eclipse/e4/ui/model/fragment/MModelFragment;Ljava/lang/String;Z)Ljava/util/List<Lorg/eclipse/e4/ui/model/application/MApplicationElement;>;
+ (Lorg/eclipse/e4/ui/model/fragment/MModelFragment;Ljava/lang/String;Z)Ljava/util/List<Lorg/eclipse/e4/ui/model/application/MApplicationElement;>;
+resolveImports
+ (Ljava/util/List<Lorg/eclipse/e4/ui/model/application/MApplicationElement;>;Ljava/util/List<Lorg/eclipse/e4/ui/model/application/MApplicationElement;>;)V
+ (Ljava/util/List<Lorg/eclipse/e4/ui/model/application/MApplicationElement;>;Ljava/util/List<Lorg/eclipse/e4/ui/model/application/MApplicationElement;>;)V
+runProcessors
+ ([Lorg/eclipse/core/runtime/IExtension;ZZ)V
+ ([Lorg/eclipse/core/runtime/IExtension;ZZ)V
+setExtensionRegistry
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;)V
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;)V
+setLogger
+ (Lorg/osgi/service/log/LoggerFactory;)V
+ (Lorg/osgi/service/log/LoggerFactory;)V
+unsetLogger
+ (Lorg/osgi/service/log/LoggerFactory;)V
+ (Lorg/osgi/service/log/LoggerFactory;)V

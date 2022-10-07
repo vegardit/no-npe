@@ -1,0 +1,78 @@
+class org/eclipse/e4/ui/workbench/renderers/swt/ToolBarManagerRenderer
+
+POST_PROCESSING_DISPOSE
+ Ljava/lang/String;
+ L1java/lang/String;
+POST_PROCESSING_FUNCTION
+ Ljava/lang/String;
+ L1java/lang/String;
+UPDATE_VARS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+childRendered
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+cleanUp
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;)V
+cleanUpCopy
+ (Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolBarContributionRecord;Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;)V
+ (Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolBarContributionRecord;Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;)V
+clearModelToContribution
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;Lorg/eclipse/jface/action/IContributionItem;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;Lorg/eclipse/jface/action/IContributionItem;)V
+clearModelToManager
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;Lorg/eclipse/jface/action/ToolBarManager;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;Lorg/eclipse/jface/action/ToolBarManager;)V
+createWidget
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)Ljava/lang/Object;
+getContext
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getContribution
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;)Lorg/eclipse/jface/action/IContributionItem;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;)Lorg/eclipse/jface/action/IContributionItem;
+getContributionRecord
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;)Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolBarContributionRecord;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;)Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolBarContributionRecord;
+getList
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;)Ljava/util/ArrayList<Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolBarContributionRecord;>;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;)Ljava/util/ArrayList<Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolBarContributionRecord;>;
+getManager
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;)Lorg/eclipse/jface/action/ToolBarManager;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;)Lorg/eclipse/jface/action/ToolBarManager;
+getToolBarModel
+ (Lorg/eclipse/jface/action/ToolBarManager;)Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;
+ (Lorg/eclipse/jface/action/ToolBarManager;)Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;
+getToolElement
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;
+getUIContainer
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Ljava/lang/Object;
+hideChild
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+linkElementToContributionRecord
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolBarContributionRecord;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolBarContributionRecord;)V
+linkModelToContribution
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;Lorg/eclipse/jface/action/IContributionItem;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBarElement;Lorg/eclipse/jface/action/IContributionItem;)V
+linkModelToManager
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;Lorg/eclipse/jface/action/ToolBarManager;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;Lorg/eclipse/jface/action/ToolBarManager;)V
+postProcess
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+processContents
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;)V
+processContribution
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;Ljava/lang/String;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;Ljava/lang/String;)V
+reconcileManagerToModel
+ (Lorg/eclipse/jface/action/IToolBarManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;)V
+ (Lorg/eclipse/jface/action/IToolBarManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MToolBar;)V

@@ -1,0 +1,35 @@
+class org/eclipse/core/internal/net/ProxySelector
+
+canSetBypassHosts
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+canSetProxyData
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+getBypassHosts
+ (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[Ljava/lang/String;
+getDefaultProvider
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProviders
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getProxyData
+ (Ljava/lang/String;)[Lorg/eclipse/core/internal/net/ProxyData;
+ (Ljava/lang/String;)[Lorg/eclipse/core/internal/net/ProxyData;
+localizeProvider
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+setActiveProvider
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setBypassHosts
+ (Ljava/lang/String;[Ljava/lang/String;)V
+ (Ljava/lang/String;[Ljava/lang/String;)V
+setProxyData
+ (Ljava/lang/String;[Lorg/eclipse/core/internal/net/ProxyData;)V
+ (Ljava/lang/String;[Lorg/eclipse/core/internal/net/ProxyData;)V
+unlocalizeProvider
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;

@@ -1,0 +1,95 @@
+class org/eclipse/ui/internal/AbstractWorkingSetManager
+
+<init>
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V
+addExtension
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;Lorg/eclipse/core/runtime/IExtension;)V
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;Lorg/eclipse/core/runtime/IExtension;)V
+addPropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+addToWorkingSets
+ (Lorg/eclipse/core/runtime/IAdaptable;[Lorg/eclipse/ui/IWorkingSet;)V
+ (Lorg/eclipse/core/runtime/IAdaptable;[Lorg/eclipse/ui/IWorkingSet;)V
+addWorkingSet
+ (Lorg/eclipse/ui/IWorkingSet;)V
+ (Lorg/eclipse/ui/IWorkingSet;)V
+bundleChanged
+ (Lorg/osgi/framework/BundleEvent;)V
+ (Lorg/osgi/framework/BundleEvent;)V
+createAggregateWorkingSet
+ (Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/ui/IWorkingSet;)Lorg/eclipse/ui/IWorkingSet;
+ (Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/ui/IWorkingSet;)Lorg/eclipse/ui/IWorkingSet;
+createWorkingSet
+ (Ljava/lang/String;[Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkingSet;
+ (Ljava/lang/String;[Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkingSet;
+createWorkingSet
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/IWorkingSet;
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/IWorkingSet;
+createWorkingSetEditWizard
+ (Lorg/eclipse/ui/IWorkingSet;)Lorg/eclipse/ui/dialogs/IWorkingSetEditWizard;
+ (Lorg/eclipse/ui/IWorkingSet;)Lorg/eclipse/ui/dialogs/IWorkingSetEditWizard;
+createWorkingSetNewWizard
+ ([Ljava/lang/String;)Lorg/eclipse/ui/dialogs/IWorkingSetNewWizard;
+ ([Ljava/lang/String;)Lorg/eclipse/ui/dialogs/IWorkingSetNewWizard;
+createWorkingSetSelectionDialog
+ (Lorg/eclipse/swt/widgets/Shell;)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+ (Lorg/eclipse/swt/widgets/Shell;)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+createWorkingSetSelectionDialog
+ (Lorg/eclipse/swt/widgets/Shell;Z)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+ (Lorg/eclipse/swt/widgets/Shell;Z)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+createWorkingSetSelectionDialog
+ (Lorg/eclipse/swt/widgets/Shell;Z[Ljava/lang/String;)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+ (Lorg/eclipse/swt/widgets/Shell;Z[Ljava/lang/String;)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+firePropertyChange
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+getAllWorkingSets
+ ()[Lorg/eclipse/ui/IWorkingSet;
+ ()[Lorg/eclipse/ui/IWorkingSet;
+getRecentWorkingSets
+ ()[Lorg/eclipse/ui/IWorkingSet;
+ ()[Lorg/eclipse/ui/IWorkingSet;
+getWorkingSet
+ (Ljava/lang/String;)Lorg/eclipse/ui/IWorkingSet;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IWorkingSet;
+getWorkingSets
+ ()[Lorg/eclipse/ui/IWorkingSet;
+ ()[Lorg/eclipse/ui/IWorkingSet;
+internalAddRecentWorkingSet
+ (Lorg/eclipse/ui/IWorkingSet;)V
+ (Lorg/eclipse/ui/IWorkingSet;)V
+internalRemoveWorkingSet
+ (Lorg/eclipse/ui/IWorkingSet;)Z
+ (Lorg/eclipse/ui/IWorkingSet;)Z
+removeExtension
+ (Lorg/eclipse/core/runtime/IExtension;[Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IExtension;[Ljava/lang/Object;)V
+removePropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+restoreMruList
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+restoreWorkingSet
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/IWorkingSet;
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/IWorkingSet;
+restoreWorkingSetState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+saveMruList
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+saveState
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+saveWorkingSetState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+workingSetChanged
+ (Lorg/eclipse/ui/IWorkingSet;Ljava/lang/String;Ljava/lang/Object;)V
+ (Lorg/eclipse/ui/IWorkingSet;Ljava/lang/String;Ljava/lang/Object;)V

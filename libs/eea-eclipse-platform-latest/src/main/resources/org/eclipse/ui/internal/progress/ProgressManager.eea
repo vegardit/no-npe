@@ -1,0 +1,82 @@
+class org/eclipse/ui/internal/progress/ProgressManager
+
+BLOCKED_JOB_KEY
+ Ljava/lang/String;
+ L1java/lang/String;
+PROPERTY_IN_DIALOG
+ Lorg/eclipse/core/runtime/QualifiedName;
+ L1org/eclipse/core/runtime/QualifiedName;
+SLEEPING_JOB_KEY
+ Ljava/lang/String;
+ L1java/lang/String;
+WAITING_JOB_KEY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getInstance
+ ()Lorg/eclipse/ui/internal/progress/ProgressManager;
+ ()Lorg/eclipse/ui/internal/progress/ProgressManager;
+
+addJobInfo
+ (Lorg/eclipse/ui/internal/progress/JobInfo;)V
+ (Lorg/eclipse/ui/internal/progress/JobInfo;)V
+busyCursorWhile
+ (Lorg/eclipse/jface/operation/IRunnableWithProgress;)V
+ (Lorg/eclipse/jface/operation/IRunnableWithProgress;)V
+createMonitor
+ (Lorg/eclipse/core/runtime/jobs/Job;)Lorg/eclipse/core/runtime/IProgressMonitor;
+ (Lorg/eclipse/core/runtime/jobs/Job;)Lorg/eclipse/core/runtime/IProgressMonitor;
+createMonitor
+ (Lorg/eclipse/core/runtime/jobs/Job;Lorg/eclipse/core/runtime/IProgressMonitor;I)Lorg/eclipse/core/runtime/IProgressMonitor;
+ (Lorg/eclipse/core/runtime/jobs/Job;Lorg/eclipse/core/runtime/IProgressMonitor;I)Lorg/eclipse/core/runtime/IProgressMonitor;
+createProgressGroup
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+getDefaultMonitor
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+getIconFor
+ (Lorg/eclipse/core/runtime/jobs/Job;)Lorg/eclipse/swt/graphics/Image;
+ (Lorg/eclipse/core/runtime/jobs/Job;)Lorg/eclipse/swt/graphics/Image;
+getJobInfos
+ (Z)[Lorg/eclipse/ui/internal/progress/JobInfo;
+ (Z)[Lorg/eclipse/ui/internal/progress/JobInfo;
+getRootElements
+ (Z)[Lorg/eclipse/ui/internal/progress/JobTreeElement;
+ (Z)[Lorg/eclipse/ui/internal/progress/JobTreeElement;
+monitorFor
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IProgressMonitor;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IProgressMonitor;
+progressFor
+ (Lorg/eclipse/core/runtime/jobs/Job;)Lorg/eclipse/ui/internal/progress/ProgressManager$JobMonitor;
+ (Lorg/eclipse/core/runtime/jobs/Job;)Lorg/eclipse/ui/internal/progress/ProgressManager$JobMonitor;
+refreshGroup
+ (Lorg/eclipse/ui/internal/progress/GroupInfo;)V
+ (Lorg/eclipse/ui/internal/progress/GroupInfo;)V
+refreshJobInfo
+ (Lorg/eclipse/ui/internal/progress/JobInfo;)V
+ (Lorg/eclipse/ui/internal/progress/JobInfo;)V
+registerIconForFamily
+ (Lorg/eclipse/jface/resource/ImageDescriptor;Ljava/lang/Object;)V
+ (Lorg/eclipse/jface/resource/ImageDescriptor;Ljava/lang/Object;)V
+removeGroup
+ (Lorg/eclipse/ui/internal/progress/GroupInfo;)V
+ (Lorg/eclipse/ui/internal/progress/GroupInfo;)V
+removeJob
+ (Lorg/eclipse/core/runtime/jobs/Job;)Lorg/eclipse/ui/internal/progress/JobInfo;
+ (Lorg/eclipse/core/runtime/jobs/Job;)Lorg/eclipse/ui/internal/progress/JobInfo;
+removeJobInfo
+ (Lorg/eclipse/ui/internal/progress/JobInfo;)V
+ (Lorg/eclipse/ui/internal/progress/JobInfo;)V
+run
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+runInUI
+ (Lorg/eclipse/jface/operation/IRunnableContext;Lorg/eclipse/jface/operation/IRunnableWithProgress;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+ (Lorg/eclipse/jface/operation/IRunnableContext;Lorg/eclipse/jface/operation/IRunnableWithProgress;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+showInDialog
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/core/runtime/jobs/Job;)V
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/core/runtime/jobs/Job;)V
+sleepJobInfo
+ (Lorg/eclipse/ui/internal/progress/JobInfo;)V
+ (Lorg/eclipse/ui/internal/progress/JobInfo;)V

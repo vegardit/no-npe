@@ -1,0 +1,90 @@
+class org/eclipse/ui/internal/wizards/preferences/WizardPreferencesPage
+
+descText
+ Lorg/eclipse/swt/widgets/Text;
+ Lorg/eclipse/swt/widgets/Text;
+destinationNameField
+ Lorg/eclipse/swt/widgets/Combo;
+ Lorg/eclipse/swt/widgets/Combo;
+transfersTree
+ Lorg/eclipse/ui/dialogs/FilteredTree;
+ Lorg/eclipse/ui/dialogs/FilteredTree;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addDestinationItem
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addToHistory
+ (Ljava/util/List<Ljava/lang/String;>;Ljava/lang/String;)V
+ (Ljava/util/List<Ljava/lang/String;>;Ljava/lang/String;)V
+addToHistory
+ ([Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+ ([Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+createButton
+ (Lorg/eclipse/swt/widgets/Composite;ILjava/lang/String;Z)Lorg/eclipse/swt/widgets/Button;
+ (Lorg/eclipse/swt/widgets/Composite;ILjava/lang/String;Z)Lorg/eclipse/swt/widgets/Button;
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createDestinationGroup
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createOptionsGroup
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createTransferArea
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createTransfersList
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ensureDirectoryExists
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+ensureTargetIsValid
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+getAllButtonText
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getChooseButtonText
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDestinationLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDestinationValue
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFileDialogTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFilters
+ ()[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;
+ ()[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;
+getInvalidDestinationMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPreferenceTransferElements
+ ()[Lorg/eclipse/ui/internal/preferences/PreferenceTransferElement;
+ ()[Lorg/eclipse/ui/internal/preferences/PreferenceTransferElement;
+getTransfers
+ ()[Lorg/eclipse/ui/internal/preferences/PreferenceTransferElement;
+ ()[Lorg/eclipse/ui/internal/preferences/PreferenceTransferElement;
+handleEvent
+ (Lorg/eclipse/swt/widgets/Event;)V
+ (Lorg/eclipse/swt/widgets/Event;)V
+queryOverwrite
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+queryYesNoQuestion
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+setDestinationValue
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+transfer
+ ([Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;)Z
+ ([Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;)Z

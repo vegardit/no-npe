@@ -1,0 +1,56 @@
+class org/eclipse/jface/text/projection/ProjectionDocument
+
+<init>
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+adaptProjectionToMasterChange
+ (Lorg/eclipse/jface/text/DocumentEvent;)Z
+ (Lorg/eclipse/jface/text/DocumentEvent;)Z
+computeProjectedMasterRegions
+ (II)[Lorg/eclipse/jface/text/IRegion;
+ (II)[Lorg/eclipse/jface/text/IRegion;
+computeUnprojectedMasterRegions
+ (II)[Lorg/eclipse/jface/text/IRegion;
+ (II)[Lorg/eclipse/jface/text/IRegion;
+fireDocumentAboutToBeChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+fireDocumentChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+getDefaultLineDelimiter
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDocumentInformationMapping
+ ()Lorg/eclipse/jface/text/IDocumentInformationMapping;
+ ()Lorg/eclipse/jface/text/IDocumentInformationMapping;
+getFragments
+ ()[Lorg/eclipse/jface/text/Position;
+ ()[Lorg/eclipse/jface/text/Position;
+getMasterDocument
+ ()Lorg/eclipse/jface/text/IDocument;
+ ()Lorg/eclipse/jface/text/IDocument;
+getProjectionMapping
+ ()Lorg/eclipse/jface/text/projection/ProjectionMapping;
+ ()Lorg/eclipse/jface/text/projection/ProjectionMapping;
+getSegments
+ ()[Lorg/eclipse/jface/text/Position;
+ ()[Lorg/eclipse/jface/text/Position;
+masterDocumentAboutToBeChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+masterDocumentChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+registerPostNotificationReplace
+ (Lorg/eclipse/jface/text/IDocumentListener;Lorg/eclipse/jface/text/IDocumentExtension$IReplace;)V
+ (Lorg/eclipse/jface/text/IDocumentListener;Lorg/eclipse/jface/text/IDocumentExtension$IReplace;)V
+replace
+ (IILjava/lang/String;)V
+ (IILjava/lang/String;)V
+set
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+updateDocumentStructures
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V

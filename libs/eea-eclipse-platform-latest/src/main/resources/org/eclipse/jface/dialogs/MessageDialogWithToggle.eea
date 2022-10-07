@@ -1,0 +1,73 @@
+class org/eclipse/jface/dialogs/MessageDialogWithToggle
+
+ALWAYS
+ Ljava/lang/String;
+ L1java/lang/String;
+NEVER
+ Ljava/lang/String;
+ L1java/lang/String;
+PROMPT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+open
+ (ILorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;I)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+ (ILorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;I)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+open
+ (ILorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;ILjava/util/LinkedHashMap<Ljava/lang/String;Ljava/lang/Integer;>;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+ (ILorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;ILjava/util/LinkedHashMap<Ljava/lang/String;Ljava/lang/Integer;>;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+openError
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+openInformation
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+openOkCancelConfirm
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+openWarning
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+openYesNoCancelQuestion
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+openYesNoQuestion
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/jface/dialogs/MessageDialogWithToggle;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Lorg/eclipse/swt/graphics/Image;Ljava/lang/String;ILjava/util/LinkedHashMap<Ljava/lang/String;Ljava/lang/Integer;>;ILjava/lang/String;Z)V
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Lorg/eclipse/swt/graphics/Image;Ljava/lang/String;ILjava/util/LinkedHashMap<Ljava/lang/String;Ljava/lang/Integer;>;ILjava/lang/String;Z)V
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Lorg/eclipse/swt/graphics/Image;Ljava/lang/String;I[Ljava/lang/String;ILjava/lang/String;Z)V
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Lorg/eclipse/swt/graphics/Image;Ljava/lang/String;I[Ljava/lang/String;ILjava/lang/String;Z)V
+createButtonsForButtonBar
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createDialogArea
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+createToggleButton
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Button;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Button;
+getPrefKey
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPrefStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+getToggleButton
+ ()Lorg/eclipse/swt/widgets/Button;
+ ()Lorg/eclipse/swt/widgets/Button;
+setPrefKey
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setPrefStore
+ (Lorg/eclipse/jface/preference/IPreferenceStore;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;)V
+setToggleButton
+ (Lorg/eclipse/swt/widgets/Button;)V
+ (Lorg/eclipse/swt/widgets/Button;)V
+setToggleMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

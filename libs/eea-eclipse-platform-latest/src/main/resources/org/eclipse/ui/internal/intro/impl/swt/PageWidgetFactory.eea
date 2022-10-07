@@ -1,0 +1,36 @@
+class org/eclipse/ui/internal/intro/impl/swt/PageWidgetFactory
+
+hyperlinkAdapter
+ Lorg/eclipse/ui/forms/events/HyperlinkAdapter;
+ Lorg/eclipse/ui/forms/events/HyperlinkAdapter;
+site
+ Lorg/eclipse/ui/intro/config/IIntroContentProviderSite;
+ Lorg/eclipse/ui/intro/config/IIntroContentProviderSite;
+styleManager
+ Lorg/eclipse/ui/internal/intro/impl/swt/PageStyleManager;
+ Lorg/eclipse/ui/internal/intro/impl/swt/PageStyleManager;
+toolkit
+ Lorg/eclipse/ui/forms/widgets/FormToolkit;
+ Lorg/eclipse/ui/forms/widgets/FormToolkit;
+
+<init>
+ (Lorg/eclipse/ui/forms/widgets/FormToolkit;Lorg/eclipse/ui/internal/intro/impl/swt/PageStyleManager;)V
+ (Lorg/eclipse/ui/forms/widgets/FormToolkit;Lorg/eclipse/ui/internal/intro/impl/swt/PageStyleManager;)V
+createContentProvider
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/IntroContentProvider;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/IntroContentProvider;)Lorg/eclipse/swt/widgets/Control;
+createImage
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/IntroImage;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/IntroImage;)Lorg/eclipse/swt/widgets/Control;
+createIntroElement
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/AbstractIntroElement;)V
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/AbstractIntroElement;)V
+createSeparator
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/IntroSeparator;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/IntroSeparator;)Lorg/eclipse/swt/widgets/Control;
+createText
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/IntroText;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/internal/intro/impl/model/IntroText;)Lorg/eclipse/swt/widgets/Control;
+setContentProviderSite
+ (Lorg/eclipse/ui/intro/config/IIntroContentProviderSite;)V
+ (Lorg/eclipse/ui/intro/config/IIntroContentProviderSite;)V

@@ -1,0 +1,44 @@
+class org/eclipse/ui/actions/CopyResourceAction
+
+ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getNewNameFor
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/resources/IWorkspace;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/resources/IWorkspace;)Lorg/eclipse/core/runtime/IPath;
+
+operation
+ Lorg/eclipse/ui/actions/CopyFilesAndFoldersOperation;
+ Lorg/eclipse/ui/actions/CopyFilesAndFoldersOperation;
+shellProvider
+ Lorg/eclipse/jface/window/IShellProvider;
+ Lorg/eclipse/jface/window/IShellProvider;
+
+<init>
+ (Lorg/eclipse/jface/window/IShellProvider;)V
+ (Lorg/eclipse/jface/window/IShellProvider;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+createOperation
+ ()Lorg/eclipse/ui/actions/CopyFilesAndFoldersOperation;
+ ()Lorg/eclipse/ui/actions/CopyFilesAndFoldersOperation;
+getModelProviderIds
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getResources
+ (Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;)[Lorg/eclipse/core/resources/IResource;
+ (Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;)[Lorg/eclipse/core/resources/IResource;
+isValid
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+runOperation
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)V
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)V
+setModelProviderIds
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+updateSelection
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)Z
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)Z

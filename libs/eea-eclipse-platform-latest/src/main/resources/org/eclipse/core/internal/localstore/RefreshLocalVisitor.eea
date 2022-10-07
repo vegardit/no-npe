@@ -1,0 +1,54 @@
+class org/eclipse/core/internal/localstore/RefreshLocalVisitor
+
+errors
+ Lorg/eclipse/core/runtime/MultiStatus;
+ Lorg/eclipse/core/runtime/MultiStatus;
+monitor
+ Lorg/eclipse/core/runtime/SubMonitor;
+ Lorg/eclipse/core/runtime/SubMonitor;
+workspace
+ Lorg/eclipse/core/internal/resources/Workspace;
+ Lorg/eclipse/core/internal/resources/Workspace;
+
+<init>
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+contentAdded
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+createResource
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+deleteResource
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+fileToFolder
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+folderToFile
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+getErrorStatus
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+makeLocal
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+refresh
+ (Lorg/eclipse/core/internal/resources/Container;)V
+ (Lorg/eclipse/core/internal/resources/Container;)V
+resourceChanged
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+synchronizeExistence
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)I
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)I
+synchronizeGender
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)Z
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)Z
+synchronizeLastModified
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/resources/Resource;)V
+visit
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Z
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Z

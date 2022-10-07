@@ -1,0 +1,29 @@
+class org/eclipse/jface/text/formatter/MultiPassContentFormatter
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+format
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/IRegion;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/IRegion;)V
+format
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/formatter/IFormattingContext;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/formatter/IFormattingContext;)V
+formatMaster
+ (Lorg/eclipse/jface/text/formatter/IFormattingContext;Lorg/eclipse/jface/text/IDocument;II)V
+ (Lorg/eclipse/jface/text/formatter/IFormattingContext;Lorg/eclipse/jface/text/IDocument;II)V
+formatSlave
+ (Lorg/eclipse/jface/text/formatter/IFormattingContext;Lorg/eclipse/jface/text/IDocument;IILjava/lang/String;)V
+ (Lorg/eclipse/jface/text/formatter/IFormattingContext;Lorg/eclipse/jface/text/IDocument;IILjava/lang/String;)V
+formatSlaves
+ (Lorg/eclipse/jface/text/formatter/IFormattingContext;Lorg/eclipse/jface/text/IDocument;II)V
+ (Lorg/eclipse/jface/text/formatter/IFormattingContext;Lorg/eclipse/jface/text/IDocument;II)V
+getFormattingStrategy
+ (Ljava/lang/String;)Lorg/eclipse/jface/text/formatter/IFormattingStrategy;
+ (Ljava/lang/String;)Lorg/eclipse/jface/text/formatter/IFormattingStrategy;
+setMasterStrategy
+ (Lorg/eclipse/jface/text/formatter/IFormattingStrategy;)V
+ (Lorg/eclipse/jface/text/formatter/IFormattingStrategy;)V
+setSlaveStrategy
+ (Lorg/eclipse/jface/text/formatter/IFormattingStrategy;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/formatter/IFormattingStrategy;Ljava/lang/String;)V

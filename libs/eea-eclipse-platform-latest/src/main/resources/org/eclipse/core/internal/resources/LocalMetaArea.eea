@@ -1,0 +1,90 @@
+class org/eclipse/core/internal/resources/LocalMetaArea
+
+metaAreaLocation
+ Lorg/eclipse/core/runtime/IPath;
+ Lorg/eclipse/core/runtime/IPath;
+projectMetaLocation
+ Lorg/eclipse/core/runtime/IPath;
+ Lorg/eclipse/core/runtime/IPath;
+
+<init>
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+clearOldDescription
+ (Lorg/eclipse/core/resources/IProject;)V
+ (Lorg/eclipse/core/resources/IProject;)V
+clearRefresh
+ (Lorg/eclipse/core/resources/IProject;)V
+ (Lorg/eclipse/core/resources/IProject;)V
+create
+ (Lorg/eclipse/core/resources/IProject;)V
+ (Lorg/eclipse/core/resources/IProject;)V
+delete
+ (Lorg/eclipse/core/resources/IProject;)V
+ (Lorg/eclipse/core/resources/IProject;)V
+getBackupLocationFor
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+getHistoryStoreLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getLegacySnapshotLocationFor
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+getLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getMarkersLocationFor
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+getMarkersSnapshotLocationFor
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+getOldDescriptionLocationFor
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/runtime/IPath;
+getPropertyStoreLocation
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+getRefreshLocationFor
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/runtime/IPath;
+getSafeTableLocationFor
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IPath;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IPath;
+getSnapshotLocationFor
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+getSyncInfoLocationFor
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+getSyncInfoSnapshotLocationFor
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+getTreeLocationFor
+ (Lorg/eclipse/core/resources/IResource;Z)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;Z)Lorg/eclipse/core/runtime/IPath;
+getWorkingLocation
+ (Lorg/eclipse/core/resources/IResource;Ljava/lang/String;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;Ljava/lang/String;)Lorg/eclipse/core/runtime/IPath;
+getWorkspace
+ ()Lorg/eclipse/core/internal/resources/Workspace;
+ ()Lorg/eclipse/core/internal/resources/Workspace;
+hasSavedProject
+ (Lorg/eclipse/core/resources/IProject;)Z
+ (Lorg/eclipse/core/resources/IProject;)Z
+locationFor
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IPath;
+locationFor
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+readOldDescription
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/internal/resources/ProjectDescription;
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/internal/resources/ProjectDescription;
+readPrivateDescription
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/internal/resources/ProjectDescription;)V
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/internal/resources/ProjectDescription;)V
+writePrivateDescription
+ (Lorg/eclipse/core/resources/IProject;)V
+ (Lorg/eclipse/core/resources/IProject;)V

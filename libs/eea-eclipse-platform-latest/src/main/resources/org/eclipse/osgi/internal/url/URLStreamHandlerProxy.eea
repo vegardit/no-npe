@@ -1,0 +1,66 @@
+class org/eclipse/osgi/internal/url/URLStreamHandlerProxy
+
+context
+ Lorg/osgi/framework/BundleContext;
+ Lorg/osgi/framework/BundleContext;
+protocol
+ Ljava/lang/String;
+ Ljava/lang/String;
+realHandlerService
+ Lorg/osgi/service/url/URLStreamHandlerService;
+ Lorg/osgi/service/url/URLStreamHandlerService;
+urlSetter
+ Lorg/eclipse/osgi/internal/url/URLStreamHandlerSetter;
+ Lorg/eclipse/osgi/internal/url/URLStreamHandlerSetter;
+urlStreamHandlerServiceTracker
+ Lorg/osgi/util/tracker/ServiceTracker<Lorg/osgi/service/url/URLStreamHandlerService;Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;>;
+ Lorg/osgi/util/tracker/ServiceTracker<Lorg/osgi/service/url/URLStreamHandlerService;Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;>;
+urlStreamServiceReference
+ Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;
+ Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;
+
+<init>
+ (Ljava/lang/String;Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;Lorg/osgi/framework/BundleContext;)V
+ (Ljava/lang/String;Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;Lorg/osgi/framework/BundleContext;)V
+addingService
+ (Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;)Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;
+ (Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;)Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;
+equals
+ (Ljava/net/URL;Ljava/net/URL;)Z
+ (Ljava/net/URL;Ljava/net/URL;)Z
+getHostAddress
+ (Ljava/net/URL;)Ljava/net/InetAddress;
+ (Ljava/net/URL;)Ljava/net/InetAddress;
+hashCode
+ (Ljava/net/URL;)I
+ (Ljava/net/URL;)I
+hostsEqual
+ (Ljava/net/URL;Ljava/net/URL;)Z
+ (Ljava/net/URL;Ljava/net/URL;)Z
+modifiedService
+ (Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;)V
+ (Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;)V
+openConnection
+ (Ljava/net/URL;)Ljava/net/URLConnection;
+ (Ljava/net/URL;)Ljava/net/URLConnection;
+openConnection
+ (Ljava/net/URL;Ljava/net/Proxy;)Ljava/net/URLConnection;
+ (Ljava/net/URL;Ljava/net/Proxy;)Ljava/net/URLConnection;
+parseURL
+ (Ljava/net/URL;Ljava/lang/String;II)V
+ (Ljava/net/URL;Ljava/lang/String;II)V
+removedService
+ (Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;)V
+ (Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;Lorg/osgi/framework/ServiceReference<Lorg/osgi/service/url/URLStreamHandlerService;>;)V
+sameFile
+ (Ljava/net/URL;Ljava/net/URL;)Z
+ (Ljava/net/URL;Ljava/net/URL;)Z
+setURL
+ (Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+ (Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+setURL
+ (Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+toExternalForm
+ (Ljava/net/URL;)Ljava/lang/String;
+ (Ljava/net/URL;)Ljava/lang/String;

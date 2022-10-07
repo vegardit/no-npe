@@ -1,0 +1,45 @@
+class org/eclipse/e4/ui/bindings/internal/BindingTable
+
+BEST_SEQUENCE
+ Lorg/eclipse/e4/ui/bindings/internal/BindingTable$BindingComparator;
+ L1org/eclipse/e4/ui/bindings/internal/BindingTable$BindingComparator;
+
+<init>
+ (Lorg/eclipse/core/commands/contexts/Context;)V
+ (Lorg/eclipse/core/commands/contexts/Context;)V
+addBinding
+ (Lorg/eclipse/jface/bindings/Binding;)V
+ (Lorg/eclipse/jface/bindings/Binding;)V
+getBestSequenceFor
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Lorg/eclipse/jface/bindings/Binding;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Lorg/eclipse/jface/bindings/Binding;
+getBindings
+ ()Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+ ()Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+getConflicts
+ ()Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+ ()Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+getConflictsFor
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPartialMatches
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+getPerfectMatch
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Lorg/eclipse/jface/bindings/Binding;
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Lorg/eclipse/jface/bindings/Binding;
+getSequencesFor
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Ljava/util/Collection<Lorg/eclipse/jface/bindings/Binding;>;
+getTableId
+ ()Lorg/eclipse/core/commands/contexts/Context;
+ ()Lorg/eclipse/core/commands/contexts/Context;
+isPartialMatch
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+removeBinding
+ (Lorg/eclipse/jface/bindings/Binding;)V
+ (Lorg/eclipse/jface/bindings/Binding;)V

@@ -1,0 +1,167 @@
+class org/eclipse/ui/editors/text/TextFileDocumentProvider
+
+<init>
+ (Lorg/eclipse/ui/texteditor/IDocumentProvider;)V
+ (Lorg/eclipse/ui/texteditor/IDocumentProvider;)V
+aboutToChange
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+addElementStateListener
+ (Lorg/eclipse/ui/texteditor/IElementStateListener;)V
+ (Lorg/eclipse/ui/texteditor/IElementStateListener;)V
+canSaveDocument
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+changed
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+commitFileBuffer
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;Z)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;Z)V
+computeSchedulingRule
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+connect
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+createAnnotationModel
+ (Lorg/eclipse/core/resources/IFile;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Lorg/eclipse/core/resources/IFile;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+createEmptyFileInfo
+ ()Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;
+ ()Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;
+createFileFromDocument
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/resources/IFile;Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/resources/IFile;Lorg/eclipse/jface/text/IDocument;)V
+createFileInfo
+ (Ljava/lang/Object;)Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;
+ (Ljava/lang/Object;)Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;
+createSaveOperation
+ (Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;Z)Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$DocumentProviderOperation;
+ (Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;Z)Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$DocumentProviderOperation;
+disconnect
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+disposeFileInfo
+ (Ljava/lang/Object;Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)V
+ (Ljava/lang/Object;Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)V
+executeOperation
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$DocumentProviderOperation;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$DocumentProviderOperation;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+fireElementStateChangeFailed
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+fireElementStateChanging
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+getAnnotationModel
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+getConnectedElementsIterator
+ ()Ljava/util/Iterator<Ljava/lang/Object;>;
+ ()Ljava/util/Iterator<Ljava/lang/Object;>;
+getContentType
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/content/IContentType;
+getDefaultEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDocument
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/IDocument;
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/IDocument;
+getElements
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)Ljava/util/Iterator<Ljava/lang/Object;>;
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)Ljava/util/Iterator<Ljava/lang/Object;>;
+getEncoding
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+getFileInfo
+ (Ljava/lang/Object;)Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;
+ (Ljava/lang/Object;)Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;
+getFileInfosIterator
+ ()Ljava/util/Iterator<Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;>;
+ ()Ljava/util/Iterator<Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;>;
+getFileStore
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)Lorg/eclipse/core/filesystem/IFileStore;
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)Lorg/eclipse/core/filesystem/IFileStore;
+getModificationStamp
+ (Ljava/lang/Object;)J
+ (Ljava/lang/Object;)J
+getOperationRunner
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/operation/IRunnableContext;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/operation/IRunnableContext;
+getParentProvider
+ ()Lorg/eclipse/ui/texteditor/IDocumentProvider;
+ ()Lorg/eclipse/ui/texteditor/IDocumentProvider;
+getProgressMonitor
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+getStatus
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/IStatus;
+getSynchronizationStamp
+ (Ljava/lang/Object;)J
+ (Ljava/lang/Object;)J
+getSystemFile
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)Ljava/io/File;
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)Ljava/io/File;
+handleCoreException
+ (Lorg/eclipse/core/runtime/CoreException;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/CoreException;Ljava/lang/String;)V
+isDeleted
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isModifiable
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isNotSynchronizedException
+ (Ljava/lang/Object;Lorg/eclipse/core/runtime/CoreException;)Z
+ (Ljava/lang/Object;Lorg/eclipse/core/runtime/CoreException;)Z
+isReadOnly
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isStateValidated
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isSynchronized
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isSystemFileReadOnly
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)Z
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)Z
+mustSaveDocument
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+removeElementStateListener
+ (Lorg/eclipse/ui/texteditor/IElementStateListener;)V
+ (Lorg/eclipse/ui/texteditor/IElementStateListener;)V
+resetDocument
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+saveDocument
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;Z)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;Z)V
+setCanSaveDocument
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setEncoding
+ (Ljava/lang/Object;Ljava/lang/String;)V
+ (Ljava/lang/Object;Ljava/lang/String;)V
+setParentDocumentProvider
+ (Lorg/eclipse/ui/texteditor/IDocumentProvider;)V
+ (Lorg/eclipse/ui/texteditor/IDocumentProvider;)V
+setProgressMonitor
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+setUpSynchronization
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)V
+ (Lorg/eclipse/ui/editors/text/TextFileDocumentProvider$FileInfo;)V
+synchronize
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+updateStateCache
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+validateState
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/Object;Ljava/lang/Object;)V

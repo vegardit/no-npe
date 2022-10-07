@@ -1,0 +1,33 @@
+class org/eclipse/core/databinding/property/map/DelegatingMapProperty
+ <S:Ljava/lang/Object;K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+<init>
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+doGetDelegate
+ (TS;)Lorg/eclipse/core/databinding/property/map/IMapProperty<TS;TK;TV;>;
+ (TS;)Lorg/eclipse/core/databinding/property/map/IMapProperty<TS;TK;TV;>;
+doGetMap
+ (TS;)Ljava/util/Map<TK;TV;>;
+ (TS;)Ljava/util/Map<TK;TV;>;
+doSetMap
+ (TS;Ljava/util/Map<TK;TV;>;)V
+ (TS;Ljava/util/Map<TK;TV;>;)V
+doUpdateMap
+ (TS;Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;)V
+ (TS;Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;)V
+getDelegate
+ (TS;)Lorg/eclipse/core/databinding/property/map/IMapProperty<TS;TK;TV;>;
+ (TS;)Lorg/eclipse/core/databinding/property/map/IMapProperty<TS;TK;TV;>;
+getKeyType
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getValueType
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+observe
+ (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;
+ (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;
+observe
+ (TS;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;
+ (TS;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;

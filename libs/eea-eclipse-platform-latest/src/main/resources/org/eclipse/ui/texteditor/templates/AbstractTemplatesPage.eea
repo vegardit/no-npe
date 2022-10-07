@@ -1,0 +1,50 @@
+class org/eclipse/ui/texteditor/templates/AbstractTemplatesPage
+
+<init>
+ (Lorg/eclipse/ui/texteditor/ITextEditor;Lorg/eclipse/jface/text/source/ISourceViewer;)V
+ (Lorg/eclipse/ui/texteditor/ITextEditor;Lorg/eclipse/jface/text/source/ISourceViewer;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createPatternViewer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/text/source/SourceViewer;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/text/source/SourceViewer;
+editTemplate
+ (Lorg/eclipse/jface/text/templates/Template;ZZ)Lorg/eclipse/jface/text/templates/Template;
+ (Lorg/eclipse/jface/text/templates/Template;ZZ)Lorg/eclipse/jface/text/templates/Template;
+getContextTypeIds
+ (Lorg/eclipse/jface/text/IDocument;I)[Ljava/lang/String;
+ (Lorg/eclipse/jface/text/IDocument;I)[Ljava/lang/String;
+getContextTypeRegistry
+ ()Lorg/eclipse/jface/text/templates/ContextTypeRegistry;
+ ()Lorg/eclipse/jface/text/templates/ContextTypeRegistry;
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getImage
+ (Lorg/eclipse/jface/text/templates/Template;)Lorg/eclipse/swt/graphics/Image;
+ (Lorg/eclipse/jface/text/templates/Template;)Lorg/eclipse/swt/graphics/Image;
+getPatternViewer
+ ()Lorg/eclipse/jface/text/source/SourceViewer;
+ ()Lorg/eclipse/jface/text/source/SourceViewer;
+getPreferencePageId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSelectedTemplates
+ ()[Lorg/eclipse/jface/text/templates/persistence/TemplatePersistenceData;
+ ()[Lorg/eclipse/jface/text/templates/persistence/TemplatePersistenceData;
+getTemplatePreferenceStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+getTemplateStore
+ ()Lorg/eclipse/jface/text/templates/persistence/TemplateStore;
+ ()Lorg/eclipse/jface/text/templates/persistence/TemplateStore;
+insertTemplate
+ (Lorg/eclipse/jface/text/templates/Template;Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/templates/Template;Lorg/eclipse/jface/text/IDocument;)V
+isValidTemplate
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/templates/Template;II)Z
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/templates/Template;II)Z
+updatePatternViewer
+ (Lorg/eclipse/jface/text/templates/Template;)V
+ (Lorg/eclipse/jface/text/templates/Template;)V

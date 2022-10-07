@@ -1,0 +1,63 @@
+class org/eclipse/ui/console/TextConsolePage
+
+fClearOutputAction
+ Lorg/eclipse/ui/console/actions/ClearOutputAction;
+ Lorg/eclipse/ui/console/actions/ClearOutputAction;
+fGlobalActions
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/action/IAction;>;
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/action/IAction;>;
+fSelectionActions
+ Ljava/util/ArrayList<Ljava/lang/String;>;
+ Ljava/util/ArrayList<Ljava/lang/String;>;
+
+<init>
+ (Lorg/eclipse/ui/console/TextConsole;Lorg/eclipse/ui/console/IConsoleView;)V
+ (Lorg/eclipse/ui/console/TextConsole;Lorg/eclipse/ui/console/IConsoleView;)V
+configureToolBar
+ (Lorg/eclipse/jface/action/IToolBarManager;)V
+ (Lorg/eclipse/jface/action/IToolBarManager;)V
+contextMenuAboutToShow
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createViewer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/console/TextConsoleViewer;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/console/TextConsoleViewer;
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getConsole
+ ()Lorg/eclipse/ui/console/IConsole;
+ ()Lorg/eclipse/ui/console/IConsole;
+getConsoleView
+ ()Lorg/eclipse/ui/console/IConsoleView;
+ ()Lorg/eclipse/ui/console/IConsoleView;
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getSite
+ ()Lorg/eclipse/ui/part/IPageSite;
+ ()Lorg/eclipse/ui/part/IPageSite;
+getViewer
+ ()Lorg/eclipse/ui/console/TextConsoleViewer;
+ ()Lorg/eclipse/ui/console/TextConsoleViewer;
+init
+ (Lorg/eclipse/ui/part/IPageSite;)V
+ (Lorg/eclipse/ui/part/IPageSite;)V
+propertyChange
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+setActionBars
+ (Lorg/eclipse/ui/IActionBars;)V
+ (Lorg/eclipse/ui/IActionBars;)V
+setGlobalAction
+ (Lorg/eclipse/ui/IActionBars;Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+ (Lorg/eclipse/ui/IActionBars;Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+setViewer
+ (Lorg/eclipse/ui/console/TextConsoleViewer;)V
+ (Lorg/eclipse/ui/console/TextConsoleViewer;)V
+updateAction
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

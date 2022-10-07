@@ -1,0 +1,72 @@
+class org/eclipse/core/internal/resources/ResourceInfo
+
+fileStoreRoot
+ Lorg/eclipse/core/internal/localstore/FileStoreRoot;
+ Lorg/eclipse/core/internal/localstore/FileStoreRoot;
+markers
+ Lorg/eclipse/core/internal/resources/MarkerSet;
+ Lorg/eclipse/core/internal/resources/MarkerSet;
+sessionProperties
+ Lorg/eclipse/core/internal/utils/ObjectMap<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+ Lorg/eclipse/core/internal/utils/ObjectMap<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+syncInfo
+ Lorg/eclipse/core/internal/utils/ObjectMap<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+ Lorg/eclipse/core/internal/utils/ObjectMap<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+
+clone
+ ()Ljava/lang/Object;
+ ()L1java/lang/Object;
+getFileStoreRoot
+ ()Lorg/eclipse/core/internal/localstore/FileStoreRoot;
+ ()Lorg/eclipse/core/internal/localstore/FileStoreRoot;
+getMarkers
+ ()Lorg/eclipse/core/internal/resources/MarkerSet;
+ ()Lorg/eclipse/core/internal/resources/MarkerSet;
+getMarkers
+ (Z)Lorg/eclipse/core/internal/resources/MarkerSet;
+ (Z)Lorg/eclipse/core/internal/resources/MarkerSet;
+getPropertyStore
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getSessionProperties
+ ()Ljava/util/Map<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+getSessionProperty
+ (Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/Object;
+getSyncInfo
+ (Lorg/eclipse/core/runtime/QualifiedName;Z)[B
+ (Lorg/eclipse/core/runtime/QualifiedName;Z)[B
+getSyncInfo
+ (Z)Lorg/eclipse/core/internal/utils/ObjectMap<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+ (Z)Lorg/eclipse/core/internal/utils/ObjectMap<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+readFrom
+ (ILjava/io/DataInput;)V
+ (ILjava/io/DataInput;)V
+setFileStoreRoot
+ (Lorg/eclipse/core/internal/localstore/FileStoreRoot;)V
+ (Lorg/eclipse/core/internal/localstore/FileStoreRoot;)V
+setMarkers
+ (Lorg/eclipse/core/internal/resources/MarkerSet;)V
+ (Lorg/eclipse/core/internal/resources/MarkerSet;)V
+setPropertyStore
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setSessionProperty
+ (Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;)V
+setSyncInfo
+ (Lorg/eclipse/core/internal/utils/ObjectMap<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/core/internal/utils/ObjectMap<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;)V
+setSyncInfo
+ (Lorg/eclipse/core/runtime/QualifiedName;[B)V
+ (Lorg/eclipse/core/runtime/QualifiedName;[B)V
+shareStrings
+ (Lorg/eclipse/core/internal/utils/StringPool;)V
+ (Lorg/eclipse/core/internal/utils/StringPool;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+writeTo
+ (Ljava/io/DataOutput;)V
+ (Ljava/io/DataOutput;)V

@@ -1,0 +1,23 @@
+class org/eclipse/core/internal/jobs/InternalJobGroup
+
+<init>
+ (Ljava/lang/String;II)V
+ (Ljava/lang/String;II)V
+computeGroupResult
+ (Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;)Lorg/eclipse/core/runtime/MultiStatus;
+ (Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;)Lorg/eclipse/core/runtime/MultiStatus;
+getActiveJobs
+ ()Ljava/util/List<Lorg/eclipse/core/runtime/jobs/Job;>;
+ ()Ljava/util/List<Lorg/eclipse/core/runtime/jobs/Job;>;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getResult
+ ()Lorg/eclipse/core/runtime/MultiStatus;
+ ()Lorg/eclipse/core/runtime/MultiStatus;
+join
+ (JLorg/eclipse/core/runtime/IProgressMonitor;)Z
+ (JLorg/eclipse/core/runtime/IProgressMonitor;)Z
+shouldCancel
+ (Lorg/eclipse/core/runtime/IStatus;II)Z
+ (Lorg/eclipse/core/runtime/IStatus;II)Z

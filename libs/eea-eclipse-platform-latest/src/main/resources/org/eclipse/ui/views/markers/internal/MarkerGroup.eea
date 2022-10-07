@@ -1,0 +1,46 @@
+class org/eclipse/ui/views/markers/internal/MarkerGroup
+
+createMarkerGroup
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/views/markers/internal/MarkerGroup;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/views/markers/internal/MarkerGroup;
+
+field
+ Lorg/eclipse/ui/views/markers/internal/IField;
+ Lorg/eclipse/ui/views/markers/internal/IField;
+markerField
+ Lorg/eclipse/ui/views/markers/MarkerField;
+ Lorg/eclipse/ui/views/markers/MarkerField;
+
+<init>
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)V
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)V
+findGroupValue
+ (Ljava/lang/String;Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;
+ (Ljava/lang/String;Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;
+getEntriesComparator
+ ()Ljava/util/Comparator<Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;>;
+ ()Ljava/util/Comparator<Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;>;
+getField
+ ()Lorg/eclipse/ui/views/markers/internal/IField;
+ ()Lorg/eclipse/ui/views/markers/internal/IField;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMarkerField
+ ()Lorg/eclipse/ui/views/markers/MarkerField;
+ ()Lorg/eclipse/ui/views/markers/MarkerField;
+getTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+mapAttribute
+ (Lorg/eclipse/ui/views/markers/internal/AttributeMarkerGrouping;Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;Ljava/lang/String;)V
+ (Lorg/eclipse/ui/views/markers/internal/AttributeMarkerGrouping;Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;Ljava/lang/String;)V
+remove
+ (Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;)V
+ (Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;)V
+setAsDefault
+ (Ljava/lang/String;Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;)V
+ (Ljava/lang/String;Lorg/eclipse/ui/views/markers/internal/MarkerGroupingEntry;)V
+unmap
+ (Lorg/eclipse/ui/views/markers/internal/AttributeMarkerGrouping;)V
+ (Lorg/eclipse/ui/views/markers/internal/AttributeMarkerGrouping;)V

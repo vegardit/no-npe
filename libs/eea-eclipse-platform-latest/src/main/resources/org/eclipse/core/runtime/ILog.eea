@@ -1,0 +1,32 @@
+class org/eclipse/core/runtime/ILog
+
+addLogListener
+ (Lorg/eclipse/core/runtime/ILogListener;)V
+ (Lorg/eclipse/core/runtime/ILogListener;)V
+error
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+error
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+getBundle
+ ()Lorg/osgi/framework/Bundle;
+ ()L1org/osgi/framework/Bundle;
+info
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+info
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+log
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V
+removeLogListener
+ (Lorg/eclipse/core/runtime/ILogListener;)V
+ (Lorg/eclipse/core/runtime/ILogListener;)V
+warn
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+warn
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/String;Ljava/lang/Throwable;)V

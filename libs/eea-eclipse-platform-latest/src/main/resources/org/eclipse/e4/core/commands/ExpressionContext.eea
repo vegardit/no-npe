@@ -1,0 +1,37 @@
+class org/eclipse/e4/core/commands/ExpressionContext
+
+ALLOW_ACTIVATION
+ Ljava/lang/String;
+ L1java/lang/String;
+defaultVariableConverter
+ Lorg/eclipse/e4/core/contexts/IContextFunction;
+ Lorg/eclipse/e4/core/contexts/IContextFunction;
+
+eclipseContext
+ Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ Lorg/eclipse/e4/core/contexts/IEclipseContext;
+
+<init>
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+addVariable
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+getDefaultVariable
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getParent
+ ()Lorg/eclipse/core/expressions/IEvaluationContext;
+ ()Lorg/eclipse/core/expressions/IEvaluationContext;
+getRoot
+ ()Lorg/eclipse/core/expressions/IEvaluationContext;
+ ()Lorg/eclipse/core/expressions/IEvaluationContext;
+getVariable
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+removeVariable
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+resolveVariable
+ (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;

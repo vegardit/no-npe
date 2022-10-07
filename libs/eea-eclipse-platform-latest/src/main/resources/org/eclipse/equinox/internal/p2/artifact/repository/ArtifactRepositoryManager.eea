@@ -1,0 +1,50 @@
+class org/eclipse/equinox/internal/p2/artifact/repository/ArtifactRepositoryManager
+
+<init>
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+addRepository
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;)V
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;)V
+createMirrorRequest
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRequest;
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRequest;
+createMirrorRequest
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRequest;
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRequest;
+createRepository
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+factoryCreate
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/core/runtime/IExtension;)Lorg/eclipse/equinox/p2/repository/IRepository<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/core/runtime/IExtension;)Lorg/eclipse/equinox/p2/repository/IRepository<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
+factoryLoad
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IExtension;ILorg/eclipse/core/runtime/SubMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IExtension;ILorg/eclipse/core/runtime/SubMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
+getBundleId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDefaultSuffix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPreferredRepositorySearchOrder
+ (Lorg/eclipse/equinox/internal/p2/repository/helpers/LocationProperties;)[Ljava/lang/String;
+ (Lorg/eclipse/equinox/internal/p2/repository/helpers/LocationProperties;)[Ljava/lang/String;
+getRepository
+ (Ljava/net/URI;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+ (Ljava/net/URI;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+getRepositoryProviderExtensionPointId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRepositorySystemProperty
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+loadRepository
+ (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+ (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+loadRepository
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+refreshRepository
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;

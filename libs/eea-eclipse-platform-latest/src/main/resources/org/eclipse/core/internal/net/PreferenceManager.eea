@@ -1,0 +1,46 @@
+class org/eclipse/core/internal/net/PreferenceManager
+
+ROOT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+createConfigurationManager
+ (Ljava/lang/String;)Lorg/eclipse/core/internal/net/PreferenceManager;
+ (Ljava/lang/String;)Lorg/eclipse/core/internal/net/PreferenceManager;
+
+addNodeChangeListener
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+addPreferenceChangeListener
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+getBoolean
+ (Ljava/lang/String;Ljava/lang/String;)Z
+ (Ljava/lang/String;Ljava/lang/String;)Z
+getInt
+ (Ljava/lang/String;Ljava/lang/String;)I
+ (Ljava/lang/String;Ljava/lang/String;)I
+getString
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+migrate
+ ([Lorg/eclipse/core/internal/net/ProxyType;)V
+ ([Lorg/eclipse/core/internal/net/ProxyType;)V
+putBoolean
+ (Ljava/lang/String;Ljava/lang/String;Z)V
+ (Ljava/lang/String;Ljava/lang/String;Z)V
+putInt
+ (Ljava/lang/String;Ljava/lang/String;I)V
+ (Ljava/lang/String;Ljava/lang/String;I)V
+putString
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+removeNode
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeNodeChangeListener
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+removePreferenceChangeListener
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V

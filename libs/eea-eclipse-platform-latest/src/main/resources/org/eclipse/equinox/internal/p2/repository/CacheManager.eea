@@ -1,0 +1,30 @@
+class org/eclipse/equinox/internal/p2/repository/CacheManager
+
+SERVICE_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/equinox/p2/core/IAgentLocation;Lorg/eclipse/equinox/internal/p2/repository/Transport;)V
+ (Lorg/eclipse/equinox/p2/core/IAgentLocation;Lorg/eclipse/equinox/internal/p2/repository/Transport;)V
+createCache
+ (Ljava/net/URI;Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File;
+ (Ljava/net/URI;Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File;
+createCacheFromFile
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File;
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File;
+getCache
+ (Ljava/net/URI;Ljava/lang/String;)Ljava/io/File;
+ (Ljava/net/URI;Ljava/lang/String;)Ljava/io/File;
+getCacheDirectory
+ ()Ljava/io/File;
+ ()Ljava/io/File;
+setEventBus
+ (Lorg/eclipse/equinox/internal/provisional/p2/core/eventbus/IProvisioningEventBus;)V
+ (Lorg/eclipse/equinox/internal/provisional/p2/core/eventbus/IProvisioningEventBus;)V
+unsetEventBus
+ (Lorg/eclipse/equinox/internal/provisional/p2/core/eventbus/IProvisioningEventBus;)V
+ (Lorg/eclipse/equinox/internal/provisional/p2/core/eventbus/IProvisioningEventBus;)V
+updateCache
+ (Ljava/io/File;Ljava/net/URI;JLorg/eclipse/core/runtime/SubMonitor;)V
+ (Ljava/io/File;Ljava/net/URI;JLorg/eclipse/core/runtime/SubMonitor;)V

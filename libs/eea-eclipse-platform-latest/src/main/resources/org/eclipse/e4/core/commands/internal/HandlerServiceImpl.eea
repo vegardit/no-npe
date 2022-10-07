@@ -1,0 +1,64 @@
+class org/eclipse/e4/core/commands/internal/HandlerServiceImpl
+
+CAN_EXECUTE
+ Ljava/lang/String;
+ L1java/lang/String;
+HANDLER_EXCEPTION
+ Ljava/lang/String;
+ L1java/lang/String;
+H_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+NOT_HANDLED
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_MAP
+ Ljava/lang/String;
+ L1java/lang/String;
+STATIC_CONTEXT
+ Ljava/lang/String;
+ L1java/lang/String;
+handlerGenerator
+ Lorg/eclipse/e4/core/contexts/ContextFunction;
+ Lorg/eclipse/e4/core/contexts/ContextFunction;
+
+getHandler
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/IHandler;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/IHandler;
+lookUpHandler
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;Ljava/lang/String;)Ljava/lang/Object;
+pop
+ ()Lorg/eclipse/e4/core/commands/internal/HandlerServiceImpl$ExecutionContexts;
+ ()Lorg/eclipse/e4/core/commands/internal/HandlerServiceImpl$ExecutionContexts;
+push
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+
+activateHandler
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+canExecute
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Z
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Z
+canExecute
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Z
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Z
+deactivateHandler
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+executeHandler
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Ljava/lang/Object;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Ljava/lang/Object;
+executeHandler
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+getContext
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getExecutionContext
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+setContext
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V

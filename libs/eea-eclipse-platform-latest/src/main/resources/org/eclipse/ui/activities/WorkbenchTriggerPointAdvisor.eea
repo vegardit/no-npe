@@ -1,0 +1,27 @@
+class org/eclipse/ui/activities/WorkbenchTriggerPointAdvisor
+
+DONT_ASK
+ Ljava/lang/String;
+ Ljava/lang/String;
+NO_DETAILS
+ Ljava/lang/String;
+ Ljava/lang/String;
+PROCEED_MULTI
+ Ljava/lang/String;
+ Ljava/lang/String;
+PROCEED_SINGLE
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+allow
+ (Lorg/eclipse/ui/activities/ITriggerPoint;Lorg/eclipse/ui/activities/IIdentifier;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/eclipse/ui/activities/ITriggerPoint;Lorg/eclipse/ui/activities/IIdentifier;)Ljava/util/Set<Ljava/lang/String;>;
+computeEnablement
+ (Lorg/eclipse/ui/activities/IActivityManager;Lorg/eclipse/ui/activities/IIdentifier;)Z
+ (Lorg/eclipse/ui/activities/IActivityManager;Lorg/eclipse/ui/activities/IIdentifier;)Z
+doComputeEnablement
+ (Lorg/eclipse/ui/activities/IActivityManager;Lorg/eclipse/ui/activities/IIdentifier;Z)Z
+ (Lorg/eclipse/ui/activities/IActivityManager;Lorg/eclipse/ui/activities/IIdentifier;Z)Z
+setInitializationData
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;Ljava/lang/Object;)V

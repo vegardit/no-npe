@@ -1,0 +1,50 @@
+class org/eclipse/osgi/container/ModuleContainerAdaptor
+
+adaptModuleRevisionBuilder
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)Lorg/eclipse/osgi/container/ModuleRevisionBuilder;
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)Lorg/eclipse/osgi/container/ModuleRevisionBuilder;
+associateRevision
+ (Lorg/eclipse/osgi/container/ModuleRevision;Ljava/lang/Object;)V
+ (Lorg/eclipse/osgi/container/ModuleRevision;Ljava/lang/Object;)V
+createModule
+ (Ljava/lang/String;JLjava/util/EnumSet<Lorg/eclipse/osgi/container/Module$Settings;>;I)Lorg/eclipse/osgi/container/Module;
+ (Ljava/lang/String;JLjava/util/EnumSet<Lorg/eclipse/osgi/container/Module$Settings;>;I)Lorg/eclipse/osgi/container/Module;
+createModuleLoader
+ (Lorg/eclipse/osgi/container/ModuleWiring;)Lorg/eclipse/osgi/container/ModuleLoader;
+ (Lorg/eclipse/osgi/container/ModuleWiring;)Lorg/eclipse/osgi/container/ModuleLoader;
+createSystemModule
+ ()Lorg/eclipse/osgi/container/SystemModule;
+ ()Lorg/eclipse/osgi/container/SystemModule;
+getDebugOptions
+ ()Lorg/eclipse/osgi/service/debug/DebugOptions;
+ ()Lorg/eclipse/osgi/service/debug/DebugOptions;
+getModuleCollisionHook
+ ()Lorg/eclipse/osgi/container/ModuleCollisionHook;
+ ()Lorg/eclipse/osgi/container/ModuleCollisionHook;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getResolverExecutor
+ ()Ljava/util/concurrent/Executor;
+ ()Ljava/util/concurrent/Executor;
+getResolverHookFactory
+ ()Lorg/osgi/framework/hooks/resolver/ResolverHookFactory;
+ ()Lorg/osgi/framework/hooks/resolver/ResolverHookFactory;
+getRevisionInfo
+ (Ljava/lang/String;J)Ljava/lang/Object;
+ (Ljava/lang/String;J)Ljava/lang/Object;
+getScheduledExecutor
+ ()Ljava/util/concurrent/ScheduledExecutorService;
+ ()Ljava/util/concurrent/ScheduledExecutorService;
+getStartLevelExecutor
+ ()Ljava/util/concurrent/Executor;
+ ()Ljava/util/concurrent/Executor;
+invalidateWiring
+ (Lorg/eclipse/osgi/container/ModuleWiring;Lorg/eclipse/osgi/container/ModuleLoader;)V
+ (Lorg/eclipse/osgi/container/ModuleWiring;Lorg/eclipse/osgi/container/ModuleLoader;)V
+publishContainerEvent
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ContainerEvent;Lorg/eclipse/osgi/container/Module;Ljava/lang/Throwable;[Lorg/osgi/framework/FrameworkListener;)V
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ContainerEvent;Lorg/eclipse/osgi/container/Module;Ljava/lang/Throwable;[Lorg/osgi/framework/FrameworkListener;)V
+publishModuleEvent
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/Module;)V
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/Module;)V

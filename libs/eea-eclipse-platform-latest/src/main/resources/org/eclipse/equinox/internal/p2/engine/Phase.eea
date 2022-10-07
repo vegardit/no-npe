@@ -1,0 +1,77 @@
+class org/eclipse/equinox/internal/p2/engine/Phase
+
+LAST_RESULT_INTERNAL_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+LAST_RESULT_PUBLIC_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_AGENT
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_CONTEXT
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_FORCED
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_OPERAND
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_PHASE_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_PROFILE
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_PROFILE_DATA_DIRECTORY
+ Ljava/lang/String;
+ L1java/lang/String;
+PARM_TOUCHPOINT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+mergeStatus
+ (Lorg/eclipse/core/runtime/MultiStatus;Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/MultiStatus;Lorg/eclipse/core/runtime/IStatus;)V
+
+phaseId
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+<init>
+ (Ljava/lang/String;IZ)V
+ (Ljava/lang/String;IZ)V
+completeOperand
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/Operand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/Operand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+completePhase
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/equinox/p2/engine/IProfile;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/equinox/p2/engine/IProfile;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/core/runtime/IStatus;
+getActionManager
+ ()Lorg/eclipse/equinox/internal/p2/engine/ActionManager;
+ ()Lorg/eclipse/equinox/internal/p2/engine/ActionManager;
+getActions
+ (Lorg/eclipse/equinox/internal/p2/engine/Operand;)Ljava/util/List<Lorg/eclipse/equinox/p2/engine/spi/ProvisioningAction;>;
+ (Lorg/eclipse/equinox/internal/p2/engine/Operand;)Ljava/util/List<Lorg/eclipse/equinox/p2/engine/spi/ProvisioningAction;>;
+getPhaseEvent
+ ([Lorg/eclipse/equinox/internal/p2/engine/Operand;I)Lorg/eclipse/equinox/internal/p2/engine/PhaseEvent;
+ ([Lorg/eclipse/equinox/internal/p2/engine/Operand;I)Lorg/eclipse/equinox/internal/p2/engine/PhaseEvent;
+getProblemMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+initializeOperand
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/Operand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/internal/p2/engine/Operand;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+initializePhase
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/equinox/p2/engine/IProfile;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/equinox/p2/engine/IProfile;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/eclipse/core/runtime/IStatus;
+isApplicable
+ (Lorg/eclipse/equinox/internal/p2/engine/Operand;)Z
+ (Lorg/eclipse/equinox/internal/p2/engine/Operand;)Z
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

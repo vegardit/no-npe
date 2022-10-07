@@ -1,0 +1,87 @@
+class org/eclipse/ui/IPageLayout
+
+ID_BOOKMARKS
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_EDITOR_AREA
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_MINIMAP_VIEW
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_NAVIGATE_ACTION_SET
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_OUTLINE
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_PROBLEM_VIEW
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_PROGRESS_VIEW
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_PROJECT_EXPLORER
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_PROP_SHEET
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_RES_NAV
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_TASK_LIST
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addActionSet
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addFastView
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addFastView
+ (Ljava/lang/String;F)V
+ (Ljava/lang/String;F)V
+addNewWizardShortcut
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addPerspectiveShortcut
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addPlaceholder
+ (Ljava/lang/String;IFLjava/lang/String;)V
+ (Ljava/lang/String;IFLjava/lang/String;)V
+addShowInPart
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addShowViewShortcut
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addStandaloneView
+ (Ljava/lang/String;ZIFLjava/lang/String;)V
+ (Ljava/lang/String;ZIFLjava/lang/String;)V
+addStandaloneViewPlaceholder
+ (Ljava/lang/String;IFLjava/lang/String;Z)V
+ (Ljava/lang/String;IFLjava/lang/String;Z)V
+addView
+ (Ljava/lang/String;IFLjava/lang/String;)V
+ (Ljava/lang/String;IFLjava/lang/String;)V
+createFolder
+ (Ljava/lang/String;IFLjava/lang/String;)Lorg/eclipse/ui/IFolderLayout;
+ (Ljava/lang/String;IFLjava/lang/String;)Lorg/eclipse/ui/IFolderLayout;
+createPlaceholderFolder
+ (Ljava/lang/String;IFLjava/lang/String;)Lorg/eclipse/ui/IPlaceholderFolderLayout;
+ (Ljava/lang/String;IFLjava/lang/String;)Lorg/eclipse/ui/IPlaceholderFolderLayout;
+getDescriptor
+ ()Lorg/eclipse/ui/IPerspectiveDescriptor;
+ ()Lorg/eclipse/ui/IPerspectiveDescriptor;
+getEditorArea
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFolderForView
+ (Ljava/lang/String;)Lorg/eclipse/ui/IPlaceholderFolderLayout;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IPlaceholderFolderLayout;
+getViewLayout
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewLayout;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewLayout;

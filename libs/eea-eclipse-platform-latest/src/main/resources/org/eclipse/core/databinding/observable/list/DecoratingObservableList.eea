@@ -1,0 +1,51 @@
+class org/eclipse/core/databinding/observable/list/DecoratingObservableList
+ <E:Ljava/lang/Object;>
+
+<init>
+ (Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;Z)V
+ (Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;Z)V
+add
+ (ITE;)V
+ (ITE;)V
+addAll
+ (ILjava/util/Collection<+TE;>;)Z
+ (ILjava/util/Collection<+TE;>;)Z
+addListChangeListener
+ (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
+ (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
+fireListChange
+ (Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V
+ (Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V
+get
+ (I)TE;
+ (I)TE;
+handleListChange
+ (Lorg/eclipse/core/databinding/observable/list/ListChangeEvent<+TE;>;)V
+ (Lorg/eclipse/core/databinding/observable/list/ListChangeEvent<+TE;>;)V
+indexOf
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+lastIndexOf
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+listIterator
+ ()Ljava/util/ListIterator<TE;>;
+ ()Ljava/util/ListIterator<TE;>;
+listIterator
+ (I)Ljava/util/ListIterator<TE;>;
+ (I)Ljava/util/ListIterator<TE;>;
+move
+ (II)TE;
+ (II)TE;
+remove
+ (I)TE;
+ (I)TE;
+removeListChangeListener
+ (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
+ (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
+set
+ (ITE;)TE;
+ (ITE;)TE;
+subList
+ (II)Ljava/util/List<TE;>;
+ (II)Ljava/util/List<TE;>;

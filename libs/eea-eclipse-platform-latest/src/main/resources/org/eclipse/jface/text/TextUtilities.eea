@@ -1,0 +1,63 @@
+class org/eclipse/jface/text/TextUtilities
+
+DELIMITERS
+ [Ljava/lang/String;
+ [1Ljava/lang/String;
+fgDelimiters
+ [Ljava/lang/String;
+ [1Ljava/lang/String;
+
+addDocumentPartitioners
+ (Lorg/eclipse/jface/text/IDocument;Ljava/util/Map<Ljava/lang/String;+Lorg/eclipse/jface/text/IDocumentPartitioner;>;)V
+ (Lorg/eclipse/jface/text/IDocument;Ljava/util/Map<Ljava/lang/String;+Lorg/eclipse/jface/text/IDocumentPartitioner;>;)V
+computePartitionManagingCategories
+ (Lorg/eclipse/jface/text/IDocument;)[Ljava/lang/String;
+ (Lorg/eclipse/jface/text/IDocument;)[Ljava/lang/String;
+computePartitioning
+ (Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
+ (Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
+copy
+ ([I)[I
+ ([I)[I
+copy
+ ([Ljava/lang/String;)[Ljava/lang/String;
+ ([Ljava/lang/String;)[Ljava/lang/String;
+determineLineDelimiter
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+endsWith
+ ([Ljava/lang/String;Ljava/lang/String;)I
+ ([Ljava/lang/String;Ljava/lang/String;)I
+equals
+ ([Ljava/lang/String;Ljava/lang/String;)I
+ ([Ljava/lang/String;Ljava/lang/String;)I
+getContentType
+ (Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IZ)Ljava/lang/String;
+ (Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IZ)Ljava/lang/String;
+getDefaultLineDelimiter
+ (Lorg/eclipse/jface/text/IDocument;)Ljava/lang/String;
+ (Lorg/eclipse/jface/text/IDocument;)Ljava/lang/String;
+getPartition
+ (Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IZ)Lorg/eclipse/jface/text/ITypedRegion;
+ (Lorg/eclipse/jface/text/IDocument;Ljava/lang/String;IZ)Lorg/eclipse/jface/text/ITypedRegion;
+indexOf
+ ([Ljava/lang/String;Ljava/lang/String;I)[I
+ ([Ljava/lang/String;Ljava/lang/String;I)[I
+mergeProcessedDocumentEvents
+ (Ljava/util/List<+Lorg/eclipse/jface/text/DocumentEvent;>;)Lorg/eclipse/jface/text/DocumentEvent;
+ (Ljava/util/List<+Lorg/eclipse/jface/text/DocumentEvent;>;)Lorg/eclipse/jface/text/DocumentEvent;
+mergeUnprocessedDocumentEvents
+ (Lorg/eclipse/jface/text/IDocument;Ljava/util/List<+Lorg/eclipse/jface/text/DocumentEvent;>;)Lorg/eclipse/jface/text/DocumentEvent;
+ (Lorg/eclipse/jface/text/IDocument;Ljava/util/List<+Lorg/eclipse/jface/text/DocumentEvent;>;)Lorg/eclipse/jface/text/DocumentEvent;
+nextDelimiter
+ (Ljava/lang/CharSequence;I)Lorg/eclipse/jface/text/AbstractLineTracker$DelimiterInfo;
+ (Ljava/lang/CharSequence;I)Lorg/eclipse/jface/text/AbstractLineTracker$DelimiterInfo;
+overlaps
+ (Lorg/eclipse/jface/text/IRegion;Lorg/eclipse/jface/text/IRegion;)Z
+ (Lorg/eclipse/jface/text/IRegion;Lorg/eclipse/jface/text/IRegion;)Z
+removeDocumentPartitioners
+ (Lorg/eclipse/jface/text/IDocument;)Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/text/IDocumentPartitioner;>;
+ (Lorg/eclipse/jface/text/IDocument;)Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/text/IDocumentPartitioner;>;
+startsWith
+ ([Ljava/lang/String;Ljava/lang/String;)I
+ ([Ljava/lang/String;Ljava/lang/String;)I

@@ -1,0 +1,67 @@
+class org/eclipse/ui/views/markers/internal/TableComparator
+
+TAG_DIALOG_SECTION
+ Ljava/lang/String;
+ L1java/lang/String;
+
+defaultDirections
+ [I
+ [I
+defaultPriorities
+ [I
+ [I
+directions
+ [I
+ [I
+fields
+ [Lorg/eclipse/ui/views/markers/internal/IField;
+ [Lorg/eclipse/ui/views/markers/internal/IField;
+priorities
+ [I
+ [I
+
+<init>
+ (Lorg/eclipse/ui/views/markers/internal/TableComparator;)V
+ (Lorg/eclipse/ui/views/markers/internal/TableComparator;)V
+<init>
+ ([Lorg/eclipse/ui/views/markers/internal/IField;[I[I)V
+ ([Lorg/eclipse/ui/views/markers/internal/IField;[I[I)V
+compare
+ (Ljava/lang/Object;Ljava/lang/Object;)I
+ (Ljava/lang/Object;Ljava/lang/Object;)I
+compare
+ (Ljava/lang/Object;Ljava/lang/Object;IZ)I
+ (Ljava/lang/Object;Ljava/lang/Object;IZ)I
+compare
+ (Lorg/eclipse/jface/viewers/Viewer;Ljava/lang/Object;Ljava/lang/Object;)I
+ (Lorg/eclipse/jface/viewers/Viewer;Ljava/lang/Object;Ljava/lang/Object;)I
+getDefaultDirections
+ ()[I
+ ()[I
+getDefaultPriorities
+ ()[I
+ ()[I
+getDirections
+ ()[I
+ ()[I
+getFields
+ ()[Lorg/eclipse/ui/views/markers/internal/IField;
+ ()[Lorg/eclipse/ui/views/markers/internal/IField;
+getPriorities
+ ()[I
+ ()[I
+getTopField
+ ()Lorg/eclipse/ui/views/markers/internal/IField;
+ ()Lorg/eclipse/ui/views/markers/internal/IField;
+restoreState
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+saveState
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+setTopPriority
+ (Lorg/eclipse/ui/views/markers/internal/IField;)V
+ (Lorg/eclipse/ui/views/markers/internal/IField;)V
+sort
+ (Lorg/eclipse/jface/viewers/Viewer;[Ljava/lang/Object;II)V
+ (Lorg/eclipse/jface/viewers/Viewer;[Ljava/lang/Object;II)V

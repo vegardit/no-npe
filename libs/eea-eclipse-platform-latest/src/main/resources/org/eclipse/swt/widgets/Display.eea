@@ -1,0 +1,187 @@
+class org/eclipse/swt/widgets/Display
+
+findDisplay
+ (Ljava/lang/Thread;)Lorg/eclipse/swt/widgets/Display;
+ (Ljava/lang/Thread;)Lorg/eclipse/swt/widgets/Display;
+getAppName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getAppVersion
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCurrent
+ ()Lorg/eclipse/swt/widgets/Display;
+ ()Lorg/eclipse/swt/widgets/Display;
+getDefault
+ ()Lorg/eclipse/swt/widgets/Display;
+ ()L1org/eclipse/swt/widgets/Display;
+setAppName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setAppVersion
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+
+msg
+ Lorg/eclipse/swt/internal/win32/MSG;
+ Lorg/eclipse/swt/internal/win32/MSG;
+
+<init>
+ (Lorg/eclipse/swt/graphics/DeviceData;)V
+ (Lorg/eclipse/swt/graphics/DeviceData;)V
+addFilter
+ (ILorg/eclipse/swt/widgets/Listener;)V
+ (ILorg/eclipse/swt/widgets/Listener;)V
+addListener
+ (ILorg/eclipse/swt/widgets/Listener;)V
+ (ILorg/eclipse/swt/widgets/Listener;)V
+asyncExec
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+create
+ (Lorg/eclipse/swt/graphics/DeviceData;)V
+ (Lorg/eclipse/swt/graphics/DeviceData;)V
+disposeExec
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+findWidget
+ (J)Lorg/eclipse/swt/widgets/Widget;
+ (J)Lorg/eclipse/swt/widgets/Widget;
+findWidget
+ (JJ)Lorg/eclipse/swt/widgets/Widget;
+ (JJ)Lorg/eclipse/swt/widgets/Widget;
+findWidget
+ (Lorg/eclipse/swt/widgets/Widget;J)Lorg/eclipse/swt/widgets/Widget;
+ (Lorg/eclipse/swt/widgets/Widget;J)Lorg/eclipse/swt/widgets/Widget;
+getActiveShell
+ ()Lorg/eclipse/swt/widgets/Shell;
+ ()Lorg/eclipse/swt/widgets/Shell;
+getBounds
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+getClientArea
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+getCursorControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getCursorLocation
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+getCursorSizes
+ ()[Lorg/eclipse/swt/graphics/Point;
+ ()[Lorg/eclipse/swt/graphics/Point;
+getData
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getData
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getErrorHandler
+ ()Ljava/util/function/Consumer<Ljava/lang/Error;>;
+ ()Ljava/util/function/Consumer<Ljava/lang/Error;>;
+getFocusControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getIconSizes
+ ()[Lorg/eclipse/swt/graphics/Point;
+ ()[Lorg/eclipse/swt/graphics/Point;
+getMenuBar
+ ()Lorg/eclipse/swt/widgets/Menu;
+ ()Lorg/eclipse/swt/widgets/Menu;
+getMonitors
+ ()[Lorg/eclipse/swt/widgets/Monitor;
+ ()[Lorg/eclipse/swt/widgets/Monitor;
+getPrimaryMonitor
+ ()Lorg/eclipse/swt/widgets/Monitor;
+ ()Lorg/eclipse/swt/widgets/Monitor;
+getRuntimeExceptionHandler
+ ()Ljava/util/function/Consumer<Ljava/lang/RuntimeException;>;
+ ()Ljava/util/function/Consumer<Ljava/lang/RuntimeException;>;
+getShells
+ ()[Lorg/eclipse/swt/widgets/Shell;
+ ()[Lorg/eclipse/swt/widgets/Shell;
+getSyncThread
+ ()Ljava/lang/Thread;
+ ()Ljava/lang/Thread;
+getSynchronizer
+ ()Lorg/eclipse/swt/widgets/Synchronizer;
+ ()Lorg/eclipse/swt/widgets/Synchronizer;
+getSystemColor
+ (I)Lorg/eclipse/swt/graphics/Color;
+ (I)L1org/eclipse/swt/graphics/Color;
+getSystemCursor
+ (I)Lorg/eclipse/swt/graphics/Cursor;
+ (I)Lorg/eclipse/swt/graphics/Cursor;
+getSystemFont
+ ()Lorg/eclipse/swt/graphics/Font;
+ ()Lorg/eclipse/swt/graphics/Font;
+getSystemImage
+ (I)Lorg/eclipse/swt/graphics/Image;
+ (I)Lorg/eclipse/swt/graphics/Image;
+getSystemMenu
+ ()Lorg/eclipse/swt/widgets/Menu;
+ ()Lorg/eclipse/swt/widgets/Menu;
+getSystemTaskBar
+ ()Lorg/eclipse/swt/widgets/TaskBar;
+ ()Lorg/eclipse/swt/widgets/TaskBar;
+getSystemTray
+ ()Lorg/eclipse/swt/widgets/Tray;
+ ()Lorg/eclipse/swt/widgets/Tray;
+getThread
+ ()Ljava/lang/Thread;
+ ()Ljava/lang/Thread;
+internal_dispose_GC
+ (JLorg/eclipse/swt/graphics/GCData;)V
+ (JLorg/eclipse/swt/graphics/GCData;)V
+internal_new_GC
+ (Lorg/eclipse/swt/graphics/GCData;)J
+ (Lorg/eclipse/swt/graphics/GCData;)J
+map
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/Control;II)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/Control;II)Lorg/eclipse/swt/graphics/Point;
+map
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/Control;IIII)Lorg/eclipse/swt/graphics/Rectangle;
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/Control;IIII)Lorg/eclipse/swt/graphics/Rectangle;
+map
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+map
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/graphics/Rectangle;)Lorg/eclipse/swt/graphics/Rectangle;
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/graphics/Rectangle;)Lorg/eclipse/swt/graphics/Rectangle;
+post
+ (Lorg/eclipse/swt/widgets/Event;)Z
+ (Lorg/eclipse/swt/widgets/Event;)Z
+removeFilter
+ (ILorg/eclipse/swt/widgets/Listener;)V
+ (ILorg/eclipse/swt/widgets/Listener;)V
+removeListener
+ (ILorg/eclipse/swt/widgets/Listener;)V
+ (ILorg/eclipse/swt/widgets/Listener;)V
+setCursorLocation
+ (Lorg/eclipse/swt/graphics/Point;)V
+ (Lorg/eclipse/swt/graphics/Point;)V
+setData
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setData
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+setErrorHandler
+ (Ljava/util/function/Consumer<Ljava/lang/Error;>;)V
+ (Ljava/util/function/Consumer<Ljava/lang/Error;>;)V
+setRuntimeExceptionHandler
+ (Ljava/util/function/Consumer<Ljava/lang/RuntimeException;>;)V
+ (Ljava/util/function/Consumer<Ljava/lang/RuntimeException;>;)V
+setSynchronizer
+ (Lorg/eclipse/swt/widgets/Synchronizer;)V
+ (Lorg/eclipse/swt/widgets/Synchronizer;)V
+syncCall
+ <T:Ljava/lang/Object;E:Ljava/lang/Exception;>(Lorg/eclipse/swt/SwtCallable<TT;TE;>;)TT;^TE;
+ <T:Ljava/lang/Object;E:Ljava/lang/Exception;>(Lorg/eclipse/swt/SwtCallable<TT;TE;>;)TT;^TE;
+syncExec
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+timerExec
+ (ILjava/lang/Runnable;)V
+ (ILjava/lang/Runnable;)V

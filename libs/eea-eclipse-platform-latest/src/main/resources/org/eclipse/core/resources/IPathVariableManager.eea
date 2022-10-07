@@ -1,0 +1,56 @@
+class org/eclipse/core/resources/IPathVariableManager
+
+addChangeListener
+ (Lorg/eclipse/core/resources/IPathVariableChangeListener;)V
+ (Lorg/eclipse/core/resources/IPathVariableChangeListener;)V
+convertFromUserEditableFormat
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String;
+convertToRelative
+ (Ljava/net/URI;ZLjava/lang/String;)Ljava/net/URI;
+ (Ljava/net/URI;ZLjava/lang/String;)Ljava/net/URI;
+convertToUserEditableFormat
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String;
+getPathVariableNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getURIValue
+ (Ljava/lang/String;)Ljava/net/URI;
+ (Ljava/lang/String;)Ljava/net/URI;
+getValue
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IPath;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IPath;
+getVariableRelativePathLocation
+ (Ljava/net/URI;)Ljava/net/URI;
+ (Ljava/net/URI;)Ljava/net/URI;
+isDefined
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isUserDefined
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removeChangeListener
+ (Lorg/eclipse/core/resources/IPathVariableChangeListener;)V
+ (Lorg/eclipse/core/resources/IPathVariableChangeListener;)V
+resolvePath
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+resolveURI
+ (Ljava/net/URI;)Ljava/net/URI;
+ (Ljava/net/URI;)Ljava/net/URI;
+setURIValue
+ (Ljava/lang/String;Ljava/net/URI;)V
+ (Ljava/lang/String;Ljava/net/URI;)V
+setValue
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IPath;)V
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IPath;)V
+validateName
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+validateValue
+ (Ljava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
+validateValue
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;

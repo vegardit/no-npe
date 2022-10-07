@@ -1,0 +1,74 @@
+class org/eclipse/osgi/internal/framework/EquinoxBundle
+
+<init>
+ (Ljava/lang/Long;Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleContainer;Ljava/util/EnumSet<Lorg/eclipse/osgi/container/Module$Settings;>;ILorg/eclipse/osgi/internal/framework/EquinoxContainer;)V
+ (Ljava/lang/Long;Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleContainer;Ljava/util/EnumSet<Lorg/eclipse/osgi/container/Module$Settings;>;ILorg/eclipse/osgi/internal/framework/EquinoxContainer;)V
+adapt
+ <A:Ljava/lang/Object;>(Ljava/lang/Class<TA;>;)TA;
+ <A:Ljava/lang/Object;>(Ljava/lang/Class<TA;>;)TA;
+compareTo
+ (Lorg/osgi/framework/Bundle;)I
+ (Lorg/osgi/framework/Bundle;)I
+findEntries
+ (Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Enumeration<Ljava/net/URL;>;
+getBundle
+ ()Lorg/osgi/framework/Bundle;
+ ()Lorg/osgi/framework/Bundle;
+getBundleContext
+ ()Lorg/osgi/framework/BundleContext;
+ ()Lorg/osgi/framework/BundleContext;
+getDataFile
+ (Ljava/lang/String;)Ljava/io/File;
+ (Ljava/lang/String;)Ljava/io/File;
+getEntry
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+getEntryPaths
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+getHeaders
+ ()Ljava/util/Dictionary<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Dictionary<Ljava/lang/String;Ljava/lang/String;>;
+getHeaders
+ (Ljava/lang/String;)Ljava/util/Dictionary<Ljava/lang/String;Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Dictionary<Ljava/lang/String;Ljava/lang/String;>;
+getLocation
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getModule
+ ()Lorg/eclipse/osgi/container/Module;
+ ()Lorg/eclipse/osgi/container/Module;
+getRegisteredServices
+ ()[Lorg/osgi/framework/ServiceReference<*>;
+ ()[Lorg/osgi/framework/ServiceReference<*>;
+getResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+getResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+getServicesInUse
+ ()[Lorg/osgi/framework/ServiceReference<*>;
+ ()[Lorg/osgi/framework/ServiceReference<*>;
+getSignerCertificates
+ (I)Ljava/util/Map<Ljava/security/cert/X509Certificate;Ljava/util/List<Ljava/security/cert/X509Certificate;>;>;
+ (I)Ljava/util/Map<Ljava/security/cert/X509Certificate;Ljava/util/List<Ljava/security/cert/X509Certificate;>;>;
+getSymbolicName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getVersion
+ ()Lorg/osgi/framework/Version;
+ ()Lorg/osgi/framework/Version;
+hasPermission
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+loadClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+update
+ (Ljava/io/InputStream;)V
+ (Ljava/io/InputStream;)V

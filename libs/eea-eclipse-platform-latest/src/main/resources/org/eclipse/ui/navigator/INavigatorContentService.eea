@@ -1,0 +1,80 @@
+class org/eclipse/ui/navigator/INavigatorContentService
+
+addListener
+ (Lorg/eclipse/ui/navigator/INavigatorContentServiceListener;)V
+ (Lorg/eclipse/ui/navigator/INavigatorContentServiceListener;)V
+bindExtensions
+ ([Ljava/lang/String;Z)[Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+ ([Ljava/lang/String;Z)[Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+createCommonContentProvider
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+createCommonDescriptionProvider
+ ()Lorg/eclipse/ui/navigator/IDescriptionProvider;
+ ()Lorg/eclipse/ui/navigator/IDescriptionProvider;
+createCommonLabelProvider
+ ()Lorg/eclipse/jface/viewers/ILabelProvider;
+ ()Lorg/eclipse/jface/viewers/ILabelProvider;
+findContentExtensionsByTriggerPoint
+ (Ljava/lang/Object;)Ljava/util/Set;
+ (Ljava/lang/Object;)Ljava/util/Set;
+findContentExtensionsWithPossibleChild
+ (Ljava/lang/Object;)Ljava/util/Set;
+ (Ljava/lang/Object;)Ljava/util/Set;
+findRootContentExtensions
+ (Ljava/lang/Object;)Ljava/util/Set;
+ (Ljava/lang/Object;)Ljava/util/Set;
+findStateModel
+ (Ljava/lang/String;)Lorg/eclipse/ui/navigator/IExtensionStateModel;
+ (Ljava/lang/String;)Lorg/eclipse/ui/navigator/IExtensionStateModel;
+getActivationService
+ ()Lorg/eclipse/ui/navigator/INavigatorActivationService;
+ ()Lorg/eclipse/ui/navigator/INavigatorActivationService;
+getContentDescriptorById
+ (Ljava/lang/String;)Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+getContentExtensionById
+ (Ljava/lang/String;)Lorg/eclipse/ui/navigator/INavigatorContentExtension;
+ (Ljava/lang/String;)Lorg/eclipse/ui/navigator/INavigatorContentExtension;
+getDnDService
+ ()Lorg/eclipse/ui/navigator/INavigatorDnDService;
+ ()Lorg/eclipse/ui/navigator/INavigatorDnDService;
+getFilterService
+ ()Lorg/eclipse/ui/navigator/INavigatorFilterService;
+ ()Lorg/eclipse/ui/navigator/INavigatorFilterService;
+getPipelineService
+ ()Lorg/eclipse/ui/navigator/INavigatorPipelineService;
+ ()Lorg/eclipse/ui/navigator/INavigatorPipelineService;
+getSaveablesService
+ ()Lorg/eclipse/ui/navigator/INavigatorSaveablesService;
+ ()Lorg/eclipse/ui/navigator/INavigatorSaveablesService;
+getSorterService
+ ()Lorg/eclipse/ui/navigator/INavigatorSorterService;
+ ()Lorg/eclipse/ui/navigator/INavigatorSorterService;
+getViewerDescriptor
+ ()Lorg/eclipse/ui/navigator/INavigatorViewerDescriptor;
+ ()Lorg/eclipse/ui/navigator/INavigatorViewerDescriptor;
+getViewerId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getVisibleExtensionIds
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getVisibleExtensions
+ ()[Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+ ()[Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+isActive
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isVisible
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removeListener
+ (Lorg/eclipse/ui/navigator/INavigatorContentServiceListener;)V
+ (Lorg/eclipse/ui/navigator/INavigatorContentServiceListener;)V
+restoreState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V

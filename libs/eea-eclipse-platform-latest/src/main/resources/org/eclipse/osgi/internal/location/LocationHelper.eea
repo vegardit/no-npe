@@ -1,0 +1,33 @@
+class org/eclipse/osgi/internal/location/LocationHelper
+
+LOCKING_IO
+ Ljava/lang/String;
+ L1java/lang/String;
+LOCKING_NIO
+ Ljava/lang/String;
+ L1java/lang/String;
+LOCKING_NONE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_OSGI_LOCKING
+ Ljava/lang/String;
+ L1java/lang/String;
+
+buildURL
+ (Ljava/lang/String;Z)Ljava/net/URL;
+ (Ljava/lang/String;Z)Ljava/net/URL;
+createLocker
+ (Ljava/io/File;Ljava/lang/String;Z)Lorg/eclipse/osgi/internal/location/Locker;
+ (Ljava/io/File;Ljava/lang/String;Z)Lorg/eclipse/osgi/internal/location/Locker;
+decode
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String;
+decodePath
+ (Ljava/io/File;)Ljava/io/File;
+ (Ljava/io/File;)Ljava/io/File;
+getConnection
+ (Ljava/net/URL;)Ljava/net/URLConnection;
+ (Ljava/net/URL;)Ljava/net/URLConnection;
+getStream
+ (Ljava/net/URL;)Ljava/io/InputStream;
+ (Ljava/net/URL;)Ljava/io/InputStream;

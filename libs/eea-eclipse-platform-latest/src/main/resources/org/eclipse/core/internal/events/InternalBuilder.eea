@@ -1,0 +1,29 @@
+class org/eclipse/core/internal/events/InternalBuilder
+
+build
+ (ILjava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IProject;
+ (ILjava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IProject;
+clean
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getBuildConfig
+ ()Lorg/eclipse/core/resources/IBuildConfiguration;
+ ()Lorg/eclipse/core/resources/IBuildConfiguration;
+getCommand
+ ()Lorg/eclipse/core/resources/ICommand;
+ ()Lorg/eclipse/core/resources/ICommand;
+getContext
+ ()Lorg/eclipse/core/resources/IBuildContext;
+ ()Lorg/eclipse/core/resources/IBuildContext;
+getDelta
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/resources/IResourceDelta;
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/resources/IResourceDelta;
+getProject
+ ()Lorg/eclipse/core/resources/IProject;
+ ()Lorg/eclipse/core/resources/IProject;
+hasBeenBuilt
+ (Lorg/eclipse/core/resources/IProject;)Z
+ (Lorg/eclipse/core/resources/IProject;)Z
+requestProjectsRebuild
+ (Ljava/util/Collection<Lorg/eclipse/core/resources/IProject;>;)V
+ (Ljava/util/Collection<Lorg/eclipse/core/resources/IProject;>;)V

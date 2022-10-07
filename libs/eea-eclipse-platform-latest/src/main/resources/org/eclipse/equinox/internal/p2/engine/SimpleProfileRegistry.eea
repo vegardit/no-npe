@@ -1,0 +1,98 @@
+class org/eclipse/equinox/internal/p2/engine/SimpleProfileRegistry
+
+DEFAULT_STORAGE_DIR
+ Ljava/lang/String;
+ L1java/lang/String;
+
+escape
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getDefaultRegistryDirectory
+ (Lorg/eclipse/equinox/p2/core/IAgentLocation;)Ljava/io/File;
+ (Lorg/eclipse/equinox/p2/core/IAgentLocation;)Ljava/io/File;
+unescape
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+
+agent
+ Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+ Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+
+<init>
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;Ljava/io/File;)V
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;Ljava/io/File;)V
+<init>
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;Ljava/io/File;Lorg/eclipse/equinox/internal/p2/engine/ISurrogateProfileHandler;Z)V
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;Ljava/io/File;Lorg/eclipse/equinox/internal/p2/engine/ISurrogateProfileHandler;Z)V
+addProfile
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IProfile;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IProfile;
+addProfile
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/engine/IProfile;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/engine/IProfile;
+addProfile
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IProfile;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IProfile;
+containsProfile
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+getProfile
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IProfile;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/engine/IProfile;
+getProfile
+ (Ljava/lang/String;J)Lorg/eclipse/equinox/p2/engine/IProfile;
+ (Ljava/lang/String;J)Lorg/eclipse/equinox/p2/engine/IProfile;
+getProfileDataDirectory
+ (Ljava/lang/String;)Ljava/io/File;
+ (Ljava/lang/String;)Ljava/io/File;
+getProfileMap
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/equinox/internal/p2/engine/Profile;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/equinox/internal/p2/engine/Profile;>;
+getProfileStateProperties
+ (Ljava/lang/String;J)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ (Ljava/lang/String;J)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getProfileStateProperties
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getProfiles
+ ()[Lorg/eclipse/equinox/p2/engine/IProfile;
+ ()[Lorg/eclipse/equinox/p2/engine/IProfile;
+isCurrent
+ (Lorg/eclipse/equinox/p2/engine/IProfile;)Z
+ (Lorg/eclipse/equinox/p2/engine/IProfile;)Z
+listProfileTimestamps
+ (Ljava/lang/String;)[J
+ (Ljava/lang/String;)[J
+lockProfile
+ (Lorg/eclipse/equinox/internal/p2/engine/Profile;)V
+ (Lorg/eclipse/equinox/internal/p2/engine/Profile;)V
+removeProfile
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeProfile
+ (Ljava/lang/String;J)V
+ (Ljava/lang/String;J)V
+removeProfileStateProperties
+ (Ljava/lang/String;JLjava/util/Collection<Ljava/lang/String;>;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;JLjava/util/Collection<Ljava/lang/String;>;)Lorg/eclipse/core/runtime/IStatus;
+setEventBus
+ (Lorg/eclipse/equinox/internal/provisional/p2/core/eventbus/IProvisioningEventBus;)V
+ (Lorg/eclipse/equinox/internal/provisional/p2/core/eventbus/IProvisioningEventBus;)V
+setProfileStateProperties
+ (Ljava/lang/String;JLjava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;JLjava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/core/runtime/IStatus;
+setProfileStateProperty
+ (Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+unlockProfile
+ (Lorg/eclipse/equinox/p2/engine/IProfile;)V
+ (Lorg/eclipse/equinox/p2/engine/IProfile;)V
+updateProfile
+ (Lorg/eclipse/equinox/internal/p2/engine/Profile;)V
+ (Lorg/eclipse/equinox/internal/p2/engine/Profile;)V
+validate
+ (Lorg/eclipse/equinox/p2/engine/IProfile;)Lorg/eclipse/equinox/internal/p2/engine/Profile;
+ (Lorg/eclipse/equinox/p2/engine/IProfile;)Lorg/eclipse/equinox/internal/p2/engine/Profile;

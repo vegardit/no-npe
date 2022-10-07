@@ -1,0 +1,38 @@
+class org/eclipse/ui/IWorkbenchWindow
+
+getActivePage
+ ()Lorg/eclipse/ui/IWorkbenchPage;
+ ()Lorg/eclipse/ui/IWorkbenchPage;
+getExtensionTracker
+ ()Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;
+ ()Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;
+getPages
+ ()[Lorg/eclipse/ui/IWorkbenchPage;
+ ()[Lorg/eclipse/ui/IWorkbenchPage;
+getPartService
+ ()Lorg/eclipse/ui/IPartService;
+ ()Lorg/eclipse/ui/IPartService;
+getSelectionService
+ ()Lorg/eclipse/ui/ISelectionService;
+ ()Lorg/eclipse/ui/ISelectionService;
+getShell
+ ()Lorg/eclipse/swt/widgets/Shell;
+ ()Lorg/eclipse/swt/widgets/Shell;
+getWorkbench
+ ()Lorg/eclipse/ui/IWorkbench;
+ ()L1org/eclipse/ui/IWorkbench;
+isApplicationMenu
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+openPage
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;
+openPage
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;
+run
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+setActivePage
+ (Lorg/eclipse/ui/IWorkbenchPage;)V
+ (Lorg/eclipse/ui/IWorkbenchPage;)V

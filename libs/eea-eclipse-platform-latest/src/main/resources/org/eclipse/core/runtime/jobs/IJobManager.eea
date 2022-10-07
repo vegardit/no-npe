@@ -1,0 +1,60 @@
+class org/eclipse/core/runtime/jobs/IJobManager
+
+PROP_USE_DAEMON_THREADS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addJobChangeListener
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+beginRule
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+cancel
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+createProgressGroup
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+currentJob
+ ()Lorg/eclipse/core/runtime/jobs/Job;
+ ()Lorg/eclipse/core/runtime/jobs/Job;
+currentRule
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+endRule
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+find
+ (Ljava/lang/Object;)[Lorg/eclipse/core/runtime/jobs/Job;
+ (Ljava/lang/Object;)[Lorg/eclipse/core/runtime/jobs/Job;
+join
+ (Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+newLock
+ ()Lorg/eclipse/core/runtime/jobs/ILock;
+ ()Lorg/eclipse/core/runtime/jobs/ILock;
+removeJobChangeListener
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+resume
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+setLockListener
+ (Lorg/eclipse/core/runtime/jobs/LockListener;)V
+ (Lorg/eclipse/core/runtime/jobs/LockListener;)V
+setProgressProvider
+ (Lorg/eclipse/core/runtime/jobs/ProgressProvider;)V
+ (Lorg/eclipse/core/runtime/jobs/ProgressProvider;)V
+sleep
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+suspend
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+transferRule
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;Ljava/lang/Thread;)V
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;Ljava/lang/Thread;)V
+wakeUp
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V

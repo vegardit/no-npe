@@ -1,0 +1,37 @@
+class org/eclipse/osgi/storage/bundlefile/CloseableBundleFile
+ <E:Ljava/lang/Object;>
+
+debug
+ Lorg/eclipse/osgi/internal/debug/Debug;
+ Lorg/eclipse/osgi/internal/debug/Debug;
+generation
+ Lorg/eclipse/osgi/storage/BundleInfo$Generation;
+ Lorg/eclipse/osgi/storage/BundleInfo$Generation;
+
+<init>
+ (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Lorg/eclipse/osgi/storage/bundlefile/MRUBundleFileList;Lorg/eclipse/osgi/internal/debug/Debug;)V
+ (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Lorg/eclipse/osgi/storage/bundlefile/MRUBundleFileList;Lorg/eclipse/osgi/internal/debug/Debug;)V
+containsDir
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+doGetInputStream
+ (TE;)Ljava/io/InputStream;
+ (TE;)Ljava/io/InputStream;
+findEntry
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+getEntry
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+getEntryPaths
+ (Ljava/lang/String;Z)Ljava/util/Enumeration<Ljava/lang/String;>;
+ (Ljava/lang/String;Z)Ljava/util/Enumeration<Ljava/lang/String;>;
+getFile
+ (Ljava/lang/String;Z)Ljava/io/File;
+ (Ljava/lang/String;Z)Ljava/io/File;
+getInputStream
+ (TE;)Ljava/io/InputStream;
+ (TE;)Ljava/io/InputStream;
+getPaths
+ ()Ljava/lang/Iterable<Ljava/lang/String;>;
+ ()Ljava/lang/Iterable<Ljava/lang/String;>;

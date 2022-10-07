@@ -1,0 +1,72 @@
+class org/eclipse/ui/internal/contexts/SlaveContextService
+
+fDefaultExpression
+ Lorg/eclipse/core/expressions/Expression;
+ Lorg/eclipse/core/expressions/Expression;
+fLocalActivations
+ Ljava/util/Map<Lorg/eclipse/ui/contexts/IContextActivation;Lorg/eclipse/ui/contexts/IContextActivation;>;
+ Ljava/util/Map<Lorg/eclipse/ui/contexts/IContextActivation;Lorg/eclipse/ui/contexts/IContextActivation;>;
+fParentActivations
+ Ljava/util/Set<Lorg/eclipse/ui/contexts/IContextActivation;>;
+ Ljava/util/Set<Lorg/eclipse/ui/contexts/IContextActivation;>;
+fParentService
+ Lorg/eclipse/ui/contexts/IContextService;
+ Lorg/eclipse/ui/contexts/IContextService;
+
+<init>
+ (Lorg/eclipse/ui/contexts/IContextService;Lorg/eclipse/core/expressions/Expression;)V
+ (Lorg/eclipse/ui/contexts/IContextService;Lorg/eclipse/core/expressions/Expression;)V
+activateContext
+ (Ljava/lang/String;)Lorg/eclipse/ui/contexts/IContextActivation;
+ (Ljava/lang/String;)Lorg/eclipse/ui/contexts/IContextActivation;
+activateContext
+ (Ljava/lang/String;Lorg/eclipse/core/expressions/Expression;)Lorg/eclipse/ui/contexts/IContextActivation;
+ (Ljava/lang/String;Lorg/eclipse/core/expressions/Expression;)Lorg/eclipse/ui/contexts/IContextActivation;
+activateContext
+ (Ljava/lang/String;Lorg/eclipse/core/expressions/Expression;I)Lorg/eclipse/ui/contexts/IContextActivation;
+ (Ljava/lang/String;Lorg/eclipse/core/expressions/Expression;I)Lorg/eclipse/ui/contexts/IContextActivation;
+activateContext
+ (Ljava/lang/String;Lorg/eclipse/core/expressions/Expression;Z)Lorg/eclipse/ui/contexts/IContextActivation;
+ (Ljava/lang/String;Lorg/eclipse/core/expressions/Expression;Z)Lorg/eclipse/ui/contexts/IContextActivation;
+addContextManagerListener
+ (Lorg/eclipse/core/commands/contexts/IContextManagerListener;)V
+ (Lorg/eclipse/core/commands/contexts/IContextManagerListener;)V
+addSourceProvider
+ (Lorg/eclipse/ui/ISourceProvider;)V
+ (Lorg/eclipse/ui/ISourceProvider;)V
+deactivateContext
+ (Lorg/eclipse/ui/contexts/IContextActivation;)V
+ (Lorg/eclipse/ui/contexts/IContextActivation;)V
+deactivateContexts
+ (Ljava/util/Collection;)V
+ (Ljava/util/Collection;)V
+doActivateContext
+ (Lorg/eclipse/ui/contexts/IContextActivation;)Lorg/eclipse/ui/contexts/IContextActivation;
+ (Lorg/eclipse/ui/contexts/IContextActivation;)Lorg/eclipse/ui/contexts/IContextActivation;
+getActiveContextIds
+ ()Ljava/util/Collection;
+ ()Ljava/util/Collection;
+getContext
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/contexts/Context;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/contexts/Context;
+getDefinedContextIds
+ ()Ljava/util/Collection;
+ ()Ljava/util/Collection;
+getDefinedContexts
+ ()[Lorg/eclipse/core/commands/contexts/Context;
+ ()[Lorg/eclipse/core/commands/contexts/Context;
+getShellType
+ (Lorg/eclipse/swt/widgets/Shell;)I
+ (Lorg/eclipse/swt/widgets/Shell;)I
+registerShell
+ (Lorg/eclipse/swt/widgets/Shell;I)Z
+ (Lorg/eclipse/swt/widgets/Shell;I)Z
+removeContextManagerListener
+ (Lorg/eclipse/core/commands/contexts/IContextManagerListener;)V
+ (Lorg/eclipse/core/commands/contexts/IContextManagerListener;)V
+removeSourceProvider
+ (Lorg/eclipse/ui/ISourceProvider;)V
+ (Lorg/eclipse/ui/ISourceProvider;)V
+unregisterShell
+ (Lorg/eclipse/swt/widgets/Shell;)Z
+ (Lorg/eclipse/swt/widgets/Shell;)Z

@@ -1,0 +1,151 @@
+class org/eclipse/ui/texteditor/AbstractDecoratedTextEditor
+
+DEFAULT_OVERVIEW_RULER_CONTEXT_MENU_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+fAnnotationAccess
+ Lorg/eclipse/jface/text/source/IAnnotationAccess;
+ Lorg/eclipse/jface/text/source/IAnnotationAccess;
+fLineNumberRulerColumn
+ Lorg/eclipse/jface/text/source/LineNumberRulerColumn;
+ Lorg/eclipse/jface/text/source/LineNumberRulerColumn;
+fOverviewRuler
+ Lorg/eclipse/jface/text/source/IOverviewRuler;
+ Lorg/eclipse/jface/text/source/IOverviewRuler;
+fSourceViewerDecorationSupport
+ Lorg/eclipse/ui/texteditor/SourceViewerDecorationSupport;
+ Lorg/eclipse/ui/texteditor/SourceViewerDecorationSupport;
+
+collectContextMenuPreferencePages
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+collectOverviewRulerMenuPreferencePages
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+collectRulerMenuPreferencePages
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+configureSourceViewerDecorationSupport
+ (Lorg/eclipse/ui/texteditor/SourceViewerDecorationSupport;)V
+ (Lorg/eclipse/ui/texteditor/SourceViewerDecorationSupport;)V
+createAnnotationAccess
+ ()Lorg/eclipse/jface/text/source/IAnnotationAccess;
+ ()Lorg/eclipse/jface/text/source/IAnnotationAccess;
+createAnnotationRulerColumn
+ (Lorg/eclipse/jface/text/source/CompositeRuler;)Lorg/eclipse/jface/text/source/IVerticalRulerColumn;
+ (Lorg/eclipse/jface/text/source/CompositeRuler;)Lorg/eclipse/jface/text/source/IVerticalRulerColumn;
+createChangeHover
+ ()Lorg/eclipse/jface/text/source/LineChangeHover;
+ ()Lorg/eclipse/jface/text/source/LineChangeHover;
+createChangeRulerColumn
+ ()Lorg/eclipse/jface/text/source/IChangeRulerColumn;
+ ()Lorg/eclipse/jface/text/source/IChangeRulerColumn;
+createColumnSupport
+ ()Lorg/eclipse/ui/texteditor/rulers/IColumnSupport;
+ ()Lorg/eclipse/ui/texteditor/rulers/IColumnSupport;
+createCompositeRuler
+ ()Lorg/eclipse/jface/text/source/CompositeRuler;
+ ()Lorg/eclipse/jface/text/source/CompositeRuler;
+createContextMenuListener
+ ()Lorg/eclipse/jface/action/IMenuListener;
+ ()Lorg/eclipse/jface/action/IMenuListener;
+createLineNumberRulerColumn
+ ()Lorg/eclipse/jface/text/source/IVerticalRulerColumn;
+ ()Lorg/eclipse/jface/text/source/IVerticalRulerColumn;
+createOverviewRuler
+ (Lorg/eclipse/jface/text/source/ISharedTextColors;)Lorg/eclipse/jface/text/source/IOverviewRuler;
+ (Lorg/eclipse/jface/text/source/ISharedTextColors;)Lorg/eclipse/jface/text/source/IOverviewRuler;
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createShowInTargetList
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+createSourceViewer
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)Lorg/eclipse/jface/text/source/ISourceViewer;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)Lorg/eclipse/jface/text/source/ISourceViewer;
+createStatusControl
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/swt/widgets/Control;
+createVerticalRuler
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+doSetInput
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+editorContextMenuAboutToShow
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getAnnotationAccess
+ ()Lorg/eclipse/jface/text/source/IAnnotationAccess;
+ ()Lorg/eclipse/jface/text/source/IAnnotationAccess;
+getAnnotationPreferenceLookup
+ ()Lorg/eclipse/ui/texteditor/AnnotationPreferenceLookup;
+ ()Lorg/eclipse/ui/texteditor/AnnotationPreferenceLookup;
+getAnnotationPreferences
+ ()Lorg/eclipse/ui/texteditor/MarkerAnnotationPreferences;
+ ()Lorg/eclipse/ui/texteditor/MarkerAnnotationPreferences;
+getDocumentProvider
+ ()Lorg/eclipse/ui/texteditor/IDocumentProvider;
+ ()Lorg/eclipse/ui/texteditor/IDocumentProvider;
+getOverviewRuler
+ ()Lorg/eclipse/jface/text/source/IOverviewRuler;
+ ()Lorg/eclipse/jface/text/source/IOverviewRuler;
+getOverviewRulerContextMenuId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSharedColors
+ ()Lorg/eclipse/jface/text/source/ISharedTextColors;
+ ()Lorg/eclipse/jface/text/source/ISharedTextColors;
+getSourceViewerDecorationSupport
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/ui/texteditor/SourceViewerDecorationSupport;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/ui/texteditor/SourceViewerDecorationSupport;
+getUndoRedoOperationApprover
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IOperationApprover;
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IOperationApprover;
+gotoAnnotation
+ (Z)Lorg/eclipse/jface/text/source/Annotation;
+ (Z)Lorg/eclipse/jface/text/source/Annotation;
+gotoMarker
+ (Lorg/eclipse/core/resources/IMarker;)V
+ (Lorg/eclipse/core/resources/IMarker;)V
+handlePreferenceStoreChanged
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+initializeLineNumberRulerColumn
+ (Lorg/eclipse/jface/text/source/LineNumberRulerColumn;)V
+ (Lorg/eclipse/jface/text/source/LineNumberRulerColumn;)V
+isErrorStatus
+ (Lorg/eclipse/core/runtime/IStatus;)Z
+ (Lorg/eclipse/core/runtime/IStatus;)Z
+isNavigationTarget
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+openSaveErrorDialog
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/CoreException;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/CoreException;)V
+overviewRulerContextMenuAboutToShow
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+performSaveAs
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+rulerContextMenuAboutToShow
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+setDocumentProvider
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+setOverviewRulerContextMenuId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+showRevisionInformation
+ (Lorg/eclipse/jface/text/revisions/RevisionInformation;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/revisions/RevisionInformation;Ljava/lang/String;)V
+updateMarkerViews
+ (Lorg/eclipse/jface/text/source/Annotation;)V
+ (Lorg/eclipse/jface/text/source/Annotation;)V

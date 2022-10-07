@@ -1,0 +1,48 @@
+class org/eclipse/jface/dialogs/ProgressMonitorDialog
+
+arrowCursor
+ Lorg/eclipse/swt/graphics/Cursor;
+ Lorg/eclipse/swt/graphics/Cursor;
+cancel
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+progressIndicator
+ Lorg/eclipse/jface/dialogs/ProgressIndicator;
+ Lorg/eclipse/jface/dialogs/ProgressIndicator;
+subTaskLabel
+ Lorg/eclipse/swt/widgets/Label;
+ Lorg/eclipse/swt/widgets/Label;
+taskLabel
+ Lorg/eclipse/swt/widgets/Label;
+ Lorg/eclipse/swt/widgets/Label;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+configureShell
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+createButtonsForButtonBar
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createCancelButton
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createDialogArea
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+getImage
+ ()Lorg/eclipse/swt/graphics/Image;
+ ()Lorg/eclipse/swt/graphics/Image;
+getInitialSize
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+getProgressMonitor
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+run
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+updateForSetBlocked
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V

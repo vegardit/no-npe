@@ -1,0 +1,127 @@
+class org/eclipse/ui/internal/e4/compatibility/ModeledPageLayout
+
+ACTION_SET_TAG
+ Ljava/lang/String;
+ L1java/lang/String;
+EDITOR_STACK_TAG
+ Ljava/lang/String;
+ L1java/lang/String;
+HIDDEN_ACTIONSET_PREFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+HIDDEN_ITEMS_KEY
+ Ljava/lang/String;
+ L1java/lang/String;
+HIDDEN_MENU_PREFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+HIDDEN_TOOLBAR_PREFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+NEW_WIZARD_TAG
+ Ljava/lang/String;
+ L1java/lang/String;
+PERSP_SHORTCUT_TAG
+ Ljava/lang/String;
+ L1java/lang/String;
+SHOW_IN_PART_TAG
+ Ljava/lang/String;
+ L1java/lang/String;
+SHOW_VIEW_TAG
+ Ljava/lang/String;
+ L1java/lang/String;
+
+createViewModel
+ (Lorg/eclipse/e4/ui/model/application/MApplication;Ljava/lang/String;ZLorg/eclipse/ui/internal/WorkbenchPage;Lorg/eclipse/e4/ui/workbench/modeling/EPartService;Z)Lorg/eclipse/e4/ui/model/application/ui/basic/MStackElement;
+ (Lorg/eclipse/e4/ui/model/application/MApplication;Ljava/lang/String;ZLorg/eclipse/ui/internal/WorkbenchPage;Lorg/eclipse/e4/ui/workbench/modeling/EPartService;Z)Lorg/eclipse/e4/ui/model/application/ui/basic/MStackElement;
+getIds
+ (Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+insertParent
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+internalGetEditorArea
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+replace
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;)V
+
+<init>
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;Lorg/eclipse/e4/ui/workbench/modeling/EModelService;Lorg/eclipse/e4/ui/workbench/modeling/EPartService;Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;Lorg/eclipse/ui/IPerspectiveDescriptor;Lorg/eclipse/ui/internal/WorkbenchPage;Z)V
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;Lorg/eclipse/e4/ui/workbench/modeling/EModelService;Lorg/eclipse/e4/ui/workbench/modeling/EPartService;Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;Lorg/eclipse/ui/IPerspectiveDescriptor;Lorg/eclipse/ui/internal/WorkbenchPage;Z)V
+addActionSet
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addFastView
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addFastView
+ (Ljava/lang/String;F)V
+ (Ljava/lang/String;F)V
+addHiddenMenuItemId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addHiddenToolBarItemId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addNewWizardShortcut
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addPerspectiveShortcut
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addPlaceholder
+ (Ljava/lang/String;IFLjava/lang/String;)V
+ (Ljava/lang/String;IFLjava/lang/String;)V
+addShowInPart
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addShowViewShortcut
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addStandaloneView
+ (Ljava/lang/String;ZIFLjava/lang/String;)V
+ (Ljava/lang/String;ZIFLjava/lang/String;)V
+addStandaloneViewPlaceholder
+ (Ljava/lang/String;IFLjava/lang/String;Z)V
+ (Ljava/lang/String;IFLjava/lang/String;Z)V
+addView
+ (Ljava/lang/String;IFLjava/lang/String;)V
+ (Ljava/lang/String;IFLjava/lang/String;)V
+addView
+ (Ljava/lang/String;IFLjava/lang/String;Z)V
+ (Ljava/lang/String;IFLjava/lang/String;Z)V
+addViewActivator
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+createFolder
+ (Ljava/lang/String;IFLjava/lang/String;)Lorg/eclipse/ui/IFolderLayout;
+ (Ljava/lang/String;IFLjava/lang/String;)Lorg/eclipse/ui/IFolderLayout;
+createPlaceholderFolder
+ (Ljava/lang/String;IFLjava/lang/String;)Lorg/eclipse/ui/IPlaceholderFolderLayout;
+ (Ljava/lang/String;IFLjava/lang/String;)Lorg/eclipse/ui/IPlaceholderFolderLayout;
+getDescriptor
+ ()Lorg/eclipse/ui/IPerspectiveDescriptor;
+ ()Lorg/eclipse/ui/IPerspectiveDescriptor;
+getEditorArea
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFolderForView
+ (Ljava/lang/String;)Lorg/eclipse/ui/IPlaceholderFolderLayout;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IPlaceholderFolderLayout;
+getModel
+ ()Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;
+ ()Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;
+getViewLayout
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewLayout;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewLayout;
+isViewFiltered
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removePlaceholder
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+stackView
+ (Ljava/lang/String;Ljava/lang/String;Z)V
+ (Ljava/lang/String;Ljava/lang/String;Z)V

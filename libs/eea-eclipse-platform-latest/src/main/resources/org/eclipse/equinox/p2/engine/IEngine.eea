@@ -1,0 +1,15 @@
+class org/eclipse/equinox/p2/engine/IEngine
+
+SERVICE_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+createPlan
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/p2/engine/ProvisioningContext;)Lorg/eclipse/equinox/p2/engine/IProvisioningPlan;
+ (Lorg/eclipse/equinox/p2/engine/IProfile;Lorg/eclipse/equinox/p2/engine/ProvisioningContext;)Lorg/eclipse/equinox/p2/engine/IProvisioningPlan;
+perform
+ (Lorg/eclipse/equinox/p2/engine/IProvisioningPlan;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/engine/IProvisioningPlan;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+perform
+ (Lorg/eclipse/equinox/p2/engine/IProvisioningPlan;Lorg/eclipse/equinox/p2/engine/IPhaseSet;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/engine/IProvisioningPlan;Lorg/eclipse/equinox/p2/engine/IPhaseSet;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;

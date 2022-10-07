@@ -1,0 +1,33 @@
+class org/eclipse/ui/PlatformUI
+
+NO_WORKBENCH
+ Ljava/util/function/Supplier<Ljava/lang/RuntimeException;>;
+ L1java/util/function/Supplier<Ljava/lang/RuntimeException;>;
+PLUGIN_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+createAndRunWorkbench
+ (Lorg/eclipse/swt/widgets/Display;Lorg/eclipse/ui/application/WorkbenchAdvisor;)I
+ (Lorg/eclipse/swt/widgets/Display;Lorg/eclipse/ui/application/WorkbenchAdvisor;)I
+createDisplay
+ ()Lorg/eclipse/swt/widgets/Display;
+ ()Lorg/eclipse/swt/widgets/Display;
+createPreferenceStore
+ (Ljava/lang/Class<*>;)Lorg/eclipse/jface/preference/IPreferenceStore;
+ (Ljava/lang/Class<*>;)Lorg/eclipse/jface/preference/IPreferenceStore;
+getApplication
+ ()Ljava/util/Optional<Lorg/eclipse/e4/ui/model/application/MApplication;>;
+ ()Ljava/util/Optional<Lorg/eclipse/e4/ui/model/application/MApplication;>;
+getDialogSettingsProvider
+ (Lorg/osgi/framework/Bundle;)Lorg/eclipse/jface/dialogs/IDialogSettingsProvider;
+ (Lorg/osgi/framework/Bundle;)Lorg/eclipse/jface/dialogs/IDialogSettingsProvider;
+getPreferenceStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+getTestableObject
+ ()Lorg/eclipse/ui/testing/TestableObject;
+ ()Lorg/eclipse/ui/testing/TestableObject;
+getWorkbench
+ ()Lorg/eclipse/ui/IWorkbench;
+ ()Lorg/eclipse/ui/IWorkbench;

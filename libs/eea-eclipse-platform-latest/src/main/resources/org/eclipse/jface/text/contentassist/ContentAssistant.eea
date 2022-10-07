@@ -1,0 +1,120 @@
+class org/eclipse/jface/text/contentassist/ContentAssistant
+
+SELECT_NEXT_PROPOSAL_COMMAND_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+SELECT_PREVIOUS_PROPOSAL_COMMAND_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+STORE_CONTEXT_SELECTOR_POPUP_SIZE_X
+ Ljava/lang/String;
+ L1java/lang/String;
+STORE_CONTEXT_SELECTOR_POPUP_SIZE_Y
+ Ljava/lang/String;
+ L1java/lang/String;
+STORE_SIZE_X
+ Ljava/lang/String;
+ L1java/lang/String;
+STORE_SIZE_Y
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addCompletionListener
+ (Lorg/eclipse/jface/text/contentassist/ICompletionListener;)V
+ (Lorg/eclipse/jface/text/contentassist/ICompletionListener;)V
+addContentAssistProcessor
+ (Lorg/eclipse/jface/text/contentassist/IContentAssistProcessor;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/contentassist/IContentAssistProcessor;Ljava/lang/String;)V
+completePrefix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+createAutoAssistListener
+ ()Lorg/eclipse/jface/text/contentassist/ContentAssistant$AutoAssistListener;
+ ()Lorg/eclipse/jface/text/contentassist/ContentAssistant$AutoAssistListener;
+getContentAssistProcessor
+ (Ljava/lang/String;)Lorg/eclipse/jface/text/contentassist/IContentAssistProcessor;
+ (Ljava/lang/String;)Lorg/eclipse/jface/text/contentassist/IContentAssistProcessor;
+getDocumentPartitioning
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getHandler
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/IHandler;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/IHandler;
+install
+ (Lorg/eclipse/jface/contentassist/IContentAssistSubjectControl;)V
+ (Lorg/eclipse/jface/contentassist/IContentAssistSubjectControl;)V
+install
+ (Lorg/eclipse/jface/text/ITextViewer;)V
+ (Lorg/eclipse/jface/text/ITextViewer;)V
+registerHandler
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;)V
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;)V
+removeCompletionListener
+ (Lorg/eclipse/jface/text/contentassist/ICompletionListener;)V
+ (Lorg/eclipse/jface/text/contentassist/ICompletionListener;)V
+removeContentAssistProcessor
+ (Lorg/eclipse/jface/text/contentassist/IContentAssistProcessor;)V
+ (Lorg/eclipse/jface/text/contentassist/IContentAssistProcessor;)V
+requestWidgetToken
+ (Lorg/eclipse/jface/text/IWidgetTokenOwner;)Z
+ (Lorg/eclipse/jface/text/IWidgetTokenOwner;)Z
+requestWidgetToken
+ (Lorg/eclipse/jface/text/IWidgetTokenOwner;I)Z
+ (Lorg/eclipse/jface/text/IWidgetTokenOwner;I)Z
+restoreCompletionProposalPopupSize
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+restoreContextSelectorPopupSize
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+setContentAssistProcessor
+ (Lorg/eclipse/jface/text/contentassist/IContentAssistProcessor;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/contentassist/IContentAssistProcessor;Ljava/lang/String;)V
+setContextInformationPopupBackground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setContextInformationPopupForeground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setContextSelectorBackground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setContextSelectorForeground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setDocumentPartitioning
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setEmptyMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setFocus
+ (Lorg/eclipse/jface/text/IWidgetTokenOwner;)Z
+ (Lorg/eclipse/jface/text/IWidgetTokenOwner;)Z
+setInformationControlCreator
+ (Lorg/eclipse/jface/text/IInformationControlCreator;)V
+ (Lorg/eclipse/jface/text/IInformationControlCreator;)V
+setProposalSelectorBackground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setProposalSelectorForeground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setRepeatedInvocationTrigger
+ (Lorg/eclipse/jface/bindings/keys/KeySequence;)V
+ (Lorg/eclipse/jface/bindings/keys/KeySequence;)V
+setRestoreCompletionProposalSize
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+setSorter
+ (Lorg/eclipse/jface/text/contentassist/ICompletionProposalSorter;)V
+ (Lorg/eclipse/jface/text/contentassist/ICompletionProposalSorter;)V
+setStatusMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+showContextInformation
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+showPossibleCompletions
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;

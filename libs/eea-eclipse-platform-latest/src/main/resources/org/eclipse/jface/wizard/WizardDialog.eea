@@ -1,0 +1,81 @@
+class org/eclipse/jface/wizard/WizardDialog
+
+WIZ_IMG_ERROR
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/jface/wizard/IWizard;)V
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/jface/wizard/IWizard;)V
+addPageChangedListener
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+addPageChangingListener
+ (Lorg/eclipse/jface/dialogs/IPageChangingListener;)V
+ (Lorg/eclipse/jface/dialogs/IPageChangingListener;)V
+configureShell
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+createButtonsForButtonBar
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createContents
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+createDialogArea
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+createProgressMonitorPart
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/swt/layout/GridLayout;)Lorg/eclipse/jface/wizard/ProgressMonitorPart;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/swt/layout/GridLayout;)Lorg/eclipse/jface/wizard/ProgressMonitorPart;
+firePageChanged
+ (Lorg/eclipse/jface/dialogs/PageChangedEvent;)V
+ (Lorg/eclipse/jface/dialogs/PageChangedEvent;)V
+firePageChanging
+ (Lorg/eclipse/jface/dialogs/PageChangingEvent;)V
+ (Lorg/eclipse/jface/dialogs/PageChangingEvent;)V
+getButton
+ (I)Lorg/eclipse/swt/widgets/Button;
+ (I)Lorg/eclipse/swt/widgets/Button;
+getCurrentPage
+ ()Lorg/eclipse/jface/wizard/IWizardPage;
+ ()Lorg/eclipse/jface/wizard/IWizardPage;
+getProgressMonitor
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+getSelectedPage
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getWizard
+ ()Lorg/eclipse/jface/wizard/IWizard;
+ ()Lorg/eclipse/jface/wizard/IWizard;
+removePageChangedListener
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+removePageChangingListener
+ (Lorg/eclipse/jface/dialogs/IPageChangingListener;)V
+ (Lorg/eclipse/jface/dialogs/IPageChangingListener;)V
+run
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+setButtonLayoutData
+ (Lorg/eclipse/swt/widgets/Button;)V
+ (Lorg/eclipse/swt/widgets/Button;)V
+setMinimumPageSize
+ (Lorg/eclipse/swt/graphics/Point;)V
+ (Lorg/eclipse/swt/graphics/Point;)V
+setModal
+ (Z)Lorg/eclipse/jface/wizard/WizardDialog;
+ (Z)Lorg/eclipse/jface/wizard/WizardDialog;
+setPageSize
+ (Lorg/eclipse/swt/graphics/Point;)V
+ (Lorg/eclipse/swt/graphics/Point;)V
+setWizard
+ (Lorg/eclipse/jface/wizard/IWizard;)V
+ (Lorg/eclipse/jface/wizard/IWizard;)V
+showPage
+ (Lorg/eclipse/jface/wizard/IWizardPage;)V
+ (Lorg/eclipse/jface/wizard/IWizardPage;)V
+updateSize
+ (Lorg/eclipse/jface/wizard/IWizardPage;)V
+ (Lorg/eclipse/jface/wizard/IWizardPage;)V

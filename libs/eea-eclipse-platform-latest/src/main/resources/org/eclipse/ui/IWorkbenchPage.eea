@@ -1,0 +1,222 @@
+class org/eclipse/ui/IWorkbenchPage
+
+CHANGE_ACTION_SET_HIDE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_ACTION_SET_SHOW
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_EDITOR_AREA_HIDE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_EDITOR_AREA_SHOW
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_EDITOR_CLOSE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_EDITOR_OPEN
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_FAST_VIEW_ADD
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_FAST_VIEW_REMOVE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_RESET
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_RESET_COMPLETE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_VIEW_HIDE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_VIEW_SHOW
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_WORKING_SETS_REPLACE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_WORKING_SET_REPLACE
+ Ljava/lang/String;
+ L1java/lang/String;
+EDITOR_ID_ATTR
+ Ljava/lang/String;
+ L1java/lang/String;
+
+activate
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+addPropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+bringToTop
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+closeEditor
+ (Lorg/eclipse/ui/IEditorPart;Z)Z
+ (Lorg/eclipse/ui/IEditorPart;Z)Z
+closeEditors
+ ([Lorg/eclipse/ui/IEditorReference;Z)Z
+ ([Lorg/eclipse/ui/IEditorReference;Z)Z
+closePerspective
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;ZZ)V
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;ZZ)V
+findEditor
+ (Lorg/eclipse/ui/IEditorInput;)Lorg/eclipse/ui/IEditorPart;
+ (Lorg/eclipse/ui/IEditorInput;)Lorg/eclipse/ui/IEditorPart;
+findEditors
+ (Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;I)[Lorg/eclipse/ui/IEditorReference;
+ (Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;I)[Lorg/eclipse/ui/IEditorReference;
+findView
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewPart;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewPart;
+findViewReference
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewReference;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewReference;
+findViewReference
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/ui/IViewReference;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/ui/IViewReference;
+getActiveEditor
+ ()Lorg/eclipse/ui/IEditorPart;
+ ()Lorg/eclipse/ui/IEditorPart;
+getAggregateWorkingSet
+ ()Lorg/eclipse/ui/IWorkingSet;
+ ()Lorg/eclipse/ui/IWorkingSet;
+getDirtyEditors
+ ()[Lorg/eclipse/ui/IEditorPart;
+ ()[Lorg/eclipse/ui/IEditorPart;
+getEditorReferences
+ ()[Lorg/eclipse/ui/IEditorReference;
+ ()[Lorg/eclipse/ui/IEditorReference;
+getEditorState
+ ([Lorg/eclipse/ui/IEditorReference;Z)[Lorg/eclipse/ui/IMemento;
+ ([Lorg/eclipse/ui/IEditorReference;Z)[Lorg/eclipse/ui/IMemento;
+getEditors
+ ()[Lorg/eclipse/ui/IEditorPart;
+ ()[Lorg/eclipse/ui/IEditorPart;
+getExtensionTracker
+ ()Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;
+ ()Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;
+getInput
+ ()Lorg/eclipse/core/runtime/IAdaptable;
+ ()Lorg/eclipse/core/runtime/IAdaptable;
+getLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getNavigationHistory
+ ()Lorg/eclipse/ui/INavigationHistory;
+ ()Lorg/eclipse/ui/INavigationHistory;
+getNewWizardShortcuts
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getOpenPerspectives
+ ()[Lorg/eclipse/ui/IPerspectiveDescriptor;
+ ()[Lorg/eclipse/ui/IPerspectiveDescriptor;
+getPartState
+ (Lorg/eclipse/ui/IWorkbenchPartReference;)I
+ (Lorg/eclipse/ui/IWorkbenchPartReference;)I
+getPerspective
+ ()Lorg/eclipse/ui/IPerspectiveDescriptor;
+ ()Lorg/eclipse/ui/IPerspectiveDescriptor;
+getPerspectiveShortcuts
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getReference
+ (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/IWorkbenchPartReference;
+ (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/IWorkbenchPartReference;
+getShowViewShortcuts
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getSortedPerspectives
+ ()[Lorg/eclipse/ui/IPerspectiveDescriptor;
+ ()[Lorg/eclipse/ui/IPerspectiveDescriptor;
+getViewReferences
+ ()[Lorg/eclipse/ui/IViewReference;
+ ()[Lorg/eclipse/ui/IViewReference;
+getViewStack
+ (Lorg/eclipse/ui/IViewPart;)[Lorg/eclipse/ui/IViewPart;
+ (Lorg/eclipse/ui/IViewPart;)[Lorg/eclipse/ui/IViewPart;
+getViews
+ ()[Lorg/eclipse/ui/IViewPart;
+ ()[Lorg/eclipse/ui/IViewPart;
+getWorkbenchWindow
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+getWorkingSet
+ ()Lorg/eclipse/ui/IWorkingSet;
+ ()Lorg/eclipse/ui/IWorkingSet;
+getWorkingSets
+ ()[Lorg/eclipse/ui/IWorkingSet;
+ ()[Lorg/eclipse/ui/IWorkingSet;
+hideActionSet
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+hideEditor
+ (Lorg/eclipse/ui/IEditorReference;)V
+ (Lorg/eclipse/ui/IEditorReference;)V
+hideView
+ (Lorg/eclipse/ui/IViewPart;)V
+ (Lorg/eclipse/ui/IViewPart;)V
+hideView
+ (Lorg/eclipse/ui/IViewReference;)V
+ (Lorg/eclipse/ui/IViewReference;)V
+isEditorPinned
+ (Lorg/eclipse/ui/IEditorPart;)Z
+ (Lorg/eclipse/ui/IEditorPart;)Z
+isPartVisible
+ (Lorg/eclipse/ui/IWorkbenchPart;)Z
+ (Lorg/eclipse/ui/IWorkbenchPart;)Z
+openEditor
+ (Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;)Lorg/eclipse/ui/IEditorPart;
+ (Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;)Lorg/eclipse/ui/IEditorPart;
+openEditor
+ (Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;Z)Lorg/eclipse/ui/IEditorPart;
+ (Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;Z)Lorg/eclipse/ui/IEditorPart;
+openEditor
+ (Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;ZI)Lorg/eclipse/ui/IEditorPart;
+ (Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;ZI)Lorg/eclipse/ui/IEditorPart;
+openEditors
+ ([Lorg/eclipse/ui/IEditorInput;[Ljava/lang/String;I)[Lorg/eclipse/ui/IEditorReference;
+ ([Lorg/eclipse/ui/IEditorInput;[Ljava/lang/String;I)[Lorg/eclipse/ui/IEditorReference;
+openEditors
+ ([Lorg/eclipse/ui/IEditorInput;[Ljava/lang/String;[Lorg/eclipse/ui/IMemento;II)[Lorg/eclipse/ui/IEditorReference;
+ ([Lorg/eclipse/ui/IEditorInput;[Ljava/lang/String;[Lorg/eclipse/ui/IMemento;II)[Lorg/eclipse/ui/IEditorReference;
+removePropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+reuseEditor
+ (Lorg/eclipse/ui/IReusableEditor;Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IReusableEditor;Lorg/eclipse/ui/IEditorInput;)V
+saveEditor
+ (Lorg/eclipse/ui/IEditorPart;Z)Z
+ (Lorg/eclipse/ui/IEditorPart;Z)Z
+savePerspectiveAs
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+setPartState
+ (Lorg/eclipse/ui/IWorkbenchPartReference;I)V
+ (Lorg/eclipse/ui/IWorkbenchPartReference;I)V
+setPerspective
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+setWorkingSets
+ ([Lorg/eclipse/ui/IWorkingSet;)V
+ ([Lorg/eclipse/ui/IWorkingSet;)V
+showActionSet
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+showEditor
+ (Lorg/eclipse/ui/IEditorReference;)V
+ (Lorg/eclipse/ui/IEditorReference;)V
+showView
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewPart;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewPart;
+showView
+ (Ljava/lang/String;Ljava/lang/String;I)Lorg/eclipse/ui/IViewPart;
+ (Ljava/lang/String;Ljava/lang/String;I)Lorg/eclipse/ui/IViewPart;
+toggleZoom
+ (Lorg/eclipse/ui/IWorkbenchPartReference;)V
+ (Lorg/eclipse/ui/IWorkbenchPartReference;)V

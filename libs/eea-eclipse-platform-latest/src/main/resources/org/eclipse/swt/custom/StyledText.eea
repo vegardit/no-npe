@@ -1,0 +1,251 @@
+class org/eclipse/swt/custom/StyledText
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+addBidiSegmentListener
+ (Lorg/eclipse/swt/custom/BidiSegmentListener;)V
+ (Lorg/eclipse/swt/custom/BidiSegmentListener;)V
+addCaretListener
+ (Lorg/eclipse/swt/custom/CaretListener;)V
+ (Lorg/eclipse/swt/custom/CaretListener;)V
+addExtendedModifyListener
+ (Lorg/eclipse/swt/custom/ExtendedModifyListener;)V
+ (Lorg/eclipse/swt/custom/ExtendedModifyListener;)V
+addLineBackgroundListener
+ (Lorg/eclipse/swt/custom/LineBackgroundListener;)V
+ (Lorg/eclipse/swt/custom/LineBackgroundListener;)V
+addLineStyleListener
+ (Lorg/eclipse/swt/custom/LineStyleListener;)V
+ (Lorg/eclipse/swt/custom/LineStyleListener;)V
+addModifyListener
+ (Lorg/eclipse/swt/events/ModifyListener;)V
+ (Lorg/eclipse/swt/events/ModifyListener;)V
+addPaintObjectListener
+ (Lorg/eclipse/swt/custom/PaintObjectListener;)V
+ (Lorg/eclipse/swt/custom/PaintObjectListener;)V
+addSelectionListener
+ (Lorg/eclipse/swt/events/SelectionListener;)V
+ (Lorg/eclipse/swt/events/SelectionListener;)V
+addVerifyKeyListener
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+addVerifyListener
+ (Lorg/eclipse/swt/events/VerifyListener;)V
+ (Lorg/eclipse/swt/events/VerifyListener;)V
+addWordMovementListener
+ (Lorg/eclipse/swt/custom/MovementListener;)V
+ (Lorg/eclipse/swt/custom/MovementListener;)V
+append
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+computeSize
+ (IIZ)Lorg/eclipse/swt/graphics/Point;
+ (IIZ)Lorg/eclipse/swt/graphics/Point;
+getBackground
+ ()Lorg/eclipse/swt/graphics/Color;
+ ()Lorg/eclipse/swt/graphics/Color;
+getBlockSelectionBounds
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+getContent
+ ()Lorg/eclipse/swt/custom/StyledTextContent;
+ ()Lorg/eclipse/swt/custom/StyledTextContent;
+getForeground
+ ()Lorg/eclipse/swt/graphics/Color;
+ ()Lorg/eclipse/swt/graphics/Color;
+getLine
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;
+getLineBackground
+ (I)Lorg/eclipse/swt/graphics/Color;
+ (I)Lorg/eclipse/swt/graphics/Color;
+getLineBullet
+ (I)Lorg/eclipse/swt/custom/Bullet;
+ (I)Lorg/eclipse/swt/custom/Bullet;
+getLineDelimiter
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLineTabStops
+ (I)[I
+ (I)[I
+getLocationAtOffset
+ (I)Lorg/eclipse/swt/graphics/Point;
+ (I)Lorg/eclipse/swt/graphics/Point;
+getMarginColor
+ ()Lorg/eclipse/swt/graphics/Color;
+ ()Lorg/eclipse/swt/graphics/Color;
+getOffsetAtLocation
+ (Lorg/eclipse/swt/graphics/Point;)I
+ (Lorg/eclipse/swt/graphics/Point;)I
+getOffsetAtPoint
+ (Lorg/eclipse/swt/graphics/Point;)I
+ (Lorg/eclipse/swt/graphics/Point;)I
+getRanges
+ ()[I
+ ()[I
+getRanges
+ (II)[I
+ (II)[I
+getSelection
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+getSelectionBackground
+ ()Lorg/eclipse/swt/graphics/Color;
+ ()Lorg/eclipse/swt/graphics/Color;
+getSelectionForeground
+ ()Lorg/eclipse/swt/graphics/Color;
+ ()Lorg/eclipse/swt/graphics/Color;
+getSelectionRange
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+getSelectionRanges
+ ()[I
+ ()[I
+getSelectionText
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getStyleRangeAtOffset
+ (I)Lorg/eclipse/swt/custom/StyleRange;
+ (I)Lorg/eclipse/swt/custom/StyleRange;
+getStyleRanges
+ ()[Lorg/eclipse/swt/custom/StyleRange;
+ ()[Lorg/eclipse/swt/custom/StyleRange;
+getStyleRanges
+ (II)[Lorg/eclipse/swt/custom/StyleRange;
+ (II)[Lorg/eclipse/swt/custom/StyleRange;
+getStyleRanges
+ (IIZ)[Lorg/eclipse/swt/custom/StyleRange;
+ (IIZ)[Lorg/eclipse/swt/custom/StyleRange;
+getStyleRanges
+ (Z)[Lorg/eclipse/swt/custom/StyleRange;
+ (Z)[Lorg/eclipse/swt/custom/StyleRange;
+getTabStops
+ ()[I
+ ()[I
+getText
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getText
+ (II)Ljava/lang/String;
+ (II)Ljava/lang/String;
+getTextBounds
+ (II)Lorg/eclipse/swt/graphics/Rectangle;
+ (II)Lorg/eclipse/swt/graphics/Rectangle;
+getTextRange
+ (II)Ljava/lang/String;
+ (II)Ljava/lang/String;
+insert
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+print
+ (Lorg/eclipse/swt/printing/Printer;)Ljava/lang/Runnable;
+ (Lorg/eclipse/swt/printing/Printer;)Ljava/lang/Runnable;
+print
+ (Lorg/eclipse/swt/printing/Printer;Lorg/eclipse/swt/custom/StyledTextPrintOptions;)Ljava/lang/Runnable;
+ (Lorg/eclipse/swt/printing/Printer;Lorg/eclipse/swt/custom/StyledTextPrintOptions;)Ljava/lang/Runnable;
+removeBidiSegmentListener
+ (Lorg/eclipse/swt/custom/BidiSegmentListener;)V
+ (Lorg/eclipse/swt/custom/BidiSegmentListener;)V
+removeCaretListener
+ (Lorg/eclipse/swt/custom/CaretListener;)V
+ (Lorg/eclipse/swt/custom/CaretListener;)V
+removeExtendedModifyListener
+ (Lorg/eclipse/swt/custom/ExtendedModifyListener;)V
+ (Lorg/eclipse/swt/custom/ExtendedModifyListener;)V
+removeLineBackgroundListener
+ (Lorg/eclipse/swt/custom/LineBackgroundListener;)V
+ (Lorg/eclipse/swt/custom/LineBackgroundListener;)V
+removeLineStyleListener
+ (Lorg/eclipse/swt/custom/LineStyleListener;)V
+ (Lorg/eclipse/swt/custom/LineStyleListener;)V
+removeModifyListener
+ (Lorg/eclipse/swt/events/ModifyListener;)V
+ (Lorg/eclipse/swt/events/ModifyListener;)V
+removePaintObjectListener
+ (Lorg/eclipse/swt/custom/PaintObjectListener;)V
+ (Lorg/eclipse/swt/custom/PaintObjectListener;)V
+removeSelectionListener
+ (Lorg/eclipse/swt/events/SelectionListener;)V
+ (Lorg/eclipse/swt/events/SelectionListener;)V
+removeVerifyKeyListener
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+removeVerifyListener
+ (Lorg/eclipse/swt/events/VerifyListener;)V
+ (Lorg/eclipse/swt/events/VerifyListener;)V
+removeWordMovementListener
+ (Lorg/eclipse/swt/custom/MovementListener;)V
+ (Lorg/eclipse/swt/custom/MovementListener;)V
+replaceStyleRanges
+ (II[Lorg/eclipse/swt/custom/StyleRange;)V
+ (II[Lorg/eclipse/swt/custom/StyleRange;)V
+replaceTextRange
+ (IILjava/lang/String;)V
+ (IILjava/lang/String;)V
+setBackground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setBlockSelectionBounds
+ (Lorg/eclipse/swt/graphics/Rectangle;)V
+ (Lorg/eclipse/swt/graphics/Rectangle;)V
+setCaret
+ (Lorg/eclipse/swt/widgets/Caret;)V
+ (Lorg/eclipse/swt/widgets/Caret;)V
+setContent
+ (Lorg/eclipse/swt/custom/StyledTextContent;)V
+ (Lorg/eclipse/swt/custom/StyledTextContent;)V
+setCursor
+ (Lorg/eclipse/swt/graphics/Cursor;)V
+ (Lorg/eclipse/swt/graphics/Cursor;)V
+setFont
+ (Lorg/eclipse/swt/graphics/Font;)V
+ (Lorg/eclipse/swt/graphics/Font;)V
+setForeground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setLineBackground
+ (IILorg/eclipse/swt/graphics/Color;)V
+ (IILorg/eclipse/swt/graphics/Color;)V
+setLineBullet
+ (IILorg/eclipse/swt/custom/Bullet;)V
+ (IILorg/eclipse/swt/custom/Bullet;)V
+setLineSpacingProvider
+ (Lorg/eclipse/swt/custom/StyledTextLineSpacingProvider;)V
+ (Lorg/eclipse/swt/custom/StyledTextLineSpacingProvider;)V
+setLineTabStops
+ (II[I)V
+ (II[I)V
+setMarginColor
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setSelection
+ (Lorg/eclipse/swt/graphics/Point;)V
+ (Lorg/eclipse/swt/graphics/Point;)V
+setSelectionBackground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setSelectionForeground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setSelectionRanges
+ ([I)V
+ ([I)V
+setStyleRange
+ (Lorg/eclipse/swt/custom/StyleRange;)V
+ (Lorg/eclipse/swt/custom/StyleRange;)V
+setStyleRanges
+ (II[I[Lorg/eclipse/swt/custom/StyleRange;)V
+ (II[I[Lorg/eclipse/swt/custom/StyleRange;)V
+setStyleRanges
+ ([I[Lorg/eclipse/swt/custom/StyleRange;)V
+ ([I[Lorg/eclipse/swt/custom/StyleRange;)V
+setStyleRanges
+ ([Lorg/eclipse/swt/custom/StyleRange;)V
+ ([Lorg/eclipse/swt/custom/StyleRange;)V
+setTabStops
+ ([I)V
+ ([I)V
+setText
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

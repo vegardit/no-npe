@@ -1,0 +1,24 @@
+class org/eclipse/ui/actions/PerspectiveMenu
+
+SHOW_PERSP_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/ui/IWorkbenchWindow;Ljava/lang/String;)V
+ (Lorg/eclipse/ui/IWorkbenchWindow;Ljava/lang/String;)V
+fill
+ (Lorg/eclipse/swt/widgets/Menu;I)V
+ (Lorg/eclipse/swt/widgets/Menu;I)V
+getPerspectiveItems
+ ()Ljava/util/ArrayList<Lorg/eclipse/ui/IPerspectiveDescriptor;>;
+ ()Ljava/util/ArrayList<Lorg/eclipse/ui/IPerspectiveDescriptor;>;
+getWindow
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+run
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+run
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/ui/IPerspectiveDescriptor;Lorg/eclipse/swt/events/SelectionEvent;)V

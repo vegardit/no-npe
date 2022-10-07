@@ -1,0 +1,51 @@
+class org/eclipse/core/runtime/SubMonitor
+
+convert
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/SubMonitor;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/SubMonitor;
+convert
+ (Lorg/eclipse/core/runtime/IProgressMonitor;I)Lorg/eclipse/core/runtime/SubMonitor;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;I)Lorg/eclipse/core/runtime/SubMonitor;
+convert
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/String;I)Lorg/eclipse/core/runtime/SubMonitor;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/String;I)Lorg/eclipse/core/runtime/SubMonitor;
+done
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+eq
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+
+beginTask
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+checkCanceled
+ ()Lorg/eclipse/core/runtime/SubMonitor;
+ ()Lorg/eclipse/core/runtime/SubMonitor;
+newChild
+ (I)Lorg/eclipse/core/runtime/SubMonitor;
+ (I)Lorg/eclipse/core/runtime/SubMonitor;
+newChild
+ (II)Lorg/eclipse/core/runtime/SubMonitor;
+ (II)Lorg/eclipse/core/runtime/SubMonitor;
+setBlocked
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V
+setTaskName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setWorkRemaining
+ (I)Lorg/eclipse/core/runtime/SubMonitor;
+ (I)Lorg/eclipse/core/runtime/SubMonitor;
+split
+ (I)Lorg/eclipse/core/runtime/SubMonitor;
+ (I)Lorg/eclipse/core/runtime/SubMonitor;
+split
+ (II)Lorg/eclipse/core/runtime/SubMonitor;
+ (II)Lorg/eclipse/core/runtime/SubMonitor;
+subTask
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

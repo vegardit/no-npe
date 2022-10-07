@@ -1,0 +1,36 @@
+class org/eclipse/ui/contexts/IWorkbenchContextSupport
+
+CONTEXT_ID_DIALOG
+ Ljava/lang/String;
+ L1java/lang/String;
+CONTEXT_ID_DIALOG_AND_WINDOW
+ Ljava/lang/String;
+ L1java/lang/String;
+CONTEXT_ID_WINDOW
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addEnabledSubmission
+ (Lorg/eclipse/ui/contexts/EnabledSubmission;)V
+ (Lorg/eclipse/ui/contexts/EnabledSubmission;)V
+addEnabledSubmissions
+ (Ljava/util/Collection;)V
+ (Ljava/util/Collection;)V
+getContextManager
+ ()Lorg/eclipse/ui/contexts/IContextManager;
+ ()Lorg/eclipse/ui/contexts/IContextManager;
+getShellType
+ (Lorg/eclipse/swt/widgets/Shell;)I
+ (Lorg/eclipse/swt/widgets/Shell;)I
+registerShell
+ (Lorg/eclipse/swt/widgets/Shell;I)Z
+ (Lorg/eclipse/swt/widgets/Shell;I)Z
+removeEnabledSubmission
+ (Lorg/eclipse/ui/contexts/EnabledSubmission;)V
+ (Lorg/eclipse/ui/contexts/EnabledSubmission;)V
+removeEnabledSubmissions
+ (Ljava/util/Collection;)V
+ (Ljava/util/Collection;)V
+unregisterShell
+ (Lorg/eclipse/swt/widgets/Shell;)Z
+ (Lorg/eclipse/swt/widgets/Shell;)Z

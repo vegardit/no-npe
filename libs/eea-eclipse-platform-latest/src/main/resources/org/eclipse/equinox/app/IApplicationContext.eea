@@ -1,0 +1,36 @@
+class org/eclipse/equinox/app/IApplicationContext
+
+APPLICATION_ARGS
+ Ljava/lang/String;
+ L1java/lang/String;
+EXIT_ASYNC_RESULT
+ Ljava/lang/Object;
+ L1java/lang/Object;
+EXIT_DATA_PROPERTY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getArguments
+ ()Ljava/util/Map;
+ ()Ljava/util/Map;
+getBrandingApplication
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getBrandingBundle
+ ()Lorg/osgi/framework/Bundle;
+ ()Lorg/osgi/framework/Bundle;
+getBrandingDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getBrandingId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getBrandingName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getBrandingProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+setResult
+ (Ljava/lang/Object;Lorg/eclipse/equinox/app/IApplication;)V
+ (Ljava/lang/Object;Lorg/eclipse/equinox/app/IApplication;)V

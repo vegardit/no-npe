@@ -1,0 +1,39 @@
+class org/eclipse/core/filebuffers/ITextFileBufferManager
+
+DEFAULT
+ Lorg/eclipse/core/filebuffers/ITextFileBufferManager;
+ L1org/eclipse/core/filebuffers/ITextFileBufferManager;
+
+createAnnotationModel
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+createAnnotationModel
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+createEmptyDocument
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jface/text/IDocument;
+createEmptyDocument
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/jface/text/IDocument;
+getDefaultEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFileStoreTextFileBuffer
+ (Lorg/eclipse/core/filesystem/IFileStore;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+ (Lorg/eclipse/core/filesystem/IFileStore;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+getTextFileBuffer
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+getTextFileBuffer
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+getTextFileBuffer
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+isTextFileLocation
+ (Lorg/eclipse/core/runtime/IPath;)Z
+ (Lorg/eclipse/core/runtime/IPath;)Z
+isTextFileLocation
+ (Lorg/eclipse/core/runtime/IPath;Z)Z
+ (Lorg/eclipse/core/runtime/IPath;Z)Z

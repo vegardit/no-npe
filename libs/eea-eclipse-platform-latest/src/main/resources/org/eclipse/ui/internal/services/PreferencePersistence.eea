@@ -1,0 +1,36 @@
+class org/eclipse/ui/internal/services/PreferencePersistence
+
+addElementToIndexedArray
+ (Lorg/eclipse/ui/IMemento;[[Lorg/eclipse/ui/IMemento;II)V
+ (Lorg/eclipse/ui/IMemento;[[Lorg/eclipse/ui/IMemento;II)V
+addWarning
+ (Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;)V
+ (Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;)V
+addWarning
+ (Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;Ljava/lang/String;)V
+addWarning
+ (Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+readBoolean
+ (Lorg/eclipse/ui/IMemento;Ljava/lang/String;Z)Z
+ (Lorg/eclipse/ui/IMemento;Ljava/lang/String;Z)Z
+readOptional
+ (Lorg/eclipse/ui/IMemento;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/ui/IMemento;Ljava/lang/String;)Ljava/lang/String;
+readParameterizedCommand
+ (Lorg/eclipse/ui/IMemento;Lorg/eclipse/ui/commands/ICommandService;Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/commands/ParameterizedCommand;
+ (Lorg/eclipse/ui/IMemento;Lorg/eclipse/ui/commands/ICommandService;Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/commands/ParameterizedCommand;
+readParameters
+ (Lorg/eclipse/ui/IMemento;Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Lorg/eclipse/core/commands/Command;)Lorg/eclipse/core/commands/ParameterizedCommand;
+ (Lorg/eclipse/ui/IMemento;Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Lorg/eclipse/core/commands/Command;)Lorg/eclipse/core/commands/ParameterizedCommand;
+readRequired
+ (Lorg/eclipse/ui/IMemento;Ljava/lang/String;Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/ui/IMemento;Ljava/lang/String;Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;)Ljava/lang/String;
+readRequired
+ (Lorg/eclipse/ui/IMemento;Ljava/lang/String;Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/ui/IMemento;Ljava/lang/String;Ljava/util/List<Lorg/eclipse/core/runtime/IStatus;>;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+isChangeImportant
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)Z
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)Z

@@ -1,0 +1,27 @@
+class org/eclipse/core/databinding/observable/value/DecoratingObservableValue
+ <T:Ljava/lang/Object;>
+
+<init>
+ (Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;Z)V
+ (Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;Z)V
+addValueChangeListener
+ (Lorg/eclipse/core/databinding/observable/value/IValueChangeListener<-TT;>;)V
+ (Lorg/eclipse/core/databinding/observable/value/IValueChangeListener<-TT;>;)V
+fireValueChange
+ (Lorg/eclipse/core/databinding/observable/value/ValueDiff<TT;>;)V
+ (Lorg/eclipse/core/databinding/observable/value/ValueDiff<TT;>;)V
+getValue
+ ()TT;
+ ()TT;
+getValueType
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+handleValueChange
+ (Lorg/eclipse/core/databinding/observable/value/ValueChangeEvent<+TT;>;)V
+ (Lorg/eclipse/core/databinding/observable/value/ValueChangeEvent<+TT;>;)V
+removeValueChangeListener
+ (Lorg/eclipse/core/databinding/observable/value/IValueChangeListener<-TT;>;)V
+ (Lorg/eclipse/core/databinding/observable/value/IValueChangeListener<-TT;>;)V
+setValue
+ (TT;)V
+ (TT;)V

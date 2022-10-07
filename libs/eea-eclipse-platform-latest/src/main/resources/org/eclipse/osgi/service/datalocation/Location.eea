@@ -1,0 +1,66 @@
+class org/eclipse/osgi/service/datalocation/Location
+
+CONFIGURATION_AREA_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+CONFIGURATION_FILTER
+ Ljava/lang/String;
+ L1java/lang/String;
+ECLIPSE_HOME_FILTER
+ Ljava/lang/String;
+ L1java/lang/String;
+ECLIPSE_HOME_LOCATION_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+INSTALL_AREA_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+INSTALL_FILTER
+ Ljava/lang/String;
+ L1java/lang/String;
+INSTANCE_AREA_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+INSTANCE_FILTER
+ Ljava/lang/String;
+ L1java/lang/String;
+SERVICE_PROPERTY_DEFAULT_URL
+ Ljava/lang/String;
+ L1java/lang/String;
+SERVICE_PROPERTY_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+SERVICE_PROPERTY_URL
+ Ljava/lang/String;
+ L1java/lang/String;
+USER_AREA_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+USER_FILTER
+ Ljava/lang/String;
+ L1java/lang/String;
+
+createLocation
+ (Lorg/eclipse/osgi/service/datalocation/Location;Ljava/net/URL;Z)Lorg/eclipse/osgi/service/datalocation/Location;
+ (Lorg/eclipse/osgi/service/datalocation/Location;Ljava/net/URL;Z)Lorg/eclipse/osgi/service/datalocation/Location;
+getDataArea
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+getDefault
+ ()Ljava/net/URL;
+ ()Ljava/net/URL;
+getParentLocation
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+getURL
+ ()Ljava/net/URL;
+ ()Ljava/net/URL;
+set
+ (Ljava/net/URL;Z)Z
+ (Ljava/net/URL;Z)Z
+set
+ (Ljava/net/URL;ZLjava/lang/String;)Z
+ (Ljava/net/URL;ZLjava/lang/String;)Z
+setURL
+ (Ljava/net/URL;Z)Z
+ (Ljava/net/URL;Z)Z

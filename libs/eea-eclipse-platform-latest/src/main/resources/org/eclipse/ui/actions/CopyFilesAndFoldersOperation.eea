@@ -1,0 +1,77 @@
+class org/eclipse/ui/actions/CopyFilesAndFoldersOperation
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+copy
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+copyFiles
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;)V
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;)V
+copyFiles
+ ([Ljava/net/URI;Lorg/eclipse/core/resources/IContainer;)V
+ ([Ljava/net/URI;Lorg/eclipse/core/resources/IContainer;)V
+copyFilesInCurrentThread
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+copyFilesInCurrentThread
+ ([Ljava/net/URI;Lorg/eclipse/core/resources/IContainer;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Ljava/net/URI;Lorg/eclipse/core/resources/IContainer;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+copyOrLinkFiles
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;I)V
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;I)V
+copyResources
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)[Lorg/eclipse/core/resources/IResource;
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)[Lorg/eclipse/core/resources/IResource;
+copyResourcesInCurrentThread
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IResource;
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IResource;
+createVirtualFoldersAndLinks
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;)V
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;)V
+getDeepCheckQuestion
+ (Lorg/eclipse/core/resources/IResource;)Ljava/lang/String;
+ (Lorg/eclipse/core/resources/IResource;)Ljava/lang/String;
+getFile
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/resources/IFile;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/resources/IFile;
+getFiles
+ ([Ljava/lang/String;)[Ljava/io/File;
+ ([Ljava/lang/String;)[Ljava/io/File;
+getFolder
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/resources/IFolder;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/resources/IFolder;
+getModelProviderIds
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getOperationTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProblemsMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProblemsTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getUndoableCopyOrMoveOperation
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/ui/ide/undo/AbstractWorkspaceOperation;
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/ui/ide/undo/AbstractWorkspaceOperation;
+homogenousResources
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;)Z
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;)Z
+linkFiles
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;)V
+ ([Ljava/lang/String;Lorg/eclipse/core/resources/IContainer;)V
+setModelProviderIds
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setRelativeVariable
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+validateDestination
+ (Lorg/eclipse/core/resources/IContainer;[Lorg/eclipse/core/resources/IResource;)Ljava/lang/String;
+ (Lorg/eclipse/core/resources/IContainer;[Lorg/eclipse/core/resources/IResource;)Ljava/lang/String;
+validateImportDestination
+ (Lorg/eclipse/core/resources/IContainer;[Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/core/resources/IContainer;[Ljava/lang/String;)Ljava/lang/String;

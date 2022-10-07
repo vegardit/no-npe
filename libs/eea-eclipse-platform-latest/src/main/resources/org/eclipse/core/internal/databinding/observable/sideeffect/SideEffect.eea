@@ -1,0 +1,25 @@
+class org/eclipse/core/internal/databinding/observable/sideeffect/SideEffect
+
+NULL_SIDE_EFFECT
+ Lorg/eclipse/core/databinding/observable/sideeffect/ISideEffect;
+ L1org/eclipse/core/databinding/observable/sideeffect/ISideEffect;
+
+makeRunnable
+ <T:Ljava/lang/Object;>(Ljava/util/function/Supplier<TT;>;Ljava/util/function/Consumer<TT;>;)Ljava/lang/Runnable;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Supplier<TT;>;Ljava/util/function/Consumer<TT;>;)Ljava/lang/Runnable;
+
+<init>
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+<init>
+ (Ljava/lang/Runnable;[Lorg/eclipse/core/databinding/observable/IObservable;)V
+ (Ljava/lang/Runnable;[Lorg/eclipse/core/databinding/observable/IObservable;)V
+<init>
+ (Lorg/eclipse/core/databinding/observable/Realm;Ljava/lang/Runnable;)V
+ (Lorg/eclipse/core/databinding/observable/Realm;Ljava/lang/Runnable;)V
+addDisposeListener
+ (Ljava/util/function/Consumer<Lorg/eclipse/core/databinding/observable/sideeffect/ISideEffect;>;)V
+ (Ljava/util/function/Consumer<Lorg/eclipse/core/databinding/observable/sideeffect/ISideEffect;>;)V
+removeDisposeListener
+ (Ljava/util/function/Consumer<Lorg/eclipse/core/databinding/observable/sideeffect/ISideEffect;>;)V
+ (Ljava/util/function/Consumer<Lorg/eclipse/core/databinding/observable/sideeffect/ISideEffect;>;)V

@@ -1,0 +1,36 @@
+class org/eclipse/ui/editors/text/FileBufferOperationAction
+
+fFileBufferOperation
+ Lorg/eclipse/core/filebuffers/manipulation/IFileBufferOperation;
+ Lorg/eclipse/core/filebuffers/manipulation/IFileBufferOperation;
+
+<init>
+ (Lorg/eclipse/core/filebuffers/manipulation/IFileBufferOperation;)V
+ (Lorg/eclipse/core/filebuffers/manipulation/IFileBufferOperation;)V
+collectFiles
+ ([Lorg/eclipse/core/resources/IResource;)[Lorg/eclipse/core/resources/IFile;
+ ([Lorg/eclipse/core/resources/IResource;)[Lorg/eclipse/core/resources/IFile;
+doRun
+ ([Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/manipulation/IFileBufferOperation;)V
+ ([Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/manipulation/IFileBufferOperation;)V
+generateLocations
+ ([Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/runtime/IPath;
+ ([Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/runtime/IPath;
+getShell
+ ()Lorg/eclipse/swt/widgets/Shell;
+ ()Lorg/eclipse/swt/widgets/Shell;
+getWorkbenchWindow
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+init
+ (Lorg/eclipse/ui/IWorkbenchWindow;)V
+ (Lorg/eclipse/ui/IWorkbenchWindow;)V
+isAcceptableLocation
+ (Lorg/eclipse/core/runtime/IPath;)Z
+ (Lorg/eclipse/core/runtime/IPath;)Z
+run
+ (Lorg/eclipse/jface/action/IAction;)V
+ (Lorg/eclipse/jface/action/IAction;)V
+selectionChanged
+ (Lorg/eclipse/jface/action/IAction;Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/action/IAction;Lorg/eclipse/jface/viewers/ISelection;)V

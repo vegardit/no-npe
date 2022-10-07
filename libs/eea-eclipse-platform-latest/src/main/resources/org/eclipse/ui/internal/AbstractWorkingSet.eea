@@ -1,0 +1,58 @@
+class org/eclipse/ui/internal/AbstractWorkingSet
+
+FACTORY_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+elements
+ Ljava/util/ArrayList<Lorg/eclipse/core/runtime/IAdaptable;>;
+ Ljava/util/ArrayList<Lorg/eclipse/core/runtime/IAdaptable;>;
+workingSetMemento
+ Lorg/eclipse/ui/IMemento;
+ Lorg/eclipse/ui/IMemento;
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+clone
+ ()Lorg/eclipse/ui/internal/AbstractWorkingSet;
+ ()Lorg/eclipse/ui/internal/AbstractWorkingSet;
+connect
+ (Lorg/eclipse/ui/IWorkingSetManager;)V
+ (Lorg/eclipse/ui/IWorkingSetManager;)V
+fireWorkingSetChanged
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getElements
+ ()[Lorg/eclipse/core/runtime/IAdaptable;
+ ()[Lorg/eclipse/core/runtime/IAdaptable;
+getElementsArray
+ ()Ljava/util/ArrayList<Lorg/eclipse/core/runtime/IAdaptable;>;
+ ()Ljava/util/ArrayList<Lorg/eclipse/core/runtime/IAdaptable;>;
+getFactoryId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getImage
+ ()Lorg/eclipse/jface/resource/ImageDescriptor;
+ ()Lorg/eclipse/jface/resource/ImageDescriptor;
+getLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getManager
+ ()Lorg/eclipse/ui/IWorkingSetManager;
+ ()Lorg/eclipse/ui/IWorkingSetManager;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+internalSetElements
+ ([Lorg/eclipse/core/runtime/IAdaptable;)V
+ ([Lorg/eclipse/core/runtime/IAdaptable;)V
+setLabel
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

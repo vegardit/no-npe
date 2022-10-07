@@ -1,0 +1,72 @@
+class org/eclipse/core/internal/jobs/InternalJob
+
+manager
+ Lorg/eclipse/core/internal/jobs/JobManager;
+ L1org/eclipse/core/internal/jobs/JobManager;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addJobChangeListener
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+belongsTo
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+compareTo
+ (Lorg/eclipse/core/internal/jobs/InternalJob;)I
+ (Lorg/eclipse/core/internal/jobs/InternalJob;)I
+done
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V
+getJobGroup
+ ()Lorg/eclipse/core/runtime/jobs/JobGroup;
+ ()Lorg/eclipse/core/runtime/jobs/JobGroup;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProperty
+ (Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/Object;
+getResult
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+getRule
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getThread
+ ()Ljava/lang/Thread;
+ ()Ljava/lang/Thread;
+join
+ (JLorg/eclipse/core/runtime/IProgressMonitor;)Z
+ (JLorg/eclipse/core/runtime/IProgressMonitor;)Z
+removeJobChangeListener
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+run
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+setJobGroup
+ (Lorg/eclipse/core/runtime/jobs/JobGroup;)V
+ (Lorg/eclipse/core/runtime/jobs/JobGroup;)V
+setName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setProgressGroup
+ (Lorg/eclipse/core/runtime/IProgressMonitor;I)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;I)V
+setProperty
+ (Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;)V
+setRule
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+setThread
+ (Ljava/lang/Thread;)V
+ (Ljava/lang/Thread;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+yieldRule
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/jobs/Job;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/jobs/Job;

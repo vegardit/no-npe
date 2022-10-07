@@ -1,0 +1,81 @@
+class org/eclipse/core/databinding/observable/list/AbstractObservableList
+ <E:Ljava/lang/Object;>
+
+<init>
+ (Lorg/eclipse/core/databinding/observable/Realm;)V
+ (Lorg/eclipse/core/databinding/observable/Realm;)V
+add
+ (TE;)Z
+ (TE;)Z
+addAll
+ (ILjava/util/Collection<+TE;>;)Z
+ (ILjava/util/Collection<+TE;>;)Z
+addAll
+ (Ljava/util/Collection<+TE;>;)Z
+ (Ljava/util/Collection<+TE;>;)Z
+addChangeListener
+ (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
+ (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
+addDisposeListener
+ (Lorg/eclipse/core/databinding/observable/IDisposeListener;)V
+ (Lorg/eclipse/core/databinding/observable/IDisposeListener;)V
+addListChangeListener
+ (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
+ (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
+addStaleListener
+ (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
+ (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
+contains
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+containsAll
+ (Ljava/util/Collection<*>;)Z
+ (Ljava/util/Collection<*>;)Z
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+fireListChange
+ (Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V
+ (Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V
+getRealm
+ ()Lorg/eclipse/core/databinding/observable/Realm;
+ ()Lorg/eclipse/core/databinding/observable/Realm;
+indexOf
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+iterator
+ ()Ljava/util/Iterator<TE;>;
+ ()Ljava/util/Iterator<TE;>;
+lastIndexOf
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+move
+ (II)TE;
+ (II)TE;
+remove
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+removeAll
+ (Ljava/util/Collection<*>;)Z
+ (Ljava/util/Collection<*>;)Z
+removeChangeListener
+ (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
+ (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
+removeDisposeListener
+ (Lorg/eclipse/core/databinding/observable/IDisposeListener;)V
+ (Lorg/eclipse/core/databinding/observable/IDisposeListener;)V
+removeListChangeListener
+ (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
+ (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
+removeStaleListener
+ (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
+ (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
+retainAll
+ (Ljava/util/Collection<*>;)Z
+ (Ljava/util/Collection<*>;)Z
+toArray
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+toArray
+ <T:Ljava/lang/Object;>([TT;)[TT;
+ <T:Ljava/lang/Object;>([TT;)[TT;

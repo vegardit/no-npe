@@ -1,0 +1,85 @@
+class org/eclipse/ui/views/markers/internal/MarkerSupportRegistry
+
+ALL_MARKERS_GENERATOR
+ Ljava/lang/String;
+ L1java/lang/String;
+ATTRIBUTE_MAPPING
+ Ljava/lang/String;
+ L1java/lang/String;
+BOOKMARKS_GENERATOR
+ Ljava/lang/String;
+ L1java/lang/String;
+ENABLED
+ Ljava/lang/String;
+ L1java/lang/String;
+FILTER_LIMIT
+ Ljava/lang/String;
+ L1java/lang/String;
+LABEL
+ Ljava/lang/String;
+ L1java/lang/String;
+MARKERS_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+MARKER_ATTRIBUTE_GROUPING
+ Ljava/lang/String;
+ L1java/lang/String;
+MARKER_GROUPING
+ Ljava/lang/String;
+ L1java/lang/String;
+MARKER_GROUPING_ENTRY
+ Ljava/lang/String;
+ L1java/lang/String;
+MARKER_SUPPORT
+ Ljava/lang/String;
+ L1java/lang/String;
+MARKER_TYPE_REFERENCE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROBLEMS_GENERATOR
+ Ljava/lang/String;
+ L1java/lang/String;
+TASKS_GENERATOR
+ Ljava/lang/String;
+ L1java/lang/String;
+VALUE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getInstance
+ ()Lorg/eclipse/ui/views/markers/internal/MarkerSupportRegistry;
+ ()Lorg/eclipse/ui/views/markers/internal/MarkerSupportRegistry;
+
+addExtension
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;Lorg/eclipse/core/runtime/IExtension;)V
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;Lorg/eclipse/core/runtime/IExtension;)V
+getCategory
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getCategory
+ (Lorg/eclipse/core/resources/IMarker;)Ljava/lang/String;
+ (Lorg/eclipse/core/resources/IMarker;)Ljava/lang/String;
+getContentGenDescriptor
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/internal/ContentGeneratorDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/internal/ContentGeneratorDescriptor;
+getDefaultContentGenDescriptor
+ ()Lorg/eclipse/ui/views/markers/internal/ContentGeneratorDescriptor;
+ ()Lorg/eclipse/ui/views/markers/internal/ContentGeneratorDescriptor;
+getField
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/MarkerField;
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/MarkerField;
+getMarkerGroup
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/internal/MarkerGroup;
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/internal/MarkerGroup;
+getMarkerGroups
+ ()Ljava/util/Collection<Lorg/eclipse/ui/views/markers/internal/MarkerGroup;>;
+ ()Ljava/util/Collection<Lorg/eclipse/ui/views/markers/internal/MarkerGroup;>;
+getRegisteredFilters
+ ()Ljava/util/Collection<Lorg/eclipse/ui/views/markers/internal/ProblemFilter;>;
+ ()Ljava/util/Collection<Lorg/eclipse/ui/views/markers/internal/ProblemFilter;>;
+getSorterFor
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/internal/TableComparator;
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/internal/TableComparator;
+removeExtension
+ (Lorg/eclipse/core/runtime/IExtension;[Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IExtension;[Ljava/lang/Object;)V

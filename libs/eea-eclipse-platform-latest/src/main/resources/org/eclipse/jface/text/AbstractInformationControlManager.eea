@@ -1,0 +1,106 @@
+class org/eclipse/jface/text/AbstractInformationControlManager
+
+ANCHOR_BOTTOM
+ Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ L1org/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ANCHOR_GLOBAL
+ Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ L1org/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ANCHOR_LEFT
+ Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ L1org/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ANCHOR_RIGHT
+ Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ L1org/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ANCHOR_TOP
+ Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ L1org/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+STORE_LOCATION_X
+ Ljava/lang/String;
+ L1java/lang/String;
+STORE_LOCATION_Y
+ Ljava/lang/String;
+ L1java/lang/String;
+STORE_SIZE_HEIGHT
+ Ljava/lang/String;
+ L1java/lang/String;
+STORE_SIZE_WIDTH
+ Ljava/lang/String;
+ L1java/lang/String;
+
+fInformationControl
+ Lorg/eclipse/jface/text/IInformationControl;
+ Lorg/eclipse/jface/text/IInformationControl;
+fInformationControlCloser
+ Lorg/eclipse/jface/text/AbstractInformationControlManager$IInformationControlCloser;
+ Lorg/eclipse/jface/text/AbstractInformationControlManager$IInformationControlCloser;
+fInformationControlCreator
+ Lorg/eclipse/jface/text/IInformationControlCreator;
+ Lorg/eclipse/jface/text/IInformationControlCreator;
+
+<init>
+ (Lorg/eclipse/jface/text/IInformationControlCreator;)V
+ (Lorg/eclipse/jface/text/IInformationControlCreator;)V
+computeAvailableArea
+ (Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)Lorg/eclipse/swt/graphics/Rectangle;
+ (Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)Lorg/eclipse/swt/graphics/Rectangle;
+computeInformationControlLocation
+ (Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+computeLocation
+ (Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/swt/graphics/Point;Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/swt/graphics/Point;Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)Lorg/eclipse/swt/graphics/Point;
+computeSizeConstraints
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/jface/text/IInformationControl;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/jface/text/IInformationControl;)Lorg/eclipse/swt/graphics/Point;
+computeSizeConstraints
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/jface/text/IInformationControl;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/jface/text/IInformationControl;)Lorg/eclipse/swt/graphics/Point;
+getInformationControl
+ ()Lorg/eclipse/jface/text/IInformationControl;
+ ()Lorg/eclipse/jface/text/IInformationControl;
+getInternalAccessor
+ ()Lorg/eclipse/jface/internal/text/InternalAccessor;
+ ()Lorg/eclipse/jface/internal/text/InternalAccessor;
+getNextFallbackAnchor
+ (Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+ (Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;
+getSubjectArea
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+getSubjectControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+install
+ (Lorg/eclipse/swt/widgets/Control;)V
+ (Lorg/eclipse/swt/widgets/Control;)V
+restoreInformationControlBounds
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+setAnchor
+ (Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)V
+ (Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)V
+setCloser
+ (Lorg/eclipse/jface/text/AbstractInformationControlManager$IInformationControlCloser;)V
+ (Lorg/eclipse/jface/text/AbstractInformationControlManager$IInformationControlCloser;)V
+setCustomInformationControlCreator
+ (Lorg/eclipse/jface/text/IInformationControlCreator;)V
+ (Lorg/eclipse/jface/text/IInformationControlCreator;)V
+setFallbackAnchors
+ ([Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)V
+ ([Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)V
+setInformation
+ (Ljava/lang/Object;Lorg/eclipse/swt/graphics/Rectangle;)V
+ (Ljava/lang/Object;Lorg/eclipse/swt/graphics/Rectangle;)V
+setInformation
+ (Ljava/lang/String;Lorg/eclipse/swt/graphics/Rectangle;)V
+ (Ljava/lang/String;Lorg/eclipse/swt/graphics/Rectangle;)V
+setRestoreInformationControlBounds
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;ZZ)V
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;ZZ)V
+showInformationControl
+ (Lorg/eclipse/swt/graphics/Rectangle;)V
+ (Lorg/eclipse/swt/graphics/Rectangle;)V
+updateLocation
+ (Lorg/eclipse/swt/graphics/Point;Lorg/eclipse/swt/graphics/Point;Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)Z
+ (Lorg/eclipse/swt/graphics/Point;Lorg/eclipse/swt/graphics/Point;Lorg/eclipse/swt/graphics/Rectangle;Lorg/eclipse/jface/text/AbstractInformationControlManager$Anchor;)Z

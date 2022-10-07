@@ -1,0 +1,74 @@
+class org/eclipse/jface/text/source/projection/ProjectionViewer
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;Lorg/eclipse/jface/text/source/IOverviewRuler;ZI)V
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;Lorg/eclipse/jface/text/source/IOverviewRuler;ZI)V
+addProjectionListener
+ (Lorg/eclipse/jface/text/source/projection/IProjectionListener;)V
+ (Lorg/eclipse/jface/text/source/projection/IProjectionListener;)V
+computeCollapsedRegion
+ (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/IRegion;
+computeCollapsedRegionAnchor
+ (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/Position;
+ (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/Position;
+createSlaveDocumentManager
+ ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
+ ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
+createVisualAnnotationModel
+ (Lorg/eclipse/jface/text/source/IAnnotationModel;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Lorg/eclipse/jface/text/source/IAnnotationModel;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+exposeModelRange
+ (Lorg/eclipse/jface/text/IRegion;)Z
+ (Lorg/eclipse/jface/text/IRegion;)Z
+findAndSelect
+ (ILjava/lang/String;ZZZZ)I
+ (ILjava/lang/String;ZZZZ)I
+findAndSelectInRange
+ (ILjava/lang/String;ZZZIIZ)I
+ (ILjava/lang/String;ZZZIIZ)I
+getCoveredModelRanges
+ (Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/IRegion;
+getFindReplaceDocumentAdapter
+ ()Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
+ ()Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
+getProjectionAnnotationModel
+ ()Lorg/eclipse/jface/text/source/projection/ProjectionAnnotationModel;
+ ()Lorg/eclipse/jface/text/source/projection/ProjectionAnnotationModel;
+getVisibleRegion
+ ()Lorg/eclipse/jface/text/IRegion;
+ ()Lorg/eclipse/jface/text/IRegion;
+handleVerifyEvent
+ (Lorg/eclipse/swt/events/VerifyEvent;)V
+ (Lorg/eclipse/swt/events/VerifyEvent;)V
+handleVisibleDocumentAboutToBeChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+handleVisibleDocumentChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+postCatchupRequest
+ (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
+ (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
+processCatchupRequest
+ (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
+ (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
+removeProjectionListener
+ (Lorg/eclipse/jface/text/source/projection/IProjectionListener;)V
+ (Lorg/eclipse/jface/text/source/projection/IProjectionListener;)V
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/source/IAnnotationModel;II)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/source/IAnnotationModel;II)V
+setProjectionSummary
+ (Lorg/eclipse/jface/text/source/projection/ProjectionSummary;)V
+ (Lorg/eclipse/jface/text/source/projection/ProjectionSummary;)V
+setVisibleDocument
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+updateSlaveDocument
+ (Lorg/eclipse/jface/text/IDocument;II)Z
+ (Lorg/eclipse/jface/text/IDocument;II)Z
+widgetSelection2ModelSelection
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;

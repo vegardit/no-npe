@@ -1,0 +1,45 @@
+class org/eclipse/ui/internal/activities/AbstractActivityRegistry
+
+activityDefinitions
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityDefinition;>;
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityDefinition;>;
+activityPatternBindingDefinitions
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityPatternBindingDefinition;>;
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityPatternBindingDefinition;>;
+activityRequirementBindingDefinitions
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityRequirementBindingDefinition;>;
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityRequirementBindingDefinition;>;
+categoryActivityBindingDefinitions
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/CategoryActivityBindingDefinition;>;
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/CategoryActivityBindingDefinition;>;
+categoryDefinitions
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/CategoryDefinition;>;
+ Ljava/util/List<Lorg/eclipse/ui/internal/activities/CategoryDefinition;>;
+defaultEnabledActivities
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+
+addActivityRegistryListener
+ (Lorg/eclipse/ui/internal/activities/IActivityRegistryListener;)V
+ (Lorg/eclipse/ui/internal/activities/IActivityRegistryListener;)V
+getActivityDefinitions
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityDefinition;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityDefinition;>;
+getActivityPatternBindingDefinitions
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityPatternBindingDefinition;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityPatternBindingDefinition;>;
+getActivityRequirementBindingDefinitions
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityRequirementBindingDefinition;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/ActivityRequirementBindingDefinition;>;
+getCategoryActivityBindingDefinitions
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/CategoryActivityBindingDefinition;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/CategoryActivityBindingDefinition;>;
+getCategoryDefinitions
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/CategoryDefinition;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/activities/CategoryDefinition;>;
+getDefaultEnabledActivities
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+removeActivityRegistryListener
+ (Lorg/eclipse/ui/internal/activities/IActivityRegistryListener;)V
+ (Lorg/eclipse/ui/internal/activities/IActivityRegistryListener;)V

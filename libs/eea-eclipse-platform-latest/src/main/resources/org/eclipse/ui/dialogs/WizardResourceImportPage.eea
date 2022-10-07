@@ -1,0 +1,69 @@
+class org/eclipse/ui/dialogs/WizardResourceImportPage
+
+selectedTypes
+ Ljava/util/List;
+ Ljava/util/List;
+selectionGroup
+ Lorg/eclipse/ui/ide/dialogs/ResourceTreeAndListGroup;
+ Lorg/eclipse/ui/ide/dialogs/ResourceTreeAndListGroup;
+
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createDestinationGroup
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createFileSelectionGroup
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createSourceGroup
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+getContainerFullPath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getErrorDialogTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFileProvider
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+getFolderProvider
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+getResourcePath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getSelectedResources
+ ()Ljava/util/List;
+ ()Ljava/util/List;
+getSelectedResources
+ (Lorg/eclipse/ui/ide/dialogs/IElementFilter;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/ui/ide/dialogs/IElementFilter;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getSelectedResources
+ (Lorg/eclipse/ui/internal/ide/dialogs/IElementFilter;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/ui/internal/ide/dialogs/IElementFilter;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getSourceConflictMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSpecifiedContainer
+ ()Lorg/eclipse/core/resources/IContainer;
+ ()Lorg/eclipse/core/resources/IContainer;
+getTypesToImport
+ ()Ljava/util/List;
+ ()Ljava/util/List;
+handleEvent
+ (Lorg/eclipse/swt/widgets/Event;)V
+ (Lorg/eclipse/swt/widgets/Event;)V
+setContainerFieldValue
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+sourceConflictsWithDestination
+ (Lorg/eclipse/core/runtime/IPath;)Z
+ (Lorg/eclipse/core/runtime/IPath;)Z
+updateSelections
+ (Ljava/util/Map;)V
+ (Ljava/util/Map;)V

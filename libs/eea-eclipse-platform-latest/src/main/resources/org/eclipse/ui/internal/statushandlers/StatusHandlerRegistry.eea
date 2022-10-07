@@ -1,0 +1,21 @@
+class org/eclipse/ui/internal/statushandlers/StatusHandlerRegistry
+
+getDefault
+ ()Lorg/eclipse/ui/internal/statushandlers/StatusHandlerRegistry;
+ ()Lorg/eclipse/ui/internal/statushandlers/StatusHandlerRegistry;
+
+addExtension
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;Lorg/eclipse/core/runtime/IExtension;)V
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;Lorg/eclipse/core/runtime/IExtension;)V
+getDefaultHandlerDescriptor
+ ()Lorg/eclipse/ui/internal/statushandlers/StatusHandlerDescriptor;
+ ()Lorg/eclipse/ui/internal/statushandlers/StatusHandlerDescriptor;
+getHandlerDescriptor
+ (Ljava/lang/String;)Lorg/eclipse/ui/internal/statushandlers/StatusHandlerDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/ui/internal/statushandlers/StatusHandlerDescriptor;
+getHandlerDescriptors
+ (Ljava/lang/String;)Ljava/util/List;
+ (Ljava/lang/String;)Ljava/util/List;
+removeExtension
+ (Lorg/eclipse/core/runtime/IExtension;[Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IExtension;[Ljava/lang/Object;)V

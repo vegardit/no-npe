@@ -1,0 +1,26 @@
+class org/eclipse/ui/application/IWorkbenchConfigurer
+
+declareImage
+ (Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Z)V
+ (Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Z)V
+getData
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getWindowConfigurer
+ (Lorg/eclipse/ui/IWorkbenchWindow;)Lorg/eclipse/ui/application/IWorkbenchWindowConfigurer;
+ (Lorg/eclipse/ui/IWorkbenchWindow;)Lorg/eclipse/ui/application/IWorkbenchWindowConfigurer;
+getWorkbench
+ ()Lorg/eclipse/ui/IWorkbench;
+ ()Lorg/eclipse/ui/IWorkbench;
+getWorkbenchWindowManager
+ ()Lorg/eclipse/jface/window/WindowManager;
+ ()Lorg/eclipse/jface/window/WindowManager;
+restoreState
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+restoreWorkbenchWindow
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/application/IWorkbenchWindowConfigurer;
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/application/IWorkbenchWindowConfigurer;
+setData
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V

@@ -1,0 +1,57 @@
+class org/eclipse/core/variables/IStringVariableManager
+
+EXTENSION_POINT_DYNAMIC_VARIABLES
+ Ljava/lang/String;
+ L1java/lang/String;
+EXTENSION_POINT_VALUE_VARIABLES
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addValueVariableListener
+ (Lorg/eclipse/core/variables/IValueVariableListener;)V
+ (Lorg/eclipse/core/variables/IValueVariableListener;)V
+addVariables
+ ([Lorg/eclipse/core/variables/IValueVariable;)V
+ ([Lorg/eclipse/core/variables/IValueVariable;)V
+generateVariableExpression
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getContributingPluginId
+ (Lorg/eclipse/core/variables/IStringVariable;)Ljava/lang/String;
+ (Lorg/eclipse/core/variables/IStringVariable;)Ljava/lang/String;
+getDynamicVariable
+ (Ljava/lang/String;)Lorg/eclipse/core/variables/IDynamicVariable;
+ (Ljava/lang/String;)Lorg/eclipse/core/variables/IDynamicVariable;
+getDynamicVariables
+ ()[Lorg/eclipse/core/variables/IDynamicVariable;
+ ()[Lorg/eclipse/core/variables/IDynamicVariable;
+getValueVariable
+ (Ljava/lang/String;)Lorg/eclipse/core/variables/IValueVariable;
+ (Ljava/lang/String;)Lorg/eclipse/core/variables/IValueVariable;
+getValueVariables
+ ()[Lorg/eclipse/core/variables/IValueVariable;
+ ()[Lorg/eclipse/core/variables/IValueVariable;
+getVariables
+ ()[Lorg/eclipse/core/variables/IStringVariable;
+ ()[Lorg/eclipse/core/variables/IStringVariable;
+newValueVariable
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/variables/IValueVariable;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/variables/IValueVariable;
+newValueVariable
+ (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Lorg/eclipse/core/variables/IValueVariable;
+ (Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Lorg/eclipse/core/variables/IValueVariable;
+performStringSubstitution
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+performStringSubstitution
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String;
+removeValueVariableListener
+ (Lorg/eclipse/core/variables/IValueVariableListener;)V
+ (Lorg/eclipse/core/variables/IValueVariableListener;)V
+removeVariables
+ ([Lorg/eclipse/core/variables/IValueVariable;)V
+ ([Lorg/eclipse/core/variables/IValueVariable;)V
+validateStringVariables
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

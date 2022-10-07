@@ -1,0 +1,78 @@
+class org/eclipse/ui/IWorkingSetManager
+
+CHANGE_WORKING_SET_ADD
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_WORKING_SET_CONTENT_CHANGE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_WORKING_SET_LABEL_CHANGE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_WORKING_SET_NAME_CHANGE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_WORKING_SET_REMOVE
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_WORKING_SET_UPDATER_INSTALLED
+ Ljava/lang/String;
+ L1java/lang/String;
+CHANGE_WORKING_SET_UPDATER_UNINSTALLED
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addPropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+addRecentWorkingSet
+ (Lorg/eclipse/ui/IWorkingSet;)V
+ (Lorg/eclipse/ui/IWorkingSet;)V
+addToWorkingSets
+ (Lorg/eclipse/core/runtime/IAdaptable;[Lorg/eclipse/ui/IWorkingSet;)V
+ (Lorg/eclipse/core/runtime/IAdaptable;[Lorg/eclipse/ui/IWorkingSet;)V
+addWorkingSet
+ (Lorg/eclipse/ui/IWorkingSet;)V
+ (Lorg/eclipse/ui/IWorkingSet;)V
+createAggregateWorkingSet
+ (Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/ui/IWorkingSet;)Lorg/eclipse/ui/IWorkingSet;
+ (Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/ui/IWorkingSet;)Lorg/eclipse/ui/IWorkingSet;
+createWorkingSet
+ (Ljava/lang/String;[Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkingSet;
+ (Ljava/lang/String;[Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkingSet;
+createWorkingSet
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/IWorkingSet;
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/IWorkingSet;
+createWorkingSetEditWizard
+ (Lorg/eclipse/ui/IWorkingSet;)Lorg/eclipse/ui/dialogs/IWorkingSetEditWizard;
+ (Lorg/eclipse/ui/IWorkingSet;)Lorg/eclipse/ui/dialogs/IWorkingSetEditWizard;
+createWorkingSetNewWizard
+ ([Ljava/lang/String;)Lorg/eclipse/ui/dialogs/IWorkingSetNewWizard;
+ ([Ljava/lang/String;)Lorg/eclipse/ui/dialogs/IWorkingSetNewWizard;
+createWorkingSetSelectionDialog
+ (Lorg/eclipse/swt/widgets/Shell;)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+ (Lorg/eclipse/swt/widgets/Shell;)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+createWorkingSetSelectionDialog
+ (Lorg/eclipse/swt/widgets/Shell;Z)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+ (Lorg/eclipse/swt/widgets/Shell;Z)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+createWorkingSetSelectionDialog
+ (Lorg/eclipse/swt/widgets/Shell;Z[Ljava/lang/String;)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+ (Lorg/eclipse/swt/widgets/Shell;Z[Ljava/lang/String;)Lorg/eclipse/ui/dialogs/IWorkingSetSelectionDialog;
+getAllWorkingSets
+ ()[Lorg/eclipse/ui/IWorkingSet;
+ ()[Lorg/eclipse/ui/IWorkingSet;
+getRecentWorkingSets
+ ()[Lorg/eclipse/ui/IWorkingSet;
+ ()[Lorg/eclipse/ui/IWorkingSet;
+getWorkingSet
+ (Ljava/lang/String;)Lorg/eclipse/ui/IWorkingSet;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IWorkingSet;
+getWorkingSets
+ ()[Lorg/eclipse/ui/IWorkingSet;
+ ()[Lorg/eclipse/ui/IWorkingSet;
+removePropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+removeWorkingSet
+ (Lorg/eclipse/ui/IWorkingSet;)V
+ (Lorg/eclipse/ui/IWorkingSet;)V

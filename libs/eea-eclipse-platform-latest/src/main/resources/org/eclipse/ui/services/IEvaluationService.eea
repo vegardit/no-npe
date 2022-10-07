@@ -1,0 +1,30 @@
+class org/eclipse/ui/services/IEvaluationService
+
+PROP_NOTIFYING
+ Ljava/lang/String;
+ L1java/lang/String;
+RESULT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addEvaluationListener
+ (Lorg/eclipse/core/expressions/Expression;Lorg/eclipse/jface/util/IPropertyChangeListener;Ljava/lang/String;)Lorg/eclipse/ui/services/IEvaluationReference;
+ (Lorg/eclipse/core/expressions/Expression;Lorg/eclipse/jface/util/IPropertyChangeListener;Ljava/lang/String;)Lorg/eclipse/ui/services/IEvaluationReference;
+addEvaluationReference
+ (Lorg/eclipse/ui/services/IEvaluationReference;)V
+ (Lorg/eclipse/ui/services/IEvaluationReference;)V
+addServiceListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+getCurrentState
+ ()Lorg/eclipse/core/expressions/IEvaluationContext;
+ ()Lorg/eclipse/core/expressions/IEvaluationContext;
+removeEvaluationListener
+ (Lorg/eclipse/ui/services/IEvaluationReference;)V
+ (Lorg/eclipse/ui/services/IEvaluationReference;)V
+removeServiceListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+requestEvaluation
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

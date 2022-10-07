@@ -1,0 +1,24 @@
+class org/eclipse/equinox/internal/security/storage/SecurePreferencesRoot
+
+PROVIDER_PATH
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Ljava/net/URL;)V
+ (Ljava/net/URL;)V
+cachePassword
+ (Ljava/lang/String;Lorg/eclipse/equinox/internal/security/storage/PasswordExt;)V
+ (Ljava/lang/String;Lorg/eclipse/equinox/internal/security/storage/PasswordExt;)V
+getCipher
+ ()Lorg/eclipse/equinox/internal/security/storage/JavaEncryption;
+ ()Lorg/eclipse/equinox/internal/security/storage/JavaEncryption;
+getLocation
+ ()Ljava/net/URL;
+ ()Ljava/net/URL;
+getPassword
+ (Ljava/lang/String;Lorg/eclipse/equinox/security/storage/provider/IPreferencesContainer;Z)Lorg/eclipse/equinox/internal/security/storage/PasswordExt;
+ (Ljava/lang/String;Lorg/eclipse/equinox/security/storage/provider/IPreferencesContainer;Z)Lorg/eclipse/equinox/internal/security/storage/PasswordExt;
+onChangePassword
+ (Lorg/eclipse/equinox/security/storage/provider/IPreferencesContainer;Ljava/lang/String;)Z
+ (Lorg/eclipse/equinox/security/storage/provider/IPreferencesContainer;Ljava/lang/String;)Z

@@ -1,0 +1,57 @@
+class org/eclipse/osgi/container/Module
+
+ACTIVE_SET
+ Ljava/util/EnumSet<Lorg/eclipse/osgi/container/Module$State;>;
+ L1java/util/EnumSet<Lorg/eclipse/osgi/container/Module$State;>;
+RESOLVED_SET
+ Ljava/util/EnumSet<Lorg/eclipse/osgi/container/Module$State;>;
+ L1java/util/EnumSet<Lorg/eclipse/osgi/container/Module$State;>;
+
+<init>
+ (Ljava/lang/Long;Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleContainer;Ljava/util/EnumSet<Lorg/eclipse/osgi/container/Module$Settings;>;I)V
+ (Ljava/lang/Long;Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleContainer;Ljava/util/EnumSet<Lorg/eclipse/osgi/container/Module$Settings;>;I)V
+cleanup
+ (Lorg/eclipse/osgi/container/ModuleRevision;)V
+ (Lorg/eclipse/osgi/container/ModuleRevision;)V
+compareTo
+ (Lorg/eclipse/osgi/container/Module;)I
+ (Lorg/eclipse/osgi/container/Module;)I
+getContainer
+ ()Lorg/eclipse/osgi/container/ModuleContainer;
+ ()Lorg/eclipse/osgi/container/ModuleContainer;
+getCurrentRevision
+ ()Lorg/eclipse/osgi/container/ModuleRevision;
+ ()Lorg/eclipse/osgi/container/ModuleRevision;
+getId
+ ()Ljava/lang/Long;
+ ()Ljava/lang/Long;
+getLocation
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRevisions
+ ()Lorg/eclipse/osgi/container/ModuleRevisions;
+ ()Lorg/eclipse/osgi/container/ModuleRevisions;
+getState
+ ()Lorg/eclipse/osgi/container/Module$State;
+ ()Lorg/eclipse/osgi/container/Module$State;
+getStateChangeOwner
+ ()Ljava/lang/Thread;
+ ()Ljava/lang/Thread;
+holdsTransitionEventLock
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;)Z
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;)Z
+lockStateChange
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;)V
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;)V
+start
+ ([Lorg/eclipse/osgi/container/Module$StartOptions;)V
+ ([Lorg/eclipse/osgi/container/Module$StartOptions;)V
+stop
+ ([Lorg/eclipse/osgi/container/Module$StopOptions;)V
+ ([Lorg/eclipse/osgi/container/Module$StopOptions;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+unlockStateChange
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;)V
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;)V

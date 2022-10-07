@@ -1,0 +1,71 @@
+class org/eclipse/ui/internal/commands/CommandService
+
+<init>
+ (Lorg/eclipse/core/commands/CommandManager;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/core/commands/CommandManager;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+addExecutionListener
+ (Lorg/eclipse/core/commands/IExecutionListener;)V
+ (Lorg/eclipse/core/commands/IExecutionListener;)V
+defineUncategorizedCategory
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+deserialize
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/ParameterizedCommand;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/ParameterizedCommand;
+getCategory
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/Category;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/Category;
+getCommand
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/Command;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/Command;
+getCommandPersistence
+ ()Lorg/eclipse/ui/internal/commands/CommandPersistence;
+ ()Lorg/eclipse/ui/internal/commands/CommandPersistence;
+getDefinedCategories
+ ()[Lorg/eclipse/core/commands/Category;
+ ()[Lorg/eclipse/core/commands/Category;
+getDefinedCategoryIds
+ ()Ljava/util/Collection;
+ ()Ljava/util/Collection;
+getDefinedCommandIds
+ ()Ljava/util/Collection;
+ ()Ljava/util/Collection;
+getDefinedCommands
+ ()[Lorg/eclipse/core/commands/Command;
+ ()[Lorg/eclipse/core/commands/Command;
+getDefinedParameterTypeIds
+ ()Ljava/util/Collection;
+ ()Ljava/util/Collection;
+getDefinedParameterTypes
+ ()[Lorg/eclipse/core/commands/ParameterType;
+ ()[Lorg/eclipse/core/commands/ParameterType;
+getHelpContextId
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getHelpContextId
+ (Lorg/eclipse/core/commands/Command;)Ljava/lang/String;
+ (Lorg/eclipse/core/commands/Command;)Ljava/lang/String;
+getParameterType
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/ParameterType;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/ParameterType;
+refreshElements
+ (Ljava/lang/String;Ljava/util/Map;)V
+ (Ljava/lang/String;Ljava/util/Map;)V
+registerElement
+ (Lorg/eclipse/ui/commands/IElementReference;)V
+ (Lorg/eclipse/ui/commands/IElementReference;)V
+registerElementForCommand
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/ui/menus/UIElement;)Lorg/eclipse/ui/commands/IElementReference;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/ui/menus/UIElement;)Lorg/eclipse/ui/commands/IElementReference;
+registerElementForUpdate
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/e4/ui/model/application/ui/menu/MItem;)Ljava/lang/Runnable;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/e4/ui/model/application/ui/menu/MItem;)Ljava/lang/Runnable;
+removeExecutionListener
+ (Lorg/eclipse/core/commands/IExecutionListener;)V
+ (Lorg/eclipse/core/commands/IExecutionListener;)V
+setHelpContextId
+ (Lorg/eclipse/core/commands/IHandler;Ljava/lang/String;)V
+ (Lorg/eclipse/core/commands/IHandler;Ljava/lang/String;)V
+unregisterElement
+ (Lorg/eclipse/ui/commands/IElementReference;)V
+ (Lorg/eclipse/ui/commands/IElementReference;)V

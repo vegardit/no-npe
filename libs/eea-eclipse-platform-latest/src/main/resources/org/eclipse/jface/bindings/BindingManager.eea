@@ -1,0 +1,98 @@
+class org/eclipse/jface/bindings/BindingManager
+
+<init>
+ (Lorg/eclipse/core/commands/contexts/ContextManager;Lorg/eclipse/core/commands/CommandManager;)V
+ (Lorg/eclipse/core/commands/contexts/ContextManager;Lorg/eclipse/core/commands/CommandManager;)V
+addBinding
+ (Lorg/eclipse/jface/bindings/Binding;)V
+ (Lorg/eclipse/jface/bindings/Binding;)V
+addBindingManagerListener
+ (Lorg/eclipse/jface/bindings/IBindingManagerListener;)V
+ (Lorg/eclipse/jface/bindings/IBindingManagerListener;)V
+contextManagerChanged
+ (Lorg/eclipse/core/commands/contexts/ContextManagerEvent;)V
+ (Lorg/eclipse/core/commands/contexts/ContextManagerEvent;)V
+getActiveBindingsDisregardingContext
+ ()Ljava/util/Map;
+ ()Ljava/util/Map;
+getActiveBindingsDisregardingContextFlat
+ ()Ljava/util/Collection;
+ ()Ljava/util/Collection;
+getActiveBindingsDisregardingContextFor
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+getActiveBindingsFor
+ (Ljava/lang/String;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+ (Ljava/lang/String;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+getActiveBindingsFor
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+getActiveScheme
+ ()Lorg/eclipse/jface/bindings/Scheme;
+ ()Lorg/eclipse/jface/bindings/Scheme;
+getBestActiveBindingFor
+ (Ljava/lang/String;)Lorg/eclipse/jface/bindings/TriggerSequence;
+ (Ljava/lang/String;)Lorg/eclipse/jface/bindings/TriggerSequence;
+getBestActiveBindingFor
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Lorg/eclipse/jface/bindings/TriggerSequence;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Lorg/eclipse/jface/bindings/TriggerSequence;
+getBestActiveBindingFormattedFor
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getBindings
+ ()[Lorg/eclipse/jface/bindings/Binding;
+ ()[Lorg/eclipse/jface/bindings/Binding;
+getConflictsFor
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Collection;
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Collection;
+getCurrentConflicts
+ ()Ljava/util/Map;
+ ()Ljava/util/Map;
+getDefinedSchemes
+ ()[Lorg/eclipse/jface/bindings/Scheme;
+ ()[Lorg/eclipse/jface/bindings/Scheme;
+getLocale
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPartialMatches
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Map;
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Map;
+getPerfectMatch
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Lorg/eclipse/jface/bindings/Binding;
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Lorg/eclipse/jface/bindings/Binding;
+getPlatform
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getScheme
+ (Ljava/lang/String;)Lorg/eclipse/jface/bindings/Scheme;
+ (Ljava/lang/String;)Lorg/eclipse/jface/bindings/Scheme;
+isPartialMatch
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+isPerfectMatch
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+removeBinding
+ (Lorg/eclipse/jface/bindings/Binding;)V
+ (Lorg/eclipse/jface/bindings/Binding;)V
+removeBindingManagerListener
+ (Lorg/eclipse/jface/bindings/IBindingManagerListener;)V
+ (Lorg/eclipse/jface/bindings/IBindingManagerListener;)V
+removeBindings
+ (Lorg/eclipse/jface/bindings/TriggerSequence;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+ (Lorg/eclipse/jface/bindings/TriggerSequence;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+schemeChanged
+ (Lorg/eclipse/jface/bindings/SchemeEvent;)V
+ (Lorg/eclipse/jface/bindings/SchemeEvent;)V
+setActiveScheme
+ (Lorg/eclipse/jface/bindings/Scheme;)V
+ (Lorg/eclipse/jface/bindings/Scheme;)V
+setBindings
+ ([Lorg/eclipse/jface/bindings/Binding;)V
+ ([Lorg/eclipse/jface/bindings/Binding;)V
+setLocale
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setPlatform
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

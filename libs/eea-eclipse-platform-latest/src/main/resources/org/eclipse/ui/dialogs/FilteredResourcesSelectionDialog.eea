@@ -1,0 +1,44 @@
+class org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;ZLorg/eclipse/core/resources/IContainer;I)V
+ (Lorg/eclipse/swt/widgets/Shell;ZLorg/eclipse/core/resources/IContainer;I)V
+configureShell
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+createExtendedContentArea
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+createFilter
+ ()Lorg/eclipse/ui/dialogs/FilteredItemsSelectionDialog$ItemsFilter;
+ ()Lorg/eclipse/ui/dialogs/FilteredItemsSelectionDialog$ItemsFilter;
+fillContentProvider
+ (Lorg/eclipse/ui/dialogs/FilteredItemsSelectionDialog$AbstractContentProvider;Lorg/eclipse/ui/dialogs/FilteredItemsSelectionDialog$ItemsFilter;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/ui/dialogs/FilteredItemsSelectionDialog$AbstractContentProvider;Lorg/eclipse/ui/dialogs/FilteredItemsSelectionDialog$ItemsFilter;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+fillViewMenu
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+getDialogSettings
+ ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+ ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+getElementName
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+getItemsComparator
+ ()Ljava/util/Comparator<Lorg/eclipse/core/resources/IResource;>;
+ ()Ljava/util/Comparator<Lorg/eclipse/core/resources/IResource;>;
+getResult
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+restoreDialog
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+setTitle
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+storeDialog
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+validateItem
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/IStatus;

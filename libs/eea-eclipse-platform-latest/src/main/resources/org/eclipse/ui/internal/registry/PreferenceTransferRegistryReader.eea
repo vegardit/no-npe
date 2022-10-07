@@ -1,0 +1,24 @@
+class org/eclipse/ui/internal/registry/PreferenceTransferRegistryReader
+
+getEntry
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/util/Map<Ljava/lang/String;[Lorg/eclipse/core/runtime/preferences/PreferenceFilterEntry;>;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/util/Map<Ljava/lang/String;[Lorg/eclipse/core/runtime/preferences/PreferenceFilterEntry;>;
+getMappings
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+getScope
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+createPreferenceTransferElement
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/internal/preferences/PreferenceTransferElement;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/internal/preferences/PreferenceTransferElement;
+getPreferenceTransfers
+ ()[Lorg/eclipse/ui/internal/preferences/PreferenceTransferElement;
+ ()[Lorg/eclipse/ui/internal/preferences/PreferenceTransferElement;
+readElement
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z

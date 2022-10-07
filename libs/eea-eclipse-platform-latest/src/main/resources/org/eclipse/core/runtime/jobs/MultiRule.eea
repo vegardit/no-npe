@@ -1,0 +1,24 @@
+class org/eclipse/core/runtime/jobs/MultiRule
+
+combine
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+combine
+ ([Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ ([Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+
+<init>
+ ([Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+ ([Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+contains
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Z
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Z
+getChildren
+ ()[Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ ()[Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+isConflicting
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Z
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Z
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

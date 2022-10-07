@@ -1,0 +1,20 @@
+class org/eclipse/equinox/p2/repository/metadata/IMetadataRepository
+
+addInstallableUnits
+ (Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+ (Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+addReferences
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;)V
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;)V
+compress
+ (Lorg/eclipse/equinox/p2/core/IPool<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+ (Lorg/eclipse/equinox/p2/core/IPool<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+executeBatch
+ (Lorg/eclipse/equinox/p2/repository/IRunnableWithProgress;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/repository/IRunnableWithProgress;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+getReferences
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;
+ ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/repository/IRepositoryReference;>;
+removeInstallableUnits
+ (Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)Z
+ (Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)Z

@@ -1,0 +1,72 @@
+class org/eclipse/e4/ui/css/swt/internal/theme/ThemeEngine
+
+E4_DARK_THEME_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+THEME_PLUGIN_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Display;)V
+ (Lorg/eclipse/swt/widgets/Display;)V
+addCSSEngine
+ (Lorg/eclipse/e4/ui/css/core/engine/CSSEngine;)V
+ (Lorg/eclipse/e4/ui/css/core/engine/CSSEngine;)V
+applyStyles
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+getActiveTheme
+ ()Lorg/eclipse/e4/ui/css/swt/theme/ITheme;
+ ()Lorg/eclipse/e4/ui/css/swt/theme/ITheme;
+getCSSEngines
+ ()Ljava/util/Collection<Lorg/eclipse/e4/ui/css/core/engine/CSSEngine;>;
+ ()Ljava/util/Collection<Lorg/eclipse/e4/ui/css/core/engine/CSSEngine;>;
+getCurrentResourceLocators
+ ()Ljava/util/List<Lorg/eclipse/e4/ui/css/core/util/resources/IResourceLocator;>;
+ ()Ljava/util/List<Lorg/eclipse/e4/ui/css/core/util/resources/IResourceLocator;>;
+getModifiedStylesheets
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;)Ljava/util/List<Ljava/lang/String;>;
+getStyle
+ (Ljava/lang/Object;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/lang/Object;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+getStylesheets
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;)Ljava/util/List<Ljava/lang/String;>;
+getThemes
+ ()Ljava/util/List<Lorg/eclipse/e4/ui/css/swt/theme/ITheme;>;
+ ()Ljava/util/List<Lorg/eclipse/e4/ui/css/swt/theme/ITheme;>;
+registerResourceLocator
+ (Lorg/eclipse/e4/ui/css/core/util/resources/IResourceLocator;[Ljava/lang/String;)V
+ (Lorg/eclipse/e4/ui/css/core/util/resources/IResourceLocator;[Ljava/lang/String;)V
+registerStylesheet
+ (Ljava/lang/String;[Ljava/lang/String;)V
+ (Ljava/lang/String;[Ljava/lang/String;)V
+registerTheme
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/e4/ui/css/swt/theme/ITheme;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/e4/ui/css/swt/theme/ITheme;
+registerTheme
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/e4/ui/css/swt/theme/ITheme;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/e4/ui/css/swt/theme/ITheme;
+removeCSSEngine
+ (Lorg/eclipse/e4/ui/css/core/engine/CSSEngine;)V
+ (Lorg/eclipse/e4/ui/css/core/engine/CSSEngine;)V
+resetModifiedStylesheets
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;)V
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;)V
+restore
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setTheme
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+setTheme
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;Z)V
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;Z)V
+setTheme
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;ZZ)V
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;ZZ)V
+themeModified
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;Ljava/util/List<Ljava/lang/String;>;)V
+ (Lorg/eclipse/e4/ui/css/swt/theme/ITheme;Ljava/util/List<Ljava/lang/String;>;)V

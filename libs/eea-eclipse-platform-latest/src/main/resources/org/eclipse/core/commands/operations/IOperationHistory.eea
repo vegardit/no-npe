@@ -1,0 +1,81 @@
+class org/eclipse/core/commands/operations/IOperationHistory
+
+GLOBAL_UNDO_CONTEXT
+ Lorg/eclipse/core/commands/operations/IUndoContext;
+ L1org/eclipse/core/commands/operations/IUndoContext;
+NOTHING_TO_REDO_STATUS
+ Lorg/eclipse/core/runtime/IStatus;
+ L1org/eclipse/core/runtime/IStatus;
+NOTHING_TO_UNDO_STATUS
+ Lorg/eclipse/core/runtime/IStatus;
+ L1org/eclipse/core/runtime/IStatus;
+OPERATION_INVALID_STATUS
+ Lorg/eclipse/core/runtime/IStatus;
+ L1org/eclipse/core/runtime/IStatus;
+
+add
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;)V
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;)V
+addOperationApprover
+ (Lorg/eclipse/core/commands/operations/IOperationApprover;)V
+ (Lorg/eclipse/core/commands/operations/IOperationApprover;)V
+addOperationHistoryListener
+ (Lorg/eclipse/core/commands/operations/IOperationHistoryListener;)V
+ (Lorg/eclipse/core/commands/operations/IOperationHistoryListener;)V
+canRedo
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Z
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Z
+canUndo
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Z
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Z
+dispose
+ (Lorg/eclipse/core/commands/operations/IUndoContext;ZZZ)V
+ (Lorg/eclipse/core/commands/operations/IUndoContext;ZZZ)V
+execute
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+getLimit
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)I
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)I
+getRedoHistory
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)[Lorg/eclipse/core/commands/operations/IUndoableOperation;
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)[Lorg/eclipse/core/commands/operations/IUndoableOperation;
+getRedoOperation
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IUndoableOperation;
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IUndoableOperation;
+getUndoHistory
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)[Lorg/eclipse/core/commands/operations/IUndoableOperation;
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)[Lorg/eclipse/core/commands/operations/IUndoableOperation;
+getUndoOperation
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IUndoableOperation;
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IUndoableOperation;
+openOperation
+ (Lorg/eclipse/core/commands/operations/ICompositeOperation;I)V
+ (Lorg/eclipse/core/commands/operations/ICompositeOperation;I)V
+operationChanged
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;)V
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;)V
+redo
+ (Lorg/eclipse/core/commands/operations/IUndoContext;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/commands/operations/IUndoContext;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+redoOperation
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+removeOperationApprover
+ (Lorg/eclipse/core/commands/operations/IOperationApprover;)V
+ (Lorg/eclipse/core/commands/operations/IOperationApprover;)V
+removeOperationHistoryListener
+ (Lorg/eclipse/core/commands/operations/IOperationHistoryListener;)V
+ (Lorg/eclipse/core/commands/operations/IOperationHistoryListener;)V
+replaceOperation
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;[Lorg/eclipse/core/commands/operations/IUndoableOperation;)V
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;[Lorg/eclipse/core/commands/operations/IUndoableOperation;)V
+setLimit
+ (Lorg/eclipse/core/commands/operations/IUndoContext;I)V
+ (Lorg/eclipse/core/commands/operations/IUndoContext;I)V
+undo
+ (Lorg/eclipse/core/commands/operations/IUndoContext;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/commands/operations/IUndoContext;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+undoOperation
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/commands/operations/IUndoableOperation;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;

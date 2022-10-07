@@ -1,0 +1,73 @@
+class org/eclipse/ui/internal/ide/misc/FileInfoAttributesMatcher
+
+ID
+ Ljava/lang/String;
+ Ljava/lang/String;
+KEY_CREATED
+ Ljava/lang/String;
+ Ljava/lang/String;
+KEY_IS_READONLY
+ Ljava/lang/String;
+ Ljava/lang/String;
+KEY_IS_SYMLINK
+ Ljava/lang/String;
+ Ljava/lang/String;
+KEY_LAST_MODIFIED
+ Ljava/lang/String;
+ Ljava/lang/String;
+KEY_LENGTH
+ Ljava/lang/String;
+ Ljava/lang/String;
+KEY_LOCATION
+ Ljava/lang/String;
+ Ljava/lang/String;
+KEY_NAME
+ Ljava/lang/String;
+ Ljava/lang/String;
+KEY_PROPJECT_RELATIVE_PATH
+ Ljava/lang/String;
+ Ljava/lang/String;
+OPERATOR_AFTER
+ Ljava/lang/String;
+ Ljava/lang/String;
+OPERATOR_BEFORE
+ Ljava/lang/String;
+ Ljava/lang/String;
+OPERATOR_EQUALS
+ Ljava/lang/String;
+ Ljava/lang/String;
+OPERATOR_LARGER_THAN
+ Ljava/lang/String;
+ Ljava/lang/String;
+OPERATOR_MATCHES
+ Ljava/lang/String;
+ Ljava/lang/String;
+OPERATOR_NONE
+ Ljava/lang/String;
+ Ljava/lang/String;
+OPERATOR_SMALLER_THAN
+ Ljava/lang/String;
+ Ljava/lang/String;
+OPERATOR_WITHIN
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+decodeArguments
+ (Ljava/lang/String;)Lorg/eclipse/ui/internal/ide/misc/FileInfoAttributesMatcher$Argument;
+ (Ljava/lang/String;)Lorg/eclipse/ui/internal/ide/misc/FileInfoAttributesMatcher$Argument;
+encodeArguments
+ (Lorg/eclipse/ui/internal/ide/misc/FileInfoAttributesMatcher$Argument;)Ljava/lang/String;
+ (Lorg/eclipse/ui/internal/ide/misc/FileInfoAttributesMatcher$Argument;)Ljava/lang/String;
+getOperatorsForKey
+ (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[Ljava/lang/String;
+getTypeForKey
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Class<*>;
+
+initialize
+ (Lorg/eclipse/core/resources/IProject;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/resources/IProject;Ljava/lang/Object;)V
+matches
+ (Lorg/eclipse/core/resources/IContainer;Lorg/eclipse/core/filesystem/IFileInfo;)Z
+ (Lorg/eclipse/core/resources/IContainer;Lorg/eclipse/core/filesystem/IFileInfo;)Z

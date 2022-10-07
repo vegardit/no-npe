@@ -1,0 +1,41 @@
+class org/eclipse/ui/internal/dialogs/AbstractWorkingSetDialog
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;[Ljava/lang/String;Z)V
+ (Lorg/eclipse/swt/widgets/Shell;[Ljava/lang/String;Z)V
+addModifyButtons
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+addSelectionButtons
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+getAddedWorkingSets
+ ()Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;
+getEditedWorkingSets
+ ()Ljava/util/Map<Lorg/eclipse/ui/IWorkingSet;Lorg/eclipse/ui/IWorkingSet;>;
+ ()Ljava/util/Map<Lorg/eclipse/ui/IWorkingSet;Lorg/eclipse/ui/IWorkingSet;>;
+getRemovedMRUWorkingSets
+ ()Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;
+getRemovedWorkingSets
+ ()Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;
+getSelectedWorkingSets
+ ()Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;
+getSelection
+ ()[Lorg/eclipse/ui/IWorkingSet;
+ ()[Lorg/eclipse/ui/IWorkingSet;
+getSupportedWorkingSetIds
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+removeSelectedWorkingSets
+ (Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;)V
+ (Ljava/util/List<Lorg/eclipse/ui/IWorkingSet;>;)V
+setSelection
+ ([Lorg/eclipse/ui/IWorkingSet;)V
+ ([Lorg/eclipse/ui/IWorkingSet;)V
+workingSetAdded
+ (Lorg/eclipse/ui/IWorkingSet;)V
+ (Lorg/eclipse/ui/IWorkingSet;)V

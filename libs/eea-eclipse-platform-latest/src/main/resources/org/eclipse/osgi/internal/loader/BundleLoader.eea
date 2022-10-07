@@ -1,0 +1,88 @@
+class org/eclipse/osgi/internal/loader/BundleLoader
+
+CLASS_CONTEXT
+ Lorg/eclipse/osgi/internal/loader/BundleLoader$ClassContext;
+ L1org/eclipse/osgi/internal/loader/BundleLoader$ClassContext;
+DEFAULT_PACKAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+FW_CLASSLOADER
+ Ljava/lang/ClassLoader;
+ L1java/lang/ClassLoader;
+JAVA_PACKAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+compoundEnumerations
+ <E:Ljava/lang/Object;>(Ljava/util/Enumeration<TE;>;Ljava/util/Enumeration<TE;>;)Ljava/util/Enumeration<TE;>;
+ <E:Ljava/lang/Object;>(Ljava/util/Enumeration<TE;>;Ljava/util/Enumeration<TE;>;)Ljava/util/Enumeration<TE;>;
+getPackageName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getResourcePackageName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+
+<init>
+ (Lorg/eclipse/osgi/container/ModuleWiring;Lorg/eclipse/osgi/internal/framework/EquinoxContainer;Ljava/lang/ClassLoader;)V
+ (Lorg/eclipse/osgi/container/ModuleWiring;Lorg/eclipse/osgi/internal/framework/EquinoxContainer;Ljava/lang/ClassLoader;)V
+addDynamicImportPackage
+ ([Lorg/eclipse/osgi/util/ManifestElement;)V
+ ([Lorg/eclipse/osgi/util/ManifestElement;)V
+addFragmentExports
+ (Ljava/util/List<Lorg/eclipse/osgi/container/ModuleCapability;>;)V
+ (Ljava/util/List<Lorg/eclipse/osgi/container/ModuleCapability;>;)V
+findClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+findClassNoException
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+findClassNoParentNoException
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+findEntries
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/List<Ljava/net/URL;>;
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/List<Ljava/net/URL;>;
+findLocalClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+findLocalResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+findLocalResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+findResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+findResources
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+getClassLoader
+ ()Ljava/lang/ClassLoader;
+ ()Ljava/lang/ClassLoader;
+getModuleClassLoader
+ ()Lorg/eclipse/osgi/internal/loader/ModuleClassLoader;
+ ()Lorg/eclipse/osgi/internal/loader/ModuleClassLoader;
+getPackageSource
+ (Ljava/lang/String;)Lorg/eclipse/osgi/internal/loader/sources/PackageSource;
+ (Ljava/lang/String;)Lorg/eclipse/osgi/internal/loader/sources/PackageSource;
+getParentClassLoader
+ ()Ljava/lang/ClassLoader;
+ ()Ljava/lang/ClassLoader;
+getWiring
+ ()Lorg/eclipse/osgi/container/ModuleWiring;
+ ()Lorg/eclipse/osgi/container/ModuleWiring;
+isExportedPackage
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+listResources
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Collection<Ljava/lang/String;>;
+ (Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Collection<Ljava/lang/String;>;
+loadFragments
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/ModuleRevision;>;)V
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/ModuleRevision;>;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

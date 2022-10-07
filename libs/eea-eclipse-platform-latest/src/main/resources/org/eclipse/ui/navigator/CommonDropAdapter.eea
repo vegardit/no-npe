@@ -1,0 +1,29 @@
+class org/eclipse/ui/navigator/CommonDropAdapter
+
+<init>
+ (Lorg/eclipse/ui/navigator/INavigatorContentService;Lorg/eclipse/jface/viewers/StructuredViewer;)V
+ (Lorg/eclipse/ui/navigator/INavigatorContentService;Lorg/eclipse/jface/viewers/StructuredViewer;)V
+dragEnter
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+dragLeave
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+getBounds
+ (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/graphics/Rectangle;
+ (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/graphics/Rectangle;
+getCurrentTarget
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getCurrentTransfer
+ ()Lorg/eclipse/swt/dnd/TransferData;
+ ()Lorg/eclipse/swt/dnd/TransferData;
+getSupportedDropTransfers
+ ()[Lorg/eclipse/swt/dnd/Transfer;
+ ()[Lorg/eclipse/swt/dnd/Transfer;
+performDrop
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+validateDrop
+ (Ljava/lang/Object;ILorg/eclipse/swt/dnd/TransferData;)Z
+ (Ljava/lang/Object;ILorg/eclipse/swt/dnd/TransferData;)Z

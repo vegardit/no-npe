@@ -1,0 +1,62 @@
+class org/eclipse/osgi/storage/url/BundleResourceHandler
+
+BID_FWKID_SEPARATOR
+ Ljava/lang/String;
+ L1java/lang/String;
+OSGI_ENTRY_URL_PROTOCOL
+ Ljava/lang/String;
+ L1java/lang/String;
+OSGI_RESOURCE_URL_PROTOCOL
+ Ljava/lang/String;
+ L1java/lang/String;
+SECURITY_CHECKED
+ Ljava/lang/String;
+ L1java/lang/String;
+SECURITY_UNCHECKED
+ Ljava/lang/String;
+ L1java/lang/String;
+
+createURLHostForBundleID
+ (Lorg/eclipse/osgi/container/ModuleContainer;J)Ljava/lang/String;
+ (Lorg/eclipse/osgi/container/ModuleContainer;J)Ljava/lang/String;
+
+bundleEntry
+ Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+ Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+container
+ Lorg/eclipse/osgi/container/ModuleContainer;
+ Lorg/eclipse/osgi/container/ModuleContainer;
+
+<init>
+ (Lorg/eclipse/osgi/container/ModuleContainer;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;)V
+ (Lorg/eclipse/osgi/container/ModuleContainer;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;)V
+checkAuthorization
+ (Lorg/eclipse/osgi/container/Module;)Z
+ (Lorg/eclipse/osgi/container/Module;)Z
+equals
+ (Ljava/net/URL;Ljava/net/URL;)Z
+ (Ljava/net/URL;Ljava/net/URL;)Z
+findBundleEntry
+ (Ljava/net/URL;Lorg/eclipse/osgi/container/Module;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+ (Ljava/net/URL;Lorg/eclipse/osgi/container/Module;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+getHostAddress
+ (Ljava/net/URL;)Ljava/net/InetAddress;
+ (Ljava/net/URL;)Ljava/net/InetAddress;
+hashCode
+ (Ljava/net/URL;)I
+ (Ljava/net/URL;)I
+hostsEqual
+ (Ljava/net/URL;Ljava/net/URL;)Z
+ (Ljava/net/URL;Ljava/net/URL;)Z
+openConnection
+ (Ljava/net/URL;)Ljava/net/URLConnection;
+ (Ljava/net/URL;)Ljava/net/URLConnection;
+parseURL
+ (Ljava/net/URL;Ljava/lang/String;II)V
+ (Ljava/net/URL;Ljava/lang/String;II)V
+sameFile
+ (Ljava/net/URL;Ljava/net/URL;)Z
+ (Ljava/net/URL;Ljava/net/URL;)Z
+toExternalForm
+ (Ljava/net/URL;)Ljava/lang/String;
+ (Ljava/net/URL;)Ljava/lang/String;

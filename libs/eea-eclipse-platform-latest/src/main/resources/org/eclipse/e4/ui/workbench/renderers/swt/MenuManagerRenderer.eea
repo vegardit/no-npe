@@ -1,0 +1,82 @@
+class org/eclipse/e4/ui/workbench/renderers/swt/MenuManagerRenderer
+
+GROUP_MARKER
+ Ljava/lang/String;
+ L1java/lang/String;
+VISIBILITY_IDENTIFIER
+ Ljava/lang/String;
+ L1java/lang/String;
+
+updateVisibility
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/e4/core/commands/ExpressionContext;)V
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/e4/core/commands/ExpressionContext;)V
+
+addRecord
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;)V
+cleanUp
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;)V
+cleanUpCopy
+ (Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;)V
+ (Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;)V
+clearModelToContribution
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/jface/action/IContributionItem;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/jface/action/IContributionItem;)V
+clearModelToManager
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Lorg/eclipse/jface/action/MenuManager;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Lorg/eclipse/jface/action/MenuManager;)V
+createWidget
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)Ljava/lang/Object;
+getContext
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getContribution
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;)Lorg/eclipse/jface/action/IContributionItem;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;)Lorg/eclipse/jface/action/IContributionItem;
+getContributionRecord
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;)Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;)Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;
+getContributionRecords
+ ()[Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;
+ ()[Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;
+getList
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;)Ljava/util/ArrayList<Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;>;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;)Ljava/util/ArrayList<Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;>;
+getManager
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;)Lorg/eclipse/jface/action/MenuManager;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;)Lorg/eclipse/jface/action/MenuManager;
+getMenuElement
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;
+getMenuModel
+ (Lorg/eclipse/jface/action/MenuManager;)Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;
+ (Lorg/eclipse/jface/action/MenuManager;)Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;
+linkElementToContributionRecord
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;)V
+linkModelToContribution
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/jface/action/IContributionItem;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/jface/action/IContributionItem;)V
+linkModelToManager
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Lorg/eclipse/jface/action/MenuManager;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Lorg/eclipse/jface/action/MenuManager;)V
+processContents
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;)V
+processContributions
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Ljava/lang/String;ZZ)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Ljava/lang/String;ZZ)V
+reconcileManagerToModel
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;)V
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;)V
+removeDynamicMenuContributions
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;)V
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;)V
+removeDynamicMenuContributions
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Ljava/util/List<Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;>;)V
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Ljava/util/List<Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;>;)V
+removeRecord
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;Lorg/eclipse/e4/ui/workbench/renderers/swt/ContributionRecord;)V

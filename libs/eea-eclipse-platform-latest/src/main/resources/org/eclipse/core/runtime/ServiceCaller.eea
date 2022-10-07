@@ -1,0 +1,22 @@
+class org/eclipse/core/runtime/ServiceCaller
+ <Service:Ljava/lang/Object;>
+
+callOnce
+ <Service:Ljava/lang/Object;>(Ljava/lang/Class<*>;Ljava/lang/Class<TService;>;Ljava/lang/String;Ljava/util/function/Consumer<TService;>;)Z
+ <Service:Ljava/lang/Object;>(Ljava/lang/Class<*>;Ljava/lang/Class<TService;>;Ljava/lang/String;Ljava/util/function/Consumer<TService;>;)Z
+callOnce
+ <Service:Ljava/lang/Object;>(Ljava/lang/Class<*>;Ljava/lang/Class<TService;>;Ljava/util/function/Consumer<TService;>;)Z
+ <Service:Ljava/lang/Object;>(Ljava/lang/Class<*>;Ljava/lang/Class<TService;>;Ljava/util/function/Consumer<TService;>;)Z
+
+<init>
+ (Ljava/lang/Class<*>;Ljava/lang/Class<TService;>;)V
+ (Ljava/lang/Class<*>;Ljava/lang/Class<TService;>;)V
+<init>
+ (Ljava/lang/Class<*>;Ljava/lang/Class<TService;>;Ljava/lang/String;)V
+ (Ljava/lang/Class<*>;Ljava/lang/Class<TService;>;Ljava/lang/String;)V
+call
+ (Ljava/util/function/Consumer<TService;>;)Z
+ (Ljava/util/function/Consumer<TService;>;)Z
+current
+ ()Ljava/util/Optional<TService;>;
+ ()Ljava/util/Optional<TService;>;

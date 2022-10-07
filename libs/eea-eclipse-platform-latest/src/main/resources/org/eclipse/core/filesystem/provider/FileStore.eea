@@ -1,0 +1,84 @@
+class org/eclipse/core/filesystem/provider/FileStore
+
+EMPTY_FILE_INFO_ARRAY
+ [Lorg/eclipse/core/filesystem/IFileInfo;
+ [1Lorg/eclipse/core/filesystem/IFileInfo;
+EMPTY_STRING_ARRAY
+ [Ljava/lang/String;
+ [1Ljava/lang/String;
+
+childInfos
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/filesystem/IFileInfo;
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/filesystem/IFileInfo;
+childNames
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[Ljava/lang/String;
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[Ljava/lang/String;
+childStores
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/filesystem/IFileStore;
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/filesystem/IFileStore;
+copy
+ (Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+copyDirectory
+ (Lorg/eclipse/core/filesystem/IFileInfo;Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/filesystem/IFileInfo;Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+copyFile
+ (Lorg/eclipse/core/filesystem/IFileInfo;Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/filesystem/IFileInfo;Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+delete
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+fetchInfo
+ ()Lorg/eclipse/core/filesystem/IFileInfo;
+ ()Lorg/eclipse/core/filesystem/IFileInfo;
+fetchInfo
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/filesystem/IFileInfo;
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/filesystem/IFileInfo;
+getChild
+ (Ljava/lang/String;)Lorg/eclipse/core/filesystem/IFileStore;
+ (Ljava/lang/String;)Lorg/eclipse/core/filesystem/IFileStore;
+getChild
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filesystem/IFileStore;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filesystem/IFileStore;
+getFileStore
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filesystem/IFileStore;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filesystem/IFileStore;
+getFileSystem
+ ()Lorg/eclipse/core/filesystem/IFileSystem;
+ ()Lorg/eclipse/core/filesystem/IFileSystem;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getParent
+ ()Lorg/eclipse/core/filesystem/IFileStore;
+ ()Lorg/eclipse/core/filesystem/IFileStore;
+isParentOf
+ (Lorg/eclipse/core/filesystem/IFileStore;)Z
+ (Lorg/eclipse/core/filesystem/IFileStore;)Z
+mkdir
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/filesystem/IFileStore;
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/filesystem/IFileStore;
+move
+ (Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+openInputStream
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/InputStream;
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/InputStream;
+openOutputStream
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/OutputStream;
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/OutputStream;
+putInfo
+ (Lorg/eclipse/core/filesystem/IFileInfo;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/filesystem/IFileInfo;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+toLocalFile
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File;
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+toURI
+ ()Ljava/net/URI;
+ ()Ljava/net/URI;

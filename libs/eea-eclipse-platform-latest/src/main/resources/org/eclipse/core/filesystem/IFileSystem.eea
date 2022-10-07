@@ -1,0 +1,17 @@
+class org/eclipse/core/filesystem/IFileSystem
+
+fetchFileTree
+ (Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/filesystem/IFileTree;
+ (Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/filesystem/IFileTree;
+fromLocalFile
+ (Ljava/io/File;)Lorg/eclipse/core/filesystem/IFileStore;
+ (Ljava/io/File;)Lorg/eclipse/core/filesystem/IFileStore;
+getScheme
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getStore
+ (Ljava/net/URI;)Lorg/eclipse/core/filesystem/IFileStore;
+ (Ljava/net/URI;)Lorg/eclipse/core/filesystem/IFileStore;
+getStore
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filesystem/IFileStore;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filesystem/IFileStore;

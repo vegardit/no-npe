@@ -1,0 +1,66 @@
+class org/eclipse/ui/views/navigator/MainActionGroup
+
+addBookmarkAction
+ Lorg/eclipse/ui/actions/AddBookmarkAction;
+ Lorg/eclipse/ui/actions/AddBookmarkAction;
+addTaskAction
+ Lorg/eclipse/ui/actions/AddTaskAction;
+ Lorg/eclipse/ui/actions/AddTaskAction;
+collapseAllAction
+ Lorg/eclipse/ui/views/navigator/CollapseAllAction;
+ Lorg/eclipse/ui/views/navigator/CollapseAllAction;
+exportAction
+ Lorg/eclipse/ui/actions/ExportResourcesAction;
+ Lorg/eclipse/ui/actions/ExportResourcesAction;
+gotoGroup
+ Lorg/eclipse/ui/views/navigator/GotoActionGroup;
+ Lorg/eclipse/ui/views/navigator/GotoActionGroup;
+importAction
+ Lorg/eclipse/ui/actions/ImportResourcesAction;
+ Lorg/eclipse/ui/actions/ImportResourcesAction;
+openGroup
+ Lorg/eclipse/ui/views/navigator/OpenActionGroup;
+ Lorg/eclipse/ui/views/navigator/OpenActionGroup;
+propertyDialogAction
+ Lorg/eclipse/ui/dialogs/PropertyDialogAction;
+ Lorg/eclipse/ui/dialogs/PropertyDialogAction;
+refactorGroup
+ Lorg/eclipse/ui/views/navigator/RefactorActionGroup;
+ Lorg/eclipse/ui/views/navigator/RefactorActionGroup;
+sortAndFilterGroup
+ Lorg/eclipse/ui/views/navigator/SortAndFilterActionGroup;
+ Lorg/eclipse/ui/views/navigator/SortAndFilterActionGroup;
+toggleLinkingAction
+ Lorg/eclipse/ui/views/navigator/ToggleLinkingAction;
+ Lorg/eclipse/ui/views/navigator/ToggleLinkingAction;
+undoRedoGroup
+ Lorg/eclipse/ui/operations/UndoRedoActionGroup;
+ Lorg/eclipse/ui/operations/UndoRedoActionGroup;
+workingSetGroup
+ Lorg/eclipse/ui/actions/WorkingSetFilterActionGroup;
+ Lorg/eclipse/ui/actions/WorkingSetFilterActionGroup;
+workspaceGroup
+ Lorg/eclipse/ui/views/navigator/WorkspaceActionGroup;
+ Lorg/eclipse/ui/views/navigator/WorkspaceActionGroup;
+
+<init>
+ (Lorg/eclipse/ui/views/navigator/IResourceNavigator;)V
+ (Lorg/eclipse/ui/views/navigator/IResourceNavigator;)V
+fillActionBars
+ (Lorg/eclipse/ui/IActionBars;)V
+ (Lorg/eclipse/ui/IActionBars;)V
+fillContextMenu
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+handleKeyPressed
+ (Lorg/eclipse/swt/events/KeyEvent;)V
+ (Lorg/eclipse/swt/events/KeyEvent;)V
+handleResourceChanged
+ (Lorg/eclipse/core/resources/IResourceChangeEvent;)V
+ (Lorg/eclipse/core/resources/IResourceChangeEvent;)V
+runDefaultAction
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+setContext
+ (Lorg/eclipse/ui/actions/ActionContext;)V
+ (Lorg/eclipse/ui/actions/ActionContext;)V

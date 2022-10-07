@@ -1,0 +1,81 @@
+class org/eclipse/ui/views/properties/tabbed/TabbedPropertySheetPage
+
+tabListContentProvider
+ Lorg/eclipse/jface/viewers/IStructuredContentProvider;
+ Lorg/eclipse/jface/viewers/IStructuredContentProvider;
+
+<init>
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabbedPropertySheetPageContributor;)V
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabbedPropertySheetPageContributor;)V
+<init>
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabbedPropertySheetPageContributor;Z)V
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabbedPropertySheetPageContributor;Z)V
+addTabSelectionListener
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabSelectionListener;)V
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabSelectionListener;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createTab
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;)Lorg/eclipse/ui/views/properties/tabbed/TabContents;
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;)Lorg/eclipse/ui/views/properties/tabbed/TabContents;
+disposeTabs
+ (Ljava/util/Collection;)V
+ (Ljava/util/Collection;)V
+getActiveTabs
+ ()[Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+ ()[Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getCurrentContributorId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCurrentSelection
+ ()Lorg/eclipse/jface/viewers/ISelection;
+ ()Lorg/eclipse/jface/viewers/ISelection;
+getCurrentTab
+ ()Lorg/eclipse/ui/views/properties/tabbed/TabContents;
+ ()Lorg/eclipse/ui/views/properties/tabbed/TabContents;
+getSelectedTab
+ ()Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+ ()Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+getSelectionContributor
+ ()Lorg/eclipse/ui/views/properties/tabbed/ITabbedPropertySheetPageContributor;
+ ()Lorg/eclipse/ui/views/properties/tabbed/ITabbedPropertySheetPageContributor;
+getTabContents
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;)Lorg/eclipse/ui/views/properties/tabbed/TabContents;
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;)Lorg/eclipse/ui/views/properties/tabbed/TabContents;
+getTabListContentProvider
+ ()Lorg/eclipse/jface/viewers/IStructuredContentProvider;
+ ()Lorg/eclipse/jface/viewers/IStructuredContentProvider;
+getTitleImage
+ (Lorg/eclipse/jface/viewers/ISelection;)Lorg/eclipse/swt/graphics/Image;
+ (Lorg/eclipse/jface/viewers/ISelection;)Lorg/eclipse/swt/graphics/Image;
+getTitleText
+ (Lorg/eclipse/jface/viewers/ISelection;)Ljava/lang/String;
+ (Lorg/eclipse/jface/viewers/ISelection;)Ljava/lang/String;
+getWidgetFactory
+ ()Lorg/eclipse/ui/views/properties/tabbed/TabbedPropertySheetWidgetFactory;
+ ()Lorg/eclipse/ui/views/properties/tabbed/TabbedPropertySheetWidgetFactory;
+handlePartActivated
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+labelProviderChanged
+ (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
+ (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
+removeTabSelectionListener
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabSelectionListener;)V
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabSelectionListener;)V
+selectionChanged
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)V
+setActionBars
+ (Lorg/eclipse/ui/IActionBars;)V
+ (Lorg/eclipse/ui/IActionBars;)V
+setSelectedTab
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+updateTabs
+ ([Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;)V
+ ([Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;)V

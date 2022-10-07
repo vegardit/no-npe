@@ -1,0 +1,42 @@
+class org/eclipse/osgi/service/debug/DebugOptions
+
+LISTENER_SYMBOLICNAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getBooleanOption
+ (Ljava/lang/String;Z)Z
+ (Ljava/lang/String;Z)Z
+getFile
+ ()Ljava/io/File;
+ ()Ljava/io/File;
+getIntegerOption
+ (Ljava/lang/String;I)I
+ (Ljava/lang/String;I)I
+getOption
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getOption
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getOptions
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+newDebugTrace
+ (Ljava/lang/String;)Lorg/eclipse/osgi/service/debug/DebugTrace;
+ (Ljava/lang/String;)Lorg/eclipse/osgi/service/debug/DebugTrace;
+newDebugTrace
+ (Ljava/lang/String;Ljava/lang/Class<*>;)Lorg/eclipse/osgi/service/debug/DebugTrace;
+ (Ljava/lang/String;Ljava/lang/Class<*>;)Lorg/eclipse/osgi/service/debug/DebugTrace;
+removeOption
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setFile
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+setOption
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+setOptions
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V

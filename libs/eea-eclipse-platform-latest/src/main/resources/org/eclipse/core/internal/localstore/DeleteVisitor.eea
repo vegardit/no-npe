@@ -1,0 +1,39 @@
+class org/eclipse/core/internal/localstore/DeleteVisitor
+
+monitor
+ Lorg/eclipse/core/runtime/IProgressMonitor;
+ Lorg/eclipse/core/runtime/IProgressMonitor;
+skipList
+ Ljava/util/List<Lorg/eclipse/core/internal/resources/Resource;>;
+ Ljava/util/List<Lorg/eclipse/core/internal/resources/Resource;>;
+status
+ Lorg/eclipse/core/runtime/MultiStatus;
+ Lorg/eclipse/core/runtime/MultiStatus;
+
+<init>
+ (Ljava/util/List<Lorg/eclipse/core/internal/resources/Resource;>;ILorg/eclipse/core/runtime/IProgressMonitor;I)V
+ (Ljava/util/List<Lorg/eclipse/core/internal/resources/Resource;>;ILorg/eclipse/core/runtime/IProgressMonitor;I)V
+delete
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Z)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Z)V
+equals
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;)Z
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;)Z
+getStatus
+ ()Lorg/eclipse/core/runtime/MultiStatus;
+ ()Lorg/eclipse/core/runtime/MultiStatus;
+isAncestor
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;)Z
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IResource;)Z
+isAncestorOfResourceToSkip
+ (Lorg/eclipse/core/resources/IResource;)Z
+ (Lorg/eclipse/core/resources/IResource;)Z
+removeFromSkipList
+ (Lorg/eclipse/core/resources/IResource;)V
+ (Lorg/eclipse/core/resources/IResource;)V
+shouldSkip
+ (Lorg/eclipse/core/resources/IResource;)Z
+ (Lorg/eclipse/core/resources/IResource;)Z
+visit
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Z
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Z

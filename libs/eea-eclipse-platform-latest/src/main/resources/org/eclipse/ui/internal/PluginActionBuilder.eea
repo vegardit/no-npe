@@ -1,0 +1,36 @@
+class org/eclipse/ui/internal/PluginActionBuilder
+
+cache
+ Ljava/util/ArrayList<Ljava/lang/Object;>;
+ Ljava/util/ArrayList<Ljava/lang/Object;>;
+currentContribution
+ Lorg/eclipse/ui/internal/PluginActionBuilder$BasicContribution;
+ Lorg/eclipse/ui/internal/PluginActionBuilder$BasicContribution;
+targetContributionTag
+ Ljava/lang/String;
+ Ljava/lang/String;
+targetID
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+contribute
+ (Lorg/eclipse/jface/action/IMenuManager;Lorg/eclipse/jface/action/IToolBarManager;Z)V
+ (Lorg/eclipse/jface/action/IMenuManager;Lorg/eclipse/jface/action/IToolBarManager;Z)V
+createActionDescriptor
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/internal/ActionDescriptor;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/internal/ActionDescriptor;
+createContribution
+ ()Lorg/eclipse/ui/internal/PluginActionBuilder$BasicContribution;
+ ()Lorg/eclipse/ui/internal/PluginActionBuilder$BasicContribution;
+getID
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+getTargetID
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+readContributions
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+readElement
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z

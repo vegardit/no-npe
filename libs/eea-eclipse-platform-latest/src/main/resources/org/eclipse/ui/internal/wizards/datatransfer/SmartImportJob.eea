@@ -1,0 +1,45 @@
+class org/eclipse/ui/internal/wizards/datatransfer/SmartImportJob
+
+importProposals
+ Ljava/util/Map<Ljava/io/File;Ljava/util/List<Lorg/eclipse/ui/wizards/datatransfer/ProjectConfigurator;>;>;
+ Ljava/util/Map<Ljava/io/File;Ljava/util/List<Lorg/eclipse/ui/wizards/datatransfer/ProjectConfigurator;>;>;
+
+<init>
+ (Ljava/io/File;Ljava/util/Set<Lorg/eclipse/ui/IWorkingSet;>;ZZ)V
+ (Ljava/io/File;Ljava/util/Set<Lorg/eclipse/ui/IWorkingSet;>;ZZ)V
+belongsTo
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+getConfiguredProjects
+ ()Ljava/util/Map<Lorg/eclipse/core/resources/IProject;Ljava/util/List<Lorg/eclipse/ui/wizards/datatransfer/ProjectConfigurator;>;>;
+ ()Ljava/util/Map<Lorg/eclipse/core/resources/IProject;Ljava/util/List<Lorg/eclipse/ui/wizards/datatransfer/ProjectConfigurator;>;>;
+getDirectoriesToImport
+ ()Ljava/util/Set<Ljava/io/File;>;
+ ()Ljava/util/Set<Ljava/io/File;>;
+getErrors
+ ()Ljava/util/Map<Lorg/eclipse/core/runtime/IPath;Ljava/lang/Exception;>;
+ ()Ljava/util/Map<Lorg/eclipse/core/runtime/IPath;Ljava/lang/Exception;>;
+getImportProposals
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Map<Ljava/io/File;Ljava/util/List<Lorg/eclipse/ui/wizards/datatransfer/ProjectConfigurator;>;>;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Map<Ljava/io/File;Ljava/util/List<Lorg/eclipse/ui/wizards/datatransfer/ProjectConfigurator;>;>;
+getRoot
+ ()Ljava/io/File;
+ ()Ljava/io/File;
+getRootProject
+ ()Lorg/eclipse/core/resources/IProject;
+ ()Lorg/eclipse/core/resources/IProject;
+run
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+setDirectoriesToImport
+ (Ljava/util/Set<Ljava/io/File;>;)V
+ (Ljava/util/Set<Ljava/io/File;>;)V
+setExcludedDirectories
+ (Ljava/util/Set<Ljava/io/File;>;)V
+ (Ljava/util/Set<Ljava/io/File;>;)V
+setListener
+ (Lorg/eclipse/ui/internal/wizards/datatransfer/RecursiveImportListener;)V
+ (Lorg/eclipse/ui/internal/wizards/datatransfer/RecursiveImportListener;)V
+setWorkingSets
+ (Ljava/util/Set<Lorg/eclipse/ui/IWorkingSet;>;)V
+ (Ljava/util/Set<Lorg/eclipse/ui/IWorkingSet;>;)V

@@ -1,0 +1,48 @@
+class org/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor
+
+ARTIFACT_CHECKSUM
+ Ljava/lang/String;
+ L1java/lang/String;
+ARTIFACT_MD5
+ Ljava/lang/String;
+ L1java/lang/String;
+ARTIFACT_SIZE
+ Ljava/lang/String;
+ L1java/lang/String;
+DOWNLOAD_CHECKSUM
+ Ljava/lang/String;
+ L1java/lang/String;
+DOWNLOAD_CONTENTTYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+DOWNLOAD_MD5
+ Ljava/lang/String;
+ L1java/lang/String;
+DOWNLOAD_SIZE
+ Ljava/lang/String;
+ L1java/lang/String;
+FORMAT
+ Ljava/lang/String;
+ L1java/lang/String;
+FORMAT_PACKED
+ Ljava/lang/String;
+ L1java/lang/String;
+TYPE_ZIP
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getArtifactKey
+ ()Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
+ ()Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
+getProcessingSteps
+ ()[Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;
+ ()[Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;
+getProperties
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getRepository
+ ()Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+ ()Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;

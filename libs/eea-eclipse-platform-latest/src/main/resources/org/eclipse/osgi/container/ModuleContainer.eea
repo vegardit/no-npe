@@ -1,0 +1,54 @@
+class org/eclipse/osgi/container/ModuleContainer
+
+createRequirement
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/osgi/resource/Requirement;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/osgi/resource/Requirement;
+
+<init>
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor;Lorg/eclipse/osgi/container/ModuleDatabase;)V
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor;Lorg/eclipse/osgi/container/ModuleDatabase;)V
+getAdaptor
+ ()Lorg/eclipse/osgi/container/ModuleContainerAdaptor;
+ ()Lorg/eclipse/osgi/container/ModuleContainerAdaptor;
+getDependencyClosure
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;)Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;)Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;
+getFrameworkStartLevel
+ ()Lorg/osgi/framework/startlevel/FrameworkStartLevel;
+ ()Lorg/osgi/framework/startlevel/FrameworkStartLevel;
+getFrameworkWiring
+ ()Lorg/osgi/framework/wiring/FrameworkWiring;
+ ()Lorg/osgi/framework/wiring/FrameworkWiring;
+getModule
+ (J)Lorg/eclipse/osgi/container/Module;
+ (J)Lorg/eclipse/osgi/container/Module;
+getModule
+ (Ljava/lang/String;)Lorg/eclipse/osgi/container/Module;
+ (Ljava/lang/String;)Lorg/eclipse/osgi/container/Module;
+getModules
+ ()Ljava/util/List<Lorg/eclipse/osgi/container/Module;>;
+ ()Ljava/util/List<Lorg/eclipse/osgi/container/Module;>;
+getRemovalPending
+ ()Ljava/util/Collection<Lorg/eclipse/osgi/container/ModuleRevision;>;
+ ()Ljava/util/Collection<Lorg/eclipse/osgi/container/ModuleRevision;>;
+install
+ (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)Lorg/eclipse/osgi/container/Module;
+ (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)Lorg/eclipse/osgi/container/Module;
+optionsChanged
+ (Lorg/eclipse/osgi/service/debug/DebugOptions;)V
+ (Lorg/eclipse/osgi/service/debug/DebugOptions;)V
+refresh
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;)Lorg/eclipse/osgi/report/resolution/ResolutionReport;
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;)Lorg/eclipse/osgi/report/resolution/ResolutionReport;
+resolve
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;Z)Lorg/eclipse/osgi/report/resolution/ResolutionReport;
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;Z)Lorg/eclipse/osgi/report/resolution/ResolutionReport;
+resolveDynamic
+ (Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevision;)Lorg/eclipse/osgi/container/ModuleWire;
+ (Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevision;)Lorg/eclipse/osgi/container/ModuleWire;
+uninstall
+ (Lorg/eclipse/osgi/container/Module;)V
+ (Lorg/eclipse/osgi/container/Module;)V
+update
+ (Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)V
+ (Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)V

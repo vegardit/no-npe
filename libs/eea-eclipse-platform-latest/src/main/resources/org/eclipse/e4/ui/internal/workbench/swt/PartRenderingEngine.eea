@@ -1,0 +1,59 @@
+class org/eclipse/e4/ui/internal/workbench/swt/PartRenderingEngine
+
+EARLY_STARTUP_HOOK
+ Ljava/lang/String;
+ L1java/lang/String;
+ENABLED_THEME_KEY
+ Ljava/lang/String;
+ L1java/lang/String;
+engineURI
+ Ljava/lang/String;
+ L1java/lang/String;
+
+initializeStyling
+ (Lorg/eclipse/swt/widgets/Display;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/swt/widgets/Display;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+
+logger
+ Lorg/eclipse/e4/core/services/log/Logger;
+ Lorg/eclipse/e4/core/services/log/Logger;
+testShell
+ Lorg/eclipse/swt/widgets/Shell;
+ Lorg/eclipse/swt/widgets/Shell;
+theApp
+ Lorg/eclipse/e4/ui/model/application/MApplication;
+ Lorg/eclipse/e4/ui/model/application/MApplication;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+createGui
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Ljava/lang/Object;
+createGui
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+createWidget
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)Ljava/lang/Object;
+fixZOrder
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+focusGui
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+getRendererFor
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/internal/workbench/swt/AbstractPartRenderer;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/internal/workbench/swt/AbstractPartRenderer;
+removeGui
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+run
+ (Lorg/eclipse/e4/ui/model/application/MApplicationElement;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/MApplicationElement;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+safeCreateGui
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Ljava/lang/Object;
+someAreVisible
+ (Ljava/util/List<Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;>;)Z
+ (Ljava/util/List<Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;>;)Z

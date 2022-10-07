@@ -1,0 +1,43 @@
+class org/eclipse/ui/actions/CopyProjectAction
+
+ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+errorStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+shell
+ Lorg/eclipse/swt/widgets/Shell;
+ Lorg/eclipse/swt/widgets/Shell;
+shellProvider
+ Lorg/eclipse/jface/window/IShellProvider;
+ Lorg/eclipse/jface/window/IShellProvider;
+
+<init>
+ (Lorg/eclipse/jface/window/IShellProvider;)V
+ (Lorg/eclipse/jface/window/IShellProvider;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+createDescription
+ (Lorg/eclipse/core/resources/IProject;Ljava/lang/String;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IProjectDescription;
+ (Lorg/eclipse/core/resources/IProject;Ljava/lang/String;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IProjectDescription;
+getErrorsTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getModelProviderIds
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getPlugin
+ ()Lorg/eclipse/ui/plugin/AbstractUIPlugin;
+ ()Lorg/eclipse/ui/plugin/AbstractUIPlugin;
+queryDestinationParameters
+ (Lorg/eclipse/core/resources/IProject;)[Ljava/lang/Object;
+ (Lorg/eclipse/core/resources/IProject;)[Ljava/lang/Object;
+setModelProviderIds
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+updateSelection
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)Z
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)Z

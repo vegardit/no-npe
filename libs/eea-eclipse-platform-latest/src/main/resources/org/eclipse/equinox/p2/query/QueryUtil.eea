@@ -1,0 +1,120 @@
+class org/eclipse/equinox/p2/query/QueryUtil
+
+ALL_UNITS
+ Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ L1org/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ANY
+ Ljava/lang/String;
+ L1java/lang/String;
+NO_UNITS
+ Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ L1org/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+PROP_TYPE_CATEGORY
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_TYPE_GROUP
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_TYPE_PATCH
+ Ljava/lang/String;
+ L1java/lang/String;
+
+compoundQueryable
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;>;)Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;>;)Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;
+compoundQueryable
+ <T:Ljava/lang/Object;>(Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;)Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;)Lorg/eclipse/equinox/p2/query/IQueryable<TT;>;
+createCompoundQuery
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;>;Z)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;>;Z)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+createCompoundQuery
+ <T:Ljava/lang/Object;>(Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;Lorg/eclipse/equinox/p2/query/IQuery<TT;>;Z)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;Lorg/eclipse/equinox/p2/query/IQuery<TT;>;Z)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+createIUAnyQuery
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUCategoryMemberQuery
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUCategoryQuery
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUGroupQuery
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUPatchQuery
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUProductQuery
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUPropertyQuery
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUQuery
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUQuery
+ (Ljava/lang/String;Lorg/eclipse/equinox/p2/metadata/Version;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Ljava/lang/String;Lorg/eclipse/equinox/p2/metadata/Version;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUQuery
+ (Ljava/lang/String;Lorg/eclipse/equinox/p2/metadata/VersionRange;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Ljava/lang/String;Lorg/eclipse/equinox/p2/metadata/VersionRange;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createIUQuery
+ (Lorg/eclipse/equinox/p2/metadata/IVersionedId;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Lorg/eclipse/equinox/p2/metadata/IVersionedId;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createLatestIUQuery
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ ()Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createLatestQuery
+ <T::Lorg/eclipse/equinox/p2/metadata/IVersionedId;>(Lorg/eclipse/equinox/p2/query/IQuery<TT;>;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T::Lorg/eclipse/equinox/p2/metadata/IVersionedId;>(Lorg/eclipse/equinox/p2/query/IQuery<TT;>;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+createLimitQuery
+ <T:Ljava/lang/Object;>(Lorg/eclipse/equinox/p2/query/IQuery<TT;>;I)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/equinox/p2/query/IQuery<TT;>;I)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+createMatchQuery
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createMatchQuery
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createMatchQuery
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;Ljava/lang/String;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;Ljava/lang/String;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+createMatchQuery
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;Lorg/eclipse/equinox/p2/metadata/expression/IExpression;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;Lorg/eclipse/equinox/p2/metadata/expression/IExpression;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+createPipeQuery
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;>;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;>;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+createPipeQuery
+ <T:Ljava/lang/Object;>(Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;Lorg/eclipse/equinox/p2/query/IQuery<+TT;>;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+createQuery
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createQuery
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+createQuery
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;Ljava/lang/String;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;Ljava/lang/String;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+createQuery
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;Lorg/eclipse/equinox/p2/metadata/expression/IExpression;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<+TT;>;Lorg/eclipse/equinox/p2/metadata/expression/IExpression;[Ljava/lang/Object;)Lorg/eclipse/equinox/p2/query/IQuery<TT;>;
+isCategory
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z
+isFragment
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z
+isGroup
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z
+isPatch
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z
+isProduct
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Z

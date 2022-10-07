@@ -1,0 +1,25 @@
+class org/eclipse/ui/part/PluginDropAdapter
+
+ATT_CLASS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getPluginAdapter
+ (Lorg/eclipse/ui/part/PluginTransferData;)Lorg/eclipse/ui/part/IDropActionDelegate;
+ (Lorg/eclipse/ui/part/PluginTransferData;)Lorg/eclipse/ui/part/IDropActionDelegate;
+
+<init>
+ (Lorg/eclipse/jface/viewers/StructuredViewer;)V
+ (Lorg/eclipse/jface/viewers/StructuredViewer;)V
+drop
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+ (Lorg/eclipse/swt/dnd/DropTargetEvent;)V
+getCurrentTransfer
+ ()Lorg/eclipse/swt/dnd/TransferData;
+ ()Lorg/eclipse/swt/dnd/TransferData;
+performDrop
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+validateDrop
+ (Ljava/lang/Object;ILorg/eclipse/swt/dnd/TransferData;)Z
+ (Ljava/lang/Object;ILorg/eclipse/swt/dnd/TransferData;)Z

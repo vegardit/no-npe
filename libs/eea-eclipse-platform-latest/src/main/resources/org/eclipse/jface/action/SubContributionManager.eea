@@ -1,0 +1,68 @@
+class org/eclipse/jface/action/SubContributionManager
+
+<init>
+ (Lorg/eclipse/jface/action/IContributionManager;)V
+ (Lorg/eclipse/jface/action/IContributionManager;)V
+add
+ (Lorg/eclipse/jface/action/IAction;)V
+ (Lorg/eclipse/jface/action/IAction;)V
+add
+ (Lorg/eclipse/jface/action/IContributionItem;)V
+ (Lorg/eclipse/jface/action/IContributionItem;)V
+appendToGroup
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+appendToGroup
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IContributionItem;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IContributionItem;)V
+find
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IContributionItem;
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IContributionItem;
+getItems
+ ()[Lorg/eclipse/jface/action/IContributionItem;
+ ()[Lorg/eclipse/jface/action/IContributionItem;
+getOverrides
+ ()Lorg/eclipse/jface/action/IContributionManagerOverrides;
+ ()Lorg/eclipse/jface/action/IContributionManagerOverrides;
+getParent
+ ()Lorg/eclipse/jface/action/IContributionManager;
+ ()Lorg/eclipse/jface/action/IContributionManager;
+insertAfter
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+insertAfter
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IContributionItem;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IContributionItem;)V
+insertBefore
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+insertBefore
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IContributionItem;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IContributionItem;)V
+itemAdded
+ (Lorg/eclipse/jface/action/IContributionItem;Lorg/eclipse/jface/action/SubContributionItem;)V
+ (Lorg/eclipse/jface/action/IContributionItem;Lorg/eclipse/jface/action/SubContributionItem;)V
+itemRemoved
+ (Lorg/eclipse/jface/action/IContributionItem;)V
+ (Lorg/eclipse/jface/action/IContributionItem;)V
+items
+ ()Ljava/util/Enumeration<Lorg/eclipse/jface/action/SubContributionItem;>;
+ ()Ljava/util/Enumeration<Lorg/eclipse/jface/action/SubContributionItem;>;
+prependToGroup
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+prependToGroup
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IContributionItem;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IContributionItem;)V
+remove
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IContributionItem;
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IContributionItem;
+remove
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/jface/action/IContributionItem;
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/jface/action/IContributionItem;
+unwrap
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/jface/action/IContributionItem;
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/jface/action/IContributionItem;
+wrap
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/jface/action/SubContributionItem;
+ (Lorg/eclipse/jface/action/IContributionItem;)Lorg/eclipse/jface/action/SubContributionItem;

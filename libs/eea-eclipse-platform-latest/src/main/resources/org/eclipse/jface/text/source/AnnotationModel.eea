@@ -1,0 +1,102 @@
+class org/eclipse/jface/text/source/AnnotationModel
+
+fAnnotationModelListeners
+ Ljava/util/ArrayList<Lorg/eclipse/jface/text/source/IAnnotationModelListener;>;
+ Ljava/util/ArrayList<Lorg/eclipse/jface/text/source/IAnnotationModelListener;>;
+fAnnotations
+ Ljava/util/Map<Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;>;
+ Ljava/util/Map<Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;>;
+fDocument
+ Lorg/eclipse/jface/text/IDocument;
+ Lorg/eclipse/jface/text/IDocument;
+
+addAnnotation
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;)V
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;)V
+addAnnotation
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;Z)V
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;Z)V
+addAnnotationModel
+ (Ljava/lang/Object;Lorg/eclipse/jface/text/source/IAnnotationModel;)V
+ (Ljava/lang/Object;Lorg/eclipse/jface/text/source/IAnnotationModel;)V
+addAnnotationModelListener
+ (Lorg/eclipse/jface/text/source/IAnnotationModelListener;)V
+ (Lorg/eclipse/jface/text/source/IAnnotationModelListener;)V
+addPosition
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/Position;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/Position;)V
+connect
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+createAnnotationModelEvent
+ ()Lorg/eclipse/jface/text/source/AnnotationModelEvent;
+ ()Lorg/eclipse/jface/text/source/AnnotationModelEvent;
+disconnect
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+fireModelChanged
+ (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
+ (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
+getAnnotationIterator
+ ()Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
+ ()Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
+getAnnotationIterator
+ (IIZZ)Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
+ (IIZZ)Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
+getAnnotationIterator
+ (Z)Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
+ (Z)Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
+getAnnotationMap
+ ()Lorg/eclipse/jface/text/source/IAnnotationMap;
+ ()Lorg/eclipse/jface/text/source/IAnnotationMap;
+getAnnotationModel
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+getAnnotationModelEvent
+ ()Lorg/eclipse/jface/text/source/AnnotationModelEvent;
+ ()Lorg/eclipse/jface/text/source/AnnotationModelEvent;
+getLockObject
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getModificationStamp
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getPosition
+ (Lorg/eclipse/jface/text/source/Annotation;)Lorg/eclipse/jface/text/Position;
+ (Lorg/eclipse/jface/text/source/Annotation;)Lorg/eclipse/jface/text/Position;
+modifyAnnotation
+ (Lorg/eclipse/jface/text/source/Annotation;Z)V
+ (Lorg/eclipse/jface/text/source/Annotation;Z)V
+modifyAnnotationPosition
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;)V
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;)V
+modifyAnnotationPosition
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;Z)V
+ (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;Z)V
+removeAnnotation
+ (Lorg/eclipse/jface/text/source/Annotation;)V
+ (Lorg/eclipse/jface/text/source/Annotation;)V
+removeAnnotation
+ (Lorg/eclipse/jface/text/source/Annotation;Z)V
+ (Lorg/eclipse/jface/text/source/Annotation;Z)V
+removeAnnotationModel
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+removeAnnotationModelListener
+ (Lorg/eclipse/jface/text/source/IAnnotationModelListener;)V
+ (Lorg/eclipse/jface/text/source/IAnnotationModelListener;)V
+removeAnnotations
+ (Ljava/util/List<+Lorg/eclipse/jface/text/source/Annotation;>;ZZ)V
+ (Ljava/util/List<+Lorg/eclipse/jface/text/source/Annotation;>;ZZ)V
+removePosition
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/Position;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/Position;)V
+replaceAnnotations
+ ([Lorg/eclipse/jface/text/source/Annotation;Ljava/util/Map<+Lorg/eclipse/jface/text/source/Annotation;+Lorg/eclipse/jface/text/Position;>;)V
+ ([Lorg/eclipse/jface/text/source/Annotation;Ljava/util/Map<+Lorg/eclipse/jface/text/source/Annotation;+Lorg/eclipse/jface/text/Position;>;)V
+replaceAnnotations
+ ([Lorg/eclipse/jface/text/source/Annotation;Ljava/util/Map<+Lorg/eclipse/jface/text/source/Annotation;+Lorg/eclipse/jface/text/Position;>;Z)V
+ ([Lorg/eclipse/jface/text/source/Annotation;Ljava/util/Map<+Lorg/eclipse/jface/text/source/Annotation;+Lorg/eclipse/jface/text/Position;>;Z)V
+setLockObject
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V

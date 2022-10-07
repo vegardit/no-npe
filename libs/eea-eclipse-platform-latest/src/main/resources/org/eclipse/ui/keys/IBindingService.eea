@@ -1,0 +1,72 @@
+class org/eclipse/ui/keys/IBindingService
+
+DEFAULT_DEFAULT_ACTIVE_SCHEME_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addBindingManagerListener
+ (Lorg/eclipse/jface/bindings/IBindingManagerListener;)V
+ (Lorg/eclipse/jface/bindings/IBindingManagerListener;)V
+getActiveBindingsFor
+ (Ljava/lang/String;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+ (Ljava/lang/String;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+getActiveBindingsFor
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)[Lorg/eclipse/jface/bindings/TriggerSequence;
+getActiveScheme
+ ()Lorg/eclipse/jface/bindings/Scheme;
+ ()Lorg/eclipse/jface/bindings/Scheme;
+getBestActiveBindingFor
+ (Ljava/lang/String;)Lorg/eclipse/jface/bindings/TriggerSequence;
+ (Ljava/lang/String;)Lorg/eclipse/jface/bindings/TriggerSequence;
+getBestActiveBindingFor
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Lorg/eclipse/jface/bindings/TriggerSequence;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;)Lorg/eclipse/jface/bindings/TriggerSequence;
+getBestActiveBindingFormattedFor
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getBindings
+ ()[Lorg/eclipse/jface/bindings/Binding;
+ ()[Lorg/eclipse/jface/bindings/Binding;
+getBuffer
+ ()Lorg/eclipse/jface/bindings/TriggerSequence;
+ ()Lorg/eclipse/jface/bindings/TriggerSequence;
+getConflictsFor
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Collection;
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Collection;
+getDefaultSchemeId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDefinedSchemes
+ ()[Lorg/eclipse/jface/bindings/Scheme;
+ ()[Lorg/eclipse/jface/bindings/Scheme;
+getLocale
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPartialMatches
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Map;
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Ljava/util/Map;
+getPerfectMatch
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Lorg/eclipse/jface/bindings/Binding;
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Lorg/eclipse/jface/bindings/Binding;
+getPlatform
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getScheme
+ (Ljava/lang/String;)Lorg/eclipse/jface/bindings/Scheme;
+ (Ljava/lang/String;)Lorg/eclipse/jface/bindings/Scheme;
+isPartialMatch
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+isPerfectMatch
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+ (Lorg/eclipse/jface/bindings/TriggerSequence;)Z
+readRegistryAndPreferences
+ (Lorg/eclipse/ui/commands/ICommandService;)V
+ (Lorg/eclipse/ui/commands/ICommandService;)V
+removeBindingManagerListener
+ (Lorg/eclipse/jface/bindings/IBindingManagerListener;)V
+ (Lorg/eclipse/jface/bindings/IBindingManagerListener;)V
+savePreferences
+ (Lorg/eclipse/jface/bindings/Scheme;[Lorg/eclipse/jface/bindings/Binding;)V
+ (Lorg/eclipse/jface/bindings/Scheme;[Lorg/eclipse/jface/bindings/Binding;)V

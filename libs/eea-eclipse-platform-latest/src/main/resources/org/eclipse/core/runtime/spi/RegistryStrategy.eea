@@ -1,0 +1,42 @@
+class org/eclipse/core/runtime/spi/RegistryStrategy
+
+processChangeEvent
+ ([Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;*>;Ljava/lang/Object;)Lorg/eclipse/core/runtime/IStatus;
+ ([Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;*>;Ljava/lang/Object;)Lorg/eclipse/core/runtime/IStatus;
+
+<init>
+ ([Ljava/io/File;[Z)V
+ ([Ljava/io/File;[Z)V
+createExecutableExtension
+ (Lorg/eclipse/core/runtime/spi/RegistryContributor;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/spi/RegistryContributor;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
+getLocale
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getStorage
+ (I)Ljava/io/File;
+ (I)Ljava/io/File;
+getXMLParser
+ ()Ljavax/xml/parsers/SAXParserFactory;
+ ()Ljavax/xml/parsers/SAXParserFactory;
+log
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V
+onStart
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;)V
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;)V
+onStart
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;Z)V
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;Z)V
+onStop
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;)V
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;)V
+scheduleChangeEvent
+ ([Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;*>;Ljava/lang/Object;)V
+ ([Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;*>;Ljava/lang/Object;)V
+translate
+ (Ljava/lang/String;Ljava/util/ResourceBundle;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/util/ResourceBundle;)Ljava/lang/String;
+translate
+ ([Ljava/lang/String;Lorg/eclipse/core/runtime/IContributor;Ljava/lang/String;)[Ljava/lang/String;
+ ([Ljava/lang/String;Lorg/eclipse/core/runtime/IContributor;Ljava/lang/String;)[Ljava/lang/String;

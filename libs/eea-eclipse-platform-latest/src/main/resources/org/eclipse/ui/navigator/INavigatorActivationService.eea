@@ -1,0 +1,17 @@
+class org/eclipse/ui/navigator/INavigatorActivationService
+
+activateExtensions
+ ([Ljava/lang/String;Z)[Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+ ([Ljava/lang/String;Z)[Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+addExtensionActivationListener
+ (Lorg/eclipse/ui/navigator/IExtensionActivationListener;)V
+ (Lorg/eclipse/ui/navigator/IExtensionActivationListener;)V
+deactivateExtensions
+ ([Ljava/lang/String;Z)[Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+ ([Ljava/lang/String;Z)[Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;
+isNavigatorExtensionActive
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removeExtensionActivationListener
+ (Lorg/eclipse/ui/navigator/IExtensionActivationListener;)V
+ (Lorg/eclipse/ui/navigator/IExtensionActivationListener;)V

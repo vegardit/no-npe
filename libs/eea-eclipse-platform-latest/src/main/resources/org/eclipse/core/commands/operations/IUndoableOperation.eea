@@ -1,0 +1,26 @@
+class org/eclipse/core/commands/operations/IUndoableOperation
+
+addContext
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)V
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)V
+execute
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+getContexts
+ ()[Lorg/eclipse/core/commands/operations/IUndoContext;
+ ()[Lorg/eclipse/core/commands/operations/IUndoContext;
+getLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+hasContext
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Z
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Z
+redo
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+removeContext
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)V
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)V
+undo
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;

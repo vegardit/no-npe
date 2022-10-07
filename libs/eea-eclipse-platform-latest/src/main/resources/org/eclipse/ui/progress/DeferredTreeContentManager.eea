@@ -1,0 +1,53 @@
+class org/eclipse/ui/progress/DeferredTreeContentManager
+
+<init>
+ (Lorg/eclipse/jface/viewers/AbstractTreeViewer;)V
+ (Lorg/eclipse/jface/viewers/AbstractTreeViewer;)V
+<init>
+ (Lorg/eclipse/jface/viewers/AbstractTreeViewer;Lorg/eclipse/ui/IWorkbenchPartSite;)V
+ (Lorg/eclipse/jface/viewers/AbstractTreeViewer;Lorg/eclipse/ui/IWorkbenchPartSite;)V
+<init>
+ (Lorg/eclipse/jface/viewers/ITreeContentProvider;Lorg/eclipse/jface/viewers/AbstractTreeViewer;)V
+ (Lorg/eclipse/jface/viewers/ITreeContentProvider;Lorg/eclipse/jface/viewers/AbstractTreeViewer;)V
+<init>
+ (Lorg/eclipse/jface/viewers/ITreeContentProvider;Lorg/eclipse/jface/viewers/AbstractTreeViewer;Lorg/eclipse/ui/IWorkbenchPartSite;)V
+ (Lorg/eclipse/jface/viewers/ITreeContentProvider;Lorg/eclipse/jface/viewers/AbstractTreeViewer;Lorg/eclipse/ui/IWorkbenchPartSite;)V
+addChildren
+ (Ljava/lang/Object;[Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/Object;[Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+addUpdateCompleteListener
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+cancel
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+createElementCollector
+ (Ljava/lang/Object;Lorg/eclipse/ui/progress/PendingUpdateAdapter;)Lorg/eclipse/ui/progress/IElementCollector;
+ (Ljava/lang/Object;Lorg/eclipse/ui/progress/PendingUpdateAdapter;)Lorg/eclipse/ui/progress/IElementCollector;
+createPendingUpdateAdapter
+ ()Lorg/eclipse/ui/progress/PendingUpdateAdapter;
+ ()Lorg/eclipse/ui/progress/PendingUpdateAdapter;
+getAdapter
+ (Ljava/lang/Object;)Lorg/eclipse/ui/progress/IDeferredWorkbenchAdapter;
+ (Ljava/lang/Object;)Lorg/eclipse/ui/progress/IDeferredWorkbenchAdapter;
+getChildren
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getFetchJobName
+ (Ljava/lang/Object;Lorg/eclipse/ui/progress/IDeferredWorkbenchAdapter;)Ljava/lang/String;
+ (Ljava/lang/Object;Lorg/eclipse/ui/progress/IDeferredWorkbenchAdapter;)Ljava/lang/String;
+isDeferredAdapter
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+mayHaveChildren
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+removeUpdateCompleteListener
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+ (Lorg/eclipse/core/runtime/jobs/IJobChangeListener;)V
+runClearPlaceholderJob
+ (Lorg/eclipse/ui/progress/PendingUpdateAdapter;)V
+ (Lorg/eclipse/ui/progress/PendingUpdateAdapter;)V
+startFetchingDeferredChildren
+ (Ljava/lang/Object;Lorg/eclipse/ui/progress/IDeferredWorkbenchAdapter;Lorg/eclipse/ui/progress/PendingUpdateAdapter;)V
+ (Ljava/lang/Object;Lorg/eclipse/ui/progress/IDeferredWorkbenchAdapter;Lorg/eclipse/ui/progress/PendingUpdateAdapter;)V

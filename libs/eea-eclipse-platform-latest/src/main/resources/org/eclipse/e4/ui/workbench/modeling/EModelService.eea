@@ -1,0 +1,111 @@
+class org/eclipse/e4/ui/workbench/modeling/EModelService
+
+CLONED_FROM_KEY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+bringToTop
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+cloneElement
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Lorg/eclipse/e4/ui/model/application/ui/MSnippetContainer;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Lorg/eclipse/e4/ui/model/application/ui/MSnippetContainer;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+cloneSnippet
+ (Lorg/eclipse/e4/ui/model/application/ui/MSnippetContainer;Ljava/lang/String;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+ (Lorg/eclipse/e4/ui/model/application/ui/MSnippetContainer;Ljava/lang/String;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+countRenderableChildren
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)I
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)I
+createModelElement
+ <T::Lorg/eclipse/e4/ui/model/application/MApplicationElement;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Lorg/eclipse/e4/ui/model/application/MApplicationElement;>(Ljava/lang/Class<TT;>;)TT;
+createPart
+ (Lorg/eclipse/e4/ui/model/application/descriptor/basic/MPartDescriptor;)Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;
+ (Lorg/eclipse/e4/ui/model/application/descriptor/basic/MPartDescriptor;)Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;
+deleteModelElement
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+detach
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPartSashContainerElement;IIII)V
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPartSashContainerElement;IIII)V
+find
+ (Ljava/lang/String;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+ (Ljava/lang/String;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+findElements
+ <T:Ljava/lang/Object;>(Lorg/eclipse/e4/ui/model/application/MApplicationElement;Ljava/lang/Class<TT;>;ILorg/eclipse/e4/ui/workbench/Selector;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/e4/ui/model/application/MApplicationElement;Ljava/lang/Class<TT;>;ILorg/eclipse/e4/ui/workbench/Selector;)Ljava/util/List<TT;>;
+findElements
+ <T:Ljava/lang/Object;>(Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/String;Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/String;Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
+findElements
+ <T:Ljava/lang/Object;>(Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/String;Ljava/lang/Class<TT;>;Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/String;Ljava/lang/Class<TT;>;Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<TT;>;
+findElements
+ <T:Ljava/lang/Object;>(Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/String;Ljava/lang/Class<TT;>;Ljava/util/List<Ljava/lang/String;>;I)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/String;Ljava/lang/Class<TT;>;Ljava/util/List<Ljava/lang/String;>;I)Ljava/util/List<TT;>;
+findPlaceholderFor
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/advanced/MPlaceholder;
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/advanced/MPlaceholder;
+findSnippet
+ (Lorg/eclipse/e4/ui/model/application/ui/MSnippetContainer;Ljava/lang/String;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+ (Lorg/eclipse/e4/ui/model/application/ui/MSnippetContainer;Ljava/lang/String;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+getActivePerspective
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;
+getContainer
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/MUIElement;
+getContainingContext
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getElementLocation
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)I
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)I
+getPartDescriptor
+ (Ljava/lang/String;)Lorg/eclipse/e4/ui/model/application/descriptor/basic/MPartDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/e4/ui/model/application/descriptor/basic/MPartDescriptor;
+getPerspectiveFor
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;
+getTopLevelWindowFor
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;
+getTrim
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MTrimmedWindow;Lorg/eclipse/e4/ui/model/application/ui/SideValue;)Lorg/eclipse/e4/ui/model/application/ui/basic/MTrimBar;
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MTrimmedWindow;Lorg/eclipse/e4/ui/model/application/ui/SideValue;)Lorg/eclipse/e4/ui/model/application/ui/basic/MTrimBar;
+hideLocalPlaceholders
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;)V
+hostElement
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;Ljava/lang/Object;Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+insert
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPartSashContainerElement;Lorg/eclipse/e4/ui/model/application/ui/basic/MPartSashContainerElement;IF)V
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPartSashContainerElement;Lorg/eclipse/e4/ui/model/application/ui/basic/MPartSashContainerElement;IF)V
+isHostedElement
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)Z
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)Z
+isLastEditorStack
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Z
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Z
+move
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>(TT;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<-TT;>;)V
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>(TT;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<-TT;>;)V
+move
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>(TT;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<-TT;>;I)V
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>(TT;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<-TT;>;I)V
+move
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>(TT;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<-TT;>;IZ)V
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>(TT;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<-TT;>;IZ)V
+move
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>(TT;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<-TT;>;Z)V
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>(TT;Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<-TT;>;Z)V
+removePerspectiveModel
+ (Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)V
+resetPerspectiveModel
+ (Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/advanced/MPerspective;Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)V
+toBeRenderedCount
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<*>;)I
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<*>;)I

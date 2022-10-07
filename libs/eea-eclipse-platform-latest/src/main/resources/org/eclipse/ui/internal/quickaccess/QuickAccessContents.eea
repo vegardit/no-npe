@@ -1,0 +1,51 @@
+class org/eclipse/ui/internal/quickaccess/QuickAccessContents
+
+filterText
+ Lorg/eclipse/swt/widgets/Text;
+ Lorg/eclipse/swt/widgets/Text;
+infoLabel
+ Lorg/eclipse/swt/widgets/Label;
+ Lorg/eclipse/swt/widgets/Label;
+rememberedText
+ Ljava/lang/String;
+ Ljava/lang/String;
+table
+ Lorg/eclipse/swt/widgets/Table;
+ Lorg/eclipse/swt/widgets/Table;
+
+<init>
+ ([Lorg/eclipse/ui/internal/quickaccess/QuickAccessProvider;)V
+ ([Lorg/eclipse/ui/internal/quickaccess/QuickAccessProvider;)V
+createInfoLabel
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Label;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Label;
+createTable
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/widgets/Table;
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/widgets/Table;
+getCategoryPattern
+ ()Ljava/util/regex/Pattern;
+ ()Ljava/util/regex/Pattern;
+getFilterText
+ ()Lorg/eclipse/swt/widgets/Text;
+ ()Lorg/eclipse/swt/widgets/Text;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPerfectMatch
+ (Ljava/lang/String;)Lorg/eclipse/ui/quickaccess/QuickAccessElement;
+ (Ljava/lang/String;)Lorg/eclipse/ui/quickaccess/QuickAccessElement;
+getTable
+ ()Lorg/eclipse/swt/widgets/Table;
+ ()Lorg/eclipse/swt/widgets/Table;
+getTriggerSequence
+ ()Lorg/eclipse/jface/bindings/TriggerSequence;
+ ()Lorg/eclipse/jface/bindings/TriggerSequence;
+handleElementSelected
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+hookFilterText
+ (Lorg/eclipse/swt/widgets/Text;)V
+ (Lorg/eclipse/swt/widgets/Text;)V
+updateProposals
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

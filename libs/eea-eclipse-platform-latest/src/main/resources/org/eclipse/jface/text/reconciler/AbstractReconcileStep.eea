@@ -1,0 +1,39 @@
+class org/eclipse/jface/text/reconciler/AbstractReconcileStep
+
+fInputModel
+ Lorg/eclipse/jface/text/reconciler/IReconcilableModel;
+ Lorg/eclipse/jface/text/reconciler/IReconcilableModel;
+
+<init>
+ (Lorg/eclipse/jface/text/reconciler/IReconcileStep;)V
+ (Lorg/eclipse/jface/text/reconciler/IReconcileStep;)V
+convertToInputModel
+ ([Lorg/eclipse/jface/text/reconciler/IReconcileResult;)[Lorg/eclipse/jface/text/reconciler/IReconcileResult;
+ ([Lorg/eclipse/jface/text/reconciler/IReconcileResult;)[Lorg/eclipse/jface/text/reconciler/IReconcileResult;
+getInputModel
+ ()Lorg/eclipse/jface/text/reconciler/IReconcilableModel;
+ ()Lorg/eclipse/jface/text/reconciler/IReconcilableModel;
+getModel
+ ()Lorg/eclipse/jface/text/reconciler/IReconcilableModel;
+ ()Lorg/eclipse/jface/text/reconciler/IReconcilableModel;
+getProgressMonitor
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+reconcile
+ (Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/reconciler/IReconcileResult;
+ (Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/reconciler/IReconcileResult;
+reconcile
+ (Lorg/eclipse/jface/text/reconciler/DirtyRegion;Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/reconciler/IReconcileResult;
+ (Lorg/eclipse/jface/text/reconciler/DirtyRegion;Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/reconciler/IReconcileResult;
+reconcileModel
+ (Lorg/eclipse/jface/text/reconciler/DirtyRegion;Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/reconciler/IReconcileResult;
+ (Lorg/eclipse/jface/text/reconciler/DirtyRegion;Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/reconciler/IReconcileResult;
+setInputModel
+ (Lorg/eclipse/jface/text/reconciler/IReconcilableModel;)V
+ (Lorg/eclipse/jface/text/reconciler/IReconcilableModel;)V
+setPreviousStep
+ (Lorg/eclipse/jface/text/reconciler/IReconcileStep;)V
+ (Lorg/eclipse/jface/text/reconciler/IReconcileStep;)V
+setProgressMonitor
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V

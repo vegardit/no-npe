@@ -1,0 +1,50 @@
+class org/eclipse/core/databinding/UpdateValueStrategy
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>
+
+create
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/conversion/IConverter<TS;TD;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/conversion/IConverter<TS;TD;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+never
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>()Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+ <S:Ljava/lang/Object;D:Ljava/lang/Object;>()Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+
+afterConvertValidator
+ Lorg/eclipse/core/databinding/validation/IValidator<-TD;>;
+ Lorg/eclipse/core/databinding/validation/IValidator<-TD;>;
+afterGetValidator
+ Lorg/eclipse/core/databinding/validation/IValidator<-TS;>;
+ Lorg/eclipse/core/databinding/validation/IValidator<-TS;>;
+beforeSetValidator
+ Lorg/eclipse/core/databinding/validation/IValidator<-TD;>;
+ Lorg/eclipse/core/databinding/validation/IValidator<-TD;>;
+
+createValidator
+ (Ljava/lang/Object;Ljava/lang/Object;)Lorg/eclipse/core/databinding/validation/IValidator<TS;>;
+ (Ljava/lang/Object;Ljava/lang/Object;)Lorg/eclipse/core/databinding/validation/IValidator<TS;>;
+doSet
+ (Lorg/eclipse/core/databinding/observable/value/IObservableValue<-TD;>;TD;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/databinding/observable/value/IObservableValue<-TD;>;TD;)Lorg/eclipse/core/runtime/IStatus;
+fillDefaults
+ (Lorg/eclipse/core/databinding/observable/value/IObservableValue<+TS;>;Lorg/eclipse/core/databinding/observable/value/IObservableValue<-TD;>;)V
+ (Lorg/eclipse/core/databinding/observable/value/IObservableValue<+TS;>;Lorg/eclipse/core/databinding/observable/value/IObservableValue<-TD;>;)V
+setAfterConvertValidator
+ (Lorg/eclipse/core/databinding/validation/IValidator<-TD;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+ (Lorg/eclipse/core/databinding/validation/IValidator<-TD;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+setAfterGetValidator
+ (Lorg/eclipse/core/databinding/validation/IValidator<-TS;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+ (Lorg/eclipse/core/databinding/validation/IValidator<-TS;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+setBeforeSetValidator
+ (Lorg/eclipse/core/databinding/validation/IValidator<-TD;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+ (Lorg/eclipse/core/databinding/validation/IValidator<-TD;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+setConverter
+ (Lorg/eclipse/core/databinding/conversion/IConverter<-TS;+TD;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+ (Lorg/eclipse/core/databinding/conversion/IConverter<-TS;+TD;>;)Lorg/eclipse/core/databinding/UpdateValueStrategy<TS;TD;>;
+validateAfterConvert
+ (TD;)Lorg/eclipse/core/runtime/IStatus;
+ (TD;)Lorg/eclipse/core/runtime/IStatus;
+validateAfterGet
+ (TS;)Lorg/eclipse/core/runtime/IStatus;
+ (TS;)Lorg/eclipse/core/runtime/IStatus;
+validateBeforeSet
+ (TD;)Lorg/eclipse/core/runtime/IStatus;
+ (TD;)Lorg/eclipse/core/runtime/IStatus;

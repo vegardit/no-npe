@@ -1,0 +1,37 @@
+class org/eclipse/ui/internal/quickaccess/QuickAccessDialog
+
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+
+elementMap
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/ui/quickaccess/QuickAccessElement;>;
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/ui/quickaccess/QuickAccessElement;>;
+textMap
+ Ljava/util/Map<Lorg/eclipse/ui/quickaccess/QuickAccessElement;Ljava/util/ArrayList<Ljava/lang/String;>;>;
+ Ljava/util/Map<Lorg/eclipse/ui/quickaccess/QuickAccessElement;Ljava/util/ArrayList<Ljava/lang/String;>;>;
+
+<init>
+ (Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/core/commands/Command;)V
+ (Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/core/commands/Command;)V
+createDialogArea
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+createTitleControl
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+getDefaultLocation
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+getDefaultSize
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+getDialogSettings
+ ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+ ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+getFocusControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getQuickAccessContents
+ ()Lorg/eclipse/ui/internal/quickaccess/QuickAccessContents;
+ ()Lorg/eclipse/ui/internal/quickaccess/QuickAccessContents;

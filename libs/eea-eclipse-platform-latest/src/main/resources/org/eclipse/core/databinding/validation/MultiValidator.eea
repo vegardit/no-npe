@@ -1,0 +1,29 @@
+class org/eclipse/core/databinding/validation/MultiValidator
+
+<init>
+ (Lorg/eclipse/core/databinding/observable/Realm;)V
+ (Lorg/eclipse/core/databinding/observable/Realm;)V
+getModels
+ ()Lorg/eclipse/core/databinding/observable/list/IObservableList<Lorg/eclipse/core/databinding/observable/IObservable;>;
+ ()Lorg/eclipse/core/databinding/observable/list/IObservableList<Lorg/eclipse/core/databinding/observable/IObservable;>;
+getTargets
+ ()Lorg/eclipse/core/databinding/observable/list/IObservableList<Lorg/eclipse/core/databinding/observable/IObservable;>;
+ ()Lorg/eclipse/core/databinding/observable/list/IObservableList<Lorg/eclipse/core/databinding/observable/IObservable;>;
+getValidationStatus
+ ()Lorg/eclipse/core/databinding/observable/value/IObservableValue<Lorg/eclipse/core/runtime/IStatus;>;
+ ()Lorg/eclipse/core/databinding/observable/value/IObservableValue<Lorg/eclipse/core/runtime/IStatus;>;
+observeValidatedList
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;)Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;)Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;
+observeValidatedMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;
+observeValidatedSet
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;)Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;)Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
+observeValidatedValue
+ <T:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;)Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;)Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;
+validate
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;

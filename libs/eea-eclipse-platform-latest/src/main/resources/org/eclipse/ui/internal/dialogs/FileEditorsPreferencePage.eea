@@ -1,0 +1,63 @@
+class org/eclipse/ui/internal/dialogs/FileEditorsPreferencePage
+
+addEditorButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+addResourceTypeButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+defaultEditorButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+editorLabel
+ Lorg/eclipse/swt/widgets/Label;
+ Lorg/eclipse/swt/widgets/Label;
+editorTable
+ Lorg/eclipse/swt/widgets/Table;
+ Lorg/eclipse/swt/widgets/Table;
+editorsToImages
+ Ljava/util/Map<Lorg/eclipse/ui/IEditorDescriptor;Lorg/eclipse/swt/graphics/Image;>;
+ Ljava/util/Map<Lorg/eclipse/ui/IEditorDescriptor;Lorg/eclipse/swt/graphics/Image;>;
+imagesToDispose
+ Ljava/util/List<Lorg/eclipse/swt/graphics/Image;>;
+ Ljava/util/List<Lorg/eclipse/swt/graphics/Image;>;
+removeEditorButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+removeResourceTypeButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+resourceTypeTable
+ Lorg/eclipse/swt/widgets/Table;
+ Lorg/eclipse/swt/widgets/Table;
+workbench
+ Lorg/eclipse/ui/IWorkbench;
+ Lorg/eclipse/ui/IWorkbench;
+
+addResourceType
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+createContents
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+doGetPreferenceStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+getAssociatedEditors
+ ()[Lorg/eclipse/ui/IEditorDescriptor;
+ ()[Lorg/eclipse/ui/IEditorDescriptor;
+getImage
+ (Lorg/eclipse/ui/IEditorDescriptor;)Lorg/eclipse/swt/graphics/Image;
+ (Lorg/eclipse/ui/IEditorDescriptor;)Lorg/eclipse/swt/graphics/Image;
+getSelectedResourceType
+ ()Lorg/eclipse/ui/internal/registry/FileEditorMapping;
+ ()Lorg/eclipse/ui/internal/registry/FileEditorMapping;
+handleEvent
+ (Lorg/eclipse/swt/widgets/Event;)V
+ (Lorg/eclipse/swt/widgets/Event;)V
+init
+ (Lorg/eclipse/ui/IWorkbench;)V
+ (Lorg/eclipse/ui/IWorkbench;)V
+newResourceTableItem
+ (Lorg/eclipse/ui/IFileEditorMapping;IZ)Lorg/eclipse/swt/widgets/TableItem;
+ (Lorg/eclipse/ui/IFileEditorMapping;IZ)Lorg/eclipse/swt/widgets/TableItem;

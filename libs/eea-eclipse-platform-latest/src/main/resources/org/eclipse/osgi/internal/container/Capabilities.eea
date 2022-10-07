@@ -1,0 +1,22 @@
+class org/eclipse/osgi/internal/container/Capabilities
+
+MANDATORY_ATTR
+ Ljava/util/regex/Pattern;
+ L1java/util/regex/Pattern;
+SYNTHETIC_REQUIREMENT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+matches
+ (Lorg/osgi/framework/Filter;Lorg/osgi/resource/Capability;Z)Z
+ (Lorg/osgi/framework/Filter;Lorg/osgi/resource/Capability;Z)Z
+
+addCapabilities
+ (Lorg/eclipse/osgi/container/ModuleRevision;)Ljava/util/Collection<Ljava/lang/String;>;
+ (Lorg/eclipse/osgi/container/ModuleRevision;)Ljava/util/Collection<Ljava/lang/String;>;
+findCapabilities
+ (Lorg/osgi/resource/Requirement;)Ljava/util/List<Lorg/eclipse/osgi/container/ModuleCapability;>;
+ (Lorg/osgi/resource/Requirement;)Ljava/util/List<Lorg/eclipse/osgi/container/ModuleCapability;>;
+removeCapabilities
+ (Lorg/eclipse/osgi/container/ModuleRevision;)V
+ (Lorg/eclipse/osgi/container/ModuleRevision;)V

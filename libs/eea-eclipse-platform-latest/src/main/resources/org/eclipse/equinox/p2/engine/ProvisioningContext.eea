@@ -1,0 +1,45 @@
+class org/eclipse/equinox/p2/engine/ProvisioningContext
+
+FOLLOW_REPOSITORY_REFERENCES
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+getArtifactDescriptors
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;>;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;>;
+getArtifactKeys
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
+getArtifactRepositories
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;>;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;>;
+getExtraInstallableUnits
+ ()Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ ()Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+getMetadata
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+getProperties
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+setArtifactRepositories
+ ([Ljava/net/URI;)V
+ ([Ljava/net/URI;)V
+setExtraInstallableUnits
+ (Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+ (Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;)V
+setMetadataRepositories
+ ([Ljava/net/URI;)V
+ ([Ljava/net/URI;)V
+setProperty
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

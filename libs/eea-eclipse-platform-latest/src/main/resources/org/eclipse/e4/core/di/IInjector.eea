@@ -1,0 +1,39 @@
+class org/eclipse/e4/core/di/IInjector
+
+NOT_A_VALUE
+ Ljava/lang/Object;
+ L1java/lang/Object;
+
+addBinding
+ (Ljava/lang/Class<*>;)Lorg/eclipse/e4/core/di/IBinding;
+ (Ljava/lang/Class<*>;)Lorg/eclipse/e4/core/di/IBinding;
+addBinding
+ (Lorg/eclipse/e4/core/di/IBinding;)Lorg/eclipse/e4/core/di/IBinding;
+ (Lorg/eclipse/e4/core/di/IBinding;)Lorg/eclipse/e4/core/di/IBinding;
+inject
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)V
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)V
+inject
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)V
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)V
+invoke
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)Ljava/lang/Object;
+invoke
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)Ljava/lang/Object;
+invoke
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)Ljava/lang/Object;
+make
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)TT;
+make
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)TT;
+setDefaultSupplier
+ (Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)V
+ (Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)V
+uninject
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)V
+ (Ljava/lang/Object;Lorg/eclipse/e4/core/di/suppliers/PrimaryObjectSupplier;)V

@@ -1,0 +1,43 @@
+class org/eclipse/osgi/storage/bundlefile/BundleFile
+
+createURL
+ (Ljava/lang/String;JLorg/eclipse/osgi/container/ModuleContainer;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;ILjava/lang/String;Ljava/net/URLStreamHandler;)Ljava/net/URL;
+ (Ljava/lang/String;JLorg/eclipse/osgi/container/ModuleContainer;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;ILjava/lang/String;Ljava/net/URLStreamHandler;)Ljava/net/URL;
+fixTrailingSlash
+ (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;)Ljava/lang/String;
+ (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;)Ljava/lang/String;
+
+basefile
+ Ljava/io/File;
+ Ljava/io/File;
+
+<init>
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+containsDir
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+createResourceURL
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;Lorg/eclipse/osgi/container/Module;ILjava/lang/String;)Ljava/net/URL;
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;Lorg/eclipse/osgi/container/Module;ILjava/lang/String;)Ljava/net/URL;
+getBaseFile
+ ()Ljava/io/File;
+ ()Ljava/io/File;
+getEntry
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+getEntryPaths
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+getEntryPaths
+ (Ljava/lang/String;Z)Ljava/util/Enumeration<Ljava/lang/String;>;
+ (Ljava/lang/String;Z)Ljava/util/Enumeration<Ljava/lang/String;>;
+getFile
+ (Ljava/lang/String;Z)Ljava/io/File;
+ (Ljava/lang/String;Z)Ljava/io/File;
+getResourceURL
+ (Ljava/lang/String;Lorg/eclipse/osgi/container/Module;I)Ljava/net/URL;
+ (Ljava/lang/String;Lorg/eclipse/osgi/container/Module;I)Ljava/net/URL;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

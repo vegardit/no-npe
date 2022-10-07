@@ -1,0 +1,56 @@
+class org/eclipse/core/resources/team/IResourceTree
+
+addToLocalHistory
+ (Lorg/eclipse/core/resources/IFile;)V
+ (Lorg/eclipse/core/resources/IFile;)V
+computeTimestamp
+ (Lorg/eclipse/core/resources/IFile;)J
+ (Lorg/eclipse/core/resources/IFile;)J
+deletedFile
+ (Lorg/eclipse/core/resources/IFile;)V
+ (Lorg/eclipse/core/resources/IFile;)V
+deletedFolder
+ (Lorg/eclipse/core/resources/IFolder;)V
+ (Lorg/eclipse/core/resources/IFolder;)V
+deletedProject
+ (Lorg/eclipse/core/resources/IProject;)V
+ (Lorg/eclipse/core/resources/IProject;)V
+failed
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V
+getTimestamp
+ (Lorg/eclipse/core/resources/IFile;)J
+ (Lorg/eclipse/core/resources/IFile;)J
+isSynchronized
+ (Lorg/eclipse/core/resources/IResource;I)Z
+ (Lorg/eclipse/core/resources/IResource;I)Z
+movedFile
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/resources/IFile;)V
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/resources/IFile;)V
+movedFolderSubtree
+ (Lorg/eclipse/core/resources/IFolder;Lorg/eclipse/core/resources/IFolder;)V
+ (Lorg/eclipse/core/resources/IFolder;Lorg/eclipse/core/resources/IFolder;)V
+movedProjectSubtree
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/resources/IProjectDescription;)Z
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/resources/IProjectDescription;)Z
+standardDeleteFile
+ (Lorg/eclipse/core/resources/IFile;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IFile;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+standardDeleteFolder
+ (Lorg/eclipse/core/resources/IFolder;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IFolder;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+standardDeleteProject
+ (Lorg/eclipse/core/resources/IProject;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IProject;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+standardMoveFile
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/resources/IFile;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/resources/IFile;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+standardMoveFolder
+ (Lorg/eclipse/core/resources/IFolder;Lorg/eclipse/core/resources/IFolder;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IFolder;Lorg/eclipse/core/resources/IFolder;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+standardMoveProject
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/resources/IProjectDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/resources/IProjectDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+updateMovedFileTimestamp
+ (Lorg/eclipse/core/resources/IFile;J)V
+ (Lorg/eclipse/core/resources/IFile;J)V

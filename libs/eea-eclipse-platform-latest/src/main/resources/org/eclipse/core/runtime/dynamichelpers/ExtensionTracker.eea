@@ -1,0 +1,42 @@
+class org/eclipse/core/runtime/dynamichelpers/ExtensionTracker
+
+createExtensionPointFilter
+ (Lorg/eclipse/core/runtime/IExtensionPoint;)Lorg/eclipse/core/runtime/dynamichelpers/IFilter;
+ (Lorg/eclipse/core/runtime/IExtensionPoint;)Lorg/eclipse/core/runtime/dynamichelpers/IFilter;
+createExtensionPointFilter
+ ([Lorg/eclipse/core/runtime/IExtensionPoint;)Lorg/eclipse/core/runtime/dynamichelpers/IFilter;
+ ([Lorg/eclipse/core/runtime/IExtensionPoint;)Lorg/eclipse/core/runtime/dynamichelpers/IFilter;
+createNamespaceFilter
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/dynamichelpers/IFilter;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/dynamichelpers/IFilter;
+
+<init>
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;)V
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;)V
+applyAdd
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionChangeHandler;Lorg/eclipse/core/runtime/IExtension;)V
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionChangeHandler;Lorg/eclipse/core/runtime/IExtension;)V
+applyRemove
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionChangeHandler;Lorg/eclipse/core/runtime/IExtension;[Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionChangeHandler;Lorg/eclipse/core/runtime/IExtension;[Ljava/lang/Object;)V
+getObjects
+ (Lorg/eclipse/core/runtime/IExtension;)[Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IExtension;)[Ljava/lang/Object;
+registerHandler
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionChangeHandler;Lorg/eclipse/core/runtime/dynamichelpers/IFilter;)V
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionChangeHandler;Lorg/eclipse/core/runtime/dynamichelpers/IFilter;)V
+registerObject
+ (Lorg/eclipse/core/runtime/IExtension;Ljava/lang/Object;I)V
+ (Lorg/eclipse/core/runtime/IExtension;Ljava/lang/Object;I)V
+registryChanged
+ (Lorg/eclipse/core/runtime/IRegistryChangeEvent;)V
+ (Lorg/eclipse/core/runtime/IRegistryChangeEvent;)V
+unregisterHandler
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionChangeHandler;)V
+ (Lorg/eclipse/core/runtime/dynamichelpers/IExtensionChangeHandler;)V
+unregisterObject
+ (Lorg/eclipse/core/runtime/IExtension;)[Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IExtension;)[Ljava/lang/Object;
+unregisterObject
+ (Lorg/eclipse/core/runtime/IExtension;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IExtension;Ljava/lang/Object;)V

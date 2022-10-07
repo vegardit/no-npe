@@ -1,0 +1,37 @@
+class org/eclipse/ui/internal/browser/WebBrowserView
+
+WEB_BROWSER_VIEW_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+listener
+ Lorg/eclipse/ui/ISelectionListener;
+ Lorg/eclipse/ui/ISelectionListener;
+viewer
+ Lorg/eclipse/ui/internal/browser/BrowserViewer;
+ Lorg/eclipse/ui/internal/browser/BrowserViewer;
+
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+getActionBars
+ ()Lorg/eclipse/ui/IActionBars;
+ ()Lorg/eclipse/ui/IActionBars;
+isWebFile
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+openInExternalBrowser
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+selectReveal
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+setBrowserViewName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setBrowserViewTooltip
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setURL
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

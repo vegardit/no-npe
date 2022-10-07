@@ -1,0 +1,51 @@
+class org/eclipse/ui/internal/registry/WizardsRegistryReader
+
+FULL_EXAMPLES_WIZARD_CATEGORY
+ Ljava/lang/String;
+ L1java/lang/String;
+GENERAL_WIZARD_CATEGORY
+ Ljava/lang/String;
+ L1java/lang/String;
+UNCATEGORIZED_WIZARD_CATEGORY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+addNewElementToResult
+ (Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;Lorg/eclipse/core/runtime/IConfigurationElement;)V
+ (Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;Lorg/eclipse/core/runtime/IConfigurationElement;)V
+createCollectionElement
+ (Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;
+ (Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;
+createWizardElement
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;
+findWizard
+ (Ljava/lang/String;)Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;
+ (Ljava/lang/String;)Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;
+getCategoryStringFor
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+getChildWithID
+ (Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;Ljava/lang/String;)Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;
+ (Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;Ljava/lang/String;)Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;
+getPrimaryWizards
+ ()[Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;
+ ()[Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;
+getWizardCollectionElements
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+getWizardElements
+ ()Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;
+ ()Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;
+moveElementToUncategorizedCategory
+ (Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;)V
+ (Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;Lorg/eclipse/ui/internal/dialogs/WorkbenchWizardElement;)V
+readElement
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z
+setInitialCollection
+ (Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;)V
+ (Lorg/eclipse/ui/internal/dialogs/WizardCollectionElement;)V

@@ -1,0 +1,82 @@
+class org/eclipse/ui/internal/views/properties/tabbed/view/TabbedPropertyRegistry
+
+EMPTY_DESCRIPTOR_ARRAY
+ [Lorg/eclipse/ui/views/properties/tabbed/AbstractTabDescriptor;
+ [1Lorg/eclipse/ui/views/properties/tabbed/AbstractTabDescriptor;
+
+actionProvider
+ Lorg/eclipse/ui/views/properties/tabbed/IActionProvider;
+ Lorg/eclipse/ui/views/properties/tabbed/IActionProvider;
+contributorConfigurationElement
+ Lorg/eclipse/core/runtime/IConfigurationElement;
+ Lorg/eclipse/core/runtime/IConfigurationElement;
+contributorId
+ Ljava/lang/String;
+ Ljava/lang/String;
+labelProvider
+ Lorg/eclipse/jface/viewers/ILabelProvider;
+ Lorg/eclipse/jface/viewers/ILabelProvider;
+propertyCategories
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+sectionDescriptorProvider
+ Lorg/eclipse/ui/views/properties/tabbed/ISectionDescriptorProvider;
+ Lorg/eclipse/ui/views/properties/tabbed/ISectionDescriptorProvider;
+tabDescriptorProvider
+ Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptorProvider;
+ Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptorProvider;
+tabDescriptors
+ [Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+ [Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+typeMapper
+ Lorg/eclipse/ui/views/properties/tabbed/ITypeMapper;
+ Lorg/eclipse/ui/views/properties/tabbed/ITypeMapper;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+adaptDescriptorFor
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+ (Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+appendToTabDescriptor
+ (Lorg/eclipse/ui/views/properties/tabbed/ISectionDescriptor;Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;)V
+ (Lorg/eclipse/ui/views/properties/tabbed/ISectionDescriptor;Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;)V
+filterTabDescriptors
+ ([Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)[Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+ ([Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)[Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+getActionProvider
+ ()Lorg/eclipse/ui/views/properties/tabbed/IActionProvider;
+ ()Lorg/eclipse/ui/views/properties/tabbed/IActionProvider;
+getAllTabDescriptors
+ ()[Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+ ()[Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+getConfigurationElements
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+getLabelProvider
+ ()Lorg/eclipse/jface/viewers/ILabelProvider;
+ ()Lorg/eclipse/jface/viewers/ILabelProvider;
+getTabDescriptors
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)[Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)[Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
+getTabListContentProvider
+ ()Lorg/eclipse/jface/viewers/IStructuredContentProvider;
+ ()Lorg/eclipse/jface/viewers/IStructuredContentProvider;
+getTypeMapper
+ ()Lorg/eclipse/ui/views/properties/tabbed/ITypeMapper;
+ ()Lorg/eclipse/ui/views/properties/tabbed/ITypeMapper;
+populateWithSectionDescriptors
+ (Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;)V
+ (Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;)V
+readSectionDescriptors
+ ()[Lorg/eclipse/ui/views/properties/tabbed/ISectionDescriptor;
+ ()[Lorg/eclipse/ui/views/properties/tabbed/ISectionDescriptor;
+readTabDescriptors
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;
+sortTabDescriptorsByAfterTab
+ (Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;)Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;
+ (Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;)Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;
+sortTabDescriptorsByCategory
+ (Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;)Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;
+ (Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;)Ljava/util/List<Lorg/eclipse/ui/internal/views/properties/tabbed/view/TabDescriptor;>;

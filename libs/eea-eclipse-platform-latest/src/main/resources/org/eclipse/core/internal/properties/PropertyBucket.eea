@@ -1,0 +1,29 @@
+class org/eclipse/core/internal/properties/PropertyBucket
+
+createEntry
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)Lorg/eclipse/core/internal/localstore/Bucket$Entry;
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)Lorg/eclipse/core/internal/localstore/Bucket$Entry;
+getIndexFileName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProperty
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/String;
+getVersionFileName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+load
+ (Ljava/lang/String;Ljava/io/File;Z)V
+ (Ljava/lang/String;Ljava/io/File;Z)V
+readEntryValue
+ (Ljava/io/DataInputStream;)Ljava/lang/Object;
+ (Ljava/io/DataInputStream;)Ljava/lang/Object;
+setProperties
+ (Lorg/eclipse/core/internal/properties/PropertyBucket$PropertyEntry;)V
+ (Lorg/eclipse/core/internal/properties/PropertyBucket$PropertyEntry;)V
+setProperty
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/String;)V
+writeEntryValue
+ (Ljava/io/DataOutputStream;Ljava/lang/Object;)V
+ (Ljava/io/DataOutputStream;Ljava/lang/Object;)V

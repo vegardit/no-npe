@@ -1,0 +1,18 @@
+class org/eclipse/core/internal/dtree/DataTreeReader
+
+flatener
+ Lorg/eclipse/core/internal/dtree/IDataFlattener;
+ Lorg/eclipse/core/internal/dtree/IDataFlattener;
+input
+ Ljava/io/DataInput;
+ Ljava/io/DataInput;
+
+<init>
+ (Lorg/eclipse/core/internal/dtree/IDataFlattener;)V
+ (Lorg/eclipse/core/internal/dtree/IDataFlattener;)V
+readNode
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+readTree
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Ljava/io/DataInput;Ljava/lang/String;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Ljava/io/DataInput;Ljava/lang/String;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;

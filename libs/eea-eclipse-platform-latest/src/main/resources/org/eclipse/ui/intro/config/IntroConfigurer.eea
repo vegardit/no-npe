@@ -1,0 +1,40 @@
+class org/eclipse/ui/intro/config/IntroConfigurer
+
+TB_ADDITIONS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+site
+ Lorg/eclipse/ui/intro/IIntroSite;
+ Lorg/eclipse/ui/intro/IIntroSite;
+themeProperties
+ Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+
+bind
+ (Lorg/eclipse/ui/internal/intro/impl/model/IntroModelRoot;)V
+ (Lorg/eclipse/ui/internal/intro/impl/model/IntroModelRoot;)V
+getGroupChildren
+ (Ljava/lang/String;Ljava/lang/String;)[Lorg/eclipse/ui/intro/config/IntroElement;
+ (Ljava/lang/String;Ljava/lang/String;)[Lorg/eclipse/ui/intro/config/IntroElement;
+getLaunchBarShortcuts
+ ()[Lorg/eclipse/ui/intro/config/IntroElement;
+ ()[Lorg/eclipse/ui/intro/config/IntroElement;
+getMixinStyle
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getThemeProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getVariable
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+init
+ (Lorg/eclipse/ui/intro/IIntroSite;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Lorg/eclipse/ui/intro/IIntroSite;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+isStartPage
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+resolvePath
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;

@@ -1,0 +1,36 @@
+class org/eclipse/core/internal/resources/SaveContext
+
+fileTable
+ Lorg/eclipse/core/internal/resources/SafeFileTable;
+ Lorg/eclipse/core/internal/resources/SafeFileTable;
+pluginId
+ Ljava/lang/String;
+ Ljava/lang/String;
+project
+ Lorg/eclipse/core/resources/IProject;
+ Lorg/eclipse/core/resources/IProject;
+
+<init>
+ (Ljava/lang/String;ILorg/eclipse/core/resources/IProject;Lorg/eclipse/core/internal/resources/Workspace;)V
+ (Ljava/lang/String;ILorg/eclipse/core/resources/IProject;Lorg/eclipse/core/internal/resources/Workspace;)V
+getFileTable
+ ()Lorg/eclipse/core/internal/resources/SafeFileTable;
+ ()Lorg/eclipse/core/internal/resources/SafeFileTable;
+getFiles
+ ()[Lorg/eclipse/core/runtime/IPath;
+ ()[Lorg/eclipse/core/runtime/IPath;
+getPluginId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProject
+ ()Lorg/eclipse/core/resources/IProject;
+ ()Lorg/eclipse/core/resources/IProject;
+getWorkspace
+ ()Lorg/eclipse/core/internal/resources/Workspace;
+ ()Lorg/eclipse/core/internal/resources/Workspace;
+lookup
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+map
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IPath;)V

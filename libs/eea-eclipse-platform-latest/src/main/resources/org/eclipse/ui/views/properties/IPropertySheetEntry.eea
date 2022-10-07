@@ -1,0 +1,45 @@
+class org/eclipse/ui/views/properties/IPropertySheetEntry
+
+FILTER_ID_EXPERT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addPropertySheetEntryListener
+ (Lorg/eclipse/ui/views/properties/IPropertySheetEntryListener;)V
+ (Lorg/eclipse/ui/views/properties/IPropertySheetEntryListener;)V
+getCategory
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getChildEntries
+ ()[Lorg/eclipse/ui/views/properties/IPropertySheetEntry;
+ ()[Lorg/eclipse/ui/views/properties/IPropertySheetEntry;
+getDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDisplayName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getEditor
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/CellEditor;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/CellEditor;
+getErrorText
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFilters
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getHelpContextIds
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getImage
+ ()Lorg/eclipse/swt/graphics/Image;
+ ()Lorg/eclipse/swt/graphics/Image;
+getValueAsString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+removePropertySheetEntryListener
+ (Lorg/eclipse/ui/views/properties/IPropertySheetEntryListener;)V
+ (Lorg/eclipse/ui/views/properties/IPropertySheetEntryListener;)V
+setValues
+ ([Ljava/lang/Object;)V
+ ([Ljava/lang/Object;)V

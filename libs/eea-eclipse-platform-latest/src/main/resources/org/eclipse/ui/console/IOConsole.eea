@@ -1,0 +1,38 @@
+class org/eclipse/ui/console/IOConsole
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;)V
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Ljava/lang/String;Z)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Ljava/lang/String;Z)V
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Ljava/nio/charset/Charset;Z)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Ljava/nio/charset/Charset;Z)V
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Z)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Z)V
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;)V
+createPage
+ (Lorg/eclipse/ui/console/IConsoleView;)Lorg/eclipse/ui/part/IPageBookViewPage;
+ (Lorg/eclipse/ui/console/IConsoleView;)Lorg/eclipse/ui/part/IPageBookViewPage;
+getCharset
+ ()Ljava/nio/charset/Charset;
+ ()Ljava/nio/charset/Charset;
+getEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInputStream
+ ()Lorg/eclipse/ui/console/IOConsoleInputStream;
+ ()Lorg/eclipse/ui/console/IOConsoleInputStream;
+getPartitioner
+ ()Lorg/eclipse/ui/console/IConsoleDocumentPartitioner;
+ ()Lorg/eclipse/ui/console/IConsoleDocumentPartitioner;
+newOutputStream
+ ()Lorg/eclipse/ui/console/IOConsoleOutputStream;
+ ()Lorg/eclipse/ui/console/IOConsoleOutputStream;
+setInputStream
+ (Ljava/io/InputStream;)V
+ (Ljava/io/InputStream;)V

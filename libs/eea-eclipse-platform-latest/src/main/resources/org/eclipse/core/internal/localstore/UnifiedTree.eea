@@ -1,0 +1,85 @@
+class org/eclipse/core/internal/localstore/UnifiedTree
+
+childrenMarker
+ Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;
+ L1org/eclipse/core/internal/localstore/UnifiedTreeNode;
+levelMarker
+ Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;
+ L1org/eclipse/core/internal/localstore/UnifiedTreeNode;
+
+fileTree
+ Lorg/eclipse/core/filesystem/IFileTree;
+ Lorg/eclipse/core/filesystem/IFileTree;
+freeNodes
+ Ljava/util/ArrayList<Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;>;
+ Ljava/util/ArrayList<Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;>;
+pathPrefixHistory
+ Lorg/eclipse/core/internal/localstore/PrefixPool;
+ Lorg/eclipse/core/internal/localstore/PrefixPool;
+queue
+ Ljava/util/LinkedList<Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;>;
+ Ljava/util/LinkedList<Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;>;
+root
+ Lorg/eclipse/core/resources/IResource;
+ Lorg/eclipse/core/resources/IResource;
+rootPathHistory
+ Lorg/eclipse/core/internal/localstore/PrefixPool;
+ Lorg/eclipse/core/internal/localstore/PrefixPool;
+
+<init>
+ (Lorg/eclipse/core/resources/IResource;)V
+ (Lorg/eclipse/core/resources/IResource;)V
+<init>
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/filesystem/IFileTree;)V
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/filesystem/IFileTree;)V
+accept
+ (Lorg/eclipse/core/internal/localstore/IUnifiedTreeVisitor;)V
+ (Lorg/eclipse/core/internal/localstore/IUnifiedTreeVisitor;)V
+accept
+ (Lorg/eclipse/core/internal/localstore/IUnifiedTreeVisitor;I)V
+ (Lorg/eclipse/core/internal/localstore/IUnifiedTreeVisitor;I)V
+addChildToTree
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V
+addChildren
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V
+addChildrenFromFileSystem
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;[Lorg/eclipse/core/filesystem/IFileInfo;I)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;[Lorg/eclipse/core/filesystem/IFileInfo;I)V
+addElementToQueue
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V
+addNodeChildrenToQueue
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V
+createChildForLinkedResource
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;
+createChildNodeFromFileSystem
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/filesystem/IFileInfo;)Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;Lorg/eclipse/core/filesystem/IFileInfo;)Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;
+createNode
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/filesystem/IFileInfo;Z)Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/filesystem/IFileInfo;Z)Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;
+getChildren
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Ljava/util/Iterator<Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;>;
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Ljava/util/Iterator<Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;>;
+getLocalList
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)[Lorg/eclipse/core/filesystem/IFileInfo;
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)[Lorg/eclipse/core/filesystem/IFileInfo;
+getWorkspace
+ ()Lorg/eclipse/core/internal/resources/Workspace;
+ ()Lorg/eclipse/core/internal/resources/Workspace;
+isChildrenMarker
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Z
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Z
+isLevelMarker
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Z
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)Z
+quickSort
+ ([Lorg/eclipse/core/filesystem/IFileInfo;II)V
+ ([Lorg/eclipse/core/filesystem/IFileInfo;II)V
+removeNodeChildrenFromQueue
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V
+ (Lorg/eclipse/core/internal/localstore/UnifiedTreeNode;)V

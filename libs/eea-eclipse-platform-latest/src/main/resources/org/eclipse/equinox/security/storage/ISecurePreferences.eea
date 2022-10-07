@@ -1,0 +1,71 @@
+class org/eclipse/equinox/security/storage/ISecurePreferences
+
+absolutePath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+childrenNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+get
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getBoolean
+ (Ljava/lang/String;Z)Z
+ (Ljava/lang/String;Z)Z
+getByteArray
+ (Ljava/lang/String;[B)[B
+ (Ljava/lang/String;[B)[B
+getDouble
+ (Ljava/lang/String;D)D
+ (Ljava/lang/String;D)D
+getFloat
+ (Ljava/lang/String;F)F
+ (Ljava/lang/String;F)F
+getInt
+ (Ljava/lang/String;I)I
+ (Ljava/lang/String;I)I
+getLong
+ (Ljava/lang/String;J)J
+ (Ljava/lang/String;J)J
+isEncrypted
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+keys
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+name
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+node
+ (Ljava/lang/String;)Lorg/eclipse/equinox/security/storage/ISecurePreferences;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/security/storage/ISecurePreferences;
+nodeExists
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+parent
+ ()Lorg/eclipse/equinox/security/storage/ISecurePreferences;
+ ()Lorg/eclipse/equinox/security/storage/ISecurePreferences;
+put
+ (Ljava/lang/String;Ljava/lang/String;Z)V
+ (Ljava/lang/String;Ljava/lang/String;Z)V
+putBoolean
+ (Ljava/lang/String;ZZ)V
+ (Ljava/lang/String;ZZ)V
+putByteArray
+ (Ljava/lang/String;[BZ)V
+ (Ljava/lang/String;[BZ)V
+putDouble
+ (Ljava/lang/String;DZ)V
+ (Ljava/lang/String;DZ)V
+putFloat
+ (Ljava/lang/String;FZ)V
+ (Ljava/lang/String;FZ)V
+putInt
+ (Ljava/lang/String;IZ)V
+ (Ljava/lang/String;IZ)V
+putLong
+ (Ljava/lang/String;JZ)V
+ (Ljava/lang/String;JZ)V
+remove
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

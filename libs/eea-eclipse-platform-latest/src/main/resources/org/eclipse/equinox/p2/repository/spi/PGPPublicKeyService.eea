@@ -1,0 +1,40 @@
+class org/eclipse/equinox/p2/repository/spi/PGPPublicKeyService
+
+SERVICE_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+compareSignatureTimeToKeyValidityTime
+ (Lorg/bouncycastle/openpgp/PGPSignature;Lorg/bouncycastle/openpgp/PGPPublicKey;)J
+ (Lorg/bouncycastle/openpgp/PGPSignature;Lorg/bouncycastle/openpgp/PGPPublicKey;)J
+toHex
+ (J)Ljava/lang/String;
+ (J)Ljava/lang/String;
+toHex
+ ([B)Ljava/lang/String;
+ ([B)Ljava/lang/String;
+toHexFingerprint
+ (Lorg/bouncycastle/openpgp/PGPPublicKey;)Ljava/lang/String;
+ (Lorg/bouncycastle/openpgp/PGPPublicKey;)Ljava/lang/String;
+
+addKey
+ (Lorg/bouncycastle/openpgp/PGPPublicKey;)Lorg/bouncycastle/openpgp/PGPPublicKey;
+ (Lorg/bouncycastle/openpgp/PGPPublicKey;)Lorg/bouncycastle/openpgp/PGPPublicKey;
+getKey
+ (Ljava/lang/String;)Lorg/bouncycastle/openpgp/PGPPublicKey;
+ (Ljava/lang/String;)Lorg/bouncycastle/openpgp/PGPPublicKey;
+getKey
+ ([B)Lorg/bouncycastle/openpgp/PGPPublicKey;
+ ([B)Lorg/bouncycastle/openpgp/PGPPublicKey;
+getKeys
+ (J)Ljava/util/Collection<Lorg/bouncycastle/openpgp/PGPPublicKey;>;
+ (J)Ljava/util/Collection<Lorg/bouncycastle/openpgp/PGPPublicKey;>;
+getVerifiedCertifications
+ (Lorg/bouncycastle/openpgp/PGPPublicKey;)Ljava/util/Set<Lorg/bouncycastle/openpgp/PGPPublicKey;>;
+ (Lorg/bouncycastle/openpgp/PGPPublicKey;)Ljava/util/Set<Lorg/bouncycastle/openpgp/PGPPublicKey;>;
+getVerifiedRevocationDate
+ (Lorg/bouncycastle/openpgp/PGPPublicKey;)Ljava/util/Date;
+ (Lorg/bouncycastle/openpgp/PGPPublicKey;)Ljava/util/Date;
+isCreatedBeforeRevocation
+ (Lorg/bouncycastle/openpgp/PGPSignature;Lorg/bouncycastle/openpgp/PGPPublicKey;)Z
+ (Lorg/bouncycastle/openpgp/PGPSignature;Lorg/bouncycastle/openpgp/PGPPublicKey;)Z

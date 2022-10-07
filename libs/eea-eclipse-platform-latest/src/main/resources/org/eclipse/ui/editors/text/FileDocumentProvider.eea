@@ -1,0 +1,101 @@
+class org/eclipse/ui/editors/text/FileDocumentProvider
+
+cacheEncodingState
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+checkSynchronizationState
+ (JLorg/eclipse/core/resources/IResource;)V
+ (JLorg/eclipse/core/resources/IResource;)V
+computeModificationStamp
+ (Lorg/eclipse/core/resources/IResource;)J
+ (Lorg/eclipse/core/resources/IResource;)J
+createAnnotationModel
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+createElementInfo
+ (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
+ (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
+disposeElementInfo
+ (Ljava/lang/Object;Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;)V
+ (Ljava/lang/Object;Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;)V
+doResetDocument
+ (Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+doSaveDocument
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;Z)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;Z)V
+doSynchronize
+ (Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+doValidateState
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+getContentType
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/content/IContentType;
+getElementInfo
+ (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
+ (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
+getModificationStamp
+ (Ljava/lang/Object;)J
+ (Ljava/lang/Object;)J
+getOperationRunner
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/operation/IRunnableContext;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/operation/IRunnableContext;
+getPersistedEncoding
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+getRefreshRule
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getResetRule
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getSaveRule
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getSynchronizationStamp
+ (Ljava/lang/Object;)J
+ (Ljava/lang/Object;)J
+getSynchronizeRule
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getValidateStateRule
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+handleElementContentChanged
+ (Lorg/eclipse/ui/IFileEditorInput;)V
+ (Lorg/eclipse/ui/IFileEditorInput;)V
+handleElementDeleted
+ (Lorg/eclipse/ui/IFileEditorInput;)V
+ (Lorg/eclipse/ui/IFileEditorInput;)V
+handleElementMoved
+ (Lorg/eclipse/ui/IFileEditorInput;Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/ui/IFileEditorInput;Lorg/eclipse/core/runtime/IPath;)V
+isDeleted
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isModifiable
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isSynchronized
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+persistEncoding
+ (Ljava/lang/Object;Ljava/lang/String;)V
+ (Ljava/lang/Object;Ljava/lang/String;)V
+readUTF8BOM
+ (Lorg/eclipse/core/resources/IFile;Ljava/lang/String;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/resources/IFile;Ljava/lang/String;Ljava/lang/Object;)V
+refreshFile
+ (Lorg/eclipse/core/resources/IFile;)V
+ (Lorg/eclipse/core/resources/IFile;)V
+refreshFile
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+setDocumentContent
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/ui/IEditorInput;)Z
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/ui/IEditorInput;)Z
+setDocumentContent
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;)Z
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/ui/IEditorInput;Ljava/lang/String;)Z

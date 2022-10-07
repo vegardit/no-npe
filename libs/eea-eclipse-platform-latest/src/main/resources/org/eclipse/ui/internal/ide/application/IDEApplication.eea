@@ -1,0 +1,40 @@
+class org/eclipse/ui/internal/ide/application/IDEApplication
+
+METADATA_FOLDER
+ Ljava/lang/String;
+ L1java/lang/String;
+PLUGIN_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getVersionFile
+ (Ljava/net/URL;Z)Ljava/io/File;
+ (Ljava/net/URL;Z)Ljava/io/File;
+readWorkspaceVersion
+ (Ljava/net/URL;)Lorg/osgi/framework/Version;
+ (Ljava/net/URL;)Lorg/osgi/framework/Version;
+toMajorMinorVersion
+ (Lorg/osgi/framework/Version;)Lorg/osgi/framework/Version;
+ (Lorg/osgi/framework/Version;)Lorg/osgi/framework/Version;
+
+checkInstanceLocation
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/util/Map;)Ljava/lang/Object;
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/util/Map;)Ljava/lang/Object;
+checkValidWorkspace
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/net/URL;)Lorg/eclipse/ui/internal/ide/application/IDEApplication$ReturnCode;
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/net/URL;)Lorg/eclipse/ui/internal/ide/application/IDEApplication$ReturnCode;
+compareWorkspaceAndIdeVersions
+ (Ljava/net/URL;)I
+ (Ljava/net/URL;)I
+createDisplay
+ ()Lorg/eclipse/swt/widgets/Display;
+ ()Lorg/eclipse/swt/widgets/Display;
+setInitializationData
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;Ljava/lang/Object;)V
+showChooseWorkspaceDialog
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/ui/internal/ide/ChooseWorkspaceData;Z)V
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/ui/internal/ide/ChooseWorkspaceData;Z)V
+start
+ (Lorg/eclipse/equinox/app/IApplicationContext;)Ljava/lang/Object;
+ (Lorg/eclipse/equinox/app/IApplicationContext;)Ljava/lang/Object;

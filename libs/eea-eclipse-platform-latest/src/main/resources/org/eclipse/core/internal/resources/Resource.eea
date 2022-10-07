@@ -1,0 +1,248 @@
+class org/eclipse/core/internal/resources/Resource
+
+<init>
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/resources/Workspace;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/resources/Workspace;)V
+accept
+ (Lorg/eclipse/core/resources/IResourceProxyVisitor;I)V
+ (Lorg/eclipse/core/resources/IResourceProxyVisitor;I)V
+accept
+ (Lorg/eclipse/core/resources/IResourceProxyVisitor;II)V
+ (Lorg/eclipse/core/resources/IResourceProxyVisitor;II)V
+accept
+ (Lorg/eclipse/core/resources/IResourceVisitor;)V
+ (Lorg/eclipse/core/resources/IResourceVisitor;)V
+accept
+ (Lorg/eclipse/core/resources/IResourceVisitor;II)V
+ (Lorg/eclipse/core/resources/IResourceVisitor;II)V
+accept
+ (Lorg/eclipse/core/resources/IResourceVisitor;IZ)V
+ (Lorg/eclipse/core/resources/IResourceVisitor;IZ)V
+assertCopyRequirements
+ (Lorg/eclipse/core/runtime/IPath;II)V
+ (Lorg/eclipse/core/runtime/IPath;II)V
+assertLinkRequirements
+ (Ljava/net/URI;I)Lorg/eclipse/core/filesystem/IFileInfo;
+ (Ljava/net/URI;I)Lorg/eclipse/core/filesystem/IFileInfo;
+assertMoveRequirements
+ (Lorg/eclipse/core/runtime/IPath;II)V
+ (Lorg/eclipse/core/runtime/IPath;II)V
+checkCopyRequirements
+ (Lorg/eclipse/core/runtime/IPath;II)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IPath;II)Lorg/eclipse/core/runtime/IStatus;
+checkMoveRequirements
+ (Lorg/eclipse/core/runtime/IPath;II)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IPath;II)Lorg/eclipse/core/runtime/IStatus;
+checkValidGroupContainer
+ (Lorg/eclipse/core/internal/resources/Container;ZZ)V
+ (Lorg/eclipse/core/internal/resources/Container;ZZ)V
+checkValidGroupContainer
+ (Lorg/eclipse/core/runtime/IPath;ZZ)V
+ (Lorg/eclipse/core/runtime/IPath;ZZ)V
+checkValidPath
+ (Lorg/eclipse/core/runtime/IPath;IZ)V
+ (Lorg/eclipse/core/runtime/IPath;IZ)V
+clearHistory
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+contains
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Z
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Z
+copy
+ (Lorg/eclipse/core/resources/IProjectDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IProjectDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+copy
+ (Lorg/eclipse/core/resources/IProjectDescription;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IProjectDescription;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+copy
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+copy
+ (Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+createLink
+ (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+createLink
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+createMarker
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IMarker;
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IMarker;
+createMarker
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;+Ljava/lang/Object;>;)Lorg/eclipse/core/resources/IMarker;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;+Ljava/lang/Object;>;)Lorg/eclipse/core/resources/IMarker;
+createProxy
+ ()Lorg/eclipse/core/resources/IResourceProxy;
+ ()Lorg/eclipse/core/resources/IResourceProxy;
+delete
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)V
+delete
+ (ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+delete
+ (ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+deleteMarkers
+ (Ljava/lang/String;ZI)V
+ (Ljava/lang/String;ZI)V
+deleteResource
+ (ZLorg/eclipse/core/runtime/MultiStatus;)V
+ (ZLorg/eclipse/core/runtime/MultiStatus;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+filterChildren
+ ([Lorg/eclipse/core/filesystem/IFileInfo;Z)[Lorg/eclipse/core/filesystem/IFileInfo;
+ ([Lorg/eclipse/core/filesystem/IFileInfo;Z)[Lorg/eclipse/core/filesystem/IFileInfo;
+findExistingResourceVariant
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IResource;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IResource;
+findMarker
+ (J)Lorg/eclipse/core/resources/IMarker;
+ (J)Lorg/eclipse/core/resources/IMarker;
+findMarkers
+ (Ljava/lang/String;ZI)[Lorg/eclipse/core/resources/IMarker;
+ (Ljava/lang/String;ZI)[Lorg/eclipse/core/resources/IMarker;
+findMaxProblemSeverity
+ (Ljava/lang/String;ZI)I
+ (Ljava/lang/String;ZI)I
+getFileExtension
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFlags
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;)I
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;)I
+getFullPath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getLocalManager
+ ()Lorg/eclipse/core/internal/localstore/FileSystemResourceManager;
+ ()Lorg/eclipse/core/internal/localstore/FileSystemResourceManager;
+getLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getLocationURI
+ ()Ljava/net/URI;
+ ()Ljava/net/URI;
+getMarker
+ (J)Lorg/eclipse/core/resources/IMarker;
+ (J)Lorg/eclipse/core/resources/IMarker;
+getMarkerManager
+ ()Lorg/eclipse/core/internal/resources/MarkerManager;
+ ()Lorg/eclipse/core/internal/resources/MarkerManager;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getParent
+ ()Lorg/eclipse/core/resources/IContainer;
+ ()Lorg/eclipse/core/resources/IContainer;
+getPathVariableManager
+ ()Lorg/eclipse/core/resources/IPathVariableManager;
+ ()Lorg/eclipse/core/resources/IPathVariableManager;
+getPersistentProperties
+ ()Ljava/util/Map<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/String;>;
+ ()Ljava/util/Map<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/String;>;
+getPersistentProperty
+ (Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/String;
+getProject
+ ()Lorg/eclipse/core/resources/IProject;
+ ()Lorg/eclipse/core/resources/IProject;
+getProjectRelativePath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getPropertyManager
+ ()Lorg/eclipse/core/internal/properties/IPropertyManager;
+ ()Lorg/eclipse/core/internal/properties/IPropertyManager;
+getRawLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getRawLocationURI
+ ()Ljava/net/URI;
+ ()Ljava/net/URI;
+getResourceAttributes
+ ()Lorg/eclipse/core/resources/ResourceAttributes;
+ ()Lorg/eclipse/core/resources/ResourceAttributes;
+getResourceInfo
+ (ZZ)Lorg/eclipse/core/internal/resources/ResourceInfo;
+ (ZZ)Lorg/eclipse/core/internal/resources/ResourceInfo;
+getSessionProperties
+ ()Ljava/util/Map<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
+getSessionProperty
+ (Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/QualifiedName;)Ljava/lang/Object;
+getStore
+ ()Lorg/eclipse/core/filesystem/IFileStore;
+ ()Lorg/eclipse/core/filesystem/IFileStore;
+getTypeString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getValidGroupContainer
+ (Lorg/eclipse/core/runtime/IPath;ZZ)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IPath;ZZ)Lorg/eclipse/core/runtime/IStatus;
+getWorkspace
+ ()Lorg/eclipse/core/resources/IWorkspace;
+ ()Lorg/eclipse/core/resources/IWorkspace;
+isConflicting
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Z
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)Z
+makePathAbsolute
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+move
+ (Lorg/eclipse/core/resources/IProjectDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IProjectDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+move
+ (Lorg/eclipse/core/resources/IProjectDescription;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IProjectDescription;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+move
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+move
+ (Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+move
+ (Lorg/eclipse/core/runtime/IPath;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+refreshLocal
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)V
+requestName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+requestPath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+setDerived
+ (ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+setLinkLocation
+ (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+setLinkLocation
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+setLocal
+ (ZILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ZILorg/eclipse/core/runtime/IProgressMonitor;)V
+setPersistentProperty
+ (Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/String;)V
+setResourceAttributes
+ (Lorg/eclipse/core/resources/ResourceAttributes;)V
+ (Lorg/eclipse/core/resources/ResourceAttributes;)V
+setSessionProperty
+ (Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;)V
+synchronizing
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;)Z
+ (Lorg/eclipse/core/internal/resources/ResourceInfo;)Z
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+touch
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V

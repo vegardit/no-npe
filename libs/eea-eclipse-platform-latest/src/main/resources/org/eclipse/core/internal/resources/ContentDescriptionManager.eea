@@ -1,0 +1,40 @@
+class org/eclipse/core/internal/resources/ContentDescriptionManager
+
+FAMILY_DESCRIPTION_CACHE_FLUSH
+ Ljava/lang/String;
+ L1java/lang/String;
+
+systemBundle
+ Lorg/osgi/framework/Bundle;
+ Lorg/osgi/framework/Bundle;
+
+<init>
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+contentTypeChanged
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$ContentTypeChangeEvent;)V
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$ContentTypeChangeEvent;)V
+getContentTypeMatcher
+ (Lorg/eclipse/core/internal/resources/Project;)Lorg/eclipse/core/runtime/content/IContentTypeMatcher;
+ (Lorg/eclipse/core/internal/resources/Project;)Lorg/eclipse/core/runtime/content/IContentTypeMatcher;
+getDescriptionFor
+ (Lorg/eclipse/core/internal/resources/File;Lorg/eclipse/core/internal/resources/ResourceInfo;Z)Lorg/eclipse/core/runtime/content/IContentDescription;
+ (Lorg/eclipse/core/internal/resources/File;Lorg/eclipse/core/internal/resources/ResourceInfo;Z)Lorg/eclipse/core/runtime/content/IContentDescription;
+handleEvent
+ (Lorg/eclipse/core/internal/events/LifecycleEvent;)V
+ (Lorg/eclipse/core/internal/events/LifecycleEvent;)V
+invalidateCache
+ (ZLorg/eclipse/core/resources/IProject;)V
+ (ZLorg/eclipse/core/resources/IProject;)V
+projectPreferencesChanged
+ (Lorg/eclipse/core/resources/IProject;)V
+ (Lorg/eclipse/core/resources/IProject;)V
+registryChanged
+ (Lorg/eclipse/core/runtime/IRegistryChangeEvent;)V
+ (Lorg/eclipse/core/runtime/IRegistryChangeEvent;)V
+shutdown
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+startup
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V

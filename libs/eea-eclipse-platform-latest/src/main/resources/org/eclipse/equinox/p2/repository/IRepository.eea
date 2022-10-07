@@ -1,0 +1,70 @@
+class org/eclipse/equinox/p2/repository/IRepository
+ <T:Ljava/lang/Object;>
+
+PREFERENCE_NODE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_COMPRESSED
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_DESCRIPTION
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_MIRRORS_BASE_URL
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_MIRRORS_URL
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_NICKNAME
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_PASSWORD
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_SYSTEM
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_TIMESTAMP
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_USERNAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLocation
+ ()Ljava/net/URI;
+ ()Ljava/net/URI;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProperties
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getProvider
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProvisioningAgent
+ ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+ ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+getType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getVersion
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+setProperty
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+setProperty
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;

@@ -1,0 +1,43 @@
+class org/eclipse/jface/fieldassist/FieldDecorationRegistry
+
+DEC_CONTENT_PROPOSAL
+ Ljava/lang/String;
+ L1java/lang/String;
+DEC_ERROR
+ Ljava/lang/String;
+ L1java/lang/String;
+DEC_ERROR_QUICKFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+DEC_INFORMATION
+ Ljava/lang/String;
+ L1java/lang/String;
+DEC_REQUIRED
+ Ljava/lang/String;
+ L1java/lang/String;
+DEC_WARNING
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getDefault
+ ()Lorg/eclipse/jface/fieldassist/FieldDecorationRegistry;
+ ()Lorg/eclipse/jface/fieldassist/FieldDecorationRegistry;
+setDefault
+ (Lorg/eclipse/jface/fieldassist/FieldDecorationRegistry;)V
+ (Lorg/eclipse/jface/fieldassist/FieldDecorationRegistry;)V
+
+getFieldDecoration
+ (Ljava/lang/String;)Lorg/eclipse/jface/fieldassist/FieldDecoration;
+ (Ljava/lang/String;)Lorg/eclipse/jface/fieldassist/FieldDecoration;
+registerFieldDecoration
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+registerFieldDecoration
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageRegistry;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jface/resource/ImageRegistry;)V
+registerFieldDecoration
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/swt/graphics/Image;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/swt/graphics/Image;)V
+unregisterFieldDecoration
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

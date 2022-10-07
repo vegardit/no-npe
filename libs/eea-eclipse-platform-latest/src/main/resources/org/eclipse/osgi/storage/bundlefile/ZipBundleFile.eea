@@ -1,0 +1,14 @@
+class org/eclipse/osgi/storage/bundlefile/ZipBundleFile
+
+<init>
+ (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Lorg/eclipse/osgi/storage/bundlefile/MRUBundleFileList;Lorg/eclipse/osgi/internal/debug/Debug;Z)V
+ (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Lorg/eclipse/osgi/storage/bundlefile/MRUBundleFileList;Lorg/eclipse/osgi/internal/debug/Debug;Z)V
+doGetInputStream
+ (Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;
+ (Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;
+findEntry
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
+getPaths
+ ()Ljava/lang/Iterable<Ljava/lang/String;>;
+ ()Ljava/lang/Iterable<Ljava/lang/String;>;

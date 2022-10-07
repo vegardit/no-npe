@@ -1,0 +1,32 @@
+class org/eclipse/osgi/service/security/TrustEngine
+
+addTrustAnchor
+ (Ljava/security/cert/Certificate;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/security/cert/Certificate;Ljava/lang/String;)Ljava/lang/String;
+doAddTrustAnchor
+ (Ljava/security/cert/Certificate;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/security/cert/Certificate;Ljava/lang/String;)Ljava/lang/String;
+doRemoveTrustAnchor
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+doRemoveTrustAnchor
+ (Ljava/security/cert/Certificate;)V
+ (Ljava/security/cert/Certificate;)V
+findTrustAnchor
+ ([Ljava/security/cert/Certificate;)Ljava/security/cert/Certificate;
+ ([Ljava/security/cert/Certificate;)Ljava/security/cert/Certificate;
+getAliases
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTrustAnchor
+ (Ljava/lang/String;)Ljava/security/cert/Certificate;
+ (Ljava/lang/String;)Ljava/security/cert/Certificate;
+removeTrustAnchor
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeTrustAnchor
+ (Ljava/security/cert/Certificate;)V
+ (Ljava/security/cert/Certificate;)V

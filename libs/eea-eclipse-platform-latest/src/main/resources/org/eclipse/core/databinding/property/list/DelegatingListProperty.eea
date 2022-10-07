@@ -1,0 +1,30 @@
+class org/eclipse/core/databinding/property/list/DelegatingListProperty
+ <S:Ljava/lang/Object;E:Ljava/lang/Object;>
+
+<init>
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+doGetDelegate
+ (TS;)Lorg/eclipse/core/databinding/property/list/IListProperty<TS;TE;>;
+ (TS;)Lorg/eclipse/core/databinding/property/list/IListProperty<TS;TE;>;
+doGetList
+ (TS;)Ljava/util/List<TE;>;
+ (TS;)Ljava/util/List<TE;>;
+doSetList
+ (TS;Ljava/util/List<TE;>;)V
+ (TS;Ljava/util/List<TE;>;)V
+doUpdateList
+ (TS;Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V
+ (TS;Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V
+getDelegate
+ (TS;)Lorg/eclipse/core/databinding/property/list/IListProperty<TS;TE;>;
+ (TS;)Lorg/eclipse/core/databinding/property/list/IListProperty<TS;TE;>;
+getElementType
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+observe
+ (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;
+ (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;
+observe
+ (TS;)Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;
+ (TS;)Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;

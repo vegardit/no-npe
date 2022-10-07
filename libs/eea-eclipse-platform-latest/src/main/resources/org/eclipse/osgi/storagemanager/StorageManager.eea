@@ -1,0 +1,44 @@
+class org/eclipse/osgi/storagemanager/StorageManager
+
+<init>
+ (Ljava/io/File;Ljava/lang/String;)V
+ (Ljava/io/File;Ljava/lang/String;)V
+<init>
+ (Ljava/io/File;Ljava/lang/String;Z)V
+ (Ljava/io/File;Ljava/lang/String;Z)V
+add
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+createTempFile
+ (Ljava/lang/String;)Ljava/io/File;
+ (Ljava/lang/String;)Ljava/io/File;
+getBase
+ ()Ljava/io/File;
+ ()Ljava/io/File;
+getId
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+getInputStream
+ (Ljava/lang/String;)Ljava/io/InputStream;
+ (Ljava/lang/String;)Ljava/io/InputStream;
+getInputStreamSet
+ ([Ljava/lang/String;)[Ljava/io/InputStream;
+ ([Ljava/lang/String;)[Ljava/io/InputStream;
+getManagedFiles
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getOutputStream
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storagemanager/ManagedOutputStream;
+ (Ljava/lang/String;)Lorg/eclipse/osgi/storagemanager/ManagedOutputStream;
+getOutputStreamSet
+ ([Ljava/lang/String;)[Lorg/eclipse/osgi/storagemanager/ManagedOutputStream;
+ ([Ljava/lang/String;)[Lorg/eclipse/osgi/storagemanager/ManagedOutputStream;
+lookup
+ (Ljava/lang/String;Z)Ljava/io/File;
+ (Ljava/lang/String;Z)Ljava/io/File;
+remove
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+update
+ ([Ljava/lang/String;[Ljava/lang/String;)V
+ ([Ljava/lang/String;[Ljava/lang/String;)V

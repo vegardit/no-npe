@@ -1,0 +1,17 @@
+class org/eclipse/osgi/internal/signedcontent/SignedBundleHook
+
+addHooks
+ (Lorg/eclipse/osgi/internal/hookregistry/HookRegistry;)V
+ (Lorg/eclipse/osgi/internal/hookregistry/HookRegistry;)V
+createActivator
+ ()Lorg/osgi/framework/BundleActivator;
+ ()Lorg/osgi/framework/BundleActivator;
+getSignedContent
+ (Ljava/io/File;)Lorg/eclipse/osgi/signedcontent/SignedContent;
+ (Ljava/io/File;)Lorg/eclipse/osgi/signedcontent/SignedContent;
+getSignedContent
+ (Lorg/osgi/framework/Bundle;)Lorg/eclipse/osgi/signedcontent/SignedContent;
+ (Lorg/osgi/framework/Bundle;)Lorg/eclipse/osgi/signedcontent/SignedContent;
+log
+ (Ljava/lang/String;ILjava/lang/Throwable;)V
+ (Ljava/lang/String;ILjava/lang/Throwable;)V

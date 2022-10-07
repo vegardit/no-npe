@@ -1,0 +1,67 @@
+class org/eclipse/ui/internal/ide/IDEWorkbenchPlugin
+
+DEFAULT_TEXT_EDITOR_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+IDE_WORKBENCH
+ Ljava/lang/String;
+ L1java/lang/String;
+PL_MARKER_HELP
+ Ljava/lang/String;
+ L1java/lang/String;
+PL_MARKER_IMAGE_PROVIDER
+ Ljava/lang/String;
+ L1java/lang/String;
+PL_MARKER_RESOLUTION
+ Ljava/lang/String;
+ L1java/lang/String;
+PL_PROJECT_NATURE_IMAGES
+ Ljava/lang/String;
+ L1java/lang/String;
+
+createExtension
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;)Ljava/lang/Object;
+getDefault
+ ()Lorg/eclipse/ui/internal/ide/IDEWorkbenchPlugin;
+ ()Lorg/eclipse/ui/internal/ide/IDEWorkbenchPlugin;
+getIDEImageDescriptor
+ (Ljava/lang/String;)Lorg/eclipse/jface/resource/ImageDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/jface/resource/ImageDescriptor;
+getPluginWorkspace
+ ()Lorg/eclipse/core/resources/IWorkspace;
+ ()Lorg/eclipse/core/resources/IWorkspace;
+log
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/Throwable;)V
+log
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+log
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+log
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IStatus;)V
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IStatus;)V
+
+getFeatureInfos
+ ()[Lorg/eclipse/ui/internal/ide/AboutInfo;
+ ()[Lorg/eclipse/ui/internal/ide/AboutInfo;
+getMarkerImageProviderRegistry
+ ()Lorg/eclipse/ui/internal/ide/registry/MarkerImageProviderRegistry;
+ ()Lorg/eclipse/ui/internal/ide/registry/MarkerImageProviderRegistry;
+getProjectImageRegistry
+ ()Lorg/eclipse/ui/internal/ide/registry/ProjectImageRegistry;
+ ()Lorg/eclipse/ui/internal/ide/registry/ProjectImageRegistry;
+getResourceManager
+ ()Lorg/eclipse/jface/resource/ResourceManager;
+ ()Lorg/eclipse/jface/resource/ResourceManager;
+getUnassociatedEditorStrategyRegistry
+ ()Lorg/eclipse/ui/internal/ide/registry/UnassociatedEditorStrategyRegistry;
+ ()Lorg/eclipse/ui/internal/ide/registry/UnassociatedEditorStrategyRegistry;
+start
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V
+stop
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V

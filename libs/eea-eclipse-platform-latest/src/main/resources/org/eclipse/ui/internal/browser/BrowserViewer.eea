@@ -1,0 +1,98 @@
+class org/eclipse/ui/internal/browser/BrowserViewer
+
+PROPERTY_TITLE
+ Ljava/lang/String;
+ L1java/lang/String;
+history
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+
+getFile
+ (Ljava/lang/String;)Ljava/io/File;
+ (Ljava/lang/String;)Ljava/io/File;
+
+autoRefresh
+ Lorg/eclipse/swt/widgets/MenuItem;
+ Lorg/eclipse/swt/widgets/MenuItem;
+back
+ Lorg/eclipse/swt/widgets/ToolItem;
+ Lorg/eclipse/swt/widgets/ToolItem;
+backNextListener
+ Lorg/eclipse/ui/internal/browser/BrowserViewer$IBackNextListener;
+ Lorg/eclipse/ui/internal/browser/BrowserViewer$IBackNextListener;
+browser
+ Lorg/eclipse/swt/browser/Browser;
+ Lorg/eclipse/swt/browser/Browser;
+busy
+ Lorg/eclipse/ui/internal/browser/BusyIndicator;
+ Lorg/eclipse/ui/internal/browser/BusyIndicator;
+clipboard
+ Lorg/eclipse/swt/dnd/Clipboard;
+ Lorg/eclipse/swt/dnd/Clipboard;
+combo
+ Lorg/eclipse/swt/widgets/Combo;
+ Lorg/eclipse/swt/widgets/Combo;
+container
+ Lorg/eclipse/ui/internal/browser/IBrowserViewerContainer;
+ Lorg/eclipse/ui/internal/browser/IBrowserViewerContainer;
+file
+ Ljava/io/File;
+ Ljava/io/File;
+fileListenerThread
+ Ljava/lang/Thread;
+ Ljava/lang/Thread;
+forward
+ Lorg/eclipse/swt/widgets/ToolItem;
+ Lorg/eclipse/swt/widgets/ToolItem;
+locationListener
+ Lorg/eclipse/ui/internal/browser/BrowserViewer$ILocationListener;
+ Lorg/eclipse/ui/internal/browser/BrowserViewer$ILocationListener;
+locationListener2
+ Lorg/eclipse/swt/browser/LocationListener;
+ Lorg/eclipse/swt/browser/LocationListener;
+propertyListeners
+ Ljava/util/List<Ljava/beans/PropertyChangeListener;>;
+ Ljava/util/List<Ljava/beans/PropertyChangeListener;>;
+syncObject
+ Ljava/lang/Object;
+ Ljava/lang/Object;
+text
+ Lorg/eclipse/ui/internal/browser/BrowserText;
+ Lorg/eclipse/ui/internal/browser/BrowserText;
+title
+ Ljava/lang/String;
+ Ljava/lang/String;
+watcher
+ Ljava/nio/file/WatchService;
+ Ljava/nio/file/WatchService;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+addPropertyChangeListener
+ (Ljava/beans/PropertyChangeListener;)V
+ (Ljava/beans/PropertyChangeListener;)V
+addToHistory
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+firePropertyChangeEvent
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+getBrowser
+ ()Lorg/eclipse/swt/browser/Browser;
+ ()Lorg/eclipse/swt/browser/Browser;
+getContainer
+ ()Lorg/eclipse/ui/internal/browser/IBrowserViewerContainer;
+ ()Lorg/eclipse/ui/internal/browser/IBrowserViewerContainer;
+getURL
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+removePropertyChangeListener
+ (Ljava/beans/PropertyChangeListener;)V
+ (Ljava/beans/PropertyChangeListener;)V
+setContainer
+ (Lorg/eclipse/ui/internal/browser/IBrowserViewerContainer;)V
+ (Lorg/eclipse/ui/internal/browser/IBrowserViewerContainer;)V
+setURL
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

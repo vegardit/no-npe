@@ -1,0 +1,47 @@
+class org/eclipse/osgi/internal/permadmin/SecurityAdmin
+
+<init>
+ (Lorg/eclipse/osgi/internal/permadmin/EquinoxSecurityManager;Lorg/eclipse/osgi/storage/PermissionData;)V
+ (Lorg/eclipse/osgi/internal/permadmin/EquinoxSecurityManager;Lorg/eclipse/osgi/storage/PermissionData;)V
+addConditionalPermissionInfo
+ ([Lorg/osgi/service/condpermadmin/ConditionInfo;[Lorg/osgi/service/permissionadmin/PermissionInfo;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+ ([Lorg/osgi/service/condpermadmin/ConditionInfo;[Lorg/osgi/service/permissionadmin/PermissionInfo;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+createProtectionDomain
+ (Lorg/osgi/framework/Bundle;)Ljava/security/ProtectionDomain;
+ (Lorg/osgi/framework/Bundle;)Ljava/security/ProtectionDomain;
+getAccessControlContext
+ ([Ljava/lang/String;)Ljava/security/AccessControlContext;
+ ([Ljava/lang/String;)Ljava/security/AccessControlContext;
+getConditionalPermissionInfo
+ (Ljava/lang/String;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+ (Ljava/lang/String;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+getConditionalPermissionInfos
+ ()Ljava/util/Enumeration<Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;>;
+ ()Ljava/util/Enumeration<Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;>;
+getDefaultPermissions
+ ()[Lorg/osgi/service/permissionadmin/PermissionInfo;
+ ()[Lorg/osgi/service/permissionadmin/PermissionInfo;
+getLocations
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getPermissions
+ (Ljava/lang/String;)[Lorg/osgi/service/permissionadmin/PermissionInfo;
+ (Ljava/lang/String;)[Lorg/osgi/service/permissionadmin/PermissionInfo;
+newConditionalPermissionInfo
+ (Ljava/lang/String;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+ (Ljava/lang/String;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+newConditionalPermissionInfo
+ (Ljava/lang/String;[Lorg/osgi/service/condpermadmin/ConditionInfo;[Lorg/osgi/service/permissionadmin/PermissionInfo;Ljava/lang/String;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+ (Ljava/lang/String;[Lorg/osgi/service/condpermadmin/ConditionInfo;[Lorg/osgi/service/permissionadmin/PermissionInfo;Ljava/lang/String;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+newConditionalPermissionUpdate
+ ()Lorg/osgi/service/condpermadmin/ConditionalPermissionUpdate;
+ ()Lorg/osgi/service/condpermadmin/ConditionalPermissionUpdate;
+setConditionalPermissionInfo
+ (Ljava/lang/String;[Lorg/osgi/service/condpermadmin/ConditionInfo;[Lorg/osgi/service/permissionadmin/PermissionInfo;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+ (Ljava/lang/String;[Lorg/osgi/service/condpermadmin/ConditionInfo;[Lorg/osgi/service/permissionadmin/PermissionInfo;)Lorg/osgi/service/condpermadmin/ConditionalPermissionInfo;
+setDefaultPermissions
+ ([Lorg/osgi/service/permissionadmin/PermissionInfo;)V
+ ([Lorg/osgi/service/permissionadmin/PermissionInfo;)V
+setPermissions
+ (Ljava/lang/String;[Lorg/osgi/service/permissionadmin/PermissionInfo;)V
+ (Ljava/lang/String;[Lorg/osgi/service/permissionadmin/PermissionInfo;)V

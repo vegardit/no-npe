@@ -1,0 +1,26 @@
+class org/eclipse/ui/internal/themes/ThemeRegistryReader
+
+getCategoryDefinitions
+ ()Ljava/util/Collection<Lorg/eclipse/ui/internal/themes/ThemeElementCategory;>;
+ ()Ljava/util/Collection<Lorg/eclipse/ui/internal/themes/ThemeElementCategory;>;
+getColorDefinitions
+ ()Ljava/util/Collection<Lorg/eclipse/ui/internal/themes/ColorDefinition;>;
+ ()Ljava/util/Collection<Lorg/eclipse/ui/internal/themes/ColorDefinition;>;
+getData
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getFontDefinitions
+ ()Ljava/util/Collection<Lorg/eclipse/ui/internal/themes/FontDefinition;>;
+ ()Ljava/util/Collection<Lorg/eclipse/ui/internal/themes/FontDefinition;>;
+readElement
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z
+readTheme
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/internal/themes/ThemeDescriptor;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Lorg/eclipse/ui/internal/themes/ThemeDescriptor;
+readThemes
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;Lorg/eclipse/ui/internal/themes/ThemeRegistry;)V
+ (Lorg/eclipse/core/runtime/IExtensionRegistry;Lorg/eclipse/ui/internal/themes/ThemeRegistry;)V
+setRegistry
+ (Lorg/eclipse/ui/internal/themes/ThemeRegistry;)V
+ (Lorg/eclipse/ui/internal/themes/ThemeRegistry;)V

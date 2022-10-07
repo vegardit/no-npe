@@ -1,0 +1,70 @@
+class org/eclipse/e4/ui/internal/workbench/swt/AbstractPartRenderer
+
+OWNING_ME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+context
+ Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ Lorg/eclipse/e4/core/contexts/IEclipseContext;
+modelService
+ Lorg/eclipse/e4/ui/workbench/modeling/EModelService;
+ Lorg/eclipse/e4/ui/workbench/modeling/EModelService;
+
+activate
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;)V
+bindWidget
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)V
+childRendered
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+createWidget
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)Ljava/lang/Object;
+disposeWidget
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+forceFocus
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+getContext
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getContextForParent
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getImage
+ (Lorg/eclipse/e4/ui/model/application/ui/MUILabel;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUILabel;)Ljava/lang/Object;
+getParentWidget
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Ljava/lang/Object;
+getStyleOverride
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)I
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)I
+getUIContainer
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Ljava/lang/Object;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Ljava/lang/Object;
+hideChild
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+hookControllerLogic
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+init
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+postProcess
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)V
+processContents
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MElementContainer<Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>;)V
+removeGui
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;Ljava/lang/Object;)V
+requiresFocus
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;)Z
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;)Z

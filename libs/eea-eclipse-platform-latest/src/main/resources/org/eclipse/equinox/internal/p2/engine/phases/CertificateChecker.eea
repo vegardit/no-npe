@@ -1,0 +1,39 @@
+class org/eclipse/equinox/internal/p2/engine/phases/CertificateChecker
+
+TRUSTED_CERTIFICATES_PROPERTY
+ Ljava/lang/String;
+ L1java/lang/String;
+TRUSTED_KEY_STORE_PROPERTY
+ Ljava/lang/String;
+ L1java/lang/String;
+TRUST_ALWAYS_PROPERTY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+ (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
+add
+ (Ljava/util/Map<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Ljava/io/File;>;)V
+ (Ljava/util/Map<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Ljava/io/File;>;)V
+getContributedTrustedKeys
+ ()Ljava/util/Map<Lorg/bouncycastle/openpgp/PGPPublicKey;Ljava/util/Set<Lorg/osgi/framework/Bundle;>;>;
+ ()Ljava/util/Map<Lorg/bouncycastle/openpgp/PGPPublicKey;Ljava/util/Set<Lorg/osgi/framework/Bundle;>;>;
+getPreferenceTrustedCertificates
+ ()Ljava/util/Set<+Ljava/security/cert/Certificate;>;
+ ()Ljava/util/Set<+Ljava/security/cert/Certificate;>;
+getPreferenceTrustedKeys
+ ()Lorg/eclipse/equinox/internal/p2/artifact/processors/pgp/PGPPublicKeyStore;
+ ()Lorg/eclipse/equinox/internal/p2/artifact/processors/pgp/PGPPublicKeyStore;
+persistTrustedCertificates
+ (Ljava/util/Collection<+Ljava/security/cert/Certificate;>;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/util/Collection<+Ljava/security/cert/Certificate;>;)Lorg/eclipse/core/runtime/IStatus;
+persistTrustedKeys
+ (Lorg/eclipse/equinox/internal/p2/artifact/processors/pgp/PGPPublicKeyStore;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/internal/p2/artifact/processors/pgp/PGPPublicKeyStore;)Lorg/eclipse/core/runtime/IStatus;
+setProfile
+ (Lorg/eclipse/equinox/p2/engine/IProfile;)V
+ (Lorg/eclipse/equinox/p2/engine/IProfile;)V
+start
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;

@@ -1,0 +1,44 @@
+class org/eclipse/jface/contentassist/IContentAssistSubjectControl
+
+addKeyListener
+ (Lorg/eclipse/swt/events/KeyListener;)V
+ (Lorg/eclipse/swt/events/KeyListener;)V
+addSelectionListener
+ (Lorg/eclipse/swt/events/SelectionListener;)Z
+ (Lorg/eclipse/swt/events/SelectionListener;)Z
+appendVerifyKeyListener
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)Z
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)Z
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getDocument
+ ()Lorg/eclipse/jface/text/IDocument;
+ ()Lorg/eclipse/jface/text/IDocument;
+getLineDelimiter
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLocationAtOffset
+ (I)Lorg/eclipse/swt/graphics/Point;
+ (I)Lorg/eclipse/swt/graphics/Point;
+getSelectedRange
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+getWidgetSelectionRange
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+prependVerifyKeyListener
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)Z
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)Z
+removeKeyListener
+ (Lorg/eclipse/swt/events/KeyListener;)V
+ (Lorg/eclipse/swt/events/KeyListener;)V
+removeSelectionListener
+ (Lorg/eclipse/swt/events/SelectionListener;)V
+ (Lorg/eclipse/swt/events/SelectionListener;)V
+removeVerifyKeyListener
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+setEventConsumer
+ (Lorg/eclipse/jface/text/IEventConsumer;)V
+ (Lorg/eclipse/jface/text/IEventConsumer;)V

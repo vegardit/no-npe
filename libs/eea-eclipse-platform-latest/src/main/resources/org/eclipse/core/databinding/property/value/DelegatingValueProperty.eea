@@ -1,0 +1,36 @@
+class org/eclipse/core/databinding/property/value/DelegatingValueProperty
+ <S:Ljava/lang/Object;T:Ljava/lang/Object;>
+
+<init>
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+doGetDelegate
+ (TS;)Lorg/eclipse/core/databinding/property/value/IValueProperty<TS;TT;>;
+ (TS;)Lorg/eclipse/core/databinding/property/value/IValueProperty<TS;TT;>;
+doGetValue
+ (TS;)TT;
+ (TS;)TT;
+doSetValue
+ (TS;TT;)V
+ (TS;TT;)V
+getDelegate
+ (TS;)Lorg/eclipse/core/databinding/property/value/IValueProperty<TS;TT;>;
+ (TS;)Lorg/eclipse/core/databinding/property/value/IValueProperty<TS;TT;>;
+getValueType
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+observe
+ (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;
+ (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;
+observe
+ (TS;)Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;
+ (TS;)Lorg/eclipse/core/databinding/observable/value/IObservableValue<TT;>;
+observeDetail
+ <K:Ljava/lang/Object;V:TS;>(Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TT;>;
+ <K:Ljava/lang/Object;V:TS;>(Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TT;>;
+observeDetail
+ <U:TS;>(Lorg/eclipse/core/databinding/observable/list/IObservableList<TU;>;)Lorg/eclipse/core/databinding/observable/list/IObservableList<TT;>;
+ <U:TS;>(Lorg/eclipse/core/databinding/observable/list/IObservableList<TU;>;)Lorg/eclipse/core/databinding/observable/list/IObservableList<TT;>;
+observeDetail
+ <U:TS;>(Lorg/eclipse/core/databinding/observable/set/IObservableSet<TU;>;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TU;TT;>;
+ <U:TS;>(Lorg/eclipse/core/databinding/observable/set/IObservableSet<TU;>;)Lorg/eclipse/core/databinding/observable/map/IObservableMap<TU;TT;>;

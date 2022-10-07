@@ -1,0 +1,110 @@
+class org/eclipse/ui/IWorkbench
+
+addWindowListener
+ (Lorg/eclipse/ui/IWindowListener;)V
+ (Lorg/eclipse/ui/IWindowListener;)V
+addWorkbenchListener
+ (Lorg/eclipse/ui/IWorkbenchListener;)V
+ (Lorg/eclipse/ui/IWorkbenchListener;)V
+createLocalWorkingSetManager
+ ()Lorg/eclipse/ui/ILocalWorkingSetManager;
+ ()Lorg/eclipse/ui/ILocalWorkingSetManager;
+getActiveWorkbenchWindow
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+getActivitySupport
+ ()Lorg/eclipse/ui/activities/IWorkbenchActivitySupport;
+ ()Lorg/eclipse/ui/activities/IWorkbenchActivitySupport;
+getBrowserSupport
+ ()Lorg/eclipse/ui/browser/IWorkbenchBrowserSupport;
+ ()Lorg/eclipse/ui/browser/IWorkbenchBrowserSupport;
+getCommandSupport
+ ()Lorg/eclipse/ui/commands/IWorkbenchCommandSupport;
+ ()Lorg/eclipse/ui/commands/IWorkbenchCommandSupport;
+getContextSupport
+ ()Lorg/eclipse/ui/contexts/IWorkbenchContextSupport;
+ ()Lorg/eclipse/ui/contexts/IWorkbenchContextSupport;
+getDecoratorManager
+ ()Lorg/eclipse/ui/IDecoratorManager;
+ ()Lorg/eclipse/ui/IDecoratorManager;
+getDisplay
+ ()Lorg/eclipse/swt/widgets/Display;
+ ()Lorg/eclipse/swt/widgets/Display;
+getEditorRegistry
+ ()Lorg/eclipse/ui/IEditorRegistry;
+ ()Lorg/eclipse/ui/IEditorRegistry;
+getElementFactory
+ (Ljava/lang/String;)Lorg/eclipse/ui/IElementFactory;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IElementFactory;
+getExportWizardRegistry
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+getExtensionTracker
+ ()Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;
+ ()Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;
+getHelpSystem
+ ()Lorg/eclipse/ui/help/IWorkbenchHelpSystem;
+ ()Lorg/eclipse/ui/help/IWorkbenchHelpSystem;
+getImportWizardRegistry
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+getIntroManager
+ ()Lorg/eclipse/ui/intro/IIntroManager;
+ ()Lorg/eclipse/ui/intro/IIntroManager;
+getModalDialogShellProvider
+ ()Lorg/eclipse/jface/window/IShellProvider;
+ ()Lorg/eclipse/jface/window/IShellProvider;
+getNewWizardRegistry
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+ ()Lorg/eclipse/ui/wizards/IWizardRegistry;
+getOperationSupport
+ ()Lorg/eclipse/ui/operations/IWorkbenchOperationSupport;
+ ()Lorg/eclipse/ui/operations/IWorkbenchOperationSupport;
+getPerspectiveRegistry
+ ()Lorg/eclipse/ui/IPerspectiveRegistry;
+ ()Lorg/eclipse/ui/IPerspectiveRegistry;
+getPreferenceManager
+ ()Lorg/eclipse/jface/preference/PreferenceManager;
+ ()Lorg/eclipse/jface/preference/PreferenceManager;
+getPreferenceStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+getProgressService
+ ()Lorg/eclipse/ui/progress/IProgressService;
+ ()Lorg/eclipse/ui/progress/IProgressService;
+getSharedImages
+ ()Lorg/eclipse/ui/ISharedImages;
+ ()Lorg/eclipse/ui/ISharedImages;
+getThemeManager
+ ()Lorg/eclipse/ui/themes/IThemeManager;
+ ()Lorg/eclipse/ui/themes/IThemeManager;
+getViewRegistry
+ ()Lorg/eclipse/ui/views/IViewRegistry;
+ ()Lorg/eclipse/ui/views/IViewRegistry;
+getWorkbenchWindows
+ ()[Lorg/eclipse/ui/IWorkbenchWindow;
+ ()[Lorg/eclipse/ui/IWorkbenchWindow;
+getWorkingSetManager
+ ()Lorg/eclipse/ui/IWorkingSetManager;
+ ()Lorg/eclipse/ui/IWorkingSetManager;
+openWorkbenchWindow
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchWindow;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchWindow;
+openWorkbenchWindow
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchWindow;
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchWindow;
+removeWindowListener
+ (Lorg/eclipse/ui/IWindowListener;)V
+ (Lorg/eclipse/ui/IWindowListener;)V
+removeWorkbenchListener
+ (Lorg/eclipse/ui/IWorkbenchListener;)V
+ (Lorg/eclipse/ui/IWorkbenchListener;)V
+saveAll
+ (Lorg/eclipse/jface/window/IShellProvider;Lorg/eclipse/jface/operation/IRunnableContext;Lorg/eclipse/ui/ISaveableFilter;Z)Z
+ (Lorg/eclipse/jface/window/IShellProvider;Lorg/eclipse/jface/operation/IRunnableContext;Lorg/eclipse/ui/ISaveableFilter;Z)Z
+showPerspective
+ (Ljava/lang/String;Lorg/eclipse/ui/IWorkbenchWindow;)Lorg/eclipse/ui/IWorkbenchPage;
+ (Ljava/lang/String;Lorg/eclipse/ui/IWorkbenchWindow;)Lorg/eclipse/ui/IWorkbenchPage;
+showPerspective
+ (Ljava/lang/String;Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;
+ (Ljava/lang/String;Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;

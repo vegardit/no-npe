@@ -1,0 +1,48 @@
+class org/eclipse/core/runtime/PerformanceStats
+
+addListener
+ (Lorg/eclipse/core/runtime/PerformanceStats$PerformanceListener;)V
+ (Lorg/eclipse/core/runtime/PerformanceStats$PerformanceListener;)V
+getAllStats
+ ()[Lorg/eclipse/core/runtime/PerformanceStats;
+ ()[Lorg/eclipse/core/runtime/PerformanceStats;
+getStats
+ (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/core/runtime/PerformanceStats;
+ (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/core/runtime/PerformanceStats;
+isEnabled
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+printStats
+ (Ljava/io/PrintWriter;)V
+ (Ljava/io/PrintWriter;)V
+removeListener
+ (Lorg/eclipse/core/runtime/PerformanceStats$PerformanceListener;)V
+ (Lorg/eclipse/core/runtime/PerformanceStats$PerformanceListener;)V
+removeStats
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+
+addRun
+ (JLjava/lang/String;)V
+ (JLjava/lang/String;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+getBlame
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getBlameString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getContext
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getEvent
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+startRun
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

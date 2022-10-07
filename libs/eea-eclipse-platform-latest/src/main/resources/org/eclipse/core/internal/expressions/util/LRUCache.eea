@@ -1,0 +1,63 @@
+class org/eclipse/core/internal/expressions/util/LRUCache
+
+fEntryQueue
+ Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;
+ Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;
+fEntryQueueTail
+ Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;
+ Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;
+fEntryTable
+ Ljava/util/Hashtable<Ljava/lang/Object;Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;>;
+ Ljava/util/Hashtable<Ljava/lang/Object;Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;>;
+
+clone
+ ()Ljava/lang/Object;
+ ()L1java/lang/Object;
+flush
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+get
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+keys
+ ()Ljava/util/Enumeration<Ljava/lang/Object;>;
+ ()Ljava/util/Enumeration<Ljava/lang/Object;>;
+newInstance
+ (I)Lorg/eclipse/core/internal/expressions/util/LRUCache;
+ (I)Lorg/eclipse/core/internal/expressions/util/LRUCache;
+peek
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+privateAdd
+ (Ljava/lang/Object;Ljava/lang/Object;I)V
+ (Ljava/lang/Object;Ljava/lang/Object;I)V
+privateAddEntry
+ (Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;Z)V
+ (Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;Z)V
+privateNotifyDeletionFromCache
+ (Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;)V
+ (Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;)V
+privateRemoveEntry
+ (Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;Z)V
+ (Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;Z)V
+put
+ (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+removeKey
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+spaceFor
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+toStringContents
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+toStringFillingRation
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+updateTimestamp
+ (Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;)V
+ (Lorg/eclipse/core/internal/expressions/util/LRUCache$LRUCacheEntry;)V

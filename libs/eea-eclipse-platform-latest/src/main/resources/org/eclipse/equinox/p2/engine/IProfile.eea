@@ -1,0 +1,84 @@
+class org/eclipse/equinox/p2/engine/IProfile
+
+PROP_CACHE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_CONFIGURATION_FOLDER
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_DESCRIPTION
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_ENVIRONMENTS
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_INSTALL_FEATURES
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_INSTALL_FOLDER
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_LAUNCHER_CONFIGURATION
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_NL
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_PROFILE_LOCKED_IU
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_PROFILE_ROOT_IU
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_ROAMING
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_SHARED_CACHE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_STATS_PARAMETERS
+ Ljava/lang/String;
+ L1java/lang/String;
+STATE_PROP_HIDDEN
+ Ljava/lang/String;
+ L1java/lang/String;
+STATE_PROP_SHARED_INSTALL
+ Ljava/lang/String;
+ L1java/lang/String;
+STATE_PROP_TAG
+ Ljava/lang/String;
+ L1java/lang/String;
+STATE_SHARED_INSTALL_VALUE_BEFOREFLUSH
+ Ljava/lang/String;
+ L1java/lang/String;
+STATE_SHARED_INSTALL_VALUE_INITIAL
+ Ljava/lang/String;
+ L1java/lang/String;
+STATE_SHARED_INSTALL_VALUE_NEW
+ Ljava/lang/String;
+ L1java/lang/String;
+
+available
+ (Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryResult<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Lorg/eclipse/equinox/p2/query/IQuery<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryResult<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+getInstallableUnitProperties
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getInstallableUnitProperty
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;Ljava/lang/String;)Ljava/lang/String;
+getProfileId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProperties
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getProvisioningAgent
+ ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
+ ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;

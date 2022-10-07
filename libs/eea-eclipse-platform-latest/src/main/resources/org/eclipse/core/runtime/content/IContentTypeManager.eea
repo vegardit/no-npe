@@ -1,0 +1,27 @@
+class org/eclipse/core/runtime/content/IContentTypeManager
+
+CT_TEXT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addContentType
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/content/IContentType;)Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/content/IContentType;)Lorg/eclipse/core/runtime/content/IContentType;
+addContentTypeChangeListener
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$IContentTypeChangeListener;)V
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$IContentTypeChangeListener;)V
+getAllContentTypes
+ ()[Lorg/eclipse/core/runtime/content/IContentType;
+ ()[Lorg/eclipse/core/runtime/content/IContentType;
+getContentType
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/content/IContentType;
+getMatcher
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$ISelectionPolicy;Lorg/eclipse/core/runtime/preferences/IScopeContext;)Lorg/eclipse/core/runtime/content/IContentTypeMatcher;
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$ISelectionPolicy;Lorg/eclipse/core/runtime/preferences/IScopeContext;)Lorg/eclipse/core/runtime/content/IContentTypeMatcher;
+removeContentType
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeContentTypeChangeListener
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$IContentTypeChangeListener;)V
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$IContentTypeChangeListener;)V

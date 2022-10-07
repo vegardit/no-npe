@@ -1,0 +1,40 @@
+class org/eclipse/e4/ui/internal/workbench/Activator
+
+PI_WORKBENCH
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getDefault
+ ()Lorg/eclipse/e4/ui/internal/workbench/Activator;
+ ()Lorg/eclipse/e4/ui/internal/workbench/Activator;
+log
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V
+log
+ (ILjava/lang/String;Ljava/lang/Throwable;)V
+ (ILjava/lang/String;Ljava/lang/Throwable;)V
+trace
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+getBundleForName
+ (Ljava/lang/String;)Lorg/osgi/framework/Bundle;
+ (Ljava/lang/String;)Lorg/osgi/framework/Bundle;
+getContext
+ ()Lorg/osgi/framework/BundleContext;
+ ()Lorg/osgi/framework/BundleContext;
+getLogService
+ ()Lorg/osgi/service/log/LogService;
+ ()Lorg/osgi/service/log/LogService;
+getTrace
+ ()Lorg/eclipse/osgi/service/debug/DebugTrace;
+ ()Lorg/eclipse/osgi/service/debug/DebugTrace;
+optionsChanged
+ (Lorg/eclipse/osgi/service/debug/DebugOptions;)V
+ (Lorg/eclipse/osgi/service/debug/DebugOptions;)V
+start
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V
+stop
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V

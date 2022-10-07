@@ -1,0 +1,36 @@
+class org/eclipse/core/internal/localstore/Bucket
+
+projectName
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+accept
+ (Lorg/eclipse/core/internal/localstore/Bucket$Visitor;Lorg/eclipse/core/runtime/IPath;I)I
+ (Lorg/eclipse/core/internal/localstore/Bucket$Visitor;Lorg/eclipse/core/runtime/IPath;I)I
+createEntry
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)Lorg/eclipse/core/internal/localstore/Bucket$Entry;
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)Lorg/eclipse/core/internal/localstore/Bucket$Entry;
+getEntryValue
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getIndexFileName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getVersionFileName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+load
+ (Ljava/lang/String;Ljava/io/File;)V
+ (Ljava/lang/String;Ljava/io/File;)V
+load
+ (Ljava/lang/String;Ljava/io/File;Z)V
+ (Ljava/lang/String;Ljava/io/File;Z)V
+readEntryValue
+ (Ljava/io/DataInputStream;)Ljava/lang/Object;
+ (Ljava/io/DataInputStream;)Ljava/lang/Object;
+setEntryValue
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+writeEntryValue
+ (Ljava/io/DataOutputStream;Ljava/lang/Object;)V
+ (Ljava/io/DataOutputStream;Ljava/lang/Object;)V

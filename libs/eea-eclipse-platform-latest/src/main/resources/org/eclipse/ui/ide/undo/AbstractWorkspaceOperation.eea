@@ -1,0 +1,75 @@
+class org/eclipse/ui/ide/undo/AbstractWorkspaceOperation
+
+resources
+ [Lorg/eclipse/core/resources/IResource;
+ [Lorg/eclipse/core/resources/IResource;
+
+aboutToNotify
+ (Lorg/eclipse/core/commands/operations/OperationHistoryEvent;)V
+ (Lorg/eclipse/core/commands/operations/OperationHistoryEvent;)V
+appendDescriptiveText
+ (Ljava/lang/StringBuffer;)V
+ (Ljava/lang/StringBuffer;)V
+computeExecutionStatus
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+computeRedoableStatus
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+computeUndoableStatus
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+doExecute
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
+doUndo
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
+execute
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+getAffectedObjects
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+getErrorStatus
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+getExecuteSchedulingRule
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getRedoSchedulingRule
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getShell
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/swt/widgets/Shell;
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/swt/widgets/Shell;
+getUndoSchedulingRule
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getWarningStatus
+ (Ljava/lang/String;I)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;I)Lorg/eclipse/core/runtime/IStatus;
+getWorkspace
+ ()Lorg/eclipse/core/resources/IWorkspace;
+ ()Lorg/eclipse/core/resources/IWorkspace;
+getWorkspaceRuleFactory
+ ()Lorg/eclipse/core/resources/IResourceRuleFactory;
+ ()Lorg/eclipse/core/resources/IResourceRuleFactory;
+redo
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+setModelProviderIds
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setTargetResources
+ ([Lorg/eclipse/core/resources/IResource;)V
+ ([Lorg/eclipse/core/resources/IResource;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+undo
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
+updateResourceChangeDescriptionFactory
+ (Lorg/eclipse/core/resources/mapping/IResourceChangeDescriptionFactory;I)Z
+ (Lorg/eclipse/core/resources/mapping/IResourceChangeDescriptionFactory;I)Z

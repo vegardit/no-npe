@@ -1,0 +1,42 @@
+class org/eclipse/core/internal/resources/AliasManager
+
+aliasedProjects
+ Ljava/util/Set<Lorg/eclipse/core/resources/IResource;>;
+ Ljava/util/Set<Lorg/eclipse/core/resources/IResource;>;
+aliases
+ Ljava/util/HashSet<Lorg/eclipse/core/resources/IResource;>;
+ Ljava/util/HashSet<Lorg/eclipse/core/resources/IResource;>;
+locationsMap
+ Lorg/eclipse/core/internal/resources/AliasManager$LocationMap;
+ Lorg/eclipse/core/internal/resources/AliasManager$LocationMap;
+suffix
+ Lorg/eclipse/core/runtime/IPath;
+ Lorg/eclipse/core/runtime/IPath;
+workspace
+ Lorg/eclipse/core/internal/resources/Workspace;
+ Lorg/eclipse/core/internal/resources/Workspace;
+
+<init>
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+computeAliases
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/filesystem/IFileStore;)[Lorg/eclipse/core/resources/IResource;
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/filesystem/IFileStore;)[Lorg/eclipse/core/resources/IResource;
+findResources
+ (Lorg/eclipse/core/filesystem/IFileStore;)[Lorg/eclipse/core/resources/IResource;
+ (Lorg/eclipse/core/filesystem/IFileStore;)[Lorg/eclipse/core/resources/IResource;
+handleEvent
+ (Lorg/eclipse/core/internal/events/LifecycleEvent;)V
+ (Lorg/eclipse/core/internal/events/LifecycleEvent;)V
+resourceChanged
+ (Lorg/eclipse/core/resources/IResourceChangeEvent;)V
+ (Lorg/eclipse/core/resources/IResourceChangeEvent;)V
+shutdown
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+startup
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+updateAliases
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V

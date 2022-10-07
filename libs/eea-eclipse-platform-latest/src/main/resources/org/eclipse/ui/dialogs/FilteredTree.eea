@@ -1,0 +1,97 @@
+class org/eclipse/ui/dialogs/FilteredTree
+
+getBoldFont
+ (Ljava/lang/Object;Lorg/eclipse/ui/dialogs/FilteredTree;Lorg/eclipse/ui/dialogs/PatternFilter;)Lorg/eclipse/swt/graphics/Font;
+ (Ljava/lang/Object;Lorg/eclipse/ui/dialogs/FilteredTree;Lorg/eclipse/ui/dialogs/PatternFilter;)Lorg/eclipse/swt/graphics/Font;
+
+clearButtonControl
+ Lorg/eclipse/swt/widgets/Control;
+ Lorg/eclipse/swt/widgets/Control;
+filterComposite
+ Lorg/eclipse/swt/widgets/Composite;
+ Lorg/eclipse/swt/widgets/Composite;
+filterText
+ Lorg/eclipse/swt/widgets/Text;
+ Lorg/eclipse/swt/widgets/Text;
+filterToolBar
+ Lorg/eclipse/jface/action/ToolBarManager;
+ Lorg/eclipse/jface/action/ToolBarManager;
+initialText
+ Ljava/lang/String;
+ Ljava/lang/String;
+parent
+ Lorg/eclipse/swt/widgets/Composite;
+ Lorg/eclipse/swt/widgets/Composite;
+treeComposite
+ Lorg/eclipse/swt/widgets/Composite;
+ Lorg/eclipse/swt/widgets/Composite;
+treeViewer
+ Lorg/eclipse/jface/viewers/TreeViewer;
+ Lorg/eclipse/jface/viewers/TreeViewer;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;)V
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;Z)V
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;Z)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;ZZ)V
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;ZZ)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;Z)V
+ (Lorg/eclipse/swt/widgets/Composite;Z)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;ZZ)V
+ (Lorg/eclipse/swt/widgets/Composite;ZZ)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createFilterControls
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+createFilterText
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createTreeControl
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/widgets/Control;
+doCreateFilterText
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
+doCreateRefreshJob
+ ()Lorg/eclipse/ui/progress/WorkbenchJob;
+ ()Lorg/eclipse/ui/progress/WorkbenchJob;
+doCreateTreeViewer
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/jface/viewers/TreeViewer;
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/jface/viewers/TreeViewer;
+getFilterControl
+ ()Lorg/eclipse/swt/widgets/Text;
+ ()Lorg/eclipse/swt/widgets/Text;
+getFilterString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInitialText
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPatternFilter
+ ()Lorg/eclipse/ui/dialogs/PatternFilter;
+ ()Lorg/eclipse/ui/dialogs/PatternFilter;
+getViewer
+ ()Lorg/eclipse/jface/viewers/TreeViewer;
+ ()Lorg/eclipse/jface/viewers/TreeViewer;
+init
+ (ILorg/eclipse/ui/dialogs/PatternFilter;)V
+ (ILorg/eclipse/ui/dialogs/PatternFilter;)V
+setBackground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setFilterText
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setInitialText
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

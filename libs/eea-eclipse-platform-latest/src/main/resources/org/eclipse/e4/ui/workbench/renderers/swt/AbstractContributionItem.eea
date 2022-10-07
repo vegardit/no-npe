@@ -1,0 +1,91 @@
+class org/eclipse/e4/ui/workbench/renderers/swt/AbstractContributionItem
+
+DISABLED_URI
+ Ljava/lang/String;
+ L1java/lang/String;
+DISPOSABLE
+ Ljava/lang/String;
+ L1java/lang/String;
+FORCE_TEXT
+ Ljava/lang/String;
+ L1java/lang/String;
+ICON_URI
+ Ljava/lang/String;
+ L1java/lang/String;
+
+helpService
+ Lorg/eclipse/e4/ui/services/help/EHelpService;
+ Lorg/eclipse/e4/ui/services/help/EHelpService;
+localResourceManager
+ Lorg/eclipse/jface/resource/LocalResourceManager;
+ Lorg/eclipse/jface/resource/LocalResourceManager;
+logger
+ Lorg/eclipse/e4/core/services/log/Logger;
+ Lorg/eclipse/e4/core/services/log/Logger;
+menuItemListener
+ Lorg/eclipse/swt/widgets/Listener;
+ Lorg/eclipse/swt/widgets/Listener;
+menuListener
+ Lorg/eclipse/jface/action/IMenuListener;
+ Lorg/eclipse/jface/action/IMenuListener;
+widget
+ Lorg/eclipse/swt/widgets/Widget;
+ Lorg/eclipse/swt/widgets/Widget;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+canExecuteItem
+ (Lorg/eclipse/swt/widgets/Event;)Z
+ (Lorg/eclipse/swt/widgets/Event;)Z
+dropdownEvent
+ (Lorg/eclipse/swt/widgets/Event;)Z
+ (Lorg/eclipse/swt/widgets/Event;)Z
+executeItem
+ (Lorg/eclipse/swt/widgets/Event;)V
+ (Lorg/eclipse/swt/widgets/Event;)V
+fill
+ (Lorg/eclipse/swt/widgets/Menu;I)V
+ (Lorg/eclipse/swt/widgets/Menu;I)V
+fill
+ (Lorg/eclipse/swt/widgets/ToolBar;I)V
+ (Lorg/eclipse/swt/widgets/ToolBar;I)V
+getContext
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getContextForParent
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ (Lorg/eclipse/e4/ui/model/application/ui/MUIElement;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getImage
+ (Ljava/lang/String;Lorg/eclipse/jface/resource/LocalResourceManager;)Lorg/eclipse/swt/graphics/Image;
+ (Ljava/lang/String;Lorg/eclipse/jface/resource/LocalResourceManager;)Lorg/eclipse/swt/graphics/Image;
+getItemListener
+ ()Lorg/eclipse/swt/widgets/Listener;
+ ()Lorg/eclipse/swt/widgets/Listener;
+getMenu
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Lorg/eclipse/swt/widgets/ToolItem;)Lorg/eclipse/swt/widgets/Menu;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenu;Lorg/eclipse/swt/widgets/ToolItem;)Lorg/eclipse/swt/widgets/Menu;
+getModel
+ ()Lorg/eclipse/e4/ui/model/application/ui/menu/MItem;
+ ()Lorg/eclipse/e4/ui/model/application/ui/menu/MItem;
+getUpdater
+ ()Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolItemUpdater;
+ ()Lorg/eclipse/e4/ui/workbench/renderers/swt/ToolItemUpdater;
+getWidget
+ ()Lorg/eclipse/swt/widgets/Widget;
+ ()Lorg/eclipse/swt/widgets/Widget;
+handleWidgetDispose
+ (Lorg/eclipse/swt/widgets/Event;)V
+ (Lorg/eclipse/swt/widgets/Event;)V
+handleWidgetSelection
+ (Lorg/eclipse/swt/widgets/Event;)V
+ (Lorg/eclipse/swt/widgets/Event;)V
+setModel
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MItem;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MItem;)V
+setParent
+ (Lorg/eclipse/jface/action/IContributionManager;)V
+ (Lorg/eclipse/jface/action/IContributionManager;)V
+update
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

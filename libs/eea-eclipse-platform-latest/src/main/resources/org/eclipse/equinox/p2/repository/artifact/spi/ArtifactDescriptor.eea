@@ -1,0 +1,67 @@
+class org/eclipse/equinox/p2/repository/artifact/spi/ArtifactDescriptor
+
+MEMBER_ARTIFACT_KEY
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_PROCESSING_STEPS
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_PROPERTIES
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMBER_REPOSITORY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+key
+ Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
+ Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
+processingSteps
+ [Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;
+ [Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;
+properties
+ Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+
+<init>
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)V
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)V
+<init>
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+addProperties
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+getArtifactKey
+ ()Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
+ ()Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
+getMember
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getProcessingSteps
+ ()[Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;
+ ()[Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;
+getProperties
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getRepository
+ ()Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+ ()Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;
+setProcessingSteps
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;)V
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;)V
+setProperty
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+setRepository
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;)V
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

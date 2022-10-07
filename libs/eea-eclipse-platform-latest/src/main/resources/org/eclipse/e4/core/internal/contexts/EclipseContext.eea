@@ -1,0 +1,173 @@
+class org/eclipse/e4/core/internal/contexts/EclipseContext
+
+ACTIVE_CHILD
+ Ljava/lang/String;
+ L1java/lang/String;
+ANONYMOUS_CONTEXT_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+DEBUG_STRING
+ Ljava/lang/String;
+ L1java/lang/String;
+PARENT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getCalculatedComputations
+ ()Ljava/util/Stack<Lorg/eclipse/e4/core/internal/contexts/Computation;>;
+ ()Ljava/util/Stack<Lorg/eclipse/e4/core/internal/contexts/Computation;>;
+
+localValues
+ Lorg/eclipse/e4/core/internal/contexts/ConcurrentNeutralValueMap<Ljava/lang/String;Ljava/lang/Object;>;
+ Lorg/eclipse/e4/core/internal/contexts/ConcurrentNeutralValueMap<Ljava/lang/String;Ljava/lang/Object;>;
+
+<init>
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+addDependency
+ (Ljava/lang/String;Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+ (Ljava/lang/String;Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+addWaiting
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+cachedCachedContextFunctions
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+containsKey
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+containsKey
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+containsKey
+ (Ljava/lang/String;Z)Z
+ (Ljava/lang/String;Z)Z
+createChild
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+createChild
+ (Ljava/lang/String;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ (Ljava/lang/String;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+declareModifiable
+ (Ljava/lang/Class<*>;)V
+ (Ljava/lang/Class<*>;)V
+declareModifiable
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+get
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+get
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getActive
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getActive
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getActiveChild
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getActiveLeaf
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getChildren
+ ()Ljava/lang/Iterable<Lorg/eclipse/e4/core/internal/contexts/EclipseContext;>;
+ ()Ljava/lang/Iterable<Lorg/eclipse/e4/core/internal/contexts/EclipseContext;>;
+getListeners
+ ()Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/Computation;>;
+ ()Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/Computation;>;
+getListeners
+ (Ljava/lang/String;)Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/Computation;>;
+ (Ljava/lang/String;)Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/Computation;>;
+getLocal
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getLocal
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getParent
+ ()Lorg/eclipse/e4/core/internal/contexts/EclipseContext;
+ ()Lorg/eclipse/e4/core/internal/contexts/EclipseContext;
+getRawListenerNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getRoot
+ ()Lorg/eclipse/e4/core/internal/contexts/EclipseContext;
+ ()Lorg/eclipse/e4/core/internal/contexts/EclipseContext;
+hasComputation
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)Z
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)Z
+internalGet
+ (Lorg/eclipse/e4/core/internal/contexts/EclipseContext;Ljava/lang/String;Z)Ljava/lang/Object;
+ (Lorg/eclipse/e4/core/internal/contexts/EclipseContext;Ljava/lang/String;Z)Ljava/lang/Object;
+internalModify
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/EclipseContext$Scheduled;>;)Z
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/EclipseContext$Scheduled;>;)Z
+invalidate
+ (Ljava/lang/String;ILjava/lang/Object;Ljava/lang/Object;Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/EclipseContext$Scheduled;>;)V
+ (Ljava/lang/String;ILjava/lang/Object;Ljava/lang/Object;Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/EclipseContext$Scheduled;>;)V
+invalidateLocalComputations
+ (Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/EclipseContext$Scheduled;>;)V
+ (Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/EclipseContext$Scheduled;>;)V
+isLocalEquals
+ (Ljava/lang/String;Ljava/lang/Object;)Z
+ (Ljava/lang/String;Ljava/lang/Object;)Z
+localContextFunction
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+localData
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+lookup
+ (Ljava/lang/String;Lorg/eclipse/e4/core/internal/contexts/EclipseContext;)Ljava/lang/Object;
+ (Ljava/lang/String;Lorg/eclipse/e4/core/internal/contexts/EclipseContext;)Ljava/lang/Object;
+modify
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+modify
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;TT;)V
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;TT;)V
+notifyOnDisposal
+ (Lorg/eclipse/e4/core/internal/contexts/IContextDisposalListener;)V
+ (Lorg/eclipse/e4/core/internal/contexts/IContextDisposalListener;)V
+popComputation
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+processScheduled
+ (Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/EclipseContext$Scheduled;>;)V
+ (Ljava/util/Set<Lorg/eclipse/e4/core/internal/contexts/EclipseContext$Scheduled;>;)V
+pushComputation
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+remove
+ (Ljava/lang/Class<*>;)V
+ (Ljava/lang/Class<*>;)V
+remove
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeListenersTo
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+removeRAT
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+ (Lorg/eclipse/e4/core/internal/contexts/Computation;)V
+runAndTrack
+ (Lorg/eclipse/e4/core/contexts/RunAndTrack;)V
+ (Lorg/eclipse/e4/core/contexts/RunAndTrack;)V
+set
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+set
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;TT;)V
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;TT;)V
+setParent
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+trackedWeakReference
+ (Ljava/lang/Object;)Ljava/lang/ref/WeakReference<Ljava/lang/Object;>;
+ (Ljava/lang/Object;)Ljava/lang/ref/WeakReference<Ljava/lang/Object;>;

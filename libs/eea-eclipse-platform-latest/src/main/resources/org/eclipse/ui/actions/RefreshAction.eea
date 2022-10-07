@@ -1,0 +1,36 @@
+class org/eclipse/ui/actions/RefreshAction
+
+ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/jface/window/IShellProvider;)V
+ (Lorg/eclipse/jface/window/IShellProvider;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/swt/widgets/Shell;)V
+createOperation
+ ([Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/jface/operation/IRunnableWithProgress;
+ ([Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/jface/operation/IRunnableWithProgress;
+getOperationMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProblemsMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProblemsTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSelectedResources
+ ()Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;
+ ()Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;
+handleKeyReleased
+ (Lorg/eclipse/swt/events/KeyEvent;)V
+ (Lorg/eclipse/swt/events/KeyEvent;)V
+refreshResource
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+updateSelection
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)Z
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)Z

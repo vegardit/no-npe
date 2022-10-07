@@ -1,0 +1,29 @@
+class org/eclipse/osgi/service/resolver/Resolver
+
+bundleAdded
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)V
+bundleRemoved
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Z)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Z)V
+bundleUpdated
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Lorg/eclipse/osgi/service/resolver/BundleDescription;Z)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Lorg/eclipse/osgi/service/resolver/BundleDescription;Z)V
+getSelectionPolicy
+ ()Ljava/util/Comparator<Lorg/eclipse/osgi/service/resolver/BaseDescription;>;
+ ()Ljava/util/Comparator<Lorg/eclipse/osgi/service/resolver/BaseDescription;>;
+getState
+ ()Lorg/eclipse/osgi/service/resolver/State;
+ ()Lorg/eclipse/osgi/service/resolver/State;
+resolve
+ ([Lorg/eclipse/osgi/service/resolver/BundleDescription;[Ljava/util/Dictionary<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ ([Lorg/eclipse/osgi/service/resolver/BundleDescription;[Ljava/util/Dictionary<Ljava/lang/Object;Ljava/lang/Object;>;)V
+resolveDynamicImport
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Ljava/lang/String;)Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Ljava/lang/String;)Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;
+setSelectionPolicy
+ (Ljava/util/Comparator<Lorg/eclipse/osgi/service/resolver/BaseDescription;>;)V
+ (Ljava/util/Comparator<Lorg/eclipse/osgi/service/resolver/BaseDescription;>;)V
+setState
+ (Lorg/eclipse/osgi/service/resolver/State;)V
+ (Lorg/eclipse/osgi/service/resolver/State;)V

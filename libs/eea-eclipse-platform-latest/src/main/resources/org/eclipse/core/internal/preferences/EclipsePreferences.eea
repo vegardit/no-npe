@@ -1,0 +1,233 @@
+class org/eclipse/core/internal/preferences/EclipsePreferences
+
+DEFAULT_PREFERENCES_DIRNAME
+ Ljava/lang/String;
+ L1java/lang/String;
+DOUBLE_SLASH
+ Ljava/lang/String;
+ L1java/lang/String;
+EMPTY_STRING
+ Ljava/lang/String;
+ L1java/lang/String;
+EMPTY_STRING_ARRAY
+ [Ljava/lang/String;
+ [1Ljava/lang/String;
+PATH_SEPARATOR
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFS_FILE_EXTENSION
+ Ljava/lang/String;
+ L1java/lang/String;
+VERSION_KEY
+ Ljava/lang/String;
+ L1java/lang/String;
+VERSION_VALUE
+ Ljava/lang/String;
+ L1java/lang/String;
+debugPluginName
+ Ljava/lang/String;
+ L1java/lang/String;
+
+convertFromProperties
+ (Lorg/eclipse/core/internal/preferences/EclipsePreferences;Ljava/util/Properties;Z)V
+ (Lorg/eclipse/core/internal/preferences/EclipsePreferences;Ljava/util/Properties;Z)V
+decodePath
+ (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[Ljava/lang/String;
+encodePath
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getSegment
+ (Ljava/lang/String;I)Ljava/lang/String;
+ (Ljava/lang/String;I)Ljava/lang/String;
+getSegmentCount
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+loadProperties
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/util/Properties;
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/util/Properties;
+log
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V
+makeRelative
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+removeTimestampFromTable
+ (Ljava/util/Properties;)Ljava/lang/String;
+ (Ljava/util/Properties;)Ljava/lang/String;
+
+children
+ Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+name
+ Ljava/lang/String;
+ Ljava/lang/String;
+parent
+ Lorg/eclipse/core/internal/preferences/EclipsePreferences;
+ Lorg/eclipse/core/internal/preferences/EclipsePreferences;
+properties
+ Lorg/eclipse/core/internal/preferences/ImmutableMap;
+ Lorg/eclipse/core/internal/preferences/ImmutableMap;
+
+<init>
+ (Lorg/eclipse/core/internal/preferences/EclipsePreferences;Ljava/lang/String;)V
+ (Lorg/eclipse/core/internal/preferences/EclipsePreferences;Ljava/lang/String;)V
+absolutePath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+accept
+ (Lorg/eclipse/core/runtime/preferences/IPreferenceNodeVisitor;)V
+ (Lorg/eclipse/core/runtime/preferences/IPreferenceNodeVisitor;)V
+addChild
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+addNodeChangeListener
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+addPreferenceChangeListener
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+childExists
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+childrenNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+computeChildren
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/util/List<Ljava/lang/String;>;
+computeLocation
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)Lorg/eclipse/core/runtime/IPath;
+convertToProperties
+ (Ljava/util/Properties;Ljava/lang/String;)Ljava/util/Properties;
+ (Ljava/util/Properties;Ljava/lang/String;)Ljava/util/Properties;
+create
+ (Lorg/eclipse/core/internal/preferences/EclipsePreferences;Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ (Lorg/eclipse/core/internal/preferences/EclipsePreferences;Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+create
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;Ljava/lang/String;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;Ljava/lang/String;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+fireNodeEvent
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$NodeChangeEvent;Z)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$NodeChangeEvent;Z)V
+firePreferenceEvent
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+get
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getBoolean
+ (Ljava/lang/String;Z)Z
+ (Ljava/lang/String;Z)Z
+getByteArray
+ (Ljava/lang/String;[B)[B
+ (Ljava/lang/String;[B)[B
+getChild
+ (Ljava/lang/String;Ljava/lang/Object;Z)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ (Ljava/lang/String;Ljava/lang/Object;Z)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+getDouble
+ (Ljava/lang/String;D)D
+ (Ljava/lang/String;D)D
+getFloat
+ (Ljava/lang/String;F)F
+ (Ljava/lang/String;F)F
+getInt
+ (Ljava/lang/String;I)I
+ (Ljava/lang/String;I)I
+getLoadLevel
+ ()Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ ()Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+getLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getLong
+ (Ljava/lang/String;J)J
+ (Ljava/lang/String;J)J
+internalChildNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+internalCreate
+ (Lorg/eclipse/core/internal/preferences/EclipsePreferences;Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/core/internal/preferences/EclipsePreferences;
+ (Lorg/eclipse/core/internal/preferences/EclipsePreferences;Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/core/internal/preferences/EclipsePreferences;
+internalFlush
+ ()Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ ()Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+internalGet
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+internalNode
+ (Ljava/lang/String;ZLjava/lang/Object;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ (Ljava/lang/String;ZLjava/lang/Object;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+internalPut
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+isAlreadyLoaded
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;)Z
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;)Z
+keys
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+load
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+name
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+node
+ (Ljava/lang/String;)Lorg/osgi/service/prefs/Preferences;
+ (Ljava/lang/String;)Lorg/osgi/service/prefs/Preferences;
+nodeExists
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+parent
+ ()Lorg/osgi/service/prefs/Preferences;
+ ()Lorg/osgi/service/prefs/Preferences;
+put
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+putBoolean
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+putByteArray
+ (Ljava/lang/String;[B)V
+ (Ljava/lang/String;[B)V
+putDouble
+ (Ljava/lang/String;D)V
+ (Ljava/lang/String;D)V
+putFloat
+ (Ljava/lang/String;F)V
+ (Ljava/lang/String;F)V
+putInt
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+putLong
+ (Ljava/lang/String;J)V
+ (Ljava/lang/String;J)V
+remove
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeNode
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+removeNode
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;)V
+removeNodeChangeListener
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$INodeChangeListener;)V
+removePreferenceChangeListener
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$IPreferenceChangeListener;)V
+save
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+shareStrings
+ (Lorg/eclipse/core/internal/preferences/StringPool;)V
+ (Lorg/eclipse/core/internal/preferences/StringPool;)V
+toDeepDebugString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

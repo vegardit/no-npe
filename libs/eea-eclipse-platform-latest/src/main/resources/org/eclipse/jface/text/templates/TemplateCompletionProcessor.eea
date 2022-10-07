@@ -1,0 +1,44 @@
+class org/eclipse/jface/text/templates/TemplateCompletionProcessor
+
+computeCompletionProposals
+ (Lorg/eclipse/jface/text/ITextViewer;I)[Lorg/eclipse/jface/text/contentassist/ICompletionProposal;
+ (Lorg/eclipse/jface/text/ITextViewer;I)[Lorg/eclipse/jface/text/contentassist/ICompletionProposal;
+computeContextInformation
+ (Lorg/eclipse/jface/text/ITextViewer;I)[Lorg/eclipse/jface/text/contentassist/IContextInformation;
+ (Lorg/eclipse/jface/text/ITextViewer;I)[Lorg/eclipse/jface/text/contentassist/IContextInformation;
+createContext
+ (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/templates/TemplateContext;
+ (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/templates/TemplateContext;
+createProposal
+ (Lorg/eclipse/jface/text/templates/Template;Lorg/eclipse/jface/text/templates/TemplateContext;Lorg/eclipse/jface/text/IRegion;I)Lorg/eclipse/jface/text/contentassist/ICompletionProposal;
+ (Lorg/eclipse/jface/text/templates/Template;Lorg/eclipse/jface/text/templates/TemplateContext;Lorg/eclipse/jface/text/IRegion;I)Lorg/eclipse/jface/text/contentassist/ICompletionProposal;
+createProposal
+ (Lorg/eclipse/jface/text/templates/Template;Lorg/eclipse/jface/text/templates/TemplateContext;Lorg/eclipse/jface/text/Region;I)Lorg/eclipse/jface/text/contentassist/ICompletionProposal;
+ (Lorg/eclipse/jface/text/templates/Template;Lorg/eclipse/jface/text/templates/TemplateContext;Lorg/eclipse/jface/text/Region;I)Lorg/eclipse/jface/text/contentassist/ICompletionProposal;
+extractPrefix
+ (Lorg/eclipse/jface/text/ITextViewer;I)Ljava/lang/String;
+ (Lorg/eclipse/jface/text/ITextViewer;I)Ljava/lang/String;
+getCompletionProposalAutoActivationCharacters
+ ()[C
+ ()[C
+getContextInformationAutoActivationCharacters
+ ()[C
+ ()[C
+getContextInformationValidator
+ ()Lorg/eclipse/jface/text/contentassist/IContextInformationValidator;
+ ()Lorg/eclipse/jface/text/contentassist/IContextInformationValidator;
+getContextType
+ (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/templates/TemplateContextType;
+ (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/templates/TemplateContextType;
+getErrorMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getImage
+ (Lorg/eclipse/jface/text/templates/Template;)Lorg/eclipse/swt/graphics/Image;
+ (Lorg/eclipse/jface/text/templates/Template;)Lorg/eclipse/swt/graphics/Image;
+getRelevance
+ (Lorg/eclipse/jface/text/templates/Template;Ljava/lang/String;)I
+ (Lorg/eclipse/jface/text/templates/Template;Ljava/lang/String;)I
+getTemplates
+ (Ljava/lang/String;)[Lorg/eclipse/jface/text/templates/Template;
+ (Ljava/lang/String;)[Lorg/eclipse/jface/text/templates/Template;

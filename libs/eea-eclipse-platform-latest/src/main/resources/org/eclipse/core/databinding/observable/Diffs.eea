@@ -1,0 +1,71 @@
+class org/eclipse/core/databinding/observable/Diffs
+
+computeLazyListDiff
+ <E:Ljava/lang/Object;>(Ljava/util/List<+TE;>;Ljava/util/List<+TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+ <E:Ljava/lang/Object;>(Ljava/util/List<+TE;>;Ljava/util/List<+TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+computeLazyMapDiff
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<+TK;+TV;>;Ljava/util/Map<+TK;+TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<+TK;+TV;>;Ljava/util/Map<+TK;+TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+computeLazySetDiff
+ <E:Ljava/lang/Object;>(Ljava/util/Set<+TE;>;Ljava/util/Set<+TE;>;)Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;
+ <E:Ljava/lang/Object;>(Ljava/util/Set<+TE;>;Ljava/util/Set<+TE;>;)Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;
+computeListDiff
+ <E:Ljava/lang/Object;>(Ljava/util/List<+TE;>;Ljava/util/List<+TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+ <E:Ljava/lang/Object;>(Ljava/util/List<+TE;>;Ljava/util/List<+TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+computeMapDiff
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<+TK;+TV;>;Ljava/util/Map<+TK;+TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<+TK;+TV;>;Ljava/util/Map<+TK;+TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+computeSetDiff
+ <E:Ljava/lang/Object;>(Ljava/util/Set<+TE;>;Ljava/util/Set<+TE;>;)Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;
+ <E:Ljava/lang/Object;>(Ljava/util/Set<+TE;>;Ljava/util/Set<+TE;>;)Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;
+createListDiff
+ <E:Ljava/lang/Object;>(Ljava/util/List<Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+ <E:Ljava/lang/Object;>(Ljava/util/List<Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+createListDiff
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+createListDiff
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+createListDiff
+ <E:Ljava/lang/Object;>([Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+ <E:Ljava/lang/Object;>([Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+createListDiffEntry
+ <E:Ljava/lang/Object;>(IZTE;)Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;
+ <E:Ljava/lang/Object;>(IZTE;)Lorg/eclipse/core/databinding/observable/list/ListDiffEntry<TE;>;
+createMapDiff
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Set<+TK;>;Ljava/util/Set<+TK;>;Ljava/util/Set<+TK;>;Ljava/util/Map<+TK;+TV;>;Ljava/util/Map<+TK;+TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Set<+TK;>;Ljava/util/Set<+TK;>;Ljava/util/Set<+TK;>;Ljava/util/Map<+TK;+TV;>;Ljava/util/Map<+TK;+TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+createMapDiffRemoveAll
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+createMapDiffSingleAdd
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(TK;TV;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(TK;TV;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+createMapDiffSingleChange
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(TK;TV;TV;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(TK;TV;TV;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+createMapDiffSingleRemove
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(TK;TV;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(TK;TV;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+createSetDiff
+ <E:Ljava/lang/Object;>(Ljava/util/Set<+TE;>;Ljava/util/Set<+TE;>;)Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;
+ <E:Ljava/lang/Object;>(Ljava/util/Set<+TE;>;Ljava/util/Set<+TE;>;)Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;
+createValueDiff
+ <T:Ljava/lang/Object;>(TT;TT;)Lorg/eclipse/core/databinding/observable/value/ValueDiff<TT;>;
+ <T:Ljava/lang/Object;>(TT;TT;)Lorg/eclipse/core/databinding/observable/value/ValueDiff<TT;>;
+equals
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+unmodifiableDiff
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/list/ListDiff<+TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/list/ListDiff<+TE;>;)Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;
+unmodifiableDiff
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/set/SetDiff<+TE;>;)Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;
+ <E:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/set/SetDiff<+TE;>;)Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;
+unmodifiableDiff
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/map/MapDiff<+TK;+TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/map/MapDiff<+TK;+TV;>;)Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;
+unmodifiableDiff
+ <V:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/value/ValueDiff<+TV;>;)Lorg/eclipse/core/databinding/observable/value/ValueDiff<TV;>;
+ <V:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/observable/value/ValueDiff<+TV;>;)Lorg/eclipse/core/databinding/observable/value/ValueDiff<TV;>;

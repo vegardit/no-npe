@@ -1,0 +1,385 @@
+class org/eclipse/jface/text/TextViewer
+
+SHIFTING
+ Ljava/lang/String;
+ L1java/lang/String;
+
+fAutoIndentStrategies
+ Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/jface/text/IAutoEditStrategy;>;>;
+ Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/jface/text/IAutoEditStrategy;>;>;
+fDefaultPrefixChars
+ Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+ Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+fDoubleClickStrategies
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/text/ITextDoubleClickStrategy;>;
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/text/ITextDoubleClickStrategy;>;
+fEventConsumer
+ Lorg/eclipse/jface/text/IEventConsumer;
+ Lorg/eclipse/jface/text/IEventConsumer;
+fFindReplaceDocumentAdapter
+ Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
+ Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
+fHoverControlCreator
+ Lorg/eclipse/jface/text/IInformationControlCreator;
+ Lorg/eclipse/jface/text/IInformationControlCreator;
+fHyperlinkDetectors
+ [Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;
+ [Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;
+fHyperlinkManager
+ Lorg/eclipse/jface/text/hyperlink/HyperlinkManager;
+ Lorg/eclipse/jface/text/hyperlink/HyperlinkManager;
+fHyperlinkPresenter
+ Lorg/eclipse/jface/text/hyperlink/IHyperlinkPresenter;
+ Lorg/eclipse/jface/text/hyperlink/IHyperlinkPresenter;
+fIndentChars
+ Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+ Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+fInformationMapping
+ Lorg/eclipse/jface/text/IDocumentInformationMapping;
+ Lorg/eclipse/jface/text/IDocumentInformationMapping;
+fMarkPosition
+ Lorg/eclipse/jface/text/Position;
+ Lorg/eclipse/jface/text/Position;
+fPaintManager
+ Lorg/eclipse/jface/text/PaintManager;
+ Lorg/eclipse/jface/text/PaintManager;
+fPartitioning
+ Ljava/lang/String;
+ Ljava/lang/String;
+fTextHovers
+ Ljava/util/Map<Lorg/eclipse/jface/text/TextViewer$TextHoverKey;Lorg/eclipse/jface/text/ITextHover;>;
+ Ljava/util/Map<Lorg/eclipse/jface/text/TextViewer$TextHoverKey;Lorg/eclipse/jface/text/ITextHover;>;
+fTextInputListeners
+ Ljava/util/List<Lorg/eclipse/jface/text/ITextInputListener;>;
+ Ljava/util/List<Lorg/eclipse/jface/text/ITextInputListener;>;
+fTextListeners
+ Ljava/util/List<Lorg/eclipse/jface/text/ITextListener;>;
+ Ljava/util/List<Lorg/eclipse/jface/text/ITextListener;>;
+fTextPresentationListeners
+ Ljava/util/List<Lorg/eclipse/jface/text/ITextPresentationListener;>;
+ Ljava/util/List<Lorg/eclipse/jface/text/ITextPresentationListener;>;
+fUndoManager
+ Lorg/eclipse/jface/text/IUndoManager;
+ Lorg/eclipse/jface/text/IUndoManager;
+fViewportListeners
+ Ljava/util/List<Lorg/eclipse/jface/text/IViewportListener;>;
+ Ljava/util/List<Lorg/eclipse/jface/text/IViewportListener;>;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+_internalGetVisibleRegion
+ ()Lorg/eclipse/jface/text/IRegion;
+ ()Lorg/eclipse/jface/text/IRegion;
+addPainter
+ (Lorg/eclipse/jface/text/IPainter;)V
+ (Lorg/eclipse/jface/text/IPainter;)V
+addPostSelectionChangedListener
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+addTextInputListener
+ (Lorg/eclipse/jface/text/ITextInputListener;)V
+ (Lorg/eclipse/jface/text/ITextInputListener;)V
+addTextListener
+ (Lorg/eclipse/jface/text/ITextListener;)V
+ (Lorg/eclipse/jface/text/ITextListener;)V
+addTextPresentationListener
+ (Lorg/eclipse/jface/text/ITextPresentationListener;)V
+ (Lorg/eclipse/jface/text/ITextPresentationListener;)V
+addViewportListener
+ (Lorg/eclipse/jface/text/IViewportListener;)V
+ (Lorg/eclipse/jface/text/IViewportListener;)V
+appendVerifyKeyListener
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+changeTextPresentation
+ (Lorg/eclipse/jface/text/TextPresentation;Z)V
+ (Lorg/eclipse/jface/text/TextPresentation;Z)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createDocumentAdapter
+ ()Lorg/eclipse/jface/text/IDocumentAdapter;
+ ()Lorg/eclipse/jface/text/IDocumentAdapter;
+createSlaveDocument
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/IDocument;
+createSlaveDocumentManager
+ ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
+ ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
+createTextWidget
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/custom/StyledText;
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/custom/StyledText;
+customizeDocumentCommand
+ (Lorg/eclipse/jface/text/DocumentCommand;)V
+ (Lorg/eclipse/jface/text/DocumentCommand;)V
+event2ModelRange
+ (Lorg/eclipse/swt/events/VerifyEvent;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/swt/events/VerifyEvent;)Lorg/eclipse/jface/text/IRegion;
+findAndSelect
+ (ILjava/lang/String;ZZZ)I
+ (ILjava/lang/String;ZZZ)I
+findAndSelect
+ (ILjava/lang/String;ZZZZ)I
+ (ILjava/lang/String;ZZZZ)I
+findAndSelectInRange
+ (ILjava/lang/String;ZZZIIZ)I
+ (ILjava/lang/String;ZZZIIZ)I
+fireInputDocumentAboutToBeChanged
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/IDocument;)V
+fireInputDocumentChanged
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/IDocument;)V
+freeSlaveDocument
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getCurrentTextHover
+ ()Lorg/eclipse/jface/text/ITextHover;
+ ()Lorg/eclipse/jface/text/ITextHover;
+getDocument
+ ()Lorg/eclipse/jface/text/IDocument;
+ ()Lorg/eclipse/jface/text/IDocument;
+getDocumentPartitioning
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getExtent
+ (II)Lorg/eclipse/jface/text/IRegion;
+ (II)Lorg/eclipse/jface/text/IRegion;
+getFindReplaceDocumentAdapter
+ ()Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
+ ()Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
+getFindReplaceTarget
+ ()Lorg/eclipse/jface/text/IFindReplaceTarget;
+ ()Lorg/eclipse/jface/text/IFindReplaceTarget;
+getHoverEventLocation
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+getInput
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getLastKnownSelection
+ ()Lorg/eclipse/jface/text/ITextSelection;
+ ()Lorg/eclipse/jface/text/ITextSelection;
+getModelCoverage
+ ()Lorg/eclipse/jface/text/IRegion;
+ ()Lorg/eclipse/jface/text/IRegion;
+getPaintManager
+ ()Lorg/eclipse/jface/text/PaintManager;
+ ()Lorg/eclipse/jface/text/PaintManager;
+getRegisteredSupports
+ ()[Lorg/eclipse/jface/text/IEditingSupport;
+ ()[Lorg/eclipse/jface/text/IEditingSupport;
+getRewriteTarget
+ ()Lorg/eclipse/jface/text/IRewriteTarget;
+ ()Lorg/eclipse/jface/text/IRewriteTarget;
+getSelectedRange
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+getSelection
+ ()Lorg/eclipse/jface/viewers/ISelection;
+ ()Lorg/eclipse/jface/viewers/ISelection;
+getSelectionProvider
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+getSlaveDocumentManager
+ ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
+ ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
+getTextHover
+ (I)Lorg/eclipse/jface/text/ITextHover;
+ (I)Lorg/eclipse/jface/text/ITextHover;
+getTextHover
+ (II)Lorg/eclipse/jface/text/ITextHover;
+ (II)Lorg/eclipse/jface/text/ITextHover;
+getTextHoveringController
+ ()Lorg/eclipse/jface/text/AbstractInformationControlManager;
+ ()Lorg/eclipse/jface/text/AbstractInformationControlManager;
+getTextOperationTarget
+ ()Lorg/eclipse/jface/text/ITextOperationTarget;
+ ()Lorg/eclipse/jface/text/ITextOperationTarget;
+getTextWidget
+ ()Lorg/eclipse/swt/custom/StyledText;
+ ()Lorg/eclipse/swt/custom/StyledText;
+getUndoManager
+ ()Lorg/eclipse/jface/text/IUndoManager;
+ ()Lorg/eclipse/jface/text/IUndoManager;
+getVisibleDocument
+ ()Lorg/eclipse/jface/text/IDocument;
+ ()Lorg/eclipse/jface/text/IDocument;
+getVisibleRegion
+ ()Lorg/eclipse/jface/text/IRegion;
+ ()Lorg/eclipse/jface/text/IRegion;
+getWidthInPixels
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+handleVerifyEvent
+ (Lorg/eclipse/swt/events/VerifyEvent;)V
+ (Lorg/eclipse/swt/events/VerifyEvent;)V
+handleVisibleDocumentAboutToBeChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+handleVisibleDocumentChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+initializeDocumentInformationMapping
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+inputChanged
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+modelRange2ClosestWidgetRange
+ (Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/IRegion;
+modelRange2WidgetRange
+ (Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/IRegion;
+modelRange2WidgetRange
+ (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/IRegion;
+modelSelection2WidgetSelection
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+modelStyleRange2WidgetStyleRange
+ (Lorg/eclipse/swt/custom/StyleRange;)Lorg/eclipse/swt/custom/StyleRange;
+ (Lorg/eclipse/swt/custom/StyleRange;)Lorg/eclipse/swt/custom/StyleRange;
+prependAutoEditStrategy
+ (Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
+prependVerifyKeyListener
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+print
+ (Lorg/eclipse/swt/custom/StyledTextPrintOptions;)V
+ (Lorg/eclipse/swt/custom/StyledTextPrintOptions;)V
+register
+ (Lorg/eclipse/jface/text/IEditingSupport;)V
+ (Lorg/eclipse/jface/text/IEditingSupport;)V
+releaseWidgetToken
+ (Lorg/eclipse/jface/text/IWidgetTokenKeeper;)V
+ (Lorg/eclipse/jface/text/IWidgetTokenKeeper;)V
+removeAutoEditStrategy
+ (Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
+removePainter
+ (Lorg/eclipse/jface/text/IPainter;)V
+ (Lorg/eclipse/jface/text/IPainter;)V
+removePostSelectionChangedListener
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+removeTextHovers
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeTextInputListener
+ (Lorg/eclipse/jface/text/ITextInputListener;)V
+ (Lorg/eclipse/jface/text/ITextInputListener;)V
+removeTextListener
+ (Lorg/eclipse/jface/text/ITextListener;)V
+ (Lorg/eclipse/jface/text/ITextListener;)V
+removeTextPresentationListener
+ (Lorg/eclipse/jface/text/ITextPresentationListener;)V
+ (Lorg/eclipse/jface/text/ITextPresentationListener;)V
+removeVerifyKeyListener
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+ (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+removeViewportListener
+ (Lorg/eclipse/jface/text/IViewportListener;)V
+ (Lorg/eclipse/jface/text/IViewportListener;)V
+requestWidgetToken
+ (Lorg/eclipse/jface/text/IWidgetTokenKeeper;)Z
+ (Lorg/eclipse/jface/text/IWidgetTokenKeeper;)Z
+requestWidgetToken
+ (Lorg/eclipse/jface/text/IWidgetTokenKeeper;I)Z
+ (Lorg/eclipse/jface/text/IWidgetTokenKeeper;I)Z
+selectContentTypePlugin
+ (ILjava/util/Map<Ljava/lang/String;*>;)Ljava/lang/Object;
+ (ILjava/util/Map<Ljava/lang/String;*>;)Ljava/lang/Object;
+setAutoEditStrategies
+ ([Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
+ ([Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
+setAutoIndentStrategy
+ (Lorg/eclipse/jface/text/IAutoIndentStrategy;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/IAutoIndentStrategy;Ljava/lang/String;)V
+setDefaultPrefixes
+ ([Ljava/lang/String;Ljava/lang/String;)V
+ ([Ljava/lang/String;Ljava/lang/String;)V
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;II)V
+ (Lorg/eclipse/jface/text/IDocument;II)V
+setDocumentPartitioning
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setEventConsumer
+ (Lorg/eclipse/jface/text/IEventConsumer;)V
+ (Lorg/eclipse/jface/text/IEventConsumer;)V
+setHoverControlCreator
+ (Lorg/eclipse/jface/text/IInformationControlCreator;)V
+ (Lorg/eclipse/jface/text/IInformationControlCreator;)V
+setHoverEnrichMode
+ (Lorg/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V
+ (Lorg/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V
+setHyperlinkDetectors
+ ([Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;I)V
+ ([Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;I)V
+setHyperlinkPresenter
+ (Lorg/eclipse/jface/text/hyperlink/IHyperlinkPresenter;)V
+ (Lorg/eclipse/jface/text/hyperlink/IHyperlinkPresenter;)V
+setIndentPrefixes
+ ([Ljava/lang/String;Ljava/lang/String;)V
+ ([Ljava/lang/String;Ljava/lang/String;)V
+setInput
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setSelection
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+setTabsToSpacesConverter
+ (Lorg/eclipse/jface/text/IAutoEditStrategy;)V
+ (Lorg/eclipse/jface/text/IAutoEditStrategy;)V
+setTextColor
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setTextColor
+ (Lorg/eclipse/swt/graphics/Color;IIZ)V
+ (Lorg/eclipse/swt/graphics/Color;IIZ)V
+setTextDoubleClickStrategy
+ (Lorg/eclipse/jface/text/ITextDoubleClickStrategy;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/ITextDoubleClickStrategy;Ljava/lang/String;)V
+setTextHover
+ (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;)V
+setTextHover
+ (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;I)V
+ (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;I)V
+setUndoManager
+ (Lorg/eclipse/jface/text/IUndoManager;)V
+ (Lorg/eclipse/jface/text/IUndoManager;)V
+setVisibleDocument
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+unregister
+ (Lorg/eclipse/jface/text/IEditingSupport;)V
+ (Lorg/eclipse/jface/text/IEditingSupport;)V
+updateSlaveDocument
+ (Lorg/eclipse/jface/text/IDocument;II)Z
+ (Lorg/eclipse/jface/text/IDocument;II)Z
+updateTextListeners
+ (Lorg/eclipse/jface/text/TextViewer$WidgetCommand;)V
+ (Lorg/eclipse/jface/text/TextViewer$WidgetCommand;)V
+updateVisibleDocument
+ (Lorg/eclipse/jface/text/IDocument;II)Z
+ (Lorg/eclipse/jface/text/IDocument;II)Z
+validateSelectionRange
+ ([I)V
+ ([I)V
+widgetRange2ModelRange
+ (Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/IRegion;
+widgetSelection2ModelSelection
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;

@@ -1,0 +1,30 @@
+class org/eclipse/equinox/internal/p2/metadata/expression/LambdaExpression
+
+each
+ Lorg/eclipse/equinox/internal/p2/metadata/expression/Variable;
+ Lorg/eclipse/equinox/internal/p2/metadata/expression/Variable;
+
+<init>
+ (Lorg/eclipse/equinox/internal/p2/metadata/expression/Variable;Lorg/eclipse/equinox/internal/p2/metadata/expression/Expression;)V
+ (Lorg/eclipse/equinox/internal/p2/metadata/expression/Variable;Lorg/eclipse/equinox/internal/p2/metadata/expression/Expression;)V
+accept
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpressionVisitor;)Z
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpressionVisitor;)Z
+compareTo
+ (Lorg/eclipse/equinox/internal/p2/metadata/expression/Expression;)I
+ (Lorg/eclipse/equinox/internal/p2/metadata/expression/Expression;)I
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+getItemVariable
+ ()Lorg/eclipse/equinox/internal/p2/metadata/expression/Variable;
+ ()Lorg/eclipse/equinox/internal/p2/metadata/expression/Variable;
+getOperator
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+prolog
+ (Lorg/eclipse/equinox/p2/metadata/expression/IEvaluationContext;)Lorg/eclipse/equinox/p2/metadata/expression/IEvaluationContext;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IEvaluationContext;)Lorg/eclipse/equinox/p2/metadata/expression/IEvaluationContext;
+toString
+ (Ljava/lang/StringBuffer;Lorg/eclipse/equinox/internal/p2/metadata/expression/Variable;)V
+ (Ljava/lang/StringBuffer;Lorg/eclipse/equinox/internal/p2/metadata/expression/Variable;)V

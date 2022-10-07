@@ -1,0 +1,75 @@
+class org/eclipse/osgi/framework/util/SecureAction
+
+createSecureAction
+ ()Ljava/security/PrivilegedAction<Lorg/eclipse/osgi/framework/util/SecureAction;>;
+ ()Ljava/security/PrivilegedAction<Lorg/eclipse/osgi/framework/util/SecureAction;>;
+
+createThread
+ (Ljava/lang/Runnable;Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Thread;
+ (Ljava/lang/Runnable;Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Thread;
+exists
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+forName
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+getAbsoluteFile
+ (Ljava/io/File;)Ljava/io/File;
+ (Ljava/io/File;)Ljava/io/File;
+getCanonicalFile
+ (Ljava/io/File;)Ljava/io/File;
+ (Ljava/io/File;)Ljava/io/File;
+getCanonicalPath
+ (Ljava/io/File;)Ljava/lang/String;
+ (Ljava/io/File;)Ljava/lang/String;
+getContext
+ (Lorg/osgi/framework/Bundle;)Lorg/osgi/framework/BundleContext;
+ (Lorg/osgi/framework/Bundle;)Lorg/osgi/framework/BundleContext;
+getFileInputStream
+ (Ljava/io/File;)Ljava/io/FileInputStream;
+ (Ljava/io/File;)Ljava/io/FileInputStream;
+getFileOutputStream
+ (Ljava/io/File;Z)Ljava/io/FileOutputStream;
+ (Ljava/io/File;Z)Ljava/io/FileOutputStream;
+getLocation
+ (Lorg/osgi/framework/Bundle;)Ljava/lang/String;
+ (Lorg/osgi/framework/Bundle;)Ljava/lang/String;
+getProperties
+ ()Ljava/util/Properties;
+ ()Ljava/util/Properties;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getService
+ <S:Ljava/lang/Object;>(Lorg/osgi/framework/ServiceReference<TS;>;Lorg/osgi/framework/BundleContext;)TS;
+ <S:Ljava/lang/Object;>(Lorg/osgi/framework/ServiceReference<TS;>;Lorg/osgi/framework/BundleContext;)TS;
+getURL
+ (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/net/URLStreamHandler;)Ljava/net/URL;
+ (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/net/URLStreamHandler;)Ljava/net/URL;
+getZipFile
+ (Ljava/io/File;Z)Ljava/util/zip/ZipFile;
+ (Ljava/io/File;Z)Ljava/util/zip/ZipFile;
+isDirectory
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+lastModified
+ (Ljava/io/File;)J
+ (Ljava/io/File;)J
+length
+ (Ljava/io/File;)J
+ (Ljava/io/File;)J
+list
+ (Ljava/io/File;)[Ljava/lang/String;
+ (Ljava/io/File;)[Ljava/lang/String;
+loadSystemClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+mkdirs
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+open
+ (Lorg/osgi/util/tracker/ServiceTracker<**>;)V
+ (Lorg/osgi/util/tracker/ServiceTracker<**>;)V
+start
+ (Lorg/eclipse/osgi/container/Module;[Lorg/eclipse/osgi/container/Module$StartOptions;)V
+ (Lorg/eclipse/osgi/container/Module;[Lorg/eclipse/osgi/container/Module$StartOptions;)V

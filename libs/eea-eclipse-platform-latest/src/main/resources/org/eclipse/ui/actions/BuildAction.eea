@@ -1,0 +1,36 @@
+class org/eclipse/ui/actions/BuildAction
+
+ID_BUILD
+ Ljava/lang/String;
+ L1java/lang/String;
+ID_REBUILD_ALL
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/jface/window/IShellProvider;I)V
+ (Lorg/eclipse/jface/window/IShellProvider;I)V
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;I)V
+ (Lorg/eclipse/swt/widgets/Shell;I)V
+getActionResources
+ ()Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;
+ ()Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;
+getBuildConfigurationsToBuild
+ ()Ljava/util/List<+Lorg/eclipse/core/resources/IBuildConfiguration;>;
+ ()Ljava/util/List<+Lorg/eclipse/core/resources/IBuildConfiguration;>;
+getOperationMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProblemsMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProblemsTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+runInBackground
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;[Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;[Ljava/lang/Object;)V
+updateSelection
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)Z
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)Z

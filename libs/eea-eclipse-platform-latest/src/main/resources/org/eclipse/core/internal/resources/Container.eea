@@ -1,0 +1,65 @@
+class org/eclipse/core/internal/resources/Container
+
+<init>
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/resources/Workspace;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/resources/Workspace;)V
+createFilter
+ (ILorg/eclipse/core/resources/FileInfoMatcherDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/resources/IResourceFilterDescription;
+ (ILorg/eclipse/core/resources/FileInfoMatcherDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/resources/IResourceFilterDescription;
+exists
+ (Lorg/eclipse/core/runtime/IPath;)Z
+ (Lorg/eclipse/core/runtime/IPath;)Z
+findDeletedMembersWithHistory
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IFile;
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IFile;
+findMember
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IResource;
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IResource;
+findMember
+ (Ljava/lang/String;Z)Lorg/eclipse/core/resources/IResource;
+ (Ljava/lang/String;Z)Lorg/eclipse/core/resources/IResource;
+findMember
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IResource;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IResource;
+findMember
+ (Lorg/eclipse/core/runtime/IPath;Z)Lorg/eclipse/core/resources/IResource;
+ (Lorg/eclipse/core/runtime/IPath;Z)Lorg/eclipse/core/resources/IResource;
+getChildren
+ (I)[Lorg/eclipse/core/resources/IResource;
+ (I)[Lorg/eclipse/core/resources/IResource;
+getDefaultCharset
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFile
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IFile;
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IFile;
+getFile
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IFile;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IFile;
+getFilters
+ ()[Lorg/eclipse/core/resources/IResourceFilterDescription;
+ ()[Lorg/eclipse/core/resources/IResourceFilterDescription;
+getFolder
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IFolder;
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IFolder;
+getFolder
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IFolder;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IFolder;
+members
+ ()[Lorg/eclipse/core/resources/IResource;
+ ()[Lorg/eclipse/core/resources/IResource;
+members
+ (I)[Lorg/eclipse/core/resources/IResource;
+ (I)[Lorg/eclipse/core/resources/IResource;
+members
+ (Z)[Lorg/eclipse/core/resources/IResource;
+ (Z)[Lorg/eclipse/core/resources/IResource;
+removeFilter
+ (Lorg/eclipse/core/resources/IResourceFilterDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IResourceFilterDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+setDefaultCharset
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDefaultCharset
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)V

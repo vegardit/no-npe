@@ -1,0 +1,21 @@
+class org/eclipse/osgi/internal/log/ExtendedLogReaderServiceFactory
+
+setErrorStream
+ (Ljava/io/PrintStream;)V
+ (Ljava/io/PrintStream;)V
+
+<init>
+ (ILorg/osgi/service/log/LogLevel;)V
+ (ILorg/osgi/service/log/LogLevel;)V
+getDefaultLogLevel
+ ()Lorg/osgi/service/log/LogLevel;
+ ()Lorg/osgi/service/log/LogLevel;
+getService
+ (Lorg/osgi/framework/Bundle;Lorg/osgi/framework/ServiceRegistration<Lorg/eclipse/osgi/internal/log/ExtendedLogReaderServiceImpl;>;)Lorg/eclipse/osgi/internal/log/ExtendedLogReaderServiceImpl;
+ (Lorg/osgi/framework/Bundle;Lorg/osgi/framework/ServiceRegistration<Lorg/eclipse/osgi/internal/log/ExtendedLogReaderServiceImpl;>;)Lorg/eclipse/osgi/internal/log/ExtendedLogReaderServiceImpl;
+start
+ (Lorg/eclipse/osgi/internal/framework/EquinoxContainer;)V
+ (Lorg/eclipse/osgi/internal/framework/EquinoxContainer;)V
+ungetService
+ (Lorg/osgi/framework/Bundle;Lorg/osgi/framework/ServiceRegistration<Lorg/eclipse/osgi/internal/log/ExtendedLogReaderServiceImpl;>;Lorg/eclipse/osgi/internal/log/ExtendedLogReaderServiceImpl;)V
+ (Lorg/osgi/framework/Bundle;Lorg/osgi/framework/ServiceRegistration<Lorg/eclipse/osgi/internal/log/ExtendedLogReaderServiceImpl;>;Lorg/eclipse/osgi/internal/log/ExtendedLogReaderServiceImpl;)V

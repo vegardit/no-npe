@@ -1,0 +1,78 @@
+class org/eclipse/e4/core/contexts/IEclipseContext
+
+PROPERTY_CONTEXT
+ Ljava/lang/String;
+ L1java/lang/String;
+TOPIC_DISPOSE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+containsKey
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+containsKey
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+createChild
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+createChild
+ (Ljava/lang/String;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ (Ljava/lang/String;)Lorg/eclipse/e4/core/contexts/IEclipseContext;
+declareModifiable
+ (Ljava/lang/Class<*>;)V
+ (Ljava/lang/Class<*>;)V
+declareModifiable
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+get
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+get
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getActive
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getActive
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getActiveChild
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getActiveLeaf
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getLocal
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getLocal
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getParent
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+modify
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+modify
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;TT;)V
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;TT;)V
+remove
+ (Ljava/lang/Class<*>;)V
+ (Ljava/lang/Class<*>;)V
+remove
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+runAndTrack
+ (Lorg/eclipse/e4/core/contexts/RunAndTrack;)V
+ (Lorg/eclipse/e4/core/contexts/RunAndTrack;)V
+set
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+set
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;TT;)V
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;TT;)V
+setParent
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V
+ (Lorg/eclipse/e4/core/contexts/IEclipseContext;)V

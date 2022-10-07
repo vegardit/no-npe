@@ -1,0 +1,66 @@
+class org/eclipse/swt/ole/win32/OleClientSite
+
+appClsid
+ Lorg/eclipse/swt/internal/ole/win32/GUID;
+ Lorg/eclipse/swt/internal/ole/win32/GUID;
+frame
+ Lorg/eclipse/swt/ole/win32/OleFrame;
+ Lorg/eclipse/swt/ole/win32/OleFrame;
+objDocumentView
+ Lorg/eclipse/swt/internal/ole/win32/IOleDocumentView;
+ Lorg/eclipse/swt/internal/ole/win32/IOleDocumentView;
+objIOleCommandTarget
+ Lorg/eclipse/swt/internal/ole/win32/IOleCommandTarget;
+ Lorg/eclipse/swt/internal/ole/win32/IOleCommandTarget;
+objIOleInPlaceObject
+ Lorg/eclipse/swt/internal/ole/win32/IOleInPlaceObject;
+ Lorg/eclipse/swt/internal/ole/win32/IOleInPlaceObject;
+objIOleObject
+ Lorg/eclipse/swt/internal/ole/win32/IOleObject;
+ Lorg/eclipse/swt/internal/ole/win32/IOleObject;
+objIUnknown
+ Lorg/eclipse/swt/internal/ole/win32/IUnknown;
+ Lorg/eclipse/swt/internal/ole/win32/IUnknown;
+objIViewObject2
+ Lorg/eclipse/swt/internal/ole/win32/IViewObject2;
+ Lorg/eclipse/swt/internal/ole/win32/IViewObject2;
+tempStorage
+ Lorg/eclipse/swt/internal/ole/win32/IStorage;
+ Lorg/eclipse/swt/internal/ole/win32/IStorage;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;ILjava/io/File;)V
+ (Lorg/eclipse/swt/widgets/Composite;ILjava/io/File;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;ILjava/lang/String;)V
+ (Lorg/eclipse/swt/widgets/Composite;ILjava/lang/String;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;ILjava/lang/String;Ljava/io/File;)V
+ (Lorg/eclipse/swt/widgets/Composite;ILjava/lang/String;Ljava/io/File;)V
+createTempStorage
+ ()Lorg/eclipse/swt/internal/ole/win32/IStorage;
+ ()Lorg/eclipse/swt/internal/ole/win32/IStorage;
+exec
+ (IILorg/eclipse/swt/ole/win32/Variant;Lorg/eclipse/swt/ole/win32/Variant;)I
+ (IILorg/eclipse/swt/ole/win32/Variant;Lorg/eclipse/swt/ole/win32/Variant;)I
+getClassID
+ (Ljava/lang/String;)Lorg/eclipse/swt/internal/ole/win32/GUID;
+ (Ljava/lang/String;)Lorg/eclipse/swt/internal/ole/win32/GUID;
+getIndent
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+getProgramID
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+save
+ (Ljava/io/File;Z)Z
+ (Ljava/io/File;Z)Z
+setIndent
+ (Lorg/eclipse/swt/graphics/Rectangle;)V
+ (Lorg/eclipse/swt/graphics/Rectangle;)V
+showProperties
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

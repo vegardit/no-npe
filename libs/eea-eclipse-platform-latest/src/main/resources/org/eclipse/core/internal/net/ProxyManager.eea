@@ -1,0 +1,54 @@
+class org/eclipse/core/internal/net/ProxyManager
+
+getProxyManager
+ ()Lorg/eclipse/core/net/proxy/IProxyService;
+ ()Lorg/eclipse/core/net/proxy/IProxyService;
+tryGetURI
+ (Ljava/lang/String;)Ljava/net/URI;
+ (Ljava/lang/String;)Ljava/net/URI;
+
+addProxyChangeListener
+ (Lorg/eclipse/core/net/proxy/IProxyChangeListener;)V
+ (Lorg/eclipse/core/net/proxy/IProxyChangeListener;)V
+getNativeNonProxiedHosts
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getNativeProxyData
+ ()[Lorg/eclipse/core/net/proxy/IProxyData;
+ ()[Lorg/eclipse/core/net/proxy/IProxyData;
+getNonProxiedHosts
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getProxyData
+ ()[Lorg/eclipse/core/net/proxy/IProxyData;
+ ()[Lorg/eclipse/core/net/proxy/IProxyData;
+getProxyData
+ (Ljava/lang/String;)Lorg/eclipse/core/net/proxy/IProxyData;
+ (Ljava/lang/String;)Lorg/eclipse/core/net/proxy/IProxyData;
+getProxyDataForHost
+ (Ljava/lang/String;)[Lorg/eclipse/core/net/proxy/IProxyData;
+ (Ljava/lang/String;)[Lorg/eclipse/core/net/proxy/IProxyData;
+getProxyDataForHost
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/net/proxy/IProxyData;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/net/proxy/IProxyData;
+preferenceChange
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$PreferenceChangeEvent;)V
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences$PreferenceChangeEvent;)V
+removeProxyChangeListener
+ (Lorg/eclipse/core/net/proxy/IProxyChangeListener;)V
+ (Lorg/eclipse/core/net/proxy/IProxyChangeListener;)V
+resolveType
+ (Lorg/eclipse/core/net/proxy/IProxyData;)Lorg/eclipse/core/net/proxy/IProxyData;
+ (Lorg/eclipse/core/net/proxy/IProxyData;)Lorg/eclipse/core/net/proxy/IProxyData;
+resolveType
+ ([Lorg/eclipse/core/net/proxy/IProxyData;)[Lorg/eclipse/core/net/proxy/IProxyData;
+ ([Lorg/eclipse/core/net/proxy/IProxyData;)[Lorg/eclipse/core/net/proxy/IProxyData;
+select
+ (Ljava/net/URI;)[Lorg/eclipse/core/net/proxy/IProxyData;
+ (Ljava/net/URI;)[Lorg/eclipse/core/net/proxy/IProxyData;
+setNonProxiedHosts
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setProxyData
+ ([Lorg/eclipse/core/net/proxy/IProxyData;)V
+ ([Lorg/eclipse/core/net/proxy/IProxyData;)V

@@ -1,0 +1,23 @@
+class org/eclipse/ui/navigator/IPipelinedTreeContentProvider
+
+getPipelinedChildren
+ (Ljava/lang/Object;Ljava/util/Set;)V
+ (Ljava/lang/Object;Ljava/util/Set;)V
+getPipelinedElements
+ (Ljava/lang/Object;Ljava/util/Set;)V
+ (Ljava/lang/Object;Ljava/util/Set;)V
+getPipelinedParent
+ (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+interceptAdd
+ (Lorg/eclipse/ui/navigator/PipelinedShapeModification;)Lorg/eclipse/ui/navigator/PipelinedShapeModification;
+ (Lorg/eclipse/ui/navigator/PipelinedShapeModification;)Lorg/eclipse/ui/navigator/PipelinedShapeModification;
+interceptRefresh
+ (Lorg/eclipse/ui/navigator/PipelinedViewerUpdate;)Z
+ (Lorg/eclipse/ui/navigator/PipelinedViewerUpdate;)Z
+interceptRemove
+ (Lorg/eclipse/ui/navigator/PipelinedShapeModification;)Lorg/eclipse/ui/navigator/PipelinedShapeModification;
+ (Lorg/eclipse/ui/navigator/PipelinedShapeModification;)Lorg/eclipse/ui/navigator/PipelinedShapeModification;
+interceptUpdate
+ (Lorg/eclipse/ui/navigator/PipelinedViewerUpdate;)Z
+ (Lorg/eclipse/ui/navigator/PipelinedViewerUpdate;)Z

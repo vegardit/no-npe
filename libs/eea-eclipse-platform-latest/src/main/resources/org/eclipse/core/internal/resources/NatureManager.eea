@@ -1,0 +1,74 @@
+class org/eclipse/core/internal/resources/NatureManager
+
+<init>
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+ (Lorg/eclipse/core/internal/resources/Workspace;)V
+computeNatureEnablements
+ (Lorg/eclipse/core/internal/resources/Project;)[Ljava/lang/String;
+ (Lorg/eclipse/core/internal/resources/Project;)[Ljava/lang/String;
+configureNature
+ (Lorg/eclipse/core/internal/resources/Project;Ljava/lang/String;Lorg/eclipse/core/runtime/MultiStatus;)V
+ (Lorg/eclipse/core/internal/resources/Project;Ljava/lang/String;Lorg/eclipse/core/runtime/MultiStatus;)V
+configureNatures
+ (Lorg/eclipse/core/internal/resources/Project;Lorg/eclipse/core/internal/resources/ProjectDescription;Lorg/eclipse/core/internal/resources/ProjectDescription;Lorg/eclipse/core/runtime/MultiStatus;)V
+ (Lorg/eclipse/core/internal/resources/Project;Lorg/eclipse/core/internal/resources/ProjectDescription;Lorg/eclipse/core/internal/resources/ProjectDescription;Lorg/eclipse/core/runtime/MultiStatus;)V
+createNature
+ (Lorg/eclipse/core/internal/resources/Project;Ljava/lang/String;)Lorg/eclipse/core/resources/IProjectNature;
+ (Lorg/eclipse/core/internal/resources/Project;Ljava/lang/String;)Lorg/eclipse/core/resources/IProjectNature;
+deconfigureNature
+ (Lorg/eclipse/core/internal/resources/Project;Ljava/lang/String;Lorg/eclipse/core/runtime/MultiStatus;)V
+ (Lorg/eclipse/core/internal/resources/Project;Ljava/lang/String;Lorg/eclipse/core/runtime/MultiStatus;)V
+failure
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+findNatureForBuilder
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getEnabledNatures
+ (Lorg/eclipse/core/internal/resources/Project;)[Ljava/lang/String;
+ (Lorg/eclipse/core/internal/resources/Project;)[Ljava/lang/String;
+getNatureDescriptor
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IProjectNatureDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/IProjectNatureDescriptor;
+getNatureDescriptors
+ ()[Lorg/eclipse/core/resources/IProjectNatureDescriptor;
+ ()[Lorg/eclipse/core/resources/IProjectNatureDescriptor;
+handleEvent
+ (Lorg/eclipse/core/internal/events/LifecycleEvent;)V
+ (Lorg/eclipse/core/internal/events/LifecycleEvent;)V
+hasCycles
+ (Lorg/eclipse/core/internal/resources/ProjectNatureDescriptor;)Z
+ (Lorg/eclipse/core/internal/resources/ProjectNatureDescriptor;)Z
+hasLinks
+ (Lorg/eclipse/core/resources/IProject;)Z
+ (Lorg/eclipse/core/resources/IProject;)Z
+hasSetOverlap
+ (Lorg/eclipse/core/resources/IProjectNatureDescriptor;Lorg/eclipse/core/resources/IProjectNatureDescriptor;)Ljava/lang/String;
+ (Lorg/eclipse/core/resources/IProjectNatureDescriptor;Lorg/eclipse/core/resources/IProjectNatureDescriptor;)Ljava/lang/String;
+insert
+ (Ljava/util/ArrayList<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;Ljava/lang/String;)V
+ (Ljava/util/ArrayList<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;Ljava/lang/String;)V
+isNatureEnabled
+ (Lorg/eclipse/core/internal/resources/Project;Ljava/lang/String;)Z
+ (Lorg/eclipse/core/internal/resources/Project;Ljava/lang/String;)Z
+shutdown
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+sortNatureSet
+ ([Ljava/lang/String;)[Ljava/lang/String;
+ ([Ljava/lang/String;)[Ljava/lang/String;
+startup
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+validateAdditions
+ (Ljava/util/HashSet<Ljava/lang/String;>;Ljava/util/HashSet<Ljava/lang/String;>;Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/util/HashSet<Ljava/lang/String;>;Ljava/util/HashSet<Ljava/lang/String;>;Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/runtime/IStatus;
+validateLinkCreation
+ ([Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ ([Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+validateNatureSet
+ ([Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ ([Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+validateRemovals
+ (Ljava/util/HashSet<Ljava/lang/String;>;Ljava/util/HashSet<Ljava/lang/String;>;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/util/HashSet<Ljava/lang/String;>;Ljava/util/HashSet<Ljava/lang/String;>;)Lorg/eclipse/core/runtime/IStatus;

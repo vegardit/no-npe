@@ -1,0 +1,134 @@
+class org/eclipse/jface/viewers/TreeViewer
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+<init>
+ (Lorg/eclipse/swt/widgets/Tree;)V
+ (Lorg/eclipse/swt/widgets/Tree;)V
+addTreeListener
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/events/TreeListener;)V
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/events/TreeListener;)V
+assertContentProviderType
+ (Lorg/eclipse/jface/viewers/IContentProvider;)V
+ (Lorg/eclipse/jface/viewers/IContentProvider;)V
+createViewerEditor
+ ()Lorg/eclipse/jface/viewers/ColumnViewerEditor;
+ ()Lorg/eclipse/jface/viewers/ColumnViewerEditor;
+disassociate
+ (Lorg/eclipse/swt/widgets/Item;)V
+ (Lorg/eclipse/swt/widgets/Item;)V
+editElement
+ (Ljava/lang/Object;I)V
+ (Ljava/lang/Object;I)V
+getChild
+ (Lorg/eclipse/swt/widgets/Widget;I)Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Widget;I)Lorg/eclipse/swt/widgets/Item;
+getChildren
+ (Lorg/eclipse/swt/widgets/Widget;)[Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Widget;)[Lorg/eclipse/swt/widgets/Item;
+getColumnViewerOwner
+ (I)Lorg/eclipse/swt/widgets/Widget;
+ (I)Lorg/eclipse/swt/widgets/Widget;
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getExpanded
+ (Lorg/eclipse/swt/widgets/Item;)Z
+ (Lorg/eclipse/swt/widgets/Item;)Z
+getItemAt
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/widgets/Item;
+getItemCount
+ (Lorg/eclipse/swt/widgets/Control;)I
+ (Lorg/eclipse/swt/widgets/Control;)I
+getItemCount
+ (Lorg/eclipse/swt/widgets/Item;)I
+ (Lorg/eclipse/swt/widgets/Item;)I
+getItems
+ (Lorg/eclipse/swt/widgets/Item;)[Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Item;)[Lorg/eclipse/swt/widgets/Item;
+getLabelProvider
+ ()Lorg/eclipse/jface/viewers/IBaseLabelProvider;
+ ()Lorg/eclipse/jface/viewers/IBaseLabelProvider;
+getParentElement
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+getParentItem
+ (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/widgets/Item;
+getRawChildren
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getSelection
+ (Lorg/eclipse/swt/widgets/Control;)[Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Control;)[Lorg/eclipse/swt/widgets/Item;
+getTree
+ ()Lorg/eclipse/swt/widgets/Tree;
+ ()Lorg/eclipse/swt/widgets/Tree;
+getViewerRowFromItem
+ (Lorg/eclipse/swt/widgets/Widget;)Lorg/eclipse/jface/viewers/ViewerRow;
+ (Lorg/eclipse/swt/widgets/Widget;)Lorg/eclipse/jface/viewers/ViewerRow;
+handleTreeCollapse
+ (Lorg/eclipse/swt/events/TreeEvent;)V
+ (Lorg/eclipse/swt/events/TreeEvent;)V
+handleTreeExpand
+ (Lorg/eclipse/swt/events/TreeEvent;)V
+ (Lorg/eclipse/swt/events/TreeEvent;)V
+hookControl
+ (Lorg/eclipse/swt/widgets/Control;)V
+ (Lorg/eclipse/swt/widgets/Control;)V
+internalAdd
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;[Ljava/lang/Object;)V
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;[Ljava/lang/Object;)V
+internalInitializeTree
+ (Lorg/eclipse/swt/widgets/Control;)V
+ (Lorg/eclipse/swt/widgets/Control;)V
+internalRefreshStruct
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;Z)V
+ (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;Z)V
+isExpandable
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+mapElement
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+newItem
+ (Lorg/eclipse/swt/widgets/Widget;II)Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Widget;II)Lorg/eclipse/swt/widgets/Item;
+remove
+ (Ljava/lang/Object;I)V
+ (Ljava/lang/Object;I)V
+removeAll
+ (Lorg/eclipse/swt/widgets/Control;)V
+ (Lorg/eclipse/swt/widgets/Control;)V
+replace
+ (Ljava/lang/Object;ILjava/lang/Object;)V
+ (Ljava/lang/Object;ILjava/lang/Object;)V
+setChildCount
+ (Ljava/lang/Object;I)V
+ (Ljava/lang/Object;I)V
+setContentProvider
+ (Lorg/eclipse/jface/viewers/IContentProvider;)V
+ (Lorg/eclipse/jface/viewers/IContentProvider;)V
+setExpanded
+ (Lorg/eclipse/swt/widgets/Item;Z)V
+ (Lorg/eclipse/swt/widgets/Item;Z)V
+setHasChildren
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+setSelection
+ (Ljava/util/List<Lorg/eclipse/swt/widgets/Item;>;)V
+ (Ljava/util/List<Lorg/eclipse/swt/widgets/Item;>;)V
+setSelection
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+showItem
+ (Lorg/eclipse/swt/widgets/Item;)V
+ (Lorg/eclipse/swt/widgets/Item;)V
+updatePlus
+ (Lorg/eclipse/swt/widgets/Item;Ljava/lang/Object;)V
+ (Lorg/eclipse/swt/widgets/Item;Ljava/lang/Object;)V

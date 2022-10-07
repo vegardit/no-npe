@@ -1,0 +1,24 @@
+class org/eclipse/equinox/p2/core/UIServices
+
+AUTHENTICATION_PROMPT_CANCELED
+ Lorg/eclipse/equinox/p2/core/UIServices$AuthenticationInfo;
+ L1org/eclipse/equinox/p2/core/UIServices$AuthenticationInfo;
+SERVICE_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getTrustInfo
+ ([[Ljava/security/cert/Certificate;Ljava/util/Collection<Lorg/bouncycastle/openpgp/PGPPublicKey;>;[Ljava/lang/String;)Lorg/eclipse/equinox/p2/core/UIServices$TrustInfo;
+ ([[Ljava/security/cert/Certificate;Ljava/util/Collection<Lorg/bouncycastle/openpgp/PGPPublicKey;>;[Ljava/lang/String;)Lorg/eclipse/equinox/p2/core/UIServices$TrustInfo;
+getTrustInfo
+ ([[Ljava/security/cert/Certificate;[Ljava/lang/String;)Lorg/eclipse/equinox/p2/core/UIServices$TrustInfo;
+ ([[Ljava/security/cert/Certificate;[Ljava/lang/String;)Lorg/eclipse/equinox/p2/core/UIServices$TrustInfo;
+getUsernamePassword
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/core/UIServices$AuthenticationInfo;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/core/UIServices$AuthenticationInfo;
+getUsernamePassword
+ (Ljava/lang/String;Lorg/eclipse/equinox/p2/core/UIServices$AuthenticationInfo;)Lorg/eclipse/equinox/p2/core/UIServices$AuthenticationInfo;
+ (Ljava/lang/String;Lorg/eclipse/equinox/p2/core/UIServices$AuthenticationInfo;)Lorg/eclipse/equinox/p2/core/UIServices$AuthenticationInfo;
+showInformationMessage
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V

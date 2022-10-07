@@ -1,0 +1,23 @@
+class org/eclipse/core/internal/runtime/Log
+
+<init>
+ (Lorg/osgi/framework/Bundle;Lorg/eclipse/equinox/log/Logger;)V
+ (Lorg/osgi/framework/Bundle;Lorg/eclipse/equinox/log/Logger;)V
+addLogListener
+ (Lorg/eclipse/core/runtime/ILogListener;)V
+ (Lorg/eclipse/core/runtime/ILogListener;)V
+getBundle
+ ()Lorg/osgi/framework/Bundle;
+ ()Lorg/osgi/framework/Bundle;
+isLoggable
+ (Lorg/osgi/framework/Bundle;Ljava/lang/String;I)Z
+ (Lorg/osgi/framework/Bundle;Ljava/lang/String;I)Z
+log
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V
+logged
+ (Lorg/osgi/service/log/LogEntry;)V
+ (Lorg/osgi/service/log/LogEntry;)V
+removeLogListener
+ (Lorg/eclipse/core/runtime/ILogListener;)V
+ (Lorg/eclipse/core/runtime/ILogListener;)V

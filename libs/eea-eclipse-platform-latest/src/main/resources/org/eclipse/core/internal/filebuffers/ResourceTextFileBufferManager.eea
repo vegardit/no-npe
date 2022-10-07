@@ -1,0 +1,23 @@
+class org/eclipse/core/internal/filebuffers/ResourceTextFileBufferManager
+
+createEmptyDocument
+ (Lorg/eclipse/core/resources/IFile;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/core/resources/IFile;)Lorg/eclipse/jface/text/IDocument;
+createTextFileBuffer
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/internal/filebuffers/AbstractFileBuffer;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/internal/filebuffers/AbstractFileBuffer;
+getDefaultEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLineDelimiterPreference
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Ljava/lang/String;
+isTextFileLocation
+ (Lorg/eclipse/core/runtime/IPath;Z)Z
+ (Lorg/eclipse/core/runtime/IPath;Z)Z
+normalizeLocation
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+validateState
+ ([Lorg/eclipse/core/filebuffers/IFileBuffer;Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;)V
+ ([Lorg/eclipse/core/filebuffers/IFileBuffer;Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;)V

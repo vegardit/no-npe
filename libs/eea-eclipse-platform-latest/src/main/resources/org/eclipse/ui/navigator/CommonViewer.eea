@@ -1,0 +1,92 @@
+class org/eclipse/ui/navigator/CommonViewer
+
+<init>
+ (Ljava/lang/String;Lorg/eclipse/swt/widgets/Composite;I)V
+ (Ljava/lang/String;Lorg/eclipse/swt/widgets/Composite;I)V
+add
+ (Ljava/lang/Object;[Ljava/lang/Object;)V
+ (Ljava/lang/Object;[Ljava/lang/Object;)V
+createDragAdapter
+ ()Lorg/eclipse/ui/navigator/CommonDragAdapter;
+ ()Lorg/eclipse/ui/navigator/CommonDragAdapter;
+createDropAdapter
+ ()Lorg/eclipse/ui/navigator/CommonDropAdapter;
+ ()Lorg/eclipse/ui/navigator/CommonDropAdapter;
+doUpdateItem
+ (Lorg/eclipse/swt/widgets/Widget;)V
+ (Lorg/eclipse/swt/widgets/Widget;)V
+getCommonNavigator
+ ()Lorg/eclipse/ui/navigator/CommonNavigator;
+ ()Lorg/eclipse/ui/navigator/CommonNavigator;
+getFrameList
+ ()Lorg/eclipse/ui/internal/navigator/framelist/FrameList;
+ ()Lorg/eclipse/ui/internal/navigator/framelist/FrameList;
+getMapper
+ ()Lorg/eclipse/ui/navigator/ICommonViewerMapper;
+ ()Lorg/eclipse/ui/navigator/ICommonViewerMapper;
+getNavigatorContentService
+ ()Lorg/eclipse/ui/navigator/INavigatorContentService;
+ ()Lorg/eclipse/ui/navigator/INavigatorContentService;
+getSelection
+ ()Lorg/eclipse/jface/viewers/ISelection;
+ ()Lorg/eclipse/jface/viewers/ISelection;
+handleDispose
+ (Lorg/eclipse/swt/events/DisposeEvent;)V
+ (Lorg/eclipse/swt/events/DisposeEvent;)V
+handleDoubleSelect
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+handleLabelProviderChanged
+ (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
+ (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
+handleOpen
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+handlePostSelect
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+handleSelect
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+hookControl
+ (Lorg/eclipse/swt/widgets/Control;)V
+ (Lorg/eclipse/swt/widgets/Control;)V
+internalRefresh
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+mapElement
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+refresh
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+refresh
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+remove
+ ([Ljava/lang/Object;)V
+ ([Ljava/lang/Object;)V
+removeWithoutRefresh
+ ([Ljava/lang/Object;)V
+ ([Ljava/lang/Object;)V
+setMapper
+ (Lorg/eclipse/ui/navigator/ICommonViewerMapper;)V
+ (Lorg/eclipse/ui/navigator/ICommonViewerMapper;)V
+setSelection
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+ (Lorg/eclipse/jface/viewers/ISelection;Z)V
+setSelectionToWidget
+ (Ljava/util/List;Z)V
+ (Ljava/util/List;Z)V
+setSorter
+ (Lorg/eclipse/jface/viewers/ViewerSorter;)V
+ (Lorg/eclipse/jface/viewers/ViewerSorter;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+unmapElement
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+ (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
+update
+ (Ljava/lang/Object;[Ljava/lang/String;)V
+ (Ljava/lang/Object;[Ljava/lang/String;)V

@@ -1,0 +1,30 @@
+class org/eclipse/jface/text/rules/WordRule
+
+fDefaultToken
+ Lorg/eclipse/jface/text/rules/IToken;
+ Lorg/eclipse/jface/text/rules/IToken;
+fDetector
+ Lorg/eclipse/jface/text/rules/IWordDetector;
+ Lorg/eclipse/jface/text/rules/IWordDetector;
+fWords
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/text/rules/IToken;>;
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/text/rules/IToken;>;
+
+<init>
+ (Lorg/eclipse/jface/text/rules/IWordDetector;)V
+ (Lorg/eclipse/jface/text/rules/IWordDetector;)V
+<init>
+ (Lorg/eclipse/jface/text/rules/IWordDetector;Lorg/eclipse/jface/text/rules/IToken;)V
+ (Lorg/eclipse/jface/text/rules/IWordDetector;Lorg/eclipse/jface/text/rules/IToken;)V
+<init>
+ (Lorg/eclipse/jface/text/rules/IWordDetector;Lorg/eclipse/jface/text/rules/IToken;Z)V
+ (Lorg/eclipse/jface/text/rules/IWordDetector;Lorg/eclipse/jface/text/rules/IToken;Z)V
+addWord
+ (Ljava/lang/String;Lorg/eclipse/jface/text/rules/IToken;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/text/rules/IToken;)V
+evaluate
+ (Lorg/eclipse/jface/text/rules/ICharacterScanner;)Lorg/eclipse/jface/text/rules/IToken;
+ (Lorg/eclipse/jface/text/rules/ICharacterScanner;)Lorg/eclipse/jface/text/rules/IToken;
+unreadBuffer
+ (Lorg/eclipse/jface/text/rules/ICharacterScanner;)V
+ (Lorg/eclipse/jface/text/rules/ICharacterScanner;)V

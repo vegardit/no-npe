@@ -1,0 +1,195 @@
+class org/eclipse/e4/ui/css/core/impl/engine/AbstractCSSEngine
+
+propertyHandlerProviders
+ Ljava/util/List<Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandlerProvider;>;
+ Ljava/util/List<Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandlerProvider;>;
+
+<init>
+ (Lorg/eclipse/e4/ui/css/core/dom/ExtendedDocumentCSS;)V
+ (Lorg/eclipse/e4/ui/css/core/dom/ExtendedDocumentCSS;)V
+applyCSSProperty
+ (Ljava/lang/Object;Ljava/lang/String;Lorg/w3c/dom/css/CSSValue;Ljava/lang/String;)Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;
+ (Ljava/lang/Object;Ljava/lang/String;Lorg/w3c/dom/css/CSSValue;Ljava/lang/String;)Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;
+applyDefaultStyleDeclaration
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+applyDefaultStyleDeclaration
+ (Ljava/lang/Object;ZLorg/w3c/dom/css/CSSStyleDeclaration;Ljava/lang/String;)V
+ (Ljava/lang/Object;ZLorg/w3c/dom/css/CSSStyleDeclaration;Ljava/lang/String;)V
+applyInlineStyle
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+applyStyleDeclaration
+ (Ljava/lang/Object;Lorg/w3c/dom/css/CSSStyleDeclaration;Ljava/lang/String;)V
+ (Ljava/lang/Object;Lorg/w3c/dom/css/CSSStyleDeclaration;Ljava/lang/String;)V
+applyStyles
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+applyStyles
+ (Ljava/lang/Object;ZZ)V
+ (Ljava/lang/Object;ZZ)V
+convert
+ (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/String;
+convert
+ (Lorg/w3c/dom/css/CSSValue;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+ (Lorg/w3c/dom/css/CSSValue;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+getCSSCompositePropertiesNames
+ (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[Ljava/lang/String;
+getCSSElementContext
+ (Ljava/lang/Object;)Lorg/eclipse/e4/ui/css/core/engine/CSSElementContext;
+ (Ljava/lang/Object;)Lorg/eclipse/e4/ui/css/core/engine/CSSElementContext;
+getCSSProperties
+ (Ljava/lang/Object;)Ljava/util/Collection<Ljava/lang/String;>;
+ (Ljava/lang/Object;)Ljava/util/Collection<Ljava/lang/String;>;
+getCSSPropertyHandlers
+ (Ljava/lang/String;)Ljava/util/Collection<Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;>;
+ (Ljava/lang/String;)Ljava/util/Collection<Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;>;
+getCSSValueConverter
+ (Ljava/lang/Object;)Lorg/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;
+ (Ljava/lang/Object;)Lorg/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;
+getDefaultStyleDeclaration
+ (Ljava/lang/Object;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/lang/Object;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+getDefaultStyleDeclaration
+ (Ljava/lang/Object;Lorg/w3c/dom/css/CSSStyleDeclaration;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/lang/Object;Lorg/w3c/dom/css/CSSStyleDeclaration;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+getDocumentCSS
+ ()Lorg/w3c/dom/css/DocumentCSS;
+ ()Lorg/w3c/dom/css/DocumentCSS;
+getElement
+ (Ljava/lang/Object;)Lorg/w3c/dom/Element;
+ (Ljava/lang/Object;)Lorg/w3c/dom/Element;
+getElementProvider
+ ()Lorg/eclipse/e4/ui/css/core/dom/IElementProvider;
+ ()Lorg/eclipse/e4/ui/css/core/dom/IElementProvider;
+getElementsContext
+ ()Ljava/util/Map<Ljava/lang/Object;Lorg/eclipse/e4/ui/css/core/engine/CSSElementContext;>;
+ ()Ljava/util/Map<Ljava/lang/Object;Lorg/eclipse/e4/ui/css/core/engine/CSSElementContext;>;
+getErrorHandler
+ ()Lorg/eclipse/e4/ui/css/core/engine/CSSErrorHandler;
+ ()Lorg/eclipse/e4/ui/css/core/engine/CSSErrorHandler;
+getNativeWidget
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+getResourcesLocatorManager
+ ()Lorg/eclipse/e4/ui/css/core/util/resources/IResourcesLocatorManager;
+ ()Lorg/eclipse/e4/ui/css/core/util/resources/IResourcesLocatorManager;
+getResourcesRegistry
+ ()Lorg/eclipse/e4/ui/css/core/resources/IResourcesRegistry;
+ ()Lorg/eclipse/e4/ui/css/core/resources/IResourcesRegistry;
+getStaticPseudoInstances
+ (Lorg/w3c/dom/Element;)[Ljava/lang/String;
+ (Lorg/w3c/dom/Element;)[Ljava/lang/String;
+getViewCSS
+ ()Lorg/w3c/dom/css/ViewCSS;
+ ()Lorg/w3c/dom/css/ViewCSS;
+handleExceptions
+ (Ljava/lang/Exception;)V
+ (Ljava/lang/Exception;)V
+handleWidgetDisposed
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+hookNativeWidget
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+isVisible
+ (Lorg/w3c/dom/Element;)Z
+ (Lorg/w3c/dom/Element;)Z
+makeCSSParser
+ ()Lorg/eclipse/e4/ui/css/core/dom/parsers/CSSParser;
+ ()Lorg/eclipse/e4/ui/css/core/dom/parsers/CSSParser;
+matches
+ (Lorg/w3c/css/sac/Selector;Ljava/lang/Object;Ljava/lang/String;)Z
+ (Lorg/w3c/css/sac/Selector;Ljava/lang/Object;Ljava/lang/String;)Z
+onStylesAppliedToChildNodes
+ (Lorg/w3c/dom/Element;Lorg/w3c/dom/NodeList;)V
+ (Lorg/w3c/dom/Element;Lorg/w3c/dom/NodeList;)V
+parseAndApplyStyleDeclaration
+ (Ljava/lang/Object;Ljava/io/InputStream;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/lang/Object;Ljava/io/InputStream;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+parseAndApplyStyleDeclaration
+ (Ljava/lang/Object;Ljava/io/Reader;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/lang/Object;Ljava/io/Reader;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+parseAndApplyStyleDeclaration
+ (Ljava/lang/Object;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/lang/Object;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+parseAndApplyStyleDeclaration
+ (Ljava/lang/Object;Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/lang/Object;Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+parsePropertyValue
+ (Ljava/io/InputStream;)Lorg/w3c/dom/css/CSSValue;
+ (Ljava/io/InputStream;)Lorg/w3c/dom/css/CSSValue;
+parsePropertyValue
+ (Ljava/io/Reader;)Lorg/w3c/dom/css/CSSValue;
+ (Ljava/io/Reader;)Lorg/w3c/dom/css/CSSValue;
+parsePropertyValue
+ (Ljava/lang/String;)Lorg/w3c/dom/css/CSSValue;
+ (Ljava/lang/String;)Lorg/w3c/dom/css/CSSValue;
+parsePropertyValue
+ (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/css/CSSValue;
+ (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/css/CSSValue;
+parseSelectors
+ (Ljava/io/InputStream;)Lorg/w3c/css/sac/SelectorList;
+ (Ljava/io/InputStream;)Lorg/w3c/css/sac/SelectorList;
+parseSelectors
+ (Ljava/io/Reader;)Lorg/w3c/css/sac/SelectorList;
+ (Ljava/io/Reader;)Lorg/w3c/css/sac/SelectorList;
+parseSelectors
+ (Ljava/lang/String;)Lorg/w3c/css/sac/SelectorList;
+ (Ljava/lang/String;)Lorg/w3c/css/sac/SelectorList;
+parseSelectors
+ (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/css/sac/SelectorList;
+ (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/css/sac/SelectorList;
+parseStyleDeclaration
+ (Ljava/io/InputStream;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/io/InputStream;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+parseStyleDeclaration
+ (Ljava/io/Reader;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/io/Reader;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+parseStyleDeclaration
+ (Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+parseStyleDeclaration
+ (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+ (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/css/CSSStyleDeclaration;
+parseStyleSheet
+ (Ljava/io/InputStream;)Lorg/w3c/dom/stylesheets/StyleSheet;
+ (Ljava/io/InputStream;)Lorg/w3c/dom/stylesheets/StyleSheet;
+parseStyleSheet
+ (Ljava/io/Reader;)Lorg/w3c/dom/stylesheets/StyleSheet;
+ (Ljava/io/Reader;)Lorg/w3c/dom/stylesheets/StyleSheet;
+parseStyleSheet
+ (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/stylesheets/StyleSheet;
+ (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/stylesheets/StyleSheet;
+registerCSSPropertyHandlerProvider
+ (Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandlerProvider;)V
+ (Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandlerProvider;)V
+registerCSSValueConverter
+ (Lorg/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;)V
+ (Lorg/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;)V
+retrieveCSSProperty
+ (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+setElementProvider
+ (Lorg/eclipse/e4/ui/css/core/dom/IElementProvider;)V
+ (Lorg/eclipse/e4/ui/css/core/dom/IElementProvider;)V
+setErrorHandler
+ (Lorg/eclipse/e4/ui/css/core/engine/CSSErrorHandler;)V
+ (Lorg/eclipse/e4/ui/css/core/engine/CSSErrorHandler;)V
+setResourceRegistryKeyFactory
+ (Lorg/eclipse/e4/ui/css/core/resources/ResourceRegistryKeyFactory;)V
+ (Lorg/eclipse/e4/ui/css/core/resources/ResourceRegistryKeyFactory;)V
+setResourcesLocatorManager
+ (Lorg/eclipse/e4/ui/css/core/util/resources/IResourcesLocatorManager;)V
+ (Lorg/eclipse/e4/ui/css/core/util/resources/IResourcesLocatorManager;)V
+setResourcesRegistry
+ (Lorg/eclipse/e4/ui/css/core/resources/IResourcesRegistry;)V
+ (Lorg/eclipse/e4/ui/css/core/resources/IResourcesRegistry;)V
+unregisterCSSPropertyHandlerProvider
+ (Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandlerProvider;)V
+ (Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandlerProvider;)V
+unregisterCSSValueConverter
+ (Lorg/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;)V
+ (Lorg/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;)V

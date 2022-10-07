@@ -1,0 +1,21 @@
+class org/eclipse/core/internal/events/ResourceDeltaFactory
+
+NO_CHILDREN
+ [Lorg/eclipse/core/internal/events/ResourceDelta;
+ [1Lorg/eclipse/core/internal/events/ResourceDelta;
+
+checkForOpen
+ (Lorg/eclipse/core/internal/events/ResourceDelta;I)V
+ (Lorg/eclipse/core/internal/events/ResourceDelta;I)V
+computeDelta
+ (Lorg/eclipse/core/internal/resources/Workspace;Lorg/eclipse/core/internal/watson/ElementTree;Lorg/eclipse/core/internal/watson/ElementTree;Lorg/eclipse/core/runtime/IPath;J)Lorg/eclipse/core/internal/events/ResourceDelta;
+ (Lorg/eclipse/core/internal/resources/Workspace;Lorg/eclipse/core/internal/watson/ElementTree;Lorg/eclipse/core/internal/watson/ElementTree;Lorg/eclipse/core/runtime/IPath;J)Lorg/eclipse/core/internal/events/ResourceDelta;
+computeNodeIDMap
+ (Lorg/eclipse/core/internal/events/ResourceDelta;Lorg/eclipse/core/internal/events/NodeIDMap;)Lorg/eclipse/core/internal/events/NodeIDMap;
+ (Lorg/eclipse/core/internal/events/ResourceDelta;Lorg/eclipse/core/internal/events/NodeIDMap;)Lorg/eclipse/core/internal/events/NodeIDMap;
+createDelta
+ (Lorg/eclipse/core/internal/resources/Workspace;Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/events/ResourceDeltaInfo;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/events/ResourceDelta;
+ (Lorg/eclipse/core/internal/resources/Workspace;Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/events/ResourceDeltaInfo;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/events/ResourceDelta;
+newEmptyDelta
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/resources/IResourceDelta;
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/resources/IResourceDelta;

@@ -1,0 +1,20 @@
+class org/eclipse/ui/internal/EditorHistory
+
+add
+ (Lorg/eclipse/ui/IEditorInput;Lorg/eclipse/ui/IEditorDescriptor;)V
+ (Lorg/eclipse/ui/IEditorInput;Lorg/eclipse/ui/IEditorDescriptor;)V
+getItems
+ ()[Lorg/eclipse/ui/internal/EditorHistoryItem;
+ ()[Lorg/eclipse/ui/internal/EditorHistoryItem;
+remove
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+remove
+ (Lorg/eclipse/ui/internal/EditorHistoryItem;)V
+ (Lorg/eclipse/ui/internal/EditorHistoryItem;)V
+restoreState
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/core/runtime/IStatus;
+saveState
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/core/runtime/IStatus;

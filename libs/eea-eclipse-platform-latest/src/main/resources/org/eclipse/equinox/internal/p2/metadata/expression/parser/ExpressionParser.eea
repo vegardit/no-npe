@@ -1,0 +1,76 @@
+class org/eclipse/equinox/internal/p2/metadata/expression/parser/ExpressionParser
+
+keywords
+ Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;
+ L1java/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;
+
+expression
+ Ljava/lang/String;
+ Ljava/lang/String;
+factory
+ Lorg/eclipse/equinox/p2/metadata/expression/IExpressionFactory;
+ Lorg/eclipse/equinox/p2/metadata/expression/IExpressionFactory;
+rootVariable
+ Ljava/lang/String;
+ Ljava/lang/String;
+tokenValue
+ Ljava/lang/Object;
+ Ljava/lang/Object;
+
+<init>
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpressionFactory;)V
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpressionFactory;)V
+getVariableOrRootMember
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+keywordToTokenMap
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;
+parse
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseAnd
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseArray
+ ()[Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()[Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseBinary
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseCollectionExpression
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseCollectionLHS
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseCollectionRHS
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;I)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;I)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseCondition
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseLambdaDefinition
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseMember
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseNot
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseOr
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseQuery
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseUnary
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+syntaxError
+ ()Lorg/eclipse/equinox/p2/metadata/expression/ExpressionParseException;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/ExpressionParseException;
+syntaxError
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/ExpressionParseException;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/ExpressionParseException;

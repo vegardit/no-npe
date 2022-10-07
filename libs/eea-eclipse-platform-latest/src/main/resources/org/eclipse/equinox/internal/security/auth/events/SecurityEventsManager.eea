@@ -1,0 +1,20 @@
+class org/eclipse/equinox/internal/security/auth/events/SecurityEventsManager
+
+addListener
+ (Lorg/eclipse/equinox/security/auth/ILoginContextListener;)V
+ (Lorg/eclipse/equinox/security/auth/ILoginContextListener;)V
+notifyLoginBegin
+ (Ljavax/security/auth/Subject;)V
+ (Ljavax/security/auth/Subject;)V
+notifyLoginEnd
+ (Ljavax/security/auth/Subject;Ljavax/security/auth/login/LoginException;)V
+ (Ljavax/security/auth/Subject;Ljavax/security/auth/login/LoginException;)V
+notifyLogoutBegin
+ (Ljavax/security/auth/Subject;)V
+ (Ljavax/security/auth/Subject;)V
+notifyLogoutEnd
+ (Ljavax/security/auth/Subject;Ljavax/security/auth/login/LoginException;)V
+ (Ljavax/security/auth/Subject;Ljavax/security/auth/login/LoginException;)V
+removeListener
+ (Lorg/eclipse/equinox/security/auth/ILoginContextListener;)V
+ (Lorg/eclipse/equinox/security/auth/ILoginContextListener;)V

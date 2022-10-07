@@ -1,0 +1,93 @@
+class org/eclipse/jface/preference/PreferenceConverter
+
+COLOR_DEFAULT_DEFAULT
+ Lorg/eclipse/swt/graphics/RGB;
+ L1org/eclipse/swt/graphics/RGB;
+FONTDATA_ARRAY_DEFAULT_DEFAULT
+ [Lorg/eclipse/swt/graphics/FontData;
+ [Lorg/eclipse/swt/graphics/FontData;
+FONTDATA_DEFAULT_DEFAULT
+ Lorg/eclipse/swt/graphics/FontData;
+ Lorg/eclipse/swt/graphics/FontData;
+POINT_DEFAULT_DEFAULT
+ Lorg/eclipse/swt/graphics/Point;
+ L1org/eclipse/swt/graphics/Point;
+RECTANGLE_DEFAULT_DEFAULT
+ Lorg/eclipse/swt/graphics/Rectangle;
+ L1org/eclipse/swt/graphics/Rectangle;
+
+basicGetFontData
+ (Ljava/lang/String;)[Lorg/eclipse/swt/graphics/FontData;
+ (Ljava/lang/String;)[Lorg/eclipse/swt/graphics/FontData;
+getColor
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/RGB;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/RGB;
+getDefaultColor
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/RGB;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/RGB;
+getDefaultFontData
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/FontData;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/FontData;
+getDefaultFontDataArray
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)[Lorg/eclipse/swt/graphics/FontData;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)[Lorg/eclipse/swt/graphics/FontData;
+getDefaultPoint
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/Point;
+getDefaultRectangle
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/Rectangle;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/Rectangle;
+getFontData
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/FontData;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/FontData;
+getFontDataArray
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)[Lorg/eclipse/swt/graphics/FontData;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)[Lorg/eclipse/swt/graphics/FontData;
+getFontDataArrayDefaultDefault
+ ()[Lorg/eclipse/swt/graphics/FontData;
+ ()[Lorg/eclipse/swt/graphics/FontData;
+getPoint
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/Point;
+getRectangle
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/Rectangle;
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;)Lorg/eclipse/swt/graphics/Rectangle;
+getStoredRepresentation
+ ([Lorg/eclipse/swt/graphics/FontData;)Ljava/lang/String;
+ ([Lorg/eclipse/swt/graphics/FontData;)Ljava/lang/String;
+putValue
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;[Lorg/eclipse/swt/graphics/FontData;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;[Lorg/eclipse/swt/graphics/FontData;)V
+readFontData
+ (Ljava/lang/String;)[Lorg/eclipse/swt/graphics/FontData;
+ (Ljava/lang/String;)[Lorg/eclipse/swt/graphics/FontData;
+setDefault
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/FontData;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/FontData;)V
+setDefault
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/Point;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/Point;)V
+setDefault
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/RGB;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/RGB;)V
+setDefault
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/Rectangle;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/Rectangle;)V
+setDefault
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;[Lorg/eclipse/swt/graphics/FontData;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;[Lorg/eclipse/swt/graphics/FontData;)V
+setValue
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/FontData;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/FontData;)V
+setValue
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/Point;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/Point;)V
+setValue
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/RGB;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/RGB;)V
+setValue
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/Rectangle;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;Lorg/eclipse/swt/graphics/Rectangle;)V
+setValue
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;[Lorg/eclipse/swt/graphics/FontData;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;Ljava/lang/String;[Lorg/eclipse/swt/graphics/FontData;)V

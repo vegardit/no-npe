@@ -1,0 +1,136 @@
+class org/eclipse/jface/text/source/SourceViewer
+
+MODEL_ANNOTATION_MODEL
+ Ljava/lang/Object;
+ L1java/lang/Object;
+_SELECTION_POSITION_CATEGORY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+fAnnotationHover
+ Lorg/eclipse/jface/text/source/IAnnotationHover;
+ Lorg/eclipse/jface/text/source/IAnnotationHover;
+fContentAssistant
+ Lorg/eclipse/jface/text/contentassist/IContentAssistant;
+ Lorg/eclipse/jface/text/contentassist/IContentAssistant;
+fContentFormatter
+ Lorg/eclipse/jface/text/formatter/IContentFormatter;
+ Lorg/eclipse/jface/text/formatter/IContentFormatter;
+fInformationPresenter
+ Lorg/eclipse/jface/text/information/IInformationPresenter;
+ Lorg/eclipse/jface/text/information/IInformationPresenter;
+fOverviewRulerAnnotationHover
+ Lorg/eclipse/jface/text/source/IAnnotationHover;
+ Lorg/eclipse/jface/text/source/IAnnotationHover;
+fPresentationReconciler
+ Lorg/eclipse/jface/text/presentation/IPresentationReconciler;
+ Lorg/eclipse/jface/text/presentation/IPresentationReconciler;
+fQuickAssistAssistant
+ Lorg/eclipse/jface/text/quickassist/IQuickAssistAssistant;
+ Lorg/eclipse/jface/text/quickassist/IQuickAssistAssistant;
+fReconciler
+ Lorg/eclipse/jface/text/reconciler/IReconciler;
+ Lorg/eclipse/jface/text/reconciler/IReconciler;
+fSelectionCategory
+ Ljava/lang/String;
+ Ljava/lang/String;
+fSelectionUpdater
+ Lorg/eclipse/jface/text/IPositionUpdater;
+ Lorg/eclipse/jface/text/IPositionUpdater;
+fSelections
+ Ljava/util/Stack<Lorg/eclipse/jface/text/Position;>;
+ Ljava/util/Stack<Lorg/eclipse/jface/text/Position;>;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)V
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;Lorg/eclipse/jface/text/source/IOverviewRuler;ZI)V
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;Lorg/eclipse/jface/text/source/IOverviewRuler;ZI)V
+addVerticalRulerColumn
+ (Lorg/eclipse/jface/text/source/IVerticalRulerColumn;)V
+ (Lorg/eclipse/jface/text/source/IVerticalRulerColumn;)V
+configure
+ (Lorg/eclipse/jface/text/source/SourceViewerConfiguration;)V
+ (Lorg/eclipse/jface/text/source/SourceViewerConfiguration;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createFormattingContext
+ ()Lorg/eclipse/jface/text/formatter/IFormattingContext;
+ ()Lorg/eclipse/jface/text/formatter/IFormattingContext;
+createFormattingContext
+ (II)Lorg/eclipse/jface/text/formatter/IFormattingContext;
+ (II)Lorg/eclipse/jface/text/formatter/IFormattingContext;
+createLayout
+ ()Lorg/eclipse/swt/widgets/Layout;
+ ()Lorg/eclipse/swt/widgets/Layout;
+createVisualAnnotationModel
+ (Lorg/eclipse/jface/text/source/IAnnotationModel;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Lorg/eclipse/jface/text/source/IAnnotationModel;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+getAnnotationModel
+ ()Lorg/eclipse/jface/text/source/IAnnotationModel;
+ ()Lorg/eclipse/jface/text/source/IAnnotationModel;
+getContentAssistantFacade
+ ()Lorg/eclipse/jface/text/source/ContentAssistantFacade;
+ ()Lorg/eclipse/jface/text/source/ContentAssistantFacade;
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getCurrentAnnotationHover
+ ()Lorg/eclipse/jface/text/source/IAnnotationHover;
+ ()Lorg/eclipse/jface/text/source/IAnnotationHover;
+getQuickAssistAssistant
+ ()Lorg/eclipse/jface/text/quickassist/IQuickAssistAssistant;
+ ()Lorg/eclipse/jface/text/quickassist/IQuickAssistAssistant;
+getQuickAssistInvocationContext
+ ()Lorg/eclipse/jface/text/quickassist/IQuickAssistInvocationContext;
+ ()Lorg/eclipse/jface/text/quickassist/IQuickAssistInvocationContext;
+getRangeIndication
+ ()Lorg/eclipse/jface/text/IRegion;
+ ()Lorg/eclipse/jface/text/IRegion;
+getVerticalRuler
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+getVisualAnnotationModel
+ ()Lorg/eclipse/jface/text/source/IAnnotationModel;
+ ()Lorg/eclipse/jface/text/source/IAnnotationModel;
+rememberSelection
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+removeVerticalRulerColumn
+ (Lorg/eclipse/jface/text/source/IVerticalRulerColumn;)V
+ (Lorg/eclipse/jface/text/source/IVerticalRulerColumn;)V
+setAnnotationHover
+ (Lorg/eclipse/jface/text/source/IAnnotationHover;)V
+ (Lorg/eclipse/jface/text/source/IAnnotationHover;)V
+setCodeMiningAnnotationPainter
+ (Lorg/eclipse/jface/text/source/AnnotationPainter;)V
+ (Lorg/eclipse/jface/text/source/AnnotationPainter;)V
+setCodeMiningProviders
+ ([Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;)V
+ ([Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;)V
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;II)V
+ (Lorg/eclipse/jface/text/IDocument;II)V
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/source/IAnnotationModel;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/source/IAnnotationModel;)V
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/source/IAnnotationModel;II)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/source/IAnnotationModel;II)V
+setHoverEnrichMode
+ (Lorg/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V
+ (Lorg/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V
+setOverviewRulerAnnotationHover
+ (Lorg/eclipse/jface/text/source/IAnnotationHover;)V
+ (Lorg/eclipse/jface/text/source/IAnnotationHover;)V
+setRangeIndicator
+ (Lorg/eclipse/jface/text/source/Annotation;)V
+ (Lorg/eclipse/jface/text/source/Annotation;)V
+updateSlaveDocuments
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V

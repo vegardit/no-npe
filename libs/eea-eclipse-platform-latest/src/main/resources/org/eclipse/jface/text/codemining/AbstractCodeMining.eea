@@ -1,0 +1,29 @@
+class org/eclipse/jface/text/codemining/AbstractCodeMining
+
+<init>
+ (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;)V
+ (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;)V
+doResolve
+ (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+draw
+ (Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/custom/StyledText;Lorg/eclipse/swt/graphics/Color;II)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/custom/StyledText;Lorg/eclipse/swt/graphics/Color;II)Lorg/eclipse/swt/graphics/Point;
+getAction
+ ()Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;
+ ()Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;
+getLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPosition
+ ()Lorg/eclipse/jface/text/Position;
+ ()Lorg/eclipse/jface/text/Position;
+getProvider
+ ()Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;
+ ()Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;
+resolve
+ (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+setLabel
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

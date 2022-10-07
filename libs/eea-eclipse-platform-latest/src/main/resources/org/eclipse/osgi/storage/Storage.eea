@@ -1,0 +1,103 @@
+class org/eclipse/osgi/storage/Storage
+
+BUNDLE_DATA_DIR
+ Ljava/lang/String;
+ L1java/lang/String;
+BUNDLE_FILE_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+DELETE_FLAG
+ Ljava/lang/String;
+ L1java/lang/String;
+ECLIPSE_SYSTEMBUNDLE
+ Ljava/lang/String;
+ L1java/lang/String;
+FRAMEWORK_INFO
+ Ljava/lang/String;
+ L1java/lang/String;
+LIB_TEMP
+ Ljava/lang/String;
+ L1java/lang/String;
+
+createStorage
+ (Lorg/eclipse/osgi/internal/framework/EquinoxContainer;)Lorg/eclipse/osgi/storage/Storage;
+ (Lorg/eclipse/osgi/internal/framework/EquinoxContainer;)Lorg/eclipse/osgi/storage/Storage;
+findEntries
+ (Ljava/util/List<Lorg/eclipse/osgi/storage/BundleInfo$Generation;>;Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/util/List<Lorg/eclipse/osgi/storage/BundleInfo$Generation;>;Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Enumeration<Ljava/net/URL;>;
+listEntryPaths
+ (Ljava/util/List<Lorg/eclipse/osgi/storage/bundlefile/BundleFile;>;Ljava/lang/String;Ljava/lang/String;I)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/util/List<Lorg/eclipse/osgi/storage/bundlefile/BundleFile;>;Ljava/lang/String;Ljava/lang/String;I)Ljava/util/List<Ljava/lang/String;>;
+sanitizeFilterInput
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+
+copyToTempLibrary
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/lang/String;)Ljava/lang/String;
+createBundleFile
+ (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;ZZ)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+ (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;ZZ)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+createNestedBundleFile
+ (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+ (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+createNestedBundleFile
+ (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/util/Collection<Ljava/lang/String;>;)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+ (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/util/Collection<Ljava/lang/String;>;)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+getAdaptor
+ ()Lorg/eclipse/osgi/container/ModuleContainerAdaptor;
+ ()Lorg/eclipse/osgi/container/ModuleContainerAdaptor;
+getBuilder
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Lorg/eclipse/osgi/container/ModuleRevisionBuilder;
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Lorg/eclipse/osgi/container/ModuleRevisionBuilder;
+getBuilder
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/osgi/container/ModuleRevisionBuilder;
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/osgi/container/ModuleRevisionBuilder;
+getChildStorageManager
+ ()Lorg/eclipse/osgi/storagemanager/StorageManager;
+ ()Lorg/eclipse/osgi/storagemanager/StorageManager;
+getConfiguration
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxConfiguration;
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxConfiguration;
+getContentConnection
+ (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Ljava/io/InputStream;)Ljava/net/URLConnection;
+ (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Ljava/io/InputStream;)Ljava/net/URLConnection;
+getExtensionInstaller
+ ()Lorg/eclipse/osgi/storage/FrameworkExtensionInstaller;
+ ()Lorg/eclipse/osgi/storage/FrameworkExtensionInstaller;
+getFile
+ (Ljava/lang/String;Ljava/lang/String;Z)Ljava/io/File;
+ (Ljava/lang/String;Ljava/lang/String;Z)Ljava/io/File;
+getFile
+ (Ljava/lang/String;Z)Ljava/io/File;
+ (Ljava/lang/String;Z)Ljava/io/File;
+getLogServices
+ ()Lorg/eclipse/osgi/internal/log/EquinoxLogServices;
+ ()Lorg/eclipse/osgi/internal/log/EquinoxLogServices;
+getMRUBundleFileList
+ ()Lorg/eclipse/osgi/storage/bundlefile/MRUBundleFileList;
+ ()Lorg/eclipse/osgi/storage/bundlefile/MRUBundleFileList;
+getModuleContainer
+ ()Lorg/eclipse/osgi/container/ModuleContainer;
+ ()Lorg/eclipse/osgi/container/ModuleContainer;
+getModuleDatabase
+ ()Lorg/eclipse/osgi/container/ModuleDatabase;
+ ()Lorg/eclipse/osgi/container/ModuleDatabase;
+getRuntimeVersion
+ ()Lorg/osgi/framework/Version;
+ ()Lorg/osgi/framework/Version;
+getSecurityAdmin
+ ()Lorg/eclipse/osgi/internal/permadmin/SecurityAdmin;
+ ()Lorg/eclipse/osgi/internal/permadmin/SecurityAdmin;
+install
+ (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Ljava/io/InputStream;)Lorg/eclipse/osgi/storage/BundleInfo$Generation;
+ (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Ljava/io/InputStream;)Lorg/eclipse/osgi/storage/BundleInfo$Generation;
+setPermissions
+ (Ljava/io/File;)V
+ (Ljava/io/File;)V
+update
+ (Lorg/eclipse/osgi/container/Module;Ljava/io/InputStream;)Lorg/eclipse/osgi/storage/BundleInfo$Generation;
+ (Lorg/eclipse/osgi/container/Module;Ljava/io/InputStream;)Lorg/eclipse/osgi/storage/BundleInfo$Generation;
+wrapBundleFile
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Z)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Z)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;

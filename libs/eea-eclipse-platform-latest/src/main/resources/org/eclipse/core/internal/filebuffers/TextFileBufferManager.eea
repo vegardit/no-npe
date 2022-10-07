@@ -1,0 +1,142 @@
+class org/eclipse/core/internal/filebuffers/TextFileBufferManager
+
+TEXT_CONTENT_TYPE
+ Lorg/eclipse/core/runtime/content/IContentType;
+ L1org/eclipse/core/runtime/content/IContentType;
+
+fRegistry
+ Lorg/eclipse/core/internal/filebuffers/ExtensionsRegistry;
+ Lorg/eclipse/core/internal/filebuffers/ExtensionsRegistry;
+
+addFileBufferListener
+ (Lorg/eclipse/core/filebuffers/IFileBufferListener;)V
+ (Lorg/eclipse/core/filebuffers/IFileBufferListener;)V
+connect
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+connect
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+connectFileStore
+ (Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+createAnnotationModel
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+createAnnotationModel
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+createEmptyDocument
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jface/text/IDocument;
+createEmptyDocument
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/jface/text/IDocument;
+createTextFileBuffer
+ (Lorg/eclipse/core/filesystem/IFileStore;)Lorg/eclipse/core/internal/filebuffers/FileStoreFileBuffer;
+ (Lorg/eclipse/core/filesystem/IFileStore;)Lorg/eclipse/core/internal/filebuffers/FileStoreFileBuffer;
+createTextFileBuffer
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/internal/filebuffers/AbstractFileBuffer;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/internal/filebuffers/AbstractFileBuffer;
+disconnect
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+disconnect
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+disconnectFileStore
+ (Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/filesystem/IFileStore;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+execute
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+fireBufferContentAboutToBeReplaced
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+fireBufferContentReplaced
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+fireBufferCreated
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+fireBufferDisposed
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+fireDirtyStateChanged
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;Z)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;Z)V
+fireStateChangeFailed
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+fireStateChanging
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+fireStateValidationChanged
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;Z)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;Z)V
+fireUnderlyingFileDeleted
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;)V
+fireUnderlyingFileMoved
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/filebuffers/IFileBuffer;Lorg/eclipse/core/runtime/IPath;)V
+getDefaultEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFileBuffer
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filebuffers/IFileBuffer;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filebuffers/IFileBuffer;
+getFileBuffer
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/filebuffers/IFileBuffer;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/filebuffers/IFileBuffer;
+getFileBuffers
+ ()[Lorg/eclipse/core/filebuffers/IFileBuffer;
+ ()[Lorg/eclipse/core/filebuffers/IFileBuffer;
+getFileStoreFileBuffer
+ (Lorg/eclipse/core/filesystem/IFileStore;)Lorg/eclipse/core/filebuffers/IFileBuffer;
+ (Lorg/eclipse/core/filesystem/IFileStore;)Lorg/eclipse/core/filebuffers/IFileBuffer;
+getFileStoreFileBuffers
+ ()[Lorg/eclipse/core/filebuffers/IFileBuffer;
+ ()[Lorg/eclipse/core/filebuffers/IFileBuffer;
+getFileStoreTextFileBuffer
+ (Lorg/eclipse/core/filesystem/IFileStore;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+ (Lorg/eclipse/core/filesystem/IFileStore;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+getLineDelimiterPreference
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Ljava/lang/String;
+getTextFileBuffer
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+getTextFileBuffer
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/filebuffers/LocationKind;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+getTextFileBuffer
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/core/filebuffers/ITextFileBuffer;
+isTextFileLocation
+ (Lorg/eclipse/core/filesystem/IFileStore;Z)Z
+ (Lorg/eclipse/core/filesystem/IFileStore;Z)Z
+isTextFileLocation
+ (Lorg/eclipse/core/runtime/IPath;)Z
+ (Lorg/eclipse/core/runtime/IPath;)Z
+isTextFileLocation
+ (Lorg/eclipse/core/runtime/IPath;Z)Z
+ (Lorg/eclipse/core/runtime/IPath;Z)Z
+normalizeLocation
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+releaseSynchronizationContext
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+removeFileBufferListener
+ (Lorg/eclipse/core/filebuffers/IFileBufferListener;)V
+ (Lorg/eclipse/core/filebuffers/IFileBufferListener;)V
+requestSynchronizationContext
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+setSynchronizationContext
+ (Lorg/eclipse/core/filebuffers/ISynchronizationContext;)V
+ (Lorg/eclipse/core/filebuffers/ISynchronizationContext;)V
+validateState
+ ([Lorg/eclipse/core/filebuffers/IFileBuffer;Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;)V
+ ([Lorg/eclipse/core/filebuffers/IFileBuffer;Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;)V

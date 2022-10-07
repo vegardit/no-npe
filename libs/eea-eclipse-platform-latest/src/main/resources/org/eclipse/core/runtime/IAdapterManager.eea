@@ -1,0 +1,32 @@
+class org/eclipse/core/runtime/IAdapterManager
+
+computeAdapterTypes
+ (Ljava/lang/Class<*>;)[Ljava/lang/String;
+ (Ljava/lang/Class<*>;)[Ljava/lang/String;
+computeClassOrder
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)[Ljava/lang/Class<-TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)[Ljava/lang/Class<-TT;>;
+getAdapter
+ (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)TT;
+hasAdapter
+ (Ljava/lang/Object;Ljava/lang/String;)Z
+ (Ljava/lang/Object;Ljava/lang/String;)Z
+loadAdapter
+ (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+queryAdapter
+ (Ljava/lang/Object;Ljava/lang/String;)I
+ (Ljava/lang/Object;Ljava/lang/String;)I
+registerAdapters
+ (Lorg/eclipse/core/runtime/IAdapterFactory;Ljava/lang/Class<*>;)V
+ (Lorg/eclipse/core/runtime/IAdapterFactory;Ljava/lang/Class<*>;)V
+unregisterAdapters
+ (Lorg/eclipse/core/runtime/IAdapterFactory;)V
+ (Lorg/eclipse/core/runtime/IAdapterFactory;)V
+unregisterAdapters
+ (Lorg/eclipse/core/runtime/IAdapterFactory;Ljava/lang/Class<*>;)V
+ (Lorg/eclipse/core/runtime/IAdapterFactory;Ljava/lang/Class<*>;)V

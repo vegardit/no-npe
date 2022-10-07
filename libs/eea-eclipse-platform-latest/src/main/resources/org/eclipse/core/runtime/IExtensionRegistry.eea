@@ -1,0 +1,74 @@
+class org/eclipse/core/runtime/IExtensionRegistry
+
+addContribution
+ (Ljava/io/InputStream;Lorg/eclipse/core/runtime/IContributor;ZLjava/lang/String;Ljava/util/ResourceBundle;Ljava/lang/Object;)Z
+ (Ljava/io/InputStream;Lorg/eclipse/core/runtime/IContributor;ZLjava/lang/String;Ljava/util/ResourceBundle;Ljava/lang/Object;)Z
+addListener
+ (Lorg/eclipse/core/runtime/IRegistryEventListener;)V
+ (Lorg/eclipse/core/runtime/IRegistryEventListener;)V
+addListener
+ (Lorg/eclipse/core/runtime/IRegistryEventListener;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/IRegistryEventListener;Ljava/lang/String;)V
+addRegistryChangeListener
+ (Lorg/eclipse/core/runtime/IRegistryChangeListener;)V
+ (Lorg/eclipse/core/runtime/IRegistryChangeListener;)V
+addRegistryChangeListener
+ (Lorg/eclipse/core/runtime/IRegistryChangeListener;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/IRegistryChangeListener;Ljava/lang/String;)V
+getConfigurationElementsFor
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+getConfigurationElementsFor
+ (Ljava/lang/String;Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+ (Ljava/lang/String;Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+getConfigurationElementsFor
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+getExtension
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtension;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtension;
+getExtension
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtension;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtension;
+getExtension
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtension;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtension;
+getExtensionPoint
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtensionPoint;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtensionPoint;
+getExtensionPoint
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtensionPoint;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/runtime/IExtensionPoint;
+getExtensionPoints
+ ()[Lorg/eclipse/core/runtime/IExtensionPoint;
+ ()[Lorg/eclipse/core/runtime/IExtensionPoint;
+getExtensionPoints
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtensionPoint;
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtensionPoint;
+getExtensionPoints
+ (Lorg/eclipse/core/runtime/IContributor;)[Lorg/eclipse/core/runtime/IExtensionPoint;
+ (Lorg/eclipse/core/runtime/IContributor;)[Lorg/eclipse/core/runtime/IExtensionPoint;
+getExtensions
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtension;
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IExtension;
+getExtensions
+ (Lorg/eclipse/core/runtime/IContributor;)[Lorg/eclipse/core/runtime/IExtension;
+ (Lorg/eclipse/core/runtime/IContributor;)[Lorg/eclipse/core/runtime/IExtension;
+getNamespaces
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+removeExtension
+ (Lorg/eclipse/core/runtime/IExtension;Ljava/lang/Object;)Z
+ (Lorg/eclipse/core/runtime/IExtension;Ljava/lang/Object;)Z
+removeExtensionPoint
+ (Lorg/eclipse/core/runtime/IExtensionPoint;Ljava/lang/Object;)Z
+ (Lorg/eclipse/core/runtime/IExtensionPoint;Ljava/lang/Object;)Z
+removeListener
+ (Lorg/eclipse/core/runtime/IRegistryEventListener;)V
+ (Lorg/eclipse/core/runtime/IRegistryEventListener;)V
+removeRegistryChangeListener
+ (Lorg/eclipse/core/runtime/IRegistryChangeListener;)V
+ (Lorg/eclipse/core/runtime/IRegistryChangeListener;)V
+stop
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V

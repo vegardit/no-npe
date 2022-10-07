@@ -1,0 +1,61 @@
+class org/eclipse/osgi/internal/framework/EquinoxContainer
+
+NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+sneakyThrow
+ <E:Ljava/lang/Throwable;>(Ljava/lang/Throwable;)V^TE;
+ <E:Ljava/lang/Throwable;>(Ljava/lang/Throwable;)V^TE;
+
+<init>
+ (Ljava/util/Map<Ljava/lang/String;*>;Lorg/osgi/framework/connect/ModuleConnector;)V
+ (Ljava/util/Map<Ljava/lang/String;*>;Lorg/osgi/framework/connect/ModuleConnector;)V
+getBootLoader
+ ()Ljava/lang/ClassLoader;
+ ()Ljava/lang/ClassLoader;
+getBundle
+ (Ljava/lang/Class<*>;)Lorg/osgi/framework/Bundle;
+ (Ljava/lang/Class<*>;)Lorg/osgi/framework/Bundle;
+getConfiguration
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxConfiguration;
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxConfiguration;
+getConnectModules
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxContainer$ConnectModules;
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxContainer$ConnectModules;
+getContextFinder
+ ()Lorg/eclipse/osgi/internal/framework/ContextFinder;
+ ()Lorg/eclipse/osgi/internal/framework/ContextFinder;
+getEventPublisher
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxEventPublisher;
+ ()Lorg/eclipse/osgi/internal/framework/EquinoxEventPublisher;
+getLocations
+ ()Lorg/eclipse/osgi/internal/location/EquinoxLocations;
+ ()Lorg/eclipse/osgi/internal/location/EquinoxLocations;
+getLogServices
+ ()Lorg/eclipse/osgi/internal/log/EquinoxLogServices;
+ ()Lorg/eclipse/osgi/internal/log/EquinoxLogServices;
+getServiceRegistry
+ ()Lorg/eclipse/osgi/internal/serviceregistry/ServiceRegistry;
+ ()Lorg/eclipse/osgi/internal/serviceregistry/ServiceRegistry;
+getSignedContentFactory
+ ()Lorg/eclipse/osgi/signedcontent/SignedContentFactory;
+ ()Lorg/eclipse/osgi/signedcontent/SignedContentFactory;
+getStorage
+ ()Lorg/eclipse/osgi/storage/Storage;
+ ()Lorg/eclipse/osgi/storage/Storage;
+handleRuntimeError
+ (Ljava/lang/Throwable;)V
+ (Ljava/lang/Throwable;)V
+isBootDelegationPackage
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+newListenerQueue
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;E:Ljava/lang/Object;>()Lorg/eclipse/osgi/framework/eventmgr/ListenerQueue<TK;TV;TE;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;E:Ljava/lang/Object;>()Lorg/eclipse/osgi/framework/eventmgr/ListenerQueue<TK;TV;TE;>;
+newThread
+ (Ljava/lang/Runnable;)Ljava/lang/Thread;
+ (Ljava/lang/Runnable;)Ljava/lang/Thread;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

@@ -1,0 +1,37 @@
+class org/eclipse/ui/internal/intro/impl/IntroPlugin
+
+PLUGIN_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getDefault
+ ()Lorg/eclipse/ui/internal/intro/impl/IntroPlugin;
+ ()Lorg/eclipse/ui/internal/intro/impl/IntroPlugin;
+getIntro
+ ()Lorg/eclipse/ui/intro/IIntroPart;
+ ()Lorg/eclipse/ui/intro/IIntroPart;
+logDebug
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+showIntro
+ (Z)Lorg/eclipse/ui/intro/IIntroPart;
+ (Z)Lorg/eclipse/ui/intro/IIntroPart;
+
+getExtensionPointManager
+ ()Lorg/eclipse/ui/internal/intro/impl/model/loader/ExtensionPointManager;
+ ()Lorg/eclipse/ui/internal/intro/impl/model/loader/ExtensionPointManager;
+getIntroModelRoot
+ ()Lorg/eclipse/ui/internal/intro/impl/model/IntroModelRoot;
+ ()Lorg/eclipse/ui/internal/intro/impl/model/IntroModelRoot;
+getVolatileImageRegistry
+ ()Lorg/eclipse/jface/resource/ImageRegistry;
+ ()Lorg/eclipse/jface/resource/ImageRegistry;
+setLaunchBar
+ (Lorg/eclipse/ui/internal/intro/impl/presentations/IntroLaunchBar;)V
+ (Lorg/eclipse/ui/internal/intro/impl/presentations/IntroLaunchBar;)V
+start
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V
+stop
+ (Lorg/osgi/framework/BundleContext;)V
+ (Lorg/osgi/framework/BundleContext;)V

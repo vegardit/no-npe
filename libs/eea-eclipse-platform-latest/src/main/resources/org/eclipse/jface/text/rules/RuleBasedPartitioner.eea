@@ -1,0 +1,67 @@
+class org/eclipse/jface/text/rules/RuleBasedPartitioner
+
+CONTENT_TYPES_CATEGORY
+ Ljava/lang/String;
+ L1java/lang/String;
+
+fDocument
+ Lorg/eclipse/jface/text/IDocument;
+ Lorg/eclipse/jface/text/IDocument;
+fLegalContentTypes
+ [Ljava/lang/String;
+ [Ljava/lang/String;
+fPositionUpdater
+ Lorg/eclipse/jface/text/DefaultPositionUpdater;
+ Lorg/eclipse/jface/text/DefaultPositionUpdater;
+fScanner
+ Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+ Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+
+<init>
+ (Lorg/eclipse/jface/text/rules/RuleBasedScanner;[Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/rules/RuleBasedScanner;[Ljava/lang/String;)V
+computePartitioning
+ (II)[Lorg/eclipse/jface/text/ITypedRegion;
+ (II)[Lorg/eclipse/jface/text/ITypedRegion;
+computePartitioning
+ (IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
+ (IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
+connect
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+documentAboutToBeChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (Lorg/eclipse/jface/text/DocumentEvent;)V
+documentChanged
+ (Lorg/eclipse/jface/text/DocumentEvent;)Z
+ (Lorg/eclipse/jface/text/DocumentEvent;)Z
+documentChanged2
+ (Lorg/eclipse/jface/text/DocumentEvent;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/DocumentEvent;)Lorg/eclipse/jface/text/IRegion;
+findClosestPosition
+ (I)Lorg/eclipse/jface/text/TypedPosition;
+ (I)Lorg/eclipse/jface/text/TypedPosition;
+getContentType
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;
+getContentType
+ (IZ)Ljava/lang/String;
+ (IZ)Ljava/lang/String;
+getLegalContentTypes
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getManagingPositionCategories
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getPartition
+ (I)Lorg/eclipse/jface/text/ITypedRegion;
+ (I)Lorg/eclipse/jface/text/ITypedRegion;
+getPartition
+ (IZ)Lorg/eclipse/jface/text/ITypedRegion;
+ (IZ)Lorg/eclipse/jface/text/ITypedRegion;
+getTokenContentType
+ (Lorg/eclipse/jface/text/rules/IToken;)Ljava/lang/String;
+ (Lorg/eclipse/jface/text/rules/IToken;)Ljava/lang/String;
+isSupportedContentType
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z

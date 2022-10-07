@@ -1,0 +1,120 @@
+class org/eclipse/jface/text/IDocument
+
+DEFAULT_CATEGORY
+ Ljava/lang/String;
+ L1java/lang/String;
+DEFAULT_CONTENT_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addDocumentListener
+ (Lorg/eclipse/jface/text/IDocumentListener;)V
+ (Lorg/eclipse/jface/text/IDocumentListener;)V
+addDocumentPartitioningListener
+ (Lorg/eclipse/jface/text/IDocumentPartitioningListener;)V
+ (Lorg/eclipse/jface/text/IDocumentPartitioningListener;)V
+addPosition
+ (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
+addPosition
+ (Lorg/eclipse/jface/text/Position;)V
+ (Lorg/eclipse/jface/text/Position;)V
+addPositionCategory
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addPositionUpdater
+ (Lorg/eclipse/jface/text/IPositionUpdater;)V
+ (Lorg/eclipse/jface/text/IPositionUpdater;)V
+addPrenotifiedDocumentListener
+ (Lorg/eclipse/jface/text/IDocumentListener;)V
+ (Lorg/eclipse/jface/text/IDocumentListener;)V
+computeIndexInCategory
+ (Ljava/lang/String;I)I
+ (Ljava/lang/String;I)I
+computeNumberOfLines
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+computePartitioning
+ (II)[Lorg/eclipse/jface/text/ITypedRegion;
+ (II)[Lorg/eclipse/jface/text/ITypedRegion;
+containsPosition
+ (Ljava/lang/String;II)Z
+ (Ljava/lang/String;II)Z
+containsPositionCategory
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+get
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+get
+ (II)Ljava/lang/String;
+ (II)Ljava/lang/String;
+getContentType
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;
+getDocumentPartitioner
+ ()Lorg/eclipse/jface/text/IDocumentPartitioner;
+ ()Lorg/eclipse/jface/text/IDocumentPartitioner;
+getLegalContentTypes
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getLegalLineDelimiters
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getLineDelimiter
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;
+getLineInformation
+ (I)Lorg/eclipse/jface/text/IRegion;
+ (I)Lorg/eclipse/jface/text/IRegion;
+getLineInformationOfOffset
+ (I)Lorg/eclipse/jface/text/IRegion;
+ (I)Lorg/eclipse/jface/text/IRegion;
+getPartition
+ (I)Lorg/eclipse/jface/text/ITypedRegion;
+ (I)Lorg/eclipse/jface/text/ITypedRegion;
+getPositionCategories
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getPositionUpdaters
+ ()[Lorg/eclipse/jface/text/IPositionUpdater;
+ ()[Lorg/eclipse/jface/text/IPositionUpdater;
+getPositions
+ (Ljava/lang/String;)[Lorg/eclipse/jface/text/Position;
+ (Ljava/lang/String;)[Lorg/eclipse/jface/text/Position;
+insertPositionUpdater
+ (Lorg/eclipse/jface/text/IPositionUpdater;I)V
+ (Lorg/eclipse/jface/text/IPositionUpdater;I)V
+removeDocumentListener
+ (Lorg/eclipse/jface/text/IDocumentListener;)V
+ (Lorg/eclipse/jface/text/IDocumentListener;)V
+removeDocumentPartitioningListener
+ (Lorg/eclipse/jface/text/IDocumentPartitioningListener;)V
+ (Lorg/eclipse/jface/text/IDocumentPartitioningListener;)V
+removePosition
+ (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
+removePosition
+ (Lorg/eclipse/jface/text/Position;)V
+ (Lorg/eclipse/jface/text/Position;)V
+removePositionCategory
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removePositionUpdater
+ (Lorg/eclipse/jface/text/IPositionUpdater;)V
+ (Lorg/eclipse/jface/text/IPositionUpdater;)V
+removePrenotifiedDocumentListener
+ (Lorg/eclipse/jface/text/IDocumentListener;)V
+ (Lorg/eclipse/jface/text/IDocumentListener;)V
+replace
+ (IILjava/lang/String;)V
+ (IILjava/lang/String;)V
+search
+ (ILjava/lang/String;ZZZ)I
+ (ILjava/lang/String;ZZZ)I
+set
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDocumentPartitioner
+ (Lorg/eclipse/jface/text/IDocumentPartitioner;)V
+ (Lorg/eclipse/jface/text/IDocumentPartitioner;)V

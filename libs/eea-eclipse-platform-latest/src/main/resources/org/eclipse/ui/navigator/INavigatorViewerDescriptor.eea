@@ -1,0 +1,48 @@
+class org/eclipse/ui/navigator/INavigatorViewerDescriptor
+
+PROP_CUSTOMIZE_VIEW_DIALOG_HELP_CONTEXT
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_ENABLE_TOOLTIP_SUPPORT
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_HIDE_AVAILABLE_CUSTOMIZATIONS_DIALOG
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_HIDE_AVAILABLE_EXT_TAB
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_HIDE_COLLAPSE_ALL_ACTION
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_HIDE_LINK_WITH_EDITOR_ACTION
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getBooleanConfigProperty
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+getCustomInsertionPoints
+ ()[Lorg/eclipse/ui/navigator/MenuInsertionPoint;
+ ()[Lorg/eclipse/ui/navigator/MenuInsertionPoint;
+getHelpContext
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPopupMenuId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getStringConfigProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getViewerId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+isRootExtension
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isVisibleActionExtension
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isVisibleContentExtension
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z

@@ -1,0 +1,78 @@
+class org/eclipse/ui/navigator/CommonNavigator
+
+memento
+ Lorg/eclipse/ui/IMemento;
+ Lorg/eclipse/ui/IMemento;
+
+createCommonActionGroup
+ ()Lorg/eclipse/ui/actions/ActionGroup;
+ ()Lorg/eclipse/ui/actions/ActionGroup;
+createCommonManager
+ ()Lorg/eclipse/ui/navigator/CommonNavigatorManager;
+ ()Lorg/eclipse/ui/navigator/CommonNavigatorManager;
+createCommonViewer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/navigator/CommonViewer;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/navigator/CommonViewer;
+createCommonViewerObject
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/navigator/CommonViewer;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/navigator/CommonViewer;
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+doSave
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getActiveSaveables
+ ()[Lorg/eclipse/ui/Saveable;
+ ()[Lorg/eclipse/ui/Saveable;
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getCommonViewer
+ ()Lorg/eclipse/ui/navigator/CommonViewer;
+ ()Lorg/eclipse/ui/navigator/CommonViewer;
+getFrameToolTipText
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+getInitialInput
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getLinkHelperService
+ ()Lorg/eclipse/ui/navigator/LinkHelperService;
+ ()Lorg/eclipse/ui/navigator/LinkHelperService;
+getMemento
+ ()Lorg/eclipse/ui/IMemento;
+ ()Lorg/eclipse/ui/IMemento;
+getNavigatorActionService
+ ()Lorg/eclipse/ui/navigator/NavigatorActionService;
+ ()Lorg/eclipse/ui/navigator/NavigatorActionService;
+getNavigatorContentService
+ ()Lorg/eclipse/ui/navigator/INavigatorContentService;
+ ()Lorg/eclipse/ui/navigator/INavigatorContentService;
+getSaveables
+ ()[Lorg/eclipse/ui/Saveable;
+ ()[Lorg/eclipse/ui/Saveable;
+getWorkingSetLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+handleDoubleClick
+ (Lorg/eclipse/jface/viewers/DoubleClickEvent;)V
+ (Lorg/eclipse/jface/viewers/DoubleClickEvent;)V
+init
+ (Lorg/eclipse/ui/IViewSite;Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IViewSite;Lorg/eclipse/ui/IMemento;)V
+initListeners
+ (Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (Lorg/eclipse/jface/viewers/TreeViewer;)V
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+selectReveal
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+setWorkingSetLabel
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+show
+ (Lorg/eclipse/ui/part/ShowInContext;)Z
+ (Lorg/eclipse/ui/part/ShowInContext;)Z

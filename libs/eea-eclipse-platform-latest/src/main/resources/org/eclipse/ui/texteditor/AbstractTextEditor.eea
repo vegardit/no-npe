@@ -1,0 +1,437 @@
+class org/eclipse/ui/texteditor/AbstractTextEditor
+
+ACTION_MAP
+ [Lorg/eclipse/ui/texteditor/AbstractTextEditor$IdMapEntry;
+ [1Lorg/eclipse/ui/texteditor/AbstractTextEditor$IdMapEntry;
+COMMON_EDITOR_CONTEXT_MENU_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+COMMON_RULER_CONTEXT_MENU_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+DEFAULT_EDITOR_CONTEXT_MENU_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+DEFAULT_RULER_CONTEXT_MENU_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_COLOR_BACKGROUND
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_COLOR_BACKGROUND_SYSTEM_DEFAULT
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_COLOR_FIND_SCOPE
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_COLOR_FOREGROUND
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_COLOR_FOREGROUND_SYSTEM_DEFAULT
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_COLOR_SELECTION_BACKGROUND
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_COLOR_SELECTION_BACKGROUND_SYSTEM_DEFAULT
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_COLOR_SELECTION_FOREGROUND
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_COLOR_SELECTION_FOREGROUND_SYSTEM_DEFAULT
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_FONT
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_HOVER_ENRICH_MODE
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_HYPERLINKS_ENABLED
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_HYPERLINK_KEY_MODIFIER
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_HYPERLINK_KEY_MODIFIER_MASK
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_NAVIGATION_SMART_HOME_END
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_RULER_CONTRIBUTIONS
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_CARET_OFFSET
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_CARRIAGE_RETURN
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_ENCLOSED_IDEOGRAPHIC_SPACES
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_ENCLOSED_SPACES
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_ENCLOSED_TABS
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_LEADING_IDEOGRAPHIC_SPACES
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_LEADING_SPACES
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_LEADING_TABS
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_LINE_FEED
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_SELECTION_SIZE
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_TRAILING_IDEOGRAPHIC_SPACES
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_TRAILING_SPACES
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_TRAILING_TABS
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_SHOW_WHITESPACE_CHARACTERS
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_TEXT_DRAG_AND_DROP_ENABLED
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_USE_CUSTOM_CARETS
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_WHITESPACE_CHARACTER_ALPHA_VALUE
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_WIDE_CARET
+ Ljava/lang/String;
+ L1java/lang/String;
+PREFERENCE_WORD_WRAP_ENABLED
+ Ljava/lang/String;
+ L1java/lang/String;
+TAG_SELECTION_HORIZONTAL_PIXEL
+ Ljava/lang/String;
+ L1java/lang/String;
+TAG_SELECTION_LENGTH
+ Ljava/lang/String;
+ L1java/lang/String;
+TAG_SELECTION_OFFSET
+ Ljava/lang/String;
+ L1java/lang/String;
+TAG_SELECTION_TOP_PIXEL
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getCoverage
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/IRegion;
+isVisible
+ (Lorg/eclipse/jface/text/source/ISourceViewer;II)Z
+ (Lorg/eclipse/jface/text/source/ISourceViewer;II)Z
+modelOffset2WidgetOffset
+ (Lorg/eclipse/jface/text/source/ISourceViewer;I)I
+ (Lorg/eclipse/jface/text/source/ISourceViewer;I)I
+widgetOffset2ModelOffset
+ (Lorg/eclipse/jface/text/source/ISourceViewer;I)I
+ (Lorg/eclipse/jface/text/source/ISourceViewer;I)I
+
+fErrorLabel
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+addAction
+ (Lorg/eclipse/jface/action/IMenuManager;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/action/IMenuManager;Ljava/lang/String;)V
+addAction
+ (Lorg/eclipse/jface/action/IMenuManager;Ljava/lang/String;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/action/IMenuManager;Ljava/lang/String;Ljava/lang/String;)V
+addGroup
+ (Lorg/eclipse/jface/action/IMenuManager;Ljava/lang/String;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/action/IMenuManager;Ljava/lang/String;Ljava/lang/String;)V
+addRulerContextMenuListener
+ (Lorg/eclipse/jface/action/IMenuListener;)V
+ (Lorg/eclipse/jface/action/IMenuListener;)V
+affectsTextPresentation
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)Z
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)Z
+canHandleMove
+ (Lorg/eclipse/ui/IEditorInput;Lorg/eclipse/ui/IEditorInput;)Z
+ (Lorg/eclipse/ui/IEditorInput;Lorg/eclipse/ui/IEditorInput;)Z
+configureInsertMode
+ (Lorg/eclipse/ui/texteditor/ITextEditorExtension3$InsertMode;Z)V
+ (Lorg/eclipse/ui/texteditor/ITextEditorExtension3$InsertMode;Z)V
+containsSavedState
+ (Lorg/eclipse/ui/IMemento;)Z
+ (Lorg/eclipse/ui/IMemento;)Z
+createColumnSupport
+ ()Lorg/eclipse/ui/texteditor/rulers/IColumnSupport;
+ ()Lorg/eclipse/ui/texteditor/rulers/IColumnSupport;
+createContextMenuListener
+ ()Lorg/eclipse/jface/action/IMenuListener;
+ ()Lorg/eclipse/jface/action/IMenuListener;
+createEmptyNavigationLocation
+ ()Lorg/eclipse/ui/INavigationLocation;
+ ()Lorg/eclipse/ui/INavigationLocation;
+createNavigationLocation
+ ()Lorg/eclipse/ui/INavigationLocation;
+ ()Lorg/eclipse/ui/INavigationLocation;
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createSourceViewer
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)Lorg/eclipse/jface/text/source/ISourceViewer;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)Lorg/eclipse/jface/text/source/ISourceViewer;
+createVerticalRuler
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+doGetSelection
+ ()Lorg/eclipse/jface/viewers/ISelection;
+ ()Lorg/eclipse/jface/viewers/ISelection;
+doRestoreState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+doSave
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+doSetInput
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+doSetSelection
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+editorContextMenuAboutToShow
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+findAnnotation
+ (IIZLorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/source/Annotation;
+ (IIZLorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/source/Annotation;
+getAction
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IAction;
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IAction;
+getActiveSaveables
+ ()[Lorg/eclipse/ui/Saveable;
+ ()[Lorg/eclipse/ui/Saveable;
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getContextMenuListener
+ ()Lorg/eclipse/jface/action/IMenuListener;
+ ()Lorg/eclipse/jface/action/IMenuListener;
+getCursorListener
+ ()Lorg/eclipse/ui/texteditor/AbstractTextEditor$ICursorListener;
+ ()Lorg/eclipse/ui/texteditor/AbstractTextEditor$ICursorListener;
+getCursorPosition
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDocumentProvider
+ ()Lorg/eclipse/ui/texteditor/IDocumentProvider;
+ ()Lorg/eclipse/ui/texteditor/IDocumentProvider;
+getEditorContextMenuId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFontPropertyPreferenceKey
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getHelpContextId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getHighlightRange
+ ()Lorg/eclipse/jface/text/IRegion;
+ ()Lorg/eclipse/jface/text/IRegion;
+getInsertMode
+ ()Lorg/eclipse/ui/texteditor/ITextEditorExtension3$InsertMode;
+ ()Lorg/eclipse/ui/texteditor/ITextEditorExtension3$InsertMode;
+getLegalInsertModes
+ ()Ljava/util/List<Lorg/eclipse/ui/texteditor/ITextEditorExtension3$InsertMode;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/texteditor/ITextEditorExtension3$InsertMode;>;
+getPreferenceStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+getProgressMonitor
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+ ()Lorg/eclipse/core/runtime/IProgressMonitor;
+getRangeIndicator
+ ()Lorg/eclipse/jface/text/source/Annotation;
+ ()Lorg/eclipse/jface/text/source/Annotation;
+getRulerContextMenuId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRulerMouseListener
+ ()Lorg/eclipse/swt/events/MouseListener;
+ ()Lorg/eclipse/swt/events/MouseListener;
+getSaveables
+ ()[Lorg/eclipse/ui/Saveable;
+ ()[Lorg/eclipse/ui/Saveable;
+getSelectionChangedListener
+ ()Lorg/eclipse/jface/viewers/ISelectionChangedListener;
+ ()Lorg/eclipse/jface/viewers/ISelectionChangedListener;
+getSelectionProvider
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+getSourceViewer
+ ()Lorg/eclipse/jface/text/source/ISourceViewer;
+ ()Lorg/eclipse/jface/text/source/ISourceViewer;
+getSourceViewerConfiguration
+ ()Lorg/eclipse/jface/text/source/SourceViewerConfiguration;
+ ()Lorg/eclipse/jface/text/source/SourceViewerConfiguration;
+getStatusField
+ (Ljava/lang/String;)Lorg/eclipse/ui/texteditor/IStatusField;
+ (Ljava/lang/String;)Lorg/eclipse/ui/texteditor/IStatusField;
+getStatusLineManager
+ ()Lorg/eclipse/jface/action/IStatusLineManager;
+ ()Lorg/eclipse/jface/action/IStatusLineManager;
+getUndoRedoOperationApprover
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IOperationApprover;
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IOperationApprover;
+getVerticalRuler
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+ ()Lorg/eclipse/jface/text/source/IVerticalRuler;
+gotoAnnotation
+ (Z)Lorg/eclipse/jface/text/source/Annotation;
+ (Z)Lorg/eclipse/jface/text/source/Annotation;
+handleExceptionOnSave
+ (Lorg/eclipse/core/runtime/CoreException;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/CoreException;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+handlePreferenceStoreChanged
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+init
+ (Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
+initializeDragAndDrop
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)V
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)V
+initializeViewerColors
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)V
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)V
+installTextDragAndDrop
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)V
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)V
+internalInit
+ (Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
+isNavigationTarget
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+ (Lorg/eclipse/jface/text/source/Annotation;)Z
+markAsContentDependentAction
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+markAsPropertyDependentAction
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+markAsSelectionDependentAction
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+markAsStateDependentAction
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+openSaveErrorDialog
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/CoreException;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/CoreException;)V
+performSave
+ (ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+performSaveAs
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+removeActionActivationCode
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removeRulerContextMenuListener
+ (Lorg/eclipse/jface/action/IMenuListener;)V
+ (Lorg/eclipse/jface/action/IMenuListener;)V
+restoreState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+rulerContextMenuAboutToShow
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+safelySanityCheckState
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+sanityCheckState
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+setAction
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+setActionActivationCode
+ (Ljava/lang/String;CII)V
+ (Ljava/lang/String;CII)V
+setDocumentProvider
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+setDocumentProvider
+ (Lorg/eclipse/ui/texteditor/IDocumentProvider;)V
+ (Lorg/eclipse/ui/texteditor/IDocumentProvider;)V
+setEditorContextMenuId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setHelpContextId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setInput
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+setInputWithNotify
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+setInsertMode
+ (Lorg/eclipse/ui/texteditor/ITextEditorExtension3$InsertMode;)V
+ (Lorg/eclipse/ui/texteditor/ITextEditorExtension3$InsertMode;)V
+setKeyBindingScopes
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setPreferenceStore
+ (Lorg/eclipse/jface/preference/IPreferenceStore;)V
+ (Lorg/eclipse/jface/preference/IPreferenceStore;)V
+setRangeIndicator
+ (Lorg/eclipse/jface/text/source/Annotation;)V
+ (Lorg/eclipse/jface/text/source/Annotation;)V
+setRulerContextMenuId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setSourceViewerConfiguration
+ (Lorg/eclipse/jface/text/source/SourceViewerConfiguration;)V
+ (Lorg/eclipse/jface/text/source/SourceViewerConfiguration;)V
+setStatusField
+ (Lorg/eclipse/ui/texteditor/IStatusField;Ljava/lang/String;)V
+ (Lorg/eclipse/ui/texteditor/IStatusField;Ljava/lang/String;)V
+setStatusLineErrorMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setStatusLineMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+showRevisionInformation
+ (Lorg/eclipse/jface/text/revisions/RevisionInformation;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/revisions/RevisionInformation;Ljava/lang/String;)V
+uninstallTextDragAndDrop
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)V
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)V
+updateContributedRulerColumns
+ (Lorg/eclipse/jface/text/source/CompositeRuler;)V
+ (Lorg/eclipse/jface/text/source/CompositeRuler;)V
+updateState
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V
+updateStatusField
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+validateState
+ (Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorInput;)V

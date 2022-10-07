@@ -1,0 +1,51 @@
+class org/eclipse/jface/text/source/CompositeRuler
+
+widgetLine2ModelLine
+ (Lorg/eclipse/jface/text/ITextViewer;I)I
+ (Lorg/eclipse/jface/text/ITextViewer;I)I
+
+addDecorator
+ (ILorg/eclipse/jface/text/source/IVerticalRulerColumn;)V
+ (ILorg/eclipse/jface/text/source/IVerticalRulerColumn;)V
+addVerticalRulerListener
+ (Lorg/eclipse/jface/text/source/IVerticalRulerListener;)V
+ (Lorg/eclipse/jface/text/source/IVerticalRulerListener;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/ITextViewer;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/ITextViewer;)Lorg/eclipse/swt/widgets/Control;
+fireAnnotationContextMenuAboutToShow
+ (Lorg/eclipse/jface/text/source/VerticalRulerEvent;Lorg/eclipse/swt/widgets/Menu;)V
+ (Lorg/eclipse/jface/text/source/VerticalRulerEvent;Lorg/eclipse/swt/widgets/Menu;)V
+fireAnnotationDefaultSelected
+ (Lorg/eclipse/jface/text/source/VerticalRulerEvent;)V
+ (Lorg/eclipse/jface/text/source/VerticalRulerEvent;)V
+fireAnnotationSelected
+ (Lorg/eclipse/jface/text/source/VerticalRulerEvent;)V
+ (Lorg/eclipse/jface/text/source/VerticalRulerEvent;)V
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getDecoratorIterator
+ ()Ljava/util/Iterator<Lorg/eclipse/jface/text/source/IVerticalRulerColumn;>;
+ ()Ljava/util/Iterator<Lorg/eclipse/jface/text/source/IVerticalRulerColumn;>;
+getHover
+ ()Lorg/eclipse/jface/text/source/IAnnotationHover;
+ ()Lorg/eclipse/jface/text/source/IAnnotationHover;
+getModel
+ ()Lorg/eclipse/jface/text/source/IAnnotationModel;
+ ()Lorg/eclipse/jface/text/source/IAnnotationModel;
+getTextViewer
+ ()Lorg/eclipse/jface/text/ITextViewer;
+ ()Lorg/eclipse/jface/text/ITextViewer;
+removeDecorator
+ (Lorg/eclipse/jface/text/source/IVerticalRulerColumn;)V
+ (Lorg/eclipse/jface/text/source/IVerticalRulerColumn;)V
+removeVerticalRulerListener
+ (Lorg/eclipse/jface/text/source/IVerticalRulerListener;)V
+ (Lorg/eclipse/jface/text/source/IVerticalRulerListener;)V
+setFont
+ (Lorg/eclipse/swt/graphics/Font;)V
+ (Lorg/eclipse/swt/graphics/Font;)V
+setModel
+ (Lorg/eclipse/jface/text/source/IAnnotationModel;)V
+ (Lorg/eclipse/jface/text/source/IAnnotationModel;)V

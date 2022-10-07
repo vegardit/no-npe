@@ -1,0 +1,27 @@
+class org/eclipse/swt/graphics/ImageLoader
+
+data
+ [Lorg/eclipse/swt/graphics/ImageData;
+ [Lorg/eclipse/swt/graphics/ImageData;
+
+addImageLoaderListener
+ (Lorg/eclipse/swt/graphics/ImageLoaderListener;)V
+ (Lorg/eclipse/swt/graphics/ImageLoaderListener;)V
+load
+ (Ljava/io/InputStream;)[Lorg/eclipse/swt/graphics/ImageData;
+ (Ljava/io/InputStream;)[Lorg/eclipse/swt/graphics/ImageData;
+load
+ (Ljava/lang/String;)[Lorg/eclipse/swt/graphics/ImageData;
+ (Ljava/lang/String;)[Lorg/eclipse/swt/graphics/ImageData;
+notifyListeners
+ (Lorg/eclipse/swt/graphics/ImageLoaderEvent;)V
+ (Lorg/eclipse/swt/graphics/ImageLoaderEvent;)V
+removeImageLoaderListener
+ (Lorg/eclipse/swt/graphics/ImageLoaderListener;)V
+ (Lorg/eclipse/swt/graphics/ImageLoaderListener;)V
+save
+ (Ljava/io/OutputStream;I)V
+ (Ljava/io/OutputStream;I)V
+save
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V

@@ -1,0 +1,29 @@
+class org/eclipse/osgi/storage/StorageUtil
+
+canWrite
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+copy
+ (Ljava/io/File;Ljava/io/File;)V
+ (Ljava/io/File;Ljava/io/File;)V
+encodeFileURL
+ (Ljava/io/File;)Ljava/net/URL;
+ (Ljava/io/File;)Ljava/net/URL;
+getBytes
+ (Ljava/io/InputStream;II)[B
+ (Ljava/io/InputStream;II)[B
+isReservedFileName
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+move
+ (Ljava/io/File;Ljava/io/File;Z)V
+ (Ljava/io/File;Ljava/io/File;Z)V
+readFile
+ (Ljava/io/InputStream;Ljava/io/File;)V
+ (Ljava/io/InputStream;Ljava/io/File;)V
+register
+ (Ljava/lang/String;Ljava/lang/Object;Lorg/osgi/framework/BundleContext;)Lorg/osgi/framework/ServiceRegistration<*>;
+ (Ljava/lang/String;Ljava/lang/Object;Lorg/osgi/framework/BundleContext;)Lorg/osgi/framework/ServiceRegistration<*>;
+rm
+ (Ljava/io/File;Z)Z
+ (Ljava/io/File;Z)Z

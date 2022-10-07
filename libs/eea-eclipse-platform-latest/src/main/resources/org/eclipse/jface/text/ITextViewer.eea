@@ -1,0 +1,77 @@
+class org/eclipse/jface/text/ITextViewer
+
+addTextInputListener
+ (Lorg/eclipse/jface/text/ITextInputListener;)V
+ (Lorg/eclipse/jface/text/ITextInputListener;)V
+addTextListener
+ (Lorg/eclipse/jface/text/ITextListener;)V
+ (Lorg/eclipse/jface/text/ITextListener;)V
+addViewportListener
+ (Lorg/eclipse/jface/text/IViewportListener;)V
+ (Lorg/eclipse/jface/text/IViewportListener;)V
+changeTextPresentation
+ (Lorg/eclipse/jface/text/TextPresentation;Z)V
+ (Lorg/eclipse/jface/text/TextPresentation;Z)V
+getDocument
+ ()Lorg/eclipse/jface/text/IDocument;
+ ()Lorg/eclipse/jface/text/IDocument;
+getFindReplaceTarget
+ ()Lorg/eclipse/jface/text/IFindReplaceTarget;
+ ()Lorg/eclipse/jface/text/IFindReplaceTarget;
+getSelectedRange
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()Lorg/eclipse/swt/graphics/Point;
+getSelectionProvider
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+getTextOperationTarget
+ ()Lorg/eclipse/jface/text/ITextOperationTarget;
+ ()Lorg/eclipse/jface/text/ITextOperationTarget;
+getTextWidget
+ ()Lorg/eclipse/swt/custom/StyledText;
+ ()Lorg/eclipse/swt/custom/StyledText;
+getVisibleRegion
+ ()Lorg/eclipse/jface/text/IRegion;
+ ()Lorg/eclipse/jface/text/IRegion;
+removeTextInputListener
+ (Lorg/eclipse/jface/text/ITextInputListener;)V
+ (Lorg/eclipse/jface/text/ITextInputListener;)V
+removeTextListener
+ (Lorg/eclipse/jface/text/ITextListener;)V
+ (Lorg/eclipse/jface/text/ITextListener;)V
+removeViewportListener
+ (Lorg/eclipse/jface/text/IViewportListener;)V
+ (Lorg/eclipse/jface/text/IViewportListener;)V
+setAutoIndentStrategy
+ (Lorg/eclipse/jface/text/IAutoIndentStrategy;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/IAutoIndentStrategy;Ljava/lang/String;)V
+setDefaultPrefixes
+ ([Ljava/lang/String;Ljava/lang/String;)V
+ ([Ljava/lang/String;Ljava/lang/String;)V
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+setDocument
+ (Lorg/eclipse/jface/text/IDocument;II)V
+ (Lorg/eclipse/jface/text/IDocument;II)V
+setEventConsumer
+ (Lorg/eclipse/jface/text/IEventConsumer;)V
+ (Lorg/eclipse/jface/text/IEventConsumer;)V
+setIndentPrefixes
+ ([Ljava/lang/String;Ljava/lang/String;)V
+ ([Ljava/lang/String;Ljava/lang/String;)V
+setTextColor
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
+setTextColor
+ (Lorg/eclipse/swt/graphics/Color;IIZ)V
+ (Lorg/eclipse/swt/graphics/Color;IIZ)V
+setTextDoubleClickStrategy
+ (Lorg/eclipse/jface/text/ITextDoubleClickStrategy;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/ITextDoubleClickStrategy;Ljava/lang/String;)V
+setTextHover
+ (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;)V
+ (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;)V
+setUndoManager
+ (Lorg/eclipse/jface/text/IUndoManager;)V
+ (Lorg/eclipse/jface/text/IUndoManager;)V

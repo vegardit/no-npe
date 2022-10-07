@@ -1,0 +1,42 @@
+class org/eclipse/ui/internal/about/AboutData
+
+getImage
+ (Ljava/lang/String;)Lorg/eclipse/jface/resource/ImageDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/jface/resource/ImageDescriptor;
+getImage
+ (Ljava/net/URL;)Lorg/eclipse/jface/resource/ImageDescriptor;
+ (Ljava/net/URL;)Lorg/eclipse/jface/resource/ImageDescriptor;
+getURL
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+sortById
+ (Z[Lorg/eclipse/ui/internal/about/AboutData;)V
+ (Z[Lorg/eclipse/ui/internal/about/AboutData;)V
+sortByName
+ (Z[Lorg/eclipse/ui/internal/about/AboutData;)V
+ (Z[Lorg/eclipse/ui/internal/about/AboutData;)V
+sortByProvider
+ (Z[Lorg/eclipse/ui/internal/about/AboutData;)V
+ (Z[Lorg/eclipse/ui/internal/about/AboutData;)V
+sortByVersion
+ (Z[Lorg/eclipse/ui/internal/about/AboutData;)V
+ (Z[Lorg/eclipse/ui/internal/about/AboutData;)V
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProviderName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getVersion
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getVersionedId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;

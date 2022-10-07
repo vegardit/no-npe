@@ -1,0 +1,62 @@
+class org/eclipse/ui/texteditor/AbstractMarkerAnnotationModel
+
+addMarkerAnnotation
+ (Lorg/eclipse/core/resources/IMarker;)V
+ (Lorg/eclipse/core/resources/IMarker;)V
+addMarkerUpdater
+ (Lorg/eclipse/ui/texteditor/IMarkerUpdater;)V
+ (Lorg/eclipse/ui/texteditor/IMarkerUpdater;)V
+commit
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+createMarkerAnnotation
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/ui/texteditor/MarkerAnnotation;
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/ui/texteditor/MarkerAnnotation;
+createPositionFromMarker
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/jface/text/Position;
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/jface/text/Position;
+deleteMarkers
+ ([Lorg/eclipse/core/resources/IMarker;)V
+ ([Lorg/eclipse/core/resources/IMarker;)V
+getMarkerAnnotation
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/ui/texteditor/MarkerAnnotation;
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/ui/texteditor/MarkerAnnotation;
+getMarkerPosition
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/jface/text/Position;
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/jface/text/Position;
+handleCoreException
+ (Lorg/eclipse/core/runtime/CoreException;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/CoreException;Ljava/lang/String;)V
+isAcceptable
+ (Lorg/eclipse/core/resources/IMarker;)Z
+ (Lorg/eclipse/core/resources/IMarker;)Z
+modifyMarkerAnnotation
+ (Lorg/eclipse/core/resources/IMarker;)V
+ (Lorg/eclipse/core/resources/IMarker;)V
+reinitialize
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+removeAnnotations
+ (Ljava/util/List<+Lorg/eclipse/jface/text/source/Annotation;>;ZZ)V
+ (Ljava/util/List<+Lorg/eclipse/jface/text/source/Annotation;>;ZZ)V
+removeMarkerAnnotation
+ (Lorg/eclipse/core/resources/IMarker;)V
+ (Lorg/eclipse/core/resources/IMarker;)V
+removeMarkerUpdater
+ (Lorg/eclipse/ui/texteditor/IMarkerUpdater;)V
+ (Lorg/eclipse/ui/texteditor/IMarkerUpdater;)V
+retrieveMarkers
+ ()[Lorg/eclipse/core/resources/IMarker;
+ ()[Lorg/eclipse/core/resources/IMarker;
+revert
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+updateMarker
+ (Lorg/eclipse/core/resources/IMarker;Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/Position;)Z
+ (Lorg/eclipse/core/resources/IMarker;Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/Position;)Z
+updateMarker
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/core/resources/IMarker;Lorg/eclipse/jface/text/Position;)Z
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/core/resources/IMarker;Lorg/eclipse/jface/text/Position;)Z
+updateMarkers
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V

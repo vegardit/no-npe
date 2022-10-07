@@ -1,0 +1,82 @@
+class org/eclipse/osgi/internal/log/EventAdminLogListener
+
+BUNDLE
+ Ljava/lang/String;
+ L1java/lang/String;
+BUNDLE_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+BUNDLE_SYMBOLICNAME
+ Ljava/lang/String;
+ L1java/lang/String;
+EVENT
+ Ljava/lang/String;
+ L1java/lang/String;
+EXCEPTION
+ Ljava/lang/String;
+ L1java/lang/String;
+EXCEPTION_CLASS
+ Ljava/lang/String;
+ L1java/lang/String;
+EXCEPTION_MESSAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+LOG_DEBUG
+ Ljava/lang/String;
+ L1java/lang/String;
+LOG_ENTRY
+ Ljava/lang/String;
+ L1java/lang/String;
+LOG_ERROR
+ Ljava/lang/String;
+ L1java/lang/String;
+LOG_INFO
+ Ljava/lang/String;
+ L1java/lang/String;
+LOG_LEVEL
+ Ljava/lang/String;
+ L1java/lang/String;
+LOG_OTHER
+ Ljava/lang/String;
+ L1java/lang/String;
+LOG_WARNING
+ Ljava/lang/String;
+ L1java/lang/String;
+MESSAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+SERVICE
+ Ljava/lang/String;
+ L1java/lang/String;
+SERVICE_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+SERVICE_OBJECTCLASS
+ Ljava/lang/String;
+ L1java/lang/String;
+SERVICE_PID
+ Ljava/lang/String;
+ L1java/lang/String;
+TIMESTAMP
+ Ljava/lang/String;
+ L1java/lang/String;
+TOPIC
+ Ljava/lang/String;
+ L1java/lang/String;
+
+putBundleProperties
+ (Ljava/util/Hashtable<Ljava/lang/String;Ljava/lang/Object;>;Lorg/osgi/framework/Bundle;)V
+ (Ljava/util/Hashtable<Ljava/lang/String;Ljava/lang/Object;>;Lorg/osgi/framework/Bundle;)V
+putExceptionProperties
+ (Ljava/util/Hashtable<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Throwable;)V
+ (Ljava/util/Hashtable<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Throwable;)V
+putServiceReferenceProperties
+ (Ljava/util/Hashtable<Ljava/lang/String;Ljava/lang/Object;>;Lorg/osgi/framework/ServiceReference<*>;)V
+ (Ljava/util/Hashtable<Ljava/lang/String;Ljava/lang/Object;>;Lorg/osgi/framework/ServiceReference<*>;)V
+
+<init>
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+logged
+ (Lorg/osgi/service/log/LogEntry;)V
+ (Lorg/osgi/service/log/LogEntry;)V

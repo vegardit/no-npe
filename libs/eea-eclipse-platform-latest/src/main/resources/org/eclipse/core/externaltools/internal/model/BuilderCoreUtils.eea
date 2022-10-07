@@ -1,0 +1,45 @@
+class org/eclipse/core/externaltools/internal/model/BuilderCoreUtils
+
+BUILDER_FOLDER_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+INC_CLEAN
+ Ljava/lang/String;
+ L1java/lang/String;
+LAUNCH_CONFIG_HANDLE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROJECT_TAG
+ Ljava/lang/String;
+ L1java/lang/String;
+VERSION_1_0
+ Ljava/lang/String;
+ L1java/lang/String;
+VERSION_2_1
+ Ljava/lang/String;
+ L1java/lang/String;
+VERSION_3_0_final
+ Ljava/lang/String;
+ L1java/lang/String;
+VERSION_3_0_interim
+ Ljava/lang/String;
+ L1java/lang/String;
+
+buildTypesToArray
+ (Ljava/lang/String;)[I
+ (Ljava/lang/String;)[I
+configFromBuildCommandArgs
+ (Lorg/eclipse/core/resources/IProject;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;[Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+ (Lorg/eclipse/core/resources/IProject;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;[Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+configureTriggers
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;Lorg/eclipse/core/resources/ICommand;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;Lorg/eclipse/core/resources/ICommand;)V
+getBuilderFolder
+ (Lorg/eclipse/core/resources/IProject;Z)Lorg/eclipse/core/resources/IFolder;
+ (Lorg/eclipse/core/resources/IProject;Z)Lorg/eclipse/core/resources/IFolder;
+isUnmigratedConfig
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+toBuildCommand
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/debug/core/ILaunchConfiguration;Lorg/eclipse/core/resources/ICommand;)Lorg/eclipse/core/resources/ICommand;
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/debug/core/ILaunchConfiguration;Lorg/eclipse/core/resources/ICommand;)Lorg/eclipse/core/resources/ICommand;

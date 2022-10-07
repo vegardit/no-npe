@@ -1,0 +1,40 @@
+class org/eclipse/core/resources/mapping/ModelProvider
+
+RESOURCE_MODEL_PROVIDER_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getModelProviderDescriptor
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/mapping/IModelProviderDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/core/resources/mapping/IModelProviderDescriptor;
+getModelProviderDescriptors
+ ()[Lorg/eclipse/core/resources/mapping/IModelProviderDescriptor;
+ ()[Lorg/eclipse/core/resources/mapping/IModelProviderDescriptor;
+
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+getDescriptor
+ ()Lorg/eclipse/core/resources/mapping/IModelProviderDescriptor;
+ ()Lorg/eclipse/core/resources/mapping/IModelProviderDescriptor;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMappings
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/mapping/ResourceMappingContext;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/mapping/ResourceMapping;
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/mapping/ResourceMappingContext;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/mapping/ResourceMapping;
+getMappings
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/mapping/ResourceMappingContext;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/mapping/ResourceMapping;
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/mapping/ResourceMappingContext;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/mapping/ResourceMapping;
+getMappings
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;Lorg/eclipse/core/resources/mapping/ResourceMappingContext;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/mapping/ResourceMapping;
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;Lorg/eclipse/core/resources/mapping/ResourceMappingContext;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/mapping/ResourceMapping;
+getTraversals
+ ([Lorg/eclipse/core/resources/mapping/ResourceMapping;Lorg/eclipse/core/resources/mapping/ResourceMappingContext;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/mapping/ResourceTraversal;
+ ([Lorg/eclipse/core/resources/mapping/ResourceMapping;Lorg/eclipse/core/resources/mapping/ResourceMappingContext;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/mapping/ResourceTraversal;
+init
+ (Lorg/eclipse/core/resources/mapping/IModelProviderDescriptor;)V
+ (Lorg/eclipse/core/resources/mapping/IModelProviderDescriptor;)V
+validateChange
+ (Lorg/eclipse/core/resources/IResourceDelta;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IResourceDelta;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;

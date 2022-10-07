@@ -1,0 +1,38 @@
+class org/eclipse/core/internal/content/ContentTypeMatcher
+
+<init>
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$ISelectionPolicy;Lorg/eclipse/core/runtime/preferences/IScopeContext;)V
+ (Lorg/eclipse/core/runtime/content/IContentTypeManager$ISelectionPolicy;Lorg/eclipse/core/runtime/preferences/IScopeContext;)V
+findContentTypeFor
+ (Ljava/io/InputStream;Ljava/lang/String;)Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/io/InputStream;Ljava/lang/String;)Lorg/eclipse/core/runtime/content/IContentType;
+findContentTypeFor
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/content/IContentType;
+findContentTypesFor
+ (Ljava/io/InputStream;Ljava/lang/String;)[Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/io/InputStream;Ljava/lang/String;)[Lorg/eclipse/core/runtime/content/IContentType;
+findContentTypesFor
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/lang/String;)[Lorg/eclipse/core/runtime/content/IContentType;
+getContext
+ ()Lorg/eclipse/core/runtime/preferences/IScopeContext;
+ ()Lorg/eclipse/core/runtime/preferences/IScopeContext;
+getDescriptionFor
+ (Ljava/io/InputStream;Ljava/lang/String;[Lorg/eclipse/core/runtime/QualifiedName;)Lorg/eclipse/core/runtime/content/IContentDescription;
+ (Ljava/io/InputStream;Ljava/lang/String;[Lorg/eclipse/core/runtime/QualifiedName;)Lorg/eclipse/core/runtime/content/IContentDescription;
+getDescriptionFor
+ (Ljava/io/Reader;Ljava/lang/String;[Lorg/eclipse/core/runtime/QualifiedName;)Lorg/eclipse/core/runtime/content/IContentDescription;
+ (Ljava/io/Reader;Ljava/lang/String;[Lorg/eclipse/core/runtime/QualifiedName;)Lorg/eclipse/core/runtime/content/IContentDescription;
+getDirectlyAssociated
+ (Lorg/eclipse/core/internal/content/ContentTypeCatalog;Ljava/lang/String;I)Ljava/util/Collection<Lorg/eclipse/core/internal/content/ContentType;>;
+ (Lorg/eclipse/core/internal/content/ContentTypeCatalog;Ljava/lang/String;I)Ljava/util/Collection<Lorg/eclipse/core/internal/content/ContentType;>;
+getMatchingRegexpAssociated
+ (Lorg/eclipse/core/internal/content/ContentTypeCatalog;Ljava/lang/String;I)Ljava/util/Collection<+Lorg/eclipse/core/internal/content/ContentType;>;
+ (Lorg/eclipse/core/internal/content/ContentTypeCatalog;Ljava/lang/String;I)Ljava/util/Collection<+Lorg/eclipse/core/internal/content/ContentType;>;
+getPolicy
+ ()Lorg/eclipse/core/runtime/content/IContentTypeManager$ISelectionPolicy;
+ ()Lorg/eclipse/core/runtime/content/IContentTypeManager$ISelectionPolicy;
+getSpecificDescription
+ (Lorg/eclipse/core/internal/content/BasicDescription;)Lorg/eclipse/core/runtime/content/IContentDescription;
+ (Lorg/eclipse/core/internal/content/BasicDescription;)Lorg/eclipse/core/runtime/content/IContentDescription;

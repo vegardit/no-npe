@@ -1,0 +1,57 @@
+class org/eclipse/ui/internal/intro/impl/model/AbstractIntroPartImplementation
+
+backAction
+ Lorg/eclipse/jface/action/Action;
+ Lorg/eclipse/jface/action/Action;
+forwardAction
+ Lorg/eclipse/jface/action/Action;
+ Lorg/eclipse/jface/action/Action;
+history
+ Lorg/eclipse/ui/internal/intro/impl/model/History;
+ Lorg/eclipse/ui/internal/intro/impl/model/History;
+homeAction
+ Lorg/eclipse/jface/action/Action;
+ Lorg/eclipse/jface/action/Action;
+viewIntroModelAction
+ Lorg/eclipse/jface/action/Action;
+ Lorg/eclipse/jface/action/Action;
+
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+getCachedCurrentPage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getHistory
+ ()Lorg/eclipse/ui/internal/intro/impl/model/History;
+ ()Lorg/eclipse/ui/internal/intro/impl/model/History;
+getIntroPart
+ ()Lorg/eclipse/ui/intro/config/CustomizableIntroPart;
+ ()Lorg/eclipse/ui/intro/config/CustomizableIntroPart;
+getMemento
+ ()Lorg/eclipse/ui/IMemento;
+ ()Lorg/eclipse/ui/IMemento;
+getModel
+ ()Lorg/eclipse/ui/internal/intro/impl/model/IntroModelRoot;
+ ()Lorg/eclipse/ui/internal/intro/impl/model/IntroModelRoot;
+handleRegistryChanged
+ (Lorg/eclipse/core/runtime/IRegistryChangeEvent;)V
+ (Lorg/eclipse/core/runtime/IRegistryChangeEvent;)V
+init
+ (Lorg/eclipse/ui/intro/IIntroPart;Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/intro/IIntroPart;Lorg/eclipse/ui/IMemento;)V
+registryChanged
+ (Lorg/eclipse/core/runtime/IRegistryChangeEvent;)V
+ (Lorg/eclipse/core/runtime/IRegistryChangeEvent;)V
+saveCurrentPage
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+updateHistory
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+updateHistory
+ (Lorg/eclipse/ui/internal/intro/impl/model/AbstractIntroPage;)V
+ (Lorg/eclipse/ui/internal/intro/impl/model/AbstractIntroPage;)V

@@ -1,0 +1,18 @@
+class org/eclipse/e4/ui/internal/di/UIEventObjectSupplier
+
+logger
+ Ljava/util/logging/Logger;
+ Ljava/util/logging/Logger;
+uiSync
+ Lorg/eclipse/e4/ui/di/UISynchronize;
+ Lorg/eclipse/e4/ui/di/UISynchronize;
+
+getTopic
+ (Lorg/eclipse/e4/core/di/suppliers/IObjectDescriptor;)Ljava/lang/String;
+ (Lorg/eclipse/e4/core/di/suppliers/IObjectDescriptor;)Ljava/lang/String;
+makeHandler
+ (Ljava/lang/String;Lorg/eclipse/e4/core/di/suppliers/IRequestor;)Lorg/osgi/service/event/EventHandler;
+ (Ljava/lang/String;Lorg/eclipse/e4/core/di/suppliers/IRequestor;)Lorg/osgi/service/event/EventHandler;
+setEventAdmin
+ (Lorg/osgi/service/event/EventAdmin;)V
+ (Lorg/osgi/service/event/EventAdmin;)V

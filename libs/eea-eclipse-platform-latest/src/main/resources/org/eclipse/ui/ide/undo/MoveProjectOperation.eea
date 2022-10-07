@@ -1,0 +1,26 @@
+class org/eclipse/ui/ide/undo/MoveProjectOperation
+
+<init>
+ (Lorg/eclipse/core/resources/IProject;Ljava/net/URI;Ljava/lang/String;)V
+ (Lorg/eclipse/core/resources/IProject;Ljava/net/URI;Ljava/lang/String;)V
+computeMoveOrCopyStatus
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+computeUndoableStatus
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+doExecute
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
+doUndo
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
+getProposedName
+ (Lorg/eclipse/core/resources/IResource;I)Ljava/lang/String;
+ (Lorg/eclipse/core/resources/IResource;I)Ljava/lang/String;
+isDestinationPathValid
+ (Lorg/eclipse/core/resources/IResource;I)Z
+ (Lorg/eclipse/core/resources/IResource;I)Z
+updateResourceChangeDescriptionFactory
+ (Lorg/eclipse/core/resources/mapping/IResourceChangeDescriptionFactory;I)Z
+ (Lorg/eclipse/core/resources/mapping/IResourceChangeDescriptionFactory;I)Z

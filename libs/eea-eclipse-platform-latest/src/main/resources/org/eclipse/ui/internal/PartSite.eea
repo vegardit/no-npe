@@ -1,0 +1,91 @@
+class org/eclipse/ui/internal/PartSite
+
+registerContextMenu
+ (Ljava/lang/String;Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;ZLorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/e4/core/contexts/IEclipseContext;Ljava/util/Collection<Lorg/eclipse/ui/internal/PopupMenuExtender;>;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;ZLorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/e4/core/contexts/IEclipseContext;Ljava/util/Collection<Lorg/eclipse/ui/internal/PopupMenuExtender;>;)V
+
+menuExtenders
+ Ljava/util/ArrayList<Lorg/eclipse/ui/internal/PopupMenuExtender;>;
+ Ljava/util/ArrayList<Lorg/eclipse/ui/internal/PopupMenuExtender;>;
+model
+ Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;
+ Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;
+serviceLocator
+ Lorg/eclipse/ui/internal/services/ServiceLocator;
+ Lorg/eclipse/ui/internal/services/ServiceLocator;
+
+<init>
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/IWorkbenchPartReference;Lorg/eclipse/core/runtime/IConfigurationElement;)V
+ (Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/IWorkbenchPartReference;Lorg/eclipse/core/runtime/IConfigurationElement;)V
+getActionBars
+ ()Lorg/eclipse/ui/IActionBars;
+ ()Lorg/eclipse/ui/IActionBars;
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getContext
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+ ()Lorg/eclipse/e4/core/contexts/IEclipseContext;
+getContextMenuIds
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInitialScopeId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getKeyBindingService
+ ()Lorg/eclipse/ui/IKeyBindingService;
+ ()Lorg/eclipse/ui/IKeyBindingService;
+getModel
+ ()Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;
+ ()Lorg/eclipse/e4/ui/model/application/ui/basic/MPart;
+getPage
+ ()Lorg/eclipse/ui/IWorkbenchPage;
+ ()Lorg/eclipse/ui/IWorkbenchPage;
+getPart
+ ()Lorg/eclipse/ui/IWorkbenchPart;
+ ()Lorg/eclipse/ui/IWorkbenchPart;
+getPartReference
+ ()Lorg/eclipse/ui/IWorkbenchPartReference;
+ ()Lorg/eclipse/ui/IWorkbenchPartReference;
+getPluginId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRegisteredName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSelectionProvider
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+getService
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getShell
+ ()Lorg/eclipse/swt/widgets/Shell;
+ ()Lorg/eclipse/swt/widgets/Shell;
+getWorkbenchWindow
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+ ()Lorg/eclipse/ui/IWorkbenchWindow;
+hasService
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+registerContextMenu
+ (Ljava/lang/String;Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+registerContextMenu
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+setActionBars
+ (Lorg/eclipse/ui/SubActionBars;)V
+ (Lorg/eclipse/ui/SubActionBars;)V
+setPart
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+setSelectionProvider
+ (Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+ (Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

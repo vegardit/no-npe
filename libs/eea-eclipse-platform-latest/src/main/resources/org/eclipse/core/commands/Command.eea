@@ -1,0 +1,72 @@
+class org/eclipse/core/commands/Command
+
+DEBUG_HANDLERS_COMMAND_ID
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+addCommandListener
+ (Lorg/eclipse/core/commands/ICommandListener;)V
+ (Lorg/eclipse/core/commands/ICommandListener;)V
+addExecutionListener
+ (Lorg/eclipse/core/commands/IExecutionListener;)V
+ (Lorg/eclipse/core/commands/IExecutionListener;)V
+addState
+ (Ljava/lang/String;Lorg/eclipse/core/commands/State;)V
+ (Ljava/lang/String;Lorg/eclipse/core/commands/State;)V
+compareTo
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+define
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/commands/Category;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/commands/Category;)V
+define
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/commands/Category;[Lorg/eclipse/core/commands/IParameter;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/commands/Category;[Lorg/eclipse/core/commands/IParameter;)V
+define
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/commands/Category;[Lorg/eclipse/core/commands/IParameter;Lorg/eclipse/core/commands/ParameterType;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/commands/Category;[Lorg/eclipse/core/commands/IParameter;Lorg/eclipse/core/commands/ParameterType;)V
+define
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/commands/Category;[Lorg/eclipse/core/commands/IParameter;Lorg/eclipse/core/commands/ParameterType;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/commands/Category;[Lorg/eclipse/core/commands/IParameter;Lorg/eclipse/core/commands/ParameterType;Ljava/lang/String;)V
+execute
+ (Lorg/eclipse/core/commands/ExecutionEvent;)Ljava/lang/Object;
+ (Lorg/eclipse/core/commands/ExecutionEvent;)Ljava/lang/Object;
+executeWithChecks
+ (Lorg/eclipse/core/commands/ExecutionEvent;)Ljava/lang/Object;
+ (Lorg/eclipse/core/commands/ExecutionEvent;)Ljava/lang/Object;
+getCategory
+ ()Lorg/eclipse/core/commands/Category;
+ ()Lorg/eclipse/core/commands/Category;
+getHandler
+ ()Lorg/eclipse/core/commands/IHandler;
+ ()Lorg/eclipse/core/commands/IHandler;
+getParameter
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/IParameter;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/IParameter;
+getParameterType
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/ParameterType;
+ (Ljava/lang/String;)Lorg/eclipse/core/commands/ParameterType;
+getParameters
+ ()[Lorg/eclipse/core/commands/IParameter;
+ ()[Lorg/eclipse/core/commands/IParameter;
+getReturnType
+ ()Lorg/eclipse/core/commands/ParameterType;
+ ()Lorg/eclipse/core/commands/ParameterType;
+removeCommandListener
+ (Lorg/eclipse/core/commands/ICommandListener;)V
+ (Lorg/eclipse/core/commands/ICommandListener;)V
+removeExecutionListener
+ (Lorg/eclipse/core/commands/IExecutionListener;)V
+ (Lorg/eclipse/core/commands/IExecutionListener;)V
+removeState
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setEnabled
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setHandler
+ (Lorg/eclipse/core/commands/IHandler;)Z
+ (Lorg/eclipse/core/commands/IHandler;)Z
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

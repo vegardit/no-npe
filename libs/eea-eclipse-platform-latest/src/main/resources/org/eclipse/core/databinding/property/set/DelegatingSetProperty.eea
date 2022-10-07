@@ -1,0 +1,30 @@
+class org/eclipse/core/databinding/property/set/DelegatingSetProperty
+ <S:Ljava/lang/Object;E:Ljava/lang/Object;>
+
+<init>
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+doGetDelegate
+ (TS;)Lorg/eclipse/core/databinding/property/set/ISetProperty<TS;TE;>;
+ (TS;)Lorg/eclipse/core/databinding/property/set/ISetProperty<TS;TE;>;
+doGetSet
+ (TS;)Ljava/util/Set<TE;>;
+ (TS;)Ljava/util/Set<TE;>;
+doSetSet
+ (TS;Ljava/util/Set<TE;>;)V
+ (TS;Ljava/util/Set<TE;>;)V
+doUpdateSet
+ (TS;Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;)V
+ (TS;Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;)V
+getDelegate
+ (TS;)Lorg/eclipse/core/databinding/property/set/ISetProperty<TS;TE;>;
+ (TS;)Lorg/eclipse/core/databinding/property/set/ISetProperty<TS;TE;>;
+getElementType
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+observe
+ (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
+ (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
+observe
+ (TS;)Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
+ (TS;)Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;

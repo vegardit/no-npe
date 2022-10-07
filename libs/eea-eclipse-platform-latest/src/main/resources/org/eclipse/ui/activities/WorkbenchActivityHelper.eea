@@ -1,0 +1,72 @@
+class org/eclipse/ui/activities/WorkbenchActivityHelper
+
+TRIGGER_PRE_UI_POINT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+allowUseOf
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+allowUseOf
+ (Lorg/eclipse/ui/activities/ITriggerPoint;Ljava/lang/Object;)Z
+ (Lorg/eclipse/ui/activities/ITriggerPoint;Ljava/lang/Object;)Z
+createUnifiedId
+ (Lorg/eclipse/ui/IPluginContribution;)Ljava/lang/String;
+ (Lorg/eclipse/ui/IPluginContribution;)Ljava/lang/String;
+expandActivityDependencies
+ (Ljava/util/Set<Ljava/lang/String;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Ljava/util/Set<Ljava/lang/String;>;)Ljava/util/Set<Ljava/lang/String;>;
+filterArray
+ ([Ljava/lang/Object;)[Ljava/lang/Object;
+ ([Ljava/lang/Object;)[Ljava/lang/Object;
+filterCollection
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;Ljava/util/Collection<TT;>;)Ljava/util/Collection<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;Ljava/util/Collection<TT;>;)Ljava/util/Collection<TT;>;
+filterItem
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+getActivityIdsForCategory
+ (Lorg/eclipse/ui/activities/ICategory;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/eclipse/ui/activities/ICategory;)Ljava/util/Set<Ljava/lang/String;>;
+getContainedCategories
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+getDisabledCategories
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+getEnabledCategories
+ (Lorg/eclipse/ui/activities/IActivityManager;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/eclipse/ui/activities/IActivityManager;)Ljava/util/Set<Ljava/lang/String;>;
+getEnabledCategories
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+getEnabledCategoriesForActivity
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+getIdentifier
+ (Lorg/eclipse/ui/IPluginContribution;)Lorg/eclipse/ui/activities/IIdentifier;
+ (Lorg/eclipse/ui/IPluginContribution;)Lorg/eclipse/ui/activities/IIdentifier;
+getPartiallyEnabledCategories
+ (Lorg/eclipse/ui/activities/IActivityManager;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/eclipse/ui/activities/IActivityManager;)Ljava/util/Set<Ljava/lang/String;>;
+getRequiredActivityIds
+ (Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
+isEnabled
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Z
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Z
+isPartiallyEnabled
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Z
+ (Lorg/eclipse/ui/activities/IActivityManager;Ljava/lang/String;)Z
+resolveCategories
+ (Lorg/eclipse/ui/activities/IMutableActivityManager;Ljava/util/Set<Ljava/lang/String;>;)[Lorg/eclipse/ui/activities/ICategory;
+ (Lorg/eclipse/ui/activities/IMutableActivityManager;Ljava/util/Set<Ljava/lang/String;>;)[Lorg/eclipse/ui/activities/ICategory;
+restrictArray
+ ([Ljava/lang/Object;)[Ljava/lang/Object;
+ ([Ljava/lang/Object;)[Ljava/lang/Object;
+restrictCollection
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;Ljava/util/Collection<TT;>;)Ljava/util/Collection<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;Ljava/util/Collection<TT;>;)Ljava/util/Collection<TT;>;
+restrictUseOf
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z

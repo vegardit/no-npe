@@ -1,0 +1,59 @@
+class org/eclipse/ui/internal/browser/WebBrowserEditor
+
+WEB_BROWSER_EDITOR_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+open
+ (Lorg/eclipse/ui/internal/browser/WebBrowserEditorInput;)V
+ (Lorg/eclipse/ui/internal/browser/WebBrowserEditorInput;)V
+
+copyAction
+ Lorg/eclipse/ui/internal/browser/TextAction;
+ Lorg/eclipse/ui/internal/browser/TextAction;
+cutAction
+ Lorg/eclipse/ui/internal/browser/TextAction;
+ Lorg/eclipse/ui/internal/browser/TextAction;
+imageDescriptor
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+initialURL
+ Ljava/lang/String;
+ Ljava/lang/String;
+pasteAction
+ Lorg/eclipse/ui/internal/browser/TextAction;
+ Lorg/eclipse/ui/internal/browser/TextAction;
+webBrowser
+ Lorg/eclipse/ui/internal/browser/BrowserViewer;
+ Lorg/eclipse/ui/internal/browser/BrowserViewer;
+
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+doOpenExternalEditor
+ (Ljava/lang/String;Lorg/eclipse/ui/IEditorInput;)V
+ (Ljava/lang/String;Lorg/eclipse/ui/IEditorInput;)V
+doSave
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getActionBars
+ ()Lorg/eclipse/ui/IActionBars;
+ ()Lorg/eclipse/ui/IActionBars;
+getCopyAction
+ ()Lorg/eclipse/jface/action/IAction;
+ ()Lorg/eclipse/jface/action/IAction;
+getCutAction
+ ()Lorg/eclipse/jface/action/IAction;
+ ()Lorg/eclipse/jface/action/IAction;
+getPasteAction
+ ()Lorg/eclipse/jface/action/IAction;
+ ()Lorg/eclipse/jface/action/IAction;
+getWebBrowserEditorInput
+ ()Lorg/eclipse/ui/internal/browser/WebBrowserEditorInput;
+ ()Lorg/eclipse/ui/internal/browser/WebBrowserEditorInput;
+init
+ (Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
+ (Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
+openInExternalBrowser
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

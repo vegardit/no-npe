@@ -1,0 +1,68 @@
+class org/eclipse/ui/internal/navigator/extensions/SafeDelegateTreeContentProvider
+
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+getChildren
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getChildren
+ (Lorg/eclipse/jface/viewers/TreePath;)[Ljava/lang/Object;
+ (Lorg/eclipse/jface/viewers/TreePath;)[Ljava/lang/Object;
+getDelegateContentProvider
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+getElements
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getParent
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+getParents
+ (Ljava/lang/Object;)[Lorg/eclipse/jface/viewers/TreePath;
+ (Ljava/lang/Object;)[Lorg/eclipse/jface/viewers/TreePath;
+getPipelinedChildren
+ (Ljava/lang/Object;Ljava/util/Set;)V
+ (Ljava/lang/Object;Ljava/util/Set;)V
+getPipelinedElements
+ (Ljava/lang/Object;Ljava/util/Set;)V
+ (Ljava/lang/Object;Ljava/util/Set;)V
+getPipelinedParent
+ (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+hasChildren
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+hasChildren
+ (Lorg/eclipse/jface/viewers/TreePath;)Z
+ (Lorg/eclipse/jface/viewers/TreePath;)Z
+hasPipelinedChildren
+ (Ljava/lang/Object;Z)Z
+ (Ljava/lang/Object;Z)Z
+init
+ (Lorg/eclipse/ui/navigator/ICommonContentExtensionSite;)V
+ (Lorg/eclipse/ui/navigator/ICommonContentExtensionSite;)V
+inputChanged
+ (Lorg/eclipse/jface/viewers/Viewer;Ljava/lang/Object;Ljava/lang/Object;)V
+ (Lorg/eclipse/jface/viewers/Viewer;Ljava/lang/Object;Ljava/lang/Object;)V
+interceptAdd
+ (Lorg/eclipse/ui/navigator/PipelinedShapeModification;)Lorg/eclipse/ui/navigator/PipelinedShapeModification;
+ (Lorg/eclipse/ui/navigator/PipelinedShapeModification;)Lorg/eclipse/ui/navigator/PipelinedShapeModification;
+interceptRefresh
+ (Lorg/eclipse/ui/navigator/PipelinedViewerUpdate;)Z
+ (Lorg/eclipse/ui/navigator/PipelinedViewerUpdate;)Z
+interceptRemove
+ (Lorg/eclipse/ui/navigator/PipelinedShapeModification;)Lorg/eclipse/ui/navigator/PipelinedShapeModification;
+ (Lorg/eclipse/ui/navigator/PipelinedShapeModification;)Lorg/eclipse/ui/navigator/PipelinedShapeModification;
+interceptUpdate
+ (Lorg/eclipse/ui/navigator/PipelinedViewerUpdate;)Z
+ (Lorg/eclipse/ui/navigator/PipelinedViewerUpdate;)Z
+restoreState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

@@ -1,0 +1,72 @@
+class org/eclipse/core/resources/IProjectDescription
+
+DESCRIPTION_FILE_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getBuildConfigReferences
+ (Ljava/lang/String;)[Lorg/eclipse/core/resources/IBuildConfiguration;
+ (Ljava/lang/String;)[Lorg/eclipse/core/resources/IBuildConfiguration;
+getBuildSpec
+ ()[Lorg/eclipse/core/resources/ICommand;
+ ()[Lorg/eclipse/core/resources/ICommand;
+getComment
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDynamicReferences
+ ()[Lorg/eclipse/core/resources/IProject;
+ ()[Lorg/eclipse/core/resources/IProject;
+getLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getLocationURI
+ ()Ljava/net/URI;
+ ()Ljava/net/URI;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getNatureIds
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getReferencedProjects
+ ()[Lorg/eclipse/core/resources/IProject;
+ ()[Lorg/eclipse/core/resources/IProject;
+hasNature
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+newCommand
+ ()Lorg/eclipse/core/resources/ICommand;
+ ()Lorg/eclipse/core/resources/ICommand;
+setActiveBuildConfig
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setBuildConfigReferences
+ (Ljava/lang/String;[Lorg/eclipse/core/resources/IBuildConfiguration;)V
+ (Ljava/lang/String;[Lorg/eclipse/core/resources/IBuildConfiguration;)V
+setBuildConfigs
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setBuildSpec
+ ([Lorg/eclipse/core/resources/ICommand;)V
+ ([Lorg/eclipse/core/resources/ICommand;)V
+setComment
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDynamicReferences
+ ([Lorg/eclipse/core/resources/IProject;)V
+ ([Lorg/eclipse/core/resources/IProject;)V
+setLocation
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+setLocationURI
+ (Ljava/net/URI;)V
+ (Ljava/net/URI;)V
+setName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setNatureIds
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setReferencedProjects
+ ([Lorg/eclipse/core/resources/IProject;)V
+ ([Lorg/eclipse/core/resources/IProject;)V

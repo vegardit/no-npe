@@ -1,0 +1,115 @@
+class org/eclipse/equinox/internal/p2/persistence/XMLParser
+
+indexOf
+ ([Ljava/lang/String;Ljava/lang/String;)I
+ ([Ljava/lang/String;Ljava/lang/String;)I
+makeSimpleName
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+bundleId
+ Ljava/lang/String;
+ Ljava/lang/String;
+errorContext
+ Ljava/lang/String;
+ Ljava/lang/String;
+locator
+ Lorg/xml/sax/Locator;
+ Lorg/xml/sax/Locator;
+parserFactory
+ Ljavax/xml/parsers/SAXParserFactory;
+ Ljavax/xml/parsers/SAXParserFactory;
+status
+ Lorg/eclipse/core/runtime/MultiStatus;
+ Lorg/eclipse/core/runtime/MultiStatus;
+xmlReader
+ Lorg/xml/sax/XMLReader;
+ Lorg/xml/sax/XMLReader;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljavax/xml/parsers/SAXParserFactory;Ljava/lang/String;)V
+ (Ljavax/xml/parsers/SAXParserFactory;Ljava/lang/String;)V
+addError
+ (ILjava/lang/String;Ljava/lang/Throwable;)V
+ (ILjava/lang/String;Ljava/lang/Throwable;)V
+checkBoolean
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Boolean;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Boolean;
+checkBoolean
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/Boolean;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/Boolean;
+checkInteger
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+checkRequiredAttribute
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+checkURI
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/URI;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/URI;
+checkVersion
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/Version;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/Version;
+checkVersionRange
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/VersionRange;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/VersionRange;
+duplicateElement
+ (Lorg/eclipse/equinox/internal/p2/persistence/XMLParser$AbstractHandler;Ljava/lang/String;Lorg/xml/sax/Attributes;)V
+ (Lorg/eclipse/equinox/internal/p2/persistence/XMLParser$AbstractHandler;Ljava/lang/String;Lorg/xml/sax/Attributes;)V
+error
+ (Lorg/xml/sax/SAXParseException;)V
+ (Lorg/xml/sax/SAXParseException;)V
+extractPIVersion
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/Version;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/Version;
+fatalError
+ (Lorg/xml/sax/SAXParseException;)V
+ (Lorg/xml/sax/SAXParseException;)V
+getErrorMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getErrorPrefix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getErrorSuffix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getParser
+ ()Ljavax/xml/parsers/SAXParser;
+ ()Ljavax/xml/parsers/SAXParser;
+getRootObject
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getStatus
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+invalidAttributeValue
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+invalidAttributeValue
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+setDocumentLocator
+ (Lorg/xml/sax/Locator;)V
+ (Lorg/xml/sax/Locator;)V
+setErrorContext
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setProgressMonitor
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+trace
+ (Ljava/lang/String;Lorg/xml/sax/Attributes;)V
+ (Ljava/lang/String;Lorg/xml/sax/Attributes;)V
+unexpectedAttribute
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+unexpectedCharacterData
+ (Lorg/eclipse/equinox/internal/p2/persistence/XMLParser$AbstractHandler;Ljava/lang/String;)V
+ (Lorg/eclipse/equinox/internal/p2/persistence/XMLParser$AbstractHandler;Ljava/lang/String;)V
+unexpectedElement
+ (Lorg/eclipse/equinox/internal/p2/persistence/XMLParser$AbstractHandler;Ljava/lang/String;Lorg/xml/sax/Attributes;)V
+ (Lorg/eclipse/equinox/internal/p2/persistence/XMLParser$AbstractHandler;Ljava/lang/String;Lorg/xml/sax/Attributes;)V

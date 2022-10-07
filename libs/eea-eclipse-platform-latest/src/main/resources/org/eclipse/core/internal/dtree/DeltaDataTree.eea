@@ -1,0 +1,128 @@
+class org/eclipse/core/internal/dtree/DeltaDataTree
+
+<init>
+ (Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;)V
+ (Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;)V
+<init>
+ (Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;Lorg/eclipse/core/internal/dtree/DeltaDataTree;)V
+ (Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;Lorg/eclipse/core/internal/dtree/DeltaDataTree;)V
+addChild
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;)V
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;)V
+asReverseComparisonTree
+ (Lorg/eclipse/core/internal/dtree/IComparator;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ (Lorg/eclipse/core/internal/dtree/IComparator;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+assembleNode
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;)V
+assembleWithForwardDelta
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+basicCompare
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+collapseTo
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+compareWith
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+compareWith
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+copy
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+copyCompleteSubtree
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+createChild
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)V
+createChild
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;Ljava/lang/Object;)V
+createSubtree
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;)V
+deleteChild
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)V
+findNodeAt
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+forwardDeltaWith
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;Lorg/eclipse/core/internal/dtree/IComparator;)Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+getChildCount
+ (Lorg/eclipse/core/runtime/IPath;)I
+ (Lorg/eclipse/core/runtime/IPath;)I
+getChildNodes
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+getChildren
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/runtime/IPath;
+getData
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IPath;)Ljava/lang/Object;
+getNameOfChild
+ (Lorg/eclipse/core/runtime/IPath;I)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IPath;I)Ljava/lang/String;
+getNamesOfChildren
+ (Lorg/eclipse/core/runtime/IPath;)[Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IPath;)[Ljava/lang/String;
+getParent
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+getRootNode
+ ()Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+ ()Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+hasAncestor
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)Z
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)Z
+includes
+ (Lorg/eclipse/core/runtime/IPath;)Z
+ (Lorg/eclipse/core/runtime/IPath;)Z
+lookup
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/DataTreeLookup;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/DataTreeLookup;
+lookupIgnoreCase
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/DataTreeLookup;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/DataTreeLookup;
+naiveCopyCompleteSubtree
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+newEmptyDeltaTree
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+reroot
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+ ()Lorg/eclipse/core/internal/dtree/DeltaDataTree;
+reroot
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)V
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)V
+safeCopyCompleteSubtree
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+safeNaiveCopyCompleteSubtree
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+searchNodeAt
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/internal/dtree/AbstractDataTreeNode;
+setData
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)V
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/Object;)V
+setParent
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)V
+ (Lorg/eclipse/core/internal/dtree/DeltaDataTree;)V
+simplify
+ (Lorg/eclipse/core/internal/dtree/IComparator;)V
+ (Lorg/eclipse/core/internal/dtree/IComparator;)V
+storeStrings
+ (Lorg/eclipse/core/internal/utils/StringPool;)V
+ (Lorg/eclipse/core/internal/utils/StringPool;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

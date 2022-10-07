@@ -1,0 +1,20 @@
+class org/eclipse/ui/navigator/INavigatorFilterService
+
+activateFilterIdsAndUpdateViewer
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+getViewerFilter
+ (Lorg/eclipse/ui/navigator/ICommonFilterDescriptor;)Lorg/eclipse/jface/viewers/ViewerFilter;
+ (Lorg/eclipse/ui/navigator/ICommonFilterDescriptor;)Lorg/eclipse/jface/viewers/ViewerFilter;
+getVisibleFilterDescriptors
+ ()[Lorg/eclipse/ui/navigator/ICommonFilterDescriptor;
+ ()[Lorg/eclipse/ui/navigator/ICommonFilterDescriptor;
+getVisibleFilters
+ (Z)[Lorg/eclipse/jface/viewers/ViewerFilter;
+ (Z)[Lorg/eclipse/jface/viewers/ViewerFilter;
+isActive
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+setActiveFilterIds
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V

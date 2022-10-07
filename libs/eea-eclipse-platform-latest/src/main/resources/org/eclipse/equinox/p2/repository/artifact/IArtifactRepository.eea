@@ -1,0 +1,78 @@
+class org/eclipse/equinox/p2/repository/artifact/IArtifactRepository
+
+PROP_RUNNABLE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addDescriptor
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+addDescriptor
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+addDescriptors
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+addDescriptors
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+contains
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)Z
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)Z
+contains
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)Z
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)Z
+createArtifactDescriptor
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;
+createArtifactKey
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/equinox/p2/metadata/Version;)Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/equinox/p2/metadata/Version;)Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
+descriptorQueryable
+ ()Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;>;
+ ()Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;>;
+executeBatch
+ (Lorg/eclipse/equinox/p2/repository/IRunnableWithProgress;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/repository/IRunnableWithProgress;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+getArtifact
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Ljava/io/OutputStream;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Ljava/io/OutputStream;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+getArtifactDescriptors
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)[Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)[Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;
+getArtifacts
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRequest;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRequest;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+getOutputStream
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)Ljava/io/OutputStream;
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)Ljava/io/OutputStream;
+getRawArtifact
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Ljava/io/OutputStream;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Ljava/io/OutputStream;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+removeAll
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+removeDescriptor
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)V
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)V
+removeDescriptor
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+removeDescriptor
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+removeDescriptor
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+removeDescriptors
+ ([Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)V
+ ([Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)V
+removeDescriptors
+ ([Lorg/eclipse/equinox/p2/metadata/IArtifactKey;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/equinox/p2/metadata/IArtifactKey;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+removeDescriptors
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+removeDescriptors
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)V

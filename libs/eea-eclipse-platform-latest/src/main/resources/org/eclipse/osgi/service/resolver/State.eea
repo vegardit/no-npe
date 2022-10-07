@@ -1,0 +1,137 @@
+class org/eclipse/osgi/service/resolver/State
+
+addBundle
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)Z
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)Z
+addDisabledInfo
+ (Lorg/eclipse/osgi/service/resolver/DisabledInfo;)V
+ (Lorg/eclipse/osgi/service/resolver/DisabledInfo;)V
+addDynamicImportPackages
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ImportPackageSpecification;)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ImportPackageSpecification;)V
+addResolverError
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;ILjava/lang/String;Lorg/eclipse/osgi/service/resolver/VersionConstraint;)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;ILjava/lang/String;Lorg/eclipse/osgi/service/resolver/VersionConstraint;)V
+compare
+ (Lorg/eclipse/osgi/service/resolver/State;)Lorg/eclipse/osgi/service/resolver/StateDelta;
+ (Lorg/eclipse/osgi/service/resolver/State;)Lorg/eclipse/osgi/service/resolver/StateDelta;
+getBundle
+ (J)Lorg/eclipse/osgi/service/resolver/BundleDescription;
+ (J)Lorg/eclipse/osgi/service/resolver/BundleDescription;
+getBundle
+ (Ljava/lang/String;Lorg/osgi/framework/Version;)Lorg/eclipse/osgi/service/resolver/BundleDescription;
+ (Ljava/lang/String;Lorg/osgi/framework/Version;)Lorg/eclipse/osgi/service/resolver/BundleDescription;
+getBundleByLocation
+ (Ljava/lang/String;)Lorg/eclipse/osgi/service/resolver/BundleDescription;
+ (Ljava/lang/String;)Lorg/eclipse/osgi/service/resolver/BundleDescription;
+getBundles
+ ()[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+ ()[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+getBundles
+ (Ljava/lang/String;)[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+ (Ljava/lang/String;)[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+getChanges
+ ()Lorg/eclipse/osgi/service/resolver/StateDelta;
+ ()Lorg/eclipse/osgi/service/resolver/StateDelta;
+getDependencyClosure
+ (Ljava/util/Collection<Lorg/eclipse/osgi/service/resolver/BundleDescription;>;)Ljava/util/Collection<Lorg/eclipse/osgi/service/resolver/BundleDescription;>;
+ (Ljava/util/Collection<Lorg/eclipse/osgi/service/resolver/BundleDescription;>;)Ljava/util/Collection<Lorg/eclipse/osgi/service/resolver/BundleDescription;>;
+getDisabledBundles
+ ()[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+ ()[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+getDisabledInfo
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Ljava/lang/String;)Lorg/eclipse/osgi/service/resolver/DisabledInfo;
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Ljava/lang/String;)Lorg/eclipse/osgi/service/resolver/DisabledInfo;
+getDisabledInfos
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)[Lorg/eclipse/osgi/service/resolver/DisabledInfo;
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)[Lorg/eclipse/osgi/service/resolver/DisabledInfo;
+getExportedPackages
+ ()[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;
+ ()[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;
+getFactory
+ ()Lorg/eclipse/osgi/service/resolver/StateObjectFactory;
+ ()Lorg/eclipse/osgi/service/resolver/StateObjectFactory;
+getPlatformProperties
+ ()[Ljava/util/Dictionary;
+ ()[Ljava/util/Dictionary;
+getRemovalPending
+ ()[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+ ()[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+getResolvedBundles
+ ()[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+ ()[Lorg/eclipse/osgi/service/resolver/BundleDescription;
+getResolver
+ ()Lorg/eclipse/osgi/service/resolver/Resolver;
+ ()Lorg/eclipse/osgi/service/resolver/Resolver;
+getResolverErrors
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)[Lorg/eclipse/osgi/service/resolver/ResolverError;
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)[Lorg/eclipse/osgi/service/resolver/ResolverError;
+getStateHelper
+ ()Lorg/eclipse/osgi/service/resolver/StateHelper;
+ ()Lorg/eclipse/osgi/service/resolver/StateHelper;
+getSystemPackages
+ ()[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;
+ ()[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;
+linkDynamicImport
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Ljava/lang/String;)Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Ljava/lang/String;)Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;
+removeBundle
+ (J)Lorg/eclipse/osgi/service/resolver/BundleDescription;
+ (J)Lorg/eclipse/osgi/service/resolver/BundleDescription;
+removeBundle
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)Z
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)Z
+removeBundleComplete
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)V
+removeDisabledInfo
+ (Lorg/eclipse/osgi/service/resolver/DisabledInfo;)V
+ (Lorg/eclipse/osgi/service/resolver/DisabledInfo;)V
+removeResolverErrors
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)V
+resolve
+ ()Lorg/eclipse/osgi/service/resolver/StateDelta;
+ ()Lorg/eclipse/osgi/service/resolver/StateDelta;
+resolve
+ (Z)Lorg/eclipse/osgi/service/resolver/StateDelta;
+ (Z)Lorg/eclipse/osgi/service/resolver/StateDelta;
+resolve
+ ([Lorg/eclipse/osgi/service/resolver/BundleDescription;)Lorg/eclipse/osgi/service/resolver/StateDelta;
+ ([Lorg/eclipse/osgi/service/resolver/BundleDescription;)Lorg/eclipse/osgi/service/resolver/StateDelta;
+resolve
+ ([Lorg/eclipse/osgi/service/resolver/BundleDescription;Z)Lorg/eclipse/osgi/service/resolver/StateDelta;
+ ([Lorg/eclipse/osgi/service/resolver/BundleDescription;Z)Lorg/eclipse/osgi/service/resolver/StateDelta;
+resolveBundle
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Z[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Z[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;)V
+resolveBundle
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Z[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Z[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;)V
+resolveBundle
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Z[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/GenericDescription;[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/GenericDescription;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/osgi/service/resolver/StateWire;>;>;)V
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;Z[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/GenericDescription;[Lorg/eclipse/osgi/service/resolver/BundleDescription;[Lorg/eclipse/osgi/service/resolver/ExportPackageDescription;[Lorg/eclipse/osgi/service/resolver/GenericDescription;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/osgi/service/resolver/StateWire;>;>;)V
+resolveConstraint
+ (Lorg/eclipse/osgi/service/resolver/VersionConstraint;Lorg/eclipse/osgi/service/resolver/BaseDescription;)V
+ (Lorg/eclipse/osgi/service/resolver/VersionConstraint;Lorg/eclipse/osgi/service/resolver/BaseDescription;)V
+setNativePathsInvalid
+ (Lorg/eclipse/osgi/service/resolver/NativeCodeDescription;Z)V
+ (Lorg/eclipse/osgi/service/resolver/NativeCodeDescription;Z)V
+setOverrides
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setPlatformProperties
+ (Ljava/util/Dictionary<**>;)Z
+ (Ljava/util/Dictionary<**>;)Z
+setPlatformProperties
+ ([Ljava/util/Dictionary<**>;)Z
+ ([Ljava/util/Dictionary<**>;)Z
+setResolver
+ (Lorg/eclipse/osgi/service/resolver/Resolver;)V
+ (Lorg/eclipse/osgi/service/resolver/Resolver;)V
+setResolverHookFactory
+ (Lorg/osgi/framework/hooks/resolver/ResolverHookFactory;)V
+ (Lorg/osgi/framework/hooks/resolver/ResolverHookFactory;)V
+updateBundle
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)Z
+ (Lorg/eclipse/osgi/service/resolver/BundleDescription;)Z

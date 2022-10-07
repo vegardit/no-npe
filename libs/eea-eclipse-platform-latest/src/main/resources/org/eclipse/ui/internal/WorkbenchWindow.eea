@@ -1,0 +1,160 @@
+class org/eclipse/ui/internal/WorkbenchWindow
+
+ACTION_SET_CMD_PREFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+PERSPECTIVE_SPACER_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_COOLBAR_VISIBLE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_PERSPECTIVEBAR_VISIBLE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROP_STATUS_LINE_VISIBLE
+ Ljava/lang/String;
+ L1java/lang/String;
+STATUS_LINE_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+TRIM_CONTRIBUTION_URI
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getActionSetCommandId
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+getCommandId
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+getDefinitionId
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+getId
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Ljava/lang/String;
+getRetarget
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z
+ (Lorg/eclipse/core/runtime/IConfigurationElement;)Z
+
+<init>
+ (Lorg/eclipse/core/runtime/IAdaptable;Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+ (Lorg/eclipse/core/runtime/IAdaptable;Lorg/eclipse/ui/IPerspectiveDescriptor;)V
+addPageListener
+ (Lorg/eclipse/ui/IPageListener;)V
+ (Lorg/eclipse/ui/IPageListener;)V
+addPerspectiveListener
+ (Lorg/eclipse/ui/IPerspectiveListener;)V
+ (Lorg/eclipse/ui/IPerspectiveListener;)V
+addPropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+createCustomizePerspectiveDialog
+ (Lorg/eclipse/ui/internal/Perspective;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Lorg/eclipse/ui/internal/dialogs/cpd/CustomizePerspectiveDialog;
+ (Lorg/eclipse/ui/internal/Perspective;Lorg/eclipse/e4/core/contexts/IEclipseContext;)Lorg/eclipse/ui/internal/dialogs/cpd/CustomizePerspectiveDialog;
+fillActionBars
+ (Lorg/eclipse/ui/internal/provisional/application/IActionBarConfigurer2;I)V
+ (Lorg/eclipse/ui/internal/provisional/application/IActionBarConfigurer2;I)V
+firePerspectiveChanged
+ (Lorg/eclipse/ui/IWorkbenchPage;Lorg/eclipse/ui/IPerspectiveDescriptor;Ljava/lang/String;)V
+ (Lorg/eclipse/ui/IWorkbenchPage;Lorg/eclipse/ui/IPerspectiveDescriptor;Ljava/lang/String;)V
+firePerspectiveChanged
+ (Lorg/eclipse/ui/IWorkbenchPage;Lorg/eclipse/ui/IPerspectiveDescriptor;Lorg/eclipse/ui/IWorkbenchPartReference;Ljava/lang/String;)V
+ (Lorg/eclipse/ui/IWorkbenchPage;Lorg/eclipse/ui/IPerspectiveDescriptor;Lorg/eclipse/ui/IWorkbenchPartReference;Ljava/lang/String;)V
+getActionBars
+ ()Lorg/eclipse/ui/internal/WWinActionBars;
+ ()Lorg/eclipse/ui/internal/WWinActionBars;
+getActionPresentation
+ ()Lorg/eclipse/ui/internal/ActionPresentation;
+ ()Lorg/eclipse/ui/internal/ActionPresentation;
+getActivePage
+ ()Lorg/eclipse/ui/IWorkbenchPage;
+ ()Lorg/eclipse/ui/IWorkbenchPage;
+getCoolBarManager
+ ()Lorg/eclipse/jface/action/CoolBarManager;
+ ()Lorg/eclipse/jface/action/CoolBarManager;
+getCoolBarManager2
+ ()Lorg/eclipse/jface/action/ICoolBarManager;
+ ()Lorg/eclipse/jface/action/ICoolBarManager;
+getExtensionTracker
+ ()Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;
+ ()Lorg/eclipse/core/runtime/dynamichelpers/IExtensionTracker;
+getICEFor
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolControl;)Lorg/eclipse/core/runtime/IConfigurationElement;
+ (Lorg/eclipse/e4/ui/model/application/ui/menu/MToolControl;)Lorg/eclipse/core/runtime/IConfigurationElement;
+getLayout
+ ()Lorg/eclipse/swt/widgets/Layout;
+ ()Lorg/eclipse/swt/widgets/Layout;
+getMenuBarManager
+ ()Lorg/eclipse/jface/action/IMenuManager;
+ ()Lorg/eclipse/jface/action/IMenuManager;
+getMenuManager
+ ()Lorg/eclipse/jface/action/MenuManager;
+ ()Lorg/eclipse/jface/action/MenuManager;
+getMenuRestrictions
+ ()Ljava/util/Set<Ljava/lang/Object;>;
+ ()Ljava/util/Set<Ljava/lang/Object;>;
+getModel
+ ()Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;
+ ()Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;
+getPages
+ ()[Lorg/eclipse/ui/IWorkbenchPage;
+ ()[Lorg/eclipse/ui/IWorkbenchPage;
+getPartService
+ ()Lorg/eclipse/ui/IPartService;
+ ()Lorg/eclipse/ui/IPartService;
+getProgressRegion
+ ()Lorg/eclipse/ui/internal/progress/ProgressRegion;
+ ()Lorg/eclipse/ui/internal/progress/ProgressRegion;
+getSelectionService
+ ()Lorg/eclipse/ui/ISelectionService;
+ ()Lorg/eclipse/ui/ISelectionService;
+getService
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getShell
+ ()Lorg/eclipse/swt/widgets/Shell;
+ ()Lorg/eclipse/swt/widgets/Shell;
+getStatusLineManager
+ ()Lorg/eclipse/jface/action/StatusLineManager;
+ ()Lorg/eclipse/jface/action/StatusLineManager;
+getToolBarManager
+ ()Lorg/eclipse/jface/action/IToolBarManager;
+ ()Lorg/eclipse/jface/action/IToolBarManager;
+getToolBarManager2
+ ()Lorg/eclipse/jface/internal/provisional/action/IToolBarManager2;
+ ()Lorg/eclipse/jface/internal/provisional/action/IToolBarManager2;
+getTopTrim
+ ()Lorg/eclipse/e4/ui/model/application/ui/basic/MTrimBar;
+ ()Lorg/eclipse/e4/ui/model/application/ui/basic/MTrimBar;
+getWorkbench
+ ()Lorg/eclipse/ui/IWorkbench;
+ ()Lorg/eclipse/ui/IWorkbench;
+hasService
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+isApplicationMenu
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+openPage
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;
+openPage
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/ui/IWorkbenchPage;
+removePageListener
+ (Lorg/eclipse/ui/IPageListener;)V
+ (Lorg/eclipse/ui/IPageListener;)V
+removePerspectiveListener
+ (Lorg/eclipse/ui/IPerspectiveListener;)V
+ (Lorg/eclipse/ui/IPerspectiveListener;)V
+removePropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+run
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+setActivePage
+ (Lorg/eclipse/ui/IWorkbenchPage;)V
+ (Lorg/eclipse/ui/IWorkbenchPage;)V

@@ -1,0 +1,32 @@
+class org/eclipse/core/net/proxy/IProxyService
+
+addProxyChangeListener
+ (Lorg/eclipse/core/net/proxy/IProxyChangeListener;)V
+ (Lorg/eclipse/core/net/proxy/IProxyChangeListener;)V
+getNonProxiedHosts
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getProxyData
+ ()[Lorg/eclipse/core/net/proxy/IProxyData;
+ ()[Lorg/eclipse/core/net/proxy/IProxyData;
+getProxyData
+ (Ljava/lang/String;)Lorg/eclipse/core/net/proxy/IProxyData;
+ (Ljava/lang/String;)Lorg/eclipse/core/net/proxy/IProxyData;
+getProxyDataForHost
+ (Ljava/lang/String;)[Lorg/eclipse/core/net/proxy/IProxyData;
+ (Ljava/lang/String;)[Lorg/eclipse/core/net/proxy/IProxyData;
+getProxyDataForHost
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/net/proxy/IProxyData;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/net/proxy/IProxyData;
+removeProxyChangeListener
+ (Lorg/eclipse/core/net/proxy/IProxyChangeListener;)V
+ (Lorg/eclipse/core/net/proxy/IProxyChangeListener;)V
+select
+ (Ljava/net/URI;)[Lorg/eclipse/core/net/proxy/IProxyData;
+ (Ljava/net/URI;)[Lorg/eclipse/core/net/proxy/IProxyData;
+setNonProxiedHosts
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setProxyData
+ ([Lorg/eclipse/core/net/proxy/IProxyData;)V
+ ([Lorg/eclipse/core/net/proxy/IProxyData;)V

@@ -1,0 +1,64 @@
+class org/eclipse/ui/views/markers/internal/MarkerFilter
+
+SELECTED_FALSE
+ Ljava/lang/String;
+ L1java/lang/String;
+TAG_ON_RESOURCE
+ Ljava/lang/String;
+ L1java/lang/String;
+TAG_SELECTION_STATUS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+rootTypes
+ Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;
+ Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;
+selectedTypes
+ Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;
+ Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;
+workingSet
+ Lorg/eclipse/ui/IWorkingSet;
+ Lorg/eclipse/ui/IWorkingSet;
+
+addAllSubTypes
+ (Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;)V
+ (Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;)V
+getMarkerType
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/internal/MarkerType;
+ (Ljava/lang/String;)Lorg/eclipse/ui/views/markers/internal/MarkerType;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRootTypes
+ ()Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;
+getSelectedTypes
+ ()Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;
+ ()Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;
+makeClone
+ ()Lorg/eclipse/ui/views/markers/internal/MarkerFilter;
+ ()Lorg/eclipse/ui/views/markers/internal/MarkerFilter;
+restoreFilterSettings
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+ (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+restoreFilterSettings
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+restoreState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+saveFilterSettings
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+select
+ (Lorg/eclipse/ui/views/markers/internal/ConcreteMarker;)Z
+ (Lorg/eclipse/ui/views/markers/internal/ConcreteMarker;)Z
+selectMarker
+ (Lorg/eclipse/ui/views/markers/internal/ConcreteMarker;)Z
+ (Lorg/eclipse/ui/views/markers/internal/ConcreteMarker;)Z
+setFocusResource
+ ([Lorg/eclipse/core/resources/IResource;)V
+ ([Lorg/eclipse/core/resources/IResource;)V
+setSelectedTypes
+ (Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;)V
+ (Ljava/util/List<Lorg/eclipse/ui/views/markers/internal/MarkerType;>;)V

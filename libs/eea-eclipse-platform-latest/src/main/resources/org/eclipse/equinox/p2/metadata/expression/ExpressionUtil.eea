@@ -1,0 +1,45 @@
+class org/eclipse/equinox/p2/metadata/expression/ExpressionUtil
+
+FALSE_EXPRESSION
+ Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ L1org/eclipse/equinox/p2/metadata/expression/IExpression;
+TRUE_EXPRESSION
+ Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ L1org/eclipse/equinox/p2/metadata/expression/IExpression;
+
+getFactory
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpressionFactory;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpressionFactory;
+getLHS
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+getName
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Ljava/lang/String;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Ljava/lang/String;
+getOperand
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+getOperands
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)[Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)[Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+getParser
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpressionParser;
+ ()Lorg/eclipse/equinox/p2/metadata/expression/IExpressionParser;
+getRHS
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+getValue
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Ljava/lang/Object;
+ (Lorg/eclipse/equinox/p2/metadata/expression/IExpression;)Ljava/lang/Object;
+parse
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+parseLDAP
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IFilterExpression;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IFilterExpression;
+parseQuery
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+ (Ljava/lang/String;)Lorg/eclipse/equinox/p2/metadata/expression/IExpression;
+trimmedOrNull
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;

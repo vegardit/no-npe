@@ -1,0 +1,47 @@
+class org/eclipse/ui/handlers/IHandlerService
+
+activateHandler
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;)Lorg/eclipse/ui/handlers/IHandlerActivation;
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;)Lorg/eclipse/ui/handlers/IHandlerActivation;
+activateHandler
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;Lorg/eclipse/core/expressions/Expression;)Lorg/eclipse/ui/handlers/IHandlerActivation;
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;Lorg/eclipse/core/expressions/Expression;)Lorg/eclipse/ui/handlers/IHandlerActivation;
+activateHandler
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;Lorg/eclipse/core/expressions/Expression;I)Lorg/eclipse/ui/handlers/IHandlerActivation;
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;Lorg/eclipse/core/expressions/Expression;I)Lorg/eclipse/ui/handlers/IHandlerActivation;
+activateHandler
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;Lorg/eclipse/core/expressions/Expression;Z)Lorg/eclipse/ui/handlers/IHandlerActivation;
+ (Ljava/lang/String;Lorg/eclipse/core/commands/IHandler;Lorg/eclipse/core/expressions/Expression;Z)Lorg/eclipse/ui/handlers/IHandlerActivation;
+activateHandler
+ (Lorg/eclipse/ui/handlers/IHandlerActivation;)Lorg/eclipse/ui/handlers/IHandlerActivation;
+ (Lorg/eclipse/ui/handlers/IHandlerActivation;)Lorg/eclipse/ui/handlers/IHandlerActivation;
+createContextSnapshot
+ (Z)Lorg/eclipse/core/expressions/IEvaluationContext;
+ (Z)Lorg/eclipse/core/expressions/IEvaluationContext;
+createExecutionEvent
+ (Lorg/eclipse/core/commands/Command;Lorg/eclipse/swt/widgets/Event;)Lorg/eclipse/core/commands/ExecutionEvent;
+ (Lorg/eclipse/core/commands/Command;Lorg/eclipse/swt/widgets/Event;)Lorg/eclipse/core/commands/ExecutionEvent;
+createExecutionEvent
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/swt/widgets/Event;)Lorg/eclipse/core/commands/ExecutionEvent;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/swt/widgets/Event;)Lorg/eclipse/core/commands/ExecutionEvent;
+deactivateHandler
+ (Lorg/eclipse/ui/handlers/IHandlerActivation;)V
+ (Lorg/eclipse/ui/handlers/IHandlerActivation;)V
+deactivateHandlers
+ (Ljava/util/Collection;)V
+ (Ljava/util/Collection;)V
+executeCommand
+ (Ljava/lang/String;Lorg/eclipse/swt/widgets/Event;)Ljava/lang/Object;
+ (Ljava/lang/String;Lorg/eclipse/swt/widgets/Event;)Ljava/lang/Object;
+executeCommand
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/swt/widgets/Event;)Ljava/lang/Object;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/swt/widgets/Event;)Ljava/lang/Object;
+executeCommandInContext
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/swt/widgets/Event;Lorg/eclipse/core/expressions/IEvaluationContext;)Ljava/lang/Object;
+ (Lorg/eclipse/core/commands/ParameterizedCommand;Lorg/eclipse/swt/widgets/Event;Lorg/eclipse/core/expressions/IEvaluationContext;)Ljava/lang/Object;
+getCurrentState
+ ()Lorg/eclipse/core/expressions/IEvaluationContext;
+ ()Lorg/eclipse/core/expressions/IEvaluationContext;
+setHelpContextId
+ (Lorg/eclipse/core/commands/IHandler;Ljava/lang/String;)V
+ (Lorg/eclipse/core/commands/IHandler;Ljava/lang/String;)V
