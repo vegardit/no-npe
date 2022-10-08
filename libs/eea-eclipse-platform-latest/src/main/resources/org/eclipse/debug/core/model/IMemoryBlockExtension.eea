@@ -1,0 +1,41 @@
+class org/eclipse/debug/core/model/IMemoryBlockExtension
+
+connect
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+disconnect
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+getBigBaseAddress
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+getBigLength
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+getBytesFromAddress
+ (Ljava/math/BigInteger;J)[Lorg/eclipse/debug/core/model/MemoryByte;
+ (Ljava/math/BigInteger;J)[Lorg/eclipse/debug/core/model/MemoryByte;
+getBytesFromOffset
+ (Ljava/math/BigInteger;J)[Lorg/eclipse/debug/core/model/MemoryByte;
+ (Ljava/math/BigInteger;J)[Lorg/eclipse/debug/core/model/MemoryByte;
+getConnections
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+getExpression
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMemoryBlockEndAddress
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+getMemoryBlockRetrieval
+ ()Lorg/eclipse/debug/core/model/IMemoryBlockRetrieval;
+ ()Lorg/eclipse/debug/core/model/IMemoryBlockRetrieval;
+getMemoryBlockStartAddress
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+setBaseAddress
+ (Ljava/math/BigInteger;)V
+ (Ljava/math/BigInteger;)V
+setValue
+ (Ljava/math/BigInteger;[B)V
+ (Ljava/math/BigInteger;[B)V

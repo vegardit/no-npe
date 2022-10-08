@@ -1,0 +1,65 @@
+class org/eclipse/debug/core/IBreakpointManager
+
+addBreakpoint
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)V
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)V
+addBreakpointListener
+ (Lorg/eclipse/debug/core/IBreakpointListener;)V
+ (Lorg/eclipse/debug/core/IBreakpointListener;)V
+addBreakpointListener
+ (Lorg/eclipse/debug/core/IBreakpointsListener;)V
+ (Lorg/eclipse/debug/core/IBreakpointsListener;)V
+addBreakpointManagerListener
+ (Lorg/eclipse/debug/core/IBreakpointManagerListener;)V
+ (Lorg/eclipse/debug/core/IBreakpointManagerListener;)V
+addBreakpoints
+ ([Lorg/eclipse/debug/core/model/IBreakpoint;)V
+ ([Lorg/eclipse/debug/core/model/IBreakpoint;)V
+addTriggerPoint
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)V
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)V
+enableTriggerPoints
+ ([Lorg/eclipse/debug/core/model/IBreakpoint;Z)V
+ ([Lorg/eclipse/debug/core/model/IBreakpoint;Z)V
+fireBreakpointChanged
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)V
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)V
+getBreakpoint
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/debug/core/model/IBreakpoint;
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/debug/core/model/IBreakpoint;
+getBreakpoints
+ ()[Lorg/eclipse/debug/core/model/IBreakpoint;
+ ()[Lorg/eclipse/debug/core/model/IBreakpoint;
+getBreakpoints
+ (Ljava/lang/String;)[Lorg/eclipse/debug/core/model/IBreakpoint;
+ (Ljava/lang/String;)[Lorg/eclipse/debug/core/model/IBreakpoint;
+getImportParticipants
+ (Ljava/lang/String;)[Lorg/eclipse/debug/core/model/IBreakpointImportParticipant;
+ (Ljava/lang/String;)[Lorg/eclipse/debug/core/model/IBreakpointImportParticipant;
+getTriggerPoints
+ ()[Lorg/eclipse/debug/core/model/IBreakpoint;
+ ()[Lorg/eclipse/debug/core/model/IBreakpoint;
+getTypeName
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)Ljava/lang/String;
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)Ljava/lang/String;
+isRegistered
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)Z
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)Z
+removeBreakpoint
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Z)V
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Z)V
+removeBreakpointListener
+ (Lorg/eclipse/debug/core/IBreakpointListener;)V
+ (Lorg/eclipse/debug/core/IBreakpointListener;)V
+removeBreakpointListener
+ (Lorg/eclipse/debug/core/IBreakpointsListener;)V
+ (Lorg/eclipse/debug/core/IBreakpointsListener;)V
+removeBreakpointManagerListener
+ (Lorg/eclipse/debug/core/IBreakpointManagerListener;)V
+ (Lorg/eclipse/debug/core/IBreakpointManagerListener;)V
+removeBreakpoints
+ ([Lorg/eclipse/debug/core/model/IBreakpoint;Z)V
+ ([Lorg/eclipse/debug/core/model/IBreakpoint;Z)V
+removeTriggerPoint
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)V
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)V

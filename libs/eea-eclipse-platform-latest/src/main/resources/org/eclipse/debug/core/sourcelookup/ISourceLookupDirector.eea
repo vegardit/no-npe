@@ -1,0 +1,44 @@
+class org/eclipse/debug/core/sourcelookup/ISourceLookupDirector
+
+addParticipants
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;)V
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;)V
+clearSourceElements
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+equalSourceElements
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+findSourceElements
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLaunchConfiguration
+ ()Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()Lorg/eclipse/debug/core/ILaunchConfiguration;
+getParticipants
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;
+getSourceContainers
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;
+getSourceElement
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+getSourcePathComputer
+ ()Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+ ()Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+removeParticipants
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;)V
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;)V
+setSourceContainers
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;)V
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;)V
+setSourcePathComputer
+ (Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;)V
+ (Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;)V
+supportsSourceContainerType
+ (Lorg/eclipse/debug/core/sourcelookup/ISourceContainerType;)Z
+ (Lorg/eclipse/debug/core/sourcelookup/ISourceContainerType;)Z

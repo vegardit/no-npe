@@ -1,0 +1,148 @@
+class org/eclipse/debug/core/sourcelookup/AbstractSourceLookupDirector
+
+CONTAINERS_NODE
+ Ljava/lang/String;
+ L1java/lang/String;
+CONTAINER_MEMENTO_ATTR
+ Ljava/lang/String;
+ L1java/lang/String;
+CONTAINER_NODE
+ Ljava/lang/String;
+ L1java/lang/String;
+CONTAINER_TYPE_ATTR
+ Ljava/lang/String;
+ L1java/lang/String;
+DIRECTOR_ROOT_NODE
+ Ljava/lang/String;
+ L1java/lang/String;
+DUPLICATES_ATTR
+ Ljava/lang/String;
+ L1java/lang/String;
+fPromptStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ L1org/eclipse/core/runtime/IStatus;
+fResolveDuplicatesStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ L1org/eclipse/core/runtime/IStatus;
+
+fComputer
+ Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+ Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+fConfig
+ Lorg/eclipse/debug/core/ILaunchConfiguration;
+ Lorg/eclipse/debug/core/ILaunchConfiguration;
+fId
+ Ljava/lang/String;
+ Ljava/lang/String;
+fParticipants
+ Ljava/util/ArrayList<Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;>;
+ Ljava/util/ArrayList<Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;>;
+fResolvedElements
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+fSourceContainers
+ [Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;
+ [Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;
+
+abort
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+ (Ljava/lang/String;Ljava/lang/Throwable;)V
+addParticipants
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;)V
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;)V
+cacheResolvedElement
+ (Ljava/util/List<Ljava/lang/Object;>;Ljava/lang/Object;)V
+ (Ljava/util/List<Ljava/lang/Object;>;Ljava/lang/Object;)V
+clearCachedElement
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+clearSourceElements
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+doInitializeFromMemento
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+doSourceLookup
+ (Ljava/lang/Object;)Ljava/util/List<Ljava/lang/Object;>;
+ (Ljava/lang/Object;)Ljava/util/List<Ljava/lang/Object;>;
+findSourceElements
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getCachedElement
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+getCurrentParticipant
+ ()Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;
+ ()Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLaunchConfiguration
+ ()Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()Lorg/eclipse/debug/core/ILaunchConfiguration;
+getMemento
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getParticipants
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;
+getSourceContainers
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;
+getSourceElement
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+getSourceElement
+ (Lorg/eclipse/debug/core/model/IStackFrame;)Ljava/lang/Object;
+ (Lorg/eclipse/debug/core/model/IStackFrame;)Ljava/lang/Object;
+getSourcePathComputer
+ ()Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+ ()Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+initializeDefaults
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+initializeFromMemento
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+initializeFromMemento
+ (Ljava/lang/String;Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (Ljava/lang/String;Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+launchAdded
+ (Lorg/eclipse/debug/core/ILaunch;)V
+ (Lorg/eclipse/debug/core/ILaunch;)V
+launchChanged
+ (Lorg/eclipse/debug/core/ILaunch;)V
+ (Lorg/eclipse/debug/core/ILaunch;)V
+launchConfigurationAdded
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+launchConfigurationChanged
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+launchConfigurationRemoved
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+launchRemoved
+ (Lorg/eclipse/debug/core/ILaunch;)V
+ (Lorg/eclipse/debug/core/ILaunch;)V
+removeParticipants
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;)V
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceLookupParticipant;)V
+resolveSourceElement
+ (Ljava/lang/Object;Ljava/util/List<Ljava/lang/Object;>;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/util/List<Ljava/lang/Object;>;)Ljava/lang/Object;
+setId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setLaunchConfiguration
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+setSourceContainers
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;)V
+ ([Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;)V
+setSourcePathComputer
+ (Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;)V
+ (Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;)V
+supportsSourceContainerType
+ (Lorg/eclipse/debug/core/sourcelookup/ISourceContainerType;)Z
+ (Lorg/eclipse/debug/core/sourcelookup/ISourceContainerType;)Z

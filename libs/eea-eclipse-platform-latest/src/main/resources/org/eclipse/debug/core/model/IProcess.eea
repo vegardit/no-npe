@@ -1,0 +1,30 @@
+class org/eclipse/debug/core/model/IProcess
+
+ATTR_CMDLINE
+ Ljava/lang/String;
+ L1java/lang/String;
+ATTR_PROCESS_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+ATTR_PROCESS_LABEL
+ Ljava/lang/String;
+ L1java/lang/String;
+ATTR_PROCESS_TYPE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getAttribute
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLaunch
+ ()Lorg/eclipse/debug/core/ILaunch;
+ ()Lorg/eclipse/debug/core/ILaunch;
+getStreamsProxy
+ ()Lorg/eclipse/debug/core/model/IStreamsProxy;
+ ()Lorg/eclipse/debug/core/model/IStreamsProxy;
+setAttribute
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V

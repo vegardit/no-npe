@@ -1,0 +1,102 @@
+class org/eclipse/debug/core/ILaunchConfiguration
+
+ATTR_SOURCE_LOCATOR_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+ATTR_SOURCE_LOCATOR_MEMENTO
+ Ljava/lang/String;
+ L1java/lang/String;
+LAUNCH_CONFIGURATION_FILE_EXTENSION
+ Ljava/lang/String;
+ L1java/lang/String;
+LAUNCH_CONFIGURATION_PROTOTYPE_FILE_EXTENSION
+ Ljava/lang/String;
+ L1java/lang/String;
+
+contentsEqual
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+copy
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;
+getAttribute
+ (Ljava/lang/String;I)I
+ (Ljava/lang/String;I)I
+getAttribute
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;L1java/lang/String;)L1java/lang/String;
+getAttribute
+ (Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;L1java/util/List<Ljava/lang/String;>;)L1java/util/List<Ljava/lang/String;>;
+getAttribute
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ (Ljava/lang/String;L1java/util/Map<L1java/lang/String;L1java/lang/String;>;)L1java/util/Map<L1java/lang/String;L1java/lang/String;>;
+getAttribute
+ (Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Ljava/lang/String;L1java/util/Set<Ljava/lang/String;>;)L1java/util/Set<Ljava/lang/String;>;
+getAttribute
+ (Ljava/lang/String;Z)Z
+ (Ljava/lang/String;Z)Z
+getAttributes
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()L1java/util/Map<L1java/lang/String;Ljava/lang/Object;>;
+getCategory
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFile
+ ()Lorg/eclipse/core/resources/IFile;
+ ()Lorg/eclipse/core/resources/IFile;
+getLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getMappedResources
+ ()[Lorg/eclipse/core/resources/IResource;
+ ()[Lorg/eclipse/core/resources/IResource;
+getMemento
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getModes
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPreferredDelegate
+ (Ljava/util/Set<Ljava/lang/String;>;)Lorg/eclipse/debug/core/ILaunchDelegate;
+ (Ljava/util/Set<Ljava/lang/String;>;)Lorg/eclipse/debug/core/ILaunchDelegate;
+getPrototype
+ ()Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()Lorg/eclipse/debug/core/ILaunchConfiguration;
+getPrototypeChildren
+ ()Ljava/util/Collection<Lorg/eclipse/debug/core/ILaunchConfiguration;>;
+ ()Ljava/util/Collection<Lorg/eclipse/debug/core/ILaunchConfiguration;>;
+getPrototypeVisibleAttributes
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getType
+ ()Lorg/eclipse/debug/core/ILaunchConfigurationType;
+ ()Lorg/eclipse/debug/core/ILaunchConfigurationType;
+getWorkingCopy
+ ()Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;
+ ()Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;
+hasAttribute
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isAttributeModified
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+launch
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/debug/core/ILaunch;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/debug/core/ILaunch;
+launch
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;Z)Lorg/eclipse/debug/core/ILaunch;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;Z)Lorg/eclipse/debug/core/ILaunch;
+launch
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;ZZ)Lorg/eclipse/debug/core/ILaunch;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;ZZ)Lorg/eclipse/debug/core/ILaunch;
+setPrototypeAttributeVisibility
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+supportsMode
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z

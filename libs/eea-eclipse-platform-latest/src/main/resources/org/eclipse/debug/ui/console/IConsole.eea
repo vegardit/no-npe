@@ -1,0 +1,35 @@
+class org/eclipse/debug/ui/console/IConsole
+
+addLink
+ (Lorg/eclipse/debug/ui/console/IConsoleHyperlink;II)V
+ (Lorg/eclipse/debug/ui/console/IConsoleHyperlink;II)V
+addLink
+ (Lorg/eclipse/ui/console/IHyperlink;II)V
+ (Lorg/eclipse/ui/console/IHyperlink;II)V
+addPatternMatchListener
+ (Lorg/eclipse/ui/console/IPatternMatchListener;)V
+ (Lorg/eclipse/ui/console/IPatternMatchListener;)V
+connect
+ (Lorg/eclipse/debug/core/model/IStreamMonitor;Ljava/lang/String;)V
+ (Lorg/eclipse/debug/core/model/IStreamMonitor;Ljava/lang/String;)V
+connect
+ (Lorg/eclipse/debug/core/model/IStreamsProxy;)V
+ (Lorg/eclipse/debug/core/model/IStreamsProxy;)V
+getDocument
+ ()Lorg/eclipse/jface/text/IDocument;
+ ()Lorg/eclipse/jface/text/IDocument;
+getProcess
+ ()Lorg/eclipse/debug/core/model/IProcess;
+ ()Lorg/eclipse/debug/core/model/IProcess;
+getRegion
+ (Lorg/eclipse/debug/ui/console/IConsoleHyperlink;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/debug/ui/console/IConsoleHyperlink;)Lorg/eclipse/jface/text/IRegion;
+getRegion
+ (Lorg/eclipse/ui/console/IHyperlink;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/ui/console/IHyperlink;)Lorg/eclipse/jface/text/IRegion;
+getStream
+ (Ljava/lang/String;)Lorg/eclipse/ui/console/IOConsoleOutputStream;
+ (Ljava/lang/String;)Lorg/eclipse/ui/console/IOConsoleOutputStream;
+removePatternMatchListener
+ (Lorg/eclipse/ui/console/IPatternMatchListener;)V
+ (Lorg/eclipse/ui/console/IPatternMatchListener;)V

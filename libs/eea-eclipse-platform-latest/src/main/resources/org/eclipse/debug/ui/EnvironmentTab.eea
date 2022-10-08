@@ -1,0 +1,88 @@
+class org/eclipse/debug/ui/EnvironmentTab
+
+P_VALUE
+ Ljava/lang/String;
+ L1java/lang/String;
+P_VARIABLE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+appendEnvironment
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+envAddButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+envCopyButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+envEditButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+envPasteButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+envRemoveButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+envSelectButton
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+envTableColumnHeaders
+ [Ljava/lang/String;
+ [Ljava/lang/String;
+environmentTable
+ Lorg/eclipse/jface/viewers/TableViewer;
+ Lorg/eclipse/jface/viewers/TableViewer;
+replaceEnvironment
+ Lorg/eclipse/swt/widgets/Button;
+ Lorg/eclipse/swt/widgets/Button;
+
+activated
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+addVariable
+ (Lorg/eclipse/debug/internal/ui/launchConfigurations/EnvironmentVariable;)Z
+ (Lorg/eclipse/debug/internal/ui/launchConfigurations/EnvironmentVariable;)Z
+addVariables
+ (Ljava/util/List<Lorg/eclipse/debug/internal/ui/launchConfigurations/EnvironmentVariable;>;)I
+ (Ljava/util/List<Lorg/eclipse/debug/internal/ui/launchConfigurations/EnvironmentVariable;>;)I
+createAppendReplace
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createEnvironmentTable
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createTableButtons
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+deactivated
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getImage
+ ()Lorg/eclipse/swt/graphics/Image;
+ ()Lorg/eclipse/swt/graphics/Image;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+handleTableSelectionChanged
+ (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
+ (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
+initializeFrom
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+performApply
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+setDefaults
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+updateEnvironment
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V

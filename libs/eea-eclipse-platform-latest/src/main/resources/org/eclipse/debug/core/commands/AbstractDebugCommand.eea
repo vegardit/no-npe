@@ -1,0 +1,41 @@
+class org/eclipse/debug/core/commands/AbstractDebugCommand
+
+canExecute
+ (Lorg/eclipse/debug/core/commands/IEnabledStateRequest;)V
+ (Lorg/eclipse/debug/core/commands/IEnabledStateRequest;)V
+doExecute
+ ([Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/debug/core/IRequest;)V
+ ([Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/debug/core/IRequest;)V
+execute
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Z
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Z
+getAdapter
+ (Ljava/lang/Object;Ljava/lang/Class<*>;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/Class<*>;)Ljava/lang/Object;
+getEnabledStateJobFamily
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Ljava/lang/Object;
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Ljava/lang/Object;
+getEnabledStateSchedulingRule
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getEnabledStateTaskName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getExecuteJobFamily
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Ljava/lang/Object;
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Ljava/lang/Object;
+getExecuteSchedulingRule
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+getExecuteTaskName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTarget
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+isExecutable
+ ([Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/debug/core/commands/IEnabledStateRequest;)Z
+ ([Ljava/lang/Object;Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/debug/core/commands/IEnabledStateRequest;)Z
+isRemainEnabled
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Z
+ (Lorg/eclipse/debug/core/commands/IDebugCommandRequest;)Z

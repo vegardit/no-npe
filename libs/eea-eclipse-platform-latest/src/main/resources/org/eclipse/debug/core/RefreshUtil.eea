@@ -1,0 +1,36 @@
+class org/eclipse/debug/core/RefreshUtil
+
+ATTR_REFRESH_RECURSIVE
+ Ljava/lang/String;
+ L1java/lang/String;
+ATTR_REFRESH_SCOPE
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMENTO_SELECTED_CONTAINER
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMENTO_SELECTED_PROJECT
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMENTO_SELECTED_RESOURCE
+ Ljava/lang/String;
+ L1java/lang/String;
+MEMENTO_WORKSPACE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+isRefreshRecursive
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+refreshResources
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+refreshResources
+ ([Lorg/eclipse/core/resources/IResource;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/core/resources/IResource;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+toMemento
+ ([Lorg/eclipse/core/resources/IResource;)Ljava/lang/String;
+ ([Lorg/eclipse/core/resources/IResource;)Ljava/lang/String;
+toResources
+ (Ljava/lang/String;)[Lorg/eclipse/core/resources/IResource;
+ (Ljava/lang/String;)[Lorg/eclipse/core/resources/IResource;

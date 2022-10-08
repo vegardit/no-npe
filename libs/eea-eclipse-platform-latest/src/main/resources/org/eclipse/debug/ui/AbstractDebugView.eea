@@ -1,0 +1,125 @@
+class org/eclipse/debug/ui/AbstractDebugView
+
+add
+ (Lorg/eclipse/ui/texteditor/IUpdate;)V
+ (Lorg/eclipse/ui/texteditor/IUpdate;)V
+addContextMenuManager
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+asyncExec
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+configureToolBar
+ (Lorg/eclipse/jface/action/IToolBarManager;)V
+ (Lorg/eclipse/jface/action/IToolBarManager;)V
+createContextMenu
+ (Lorg/eclipse/swt/widgets/Control;)V
+ (Lorg/eclipse/swt/widgets/Control;)V
+createDefaultPage
+ (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+ (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createViewer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+doCreatePage
+ (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
+ (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
+doDestroyPage
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
+doubleClick
+ (Lorg/eclipse/jface/viewers/DoubleClickEvent;)V
+ (Lorg/eclipse/jface/viewers/DoubleClickEvent;)V
+fillContextMenu
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+findView
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewPart;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IViewPart;
+generatePreferenceKey
+ (Lorg/eclipse/jface/action/IAction;)Ljava/lang/String;
+ (Lorg/eclipse/jface/action/IAction;)Ljava/lang/String;
+getAction
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IAction;
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IAction;
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getBootstrapPart
+ ()Lorg/eclipse/ui/IWorkbenchPart;
+ ()Lorg/eclipse/ui/IWorkbenchPart;
+getContextMenuManager
+ ()Lorg/eclipse/jface/action/IMenuManager;
+ ()Lorg/eclipse/jface/action/IMenuManager;
+getContextMenuManagers
+ ()Ljava/util/List<Lorg/eclipse/jface/action/IMenuManager;>;
+ ()Ljava/util/List<Lorg/eclipse/jface/action/IMenuManager;>;
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getDefaultControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getHelpContextId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMemento
+ ()Lorg/eclipse/ui/IMemento;
+ ()Lorg/eclipse/ui/IMemento;
+getMessagePage
+ ()Lorg/eclipse/ui/part/MessagePage;
+ ()Lorg/eclipse/ui/part/MessagePage;
+getPreferenceStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+getPresentation
+ (Ljava/lang/String;)Lorg/eclipse/debug/ui/IDebugModelPresentation;
+ (Ljava/lang/String;)Lorg/eclipse/debug/ui/IDebugModelPresentation;
+getPresentationAttributes
+ (Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+getStructuredViewer
+ ()Lorg/eclipse/jface/viewers/StructuredViewer;
+ ()Lorg/eclipse/jface/viewers/StructuredViewer;
+getTextViewer
+ ()Lorg/eclipse/jface/text/TextViewer;
+ ()Lorg/eclipse/jface/text/TextViewer;
+getViewer
+ ()Lorg/eclipse/jface/viewers/Viewer;
+ ()Lorg/eclipse/jface/viewers/Viewer;
+handleKeyPressed
+ (Lorg/eclipse/swt/events/KeyEvent;)V
+ (Lorg/eclipse/swt/events/KeyEvent;)V
+init
+ (Lorg/eclipse/ui/IViewSite;Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IViewSite;Lorg/eclipse/ui/IMemento;)V
+initActionState
+ (Lorg/eclipse/jface/action/IAction;)V
+ (Lorg/eclipse/jface/action/IAction;)V
+isImportant
+ (Lorg/eclipse/ui/IWorkbenchPart;)Z
+ (Lorg/eclipse/ui/IWorkbenchPart;)Z
+remove
+ (Lorg/eclipse/ui/texteditor/IUpdate;)V
+ (Lorg/eclipse/ui/texteditor/IUpdate;)V
+saveCheckedActionState
+ (Lorg/eclipse/jface/action/IAction;)V
+ (Lorg/eclipse/jface/action/IAction;)V
+setAction
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+setMemento
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+setViewer
+ (Lorg/eclipse/jface/viewers/Viewer;)V
+ (Lorg/eclipse/jface/viewers/Viewer;)V
+showMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+syncExec
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V

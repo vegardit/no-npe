@@ -1,0 +1,81 @@
+class org/eclipse/debug/ui/memory/AbstractTableRendering
+
+PROPERTY_COL_SIZE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROPERTY_ROW_SIZE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROPERTY_SELECTED_ADDRESS
+ Ljava/lang/String;
+ L1java/lang/String;
+PROPERTY_TOP_ADDRESS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+createToolTipControl
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+displayError
+ (Lorg/eclipse/debug/core/DebugException;)V
+ (Lorg/eclipse/debug/core/DebugException;)V
+fillContextMenu
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+getBytes
+ (Ljava/lang/String;Ljava/math/BigInteger;[Lorg/eclipse/debug/core/model/MemoryByte;Ljava/lang/String;)[B
+ (Ljava/lang/String;Ljava/math/BigInteger;[Lorg/eclipse/debug/core/model/MemoryByte;Ljava/lang/String;)[B
+getColorProviderAdapter
+ ()Lorg/eclipse/jface/viewers/IColorProvider;
+ ()Lorg/eclipse/jface/viewers/IColorProvider;
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getFontProviderAdapter
+ ()Lorg/eclipse/jface/viewers/IFontProvider;
+ ()Lorg/eclipse/jface/viewers/IFontProvider;
+getLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLabelProviderAdapter
+ ()Lorg/eclipse/jface/viewers/ILabelProvider;
+ ()Lorg/eclipse/jface/viewers/ILabelProvider;
+getSelectedAddress
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+getSelectedAsBytes
+ ()[Lorg/eclipse/debug/core/model/MemoryByte;
+ ()[Lorg/eclipse/debug/core/model/MemoryByte;
+getSelectedAsString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getString
+ (Ljava/lang/String;Ljava/math/BigInteger;[Lorg/eclipse/debug/core/model/MemoryByte;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/math/BigInteger;[Lorg/eclipse/debug/core/model/MemoryByte;)Ljava/lang/String;
+getTablePresentationAdapter
+ ()Lorg/eclipse/debug/ui/memory/IMemoryBlockTablePresentation;
+ ()Lorg/eclipse/debug/ui/memory/IMemoryBlockTablePresentation;
+getTableViewer
+ ()Lorg/eclipse/jface/viewers/TableViewer;
+ ()Lorg/eclipse/jface/viewers/TableViewer;
+getToolTipText
+ (Ljava/math/BigInteger;[Lorg/eclipse/debug/core/model/MemoryByte;)Ljava/lang/String;
+ (Ljava/math/BigInteger;[Lorg/eclipse/debug/core/model/MemoryByte;)Ljava/lang/String;
+goToAddress
+ (Ljava/math/BigInteger;)V
+ (Ljava/math/BigInteger;)V
+propertyChange
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+toolTipAboutToShow
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/TableItem;I)V
+ (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/TableItem;I)V

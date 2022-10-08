@@ -1,0 +1,41 @@
+class org/eclipse/debug/core/IExpressionManager
+
+addExpression
+ (Lorg/eclipse/debug/core/model/IExpression;)V
+ (Lorg/eclipse/debug/core/model/IExpression;)V
+addExpressionListener
+ (Lorg/eclipse/debug/core/IExpressionListener;)V
+ (Lorg/eclipse/debug/core/IExpressionListener;)V
+addExpressionListener
+ (Lorg/eclipse/debug/core/IExpressionsListener;)V
+ (Lorg/eclipse/debug/core/IExpressionsListener;)V
+addExpressions
+ ([Lorg/eclipse/debug/core/model/IExpression;)V
+ ([Lorg/eclipse/debug/core/model/IExpression;)V
+getExpressions
+ ()[Lorg/eclipse/debug/core/model/IExpression;
+ ()[Lorg/eclipse/debug/core/model/IExpression;
+getExpressions
+ (Ljava/lang/String;)[Lorg/eclipse/debug/core/model/IExpression;
+ (Ljava/lang/String;)[Lorg/eclipse/debug/core/model/IExpression;
+hasWatchExpressionDelegate
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+newWatchExpression
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/model/IWatchExpression;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/model/IWatchExpression;
+newWatchExpressionDelegate
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/model/IWatchExpressionDelegate;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/model/IWatchExpressionDelegate;
+removeExpression
+ (Lorg/eclipse/debug/core/model/IExpression;)V
+ (Lorg/eclipse/debug/core/model/IExpression;)V
+removeExpressionListener
+ (Lorg/eclipse/debug/core/IExpressionListener;)V
+ (Lorg/eclipse/debug/core/IExpressionListener;)V
+removeExpressionListener
+ (Lorg/eclipse/debug/core/IExpressionsListener;)V
+ (Lorg/eclipse/debug/core/IExpressionsListener;)V
+removeExpressions
+ ([Lorg/eclipse/debug/core/model/IExpression;)V
+ ([Lorg/eclipse/debug/core/model/IExpression;)V

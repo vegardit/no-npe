@@ -1,0 +1,45 @@
+class org/eclipse/debug/ui/IDebugView
+
+COPY_ACTION
+ Ljava/lang/String;
+ L1java/lang/String;
+CUT_ACTION
+ Ljava/lang/String;
+ L1java/lang/String;
+DOUBLE_CLICK_ACTION
+ Ljava/lang/String;
+ L1java/lang/String;
+FIND_ACTION
+ Ljava/lang/String;
+ L1java/lang/String;
+PASTE_ACTION
+ Ljava/lang/String;
+ L1java/lang/String;
+REMOVE_ACTION
+ Ljava/lang/String;
+ L1java/lang/String;
+SELECT_ALL_ACTION
+ Ljava/lang/String;
+ L1java/lang/String;
+
+add
+ (Lorg/eclipse/ui/texteditor/IUpdate;)V
+ (Lorg/eclipse/ui/texteditor/IUpdate;)V
+getAction
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IAction;
+ (Ljava/lang/String;)Lorg/eclipse/jface/action/IAction;
+getContextMenuManager
+ ()Lorg/eclipse/jface/action/IMenuManager;
+ ()Lorg/eclipse/jface/action/IMenuManager;
+getPresentation
+ (Ljava/lang/String;)Lorg/eclipse/debug/ui/IDebugModelPresentation;
+ (Ljava/lang/String;)Lorg/eclipse/debug/ui/IDebugModelPresentation;
+getViewer
+ ()Lorg/eclipse/jface/viewers/Viewer;
+ ()Lorg/eclipse/jface/viewers/Viewer;
+remove
+ (Lorg/eclipse/ui/texteditor/IUpdate;)V
+ (Lorg/eclipse/ui/texteditor/IUpdate;)V
+setAction
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V

@@ -1,0 +1,62 @@
+class org/eclipse/debug/core/ILaunchConfigurationType
+
+getAttribute
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getCategory
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getContributorName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDelegate
+ ()Lorg/eclipse/debug/core/model/ILaunchConfigurationDelegate;
+ ()Lorg/eclipse/debug/core/model/ILaunchConfigurationDelegate;
+getDelegate
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/model/ILaunchConfigurationDelegate;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/model/ILaunchConfigurationDelegate;
+getDelegates
+ (Ljava/util/Set<Ljava/lang/String;>;)[Lorg/eclipse/debug/core/ILaunchDelegate;
+ (Ljava/util/Set<Ljava/lang/String;>;)[Lorg/eclipse/debug/core/ILaunchDelegate;
+getIdentifier
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPluginIdentifier
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPreferredDelegate
+ (Ljava/util/Set<Ljava/lang/String;>;)Lorg/eclipse/debug/core/ILaunchDelegate;
+ (Ljava/util/Set<Ljava/lang/String;>;)Lorg/eclipse/debug/core/ILaunchDelegate;
+getPrototypes
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+getSourceLocatorId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSourcePathComputer
+ ()Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+ ()Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+getSupportedModeCombinations
+ ()Ljava/util/Set<Ljava/util/Set<Ljava/lang/String;>;>;
+ ()Ljava/util/Set<Ljava/util/Set<Ljava/lang/String;>;>;
+getSupportedModes
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+newInstance
+ (Lorg/eclipse/core/resources/IContainer;Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;
+ (Lorg/eclipse/core/resources/IContainer;Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;
+newPrototypeInstance
+ (Lorg/eclipse/core/resources/IContainer;Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;
+ (Lorg/eclipse/core/resources/IContainer;Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;
+setPreferredDelegate
+ (Ljava/util/Set<Ljava/lang/String;>;Lorg/eclipse/debug/core/ILaunchDelegate;)V
+ (Ljava/util/Set<Ljava/lang/String;>;Lorg/eclipse/debug/core/ILaunchDelegate;)V
+supportsMode
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+supportsModeCombination
+ (Ljava/util/Set<Ljava/lang/String;>;)Z
+ (Ljava/util/Set<Ljava/lang/String;>;)Z

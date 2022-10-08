@@ -1,0 +1,62 @@
+class org/eclipse/debug/ui/actions/AbstractLaunchHistoryAction
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addSeparator
+ (Lorg/eclipse/swt/widgets/Menu;)V
+ (Lorg/eclipse/swt/widgets/Menu;)V
+addToMenu
+ (Lorg/eclipse/swt/widgets/Menu;Lorg/eclipse/jface/action/IAction;I)V
+ (Lorg/eclipse/swt/widgets/Menu;Lorg/eclipse/jface/action/IAction;I)V
+fillMenu
+ (Lorg/eclipse/swt/widgets/Menu;)V
+ (Lorg/eclipse/swt/widgets/Menu;)V
+getAction
+ ()Lorg/eclipse/jface/action/IAction;
+ ()Lorg/eclipse/jface/action/IAction;
+getFavorites
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+getHistory
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+getLastLaunch
+ ()Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()Lorg/eclipse/debug/core/ILaunchConfiguration;
+getLaunchGroupIdentifier
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLaunchHistory
+ ()Lorg/eclipse/debug/internal/ui/launchConfigurations/LaunchHistory;
+ ()Lorg/eclipse/debug/internal/ui/launchConfigurations/LaunchHistory;
+getMenu
+ (Lorg/eclipse/swt/widgets/Control;)Lorg/eclipse/swt/widgets/Menu;
+ (Lorg/eclipse/swt/widgets/Control;)Lorg/eclipse/swt/widgets/Menu;
+getMenu
+ (Lorg/eclipse/swt/widgets/Menu;)Lorg/eclipse/swt/widgets/Menu;
+ (Lorg/eclipse/swt/widgets/Menu;)Lorg/eclipse/swt/widgets/Menu;
+getMode
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getToolTip
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Ljava/lang/String;
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Ljava/lang/String;
+init
+ (Lorg/eclipse/jface/action/IAction;)V
+ (Lorg/eclipse/jface/action/IAction;)V
+init
+ (Lorg/eclipse/ui/IWorkbenchWindow;)V
+ (Lorg/eclipse/ui/IWorkbenchWindow;)V
+run
+ (Lorg/eclipse/jface/action/IAction;)V
+ (Lorg/eclipse/jface/action/IAction;)V
+runInternal
+ (Lorg/eclipse/jface/action/IAction;Z)V
+ (Lorg/eclipse/jface/action/IAction;Z)V
+runWithEvent
+ (Lorg/eclipse/jface/action/IAction;Lorg/eclipse/swt/widgets/Event;)V
+ (Lorg/eclipse/jface/action/IAction;Lorg/eclipse/swt/widgets/Event;)V
+selectionChanged
+ (Lorg/eclipse/jface/action/IAction;Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/action/IAction;Lorg/eclipse/jface/viewers/ISelection;)V

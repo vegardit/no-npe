@@ -1,0 +1,58 @@
+class org/eclipse/debug/ui/RefreshTab
+
+ATTR_REFRESH_RECURSIVE
+ Ljava/lang/String;
+ L1java/lang/String;
+ATTR_REFRESH_SCOPE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getRefreshAttribute
+ (Lorg/eclipse/ui/IWorkingSet;)Ljava/lang/String;
+ (Lorg/eclipse/ui/IWorkingSet;)Ljava/lang/String;
+getRefreshResources
+ (Ljava/lang/String;)[Lorg/eclipse/core/resources/IResource;
+ (Ljava/lang/String;)[Lorg/eclipse/core/resources/IResource;
+getRefreshScope
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Ljava/lang/String;
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Ljava/lang/String;
+getWorkingSet
+ (Ljava/lang/String;)Lorg/eclipse/ui/IWorkingSet;
+ (Ljava/lang/String;)Lorg/eclipse/ui/IWorkingSet;
+isRefreshRecursive
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+refreshResources
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+
+activated
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+deactivated
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getImage
+ ()Lorg/eclipse/swt/graphics/Image;
+ ()Lorg/eclipse/swt/graphics/Image;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+initializeFrom
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+isValid
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+performApply
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+setDefaults
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V

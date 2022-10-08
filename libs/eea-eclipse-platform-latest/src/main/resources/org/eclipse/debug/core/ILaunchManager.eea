@@ -1,0 +1,141 @@
+class org/eclipse/debug/core/ILaunchManager
+
+ATTR_APPEND_ENVIRONMENT_VARIABLES
+ Ljava/lang/String;
+ L1java/lang/String;
+ATTR_ENVIRONMENT_VARIABLES
+ Ljava/lang/String;
+ L1java/lang/String;
+ATTR_PRIVATE
+ Ljava/lang/String;
+ L1java/lang/String;
+DEBUG_MODE
+ Ljava/lang/String;
+ L1java/lang/String;
+PROFILE_MODE
+ Ljava/lang/String;
+ L1java/lang/String;
+RUN_MODE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addLaunch
+ (Lorg/eclipse/debug/core/ILaunch;)V
+ (Lorg/eclipse/debug/core/ILaunch;)V
+addLaunchConfigurationListener
+ (Lorg/eclipse/debug/core/ILaunchConfigurationListener;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationListener;)V
+addLaunchListener
+ (Lorg/eclipse/debug/core/ILaunchListener;)V
+ (Lorg/eclipse/debug/core/ILaunchListener;)V
+addLaunchListener
+ (Lorg/eclipse/debug/core/ILaunchesListener;)V
+ (Lorg/eclipse/debug/core/ILaunchesListener;)V
+addLaunches
+ ([Lorg/eclipse/debug/core/ILaunch;)V
+ ([Lorg/eclipse/debug/core/ILaunch;)V
+generateLaunchConfigurationName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+generateUniqueLaunchConfigurationNameFrom
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getDebugTargets
+ ()[Lorg/eclipse/debug/core/model/IDebugTarget;
+ ()[Lorg/eclipse/debug/core/model/IDebugTarget;
+getEncoding
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Ljava/lang/String;
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Ljava/lang/String;
+getEnvironment
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)[Ljava/lang/String;
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)[Ljava/lang/String;
+getLaunchConfiguration
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+getLaunchConfiguration
+ (Lorg/eclipse/core/resources/IFile;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+ (Lorg/eclipse/core/resources/IFile;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+getLaunchConfigurationType
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfigurationType;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchConfigurationType;
+getLaunchConfigurationTypes
+ ()[Lorg/eclipse/debug/core/ILaunchConfigurationType;
+ ()[Lorg/eclipse/debug/core/ILaunchConfigurationType;
+getLaunchConfigurations
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+getLaunchConfigurations
+ (I)[Lorg/eclipse/debug/core/ILaunchConfiguration;
+ (I)[Lorg/eclipse/debug/core/ILaunchConfiguration;
+getLaunchConfigurations
+ (Lorg/eclipse/debug/core/ILaunchConfigurationType;)[Lorg/eclipse/debug/core/ILaunchConfiguration;
+ (Lorg/eclipse/debug/core/ILaunchConfigurationType;)[Lorg/eclipse/debug/core/ILaunchConfiguration;
+getLaunchConfigurations
+ (Lorg/eclipse/debug/core/ILaunchConfigurationType;I)[Lorg/eclipse/debug/core/ILaunchConfiguration;
+ (Lorg/eclipse/debug/core/ILaunchConfigurationType;I)[Lorg/eclipse/debug/core/ILaunchConfiguration;
+getLaunchMode
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchMode;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/ILaunchMode;
+getLaunchModes
+ ()[Lorg/eclipse/debug/core/ILaunchMode;
+ ()[Lorg/eclipse/debug/core/ILaunchMode;
+getLaunches
+ ()[Lorg/eclipse/debug/core/ILaunch;
+ ()[Lorg/eclipse/debug/core/ILaunch;
+getMigrationCandidates
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()[Lorg/eclipse/debug/core/ILaunchConfiguration;
+getMovedFrom
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+getMovedTo
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Lorg/eclipse/debug/core/ILaunchConfiguration;
+getNativeEnvironment
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getNativeEnvironmentCasePreserved
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getProcesses
+ ()[Lorg/eclipse/debug/core/model/IProcess;
+ ()[Lorg/eclipse/debug/core/model/IProcess;
+getSourceContainerType
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/sourcelookup/ISourceContainerType;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/sourcelookup/ISourceContainerType;
+getSourceContainerTypes
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceContainerType;
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceContainerType;
+getSourcePathComputer
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+getSourcePathComputer
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+ (Lorg/eclipse/debug/core/ILaunchConfiguration;)Lorg/eclipse/debug/core/sourcelookup/ISourcePathComputer;
+isExistingLaunchConfigurationName
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isRegistered
+ (Lorg/eclipse/debug/core/ILaunch;)Z
+ (Lorg/eclipse/debug/core/ILaunch;)Z
+isValidLaunchConfigurationName
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+newSourceLocator
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/model/IPersistableSourceLocator;
+ (Ljava/lang/String;)Lorg/eclipse/debug/core/model/IPersistableSourceLocator;
+removeLaunch
+ (Lorg/eclipse/debug/core/ILaunch;)V
+ (Lorg/eclipse/debug/core/ILaunch;)V
+removeLaunchConfigurationListener
+ (Lorg/eclipse/debug/core/ILaunchConfigurationListener;)V
+ (Lorg/eclipse/debug/core/ILaunchConfigurationListener;)V
+removeLaunchListener
+ (Lorg/eclipse/debug/core/ILaunchListener;)V
+ (Lorg/eclipse/debug/core/ILaunchListener;)V
+removeLaunchListener
+ (Lorg/eclipse/debug/core/ILaunchesListener;)V
+ (Lorg/eclipse/debug/core/ILaunchesListener;)V
+removeLaunches
+ ([Lorg/eclipse/debug/core/ILaunch;)V
+ ([Lorg/eclipse/debug/core/ILaunch;)V

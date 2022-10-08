@@ -1,0 +1,30 @@
+class org/eclipse/debug/ui/IBreakpointOrganizerDelegate
+
+P_CATEGORY_CHANGED
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addBreakpoint
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Lorg/eclipse/core/runtime/IAdaptable;)V
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Lorg/eclipse/core/runtime/IAdaptable;)V
+addPropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+canAdd
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Lorg/eclipse/core/runtime/IAdaptable;)Z
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Lorg/eclipse/core/runtime/IAdaptable;)Z
+canRemove
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Lorg/eclipse/core/runtime/IAdaptable;)Z
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Lorg/eclipse/core/runtime/IAdaptable;)Z
+getCategories
+ ()[Lorg/eclipse/core/runtime/IAdaptable;
+ ()[Lorg/eclipse/core/runtime/IAdaptable;
+getCategories
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)[Lorg/eclipse/core/runtime/IAdaptable;
+ (Lorg/eclipse/debug/core/model/IBreakpoint;)[Lorg/eclipse/core/runtime/IAdaptable;
+removeBreakpoint
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Lorg/eclipse/core/runtime/IAdaptable;)V
+ (Lorg/eclipse/debug/core/model/IBreakpoint;Lorg/eclipse/core/runtime/IAdaptable;)V
+removePropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
