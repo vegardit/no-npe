@@ -25,7 +25,6 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import org.eclipse.jdt.annotation.NonNull;
-import org.eclipse.jdt.annotation.Nullable;
 import org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider;
 
 import com.vegardit.no_npe.eea_generator.EEAFile.LoadOptions;
@@ -85,10 +84,13 @@ public abstract class EEAGenerator {
          filePropsPath = DEFAULT_PROPERTES_FILE;
       }
       final var props = new Props(JVM_PROPERTY_PREFIX, filePropsPath);
-
       final var packages = props.get(PROPERTY_PACKAGES_INCLUDE, null).value.split(",");
-      final var classExclusions = Arrays.stream(props.get(PROPERTY_CLASSES_EXCLUDE, "").value.split(",")) //
-         .map(Pattern::compile).toArray(Pattern[]::new);
+
+      final var classExclusionsStr = props.get(PROPERTY_CLASSES_EXCLUDE, "");
+      final var classExclusions = classExclusionsStr.value.isBlank() //
+         ? new Pattern[0] //
+         : Arrays.stream(classExclusionsStr.value.split(",")).map(Pattern::compile).toArray(Pattern[]::new);
+
       final var outputDirProp = props.get(PROPERTY_OUTPUT_DIR, "src/main/resources");
       var outputDir = Path.of(outputDirProp.value);
       if (outputDirProp.source instanceof Path && !outputDir.isAbsolute()) {
@@ -102,7 +104,7 @@ public abstract class EEAGenerator {
       config.omitRedundantAnnotatedSignatures = Boolean.parseBoolean(props.get(PROPERTY_OMIT_REDUNDAND_ANNOTTED_SIGNATURES, "false").value);
       config.classFilter = clazz -> {
          for (final var classExclusion : classExclusions) {
-            if (classExclusion.matcher(clazz.getName()).matches())
+            if (classExclusion.matcher(clazz.getName()).find())
                return false;
          }
          return true;
@@ -206,10 +208,7 @@ public abstract class EEAGenerator {
     * @param rootPackageName name the of root package to scan for classes
     * @throws IllegalArgumentException if no class was found
     */
-   public static SortedMap<Path, EEAFile> computeEEAFiles( //
-      final String rootPackageName, //
-      @Nullable final Predicate<ClassInfo> filter //
-   ) {
+   public static SortedMap<Path, EEAFile> computeEEAFiles(final String rootPackageName, final Predicate<ClassInfo> filter) {
       final var result = new TreeMap<Path, EEAFile>();
       try (ScanResult scanResult = new ClassGraph() //
          .enableAllInfo() //
@@ -230,8 +229,9 @@ public abstract class EEAGenerator {
                continue;
             }
 
-            if (filter != null && !filter.test(classInfo)) {
+            if (!filter.test(classInfo)) {
                LOG.log(Level.DEBUG, "Ignoring class excluded by filter [{0}]...", classInfo.getName());
+               continue;
             }
 
             LOG.log(Level.DEBUG, "Scanning class [{0}]...", classInfo.getName());

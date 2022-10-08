@@ -78,7 +78,7 @@ public class EEAFileTest {
 
    @Test
    void testApplyAnnotationsAndCommentsFrom() throws IOException {
-      final var computedEEAFiles = EEAGenerator.computeEEAFiles(EEAFileTest.class.getPackageName(), null);
+      final var computedEEAFiles = EEAGenerator.computeEEAFiles(EEAFileTest.class.getPackageName(), c -> true);
       final var computedEEAFile = computedEEAFiles.get(Path.of(TEST_ENTITY_NAME_WITH_SLASHES + ".eea"));
       assertThat(computedEEAFile).isNotNull();
       assert computedEEAFile != null;
