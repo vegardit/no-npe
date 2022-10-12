@@ -6,8 +6,10 @@ package com.vegardit.no_npe.eea_generator;
 
 import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.*;
 
+import java.io.Externalizable;
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 import java.nio.file.Files;
@@ -25,11 +27,13 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import org.eclipse.jdt.annotation.NonNull;
+import org.eclipse.jdt.annotation.Nullable;
 import org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider;
 
 import com.vegardit.no_npe.eea_generator.EEAFile.LoadOptions;
 import com.vegardit.no_npe.eea_generator.EEAFile.SaveOptions;
 import com.vegardit.no_npe.eea_generator.EEAFile.ValueWithComment;
+import com.vegardit.no_npe.eea_generator.internal.Either;
 import com.vegardit.no_npe.eea_generator.internal.Props;
 
 import io.github.classgraph.ClassGraph;
@@ -55,6 +59,41 @@ public abstract class EEAGenerator {
    public static final String PROPERTY_PACKAGES_INCLUDE = "packages.include";
    public static final String PROPERTY_CLASSES_EXCLUDE = "classes.exclude";
    public static final String PROPERTY_OMIT_REDUNDAND_ANNOTTED_SIGNATURES = "omitRedundantAnnotatedSignatures";
+
+   private static final EEAFile TEMPLATE_SERIALIZABLE;
+   private static final EEAFile TEMPLATE_EXTERNALIZABLE;
+   private static final EEAFile TEMPLATE_OBJECT;
+   private static final EEAFile TEMPLATE_THROWABLE;
+
+   static {
+      try (var reader = getUTF8ResourceAsReader(EEAFile.class, "Serializable.eea")) {
+         TEMPLATE_SERIALIZABLE = new EEAFile(Serializable.class.getName());
+         TEMPLATE_SERIALIZABLE.load("classpath:org/no_npe/utils/Serializable.eea", reader);
+      } catch (final Exception ex) {
+         throw new IllegalStateException(ex);
+      }
+
+      try (var reader = getUTF8ResourceAsReader(EEAFile.class, "Externalizable.eea")) {
+         TEMPLATE_EXTERNALIZABLE = new EEAFile(Externalizable.class.getName());
+         TEMPLATE_EXTERNALIZABLE.load("classpath:org/no_npe/utils/Externalizable.eea", reader);
+      } catch (final Exception ex) {
+         throw new IllegalStateException(ex);
+      }
+
+      try (var reader = getUTF8ResourceAsReader(EEAFile.class, "Object.eea")) {
+         TEMPLATE_OBJECT = new EEAFile(Object.class.getName());
+         TEMPLATE_OBJECT.load("classpath:org/no_npe/utils/Object.eea", reader);
+      } catch (final Exception ex) {
+         throw new IllegalStateException(ex);
+      }
+
+      try (var reader = getUTF8ResourceAsReader(EEAFile.class, "Throwable.eea")) {
+         TEMPLATE_THROWABLE = new EEAFile(Throwable.class.getName());
+         TEMPLATE_THROWABLE.load("classpath:org/no_npe/utils/Throwable.eea", reader);
+      } catch (final Exception ex) {
+         throw new IllegalStateException(ex);
+      }
+   }
 
    public static class Config {
       public final @NonNull String[] packages;
@@ -137,6 +176,53 @@ public abstract class EEAGenerator {
       }
    }
 
+   protected static @Nullable ValueWithComment computeAnnotatedSignature(final EEAFile.ClassMember member, final ClassInfo classInfo,
+      final Either<FieldInfo, MethodInfo> memberInfo) {
+
+      if (classInfo.getName().endsWith("Exception") || classInfo.getName().endsWith("Error")) {
+         final var sig = TEMPLATE_THROWABLE.findMatchingClassMember(member).map(m -> m.annotatedSignature).orElse(null);
+         if (sig != null)
+            return sig.clone();
+      }
+
+      var sig = TEMPLATE_EXTERNALIZABLE.findMatchingClassMember(member).map(m -> m.annotatedSignature).orElse(null);
+      if (sig != null)
+         return sig.clone();
+
+      sig = TEMPLATE_SERIALIZABLE.findMatchingClassMember(member).map(m -> m.annotatedSignature).orElse(null);
+      if (sig != null)
+         return sig.clone();
+
+      sig = TEMPLATE_OBJECT.findMatchingClassMember(member).map(m -> m.annotatedSignature).orElse(null);
+      if (sig != null)
+         return sig.clone();
+
+      // analyzing a method
+      if (memberInfo.isRight()) {
+         final MethodInfo methodInfo = memberInfo.get();
+         // mark the parameter of single-parameter methods as @NonNull,
+         // if the class name matches "*Listener" and the parameter type name matches "*Event"
+         if (classInfo.isInterface() //
+            && classInfo.getName().endsWith("Listener") //
+            && !methodInfo.isStatic() && member.originalSignature.value.endsWith(")V") //
+            && methodInfo.getParameterInfo().length == 1 //
+            && methodInfo.getParameterInfo()[0].getTypeDescriptor().toString().endsWith("Event")) {
+            member.annotatedSignature = new ValueWithComment(insert(member.originalSignature.value, 2, "1"), null);
+         }
+
+         // analyzing a field
+      } else {
+         final FieldInfo fieldInfo = memberInfo.get();
+         if (fieldInfo.isStatic() && fieldInfo.isFinal()) {
+            // if the static non-primitive field is final we by default expect it to be non-null,
+            // which can be manually adjusted in the generated field
+            member.annotatedSignature = new ValueWithComment(insert(member.originalSignature.value, 1, "1"));
+         }
+      }
+
+      return null;
+   }
+
    public static EEAFile computeEEAFile(final ClassInfo classInfo) {
       LOG.log(Level.DEBUG, "Scanning class [{0}]...", classInfo.getName());
 
@@ -146,6 +232,7 @@ public abstract class EEAGenerator {
       final var fields = classInfo.getDeclaredFieldInfo();
       final var methods = classInfo.getDeclaredMethodAndConstructorInfo();
 
+      // class signature
       final var typeSig = classInfo.getTypeSignature();
       if (typeSig != null && !typeSig.getTypeParameters().isEmpty()) {
          final var typeParams = getSubstringBetweenBalanced(classInfo.getTypeSignatureStr(), '<', '>');
@@ -164,40 +251,29 @@ public abstract class EEAGenerator {
          }
 
          final var member = eeaFile.addMember(f.getName(), f.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
-         if (f.isFinal()) {
-            // if the static non-primitive field is final we by default expect it to be non-null,
-            // which can be manually adjusted in the generated field
-            member.annotatedSignature = new ValueWithComment(insert(member.originalSignature.value, 1, "1"));
-         }
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, Either.left(f));
       }
 
       eeaFile.addEmptyLine();
 
       // static methods
       for (final var m : getMethods(methods, true)) {
-         eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr());
+         final var member = eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr());
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, Either.right(m));
       }
       eeaFile.addEmptyLine();
 
       // instance fields
-      getFields(fields, false).stream().forEach(f -> eeaFile.addMember(f.getName(), f.getTypeSignatureOrTypeDescriptorStr()));
+      for (final var f : getFields(fields, false)) {
+         final var member = eeaFile.addMember(f.getName(), f.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, Either.left(f));
+      }
       eeaFile.addEmptyLine();
 
       // instance methods
       for (final var m : getMethods(methods, false)) {
          final var member = eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
-
-         // mark the parameter of single-parameter methods as @NonNull,
-         // if the class name matches "*Listener" and the parameter type name matches "*Event"
-         if (classInfo.isInterface() //
-            && classInfo.getName().endsWith("Listener") //
-            && m.getTypeSignatureOrTypeDescriptorStr().endsWith(")V")) {
-            final var paramInfo = m.getParameterInfo();
-            if (paramInfo.length == 1 //
-               && paramInfo[0].getTypeDescriptor().toString().endsWith("Event")) {
-               member.annotatedSignature = new ValueWithComment(insert(member.originalSignature.value, 2, "1"), null);
-            }
-         }
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, Either.right(m));
       }
       return eeaFile;
    }
@@ -242,8 +318,8 @@ public abstract class EEAGenerator {
 
       // TODO workaround for https://github.com/classgraph/classgraph/issues/703
       if (("java".equals(rootPackageName) || rootPackageName.startsWith("java.lang")) //
-         && !result.containsKey(EEAFile.TEMPLATE_OBJECT.relativePath)) {
-         result.put(EEAFile.TEMPLATE_OBJECT.relativePath, EEAFile.TEMPLATE_OBJECT);
+         && !result.containsKey(TEMPLATE_OBJECT.relativePath)) {
+         result.put(TEMPLATE_OBJECT.relativePath, TEMPLATE_OBJECT);
       }
       return result;
    }

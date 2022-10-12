@@ -7,10 +7,8 @@ package com.vegardit.no_npe.eea_generator;
 import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.*;
 
 import java.io.BufferedReader;
-import java.io.Externalizable;
 import java.io.File;
 import java.io.IOException;
-import java.io.Serializable;
 import java.lang.System.Logger;
 import java.lang.System.Logger.Level;
 import java.nio.file.Files;
@@ -83,7 +81,7 @@ public class EEAFile {
       REPLACE_EXISTING
    }
 
-   public static final class ValueWithComment {
+   public static final class ValueWithComment implements Cloneable {
       public static final char COMMENT_SEPARATOR = ' ';
 
       public static ValueWithComment parse(String text) {
@@ -109,6 +107,11 @@ public class EEAFile {
       public ValueWithComment(final String value, @Nullable final String comment) {
          this.value = value;
          this.comment = comment;
+      }
+
+      @Override
+      public ValueWithComment clone() {
+         return new ValueWithComment(value, comment);
       }
 
       public boolean hasComment() {
@@ -138,41 +141,6 @@ public class EEAFile {
     */
    protected static final Pattern PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES = Pattern.compile(
       "[TL]([01])[a-zA-Z_][a-zA-Z_0-9$\\/*]*[<;]");
-
-   protected static final EEAFile TEMPLATE_SERIALIZABLE;
-   protected static final EEAFile TEMPLATE_EXTERNALIZABLE;
-   protected static final EEAFile TEMPLATE_OBJECT;
-   protected static final EEAFile TEMPLATE_THROWABLE;
-
-   static {
-      try (var reader = getUTF8ResourceAsReader(EEAFile.class, "Serializable.eea")) {
-         TEMPLATE_SERIALIZABLE = new EEAFile(Serializable.class.getName());
-         TEMPLATE_SERIALIZABLE.load("classpath:org/no_npe/utils/Serializable.eea", reader);
-      } catch (final Exception ex) {
-         throw new IllegalStateException(ex);
-      }
-
-      try (var reader = getUTF8ResourceAsReader(EEAFile.class, "Externalizable.eea")) {
-         TEMPLATE_EXTERNALIZABLE = new EEAFile(Externalizable.class.getName());
-         TEMPLATE_EXTERNALIZABLE.load("classpath:org/no_npe/utils/Externalizable.eea", reader);
-      } catch (final Exception ex) {
-         throw new IllegalStateException(ex);
-      }
-
-      try (var reader = getUTF8ResourceAsReader(EEAFile.class, "Object.eea")) {
-         TEMPLATE_OBJECT = new EEAFile(Object.class.getName());
-         TEMPLATE_OBJECT.load("classpath:org/no_npe/utils/Object.eea", reader);
-      } catch (final Exception ex) {
-         throw new IllegalStateException(ex);
-      }
-
-      try (var reader = getUTF8ResourceAsReader(EEAFile.class, "Throwable.eea")) {
-         TEMPLATE_THROWABLE = new EEAFile(Throwable.class.getName());
-         TEMPLATE_THROWABLE.load("classpath:org/no_npe/utils/Throwable.eea", reader);
-      } catch (final Exception ex) {
-         throw new IllegalStateException(ex);
-      }
-   }
 
    public final ValueWithComment className;
    @Nullable
@@ -280,29 +248,6 @@ public class EEAFile {
 
    public Stream<ClassMember> getClassMembers() {
       return members.stream();
-   }
-
-   @Nullable
-   protected String guessAnnotatedSignature(final ClassMember member) {
-      if (className.value.endsWith("Exception") || className.value.endsWith("Error")) {
-         final var sig = TEMPLATE_THROWABLE.findMatchingClassMember(member).map(m -> m.annotatedSignature).orElse(null);
-         if (sig != null)
-            return sig.value;
-      }
-
-      var sig = TEMPLATE_EXTERNALIZABLE.findMatchingClassMember(member).map(m -> m.annotatedSignature).orElse(null);
-      if (sig != null)
-         return sig.value;
-
-      sig = TEMPLATE_SERIALIZABLE.findMatchingClassMember(member).map(m -> m.annotatedSignature).orElse(null);
-      if (sig != null)
-         return sig.value;
-
-      sig = TEMPLATE_OBJECT.findMatchingClassMember(member).map(m -> m.annotatedSignature).orElse(null);
-      if (sig != null)
-         return sig.value;
-
-      return null;
    }
 
    /**
@@ -427,13 +372,8 @@ public class EEAFile {
          writeLine(sb, member.name);
          writeLine(sb, " ", member.originalSignature);
          var annotatedSig = member.annotatedSignature;
-         if (annotatedSig == null) {
-            final var guessedSig = guessAnnotatedSignature(member);
-            if (guessedSig != null) {
-               annotatedSig = new ValueWithComment(guessedSig);
-            } else if (!omitRedundantAnnotatedSignatures) {
-               annotatedSig = member.originalSignature;
-            }
+         if (annotatedSig == null && !omitRedundantAnnotatedSignatures) {
+            annotatedSig = member.originalSignature;
          }
          if (annotatedSig != null) {
             writeLine(sb, " ", annotatedSig);
