@@ -179,7 +179,8 @@ public abstract class EEAGenerator {
    protected static @Nullable ValueWithComment computeAnnotatedSignature(final EEAFile.ClassMember member, final ClassInfo classInfo,
       final Either<FieldInfo, MethodInfo> memberInfo) {
 
-      if (classInfo.getName().endsWith("Exception") || classInfo.getName().endsWith("Error")) {
+      final var isThrowable = !classInfo.getSuperclasses().filter(c -> c.getName().equals("java.lang.Throwable")).isEmpty();
+      if (isThrowable) {
          final var sig = TEMPLATE_THROWABLE.findMatchingClassMember(member).map(m -> m.annotatedSignature).orElse(null);
          if (sig != null)
             return sig.clone();
