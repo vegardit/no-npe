@@ -2,40 +2,40 @@ class org/eclipse/core/resources/IResource
 
 accept
  (Lorg/eclipse/core/resources/IResourceProxyVisitor;I)V
- (Lorg/eclipse/core/resources/IResourceProxyVisitor;I)V
+ (L1org/eclipse/core/resources/IResourceProxyVisitor;I)V
 accept
  (Lorg/eclipse/core/resources/IResourceProxyVisitor;II)V
- (Lorg/eclipse/core/resources/IResourceProxyVisitor;II)V
+ (L1org/eclipse/core/resources/IResourceProxyVisitor;II)V
 accept
  (Lorg/eclipse/core/resources/IResourceVisitor;)V
- (Lorg/eclipse/core/resources/IResourceVisitor;)V
+ (L1org/eclipse/core/resources/IResourceVisitor;)V
 accept
  (Lorg/eclipse/core/resources/IResourceVisitor;II)V
- (Lorg/eclipse/core/resources/IResourceVisitor;II)V
+ (L1org/eclipse/core/resources/IResourceVisitor;II)V
 accept
  (Lorg/eclipse/core/resources/IResourceVisitor;IZ)V
- (Lorg/eclipse/core/resources/IResourceVisitor;IZ)V
+ (L1org/eclipse/core/resources/IResourceVisitor;IZ)V
 clearHistory
  (Lorg/eclipse/core/runtime/IProgressMonitor;)V
  (L0org/eclipse/core/runtime/IProgressMonitor;)V
 copy
  (Lorg/eclipse/core/resources/IProjectDescription;ILorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/resources/IProjectDescription;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/resources/IProjectDescription;IL0org/eclipse/core/runtime/IProgressMonitor;)V
 copy
  (Lorg/eclipse/core/resources/IProjectDescription;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/resources/IProjectDescription;ZL0org/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/resources/IProjectDescription;ZL0org/eclipse/core/runtime/IProgressMonitor;)V
 copy
  (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
 copy
  (Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/runtime/IPath;ZL0org/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IPath;ZL0org/eclipse/core/runtime/IProgressMonitor;)V
 createMarker
  (Ljava/lang/String;)Lorg/eclipse/core/resources/IMarker;
- (Ljava/lang/String;)Lorg/eclipse/core/resources/IMarker;
+ (L1java/lang/String;)Lorg/eclipse/core/resources/IMarker;
 createMarker
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;+Ljava/lang/Object;>;)Lorg/eclipse/core/resources/IMarker;
- (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;+Ljava/lang/Object;>;)Lorg/eclipse/core/resources/IMarker;
+ (L1java/lang/String;L0java/util/Map<Ljava/lang/String;+Ljava/lang/Object;>;)Lorg/eclipse/core/resources/IMarker;
 createProxy
  ()Lorg/eclipse/core/resources/IResourceProxy;
  ()Lorg/eclipse/core/resources/IResourceProxy;
@@ -47,31 +47,31 @@ delete
  (ZL0org/eclipse/core/runtime/IProgressMonitor;)V
 deleteMarkers
  (Ljava/lang/String;ZI)V
- (Ljava/lang/String;ZI)V
+ (L0java/lang/String;ZI)V
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z
 findMarker
  (J)Lorg/eclipse/core/resources/IMarker;
- (J)Lorg/eclipse/core/resources/IMarker;
+ (J)L0org/eclipse/core/resources/IMarker;
 findMarkers
  (Ljava/lang/String;ZI)[Lorg/eclipse/core/resources/IMarker;
- (Ljava/lang/String;ZI)[Lorg/eclipse/core/resources/IMarker;
+ (L0java/lang/String;ZI)[1L1org/eclipse/core/resources/IMarker;
 findMaxProblemSeverity
  (Ljava/lang/String;ZI)I
- (Ljava/lang/String;ZI)I
+ (L0java/lang/String;ZI)I
 getFileExtension
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String;
 getFullPath
  ()Lorg/eclipse/core/runtime/IPath;
  ()L1org/eclipse/core/runtime/IPath;
 getLocation
  ()Lorg/eclipse/core/runtime/IPath;
- ()Lorg/eclipse/core/runtime/IPath;
+ ()L0org/eclipse/core/runtime/IPath;
 getLocationURI
  ()Ljava/net/URI;
- ()Ljava/net/URI;
+ ()L0java/net/URI;
 getMarker
  (J)Lorg/eclipse/core/resources/IMarker;
  (J)L1org/eclipse/core/resources/IMarker;
@@ -80,7 +80,7 @@ getName
  ()L1java/lang/String;
 getParent
  ()Lorg/eclipse/core/resources/IContainer;
- ()Lorg/eclipse/core/resources/IContainer;
+ ()L0org/eclipse/core/resources/IContainer;
 getPathVariableManager
  ()Lorg/eclipse/core/resources/IPathVariableManager;
  ()L1org/eclipse/core/resources/IPathVariableManager;
@@ -92,19 +92,19 @@ getPersistentProperty
  (L1org/eclipse/core/runtime/QualifiedName;)Ljava/lang/String;
 getProject
  ()Lorg/eclipse/core/resources/IProject;
- ()Lorg/eclipse/core/resources/IProject;
+ ()L0org/eclipse/core/resources/IProject;
 getProjectRelativePath
  ()Lorg/eclipse/core/runtime/IPath;
  ()L1org/eclipse/core/runtime/IPath;
 getRawLocation
  ()Lorg/eclipse/core/runtime/IPath;
- ()Lorg/eclipse/core/runtime/IPath;
+ ()L0org/eclipse/core/runtime/IPath;
 getRawLocationURI
  ()Ljava/net/URI;
- ()Ljava/net/URI;
+ ()L0java/net/URI;
 getResourceAttributes
  ()Lorg/eclipse/core/resources/ResourceAttributes;
- ()Lorg/eclipse/core/resources/ResourceAttributes;
+ ()L0org/eclipse/core/resources/ResourceAttributes;
 getSessionProperties
  ()Ljava/util/Map<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
  ()L1java/util/Map<Lorg/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;>;
@@ -146,4 +146,4 @@ setSessionProperty
  (L1org/eclipse/core/runtime/QualifiedName;Ljava/lang/Object;)V
 touch
  (Lorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L0org/eclipse/core/runtime/IProgressMonitor;)V
