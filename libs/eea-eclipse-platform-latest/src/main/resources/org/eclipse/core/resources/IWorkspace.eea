@@ -21,10 +21,10 @@ addSaveParticipant
  (Lorg/eclipse/core/runtime/Plugin;Lorg/eclipse/core/resources/ISaveParticipant;)Lorg/eclipse/core/resources/ISavedState;
 build
  (ILorg/eclipse/core/runtime/IProgressMonitor;)V
- (ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (IL0org/eclipse/core/runtime/IProgressMonitor;)V
 build
  ([Lorg/eclipse/core/resources/IBuildConfiguration;IZLorg/eclipse/core/runtime/IProgressMonitor;)V
- ([Lorg/eclipse/core/resources/IBuildConfiguration;IZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/core/resources/IBuildConfiguration;IZL0org/eclipse/core/runtime/IProgressMonitor;)V
 computePrerequisiteOrder
  ([Lorg/eclipse/core/resources/IProject;)[[Lorg/eclipse/core/resources/IProject;
  ([Lorg/eclipse/core/resources/IProject;)[[Lorg/eclipse/core/resources/IProject;
@@ -33,16 +33,16 @@ computeProjectOrder
  ([Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/core/resources/IWorkspace$ProjectOrder;
 copy
  ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;IL0org/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
 copy
  ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ZL0org/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
 delete
  ([Lorg/eclipse/core/resources/IResource;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- ([Lorg/eclipse/core/resources/IResource;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ ([Lorg/eclipse/core/resources/IResource;IL0org/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
 delete
  ([Lorg/eclipse/core/resources/IResource;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- ([Lorg/eclipse/core/resources/IResource;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ ([Lorg/eclipse/core/resources/IResource;ZL0org/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
 deleteMarkers
  ([Lorg/eclipse/core/resources/IMarker;)V
  ([Lorg/eclipse/core/resources/IMarker;)V
@@ -54,13 +54,13 @@ getDanglingReferences
  ()Ljava/util/Map<Lorg/eclipse/core/resources/IProject;[Lorg/eclipse/core/resources/IProject;>;
 getDescription
  ()Lorg/eclipse/core/resources/IWorkspaceDescription;
- ()Lorg/eclipse/core/resources/IWorkspaceDescription;
+ ()L1org/eclipse/core/resources/IWorkspaceDescription;
 getFilterMatcherDescriptor
  (Ljava/lang/String;)Lorg/eclipse/core/resources/IFilterMatcherDescriptor;
  (Ljava/lang/String;)Lorg/eclipse/core/resources/IFilterMatcherDescriptor;
 getFilterMatcherDescriptors
  ()[Lorg/eclipse/core/resources/IFilterMatcherDescriptor;
- ()[Lorg/eclipse/core/resources/IFilterMatcherDescriptor;
+ ()[1L1org/eclipse/core/resources/IFilterMatcherDescriptor;
 getNatureDescriptor
  (Ljava/lang/String;)Lorg/eclipse/core/resources/IProjectNatureDescriptor;
  (Ljava/lang/String;)Lorg/eclipse/core/resources/IProjectNatureDescriptor;
@@ -69,16 +69,16 @@ getNatureDescriptors
  ()[Lorg/eclipse/core/resources/IProjectNatureDescriptor;
 getPathVariableManager
  ()Lorg/eclipse/core/resources/IPathVariableManager;
- ()Lorg/eclipse/core/resources/IPathVariableManager;
+ ()L1org/eclipse/core/resources/IPathVariableManager;
 getRoot
  ()Lorg/eclipse/core/resources/IWorkspaceRoot;
- ()Lorg/eclipse/core/resources/IWorkspaceRoot;
+ ()L1org/eclipse/core/resources/IWorkspaceRoot;
 getRuleFactory
  ()Lorg/eclipse/core/resources/IResourceRuleFactory;
- ()Lorg/eclipse/core/resources/IResourceRuleFactory;
+ ()L1org/eclipse/core/resources/IResourceRuleFactory;
 getSynchronizer
  ()Lorg/eclipse/core/resources/ISynchronizer;
- ()Lorg/eclipse/core/resources/ISynchronizer;
+ ()L1org/eclipse/core/resources/ISynchronizer;
 loadProjectDescription
  (Ljava/io/InputStream;)Lorg/eclipse/core/resources/IProjectDescription;
  (Ljava/io/InputStream;)Lorg/eclipse/core/resources/IProjectDescription;
@@ -87,10 +87,10 @@ loadProjectDescription
  (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/resources/IProjectDescription;
 move
  ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;IL0org/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
 move
  ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;ZL0org/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
 newBuildConfig
  (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/resources/IBuildConfiguration;
  (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/core/resources/IBuildConfiguration;
@@ -108,19 +108,19 @@ removeSaveParticipant
  (Lorg/eclipse/core/runtime/Plugin;)V
 run
  (Lorg/eclipse/core/resources/IWorkspaceRunnable;Lorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/resources/IWorkspaceRunnable;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IWorkspaceRunnable;L0org/eclipse/core/runtime/IProgressMonitor;)V
 run
  (Lorg/eclipse/core/resources/IWorkspaceRunnable;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;ILorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/resources/IWorkspaceRunnable;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IWorkspaceRunnable;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;IL0org/eclipse/core/runtime/IProgressMonitor;)V
 run
  (Lorg/eclipse/core/runtime/ICoreRunnable;Lorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/runtime/ICoreRunnable;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/ICoreRunnable;L0org/eclipse/core/runtime/IProgressMonitor;)V
 run
  (Lorg/eclipse/core/runtime/ICoreRunnable;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;ILorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/runtime/ICoreRunnable;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/ICoreRunnable;Lorg/eclipse/core/runtime/jobs/ISchedulingRule;IL0org/eclipse/core/runtime/IProgressMonitor;)V
 save
  (ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- (ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (ZL0org/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
 setDescription
  (Lorg/eclipse/core/resources/IWorkspaceDescription;)V
  (Lorg/eclipse/core/resources/IWorkspaceDescription;)V
@@ -129,28 +129,28 @@ sortNatureSet
  ([Ljava/lang/String;)[Ljava/lang/String;
 validateEdit
  ([Lorg/eclipse/core/resources/IFile;Ljava/lang/Object;)Lorg/eclipse/core/runtime/IStatus;
- ([Lorg/eclipse/core/resources/IFile;Ljava/lang/Object;)Lorg/eclipse/core/runtime/IStatus;
+ ([Lorg/eclipse/core/resources/IFile;Ljava/lang/Object;)L1org/eclipse/core/runtime/IStatus;
 validateFiltered
  (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IResource;)L1org/eclipse/core/runtime/IStatus;
 validateLinkLocation
  (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;)L1org/eclipse/core/runtime/IStatus;
 validateLinkLocationURI
  (Lorg/eclipse/core/resources/IResource;Ljava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/resources/IResource;Ljava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IResource;Ljava/net/URI;)L1org/eclipse/core/runtime/IStatus;
 validateName
  (Ljava/lang/String;I)Lorg/eclipse/core/runtime/IStatus;
- (Ljava/lang/String;I)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;I)L1org/eclipse/core/runtime/IStatus;
 validateNatureSet
  ([Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
- ([Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ ([Ljava/lang/String;)L1org/eclipse/core/runtime/IStatus;
 validatePath
  (Ljava/lang/String;I)Lorg/eclipse/core/runtime/IStatus;
- (Ljava/lang/String;I)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/lang/String;I)L1org/eclipse/core/runtime/IStatus;
 validateProjectLocation
  (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/runtime/IPath;)L1org/eclipse/core/runtime/IStatus;
 validateProjectLocationURI
  (Lorg/eclipse/core/resources/IProject;Ljava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/resources/IProject;Ljava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IProject;Ljava/net/URI;)L1org/eclipse/core/runtime/IStatus;
