@@ -1,0 +1,43 @@
+class org/yaml/snakeyaml/resolver/Resolver
+
+BOOL
+ Ljava/util/regex/Pattern;
+ Ljava/util/regex/Pattern;
+EMPTY
+ Ljava/util/regex/Pattern;
+ Ljava/util/regex/Pattern;
+FLOAT
+ Ljava/util/regex/Pattern;
+ Ljava/util/regex/Pattern;
+INT
+ Ljava/util/regex/Pattern;
+ Ljava/util/regex/Pattern;
+MERGE
+ Ljava/util/regex/Pattern;
+ Ljava/util/regex/Pattern;
+NULL
+ Ljava/util/regex/Pattern;
+ Ljava/util/regex/Pattern;
+TIMESTAMP
+ Ljava/util/regex/Pattern;
+ Ljava/util/regex/Pattern;
+VALUE
+ Ljava/util/regex/Pattern;
+ Ljava/util/regex/Pattern;
+YAML
+ Ljava/util/regex/Pattern;
+ Ljava/util/regex/Pattern;
+
+yamlImplicitResolvers
+ Ljava/util/Map<Ljava/lang/Character;Ljava/util/List<Lorg/yaml/snakeyaml/resolver/ResolverTuple;>;>;
+ Ljava/util/Map<Ljava/lang/Character;Ljava/util/List<Lorg/yaml/snakeyaml/resolver/ResolverTuple;>;>;
+
+addImplicitResolver
+ (Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/regex/Pattern;Ljava/lang/String;)V
+ (Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/regex/Pattern;Ljava/lang/String;)V
+addImplicitResolver
+ (Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/regex/Pattern;Ljava/lang/String;I)V
+ (Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/regex/Pattern;Ljava/lang/String;I)V
+resolve
+ (Lorg/yaml/snakeyaml/nodes/NodeId;Ljava/lang/String;Z)Lorg/yaml/snakeyaml/nodes/Tag;
+ (Lorg/yaml/snakeyaml/nodes/NodeId;Ljava/lang/String;Z)Lorg/yaml/snakeyaml/nodes/Tag;
