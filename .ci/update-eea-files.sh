@@ -34,12 +34,13 @@ echo "###################################################"
 GIT_BRANCH=$(git branch --show-current)
 echo "  -> GIT Branch: $GIT_BRANCH"; echo
 
-if hash mvn 2>/dev/null; then
+if ! hash mvn 2>/dev/null; then
    echo
    echo "###################################################"
    echo "# Determinig latest Maven version...              #"
    echo "###################################################"
-   MAVEN_VERSION=$(curl -sSf https://repo1.maven.org/maven2/org/apache/maven/apache-maven/maven-metadata.xml | grep -oP '(?<=latest>).*(?=</latest)')
+   #MAVEN_VERSION=$(curl -sSf https://repo1.maven.org/maven2/org/apache/maven/apache-maven/maven-metadata.xml | grep -oP '(?<=latest>).*(?=</latest)')
+   MAVEN_VERSION=$(curl -sSf https://dlcdn.apache.org/maven/maven-3/ | grep -oP '(?<=>)[0-9.]+(?=/</a)' | tail -1)
    echo "  -> Latest Maven Version: ${MAVEN_VERSION}"
    if [[ ! -e $HOME/.m2/bin/apache-maven-$MAVEN_VERSION ]]; then
       echo
@@ -47,7 +48,8 @@ if hash mvn 2>/dev/null; then
       echo "# Installing Maven version $MAVEN_VERSION...               #"
       echo "###################################################"
       mkdir -p $HOME/.m2/bin/
-      maven_download_url="https://repo1.maven.org/maven2/org/apache/maven/apache-maven/${MAVEN_VERSION}/apache-maven-${MAVEN_VERSION}-bin.tar.gz"
+      #maven_download_url="https://repo1.maven.org/maven2/org/apache/maven/apache-maven/${MAVEN_VERSION}/apache-maven-${MAVEN_VERSION}-bin.tar.gz"
+      maven_download_url="https://dlcdn.apache.org/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz"
       echo "Downloading [$maven_download_url]..."
       curl -fsSL $maven_download_url | tar zxv -C $HOME/.m2/bin/
    fi
