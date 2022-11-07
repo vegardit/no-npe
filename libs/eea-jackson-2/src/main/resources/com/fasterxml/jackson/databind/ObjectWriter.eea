@@ -131,6 +131,9 @@ isEnabled
 isEnabled
  (Lcom/fasterxml/jackson/databind/SerializationFeature;)Z
  (Lcom/fasterxml/jackson/databind/SerializationFeature;)Z
+isEnabled
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Z
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Z
 version
  ()Lcom/fasterxml/jackson/core/Version;
  ()Lcom/fasterxml/jackson/core/Version;
@@ -168,6 +171,9 @@ with
  (Lcom/fasterxml/jackson/databind/cfg/ContextAttributes;)Lcom/fasterxml/jackson/databind/ObjectWriter;
  (Lcom/fasterxml/jackson/databind/cfg/ContextAttributes;)Lcom/fasterxml/jackson/databind/ObjectWriter;
 with
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
+with
  (Lcom/fasterxml/jackson/databind/ser/FilterProvider;)Lcom/fasterxml/jackson/databind/ObjectWriter;
  (Lcom/fasterxml/jackson/databind/ser/FilterProvider;)Lcom/fasterxml/jackson/databind/ObjectWriter;
 with
@@ -197,6 +203,9 @@ withFeatures
 withFeatures
  ([Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
  ([Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
+withFeatures
+ ([Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
+ ([Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
 withRootName
  (Lcom/fasterxml/jackson/databind/PropertyName;)Lcom/fasterxml/jackson/databind/ObjectWriter;
  (Lcom/fasterxml/jackson/databind/PropertyName;)Lcom/fasterxml/jackson/databind/ObjectWriter;
@@ -239,6 +248,9 @@ without
 without
  (Lcom/fasterxml/jackson/databind/SerializationFeature;[Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
  (Lcom/fasterxml/jackson/databind/SerializationFeature;[Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
+without
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
 withoutAttribute
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/ObjectWriter;
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/ObjectWriter;
@@ -251,6 +263,9 @@ withoutFeatures
 withoutFeatures
  ([Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
  ([Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
+withoutFeatures
+ ([Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
+ ([Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Lcom/fasterxml/jackson/databind/ObjectWriter;
 withoutRootName
  ()Lcom/fasterxml/jackson/databind/ObjectWriter;
  ()Lcom/fasterxml/jackson/databind/ObjectWriter;

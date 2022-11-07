@@ -66,6 +66,9 @@ _typeFactory
 <init>
  (Lcom/fasterxml/jackson/databind/ObjectMapper;)V
  (Lcom/fasterxml/jackson/databind/ObjectMapper;)V
+<init>
+ (Lcom/fasterxml/jackson/databind/ObjectMapper;Lcom/fasterxml/jackson/core/JsonFactory;)V
+ (Lcom/fasterxml/jackson/databind/ObjectMapper;Lcom/fasterxml/jackson/core/JsonFactory;)V
 _assertNotNull
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
@@ -192,6 +195,9 @@ configure
 configure
  (Lcom/fasterxml/jackson/databind/SerializationFeature;Z)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (Lcom/fasterxml/jackson/databind/SerializationFeature;Z)Lcom/fasterxml/jackson/databind/ObjectMapper;
+configure
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;Z)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;Z)Lcom/fasterxml/jackson/databind/ObjectMapper;
 constructType
  (Lcom/fasterxml/jackson/core/type/TypeReference<*>;)Lcom/fasterxml/jackson/databind/JavaType;
  (Lcom/fasterxml/jackson/core/type/TypeReference<*>;)Lcom/fasterxml/jackson/databind/JavaType;
@@ -210,6 +216,9 @@ convertValue
 copy
  ()Lcom/fasterxml/jackson/databind/ObjectMapper;
  ()Lcom/fasterxml/jackson/databind/ObjectMapper;
+copyWith
+ (Lcom/fasterxml/jackson/core/JsonFactory;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/core/JsonFactory;)Lcom/fasterxml/jackson/databind/ObjectMapper;
 createArrayNode
  ()Lcom/fasterxml/jackson/databind/node/ArrayNode;
  ()Lcom/fasterxml/jackson/databind/node/ArrayNode;

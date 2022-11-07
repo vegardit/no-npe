@@ -13,6 +13,9 @@ inLongRange
 parseAsDouble
  (Ljava/lang/String;D)D
  (Ljava/lang/String;D)D
+parseAsDouble
+ (Ljava/lang/String;DZ)D
+ (Ljava/lang/String;DZ)D
 parseAsInt
  (Ljava/lang/String;I)I
  (Ljava/lang/String;I)I
@@ -28,9 +31,21 @@ parseBigDecimal
 parseBigDecimal
  ([CII)Ljava/math/BigDecimal;
  ([CII)Ljava/math/BigDecimal;
+parseBigInteger
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (Ljava/lang/String;)Ljava/math/BigInteger;
 parseDouble
  (Ljava/lang/String;)D
  (Ljava/lang/String;)D
+parseDouble
+ (Ljava/lang/String;Z)D
+ (Ljava/lang/String;Z)D
+parseFloat
+ (Ljava/lang/String;)F
+ (Ljava/lang/String;)F
+parseFloat
+ (Ljava/lang/String;Z)F
+ (Ljava/lang/String;Z)F
 parseInt
  (Ljava/lang/String;)I
  (Ljava/lang/String;)I

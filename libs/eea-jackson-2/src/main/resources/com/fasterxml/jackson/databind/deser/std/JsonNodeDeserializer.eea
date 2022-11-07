@@ -4,6 +4,12 @@ getDeserializer
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/JsonDeserializer<+Lcom/fasterxml/jackson/databind/JsonNode;>;
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/JsonDeserializer<+Lcom/fasterxml/jackson/databind/JsonNode;>;
 
+<init>
+ (Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer;ZZ)V
+ (Lcom/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer;ZZ)V
+_createWithMerge
+ (ZZ)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
+ (ZZ)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
 deserialize
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Lcom/fasterxml/jackson/databind/JsonNode;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Lcom/fasterxml/jackson/databind/JsonNode;
@@ -13,3 +19,6 @@ getAbsentValue
 getNullValue
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Lcom/fasterxml/jackson/databind/JsonNode;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Lcom/fasterxml/jackson/databind/JsonNode;
+supportsUpdate
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;

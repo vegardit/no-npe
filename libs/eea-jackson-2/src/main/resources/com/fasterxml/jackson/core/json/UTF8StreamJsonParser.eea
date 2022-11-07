@@ -41,6 +41,9 @@ _handleApos
 _handleInvalidNumberStart
  (IZ)Lcom/fasterxml/jackson/core/JsonToken;
  (IZ)Lcom/fasterxml/jackson/core/JsonToken;
+_handleInvalidNumberStart
+ (IZZ)Lcom/fasterxml/jackson/core/JsonToken;
+ (IZZ)Lcom/fasterxml/jackson/core/JsonToken;
 _handleOddName
  (I)Ljava/lang/String;
  (I)Ljava/lang/String;
@@ -56,13 +59,13 @@ _parseAposName
 _parseFloatThatStartsWithPeriod
  ()Lcom/fasterxml/jackson/core/JsonToken;
  ()Lcom/fasterxml/jackson/core/JsonToken;
+_parseFloatThatStartsWithPeriod
+ (ZZ)Lcom/fasterxml/jackson/core/JsonToken;
+ (ZZ)Lcom/fasterxml/jackson/core/JsonToken;
 _parseName
  (I)Ljava/lang/String;
  (I)Ljava/lang/String;
-_parseNegNumber
- ()Lcom/fasterxml/jackson/core/JsonToken;
- ()Lcom/fasterxml/jackson/core/JsonToken;
-_parsePosNumber
+_parseUnsignedNumber
  (I)Lcom/fasterxml/jackson/core/JsonToken;
  (I)Lcom/fasterxml/jackson/core/JsonToken;
 _readBinary

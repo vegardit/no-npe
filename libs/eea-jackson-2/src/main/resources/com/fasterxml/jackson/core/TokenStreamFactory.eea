@@ -1,11 +1,26 @@
 class com/fasterxml/jackson/core/TokenStreamFactory
 
+_checkRangeBoundsForByteArray
+ ([BII)V
+ ([BII)V
+_checkRangeBoundsForCharArray
+ ([CII)V
+ ([CII)V
 _createDataOutputWrapper
  (Ljava/io/DataOutput;)Ljava/io/OutputStream;
  (Ljava/io/DataOutput;)Ljava/io/OutputStream;
+_fileInputStream
+ (Ljava/io/File;)Ljava/io/InputStream;
+ (Ljava/io/File;)Ljava/io/InputStream;
+_fileOutputStream
+ (Ljava/io/File;)Ljava/io/OutputStream;
+ (Ljava/io/File;)Ljava/io/OutputStream;
 _optimizedStreamFromURL
  (Ljava/net/URL;)Ljava/io/InputStream;
  (Ljava/net/URL;)Ljava/io/InputStream;
+_reportRangeError
+ <T:Ljava/lang/Object;>(Ljava/lang/String;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;)TT;
 canUseSchema
  (Lcom/fasterxml/jackson/core/FormatSchema;)Z
  (Lcom/fasterxml/jackson/core/FormatSchema;)Z
@@ -28,6 +43,9 @@ createGenerator
  (Ljava/io/Writer;)Lcom/fasterxml/jackson/core/JsonGenerator;
  (Ljava/io/Writer;)Lcom/fasterxml/jackson/core/JsonGenerator;
 createNonBlockingByteArrayParser
+ ()Lcom/fasterxml/jackson/core/JsonParser;
+ ()Lcom/fasterxml/jackson/core/JsonParser;
+createNonBlockingByteBufferParser
  ()Lcom/fasterxml/jackson/core/JsonParser;
  ()Lcom/fasterxml/jackson/core/JsonParser;
 createParser

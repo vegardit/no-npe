@@ -10,6 +10,9 @@ _neitherNull
 _parseDouble
  (Ljava/lang/String;)D
  (Ljava/lang/String;)D
+_parseDouble
+ (Ljava/lang/String;Z)D
+ (Ljava/lang/String;Z)D
 
 _valueClass
  Ljava/lang/Class<*>;
@@ -27,6 +30,9 @@ _valueType
 <init>
  (Ljava/lang/Class<*>;)V
  (Ljava/lang/Class<*>;)V
+_checkBooleanToStringCoercion
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
 _checkCoercionFail
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/cfg/CoercionAction;Ljava/lang/Class<*>;Ljava/lang/Object;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/cfg/CoercionAction;Ljava/lang/Class<*>;Ljava/lang/Object;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
@@ -39,15 +45,27 @@ _checkFloatSpecialValue
 _checkFloatToIntCoercion
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
+_checkFloatToStringCoercion
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
 _checkFromStringCoercion
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
 _checkFromStringCoercion
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;Lcom/fasterxml/jackson/databind/type/LogicalType;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;Lcom/fasterxml/jackson/databind/type/LogicalType;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
+_checkIntToFloatCoercion
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
+_checkIntToStringCoercion
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
 _checkTextualNull
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Z
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Z
+_checkToStringCoercion
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/cfg/CoercionInputShape;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/cfg/CoercionInputShape;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
 _coerceBooleanFromInt
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Ljava/lang/Boolean;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Ljava/lang/Boolean;
@@ -151,11 +169,17 @@ _parseDoublePrimitive
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)D
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)D
 _parseDoublePrimitive
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)D
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)D
+_parseDoublePrimitive
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)D
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)D
 _parseFloatPrimitive
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)F
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)F
+_parseFloatPrimitive
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)F
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)F
 _parseFloatPrimitive
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)F
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)F
@@ -189,6 +213,9 @@ _parseShortPrimitive
 _parseString
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/String;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/String;
+_parseString
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/NullValueProvider;)Ljava/lang/String;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/NullValueProvider;)Ljava/lang/String;
 _reportFailedNullCoerce
  (Lcom/fasterxml/jackson/databind/DeserializationContext;ZLjava/lang/Enum<*>;Ljava/lang/String;)V
  (Lcom/fasterxml/jackson/databind/DeserializationContext;ZLjava/lang/Enum<*>;Ljava/lang/String;)V

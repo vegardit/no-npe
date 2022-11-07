@@ -4,9 +4,9 @@ EMPTY
  Lcom/fasterxml/jackson/core/JsonPointer;
  L1com/fasterxml/jackson/core/JsonPointer;
 
-_parseQuotedTail
- (Ljava/lang/String;I)Lcom/fasterxml/jackson/core/JsonPointer;
- (Ljava/lang/String;I)Lcom/fasterxml/jackson/core/JsonPointer;
+_extractEscapedSegment
+ (Ljava/lang/String;IILjava/lang/StringBuilder;)I
+ (Ljava/lang/String;IILjava/lang/StringBuilder;)I
 _parseTail
  (Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonPointer;
  (Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonPointer;
@@ -37,11 +37,11 @@ _nextSegment
  Lcom/fasterxml/jackson/core/JsonPointer;
 
 <init>
- (Ljava/lang/String;Ljava/lang/String;ILcom/fasterxml/jackson/core/JsonPointer;)V
- (Ljava/lang/String;Ljava/lang/String;ILcom/fasterxml/jackson/core/JsonPointer;)V
+ (Ljava/lang/String;ILjava/lang/String;ILcom/fasterxml/jackson/core/JsonPointer;)V
+ (Ljava/lang/String;ILjava/lang/String;ILcom/fasterxml/jackson/core/JsonPointer;)V
 <init>
- (Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/core/JsonPointer;)V
- (Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/core/JsonPointer;)V
+ (Ljava/lang/String;ILjava/lang/String;Lcom/fasterxml/jackson/core/JsonPointer;)V
+ (Ljava/lang/String;ILjava/lang/String;Lcom/fasterxml/jackson/core/JsonPointer;)V
 _constructHead
  ()Lcom/fasterxml/jackson/core/JsonPointer;
  ()Lcom/fasterxml/jackson/core/JsonPointer;
@@ -51,6 +51,12 @@ _constructHead
 append
  (Lcom/fasterxml/jackson/core/JsonPointer;)Lcom/fasterxml/jackson/core/JsonPointer;
  (Lcom/fasterxml/jackson/core/JsonPointer;)Lcom/fasterxml/jackson/core/JsonPointer;
+appendIndex
+ (I)Lcom/fasterxml/jackson/core/JsonPointer;
+ (I)Lcom/fasterxml/jackson/core/JsonPointer;
+appendProperty
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonPointer;
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonPointer;
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z

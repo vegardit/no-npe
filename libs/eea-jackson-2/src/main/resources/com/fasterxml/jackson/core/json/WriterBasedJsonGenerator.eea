@@ -1,8 +1,11 @@
 class com/fasterxml/jackson/core/json/WriterBasedJsonGenerator
 
-HEX_CHARS
+HEX_CHARS_LOWER
  [C
- [1C
+ [C
+HEX_CHARS_UPPER
+ [C
+ [C
 
 _copyBuffer
  [C
@@ -101,6 +104,9 @@ writeStartArray
 writeStartObject
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
+writeStartObject
+ (Ljava/lang/Object;I)V
+ (Ljava/lang/Object;I)V
 writeString
  (Lcom/fasterxml/jackson/core/SerializableString;)V
  (Lcom/fasterxml/jackson/core/SerializableString;)V
