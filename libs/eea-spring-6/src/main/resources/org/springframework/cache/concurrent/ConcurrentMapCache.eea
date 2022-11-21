@@ -1,0 +1,44 @@
+class org/springframework/cache/concurrent/ConcurrentMapCache
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Ljava/util/concurrent/ConcurrentMap<Ljava/lang/Object;Ljava/lang/Object;>;Z)V
+ (Ljava/lang/String;Ljava/util/concurrent/ConcurrentMap<Ljava/lang/Object;Ljava/lang/Object;>;Z)V
+<init>
+ (Ljava/lang/String;Ljava/util/concurrent/ConcurrentMap<Ljava/lang/Object;Ljava/lang/Object;>;ZLorg/springframework/core/serializer/support/SerializationDelegate;)V
+ (Ljava/lang/String;Ljava/util/concurrent/ConcurrentMap<Ljava/lang/Object;Ljava/lang/Object;>;ZLorg/springframework/core/serializer/support/SerializationDelegate;)V
+<init>
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+evict
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+evictIfPresent
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+fromStoreValue
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+get
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/util/concurrent/Callable<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/util/concurrent/Callable<TT;>;)TT;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getNativeCache
+ ()Ljava/util/concurrent/ConcurrentMap<Ljava/lang/Object;Ljava/lang/Object;>;
+ ()Ljava/util/concurrent/ConcurrentMap<Ljava/lang/Object;Ljava/lang/Object;>;
+lookup
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+put
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+putIfAbsent
+ (Ljava/lang/Object;Ljava/lang/Object;)Lorg/springframework/cache/Cache$ValueWrapper;
+ (Ljava/lang/Object;Ljava/lang/Object;)Lorg/springframework/cache/Cache$ValueWrapper;
+toStoreValue
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;

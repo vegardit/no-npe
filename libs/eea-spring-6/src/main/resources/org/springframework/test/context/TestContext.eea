@@ -1,0 +1,26 @@
+class org/springframework/test/context/TestContext
+
+getApplicationContext
+ ()Lorg/springframework/context/ApplicationContext;
+ ()Lorg/springframework/context/ApplicationContext;
+getTestClass
+ ()Ljava/lang/Class<*>;
+ ()Ljava/lang/Class<*>;
+getTestException
+ ()Ljava/lang/Throwable;
+ ()Ljava/lang/Throwable;
+getTestInstance
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getTestMethod
+ ()Ljava/lang/reflect/Method;
+ ()Ljava/lang/reflect/Method;
+markApplicationContextDirty
+ (Lorg/springframework/test/annotation/DirtiesContext$HierarchyMode;)V
+ (Lorg/springframework/test/annotation/DirtiesContext$HierarchyMode;)V
+publishEvent
+ (Ljava/util/function/Function<Lorg/springframework/test/context/TestContext;+Lorg/springframework/context/ApplicationEvent;>;)V
+ (Ljava/util/function/Function<Lorg/springframework/test/context/TestContext;+Lorg/springframework/context/ApplicationEvent;>;)V
+updateState
+ (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/lang/Throwable;)V
+ (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/lang/Throwable;)V
