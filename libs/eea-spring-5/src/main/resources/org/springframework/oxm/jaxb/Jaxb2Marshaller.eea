@@ -1,0 +1,105 @@
+class org/springframework/oxm/jaxb/Jaxb2Marshaller
+
+logger
+ Lorg/apache/commons/logging/Log;
+ Lorg/apache/commons/logging/Log;
+
+convertJaxbException
+ (Ljavax/xml/bind/JAXBException;)Lorg/springframework/oxm/XmlMappingException;
+ (Ljavax/xml/bind/JAXBException;)Lorg/springframework/oxm/XmlMappingException;
+createMarshaller
+ ()Ljavax/xml/bind/Marshaller;
+ ()Ljavax/xml/bind/Marshaller;
+createUnmarshaller
+ ()Ljavax/xml/bind/Unmarshaller;
+ ()Ljavax/xml/bind/Unmarshaller;
+getClassesToBeBound
+ ()[Ljava/lang/Class<*>;
+ ()[Ljava/lang/Class<*>;
+getContextPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getJaxbContext
+ ()Ljavax/xml/bind/JAXBContext;
+ ()Ljavax/xml/bind/JAXBContext;
+getPackagesToScan
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+initJaxbMarshaller
+ (Ljavax/xml/bind/Marshaller;)V
+ (Ljavax/xml/bind/Marshaller;)V
+initJaxbUnmarshaller
+ (Ljavax/xml/bind/Unmarshaller;)V
+ (Ljavax/xml/bind/Unmarshaller;)V
+marshal
+ (Ljava/lang/Object;Ljavax/xml/transform/Result;)V
+ (Ljava/lang/Object;Ljavax/xml/transform/Result;)V
+marshal
+ (Ljava/lang/Object;Ljavax/xml/transform/Result;Lorg/springframework/oxm/mime/MimeContainer;)V
+ (Ljava/lang/Object;Ljavax/xml/transform/Result;Lorg/springframework/oxm/mime/MimeContainer;)V
+setAdapters
+ ([Ljavax/xml/bind/annotation/adapters/XmlAdapter<**>;)V
+ ([Ljavax/xml/bind/annotation/adapters/XmlAdapter<**>;)V
+setBeanClassLoader
+ (Ljava/lang/ClassLoader;)V
+ (Ljava/lang/ClassLoader;)V
+setClassesToBeBound
+ ([Ljava/lang/Class<*>;)V
+ ([Ljava/lang/Class<*>;)V
+setContextPath
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setContextPaths
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setJaxbContextProperties
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+setMappedClass
+ (Ljava/lang/Class<*>;)V
+ (Ljava/lang/Class<*>;)V
+setMarshallerListener
+ (Ljavax/xml/bind/Marshaller$Listener;)V
+ (Ljavax/xml/bind/Marshaller$Listener;)V
+setMarshallerProperties
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+setPackagesToScan
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setSchema
+ (Lorg/springframework/core/io/Resource;)V
+ (Lorg/springframework/core/io/Resource;)V
+setSchemaLanguage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setSchemaResourceResolver
+ (Lorg/w3c/dom/ls/LSResourceResolver;)V
+ (Lorg/w3c/dom/ls/LSResourceResolver;)V
+setSchemas
+ ([Lorg/springframework/core/io/Resource;)V
+ ([Lorg/springframework/core/io/Resource;)V
+setUnmarshallerListener
+ (Ljavax/xml/bind/Unmarshaller$Listener;)V
+ (Ljavax/xml/bind/Unmarshaller$Listener;)V
+setUnmarshallerProperties
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+setValidationEventHandler
+ (Ljavax/xml/bind/ValidationEventHandler;)V
+ (Ljavax/xml/bind/ValidationEventHandler;)V
+supports
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+supports
+ (Ljava/lang/reflect/Type;)Z
+ (Ljava/lang/reflect/Type;)Z
+unmarshal
+ (Ljavax/xml/transform/Source;)Ljava/lang/Object;
+ (Ljavax/xml/transform/Source;)Ljava/lang/Object;
+unmarshal
+ (Ljavax/xml/transform/Source;Lorg/springframework/oxm/mime/MimeContainer;)Ljava/lang/Object;
+ (Ljavax/xml/transform/Source;Lorg/springframework/oxm/mime/MimeContainer;)Ljava/lang/Object;
+unmarshalStaxSource
+ (Ljavax/xml/bind/Unmarshaller;Ljavax/xml/transform/Source;)Ljava/lang/Object;
+ (Ljavax/xml/bind/Unmarshaller;Ljavax/xml/transform/Source;)Ljava/lang/Object;

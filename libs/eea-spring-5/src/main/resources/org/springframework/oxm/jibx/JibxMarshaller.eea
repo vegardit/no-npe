@@ -1,0 +1,80 @@
+class org/springframework/oxm/jibx/JibxMarshaller
+
+convertJibxException
+ (Lorg/jibx/runtime/JiBXException;Z)Lorg/springframework/oxm/XmlMappingException;
+ (Lorg/jibx/runtime/JiBXException;Z)Lorg/springframework/oxm/XmlMappingException;
+createMarshallingContext
+ ()Lorg/jibx/runtime/IMarshallingContext;
+ ()Lorg/jibx/runtime/IMarshallingContext;
+createUnmarshallingContext
+ ()Lorg/jibx/runtime/IUnmarshallingContext;
+ ()Lorg/jibx/runtime/IUnmarshallingContext;
+getDefaultEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+marshalDomNode
+ (Ljava/lang/Object;Lorg/w3c/dom/Node;)V
+ (Ljava/lang/Object;Lorg/w3c/dom/Node;)V
+marshalOutputStream
+ (Ljava/lang/Object;Ljava/io/OutputStream;)V
+ (Ljava/lang/Object;Ljava/io/OutputStream;)V
+marshalSaxHandlers
+ (Ljava/lang/Object;Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;)V
+ (Ljava/lang/Object;Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;)V
+marshalWriter
+ (Ljava/lang/Object;Ljava/io/Writer;)V
+ (Ljava/lang/Object;Ljava/io/Writer;)V
+marshalXmlEventWriter
+ (Ljava/lang/Object;Ljavax/xml/stream/XMLEventWriter;)V
+ (Ljava/lang/Object;Ljavax/xml/stream/XMLEventWriter;)V
+marshalXmlStreamWriter
+ (Ljava/lang/Object;Ljavax/xml/stream/XMLStreamWriter;)V
+ (Ljava/lang/Object;Ljavax/xml/stream/XMLStreamWriter;)V
+setBindingName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDocTypeInternalSubset
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDocTypePublicId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDocTypeRootElementName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDocTypeSystemId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setEncoding
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setStandalone
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setTargetClass
+ (Ljava/lang/Class<*>;)V
+ (Ljava/lang/Class<*>;)V
+setTargetPackage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+supports
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+unmarshalDomNode
+ (Lorg/w3c/dom/Node;)Ljava/lang/Object;
+ (Lorg/w3c/dom/Node;)Ljava/lang/Object;
+unmarshalInputStream
+ (Ljava/io/InputStream;)Ljava/lang/Object;
+ (Ljava/io/InputStream;)Ljava/lang/Object;
+unmarshalReader
+ (Ljava/io/Reader;)Ljava/lang/Object;
+ (Ljava/io/Reader;)Ljava/lang/Object;
+unmarshalSaxReader
+ (Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)Ljava/lang/Object;
+ (Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)Ljava/lang/Object;
+unmarshalXmlEventReader
+ (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;
+ (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;
+unmarshalXmlStreamReader
+ (Ljavax/xml/stream/XMLStreamReader;)Ljava/lang/Object;
+ (Ljavax/xml/stream/XMLStreamReader;)Ljava/lang/Object;

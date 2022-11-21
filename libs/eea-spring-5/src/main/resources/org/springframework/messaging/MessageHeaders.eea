@@ -1,0 +1,82 @@
+class org/springframework/messaging/MessageHeaders
+
+CONTENT_TYPE
+ Ljava/lang/String;
+ Ljava/lang/String;
+ERROR_CHANNEL
+ Ljava/lang/String;
+ Ljava/lang/String;
+ID
+ Ljava/lang/String;
+ Ljava/lang/String;
+ID_VALUE_NONE
+ Ljava/util/UUID;
+ Ljava/util/UUID;
+REPLY_CHANNEL
+ Ljava/lang/String;
+ Ljava/lang/String;
+TIMESTAMP
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+getIdGenerator
+ ()Lorg/springframework/util/IdGenerator;
+ ()Lorg/springframework/util/IdGenerator;
+
+<init>
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+<init>
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/UUID;Ljava/lang/Long;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/UUID;Ljava/lang/Long;)V
+containsKey
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+containsValue
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+entrySet
+ ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;>;
+ ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/Object;>;>;
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+get
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+get
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)TT;
+getErrorChannel
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getId
+ ()Ljava/util/UUID;
+ ()Ljava/util/UUID;
+getRawHeaders
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+getReplyChannel
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getTimestamp
+ ()Ljava/lang/Long;
+ ()Ljava/lang/Long;
+keySet
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+put
+ (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+putAll
+ (Ljava/util/Map<+Ljava/lang/String;+Ljava/lang/Object;>;)V
+ (Ljava/util/Map<+Ljava/lang/String;+Ljava/lang/Object;>;)V
+remove
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+values
+ ()Ljava/util/Collection<Ljava/lang/Object;>;
+ ()Ljava/util/Collection<Ljava/lang/Object;>;

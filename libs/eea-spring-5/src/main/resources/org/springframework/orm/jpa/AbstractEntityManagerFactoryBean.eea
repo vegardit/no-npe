@@ -1,0 +1,105 @@
+class org/springframework/orm/jpa/AbstractEntityManagerFactoryBean
+
+logger
+ Lorg/apache/commons/logging/Log;
+ Lorg/apache/commons/logging/Log;
+
+createEntityManagerFactoryProxy
+ (Ljavax/persistence/EntityManagerFactory;)Ljavax/persistence/EntityManagerFactory;
+ (Ljavax/persistence/EntityManagerFactory;)Ljavax/persistence/EntityManagerFactory;
+createNativeEntityManager
+ (Ljava/util/Map<**>;)Ljavax/persistence/EntityManager;
+ (Ljava/util/Map<**>;)Ljavax/persistence/EntityManager;
+createNativeEntityManagerFactory
+ ()Ljavax/persistence/EntityManagerFactory;
+ ()Ljavax/persistence/EntityManagerFactory;
+getBeanClassLoader
+ ()Ljava/lang/ClassLoader;
+ ()Ljava/lang/ClassLoader;
+getBootstrapExecutor
+ ()Lorg/springframework/core/task/AsyncTaskExecutor;
+ ()Lorg/springframework/core/task/AsyncTaskExecutor;
+getDataSource
+ ()Ljavax/sql/DataSource;
+ ()Ljavax/sql/DataSource;
+getEntityManagerInterface
+ ()Ljava/lang/Class<+Ljavax/persistence/EntityManager;>;
+ ()Ljava/lang/Class<+Ljavax/persistence/EntityManager;>;
+getJpaDialect
+ ()Lorg/springframework/orm/jpa/JpaDialect;
+ ()Lorg/springframework/orm/jpa/JpaDialect;
+getJpaPropertyMap
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+getJpaVendorAdapter
+ ()Lorg/springframework/orm/jpa/JpaVendorAdapter;
+ ()Lorg/springframework/orm/jpa/JpaVendorAdapter;
+getNativeEntityManagerFactory
+ ()Ljavax/persistence/EntityManagerFactory;
+ ()Ljavax/persistence/EntityManagerFactory;
+getObject
+ ()Ljavax/persistence/EntityManagerFactory;
+ ()Ljavax/persistence/EntityManagerFactory;
+getObjectType
+ ()Ljava/lang/Class<+Ljavax/persistence/EntityManagerFactory;>;
+ ()Ljava/lang/Class<+Ljavax/persistence/EntityManagerFactory;>;
+getPersistenceProvider
+ ()Ljavax/persistence/spi/PersistenceProvider;
+ ()Ljavax/persistence/spi/PersistenceProvider;
+getPersistenceUnitInfo
+ ()Ljavax/persistence/spi/PersistenceUnitInfo;
+ ()Ljavax/persistence/spi/PersistenceUnitInfo;
+getPersistenceUnitName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+postProcessEntityManager
+ (Ljavax/persistence/EntityManager;)V
+ (Ljavax/persistence/EntityManager;)V
+setBeanClassLoader
+ (Ljava/lang/ClassLoader;)V
+ (Ljava/lang/ClassLoader;)V
+setBeanFactory
+ (Lorg/springframework/beans/factory/BeanFactory;)V
+ (Lorg/springframework/beans/factory/BeanFactory;)V
+setBeanName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setBootstrapExecutor
+ (Lorg/springframework/core/task/AsyncTaskExecutor;)V
+ (Lorg/springframework/core/task/AsyncTaskExecutor;)V
+setEntityManagerFactoryInterface
+ (Ljava/lang/Class<+Ljavax/persistence/EntityManagerFactory;>;)V
+ (Ljava/lang/Class<+Ljavax/persistence/EntityManagerFactory;>;)V
+setEntityManagerInitializer
+ (Ljava/util/function/Consumer<Ljavax/persistence/EntityManager;>;)V
+ (Ljava/util/function/Consumer<Ljavax/persistence/EntityManager;>;)V
+setEntityManagerInterface
+ (Ljava/lang/Class<+Ljavax/persistence/EntityManager;>;)V
+ (Ljava/lang/Class<+Ljavax/persistence/EntityManager;>;)V
+setJpaDialect
+ (Lorg/springframework/orm/jpa/JpaDialect;)V
+ (Lorg/springframework/orm/jpa/JpaDialect;)V
+setJpaProperties
+ (Ljava/util/Properties;)V
+ (Ljava/util/Properties;)V
+setJpaPropertyMap
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+ (Ljava/util/Map<Ljava/lang/String;*>;)V
+setJpaVendorAdapter
+ (Lorg/springframework/orm/jpa/JpaVendorAdapter;)V
+ (Lorg/springframework/orm/jpa/JpaVendorAdapter;)V
+setPersistenceProvider
+ (Ljavax/persistence/spi/PersistenceProvider;)V
+ (Ljavax/persistence/spi/PersistenceProvider;)V
+setPersistenceProviderClass
+ (Ljava/lang/Class<+Ljavax/persistence/spi/PersistenceProvider;>;)V
+ (Ljava/lang/Class<+Ljavax/persistence/spi/PersistenceProvider;>;)V
+setPersistenceUnitName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+translateExceptionIfPossible
+ (Ljava/lang/RuntimeException;)Lorg/springframework/dao/DataAccessException;
+ (Ljava/lang/RuntimeException;)Lorg/springframework/dao/DataAccessException;
+writeReplace
+ ()Ljava/lang/Object;
+ ()L1java/lang/Object;
