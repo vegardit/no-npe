@@ -33,11 +33,11 @@ import org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider;
 import com.vegardit.no_npe.eea_generator.EEAFile.LoadOptions;
 import com.vegardit.no_npe.eea_generator.EEAFile.SaveOptions;
 import com.vegardit.no_npe.eea_generator.EEAFile.ValueWithComment;
-import com.vegardit.no_npe.eea_generator.internal.Either;
 import com.vegardit.no_npe.eea_generator.internal.Props;
 
 import io.github.classgraph.ClassGraph;
 import io.github.classgraph.ClassInfo;
+import io.github.classgraph.ClassMemberInfo;
 import io.github.classgraph.FieldInfo;
 import io.github.classgraph.FieldInfoList;
 import io.github.classgraph.MethodInfo;
@@ -177,7 +177,7 @@ public abstract class EEAGenerator {
    }
 
    protected static @Nullable ValueWithComment computeAnnotatedSignature(final EEAFile.ClassMember member, final ClassInfo classInfo,
-      final Either<FieldInfo, MethodInfo> memberInfo) {
+      final ClassMemberInfo memberInfo) {
 
       final var isThrowable = !classInfo.getSuperclasses().filter(c -> c.getName().equals("java.lang.Throwable")).isEmpty();
       if (isThrowable) {
@@ -199,8 +199,8 @@ public abstract class EEAGenerator {
          return sig.clone();
 
       // analyzing a method
-      if (memberInfo.isRight()) {
-         final MethodInfo methodInfo = memberInfo.get();
+      if (memberInfo instanceof MethodInfo) {
+         final MethodInfo methodInfo = (MethodInfo) memberInfo;
          // mark the parameter of single-parameter methods as @NonNull,
          // if the class name matches "*Listener" and the parameter type name matches "*Event"
          if (classInfo.isInterface() //
@@ -212,8 +212,9 @@ public abstract class EEAGenerator {
          }
 
          // analyzing a field
-      } else {
-         final FieldInfo fieldInfo = memberInfo.get();
+      }
+      if (memberInfo instanceof FieldInfo) {
+         final FieldInfo fieldInfo = (FieldInfo) memberInfo;
          if (fieldInfo.isStatic() && fieldInfo.isFinal()) {
             // if the static non-primitive field is final we by default expect it to be non-null,
             // which can be manually adjusted in the generated field
@@ -252,7 +253,7 @@ public abstract class EEAGenerator {
          }
 
          final var member = eeaFile.addMember(f.getName(), f.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
-         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, Either.left(f));
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, f);
       }
 
       eeaFile.addEmptyLine();
@@ -260,21 +261,21 @@ public abstract class EEAGenerator {
       // static methods
       for (final var m : getMethods(methods, true)) {
          final var member = eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr());
-         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, Either.right(m));
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, m);
       }
       eeaFile.addEmptyLine();
 
       // instance fields
       for (final var f : getFields(fields, false)) {
          final var member = eeaFile.addMember(f.getName(), f.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
-         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, Either.left(f));
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, f);
       }
       eeaFile.addEmptyLine();
 
       // instance methods
       for (final var m : getMethods(methods, false)) {
          final var member = eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
-         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, Either.right(m));
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, m);
       }
       return eeaFile;
    }
