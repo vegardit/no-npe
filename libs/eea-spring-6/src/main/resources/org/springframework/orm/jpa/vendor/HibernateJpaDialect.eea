@@ -11,7 +11,7 @@ convertHibernateAccessException
  (Lorg/hibernate/HibernateException;)Lorg/springframework/dao/DataAccessException;
 getIdentifier
  (Lorg/hibernate/HibernateException;)Ljava/lang/Object;
- (Lorg/hibernate/HibernateException;)Ljava/lang/Object;
+ (Lorg/hibernate/HibernateException;)L0java/lang/Object;
 getJdbcConnection
  (Ljakarta/persistence/EntityManager;Z)Lorg/springframework/jdbc/datasource/ConnectionHandle;
  (Ljakarta/persistence/EntityManager;Z)Lorg/springframework/jdbc/datasource/ConnectionHandle;
@@ -20,7 +20,7 @@ getSession
  (Ljakarta/persistence/EntityManager;)Lorg/hibernate/engine/spi/SessionImplementor;
 prepareFlushMode
  (Lorg/hibernate/Session;Z)Lorg/hibernate/FlushMode;
- (Lorg/hibernate/Session;Z)Lorg/hibernate/FlushMode;
+ (Lorg/hibernate/Session;Z)L0org/hibernate/FlushMode;
 prepareTransaction
  (Ljakarta/persistence/EntityManager;ZLjava/lang/String;)Ljava/lang/Object;
  (Ljakarta/persistence/EntityManager;ZLjava/lang/String;)Ljava/lang/Object;
@@ -29,4 +29,4 @@ setJdbcExceptionTranslator
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
 translateExceptionIfPossible
  (Ljava/lang/RuntimeException;)Lorg/springframework/dao/DataAccessException;
- (Ljava/lang/RuntimeException;)Lorg/springframework/dao/DataAccessException;
+ (Ljava/lang/RuntimeException;)L0org/springframework/dao/DataAccessException;

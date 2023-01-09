@@ -9,7 +9,7 @@ configure
  (Ljava/util/function/Supplier<Lorg/springframework/cache/interceptor/CacheErrorHandler;>;Ljava/util/function/Supplier<Lorg/springframework/cache/interceptor/KeyGenerator;>;Ljava/util/function/Supplier<Lorg/springframework/cache/interceptor/CacheResolver;>;Ljava/util/function/Supplier<Lorg/springframework/cache/CacheManager;>;)V
 execute
  (Lorg/springframework/cache/interceptor/CacheOperationInvoker;Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
- (Lorg/springframework/cache/interceptor/CacheOperationInvoker;Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+ (Lorg/springframework/cache/interceptor/CacheOperationInvoker;Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)L0java/lang/Object;
 getBean
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
@@ -18,10 +18,10 @@ getCacheOperationMetadata
  (Lorg/springframework/cache/interceptor/CacheOperation;Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)Lorg/springframework/cache/interceptor/CacheAspectSupport$CacheOperationMetadata;
 getCacheOperationSource
  ()Lorg/springframework/cache/interceptor/CacheOperationSource;
- ()Lorg/springframework/cache/interceptor/CacheOperationSource;
+ ()L0org/springframework/cache/interceptor/CacheOperationSource;
 getCacheResolver
  ()Lorg/springframework/cache/interceptor/CacheResolver;
- ()Lorg/springframework/cache/interceptor/CacheResolver;
+ ()L0org/springframework/cache/interceptor/CacheResolver;
 getCaches
  (Lorg/springframework/cache/interceptor/CacheOperationInvocationContext<Lorg/springframework/cache/interceptor/CacheOperation;>;Lorg/springframework/cache/interceptor/CacheResolver;)Ljava/util/Collection<+Lorg/springframework/cache/Cache;>;
  (Lorg/springframework/cache/interceptor/CacheOperationInvocationContext<Lorg/springframework/cache/interceptor/CacheOperation;>;Lorg/springframework/cache/interceptor/CacheResolver;)Ljava/util/Collection<+Lorg/springframework/cache/Cache;>;
@@ -33,7 +33,7 @@ getOperationContext
  (Lorg/springframework/cache/interceptor/CacheOperation;Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class<*>;)Lorg/springframework/cache/interceptor/CacheAspectSupport$CacheOperationContext;
 invokeOperation
  (Lorg/springframework/cache/interceptor/CacheOperationInvoker;)Ljava/lang/Object;
- (Lorg/springframework/cache/interceptor/CacheOperationInvoker;)Ljava/lang/Object;
+ (Lorg/springframework/cache/interceptor/CacheOperationInvoker;)L0java/lang/Object;
 methodIdentification
  (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)Ljava/lang/String;
  (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)Ljava/lang/String;

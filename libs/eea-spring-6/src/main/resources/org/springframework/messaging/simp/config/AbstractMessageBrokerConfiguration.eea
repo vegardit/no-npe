@@ -53,7 +53,7 @@ createLocalUserRegistry
  (Ljava/lang/Integer;)Lorg/springframework/messaging/simp/user/SimpUserRegistry;
 getApplicationContext
  ()Lorg/springframework/context/ApplicationContext;
- ()Lorg/springframework/context/ApplicationContext;
+ ()L0org/springframework/context/ApplicationContext;
 getBrokerRegistry
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)Lorg/springframework/messaging/simp/config/MessageBrokerRegistry;
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)Lorg/springframework/messaging/simp/config/MessageBrokerRegistry;
@@ -65,10 +65,10 @@ getClientOutboundChannelRegistration
  ()Lorg/springframework/messaging/simp/config/ChannelRegistration;
 getPathMatcher
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)Lorg/springframework/util/PathMatcher;
- (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)Lorg/springframework/util/PathMatcher;
+ (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)L0org/springframework/util/PathMatcher;
 getValidator
  ()Lorg/springframework/validation/Validator;
- ()Lorg/springframework/validation/Validator;
+ ()L0org/springframework/validation/Validator;
 messageBrokerTaskScheduler
  ()Lorg/springframework/scheduling/TaskScheduler;
  ()Lorg/springframework/scheduling/TaskScheduler;
@@ -83,10 +83,10 @@ simpValidator
  ()Lorg/springframework/validation/Validator;
 simpleBrokerMessageHandler
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/UserDestinationResolver;)Lorg/springframework/messaging/simp/broker/AbstractBrokerMessageHandler;
- (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/UserDestinationResolver;)Lorg/springframework/messaging/simp/broker/AbstractBrokerMessageHandler;
+ (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/UserDestinationResolver;)L0org/springframework/messaging/simp/broker/AbstractBrokerMessageHandler;
 stompBrokerRelayMessageHandler
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/UserDestinationMessageHandler;Lorg/springframework/messaging/MessageHandler;Lorg/springframework/messaging/simp/user/UserDestinationResolver;)Lorg/springframework/messaging/simp/broker/AbstractBrokerMessageHandler;
- (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/UserDestinationMessageHandler;Lorg/springframework/messaging/MessageHandler;Lorg/springframework/messaging/simp/user/UserDestinationResolver;)Lorg/springframework/messaging/simp/broker/AbstractBrokerMessageHandler;
+ (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/UserDestinationMessageHandler;Lorg/springframework/messaging/MessageHandler;Lorg/springframework/messaging/simp/user/UserDestinationResolver;)L0org/springframework/messaging/simp/broker/AbstractBrokerMessageHandler;
 userDestinationMessageHandler
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/UserDestinationResolver;)Lorg/springframework/messaging/simp/user/UserDestinationMessageHandler;
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/UserDestinationResolver;)Lorg/springframework/messaging/simp/user/UserDestinationMessageHandler;
@@ -98,4 +98,4 @@ userRegistry
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)Lorg/springframework/messaging/simp/user/SimpUserRegistry;
 userRegistryMessageHandler
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/SimpUserRegistry;Lorg/springframework/messaging/simp/SimpMessagingTemplate;Lorg/springframework/scheduling/TaskScheduler;)Lorg/springframework/messaging/MessageHandler;
- (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/SimpUserRegistry;Lorg/springframework/messaging/simp/SimpMessagingTemplate;Lorg/springframework/scheduling/TaskScheduler;)Lorg/springframework/messaging/MessageHandler;
+ (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/simp/user/SimpUserRegistry;Lorg/springframework/messaging/simp/SimpMessagingTemplate;Lorg/springframework/scheduling/TaskScheduler;)L0org/springframework/messaging/MessageHandler;

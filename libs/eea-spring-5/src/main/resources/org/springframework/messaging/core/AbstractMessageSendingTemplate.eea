@@ -3,7 +3,7 @@ class org/springframework/messaging/core/AbstractMessageSendingTemplate
 
 CONVERSION_HINT_HEADER
  Ljava/lang/String;
- Ljava/lang/String;
+ L1java/lang/String;
 
 logger
  Lorg/apache/commons/logging/Log;
@@ -35,7 +35,7 @@ doSend
  (TD;Lorg/springframework/messaging/Message<*>;)V
 getDefaultDestination
  ()TD;
- ()TD;
+ ()T0D;
 getMessageConverter
  ()Lorg/springframework/messaging/converter/MessageConverter;
  ()Lorg/springframework/messaging/converter/MessageConverter;
@@ -44,7 +44,7 @@ getRequiredDefaultDestination
  ()TD;
 processHeadersToSend
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 send
  (Lorg/springframework/messaging/Message<*>;)V
  (Lorg/springframework/messaging/Message<*>;)V

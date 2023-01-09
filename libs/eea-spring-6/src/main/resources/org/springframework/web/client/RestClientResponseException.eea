@@ -8,10 +8,10 @@ class org/springframework/web/client/RestClientResponseException
  (Ljava/lang/String;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;Lorg/springframework/http/HttpHeaders;[BLjava/nio/charset/Charset;)V
 getResponseBodyAs
  <E:Ljava/lang/Object;>(Ljava/lang/Class<TE;>;)TE;
- <E:Ljava/lang/Object;>(Ljava/lang/Class<TE;>;)TE;
+ <E:Ljava/lang/Object;>(Ljava/lang/Class<TE;>;)T0E;
 getResponseBodyAs
  <E:Ljava/lang/Object;>(Lorg/springframework/core/ParameterizedTypeReference<TE;>;)TE;
- <E:Ljava/lang/Object;>(Lorg/springframework/core/ParameterizedTypeReference<TE;>;)TE;
+ <E:Ljava/lang/Object;>(Lorg/springframework/core/ParameterizedTypeReference<TE;>;)T0E;
 getResponseBodyAsByteArray
  ()[B
  ()[B
@@ -23,7 +23,7 @@ getResponseBodyAsString
  (Ljava/nio/charset/Charset;)Ljava/lang/String;
 getResponseHeaders
  ()Lorg/springframework/http/HttpHeaders;
- ()Lorg/springframework/http/HttpHeaders;
+ ()L0org/springframework/http/HttpHeaders;
 getStatusCode
  ()Lorg/springframework/http/HttpStatusCode;
  ()Lorg/springframework/http/HttpStatusCode;
