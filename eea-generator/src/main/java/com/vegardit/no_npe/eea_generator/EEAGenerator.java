@@ -35,6 +35,7 @@ import com.vegardit.no_npe.eea_generator.EEAFile.SaveOptions;
 import com.vegardit.no_npe.eea_generator.EEAFile.ValueWithComment;
 import com.vegardit.no_npe.eea_generator.internal.Props;
 
+import io.github.classgraph.AnnotationInfoList;
 import io.github.classgraph.ClassGraph;
 import io.github.classgraph.ClassInfo;
 import io.github.classgraph.ClassMemberInfo;
@@ -201,28 +202,70 @@ public abstract class EEAGenerator {
       // analyzing a method
       if (memberInfo instanceof MethodInfo) {
          final MethodInfo methodInfo = (MethodInfo) memberInfo;
+
          // mark the parameter of single-parameter methods as @NonNull,
          // if the class name matches "*Listener" and the parameter type name matches "*Event"
          if (classInfo.isInterface() //
             && classInfo.getName().endsWith("Listener") //
-            && !methodInfo.isStatic() && member.originalSignature.value.endsWith(")V") //
-            && methodInfo.getParameterInfo().length == 1 //
-            && methodInfo.getParameterInfo()[0].getTypeDescriptor().toString().endsWith("Event")) {
-            member.annotatedSignature = new ValueWithComment(insert(member.originalSignature.value, 2, "1"), null);
-         }
+            && !methodInfo.isStatic() // non-static
+            && member.originalSignature.value.endsWith(")V") // returns void
+            && methodInfo.getParameterInfo().length == 1 // only 1 parameter
+            && methodInfo.getParameterInfo()[0].getTypeDescriptor().toString().endsWith("Event"))
 
-         // analyzing a field
+            // (Ljava/lang/String;)V -> (L1java/lang/String;)V
+            return new ValueWithComment(insert(member.originalSignature.value, 2, "1"), null);
+
+         if (hasObjectReturnType(member)) { // returns non-void
+            if (hasNullableAnnotation(methodInfo.getAnnotationInfo()))
+               // ()Ljava/lang/String -> ()L0java/lang/String;
+               return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2, "0"),
+                  null);
+
+            if (hasNonNullAnnotation(methodInfo.getAnnotationInfo()))
+               // ()Ljava/lang/String -> ()L1java/lang/String;
+               return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2, "1"),
+                  null);
+         }
       }
+
+      // analyzing a field
       if (memberInfo instanceof FieldInfo) {
          final FieldInfo fieldInfo = (FieldInfo) memberInfo;
-         if (fieldInfo.isStatic() && fieldInfo.isFinal()) {
-            // if the static non-primitive field is final we by default expect it to be non-null,
-            // which can be manually adjusted in the generated field
-            member.annotatedSignature = new ValueWithComment(insert(member.originalSignature.value, 1, "1"));
-         }
+         if (hasNullableAnnotation(fieldInfo.getAnnotationInfo()))
+            return new ValueWithComment(insert(member.originalSignature.value, 1, "0"));
+
+         if (fieldInfo.isStatic() && fieldInfo.isFinal() // if the field is static and final we by default expect it to be non-null
+            || hasNonNullAnnotation(fieldInfo.getAnnotationInfo()) //
+         )
+            // Ljava/lang/String; -> L1java/lang/String;
+            return new ValueWithComment(insert(member.originalSignature.value, 1, "1"));
       }
 
       return null;
+   }
+
+   protected static boolean hasObjectReturnType(final EEAFile.ClassMember member) {
+      final var sig = member.originalSignature.value;
+      // object return type: (Ljava/lang/String;)Ljava/lang/String; or (Ljava/lang/String;)TT;
+      // void return type: (Ljava/lang/String;)V
+      // primitive return type: (Ljava/lang/String;)B
+      return sig.charAt(sig.length() - 2) != ')';
+   }
+
+   protected static boolean hasNullableAnnotation(final AnnotationInfoList annos) {
+      return annos.containsName("javax.annotation.Nullable") //
+         || annos.containsName("edu.umd.cs.findbugs.annotations.Nullable") //
+         || annos.containsName("org.springframework.lang.Nullable") //
+         || annos.containsName("io.vertx.codegen.annotations.Nullable") //
+         || annos.containsName("net.bytebuddy.utility.nullability.MaybeNull") //
+         || annos.containsName("net.bytebuddy.utility.nullability.AlwaysNull");
+   }
+
+   protected static boolean hasNonNullAnnotation(final AnnotationInfoList annos) {
+      return annos.containsName("javax.annotation.Nonnull") //
+         || annos.containsName("edu.umd.cs.findbugs.annotations.NonNull") //
+         || annos.containsName("org.springframework.lang.NonNull") //
+         || annos.containsName("net.bytebuddy.utility.nullability.NeverNull");
    }
 
    public static EEAFile computeEEAFile(final ClassInfo classInfo) {
