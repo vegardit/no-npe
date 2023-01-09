@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+   <!--
+   SPDX-FileCopyrightText: © 2022 Vegard IT GmbH (https://vegardit.com) and contributors.
+   SPDX-License-Identifier: EPL-2.0
+
+   Author: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
+   -->
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.vegardit.no-npe</groupId>
+    <artifactId>no-npe-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>no-npe-eea-all</artifactId>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <!-- https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html -->
+        <!-- https://github.com/apache/felix-dev/tree/master/tools/maven-bundle-plugin -->
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>manifest@process-classes</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>manifest</goal>
+            </goals>
+            <configuration>
+              <!-- https://bnd.bndtools.org/chapters/825-instructions-ref.html -->
+              <instructions>
+                <!--
+                  Declares that this plugin exports its external annotations (.eea files) and
+                  be considered by clients performing annotation based null analysis.
+                  See https://bugs.eclipse.org/bugs/show_bug.cgi?id=526011 and
+                  https://github.com/eclipse-pde/eclipse.pde/commit/3f9f33643122a8109460e88362593d67fde42ed5
+                -->
+                <Eclipse-ExportExternalAnnotations>true</Eclipse-ExportExternalAnnotations>
+              </instructions>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.gmavenplus</groupId>
+        <artifactId>gmavenplus-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>collect-eeas</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
+              <scripts>
+                <script><![CDATA[
+                  def targetRootPath = java.nio.file.Path.of(project.build.outputDirectory)
+
+                  // iterate over all libs/* maven modules
+                  project.parent.basedir.toPath().resolve("libs").eachDir() { moduleDir ->
+                    def resDir = moduleDir.resolve("src/main/resources")
+                    def linked = 0
+
+                    // iterate over all src/main/resources/*.eea files in the current module
+                    resDir.traverse(
+                      type: groovy.io.FileType.FILES,
+                      nameFilter: ~/.*\.eea$/
+                    ) { eeaSourceFile ->
+                      // calculate the target EEA file path under eea-all/target/classes/
+                      eeaTargetFile = targetRootPath.resolve(resDir.relativize(eeaSourceFile))
+
+                      // link the current eea file under eea-all/target/classes/
+                      java.nio.file.Files.deleteIfExists(eeaTargetFile)
+                      java.nio.file.Files.createDirectories(eeaTargetFile.getParent())
+                      java.nio.file.Files.createLink(eeaTargetFile, eeaSourceFile);
+                      linked++;
+                    }
+                    log.info(linked + " EEA file(s) collected from eea/" + moduleDir.getFileName())
+                  }
+                ]]></script>
+              </scripts>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
