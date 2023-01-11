@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+   <!--
+   SPDX-FileCopyrightText: © 2022 Vegard IT GmbH (https://vegardit.com) and contributors.
+   SPDX-License-Identifier: EPL-2.0
+
+   Author: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
+   -->
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.vegardit.no-npe</groupId>
+    <artifactId>no-npe-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../..</relativePath>
+  </parent>
+
+  <artifactId>no-npe-eea-directory-watcher-0</artifactId>
+
+  <dependencies>
+    <dependency>
+      <!-- https://github.com/gmethvin/directory-watcher -->
+      <groupId>io.methvin</groupId>
+      <artifactId>directory-watcher</artifactId>
+      <!-- https://search.maven.org/artifact/io.methvin/directory-watcher -->
+      <version>0.17.1</version>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>

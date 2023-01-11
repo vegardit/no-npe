@@ -1,0 +1,39 @@
+class io/methvin/watchservice/jna/CarbonAPI
+
+INSTANCE
+ Lio/methvin/watchservice/jna/CarbonAPI;
+ L1io/methvin/watchservice/jna/CarbonAPI;
+
+CFArrayCreate
+ (Lio/methvin/watchservice/jna/CFAllocatorRef;[Lcom/sun/jna/Pointer;Lio/methvin/watchservice/jna/CFIndex;Ljava/lang/Void;)Lio/methvin/watchservice/jna/CFArrayRef;
+ (Lio/methvin/watchservice/jna/CFAllocatorRef;[Lcom/sun/jna/Pointer;Lio/methvin/watchservice/jna/CFIndex;Ljava/lang/Void;)Lio/methvin/watchservice/jna/CFArrayRef;
+CFRunLoopGetCurrent
+ ()Lio/methvin/watchservice/jna/CFRunLoopRef;
+ ()Lio/methvin/watchservice/jna/CFRunLoopRef;
+CFRunLoopStop
+ (Lio/methvin/watchservice/jna/CFRunLoopRef;)V
+ (Lio/methvin/watchservice/jna/CFRunLoopRef;)V
+CFStringCreateWithCharacters
+ (Ljava/lang/Void;[CLio/methvin/watchservice/jna/CFIndex;)Lio/methvin/watchservice/jna/CFStringRef;
+ (Ljava/lang/Void;[CLio/methvin/watchservice/jna/CFIndex;)Lio/methvin/watchservice/jna/CFStringRef;
+FSEventStreamCreate
+ (Lcom/sun/jna/Pointer;Lio/methvin/watchservice/jna/CarbonAPI$FSEventStreamCallback;Lcom/sun/jna/Pointer;Lio/methvin/watchservice/jna/CFArrayRef;JDI)Lio/methvin/watchservice/jna/FSEventStreamRef;
+ (Lcom/sun/jna/Pointer;Lio/methvin/watchservice/jna/CarbonAPI$FSEventStreamCallback;Lcom/sun/jna/Pointer;Lio/methvin/watchservice/jna/CFArrayRef;JDI)Lio/methvin/watchservice/jna/FSEventStreamRef;
+FSEventStreamInvalidate
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;)V
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;)V
+FSEventStreamRelease
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;)V
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;)V
+FSEventStreamScheduleWithRunLoop
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;Lio/methvin/watchservice/jna/CFRunLoopRef;Lio/methvin/watchservice/jna/CFStringRef;)V
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;Lio/methvin/watchservice/jna/CFRunLoopRef;Lio/methvin/watchservice/jna/CFStringRef;)V
+FSEventStreamStart
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;)Z
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;)Z
+FSEventStreamStop
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;)V
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;)V
+FSEventStreamUnscheduleFromRunLoop
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;Lio/methvin/watchservice/jna/CFRunLoopRef;Lio/methvin/watchservice/jna/CFStringRef;)V
+ (Lio/methvin/watchservice/jna/FSEventStreamRef;Lio/methvin/watchservice/jna/CFRunLoopRef;Lio/methvin/watchservice/jna/CFStringRef;)V
