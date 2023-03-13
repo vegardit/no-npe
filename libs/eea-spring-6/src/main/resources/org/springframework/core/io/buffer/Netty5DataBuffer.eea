@@ -36,6 +36,9 @@ read
 readPosition
  (I)Lorg/springframework/core/io/buffer/Netty5DataBuffer;
  (I)Lorg/springframework/core/io/buffer/Netty5DataBuffer;
+readableByteBuffers
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
 slice
  (II)Lorg/springframework/core/io/buffer/DataBuffer;
  (II)Lorg/springframework/core/io/buffer/DataBuffer;
@@ -45,6 +48,9 @@ split
 toByteBuffer
  (II)Ljava/nio/ByteBuffer;
  (II)Ljava/nio/ByteBuffer;
+toByteBuffer
+ (ILjava/nio/ByteBuffer;II)V
+ (ILjava/nio/ByteBuffer;II)V
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String;
@@ -57,6 +63,9 @@ toString
 touch
  (Ljava/lang/Object;)Lorg/springframework/core/io/buffer/Netty5DataBuffer;
  (Ljava/lang/Object;)Lorg/springframework/core/io/buffer/Netty5DataBuffer;
+writableByteBuffers
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
 write
  (B)Lorg/springframework/core/io/buffer/Netty5DataBuffer;
  (B)Lorg/springframework/core/io/buffer/Netty5DataBuffer;

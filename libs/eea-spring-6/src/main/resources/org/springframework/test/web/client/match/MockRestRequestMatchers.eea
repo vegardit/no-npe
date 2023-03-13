@@ -7,6 +7,9 @@ content
  ()Lorg/springframework/test/web/client/match/ContentRequestMatchers;
  ()Lorg/springframework/test/web/client/match/ContentRequestMatchers;
 header
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/util/List<Ljava/lang/String;>;>;)Lorg/springframework/test/web/client/RequestMatcher;
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/util/List<Ljava/lang/String;>;>;)Lorg/springframework/test/web/client/RequestMatcher;
+header
  (Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/test/web/client/RequestMatcher;
  (Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/test/web/client/RequestMatcher;
 header
@@ -24,6 +27,9 @@ jsonPath
 method
  (Lorg/springframework/http/HttpMethod;)Lorg/springframework/test/web/client/RequestMatcher;
  (Lorg/springframework/http/HttpMethod;)Lorg/springframework/test/web/client/RequestMatcher;
+queryParam
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/util/List<Ljava/lang/String;>;>;)Lorg/springframework/test/web/client/RequestMatcher;
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/util/List<Ljava/lang/String;>;>;)Lorg/springframework/test/web/client/RequestMatcher;
 queryParam
  (Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/test/web/client/RequestMatcher;
  (Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/test/web/client/RequestMatcher;

@@ -36,6 +36,9 @@ read
 readPosition
  (I)Lorg/springframework/core/io/buffer/DefaultDataBuffer;
  (I)Lorg/springframework/core/io/buffer/DefaultDataBuffer;
+readableByteBuffers
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
 slice
  (II)Lorg/springframework/core/io/buffer/DefaultDataBuffer;
  (II)Lorg/springframework/core/io/buffer/DefaultDataBuffer;
@@ -45,12 +48,18 @@ split
 toByteBuffer
  (II)Ljava/nio/ByteBuffer;
  (II)Ljava/nio/ByteBuffer;
+toByteBuffer
+ (ILjava/nio/ByteBuffer;II)V
+ (ILjava/nio/ByteBuffer;II)V
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String;
 toString
  (IILjava/nio/charset/Charset;)Ljava/lang/String;
  (IILjava/nio/charset/Charset;)Ljava/lang/String;
+writableByteBuffers
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
 write
  (B)Lorg/springframework/core/io/buffer/DefaultDataBuffer;
  (B)Lorg/springframework/core/io/buffer/DefaultDataBuffer;

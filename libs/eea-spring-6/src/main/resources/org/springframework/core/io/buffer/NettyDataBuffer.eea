@@ -36,6 +36,9 @@ read
 readPosition
  (I)Lorg/springframework/core/io/buffer/NettyDataBuffer;
  (I)Lorg/springframework/core/io/buffer/NettyDataBuffer;
+readableByteBuffers
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
 retain
  ()Lorg/springframework/core/io/buffer/PooledDataBuffer;
  ()Lorg/springframework/core/io/buffer/PooledDataBuffer;
@@ -51,6 +54,9 @@ split
 toByteBuffer
  (II)Ljava/nio/ByteBuffer;
  (II)Ljava/nio/ByteBuffer;
+toByteBuffer
+ (ILjava/nio/ByteBuffer;II)V
+ (ILjava/nio/ByteBuffer;II)V
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String;
@@ -63,6 +69,9 @@ toString
 touch
  (Ljava/lang/Object;)Lorg/springframework/core/io/buffer/PooledDataBuffer;
  (Ljava/lang/Object;)Lorg/springframework/core/io/buffer/PooledDataBuffer;
+writableByteBuffers
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
+ ()Lorg/springframework/core/io/buffer/DataBuffer$ByteBufferIterator;
 write
  (B)Lorg/springframework/core/io/buffer/NettyDataBuffer;
  (B)Lorg/springframework/core/io/buffer/NettyDataBuffer;
