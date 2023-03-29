@@ -123,9 +123,9 @@ invokeInitMethods
 isExcludedFromDependencyCheck
  (Ljava/beans/PropertyDescriptor;)Z
  (Ljava/beans/PropertyDescriptor;)Z
-obtainFromSupplier
- (Ljava/util/function/Supplier<*>;Ljava/lang/String;)Lorg/springframework/beans/BeanWrapper;
- (Ljava/util/function/Supplier<*>;Ljava/lang/String;)Lorg/springframework/beans/BeanWrapper;
+obtainInstanceFromSupplier
+ (Ljava/util/function/Supplier<*>;Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Ljava/lang/Object;
+ (Ljava/util/function/Supplier<*>;Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)L0java/lang/Object;
 populateBean
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;Lorg/springframework/beans/BeanWrapper;)V
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;Lorg/springframework/beans/BeanWrapper;)V
