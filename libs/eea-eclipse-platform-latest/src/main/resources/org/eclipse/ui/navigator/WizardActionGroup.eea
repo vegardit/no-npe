@@ -16,6 +16,9 @@ TYPE_NEW
 <init>
  (Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/ui/wizards/IWizardRegistry;Ljava/lang/String;Lorg/eclipse/ui/navigator/INavigatorContentService;)V
  (Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/ui/wizards/IWizardRegistry;Ljava/lang/String;Lorg/eclipse/ui/navigator/INavigatorContentService;)V
+<init>
+ (Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/ui/wizards/IWizardRegistry;Ljava/lang/String;Lorg/eclipse/ui/navigator/INavigatorContentService;Ljava/util/function/Predicate<Lorg/eclipse/ui/wizards/IWizardDescriptor;>;Z)V
+ (Lorg/eclipse/ui/IWorkbenchWindow;Lorg/eclipse/ui/wizards/IWizardRegistry;Ljava/lang/String;Lorg/eclipse/ui/navigator/INavigatorContentService;Ljava/util/function/Predicate<Lorg/eclipse/ui/wizards/IWizardDescriptor;>;Z)V
 fillContextMenu
  (Lorg/eclipse/jface/action/IMenuManager;)V
  (Lorg/eclipse/jface/action/IMenuManager;)V
@@ -25,6 +28,9 @@ getAction
 getActions
  ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/action/IAction;>;
  ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/action/IAction;>;
+getDescriptor
+ (Ljava/lang/String;)Lorg/eclipse/ui/wizards/IWizardDescriptor;
+ (Ljava/lang/String;)Lorg/eclipse/ui/wizards/IWizardDescriptor;
 getWizardActionIds
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
