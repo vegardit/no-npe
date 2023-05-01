@@ -19,6 +19,9 @@ _objectId
 _parentContext
  Lcom/fasterxml/jackson/core/JsonStreamContext;
  Lcom/fasterxml/jackson/core/JsonStreamContext;
+_streamReadConstraints
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
 _typeId
  Ljava/lang/Object;
  Ljava/lang/Object;
@@ -65,6 +68,9 @@ asParser
 asParser
  (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonParser;
  (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonParser;
+asParser
+ (Lcom/fasterxml/jackson/core/StreamReadConstraints;)Lcom/fasterxml/jackson/core/JsonParser;
+ (Lcom/fasterxml/jackson/core/StreamReadConstraints;)Lcom/fasterxml/jackson/core/JsonParser;
 asParserOnFirstToken
  ()Lcom/fasterxml/jackson/core/JsonParser;
  ()Lcom/fasterxml/jackson/core/JsonParser;
@@ -194,6 +200,9 @@ writeStartObject
 writeString
  (Lcom/fasterxml/jackson/core/SerializableString;)V
  (Lcom/fasterxml/jackson/core/SerializableString;)V
+writeString
+ (Ljava/io/Reader;I)V
+ (Ljava/io/Reader;I)V
 writeString
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

@@ -22,9 +22,15 @@ deserializeWithType
 findBackReference
  (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
  (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
+getAbsentValue
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
 getDelegatee
  ()Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
  ()Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
+getEmptyAccessPattern
+ ()Lcom/fasterxml/jackson/databind/util/AccessPattern;
+ ()Lcom/fasterxml/jackson/databind/util/AccessPattern;
 getEmptyValue
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
@@ -55,3 +61,6 @@ resolve
 supportsUpdate
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+unwrappingDeserializer
+ (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+ (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;

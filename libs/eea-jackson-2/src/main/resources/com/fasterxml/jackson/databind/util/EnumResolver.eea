@@ -1,14 +1,14 @@
 class com/fasterxml/jackson/databind/util/EnumResolver
 
 _constructFor
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;Z)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;Z)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
 _constructUsingMethod
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;Z)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;Z)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
 _constructUsingToString
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;Z)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;Z)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
 _enumClass
  (Ljava/lang/Class<*>;)Ljava/lang/Class<Ljava/lang/Enum<*>;>;
  (Ljava/lang/Class<*>;)Ljava/lang/Class<Ljava/lang/Enum<*>;>;
@@ -24,33 +24,18 @@ _isIntType
 constructFor
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
-constructFor
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
-constructUnsafe
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
-constructUnsafeUsingMethod
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
-constructUnsafeUsingToString
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+constructUsingEnumNamingStrategy
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/EnumNamingStrategy;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/EnumNamingStrategy;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+constructUsingIndex
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<Ljava/lang/Enum<*>;>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<Ljava/lang/Enum<*>;>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
 constructUsingMethod
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
-constructUsingMethod
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
 constructUsingToString
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
-constructUsingToString
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
-constructUsingToString
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/util/EnumResolver;
 
 _defaultValue
  Ljava/lang/Enum<*>;
@@ -65,9 +50,6 @@ _enumsById
  Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Enum<*>;>;
  Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Enum<*>;>;
 
-<init>
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;[Ljava/lang/Enum<*>;Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Enum<*>;>;Ljava/lang/Enum<*>;)V
- (Ljava/lang/Class<Ljava/lang/Enum<*>;>;[Ljava/lang/Enum<*>;Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Enum<*>;>;Ljava/lang/Enum<*>;)V
 <init>
  (Ljava/lang/Class<Ljava/lang/Enum<*>;>;[Ljava/lang/Enum<*>;Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Enum<*>;>;Ljava/lang/Enum<*>;Z)V
  (Ljava/lang/Class<Ljava/lang/Enum<*>;>;[Ljava/lang/Enum<*>;Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Enum<*>;>;Ljava/lang/Enum<*>;Z)V

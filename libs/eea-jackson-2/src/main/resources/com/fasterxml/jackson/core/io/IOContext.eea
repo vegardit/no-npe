@@ -24,6 +24,9 @@ _readIOBuffer
 _sourceRef
  Ljava/lang/Object;
  Ljava/lang/Object;
+_streamReadConstraints
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
 _tokenCBuffer
  [C
  [C
@@ -31,6 +34,9 @@ _writeEncodingBuffer
  [B
  [B
 
+<init>
+ (Lcom/fasterxml/jackson/core/StreamReadConstraints;Lcom/fasterxml/jackson/core/util/BufferRecycler;Lcom/fasterxml/jackson/core/io/ContentReference;Z)V
+ (Lcom/fasterxml/jackson/core/StreamReadConstraints;Lcom/fasterxml/jackson/core/util/BufferRecycler;Lcom/fasterxml/jackson/core/io/ContentReference;Z)V
 <init>
  (Lcom/fasterxml/jackson/core/util/BufferRecycler;Lcom/fasterxml/jackson/core/io/ContentReference;Z)V
  (Lcom/fasterxml/jackson/core/util/BufferRecycler;Lcom/fasterxml/jackson/core/io/ContentReference;Z)V
@@ -76,6 +82,9 @@ allocWriteEncodingBuffer
 allocWriteEncodingBuffer
  (I)[B
  (I)[B
+constructReadConstrainedTextBuffer
+ ()Lcom/fasterxml/jackson/core/util/TextBuffer;
+ ()Lcom/fasterxml/jackson/core/util/TextBuffer;
 constructTextBuffer
  ()Lcom/fasterxml/jackson/core/util/TextBuffer;
  ()Lcom/fasterxml/jackson/core/util/TextBuffer;
@@ -109,6 +118,9 @@ releaseWriteEncodingBuffer
 setEncoding
  (Lcom/fasterxml/jackson/core/JsonEncoding;)V
  (Lcom/fasterxml/jackson/core/JsonEncoding;)V
+streamReadConstraints
+ ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
 withEncoding
  (Lcom/fasterxml/jackson/core/JsonEncoding;)Lcom/fasterxml/jackson/core/io/IOContext;
  (Lcom/fasterxml/jackson/core/JsonEncoding;)Lcom/fasterxml/jackson/core/io/IOContext;

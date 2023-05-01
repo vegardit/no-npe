@@ -17,6 +17,18 @@ _cfgPrettyPrinter
 _copyCurrentContents
  (Lcom/fasterxml/jackson/core/JsonParser;)V
  (Lcom/fasterxml/jackson/core/JsonParser;)V
+_copyCurrentFloatValue
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+_copyCurrentFloatValueExact
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+_copyCurrentIntValue
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+_copyCurrentStringValue
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
 _reportError
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -33,6 +45,9 @@ configure
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;Z)Lcom/fasterxml/jackson/core/JsonGenerator;
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;Z)Lcom/fasterxml/jackson/core/JsonGenerator;
 copyCurrentEvent
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+copyCurrentEventExact
  (Lcom/fasterxml/jackson/core/JsonParser;)V
  (Lcom/fasterxml/jackson/core/JsonParser;)V
 copyCurrentStructure

@@ -53,24 +53,18 @@ findDefaultEnumValue
 findDeserializationContentConverter
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Object;
-findDeserializationContentType
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
 findDeserializationConverter
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;
-findDeserializationKeyType
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
-findDeserializationType
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
 findDeserializer
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;
 findEnumAliases
  (Ljava/lang/Class<*>;[Ljava/lang/Enum<*>;[[Ljava/lang/String;)V
  (Ljava/lang/Class<*>;[Ljava/lang/Enum<*>;[[Ljava/lang/String;)V
+findEnumNamingStrategy
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Object;
 findEnumValue
  (Ljava/lang/Enum<*>;)Ljava/lang/String;
  (Ljava/lang/Enum<*>;)Ljava/lang/String;
@@ -176,30 +170,15 @@ findRootName
 findSerializationContentConverter
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Object;
-findSerializationContentType
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
 findSerializationConverter
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;
-findSerializationInclusion
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/annotation/JsonInclude$Include;)Lcom/fasterxml/jackson/annotation/JsonInclude$Include;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/annotation/JsonInclude$Include;)Lcom/fasterxml/jackson/annotation/JsonInclude$Include;
-findSerializationInclusionForContent
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/annotation/JsonInclude$Include;)Lcom/fasterxml/jackson/annotation/JsonInclude$Include;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/annotation/JsonInclude$Include;)Lcom/fasterxml/jackson/annotation/JsonInclude$Include;
-findSerializationKeyType
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Class<*>;
 findSerializationPropertyOrder
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)[Ljava/lang/String;
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)[Ljava/lang/String;
 findSerializationSortAlphabetically
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Boolean;
-findSerializationType
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Class<*>;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Class<*>;
 findSerializationTyping
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/annotation/JsonSerialize$Typing;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/databind/annotation/JsonSerialize$Typing;

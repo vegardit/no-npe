@@ -32,6 +32,9 @@ _rootCharSymbols
 _rootValueSeparator
  Lcom/fasterxml/jackson/core/SerializableString;
  Lcom/fasterxml/jackson/core/SerializableString;
+_streamReadConstraints
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
 
 <init>
  (Lcom/fasterxml/jackson/core/JsonFactory;Lcom/fasterxml/jackson/core/ObjectCodec;)V
@@ -288,6 +291,12 @@ setOutputDecorator
 setRootValueSeparator
  (Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonFactory;
  (Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonFactory;
+setStreamReadConstraints
+ (Lcom/fasterxml/jackson/core/StreamReadConstraints;)Lcom/fasterxml/jackson/core/JsonFactory;
+ (Lcom/fasterxml/jackson/core/StreamReadConstraints;)Lcom/fasterxml/jackson/core/JsonFactory;
+streamReadConstraints
+ ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
 version
  ()Lcom/fasterxml/jackson/core/Version;
  ()Lcom/fasterxml/jackson/core/Version;

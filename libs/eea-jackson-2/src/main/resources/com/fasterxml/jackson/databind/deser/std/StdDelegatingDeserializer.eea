@@ -41,6 +41,9 @@ deserialize
 deserializeWithType
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+deserializeWithType
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;TT;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;TT;)Ljava/lang/Object;
 getAbsentValue
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
@@ -68,12 +71,18 @@ handledType
 logicalType
  ()Lcom/fasterxml/jackson/databind/type/LogicalType;
  ()Lcom/fasterxml/jackson/databind/type/LogicalType;
+replaceDelegatee
+ (Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)Lcom/fasterxml/jackson/databind/JsonDeserializer<TT;>;
+ (Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)Lcom/fasterxml/jackson/databind/JsonDeserializer<TT;>;
 resolve
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)V
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)V
 supportsUpdate
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+unwrappingDeserializer
+ (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<TT;>;
+ (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<TT;>;
 withDelegate
  (Lcom/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;TT;>;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)Lcom/fasterxml/jackson/databind/deser/std/StdDelegatingDeserializer<TT;>;
  (Lcom/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;TT;>;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;)Lcom/fasterxml/jackson/databind/deser/std/StdDelegatingDeserializer<TT;>;

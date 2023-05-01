@@ -70,6 +70,9 @@ getClassIntrospector
 getConfigOverride
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/ConfigOverride;
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/cfg/ConfigOverride;
+getDatatypeFeatures
+ ()Lcom/fasterxml/jackson/databind/cfg/DatatypeFeatures;
+ ()Lcom/fasterxml/jackson/databind/cfg/DatatypeFeatures;
 getDateFormat
  ()Ljava/text/DateFormat;
  ()Ljava/text/DateFormat;
@@ -154,6 +157,9 @@ introspectDirectClassAnnotations
 isEnabled
  (Lcom/fasterxml/jackson/databind/MapperFeature;)Z
  (Lcom/fasterxml/jackson/databind/MapperFeature;)Z
+isEnabled
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Z
+ (Lcom/fasterxml/jackson/databind/cfg/DatatypeFeature;)Z
 typeIdResolverInstance
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Class<+Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;>;)Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Class<+Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;>;)Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;

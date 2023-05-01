@@ -15,6 +15,9 @@ _parsingContext
 _segment
  Lcom/fasterxml/jackson/databind/util/TokenBuffer$Segment;
  Lcom/fasterxml/jackson/databind/util/TokenBuffer$Segment;
+_streamReadConstraints
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
 
 <init>
  (Lcom/fasterxml/jackson/databind/util/TokenBuffer$Segment;Lcom/fasterxml/jackson/core/ObjectCodec;ZZ)V
@@ -22,6 +25,9 @@ _segment
 <init>
  (Lcom/fasterxml/jackson/databind/util/TokenBuffer$Segment;Lcom/fasterxml/jackson/core/ObjectCodec;ZZLcom/fasterxml/jackson/core/JsonStreamContext;)V
  (Lcom/fasterxml/jackson/databind/util/TokenBuffer$Segment;Lcom/fasterxml/jackson/core/ObjectCodec;ZZLcom/fasterxml/jackson/core/JsonStreamContext;)V
+<init>
+ (Lcom/fasterxml/jackson/databind/util/TokenBuffer$Segment;Lcom/fasterxml/jackson/core/ObjectCodec;ZZLcom/fasterxml/jackson/core/JsonStreamContext;Lcom/fasterxml/jackson/core/StreamReadConstraints;)V
+ (Lcom/fasterxml/jackson/databind/util/TokenBuffer$Segment;Lcom/fasterxml/jackson/core/ObjectCodec;ZZLcom/fasterxml/jackson/core/JsonStreamContext;Lcom/fasterxml/jackson/core/StreamReadConstraints;)V
 _convertNumberToInt
  (Ljava/lang/Number;)I
  (Ljava/lang/Number;)I
@@ -61,6 +67,9 @@ getNumberType
 getNumberValue
  ()Ljava/lang/Number;
  ()Ljava/lang/Number;
+getNumberValueDeferred
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
 getObjectId
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -103,6 +112,9 @@ setCodec
 setLocation
  (Lcom/fasterxml/jackson/core/JsonLocation;)V
  (Lcom/fasterxml/jackson/core/JsonLocation;)V
+streamReadConstraints
+ ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
 version
  ()Lcom/fasterxml/jackson/core/Version;
  ()Lcom/fasterxml/jackson/core/Version;
