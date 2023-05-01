@@ -1,5 +1,11 @@
 class org/springframework/test/web/servlet/result/CookieResultMatchers
 
+attribute
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/test/web/servlet/ResultMatcher;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/test/web/servlet/ResultMatcher;
+attribute
+ (Ljava/lang/String;Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/servlet/ResultMatcher;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/servlet/ResultMatcher;
 comment
  (Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/test/web/servlet/ResultMatcher;
  (Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/test/web/servlet/ResultMatcher;
@@ -31,6 +37,12 @@ path
  (Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/test/web/servlet/ResultMatcher;
  (Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/test/web/servlet/ResultMatcher;
 path
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/servlet/ResultMatcher;
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/servlet/ResultMatcher;
+sameSite
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/test/web/servlet/ResultMatcher;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/test/web/servlet/ResultMatcher;
+sameSite
  (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/servlet/ResultMatcher;
  (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/servlet/ResultMatcher;
 secure

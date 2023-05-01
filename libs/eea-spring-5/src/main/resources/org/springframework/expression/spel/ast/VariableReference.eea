@@ -15,9 +15,9 @@ getValueRef
 isWritable
  (Lorg/springframework/expression/spel/ExpressionState;)Z
  (Lorg/springframework/expression/spel/ExpressionState;)Z
-setValue
- (Lorg/springframework/expression/spel/ExpressionState;Ljava/lang/Object;)V
- (Lorg/springframework/expression/spel/ExpressionState;Ljava/lang/Object;)V
+setValueInternal
+ (Lorg/springframework/expression/spel/ExpressionState;Ljava/util/function/Supplier<Lorg/springframework/expression/TypedValue;>;)Lorg/springframework/expression/TypedValue;
+ (Lorg/springframework/expression/spel/ExpressionState;Ljava/util/function/Supplier<Lorg/springframework/expression/TypedValue;>;)Lorg/springframework/expression/TypedValue;
 toStringAST
  ()Ljava/lang/String;
  ()Ljava/lang/String;
