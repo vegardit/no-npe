@@ -1,0 +1,95 @@
+class jakarta/servlet/http/HttpServletRequestWrapper
+
+<init>
+ (Ljakarta/servlet/http/HttpServletRequest;)V
+ (Ljakarta/servlet/http/HttpServletRequest;)V
+authenticate
+ (Ljakarta/servlet/http/HttpServletResponse;)Z
+ (Ljakarta/servlet/http/HttpServletResponse;)Z
+changeSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getAuthType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getContextPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCookies
+ ()[Ljakarta/servlet/http/Cookie;
+ ()[Ljakarta/servlet/http/Cookie;
+getDateHeader
+ (Ljava/lang/String;)J
+ (Ljava/lang/String;)J
+getHeader
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getHeaderNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getHeaders
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+getHttpServletMapping
+ ()Ljakarta/servlet/http/HttpServletMapping;
+ ()Ljakarta/servlet/http/HttpServletMapping;
+getIntHeader
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+getMethod
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPart
+ (Ljava/lang/String;)Ljakarta/servlet/http/Part;
+ (Ljava/lang/String;)Ljakarta/servlet/http/Part;
+getParts
+ ()Ljava/util/Collection<Ljakarta/servlet/http/Part;>;
+ ()Ljava/util/Collection<Ljakarta/servlet/http/Part;>;
+getPathInfo
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPathTranslated
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getQueryString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRemoteUser
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRequestURI
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRequestURL
+ ()Ljava/lang/StringBuffer;
+ ()Ljava/lang/StringBuffer;
+getRequestedSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getServletPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSession
+ ()Ljakarta/servlet/http/HttpSession;
+ ()Ljakarta/servlet/http/HttpSession;
+getSession
+ (Z)Ljakarta/servlet/http/HttpSession;
+ (Z)Ljakarta/servlet/http/HttpSession;
+getTrailerFields
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getUserPrincipal
+ ()Ljava/security/Principal;
+ ()Ljava/security/Principal;
+isUserInRole
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+login
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+newPushBuilder
+ ()Ljakarta/servlet/http/PushBuilder;
+ ()Ljakarta/servlet/http/PushBuilder;
+upgrade
+ <T::Ljakarta/servlet/http/HttpUpgradeHandler;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljakarta/servlet/http/HttpUpgradeHandler;>(Ljava/lang/Class<TT;>;)TT;
