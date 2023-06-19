@@ -25,6 +25,9 @@ entrySet
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z
+forEach
+ (Ljava/util/function/BiConsumer<-TK;-Ljava/util/List<TV;>;>;)V
+ (Ljava/util/function/BiConsumer<-TK;-Ljava/util/List<TV;>;>;)V
 get
  (Ljava/lang/Object;)Ljava/util/List<TV;>;
  (Ljava/lang/Object;)L0java/util/List<TV;>;
@@ -40,6 +43,9 @@ put
 putAll
  (Ljava/util/Map<+TK;+Ljava/util/List<TV;>;>;)V
  (Ljava/util/Map<+TK;+Ljava/util/List<TV;>;>;)V
+putIfAbsent
+ (TK;Ljava/util/List<TV;>;)Ljava/util/List<TV;>;
+ (TK;Ljava/util/List<TV;>;)L0java/util/List<TV;>;
 remove
  (Ljava/lang/Object;)Ljava/util/List<TV;>;
  (Ljava/lang/Object;)L0java/util/List<TV;>;
