@@ -1,5 +1,8 @@
 class org/eclipse/equinox/p2/engine/ProvisioningContext
 
+CHECK_AUTHORITIES
+ Ljava/lang/String;
+ L1java/lang/String;
 FOLLOW_REPOSITORY_REFERENCES
  Ljava/lang/String;
  L1java/lang/String;
@@ -16,9 +19,15 @@ getArtifactKeys
 getArtifactRepositories
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;>;
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;>;
+getArtifactSources
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;>;
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;>;
 getExtraInstallableUnits
  ()Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
  ()Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+getInstallableUnitSources
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;>;
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;>;
 getMetadata
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
