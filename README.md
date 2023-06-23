@@ -3,7 +3,6 @@
 [![Build Status](https://github.com/vegardit/no-npe/workflows/Build/badge.svg "GitHub Actions")](https://github.com/vegardit/no-npe/actions?query=workflow%3A%22Build%22)
 [![License](https://img.shields.io/github/license/vegardit/no-npe.svg?color=blue)](LICENSE.txt)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.1%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
-[![Maven Central](https://img.shields.io/maven-central/v/com.vegardit.no-npe/no-npe-parent)](https://search.maven.org/artifact/com.vegardit.no-npe/no-npe-parent)
 
 
 **Feedback and high-quality pull requests are highly welcome!**
@@ -29,8 +28,6 @@ Usage of External Null Annotations in Eclipse is documented at
 https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.jdt.doc.user/tasks/task-using_external_null_annotations.htm
 
 ### Binaries
-
-**Release** binaries of this project are available at Maven Central https://search.maven.org/search?q=g:com.vegardit.no-npe
 
 Latest **Snapshot** binaries are available via the [mvn-snapshots-repo](https://github.com/vegardit/no-npe/tree/mvn-snapshots-repo) git branch.
 You need to add this repository configuration to your Maven `settings.xml`:
