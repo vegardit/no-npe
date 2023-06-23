@@ -5,6 +5,24 @@ NOOP_IO_CONSUMER
  Lorg/apache/commons/io/function/IOConsumer<*>;
  L1org/apache/commons/io/function/IOConsumer<*>;
 
+forAll
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOConsumer<TT;>;Ljava/lang/Iterable<TT;>;)V
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOConsumer<TT;>;Ljava/lang/Iterable<TT;>;)V
+forAll
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOConsumer<TT;>;Ljava/util/stream/Stream<TT;>;)V
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOConsumer<TT;>;Ljava/util/stream/Stream<TT;>;)V
+forAll
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOConsumer<TT;>;[TT;)V
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOConsumer<TT;>;[TT;)V
+forEach
+ <T:Ljava/lang/Object;>(Ljava/lang/Iterable<TT;>;Lorg/apache/commons/io/function/IOConsumer<TT;>;)V
+ <T:Ljava/lang/Object;>(Ljava/lang/Iterable<TT;>;Lorg/apache/commons/io/function/IOConsumer<TT;>;)V
+forEach
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;Lorg/apache/commons/io/function/IOConsumer<TT;>;)V
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;Lorg/apache/commons/io/function/IOConsumer<TT;>;)V
+forEach
+ <T:Ljava/lang/Object;>([TT;Lorg/apache/commons/io/function/IOConsumer<TT;>;)V
+ <T:Ljava/lang/Object;>([TT;Lorg/apache/commons/io/function/IOConsumer<TT;>;)V
 noop
  <T:Ljava/lang/Object;>()Lorg/apache/commons/io/function/IOConsumer<TT;>;
  <T:Ljava/lang/Object;>()Lorg/apache/commons/io/function/IOConsumer<TT;>;
@@ -15,3 +33,6 @@ accept
 andThen
  (Lorg/apache/commons/io/function/IOConsumer<-TT;>;)Lorg/apache/commons/io/function/IOConsumer<TT;>;
  (Lorg/apache/commons/io/function/IOConsumer<-TT;>;)Lorg/apache/commons/io/function/IOConsumer<TT;>;
+asConsumer
+ ()Ljava/util/function/Consumer<TT;>;
+ ()Ljava/util/function/Consumer<TT;>;

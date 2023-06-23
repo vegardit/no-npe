@@ -1,5 +1,9 @@
 class org/apache/commons/io/IOExceptionList
 
+checkEmpty
+ (Ljava/util/List<+Ljava/lang/Throwable;>;Ljava/lang/Object;)V
+ (Ljava/util/List<+Ljava/lang/Throwable;>;Ljava/lang/Object;)V
+
 <init>
  (Ljava/lang/String;Ljava/util/List<+Ljava/lang/Throwable;>;)V
  (Ljava/lang/String;Ljava/util/List<+Ljava/lang/Throwable;>;)V
@@ -18,3 +22,6 @@ getCauseList
 getCauseList
  <T:Ljava/lang/Throwable;>(Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
  <T:Ljava/lang/Throwable;>(Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
+iterator
+ ()Ljava/util/Iterator<Ljava/lang/Throwable;>;
+ ()Ljava/util/Iterator<Ljava/lang/Throwable;>;

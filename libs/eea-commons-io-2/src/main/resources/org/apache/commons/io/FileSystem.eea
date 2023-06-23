@@ -7,6 +7,9 @@ getCurrent
 getIllegalFileNameChars
  ()[C
  ()[C
+getIllegalFileNameCodePoints
+ ()[I
+ ()[I
 getReservedFileNames
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
@@ -16,6 +19,9 @@ isLegalFileName
 isReservedFileName
  (Ljava/lang/CharSequence;)Z
  (Ljava/lang/CharSequence;)Z
+normalizeSeparators
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
 toLegalFileName
  (Ljava/lang/String;C)Ljava/lang/String;
  (Ljava/lang/String;C)Ljava/lang/String;

@@ -32,6 +32,9 @@ byteCountToDisplaySize
  (J)Ljava/lang/String;
  (J)Ljava/lang/String;
 byteCountToDisplaySize
+ (Ljava/lang/Number;)Ljava/lang/String;
+ (Ljava/lang/Number;)Ljava/lang/String;
+byteCountToDisplaySize
  (Ljava/math/BigInteger;)Ljava/lang/String;
  (Ljava/math/BigInteger;)Ljava/lang/String;
 checksum
@@ -112,6 +115,9 @@ copyURLToFile
 createParentDirectories
  (Ljava/io/File;)Ljava/io/File;
  (Ljava/io/File;)Ljava/io/File;
+current
+ ()Ljava/io/File;
+ ()Ljava/io/File;
 delete
  (Ljava/io/File;)Ljava/io/File;
  (Ljava/io/File;)Ljava/io/File;
@@ -167,14 +173,23 @@ isFileNewer
  (Ljava/io/File;Ljava/io/File;)Z
  (Ljava/io/File;Ljava/io/File;)Z
 isFileNewer
+ (Ljava/io/File;Ljava/nio/file/attribute/FileTime;)Z
+ (Ljava/io/File;Ljava/nio/file/attribute/FileTime;)Z
+isFileNewer
  (Ljava/io/File;Ljava/time/Instant;)Z
  (Ljava/io/File;Ljava/time/Instant;)Z
+isFileNewer
+ (Ljava/io/File;Ljava/time/OffsetDateTime;)Z
+ (Ljava/io/File;Ljava/time/OffsetDateTime;)Z
 isFileNewer
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;)Z
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;)Z
 isFileNewer
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;Ljava/time/LocalTime;)Z
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;Ljava/time/LocalTime;)Z
+isFileNewer
+ (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;Ljava/time/OffsetTime;)Z
+ (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;Ljava/time/OffsetTime;)Z
 isFileNewer
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDateTime<*>;)Z
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDateTime<*>;)Z
@@ -194,14 +209,23 @@ isFileOlder
  (Ljava/io/File;Ljava/io/File;)Z
  (Ljava/io/File;Ljava/io/File;)Z
 isFileOlder
+ (Ljava/io/File;Ljava/nio/file/attribute/FileTime;)Z
+ (Ljava/io/File;Ljava/nio/file/attribute/FileTime;)Z
+isFileOlder
  (Ljava/io/File;Ljava/time/Instant;)Z
  (Ljava/io/File;Ljava/time/Instant;)Z
+isFileOlder
+ (Ljava/io/File;Ljava/time/OffsetDateTime;)Z
+ (Ljava/io/File;Ljava/time/OffsetDateTime;)Z
 isFileOlder
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;)Z
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;)Z
 isFileOlder
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;Ljava/time/LocalTime;)Z
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;Ljava/time/LocalTime;)Z
+isFileOlder
+ (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;Ljava/time/OffsetTime;)Z
+ (Ljava/io/File;Ljava/time/chrono/ChronoLocalDate;Ljava/time/OffsetTime;)Z
 isFileOlder
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDateTime<*>;)Z
  (Ljava/io/File;Ljava/time/chrono/ChronoLocalDateTime<*>;)Z
@@ -232,6 +256,9 @@ iterateFilesAndDirs
 lastModified
  (Ljava/io/File;)J
  (Ljava/io/File;)J
+lastModifiedFileTime
+ (Ljava/io/File;)Ljava/nio/file/attribute/FileTime;
+ (Ljava/io/File;)Ljava/nio/file/attribute/FileTime;
 lastModifiedUnchecked
  (Ljava/io/File;)J
  (Ljava/io/File;)J
@@ -268,6 +295,9 @@ moveFileToDirectory
 moveToDirectory
  (Ljava/io/File;Ljava/io/File;Z)V
  (Ljava/io/File;Ljava/io/File;Z)V
+newOutputStream
+ (Ljava/io/File;Z)Ljava/io/OutputStream;
+ (Ljava/io/File;Z)Ljava/io/OutputStream;
 openInputStream
  (Ljava/io/File;)Ljava/io/FileInputStream;
  (Ljava/io/File;)Ljava/io/FileInputStream;

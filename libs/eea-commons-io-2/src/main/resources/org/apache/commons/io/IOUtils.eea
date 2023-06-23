@@ -74,6 +74,9 @@ closeQuietly
  (Ljava/io/Writer;)V
  (Ljava/io/Writer;)V
 closeQuietly
+ (Ljava/lang/Iterable<Ljava/io/Closeable;>;)V
+ (Ljava/lang/Iterable<Ljava/io/Closeable;>;)V
+closeQuietly
  (Ljava/net/ServerSocket;)V
  (Ljava/net/ServerSocket;)V
 closeQuietly
@@ -82,12 +85,18 @@ closeQuietly
 closeQuietly
  (Ljava/nio/channels/Selector;)V
  (Ljava/nio/channels/Selector;)V
+closeQuietly
+ (Ljava/util/stream/Stream<Ljava/io/Closeable;>;)V
+ (Ljava/util/stream/Stream<Ljava/io/Closeable;>;)V
 closeQuietly
  ([Ljava/io/Closeable;)V
  ([Ljava/io/Closeable;)V
 consume
  (Ljava/io/InputStream;)J
  (Ljava/io/InputStream;)J
+consume
+ (Ljava/io/Reader;)J
+ (Ljava/io/Reader;)J
 contentEquals
  (Ljava/io/InputStream;Ljava/io/InputStream;)Z
  (Ljava/io/InputStream;Ljava/io/InputStream;)Z
@@ -98,6 +107,9 @@ contentEqualsIgnoreEOL
  (Ljava/io/Reader;Ljava/io/Reader;)Z
  (Ljava/io/Reader;Ljava/io/Reader;)Z
 copy
+ (Ljava/io/ByteArrayOutputStream;)Lorg/apache/commons/io/input/QueueInputStream;
+ (Ljava/io/ByteArrayOutputStream;)Lorg/apache/commons/io/input/QueueInputStream;
+copy
  (Ljava/io/InputStream;Ljava/io/OutputStream;)I
  (Ljava/io/InputStream;Ljava/io/OutputStream;)I
 copy
@@ -364,6 +376,12 @@ toString
 toString
  (Ljava/net/URL;Ljava/nio/charset/Charset;)Ljava/lang/String;
  (Ljava/net/URL;Ljava/nio/charset/Charset;)Ljava/lang/String;
+toString
+ (Lorg/apache/commons/io/function/IOSupplier<Ljava/io/InputStream;>;Ljava/nio/charset/Charset;)Ljava/lang/String;
+ (Lorg/apache/commons/io/function/IOSupplier<Ljava/io/InputStream;>;Ljava/nio/charset/Charset;)Ljava/lang/String;
+toString
+ (Lorg/apache/commons/io/function/IOSupplier<Ljava/io/InputStream;>;Ljava/nio/charset/Charset;Lorg/apache/commons/io/function/IOSupplier<Ljava/lang/String;>;)Ljava/lang/String;
+ (Lorg/apache/commons/io/function/IOSupplier<Ljava/io/InputStream;>;Ljava/nio/charset/Charset;Lorg/apache/commons/io/function/IOSupplier<Ljava/lang/String;>;)Ljava/lang/String;
 toString
  ([B)Ljava/lang/String;
  ([B)Ljava/lang/String;

@@ -1,0 +1,121 @@
+class org/apache/commons/io/function/IOStream
+ <T:Ljava/lang/Object;>
+
+adapt
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+empty
+ <T:Ljava/lang/Object;>()Lorg/apache/commons/io/function/IOStream<TT;>;
+ <T:Ljava/lang/Object;>()Lorg/apache/commons/io/function/IOStream<TT;>;
+iterate
+ <T:Ljava/lang/Object;>(TT;Lorg/apache/commons/io/function/IOUnaryOperator<TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+ <T:Ljava/lang/Object;>(TT;Lorg/apache/commons/io/function/IOUnaryOperator<TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+of
+ <T:Ljava/lang/Object;>(Ljava/lang/Iterable<TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Iterable<TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+of
+ <T:Ljava/lang/Object;>(TT;)Lorg/apache/commons/io/function/IOStream<TT;>;
+ <T:Ljava/lang/Object;>(TT;)Lorg/apache/commons/io/function/IOStream<TT;>;
+of
+ <T:Ljava/lang/Object;>([TT;)Lorg/apache/commons/io/function/IOStream<TT;>;
+ <T:Ljava/lang/Object;>([TT;)Lorg/apache/commons/io/function/IOStream<TT;>;
+
+allMatch
+ (Lorg/apache/commons/io/function/IOPredicate<-TT;>;)Z
+ (Lorg/apache/commons/io/function/IOPredicate<-TT;>;)Z
+anyMatch
+ (Lorg/apache/commons/io/function/IOPredicate<-TT;>;)Z
+ (Lorg/apache/commons/io/function/IOPredicate<-TT;>;)Z
+collect
+ <R:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOSupplier<TR;>;Lorg/apache/commons/io/function/IOBiConsumer<TR;-TT;>;Lorg/apache/commons/io/function/IOBiConsumer<TR;TR;>;)TR;
+ <R:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOSupplier<TR;>;Lorg/apache/commons/io/function/IOBiConsumer<TR;-TT;>;Lorg/apache/commons/io/function/IOBiConsumer<TR;TR;>;)TR;
+collect
+ <R:Ljava/lang/Object;A:Ljava/lang/Object;>(Ljava/util/stream/Collector<-TT;TA;TR;>;)TR;
+ <R:Ljava/lang/Object;A:Ljava/lang/Object;>(Ljava/util/stream/Collector<-TT;TA;TR;>;)TR;
+distinct
+ ()Lorg/apache/commons/io/function/IOStream<TT;>;
+ ()Lorg/apache/commons/io/function/IOStream<TT;>;
+filter
+ (Lorg/apache/commons/io/function/IOPredicate<-TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+ (Lorg/apache/commons/io/function/IOPredicate<-TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+findAny
+ ()Ljava/util/Optional<TT;>;
+ ()Ljava/util/Optional<TT;>;
+findFirst
+ ()Ljava/util/Optional<TT;>;
+ ()Ljava/util/Optional<TT;>;
+flatMap
+ <R:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOFunction<-TT;+Lorg/apache/commons/io/function/IOStream<+TR;>;>;)Lorg/apache/commons/io/function/IOStream<TR;>;
+ <R:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOFunction<-TT;+Lorg/apache/commons/io/function/IOStream<+TR;>;>;)Lorg/apache/commons/io/function/IOStream<TR;>;
+flatMapToDouble
+ (Lorg/apache/commons/io/function/IOFunction<-TT;+Ljava/util/stream/DoubleStream;>;)Ljava/util/stream/DoubleStream;
+ (Lorg/apache/commons/io/function/IOFunction<-TT;+Ljava/util/stream/DoubleStream;>;)Ljava/util/stream/DoubleStream;
+flatMapToInt
+ (Lorg/apache/commons/io/function/IOFunction<-TT;+Ljava/util/stream/IntStream;>;)Ljava/util/stream/IntStream;
+ (Lorg/apache/commons/io/function/IOFunction<-TT;+Ljava/util/stream/IntStream;>;)Ljava/util/stream/IntStream;
+flatMapToLong
+ (Lorg/apache/commons/io/function/IOFunction<-TT;+Ljava/util/stream/LongStream;>;)Ljava/util/stream/LongStream;
+ (Lorg/apache/commons/io/function/IOFunction<-TT;+Ljava/util/stream/LongStream;>;)Ljava/util/stream/LongStream;
+forAll
+ (Lorg/apache/commons/io/function/IOConsumer<TT;>;)V
+ (Lorg/apache/commons/io/function/IOConsumer<TT;>;)V
+forAll
+ (Lorg/apache/commons/io/function/IOConsumer<TT;>;Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/io/IOException;Ljava/io/IOException;>;)V
+ (Lorg/apache/commons/io/function/IOConsumer<TT;>;Ljava/util/function/BiFunction<Ljava/lang/Integer;Ljava/io/IOException;Ljava/io/IOException;>;)V
+forEach
+ (Lorg/apache/commons/io/function/IOConsumer<-TT;>;)V
+ (Lorg/apache/commons/io/function/IOConsumer<-TT;>;)V
+forEachOrdered
+ (Lorg/apache/commons/io/function/IOConsumer<-TT;>;)V
+ (Lorg/apache/commons/io/function/IOConsumer<-TT;>;)V
+limit
+ (J)Lorg/apache/commons/io/function/IOStream<TT;>;
+ (J)Lorg/apache/commons/io/function/IOStream<TT;>;
+map
+ <R:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOFunction<-TT;+TR;>;)Lorg/apache/commons/io/function/IOStream<TR;>;
+ <R:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOFunction<-TT;+TR;>;)Lorg/apache/commons/io/function/IOStream<TR;>;
+mapToDouble
+ (Ljava/util/function/ToDoubleFunction<-TT;>;)Ljava/util/stream/DoubleStream;
+ (Ljava/util/function/ToDoubleFunction<-TT;>;)Ljava/util/stream/DoubleStream;
+mapToInt
+ (Ljava/util/function/ToIntFunction<-TT;>;)Ljava/util/stream/IntStream;
+ (Ljava/util/function/ToIntFunction<-TT;>;)Ljava/util/stream/IntStream;
+mapToLong
+ (Ljava/util/function/ToLongFunction<-TT;>;)Ljava/util/stream/LongStream;
+ (Ljava/util/function/ToLongFunction<-TT;>;)Ljava/util/stream/LongStream;
+max
+ (Lorg/apache/commons/io/function/IOComparator<-TT;>;)Ljava/util/Optional<TT;>;
+ (Lorg/apache/commons/io/function/IOComparator<-TT;>;)Ljava/util/Optional<TT;>;
+min
+ (Lorg/apache/commons/io/function/IOComparator<-TT;>;)Ljava/util/Optional<TT;>;
+ (Lorg/apache/commons/io/function/IOComparator<-TT;>;)Ljava/util/Optional<TT;>;
+noneMatch
+ (Lorg/apache/commons/io/function/IOPredicate<-TT;>;)Z
+ (Lorg/apache/commons/io/function/IOPredicate<-TT;>;)Z
+peek
+ (Lorg/apache/commons/io/function/IOConsumer<-TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+ (Lorg/apache/commons/io/function/IOConsumer<-TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+reduce
+ (Lorg/apache/commons/io/function/IOBinaryOperator<TT;>;)Ljava/util/Optional<TT;>;
+ (Lorg/apache/commons/io/function/IOBinaryOperator<TT;>;)Ljava/util/Optional<TT;>;
+reduce
+ (TT;Lorg/apache/commons/io/function/IOBinaryOperator<TT;>;)TT;
+ (TT;Lorg/apache/commons/io/function/IOBinaryOperator<TT;>;)TT;
+reduce
+ <U:Ljava/lang/Object;>(TU;Lorg/apache/commons/io/function/IOBiFunction<TU;-TT;TU;>;Lorg/apache/commons/io/function/IOBinaryOperator<TU;>;)TU;
+ <U:Ljava/lang/Object;>(TU;Lorg/apache/commons/io/function/IOBiFunction<TU;-TT;TU;>;Lorg/apache/commons/io/function/IOBinaryOperator<TU;>;)TU;
+skip
+ (J)Lorg/apache/commons/io/function/IOStream<TT;>;
+ (J)Lorg/apache/commons/io/function/IOStream<TT;>;
+sorted
+ ()Lorg/apache/commons/io/function/IOStream<TT;>;
+ ()Lorg/apache/commons/io/function/IOStream<TT;>;
+sorted
+ (Lorg/apache/commons/io/function/IOComparator<-TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+ (Lorg/apache/commons/io/function/IOComparator<-TT;>;)Lorg/apache/commons/io/function/IOStream<TT;>;
+toArray
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+toArray
+ <A:Ljava/lang/Object;>(Ljava/util/function/IntFunction<[TA;>;)[TA;
+ <A:Ljava/lang/Object;>(Ljava/util/function/IntFunction<[TA;>;)[TA;

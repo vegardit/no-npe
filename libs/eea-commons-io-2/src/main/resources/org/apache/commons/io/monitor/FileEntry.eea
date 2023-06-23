@@ -12,6 +12,9 @@ getChildren
 getFile
  ()Ljava/io/File;
  ()Ljava/io/File;
+getLastModifiedFileTime
+ ()Ljava/nio/file/attribute/FileTime;
+ ()Ljava/nio/file/attribute/FileTime;
 getName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -27,6 +30,9 @@ refresh
 setChildren
  ([Lorg/apache/commons/io/monitor/FileEntry;)V
  ([Lorg/apache/commons/io/monitor/FileEntry;)V
+setLastModified
+ (Ljava/nio/file/attribute/FileTime;)V
+ (Ljava/nio/file/attribute/FileTime;)V
 setName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

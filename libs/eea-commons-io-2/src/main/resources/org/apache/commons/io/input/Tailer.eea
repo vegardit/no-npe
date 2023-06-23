@@ -1,5 +1,8 @@
 class org/apache/commons/io/input/Tailer
 
+builder
+ ()Lorg/apache/commons/io/input/Tailer$Builder;
+ ()Lorg/apache/commons/io/input/Tailer$Builder;
 create
  (Ljava/io/File;Ljava/nio/charset/Charset;Lorg/apache/commons/io/input/TailerListener;JZZI)Lorg/apache/commons/io/input/Tailer;
  (Ljava/io/File;Ljava/nio/charset/Charset;Lorg/apache/commons/io/input/TailerListener;JZZI)Lorg/apache/commons/io/input/Tailer;
@@ -43,6 +46,12 @@ create
 <init>
  (Ljava/io/File;Lorg/apache/commons/io/input/TailerListener;JZZI)V
  (Ljava/io/File;Lorg/apache/commons/io/input/TailerListener;JZZI)V
+getDelayDuration
+ ()Ljava/time/Duration;
+ ()Ljava/time/Duration;
 getFile
  ()Ljava/io/File;
  ()Ljava/io/File;
+getTailable
+ ()Lorg/apache/commons/io/input/Tailer$Tailable;
+ ()Lorg/apache/commons/io/input/Tailer$Tailable;
