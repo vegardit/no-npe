@@ -14,7 +14,7 @@
   <parent>
     <groupId>com.vegardit.maven</groupId>
     <artifactId>vegardit-maven-parent</artifactId>
-    <version>3.0.13</version>
+    <version>3.0.16</version>
   </parent>
 
   <groupId>com.vegardit.no-npe</groupId>
@@ -139,6 +139,7 @@
                   <goal>manifest</goal>
                 </goals>
                 <configuration>
+                  <skip>false</skip>
                   <!-- https://bnd.bndtools.org/chapters/825-instructions-ref.html -->
                   <instructions>
                     <!--
