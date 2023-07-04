@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: © Vegard IT GmbH (https://vegardit.com) and contributors.
+# SPDX-FileCopyrightText: © Vegard IT GmbH (https://vegardit.com) and contributors
+# SPDX-FileContributor: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
 # SPDX-License-Identifier: EPL-2.0
+# SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
 #
-# Author: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
-#
-# https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 name: Build
 
 on:
   push:
-    branches:     # build all branches
-    - '**'
-    tags-ignore:  # but don't build tags
+    branches-ignore: # build all branches except:
+      - 'dependabot/**' # prevent GHA triggered twice (once for commit to the branch and once for opening/syncing the PR)
+    tags-ignore: # don't build tags
     - '**'
     paths-ignore:
     - '**/*.adoc'
@@ -65,7 +65,7 @@ jobs:
     - name: Set up Maven
       uses: stCarolas/setup-maven@v4.5
       with:
-        maven-version: 3.8.6
+        maven-version: 3.9.3
 
     - name: Test with Maven
       id: maven-test

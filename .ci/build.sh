@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #
-# SPDX-FileCopyrightText: © Vegard IT GmbH (https://vegardit.com) and contributors.
+# SPDX-FileCopyrightText: © Vegard IT GmbH (https://vegardit.com) and contributors
+# SPDX-FileContributor: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
 # SPDX-License-Identifier: EPL-2.0
-#
-# Author: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
+# SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
 
 #####################
 # Script init
