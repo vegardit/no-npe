@@ -1,4 +1,4 @@
-class org/junit/jupiter/api/extension/ParameterContext
+class org/junit/jupiter/api/extension/AnnotatedElementContext
 
 findAnnotation
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Ljava/util/Optional<TA;>;
@@ -9,15 +9,6 @@ findRepeatableAnnotations
 getAnnotatedElement
  ()Ljava/lang/reflect/AnnotatedElement;
  ()Ljava/lang/reflect/AnnotatedElement;
-getDeclaringExecutable
- ()Ljava/lang/reflect/Executable;
- ()Ljava/lang/reflect/Executable;
-getParameter
- ()Ljava/lang/reflect/Parameter;
- ()Ljava/lang/reflect/Parameter;
-getTarget
- ()Ljava/util/Optional<Ljava/lang/Object;>;
- ()Ljava/util/Optional<Ljava/lang/Object;>;
 isAnnotated
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z

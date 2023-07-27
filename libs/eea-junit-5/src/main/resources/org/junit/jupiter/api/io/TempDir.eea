@@ -3,6 +3,9 @@ class org/junit/jupiter/api/io/TempDir
 DEFAULT_CLEANUP_MODE_PROPERTY_NAME
  Ljava/lang/String;
  L1java/lang/String;
+DEFAULT_FACTORY_PROPERTY_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
 SCOPE_PROPERTY_NAME
  Ljava/lang/String;
  L1java/lang/String;
@@ -10,3 +13,6 @@ SCOPE_PROPERTY_NAME
 cleanup
  ()Lorg/junit/jupiter/api/io/CleanupMode;
  ()Lorg/junit/jupiter/api/io/CleanupMode;
+factory
+ ()Ljava/lang/Class<+Lorg/junit/jupiter/api/io/TempDirFactory;>;
+ ()Ljava/lang/Class<+Lorg/junit/jupiter/api/io/TempDirFactory;>;
