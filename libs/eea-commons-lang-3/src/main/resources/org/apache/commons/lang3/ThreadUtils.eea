@@ -14,8 +14,14 @@ findThreadById
  (JLjava/lang/ThreadGroup;)Ljava/lang/Thread;
  (JLjava/lang/ThreadGroup;)Ljava/lang/Thread;
 findThreadGroups
+ (Ljava/lang/ThreadGroup;ZLjava/util/function/Predicate<Ljava/lang/ThreadGroup;>;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
+ (Ljava/lang/ThreadGroup;ZLjava/util/function/Predicate<Ljava/lang/ThreadGroup;>;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
+findThreadGroups
  (Ljava/lang/ThreadGroup;ZLorg/apache/commons/lang3/ThreadUtils$ThreadGroupPredicate;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
  (Ljava/lang/ThreadGroup;ZLorg/apache/commons/lang3/ThreadUtils$ThreadGroupPredicate;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
+findThreadGroups
+ (Ljava/util/function/Predicate<Ljava/lang/ThreadGroup;>;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
+ (Ljava/util/function/Predicate<Ljava/lang/ThreadGroup;>;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
 findThreadGroups
  (Lorg/apache/commons/lang3/ThreadUtils$ThreadGroupPredicate;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
  (Lorg/apache/commons/lang3/ThreadUtils$ThreadGroupPredicate;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
@@ -23,8 +29,14 @@ findThreadGroupsByName
  (Ljava/lang/String;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
  (Ljava/lang/String;)Ljava/util/Collection<Ljava/lang/ThreadGroup;>;
 findThreads
+ (Ljava/lang/ThreadGroup;ZLjava/util/function/Predicate<Ljava/lang/Thread;>;)Ljava/util/Collection<Ljava/lang/Thread;>;
+ (Ljava/lang/ThreadGroup;ZLjava/util/function/Predicate<Ljava/lang/Thread;>;)Ljava/util/Collection<Ljava/lang/Thread;>;
+findThreads
  (Ljava/lang/ThreadGroup;ZLorg/apache/commons/lang3/ThreadUtils$ThreadPredicate;)Ljava/util/Collection<Ljava/lang/Thread;>;
  (Ljava/lang/ThreadGroup;ZLorg/apache/commons/lang3/ThreadUtils$ThreadPredicate;)Ljava/util/Collection<Ljava/lang/Thread;>;
+findThreads
+ (Ljava/util/function/Predicate<Ljava/lang/Thread;>;)Ljava/util/Collection<Ljava/lang/Thread;>;
+ (Ljava/util/function/Predicate<Ljava/lang/Thread;>;)Ljava/util/Collection<Ljava/lang/Thread;>;
 findThreads
  (Lorg/apache/commons/lang3/ThreadUtils$ThreadPredicate;)Ljava/util/Collection<Ljava/lang/Thread;>;
  (Lorg/apache/commons/lang3/ThreadUtils$ThreadPredicate;)Ljava/util/Collection<Ljava/lang/Thread;>;
@@ -50,5 +62,8 @@ join
  (Ljava/lang/Thread;Ljava/time/Duration;)V
  (Ljava/lang/Thread;Ljava/time/Duration;)V
 sleep
+ (Ljava/time/Duration;)V
+ (Ljava/time/Duration;)V
+sleepQuietly
  (Ljava/time/Duration;)V
  (Ljava/time/Duration;)V

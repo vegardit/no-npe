@@ -28,6 +28,9 @@ and
 booleanValues
  ()[Ljava/lang/Boolean;
  ()[Ljava/lang/Boolean;
+forEach
+ (Ljava/util/function/Consumer<Ljava/lang/Boolean;>;)V
+ (Ljava/util/function/Consumer<Ljava/lang/Boolean;>;)V
 isFalse
  (Ljava/lang/Boolean;)Z
  (Ljava/lang/Boolean;)Z
@@ -43,6 +46,12 @@ isTrue
 negate
  (Ljava/lang/Boolean;)Ljava/lang/Boolean;
  (Ljava/lang/Boolean;)Ljava/lang/Boolean;
+oneHot
+ ([Ljava/lang/Boolean;)Ljava/lang/Boolean;
+ ([Ljava/lang/Boolean;)Ljava/lang/Boolean;
+oneHot
+ ([Z)Z
+ ([Z)Z
 or
  ([Ljava/lang/Boolean;)Ljava/lang/Boolean;
  ([Ljava/lang/Boolean;)Ljava/lang/Boolean;
@@ -124,6 +133,9 @@ toStringYesNo
 toStringYesNo
  (Z)Ljava/lang/String;
  (Z)Ljava/lang/String;
+values
+ ()Ljava/util/List<Ljava/lang/Boolean;>;
+ ()Ljava/util/List<Ljava/lang/Boolean;>;
 xor
  ([Ljava/lang/Boolean;)Ljava/lang/Boolean;
  ([Ljava/lang/Boolean;)Ljava/lang/Boolean;

@@ -6,9 +6,21 @@ accept
 getNanosOfMiili
  (Ljava/time/Duration;)I
  (Ljava/time/Duration;)I
+getNanosOfMilli
+ (Ljava/time/Duration;)I
+ (Ljava/time/Duration;)I
 isPositive
  (Ljava/time/Duration;)Z
  (Ljava/time/Duration;)Z
+of
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableConsumer<Ljava/time/Instant;TE;>;)Ljava/time/Duration;^TE;
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableConsumer<Ljava/time/Instant;TE;>;)Ljava/time/Duration;^TE;
+of
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableRunnable<TE;>;)Ljava/time/Duration;^TE;
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableRunnable<TE;>;)Ljava/time/Duration;^TE;
+since
+ (Ljava/time/temporal/Temporal;)Ljava/time/Duration;
+ (Ljava/time/temporal/Temporal;)Ljava/time/Duration;
 toDuration
  (JLjava/util/concurrent/TimeUnit;)Ljava/time/Duration;
  (JLjava/util/concurrent/TimeUnit;)Ljava/time/Duration;

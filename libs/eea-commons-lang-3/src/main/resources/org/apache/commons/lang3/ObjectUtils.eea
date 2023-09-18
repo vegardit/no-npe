@@ -40,6 +40,9 @@ equals
 firstNonNull
  <T:Ljava/lang/Object;>([TT;)TT;
  <T:Ljava/lang/Object;>([TT;)TT;
+getClass
+ <T:Ljava/lang/Object;>(TT;)Ljava/lang/Class<TT;>;
+ <T:Ljava/lang/Object;>(TT;)Ljava/lang/Class<TT;>;
 getFirstNonNull
  <T:Ljava/lang/Object;>([Ljava/util/function/Supplier<TT;>;)TT;
  <T:Ljava/lang/Object;>([Ljava/util/function/Supplier<TT;>;)TT;
@@ -49,9 +52,15 @@ getIfNull
 hashCode
  (Ljava/lang/Object;)I
  (Ljava/lang/Object;)I
+hashCodeHex
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
 hashCodeMulti
  ([Ljava/lang/Object;)I
  ([Ljava/lang/Object;)I
+identityHashCodeHex
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
 identityToString
  (Ljava/lang/Appendable;Ljava/lang/Object;)V
  (Ljava/lang/Appendable;Ljava/lang/Object;)V
@@ -67,6 +76,9 @@ identityToString
 identityToString
  (Lorg/apache/commons/lang3/text/StrBuilder;Ljava/lang/Object;)V
  (Lorg/apache/commons/lang3/text/StrBuilder;Ljava/lang/Object;)V
+isArray
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
 isEmpty
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z

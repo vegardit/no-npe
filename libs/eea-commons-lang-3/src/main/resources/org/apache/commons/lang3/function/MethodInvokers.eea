@@ -1,0 +1,29 @@
+class org/apache/commons/lang3/function/MethodInvokers
+
+asBiConsumer
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Ljava/util/function/BiConsumer<TT;TU;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Ljava/util/function/BiConsumer<TT;TU;>;
+asBiFunction
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Ljava/util/function/BiFunction<TT;TU;TR;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Ljava/util/function/BiFunction<TT;TU;TR;>;
+asFailableBiConsumer
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Lorg/apache/commons/lang3/function/FailableBiConsumer<TT;TU;Ljava/lang/Throwable;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Lorg/apache/commons/lang3/function/FailableBiConsumer<TT;TU;Ljava/lang/Throwable;>;
+asFailableBiFunction
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Lorg/apache/commons/lang3/function/FailableBiFunction<TT;TU;TR;Ljava/lang/Throwable;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Lorg/apache/commons/lang3/function/FailableBiFunction<TT;TU;TR;Ljava/lang/Throwable;>;
+asFailableFunction
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Lorg/apache/commons/lang3/function/FailableFunction<TT;TR;Ljava/lang/Throwable;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Lorg/apache/commons/lang3/function/FailableFunction<TT;TR;Ljava/lang/Throwable;>;
+asFailableSupplier
+ <R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Lorg/apache/commons/lang3/function/FailableSupplier<TR;Ljava/lang/Throwable;>;
+ <R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Lorg/apache/commons/lang3/function/FailableSupplier<TR;Ljava/lang/Throwable;>;
+asFunction
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Ljava/util/function/Function<TT;TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Ljava/util/function/Function<TT;TR;>;
+asInterfaceInstance
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/reflect/Method;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/reflect/Method;)TT;
+asSupplier
+ <R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Ljava/util/function/Supplier<TR;>;
+ <R:Ljava/lang/Object;>(Ljava/lang/reflect/Method;)Ljava/util/function/Supplier<TR;>;

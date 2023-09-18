@@ -1,5 +1,8 @@
 class org/apache/commons/lang3/exception/ExceptionUtils
 
+forEach
+ (Ljava/lang/Throwable;Ljava/util/function/Consumer<Ljava/lang/Throwable;>;)V
+ (Ljava/lang/Throwable;Ljava/util/function/Consumer<Ljava/lang/Throwable;>;)V
 getCause
  (Ljava/lang/Throwable;)Ljava/lang/Throwable;
  (Ljava/lang/Throwable;)Ljava/lang/Throwable;
@@ -21,6 +24,9 @@ getRootCauseMessage
 getRootCauseStackTrace
  (Ljava/lang/Throwable;)[Ljava/lang/String;
  (Ljava/lang/Throwable;)[Ljava/lang/String;
+getRootCauseStackTraceList
+ (Ljava/lang/Throwable;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/Throwable;)Ljava/util/List<Ljava/lang/String;>;
 getStackFrames
  (Ljava/lang/Throwable;)[Ljava/lang/String;
  (Ljava/lang/Throwable;)[Ljava/lang/String;
@@ -51,6 +57,12 @@ indexOfType
 indexOfType
  (Ljava/lang/Throwable;Ljava/lang/Class<+Ljava/lang/Throwable;>;I)I
  (Ljava/lang/Throwable;Ljava/lang/Class<+Ljava/lang/Throwable;>;I)I
+isChecked
+ (Ljava/lang/Throwable;)Z
+ (Ljava/lang/Throwable;)Z
+isUnchecked
+ (Ljava/lang/Throwable;)Z
+ (Ljava/lang/Throwable;)Z
 printRootCauseStackTrace
  (Ljava/lang/Throwable;)V
  (Ljava/lang/Throwable;)V
@@ -66,6 +78,12 @@ removeCommonFrames
 rethrow
  <R:Ljava/lang/Object;>(Ljava/lang/Throwable;)TR;
  <R:Ljava/lang/Object;>(Ljava/lang/Throwable;)TR;
+stream
+ (Ljava/lang/Throwable;)Ljava/util/stream/Stream<Ljava/lang/Throwable;>;
+ (Ljava/lang/Throwable;)Ljava/util/stream/Stream<Ljava/lang/Throwable;>;
+throwUnchecked
+ <T:Ljava/lang/Object;>(TT;)TT;
+ <T:Ljava/lang/Object;>(TT;)TT;
 throwableOfThrowable
  <T:Ljava/lang/Throwable;>(Ljava/lang/Throwable;Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Throwable;>(Ljava/lang/Throwable;Ljava/lang/Class<TT;>;)TT;

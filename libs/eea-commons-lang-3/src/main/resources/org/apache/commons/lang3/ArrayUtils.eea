@@ -235,12 +235,18 @@ contains
 contains
  ([ZZ)Z
  ([ZZ)Z
+containsAny
+ ([Ljava/lang/Object;[Ljava/lang/Object;)Z
+ ([Ljava/lang/Object;[Ljava/lang/Object;)Z
 get
  <T:Ljava/lang/Object;>([TT;I)TT;
  <T:Ljava/lang/Object;>([TT;I)TT;
 get
  <T:Ljava/lang/Object;>([TT;ITT;)TT;
  <T:Ljava/lang/Object;>([TT;ITT;)TT;
+getComponentType
+ <T:Ljava/lang/Object;>([TT;)Ljava/lang/Class<TT;>;
+ <T:Ljava/lang/Object;>([TT;)Ljava/lang/Class<TT;>;
 getLength
  (Ljava/lang/Object;)I
  (Ljava/lang/Object;)I
@@ -577,6 +583,9 @@ lastIndexOf
 lastIndexOf
  ([ZZI)I
  ([ZZI)I
+newInstance
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;I)[TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;I)[TT;
 nullToEmpty
  ([B)[B
  ([B)[B
@@ -853,6 +862,12 @@ reverse
 reverse
  ([ZII)V
  ([ZII)V
+setAll
+ <T:Ljava/lang/Object;>([TT;Ljava/util/function/IntFunction<+TT;>;)[TT;
+ <T:Ljava/lang/Object;>([TT;Ljava/util/function/IntFunction<+TT;>;)[TT;
+setAll
+ <T:Ljava/lang/Object;>([TT;Ljava/util/function/Supplier<+TT;>;)[TT;
+ <T:Ljava/lang/Object;>([TT;Ljava/util/function/Supplier<+TT;>;)[TT;
 shift
  ([BI)V
  ([BI)V

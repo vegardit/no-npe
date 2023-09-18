@@ -7,6 +7,9 @@ PACKAGE_SEPARATOR
  Ljava/lang/String;
  L1java/lang/String;
 
+comparator
+ ()Ljava/util/Comparator<Ljava/lang/Class<*>;>;
+ ()Ljava/util/Comparator<Ljava/lang/Class<*>;>;
 convertClassNamesToClasses
  (Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/Class<*>;>;
  (Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/Class<*>;>;
@@ -49,6 +52,9 @@ getClass
 getClass
  (Ljava/lang/String;Z)Ljava/lang/Class<*>;
  (Ljava/lang/String;Z)Ljava/lang/Class<*>;
+getComponentType
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<[TT;>;)Ljava/lang/Class<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<[TT;>;)Ljava/lang/Class<TT;>;
 getName
  (Ljava/lang/Class<*>;)Ljava/lang/String;
  (Ljava/lang/Class<*>;)Ljava/lang/String;
@@ -137,6 +143,9 @@ isPrimitiveOrWrapper
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z
 isPrimitiveWrapper
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+isPublic
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z
 primitiveToWrapper

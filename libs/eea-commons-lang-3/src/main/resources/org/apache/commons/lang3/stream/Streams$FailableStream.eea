@@ -1,33 +1,33 @@
 class org/apache/commons/lang3/stream/Streams$FailableStream
- <O:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
 
 <init>
- (Ljava/util/stream/Stream<TO;>;)V
- (Ljava/util/stream/Stream<TO;>;)V
+ (Ljava/util/stream/Stream<TT;>;)V
+ (Ljava/util/stream/Stream<TT;>;)V
 allMatch
- (Lorg/apache/commons/lang3/function/FailablePredicate<TO;*>;)Z
- (Lorg/apache/commons/lang3/function/FailablePredicate<TO;*>;)Z
+ (Lorg/apache/commons/lang3/function/FailablePredicate<TT;*>;)Z
+ (Lorg/apache/commons/lang3/function/FailablePredicate<TT;*>;)Z
 anyMatch
- (Lorg/apache/commons/lang3/function/FailablePredicate<TO;*>;)Z
- (Lorg/apache/commons/lang3/function/FailablePredicate<TO;*>;)Z
+ (Lorg/apache/commons/lang3/function/FailablePredicate<TT;*>;)Z
+ (Lorg/apache/commons/lang3/function/FailablePredicate<TT;*>;)Z
 collect
- <A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TR;>;Ljava/util/function/BiConsumer<TR;-TO;>;Ljava/util/function/BiConsumer<TR;TR;>;)TR;
- <A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TR;>;Ljava/util/function/BiConsumer<TR;-TO;>;Ljava/util/function/BiConsumer<TR;TR;>;)TR;
+ <A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TR;>;Ljava/util/function/BiConsumer<TR;-TT;>;Ljava/util/function/BiConsumer<TR;TR;>;)TR;
+ <A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TR;>;Ljava/util/function/BiConsumer<TR;-TT;>;Ljava/util/function/BiConsumer<TR;TR;>;)TR;
 collect
- <A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Collector<-TO;TA;TR;>;)TR;
- <A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Collector<-TO;TA;TR;>;)TR;
+ <A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Collector<-TT;TA;TR;>;)TR;
+ <A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Collector<-TT;TA;TR;>;)TR;
 filter
- (Lorg/apache/commons/lang3/function/FailablePredicate<TO;*>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TO;>;
- (Lorg/apache/commons/lang3/function/FailablePredicate<TO;*>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TO;>;
+ (Lorg/apache/commons/lang3/function/FailablePredicate<TT;*>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TT;>;
+ (Lorg/apache/commons/lang3/function/FailablePredicate<TT;*>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TT;>;
 forEach
- (Lorg/apache/commons/lang3/function/FailableConsumer<TO;*>;)V
- (Lorg/apache/commons/lang3/function/FailableConsumer<TO;*>;)V
+ (Lorg/apache/commons/lang3/function/FailableConsumer<TT;*>;)V
+ (Lorg/apache/commons/lang3/function/FailableConsumer<TT;*>;)V
 map
- <R:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableFunction<TO;TR;*>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TR;>;
- <R:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableFunction<TO;TR;*>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TR;>;
+ <R:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableFunction<TT;TR;*>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TR;>;
+ <R:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableFunction<TT;TR;*>;)Lorg/apache/commons/lang3/stream/Streams$FailableStream<TR;>;
 reduce
- (TO;Ljava/util/function/BinaryOperator<TO;>;)TO;
- (TO;Ljava/util/function/BinaryOperator<TO;>;)TO;
+ (TT;Ljava/util/function/BinaryOperator<TT;>;)TT;
+ (TT;Ljava/util/function/BinaryOperator<TT;>;)TT;
 stream
- ()Ljava/util/stream/Stream<TO;>;
- ()Ljava/util/stream/Stream<TO;>;
+ ()Ljava/util/stream/Stream<TT;>;
+ ()Ljava/util/stream/Stream<TT;>;

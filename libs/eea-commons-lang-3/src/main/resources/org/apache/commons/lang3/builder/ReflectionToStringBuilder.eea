@@ -24,8 +24,17 @@ toStringExclude
 toStringExclude
  (Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/String;
  (L0java/lang/Object;[Ljava/lang/String;)L1java/lang/String;
+toStringInclude
+ (Ljava/lang/Object;Ljava/util/Collection<Ljava/lang/String;>;)Ljava/lang/String;
+ (Ljava/lang/Object;Ljava/util/Collection<Ljava/lang/String;>;)Ljava/lang/String;
+toStringInclude
+ (Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/String;
 
 excludeFieldNames
+ [Ljava/lang/String;
+ [Ljava/lang/String;
+includeFieldNames
  [Ljava/lang/String;
  [Ljava/lang/String;
 
@@ -53,6 +62,9 @@ appendFieldsIn
 getExcludeFieldNames
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
+getIncludeFieldNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
 getUpToClass
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
@@ -63,6 +75,9 @@ reflectionAppendArray
  (Ljava/lang/Object;)Lorg/apache/commons/lang3/builder/ReflectionToStringBuilder;
  (Ljava/lang/Object;)Lorg/apache/commons/lang3/builder/ReflectionToStringBuilder;
 setExcludeFieldNames
+ ([Ljava/lang/String;)Lorg/apache/commons/lang3/builder/ReflectionToStringBuilder;
+ ([Ljava/lang/String;)Lorg/apache/commons/lang3/builder/ReflectionToStringBuilder;
+setIncludeFieldNames
  ([Ljava/lang/String;)Lorg/apache/commons/lang3/builder/ReflectionToStringBuilder;
  ([Ljava/lang/String;)Lorg/apache/commons/lang3/builder/ReflectionToStringBuilder;
 setUpToClass
