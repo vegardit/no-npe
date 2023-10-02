@@ -1,0 +1,42 @@
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+# https://docs.github.com/en/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions#approve-a-pull-request
+# https://github.com/dependabot/fetch-metadata/#enabling-auto-merge
+name: Dependabot auto-merge
+on: pull_request_target
+
+permissions:
+  contents: write
+  pull-requests: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  dependabot:
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Dependabot metadata
+      id: metadata
+      uses: dependabot/fetch-metadata@v1 # https://github.com/dependabot/fetch-metadata/
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+    - name: Enable auto-merge for Dependabot PRs
+      if: |
+        ${{
+          (
+            steps.dependabot-metadata.outputs.package-ecosystem == 'github-actions' && 
+            steps.metadata.outputs.update-type == 'version-update:semver-major'
+          ) || (
+            steps.dependabot-metadata.outputs.package-ecosystem == 'maven' && 
+            steps.metadata.outputs.update-type == 'version-update:semver-minor'
+          )
+        }}
+      run: |
+        gh pr merge --auto --merge "$PR_URL"
+      env:
+        PR_URL: ${{github.event.pull_request.html_url}}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
