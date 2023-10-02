@@ -3,6 +3,9 @@ class org/eclipse/jface/viewers/ColumnViewer
 createViewerEditor
  ()Lorg/eclipse/jface/viewers/ColumnViewerEditor;
  ()Lorg/eclipse/jface/viewers/ColumnViewerEditor;
+disassociate
+ (Lorg/eclipse/swt/widgets/Item;)V
+ (Lorg/eclipse/swt/widgets/Item;)V
 editElement
  (Ljava/lang/Object;I)V
  (Ljava/lang/Object;I)V
@@ -36,6 +39,9 @@ getLabelProvider
 getRawChildren
  (Ljava/lang/Object;)[Ljava/lang/Object;
  (Ljava/lang/Object;)[Ljava/lang/Object;
+getSortedChildren
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
 getViewerRow
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/jface/viewers/ViewerRow;
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/jface/viewers/ViewerRow;
@@ -45,12 +51,18 @@ getViewerRowFromItem
 handleDispose
  (Lorg/eclipse/swt/events/DisposeEvent;)V
  (Lorg/eclipse/swt/events/DisposeEvent;)V
+handleDoubleSelect
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (Lorg/eclipse/swt/events/SelectionEvent;)V
 hookControl
  (Lorg/eclipse/swt/widgets/Control;)V
  (Lorg/eclipse/swt/widgets/Control;)V
 hookEditingSupport
  (Lorg/eclipse/swt/widgets/Control;)V
  (Lorg/eclipse/swt/widgets/Control;)V
+isExpandableNode
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
 refresh
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
