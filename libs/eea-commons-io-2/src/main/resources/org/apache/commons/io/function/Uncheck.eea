@@ -27,9 +27,27 @@ compare
 get
  <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOSupplier<TT;>;)TT;
  <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOSupplier<TT;>;)TT;
+get
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOSupplier<TT;>;Ljava/util/function/Supplier<Ljava/lang/String;>;)TT;
+ <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOSupplier<TT;>;Ljava/util/function/Supplier<Ljava/lang/String;>;)TT;
+getAsInt
+ (Lorg/apache/commons/io/function/IOIntSupplier;)I
+ (Lorg/apache/commons/io/function/IOIntSupplier;)I
+getAsInt
+ (Lorg/apache/commons/io/function/IOIntSupplier;Ljava/util/function/Supplier<Ljava/lang/String;>;)I
+ (Lorg/apache/commons/io/function/IOIntSupplier;Ljava/util/function/Supplier<Ljava/lang/String;>;)I
+getAsLong
+ (Lorg/apache/commons/io/function/IOLongSupplier;)J
+ (Lorg/apache/commons/io/function/IOLongSupplier;)J
+getAsLong
+ (Lorg/apache/commons/io/function/IOLongSupplier;Ljava/util/function/Supplier<Ljava/lang/String;>;)J
+ (Lorg/apache/commons/io/function/IOLongSupplier;Ljava/util/function/Supplier<Ljava/lang/String;>;)J
 run
  (Lorg/apache/commons/io/function/IORunnable;)V
  (Lorg/apache/commons/io/function/IORunnable;)V
+run
+ (Lorg/apache/commons/io/function/IORunnable;Ljava/util/function/Supplier<Ljava/lang/String;>;)V
+ (Lorg/apache/commons/io/function/IORunnable;Ljava/util/function/Supplier<Ljava/lang/String;>;)V
 test
  <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOPredicate<TT;>;TT;)Z
  <T:Ljava/lang/Object;>(Lorg/apache/commons/io/function/IOPredicate<TT;>;TT;)Z
