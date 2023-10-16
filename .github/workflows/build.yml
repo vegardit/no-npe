@@ -141,3 +141,37 @@ jobs:
           git commit -am "Deploy snapshot version"
           git push origin mvn-snapshots-repo --force
         fi
+
+
+  dependabot-pr-auto-merge:
+    needs: build
+    if: ${{ github.event_name == 'pull_request' && github.actor == 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+    - name: Dependabot metadata
+      id: metadata
+      uses: dependabot/fetch-metadata@v1 # https://github.com/dependabot/fetch-metadata/
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+    - name: Enable auto-merge for Dependabot PRs
+      if: |
+        ${{
+          (
+            steps.dependabot-metadata.outputs.package-ecosystem == 'github-actions' && 
+            steps.metadata.outputs.update-type == 'version-update:semver-major'
+          ) || (
+            steps.dependabot-metadata.outputs.package-ecosystem == 'maven' && 
+            steps.metadata.outputs.update-type == 'version-update:semver-minor'
+          )
+        }}
+      run: |
+        gh pr merge --auto --rebase "$PR_URL"
+      env:
+        PR_URL: ${{github.event.pull_request.html_url}}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
