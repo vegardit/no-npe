@@ -9,7 +9,7 @@ name: Build
 on:
   push:
     branches-ignore: # build all branches except:
-      - 'dependabot/**' # prevent GHA triggered twice (once for commit to the branch and once for opening/syncing the PR)
+    - 'dependabot/**' # prevent GHA triggered twice (once for commit to the branch and once for opening/syncing the PR)
     tags-ignore: # don't build tags
     - '**'
     paths-ignore:
@@ -35,6 +35,9 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: ci-${{ github.ref }}
     steps:
+    - name: Show environment variables
+      run: env | sort
+
     - name: Git Checkout
       uses: actions/checkout@v4 # https://github.com/actions/checkout
 
@@ -44,7 +47,7 @@ jobs:
         distribution: temurin
         java-version: 11
     - run: echo "JAVA11_HOME=$JAVA_HOME" >> $GITHUB_ENV
-    
+
     - name: Set up JDK 17
       uses: actions/setup-java@v3 # https://github.com/actions/setup-java
       with:
@@ -69,12 +72,12 @@ jobs:
 
     - name: Test with Maven
       id: maven-test
-      if: ${{ github.ref != 'refs/heads/main' }}
+      if: ${{ github.ref_name != 'main' }}
       run: |
         bash .ci/build.sh ${{ github.event.inputs.additional_maven_args }}
 
     - name: Prepare Maven Snapshots Repo
-      if: github.ref == 'refs/heads/main'
+      if: ${{ github.ref_name == 'main' }}
       run: |
         set -eux
 
@@ -112,7 +115,7 @@ jobs:
 
     - name: Build with Maven
       id: maven-build
-      if: ${{ github.ref == 'refs/heads/main' }}
+      if: ${{ github.ref_name == 'main' }}
       env:
         MAY_CREATE_RELEASE: true
         SIGN_KEY: ${{ secrets.GPG_SIGN_KEY }}
@@ -130,7 +133,7 @@ jobs:
           -DaltSnapshotDeploymentRepository=temp-snapshots-repo::default::file:///tmp/mvn-snapshots-repo
 
     - name: Update Maven Snapshots Repo
-      if: github.ref == 'refs/heads/main'
+      if: ${{ github.ref_name == 'main' }}
       run: |
         cd /tmp/mvn-snapshots-repo
         if [[ $(git -C . ls-files -o -m -d --exclude-standard | wc -l) -gt 0 ]]; then
