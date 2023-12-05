@@ -88,11 +88,23 @@ getFormatWriteFeatureType
  ()Ljava/lang/Class<+Lcom/fasterxml/jackson/core/FormatFeature;>;
  ()Ljava/lang/Class<+Lcom/fasterxml/jackson/core/FormatFeature;>;
 isEnabled
+ (Lcom/fasterxml/jackson/core/JsonFactory$Feature;)Z
+ (Lcom/fasterxml/jackson/core/JsonFactory$Feature;)Z
+isEnabled
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Z
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Z
 isEnabled
  (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Z
  (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Z
+isEnabled
+ (Lcom/fasterxml/jackson/core/StreamReadFeature;)Z
+ (Lcom/fasterxml/jackson/core/StreamReadFeature;)Z
+isEnabled
+ (Lcom/fasterxml/jackson/core/StreamWriteFeature;)Z
+ (Lcom/fasterxml/jackson/core/StreamWriteFeature;)Z
 streamReadConstraints
  ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
  ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
+streamWriteConstraints
+ ()Lcom/fasterxml/jackson/core/StreamWriteConstraints;
+ ()Lcom/fasterxml/jackson/core/StreamWriteConstraints;

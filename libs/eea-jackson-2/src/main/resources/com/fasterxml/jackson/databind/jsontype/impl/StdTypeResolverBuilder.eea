@@ -1,5 +1,8 @@
 class com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder
 
+_propName
+ (Ljava/lang/String;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;)Ljava/lang/String;
+ (Ljava/lang/String;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;)Ljava/lang/String;
 noTypeInfoBuilder
  ()Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;
  ()Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;
@@ -16,6 +19,9 @@ _idType
 _includeAs
  Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;
  Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;
+_requireTypeIdForSubtypes
+ Ljava/lang/Boolean;
+ Ljava/lang/Boolean;
 _typeProperty
  Ljava/lang/String;
  Ljava/lang/String;
@@ -23,6 +29,9 @@ _typeProperty
 <init>
  (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;Ljava/lang/String;)V
  (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;Ljava/lang/String;)V
+<init>
+ (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;)V
+ (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;)V
 <init>
  (Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;Ljava/lang/Class<*>;)V
  (Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;Ljava/lang/Class<*>;)V
@@ -62,6 +71,9 @@ inclusion
 init
  (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;)Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;
  (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;)Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;
+init
+ (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;)Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;
+ (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;)Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;
 reportInvalidBaseType
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;
@@ -80,3 +92,6 @@ verifyBaseTypeValidity
 withDefaultImpl
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;
+withSettings
+ (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;)Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;
+ (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;)Lcom/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuilder;

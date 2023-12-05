@@ -21,6 +21,12 @@ getForwardedHeaderTransformer
 getLocaleContextResolver
  ()Lorg/springframework/web/server/i18n/LocaleContextResolver;
  ()Lorg/springframework/web/server/i18n/LocaleContextResolver;
+getObservationConvention
+ ()Lorg/springframework/http/server/reactive/observation/ServerRequestObservationConvention;
+ ()Lorg/springframework/http/server/reactive/observation/ServerRequestObservationConvention;
+getObservationRegistry
+ ()Lio/micrometer/observation/ObservationRegistry;
+ ()Lio/micrometer/observation/ObservationRegistry;
 getSessionManager
  ()Lorg/springframework/web/server/session/WebSessionManager;
  ()Lorg/springframework/web/server/session/WebSessionManager;
@@ -39,6 +45,12 @@ setForwardedHeaderTransformer
 setLocaleContextResolver
  (Lorg/springframework/web/server/i18n/LocaleContextResolver;)V
  (Lorg/springframework/web/server/i18n/LocaleContextResolver;)V
+setObservationConvention
+ (Lorg/springframework/http/server/reactive/observation/ServerRequestObservationConvention;)V
+ (Lorg/springframework/http/server/reactive/observation/ServerRequestObservationConvention;)V
+setObservationRegistry
+ (Lio/micrometer/observation/ObservationRegistry;)V
+ (Lio/micrometer/observation/ObservationRegistry;)V
 setSessionManager
  (Lorg/springframework/web/server/session/WebSessionManager;)V
  (Lorg/springframework/web/server/session/WebSessionManager;)V

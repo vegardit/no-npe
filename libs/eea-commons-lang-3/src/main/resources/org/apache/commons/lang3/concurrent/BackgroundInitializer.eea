@@ -1,6 +1,10 @@
 class org/apache/commons/lang3/concurrent/BackgroundInitializer
  <T:Ljava/lang/Object;>
 
+builder
+ <T:Ljava/lang/Object;>()Lorg/apache/commons/lang3/concurrent/BackgroundInitializer$Builder<Lorg/apache/commons/lang3/concurrent/BackgroundInitializer<TT;>;TT;>;
+ <T:Ljava/lang/Object;>()Lorg/apache/commons/lang3/concurrent/BackgroundInitializer$Builder<Lorg/apache/commons/lang3/concurrent/BackgroundInitializer<TT;>;TT;>;
+
 <init>
  (Ljava/util/concurrent/ExecutorService;)V
  (Ljava/util/concurrent/ExecutorService;)V
@@ -16,9 +20,9 @@ getExternalExecutor
 getFuture
  ()Ljava/util/concurrent/Future<TT;>;
  ()Ljava/util/concurrent/Future<TT;>;
-initialize
- ()TT;
- ()TT;
+getTypedException
+ (Ljava/lang/Exception;)Ljava/lang/Exception;
+ (Ljava/lang/Exception;)Ljava/lang/Exception;
 setExternalExecutor
  (Ljava/util/concurrent/ExecutorService;)V
  (Ljava/util/concurrent/ExecutorService;)V

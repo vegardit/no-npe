@@ -6,3 +6,6 @@ class org/springframework/test/web/servlet/client/MockMvcHttpConnector
 connect
  (Lorg/springframework/http/HttpMethod;Ljava/net/URI;Ljava/util/function/Function<-Lorg/springframework/http/client/reactive/ClientHttpRequest;Lreactor/core/publisher/Mono<Ljava/lang/Void;>;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/client/reactive/ClientHttpResponse;>;
  (Lorg/springframework/http/HttpMethod;Ljava/net/URI;Ljava/util/function/Function<-Lorg/springframework/http/client/reactive/ClientHttpRequest;Lreactor/core/publisher/Mono<Ljava/lang/Void;>;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/client/reactive/ClientHttpResponse;>;
+with
+ (Ljava/util/List<Lorg/springframework/test/web/servlet/request/RequestPostProcessor;>;)Lorg/springframework/test/web/servlet/client/MockMvcHttpConnector;
+ (Ljava/util/List<Lorg/springframework/test/web/servlet/request/RequestPostProcessor;>;)Lorg/springframework/test/web/servlet/client/MockMvcHttpConnector;

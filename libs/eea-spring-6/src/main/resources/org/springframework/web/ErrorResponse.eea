@@ -3,6 +3,9 @@ class org/springframework/web/ErrorResponse
 builder
  (Ljava/lang/Throwable;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;)Lorg/springframework/web/ErrorResponse$Builder;
  (Ljava/lang/Throwable;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;)Lorg/springframework/web/ErrorResponse$Builder;
+builder
+ (Ljava/lang/Throwable;Lorg/springframework/http/ProblemDetail;)Lorg/springframework/web/ErrorResponse$Builder;
+ (Ljava/lang/Throwable;Lorg/springframework/http/ProblemDetail;)Lorg/springframework/web/ErrorResponse$Builder;
 create
  (Ljava/lang/Throwable;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;)Lorg/springframework/web/ErrorResponse;
  (Ljava/lang/Throwable;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;)Lorg/springframework/web/ErrorResponse;
@@ -10,6 +13,9 @@ getDefaultDetailMessageCode
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/String;
 getDefaultTitleMessageCode
+ (Ljava/lang/Class<*>;)Ljava/lang/String;
+ (Ljava/lang/Class<*>;)Ljava/lang/String;
+getDefaultTypeMessageCode
  (Ljava/lang/Class<*>;)Ljava/lang/String;
  (Ljava/lang/Class<*>;)Ljava/lang/String;
 
@@ -32,6 +38,9 @@ getStatusCode
  ()Lorg/springframework/http/HttpStatusCode;
  ()Lorg/springframework/http/HttpStatusCode;
 getTitleMessageCode
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTypeMessageCode
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 updateAndGetBody

@@ -16,6 +16,9 @@ _seenObjectIds
 <init>
  (Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;)V
  (Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;)V
+<init>
+ (Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)V
+ (Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)V
 _createObjectIdMap
  ()Ljava/util/Map<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;>;
  ()Ljava/util/Map<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;>;
@@ -64,3 +67,6 @@ serializeValue
 serializerInstance
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;
+withCaches
+ (Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;
+ (Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;

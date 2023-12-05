@@ -10,9 +10,15 @@ buildMessage
 doTranslate
  (Ljava/lang/String;Ljava/lang/String;Ljava/sql/SQLException;)Lorg/springframework/dao/DataAccessException;
  (Ljava/lang/String;Ljava/lang/String;Ljava/sql/SQLException;)L0org/springframework/dao/DataAccessException;
+getCustomTranslator
+ ()Lorg/springframework/jdbc/support/SQLExceptionTranslator;
+ ()L0org/springframework/jdbc/support/SQLExceptionTranslator;
 getFallbackTranslator
  ()Lorg/springframework/jdbc/support/SQLExceptionTranslator;
  ()L0org/springframework/jdbc/support/SQLExceptionTranslator;
+setCustomTranslator
+ (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
+ (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
 setFallbackTranslator
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V

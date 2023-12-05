@@ -48,6 +48,9 @@ findCreatorBinding
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;
 findDefaultEnumValue
+ (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;[Ljava/lang/Enum<*>;)Ljava/lang/Enum<*>;
+ (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;[Ljava/lang/Enum<*>;)Ljava/lang/Enum<*>;
+findDefaultEnumValue
  (Ljava/lang/Class<Ljava/lang/Enum<*>;>;)Ljava/lang/Enum<*>;
  (Ljava/lang/Class<Ljava/lang/Enum<*>;>;)Ljava/lang/Enum<*>;
 findDeserializationContentConverter
@@ -60,6 +63,9 @@ findDeserializer
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;
 findEnumAliases
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;[Ljava/lang/Enum<*>;[[Ljava/lang/String;)V
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;[Ljava/lang/Enum<*>;[[Ljava/lang/String;)V
+findEnumAliases
  (Ljava/lang/Class<*>;[Ljava/lang/Enum<*>;[[Ljava/lang/String;)V
  (Ljava/lang/Class<*>;[Ljava/lang/Enum<*>;[[Ljava/lang/String;)V
 findEnumNamingStrategy
@@ -68,6 +74,9 @@ findEnumNamingStrategy
 findEnumValue
  (Ljava/lang/Enum<*>;)Ljava/lang/String;
  (Ljava/lang/Enum<*>;)Ljava/lang/String;
+findEnumValues
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String;
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String;
 findEnumValues
  (Ljava/lang/Class<*>;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String;
  (Ljava/lang/Class<*>;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String;
@@ -122,6 +131,9 @@ findPOJOBuilder
 findPOJOBuilderConfig
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Lcom/fasterxml/jackson/databind/annotation/JsonPOJOBuilder$Value;
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Lcom/fasterxml/jackson/databind/annotation/JsonPOJOBuilder$Value;
+findPolymorphicTypeInfo
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;
 findPropertiesToIgnore
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Z)[Ljava/lang/String;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Z)[Ljava/lang/String;

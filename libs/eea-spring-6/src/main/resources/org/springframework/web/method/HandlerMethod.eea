@@ -4,13 +4,6 @@ logger
  Lorg/apache/commons/logging/Log;
  L1org/apache/commons/logging/Log;
 
-findProvidedArgument
- (Lorg/springframework/core/MethodParameter;[Ljava/lang/Object;)Ljava/lang/Object;
- (Lorg/springframework/core/MethodParameter;[Ljava/lang/Object;)L0java/lang/Object;
-formatArgumentError
- (Lorg/springframework/core/MethodParameter;Ljava/lang/String;)Ljava/lang/String;
- (Lorg/springframework/core/MethodParameter;Ljava/lang/String;)Ljava/lang/String;
-
 <init>
  (Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class<*>;)V
  (Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class<*>;)V
@@ -47,18 +40,9 @@ getBean
 getBeanType
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
-getBridgedMethod
- ()Ljava/lang/reflect/Method;
- ()Ljava/lang/reflect/Method;
-getMethod
- ()Ljava/lang/reflect/Method;
- ()Ljava/lang/reflect/Method;
-getMethodAnnotation
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)TA;
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)T0A;
-getMethodParameters
- ()[Lorg/springframework/core/MethodParameter;
- ()[Lorg/springframework/core/MethodParameter;
+getContainingClass
+ ()Ljava/lang/Class<*>;
+ ()Ljava/lang/Class<*>;
 getResolvedFromHandlerMethod
  ()Lorg/springframework/web/method/HandlerMethod;
  ()L0org/springframework/web/method/HandlerMethod;
@@ -68,18 +52,9 @@ getResponseStatus
 getResponseStatusReason
  ()Ljava/lang/String;
  ()L0java/lang/String;
-getReturnType
- ()Lorg/springframework/core/MethodParameter;
- ()Lorg/springframework/core/MethodParameter;
-getReturnValueType
- (Ljava/lang/Object;)Lorg/springframework/core/MethodParameter;
- (Ljava/lang/Object;)Lorg/springframework/core/MethodParameter;
 getShortLogMessage
  ()Ljava/lang/String;
  ()Ljava/lang/String;
-hasMethodAnnotation
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Z
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Z
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String;

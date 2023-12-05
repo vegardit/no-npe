@@ -37,24 +37,18 @@ doSuspend
 getTransaction
  (Lorg/springframework/transaction/TransactionDefinition;)Lorg/springframework/transaction/TransactionStatus;
  (Lorg/springframework/transaction/TransactionDefinition;)Lorg/springframework/transaction/TransactionStatus;
+getTransactionExecutionListeners
+ ()Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;
+ ()Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;
 invokeAfterCompletion
  (Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;I)V
  (Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;I)V
 isExistingTransaction
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
-newTransactionStatus
- (Lorg/springframework/transaction/TransactionDefinition;Ljava/lang/Object;ZZZLjava/lang/Object;)Lorg/springframework/transaction/support/DefaultTransactionStatus;
- (Lorg/springframework/transaction/TransactionDefinition;Ljava/lang/Object;ZZZLjava/lang/Object;)Lorg/springframework/transaction/support/DefaultTransactionStatus;
 prepareForCommit
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
-prepareSynchronization
- (Lorg/springframework/transaction/support/DefaultTransactionStatus;Lorg/springframework/transaction/TransactionDefinition;)V
- (Lorg/springframework/transaction/support/DefaultTransactionStatus;Lorg/springframework/transaction/TransactionDefinition;)V
-prepareTransactionStatus
- (Lorg/springframework/transaction/TransactionDefinition;Ljava/lang/Object;ZZZLjava/lang/Object;)Lorg/springframework/transaction/support/DefaultTransactionStatus;
- (Lorg/springframework/transaction/TransactionDefinition;Ljava/lang/Object;ZZZLjava/lang/Object;)Lorg/springframework/transaction/support/DefaultTransactionStatus;
 registerAfterCompletionWithExistingTransaction
  (Ljava/lang/Object;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
  (Ljava/lang/Object;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
@@ -64,6 +58,9 @@ resume
 rollback
  (Lorg/springframework/transaction/TransactionStatus;)V
  (Lorg/springframework/transaction/TransactionStatus;)V
+setTransactionExecutionListeners
+ (Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;)V
+ (Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;)V
 setTransactionSynchronizationName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

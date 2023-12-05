@@ -16,6 +16,12 @@ addPropertiesFilesToEnvironment
 addPropertiesFilesToEnvironment
  (Lorg/springframework/core/env/ConfigurableEnvironment;Lorg/springframework/core/io/ResourceLoader;[Ljava/lang/String;)V
  (Lorg/springframework/core/env/ConfigurableEnvironment;Lorg/springframework/core/io/ResourceLoader;[Ljava/lang/String;)V
+addPropertySourcesToEnvironment
+ (Lorg/springframework/context/ConfigurableApplicationContext;Ljava/util/List<Lorg/springframework/core/io/support/PropertySourceDescriptor;>;)V
+ (Lorg/springframework/context/ConfigurableApplicationContext;Ljava/util/List<Lorg/springframework/core/io/support/PropertySourceDescriptor;>;)V
+addPropertySourcesToEnvironment
+ (Lorg/springframework/core/env/ConfigurableEnvironment;Lorg/springframework/core/io/ResourceLoader;Ljava/util/List<Lorg/springframework/core/io/support/PropertySourceDescriptor;>;)V
+ (Lorg/springframework/core/env/ConfigurableEnvironment;Lorg/springframework/core/io/ResourceLoader;Ljava/util/List<Lorg/springframework/core/io/support/PropertySourceDescriptor;>;)V
 convertInlinedPropertiesToMap
  ([Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  ([Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;

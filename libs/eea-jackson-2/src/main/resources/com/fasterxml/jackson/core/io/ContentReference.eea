@@ -1,5 +1,8 @@
 class com/fasterxml/jackson/core/io/ContentReference
 
+REDACTED_CONTENT
+ Lcom/fasterxml/jackson/core/io/ContentReference;
+ L1com/fasterxml/jackson/core/io/ContentReference;
 UNKNOWN_CONTENT
  Lcom/fasterxml/jackson/core/io/ContentReference;
  L1com/fasterxml/jackson/core/io/ContentReference;
@@ -10,12 +13,21 @@ construct
 construct
  (ZLjava/lang/Object;II)Lcom/fasterxml/jackson/core/io/ContentReference;
  (ZLjava/lang/Object;II)Lcom/fasterxml/jackson/core/io/ContentReference;
+construct
+ (ZLjava/lang/Object;IILcom/fasterxml/jackson/core/ErrorReportConfiguration;)Lcom/fasterxml/jackson/core/io/ContentReference;
+ (ZLjava/lang/Object;IILcom/fasterxml/jackson/core/ErrorReportConfiguration;)Lcom/fasterxml/jackson/core/io/ContentReference;
+construct
+ (ZLjava/lang/Object;Lcom/fasterxml/jackson/core/ErrorReportConfiguration;)Lcom/fasterxml/jackson/core/io/ContentReference;
+ (ZLjava/lang/Object;Lcom/fasterxml/jackson/core/ErrorReportConfiguration;)Lcom/fasterxml/jackson/core/io/ContentReference;
 rawReference
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/core/io/ContentReference;
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/core/io/ContentReference;
 rawReference
  (ZLjava/lang/Object;)Lcom/fasterxml/jackson/core/io/ContentReference;
  (ZLjava/lang/Object;)Lcom/fasterxml/jackson/core/io/ContentReference;
+redacted
+ ()Lcom/fasterxml/jackson/core/io/ContentReference;
+ ()Lcom/fasterxml/jackson/core/io/ContentReference;
 unknown
  ()Lcom/fasterxml/jackson/core/io/ContentReference;
  ()Lcom/fasterxml/jackson/core/io/ContentReference;
@@ -30,6 +42,12 @@ _rawContent
 <init>
  (ZLjava/lang/Object;II)V
  (ZLjava/lang/Object;II)V
+<init>
+ (ZLjava/lang/Object;IILcom/fasterxml/jackson/core/ErrorReportConfiguration;)V
+ (ZLjava/lang/Object;IILcom/fasterxml/jackson/core/ErrorReportConfiguration;)V
+<init>
+ (ZLjava/lang/Object;Lcom/fasterxml/jackson/core/ErrorReportConfiguration;)V
+ (ZLjava/lang/Object;Lcom/fasterxml/jackson/core/ErrorReportConfiguration;)V
 _append
  (Ljava/lang/StringBuilder;Ljava/lang/String;)I
  (Ljava/lang/StringBuilder;Ljava/lang/String;)I

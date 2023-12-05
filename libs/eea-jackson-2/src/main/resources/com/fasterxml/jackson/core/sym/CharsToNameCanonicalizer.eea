@@ -6,6 +6,12 @@ createRoot
 createRoot
  (I)Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
  (I)Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
+createRoot
+ (Lcom/fasterxml/jackson/core/TokenStreamFactory;)Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
+ (Lcom/fasterxml/jackson/core/TokenStreamFactory;)Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
+createRoot
+ (Lcom/fasterxml/jackson/core/TokenStreamFactory;I)Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
+ (Lcom/fasterxml/jackson/core/TokenStreamFactory;I)Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
 
 _buckets
  [Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer$Bucket;
@@ -16,6 +22,9 @@ _overflows
 _parent
  Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
  Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
+_streamReadConstraints
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
 _symbols
  [Ljava/lang/String;
  [Ljava/lang/String;
@@ -32,6 +41,9 @@ calcHash
 findSymbol
  ([CIII)Ljava/lang/String;
  ([CIII)Ljava/lang/String;
+makeChild
+ ()Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
+ ()Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
 makeChild
  (I)Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
  (I)Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;

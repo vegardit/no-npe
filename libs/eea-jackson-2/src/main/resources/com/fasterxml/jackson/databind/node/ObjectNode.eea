@@ -16,6 +16,9 @@ _at
 _childrenEqual
  (Lcom/fasterxml/jackson/databind/node/ObjectNode;)Z
  (Lcom/fasterxml/jackson/databind/node/ObjectNode;)Z
+_contentsToSerialize
+ (Lcom/fasterxml/jackson/databind/SerializerProvider;)Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;
+ (Lcom/fasterxml/jackson/databind/SerializerProvider;)Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;
 _put
  (Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
  (Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
@@ -208,6 +211,15 @@ with
 withArray
  (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ArrayNode;
  (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ArrayNode;
+withArrayProperty
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ArrayNode;
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ArrayNode;
+withObject
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
+withObjectProperty
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
 without
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(Ljava/lang/String;)TT;
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(L1java/lang/String;)T1T;

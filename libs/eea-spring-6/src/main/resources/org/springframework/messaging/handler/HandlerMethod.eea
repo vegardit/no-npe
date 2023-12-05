@@ -4,13 +4,6 @@ defaultLogger
  Lorg/apache/commons/logging/Log;
  L1org/apache/commons/logging/Log;
 
-findProvidedArgument
- (Lorg/springframework/core/MethodParameter;[Ljava/lang/Object;)Ljava/lang/Object;
- (Lorg/springframework/core/MethodParameter;[Ljava/lang/Object;)L0java/lang/Object;
-formatArgumentError
- (Lorg/springframework/core/MethodParameter;Ljava/lang/String;)Ljava/lang/String;
- (Lorg/springframework/core/MethodParameter;Ljava/lang/String;)Ljava/lang/String;
-
 logger
  Lorg/apache/commons/logging/Log;
  Lorg/apache/commons/logging/Log;
@@ -45,39 +38,18 @@ getBean
 getBeanType
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
-getBridgedMethod
- ()Ljava/lang/reflect/Method;
- ()Ljava/lang/reflect/Method;
+getContainingClass
+ ()Ljava/lang/Class<*>;
+ ()Ljava/lang/Class<*>;
 getLogger
  ()Lorg/apache/commons/logging/Log;
  ()Lorg/apache/commons/logging/Log;
-getMethod
- ()Ljava/lang/reflect/Method;
- ()Ljava/lang/reflect/Method;
-getMethodAnnotation
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)TA;
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)T0A;
-getMethodParameters
- ()[Lorg/springframework/core/MethodParameter;
- ()[Lorg/springframework/core/MethodParameter;
 getResolvedFromHandlerMethod
  ()Lorg/springframework/messaging/handler/HandlerMethod;
  ()L0org/springframework/messaging/handler/HandlerMethod;
-getReturnType
- ()Lorg/springframework/core/MethodParameter;
- ()Lorg/springframework/core/MethodParameter;
-getReturnValueType
- (Ljava/lang/Object;)Lorg/springframework/core/MethodParameter;
- (Ljava/lang/Object;)Lorg/springframework/core/MethodParameter;
 getShortLogMessage
  ()Ljava/lang/String;
  ()Ljava/lang/String;
-hasMethodAnnotation
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Z
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Z
 setLogger
  (Lorg/apache/commons/logging/Log;)V
  (Lorg/apache/commons/logging/Log;)V
-toString
- ()Ljava/lang/String;
- ()L1java/lang/String;

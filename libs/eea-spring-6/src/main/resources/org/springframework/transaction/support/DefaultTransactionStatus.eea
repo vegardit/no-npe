@@ -3,6 +3,9 @@ class org/springframework/transaction/support/DefaultTransactionStatus
 <init>
  (Ljava/lang/Object;ZZZZLjava/lang/Object;)V
  (Ljava/lang/Object;ZZZZLjava/lang/Object;)V
+<init>
+ (Ljava/lang/String;Ljava/lang/Object;ZZZZZLjava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;ZZZZZLjava/lang/Object;)V
 getSavepointManager
  ()Lorg/springframework/transaction/SavepointManager;
  ()Lorg/springframework/transaction/SavepointManager;
@@ -12,3 +15,6 @@ getSuspendedResources
 getTransaction
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
+getTransactionName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;

@@ -81,6 +81,12 @@ getForObject
 getMessageConverters
  ()Ljava/util/List<Lorg/springframework/http/converter/HttpMessageConverter<*>;>;
  ()Ljava/util/List<Lorg/springframework/http/converter/HttpMessageConverter<*>;>;
+getObservationConvention
+ ()Lorg/springframework/http/client/observation/ClientRequestObservationConvention;
+ ()L0org/springframework/http/client/observation/ClientRequestObservationConvention;
+getObservationRegistry
+ ()Lio/micrometer/observation/ObservationRegistry;
+ ()Lio/micrometer/observation/ObservationRegistry;
 getUriTemplateHandler
  ()Lorg/springframework/web/util/UriTemplateHandler;
  ()Lorg/springframework/web/util/UriTemplateHandler;

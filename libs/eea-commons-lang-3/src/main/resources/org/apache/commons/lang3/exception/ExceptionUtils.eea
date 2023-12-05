@@ -1,5 +1,8 @@
 class org/apache/commons/lang3/exception/ExceptionUtils
 
+asRuntimeException
+ <T:Ljava/lang/RuntimeException;>(Ljava/lang/Throwable;)TT;
+ <T:Ljava/lang/RuntimeException;>(Ljava/lang/Throwable;)TT;
 forEach
  (Ljava/lang/Throwable;Ljava/util/function/Consumer<Ljava/lang/Throwable;>;)V
  (Ljava/lang/Throwable;Ljava/util/function/Consumer<Ljava/lang/Throwable;>;)V
@@ -76,14 +79,17 @@ removeCommonFrames
  (Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Ljava/lang/String;>;)V
  (Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Ljava/lang/String;>;)V
 rethrow
- <R:Ljava/lang/Object;>(Ljava/lang/Throwable;)TR;
- <R:Ljava/lang/Object;>(Ljava/lang/Throwable;)TR;
+ <T:Ljava/lang/Object;>(Ljava/lang/Throwable;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Throwable;)TT;
 stream
  (Ljava/lang/Throwable;)Ljava/util/stream/Stream<Ljava/lang/Throwable;>;
  (Ljava/lang/Throwable;)Ljava/util/stream/Stream<Ljava/lang/Throwable;>;
 throwUnchecked
  <T:Ljava/lang/Object;>(TT;)TT;
  <T:Ljava/lang/Object;>(TT;)TT;
+throwUnchecked
+ <T:Ljava/lang/Throwable;>(TT;)TT;
+ <T:Ljava/lang/Throwable;>(TT;)TT;
 throwableOfThrowable
  <T:Ljava/lang/Throwable;>(Ljava/lang/Throwable;Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Throwable;>(Ljava/lang/Throwable;Ljava/lang/Class<TT;>;)TT;

@@ -7,6 +7,9 @@ FORMAT_NAME_JSON
  Ljava/lang/String;
  L1java/lang/String;
 
+_copy
+ <T:Ljava/lang/Object;>(Ljava/util/List<TT;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/List<TT;>;)Ljava/util/List<TT;>;
 builder
  ()Lcom/fasterxml/jackson/core/TSFBuilder<**>;
  ()Lcom/fasterxml/jackson/core/TSFBuilder<**>;
@@ -17,6 +20,12 @@ _byteSymbolCanonicalizer
 _characterEscapes
  Lcom/fasterxml/jackson/core/io/CharacterEscapes;
  Lcom/fasterxml/jackson/core/io/CharacterEscapes;
+_errorReportConfiguration
+ Lcom/fasterxml/jackson/core/ErrorReportConfiguration;
+ Lcom/fasterxml/jackson/core/ErrorReportConfiguration;
+_generatorDecorators
+ Ljava/util/List<Lcom/fasterxml/jackson/core/util/JsonGeneratorDecorator;>;
+ Ljava/util/List<Lcom/fasterxml/jackson/core/util/JsonGeneratorDecorator;>;
 _inputDecorator
  Lcom/fasterxml/jackson/core/io/InputDecorator;
  Lcom/fasterxml/jackson/core/io/InputDecorator;
@@ -26,6 +35,9 @@ _objectCodec
 _outputDecorator
  Lcom/fasterxml/jackson/core/io/OutputDecorator;
  Lcom/fasterxml/jackson/core/io/OutputDecorator;
+_recyclerPool
+ Lcom/fasterxml/jackson/core/util/RecyclerPool<Lcom/fasterxml/jackson/core/util/BufferRecycler;>;
+ Lcom/fasterxml/jackson/core/util/RecyclerPool<Lcom/fasterxml/jackson/core/util/BufferRecycler;>;
 _rootCharSymbols
  Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
  Lcom/fasterxml/jackson/core/sym/CharsToNameCanonicalizer;
@@ -35,6 +47,9 @@ _rootValueSeparator
 _streamReadConstraints
  Lcom/fasterxml/jackson/core/StreamReadConstraints;
  Lcom/fasterxml/jackson/core/StreamReadConstraints;
+_streamWriteConstraints
+ Lcom/fasterxml/jackson/core/StreamWriteConstraints;
+ Lcom/fasterxml/jackson/core/StreamWriteConstraints;
 
 <init>
  (Lcom/fasterxml/jackson/core/JsonFactory;Lcom/fasterxml/jackson/core/ObjectCodec;)V
@@ -91,6 +106,9 @@ _createWriter
  (Ljava/io/OutputStream;Lcom/fasterxml/jackson/core/JsonEncoding;Lcom/fasterxml/jackson/core/io/IOContext;)Ljava/io/Writer;
  (Ljava/io/OutputStream;Lcom/fasterxml/jackson/core/JsonEncoding;Lcom/fasterxml/jackson/core/io/IOContext;)Ljava/io/Writer;
 _decorate
+ (Lcom/fasterxml/jackson/core/JsonGenerator;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (Lcom/fasterxml/jackson/core/JsonGenerator;)Lcom/fasterxml/jackson/core/JsonGenerator;
+_decorate
  (Ljava/io/DataInput;Lcom/fasterxml/jackson/core/io/IOContext;)Ljava/io/DataInput;
  (Ljava/io/DataInput;Lcom/fasterxml/jackson/core/io/IOContext;)Ljava/io/DataInput;
 _decorate
@@ -108,6 +126,9 @@ _decorate
 _getBufferRecycler
  ()Lcom/fasterxml/jackson/core/util/BufferRecycler;
  ()Lcom/fasterxml/jackson/core/util/BufferRecycler;
+_getRecyclerPool
+ ()Lcom/fasterxml/jackson/core/util/RecyclerPool<Lcom/fasterxml/jackson/core/util/BufferRecycler;>;
+ ()Lcom/fasterxml/jackson/core/util/RecyclerPool<Lcom/fasterxml/jackson/core/util/BufferRecycler;>;
 canUseSchema
  (Lcom/fasterxml/jackson/core/FormatSchema;)Z
  (Lcom/fasterxml/jackson/core/FormatSchema;)Z
@@ -282,21 +303,33 @@ setCharacterEscapes
 setCodec
  (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonFactory;
  (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonFactory;
+setErrorReportConfiguration
+ (Lcom/fasterxml/jackson/core/ErrorReportConfiguration;)Lcom/fasterxml/jackson/core/JsonFactory;
+ (Lcom/fasterxml/jackson/core/ErrorReportConfiguration;)Lcom/fasterxml/jackson/core/JsonFactory;
 setInputDecorator
  (Lcom/fasterxml/jackson/core/io/InputDecorator;)Lcom/fasterxml/jackson/core/JsonFactory;
  (Lcom/fasterxml/jackson/core/io/InputDecorator;)Lcom/fasterxml/jackson/core/JsonFactory;
 setOutputDecorator
  (Lcom/fasterxml/jackson/core/io/OutputDecorator;)Lcom/fasterxml/jackson/core/JsonFactory;
  (Lcom/fasterxml/jackson/core/io/OutputDecorator;)Lcom/fasterxml/jackson/core/JsonFactory;
+setRecyclerPool
+ (Lcom/fasterxml/jackson/core/util/RecyclerPool<Lcom/fasterxml/jackson/core/util/BufferRecycler;>;)Lcom/fasterxml/jackson/core/JsonFactory;
+ (Lcom/fasterxml/jackson/core/util/RecyclerPool<Lcom/fasterxml/jackson/core/util/BufferRecycler;>;)Lcom/fasterxml/jackson/core/JsonFactory;
 setRootValueSeparator
  (Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonFactory;
  (Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonFactory;
 setStreamReadConstraints
  (Lcom/fasterxml/jackson/core/StreamReadConstraints;)Lcom/fasterxml/jackson/core/JsonFactory;
  (Lcom/fasterxml/jackson/core/StreamReadConstraints;)Lcom/fasterxml/jackson/core/JsonFactory;
+setStreamWriteConstraints
+ (Lcom/fasterxml/jackson/core/StreamWriteConstraints;)Lcom/fasterxml/jackson/core/JsonFactory;
+ (Lcom/fasterxml/jackson/core/StreamWriteConstraints;)Lcom/fasterxml/jackson/core/JsonFactory;
 streamReadConstraints
  ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
  ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
+streamWriteConstraints
+ ()Lcom/fasterxml/jackson/core/StreamWriteConstraints;
+ ()Lcom/fasterxml/jackson/core/StreamWriteConstraints;
 version
  ()Lcom/fasterxml/jackson/core/Version;
  ()Lcom/fasterxml/jackson/core/Version;

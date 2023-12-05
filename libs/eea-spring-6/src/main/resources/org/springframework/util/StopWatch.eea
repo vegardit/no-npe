@@ -18,9 +18,18 @@ getLastTaskName
 getTaskInfo
  ()[Lorg/springframework/util/StopWatch$TaskInfo;
  ()[Lorg/springframework/util/StopWatch$TaskInfo;
+getTotalTime
+ (Ljava/util/concurrent/TimeUnit;)D
+ (Ljava/util/concurrent/TimeUnit;)D
+lastTaskInfo
+ ()Lorg/springframework/util/StopWatch$TaskInfo;
+ ()Lorg/springframework/util/StopWatch$TaskInfo;
 prettyPrint
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+prettyPrint
+ (Ljava/util/concurrent/TimeUnit;)Ljava/lang/String;
+ (Ljava/util/concurrent/TimeUnit;)Ljava/lang/String;
 shortSummary
  ()Ljava/lang/String;
  ()Ljava/lang/String;

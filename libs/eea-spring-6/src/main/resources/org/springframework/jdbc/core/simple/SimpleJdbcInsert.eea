@@ -31,14 +31,17 @@ executeBatch
  ([Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)[I
  ([Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)[I
 includeSynonymsForTableColumnMetaData
- ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsertOperations;
- ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsertOperations;
+ ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
+ ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
 usingColumns
  ([Ljava/lang/String;)Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
  ([Ljava/lang/String;)Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
 usingGeneratedKeyColumns
  ([Ljava/lang/String;)Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
  ([Ljava/lang/String;)Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
+usingQuotedIdentifiers
+ ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
+ ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
 withCatalogName
  (Ljava/lang/String;)Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
  (Ljava/lang/String;)Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
@@ -49,5 +52,5 @@ withTableName
  (Ljava/lang/String;)Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
  (Ljava/lang/String;)Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
 withoutTableColumnMetaDataAccess
- ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsertOperations;
- ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsertOperations;
+ ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;
+ ()Lorg/springframework/jdbc/core/simple/SimpleJdbcInsert;

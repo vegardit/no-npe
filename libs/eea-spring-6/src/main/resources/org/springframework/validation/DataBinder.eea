@@ -40,6 +40,9 @@ checkRequiredFields
 close
  ()Ljava/util/Map<**>;
  ()Ljava/util/Map<**>;
+construct
+ (Lorg/springframework/validation/DataBinder$ValueResolver;)V
+ (Lorg/springframework/validation/DataBinder$ValueResolver;)V
 convertIfNecessary
  <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)T0T;
@@ -82,6 +85,9 @@ getDisallowedFields
 getInternalBindingResult
  ()Lorg/springframework/validation/AbstractPropertyBindingResult;
  ()Lorg/springframework/validation/AbstractPropertyBindingResult;
+getNameResolver
+ ()Lorg/springframework/validation/DataBinder$NameResolver;
+ ()L0org/springframework/validation/DataBinder$NameResolver;
 getObjectName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -100,6 +106,9 @@ getSimpleTypeConverter
 getTarget
  ()Ljava/lang/Object;
  ()L0java/lang/Object;
+getTargetType
+ ()Lorg/springframework/core/ResolvableType;
+ ()L0org/springframework/core/ResolvableType;
 getTypeConverter
  ()Lorg/springframework/beans/TypeConverter;
  ()Lorg/springframework/beans/TypeConverter;
@@ -107,6 +116,9 @@ getValidator
  ()Lorg/springframework/validation/Validator;
  ()L0org/springframework/validation/Validator;
 getValidators
+ ()Ljava/util/List<Lorg/springframework/validation/Validator;>;
+ ()Ljava/util/List<Lorg/springframework/validation/Validator;>;
+getValidatorsToApply
  ()Ljava/util/List<Lorg/springframework/validation/Validator;>;
  ()Ljava/util/List<Lorg/springframework/validation/Validator;>;
 isAllowed
@@ -133,12 +145,21 @@ setConversionService
 setDisallowedFields
  ([Ljava/lang/String;)V
  ([Ljava/lang/String;)V
+setExcludedValidators
+ (Ljava/util/function/Predicate<Lorg/springframework/validation/Validator;>;)V
+ (Ljava/util/function/Predicate<Lorg/springframework/validation/Validator;>;)V
 setMessageCodesResolver
  (Lorg/springframework/validation/MessageCodesResolver;)V
  (Lorg/springframework/validation/MessageCodesResolver;)V
+setNameResolver
+ (Lorg/springframework/validation/DataBinder$NameResolver;)V
+ (Lorg/springframework/validation/DataBinder$NameResolver;)V
 setRequiredFields
  ([Ljava/lang/String;)V
  ([Ljava/lang/String;)V
+setTargetType
+ (Lorg/springframework/core/ResolvableType;)V
+ (Lorg/springframework/core/ResolvableType;)V
 setValidator
  (Lorg/springframework/validation/Validator;)V
  (Lorg/springframework/validation/Validator;)V

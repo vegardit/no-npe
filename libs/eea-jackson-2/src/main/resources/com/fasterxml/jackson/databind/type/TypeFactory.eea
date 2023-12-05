@@ -6,6 +6,9 @@ CORE_TYPE_BOOL
 CORE_TYPE_COMPARABLE
  Lcom/fasterxml/jackson/databind/type/SimpleType;
  L1com/fasterxml/jackson/databind/type/SimpleType;
+CORE_TYPE_DOUBLE
+ Lcom/fasterxml/jackson/databind/type/SimpleType;
+ L1com/fasterxml/jackson/databind/type/SimpleType;
 CORE_TYPE_ENUM
  Lcom/fasterxml/jackson/databind/type/SimpleType;
  L1com/fasterxml/jackson/databind/type/SimpleType;
@@ -54,12 +57,6 @@ _typeCache
  Lcom/fasterxml/jackson/databind/util/LookupCache<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;>;
  Lcom/fasterxml/jackson/databind/util/LookupCache<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;>;
 
-<init>
- (Lcom/fasterxml/jackson/databind/util/LRUMap<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;>;)V
- (Lcom/fasterxml/jackson/databind/util/LRUMap<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;>;)V
-<init>
- (Lcom/fasterxml/jackson/databind/util/LRUMap<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;>;Lcom/fasterxml/jackson/databind/type/TypeParser;[Lcom/fasterxml/jackson/databind/type/TypeModifier;Ljava/lang/ClassLoader;)V
- (Lcom/fasterxml/jackson/databind/util/LRUMap<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;>;Lcom/fasterxml/jackson/databind/type/TypeParser;[Lcom/fasterxml/jackson/databind/type/TypeModifier;Ljava/lang/ClassLoader;)V
 <init>
  (Lcom/fasterxml/jackson/databind/util/LookupCache<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;>;)V
  (Lcom/fasterxml/jackson/databind/util/LookupCache<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;>;)V
@@ -216,6 +213,9 @@ constructType
 findClass
  (Ljava/lang/String;)Ljava/lang/Class<*>;
  (Ljava/lang/String;)Ljava/lang/Class<*>;
+findFirstTypeParameter
+ (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/JavaType;
+ (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/JavaType;
 findTypeParameters
  (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class<*>;)[Lcom/fasterxml/jackson/databind/JavaType;
  (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Class<*>;)[Lcom/fasterxml/jackson/databind/JavaType;

@@ -22,9 +22,6 @@ FALLBACK_STATEMENT_SEPARATOR
  Ljava/lang/String;
  L1java/lang/String;
 
-containsSqlScriptDelimiters
- (Ljava/lang/String;Ljava/lang/String;)Z
- (Ljava/lang/String;Ljava/lang/String;)Z
 executeSqlScript
  (Ljava/sql/Connection;Lorg/springframework/core/io/Resource;)V
  (Ljava/sql/Connection;Lorg/springframework/core/io/Resource;)V
@@ -37,21 +34,3 @@ executeSqlScript
 executeSqlScript
  (Ljava/sql/Connection;Lorg/springframework/core/io/support/EncodedResource;ZZ[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/sql/Connection;Lorg/springframework/core/io/support/EncodedResource;ZZ[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-readScript
- (Ljava/io/LineNumberReader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/io/LineNumberReader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-readScript
- (Ljava/io/LineNumberReader;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/io/LineNumberReader;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-splitSqlScript
- (Ljava/lang/String;CLjava/util/List<Ljava/lang/String;>;)V
- (Ljava/lang/String;CLjava/util/List<Ljava/lang/String;>;)V
-splitSqlScript
- (Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V
- (Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V
-splitSqlScript
- (Lorg/springframework/core/io/support/EncodedResource;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V
- (Lorg/springframework/core/io/support/EncodedResource;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V
-splitSqlScript
- (Lorg/springframework/core/io/support/EncodedResource;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V
- (Lorg/springframework/core/io/support/EncodedResource;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V

@@ -28,6 +28,12 @@ addFixedRateTask
 addFixedRateTask
  (Lorg/springframework/scheduling/config/IntervalTask;)V
  (Lorg/springframework/scheduling/config/IntervalTask;)V
+addOneTimeTask
+ (Ljava/lang/Runnable;Ljava/time/Duration;)V
+ (Ljava/lang/Runnable;Ljava/time/Duration;)V
+addOneTimeTask
+ (Lorg/springframework/scheduling/config/DelayedTask;)V
+ (Lorg/springframework/scheduling/config/DelayedTask;)V
 addTriggerTask
  (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)V
  (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)V
@@ -43,6 +49,9 @@ getFixedDelayTaskList
 getFixedRateTaskList
  ()Ljava/util/List<Lorg/springframework/scheduling/config/IntervalTask;>;
  ()Ljava/util/List<Lorg/springframework/scheduling/config/IntervalTask;>;
+getObservationRegistry
+ ()Lio/micrometer/observation/ObservationRegistry;
+ ()L0io/micrometer/observation/ObservationRegistry;
 getScheduledTasks
  ()Ljava/util/Set<Lorg/springframework/scheduling/config/ScheduledTask;>;
  ()Ljava/util/Set<Lorg/springframework/scheduling/config/ScheduledTask;>;
@@ -61,6 +70,9 @@ scheduleFixedDelayTask
 scheduleFixedRateTask
  (Lorg/springframework/scheduling/config/FixedRateTask;)Lorg/springframework/scheduling/config/ScheduledTask;
  (Lorg/springframework/scheduling/config/FixedRateTask;)L0org/springframework/scheduling/config/ScheduledTask;
+scheduleOneTimeTask
+ (Lorg/springframework/scheduling/config/OneTimeTask;)Lorg/springframework/scheduling/config/ScheduledTask;
+ (Lorg/springframework/scheduling/config/OneTimeTask;)L0org/springframework/scheduling/config/ScheduledTask;
 scheduleTriggerTask
  (Lorg/springframework/scheduling/config/TriggerTask;)Lorg/springframework/scheduling/config/ScheduledTask;
  (Lorg/springframework/scheduling/config/TriggerTask;)L0org/springframework/scheduling/config/ScheduledTask;
@@ -82,6 +94,9 @@ setFixedRateTasks
 setFixedRateTasksList
  (Ljava/util/List<Lorg/springframework/scheduling/config/IntervalTask;>;)V
  (Ljava/util/List<Lorg/springframework/scheduling/config/IntervalTask;>;)V
+setObservationRegistry
+ (Lio/micrometer/observation/ObservationRegistry;)V
+ (Lio/micrometer/observation/ObservationRegistry;)V
 setScheduler
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V

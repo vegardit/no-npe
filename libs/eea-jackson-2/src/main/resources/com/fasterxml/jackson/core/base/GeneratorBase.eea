@@ -19,6 +19,9 @@ WRITE_STRING
  Ljava/lang/String;
  L1java/lang/String;
 
+_ioContext
+ Lcom/fasterxml/jackson/core/io/IOContext;
+ Lcom/fasterxml/jackson/core/io/IOContext;
 _objectCodec
  Lcom/fasterxml/jackson/core/ObjectCodec;
  Lcom/fasterxml/jackson/core/ObjectCodec;
@@ -29,6 +32,12 @@ _writeContext
 <init>
  (ILcom/fasterxml/jackson/core/ObjectCodec;)V
  (ILcom/fasterxml/jackson/core/ObjectCodec;)V
+<init>
+ (ILcom/fasterxml/jackson/core/ObjectCodec;Lcom/fasterxml/jackson/core/io/IOContext;)V
+ (ILcom/fasterxml/jackson/core/ObjectCodec;Lcom/fasterxml/jackson/core/io/IOContext;)V
+<init>
+ (ILcom/fasterxml/jackson/core/ObjectCodec;Lcom/fasterxml/jackson/core/io/IOContext;Lcom/fasterxml/jackson/core/json/JsonWriteContext;)V
+ (ILcom/fasterxml/jackson/core/ObjectCodec;Lcom/fasterxml/jackson/core/io/IOContext;Lcom/fasterxml/jackson/core/json/JsonWriteContext;)V
 <init>
  (ILcom/fasterxml/jackson/core/ObjectCodec;Lcom/fasterxml/jackson/core/json/JsonWriteContext;)V
  (ILcom/fasterxml/jackson/core/ObjectCodec;Lcom/fasterxml/jackson/core/json/JsonWriteContext;)V

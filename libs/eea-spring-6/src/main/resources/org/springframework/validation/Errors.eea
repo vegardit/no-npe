@@ -7,6 +7,9 @@ NESTED_PATH_SEPARATOR
 addAllErrors
  (Lorg/springframework/validation/Errors;)V
  (Lorg/springframework/validation/Errors;)V
+failOnError
+ <T:Ljava/lang/Throwable;>(Ljava/util/function/Function<Ljava/lang/String;TT;>;)V^TT;
+ <T:Ljava/lang/Throwable;>(Ljava/util/function/Function<Ljava/lang/String;TT;>;)V^TT;
 getAllErrors
  ()Ljava/util/List<Lorg/springframework/validation/ObjectError;>;
  ()Ljava/util/List<Lorg/springframework/validation/ObjectError;>;
@@ -70,3 +73,6 @@ rejectValue
 setNestedPath
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

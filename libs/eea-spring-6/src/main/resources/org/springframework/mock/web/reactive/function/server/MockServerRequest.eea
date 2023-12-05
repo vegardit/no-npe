@@ -7,6 +7,12 @@ builder
 attributes
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+bind
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lreactor/core/publisher/Mono<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lreactor/core/publisher/Mono<TT;>;
+bind
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<Lorg/springframework/web/bind/WebDataBinder;>;)Lreactor/core/publisher/Mono<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<Lorg/springframework/web/bind/WebDataBinder;>;)Lreactor/core/publisher/Mono<TT;>;
 body
  <S:Ljava/lang/Object;>(Lorg/springframework/web/reactive/function/BodyExtractor<TS;-Lorg/springframework/http/server/reactive/ServerHttpRequest;>;)TS;
  <S:Ljava/lang/Object;>(Lorg/springframework/web/reactive/function/BodyExtractor<TS;-Lorg/springframework/http/server/reactive/ServerHttpRequest;>;)TS;

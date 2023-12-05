@@ -34,6 +34,9 @@ doSuspend
 getReactiveTransaction
  (Lorg/springframework/transaction/TransactionDefinition;)Lreactor/core/publisher/Mono<Lorg/springframework/transaction/ReactiveTransaction;>;
  (Lorg/springframework/transaction/TransactionDefinition;)Lreactor/core/publisher/Mono<Lorg/springframework/transaction/ReactiveTransaction;>;
+getTransactionExecutionListeners
+ ()Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;
+ ()Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;
 isExistingTransaction
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
@@ -46,3 +49,6 @@ registerAfterCompletionWithExistingTransaction
 rollback
  (Lorg/springframework/transaction/ReactiveTransaction;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
  (Lorg/springframework/transaction/ReactiveTransaction;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
+setTransactionExecutionListeners
+ (Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;)V
+ (Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;)V

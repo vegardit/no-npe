@@ -3,6 +3,9 @@ class org/springframework/test/context/TestContext
 getApplicationContext
  ()Lorg/springframework/context/ApplicationContext;
  ()Lorg/springframework/context/ApplicationContext;
+getMethodInvoker
+ ()Lorg/springframework/test/context/MethodInvoker;
+ ()Lorg/springframework/test/context/MethodInvoker;
 getTestClass
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
@@ -21,6 +24,9 @@ markApplicationContextDirty
 publishEvent
  (Ljava/util/function/Function<Lorg/springframework/test/context/TestContext;+Lorg/springframework/context/ApplicationEvent;>;)V
  (Ljava/util/function/Function<Lorg/springframework/test/context/TestContext;+Lorg/springframework/context/ApplicationEvent;>;)V
+setMethodInvoker
+ (Lorg/springframework/test/context/MethodInvoker;)V
+ (Lorg/springframework/test/context/MethodInvoker;)V
 updateState
  (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/lang/Throwable;)V
  (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/lang/Throwable;)V

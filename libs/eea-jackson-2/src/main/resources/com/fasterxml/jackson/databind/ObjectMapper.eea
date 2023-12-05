@@ -630,6 +630,9 @@ setAnnotationIntrospectors
 setBase64Variant
  (Lcom/fasterxml/jackson/core/Base64Variant;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (Lcom/fasterxml/jackson/core/Base64Variant;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+setCacheProvider
+ (Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)Lcom/fasterxml/jackson/databind/ObjectMapper;
 setConfig
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Lcom/fasterxml/jackson/databind/ObjectMapper;
@@ -738,6 +741,9 @@ tokenStreamFactory
 treeAsTokens
  (Lcom/fasterxml/jackson/core/TreeNode;)Lcom/fasterxml/jackson/core/JsonParser;
  (Lcom/fasterxml/jackson/core/TreeNode;)Lcom/fasterxml/jackson/core/JsonParser;
+treeToValue
+ <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/TreeNode;Lcom/fasterxml/jackson/core/type/TypeReference<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/TreeNode;Lcom/fasterxml/jackson/core/type/TypeReference<TT;>;)TT;
 treeToValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/TreeNode;Lcom/fasterxml/jackson/databind/JavaType;)TT;
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/TreeNode;Lcom/fasterxml/jackson/databind/JavaType;)TT;

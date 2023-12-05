@@ -12,6 +12,15 @@ nullableSingleResult
 objectResult
  <T:Ljava/lang/Object;>(Ljava/util/Collection<*>;Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/util/Collection<*>;Ljava/lang/Class<TT;>;)TT;
+optionalResult
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;)Ljava/util/Optional<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;)Ljava/util/Optional<TT;>;
+optionalResult
+ <T:Ljava/lang/Object;>(Ljava/util/Iterator<TT;>;)Ljava/util/Optional<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Iterator<TT;>;)Ljava/util/Optional<TT;>;
+optionalResult
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;)Ljava/util/Optional<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;)Ljava/util/Optional<TT;>;
 requiredSingleResult
  <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;)TT;
@@ -21,6 +30,12 @@ requiredUniqueResult
 singleResult
  <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;)T0T;
+singleResult
+ <T:Ljava/lang/Object;>(Ljava/util/Iterator<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/util/Iterator<TT;>;)T0T;
+singleResult
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/util/stream/Stream<TT;>;)T0T;
 translateIfNecessary
  (Ljava/lang/RuntimeException;Lorg/springframework/dao/support/PersistenceExceptionTranslator;)Ljava/lang/RuntimeException;
  (Ljava/lang/RuntimeException;Lorg/springframework/dao/support/PersistenceExceptionTranslator;)Ljava/lang/RuntimeException;
