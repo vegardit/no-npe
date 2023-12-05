@@ -85,7 +85,6 @@ echo "###################################################"
 projectVersion="$(mvn -s .ci/maven-settings.xml help:evaluate -Dexpression=project.version -q -DforceStdout)"
 echo "  -> Current Version: $projectVersion"
 
-
 #
 # decide whether to perform a release build or build+deploy a snapshot version
 #
