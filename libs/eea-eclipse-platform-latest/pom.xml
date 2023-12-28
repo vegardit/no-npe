@@ -19,6 +19,10 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
 
   <artifactId>no-npe-eclipse-platform-latest</artifactId>
 
+  <properties>
+    <java.version>17</java.version>
+  </properties>
+
   <dependencies>
 
     <dependency>
@@ -37,7 +41,7 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
     <dependency>
       <groupId>org.eclipse.platform</groupId>
       <artifactId>org.eclipse.sdk</artifactId>
-      <version>4.29.0</version>
+      <version>4.30.0</version>
       <optional>true</optional>
       <exclusions>
         <exclusion>
@@ -64,13 +68,17 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
           <groupId>org.apache.xmlgraphics</groupId>
           <artifactId>*</artifactId>
         </exclusion>
+        <exclusion>
+          <groupId>xml-apis</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
 
     <dependency>
       <groupId>org.eclipse.platform</groupId>
       <artifactId>org.eclipse.jface.notifications</artifactId>
-      <version>0.6.100</version>
+      <version>0.7.0</version>
       <optional>true</optional>
     </dependency>
 

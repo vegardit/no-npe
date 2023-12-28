@@ -3,6 +3,12 @@ class org/springframework/jdbc/datasource/DelegatingDataSource
 <init>
  (Ljavax/sql/DataSource;)V
  (Ljavax/sql/DataSource;)V
+createConnectionBuilder
+ ()Ljava/sql/ConnectionBuilder;
+ ()Ljava/sql/ConnectionBuilder;
+createShardingKeyBuilder
+ ()Ljava/sql/ShardingKeyBuilder;
+ ()Ljava/sql/ShardingKeyBuilder;
 getConnection
  ()Ljava/sql/Connection;
  ()Ljava/sql/Connection;

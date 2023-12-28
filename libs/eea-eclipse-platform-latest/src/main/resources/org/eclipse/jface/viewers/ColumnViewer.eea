@@ -9,6 +9,9 @@ disassociate
 editElement
  (Ljava/lang/Object;I)V
  (Ljava/lang/Object;I)V
+firePostSelectionChanged
+ (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
+ (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
 getCell
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/jface/viewers/ViewerCell;
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/jface/viewers/ViewerCell;
@@ -90,3 +93,6 @@ triggerEditorActivationEvent
 update
  (Ljava/lang/Object;[Ljava/lang/String;)V
  (Ljava/lang/Object;[Ljava/lang/String;)V
+updateSelection
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;)V

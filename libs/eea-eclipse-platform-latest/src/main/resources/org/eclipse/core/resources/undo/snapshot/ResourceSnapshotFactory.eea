@@ -1,0 +1,23 @@
+class org/eclipse/core/resources/undo/snapshot/ResourceSnapshotFactory
+
+fromContainer
+ (Lorg/eclipse/core/resources/IContainer;)Lorg/eclipse/core/resources/undo/snapshot/IContainerSnapshot<+Lorg/eclipse/core/resources/IContainer;>;
+ (Lorg/eclipse/core/resources/IContainer;)Lorg/eclipse/core/resources/undo/snapshot/IContainerSnapshot<+Lorg/eclipse/core/resources/IContainer;>;
+fromFileDetails
+ (Lorg/eclipse/core/resources/IFile;Ljava/net/URI;Ljava/io/InputStream;)Lorg/eclipse/core/resources/undo/snapshot/IResourceSnapshot<Lorg/eclipse/core/resources/IFile;>;
+ (Lorg/eclipse/core/resources/IFile;Ljava/net/URI;Ljava/io/InputStream;)Lorg/eclipse/core/resources/undo/snapshot/IResourceSnapshot<Lorg/eclipse/core/resources/IFile;>;
+fromMarker
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/core/resources/undo/snapshot/IMarkerSnapshot;
+ (Lorg/eclipse/core/resources/IMarker;)Lorg/eclipse/core/resources/undo/snapshot/IMarkerSnapshot;
+fromMarkerDetails
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/resources/undo/snapshot/IMarkerSnapshot;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/core/resources/undo/snapshot/IMarkerSnapshot;
+fromProjectDescription
+ (Lorg/eclipse/core/resources/IProjectDescription;)Lorg/eclipse/core/resources/undo/snapshot/IContainerSnapshot<Lorg/eclipse/core/resources/IProject;>;
+ (Lorg/eclipse/core/resources/IProjectDescription;)Lorg/eclipse/core/resources/undo/snapshot/IContainerSnapshot<Lorg/eclipse/core/resources/IProject;>;
+fromResource
+ <T::Lorg/eclipse/core/resources/IResource;>(TT;)Lorg/eclipse/core/resources/undo/snapshot/IResourceSnapshot<TT;>;
+ <T::Lorg/eclipse/core/resources/IResource;>(TT;)Lorg/eclipse/core/resources/undo/snapshot/IResourceSnapshot<TT;>;
+fromVirtualFolderContainer
+ (Lorg/eclipse/core/resources/IContainer;)Lorg/eclipse/core/resources/undo/snapshot/IContainerSnapshot<+Lorg/eclipse/core/resources/IContainer;>;
+ (Lorg/eclipse/core/resources/IContainer;)Lorg/eclipse/core/resources/undo/snapshot/IContainerSnapshot<+Lorg/eclipse/core/resources/IContainer;>;

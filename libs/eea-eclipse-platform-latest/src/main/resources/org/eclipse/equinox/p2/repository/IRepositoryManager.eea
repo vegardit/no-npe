@@ -7,6 +7,9 @@ addRepository
 contains
  (Ljava/net/URI;)Z
  (Ljava/net/URI;)Z
+createRepository
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
 getAgent
  ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
  ()Lorg/eclipse/equinox/p2/core/IProvisioningAgent;
@@ -19,6 +22,15 @@ getRepositoryProperty
 isEnabled
  (Ljava/net/URI;)Z
  (Ljava/net/URI;)Z
+loadRepository
+ (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+loadRepository
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+refreshRepository
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
+ (Ljava/net/URI;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/repository/IRepository<TT;>;
 removeRepository
  (Ljava/net/URI;)Z
  (Ljava/net/URI;)Z
