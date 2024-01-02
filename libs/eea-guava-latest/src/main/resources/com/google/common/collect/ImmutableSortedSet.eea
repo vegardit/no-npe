@@ -1,6 +1,12 @@
 class com/google/common/collect/ImmutableSortedSet
  <E:Ljava/lang/Object;>
 
+builder
+ <E:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableSortedSet$Builder<TE;>;
+ <E:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableSortedSet$Builder<TE;>;
+builderWithExpectedSize
+ <E:Ljava/lang/Object;>(I)Lcom/google/common/collect/ImmutableSortedSet$Builder<TE;>;
+ <E:Ljava/lang/Object;>(I)Lcom/google/common/collect/ImmutableSortedSet$Builder<TE;>;
 copyOf
  <E::Ljava/lang/Comparable<-TE;>;>([TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
  <E::Ljava/lang/Comparable<-TE;>;>([TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
@@ -22,6 +28,9 @@ copyOf
 copyOf
  <E:Ljava/lang/Object;>(Ljava/util/Iterator<+TE;>;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
  <E:Ljava/lang/Object;>(Ljava/util/Iterator<+TE;>;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+copyOf
+ <Z:Ljava/lang/Object;>([TZ;)Lcom/google/common/collect/ImmutableSortedSet<TZ;>;
+ <Z:Ljava/lang/Object;>([TZ;)Lcom/google/common/collect/ImmutableSortedSet<TZ;>;
 copyOfSorted
  <E:Ljava/lang/Object;>(Ljava/util/SortedSet<TE;>;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
  <E:Ljava/lang/Object;>(Ljava/util/SortedSet<TE;>;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
@@ -49,12 +58,33 @@ of
 of
  <E:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableSortedSet<TE;>;
  <E:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+of
+ <E:Ljava/lang/Object;>(TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+ <E:Ljava/lang/Object;>(TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+of
+ <E:Ljava/lang/Object;>(TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+ <E:Ljava/lang/Object;>(TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+of
+ <E:Ljava/lang/Object;>(TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+ <E:Ljava/lang/Object;>(TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+of
+ <E:Ljava/lang/Object;>(TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+ <E:Ljava/lang/Object;>(TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+of
+ <E:Ljava/lang/Object;>(TE;TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+ <E:Ljava/lang/Object;>(TE;TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+of
+ <E:Ljava/lang/Object;>(TE;TE;TE;TE;TE;TE;[TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
+ <E:Ljava/lang/Object;>(TE;TE;TE;TE;TE;TE;[TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
 orderedBy
  <E:Ljava/lang/Object;>(Ljava/util/Comparator<TE;>;)Lcom/google/common/collect/ImmutableSortedSet$Builder<TE;>;
  <E:Ljava/lang/Object;>(Ljava/util/Comparator<TE;>;)Lcom/google/common/collect/ImmutableSortedSet$Builder<TE;>;
 reverseOrder
  <E::Ljava/lang/Comparable<*>;>()Lcom/google/common/collect/ImmutableSortedSet$Builder<TE;>;
  <E::Ljava/lang/Comparable<*>;>()Lcom/google/common/collect/ImmutableSortedSet$Builder<TE;>;
+toImmutableSet
+ <E:Ljava/lang/Object;>()Ljava/util/stream/Collector<TE;*Lcom/google/common/collect/ImmutableSet<TE;>;>;
+ <E:Ljava/lang/Object;>()Ljava/util/stream/Collector<TE;*Lcom/google/common/collect/ImmutableSet<TE;>;>;
 toImmutableSortedSet
  <E:Ljava/lang/Object;>(Ljava/util/Comparator<-TE;>;)Ljava/util/stream/Collector<TE;*Lcom/google/common/collect/ImmutableSortedSet<TE;>;>;
  <E:Ljava/lang/Object;>(Ljava/util/Comparator<-TE;>;)Ljava/util/stream/Collector<TE;*Lcom/google/common/collect/ImmutableSortedSet<TE;>;>;
