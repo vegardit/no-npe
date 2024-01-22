@@ -48,7 +48,7 @@ jobs:
     - run: echo "JAVA17_HOME=$JAVA_HOME" >> $GITHUB_ENV
 
     - name: "Cache: Local Maven Repository"
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: |
           ~/.m2/repository
