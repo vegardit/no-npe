@@ -1,0 +1,135 @@
+class org/quartz/impl/triggers/AbstractTrigger
+ <T::Lorg/quartz/Trigger;>
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+clone
+ ()Ljava/lang/Object;
+ ()L1java/lang/Object;
+compareTo
+ (Lorg/quartz/Trigger;)I
+ (Lorg/quartz/Trigger;)I
+computeFirstFireTime
+ (Lorg/quartz/Calendar;)Ljava/util/Date;
+ (Lorg/quartz/Calendar;)Ljava/util/Date;
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+executionComplete
+ (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)Lorg/quartz/Trigger$CompletedExecutionInstruction;
+ (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)Lorg/quartz/Trigger$CompletedExecutionInstruction;
+getCalendarName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getEndTime
+ ()Ljava/util/Date;
+ ()Ljava/util/Date;
+getFinalFireTime
+ ()Ljava/util/Date;
+ ()Ljava/util/Date;
+getFireInstanceId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFireTimeAfter
+ (Ljava/util/Date;)Ljava/util/Date;
+ (Ljava/util/Date;)Ljava/util/Date;
+getFullJobName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFullName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getGroup
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getJobDataMap
+ ()Lorg/quartz/JobDataMap;
+ ()Lorg/quartz/JobDataMap;
+getJobGroup
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getJobKey
+ ()Lorg/quartz/JobKey;
+ ()Lorg/quartz/JobKey;
+getJobName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getKey
+ ()Lorg/quartz/TriggerKey;
+ ()Lorg/quartz/TriggerKey;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getNextFireTime
+ ()Ljava/util/Date;
+ ()Ljava/util/Date;
+getPreviousFireTime
+ ()Ljava/util/Date;
+ ()Ljava/util/Date;
+getScheduleBuilder
+ ()Lorg/quartz/ScheduleBuilder<TT;>;
+ ()Lorg/quartz/ScheduleBuilder<TT;>;
+getStartTime
+ ()Ljava/util/Date;
+ ()Ljava/util/Date;
+getTriggerBuilder
+ ()Lorg/quartz/TriggerBuilder<TT;>;
+ ()Lorg/quartz/TriggerBuilder<TT;>;
+setCalendarName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDescription
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setEndTime
+ (Ljava/util/Date;)V
+ (Ljava/util/Date;)V
+setFireInstanceId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setGroup
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setJobDataMap
+ (Lorg/quartz/JobDataMap;)V
+ (Lorg/quartz/JobDataMap;)V
+setJobGroup
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setJobKey
+ (Lorg/quartz/JobKey;)V
+ (Lorg/quartz/JobKey;)V
+setJobName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setKey
+ (Lorg/quartz/TriggerKey;)V
+ (Lorg/quartz/TriggerKey;)V
+setName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setStartTime
+ (Ljava/util/Date;)V
+ (Ljava/util/Date;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+triggered
+ (Lorg/quartz/Calendar;)V
+ (Lorg/quartz/Calendar;)V
+updateAfterMisfire
+ (Lorg/quartz/Calendar;)V
+ (Lorg/quartz/Calendar;)V
+updateWithNewCalendar
+ (Lorg/quartz/Calendar;J)V
+ (Lorg/quartz/Calendar;J)V

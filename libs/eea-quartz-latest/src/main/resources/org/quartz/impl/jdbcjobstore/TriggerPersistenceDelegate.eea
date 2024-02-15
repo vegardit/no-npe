@@ -1,0 +1,23 @@
+class org/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate
+
+canHandleTriggerType
+ (Lorg/quartz/spi/OperableTrigger;)Z
+ (Lorg/quartz/spi/OperableTrigger;)Z
+deleteExtendedTriggerProperties
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)I
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)I
+getHandledTriggerTypeDiscriminator
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+initialize
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+insertExtendedTriggerProperties
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
+loadExtendedTriggerProperties
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
+updateExtendedTriggerProperties
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I

@@ -1,0 +1,67 @@
+class org/quartz/DailyTimeIntervalScheduleBuilder
+
+ALL_DAYS_OF_THE_WEEK
+ Ljava/util/Set<Ljava/lang/Integer;>;
+ L1java/util/Set<Ljava/lang/Integer;>;
+MONDAY_THROUGH_FRIDAY
+ Ljava/util/Set<Ljava/lang/Integer;>;
+ L1java/util/Set<Ljava/lang/Integer;>;
+SATURDAY_AND_SUNDAY
+ Ljava/util/Set<Ljava/lang/Integer;>;
+ L1java/util/Set<Ljava/lang/Integer;>;
+
+dailyTimeIntervalSchedule
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+
+build
+ ()Lorg/quartz/spi/MutableTrigger;
+ ()Lorg/quartz/spi/MutableTrigger;
+endingDailyAfterCount
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+endingDailyAt
+ (Lorg/quartz/TimeOfDay;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ (Lorg/quartz/TimeOfDay;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+onDaysOfTheWeek
+ (Ljava/util/Set<Ljava/lang/Integer;>;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ (Ljava/util/Set<Ljava/lang/Integer;>;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+onDaysOfTheWeek
+ ([Ljava/lang/Integer;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ ([Ljava/lang/Integer;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+onEveryDay
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+onMondayThroughFriday
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+onSaturdayAndSunday
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+startingDailyAt
+ (Lorg/quartz/TimeOfDay;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ (Lorg/quartz/TimeOfDay;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+withInterval
+ (ILorg/quartz/DateBuilder$IntervalUnit;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ (ILorg/quartz/DateBuilder$IntervalUnit;)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+withIntervalInHours
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+withIntervalInMinutes
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+withIntervalInSeconds
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+withMisfireHandlingInstructionDoNothing
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+withMisfireHandlingInstructionFireAndProceed
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+withMisfireHandlingInstructionIgnoreMisfires
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ ()Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+withRepeatCount
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;
+ (I)Lorg/quartz/DailyTimeIntervalScheduleBuilder;

@@ -1,0 +1,18 @@
+class org/quartz/impl/jdbcjobstore/UpdateLockRowSemaphore
+
+INSERT_LOCK
+ Ljava/lang/String;
+ L1java/lang/String;
+UPDATE_FOR_LOCK
+ Ljava/lang/String;
+ L1java/lang/String;
+
+executeSQL
+ (Ljava/sql/Connection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/sql/Connection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+getUpdateLockRowSQL
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+setUpdateLockRowSQL
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

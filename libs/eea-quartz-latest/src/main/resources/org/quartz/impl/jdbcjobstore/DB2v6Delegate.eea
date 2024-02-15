@@ -1,0 +1,27 @@
+class org/quartz/impl/jdbcjobstore/DB2v6Delegate
+
+SELECT_NUM_CALENDARS
+ Ljava/lang/String;
+ L1java/lang/String;
+SELECT_NUM_JOBS
+ Ljava/lang/String;
+ L1java/lang/String;
+SELECT_NUM_TRIGGERS
+ Ljava/lang/String;
+ L1java/lang/String;
+SELECT_NUM_TRIGGERS_FOR_JOB
+ Ljava/lang/String;
+ L1java/lang/String;
+
+selectNumCalendars
+ (Ljava/sql/Connection;)I
+ (Ljava/sql/Connection;)I
+selectNumJobs
+ (Ljava/sql/Connection;)I
+ (Ljava/sql/Connection;)I
+selectNumTriggers
+ (Ljava/sql/Connection;)I
+ (Ljava/sql/Connection;)I
+selectNumTriggersForJob
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)I
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)I

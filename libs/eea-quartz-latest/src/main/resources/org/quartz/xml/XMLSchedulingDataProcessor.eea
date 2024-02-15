@@ -1,0 +1,139 @@
+class org/quartz/xml/XMLSchedulingDataProcessor
+
+QUARTZ_NS
+ Ljava/lang/String;
+ L1java/lang/String;
+QUARTZ_SCHEMA_WEB_URL
+ Ljava/lang/String;
+ L1java/lang/String;
+QUARTZ_SYSTEM_ID_JAR_PREFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+QUARTZ_XML_DEFAULT_FILE_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+QUARTZ_XSD_PATH_IN_JAR
+ Ljava/lang/String;
+ L1java/lang/String;
+
+classLoadHelper
+ Lorg/quartz/spi/ClassLoadHelper;
+ Lorg/quartz/spi/ClassLoadHelper;
+jobGroupsToDelete
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+jobGroupsToNeverDelete
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+jobsToDelete
+ Ljava/util/List<Lorg/quartz/JobKey;>;
+ Ljava/util/List<Lorg/quartz/JobKey;>;
+loadedJobs
+ Ljava/util/List<Lorg/quartz/JobDetail;>;
+ Ljava/util/List<Lorg/quartz/JobDetail;>;
+loadedTriggers
+ Ljava/util/List<Lorg/quartz/spi/MutableTrigger;>;
+ Ljava/util/List<Lorg/quartz/spi/MutableTrigger;>;
+triggerGroupsToDelete
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+triggerGroupsToNeverDelete
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+triggersToDelete
+ Ljava/util/List<Lorg/quartz/TriggerKey;>;
+ Ljava/util/List<Lorg/quartz/TriggerKey;>;
+validationExceptions
+ Ljava/util/Collection<Ljava/lang/Exception;>;
+ Ljava/util/Collection<Ljava/lang/Exception;>;
+
+<init>
+ (Lorg/quartz/spi/ClassLoadHelper;)V
+ (Lorg/quartz/spi/ClassLoadHelper;)V
+addJobGroupToNeverDelete
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addJobToSchedule
+ (Lorg/quartz/JobDetail;)V
+ (Lorg/quartz/JobDetail;)V
+addTriggerGroupToNeverDelete
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addTriggerToSchedule
+ (Lorg/quartz/spi/MutableTrigger;)V
+ (Lorg/quartz/spi/MutableTrigger;)V
+addValidationException
+ (Lorg/xml/sax/SAXException;)V
+ (Lorg/xml/sax/SAXException;)V
+error
+ (Lorg/xml/sax/SAXParseException;)V
+ (Lorg/xml/sax/SAXParseException;)V
+executePreProcessCommands
+ (Lorg/quartz/Scheduler;)V
+ (Lorg/quartz/Scheduler;)V
+fatalError
+ (Lorg/xml/sax/SAXParseException;)V
+ (Lorg/xml/sax/SAXParseException;)V
+getBoolean
+ (Ljavax/xml/xpath/XPath;Ljava/lang/String;Lorg/w3c/dom/Document;)Ljava/lang/Boolean;
+ (Ljavax/xml/xpath/XPath;Ljava/lang/String;Lorg/w3c/dom/Document;)Ljava/lang/Boolean;
+getInputStream
+ (Ljava/lang/String;)Ljava/io/InputStream;
+ (Ljava/lang/String;)Ljava/io/InputStream;
+getJobGroupsToNeverDelete
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getLoadedJobs
+ ()Ljava/util/List<Lorg/quartz/JobDetail;>;
+ ()Ljava/util/List<Lorg/quartz/JobDetail;>;
+getLoadedTriggers
+ ()Ljava/util/List<Lorg/quartz/spi/MutableTrigger;>;
+ ()Ljava/util/List<Lorg/quartz/spi/MutableTrigger;>;
+getSystemIdForFileName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getTriggerGroupsToNeverDelete
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getTrimmedToNullString
+ (Ljavax/xml/xpath/XPath;Ljava/lang/String;Lorg/w3c/dom/Node;)Ljava/lang/String;
+ (Ljavax/xml/xpath/XPath;Ljava/lang/String;Lorg/w3c/dom/Node;)Ljava/lang/String;
+getURL
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+process
+ (Lorg/xml/sax/InputSource;)V
+ (Lorg/xml/sax/InputSource;)V
+processFile
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+processFile
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+processFileAndScheduleJobs
+ (Ljava/lang/String;Ljava/lang/String;Lorg/quartz/Scheduler;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/quartz/Scheduler;)V
+processFileAndScheduleJobs
+ (Ljava/lang/String;Lorg/quartz/Scheduler;)V
+ (Ljava/lang/String;Lorg/quartz/Scheduler;)V
+processFileAndScheduleJobs
+ (Lorg/quartz/Scheduler;Z)V
+ (Lorg/quartz/Scheduler;Z)V
+processStreamAndScheduleJobs
+ (Ljava/io/InputStream;Ljava/lang/String;Lorg/quartz/Scheduler;)V
+ (Ljava/io/InputStream;Ljava/lang/String;Lorg/quartz/Scheduler;)V
+removeJobGroupToNeverDelete
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removeTriggerGroupToNeverDelete
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+resolveSchemaSource
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+scheduleJobs
+ (Lorg/quartz/Scheduler;)V
+ (Lorg/quartz/Scheduler;)V
+warning
+ (Lorg/xml/sax/SAXParseException;)V
+ (Lorg/xml/sax/SAXParseException;)V

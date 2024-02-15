@@ -1,0 +1,79 @@
+class org/quartz/impl/jdbcjobstore/SimplePropertiesTriggerPersistenceDelegateSupport
+
+COL_BOOL_PROP_1
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_BOOL_PROP_2
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_DEC_PROP_1
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_DEC_PROP_2
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_INT_PROP_1
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_INT_PROP_2
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_LONG_PROP_1
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_LONG_PROP_2
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_STR_PROP_1
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_STR_PROP_2
+ Ljava/lang/String;
+ L1java/lang/String;
+COL_STR_PROP_3
+ Ljava/lang/String;
+ L1java/lang/String;
+DELETE_SIMPLE_PROPS_TRIGGER
+ Ljava/lang/String;
+ L1java/lang/String;
+INSERT_SIMPLE_PROPS_TRIGGER
+ Ljava/lang/String;
+ L1java/lang/String;
+SELECT_SIMPLE_PROPS_TRIGGER
+ Ljava/lang/String;
+ L1java/lang/String;
+TABLE_SIMPLE_PROPERTIES_TRIGGERS
+ Ljava/lang/String;
+ L1java/lang/String;
+UPDATE_SIMPLE_PROPS_TRIGGER
+ Ljava/lang/String;
+ L1java/lang/String;
+
+schedNameLiteral
+ Ljava/lang/String;
+ Ljava/lang/String;
+tablePrefix
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+deleteExtendedTriggerProperties
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)I
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)I
+getTriggerProperties
+ (Lorg/quartz/spi/OperableTrigger;)Lorg/quartz/impl/jdbcjobstore/SimplePropertiesTriggerProperties;
+ (Lorg/quartz/spi/OperableTrigger;)Lorg/quartz/impl/jdbcjobstore/SimplePropertiesTriggerProperties;
+getTriggerPropertyBundle
+ (Lorg/quartz/impl/jdbcjobstore/SimplePropertiesTriggerProperties;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
+ (Lorg/quartz/impl/jdbcjobstore/SimplePropertiesTriggerProperties;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
+initialize
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+insertExtendedTriggerProperties
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
+loadExtendedTriggerProperties
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
+updateExtendedTriggerProperties
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I

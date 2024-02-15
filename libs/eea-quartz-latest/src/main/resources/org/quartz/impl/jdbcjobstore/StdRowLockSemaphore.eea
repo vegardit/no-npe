@@ -1,0 +1,21 @@
+class org/quartz/impl/jdbcjobstore/StdRowLockSemaphore
+
+INSERT_LOCK
+ Ljava/lang/String;
+ L1java/lang/String;
+SELECT_FOR_LOCK
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+executeSQL
+ (Ljava/sql/Connection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/sql/Connection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+getSelectWithLockSQL
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+setSelectWithLockSQL
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

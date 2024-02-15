@@ -1,0 +1,27 @@
+class org/quartz/impl/jdbcjobstore/JTANonClusteredSemaphore
+
+DEFAULT_TRANSACTION_MANANGER_LOCATION
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getLog
+ ()Lorg/slf4j/Logger;
+ ()Lorg/slf4j/Logger;
+getTransaction
+ ()Ljavax/transaction/Transaction;
+ ()Ljavax/transaction/Transaction;
+isLockOwner
+ (Ljava/sql/Connection;Ljava/lang/String;)Z
+ (Ljava/sql/Connection;Ljava/lang/String;)Z
+obtainLock
+ (Ljava/sql/Connection;Ljava/lang/String;)Z
+ (Ljava/sql/Connection;Ljava/lang/String;)Z
+releaseLock
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+releaseLock
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+setTransactionManagerJNDIName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

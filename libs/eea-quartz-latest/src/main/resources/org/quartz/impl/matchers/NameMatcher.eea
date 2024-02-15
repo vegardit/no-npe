@@ -1,0 +1,46 @@
+class org/quartz/impl/matchers/NameMatcher
+ <T:Lorg/quartz/utils/Key<*>;>
+
+jobNameContains
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/JobKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/JobKey;>;
+jobNameEndsWith
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/JobKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/JobKey;>;
+jobNameEquals
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/JobKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/JobKey;>;
+jobNameStartsWith
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/JobKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/JobKey;>;
+nameContains
+ <U:Lorg/quartz/utils/Key<*>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<TU;>;
+ <U:Lorg/quartz/utils/Key<*>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<TU;>;
+nameEndsWith
+ <U:Lorg/quartz/utils/Key<*>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<TU;>;
+ <U:Lorg/quartz/utils/Key<*>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<TU;>;
+nameEquals
+ <T:Lorg/quartz/utils/Key<*>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<TT;>;
+ <T:Lorg/quartz/utils/Key<*>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<TT;>;
+nameStartsWith
+ <U:Lorg/quartz/utils/Key<*>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<TU;>;
+ <U:Lorg/quartz/utils/Key<*>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<TU;>;
+triggerNameContains
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/TriggerKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/TriggerKey;>;
+triggerNameEndsWith
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/TriggerKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/TriggerKey;>;
+triggerNameEquals
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/TriggerKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/TriggerKey;>;
+triggerNameStartsWith
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/TriggerKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/TriggerKey;>;
+
+<init>
+ (Ljava/lang/String;Lorg/quartz/impl/matchers/StringMatcher$StringOperatorName;)V
+ (Ljava/lang/String;Lorg/quartz/impl/matchers/StringMatcher$StringOperatorName;)V
+getValue
+ (TT;)Ljava/lang/String;
+ (TT;)Ljava/lang/String;

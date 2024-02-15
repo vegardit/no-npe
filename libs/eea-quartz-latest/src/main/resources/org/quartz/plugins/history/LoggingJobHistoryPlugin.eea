@@ -1,0 +1,44 @@
+class org/quartz/plugins/history/LoggingJobHistoryPlugin
+
+getJobFailedMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getJobSuccessMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getJobToBeFiredMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getJobWasVetoedMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLog
+ ()Lorg/slf4j/Logger;
+ ()Lorg/slf4j/Logger;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+initialize
+ (Ljava/lang/String;Lorg/quartz/Scheduler;Lorg/quartz/spi/ClassLoadHelper;)V
+ (Ljava/lang/String;Lorg/quartz/Scheduler;Lorg/quartz/spi/ClassLoadHelper;)V
+jobExecutionVetoed
+ (Lorg/quartz/JobExecutionContext;)V
+ (Lorg/quartz/JobExecutionContext;)V
+jobToBeExecuted
+ (Lorg/quartz/JobExecutionContext;)V
+ (Lorg/quartz/JobExecutionContext;)V
+jobWasExecuted
+ (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)V
+ (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)V
+setJobFailedMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setJobSuccessMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setJobToBeFiredMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setJobWasVetoedMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

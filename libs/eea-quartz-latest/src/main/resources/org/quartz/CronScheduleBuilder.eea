@@ -1,0 +1,42 @@
+class org/quartz/CronScheduleBuilder
+
+atHourAndMinuteOnGivenDaysOfWeek
+ (II[Ljava/lang/Integer;)Lorg/quartz/CronScheduleBuilder;
+ (II[Ljava/lang/Integer;)Lorg/quartz/CronScheduleBuilder;
+cronSchedule
+ (Ljava/lang/String;)Lorg/quartz/CronScheduleBuilder;
+ (Ljava/lang/String;)Lorg/quartz/CronScheduleBuilder;
+cronSchedule
+ (Lorg/quartz/CronExpression;)Lorg/quartz/CronScheduleBuilder;
+ (Lorg/quartz/CronExpression;)Lorg/quartz/CronScheduleBuilder;
+cronScheduleNonvalidatedExpression
+ (Ljava/lang/String;)Lorg/quartz/CronScheduleBuilder;
+ (Ljava/lang/String;)Lorg/quartz/CronScheduleBuilder;
+dailyAtHourAndMinute
+ (II)Lorg/quartz/CronScheduleBuilder;
+ (II)Lorg/quartz/CronScheduleBuilder;
+monthlyOnDayAndHourAndMinute
+ (III)Lorg/quartz/CronScheduleBuilder;
+ (III)Lorg/quartz/CronScheduleBuilder;
+weeklyOnDayAndHourAndMinute
+ (III)Lorg/quartz/CronScheduleBuilder;
+ (III)Lorg/quartz/CronScheduleBuilder;
+
+<init>
+ (Lorg/quartz/CronExpression;)V
+ (Lorg/quartz/CronExpression;)V
+build
+ ()Lorg/quartz/spi/MutableTrigger;
+ ()Lorg/quartz/spi/MutableTrigger;
+inTimeZone
+ (Ljava/util/TimeZone;)Lorg/quartz/CronScheduleBuilder;
+ (Ljava/util/TimeZone;)Lorg/quartz/CronScheduleBuilder;
+withMisfireHandlingInstructionDoNothing
+ ()Lorg/quartz/CronScheduleBuilder;
+ ()Lorg/quartz/CronScheduleBuilder;
+withMisfireHandlingInstructionFireAndProceed
+ ()Lorg/quartz/CronScheduleBuilder;
+ ()Lorg/quartz/CronScheduleBuilder;
+withMisfireHandlingInstructionIgnoreMisfires
+ ()Lorg/quartz/CronScheduleBuilder;
+ ()Lorg/quartz/CronScheduleBuilder;

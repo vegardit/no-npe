@@ -1,0 +1,158 @@
+class org/quartz/impl/RemoteMBeanScheduler
+
+addCalendar
+ (Ljava/lang/String;Lorg/quartz/Calendar;ZZ)V
+ (Ljava/lang/String;Lorg/quartz/Calendar;ZZ)V
+addJob
+ (Lorg/quartz/JobDetail;Z)V
+ (Lorg/quartz/JobDetail;Z)V
+addJob
+ (Lorg/quartz/JobDetail;ZZ)V
+ (Lorg/quartz/JobDetail;ZZ)V
+checkExists
+ (Lorg/quartz/JobKey;)Z
+ (Lorg/quartz/JobKey;)Z
+checkExists
+ (Lorg/quartz/TriggerKey;)Z
+ (Lorg/quartz/TriggerKey;)Z
+deleteCalendar
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+deleteJob
+ (Lorg/quartz/JobKey;)Z
+ (Lorg/quartz/JobKey;)Z
+deleteJobs
+ (Ljava/util/List<Lorg/quartz/JobKey;>;)Z
+ (Ljava/util/List<Lorg/quartz/JobKey;>;)Z
+getAttribute
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getAttributes
+ ([Ljava/lang/String;)Ljavax/management/AttributeList;
+ ([Ljava/lang/String;)Ljavax/management/AttributeList;
+getCalendar
+ (Ljava/lang/String;)Lorg/quartz/Calendar;
+ (Ljava/lang/String;)Lorg/quartz/Calendar;
+getCalendarNames
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getContext
+ ()Lorg/quartz/SchedulerContext;
+ ()Lorg/quartz/SchedulerContext;
+getCurrentlyExecutingJobs
+ ()Ljava/util/List<Lorg/quartz/JobExecutionContext;>;
+ ()Ljava/util/List<Lorg/quartz/JobExecutionContext;>;
+getJobDetail
+ (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
+ (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
+getJobGroupNames
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getJobKeys
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Lorg/quartz/JobKey;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Lorg/quartz/JobKey;>;
+getListenerManager
+ ()Lorg/quartz/ListenerManager;
+ ()Lorg/quartz/ListenerManager;
+getMetaData
+ ()Lorg/quartz/SchedulerMetaData;
+ ()Lorg/quartz/SchedulerMetaData;
+getPausedTriggerGroups
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getSchedulerInstanceId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSchedulerName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSchedulerObjectName
+ ()Ljavax/management/ObjectName;
+ ()Ljavax/management/ObjectName;
+getTrigger
+ (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger;
+ (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger;
+getTriggerGroupNames
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getTriggerKeys
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Lorg/quartz/TriggerKey;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Lorg/quartz/TriggerKey;>;
+getTriggerState
+ (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+ (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+getTriggersOfJob
+ (Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/Trigger;>;
+ (Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/Trigger;>;
+interrupt
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+interrupt
+ (Lorg/quartz/JobKey;)Z
+ (Lorg/quartz/JobKey;)Z
+invoke
+ (Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;
+pauseJob
+ (Lorg/quartz/JobKey;)V
+ (Lorg/quartz/JobKey;)V
+pauseJobs
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V
+pauseTrigger
+ (Lorg/quartz/TriggerKey;)V
+ (Lorg/quartz/TriggerKey;)V
+pauseTriggers
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V
+rescheduleJob
+ (Lorg/quartz/TriggerKey;Lorg/quartz/Trigger;)Ljava/util/Date;
+ (Lorg/quartz/TriggerKey;Lorg/quartz/Trigger;)Ljava/util/Date;
+resetTriggerFromErrorState
+ (Lorg/quartz/TriggerKey;)V
+ (Lorg/quartz/TriggerKey;)V
+resumeJob
+ (Lorg/quartz/JobKey;)V
+ (Lorg/quartz/JobKey;)V
+resumeJobs
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V
+resumeTrigger
+ (Lorg/quartz/TriggerKey;)V
+ (Lorg/quartz/TriggerKey;)V
+resumeTriggers
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V
+scheduleJob
+ (Lorg/quartz/JobDetail;Ljava/util/Set<+Lorg/quartz/Trigger;>;Z)V
+ (Lorg/quartz/JobDetail;Ljava/util/Set<+Lorg/quartz/Trigger;>;Z)V
+scheduleJob
+ (Lorg/quartz/JobDetail;Lorg/quartz/Trigger;)Ljava/util/Date;
+ (Lorg/quartz/JobDetail;Lorg/quartz/Trigger;)Ljava/util/Date;
+scheduleJob
+ (Lorg/quartz/Trigger;)Ljava/util/Date;
+ (Lorg/quartz/Trigger;)Ljava/util/Date;
+scheduleJobs
+ (Ljava/util/Map<Lorg/quartz/JobDetail;Ljava/util/Set<+Lorg/quartz/Trigger;>;>;Z)V
+ (Ljava/util/Map<Lorg/quartz/JobDetail;Ljava/util/Set<+Lorg/quartz/Trigger;>;>;Z)V
+setJobFactory
+ (Lorg/quartz/spi/JobFactory;)V
+ (Lorg/quartz/spi/JobFactory;)V
+setSchedulerObjectName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setSchedulerObjectName
+ (Ljavax/management/ObjectName;)V
+ (Ljavax/management/ObjectName;)V
+triggerJob
+ (Lorg/quartz/JobKey;)V
+ (Lorg/quartz/JobKey;)V
+triggerJob
+ (Lorg/quartz/JobKey;Lorg/quartz/JobDataMap;)V
+ (Lorg/quartz/JobKey;Lorg/quartz/JobDataMap;)V
+unscheduleJob
+ (Lorg/quartz/TriggerKey;)Z
+ (Lorg/quartz/TriggerKey;)Z
+unscheduleJobs
+ (Ljava/util/List<Lorg/quartz/TriggerKey;>;)Z
+ (Ljava/util/List<Lorg/quartz/TriggerKey;>;)Z

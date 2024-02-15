@@ -1,0 +1,27 @@
+class org/quartz/utils/C3p0PoolingConnectionProvider
+
+DB_DISCARD_IDLE_CONNECTIONS_SECONDS
+ Ljava/lang/String;
+ L1java/lang/String;
+DB_IDLE_VALIDATION_SECONDS
+ Ljava/lang/String;
+ L1java/lang/String;
+DB_MAX_CACHED_STATEMENTS_PER_CONNECTION
+ Ljava/lang/String;
+ L1java/lang/String;
+DB_VALIDATE_ON_CHECKOUT
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+<init>
+ (Ljava/util/Properties;)V
+ (Ljava/util/Properties;)V
+getConnection
+ ()Ljava/sql/Connection;
+ ()Ljava/sql/Connection;
+getDataSource
+ ()Lcom/mchange/v2/c3p0/ComboPooledDataSource;
+ ()Lcom/mchange/v2/c3p0/ComboPooledDataSource;

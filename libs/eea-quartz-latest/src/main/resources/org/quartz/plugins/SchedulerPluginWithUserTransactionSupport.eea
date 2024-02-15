@@ -1,0 +1,20 @@
+class org/quartz/plugins/SchedulerPluginWithUserTransactionSupport
+
+getLog
+ ()Lorg/slf4j/Logger;
+ ()Lorg/slf4j/Logger;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getScheduler
+ ()Lorg/quartz/Scheduler;
+ ()Lorg/quartz/Scheduler;
+initialize
+ (Ljava/lang/String;Lorg/quartz/Scheduler;)V
+ (Ljava/lang/String;Lorg/quartz/Scheduler;)V
+shutdown
+ (Ljavax/transaction/UserTransaction;)V
+ (Ljavax/transaction/UserTransaction;)V
+start
+ (Ljavax/transaction/UserTransaction;)V
+ (Ljavax/transaction/UserTransaction;)V

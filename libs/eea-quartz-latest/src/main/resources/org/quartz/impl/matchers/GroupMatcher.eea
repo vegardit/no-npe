@@ -1,0 +1,55 @@
+class org/quartz/impl/matchers/GroupMatcher
+ <T:Lorg/quartz/utils/Key<*>;>
+
+anyGroup
+ <T:Lorg/quartz/utils/Key<TT;>;>()Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+ <T:Lorg/quartz/utils/Key<TT;>;>()Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+anyJobGroup
+ ()Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+ ()Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+anyTriggerGroup
+ ()Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+ ()Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+groupContains
+ <T:Lorg/quartz/utils/Key<TT;>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+ <T:Lorg/quartz/utils/Key<TT;>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+groupEndsWith
+ <T:Lorg/quartz/utils/Key<TT;>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+ <T:Lorg/quartz/utils/Key<TT;>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+groupEquals
+ <T:Lorg/quartz/utils/Key<TT;>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+ <T:Lorg/quartz/utils/Key<TT;>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+groupStartsWith
+ <T:Lorg/quartz/utils/Key<TT;>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+ <T:Lorg/quartz/utils/Key<TT;>;>(Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<TT;>;
+jobGroupContains
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+jobGroupEndsWith
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+jobGroupEquals
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+jobGroupStartsWith
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;
+triggerGroupContains
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+triggerGroupEndsWith
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+triggerGroupEquals
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+triggerGroupStartsWith
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+ (Ljava/lang/String;)Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;
+
+<init>
+ (Ljava/lang/String;Lorg/quartz/impl/matchers/StringMatcher$StringOperatorName;)V
+ (Ljava/lang/String;Lorg/quartz/impl/matchers/StringMatcher$StringOperatorName;)V
+getValue
+ (TT;)Ljava/lang/String;
+ (TT;)Ljava/lang/String;

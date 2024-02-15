@@ -1,0 +1,400 @@
+class org/quartz/impl/jdbcjobstore/JobStoreSupport
+
+LOCK_STATE_ACCESS
+ Ljava/lang/String;
+ L1java/lang/String;
+LOCK_TRIGGER_ACCESS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+calendarCache
+ Ljava/util/HashMap<Ljava/lang/String;Lorg/quartz/Calendar;>;
+ Ljava/util/HashMap<Ljava/lang/String;Lorg/quartz/Calendar;>;
+delegateClass
+ Ljava/lang/Class<+Lorg/quartz/impl/jdbcjobstore/DriverDelegate;>;
+ Ljava/lang/Class<+Lorg/quartz/impl/jdbcjobstore/DriverDelegate;>;
+delegateClassName
+ Ljava/lang/String;
+ Ljava/lang/String;
+delegateInitString
+ Ljava/lang/String;
+ Ljava/lang/String;
+dsName
+ Ljava/lang/String;
+ Ljava/lang/String;
+instanceId
+ Ljava/lang/String;
+ Ljava/lang/String;
+instanceName
+ Ljava/lang/String;
+ Ljava/lang/String;
+sigChangeForTxCompletion
+ Ljava/lang/ThreadLocal<Ljava/lang/Long;>;
+ Ljava/lang/ThreadLocal<Ljava/lang/Long;>;
+tablePrefix
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+acquireNextTrigger
+ (Ljava/sql/Connection;JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Ljava/sql/Connection;JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+acquireNextTriggers
+ (JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+calcFailedIfAfter
+ (Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;)J
+ (Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;)J
+calendarExists
+ (Ljava/sql/Connection;Ljava/lang/String;)Z
+ (Ljava/sql/Connection;Ljava/lang/String;)Z
+checkBlockedState
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;Ljava/lang/String;)Ljava/lang/String;
+checkExists
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Z
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Z
+checkExists
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Z
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Z
+checkExists
+ (Lorg/quartz/JobKey;)Z
+ (Lorg/quartz/JobKey;)Z
+checkExists
+ (Lorg/quartz/TriggerKey;)Z
+ (Lorg/quartz/TriggerKey;)Z
+cleanupConnection
+ (Ljava/sql/Connection;)V
+ (Ljava/sql/Connection;)V
+clearAllSchedulingData
+ (Ljava/sql/Connection;)V
+ (Ljava/sql/Connection;)V
+clearAndGetSignalSchedulingChangeOnTxCompletion
+ ()Ljava/lang/Long;
+ ()Ljava/lang/Long;
+closeConnection
+ (Ljava/sql/Connection;)V
+ (Ljava/sql/Connection;)V
+clusterCheckIn
+ (Ljava/sql/Connection;)Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
+ (Ljava/sql/Connection;)Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
+clusterRecover
+ (Ljava/sql/Connection;Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;)V
+ (Ljava/sql/Connection;Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;)V
+commitConnection
+ (Ljava/sql/Connection;)V
+ (Ljava/sql/Connection;)V
+doRecoverMisfires
+ ()Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$RecoverMisfiredJobsResult;
+ ()Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$RecoverMisfiredJobsResult;
+executeInLock
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;)TT;
+executeInNonManagedTXLock
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionValidator<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionValidator<TT;>;)TT;
+executeWithoutLock
+ <T:Ljava/lang/Object;>(Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;)TT;
+findFailedInstances
+ (Ljava/sql/Connection;)Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
+ (Ljava/sql/Connection;)Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
+getAttributeRestoringConnection
+ (Ljava/sql/Connection;)Ljava/sql/Connection;
+ (Ljava/sql/Connection;)Ljava/sql/Connection;
+getCalendarNames
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getCalendarNames
+ (Ljava/sql/Connection;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/sql/Connection;)Ljava/util/List<Ljava/lang/String;>;
+getClassLoadHelper
+ ()Lorg/quartz/spi/ClassLoadHelper;
+ ()Lorg/quartz/spi/ClassLoadHelper;
+getConnection
+ ()Ljava/sql/Connection;
+ ()Ljava/sql/Connection;
+getDataSource
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDelegate
+ ()Lorg/quartz/impl/jdbcjobstore/DriverDelegate;
+ ()Lorg/quartz/impl/jdbcjobstore/DriverDelegate;
+getDriverDelegateClass
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDriverDelegateInitString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFiredTriggerRecordId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInstanceId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInstanceName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getJobGroupNames
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getJobGroupNames
+ (Ljava/sql/Connection;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/sql/Connection;)Ljava/util/List<Ljava/lang/String;>;
+getJobKeys
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Lorg/quartz/JobKey;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Lorg/quartz/JobKey;>;
+getJobNames
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Lorg/quartz/JobKey;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Lorg/quartz/JobKey;>;
+getLockHandler
+ ()Lorg/quartz/impl/jdbcjobstore/Semaphore;
+ ()Lorg/quartz/impl/jdbcjobstore/Semaphore;
+getLog
+ ()Lorg/slf4j/Logger;
+ ()Lorg/slf4j/Logger;
+getNonManagedTXConnection
+ ()Ljava/sql/Connection;
+ ()Ljava/sql/Connection;
+getNumberOfCalendars
+ (Ljava/sql/Connection;)I
+ (Ljava/sql/Connection;)I
+getNumberOfJobs
+ (Ljava/sql/Connection;)I
+ (Ljava/sql/Connection;)I
+getNumberOfTriggers
+ (Ljava/sql/Connection;)I
+ (Ljava/sql/Connection;)I
+getPausedTriggerGroups
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getPausedTriggerGroups
+ (Ljava/sql/Connection;)Ljava/util/Set<Ljava/lang/String;>;
+ (Ljava/sql/Connection;)Ljava/util/Set<Ljava/lang/String;>;
+getSelectWithLockSQL
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTablePrefix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getThreadExecutor
+ ()Lorg/quartz/spi/ThreadExecutor;
+ ()Lorg/quartz/spi/ThreadExecutor;
+getTriggerGroupNames
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getTriggerGroupNames
+ (Ljava/sql/Connection;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/sql/Connection;)Ljava/util/List<Ljava/lang/String;>;
+getTriggerKeys
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Lorg/quartz/TriggerKey;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Lorg/quartz/TriggerKey;>;
+getTriggerNames
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Lorg/quartz/TriggerKey;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Lorg/quartz/TriggerKey;>;
+getTriggerState
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+getTriggerState
+ (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+ (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+getTriggersForJob
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+getTriggersForJob
+ (Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+initialize
+ (Lorg/quartz/spi/ClassLoadHelper;Lorg/quartz/spi/SchedulerSignaler;)V
+ (Lorg/quartz/spi/ClassLoadHelper;Lorg/quartz/spi/SchedulerSignaler;)V
+jobExists
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Z
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Z
+logWarnIfNonZero
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V
+pauseAll
+ (Ljava/sql/Connection;)V
+ (Ljava/sql/Connection;)V
+pauseJob
+ (Lorg/quartz/JobKey;)V
+ (Lorg/quartz/JobKey;)V
+pauseJobs
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+pauseTrigger
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)V
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)V
+pauseTrigger
+ (Lorg/quartz/TriggerKey;)V
+ (Lorg/quartz/TriggerKey;)V
+pauseTriggerGroup
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+pauseTriggers
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+recoverJobs
+ (Ljava/sql/Connection;)V
+ (Ljava/sql/Connection;)V
+recoverMisfiredJobs
+ (Ljava/sql/Connection;Z)Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$RecoverMisfiredJobsResult;
+ (Ljava/sql/Connection;Z)Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$RecoverMisfiredJobsResult;
+releaseAcquiredTrigger
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)V
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)V
+releaseAcquiredTrigger
+ (Lorg/quartz/spi/OperableTrigger;)V
+ (Lorg/quartz/spi/OperableTrigger;)V
+releaseLock
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+removeCalendar
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removeCalendar
+ (Ljava/sql/Connection;Ljava/lang/String;)Z
+ (Ljava/sql/Connection;Ljava/lang/String;)Z
+removeJob
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Z
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Z
+removeJob
+ (Lorg/quartz/JobKey;)Z
+ (Lorg/quartz/JobKey;)Z
+removeJobs
+ (Ljava/util/List<Lorg/quartz/JobKey;>;)Z
+ (Ljava/util/List<Lorg/quartz/JobKey;>;)Z
+removeTrigger
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Z
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Z
+removeTrigger
+ (Lorg/quartz/TriggerKey;)Z
+ (Lorg/quartz/TriggerKey;)Z
+removeTriggers
+ (Ljava/util/List<Lorg/quartz/TriggerKey;>;)Z
+ (Ljava/util/List<Lorg/quartz/TriggerKey;>;)Z
+replaceTrigger
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;Lorg/quartz/spi/OperableTrigger;)Z
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;Lorg/quartz/spi/OperableTrigger;)Z
+replaceTrigger
+ (Lorg/quartz/TriggerKey;Lorg/quartz/spi/OperableTrigger;)Z
+ (Lorg/quartz/TriggerKey;Lorg/quartz/spi/OperableTrigger;)Z
+resetTriggerFromErrorState
+ (Lorg/quartz/TriggerKey;)V
+ (Lorg/quartz/TriggerKey;)V
+resumeAll
+ (Ljava/sql/Connection;)V
+ (Ljava/sql/Connection;)V
+resumeJob
+ (Lorg/quartz/JobKey;)V
+ (Lorg/quartz/JobKey;)V
+resumeJobs
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+resumeTrigger
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)V
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)V
+resumeTrigger
+ (Lorg/quartz/TriggerKey;)V
+ (Lorg/quartz/TriggerKey;)V
+resumeTriggerGroup
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+resumeTriggers
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+retrieveCalendar
+ (Ljava/lang/String;)Lorg/quartz/Calendar;
+ (Ljava/lang/String;)Lorg/quartz/Calendar;
+retrieveCalendar
+ (Ljava/sql/Connection;Ljava/lang/String;)Lorg/quartz/Calendar;
+ (Ljava/sql/Connection;Ljava/lang/String;)Lorg/quartz/Calendar;
+retrieveJob
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
+retrieveJob
+ (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
+ (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
+retrieveTrigger
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/spi/OperableTrigger;
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/spi/OperableTrigger;
+retrieveTrigger
+ (Lorg/quartz/TriggerKey;)Lorg/quartz/spi/OperableTrigger;
+ (Lorg/quartz/TriggerKey;)Lorg/quartz/spi/OperableTrigger;
+retryExecuteInNonManagedTXLock
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;)TT;
+rollbackConnection
+ (Ljava/sql/Connection;)V
+ (Ljava/sql/Connection;)V
+setDataSource
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDriverDelegateClass
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDriverDelegateInitString
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setInstanceId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setInstanceName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setLockHandler
+ (Lorg/quartz/impl/jdbcjobstore/Semaphore;)V
+ (Lorg/quartz/impl/jdbcjobstore/Semaphore;)V
+setSelectWithLockSQL
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setTablePrefix
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setThreadExecutor
+ (Lorg/quartz/spi/ThreadExecutor;)V
+ (Lorg/quartz/spi/ThreadExecutor;)V
+setUseProperties
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+storeCalendar
+ (Ljava/lang/String;Lorg/quartz/Calendar;ZZ)V
+ (Ljava/lang/String;Lorg/quartz/Calendar;ZZ)V
+storeCalendar
+ (Ljava/sql/Connection;Ljava/lang/String;Lorg/quartz/Calendar;ZZ)V
+ (Ljava/sql/Connection;Ljava/lang/String;Lorg/quartz/Calendar;ZZ)V
+storeJob
+ (Ljava/sql/Connection;Lorg/quartz/JobDetail;Z)V
+ (Ljava/sql/Connection;Lorg/quartz/JobDetail;Z)V
+storeJob
+ (Lorg/quartz/JobDetail;Z)V
+ (Lorg/quartz/JobDetail;Z)V
+storeJobAndTrigger
+ (Lorg/quartz/JobDetail;Lorg/quartz/spi/OperableTrigger;)V
+ (Lorg/quartz/JobDetail;Lorg/quartz/spi/OperableTrigger;)V
+storeJobsAndTriggers
+ (Ljava/util/Map<Lorg/quartz/JobDetail;Ljava/util/Set<+Lorg/quartz/Trigger;>;>;Z)V
+ (Ljava/util/Map<Lorg/quartz/JobDetail;Ljava/util/Set<+Lorg/quartz/Trigger;>;>;Z)V
+storeTrigger
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;ZLjava/lang/String;ZZ)V
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;ZLjava/lang/String;ZZ)V
+storeTrigger
+ (Lorg/quartz/spi/OperableTrigger;Z)V
+ (Lorg/quartz/spi/OperableTrigger;Z)V
+triggerExists
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Z
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Z
+triggerFired
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)Lorg/quartz/spi/TriggerFiredBundle;
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)Lorg/quartz/spi/TriggerFiredBundle;
+triggeredJobComplete
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V
+triggeredJobComplete
+ (Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V
+ (Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V
+triggersFired
+ (Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;)Ljava/util/List<Lorg/quartz/spi/TriggerFiredResult;>;
+ (Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;)Ljava/util/List<Lorg/quartz/spi/TriggerFiredResult;>;
+updateMisfiredTrigger
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;Ljava/lang/String;Z)Z
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;Ljava/lang/String;Z)Z

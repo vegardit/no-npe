@@ -1,0 +1,29 @@
+class org/quartz/spi/OperableTrigger
+
+computeFirstFireTime
+ (Lorg/quartz/Calendar;)Ljava/util/Date;
+ (Lorg/quartz/Calendar;)Ljava/util/Date;
+executionComplete
+ (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)Lorg/quartz/Trigger$CompletedExecutionInstruction;
+ (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)Lorg/quartz/Trigger$CompletedExecutionInstruction;
+getFireInstanceId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+setFireInstanceId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setNextFireTime
+ (Ljava/util/Date;)V
+ (Ljava/util/Date;)V
+setPreviousFireTime
+ (Ljava/util/Date;)V
+ (Ljava/util/Date;)V
+triggered
+ (Lorg/quartz/Calendar;)V
+ (Lorg/quartz/Calendar;)V
+updateAfterMisfire
+ (Lorg/quartz/Calendar;)V
+ (Lorg/quartz/Calendar;)V
+updateWithNewCalendar
+ (Lorg/quartz/Calendar;J)V
+ (Lorg/quartz/Calendar;J)V
