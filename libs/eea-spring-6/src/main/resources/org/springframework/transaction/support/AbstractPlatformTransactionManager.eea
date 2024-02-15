@@ -49,6 +49,9 @@ isExistingTransaction
 prepareForCommit
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+prepareSynchronization
+ (Lorg/springframework/transaction/support/DefaultTransactionStatus;Lorg/springframework/transaction/TransactionDefinition;)V
+ (Lorg/springframework/transaction/support/DefaultTransactionStatus;Lorg/springframework/transaction/TransactionDefinition;)V
 registerAfterCompletionWithExistingTransaction
  (Ljava/lang/Object;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
  (Ljava/lang/Object;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
