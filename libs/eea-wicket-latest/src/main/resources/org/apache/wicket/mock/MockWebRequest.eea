@@ -1,0 +1,89 @@
+class org/apache/wicket/mock/MockWebRequest
+
+<init>
+ (Lorg/apache/wicket/request/Url;)V
+ (Lorg/apache/wicket/request/Url;)V
+<init>
+ (Lorg/apache/wicket/request/Url;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Lorg/apache/wicket/request/Url;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+addCookie
+ (Ljakarta/servlet/http/Cookie;)V
+ (Ljakarta/servlet/http/Cookie;)V
+addDateHeader
+ (Ljava/lang/String;Ljava/sql/Time;)V
+ (Ljava/lang/String;Ljava/sql/Time;)V
+addHeader
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+cloneWithUrl
+ (Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/mock/MockWebRequest;
+ (Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/mock/MockWebRequest;
+getCharset
+ ()Ljava/nio/charset/Charset;
+ ()Ljava/nio/charset/Charset;
+getClientUrl
+ ()Lorg/apache/wicket/request/Url;
+ ()Lorg/apache/wicket/request/Url;
+getContainerRequest
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getContextPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCookies
+ ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
+ ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
+getDateHeader
+ (Ljava/lang/String;)Ljava/time/Instant;
+ (Ljava/lang/String;)Ljava/time/Instant;
+getFilterPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getHeader
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getHeaders
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+getLocale
+ ()Ljava/util/Locale;
+ ()Ljava/util/Locale;
+getPostParameters
+ ()Lorg/apache/wicket/mock/MockRequestParameters;
+ ()Lorg/apache/wicket/mock/MockRequestParameters;
+getPrefixToContextPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getUrl
+ ()Lorg/apache/wicket/request/Url;
+ ()Lorg/apache/wicket/request/Url;
+removeHeader
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setContextPath
+ (Ljava/lang/String;)Lorg/apache/wicket/mock/MockWebRequest;
+ (Ljava/lang/String;)Lorg/apache/wicket/mock/MockWebRequest;
+setCookies
+ (Ljava/util/List<Ljakarta/servlet/http/Cookie;>;)V
+ (Ljava/util/List<Ljakarta/servlet/http/Cookie;>;)V
+setDateHeader
+ (Ljava/lang/String;Ljava/sql/Time;)V
+ (Ljava/lang/String;Ljava/sql/Time;)V
+setFilterPath
+ (Ljava/lang/String;)Lorg/apache/wicket/mock/MockWebRequest;
+ (Ljava/lang/String;)Lorg/apache/wicket/mock/MockWebRequest;
+setHeader
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+setLocale
+ (Ljava/util/Locale;)V
+ (Ljava/util/Locale;)V
+setPrefixToContextPath
+ (Ljava/lang/String;)Lorg/apache/wicket/mock/MockWebRequest;
+ (Ljava/lang/String;)Lorg/apache/wicket/mock/MockWebRequest;
+setUrl
+ (Lorg/apache/wicket/request/Url;)V
+ (Lorg/apache/wicket/request/Url;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

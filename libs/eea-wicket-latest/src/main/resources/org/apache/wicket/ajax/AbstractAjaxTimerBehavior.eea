@@ -1,0 +1,36 @@
+class org/apache/wicket/ajax/AbstractAjaxTimerBehavior
+
+onTimer
+ (Ljava/time/Duration;Lorg/danekja/java/util/function/serializable/SerializableConsumer<Lorg/apache/wicket/ajax/AjaxRequestTarget;>;)Lorg/apache/wicket/ajax/AbstractAjaxTimerBehavior;
+ (Ljava/time/Duration;Lorg/danekja/java/util/function/serializable/SerializableConsumer<Lorg/apache/wicket/ajax/AjaxRequestTarget;>;)Lorg/apache/wicket/ajax/AbstractAjaxTimerBehavior;
+
+<init>
+ (Ljava/time/Duration;)V
+ (Ljava/time/Duration;)V
+getTimerId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getUpdateInterval
+ ()Ljava/time/Duration;
+ ()Ljava/time/Duration;
+onRemove
+ (Lorg/apache/wicket/Component;)V
+ (Lorg/apache/wicket/Component;)V
+onTimer
+ (Lorg/apache/wicket/ajax/AjaxRequestTarget;)V
+ (Lorg/apache/wicket/ajax/AjaxRequestTarget;)V
+renderHead
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/head/IHeaderResponse;)V
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/head/IHeaderResponse;)V
+respond
+ (Lorg/apache/wicket/ajax/AjaxRequestTarget;)V
+ (Lorg/apache/wicket/ajax/AjaxRequestTarget;)V
+restart
+ (Lorg/apache/wicket/core/request/handler/IPartialPageRequestHandler;)V
+ (Lorg/apache/wicket/core/request/handler/IPartialPageRequestHandler;)V
+setUpdateInterval
+ (Ljava/time/Duration;)V
+ (Ljava/time/Duration;)V
+stop
+ (Lorg/apache/wicket/core/request/handler/IPartialPageRequestHandler;)V
+ (Lorg/apache/wicket/core/request/handler/IPartialPageRequestHandler;)V

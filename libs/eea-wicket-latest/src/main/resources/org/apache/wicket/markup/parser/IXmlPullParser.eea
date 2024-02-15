@@ -1,0 +1,32 @@
+class org/apache/wicket/markup/parser/IXmlPullParser
+
+getDoctype
+ ()Ljava/lang/CharSequence;
+ ()Ljava/lang/CharSequence;
+getElement
+ ()Lorg/apache/wicket/markup/parser/XmlTag;
+ ()Lorg/apache/wicket/markup/parser/XmlTag;
+getEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInput
+ (II)Ljava/lang/CharSequence;
+ (II)Ljava/lang/CharSequence;
+getInputFromPositionMarker
+ (I)Ljava/lang/CharSequence;
+ (I)Ljava/lang/CharSequence;
+getString
+ ()Ljava/lang/CharSequence;
+ ()Ljava/lang/CharSequence;
+next
+ ()Lorg/apache/wicket/markup/parser/IXmlPullParser$HttpTagType;
+ ()Lorg/apache/wicket/markup/parser/IXmlPullParser$HttpTagType;
+parse
+ (Ljava/io/InputStream;)V
+ (Ljava/io/InputStream;)V
+parse
+ (Ljava/io/InputStream;Ljava/lang/String;)V
+ (Ljava/io/InputStream;Ljava/lang/String;)V
+parse
+ (Ljava/lang/CharSequence;)V
+ (Ljava/lang/CharSequence;)V

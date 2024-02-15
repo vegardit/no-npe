@@ -1,0 +1,30 @@
+class org/apache/wicket/markup/html/form/upload/resource/AbstractFileUploadResource
+
+NO_FILE_SELECTED
+ Ljava/lang/String;
+ L1java/lang/String;
+PARAM_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+UPLOAD_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/apache/wicket/markup/html/form/upload/resource/IUploadsFileManager;)V
+ (Lorg/apache/wicket/markup/html/form/upload/resource/IUploadsFileManager;)V
+generateJsonResponse
+ (Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;Lorg/apache/wicket/protocol/http/servlet/ServletWebRequest;Ljava/util/List<Lorg/apache/wicket/markup/html/form/upload/FileUpload;>;)Ljava/lang/String;
+ (Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;Lorg/apache/wicket/protocol/http/servlet/ServletWebRequest;Ljava/util/List<Lorg/apache/wicket/markup/html/form/upload/FileUpload;>;)Ljava/lang/String;
+getFileUploadExceptionKey
+ (Lorg/apache/commons/fileupload2/core/FileUploadException;)Ljava/lang/String;
+ (Lorg/apache/commons/fileupload2/core/FileUploadException;)Ljava/lang/String;
+newResourceResponse
+ (Lorg/apache/wicket/request/resource/IResource$Attributes;)Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;
+ (Lorg/apache/wicket/request/resource/IResource$Attributes;)Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;
+prepareResponse
+ (Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;Lorg/apache/wicket/protocol/http/servlet/ServletWebRequest;Ljava/util/List<Lorg/apache/wicket/markup/html/form/upload/FileUpload;>;)V
+ (Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;Lorg/apache/wicket/protocol/http/servlet/ServletWebRequest;Ljava/util/List<Lorg/apache/wicket/markup/html/form/upload/FileUpload;>;)V
+saveFiles
+ (Ljava/util/List<Lorg/apache/wicket/markup/html/form/upload/FileUpload;>;Ljava/lang/String;)V
+ (Ljava/util/List<Lorg/apache/wicket/markup/html/form/upload/FileUpload;>;Ljava/lang/String;)V

@@ -1,0 +1,54 @@
+class org/apache/wicket/behavior/Behavior
+
+onAttribute
+ (Ljava/lang/String;Lorg/danekja/java/util/function/serializable/SerializableFunction<Ljava/lang/String;Ljava/lang/CharSequence;>;)Lorg/apache/wicket/behavior/Behavior;
+ (Ljava/lang/String;Lorg/danekja/java/util/function/serializable/SerializableFunction<Ljava/lang/String;Ljava/lang/CharSequence;>;)Lorg/apache/wicket/behavior/Behavior;
+onTag
+ (Lorg/danekja/java/util/function/serializable/SerializableBiConsumer<Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/ComponentTag;>;)Lorg/apache/wicket/behavior/Behavior;
+ (Lorg/danekja/java/util/function/serializable/SerializableBiConsumer<Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/ComponentTag;>;)Lorg/apache/wicket/behavior/Behavior;
+
+afterRender
+ (Lorg/apache/wicket/Component;)V
+ (Lorg/apache/wicket/Component;)V
+beforeRender
+ (Lorg/apache/wicket/Component;)V
+ (Lorg/apache/wicket/Component;)V
+bind
+ (Lorg/apache/wicket/Component;)V
+ (Lorg/apache/wicket/Component;)V
+canCallListener
+ (Lorg/apache/wicket/Component;)Z
+ (Lorg/apache/wicket/Component;)Z
+detach
+ (Lorg/apache/wicket/Component;)V
+ (Lorg/apache/wicket/Component;)V
+getStatelessHint
+ (Lorg/apache/wicket/Component;)Z
+ (Lorg/apache/wicket/Component;)Z
+isEnabled
+ (Lorg/apache/wicket/Component;)Z
+ (Lorg/apache/wicket/Component;)Z
+isTemporary
+ (Lorg/apache/wicket/Component;)Z
+ (Lorg/apache/wicket/Component;)Z
+onComponentTag
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/ComponentTag;)V
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/ComponentTag;)V
+onConfigure
+ (Lorg/apache/wicket/Component;)V
+ (Lorg/apache/wicket/Component;)V
+onEvent
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/event/IEvent<*>;)V
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/event/IEvent<*>;)V
+onException
+ (Lorg/apache/wicket/Component;Ljava/lang/RuntimeException;)V
+ (Lorg/apache/wicket/Component;Ljava/lang/RuntimeException;)V
+onRemove
+ (Lorg/apache/wicket/Component;)V
+ (Lorg/apache/wicket/Component;)V
+renderHead
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/head/IHeaderResponse;)V
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/head/IHeaderResponse;)V
+unbind
+ (Lorg/apache/wicket/Component;)V
+ (Lorg/apache/wicket/Component;)V

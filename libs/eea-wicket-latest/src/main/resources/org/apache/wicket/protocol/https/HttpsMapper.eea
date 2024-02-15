@@ -1,0 +1,35 @@
+class org/apache/wicket/protocol/https/HttpsMapper
+
+<init>
+ (Lorg/apache/wicket/request/IRequestMapper;Lorg/apache/wicket/protocol/https/HttpsConfig;)V
+ (Lorg/apache/wicket/request/IRequestMapper;Lorg/apache/wicket/protocol/https/HttpsConfig;)V
+createRedirectHandler
+ (Ljava/lang/String;)Lorg/apache/wicket/request/IRequestHandler;
+ (Ljava/lang/String;)Lorg/apache/wicket/request/IRequestHandler;
+createRedirectUrl
+ (Lorg/apache/wicket/request/IRequestHandler;Lorg/apache/wicket/request/Request;Lorg/apache/wicket/protocol/https/Scheme;)Ljava/lang/String;
+ (Lorg/apache/wicket/request/IRequestHandler;Lorg/apache/wicket/request/Request;Lorg/apache/wicket/protocol/https/Scheme;)Ljava/lang/String;
+getCompatibilityScore
+ (Lorg/apache/wicket/request/Request;)I
+ (Lorg/apache/wicket/request/Request;)I
+getConfig
+ ()Lorg/apache/wicket/protocol/https/HttpsConfig;
+ ()Lorg/apache/wicket/protocol/https/HttpsConfig;
+getDelegateMapper
+ ()Lorg/apache/wicket/request/IRequestMapper;
+ ()Lorg/apache/wicket/request/IRequestMapper;
+getDesiredSchemeFor
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;)Lorg/apache/wicket/protocol/https/Scheme;
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;)Lorg/apache/wicket/protocol/https/Scheme;
+getDesiredSchemeFor
+ (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/protocol/https/Scheme;
+ (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/protocol/https/Scheme;
+getSchemeOf
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/protocol/https/Scheme;
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/protocol/https/Scheme;
+mapHandler
+ (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
+ (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
+mapRequest
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/request/IRequestHandler;
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/request/IRequestHandler;

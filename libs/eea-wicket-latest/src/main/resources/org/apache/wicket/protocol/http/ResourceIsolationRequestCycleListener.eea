@@ -1,0 +1,48 @@
+class org/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener
+
+ERROR_MESSAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ ([Lorg/apache/wicket/protocol/http/IResourceIsolationPolicy;)V
+ ([Lorg/apache/wicket/protocol/http/IResourceIsolationPolicy;)V
+abortHandler
+ (Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/wicket/request/component/IRequestablePage;)V
+ (Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/wicket/request/component/IRequestablePage;)V
+addExemptedPaths
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+allowHandler
+ (Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/wicket/request/component/IRequestablePage;)V
+ (Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/wicket/request/component/IRequestablePage;)V
+isChecked
+ (Lorg/apache/wicket/request/IRequestHandler;)Z
+ (Lorg/apache/wicket/request/IRequestHandler;)Z
+isChecked
+ (Lorg/apache/wicket/request/component/IRequestablePage;)Z
+ (Lorg/apache/wicket/request/component/IRequestablePage;)Z
+onBeginRequest
+ (Lorg/apache/wicket/request/cycle/RequestCycle;)V
+ (Lorg/apache/wicket/request/cycle/RequestCycle;)V
+onEndRequest
+ (Lorg/apache/wicket/request/cycle/RequestCycle;)V
+ (Lorg/apache/wicket/request/cycle/RequestCycle;)V
+onRequestHandlerResolved
+ (Lorg/apache/wicket/request/cycle/RequestCycle;Lorg/apache/wicket/request/IRequestHandler;)V
+ (Lorg/apache/wicket/request/cycle/RequestCycle;Lorg/apache/wicket/request/IRequestHandler;)V
+setDisallowedOutcomeAction
+ (Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener$CsrfAction;)Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener;
+ (Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener$CsrfAction;)Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener;
+setErrorCode
+ (I)Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener;
+ (I)Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener;
+setErrorMessage
+ (Ljava/lang/String;)Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener;
+ (Ljava/lang/String;)Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener;
+setUnknownOutcomeAction
+ (Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener$CsrfAction;)Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener;
+ (Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener$CsrfAction;)Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener;
+suppressHandler
+ (Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/wicket/request/component/IRequestablePage;)V
+ (Ljakarta/servlet/http/HttpServletRequest;Lorg/apache/wicket/request/component/IRequestablePage;)V

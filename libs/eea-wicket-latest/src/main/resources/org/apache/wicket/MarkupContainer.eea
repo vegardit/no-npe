@@ -1,0 +1,116 @@
+class org/apache/wicket/MarkupContainer
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Lorg/apache/wicket/model/IModel<*>;)V
+ (Ljava/lang/String;Lorg/apache/wicket/model/IModel<*>;)V
+add
+ ([Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+ ([Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+addDequeuedComponent
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/ComponentTag;)V
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/ComponentTag;)V
+addOrReplace
+ ([Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+ ([Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+autoAdd
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/MarkupStream;)Z
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/MarkupStream;)Z
+canDequeueTag
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/DequeueTagAction;
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/DequeueTagAction;
+contains
+ (Lorg/apache/wicket/Component;Z)Z
+ (Lorg/apache/wicket/Component;Z)Z
+dequeue
+ (Lorg/apache/wicket/DequeueContext;)V
+ (Lorg/apache/wicket/DequeueContext;)V
+dequeuePreamble
+ (Lorg/apache/wicket/DequeueContext;)V
+ (Lorg/apache/wicket/DequeueContext;)V
+findChildComponent
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
+findComponentToDequeue
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
+get
+ (Ljava/lang/String;)Lorg/apache/wicket/Component;
+ (Ljava/lang/String;)Lorg/apache/wicket/Component;
+getAssociatedMarkup
+ ()Lorg/apache/wicket/markup/Markup;
+ ()Lorg/apache/wicket/markup/Markup;
+getAssociatedMarkupStream
+ (Z)Lorg/apache/wicket/markup/MarkupStream;
+ (Z)Lorg/apache/wicket/markup/MarkupStream;
+getMarkup
+ (Lorg/apache/wicket/Component;)Lorg/apache/wicket/markup/IMarkupFragment;
+ (Lorg/apache/wicket/Component;)Lorg/apache/wicket/markup/IMarkupFragment;
+getMarkupType
+ ()Lorg/apache/wicket/markup/MarkupType;
+ ()Lorg/apache/wicket/markup/MarkupType;
+getRegionMarkup
+ ()Lorg/apache/wicket/markup/IMarkupFragment;
+ ()Lorg/apache/wicket/markup/IMarkupFragment;
+internalAdd
+ (Lorg/apache/wicket/Component;)V
+ (Lorg/apache/wicket/Component;)V
+iterator
+ ()Ljava/util/Iterator<Lorg/apache/wicket/Component;>;
+ ()Ljava/util/Iterator<Lorg/apache/wicket/Component;>;
+iterator
+ (Ljava/util/Comparator<Lorg/apache/wicket/Component;>;)Ljava/util/Iterator<Lorg/apache/wicket/Component;>;
+ (Ljava/util/Comparator<Lorg/apache/wicket/Component;>;)Ljava/util/Iterator<Lorg/apache/wicket/Component;>;
+newDequeueContext
+ ()Lorg/apache/wicket/DequeueContext;
+ ()Lorg/apache/wicket/DequeueContext;
+onComponentTagBody
+ (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
+ (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
+queue
+ ([Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+ ([Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+remove
+ (Ljava/lang/String;)Lorg/apache/wicket/MarkupContainer;
+ (Ljava/lang/String;)Lorg/apache/wicket/MarkupContainer;
+remove
+ (Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+ (Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+removeAll
+ ()Lorg/apache/wicket/MarkupContainer;
+ ()Lorg/apache/wicket/MarkupContainer;
+renderAll
+ (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
+ (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
+renderAssociatedMarkup
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+renderNext
+ (Lorg/apache/wicket/markup/MarkupStream;)Z
+ (Lorg/apache/wicket/markup/MarkupStream;)Z
+replace
+ (Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+ (Lorg/apache/wicket/Component;)Lorg/apache/wicket/MarkupContainer;
+setDefaultModel
+ (Lorg/apache/wicket/model/IModel<*>;)Lorg/apache/wicket/MarkupContainer;
+ (Lorg/apache/wicket/model/IModel<*>;)Lorg/apache/wicket/MarkupContainer;
+stream
+ ()Ljava/util/stream/Stream<Lorg/apache/wicket/Component;>;
+ ()Ljava/util/stream/Stream<Lorg/apache/wicket/Component;>;
+streamChildren
+ ()Ljava/util/stream/Stream<Lorg/apache/wicket/Component;>;
+ ()Ljava/util/stream/Stream<Lorg/apache/wicket/Component;>;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+toString
+ (Z)Ljava/lang/String;
+ (Z)Ljava/lang/String;
+visitChildren
+ <R:Ljava/lang/Object;>(Lorg/apache/wicket/util/visit/IVisitor<Lorg/apache/wicket/Component;TR;>;)TR;
+ <R:Ljava/lang/Object;>(Lorg/apache/wicket/util/visit/IVisitor<Lorg/apache/wicket/Component;TR;>;)TR;
+visitChildren
+ <S:Lorg/apache/wicket/Component;R:Ljava/lang/Object;>(Ljava/lang/Class<*>;Lorg/apache/wicket/util/visit/IVisitor<TS;TR;>;)TR;
+ <S:Lorg/apache/wicket/Component;R:Ljava/lang/Object;>(Ljava/lang/Class<*>;Lorg/apache/wicket/util/visit/IVisitor<TS;TR;>;)TR;

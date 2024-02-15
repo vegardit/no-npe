@@ -1,0 +1,107 @@
+class org/apache/wicket/Session
+
+SESSION_ATTRIBUTE_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+get
+ ()Lorg/apache/wicket/Session;
+ ()Lorg/apache/wicket/Session;
+isRtlLanguage
+ (Ljava/util/Locale;)Z
+ (Ljava/util/Locale;)Z
+
+clientInfo
+ Lorg/apache/wicket/core/request/ClientInfo;
+ Lorg/apache/wicket/core/request/ClientInfo;
+
+<init>
+ (Lorg/apache/wicket/request/Request;)V
+ (Lorg/apache/wicket/request/Request;)V
+debug
+ (Ljava/io/Serializable;)V
+ (Ljava/io/Serializable;)V
+error
+ (Ljava/io/Serializable;)V
+ (Ljava/io/Serializable;)V
+fatal
+ (Ljava/io/Serializable;)V
+ (Ljava/io/Serializable;)V
+generateNewSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getApplication
+ ()Lorg/apache/wicket/Application;
+ ()Lorg/apache/wicket/Application;
+getAttribute
+ (Ljava/lang/String;)Ljava/io/Serializable;
+ (Ljava/lang/String;)Ljava/io/Serializable;
+getAttributeNames
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getAuthorizationStrategy
+ ()Lorg/apache/wicket/authorization/IAuthorizationStrategy;
+ ()Lorg/apache/wicket/authorization/IAuthorizationStrategy;
+getClassResolver
+ ()Lorg/apache/wicket/application/IClassResolver;
+ ()Lorg/apache/wicket/application/IClassResolver;
+getClientInfo
+ ()Lorg/apache/wicket/core/request/ClientInfo;
+ ()Lorg/apache/wicket/core/request/ClientInfo;
+getFeedbackMessages
+ ()Lorg/apache/wicket/feedback/FeedbackMessages;
+ ()Lorg/apache/wicket/feedback/FeedbackMessages;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLocale
+ ()Ljava/util/Locale;
+ ()Ljava/util/Locale;
+getMetaData
+ <M::Ljava/io/Serializable;>(Lorg/apache/wicket/MetaDataKey<TM;>;)TM;
+ <M::Ljava/io/Serializable;>(Lorg/apache/wicket/MetaDataKey<TM;>;)TM;
+getPageFactory
+ ()Lorg/apache/wicket/IPageFactory;
+ ()Lorg/apache/wicket/IPageFactory;
+getPageManager
+ ()Lorg/apache/wicket/page/IPageManager;
+ ()Lorg/apache/wicket/page/IPageManager;
+getSessionStore
+ ()Lorg/apache/wicket/session/ISessionStore;
+ ()Lorg/apache/wicket/session/ISessionStore;
+getStyle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+info
+ (Ljava/io/Serializable;)V
+ (Ljava/io/Serializable;)V
+newPageAccessSynchronizer
+ (Ljava/time/Duration;)Lorg/apache/wicket/page/PageAccessSynchronizer;
+ (Ljava/time/Duration;)Lorg/apache/wicket/page/PageAccessSynchronizer;
+onEvent
+ (Lorg/apache/wicket/event/IEvent<*>;)V
+ (L1org/apache/wicket/event/IEvent<*>;)V
+removeAttribute
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setAttribute
+ (Ljava/lang/String;Ljava/io/Serializable;)Lorg/apache/wicket/Session;
+ (Ljava/lang/String;Ljava/io/Serializable;)Lorg/apache/wicket/Session;
+setClientInfo
+ (Lorg/apache/wicket/core/request/ClientInfo;)Lorg/apache/wicket/Session;
+ (Lorg/apache/wicket/core/request/ClientInfo;)Lorg/apache/wicket/Session;
+setLocale
+ (Ljava/util/Locale;)Lorg/apache/wicket/Session;
+ (Ljava/util/Locale;)Lorg/apache/wicket/Session;
+setMetaData
+ <M::Ljava/io/Serializable;>(Lorg/apache/wicket/MetaDataKey<TM;>;TM;)Lorg/apache/wicket/Session;
+ <M::Ljava/io/Serializable;>(Lorg/apache/wicket/MetaDataKey<TM;>;TM;)Lorg/apache/wicket/Session;
+setStyle
+ (Ljava/lang/String;)Lorg/apache/wicket/Session;
+ (Ljava/lang/String;)Lorg/apache/wicket/Session;
+success
+ (Ljava/io/Serializable;)V
+ (Ljava/io/Serializable;)V
+warn
+ (Ljava/io/Serializable;)V
+ (Ljava/io/Serializable;)V

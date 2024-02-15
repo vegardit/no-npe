@@ -1,0 +1,51 @@
+class org/apache/wicket/request/http/WebResponse
+
+MAX_CACHE_DURATION
+ Ljava/time/Duration;
+ L1java/time/Duration;
+
+addCookie
+ (Ljakarta/servlet/http/Cookie;)V
+ (Ljakarta/servlet/http/Cookie;)V
+addHeader
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+clearCookie
+ (Ljakarta/servlet/http/Cookie;)V
+ (Ljakarta/servlet/http/Cookie;)V
+enableCaching
+ (Ljava/time/Duration;Lorg/apache/wicket/request/http/WebResponse$CacheScope;)V
+ (Ljava/time/Duration;Lorg/apache/wicket/request/http/WebResponse$CacheScope;)V
+encodeRedirectURL
+ (Ljava/lang/CharSequence;)Ljava/lang/String;
+ (Ljava/lang/CharSequence;)Ljava/lang/String;
+sendError
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V
+sendRedirect
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setAcceptRange
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setAttachmentHeader
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setContentRange
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setContentType
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDateHeader
+ (Ljava/lang/String;Ljava/time/Instant;)V
+ (Ljava/lang/String;Ljava/time/Instant;)V
+setHeader
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+setInlineHeader
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setLastModifiedTime
+ (Ljava/time/Instant;)V
+ (Ljava/time/Instant;)V

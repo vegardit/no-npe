@@ -1,0 +1,260 @@
+class org/apache/wicket/protocol/http/mock/MockHttpServletRequest
+
+<init>
+ (Lorg/apache/wicket/Application;Ljakarta/servlet/http/HttpSession;Ljakarta/servlet/ServletContext;)V
+ (Lorg/apache/wicket/Application;Ljakarta/servlet/http/HttpSession;Ljakarta/servlet/ServletContext;)V
+<init>
+ (Lorg/apache/wicket/Application;Ljakarta/servlet/http/HttpSession;Ljakarta/servlet/ServletContext;Ljava/util/Locale;)V
+ (Lorg/apache/wicket/Application;Ljakarta/servlet/http/HttpSession;Ljakarta/servlet/ServletContext;Ljava/util/Locale;)V
+addCookie
+ (Ljakarta/servlet/http/Cookie;)V
+ (Ljakarta/servlet/http/Cookie;)V
+addCookies
+ (Ljava/lang/Iterable<Ljakarta/servlet/http/Cookie;>;)V
+ (Ljava/lang/Iterable<Ljakarta/servlet/http/Cookie;>;)V
+addDateHeader
+ (Ljava/lang/String;J)V
+ (Ljava/lang/String;J)V
+addFile
+ (Ljava/lang/String;Lorg/apache/wicket/util/file/File;Ljava/lang/String;)V
+ (Ljava/lang/String;Lorg/apache/wicket/util/file/File;Ljava/lang/String;)V
+addHeader
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+addParameter
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+authenticate
+ (Ljakarta/servlet/http/HttpServletResponse;)Z
+ (Ljakarta/servlet/http/HttpServletResponse;)Z
+changeSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getAsyncContext
+ ()Ljakarta/servlet/AsyncContext;
+ ()Ljakarta/servlet/AsyncContext;
+getAttribute
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getAttributeNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getAuthType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCharacterEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCharset
+ ()Ljava/nio/charset/Charset;
+ ()Ljava/nio/charset/Charset;
+getContentType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getContextPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCookie
+ (Ljava/lang/String;)Ljakarta/servlet/http/Cookie;
+ (Ljava/lang/String;)Ljakarta/servlet/http/Cookie;
+getCookies
+ ()[Ljakarta/servlet/http/Cookie;
+ ()[Ljakarta/servlet/http/Cookie;
+getDateHeader
+ (Ljava/lang/String;)J
+ (Ljava/lang/String;)J
+getDispatcherType
+ ()Ljakarta/servlet/DispatcherType;
+ ()Ljakarta/servlet/DispatcherType;
+getFilterPrefix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getHeader
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getHeaderNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getHeaders
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/lang/String;>;
+getInputStream
+ ()Ljakarta/servlet/ServletInputStream;
+ ()Ljakarta/servlet/ServletInputStream;
+getIntHeader
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+getLocalAddr
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLocalName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLocale
+ ()Ljava/util/Locale;
+ ()Ljava/util/Locale;
+getLocales
+ ()Ljava/util/Enumeration<Ljava/util/Locale;>;
+ ()Ljava/util/Enumeration<Ljava/util/Locale;>;
+getMethod
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getParameter
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getParameterMap
+ ()Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+getParameterNames
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()Ljava/util/Enumeration<Ljava/lang/String;>;
+getParameterValues
+ (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[Ljava/lang/String;
+getPart
+ (Ljava/lang/String;)Ljakarta/servlet/http/Part;
+ (Ljava/lang/String;)Ljakarta/servlet/http/Part;
+getParts
+ ()Ljava/util/Collection<Ljakarta/servlet/http/Part;>;
+ ()Ljava/util/Collection<Ljakarta/servlet/http/Part;>;
+getPathInfo
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPathTranslated
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPostParameters
+ ()Lorg/apache/wicket/mock/MockRequestParameters;
+ ()Lorg/apache/wicket/mock/MockRequestParameters;
+getProtocol
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProtocolRequestId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getQueryString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getReader
+ ()Ljava/io/BufferedReader;
+ ()Ljava/io/BufferedReader;
+getRemoteAddr
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRemoteHost
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRemoteUser
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRequestDispatcher
+ (Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;
+ (Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;
+getRequestId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRequestURI
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRequestURL
+ ()Ljava/lang/StringBuffer;
+ ()Ljava/lang/StringBuffer;
+getRequestedSessionId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getScheme
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getServerName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getServletConnection
+ ()Ljakarta/servlet/ServletConnection;
+ ()Ljakarta/servlet/ServletConnection;
+getServletContext
+ ()Ljakarta/servlet/ServletContext;
+ ()Ljakarta/servlet/ServletContext;
+getServletPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSession
+ ()Ljakarta/servlet/http/HttpSession;
+ ()Ljakarta/servlet/http/HttpSession;
+getSession
+ (Z)Ljakarta/servlet/http/HttpSession;
+ (Z)Ljakarta/servlet/http/HttpSession;
+getUrl
+ ()Lorg/apache/wicket/request/Url;
+ ()Lorg/apache/wicket/request/Url;
+getUserPrincipal
+ ()Ljava/security/Principal;
+ ()Ljava/security/Principal;
+initialize
+ (Ljava/util/Locale;)V
+ (Ljava/util/Locale;)V
+isUserInRole
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+login
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+removeAttribute
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setAttribute
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+setAuthType
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setCharacterEncoding
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setCookies
+ ([Ljakarta/servlet/http/Cookie;)V
+ ([Ljakarta/servlet/http/Cookie;)V
+setHeader
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+setLocale
+ (Ljava/util/Locale;)V
+ (Ljava/util/Locale;)V
+setMethod
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setParameter
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+setParameters
+ (Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;)V
+ (Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;)V
+setPart
+ (Ljava/lang/String;Ljakarta/servlet/http/Part;)Lorg/apache/wicket/protocol/http/mock/MockHttpServletRequest;
+ (Ljava/lang/String;Ljakarta/servlet/http/Part;)Lorg/apache/wicket/protocol/http/mock/MockHttpServletRequest;
+setPath
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setRemoteAddr
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setScheme
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setServerName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setURL
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setUrl
+ (Lorg/apache/wicket/request/Url;)V
+ (Lorg/apache/wicket/request/Url;)V
+startAsync
+ ()Ljakarta/servlet/AsyncContext;
+ ()Ljakarta/servlet/AsyncContext;
+startAsync
+ (Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)Ljakarta/servlet/AsyncContext;
+ (Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)Ljakarta/servlet/AsyncContext;
+upgrade
+ <T::Ljakarta/servlet/http/HttpUpgradeHandler;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljakarta/servlet/http/HttpUpgradeHandler;>(Ljava/lang/Class<TT;>;)TT;

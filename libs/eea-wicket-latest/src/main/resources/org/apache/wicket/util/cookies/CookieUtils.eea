@@ -1,0 +1,45 @@
+class org/apache/wicket/util/cookies/CookieUtils
+
+DEFAULT_SESSIONID_COOKIE_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/apache/wicket/util/cookies/CookieDefaults;)V
+ (Lorg/apache/wicket/util/cookies/CookieDefaults;)V
+getCookie
+ (Ljava/lang/String;)Ljakarta/servlet/http/Cookie;
+ (Ljava/lang/String;)Ljakarta/servlet/http/Cookie;
+getKey
+ (Lorg/apache/wicket/markup/html/form/FormComponent<*>;)Ljava/lang/String;
+ (Lorg/apache/wicket/markup/html/form/FormComponent<*>;)Ljava/lang/String;
+getSaveKey
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getSessionIdCookieName
+ (Lorg/apache/wicket/protocol/http/WebApplication;)Ljava/lang/String;
+ (Lorg/apache/wicket/protocol/http/WebApplication;)Ljava/lang/String;
+getSettings
+ ()Lorg/apache/wicket/util/cookies/CookieDefaults;
+ ()Lorg/apache/wicket/util/cookies/CookieDefaults;
+initializeCookie
+ (Ljakarta/servlet/http/Cookie;)V
+ (Ljakarta/servlet/http/Cookie;)V
+load
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+load
+ (Lorg/apache/wicket/markup/html/form/FormComponent<*>;)Ljava/lang/String;
+ (Lorg/apache/wicket/markup/html/form/FormComponent<*>;)Ljava/lang/String;
+remove
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+remove
+ (Lorg/apache/wicket/markup/html/form/FormComponent<*>;)V
+ (Lorg/apache/wicket/markup/html/form/FormComponent<*>;)V
+save
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+save
+ (Lorg/apache/wicket/markup/html/form/FormComponent<*>;)V
+ (Lorg/apache/wicket/markup/html/form/FormComponent<*>;)V

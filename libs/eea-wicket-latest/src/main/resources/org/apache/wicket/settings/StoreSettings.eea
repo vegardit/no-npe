@@ -1,0 +1,32 @@
+class org/apache/wicket/settings/StoreSettings
+
+<init>
+ (Lorg/apache/wicket/Application;)V
+ (Lorg/apache/wicket/Application;)V
+getCrypter
+ ()Ljava/util/function/Supplier<Lorg/apache/wicket/pageStore/crypt/ICrypter;>;
+ ()Ljava/util/function/Supplier<Lorg/apache/wicket/pageStore/crypt/ICrypter;>;
+getFileStoreFolder
+ ()Ljava/io/File;
+ ()Ljava/io/File;
+getMaxSizePerSession
+ ()Lorg/apache/wicket/util/lang/Bytes;
+ ()Lorg/apache/wicket/util/lang/Bytes;
+setAsynchronous
+ (Z)Lorg/apache/wicket/settings/StoreSettings;
+ (Z)Lorg/apache/wicket/settings/StoreSettings;
+setAsynchronousQueueCapacity
+ (I)Lorg/apache/wicket/settings/StoreSettings;
+ (I)Lorg/apache/wicket/settings/StoreSettings;
+setCrypter
+ (Ljava/util/function/Supplier<Lorg/apache/wicket/pageStore/crypt/ICrypter;>;)Lorg/apache/wicket/settings/StoreSettings;
+ (Ljava/util/function/Supplier<Lorg/apache/wicket/pageStore/crypt/ICrypter;>;)Lorg/apache/wicket/settings/StoreSettings;
+setEncrypted
+ (Z)Lorg/apache/wicket/settings/StoreSettings;
+ (Z)Lorg/apache/wicket/settings/StoreSettings;
+setFileStoreFolder
+ (Ljava/io/File;)Lorg/apache/wicket/settings/StoreSettings;
+ (Ljava/io/File;)Lorg/apache/wicket/settings/StoreSettings;
+setMaxSizePerSession
+ (Lorg/apache/wicket/util/lang/Bytes;)Lorg/apache/wicket/settings/StoreSettings;
+ (Lorg/apache/wicket/util/lang/Bytes;)Lorg/apache/wicket/settings/StoreSettings;

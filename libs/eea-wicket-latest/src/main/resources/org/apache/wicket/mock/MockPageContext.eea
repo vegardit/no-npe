@@ -1,0 +1,17 @@
+class org/apache/wicket/mock/MockPageContext
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+getRequestData
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;Ljava/util/function/Supplier<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;Ljava/util/function/Supplier<TT;>;)TT;
+getSessionAttribute
+ <T::Ljava/io/Serializable;>(Ljava/lang/String;Ljava/util/function/Supplier<TT;>;)TT;
+ <T::Ljava/io/Serializable;>(Ljava/lang/String;Ljava/util/function/Supplier<TT;>;)TT;
+getSessionData
+ <T::Ljava/io/Serializable;>(Lorg/apache/wicket/MetaDataKey<TT;>;Ljava/util/function/Supplier<TT;>;)TT;
+ <T::Ljava/io/Serializable;>(Lorg/apache/wicket/MetaDataKey<TT;>;Ljava/util/function/Supplier<TT;>;)TT;
+getSessionId
+ (Z)Ljava/lang/String;
+ (Z)Ljava/lang/String;

@@ -1,0 +1,31 @@
+class org/apache/wicket/util/crypt/SunJceCrypt
+
+DEFAULT_CRYPT_METHOD
+ Ljava/lang/String;
+ L1java/lang/String;
+
+randomSalt
+ ()[B
+ ()[B
+
+<init>
+ (Ljava/lang/String;[BI)V
+ (Ljava/lang/String;[BI)V
+<init>
+ ([BI)V
+ ([BI)V
+createCipher
+ (Ljavax/crypto/SecretKey;Ljava/security/spec/AlgorithmParameterSpec;I)Ljavax/crypto/Cipher;
+ (Ljavax/crypto/SecretKey;Ljava/security/spec/AlgorithmParameterSpec;I)Ljavax/crypto/Cipher;
+createKeySpec
+ ()Ljava/security/spec/KeySpec;
+ ()Ljava/security/spec/KeySpec;
+createParameterSpec
+ ()Ljava/security/spec/AlgorithmParameterSpec;
+ ()Ljava/security/spec/AlgorithmParameterSpec;
+crypt
+ ([BI)[B
+ ([BI)[B
+generateSecretKey
+ ()Ljavax/crypto/SecretKey;
+ ()Ljavax/crypto/SecretKey;

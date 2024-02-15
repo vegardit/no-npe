@@ -1,0 +1,42 @@
+class org/apache/wicket/csp/CSPHeaderConfiguration
+
+CSP_VIOLATION_REPORTING_URI
+ Ljava/lang/String;
+ L1java/lang/String;
+
+add
+ (Lorg/apache/wicket/csp/CSPDirective;[Ljava/lang/String;)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ (Lorg/apache/wicket/csp/CSPDirective;[Ljava/lang/String;)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+add
+ (Lorg/apache/wicket/csp/CSPDirective;[Lorg/apache/wicket/csp/CSPRenderable;)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ (Lorg/apache/wicket/csp/CSPDirective;[Lorg/apache/wicket/csp/CSPRenderable;)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+clear
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+disabled
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+getDirectives
+ ()Ljava/util/Map<Lorg/apache/wicket/csp/CSPDirective;Ljava/util/List<Lorg/apache/wicket/csp/CSPRenderable;>;>;
+ ()Ljava/util/Map<Lorg/apache/wicket/csp/CSPDirective;Ljava/util/List<Lorg/apache/wicket/csp/CSPRenderable;>;>;
+remove
+ (Lorg/apache/wicket/csp/CSPDirective;)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ (Lorg/apache/wicket/csp/CSPDirective;)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+renderHeaderValue
+ (Lorg/apache/wicket/csp/ContentSecurityPolicySettings;Lorg/apache/wicket/request/cycle/RequestCycle;)Ljava/lang/String;
+ (Lorg/apache/wicket/csp/ContentSecurityPolicySettings;Lorg/apache/wicket/request/cycle/RequestCycle;)Ljava/lang/String;
+reportBack
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+reportBackAt
+ (Ljava/lang/String;)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ (Ljava/lang/String;)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+setAddLegacyHeaders
+ (Z)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ (Z)Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+strict
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+unsafeInline
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;

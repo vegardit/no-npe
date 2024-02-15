@@ -1,0 +1,96 @@
+class org/apache/wicket/request/cycle/RequestCycle
+
+get
+ ()Lorg/apache/wicket/request/cycle/RequestCycle;
+ ()Lorg/apache/wicket/request/cycle/RequestCycle;
+
+<init>
+ (Lorg/apache/wicket/request/cycle/RequestCycleContext;)V
+ (Lorg/apache/wicket/request/cycle/RequestCycleContext;)V
+find
+ <T::Lorg/apache/wicket/request/IRequestHandler;>(Ljava/lang/Class<TT;>;)Ljava/util/Optional<TT;>;
+ <T::Lorg/apache/wicket/request/IRequestHandler;>(Ljava/lang/Class<TT;>;)Ljava/util/Optional<TT;>;
+getActiveRequestHandler
+ ()Lorg/apache/wicket/request/IRequestHandler;
+ ()Lorg/apache/wicket/request/IRequestHandler;
+getListeners
+ ()Lorg/apache/wicket/request/cycle/RequestCycleListenerCollection;
+ ()Lorg/apache/wicket/request/cycle/RequestCycleListenerCollection;
+getMetaData
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;)TT;
+getOriginalResponse
+ ()Lorg/apache/wicket/request/Response;
+ ()Lorg/apache/wicket/request/Response;
+getRequest
+ ()Lorg/apache/wicket/request/Request;
+ ()Lorg/apache/wicket/request/Request;
+getRequestHandlerScheduledAfterCurrent
+ ()Lorg/apache/wicket/request/IRequestHandler;
+ ()Lorg/apache/wicket/request/IRequestHandler;
+getResponse
+ ()Lorg/apache/wicket/request/Response;
+ ()Lorg/apache/wicket/request/Response;
+getUrlRenderer
+ ()Lorg/apache/wicket/request/UrlRenderer;
+ ()Lorg/apache/wicket/request/UrlRenderer;
+handleException
+ (Ljava/lang/Exception;)Lorg/apache/wicket/request/IRequestHandler;
+ (Ljava/lang/Exception;)Lorg/apache/wicket/request/IRequestHandler;
+mapUrlFor
+ (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
+ (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
+mapUrlFor
+ (Lorg/apache/wicket/request/resource/ResourceReference;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/Url;
+ (Lorg/apache/wicket/request/resource/ResourceReference;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/Url;
+mapUrlFor
+ <C:Lorg/apache/wicket/Page;>(Ljava/lang/Class<TC;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/Url;
+ <C:Lorg/apache/wicket/Page;>(Ljava/lang/Class<TC;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/Url;
+newUrlRenderer
+ ()Lorg/apache/wicket/request/UrlRenderer;
+ ()Lorg/apache/wicket/request/UrlRenderer;
+onEvent
+ (Lorg/apache/wicket/event/IEvent<*>;)V
+ (L1org/apache/wicket/event/IEvent<*>;)V
+replaceAllRequestHandlers
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+resolveRequestHandler
+ ()Lorg/apache/wicket/request/IRequestHandler;
+ ()Lorg/apache/wicket/request/IRequestHandler;
+scheduleRequestHandlerAfterCurrent
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+setMetaData
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;TT;)Lorg/apache/wicket/request/cycle/RequestCycle;
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;TT;)Lorg/apache/wicket/request/cycle/RequestCycle;
+setRequest
+ (Lorg/apache/wicket/request/Request;)V
+ (Lorg/apache/wicket/request/Request;)V
+setResponse
+ (Lorg/apache/wicket/request/Response;)Lorg/apache/wicket/request/Response;
+ (Lorg/apache/wicket/request/Response;)Lorg/apache/wicket/request/Response;
+setResponsePage
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;)V
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;)V
+setResponsePage
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/core/request/handler/RenderPageRequestHandler$RedirectPolicy;)V
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/core/request/handler/RenderPageRequestHandler$RedirectPolicy;)V
+setResponsePage
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)V
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)V
+setResponsePage
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;Lorg/apache/wicket/core/request/handler/RenderPageRequestHandler$RedirectPolicy;)V
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;Lorg/apache/wicket/core/request/handler/RenderPageRequestHandler$RedirectPolicy;)V
+setResponsePage
+ (Lorg/apache/wicket/request/component/IRequestablePage;)V
+ (Lorg/apache/wicket/request/component/IRequestablePage;)V
+urlFor
+ (Lorg/apache/wicket/request/IRequestHandler;)Ljava/lang/CharSequence;
+ (Lorg/apache/wicket/request/IRequestHandler;)Ljava/lang/CharSequence;
+urlFor
+ (Lorg/apache/wicket/request/resource/ResourceReference;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Ljava/lang/CharSequence;
+ (Lorg/apache/wicket/request/resource/ResourceReference;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Ljava/lang/CharSequence;
+urlFor
+ <C:Lorg/apache/wicket/Page;>(Ljava/lang/Class<TC;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Ljava/lang/CharSequence;
+ <C:Lorg/apache/wicket/Page;>(Ljava/lang/Class<TC;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Ljava/lang/CharSequence;

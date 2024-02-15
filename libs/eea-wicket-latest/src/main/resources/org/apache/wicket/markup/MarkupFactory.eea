@@ -1,0 +1,42 @@
+class org/apache/wicket/markup/MarkupFactory
+
+get
+ ()Lorg/apache/wicket/markup/MarkupFactory;
+ ()Lorg/apache/wicket/markup/MarkupFactory;
+
+checkMarkupType
+ (Lorg/apache/wicket/MarkupContainer;)Z
+ (Lorg/apache/wicket/MarkupContainer;)Z
+getContainerClass
+ (Lorg/apache/wicket/MarkupContainer;Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
+ (Lorg/apache/wicket/MarkupContainer;Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
+getMarkup
+ (Lorg/apache/wicket/MarkupContainer;Ljava/lang/Class<*>;Z)Lorg/apache/wicket/markup/Markup;
+ (Lorg/apache/wicket/MarkupContainer;Ljava/lang/Class<*>;Z)Lorg/apache/wicket/markup/Markup;
+getMarkup
+ (Lorg/apache/wicket/MarkupContainer;Z)Lorg/apache/wicket/markup/Markup;
+ (Lorg/apache/wicket/MarkupContainer;Z)Lorg/apache/wicket/markup/Markup;
+getMarkupCache
+ ()Lorg/apache/wicket/markup/IMarkupCache;
+ ()Lorg/apache/wicket/markup/IMarkupCache;
+getMarkupLoader
+ ()Lorg/apache/wicket/markup/loader/IMarkupLoader;
+ ()Lorg/apache/wicket/markup/loader/IMarkupLoader;
+getMarkupResourceStream
+ (Lorg/apache/wicket/MarkupContainer;Ljava/lang/Class<*>;)Lorg/apache/wicket/markup/MarkupResourceStream;
+ (Lorg/apache/wicket/MarkupContainer;Ljava/lang/Class<*>;)Lorg/apache/wicket/markup/MarkupResourceStream;
+getMarkupResourceStreamProvider
+ (Lorg/apache/wicket/MarkupContainer;)Lorg/apache/wicket/markup/IMarkupResourceStreamProvider;
+ (Lorg/apache/wicket/MarkupContainer;)Lorg/apache/wicket/markup/IMarkupResourceStreamProvider;
+loadMarkup
+ (Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/markup/MarkupResourceStream;Z)Lorg/apache/wicket/markup/Markup;
+ (Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/markup/MarkupResourceStream;Z)Lorg/apache/wicket/markup/Markup;
+newMarkupParser
+ (Lorg/apache/wicket/markup/MarkupResourceStream;)Lorg/apache/wicket/markup/MarkupParser;
+ (Lorg/apache/wicket/markup/MarkupResourceStream;)Lorg/apache/wicket/markup/MarkupParser;
+newXmlPullParser
+ ()Lorg/apache/wicket/markup/parser/IXmlPullParser;
+ ()Lorg/apache/wicket/markup/parser/IXmlPullParser;
+onAppendMarkupFilter
+ (Lorg/apache/wicket/markup/parser/IMarkupFilter;)Lorg/apache/wicket/markup/parser/IMarkupFilter;
+ (Lorg/apache/wicket/markup/parser/IMarkupFilter;)Lorg/apache/wicket/markup/parser/IMarkupFilter;

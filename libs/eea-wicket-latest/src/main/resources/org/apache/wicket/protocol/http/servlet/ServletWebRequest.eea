@@ -1,0 +1,62 @@
+class org/apache/wicket/protocol/http/servlet/ServletWebRequest
+
+<init>
+ (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)V
+ (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)V
+<init>
+ (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;Lorg/apache/wicket/request/Url;)V
+ (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;Lorg/apache/wicket/request/Url;)V
+cloneWithUrl
+ (Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/protocol/http/servlet/ServletWebRequest;
+ (Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/protocol/http/servlet/ServletWebRequest;
+generatePostParameters
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/wicket/util/string/StringValue;>;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/wicket/util/string/StringValue;>;>;
+getCharset
+ ()Ljava/nio/charset/Charset;
+ ()Ljava/nio/charset/Charset;
+getClientUrl
+ ()Lorg/apache/wicket/request/Url;
+ ()Lorg/apache/wicket/request/Url;
+getContainerRequest
+ ()Ljakarta/servlet/http/HttpServletRequest;
+ ()Ljakarta/servlet/http/HttpServletRequest;
+getContextPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCookies
+ ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
+ ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
+getDateHeader
+ (Ljava/lang/String;)Ljava/time/Instant;
+ (Ljava/lang/String;)Ljava/time/Instant;
+getFilterPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFilterPrefix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getHeader
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getHeaders
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+getLocale
+ ()Ljava/util/Locale;
+ ()Ljava/util/Locale;
+getPostParameters
+ ()Lorg/apache/wicket/request/IRequestParameters;
+ ()Lorg/apache/wicket/request/IRequestParameters;
+getPrefixToContextPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getUrl
+ ()Lorg/apache/wicket/request/Url;
+ ()Lorg/apache/wicket/request/Url;
+newMultipartWebRequest
+ (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
+ (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
+newMultipartWebRequest
+ (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;Lorg/apache/commons/fileupload2/core/FileItemFactory;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
+ (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;Lorg/apache/commons/fileupload2/core/FileItemFactory;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;

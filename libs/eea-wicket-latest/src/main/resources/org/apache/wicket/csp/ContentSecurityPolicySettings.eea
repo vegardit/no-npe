@@ -1,0 +1,36 @@
+class org/apache/wicket/csp/ContentSecurityPolicySettings
+
+NONCE_KEY
+ Lorg/apache/wicket/MetaDataKey<Ljava/lang/String;>;
+ L1org/apache/wicket/MetaDataKey<Ljava/lang/String;>;
+
+<init>
+ (Lorg/apache/wicket/Application;)V
+ (Lorg/apache/wicket/Application;)V
+blocking
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+createNonce
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+enforce
+ (Lorg/apache/wicket/protocol/http/WebApplication;)V
+ (Lorg/apache/wicket/protocol/http/WebApplication;)V
+getConfiguration
+ ()Ljava/util/Map<Lorg/apache/wicket/csp/CSPHeaderMode;Lorg/apache/wicket/csp/CSPHeaderConfiguration;>;
+ ()Ljava/util/Map<Lorg/apache/wicket/csp/CSPHeaderMode;Lorg/apache/wicket/csp/CSPHeaderConfiguration;>;
+getNonce
+ (Lorg/apache/wicket/request/cycle/RequestCycle;)Ljava/lang/String;
+ (Lorg/apache/wicket/request/cycle/RequestCycle;)Ljava/lang/String;
+mustProtectRequest
+ (Lorg/apache/wicket/request/IRequestHandler;)Z
+ (Lorg/apache/wicket/request/IRequestHandler;)Z
+reporting
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+ ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
+setNonceCreator
+ (Ljava/util/function/Supplier<Ljava/lang/String;>;)Lorg/apache/wicket/csp/ContentSecurityPolicySettings;
+ (Ljava/util/function/Supplier<Ljava/lang/String;>;)Lorg/apache/wicket/csp/ContentSecurityPolicySettings;
+setProtectedFilter
+ (Ljava/util/function/Predicate<Lorg/apache/wicket/request/IRequestHandler;>;)Lorg/apache/wicket/csp/ContentSecurityPolicySettings;
+ (Ljava/util/function/Predicate<Lorg/apache/wicket/request/IRequestHandler;>;)Lorg/apache/wicket/csp/ContentSecurityPolicySettings;

@@ -1,0 +1,31 @@
+class org/apache/wicket/markup/head/filter/FilteringHeaderResponse
+
+DEFAULT_HEADER_FILTER_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+get
+ ()Lorg/apache/wicket/markup/head/filter/FilteringHeaderResponse;
+ ()Lorg/apache/wicket/markup/head/filter/FilteringHeaderResponse;
+
+<init>
+ (Lorg/apache/wicket/markup/head/IHeaderResponse;)V
+ (Lorg/apache/wicket/markup/head/IHeaderResponse;)V
+<init>
+ (Lorg/apache/wicket/markup/head/IHeaderResponse;Ljava/lang/String;Ljava/lang/Iterable<+Lorg/apache/wicket/markup/head/filter/FilteringHeaderResponse$IHeaderResponseFilter;>;)V
+ (Lorg/apache/wicket/markup/head/IHeaderResponse;Ljava/lang/String;Ljava/lang/Iterable<+Lorg/apache/wicket/markup/head/filter/FilteringHeaderResponse$IHeaderResponseFilter;>;)V
+decorate
+ (Lorg/apache/wicket/markup/head/IHeaderResponse;)Lorg/apache/wicket/markup/head/IHeaderResponse;
+ (Lorg/apache/wicket/markup/head/IHeaderResponse;)Lorg/apache/wicket/markup/head/IHeaderResponse;
+getContent
+ (Ljava/lang/String;)Ljava/lang/CharSequence;
+ (Ljava/lang/String;)Ljava/lang/CharSequence;
+render
+ (Lorg/apache/wicket/markup/head/HeaderItem;)V
+ (Lorg/apache/wicket/markup/head/HeaderItem;)V
+render
+ (Lorg/apache/wicket/markup/head/HeaderItem;Ljava/util/List<Lorg/apache/wicket/markup/head/HeaderItem;>;)V
+ (Lorg/apache/wicket/markup/head/HeaderItem;Ljava/util/List<Lorg/apache/wicket/markup/head/HeaderItem;>;)V
+setFilters
+ (Ljava/lang/Iterable<+Lorg/apache/wicket/markup/head/filter/FilteringHeaderResponse$IHeaderResponseFilter;>;)V
+ (Ljava/lang/Iterable<+Lorg/apache/wicket/markup/head/filter/FilteringHeaderResponse$IHeaderResponseFilter;>;)V

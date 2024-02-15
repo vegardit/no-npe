@@ -1,0 +1,30 @@
+class org/apache/wicket/markup/MarkupCache
+
+get
+ ()Lorg/apache/wicket/markup/IMarkupCache;
+ ()Lorg/apache/wicket/markup/IMarkupCache;
+
+getMarkup
+ (Lorg/apache/wicket/MarkupContainer;Ljava/lang/Class<*>;Z)Lorg/apache/wicket/markup/Markup;
+ (Lorg/apache/wicket/MarkupContainer;Ljava/lang/Class<*>;Z)Lorg/apache/wicket/markup/Markup;
+getMarkupCache
+ ()Lorg/apache/wicket/markup/MarkupCache$ICache<Ljava/lang/String;Lorg/apache/wicket/markup/Markup;>;
+ ()Lorg/apache/wicket/markup/MarkupCache$ICache<Ljava/lang/String;Lorg/apache/wicket/markup/Markup;>;
+getMarkupCacheKeyProvider
+ (Lorg/apache/wicket/MarkupContainer;)Lorg/apache/wicket/markup/IMarkupCacheKeyProvider;
+ (Lorg/apache/wicket/MarkupContainer;)Lorg/apache/wicket/markup/IMarkupCacheKeyProvider;
+getMarkupFromCache
+ (Ljava/lang/String;Lorg/apache/wicket/MarkupContainer;)Lorg/apache/wicket/markup/Markup;
+ (Ljava/lang/String;Lorg/apache/wicket/MarkupContainer;)Lorg/apache/wicket/markup/Markup;
+newCacheImplementation
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>()Lorg/apache/wicket/markup/MarkupCache$ICache<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>()Lorg/apache/wicket/markup/MarkupCache$ICache<TK;TV;>;
+onMarkupNotFound
+ (Ljava/lang/String;Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/markup/Markup;)Lorg/apache/wicket/markup/Markup;
+ (Ljava/lang/String;Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/markup/Markup;)Lorg/apache/wicket/markup/Markup;
+putIntoCache
+ (Ljava/lang/String;Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/markup/Markup;)Lorg/apache/wicket/markup/Markup;
+ (Ljava/lang/String;Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/markup/Markup;)Lorg/apache/wicket/markup/Markup;
+removeMarkup
+ (Ljava/lang/String;)Lorg/apache/wicket/markup/IMarkupFragment;
+ (Ljava/lang/String;)Lorg/apache/wicket/markup/IMarkupFragment;

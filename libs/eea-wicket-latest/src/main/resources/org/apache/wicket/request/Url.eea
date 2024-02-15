@@ -1,0 +1,114 @@
+class org/apache/wicket/request/Url
+
+parse
+ (Ljava/lang/CharSequence;)Lorg/apache/wicket/request/Url;
+ (Ljava/lang/CharSequence;)Lorg/apache/wicket/request/Url;
+parse
+ (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lorg/apache/wicket/request/Url;
+ (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lorg/apache/wicket/request/Url;
+parse
+ (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;Z)Lorg/apache/wicket/request/Url;
+ (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;Z)Lorg/apache/wicket/request/Url;
+
+<init>
+ (Ljava/nio/charset/Charset;)V
+ (Ljava/nio/charset/Charset;)V
+<init>
+ (Ljava/util/List<Ljava/lang/String;>;Ljava/nio/charset/Charset;)V
+ (Ljava/util/List<Ljava/lang/String;>;Ljava/nio/charset/Charset;)V
+<init>
+ (Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Lorg/apache/wicket/request/Url$QueryParameter;>;)V
+ (Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Lorg/apache/wicket/request/Url$QueryParameter;>;)V
+<init>
+ (Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Lorg/apache/wicket/request/Url$QueryParameter;>;Ljava/nio/charset/Charset;)V
+ (Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Lorg/apache/wicket/request/Url$QueryParameter;>;Ljava/nio/charset/Charset;)V
+<init>
+ (Lorg/apache/wicket/request/Url;)V
+ (Lorg/apache/wicket/request/Url;)V
+addQueryParameter
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+canonical
+ ()Lorg/apache/wicket/request/Url;
+ ()Lorg/apache/wicket/request/Url;
+concatSegments
+ (Ljava/util/List<Ljava/lang/String;>;)V
+ (Ljava/util/List<Ljava/lang/String;>;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z
+getCharset
+ ()Ljava/nio/charset/Charset;
+ ()Ljava/nio/charset/Charset;
+getFragment
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getHost
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPath
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPath
+ (Ljava/nio/charset/Charset;)Ljava/lang/String;
+ (Ljava/nio/charset/Charset;)Ljava/lang/String;
+getPort
+ ()Ljava/lang/Integer;
+ ()Ljava/lang/Integer;
+getProtocol
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getQueryParameter
+ (Ljava/lang/String;)Lorg/apache/wicket/request/Url$QueryParameter;
+ (Ljava/lang/String;)Lorg/apache/wicket/request/Url$QueryParameter;
+getQueryParameterValue
+ (Ljava/lang/String;)Lorg/apache/wicket/util/string/StringValue;
+ (Ljava/lang/String;)Lorg/apache/wicket/util/string/StringValue;
+getQueryParameters
+ ()Ljava/util/List<Lorg/apache/wicket/request/Url$QueryParameter;>;
+ ()Ljava/util/List<Lorg/apache/wicket/request/Url$QueryParameter;>;
+getQueryString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getQueryString
+ (Ljava/nio/charset/Charset;)Ljava/lang/String;
+ (Ljava/nio/charset/Charset;)Ljava/lang/String;
+getSegments
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+prependLeadingSegments
+ (Ljava/util/List<Ljava/lang/String;>;)V
+ (Ljava/util/List<Ljava/lang/String;>;)V
+removeQueryParameters
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+resolveRelative
+ (Lorg/apache/wicket/request/Url;)V
+ (Lorg/apache/wicket/request/Url;)V
+setFragment
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setHost
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setPort
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V
+setProtocol
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setQueryParameter
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+toString
+ (Ljava/nio/charset/Charset;)Ljava/lang/String;
+ (Ljava/nio/charset/Charset;)Ljava/lang/String;
+toString
+ (Lorg/apache/wicket/request/Url$StringMode;)Ljava/lang/String;
+ (Lorg/apache/wicket/request/Url$StringMode;)Ljava/lang/String;
+toString
+ (Lorg/apache/wicket/request/Url$StringMode;Ljava/nio/charset/Charset;)Ljava/lang/String;
+ (Lorg/apache/wicket/request/Url$StringMode;Ljava/nio/charset/Charset;)Ljava/lang/String;

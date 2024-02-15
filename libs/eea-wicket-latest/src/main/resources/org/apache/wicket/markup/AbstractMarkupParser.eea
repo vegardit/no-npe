@@ -1,0 +1,42 @@
+class org/apache/wicket/markup/AbstractMarkupParser
+
+CONDITIONAL_COMMENT_OPENING
+ Ljava/util/regex/Pattern;
+ L1java/util/regex/Pattern;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Lorg/apache/wicket/markup/MarkupResourceStream;)V
+ (Lorg/apache/wicket/markup/MarkupResourceStream;)V
+<init>
+ (Lorg/apache/wicket/markup/parser/IXmlPullParser;Lorg/apache/wicket/markup/MarkupResourceStream;)V
+ (Lorg/apache/wicket/markup/parser/IXmlPullParser;Lorg/apache/wicket/markup/MarkupResourceStream;)V
+compressWhitespace
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getMarkupFilters
+ ()Ljava/util/List<Lorg/apache/wicket/markup/parser/IMarkupFilter;>;
+ ()Ljava/util/List<Lorg/apache/wicket/markup/parser/IMarkupFilter;>;
+getMarkupResourceStream
+ ()Lorg/apache/wicket/markup/MarkupResourceStream;
+ ()Lorg/apache/wicket/markup/MarkupResourceStream;
+handleRawText
+ (Ljava/lang/String;)Ljava/lang/CharSequence;
+ (Ljava/lang/String;)Ljava/lang/CharSequence;
+initializeMarkupFilters
+ (Lorg/apache/wicket/markup/Markup;)Ljava/util/List<Lorg/apache/wicket/markup/parser/IMarkupFilter;>;
+ (Lorg/apache/wicket/markup/Markup;)Ljava/util/List<Lorg/apache/wicket/markup/parser/IMarkupFilter;>;
+parse
+ ()Lorg/apache/wicket/markup/Markup;
+ ()Lorg/apache/wicket/markup/Markup;
+postProcess
+ (Lorg/apache/wicket/markup/Markup;)V
+ (Lorg/apache/wicket/markup/Markup;)V
+setWicketNamespace
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

@@ -1,0 +1,24 @@
+class org/apache/wicket/protocol/http/servlet/AbstractRequestWrapperFactory
+
+commaDelimitedListToPatternArray
+ (Ljava/lang/String;)[Ljava/util/regex/Pattern;
+ (Ljava/lang/String;)[Ljava/util/regex/Pattern;
+commaDelimitedListToStringArray
+ (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[Ljava/lang/String;
+listToCommaDelimitedString
+ (Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;
+ (Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;
+matchesOne
+ (Ljava/lang/String;[Ljava/util/regex/Pattern;)Z
+ (Ljava/lang/String;[Ljava/util/regex/Pattern;)Z
+
+getWrapper
+ (Ljakarta/servlet/http/HttpServletRequest;)Ljakarta/servlet/http/HttpServletRequest;
+ (Ljakarta/servlet/http/HttpServletRequest;)Ljakarta/servlet/http/HttpServletRequest;
+needsWrapper
+ (Ljakarta/servlet/http/HttpServletRequest;)Z
+ (Ljakarta/servlet/http/HttpServletRequest;)Z
+newRequestWrapper
+ (Ljakarta/servlet/http/HttpServletRequest;)Ljakarta/servlet/http/HttpServletRequest;
+ (Ljakarta/servlet/http/HttpServletRequest;)Ljakarta/servlet/http/HttpServletRequest;

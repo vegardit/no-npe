@@ -1,0 +1,14 @@
+class org/apache/wicket/authorization/strategies/CompoundAuthorizationStrategy
+
+add
+ (Lorg/apache/wicket/authorization/IAuthorizationStrategy;)V
+ (Lorg/apache/wicket/authorization/IAuthorizationStrategy;)V
+isActionAuthorized
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/authorization/Action;)Z
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/authorization/Action;)Z
+isInstantiationAuthorized
+ <T::Lorg/apache/wicket/request/component/IRequestableComponent;>(Ljava/lang/Class<TT;>;)Z
+ <T::Lorg/apache/wicket/request/component/IRequestableComponent;>(Ljava/lang/Class<TT;>;)Z
+isResourceAuthorized
+ (Lorg/apache/wicket/request/resource/IResource;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Z
+ (Lorg/apache/wicket/request/resource/IResource;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Z

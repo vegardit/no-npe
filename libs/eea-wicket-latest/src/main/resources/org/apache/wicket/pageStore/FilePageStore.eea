@@ -1,0 +1,38 @@
+class org/apache/wicket/pageStore/FilePageStore
+
+<init>
+ (Ljava/lang/String;Ljava/io/File;Lorg/apache/wicket/util/lang/Bytes;)V
+ (Ljava/lang/String;Ljava/io/File;Lorg/apache/wicket/util/lang/Bytes;)V
+addPersistedPage
+ (Ljava/lang/String;Lorg/apache/wicket/page/IManageablePage;)V
+ (Ljava/lang/String;Lorg/apache/wicket/page/IManageablePage;)V
+getPageType
+ (Ljava/io/File;)Ljava/lang/String;
+ (Ljava/io/File;)Ljava/lang/String;
+getPersistedPage
+ (Ljava/lang/String;I)Lorg/apache/wicket/page/IManageablePage;
+ (Ljava/lang/String;I)Lorg/apache/wicket/page/IManageablePage;
+getPersistedPages
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/wicket/pageStore/IPersistedPage;>;
+ (Ljava/lang/String;)Ljava/util/List<Lorg/apache/wicket/pageStore/IPersistedPage;>;
+getSessionIdentifiers
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getTotalSize
+ ()Lorg/apache/wicket/util/lang/Bytes;
+ ()Lorg/apache/wicket/util/lang/Bytes;
+readFile
+ (Ljava/io/File;)[B
+ (Ljava/io/File;)[B
+removeAllPersistedPages
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removePersistedPage
+ (Ljava/lang/String;Lorg/apache/wicket/page/IManageablePage;)V
+ (Ljava/lang/String;Lorg/apache/wicket/page/IManageablePage;)V
+setPageType
+ (Ljava/io/File;Ljava/lang/String;)V
+ (Ljava/io/File;Ljava/lang/String;)V
+writeFile
+ (Ljava/io/File;[B)V
+ (Ljava/io/File;[B)V

@@ -1,0 +1,53 @@
+class org/apache/wicket/settings/SecuritySettings
+
+getAuthenticationStrategy
+ ()Lorg/apache/wicket/authentication/IAuthenticationStrategy;
+ ()Lorg/apache/wicket/authentication/IAuthenticationStrategy;
+getAuthorizationStrategy
+ ()Lorg/apache/wicket/authorization/IAuthorizationStrategy;
+ ()Lorg/apache/wicket/authorization/IAuthorizationStrategy;
+getCrossOriginEmbedderPolicyConfiguration
+ ()Lorg/apache/wicket/coep/CrossOriginEmbedderPolicyConfiguration;
+ ()Lorg/apache/wicket/coep/CrossOriginEmbedderPolicyConfiguration;
+getCrossOriginOpenerPolicyConfiguration
+ ()Lorg/apache/wicket/coop/CrossOriginOpenerPolicyConfiguration;
+ ()Lorg/apache/wicket/coop/CrossOriginOpenerPolicyConfiguration;
+getCryptFactory
+ ()Lorg/apache/wicket/util/crypt/ICryptFactory;
+ ()Lorg/apache/wicket/util/crypt/ICryptFactory;
+getRandomSupplier
+ ()Lorg/apache/wicket/core/random/ISecureRandomSupplier;
+ ()Lorg/apache/wicket/core/random/ISecureRandomSupplier;
+getUnauthorizedComponentInstantiationListener
+ ()Lorg/apache/wicket/authorization/IUnauthorizedComponentInstantiationListener;
+ ()Lorg/apache/wicket/authorization/IUnauthorizedComponentInstantiationListener;
+getUnauthorizedResourceRequestListener
+ ()Lorg/apache/wicket/authorization/IUnauthorizedResourceRequestListener;
+ ()Lorg/apache/wicket/authorization/IUnauthorizedResourceRequestListener;
+setAuthenticationStrategy
+ (Lorg/apache/wicket/authentication/IAuthenticationStrategy;)Lorg/apache/wicket/settings/SecuritySettings;
+ (Lorg/apache/wicket/authentication/IAuthenticationStrategy;)Lorg/apache/wicket/settings/SecuritySettings;
+setAuthorizationStrategy
+ (Lorg/apache/wicket/authorization/IAuthorizationStrategy;)Lorg/apache/wicket/settings/SecuritySettings;
+ (Lorg/apache/wicket/authorization/IAuthorizationStrategy;)Lorg/apache/wicket/settings/SecuritySettings;
+setCrossOriginEmbedderPolicyConfiguration
+ (Lorg/apache/wicket/coep/CrossOriginEmbedderPolicyConfiguration$CoepMode;[Ljava/lang/String;)Lorg/apache/wicket/settings/SecuritySettings;
+ (Lorg/apache/wicket/coep/CrossOriginEmbedderPolicyConfiguration$CoepMode;[Ljava/lang/String;)Lorg/apache/wicket/settings/SecuritySettings;
+setCrossOriginOpenerPolicyConfiguration
+ (Lorg/apache/wicket/coop/CrossOriginOpenerPolicyConfiguration$CoopMode;[Ljava/lang/String;)Lorg/apache/wicket/settings/SecuritySettings;
+ (Lorg/apache/wicket/coop/CrossOriginOpenerPolicyConfiguration$CoopMode;[Ljava/lang/String;)Lorg/apache/wicket/settings/SecuritySettings;
+setCryptFactory
+ (Lorg/apache/wicket/util/crypt/ICryptFactory;)Lorg/apache/wicket/settings/SecuritySettings;
+ (Lorg/apache/wicket/util/crypt/ICryptFactory;)Lorg/apache/wicket/settings/SecuritySettings;
+setEnforceMounts
+ (Z)Lorg/apache/wicket/settings/SecuritySettings;
+ (Z)Lorg/apache/wicket/settings/SecuritySettings;
+setRandomSupplier
+ (Lorg/apache/wicket/core/random/ISecureRandomSupplier;)Lorg/apache/wicket/settings/SecuritySettings;
+ (Lorg/apache/wicket/core/random/ISecureRandomSupplier;)Lorg/apache/wicket/settings/SecuritySettings;
+setUnauthorizedComponentInstantiationListener
+ (Lorg/apache/wicket/authorization/IUnauthorizedComponentInstantiationListener;)Lorg/apache/wicket/settings/SecuritySettings;
+ (Lorg/apache/wicket/authorization/IUnauthorizedComponentInstantiationListener;)Lorg/apache/wicket/settings/SecuritySettings;
+setUnauthorizedResourceRequestListener
+ (Lorg/apache/wicket/authorization/IUnauthorizedResourceRequestListener;)Lorg/apache/wicket/settings/SecuritySettings;
+ (Lorg/apache/wicket/authorization/IUnauthorizedResourceRequestListener;)Lorg/apache/wicket/settings/SecuritySettings;

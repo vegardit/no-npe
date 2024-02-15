@@ -1,0 +1,45 @@
+class org/apache/wicket/request/http/WebRequest
+
+HEADER_AJAX
+ Ljava/lang/String;
+ L1java/lang/String;
+HEADER_AJAX_BASE_URL
+ Ljava/lang/String;
+ L1java/lang/String;
+HEADER_ORIGIN
+ Ljava/lang/String;
+ L1java/lang/String;
+HEADER_REFERER
+ Ljava/lang/String;
+ L1java/lang/String;
+PARAM_AJAX
+ Ljava/lang/String;
+ L1java/lang/String;
+PARAM_AJAX_BASE_URL
+ Ljava/lang/String;
+ L1java/lang/String;
+PARAM_AJAX_REQUEST_ANTI_CACHE
+ Ljava/lang/String;
+ L1java/lang/String;
+
+cloneWithUrl
+ (Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/request/http/WebRequest;
+ (Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/request/http/WebRequest;
+getCookie
+ (Ljava/lang/String;)Ljakarta/servlet/http/Cookie;
+ (Ljava/lang/String;)Ljakarta/servlet/http/Cookie;
+getCookies
+ ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
+ ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
+getDateHeader
+ (Ljava/lang/String;)Ljava/time/Instant;
+ (Ljava/lang/String;)Ljava/time/Instant;
+getHeader
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getHeaders
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+getIfModifiedSinceHeader
+ ()Ljava/time/Instant;
+ ()Ljava/time/Instant;

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: © Vegard IT GmbH (https://vegardit.com) and contributors
+SPDX-FileContributor: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
+SPDX-License-Identifier: EPL-2.0
+SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.vegardit.no-npe</groupId>
+    <artifactId>no-npe-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../..</relativePath>
+  </parent>
+
+  <artifactId>no-npe-eea-wicket-latest</artifactId>
+
+  <properties>
+     <wicket.version>10.0.0-M2</wicket.version>
+     <wicketstuff.version>10.0.0-M2</wicketstuff.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.wicket</groupId>
+      <artifactId>wicket-core</artifactId>
+      <version>${wicket.version}</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.wicket</groupId>
+      <artifactId>wicket-extensions</artifactId>
+      <version>${wicket.version}</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.wicketstuff</groupId>
+      <artifactId>wicket-datetime</artifactId>
+      <version>${wicketstuff.version}</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.wicketstuff</groupId>
+      <artifactId>wicketstuff-minis</artifactId>
+      <version>${wicketstuff.version}</version>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>

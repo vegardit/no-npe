@@ -1,0 +1,23 @@
+class org/apache/wicket/ResourceBundles
+
+<init>
+ (Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;)V
+ (Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;)V
+addBundle
+ <T:Lorg/apache/wicket/markup/head/HeaderItem;>(TT;)TT;
+ <T:Lorg/apache/wicket/markup/head/HeaderItem;>(TT;)TT;
+addCssBundle
+ (Ljava/lang/Class<*>;Ljava/lang/String;[Lorg/apache/wicket/request/resource/CssResourceReference;)Lorg/apache/wicket/markup/head/CssReferenceHeaderItem;
+ (Ljava/lang/Class<*>;Ljava/lang/String;[Lorg/apache/wicket/request/resource/CssResourceReference;)Lorg/apache/wicket/markup/head/CssReferenceHeaderItem;
+addJavaScriptBundle
+ (Ljava/lang/Class<*>;Ljava/lang/String;Z[Lorg/apache/wicket/request/resource/JavaScriptResourceReference;)Lorg/apache/wicket/markup/head/JavaScriptReferenceHeaderItem;
+ (Ljava/lang/Class<*>;Ljava/lang/String;Z[Lorg/apache/wicket/request/resource/JavaScriptResourceReference;)Lorg/apache/wicket/markup/head/JavaScriptReferenceHeaderItem;
+addJavaScriptBundle
+ (Ljava/lang/Class<*>;Ljava/lang/String;[Lorg/apache/wicket/request/resource/JavaScriptResourceReference;)Lorg/apache/wicket/markup/head/JavaScriptReferenceHeaderItem;
+ (Ljava/lang/Class<*>;Ljava/lang/String;[Lorg/apache/wicket/request/resource/JavaScriptResourceReference;)Lorg/apache/wicket/markup/head/JavaScriptReferenceHeaderItem;
+findBundle
+ (Lorg/apache/wicket/markup/head/HeaderItem;)Lorg/apache/wicket/markup/head/HeaderItem;
+ (Lorg/apache/wicket/markup/head/HeaderItem;)Lorg/apache/wicket/markup/head/HeaderItem;
+newBundleResourceReference
+ <T:Lorg/apache/wicket/markup/head/HeaderItem;:Lorg/apache/wicket/markup/head/IReferenceHeaderItem;>(Ljava/lang/Class<*>;Ljava/lang/String;Ljava/util/List<TT;>;)Lorg/apache/wicket/resource/bundles/ConcatResourceBundleReference<TT;>;
+ <T:Lorg/apache/wicket/markup/head/HeaderItem;:Lorg/apache/wicket/markup/head/IReferenceHeaderItem;>(Ljava/lang/Class<*>;Ljava/lang/String;Ljava/util/List<TT;>;)Lorg/apache/wicket/resource/bundles/ConcatResourceBundleReference<TT;>;

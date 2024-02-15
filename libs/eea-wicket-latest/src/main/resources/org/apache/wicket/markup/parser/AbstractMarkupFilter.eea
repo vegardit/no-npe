@@ -1,0 +1,36 @@
+class org/apache/wicket/markup/parser/AbstractMarkupFilter
+
+REQUEST_COUNTER_KEY
+ Lorg/apache/wicket/MetaDataKey<Ljava/util/Map<Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicInteger;>;>;
+ L1org/apache/wicket/MetaDataKey<Ljava/util/Map<Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicInteger;>;>;
+
+<init>
+ (Lorg/apache/wicket/markup/MarkupResourceStream;)V
+ (Lorg/apache/wicket/markup/MarkupResourceStream;)V
+getMarkupResourceStream
+ ()Lorg/apache/wicket/markup/MarkupResourceStream;
+ ()Lorg/apache/wicket/markup/MarkupResourceStream;
+getNextFilter
+ ()Lorg/apache/wicket/markup/parser/IMarkupFilter;
+ ()Lorg/apache/wicket/markup/parser/IMarkupFilter;
+getWicketNamespace
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getWicketNamespace
+ (Lorg/apache/wicket/markup/MarkupStream;)Ljava/lang/String;
+ (Lorg/apache/wicket/markup/MarkupStream;)Ljava/lang/String;
+nextElement
+ ()Lorg/apache/wicket/markup/MarkupElement;
+ ()Lorg/apache/wicket/markup/MarkupElement;
+onComponentTag
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/markup/MarkupElement;
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/markup/MarkupElement;
+onSpecialTag
+ (Lorg/apache/wicket/markup/HtmlSpecialTag;)Lorg/apache/wicket/markup/MarkupElement;
+ (Lorg/apache/wicket/markup/HtmlSpecialTag;)Lorg/apache/wicket/markup/MarkupElement;
+postProcess
+ (Lorg/apache/wicket/markup/Markup;)V
+ (Lorg/apache/wicket/markup/Markup;)V
+setNextFilter
+ (Lorg/apache/wicket/markup/parser/IMarkupFilter;)V
+ (Lorg/apache/wicket/markup/parser/IMarkupFilter;)V

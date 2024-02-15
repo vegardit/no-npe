@@ -1,0 +1,35 @@
+class org/apache/wicket/protocol/http/IRequestLogger
+
+getCurrentRequest
+ ()Lorg/apache/wicket/protocol/http/IRequestLogger$RequestData;
+ ()Lorg/apache/wicket/protocol/http/IRequestLogger$RequestData;
+getLiveSessions
+ ()[Lorg/apache/wicket/protocol/http/IRequestLogger$SessionData;
+ ()[Lorg/apache/wicket/protocol/http/IRequestLogger$SessionData;
+getRequests
+ ()Ljava/util/List<Lorg/apache/wicket/protocol/http/IRequestLogger$RequestData;>;
+ ()Ljava/util/List<Lorg/apache/wicket/protocol/http/IRequestLogger$RequestData;>;
+logEventTarget
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+logRequestedUrl
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+logResponseTarget
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+objectCreated
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+objectRemoved
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+objectUpdated
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+sessionCreated
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+sessionDestroyed
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

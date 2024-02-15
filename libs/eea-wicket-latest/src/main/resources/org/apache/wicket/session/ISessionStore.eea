@@ -1,0 +1,47 @@
+class org/apache/wicket/session/ISessionStore
+
+bind
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/Session;)V
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/Session;)V
+flushSession
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/Session;)V
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/Session;)V
+getAttribute
+ (Lorg/apache/wicket/request/Request;Ljava/lang/String;)Ljava/io/Serializable;
+ (Lorg/apache/wicket/request/Request;Ljava/lang/String;)Ljava/io/Serializable;
+getAttributeNames
+ (Lorg/apache/wicket/request/Request;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/apache/wicket/request/Request;)Ljava/util/List<Ljava/lang/String;>;
+getBindListeners
+ ()Ljava/util/Set<Lorg/apache/wicket/session/ISessionStore$BindListener;>;
+ ()Ljava/util/Set<Lorg/apache/wicket/session/ISessionStore$BindListener;>;
+getSessionId
+ (Lorg/apache/wicket/request/Request;Z)Ljava/lang/String;
+ (Lorg/apache/wicket/request/Request;Z)Ljava/lang/String;
+getUnboundListener
+ ()Ljava/util/Set<Lorg/apache/wicket/session/ISessionStore$UnboundListener;>;
+ ()Ljava/util/Set<Lorg/apache/wicket/session/ISessionStore$UnboundListener;>;
+invalidate
+ (Lorg/apache/wicket/request/Request;)V
+ (Lorg/apache/wicket/request/Request;)V
+lookup
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/Session;
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/Session;
+registerBindListener
+ (Lorg/apache/wicket/session/ISessionStore$BindListener;)V
+ (Lorg/apache/wicket/session/ISessionStore$BindListener;)V
+registerUnboundListener
+ (Lorg/apache/wicket/session/ISessionStore$UnboundListener;)V
+ (Lorg/apache/wicket/session/ISessionStore$UnboundListener;)V
+removeAttribute
+ (Lorg/apache/wicket/request/Request;Ljava/lang/String;)V
+ (Lorg/apache/wicket/request/Request;Ljava/lang/String;)V
+setAttribute
+ (Lorg/apache/wicket/request/Request;Ljava/lang/String;Ljava/io/Serializable;)V
+ (Lorg/apache/wicket/request/Request;Ljava/lang/String;Ljava/io/Serializable;)V
+unregisterBindListener
+ (Lorg/apache/wicket/session/ISessionStore$BindListener;)V
+ (Lorg/apache/wicket/session/ISessionStore$BindListener;)V
+unregisterUnboundListener
+ (Lorg/apache/wicket/session/ISessionStore$UnboundListener;)V
+ (Lorg/apache/wicket/session/ISessionStore$UnboundListener;)V

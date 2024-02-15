@@ -1,0 +1,39 @@
+class org/apache/wicket/request/resource/AbstractResource
+
+CONTENT_DISPOSITION_HEADER_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+CONTENT_RANGE_ENDBYTE
+ Lorg/apache/wicket/MetaDataKey<Ljava/lang/Long;>;
+ L1org/apache/wicket/MetaDataKey<Ljava/lang/Long;>;
+CONTENT_RANGE_STARTBYTE
+ Lorg/apache/wicket/MetaDataKey<Ljava/lang/Long;>;
+ L1org/apache/wicket/MetaDataKey<Ljava/lang/Long;>;
+INTERNAL_HEADERS
+ Ljava/util/Set<Ljava/lang/String;>;
+ L1java/util/Set<Ljava/lang/String;>;
+
+configureCache
+ (Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;Lorg/apache/wicket/request/resource/IResource$Attributes;)V
+ (Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;Lorg/apache/wicket/request/resource/IResource$Attributes;)V
+getCachingStrategy
+ ()Lorg/apache/wicket/request/resource/caching/IResourceCachingStrategy;
+ ()Lorg/apache/wicket/request/resource/caching/IResourceCachingStrategy;
+newResourceResponse
+ (Lorg/apache/wicket/request/resource/IResource$Attributes;)Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;
+ (Lorg/apache/wicket/request/resource/IResource$Attributes;)Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;
+respond
+ (Lorg/apache/wicket/request/resource/IResource$Attributes;)V
+ (Lorg/apache/wicket/request/resource/IResource$Attributes;)V
+setRequestMetaData
+ (Lorg/apache/wicket/request/resource/IResource$Attributes;)V
+ (Lorg/apache/wicket/request/resource/IResource$Attributes;)V
+setRequestRangeMetaData
+ (Lorg/apache/wicket/request/http/WebRequest;)V
+ (Lorg/apache/wicket/request/http/WebRequest;)V
+setResponseContentRangeHeaderFields
+ (Lorg/apache/wicket/request/http/WebResponse;Lorg/apache/wicket/request/resource/IResource$Attributes;J)Z
+ (Lorg/apache/wicket/request/http/WebResponse;Lorg/apache/wicket/request/resource/IResource$Attributes;J)Z
+setResponseHeaders
+ (Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;Lorg/apache/wicket/request/resource/IResource$Attributes;)V
+ (Lorg/apache/wicket/request/resource/AbstractResource$ResourceResponse;Lorg/apache/wicket/request/resource/IResource$Attributes;)V

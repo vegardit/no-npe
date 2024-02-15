@@ -1,0 +1,20 @@
+class org/apache/wicket/request/resource/caching/version/MessageDigestResourceVersion
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Lorg/apache/wicket/util/lang/Bytes;)V
+ (Ljava/lang/String;Lorg/apache/wicket/util/lang/Bytes;)V
+computeDigest
+ (Ljava/io/InputStream;)[B
+ (Ljava/io/InputStream;)[B
+getMessageDigest
+ ()Ljava/security/MessageDigest;
+ ()Ljava/security/MessageDigest;
+getVersion
+ (Lorg/apache/wicket/request/resource/caching/IStaticCacheableResource;)Ljava/lang/String;
+ (Lorg/apache/wicket/request/resource/caching/IStaticCacheableResource;)Ljava/lang/String;
+getVersionPattern
+ ()Ljava/util/regex/Pattern;
+ ()Ljava/util/regex/Pattern;

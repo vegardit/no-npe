@@ -1,0 +1,38 @@
+class org/apache/wicket/pageStore/AbstractPersistentPageStore
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addPage
+ (Lorg/apache/wicket/pageStore/IPageContext;Lorg/apache/wicket/page/IManageablePage;)V
+ (Lorg/apache/wicket/pageStore/IPageContext;Lorg/apache/wicket/page/IManageablePage;)V
+addPersistedPage
+ (Ljava/lang/String;Lorg/apache/wicket/page/IManageablePage;)V
+ (Ljava/lang/String;Lorg/apache/wicket/page/IManageablePage;)V
+canBeAsynchronous
+ (Lorg/apache/wicket/pageStore/IPageContext;)Z
+ (Lorg/apache/wicket/pageStore/IPageContext;)Z
+createSessionIdentifier
+ (Lorg/apache/wicket/pageStore/IPageContext;)Ljava/lang/String;
+ (Lorg/apache/wicket/pageStore/IPageContext;)Ljava/lang/String;
+getPage
+ (Lorg/apache/wicket/pageStore/IPageContext;I)Lorg/apache/wicket/page/IManageablePage;
+ (Lorg/apache/wicket/pageStore/IPageContext;I)Lorg/apache/wicket/page/IManageablePage;
+getPersistedPage
+ (Ljava/lang/String;I)Lorg/apache/wicket/page/IManageablePage;
+ (Ljava/lang/String;I)Lorg/apache/wicket/page/IManageablePage;
+getSessionIdentifier
+ (Lorg/apache/wicket/pageStore/IPageContext;)Ljava/lang/String;
+ (Lorg/apache/wicket/pageStore/IPageContext;)Ljava/lang/String;
+removeAllPages
+ (Lorg/apache/wicket/pageStore/IPageContext;)V
+ (Lorg/apache/wicket/pageStore/IPageContext;)V
+removeAllPersistedPages
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+removePage
+ (Lorg/apache/wicket/pageStore/IPageContext;Lorg/apache/wicket/page/IManageablePage;)V
+ (Lorg/apache/wicket/pageStore/IPageContext;Lorg/apache/wicket/page/IManageablePage;)V
+removePersistedPage
+ (Ljava/lang/String;Lorg/apache/wicket/page/IManageablePage;)V
+ (Ljava/lang/String;Lorg/apache/wicket/page/IManageablePage;)V

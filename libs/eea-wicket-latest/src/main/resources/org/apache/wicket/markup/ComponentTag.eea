@@ -1,0 +1,135 @@
+class org/apache/wicket/markup/ComponentTag
+
+xmlTag
+ Lorg/apache/wicket/markup/parser/XmlTag;
+ Lorg/apache/wicket/markup/parser/XmlTag;
+
+<init>
+ (Ljava/lang/String;Lorg/apache/wicket/markup/parser/XmlTag$TagType;)V
+ (Ljava/lang/String;Lorg/apache/wicket/markup/parser/XmlTag$TagType;)V
+<init>
+ (Lorg/apache/wicket/markup/ComponentTag;)V
+ (Lorg/apache/wicket/markup/ComponentTag;)V
+<init>
+ (Lorg/apache/wicket/markup/parser/XmlTag;)V
+ (Lorg/apache/wicket/markup/parser/XmlTag;)V
+addBehavior
+ (Lorg/apache/wicket/behavior/Behavior;)V
+ (Lorg/apache/wicket/behavior/Behavior;)V
+append
+ (Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/String;)V
+closes
+ (Lorg/apache/wicket/markup/MarkupElement;)Z
+ (Lorg/apache/wicket/markup/MarkupElement;)Z
+equalTo
+ (Lorg/apache/wicket/markup/MarkupElement;)Z
+ (Lorg/apache/wicket/markup/MarkupElement;)Z
+getAttribute
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getAttributes
+ ()Lorg/apache/wicket/util/value/IValueMap;
+ ()Lorg/apache/wicket/util/value/IValueMap;
+getAutoComponentFactory
+ ()Lorg/apache/wicket/markup/ComponentTag$IAutoComponentFactory;
+ ()Lorg/apache/wicket/markup/ComponentTag$IAutoComponentFactory;
+getBehaviors
+ ()Ljava/util/Iterator<+Lorg/apache/wicket/behavior/Behavior;>;
+ ()Ljava/util/Iterator<+Lorg/apache/wicket/behavior/Behavior;>;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMarkupClass
+ ()Ljava/lang/Class<+Lorg/apache/wicket/Component;>;
+ ()Ljava/lang/Class<+Lorg/apache/wicket/Component;>;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getNamespace
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getOpenTag
+ ()Lorg/apache/wicket/markup/ComponentTag;
+ ()Lorg/apache/wicket/markup/ComponentTag;
+getType
+ ()Lorg/apache/wicket/markup/parser/XmlTag$TagType;
+ ()Lorg/apache/wicket/markup/parser/XmlTag$TagType;
+getUserData
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object;
+getXmlTag
+ ()Lorg/apache/wicket/markup/parser/XmlTag;
+ ()Lorg/apache/wicket/markup/parser/XmlTag;
+isOpen
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isOpenClose
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+mutable
+ ()Lorg/apache/wicket/markup/ComponentTag;
+ ()Lorg/apache/wicket/markup/ComponentTag;
+onBeforeRender
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/MarkupStream;)V
+ (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/MarkupStream;)V
+put
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+put
+ (Ljava/lang/String;Ljava/lang/CharSequence;)V
+ (Ljava/lang/String;Ljava/lang/CharSequence;)V
+put
+ (Ljava/lang/String;Lorg/apache/wicket/util/string/StringValue;)V
+ (Ljava/lang/String;Lorg/apache/wicket/util/string/StringValue;)V
+put
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+putAll
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+putInternal
+ (Ljava/lang/String;Ljava/lang/CharSequence;)V
+ (Ljava/lang/String;Ljava/lang/CharSequence;)V
+remove
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setAutoComponentFactory
+ (Lorg/apache/wicket/markup/ComponentTag$IAutoComponentFactory;)V
+ (Lorg/apache/wicket/markup/ComponentTag$IAutoComponentFactory;)V
+setId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setMarkupClass
+ <C:Lorg/apache/wicket/Component;>(Ljava/lang/Class<TC;>;)V
+ <C:Lorg/apache/wicket/Component;>(Ljava/lang/Class<TC;>;)V
+setName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setNamespace
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setOpenTag
+ (Lorg/apache/wicket/markup/ComponentTag;)V
+ (Lorg/apache/wicket/markup/ComponentTag;)V
+setType
+ (Lorg/apache/wicket/markup/parser/XmlTag$TagType;)V
+ (Lorg/apache/wicket/markup/parser/XmlTag$TagType;)V
+setUserData
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+toCharSequence
+ ()Ljava/lang/CharSequence;
+ ()Ljava/lang/CharSequence;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+toUserDebugString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+writeOutput
+ (Lorg/apache/wicket/request/Response;ZLjava/lang/String;)V
+ (Lorg/apache/wicket/request/Response;ZLjava/lang/String;)V
+writeSyntheticCloseTag
+ (Lorg/apache/wicket/request/Response;)V
+ (Lorg/apache/wicket/request/Response;)V

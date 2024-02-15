@@ -1,0 +1,26 @@
+class org/apache/wicket/resource/PropertiesFactory
+
+<init>
+ (Lorg/apache/wicket/resource/IPropertiesFactoryContext;)V
+ (Lorg/apache/wicket/resource/IPropertiesFactoryContext;)V
+addListener
+ (Lorg/apache/wicket/resource/IPropertiesChangeListener;)V
+ (Lorg/apache/wicket/resource/IPropertiesChangeListener;)V
+addToWatcher
+ (Ljava/lang/String;Lorg/apache/wicket/util/resource/IResourceStream;Lorg/apache/wicket/util/watch/IModificationWatcher;)V
+ (Ljava/lang/String;Lorg/apache/wicket/util/resource/IResourceStream;Lorg/apache/wicket/util/watch/IModificationWatcher;)V
+getCache
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/wicket/resource/Properties;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/wicket/resource/Properties;>;
+getPropertiesLoaders
+ ()Ljava/util/List<Lorg/apache/wicket/resource/IPropertiesLoader;>;
+ ()Ljava/util/List<Lorg/apache/wicket/resource/IPropertiesLoader;>;
+load
+ (Ljava/lang/Class<*>;Ljava/lang/String;)Lorg/apache/wicket/resource/Properties;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)Lorg/apache/wicket/resource/Properties;
+loadFromLoader
+ (Lorg/apache/wicket/resource/IPropertiesLoader;Lorg/apache/wicket/util/resource/IResourceStream;)Lorg/apache/wicket/util/value/ValueMap;
+ (Lorg/apache/wicket/resource/IPropertiesLoader;Lorg/apache/wicket/util/resource/IResourceStream;)Lorg/apache/wicket/util/value/ValueMap;
+newPropertiesCache
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/wicket/resource/Properties;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/apache/wicket/resource/Properties;>;

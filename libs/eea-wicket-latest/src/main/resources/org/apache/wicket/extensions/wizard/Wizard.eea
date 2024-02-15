@@ -1,0 +1,54 @@
+class org/apache/wicket/extensions/wizard/Wizard
+
+BUTTONS_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+FEEDBACK_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+FORM_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+HEADER_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+OVERVIEW_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+VIEW_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Lorg/apache/wicket/extensions/wizard/IWizardModel;)V
+ (Ljava/lang/String;Lorg/apache/wicket/extensions/wizard/IWizardModel;)V
+getActiveStep
+ ()Lorg/apache/wicket/extensions/wizard/IWizardStep;
+ ()Lorg/apache/wicket/extensions/wizard/IWizardStep;
+getForm
+ ()Lorg/apache/wicket/markup/html/form/Form<*>;
+ ()Lorg/apache/wicket/markup/html/form/Form<*>;
+getWizardModel
+ ()Lorg/apache/wicket/extensions/wizard/IWizardModel;
+ ()Lorg/apache/wicket/extensions/wizard/IWizardModel;
+init
+ (Lorg/apache/wicket/extensions/wizard/IWizardModel;)V
+ (Lorg/apache/wicket/extensions/wizard/IWizardModel;)V
+newButtonBar
+ (Ljava/lang/String;)Lorg/apache/wicket/Component;
+ (Ljava/lang/String;)Lorg/apache/wicket/Component;
+newFeedbackPanel
+ (Ljava/lang/String;)Lorg/apache/wicket/Component;
+ (Ljava/lang/String;)Lorg/apache/wicket/Component;
+newForm
+ <E:Ljava/lang/Object;>(Ljava/lang/String;)Lorg/apache/wicket/markup/html/form/Form<TE;>;
+ <E:Ljava/lang/Object;>(Ljava/lang/String;)Lorg/apache/wicket/markup/html/form/Form<TE;>;
+newOverviewBar
+ (Ljava/lang/String;)Lorg/apache/wicket/Component;
+ (Ljava/lang/String;)Lorg/apache/wicket/Component;
+onActiveStepChanged
+ (Lorg/apache/wicket/extensions/wizard/IWizardStep;)V
+ (Lorg/apache/wicket/extensions/wizard/IWizardStep;)V

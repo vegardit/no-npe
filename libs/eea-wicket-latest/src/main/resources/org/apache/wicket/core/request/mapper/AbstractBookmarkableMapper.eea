@@ -1,0 +1,78 @@
+class org/apache/wicket/core/request/mapper/AbstractBookmarkableMapper
+
+mountSegments
+ [Ljava/lang/String;
+ [Ljava/lang/String;
+pageParametersEncoder
+ Lorg/apache/wicket/request/mapper/parameter/IPageParametersEncoder;
+ Lorg/apache/wicket/request/mapper/parameter/IPageParametersEncoder;
+pathSegments
+ Ljava/util/List<Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$MountPathSegment;>;
+ Ljava/util/List<Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$MountPathSegment;>;
+
+<init>
+ (Ljava/lang/String;Lorg/apache/wicket/request/mapper/parameter/IPageParametersEncoder;)V
+ (Ljava/lang/String;Lorg/apache/wicket/request/mapper/parameter/IPageParametersEncoder;)V
+buildUrl
+ (Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;)Lorg/apache/wicket/request/Url;
+ (Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;)Lorg/apache/wicket/request/Url;
+checkPageClass
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;)Z
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;)Z
+checkPageInstance
+ (Lorg/apache/wicket/request/component/IRequestablePage;)Z
+ (Lorg/apache/wicket/request/component/IRequestablePage;)Z
+extractPageParameters
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/request/mapper/parameter/PageParameters;
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/request/mapper/parameter/PageParameters;
+getCompatibilityScore
+ (Lorg/apache/wicket/request/Request;)I
+ (Lorg/apache/wicket/request/Request;)I
+getMatchedSegmentSizes
+ (Lorg/apache/wicket/request/Url;)[I
+ (Lorg/apache/wicket/request/Url;)[I
+getPageInfo
+ (Lorg/apache/wicket/core/request/handler/IPageRequestHandler;)Lorg/apache/wicket/request/mapper/info/PageInfo;
+ (Lorg/apache/wicket/core/request/handler/IPageRequestHandler;)Lorg/apache/wicket/request/mapper/info/PageInfo;
+getPathSegments
+ ([Ljava/lang/String;)Ljava/util/List<Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$MountPathSegment;>;
+ ([Ljava/lang/String;)Ljava/util/List<Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$MountPathSegment;>;
+isFixedSegment
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+mapHandler
+ (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
+ (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
+mapRequest
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/request/IRequestHandler;
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/request/IRequestHandler;
+newPageParameters
+ ()Lorg/apache/wicket/request/mapper/parameter/PageParameters;
+ ()Lorg/apache/wicket/request/mapper/parameter/PageParameters;
+parseRequest
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;
+ (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;
+processBookmarkable
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/IRequestHandler;
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/IRequestHandler;
+processHybrid
+ (Lorg/apache/wicket/request/mapper/info/PageInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;Ljava/lang/Integer;)Lorg/apache/wicket/request/IRequestHandler;
+ (Lorg/apache/wicket/request/mapper/info/PageInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;Ljava/lang/Integer;)Lorg/apache/wicket/request/IRequestHandler;
+processListener
+ (Lorg/apache/wicket/request/mapper/info/PageComponentInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/IRequestHandler;
+ (Lorg/apache/wicket/request/mapper/info/PageComponentInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/IRequestHandler;
+resolveUserLocale
+ ()Ljava/util/Locale;
+ ()Ljava/util/Locale;
+segmentsMatch
+ (Ljava/lang/String;Ljava/lang/String;)Z
+ (Ljava/lang/String;Ljava/lang/String;)Z
+setCaseSensitiveMatch
+ (Z)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper;
+ (Z)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper;
+setPlaceholders
+ (Lorg/apache/wicket/request/mapper/parameter/PageParameters;Lorg/apache/wicket/request/Url;)Z
+ (Lorg/apache/wicket/request/mapper/parameter/PageParameters;Lorg/apache/wicket/request/Url;)Z
+urlStartsWithMountedSegments
+ (Lorg/apache/wicket/request/Url;)Z
+ (Lorg/apache/wicket/request/Url;)Z

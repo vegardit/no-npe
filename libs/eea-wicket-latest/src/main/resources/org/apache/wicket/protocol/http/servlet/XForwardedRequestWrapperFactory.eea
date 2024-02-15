@@ -1,0 +1,42 @@
+class org/apache/wicket/protocol/http/servlet/XForwardedRequestWrapperFactory
+
+HTTPS_SERVER_PORT_PARAMETER
+ Ljava/lang/String;
+ L1java/lang/String;
+HTTP_SERVER_PORT_PARAMETER
+ Ljava/lang/String;
+ L1java/lang/String;
+INTERNAL_PROXIES_PARAMETER
+ Ljava/lang/String;
+ L1java/lang/String;
+PROTOCOL_HEADER_PARAMETER
+ Ljava/lang/String;
+ L1java/lang/String;
+PROTOCOL_HEADER_SSL_VALUE_PARAMETER
+ Ljava/lang/String;
+ L1java/lang/String;
+PROXIES_HEADER_PARAMETER
+ Ljava/lang/String;
+ L1java/lang/String;
+REMOTE_IP_HEADER_PARAMETER
+ Ljava/lang/String;
+ L1java/lang/String;
+TRUSTED_PROXIES_PARAMETER
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getConfig
+ ()Lorg/apache/wicket/protocol/http/servlet/XForwardedRequestWrapperFactory$Config;
+ ()Lorg/apache/wicket/protocol/http/servlet/XForwardedRequestWrapperFactory$Config;
+init
+ (Ljakarta/servlet/FilterConfig;)V
+ (Ljakarta/servlet/FilterConfig;)V
+needsWrapper
+ (Ljakarta/servlet/http/HttpServletRequest;)Z
+ (Ljakarta/servlet/http/HttpServletRequest;)Z
+newRequestWrapper
+ (Ljakarta/servlet/http/HttpServletRequest;)Ljakarta/servlet/http/HttpServletRequest;
+ (Ljakarta/servlet/http/HttpServletRequest;)Ljakarta/servlet/http/HttpServletRequest;
+setConfig
+ (Lorg/apache/wicket/protocol/http/servlet/XForwardedRequestWrapperFactory$Config;)V
+ (Lorg/apache/wicket/protocol/http/servlet/XForwardedRequestWrapperFactory$Config;)V

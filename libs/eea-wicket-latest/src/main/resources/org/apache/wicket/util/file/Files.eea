@@ -1,0 +1,53 @@
+class org/apache/wicket/util/file/Files
+
+basePath
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+cleanupFilename
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+copy
+ (Ljava/io/File;Ljava/io/File;)V
+ (Ljava/io/File;Ljava/io/File;)V
+extension
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+filename
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getLastModified
+ (Ljava/io/File;)Ljava/time/Instant;
+ (Ljava/io/File;)Ljava/time/Instant;
+getLocalFileFromUrl
+ (Ljava/lang/String;)Ljava/io/File;
+ (Ljava/lang/String;)Ljava/io/File;
+getLocalFileFromUrl
+ (Ljava/net/URL;)Ljava/io/File;
+ (Ljava/net/URL;)Ljava/io/File;
+list
+ (Ljava/io/File;)[Ljava/io/File;
+ (Ljava/io/File;)[Ljava/io/File;
+mkdirs
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+readBytes
+ (Ljava/io/File;)[B
+ (Ljava/io/File;)[B
+remove
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+removeAsync
+ (Ljava/io/File;Lorg/apache/wicket/util/file/IFileCleaner;)Z
+ (Ljava/io/File;Lorg/apache/wicket/util/file/IFileCleaner;)Z
+removeFolder
+ (Ljava/io/File;)Z
+ (Ljava/io/File;)Z
+removeFolderAsync
+ (Ljava/io/File;Lorg/apache/wicket/util/file/IFileCleaner;)Z
+ (Ljava/io/File;Lorg/apache/wicket/util/file/IFileCleaner;)Z
+writeTo
+ (Ljava/io/File;Ljava/io/InputStream;)I
+ (Ljava/io/File;Ljava/io/InputStream;)I
+writeTo
+ (Ljava/io/File;Ljava/io/InputStream;I)I
+ (Ljava/io/File;Ljava/io/InputStream;I)I

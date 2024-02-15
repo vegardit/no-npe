@@ -1,0 +1,29 @@
+class org/apache/wicket/DequeueContext
+
+<init>
+ (Lorg/apache/wicket/markup/IMarkupFragment;Lorg/apache/wicket/MarkupContainer;Z)V
+ (Lorg/apache/wicket/markup/IMarkupFragment;Lorg/apache/wicket/MarkupContainer;Z)V
+findComponentToDequeue
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
+ (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
+peekContainer
+ ()Lorg/apache/wicket/MarkupContainer;
+ ()Lorg/apache/wicket/MarkupContainer;
+peekTag
+ ()Lorg/apache/wicket/markup/ComponentTag;
+ ()Lorg/apache/wicket/markup/ComponentTag;
+popContainer
+ ()Lorg/apache/wicket/MarkupContainer;
+ ()Lorg/apache/wicket/MarkupContainer;
+pushContainer
+ (Lorg/apache/wicket/MarkupContainer;)V
+ (Lorg/apache/wicket/MarkupContainer;)V
+restore
+ (Lorg/apache/wicket/DequeueContext$Bookmark;)V
+ (Lorg/apache/wicket/DequeueContext$Bookmark;)V
+save
+ ()Lorg/apache/wicket/DequeueContext$Bookmark;
+ ()Lorg/apache/wicket/DequeueContext$Bookmark;
+takeTag
+ ()Lorg/apache/wicket/markup/ComponentTag;
+ ()Lorg/apache/wicket/markup/ComponentTag;

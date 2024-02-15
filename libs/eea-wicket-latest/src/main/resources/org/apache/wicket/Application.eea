@@ -1,0 +1,262 @@
+class org/apache/wicket/Application
+
+CONFIGURATION
+ Ljava/lang/String;
+ L1java/lang/String;
+
+get
+ ()Lorg/apache/wicket/Application;
+ ()Lorg/apache/wicket/Application;
+get
+ (Ljava/lang/String;)Lorg/apache/wicket/Application;
+ (Ljava/lang/String;)Lorg/apache/wicket/Application;
+getApplicationKeys
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+
+createRequestCycle
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/request/Response;)Lorg/apache/wicket/request/cycle/RequestCycle;
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/request/Response;)Lorg/apache/wicket/request/cycle/RequestCycle;
+decorateHeaderResponse
+ (Lorg/apache/wicket/markup/head/IHeaderResponse;)Lorg/apache/wicket/markup/head/IHeaderResponse;
+ (Lorg/apache/wicket/markup/head/IHeaderResponse;)Lorg/apache/wicket/markup/head/IHeaderResponse;
+fetchCreateAndSetSession
+ (Lorg/apache/wicket/request/cycle/RequestCycle;)Lorg/apache/wicket/Session;
+ (Lorg/apache/wicket/request/cycle/RequestCycle;)Lorg/apache/wicket/Session;
+getApplicationKey
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getApplicationListeners
+ ()Lorg/apache/wicket/ApplicationListenerCollection;
+ ()Lorg/apache/wicket/ApplicationListenerCollection;
+getApplicationSettings
+ ()Lorg/apache/wicket/settings/ApplicationSettings;
+ ()Lorg/apache/wicket/settings/ApplicationSettings;
+getBehaviorInstantiationListeners
+ ()Lorg/apache/wicket/BehaviorInstantiationListenerCollection;
+ ()Lorg/apache/wicket/BehaviorInstantiationListenerCollection;
+getComponentInitializationListeners
+ ()Lorg/apache/wicket/application/ComponentInitializationListenerCollection;
+ ()Lorg/apache/wicket/application/ComponentInitializationListenerCollection;
+getComponentInstantiationListeners
+ ()Lorg/apache/wicket/application/ComponentInstantiationListenerCollection;
+ ()Lorg/apache/wicket/application/ComponentInstantiationListenerCollection;
+getComponentOnAfterRenderListeners
+ ()Lorg/apache/wicket/application/ComponentOnAfterRenderListenerCollection;
+ ()Lorg/apache/wicket/application/ComponentOnAfterRenderListenerCollection;
+getComponentOnConfigureListeners
+ ()Lorg/apache/wicket/application/ComponentOnConfigureListenerCollection;
+ ()Lorg/apache/wicket/application/ComponentOnConfigureListenerCollection;
+getComponentPostOnBeforeRenderListeners
+ ()Lorg/apache/wicket/application/ComponentOnBeforeRenderListenerCollection;
+ ()Lorg/apache/wicket/application/ComponentOnBeforeRenderListenerCollection;
+getComponentPreOnBeforeRenderListeners
+ ()Lorg/apache/wicket/application/ComponentOnBeforeRenderListenerCollection;
+ ()Lorg/apache/wicket/application/ComponentOnBeforeRenderListenerCollection;
+getConfigurationType
+ ()Lorg/apache/wicket/RuntimeConfigurationType;
+ ()Lorg/apache/wicket/RuntimeConfigurationType;
+getConverterLocator
+ ()Lorg/apache/wicket/IConverterLocator;
+ ()Lorg/apache/wicket/IConverterLocator;
+getDebugSettings
+ ()Lorg/apache/wicket/settings/DebugSettings;
+ ()Lorg/apache/wicket/settings/DebugSettings;
+getExceptionMapperProvider
+ ()Ljava/util/function/Supplier<Lorg/apache/wicket/request/IExceptionMapper;>;
+ ()Ljava/util/function/Supplier<Lorg/apache/wicket/request/IExceptionMapper;>;
+getExceptionSettings
+ ()Lorg/apache/wicket/settings/ExceptionSettings;
+ ()Lorg/apache/wicket/settings/ExceptionSettings;
+getFrameworkSettings
+ ()Lorg/apache/wicket/settings/FrameworkSettings;
+ ()Lorg/apache/wicket/settings/FrameworkSettings;
+getHeaderContributorListeners
+ ()Lorg/apache/wicket/application/HeaderContributorListenerCollection;
+ ()Lorg/apache/wicket/application/HeaderContributorListenerCollection;
+getHeaderResponseDecorators
+ ()Lorg/apache/wicket/markup/html/HeaderResponseDecoratorCollection;
+ ()Lorg/apache/wicket/markup/html/HeaderResponseDecoratorCollection;
+getHomePage
+ ()Ljava/lang/Class<+Lorg/apache/wicket/Page;>;
+ ()Ljava/lang/Class<+Lorg/apache/wicket/Page;>;
+getInitializers
+ ()Ljava/util/List<Lorg/apache/wicket/IInitializer;>;
+ ()Ljava/util/List<Lorg/apache/wicket/IInitializer;>;
+getJavaScriptLibrarySettings
+ ()Lorg/apache/wicket/settings/JavaScriptLibrarySettings;
+ ()Lorg/apache/wicket/settings/JavaScriptLibrarySettings;
+getMapperContext
+ ()Lorg/apache/wicket/core/request/mapper/IMapperContext;
+ ()L1org/apache/wicket/core/request/mapper/IMapperContext;
+getMarkupSettings
+ ()Lorg/apache/wicket/settings/MarkupSettings;
+ ()Lorg/apache/wicket/settings/MarkupSettings;
+getMetaData
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;)TT;
+getMimeType
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getOnComponentTagListeners
+ ()Lorg/apache/wicket/application/OnComponentTagListenerCollection;
+ ()Lorg/apache/wicket/application/OnComponentTagListenerCollection;
+getPageFactory
+ ()Lorg/apache/wicket/IPageFactory;
+ ()Lorg/apache/wicket/IPageFactory;
+getPageManagerProvider
+ ()Lorg/apache/wicket/IPageManagerProvider;
+ ()Lorg/apache/wicket/IPageManagerProvider;
+getPageRendererProvider
+ ()Lorg/apache/wicket/IPageRendererProvider;
+ ()Lorg/apache/wicket/IPageRendererProvider;
+getPageSettings
+ ()Lorg/apache/wicket/settings/PageSettings;
+ ()Lorg/apache/wicket/settings/PageSettings;
+getRequestCycleListeners
+ ()Lorg/apache/wicket/request/cycle/RequestCycleListenerCollection;
+ ()Lorg/apache/wicket/request/cycle/RequestCycleListenerCollection;
+getRequestCycleProvider
+ ()Lorg/apache/wicket/IRequestCycleProvider;
+ ()Lorg/apache/wicket/IRequestCycleProvider;
+getRequestCycleSettings
+ ()Lorg/apache/wicket/settings/RequestCycleSettings;
+ ()Lorg/apache/wicket/settings/RequestCycleSettings;
+getRequestLogger
+ ()Lorg/apache/wicket/protocol/http/IRequestLogger;
+ ()Lorg/apache/wicket/protocol/http/IRequestLogger;
+getRequestLoggerSettings
+ ()Lorg/apache/wicket/settings/RequestLoggerSettings;
+ ()Lorg/apache/wicket/settings/RequestLoggerSettings;
+getResourceBundles
+ ()Lorg/apache/wicket/ResourceBundles;
+ ()Lorg/apache/wicket/ResourceBundles;
+getResourceReferenceRegistry
+ ()Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;
+ ()Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;
+getResourceSettings
+ ()Lorg/apache/wicket/settings/ResourceSettings;
+ ()Lorg/apache/wicket/settings/ResourceSettings;
+getRootRequestMapper
+ ()Lorg/apache/wicket/request/IRequestMapper;
+ ()L1org/apache/wicket/request/IRequestMapper;
+getRootRequestMapperAsCompound
+ ()Lorg/apache/wicket/request/mapper/ICompoundRequestMapper;
+ ()Lorg/apache/wicket/request/mapper/ICompoundRequestMapper;
+getSecuritySettings
+ ()Lorg/apache/wicket/settings/SecuritySettings;
+ ()Lorg/apache/wicket/settings/SecuritySettings;
+getSessionListeners
+ ()Lorg/apache/wicket/SessionListenerCollection;
+ ()Lorg/apache/wicket/SessionListenerCollection;
+getSessionStore
+ ()Lorg/apache/wicket/session/ISessionStore;
+ ()Lorg/apache/wicket/session/ISessionStore;
+getSessionStoreProvider
+ ()Ljava/util/function/Supplier<Lorg/apache/wicket/session/ISessionStore;>;
+ ()Ljava/util/function/Supplier<Lorg/apache/wicket/session/ISessionStore;>;
+getSharedResources
+ ()Lorg/apache/wicket/SharedResources;
+ ()Lorg/apache/wicket/SharedResources;
+getStoreSettings
+ ()Lorg/apache/wicket/settings/StoreSettings;
+ ()Lorg/apache/wicket/settings/StoreSettings;
+logEventTarget
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+logResponseTarget
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+newConverterLocator
+ ()Lorg/apache/wicket/IConverterLocator;
+ ()Lorg/apache/wicket/IConverterLocator;
+newMapperContext
+ ()Lorg/apache/wicket/core/request/mapper/IMapperContext;
+ ()Lorg/apache/wicket/core/request/mapper/IMapperContext;
+newPageFactory
+ ()Lorg/apache/wicket/IPageFactory;
+ ()Lorg/apache/wicket/IPageFactory;
+newRequestLogger
+ ()Lorg/apache/wicket/protocol/http/IRequestLogger;
+ ()Lorg/apache/wicket/protocol/http/IRequestLogger;
+newResourceBundles
+ (Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;)Lorg/apache/wicket/ResourceBundles;
+ (Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;)Lorg/apache/wicket/ResourceBundles;
+newResourceReferenceRegistry
+ ()Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;
+ ()Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;
+newSession
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/request/Response;)Lorg/apache/wicket/Session;
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/request/Response;)Lorg/apache/wicket/Session;
+newSharedResources
+ (Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;)Lorg/apache/wicket/SharedResources;
+ (Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;)Lorg/apache/wicket/SharedResources;
+onEvent
+ (Lorg/apache/wicket/event/IEvent<*>;)V
+ (L1org/apache/wicket/event/IEvent<*>;)V
+sessionUnbound
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setApplicationSettings
+ (Lorg/apache/wicket/settings/ApplicationSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/ApplicationSettings;)Lorg/apache/wicket/Application;
+setDebugSettings
+ (Lorg/apache/wicket/settings/DebugSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/DebugSettings;)Lorg/apache/wicket/Application;
+setExceptionMapperProvider
+ (Ljava/util/function/Supplier<Lorg/apache/wicket/request/IExceptionMapper;>;)V
+ (Ljava/util/function/Supplier<Lorg/apache/wicket/request/IExceptionMapper;>;)V
+setExceptionSettings
+ (Lorg/apache/wicket/settings/ExceptionSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/ExceptionSettings;)Lorg/apache/wicket/Application;
+setFrameworkSettings
+ (Lorg/apache/wicket/settings/FrameworkSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/FrameworkSettings;)Lorg/apache/wicket/Application;
+setJavaScriptLibrarySettings
+ (Lorg/apache/wicket/settings/JavaScriptLibrarySettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/JavaScriptLibrarySettings;)Lorg/apache/wicket/Application;
+setMarkupSettings
+ (Lorg/apache/wicket/settings/MarkupSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/MarkupSettings;)Lorg/apache/wicket/Application;
+setMetaData
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;TT;)Lorg/apache/wicket/Application;
+ <T:Ljava/lang/Object;>(Lorg/apache/wicket/MetaDataKey<TT;>;TT;)Lorg/apache/wicket/Application;
+setName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setPageManagerProvider
+ (Lorg/apache/wicket/IPageManagerProvider;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/IPageManagerProvider;)Lorg/apache/wicket/Application;
+setPageRendererProvider
+ (Lorg/apache/wicket/IPageRendererProvider;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/IPageRendererProvider;)Lorg/apache/wicket/Application;
+setPageSettings
+ (Lorg/apache/wicket/settings/PageSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/PageSettings;)Lorg/apache/wicket/Application;
+setRequestCycleProvider
+ (Lorg/apache/wicket/IRequestCycleProvider;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/IRequestCycleProvider;)Lorg/apache/wicket/Application;
+setRequestCycleSettings
+ (Lorg/apache/wicket/settings/RequestCycleSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/RequestCycleSettings;)Lorg/apache/wicket/Application;
+setRequestLoggerSettings
+ (Lorg/apache/wicket/settings/RequestLoggerSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/RequestLoggerSettings;)Lorg/apache/wicket/Application;
+setResourceSettings
+ (Lorg/apache/wicket/settings/ResourceSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/ResourceSettings;)Lorg/apache/wicket/Application;
+setRootRequestMapper
+ (Lorg/apache/wicket/request/IRequestMapper;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/request/IRequestMapper;)Lorg/apache/wicket/Application;
+setSecuritySettings
+ (Lorg/apache/wicket/settings/SecuritySettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/SecuritySettings;)Lorg/apache/wicket/Application;
+setSessionStoreProvider
+ (Ljava/util/function/Supplier<Lorg/apache/wicket/session/ISessionStore;>;)Lorg/apache/wicket/Application;
+ (Ljava/util/function/Supplier<Lorg/apache/wicket/session/ISessionStore;>;)Lorg/apache/wicket/Application;
+setStoreSettings
+ (Lorg/apache/wicket/settings/StoreSettings;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/settings/StoreSettings;)Lorg/apache/wicket/Application;

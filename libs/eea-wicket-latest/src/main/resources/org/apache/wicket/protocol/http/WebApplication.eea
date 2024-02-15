@@ -1,0 +1,112 @@
+class org/apache/wicket/protocol/http/WebApplication
+
+META_INF_RESOURCES
+ Ljava/lang/String;
+ L1java/lang/String;
+
+get
+ ()Lorg/apache/wicket/protocol/http/WebApplication;
+ ()Lorg/apache/wicket/protocol/http/WebApplication;
+
+addResourceReplacement
+ (Lorg/apache/wicket/request/resource/CssResourceReference;Lorg/apache/wicket/request/resource/ResourceReference;)V
+ (Lorg/apache/wicket/request/resource/CssResourceReference;Lorg/apache/wicket/request/resource/ResourceReference;)V
+addResourceReplacement
+ (Lorg/apache/wicket/request/resource/JavaScriptResourceReference;Lorg/apache/wicket/request/resource/ResourceReference;)V
+ (Lorg/apache/wicket/request/resource/JavaScriptResourceReference;Lorg/apache/wicket/request/resource/ResourceReference;)V
+getAjaxRequestTargetListeners
+ ()Lorg/apache/wicket/ajax/AjaxRequestTargetListenerCollection;
+ ()Lorg/apache/wicket/ajax/AjaxRequestTargetListenerCollection;
+getAjaxRequestTargetProvider
+ ()Ljava/util/function/Function<Lorg/apache/wicket/Page;Lorg/apache/wicket/ajax/AjaxRequestTarget;>;
+ ()Ljava/util/function/Function<Lorg/apache/wicket/Page;Lorg/apache/wicket/ajax/AjaxRequestTarget;>;
+getAndRemoveBufferedResponse
+ (Ljava/lang/String;Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/protocol/http/BufferedWebResponse;
+ (Ljava/lang/String;Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/protocol/http/BufferedWebResponse;
+getApplicationKey
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getConfigurationType
+ ()Lorg/apache/wicket/RuntimeConfigurationType;
+ ()Lorg/apache/wicket/RuntimeConfigurationType;
+getCspSettings
+ ()Lorg/apache/wicket/csp/ContentSecurityPolicySettings;
+ ()Lorg/apache/wicket/csp/ContentSecurityPolicySettings;
+getFilterFactoryManager
+ ()Lorg/apache/wicket/protocol/http/servlet/FilterFactoryManager;
+ ()Lorg/apache/wicket/protocol/http/servlet/FilterFactoryManager;
+getInitParameter
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getMimeType
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getServletContext
+ ()Ljakarta/servlet/ServletContext;
+ ()Ljakarta/servlet/ServletContext;
+getSessionAttributePrefix
+ (Lorg/apache/wicket/request/http/WebRequest;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/apache/wicket/request/http/WebRequest;Ljava/lang/String;)Ljava/lang/String;
+getWicketFilter
+ ()Lorg/apache/wicket/protocol/http/WicketFilter;
+ ()Lorg/apache/wicket/protocol/http/WicketFilter;
+hasBufferedResponse
+ (Ljava/lang/String;Lorg/apache/wicket/request/Url;)Z
+ (Ljava/lang/String;Lorg/apache/wicket/request/Url;)Z
+logEventTarget
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+logResponseTarget
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+ (Lorg/apache/wicket/request/IRequestHandler;)V
+mount
+ (Lorg/apache/wicket/request/IRequestMapper;)V
+ (Lorg/apache/wicket/request/IRequestMapper;)V
+mountPackage
+ <P:Lorg/apache/wicket/Page;>(Ljava/lang/String;Ljava/lang/Class<TP;>;)Lorg/apache/wicket/core/request/mapper/PackageMapper;
+ <P:Lorg/apache/wicket/Page;>(Ljava/lang/String;Ljava/lang/Class<TP;>;)Lorg/apache/wicket/core/request/mapper/PackageMapper;
+mountPage
+ <T:Lorg/apache/wicket/Page;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)Lorg/apache/wicket/core/request/mapper/MountedMapper;
+ <T:Lorg/apache/wicket/Page;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)Lorg/apache/wicket/core/request/mapper/MountedMapper;
+mountResource
+ (Ljava/lang/String;Lorg/apache/wicket/request/resource/ResourceReference;)Lorg/apache/wicket/core/request/mapper/ResourceMapper;
+ (Ljava/lang/String;Lorg/apache/wicket/request/resource/ResourceReference;)Lorg/apache/wicket/core/request/mapper/ResourceMapper;
+newAjaxRequestTarget
+ (Lorg/apache/wicket/Page;)Lorg/apache/wicket/ajax/AjaxRequestTarget;
+ (Lorg/apache/wicket/Page;)Lorg/apache/wicket/ajax/AjaxRequestTarget;
+newSession
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/request/Response;)Lorg/apache/wicket/Session;
+ (Lorg/apache/wicket/request/Request;Lorg/apache/wicket/request/Response;)Lorg/apache/wicket/Session;
+newWebRequest
+ (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)Lorg/apache/wicket/request/http/WebRequest;
+ (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)Lorg/apache/wicket/request/http/WebRequest;
+newWebResponse
+ (Lorg/apache/wicket/request/http/WebRequest;Ljakarta/servlet/http/HttpServletResponse;)Lorg/apache/wicket/request/http/WebResponse;
+ (Lorg/apache/wicket/request/http/WebRequest;Ljakarta/servlet/http/HttpServletResponse;)Lorg/apache/wicket/request/http/WebResponse;
+renderXmlDecl
+ (Lorg/apache/wicket/markup/html/WebPage;Z)V
+ (Lorg/apache/wicket/markup/html/WebPage;Z)V
+sessionUnbound
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setAjaxRequestTargetProvider
+ (Ljava/util/function/Function<Lorg/apache/wicket/Page;Lorg/apache/wicket/ajax/AjaxRequestTarget;>;)Lorg/apache/wicket/Application;
+ (Ljava/util/function/Function<Lorg/apache/wicket/Page;Lorg/apache/wicket/ajax/AjaxRequestTarget;>;)Lorg/apache/wicket/Application;
+setConfigurationType
+ (Lorg/apache/wicket/RuntimeConfigurationType;)Lorg/apache/wicket/Application;
+ (Lorg/apache/wicket/RuntimeConfigurationType;)Lorg/apache/wicket/Application;
+setCspSettings
+ (Lorg/apache/wicket/csp/ContentSecurityPolicySettings;)V
+ (Lorg/apache/wicket/csp/ContentSecurityPolicySettings;)V
+setServletContext
+ (Ljakarta/servlet/ServletContext;)V
+ (Ljakarta/servlet/ServletContext;)V
+setWicketFilter
+ (Lorg/apache/wicket/protocol/http/WicketFilter;)V
+ (Lorg/apache/wicket/protocol/http/WicketFilter;)V
+storeBufferedResponse
+ (Ljava/lang/String;Lorg/apache/wicket/request/Url;Lorg/apache/wicket/protocol/http/BufferedWebResponse;)V
+ (Ljava/lang/String;Lorg/apache/wicket/request/Url;Lorg/apache/wicket/protocol/http/BufferedWebResponse;)V
+unmount
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

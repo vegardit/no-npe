@@ -1,0 +1,74 @@
+class org/apache/wicket/markup/MarkupStream
+
+<init>
+ (Lorg/apache/wicket/markup/IMarkupFragment;)V
+ (Lorg/apache/wicket/markup/IMarkupFragment;)V
+atOpenCloseTag
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+atOpenTag
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+equalMarkup
+ (Lorg/apache/wicket/markup/MarkupStream;)Z
+ (Lorg/apache/wicket/markup/MarkupStream;)Z
+equalTo
+ (Lorg/apache/wicket/markup/MarkupStream;)Z
+ (Lorg/apache/wicket/markup/MarkupStream;)Z
+get
+ ()Lorg/apache/wicket/markup/MarkupElement;
+ ()Lorg/apache/wicket/markup/MarkupElement;
+get
+ (I)Lorg/apache/wicket/markup/MarkupElement;
+ (I)Lorg/apache/wicket/markup/MarkupElement;
+getContainerClass
+ ()Ljava/lang/Class<+Lorg/apache/wicket/Component;>;
+ ()Ljava/lang/Class<+Lorg/apache/wicket/Component;>;
+getEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMarkupFragment
+ ()Lorg/apache/wicket/markup/IMarkupFragment;
+ ()Lorg/apache/wicket/markup/IMarkupFragment;
+getPreviousTag
+ ()Lorg/apache/wicket/markup/ComponentTag;
+ ()Lorg/apache/wicket/markup/ComponentTag;
+getResource
+ ()Lorg/apache/wicket/util/resource/IResourceStream;
+ ()Lorg/apache/wicket/util/resource/IResourceStream;
+getTag
+ ()Lorg/apache/wicket/markup/ComponentTag;
+ ()Lorg/apache/wicket/markup/ComponentTag;
+getTagAttribute
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String;
+getWicketNamespace
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+next
+ ()Lorg/apache/wicket/markup/MarkupElement;
+ ()Lorg/apache/wicket/markup/MarkupElement;
+nextOpenTag
+ ()Lorg/apache/wicket/markup/MarkupElement;
+ ()Lorg/apache/wicket/markup/MarkupElement;
+setCurrentIndex
+ (I)Lorg/apache/wicket/markup/MarkupStream;
+ (I)Lorg/apache/wicket/markup/MarkupStream;
+skipToMatchingCloseTag
+ (Lorg/apache/wicket/markup/ComponentTag;)V
+ (Lorg/apache/wicket/markup/ComponentTag;)V
+skipUntil
+ (Ljava/lang/Class<+Lorg/apache/wicket/markup/MarkupElement;>;)Z
+ (Ljava/lang/Class<+Lorg/apache/wicket/markup/MarkupElement;>;)Z
+skipUntil
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+throwMarkupException
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+toHtmlDebugString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

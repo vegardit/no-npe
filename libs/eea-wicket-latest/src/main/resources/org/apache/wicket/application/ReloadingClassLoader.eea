@@ -1,0 +1,33 @@
+class org/apache/wicket/application/ReloadingClassLoader
+
+addLocation
+ (Ljava/net/URL;)V
+ (Ljava/net/URL;)V
+excludePattern
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+getLocations
+ ()Ljava/util/Set<Ljava/net/URL;>;
+ ()Ljava/util/Set<Ljava/net/URL;>;
+getPatterns
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+includePattern
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+
+<init>
+ (Ljava/lang/ClassLoader;)V
+ (Ljava/lang/ClassLoader;)V
+getResource
+ (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)Ljava/net/URL;
+loadClass
+ (Ljava/lang/String;Z)Ljava/lang/Class<*>;
+ (Ljava/lang/String;Z)Ljava/lang/Class<*>;
+setListener
+ (Lorg/apache/wicket/util/listener/IChangeListener<Ljava/lang/Class<*>;>;)V
+ (Lorg/apache/wicket/util/listener/IChangeListener<Ljava/lang/Class<*>;>;)V
+tryClassHere
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z

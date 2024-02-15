@@ -1,0 +1,110 @@
+class org/apache/wicket/settings/ResourceSettings
+
+<init>
+ (Lorg/apache/wicket/Application;)V
+ (Lorg/apache/wicket/Application;)V
+addResourceFactory
+ (Ljava/lang/String;Lorg/apache/wicket/IResourceFactory;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Ljava/lang/String;Lorg/apache/wicket/IResourceFactory;)Lorg/apache/wicket/settings/ResourceSettings;
+getCachingStrategy
+ ()Lorg/apache/wicket/request/resource/caching/IResourceCachingStrategy;
+ ()Lorg/apache/wicket/request/resource/caching/IResourceCachingStrategy;
+getCssCompressor
+ ()Lorg/apache/wicket/css/ICssCompressor;
+ ()Lorg/apache/wicket/css/ICssCompressor;
+getDefaultCacheDuration
+ ()Ljava/time/Duration;
+ ()Ljava/time/Duration;
+getFileCleaner
+ ()Lorg/apache/wicket/util/file/IFileCleaner;
+ ()Lorg/apache/wicket/util/file/IFileCleaner;
+getHeaderItemComparator
+ ()Ljava/util/Comparator<-Lorg/apache/wicket/markup/head/ResourceAggregator$RecordedHeaderItem;>;
+ ()Ljava/util/Comparator<-Lorg/apache/wicket/markup/head/ResourceAggregator$RecordedHeaderItem;>;
+getJavaScriptCompressor
+ ()Lorg/apache/wicket/javascript/IJavaScriptCompressor;
+ ()Lorg/apache/wicket/javascript/IJavaScriptCompressor;
+getLocalizer
+ ()Lorg/apache/wicket/Localizer;
+ ()Lorg/apache/wicket/Localizer;
+getPackageResourceGuard
+ ()Lorg/apache/wicket/markup/html/IPackageResourceGuard;
+ ()Lorg/apache/wicket/markup/html/IPackageResourceGuard;
+getParentFolderPlaceholder
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPropertiesFactory
+ ()Lorg/apache/wicket/resource/IPropertiesFactory;
+ ()Lorg/apache/wicket/resource/IPropertiesFactory;
+getResourceFactory
+ (Ljava/lang/String;)Lorg/apache/wicket/IResourceFactory;
+ (Ljava/lang/String;)Lorg/apache/wicket/IResourceFactory;
+getResourceFinders
+ ()Ljava/util/List<Lorg/apache/wicket/util/file/IResourceFinder;>;
+ ()Ljava/util/List<Lorg/apache/wicket/util/file/IResourceFinder;>;
+getResourcePollFrequency
+ ()Ljava/time/Duration;
+ ()Ljava/time/Duration;
+getResourceStreamLocator
+ ()Lorg/apache/wicket/core/util/resource/locator/IResourceStreamLocator;
+ ()Lorg/apache/wicket/core/util/resource/locator/IResourceStreamLocator;
+getResourceWatcher
+ (Z)Lorg/apache/wicket/util/watch/IModificationWatcher;
+ (Z)Lorg/apache/wicket/util/watch/IModificationWatcher;
+getStringResourceLoaders
+ ()Ljava/util/List<Lorg/apache/wicket/resource/loader/IStringResourceLoader;>;
+ ()Ljava/util/List<Lorg/apache/wicket/resource/loader/IStringResourceLoader;>;
+setCachingStrategy
+ (Lorg/apache/wicket/request/resource/caching/IResourceCachingStrategy;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Lorg/apache/wicket/request/resource/caching/IResourceCachingStrategy;)Lorg/apache/wicket/settings/ResourceSettings;
+setCssCompressor
+ (Lorg/apache/wicket/css/ICssCompressor;)Lorg/apache/wicket/css/ICssCompressor;
+ (Lorg/apache/wicket/css/ICssCompressor;)Lorg/apache/wicket/css/ICssCompressor;
+setDefaultCacheDuration
+ (Ljava/time/Duration;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Ljava/time/Duration;)Lorg/apache/wicket/settings/ResourceSettings;
+setEncodeJSessionId
+ (Z)Lorg/apache/wicket/settings/ResourceSettings;
+ (Z)Lorg/apache/wicket/settings/ResourceSettings;
+setFileCleaner
+ (Lorg/apache/wicket/util/file/IFileCleaner;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Lorg/apache/wicket/util/file/IFileCleaner;)Lorg/apache/wicket/settings/ResourceSettings;
+setHeaderItemComparator
+ (Ljava/util/Comparator<-Lorg/apache/wicket/markup/head/ResourceAggregator$RecordedHeaderItem;>;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Ljava/util/Comparator<-Lorg/apache/wicket/markup/head/ResourceAggregator$RecordedHeaderItem;>;)Lorg/apache/wicket/settings/ResourceSettings;
+setJavaScriptCompressor
+ (Lorg/apache/wicket/javascript/IJavaScriptCompressor;)Lorg/apache/wicket/javascript/IJavaScriptCompressor;
+ (Lorg/apache/wicket/javascript/IJavaScriptCompressor;)Lorg/apache/wicket/javascript/IJavaScriptCompressor;
+setLocalizer
+ (Lorg/apache/wicket/Localizer;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Lorg/apache/wicket/Localizer;)Lorg/apache/wicket/settings/ResourceSettings;
+setPackageResourceGuard
+ (Lorg/apache/wicket/markup/html/IPackageResourceGuard;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Lorg/apache/wicket/markup/html/IPackageResourceGuard;)Lorg/apache/wicket/settings/ResourceSettings;
+setParentFolderPlaceholder
+ (Ljava/lang/String;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Ljava/lang/String;)Lorg/apache/wicket/settings/ResourceSettings;
+setPropertiesFactory
+ (Lorg/apache/wicket/resource/IPropertiesFactory;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Lorg/apache/wicket/resource/IPropertiesFactory;)Lorg/apache/wicket/settings/ResourceSettings;
+setResourceFinders
+ (Ljava/util/List<Lorg/apache/wicket/util/file/IResourceFinder;>;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Ljava/util/List<Lorg/apache/wicket/util/file/IResourceFinder;>;)Lorg/apache/wicket/settings/ResourceSettings;
+setResourcePollFrequency
+ (Ljava/time/Duration;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Ljava/time/Duration;)Lorg/apache/wicket/settings/ResourceSettings;
+setResourceStreamLocator
+ (Lorg/apache/wicket/core/util/resource/locator/IResourceStreamLocator;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Lorg/apache/wicket/core/util/resource/locator/IResourceStreamLocator;)Lorg/apache/wicket/settings/ResourceSettings;
+setResourceWatcher
+ (Lorg/apache/wicket/util/watch/IModificationWatcher;)Lorg/apache/wicket/settings/ResourceSettings;
+ (Lorg/apache/wicket/util/watch/IModificationWatcher;)Lorg/apache/wicket/settings/ResourceSettings;
+setThrowExceptionOnMissingResource
+ (Z)Lorg/apache/wicket/settings/ResourceSettings;
+ (Z)Lorg/apache/wicket/settings/ResourceSettings;
+setUseDefaultOnMissingResource
+ (Z)Lorg/apache/wicket/settings/ResourceSettings;
+ (Z)Lorg/apache/wicket/settings/ResourceSettings;
+setUseMinifiedResources
+ (Z)Lorg/apache/wicket/settings/ResourceSettings;
+ (Z)Lorg/apache/wicket/settings/ResourceSettings;
