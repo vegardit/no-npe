@@ -91,6 +91,9 @@ allocWriteEncodingBuffer
 allocWriteEncodingBuffer
  (I)[B
  (I)[B
+bufferRecycler
+ ()Lcom/fasterxml/jackson/core/util/BufferRecycler;
+ ()Lcom/fasterxml/jackson/core/util/BufferRecycler;
 constructReadConstrainedTextBuffer
  ()Lcom/fasterxml/jackson/core/util/TextBuffer;
  ()Lcom/fasterxml/jackson/core/util/TextBuffer;
@@ -109,6 +112,9 @@ getEncoding
 getSourceReference
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
+markBufferRecyclerReleased
+ ()Lcom/fasterxml/jackson/core/io/IOContext;
+ ()Lcom/fasterxml/jackson/core/io/IOContext;
 releaseBase64Buffer
  ([B)V
  ([B)V

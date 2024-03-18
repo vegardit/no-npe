@@ -13,12 +13,21 @@ _objectCodec
 <init>
  (Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/core/ObjectCodec;)V
  (Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/core/ObjectCodec;)V
+currentLocation
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+currentName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
 currentNode
  ()Lcom/fasterxml/jackson/databind/JsonNode;
  ()Lcom/fasterxml/jackson/databind/JsonNode;
 currentNumericNode
  ()Lcom/fasterxml/jackson/databind/JsonNode;
  ()Lcom/fasterxml/jackson/databind/JsonNode;
+currentTokenLocation
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
 getBigIntegerValue
  ()Ljava/math/BigInteger;
  ()Ljava/math/BigInteger;
@@ -43,6 +52,9 @@ getEmbeddedObject
 getNumberType
  ()Lcom/fasterxml/jackson/core/JsonParser$NumberType;
  ()Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+getNumberTypeFP
+ ()Lcom/fasterxml/jackson/core/JsonParser$NumberTypeFP;
+ ()Lcom/fasterxml/jackson/core/JsonParser$NumberTypeFP;
 getNumberValue
  ()Ljava/lang/Number;
  ()Ljava/lang/Number;

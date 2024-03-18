@@ -37,9 +37,15 @@ _convertNumberToLong
 _currentObject
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
+currentLocation
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
 currentName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+currentTokenLocation
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
 getBigIntegerValue
  ()Ljava/math/BigInteger;
  ()Ljava/math/BigInteger;
@@ -64,6 +70,9 @@ getEmbeddedObject
 getNumberType
  ()Lcom/fasterxml/jackson/core/JsonParser$NumberType;
  ()Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+getNumberTypeFP
+ ()Lcom/fasterxml/jackson/core/JsonParser$NumberTypeFP;
+ ()Lcom/fasterxml/jackson/core/JsonParser$NumberTypeFP;
 getNumberValue
  ()Ljava/lang/Number;
  ()Ljava/lang/Number;

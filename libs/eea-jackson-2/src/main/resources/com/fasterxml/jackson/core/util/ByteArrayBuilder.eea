@@ -14,10 +14,16 @@ fromInitial
 <init>
  (Lcom/fasterxml/jackson/core/util/BufferRecycler;I)V
  (Lcom/fasterxml/jackson/core/util/BufferRecycler;I)V
+bufferRecycler
+ ()Lcom/fasterxml/jackson/core/util/BufferRecycler;
+ ()Lcom/fasterxml/jackson/core/util/BufferRecycler;
 completeAndCoalesce
  (I)[B
  (I)[B
 finishCurrentSegment
+ ()[B
+ ()[B
+getClearAndRelease
  ()[B
  ()[B
 getCurrentSegment

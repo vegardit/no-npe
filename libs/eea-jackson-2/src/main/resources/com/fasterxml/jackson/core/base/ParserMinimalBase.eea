@@ -51,6 +51,9 @@ _lastClearedToken
 _constructError
  (Ljava/lang/String;Ljava/lang/Throwable;)Lcom/fasterxml/jackson/core/JsonParseException;
  (Ljava/lang/String;Ljava/lang/Throwable;)Lcom/fasterxml/jackson/core/JsonParseException;
+_currentLocationMinusOne
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
 _decodeBase64
  (Ljava/lang/String;Lcom/fasterxml/jackson/core/util/ByteArrayBuilder;Lcom/fasterxml/jackson/core/Base64Variant;)V
  (Ljava/lang/String;Lcom/fasterxml/jackson/core/util/ByteArrayBuilder;Lcom/fasterxml/jackson/core/Base64Variant;)V
@@ -76,9 +79,6 @@ _reportInputCoercion
  (Ljava/lang/String;Lcom/fasterxml/jackson/core/JsonToken;Ljava/lang/Class<*>;)V
  (Ljava/lang/String;Lcom/fasterxml/jackson/core/JsonToken;Ljava/lang/Class<*>;)V
 _reportInvalidEOF
- (Ljava/lang/String;)V
- (Ljava/lang/String;)V
-_reportInvalidEOF
  (Ljava/lang/String;Lcom/fasterxml/jackson/core/JsonToken;)V
  (Ljava/lang/String;Lcom/fasterxml/jackson/core/JsonToken;)V
 _reportInvalidEOFInValue
@@ -90,6 +90,9 @@ _reportUnexpectedChar
 _reportUnexpectedNumberChar
  <T:Ljava/lang/Object;>(ILjava/lang/String;)TT;
  <T:Ljava/lang/Object;>(ILjava/lang/String;)TT;
+_throwInternalReturnAny
+ <T:Ljava/lang/Object;>()TT;
+ <T:Ljava/lang/Object;>()TT;
 _wrapError
  (Ljava/lang/String;Ljava/lang/Throwable;)V
  (Ljava/lang/String;Ljava/lang/Throwable;)V

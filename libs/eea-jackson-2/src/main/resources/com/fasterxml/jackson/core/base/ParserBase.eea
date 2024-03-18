@@ -90,6 +90,12 @@ _validJsonTokenList
 _validJsonValueList
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+assignCurrentValue
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+currentValue
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
 disable
  (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Lcom/fasterxml/jackson/core/JsonParser;
  (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Lcom/fasterxml/jackson/core/JsonParser;
@@ -108,9 +114,6 @@ getCurrentLocation
 getCurrentName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
-getCurrentValue
- ()Ljava/lang/Object;
- ()Ljava/lang/Object;
 getDecimalValue
  ()Ljava/math/BigDecimal;
  ()Ljava/math/BigDecimal;
@@ -156,9 +159,6 @@ resetFloat
 resetInt
  (ZI)Lcom/fasterxml/jackson/core/JsonToken;
  (ZI)Lcom/fasterxml/jackson/core/JsonToken;
-setCurrentValue
- (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
 setFeatureMask
  (I)Lcom/fasterxml/jackson/core/JsonParser;
  (I)Lcom/fasterxml/jackson/core/JsonParser;

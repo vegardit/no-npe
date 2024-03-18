@@ -39,6 +39,9 @@ getPathInfo
 getPrincipal
  ()Ljava/security/Principal;
  ()Ljava/security/Principal;
+getQueryParams
+ ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;
+ ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;
 getSecure
  ()Ljava/lang/Boolean;
  ()Ljava/lang/Boolean;
@@ -69,6 +72,9 @@ param
 perform$spring_test
  (Lorg/springframework/test/web/servlet/MockMvc;)Lorg/springframework/test/web/servlet/ResultActionsDsl;
  (Lorg/springframework/test/web/servlet/MockMvc;)Lorg/springframework/test/web/servlet/ResultActionsDsl;
+queryParam
+ (Ljava/lang/String;[Ljava/lang/String;)V
+ (Ljava/lang/String;[Ljava/lang/String;)V
 requestAttr
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
@@ -102,6 +108,9 @@ setPathInfo
 setPrincipal
  (Ljava/security/Principal;)V
  (Ljava/security/Principal;)V
+setQueryParams
+ (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
 setSecure
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V

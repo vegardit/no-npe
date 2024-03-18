@@ -59,6 +59,12 @@ _constructDefaultPrettyPrinter
 _verifyValueWrite
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
+assignCurrentValue
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+currentValue
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
 disable
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
@@ -68,12 +74,12 @@ enable
 getCodec
  ()Lcom/fasterxml/jackson/core/ObjectCodec;
  ()Lcom/fasterxml/jackson/core/ObjectCodec;
-getCurrentValue
- ()Ljava/lang/Object;
- ()Ljava/lang/Object;
 getOutputContext
  ()Lcom/fasterxml/jackson/core/JsonStreamContext;
  ()Lcom/fasterxml/jackson/core/JsonStreamContext;
+ioContext
+ ()Lcom/fasterxml/jackson/core/io/IOContext;
+ ()Lcom/fasterxml/jackson/core/io/IOContext;
 isEnabled
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Z
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Z
@@ -83,9 +89,6 @@ overrideStdFeatures
 setCodec
  (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonGenerator;
  (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonGenerator;
-setCurrentValue
- (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
 setFeatureMask
  (I)Lcom/fasterxml/jackson/core/JsonGenerator;
  (I)Lcom/fasterxml/jackson/core/JsonGenerator;

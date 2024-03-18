@@ -14,6 +14,18 @@ _cfgPrettyPrinter
  Lcom/fasterxml/jackson/core/PrettyPrinter;
  Lcom/fasterxml/jackson/core/PrettyPrinter;
 
+_constructWriteException
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/core/exc/StreamWriteException;
+ (Ljava/lang/String;)Lcom/fasterxml/jackson/core/exc/StreamWriteException;
+_constructWriteException
+ (Ljava/lang/String;Ljava/lang/Object;)Lcom/fasterxml/jackson/core/exc/StreamWriteException;
+ (Ljava/lang/String;Ljava/lang/Object;)Lcom/fasterxml/jackson/core/exc/StreamWriteException;
+_constructWriteException
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Lcom/fasterxml/jackson/core/exc/StreamWriteException;
+ (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Lcom/fasterxml/jackson/core/exc/StreamWriteException;
+_constructWriteException
+ (Ljava/lang/String;Ljava/lang/Throwable;)Lcom/fasterxml/jackson/core/exc/StreamWriteException;
+ (Ljava/lang/String;Ljava/lang/Throwable;)Lcom/fasterxml/jackson/core/exc/StreamWriteException;
 _copyCurrentContents
  (Lcom/fasterxml/jackson/core/JsonParser;)V
  (Lcom/fasterxml/jackson/core/JsonParser;)V
@@ -30,6 +42,9 @@ _copyCurrentStringValue
  (Lcom/fasterxml/jackson/core/JsonParser;)V
  (Lcom/fasterxml/jackson/core/JsonParser;)V
 _reportError
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+_reportUnsupportedOperation
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 _writeSimpleObject

@@ -30,6 +30,9 @@ _creatorProperties
 _fieldRenameMappings
  Ljava/util/Map<Lcom/fasterxml/jackson/databind/PropertyName;Lcom/fasterxml/jackson/databind/PropertyName;>;
  Ljava/util/Map<Lcom/fasterxml/jackson/databind/PropertyName;Lcom/fasterxml/jackson/databind/PropertyName;>;
+_formatOverrides
+ Lcom/fasterxml/jackson/annotation/JsonFormat$Value;
+ Lcom/fasterxml/jackson/annotation/JsonFormat$Value;
 _ignoredPropertyNames
  Ljava/util/HashSet<Ljava/lang/String;>;
  Ljava/util/HashSet<Ljava/lang/String;>;
@@ -148,6 +151,9 @@ getClassDef
 getConfig
  ()Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;
  ()Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;
+getFormatOverrides
+ ()Lcom/fasterxml/jackson/annotation/JsonFormat$Value;
+ ()Lcom/fasterxml/jackson/annotation/JsonFormat$Value;
 getIgnoredPropertyNames
  ()Ljava/util/Set<Ljava/lang/String;>;
  ()Ljava/util/Set<Ljava/lang/String;>;

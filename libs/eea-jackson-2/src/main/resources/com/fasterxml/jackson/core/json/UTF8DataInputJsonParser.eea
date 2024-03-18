@@ -1,15 +1,8 @@
 class com/fasterxml/jackson/core/json/UTF8DataInputJsonParser
 
-_icLatin1
- [I
- [1I
-
 _inputData
  Ljava/io/DataInput;
  Ljava/io/DataInput;
-_objectCodec
- Lcom/fasterxml/jackson/core/ObjectCodec;
- Lcom/fasterxml/jackson/core/ObjectCodec;
 _quadBuffer
  [I
  [I
@@ -20,6 +13,9 @@ _symbols
 <init>
  (Lcom/fasterxml/jackson/core/io/IOContext;ILjava/io/DataInput;Lcom/fasterxml/jackson/core/ObjectCodec;Lcom/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer;I)V
  (Lcom/fasterxml/jackson/core/io/IOContext;ILjava/io/DataInput;Lcom/fasterxml/jackson/core/ObjectCodec;Lcom/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer;I)V
+_currentLocationMinusOne
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
 _decodeBase64
  (Lcom/fasterxml/jackson/core/Base64Variant;)[B
  (Lcom/fasterxml/jackson/core/Base64Variant;)[B
@@ -74,21 +70,18 @@ _reportInvalidToken
 _reportInvalidToken
  (ILjava/lang/String;Ljava/lang/String;)V
  (ILjava/lang/String;Ljava/lang/String;)V
+currentLocation
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+currentTokenLocation
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
+ ()Lcom/fasterxml/jackson/core/JsonLocation;
 getBinaryValue
  (Lcom/fasterxml/jackson/core/Base64Variant;)[B
  (Lcom/fasterxml/jackson/core/Base64Variant;)[B
-getCodec
- ()Lcom/fasterxml/jackson/core/ObjectCodec;
- ()Lcom/fasterxml/jackson/core/ObjectCodec;
-getCurrentLocation
- ()Lcom/fasterxml/jackson/core/JsonLocation;
- ()Lcom/fasterxml/jackson/core/JsonLocation;
 getInputSource
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
-getReadCapabilities
- ()Lcom/fasterxml/jackson/core/util/JacksonFeatureSet<Lcom/fasterxml/jackson/core/StreamReadCapability;>;
- ()Lcom/fasterxml/jackson/core/util/JacksonFeatureSet<Lcom/fasterxml/jackson/core/StreamReadCapability;>;
 getText
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -98,9 +91,6 @@ getText
 getTextCharacters
  ()[C
  ()[C
-getTokenLocation
- ()Lcom/fasterxml/jackson/core/JsonLocation;
- ()Lcom/fasterxml/jackson/core/JsonLocation;
 getValueAsString
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -128,6 +118,3 @@ readBinaryValue
 releaseBuffered
  (Ljava/io/OutputStream;)I
  (Ljava/io/OutputStream;)I
-setCodec
- (Lcom/fasterxml/jackson/core/ObjectCodec;)V
- (Lcom/fasterxml/jackson/core/ObjectCodec;)V
