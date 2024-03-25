@@ -1,0 +1,36 @@
+class java/util/concurrent/ConcurrentMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+compute
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
+computeIfAbsent
+ (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
+ (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
+computeIfPresent
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
+forEach
+ (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
+ (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
+getOrDefault
+ (Ljava/lang/Object;TV;)TV;
+ (Ljava/lang/Object;TV;)TV;
+merge
+ (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)TV;
+ (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)TV;
+putIfAbsent
+ (TK;TV;)TV;
+ (TK;TV;)T0V;
+remove
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+replace
+ (TK;TV;)TV;
+ (TK;TV;)TV;
+replace
+ (TK;TV;TV;)Z
+ (TK;TV;TV;)Z
+replaceAll
+ (Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)V
+ (Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)V

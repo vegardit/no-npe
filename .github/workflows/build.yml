@@ -86,6 +86,14 @@ jobs:
     - run: echo "JAVA17_HOME=$JAVA_HOME" >> $GITHUB_ENV
 
 
+    - name: "Install: JDK 21"
+      uses: actions/setup-java@v4 # https://github.com/actions/setup-java
+      with:
+        distribution: temurin
+        java-version: 21
+    - run: echo "JAVA21_HOME=$JAVA_HOME" >> $GITHUB_ENV
+
+
     - name: "Cache: Restore"
       id: cache-restore
       if: ${{ !env.ACT }} # https://github.com/nektos/act#skipping-steps

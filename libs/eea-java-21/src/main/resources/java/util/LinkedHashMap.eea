@@ -1,0 +1,55 @@
+class java/util/LinkedHashMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+newLinkedHashMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)Ljava/util/LinkedHashMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)Ljava/util/LinkedHashMap<TK;TV;>;
+
+<init>
+ (Ljava/util/Map<+TK;+TV;>;)V
+ (Ljava/util/Map<+TK;+TV;>;)V
+containsValue
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+entrySet
+ ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
+forEach
+ (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
+ (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
+get
+ (Ljava/lang/Object;)TV;
+ (Ljava/lang/Object;)TV;
+getOrDefault
+ (Ljava/lang/Object;TV;)TV;
+ (Ljava/lang/Object;TV;)TV;
+keySet
+ ()Ljava/util/Set<TK;>;
+ ()Ljava/util/Set<TK;>;
+putFirst
+ (TK;TV;)TV;
+ (TK;TV;)TV;
+putLast
+ (TK;TV;)TV;
+ (TK;TV;)TV;
+removeEldestEntry
+ (Ljava/util/Map$Entry<TK;TV;>;)Z
+ (L1java/util/Map$Entry<TK;TV;>;)Z
+replaceAll
+ (Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)V
+ (Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)V
+reversed
+ ()Ljava/util/SequencedMap<TK;TV;>;
+ ()Ljava/util/SequencedMap<TK;TV;>;
+sequencedEntrySet
+ ()Ljava/util/SequencedSet<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()Ljava/util/SequencedSet<Ljava/util/Map$Entry<TK;TV;>;>;
+sequencedKeySet
+ ()Ljava/util/SequencedSet<TK;>;
+ ()Ljava/util/SequencedSet<TK;>;
+sequencedValues
+ ()Ljava/util/SequencedCollection<TV;>;
+ ()Ljava/util/SequencedCollection<TV;>;
+values
+ ()Ljava/util/Collection<TV;>;
+ ()Ljava/util/Collection<TV;>;

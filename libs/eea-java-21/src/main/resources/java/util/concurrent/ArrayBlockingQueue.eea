@@ -1,0 +1,69 @@
+class java/util/concurrent/ArrayBlockingQueue
+ <E:Ljava/lang/Object;>
+
+<init>
+ (IZLjava/util/Collection<+TE;>;)V
+ (IZLjava/util/Collection<+TE;>;)V
+add
+ (TE;)Z
+ (TE;)Z
+contains
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+drainTo
+ (Ljava/util/Collection<-TE;>;)I
+ (Ljava/util/Collection<-TE;>;)I
+drainTo
+ (Ljava/util/Collection<-TE;>;I)I
+ (Ljava/util/Collection<-TE;>;I)I
+forEach
+ (Ljava/util/function/Consumer<-TE;>;)V
+ (Ljava/util/function/Consumer<-TE;>;)V
+iterator
+ ()Ljava/util/Iterator<TE;>;
+ ()Ljava/util/Iterator<TE;>;
+offer
+ (TE;)Z
+ (TE;)Z
+offer
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+ (TE;JLjava/util/concurrent/TimeUnit;)Z
+peek
+ ()TE;
+ ()TE;
+poll
+ ()TE;
+ ()TE;
+poll
+ (JLjava/util/concurrent/TimeUnit;)TE;
+ (JLjava/util/concurrent/TimeUnit;)TE;
+put
+ (TE;)V
+ (TE;)V
+remove
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+removeAll
+ (Ljava/util/Collection<*>;)Z
+ (Ljava/util/Collection<*>;)Z
+removeIf
+ (Ljava/util/function/Predicate<-TE;>;)Z
+ (Ljava/util/function/Predicate<-TE;>;)Z
+retainAll
+ (Ljava/util/Collection<*>;)Z
+ (Ljava/util/Collection<*>;)Z
+spliterator
+ ()Ljava/util/Spliterator<TE;>;
+ ()Ljava/util/Spliterator<TE;>;
+take
+ ()TE;
+ ()TE;
+toArray
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+toArray
+ <T:Ljava/lang/Object;>([TT;)[TT;
+ <T:Ljava/lang/Object;>([TT;)[TT;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
