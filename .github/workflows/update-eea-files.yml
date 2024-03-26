@@ -24,51 +24,62 @@ defaults:
 
 jobs:
 
+  ###########################################################
   build:
+  ###########################################################
     runs-on: ubuntu-latest
+
     steps:
+    - name: Show environment variables
+      run: env | sort
+
 
     - name: Git Checkout
       uses: actions/checkout@v4 # https://github.com/actions/checkout
-    - name: Git Checkout
-      uses: actions/checkout@v4 # https://github.com/actions/checkout
 
-    - name: Set up JDK 11
+
+    - name: "Install: JDK 11"
       uses: actions/setup-java@v4 # https://github.com/actions/setup-java
       with:
         distribution: temurin
         java-version: 11
     - run: echo "JAVA11_HOME=$JAVA_HOME" >> $GITHUB_ENV
-    
-    - name: Set up JDK 17
+
+
+    - name: "Install: JDK 17"
       uses: actions/setup-java@v4 # https://github.com/actions/setup-java
       with:
         distribution: temurin
         java-version: 17
     - run: echo "JAVA17_HOME=$JAVA_HOME" >> $GITHUB_ENV
 
-    - name: "Cache: Local Maven Repository"
-      uses: actions/cache@v4
+
+    - name: "Install: JDK 21"
+      uses: actions/setup-java@v4 # https://github.com/actions/setup-java
+      with:
+        distribution: temurin
+        java-version: 21
+    - run: echo "JAVA21_HOME=$JAVA_HOME" >> $GITHUB_ENV
+
+
+    - name: "Cache: Restore"
+      id: cache-restore
+      if: ${{ !env.ACT }} # https://github.com/nektos/act#skipping-steps
+      uses: actions/cache/restore@v4
       with:
         path: |
+          ~/.m2/bin
           ~/.m2/repository
-          !~/.m2/**/*SNAPSHOT*
-        key: ${{ runner.os }}-mvnrepo-${{ hashFiles('**/pom.xml') }}
-        restore-keys: |
-          ${{ runner.os }}-mvnrepo-
+        key: ${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
 
-    - name: Set up Maven
-      uses: stCarolas/setup-maven@v4.5
-      with:
-        maven-version: 3.9.4
 
     - name: Update EEA Files
       id: eea_updates
       run: |
         set -euo pipefail
-        
+
         bash .ci/update-eea-files.sh ${{ github.event.inputs.additional_maven_args }}
-        
+
         updates=$(git -C . ls-files -o -m -d --exclude-standard)
 
         if [[ -z $updates ]]; then
@@ -80,6 +91,7 @@ jobs:
           echo "${updates}" >> "${GITHUB_OUTPUT}"
           echo "${delimiter}" >> "${GITHUB_OUTPUT}"
         fi
+
 
     - name: Create PR
       id: create-pr
