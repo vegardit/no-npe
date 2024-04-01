@@ -5,8 +5,8 @@ ID
  L1java/lang/String;
 
 destinations
- Ljava/util/List;
- Ljava/util/List;
+ Ljava/util/List<Lorg/eclipse/core/runtime/IPath;>;
+ Ljava/util/List<Lorg/eclipse/core/runtime/IPath;>;
 
 <init>
  (Lorg/eclipse/jface/window/IShellProvider;)V
@@ -21,8 +21,8 @@ getDestinations
  ()Ljava/util/List;
  ()Ljava/util/List;
 getResources
- (Ljava/util/List;)[Lorg/eclipse/core/resources/IResource;
- (Ljava/util/List;)[Lorg/eclipse/core/resources/IResource;
+ (Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;)[Lorg/eclipse/core/resources/IResource;
+ (Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;)[Lorg/eclipse/core/resources/IResource;
 runOperation
  ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)V
  ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)V

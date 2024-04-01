@@ -4,6 +4,12 @@ EPOCH
  Ljava/nio/file/attribute/FileTime;
  L1java/nio/file/attribute/FileTime;
 
+fromUnixTime
+ (J)Ljava/nio/file/attribute/FileTime;
+ (J)Ljava/nio/file/attribute/FileTime;
+isUnixTime
+ (Ljava/nio/file/attribute/FileTime;)Z
+ (Ljava/nio/file/attribute/FileTime;)Z
 minusMillis
  (Ljava/nio/file/attribute/FileTime;J)Ljava/nio/file/attribute/FileTime;
  (Ljava/nio/file/attribute/FileTime;J)Ljava/nio/file/attribute/FileTime;
@@ -46,3 +52,6 @@ toNtfsTime
 toNtfsTime
  (Ljava/util/Date;)J
  (Ljava/util/Date;)J
+toUnixTime
+ (Ljava/nio/file/attribute/FileTime;)J
+ (Ljava/nio/file/attribute/FileTime;)J

@@ -3,6 +3,12 @@ class org/eclipse/osgi/container/ModuleContainer
 createRequirement
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/osgi/resource/Requirement;
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/osgi/resource/Requirement;
+toString
+ (Lorg/osgi/resource/Capability;)Ljava/lang/String;
+ (Lorg/osgi/resource/Capability;)Ljava/lang/String;
+toString
+ (Lorg/osgi/resource/Requirement;)Ljava/lang/String;
+ (Lorg/osgi/resource/Requirement;)Ljava/lang/String;
 
 <init>
  (Lorg/eclipse/osgi/container/ModuleContainerAdaptor;Lorg/eclipse/osgi/container/ModuleDatabase;)V
@@ -46,6 +52,9 @@ resolve
 resolveDynamic
  (Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevision;)Lorg/eclipse/osgi/container/ModuleWire;
  (Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevision;)Lorg/eclipse/osgi/container/ModuleWire;
+store
+ (Ljava/io/DataOutputStream;Z)V
+ (Ljava/io/DataOutputStream;Z)V
 uninstall
  (Lorg/eclipse/osgi/container/Module;)V
  (Lorg/eclipse/osgi/container/Module;)V
