@@ -1,0 +1,249 @@
+class org/eclipse/core/runtime/Platform
+
+ARCH_AARCH64
+ Ljava/lang/String;
+ L1java/lang/String;
+ARCH_AMD64
+ Ljava/lang/String;
+ L1java/lang/String;
+ARCH_IA64
+ Ljava/lang/String;
+ L1java/lang/String;
+ARCH_IA64_32
+ Ljava/lang/String;
+ L1java/lang/String;
+ARCH_PA_RISC
+ Ljava/lang/String;
+ L1java/lang/String;
+ARCH_PPC
+ Ljava/lang/String;
+ L1java/lang/String;
+ARCH_SPARC
+ Ljava/lang/String;
+ L1java/lang/String;
+ARCH_X86
+ Ljava/lang/String;
+ L1java/lang/String;
+ARCH_X86_64
+ Ljava/lang/String;
+ L1java/lang/String;
+OPTION_STARTTIME
+ Ljava/lang/String;
+ L1java/lang/String;
+OS_AIX
+ Ljava/lang/String;
+ L1java/lang/String;
+OS_HPUX
+ Ljava/lang/String;
+ L1java/lang/String;
+OS_LINUX
+ Ljava/lang/String;
+ L1java/lang/String;
+OS_MACOSX
+ Ljava/lang/String;
+ L1java/lang/String;
+OS_QNX
+ Ljava/lang/String;
+ L1java/lang/String;
+OS_SOLARIS
+ Ljava/lang/String;
+ L1java/lang/String;
+OS_UNKNOWN
+ Ljava/lang/String;
+ L1java/lang/String;
+OS_WIN32
+ Ljava/lang/String;
+ L1java/lang/String;
+PI_RUNTIME
+ Ljava/lang/String;
+ L1java/lang/String;
+PREF_LINE_SEPARATOR
+ Ljava/lang/String;
+ L1java/lang/String;
+PREF_PLATFORM_PERFORMANCE
+ Ljava/lang/String;
+ L1java/lang/String;
+PT_ADAPTERS
+ Ljava/lang/String;
+ L1java/lang/String;
+PT_APPLICATIONS
+ Ljava/lang/String;
+ L1java/lang/String;
+PT_PREFERENCES
+ Ljava/lang/String;
+ L1java/lang/String;
+PT_PRODUCT
+ Ljava/lang/String;
+ L1java/lang/String;
+WS_CARBON
+ Ljava/lang/String;
+ L1java/lang/String;
+WS_COCOA
+ Ljava/lang/String;
+ L1java/lang/String;
+WS_GTK
+ Ljava/lang/String;
+ L1java/lang/String;
+WS_MOTIF
+ Ljava/lang/String;
+ L1java/lang/String;
+WS_PHOTON
+ Ljava/lang/String;
+ L1java/lang/String;
+WS_UNKNOWN
+ Ljava/lang/String;
+ L1java/lang/String;
+WS_WIN32
+ Ljava/lang/String;
+ L1java/lang/String;
+WS_WPF
+ Ljava/lang/String;
+ L1java/lang/String;
+
+addLogListener
+ (Lorg/eclipse/core/runtime/ILogListener;)V
+ (L1org/eclipse/core/runtime/ILogListener;)V
+addProtectionSpace
+ (Ljava/net/URL;Ljava/lang/String;)V
+ (Ljava/net/URL;Ljava/lang/String;)V
+asLocalURL
+ (Ljava/net/URL;)Ljava/net/URL;
+ (L1java/net/URL;)L1java/net/URL;
+find
+ (Lorg/osgi/framework/Bundle;Lorg/eclipse/core/runtime/IPath;)Ljava/net/URL;
+ (Lorg/osgi/framework/Bundle;Lorg/eclipse/core/runtime/IPath;)Ljava/net/URL;
+find
+ (Lorg/osgi/framework/Bundle;Lorg/eclipse/core/runtime/IPath;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljava/net/URL;
+ (Lorg/osgi/framework/Bundle;Lorg/eclipse/core/runtime/IPath;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Ljava/net/URL;
+getAdapterManager
+ ()Lorg/eclipse/core/runtime/IAdapterManager;
+ ()L1org/eclipse/core/runtime/IAdapterManager;
+getApplicationArgs
+ ()[Ljava/lang/String;
+ ()[1L1java/lang/String;
+getBundle
+ (Ljava/lang/String;)Lorg/osgi/framework/Bundle;
+ (L1java/lang/String;)L0org/osgi/framework/Bundle;
+getBundleGroupProviders
+ ()[Lorg/eclipse/core/runtime/IBundleGroupProvider;
+ ()[1L1org/eclipse/core/runtime/IBundleGroupProvider;
+getBundles
+ (Ljava/lang/String;Ljava/lang/String;)[Lorg/osgi/framework/Bundle;
+ (L1java/lang/String;L0java/lang/String;)[L0org/osgi/framework/Bundle;
+getCommandLineArgs
+ ()[Ljava/lang/String;
+ ()[1L1java/lang/String;
+getConfigurationLocation
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+getContentTypeManager
+ ()Lorg/eclipse/core/runtime/content/IContentTypeManager;
+ ()Lorg/eclipse/core/runtime/content/IContentTypeManager;
+getDebugBoolean
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+getDebugOption
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getExtensionRegistry
+ ()Lorg/eclipse/core/runtime/IExtensionRegistry;
+ ()Lorg/eclipse/core/runtime/IExtensionRegistry;
+getFragments
+ (Lorg/osgi/framework/Bundle;)[Lorg/osgi/framework/Bundle;
+ (L1org/osgi/framework/Bundle;)[0L1org/osgi/framework/Bundle;
+getHosts
+ (Lorg/osgi/framework/Bundle;)[Lorg/osgi/framework/Bundle;
+ (L1org/osgi/framework/Bundle;)[0L1org/osgi/framework/Bundle;
+getInstallLocation
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+getInstanceLocation
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+getLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getLog
+ (Ljava/lang/Class<*>;)Lorg/eclipse/core/runtime/ILog;
+ (L1java/lang/Class<*>;)L1org/eclipse/core/runtime/ILog;
+getLog
+ (Lorg/osgi/framework/Bundle;)Lorg/eclipse/core/runtime/ILog;
+ (L1org/osgi/framework/Bundle;)L1org/eclipse/core/runtime/ILog;
+getLogFileLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()L1org/eclipse/core/runtime/IPath;
+getNL
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getNLExtensions
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getOS
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+getOSArch
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+getPlatformAdmin
+ ()Lorg/eclipse/osgi/service/resolver/PlatformAdmin;
+ ()Lorg/eclipse/osgi/service/resolver/PlatformAdmin;
+getPlugin
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/Plugin;
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/Plugin;
+getPreferencesService
+ ()Lorg/eclipse/core/runtime/preferences/IPreferencesService;
+ ()Lorg/eclipse/core/runtime/preferences/IPreferencesService;
+getProduct
+ ()Lorg/eclipse/core/runtime/IProduct;
+ ()L0org/eclipse/core/runtime/IProduct;
+getResourceBundle
+ (Lorg/osgi/framework/Bundle;)Ljava/util/ResourceBundle;
+ (Lorg/osgi/framework/Bundle;)Ljava/util/ResourceBundle;
+getResourceString
+ (Lorg/osgi/framework/Bundle;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/osgi/framework/Bundle;Ljava/lang/String;)Ljava/lang/String;
+getResourceString
+ (Lorg/osgi/framework/Bundle;Ljava/lang/String;Ljava/util/ResourceBundle;)Ljava/lang/String;
+ (Lorg/osgi/framework/Bundle;Ljava/lang/String;Ljava/util/ResourceBundle;)Ljava/lang/String;
+getStateLocation
+ (Lorg/osgi/framework/Bundle;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/osgi/framework/Bundle;)Lorg/eclipse/core/runtime/IPath;
+getSystemCharset
+ ()Ljava/nio/charset/Charset;
+ ()L1java/nio/charset/Charset;
+getUserLocation
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+ ()Lorg/eclipse/osgi/service/datalocation/Location;
+getWS
+ ()Ljava/lang/String;
+ ()L0java/lang/String;
+isFragment
+ (Lorg/osgi/framework/Bundle;)Z
+ (L1org/osgi/framework/Bundle;)Z
+knownOSArchValues
+ ()[Ljava/lang/String;
+ ()[1L1java/lang/String;
+knownOSValues
+ ()[Ljava/lang/String;
+ ()[1L1java/lang/String;
+knownPlatformLineSeparators
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+knownWSValues
+ ()[Ljava/lang/String;
+ ()[1L1java/lang/String;
+registerBundleGroupProvider
+ (Lorg/eclipse/core/runtime/IBundleGroupProvider;)V
+ (Lorg/eclipse/core/runtime/IBundleGroupProvider;)V
+removeLogListener
+ (Lorg/eclipse/core/runtime/ILogListener;)V
+ (L1org/eclipse/core/runtime/ILogListener;)V
+resolve
+ (Ljava/net/URL;)Ljava/net/URL;
+ (Ljava/net/URL;)Ljava/net/URL;
+run
+ (Lorg/eclipse/core/runtime/ISafeRunnable;)V
+ (L1org/eclipse/core/runtime/ISafeRunnable;)V
+unregisterBundleGroupProvider
+ (Lorg/eclipse/core/runtime/IBundleGroupProvider;)V
+ (L1org/eclipse/core/runtime/IBundleGroupProvider;)V

@@ -99,8 +99,8 @@ jobs:
 
     - name: "Cache: Restore"
       id: cache-restore
-      if: ${{ !env.ACT }} # https://github.com/nektos/act#skipping-steps
-      uses: actions/cache/restore@v4
+      if: ${{ !env.ACT }}  # https://github.com/nektos/act#skipping-steps
+      uses: actions/cache/restore@v4  # https://github.com/actions/cache/blob/main/restore/README.md
       with:
         path: |
           ~/.m2/bin
@@ -111,13 +111,15 @@ jobs:
     - name: Test with Maven
       if: ${{ github.ref_name != 'main' || env.ACT }}
       env:
+        GITHUB_USER: ${{ github.actor }}
+        GITHUB_API_KEY: ${{ github.token }}
         MAY_CREATE_RELEASE: false
       run: |
         bash .ci/build.sh ${{ github.event.inputs.additional_maven_args }}
 
 
     - name: Prepare Maven Snapshots Repo
-      if: ${{ github.ref_name == 'main' }}
+      if: ${{ github.ref_name == 'main' && !env.ACT }}
       run: |
         set -eux
 
@@ -157,6 +159,8 @@ jobs:
     - name: Build with Maven
       if: ${{ github.ref_name == 'main' && !env.ACT }}
       env:
+        GITHUB_USER: ${{ github.actor }}
+        GITHUB_API_KEY: ${{ secrets.GH_API_TOKEN }}
         MAY_CREATE_RELEASE: true
         SIGN_KEY: ${{ secrets.GPG_SIGN_KEY }}
         SIGN_KEY_PASS: ${{ secrets.GPG_SIGN_KEY_PWD }}
@@ -174,7 +178,7 @@ jobs:
 
 
     - name: Update Maven Snapshots Repo
-      if: ${{ github.ref_name == 'main' }}
+      if: ${{ github.ref_name == 'main' && !env.ACT }}
       run: |
         cd /tmp/mvn-snapshots-repo
         if [[ $(git -C . ls-files -o -m -d --exclude-standard | wc -l) -gt 0 ]]; then
@@ -198,7 +202,7 @@ jobs:
         gh actions-cache delete ${{ steps.cache-restore.outputs.cache-primary-key }} --confirm || true
 
     - name: "Cache: Update"
-      uses: actions/cache/save@v4
+      uses: actions/cache/save@v4  # https://github.com/actions/cache/blob/main/save/README.md
       if: ${{ always() && !cancelled() && !env.ACT }} # save cache even fails
       with:
         path: |

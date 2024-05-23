@@ -1,0 +1,67 @@
+class org/eclipse/core/runtime/Status
+
+CANCEL_STATUS
+ Lorg/eclipse/core/runtime/IStatus;
+ L1org/eclipse/core/runtime/IStatus;
+OK_STATUS
+ Lorg/eclipse/core/runtime/IStatus;
+ L1org/eclipse/core/runtime/IStatus;
+
+error
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ (L0java/lang/String;)L1org/eclipse/core/runtime/IStatus;
+error
+ (Ljava/lang/String;Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/IStatus;
+ (L0java/lang/String;L0java/lang/Throwable;)L1org/eclipse/core/runtime/IStatus;
+info
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ (L0java/lang/String;)L1org/eclipse/core/runtime/IStatus;
+warning
+ (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ (L0java/lang/String;)L1org/eclipse/core/runtime/IStatus;
+warning
+ (Ljava/lang/String;Ljava/lang/Throwable;)Lorg/eclipse/core/runtime/Status;
+ (L0java/lang/String;L0java/lang/Throwable;)L1org/eclipse/core/runtime/Status;
+
+<init>
+ (ILjava/lang/Class<*>;ILjava/lang/String;Ljava/lang/Throwable;)V
+ (IL1java/lang/Class<*>;IL0java/lang/String;L0java/lang/Throwable;)V
+<init>
+ (ILjava/lang/Class<*>;Ljava/lang/String;)V
+ (IL1java/lang/Class<*>;L0java/lang/String;)V
+<init>
+ (ILjava/lang/Class<*>;Ljava/lang/String;Ljava/lang/Throwable;)V
+ (IL1java/lang/Class<*>;L0java/lang/String;L0java/lang/Throwable;)V
+<init>
+ (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+ (IL1java/lang/String;IL0java/lang/String;L0java/lang/Throwable;)V
+<init>
+ (ILjava/lang/String;Ljava/lang/String;)V
+ (IL1java/lang/String;L0java/lang/String;)V
+<init>
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+ (IL1java/lang/String;L0java/lang/String;L0java/lang/Throwable;)V
+getChildren
+ ()[Lorg/eclipse/core/runtime/IStatus;
+ ()[1L1org/eclipse/core/runtime/IStatus;
+getException
+ ()Ljava/lang/Throwable;
+ ()L0java/lang/Throwable;
+getMessage
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+getPlugin
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+setException
+ (Ljava/lang/Throwable;)V
+ (L0java/lang/Throwable;)V
+setMessage
+ (Ljava/lang/String;)V
+ (L0java/lang/String;)V
+setPlugin
+ (Ljava/lang/String;)V
+ (L1java/lang/String;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String;

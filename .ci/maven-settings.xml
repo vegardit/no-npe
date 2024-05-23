@@ -7,5 +7,10 @@
          <username>${env.SONATYPE_OSSRH_USER}</username>
          <password>${env.SONATYPE_OSSRH_USER_TOKEN}</password>
       </server>
+      <server>
+         <id>github-commits</id>
+         <username>${env.GITHUB_USER}</username>
+         <password>${env.GITHUB_API_KEY}</password>
+      </server>
    </servers>
 </settings>

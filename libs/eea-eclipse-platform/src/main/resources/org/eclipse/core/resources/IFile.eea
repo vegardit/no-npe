@@ -1,0 +1,74 @@
+class org/eclipse/core/resources/IFile
+
+appendContents
+ (Ljava/io/InputStream;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/io/InputStream;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+appendContents
+ (Ljava/io/InputStream;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/io/InputStream;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
+create
+ (Ljava/io/InputStream;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1java/io/InputStream;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+create
+ (Ljava/io/InputStream;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1java/io/InputStream;ZL0org/eclipse/core/runtime/IProgressMonitor;)V
+createLink
+ (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1java/net/URI;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+createLink
+ (Lorg/eclipse/core/runtime/IPath;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IPath;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+delete
+ (ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
+getCharset
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+getCharset
+ (Z)Ljava/lang/String;
+ (Z)L0java/lang/String;
+getCharsetFor
+ (Ljava/io/Reader;)Ljava/lang/String;
+ (L1java/io/Reader;)L1java/lang/String;
+getContentDescription
+ ()Lorg/eclipse/core/runtime/content/IContentDescription;
+ ()L0org/eclipse/core/runtime/content/IContentDescription;
+getContents
+ ()Ljava/io/InputStream;
+ ()L1java/io/InputStream;
+getContents
+ (Z)Ljava/io/InputStream;
+ (Z)L1java/io/InputStream;
+getFullPath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()L1org/eclipse/core/runtime/IPath;
+getHistory
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IFileState;
+ (L0org/eclipse/core/runtime/IProgressMonitor;)[1L1org/eclipse/core/resources/IFileState;
+getLineSeparator
+ (Z)Ljava/lang/String;
+ (Z)L1java/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+move
+ (Lorg/eclipse/core/runtime/IPath;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IPath;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
+setCharset
+ (Ljava/lang/String;)V
+ (L0java/lang/String;)V
+setCharset
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L0java/lang/String;L0org/eclipse/core/runtime/IProgressMonitor;)V
+setContents
+ (Ljava/io/InputStream;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1java/io/InputStream;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+setContents
+ (Ljava/io/InputStream;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1java/io/InputStream;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
+setContents
+ (Lorg/eclipse/core/resources/IFileState;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IFileState;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+setContents
+ (Lorg/eclipse/core/resources/IFileState;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/resources/IFileState;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
