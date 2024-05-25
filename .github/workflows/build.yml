@@ -174,7 +174,7 @@ jobs:
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         bash .ci/build.sh \
           ${{ github.event.inputs.additional_maven_args }} \
-          -DaltSnapshotDeploymentRepository=temp-snapshots-repo::default::file:///tmp/mvn-snapshots-repo
+          -DaltSnapshotDeploymentRepository=temp-snapshots-repo::file:///tmp/mvn-snapshots-repo
 
 
     - name: Update Maven Snapshots Repo
