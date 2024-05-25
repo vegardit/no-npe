@@ -153,7 +153,7 @@ public class EEAFile {
    }
 
    public void addEmptyLine() {
-      final var lastMember = MiscUtils.getLastElement(members);
+      final var lastMember = MiscUtils.findLastElement(members);
       if (lastMember != null) {
          lastMember.isFollowedByEmptyLine = true;
       }
@@ -362,8 +362,8 @@ public class EEAFile {
       }
       writeLine(sb);
 
-      final var lastMember = getLastElement(members);
-      for (final var member : members) {
+      final ClassMember lastMember = findLastElement(members);
+      for (final ClassMember member : members) {
          writeLine(sb, member.name);
          writeLine(sb, " ", member.originalSignature);
          var annotatedSig = member.annotatedSignature;

@@ -11,7 +11,7 @@ import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.text.MessageFormat;
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 import java.util.Objects;
 import java.util.function.UnaryOperator;
 import java.util.logging.ConsoleHandler;
@@ -65,13 +65,10 @@ public final class MiscUtils {
       return new BufferedReader(new InputStreamReader(clazz.getResourceAsStream(resourceName), StandardCharsets.UTF_8));
    }
 
-   public static <E> @Nullable E getLastElement(final Collection<E> c) {
-      @Nullable
-      E last = null;
-      for (final E e : c) {
-         last = e;
-      }
-      return last;
+   public static <E> @Nullable E findLastElement(final List<E> list) {
+      if (list.isEmpty())
+         return null;
+      return list.get(list.size() - 1);
    }
 
    /**
