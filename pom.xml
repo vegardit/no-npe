@@ -120,11 +120,11 @@ check for new dependency/plugin updates using:
       <dependencies>
         <dependency>
           <!-- TODO this should actually be a plugin dependency of exec-maven-plugin but the classpath management
-               of the exec:exec goal is broken, see https://github.com/mojohaus/exec-maven-plugin/issues/79 -->
+               of the exec:exec goal is broken, see https://github.com/mojohaus/exec-maven-plugin/pull/432 -->
           <groupId>com.vegardit.no-npe</groupId>
           <artifactId>no-npe-eea-generator</artifactId>
           <version>${project.version}</version>
-          <optional>true</optional>
+          <scope>provided</scope>
         </dependency>
       </dependencies>
 
@@ -162,7 +162,7 @@ check for new dependency/plugin updates using:
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.2.0</version>
+            <version>3.3.0</version>
             <executions>
               <execution>
                 <id>process-eeas</id>
@@ -171,6 +171,7 @@ check for new dependency/plugin updates using:
                   <goal>exec</goal>
                 </goals>
                 <configuration>
+                  <classpathScope>provided</classpathScope>
                   <executableDependency>
                     <groupId>com.vegardit.no-npe</groupId>
                     <artifactId>no-npe-eea-generator</artifactId>

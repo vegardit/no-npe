@@ -165,7 +165,7 @@ Updating EEA files will:
           <groupId>[LIBRARY_GROUP_ID]</groupId>
           <artifactId>[LIBRARY_ARTIFACT_ID]</artifactId>
           <version>[LIBRARY_VERSION]</version>
-          <optional>true</optional>
+          <scope>provided</scope>
         </dependency>
       </dependencies>
     </project>
@@ -193,7 +193,7 @@ Updating EEA files will:
           <groupId>org.example.cool-library</groupId>
           <artifactId>cool-library</artifactId>
           <version>2.0.2</version>
-          <optional>true</optional>
+          <scope>provided</scope>
         </dependency>
       </dependencies>
     </project>
