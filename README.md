@@ -67,9 +67,10 @@ compatibility of the compiled artifacts with the runtime library of the required
 
 To build the project follow these steps:
 
-1. Download and install Java 11 **AND** Java 17 SDKs, e.g. from:
+1. Download and install Java 11, Java 17 **AND** Java 21 SDKs, e.g. from:
    - Java 11: https://adoptium.net/releases.html?variant=openjdk11 or https://www.azul.com/downloads/?version=java-11-lts&package=jdk#download-openjdk
    - Java 17: https://adoptium.net/releases.html?variant=openjdk17 or https://www.azul.com/downloads/?version=java-17-lts&package=jdk#download-openjdk
+   - Java 21: https://adoptium.net/releases.html?variant=openjdk21 or https://www.azul.com/downloads/?version=java-21-lts&package=jdk#download-openjdk
 
 1. Download and install the latest [Maven distribution](https://maven.apache.org/download.cgi).
 
@@ -99,15 +100,25 @@ To build the project follow these steps:
             <jdkHome>[PATH_TO_YOUR_JDK_17]</jdkHome>
          </configuration>
       </toolchain>
+      <toolchain>
+         <type>jdk</type>
+         <provides>
+            <version>21</version>
+            <vendor>default</vendor>
+         </provides>
+         <configuration>
+            <jdkHome>[PATH_TO_YOUR_JDK_21]</jdkHome>
+         </configuration>
+      </toolchain>
    </toolchains>
    ```
 
-   Set the `[PATH_TO_YOUR_JDK_11]`/`[PATH_TO_YOUR_JDK_17]` parameters accordingly.
+   Set the `[PATH_TO_YOUR_JDK_11]`/`[PATH_TO_YOUR_JDK_17]`/`[PATH_TO_YOUR_JDK_21]` parameters accordingly
+   to where you intalled the JDKs.
 
-1. Checkout the code using one of the following methods:
+1. Checkout the code, e.g. using:
 
     - `git clone https://github.com/vegardit/no-npe`
-    - `svn co https://github.com/vegardit/no-npe no-npe`
 
 1. Run `mvn clean verify` in the project root directory. This will execute compilation, unit-testing, integration-testing and
    packaging of all artifacts.
