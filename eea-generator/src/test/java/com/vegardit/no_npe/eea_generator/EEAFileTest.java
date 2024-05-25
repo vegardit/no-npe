@@ -4,7 +4,7 @@
  */
 package com.vegardit.no_npe.eea_generator;
 
-import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.*;
+import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.normalizeNewLines;
 import static org.assertj.core.api.Assertions.*;
 
 import java.io.IOException;
@@ -17,14 +17,14 @@ import org.junit.jupiter.api.Test;
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
  */
 @SuppressWarnings("null")
-public class EEAFileTest {
+class EEAFileTest {
 
    public static final class TestEntity {
       public static final String STATIC_STRING = "MyStaticString";
 
       public String name;
 
-      public TestEntity(final String name) {
+      public TestEntity(final String name) { // CHECKSTYLE:IGNORE RedundantModifier
          this.name = name;
       }
    }
@@ -44,12 +44,12 @@ public class EEAFileTest {
 
       assertThat(eeaFile.className.value).isEqualTo(TestEntity.class.getName());
       assertThat(eeaFile.className.comment).isEqualTo("# a class comment");
-      assertThat(eeaFile.className.toString()).isEqualTo(TestEntity.class.getName() + " # a class comment");
+      assertThat(eeaFile.className).hasToString(TestEntity.class.getName() + " # a class comment");
       assertThat(eeaFile.relativePath).isEqualTo(Path.of(TEST_ENTITY_NAME_WITH_SLASHES + ".eea"));
 
       assertThat(eeaFile.getClassMembers()).isNotEmpty();
-      final var field = eeaFile.findMatchingClassMember("STATIC_STRING", "Ljava/lang/String;").get();
-
+      final var field = eeaFile.findMatchingClassMember("STATIC_STRING", "Ljava/lang/String;");
+      assert field != null;
       assertThat(field.name.comment).isEqualTo("# a field comment");
       assertThat(field.originalSignature.value).isEqualTo("Ljava/lang/String;");
       assertThat(field.originalSignature.comment).isEqualTo("# an original signature comment");
@@ -83,7 +83,8 @@ public class EEAFileTest {
       assertThat(computedEEAFile).isNotNull();
       assert computedEEAFile != null;
 
-      final var method = computedEEAFile.findMatchingClassMember("name", "Ljava/lang/String;").get();
+      final var method = computedEEAFile.findMatchingClassMember("name", "Ljava/lang/String;");
+      assert method != null;
       assertThat(method.annotatedSignature).isNull();
       assertThat(method.name.comment).isNull();
 

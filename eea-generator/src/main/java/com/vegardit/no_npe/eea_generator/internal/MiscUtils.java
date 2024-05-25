@@ -99,8 +99,8 @@ public final class MiscUtils {
       return sb.toString();
    }
 
-   @Nullable
-   public static String getSubstringBetweenBalanced(@Nullable final String searchIn, final char startDelimiter, final char endDelimiter) {
+   public static @Nullable String getSubstringBetweenBalanced(@Nullable final String searchIn, final char startDelimiter,
+      final char endDelimiter) {
       if (searchIn == null)
          return null;
       int depth = 0;
@@ -123,8 +123,7 @@ public final class MiscUtils {
       return null;
    }
 
-   @Nullable
-   public static <T extends Throwable> T sanitizeStackTraces(@Nullable final T ex) {
+   public static <T extends Throwable> @Nullable T sanitizeStackTraces(@Nullable final T ex) {
       if (ex == null)
          return null;
 

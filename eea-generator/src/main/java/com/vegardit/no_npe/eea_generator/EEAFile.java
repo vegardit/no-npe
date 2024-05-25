@@ -19,7 +19,6 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
-import java.util.Optional;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -50,8 +49,7 @@ public class EEAFile {
       public final ValueWithComment originalSignature;
 
       /** Signature with external Null Analysis annotations */
-      @Nullable
-      public ValueWithComment annotatedSignature;
+      public @Nullable ValueWithComment annotatedSignature;
 
       public ClassMember(final String name, final String originalSignature) {
          this.name = ValueWithComment.parse(name);
@@ -97,8 +95,7 @@ public class EEAFile {
       }
 
       public String value;
-      @Nullable
-      public String comment;
+      public @Nullable String comment;
 
       public ValueWithComment(final String value) {
          this.value = value;
@@ -143,11 +140,8 @@ public class EEAFile {
       "[TL]([01])[a-zA-Z_][a-zA-Z_0-9$\\/*]*[<;]");
 
    public final ValueWithComment className;
-   @Nullable
-   public ValueWithComment classSignatureOriginal;
-   @Nullable
-   public ValueWithComment classSignatureAnnotated;
-
+   public @Nullable ValueWithComment classSignatureOriginal;
+   public @Nullable ValueWithComment classSignatureAnnotated;
    public final Path relativePath;
 
    /** ordered list of declared class members */
@@ -184,18 +178,19 @@ public class EEAFile {
    /**
     * @return a class member with the same name and the same original signature
     */
-   public Optional<ClassMember> findMatchingClassMember(final ClassMember member) {
+   public @Nullable ClassMember findMatchingClassMember(final ClassMember member) {
       return findMatchingClassMember(member.name.value, member.originalSignature.value);
    }
 
    /**
     * @return a class member with the same name and the same original signature
     */
-   public Optional<ClassMember> findMatchingClassMember(final String name, final String originalSignature) {
+   public @Nullable ClassMember findMatchingClassMember(final String name, final String originalSignature) {
       return getClassMembers() //
          .filter(m -> m.name.value.equals(name) //
             && m.originalSignature.value.equals(originalSignature)) //
-         .findFirst();
+         .findFirst() //
+         .orElse(null);
    }
 
    /**
@@ -213,21 +208,21 @@ public class EEAFile {
 
       members.forEach(ourMember -> {
          final var theirMember = src.findMatchingClassMember(ourMember);
-         if (theirMember.isEmpty())
+         if (theirMember == null)
             return;
 
          // copy member name comment
          if (overrideOnConflict || !ourMember.name.hasComment()) {
-            ourMember.name.comment = theirMember.get().name.comment;
+            ourMember.name.comment = theirMember.name.comment;
          }
 
          // copy original signature comment
          if (overrideOnConflict || !ourMember.originalSignature.hasComment()) {
-            ourMember.originalSignature.comment = theirMember.get().originalSignature.comment;
+            ourMember.originalSignature.comment = theirMember.originalSignature.comment;
          }
 
          // copy annotated signature or it's comment
-         final var theirAnnotatedSignature = theirMember.get().annotatedSignature;
+         final var theirAnnotatedSignature = theirMember.annotatedSignature;
          if (theirAnnotatedSignature != null) {
             final var ourAnnotatedSignature = ourMember.annotatedSignature;
             if (overrideOnConflict || ourAnnotatedSignature == null) {
@@ -409,14 +404,13 @@ public class EEAFile {
    public boolean save(final Path rootPath, final SaveOptions... options) throws IOException {
       final var path = rootPath.resolve(relativePath);
 
-      final boolean exists = exists(rootPath);
       final boolean replaceExisting = arrayContains(options, SaveOptions.REPLACE_EXISTING);
       final boolean saveEmpty = arrayContains(options, SaveOptions.SAVE_EMPTY);
       final boolean omitRedundantAnnotatedSignatures = arrayContains(options, SaveOptions.OMIT_REDUNDANT_ANNOTATED_SIGNATURES);
 
       final var content = renderFileContent(omitRedundantAnnotatedSignatures);
 
-      if (exists) {
+      if (exists(rootPath)) {
          if (replaceExisting) {
             if (!saveEmpty && members.isEmpty()) {
                LOG.log(Level.WARNING, "Deleting empty file [{0}]...", path.toAbsolutePath());
