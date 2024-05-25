@@ -131,6 +131,34 @@ check for new dependency/plugin updates using:
       <build>
         <plugins>
           <plugin>
+            <groupId>org.codehaus.gmavenplus</groupId>
+            <artifactId>gmavenplus-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>groovy.script.removeUnusedEEAs@prepare-package</id>
+                  <phase>prepare-package</phase>
+                  <goals>
+                     <goal>execute</goal>
+                  </goals>
+                  <configuration>
+                     <scripts>
+                        <script><![CDATA[
+                        def targetDir = new File(project.build.directory + "/classes")
+                        targetDir.eachFileRecurse(groovy.io.FileType.FILES) { file ->
+                          if (file.name.endsWith('.eea')) {
+                            def content = file.text
+                            if (!content.contains('1') && !content.contains('0')) {
+                               file.delete()
+                            }
+                          }
+                        }
+                        ]]></script>
+                     </scripts>
+                  </configuration>
+               </execution>
+            </executions>
+          </plugin>
+          <plugin>
             <!-- https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html -->
             <!-- https://github.com/apache/felix-dev/tree/master/tools/maven-bundle-plugin -->
             <groupId>org.apache.felix</groupId>
