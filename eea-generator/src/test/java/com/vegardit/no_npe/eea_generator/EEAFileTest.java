@@ -39,8 +39,7 @@ class EEAFileTest {
 
    @Test
    void testEEAFile() throws IOException {
-      final var eeaFile = new EEAFile(TestEntity.class.getName());
-      eeaFile.load(Path.of("src/test/resources/valid"));
+      final var eeaFile = EEAFile.load(Path.of("src/test/resources/valid"), TestEntity.class.getName());
 
       assertThat(eeaFile.className.value).isEqualTo(TestEntity.class.getName());
       assertThat(eeaFile.className.comment).isEqualTo("# a class comment");
@@ -61,19 +60,22 @@ class EEAFileTest {
       assertThat(annotatedSignature.value).isEqualTo("L1java/lang/String;");
       assertThat(annotatedSignature.comment).isEqualTo("# an annotated signature comment");
 
-      assertThat(normalizeNewLines(eeaFile.renderFileContent(false))) //
+      assertThat(normalizeNewLines(eeaFile.renderFileContent(false, false))) //
          .isEqualTo(normalizeNewLines(Files.readString(Path.of("src/test/resources/valid").resolve(eeaFile.relativePath))));
 
-      assertThat(normalizeNewLines(eeaFile.renderFileContent(true))) //
+      assertThat(normalizeNewLines(eeaFile.renderFileContent(true, false))) //
          .isNotEqualTo(normalizeNewLines(Files.readString(Path.of("src/test/resources/valid").resolve(eeaFile.relativePath))));
    }
 
    @Test
    void testWrongTypeHeader() {
-      final var eeaFile = new EEAFile(WRONG_TYPE_NAME);
-      assertThatThrownBy(() -> eeaFile.load(Path.of("src/test/resources/invalid"))) //
-         .isInstanceOf(java.io.IOException.class).hasMessage("mismatching class name in annotation file, expected "
-            + WRONG_TYPE_NAME_WITH_SLASHES + ", but header said " + TEST_ENTITY_NAME_WITH_SLASHES);
+      final var wrongTypePath = Path.of("src/test/resources/invalid/" + WRONG_TYPE_NAME_WITH_SLASHES + ".eea");
+      assertThatThrownBy(() -> { //
+         EEAFile.load(wrongTypePath);
+      }) //
+         .isInstanceOf(java.io.IOException.class) //
+         .hasMessage("Mismatch between file path of [" + wrongTypePath + "] and contained class name definition [" + TestEntity.class
+            .getName() + "]");
    }
 
    @Test
@@ -88,8 +90,7 @@ class EEAFileTest {
       assertThat(method.annotatedSignature).isNull();
       assertThat(method.name.comment).isNull();
 
-      final var loadedEEAFile = new EEAFile(computedEEAFile.className.value);
-      loadedEEAFile.load(Path.of("src/test/resources/valid"));
+      final var loadedEEAFile = EEAFile.load(Path.of("src/test/resources/valid"), computedEEAFile.className.value);
       computedEEAFile.applyAnnotationsAndCommentsFrom(loadedEEAFile, false);
       final var annotatedSignature = method.annotatedSignature;
       assert annotatedSignature != null;

@@ -114,7 +114,7 @@ To build the project follow these steps:
    ```
 
    Set the `[PATH_TO_YOUR_JDK_11]`/`[PATH_TO_YOUR_JDK_17]`/`[PATH_TO_YOUR_JDK_21]` parameters accordingly
-   to where you intalled the JDKs.
+   to where you installed the JDKs.
 
 1. Checkout the code, e.g. using:
 
@@ -210,7 +210,7 @@ Updating EEA files will:
     </project>
     ```
 
-1. Add an eea-generator.properties in the same directory where you specify the relevant packages of the library.
+1. Add an eea-generator.properties file in the same directory where you specify the relevant packages of the library.
 
    ```properties
    packages.include=package1,package2
@@ -235,9 +235,9 @@ Updating EEA files will:
    These options can also be specified in the command line as system properties like `-Deea-generator.<OPTION_NAME>=`,
    e.g. `-Deea-generator.omitRedundantAnnotatedSignatures=true`
 
-1. In the parent project's pom reference the module in the `<modules>` section.
+1. In the parent project's pom.xml file reference the module in the `<modules>` section.
 
-1. Run the generator inside parent project to create the EEA files
+1. Run the generator in the parent project to create the EEA files
 
    ```bash
    mvn compile -Deea-generator.action=generate -am -pl <MODULE_NAME>

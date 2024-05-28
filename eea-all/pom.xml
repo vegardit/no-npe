@@ -55,6 +55,7 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
         <artifactId>gmavenplus-plugin</artifactId>
         <executions>
           <execution>
+            <!-- merge *.eea from all libs/... modules into target/collected-eeas -->
             <id>collect-eeas</id>
             <phase>process-resources</phase>
             <goals>
@@ -63,56 +64,26 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
             <configuration>
               <scripts>
                 <script><![CDATA[
-                  def targetRootPath = java.nio.file.Path.of(project.build.outputDirectory)
-
-                  // iterate over all libs/* maven modules
+                  def includeDirs = new TreeSet<String>()
                   project.parent.basedir.toPath().resolve("libs").eachDir() { moduleDir ->
-                    def resDir = moduleDir.resolve("src/main/resources")
-                    def linked = 0
-
-                    // iterate over all src/main/resources/*.eea files in the current module
-                    resDir.traverse(
-                      type: groovy.io.FileType.FILES,
-                      nameFilter: ~/.*\.eea$/
-                    ) { eeaSourceFile ->
-                      // calculate the target EEA file path under eea-all/target/classes/
-                      eeaTargetFile = targetRootPath.resolve(resDir.relativize(eeaSourceFile))
-
-                      // link the current eea file under eea-all/target/classes/
-                      java.nio.file.Files.deleteIfExists(eeaTargetFile)
-                      java.nio.file.Files.createDirectories(eeaTargetFile.getParent())
-                      java.nio.file.Files.createLink(eeaTargetFile, eeaSourceFile);
-                      linked++;
-                    }
-                    log.info(linked + " EEA file(s) collected from eea/" + moduleDir.getFileName())
+                    includeDirs.add(moduleDir.resolve("src/main/resources").toString())
                   }
+                  System.setProperty("eea-generator.action", "minimize")
+                  System.setProperty("eea-generator.input.dirs", String.join(",", includeDirs))
+                  System.setProperty("eea-generator.output.dir", project.build.outputDirectory)
+                  com.vegardit.no_npe.eea_generator.EEAGenerator.main()
                 ]]></script>
               </scripts>
             </configuration>
           </execution>
-          <execution>
-            <id>groovy.script.removeUnusedEEAs@prepare-package</id>
-            <phase>prepare-package</phase>
-            <goals>
-              <goal>execute</goal>
-            </goals>
-            <configuration>
-              <scripts>
-                 <script><![CDATA[
-                   def targetDir = new File(project.build.directory + "/classes")
-                   targetDir.eachFileRecurse(groovy.io.FileType.FILES) { file ->
-                   if (file.name.endsWith('.eea')) {
-                     def content = file.text
-                     if (!content.contains('1') && !content.contains('0')) {
-                       file.delete()
-                      }
-                     }
-                   }
-                 ]]></script>
-               </scripts>
-             </configuration>
-          </execution>
         </executions>
+        <dependencies>
+          <dependency>
+            <groupId>com.vegardit.no-npe</groupId>
+            <artifactId>no-npe-eea-generator</artifactId>
+            <version>${project.version}</version>
+          </dependency>
+        </dependencies>
       </plugin>
     </plugins>
   </build>

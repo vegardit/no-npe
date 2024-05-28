@@ -7,8 +7,11 @@ package com.vegardit.no_npe.eea_generator.internal;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.UncheckedIOException;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +22,7 @@ import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 import org.eclipse.jdt.annotation.NonNull;
 import org.eclipse.jdt.annotation.Nullable;
@@ -28,17 +32,26 @@ import org.eclipse.jdt.annotation.Nullable;
  */
 public final class MiscUtils {
 
+   @FunctionalInterface
+   public interface ThrowingConsumer<V, T extends Exception> {
+      void accept(V v) throws T;
+   }
+
    public static boolean arrayContains(final Object @Nullable [] searchIn, final Object searchFor) {
       if (searchIn == null || searchIn.length == 0)
          return false;
       for (final var e : searchIn) {
-         if (e.equals(searchFor))
+         if (Objects.equals(e, searchFor))
             return true;
       }
       return false;
    }
 
+   private static boolean isJULConfigured = false;
+
    public static void configureJUL() {
+      if (isJULConfigured)
+         return;
       final var mainLogger = Logger.getLogger("com.vegardit.no_npe");
       mainLogger.setUseParentHandlers(false);
       final var handler = new ConsoleHandler();
@@ -53,6 +66,7 @@ public final class MiscUtils {
          }
       });
       mainLogger.addHandler(handler);
+      isJULConfigured = true;
    }
 
    public static String normalizeNewLines(final String str) {
@@ -72,10 +86,37 @@ public final class MiscUtils {
    }
 
    /**
+    * @return total number of matching files
+    */
+   public static long forEachFileWithExtension(final Path startPath, final String fileExtension,
+         final ThrowingConsumer<Path, IOException> onFile) throws IOException {
+      if (!Files.exists(startPath))
+         return 0;
+
+      final long[] count = {0};
+      try (Stream<Path> paths = Files.walk(startPath)) {
+         paths //
+            .filter(Files::isRegularFile) //
+            .filter(path -> path.getFileName().toString().endsWith(fileExtension)) //
+            .forEach(path -> {
+               try {
+                  count[0]++;
+                  onFile.accept(path);
+               } catch (final IOException ex) {
+                  throw new UncheckedIOException(ex);
+               }
+            });
+      } catch (final UncheckedIOException ex) {
+         throw ex.getCause();
+      }
+      return count[0];
+   }
+
+   /**
     * Replaces the given capturing group of all matches.
     */
    public static String replaceAll(final String searchIn, final Pattern searchFor, final int groupToReplace,
-      final UnaryOperator<String> replaceWith) {
+         final UnaryOperator<String> replaceWith) {
       if (searchIn.isEmpty())
          return searchIn;
       final var matcher = searchFor.matcher(searchIn);
@@ -96,8 +137,14 @@ public final class MiscUtils {
       return sb.toString();
    }
 
-   public static @Nullable String getSubstringBetweenBalanced(@Nullable final String searchIn, final char startDelimiter,
-      final char endDelimiter) {
+   public static String removeSuffix(final String searchIn, final String remove) {
+      return !remove.isEmpty() && searchIn.endsWith(remove) //
+            ? searchIn.substring(0, searchIn.length() - remove.length())
+            : searchIn;
+   }
+
+   public static @Nullable String substringBetweenBalanced(@Nullable final String searchIn, final char startDelimiter,
+         final char endDelimiter) {
       if (searchIn == null)
          return null;
       int depth = 0;
@@ -136,15 +183,15 @@ public final class MiscUtils {
          final StackTraceElement ste = stacktrace[i];
          final String className = ste.getClassName();
          if ("java.lang.reflect.Method".equals(className) //
-            || className.startsWith("java.util.stream.") //
-            || "java.util.Iterator".equals(className) && "forEachRemaining".equals(ste.getMethodName())//
-            || "java.util.Spliterators$IteratorSpliterator".equals(className) && "forEachRemaining".equals(ste.getMethodName())//
-            || className.startsWith("sun.reflect.") //
-            || className.startsWith("sun.proxy.$Proxy", 4) //
-            || className.startsWith("org.codehaus.groovy.runtime.") //
-            || className.startsWith("org.codehaus.groovy.reflection.") //
-            || className.startsWith("groovy.lang.Meta") //
-            || className.startsWith("groovy.lang.Closure") //
+               || className.startsWith("java.util.stream.") //
+               || "java.util.Iterator".equals(className) && "forEachRemaining".equals(ste.getMethodName())//
+               || "java.util.Spliterators$IteratorSpliterator".equals(className) && "forEachRemaining".equals(ste.getMethodName())//
+               || className.startsWith("sun.reflect.") //
+               || className.startsWith("sun.proxy.$Proxy", 4) //
+               || className.startsWith("org.codehaus.groovy.runtime.") //
+               || className.startsWith("org.codehaus.groovy.reflection.") //
+               || className.startsWith("groovy.lang.Meta") //
+               || className.startsWith("groovy.lang.Closure") //
          ) {
             continue;
          }
