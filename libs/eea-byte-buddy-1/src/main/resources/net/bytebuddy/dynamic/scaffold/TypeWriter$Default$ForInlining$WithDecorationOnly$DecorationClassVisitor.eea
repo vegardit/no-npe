@@ -8,10 +8,10 @@ apply
  (Lnet/bytebuddy/jar/asm/ClassVisitor;Lnet/bytebuddy/dynamic/scaffold/TypeInitializer;Lnet/bytebuddy/implementation/Implementation$Context;)V
 onVisitAnnotation
  (Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
- (Ljava/lang/String;Z)L0net/bytebuddy/jar/asm/AnnotationVisitor;
+ (Ljava/lang/String;Z)L0net/bytebuddy/jar/asm/AnnotationVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 onVisitTypeAnnotation
  (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
- (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)L0net/bytebuddy/jar/asm/AnnotationVisitor;
+ (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)L0net/bytebuddy/jar/asm/AnnotationVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 visit
  (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
  (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V

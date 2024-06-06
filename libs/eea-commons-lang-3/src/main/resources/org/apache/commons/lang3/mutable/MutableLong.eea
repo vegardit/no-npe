@@ -1,5 +1,12 @@
 class org/apache/commons/lang3/mutable/MutableLong
 
+super java/lang/Comparable
+ <Lorg/apache/commons/lang3/mutable/MutableLong;>
+ <Lorg/apache/commons/lang3/mutable/MutableLong;>
+super org/apache/commons/lang3/mutable/Mutable
+ <Ljava/lang/Number;>
+ <Ljava/lang/Number;>
+
 <init>
  (Ljava/lang/Number;)V
  (Ljava/lang/Number;)V
@@ -17,7 +24,7 @@ compareTo
  (Lorg/apache/commons/lang3/mutable/MutableLong;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAndAdd
  (Ljava/lang/Number;)J
  (Ljava/lang/Number;)J
@@ -35,4 +42,4 @@ toLong
  ()Ljava/lang/Long;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

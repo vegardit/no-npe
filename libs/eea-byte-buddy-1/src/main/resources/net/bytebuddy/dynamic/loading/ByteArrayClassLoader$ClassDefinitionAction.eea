@@ -1,11 +1,15 @@
 class net/bytebuddy/dynamic/loading/ByteArrayClassLoader$ClassDefinitionAction
 
+super java/security/PrivilegedAction
+ <Ljava/lang/Class<*>;>
+ <Ljava/lang/Class<*>;>
+
 <init>
  (Lnet/bytebuddy/dynamic/loading/ByteArrayClassLoader;Ljava/lang/String;[B)V
  (Lnet/bytebuddy/dynamic/loading/ByteArrayClassLoader;Ljava/lang/String;[B)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 run
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;

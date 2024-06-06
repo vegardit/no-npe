@@ -2,7 +2,7 @@ class io/github/classgraph/ArrayClassInfo
 
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(io.github.classgraph.ClassInfo)
 findReferencedClassInfo
  (Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;Ljava/util/Set<Lio/github/classgraph/ClassInfo;>;Lnonapi/io/github/classgraph/utils/LogNode;)V
  (Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;Ljava/util/Set<Lio/github/classgraph/ClassInfo;>;Lnonapi/io/github/classgraph/utils/LogNode;)V
@@ -17,16 +17,16 @@ getElementTypeSignature
  ()Lio/github/classgraph/TypeSignature;
 getTypeSignature
  ()Lio/github/classgraph/ClassTypeSignature;
- ()Lio/github/classgraph/ClassTypeSignature;
+ ()L0io/github/classgraph/ClassTypeSignature; # @Inherited(io.github.classgraph.ClassInfo)
 getTypeSignatureStr
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(io.github.classgraph.ClassInfo)
 loadClass
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L1java/lang/Class<*>; # @Inherited(io.github.classgraph.ClassInfo)
 loadClass
  (Z)Ljava/lang/Class<*>;
- (Z)Ljava/lang/Class<*>;
+ (Z)L0java/lang/Class<*>; # @Inherited(io.github.classgraph.ClassInfo)
 loadElementClass
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;

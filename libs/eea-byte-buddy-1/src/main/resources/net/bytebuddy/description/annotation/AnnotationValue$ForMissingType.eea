@@ -1,5 +1,10 @@
 class net/bytebuddy/description/annotation/AnnotationValue$ForMissingType
  <U:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <U:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super net/bytebuddy/description/annotation/AnnotationValue$AbstractBase
+ <TU;TV;>
+ <TU;TV;>
 
 <init>
  (Ljava/lang/String;)V
@@ -21,4 +26,4 @@ resolve
  ()TU;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

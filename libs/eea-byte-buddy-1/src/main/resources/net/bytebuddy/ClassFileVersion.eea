@@ -1,5 +1,9 @@
 class net/bytebuddy/ClassFileVersion
 
+super java/lang/Comparable
+ <Lnet/bytebuddy/ClassFileVersion;>
+ <Lnet/bytebuddy/ClassFileVersion;>
+
 JAVA_V1
  Lnet/bytebuddy/ClassFileVersion;
  L1net/bytebuddy/ClassFileVersion;
@@ -109,7 +113,7 @@ compareTo
  (Lnet/bytebuddy/ClassFileVersion;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 isAtLeast
  (Lnet/bytebuddy/ClassFileVersion;)Z
  (Lnet/bytebuddy/ClassFileVersion;)Z
@@ -124,4 +128,4 @@ isLessThan
  (Lnet/bytebuddy/ClassFileVersion;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

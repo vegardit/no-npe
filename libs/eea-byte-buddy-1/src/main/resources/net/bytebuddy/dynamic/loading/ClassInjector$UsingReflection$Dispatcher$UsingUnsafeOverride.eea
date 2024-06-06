@@ -31,13 +31,13 @@ definePackage
  (Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;)Ljava/lang/Package;
 findClass
  (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/ClassLoader;Ljava/lang/String;)L0java/lang/Class<*>; # @Inherited(net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher)
 getDefinedPackage
  (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Package;
- (Ljava/lang/ClassLoader;Ljava/lang/String;)L0java/lang/Package;
+ (Ljava/lang/ClassLoader;Ljava/lang/String;)L0java/lang/Package; # @Inherited(net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher)
 getPackage
  (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Package;
- (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Package;
+ (Ljava/lang/ClassLoader;Ljava/lang/String;)L0java/lang/Package; # @Inherited(net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher)
 initialize
  ()Lnet/bytebuddy/dynamic/loading/ClassInjector$UsingReflection$Dispatcher;
  ()Lnet/bytebuddy/dynamic/loading/ClassInjector$UsingReflection$Dispatcher;

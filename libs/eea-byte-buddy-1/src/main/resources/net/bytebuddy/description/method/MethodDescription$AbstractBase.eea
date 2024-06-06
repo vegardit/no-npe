@@ -14,7 +14,7 @@ asTypeToken
  ()Lnet/bytebuddy/description/method/MethodDescription$TypeToken;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getActualModifiers
  (ZLnet/bytebuddy/description/modifier/Visibility;)I
  (ZLnet/bytebuddy/description/modifier/Visibility;)I
@@ -23,16 +23,16 @@ getActualName
  ()Ljava/lang/String;
 getDefaultValue
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(net.bytebuddy.description.method.MethodDescription)
 getDescriptor
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getEnclosingSource
  ()Lnet/bytebuddy/description/TypeVariableSource;
- ()L0net/bytebuddy/description/TypeVariableSource;
+ ()L0net/bytebuddy/description/TypeVariableSource; # @Inherited(net.bytebuddy.description.TypeVariableSource)
 getGenericSignature
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(net.bytebuddy.description.NamedElement$WithDescriptor)
 getName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -74,4 +74,4 @@ toSafeString
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

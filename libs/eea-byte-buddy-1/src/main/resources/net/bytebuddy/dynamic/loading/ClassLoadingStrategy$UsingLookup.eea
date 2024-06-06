@@ -1,5 +1,9 @@
 class net/bytebuddy/dynamic/loading/ClassLoadingStrategy$UsingLookup
 
+super net/bytebuddy/dynamic/loading/ClassLoadingStrategy
+ <Ljava/lang/ClassLoader;>
+ <Ljava/lang/ClassLoader;>
+
 of
  (Ljava/lang/Object;)Lnet/bytebuddy/dynamic/loading/ClassLoadingStrategy<Ljava/lang/ClassLoader;>;
  (Ljava/lang/Object;)Lnet/bytebuddy/dynamic/loading/ClassLoadingStrategy<Ljava/lang/ClassLoader;>;
@@ -15,7 +19,7 @@ withFallback
  (Lnet/bytebuddy/dynamic/loading/ClassInjector;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 load
  (Ljava/lang/ClassLoader;Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/Class<*>;>;
  (Ljava/lang/ClassLoader;Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/Class<*>;>;

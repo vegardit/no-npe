@@ -1,11 +1,15 @@
 class net/bytebuddy/dynamic/Transformer$ForMethod$MethodModifierTransformer
 
+super net/bytebuddy/dynamic/Transformer
+ <Lnet/bytebuddy/description/method/MethodDescription$Token;>
+ <Lnet/bytebuddy/description/method/MethodDescription$Token;>
+
 <init>
  (Lnet/bytebuddy/description/modifier/ModifierContributor$Resolver<Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)V
  (Lnet/bytebuddy/description/modifier/ModifierContributor$Resolver<Lnet/bytebuddy/description/modifier/ModifierContributor$ForMethod;>;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 transform
  (Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/method/MethodDescription$Token;)Lnet/bytebuddy/description/method/MethodDescription$Token;
  (Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/method/MethodDescription$Token;)Lnet/bytebuddy/description/method/MethodDescription$Token;

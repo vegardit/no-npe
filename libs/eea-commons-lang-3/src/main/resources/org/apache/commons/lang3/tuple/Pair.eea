@@ -1,5 +1,13 @@
 class org/apache/commons/lang3/tuple/Pair
  <L:Ljava/lang/Object;R:Ljava/lang/Object;>
+ <L:Ljava/lang/Object;R:Ljava/lang/Object;>
+
+super java/util/Map$Entry
+ <TL;TR;>
+ <TL;TR;>
+super java/lang/Comparable
+ <Lorg/apache/commons/lang3/tuple/Pair<TL;TR;>;>
+ <Lorg/apache/commons/lang3/tuple/Pair<TL;TR;>;>
 
 EMPTY_ARRAY
  [Lorg/apache/commons/lang3/tuple/Pair<**>;
@@ -29,7 +37,7 @@ compareTo
  (Lorg/apache/commons/lang3/tuple/Pair<TL;TR;>;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getKey
  ()TL;
  ()TL;
@@ -44,7 +52,7 @@ getValue
  ()TR;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toString
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;

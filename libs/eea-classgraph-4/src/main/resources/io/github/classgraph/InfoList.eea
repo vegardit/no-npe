@@ -1,9 +1,14 @@
 class io/github/classgraph/InfoList
  <T::Lio/github/classgraph/HasName;>
+ <T::Lio/github/classgraph/HasName;>
+
+super io/github/classgraph/PotentiallyUnmodifiableList
+ <TT;>
+ <TT;>
 
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAsStrings
  ()Ljava/util/List<Ljava/lang/String;>;
  ()L1java/util/List<L1java/lang/String;>;

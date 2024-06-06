@@ -1,12 +1,17 @@
 class net/bytebuddy/matcher/IsNamedMatcher
  <T::Lnet/bytebuddy/description/NamedElement$WithOptionalName;>
+ <T::Lnet/bytebuddy/description/NamedElement$WithOptionalName;>
+
+super net/bytebuddy/matcher/ElementMatcher$Junction$ForNonNullValues
+ <TT;>
+ <TT;>
 
 doMatch
  (TT;)Z
  (TT;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(net.bytebuddy.matcher.ElementMatcher$Junction$ForNonNullValues)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

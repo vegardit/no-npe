@@ -1,11 +1,15 @@
 class net/bytebuddy/build/Plugin$Engine$Source$Empty
 
+super java/lang/Enum
+ <Lnet/bytebuddy/build/Plugin$Engine$Source$Empty;>
+ <Lnet/bytebuddy/build/Plugin$Engine$Source$Empty;>
+
 getClassFileLocator
  ()Lnet/bytebuddy/dynamic/ClassFileLocator;
  ()Lnet/bytebuddy/dynamic/ClassFileLocator;
 getManifest
  ()Ljava/util/jar/Manifest;
- ()L0java/util/jar/Manifest;
+ ()L0java/util/jar/Manifest; # @Inherited(net.bytebuddy.build.Plugin$Engine$Source$Origin)
 iterator
  ()Ljava/util/Iterator<Lnet/bytebuddy/build/Plugin$Engine$Source$Element;>;
  ()Ljava/util/Iterator<Lnet/bytebuddy/build/Plugin$Engine$Source$Element;>;

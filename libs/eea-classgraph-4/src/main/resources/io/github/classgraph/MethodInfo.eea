@@ -1,11 +1,15 @@
 class io/github/classgraph/MethodInfo
 
+super java/lang/Comparable
+ <Lio/github/classgraph/MethodInfo;>
+ <Lio/github/classgraph/MethodInfo;>
+
 compareTo
  (Lio/github/classgraph/MethodInfo;)I
  (Lio/github/classgraph/MethodInfo;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 findReferencedClassInfo
  (Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;Ljava/util/Set<Lio/github/classgraph/ClassInfo;>;Lnonapi/io/github/classgraph/utils/LogNode;)V
  (Ljava/util/Map<Ljava/lang/String;Lio/github/classgraph/ClassInfo;>;Ljava/util/Set<Lio/github/classgraph/ClassInfo;>;Lnonapi/io/github/classgraph/utils/LogNode;)V
@@ -14,7 +18,7 @@ getModifiersStr
  ()Ljava/lang/String;
 getName
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(io.github.classgraph.ClassMemberInfo)
 getParameterInfo
  ()[Lio/github/classgraph/MethodParameterInfo;
  ()[Lio/github/classgraph/MethodParameterInfo;

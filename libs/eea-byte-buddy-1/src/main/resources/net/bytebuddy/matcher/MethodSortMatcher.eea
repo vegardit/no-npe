@@ -1,5 +1,10 @@
 class net/bytebuddy/matcher/MethodSortMatcher
  <T::Lnet/bytebuddy/description/method/MethodDescription;>
+ <T::Lnet/bytebuddy/description/method/MethodDescription;>
+
+super net/bytebuddy/matcher/ElementMatcher$Junction$ForNonNullValues
+ <TT;>
+ <TT;>
 
 of
  <T::Lnet/bytebuddy/description/method/MethodDescription;>(Lnet/bytebuddy/matcher/MethodSortMatcher$Sort;)Lnet/bytebuddy/matcher/ElementMatcher$Junction<TT;>;
@@ -13,7 +18,7 @@ doMatch
  (TT;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(net.bytebuddy.matcher.ElementMatcher$Junction$ForNonNullValues)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

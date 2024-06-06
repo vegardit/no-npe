@@ -1,5 +1,10 @@
 class net/bytebuddy/description/annotation/AnnotationValue$ForEnumerationDescription$WithUnknownConstant
  <U:Ljava/lang/Enum<TU;>;>
+ <U:Ljava/lang/Enum<TU;>;>
+
+super net/bytebuddy/description/annotation/AnnotationValue$AbstractBase
+ <Lnet/bytebuddy/description/enumeration/EnumerationDescription;TU;>
+ <Lnet/bytebuddy/description/enumeration/EnumerationDescription;TU;>
 
 <init>
  (Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/String;)V
@@ -21,4 +26,4 @@ resolve
  ()Lnet/bytebuddy/description/enumeration/EnumerationDescription;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

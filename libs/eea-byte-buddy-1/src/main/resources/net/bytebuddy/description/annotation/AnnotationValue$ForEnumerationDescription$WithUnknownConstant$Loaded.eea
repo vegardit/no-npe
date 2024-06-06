@@ -1,5 +1,9 @@
 class net/bytebuddy/description/annotation/AnnotationValue$ForEnumerationDescription$WithUnknownConstant$Loaded
 
+super net/bytebuddy/description/annotation/AnnotationValue$Loaded$AbstractBase$ForUnresolvedProperty
+ <Ljava/lang/Enum<*>;>
+ <Ljava/lang/Enum<*>;>
+
 <init>
  (Ljava/lang/Class<+Ljava/lang/Enum<*>;>;Ljava/lang/String;)V
  (Ljava/lang/Class<+Ljava/lang/Enum<*>;>;Ljava/lang/String;)V
@@ -8,4 +12,4 @@ resolve
  ()Ljava/lang/Enum<*>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -1,5 +1,10 @@
 class net/bytebuddy/dynamic/scaffold/TypeWriter$Default$ForInlining
  <U:Ljava/lang/Object;>
+ <U:Ljava/lang/Object;>
+
+super net/bytebuddy/dynamic/scaffold/TypeWriter$Default
+ <TU;>
+ <TU;>
 
 classFileLocator
  Lnet/bytebuddy/dynamic/ClassFileLocator;
@@ -16,7 +21,7 @@ create
  (Lnet/bytebuddy/dynamic/scaffold/TypeInitializer;Lnet/bytebuddy/dynamic/scaffold/TypeWriter$Default$ClassDumpAction$Dispatcher;)Lnet/bytebuddy/dynamic/scaffold/TypeWriter$Default<TU;>.UnresolvedType;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(net.bytebuddy.dynamic.scaffold.TypeWriter$Default)
 wrap
  (Lnet/bytebuddy/jar/asm/ClassVisitor;II)Lnet/bytebuddy/utility/visitor/ContextClassVisitor;
  (Lnet/bytebuddy/jar/asm/ClassVisitor;II)Lnet/bytebuddy/utility/visitor/ContextClassVisitor;

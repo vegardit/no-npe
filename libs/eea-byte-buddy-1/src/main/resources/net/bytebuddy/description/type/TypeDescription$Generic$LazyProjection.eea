@@ -5,16 +5,16 @@ accept
  <T:Ljava/lang/Object;>(Lnet/bytebuddy/description/type/TypeDescription$Generic$Visitor<TT;>;)TT;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 findBindingOf
  (Lnet/bytebuddy/description/type/TypeDescription$Generic;)Lnet/bytebuddy/description/type/TypeDescription$Generic;
- (Lnet/bytebuddy/description/type/TypeDescription$Generic;)L0net/bytebuddy/description/type/TypeDescription$Generic;
+ (Lnet/bytebuddy/description/type/TypeDescription$Generic;)L0net/bytebuddy/description/type/TypeDescription$Generic; # @Inherited(net.bytebuddy.description.type.TypeDescription$Generic)
 getActualName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getComponentType
  ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
- ()L0net/bytebuddy/description/type/TypeDescription$Generic;
+ ()L0net/bytebuddy/description/type/TypeDescription$Generic; # @Inherited(net.bytebuddy.description.type.TypeDescription$Generic)
 getDeclaredFields
  ()Lnet/bytebuddy/description/field/FieldList<Lnet/bytebuddy/description/field/FieldDescription$InGenericShape;>;
  ()Lnet/bytebuddy/description/field/FieldList<Lnet/bytebuddy/description/field/FieldDescription$InGenericShape;>;
@@ -26,7 +26,7 @@ getLowerBounds
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
 getOwnerType
  ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
- ()L0net/bytebuddy/description/type/TypeDescription$Generic;
+ ()L0net/bytebuddy/description/type/TypeDescription$Generic; # @Inherited(net.bytebuddy.description.type.TypeDescription$Generic)
 getRecordComponents
  ()Lnet/bytebuddy/description/type/RecordComponentList<Lnet/bytebuddy/description/type/RecordComponentDescription$InGenericShape;>;
  ()Lnet/bytebuddy/description/type/RecordComponentList<Lnet/bytebuddy/description/type/RecordComponentDescription$InGenericShape;>;
@@ -59,4 +59,4 @@ resolve
  ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

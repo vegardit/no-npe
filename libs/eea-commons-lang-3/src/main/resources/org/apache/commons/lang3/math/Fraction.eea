@@ -1,5 +1,9 @@
 class org/apache/commons/lang3/math/Fraction
 
+super java/lang/Comparable
+ <Lorg/apache/commons/lang3/math/Fraction;>
+ <Lorg/apache/commons/lang3/math/Fraction;>
+
 FOUR_FIFTHS
  Lorg/apache/commons/lang3/math/Fraction;
  L1org/apache/commons/lang3/math/Fraction;
@@ -67,7 +71,7 @@ divideBy
  (Lorg/apache/commons/lang3/math/Fraction;)Lorg/apache/commons/lang3/math/Fraction;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 invert
  ()Lorg/apache/commons/lang3/math/Fraction;
  ()Lorg/apache/commons/lang3/math/Fraction;
@@ -91,4 +95,4 @@ toProperString
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

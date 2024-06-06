@@ -15,19 +15,19 @@ definePackage
  (Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;)Ljava/lang/Package;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 findClass
  (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/ClassLoader;Ljava/lang/String;)L0java/lang/Class<*>; # @Inherited(net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher)
 getClassLoadingLock
  (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;
  (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;
 getDefinedPackage
  (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Package;
- (Ljava/lang/ClassLoader;Ljava/lang/String;)L0java/lang/Package;
+ (Ljava/lang/ClassLoader;Ljava/lang/String;)L0java/lang/Package; # @Inherited(net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher)
 getPackage
  (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Package;
- (Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Package;
+ (Ljava/lang/ClassLoader;Ljava/lang/String;)L0java/lang/Package; # @Inherited(net.bytebuddy.dynamic.loading.ClassInjector$UsingReflection$Dispatcher)
 initialize
  ()Lnet/bytebuddy/dynamic/loading/ClassInjector$UsingReflection$Dispatcher;
  ()Lnet/bytebuddy/dynamic/loading/ClassInjector$UsingReflection$Dispatcher;

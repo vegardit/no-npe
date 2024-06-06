@@ -1,5 +1,9 @@
 class net/bytebuddy/matcher/StringMatcher
 
+super net/bytebuddy/matcher/ElementMatcher$Junction$ForNonNullValues
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 <init>
  (Ljava/lang/String;Lnet/bytebuddy/matcher/StringMatcher$Mode;)V
  (Ljava/lang/String;Lnet/bytebuddy/matcher/StringMatcher$Mode;)V
@@ -8,7 +12,7 @@ doMatch
  (Ljava/lang/String;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(net.bytebuddy.matcher.ElementMatcher$Junction$ForNonNullValues)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

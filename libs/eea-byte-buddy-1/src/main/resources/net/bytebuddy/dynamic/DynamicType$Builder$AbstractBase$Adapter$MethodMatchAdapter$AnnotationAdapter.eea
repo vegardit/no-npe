@@ -1,5 +1,9 @@
 class net/bytebuddy/dynamic/DynamicType$Builder$AbstractBase$Adapter$MethodMatchAdapter$AnnotationAdapter
 
+super net/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition$AbstractBase$Adapter
+ <TU;>
+ <TU;>
+
 <init>
  (Lnet/bytebuddy/dynamic/DynamicType$Builder$AbstractBase$Adapter$MethodMatchAdapter;Lnet/bytebuddy/dynamic/scaffold/MethodRegistry$Handler;)V
  (Lnet/bytebuddy/dynamic/DynamicType$Builder$AbstractBase$Adapter$MethodMatchAdapter;Lnet/bytebuddy/dynamic/scaffold/MethodRegistry$Handler;)V
@@ -14,7 +18,7 @@ annotateParameter
  (ILjava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$MethodDefinition<TU;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(net.bytebuddy.dynamic.DynamicType$Builder$MethodDefinition$AbstractBase$Adapter)
 materialize
  ()Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
  ()Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;

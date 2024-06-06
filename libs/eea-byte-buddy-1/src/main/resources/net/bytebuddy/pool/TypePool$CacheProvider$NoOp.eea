@@ -1,8 +1,12 @@
 class net/bytebuddy/pool/TypePool$CacheProvider$NoOp
 
+super java/lang/Enum
+ <Lnet/bytebuddy/pool/TypePool$CacheProvider$NoOp;>
+ <Lnet/bytebuddy/pool/TypePool$CacheProvider$NoOp;>
+
 find
  (Ljava/lang/String;)Lnet/bytebuddy/pool/TypePool$Resolution;
- (Ljava/lang/String;)L0net/bytebuddy/pool/TypePool$Resolution;
+ (Ljava/lang/String;)L0net/bytebuddy/pool/TypePool$Resolution; # @Inherited(net.bytebuddy.pool.TypePool$CacheProvider)
 register
  (Ljava/lang/String;Lnet/bytebuddy/pool/TypePool$Resolution;)Lnet/bytebuddy/pool/TypePool$Resolution;
  (Ljava/lang/String;Lnet/bytebuddy/pool/TypePool$Resolution;)Lnet/bytebuddy/pool/TypePool$Resolution;

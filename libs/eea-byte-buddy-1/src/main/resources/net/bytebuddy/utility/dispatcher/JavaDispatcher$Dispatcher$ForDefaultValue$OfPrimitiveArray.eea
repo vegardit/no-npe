@@ -1,8 +1,12 @@
 class net/bytebuddy/utility/dispatcher/JavaDispatcher$Dispatcher$ForDefaultValue$OfPrimitiveArray
 
+super java/lang/Enum
+ <Lnet/bytebuddy/utility/dispatcher/JavaDispatcher$Dispatcher$ForDefaultValue$OfPrimitiveArray;>
+ <Lnet/bytebuddy/utility/dispatcher/JavaDispatcher$Dispatcher$ForDefaultValue$OfPrimitiveArray;>
+
 apply
  (Lnet/bytebuddy/jar/asm/MethodVisitor;Ljava/lang/reflect/Method;)I
  (Lnet/bytebuddy/jar/asm/MethodVisitor;Ljava/lang/reflect/Method;)I
 invoke
  ([Ljava/lang/Object;)Ljava/lang/Object;
- ([Ljava/lang/Object;)Ljava/lang/Object;
+ ([Ljava/lang/Object;)L0java/lang/Object; # @Inherited(net.bytebuddy.utility.dispatcher.JavaDispatcher$Dispatcher)

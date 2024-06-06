@@ -1,5 +1,10 @@
 class net/bytebuddy/description/annotation/AnnotationValue$ForMismatchedType$Loaded
  <W:Ljava/lang/Object;>
+ <W:Ljava/lang/Object;>
+
+super net/bytebuddy/description/annotation/AnnotationValue$Loaded$AbstractBase$ForUnresolvedProperty
+ <TW;>
+ <TW;>
 
 <init>
  (Ljava/lang/reflect/Method;Ljava/lang/String;)V
@@ -9,4 +14,4 @@ resolve
  ()TW;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

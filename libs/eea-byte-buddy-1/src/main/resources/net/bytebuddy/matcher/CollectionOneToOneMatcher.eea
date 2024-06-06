@@ -1,5 +1,10 @@
 class net/bytebuddy/matcher/CollectionOneToOneMatcher
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super net/bytebuddy/matcher/ElementMatcher$Junction$ForNonNullValues
+ <Ljava/lang/Iterable<+TT;>;>
+ <Ljava/lang/Iterable<+TT;>;>
 
 <init>
  (Ljava/util/List<+Lnet/bytebuddy/matcher/ElementMatcher<-TT;>;>;)V
@@ -9,7 +14,7 @@ doMatch
  (Ljava/lang/Iterable<+TT;>;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(net.bytebuddy.matcher.ElementMatcher$Junction$ForNonNullValues)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

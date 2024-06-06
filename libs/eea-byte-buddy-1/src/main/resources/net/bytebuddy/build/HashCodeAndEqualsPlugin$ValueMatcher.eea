@@ -1,5 +1,9 @@
 class net/bytebuddy/build/HashCodeAndEqualsPlugin$ValueMatcher
 
+super net/bytebuddy/matcher/ElementMatcher$Junction$ForNonNullValues
+ <Lnet/bytebuddy/description/field/FieldDescription;>
+ <Lnet/bytebuddy/description/field/FieldDescription;>
+
 <init>
  (Lnet/bytebuddy/build/HashCodeAndEqualsPlugin$ValueHandling$Sort;)V
  (Lnet/bytebuddy/build/HashCodeAndEqualsPlugin$ValueHandling$Sort;)V
@@ -8,4 +12,4 @@ doMatch
  (Lnet/bytebuddy/description/field/FieldDescription;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(net.bytebuddy.matcher.ElementMatcher$Junction$ForNonNullValues)

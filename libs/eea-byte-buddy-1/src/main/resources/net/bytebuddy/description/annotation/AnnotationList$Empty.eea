@@ -1,5 +1,9 @@
 class net/bytebuddy/description/annotation/AnnotationList$Empty
 
+super net/bytebuddy/matcher/FilterableList$Empty
+ <Lnet/bytebuddy/description/annotation/AnnotationDescription;Lnet/bytebuddy/description/annotation/AnnotationList;>
+ <Lnet/bytebuddy/description/annotation/AnnotationDescription;Lnet/bytebuddy/description/annotation/AnnotationList;>
+
 asList
  (I)Ljava/util/List<Lnet/bytebuddy/description/annotation/AnnotationList;>;
  (I)Ljava/util/List<Lnet/bytebuddy/description/annotation/AnnotationList;>;
@@ -24,7 +28,7 @@ ofType
  (Lnet/bytebuddy/description/type/TypeDescription;)L0net/bytebuddy/description/annotation/AnnotationDescription;
 ofType
  <T::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TT;>;)Lnet/bytebuddy/description/annotation/AnnotationDescription$Loadable<TT;>;
- <T::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TT;>;)L0net/bytebuddy/description/annotation/AnnotationDescription$Loadable<TT;>;
+ <T::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TT;>;)L0net/bytebuddy/description/annotation/AnnotationDescription$Loadable<TT;>; # @Inherited(net.bytebuddy.description.annotation.AnnotationList)
 visibility
  (Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/annotation/RetentionPolicy;>;)Lnet/bytebuddy/description/annotation/AnnotationList;
  (Lnet/bytebuddy/matcher/ElementMatcher<-Ljava/lang/annotation/RetentionPolicy;>;)Lnet/bytebuddy/description/annotation/AnnotationList;

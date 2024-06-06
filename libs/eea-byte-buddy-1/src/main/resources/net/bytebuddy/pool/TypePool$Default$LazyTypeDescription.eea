@@ -5,7 +5,7 @@ class net/bytebuddy/pool/TypePool$Default$LazyTypeDescription
  (Lnet/bytebuddy/pool/TypePool;IILjava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$TypeContainment;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;ZLjava/lang/String;Ljava/util/List<Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$AnnotationToken;>;>;Ljava/util/Map<Ljava/lang/Integer;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$AnnotationToken;>;>;>;Ljava/util/Map<Ljava/lang/Integer;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$AnnotationToken;>;>;>;Ljava/util/Map<Ljava/lang/Integer;Ljava/util/Map<Ljava/lang/Integer;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$AnnotationToken;>;>;>;>;Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$AnnotationToken;>;Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$FieldToken;>;Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$MethodToken;>;Ljava/util/List<Lnet/bytebuddy/pool/TypePool$Default$LazyTypeDescription$RecordComponentToken;>;Ljava/util/List<Ljava/lang/String;>;Lnet/bytebuddy/ClassFileVersion;)V
 getClassFileVersion
  ()Lnet/bytebuddy/ClassFileVersion;
- ()Lnet/bytebuddy/ClassFileVersion;
+ ()L0net/bytebuddy/ClassFileVersion; # @Inherited(net.bytebuddy.description.type.TypeDescription$AbstractBase)
 getDeclaredAnnotations
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
@@ -20,16 +20,16 @@ getDeclaredTypes
  ()Lnet/bytebuddy/description/type/TypeList;
 getDeclaringType
  ()Lnet/bytebuddy/description/type/TypeDescription;
- ()L0net/bytebuddy/description/type/TypeDescription;
+ ()L0net/bytebuddy/description/type/TypeDescription; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getEnclosingMethod
  ()Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;
- ()L0net/bytebuddy/description/method/MethodDescription$InDefinedShape;
+ ()L0net/bytebuddy/description/method/MethodDescription$InDefinedShape; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getEnclosingType
  ()Lnet/bytebuddy/description/type/TypeDescription;
- ()L0net/bytebuddy/description/type/TypeDescription;
+ ()L0net/bytebuddy/description/type/TypeDescription; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getGenericSignature
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(net.bytebuddy.description.type.TypeDescription$AbstractBase)
 getInterfaces
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
@@ -44,7 +44,7 @@ getNestMembers
  ()Lnet/bytebuddy/description/type/TypeList;
 getPackage
  ()Lnet/bytebuddy/description/type/PackageDescription;
- ()L0net/bytebuddy/description/type/PackageDescription;
+ ()L0net/bytebuddy/description/type/PackageDescription; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getPermittedSubtypes
  ()Lnet/bytebuddy/description/type/TypeList;
  ()Lnet/bytebuddy/description/type/TypeList;
@@ -53,7 +53,7 @@ getRecordComponents
  ()Lnet/bytebuddy/description/type/RecordComponentList<Lnet/bytebuddy/description/type/RecordComponentDescription$InDefinedShape;>;
 getSuperClass
  ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
- ()L0net/bytebuddy/description/type/TypeDescription$Generic;
+ ()L0net/bytebuddy/description/type/TypeDescription$Generic; # @Inherited(net.bytebuddy.description.type.TypeDefinition)
 getTypeVariables
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
  ()Lnet/bytebuddy/description/type/TypeList$Generic;

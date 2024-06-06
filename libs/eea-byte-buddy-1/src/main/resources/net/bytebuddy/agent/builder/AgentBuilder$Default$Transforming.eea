@@ -1,5 +1,9 @@
 class net/bytebuddy/agent/builder/AgentBuilder$Default$Transforming
 
+super net/bytebuddy/agent/builder/AgentBuilder$Default$Delegator$Matchable
+ <Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;>
+ <Lnet/bytebuddy/agent/builder/AgentBuilder$Identified$Narrowable;>
+
 <init>
  (Lnet/bytebuddy/agent/builder/AgentBuilder$RawMatcher;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer;>;Z)V
  (Lnet/bytebuddy/agent/builder/AgentBuilder$RawMatcher;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer;>;Z)V
@@ -11,7 +15,7 @@ asTerminalTransformation
  ()Lnet/bytebuddy/agent/builder/AgentBuilder;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 materialize
  ()Lnet/bytebuddy/agent/builder/AgentBuilder;
  ()Lnet/bytebuddy/agent/builder/AgentBuilder;

@@ -1,5 +1,9 @@
 class net/bytebuddy/matcher/LatentMatcher$ForMethodToken$ResolvedMatcher
 
+super net/bytebuddy/matcher/ElementMatcher$Junction$ForNonNullValues
+ <Lnet/bytebuddy/description/method/MethodDescription;>
+ <Lnet/bytebuddy/description/method/MethodDescription;>
+
 <init>
  (Lnet/bytebuddy/description/method/MethodDescription$SignatureToken;)V
  (Lnet/bytebuddy/description/method/MethodDescription$SignatureToken;)V
@@ -8,4 +12,4 @@ doMatch
  (Lnet/bytebuddy/description/method/MethodDescription;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(net.bytebuddy.matcher.ElementMatcher$Junction$ForNonNullValues)

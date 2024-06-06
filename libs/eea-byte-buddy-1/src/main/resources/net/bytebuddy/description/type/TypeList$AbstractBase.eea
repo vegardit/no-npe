@@ -1,8 +1,12 @@
 class net/bytebuddy/description/type/TypeList$AbstractBase
 
+super net/bytebuddy/matcher/FilterableList$AbstractBase
+ <Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/type/TypeList;>
+ <Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/type/TypeList;>
+
 toInternalNames
  ()[Ljava/lang/String;
- ()[0Ljava/lang/String;
+ ()[0Ljava/lang/String; # @Inherited(net.bytebuddy.description.type.TypeList)
 wrap
  (Ljava/util/List<Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/description/type/TypeList;
  (Ljava/util/List<Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/description/type/TypeList;

@@ -5,7 +5,7 @@ class net/bytebuddy/dynamic/scaffold/InstrumentedType$Frozen
  (Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/implementation/LoadedTypeInitializer;)V
 getClassFileVersion
  ()Lnet/bytebuddy/ClassFileVersion;
- ()L0net/bytebuddy/ClassFileVersion;
+ ()L0net/bytebuddy/ClassFileVersion; # @Inherited(net.bytebuddy.description.type.TypeDescription$AbstractBase)
 getDeclaredAnnotations
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
@@ -20,16 +20,16 @@ getDeclaredTypes
  ()Lnet/bytebuddy/description/type/TypeList;
 getDeclaringType
  ()Lnet/bytebuddy/description/type/TypeDescription;
- ()L0net/bytebuddy/description/type/TypeDescription;
+ ()L0net/bytebuddy/description/type/TypeDescription; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getEnclosingMethod
  ()Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;
- ()L0net/bytebuddy/description/method/MethodDescription$InDefinedShape;
+ ()L0net/bytebuddy/description/method/MethodDescription$InDefinedShape; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getEnclosingType
  ()Lnet/bytebuddy/description/type/TypeDescription;
- ()L0net/bytebuddy/description/type/TypeDescription;
+ ()L0net/bytebuddy/description/type/TypeDescription; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getGenericSignature
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(net.bytebuddy.description.type.TypeDescription$AbstractBase)
 getInterfaces
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
@@ -47,7 +47,7 @@ getNestMembers
  ()Lnet/bytebuddy/description/type/TypeList;
 getPackage
  ()Lnet/bytebuddy/description/type/PackageDescription;
- ()L0net/bytebuddy/description/type/PackageDescription;
+ ()L0net/bytebuddy/description/type/PackageDescription; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getPermittedSubtypes
  ()Lnet/bytebuddy/description/type/TypeList;
  ()Lnet/bytebuddy/description/type/TypeList;
@@ -56,7 +56,7 @@ getRecordComponents
  ()Lnet/bytebuddy/description/type/RecordComponentList<Lnet/bytebuddy/description/type/RecordComponentDescription$InDefinedShape;>;
 getSuperClass
  ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
- ()L0net/bytebuddy/description/type/TypeDescription$Generic;
+ ()L0net/bytebuddy/description/type/TypeDescription$Generic; # @Inherited(net.bytebuddy.description.type.TypeDefinition)
 getTypeInitializer
  ()Lnet/bytebuddy/dynamic/scaffold/TypeInitializer;
  ()Lnet/bytebuddy/dynamic/scaffold/TypeInitializer;

@@ -1,11 +1,15 @@
 class io/github/classgraph/PackageInfo
 
+super java/lang/Comparable
+ <Lio/github/classgraph/PackageInfo;>
+ <Lio/github/classgraph/PackageInfo;>
+
 compareTo
  (Lio/github/classgraph/PackageInfo;)I
  (Lio/github/classgraph/PackageInfo;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAnnotationInfo
  ()Lio/github/classgraph/AnnotationInfoList;
  ()Lio/github/classgraph/AnnotationInfoList;
@@ -41,4 +45,4 @@ hasAnnotation
  (Ljava/lang/String;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

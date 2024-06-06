@@ -1,5 +1,10 @@
 class net/bytebuddy/matcher/ElementMatcher$Junction$Disjunction
  <W:Ljava/lang/Object;>
+ <W:Ljava/lang/Object;>
+
+super net/bytebuddy/matcher/ElementMatcher$Junction$AbstractBase
+ <TW;>
+ <TW;>
 
 <init>
  (Ljava/util/List<Lnet/bytebuddy/matcher/ElementMatcher<-TW;>;>;)V
@@ -9,10 +14,10 @@ class net/bytebuddy/matcher/ElementMatcher$Junction$Disjunction
  ([Lnet/bytebuddy/matcher/ElementMatcher<-TW;>;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 matches
  (TW;)Z
  (TW;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -1,11 +1,15 @@
 class net/bytebuddy/dynamic/loading/ByteArrayClassLoader$PersistenceHandler$UrlDefinitionAction
 
+super java/security/PrivilegedAction
+ <Ljava/net/URL;>
+ <Ljava/net/URL;>
+
 <init>
  (Ljava/lang/String;[B)V
  (Ljava/lang/String;[B)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 run
  ()Ljava/net/URL;
  ()Ljava/net/URL;

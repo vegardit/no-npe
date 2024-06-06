@@ -1,5 +1,9 @@
 class org/apache/commons/lang3/text/StrBuilder
 
+super org/apache/commons/lang3/builder/Builder
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 buffer
  [C
  [C
@@ -240,7 +244,7 @@ ensureCapacity
  (I)Lorg/apache/commons/lang3/text/StrBuilder;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 equals
  (Lorg/apache/commons/lang3/text/StrBuilder;)Z
  (Lorg/apache/commons/lang3/text/StrBuilder;)Z
@@ -387,7 +391,7 @@ toCharArray
  (II)[C
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toStringBuffer
  ()Ljava/lang/StringBuffer;
  ()Ljava/lang/StringBuffer;

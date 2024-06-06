@@ -1,5 +1,9 @@
 class org/apache/commons/configuration2/CombinedConfiguration
 
+super org/apache/commons/configuration2/event/EventListener
+ <Lorg/apache/commons/configuration2/event/ConfigurationEvent;>
+ <Lorg/apache/commons/configuration2/event/ConfigurationEvent;>
+
 COMBINED_INVALIDATE
  Lorg/apache/commons/configuration2/event/EventType<Lorg/apache/commons/configuration2/event/ConfigurationEvent;>;
  L1org/apache/commons/configuration2/event/EventType<Lorg/apache/commons/configuration2/event/ConfigurationEvent;>;
@@ -18,7 +22,7 @@ addConfiguration
  (Lorg/apache/commons/configuration2/Configuration;Ljava/lang/String;Ljava/lang/String;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(org.apache.commons.configuration2.AbstractHierarchicalConfiguration)
 getConfiguration
  (I)Lorg/apache/commons/configuration2/Configuration;
  (I)Lorg/apache/commons/configuration2/Configuration;

@@ -8,7 +8,7 @@ asToken
  (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/type/TypeDescription;>;)Lnet/bytebuddy/description/field/FieldDescription$Token;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getActualName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -17,7 +17,7 @@ getDescriptor
  ()Ljava/lang/String;
 getGenericSignature
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(net.bytebuddy.description.NamedElement$WithDescriptor)
 getInternalName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -32,4 +32,4 @@ toGenericString
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

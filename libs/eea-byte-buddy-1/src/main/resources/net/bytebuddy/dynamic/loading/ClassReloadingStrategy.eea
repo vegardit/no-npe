@@ -1,5 +1,9 @@
 class net/bytebuddy/dynamic/loading/ClassReloadingStrategy
 
+super net/bytebuddy/dynamic/loading/ClassLoadingStrategy
+ <Ljava/lang/ClassLoader;>
+ <Ljava/lang/ClassLoader;>
+
 DISPATCHER
  Lnet/bytebuddy/dynamic/loading/ClassReloadingStrategy$Dispatcher;
  L1net/bytebuddy/dynamic/loading/ClassReloadingStrategy$Dispatcher;
@@ -25,7 +29,7 @@ enableBootstrapInjection
  (Ljava/io/File;)Lnet/bytebuddy/dynamic/loading/ClassReloadingStrategy;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 load
  (Ljava/lang/ClassLoader;Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/Class<*>;>;
  (Ljava/lang/ClassLoader;Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/Class<*>;>;

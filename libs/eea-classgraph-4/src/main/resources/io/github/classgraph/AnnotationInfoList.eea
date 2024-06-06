@@ -1,5 +1,9 @@
 class io/github/classgraph/AnnotationInfoList
 
+super io/github/classgraph/MappableInfoList
+ <Lio/github/classgraph/AnnotationInfo;>
+ <Lio/github/classgraph/AnnotationInfo;>
+
 emptyList
  ()Lio/github/classgraph/AnnotationInfoList;
  ()Lio/github/classgraph/AnnotationInfoList;
@@ -12,7 +16,7 @@ directOnly
  ()Lio/github/classgraph/AnnotationInfoList;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(io.github.classgraph.InfoList)
 filter
  (Lio/github/classgraph/AnnotationInfoList$AnnotationInfoFilter;)Lio/github/classgraph/AnnotationInfoList;
  (Lio/github/classgraph/AnnotationInfoList$AnnotationInfoFilter;)Lio/github/classgraph/AnnotationInfoList;

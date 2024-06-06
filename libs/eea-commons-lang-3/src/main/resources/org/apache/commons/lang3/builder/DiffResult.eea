@@ -1,5 +1,10 @@
 class org/apache/commons/lang3/builder/DiffResult
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super java/lang/Iterable
+ <Lorg/apache/commons/lang3/builder/Diff<*>;>
+ <Lorg/apache/commons/lang3/builder/Diff<*>;>
 
 OBJECTS_SAME_STRING
  Ljava/lang/String;
@@ -22,7 +27,7 @@ iterator
  ()Ljava/util/Iterator<Lorg/apache/commons/lang3/builder/Diff<*>;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toString
  (Lorg/apache/commons/lang3/builder/ToStringStyle;)Ljava/lang/String;
  (Lorg/apache/commons/lang3/builder/ToStringStyle;)Ljava/lang/String;

@@ -1,5 +1,9 @@
 class net/bytebuddy/description/method/MethodDescription$Token
 
+super net/bytebuddy/description/ByteCodeElement$Token
+ <Lnet/bytebuddy/description/method/MethodDescription$Token;>
+ <Lnet/bytebuddy/description/method/MethodDescription$Token;>
+
 <init>
  (Ljava/lang/String;ILjava/util/List<+Lnet/bytebuddy/description/type/TypeVariableToken;>;Lnet/bytebuddy/description/type/TypeDescription$Generic;Ljava/util/List<+Lnet/bytebuddy/description/method/ParameterDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription$Generic;>;Ljava/util/List<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;Lnet/bytebuddy/description/annotation/AnnotationValue<**>;Lnet/bytebuddy/description/type/TypeDescription$Generic;)V
  (Ljava/lang/String;ILjava/util/List<+Lnet/bytebuddy/description/type/TypeVariableToken;>;Lnet/bytebuddy/description/type/TypeDescription$Generic;Ljava/util/List<+Lnet/bytebuddy/description/method/ParameterDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription$Generic;>;Ljava/util/List<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;Lnet/bytebuddy/description/annotation/AnnotationValue<**>;Lnet/bytebuddy/description/type/TypeDescription$Generic;)V
@@ -17,7 +21,7 @@ asSignatureToken
  (Lnet/bytebuddy/description/type/TypeDescription;)Lnet/bytebuddy/description/method/MethodDescription$SignatureToken;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAnnotations
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
@@ -44,4 +48,4 @@ getTypeVariableTokens
  ()Lnet/bytebuddy/description/ByteCodeElement$Token$TokenList<Lnet/bytebuddy/description/type/TypeVariableToken;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

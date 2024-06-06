@@ -15,13 +15,13 @@ ofTypes
  (Ljava/util/Map<Ljava/lang/String;[B>;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getClassFileLocator
  ()Lnet/bytebuddy/dynamic/ClassFileLocator;
  ()Lnet/bytebuddy/dynamic/ClassFileLocator;
 getManifest
  ()Ljava/util/jar/Manifest;
- ()L0java/util/jar/Manifest;
+ ()L0java/util/jar/Manifest; # @Inherited(net.bytebuddy.build.Plugin$Engine$Source$Origin)
 iterator
  ()Ljava/util/Iterator<Lnet/bytebuddy/build/Plugin$Engine$Source$Element;>;
  ()Ljava/util/Iterator<Lnet/bytebuddy/build/Plugin$Engine$Source$Element;>;

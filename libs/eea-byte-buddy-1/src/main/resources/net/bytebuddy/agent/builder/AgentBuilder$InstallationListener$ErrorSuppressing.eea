@@ -1,5 +1,9 @@
 class net/bytebuddy/agent/builder/AgentBuilder$InstallationListener$ErrorSuppressing
 
+super java/lang/Enum
+ <Lnet/bytebuddy/agent/builder/AgentBuilder$InstallationListener$ErrorSuppressing;>
+ <Lnet/bytebuddy/agent/builder/AgentBuilder$InstallationListener$ErrorSuppressing;>
+
 onAfterWarmUp
  (Ljava/util/Map<Ljava/lang/Class<*>;[B>;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Z)V
  (Ljava/util/Map<Ljava/lang/Class<*>;[B>;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Z)V
@@ -11,7 +15,7 @@ onBeforeWarmUp
  (Ljava/util/Set<Ljava/lang/Class<*>;>;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;)V
 onError
  (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Ljava/lang/Throwable;)Ljava/lang/Throwable;
- (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Ljava/lang/Throwable;)L0java/lang/Throwable;
+ (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Ljava/lang/Throwable;)L0java/lang/Throwable; # @Inherited(net.bytebuddy.agent.builder.AgentBuilder$InstallationListener)
 onInstall
  (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;)V
  (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;)V

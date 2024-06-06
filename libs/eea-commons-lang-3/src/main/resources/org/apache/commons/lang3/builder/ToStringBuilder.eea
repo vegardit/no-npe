@@ -1,5 +1,9 @@
 class org/apache/commons/lang3/builder/ToStringBuilder
 
+super org/apache/commons/lang3/builder/Builder
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 getDefaultStyle
  ()Lorg/apache/commons/lang3/builder/ToStringStyle;
  ()L1org/apache/commons/lang3/builder/ToStringStyle;
@@ -189,4 +193,4 @@ getStyle
  ()Lorg/apache/commons/lang3/builder/ToStringStyle;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

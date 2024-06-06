@@ -1,5 +1,9 @@
 class io/github/classgraph/ClassInfoList
 
+super io/github/classgraph/MappableInfoList
+ <Lio/github/classgraph/ClassInfo;>
+ <Lio/github/classgraph/ClassInfo;>
+
 emptyList
  ()Lio/github/classgraph/ClassInfoList;
  ()Lio/github/classgraph/ClassInfoList;
@@ -12,7 +16,7 @@ directOnly
  ()Lio/github/classgraph/ClassInfoList;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(io.github.classgraph.InfoList)
 exclude
  (Lio/github/classgraph/ClassInfoList;)Lio/github/classgraph/ClassInfoList;
  (Lio/github/classgraph/ClassInfoList;)Lio/github/classgraph/ClassInfoList;

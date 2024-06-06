@@ -1,5 +1,9 @@
 class net/bytebuddy/dynamic/loading/ByteArrayClassLoader$PackageLookupStrategy$ForLegacyVm
 
+super java/lang/Enum
+ <Lnet/bytebuddy/dynamic/loading/ByteArrayClassLoader$PackageLookupStrategy$ForLegacyVm;>
+ <Lnet/bytebuddy/dynamic/loading/ByteArrayClassLoader$PackageLookupStrategy$ForLegacyVm;>
+
 apply
  (Lnet/bytebuddy/dynamic/loading/ByteArrayClassLoader;Ljava/lang/String;)Ljava/lang/Package;
- (Lnet/bytebuddy/dynamic/loading/ByteArrayClassLoader;Ljava/lang/String;)L0java/lang/Package;
+ (Lnet/bytebuddy/dynamic/loading/ByteArrayClassLoader;Ljava/lang/String;)L0java/lang/Package; # @Inherited(net.bytebuddy.dynamic.loading.ByteArrayClassLoader$PackageLookupStrategy)

@@ -1,5 +1,10 @@
 class org/apache/commons/lang3/tuple/Triple
  <L:Ljava/lang/Object;M:Ljava/lang/Object;R:Ljava/lang/Object;>
+ <L:Ljava/lang/Object;M:Ljava/lang/Object;R:Ljava/lang/Object;>
+
+super java/lang/Comparable
+ <Lorg/apache/commons/lang3/tuple/Triple<TL;TM;TR;>;>
+ <Lorg/apache/commons/lang3/tuple/Triple<TL;TM;TR;>;>
 
 EMPTY_ARRAY
  [Lorg/apache/commons/lang3/tuple/Triple<***>;
@@ -20,7 +25,7 @@ compareTo
  (Lorg/apache/commons/lang3/tuple/Triple<TL;TM;TR;>;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getLeft
  ()TL;
  ()TL;
@@ -32,7 +37,7 @@ getRight
  ()TR;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toString
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;

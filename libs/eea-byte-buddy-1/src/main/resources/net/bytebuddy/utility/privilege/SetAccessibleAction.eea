@@ -1,12 +1,17 @@
 class net/bytebuddy/utility/privilege/SetAccessibleAction
  <T:Ljava/lang/reflect/AccessibleObject;>
+ <T:Ljava/lang/reflect/AccessibleObject;>
+
+super java/security/PrivilegedAction
+ <TT;>
+ <TT;>
 
 <init>
  (TT;)V
  (TT;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 run
  ()TT;
  ()TT;

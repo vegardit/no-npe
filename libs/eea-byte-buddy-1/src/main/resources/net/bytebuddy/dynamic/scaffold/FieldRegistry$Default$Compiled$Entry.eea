@@ -1,5 +1,9 @@
 class net/bytebuddy/dynamic/scaffold/FieldRegistry$Default$Compiled$Entry
 
+super net/bytebuddy/matcher/ElementMatcher
+ <Lnet/bytebuddy/description/field/FieldDescription;>
+ <Lnet/bytebuddy/description/field/FieldDescription;>
+
 <init>
  (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/field/FieldDescription;>;Lnet/bytebuddy/implementation/attribute/FieldAttributeAppender;Ljava/lang/Object;Lnet/bytebuddy/dynamic/Transformer<Lnet/bytebuddy/description/field/FieldDescription;>;)V
  (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/field/FieldDescription;>;Lnet/bytebuddy/implementation/attribute/FieldAttributeAppender;Ljava/lang/Object;Lnet/bytebuddy/dynamic/Transformer<Lnet/bytebuddy/description/field/FieldDescription;>;)V
@@ -8,7 +12,7 @@ bind
  (Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/field/FieldDescription;)Lnet/bytebuddy/dynamic/scaffold/TypeWriter$FieldPool$Record;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 matches
  (Lnet/bytebuddy/description/field/FieldDescription;)Z
  (Lnet/bytebuddy/description/field/FieldDescription;)Z

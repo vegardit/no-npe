@@ -11,16 +11,16 @@ asErasure
  ()Lnet/bytebuddy/description/type/TypeDescription;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 findBindingOf
  (Lnet/bytebuddy/description/type/TypeDescription$Generic;)Lnet/bytebuddy/description/type/TypeDescription$Generic;
- (Lnet/bytebuddy/description/type/TypeDescription$Generic;)Lnet/bytebuddy/description/type/TypeDescription$Generic;
+ (Lnet/bytebuddy/description/type/TypeDescription$Generic;)L0net/bytebuddy/description/type/TypeDescription$Generic; # @Inherited(net.bytebuddy.description.type.TypeDescription$Generic)
 getActualName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getComponentType
  ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
- ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
+ ()L0net/bytebuddy/description/type/TypeDescription$Generic; # @Inherited(net.bytebuddy.description.type.TypeDescription$Generic)
 getDeclaredAnnotations
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
@@ -38,7 +38,7 @@ getLowerBounds
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
 getOwnerType
  ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
- ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
+ ()L0net/bytebuddy/description/type/TypeDescription$Generic; # @Inherited(net.bytebuddy.description.type.TypeDescription$Generic)
 getRecordComponents
  ()Lnet/bytebuddy/description/type/RecordComponentList<Lnet/bytebuddy/description/type/RecordComponentDescription$InGenericShape;>;
  ()Lnet/bytebuddy/description/type/RecordComponentList<Lnet/bytebuddy/description/type/RecordComponentDescription$InGenericShape;>;
@@ -50,7 +50,7 @@ getStackSize
  ()Lnet/bytebuddy/implementation/bytecode/StackSize;
 getSuperClass
  ()Lnet/bytebuddy/description/type/TypeDescription$Generic;
- ()L0net/bytebuddy/description/type/TypeDescription$Generic;
+ ()L0net/bytebuddy/description/type/TypeDescription$Generic; # @Inherited(net.bytebuddy.description.type.TypeDefinition)
 getSymbol
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -74,4 +74,4 @@ represents
  (Ljava/lang/reflect/Type;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -1,5 +1,9 @@
 class org/apache/commons/lang3/text/StrTokenizer
 
+super java/util/ListIterator
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 getCSVInstance
  ()Lorg/apache/commons/lang3/text/StrTokenizer;
  ()Lorg/apache/commons/lang3/text/StrTokenizer;
@@ -60,7 +64,7 @@ add
  (Ljava/lang/String;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 getContent
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -138,7 +142,7 @@ setTrimmerMatcher
  (Lorg/apache/commons/lang3/text/StrMatcher;)Lorg/apache/commons/lang3/text/StrTokenizer;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 tokenize
  ([CII)Ljava/util/List<Ljava/lang/String;>;
  ([CII)Ljava/util/List<Ljava/lang/String;>;

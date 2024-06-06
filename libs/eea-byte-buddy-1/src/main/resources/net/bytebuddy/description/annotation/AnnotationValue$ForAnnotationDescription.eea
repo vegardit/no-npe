@@ -1,5 +1,10 @@
 class net/bytebuddy/description/annotation/AnnotationValue$ForAnnotationDescription
  <U::Ljava/lang/annotation/Annotation;>
+ <U::Ljava/lang/annotation/Annotation;>
+
+super net/bytebuddy/description/annotation/AnnotationValue$AbstractBase
+ <Lnet/bytebuddy/description/annotation/AnnotationDescription;TU;>
+ <Lnet/bytebuddy/description/annotation/AnnotationDescription;TU;>
 
 of
  <V::Ljava/lang/annotation/Annotation;>(Lnet/bytebuddy/description/type/TypeDescription;Ljava/util/Map<Ljava/lang/String;+Lnet/bytebuddy/description/annotation/AnnotationValue<**>;>;)Lnet/bytebuddy/description/annotation/AnnotationValue<Lnet/bytebuddy/description/annotation/AnnotationDescription;TV;>;
@@ -10,7 +15,7 @@ of
  (Lnet/bytebuddy/description/annotation/AnnotationDescription;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 filter
  (Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;Lnet/bytebuddy/description/type/TypeDefinition;)Lnet/bytebuddy/description/annotation/AnnotationValue<Lnet/bytebuddy/description/annotation/AnnotationDescription;TU;>;
  (Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;Lnet/bytebuddy/description/type/TypeDefinition;)Lnet/bytebuddy/description/annotation/AnnotationValue<Lnet/bytebuddy/description/annotation/AnnotationDescription;TU;>;
@@ -28,4 +33,4 @@ resolve
  ()Lnet/bytebuddy/description/annotation/AnnotationDescription;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -1,5 +1,9 @@
 class io/github/classgraph/ModuleRef
 
+super java/lang/Comparable
+ <Lio/github/classgraph/ModuleRef;>
+ <Lio/github/classgraph/ModuleRef;>
+
 <init>
  (Ljava/lang/Object;Ljava/lang/Object;Lnonapi/io/github/classgraph/reflection/ReflectionUtils;)V
  (Ljava/lang/Object;Ljava/lang/Object;Lnonapi/io/github/classgraph/reflection/ReflectionUtils;)V
@@ -8,7 +12,7 @@ compareTo
  (Lio/github/classgraph/ModuleRef;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getClassLoader
  ()Ljava/lang/ClassLoader;
  ()Ljava/lang/ClassLoader;
@@ -44,4 +48,4 @@ open
  ()Lio/github/classgraph/ModuleReaderProxy;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

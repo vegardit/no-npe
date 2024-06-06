@@ -1,5 +1,13 @@
 class org/apache/commons/configuration2/AbstractHierarchicalConfiguration
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/apache/commons/configuration2/tree/NodeKeyResolver
+ <TT;>
+ <TT;>
+super org/apache/commons/configuration2/HierarchicalConfiguration
+ <TT;>
+ <TT;>
 
 <init>
  (Lorg/apache/commons/configuration2/tree/NodeModel<TT;>;)V
@@ -27,7 +35,7 @@ clearTreeInternal
  (Ljava/lang/String;)Ljava/lang/Object;
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(org.apache.commons.configuration2.event.BaseEventSource)
 cloneNodeModel
  ()Lorg/apache/commons/configuration2/tree/NodeModel<TT;>;
  ()Lorg/apache/commons/configuration2/tree/NodeModel<TT;>;
@@ -93,4 +101,4 @@ setPropertyInternal
  (Ljava/lang/String;Ljava/lang/Object;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

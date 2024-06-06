@@ -17,22 +17,22 @@ asUnboxed
  ()Lnet/bytebuddy/description/type/TypeDescription;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getActualName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getClassFileVersion
  ()Lnet/bytebuddy/ClassFileVersion;
- ()L0net/bytebuddy/ClassFileVersion;
+ ()L0net/bytebuddy/ClassFileVersion; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getDefaultValue
  ()Ljava/lang/Object;
- ()L0java/lang/Object;
+ ()L0java/lang/Object; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 getEnclosingSource
  ()Lnet/bytebuddy/description/TypeVariableSource;
- ()L0net/bytebuddy/description/TypeVariableSource;
+ ()L0net/bytebuddy/description/TypeVariableSource; # @Inherited(net.bytebuddy.description.TypeVariableSource)
 getGenericSignature
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(net.bytebuddy.description.NamedElement$WithDescriptor)
 getInheritedAnnotations
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
@@ -98,4 +98,4 @@ toSafeString
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
