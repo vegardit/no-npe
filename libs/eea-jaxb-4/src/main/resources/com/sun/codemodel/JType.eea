@@ -1,5 +1,9 @@
 class com/sun/codemodel/JType
 
+super java/lang/Comparable
+ <Lcom/sun/codemodel/JType;>
+ <Lcom/sun/codemodel/JType;>
+
 parse
  (Lcom/sun/codemodel/JCodeModel;Ljava/lang/String;)Lcom/sun/codemodel/JPrimitiveType;
  (Lcom/sun/codemodel/JCodeModel;Ljava/lang/String;)Lcom/sun/codemodel/JPrimitiveType;
@@ -33,7 +37,7 @@ owner
  ()Lcom/sun/codemodel/JCodeModel;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 unboxify
  ()Lcom/sun/codemodel/JType;
  ()Lcom/sun/codemodel/JType;

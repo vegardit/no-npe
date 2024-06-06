@@ -11,7 +11,7 @@ class org/quartz/impl/calendar/CronCalendar
  (Lorg/quartz/Calendar;Ljava/lang/String;Ljava/util/TimeZone;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(org.quartz.impl.calendar.BaseCalendar)
 getCronExpression
  ()Lorg/quartz/CronExpression;
  ()Lorg/quartz/CronExpression;
@@ -29,4 +29,4 @@ setTimeZone
  (Ljava/util/TimeZone;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

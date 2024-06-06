@@ -1,5 +1,6 @@
 class org/quartz/impl/triggers/AbstractTrigger
  <T::Lorg/quartz/Trigger;>
+ <T::Lorg/quartz/Trigger;>
 
 <init>
  (Ljava/lang/String;)V
@@ -12,7 +13,7 @@ class org/quartz/impl/triggers/AbstractTrigger
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 compareTo
  (Lorg/quartz/Trigger;)I
  (Lorg/quartz/Trigger;)I
@@ -21,7 +22,7 @@ computeFirstFireTime
  (Lorg/quartz/Calendar;)Ljava/util/Date;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 executionComplete
  (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)Lorg/quartz/Trigger$CompletedExecutionInstruction;
  (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)Lorg/quartz/Trigger$CompletedExecutionInstruction;
@@ -123,7 +124,7 @@ setStartTime
  (Ljava/util/Date;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 triggered
  (Lorg/quartz/Calendar;)V
  (Lorg/quartz/Calendar;)V

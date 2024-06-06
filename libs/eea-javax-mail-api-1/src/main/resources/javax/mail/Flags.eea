@@ -20,7 +20,7 @@ add
  (Ljavax/mail/Flags;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 contains
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -32,7 +32,7 @@ contains
  (Ljavax/mail/Flags;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getSystemFlags
  ()[Ljavax/mail/Flags$Flag;
  ()[Ljavax/mail/Flags$Flag;
@@ -53,4 +53,4 @@ retainAll
  (Ljavax/mail/Flags;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -1,5 +1,9 @@
 class com/sun/tools/xjc/reader/gbind/Graph
 
+super java/lang/Iterable
+ <Lcom/sun/tools/xjc/reader/gbind/ConnectedComponent;>
+ <Lcom/sun/tools/xjc/reader/gbind/ConnectedComponent;>
+
 <init>
  (Lcom/sun/tools/xjc/reader/gbind/Expression;)V
  (Lcom/sun/tools/xjc/reader/gbind/Expression;)V
@@ -8,4 +12,4 @@ iterator
  ()Ljava/util/Iterator<Lcom/sun/tools/xjc/reader/gbind/ConnectedComponent;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

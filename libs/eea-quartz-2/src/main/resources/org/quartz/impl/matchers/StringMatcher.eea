@@ -1,5 +1,10 @@
 class org/quartz/impl/matchers/StringMatcher
  <T:Lorg/quartz/utils/Key<*>;>
+ <T:Lorg/quartz/utils/Key<*>;>
+
+super org/quartz/Matcher
+ <TT;>
+ <TT;>
 
 compareTo
  Ljava/lang/String;
@@ -13,7 +18,7 @@ compareWith
  (Ljava/lang/String;Lorg/quartz/impl/matchers/StringMatcher$StringOperatorName;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getCompareToValue
  ()Ljava/lang/String;
  ()Ljava/lang/String;

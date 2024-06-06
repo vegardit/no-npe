@@ -1,5 +1,10 @@
 class org/quartz/impl/matchers/AndMatcher
  <T:Lorg/quartz/utils/Key<*>;>
+ <T:Lorg/quartz/utils/Key<*>;>
+
+super org/quartz/Matcher
+ <TT;>
+ <TT;>
 
 and
  <U:Lorg/quartz/utils/Key<*>;>(Lorg/quartz/Matcher<TU;>;Lorg/quartz/Matcher<TU;>;)Lorg/quartz/impl/matchers/AndMatcher<TU;>;
@@ -17,7 +22,7 @@ rightOperand
  (Lorg/quartz/Matcher<TT;>;Lorg/quartz/Matcher<TT;>;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getLeftOperand
  ()Lorg/quartz/Matcher<TT;>;
  ()Lorg/quartz/Matcher<TT;>;

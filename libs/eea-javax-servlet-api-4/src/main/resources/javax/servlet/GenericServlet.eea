@@ -8,19 +8,19 @@ getInitParameterNames
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
 getServletConfig
  ()Ljavax/servlet/ServletConfig;
- ()Ljavax/servlet/ServletConfig;
+ ()L0javax/servlet/ServletConfig; # @Inherited(javax.servlet.Servlet)
 getServletContext
  ()Ljavax/servlet/ServletContext;
  ()Ljavax/servlet/ServletContext;
 getServletInfo
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(javax.servlet.Servlet)
 getServletName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 init
  (Ljavax/servlet/ServletConfig;)V
- (Ljavax/servlet/ServletConfig;)V
+ (L0javax/servlet/ServletConfig;)V # @Inherited(javax.servlet.Servlet)
 log
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -29,4 +29,4 @@ log
  (Ljava/lang/String;Ljava/lang/Throwable;)V
 service
  (Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V
- (Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V
+ (L1javax/servlet/ServletRequest;L1javax/servlet/ServletResponse;)V # @Inherited(javax.servlet.Servlet)

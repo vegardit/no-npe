@@ -8,10 +8,10 @@ addDependency
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 getPortletOutputStream
  ()Ljava/io/OutputStream;
- ()Ljava/io/OutputStream;
+ ()L1java/io/OutputStream; # @Inherited(javax.portlet.MimeResponse)
 getWriter
  ()Ljava/io/PrintWriter;
- ()Ljava/io/PrintWriter;
+ ()L1java/io/PrintWriter; # @Inherited(javax.portlet.MimeResponse)
 setContentType
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

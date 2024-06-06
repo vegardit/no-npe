@@ -14,16 +14,16 @@ getListeners
  ()Ljava/util/List<Lorg/quartz/JobListener;>;
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.quartz.JobListener)
 jobExecutionVetoed
  (Lorg/quartz/JobExecutionContext;)V
- (Lorg/quartz/JobExecutionContext;)V
+ (L1org/quartz/JobExecutionContext;)V # @Inherited(org.quartz.JobListener)
 jobToBeExecuted
  (Lorg/quartz/JobExecutionContext;)V
- (Lorg/quartz/JobExecutionContext;)V
+ (L1org/quartz/JobExecutionContext;)V # @Inherited(org.quartz.JobListener)
 jobWasExecuted
  (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)V
- (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)V
+ (L1org/quartz/JobExecutionContext;L0org/quartz/JobExecutionException;)V # @Inherited(org.quartz.JobListener)
 removeListener
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z

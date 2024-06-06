@@ -23,22 +23,22 @@ getCacheControl
  ()Ljavax/portlet/CacheControl;
 getCharacterEncoding
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.portlet.MimeResponse)
 getContentType
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getLocale
  ()Ljava/util/Locale;
- ()Ljava/util/Locale;
+ ()L1java/util/Locale; # @Inherited(javax.portlet.MimeResponse)
 getPortletOutputStream
  ()Ljava/io/OutputStream;
- ()Ljava/io/OutputStream;
+ ()L1java/io/OutputStream; # @Inherited(javax.portlet.MimeResponse)
 getResponse
  ()Ljavax/portlet/MimeResponse;
  ()Ljavax/portlet/MimeResponse;
 getWriter
  ()Ljava/io/PrintWriter;
- ()Ljava/io/PrintWriter;
+ ()L1java/io/PrintWriter; # @Inherited(javax.portlet.MimeResponse)
 setContentType
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

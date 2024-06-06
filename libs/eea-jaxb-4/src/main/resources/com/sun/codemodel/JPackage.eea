@@ -1,5 +1,9 @@
 class com/sun/codemodel/JPackage
 
+super java/lang/Comparable
+ <Lcom/sun/codemodel/JPackage;>
+ <Lcom/sun/codemodel/JPackage;>
+
 _annotationTypeDeclaration
  (Ljava/lang/String;)Lcom/sun/codemodel/JDefinedClass;
  (Ljava/lang/String;)Lcom/sun/codemodel/JDefinedClass;
@@ -41,7 +45,7 @@ annotate2
  <W::Lcom/sun/codemodel/JAnnotationWriter<+Ljava/lang/annotation/Annotation;>;>(Ljava/lang/Class<TW;>;)TW;
 annotations
  ()Ljava/util/Collection<Lcom/sun/codemodel/JAnnotationUse;>;
- ()Ljava/util/Collection<Lcom/sun/codemodel/JAnnotationUse;>;
+ ()L1java/util/Collection<L1com/sun/codemodel/JAnnotationUse;>; # @Inherited(com.sun.codemodel.JAnnotatable)
 classes
  ()Ljava/util/Iterator<Lcom/sun/codemodel/JDefinedClass;>;
  ()Ljava/util/Iterator<Lcom/sun/codemodel/JDefinedClass;>;

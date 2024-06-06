@@ -51,7 +51,7 @@ getJobStoreClassName
  ()Ljava/lang/String;
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.quartz.JobListener)
 getNotificationInfo
  ()[Ljavax/management/MBeanNotificationInfo;
  ()[Ljavax/management/MBeanNotificationInfo;
@@ -102,7 +102,7 @@ jobDeleted
  (Lorg/quartz/JobKey;)V
 jobExecutionVetoed
  (Lorg/quartz/JobExecutionContext;)V
- (Lorg/quartz/JobExecutionContext;)V
+ (L1org/quartz/JobExecutionContext;)V # @Inherited(org.quartz.JobListener)
 jobPaused
  (Lorg/quartz/JobKey;)V
  (Lorg/quartz/JobKey;)V
@@ -114,13 +114,13 @@ jobScheduled
  (Lorg/quartz/Trigger;)V
 jobToBeExecuted
  (Lorg/quartz/JobExecutionContext;)V
- (Lorg/quartz/JobExecutionContext;)V
+ (L1org/quartz/JobExecutionContext;)V # @Inherited(org.quartz.JobListener)
 jobUnscheduled
  (Lorg/quartz/TriggerKey;)V
  (Lorg/quartz/TriggerKey;)V
 jobWasExecuted
  (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)V
- (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)V
+ (L1org/quartz/JobExecutionContext;L0org/quartz/JobExecutionException;)V # @Inherited(org.quartz.JobListener)
 jobsPaused
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

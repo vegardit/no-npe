@@ -63,10 +63,10 @@ annotate2
  <W::Lcom/sun/codemodel/JAnnotationWriter<+Ljava/lang/annotation/Annotation;>;>(Ljava/lang/Class<TW;>;)TW;
 annotations
  ()Ljava/util/Collection<Lcom/sun/codemodel/JAnnotationUse;>;
- ()Ljava/util/Collection<Lcom/sun/codemodel/JAnnotationUse;>;
+ ()L1java/util/Collection<L1com/sun/codemodel/JAnnotationUse;>; # @Inherited(com.sun.codemodel.JAnnotatable)
 binaryName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 classes
  ()Ljava/util/Iterator<Lcom/sun/codemodel/JDefinedClass;>;
  ()Ljava/util/Iterator<Lcom/sun/codemodel/JDefinedClass;>;
@@ -105,10 +105,10 @@ field
  (ILjava/lang/Class<*>;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JFieldVar;
 fields
  ()Ljava/util/Map<Ljava/lang/String;Lcom/sun/codemodel/JFieldVar;>;
- ()Ljava/util/Map<Ljava/lang/String;Lcom/sun/codemodel/JFieldVar;>;
+ ()L1java/util/Map<L1java/lang/String;L1com/sun/codemodel/JFieldVar;>;
 fullName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 generify
  (Ljava/lang/String;)Lcom/sun/codemodel/JTypeVar;
  (Ljava/lang/String;)Lcom/sun/codemodel/JTypeVar;
@@ -129,7 +129,7 @@ getMethod
  (Ljava/lang/String;[Lcom/sun/codemodel/JType;)Lcom/sun/codemodel/JMethod;
 getPackage
  ()Lcom/sun/codemodel/JPackage;
- ()Lcom/sun/codemodel/JPackage;
+ ()L1com/sun/codemodel/JPackage;
 init
  ()Lcom/sun/codemodel/JBlock;
  ()Lcom/sun/codemodel/JBlock;
@@ -156,10 +156,10 @@ mods
  ()Lcom/sun/codemodel/JMods;
 name
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 outer
  ()Lcom/sun/codemodel/JClass;
- ()Lcom/sun/codemodel/JClass;
+ ()L0com/sun/codemodel/JClass;
 parentContainer
  ()Lcom/sun/codemodel/JClassContainer;
  ()Lcom/sun/codemodel/JClassContainer;
@@ -168,7 +168,7 @@ removeAnnotation
  (Lcom/sun/codemodel/JAnnotationUse;)Z
 removeField
  (Lcom/sun/codemodel/JFieldVar;)V
- (Lcom/sun/codemodel/JFieldVar;)V
+ (L1com/sun/codemodel/JFieldVar;)V
 substituteParams
  ([Lcom/sun/codemodel/JTypeVar;Ljava/util/List<Lcom/sun/codemodel/JClass;>;)Lcom/sun/codemodel/JClass;
  ([Lcom/sun/codemodel/JTypeVar;Ljava/util/List<Lcom/sun/codemodel/JClass;>;)Lcom/sun/codemodel/JClass;
@@ -177,4 +177,4 @@ superClass
  ()Lcom/sun/codemodel/JClass;
 typeParams
  ()[Lcom/sun/codemodel/JTypeVar;
- ()[Lcom/sun/codemodel/JTypeVar;
+ ()[1L1com/sun/codemodel/JTypeVar;

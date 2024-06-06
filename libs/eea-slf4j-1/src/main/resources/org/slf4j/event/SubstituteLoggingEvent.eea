@@ -2,7 +2,7 @@ class org/slf4j/event/SubstituteLoggingEvent
 
 getArgumentArray
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[0Ljava/lang/Object; # @Inherited(org.slf4j.event.LoggingEvent)
 getLevel
  ()Lorg/slf4j/event/Level;
  ()Lorg/slf4j/event/Level;
@@ -11,7 +11,7 @@ getLogger
  ()Lorg/slf4j/helpers/SubstituteLogger;
 getLoggerName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.slf4j.event.LoggingEvent)
 getMarker
  ()Lorg/slf4j/Marker;
  ()Lorg/slf4j/Marker;

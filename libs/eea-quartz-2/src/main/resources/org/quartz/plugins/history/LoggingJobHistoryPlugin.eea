@@ -17,19 +17,19 @@ getLog
  ()Lorg/slf4j/Logger;
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.quartz.JobListener)
 initialize
  (Ljava/lang/String;Lorg/quartz/Scheduler;Lorg/quartz/spi/ClassLoadHelper;)V
  (Ljava/lang/String;Lorg/quartz/Scheduler;Lorg/quartz/spi/ClassLoadHelper;)V
 jobExecutionVetoed
  (Lorg/quartz/JobExecutionContext;)V
- (Lorg/quartz/JobExecutionContext;)V
+ (L1org/quartz/JobExecutionContext;)V # @Inherited(org.quartz.JobListener)
 jobToBeExecuted
  (Lorg/quartz/JobExecutionContext;)V
- (Lorg/quartz/JobExecutionContext;)V
+ (L1org/quartz/JobExecutionContext;)V # @Inherited(org.quartz.JobListener)
 jobWasExecuted
  (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)V
- (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)V
+ (L1org/quartz/JobExecutionContext;L0org/quartz/JobExecutionException;)V # @Inherited(org.quartz.JobListener)
 setJobFailedMessage
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

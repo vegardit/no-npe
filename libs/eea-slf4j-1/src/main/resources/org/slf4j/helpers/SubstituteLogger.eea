@@ -35,7 +35,7 @@ debug
  (Lorg/slf4j/Marker;Ljava/lang/String;[Ljava/lang/Object;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 error
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -68,7 +68,7 @@ error
  (Lorg/slf4j/Marker;Ljava/lang/String;[Ljava/lang/Object;)V
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.slf4j.Logger)
 info
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

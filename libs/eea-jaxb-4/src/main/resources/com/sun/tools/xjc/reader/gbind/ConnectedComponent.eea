@@ -1,8 +1,12 @@
 class com/sun/tools/xjc/reader/gbind/ConnectedComponent
 
+super java/lang/Iterable
+ <Lcom/sun/tools/xjc/reader/gbind/Element;>
+ <Lcom/sun/tools/xjc/reader/gbind/Element;>
+
 iterator
  ()Ljava/util/Iterator<Lcom/sun/tools/xjc/reader/gbind/Element;>;
  ()Ljava/util/Iterator<Lcom/sun/tools/xjc/reader/gbind/Element;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

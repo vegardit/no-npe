@@ -1,5 +1,10 @@
 class org/quartz/impl/matchers/GroupMatcher
  <T:Lorg/quartz/utils/Key<*>;>
+ <T:Lorg/quartz/utils/Key<*>;>
+
+super org/quartz/impl/matchers/StringMatcher
+ <TT;>
+ <TT;>
 
 anyGroup
  <T:Lorg/quartz/utils/Key<TT;>;>()Lorg/quartz/impl/matchers/GroupMatcher<TT;>;

@@ -1,8 +1,12 @@
 class org/quartz/utils/StringKeyDirtyFlagMap
 
+super org/quartz/utils/DirtyFlagMap
+ <Ljava/lang/String;Ljava/lang/Object;>
+ <Ljava/lang/String;Ljava/lang/Object;>
+
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.quartz.utils.DirtyFlagMap)
 getBoolean
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z

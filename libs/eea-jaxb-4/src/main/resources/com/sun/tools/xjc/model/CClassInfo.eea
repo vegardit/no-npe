@@ -1,5 +1,9 @@
 class com/sun/tools/xjc/model/CClassInfo
 
+super org/glassfish/jaxb/core/v2/model/core/ClassInfo
+ <Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;>
+ <Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;>
+
 javadoc
  Ljava/lang/String;
  Ljava/lang/String;
@@ -99,7 +103,7 @@ setUserSpecifiedImplClass
  (Ljava/lang/String;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toType
  (Lcom/sun/tools/xjc/outline/Outline;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JClass;
  (Lcom/sun/tools/xjc/outline/Outline;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JClass;

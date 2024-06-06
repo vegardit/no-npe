@@ -14,16 +14,16 @@ getAttributeNames
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
 getCharacterEncoding
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(javax.servlet.ServletRequest)
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(javax.servlet.ServletRequest)
 getDispatcherType
  ()Ljavax/servlet/DispatcherType;
  ()Ljavax/servlet/DispatcherType;
 getInputStream
  ()Ljavax/servlet/ServletInputStream;
- ()Ljavax/servlet/ServletInputStream;
+ ()L1javax/servlet/ServletInputStream; # @Inherited(javax.servlet.ServletRequest)
 getLocalAddr
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -38,16 +38,16 @@ getLocales
  ()Ljava/util/Enumeration<Ljava/util/Locale;>;
 getParameter
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/String;)L0java/lang/String; # @Inherited(javax.servlet.ServletRequest)
 getParameterMap
  ()Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
- ()Ljava/util/Map<Ljava/lang/String;[Ljava/lang/String;>;
+ ()L1java/util/Map<Ljava/lang/String;[Ljava/lang/String;>; # @Inherited(javax.servlet.ServletRequest)
 getParameterNames
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
- ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()L1java/util/Enumeration<Ljava/lang/String;>; # @Inherited(javax.servlet.ServletRequest)
 getParameterValues
  (Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;)[Ljava/lang/String;
+ (L1java/lang/String;)[0L1java/lang/String; # @Inherited(javax.servlet.ServletRequest)
 getProtocol
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -92,7 +92,7 @@ setAttribute
  (Ljava/lang/String;Ljava/lang/Object;)V
 setCharacterEncoding
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Inherited(javax.servlet.ServletRequest)
 setRequest
  (Ljavax/servlet/ServletRequest;)V
  (Ljavax/servlet/ServletRequest;)V

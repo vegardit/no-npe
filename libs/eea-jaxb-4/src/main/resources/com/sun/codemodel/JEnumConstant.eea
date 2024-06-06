@@ -11,7 +11,7 @@ annotate2
  <W::Lcom/sun/codemodel/JAnnotationWriter<+Ljava/lang/annotation/Annotation;>;>(Ljava/lang/Class<TW;>;)TW;
 annotations
  ()Ljava/util/Collection<Lcom/sun/codemodel/JAnnotationUse;>;
- ()Ljava/util/Collection<Lcom/sun/codemodel/JAnnotationUse;>;
+ ()L1java/util/Collection<L1com/sun/codemodel/JAnnotationUse;>; # @Inherited(com.sun.codemodel.JAnnotatable)
 arg
  (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JEnumConstant;
  (Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JEnumConstant;
@@ -32,4 +32,4 @@ removeAnnotation
  (Lcom/sun/codemodel/JAnnotationUse;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

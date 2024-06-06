@@ -1,5 +1,10 @@
 class org/quartz/impl/matchers/NameMatcher
  <T:Lorg/quartz/utils/Key<*>;>
+ <T:Lorg/quartz/utils/Key<*>;>
+
+super org/quartz/impl/matchers/StringMatcher
+ <TT;>
+ <TT;>
 
 jobNameContains
  (Ljava/lang/String;)Lorg/quartz/impl/matchers/NameMatcher<Lorg/quartz/JobKey;>;
