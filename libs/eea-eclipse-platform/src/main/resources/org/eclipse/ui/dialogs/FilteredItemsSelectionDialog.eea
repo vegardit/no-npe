@@ -14,7 +14,7 @@ addListFilter
  (Lorg/eclipse/jface/viewers/ViewerFilter;)V
 createDialogArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.dialogs.Dialog)
 createExtendedContentArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
@@ -32,7 +32,7 @@ fillViewMenu
  (Lorg/eclipse/jface/action/IMenuManager;)V
 getDialogBoundsSettings
  ()Lorg/eclipse/jface/dialogs/IDialogSettings;
- ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+ ()L0org/eclipse/jface/dialogs/IDialogSettings; # @Inherited(org.eclipse.ui.dialogs.SelectionDialog)
 getDialogSettings
  ()Lorg/eclipse/jface/dialogs/IDialogSettings;
  ()Lorg/eclipse/jface/dialogs/IDialogSettings;

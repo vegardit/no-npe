@@ -1,5 +1,10 @@
 class org/eclipse/core/databinding/observable/map/DecoratingObservableMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super org/eclipse/core/databinding/observable/map/IObservableMap
+ <TK;TV;>
+ <TK;TV;>
 
 <init>
  (Lorg/eclipse/core/databinding/observable/map/IObservableMap<TK;TV;>;Z)V
@@ -18,7 +23,7 @@ entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.eclipse.core.databinding.observable.DecoratingObservable)
 fireMapChange
  (Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;)V
  (Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;)V
@@ -51,7 +56,7 @@ removeMapChangeListener
  (Lorg/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 values
  ()Ljava/util/Collection<TV;>;
  ()Ljava/util/Collection<TV;>;

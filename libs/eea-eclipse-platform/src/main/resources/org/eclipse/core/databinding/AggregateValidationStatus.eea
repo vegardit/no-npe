@@ -1,5 +1,9 @@
 class org/eclipse/core/databinding/AggregateValidationStatus
 
+super org/eclipse/core/databinding/observable/value/ComputedValue
+ <Lorg/eclipse/core/runtime/IStatus;>
+ <Lorg/eclipse/core/runtime/IStatus;>
+
 getStatusMaxSeverity
  (Ljava/util/Collection<+Lorg/eclipse/core/databinding/ValidationStatusProvider;>;)Lorg/eclipse/core/runtime/IStatus;
  (Ljava/util/Collection<+Lorg/eclipse/core/databinding/ValidationStatusProvider;>;)Lorg/eclipse/core/runtime/IStatus;

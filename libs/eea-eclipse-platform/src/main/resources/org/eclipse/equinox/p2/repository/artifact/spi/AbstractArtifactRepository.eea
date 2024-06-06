@@ -1,5 +1,9 @@
 class org/eclipse/equinox/p2/repository/artifact/spi/AbstractArtifactRepository
 
+super org/eclipse/equinox/p2/repository/spi/AbstractRepository
+ <Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>
+ <Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>
+
 <init>
  (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
  (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
@@ -29,7 +33,7 @@ createArtifactKey
  (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/equinox/p2/metadata/Version;)Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 executeBatch
  (Lorg/eclipse/equinox/p2/repository/IRunnableWithProgress;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
  (Lorg/eclipse/equinox/p2/repository/IRunnableWithProgress;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;

@@ -1,5 +1,13 @@
 class com/google/common/collect/ImmutableSortedMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super com/google/common/collect/ImmutableMap
+ <TK;TV;>
+ <TK;TV;>
+super java/util/NavigableMap
+ <TK;TV;>
+ <TK;TV;>
 
 builder
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableSortedMap$Builder<TK;TV;>;
@@ -145,7 +153,7 @@ forEach
  (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
 get
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)T1V;
+ (Ljava/lang/Object;)T1V; # @Inherited(com.google.common.collect.ImmutableMap)
 headMap
  (TK;)Lcom/google/common/collect/ImmutableSortedMap<TK;TV;>;
  (TK;)Lcom/google/common/collect/ImmutableSortedMap<TK;TV;>;

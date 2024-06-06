@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/JsonNode
 
+super java/lang/Iterable
+ <Lcom/fasterxml/jackson/databind/JsonNode;>
+ <Lcom/fasterxml/jackson/databind/JsonNode;>
+
 _at
  (Lcom/fasterxml/jackson/core/JsonPointer;)Lcom/fasterxml/jackson/databind/JsonNode;
  (Lcom/fasterxml/jackson/core/JsonPointer;)Lcom/fasterxml/jackson/databind/JsonNode;
@@ -38,7 +42,7 @@ elements
  ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/JsonNode;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 equals
  (Ljava/util/Comparator<Lcom/fasterxml/jackson/databind/JsonNode;>;Lcom/fasterxml/jackson/databind/JsonNode;)Z
  (Ljava/util/Comparator<Lcom/fasterxml/jackson/databind/JsonNode;>;Lcom/fasterxml/jackson/databind/JsonNode;)Z
@@ -131,7 +135,7 @@ toPrettyString
  ()L1java/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 with
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(Ljava/lang/String;)TT;
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(Ljava/lang/String;)TT;

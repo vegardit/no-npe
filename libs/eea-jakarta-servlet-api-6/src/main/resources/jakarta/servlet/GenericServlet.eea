@@ -8,19 +8,19 @@ getInitParameterNames
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
 getServletConfig
  ()Ljakarta/servlet/ServletConfig;
- ()Ljakarta/servlet/ServletConfig;
+ ()L0jakarta/servlet/ServletConfig; # @Inherited(jakarta.servlet.Servlet)
 getServletContext
  ()Ljakarta/servlet/ServletContext;
  ()Ljakarta/servlet/ServletContext;
 getServletInfo
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(jakarta.servlet.Servlet)
 getServletName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 init
  (Ljakarta/servlet/ServletConfig;)V
- (Ljakarta/servlet/ServletConfig;)V
+ (L0jakarta/servlet/ServletConfig;)V # @Inherited(jakarta.servlet.Servlet)
 log
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -29,4 +29,4 @@ log
  (Ljava/lang/String;Ljava/lang/Throwable;)V
 service
  (Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V
- (Ljakarta/servlet/ServletRequest;Ljakarta/servlet/ServletResponse;)V
+ (L1jakarta/servlet/ServletRequest;L1jakarta/servlet/ServletResponse;)V # @Inherited(jakarta.servlet.Servlet)

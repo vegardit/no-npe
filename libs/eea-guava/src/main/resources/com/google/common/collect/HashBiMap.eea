@@ -1,5 +1,13 @@
 class com/google/common/collect/HashBiMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super com/google/common/collect/Maps$IteratorBasedAbstractMap
+ <TK;TV;>
+ <TK;TV;>
+super com/google/common/collect/BiMap
+ <TK;TV;>
+ <TK;TV;>
 
 create
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>()Lcom/google/common/collect/HashBiMap<TK;TV;>;
@@ -22,7 +30,7 @@ forEach
  (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
 forcePut
  (TK;TV;)TV;
- (TK;TV;)T1V;
+ (TK;TV;)T1V; # @Inherited(com.google.common.collect.BiMap)
 get
  (Ljava/lang/Object;)TV;
  (Ljava/lang/Object;)T1V;
@@ -34,7 +42,7 @@ keySet
  ()Ljava/util/Set<TK;>;
 put
  (TK;TV;)TV;
- (TK;TV;)T1V;
+ (TK;TV;)T1V; # @Inherited(com.google.common.collect.BiMap)
 remove
  (Ljava/lang/Object;)TV;
  (Ljava/lang/Object;)T1V;

@@ -1,5 +1,10 @@
 class com/google/common/collect/ImmutableMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super java/util/Map
+ <TK;TV;>
+ <TK;TV;>
 
 builder
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableMap$Builder<TK;TV;>;
@@ -79,7 +84,7 @@ entrySet
  ()Lcom/google/common/collect/ImmutableSet<Ljava/util/Map$Entry<TK;TV;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (Ljava/lang/Object;)TV;
  (Ljava/lang/Object;)T1V;
@@ -118,7 +123,7 @@ replaceAll
  (Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 values
  ()Lcom/google/common/collect/ImmutableCollection<TV;>;
  ()Lcom/google/common/collect/ImmutableCollection<TV;>;

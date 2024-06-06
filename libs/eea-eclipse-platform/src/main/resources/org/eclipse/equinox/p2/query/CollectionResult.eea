@@ -1,5 +1,10 @@
 class org/eclipse/equinox/p2/query/CollectionResult
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/eclipse/equinox/p2/query/IQueryResult
+ <TT;>
+ <TT;>
 
 <init>
  (Ljava/util/Collection<TT;>;)V
@@ -21,7 +26,7 @@ toSet
  ()Ljava/util/Set<TT;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toUnmodifiableSet
  ()Ljava/util/Set<TT;>;
  ()Ljava/util/Set<TT;>;

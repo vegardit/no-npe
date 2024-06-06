@@ -30,19 +30,19 @@ openWarning
  (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/String;Lorg/eclipse/swt/graphics/Image;Ljava/lang/String;I[Ljava/lang/String;I)V
 configureShell
  (Lorg/eclipse/swt/widgets/Shell;)V
- (L1org/eclipse/swt/widgets/Shell;)V
+ (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)
 createButton
  (Lorg/eclipse/swt/widgets/Composite;ILjava/lang/String;Z)Lorg/eclipse/swt/widgets/Button;
- (L1org/eclipse/swt/widgets/Composite;ILjava/lang/String;Z)Lorg/eclipse/swt/widgets/Button;
+ (L1org/eclipse/swt/widgets/Composite;IL1java/lang/String;Z)L1org/eclipse/swt/widgets/Button; # @Inherited(org.eclipse.jface.dialogs.Dialog)
 createButtonsForButtonBar
  (Lorg/eclipse/swt/widgets/Composite;)V
- (L1org/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.dialogs.Dialog)
 createCustomArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
  (L1org/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
 createDialogArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (L1org/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.dialogs.Dialog)
 getButton
  (I)Lorg/eclipse/swt/widgets/Button;
  (I)Lorg/eclipse/swt/widgets/Button;

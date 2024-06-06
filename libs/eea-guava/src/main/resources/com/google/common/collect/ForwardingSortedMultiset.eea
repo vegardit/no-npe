@@ -1,5 +1,13 @@
 class com/google/common/collect/ForwardingSortedMultiset
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super com/google/common/collect/ForwardingMultiset
+ <TE;>
+ <TE;>
+super com/google/common/collect/SortedMultiset
+ <TE;>
+ <TE;>
 
 comparator
  ()Ljava/util/Comparator<-TE;>;
@@ -15,19 +23,19 @@ elementSet
  ()Ljava/util/NavigableSet<TE;>;
 firstEntry
  ()Lcom/google/common/collect/Multiset$Entry<TE;>;
- ()L1com/google/common/collect/Multiset$Entry<TE;>;
+ ()L1com/google/common/collect/Multiset$Entry<TE;>; # @Inherited(com.google.common.collect.SortedMultiset)
 headMultiset
  (TE;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/SortedMultiset<TE;>;
  (TE;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/SortedMultiset<TE;>;
 lastEntry
  ()Lcom/google/common/collect/Multiset$Entry<TE;>;
- ()L1com/google/common/collect/Multiset$Entry<TE;>;
+ ()L1com/google/common/collect/Multiset$Entry<TE;>; # @Inherited(com.google.common.collect.SortedMultiset)
 pollFirstEntry
  ()Lcom/google/common/collect/Multiset$Entry<TE;>;
- ()L1com/google/common/collect/Multiset$Entry<TE;>;
+ ()L1com/google/common/collect/Multiset$Entry<TE;>; # @Inherited(com.google.common.collect.SortedMultiset)
 pollLastEntry
  ()Lcom/google/common/collect/Multiset$Entry<TE;>;
- ()L1com/google/common/collect/Multiset$Entry<TE;>;
+ ()L1com/google/common/collect/Multiset$Entry<TE;>; # @Inherited(com.google.common.collect.SortedMultiset)
 standardFirstEntry
  ()Lcom/google/common/collect/Multiset$Entry<TE;>;
  ()L1com/google/common/collect/Multiset$Entry<TE;>;

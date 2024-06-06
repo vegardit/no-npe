@@ -1,5 +1,13 @@
 class com/google/common/collect/ForwardingSortedSet
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super com/google/common/collect/ForwardingSet
+ <TE;>
+ <TE;>
+super java/util/SortedSet
+ <TE;>
+ <TE;>
 
 comparator
  ()Ljava/util/Comparator<-TE;>;

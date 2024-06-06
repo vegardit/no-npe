@@ -124,7 +124,7 @@ setFeatureMask
  (I)Lcom/fasterxml/jackson/core/JsonGenerator;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 useDefaultPrettyPrinter
  ()Lcom/fasterxml/jackson/core/JsonGenerator;
  ()Lcom/fasterxml/jackson/core/JsonGenerator;
@@ -157,7 +157,7 @@ writeNumber
  (Ljava/math/BigInteger;)V
 writeObject
  (Ljava/lang/Object;)V
- (L1java/lang/Object;)V
+ (L1java/lang/Object;)V # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 writeObjectId
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V

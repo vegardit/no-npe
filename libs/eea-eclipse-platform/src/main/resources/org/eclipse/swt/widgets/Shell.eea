@@ -30,10 +30,10 @@ getMinimumSize
  ()Lorg/eclipse/swt/graphics/Point;
 getRegion
  ()Lorg/eclipse/swt/graphics/Region;
- ()Lorg/eclipse/swt/graphics/Region;
+ ()L0org/eclipse/swt/graphics/Region; # @Inherited(org.eclipse.swt.widgets.Control)
 getShell
  ()Lorg/eclipse/swt/widgets/Shell;
- ()Lorg/eclipse/swt/widgets/Shell;
+ ()L1org/eclipse/swt/widgets/Shell; # @Inherited(org.eclipse.swt.widgets.Control)
 getShells
  ()[Lorg/eclipse/swt/widgets/Shell;
  ()[Lorg/eclipse/swt/widgets/Shell;
@@ -42,7 +42,7 @@ getToolBar
  ()Lorg/eclipse/swt/widgets/ToolBar;
 print
  (Lorg/eclipse/swt/graphics/GC;)Z
- (Lorg/eclipse/swt/graphics/GC;)Z
+ (L1org/eclipse/swt/graphics/GC;)Z # @Inherited(org.eclipse.swt.widgets.Control)
 removeShellListener
  (Lorg/eclipse/swt/events/ShellListener;)V
  (Lorg/eclipse/swt/events/ShellListener;)V
@@ -54,4 +54,4 @@ setMinimumSize
  (Lorg/eclipse/swt/graphics/Point;)V
 setRegion
  (Lorg/eclipse/swt/graphics/Region;)V
- (Lorg/eclipse/swt/graphics/Region;)V
+ (L0org/eclipse/swt/graphics/Region;)V # @Inherited(org.eclipse.swt.widgets.Control)

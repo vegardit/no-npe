@@ -1,5 +1,13 @@
 class com/google/common/collect/ForwardingConcurrentMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super com/google/common/collect/ForwardingMap
+ <TK;TV;>
+ <TK;TV;>
+super java/util/concurrent/ConcurrentMap
+ <TK;TV;>
+ <TK;TV;>
 
 delegate
  ()Ljava/util/concurrent/ConcurrentMap<TK;TV;>;

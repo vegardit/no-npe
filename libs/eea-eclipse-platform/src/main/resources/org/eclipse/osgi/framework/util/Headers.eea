@@ -1,5 +1,13 @@
 class org/eclipse/osgi/framework/util/Headers
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super java/util/Dictionary
+ <TK;TV;>
+ <TK;TV;>
+super java/util/Map
+ <TK;TV;>
+ <TK;TV;>
 
 parseManifest
  (Ljava/io/InputStream;)Lorg/eclipse/osgi/framework/util/Headers<Ljava/lang/String;Ljava/lang/String;>;
@@ -46,7 +54,7 @@ set
  (TK;TV;Z)TV;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 values
  ()Ljava/util/Collection<TV;>;
  ()Ljava/util/Collection<TV;>;

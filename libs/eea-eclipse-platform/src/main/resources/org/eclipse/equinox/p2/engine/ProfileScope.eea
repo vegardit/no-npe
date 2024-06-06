@@ -9,13 +9,13 @@ SCOPE
  (Lorg/eclipse/equinox/p2/core/IAgentLocation;Ljava/lang/String;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getLocation
  ()Lorg/eclipse/core/runtime/IPath;
- ()Lorg/eclipse/core/runtime/IPath;
+ ()L0org/eclipse/core/runtime/IPath; # @Inherited(org.eclipse.core.runtime.preferences.IScopeContext)
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.core.runtime.preferences.IScopeContext)
 getNode
  (Ljava/lang/String;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
- (Ljava/lang/String;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ (L1java/lang/String;)Lorg/eclipse/core/runtime/preferences/IEclipsePreferences; # @Inherited(org.eclipse.core.runtime.preferences.IScopeContext)

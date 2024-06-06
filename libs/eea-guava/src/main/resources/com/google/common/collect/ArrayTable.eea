@@ -1,5 +1,10 @@
 class com/google/common/collect/ArrayTable
  <R:Ljava/lang/Object;C:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <R:Ljava/lang/Object;C:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super com/google/common/collect/AbstractTable
+ <TR;TC;TV;>
+ <TR;TC;TV;>
 
 create
  <R:Ljava/lang/Object;C:Ljava/lang/Object;V:Ljava/lang/Object;>(Lcom/google/common/collect/Table<TR;TC;+TV;>;)Lcom/google/common/collect/ArrayTable<TR;TC;TV;>;
@@ -43,16 +48,16 @@ erase
  (Ljava/lang/Object;Ljava/lang/Object;)T1V;
 get
  (Ljava/lang/Object;Ljava/lang/Object;)TV;
- (Ljava/lang/Object;Ljava/lang/Object;)T1V;
+ (Ljava/lang/Object;Ljava/lang/Object;)T1V; # @Overrides(com.google.common.collect.Table)
 put
  (TR;TC;TV;)TV;
- (TR;TC;TV;)T1V;
+ (TR;TC;TV;)T1V; # @Inherited(com.google.common.collect.Table)
 putAll
  (Lcom/google/common/collect/Table<+TR;+TC;+TV;>;)V
  (Lcom/google/common/collect/Table<+TR;+TC;+TV;>;)V
 remove
  (Ljava/lang/Object;Ljava/lang/Object;)TV;
- (Ljava/lang/Object;Ljava/lang/Object;)T1V;
+ (Ljava/lang/Object;Ljava/lang/Object;)T1V; # @Overrides(com.google.common.collect.Table)
 row
  (TR;)Ljava/util/Map<TC;TV;>;
  (TR;)Ljava/util/Map<TC;TV;>;

@@ -5,13 +5,13 @@ class org/eclipse/ui/dialogs/NewFolderDialog
  (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/core/resources/IContainer;)V
 configureShell
  (Lorg/eclipse/swt/widgets/Shell;)V
- (Lorg/eclipse/swt/widgets/Shell;)V
+ (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.ui.dialogs.SelectionStatusDialog)
 createAdvancedControls
  (Lorg/eclipse/swt/widgets/Composite;)V
  (Lorg/eclipse/swt/widgets/Composite;)V
 createDialogArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.dialogs.Dialog)
 updateStatus
  (Lorg/eclipse/core/runtime/IStatus;)V
  (Lorg/eclipse/core/runtime/IStatus;)V

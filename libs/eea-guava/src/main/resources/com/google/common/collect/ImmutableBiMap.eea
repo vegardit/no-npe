@@ -1,5 +1,13 @@
 class com/google/common/collect/ImmutableBiMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super com/google/common/collect/ImmutableMap
+ <TK;TV;>
+ <TK;TV;>
+super com/google/common/collect/BiMap
+ <TK;TV;>
+ <TK;TV;>
 
 builder
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableBiMap$Builder<TK;TV;>;
@@ -61,7 +69,7 @@ toImmutableMap
 
 forcePut
  (TK;TV;)TV;
- (TK;TV;)T1V;
+ (TK;TV;)T1V; # @Inherited(com.google.common.collect.BiMap)
 inverse
  ()Lcom/google/common/collect/ImmutableBiMap<TV;TK;>;
  ()Lcom/google/common/collect/ImmutableBiMap<TV;TK;>;

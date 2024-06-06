@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/deser/std/EnumDeserializer
 
+super com/fasterxml/jackson/databind/deser/std/StdScalarDeserializer
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 deserializerForCreator
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
@@ -67,7 +71,7 @@ deserialize
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
 getEmptyValue
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (L1com/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
 logicalType
  ()Lcom/fasterxml/jackson/databind/type/LogicalType;
  ()Lcom/fasterxml/jackson/databind/type/LogicalType;

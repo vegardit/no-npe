@@ -104,7 +104,7 @@ getStructuredSelection
  ()Lorg/eclipse/jface/viewers/IStructuredSelection;
 handleDispose
  (Lorg/eclipse/swt/events/DisposeEvent;)V
- (Lorg/eclipse/swt/events/DisposeEvent;)V
+ (L1org/eclipse/swt/events/DisposeEvent;)V # @Inherited(org.eclipse.jface.viewers.ContentViewer)
 handleDoubleSelect
  (Lorg/eclipse/swt/events/SelectionEvent;)V
  (Lorg/eclipse/swt/events/SelectionEvent;)V
@@ -113,7 +113,7 @@ handleInvalidSelection
  (Lorg/eclipse/jface/viewers/ISelection;Lorg/eclipse/jface/viewers/ISelection;)V
 handleLabelProviderChanged
  (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
- (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
+ (L1org/eclipse/jface/viewers/LabelProviderChangedEvent;)V # @Inherited(org.eclipse.jface.viewers.ContentViewer)
 handleOpen
  (Lorg/eclipse/swt/events/SelectionEvent;)V
  (Lorg/eclipse/swt/events/SelectionEvent;)V
@@ -125,7 +125,7 @@ handleSelect
  (Lorg/eclipse/swt/events/SelectionEvent;)V
 hookControl
  (Lorg/eclipse/swt/widgets/Control;)V
- (Lorg/eclipse/swt/widgets/Control;)V
+ (L1org/eclipse/swt/widgets/Control;)V # @Inherited(org.eclipse.jface.viewers.ContentViewer)
 internalRefresh
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
@@ -176,16 +176,16 @@ setComparer
  (Lorg/eclipse/jface/viewers/IElementComparer;)V
 setContentProvider
  (Lorg/eclipse/jface/viewers/IContentProvider;)V
- (Lorg/eclipse/jface/viewers/IContentProvider;)V
+ (L1org/eclipse/jface/viewers/IContentProvider;)V # @Inherited(org.eclipse.jface.viewers.ContentViewer)
 setFilters
  ([Lorg/eclipse/jface/viewers/ViewerFilter;)V
  ([Lorg/eclipse/jface/viewers/ViewerFilter;)V
 setInput
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L0java/lang/Object;)V # @Inherited(org.eclipse.jface.viewers.ContentViewer)
 setLabelProvider
  (Lorg/eclipse/jface/viewers/IBaseLabelProvider;)V
- (Lorg/eclipse/jface/viewers/IBaseLabelProvider;)V
+ (L0org/eclipse/jface/viewers/IBaseLabelProvider;)V # @Inherited(org.eclipse.jface.viewers.ContentViewer)
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;Z)V
  (Lorg/eclipse/jface/viewers/ISelection;Z)V

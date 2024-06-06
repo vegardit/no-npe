@@ -1,5 +1,6 @@
 class com/google/common/base/Optional
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
 
 absent
  <T:Ljava/lang/Object;>()Lcom/google/common/base/Optional<TT;>;
@@ -25,7 +26,7 @@ asSet
  ()L1java/util/Set<TT;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  ()TT;
  ()T1T;
@@ -46,7 +47,7 @@ toJavaUtil
  ()L1java/util/Optional<TT;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 transform
  <V:Ljava/lang/Object;>(Lcom/google/common/base/Function<-TT;TV;>;)Lcom/google/common/base/Optional<TV;>;
  <V:Ljava/lang/Object;>(L1com/google/common/base/Function<-TT;TV;>;)L1com/google/common/base/Optional<TV;>;

@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/node/ObjectNode
 
+super com/fasterxml/jackson/databind/node/ContainerNode
+ <Lcom/fasterxml/jackson/databind/node/ObjectNode;>
+ <Lcom/fasterxml/jackson/databind/node/ObjectNode;>
+
 _children
  Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;
  Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;
@@ -45,7 +49,7 @@ elements
  ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/JsonNode;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(com.fasterxml.jackson.databind.JsonNode)
 equals
  (Ljava/util/Comparator<Lcom/fasterxml/jackson/databind/JsonNode;>;Lcom/fasterxml/jackson/databind/JsonNode;)Z
  (Ljava/util/Comparator<Lcom/fasterxml/jackson/databind/JsonNode;>;Lcom/fasterxml/jackson/databind/JsonNode;)Z

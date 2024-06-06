@@ -5,10 +5,10 @@ class org/eclipse/jface/commands/ActionHandler
  (Lorg/eclipse/jface/action/IAction;)V
 addHandlerListener
  (Lorg/eclipse/core/commands/IHandlerListener;)V
- (Lorg/eclipse/core/commands/IHandlerListener;)V
+ (L1org/eclipse/core/commands/IHandlerListener;)V # @Inherited(org.eclipse.core.commands.AbstractHandler)
 execute
  (Lorg/eclipse/core/commands/ExecutionEvent;)Ljava/lang/Object;
- (Lorg/eclipse/core/commands/ExecutionEvent;)Ljava/lang/Object;
+ (L1org/eclipse/core/commands/ExecutionEvent;)L0java/lang/Object; # @Inherited(org.eclipse.core.commands.IHandler)
 getAction
  ()Lorg/eclipse/jface/action/IAction;
  ()Lorg/eclipse/jface/action/IAction;
@@ -17,7 +17,7 @@ getHandlerLabel
  ()Ljava/lang/String;
 removeHandlerListener
  (Lorg/eclipse/core/commands/IHandlerListener;)V
- (Lorg/eclipse/core/commands/IHandlerListener;)V
+ (L1org/eclipse/core/commands/IHandlerListener;)V # @Inherited(org.eclipse.core.commands.AbstractHandler)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

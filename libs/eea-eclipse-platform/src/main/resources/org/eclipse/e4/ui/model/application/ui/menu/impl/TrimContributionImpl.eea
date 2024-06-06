@@ -1,5 +1,9 @@
 class org/eclipse/e4/ui/model/application/ui/menu/impl/TrimContributionImpl
 
+super org/eclipse/e4/ui/model/application/ui/impl/ElementContainerImpl
+ <Lorg/eclipse/e4/ui/model/application/ui/basic/MTrimElement;>
+ <Lorg/eclipse/e4/ui/model/application/ui/basic/MTrimElement;>
+
 PARENT_ID_EDEFAULT
  Ljava/lang/String;
  L1java/lang/String;
@@ -43,4 +47,4 @@ setSelectedElement
  (Lorg/eclipse/e4/ui/model/application/ui/basic/MTrimElement;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl)

@@ -1,5 +1,10 @@
 class com/google/common/collect/EvictingQueue
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super com/google/common/collect/ForwardingQueue
+ <TE;>
+ <TE;>
 
 create
  <E:Ljava/lang/Object;>(I)Lcom/google/common/collect/EvictingQueue<TE;>;

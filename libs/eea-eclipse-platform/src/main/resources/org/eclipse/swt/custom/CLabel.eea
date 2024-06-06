@@ -5,7 +5,7 @@ class org/eclipse/swt/custom/CLabel
  (Lorg/eclipse/swt/widgets/Composite;I)V
 computeSize
  (IIZ)Lorg/eclipse/swt/graphics/Point;
- (IIZ)Lorg/eclipse/swt/graphics/Point;
+ (IIZ)L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.swt.widgets.Control)
 getImage
  ()Lorg/eclipse/swt/graphics/Image;
  ()Lorg/eclipse/swt/graphics/Image;
@@ -14,10 +14,10 @@ getText
  ()Ljava/lang/String;
 getToolTipText
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.swt.widgets.Control)
 setBackground
  (Lorg/eclipse/swt/graphics/Color;)V
- (Lorg/eclipse/swt/graphics/Color;)V
+ (L0org/eclipse/swt/graphics/Color;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setBackground
  (Lorg/eclipse/swt/graphics/Image;)V
  (Lorg/eclipse/swt/graphics/Image;)V
@@ -29,7 +29,7 @@ setBackground
  ([Lorg/eclipse/swt/graphics/Color;[IZ)V
 setFont
  (Lorg/eclipse/swt/graphics/Font;)V
- (Lorg/eclipse/swt/graphics/Font;)V
+ (L0org/eclipse/swt/graphics/Font;)V # @Inherited(org.eclipse.swt.widgets.Canvas)
 setImage
  (Lorg/eclipse/swt/graphics/Image;)V
  (Lorg/eclipse/swt/graphics/Image;)V
@@ -38,7 +38,7 @@ setText
  (Ljava/lang/String;)V
 setToolTipText
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Inherited(org.eclipse.swt.widgets.Control)
 shortenText
  (Lorg/eclipse/swt/graphics/GC;Ljava/lang/String;I)Ljava/lang/String;
  (Lorg/eclipse/swt/graphics/GC;Ljava/lang/String;I)Ljava/lang/String;

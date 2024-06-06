@@ -1,5 +1,13 @@
 class com/google/common/collect/ImmutableList
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super com/google/common/collect/ImmutableCollection
+ <TE;>
+ <TE;>
+super java/util/List
+ <TE;>
+ <TE;>
 
 builder
  <E:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableList$Builder<TE;>;
@@ -76,13 +84,13 @@ addAll
  (ILjava/util/Collection<+TE;>;)Z
 asList
  ()Lcom/google/common/collect/ImmutableList<TE;>;
- ()Lcom/google/common/collect/ImmutableList<TE;>;
+ ()L1com/google/common/collect/ImmutableList<TE;>; # @Inherited(com.google.common.collect.ImmutableCollection)
 contains
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 forEach
  (Ljava/util/function/Consumer<-TE;>;)V
  (Ljava/util/function/Consumer<-TE;>;)V

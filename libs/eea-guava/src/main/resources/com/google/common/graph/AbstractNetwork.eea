@@ -1,5 +1,10 @@
 class com/google/common/graph/AbstractNetwork
  <N:Ljava/lang/Object;E:Ljava/lang/Object;>
+ <N:Ljava/lang/Object;E:Ljava/lang/Object;>
+
+super com/google/common/graph/Network
+ <TN;TE;>
+ <TN;TE;>
 
 adjacentEdges
  (TE;)Ljava/util/Set<TE;>;
@@ -18,10 +23,10 @@ edgeConnecting
  (TN;TN;)Ljava/util/Optional<TE;>;
 edgeConnectingOrNull
  (Lcom/google/common/graph/EndpointPair<TN;>;)TE;
- (Lcom/google/common/graph/EndpointPair<TN;>;)T1E;
+ (Lcom/google/common/graph/EndpointPair<TN;>;)T1E; # @Inherited(com.google.common.graph.Network)
 edgeConnectingOrNull
  (TN;TN;)TE;
- (TN;TN;)T1E;
+ (TN;TN;)T1E; # @Inherited(com.google.common.graph.Network)
 edgeInvalidatableSet
  <T:Ljava/lang/Object;>(Ljava/util/Set<TT;>;TE;)Ljava/util/Set<TT;>;
  <T:Ljava/lang/Object;>(Ljava/util/Set<TT;>;TE;)Ljava/util/Set<TT;>;
@@ -33,7 +38,7 @@ edgesConnecting
  (TN;TN;)Ljava/util/Set<TE;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 hasEdgeConnecting
  (Lcom/google/common/graph/EndpointPair<TN;>;)Z
  (Lcom/google/common/graph/EndpointPair<TN;>;)Z
@@ -57,7 +62,7 @@ outDegree
  (TN;)I
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 validateEndpoints
  (Lcom/google/common/graph/EndpointPair<*>;)V
  (Lcom/google/common/graph/EndpointPair<*>;)V

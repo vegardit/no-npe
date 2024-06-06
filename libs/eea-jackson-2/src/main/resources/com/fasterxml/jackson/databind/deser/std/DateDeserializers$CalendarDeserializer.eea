@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/deser/std/DateDeserializers$CalendarDeserializer
 
+super com/fasterxml/jackson/databind/deser/std/DateDeserializers$DateBasedDeserializer
+ <Ljava/util/Calendar;>
+ <Ljava/util/Calendar;>
+
 _defaultCtor
  Ljava/lang/reflect/Constructor<Ljava/util/Calendar;>;
  Ljava/lang/reflect/Constructor<Ljava/util/Calendar;>;
@@ -15,7 +19,7 @@ deserialize
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/util/Calendar;
 getEmptyValue
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (L1com/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
 withDateFormat
  (Ljava/text/DateFormat;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/deser/std/DateDeserializers$CalendarDeserializer;
  (Ljava/text/DateFormat;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/deser/std/DateDeserializers$CalendarDeserializer;

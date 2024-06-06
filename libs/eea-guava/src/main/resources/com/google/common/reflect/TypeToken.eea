@@ -1,5 +1,10 @@
 class com/google/common/reflect/TypeToken
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super com/google/common/reflect/TypeCapture
+ <TT;>
+ <TT;>
 
 of
  (Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken<*>;
@@ -16,7 +21,7 @@ constructor
  (Ljava/lang/reflect/Constructor<*>;)Lcom/google/common/reflect/Invokable<TT;TT;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getComponentType
  ()Lcom/google/common/reflect/TypeToken<*>;
  ()L1com/google/common/reflect/TypeToken<*>;
@@ -55,7 +60,7 @@ resolveType
  (Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken<*>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 unwrap
  ()Lcom/google/common/reflect/TypeToken<TT;>;
  ()Lcom/google/common/reflect/TypeToken<TT;>;

@@ -74,10 +74,10 @@ getSelectionFromWidget
  ()Ljava/util/List;
 handleDispose
  (Lorg/eclipse/swt/events/DisposeEvent;)V
- (Lorg/eclipse/swt/events/DisposeEvent;)V
+ (L1org/eclipse/swt/events/DisposeEvent;)V # @Inherited(org.eclipse.jface.viewers.ColumnViewer)
 hookControl
  (Lorg/eclipse/swt/widgets/Control;)V
- (Lorg/eclipse/swt/widgets/Control;)V
+ (L1org/eclipse/swt/widgets/Control;)V # @Inherited(org.eclipse.jface.viewers.ColumnViewer)
 indexForElement
  (Ljava/lang/Object;)I
  (Ljava/lang/Object;)I
@@ -110,7 +110,7 @@ reveal
  (Ljava/lang/Object;)V
 setContentProvider
  (Lorg/eclipse/jface/viewers/IContentProvider;)V
- (Lorg/eclipse/jface/viewers/IContentProvider;)V
+ (L1org/eclipse/jface/viewers/IContentProvider;)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 setSelectionToWidget
  (Ljava/util/List;Z)V
  (Ljava/util/List;Z)V

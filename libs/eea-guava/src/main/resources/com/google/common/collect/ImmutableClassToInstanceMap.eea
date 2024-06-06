@@ -1,5 +1,13 @@
 class com/google/common/collect/ImmutableClassToInstanceMap
  <B:Ljava/lang/Object;>
+ <B:Ljava/lang/Object;>
+
+super com/google/common/collect/ForwardingMap
+ <Ljava/lang/Class<+TB;>;TB;>
+ <Ljava/lang/Class<+TB;>;TB;>
+super com/google/common/collect/ClassToInstanceMap
+ <TB;>
+ <TB;>
 
 builder
  <B:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableClassToInstanceMap$Builder<TB;>;
@@ -19,7 +27,7 @@ delegate
  ()Ljava/util/Map<Ljava/lang/Class<+TB;>;TB;>;
 getInstance
  <T:TB;>(Ljava/lang/Class<TT;>;)TT;
- <T:TB;>(Ljava/lang/Class<TT;>;)T1T;
+ <T:TB;>(Ljava/lang/Class<TT;>;)T1T; # @Inherited(com.google.common.collect.ClassToInstanceMap)
 putInstance
  <T:TB;>(Ljava/lang/Class<TT;>;TT;)TT;
- <T:TB;>(Ljava/lang/Class<TT;>;TT;)T1T;
+ <T:TB;>(Ljava/lang/Class<TT;>;TT;)T1T; # @Inherited(com.google.common.collect.ClassToInstanceMap)

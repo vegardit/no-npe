@@ -58,7 +58,7 @@ annotations
  ()Ljava/lang/Iterable<Ljava/lang/annotation/Annotation;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(com.fasterxml.jackson.databind.introspect.Annotated)
 fields
  ()Ljava/lang/Iterable<Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;>;
  ()Ljava/lang/Iterable<Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;>;
@@ -109,4 +109,4 @@ resolveType
  (Ljava/lang/reflect/Type;)Lcom/fasterxml/jackson/databind/JavaType;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(com.fasterxml.jackson.databind.introspect.Annotated)

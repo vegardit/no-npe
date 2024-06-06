@@ -1,5 +1,13 @@
 class org/eclipse/core/databinding/observable/list/AbstractObservableList
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/AbstractList
+ <TE;>
+ <TE;>
+super org/eclipse/core/databinding/observable/list/IObservableList
+ <TE;>
+ <TE;>
 
 <init>
  (Lorg/eclipse/core/databinding/observable/Realm;)V
@@ -33,7 +41,7 @@ containsAll
  (Ljava/util/Collection<*>;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 fireListChange
  (Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V
  (Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V

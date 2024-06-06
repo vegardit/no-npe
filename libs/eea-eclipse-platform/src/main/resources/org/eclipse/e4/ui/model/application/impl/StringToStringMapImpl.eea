@@ -1,5 +1,9 @@
 class org/eclipse/e4/ui/model/application/impl/StringToStringMapImpl
 
+super org/eclipse/emf/common/util/BasicEMap$Entry
+ <Ljava/lang/String;Ljava/lang/String;>
+ <Ljava/lang/String;Ljava/lang/String;>
+
 KEY_EDEFAULT
  Ljava/lang/String;
  L1java/lang/String;
@@ -52,4 +56,4 @@ setValue
  (Ljava/lang/String;)Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

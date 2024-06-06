@@ -2,7 +2,7 @@ class org/eclipse/debug/ui/actions/DebugCommandHandler
 
 execute
  (Lorg/eclipse/core/commands/ExecutionEvent;)Ljava/lang/Object;
- (Lorg/eclipse/core/commands/ExecutionEvent;)Ljava/lang/Object;
+ (L1org/eclipse/core/commands/ExecutionEvent;)L0java/lang/Object; # @Inherited(org.eclipse.core.commands.IHandler)
 getCommandType
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
@@ -11,4 +11,4 @@ postExecute
  (Lorg/eclipse/debug/core/IRequest;[Ljava/lang/Object;)V
 setEnabled
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L0java/lang/Object;)V # @Inherited(org.eclipse.core.commands.AbstractHandler)

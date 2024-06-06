@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap
 
+super java/lang/Iterable
+ <Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>
+ <Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>
+
 construct
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lcom/fasterxml/jackson/databind/PropertyName;>;>;)Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lcom/fasterxml/jackson/databind/PropertyName;>;>;)Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;
@@ -57,7 +61,7 @@ replace
  (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 withCaseInsensitivity
  (Z)Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;
  (Z)Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;

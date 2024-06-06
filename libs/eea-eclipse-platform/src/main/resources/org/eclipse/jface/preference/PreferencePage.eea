@@ -23,7 +23,7 @@ createContents
  (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control;
 createControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (L1org/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.dialogs.IDialogPage)
 createDescriptionLabel
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Label;
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Label;
@@ -68,4 +68,4 @@ setTitle
  (Ljava/lang/String;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

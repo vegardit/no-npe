@@ -15,7 +15,7 @@ createDefaultPage
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
 createPartControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.PageBookView)
 doCreatePage
  (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
  (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
@@ -24,7 +24,7 @@ doDestroyPage
  (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.part.PageBookView)
 getBootstrapPart
  ()Lorg/eclipse/ui/IWorkbenchPart;
  ()Lorg/eclipse/ui/IWorkbenchPart;
@@ -42,7 +42,7 @@ removeSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
 selectionChanged
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
- (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
+ (L1org/eclipse/jface/viewers/SelectionChangedEvent;)V # @Inherited(org.eclipse.jface.viewers.ISelectionChangedListener)
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;)V
  (Lorg/eclipse/jface/viewers/ISelection;)V

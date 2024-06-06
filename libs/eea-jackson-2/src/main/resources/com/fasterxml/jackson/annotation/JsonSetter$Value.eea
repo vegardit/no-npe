@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/annotation/JsonSetter$Value
 
+super com/fasterxml/jackson/annotation/JacksonAnnotationValue
+ <Lcom/fasterxml/jackson/annotation/JsonSetter;>
+ <Lcom/fasterxml/jackson/annotation/JsonSetter;>
+
 EMPTY
  Lcom/fasterxml/jackson/annotation/JsonSetter$Value;
  L1com/fasterxml/jackson/annotation/JsonSetter$Value;
@@ -31,7 +35,7 @@ merge
  (Lcom/fasterxml/jackson/annotation/Nulls;Lcom/fasterxml/jackson/annotation/Nulls;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getContentNulls
  ()Lcom/fasterxml/jackson/annotation/Nulls;
  ()Lcom/fasterxml/jackson/annotation/Nulls;
@@ -49,7 +53,7 @@ readResolve
  ()L1java/lang/Object;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 valueFor
  ()Ljava/lang/Class<Lcom/fasterxml/jackson/annotation/JsonSetter;>;
  ()Ljava/lang/Class<Lcom/fasterxml/jackson/annotation/JsonSetter;>;

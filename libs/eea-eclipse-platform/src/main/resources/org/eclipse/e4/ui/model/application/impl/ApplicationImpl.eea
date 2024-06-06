@@ -1,5 +1,9 @@
 class org/eclipse/e4/ui/model/application/impl/ApplicationImpl
 
+super org/eclipse/e4/ui/model/application/ui/impl/ElementContainerImpl
+ <Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;>
+ <Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;>
+
 CONTEXT_EDEFAULT
  Lorg/eclipse/e4/core/contexts/IEclipseContext;
  L1org/eclipse/e4/core/contexts/IEclipseContext;
@@ -133,4 +137,4 @@ setSelectedElement
  (Lorg/eclipse/e4/ui/model/application/ui/basic/MWindow;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl)

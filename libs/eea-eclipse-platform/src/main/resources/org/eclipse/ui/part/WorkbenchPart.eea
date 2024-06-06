@@ -5,19 +5,19 @@ addPartPropertyListener
  (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
 addPropertyListener
  (Lorg/eclipse/ui/IPropertyListener;)V
- (Lorg/eclipse/ui/IPropertyListener;)V
+ (L1org/eclipse/ui/IPropertyListener;)V # @Inherited(org.eclipse.ui.IWorkbenchPart)
 checkSite
  (Lorg/eclipse/ui/IWorkbenchPartSite;)V
  (Lorg/eclipse/ui/IWorkbenchPartSite;)V
 createPartControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.IWorkbenchPart)
 firePartPropertyChanged
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
 getConfigurationElement
  ()Lorg/eclipse/core/runtime/IConfigurationElement;
  ()Lorg/eclipse/core/runtime/IConfigurationElement;
@@ -41,19 +41,19 @@ getSite
  ()Lorg/eclipse/ui/IWorkbenchPartSite;
 getTitle
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ui.IWorkbenchPart)
 getTitleImage
  ()Lorg/eclipse/swt/graphics/Image;
  ()Lorg/eclipse/swt/graphics/Image;
 getTitleToolTip
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ui.IWorkbenchPart)
 removePartPropertyListener
  (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
  (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
 removePropertyListener
  (Lorg/eclipse/ui/IPropertyListener;)V
- (Lorg/eclipse/ui/IPropertyListener;)V
+ (L1org/eclipse/ui/IPropertyListener;)V # @Inherited(org.eclipse.ui.IWorkbenchPart)
 setContentDescription
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

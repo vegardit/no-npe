@@ -1,5 +1,9 @@
 class org/eclipse/jface/bindings/BindingManager
 
+super org/eclipse/core/commands/common/HandleObjectManager
+ <Lorg/eclipse/jface/bindings/Scheme;>
+ <Lorg/eclipse/jface/bindings/Scheme;>
+
 <init>
  (Lorg/eclipse/core/commands/contexts/ContextManager;Lorg/eclipse/core/commands/CommandManager;)V
  (Lorg/eclipse/core/commands/contexts/ContextManager;Lorg/eclipse/core/commands/CommandManager;)V
@@ -11,7 +15,7 @@ addBindingManagerListener
  (Lorg/eclipse/jface/bindings/IBindingManagerListener;)V
 contextManagerChanged
  (Lorg/eclipse/core/commands/contexts/ContextManagerEvent;)V
- (Lorg/eclipse/core/commands/contexts/ContextManagerEvent;)V
+ (L1org/eclipse/core/commands/contexts/ContextManagerEvent;)V # @Inherited(org.eclipse.core.commands.contexts.IContextManagerListener)
 getActiveBindingsDisregardingContext
  ()Ljava/util/Map;
  ()Ljava/util/Map;
@@ -83,7 +87,7 @@ removeBindings
  (Lorg/eclipse/jface/bindings/TriggerSequence;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 schemeChanged
  (Lorg/eclipse/jface/bindings/SchemeEvent;)V
- (Lorg/eclipse/jface/bindings/SchemeEvent;)V
+ (L1org/eclipse/jface/bindings/SchemeEvent;)V # @Inherited(org.eclipse.jface.bindings.ISchemeListener)
 setActiveScheme
  (Lorg/eclipse/jface/bindings/Scheme;)V
  (Lorg/eclipse/jface/bindings/Scheme;)V

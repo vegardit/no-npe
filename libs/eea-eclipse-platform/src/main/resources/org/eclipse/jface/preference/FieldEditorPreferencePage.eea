@@ -11,10 +11,10 @@ addField
  (L1org/eclipse/jface/preference/FieldEditor;)V
 createContents
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.preference.PreferencePage)
 getFieldEditorParent
  ()Lorg/eclipse/swt/widgets/Composite;
  ()L1org/eclipse/swt/widgets/Composite;
 propertyChange
  (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
- (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (L1org/eclipse/jface/util/PropertyChangeEvent;)V # @Inherited(org.eclipse.jface.util.IPropertyChangeListener)

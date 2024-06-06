@@ -1,5 +1,13 @@
 class com/google/common/graph/AbstractValueGraph
  <N:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <N:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super com/google/common/graph/AbstractBaseGraph
+ <TN;>
+ <TN;>
+super com/google/common/graph/ValueGraph
+ <TN;TV;>
+ <TN;TV;>
 
 asGraph
  ()Lcom/google/common/graph/Graph<TN;>;
@@ -12,7 +20,7 @@ edgeValue
  (TN;TN;)Ljava/util/Optional<TV;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

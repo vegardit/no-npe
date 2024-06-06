@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/deser/AbstractDeserializer
 
+super com/fasterxml/jackson/databind/JsonDeserializer
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 constructForNonPOJO
  (Lcom/fasterxml/jackson/databind/BeanDescription;)Lcom/fasterxml/jackson/databind/deser/AbstractDeserializer;
  (Lcom/fasterxml/jackson/databind/BeanDescription;)Lcom/fasterxml/jackson/databind/deser/AbstractDeserializer;
@@ -43,7 +47,7 @@ deserialize
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
 deserializeWithType
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+ (L1com/fasterxml/jackson/core/JsonParser;L1com/fasterxml/jackson/databind/DeserializationContext;L1com/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
 findBackReference
  (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
  (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
@@ -58,4 +62,4 @@ logicalType
  ()Lcom/fasterxml/jackson/databind/type/LogicalType;
 supportsUpdate
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
- (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+ (L1com/fasterxml/jackson/databind/DeserializationConfig;)L0java/lang/Boolean; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)

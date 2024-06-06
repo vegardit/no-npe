@@ -18,10 +18,10 @@ EMPTY
  ([Ljava/lang/Object;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getFirstElement
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.eclipse.jface.viewers.IStructuredSelection)
 iterator
  ()Ljava/util/Iterator;
  ()Ljava/util/Iterator;
@@ -30,10 +30,10 @@ stream
  ()Ljava/util/stream/Stream<Ljava/lang/Object;>;
 toArray
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object; # @Inherited(org.eclipse.jface.viewers.IStructuredSelection)
 toList
  ()Ljava/util/List;
- ()Ljava/util/List;
+ ()L1java/util/List; # @Inherited(org.eclipse.jface.viewers.IStructuredSelection)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

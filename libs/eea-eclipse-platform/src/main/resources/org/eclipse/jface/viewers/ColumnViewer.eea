@@ -53,13 +53,13 @@ getViewerRowFromItem
  (Lorg/eclipse/swt/widgets/Widget;)Lorg/eclipse/jface/viewers/ViewerRow;
 handleDispose
  (Lorg/eclipse/swt/events/DisposeEvent;)V
- (Lorg/eclipse/swt/events/DisposeEvent;)V
+ (L1org/eclipse/swt/events/DisposeEvent;)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 handleDoubleSelect
  (Lorg/eclipse/swt/events/SelectionEvent;)V
  (Lorg/eclipse/swt/events/SelectionEvent;)V
 hookControl
  (Lorg/eclipse/swt/widgets/Control;)V
- (Lorg/eclipse/swt/widgets/Control;)V
+ (L1org/eclipse/swt/widgets/Control;)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 hookEditingSupport
  (Lorg/eclipse/swt/widgets/Control;)V
  (Lorg/eclipse/swt/widgets/Control;)V
@@ -86,7 +86,7 @@ setColumnViewerEditor
  (Lorg/eclipse/jface/viewers/ColumnViewerEditor;)V
 setLabelProvider
  (Lorg/eclipse/jface/viewers/IBaseLabelProvider;)V
- (Lorg/eclipse/jface/viewers/IBaseLabelProvider;)V
+ (L0org/eclipse/jface/viewers/IBaseLabelProvider;)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 triggerEditorActivationEvent
  (Lorg/eclipse/jface/viewers/ColumnViewerEditorActivationEvent;)V
  (Lorg/eclipse/jface/viewers/ColumnViewerEditorActivationEvent;)V

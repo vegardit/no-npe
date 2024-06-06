@@ -1,5 +1,13 @@
 class org/eclipse/jface/databinding/swt/WidgetListProperty
  <S:Lorg/eclipse/swt/widgets/Widget;E:Ljava/lang/Object;>
+ <S:Lorg/eclipse/swt/widgets/Widget;E:Ljava/lang/Object;>
+
+super org/eclipse/core/databinding/property/list/SimpleListProperty
+ <TS;TE;>
+ <TS;TE;>
+super org/eclipse/jface/databinding/swt/IWidgetListProperty
+ <TS;TE;>
+ <TS;TE;>
 
 observe
  (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/jface/databinding/swt/ISWTObservableList<TE;>;

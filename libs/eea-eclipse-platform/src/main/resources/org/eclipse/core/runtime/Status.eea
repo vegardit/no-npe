@@ -43,16 +43,16 @@ warning
  (IL1java/lang/String;L0java/lang/String;L0java/lang/Throwable;)V
 getChildren
  ()[Lorg/eclipse/core/runtime/IStatus;
- ()[1L1org/eclipse/core/runtime/IStatus;
+ ()[1L1org/eclipse/core/runtime/IStatus; # @Inherited(org.eclipse.core.runtime.IStatus)
 getException
  ()Ljava/lang/Throwable;
- ()L0java/lang/Throwable;
+ ()L0java/lang/Throwable; # @Inherited(org.eclipse.core.runtime.IStatus)
 getMessage
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.core.runtime.IStatus)
 getPlugin
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.core.runtime.IStatus)
 setException
  (Ljava/lang/Throwable;)V
  (L0java/lang/Throwable;)V
@@ -64,4 +64,4 @@ setPlugin
  (L1java/lang/String;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

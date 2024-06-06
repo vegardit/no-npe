@@ -1,5 +1,13 @@
 class org/eclipse/e4/ui/model/application/ui/impl/GenericTileImpl
  <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>
+
+super org/eclipse/e4/ui/model/application/ui/impl/ElementContainerImpl
+ <TT;>
+ <TT;>
+super org/eclipse/e4/ui/model/application/ui/MGenericTile
+ <TT;>
+ <TT;>
 
 eGet
  (IZZ)Ljava/lang/Object;
@@ -12,4 +20,4 @@ eStaticClass
  ()Lorg/eclipse/emf/ecore/EClass;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl)

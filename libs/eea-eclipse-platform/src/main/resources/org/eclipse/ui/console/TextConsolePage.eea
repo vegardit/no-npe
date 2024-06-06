@@ -27,7 +27,7 @@ createViewer
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/console/TextConsoleViewer;
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
 getConsole
  ()Lorg/eclipse/ui/console/IConsole;
  ()Lorg/eclipse/ui/console/IConsole;
@@ -48,7 +48,7 @@ init
  (Lorg/eclipse/ui/part/IPageSite;)V
 propertyChange
  (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
- (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (L1org/eclipse/jface/util/PropertyChangeEvent;)V # @Inherited(org.eclipse.jface.util.IPropertyChangeListener)
 setActionBars
  (Lorg/eclipse/ui/IActionBars;)V
  (Lorg/eclipse/ui/IActionBars;)V

@@ -15,13 +15,13 @@ addWindowActivationHelper
  (Lorg/eclipse/swt/widgets/Control;)V
 configureShell
  (Lorg/eclipse/swt/widgets/Shell;)V
- (L1org/eclipse/swt/widgets/Shell;)V
+ (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)
 createContentArea
  (Lorg/eclipse/swt/widgets/Composite;)V
  (L1org/eclipse/swt/widgets/Composite;)V
 createContents
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.window.Window)
 createTitleArea
  (Lorg/eclipse/swt/widgets/Composite;)V
  (Lorg/eclipse/swt/widgets/Composite;)V
@@ -39,4 +39,4 @@ getTitleForeground
  ()Lorg/eclipse/swt/graphics/Color;
 setParentShell
  (Lorg/eclipse/swt/widgets/Shell;)V
- (Lorg/eclipse/swt/widgets/Shell;)V
+ (L0org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)

@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/deser/std/StringDeserializer
 
+super com/fasterxml/jackson/databind/deser/std/StdScalarDeserializer
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 instance
  Lcom/fasterxml/jackson/databind/deser/std/StringDeserializer;
  L1com/fasterxml/jackson/databind/deser/std/StringDeserializer;
@@ -12,7 +16,7 @@ deserializeWithType
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/String;
 getEmptyValue
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (L1com/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
 logicalType
  ()Lcom/fasterxml/jackson/databind/type/LogicalType;
  ()Lcom/fasterxml/jackson/databind/type/LogicalType;

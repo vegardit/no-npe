@@ -12,16 +12,16 @@ enableFor
  (Lorg/eclipse/jface/viewers/ColumnViewer;IZ)V
 afterHideToolTip
  (Lorg/eclipse/swt/widgets/Event;)V
- (Lorg/eclipse/swt/widgets/Event;)V
+ (L1org/eclipse/swt/widgets/Event;)V # @Inherited(org.eclipse.jface.window.ToolTip)
 createToolTipContentArea
  (Lorg/eclipse/swt/widgets/Event;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
- (Lorg/eclipse/swt/widgets/Event;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+ (L1org/eclipse/swt/widgets/Event;L1org/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite; # @Inherited(org.eclipse.jface.window.DefaultToolTip)
 createViewerToolTipContentArea
  (Lorg/eclipse/swt/widgets/Event;Lorg/eclipse/jface/viewers/ViewerCell;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
  (Lorg/eclipse/swt/widgets/Event;Lorg/eclipse/jface/viewers/ViewerCell;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
 getToolTipArea
  (Lorg/eclipse/swt/widgets/Event;)Ljava/lang/Object;
- (Lorg/eclipse/swt/widgets/Event;)Ljava/lang/Object;
+ (L1org/eclipse/swt/widgets/Event;)L0java/lang/Object; # @Inherited(org.eclipse.jface.window.ToolTip)
 shouldCreateToolTip
  (Lorg/eclipse/swt/widgets/Event;)Z
- (Lorg/eclipse/swt/widgets/Event;)Z
+ (L1org/eclipse/swt/widgets/Event;)Z # @Inherited(org.eclipse.jface.window.ToolTip)

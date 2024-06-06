@@ -8,7 +8,7 @@ getActionBars
  ()Lorg/eclipse/ui/IActionBars;
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
 getPage
  ()Lorg/eclipse/ui/IWorkbenchPage;
  ()Lorg/eclipse/ui/IWorkbenchPage;
@@ -17,16 +17,16 @@ getSelectionProvider
  ()Lorg/eclipse/jface/viewers/ISelectionProvider;
 getService
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.services.IServiceLocator)
 getShell
  ()Lorg/eclipse/swt/widgets/Shell;
- ()Lorg/eclipse/swt/widgets/Shell;
+ ()L0org/eclipse/swt/widgets/Shell; # @Inherited(org.eclipse.ui.IWorkbenchSite)
 getWorkbenchWindow
  ()Lorg/eclipse/ui/IWorkbenchWindow;
  ()Lorg/eclipse/ui/IWorkbenchWindow;
 hasService
  (Ljava/lang/Class<*>;)Z
- (Ljava/lang/Class<*>;)Z
+ (L1java/lang/Class<*>;)Z # @Inherited(org.eclipse.ui.services.IServiceLocator)
 registerContextMenu
  (Ljava/lang/String;Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
  (Ljava/lang/String;Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V

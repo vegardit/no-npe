@@ -1,5 +1,13 @@
 class org/eclipse/osgi/framework/util/CaseInsensitiveDictionaryMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super java/util/Dictionary
+ <TK;TV;>
+ <TK;TV;>
+super java/util/Map
+ <TK;TV;>
+ <TK;TV;>
 
 findCommonKeyIndex
  (Ljava/lang/String;)Lorg/eclipse/osgi/framework/util/CaseInsensitiveDictionaryMap$CaseInsensitiveKey;
@@ -34,7 +42,7 @@ entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (Ljava/lang/Object;)TV;
  (Ljava/lang/Object;)TV;
@@ -55,7 +63,7 @@ remove
  (Ljava/lang/Object;)TV;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 values
  ()Ljava/util/Collection<TV;>;
  ()Ljava/util/Collection<TV;>;

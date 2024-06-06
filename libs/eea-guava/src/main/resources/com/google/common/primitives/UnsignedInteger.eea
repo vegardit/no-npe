@@ -1,5 +1,9 @@
 class com/google/common/primitives/UnsignedInteger
 
+super java/lang/Comparable
+ <Lcom/google/common/primitives/UnsignedInteger;>
+ <Lcom/google/common/primitives/UnsignedInteger;>
+
 MAX_VALUE
  Lcom/google/common/primitives/UnsignedInteger;
  L1com/google/common/primitives/UnsignedInteger;
@@ -37,7 +41,7 @@ dividedBy
  (Lcom/google/common/primitives/UnsignedInteger;)Lcom/google/common/primitives/UnsignedInteger;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 minus
  (Lcom/google/common/primitives/UnsignedInteger;)Lcom/google/common/primitives/UnsignedInteger;
  (Lcom/google/common/primitives/UnsignedInteger;)Lcom/google/common/primitives/UnsignedInteger;
@@ -52,7 +56,7 @@ times
  (Lcom/google/common/primitives/UnsignedInteger;)Lcom/google/common/primitives/UnsignedInteger;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toString
  (I)Ljava/lang/String;
  (I)Ljava/lang/String;

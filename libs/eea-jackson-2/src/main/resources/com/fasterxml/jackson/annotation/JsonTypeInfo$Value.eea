@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/annotation/JsonTypeInfo$Value
 
+super com/fasterxml/jackson/annotation/JacksonAnnotationValue
+ <Lcom/fasterxml/jackson/annotation/JsonTypeInfo;>
+ <Lcom/fasterxml/jackson/annotation/JsonTypeInfo;>
+
 EMPTY
  Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;
  L1com/fasterxml/jackson/annotation/JsonTypeInfo$Value;
@@ -35,7 +39,7 @@ _requireTypeIdForSubtypes
  (Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;Ljava/lang/String;Ljava/lang/Class<*>;ZLjava/lang/Boolean;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getDefaultImpl
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
@@ -53,7 +57,7 @@ getRequireTypeIdForSubtypes
  ()Ljava/lang/Boolean;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 valueFor
  ()Ljava/lang/Class<Lcom/fasterxml/jackson/annotation/JsonTypeInfo;>;
  ()Ljava/lang/Class<Lcom/fasterxml/jackson/annotation/JsonTypeInfo;>;

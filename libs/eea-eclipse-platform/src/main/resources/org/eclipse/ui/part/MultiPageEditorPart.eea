@@ -26,7 +26,7 @@ createPageContainer
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
 createPartControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.WorkbenchPart)
 createSite
  (Lorg/eclipse/ui/IEditorPart;)Lorg/eclipse/ui/IEditorSite;
  (Lorg/eclipse/ui/IEditorPart;)Lorg/eclipse/ui/IEditorSite;
@@ -38,7 +38,7 @@ getActiveEditor
  ()Lorg/eclipse/ui/IEditorPart;
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.part.WorkbenchPart)
 getContainer
  ()Lorg/eclipse/swt/widgets/Composite;
  ()Lorg/eclipse/swt/widgets/Composite;

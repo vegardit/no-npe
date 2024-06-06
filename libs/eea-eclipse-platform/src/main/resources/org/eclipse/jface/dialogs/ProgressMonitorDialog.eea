@@ -21,22 +21,22 @@ taskLabel
  (Lorg/eclipse/swt/widgets/Shell;)V
 configureShell
  (Lorg/eclipse/swt/widgets/Shell;)V
- (Lorg/eclipse/swt/widgets/Shell;)V
+ (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)
 createButtonsForButtonBar
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.dialogs.Dialog)
 createCancelButton
  (Lorg/eclipse/swt/widgets/Composite;)V
  (Lorg/eclipse/swt/widgets/Composite;)V
 createDialogArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.dialogs.Dialog)
 getImage
  ()Lorg/eclipse/swt/graphics/Image;
  ()Lorg/eclipse/swt/graphics/Image;
 getInitialSize
  ()Lorg/eclipse/swt/graphics/Point;
- ()Lorg/eclipse/swt/graphics/Point;
+ ()L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.dialogs.Dialog)
 getProgressMonitor
  ()Lorg/eclipse/core/runtime/IProgressMonitor;
  ()Lorg/eclipse/core/runtime/IProgressMonitor;

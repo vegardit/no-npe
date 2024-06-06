@@ -1,5 +1,6 @@
 class com/google/common/collect/RangeSet
  <C::Ljava/lang/Comparable;>
+ <C::Ljava/lang/Comparable;>
 
 add
  (Lcom/google/common/collect/Range<TC;>;)V
@@ -33,7 +34,7 @@ enclosesAll
  (Ljava/lang/Iterable<Lcom/google/common/collect/Range<TC;>;>;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 intersects
  (Lcom/google/common/collect/Range<TC;>;)Z
  (Lcom/google/common/collect/Range<TC;>;)Z
@@ -57,4 +58,4 @@ subRangeSet
  (Lcom/google/common/collect/Range<TC;>;)Lcom/google/common/collect/RangeSet<TC;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

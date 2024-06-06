@@ -5,7 +5,7 @@ class org/eclipse/ui/forms/widgets/Hyperlink
  (Lorg/eclipse/swt/widgets/Composite;I)V
 computeSize
  (IIZ)Lorg/eclipse/swt/graphics/Point;
- (IIZ)Lorg/eclipse/swt/graphics/Point;
+ (IIZ)L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.swt.widgets.Control)
 computeTextSize
  (II)Lorg/eclipse/swt/graphics/Point;
  (II)Lorg/eclipse/swt/graphics/Point;
@@ -14,7 +14,7 @@ getText
  ()Ljava/lang/String;
 getToolTipText
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.swt.widgets.Control)
 paintHyperlink
  (Lorg/eclipse/swt/graphics/GC;)V
  (Lorg/eclipse/swt/graphics/GC;)V
@@ -26,7 +26,7 @@ setText
  (Ljava/lang/String;)V
 setToolTipText
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Inherited(org.eclipse.swt.widgets.Control)
 shortenText
  (Lorg/eclipse/swt/graphics/GC;Ljava/lang/String;I)Ljava/lang/String;
  (Lorg/eclipse/swt/graphics/GC;Ljava/lang/String;I)Ljava/lang/String;

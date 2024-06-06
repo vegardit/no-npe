@@ -1,5 +1,6 @@
 class com/google/common/util/concurrent/ClosingFuture
  <V:Ljava/lang/Object;>
+ <V:Ljava/lang/Object;>
 
 eventuallyClosing
  <C:Ljava/lang/Object;:Ljava/lang/AutoCloseable;>(Lcom/google/common/util/concurrent/ListenableFuture<TC;>;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ClosingFuture<TC;>;
@@ -58,7 +59,7 @@ statusFuture
  ()Lcom/google/common/util/concurrent/ListenableFuture<*>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 transform
  <U:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/ClosingFuture$ClosingFunction<-TV;TU;>;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ClosingFuture<TU;>;
  <U:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/ClosingFuture$ClosingFunction<-TV;TU;>;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ClosingFuture<TU;>;

@@ -1,5 +1,13 @@
 class org/eclipse/core/databinding/observable/list/IObservableList
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/List
+ <TE;>
+ <TE;>
+super org/eclipse/core/databinding/observable/IObservableCollection
+ <TE;>
+ <TE;>
 
 add
  (TE;)Z
@@ -21,7 +29,7 @@ containsAll
  (Ljava/util/Collection<*>;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (I)TE;
  (I)TE;

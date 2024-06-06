@@ -24,10 +24,10 @@ addSelectionListener
  (Lorg/eclipse/swt/events/SelectionListener;)V
 computeTrim
  (IIII)Lorg/eclipse/swt/graphics/Rectangle;
- (IIII)Lorg/eclipse/swt/graphics/Rectangle;
+ (IIII)L1org/eclipse/swt/graphics/Rectangle; # @Inherited(org.eclipse.swt.widgets.Scrollable)
 getClientArea
  ()Lorg/eclipse/swt/graphics/Rectangle;
- ()Lorg/eclipse/swt/graphics/Rectangle;
+ ()L1org/eclipse/swt/graphics/Rectangle; # @Inherited(org.eclipse.swt.widgets.Scrollable)
 getItem
  (I)Lorg/eclipse/swt/custom/CTabItem;
  (I)Lorg/eclipse/swt/custom/CTabItem;
@@ -66,7 +66,7 @@ removeSelectionListener
  (Lorg/eclipse/swt/events/SelectionListener;)V
 setBackground
  (Lorg/eclipse/swt/graphics/Color;)V
- (Lorg/eclipse/swt/graphics/Color;)V
+ (L0org/eclipse/swt/graphics/Color;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setBackground
  ([Lorg/eclipse/swt/graphics/Color;[I)V
  ([Lorg/eclipse/swt/graphics/Color;[I)V
@@ -75,19 +75,19 @@ setBackground
  ([Lorg/eclipse/swt/graphics/Color;[IZ)V
 setBackgroundImage
  (Lorg/eclipse/swt/graphics/Image;)V
- (Lorg/eclipse/swt/graphics/Image;)V
+ (L0org/eclipse/swt/graphics/Image;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setFont
  (Lorg/eclipse/swt/graphics/Font;)V
- (Lorg/eclipse/swt/graphics/Font;)V
+ (L0org/eclipse/swt/graphics/Font;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setForeground
  (Lorg/eclipse/swt/graphics/Color;)V
- (Lorg/eclipse/swt/graphics/Color;)V
+ (L0org/eclipse/swt/graphics/Color;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setInsertMark
  (Lorg/eclipse/swt/custom/CTabItem;Z)V
  (Lorg/eclipse/swt/custom/CTabItem;Z)V
 setLayout
  (Lorg/eclipse/swt/widgets/Layout;)V
- (Lorg/eclipse/swt/widgets/Layout;)V
+ (L0org/eclipse/swt/widgets/Layout;)V # @Inherited(org.eclipse.swt.widgets.Composite)
 setRenderer
  (Lorg/eclipse/swt/custom/CTabFolderRenderer;)V
  (Lorg/eclipse/swt/custom/CTabFolderRenderer;)V

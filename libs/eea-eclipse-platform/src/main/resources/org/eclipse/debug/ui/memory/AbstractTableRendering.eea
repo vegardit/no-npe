@@ -30,7 +30,7 @@ fillContextMenu
  (Lorg/eclipse/jface/action/IMenuManager;)V
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.PlatformObject)
 getBytes
  (Ljava/lang/String;Ljava/math/BigInteger;[Lorg/eclipse/debug/core/model/MemoryByte;Ljava/lang/String;)[B
  (Ljava/lang/String;Ljava/math/BigInteger;[Lorg/eclipse/debug/core/model/MemoryByte;Ljava/lang/String;)[B
@@ -75,7 +75,7 @@ goToAddress
  (Ljava/math/BigInteger;)V
 propertyChange
  (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
- (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (L1org/eclipse/jface/util/PropertyChangeEvent;)V # @Inherited(org.eclipse.jface.util.IPropertyChangeListener)
 toolTipAboutToShow
  (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/TableItem;I)V
  (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/TableItem;I)V

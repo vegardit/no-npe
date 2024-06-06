@@ -18,13 +18,13 @@ newCheckList
  (Lorg/eclipse/swt/widgets/Table;)V
 addCheckStateListener
  (Lorg/eclipse/jface/viewers/ICheckStateListener;)V
- (Lorg/eclipse/jface/viewers/ICheckStateListener;)V
+ (L1org/eclipse/jface/viewers/ICheckStateListener;)V # @Inherited(org.eclipse.jface.viewers.ICheckable)
 doUpdateItem
  (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;Z)V
  (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;Z)V
 getChecked
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L1java/lang/Object;)Z # @Inherited(org.eclipse.jface.viewers.ICheckable)
 getCheckedElements
  ()[Ljava/lang/Object;
  ()[1L1java/lang/Object;
@@ -42,13 +42,13 @@ preservingSelection
  (Ljava/lang/Runnable;)V
 removeCheckStateListener
  (Lorg/eclipse/jface/viewers/ICheckStateListener;)V
- (Lorg/eclipse/jface/viewers/ICheckStateListener;)V
+ (L1org/eclipse/jface/viewers/ICheckStateListener;)V # @Inherited(org.eclipse.jface.viewers.ICheckable)
 setCheckStateProvider
  (Lorg/eclipse/jface/viewers/ICheckStateProvider;)V
  (Lorg/eclipse/jface/viewers/ICheckStateProvider;)V
 setChecked
  (Ljava/lang/Object;Z)Z
- (Ljava/lang/Object;Z)Z
+ (L1java/lang/Object;Z)Z # @Inherited(org.eclipse.jface.viewers.ICheckable)
 setCheckedElements
  ([Ljava/lang/Object;)V
  ([Ljava/lang/Object;)V

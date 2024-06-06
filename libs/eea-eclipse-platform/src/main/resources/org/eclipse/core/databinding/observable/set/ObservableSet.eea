@@ -1,5 +1,10 @@
 class org/eclipse/core/databinding/observable/set/ObservableSet
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super org/eclipse/core/databinding/observable/set/IObservableSet
+ <TE;>
+ <TE;>
 
 elementType
  Ljava/lang/Object;
@@ -31,7 +36,7 @@ containsAll
  (Ljava/util/Collection<*>;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 fireSetChange
  (Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;)V
  (Lorg/eclipse/core/databinding/observable/set/SetDiff<TE;>;)V
@@ -64,4 +69,4 @@ toArray
  <T:Ljava/lang/Object;>([TT;)[TT;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

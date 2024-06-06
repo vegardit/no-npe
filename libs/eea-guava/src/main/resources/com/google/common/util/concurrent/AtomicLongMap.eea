@@ -1,5 +1,6 @@
 class com/google/common/util/concurrent/AtomicLongMap
  <K:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;>
 
 create
  <K:Ljava/lang/Object;>()Lcom/google/common/util/concurrent/AtomicLongMap<TK;>;
@@ -58,7 +59,7 @@ removeIfZero
  (TK;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 updateAndGet
  (TK;Ljava/util/function/LongUnaryOperator;)J
  (TK;Ljava/util/function/LongUnaryOperator;)J

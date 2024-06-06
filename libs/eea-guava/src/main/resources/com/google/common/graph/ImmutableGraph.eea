@@ -1,5 +1,10 @@
 class com/google/common/graph/ImmutableGraph
  <N:Ljava/lang/Object;>
+ <N:Ljava/lang/Object;>
+
+super com/google/common/graph/ForwardingGraph
+ <TN;>
+ <TN;>
 
 copyOf
  <N:Ljava/lang/Object;>(Lcom/google/common/graph/Graph<TN;>;)Lcom/google/common/graph/ImmutableGraph<TN;>;

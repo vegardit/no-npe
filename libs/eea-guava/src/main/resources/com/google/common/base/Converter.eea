@@ -1,5 +1,10 @@
 class com/google/common/base/Converter
  <A:Ljava/lang/Object;B:Ljava/lang/Object;>
+ <A:Ljava/lang/Object;B:Ljava/lang/Object;>
+
+super com/google/common/base/Function
+ <TA;TB;>
+ <TA;TB;>
 
 from
  <A:Ljava/lang/Object;B:Ljava/lang/Object;>(Lcom/google/common/base/Function<-TA;+TB;>;Lcom/google/common/base/Function<-TB;+TA;>;)Lcom/google/common/base/Converter<TA;TB;>;
@@ -28,7 +33,7 @@ doForward
  (TA;)TB;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 reverse
  ()Lcom/google/common/base/Converter<TB;TA;>;
  ()Lcom/google/common/base/Converter<TB;TA;>;

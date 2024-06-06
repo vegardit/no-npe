@@ -1,5 +1,10 @@
 class com/google/common/collect/FluentIterable
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/lang/Iterable
+ <TE;>
+ <TE;>
 
 concat
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+Ljava/lang/Iterable<+TT;>;>;)Lcom/google/common/collect/FluentIterable<TT;>;
@@ -109,7 +114,7 @@ toSortedSet
  (Ljava/util/Comparator<-TE;>;)Lcom/google/common/collect/ImmutableSortedSet<TE;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 transform
  <T:Ljava/lang/Object;>(Lcom/google/common/base/Function<-TE;TT;>;)Lcom/google/common/collect/FluentIterable<TT;>;
  <T:Ljava/lang/Object;>(Lcom/google/common/base/Function<-TE;TT;>;)Lcom/google/common/collect/FluentIterable<TT;>;

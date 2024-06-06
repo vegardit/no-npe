@@ -1,5 +1,10 @@
 class com/fasterxml/jackson/databind/deser/std/StdNodeBasedDeserializer
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super com/fasterxml/jackson/databind/deser/std/StdDeserializer
+ <TT;>
+ <TT;>
 
 _treeDeserializer
  Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
@@ -22,13 +27,13 @@ convert
  (Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/DeserializationContext;TT;)TT;
 deserialize
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;
+ (L1com/fasterxml/jackson/core/JsonParser;L1com/fasterxml/jackson/databind/DeserializationContext;)TT; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
 deserialize
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;TT;)TT;
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;TT;)TT;
+ (L1com/fasterxml/jackson/core/JsonParser;L1com/fasterxml/jackson/databind/DeserializationContext;TT;)TT; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
 deserializeWithType
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+ (L1com/fasterxml/jackson/core/JsonParser;L1com/fasterxml/jackson/databind/DeserializationContext;L1com/fasterxml/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object; # @Inherited(com.fasterxml.jackson.databind.deser.std.StdDeserializer)
 resolve
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)V
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)V

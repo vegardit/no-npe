@@ -1,5 +1,9 @@
 class org/eclipse/e4/ui/model/application/ui/menu/impl/MenuContributionImpl
 
+super org/eclipse/e4/ui/model/application/ui/impl/ElementContainerImpl
+ <Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;>
+ <Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;>
+
 PARENT_ID_EDEFAULT
  Ljava/lang/String;
  L1java/lang/String;
@@ -43,4 +47,4 @@ setSelectedElement
  (Lorg/eclipse/e4/ui/model/application/ui/menu/MMenuElement;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl)

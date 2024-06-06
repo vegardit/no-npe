@@ -1,5 +1,13 @@
 class com/google/common/collect/ForwardingSortedMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super com/google/common/collect/ForwardingMap
+ <TK;TV;>
+ <TK;TV;>
+super java/util/SortedMap
+ <TK;TV;>
+ <TK;TV;>
 
 comparator
  ()Ljava/util/Comparator<-TK;>;

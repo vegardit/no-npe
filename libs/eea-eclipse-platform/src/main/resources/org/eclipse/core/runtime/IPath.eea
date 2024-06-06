@@ -40,10 +40,10 @@ append
  (L0org/eclipse/core/runtime/IPath;)L1org/eclipse/core/runtime/IPath;
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getDevice
  ()Ljava/lang/String;
  ()L0java/lang/String;
@@ -70,7 +70,7 @@ makeRelative
  ()L1org/eclipse/core/runtime/IPath;
 makeRelativeTo
  (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
- (L1org/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IPath;
+ (L1org/eclipse/core/runtime/IPath;)L1org/eclipse/core/runtime/IPath;
 makeUNC
  (Z)Lorg/eclipse/core/runtime/IPath;
  (Z)L1org/eclipse/core/runtime/IPath;
@@ -94,7 +94,7 @@ segment
  (I)L0java/lang/String;
 segments
  ()[Ljava/lang/String;
- ()[L1java/lang/String;
+ ()[1L1java/lang/String;
 setDevice
  (Ljava/lang/String;)Lorg/eclipse/core/runtime/IPath;
  (L0java/lang/String;)L1org/eclipse/core/runtime/IPath;
@@ -112,7 +112,7 @@ toPortableString
  ()L1java/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 uptoSegment
  (I)Lorg/eclipse/core/runtime/IPath;
  (I)L1org/eclipse/core/runtime/IPath;

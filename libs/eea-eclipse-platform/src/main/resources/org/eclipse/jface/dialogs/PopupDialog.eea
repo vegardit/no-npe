@@ -18,10 +18,10 @@ applyForegroundColor
  (Lorg/eclipse/swt/graphics/Color;Lorg/eclipse/swt/widgets/Control;)V
 configureShell
  (Lorg/eclipse/swt/widgets/Shell;)V
- (Lorg/eclipse/swt/widgets/Shell;)V
+ (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)
 createContents
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.window.Window)
 createDialogArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
@@ -63,10 +63,10 @@ getForegroundColorExclusions
  ()Ljava/util/List<Lorg/eclipse/swt/widgets/Control;>;
 getInitialLocation
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
- (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+ (L1org/eclipse/swt/graphics/Point;)L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.window.Window)
 getInitialSize
  ()Lorg/eclipse/swt/graphics/Point;
- ()Lorg/eclipse/swt/graphics/Point;
+ ()L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.window.Window)
 saveDialogBounds
  (Lorg/eclipse/swt/widgets/Shell;)V
  (Lorg/eclipse/swt/widgets/Shell;)V

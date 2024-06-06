@@ -11,7 +11,7 @@ getActionBars
  ()Lorg/eclipse/ui/IActionBars;
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
 getDecoratorManager
  ()Lorg/eclipse/jface/viewers/ILabelDecorator;
  ()Lorg/eclipse/jface/viewers/ILabelDecorator;
@@ -47,10 +47,10 @@ getSelectionProvider
  ()Lorg/eclipse/jface/viewers/ISelectionProvider;
 getService
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.services.IServiceLocator)
 getShell
  ()Lorg/eclipse/swt/widgets/Shell;
- ()Lorg/eclipse/swt/widgets/Shell;
+ ()L0org/eclipse/swt/widgets/Shell; # @Inherited(org.eclipse.ui.IWorkbenchSite)
 getWorkbenchWindow
  ()Lorg/eclipse/ui/IWorkbenchWindow;
  ()Lorg/eclipse/ui/IWorkbenchWindow;
@@ -80,4 +80,4 @@ setSelectionProvider
  (Lorg/eclipse/jface/viewers/ISelectionProvider;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

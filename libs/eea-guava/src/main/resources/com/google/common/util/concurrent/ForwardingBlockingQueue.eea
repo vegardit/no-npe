@@ -1,5 +1,13 @@
 class com/google/common/util/concurrent/ForwardingBlockingQueue
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super com/google/common/collect/ForwardingQueue
+ <TE;>
+ <TE;>
+super java/util/concurrent/BlockingQueue
+ <TE;>
+ <TE;>
 
 delegate
  ()Ljava/util/concurrent/BlockingQueue<TE;>;

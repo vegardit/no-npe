@@ -1,5 +1,10 @@
 class com/google/common/collect/Multiset
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/Collection
+ <TE;>
+ <TE;>
 
 add
  (TE;)Z
@@ -24,7 +29,7 @@ entrySet
  ()Ljava/util/Set<Lcom/google/common/collect/Multiset$Entry<TE;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 forEach
  (Ljava/util/function/Consumer<-TE;>;)V
  (Ljava/util/function/Consumer<-TE;>;)V
@@ -57,4 +62,4 @@ spliterator
  ()Ljava/util/Spliterator<TE;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

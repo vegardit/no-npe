@@ -18,7 +18,7 @@ addExpansionListener
  (Lorg/eclipse/ui/forms/events/IExpansionListener;)V
 computeSize
  (IIZ)Lorg/eclipse/swt/graphics/Point;
- (IIZ)Lorg/eclipse/swt/graphics/Point;
+ (IIZ)L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.swt.widgets.Control)
 getClient
  ()Lorg/eclipse/swt/widgets/Control;
  ()Lorg/eclipse/swt/widgets/Control;
@@ -48,22 +48,22 @@ setActiveToggleColor
  (Lorg/eclipse/swt/graphics/Color;)V
 setBackground
  (Lorg/eclipse/swt/graphics/Color;)V
- (Lorg/eclipse/swt/graphics/Color;)V
+ (L0org/eclipse/swt/graphics/Color;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setClient
  (Lorg/eclipse/swt/widgets/Control;)V
  (Lorg/eclipse/swt/widgets/Control;)V
 setFont
  (Lorg/eclipse/swt/graphics/Font;)V
- (Lorg/eclipse/swt/graphics/Font;)V
+ (L0org/eclipse/swt/graphics/Font;)V # @Inherited(org.eclipse.swt.widgets.Canvas)
 setForeground
  (Lorg/eclipse/swt/graphics/Color;)V
- (Lorg/eclipse/swt/graphics/Color;)V
+ (L0org/eclipse/swt/graphics/Color;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setLayout
  (Lorg/eclipse/swt/widgets/Layout;)V
- (Lorg/eclipse/swt/widgets/Layout;)V
+ (L0org/eclipse/swt/widgets/Layout;)V # @Inherited(org.eclipse.swt.widgets.Composite)
 setMenu
  (Lorg/eclipse/swt/widgets/Menu;)V
- (Lorg/eclipse/swt/widgets/Menu;)V
+ (L0org/eclipse/swt/widgets/Menu;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setText
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -78,4 +78,4 @@ setToggleColor
  (Lorg/eclipse/swt/graphics/Color;)V
 setToolTipText
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Inherited(org.eclipse.swt.widgets.Control)

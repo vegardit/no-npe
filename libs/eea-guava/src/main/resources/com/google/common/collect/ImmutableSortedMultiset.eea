@@ -1,5 +1,13 @@
 class com/google/common/collect/ImmutableSortedMultiset
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super com/google/common/collect/ImmutableMultiset
+ <TE;>
+ <TE;>
+super com/google/common/collect/SortedMultiset
+ <TE;>
+ <TE;>
 
 builder
  <E:Ljava/lang/Object;>()Lcom/google/common/collect/ImmutableSortedMultiset$Builder<TE;>;
@@ -100,10 +108,10 @@ headMultiset
  (TE;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>;
 pollFirstEntry
  ()Lcom/google/common/collect/Multiset$Entry<TE;>;
- ()L1com/google/common/collect/Multiset$Entry<TE;>;
+ ()L1com/google/common/collect/Multiset$Entry<TE;>; # @Inherited(com.google.common.collect.SortedMultiset)
 pollLastEntry
  ()Lcom/google/common/collect/Multiset$Entry<TE;>;
- ()L1com/google/common/collect/Multiset$Entry<TE;>;
+ ()L1com/google/common/collect/Multiset$Entry<TE;>; # @Inherited(com.google.common.collect.SortedMultiset)
 subMultiset
  (TE;Lcom/google/common/collect/BoundType;TE;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>;
  (TE;Lcom/google/common/collect/BoundType;TE;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>;

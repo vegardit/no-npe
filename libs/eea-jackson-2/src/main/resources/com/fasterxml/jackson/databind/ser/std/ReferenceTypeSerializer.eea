@@ -1,5 +1,10 @@
 class com/fasterxml/jackson/databind/ser/std/ReferenceTypeSerializer
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super com/fasterxml/jackson/databind/ser/std/StdSerializer
+ <TT;>
+ <TT;>
 
 MARKER_FOR_EMPTY
  Ljava/lang/Object;
@@ -59,7 +64,7 @@ isEmpty
  (Lcom/fasterxml/jackson/databind/SerializerProvider;TT;)Z
 serialize
  (TT;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
- (TT;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
+ (TT;L1com/fasterxml/jackson/core/JsonGenerator;L1com/fasterxml/jackson/databind/SerializerProvider;)V # @Inherited(com.fasterxml.jackson.databind.ser.std.StdSerializer)
 serializeWithType
  (TT;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V
  (TT;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V

@@ -2,7 +2,7 @@ class org/eclipse/ui/texteditor/templates/TemplatePreferencePage
 
 createContents
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.preference.PreferencePage)
 createTemplateEditDialog
  (Lorg/eclipse/jface/text/templates/Template;ZZ)Lorg/eclipse/jface/dialogs/Dialog;
  (Lorg/eclipse/jface/text/templates/Template;ZZ)Lorg/eclipse/jface/dialogs/Dialog;
@@ -29,7 +29,7 @@ getViewer
  ()Lorg/eclipse/jface/text/source/SourceViewer;
 init
  (Lorg/eclipse/ui/IWorkbench;)V
- (Lorg/eclipse/ui/IWorkbench;)V
+ (L1org/eclipse/ui/IWorkbench;)V # @Inherited(org.eclipse.ui.IWorkbenchPreferencePage)
 setContextTypeRegistry
  (Lorg/eclipse/jface/text/templates/ContextTypeRegistry;)V
  (Lorg/eclipse/jface/text/templates/ContextTypeRegistry;)V

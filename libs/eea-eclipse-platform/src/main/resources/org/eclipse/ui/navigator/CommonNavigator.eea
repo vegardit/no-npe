@@ -18,7 +18,7 @@ createCommonViewerObject
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/navigator/CommonViewer;
 createPartControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.WorkbenchPart)
 doSave
  (Lorg/eclipse/core/runtime/IProgressMonitor;)V
  (Lorg/eclipse/core/runtime/IProgressMonitor;)V
@@ -27,7 +27,7 @@ getActiveSaveables
  ()[Lorg/eclipse/ui/Saveable;
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.part.WorkbenchPart)
 getCommonViewer
  ()Lorg/eclipse/ui/navigator/CommonViewer;
  ()Lorg/eclipse/ui/navigator/CommonViewer;

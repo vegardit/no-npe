@@ -1,5 +1,10 @@
 class com/google/common/collect/ForwardingMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super java/util/Map
+ <TK;TV;>
+ <TK;TV;>
 
 containsKey
  (Ljava/lang/Object;)Z
@@ -15,7 +20,7 @@ entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (Ljava/lang/Object;)TV;
  (Ljava/lang/Object;)T1V;

@@ -40,7 +40,7 @@ replaceEnvironment
 
 activated
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.AbstractLaunchConfigurationTab)
 addVariable
  (Lorg/eclipse/debug/internal/ui/launchConfigurations/EnvironmentVariable;)Z
  (Lorg/eclipse/debug/internal/ui/launchConfigurations/EnvironmentVariable;)Z
@@ -52,7 +52,7 @@ createAppendReplace
  (Lorg/eclipse/swt/widgets/Composite;)V
 createControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 createEnvironmentTable
  (Lorg/eclipse/swt/widgets/Composite;)V
  (Lorg/eclipse/swt/widgets/Composite;)V
@@ -61,7 +61,7 @@ createTableButtons
  (Lorg/eclipse/swt/widgets/Composite;)V
 deactivated
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.AbstractLaunchConfigurationTab)
 getId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -70,19 +70,19 @@ getImage
  ()Lorg/eclipse/swt/graphics/Image;
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 handleTableSelectionChanged
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
 initializeFrom
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
- (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (L1org/eclipse/debug/core/ILaunchConfiguration;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 performApply
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 setDefaults
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 updateEnvironment
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)V

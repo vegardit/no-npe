@@ -1,5 +1,10 @@
 class com/google/common/hash/BloomFilter
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super com/google/common/base/Predicate
+ <TT;>
+ <TT;>
 
 create
  <T:Ljava/lang/Object;>(Lcom/google/common/hash/Funnel<-TT;>;I)Lcom/google/common/hash/BloomFilter<TT;>;
@@ -31,7 +36,7 @@ copy
  ()Lcom/google/common/hash/BloomFilter<TT;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 isCompatible
  (Lcom/google/common/hash/BloomFilter<TT;>;)Z
  (Lcom/google/common/hash/BloomFilter<TT;>;)Z

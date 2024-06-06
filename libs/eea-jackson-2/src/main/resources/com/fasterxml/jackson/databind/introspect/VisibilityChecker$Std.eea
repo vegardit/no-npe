@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/introspect/VisibilityChecker$Std
 
+super com/fasterxml/jackson/databind/introspect/VisibilityChecker
+ <Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker$Std;>
+ <Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker$Std;>
+
 ALL_PUBLIC
  Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker$Std;
  L1com/fasterxml/jackson/databind/introspect/VisibilityChecker$Std;
@@ -77,7 +81,7 @@ isSetterVisible
  (Ljava/lang/reflect/Method;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 with
  (Lcom/fasterxml/jackson/annotation/JsonAutoDetect$Visibility;)Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker$Std;
  (Lcom/fasterxml/jackson/annotation/JsonAutoDetect$Visibility;)Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker$Std;

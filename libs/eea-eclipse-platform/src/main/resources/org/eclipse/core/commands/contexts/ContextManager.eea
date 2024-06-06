@@ -1,5 +1,9 @@
 class org/eclipse/core/commands/contexts/ContextManager
 
+super org/eclipse/core/commands/common/HandleObjectManager
+ <Lorg/eclipse/core/commands/contexts/Context;>
+ <Lorg/eclipse/core/commands/contexts/Context;>
+
 addActiveContext
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -8,7 +12,7 @@ addContextManagerListener
  (Lorg/eclipse/core/commands/contexts/IContextManagerListener;)V
 contextChanged
  (Lorg/eclipse/core/commands/contexts/ContextEvent;)V
- (Lorg/eclipse/core/commands/contexts/ContextEvent;)V
+ (L1org/eclipse/core/commands/contexts/ContextEvent;)V # @Inherited(org.eclipse.core.commands.contexts.IContextListener)
 getActiveContextIds
  ()Ljava/util/Set;
  ()Ljava/util/Set;

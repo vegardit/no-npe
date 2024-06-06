@@ -6,16 +6,16 @@ isLaunchInBackground
 
 activated
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.AbstractLaunchConfigurationTab)
 createControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 createLaunchInBackgroundComponent
  (Lorg/eclipse/swt/widgets/Composite;)V
  (Lorg/eclipse/swt/widgets/Composite;)V
 deactivated
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.AbstractLaunchConfigurationTab)
 getId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -27,19 +27,19 @@ getLaunchConfigurationManager
  ()Lorg/eclipse/debug/internal/ui/launchConfigurations/LaunchConfigurationManager;
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 initializeFrom
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
- (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
+ (L1org/eclipse/debug/core/ILaunchConfiguration;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 isValid
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
- (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+ (L1org/eclipse/debug/core/ILaunchConfiguration;)Z # @Inherited(org.eclipse.debug.ui.AbstractLaunchConfigurationTab)
 performApply
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 setDefaults
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 updateLaunchInBackground
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)V
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)V

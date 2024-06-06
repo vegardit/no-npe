@@ -9,34 +9,34 @@ isLocalFile
  (Lorg/eclipse/core/resources/IFile;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.PlatformObject)
 getFactoryId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getFile
  ()Lorg/eclipse/core/resources/IFile;
- ()Lorg/eclipse/core/resources/IFile;
+ ()L1org/eclipse/core/resources/IFile; # @Inherited(org.eclipse.ui.IFileEditorInput)
 getImageDescriptor
  ()Lorg/eclipse/jface/resource/ImageDescriptor;
- ()Lorg/eclipse/jface/resource/ImageDescriptor;
+ ()L0org/eclipse/jface/resource/ImageDescriptor; # @Inherited(org.eclipse.ui.IEditorInput)
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ui.IEditorInput)
 getPath
  ()Lorg/eclipse/core/runtime/IPath;
  ()Lorg/eclipse/core/runtime/IPath;
 getPersistable
  ()Lorg/eclipse/ui/IPersistableElement;
- ()Lorg/eclipse/ui/IPersistableElement;
+ ()L0org/eclipse/ui/IPersistableElement; # @Inherited(org.eclipse.ui.IEditorInput)
 getStorage
  ()Lorg/eclipse/core/resources/IStorage;
  ()Lorg/eclipse/core/resources/IStorage;
 getToolTipText
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ui.IEditorInput)
 getURI
  ()Ljava/net/URI;
  ()Ljava/net/URI;
@@ -45,4 +45,4 @@ saveState
  (Lorg/eclipse/ui/IMemento;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

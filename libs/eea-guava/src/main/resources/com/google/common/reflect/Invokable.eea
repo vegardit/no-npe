@@ -1,5 +1,6 @@
 class com/google/common/reflect/Invokable
  <T:Ljava/lang/Object;R:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>
 
 from
  (Ljava/lang/reflect/Method;)Lcom/google/common/reflect/Invokable<*Ljava/lang/Object;>;
@@ -10,7 +11,7 @@ from
 
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAnnotatedReturnType
  ()Ljava/lang/reflect/AnnotatedType;
  ()L1java/lang/reflect/AnnotatedType;
@@ -58,4 +59,4 @@ returning
  <R1:TR;>(Ljava/lang/Class<TR1;>;)Lcom/google/common/reflect/Invokable<TT;TR1;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

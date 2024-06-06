@@ -1,5 +1,9 @@
 class org/eclipse/e4/ui/model/application/ui/basic/impl/WindowImpl
 
+super org/eclipse/e4/ui/model/application/ui/impl/ElementContainerImpl
+ <Lorg/eclipse/e4/ui/model/application/ui/basic/MWindowElement;>
+ <Lorg/eclipse/e4/ui/model/application/ui/basic/MWindowElement;>
+
 CONTEXT_EDEFAULT
  Lorg/eclipse/e4/core/contexts/IEclipseContext;
  L1org/eclipse/e4/core/contexts/IEclipseContext;
@@ -148,4 +152,4 @@ setTooltip
  (Ljava/lang/String;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl)

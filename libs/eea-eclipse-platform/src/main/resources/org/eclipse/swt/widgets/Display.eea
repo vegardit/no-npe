@@ -2,13 +2,13 @@ class org/eclipse/swt/widgets/Display
 
 findDisplay
  (Ljava/lang/Thread;)Lorg/eclipse/swt/widgets/Display;
- (Ljava/lang/Thread;)L0org/eclipse/swt/widgets/Display;
+ (L0java/lang/Thread;)L0org/eclipse/swt/widgets/Display;
 getAppName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getAppVersion
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getCurrent
  ()Lorg/eclipse/swt/widgets/Display;
  ()L0org/eclipse/swt/widgets/Display;
@@ -17,10 +17,10 @@ getDefault
  ()L1org/eclipse/swt/widgets/Display;
 setAppName
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V
 setAppVersion
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V
 
 msg
  Lorg/eclipse/swt/internal/win32/MSG;
@@ -28,43 +28,43 @@ msg
 
 <init>
  (Lorg/eclipse/swt/graphics/DeviceData;)V
- (Lorg/eclipse/swt/graphics/DeviceData;)V
+ (L0org/eclipse/swt/graphics/DeviceData;)V
 addFilter
  (ILorg/eclipse/swt/widgets/Listener;)V
- (ILorg/eclipse/swt/widgets/Listener;)V
+ (IL1org/eclipse/swt/widgets/Listener;)V
 addListener
  (ILorg/eclipse/swt/widgets/Listener;)V
- (ILorg/eclipse/swt/widgets/Listener;)V
+ (IL1org/eclipse/swt/widgets/Listener;)V
 asyncExec
  (Ljava/lang/Runnable;)V
  (Ljava/lang/Runnable;)V
 create
  (Lorg/eclipse/swt/graphics/DeviceData;)V
- (Lorg/eclipse/swt/graphics/DeviceData;)V
+ (L0org/eclipse/swt/graphics/DeviceData;)V # @Inherited(org.eclipse.swt.graphics.Device)
 disposeExec
  (Ljava/lang/Runnable;)V
  (Ljava/lang/Runnable;)V
 execute
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V
 findWidget
  (J)Lorg/eclipse/swt/widgets/Widget;
- (J)Lorg/eclipse/swt/widgets/Widget;
+ (J)L0org/eclipse/swt/widgets/Widget;
 findWidget
  (JJ)Lorg/eclipse/swt/widgets/Widget;
- (JJ)Lorg/eclipse/swt/widgets/Widget;
+ (JJ)L0org/eclipse/swt/widgets/Widget;
 findWidget
  (Lorg/eclipse/swt/widgets/Widget;J)Lorg/eclipse/swt/widgets/Widget;
- (Lorg/eclipse/swt/widgets/Widget;J)Lorg/eclipse/swt/widgets/Widget;
+ (L1org/eclipse/swt/widgets/Widget;J)L0org/eclipse/swt/widgets/Widget;
 getActiveShell
  ()Lorg/eclipse/swt/widgets/Shell;
  ()L0org/eclipse/swt/widgets/Shell;
 getBounds
  ()Lorg/eclipse/swt/graphics/Rectangle;
- ()L1org/eclipse/swt/graphics/Rectangle;
+ ()L1org/eclipse/swt/graphics/Rectangle; # @Inherited(org.eclipse.swt.graphics.Device)
 getClientArea
  ()Lorg/eclipse/swt/graphics/Rectangle;
- ()L1org/eclipse/swt/graphics/Rectangle;
+ ()L1org/eclipse/swt/graphics/Rectangle; # @Inherited(org.eclipse.swt.graphics.Device)
 getCursorControl
  ()Lorg/eclipse/swt/widgets/Control;
  ()L0org/eclipse/swt/widgets/Control;
@@ -79,16 +79,16 @@ getData
  ()L0java/lang/Object;
 getData
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)Ljava/lang/Object;
+ (L1java/lang/String;)L0java/lang/Object;
 getErrorHandler
  ()Ljava/util/function/Consumer<Ljava/lang/Error;>;
- ()Ljava/util/function/Consumer<Ljava/lang/Error;>;
+ ()L1java/util/function/Consumer<L1java/lang/Error;>;
 getFocusControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L0org/eclipse/swt/widgets/Control;
 getIconSizes
  ()[Lorg/eclipse/swt/graphics/Point;
- ()[Lorg/eclipse/swt/graphics/Point;
+ ()[1L1org/eclipse/swt/graphics/Point;
 getMenuBar
  ()Lorg/eclipse/swt/widgets/Menu;
  ()L0org/eclipse/swt/widgets/Menu;
@@ -112,13 +112,13 @@ getSynchronizer
  ()L1org/eclipse/swt/widgets/Synchronizer;
 getSystemColor
  (I)Lorg/eclipse/swt/graphics/Color;
- (I)L1org/eclipse/swt/graphics/Color;
+ (I)L1org/eclipse/swt/graphics/Color; # @Inherited(org.eclipse.swt.graphics.Device)
 getSystemCursor
  (I)Lorg/eclipse/swt/graphics/Cursor;
  (I)Lorg/eclipse/swt/graphics/Cursor;
 getSystemFont
  ()Lorg/eclipse/swt/graphics/Font;
- ()Lorg/eclipse/swt/graphics/Font;
+ ()L1org/eclipse/swt/graphics/Font; # @Inherited(org.eclipse.swt.graphics.Device)
 getSystemImage
  (I)Lorg/eclipse/swt/graphics/Image;
  (I)Lorg/eclipse/swt/graphics/Image;
@@ -154,37 +154,37 @@ map
  (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/graphics/Rectangle;)Lorg/eclipse/swt/graphics/Rectangle;
 post
  (Lorg/eclipse/swt/widgets/Event;)Z
- (Lorg/eclipse/swt/widgets/Event;)Z
+ (L1org/eclipse/swt/widgets/Event;)Z
 removeFilter
  (ILorg/eclipse/swt/widgets/Listener;)V
- (ILorg/eclipse/swt/widgets/Listener;)V
+ (IL1org/eclipse/swt/widgets/Listener;)V
 removeListener
  (ILorg/eclipse/swt/widgets/Listener;)V
- (ILorg/eclipse/swt/widgets/Listener;)V
+ (IL1org/eclipse/swt/widgets/Listener;)V
 setCursorLocation
  (Lorg/eclipse/swt/graphics/Point;)V
- (Lorg/eclipse/swt/graphics/Point;)V
+ (L1org/eclipse/swt/graphics/Point;)V
 setData
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L0java/lang/Object;)V
 setData
  (Ljava/lang/String;Ljava/lang/Object;)V
- (Ljava/lang/String;Ljava/lang/Object;)V
+ (L1java/lang/String;L0java/lang/Object;)V
 setErrorHandler
  (Ljava/util/function/Consumer<Ljava/lang/Error;>;)V
- (Ljava/util/function/Consumer<Ljava/lang/Error;>;)V
+ (L1java/util/function/Consumer<L1java/lang/Error;>;)V
 setRuntimeExceptionHandler
  (Ljava/util/function/Consumer<Ljava/lang/RuntimeException;>;)V
- (Ljava/util/function/Consumer<Ljava/lang/RuntimeException;>;)V
+ (L1java/util/function/Consumer<L1java/lang/RuntimeException;>;)V
 setSynchronizer
  (Lorg/eclipse/swt/widgets/Synchronizer;)V
- (Lorg/eclipse/swt/widgets/Synchronizer;)V
+ (L1org/eclipse/swt/widgets/Synchronizer;)V
 syncCall
  <T:Ljava/lang/Object;E:Ljava/lang/Exception;>(Lorg/eclipse/swt/SwtCallable<TT;TE;>;)TT;^TE;
  <T:Ljava/lang/Object;E:Ljava/lang/Exception;>(Lorg/eclipse/swt/SwtCallable<TT;TE;>;)TT;^TE;
 syncExec
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V
 timerExec
  (ILjava/lang/Runnable;)V
- (ILjava/lang/Runnable;)V
+ (IL1java/lang/Runnable;)V

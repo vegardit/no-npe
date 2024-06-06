@@ -20,10 +20,10 @@ addVerifyListener
  (Lorg/eclipse/swt/events/VerifyListener;)V
 computeSize
  (IIZ)Lorg/eclipse/swt/graphics/Point;
- (IIZ)Lorg/eclipse/swt/graphics/Point;
+ (IIZ)L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.swt.widgets.Control)
 getChildren
  ()[Lorg/eclipse/swt/widgets/Control;
- ()[Lorg/eclipse/swt/widgets/Control;
+ ()[1L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.swt.widgets.Composite)
 getItem
  (I)Ljava/lang/String;
  (I)Ljava/lang/String;
@@ -32,13 +32,13 @@ getItems
  ()[Ljava/lang/String;
 getMenu
  ()Lorg/eclipse/swt/widgets/Menu;
- ()Lorg/eclipse/swt/widgets/Menu;
+ ()L0org/eclipse/swt/widgets/Menu; # @Inherited(org.eclipse.swt.widgets.Control)
 getSelection
  ()Lorg/eclipse/swt/graphics/Point;
  ()Lorg/eclipse/swt/graphics/Point;
 getShell
  ()Lorg/eclipse/swt/widgets/Shell;
- ()Lorg/eclipse/swt/widgets/Shell;
+ ()L1org/eclipse/swt/widgets/Shell; # @Inherited(org.eclipse.swt.widgets.Control)
 getText
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -62,13 +62,13 @@ removeVerifyListener
  (Lorg/eclipse/swt/events/VerifyListener;)V
 setBackground
  (Lorg/eclipse/swt/graphics/Color;)V
- (Lorg/eclipse/swt/graphics/Color;)V
+ (L0org/eclipse/swt/graphics/Color;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setFont
  (Lorg/eclipse/swt/graphics/Font;)V
- (Lorg/eclipse/swt/graphics/Font;)V
+ (L0org/eclipse/swt/graphics/Font;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setForeground
  (Lorg/eclipse/swt/graphics/Color;)V
- (Lorg/eclipse/swt/graphics/Color;)V
+ (L0org/eclipse/swt/graphics/Color;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setItem
  (ILjava/lang/String;)V
  (ILjava/lang/String;)V
@@ -77,10 +77,10 @@ setItems
  ([Ljava/lang/String;)V
 setLayout
  (Lorg/eclipse/swt/widgets/Layout;)V
- (Lorg/eclipse/swt/widgets/Layout;)V
+ (L0org/eclipse/swt/widgets/Layout;)V # @Inherited(org.eclipse.swt.widgets.Composite)
 setMenu
  (Lorg/eclipse/swt/widgets/Menu;)V
- (Lorg/eclipse/swt/widgets/Menu;)V
+ (L0org/eclipse/swt/widgets/Menu;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setSelection
  (Lorg/eclipse/swt/graphics/Point;)V
  (Lorg/eclipse/swt/graphics/Point;)V
@@ -89,4 +89,4 @@ setText
  (Ljava/lang/String;)V
 setToolTipText
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Inherited(org.eclipse.swt.widgets.Control)

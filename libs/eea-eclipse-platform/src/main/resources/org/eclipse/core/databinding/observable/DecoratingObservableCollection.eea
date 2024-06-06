@@ -1,5 +1,10 @@
 class org/eclipse/core/databinding/observable/DecoratingObservableCollection
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super org/eclipse/core/databinding/observable/IObservableCollection
+ <TE;>
+ <TE;>
 
 <init>
  (Lorg/eclipse/core/databinding/observable/IObservableCollection<TE;>;Z)V
@@ -18,7 +23,7 @@ containsAll
  (Ljava/util/Collection<*>;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.eclipse.core.databinding.observable.DecoratingObservable)
 getElementType
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -42,4 +47,4 @@ toArray
  <T:Ljava/lang/Object;>([TT;)[TT;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

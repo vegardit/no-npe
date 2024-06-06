@@ -15,16 +15,16 @@ addPageChangingListener
  (Lorg/eclipse/jface/dialogs/IPageChangingListener;)V
 configureShell
  (Lorg/eclipse/swt/widgets/Shell;)V
- (Lorg/eclipse/swt/widgets/Shell;)V
+ (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)
 createButtonsForButtonBar
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.dialogs.Dialog)
 createContents
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.dialogs.TitleAreaDialog)
 createDialogArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.dialogs.TitleAreaDialog)
 createProgressMonitorPart
  (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/swt/layout/GridLayout;)Lorg/eclipse/jface/wizard/ProgressMonitorPart;
  (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/swt/layout/GridLayout;)Lorg/eclipse/jface/wizard/ProgressMonitorPart;
@@ -42,7 +42,7 @@ getCurrentPage
  ()Lorg/eclipse/jface/wizard/IWizardPage;
 getDialogBoundsSettings
  ()Lorg/eclipse/jface/dialogs/IDialogSettings;
- ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+ ()L0org/eclipse/jface/dialogs/IDialogSettings; # @Inherited(org.eclipse.jface.dialogs.Dialog)
 getProgressMonitor
  ()Lorg/eclipse/core/runtime/IProgressMonitor;
  ()Lorg/eclipse/core/runtime/IProgressMonitor;
@@ -63,7 +63,7 @@ run
  (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
 setButtonLayoutData
  (Lorg/eclipse/swt/widgets/Button;)V
- (Lorg/eclipse/swt/widgets/Button;)V
+ (L1org/eclipse/swt/widgets/Button;)V # @Inherited(org.eclipse.jface.dialogs.Dialog)
 setMinimumPageSize
  (Lorg/eclipse/swt/graphics/Point;)V
  (Lorg/eclipse/swt/graphics/Point;)V

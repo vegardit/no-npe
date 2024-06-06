@@ -5,10 +5,10 @@ class org/eclipse/debug/ui/sourcelookup/SourceLookupDialog
  (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/debug/core/sourcelookup/ISourceLookupDirector;)V
 configureShell
  (Lorg/eclipse/swt/widgets/Shell;)V
- (Lorg/eclipse/swt/widgets/Shell;)V
+ (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)
 createDialogArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.dialogs.TitleAreaDialog)
 getDialogBoundsSettings
  ()Lorg/eclipse/jface/dialogs/IDialogSettings;
- ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+ ()L0org/eclipse/jface/dialogs/IDialogSettings; # @Inherited(org.eclipse.jface.dialogs.Dialog)

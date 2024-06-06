@@ -1,5 +1,9 @@
 class org/eclipse/osgi/container/Module
 
+super java/lang/Comparable
+ <Lorg/eclipse/osgi/container/Module;>
+ <Lorg/eclipse/osgi/container/Module;>
+
 ACTIVE_SET
  Ljava/util/EnumSet<Lorg/eclipse/osgi/container/Module$State;>;
  L1java/util/EnumSet<Lorg/eclipse/osgi/container/Module$State;>;
@@ -51,7 +55,7 @@ stop
  ([Lorg/eclipse/osgi/container/Module$StopOptions;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 unlockStateChange
  (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;)V
  (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;)V

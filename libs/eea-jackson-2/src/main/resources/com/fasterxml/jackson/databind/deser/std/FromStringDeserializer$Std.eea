@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/deser/std/FromStringDeserializer$Std
 
+super com/fasterxml/jackson/databind/deser/std/FromStringDeserializer
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 LOCALE_EXT_MARKER
  Ljava/lang/String;
  L1java/lang/String;
@@ -12,10 +16,10 @@ _deserialize
  (L1java/lang/String;L1com/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
 _deserializeFromEmptyStringDefault
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
- (L1com/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (L1com/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object; # @Inherited(com.fasterxml.jackson.databind.deser.std.FromStringDeserializer)
 _firstHyphenOrUnderscore
  (Ljava/lang/String;)I
  (L1java/lang/String;)I
 getEmptyValue
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
- (L1com/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (L1com/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)

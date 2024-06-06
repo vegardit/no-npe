@@ -1,5 +1,10 @@
 class org/eclipse/core/databinding/observable/map/ObservableMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super org/eclipse/core/databinding/observable/map/IObservableMap
+ <TK;TV;>
+ <TK;TV;>
 
 wrappedMap
  Ljava/util/Map<TK;TV;>;
@@ -25,7 +30,7 @@ entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 fireMapChange
  (Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;)V
  (Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;)V

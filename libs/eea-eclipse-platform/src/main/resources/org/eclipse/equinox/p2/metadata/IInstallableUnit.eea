@@ -1,5 +1,9 @@
 class org/eclipse/equinox/p2/metadata/IInstallableUnit
 
+super java/lang/Comparable
+ <Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>
+ <Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>
+
 NAMESPACE_IU_ID
  Ljava/lang/String;
  L1java/lang/String;
@@ -33,7 +37,7 @@ PROP_PROVIDER
 
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getArtifacts
  ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
  ()Ljava/util/Collection<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;

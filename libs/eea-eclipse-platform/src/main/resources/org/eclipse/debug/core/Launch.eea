@@ -5,49 +5,49 @@ class org/eclipse/debug/core/Launch
  (Lorg/eclipse/debug/core/ILaunchConfiguration;Ljava/lang/String;Lorg/eclipse/debug/core/model/ISourceLocator;)V
 addDebugTarget
  (Lorg/eclipse/debug/core/model/IDebugTarget;)V
- (Lorg/eclipse/debug/core/model/IDebugTarget;)V
+ (L1org/eclipse/debug/core/model/IDebugTarget;)V # @Inherited(org.eclipse.debug.core.ILaunch)
 addProcess
  (Lorg/eclipse/debug/core/model/IProcess;)V
- (Lorg/eclipse/debug/core/model/IProcess;)V
+ (L1org/eclipse/debug/core/model/IProcess;)V # @Inherited(org.eclipse.debug.core.ILaunch)
 addProcesses
  ([Lorg/eclipse/debug/core/model/IProcess;)V
  ([Lorg/eclipse/debug/core/model/IProcess;)V
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.PlatformObject)
 getAttribute
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/String;)L0java/lang/String; # @Inherited(org.eclipse.debug.core.ILaunch)
 getChildren
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[1L1java/lang/Object; # @Inherited(org.eclipse.debug.core.ILaunch)
 getDebugTarget
  ()Lorg/eclipse/debug/core/model/IDebugTarget;
- ()Lorg/eclipse/debug/core/model/IDebugTarget;
+ ()L0org/eclipse/debug/core/model/IDebugTarget; # @Inherited(org.eclipse.debug.core.ILaunch)
 getDebugTargets
  ()[Lorg/eclipse/debug/core/model/IDebugTarget;
- ()[Lorg/eclipse/debug/core/model/IDebugTarget;
+ ()[1L1org/eclipse/debug/core/model/IDebugTarget; # @Inherited(org.eclipse.debug.core.ILaunch)
 getDebugTargets0
  ()Ljava/util/List<Lorg/eclipse/debug/core/model/IDebugTarget;>;
  ()Ljava/util/List<Lorg/eclipse/debug/core/model/IDebugTarget;>;
 getLaunchConfiguration
  ()Lorg/eclipse/debug/core/ILaunchConfiguration;
- ()Lorg/eclipse/debug/core/ILaunchConfiguration;
+ ()L0org/eclipse/debug/core/ILaunchConfiguration; # @Inherited(org.eclipse.debug.core.ILaunch)
 getLaunchManager
  ()Lorg/eclipse/debug/core/ILaunchManager;
  ()Lorg/eclipse/debug/core/ILaunchManager;
 getLaunchMode
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.debug.core.ILaunch)
 getProcesses
  ()[Lorg/eclipse/debug/core/model/IProcess;
- ()[Lorg/eclipse/debug/core/model/IProcess;
+ ()[1L1org/eclipse/debug/core/model/IProcess; # @Inherited(org.eclipse.debug.core.ILaunch)
 getProcesses0
  ()Ljava/util/List<Lorg/eclipse/debug/core/model/IProcess;>;
  ()Ljava/util/List<Lorg/eclipse/debug/core/model/IProcess;>;
 getSourceLocator
  ()Lorg/eclipse/debug/core/model/ISourceLocator;
- ()Lorg/eclipse/debug/core/model/ISourceLocator;
+ ()L0org/eclipse/debug/core/model/ISourceLocator; # @Inherited(org.eclipse.debug.core.ILaunch)
 handleDebugEvents
  ([Lorg/eclipse/debug/core/DebugEvent;)V
  ([Lorg/eclipse/debug/core/DebugEvent;)V
@@ -71,13 +71,13 @@ launchRemoved
  (Lorg/eclipse/debug/core/ILaunch;)V
 removeDebugTarget
  (Lorg/eclipse/debug/core/model/IDebugTarget;)V
- (Lorg/eclipse/debug/core/model/IDebugTarget;)V
+ (L1org/eclipse/debug/core/model/IDebugTarget;)V # @Inherited(org.eclipse.debug.core.ILaunch)
 removeProcess
  (Lorg/eclipse/debug/core/model/IProcess;)V
- (Lorg/eclipse/debug/core/model/IProcess;)V
+ (L1org/eclipse/debug/core/model/IProcess;)V # @Inherited(org.eclipse.debug.core.ILaunch)
 setAttribute
  (Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;L0java/lang/String;)V # @Inherited(org.eclipse.debug.core.ILaunch)
 setSourceLocator
  (Lorg/eclipse/debug/core/model/ISourceLocator;)V
- (Lorg/eclipse/debug/core/model/ISourceLocator;)V
+ (L0org/eclipse/debug/core/model/ISourceLocator;)V # @Inherited(org.eclipse.debug.core.ILaunch)

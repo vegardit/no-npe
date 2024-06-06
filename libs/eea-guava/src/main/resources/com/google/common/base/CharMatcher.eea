@@ -1,5 +1,9 @@
 class com/google/common/base/CharMatcher
 
+super com/google/common/base/Predicate
+ <Ljava/lang/Character;>
+ <Ljava/lang/Character;>
+
 any
  ()Lcom/google/common/base/CharMatcher;
  ()Lcom/google/common/base/CharMatcher;
@@ -114,7 +118,7 @@ retainFrom
  (Ljava/lang/CharSequence;)Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 trimAndCollapseFrom
  (Ljava/lang/CharSequence;C)Ljava/lang/String;
  (Ljava/lang/CharSequence;C)Ljava/lang/String;

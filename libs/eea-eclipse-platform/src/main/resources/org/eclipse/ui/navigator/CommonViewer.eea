@@ -32,13 +32,13 @@ getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
 handleDispose
  (Lorg/eclipse/swt/events/DisposeEvent;)V
- (Lorg/eclipse/swt/events/DisposeEvent;)V
+ (L1org/eclipse/swt/events/DisposeEvent;)V # @Inherited(org.eclipse.jface.viewers.ColumnViewer)
 handleDoubleSelect
  (Lorg/eclipse/swt/events/SelectionEvent;)V
  (Lorg/eclipse/swt/events/SelectionEvent;)V
 handleLabelProviderChanged
  (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
- (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
+ (L1org/eclipse/jface/viewers/LabelProviderChangedEvent;)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 handleOpen
  (Lorg/eclipse/swt/events/SelectionEvent;)V
  (Lorg/eclipse/swt/events/SelectionEvent;)V
@@ -50,7 +50,7 @@ handleSelect
  (Lorg/eclipse/swt/events/SelectionEvent;)V
 hookControl
  (Lorg/eclipse/swt/widgets/Control;)V
- (Lorg/eclipse/swt/widgets/Control;)V
+ (L1org/eclipse/swt/widgets/Control;)V # @Inherited(org.eclipse.jface.viewers.TreeViewer)
 internalRefresh
  (Ljava/lang/Object;Z)V
  (Ljava/lang/Object;Z)V
@@ -83,7 +83,7 @@ setSorter
  (Lorg/eclipse/jface/viewers/ViewerSorter;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 unmapElement
  (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V
  (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Widget;)V

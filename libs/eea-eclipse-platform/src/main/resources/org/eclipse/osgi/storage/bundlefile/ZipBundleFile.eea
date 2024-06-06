@@ -1,5 +1,9 @@
 class org/eclipse/osgi/storage/bundlefile/ZipBundleFile
 
+super org/eclipse/osgi/storage/bundlefile/CloseableBundleFile
+ <Ljava/util/zip/ZipEntry;>
+ <Ljava/util/zip/ZipEntry;>
+
 <init>
  (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Lorg/eclipse/osgi/storage/bundlefile/MRUBundleFileList;Lorg/eclipse/osgi/internal/debug/Debug;Z)V
  (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Lorg/eclipse/osgi/storage/bundlefile/MRUBundleFileList;Lorg/eclipse/osgi/internal/debug/Debug;Z)V

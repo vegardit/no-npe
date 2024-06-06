@@ -1,5 +1,9 @@
 class com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder
 
+super java/lang/Comparable
+ <Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>
+ <Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>
+
 _annotationIntrospector
  Lcom/fasterxml/jackson/databind/AnnotationIntrospector;
  Lcom/fasterxml/jackson/databind/AnnotationIntrospector;
@@ -168,7 +172,7 @@ removeNonVisible
  (ZLcom/fasterxml/jackson/databind/introspect/POJOPropertiesCollector;)Lcom/fasterxml/jackson/annotation/JsonProperty$Access;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 withName
  (Lcom/fasterxml/jackson/databind/PropertyName;)Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;
  (Lcom/fasterxml/jackson/databind/PropertyName;)Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;

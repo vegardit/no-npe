@@ -76,7 +76,7 @@ getLocalizedMessage
  ()L0java/lang/String;
 getMessage
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(com.fasterxml.jackson.core.JsonProcessingException)
 getPath
  ()Ljava/util/List<Lcom/fasterxml/jackson/databind/JsonMappingException$Reference;>;
  ()Ljava/util/List<Lcom/fasterxml/jackson/databind/JsonMappingException$Reference;>;
@@ -100,7 +100,7 @@ prependPath
  (Ljava/lang/Object;Ljava/lang/String;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(com.fasterxml.jackson.core.JsonProcessingException)
 withCause
  (Ljava/lang/Throwable;)Lcom/fasterxml/jackson/databind/JsonMappingException;
  (Ljava/lang/Throwable;)Lcom/fasterxml/jackson/databind/JsonMappingException;

@@ -1,5 +1,13 @@
 class org/eclipse/e4/ui/model/application/ui/impl/GenericTrimContainerImpl
  <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>
+ <T::Lorg/eclipse/e4/ui/model/application/ui/MUIElement;>
+
+super org/eclipse/e4/ui/model/application/ui/impl/ElementContainerImpl
+ <TT;>
+ <TT;>
+super org/eclipse/e4/ui/model/application/ui/MGenericTrimContainer
+ <TT;>
+ <TT;>
 
 SIDE_EDEFAULT
  Lorg/eclipse/e4/ui/model/application/ui/SideValue;
@@ -26,4 +34,4 @@ setSide
  (Lorg/eclipse/e4/ui/model/application/ui/SideValue;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl)

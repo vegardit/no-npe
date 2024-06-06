@@ -2,7 +2,7 @@ class org/eclipse/debug/ui/AbstractLaunchConfigurationTab
 
 activated
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 createCheckButton
  (Lorg/eclipse/swt/widgets/Composite;Ljava/lang/String;)Lorg/eclipse/swt/widgets/Button;
  (Lorg/eclipse/swt/widgets/Composite;Ljava/lang/String;)Lorg/eclipse/swt/widgets/Button;
@@ -23,7 +23,7 @@ createVerticalSpacer
  (Lorg/eclipse/swt/widgets/Composite;I)V
 deactivated
  (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
- (Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V
+ (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 getAttributeLabel
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -62,10 +62,10 @@ getWarningMessage
  ()Ljava/lang/String;
 isValid
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
- (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
+ (L1org/eclipse/debug/core/ILaunchConfiguration;)Z # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 launched
  (Lorg/eclipse/debug/core/ILaunch;)V
- (Lorg/eclipse/debug/core/ILaunch;)V
+ (L1org/eclipse/debug/core/ILaunch;)V # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)
 setAttribute
  (Ljava/lang/String;Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;ZZ)V
  (Ljava/lang/String;Lorg/eclipse/debug/core/ILaunchConfigurationWorkingCopy;ZZ)V

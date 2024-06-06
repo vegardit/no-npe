@@ -11,7 +11,7 @@ class org/eclipse/ui/console/AbstractConsole
  (Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Z)V
 addPropertyChangeListener
  (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
- (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Inherited(org.eclipse.ui.console.IConsole)
 firePropertyChange
  (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
  (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
@@ -20,16 +20,16 @@ getHelpContextId
  ()Ljava/lang/String;
 getImageDescriptor
  ()Lorg/eclipse/jface/resource/ImageDescriptor;
- ()Lorg/eclipse/jface/resource/ImageDescriptor;
+ ()L0org/eclipse/jface/resource/ImageDescriptor; # @Inherited(org.eclipse.ui.console.IConsole)
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ui.console.IConsole)
 getType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.ui.console.IConsole)
 removePropertyChangeListener
  (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
- (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Inherited(org.eclipse.ui.console.IConsole)
 setImageDescriptor
  (Lorg/eclipse/jface/resource/ImageDescriptor;)V
  (Lorg/eclipse/jface/resource/ImageDescriptor;)V

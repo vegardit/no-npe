@@ -30,7 +30,7 @@ execute
  (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
 getAffectedObjects
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[0L1java/lang/Object; # @Inherited(org.eclipse.core.commands.operations.IAdvancedUndoableOperation)
 getErrorStatus
  (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
  (Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
@@ -66,7 +66,7 @@ setTargetResources
  ([Lorg/eclipse/core/resources/IResource;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.core.commands.operations.AbstractOperation)
 undo
  (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;
  (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/core/runtime/IStatus;

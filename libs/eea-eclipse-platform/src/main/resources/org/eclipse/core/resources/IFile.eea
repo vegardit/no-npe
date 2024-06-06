@@ -23,7 +23,7 @@ delete
  (ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
 getCharset
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Overrides(org.eclipse.core.resources.IEncodedStorage)
 getCharset
  (Z)Ljava/lang/String;
  (Z)L0java/lang/String;
@@ -41,7 +41,7 @@ getContents
  (Z)L1java/io/InputStream;
 getFullPath
  ()Lorg/eclipse/core/runtime/IPath;
- ()L1org/eclipse/core/runtime/IPath;
+ ()L1org/eclipse/core/runtime/IPath; # @Inherited(org.eclipse.core.resources.IResource)
 getHistory
  (Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/core/resources/IFileState;
  (L0org/eclipse/core/runtime/IProgressMonitor;)[1L1org/eclipse/core/resources/IFileState;
@@ -50,7 +50,7 @@ getLineSeparator
  (Z)L1java/lang/String;
 getName
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.core.resources.IResource)
 move
  (Lorg/eclipse/core/runtime/IPath;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1org/eclipse/core/runtime/IPath;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V

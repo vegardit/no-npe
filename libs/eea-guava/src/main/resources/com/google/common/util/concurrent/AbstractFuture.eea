@@ -1,5 +1,10 @@
 class com/google/common/util/concurrent/AbstractFuture
  <V:Ljava/lang/Object;>
+ <V:Ljava/lang/Object;>
+
+super com/google/common/util/concurrent/ListenableFuture
+ <TV;>
+ <TV;>
 
 addListener
  (Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
@@ -24,7 +29,7 @@ setFuture
  (Lcom/google/common/util/concurrent/ListenableFuture<+TV;>;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 tryInternalFastPathGetFailure
  ()Ljava/lang/Throwable;
  ()L1java/lang/Throwable;

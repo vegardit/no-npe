@@ -1,5 +1,9 @@
 class org/eclipse/equinox/p2/metadata/Version
 
+super java/lang/Comparable
+ <Lorg/eclipse/equinox/p2/metadata/Version;>
+ <Lorg/eclipse/equinox/p2/metadata/Version;>
+
 MAX_VERSION
  Lorg/eclipse/equinox/p2/metadata/Version;
  L1org/eclipse/equinox/p2/metadata/Version;
@@ -40,7 +44,7 @@ getSegment
  (I)Ljava/lang/Comparable<*>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toString
  (Ljava/lang/StringBuffer;)V
  (Ljava/lang/StringBuffer;)V

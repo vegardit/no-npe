@@ -1,5 +1,13 @@
 class com/google/common/graph/Network
  <N:Ljava/lang/Object;E:Ljava/lang/Object;>
+ <N:Ljava/lang/Object;E:Ljava/lang/Object;>
+
+super com/google/common/graph/SuccessorsFunction
+ <TN;>
+ <TN;>
+super com/google/common/graph/PredecessorsFunction
+ <TN;>
+ <TN;>
 
 adjacentEdges
  (TE;)Ljava/util/Set<TE;>;
@@ -39,7 +47,7 @@ edgesConnecting
  (TN;TN;)Ljava/util/Set<TE;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 hasEdgeConnecting
  (Lcom/google/common/graph/EndpointPair<TN;>;)Z
  (Lcom/google/common/graph/EndpointPair<TN;>;)Z

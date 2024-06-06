@@ -1,5 +1,16 @@
 class org/eclipse/core/databinding/bind/steps/ListTwoWaySteps$ListTwoWayConvertToStep
  <F:Ljava/lang/Object;THIS::Lorg/eclipse/core/databinding/bind/steps/ListTwoWaySteps$ListTwoWayConvertToStep<TF;TTHIS;>;>
+ <F:Ljava/lang/Object;THIS::Lorg/eclipse/core/databinding/bind/steps/ListTwoWaySteps$ListTwoWayConvertToStep<TF;TTHIS;>;>
+
+super org/eclipse/core/databinding/bind/steps/ListTwoWaySteps$ListTwoWayToStep
+ <TF;TF;>
+ <TF;TF;>
+super org/eclipse/core/databinding/bind/steps/CommonSteps$ConvertToStep
+ <TF;>
+ <TF;>
+super org/eclipse/core/databinding/bind/steps/ListTwoWaySteps$ListTwoWayConfigStep
+ <TF;TF;TTHIS;>
+ <TF;TF;TTHIS;>
 
 convertTo
  <T:Ljava/lang/Object;>(Lorg/eclipse/core/databinding/conversion/IConverter<-TF;+TT;>;)Lorg/eclipse/core/databinding/bind/steps/ListTwoWaySteps$ListTwoWayConvertFromStep<TF;TT;>;

@@ -1,5 +1,10 @@
 class com/google/common/collect/TreeRangeMap
  <K::Ljava/lang/Comparable;V:Ljava/lang/Object;>
+ <K::Ljava/lang/Comparable;V:Ljava/lang/Object;>
+
+super com/google/common/collect/RangeMap
+ <TK;TV;>
+ <TK;TV;>
 
 create
  <K::Ljava/lang/Comparable;V:Ljava/lang/Object;>()Lcom/google/common/collect/TreeRangeMap<TK;TV;>;
@@ -13,13 +18,13 @@ asMapOfRanges
  ()Ljava/util/Map<Lcom/google/common/collect/Range<TK;>;TV;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (TK;)TV;
- (TK;)T1V;
+ (TK;)T1V; # @Inherited(com.google.common.collect.RangeMap)
 getEntry
  (TK;)Ljava/util/Map$Entry<Lcom/google/common/collect/Range<TK;>;TV;>;
- (TK;)L1java/util/Map$Entry<Lcom/google/common/collect/Range<TK;>;TV;>;
+ (TK;)L1java/util/Map$Entry<Lcom/google/common/collect/Range<TK;>;TV;>; # @Inherited(com.google.common.collect.RangeMap)
 merge
  (Lcom/google/common/collect/Range<TK;>;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)V
  (Lcom/google/common/collect/Range<TK;>;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)V
@@ -43,4 +48,4 @@ subRangeMap
  (Lcom/google/common/collect/Range<TK;>;)Lcom/google/common/collect/RangeMap<TK;TV;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

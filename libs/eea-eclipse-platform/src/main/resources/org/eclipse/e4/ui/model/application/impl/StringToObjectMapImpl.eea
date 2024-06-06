@@ -1,5 +1,9 @@
 class org/eclipse/e4/ui/model/application/impl/StringToObjectMapImpl
 
+super org/eclipse/emf/common/util/BasicEMap$Entry
+ <Ljava/lang/String;Ljava/lang/Object;>
+ <Ljava/lang/String;Ljava/lang/Object;>
+
 KEY_EDEFAULT
  Ljava/lang/String;
  L1java/lang/String;
@@ -52,4 +56,4 @@ setValue
  (Ljava/lang/Object;)Ljava/lang/Object;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

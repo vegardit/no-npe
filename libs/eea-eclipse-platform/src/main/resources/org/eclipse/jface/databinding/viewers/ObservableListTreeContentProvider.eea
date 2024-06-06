@@ -1,27 +1,28 @@
 class org/eclipse/jface/databinding/viewers/ObservableListTreeContentProvider
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
 
 <init>
  (Lorg/eclipse/core/databinding/observable/masterdetail/IObservableFactory<-TE;+Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;>;Lorg/eclipse/jface/databinding/viewers/TreeStructureAdvisor<-TE;>;)V
  (Lorg/eclipse/core/databinding/observable/masterdetail/IObservableFactory<-TE;+Lorg/eclipse/core/databinding/observable/list/IObservableList<TE;>;>;Lorg/eclipse/jface/databinding/viewers/TreeStructureAdvisor<-TE;>;)V
 getChildren
  (Ljava/lang/Object;)[Ljava/lang/Object;
- (Ljava/lang/Object;)[Ljava/lang/Object;
+ (L1java/lang/Object;)[1L1java/lang/Object; # @Inherited(org.eclipse.jface.viewers.ITreeContentProvider)
 getElements
  (Ljava/lang/Object;)[Ljava/lang/Object;
- (Ljava/lang/Object;)[Ljava/lang/Object;
+ (L0java/lang/Object;)[1L1java/lang/Object; # @Inherited(org.eclipse.jface.viewers.ITreeContentProvider)
 getKnownElements
  ()Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
  ()Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
 getParent
  (Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;)Ljava/lang/Object;
+ (L1java/lang/Object;)L0java/lang/Object; # @Inherited(org.eclipse.jface.viewers.ITreeContentProvider)
 getRealizedElements
  ()Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
  ()Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
 hasChildren
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L1java/lang/Object;)Z # @Inherited(org.eclipse.jface.viewers.ITreeContentProvider)
 inputChanged
  (Lorg/eclipse/jface/viewers/Viewer;Ljava/lang/Object;Ljava/lang/Object;)V
- (Lorg/eclipse/jface/viewers/Viewer;Ljava/lang/Object;Ljava/lang/Object;)V
+ (L1org/eclipse/jface/viewers/Viewer;L0java/lang/Object;L0java/lang/Object;)V # @Inherited(org.eclipse.jface.viewers.IContentProvider)

@@ -5,16 +5,16 @@ class org/eclipse/ui/dialogs/SelectionDialog
  (Lorg/eclipse/swt/widgets/Shell;)V
 configureShell
  (Lorg/eclipse/swt/widgets/Shell;)V
- (Lorg/eclipse/swt/widgets/Shell;)V
+ (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)
 createButtonsForButtonBar
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.dialogs.Dialog)
 createMessageArea
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Label;
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Label;
 getDialogBoundsSettings
  ()Lorg/eclipse/jface/dialogs/IDialogSettings;
- ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+ ()L0org/eclipse/jface/dialogs/IDialogSettings; # @Inherited(org.eclipse.jface.dialogs.Dialog)
 getInitialElementSelections
  ()Ljava/util/List;
  ()Ljava/util/List;

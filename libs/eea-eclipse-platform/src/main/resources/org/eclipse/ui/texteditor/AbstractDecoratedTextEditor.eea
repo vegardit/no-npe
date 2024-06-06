@@ -58,7 +58,7 @@ createOverviewRuler
  (Lorg/eclipse/jface/text/source/ISharedTextColors;)Lorg/eclipse/jface/text/source/IOverviewRuler;
 createPartControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.texteditor.StatusTextEditor)
 createShowInTargetList
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
@@ -79,7 +79,7 @@ editorContextMenuAboutToShow
  (Lorg/eclipse/jface/action/IMenuManager;)V
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
 getAnnotationAccess
  ()Lorg/eclipse/jface/text/source/IAnnotationAccess;
  ()Lorg/eclipse/jface/text/source/IAnnotationAccess;
