@@ -5,7 +5,7 @@ class java/awt/List$AccessibleAWTList
  (Ljava/awt/List;)V
 actionPerformed
  (Ljava/awt/event/ActionEvent;)V
- (Ljava/awt/event/ActionEvent;)V
+ (L1java/awt/event/ActionEvent;)V # @Inherited(java.awt.event.ActionListener)
 getAccessibleAt
  (Ljava/awt/Point;)Ljavax/accessibility/Accessible;
  (Ljava/awt/Point;)Ljavax/accessibility/Accessible;
@@ -26,4 +26,4 @@ getAccessibleStateSet
  ()Ljavax/accessibility/AccessibleStateSet;
 itemStateChanged
  (Ljava/awt/event/ItemEvent;)V
- (Ljava/awt/event/ItemEvent;)V
+ (L1java/awt/event/ItemEvent;)V # @Inherited(java.awt.event.ItemListener)

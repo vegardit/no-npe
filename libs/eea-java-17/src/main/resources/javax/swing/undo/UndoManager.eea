@@ -23,10 +23,10 @@ redoTo
  (Ljavax/swing/undo/UndoableEdit;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.undo.CompoundEdit)
 undoTo
  (Ljavax/swing/undo/UndoableEdit;)V
  (Ljavax/swing/undo/UndoableEdit;)V
 undoableEditHappened
  (Ljavax/swing/event/UndoableEditEvent;)V
- (Ljavax/swing/event/UndoableEditEvent;)V
+ (L1javax/swing/event/UndoableEditEvent;)V # @Inherited(javax.swing.event.UndoableEditListener)

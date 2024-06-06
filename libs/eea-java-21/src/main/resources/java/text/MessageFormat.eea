@@ -15,19 +15,19 @@ applyPattern
  (Ljava/lang/String;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.text.Format)
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 format
  (Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
- (Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
+ (L1java/lang/Object;L1java/lang/StringBuffer;L1java/text/FieldPosition;)L1java/lang/StringBuffer; # @Inherited(java.text.Format)
 format
  ([Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
  ([Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
 formatToCharacterIterator
  (Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
- (Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
+ (L1java/lang/Object;)L1java/text/AttributedCharacterIterator; # @Inherited(java.text.Format)
 getFormats
  ()[Ljava/text/Format;
  ()[Ljava/text/Format;
@@ -45,7 +45,7 @@ parse
  (Ljava/lang/String;Ljava/text/ParsePosition;)[Ljava/lang/Object;
 parseObject
  (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;
- (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;
+ (L1java/lang/String;L1java/text/ParsePosition;)L0java/lang/Object; # @Inherited(java.text.Format)
 setFormat
  (ILjava/text/Format;)V
  (ILjava/text/Format;)V

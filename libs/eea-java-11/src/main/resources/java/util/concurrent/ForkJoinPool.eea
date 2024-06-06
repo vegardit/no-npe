@@ -22,13 +22,13 @@ awaitQuiescence
  (JLjava/util/concurrent/TimeUnit;)Z
 awaitTermination
  (JLjava/util/concurrent/TimeUnit;)Z
- (JLjava/util/concurrent/TimeUnit;)Z
+ (JL1java/util/concurrent/TimeUnit;)Z # @Inherited(java.util.concurrent.ExecutorService)
 drainTasksTo
  (Ljava/util/Collection<-Ljava/util/concurrent/ForkJoinTask<*>;>;)I
  (Ljava/util/Collection<-Ljava/util/concurrent/ForkJoinTask<*>;>;)I
 execute
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V # @Inherited(java.util.concurrent.Executor)
 execute
  (Ljava/util/concurrent/ForkJoinTask<*>;)V
  (Ljava/util/concurrent/ForkJoinTask<*>;)V
@@ -43,7 +43,7 @@ invoke
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/ForkJoinTask<TT;>;)TT;
 invokeAll
  <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)Ljava/util/List<Ljava/util/concurrent/Future<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)Ljava/util/List<Ljava/util/concurrent/Future<TT;>;>;
+ <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)L1java/util/List<L1java/util/concurrent/Future<TT;>;>; # @Inherited(java.util.concurrent.AbstractExecutorService)
 newTaskFor
  <T:Ljava/lang/Object;>(Ljava/lang/Runnable;TT;)Ljava/util/concurrent/RunnableFuture<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/Runnable;TT;)Ljava/util/concurrent/RunnableFuture<TT;>;
@@ -55,7 +55,7 @@ pollSubmission
  ()Ljava/util/concurrent/ForkJoinTask<*>;
 shutdownNow
  ()Ljava/util/List<Ljava/lang/Runnable;>;
- ()Ljava/util/List<Ljava/lang/Runnable;>;
+ ()L1java/util/List<L1java/lang/Runnable;>; # @Inherited(java.util.concurrent.ExecutorService)
 submit
  (Ljava/lang/Runnable;)Ljava/util/concurrent/ForkJoinTask<*>;
  (Ljava/lang/Runnable;)Ljava/util/concurrent/ForkJoinTask<*>;
@@ -70,4 +70,4 @@ submit
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/ForkJoinTask<TT;>;)Ljava/util/concurrent/ForkJoinTask<TT;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -39,7 +39,7 @@ getTranslateInstance
  ([F)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 concatenate
  (Ljava/awt/geom/AffineTransform;)V
  (Ljava/awt/geom/AffineTransform;)V
@@ -57,7 +57,7 @@ deltaTransform
  ([DI[DII)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getMatrix
  ([D)V
  ([D)V
@@ -75,7 +75,7 @@ setTransform
  (Ljava/awt/geom/AffineTransform;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 transform
  (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;
  (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;

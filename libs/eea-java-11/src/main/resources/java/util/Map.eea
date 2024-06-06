@@ -1,5 +1,6 @@
 class java/util/Map
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
 
 copyOf
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<+TK;+TV;>;)Ljava/util/Map<TK;TV;>;
@@ -64,7 +65,7 @@ entrySet
  ()L1java/util/Set<L1java/util/Map$Entry<TK;TV;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 forEach
  (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
  (L1java/util/function/BiConsumer<-TK;-TV;>;)V

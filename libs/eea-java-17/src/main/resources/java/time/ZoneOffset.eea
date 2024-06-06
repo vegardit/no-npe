@@ -1,5 +1,9 @@
 class java/time/ZoneOffset
 
+super java/lang/Comparable
+ <Ljava/time/ZoneOffset;>
+ <Ljava/time/ZoneOffset;>
+
 MAX
  Ljava/time/ZoneOffset;
  L1java/time/ZoneOffset;
@@ -37,19 +41,19 @@ compareTo
  (Ljava/time/ZoneOffset;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.time.ZoneId)
 get
  (Ljava/time/temporal/TemporalField;)I
  (Ljava/time/temporal/TemporalField;)I
 getId
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.time.ZoneId)
 getLong
  (Ljava/time/temporal/TemporalField;)J
  (Ljava/time/temporal/TemporalField;)J
 getRules
  ()Ljava/time/zone/ZoneRules;
- ()Ljava/time/zone/ZoneRules;
+ ()L1java/time/zone/ZoneRules; # @Inherited(java.time.ZoneId)
 isSupported
  (Ljava/time/temporal/TemporalField;)Z
  (Ljava/time/temporal/TemporalField;)Z
@@ -61,4 +65,4 @@ range
  (Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.time.ZoneId)

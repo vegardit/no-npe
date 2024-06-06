@@ -21,13 +21,13 @@ deinstall
  (Ljavax/swing/text/JTextComponent;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.awt.Rectangle)
 focusGained
  (Ljava/awt/event/FocusEvent;)V
- (Ljava/awt/event/FocusEvent;)V
+ (L1java/awt/event/FocusEvent;)V # @Inherited(java.awt.event.FocusListener)
 focusLost
  (Ljava/awt/event/FocusEvent;)V
- (Ljava/awt/event/FocusEvent;)V
+ (L1java/awt/event/FocusEvent;)V # @Inherited(java.awt.event.FocusListener)
 getChangeListeners
  ()[Ljavax/swing/event/ChangeListener;
  ()[Ljavax/swing/event/ChangeListener;
@@ -54,25 +54,25 @@ install
  (Ljavax/swing/text/JTextComponent;)V
 mouseClicked
  (Ljava/awt/event/MouseEvent;)V
- (Ljava/awt/event/MouseEvent;)V
+ (L1java/awt/event/MouseEvent;)V # @Inherited(java.awt.event.MouseListener)
 mouseDragged
  (Ljava/awt/event/MouseEvent;)V
- (Ljava/awt/event/MouseEvent;)V
+ (L1java/awt/event/MouseEvent;)V # @Inherited(java.awt.event.MouseMotionListener)
 mouseEntered
  (Ljava/awt/event/MouseEvent;)V
- (Ljava/awt/event/MouseEvent;)V
+ (L1java/awt/event/MouseEvent;)V # @Inherited(java.awt.event.MouseListener)
 mouseExited
  (Ljava/awt/event/MouseEvent;)V
- (Ljava/awt/event/MouseEvent;)V
+ (L1java/awt/event/MouseEvent;)V # @Inherited(java.awt.event.MouseListener)
 mouseMoved
  (Ljava/awt/event/MouseEvent;)V
- (Ljava/awt/event/MouseEvent;)V
+ (L1java/awt/event/MouseEvent;)V # @Inherited(java.awt.event.MouseMotionListener)
 mousePressed
  (Ljava/awt/event/MouseEvent;)V
- (Ljava/awt/event/MouseEvent;)V
+ (L1java/awt/event/MouseEvent;)V # @Inherited(java.awt.event.MouseListener)
 mouseReleased
  (Ljava/awt/event/MouseEvent;)V
- (Ljava/awt/event/MouseEvent;)V
+ (L1java/awt/event/MouseEvent;)V # @Inherited(java.awt.event.MouseListener)
 moveCaret
  (Ljava/awt/event/MouseEvent;)V
  (Ljava/awt/event/MouseEvent;)V
@@ -96,4 +96,4 @@ setMagicCaretPosition
  (Ljava/awt/Point;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.awt.Rectangle)

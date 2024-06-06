@@ -1,5 +1,10 @@
 class javax/management/openmbean/SimpleType
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super javax/management/openmbean/OpenType
+ <TT;>
+ <TT;>
 
 BIGDECIMAL
  Ljavax/management/openmbean/SimpleType<Ljava/math/BigDecimal;>;
@@ -46,7 +51,7 @@ VOID
 
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(javax.management.openmbean.OpenType)
 isValue
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
@@ -55,4 +60,4 @@ readResolve
  ()L1java/lang/Object;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.management.openmbean.OpenType)

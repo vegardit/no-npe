@@ -1,5 +1,13 @@
 class java/util/SortedSet
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/Set
+ <TE;>
+ <TE;>
+super java/util/SequencedSet
+ <TE;>
+ <TE;>
 
 addFirst
  (TE;)V
@@ -36,7 +44,7 @@ reversed
  ()Ljava/util/SortedSet<TE;>;
 spliterator
  ()Ljava/util/Spliterator<TE;>;
- ()L1java/util/Spliterator<TE;>;
+ ()L1java/util/Spliterator<TE;>; # @Inherited(java.util.Set)
 subSet
  (TE;TE;)Ljava/util/SortedSet<TE;>;
  (TE;TE;)L1java/util/SortedSet<TE;>;

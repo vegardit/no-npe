@@ -17,10 +17,10 @@ getFD
  ()Ljava/io/FileDescriptor;
 read
  ([B)I
- ([B)I
+ ([1B)I # @Inherited(java.io.InputStream)
 read
  ([BII)I
- ([BII)I
+ ([1BII)I # @Inherited(java.io.InputStream)
 readAllBytes
  ()[B
  ()[B
@@ -29,4 +29,4 @@ readNBytes
  (I)[B
 transferTo
  (Ljava/io/OutputStream;)J
- (Ljava/io/OutputStream;)J
+ (L1java/io/OutputStream;)J # @Inherited(java.io.InputStream)

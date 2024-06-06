@@ -1,5 +1,6 @@
 class javax/swing/JComboBox
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
 
 actionCommand
  Ljava/lang/String;
@@ -31,7 +32,7 @@ selectedItemReminder
  ([TE;)V
 actionPerformed
  (Ljava/awt/event/ActionEvent;)V
- (Ljava/awt/event/ActionEvent;)V
+ (L1java/awt/event/ActionEvent;)V # @Inherited(java.awt.event.ActionListener)
 actionPropertyChanged
  (Ljavax/swing/Action;Ljava/lang/String;)V
  (Ljavax/swing/Action;Ljava/lang/String;)V
@@ -55,7 +56,7 @@ configurePropertiesFromAction
  (Ljavax/swing/Action;)V
 contentsChanged
  (Ljavax/swing/event/ListDataEvent;)V
- (Ljavax/swing/event/ListDataEvent;)V
+ (L1javax/swing/event/ListDataEvent;)V # @Inherited(javax.swing.event.ListDataListener)
 createActionPropertyChangeListener
  (Ljavax/swing/Action;)Ljava/beans/PropertyChangeListener;
  (Ljavax/swing/Action;)Ljava/beans/PropertyChangeListener;
@@ -118,10 +119,10 @@ insertItemAt
  (TE;I)V
 intervalAdded
  (Ljavax/swing/event/ListDataEvent;)V
- (Ljavax/swing/event/ListDataEvent;)V
+ (L1javax/swing/event/ListDataEvent;)V # @Inherited(javax.swing.event.ListDataListener)
 intervalRemoved
  (Ljavax/swing/event/ListDataEvent;)V
- (Ljavax/swing/event/ListDataEvent;)V
+ (L1javax/swing/event/ListDataEvent;)V # @Inherited(javax.swing.event.ListDataListener)
 paramString
  ()Ljava/lang/String;
  ()Ljava/lang/String;

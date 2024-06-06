@@ -5,10 +5,10 @@ class javax/swing/text/JTextComponent$AccessibleJTextComponent
  (Ljavax/swing/text/JTextComponent;)V
 caretUpdate
  (Ljavax/swing/event/CaretEvent;)V
- (Ljavax/swing/event/CaretEvent;)V
+ (L1javax/swing/event/CaretEvent;)V # @Inherited(javax.swing.event.CaretListener)
 changedUpdate
  (Ljavax/swing/event/DocumentEvent;)V
- (Ljavax/swing/event/DocumentEvent;)V
+ (L1javax/swing/event/DocumentEvent;)V # @Inherited(javax.swing.event.DocumentListener)
 getAccessibleAction
  ()Ljavax/accessibility/AccessibleAction;
  ()Ljavax/accessibility/AccessibleAction;
@@ -68,10 +68,10 @@ insertTextAtIndex
  (ILjava/lang/String;)V
 insertUpdate
  (Ljavax/swing/event/DocumentEvent;)V
- (Ljavax/swing/event/DocumentEvent;)V
+ (L1javax/swing/event/DocumentEvent;)V # @Inherited(javax.swing.event.DocumentListener)
 removeUpdate
  (Ljavax/swing/event/DocumentEvent;)V
- (Ljavax/swing/event/DocumentEvent;)V
+ (L1javax/swing/event/DocumentEvent;)V # @Inherited(javax.swing.event.DocumentListener)
 replaceText
  (IILjava/lang/String;)V
  (IILjava/lang/String;)V

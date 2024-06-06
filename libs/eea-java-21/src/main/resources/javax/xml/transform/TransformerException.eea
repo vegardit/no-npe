@@ -17,7 +17,7 @@ class javax/xml/transform/TransformerException
  (L0java/lang/Throwable;)V
 getCause
  ()Ljava/lang/Throwable;
- ()L0java/lang/Throwable;
+ ()L0java/lang/Throwable; # @Inherited(java.lang.Throwable)
 getException
  ()Ljava/lang/Throwable;
  ()Ljava/lang/Throwable;
@@ -32,13 +32,13 @@ getMessageAndLocation
  ()Ljava/lang/String;
 initCause
  (Ljava/lang/Throwable;)Ljava/lang/Throwable;
- (L0java/lang/Throwable;)Ljava/lang/Throwable;
+ (L0java/lang/Throwable;)Ljava/lang/Throwable; # @Inherited(java.lang.Throwable)
 printStackTrace
  (Ljava/io/PrintStream;)V
- (L1java/io/PrintStream;)V
+ (L1java/io/PrintStream;)V # @Inherited(java.lang.Throwable)
 printStackTrace
  (Ljava/io/PrintWriter;)V
- (L1java/io/PrintWriter;)V
+ (L1java/io/PrintWriter;)V # @Inherited(java.lang.Throwable)
 setLocator
  (Ljavax/xml/transform/SourceLocator;)V
  (Ljavax/xml/transform/SourceLocator;)V

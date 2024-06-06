@@ -61,22 +61,22 @@ addColumn
  (Ljavax/swing/table/TableColumn;)V
 columnAdded
  (Ljavax/swing/event/TableColumnModelEvent;)V
- (Ljavax/swing/event/TableColumnModelEvent;)V
+ (L1javax/swing/event/TableColumnModelEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 columnAtPoint
  (Ljava/awt/Point;)I
  (Ljava/awt/Point;)I
 columnMarginChanged
  (Ljavax/swing/event/ChangeEvent;)V
- (Ljavax/swing/event/ChangeEvent;)V
+ (L1javax/swing/event/ChangeEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 columnMoved
  (Ljavax/swing/event/TableColumnModelEvent;)V
- (Ljavax/swing/event/TableColumnModelEvent;)V
+ (L1javax/swing/event/TableColumnModelEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 columnRemoved
  (Ljavax/swing/event/TableColumnModelEvent;)V
- (Ljavax/swing/event/TableColumnModelEvent;)V
+ (L1javax/swing/event/TableColumnModelEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 columnSelectionChanged
  (Ljavax/swing/event/ListSelectionEvent;)V
- (Ljavax/swing/event/ListSelectionEvent;)V
+ (L1javax/swing/event/ListSelectionEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 createDefaultColumnModel
  ()Ljavax/swing/table/TableColumnModel;
  ()Ljavax/swing/table/TableColumnModel;
@@ -94,10 +94,10 @@ editCellAt
  (IILjava/util/EventObject;)Z
 editingCanceled
  (Ljavax/swing/event/ChangeEvent;)V
- (Ljavax/swing/event/ChangeEvent;)V
+ (L1javax/swing/event/ChangeEvent;)V # @Inherited(javax.swing.event.CellEditorListener)
 editingStopped
  (Ljavax/swing/event/ChangeEvent;)V
- (Ljavax/swing/event/ChangeEvent;)V
+ (L1javax/swing/event/ChangeEvent;)V # @Inherited(javax.swing.event.CellEditorListener)
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -184,7 +184,7 @@ getTableHeader
  ()Ljavax/swing/table/JTableHeader;
 getToolTipText
  (Ljava/awt/event/MouseEvent;)Ljava/lang/String;
- (Ljava/awt/event/MouseEvent;)Ljava/lang/String;
+ (L1java/awt/event/MouseEvent;)Ljava/lang/String; # @Inherited(javax.swing.JComponent)
 getUI
  ()Ljavax/swing/plaf/TableUI;
  ()Ljavax/swing/plaf/TableUI;
@@ -274,10 +274,10 @@ setValueAt
  (Ljava/lang/Object;II)V
 sorterChanged
  (Ljavax/swing/event/RowSorterEvent;)V
- (Ljavax/swing/event/RowSorterEvent;)V
+ (L1javax/swing/event/RowSorterEvent;)V # @Inherited(javax.swing.event.RowSorterListener)
 tableChanged
  (Ljavax/swing/event/TableModelEvent;)V
- (Ljavax/swing/event/TableModelEvent;)V
+ (L1javax/swing/event/TableModelEvent;)V # @Inherited(javax.swing.event.TableModelListener)
 valueChanged
  (Ljavax/swing/event/ListSelectionEvent;)V
- (Ljavax/swing/event/ListSelectionEvent;)V
+ (L1javax/swing/event/ListSelectionEvent;)V # @Inherited(javax.swing.event.ListSelectionListener)

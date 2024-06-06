@@ -1,5 +1,9 @@
 class java/time/OffsetDateTime
 
+super java/lang/Comparable
+ <Ljava/time/OffsetDateTime;>
+ <Ljava/time/OffsetDateTime;>
+
 MAX
  Ljava/time/OffsetDateTime;
  L1java/time/OffsetDateTime;
@@ -55,7 +59,7 @@ compareTo
  (L1java/time/OffsetDateTime;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 format
  (Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
  (L1java/time/format/DateTimeFormatter;)L1java/lang/String;
@@ -172,7 +176,7 @@ toOffsetTime
  ()L1java/time/OffsetTime;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toZonedDateTime
  ()Ljava/time/ZonedDateTime;
  ()L1java/time/ZonedDateTime;

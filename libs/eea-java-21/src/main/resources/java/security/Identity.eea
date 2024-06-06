@@ -14,13 +14,13 @@ certificates
  ()[Ljava/security/Certificate;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getInfo
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.security.Principal)
 getPublicKey
  ()Ljava/security/PublicKey;
  ()Ljava/security/PublicKey;
@@ -41,7 +41,7 @@ setPublicKey
  (Ljava/security/PublicKey;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toString
  (Z)Ljava/lang/String;
  (Z)Ljava/lang/String;

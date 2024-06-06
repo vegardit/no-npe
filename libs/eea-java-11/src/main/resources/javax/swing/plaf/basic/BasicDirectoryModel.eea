@@ -1,5 +1,9 @@
 class javax/swing/plaf/basic/BasicDirectoryModel
 
+super javax/swing/AbstractListModel
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 <init>
  (Ljavax/swing/JFileChooser;)V
  (Ljavax/swing/JFileChooser;)V
@@ -38,7 +42,7 @@ lt
  (Ljava/io/File;Ljava/io/File;)Z
 propertyChange
  (Ljava/beans/PropertyChangeEvent;)V
- (Ljava/beans/PropertyChangeEvent;)V
+ (L1java/beans/PropertyChangeEvent;)V # @Inherited(java.beans.PropertyChangeListener)
 removePropertyChangeListener
  (Ljava/beans/PropertyChangeListener;)V
  (Ljava/beans/PropertyChangeListener;)V

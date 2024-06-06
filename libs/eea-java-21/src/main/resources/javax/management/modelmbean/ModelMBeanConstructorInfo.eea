@@ -14,7 +14,7 @@ class javax/management/modelmbean/ModelMBeanConstructorInfo
  (Ljava/lang/String;Ljava/lang/reflect/Constructor<*>;Ljavax/management/Descriptor;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(javax.management.MBeanConstructorInfo)
 getDescriptor
  ()Ljavax/management/Descriptor;
  ()Ljavax/management/Descriptor;
@@ -23,4 +23,4 @@ setDescriptor
  (Ljavax/management/Descriptor;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.management.MBeanConstructorInfo)

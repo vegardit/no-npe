@@ -17,7 +17,7 @@ class javax/management/modelmbean/ModelMBeanOperationInfo
  (Ljavax/management/modelmbean/ModelMBeanOperationInfo;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(javax.management.MBeanOperationInfo)
 getDescriptor
  ()Ljavax/management/Descriptor;
  ()Ljavax/management/Descriptor;
@@ -26,4 +26,4 @@ setDescriptor
  (Ljavax/management/Descriptor;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.management.MBeanOperationInfo)

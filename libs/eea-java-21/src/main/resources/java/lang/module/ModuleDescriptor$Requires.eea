@@ -1,5 +1,9 @@
 class java/lang/module/ModuleDescriptor$Requires
 
+super java/lang/Comparable
+ <Ljava/lang/module/ModuleDescriptor$Requires;>
+ <Ljava/lang/module/ModuleDescriptor$Requires;>
+
 accessFlags
  ()Ljava/util/Set<Ljava/lang/reflect/AccessFlag;>;
  ()Ljava/util/Set<Ljava/lang/reflect/AccessFlag;>;
@@ -11,7 +15,7 @@ compiledVersion
  ()Ljava/util/Optional<Ljava/lang/module/ModuleDescriptor$Version;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 modifiers
  ()Ljava/util/Set<Ljava/lang/module/ModuleDescriptor$Requires$Modifier;>;
  ()Ljava/util/Set<Ljava/lang/module/ModuleDescriptor$Requires$Modifier;>;
@@ -23,4 +27,4 @@ rawCompiledVersion
  ()Ljava/util/Optional<Ljava/lang/String;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

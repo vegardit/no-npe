@@ -1,5 +1,9 @@
 class javax/management/openmbean/CompositeType
 
+super javax/management/openmbean/OpenType
+ <Ljavax/management/openmbean/CompositeData;>
+ <Ljavax/management/openmbean/CompositeData;>
+
 <init>
  (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljavax/management/openmbean/OpenType<*>;)V
  (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljavax/management/openmbean/OpenType<*>;)V
@@ -8,7 +12,7 @@ containsKey
  (Ljava/lang/String;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(javax.management.openmbean.OpenType)
 getDescription
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -23,4 +27,4 @@ keySet
  ()Ljava/util/Set<Ljava/lang/String;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.management.openmbean.OpenType)

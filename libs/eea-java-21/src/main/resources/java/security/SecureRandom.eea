@@ -45,7 +45,7 @@ getProvider
  ()L1java/security/Provider;
 nextBytes
  ([B)V
- ([1B)V
+ ([1B)V # @Inherited(java.util.Random)
 nextBytes
  ([BLjava/security/SecureRandomParameters;)V
  ([1BL1java/security/SecureRandomParameters;)V
@@ -57,4 +57,4 @@ setSeed
  ([1B)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

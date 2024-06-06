@@ -5,13 +5,13 @@ add
  (Ljavax/xml/datatype/Duration;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 compare
  (Ljavax/xml/datatype/XMLGregorianCalendar;)I
  (Ljavax/xml/datatype/XMLGregorianCalendar;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getEon
  ()Ljava/math/BigInteger;
  ()Ljava/math/BigInteger;
@@ -47,7 +47,7 @@ toGregorianCalendar
  (Ljava/util/TimeZone;Ljava/util/Locale;Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/util/GregorianCalendar;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toXMLFormat
  ()Ljava/lang/String;
  ()Ljava/lang/String;

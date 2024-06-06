@@ -1,5 +1,9 @@
 class java/nio/DoubleBuffer
 
+super java/lang/Comparable
+ <Ljava/nio/DoubleBuffer;>
+ <Ljava/nio/DoubleBuffer;>
+
 allocate
  (I)Ljava/nio/DoubleBuffer;
  (I)Ljava/nio/DoubleBuffer;
@@ -30,7 +34,7 @@ duplicate
  ()Ljava/nio/DoubleBuffer;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 flip
  ()Ljava/nio/DoubleBuffer;
  ()Ljava/nio/DoubleBuffer;
@@ -81,4 +85,4 @@ slice
  ()Ljava/nio/DoubleBuffer;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

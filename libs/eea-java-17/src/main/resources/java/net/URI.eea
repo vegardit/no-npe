@@ -1,5 +1,9 @@
 class java/net/URI
 
+super java/lang/Comparable
+ <Ljava/net/URI;>
+ <Ljava/net/URI;>
+
 create
  (Ljava/lang/String;)Ljava/net/URI;
  (L1java/lang/String;)L1java/net/URI;
@@ -24,7 +28,7 @@ compareTo
  (Ljava/net/URI;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAuthority
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -87,7 +91,7 @@ toASCIIString
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toURL
  ()Ljava/net/URL;
  ()Ljava/net/URL;

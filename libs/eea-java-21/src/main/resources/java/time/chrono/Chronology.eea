@@ -1,5 +1,9 @@
 class java/time/chrono/Chronology
 
+super java/lang/Comparable
+ <Ljava/time/chrono/Chronology;>
+ <Ljava/time/chrono/Chronology;>
+
 from
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/Chronology;
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/Chronology;
@@ -51,7 +55,7 @@ epochSecond
  (Ljava/time/chrono/Era;IIIIIILjava/time/ZoneOffset;)J
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 eraOf
  (I)Ljava/time/chrono/Era;
  (I)Ljava/time/chrono/Era;
@@ -84,7 +88,7 @@ resolveDate
  (Ljava/util/Map<Ljava/time/temporal/TemporalField;Ljava/lang/Long;>;Ljava/time/format/ResolverStyle;)Ljava/time/chrono/ChronoLocalDate;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 zonedDateTime
  (Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime<+Ljava/time/chrono/ChronoLocalDate;>;
  (Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime<+Ljava/time/chrono/ChronoLocalDate;>;

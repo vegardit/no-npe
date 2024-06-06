@@ -17,7 +17,7 @@ class javax/management/openmbean/OpenMBeanAttributeInfoSupport
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/String;Ljavax/management/openmbean/OpenType<TT;>;ZZZTT;[TT;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(javax.management.MBeanAttributeInfo)
 getDefaultValue
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -38,4 +38,4 @@ isValue
  (Ljava/lang/Object;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.management.MBeanAttributeInfo)

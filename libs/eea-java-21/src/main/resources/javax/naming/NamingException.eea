@@ -24,7 +24,7 @@ appendRemainingName
  (Ljavax/naming/Name;)V
 getCause
  ()Ljava/lang/Throwable;
- ()L0java/lang/Throwable;
+ ()L0java/lang/Throwable; # @Inherited(java.lang.Throwable)
 getExplanation
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -42,7 +42,7 @@ getRootCause
  ()Ljava/lang/Throwable;
 initCause
  (Ljava/lang/Throwable;)Ljava/lang/Throwable;
- (L0java/lang/Throwable;)Ljava/lang/Throwable;
+ (L0java/lang/Throwable;)Ljava/lang/Throwable; # @Inherited(java.lang.Throwable)
 setRemainingName
  (Ljavax/naming/Name;)V
  (Ljavax/naming/Name;)V
@@ -57,7 +57,7 @@ setRootCause
  (Ljava/lang/Throwable;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Throwable)
 toString
  (Z)Ljava/lang/String;
  (Z)Ljava/lang/String;

@@ -1,5 +1,9 @@
 class javax/naming/ldap/Rdn
 
+super java/lang/Comparable
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 escapeValue
  (Ljava/lang/Object;)Ljava/lang/String;
  (Ljava/lang/Object;)Ljava/lang/String;
@@ -24,7 +28,7 @@ compareTo
  (Ljava/lang/Object;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getType
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -36,4 +40,4 @@ toAttributes
  ()Ljavax/naming/directory/Attributes;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

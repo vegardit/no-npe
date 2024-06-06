@@ -11,10 +11,10 @@ applyPattern
  (Ljava/lang/String;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.text.NumberFormat)
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.text.NumberFormat)
 format
  (DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
  (DLjava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
@@ -29,7 +29,7 @@ getLimits
  ()[D
 parse
  (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;
- (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;
+ (L1java/lang/String;L1java/text/ParsePosition;)L1java/lang/Number; # @Inherited(java.text.NumberFormat)
 setChoices
  ([D[Ljava/lang/String;)V
  ([D[Ljava/lang/String;)V

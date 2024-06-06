@@ -12,10 +12,10 @@ parse
  (Ljava/lang/String;Ljava/lang/String;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getComment
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -57,4 +57,4 @@ setValue
  (Ljava/lang/String;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

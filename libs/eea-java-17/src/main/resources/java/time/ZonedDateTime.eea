@@ -1,5 +1,9 @@
 class java/time/ZonedDateTime
 
+super java/time/chrono/ChronoZonedDateTime
+ <Ljava/time/LocalDate;>
+ <Ljava/time/LocalDate;>
+
 from
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/ZonedDateTime;
  (L1java/time/temporal/TemporalAccessor;)L1java/time/ZonedDateTime;
@@ -42,7 +46,7 @@ parse
 
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 format
  (Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
  (L1java/time/format/DateTimeFormatter;)L1java/lang/String;
@@ -150,7 +154,7 @@ toOffsetDateTime
  ()L1java/time/OffsetDateTime;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 truncatedTo
  (Ljava/time/temporal/TemporalUnit;)Ljava/time/ZonedDateTime;
  (L1java/time/temporal/TemporalUnit;)L1java/time/ZonedDateTime;

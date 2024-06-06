@@ -1,5 +1,9 @@
 class java/lang/constant/MethodTypeDesc
 
+super java/lang/invoke/TypeDescriptor$OfMethod
+ <Ljava/lang/constant/ClassDesc;Ljava/lang/constant/MethodTypeDesc;>
+ <Ljava/lang/constant/ClassDesc;Ljava/lang/constant/MethodTypeDesc;>
+
 of
  (Ljava/lang/constant/ClassDesc;)Ljava/lang/constant/MethodTypeDesc;
  (Ljava/lang/constant/ClassDesc;)Ljava/lang/constant/MethodTypeDesc;
@@ -30,7 +34,7 @@ dropParameterTypes
  (II)Ljava/lang/constant/MethodTypeDesc;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 insertParameterTypes
  (I[Ljava/lang/constant/ClassDesc;)Ljava/lang/constant/MethodTypeDesc;
  (I[Ljava/lang/constant/ClassDesc;)Ljava/lang/constant/MethodTypeDesc;

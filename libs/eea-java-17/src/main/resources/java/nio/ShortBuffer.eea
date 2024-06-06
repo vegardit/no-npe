@@ -1,5 +1,9 @@
 class java/nio/ShortBuffer
 
+super java/lang/Comparable
+ <Ljava/nio/ShortBuffer;>
+ <Ljava/nio/ShortBuffer;>
+
 allocate
  (I)Ljava/nio/ShortBuffer;
  (I)Ljava/nio/ShortBuffer;
@@ -30,7 +34,7 @@ duplicate
  ()Ljava/nio/ShortBuffer;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 flip
  ()Ljava/nio/ShortBuffer;
  ()Ljava/nio/ShortBuffer;
@@ -99,4 +103,4 @@ slice
  (II)Ljava/nio/ShortBuffer;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

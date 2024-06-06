@@ -1,5 +1,13 @@
 class java/util/concurrent/CompletableFuture
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super java/util/concurrent/Future
+ <TT;>
+ <TT;>
+super java/util/concurrent/CompletionStage
+ <TT;>
+ <TT;>
 
 allOf
  ([Ljava/util/concurrent/CompletableFuture<*>;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
@@ -190,10 +198,10 @@ thenRunAsync
  (L1java/lang/Runnable;L1java/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
 toCompletableFuture
  ()Ljava/util/concurrent/CompletableFuture<TT;>;
- ()L1java/util/concurrent/CompletableFuture<TT;>;
+ ()L1java/util/concurrent/CompletableFuture<TT;>; # @Inherited(java.util.concurrent.CompletionStage)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 whenComplete
  (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)Ljava/util/concurrent/CompletableFuture<TT;>;
  (L1java/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)L1java/util/concurrent/CompletableFuture<TT;>;

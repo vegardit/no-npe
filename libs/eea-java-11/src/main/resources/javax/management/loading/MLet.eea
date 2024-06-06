@@ -29,10 +29,10 @@ check
  (Ljava/lang/String;Ljava/net/URL;Ljava/lang/String;Ljavax/management/loading/MLetContent;)Ljava/net/URL;
 findClass
  (Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (L0java/lang/String;)L1java/lang/Class<*>; # @Inherited(java.net.URLClassLoader)
 findLibrary
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (L0java/lang/String;)L0java/lang/String; # @Inherited(java.lang.ClassLoader)
 getLibraryDirectory
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -56,10 +56,10 @@ preRegister
  (Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;
 readExternal
  (Ljava/io/ObjectInput;)V
- (L1java/io/ObjectInput;)V
+ (L1java/io/ObjectInput;)V # @Inherited(java.io.Externalizable)
 setLibraryDirectory
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 writeExternal
  (Ljava/io/ObjectOutput;)V
- (L1java/io/ObjectOutput;)V
+ (L1java/io/ObjectOutput;)V # @Inherited(java.io.Externalizable)

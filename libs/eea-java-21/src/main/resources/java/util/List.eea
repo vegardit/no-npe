@@ -1,5 +1,10 @@
 class java/util/List
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/SequencedCollection
+ <TE;>
+ <TE;>
 
 copyOf
  <E:Ljava/lang/Object;>(Ljava/util/Collection<+TE;>;)Ljava/util/List<TE;>;
@@ -52,7 +57,7 @@ addAll
  (IL1java/util/Collection<+TE;>;)Z
 addAll
  (Ljava/util/Collection<+TE;>;)Z
- (L1java/util/Collection<+TE;>;)Z
+ (L1java/util/Collection<+TE;>;)Z # @Inherited(java.util.Collection)
 addFirst
  (TE;)V
  (TE;)V
@@ -64,10 +69,10 @@ contains
  (L0java/lang/Object;)Z
 containsAll
  (Ljava/util/Collection<*>;)Z
- (L1java/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.Collection)
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (I)TE;
  (I)TE;
@@ -82,7 +87,7 @@ indexOf
  (L0java/lang/Object;)I
 iterator
  ()Ljava/util/Iterator<TE;>;
- ()L1java/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(java.util.Collection)
 lastIndexOf
  (Ljava/lang/Object;)I
  (L0java/lang/Object;)I
@@ -100,7 +105,7 @@ remove
  (Ljava/lang/Object;)Z
 removeAll
  (Ljava/util/Collection<*>;)Z
- (L1java/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.Collection)
 removeFirst
  ()TE;
  ()TE;
@@ -112,7 +117,7 @@ replaceAll
  (L1java/util/function/UnaryOperator<TE;>;)V
 retainAll
  (Ljava/util/Collection<*>;)Z
- (L1java/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.Collection)
 reversed
  ()Ljava/util/List<TE;>;
  ()Ljava/util/List<TE;>;
@@ -124,13 +129,13 @@ sort
  (L1java/util/Comparator<-TE;>;)V
 spliterator
  ()Ljava/util/Spliterator<TE;>;
- ()L1java/util/Spliterator<TE;>;
+ ()L1java/util/Spliterator<TE;>; # @Inherited(java.util.Collection)
 subList
  (II)Ljava/util/List<TE;>;
  (II)L1java/util/List<TE;>;
 toArray
  ()[Ljava/lang/Object;
- ()[1Ljava/lang/Object;
+ ()[1Ljava/lang/Object; # @Inherited(java.util.Collection)
 toArray
  <T:Ljava/lang/Object;>([TT;)[TT;
- <T:Ljava/lang/Object;>([1TT;)[1TT;
+ <T:Ljava/lang/Object;>([1TT;)[1TT; # @Inherited(java.util.Collection)

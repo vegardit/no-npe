@@ -1,5 +1,9 @@
 class java/nio/IntBuffer
 
+super java/lang/Comparable
+ <Ljava/nio/IntBuffer;>
+ <Ljava/nio/IntBuffer;>
+
 allocate
  (I)Ljava/nio/IntBuffer;
  (I)Ljava/nio/IntBuffer;
@@ -30,7 +34,7 @@ duplicate
  ()Ljava/nio/IntBuffer;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 flip
  ()Ljava/nio/IntBuffer;
  ()Ljava/nio/IntBuffer;
@@ -81,4 +85,4 @@ slice
  ()Ljava/nio/IntBuffer;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

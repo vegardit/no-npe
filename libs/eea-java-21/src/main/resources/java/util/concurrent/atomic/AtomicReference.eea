@@ -1,5 +1,6 @@
 class java/util/concurrent/atomic/AtomicReference
  <V:Ljava/lang/Object;>
+ <V:Ljava/lang/Object;>
 
 <init>
  (TV;)V
@@ -57,7 +58,7 @@ setRelease
  (TV;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 updateAndGet
  (Ljava/util/function/UnaryOperator<TV;>;)TV;
  (Ljava/util/function/UnaryOperator<TV;>;)TV;

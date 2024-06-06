@@ -1,5 +1,9 @@
 class java/nio/CharBuffer
 
+super java/lang/Comparable
+ <Ljava/nio/CharBuffer;>
+ <Ljava/nio/CharBuffer;>
+
 allocate
  (I)Ljava/nio/CharBuffer;
  (I)Ljava/nio/CharBuffer;
@@ -33,7 +37,7 @@ asReadOnlyBuffer
  ()Ljava/nio/CharBuffer;
 chars
  ()Ljava/util/stream/IntStream;
- ()Ljava/util/stream/IntStream;
+ ()L1java/util/stream/IntStream; # @Inherited(java.lang.CharSequence)
 clear
  ()Ljava/nio/CharBuffer;
  ()Ljava/nio/CharBuffer;
@@ -48,7 +52,7 @@ duplicate
  ()Ljava/nio/CharBuffer;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 flip
  ()Ljava/nio/CharBuffer;
  ()Ljava/nio/CharBuffer;
@@ -96,7 +100,7 @@ put
  ([CII)Ljava/nio/CharBuffer;
 read
  (Ljava/nio/CharBuffer;)I
- (Ljava/nio/CharBuffer;)I
+ (L1java/nio/CharBuffer;)I # @Inherited(java.lang.Readable)
 reset
  ()Ljava/nio/CharBuffer;
  ()Ljava/nio/CharBuffer;
@@ -111,4 +115,4 @@ subSequence
  (II)Ljava/nio/CharBuffer;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

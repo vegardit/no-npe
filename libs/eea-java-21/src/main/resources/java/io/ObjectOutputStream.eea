@@ -17,10 +17,10 @@ replaceObject
  (Ljava/lang/Object;)Ljava/lang/Object;
 write
  ([B)V
- ([B)V
+ ([1B)V # @Inherited(java.io.OutputStream)
 write
  ([BII)V
- ([BII)V
+ ([1BII)V # @Inherited(java.io.OutputStream)
 writeBytes
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -32,7 +32,7 @@ writeClassDescriptor
  (Ljava/io/ObjectStreamClass;)V
 writeObject
  (Ljava/lang/Object;)V
- (L1java/lang/Object;)V
+ (L1java/lang/Object;)V # @Inherited(java.io.ObjectOutput)
 writeObjectOverride
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V

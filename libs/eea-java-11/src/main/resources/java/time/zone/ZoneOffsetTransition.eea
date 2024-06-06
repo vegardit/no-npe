@@ -1,5 +1,9 @@
 class java/time/zone/ZoneOffsetTransition
 
+super java/lang/Comparable
+ <Ljava/time/zone/ZoneOffsetTransition;>
+ <Ljava/time/zone/ZoneOffsetTransition;>
+
 of
  (Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;)Ljava/time/zone/ZoneOffsetTransition;
  (Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;)Ljava/time/zone/ZoneOffsetTransition;
@@ -9,7 +13,7 @@ compareTo
  (Ljava/time/zone/ZoneOffsetTransition;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getDateTimeAfter
  ()Ljava/time/LocalDateTime;
  ()Ljava/time/LocalDateTime;
@@ -33,4 +37,4 @@ isValidOffset
  (Ljava/time/ZoneOffset;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

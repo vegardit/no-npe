@@ -21,7 +21,7 @@ position
  (J)Ljava/nio/channels/FileChannel;
 read
  (Ljava/nio/ByteBuffer;)I
- (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.SeekableByteChannel)
 read
  (Ljava/nio/ByteBuffer;J)I
  (Ljava/nio/ByteBuffer;J)I
@@ -48,7 +48,7 @@ tryLock
  (JJZ)Ljava/nio/channels/FileLock;
 write
  (Ljava/nio/ByteBuffer;)I
- (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.SeekableByteChannel)
 write
  (Ljava/nio/ByteBuffer;J)I
  (Ljava/nio/ByteBuffer;J)I

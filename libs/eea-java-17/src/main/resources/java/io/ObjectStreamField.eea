@@ -1,5 +1,9 @@
 class java/io/ObjectStreamField
 
+super java/lang/Comparable
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 <init>
  (Ljava/lang/String;Ljava/lang/Class<*>;)V
  (Ljava/lang/String;Ljava/lang/Class<*>;)V
@@ -20,4 +24,4 @@ getTypeString
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

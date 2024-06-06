@@ -27,13 +27,13 @@ add
  (Ljava/lang/Object;)Z
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 contains
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -42,7 +42,7 @@ get
  (I)Ljava/lang/Object;
 getAll
  ()Ljavax/naming/NamingEnumeration<*>;
- ()Ljavax/naming/NamingEnumeration<*>;
+ ()Ljavax/naming/NamingEnumeration<*1>; # @Inherited(javax.naming.directory.Attribute)
 getAttributeDefinition
  ()Ljavax/naming/directory/DirContext;
  ()Ljavax/naming/directory/DirContext;
@@ -63,4 +63,4 @@ set
  (ILjava/lang/Object;)Ljava/lang/Object;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

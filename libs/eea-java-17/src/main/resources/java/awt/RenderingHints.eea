@@ -1,5 +1,9 @@
 class java/awt/RenderingHints
 
+super java/util/Map
+ <Ljava/lang/Object;Ljava/lang/Object;>
+ <Ljava/lang/Object;Ljava/lang/Object;>
+
 KEY_ALPHA_INTERPOLATION
  Ljava/awt/RenderingHints$Key;
  L1java/awt/RenderingHints$Key;
@@ -153,19 +157,19 @@ add
  (Ljava/awt/RenderingHints;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 containsKey
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.Map)
 containsValue
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.Map)
 entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>;>;
  ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Object;)Ljava/lang/Object;
@@ -183,7 +187,7 @@ remove
  (Ljava/lang/Object;)Ljava/lang/Object;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 values
  ()Ljava/util/Collection<Ljava/lang/Object;>;
  ()Ljava/util/Collection<Ljava/lang/Object;>;

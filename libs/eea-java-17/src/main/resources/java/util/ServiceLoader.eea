@@ -1,5 +1,10 @@
 class java/util/ServiceLoader
  <S:Ljava/lang/Object;>
+ <S:Ljava/lang/Object;>
+
+super java/lang/Iterable
+ <TS;>
+ <TS;>
 
 load
  <S:Ljava/lang/Object;>(Ljava/lang/Class<TS;>;)Ljava/util/ServiceLoader<TS;>;
@@ -25,4 +30,4 @@ stream
  ()Ljava/util/stream/Stream<Ljava/util/ServiceLoader$Provider<TS;>;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

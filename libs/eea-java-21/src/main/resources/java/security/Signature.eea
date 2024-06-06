@@ -15,7 +15,7 @@ getInstance
  (Ljava/lang/String;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.security.SignatureSpi)
 getAlgorithm
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -54,7 +54,7 @@ sign
  ([BII)I
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 update
  (Ljava/nio/ByteBuffer;)V
  (Ljava/nio/ByteBuffer;)V

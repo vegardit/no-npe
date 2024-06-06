@@ -1,5 +1,9 @@
 class javax/naming/Name
 
+super java/lang/Comparable
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 add
  (ILjava/lang/String;)Ljavax/naming/Name;
  (ILjava/lang/String;)Ljavax/naming/Name;
@@ -14,7 +18,7 @@ addAll
  (Ljavax/naming/Name;)Ljavax/naming/Name;
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 compareTo
  (Ljava/lang/Object;)I
  (Ljava/lang/Object;)I

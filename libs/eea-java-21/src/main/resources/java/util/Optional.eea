@@ -1,5 +1,6 @@
 class java/util/Optional
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
 
 empty
  <T:Ljava/lang/Object;>()Ljava/util/Optional<TT;>;
@@ -13,7 +14,7 @@ ofNullable
 
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 filter
  (Ljava/util/function/Predicate<-TT;>;)Ljava/util/Optional<TT;>;
  (L1java/util/function/Predicate<-TT;>;)L1java/util/Optional<T1T;>;
@@ -52,4 +53,4 @@ stream
  ()L1java/util/stream/Stream<T1T;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

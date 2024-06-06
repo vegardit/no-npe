@@ -1,5 +1,9 @@
 class java/time/chrono/JapaneseDate
 
+super java/time/chrono/ChronoLocalDateImpl
+ <Ljava/time/chrono/JapaneseDate;>
+ <Ljava/time/chrono/JapaneseDate;>
+
 from
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/JapaneseDate;
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/JapaneseDate;
@@ -24,7 +28,7 @@ atTime
  (Ljava/time/LocalTime;)Ljava/time/chrono/ChronoLocalDateTime<Ljava/time/chrono/JapaneseDate;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getChronology
  ()Ljava/time/chrono/JapaneseChronology;
  ()Ljava/time/chrono/JapaneseChronology;

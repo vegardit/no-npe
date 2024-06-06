@@ -1,5 +1,9 @@
 class java/nio/LongBuffer
 
+super java/lang/Comparable
+ <Ljava/nio/LongBuffer;>
+ <Ljava/nio/LongBuffer;>
+
 allocate
  (I)Ljava/nio/LongBuffer;
  (I)Ljava/nio/LongBuffer;
@@ -30,7 +34,7 @@ duplicate
  ()Ljava/nio/LongBuffer;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 flip
  ()Ljava/nio/LongBuffer;
  ()Ljava/nio/LongBuffer;
@@ -81,4 +85,4 @@ slice
  ()Ljava/nio/LongBuffer;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

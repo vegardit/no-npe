@@ -14,7 +14,7 @@ addCertStore
  (Ljava/security/cert/CertStore;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 getCertPathCheckers
  ()Ljava/util/List<Ljava/security/cert/PKIXCertPathChecker;>;
  ()Ljava/util/List<Ljava/security/cert/PKIXCertPathChecker;>;
@@ -59,4 +59,4 @@ setTrustAnchors
  (Ljava/util/Set<Ljava/security/cert/TrustAnchor;>;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

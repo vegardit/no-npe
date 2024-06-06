@@ -1,5 +1,9 @@
 class java/lang/String
 
+super java/lang/Comparable
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 CASE_INSENSITIVE_ORDER
  Ljava/util/Comparator<Ljava/lang/String;>;
  L1java/util/Comparator<L1java/lang/String;>;
@@ -94,10 +98,10 @@ valueOf
  ([1III)V
 chars
  ()Ljava/util/stream/IntStream;
- ()L1java/util/stream/IntStream;
+ ()L1java/util/stream/IntStream; # @Inherited(java.lang.CharSequence)
 codePoints
  ()Ljava/util/stream/IntStream;
- ()L1java/util/stream/IntStream;
+ ()L1java/util/stream/IntStream; # @Inherited(java.lang.CharSequence)
 compareTo
  (Ljava/lang/String;)I
  (L1java/lang/String;)I
@@ -121,7 +125,7 @@ endsWith
  (L1java/lang/String;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 equalsIgnoreCase
  (Ljava/lang/String;)Z
  (L0java/lang/String;)Z
@@ -205,7 +209,7 @@ stripTrailing
  ()L1java/lang/String;
 subSequence
  (II)Ljava/lang/CharSequence;
- (II)L1java/lang/CharSequence;
+ (II)L1java/lang/CharSequence; # @Inherited(java.lang.CharSequence)
 substring
  (I)Ljava/lang/String;
  (I)L1java/lang/String;
@@ -223,7 +227,7 @@ toLowerCase
  (L1java/util/Locale;)L1java/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toUpperCase
  ()Ljava/lang/String;
  ()L1java/lang/String;

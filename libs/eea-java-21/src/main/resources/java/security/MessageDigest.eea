@@ -18,7 +18,7 @@ isEqual
  (L1java/lang/String;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.security.MessageDigestSpi)
 digest
  ()[B
  ()[1B
@@ -36,7 +36,7 @@ getProvider
  ()L1java/security/Provider;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 update
  (Ljava/nio/ByteBuffer;)V
  (L1java/nio/ByteBuffer;)V

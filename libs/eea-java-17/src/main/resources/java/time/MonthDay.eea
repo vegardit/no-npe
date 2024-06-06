@@ -1,5 +1,9 @@
 class java/time/MonthDay
 
+super java/lang/Comparable
+ <Ljava/time/MonthDay;>
+ <Ljava/time/MonthDay;>
+
 from
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/MonthDay;
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/MonthDay;
@@ -36,7 +40,7 @@ compareTo
  (Ljava/time/MonthDay;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 format
  (Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
  (Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
@@ -66,7 +70,7 @@ range
  (Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 with
  (Ljava/time/Month;)Ljava/time/MonthDay;
  (Ljava/time/Month;)Ljava/time/MonthDay;

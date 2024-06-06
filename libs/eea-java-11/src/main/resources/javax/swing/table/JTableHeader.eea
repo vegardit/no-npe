@@ -18,22 +18,22 @@ table
  (Ljavax/swing/table/TableColumnModel;)V
 columnAdded
  (Ljavax/swing/event/TableColumnModelEvent;)V
- (Ljavax/swing/event/TableColumnModelEvent;)V
+ (L1javax/swing/event/TableColumnModelEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 columnAtPoint
  (Ljava/awt/Point;)I
  (Ljava/awt/Point;)I
 columnMarginChanged
  (Ljavax/swing/event/ChangeEvent;)V
- (Ljavax/swing/event/ChangeEvent;)V
+ (L1javax/swing/event/ChangeEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 columnMoved
  (Ljavax/swing/event/TableColumnModelEvent;)V
- (Ljavax/swing/event/TableColumnModelEvent;)V
+ (L1javax/swing/event/TableColumnModelEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 columnRemoved
  (Ljavax/swing/event/TableColumnModelEvent;)V
- (Ljavax/swing/event/TableColumnModelEvent;)V
+ (L1javax/swing/event/TableColumnModelEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 columnSelectionChanged
  (Ljavax/swing/event/ListSelectionEvent;)V
- (Ljavax/swing/event/ListSelectionEvent;)V
+ (L1javax/swing/event/ListSelectionEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 createDefaultColumnModel
  ()Ljavax/swing/table/TableColumnModel;
  ()Ljavax/swing/table/TableColumnModel;
@@ -66,7 +66,7 @@ getTable
  ()Ljavax/swing/JTable;
 getToolTipText
  (Ljava/awt/event/MouseEvent;)Ljava/lang/String;
- (L1java/awt/event/MouseEvent;)Ljava/lang/String;
+ (L1java/awt/event/MouseEvent;)Ljava/lang/String; # @Inherited(javax.swing.JComponent)
 getUI
  ()Ljavax/swing/plaf/TableHeaderUI;
  ()Ljavax/swing/plaf/TableHeaderUI;

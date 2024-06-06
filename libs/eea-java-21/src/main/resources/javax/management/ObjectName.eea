@@ -1,5 +1,9 @@
 class javax/management/ObjectName
 
+super java/lang/Comparable
+ <Ljavax/management/ObjectName;>
+ <Ljavax/management/ObjectName;>
+
 WILDCARD
  Ljavax/management/ObjectName;
  L1javax/management/ObjectName;
@@ -40,7 +44,7 @@ compareTo
  (Ljavax/management/ObjectName;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getCanonicalKeyPropertyListString
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -67,4 +71,4 @@ setMBeanServer
  (Ljavax/management/MBeanServer;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

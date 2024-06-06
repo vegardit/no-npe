@@ -1,5 +1,9 @@
 class java/math/BigDecimal
 
+super java/lang/Comparable
+ <Ljava/math/BigDecimal;>
+ <Ljava/math/BigDecimal;>
+
 ONE
  Ljava/math/BigDecimal;
  L1java/math/BigDecimal;
@@ -109,7 +113,7 @@ divideToIntegralValue
  (Ljava/math/BigDecimal;L1java/math/MathContext;)L1java/math/BigDecimal;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 max
  (Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
  (L1java/math/BigDecimal;)L1java/math/BigDecimal;
@@ -193,7 +197,7 @@ toPlainString
  ()L1java/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 ulp
  ()Ljava/math/BigDecimal;
  ()L1java/math/BigDecimal;

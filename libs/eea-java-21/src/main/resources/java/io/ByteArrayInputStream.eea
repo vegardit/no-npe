@@ -12,7 +12,7 @@ buf
  ([BII)V
 read
  ([BII)I
- ([BII)I
+ ([1BII)I # @Inherited(java.io.InputStream)
 readAllBytes
  ()[B
  ()[B
@@ -21,4 +21,4 @@ readNBytes
  ([BII)I
 transferTo
  (Ljava/io/OutputStream;)J
- (Ljava/io/OutputStream;)J
+ (L1java/io/OutputStream;)J # @Inherited(java.io.InputStream)

@@ -57,7 +57,7 @@ startVirtualThread
  (L0java/lang/ThreadGroup;L1java/lang/String;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 getContextClassLoader
  ()Ljava/lang/ClassLoader;
  ()L0java/lang/ClassLoader;
@@ -90,4 +90,4 @@ setUncaughtExceptionHandler
  (L0java/lang/Thread$UncaughtExceptionHandler;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

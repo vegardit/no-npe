@@ -17,13 +17,13 @@ afterExecute
  (Ljava/lang/Runnable;Ljava/lang/Throwable;)V
 awaitTermination
  (JLjava/util/concurrent/TimeUnit;)Z
- (JLjava/util/concurrent/TimeUnit;)Z
+ (JL1java/util/concurrent/TimeUnit;)Z # @Inherited(java.util.concurrent.ExecutorService)
 beforeExecute
  (Ljava/lang/Thread;Ljava/lang/Runnable;)V
  (Ljava/lang/Thread;Ljava/lang/Runnable;)V
 execute
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V # @Inherited(java.util.concurrent.Executor)
 getKeepAliveTime
  (Ljava/util/concurrent/TimeUnit;)J
  (Ljava/util/concurrent/TimeUnit;)J
@@ -50,7 +50,7 @@ setThreadFactory
  (Ljava/util/concurrent/ThreadFactory;)V
 shutdownNow
  ()Ljava/util/List<Ljava/lang/Runnable;>;
- ()L1java/util/List<L1java/lang/Runnable;>;
+ ()L1java/util/List<L1java/lang/Runnable;>; # @Inherited(java.util.concurrent.ExecutorService)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

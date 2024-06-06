@@ -24,13 +24,13 @@ RFC2253
  ([1B)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getEncoded
  ()[B
  ()[1B
 getName
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.security.Principal)
 getName
  (Ljava/lang/String;)Ljava/lang/String;
  (L1java/lang/String;)L1java/lang/String;
@@ -39,4 +39,4 @@ getName
  (L1java/lang/String;L1java/util/Map<Ljava/lang/String;Ljava/lang/String;>;)L1java/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

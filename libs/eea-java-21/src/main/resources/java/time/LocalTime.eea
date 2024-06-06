@@ -1,5 +1,9 @@
 class java/time/LocalTime
 
+super java/lang/Comparable
+ <Ljava/time/LocalTime;>
+ <Ljava/time/LocalTime;>
+
 MAX
  Ljava/time/LocalTime;
  L1java/time/LocalTime;
@@ -64,7 +68,7 @@ compareTo
  (L1java/time/LocalTime;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 format
  (Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
  (L1java/time/format/DateTimeFormatter;)L1java/lang/String;
@@ -133,7 +137,7 @@ toEpochSecond
  (Ljava/time/LocalDate;Ljava/time/ZoneOffset;)J
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 truncatedTo
  (Ljava/time/temporal/TemporalUnit;)Ljava/time/LocalTime;
  (L1java/time/temporal/TemporalUnit;)L1java/time/LocalTime;

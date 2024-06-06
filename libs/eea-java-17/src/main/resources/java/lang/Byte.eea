@@ -1,5 +1,9 @@
 class java/lang/Byte
 
+super java/lang/Comparable
+ <Ljava/lang/Byte;>
+ <Ljava/lang/Byte;>
+
 TYPE
  Ljava/lang/Class<Ljava/lang/Byte;>;
  L1java/lang/Class<L1java/lang/Byte;>;
@@ -37,7 +41,7 @@ describeConstable
  ()Ljava/util/Optional<Ljava/lang/constant/DynamicConstantDesc<Ljava/lang/Byte;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

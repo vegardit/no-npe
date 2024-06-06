@@ -1,5 +1,9 @@
 class java/lang/Byte
 
+super java/lang/Comparable
+ <Ljava/lang/Byte;>
+ <Ljava/lang/Byte;>
+
 TYPE
  Ljava/lang/Class<Ljava/lang/Byte;>;
  L1java/lang/Class<L1java/lang/Byte;>;
@@ -34,7 +38,7 @@ compareTo
  (L1java/lang/Byte;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

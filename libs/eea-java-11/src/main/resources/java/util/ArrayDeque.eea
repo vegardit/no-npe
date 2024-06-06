@@ -1,15 +1,23 @@
 class java/util/ArrayDeque
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/AbstractCollection
+ <TE;>
+ <TE;>
+super java/util/Deque
+ <TE;>
+ <TE;>
 
 <init>
  (Ljava/util/Collection<+TE;>;)V
  (Ljava/util/Collection<+TE;>;)V
 add
  (TE;)Z
- (TE;)Z
+ (T1E;)Z # @Inherited(java.util.Deque)
 addAll
  (Ljava/util/Collection<+TE;>;)Z
- (Ljava/util/Collection<+TE;>;)Z
+ (L1java/util/Collection<+TE;>;)Z # @Inherited(java.util.AbstractCollection)
 addFirst
  (TE;)V
  (TE;)V
@@ -24,25 +32,25 @@ contains
  (Ljava/lang/Object;)Z
 descendingIterator
  ()Ljava/util/Iterator<TE;>;
- ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(java.util.Deque)
 element
  ()TE;
- ()TE;
+ ()T1E; # @Inherited(java.util.Deque)
 forEach
  (Ljava/util/function/Consumer<-TE;>;)V
  (Ljava/util/function/Consumer<-TE;>;)V
 getFirst
  ()TE;
- ()TE;
+ ()T1E; # @Inherited(java.util.Deque)
 getLast
  ()TE;
- ()TE;
+ ()T1E; # @Inherited(java.util.Deque)
 iterator
  ()Ljava/util/Iterator<TE;>;
- ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(java.util.AbstractCollection)
 offer
  (TE;)Z
- (TE;)Z
+ (T1E;)Z # @Inherited(java.util.Deque)
 offerFirst
  (TE;)Z
  (TE;)Z
@@ -51,61 +59,61 @@ offerLast
  (TE;)Z
 peek
  ()TE;
- ()TE;
+ ()T0E; # @Inherited(java.util.Deque)
 peekFirst
  ()TE;
- ()TE;
+ ()T0E; # @Inherited(java.util.Deque)
 peekLast
  ()TE;
- ()TE;
+ ()T0E; # @Inherited(java.util.Deque)
 poll
  ()TE;
- ()TE;
+ ()T0E; # @Inherited(java.util.Deque)
 pollFirst
  ()TE;
- ()TE;
+ ()T0E; # @Inherited(java.util.Deque)
 pollLast
  ()TE;
- ()TE;
+ ()T0E; # @Inherited(java.util.Deque)
 pop
  ()TE;
- ()TE;
+ ()T1E; # @Inherited(java.util.Deque)
 push
  (TE;)V
  (TE;)V
 remove
  ()TE;
- ()TE;
+ ()T1E; # @Inherited(java.util.Deque)
 remove
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
 removeAll
  (Ljava/util/Collection<*>;)Z
- (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
 removeFirst
  ()TE;
- ()TE;
+ ()T1E; # @Inherited(java.util.Deque)
 removeFirstOccurrence
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
 removeIf
  (Ljava/util/function/Predicate<-TE;>;)Z
- (Ljava/util/function/Predicate<-TE;>;)Z
+ (L1java/util/function/Predicate<-TE;>;)Z # @Inherited(java.util.Collection)
 removeLast
  ()TE;
- ()TE;
+ ()T1E; # @Inherited(java.util.Deque)
 removeLastOccurrence
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
 retainAll
  (Ljava/util/Collection<*>;)Z
- (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
 spliterator
  ()Ljava/util/Spliterator<TE;>;
- ()Ljava/util/Spliterator<TE;>;
+ ()L1java/util/Spliterator<TE;>; # @Inherited(java.util.Collection)
 toArray
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object; # @Inherited(java.util.AbstractCollection)
 toArray
  <T:Ljava/lang/Object;>([TT;)[TT;
- <T:Ljava/lang/Object;>([TT;)[TT;
+ <T:Ljava/lang/Object;>([1TT;)[1TT; # @Inherited(java.util.AbstractCollection)

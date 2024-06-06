@@ -1,5 +1,13 @@
 class java/util/HashSet
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/AbstractSet
+ <TE;>
+ <TE;>
+super java/util/Set
+ <TE;>
+ <TE;>
 
 <init>
  (Ljava/util/Collection<+TE;>;)V
@@ -9,16 +17,16 @@ add
  (TE;)Z
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 contains
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z
 iterator
  ()Ljava/util/Iterator<TE;>;
- ()L1java/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(java.util.AbstractCollection)
 remove
  (Ljava/lang/Object;)Z
  (L1java/lang/Object;)Z
 spliterator
  ()Ljava/util/Spliterator<TE;>;
- ()L1java/util/Spliterator<TE;>;
+ ()L1java/util/Spliterator<TE;>; # @Inherited(java.util.Set)

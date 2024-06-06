@@ -1,5 +1,10 @@
 class java/time/chrono/ChronoLocalDateTime
  <D::Ljava/time/chrono/ChronoLocalDate;>
+ <D::Ljava/time/chrono/ChronoLocalDate;>
+
+super java/lang/Comparable
+ <Ljava/time/chrono/ChronoLocalDateTime<*>;>
+ <Ljava/time/chrono/ChronoLocalDateTime<*>;>
 
 from
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDateTime<*>;
@@ -19,7 +24,7 @@ compareTo
  (Ljava/time/chrono/ChronoLocalDateTime<*>;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 format
  (Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
  (Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
@@ -70,7 +75,7 @@ toLocalTime
  ()Ljava/time/LocalTime;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 with
  (Ljava/time/temporal/TemporalAdjuster;)Ljava/time/chrono/ChronoLocalDateTime<TD;>;
  (Ljava/time/temporal/TemporalAdjuster;)Ljava/time/chrono/ChronoLocalDateTime<TD;>;

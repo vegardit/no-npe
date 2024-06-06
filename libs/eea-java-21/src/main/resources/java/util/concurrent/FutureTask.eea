@@ -1,5 +1,10 @@
 class java/util/concurrent/FutureTask
  <V:Ljava/lang/Object;>
+ <V:Ljava/lang/Object;>
+
+super java/util/concurrent/RunnableFuture
+ <TV;>
+ <TV;>
 
 <init>
  (Ljava/lang/Runnable;TV;)V
@@ -15,7 +20,7 @@ get
  ()TV;
 get
  (JLjava/util/concurrent/TimeUnit;)TV;
- (JLjava/util/concurrent/TimeUnit;)TV;
+ (JL1java/util/concurrent/TimeUnit;)TV; # @Inherited(java.util.concurrent.Future)
 resultNow
  ()TV;
  ()TV;
@@ -30,4 +35,4 @@ state
  ()Ljava/util/concurrent/Future$State;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

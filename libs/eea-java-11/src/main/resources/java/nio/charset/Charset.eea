@@ -1,5 +1,9 @@
 class java/nio/charset/Charset
 
+super java/lang/Comparable
+ <Ljava/nio/charset/Charset;>
+ <Ljava/nio/charset/Charset;>
+
 availableCharsets
  ()Ljava/util/SortedMap<Ljava/lang/String;Ljava/nio/charset/Charset;>;
  ()Ljava/util/SortedMap<Ljava/lang/String;Ljava/nio/charset/Charset;>;
@@ -42,7 +46,7 @@ encode
  (Ljava/nio/CharBuffer;)Ljava/nio/ByteBuffer;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 name
  ()Ljava/lang/String;
  ()L1java/lang/String;
@@ -54,4 +58,4 @@ newEncoder
  ()Ljava/nio/charset/CharsetEncoder;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

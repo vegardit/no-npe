@@ -1,5 +1,9 @@
 class java/beans/PropertyChangeListenerProxy
 
+super java/util/EventListenerProxy
+ <Ljava/beans/PropertyChangeListener;>
+ <Ljava/beans/PropertyChangeListener;>
+
 <init>
  (Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V
  (Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V
@@ -8,4 +12,4 @@ getPropertyName
  ()Ljava/lang/String;
 propertyChange
  (Ljava/beans/PropertyChangeEvent;)V
- (Ljava/beans/PropertyChangeEvent;)V
+ (L1java/beans/PropertyChangeEvent;)V # @Inherited(java.beans.PropertyChangeListener)

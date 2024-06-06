@@ -1,5 +1,9 @@
 class java/time/Year
 
+super java/lang/Comparable
+ <Ljava/time/Year;>
+ <Ljava/time/Year;>
+
 from
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/Year;
  (Ljava/time/temporal/TemporalAccessor;)Ljava/time/Year;
@@ -42,7 +46,7 @@ compareTo
  (Ljava/time/Year;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 format
  (Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
  (Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;
@@ -93,7 +97,7 @@ range
  (Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 until
  (Ljava/time/temporal/Temporal;Ljava/time/temporal/TemporalUnit;)J
  (Ljava/time/temporal/Temporal;Ljava/time/temporal/TemporalUnit;)J

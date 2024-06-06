@@ -1,5 +1,13 @@
 class java/util/concurrent/ConcurrentSkipListMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super java/util/AbstractMap
+ <TK;TV;>
+ <TK;TV;>
+super java/util/concurrent/ConcurrentNavigableMap
+ <TK;TV;>
+ <TK;TV;>
 
 <init>
  (Ljava/util/Comparator<-TK;>;)V
@@ -24,19 +32,19 @@ comparator
  ()Ljava/util/Comparator<-TK;>;
 compute
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
+ (TK;L1java/util/function/BiFunction<-TK;-T0V;+T0V;>;)T0V; # @Inherited(java.util.concurrent.ConcurrentMap)
 computeIfAbsent
  (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
- (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
+ (TK;L1java/util/function/Function<-TK;+T0V;>;)TV; # @Inherited(java.util.concurrent.ConcurrentMap)
 computeIfPresent
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
 containsKey
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
 containsValue
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
 descendingKeySet
  ()Ljava/util/NavigableSet<TK;>;
  ()Ljava/util/NavigableSet<TK;>;
@@ -45,10 +53,10 @@ descendingMap
  ()Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
 entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
- ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()L1java/util/Set<L1java/util/Map$Entry<TK;TV;>;>; # @Inherited(java.util.AbstractMap)
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
 firstEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
  ()Ljava/util/Map$Entry<TK;TV;>;
@@ -63,10 +71,10 @@ floorKey
  (TK;)TK;
 forEach
  (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
- (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
+ (L1java/util/function/BiConsumer<-TK;-TV;>;)V # @Inherited(java.util.concurrent.ConcurrentMap)
 get
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)TV;
+ (Ljava/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)
 getOrDefault
  (Ljava/lang/Object;TV;)TV;
  (Ljava/lang/Object;TV;)TV;
@@ -111,25 +119,25 @@ pollLastEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
 put
  (TK;TV;)TV;
- (TK;TV;)TV;
+ (TK;TV;)T0V; # @Inherited(java.util.AbstractMap)
 putIfAbsent
  (TK;TV;)TV;
- (TK;TV;)TV;
+ (TK;TV;)T0V; # @Inherited(java.util.concurrent.ConcurrentMap)
 remove
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)TV;
+ (L0java/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)
 remove
  (Ljava/lang/Object;Ljava/lang/Object;)Z
- (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (L0java/lang/Object;L0java/lang/Object;)Z # @Inherited(java.util.concurrent.ConcurrentMap)
 replace
  (TK;TV;)TV;
- (TK;TV;)TV;
+ (TK;TV;)T0V; # @Inherited(java.util.concurrent.ConcurrentMap)
 replace
  (TK;TV;TV;)Z
  (TK;TV;TV;)Z
 replaceAll
  (Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)V
- (Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)V
+ (L1java/util/function/BiFunction<-TK;-TV;+TV;>;)V # @Inherited(java.util.concurrent.ConcurrentMap)
 subMap
  (TK;TK;)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
  (TK;TK;)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
@@ -144,4 +152,4 @@ tailMap
  (TK;Z)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
 values
  ()Ljava/util/Collection<TV;>;
- ()Ljava/util/Collection<TV;>;
+ ()L1java/util/Collection<TV;>; # @Inherited(java.util.AbstractMap)

@@ -20,10 +20,10 @@ hasWaiters
  (L1java/util/concurrent/locks/Condition;)Z
 newCondition
  ()Ljava/util/concurrent/locks/Condition;
- ()L1java/util/concurrent/locks/Condition;
+ ()L1java/util/concurrent/locks/Condition; # @Inherited(java.util.concurrent.locks.Lock)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 tryLock
  (JLjava/util/concurrent/TimeUnit;)Z
- (JL1java/util/concurrent/TimeUnit;)Z
+ (JL1java/util/concurrent/TimeUnit;)Z # @Inherited(java.util.concurrent.locks.Lock)

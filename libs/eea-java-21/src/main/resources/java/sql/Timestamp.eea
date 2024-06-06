@@ -24,16 +24,16 @@ compareTo
  (Ljava/util/Date;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.Date)
 equals
  (Ljava/sql/Timestamp;)Z
  (Ljava/sql/Timestamp;)Z
 toInstant
  ()Ljava/time/Instant;
- ()Ljava/time/Instant;
+ ()L1java/time/Instant; # @Inherited(java.util.Date)
 toLocalDateTime
  ()Ljava/time/LocalDateTime;
  ()Ljava/time/LocalDateTime;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.util.Date)

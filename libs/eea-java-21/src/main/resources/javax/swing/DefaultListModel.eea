@@ -1,5 +1,10 @@
 class javax/swing/DefaultListModel
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super javax/swing/AbstractListModel
+ <TE;>
+ <TE;>
 
 add
  (ITE;)V
@@ -33,7 +38,7 @@ get
  (I)TE;
 getElementAt
  (I)TE;
- (I)TE;
+ (I)T0E; # @Inherited(javax.swing.ListModel)
 indexOf
  (Ljava/lang/Object;)I
  (Ljava/lang/Object;)I
@@ -69,4 +74,4 @@ toArray
  ()[Ljava/lang/Object;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

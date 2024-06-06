@@ -32,7 +32,7 @@ createCompatibleWritableRaster
  (II)Ljava/awt/image/WritableRaster;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.awt.image.ColorModel)
 getAlphas
  ([B)V
  ([B)V
@@ -77,4 +77,4 @@ isCompatibleSampleModel
  (Ljava/awt/image/SampleModel;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.awt.image.ColorModel)

@@ -1,5 +1,9 @@
 class java/lang/Short
 
+super java/lang/Comparable
+ <Ljava/lang/Short;>
+ <Ljava/lang/Short;>
+
 TYPE
  Ljava/lang/Class<Ljava/lang/Short;>;
  L1java/lang/Class<L1java/lang/Short;>;
@@ -34,7 +38,7 @@ compareTo
  (L1java/lang/Short;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
