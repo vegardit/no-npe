@@ -4,14 +4,17 @@
  */
 package com.vegardit.no_npe.eea_generator;
 
-import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.normalizeNewLines;
+import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.remap;
 import static org.assertj.core.api.Assertions.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Set;
 
 import org.junit.jupiter.api.Test;
+
+import com.vegardit.no_npe.eea_generator.EEAFile.SaveOption;
 
 /**
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
@@ -39,12 +42,11 @@ class EEAFileTest {
 
    @Test
    void testEEAFile() throws IOException {
-      final var eeaFile = new EEAFile(TestEntity.class.getName());
-      eeaFile.load(Path.of("src/test/resources/valid"));
+      final var eeaFile = EEAFile.load(Path.of("src/test/resources/valid"), TestEntity.class.getName());
 
-      assertThat(eeaFile.className.value).isEqualTo(TestEntity.class.getName());
-      assertThat(eeaFile.className.comment).isEqualTo("# a class comment");
-      assertThat(eeaFile.className).hasToString(TestEntity.class.getName() + " # a class comment");
+      assertThat(eeaFile.classHeader.name.value).isEqualTo(TestEntity.class.getName());
+      assertThat(eeaFile.classHeader.name.comment).isEqualTo("# a class comment");
+      assertThat(eeaFile.classHeader.name).hasToString(TestEntity.class.getName() + " # a class comment");
       assertThat(eeaFile.relativePath).isEqualTo(Path.of(TEST_ENTITY_NAME_WITH_SLASHES + ".eea"));
 
       assertThat(eeaFile.getClassMembers()).isNotEmpty();
@@ -61,36 +63,38 @@ class EEAFileTest {
       assertThat(annotatedSignature.value).isEqualTo("L1java/lang/String;");
       assertThat(annotatedSignature.comment).isEqualTo("# an annotated signature comment");
 
-      assertThat(normalizeNewLines(eeaFile.renderFileContent(false))) //
-         .isEqualTo(normalizeNewLines(Files.readString(Path.of("src/test/resources/valid").resolve(eeaFile.relativePath))));
+      assertThat(eeaFile.renderFileContent(Set.of())) //
+         .isEqualTo(Files.readAllLines(Path.of("src/test/resources/valid").resolve(eeaFile.relativePath)));
 
-      assertThat(normalizeNewLines(eeaFile.renderFileContent(true))) //
-         .isNotEqualTo(normalizeNewLines(Files.readString(Path.of("src/test/resources/valid").resolve(eeaFile.relativePath))));
+      assertThat(eeaFile.renderFileContent(Set.of(SaveOption.OMIT_REDUNDANT_ANNOTATED_SIGNATURES))) //
+         .isNotEqualTo(Files.readAllLines(Path.of("src/test/resources/valid").resolve(eeaFile.relativePath)));
    }
 
    @Test
    void testWrongTypeHeader() {
-      final var eeaFile = new EEAFile(WRONG_TYPE_NAME);
-      assertThatThrownBy(() -> eeaFile.load(Path.of("src/test/resources/invalid"))) //
-         .isInstanceOf(java.io.IOException.class).hasMessage("mismatching class name in annotation file, expected "
-            + WRONG_TYPE_NAME_WITH_SLASHES + ", but header said " + TEST_ENTITY_NAME_WITH_SLASHES);
+      final var wrongTypePath = Path.of("src/test/resources/invalid/" + WRONG_TYPE_NAME_WITH_SLASHES + ".eea");
+      assertThatThrownBy(() -> { //
+         EEAFile.load(wrongTypePath);
+      }) //
+         .isInstanceOf(java.io.IOException.class) //
+         .hasMessage("Mismatch between file path of [" + wrongTypePath + "] and contained class name definition [" + TestEntity.class
+            .getName() + "]");
    }
 
    @Test
    void testApplyAnnotationsAndCommentsFrom() throws IOException {
-      final var computedEEAFiles = EEAGenerator.computeEEAFiles(EEAFileTest.class.getPackageName(), c -> true);
+      final var computedEEAFiles = remap(EEAGenerator.computeEEAFiles(EEAFileTest.class.getPackageName(), c -> true), v -> v.relativePath);
       final var computedEEAFile = computedEEAFiles.get(Path.of(TEST_ENTITY_NAME_WITH_SLASHES + ".eea"));
       assertThat(computedEEAFile).isNotNull();
       assert computedEEAFile != null;
 
       final var method = computedEEAFile.findMatchingClassMember("name", "Ljava/lang/String;");
       assert method != null;
-      assertThat(method.annotatedSignature).isNull();
-      assertThat(method.name.comment).isNull();
+      assertThat(method.hasNullAnnotations()).isFalse();
+      assertThat(method.name.comment).isEmpty();
 
-      final var loadedEEAFile = new EEAFile(computedEEAFile.className.value);
-      loadedEEAFile.load(Path.of("src/test/resources/valid"));
-      computedEEAFile.applyAnnotationsAndCommentsFrom(loadedEEAFile, false);
+      final var loadedEEAFile = EEAFile.load(Path.of("src/test/resources/valid"), computedEEAFile.classHeader.name.value);
+      computedEEAFile.applyAnnotationsAndCommentsFrom(loadedEEAFile, false, false);
       final var annotatedSignature = method.annotatedSignature;
       assert annotatedSignature != null;
       assertThat(annotatedSignature.value).isEqualTo("L1java/lang/String;");

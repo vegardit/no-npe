@@ -17,11 +17,14 @@ import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Deque;
 import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import org.eclipse.jdt.annotation.Nullable;
 import org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider;
@@ -42,6 +45,12 @@ public class EEAFile {
     */
    public static class ClassMember {
 
+      public enum Type {
+         FIELD,
+         CONSTRUCTOR,
+         METHOD
+      }
+
       public boolean isFollowedByEmptyLine = false;
       public final ValueWithComment name;
 
@@ -49,34 +58,89 @@ public class EEAFile {
       public final ValueWithComment originalSignature;
 
       /** Signature with external Null Analysis annotations */
-      public @Nullable ValueWithComment annotatedSignature;
+      public ValueWithComment annotatedSignature;
 
       public ClassMember(final String name, final String originalSignature) {
-         this.name = ValueWithComment.parse(name);
-         this.originalSignature = ValueWithComment.parse(originalSignature);
+         this(ValueWithComment.parse(name), ValueWithComment.parse(originalSignature));
       }
 
       public ClassMember(final ValueWithComment name, final ValueWithComment originalSignature) {
          this.name = name;
          this.originalSignature = originalSignature;
+         annotatedSignature = new ValueWithComment(originalSignature.value);
+      }
+
+      public ClassMember(final ValueWithComment name, final ValueWithComment originalSignature, final ValueWithComment annotatedSignature) {
+         this.name = name;
+         this.originalSignature = originalSignature;
+         this.annotatedSignature = annotatedSignature;
+      }
+
+      @Override
+      public ClassMember clone() {
+         return new ClassMember(name.clone(), originalSignature.clone(), annotatedSignature.clone());
+      }
+
+      public boolean hasNullAnnotations() {
+         return !annotatedSignature.value.equals(originalSignature.value);
+      }
+
+      public Type getType() {
+         if (name.value.equals("<init>"))
+            return Type.CONSTRUCTOR;
+         return originalSignature.value.contains("(") //
+               ? Type.METHOD
+               : Type.FIELD;
+      }
+
+      public void applyAnnotationsAndCommentsFrom(final ClassMember applyFrom, final boolean overrideOnConflict) {
+         if (applyFrom.getType() != getType())
+            throw new IllegalArgumentException("Type mismatch for [" + name.value + "]:\n" //
+                  + "  Ours: " + getType() + "\n" //
+                  + "Theirs: " + applyFrom.getType());
+
+         if (!applyFrom.originalSignature.value.equals(originalSignature.value)) {
+            LOG.log(Level.WARNING, "Signature mismatch for " + getType() + "[" + name.value + "]:\n" //
+                  + "  Ours: " + originalSignature.value + "\n" //
+                  + "Theirs: " + applyFrom.originalSignature.value);
+            return;
+         }
+
+         // apply name comment
+         if (overrideOnConflict || !name.hasComment()) {
+            name.comment = applyFrom.name.comment;
+         }
+
+         // apply original signature comment
+         if (overrideOnConflict || !originalSignature.hasComment()) {
+            originalSignature.comment = applyFrom.originalSignature.comment;
+         }
+
+         if (overrideOnConflict || !hasNullAnnotations()) {
+            if (applyFrom.hasNullAnnotations()) {
+               annotatedSignature = applyFrom.annotatedSignature.clone();
+            } else if (overrideOnConflict || !annotatedSignature.hasComment()) {
+               annotatedSignature.comment = applyFrom.annotatedSignature.comment;
+            }
+         }
       }
 
       @Override
       public String toString() {
          return name + System.lineSeparator() //
-            + " " + originalSignature //
-            + " " + annotatedSignature;
+               + " " + originalSignature //
+               + " " + annotatedSignature;
       }
    }
 
-   public enum LoadOptions {
-      IGNORE_NONE_EXISTING
-   }
-
-   public enum SaveOptions {
-      SAVE_EMPTY,
+   public enum SaveOption {
+      DELETE_IF_EMPTY,
+      OMIT_COMMENTS,
       OMIT_REDUNDANT_ANNOTATED_SIGNATURES,
-      REPLACE_EXISTING
+      OMIT_MEMBERS_WITH_INHERITED_ANNOTATED_SIGNATURES,
+      OMIT_MEMBERS_WITHOUT_ANNOTATED_SIGNATURE,
+      REPLACE_EXISTING,
+      QUIET
    }
 
    public static final class ValueWithComment implements Cloneable {
@@ -90,18 +154,18 @@ public class EEAFile {
          return new ValueWithComment(text.substring(0, separatorPos), text.substring(separatorPos + 1));
       }
 
-      public static String toString(final String value, @Nullable final String comment) {
-         return comment == null || comment.isBlank() ? value : value + COMMENT_SEPARATOR + comment;
+      public static String toString(final String value, final String comment) {
+         return comment.isBlank() ? value : value + COMMENT_SEPARATOR + comment;
       }
 
       public String value;
-      public @Nullable String comment;
+      public String comment;
 
       public ValueWithComment(final String value) {
-         this.value = value;
+         this(value, "");
       }
 
-      public ValueWithComment(final String value, @Nullable final String comment) {
+      public ValueWithComment(final String value, final String comment) {
          this.value = value;
          this.comment = comment;
       }
@@ -112,16 +176,24 @@ public class EEAFile {
       }
 
       public boolean hasComment() {
-         return comment != null && !comment.isBlank();
+         return !comment.isBlank();
       }
 
       @Override
       public String toString() {
          return toString(value, comment);
       }
+
+      public String toString(final boolean omitComment) {
+         return toString(value, omitComment ? "" : comment);
+      }
    }
 
    private static final Logger LOG = System.getLogger(EEAFile.class.getName());
+
+   public static final String MARKER_KEEP = "@Keep";
+   public static final String MARKER_OVERRIDES = "@Overrides";
+   public static final String MARKER_INHERITED = "@Inherited";
 
    /**
     * Used to match the 0/1 null annotation of types generic type variables, which is especially tricky
@@ -139,17 +211,177 @@ public class EEAFile {
    protected static final Pattern PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES = Pattern.compile(
       "[TL]([01])[a-zA-Z_][a-zA-Z_0-9$\\/*]*[<;]");
 
-   public final ValueWithComment className;
-   public @Nullable ValueWithComment classSignatureOriginal;
-   public @Nullable ValueWithComment classSignatureAnnotated;
+   public final ClassMember classHeader;
+   public final List<ClassMember> superTypes = new ArrayList<>();
+
    public final Path relativePath;
 
    /** ordered list of declared class members */
    private final List<ClassMember> members = new ArrayList<>();
 
+   /**
+    * @throws IOException in case the file cannot be read or contains syntax errors
+    */
+   public static @Nullable EEAFile loadIfExists(final Path rootPath, final String className) throws IOException {
+      final var eeaFilePath = rootPath.resolve(classNameToRelativePath(className));
+      if (!Files.exists(eeaFilePath)) {
+         LOG.log(Level.DEBUG, "File [{0}] does not exist, skipping.", eeaFilePath);
+         return null;
+      }
+      return load(eeaFilePath);
+   }
+
+   /**
+    * @throws IOException in case the file cannot be read or contains syntax errors
+    */
+   public static EEAFile load(final Path rootPath, final String className) throws IOException {
+      final var eeaFilePath = rootPath.resolve(classNameToRelativePath(className));
+      return load(eeaFilePath);
+   }
+
+   /**
+    * @throws IOException in case the file cannot be read or contains syntax errors
+    */
+   public static EEAFile load(final Path filePath) throws IOException {
+      try (var reader = Files.newBufferedReader(filePath)) {
+         return load(reader, filePath.toString());
+      }
+   }
+
+   public static EEAFile load(final BufferedReader reader, final String path) throws IOException {
+      final Deque<String> lines = reader.lines().collect(Collectors.toCollection(ArrayDeque::new));
+
+      // read type header
+      String line = lines.pollFirst();
+      int lineNumber = 1;
+      assert line != null;
+      final var classNameRaw = ValueWithComment.parse(line.substring(ExternalAnnotationProvider.CLASS_PREFIX.length()));
+      ExternalAnnotationProvider.assertClassHeader(line, classNameRaw.value);
+
+      final var eeaFile = new EEAFile(classNameRaw.value.replace('/', '.'));
+      eeaFile.classHeader.name.comment = classNameRaw.comment;
+
+      if (!path.replace('\\', '/').endsWith(eeaFile.relativePath.toString().replace('\\', '/')))
+         throw new IOException("Mismatch between file path of [" + path + "] and contained class name definition ["
+               + eeaFile.classHeader.name.value + "]");
+
+      // read type signature if present
+      line = lines.peekFirst();
+      if (line != null && !line.isBlank() && line.startsWith(" <" /* ExternalAnnotationProvider.TYPE_PARAMETER_PREFIX */ )) {
+         lines.removeFirst();
+         lineNumber++;
+         final var originalSignature = ValueWithComment.parse(line);
+         eeaFile.classHeader.originalSignature.value = originalSignature.value;
+         eeaFile.classHeader.originalSignature.comment = originalSignature.comment;
+
+         line = lines.peekFirst();
+         if (line != null && !line.isBlank() && line.startsWith(" <" /* ExternalAnnotationProvider.TYPE_PARAMETER_PREFIX */ )) {
+            lines.removeFirst();
+            lineNumber++;
+            eeaFile.classHeader.annotatedSignature = ValueWithComment.parse(line);
+         } else {
+            eeaFile.classHeader.annotatedSignature.value = eeaFile.classHeader.originalSignature.value;
+         }
+      }
+
+      // read type members
+      while ((line = lines.pollFirst()) != null) {
+         line = line.stripTrailing();
+         lineNumber++;
+         if (line.isEmpty()) {
+            eeaFile.addEmptyLine();
+            continue;
+         }
+
+         if (line.startsWith(" "))
+            throw new IOException("Illegal format for field or method name [" + line + "] at " + path + ":" + lineNumber);
+
+         /*
+          * read "super" declarations
+          */
+         if (line.startsWith(ExternalAnnotationProvider.SUPER_PREFIX)) {
+            final var superType = ValueWithComment.parse(line.substring(ExternalAnnotationProvider.SUPER_PREFIX.length()));
+            line = lines.peekFirst();
+            if (line == null || line.isBlank() || !line.startsWith(" <" /* ExternalAnnotationProvider.TYPE_PARAMETER_PREFIX */ )) {
+               continue;
+            }
+            lines.removeFirst();
+            lineNumber++;
+            final var superTypeParamsOriginal = ValueWithComment.parse(line);
+
+            // read optional annotated signature
+            line = lines.peekFirst();
+            if (line != null && !line.isBlank() && line.startsWith(" <" /* ExternalAnnotationProvider.TYPE_PARAMETER_PREFIX */ )) {
+               lines.removeFirst();
+               lineNumber++;
+               final var superTypeParamsAnnotated = ValueWithComment.parse(line);
+               if (!superTypeParamsOriginal.value.equals(superTypeParamsAnnotated.value) //
+                     && !superTypeParamsOriginal.value.equals(eeaFile.removeNullAnnotations(superTypeParamsAnnotated.value)))
+                  throw new IOException("Signature mismatch at " + path + ":" + lineNumber + "\n" //
+                        + "          Original: " + superTypeParamsAnnotated + "\n" //
+                        + "Annotated Stripped: " + eeaFile.removeNullAnnotations(superTypeParamsAnnotated.value) + "\n" //
+                        + "         Annotated: " + superTypeParamsAnnotated + "\n");
+               eeaFile.superTypes.add(new ClassMember(superType, superTypeParamsOriginal, superTypeParamsAnnotated));
+            } else {
+               eeaFile.superTypes.add(new ClassMember(superType, superTypeParamsOriginal));
+            }
+
+            /*
+             * read and validate class member, i.e. field or method name
+             */
+         } else {
+            final var memberName = ValueWithComment.parse(line);
+
+            // read mandatory original signature
+            line = lines.pollFirst();
+            lineNumber++;
+            if (line == null || line.isBlank() || !line.startsWith(" "))
+               throw new IOException("Illegal format for original signature at " + path + ":" + lineNumber);
+
+            final var originalSignature = ValueWithComment.parse(line);
+            if (!originalSignature.value.equals(eeaFile.removeNullAnnotations(originalSignature.value)))
+               throw new IOException("Original signature contains null annotations at " + path + ":" + lineNumber);
+
+            final var member = new ClassMember(memberName, originalSignature);
+            if (eeaFile.members.contains(member))
+               throw new IOException("Duplicate entry \"" + memberName.value + " " + originalSignature.value + "\" found at " + path + ":"
+                     + lineNumber);
+
+            // read optional annotated signature
+            line = lines.peekFirst();
+            if (line != null && !line.isBlank() && line.startsWith(" ")) {
+               lines.removeFirst();
+               lineNumber++;
+               final var annotatedSignature = ValueWithComment.parse(line);
+               if (!originalSignature.value.equals(annotatedSignature.value) //
+                     && !originalSignature.value.equals(eeaFile.removeNullAnnotations(annotatedSignature.value)))
+                  throw new IOException("Signature mismatch at " + path + ":" + lineNumber + "\n" //
+                        + "          Original: " + originalSignature + "\n" //
+                        + "Annotated Stripped: " + eeaFile.removeNullAnnotations(annotatedSignature.value) + "\n" //
+                        + "         Annotated: " + annotatedSignature + "\n");
+               if (!originalSignature.value.equals(annotatedSignature.value) || annotatedSignature.hasComment()) {
+                  member.annotatedSignature = annotatedSignature;
+               }
+            }
+
+            // store the parsed member entry
+            eeaFile.members.add(member);
+         }
+      }
+      return eeaFile;
+   }
+
+   private static Path classNameToRelativePath(final String className) {
+      return Path.of(className.replace('.', File.separatorChar) + ExternalAnnotationProvider.ANNOTATION_FILE_SUFFIX);
+   }
+
    public EEAFile(final String className) {
-      this.className = new ValueWithComment(className);
-      relativePath = Path.of(className.replace('.', File.separatorChar) + ExternalAnnotationProvider.ANNOTATION_FILE_SUFFIX);
+      this(className, classNameToRelativePath(className));
+   }
+
+   private EEAFile(final String className, final Path relativePath) {
+      classHeader = new ClassMember(new ValueWithComment(className), new ValueWithComment(""));
+      this.relativePath = relativePath;
    }
 
    public void addEmptyLine() {
@@ -186,9 +418,9 @@ public class EEAFile {
     * @return a class member with the same name and the same original signature
     */
    public @Nullable ClassMember findMatchingClassMember(final String name, final String originalSignature) {
-      return getClassMembers() //
+      return members.stream() //
          .filter(m -> m.name.value.equals(name) //
-            && m.originalSignature.value.equals(originalSignature)) //
+               && m.originalSignature.value.equals(originalSignature)) //
          .findFirst() //
          .orElse(null);
    }
@@ -196,188 +428,138 @@ public class EEAFile {
    /**
     * Copies annotated signatures for compatible class members from the given EEA file
     *
-    * @param overrideOnConflict if true existing annotated signatures are overriden
+    * @param overrideOnConflict if true existing annotated signatures are overridden
     */
-   public void applyAnnotationsAndCommentsFrom(final EEAFile src, final boolean overrideOnConflict) {
-      LOG.log(Level.DEBUG, "Applying annotations from [{0}]...", src.relativePath);
+   public void applyAnnotationsAndCommentsFrom(final EEAFile their, final boolean overrideOnConflict, final boolean addNewMembers) {
+      LOG.log(Level.DEBUG, "Applying annotations from [{0}]...", their.relativePath);
 
-      // copy class name comment
-      if (overrideOnConflict || !className.hasComment()) {
-         className.comment = src.className.comment;
-      }
+      classHeader.applyAnnotationsAndCommentsFrom(their.classHeader, overrideOnConflict);
 
-      members.forEach(ourMember -> {
-         final var theirMember = src.findMatchingClassMember(ourMember);
-         if (theirMember == null)
-            return;
-
-         // copy member name comment
-         if (overrideOnConflict || !ourMember.name.hasComment()) {
-            ourMember.name.comment = theirMember.name.comment;
-         }
-
-         // copy original signature comment
-         if (overrideOnConflict || !ourMember.originalSignature.hasComment()) {
-            ourMember.originalSignature.comment = theirMember.originalSignature.comment;
-         }
-
-         // copy annotated signature or it's comment
-         final var theirAnnotatedSignature = theirMember.annotatedSignature;
-         if (theirAnnotatedSignature != null) {
-            final var ourAnnotatedSignature = ourMember.annotatedSignature;
-            if (overrideOnConflict || ourAnnotatedSignature == null) {
-               ourMember.annotatedSignature = new ValueWithComment(theirAnnotatedSignature.value, theirAnnotatedSignature.comment);
-            } else if (!ourAnnotatedSignature.hasComment()) {
-               ourAnnotatedSignature.comment = theirAnnotatedSignature.comment;
+      for (final var superType : superTypes) {
+         for (final var theirSuperType : their.superTypes) {
+            if (superType.originalSignature.value.equals(theirSuperType.originalSignature.value)) {
+               superType.applyAnnotationsAndCommentsFrom(theirSuperType, overrideOnConflict);
+               break;
             }
          }
+      }
+
+      their.members.forEach(theirMember -> {
+         final var ourMember = findMatchingClassMember(theirMember);
+         if (ourMember == null) {
+            if (addNewMembers) {
+               addMember(theirMember.clone());
+            }
+            return;
+         }
+         ourMember.applyAnnotationsAndCommentsFrom(theirMember, overrideOnConflict);
       });
    }
 
    /**
-    * @return true if a corresponding EEAFile exists on the local file sytem
+    * @return true if a corresponding EEAFile exists on the local file system
     */
    public boolean exists(final Path rootPath) {
       return Files.exists(rootPath.resolve(relativePath));
    }
 
-   public Stream<ClassMember> getClassMembers() {
-      return members.stream();
+   public Collection<ClassMember> getClassMembers() {
+      return members;
    }
 
-   /**
-    * Populates this instance with the content of a corresponding file on the local file system.
-    *
-    * @return true if the loading the file changed the effective content of this instance
-    * @throws IOException in case the file cannot be read or contains syntax errors
-    */
-   public boolean load(final Path rootPath, final LoadOptions... options) throws IOException {
-
-      final var path = rootPath.resolve(relativePath);
-
-      if (arrayContains(options, LoadOptions.IGNORE_NONE_EXISTING) && !exists(rootPath)) {
-         LOG.log(Level.DEBUG, "File [{0}] does not exist, skipping.", path);
-         return false;
+   private void renderLine(final List<String> lines, final Object... newLineContent) {
+      final var sb = new StringBuilder();
+      for (final var e : newLineContent) {
+         sb.append(Objects.toString(e));
       }
-
-      try (var r = Files.newBufferedReader(path)) {
-         return load(path.toAbsolutePath().toString(), r);
-      }
+      lines.add(sb.toString());
    }
 
-   protected boolean load(final String path, final BufferedReader reader) throws IOException {
-      return load(path, reader.lines().collect(Collectors.toCollection(ArrayDeque::new)));
-   }
+   protected List<String> renderFileContent(final Set<SaveOption> opts) {
 
-   protected boolean load(final String path, final Deque<String> lines) throws IOException {
-      LOG.log(Level.DEBUG, "Loading [{0}]...", path);
+      final boolean omitComments = opts.contains(SaveOption.OMIT_COMMENTS);
+      final boolean omitMembersWithInheritedAnnotatedSignature = opts.contains(SaveOption.OMIT_MEMBERS_WITH_INHERITED_ANNOTATED_SIGNATURES);
+      final boolean omitMembersWithoutAnnotatedSignature = opts.contains(SaveOption.OMIT_MEMBERS_WITHOUT_ANNOTATED_SIGNATURE);
+      final boolean omitRedundantAnnotatedSignatures = opts.contains(SaveOption.OMIT_REDUNDANT_ANNOTATED_SIGNATURES);
 
-      final var contentBeforeLoad = renderFileContent(true);
+      final var lines = new ArrayList<String>();
 
-      // clean slate
-      members.clear();
-
-      // read type header
-      String line = lines.pollFirst();
-      int lineNumber = 1;
-      ExternalAnnotationProvider.assertClassHeader(line, className.value.replace('.', '/'));
-      assert line != null;
-      className.comment = ValueWithComment.parse(line.substring(ExternalAnnotationProvider.CLASS_PREFIX.length())).comment;
-
-      // read type signature if present
-      line = lines.peekFirst();
-      if (line != null && !line.isBlank() && line.startsWith(" <" /* ExternalAnnotationProvider.TYPE_PARAMETER_PREFIX */ )) {
-         lines.removeFirst();
-         lineNumber++;
-         classSignatureOriginal = ValueWithComment.parse(line);
-
-         line = lines.peekFirst();
-         if (line != null && !line.isBlank() && line.startsWith(" <" /* ExternalAnnotationProvider.TYPE_PARAMETER_PREFIX */ )) {
-            lines.removeFirst();
-            lineNumber++;
-            classSignatureAnnotated = ValueWithComment.parse(line);
+      /*
+       * render class signature
+       */
+      renderLine(lines, ExternalAnnotationProvider.CLASS_PREFIX, //
+         new ValueWithComment(classHeader.name.value.replace('.', '/'), omitComments ? "" : classHeader.name.comment));
+      final var classSignatureOriginal = classHeader.originalSignature;
+      if (!classSignatureOriginal.value.isEmpty()) {
+         renderLine(lines, " ", classSignatureOriginal.toString(omitComments));
+         if (classHeader.hasNullAnnotations()) {
+            renderLine(lines, " ", classHeader.annotatedSignature.toString(omitComments));
+         } else {
+            if (!omitRedundantAnnotatedSignatures) {
+               renderLine(lines, " ", classSignatureOriginal.toString(omitComments));
+            }
          }
       }
+      renderLine(lines);
 
-      // read type members
-      while ((line = lines.pollFirst()) != null) {
-         lineNumber++;
-         if (line.isBlank()) {
-            addEmptyLine();
+      /*
+       * render super signature
+       */
+      if (!superTypes.isEmpty()) {
+         for (final ClassMember superType : superTypes) {
+            if (omitMembersWithoutAnnotatedSignature && !superType.hasNullAnnotations()) {
+               continue;
+            }
+            renderLine(lines, ExternalAnnotationProvider.SUPER_PREFIX, superType.name.toString(omitComments));
+            if (!superType.originalSignature.value.isEmpty()) {
+               renderLine(lines, " ", superType.originalSignature.toString(omitComments));
+               if (superType.hasNullAnnotations()) {
+                  renderLine(lines, " ", superType.annotatedSignature.toString(omitComments));
+               } else {
+                  if (!omitRedundantAnnotatedSignatures) {
+                     renderLine(lines, " ", superType.originalSignature.toString(omitComments));
+                  }
+               }
+            }
+         }
+         renderLine(lines);
+      }
+
+      /*
+       * render fields/methods
+       */
+      final ClassMember lastMember = findLastElement(members);
+      for (final ClassMember member : members) {
+         final boolean keep = member.name.comment.contains(MARKER_KEEP) //
+               || member.originalSignature.comment.contains(MARKER_KEEP) //
+               || member.annotatedSignature.comment.contains(MARKER_KEEP);
+
+         if (omitMembersWithoutAnnotatedSignature //
+               && !keep //
+               && !member.hasNullAnnotations()) {
+            continue;
+         }
+         if (omitMembersWithInheritedAnnotatedSignature //
+               && !keep //
+               && member.hasNullAnnotations() //
+               && contains(member.annotatedSignature.comment, MARKER_OVERRIDES)) {
             continue;
          }
 
-         // read and validate class member, i.e. field or method name
-         if (line.startsWith(" "))
-            throw new IOException("Illegal format for field or method name [" + line + "] at " + path + ":" + lineNumber);
-         final var memberName = ValueWithComment.parse(line);
+         renderLine(lines, member.name.toString(omitComments));
+         renderLine(lines, " ", member.originalSignature.toString(omitComments));
 
-         // read mandatory original signature
-         line = lines.pollFirst();
-         lineNumber++;
-         if (line == null || line.isBlank() || !line.startsWith(" "))
-            throw new IOException("Illegal format for original signature at " + path + ":" + lineNumber);
-         final var originalSignature = ValueWithComment.parse(line);
-         if (!originalSignature.value.equals(removeNullAnnotations(originalSignature.value)))
-            throw new IOException("Original signature contains null annotations at " + path + ":" + lineNumber);
-
-         final var member = new ClassMember(memberName, originalSignature);
-         if (members.contains(member))
-            throw new IOException("Duplicate entry \"" + memberName.value + " " + originalSignature.value + "\" found at " + path + ":"
-               + lineNumber);
-
-         // read optional annotated signature
-         line = lines.peekFirst();
-         if (line != null && !line.isBlank() && line.startsWith(" ")) {
-            lines.removeFirst();
-            lineNumber++;
-            final var annotatedSignature = ValueWithComment.parse(line);
-            if (!originalSignature.value.equals(annotatedSignature.value) //
-               && !originalSignature.value.equals(removeNullAnnotations(annotatedSignature.value)))
-               throw new IOException("Signature mismatch at " + path + ":" + lineNumber + "\n" //
-                  + "          Original: " + originalSignature + "\n" //
-                  + "Annotated Stripped: " + removeNullAnnotations(annotatedSignature.value) + "\n" //
-                  + "         Annotated: " + annotatedSignature + "\n");
-            if (!originalSignature.value.equals(annotatedSignature.value) || annotatedSignature.hasComment()) {
-               member.annotatedSignature = annotatedSignature;
-            }
+         if (!omitRedundantAnnotatedSignatures || member.hasNullAnnotations()) {
+            renderLine(lines, " ", member.annotatedSignature.toString(omitComments));
          }
 
-         // store the parsed member entry
-         members.add(member);
-      }
-
-      final var contentAfterLoad = renderFileContent(true);
-      return !contentAfterLoad.equals(contentBeforeLoad);
-   }
-
-   protected String renderFileContent(final boolean omitRedundantAnnotatedSignatures) throws IOException {
-      final var sb = new StringBuilder();
-      writeLine(sb, ExternalAnnotationProvider.CLASS_PREFIX, new ValueWithComment(className.value.replace('.', '/'), className.comment));
-      if (classSignatureOriginal != null) {
-         writeLine(sb, " ", classSignatureOriginal);
-         if (classSignatureAnnotated != null) {
-            writeLine(sb, " ", classSignatureAnnotated);
-         }
-      }
-      writeLine(sb);
-
-      final ClassMember lastMember = findLastElement(members);
-      for (final ClassMember member : members) {
-         writeLine(sb, member.name);
-         writeLine(sb, " ", member.originalSignature);
-         var annotatedSig = member.annotatedSignature;
-         if (annotatedSig == null && !omitRedundantAnnotatedSignatures) {
-            annotatedSig = member.originalSignature;
-         }
-         if (annotatedSig != null) {
-            writeLine(sb, " ", annotatedSig);
-         }
          if (member != lastMember && member.isFollowedByEmptyLine) {
-            writeLine(sb);
+            renderLine(lines);
          }
       }
-      return sb.toString();
+
+      removeTrailingBlanks(lines);
+      return lines;
    }
 
    /**
@@ -401,53 +583,83 @@ public class EEAFile {
    /**
     * @return true if modifications where written to disk, false was already up-to-date
     */
-   public boolean save(final Path rootPath, final SaveOptions... options) throws IOException {
+   public boolean save(final Path rootPath, final @Nullable SaveOption... opts) throws IOException {
+      return save(rootPath, Arrays.stream(opts).filter(Objects::nonNull).collect(Collectors.toSet()));
+   }
+
+   /**
+    * @return true if modifications where written to disk, false was already up-to-date
+    */
+   public boolean save(final Path rootPath, final Set<SaveOption> opts) throws IOException {
       final var path = rootPath.resolve(relativePath);
 
-      final boolean replaceExisting = arrayContains(options, SaveOptions.REPLACE_EXISTING);
-      final boolean saveEmpty = arrayContains(options, SaveOptions.SAVE_EMPTY);
-      final boolean omitRedundantAnnotatedSignatures = arrayContains(options, SaveOptions.OMIT_REDUNDANT_ANNOTATED_SIGNATURES);
+      final boolean replaceExisting = opts.contains(SaveOption.REPLACE_EXISTING);
+      final boolean deleteIfEmpty = opts.contains(SaveOption.DELETE_IF_EMPTY);
+      final boolean quiet = opts.contains(SaveOption.QUIET);
 
-      final var content = renderFileContent(omitRedundantAnnotatedSignatures);
+      final var content = renderFileContent(opts);
 
       if (exists(rootPath)) {
+
          if (replaceExisting) {
-            if (!saveEmpty && members.isEmpty()) {
-               LOG.log(Level.WARNING, "Deleting empty file [{0}]...", path.toAbsolutePath());
+
+            if (deleteIfEmpty && members.isEmpty()) {
+               LOG.log(Level.WARNING, "Deleting [{0}] (reason: no members)...", path.toAbsolutePath());
                Files.deleteIfExists(path);
                return true;
             }
-            final boolean needsUpdate = !normalizeNewLines(content) //
-               .equals(normalizeNewLines(Files.readString(rootPath.resolve(relativePath))));
+
+            if (deleteIfEmpty && content.size() < 3) {
+               LOG.log(Level.WARNING, "Deleting [{0}] (reason: no annotated signatures)...", path.toAbsolutePath());
+               Files.deleteIfExists(path);
+               return true;
+            }
+
+            final boolean needsUpdate = !content.equals(Files.readAllLines(rootPath.resolve(relativePath)));
             if (!needsUpdate) {
-               LOG.log(Level.DEBUG, "Skipping saving unchanged file [{0}]...", path.toAbsolutePath());
+               LOG.log(Level.DEBUG, "Skipped saving [{0}] (reason: unchanged).", path.toAbsolutePath());
                return false;
             }
-            LOG.log(Level.INFO, "Updating [{0}]...", path.toAbsolutePath());
-         } else {
-            final boolean needsUpdate = !normalizeNewLines(content) //
-               .equals(normalizeNewLines(Files.readString(rootPath.resolve(relativePath))));
+
+            if (!quiet) {
+               LOG.log(Level.INFO, "Updating [{0}]...", path.toAbsolutePath());
+            }
+
+         } else { // !replaceExisting
+
+            final boolean needsUpdate = !content.equals(Files.readAllLines(rootPath.resolve(relativePath)));
             if (!needsUpdate) {
-               LOG.log(Level.DEBUG, "Skipping saving unchanged file [{0}]...", path.toAbsolutePath());
+               LOG.log(Level.DEBUG, "Skipped saving [{0}] (reason: unchanged).", path.toAbsolutePath());
                return false;
             }
             throw new IOException("File [" + path + "] already exists!");
          }
-      } else {
-         if (!saveEmpty && members.isEmpty()) {
-            LOG.log(Level.DEBUG, "Skip creating empty file [{0}]...", path.toAbsolutePath());
+
+      } else { // !exists(rootPath)
+
+         if (deleteIfEmpty && members.isEmpty()) {
+            LOG.log(Level.DEBUG, "Skipped creating [{0}] (reason: no members).", path.toAbsolutePath());
             return false;
          }
-         LOG.log(Level.INFO, "Creating [{0}]...", path.toAbsolutePath());
+
+         if (deleteIfEmpty && content.size() < 3) {
+            LOG.log(Level.DEBUG, "Skipped creating [{0}] (reason: no annotated signatures).", path.toAbsolutePath());
+            return false;
+         }
+
+         if (!quiet) {
+            LOG.log(Level.INFO, "Creating [{0}]...", path.toAbsolutePath());
+         }
+
          final var parentDir = path.getParent();
          assert parentDir != null;
          Files.createDirectories(parentDir);
       }
 
       final var openOpts = replaceExisting //
-         ? List.of(StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING) //
-         : List.of(StandardOpenOption.CREATE_NEW);
-      Files.writeString(path, content, openOpts.toArray(OpenOption[]::new));
+            ? List.of(StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING) //
+            : List.of(StandardOpenOption.CREATE_NEW);
+      Files.write(path, content, openOpts.toArray(OpenOption[]::new));
       return true;
    }
 }

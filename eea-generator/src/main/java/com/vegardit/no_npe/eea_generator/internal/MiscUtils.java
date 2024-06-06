@@ -7,18 +7,25 @@ package com.vegardit.no_npe.eea_generator.internal;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.Writer;
+import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.text.MessageFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 import java.util.function.UnaryOperator;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 import org.eclipse.jdt.annotation.NonNull;
 import org.eclipse.jdt.annotation.Nullable;
@@ -28,17 +35,30 @@ import org.eclipse.jdt.annotation.Nullable;
  */
 public final class MiscUtils {
 
+   @FunctionalInterface
+   public interface ThrowingConsumer<V, T extends Exception> {
+      void accept(V v) throws T;
+   }
+
    public static boolean arrayContains(final Object @Nullable [] searchIn, final Object searchFor) {
       if (searchIn == null || searchIn.length == 0)
          return false;
       for (final var e : searchIn) {
-         if (e.equals(searchFor))
+         if (Objects.equals(e, searchFor))
             return true;
       }
       return false;
    }
 
+   private static boolean isJULConfigured = false;
+
+   public static boolean contains(final @Nullable String searchIn, final String searchFor) {
+      return searchIn != null && searchIn.contains(searchFor);
+   }
+
    public static void configureJUL() {
+      if (isJULConfigured)
+         return;
       final var mainLogger = Logger.getLogger("com.vegardit.no_npe");
       mainLogger.setUseParentHandlers(false);
       final var handler = new ConsoleHandler();
@@ -53,12 +73,7 @@ public final class MiscUtils {
          }
       });
       mainLogger.addHandler(handler);
-   }
-
-   public static String normalizeNewLines(final String str) {
-      return str //
-         .replace("\r\n", "\n") //
-         .replace('\r', '\n');
+      isJULConfigured = true;
    }
 
    public static BufferedReader getUTF8ResourceAsReader(final Class<?> clazz, final String resourceName) {
@@ -72,10 +87,37 @@ public final class MiscUtils {
    }
 
    /**
+    * @return total number of matching files
+    */
+   public static long forEachFileWithExtension(final Path startPath, final String fileExtension,
+         final ThrowingConsumer<Path, IOException> onFile) throws IOException {
+      if (!Files.exists(startPath))
+         return 0;
+
+      final long[] count = {0};
+      try (Stream<Path> paths = Files.walk(startPath)) {
+         paths //
+            .filter(Files::isRegularFile) //
+            .filter(path -> path.getFileName().toString().endsWith(fileExtension)) //
+            .forEach(path -> {
+               try {
+                  count[0]++;
+                  onFile.accept(path);
+               } catch (final IOException ex) {
+                  throw new UncheckedIOException(ex);
+               }
+            });
+      } catch (final UncheckedIOException ex) {
+         throw ex.getCause();
+      }
+      return count[0];
+   }
+
+   /**
     * Replaces the given capturing group of all matches.
     */
    public static String replaceAll(final String searchIn, final Pattern searchFor, final int groupToReplace,
-      final UnaryOperator<String> replaceWith) {
+         final UnaryOperator<String> replaceWith) {
       if (searchIn.isEmpty())
          return searchIn;
       final var matcher = searchFor.matcher(searchIn);
@@ -96,22 +138,31 @@ public final class MiscUtils {
       return sb.toString();
    }
 
-   public static @Nullable String getSubstringBetweenBalanced(@Nullable final String searchIn, final char startDelimiter,
-      final char endDelimiter) {
+   public static String removeSuffix(final String searchIn, final String remove) {
+      return !remove.isEmpty() && searchIn.endsWith(remove) //
+            ? searchIn.substring(0, searchIn.length() - remove.length())
+            : searchIn;
+   }
+
+   public static boolean startsWith(@Nullable final String searchIn, final String searchFor) {
       if (searchIn == null)
-         return null;
+         return false;
+      return searchIn.startsWith(searchFor);
+   }
+
+   public static @Nullable String substringBetweenBalanced(final String searchIn, final char startDelimiter, final char endDelimiter) {
       int depth = 0;
-      int lastStartDelimiter = -1;
+      int lastStartDelimIdx = -1;
       for (int i = 0, l = searchIn.length(); i < l; i++) {
          final char c = searchIn.charAt(i);
          if (c == startDelimiter) {
             depth++;
             if (depth == 1) {
-               lastStartDelimiter = i + 1;
+               lastStartDelimIdx = i + 1;
             }
          } else if (c == endDelimiter) {
             if (depth == 1)
-               return searchIn.substring(lastStartDelimiter, i);
+               return searchIn.substring(lastStartDelimIdx, i);
             if (depth > 0) {
                depth--;
             }
@@ -120,7 +171,13 @@ public final class MiscUtils {
       return null;
    }
 
-   public static <T extends Throwable> @Nullable T sanitizeStackTraces(@Nullable final T ex) {
+   public static int countOccurrences(final CharSequence searchIn, final char searchFor) {
+      return (int) searchIn.chars() //
+         .filter(ch -> ch == searchFor) //
+         .count();
+   }
+
+   public static <T extends Throwable> @Nullable T sanitizeStackTraces(final @Nullable T ex) {
       if (ex == null)
          return null;
 
@@ -136,15 +193,15 @@ public final class MiscUtils {
          final StackTraceElement ste = stacktrace[i];
          final String className = ste.getClassName();
          if ("java.lang.reflect.Method".equals(className) //
-            || className.startsWith("java.util.stream.") //
-            || "java.util.Iterator".equals(className) && "forEachRemaining".equals(ste.getMethodName())//
-            || "java.util.Spliterators$IteratorSpliterator".equals(className) && "forEachRemaining".equals(ste.getMethodName())//
-            || className.startsWith("sun.reflect.") //
-            || className.startsWith("sun.proxy.$Proxy", 4) //
-            || className.startsWith("org.codehaus.groovy.runtime.") //
-            || className.startsWith("org.codehaus.groovy.reflection.") //
-            || className.startsWith("groovy.lang.Meta") //
-            || className.startsWith("groovy.lang.Closure") //
+               || className.startsWith("java.util.stream.") //
+               || "java.util.Iterator".equals(className) && "forEachRemaining".equals(ste.getMethodName())//
+               || "java.util.Spliterators$IteratorSpliterator".equals(className) && "forEachRemaining".equals(ste.getMethodName())//
+               || className.startsWith("sun.reflect.") //
+               || className.startsWith("sun.proxy.$Proxy", 4) //
+               || className.startsWith("org.codehaus.groovy.runtime.") //
+               || className.startsWith("org.codehaus.groovy.reflection.") //
+               || className.startsWith("groovy.lang.Meta") //
+               || className.startsWith("groovy.lang.Closure") //
          ) {
             continue;
          }
@@ -164,18 +221,29 @@ public final class MiscUtils {
       return str.substring(0, pos) + insertion + str.substring(pos);
    }
 
-   public static void writeLine(final Appendable w, final Object... content) throws IOException {
-      for (final var e : content) {
-         w.append(Objects.toString(e));
+   public static <K, V> Map<K, V> remap(final Map<?, V> map, final Function<V, K> keyMapper) {
+      final var newMap = new HashMap<K, V>();
+      for (final V v : map.values()) {
+         newMap.put(keyMapper.apply(v), v);
       }
-      w.append("\n");
+      return newMap;
    }
 
-   public static void writeLine(final Writer w, final Object... content) throws IOException {
-      for (final var e : content) {
-         w.write(Objects.toString(e));
+   public static <K, KK, V, VV> Map<KK, VV> remap(final Map<K, V> map, final BiFunction<K, V, KK> keyMapper,
+         final BiFunction<K, V, VV> valueMapper) {
+      final var newMap = new HashMap<KK, VV>();
+      for (final var e : map.entrySet()) {
+         newMap.put(keyMapper.apply(e.getKey(), e.getValue()), valueMapper.apply(e.getKey(), e.getValue()));
       }
-      w.write(System.lineSeparator());
+      return newMap;
+   }
+
+   public static void removeTrailingBlanks(final List<String> strings) {
+      int i = strings.size() - 1;
+      while (i >= 0 && strings.get(i).isBlank()) {
+         strings.remove(i);
+         i--;
+      }
    }
 
    private MiscUtils() {

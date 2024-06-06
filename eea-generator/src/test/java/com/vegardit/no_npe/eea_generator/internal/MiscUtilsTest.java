@@ -4,8 +4,8 @@
  */
 package com.vegardit.no_npe.eea_generator.internal;
 
-import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.*;
-import static org.assertj.core.api.Assertions.*;
+import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.replaceAll;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.regex.Pattern;
 

@@ -19,31 +19,38 @@ class EEAGeneratorTest {
 
    @Test
    void testVadilateValidEEAFiles() throws IOException {
-      final var config = new EEAGenerator.Config( //
-         Path.of("src/test/resources/valid"), //
-         EEAGeneratorTest.class.getPackageName() //
-      );
+      final var rootPath = Path.of("src/test/resources/valid");
+      final var config = new EEAGenerator.Config(rootPath, EEAGeneratorTest.class.getPackageName());
+      config.inputDirs.add(rootPath);
+
       assertThat(EEAGenerator.validateEEAFiles(config)).isEqualTo(2);
    }
 
    @Test
    void testVadilateInvalidEEAFiles() {
-      final var config = new EEAGenerator.Config( //
-         Path.of("src/test/resources/invalid"), //
-         EEAGeneratorTest.class.getPackageName() //
-      );
-      assertThatThrownBy(() -> EEAGenerator.validateEEAFiles(config)) //
-         .isInstanceOf(java.io.IOException.class).hasMessage("mismatching class name in annotation file, expected "
-            + EEAFileTest.WRONG_TYPE_NAME_WITH_SLASHES + ", " + "but header said " + EEAFileTest.TEST_ENTITY_NAME_WITH_SLASHES);
+      final var rootPath = Path.of("src/test/resources/invalid");
+      final var config = new EEAGenerator.Config(rootPath, EEAGeneratorTest.class.getPackageName());
+      config.inputDirs.add(rootPath);
+
+      final var wrongTypePath = rootPath.resolve(EEAFileTest.WRONG_TYPE_NAME_WITH_SLASHES + ".eea");
+      assertThatThrownBy(() -> {
+         EEAGenerator.validateEEAFiles(config);
+      }) //
+         .isInstanceOf(IllegalStateException.class) //
+         .hasMessage("Type [com.vegardit.no_npe.eea_generator.EEAFileTest$WrongType] defined in [" + wrongTypePath
+               + "] no found on classpath.");
    }
 
    @Test
    void testPackageMissingOnClasspath() {
-      final var config = new EEAGenerator.Config( //
-         Path.of("src/test/resources/invalid"), //
-         "org.no_npe.foobar" //
-      );
-      assertThatThrownBy(() -> EEAGenerator.validateEEAFiles(config)) //
-         .isInstanceOf(IllegalArgumentException.class).hasMessage("No classes found for package [org.no_npe.foobar] on classpath");
+      final var rootPath = Path.of("src/test/resources/invalid");
+      final var config = new EEAGenerator.Config(rootPath, "org.no_npe.foobar");
+      config.inputDirs.add(rootPath);
+
+      assertThatThrownBy(() -> {
+         EEAGenerator.validateEEAFiles(config);
+      }) //
+         .isInstanceOf(IllegalArgumentException.class) //
+         .hasMessage("No classes found for package [org.no_npe.foobar] on classpath");
    }
 }

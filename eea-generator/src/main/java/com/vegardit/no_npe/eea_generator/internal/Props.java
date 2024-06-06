@@ -40,10 +40,10 @@ public final class Props {
       @Override
       public String toString() {
          return "Prop [" //
-            + "name=" + name + ", " //
-            + "value=" + value + ", " //
-            + "source=" + source //
-            + "]";
+               + "name=" + name + ", " //
+               + "value=" + value + ", " //
+               + "source=" + source //
+               + "]";
       }
    }
 
@@ -89,6 +89,7 @@ public final class Props {
          LOG.log(Level.INFO, "Found property [{0}] \"{1}\" @({2})", prop.name, prop.value, prop.source);
          return prop;
       }
+
       if (propertiesFile != null)
          throw new IllegalArgumentException("Required property [" + propName + "] not found in [" + propertiesFile + "]!");
 
