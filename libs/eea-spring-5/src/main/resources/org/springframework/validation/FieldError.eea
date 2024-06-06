@@ -8,7 +8,7 @@ class org/springframework/validation/FieldError
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.springframework.validation.ObjectError)
 getField
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -17,4 +17,4 @@ getRejectedValue
  ()L0java/lang/Object;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.validation.ObjectError)

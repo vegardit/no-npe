@@ -5,10 +5,10 @@ class org/springframework/scheduling/support/PeriodicTrigger
  (JLjava/util/concurrent/TimeUnit;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getTimeUnit
  ()Ljava/util/concurrent/TimeUnit;
  ()Ljava/util/concurrent/TimeUnit;
 nextExecutionTime
  (Lorg/springframework/scheduling/TriggerContext;)Ljava/util/Date;
- (Lorg/springframework/scheduling/TriggerContext;)Ljava/util/Date;
+ (Lorg/springframework/scheduling/TriggerContext;)L0java/util/Date; # @Inherited(org.springframework.scheduling.Trigger)

@@ -17,7 +17,7 @@ applyDelegatesTo
  (Lorg/springframework/expression/spel/support/StandardEvaluationContext;)V
 getBeanResolver
  ()Lorg/springframework/expression/BeanResolver;
- ()L0org/springframework/expression/BeanResolver;
+ ()L0org/springframework/expression/BeanResolver; # @Inherited(org.springframework.expression.EvaluationContext)
 getConstructorResolvers
  ()Ljava/util/List<Lorg/springframework/expression/ConstructorResolver;>;
  ()Ljava/util/List<Lorg/springframework/expression/ConstructorResolver;>;
@@ -44,7 +44,7 @@ getTypeLocator
  ()Lorg/springframework/expression/TypeLocator;
 lookupVariable
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.expression.EvaluationContext)
 registerFunction
  (Ljava/lang/String;Ljava/lang/invoke/MethodHandle;)V
  (Ljava/lang/String;Ljava/lang/invoke/MethodHandle;)V

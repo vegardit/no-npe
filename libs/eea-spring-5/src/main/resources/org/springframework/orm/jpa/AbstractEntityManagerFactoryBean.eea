@@ -1,5 +1,9 @@
 class org/springframework/orm/jpa/AbstractEntityManagerFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljavax/persistence/EntityManagerFactory;>
+ <Ljavax/persistence/EntityManagerFactory;>
+
 logger
  Lorg/apache/commons/logging/Log;
  Lorg/apache/commons/logging/Log;
@@ -21,13 +25,13 @@ getBootstrapExecutor
  ()L0org/springframework/core/task/AsyncTaskExecutor;
 getDataSource
  ()Ljavax/sql/DataSource;
- ()L0javax/sql/DataSource;
+ ()L0javax/sql/DataSource; # @Inherited(org.springframework.orm.jpa.EntityManagerFactoryInfo)
 getEntityManagerInterface
  ()Ljava/lang/Class<+Ljavax/persistence/EntityManager;>;
- ()L0java/lang/Class<+Ljavax/persistence/EntityManager;>;
+ ()L0java/lang/Class<+Ljavax/persistence/EntityManager;>; # @Inherited(org.springframework.orm.jpa.EntityManagerFactoryInfo)
 getJpaDialect
  ()Lorg/springframework/orm/jpa/JpaDialect;
- ()L0org/springframework/orm/jpa/JpaDialect;
+ ()L0org/springframework/orm/jpa/JpaDialect; # @Inherited(org.springframework.orm.jpa.EntityManagerFactoryInfo)
 getJpaPropertyMap
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
@@ -45,13 +49,13 @@ getObjectType
  ()Ljava/lang/Class<+Ljavax/persistence/EntityManagerFactory;>;
 getPersistenceProvider
  ()Ljavax/persistence/spi/PersistenceProvider;
- ()L0javax/persistence/spi/PersistenceProvider;
+ ()L0javax/persistence/spi/PersistenceProvider; # @Inherited(org.springframework.orm.jpa.EntityManagerFactoryInfo)
 getPersistenceUnitInfo
  ()Ljavax/persistence/spi/PersistenceUnitInfo;
- ()L0javax/persistence/spi/PersistenceUnitInfo;
+ ()L0javax/persistence/spi/PersistenceUnitInfo; # @Inherited(org.springframework.orm.jpa.EntityManagerFactoryInfo)
 getPersistenceUnitName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.orm.jpa.EntityManagerFactoryInfo)
 postProcessEntityManager
  (Ljavax/persistence/EntityManager;)V
  (Ljavax/persistence/EntityManager;)V
@@ -99,7 +103,7 @@ setPersistenceUnitName
  (Ljava/lang/String;)V
 translateExceptionIfPossible
  (Ljava/lang/RuntimeException;)Lorg/springframework/dao/DataAccessException;
- (Ljava/lang/RuntimeException;)L0org/springframework/dao/DataAccessException;
+ (Ljava/lang/RuntimeException;)L0org/springframework/dao/DataAccessException; # @Inherited(org.springframework.dao.support.PersistenceExceptionTranslator)
 writeReplace
  ()Ljava/lang/Object;
  ()L1java/lang/Object;

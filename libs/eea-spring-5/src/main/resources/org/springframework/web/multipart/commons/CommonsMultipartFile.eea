@@ -12,7 +12,7 @@ getBytes
  ()[B
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.web.multipart.MultipartFile)
 getFileItem
  ()Lorg/apache/commons/fileupload/FileItem;
  ()Lorg/apache/commons/fileupload/FileItem;
@@ -24,13 +24,13 @@ getName
  ()Ljava/lang/String;
 getOriginalFilename
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.web.multipart.MultipartFile)
 getStorageDescription
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 transferTo
  (Ljava/io/File;)V
  (Ljava/io/File;)V

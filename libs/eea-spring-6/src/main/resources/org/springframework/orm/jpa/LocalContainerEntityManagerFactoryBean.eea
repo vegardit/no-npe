@@ -8,13 +8,13 @@ determinePersistenceUnitInfo
  (Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitManager;)Ljakarta/persistence/spi/PersistenceUnitInfo;
 getDataSource
  ()Ljavax/sql/DataSource;
- ()L0javax/sql/DataSource;
+ ()L0javax/sql/DataSource; # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
 getPersistenceUnitInfo
  ()Ljakarta/persistence/spi/PersistenceUnitInfo;
- ()L0jakarta/persistence/spi/PersistenceUnitInfo;
+ ()L0jakarta/persistence/spi/PersistenceUnitInfo; # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
 getPersistenceUnitName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
 postProcessEntityManagerFactory
  (Ljakarta/persistence/EntityManagerFactory;Ljakarta/persistence/spi/PersistenceUnitInfo;)V
  (Ljakarta/persistence/EntityManagerFactory;Ljakarta/persistence/spi/PersistenceUnitInfo;)V

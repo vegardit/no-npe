@@ -25,7 +25,7 @@ determineBeanType
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>;
 determineCandidateConstructors
  (Ljava/lang/Class<*>;Ljava/lang/String;)[Ljava/lang/reflect/Constructor<*>;
- (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
 getAdvicesAndAdvisorsForBean
  (Ljava/lang/Class<*>;Ljava/lang/String;Lorg/springframework/aop/TargetSource;)[Ljava/lang/Object;
  (Ljava/lang/Class<*>;Ljava/lang/String;Lorg/springframework/aop/TargetSource;)[0Ljava/lang/Object;
@@ -46,16 +46,16 @@ isInfrastructureClass
  (Ljava/lang/Class<*>;)Z
 postProcessAfterInitialization
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/Object;Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.config.BeanPostProcessor)
 postProcessBeforeInstantiation
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/Class<*>;Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 postProcessProperties
  (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
- (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
+ (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 predictBeanType
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/Class<*>;Ljava/lang/String;)L0java/lang/Class<*>;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
 setAdvisorAdapterRegistry
  (Lorg/springframework/aop/framework/adapter/AdvisorAdapterRegistry;)V
  (Lorg/springframework/aop/framework/adapter/AdvisorAdapterRegistry;)V

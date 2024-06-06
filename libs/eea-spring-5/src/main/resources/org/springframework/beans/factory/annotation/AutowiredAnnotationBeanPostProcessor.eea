@@ -6,7 +6,7 @@ logger
 
 determineCandidateConstructors
  (Ljava/lang/Class<*>;Ljava/lang/String;)[Ljava/lang/reflect/Constructor<*>;
- (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
 determineRequiredStatus
  (Lorg/springframework/core/annotation/AnnotationAttributes;)Z
  (Lorg/springframework/core/annotation/AnnotationAttributes;)Z
@@ -21,10 +21,10 @@ postProcessMergedBeanDefinition
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/Class<*>;Ljava/lang/String;)V
 postProcessProperties
  (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
- (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
+ (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 postProcessPropertyValues
  (Lorg/springframework/beans/PropertyValues;[Ljava/beans/PropertyDescriptor;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
- (Lorg/springframework/beans/PropertyValues;[Ljava/beans/PropertyDescriptor;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
+ (Lorg/springframework/beans/PropertyValues;[Ljava/beans/PropertyDescriptor;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 processInjection
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V

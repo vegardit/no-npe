@@ -1,5 +1,9 @@
 class org/springframework/scheduling/concurrent/ThreadPoolExecutorFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljava/util/concurrent/ExecutorService;>
+ <Ljava/util/concurrent/ExecutorService;>
+
 createExecutor
  (IIILjava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)Ljava/util/concurrent/ThreadPoolExecutor;
  (IIILjava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)Ljava/util/concurrent/ThreadPoolExecutor;

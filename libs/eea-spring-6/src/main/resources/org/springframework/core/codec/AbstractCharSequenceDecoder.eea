@@ -1,5 +1,10 @@
 class org/springframework/core/codec/AbstractCharSequenceDecoder
  <T::Ljava/lang/CharSequence;>
+ <T::Ljava/lang/CharSequence;>
+
+super org/springframework/core/codec/AbstractDataBufferDecoder
+ <TT;>
+ <TT;>
 
 DEFAULT_CHARSET
  Ljava/nio/charset/Charset;
@@ -16,7 +21,7 @@ decode
  (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<TT;>;
 decode
  (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)TT;
- (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)TT;
+ (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)T0T; # @Inherited(org.springframework.core.codec.Decoder)
 decodeInternal
  (Lorg/springframework/core/io/buffer/DataBuffer;Ljava/nio/charset/Charset;)TT;
  (Lorg/springframework/core/io/buffer/DataBuffer;Ljava/nio/charset/Charset;)TT;

@@ -1,11 +1,15 @@
 class org/springframework/aop/scope/ScopedProxyFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 getObject
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 setBeanFactory
  (Lorg/springframework/beans/factory/BeanFactory;)V
  (Lorg/springframework/beans/factory/BeanFactory;)V

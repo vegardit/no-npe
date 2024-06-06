@@ -1,5 +1,9 @@
 class org/springframework/orm/jpa/support/SharedEntityManagerBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljavax/persistence/EntityManager;>
+ <Ljavax/persistence/EntityManager;>
+
 getObject
  ()Ljavax/persistence/EntityManager;
  ()L0javax/persistence/EntityManager;

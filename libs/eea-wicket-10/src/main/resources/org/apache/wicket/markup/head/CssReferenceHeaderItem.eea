@@ -8,7 +8,7 @@ class org/apache/wicket/markup/head/CssReferenceHeaderItem
  (Lorg/apache/wicket/request/resource/ResourceReference;Lorg/apache/wicket/request/mapper/parameter/PageParameters;Ljava/lang/String;Ljava/lang/String;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.apache.wicket.markup.head.AbstractCssReferenceHeaderItem)
 getCrossOrigin
  ()Lorg/apache/wicket/markup/html/CrossOrigin;
  ()Lorg/apache/wicket/markup/html/CrossOrigin;
@@ -35,4 +35,4 @@ render
  (Lorg/apache/wicket/request/Response;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

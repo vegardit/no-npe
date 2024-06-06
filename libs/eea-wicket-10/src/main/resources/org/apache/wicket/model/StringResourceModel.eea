@@ -1,5 +1,12 @@
 class org/apache/wicket/model/StringResourceModel
 
+super org/apache/wicket/model/LoadableDetachableModel
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+super org/apache/wicket/model/IComponentAssignedModel
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 <init>
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -50,7 +57,7 @@ setParameters
  ([Ljava/lang/Object;)Lorg/apache/wicket/model/StringResourceModel;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.apache.wicket.model.LoadableDetachableModel)
 wrapOnAssignment
  (Lorg/apache/wicket/Component;)Lorg/apache/wicket/model/IWrapModel<Ljava/lang/String;>;
  (Lorg/apache/wicket/Component;)Lorg/apache/wicket/model/IWrapModel<Ljava/lang/String;>;

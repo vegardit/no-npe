@@ -25,10 +25,10 @@ getLocalAddress
  ()Ljava/net/InetSocketAddress;
 getMethod
  ()Lorg/springframework/http/HttpMethod;
- ()L0org/springframework/http/HttpMethod;
+ ()L0org/springframework/http/HttpMethod; # @Inherited(org.springframework.http.HttpRequest)
 getPrincipal
  ()Ljava/security/Principal;
- ()Ljava/security/Principal;
+ ()L0java/security/Principal; # @Inherited(org.springframework.http.server.ServerHttpRequest)
 getRemoteAddress
  ()Ljava/net/InetSocketAddress;
  ()Ljava/net/InetSocketAddress;

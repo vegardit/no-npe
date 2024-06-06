@@ -14,7 +14,7 @@ executeInternal
  ()Lorg/springframework/http/client/ClientHttpResponse;
 getMethod
  ()Lorg/springframework/http/HttpMethod;
- ()Lorg/springframework/http/HttpMethod;
+ ()L0org/springframework/http/HttpMethod; # @Inherited(org.springframework.http.HttpRequest)
 getURI
  ()Ljava/net/URI;
  ()Ljava/net/URI;
@@ -29,4 +29,4 @@ setURI
  (Ljava/net/URI;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

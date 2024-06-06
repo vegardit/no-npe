@@ -1,11 +1,15 @@
 class org/springframework/jmx/access/MBeanProxyFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 getObject
  ()Ljava/lang/Object;
  ()L0java/lang/Object;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 setBeanClassLoader
  (Ljava/lang/ClassLoader;)V
  (Ljava/lang/ClassLoader;)V

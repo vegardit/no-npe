@@ -1,5 +1,10 @@
 class org/springframework/transaction/event/TransactionalApplicationListenerAdapter
  <E:Lorg/springframework/context/ApplicationEvent;>
+ <E:Lorg/springframework/context/ApplicationEvent;>
+
+super org/springframework/transaction/event/TransactionalApplicationListener
+ <TE;>
+ <TE;>
 
 <init>
  (Lorg/springframework/context/ApplicationListener<TE;>;)V
@@ -15,10 +20,10 @@ getTransactionPhase
  ()Lorg/springframework/transaction/event/TransactionPhase;
 onApplicationEvent
  (TE;)V
- (TE;)V
+ (T1E;)V # @Inherited(org.springframework.context.ApplicationListener)
 processEvent
  (TE;)V
- (TE;)V
+ (T1E;)V # @Inherited(org.springframework.transaction.event.TransactionalApplicationListener)
 setListenerId
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

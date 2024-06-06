@@ -1,5 +1,10 @@
 class org/apache/wicket/markup/html/form/Check
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/apache/wicket/IGenericComponent
+ <TT;Lorg/apache/wicket/markup/html/form/Check<TT;>;>
+ <TT;Lorg/apache/wicket/markup/html/form/Check<TT;>;>
 
 <init>
  (Ljava/lang/String;)V
@@ -21,7 +26,7 @@ getValue
  ()Ljava/lang/String;
 onComponentTag
  (Lorg/apache/wicket/markup/ComponentTag;)V
- (Lorg/apache/wicket/markup/ComponentTag;)V
+ (L1org/apache/wicket/markup/ComponentTag;)V # @Inherited(org.apache.wicket.Component)
 setLabel
  (Lorg/apache/wicket/model/IModel<Ljava/lang/String;>;)Lorg/apache/wicket/markup/html/form/Check<TT;>;
  (Lorg/apache/wicket/model/IModel<Ljava/lang/String;>;)Lorg/apache/wicket/markup/html/form/Check<TT;>;

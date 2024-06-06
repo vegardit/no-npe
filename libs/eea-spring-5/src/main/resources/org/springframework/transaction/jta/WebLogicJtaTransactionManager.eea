@@ -11,7 +11,7 @@ doJtaResume
  (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V
 retrieveTransactionManager
  ()Ljavax/transaction/TransactionManager;
- ()L0javax/transaction/TransactionManager;
+ ()L0javax/transaction/TransactionManager; # @Inherited(org.springframework.transaction.jta.JtaTransactionManager)
 retrieveUserTransaction
  ()Ljavax/transaction/UserTransaction;
- ()L0javax/transaction/UserTransaction;
+ ()L0javax/transaction/UserTransaction; # @Inherited(org.springframework.transaction.jta.JtaTransactionManager)

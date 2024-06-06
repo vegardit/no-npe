@@ -15,7 +15,7 @@ getSignatureWithoutReturnType
  (Ljava/lang/Class;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getConstructor
  (Ljava/lang/reflect/Constructor;)Lorg/springframework/cglib/reflect/FastConstructor;
  (Ljava/lang/reflect/Constructor;)Lorg/springframework/cglib/reflect/FastConstructor;
@@ -60,4 +60,4 @@ newInstance
  ([Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

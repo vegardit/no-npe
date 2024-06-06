@@ -1,11 +1,15 @@
 class org/springframework/http/converter/json/Jackson2ObjectMapperFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Lcom/fasterxml/jackson/databind/ObjectMapper;>
+ <Lcom/fasterxml/jackson/databind/ObjectMapper;>
+
 getObject
  ()Lcom/fasterxml/jackson/databind/ObjectMapper;
  ()L0com/fasterxml/jackson/databind/ObjectMapper;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 setAnnotationIntrospector
  (Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)V
  (Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)V

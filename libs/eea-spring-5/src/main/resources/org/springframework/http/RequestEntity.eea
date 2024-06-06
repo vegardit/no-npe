@@ -1,5 +1,10 @@
 class org/springframework/http/RequestEntity
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/springframework/http/HttpEntity
+ <TT;>
+ <TT;>
 
 delete
  (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/http/RequestEntity$HeadersBuilder<*>;
@@ -73,7 +78,7 @@ put
  (TT;Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/springframework/http/HttpMethod;Ljava/net/URI;Ljava/lang/reflect/Type;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.springframework.http.HttpEntity)
 getMethod
  ()Lorg/springframework/http/HttpMethod;
  ()L0org/springframework/http/HttpMethod;
@@ -85,4 +90,4 @@ getUrl
  ()Ljava/net/URI;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.http.HttpEntity)

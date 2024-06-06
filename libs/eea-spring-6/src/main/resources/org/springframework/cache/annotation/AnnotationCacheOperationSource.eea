@@ -14,13 +14,13 @@ determineCacheOperations
  (Lorg/springframework/cache/annotation/AnnotationCacheOperationSource$CacheOperationProvider;)L0java/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 findCacheOperations
  (Ljava/lang/Class<*>;)Ljava/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>;
- (Ljava/lang/Class<*>;)L0java/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>;
+ (Ljava/lang/Class<*>;)L0java/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>; # @Inherited(org.springframework.cache.interceptor.AbstractFallbackCacheOperationSource)
 findCacheOperations
  (Ljava/lang/reflect/Method;)Ljava/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>;
- (Ljava/lang/reflect/Method;)L0java/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>;
+ (Ljava/lang/reflect/Method;)L0java/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>; # @Inherited(org.springframework.cache.interceptor.AbstractFallbackCacheOperationSource)
 isCandidateClass
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z

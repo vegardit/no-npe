@@ -1,5 +1,9 @@
 class org/springframework/ejb/access/SimpleRemoteStatelessSessionProxyFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 getBusinessInterface
  ()Ljava/lang/Class<*>;
  ()L0java/lang/Class<*>;
@@ -8,7 +12,7 @@ getObject
  ()L0java/lang/Object;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 setBeanClassLoader
  (Ljava/lang/ClassLoader;)V
  (Ljava/lang/ClassLoader;)V

@@ -20,16 +20,16 @@ cloneWithUrl
  (Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/mock/MockWebRequest;
 getCharset
  ()Ljava/nio/charset/Charset;
- ()Ljava/nio/charset/Charset;
+ ()L1java/nio/charset/Charset; # @Inherited(org.apache.wicket.request.Request)
 getClientUrl
  ()Lorg/apache/wicket/request/Url;
- ()Lorg/apache/wicket/request/Url;
+ ()L1org/apache/wicket/request/Url; # @Inherited(org.apache.wicket.request.Request)
 getContainerRequest
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.apache.wicket.request.Request)
 getContextPath
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.apache.wicket.request.Request)
 getCookies
  ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
  ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
@@ -38,7 +38,7 @@ getDateHeader
  (Ljava/lang/String;)Ljava/time/Instant;
 getFilterPath
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.apache.wicket.request.Request)
 getHeader
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -47,16 +47,16 @@ getHeaders
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
 getLocale
  ()Ljava/util/Locale;
- ()Ljava/util/Locale;
+ ()L1java/util/Locale; # @Inherited(org.apache.wicket.request.Request)
 getPostParameters
  ()Lorg/apache/wicket/mock/MockRequestParameters;
  ()Lorg/apache/wicket/mock/MockRequestParameters;
 getPrefixToContextPath
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.apache.wicket.request.Request)
 getUrl
  ()Lorg/apache/wicket/request/Url;
- ()Lorg/apache/wicket/request/Url;
+ ()L1org/apache/wicket/request/Url; # @Inherited(org.apache.wicket.request.Request)
 removeHeader
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -86,4 +86,4 @@ setUrl
  (Lorg/apache/wicket/request/Url;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

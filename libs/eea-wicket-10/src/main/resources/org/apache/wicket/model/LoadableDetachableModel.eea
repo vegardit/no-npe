@@ -1,5 +1,10 @@
 class org/apache/wicket/model/LoadableDetachableModel
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/apache/wicket/model/IModel
+ <TT;>
+ <TT;>
 
 of
  <T:Ljava/lang/Object;>(Lorg/danekja/java/util/function/serializable/SerializableSupplier<TT;>;)Lorg/apache/wicket/model/LoadableDetachableModel<TT;>;
@@ -19,4 +24,4 @@ setObject
  (TT;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

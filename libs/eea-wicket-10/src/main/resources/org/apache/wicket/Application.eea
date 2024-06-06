@@ -1,5 +1,9 @@
 class org/apache/wicket/Application
 
+super org/apache/wicket/IMetadataContext
+ <Ljava/lang/Object;Lorg/apache/wicket/Application;>
+ <Ljava/lang/Object;Lorg/apache/wicket/Application;>
+
 CONFIGURATION
  Ljava/lang/String;
  L1java/lang/String;
@@ -196,7 +200,7 @@ newSharedResources
  (Lorg/apache/wicket/request/resource/ResourceReferenceRegistry;)Lorg/apache/wicket/SharedResources;
 onEvent
  (Lorg/apache/wicket/event/IEvent<*>;)V
- (L1org/apache/wicket/event/IEvent<*>;)V
+ (L1org/apache/wicket/event/IEvent<*>;)V # @Inherited(org.apache.wicket.event.IEventSink)
 sessionUnbound
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

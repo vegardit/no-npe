@@ -1,5 +1,9 @@
 class org/springframework/aop/framework/AbstractSingletonProxyFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 createMainInterceptor
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -11,7 +15,7 @@ getObject
  ()Ljava/lang/Object;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()L0java/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 postProcessProxyFactory
  (Lorg/springframework/aop/framework/ProxyFactory;)V
  (Lorg/springframework/aop/framework/ProxyFactory;)V

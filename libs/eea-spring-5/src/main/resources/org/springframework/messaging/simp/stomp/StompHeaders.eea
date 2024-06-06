@@ -1,5 +1,9 @@
 class org/springframework/messaging/simp/stomp/StompHeaders
 
+super org/springframework/util/MultiValueMap
+ <Ljava/lang/String;Ljava/lang/String;>
+ <Ljava/lang/String;Ljava/lang/String;>
+
 ACCEPT_VERSION
  Ljava/lang/String;
  L1java/lang/String;
@@ -73,7 +77,7 @@ entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (Ljava/lang/Object;)Ljava/util/List<Ljava/lang/String;>;
  (Ljava/lang/Object;)Ljava/util/List<Ljava/lang/String;>;
@@ -193,7 +197,7 @@ toSingleValueMap
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 values
  ()Ljava/util/Collection<Ljava/util/List<Ljava/lang/String;>;>;
  ()Ljava/util/Collection<Ljava/util/List<Ljava/lang/String;>;>;

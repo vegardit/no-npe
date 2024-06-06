@@ -1,5 +1,9 @@
 class org/springframework/messaging/simp/user/UserRegistryMessageHandler
 
+super org/springframework/context/ApplicationListener
+ <Lorg/springframework/messaging/simp/broker/BrokerAvailabilityEvent;>
+ <Lorg/springframework/messaging/simp/broker/BrokerAvailabilityEvent;>
+
 <init>
  (Lorg/springframework/messaging/simp/user/MultiServerUserRegistry;Lorg/springframework/messaging/simp/SimpMessagingTemplate;Ljava/lang/String;Lorg/springframework/scheduling/TaskScheduler;)V
  (Lorg/springframework/messaging/simp/user/MultiServerUserRegistry;Lorg/springframework/messaging/simp/SimpMessagingTemplate;Ljava/lang/String;Lorg/springframework/scheduling/TaskScheduler;)V

@@ -8,7 +8,7 @@ findSubscriptions
  (Lorg/springframework/messaging/simp/user/SimpSubscriptionMatcher;)Ljava/util/Set<Lorg/springframework/messaging/simp/user/SimpSubscription;>;
 getUser
  (Ljava/lang/String;)Lorg/springframework/messaging/simp/user/SimpUser;
- (Ljava/lang/String;)L0org/springframework/messaging/simp/user/SimpUser;
+ (Ljava/lang/String;)L0org/springframework/messaging/simp/user/SimpUser; # @Inherited(org.springframework.messaging.simp.user.SimpUserRegistry)
 getUsers
  ()Ljava/util/Set<Lorg/springframework/messaging/simp/user/SimpUser;>;
  ()Ljava/util/Set<Lorg/springframework/messaging/simp/user/SimpUser;>;
@@ -23,4 +23,4 @@ supportsSourceType
  (Ljava/lang/Class<*>;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

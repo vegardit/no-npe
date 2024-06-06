@@ -1,5 +1,10 @@
 class org/springframework/scheduling/annotation/AsyncResult
  <V:Ljava/lang/Object;>
+ <V:Ljava/lang/Object;>
+
+super org/springframework/util/concurrent/ListenableFuture
+ <TV;>
+ <TV;>
 
 forExecutionException
  <V:Ljava/lang/Object;>(Ljava/lang/Throwable;)Lorg/springframework/util/concurrent/ListenableFuture<TV;>;

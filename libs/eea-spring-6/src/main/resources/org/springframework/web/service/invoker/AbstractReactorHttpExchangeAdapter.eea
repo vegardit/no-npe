@@ -8,7 +8,7 @@ exchangeForBodilessEntity
  (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lorg/springframework/http/ResponseEntity<Ljava/lang/Void;>;
 exchangeForBody
  <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)T0T; # @Inherited(org.springframework.web.service.invoker.HttpExchangeAdapter)
 exchangeForEntity
  <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/http/ResponseEntity<TT;>;
  <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/http/ResponseEntity<TT;>;
@@ -17,7 +17,7 @@ exchangeForHeaders
  (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lorg/springframework/http/HttpHeaders;
 getBlockTimeout
  ()Ljava/time/Duration;
- ()L0java/time/Duration;
+ ()L0java/time/Duration; # @Inherited(org.springframework.web.service.invoker.ReactorHttpExchangeAdapter)
 getReactiveAdapterRegistry
  ()Lorg/springframework/core/ReactiveAdapterRegistry;
  ()Lorg/springframework/core/ReactiveAdapterRegistry;

@@ -17,10 +17,10 @@ canConvertTo
  (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;)Z
 convertFromInternal
  (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;Ljava/lang/Object;)Ljava/lang/Object;
- (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;Ljava/lang/Object;)L0java/lang/Object;
+ (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;Ljava/lang/Object;)L0java/lang/Object; # @Inherited(org.springframework.messaging.converter.AbstractMessageConverter)
 convertToInternal
  (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;Ljava/lang/Object;)L0java/lang/Object;
+ (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;Ljava/lang/Object;)L0java/lang/Object; # @Inherited(org.springframework.messaging.converter.AbstractMessageConverter)
 getJsonEncoding
  (Lorg/springframework/util/MimeType;)Lcom/fasterxml/jackson/core/JsonEncoding;
  (Lorg/springframework/util/MimeType;)Lcom/fasterxml/jackson/core/JsonEncoding;

@@ -134,7 +134,7 @@ postProcessObjectFromFactoryBean
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 predictBeanType
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
- (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Class<*>;)L0java/lang/Class<*>;
+ (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Class<*>;)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.support.AbstractBeanFactory)
 removeSingleton
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -146,7 +146,7 @@ resolveBeforeInstantiation
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)L0java/lang/Object;
 resolveDependency
  (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;)Ljava/lang/Object;
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;)L0java/lang/Object;
+ (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.config.AutowireCapableBeanFactory)
 setInstantiationStrategy
  (Lorg/springframework/beans/factory/support/InstantiationStrategy;)V
  (Lorg/springframework/beans/factory/support/InstantiationStrategy;)V

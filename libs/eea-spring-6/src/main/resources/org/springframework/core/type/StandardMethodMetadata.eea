@@ -5,13 +5,13 @@ class org/springframework/core/type/StandardMethodMetadata
  (Ljava/lang/reflect/Method;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAllAnnotationAttributes
  (Ljava/lang/String;Z)Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/lang/String;Z)L0org/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/lang/String;Z)L0org/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/Object;>; # @Inherited(org.springframework.core.type.AnnotatedTypeMetadata)
 getAnnotationAttributes
  (Ljava/lang/String;Z)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/lang/String;Z)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/lang/String;Z)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Inherited(org.springframework.core.type.AnnotatedTypeMetadata)
 getAnnotations
  ()Lorg/springframework/core/annotation/MergedAnnotations;
  ()Lorg/springframework/core/annotation/MergedAnnotations;
@@ -29,4 +29,4 @@ getReturnTypeName
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

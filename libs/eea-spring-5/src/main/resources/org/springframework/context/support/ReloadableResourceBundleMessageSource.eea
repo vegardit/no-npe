@@ -23,10 +23,10 @@ refreshProperties
  (Ljava/lang/String;Lorg/springframework/context/support/ReloadableResourceBundleMessageSource$PropertiesHolder;)Lorg/springframework/context/support/ReloadableResourceBundleMessageSource$PropertiesHolder;
 resolveCode
  (Ljava/lang/String;Ljava/util/Locale;)Ljava/text/MessageFormat;
- (Ljava/lang/String;Ljava/util/Locale;)L0java/text/MessageFormat;
+ (Ljava/lang/String;Ljava/util/Locale;)L0java/text/MessageFormat; # @Inherited(org.springframework.context.support.AbstractMessageSource)
 resolveCodeWithoutArguments
  (Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
- (Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/util/Locale;)L0java/lang/String; # @Inherited(org.springframework.context.support.AbstractMessageSource)
 setFileEncodings
  (Ljava/util/Properties;)V
  (Ljava/util/Properties;)V
@@ -38,4 +38,4 @@ setResourceLoader
  (Lorg/springframework/core/io/ResourceLoader;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

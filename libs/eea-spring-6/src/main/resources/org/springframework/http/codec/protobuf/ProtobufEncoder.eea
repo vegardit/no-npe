@@ -1,5 +1,9 @@
 class org/springframework/http/codec/protobuf/ProtobufEncoder
 
+super org/springframework/http/codec/HttpMessageEncoder
+ <Lcom/google/protobuf/Message;>
+ <Lcom/google/protobuf/Message;>
+
 canEncode
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z

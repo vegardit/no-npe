@@ -11,7 +11,7 @@ class org/springframework/remoting/rmi/CodebaseAwareObjectInputStream
  (Ljava/io/InputStream;Ljava/lang/String;)V
 getFallbackClassLoader
  ()Ljava/lang/ClassLoader;
- ()Ljava/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Inherited(org.springframework.core.ConfigurableObjectInputStream)
 resolveFallbackIfPossible
  (Ljava/lang/String;Ljava/lang/ClassNotFoundException;)Ljava/lang/Class<*>;
  (Ljava/lang/String;Ljava/lang/ClassNotFoundException;)Ljava/lang/Class<*>;

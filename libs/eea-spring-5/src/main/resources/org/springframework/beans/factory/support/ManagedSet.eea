@@ -1,5 +1,10 @@
 class org/springframework/beans/factory/support/ManagedSet
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/LinkedHashSet
+ <TE;>
+ <TE;>
 
 of
  <E:Ljava/lang/Object;>([TE;)Lorg/springframework/beans/factory/support/ManagedSet<TE;>;
@@ -10,7 +15,7 @@ getElementTypeName
  ()L0java/lang/String;
 getSource
  ()Ljava/lang/Object;
- ()L0java/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.springframework.beans.BeanMetadataElement)
 merge
  (Ljava/lang/Object;)Ljava/util/Set<TE;>;
  (Ljava/lang/Object;)Ljava/util/Set<TE;>;

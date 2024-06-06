@@ -1,11 +1,15 @@
 class org/springframework/beans/factory/config/FieldRetrievingFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 getObject
  ()Ljava/lang/Object;
  ()L0java/lang/Object;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()L0java/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 getTargetClass
  ()Ljava/lang/Class<*>;
  ()L0java/lang/Class<*>;

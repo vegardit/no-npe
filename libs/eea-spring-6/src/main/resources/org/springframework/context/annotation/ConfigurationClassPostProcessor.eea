@@ -15,10 +15,10 @@ postProcessBeanFactory
  (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
 processAheadOfTime
  (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)Lorg/springframework/beans/factory/aot/BeanFactoryInitializationAotContribution;
- (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)L0org/springframework/beans/factory/aot/BeanFactoryInitializationAotContribution;
+ (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)L0org/springframework/beans/factory/aot/BeanFactoryInitializationAotContribution; # @Inherited(org.springframework.beans.factory.aot.BeanFactoryInitializationAotProcessor)
 processAheadOfTime
  (Lorg/springframework/beans/factory/support/RegisteredBean;)Lorg/springframework/beans/factory/aot/BeanRegistrationAotContribution;
- (Lorg/springframework/beans/factory/support/RegisteredBean;)L0org/springframework/beans/factory/aot/BeanRegistrationAotContribution;
+ (Lorg/springframework/beans/factory/support/RegisteredBean;)L0org/springframework/beans/factory/aot/BeanRegistrationAotContribution; # @Inherited(org.springframework.beans.factory.aot.BeanRegistrationAotProcessor)
 processConfigBeanDefinitions
  (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)V
  (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)V

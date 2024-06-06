@@ -1,11 +1,15 @@
 class org/apache/wicket/util/value/IntValue
 
+super java/lang/Comparable
+ <Lorg/apache/wicket/util/value/IntValue;>
+ <Lorg/apache/wicket/util/value/IntValue;>
+
 compareTo
  (Lorg/apache/wicket/util/value/IntValue;)I
  (Lorg/apache/wicket/util/value/IntValue;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 greaterThan
  (Lorg/apache/wicket/util/value/IntValue;)Z
  (Lorg/apache/wicket/util/value/IntValue;)Z
@@ -14,4 +18,4 @@ lessThan
  (Lorg/apache/wicket/util/value/IntValue;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

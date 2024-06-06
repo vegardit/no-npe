@@ -1,5 +1,10 @@
 class org/springframework/http/codec/HttpMessageEncoder
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/springframework/core/codec/Encoder
+ <TT;>
+ <TT;>
 
 getEncodeHints
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/MediaType;Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;

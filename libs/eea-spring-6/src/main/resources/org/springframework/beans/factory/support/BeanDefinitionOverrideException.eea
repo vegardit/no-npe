@@ -8,10 +8,10 @@ getBeanDefinition
  ()Lorg/springframework/beans/factory/config/BeanDefinition;
 getBeanName
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Overrides(org.springframework.beans.factory.BeanDefinitionStoreException)
 getExistingDefinition
  ()Lorg/springframework/beans/factory/config/BeanDefinition;
  ()Lorg/springframework/beans/factory/config/BeanDefinition;
 getResourceDescription
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Overrides(org.springframework.beans.factory.BeanDefinitionStoreException)

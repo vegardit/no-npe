@@ -32,10 +32,10 @@ getNativeResponse
  <T:Ljava/lang/Object;>()TT;
 getRawStatusCode
  ()Ljava/lang/Integer;
- ()L0java/lang/Integer;
+ ()L0java/lang/Integer; # @Inherited(org.springframework.http.server.reactive.ServerHttpResponse)
 getStatusCode
  ()Lorg/springframework/http/HttpStatus;
- ()L0org/springframework/http/HttpStatus;
+ ()L0org/springframework/http/HttpStatus; # @Inherited(org.springframework.http.server.reactive.ServerHttpResponse)
 getStatusCodeValue
  ()Ljava/lang/Integer;
  ()L0java/lang/Integer;

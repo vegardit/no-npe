@@ -40,10 +40,10 @@ createEnvironment
  ()Lorg/springframework/core/env/ConfigurableEnvironment;
 findAnnotationOnBean
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;)TA;
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;)T0A;
+ <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;)T0A; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 findAnnotationOnBean
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;Z)TA;
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;Z)T0A;
+ <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;Z)T0A; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 finishBeanFactoryInitialization
  (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
  (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
@@ -79,7 +79,7 @@ getBean
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
 getBeanDefinitionNames
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanFactory
  ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
  ()Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
@@ -88,25 +88,25 @@ getBeanFactoryPostProcessors
  ()Ljava/util/List<Lorg/springframework/beans/factory/config/BeanFactoryPostProcessor;>;
 getBeanNamesForAnnotation
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)[Ljava/lang/String;
- (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)[Ljava/lang/String;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanNamesForType
  (Ljava/lang/Class<*>;)[Ljava/lang/String;
- (Ljava/lang/Class<*>;)[Ljava/lang/String;
+ (Ljava/lang/Class<*>;)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanNamesForType
  (Ljava/lang/Class<*>;ZZ)[Ljava/lang/String;
- (Ljava/lang/Class<*>;ZZ)[Ljava/lang/String;
+ (Ljava/lang/Class<*>;ZZ)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanNamesForType
  (Lorg/springframework/core/ResolvableType;)[Ljava/lang/String;
- (Lorg/springframework/core/ResolvableType;)[Ljava/lang/String;
+ (Lorg/springframework/core/ResolvableType;)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanNamesForType
  (Lorg/springframework/core/ResolvableType;ZZ)[Ljava/lang/String;
- (Lorg/springframework/core/ResolvableType;ZZ)[Ljava/lang/String;
+ (Lorg/springframework/core/ResolvableType;ZZ)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanProvider
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
 getBeanProvider
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)L1org/springframework/beans/factory/ObjectProvider<TT;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanProvider
  <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
  <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
@@ -115,13 +115,13 @@ getBeanProvider
  <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;Z)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
 getBeansOfType
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/util/Map<Ljava/lang/String;TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/util/Map<Ljava/lang/String;TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1java/util/Map<L1java/lang/String;TT;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeansOfType
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;ZZ)Ljava/util/Map<Ljava/lang/String;TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;ZZ)Ljava/util/Map<Ljava/lang/String;TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;ZZ)L1java/util/Map<L1java/lang/String;TT;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeansWithAnnotation
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)L1java/util/Map<L1java/lang/String;Ljava/lang/Object;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getDisplayName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -130,7 +130,7 @@ getEnvironment
  ()Lorg/springframework/core/env/ConfigurableEnvironment;
 getId
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.context.ApplicationContext)
 getInternalParentBeanFactory
  ()Lorg/springframework/beans/factory/BeanFactory;
  ()L0org/springframework/beans/factory/BeanFactory;
@@ -139,7 +139,7 @@ getInternalParentMessageSource
  ()L0org/springframework/context/MessageSource;
 getMessage
  (Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
- (Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
+ (Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/String;Ljava/util/Locale;)L0java/lang/String; # @Inherited(org.springframework.context.MessageSource)
 getMessage
  (Ljava/lang/String;[Ljava/lang/Object;Ljava/util/Locale;)Ljava/lang/String;
  (Ljava/lang/String;[Ljava/lang/Object;Ljava/util/Locale;)Ljava/lang/String;
@@ -148,10 +148,10 @@ getMessage
  (Lorg/springframework/context/MessageSourceResolvable;Ljava/util/Locale;)Ljava/lang/String;
 getParent
  ()Lorg/springframework/context/ApplicationContext;
- ()L0org/springframework/context/ApplicationContext;
+ ()L0org/springframework/context/ApplicationContext; # @Inherited(org.springframework.context.ApplicationContext)
 getParentBeanFactory
  ()Lorg/springframework/beans/factory/BeanFactory;
- ()L0org/springframework/beans/factory/BeanFactory;
+ ()L0org/springframework/beans/factory/BeanFactory; # @Inherited(org.springframework.beans.factory.HierarchicalBeanFactory)
 getResourcePatternResolver
  ()Lorg/springframework/core/io/support/ResourcePatternResolver;
  ()Lorg/springframework/core/io/support/ResourcePatternResolver;
@@ -160,10 +160,10 @@ getResources
  (Ljava/lang/String;)[Lorg/springframework/core/io/Resource;
 getType
  (Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/String;)L0java/lang/Class<*>;
+ (Ljava/lang/String;)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.BeanFactory)
 getType
  (Ljava/lang/String;Z)Ljava/lang/Class<*>;
- (Ljava/lang/String;Z)L0java/lang/Class<*>;
+ (Ljava/lang/String;Z)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.BeanFactory)
 invokeBeanFactoryPostProcessors
  (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
  (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
@@ -217,4 +217,4 @@ setParent
  (Lorg/springframework/context/ApplicationContext;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

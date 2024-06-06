@@ -14,16 +14,16 @@ generatePostParameters
  ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/wicket/util/string/StringValue;>;>;
 getCharset
  ()Ljava/nio/charset/Charset;
- ()Ljava/nio/charset/Charset;
+ ()L1java/nio/charset/Charset; # @Inherited(org.apache.wicket.request.Request)
 getClientUrl
  ()Lorg/apache/wicket/request/Url;
- ()Lorg/apache/wicket/request/Url;
+ ()L1org/apache/wicket/request/Url; # @Inherited(org.apache.wicket.request.Request)
 getContainerRequest
  ()Ljakarta/servlet/http/HttpServletRequest;
  ()Ljakarta/servlet/http/HttpServletRequest;
 getContextPath
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.apache.wicket.request.Request)
 getCookies
  ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
  ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
@@ -32,7 +32,7 @@ getDateHeader
  (Ljava/lang/String;)Ljava/time/Instant;
 getFilterPath
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.apache.wicket.request.Request)
 getFilterPrefix
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -44,16 +44,16 @@ getHeaders
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
 getLocale
  ()Ljava/util/Locale;
- ()Ljava/util/Locale;
+ ()L1java/util/Locale; # @Inherited(org.apache.wicket.request.Request)
 getPostParameters
  ()Lorg/apache/wicket/request/IRequestParameters;
- ()Lorg/apache/wicket/request/IRequestParameters;
+ ()L1org/apache/wicket/request/IRequestParameters; # @Inherited(org.apache.wicket.request.Request)
 getPrefixToContextPath
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.apache.wicket.request.Request)
 getUrl
  ()Lorg/apache/wicket/request/Url;
- ()Lorg/apache/wicket/request/Url;
+ ()L1org/apache/wicket/request/Url; # @Inherited(org.apache.wicket.request.Request)
 newMultipartWebRequest
  (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
  (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;

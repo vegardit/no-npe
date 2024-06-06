@@ -21,13 +21,13 @@ getLocalAddress
  ()Ljava/net/InetSocketAddress;
 getMethod
  ()Lorg/springframework/http/HttpMethod;
- ()L0org/springframework/http/HttpMethod;
+ ()L0org/springframework/http/HttpMethod; # @Inherited(org.springframework.http.HttpRequest)
 getMethodValue
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getPrincipal
  ()Ljava/security/Principal;
- ()Ljava/security/Principal;
+ ()L0java/security/Principal; # @Inherited(org.springframework.http.server.ServerHttpRequest)
 getRemoteAddress
  ()Ljava/net/InetSocketAddress;
  ()Ljava/net/InetSocketAddress;

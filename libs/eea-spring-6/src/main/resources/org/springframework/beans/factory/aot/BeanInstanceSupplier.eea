@@ -1,5 +1,10 @@
 class org/springframework/beans/factory/aot/BeanInstanceSupplier
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/springframework/beans/factory/support/InstanceSupplier
+ <TT;>
+ <TT;>
 
 forConstructor
  <T:Ljava/lang/Object;>([Ljava/lang/Class<*>;)Lorg/springframework/beans/factory/aot/BeanInstanceSupplier<TT;>;
@@ -13,7 +18,7 @@ get
  (Lorg/springframework/beans/factory/support/RegisteredBean;)TT;
 getFactoryMethod
  ()Ljava/lang/reflect/Method;
- ()L0java/lang/reflect/Method;
+ ()L0java/lang/reflect/Method; # @Inherited(org.springframework.beans.factory.support.InstanceSupplier)
 withGenerator
  (Lorg/springframework/util/function/ThrowingBiFunction<Lorg/springframework/beans/factory/support/RegisteredBean;Lorg/springframework/beans/factory/aot/AutowiredArguments;TT;>;)Lorg/springframework/beans/factory/aot/BeanInstanceSupplier<TT;>;
  (Lorg/springframework/util/function/ThrowingBiFunction<Lorg/springframework/beans/factory/support/RegisteredBean;Lorg/springframework/beans/factory/aot/AutowiredArguments;TT;>;)Lorg/springframework/beans/factory/aot/BeanInstanceSupplier<TT;>;

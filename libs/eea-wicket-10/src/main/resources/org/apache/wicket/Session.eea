@@ -1,5 +1,9 @@
 class org/apache/wicket/Session
 
+super org/apache/wicket/IMetadataContext
+ <Ljava/io/Serializable;Lorg/apache/wicket/Session;>
+ <Ljava/io/Serializable;Lorg/apache/wicket/Session;>
+
 SESSION_ATTRIBUTE_NAME
  Ljava/lang/String;
  L1java/lang/String;
@@ -80,7 +84,7 @@ newPageAccessSynchronizer
  (Ljava/time/Duration;)Lorg/apache/wicket/page/PageAccessSynchronizer;
 onEvent
  (Lorg/apache/wicket/event/IEvent<*>;)V
- (L1org/apache/wicket/event/IEvent<*>;)V
+ (L1org/apache/wicket/event/IEvent<*>;)V # @Inherited(org.apache.wicket.event.IEventSink)
 removeAttribute
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

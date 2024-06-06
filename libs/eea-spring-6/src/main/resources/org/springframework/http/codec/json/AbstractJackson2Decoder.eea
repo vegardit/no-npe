@@ -1,5 +1,9 @@
 class org/springframework/http/codec/json/AbstractJackson2Decoder
 
+super org/springframework/http/codec/HttpMessageDecoder
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 <init>
  (Lcom/fasterxml/jackson/databind/ObjectMapper;[Lorg/springframework/util/MimeType;)V
  (Lcom/fasterxml/jackson/databind/ObjectMapper;[Lorg/springframework/util/MimeType;)V
@@ -20,7 +24,7 @@ decodeToMono
  (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<Ljava/lang/Object;>;
 getAnnotation
  <A::Ljava/lang/annotation/Annotation;>(Lorg/springframework/core/MethodParameter;Ljava/lang/Class<TA;>;)TA;
- <A::Ljava/lang/annotation/Annotation;>(Lorg/springframework/core/MethodParameter;Ljava/lang/Class<TA;>;)T0A;
+ <A::Ljava/lang/annotation/Annotation;>(Lorg/springframework/core/MethodParameter;Ljava/lang/Class<TA;>;)T0A; # @Inherited(org.springframework.http.codec.json.Jackson2CodecSupport)
 getDecodableMimeTypes
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;

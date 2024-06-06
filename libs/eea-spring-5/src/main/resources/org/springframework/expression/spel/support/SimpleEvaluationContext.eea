@@ -15,7 +15,7 @@ assignVariable
  (Ljava/lang/String;Ljava/util/function/Supplier<Lorg/springframework/expression/TypedValue;>;)Lorg/springframework/expression/TypedValue;
 getBeanResolver
  ()Lorg/springframework/expression/BeanResolver;
- ()L0org/springframework/expression/BeanResolver;
+ ()L0org/springframework/expression/BeanResolver; # @Inherited(org.springframework.expression.EvaluationContext)
 getConstructorResolvers
  ()Ljava/util/List<Lorg/springframework/expression/ConstructorResolver;>;
  ()Ljava/util/List<Lorg/springframework/expression/ConstructorResolver;>;
@@ -42,7 +42,7 @@ getTypeLocator
  ()Lorg/springframework/expression/TypeLocator;
 lookupVariable
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.expression.EvaluationContext)
 setVariable
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V

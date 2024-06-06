@@ -36,7 +36,7 @@ getThis
  ()L0java/lang/Object;
 getUserAttribute
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.aop.ProxyMethodInvocation)
 getUserAttributes
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
@@ -60,4 +60,4 @@ setUserAttribute
  (Ljava/lang/String;Ljava/lang/Object;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

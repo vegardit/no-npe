@@ -2,7 +2,7 @@ class org/springframework/orm/jpa/vendor/HibernateJpaDialect
 
 beginTransaction
  (Ljavax/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)Ljava/lang/Object;
- (Ljavax/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)Ljava/lang/Object;
+ (Ljavax/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 cleanupTransaction
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
@@ -11,7 +11,7 @@ convertHibernateAccessException
  (Lorg/hibernate/HibernateException;)Lorg/springframework/dao/DataAccessException;
 getJdbcConnection
  (Ljavax/persistence/EntityManager;Z)Lorg/springframework/jdbc/datasource/ConnectionHandle;
- (Ljavax/persistence/EntityManager;Z)Lorg/springframework/jdbc/datasource/ConnectionHandle;
+ (Ljavax/persistence/EntityManager;Z)L0org/springframework/jdbc/datasource/ConnectionHandle; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 getSession
  (Ljavax/persistence/EntityManager;)Lorg/hibernate/engine/spi/SessionImplementor;
  (Ljavax/persistence/EntityManager;)Lorg/hibernate/engine/spi/SessionImplementor;
@@ -20,10 +20,10 @@ prepareFlushMode
  (Lorg/hibernate/Session;Z)L0org/hibernate/FlushMode;
 prepareTransaction
  (Ljavax/persistence/EntityManager;ZLjava/lang/String;)Ljava/lang/Object;
- (Ljavax/persistence/EntityManager;ZLjava/lang/String;)Ljava/lang/Object;
+ (Ljavax/persistence/EntityManager;ZLjava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 setJdbcExceptionTranslator
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
 translateExceptionIfPossible
  (Ljava/lang/RuntimeException;)Lorg/springframework/dao/DataAccessException;
- (Ljava/lang/RuntimeException;)L0org/springframework/dao/DataAccessException;
+ (Ljava/lang/RuntimeException;)L0org/springframework/dao/DataAccessException; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)

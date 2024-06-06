@@ -35,13 +35,13 @@ getPropertyHandler
  (Ljava/lang/String;)L0org/springframework/beans/AbstractNestablePropertyAccessor$PropertyHandler;
 getPropertyType
  (Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/String;)L0java/lang/Class<*>;
+ (Ljava/lang/String;)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.AbstractPropertyAccessor)
 getPropertyTypeDescriptor
  (Ljava/lang/String;)Lorg/springframework/core/convert/TypeDescriptor;
- (Ljava/lang/String;)L0org/springframework/core/convert/TypeDescriptor;
+ (Ljava/lang/String;)L0org/springframework/core/convert/TypeDescriptor; # @Inherited(org.springframework.beans.PropertyAccessor)
 getPropertyValue
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.beans.AbstractPropertyAccessor)
 getPropertyValue
  (Lorg/springframework/beans/AbstractNestablePropertyAccessor$PropertyTokenHolder;)Ljava/lang/Object;
  (Lorg/springframework/beans/AbstractNestablePropertyAccessor$PropertyTokenHolder;)L0java/lang/Object;
@@ -83,4 +83,4 @@ setWrappedInstance
  (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

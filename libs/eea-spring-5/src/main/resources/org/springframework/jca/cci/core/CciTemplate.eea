@@ -20,7 +20,7 @@ doExecute
  <T:Ljava/lang/Object;>(Ljavax/resource/cci/InteractionSpec;Ljavax/resource/cci/Record;Ljavax/resource/cci/Record;Lorg/springframework/jca/cci/core/RecordExtractor<TT;>;)T0T;
 execute
  (Ljavax/resource/cci/InteractionSpec;Ljavax/resource/cci/Record;)Ljavax/resource/cci/Record;
- (Ljavax/resource/cci/InteractionSpec;Ljavax/resource/cci/Record;)L0javax/resource/cci/Record;
+ (Ljavax/resource/cci/InteractionSpec;Ljavax/resource/cci/Record;)L0javax/resource/cci/Record; # @Inherited(org.springframework.jca.cci.core.CciOperations)
 execute
  (Ljavax/resource/cci/InteractionSpec;Ljavax/resource/cci/Record;Ljavax/resource/cci/Record;)V
  (Ljavax/resource/cci/InteractionSpec;Ljavax/resource/cci/Record;Ljavax/resource/cci/Record;)V
@@ -29,16 +29,16 @@ execute
  (Ljavax/resource/cci/InteractionSpec;Lorg/springframework/jca/cci/core/RecordCreator;)Ljavax/resource/cci/Record;
 execute
  <T:Ljava/lang/Object;>(Ljavax/resource/cci/InteractionSpec;Ljavax/resource/cci/Record;Lorg/springframework/jca/cci/core/RecordExtractor<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljavax/resource/cci/InteractionSpec;Ljavax/resource/cci/Record;Lorg/springframework/jca/cci/core/RecordExtractor<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljavax/resource/cci/InteractionSpec;Ljavax/resource/cci/Record;Lorg/springframework/jca/cci/core/RecordExtractor<TT;>;)T0T; # @Inherited(org.springframework.jca.cci.core.CciOperations)
 execute
  <T:Ljava/lang/Object;>(Ljavax/resource/cci/InteractionSpec;Lorg/springframework/jca/cci/core/RecordCreator;Lorg/springframework/jca/cci/core/RecordExtractor<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljavax/resource/cci/InteractionSpec;Lorg/springframework/jca/cci/core/RecordCreator;Lorg/springframework/jca/cci/core/RecordExtractor<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljavax/resource/cci/InteractionSpec;Lorg/springframework/jca/cci/core/RecordCreator;Lorg/springframework/jca/cci/core/RecordExtractor<TT;>;)T0T; # @Inherited(org.springframework.jca.cci.core.CciOperations)
 execute
  <T:Ljava/lang/Object;>(Lorg/springframework/jca/cci/core/ConnectionCallback<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/jca/cci/core/ConnectionCallback<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(Lorg/springframework/jca/cci/core/ConnectionCallback<TT;>;)T0T; # @Inherited(org.springframework.jca.cci.core.CciOperations)
 execute
  <T:Ljava/lang/Object;>(Lorg/springframework/jca/cci/core/InteractionCallback<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/jca/cci/core/InteractionCallback<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(Lorg/springframework/jca/cci/core/InteractionCallback<TT;>;)T0T; # @Inherited(org.springframework.jca.cci.core.CciOperations)
 getConnectionFactory
  ()Ljavax/resource/cci/ConnectionFactory;
  ()L0javax/resource/cci/ConnectionFactory;

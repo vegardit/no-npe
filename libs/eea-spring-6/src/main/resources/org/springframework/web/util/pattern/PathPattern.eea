@@ -1,5 +1,9 @@
 class org/springframework/web/util/pattern/PathPattern
 
+super java/lang/Comparable
+ <Lorg/springframework/web/util/pattern/PathPattern;>
+ <Lorg/springframework/web/util/pattern/PathPattern;>
+
 SPECIFICITY_COMPARATOR
  Ljava/util/Comparator<Lorg/springframework/web/util/pattern/PathPattern;>;
  L1java/util/Comparator<Lorg/springframework/web/util/pattern/PathPattern;>;
@@ -12,7 +16,7 @@ compareTo
  (Lorg/springframework/web/util/pattern/PathPattern;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 extractPathWithinPattern
  (Lorg/springframework/http/server/PathContainer;)Lorg/springframework/http/server/PathContainer;
  (Lorg/springframework/http/server/PathContainer;)Lorg/springframework/http/server/PathContainer;
@@ -30,4 +34,4 @@ matches
  (Lorg/springframework/http/server/PathContainer;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

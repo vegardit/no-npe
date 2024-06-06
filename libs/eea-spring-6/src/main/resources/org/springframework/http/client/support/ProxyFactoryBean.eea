@@ -1,11 +1,15 @@
 class org/springframework/http/client/support/ProxyFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljava/net/Proxy;>
+ <Ljava/net/Proxy;>
+
 getObject
  ()Ljava/net/Proxy;
  ()L0java/net/Proxy;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 setHostname
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

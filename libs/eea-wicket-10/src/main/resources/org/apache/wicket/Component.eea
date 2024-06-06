@@ -1,5 +1,12 @@
 class org/apache/wicket/Component
 
+super org/apache/wicket/util/IHierarchical
+ <Lorg/apache/wicket/Component;>
+ <Lorg/apache/wicket/Component;>
+super org/apache/wicket/IMetadataContext
+ <Ljava/io/Serializable;Lorg/apache/wicket/Component;>
+ <Ljava/io/Serializable;Lorg/apache/wicket/Component;>
+
 ENABLE
  Lorg/apache/wicket/authorization/Action;
  L1org/apache/wicket/authorization/Action;
@@ -207,7 +214,7 @@ onComponentTagBody
  (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
 onEvent
  (Lorg/apache/wicket/event/IEvent<*>;)V
- (L1org/apache/wicket/event/IEvent<*>;)V
+ (L1org/apache/wicket/event/IEvent<*>;)V # @Inherited(org.apache.wicket.event.IEventSink)
 redirectToInterceptPage
  (Lorg/apache/wicket/Page;)V
  (Lorg/apache/wicket/Page;)V
@@ -306,7 +313,7 @@ success
  (Ljava/io/Serializable;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 toString
  (Z)Ljava/lang/String;
  (Z)Ljava/lang/String;

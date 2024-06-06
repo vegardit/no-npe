@@ -20,10 +20,10 @@ checkPageClass
  (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;)Z
 mapHandler
  (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
- (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
+ (L1org/apache/wicket/request/IRequestHandler;)L0org/apache/wicket/request/Url; # @Inherited(org.apache.wicket.core.request.mapper.AbstractBookmarkableMapper)
 parseRequest
  (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;
  (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

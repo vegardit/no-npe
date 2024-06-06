@@ -1,5 +1,10 @@
 class org/apache/wicket/model/PropertyModel
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/apache/wicket/model/AbstractPropertyModel
+ <TT;>
+ <TT;>
 
 of
  <Z:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/String;)Lorg/apache/wicket/model/PropertyModel<TZ;>;
@@ -13,4 +18,4 @@ propertyExpression
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.apache.wicket.model.ChainingModel)

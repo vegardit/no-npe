@@ -1,5 +1,9 @@
 class org/springframework/jndi/JndiObjectFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 createCompositeInterface
  ([Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
  ([Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
@@ -8,7 +12,7 @@ getObject
  ()L0java/lang/Object;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()L0java/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 lookupWithFallback
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;

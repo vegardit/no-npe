@@ -9,10 +9,10 @@ createMessageSource
  (Ljava/lang/String;)Lorg/springframework/context/MessageSource;
 getParentThemeSource
  ()Lorg/springframework/ui/context/ThemeSource;
- ()L0org/springframework/ui/context/ThemeSource;
+ ()L0org/springframework/ui/context/ThemeSource; # @Inherited(org.springframework.ui.context.HierarchicalThemeSource)
 getTheme
  (Ljava/lang/String;)Lorg/springframework/ui/context/Theme;
- (Ljava/lang/String;)L0org/springframework/ui/context/Theme;
+ (Ljava/lang/String;)L0org/springframework/ui/context/Theme; # @Inherited(org.springframework.ui.context.ThemeSource)
 initParent
  (Lorg/springframework/ui/context/Theme;)V
  (Lorg/springframework/ui/context/Theme;)V

@@ -29,7 +29,7 @@ cloneBeanDefinition
  ()Lorg/springframework/beans/factory/support/RootBeanDefinition;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.springframework.beans.factory.support.AbstractBeanDefinition)
 getDecoratedDefinition
  ()Lorg/springframework/beans/factory/config/BeanDefinitionHolder;
  ()L0org/springframework/beans/factory/config/BeanDefinitionHolder;
@@ -44,7 +44,7 @@ getExternallyManagedInitMethods
  ()Ljava/util/Set<Ljava/lang/String;>;
 getParentName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getPreferredConstructors
  ()[Ljava/lang/reflect/Constructor<*>;
  ()[0Ljava/lang/reflect/Constructor<*>;
@@ -107,4 +107,4 @@ setUniqueFactoryMethodName
  (Ljava/lang/String;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.beans.factory.support.AbstractBeanDefinition)

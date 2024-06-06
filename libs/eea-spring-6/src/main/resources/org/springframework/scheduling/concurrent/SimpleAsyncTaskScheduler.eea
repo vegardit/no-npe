@@ -1,5 +1,9 @@
 class org/springframework/scheduling/concurrent/SimpleAsyncTaskScheduler
 
+super org/springframework/context/ApplicationListener
+ <Lorg/springframework/context/event/ContextClosedEvent;>
+ <Lorg/springframework/context/event/ContextClosedEvent;>
+
 doExecute
  (Ljava/lang/Runnable;)V
  (Ljava/lang/Runnable;)V
@@ -14,7 +18,7 @@ schedule
  (Ljava/lang/Runnable;Ljava/time/Instant;)Ljava/util/concurrent/ScheduledFuture<*>;
 schedule
  (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)L0java/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)L0java/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleAtFixedRate
  (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
  (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;

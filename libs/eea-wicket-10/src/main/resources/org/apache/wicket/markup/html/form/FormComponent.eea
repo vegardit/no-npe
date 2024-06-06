@@ -1,5 +1,10 @@
 class org/apache/wicket/markup/html/form/FormComponent
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/apache/wicket/IGenericComponent
+ <TT;Lorg/apache/wicket/markup/html/form/FormComponent<TT;>;>
+ <TT;Lorg/apache/wicket/markup/html/form/FormComponent<TT;>;>
 
 VALUE_SEPARATOR
  Ljava/lang/String;
@@ -86,7 +91,7 @@ newValidationError
  (Lorg/apache/wicket/util/convert/ConversionException;)Lorg/apache/wicket/validation/ValidationError;
 onComponentTag
  (Lorg/apache/wicket/markup/ComponentTag;)V
- (Lorg/apache/wicket/markup/ComponentTag;)V
+ (L1org/apache/wicket/markup/ComponentTag;)V # @Inherited(org.apache.wicket.Component)
 onDisabled
  (Lorg/apache/wicket/markup/ComponentTag;)V
  (Lorg/apache/wicket/markup/ComponentTag;)V
@@ -114,3 +119,6 @@ trim
 updateAutoLabels
  (Lorg/apache/wicket/ajax/AjaxRequestTarget;)V
  (Lorg/apache/wicket/ajax/AjaxRequestTarget;)V
+updateAutoLabels
+ (Lorg/apache/wicket/core/request/handler/IPartialPageRequestHandler;Z)V
+ (Lorg/apache/wicket/core/request/handler/IPartialPageRequestHandler;Z)V

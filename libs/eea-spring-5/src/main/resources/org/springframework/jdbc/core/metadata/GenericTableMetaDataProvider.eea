@@ -9,7 +9,7 @@ logger
  (Ljava/sql/DatabaseMetaData;)V
 catalogNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.TableMetaDataProvider)
 getDatabaseVersion
  ()Ljava/lang/String;
  ()L0java/lang/String;
@@ -18,7 +18,7 @@ getDefaultSchema
  ()L0java/lang/String;
 getSimpleQueryForGetGeneratedKey
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.TableMetaDataProvider)
 getTableParameterMetaData
  ()Ljava/util/List<Lorg/springframework/jdbc/core/metadata/TableParameterMetaData;>;
  ()Ljava/util/List<Lorg/springframework/jdbc/core/metadata/TableParameterMetaData;>;
@@ -30,13 +30,13 @@ initializeWithTableColumnMetaData
  (Ljava/sql/DatabaseMetaData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 metaDataCatalogNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.TableMetaDataProvider)
 metaDataSchemaNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.TableMetaDataProvider)
 schemaNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.TableMetaDataProvider)
 tableNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.TableMetaDataProvider)

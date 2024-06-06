@@ -1,5 +1,10 @@
 class org/apache/wicket/markup/html/form/StatelessForm
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/apache/wicket/markup/html/form/Form
+ <TT;>
+ <TT;>
 
 <init>
  (Ljava/lang/String;)V
@@ -12,7 +17,7 @@ getActionUrl
  ()Ljava/lang/CharSequence;
 onMethodMismatch
  ()Lorg/apache/wicket/markup/html/form/Form$MethodMismatchResponse;
- ()Lorg/apache/wicket/markup/html/form/Form$MethodMismatchResponse;
+ ()L1org/apache/wicket/markup/html/form/Form$MethodMismatchResponse; # @Inherited(org.apache.wicket.markup.html.form.Form)
 process
  (Lorg/apache/wicket/markup/html/form/IFormSubmitter;)V
  (Lorg/apache/wicket/markup/html/form/IFormSubmitter;)V

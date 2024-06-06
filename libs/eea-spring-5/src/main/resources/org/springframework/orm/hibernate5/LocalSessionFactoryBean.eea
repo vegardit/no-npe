@@ -1,5 +1,9 @@
 class org/springframework/orm/hibernate5/LocalSessionFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Lorg/hibernate/SessionFactory;>
+ <Lorg/hibernate/SessionFactory;>
+
 buildSessionFactory
  (Lorg/springframework/orm/hibernate5/LocalSessionFactoryBuilder;)Lorg/hibernate/SessionFactory;
  (Lorg/springframework/orm/hibernate5/LocalSessionFactoryBuilder;)Lorg/hibernate/SessionFactory;
@@ -17,7 +21,7 @@ getObject
  ()L0org/hibernate/SessionFactory;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 getResourceLoader
  ()Lorg/springframework/core/io/ResourceLoader;
  ()Lorg/springframework/core/io/ResourceLoader;

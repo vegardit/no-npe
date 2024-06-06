@@ -1,9 +1,14 @@
 class org/springframework/http/converter/xml/SourceHttpMessageConverter
  <T::Ljavax/xml/transform/Source;>
+ <T::Ljavax/xml/transform/Source;>
+
+super org/springframework/http/converter/AbstractHttpMessageConverter
+ <TT;>
+ <TT;>
 
 getContentLength
  (TT;Lorg/springframework/http/MediaType;)Ljava/lang/Long;
- (TT;Lorg/springframework/http/MediaType;)L0java/lang/Long;
+ (TT;Lorg/springframework/http/MediaType;)L0java/lang/Long; # @Inherited(org.springframework.http.converter.AbstractHttpMessageConverter)
 readInternal
  (Ljava/lang/Class<+TT;>;Lorg/springframework/http/HttpInputMessage;)TT;
  (Ljava/lang/Class<+TT;>;Lorg/springframework/http/HttpInputMessage;)TT;

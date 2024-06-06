@@ -1,5 +1,9 @@
 class org/springframework/web/accept/ContentNegotiationManagerFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Lorg/springframework/web/accept/ContentNegotiationManager;>
+ <Lorg/springframework/web/accept/ContentNegotiationManager;>
+
 addMediaType
  (Ljava/lang/String;Lorg/springframework/http/MediaType;)V
  (Ljava/lang/String;Lorg/springframework/http/MediaType;)V
@@ -14,7 +18,7 @@ getObject
  ()L0org/springframework/web/accept/ContentNegotiationManager;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 setDefaultContentType
  (Lorg/springframework/http/MediaType;)V
  (Lorg/springframework/http/MediaType;)V

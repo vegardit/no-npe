@@ -9,7 +9,7 @@ logger
  (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)V
 getBeanClassLoader
  ()Ljava/lang/ClassLoader;
- ()L0java/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Inherited(org.springframework.beans.factory.support.BeanDefinitionReader)
 getBeanNameGenerator
  ()Lorg/springframework/beans/factory/support/BeanNameGenerator;
  ()Lorg/springframework/beans/factory/support/BeanNameGenerator;
@@ -21,7 +21,7 @@ getRegistry
  ()Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;
 getResourceLoader
  ()Lorg/springframework/core/io/ResourceLoader;
- ()L0org/springframework/core/io/ResourceLoader;
+ ()L0org/springframework/core/io/ResourceLoader; # @Inherited(org.springframework.beans.factory.support.BeanDefinitionReader)
 loadBeanDefinitions
  (Ljava/lang/String;)I
  (Ljava/lang/String;)I

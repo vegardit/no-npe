@@ -1,5 +1,9 @@
 class org/springframework/messaging/simp/SimpMessagingTemplate
 
+super org/springframework/messaging/core/AbstractMessageSendingTemplate
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 <init>
  (Lorg/springframework/messaging/MessageChannel;)V
  (Lorg/springframework/messaging/MessageChannel;)V
@@ -29,7 +33,7 @@ getUserDestinationPrefix
  ()Ljava/lang/String;
 processHeadersToSend
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Inherited(org.springframework.messaging.core.AbstractMessageSendingTemplate)
 send
  (Lorg/springframework/messaging/Message<*>;)V
  (Lorg/springframework/messaging/Message<*>;)V

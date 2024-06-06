@@ -17,10 +17,10 @@ hierarchyFor
  (Ljava/lang/Class;)Ljava/util/List;
 marshal
  (Ljava/lang/Object;Lcom/thoughtworks/xstream/io/HierarchicalStreamWriter;Lcom/thoughtworks/xstream/converters/MarshallingContext;)V
- (Ljava/lang/Object;Lcom/thoughtworks/xstream/io/HierarchicalStreamWriter;Lcom/thoughtworks/xstream/converters/MarshallingContext;)V
+ (L0java/lang/Object;L1com/thoughtworks/xstream/io/HierarchicalStreamWriter;L1com/thoughtworks/xstream/converters/MarshallingContext;)V # @Inherited(com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter)
 readResolve
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter)
 unmarshal
  (Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;Lcom/thoughtworks/xstream/converters/UnmarshallingContext;)Ljava/lang/Object;
- (Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;Lcom/thoughtworks/xstream/converters/UnmarshallingContext;)Ljava/lang/Object;
+ (L1com/thoughtworks/xstream/io/HierarchicalStreamReader;L1com/thoughtworks/xstream/converters/UnmarshallingContext;)L0java/lang/Object; # @Inherited(com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter)

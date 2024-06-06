@@ -1,5 +1,9 @@
 class org/apache/wicket/util/value/LongValue
 
+super java/lang/Comparable
+ <Lorg/apache/wicket/util/value/LongValue;>
+ <Lorg/apache/wicket/util/value/LongValue;>
+
 max
  <T:Lorg/apache/wicket/util/value/LongValue;>(TT;TT;)TT;
  <T:Lorg/apache/wicket/util/value/LongValue;>(TT;TT;)TT;
@@ -15,7 +19,7 @@ compareTo
  (Lorg/apache/wicket/util/value/LongValue;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 greaterThan
  (Lorg/apache/wicket/util/value/LongValue;)Z
  (Lorg/apache/wicket/util/value/LongValue;)Z
@@ -30,4 +34,4 @@ lessThanOrEqual
  (Lorg/apache/wicket/util/value/LongValue;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

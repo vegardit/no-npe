@@ -8,7 +8,7 @@ contains
  (Ljava/lang/Class<*>;)Z
 getMessage
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.core.NestedRuntimeException)
 getPropertyAccessException
  (Ljava/lang/String;)Lorg/springframework/beans/PropertyAccessException;
  (Ljava/lang/String;)L0org/springframework/beans/PropertyAccessException;
@@ -23,4 +23,4 @@ printStackTrace
  (L1java/io/PrintWriter;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

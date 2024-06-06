@@ -1,5 +1,9 @@
 class org/apache/wicket/markup/html/form/CheckBox
 
+super org/apache/wicket/markup/html/form/FormComponent
+ <Ljava/lang/Boolean;>
+ <Ljava/lang/Boolean;>
+
 <init>
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -11,4 +15,4 @@ createConverter
  (Ljava/lang/Class<*>;)Lorg/apache/wicket/util/convert/IConverter<*>;
 onComponentTag
  (Lorg/apache/wicket/markup/ComponentTag;)V
- (Lorg/apache/wicket/markup/ComponentTag;)V
+ (L1org/apache/wicket/markup/ComponentTag;)V # @Inherited(org.apache.wicket.markup.html.form.FormComponent)

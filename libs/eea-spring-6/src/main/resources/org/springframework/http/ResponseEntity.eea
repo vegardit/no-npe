@@ -1,5 +1,10 @@
 class org/springframework/http/ResponseEntity
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/springframework/http/HttpEntity
+ <TT;>
+ <TT;>
 
 accepted
  ()Lorg/springframework/http/ResponseEntity$BodyBuilder;
@@ -61,10 +66,10 @@ unprocessableEntity
  (TT;Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;Lorg/springframework/http/HttpStatusCode;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.springframework.http.HttpEntity)
 getStatusCode
  ()Lorg/springframework/http/HttpStatusCode;
  ()Lorg/springframework/http/HttpStatusCode;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.http.HttpEntity)

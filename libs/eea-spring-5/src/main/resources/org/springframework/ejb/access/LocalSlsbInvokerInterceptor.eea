@@ -2,13 +2,13 @@ class org/springframework/ejb/access/LocalSlsbInvokerInterceptor
 
 getCreateMethod
  (Ljava/lang/Object;)Ljava/lang/reflect/Method;
- (Ljava/lang/Object;)Ljava/lang/reflect/Method;
+ (Ljava/lang/Object;)L0java/lang/reflect/Method; # @Inherited(org.springframework.ejb.access.AbstractSlsbInvokerInterceptor)
 getSessionBeanInstance
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
 invokeInContext
  (Lorg/aopalliance/intercept/MethodInvocation;)Ljava/lang/Object;
- (Lorg/aopalliance/intercept/MethodInvocation;)L0java/lang/Object;
+ (Lorg/aopalliance/intercept/MethodInvocation;)L0java/lang/Object; # @Inherited(org.springframework.ejb.access.AbstractSlsbInvokerInterceptor)
 newSessionBeanInstance
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;

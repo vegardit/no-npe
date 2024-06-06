@@ -1,5 +1,10 @@
 class org/apache/wicket/model/Model
  <T::Ljava/io/Serializable;>
+ <T::Ljava/io/Serializable;>
+
+super org/apache/wicket/model/IObjectClassAwareModel
+ <TT;>
+ <TT;>
 
 of
  <C:Ljava/lang/Object;>(Ljava/util/Collection<TC;>;)Lorg/apache/wicket/model/IModel<Ljava/util/Collection<TC;>;>;
@@ -25,7 +30,7 @@ ofSet
  (TT;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getObject
  ()TT;
  ()TT;
@@ -37,4 +42,4 @@ setObject
  (TT;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

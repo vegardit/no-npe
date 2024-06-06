@@ -1,5 +1,10 @@
 class org/springframework/util/MultiValueMapAdapter
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super org/springframework/util/MultiValueMap
+ <TK;TV;>
+ <TK;TV;>
 
 <init>
  (Ljava/util/Map<TK;Ljava/util/List<TV;>;>;)V
@@ -24,13 +29,13 @@ entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<TK;Ljava/util/List<TV;>;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (Ljava/lang/Object;)Ljava/util/List<TV;>;
  (Ljava/lang/Object;)L0java/util/List<TV;>;
 getFirst
  (TK;)TV;
- (TK;)T0V;
+ (TK;)T0V; # @Inherited(org.springframework.util.MultiValueMap)
 keySet
  ()Ljava/util/Set<TK;>;
  ()Ljava/util/Set<TK;>;
@@ -54,7 +59,7 @@ toSingleValueMap
  ()Ljava/util/Map<TK;TV;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 values
  ()Ljava/util/Collection<Ljava/util/List<TV;>;>;
  ()Ljava/util/Collection<Ljava/util/List<TV;>;>;

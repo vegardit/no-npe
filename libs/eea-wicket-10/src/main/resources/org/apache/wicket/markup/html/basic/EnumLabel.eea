@@ -1,5 +1,10 @@
 class org/apache/wicket/markup/html/basic/EnumLabel
  <T:Ljava/lang/Enum<TT;>;>
+ <T:Ljava/lang/Enum<TT;>;>
+
+super org/apache/wicket/IGenericComponent
+ <TT;Lorg/apache/wicket/markup/html/basic/EnumLabel<TT;>;>
+ <TT;Lorg/apache/wicket/markup/html/basic/EnumLabel<TT;>;>
 
 <init>
  (Ljava/lang/String;)V
@@ -15,7 +20,7 @@ nullValue
  ()Ljava/lang/String;
 onComponentTag
  (Lorg/apache/wicket/markup/ComponentTag;)V
- (Lorg/apache/wicket/markup/ComponentTag;)V
+ (L1org/apache/wicket/markup/ComponentTag;)V # @Inherited(org.apache.wicket.Component)
 onComponentTagBody
  (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
  (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V

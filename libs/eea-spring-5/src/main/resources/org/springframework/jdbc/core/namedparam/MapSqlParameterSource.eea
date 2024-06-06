@@ -20,10 +20,10 @@ addValues
  (Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/jdbc/core/namedparam/MapSqlParameterSource;
 getParameterNames
  ()[Ljava/lang/String;
- ()[1Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Overrides(org.springframework.jdbc.core.namedparam.SqlParameterSource)
 getValue
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.jdbc.core.namedparam.SqlParameterSource)
 getValues
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;

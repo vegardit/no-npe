@@ -1,5 +1,9 @@
 class org/springframework/http/codec/protobuf/ProtobufHttpMessageWriter
 
+super org/springframework/http/codec/EncoderHttpMessageWriter
+ <Lcom/google/protobuf/Message;>
+ <Lcom/google/protobuf/Message;>
+
 <init>
  (Lorg/springframework/core/codec/Encoder<Lcom/google/protobuf/Message;>;)V
  (Lorg/springframework/core/codec/Encoder<Lcom/google/protobuf/Message;>;)V

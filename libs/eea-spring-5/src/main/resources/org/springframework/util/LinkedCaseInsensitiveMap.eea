@@ -1,5 +1,10 @@
 class org/springframework/util/LinkedCaseInsensitiveMap
  <V:Ljava/lang/Object;>
+ <V:Ljava/lang/Object;>
+
+super java/util/Map
+ <Ljava/lang/String;TV;>
+ <Ljava/lang/String;TV;>
 
 <init>
  (ILjava/util/Locale;)V
@@ -27,7 +32,7 @@ entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;TV;>;>;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (Ljava/lang/Object;)TV;
  (Ljava/lang/Object;)T0V;
@@ -57,7 +62,7 @@ removeEldestEntry
  (Ljava/util/Map$Entry<Ljava/lang/String;TV;>;)Z
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 values
  ()Ljava/util/Collection<TV;>;
  ()Ljava/util/Collection<TV;>;

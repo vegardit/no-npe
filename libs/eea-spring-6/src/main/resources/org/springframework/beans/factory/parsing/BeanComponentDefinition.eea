@@ -11,7 +11,7 @@ class org/springframework/beans/factory/parsing/BeanComponentDefinition
  (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.springframework.beans.factory.config.BeanDefinitionHolder)
 getBeanDefinitions
  ()[Lorg/springframework/beans/factory/config/BeanDefinition;
  ()[Lorg/springframework/beans/factory/config/BeanDefinition;
@@ -29,4 +29,4 @@ getName
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinitionHolder)

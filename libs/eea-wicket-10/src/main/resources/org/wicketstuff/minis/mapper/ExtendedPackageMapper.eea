@@ -5,13 +5,13 @@ class org/wicketstuff/minis/mapper/ExtendedPackageMapper
  <P:Lorg/apache/wicket/Page;>(Ljava/lang/String;Ljava/lang/Class<TP;>;)V
 getCompatibilityScore
  (Lorg/apache/wicket/request/Request;)I
- (Lorg/apache/wicket/request/Request;)I
+ (L1org/apache/wicket/request/Request;)I # @Inherited(org.apache.wicket.request.IRequestMapper)
 mapHandler
  (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
- (Lorg/apache/wicket/request/IRequestHandler;)Lorg/apache/wicket/request/Url;
+ (L1org/apache/wicket/request/IRequestHandler;)L0org/apache/wicket/request/Url; # @Inherited(org.apache.wicket.request.IRequestMapper)
 mapRequest
  (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/request/IRequestHandler;
- (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/request/IRequestHandler;
+ (L1org/apache/wicket/request/Request;)L0org/apache/wicket/request/IRequestHandler; # @Inherited(org.apache.wicket.request.IRequestMapper)
 validateParameters
  (Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Z
  (Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Z

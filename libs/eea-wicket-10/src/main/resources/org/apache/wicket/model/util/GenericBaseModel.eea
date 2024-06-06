@@ -1,12 +1,17 @@
 class org/apache/wicket/model/util/GenericBaseModel
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/apache/wicket/model/IObjectClassAwareModel
+ <TT;>
+ <TT;>
 
 createSerializableVersionOf
  (TT;)TT;
  (TT;)TT;
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getObject
  ()TT;
  ()TT;
@@ -18,4 +23,4 @@ setObject
  (TT;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

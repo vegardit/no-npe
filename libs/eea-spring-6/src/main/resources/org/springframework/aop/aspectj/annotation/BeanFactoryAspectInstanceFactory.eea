@@ -8,10 +8,10 @@ class org/springframework/aop/aspectj/annotation/BeanFactoryAspectInstanceFactor
  (Lorg/springframework/beans/factory/BeanFactory;Ljava/lang/String;Ljava/lang/Class<*>;)V
 getAspectClassLoader
  ()Ljava/lang/ClassLoader;
- ()L0java/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Inherited(org.springframework.aop.aspectj.AspectInstanceFactory)
 getAspectCreationMutex
  ()Ljava/lang/Object;
- ()L0java/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory)
 getAspectInstance
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -20,4 +20,4 @@ getAspectMetadata
  ()Lorg/springframework/aop/aspectj/annotation/AspectMetadata;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

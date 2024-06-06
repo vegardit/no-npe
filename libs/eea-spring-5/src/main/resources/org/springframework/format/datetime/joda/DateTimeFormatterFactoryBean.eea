@@ -1,8 +1,12 @@
 class org/springframework/format/datetime/joda/DateTimeFormatterFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Lorg/joda/time/format/DateTimeFormatter;>
+ <Lorg/joda/time/format/DateTimeFormatter;>
+
 getObject
  ()Lorg/joda/time/format/DateTimeFormatter;
  ()L0org/joda/time/format/DateTimeFormatter;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)

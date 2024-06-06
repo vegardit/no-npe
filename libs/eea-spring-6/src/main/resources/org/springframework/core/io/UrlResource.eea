@@ -33,7 +33,7 @@ customizeConnection
  (Ljava/net/URLConnection;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.springframework.core.io.AbstractResource)
 getDescription
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -42,7 +42,7 @@ getFile
  ()Ljava/io/File;
 getFilename
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.core.io.AbstractResource)
 getInputStream
  ()Ljava/io/InputStream;
  ()Ljava/io/InputStream;

@@ -1,5 +1,9 @@
 class org/apache/wicket/application/ComponentInstantiationListenerCollection
 
+super org/apache/wicket/util/listener/ListenerCollection
+ <Lorg/apache/wicket/application/IComponentInstantiationListener;>
+ <Lorg/apache/wicket/application/IComponentInstantiationListener;>
+
 onInstantiation
  (Lorg/apache/wicket/Component;)V
- (Lorg/apache/wicket/Component;)V
+ (L1org/apache/wicket/Component;)V # @Inherited(org.apache.wicket.application.IComponentInstantiationListener)

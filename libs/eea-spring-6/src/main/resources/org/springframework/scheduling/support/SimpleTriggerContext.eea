@@ -14,13 +14,13 @@ getClock
  ()Ljava/time/Clock;
 lastActualExecution
  ()Ljava/time/Instant;
- ()L0java/time/Instant;
+ ()L0java/time/Instant; # @Inherited(org.springframework.scheduling.TriggerContext)
 lastCompletion
  ()Ljava/time/Instant;
- ()L0java/time/Instant;
+ ()L0java/time/Instant; # @Inherited(org.springframework.scheduling.TriggerContext)
 lastScheduledExecution
  ()Ljava/time/Instant;
- ()L0java/time/Instant;
+ ()L0java/time/Instant; # @Inherited(org.springframework.scheduling.TriggerContext)
 update
  (Ljava/time/Instant;Ljava/time/Instant;Ljava/time/Instant;)V
  (Ljava/time/Instant;Ljava/time/Instant;Ljava/time/Instant;)V

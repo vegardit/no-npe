@@ -1,5 +1,10 @@
 class org/springframework/messaging/tcp/reactor/ReactorNetty2TcpConnection
  <P:Ljava/lang/Object;>
+ <P:Ljava/lang/Object;>
+
+super org/springframework/messaging/tcp/TcpConnection
+ <TP;>
+ <TP;>
 
 <init>
  (Lreactor/netty5/NettyInbound;Lreactor/netty5/NettyOutbound;Lorg/springframework/messaging/tcp/reactor/TcpMessageCodec<TP;>;Lreactor/core/publisher/Sinks$Empty<Ljava/lang/Void;>;)V
@@ -15,4 +20,4 @@ sendAsync
  (Lorg/springframework/messaging/Message<TP;>;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -42,16 +42,16 @@ close
  ()Ljava/util/Map<**>;
 convertIfNecessary
  <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.springframework.beans.TypeConverter)
 convertIfNecessary
  <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;Ljava/lang/reflect/Field;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;Ljava/lang/reflect/Field;)T0T;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;Ljava/lang/reflect/Field;)T0T; # @Inherited(org.springframework.beans.TypeConverter)
 convertIfNecessary
  <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;Lorg/springframework/core/MethodParameter;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;Lorg/springframework/core/MethodParameter;)T0T;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;Lorg/springframework/core/MethodParameter;)T0T; # @Inherited(org.springframework.beans.TypeConverter)
 convertIfNecessary
  <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;Lorg/springframework/core/convert/TypeDescriptor;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;Lorg/springframework/core/convert/TypeDescriptor;)T0T;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;Lorg/springframework/core/convert/TypeDescriptor;)T0T; # @Inherited(org.springframework.beans.TypeConverter)
 createBeanPropertyBindingResult
  ()Lorg/springframework/validation/AbstractPropertyBindingResult;
  ()Lorg/springframework/validation/AbstractPropertyBindingResult;
@@ -63,7 +63,7 @@ doBind
  (Lorg/springframework/beans/MutablePropertyValues;)V
 findCustomEditor
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/beans/PropertyEditor;
- (Ljava/lang/Class<*>;Ljava/lang/String;)L0java/beans/PropertyEditor;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)L0java/beans/PropertyEditor; # @Inherited(org.springframework.beans.PropertyEditorRegistry)
 getAllowedFields
  ()[Ljava/lang/String;
  ()[0Ljava/lang/String;

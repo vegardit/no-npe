@@ -14,7 +14,7 @@ getEntityManagerInterface
  ()Ljava/lang/Class<+Ljakarta/persistence/EntityManager;>;
 getJpaDialect
  ()Lorg/springframework/orm/jpa/JpaDialect;
- ()L0org/springframework/orm/jpa/JpaDialect;
+ ()L0org/springframework/orm/jpa/JpaDialect; # @Inherited(org.springframework.orm.jpa.JpaVendorAdapter)
 getJpaPropertyMap
  ()Ljava/util/Map<Ljava/lang/String;*>;
  ()Ljava/util/Map<Ljava/lang/String;*>;
@@ -23,7 +23,7 @@ getJpaPropertyMap
  (Ljakarta/persistence/spi/PersistenceUnitInfo;)Ljava/util/Map<Ljava/lang/String;*>;
 getPersistenceProviderRootPackage
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.orm.jpa.JpaVendorAdapter)
 postProcessEntityManager
  (Ljakarta/persistence/EntityManager;)V
  (Ljakarta/persistence/EntityManager;)V

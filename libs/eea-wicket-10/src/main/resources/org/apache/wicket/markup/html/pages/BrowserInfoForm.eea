@@ -1,5 +1,9 @@
 class org/apache/wicket/markup/html/pages/BrowserInfoForm
 
+super org/apache/wicket/markup/html/panel/GenericPanel
+ <Lorg/apache/wicket/protocol/http/ClientProperties;>
+ <Lorg/apache/wicket/protocol/http/ClientProperties;>
+
 JS
  Lorg/apache/wicket/request/resource/ResourceReference;
  L1org/apache/wicket/request/resource/ResourceReference;
@@ -15,4 +19,4 @@ getFormMarkupId
  ()Ljava/lang/String;
 renderHead
  (Lorg/apache/wicket/markup/head/IHeaderResponse;)V
- (Lorg/apache/wicket/markup/head/IHeaderResponse;)V
+ (L1org/apache/wicket/markup/head/IHeaderResponse;)V # @Inherited(org.apache.wicket.Component)

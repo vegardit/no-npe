@@ -1,5 +1,9 @@
 class org/springframework/messaging/handler/annotation/reactive/MessageMappingMessageHandler
 
+super org/springframework/messaging/handler/invocation/reactive/AbstractMethodMessageHandler
+ <Lorg/springframework/messaging/handler/CompositeMessageCondition;>
+ <Lorg/springframework/messaging/handler/CompositeMessageCondition;>
+
 createExceptionMethodResolverFor
  (Ljava/lang/Class<*>;)Lorg/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver;
  (Ljava/lang/Class<*>;)Lorg/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver;
@@ -14,7 +18,7 @@ getDecoders
  ()Ljava/util/List<+Lorg/springframework/core/codec/Decoder<*>;>;
 getDestination
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/util/RouteMatcher$Route;
- (Lorg/springframework/messaging/Message<*>;)L0org/springframework/util/RouteMatcher$Route;
+ (Lorg/springframework/messaging/Message<*>;)L0org/springframework/util/RouteMatcher$Route; # @Inherited(org.springframework.messaging.handler.invocation.reactive.AbstractMethodMessageHandler)
 getDirectLookupMappings
  (Lorg/springframework/messaging/handler/CompositeMessageCondition;)Ljava/util/Set<Ljava/lang/String;>;
  (Lorg/springframework/messaging/handler/CompositeMessageCondition;)Ljava/util/Set<Ljava/lang/String;>;

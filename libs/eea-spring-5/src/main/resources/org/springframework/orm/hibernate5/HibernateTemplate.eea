@@ -57,7 +57,7 @@ evict
  (Ljava/lang/Object;)V
 execute
  <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;)T0T; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
 executeWithNativeSession
  <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;)TT;
  <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;)T0T;
@@ -105,16 +105,16 @@ findByValueBean
  (Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List<*>;
 get
  (Ljava/lang/String;Ljava/io/Serializable;)Ljava/lang/Object;
- (Ljava/lang/String;Ljava/io/Serializable;)L0java/lang/Object;
+ (Ljava/lang/String;Ljava/io/Serializable;)L0java/lang/Object; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
 get
  (Ljava/lang/String;Ljava/io/Serializable;Lorg/hibernate/LockMode;)Ljava/lang/Object;
- (Ljava/lang/String;Ljava/io/Serializable;Lorg/hibernate/LockMode;)L0java/lang/Object;
+ (Ljava/lang/String;Ljava/io/Serializable;Lorg/hibernate/LockMode;)L0java/lang/Object; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
 get
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;)T0T;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;)T0T; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
 get
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;Lorg/hibernate/LockMode;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;Lorg/hibernate/LockMode;)T0T;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;Lorg/hibernate/LockMode;)T0T; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
 getFilterNames
  ()[Ljava/lang/String;
  ()[0Ljava/lang/String;

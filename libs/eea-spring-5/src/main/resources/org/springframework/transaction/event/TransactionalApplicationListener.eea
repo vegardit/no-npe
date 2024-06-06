@@ -1,5 +1,10 @@
 class org/springframework/transaction/event/TransactionalApplicationListener
  <E:Lorg/springframework/context/ApplicationEvent;>
+ <E:Lorg/springframework/context/ApplicationEvent;>
+
+super org/springframework/context/ApplicationListener
+ <TE;>
+ <TE;>
 
 forPayload
  <T:Ljava/lang/Object;>(Ljava/util/function/Consumer<TT;>;)Lorg/springframework/transaction/event/TransactionalApplicationListener<Lorg/springframework/context/PayloadApplicationEvent<TT;>;>;

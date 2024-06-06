@@ -1,5 +1,9 @@
 class org/apache/wicket/markup/html/form/Button
 
+super org/apache/wicket/markup/html/form/FormComponent
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 <init>
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -17,13 +21,13 @@ initModel
  ()Lorg/apache/wicket/model/IModel<Ljava/lang/String;>;
 onComponentTag
  (Lorg/apache/wicket/markup/ComponentTag;)V
- (Lorg/apache/wicket/markup/ComponentTag;)V
+ (L1org/apache/wicket/markup/ComponentTag;)V # @Inherited(org.apache.wicket.markup.html.form.FormComponent)
 onComponentTagBody
  (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
  (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
 renderHead
  (Lorg/apache/wicket/markup/head/IHeaderResponse;)V
- (Lorg/apache/wicket/markup/head/IHeaderResponse;)V
+ (L1org/apache/wicket/markup/head/IHeaderResponse;)V # @Inherited(org.apache.wicket.Component)
 setDefaultFormProcessing
  (Z)Lorg/apache/wicket/markup/html/form/Button;
  (Z)Lorg/apache/wicket/markup/html/form/Button;

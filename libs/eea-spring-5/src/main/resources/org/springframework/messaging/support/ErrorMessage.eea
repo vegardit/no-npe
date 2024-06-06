@@ -1,5 +1,9 @@
 class org/springframework/messaging/support/ErrorMessage
 
+super org/springframework/messaging/support/GenericMessage
+ <Ljava/lang/Throwable;>
+ <Ljava/lang/Throwable;>
+
 <init>
  (Ljava/lang/Throwable;)V
  (Ljava/lang/Throwable;)V
@@ -23,4 +27,4 @@ getOriginalMessage
  ()L0org/springframework/messaging/Message<*>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.messaging.support.GenericMessage)

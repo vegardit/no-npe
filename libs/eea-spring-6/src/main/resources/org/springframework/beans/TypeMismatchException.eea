@@ -21,13 +21,13 @@ getErrorCode
  ()Ljava/lang/String;
 getPropertyName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.PropertyAccessException)
 getRequiredType
  ()Ljava/lang/Class<*>;
  ()L0java/lang/Class<*>;
 getValue
  ()Ljava/lang/Object;
- ()L0java/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.springframework.beans.PropertyAccessException)
 initPropertyName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

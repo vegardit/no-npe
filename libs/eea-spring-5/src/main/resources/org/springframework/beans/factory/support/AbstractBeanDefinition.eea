@@ -21,7 +21,7 @@ applyDefaults
  (Lorg/springframework/beans/factory/support/BeanDefinitionDefaults;)V
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.lang.Object)
 cloneBeanDefinition
  ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
  ()Lorg/springframework/beans/factory/support/AbstractBeanDefinition;
@@ -30,34 +30,34 @@ copyQualifiersFrom
  (Lorg/springframework/beans/factory/support/AbstractBeanDefinition;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.springframework.core.AttributeAccessorSupport)
 getBeanClass
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
 getBeanClassName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getConstructorArgumentValues
  ()Lorg/springframework/beans/factory/config/ConstructorArgumentValues;
  ()Lorg/springframework/beans/factory/config/ConstructorArgumentValues;
 getDependsOn
  ()[Ljava/lang/String;
- ()[0Ljava/lang/String;
+ ()[0Ljava/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getDescription
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getDestroyMethodName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getFactoryBeanName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getFactoryMethodName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getInitMethodName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getInstanceSupplier
  ()Ljava/util/function/Supplier<*>;
  ()L0java/util/function/Supplier<*>;
@@ -69,7 +69,7 @@ getMethodOverrides
  ()Lorg/springframework/beans/factory/support/MethodOverrides;
 getOriginatingBeanDefinition
  ()Lorg/springframework/beans/factory/config/BeanDefinition;
- ()L0org/springframework/beans/factory/config/BeanDefinition;
+ ()L0org/springframework/beans/factory/config/BeanDefinition; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getPropertyValues
  ()Lorg/springframework/beans/MutablePropertyValues;
  ()Lorg/springframework/beans/MutablePropertyValues;
@@ -87,10 +87,10 @@ getResource
  ()L0org/springframework/core/io/Resource;
 getResourceDescription
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 getScope
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.BeanDefinition)
 hasQualifier
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -153,4 +153,4 @@ setScope
  (Ljava/lang/String;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

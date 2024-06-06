@@ -20,7 +20,7 @@ cleanupMultipart
  ()Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
 getApplicationContext
  ()Lorg/springframework/context/ApplicationContext;
- ()L0org/springframework/context/ApplicationContext;
+ ()L0org/springframework/context/ApplicationContext; # @Inherited(org.springframework.web.server.ServerWebExchange)
 getAttributes
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
@@ -53,7 +53,7 @@ getSession
  ()Lreactor/core/publisher/Mono<Lorg/springframework/web/server/WebSession;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 transformUrl
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;

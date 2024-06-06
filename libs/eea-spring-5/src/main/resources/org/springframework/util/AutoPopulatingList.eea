@@ -1,5 +1,10 @@
 class org/springframework/util/AutoPopulatingList
  <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/List
+ <TE;>
+ <TE;>
 
 <init>
  (Ljava/lang/Class<+TE;>;)V
@@ -33,7 +38,7 @@ containsAll
  (Ljava/util/Collection<*>;)Z
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (I)TE;
  (I)TE;

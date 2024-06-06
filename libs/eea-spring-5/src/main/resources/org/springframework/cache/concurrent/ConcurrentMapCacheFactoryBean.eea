@@ -1,11 +1,15 @@
 class org/springframework/cache/concurrent/ConcurrentMapCacheFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Lorg/springframework/cache/concurrent/ConcurrentMapCache;>
+ <Lorg/springframework/cache/concurrent/ConcurrentMapCache;>
+
 getObject
  ()Lorg/springframework/cache/concurrent/ConcurrentMapCache;
  ()L0org/springframework/cache/concurrent/ConcurrentMapCache;
 getObjectType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 setBeanName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

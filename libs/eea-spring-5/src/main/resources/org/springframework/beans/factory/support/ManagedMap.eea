@@ -1,5 +1,10 @@
 class org/springframework/beans/factory/support/ManagedMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super java/util/LinkedHashMap
+ <TK;TV;>
+ <TK;TV;>
 
 ofEntries
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>([Ljava/util/Map$Entry<+TK;+TV;>;)Lorg/springframework/beans/factory/support/ManagedMap<TK;TV;>;
@@ -10,7 +15,7 @@ getKeyTypeName
  ()L0java/lang/String;
 getSource
  ()Ljava/lang/Object;
- ()L0java/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.springframework.beans.BeanMetadataElement)
 getValueTypeName
  ()Ljava/lang/String;
  ()L0java/lang/String;

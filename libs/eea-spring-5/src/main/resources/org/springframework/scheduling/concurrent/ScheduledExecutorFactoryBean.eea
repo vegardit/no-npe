@@ -1,5 +1,9 @@
 class org/springframework/scheduling/concurrent/ScheduledExecutorFactoryBean
 
+super org/springframework/beans/factory/FactoryBean
+ <Ljava/util/concurrent/ScheduledExecutorService;>
+ <Ljava/util/concurrent/ScheduledExecutorService;>
+
 createExecutor
  (ILjava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)Ljava/util/concurrent/ScheduledExecutorService;
  (ILjava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)Ljava/util/concurrent/ScheduledExecutorService;

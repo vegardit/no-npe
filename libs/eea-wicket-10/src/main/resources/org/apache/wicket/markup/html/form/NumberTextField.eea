@@ -1,5 +1,10 @@
 class org/apache/wicket/markup/html/form/NumberTextField
  <N:Ljava/lang/Number;:Ljava/lang/Comparable<TN;>;>
+ <N:Ljava/lang/Number;:Ljava/lang/Comparable<TN;>;>
+
+super org/apache/wicket/markup/html/form/TextField
+ <TN;>
+ <TN;>
 
 ANY
  Ljava/lang/Double;
@@ -25,7 +30,7 @@ getModelValue
  ()Ljava/lang/String;
 onComponentTag
  (Lorg/apache/wicket/markup/ComponentTag;)V
- (Lorg/apache/wicket/markup/ComponentTag;)V
+ (L1org/apache/wicket/markup/ComponentTag;)V # @Inherited(org.apache.wicket.markup.html.form.TextField)
 setMaximum
  (Lorg/apache/wicket/model/IModel<TN;>;)Lorg/apache/wicket/markup/html/form/NumberTextField<TN;>;
  (Lorg/apache/wicket/model/IModel<TN;>;)Lorg/apache/wicket/markup/html/form/NumberTextField<TN;>;

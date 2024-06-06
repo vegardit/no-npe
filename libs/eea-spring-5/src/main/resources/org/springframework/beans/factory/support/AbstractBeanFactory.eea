@@ -86,19 +86,19 @@ getBean
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)TT;
 getBeanClassLoader
  ()Ljava/lang/ClassLoader;
- ()L0java/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 getBeanDefinition
  (Ljava/lang/String;)Lorg/springframework/beans/factory/config/BeanDefinition;
  (Ljava/lang/String;)Lorg/springframework/beans/factory/config/BeanDefinition;
 getBeanExpressionResolver
  ()Lorg/springframework/beans/factory/config/BeanExpressionResolver;
- ()L0org/springframework/beans/factory/config/BeanExpressionResolver;
+ ()L0org/springframework/beans/factory/config/BeanExpressionResolver; # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 getBeanPostProcessors
  ()Ljava/util/List<Lorg/springframework/beans/factory/config/BeanPostProcessor;>;
  ()Ljava/util/List<Lorg/springframework/beans/factory/config/BeanPostProcessor;>;
 getConversionService
  ()Lorg/springframework/core/convert/ConversionService;
- ()L0org/springframework/core/convert/ConversionService;
+ ()L0org/springframework/core/convert/ConversionService; # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 getCustomEditors
  ()Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljava/beans/PropertyEditor;>;>;
  ()Ljava/util/Map<Ljava/lang/Class<*>;Ljava/lang/Class<+Ljava/beans/PropertyEditor;>;>;
@@ -122,25 +122,25 @@ getObjectForBeanInstance
  (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Ljava/lang/Object;
 getParentBeanFactory
  ()Lorg/springframework/beans/factory/BeanFactory;
- ()L0org/springframework/beans/factory/BeanFactory;
+ ()L0org/springframework/beans/factory/BeanFactory; # @Inherited(org.springframework.beans.factory.HierarchicalBeanFactory)
 getPropertyEditorRegistrars
  ()Ljava/util/Set<Lorg/springframework/beans/PropertyEditorRegistrar;>;
  ()Ljava/util/Set<Lorg/springframework/beans/PropertyEditorRegistrar;>;
 getRegisteredScope
  (Ljava/lang/String;)Lorg/springframework/beans/factory/config/Scope;
- (Ljava/lang/String;)L0org/springframework/beans/factory/config/Scope;
+ (Ljava/lang/String;)L0org/springframework/beans/factory/config/Scope; # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 getRegisteredScopeNames
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
 getTempClassLoader
  ()Ljava/lang/ClassLoader;
- ()L0java/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 getType
  (Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/String;)L0java/lang/Class<*>;
+ (Ljava/lang/String;)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.BeanFactory)
 getType
  (Ljava/lang/String;Z)Ljava/lang/Class<*>;
- (Ljava/lang/String;Z)L0java/lang/Class<*>;
+ (Ljava/lang/String;Z)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.BeanFactory)
 getTypeConverter
  ()Lorg/springframework/beans/TypeConverter;
  ()Lorg/springframework/beans/TypeConverter;
@@ -218,7 +218,7 @@ resolveBeanClass
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;[Ljava/lang/Class<*>;)L0java/lang/Class<*>;
 resolveEmbeddedValue
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 setApplicationStartup
  (Lorg/springframework/core/metrics/ApplicationStartup;)V
  (Lorg/springframework/core/metrics/ApplicationStartup;)V

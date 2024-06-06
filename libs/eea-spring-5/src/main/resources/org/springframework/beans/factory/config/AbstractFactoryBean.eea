@@ -1,5 +1,10 @@
 class org/springframework/beans/factory/config/AbstractFactoryBean
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/springframework/beans/factory/FactoryBean
+ <TT;>
+ <TT;>
 
 logger
  Lorg/apache/commons/logging/Log;
@@ -22,10 +27,10 @@ getEarlySingletonInterfaces
  ()[0Ljava/lang/Class<*>;
 getObject
  ()TT;
- ()TT;
+ ()T0T; # @Inherited(org.springframework.beans.factory.FactoryBean)
 getObjectType
  ()Ljava/lang/Class<*>;
- ()L0java/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.FactoryBean)
 setBeanClassLoader
  (Ljava/lang/ClassLoader;)V
  (Ljava/lang/ClassLoader;)V

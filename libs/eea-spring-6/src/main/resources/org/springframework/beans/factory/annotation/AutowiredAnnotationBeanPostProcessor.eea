@@ -9,7 +9,7 @@ determineBeanType
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>;
 determineCandidateConstructors
  (Ljava/lang/Class<*>;Ljava/lang/String;)[Ljava/lang/reflect/Constructor<*>;
- (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
 determineRequiredStatus
  (Lorg/springframework/core/annotation/MergedAnnotation<*>;)Z
  (Lorg/springframework/core/annotation/MergedAnnotation<*>;)Z
@@ -18,10 +18,10 @@ postProcessMergedBeanDefinition
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/Class<*>;Ljava/lang/String;)V
 postProcessProperties
  (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
- (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
+ (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 processAheadOfTime
  (Lorg/springframework/beans/factory/support/RegisteredBean;)Lorg/springframework/beans/factory/aot/BeanRegistrationAotContribution;
- (Lorg/springframework/beans/factory/support/RegisteredBean;)L0org/springframework/beans/factory/aot/BeanRegistrationAotContribution;
+ (Lorg/springframework/beans/factory/support/RegisteredBean;)L0org/springframework/beans/factory/aot/BeanRegistrationAotContribution; # @Inherited(org.springframework.beans.factory.aot.BeanRegistrationAotProcessor)
 processInjection
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V

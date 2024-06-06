@@ -5,10 +5,10 @@ doInvoke
  (Lorg/aopalliance/intercept/MethodInvocation;)L0java/lang/Object;
 getCreateMethod
  (Ljava/lang/Object;)Ljava/lang/reflect/Method;
- (Ljava/lang/Object;)Ljava/lang/reflect/Method;
+ (Ljava/lang/Object;)L0java/lang/reflect/Method; # @Inherited(org.springframework.ejb.access.AbstractSlsbInvokerInterceptor)
 invokeInContext
  (Lorg/aopalliance/intercept/MethodInvocation;)Ljava/lang/Object;
- (Lorg/aopalliance/intercept/MethodInvocation;)L0java/lang/Object;
+ (Lorg/aopalliance/intercept/MethodInvocation;)L0java/lang/Object; # @Inherited(org.springframework.ejb.access.AbstractSlsbInvokerInterceptor)
 isConnectFailure
  (Ljava/rmi/RemoteException;)Z
  (Ljava/rmi/RemoteException;)Z

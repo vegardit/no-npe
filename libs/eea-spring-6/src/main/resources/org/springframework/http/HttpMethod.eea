@@ -1,5 +1,9 @@
 class org/springframework/http/HttpMethod
 
+super java/lang/Comparable
+ <Lorg/springframework/http/HttpMethod;>
+ <Lorg/springframework/http/HttpMethod;>
+
 DELETE
  Lorg/springframework/http/HttpMethod;
  L1org/springframework/http/HttpMethod;
@@ -37,7 +41,7 @@ compareTo
  (Lorg/springframework/http/HttpMethod;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 matches
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -46,4 +50,4 @@ name
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

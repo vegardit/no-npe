@@ -57,7 +57,7 @@ getProxiedInterfaces
  ()[Ljava/lang/Class<*>;
 getTargetClass
  ()Ljava/lang/Class<*>;
- ()L0java/lang/Class<*>;
+ ()L0java/lang/Class<*>; # @Inherited(org.springframework.aop.TargetClassAware)
 getTargetSource
  ()Lorg/springframework/aop/TargetSource;
  ()Lorg/springframework/aop/TargetSource;
@@ -102,4 +102,4 @@ toProxyConfigString
  ()Ljava/lang/String;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.aop.framework.ProxyConfig)

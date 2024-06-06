@@ -12,10 +12,10 @@ logger
  (Lorg/springframework/transaction/PlatformTransactionManager;Lorg/springframework/transaction/TransactionDefinition;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.springframework.transaction.support.DefaultTransactionDefinition)
 execute
  <T:Ljava/lang/Object;>(Lorg/springframework/transaction/support/TransactionCallback<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/transaction/support/TransactionCallback<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(Lorg/springframework/transaction/support/TransactionCallback<TT;>;)T0T; # @Inherited(org.springframework.transaction.support.TransactionOperations)
 getTransactionManager
  ()Lorg/springframework/transaction/PlatformTransactionManager;
  ()L0org/springframework/transaction/PlatformTransactionManager;

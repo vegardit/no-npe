@@ -1,5 +1,10 @@
 class org/apache/wicket/ajax/markup/html/AjaxLink
  <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super org/apache/wicket/IGenericComponent
+ <TT;Lorg/apache/wicket/ajax/markup/html/AjaxLink<TT;>;>
+ <TT;Lorg/apache/wicket/ajax/markup/html/AjaxLink<TT;>;>
 
 <init>
  (Ljava/lang/String;)V
@@ -15,7 +20,7 @@ onClick
  (Lorg/apache/wicket/ajax/AjaxRequestTarget;)V
 onComponentTag
  (Lorg/apache/wicket/markup/ComponentTag;)V
- (Lorg/apache/wicket/markup/ComponentTag;)V
+ (L1org/apache/wicket/markup/ComponentTag;)V # @Inherited(org.apache.wicket.Component)
 updateAjaxAttributes
  (Lorg/apache/wicket/ajax/attributes/AjaxRequestAttributes;)V
  (Lorg/apache/wicket/ajax/attributes/AjaxRequestAttributes;)V

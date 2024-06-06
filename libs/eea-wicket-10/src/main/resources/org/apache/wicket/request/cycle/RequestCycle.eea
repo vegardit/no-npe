@@ -1,5 +1,9 @@
 class org/apache/wicket/request/cycle/RequestCycle
 
+super org/apache/wicket/IMetadataContext
+ <Ljava/lang/Object;Lorg/apache/wicket/request/cycle/RequestCycle;>
+ <Ljava/lang/Object;Lorg/apache/wicket/request/cycle/RequestCycle;>
+
 get
  ()Lorg/apache/wicket/request/cycle/RequestCycle;
  ()Lorg/apache/wicket/request/cycle/RequestCycle;
@@ -51,7 +55,7 @@ newUrlRenderer
  ()Lorg/apache/wicket/request/UrlRenderer;
 onEvent
  (Lorg/apache/wicket/event/IEvent<*>;)V
- (L1org/apache/wicket/event/IEvent<*>;)V
+ (L1org/apache/wicket/event/IEvent<*>;)V # @Inherited(org.apache.wicket.event.IEventSink)
 replaceAllRequestHandlers
  (Lorg/apache/wicket/request/IRequestHandler;)V
  (Lorg/apache/wicket/request/IRequestHandler;)V

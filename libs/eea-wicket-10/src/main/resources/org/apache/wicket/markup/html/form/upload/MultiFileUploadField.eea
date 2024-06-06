@@ -1,5 +1,9 @@
 class org/apache/wicket/markup/html/form/upload/MultiFileUploadField
 
+super org/apache/wicket/markup/html/form/FormComponentPanel
+ <Ljava/util/Collection<Lorg/apache/wicket/markup/html/form/upload/FileUpload;>;>
+ <Ljava/util/Collection<Lorg/apache/wicket/markup/html/form/upload/FileUpload;>;>
+
 JS
  Lorg/apache/wicket/request/resource/ResourceReference;
  L1org/apache/wicket/request/resource/ResourceReference;
@@ -36,7 +40,7 @@ getInputAsArray
  ()[Ljava/lang/String;
 onComponentTag
  (Lorg/apache/wicket/markup/ComponentTag;)V
- (Lorg/apache/wicket/markup/ComponentTag;)V
+ (L1org/apache/wicket/markup/ComponentTag;)V # @Inherited(org.apache.wicket.markup.html.form.FormComponentPanel)
 renderHead
  (Lorg/apache/wicket/markup/head/IHeaderResponse;)V
- (Lorg/apache/wicket/markup/head/IHeaderResponse;)V
+ (L1org/apache/wicket/markup/head/IHeaderResponse;)V # @Inherited(org.apache.wicket.Component)

@@ -17,13 +17,13 @@ getApplicationContext
  ()Lorg/springframework/context/ApplicationContext;
 getAttribute
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.core.AttributeAccessor)
 getTestClass
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
 getTestException
  ()Ljava/lang/Throwable;
- ()L0java/lang/Throwable;
+ ()L0java/lang/Throwable; # @Inherited(org.springframework.test.context.TestContext)
 getTestInstance
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -38,13 +38,13 @@ markApplicationContextDirty
  (Lorg/springframework/test/annotation/DirtiesContext$HierarchyMode;)V
 removeAttribute
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.core.AttributeAccessor)
 setAttribute
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
 updateState
  (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/lang/Throwable;)V
  (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/lang/Throwable;)V

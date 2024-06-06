@@ -1,5 +1,9 @@
 class org/yaml/snakeyaml/nodes/MappingNode
 
+super org/yaml/snakeyaml/nodes/CollectionNode
+ <Lorg/yaml/snakeyaml/nodes/NodeTuple;>
+ <Lorg/yaml/snakeyaml/nodes/NodeTuple;>
+
 <init>
  (Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/List<Lorg/yaml/snakeyaml/nodes/NodeTuple;>;Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)V
  (Lorg/yaml/snakeyaml/nodes/Tag;Ljava/util/List<Lorg/yaml/snakeyaml/nodes/NodeTuple;>;Lorg/yaml/snakeyaml/DumperOptions$FlowStyle;)V
@@ -23,4 +27,4 @@ setValue
  (Ljava/util/List<Lorg/yaml/snakeyaml/nodes/NodeTuple;>;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

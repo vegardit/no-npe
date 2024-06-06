@@ -1,5 +1,9 @@
 class org/springframework/core/env/CompositePropertySource
 
+super org/springframework/core/env/EnumerablePropertySource
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
 <init>
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -14,7 +18,7 @@ containsProperty
  (Ljava/lang/String;)Z
 getProperty
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object;
+ (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.core.env.PropertySource)
 getPropertyNames
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
@@ -23,4 +27,4 @@ getPropertySources
  ()Ljava/util/Collection<Lorg/springframework/core/env/PropertySource<*>;>;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.core.env.PropertySource)

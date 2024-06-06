@@ -1,5 +1,9 @@
 class org/springframework/util/unit/DataSize
 
+super java/lang/Comparable
+ <Lorg/springframework/util/unit/DataSize;>
+ <Lorg/springframework/util/unit/DataSize;>
+
 of
  (JLorg/springframework/util/unit/DataUnit;)Lorg/springframework/util/unit/DataSize;
  (JLorg/springframework/util/unit/DataUnit;)Lorg/springframework/util/unit/DataSize;
@@ -30,7 +34,7 @@ compareTo
  (Lorg/springframework/util/unit/DataSize;)I
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

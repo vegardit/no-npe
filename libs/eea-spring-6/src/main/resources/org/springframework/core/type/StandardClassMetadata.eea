@@ -5,13 +5,13 @@ class org/springframework/core/type/StandardClassMetadata
  (Ljava/lang/Class<*>;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getClassName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getEnclosingClassName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.core.type.ClassMetadata)
 getInterfaceNames
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
@@ -23,7 +23,7 @@ getMemberClassNames
  ()[Ljava/lang/String;
 getSuperClassName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.core.type.ClassMetadata)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
