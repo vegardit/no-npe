@@ -14,10 +14,10 @@ doDefineClasses
  (Ljava/util/Map<Ljava/lang/String;[B>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<*>;>;
 getResource
  (Ljava/lang/String;)Ljava/net/URL;
- (Ljava/lang/String;)Ljava/net/URL;
+ (L1java/lang/String;)L0java/net/URL; # @Inherited(java.lang.ClassLoader)
 getResources
  (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
- (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (L1java/lang/String;)L1java/util/Enumeration<L1java/net/URL;>; # @Inherited(java.lang.ClassLoader)
 loadClass
  (Ljava/lang/String;Z)Ljava/lang/Class<*>;
- (Ljava/lang/String;Z)Ljava/lang/Class<*>;
+ (L1java/lang/String;Z)L1java/lang/Class<*>; # @Inherited(java.lang.ClassLoader)

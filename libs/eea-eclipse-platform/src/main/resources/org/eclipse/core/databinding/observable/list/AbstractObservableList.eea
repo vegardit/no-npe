@@ -17,10 +17,10 @@ add
  (TE;)Z
 addAll
  (ILjava/util/Collection<+TE;>;)Z
- (ILjava/util/Collection<+TE;>;)Z
+ (IL1java/util/Collection<+TE;>;)Z # @Inherited(java.util.AbstractList)
 addAll
  (Ljava/util/Collection<+TE;>;)Z
- (Ljava/util/Collection<+TE;>;)Z
+ (L1java/util/Collection<+TE;>;)Z # @Inherited(java.util.AbstractCollection)
 addChangeListener
  (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
  (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
@@ -35,13 +35,13 @@ addStaleListener
  (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
 contains
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.eclipse.core.databinding.observable.list.IObservableList)
 containsAll
  (Ljava/util/Collection<*>;)Z
- (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+ (L0java/lang/Object;)Z # @Inherited(java.util.AbstractList)
 fireListChange
  (Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V
  (Lorg/eclipse/core/databinding/observable/list/ListDiff<TE;>;)V
@@ -50,13 +50,13 @@ getRealm
  ()Lorg/eclipse/core/databinding/observable/Realm;
 indexOf
  (Ljava/lang/Object;)I
- (Ljava/lang/Object;)I
+ (L0java/lang/Object;)I # @Inherited(java.util.AbstractList)
 iterator
  ()Ljava/util/Iterator<TE;>;
- ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(java.util.AbstractList)
 lastIndexOf
  (Ljava/lang/Object;)I
- (Ljava/lang/Object;)I
+ (L0java/lang/Object;)I # @Inherited(java.util.AbstractList)
 move
  (II)TE;
  (II)TE;
@@ -65,7 +65,7 @@ remove
  (Ljava/lang/Object;)Z
 removeAll
  (Ljava/util/Collection<*>;)Z
- (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
 removeChangeListener
  (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
  (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
@@ -80,10 +80,10 @@ removeStaleListener
  (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
 retainAll
  (Ljava/util/Collection<*>;)Z
- (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
 toArray
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object; # @Inherited(java.util.AbstractCollection)
 toArray
  <T:Ljava/lang/Object;>([TT;)[TT;
- <T:Ljava/lang/Object;>([TT;)[TT;
+ <T:Ljava/lang/Object;>([1TT;)[1TT; # @Inherited(java.util.AbstractCollection)

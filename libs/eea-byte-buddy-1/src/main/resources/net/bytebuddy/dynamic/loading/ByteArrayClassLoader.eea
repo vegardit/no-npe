@@ -62,10 +62,10 @@ doDefineClasses
  (Ljava/util/Map<Ljava/lang/String;[B>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Class<*>;>;
 findClass
  (Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (L0java/lang/String;)L1java/lang/Class<*>; # @Inherited(java.lang.ClassLoader)
 findResource
  (Ljava/lang/String;)Ljava/net/URL;
- (Ljava/lang/String;)L0java/net/URL;
+ (Ljava/lang/String;)L0java/net/URL; # @Overrides(java.lang.ClassLoader)
 findResources
  (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
- (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (L0java/lang/String;)L1java/util/Enumeration<L1java/net/URL;>; # @Inherited(java.lang.ClassLoader)

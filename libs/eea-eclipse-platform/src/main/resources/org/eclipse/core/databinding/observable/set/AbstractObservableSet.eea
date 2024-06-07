@@ -14,7 +14,7 @@ add
  (TE;)Z
 addAll
  (Ljava/util/Collection<+TE;>;)Z
- (Ljava/util/Collection<+TE;>;)Z
+ (L1java/util/Collection<+TE;>;)Z # @Inherited(org.eclipse.core.databinding.observable.set.IObservableSet)
 addSetChangeListener
  (Lorg/eclipse/core/databinding/observable/set/ISetChangeListener<-TE;>;)V
  (Lorg/eclipse/core/databinding/observable/set/ISetChangeListener<-TE;>;)V
@@ -23,7 +23,7 @@ contains
  (Ljava/lang/Object;)Z
 containsAll
  (Ljava/util/Collection<*>;)Z
- (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(org.eclipse.core.databinding.observable.set.IObservableSet)
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
@@ -35,25 +35,25 @@ getWrappedSet
  ()Ljava/util/Set<TE;>;
 iterator
  ()Ljava/util/Iterator<TE;>;
- ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(org.eclipse.core.databinding.observable.set.IObservableSet)
 remove
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
 removeAll
  (Ljava/util/Collection<*>;)Z
- (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(org.eclipse.core.databinding.observable.set.IObservableSet)
 removeSetChangeListener
  (Lorg/eclipse/core/databinding/observable/set/ISetChangeListener<-TE;>;)V
  (Lorg/eclipse/core/databinding/observable/set/ISetChangeListener<-TE;>;)V
 retainAll
  (Ljava/util/Collection<*>;)Z
- (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(org.eclipse.core.databinding.observable.set.IObservableSet)
 toArray
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object; # @Inherited(org.eclipse.core.databinding.observable.set.IObservableSet)
 toArray
  <T:Ljava/lang/Object;>([TT;)[TT;
- <T:Ljava/lang/Object;>([TT;)[TT;
+ <T:Ljava/lang/Object;>([1TT;)[1TT; # @Inherited(org.eclipse.core.databinding.observable.set.IObservableSet)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

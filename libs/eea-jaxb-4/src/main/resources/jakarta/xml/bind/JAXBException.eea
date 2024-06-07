@@ -17,7 +17,7 @@ class jakarta/xml/bind/JAXBException
  (L0java/lang/Throwable;)V
 getCause
  ()Ljava/lang/Throwable;
- ()L0java/lang/Throwable;
+ ()L0java/lang/Throwable; # @Inherited(java.lang.Throwable)
 getErrorCode
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -26,13 +26,13 @@ getLinkedException
  ()Ljava/lang/Throwable;
 printStackTrace
  (Ljava/io/PrintStream;)V
- (L1java/io/PrintStream;)V
+ (L1java/io/PrintStream;)V # @Inherited(java.lang.Throwable)
 printStackTrace
  (Ljava/io/PrintWriter;)V
- (L1java/io/PrintWriter;)V
+ (L1java/io/PrintWriter;)V # @Inherited(java.lang.Throwable)
 setLinkedException
  (Ljava/lang/Throwable;)V
  (Ljava/lang/Throwable;)V
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String; # @Inherited(java.lang.Object)
+ ()L1java/lang/String; # @Inherited(java.lang.Throwable)

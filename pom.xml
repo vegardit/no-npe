@@ -191,7 +191,11 @@ check for new dependency/plugin updates using:
                   <executable>java</executable>
                   <arguments>
                     <argument>-Deea-generator.action=${eea-generator.action}</argument>
-                    <argument>-Deea-generator.input.dirs.default=${project.basedir}/src/main/resources</argument>
+                    <!--
+                       adding ${project.basedir}/../eea-java-11/src/main/resources to input dirs ensures that EEAs from JDK classes get propagated
+                       to EEA files in other modules, which is required because of https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2512
+                    -->
+                    <argument>-Deea-generator.input.dirs.default=${project.basedir}/src/main/resources,${project.basedir}/../eea-java-11/src/main/resources</argument>
                     <argument>-Deea-generator.output.dir=${project.basedir}/src/main/resources</argument> <!-- perform in-place update -->
                     <argument>-classpath</argument>
                     <classpath />
@@ -224,6 +228,21 @@ check for new dependency/plugin updates using:
                     <argument>${project.basedir}/eea-generator.properties</argument>
                   </arguments>
                 </configuration>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+              <execution>
+              <!-- don't attach source jar for EEA projects -->
+              <id>attach-sources</id>
+              <phase>none</phase>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
               </execution>
             </executions>
           </plugin>

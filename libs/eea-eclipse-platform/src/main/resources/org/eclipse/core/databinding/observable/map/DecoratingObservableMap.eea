@@ -14,13 +14,13 @@ addMapChangeListener
  (Lorg/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V
 containsKey
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)
 containsValue
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)
 entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
- ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()L1java/util/Set<L1java/util/Map$Entry<TK;TV;>;>; # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(org.eclipse.core.databinding.observable.DecoratingObservable)
@@ -29,7 +29,7 @@ fireMapChange
  (Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;)V
 get
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)TV;
+ (Ljava/lang/Object;)T0V; # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)
 getKeyType
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -41,16 +41,16 @@ handleMapChange
  (Lorg/eclipse/core/databinding/observable/map/MapChangeEvent<+TK;+TV;>;)V
 keySet
  ()Ljava/util/Set<TK;>;
- ()Ljava/util/Set<TK;>;
+ ()L1java/util/Set<TK;>; # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)
 put
  (TK;TV;)TV;
- (TK;TV;)TV;
+ (TK;TV;)T0V; # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)
 putAll
  (Ljava/util/Map<+TK;+TV;>;)V
- (Ljava/util/Map<+TK;+TV;>;)V
+ (L1java/util/Map<+TK;+TV;>;)V # @Inherited(java.util.Map)
 remove
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)TV;
+ (L0java/lang/Object;)T0V; # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)
 removeMapChangeListener
  (Lorg/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V
  (Lorg/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V
@@ -59,4 +59,4 @@ toString
  ()L1java/lang/String; # @Inherited(java.lang.Object)
 values
  ()Ljava/util/Collection<TV;>;
- ()Ljava/util/Collection<TV;>;
+ ()L1java/util/Collection<TV;>; # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)

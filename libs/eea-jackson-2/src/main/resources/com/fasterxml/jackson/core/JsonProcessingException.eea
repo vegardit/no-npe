@@ -24,7 +24,7 @@ getLocation
  ()Lcom/fasterxml/jackson/core/JsonLocation;
 getMessage
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Overrides(java.lang.Throwable)
 getMessageSuffix
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -36,4 +36,4 @@ getProcessor
  ()Ljava/lang/Object;
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String; # @Inherited(java.lang.Object)
+ ()L1java/lang/String; # @Inherited(java.lang.Throwable)

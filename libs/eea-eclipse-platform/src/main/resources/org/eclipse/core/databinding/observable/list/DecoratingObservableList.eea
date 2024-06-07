@@ -17,7 +17,7 @@ add
  (ITE;)V
 addAll
  (ILjava/util/Collection<+TE;>;)Z
- (ILjava/util/Collection<+TE;>;)Z
+ (IL1java/util/Collection<+TE;>;)Z # @Inherited(org.eclipse.core.databinding.observable.list.IObservableList)
 addListChangeListener
  (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
  (Lorg/eclipse/core/databinding/observable/list/IListChangeListener<-TE;>;)V
@@ -32,16 +32,16 @@ handleListChange
  (Lorg/eclipse/core/databinding/observable/list/ListChangeEvent<+TE;>;)V
 indexOf
  (Ljava/lang/Object;)I
- (Ljava/lang/Object;)I
+ (L0java/lang/Object;)I # @Inherited(org.eclipse.core.databinding.observable.list.IObservableList)
 lastIndexOf
  (Ljava/lang/Object;)I
- (Ljava/lang/Object;)I
+ (L0java/lang/Object;)I # @Inherited(org.eclipse.core.databinding.observable.list.IObservableList)
 listIterator
  ()Ljava/util/ListIterator<TE;>;
- ()Ljava/util/ListIterator<TE;>;
+ ()L1java/util/ListIterator<TE;>; # @Inherited(org.eclipse.core.databinding.observable.list.IObservableList)
 listIterator
  (I)Ljava/util/ListIterator<TE;>;
- (I)Ljava/util/ListIterator<TE;>;
+ (I)L1java/util/ListIterator<TE;>; # @Inherited(org.eclipse.core.databinding.observable.list.IObservableList)
 move
  (II)TE;
  (II)TE;
@@ -56,4 +56,4 @@ set
  (ITE;)TE;
 subList
  (II)Ljava/util/List<TE;>;
- (II)Ljava/util/List<TE;>;
+ (II)L1java/util/List<TE;>; # @Inherited(org.eclipse.core.databinding.observable.list.IObservableList)

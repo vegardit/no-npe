@@ -115,7 +115,6 @@ public abstract class EEAGenerator {
          this.outputDir = outputDir;
          this.packages = packages;
       }
-
    }
 
    /**
@@ -473,6 +472,30 @@ public abstract class EEAGenerator {
          totalModifications += pkgDeletions.sum();
       }
 
+      // will hold additional EEA files found in input dirs that are not part of the packages defined in {@link Config#packages}
+      final var superEEAFiles = new HashMap<ClassInfo, EEAFile>();
+      final Function<ClassInfo, @Nullable EEAFile> getSuperEEAFile = classInfo -> {
+         EEAFile eeaFile = eeaFiles.get(classInfo);
+         if (eeaFile != null)
+            return eeaFile;
+         eeaFile = superEEAFiles.get(classInfo);
+         if (eeaFile != null)
+            return eeaFile;
+
+         for (final var inputDir : cfg.inputDirs) {
+            try {
+               eeaFile = EEAFile.loadIfExists(inputDir, classInfo.getName().replace('.', '/'));
+               if (eeaFile != null) {
+                  superEEAFiles.put(classInfo, eeaFile);
+                  return eeaFile;
+               }
+            } catch (final IOException ex) {
+               throw new UncheckedIOException(ex);
+            }
+         }
+         return null;
+      };
+
       // determine inherited annotated signatures
       final var recomputeInheritance = new AtomicBoolean(true);
       while (recomputeInheritance.get()) {
@@ -508,7 +531,7 @@ public abstract class EEAGenerator {
                for (final var superClass : superClasses) {
                   final EEAFile superClassEEA = superClass == OBJECT_CLASS_INFO //
                         ? TEMPLATE_OBJECT
-                        : eeaFiles.get(superClass);
+                        : getSuperEEAFile.apply(superClass);
                   if (superClassEEA == null) {
                      continue;
                   }
@@ -527,7 +550,7 @@ public abstract class EEAGenerator {
                boolean hasConflictingIFaceAnnotatedSignatures = false;
                if (inheritableAnnotatedSignature == null) {
                   for (final var iface : interfaces) {
-                     final EEAFile ifaceEEA = eeaFiles.get(iface);
+                     final EEAFile ifaceEEA = getSuperEEAFile.apply(iface);
                      if (ifaceEEA == null) {
                         continue;
                      }
