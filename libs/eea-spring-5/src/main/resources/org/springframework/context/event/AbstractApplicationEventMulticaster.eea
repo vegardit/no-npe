@@ -2,7 +2,7 @@ class org/springframework/context/event/AbstractApplicationEventMulticaster
 
 addApplicationListener
  (Lorg/springframework/context/ApplicationListener<*>;)V
- (Lorg/springframework/context/ApplicationListener<*>;)V
+ (L1org/springframework/context/ApplicationListener<*>;)V # @Inherited(org.springframework.context.event.ApplicationEventMulticaster)
 addApplicationListenerBean
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -14,7 +14,7 @@ getApplicationListeners
  (Lorg/springframework/context/ApplicationEvent;Lorg/springframework/core/ResolvableType;)Ljava/util/Collection<Lorg/springframework/context/ApplicationListener<*>;>;
 removeApplicationListener
  (Lorg/springframework/context/ApplicationListener<*>;)V
- (Lorg/springframework/context/ApplicationListener<*>;)V
+ (L1org/springframework/context/ApplicationListener<*>;)V # @Inherited(org.springframework.context.event.ApplicationEventMulticaster)
 removeApplicationListenerBean
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

@@ -8,7 +8,7 @@ class org/eclipse/ui/preferences/ScopedPreferenceStore
  (Lorg/eclipse/core/runtime/preferences/IScopeContext;Ljava/lang/String;Ljava/lang/String;)V
 addPropertyChangeListener
  (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
- (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 contains
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -62,7 +62,7 @@ putValue
  (Ljava/lang/String;Ljava/lang/String;)V
 removePropertyChangeListener
  (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
- (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setDefault
  (Ljava/lang/String;D)V
  (Ljava/lang/String;D)V

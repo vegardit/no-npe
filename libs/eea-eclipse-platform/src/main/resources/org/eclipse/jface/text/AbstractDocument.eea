@@ -2,13 +2,13 @@ class org/eclipse/jface/text/AbstractDocument
 
 addDocumentListener
  (Lorg/eclipse/jface/text/IDocumentListener;)V
- (Lorg/eclipse/jface/text/IDocumentListener;)V
+ (L1org/eclipse/jface/text/IDocumentListener;)V # @Inherited(org.eclipse.jface.text.IDocument)
 addDocumentPartitioningListener
  (Lorg/eclipse/jface/text/IDocumentPartitioningListener;)V
- (Lorg/eclipse/jface/text/IDocumentPartitioningListener;)V
+ (L1org/eclipse/jface/text/IDocumentPartitioningListener;)V # @Inherited(org.eclipse.jface.text.IDocument)
 addDocumentRewriteSessionListener
  (Lorg/eclipse/jface/text/IDocumentRewriteSessionListener;)V
- (Lorg/eclipse/jface/text/IDocumentRewriteSessionListener;)V
+ (L1org/eclipse/jface/text/IDocumentRewriteSessionListener;)V # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 addPosition
  (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
  (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
@@ -23,7 +23,7 @@ addPositionUpdater
  (Lorg/eclipse/jface/text/IPositionUpdater;)V
 addPrenotifiedDocumentListener
  (Lorg/eclipse/jface/text/IDocumentListener;)V
- (Lorg/eclipse/jface/text/IDocumentListener;)V
+ (L1org/eclipse/jface/text/IDocumentListener;)V # @Inherited(org.eclipse.jface.text.IDocument)
 checkStateOfPartitioner
  (Lorg/eclipse/jface/text/IDocumentPartitioner;Ljava/lang/String;)V
  (Lorg/eclipse/jface/text/IDocumentPartitioner;Ljava/lang/String;)V
@@ -164,13 +164,13 @@ registerPostNotificationReplace
  (Lorg/eclipse/jface/text/IDocumentListener;Lorg/eclipse/jface/text/IDocumentExtension$IReplace;)V
 removeDocumentListener
  (Lorg/eclipse/jface/text/IDocumentListener;)V
- (Lorg/eclipse/jface/text/IDocumentListener;)V
+ (L1org/eclipse/jface/text/IDocumentListener;)V # @Inherited(org.eclipse.jface.text.IDocument)
 removeDocumentPartitioningListener
  (Lorg/eclipse/jface/text/IDocumentPartitioningListener;)V
- (Lorg/eclipse/jface/text/IDocumentPartitioningListener;)V
+ (L1org/eclipse/jface/text/IDocumentPartitioningListener;)V # @Inherited(org.eclipse.jface.text.IDocument)
 removeDocumentRewriteSessionListener
  (Lorg/eclipse/jface/text/IDocumentRewriteSessionListener;)V
- (Lorg/eclipse/jface/text/IDocumentRewriteSessionListener;)V
+ (L1org/eclipse/jface/text/IDocumentRewriteSessionListener;)V # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 removePosition
  (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
  (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
@@ -185,7 +185,7 @@ removePositionUpdater
  (Lorg/eclipse/jface/text/IPositionUpdater;)V
 removePrenotifiedDocumentListener
  (Lorg/eclipse/jface/text/IDocumentListener;)V
- (Lorg/eclipse/jface/text/IDocumentListener;)V
+ (L1org/eclipse/jface/text/IDocumentListener;)V # @Inherited(org.eclipse.jface.text.IDocument)
 replace
  (IILjava/lang/String;)V
  (IILjava/lang/String;)V

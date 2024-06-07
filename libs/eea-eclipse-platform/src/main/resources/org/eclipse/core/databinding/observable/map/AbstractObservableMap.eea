@@ -14,16 +14,16 @@ super org/eclipse/core/databinding/observable/map/IObservableMap
  (Lorg/eclipse/core/databinding/observable/Realm;)V
 addChangeListener
  (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
- (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
+ (L1org/eclipse/core/databinding/observable/IChangeListener;)V # @Inherited(org.eclipse.core.databinding.observable.IObservable)
 addDisposeListener
  (Lorg/eclipse/core/databinding/observable/IDisposeListener;)V
- (Lorg/eclipse/core/databinding/observable/IDisposeListener;)V
+ (L1org/eclipse/core/databinding/observable/IDisposeListener;)V # @Inherited(org.eclipse.core.databinding.observable.IObservable)
 addMapChangeListener
  (Lorg/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V
- (Lorg/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V
+ (L1org/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)
 addStaleListener
  (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
- (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
+ (L1org/eclipse/core/databinding/observable/IStaleListener;)V # @Inherited(org.eclipse.core.databinding.observable.IObservable)
 fireMapChange
  (Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;)V
  (Lorg/eclipse/core/databinding/observable/map/MapDiff<TK;TV;>;)V
@@ -38,13 +38,13 @@ getValueType
  ()Ljava/lang/Object;
 removeChangeListener
  (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
- (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
+ (L1org/eclipse/core/databinding/observable/IChangeListener;)V # @Inherited(org.eclipse.core.databinding.observable.IObservable)
 removeDisposeListener
  (Lorg/eclipse/core/databinding/observable/IDisposeListener;)V
- (Lorg/eclipse/core/databinding/observable/IDisposeListener;)V
+ (L1org/eclipse/core/databinding/observable/IDisposeListener;)V # @Inherited(org.eclipse.core.databinding.observable.IObservable)
 removeMapChangeListener
  (Lorg/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V
- (Lorg/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V
+ (L1org/eclipse/core/databinding/observable/map/IMapChangeListener<-TK;-TV;>;)V # @Inherited(org.eclipse.core.databinding.observable.map.IObservableMap)
 removeStaleListener
  (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
- (Lorg/eclipse/core/databinding/observable/IStaleListener;)V
+ (L1org/eclipse/core/databinding/observable/IStaleListener;)V # @Inherited(org.eclipse.core.databinding.observable.IObservable)

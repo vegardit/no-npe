@@ -14,7 +14,7 @@ addPage
  (Lorg/eclipse/ui/IEditorPart;Lorg/eclipse/ui/IEditorInput;)I
 addPageChangedListener
  (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
- (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (L1org/eclipse/jface/dialogs/IPageChangedListener;)V # @Inherited(org.eclipse.jface.dialogs.IPageChangeProvider)
 createContainer
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/custom/CTabFolder;
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/custom/CTabFolder;
@@ -65,7 +65,7 @@ init
  (Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
 removePageChangedListener
  (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
- (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (L1org/eclipse/jface/dialogs/IPageChangedListener;)V # @Inherited(org.eclipse.jface.dialogs.IPageChangeProvider)
 setActiveEditor
  (Lorg/eclipse/ui/IEditorPart;)V
  (Lorg/eclipse/ui/IEditorPart;)V

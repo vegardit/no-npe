@@ -14,7 +14,7 @@ super org/eclipse/core/databinding/observable/value/IVetoableValue
  (Lorg/eclipse/core/databinding/observable/Realm;)V
 addValueChangingListener
  (Lorg/eclipse/core/databinding/observable/value/IValueChangingListener<TT;>;)V
- (Lorg/eclipse/core/databinding/observable/value/IValueChangingListener<TT;>;)V
+ (L1org/eclipse/core/databinding/observable/value/IValueChangingListener<TT;>;)V # @Inherited(org.eclipse.core.databinding.observable.value.IVetoableValue)
 doSetApprovedValue
  (TT;)V
  (TT;)V
@@ -26,4 +26,4 @@ fireValueChanging
  (Lorg/eclipse/core/databinding/observable/value/ValueDiff<TT;>;)Z
 removeValueChangingListener
  (Lorg/eclipse/core/databinding/observable/value/IValueChangingListener<TT;>;)V
- (Lorg/eclipse/core/databinding/observable/value/IValueChangingListener<TT;>;)V
+ (L1org/eclipse/core/databinding/observable/value/IValueChangingListener<TT;>;)V # @Inherited(org.eclipse.core.databinding.observable.value.IVetoableValue)

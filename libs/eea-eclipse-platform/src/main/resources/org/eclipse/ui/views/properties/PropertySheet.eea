@@ -6,10 +6,10 @@ HELP_CONTEXT_PROPERTY_SHEET_VIEW
 
 added
  ([Lorg/eclipse/core/runtime/IExtension;)V
- ([Lorg/eclipse/core/runtime/IExtension;)V
+ ([1L1org/eclipse/core/runtime/IExtension;)V # @Inherited(org.eclipse.core.runtime.IRegistryEventListener)
 added
  ([Lorg/eclipse/core/runtime/IExtensionPoint;)V
- ([Lorg/eclipse/core/runtime/IExtensionPoint;)V
+ ([1L1org/eclipse/core/runtime/IExtensionPoint;)V # @Inherited(org.eclipse.core.runtime.IRegistryEventListener)
 createDefaultPage
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
@@ -45,10 +45,10 @@ isImportant
  (Lorg/eclipse/ui/IWorkbenchPart;)Z
 partActivated
  (Lorg/eclipse/ui/IWorkbenchPart;)V
- (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (L1org/eclipse/ui/IWorkbenchPart;)V # @Inherited(org.eclipse.ui.part.PageBookView)
 partClosed
  (Lorg/eclipse/ui/IWorkbenchPart;)V
- (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (L1org/eclipse/ui/IWorkbenchPart;)V # @Inherited(org.eclipse.ui.part.PageBookView)
 partHidden
  (Lorg/eclipse/ui/IWorkbenchPart;)V
  (Lorg/eclipse/ui/IWorkbenchPart;)V
@@ -57,16 +57,16 @@ partVisible
  (Lorg/eclipse/ui/IWorkbenchPart;)V
 removed
  ([Lorg/eclipse/core/runtime/IExtension;)V
- ([Lorg/eclipse/core/runtime/IExtension;)V
+ ([1L1org/eclipse/core/runtime/IExtension;)V # @Inherited(org.eclipse.core.runtime.IRegistryEventListener)
 removed
  ([Lorg/eclipse/core/runtime/IExtensionPoint;)V
- ([Lorg/eclipse/core/runtime/IExtensionPoint;)V
+ ([1L1org/eclipse/core/runtime/IExtensionPoint;)V # @Inherited(org.eclipse.core.runtime.IRegistryEventListener)
 saveState
  (Lorg/eclipse/ui/IMemento;)V
  (Lorg/eclipse/ui/IMemento;)V
 selectionChanged
  (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)V
- (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/jface/viewers/ISelection;)V
+ (L1org/eclipse/ui/IWorkbenchPart;L0org/eclipse/jface/viewers/ISelection;)V # @Inherited(org.eclipse.ui.ISelectionListener)
 show
  (Lorg/eclipse/ui/part/ShowInContext;)Z
  (Lorg/eclipse/ui/part/ShowInContext;)Z

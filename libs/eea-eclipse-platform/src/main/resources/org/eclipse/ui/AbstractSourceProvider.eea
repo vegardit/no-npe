@@ -2,7 +2,7 @@ class org/eclipse/ui/AbstractSourceProvider
 
 addSourceProviderListener
  (Lorg/eclipse/ui/ISourceProviderListener;)V
- (Lorg/eclipse/ui/ISourceProviderListener;)V
+ (L1org/eclipse/ui/ISourceProviderListener;)V # @Inherited(org.eclipse.ui.ISourceProvider)
 fireSourceChanged
  (ILjava/lang/String;Ljava/lang/Object;)V
  (ILjava/lang/String;Ljava/lang/Object;)V
@@ -17,4 +17,4 @@ logDebuggingInfo
  (Ljava/lang/String;)V
 removeSourceProviderListener
  (Lorg/eclipse/ui/ISourceProviderListener;)V
- (Lorg/eclipse/ui/ISourceProviderListener;)V
+ (L1org/eclipse/ui/ISourceProviderListener;)V # @Inherited(org.eclipse.ui.ISourceProvider)

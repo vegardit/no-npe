@@ -242,6 +242,23 @@ public abstract class EEAGenerator {
             // (Ljava/lang/String;)V -> (L1java/lang/String;)V
             return new ValueWithComment(insert(member.originalSignature.value, 2, "1"), "");
 
+         // mark the parameter of single-parmeter methods as @NonNull
+         // with signature matching: void (add|remove)*Listener(*Listener)
+         if (!methodInfo.isStatic() // non-static
+               && (methodInfo.getName().startsWith("add") || methodInfo.getName().startsWith("remove")) //
+               && methodInfo.getName().endsWith("Listener") //
+               && member.originalSignature.value.endsWith(")V") // returns void
+               && methodInfo.getParameterInfo().length == 1 // only 1 parameter
+               && methodInfo.getParameterInfo()[0].getTypeDescriptor().toString().endsWith("Listener"))
+            return new ValueWithComment( //
+               member.originalSignature.value.startsWith("(") //
+                     // (Lcom/example/MyListener;)V -> (L1com/example/MyListener;)V
+                     // (TT;)V -> (T1T;)V
+                     ? insert(member.originalSignature.value, 2, "1") //
+                     // <T::Lcom/example/MyListener;>(TT;)V --> <1T::Lcom/example/MyListener;>(TT;)V
+                     : insert(member.originalSignature.value, 1, "1"), //
+               "");
+
          if (hasObjectReturnType(member)) { // returns non-void
             if (hasNullableAnnotation(methodInfo.getAnnotationInfo()))
                // ()Ljava/lang/String -> ()L0java/lang/String;

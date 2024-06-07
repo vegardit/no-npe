@@ -9,7 +9,7 @@ PREFIX
 
 addSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
- (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 createDefaultPage
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
@@ -36,10 +36,10 @@ isImportant
  (Lorg/eclipse/ui/IWorkbenchPart;)Z
 partBroughtToTop
  (Lorg/eclipse/ui/IWorkbenchPart;)V
- (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (L1org/eclipse/ui/IWorkbenchPart;)V # @Inherited(org.eclipse.ui.part.PageBookView)
 removeSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
- (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 selectionChanged
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
  (L1org/eclipse/jface/viewers/SelectionChangedEvent;)V # @Inherited(org.eclipse.jface.viewers.ISelectionChangedListener)

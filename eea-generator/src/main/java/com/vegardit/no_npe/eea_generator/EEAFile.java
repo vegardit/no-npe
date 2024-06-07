@@ -211,6 +211,26 @@ public class EEAFile {
    protected static final Pattern PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES = Pattern.compile(
       "[TL]([01])[a-zA-Z_][a-zA-Z_0-9$\\/*]*[<;]");
 
+   /**
+    * see https://wiki.eclipse.org/JDT_Core/Null_Analysis/External_Annotations#Textual_encoding_of_signatures
+    */
+   protected static String removeNullAnnotations(final String annotatedSignature) {
+      var strippedSignature = annotatedSignature //
+         .replace("[0", "[") //
+         .replace("[1", "[") //
+         .replace("-0", "-") //
+         .replace("-1", "-") //
+         .replace("+0", "+") //
+         .replace("+1", "+") //
+         .replace("*0", "*") //
+         .replace("<0", "<") //
+         .replace("<1", "<") //
+         .replace("*1", "*");
+
+      strippedSignature = replaceAll(strippedSignature, PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES, 1, match -> "");
+      return strippedSignature;
+   }
+
    public final ClassMember classHeader;
    public final List<ClassMember> superTypes = new ArrayList<>();
 
@@ -316,10 +336,10 @@ public class EEAFile {
                lineNumber++;
                final var superTypeParamsAnnotated = ValueWithComment.parse(line);
                if (!superTypeParamsOriginal.value.equals(superTypeParamsAnnotated.value) //
-                     && !superTypeParamsOriginal.value.equals(eeaFile.removeNullAnnotations(superTypeParamsAnnotated.value)))
+                     && !superTypeParamsOriginal.value.equals(removeNullAnnotations(superTypeParamsAnnotated.value)))
                   throw new IOException("Signature mismatch at " + path + ":" + lineNumber + "\n" //
                         + "          Original: " + superTypeParamsAnnotated + "\n" //
-                        + "Annotated Stripped: " + eeaFile.removeNullAnnotations(superTypeParamsAnnotated.value) + "\n" //
+                        + "Annotated Stripped: " + removeNullAnnotations(superTypeParamsAnnotated.value) + "\n" //
                         + "         Annotated: " + superTypeParamsAnnotated + "\n");
                eeaFile.superTypes.add(new ClassMember(superType, superTypeParamsOriginal, superTypeParamsAnnotated));
             } else {
@@ -339,7 +359,7 @@ public class EEAFile {
                throw new IOException("Illegal format for original signature at " + path + ":" + lineNumber);
 
             final var originalSignature = ValueWithComment.parse(line);
-            if (!originalSignature.value.equals(eeaFile.removeNullAnnotations(originalSignature.value)))
+            if (!originalSignature.value.equals(removeNullAnnotations(originalSignature.value)))
                throw new IOException("Original signature contains null annotations at " + path + ":" + lineNumber);
 
             final var member = new ClassMember(memberName, originalSignature);
@@ -354,10 +374,10 @@ public class EEAFile {
                lineNumber++;
                final var annotatedSignature = ValueWithComment.parse(line);
                if (!originalSignature.value.equals(annotatedSignature.value) //
-                     && !originalSignature.value.equals(eeaFile.removeNullAnnotations(annotatedSignature.value)))
+                     && !originalSignature.value.equals(removeNullAnnotations(annotatedSignature.value)))
                   throw new IOException("Signature mismatch at " + path + ":" + lineNumber + "\n" //
                         + "          Original: " + originalSignature + "\n" //
-                        + "Annotated Stripped: " + eeaFile.removeNullAnnotations(annotatedSignature.value) + "\n" //
+                        + "Annotated Stripped: " + removeNullAnnotations(annotatedSignature.value) + "\n" //
                         + "         Annotated: " + annotatedSignature + "\n");
                if (!originalSignature.value.equals(annotatedSignature.value) || annotatedSignature.hasComment()) {
                   member.annotatedSignature = annotatedSignature;
@@ -560,24 +580,6 @@ public class EEAFile {
 
       removeTrailingBlanks(lines);
       return lines;
-   }
-
-   /**
-    * see https://wiki.eclipse.org/JDT_Core/Null_Analysis/External_Annotations#Textual_encoding_of_signatures
-    */
-   protected String removeNullAnnotations(final String annotatedSignature) {
-      var strippedSignature = annotatedSignature //
-         .replace("[0", "[") //
-         .replace("[1", "[") //
-         .replace("-0", "-") //
-         .replace("-1", "-") //
-         .replace("+0", "+") //
-         .replace("+1", "+") //
-         .replace("*0", "*") //
-         .replace("*1", "*");
-
-      strippedSignature = replaceAll(strippedSignature, PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES, 1, match -> "");
-      return strippedSignature;
    }
 
    /**

@@ -19,7 +19,7 @@ logger
  (Lorg/springframework/context/ApplicationContext;)V
 addApplicationListener
  (Lorg/springframework/context/ApplicationListener<*>;)V
- (Lorg/springframework/context/ApplicationListener<*>;)V
+ (L1org/springframework/context/ApplicationListener<*>;)V # @Inherited(org.springframework.context.ConfigurableApplicationContext)
 addBeanFactoryPostProcessor
  (Lorg/springframework/beans/factory/config/BeanFactoryPostProcessor;)V
  (Lorg/springframework/beans/factory/config/BeanFactoryPostProcessor;)V
@@ -205,7 +205,7 @@ registerBeanPostProcessors
  (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
 removeApplicationListener
  (Lorg/springframework/context/ApplicationListener<*>;)V
- (Lorg/springframework/context/ApplicationListener<*>;)V
+ (L1org/springframework/context/ApplicationListener<*>;)V # @Inherited(org.springframework.context.ConfigurableApplicationContext)
 setApplicationStartup
  (Lorg/springframework/core/metrics/ApplicationStartup;)V
  (Lorg/springframework/core/metrics/ApplicationStartup;)V

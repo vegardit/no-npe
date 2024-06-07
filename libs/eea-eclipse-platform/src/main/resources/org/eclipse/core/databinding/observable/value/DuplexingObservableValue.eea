@@ -18,10 +18,10 @@ withDefaults
  (Lorg/eclipse/core/databinding/observable/list/IObservableList<TT;>;Ljava/lang/Object;)V
 addChangeListener
  (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
- (Lorg/eclipse/core/databinding/observable/IChangeListener;)V
+ (L1org/eclipse/core/databinding/observable/IChangeListener;)V # @Inherited(org.eclipse.core.databinding.observable.AbstractObservable)
 addValueChangeListener
  (Lorg/eclipse/core/databinding/observable/value/IValueChangeListener<-TT;>;)V
- (Lorg/eclipse/core/databinding/observable/value/IValueChangeListener<-TT;>;)V
+ (L1org/eclipse/core/databinding/observable/value/IValueChangeListener<-TT;>;)V # @Inherited(org.eclipse.core.databinding.observable.value.AbstractObservableValue)
 coalesceElements
  (Ljava/util/Collection<TT;>;)TT;
  (Ljava/util/Collection<TT;>;)TT;

@@ -5,10 +5,10 @@ class org/eclipse/ui/texteditor/AbstractTextEditor$SelectionProvider
  (Lorg/eclipse/ui/texteditor/AbstractTextEditor;)V
 addPostSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
- (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.IPostSelectionProvider)
 addSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
- (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
  ()Lorg/eclipse/jface/viewers/ISelection;
@@ -17,10 +17,10 @@ isValid
  (Lorg/eclipse/jface/viewers/ISelection;)Z
 removePostSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
- (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.IPostSelectionProvider)
 removeSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
- (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;)V
  (Lorg/eclipse/jface/viewers/ISelection;)V

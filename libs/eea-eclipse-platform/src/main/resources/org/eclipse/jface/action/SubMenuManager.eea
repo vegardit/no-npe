@@ -5,7 +5,7 @@ class org/eclipse/jface/action/SubMenuManager
  (Lorg/eclipse/jface/action/IMenuManager;)V
 addMenuListener
  (Lorg/eclipse/jface/action/IMenuListener;)V
- (Lorg/eclipse/jface/action/IMenuListener;)V
+ (L1org/eclipse/jface/action/IMenuListener;)V # @Inherited(org.eclipse.jface.action.IMenuManager)
 fill
  (Lorg/eclipse/swt/widgets/Composite;)V
  (Lorg/eclipse/swt/widgets/Composite;)V
@@ -38,7 +38,7 @@ getWrapper
  (Lorg/eclipse/jface/action/IMenuManager;)Lorg/eclipse/jface/action/IMenuManager;
 removeMenuListener
  (Lorg/eclipse/jface/action/IMenuListener;)V
- (Lorg/eclipse/jface/action/IMenuListener;)V
+ (L1org/eclipse/jface/action/IMenuListener;)V # @Inherited(org.eclipse.jface.action.IMenuManager)
 setParent
  (Lorg/eclipse/jface/action/IContributionManager;)V
  (Lorg/eclipse/jface/action/IContributionManager;)V

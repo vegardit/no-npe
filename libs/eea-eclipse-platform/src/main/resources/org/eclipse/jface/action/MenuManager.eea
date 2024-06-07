@@ -15,7 +15,7 @@ MANAGER_KEY
  (Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;Ljava/lang/String;)V
 addMenuListener
  (Lorg/eclipse/jface/action/IMenuListener;)V
- (Lorg/eclipse/jface/action/IMenuListener;)V
+ (L1org/eclipse/jface/action/IMenuListener;)V # @Inherited(org.eclipse.jface.action.IMenuManager)
 createContextMenu
  (Lorg/eclipse/swt/widgets/Control;)Lorg/eclipse/swt/widgets/Menu;
  (Lorg/eclipse/swt/widgets/Control;)Lorg/eclipse/swt/widgets/Menu;
@@ -75,7 +75,7 @@ isSubstituteFor
  (Lorg/eclipse/jface/action/IContributionItem;)Z
 removeMenuListener
  (Lorg/eclipse/jface/action/IMenuListener;)V
- (Lorg/eclipse/jface/action/IMenuListener;)V
+ (L1org/eclipse/jface/action/IMenuListener;)V # @Inherited(org.eclipse.jface.action.IMenuManager)
 setActionDefinitionId
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

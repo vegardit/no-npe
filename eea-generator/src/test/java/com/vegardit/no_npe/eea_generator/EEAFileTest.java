@@ -4,6 +4,7 @@
  */
 package com.vegardit.no_npe.eea_generator;
 
+import static com.vegardit.no_npe.eea_generator.EEAFile.*;
 import static com.vegardit.no_npe.eea_generator.internal.MiscUtils.remap;
 import static org.assertj.core.api.Assertions.*;
 
@@ -42,7 +43,7 @@ class EEAFileTest {
 
    @Test
    void testEEAFile() throws IOException {
-      final var eeaFile = EEAFile.load(Path.of("src/test/resources/valid"), TestEntity.class.getName());
+      final var eeaFile = load(Path.of("src/test/resources/valid"), TestEntity.class.getName());
 
       assertThat(eeaFile.classHeader.name.value).isEqualTo(TestEntity.class.getName());
       assertThat(eeaFile.classHeader.name.comment).isEqualTo("# a class comment");
@@ -74,7 +75,7 @@ class EEAFileTest {
    void testWrongTypeHeader() {
       final var wrongTypePath = Path.of("src/test/resources/invalid/" + WRONG_TYPE_NAME_WITH_SLASHES + ".eea");
       assertThatThrownBy(() -> { //
-         EEAFile.load(wrongTypePath);
+         load(wrongTypePath);
       }) //
          .isInstanceOf(java.io.IOException.class) //
          .hasMessage("Mismatch between file path of [" + wrongTypePath + "] and contained class name definition [" + TestEntity.class
@@ -93,11 +94,22 @@ class EEAFileTest {
       assertThat(method.hasNullAnnotations()).isFalse();
       assertThat(method.name.comment).isEmpty();
 
-      final var loadedEEAFile = EEAFile.load(Path.of("src/test/resources/valid"), computedEEAFile.classHeader.name.value);
+      final var loadedEEAFile = load(Path.of("src/test/resources/valid"), computedEEAFile.classHeader.name.value);
       computedEEAFile.applyAnnotationsAndCommentsFrom(loadedEEAFile, false, false);
       final var annotatedSignature = method.annotatedSignature;
       assert annotatedSignature != null;
       assertThat(annotatedSignature.value).isEqualTo("L1java/lang/String;");
       assertThat(method.name.comment).isEqualTo("# a method comment");
+   }
+
+   @Test
+   void testRemoveNullAnnotations() {
+      assertThat(removeNullAnnotations("L0java/lang/Object;")).isEqualTo("Ljava/lang/Object;");
+      assertThat(removeNullAnnotations("L1java/lang/Class<*>;L1java/lang/Class<*>;)L1java/lang/invoke/MethodType;")).isEqualTo(
+         "Ljava/lang/Class<*>;Ljava/lang/Class<*>;)Ljava/lang/invoke/MethodType;");
+      assertThat(removeNullAnnotations("<T::Ljava/lang/annotation/Annotation;>(L1java/lang/Class<TT;>;)[1T1T;")).isEqualTo(
+         "<T::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TT;>;)[TT;");
+      assertThat(removeNullAnnotations("<1T::Ljava/util/EventListener;>(TT;)V")).isEqualTo("<T::Ljava/util/EventListener;>(TT;)V");
+      assertThat(removeNullAnnotations("<T1:Ljava/lang/Object;>")).isEqualTo("<T1:Ljava/lang/Object;>"); // T1 is the name of the generic variable
    }
 }

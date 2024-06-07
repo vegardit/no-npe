@@ -9,10 +9,10 @@ WIZ_IMG_ERROR
  (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/jface/wizard/IWizard;)V
 addPageChangedListener
  (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
- (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (L1org/eclipse/jface/dialogs/IPageChangedListener;)V # @Inherited(org.eclipse.jface.dialogs.IPageChangeProvider)
 addPageChangingListener
  (Lorg/eclipse/jface/dialogs/IPageChangingListener;)V
- (Lorg/eclipse/jface/dialogs/IPageChangingListener;)V
+ (L1org/eclipse/jface/dialogs/IPageChangingListener;)V
 configureShell
  (Lorg/eclipse/swt/widgets/Shell;)V
  (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)
@@ -54,10 +54,10 @@ getWizard
  ()Lorg/eclipse/jface/wizard/IWizard;
 removePageChangedListener
  (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
- (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
+ (L1org/eclipse/jface/dialogs/IPageChangedListener;)V # @Inherited(org.eclipse.jface.dialogs.IPageChangeProvider)
 removePageChangingListener
  (Lorg/eclipse/jface/dialogs/IPageChangingListener;)V
- (Lorg/eclipse/jface/dialogs/IPageChangingListener;)V
+ (L1org/eclipse/jface/dialogs/IPageChangingListener;)V
 run
  (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
  (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V

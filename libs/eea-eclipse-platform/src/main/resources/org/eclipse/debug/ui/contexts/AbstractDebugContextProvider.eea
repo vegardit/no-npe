@@ -5,7 +5,7 @@ class org/eclipse/debug/ui/contexts/AbstractDebugContextProvider
  (Lorg/eclipse/ui/IWorkbenchPart;)V
 addDebugContextListener
  (Lorg/eclipse/debug/ui/contexts/IDebugContextListener;)V
- (Lorg/eclipse/debug/ui/contexts/IDebugContextListener;)V
+ (L1org/eclipse/debug/ui/contexts/IDebugContextListener;)V # @Inherited(org.eclipse.debug.ui.contexts.IDebugContextProvider)
 fire
  (Lorg/eclipse/debug/ui/contexts/DebugContextEvent;)V
  (Lorg/eclipse/debug/ui/contexts/DebugContextEvent;)V
@@ -14,4 +14,4 @@ getPart
  ()Lorg/eclipse/ui/IWorkbenchPart;
 removeDebugContextListener
  (Lorg/eclipse/debug/ui/contexts/IDebugContextListener;)V
- (Lorg/eclipse/debug/ui/contexts/IDebugContextListener;)V
+ (L1org/eclipse/debug/ui/contexts/IDebugContextListener;)V # @Inherited(org.eclipse.debug.ui.contexts.IDebugContextProvider)
