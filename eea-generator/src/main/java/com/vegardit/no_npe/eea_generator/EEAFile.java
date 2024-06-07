@@ -136,6 +136,7 @@ public class EEAFile {
    public enum SaveOption {
       DELETE_IF_EMPTY,
       OMIT_COMMENTS,
+      OMIT_EMPTY_LINES,
       OMIT_REDUNDANT_ANNOTATED_SIGNATURES,
       OMIT_MEMBERS_WITH_INHERITED_ANNOTATED_SIGNATURES,
       OMIT_MEMBERS_WITHOUT_ANNOTATED_SIGNATURE,
@@ -498,6 +499,7 @@ public class EEAFile {
    protected List<String> renderFileContent(final Set<SaveOption> opts) {
 
       final boolean omitComments = opts.contains(SaveOption.OMIT_COMMENTS);
+      final boolean omitEmptyLines = opts.contains(SaveOption.OMIT_EMPTY_LINES);
       final boolean omitMembersWithInheritedAnnotatedSignature = opts.contains(SaveOption.OMIT_MEMBERS_WITH_INHERITED_ANNOTATED_SIGNATURES);
       final boolean omitMembersWithoutAnnotatedSignature = opts.contains(SaveOption.OMIT_MEMBERS_WITHOUT_ANNOTATED_SIGNATURE);
       final boolean omitRedundantAnnotatedSignatures = opts.contains(SaveOption.OMIT_REDUNDANT_ANNOTATED_SIGNATURES);
@@ -520,7 +522,10 @@ public class EEAFile {
             }
          }
       }
-      renderLine(lines);
+
+      if (!omitEmptyLines) {
+         renderLine(lines);
+      }
 
       /*
        * render super signature
@@ -542,7 +547,9 @@ public class EEAFile {
                }
             }
          }
-         renderLine(lines);
+         if (!omitEmptyLines) {
+            renderLine(lines);
+         }
       }
 
       /*
@@ -573,7 +580,7 @@ public class EEAFile {
             renderLine(lines, " ", member.annotatedSignature.toString(omitComments));
          }
 
-         if (member != lastMember && member.isFollowedByEmptyLine) {
+         if (member != lastMember && member.isFollowedByEmptyLine && !omitEmptyLines) {
             renderLine(lines);
          }
       }

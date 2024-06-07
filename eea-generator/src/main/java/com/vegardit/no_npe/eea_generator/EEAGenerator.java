@@ -676,6 +676,7 @@ public abstract class EEAGenerator {
          SaveOption.REPLACE_EXISTING, //
          SaveOption.DELETE_IF_EMPTY, //
          SaveOption.OMIT_COMMENTS, //
+         SaveOption.OMIT_EMPTY_LINES, //
          SaveOption.OMIT_REDUNDANT_ANNOTATED_SIGNATURES, //
 
          // currently does not work reliable, see https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2512
