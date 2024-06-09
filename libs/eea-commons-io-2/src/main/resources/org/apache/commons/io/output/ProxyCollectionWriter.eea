@@ -8,13 +8,13 @@ class org/apache/commons/io/output/ProxyCollectionWriter
  ([Ljava/io/Writer;)V
 append
  (C)Ljava/io/Writer;
- (C)Ljava/io/Writer;
+ (C)L1java/io/Writer; # @Inherited(org.apache.commons.io.output.FilterCollectionWriter)
 append
  (Ljava/lang/CharSequence;)Ljava/io/Writer;
- (Ljava/lang/CharSequence;)Ljava/io/Writer;
+ (L0java/lang/CharSequence;)L1java/io/Writer; # @Inherited(org.apache.commons.io.output.FilterCollectionWriter)
 append
  (Ljava/lang/CharSequence;II)Ljava/io/Writer;
- (Ljava/lang/CharSequence;II)Ljava/io/Writer;
+ (L0java/lang/CharSequence;II)L1java/io/Writer; # @Inherited(org.apache.commons.io.output.FilterCollectionWriter)
 handleIOException
  (Ljava/io/IOException;)V
  (Ljava/io/IOException;)V
