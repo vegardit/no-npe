@@ -65,11 +65,15 @@ public final class MiscUtils {
       handler.setFormatter(new SimpleFormatter() {
          @Override
          public synchronized String format(final LogRecord lr) {
-            return String.format( //
-               "[%1$s] %2$s | %3$s %n", //
-               lr.getLevel().getLocalizedName(), //
-               lr.getSourceClassName().substring(lr.getSourceClassName().lastIndexOf('.') + 1), //
-               MessageFormat.format(lr.getMessage(), lr.getParameters()));
+            var sourceClassName = lr.getSourceClassName();
+            if (sourceClassName != null) {
+               sourceClassName = sourceClassName.substring(sourceClassName.lastIndexOf('.') + 1);
+            }
+            var msg = lr.getMessage();
+            if (msg != null) {
+               msg = MessageFormat.format(msg, lr.getParameters());
+            }
+            return String.format("[%1$s] %2$s | %3$s %n", lr.getLevel().getLocalizedName(), sourceClassName, msg);
          }
       });
       mainLogger.addHandler(handler);
@@ -77,7 +81,10 @@ public final class MiscUtils {
    }
 
    public static BufferedReader getUTF8ResourceAsReader(final Class<?> clazz, final String resourceName) {
-      return new BufferedReader(new InputStreamReader(clazz.getResourceAsStream(resourceName), StandardCharsets.UTF_8));
+      final var is = clazz.getResourceAsStream(resourceName);
+      if (is == null)
+         throw new IllegalArgumentException("Resource not found: " + resourceName);
+      return new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
    }
 
    public static <E> @Nullable E findLastElement(final List<E> list) {

@@ -43,6 +43,7 @@ import com.vegardit.no_npe.eea_generator.internal.Props;
 import io.github.classgraph.ClassGraph;
 import io.github.classgraph.ClassInfo;
 import io.github.classgraph.ClassMemberInfo;
+import io.github.classgraph.ClassRefTypeSignature;
 import io.github.classgraph.FieldInfo;
 import io.github.classgraph.MethodInfo;
 import io.github.classgraph.ScanResult;
@@ -230,20 +231,35 @@ public abstract class EEAGenerator {
       if (memberInfo instanceof MethodInfo) {
          final MethodInfo methodInfo = (MethodInfo) memberInfo;
 
-         // mark the parameter of single-parameter methods as @NonNull,
-         // if the class name matches "*Listener" and the parameter type name matches "*Event"
+         /*
+          * mark the parameter of Comparable#compareTo(Object) as @NonNull.
+          */
+         if (classInfo.implementsInterface("java.lang.Comparable") //
+               && !methodInfo.isStatic() // non-static
+               && member.originalSignature.value.endsWith(")I") // returns Integer
+               && methodInfo.isPublic() //
+               && methodInfo.getParameterInfo().length == 1 // only 1 parameter
+               && methodInfo.getParameterInfo()[0].getTypeDescriptor() instanceof ClassRefTypeSignature)
+            // (Lcom/example/Entity;)I -> (L1com/example/Entity;)I
+            return new ValueWithComment(insert(member.originalSignature.value, 2, "1"), "");
+
+         /*
+          * mark the parameter of single-parameter void methods as @NonNull,
+          * if the class name matches "*Listener" and the parameter type name matches "*Event"
+          */
          if (classInfo.isInterface() //
                && classInfo.getName().endsWith("Listener") //
                && !methodInfo.isStatic() // non-static
                && member.originalSignature.value.endsWith(")V") // returns void
                && methodInfo.getParameterInfo().length == 1 // only 1 parameter
                && methodInfo.getParameterInfo()[0].getTypeDescriptor().toString().endsWith("Event"))
-
             // (Ljava/lang/String;)V -> (L1java/lang/String;)V
             return new ValueWithComment(insert(member.originalSignature.value, 2, "1"), "");
 
-         // mark the parameter of single-parmeter methods as @NonNull
-         // with signature matching: void (add|remove)*Listener(*Listener)
+         /*
+          * mark the parameter of single-parmeter methods as @NonNull
+          * with signature matching: void (add|remove)*Listener(*Listener)
+          */
          if (!methodInfo.isStatic() // non-static
                && (methodInfo.getName().startsWith("add") || methodInfo.getName().startsWith("remove")) //
                && methodInfo.getName().endsWith("Listener") //
