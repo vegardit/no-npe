@@ -29,7 +29,7 @@ getAnnotation
  <A::Ljava/lang/annotation/Annotation;>(L1java/lang/Class<TA;>;)T0A;
 getAnnotations
  ()[Ljava/lang/annotation/Annotation;
- ()[1L1java/lang/annotation/Annotation;
+ ()[1L1java/lang/annotation/Annotation; # @Inherited(java.lang.reflect.AnnotatedElement)
 getAnnotationsByType
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)[TA;
  <A::Ljava/lang/annotation/Annotation;>(L1java/lang/Class<TA;>;)[1T1A;
@@ -56,7 +56,7 @@ getDeclaredAnnotation
  <A::Ljava/lang/annotation/Annotation;>(L1java/lang/Class<TA;>;)T0A;
 getDeclaredAnnotations
  ()[Ljava/lang/annotation/Annotation;
- ()[1L1java/lang/annotation/Annotation;
+ ()[1L1java/lang/annotation/Annotation; # @Inherited(java.lang.reflect.AnnotatedElement)
 getDeclaredAnnotationsByType
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)[TA;
  <A::Ljava/lang/annotation/Annotation;>(L1java/lang/Class<TA;>;)[1T1A;
@@ -155,13 +155,13 @@ getSuperclass
  ()L0java/lang/Class<-TT;>;
 getTypeName
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.reflect.Type)
 getTypeParameters
  ()[Ljava/lang/reflect/TypeVariable<Ljava/lang/Class<TT;>;>;
  ()[1L1java/lang/reflect/TypeVariable<Ljava/lang/Class<TT;>;>;
 isAnnotationPresent
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
- (L1java/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (L1java/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z # @Inherited(java.lang.reflect.AnnotatedElement)
 isAssignableFrom
  (Ljava/lang/Class<*>;)Z
  (L1java/lang/Class<*>;)Z
@@ -173,7 +173,7 @@ isNestmateOf
  (L1java/lang/Class<*>;)Z
 newInstance
  ()TT;
- ()TT;
+ ()T1T;
 toGenericString
  ()Ljava/lang/String;
  ()L1java/lang/String;
