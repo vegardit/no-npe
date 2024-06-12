@@ -87,31 +87,31 @@ PREF_DELETE_CONFIGS_ON_PROJECT_DELETE
 
 exec
  ([Ljava/lang/String;Ljava/io/File;)Ljava/lang/Process;
- ([Ljava/lang/String;Ljava/io/File;)Ljava/lang/Process;
+ ([1Ljava/lang/String;L0java/io/File;)L1java/lang/Process;
 exec
  ([Ljava/lang/String;Ljava/io/File;[Ljava/lang/String;)Ljava/lang/Process;
- ([Ljava/lang/String;Ljava/io/File;[Ljava/lang/String;)Ljava/lang/Process;
+ ([1Ljava/lang/String;L0java/io/File;[0Ljava/lang/String;)L1java/lang/Process;
 exec
  ([Ljava/lang/String;Ljava/io/File;[Ljava/lang/String;Z)Ljava/lang/Process;
- ([Ljava/lang/String;Ljava/io/File;[Ljava/lang/String;Z)Ljava/lang/Process;
+ ([L1java/lang/String;L0java/io/File;[0Ljava/lang/String;Z)L1java/lang/Process;
 getAdapter
  (Ljava/lang/Object;Ljava/lang/Class<*>;)Ljava/lang/Object;
- (Ljava/lang/Object;Ljava/lang/Class<*>;)Ljava/lang/Object;
+ (L0java/lang/Object;L1java/lang/Class<*>;)L0java/lang/Object;
 getDefault
  ()Lorg/eclipse/debug/core/DebugPlugin;
  ()Lorg/eclipse/debug/core/DebugPlugin;
 getDefaultStructureType
  ([Lorg/eclipse/debug/core/ILogicalStructureType;)Lorg/eclipse/debug/core/ILogicalStructureType;
- ([Lorg/eclipse/debug/core/ILogicalStructureType;)Lorg/eclipse/debug/core/ILogicalStructureType;
+ ([1Lorg/eclipse/debug/core/ILogicalStructureType;)L0org/eclipse/debug/core/ILogicalStructureType;
 getLogicalStructureTypes
  (Lorg/eclipse/debug/core/model/IValue;)[Lorg/eclipse/debug/core/ILogicalStructureType;
- (Lorg/eclipse/debug/core/model/IValue;)[Lorg/eclipse/debug/core/ILogicalStructureType;
+ (Lorg/eclipse/debug/core/model/IValue;)[1L1org/eclipse/debug/core/ILogicalStructureType;
 getStepFilters
  (Ljava/lang/String;)[Lorg/eclipse/debug/core/model/IStepFilter;
- (Ljava/lang/String;)[Lorg/eclipse/debug/core/model/IStepFilter;
+ (Ljava/lang/String;)[1L1org/eclipse/debug/core/model/IStepFilter;
 getUniqueIdentifier
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 log
  (Ljava/lang/Throwable;)V
  (Ljava/lang/Throwable;)V
@@ -129,19 +129,19 @@ newDocument
  ()Lorg/w3c/dom/Document;
 newProcess
  (Lorg/eclipse/debug/core/ILaunch;Ljava/lang/Process;Ljava/lang/String;)Lorg/eclipse/debug/core/model/IProcess;
- (Lorg/eclipse/debug/core/ILaunch;Ljava/lang/Process;Ljava/lang/String;)Lorg/eclipse/debug/core/model/IProcess;
+ (L1org/eclipse/debug/core/ILaunch;L1java/lang/Process;Ljava/lang/String;)L1org/eclipse/debug/core/model/IProcess;
 newProcess
  (Lorg/eclipse/debug/core/ILaunch;Ljava/lang/Process;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/debug/core/model/IProcess;
- (Lorg/eclipse/debug/core/ILaunch;Ljava/lang/Process;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)Lorg/eclipse/debug/core/model/IProcess;
+ (L1org/eclipse/debug/core/ILaunch;L1java/lang/Process;Ljava/lang/String;L0java/util/Map<Ljava/lang/String;Ljava/lang/String;>;)L1org/eclipse/debug/core/model/IProcess;
 parseArguments
  (Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;)[Ljava/lang/String;
+ (L0java/lang/String;)[1L1java/lang/String;
 parseDocument
  (Ljava/lang/String;)Lorg/w3c/dom/Element;
  (Ljava/lang/String;)Lorg/w3c/dom/Element;
 renderArguments
  ([Ljava/lang/String;[I)Ljava/lang/String;
- ([Ljava/lang/String;[I)Ljava/lang/String;
+ ([1Ljava/lang/String;[I)L1java/lang/String;
 serializeDocument
  (Lorg/w3c/dom/Document;)Ljava/lang/String;
  (Lorg/w3c/dom/Document;)Ljava/lang/String;
@@ -150,38 +150,38 @@ setDefaultStructureType
  ([Lorg/eclipse/debug/core/ILogicalStructureType;Lorg/eclipse/debug/core/ILogicalStructureType;)V
 splitArguments
  (Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;)[Ljava/lang/String;
+ (L0java/lang/String;)[1L1java/lang/String;
 
 addDebugEventFilter
  (Lorg/eclipse/debug/core/IDebugEventFilter;)V
- (Lorg/eclipse/debug/core/IDebugEventFilter;)V
+ (L1org/eclipse/debug/core/IDebugEventFilter;)V
 addDebugEventListener
  (Lorg/eclipse/debug/core/IDebugEventSetListener;)V
  (L1org/eclipse/debug/core/IDebugEventSetListener;)V
 asyncExec
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V
 fireDebugEventSet
  ([Lorg/eclipse/debug/core/DebugEvent;)V
- ([Lorg/eclipse/debug/core/DebugEvent;)V
+ ([1Lorg/eclipse/debug/core/DebugEvent;)V
 getBreakpointManager
  ()Lorg/eclipse/debug/core/IBreakpointManager;
- ()Lorg/eclipse/debug/core/IBreakpointManager;
+ ()L1org/eclipse/debug/core/IBreakpointManager;
 getExpressionManager
  ()Lorg/eclipse/debug/core/IExpressionManager;
- ()Lorg/eclipse/debug/core/IExpressionManager;
+ ()L1org/eclipse/debug/core/IExpressionManager;
 getLaunchManager
  ()Lorg/eclipse/debug/core/ILaunchManager;
- ()Lorg/eclipse/debug/core/ILaunchManager;
+ ()L1org/eclipse/debug/core/ILaunchManager;
 getMemoryBlockManager
  ()Lorg/eclipse/debug/core/IMemoryBlockManager;
- ()Lorg/eclipse/debug/core/IMemoryBlockManager;
+ ()L1org/eclipse/debug/core/IMemoryBlockManager;
 getStatusHandler
  (Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/debug/core/IStatusHandler;
- (Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/debug/core/IStatusHandler;
+ (L1org/eclipse/core/runtime/IStatus;)L0org/eclipse/debug/core/IStatusHandler;
 removeDebugEventFilter
  (Lorg/eclipse/debug/core/IDebugEventFilter;)V
- (Lorg/eclipse/debug/core/IDebugEventFilter;)V
+ (L1org/eclipse/debug/core/IDebugEventFilter;)V
 removeDebugEventListener
  (Lorg/eclipse/debug/core/IDebugEventSetListener;)V
  (L1org/eclipse/debug/core/IDebugEventSetListener;)V
