@@ -11,16 +11,16 @@ addDocumentRewriteSessionListener
  (L1org/eclipse/jface/text/IDocumentRewriteSessionListener;)V # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 addPosition
  (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
- (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
+ (L1java/lang/String;L1org/eclipse/jface/text/Position;)V # @Inherited(org.eclipse.jface.text.IDocument)
 addPosition
  (Lorg/eclipse/jface/text/Position;)V
- (Lorg/eclipse/jface/text/Position;)V
+ (L1org/eclipse/jface/text/Position;)V # @Inherited(org.eclipse.jface.text.IDocument)
 addPositionCategory
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.IDocument)
 addPositionUpdater
  (Lorg/eclipse/jface/text/IPositionUpdater;)V
- (Lorg/eclipse/jface/text/IPositionUpdater;)V
+ (L1org/eclipse/jface/text/IPositionUpdater;)V # @Inherited(org.eclipse.jface.text.IDocument)
 addPrenotifiedDocumentListener
  (Lorg/eclipse/jface/text/IDocumentListener;)V
  (L1org/eclipse/jface/text/IDocumentListener;)V # @Inherited(org.eclipse.jface.text.IDocument)
@@ -29,7 +29,7 @@ checkStateOfPartitioner
  (Lorg/eclipse/jface/text/IDocumentPartitioner;Ljava/lang/String;)V
 computeIndexInCategory
  (Ljava/lang/String;I)I
- (Ljava/lang/String;I)I
+ (L1java/lang/String;I)I # @Inherited(org.eclipse.jface.text.IDocument)
 computeIndexInPositionList
  (Ljava/util/List<+Lorg/eclipse/jface/text/Position;>;I)I
  (Ljava/util/List<+Lorg/eclipse/jface/text/Position;>;I)I
@@ -41,16 +41,16 @@ computeNumberOfLines
  (Ljava/lang/String;)I
 computePartitioning
  (II)[Lorg/eclipse/jface/text/ITypedRegion;
- (II)[Lorg/eclipse/jface/text/ITypedRegion;
+ (II)[L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocument)
 computePartitioning
  (Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
- (Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
+ (L1java/lang/String;IIZ)[L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
 containsPosition
  (Ljava/lang/String;II)Z
- (Ljava/lang/String;II)Z
+ (L1java/lang/String;II)Z # @Inherited(org.eclipse.jface.text.IDocument)
 containsPositionCategory
  (Ljava/lang/String;)Z
- (Ljava/lang/String;)Z
+ (L1java/lang/String;)Z # @Inherited(org.eclipse.jface.text.IDocument)
 doFireDocumentChanged
  (Lorg/eclipse/jface/text/DocumentEvent;)V
  (Lorg/eclipse/jface/text/DocumentEvent;)V
@@ -83,16 +83,16 @@ get
  (II)L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
 getActiveRewriteSession
  ()Lorg/eclipse/jface/text/DocumentRewriteSession;
- ()Lorg/eclipse/jface/text/DocumentRewriteSession;
+ ()L0org/eclipse/jface/text/DocumentRewriteSession; # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 getContentType
  (I)Ljava/lang/String;
- (I)Ljava/lang/String;
+ (I)L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
 getContentType
  (Ljava/lang/String;IZ)Ljava/lang/String;
- (Ljava/lang/String;IZ)Ljava/lang/String;
+ (L1java/lang/String;IZ)L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
 getDefaultLineDelimiter
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 getDocumentListeners
  ()Ljava/util/List<Lorg/eclipse/jface/text/IDocumentListener;>;
  ()Ljava/util/List<Lorg/eclipse/jface/text/IDocumentListener;>;
@@ -104,46 +104,46 @@ getDocumentPartitioner
  ()Lorg/eclipse/jface/text/IDocumentPartitioner;
 getDocumentPartitioner
  (Ljava/lang/String;)Lorg/eclipse/jface/text/IDocumentPartitioner;
- (Ljava/lang/String;)Lorg/eclipse/jface/text/IDocumentPartitioner;
+ (L1java/lang/String;)L0org/eclipse/jface/text/IDocumentPartitioner; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
 getDocumentPartitioningListeners
  ()Ljava/util/List<Lorg/eclipse/jface/text/IDocumentPartitioningListener;>;
  ()Ljava/util/List<Lorg/eclipse/jface/text/IDocumentPartitioningListener;>;
 getLegalContentTypes
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
 getLegalContentTypes
  (Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;)[Ljava/lang/String;
+ (L1java/lang/String;)[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
 getLegalLineDelimiters
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
 getLineDelimiter
  (I)Ljava/lang/String;
- (I)Ljava/lang/String;
+ (I)L0java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
 getLineInformation
  (I)Lorg/eclipse/jface/text/IRegion;
- (I)Lorg/eclipse/jface/text/IRegion;
+ (I)L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.IDocument)
 getLineInformationOfOffset
  (I)Lorg/eclipse/jface/text/IRegion;
- (I)Lorg/eclipse/jface/text/IRegion;
+ (I)L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.IDocument)
 getPartition
  (I)Lorg/eclipse/jface/text/ITypedRegion;
- (I)Lorg/eclipse/jface/text/ITypedRegion;
+ (I)L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocument)
 getPartition
  (Ljava/lang/String;IZ)Lorg/eclipse/jface/text/ITypedRegion;
- (Ljava/lang/String;IZ)Lorg/eclipse/jface/text/ITypedRegion;
+ (L1java/lang/String;IZ)L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
 getPartitionings
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
 getPositionCategories
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
 getPositionUpdaters
  ()[Lorg/eclipse/jface/text/IPositionUpdater;
- ()[Lorg/eclipse/jface/text/IPositionUpdater;
+ ()[1L1org/eclipse/jface/text/IPositionUpdater; # @Inherited(org.eclipse.jface.text.IDocument)
 getPositions
  (Ljava/lang/String;)[Lorg/eclipse/jface/text/Position;
- (Ljava/lang/String;)[Lorg/eclipse/jface/text/Position;
+ (L1java/lang/String;)[1L1org/eclipse/jface/text/Position; # @Inherited(org.eclipse.jface.text.IDocument)
 getPositions
  (Ljava/lang/String;IIZZ)[Lorg/eclipse/jface/text/Position;
  (Ljava/lang/String;IIZZ)[Lorg/eclipse/jface/text/Position;
@@ -155,13 +155,13 @@ getTracker
  ()Lorg/eclipse/jface/text/ILineTracker;
 insertPositionUpdater
  (Lorg/eclipse/jface/text/IPositionUpdater;I)V
- (Lorg/eclipse/jface/text/IPositionUpdater;I)V
+ (L1org/eclipse/jface/text/IPositionUpdater;I)V # @Inherited(org.eclipse.jface.text.IDocument)
 isLineInformationRepairNeeded
  (IILjava/lang/String;)Z
  (IILjava/lang/String;)Z
 registerPostNotificationReplace
  (Lorg/eclipse/jface/text/IDocumentListener;Lorg/eclipse/jface/text/IDocumentExtension$IReplace;)V
- (Lorg/eclipse/jface/text/IDocumentListener;Lorg/eclipse/jface/text/IDocumentExtension$IReplace;)V
+ (L1org/eclipse/jface/text/IDocumentListener;L1org/eclipse/jface/text/IDocumentExtension$IReplace;)V # @Inherited(org.eclipse.jface.text.IDocumentExtension)
 removeDocumentListener
  (Lorg/eclipse/jface/text/IDocumentListener;)V
  (L1org/eclipse/jface/text/IDocumentListener;)V # @Inherited(org.eclipse.jface.text.IDocument)
@@ -173,43 +173,43 @@ removeDocumentRewriteSessionListener
  (L1org/eclipse/jface/text/IDocumentRewriteSessionListener;)V # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 removePosition
  (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
- (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
+ (L1java/lang/String;L1org/eclipse/jface/text/Position;)V # @Inherited(org.eclipse.jface.text.IDocument)
 removePosition
  (Lorg/eclipse/jface/text/Position;)V
- (Lorg/eclipse/jface/text/Position;)V
+ (L1org/eclipse/jface/text/Position;)V # @Inherited(org.eclipse.jface.text.IDocument)
 removePositionCategory
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.IDocument)
 removePositionUpdater
  (Lorg/eclipse/jface/text/IPositionUpdater;)V
- (Lorg/eclipse/jface/text/IPositionUpdater;)V
+ (L1org/eclipse/jface/text/IPositionUpdater;)V # @Inherited(org.eclipse.jface.text.IDocument)
 removePrenotifiedDocumentListener
  (Lorg/eclipse/jface/text/IDocumentListener;)V
  (L1org/eclipse/jface/text/IDocumentListener;)V # @Inherited(org.eclipse.jface.text.IDocument)
 replace
  (IILjava/lang/String;)V
- (IILjava/lang/String;)V
+ (IIL1java/lang/String;)V # @Inherited(org.eclipse.jface.text.IDocument)
 replace
  (IILjava/lang/String;J)V
- (IILjava/lang/String;J)V
+ (IIL1java/lang/String;J)V # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 search
  (ILjava/lang/String;ZZZ)I
- (ILjava/lang/String;ZZZ)I
+ (IL1java/lang/String;ZZZ)I # @Inherited(org.eclipse.jface.text.IDocument)
 set
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.IDocument)
 set
  (Ljava/lang/String;J)V
- (Ljava/lang/String;J)V
+ (L1java/lang/String;J)V # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 setDocumentPartitioner
  (Ljava/lang/String;Lorg/eclipse/jface/text/IDocumentPartitioner;)V
- (Ljava/lang/String;Lorg/eclipse/jface/text/IDocumentPartitioner;)V
+ (L1java/lang/String;L0org/eclipse/jface/text/IDocumentPartitioner;)V # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
 setDocumentPartitioner
  (Lorg/eclipse/jface/text/IDocumentPartitioner;)V
  (Lorg/eclipse/jface/text/IDocumentPartitioner;)V
 setInitialLineDelimiter
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 setLineTracker
  (Lorg/eclipse/jface/text/ILineTracker;)V
  (Lorg/eclipse/jface/text/ILineTracker;)V
@@ -218,13 +218,13 @@ setTextStore
  (Lorg/eclipse/jface/text/ITextStore;)V
 startRewriteSession
  (Lorg/eclipse/jface/text/DocumentRewriteSessionType;)Lorg/eclipse/jface/text/DocumentRewriteSession;
- (Lorg/eclipse/jface/text/DocumentRewriteSessionType;)Lorg/eclipse/jface/text/DocumentRewriteSession;
+ (L1org/eclipse/jface/text/DocumentRewriteSessionType;)L1org/eclipse/jface/text/DocumentRewriteSession; # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 startRewriteSessionOnPartitioners
  (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
  (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
 stopRewriteSession
  (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
- (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
+ (L1org/eclipse/jface/text/DocumentRewriteSession;)V # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 stopRewriteSessionOnPartitioners
  (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
  (Lorg/eclipse/jface/text/DocumentRewriteSession;)V

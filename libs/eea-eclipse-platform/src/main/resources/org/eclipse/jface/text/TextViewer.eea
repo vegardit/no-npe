@@ -73,7 +73,7 @@ _internalGetVisibleRegion
  ()Lorg/eclipse/jface/text/IRegion;
 addPainter
  (Lorg/eclipse/jface/text/IPainter;)V
- (Lorg/eclipse/jface/text/IPainter;)V
+ (L1org/eclipse/jface/text/IPainter;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
 addPostSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
  (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.IPostSelectionProvider)
@@ -91,10 +91,10 @@ addViewportListener
  (L1org/eclipse/jface/text/IViewportListener;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 appendVerifyKeyListener
  (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
- (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+ (L1org/eclipse/swt/custom/VerifyKeyListener;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension)
 changeTextPresentation
  (Lorg/eclipse/jface/text/TextPresentation;Z)V
- (Lorg/eclipse/jface/text/TextPresentation;Z)V
+ (L0org/eclipse/jface/text/TextPresentation;Z)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 createControl
  (Lorg/eclipse/swt/widgets/Composite;I)V
  (Lorg/eclipse/swt/widgets/Composite;I)V
@@ -136,13 +136,13 @@ freeSlaveDocument
  (Lorg/eclipse/jface/text/IDocument;)V
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.text.ITextViewerExtension)
 getCurrentTextHover
  ()Lorg/eclipse/jface/text/ITextHover;
- ()Lorg/eclipse/jface/text/ITextHover;
+ ()L0org/eclipse/jface/text/ITextHover; # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
 getDocument
  ()Lorg/eclipse/jface/text/IDocument;
- ()Lorg/eclipse/jface/text/IDocument;
+ ()L0org/eclipse/jface/text/IDocument; # @Inherited(org.eclipse.jface.text.ITextViewer)
 getDocumentPartitioning
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -154,16 +154,16 @@ getFindReplaceDocumentAdapter
  ()Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
 getFindReplaceTarget
  ()Lorg/eclipse/jface/text/IFindReplaceTarget;
- ()Lorg/eclipse/jface/text/IFindReplaceTarget;
+ ()L1org/eclipse/jface/text/IFindReplaceTarget; # @Inherited(org.eclipse.jface.text.ITextViewer)
 getHoverEventLocation
  ()Lorg/eclipse/swt/graphics/Point;
- ()Lorg/eclipse/swt/graphics/Point;
+ ()L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
 getInput
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
 getLastKnownSelection
  ()Lorg/eclipse/jface/text/ITextSelection;
- ()Lorg/eclipse/jface/text/ITextSelection;
+ ()L1org/eclipse/jface/text/ITextSelection; # @Inherited(org.eclipse.jface.text.ITextViewerExtension9)
 getModelCoverage
  ()Lorg/eclipse/jface/text/IRegion;
  ()Lorg/eclipse/jface/text/IRegion;
@@ -172,19 +172,19 @@ getPaintManager
  ()Lorg/eclipse/jface/text/PaintManager;
 getRegisteredSupports
  ()[Lorg/eclipse/jface/text/IEditingSupport;
- ()[Lorg/eclipse/jface/text/IEditingSupport;
+ ()[1L1org/eclipse/jface/text/IEditingSupport; # @Inherited(org.eclipse.jface.text.IEditingSupportRegistry)
 getRewriteTarget
  ()Lorg/eclipse/jface/text/IRewriteTarget;
- ()Lorg/eclipse/jface/text/IRewriteTarget;
+ ()L1org/eclipse/jface/text/IRewriteTarget; # @Inherited(org.eclipse.jface.text.ITextViewerExtension)
 getSelectedRange
  ()Lorg/eclipse/swt/graphics/Point;
- ()Lorg/eclipse/swt/graphics/Point;
+ ()L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.ITextViewer)
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
  ()Lorg/eclipse/jface/viewers/ISelection;
 getSelectionProvider
  ()Lorg/eclipse/jface/viewers/ISelectionProvider;
- ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+ ()L1org/eclipse/jface/viewers/ISelectionProvider; # @Inherited(org.eclipse.jface.text.ITextViewer)
 getSlaveDocumentManager
  ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
  ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
@@ -199,19 +199,19 @@ getTextHoveringController
  ()Lorg/eclipse/jface/text/AbstractInformationControlManager;
 getTextOperationTarget
  ()Lorg/eclipse/jface/text/ITextOperationTarget;
- ()Lorg/eclipse/jface/text/ITextOperationTarget;
+ ()L1org/eclipse/jface/text/ITextOperationTarget; # @Inherited(org.eclipse.jface.text.ITextViewer)
 getTextWidget
  ()Lorg/eclipse/swt/custom/StyledText;
  ()Lorg/eclipse/swt/custom/StyledText;
 getUndoManager
  ()Lorg/eclipse/jface/text/IUndoManager;
- ()Lorg/eclipse/jface/text/IUndoManager;
+ ()L0org/eclipse/jface/text/IUndoManager; # @Inherited(org.eclipse.jface.text.ITextViewerExtension6)
 getVisibleDocument
  ()Lorg/eclipse/jface/text/IDocument;
  ()Lorg/eclipse/jface/text/IDocument;
 getVisibleRegion
  ()Lorg/eclipse/jface/text/IRegion;
- ()Lorg/eclipse/jface/text/IRegion;
+ ()L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.ITextViewer)
 getWidthInPixels
  (Ljava/lang/String;)I
  (Ljava/lang/String;)I
@@ -247,31 +247,31 @@ modelStyleRange2WidgetStyleRange
  (Lorg/eclipse/swt/custom/StyleRange;)Lorg/eclipse/swt/custom/StyleRange;
 prependAutoEditStrategy
  (Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
- (Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
+ (L1org/eclipse/jface/text/IAutoEditStrategy;L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
 prependVerifyKeyListener
  (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
- (Lorg/eclipse/swt/custom/VerifyKeyListener;)V
+ (L1org/eclipse/swt/custom/VerifyKeyListener;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension)
 print
  (Lorg/eclipse/swt/custom/StyledTextPrintOptions;)V
- (Lorg/eclipse/swt/custom/StyledTextPrintOptions;)V
+ (L1org/eclipse/swt/custom/StyledTextPrintOptions;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension8)
 register
  (Lorg/eclipse/jface/text/IEditingSupport;)V
- (Lorg/eclipse/jface/text/IEditingSupport;)V
+ (L1org/eclipse/jface/text/IEditingSupport;)V # @Inherited(org.eclipse.jface.text.IEditingSupportRegistry)
 releaseWidgetToken
  (Lorg/eclipse/jface/text/IWidgetTokenKeeper;)V
  (Lorg/eclipse/jface/text/IWidgetTokenKeeper;)V
 removeAutoEditStrategy
  (Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
- (Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
+ (L1org/eclipse/jface/text/IAutoEditStrategy;L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
 removePainter
  (Lorg/eclipse/jface/text/IPainter;)V
- (Lorg/eclipse/jface/text/IPainter;)V
+ (L1org/eclipse/jface/text/IPainter;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
 removePostSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
  (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.IPostSelectionProvider)
 removeTextHovers
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
 removeTextInputListener
  (Lorg/eclipse/jface/text/ITextInputListener;)V
  (L1org/eclipse/jface/text/ITextInputListener;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
@@ -301,37 +301,37 @@ setAutoEditStrategies
  ([Lorg/eclipse/jface/text/IAutoEditStrategy;Ljava/lang/String;)V
 setAutoIndentStrategy
  (Lorg/eclipse/jface/text/IAutoIndentStrategy;Ljava/lang/String;)V
- (Lorg/eclipse/jface/text/IAutoIndentStrategy;Ljava/lang/String;)V
+ (L0org/eclipse/jface/text/IAutoIndentStrategy;L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setDefaultPrefixes
  ([Ljava/lang/String;Ljava/lang/String;)V
- ([Ljava/lang/String;Ljava/lang/String;)V
+ ([0Ljava/lang/String;L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setDocument
  (Lorg/eclipse/jface/text/IDocument;)V
- (Lorg/eclipse/jface/text/IDocument;)V
+ (L0org/eclipse/jface/text/IDocument;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setDocument
  (Lorg/eclipse/jface/text/IDocument;II)V
- (Lorg/eclipse/jface/text/IDocument;II)V
+ (L0org/eclipse/jface/text/IDocument;II)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setDocumentPartitioning
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 setEventConsumer
  (Lorg/eclipse/jface/text/IEventConsumer;)V
- (Lorg/eclipse/jface/text/IEventConsumer;)V
+ (L0org/eclipse/jface/text/IEventConsumer;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setHoverControlCreator
  (Lorg/eclipse/jface/text/IInformationControlCreator;)V
  (Lorg/eclipse/jface/text/IInformationControlCreator;)V
 setHoverEnrichMode
  (Lorg/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V
- (Lorg/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V
+ (L1org/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension8)
 setHyperlinkDetectors
  ([Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;I)V
- ([Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;I)V
+ ([0Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;I)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension6)
 setHyperlinkPresenter
  (Lorg/eclipse/jface/text/hyperlink/IHyperlinkPresenter;)V
  (Lorg/eclipse/jface/text/hyperlink/IHyperlinkPresenter;)V
 setIndentPrefixes
  ([Ljava/lang/String;Ljava/lang/String;)V
- ([Ljava/lang/String;Ljava/lang/String;)V
+ ([0Ljava/lang/String;L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setInput
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
@@ -340,7 +340,7 @@ setSelection
  (Lorg/eclipse/jface/viewers/ISelection;Z)V
 setTabsToSpacesConverter
  (Lorg/eclipse/jface/text/IAutoEditStrategy;)V
- (Lorg/eclipse/jface/text/IAutoEditStrategy;)V
+ (L0org/eclipse/jface/text/IAutoEditStrategy;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension7)
 setTextColor
  (Lorg/eclipse/swt/graphics/Color;)V
  (Lorg/eclipse/swt/graphics/Color;)V
@@ -349,16 +349,16 @@ setTextColor
  (Lorg/eclipse/swt/graphics/Color;IIZ)V
 setTextDoubleClickStrategy
  (Lorg/eclipse/jface/text/ITextDoubleClickStrategy;Ljava/lang/String;)V
- (Lorg/eclipse/jface/text/ITextDoubleClickStrategy;Ljava/lang/String;)V
+ (L0org/eclipse/jface/text/ITextDoubleClickStrategy;L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setTextHover
  (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;)V
- (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;)V
+ (L0org/eclipse/jface/text/ITextHover;L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setTextHover
  (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;I)V
- (Lorg/eclipse/jface/text/ITextHover;Ljava/lang/String;I)V
+ (L0org/eclipse/jface/text/ITextHover;L1java/lang/String;I)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
 setUndoManager
  (Lorg/eclipse/jface/text/IUndoManager;)V
- (Lorg/eclipse/jface/text/IUndoManager;)V
+ (L0org/eclipse/jface/text/IUndoManager;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setVisibleDocument
  (Lorg/eclipse/jface/text/IDocument;)V
  (Lorg/eclipse/jface/text/IDocument;)V

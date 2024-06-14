@@ -20,7 +20,7 @@ createVisualAnnotationModel
  (Lorg/eclipse/jface/text/source/IAnnotationModel;)Lorg/eclipse/jface/text/source/IAnnotationModel;
 exposeModelRange
  (Lorg/eclipse/jface/text/IRegion;)Z
- (Lorg/eclipse/jface/text/IRegion;)Z
+ (L1org/eclipse/jface/text/IRegion;)Z # @Inherited(org.eclipse.jface.text.ITextViewerExtension5)
 findAndSelect
  (ILjava/lang/String;ZZZZ)I
  (ILjava/lang/String;ZZZZ)I
@@ -29,7 +29,7 @@ findAndSelectInRange
  (ILjava/lang/String;ZZZIIZ)I
 getCoveredModelRanges
  (Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/IRegion;
- (Lorg/eclipse/jface/text/IRegion;)[Lorg/eclipse/jface/text/IRegion;
+ (L1org/eclipse/jface/text/IRegion;)[0L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.ITextViewerExtension5)
 getFindReplaceDocumentAdapter
  ()Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
  ()Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
@@ -38,7 +38,7 @@ getProjectionAnnotationModel
  ()Lorg/eclipse/jface/text/source/projection/ProjectionAnnotationModel;
 getVisibleRegion
  ()Lorg/eclipse/jface/text/IRegion;
- ()Lorg/eclipse/jface/text/IRegion;
+ ()L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.TextViewer)
 handleVerifyEvent
  (Lorg/eclipse/swt/events/VerifyEvent;)V
  (Lorg/eclipse/swt/events/VerifyEvent;)V

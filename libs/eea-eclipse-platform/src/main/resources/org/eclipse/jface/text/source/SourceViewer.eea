@@ -76,7 +76,7 @@ getContentAssistantFacade
  ()Lorg/eclipse/jface/text/source/ContentAssistantFacade;
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.text.TextViewer)
 getCurrentAnnotationHover
  ()Lorg/eclipse/jface/text/source/IAnnotationHover;
  ()Lorg/eclipse/jface/text/source/IAnnotationHover;
@@ -112,10 +112,10 @@ setCodeMiningProviders
  ([Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;)V
 setDocument
  (Lorg/eclipse/jface/text/IDocument;)V
- (Lorg/eclipse/jface/text/IDocument;)V
+ (L0org/eclipse/jface/text/IDocument;)V # @Inherited(org.eclipse.jface.text.TextViewer)
 setDocument
  (Lorg/eclipse/jface/text/IDocument;II)V
- (Lorg/eclipse/jface/text/IDocument;II)V
+ (L0org/eclipse/jface/text/IDocument;II)V # @Inherited(org.eclipse.jface.text.TextViewer)
 setDocument
  (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/source/IAnnotationModel;)V
  (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/source/IAnnotationModel;)V
@@ -124,7 +124,7 @@ setDocument
  (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/source/IAnnotationModel;II)V
 setHoverEnrichMode
  (Lorg/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V
- (Lorg/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V
+ (L1org/eclipse/jface/text/ITextViewerExtension8$EnrichMode;)V # @Inherited(org.eclipse.jface.text.TextViewer)
 setOverviewRulerAnnotationHover
  (Lorg/eclipse/jface/text/source/IAnnotationHover;)V
  (Lorg/eclipse/jface/text/source/IAnnotationHover;)V

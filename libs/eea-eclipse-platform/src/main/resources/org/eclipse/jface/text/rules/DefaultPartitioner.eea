@@ -22,49 +22,49 @@ fScanner
  (Lorg/eclipse/jface/text/rules/IPartitionTokenScanner;[Ljava/lang/String;)V
 computePartitioning
  (II)[Lorg/eclipse/jface/text/ITypedRegion;
- (II)[Lorg/eclipse/jface/text/ITypedRegion;
+ (II)[1L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentPartitioner)
 computePartitioning
  (IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
- (IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
+ (IIZ)[L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension2)
 connect
  (Lorg/eclipse/jface/text/IDocument;)V
- (Lorg/eclipse/jface/text/IDocument;)V
+ (L1org/eclipse/jface/text/IDocument;)V # @Inherited(org.eclipse.jface.text.IDocumentPartitioner)
 connect
  (Lorg/eclipse/jface/text/IDocument;Z)V
- (Lorg/eclipse/jface/text/IDocument;Z)V
+ (L1org/eclipse/jface/text/IDocument;Z)V # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension3)
 documentAboutToBeChanged
  (Lorg/eclipse/jface/text/DocumentEvent;)V
- (Lorg/eclipse/jface/text/DocumentEvent;)V
+ (L1org/eclipse/jface/text/DocumentEvent;)V # @Inherited(org.eclipse.jface.text.IDocumentPartitioner)
 documentChanged
  (Lorg/eclipse/jface/text/DocumentEvent;)Z
- (Lorg/eclipse/jface/text/DocumentEvent;)Z
+ (L1org/eclipse/jface/text/DocumentEvent;)Z # @Inherited(org.eclipse.jface.text.IDocumentPartitioner)
 documentChanged2
  (Lorg/eclipse/jface/text/DocumentEvent;)Lorg/eclipse/jface/text/IRegion;
- (Lorg/eclipse/jface/text/DocumentEvent;)Lorg/eclipse/jface/text/IRegion;
+ (L1org/eclipse/jface/text/DocumentEvent;)L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension)
 findClosestPosition
  (I)Lorg/eclipse/jface/text/TypedPosition;
  (I)Lorg/eclipse/jface/text/TypedPosition;
 getActiveRewriteSession
  ()Lorg/eclipse/jface/text/DocumentRewriteSession;
- ()Lorg/eclipse/jface/text/DocumentRewriteSession;
+ ()L0org/eclipse/jface/text/DocumentRewriteSession; # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension3)
 getContentType
  (I)Ljava/lang/String;
- (I)Ljava/lang/String;
+ (I)L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentPartitioner)
 getContentType
  (IZ)Ljava/lang/String;
- (IZ)Ljava/lang/String;
+ (IZ)L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension2)
 getLegalContentTypes
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentPartitioner)
 getManagingPositionCategories
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[0L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension2)
 getPartition
  (I)Lorg/eclipse/jface/text/ITypedRegion;
- (I)Lorg/eclipse/jface/text/ITypedRegion;
+ (I)L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentPartitioner)
 getPartition
  (IZ)Lorg/eclipse/jface/text/ITypedRegion;
- (IZ)Lorg/eclipse/jface/text/ITypedRegion;
+ (IZ)L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension2)
 getTokenContentType
  (Lorg/eclipse/jface/text/rules/IToken;)Ljava/lang/String;
  (Lorg/eclipse/jface/text/rules/IToken;)Ljava/lang/String;
@@ -73,7 +73,7 @@ isSupportedContentType
  (Ljava/lang/String;)Z
 startRewriteSession
  (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
- (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
+ (L1org/eclipse/jface/text/DocumentRewriteSession;)V # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension3)
 stopRewriteSession
  (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
- (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
+ (L1org/eclipse/jface/text/DocumentRewriteSession;)V # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension3)

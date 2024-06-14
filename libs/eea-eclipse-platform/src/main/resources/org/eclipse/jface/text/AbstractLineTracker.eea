@@ -2,16 +2,16 @@ class org/eclipse/jface/text/AbstractLineTracker
 
 computeNumberOfLines
  (Ljava/lang/String;)I
- (Ljava/lang/String;)I
+ (L1java/lang/String;)I # @Inherited(org.eclipse.jface.text.ILineTracker)
 getLineDelimiter
  (I)Ljava/lang/String;
  (I)Ljava/lang/String;
 getLineInformation
  (I)Lorg/eclipse/jface/text/IRegion;
- (I)Lorg/eclipse/jface/text/IRegion;
+ (I)L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.ILineTracker)
 getLineInformationOfOffset
  (I)Lorg/eclipse/jface/text/IRegion;
- (I)Lorg/eclipse/jface/text/IRegion;
+ (I)L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.ILineTracker)
 nextDelimiterInfo
  (Ljava/lang/String;I)Lorg/eclipse/jface/text/AbstractLineTracker$DelimiterInfo;
  (Ljava/lang/String;I)Lorg/eclipse/jface/text/AbstractLineTracker$DelimiterInfo;
