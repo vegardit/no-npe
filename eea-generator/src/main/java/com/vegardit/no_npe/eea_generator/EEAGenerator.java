@@ -232,6 +232,19 @@ public abstract class EEAGenerator {
          final MethodInfo methodInfo = (MethodInfo) memberInfo;
 
          /*
+          * mark the return value of builder methods as @NonNull.
+          */
+         if (classInfo.getName().endsWith("Builder") //
+               && !methodInfo.isStatic() // non-static
+               && methodInfo.isPublic() //
+               && methodInfo.getTypeDescriptor().getResultType() instanceof ClassRefTypeSignature //
+               && (methodInfo.getName().equals("build") && methodInfo.getParameterInfo().length == 0 //
+                     || Objects.equals(((ClassRefTypeSignature) methodInfo.getTypeDescriptor().getResultType()).getClassInfo(), classInfo)))
+            // (...)Lcom/example/MyBuilder -> (...)L1com/example/MyBuilder;
+            return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2, "1"),
+               "");
+
+         /*
           * mark the parameter of Comparable#compareTo(Object) as @NonNull.
           */
          if (classInfo.implementsInterface("java.lang.Comparable") //
