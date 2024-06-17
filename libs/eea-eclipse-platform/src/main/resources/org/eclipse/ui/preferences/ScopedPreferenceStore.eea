@@ -2,10 +2,10 @@ class org/eclipse/ui/preferences/ScopedPreferenceStore
 
 <init>
  (Lorg/eclipse/core/runtime/preferences/IScopeContext;Ljava/lang/String;)V
- (Lorg/eclipse/core/runtime/preferences/IScopeContext;Ljava/lang/String;)V
+ (L1org/eclipse/core/runtime/preferences/IScopeContext;L1java/lang/String;)V
 <init>
  (Lorg/eclipse/core/runtime/preferences/IScopeContext;Ljava/lang/String;Ljava/lang/String;)V
- (Lorg/eclipse/core/runtime/preferences/IScopeContext;Ljava/lang/String;Ljava/lang/String;)V
+ (L1org/eclipse/core/runtime/preferences/IScopeContext;L1java/lang/String;L0java/lang/String;)V
 addPropertyChangeListener
  (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
  (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
@@ -14,43 +14,43 @@ contains
  (Ljava/lang/String;)Z
 firePropertyChangeEvent
  (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
- (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+ (L1java/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getBoolean
  (Ljava/lang/String;)Z
- (Ljava/lang/String;)Z
+ (L1java/lang/String;)Z # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getDefaultBoolean
  (Ljava/lang/String;)Z
- (Ljava/lang/String;)Z
+ (L1java/lang/String;)Z # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getDefaultDouble
  (Ljava/lang/String;)D
- (Ljava/lang/String;)D
+ (L1java/lang/String;)D # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getDefaultFloat
  (Ljava/lang/String;)F
- (Ljava/lang/String;)F
+ (L1java/lang/String;)F # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getDefaultInt
  (Ljava/lang/String;)I
- (Ljava/lang/String;)I
+ (L1java/lang/String;)I # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getDefaultLong
  (Ljava/lang/String;)J
- (Ljava/lang/String;)J
+ (L1java/lang/String;)J # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getDefaultString
  (Ljava/lang/String;)Ljava/lang/String;
  (L1java/lang/String;)L1java/lang/String; # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getDouble
  (Ljava/lang/String;)D
- (Ljava/lang/String;)D
+ (L1java/lang/String;)D # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getFloat
  (Ljava/lang/String;)F
- (Ljava/lang/String;)F
+ (L1java/lang/String;)F # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getInt
  (Ljava/lang/String;)I
- (Ljava/lang/String;)I
+ (L1java/lang/String;)I # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getLong
  (Ljava/lang/String;)J
- (Ljava/lang/String;)J
+ (L1java/lang/String;)J # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 getPreferenceNodes
  (Z)[Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
- (Z)[Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ (Z)[1L1org/eclipse/core/runtime/preferences/IEclipsePreferences;
 getString
  (Ljava/lang/String;)Ljava/lang/String;
  (L1java/lang/String;)L1java/lang/String; # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
@@ -59,49 +59,49 @@ isDefault
  (Ljava/lang/String;)Z
 putValue
  (Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;L1java/lang/String;)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 removePropertyChangeListener
  (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
  (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setDefault
  (Ljava/lang/String;D)V
- (Ljava/lang/String;D)V
+ (L1java/lang/String;D)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setDefault
  (Ljava/lang/String;F)V
- (Ljava/lang/String;F)V
+ (L1java/lang/String;F)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setDefault
  (Ljava/lang/String;I)V
- (Ljava/lang/String;I)V
+ (L1java/lang/String;I)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setDefault
  (Ljava/lang/String;J)V
- (Ljava/lang/String;J)V
+ (L1java/lang/String;J)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setDefault
  (Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;L1java/lang/String;)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setDefault
  (Ljava/lang/String;Z)V
- (Ljava/lang/String;Z)V
+ (L1java/lang/String;Z)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setSearchContexts
  ([Lorg/eclipse/core/runtime/preferences/IScopeContext;)V
- ([Lorg/eclipse/core/runtime/preferences/IScopeContext;)V
+ ([0Lorg/eclipse/core/runtime/preferences/IScopeContext;)V
 setToDefault
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setValue
  (Ljava/lang/String;D)V
- (Ljava/lang/String;D)V
+ (L1java/lang/String;D)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setValue
  (Ljava/lang/String;F)V
- (Ljava/lang/String;F)V
+ (L1java/lang/String;F)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setValue
  (Ljava/lang/String;I)V
- (Ljava/lang/String;I)V
+ (L1java/lang/String;I)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setValue
  (Ljava/lang/String;J)V
- (Ljava/lang/String;J)V
+ (L1java/lang/String;J)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setValue
  (Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;L1java/lang/String;)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
 setValue
  (Ljava/lang/String;Z)V
- (Ljava/lang/String;Z)V
+ (L1java/lang/String;Z)V # @Inherited(org.eclipse.jface.preference.IPreferenceStore)
