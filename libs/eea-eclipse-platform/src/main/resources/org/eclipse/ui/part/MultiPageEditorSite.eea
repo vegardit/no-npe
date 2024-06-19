@@ -32,7 +32,7 @@ getNestedEditorSite
  ()Lorg/eclipse/ui/IWorkbenchPartSite;
 getPage
  ()Lorg/eclipse/ui/IWorkbenchPage;
- ()Lorg/eclipse/ui/IWorkbenchPage;
+ ()L1org/eclipse/ui/IWorkbenchPage; # @Inherited(org.eclipse.ui.IWorkbenchSite)
 getPart
  ()Lorg/eclipse/ui/IWorkbenchPart;
  ()Lorg/eclipse/ui/IWorkbenchPart;
@@ -44,16 +44,16 @@ getRegisteredName
  ()Ljava/lang/String;
 getSelectionProvider
  ()Lorg/eclipse/jface/viewers/ISelectionProvider;
- ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+ ()L0org/eclipse/jface/viewers/ISelectionProvider; # @Inherited(org.eclipse.ui.IWorkbenchSite)
 getService
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.services.IServiceLocator)
 getShell
  ()Lorg/eclipse/swt/widgets/Shell;
- ()Lorg/eclipse/swt/widgets/Shell;
+ ()L1org/eclipse/swt/widgets/Shell; # @Inherited(org.eclipse.ui.IWorkbenchSite)
 getWorkbenchWindow
  ()Lorg/eclipse/ui/IWorkbenchWindow;
- ()Lorg/eclipse/ui/IWorkbenchWindow;
+ ()L1org/eclipse/ui/IWorkbenchWindow; # @Inherited(org.eclipse.ui.IWorkbenchSite)
 handlePostSelectionChanged
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
@@ -77,7 +77,7 @@ registerContextMenu
  (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;Z)V
 setSelectionProvider
  (Lorg/eclipse/jface/viewers/ISelectionProvider;)V
- (Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+ (L0org/eclipse/jface/viewers/ISelectionProvider;)V # @Inherited(org.eclipse.ui.IWorkbenchSite)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)
