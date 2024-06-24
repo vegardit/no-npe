@@ -27,7 +27,7 @@ getName
  ()L1java/lang/String; # @Inherited(org.eclipse.ui.IEditorInput)
 getPath
  ()Lorg/eclipse/core/runtime/IPath;
- ()Lorg/eclipse/core/runtime/IPath;
+ ()L1org/eclipse/core/runtime/IPath; # @Inherited(org.eclipse.ui.IPathEditorInput)
 getPersistable
  ()Lorg/eclipse/ui/IPersistableElement;
  ()L0org/eclipse/ui/IPersistableElement; # @Inherited(org.eclipse.ui.IEditorInput)
@@ -39,7 +39,7 @@ getToolTipText
  ()L1java/lang/String; # @Inherited(org.eclipse.ui.IEditorInput)
 getURI
  ()Ljava/net/URI;
- ()Ljava/net/URI;
+ ()L1java/net/URI; # @Inherited(org.eclipse.ui.IURIEditorInput)
 saveState
  (Lorg/eclipse/ui/IMemento;)V
  (Lorg/eclipse/ui/IMemento;)V
