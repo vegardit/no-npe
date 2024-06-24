@@ -9,6 +9,9 @@ addDisposeListener
 addListener
  (ILorg/eclipse/swt/widgets/Listener;)V
  (IL1org/eclipse/swt/widgets/Listener;)V
+addTypedListener
+ (Ljava/util/EventListener;[I)V
+ (L1java/util/EventListener;[1I)V
 getData
  ()Ljava/lang/Object;
  ()L0java/lang/Object;
@@ -21,6 +24,9 @@ getDisplay
 getListeners
  (I)[Lorg/eclipse/swt/widgets/Listener;
  (I)[L1org/eclipse/swt/widgets/Listener;
+getTypedListeners
+ <L::Ljava/util/EventListener;>(ILjava/lang/Class<TL;>;)Ljava/util/stream/Stream<TL;>;
+ <L::Ljava/util/EventListener;>(IL1java/lang/Class<TL;>;)L1java/util/stream/Stream<TL;>;
 notifyListeners
  (ILorg/eclipse/swt/widgets/Event;)V
  (IL0org/eclipse/swt/widgets/Event;)V
@@ -33,6 +39,9 @@ removeListener
 removeListener
  (ILorg/eclipse/swt/widgets/Listener;)V
  (IL1org/eclipse/swt/widgets/Listener;)V
+removeTypedListener
+ (ILjava/util/EventListener;)V
+ (IL1java/util/EventListener;)V
 setData
  (Ljava/lang/Object;)V
  (L0java/lang/Object;)V
