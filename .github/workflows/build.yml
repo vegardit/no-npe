@@ -65,7 +65,13 @@ jobs:
 
 
     steps:
-    - name: Show environment variables
+    - name: "Show: GitHub context"
+      env:
+        GITHUB_CONTEXT: ${{ toJSON(github) }}
+      run: echo $GITHUB_CONTEXT
+
+
+    - name: "Show: environment variables"
       run: env | sort
 
 
@@ -95,6 +101,12 @@ jobs:
         distribution: temurin
         java-version: 21
     - run: echo "JAVA21_HOME=$JAVA_HOME" >> $GITHUB_ENV
+
+
+    - name: "Install: Maven"
+      uses: stCarolas/setup-maven@v5  # https://github.com/stCarolas/setup-maven
+      with:
+        maven-version: 3.9.8
 
 
     - name: "Cache: Restore"
