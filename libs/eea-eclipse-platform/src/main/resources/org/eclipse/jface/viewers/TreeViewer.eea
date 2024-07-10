@@ -35,7 +35,7 @@ getColumnViewerOwner
  (I)Lorg/eclipse/swt/widgets/Widget;
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.viewers.Viewer)
 getExpanded
  (Lorg/eclipse/swt/widgets/Item;)Z
  (Lorg/eclipse/swt/widgets/Item;)Z
@@ -125,7 +125,7 @@ setSelection
  (Ljava/util/List<Lorg/eclipse/swt/widgets/Item;>;)V
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;Z)V
- (Lorg/eclipse/jface/viewers/ISelection;Z)V
+ (L1org/eclipse/jface/viewers/ISelection;Z)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 showItem
  (Lorg/eclipse/swt/widgets/Item;)V
  (Lorg/eclipse/swt/widgets/Item;)V

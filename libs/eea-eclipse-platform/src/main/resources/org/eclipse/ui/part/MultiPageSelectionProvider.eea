@@ -20,7 +20,7 @@ getMultiPageEditor
  ()Lorg/eclipse/ui/part/MultiPageEditorPart;
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
- ()Lorg/eclipse/jface/viewers/ISelection;
+ ()L1org/eclipse/jface/viewers/ISelection; # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 removePostSelectionChangedListener
  (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
  (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.IPostSelectionProvider)
@@ -29,4 +29,4 @@ removeSelectionChangedListener
  (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;)V
- (Lorg/eclipse/jface/viewers/ISelection;)V
+ (L1org/eclipse/jface/viewers/ISelection;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
