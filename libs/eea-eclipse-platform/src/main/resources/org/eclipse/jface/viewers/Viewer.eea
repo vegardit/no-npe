@@ -24,10 +24,10 @@ getData
  (L1java/lang/String;)L0java/lang/Object;
 getInput
  ()Ljava/lang/Object;
- ()L0java/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.eclipse.jface.viewers.IInputProvider)
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
- ()L1org/eclipse/jface/viewers/ISelection;
+ ()L1org/eclipse/jface/viewers/ISelection; # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 handleHelpRequest
  (Lorg/eclipse/swt/events/HelpEvent;)V
  (L1org/eclipse/swt/events/HelpEvent;)V
@@ -54,7 +54,7 @@ setInput
  (L0java/lang/Object;)V
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;)V
- (L1org/eclipse/jface/viewers/ISelection;)V
+ (L1org/eclipse/jface/viewers/ISelection;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;Z)V
  (L1org/eclipse/jface/viewers/ISelection;Z)V

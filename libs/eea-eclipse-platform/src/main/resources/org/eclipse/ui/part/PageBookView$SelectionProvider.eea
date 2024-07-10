@@ -11,7 +11,7 @@ addSelectionChangedListener
  (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
- ()Lorg/eclipse/jface/viewers/ISelection;
+ ()L1org/eclipse/jface/viewers/ISelection; # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 postSelectionChanged
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
@@ -26,4 +26,4 @@ selectionChanged
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;)V
- (Lorg/eclipse/jface/viewers/ISelection;)V
+ (L1org/eclipse/jface/viewers/ISelection;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)

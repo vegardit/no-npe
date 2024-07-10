@@ -136,7 +136,7 @@ freeSlaveDocument
  (Lorg/eclipse/jface/text/IDocument;)V
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.text.ITextViewerExtension)
+ ()L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.viewers.Viewer)
 getCurrentTextHover
  ()Lorg/eclipse/jface/text/ITextHover;
  ()L0org/eclipse/jface/text/ITextHover; # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
@@ -160,7 +160,7 @@ getHoverEventLocation
  ()L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
 getInput
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.eclipse.jface.viewers.Viewer)
 getLastKnownSelection
  ()Lorg/eclipse/jface/text/ITextSelection;
  ()L1org/eclipse/jface/text/ITextSelection; # @Inherited(org.eclipse.jface.text.ITextViewerExtension9)
@@ -181,7 +181,7 @@ getSelectedRange
  ()L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.ITextViewer)
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
- ()Lorg/eclipse/jface/viewers/ISelection;
+ ()L1org/eclipse/jface/viewers/ISelection; # @Inherited(org.eclipse.jface.viewers.Viewer)
 getSelectionProvider
  ()Lorg/eclipse/jface/viewers/ISelectionProvider;
  ()L1org/eclipse/jface/viewers/ISelectionProvider; # @Inherited(org.eclipse.jface.text.ITextViewer)
@@ -229,7 +229,7 @@ initializeDocumentInformationMapping
  (Lorg/eclipse/jface/text/IDocument;)V
 inputChanged
  (Ljava/lang/Object;Ljava/lang/Object;)V
- (Ljava/lang/Object;Ljava/lang/Object;)V
+ (L0java/lang/Object;L0java/lang/Object;)V # @Inherited(org.eclipse.jface.viewers.Viewer)
 modelRange2ClosestWidgetRange
  (Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/IRegion;
  (Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/IRegion;
@@ -334,10 +334,10 @@ setIndentPrefixes
  ([0Ljava/lang/String;L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.ITextViewer)
 setInput
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L0java/lang/Object;)V # @Inherited(org.eclipse.jface.viewers.Viewer)
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;Z)V
- (Lorg/eclipse/jface/viewers/ISelection;Z)V
+ (L1org/eclipse/jface/viewers/ISelection;Z)V # @Inherited(org.eclipse.jface.viewers.Viewer)
 setTabsToSpacesConverter
  (Lorg/eclipse/jface/text/IAutoEditStrategy;)V
  (L0org/eclipse/jface/text/IAutoEditStrategy;)V # @Inherited(org.eclipse.jface.text.ITextViewerExtension7)

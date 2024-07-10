@@ -30,7 +30,7 @@ getBootstrapPart
  ()Lorg/eclipse/ui/IWorkbenchPart;
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
- ()Lorg/eclipse/jface/viewers/ISelection;
+ ()L1org/eclipse/jface/viewers/ISelection; # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 isImportant
  (Lorg/eclipse/ui/IWorkbenchPart;)Z
  (Lorg/eclipse/ui/IWorkbenchPart;)Z
@@ -45,7 +45,7 @@ selectionChanged
  (L1org/eclipse/jface/viewers/SelectionChangedEvent;)V # @Inherited(org.eclipse.jface.viewers.ISelectionChangedListener)
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;)V
- (Lorg/eclipse/jface/viewers/ISelection;)V
+ (L1org/eclipse/jface/viewers/ISelection;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 showPageRec
  (Lorg/eclipse/ui/part/PageBookView$PageRec;)V
  (Lorg/eclipse/ui/part/PageBookView$PageRec;)V

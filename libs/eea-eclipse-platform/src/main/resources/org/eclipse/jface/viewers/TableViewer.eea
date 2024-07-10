@@ -53,7 +53,7 @@ doShowItem
  (Lorg/eclipse/swt/widgets/Item;)V
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.viewers.Viewer)
 getItemAt
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/widgets/Item;
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/widgets/Item;
@@ -74,4 +74,4 @@ remove
  ([Ljava/lang/Object;)V
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;Z)V
- (Lorg/eclipse/jface/viewers/ISelection;Z)V
+ (L1org/eclipse/jface/viewers/ISelection;Z)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)

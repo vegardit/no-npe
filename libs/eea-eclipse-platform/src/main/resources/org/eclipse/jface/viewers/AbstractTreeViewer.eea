@@ -119,7 +119,7 @@ getRawChildren
  (Ljava/lang/Object;)[Ljava/lang/Object;
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
- ()Lorg/eclipse/jface/viewers/ISelection;
+ ()L1org/eclipse/jface/viewers/ISelection; # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 getSelection
  (Lorg/eclipse/swt/widgets/Control;)[Lorg/eclipse/swt/widgets/Item;
  (Lorg/eclipse/swt/widgets/Control;)[Lorg/eclipse/swt/widgets/Item;
@@ -158,7 +158,7 @@ indexForElement
  (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;)I
 inputChanged
  (Ljava/lang/Object;Ljava/lang/Object;)V
- (Ljava/lang/Object;Ljava/lang/Object;)V
+ (L0java/lang/Object;L0java/lang/Object;)V # @Inherited(org.eclipse.jface.viewers.Viewer)
 insert
  (Ljava/lang/Object;Ljava/lang/Object;I)V
  (Ljava/lang/Object;Ljava/lang/Object;I)V
@@ -230,10 +230,10 @@ reveal
  (Ljava/lang/Object;)V
 scrollDown
  (II)Lorg/eclipse/swt/widgets/Item;
- (II)Lorg/eclipse/swt/widgets/Item;
+ (II)L0org/eclipse/swt/widgets/Item; # @Inherited(org.eclipse.jface.viewers.Viewer)
 scrollUp
  (II)Lorg/eclipse/swt/widgets/Item;
- (II)Lorg/eclipse/swt/widgets/Item;
+ (II)L0org/eclipse/swt/widgets/Item; # @Inherited(org.eclipse.jface.viewers.Viewer)
 setContentProvider
  (Lorg/eclipse/jface/viewers/IContentProvider;)V
  (L1org/eclipse/jface/viewers/IContentProvider;)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)

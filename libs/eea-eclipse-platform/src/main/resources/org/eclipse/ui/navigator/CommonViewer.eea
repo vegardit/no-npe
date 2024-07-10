@@ -29,7 +29,7 @@ getNavigatorContentService
  ()Lorg/eclipse/ui/navigator/INavigatorContentService;
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
- ()Lorg/eclipse/jface/viewers/ISelection;
+ ()L1org/eclipse/jface/viewers/ISelection; # @Inherited(org.eclipse.jface.viewers.AbstractTreeViewer)
 handleDispose
  (Lorg/eclipse/swt/events/DisposeEvent;)V
  (L1org/eclipse/swt/events/DisposeEvent;)V # @Inherited(org.eclipse.jface.viewers.ColumnViewer)
@@ -74,7 +74,7 @@ setMapper
  (Lorg/eclipse/ui/navigator/ICommonViewerMapper;)V
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;Z)V
- (Lorg/eclipse/jface/viewers/ISelection;Z)V
+ (L1org/eclipse/jface/viewers/ISelection;Z)V # @Inherited(org.eclipse.jface.viewers.TreeViewer)
 setSelectionToWidget
  (Ljava/util/List;Z)V
  (Ljava/util/List;Z)V
