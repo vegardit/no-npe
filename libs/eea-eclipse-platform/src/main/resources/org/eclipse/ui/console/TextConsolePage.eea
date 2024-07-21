@@ -21,7 +21,7 @@ contextMenuAboutToShow
  (Lorg/eclipse/jface/action/IMenuManager;)V
 createControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.IPage)
 createViewer
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/console/TextConsoleViewer;
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/console/TextConsoleViewer;
@@ -36,7 +36,7 @@ getConsoleView
  ()Lorg/eclipse/ui/console/IConsoleView;
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L0org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.ui.part.IPage)
 getSite
  ()Lorg/eclipse/ui/part/IPageSite;
  ()Lorg/eclipse/ui/part/IPageSite;
@@ -51,7 +51,7 @@ propertyChange
  (L1org/eclipse/jface/util/PropertyChangeEvent;)V # @Inherited(org.eclipse.jface.util.IPropertyChangeListener)
 setActionBars
  (Lorg/eclipse/ui/IActionBars;)V
- (Lorg/eclipse/ui/IActionBars;)V
+ (L1org/eclipse/ui/IActionBars;)V # @Inherited(org.eclipse.ui.part.IPage)
 setGlobalAction
  (Lorg/eclipse/ui/IActionBars;Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
  (Lorg/eclipse/ui/IActionBars;Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V

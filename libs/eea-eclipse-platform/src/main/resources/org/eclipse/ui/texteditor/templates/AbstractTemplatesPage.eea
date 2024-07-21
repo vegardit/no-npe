@@ -5,7 +5,7 @@ class org/eclipse/ui/texteditor/templates/AbstractTemplatesPage
  (Lorg/eclipse/ui/texteditor/ITextEditor;Lorg/eclipse/jface/text/source/ISourceViewer;)V
 createControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.Page)
 createPatternViewer
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/text/source/SourceViewer;
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/text/source/SourceViewer;
@@ -20,7 +20,7 @@ getContextTypeRegistry
  ()Lorg/eclipse/jface/text/templates/ContextTypeRegistry;
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L0org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.ui.part.Page)
 getImage
  (Lorg/eclipse/jface/text/templates/Template;)Lorg/eclipse/swt/graphics/Image;
  (Lorg/eclipse/jface/text/templates/Template;)Lorg/eclipse/swt/graphics/Image;

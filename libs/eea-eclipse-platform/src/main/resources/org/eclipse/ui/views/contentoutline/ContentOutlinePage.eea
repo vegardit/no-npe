@@ -5,13 +5,13 @@ addSelectionChangedListener
  (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
 createControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.Page)
 fireSelectionChanged
  (Lorg/eclipse/jface/viewers/ISelection;)V
  (Lorg/eclipse/jface/viewers/ISelection;)V
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L0org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.ui.part.Page)
 getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
  ()L1org/eclipse/jface/viewers/ISelection; # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)

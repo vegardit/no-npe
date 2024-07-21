@@ -15,7 +15,7 @@ addTabSelectionListener
  (L1org/eclipse/ui/views/properties/tabbed/ITabSelectionListener;)V
 createControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.Page)
 createTab
  (Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;)Lorg/eclipse/ui/views/properties/tabbed/TabContents;
  (Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;)Lorg/eclipse/ui/views/properties/tabbed/TabContents;
@@ -27,7 +27,7 @@ getActiveTabs
  ()[Lorg/eclipse/ui/views/properties/tabbed/ITabDescriptor;
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L0org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.ui.part.Page)
 getCurrentContributorId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -72,7 +72,7 @@ selectionChanged
  (L1org/eclipse/ui/IWorkbenchPart;L0org/eclipse/jface/viewers/ISelection;)V # @Inherited(org.eclipse.ui.ISelectionListener)
 setActionBars
  (Lorg/eclipse/ui/IActionBars;)V
- (Lorg/eclipse/ui/IActionBars;)V
+ (L1org/eclipse/ui/IActionBars;)V # @Inherited(org.eclipse.ui.part.Page)
 setSelectedTab
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

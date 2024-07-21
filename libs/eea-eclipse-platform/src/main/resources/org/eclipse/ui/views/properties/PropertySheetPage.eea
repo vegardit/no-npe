@@ -6,13 +6,13 @@ HELP_CONTEXT_PROPERTY_SHEET_PAGE
 
 createControl
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.Page)
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L0org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.ui.part.Page)
 getSaveablePart
  ()Lorg/eclipse/ui/ISaveablePart;
  ()Lorg/eclipse/ui/ISaveablePart;
@@ -27,7 +27,7 @@ selectionChanged
  (L1org/eclipse/ui/IWorkbenchPart;L0org/eclipse/jface/viewers/ISelection;)V # @Inherited(org.eclipse.ui.ISelectionListener)
 setActionBars
  (Lorg/eclipse/ui/IActionBars;)V
- (Lorg/eclipse/ui/IActionBars;)V
+ (L1org/eclipse/ui/IActionBars;)V # @Inherited(org.eclipse.ui.part.Page)
 setPropertySourceProvider
  (Lorg/eclipse/ui/views/properties/IPropertySourceProvider;)V
  (Lorg/eclipse/ui/views/properties/IPropertySourceProvider;)V
