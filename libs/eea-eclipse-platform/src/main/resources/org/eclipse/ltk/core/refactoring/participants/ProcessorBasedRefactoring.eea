@@ -1,0 +1,32 @@
+class org/eclipse/ltk/core/refactoring/participants/ProcessorBasedRefactoring
+
+<init>
+ (Lorg/eclipse/ltk/core/refactoring/participants/RefactoringProcessor;)V
+ (Lorg/eclipse/ltk/core/refactoring/participants/RefactoringProcessor;)V
+checkFinalConditions
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/ltk/core/refactoring/RefactoringStatus; # @Inherited(org.eclipse.ltk.core.refactoring.Refactoring)
+checkInitialConditions
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/ltk/core/refactoring/RefactoringStatus; # @Inherited(org.eclipse.ltk.core.refactoring.Refactoring)
+createChange
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Change;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/ltk/core/refactoring/Change; # @Inherited(org.eclipse.ltk.core.refactoring.Refactoring)
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ltk.core.refactoring.Refactoring)
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProcessor
+ ()Lorg/eclipse/ltk/core/refactoring/participants/RefactoringProcessor;
+ ()Lorg/eclipse/ltk/core/refactoring/participants/RefactoringProcessor;
+getTextChange
+ (Ljava/lang/Object;)Lorg/eclipse/ltk/core/refactoring/TextChange;
+ (Ljava/lang/Object;)Lorg/eclipse/ltk/core/refactoring/TextChange;
+setProcessor
+ (Lorg/eclipse/ltk/core/refactoring/participants/RefactoringProcessor;)V
+ (Lorg/eclipse/ltk/core/refactoring/participants/RefactoringProcessor;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ltk.core.refactoring.Refactoring)

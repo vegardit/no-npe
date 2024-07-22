@@ -1,0 +1,29 @@
+class org/eclipse/lsp4j/jsonrpc/json/StreamMessageProducer
+
+<init>
+ (Ljava/io/InputStream;Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;)V
+ (Ljava/io/InputStream;Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;)V
+<init>
+ (Ljava/io/InputStream;Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;Lorg/eclipse/lsp4j/jsonrpc/MessageIssueHandler;)V
+ (Ljava/io/InputStream;Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;Lorg/eclipse/lsp4j/jsonrpc/MessageIssueHandler;)V
+fireError
+ (Ljava/lang/Throwable;)V
+ (Ljava/lang/Throwable;)V
+fireStreamClosed
+ (Ljava/lang/Exception;)V
+ (Ljava/lang/Exception;)V
+getInput
+ ()Ljava/io/InputStream;
+ ()Ljava/io/InputStream;
+handleMessage
+ (Ljava/io/InputStream;Lorg/eclipse/lsp4j/jsonrpc/json/StreamMessageProducer$Headers;)Z
+ (Ljava/io/InputStream;Lorg/eclipse/lsp4j/jsonrpc/json/StreamMessageProducer$Headers;)Z
+listen
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;)V
+parseHeader
+ (Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/json/StreamMessageProducer$Headers;)V
+ (Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/json/StreamMessageProducer$Headers;)V
+setInput
+ (Ljava/io/InputStream;)V
+ (Ljava/io/InputStream;)V

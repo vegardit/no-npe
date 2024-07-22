@@ -30,16 +30,16 @@ doItemFill
  (Lorg/eclipse/jface/action/IContributionItem;I)V
 fill
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.action.IContributionItem)
 fill
  (Lorg/eclipse/swt/widgets/CoolBar;I)V
- (Lorg/eclipse/swt/widgets/CoolBar;I)V
+ (L1org/eclipse/swt/widgets/CoolBar;I)V # @Inherited(org.eclipse.jface.action.IContributionItem)
 fill
  (Lorg/eclipse/swt/widgets/Menu;I)V
- (Lorg/eclipse/swt/widgets/Menu;I)V
+ (L1org/eclipse/swt/widgets/Menu;I)V # @Inherited(org.eclipse.jface.action.IContributionItem)
 fill
  (Lorg/eclipse/swt/widgets/ToolBar;I)V
- (Lorg/eclipse/swt/widgets/ToolBar;I)V
+ (L1org/eclipse/swt/widgets/ToolBar;I)V # @Inherited(org.eclipse.jface.action.IContributionItem)
 findMenuUsingPath
  (Ljava/lang/String;)Lorg/eclipse/jface/action/IMenuManager;
  (Ljava/lang/String;)Lorg/eclipse/jface/action/IMenuManager;
@@ -48,7 +48,7 @@ findUsingPath
  (Ljava/lang/String;)Lorg/eclipse/jface/action/IContributionItem;
 getId
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.jface.action.IContributionItem)
 getImageDescriptor
  ()Lorg/eclipse/jface/resource/ImageDescriptor;
  ()Lorg/eclipse/jface/resource/ImageDescriptor;

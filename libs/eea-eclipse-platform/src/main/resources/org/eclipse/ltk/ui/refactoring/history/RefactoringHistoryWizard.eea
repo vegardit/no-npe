@@ -1,0 +1,59 @@
+class org/eclipse/ltk/ui/refactoring/history/RefactoringHistoryWizard
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+<init>
+ (ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+aboutToPerformHistory
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+aboutToPerformRefactoring
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+addPage
+ (Lorg/eclipse/jface/wizard/IWizardPage;)V
+ (Lorg/eclipse/jface/wizard/IWizardPage;)V
+createRefactoring
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;)Lorg/eclipse/ltk/core/refactoring/Refactoring;
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;)Lorg/eclipse/ltk/core/refactoring/Refactoring;
+createRefactoring
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Refactoring;
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Refactoring;
+createRefactoringContext
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringContext;
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringContext;
+getErrorPage
+ ()Lorg/eclipse/ltk/internal/ui/refactoring/IErrorWizardPage;
+ ()Lorg/eclipse/ltk/internal/ui/refactoring/IErrorWizardPage;
+getNextPage
+ (Lorg/eclipse/jface/wizard/IWizardPage;)Lorg/eclipse/jface/wizard/IWizardPage;
+ (Lorg/eclipse/jface/wizard/IWizardPage;)Lorg/eclipse/jface/wizard/IWizardPage;
+getPreviewPage
+ ()Lorg/eclipse/ltk/internal/ui/refactoring/IPreviewWizardPage;
+ ()Lorg/eclipse/ltk/internal/ui/refactoring/IPreviewWizardPage;
+getPreviousPage
+ (Lorg/eclipse/jface/wizard/IWizardPage;)Lorg/eclipse/jface/wizard/IWizardPage;
+ (Lorg/eclipse/jface/wizard/IWizardPage;)Lorg/eclipse/jface/wizard/IWizardPage;
+historyPerformed
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+performPreviewChange
+ (Lorg/eclipse/ltk/core/refactoring/Change;Lorg/eclipse/ltk/core/refactoring/Refactoring;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (Lorg/eclipse/ltk/core/refactoring/Change;Lorg/eclipse/ltk/core/refactoring/Refactoring;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+refactoringPerformed
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+selectPreviewChange
+ (Lorg/eclipse/ltk/core/refactoring/Change;)Z
+ (Lorg/eclipse/ltk/core/refactoring/Change;)Z
+selectStatusEntry
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringStatusEntry;)Z
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringStatusEntry;)Z
+setConfiguration
+ (Lorg/eclipse/ltk/ui/refactoring/history/RefactoringHistoryControlConfiguration;)V
+ (Lorg/eclipse/ltk/ui/refactoring/history/RefactoringHistoryControlConfiguration;)V
+setInput
+ (Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;)V
+ (Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;)V

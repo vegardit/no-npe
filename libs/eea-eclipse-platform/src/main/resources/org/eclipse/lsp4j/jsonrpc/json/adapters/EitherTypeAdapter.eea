@@ -1,0 +1,48 @@
+class org/eclipse/lsp4j/jsonrpc/json/adapters/EitherTypeAdapter
+ <L:Ljava/lang/Object;R:Ljava/lang/Object;>
+ <L:Ljava/lang/Object;R:Ljava/lang/Object;>
+
+super com/google/gson/TypeAdapter
+ <Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>
+ <Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>
+
+left
+ Lorg/eclipse/lsp4j/jsonrpc/json/adapters/EitherTypeAdapter$EitherTypeArgument<TL;>;
+ Lorg/eclipse/lsp4j/jsonrpc/json/adapters/EitherTypeAdapter$EitherTypeArgument<TL;>;
+leftChecker
+ Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;
+ Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;
+right
+ Lorg/eclipse/lsp4j/jsonrpc/json/adapters/EitherTypeAdapter$EitherTypeArgument<TR;>;
+ Lorg/eclipse/lsp4j/jsonrpc/json/adapters/EitherTypeAdapter$EitherTypeArgument<TR;>;
+rightChecker
+ Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;
+ Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;
+typeToken
+ Lcom/google/gson/reflect/TypeToken<+Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>;
+ Lcom/google/gson/reflect/TypeToken<+Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>;
+
+<init>
+ (Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken<+Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>;)V
+ (Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken<+Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>;)V
+<init>
+ (Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken<+Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>;Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;)V
+ (Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken<+Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>;Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;)V
+<init>
+ (Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken<+Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>;Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;Lcom/google/gson/TypeAdapter<TL;>;Lcom/google/gson/TypeAdapter<TR;>;)V
+ (Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken<+Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;>;Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;Ljava/util/function/Predicate<Lcom/google/gson/JsonElement;>;Lcom/google/gson/TypeAdapter<TL;>;Lcom/google/gson/TypeAdapter<TR;>;)V
+create
+ (Lcom/google/gson/stream/JsonToken;Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+ (Lcom/google/gson/stream/JsonToken;Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+createLeft
+ (TL;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+ (TL;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+createRight
+ (TR;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+ (TR;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+read
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+write
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;)V

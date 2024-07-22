@@ -1,0 +1,26 @@
+class org/eclipse/ltk/core/refactoring/resource/RenameResourceChange
+
+<init>
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)V
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)V
+<init>
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;J)V
+ (Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;J)V
+getDescriptor
+ ()Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;
+ ()L0org/eclipse/ltk/core/refactoring/ChangeDescriptor; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+getModifiedResource
+ ()Lorg/eclipse/core/resources/IResource;
+ ()Lorg/eclipse/core/resources/IResource;
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+getNewName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+perform
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Change;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L0org/eclipse/ltk/core/refactoring/Change; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+setDescriptor
+ (Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;)V
+ (Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;)V

@@ -1,0 +1,26 @@
+class org/eclipse/ltk/core/refactoring/PerformRefactoringHistoryOperation
+
+<init>
+ (Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;)V
+ (Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;)V
+aboutToPerformRefactoring
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+createRefactoring
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;)Lorg/eclipse/ltk/core/refactoring/Refactoring;
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;)Lorg/eclipse/ltk/core/refactoring/Refactoring;
+createRefactoring
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Refactoring;
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Refactoring;
+createRefactoringContext
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringContext;
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptor;Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringContext;
+getExecutionStatus
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+refactoringPerformed
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+run
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L0org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.core.resources.IWorkspaceRunnable)

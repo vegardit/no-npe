@@ -1,0 +1,27 @@
+class org/eclipse/lsp4j/adapters/HoverTypeAdapter
+
+super com/google/gson/TypeAdapter
+ <Lorg/eclipse/lsp4j/Hover;>
+ <Lorg/eclipse/lsp4j/Hover;>
+
+<init>
+ (Lcom/google/gson/Gson;)V
+ (Lcom/google/gson/Gson;)V
+read
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/Hover;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/Hover;
+readContents
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/MarkedString;>;>;Lorg/eclipse/lsp4j/MarkupContent;>;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/MarkedString;>;>;Lorg/eclipse/lsp4j/MarkupContent;>;
+readRange
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/Range;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/Range;
+write
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Hover;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Hover;)V
+writeContents
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/MarkedString;>;>;Lorg/eclipse/lsp4j/MarkupContent;>;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/MarkedString;>;>;Lorg/eclipse/lsp4j/MarkupContent;>;)V
+writeRange
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Range;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Range;)V

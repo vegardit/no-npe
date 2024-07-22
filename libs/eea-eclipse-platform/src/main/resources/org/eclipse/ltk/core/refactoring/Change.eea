@@ -1,0 +1,29 @@
+class org/eclipse/ltk/core/refactoring/Change
+
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
+getAffectedObjects
+ ()[Ljava/lang/Object;
+ ()[0L1java/lang/Object;
+getDescriptor
+ ()Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;
+ ()L0org/eclipse/ltk/core/refactoring/ChangeDescriptor;
+getModifiedElement
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+getParent
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+ ()L0org/eclipse/ltk/core/refactoring/Change;
+initializeValidationData
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IProgressMonitor;)V
+isValid
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/ltk/core/refactoring/RefactoringStatus;
+perform
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Change;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L0org/eclipse/ltk/core/refactoring/Change;

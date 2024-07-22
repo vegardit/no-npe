@@ -2,13 +2,13 @@ class org/eclipse/ui/texteditor/spelling/SpellingCorrectionProcessor
 
 canAssist
  (Lorg/eclipse/jface/text/quickassist/IQuickAssistInvocationContext;)Z
- (Lorg/eclipse/jface/text/quickassist/IQuickAssistInvocationContext;)Z
+ (L1org/eclipse/jface/text/quickassist/IQuickAssistInvocationContext;)Z # @Inherited(org.eclipse.jface.text.quickassist.IQuickAssistProcessor)
 canFix
  (Lorg/eclipse/jface/text/source/Annotation;)Z
- (Lorg/eclipse/jface/text/source/Annotation;)Z
+ (L1org/eclipse/jface/text/source/Annotation;)Z # @Inherited(org.eclipse.jface.text.quickassist.IQuickAssistProcessor)
 computeQuickAssistProposals
  (Lorg/eclipse/jface/text/quickassist/IQuickAssistInvocationContext;)[Lorg/eclipse/jface/text/contentassist/ICompletionProposal;
- (Lorg/eclipse/jface/text/quickassist/IQuickAssistInvocationContext;)[Lorg/eclipse/jface/text/contentassist/ICompletionProposal;
+ (L1org/eclipse/jface/text/quickassist/IQuickAssistInvocationContext;)[0L1org/eclipse/jface/text/contentassist/ICompletionProposal; # @Inherited(org.eclipse.jface.text.quickassist.IQuickAssistProcessor)
 getErrorMessage
  ()Ljava/lang/String;
  ()Ljava/lang/String;

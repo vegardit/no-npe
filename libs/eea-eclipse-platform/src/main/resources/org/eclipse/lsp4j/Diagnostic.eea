@@ -1,0 +1,77 @@
+class org/eclipse/lsp4j/Diagnostic
+
+<init>
+ (Lorg/eclipse/lsp4j/Range;Ljava/lang/String;)V
+ (Lorg/eclipse/lsp4j/Range;Ljava/lang/String;)V
+<init>
+ (Lorg/eclipse/lsp4j/Range;Ljava/lang/String;Lorg/eclipse/lsp4j/DiagnosticSeverity;Ljava/lang/String;)V
+ (Lorg/eclipse/lsp4j/Range;Ljava/lang/String;Lorg/eclipse/lsp4j/DiagnosticSeverity;Ljava/lang/String;)V
+<init>
+ (Lorg/eclipse/lsp4j/Range;Ljava/lang/String;Lorg/eclipse/lsp4j/DiagnosticSeverity;Ljava/lang/String;Ljava/lang/String;)V
+ (Lorg/eclipse/lsp4j/Range;Ljava/lang/String;Lorg/eclipse/lsp4j/DiagnosticSeverity;Ljava/lang/String;Ljava/lang/String;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getCode
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Integer;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Integer;>;
+getCodeDescription
+ ()Lorg/eclipse/lsp4j/DiagnosticCodeDescription;
+ ()Lorg/eclipse/lsp4j/DiagnosticCodeDescription;
+getData
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRange
+ ()Lorg/eclipse/lsp4j/Range;
+ ()Lorg/eclipse/lsp4j/Range;
+getRelatedInformation
+ ()Ljava/util/List<Lorg/eclipse/lsp4j/DiagnosticRelatedInformation;>;
+ ()Ljava/util/List<Lorg/eclipse/lsp4j/DiagnosticRelatedInformation;>;
+getSeverity
+ ()Lorg/eclipse/lsp4j/DiagnosticSeverity;
+ ()Lorg/eclipse/lsp4j/DiagnosticSeverity;
+getSource
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTags
+ ()Ljava/util/List<Lorg/eclipse/lsp4j/DiagnosticTag;>;
+ ()Ljava/util/List<Lorg/eclipse/lsp4j/DiagnosticTag;>;
+setCode
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V
+setCode
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setCode
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Integer;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Integer;>;)V
+setCodeDescription
+ (Lorg/eclipse/lsp4j/DiagnosticCodeDescription;)V
+ (Lorg/eclipse/lsp4j/DiagnosticCodeDescription;)V
+setData
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setRange
+ (Lorg/eclipse/lsp4j/Range;)V
+ (Lorg/eclipse/lsp4j/Range;)V
+setRelatedInformation
+ (Ljava/util/List<Lorg/eclipse/lsp4j/DiagnosticRelatedInformation;>;)V
+ (Ljava/util/List<Lorg/eclipse/lsp4j/DiagnosticRelatedInformation;>;)V
+setSeverity
+ (Lorg/eclipse/lsp4j/DiagnosticSeverity;)V
+ (Lorg/eclipse/lsp4j/DiagnosticSeverity;)V
+setSource
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setTags
+ (Ljava/util/List<Lorg/eclipse/lsp4j/DiagnosticTag;>;)V
+ (Ljava/util/List<Lorg/eclipse/lsp4j/DiagnosticTag;>;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

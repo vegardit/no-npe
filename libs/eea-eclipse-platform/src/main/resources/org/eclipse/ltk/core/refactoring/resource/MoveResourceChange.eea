@@ -1,0 +1,23 @@
+class org/eclipse/ltk/core/refactoring/resource/MoveResourceChange
+
+<init>
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)V
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;)V
+<init>
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;JLorg/eclipse/ltk/core/refactoring/Change;)V
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/resources/IContainer;JLorg/eclipse/ltk/core/refactoring/Change;)V
+getDescriptor
+ ()Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;
+ ()L0org/eclipse/ltk/core/refactoring/ChangeDescriptor; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+getModifiedResource
+ ()Lorg/eclipse/core/resources/IResource;
+ ()Lorg/eclipse/core/resources/IResource;
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+perform
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Change;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L0org/eclipse/ltk/core/refactoring/Change; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+setDescriptor
+ (Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;)V
+ (Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;)V

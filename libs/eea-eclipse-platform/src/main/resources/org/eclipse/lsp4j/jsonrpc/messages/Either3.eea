@@ -1,0 +1,45 @@
+class org/eclipse/lsp4j/jsonrpc/messages/Either3
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>
+
+super org/eclipse/lsp4j/jsonrpc/messages/Either
+ <TT1;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TT2;TT3;>;>
+ <TT1;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TT2;TT3;>;>
+
+forFirst
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(TT1;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(TT1;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+forLeft3
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(TT1;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(TT1;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+forRight3
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TT2;TT3;>;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TT2;TT3;>;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+forSecond
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(TT2;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(TT2;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+forThird
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(TT3;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+ <T1:Ljava/lang/Object;T2:Ljava/lang/Object;T3:Ljava/lang/Object;>(TT3;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<TT1;TT2;TT3;>;
+
+<init>
+ (TT1;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TT2;TT3;>;)V
+ (TT1;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TT2;TT3;>;)V
+get
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getFirst
+ ()TT1;
+ ()TT1;
+getSecond
+ ()TT2;
+ ()TT2;
+getThird
+ ()TT3;
+ ()TT3;
+map
+ <T:Ljava/lang/Object;>(Ljava/util/function/Function<-TT1;+TT;>;Ljava/util/function/Function<-TT2;+TT;>;Ljava/util/function/Function<-TT3;+TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Function<-TT1;+TT;>;Ljava/util/function/Function<-TT2;+TT;>;Ljava/util/function/Function<-TT3;+TT;>;)TT;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.lsp4j.jsonrpc.messages.Either)

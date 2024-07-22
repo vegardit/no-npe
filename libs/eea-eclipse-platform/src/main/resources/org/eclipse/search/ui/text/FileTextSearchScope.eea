@@ -1,0 +1,33 @@
+class org/eclipse/search/ui/text/FileTextSearchScope
+
+newSearchScope
+ ([Lorg/eclipse/core/resources/IResource;[Ljava/lang/String;Z)Lorg/eclipse/search/ui/text/FileTextSearchScope;
+ ([Lorg/eclipse/core/resources/IResource;[Ljava/lang/String;Z)Lorg/eclipse/search/ui/text/FileTextSearchScope;
+newSearchScope
+ ([Lorg/eclipse/ui/IWorkingSet;[Ljava/lang/String;Z)Lorg/eclipse/search/ui/text/FileTextSearchScope;
+ ([Lorg/eclipse/ui/IWorkingSet;[Ljava/lang/String;Z)Lorg/eclipse/search/ui/text/FileTextSearchScope;
+newWorkspaceScope
+ ([Ljava/lang/String;Z)Lorg/eclipse/search/ui/text/FileTextSearchScope;
+ ([Ljava/lang/String;Z)Lorg/eclipse/search/ui/text/FileTextSearchScope;
+
+contains
+ (Lorg/eclipse/core/resources/IResourceProxy;)Z
+ (Lorg/eclipse/core/resources/IResourceProxy;)Z
+getContentTypes
+ ()[Lorg/eclipse/core/runtime/content/IContentType;
+ ()[Lorg/eclipse/core/runtime/content/IContentType;
+getDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFileNamePatterns
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getFilterDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRoots
+ ()[Lorg/eclipse/core/resources/IResource;
+ ()[Lorg/eclipse/core/resources/IResource;
+getWorkingSets
+ ()[Lorg/eclipse/ui/IWorkingSet;
+ ()[Lorg/eclipse/ui/IWorkingSet;

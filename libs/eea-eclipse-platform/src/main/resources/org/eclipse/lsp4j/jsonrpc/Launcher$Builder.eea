@@ -1,0 +1,98 @@
+class org/eclipse/lsp4j/jsonrpc/Launcher$Builder
+ <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+classLoader
+ Ljava/lang/ClassLoader;
+ Ljava/lang/ClassLoader;
+configureGson
+ Ljava/util/function/Consumer<Lcom/google/gson/GsonBuilder;>;
+ Ljava/util/function/Consumer<Lcom/google/gson/GsonBuilder;>;
+exceptionHandler
+ Ljava/util/function/Function<Ljava/lang/Throwable;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;>;
+ Ljava/util/function/Function<Ljava/lang/Throwable;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;>;
+executorService
+ Ljava/util/concurrent/ExecutorService;
+ Ljava/util/concurrent/ExecutorService;
+input
+ Ljava/io/InputStream;
+ Ljava/io/InputStream;
+localServices
+ Ljava/util/Collection<Ljava/lang/Object;>;
+ Ljava/util/Collection<Ljava/lang/Object;>;
+messageTracer
+ Lorg/eclipse/lsp4j/jsonrpc/MessageTracer;
+ Lorg/eclipse/lsp4j/jsonrpc/MessageTracer;
+messageWrapper
+ Ljava/util/function/Function<Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;>;
+ Ljava/util/function/Function<Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;>;
+output
+ Ljava/io/OutputStream;
+ Ljava/io/OutputStream;
+remoteInterfaces
+ Ljava/util/Collection<Ljava/lang/Class<+TT;>;>;
+ Ljava/util/Collection<Ljava/lang/Class<+TT;>;>;
+
+configureGson
+ (Ljava/util/function/Consumer<Lcom/google/gson/GsonBuilder;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/util/function/Consumer<Lcom/google/gson/GsonBuilder;>;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+create
+ ()Lorg/eclipse/lsp4j/jsonrpc/Launcher<TT;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/Launcher<TT;>;
+createJsonHandler
+ ()Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;
+ ()Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;
+createLauncher
+ (Ljava/util/concurrent/ExecutorService;TT;Lorg/eclipse/lsp4j/jsonrpc/RemoteEndpoint;Lorg/eclipse/lsp4j/jsonrpc/json/ConcurrentMessageProcessor;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<TT;>;
+ (Ljava/util/concurrent/ExecutorService;TT;Lorg/eclipse/lsp4j/jsonrpc/RemoteEndpoint;Lorg/eclipse/lsp4j/jsonrpc/json/ConcurrentMessageProcessor;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<TT;>;
+createMessageProcessor
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageProducer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;TT;)Lorg/eclipse/lsp4j/jsonrpc/json/ConcurrentMessageProcessor;
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageProducer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;TT;)Lorg/eclipse/lsp4j/jsonrpc/json/ConcurrentMessageProcessor;
+createProxy
+ (Lorg/eclipse/lsp4j/jsonrpc/RemoteEndpoint;)TT;
+ (Lorg/eclipse/lsp4j/jsonrpc/RemoteEndpoint;)TT;
+createRemoteEndpoint
+ (Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;)Lorg/eclipse/lsp4j/jsonrpc/RemoteEndpoint;
+ (Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;)Lorg/eclipse/lsp4j/jsonrpc/RemoteEndpoint;
+getSupportedMethods
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;>;
+setClassLoader
+ (Ljava/lang/ClassLoader;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/lang/ClassLoader;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+setExceptionHandler
+ (Ljava/util/function/Function<Ljava/lang/Throwable;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/util/function/Function<Ljava/lang/Throwable;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;>;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+setExecutorService
+ (Ljava/util/concurrent/ExecutorService;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/util/concurrent/ExecutorService;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+setInput
+ (Ljava/io/InputStream;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/io/InputStream;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+setLocalService
+ (Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+setLocalServices
+ (Ljava/util/Collection<Ljava/lang/Object;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/util/Collection<Ljava/lang/Object;>;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+setOutput
+ (Ljava/io/OutputStream;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/io/OutputStream;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+setRemoteInterface
+ (Ljava/lang/Class<+TT;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/lang/Class<+TT;>;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+setRemoteInterfaces
+ (Ljava/util/Collection<Ljava/lang/Class<+TT;>;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/util/Collection<Ljava/lang/Class<+TT;>;>;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+traceMessages
+ (Ljava/io/PrintWriter;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/io/PrintWriter;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+validateMessages
+ (Z)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Z)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+wrapMessageConsumer
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;)Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;)Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;
+wrapMessages
+ (Ljava/util/function/Function<Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;
+ (Ljava/util/function/Function<Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;>;)L1org/eclipse/lsp4j/jsonrpc/Launcher$Builder<TT;>;

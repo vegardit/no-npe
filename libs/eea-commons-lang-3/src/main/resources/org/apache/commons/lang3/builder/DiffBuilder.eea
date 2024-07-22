@@ -6,6 +6,10 @@ super org/apache/commons/lang3/builder/Builder
  <Lorg/apache/commons/lang3/builder/DiffResult<TT;>;>
  <Lorg/apache/commons/lang3/builder/DiffResult<TT;>;>
 
+builder
+ <T:Ljava/lang/Object;>()Lorg/apache/commons/lang3/builder/DiffBuilder$Builder<TT;>;
+ <T:Ljava/lang/Object;>()Lorg/apache/commons/lang3/builder/DiffBuilder$Builder<TT;>;
+
 <init>
  (TT;TT;Lorg/apache/commons/lang3/builder/ToStringStyle;)V
  (TT;TT;Lorg/apache/commons/lang3/builder/ToStringStyle;)V
@@ -34,8 +38,8 @@ append
  (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Lorg/apache/commons/lang3/builder/DiffBuilder<TT;>;
  (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)L1org/apache/commons/lang3/builder/DiffBuilder<TT;>;
 append
- (Ljava/lang/String;Lorg/apache/commons/lang3/builder/DiffResult<TT;>;)Lorg/apache/commons/lang3/builder/DiffBuilder<TT;>;
- (Ljava/lang/String;Lorg/apache/commons/lang3/builder/DiffResult<TT;>;)L1org/apache/commons/lang3/builder/DiffBuilder<TT;>;
+ (Ljava/lang/String;Lorg/apache/commons/lang3/builder/DiffResult<*>;)Lorg/apache/commons/lang3/builder/DiffBuilder<TT;>;
+ (Ljava/lang/String;Lorg/apache/commons/lang3/builder/DiffResult<*>;)L1org/apache/commons/lang3/builder/DiffBuilder<TT;>;
 append
  (Ljava/lang/String;SS)Lorg/apache/commons/lang3/builder/DiffBuilder<TT;>;
  (Ljava/lang/String;SS)L1org/apache/commons/lang3/builder/DiffBuilder<TT;>;

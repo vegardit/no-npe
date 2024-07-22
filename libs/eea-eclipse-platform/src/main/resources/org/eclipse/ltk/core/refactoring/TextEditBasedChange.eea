@@ -1,0 +1,38 @@
+class org/eclipse/ltk/core/refactoring/TextEditBasedChange
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addChangeGroup
+ (Lorg/eclipse/ltk/core/refactoring/TextEditBasedChangeGroup;)V
+ (Lorg/eclipse/ltk/core/refactoring/TextEditBasedChangeGroup;)V
+addTextEditGroup
+ (Lorg/eclipse/text/edits/TextEditGroup;)V
+ (Lorg/eclipse/text/edits/TextEditGroup;)V
+getChangeGroups
+ ()[Lorg/eclipse/ltk/core/refactoring/TextEditBasedChangeGroup;
+ ()[Lorg/eclipse/ltk/core/refactoring/TextEditBasedChangeGroup;
+getCurrentContent
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+getCurrentContent
+ (Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ (Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+getPreviewContent
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+getPreviewContent
+ ([Lorg/eclipse/ltk/core/refactoring/TextEditBasedChangeGroup;Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ ([Lorg/eclipse/ltk/core/refactoring/TextEditBasedChangeGroup;Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+getTextType
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+hasOneGroupCategory
+ (Ljava/util/List<Lorg/eclipse/ltk/core/refactoring/GroupCategory;>;)Z
+ (Ljava/util/List<Lorg/eclipse/ltk/core/refactoring/GroupCategory;>;)Z
+setTextType
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

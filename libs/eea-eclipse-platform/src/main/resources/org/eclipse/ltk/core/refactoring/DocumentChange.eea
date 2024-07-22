@@ -1,0 +1,29 @@
+class org/eclipse/ltk/core/refactoring/DocumentChange
+
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jface/text/IDocument;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/text/IDocument;)V
+acquireDocument
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/text/IDocument;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/jface/text/IDocument; # @Inherited(org.eclipse.ltk.core.refactoring.TextChange)
+commit
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/jface/text/IDocument;L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.ltk.core.refactoring.TextChange)
+createUndoChange
+ (Lorg/eclipse/text/edits/UndoEdit;)Lorg/eclipse/ltk/core/refactoring/Change;
+ (L1org/eclipse/text/edits/UndoEdit;)L0org/eclipse/ltk/core/refactoring/Change; # @Inherited(org.eclipse.ltk.core.refactoring.TextChange)
+getModifiedElement
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+initializeValidationData
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+isValid
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/ltk/core/refactoring/RefactoringStatus; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+performEdits
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/text/edits/UndoEdit;
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/text/edits/UndoEdit;
+releaseDocument
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/jface/text/IDocument;L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.ltk.core.refactoring.TextChange)

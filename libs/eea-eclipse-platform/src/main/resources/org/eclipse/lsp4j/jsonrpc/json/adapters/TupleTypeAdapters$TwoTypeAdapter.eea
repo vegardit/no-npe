@@ -1,0 +1,24 @@
+class org/eclipse/lsp4j/jsonrpc/json/adapters/TupleTypeAdapters$TwoTypeAdapter
+ <F:Ljava/lang/Object;S:Ljava/lang/Object;>
+ <F:Ljava/lang/Object;S:Ljava/lang/Object;>
+
+super com/google/gson/TypeAdapter
+ <Lorg/eclipse/lsp4j/jsonrpc/messages/Tuple$Two<TF;TS;>;>
+ <Lorg/eclipse/lsp4j/jsonrpc/messages/Tuple$Two<TF;TS;>;>
+
+first
+ Lcom/google/gson/TypeAdapter<TF;>;
+ Lcom/google/gson/TypeAdapter<TF;>;
+second
+ Lcom/google/gson/TypeAdapter<TS;>;
+ Lcom/google/gson/TypeAdapter<TS;>;
+
+<init>
+ (Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken<Lorg/eclipse/lsp4j/jsonrpc/messages/Tuple$Two<TF;TS;>;>;)V
+ (Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken<Lorg/eclipse/lsp4j/jsonrpc/messages/Tuple$Two<TF;TS;>;>;)V
+read
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Tuple$Two<TF;TS;>;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Tuple$Two<TF;TS;>;
+write
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Tuple$Two<TF;TS;>;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Tuple$Two<TF;TS;>;)V

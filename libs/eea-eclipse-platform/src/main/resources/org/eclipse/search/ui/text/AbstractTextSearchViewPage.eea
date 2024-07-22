@@ -1,0 +1,114 @@
+class org/eclipse/search/ui/text/AbstractTextSearchViewPage
+
+EMPTY_MATCH_ARRAY
+ [Lorg/eclipse/search/ui/text/Match;
+ [1Lorg/eclipse/search/ui/text/Match;
+
+canRemoveMatchesWith
+ (Lorg/eclipse/jface/viewers/ISelection;)Z
+ (Lorg/eclipse/jface/viewers/ISelection;)Z
+configureTableViewer
+ (Lorg/eclipse/jface/viewers/TableViewer;)V
+ (L1org/eclipse/jface/viewers/TableViewer;)V
+configureTreeViewer
+ (Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (L1org/eclipse/jface/viewers/TreeViewer;)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.Page)
+createTableViewer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/TableViewer;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/TableViewer;
+createTreeViewer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/TreeViewer;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/TreeViewer;
+elementsChanged
+ ([Ljava/lang/Object;)V
+ ([1Ljava/lang/Object;)V
+evaluateChangedElements
+ ([Lorg/eclipse/search/ui/text/Match;Ljava/util/Set<Ljava/lang/Object;>;)V
+ ([1L1org/eclipse/search/ui/text/Match;L1java/util/Set<Ljava/lang/Object;>;)V
+fillContextMenu
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+ (Lorg/eclipse/jface/action/IMenuManager;)V
+fillToolbar
+ (Lorg/eclipse/jface/action/IToolBarManager;)V
+ (Lorg/eclipse/jface/action/IToolBarManager;)V
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()L0org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.ui.part.Page)
+getCurrentMatch
+ ()Lorg/eclipse/search/ui/text/Match;
+ ()Lorg/eclipse/search/ui/text/Match;
+getCurrentMatchLocation
+ (Lorg/eclipse/search/ui/text/Match;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/search/ui/text/Match;)Lorg/eclipse/jface/text/IRegion;
+getDisplayedMatchCount
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+getDisplayedMatches
+ (Ljava/lang/Object;)[Lorg/eclipse/search/ui/text/Match;
+ (Ljava/lang/Object;)[Lorg/eclipse/search/ui/text/Match;
+getElementLimit
+ ()Ljava/lang/Integer;
+ ()Ljava/lang/Integer;
+getID
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInput
+ ()Lorg/eclipse/search/ui/text/AbstractTextSearchResult;
+ ()Lorg/eclipse/search/ui/text/AbstractTextSearchResult;
+getLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSettings
+ ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+ ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+getUIState
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getViewPart
+ ()Lorg/eclipse/search/ui/ISearchResultViewPart;
+ ()Lorg/eclipse/search/ui/ISearchResultViewPart;
+getViewer
+ ()Lorg/eclipse/jface/viewers/StructuredViewer;
+ ()Lorg/eclipse/jface/viewers/StructuredViewer;
+handleOpen
+ (Lorg/eclipse/jface/viewers/OpenEvent;)V
+ (L1org/eclipse/jface/viewers/OpenEvent;)V
+handleSearchResultChanged
+ (Lorg/eclipse/search/ui/SearchResultEvent;)V
+ (L1org/eclipse/search/ui/SearchResultEvent;)V
+init
+ (Lorg/eclipse/ui/part/IPageSite;)V
+ (Lorg/eclipse/ui/part/IPageSite;)V
+open
+ (Lorg/eclipse/ui/IWorkbenchPage;Lorg/eclipse/core/resources/IFile;Z)Lorg/eclipse/ui/IEditorPart;
+ (Lorg/eclipse/ui/IWorkbenchPage;Lorg/eclipse/core/resources/IFile;Z)Lorg/eclipse/ui/IEditorPart;
+openAndSelect
+ (Lorg/eclipse/ui/IWorkbenchPage;Lorg/eclipse/core/resources/IFile;IIZ)Lorg/eclipse/ui/IEditorPart;
+ (Lorg/eclipse/ui/IWorkbenchPage;Lorg/eclipse/core/resources/IFile;IIZ)Lorg/eclipse/ui/IEditorPart;
+restoreState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (Lorg/eclipse/ui/IMemento;)V
+setElementLimit
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V
+setID
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setInput
+ (Lorg/eclipse/search/ui/ISearchResult;Ljava/lang/Object;)V
+ (Lorg/eclipse/search/ui/ISearchResult;Ljava/lang/Object;)V
+setViewPart
+ (Lorg/eclipse/search/ui/ISearchResultViewPart;)V
+ (Lorg/eclipse/search/ui/ISearchResultViewPart;)V
+showMatch
+ (Lorg/eclipse/search/ui/text/Match;II)V
+ (Lorg/eclipse/search/ui/text/Match;II)V
+showMatch
+ (Lorg/eclipse/search/ui/text/Match;IIZ)V
+ (Lorg/eclipse/search/ui/text/Match;IIZ)V

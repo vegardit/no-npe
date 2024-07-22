@@ -1,0 +1,54 @@
+class org/eclipse/lsp4j/jsonrpc/json/adapters/MessageTypeAdapter
+
+super com/google/gson/TypeAdapter
+ <Lorg/eclipse/lsp4j/jsonrpc/messages/Message;>
+ <Lorg/eclipse/lsp4j/jsonrpc/messages/Message;>
+
+<init>
+ (Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;Lcom/google/gson/Gson;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;Lcom/google/gson/Gson;)V
+createMessage
+ (Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;)Lorg/eclipse/lsp4j/jsonrpc/messages/Message;
+ (Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;)Lorg/eclipse/lsp4j/jsonrpc/messages/Message;
+fromJson
+ (Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;)Ljava/lang/Object;
+ (Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;)Ljava/lang/Object;
+fromJson
+ (Lcom/google/gson/stream/JsonReader;Ljava/lang/reflect/Type;)Ljava/lang/Object;
+ (Lcom/google/gson/stream/JsonReader;Ljava/lang/reflect/Type;)Ljava/lang/Object;
+getParameterTypes
+ (Ljava/lang/String;)[Ljava/lang/reflect/Type;
+ (Ljava/lang/String;)[Ljava/lang/reflect/Type;
+handleParameter
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;Ljava/lang/String;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;Ljava/lang/String;)V
+isNull
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isNullOrVoidType
+ (Ljava/lang/reflect/Type;)Z
+ (Ljava/lang/reflect/Type;)Z
+parseParams
+ (Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/Object;
+ (Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/Object;
+parseParams
+ (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+parseResult
+ (Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/Object;
+ (Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/Object;
+parseResult
+ (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+read
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Message;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Message;
+write
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Message;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Message;)V
+writeId
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;)V
+writeNullValue
+ (Lcom/google/gson/stream/JsonWriter;)V
+ (Lcom/google/gson/stream/JsonWriter;)V

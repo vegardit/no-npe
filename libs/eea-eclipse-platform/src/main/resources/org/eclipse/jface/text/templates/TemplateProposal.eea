@@ -8,58 +8,58 @@ class org/eclipse/jface/text/templates/TemplateProposal
  (Lorg/eclipse/jface/text/templates/Template;Lorg/eclipse/jface/text/templates/TemplateContext;Lorg/eclipse/jface/text/IRegion;Lorg/eclipse/swt/graphics/Image;I)V
 apply
  (Lorg/eclipse/jface/text/IDocument;)V
- (Lorg/eclipse/jface/text/IDocument;)V
+ (L1org/eclipse/jface/text/IDocument;)V # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
 apply
  (Lorg/eclipse/jface/text/IDocument;CI)V
- (Lorg/eclipse/jface/text/IDocument;CI)V
+ (L1org/eclipse/jface/text/IDocument;CI)V # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension)
 apply
  (Lorg/eclipse/jface/text/ITextViewer;CII)V
- (Lorg/eclipse/jface/text/ITextViewer;CII)V
+ (L1org/eclipse/jface/text/ITextViewer;CII)V # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension2)
 getAdditionalProposalInfo
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
 getContext
  ()Lorg/eclipse/jface/text/templates/TemplateContext;
  ()Lorg/eclipse/jface/text/templates/TemplateContext;
 getContextInformation
  ()Lorg/eclipse/jface/text/contentassist/IContextInformation;
- ()Lorg/eclipse/jface/text/contentassist/IContextInformation;
+ ()L0org/eclipse/jface/text/contentassist/IContextInformation; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
 getDisplayString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
 getImage
  ()Lorg/eclipse/swt/graphics/Image;
- ()Lorg/eclipse/swt/graphics/Image;
+ ()L0org/eclipse/swt/graphics/Image; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
 getInformationControlCreator
  ()Lorg/eclipse/jface/text/IInformationControlCreator;
- ()Lorg/eclipse/jface/text/IInformationControlCreator;
+ ()L0org/eclipse/jface/text/IInformationControlCreator; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension3)
 getPrefixCompletionStart
  (Lorg/eclipse/jface/text/IDocument;I)I
- (Lorg/eclipse/jface/text/IDocument;I)I
+ (L1org/eclipse/jface/text/IDocument;I)I # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension3)
 getPrefixCompletionText
  (Lorg/eclipse/jface/text/IDocument;I)Ljava/lang/CharSequence;
- (Lorg/eclipse/jface/text/IDocument;I)Ljava/lang/CharSequence;
+ (L1org/eclipse/jface/text/IDocument;I)L0java/lang/CharSequence; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension3)
 getSelection
  (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/swt/graphics/Point;
- (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/swt/graphics/Point;
+ (L1org/eclipse/jface/text/IDocument;)L0org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
 getTemplate
  ()Lorg/eclipse/jface/text/templates/Template;
  ()Lorg/eclipse/jface/text/templates/Template;
 getTriggerCharacters
  ()[C
- ()[C
+ ()[0C # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension)
 isValidFor
  (Lorg/eclipse/jface/text/IDocument;I)Z
- (Lorg/eclipse/jface/text/IDocument;I)Z
+ (L1org/eclipse/jface/text/IDocument;I)Z # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension)
 selected
  (Lorg/eclipse/jface/text/ITextViewer;Z)V
- (Lorg/eclipse/jface/text/ITextViewer;Z)V
+ (L1org/eclipse/jface/text/ITextViewer;Z)V # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension2)
 setInformationControlCreator
  (Lorg/eclipse/jface/text/IInformationControlCreator;)V
  (Lorg/eclipse/jface/text/IInformationControlCreator;)V
 unselected
  (Lorg/eclipse/jface/text/ITextViewer;)V
- (Lorg/eclipse/jface/text/ITextViewer;)V
+ (L1org/eclipse/jface/text/ITextViewer;)V # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension2)
 validate
  (Lorg/eclipse/jface/text/IDocument;ILorg/eclipse/jface/text/DocumentEvent;)Z
- (Lorg/eclipse/jface/text/IDocument;ILorg/eclipse/jface/text/DocumentEvent;)Z
+ (L1org/eclipse/jface/text/IDocument;IL0org/eclipse/jface/text/DocumentEvent;)Z # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension2)

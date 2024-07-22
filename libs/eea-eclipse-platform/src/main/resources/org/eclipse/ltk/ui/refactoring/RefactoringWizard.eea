@@ -1,0 +1,62 @@
+class org/eclipse/ltk/ui/refactoring/RefactoringWizard
+
+<init>
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;I)V
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;I)V
+<init>
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringContext;I)V
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringContext;I)V
+addPage
+ (Lorg/eclipse/jface/wizard/IWizardPage;)V
+ (Lorg/eclipse/jface/wizard/IWizardPage;)V
+getChange
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+getDefaultPageTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPreviousPage
+ (Lorg/eclipse/jface/wizard/IWizardPage;)Lorg/eclipse/jface/wizard/IWizardPage;
+ (Lorg/eclipse/jface/wizard/IWizardPage;)Lorg/eclipse/jface/wizard/IWizardPage;
+getRefactoring
+ ()Lorg/eclipse/ltk/core/refactoring/Refactoring;
+ ()Lorg/eclipse/ltk/core/refactoring/Refactoring;
+getRefactoringContext
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringContext;
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringContext;
+getStartingPage
+ ()Lorg/eclipse/jface/wizard/IWizardPage;
+ ()Lorg/eclipse/jface/wizard/IWizardPage;
+internalCreateChange
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/CreateChangeOperation;Z)Lorg/eclipse/ltk/core/refactoring/Change;
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/CreateChangeOperation;Z)Lorg/eclipse/ltk/core/refactoring/Change;
+internalGetExpandFirstNode
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;)Z
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;)Z
+internalHasPreviewPage
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;)Z
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;)Z
+internalIsYesNoStyle
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;)Z
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;)Z
+internalPerformFinish
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/PerformChangeOperation;)Lorg/eclipse/ltk/internal/ui/refactoring/FinishResult;
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/PerformChangeOperation;)Lorg/eclipse/ltk/internal/ui/refactoring/FinishResult;
+internalSetChange
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/Change;)V
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/Change;)V
+internalSetPreviewShown
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Z)V
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Z)V
+internalShowBackButtonOnStatusDialog
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;)Z
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;)Z
+setDefaultPageTitle
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setInitialComputationContext
+ (Lorg/eclipse/jface/operation/IRunnableContext;)V
+ (Lorg/eclipse/jface/operation/IRunnableContext;)V
+setInitialConditionCheckingStatus
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;)V
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;)V

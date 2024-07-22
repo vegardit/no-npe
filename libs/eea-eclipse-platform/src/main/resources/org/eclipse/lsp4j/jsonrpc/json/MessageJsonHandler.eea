@@ -1,0 +1,46 @@
+class org/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler
+
+CANCEL_METHOD
+ Lorg/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;
+ L1org/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;
+
+toString
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+
+<init>
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;>;)V
+<init>
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;>;Ljava/util/function/Consumer<Lcom/google/gson/GsonBuilder;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;>;Ljava/util/function/Consumer<Lcom/google/gson/GsonBuilder;>;)V
+format
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+getDefaultGsonBuilder
+ ()Lcom/google/gson/GsonBuilder;
+ ()Lcom/google/gson/GsonBuilder;
+getGson
+ ()Lcom/google/gson/Gson;
+ ()Lcom/google/gson/Gson;
+getJsonRpcMethod
+ (Ljava/lang/String;)Lorg/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;
+ (Ljava/lang/String;)Lorg/eclipse/lsp4j/jsonrpc/json/JsonRpcMethod;
+getMethodProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/json/MethodProvider;
+ ()Lorg/eclipse/lsp4j/jsonrpc/json/MethodProvider;
+parseMessage
+ (Ljava/io/Reader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Message;
+ (Ljava/io/Reader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Message;
+parseMessage
+ (Ljava/lang/CharSequence;)Lorg/eclipse/lsp4j/jsonrpc/messages/Message;
+ (Ljava/lang/CharSequence;)Lorg/eclipse/lsp4j/jsonrpc/messages/Message;
+serialize
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;)Ljava/lang/String;
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;)Ljava/lang/String;
+serialize
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/io/Writer;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/io/Writer;)V
+setMethodProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/json/MethodProvider;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/json/MethodProvider;)V

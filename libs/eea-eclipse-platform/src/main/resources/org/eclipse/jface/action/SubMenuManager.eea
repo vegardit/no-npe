@@ -8,16 +8,16 @@ addMenuListener
  (L1org/eclipse/jface/action/IMenuListener;)V # @Inherited(org.eclipse.jface.action.IMenuManager)
 fill
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.action.IContributionItem)
 fill
  (Lorg/eclipse/swt/widgets/CoolBar;I)V
- (Lorg/eclipse/swt/widgets/CoolBar;I)V
+ (L1org/eclipse/swt/widgets/CoolBar;I)V # @Inherited(org.eclipse.jface.action.IContributionItem)
 fill
  (Lorg/eclipse/swt/widgets/Menu;I)V
- (Lorg/eclipse/swt/widgets/Menu;I)V
+ (L1org/eclipse/swt/widgets/Menu;I)V # @Inherited(org.eclipse.jface.action.IContributionItem)
 fill
  (Lorg/eclipse/swt/widgets/ToolBar;I)V
- (Lorg/eclipse/swt/widgets/ToolBar;I)V
+ (L1org/eclipse/swt/widgets/ToolBar;I)V # @Inherited(org.eclipse.jface.action.IContributionItem)
 find
  (Ljava/lang/String;)Lorg/eclipse/jface/action/IContributionItem;
  (Ljava/lang/String;)Lorg/eclipse/jface/action/IContributionItem;
@@ -29,7 +29,7 @@ findUsingPath
  (Ljava/lang/String;)Lorg/eclipse/jface/action/IContributionItem;
 getId
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.jface.action.IContributionItem)
 getParentMenuManager
  ()Lorg/eclipse/jface/action/IMenuManager;
  ()Lorg/eclipse/jface/action/IMenuManager;

@@ -1,0 +1,60 @@
+class org/eclipse/search/ui/NewSearchUI
+
+ACTION_SET_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+PLUGIN_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+SEARCH_MARKER
+ Ljava/lang/String;
+ L1java/lang/String;
+SEARCH_VIEW_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+activateSearchResultView
+ ()Lorg/eclipse/search/ui/ISearchResultViewPart;
+ ()Lorg/eclipse/search/ui/ISearchResultViewPart;
+addQueryListener
+ (Lorg/eclipse/search/ui/IQueryListener;)V
+ (Lorg/eclipse/search/ui/IQueryListener;)V
+cancelQuery
+ (Lorg/eclipse/search/ui/ISearchQuery;)V
+ (Lorg/eclipse/search/ui/ISearchQuery;)V
+getDefaultPerspectiveId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getQueries
+ ()[Lorg/eclipse/search/ui/ISearchQuery;
+ ()[Lorg/eclipse/search/ui/ISearchQuery;
+getSearchResultView
+ ()Lorg/eclipse/search/ui/ISearchResultViewPart;
+ ()Lorg/eclipse/search/ui/ISearchResultViewPart;
+isQueryRunning
+ (Lorg/eclipse/search/ui/ISearchQuery;)Z
+ (Lorg/eclipse/search/ui/ISearchQuery;)Z
+openSearchDialog
+ (Lorg/eclipse/ui/IWorkbenchWindow;Ljava/lang/String;)V
+ (Lorg/eclipse/ui/IWorkbenchWindow;Ljava/lang/String;)V
+removeQuery
+ (Lorg/eclipse/search/ui/ISearchQuery;)V
+ (Lorg/eclipse/search/ui/ISearchQuery;)V
+removeQueryListener
+ (Lorg/eclipse/search/ui/IQueryListener;)V
+ (Lorg/eclipse/search/ui/IQueryListener;)V
+runQuery
+ (Lorg/eclipse/search/ui/ISearchQuery;)V
+ (Lorg/eclipse/search/ui/ISearchQuery;)V
+runQueryInBackground
+ (Lorg/eclipse/search/ui/ISearchQuery;)V
+ (Lorg/eclipse/search/ui/ISearchQuery;)V
+runQueryInBackground
+ (Lorg/eclipse/search/ui/ISearchQuery;Lorg/eclipse/search/ui/ISearchResultViewPart;)V
+ (Lorg/eclipse/search/ui/ISearchQuery;Lorg/eclipse/search/ui/ISearchResultViewPart;)V
+runQueryInForeground
+ (Lorg/eclipse/jface/operation/IRunnableContext;Lorg/eclipse/search/ui/ISearchQuery;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/jface/operation/IRunnableContext;Lorg/eclipse/search/ui/ISearchQuery;)Lorg/eclipse/core/runtime/IStatus;
+runQueryInForeground
+ (Lorg/eclipse/jface/operation/IRunnableContext;Lorg/eclipse/search/ui/ISearchQuery;Lorg/eclipse/search/ui/ISearchResultViewPart;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/jface/operation/IRunnableContext;Lorg/eclipse/search/ui/ISearchQuery;Lorg/eclipse/search/ui/ISearchResultViewPart;)Lorg/eclipse/core/runtime/IStatus;

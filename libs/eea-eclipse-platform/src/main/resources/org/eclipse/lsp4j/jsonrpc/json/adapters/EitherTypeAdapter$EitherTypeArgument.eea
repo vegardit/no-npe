@@ -1,0 +1,38 @@
+class org/eclipse/lsp4j/jsonrpc/json/adapters/EitherTypeAdapter$EitherTypeArgument
+ <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+adapter
+ Lcom/google/gson/TypeAdapter<TT;>;
+ Lcom/google/gson/TypeAdapter<TT;>;
+expectedTokens
+ Ljava/util/Collection<Lcom/google/gson/stream/JsonToken;>;
+ Ljava/util/Collection<Lcom/google/gson/stream/JsonToken;>;
+typeToken
+ Lcom/google/gson/reflect/TypeToken<TT;>;
+ Lcom/google/gson/reflect/TypeToken<TT;>;
+
+<init>
+ (Lcom/google/gson/Gson;Ljava/lang/reflect/Type;)V
+ (Lcom/google/gson/Gson;Ljava/lang/reflect/Type;)V
+<init>
+ (Lcom/google/gson/Gson;Ljava/lang/reflect/Type;Lcom/google/gson/TypeAdapter<TT;>;)V
+ (Lcom/google/gson/Gson;Ljava/lang/reflect/Type;Lcom/google/gson/TypeAdapter<TT;>;)V
+getExpectedToken
+ (Ljava/lang/Class<*>;)Lcom/google/gson/stream/JsonToken;
+ (Ljava/lang/Class<*>;)Lcom/google/gson/stream/JsonToken;
+isAssignable
+ (Lcom/google/gson/stream/JsonToken;)Z
+ (Lcom/google/gson/stream/JsonToken;)Z
+read
+ (Lcom/google/gson/JsonElement;)TT;
+ (Lcom/google/gson/JsonElement;)TT;
+read
+ (Lcom/google/gson/stream/JsonReader;)TT;
+ (Lcom/google/gson/stream/JsonReader;)TT;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+write
+ (Lcom/google/gson/stream/JsonWriter;TT;)V
+ (Lcom/google/gson/stream/JsonWriter;TT;)V

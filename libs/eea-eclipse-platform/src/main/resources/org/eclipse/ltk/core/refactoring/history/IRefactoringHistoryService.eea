@@ -1,0 +1,41 @@
+class org/eclipse/ltk/core/refactoring/history/IRefactoringHistoryService
+
+addExecutionListener
+ (Lorg/eclipse/ltk/core/refactoring/history/IRefactoringExecutionListener;)V
+ (L1org/eclipse/ltk/core/refactoring/history/IRefactoringExecutionListener;)V
+addHistoryListener
+ (Lorg/eclipse/ltk/core/refactoring/history/IRefactoringHistoryListener;)V
+ (L1org/eclipse/ltk/core/refactoring/history/IRefactoringHistoryListener;)V
+getProjectHistory
+ (Lorg/eclipse/core/resources/IProject;JJILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+ (Lorg/eclipse/core/resources/IProject;JJILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+getProjectHistory
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+ (Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+getRefactoringHistory
+ ([Lorg/eclipse/core/resources/IProject;JJILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+ ([Lorg/eclipse/core/resources/IProject;JJILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+getRefactoringHistory
+ ([Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+ ([Lorg/eclipse/core/resources/IProject;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+getWorkspaceHistory
+ (JJLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+ (JJLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+getWorkspaceHistory
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+readRefactoringHistory
+ (Ljava/io/InputStream;I)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+ (Ljava/io/InputStream;I)Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;
+removeExecutionListener
+ (Lorg/eclipse/ltk/core/refactoring/history/IRefactoringExecutionListener;)V
+ (L1org/eclipse/ltk/core/refactoring/history/IRefactoringExecutionListener;)V
+removeHistoryListener
+ (Lorg/eclipse/ltk/core/refactoring/history/IRefactoringHistoryListener;)V
+ (L1org/eclipse/ltk/core/refactoring/history/IRefactoringHistoryListener;)V
+writeRefactoringDescriptors
+ ([Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;Ljava/io/OutputStream;IZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;Ljava/io/OutputStream;IZLorg/eclipse/core/runtime/IProgressMonitor;)V
+writeRefactoringSession
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringSessionDescriptor;Ljava/io/OutputStream;Z)V
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringSessionDescriptor;Ljava/io/OutputStream;Z)V

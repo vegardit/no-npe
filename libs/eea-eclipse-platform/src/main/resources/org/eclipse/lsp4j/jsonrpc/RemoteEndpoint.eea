@@ -1,0 +1,75 @@
+class org/eclipse/lsp4j/jsonrpc/RemoteEndpoint
+
+DEFAULT_EXCEPTION_HANDLER
+ Ljava/util/function/Function<Ljava/lang/Throwable;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;>;
+ L1java/util/function/Function<Ljava/lang/Throwable;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;>;
+
+<init>
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/Endpoint;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/Endpoint;)V
+<init>
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/Endpoint;Ljava/util/function/Function<Ljava/lang/Throwable;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/Endpoint;Ljava/util/function/Function<Ljava/lang/Throwable;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;>;)V
+consume
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;)V
+createErrorResponseMessage
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+createNotificationMessage
+ (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;
+ (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;
+createRequestMessage
+ (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;
+ (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;
+createResponseMessage
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+createResultResponseMessage
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+getJsonHandler
+ ()Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;
+ ()Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;
+handle
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+handleCancellation
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;)Z
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;)Z
+handleNotification
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;)V
+handleRequest
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)V
+handleRequestIssues
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+handleResponse
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;)V
+handleResponseIssues
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+isCancellation
+ (Ljava/lang/Throwable;)Z
+ (Ljava/lang/Throwable;)Z
+logIssues
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+notify
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+request
+ (Ljava/lang/String;Ljava/lang/Object;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
+ (Ljava/lang/String;Ljava/lang/Object;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
+resolveMethod
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+sendCancelNotification
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;)V
+setJsonHandler
+ (Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;)V

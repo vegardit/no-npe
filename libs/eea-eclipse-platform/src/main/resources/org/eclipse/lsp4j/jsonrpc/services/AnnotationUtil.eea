@@ -1,0 +1,32 @@
+class org/eclipse/lsp4j/jsonrpc/services/AnnotationUtil
+
+createMethodInfo
+ (Ljava/lang/reflect/Method;Ljava/lang/String;)Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;
+ (Ljava/lang/reflect/Method;Ljava/lang/String;)Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;
+createMethodInfo
+ (Ljava/lang/reflect/Method;ZLjava/lang/String;Ljava/lang/String;)Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;
+ (Ljava/lang/reflect/Method;ZLjava/lang/String;Ljava/lang/String;)Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;
+createNotificationInfo
+ (Ljava/lang/reflect/Method;Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/services/JsonNotification;)Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;
+ (Ljava/lang/reflect/Method;Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/services/JsonNotification;)Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;
+createRequestInfo
+ (Ljava/lang/reflect/Method;Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/services/JsonRequest;)Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;
+ (Ljava/lang/reflect/Method;Ljava/lang/String;Lorg/eclipse/lsp4j/jsonrpc/services/JsonRequest;)Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;
+findDelegateSegments
+ (Ljava/lang/Class<*>;Ljava/util/Set<Ljava/lang/Class<*>;>;Ljava/util/function/Consumer<Ljava/lang/reflect/Method;>;)V
+ (Ljava/lang/Class<*>;Ljava/util/Set<Ljava/lang/Class<*>;>;Ljava/util/function/Consumer<Ljava/lang/reflect/Method;>;)V
+findRpcMethods
+ (Ljava/lang/Class<*>;Ljava/util/Set<Ljava/lang/Class<*>;>;Ljava/util/function/Consumer<Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;>;)V
+ (Ljava/lang/Class<*>;Ljava/util/Set<Ljava/lang/Class<*>;>;Ljava/util/function/Consumer<Lorg/eclipse/lsp4j/jsonrpc/services/AnnotationUtil$MethodInfo;>;)V
+getMethodName
+ (Ljava/lang/reflect/Method;ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/reflect/Method;ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getParameterTypes
+ (Ljava/lang/reflect/Method;)[Ljava/lang/reflect/Type;
+ (Ljava/lang/reflect/Method;)[Ljava/lang/reflect/Type;
+getSegment
+ (Ljava/lang/Class<*>;)Ljava/lang/String;
+ (Ljava/lang/Class<*>;)Ljava/lang/String;
+isDelegateMethod
+ (Ljava/lang/reflect/Method;)Z
+ (Ljava/lang/reflect/Method;)Z

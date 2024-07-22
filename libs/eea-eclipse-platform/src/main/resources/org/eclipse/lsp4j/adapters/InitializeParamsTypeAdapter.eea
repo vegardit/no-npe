@@ -1,0 +1,75 @@
+class org/eclipse/lsp4j/adapters/InitializeParamsTypeAdapter
+
+super com/google/gson/TypeAdapter
+ <Lorg/eclipse/lsp4j/InitializeParams;>
+ <Lorg/eclipse/lsp4j/InitializeParams;>
+
+<init>
+ (Lcom/google/gson/Gson;)V
+ (Lcom/google/gson/Gson;)V
+read
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/InitializeParams;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/InitializeParams;
+readCapabilities
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/ClientCapabilities;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/ClientCapabilities;
+readClientInfo
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/ClientInfo;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/ClientInfo;
+readInitializationOptions
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
+readLocale
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+readProcessId
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/Integer;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/Integer;
+readRootPath
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+readRootUri
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+readTrace
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+readWorkDoneToken
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Integer;>;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Integer;>;
+readWorkspaceFolders
+ (Lcom/google/gson/stream/JsonReader;)Ljava/util/List<Lorg/eclipse/lsp4j/WorkspaceFolder;>;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/util/List<Lorg/eclipse/lsp4j/WorkspaceFolder;>;
+write
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/InitializeParams;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/InitializeParams;)V
+writeCapabilities
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/ClientCapabilities;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/ClientCapabilities;)V
+writeClientInfo
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/ClientInfo;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/ClientInfo;)V
+writeInitializationOptions
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
+writeLocale
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+writeProcessId
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Integer;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Integer;)V
+writeRootPath
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+writeRootUri
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+writeTrace
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+writeWorkDoneToken
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Integer;>;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Integer;>;)V
+writeWorkspaceFolders
+ (Lcom/google/gson/stream/JsonWriter;Ljava/util/List<Lorg/eclipse/lsp4j/WorkspaceFolder;>;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/util/List<Lorg/eclipse/lsp4j/WorkspaceFolder;>;)V

@@ -1,0 +1,26 @@
+class org/eclipse/lsp4j/jsonrpc/validation/ReflectiveMessageValidator
+
+<init>
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;)V
+consume
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;)V
+createPathString
+ (Ljava/util/Deque<Ljava/lang/Object;>;)Ljava/lang/String;
+ (Ljava/util/Deque<Ljava/lang/Object;>;)Ljava/lang/String;
+getPropertyName
+ (Ljava/lang/reflect/Method;)Ljava/lang/String;
+ (Ljava/lang/reflect/Method;)Ljava/lang/String;
+isGetter
+ (Ljava/lang/reflect/Method;)Z
+ (Ljava/lang/reflect/Method;)Z
+isValid
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+validate
+ (Ljava/lang/Object;)Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;
+ (Ljava/lang/Object;)Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;
+validate
+ (Ljava/lang/Object;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;Ljava/util/Deque<Ljava/lang/Object;>;Ljava/util/Deque<Ljava/lang/Object;>;)V
+ (Ljava/lang/Object;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;Ljava/util/Deque<Ljava/lang/Object;>;Ljava/util/Deque<Ljava/lang/Object;>;)V

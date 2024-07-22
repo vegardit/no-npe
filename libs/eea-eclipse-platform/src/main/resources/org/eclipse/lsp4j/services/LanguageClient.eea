@@ -1,0 +1,59 @@
+class org/eclipse/lsp4j/services/LanguageClient
+
+applyEdit
+ (Lorg/eclipse/lsp4j/ApplyWorkspaceEditParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/ApplyWorkspaceEditResponse;>;
+ (L1org/eclipse/lsp4j/ApplyWorkspaceEditParams;)L1java/util/concurrent/CompletableFuture<L1org/eclipse/lsp4j/ApplyWorkspaceEditResponse;>;
+configuration
+ (Lorg/eclipse/lsp4j/ConfigurationParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Ljava/lang/Object;>;>;
+ (L1org/eclipse/lsp4j/ConfigurationParams;)L1java/util/concurrent/CompletableFuture<L1java/util/List<L1java/lang/Object;>;>;
+createProgress
+ (Lorg/eclipse/lsp4j/WorkDoneProgressCreateParams;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ (L1org/eclipse/lsp4j/WorkDoneProgressCreateParams;)L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+logMessage
+ (Lorg/eclipse/lsp4j/MessageParams;)V
+ (L1org/eclipse/lsp4j/MessageParams;)V
+logTrace
+ (Lorg/eclipse/lsp4j/LogTraceParams;)V
+ (L1org/eclipse/lsp4j/LogTraceParams;)V
+notifyProgress
+ (Lorg/eclipse/lsp4j/ProgressParams;)V
+ (L1org/eclipse/lsp4j/ProgressParams;)V
+publishDiagnostics
+ (Lorg/eclipse/lsp4j/PublishDiagnosticsParams;)V
+ (L1org/eclipse/lsp4j/PublishDiagnosticsParams;)V
+refreshCodeLenses
+ ()Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ ()L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+refreshDiagnostics
+ ()Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ ()L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+refreshInlayHints
+ ()Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ ()L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+refreshInlineValues
+ ()Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ ()L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+refreshSemanticTokens
+ ()Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ ()L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+registerCapability
+ (Lorg/eclipse/lsp4j/RegistrationParams;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ (L1org/eclipse/lsp4j/RegistrationParams;)L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+showDocument
+ (Lorg/eclipse/lsp4j/ShowDocumentParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/ShowDocumentResult;>;
+ (L1org/eclipse/lsp4j/ShowDocumentParams;)L1java/util/concurrent/CompletableFuture<L1org/eclipse/lsp4j/ShowDocumentResult;>;
+showMessage
+ (Lorg/eclipse/lsp4j/MessageParams;)V
+ (L1org/eclipse/lsp4j/MessageParams;)V
+showMessageRequest
+ (Lorg/eclipse/lsp4j/ShowMessageRequestParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/MessageActionItem;>;
+ (L1org/eclipse/lsp4j/ShowMessageRequestParams;)L1java/util/concurrent/CompletableFuture<L1org/eclipse/lsp4j/MessageActionItem;>;
+telemetryEvent
+ (Ljava/lang/Object;)V
+ (L1java/lang/Object;)V
+unregisterCapability
+ (Lorg/eclipse/lsp4j/UnregistrationParams;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ (L1org/eclipse/lsp4j/UnregistrationParams;)L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+workspaceFolders
+ ()Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/WorkspaceFolder;>;>;
+ ()L1java/util/concurrent/CompletableFuture<L1java/util/List<L1org/eclipse/lsp4j/WorkspaceFolder;>;>;

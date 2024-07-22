@@ -1,0 +1,59 @@
+class org/eclipse/lsp4j/jsonrpc/messages/Either
+ <L:Ljava/lang/Object;R:Ljava/lang/Object;>
+ <L:Ljava/lang/Object;R:Ljava/lang/Object;>
+
+collectDisjoinTypes
+ (Ljava/lang/Class<*>;Ljava/util/Collection<Ljava/lang/reflect/Type;>;)Ljava/util/Collection<Ljava/lang/reflect/Type;>;
+ (Ljava/lang/Class<*>;Ljava/util/Collection<Ljava/lang/reflect/Type;>;)Ljava/util/Collection<Ljava/lang/reflect/Type;>;
+collectDisjoinTypes
+ (Ljava/lang/reflect/ParameterizedType;Ljava/util/Collection<Ljava/lang/reflect/Type;>;)Ljava/util/Collection<Ljava/lang/reflect/Type;>;
+ (Ljava/lang/reflect/ParameterizedType;Ljava/util/Collection<Ljava/lang/reflect/Type;>;)Ljava/util/Collection<Ljava/lang/reflect/Type;>;
+collectDisjoinTypes
+ (Ljava/lang/reflect/Type;Ljava/util/Collection<Ljava/lang/reflect/Type;>;)Ljava/util/Collection<Ljava/lang/reflect/Type;>;
+ (Ljava/lang/reflect/Type;Ljava/util/Collection<Ljava/lang/reflect/Type;>;)Ljava/util/Collection<Ljava/lang/reflect/Type;>;
+forLeft
+ <L:Ljava/lang/Object;R:Ljava/lang/Object;>(TL;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+ <L:Ljava/lang/Object;R:Ljava/lang/Object;>(TL;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+forRight
+ <L:Ljava/lang/Object;R:Ljava/lang/Object;>(TR;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+ <L:Ljava/lang/Object;R:Ljava/lang/Object;>(TR;)Lorg/eclipse/lsp4j/jsonrpc/messages/Either<TL;TR;>;
+getAllDisjoinTypes
+ (Ljava/lang/reflect/Type;)Ljava/util/Collection<Ljava/lang/reflect/Type;>;
+ (Ljava/lang/reflect/Type;)Ljava/util/Collection<Ljava/lang/reflect/Type;>;
+getLeftDisjointType
+ (Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+ (Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+getRightDisjointType
+ (Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+ (Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+isEither
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+isEither
+ (Ljava/lang/reflect/ParameterizedType;)Z
+ (Ljava/lang/reflect/ParameterizedType;)Z
+isEither
+ (Ljava/lang/reflect/Type;)Z
+ (Ljava/lang/reflect/Type;)Z
+
+<init>
+ (TL;TR;)V
+ (TL;TR;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+get
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getLeft
+ ()TL;
+ ()TL;
+getRight
+ ()TR;
+ ()TR;
+map
+ <T:Ljava/lang/Object;>(Ljava/util/function/Function<-TL;+TT;>;Ljava/util/function/Function<-TR;+TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Function<-TL;+TT;>;Ljava/util/function/Function<-TR;+TT;>;)TT;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

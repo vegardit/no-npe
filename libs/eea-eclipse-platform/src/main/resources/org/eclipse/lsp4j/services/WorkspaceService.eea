@@ -1,0 +1,41 @@
+class org/eclipse/lsp4j/services/WorkspaceService
+
+diagnostic
+ (Lorg/eclipse/lsp4j/WorkspaceDiagnosticParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceDiagnosticReport;>;
+ (Lorg/eclipse/lsp4j/WorkspaceDiagnosticParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceDiagnosticReport;>;
+didChangeConfiguration
+ (Lorg/eclipse/lsp4j/DidChangeConfigurationParams;)V
+ (Lorg/eclipse/lsp4j/DidChangeConfigurationParams;)V
+didChangeWatchedFiles
+ (Lorg/eclipse/lsp4j/DidChangeWatchedFilesParams;)V
+ (Lorg/eclipse/lsp4j/DidChangeWatchedFilesParams;)V
+didChangeWorkspaceFolders
+ (Lorg/eclipse/lsp4j/DidChangeWorkspaceFoldersParams;)V
+ (Lorg/eclipse/lsp4j/DidChangeWorkspaceFoldersParams;)V
+didCreateFiles
+ (Lorg/eclipse/lsp4j/CreateFilesParams;)V
+ (Lorg/eclipse/lsp4j/CreateFilesParams;)V
+didDeleteFiles
+ (Lorg/eclipse/lsp4j/DeleteFilesParams;)V
+ (Lorg/eclipse/lsp4j/DeleteFilesParams;)V
+didRenameFiles
+ (Lorg/eclipse/lsp4j/RenameFilesParams;)V
+ (Lorg/eclipse/lsp4j/RenameFilesParams;)V
+executeCommand
+ (Lorg/eclipse/lsp4j/ExecuteCommandParams;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
+ (Lorg/eclipse/lsp4j/ExecuteCommandParams;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
+resolveWorkspaceSymbol
+ (Lorg/eclipse/lsp4j/WorkspaceSymbol;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceSymbol;>;
+ (Lorg/eclipse/lsp4j/WorkspaceSymbol;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceSymbol;>;
+symbol
+ (Lorg/eclipse/lsp4j/WorkspaceSymbolParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/SymbolInformation;>;Ljava/util/List<+Lorg/eclipse/lsp4j/WorkspaceSymbol;>;>;>;
+ (Lorg/eclipse/lsp4j/WorkspaceSymbolParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/SymbolInformation;>;Ljava/util/List<+Lorg/eclipse/lsp4j/WorkspaceSymbol;>;>;>;
+willCreateFiles
+ (Lorg/eclipse/lsp4j/CreateFilesParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceEdit;>;
+ (Lorg/eclipse/lsp4j/CreateFilesParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceEdit;>;
+willDeleteFiles
+ (Lorg/eclipse/lsp4j/DeleteFilesParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceEdit;>;
+ (Lorg/eclipse/lsp4j/DeleteFilesParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceEdit;>;
+willRenameFiles
+ (Lorg/eclipse/lsp4j/RenameFilesParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceEdit;>;
+ (Lorg/eclipse/lsp4j/RenameFilesParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceEdit;>;

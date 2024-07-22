@@ -1,0 +1,32 @@
+class org/eclipse/ltk/core/refactoring/PerformChangeOperation
+
+<init>
+ (Lorg/eclipse/ltk/core/refactoring/Change;)V
+ (Lorg/eclipse/ltk/core/refactoring/Change;)V
+<init>
+ (Lorg/eclipse/ltk/core/refactoring/CreateChangeOperation;)V
+ (Lorg/eclipse/ltk/core/refactoring/CreateChangeOperation;)V
+executeChange
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getChange
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+getConditionCheckingStatus
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+getUndoChange
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+getValidationStatus
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+run
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L0org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.core.resources.IWorkspaceRunnable)
+setSchedulingRule
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+ (Lorg/eclipse/core/runtime/jobs/ISchedulingRule;)V
+setUndoManager
+ (Lorg/eclipse/ltk/core/refactoring/IUndoManager;Ljava/lang/String;)V
+ (Lorg/eclipse/ltk/core/refactoring/IUndoManager;Ljava/lang/String;)V

@@ -2,28 +2,28 @@ class org/eclipse/jface/text/codemining/AbstractCodeMining
 
 <init>
  (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;)V
- (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;)V
+ (L1org/eclipse/jface/text/Position;L1org/eclipse/jface/text/codemining/ICodeMiningProvider;L0java/util/function/Consumer<L1org/eclipse/swt/events/MouseEvent;>;)V
 doResolve
  (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
- (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ (L1org/eclipse/jface/text/ITextViewer;L1org/eclipse/core/runtime/IProgressMonitor;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>;
 draw
  (Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/custom/StyledText;Lorg/eclipse/swt/graphics/Color;II)Lorg/eclipse/swt/graphics/Point;
- (Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/custom/StyledText;Lorg/eclipse/swt/graphics/Color;II)Lorg/eclipse/swt/graphics/Point;
+ (L1org/eclipse/swt/graphics/GC;L1org/eclipse/swt/custom/StyledText;L1org/eclipse/swt/graphics/Color;II)Lorg/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.codemining.ICodeMining)
 getAction
  ()Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;
- ()Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;
+ ()L0java/util/function/Consumer<L1org/eclipse/swt/events/MouseEvent;>; # @Inherited(org.eclipse.jface.text.codemining.ICodeMining)
 getLabel
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.jface.text.codemining.ICodeMining)
 getPosition
  ()Lorg/eclipse/jface/text/Position;
- ()Lorg/eclipse/jface/text/Position;
+ ()L1org/eclipse/jface/text/Position; # @Inherited(org.eclipse.jface.text.codemining.ICodeMining)
 getProvider
  ()Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;
- ()Lorg/eclipse/jface/text/codemining/ICodeMiningProvider;
+ ()L1org/eclipse/jface/text/codemining/ICodeMiningProvider; # @Inherited(org.eclipse.jface.text.codemining.ICodeMining)
 resolve
  (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
- (Lorg/eclipse/jface/text/ITextViewer;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ (L1org/eclipse/jface/text/ITextViewer;L1org/eclipse/core/runtime/IProgressMonitor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>; # @Inherited(org.eclipse.jface.text.codemining.ICodeMining)
 setLabel
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

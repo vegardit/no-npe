@@ -1,0 +1,17 @@
+class org/eclipse/lsp4j/jsonrpc/json/adapters/CollectionTypeAdapter
+ <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super com/google/gson/TypeAdapter
+ <Ljava/util/Collection<TE;>;>
+ <Ljava/util/Collection<TE;>;>
+
+<init>
+ (Lcom/google/gson/Gson;Ljava/lang/reflect/Type;Lcom/google/gson/TypeAdapter<TE;>;Ljava/util/function/Supplier<Ljava/util/Collection<TE;>;>;)V
+ (Lcom/google/gson/Gson;Ljava/lang/reflect/Type;Lcom/google/gson/TypeAdapter<TE;>;Ljava/util/function/Supplier<Ljava/util/Collection<TE;>;>;)V
+read
+ (Lcom/google/gson/stream/JsonReader;)Ljava/util/Collection<TE;>;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/util/Collection<TE;>;
+write
+ (Lcom/google/gson/stream/JsonWriter;Ljava/util/Collection<TE;>;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/util/Collection<TE;>;)V

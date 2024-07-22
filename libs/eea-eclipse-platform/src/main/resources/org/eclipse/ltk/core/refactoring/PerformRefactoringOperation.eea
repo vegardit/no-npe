@@ -1,0 +1,20 @@
+class org/eclipse/ltk/core/refactoring/PerformRefactoringOperation
+
+<init>
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;I)V
+ (Lorg/eclipse/ltk/core/refactoring/Refactoring;I)V
+<init>
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringContext;I)V
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringContext;I)V
+getConditionStatus
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+getUndoChange
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+getValidationStatus
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ ()Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+run
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L0org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.core.resources.IWorkspaceRunnable)

@@ -1,0 +1,68 @@
+class org/eclipse/ltk/core/refactoring/TextChange
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+acquireDocument
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/text/IDocument;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/jface/text/IDocument;
+addEdit
+ (Lorg/eclipse/text/edits/TextEdit;)V
+ (Lorg/eclipse/text/edits/TextEdit;)V
+addTextEditChangeGroup
+ (Lorg/eclipse/ltk/core/refactoring/TextEditChangeGroup;)V
+ (Lorg/eclipse/ltk/core/refactoring/TextEditChangeGroup;)V
+addTextEditGroup
+ (Lorg/eclipse/text/edits/TextEditGroup;)V
+ (Lorg/eclipse/text/edits/TextEditGroup;)V
+commit
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/jface/text/IDocument;L1org/eclipse/core/runtime/IProgressMonitor;)V
+createUndoChange
+ (Lorg/eclipse/text/edits/UndoEdit;)Lorg/eclipse/ltk/core/refactoring/Change;
+ (L1org/eclipse/text/edits/UndoEdit;)L0org/eclipse/ltk/core/refactoring/Change;
+getCurrentContent
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+getCurrentContent
+ (Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ (Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+getCurrentDocument
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/text/IDocument;
+getEdit
+ ()Lorg/eclipse/text/edits/TextEdit;
+ ()Lorg/eclipse/text/edits/TextEdit;
+getPreviewContent
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+getPreviewContent
+ ([Lorg/eclipse/ltk/core/refactoring/TextEditBasedChangeGroup;Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ ([Lorg/eclipse/ltk/core/refactoring/TextEditBasedChangeGroup;Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+getPreviewContent
+ ([Lorg/eclipse/ltk/core/refactoring/TextEditChangeGroup;Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+ ([Lorg/eclipse/ltk/core/refactoring/TextEditChangeGroup;Lorg/eclipse/jface/text/IRegion;ZILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/String;
+getPreviewDocument
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/text/IDocument;
+getPreviewEdit
+ (Lorg/eclipse/text/edits/TextEdit;)Lorg/eclipse/text/edits/TextEdit;
+ (Lorg/eclipse/text/edits/TextEdit;)Lorg/eclipse/text/edits/TextEdit;
+getPreviewEdits
+ ([Lorg/eclipse/text/edits/TextEdit;)[Lorg/eclipse/text/edits/TextEdit;
+ ([Lorg/eclipse/text/edits/TextEdit;)[Lorg/eclipse/text/edits/TextEdit;
+getTextEditChangeGroups
+ ()[Lorg/eclipse/ltk/core/refactoring/TextEditChangeGroup;
+ ()[Lorg/eclipse/ltk/core/refactoring/TextEditChangeGroup;
+perform
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Change;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L0org/eclipse/ltk/core/refactoring/Change; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+performEdits
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/text/edits/UndoEdit;
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/text/edits/UndoEdit;
+releaseDocument
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/jface/text/IDocument;L1org/eclipse/core/runtime/IProgressMonitor;)V
+setEdit
+ (Lorg/eclipse/text/edits/TextEdit;)V
+ (Lorg/eclipse/text/edits/TextEdit;)V

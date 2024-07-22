@@ -1,0 +1,62 @@
+class org/eclipse/ltk/core/refactoring/CompositeChange
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;[Lorg/eclipse/ltk/core/refactoring/Change;)V
+ (Ljava/lang/String;[Lorg/eclipse/ltk/core/refactoring/Change;)V
+add
+ (Lorg/eclipse/ltk/core/refactoring/Change;)V
+ (Lorg/eclipse/ltk/core/refactoring/Change;)V
+addAll
+ ([Lorg/eclipse/ltk/core/refactoring/Change;)V
+ ([Lorg/eclipse/ltk/core/refactoring/Change;)V
+clear
+ ()[Lorg/eclipse/ltk/core/refactoring/Change;
+ ()[Lorg/eclipse/ltk/core/refactoring/Change;
+createUndoChange
+ ([Lorg/eclipse/ltk/core/refactoring/Change;)Lorg/eclipse/ltk/core/refactoring/Change;
+ ([Lorg/eclipse/ltk/core/refactoring/Change;)Lorg/eclipse/ltk/core/refactoring/Change;
+getAffectedObjects
+ ()[Ljava/lang/Object;
+ ()[0L1java/lang/Object; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+getChildren
+ ()[Lorg/eclipse/ltk/core/refactoring/Change;
+ ()[Lorg/eclipse/ltk/core/refactoring/Change;
+getDescriptor
+ ()Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;
+ ()L0org/eclipse/ltk/core/refactoring/ChangeDescriptor; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+getModifiedElement
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+getUndoUntilException
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+initializeValidationData
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+internalHandleException
+ (Lorg/eclipse/ltk/core/refactoring/Change;Ljava/lang/Throwable;)V
+ (Lorg/eclipse/ltk/core/refactoring/Change;Ljava/lang/Throwable;)V
+internalProcessOnCancel
+ (Lorg/eclipse/ltk/core/refactoring/Change;)Z
+ (Lorg/eclipse/ltk/core/refactoring/Change;)Z
+isValid
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/ltk/core/refactoring/RefactoringStatus; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+merge
+ (Lorg/eclipse/ltk/core/refactoring/CompositeChange;)V
+ (Lorg/eclipse/ltk/core/refactoring/CompositeChange;)V
+perform
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/Change;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L0org/eclipse/ltk/core/refactoring/Change; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+remove
+ (Lorg/eclipse/ltk/core/refactoring/Change;)Z
+ (Lorg/eclipse/ltk/core/refactoring/Change;)Z
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

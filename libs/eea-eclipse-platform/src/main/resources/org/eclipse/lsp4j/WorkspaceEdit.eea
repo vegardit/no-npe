@@ -1,0 +1,32 @@
+class org/eclipse/lsp4j/WorkspaceEdit
+
+<init>
+ (Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentEdit;Lorg/eclipse/lsp4j/ResourceOperation;>;>;)V
+ (Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentEdit;Lorg/eclipse/lsp4j/ResourceOperation;>;>;)V
+<init>
+ (Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/lsp4j/TextEdit;>;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/lsp4j/TextEdit;>;>;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getChangeAnnotations
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/ChangeAnnotation;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/ChangeAnnotation;>;
+getChanges
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/lsp4j/TextEdit;>;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/lsp4j/TextEdit;>;>;
+getDocumentChanges
+ ()Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentEdit;Lorg/eclipse/lsp4j/ResourceOperation;>;>;
+ ()Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentEdit;Lorg/eclipse/lsp4j/ResourceOperation;>;>;
+setChangeAnnotations
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/ChangeAnnotation;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/lsp4j/ChangeAnnotation;>;)V
+setChanges
+ (Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/lsp4j/TextEdit;>;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/lsp4j/TextEdit;>;>;)V
+setDocumentChanges
+ (Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentEdit;Lorg/eclipse/lsp4j/ResourceOperation;>;>;)V
+ (Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentEdit;Lorg/eclipse/lsp4j/ResourceOperation;>;>;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

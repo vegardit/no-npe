@@ -1,0 +1,57 @@
+class org/eclipse/lsp4j/adapters/SymbolInformationTypeAdapter
+
+super com/google/gson/TypeAdapter
+ <Lorg/eclipse/lsp4j/SymbolInformation;>
+ <Lorg/eclipse/lsp4j/SymbolInformation;>
+
+<init>
+ (Lcom/google/gson/Gson;)V
+ (Lcom/google/gson/Gson;)V
+read
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/SymbolInformation;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/SymbolInformation;
+readContainerName
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+readDeprecated
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/Boolean;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/Boolean;
+readKind
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/SymbolKind;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/SymbolKind;
+readLocation
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/Location;
+ (Lcom/google/gson/stream/JsonReader;)Lorg/eclipse/lsp4j/Location;
+readName
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
+readTags
+ (Lcom/google/gson/stream/JsonReader;)Ljava/util/List<Lorg/eclipse/lsp4j/SymbolTag;>;
+ (Lcom/google/gson/stream/JsonReader;)Ljava/util/List<Lorg/eclipse/lsp4j/SymbolTag;>;
+write
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/SymbolInformation;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/SymbolInformation;)V
+writeContainerName
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+writeDeprecated
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Boolean;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/Boolean;)V
+writeKind
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/SymbolKind;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/SymbolKind;)V
+writeLocation
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Location;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Location;)V
+writeName
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/lang/String;)V
+writePosition
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Position;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Position;)V
+writeRange
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Range;)V
+ (Lcom/google/gson/stream/JsonWriter;Lorg/eclipse/lsp4j/Range;)V
+writeTags
+ (Lcom/google/gson/stream/JsonWriter;Ljava/util/List<Lorg/eclipse/lsp4j/SymbolTag;>;)V
+ (Lcom/google/gson/stream/JsonWriter;Ljava/util/List<Lorg/eclipse/lsp4j/SymbolTag;>;)V

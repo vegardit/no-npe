@@ -1,0 +1,32 @@
+class org/eclipse/ltk/ui/refactoring/history/IRefactoringHistoryControl
+
+addCheckStateListener
+ (Lorg/eclipse/jface/viewers/ICheckStateListener;)V
+ (L1org/eclipse/jface/viewers/ICheckStateListener;)V
+addSelectionChangedListener
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V
+getCheckedDescriptors
+ ()[Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;
+ ()[Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getSelectedDescriptors
+ ()[Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;
+ ()[Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;
+removeCheckStateListener
+ (Lorg/eclipse/jface/viewers/ICheckStateListener;)V
+ (L1org/eclipse/jface/viewers/ICheckStateListener;)V
+removeSelectionChangedListener
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V
+setCheckedDescriptors
+ ([Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;)V
+ ([Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;)V
+setInput
+ (Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;)V
+ (Lorg/eclipse/ltk/core/refactoring/history/RefactoringHistory;)V
+setSelectedDescriptors
+ ([Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;)V
+ ([Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;)V

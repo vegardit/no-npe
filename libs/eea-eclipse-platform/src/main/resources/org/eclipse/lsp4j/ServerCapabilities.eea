@@ -1,0 +1,356 @@
+class org/eclipse/lsp4j/ServerCapabilities
+
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getCallHierarchyProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/CallHierarchyRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/CallHierarchyRegistrationOptions;>;
+getCodeActionProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/CodeActionOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/CodeActionOptions;>;
+getCodeLensProvider
+ ()Lorg/eclipse/lsp4j/CodeLensOptions;
+ ()Lorg/eclipse/lsp4j/CodeLensOptions;
+getColorProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ColorProviderOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ColorProviderOptions;>;
+getCompletionProvider
+ ()Lorg/eclipse/lsp4j/CompletionOptions;
+ ()Lorg/eclipse/lsp4j/CompletionOptions;
+getDeclarationProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DeclarationRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DeclarationRegistrationOptions;>;
+getDefinitionProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DefinitionOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DefinitionOptions;>;
+getDiagnosticProvider
+ ()Lorg/eclipse/lsp4j/DiagnosticRegistrationOptions;
+ ()Lorg/eclipse/lsp4j/DiagnosticRegistrationOptions;
+getDocumentFormattingProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentFormattingOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentFormattingOptions;>;
+getDocumentHighlightProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentHighlightOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentHighlightOptions;>;
+getDocumentLinkProvider
+ ()Lorg/eclipse/lsp4j/DocumentLinkOptions;
+ ()Lorg/eclipse/lsp4j/DocumentLinkOptions;
+getDocumentOnTypeFormattingProvider
+ ()Lorg/eclipse/lsp4j/DocumentOnTypeFormattingOptions;
+ ()Lorg/eclipse/lsp4j/DocumentOnTypeFormattingOptions;
+getDocumentRangeFormattingProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentRangeFormattingOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentRangeFormattingOptions;>;
+getDocumentSymbolProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentSymbolOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentSymbolOptions;>;
+getExecuteCommandProvider
+ ()Lorg/eclipse/lsp4j/ExecuteCommandOptions;
+ ()Lorg/eclipse/lsp4j/ExecuteCommandOptions;
+getExperimental
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getFoldingRangeProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/FoldingRangeProviderOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/FoldingRangeProviderOptions;>;
+getHoverProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/HoverOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/HoverOptions;>;
+getImplementationProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ImplementationRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ImplementationRegistrationOptions;>;
+getInlayHintProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;>;
+getInlineValueProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineValueRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineValueRegistrationOptions;>;
+getLinkedEditingRangeProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/LinkedEditingRangeRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/LinkedEditingRangeRegistrationOptions;>;
+getMonikerProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/MonikerRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/MonikerRegistrationOptions;>;
+getNotebookDocumentSync
+ ()Lorg/eclipse/lsp4j/NotebookDocumentSyncRegistrationOptions;
+ ()Lorg/eclipse/lsp4j/NotebookDocumentSyncRegistrationOptions;
+getPositionEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getReferencesProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ReferenceOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ReferenceOptions;>;
+getRenameProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/RenameOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/RenameOptions;>;
+getSelectionRangeProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/SelectionRangeRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/SelectionRangeRegistrationOptions;>;
+getSemanticTokensProvider
+ ()Lorg/eclipse/lsp4j/SemanticTokensWithRegistrationOptions;
+ ()Lorg/eclipse/lsp4j/SemanticTokensWithRegistrationOptions;
+getSignatureHelpProvider
+ ()Lorg/eclipse/lsp4j/SignatureHelpOptions;
+ ()Lorg/eclipse/lsp4j/SignatureHelpOptions;
+getTextDocumentSync
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentSyncKind;Lorg/eclipse/lsp4j/TextDocumentSyncOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentSyncKind;Lorg/eclipse/lsp4j/TextDocumentSyncOptions;>;
+getTypeDefinitionProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/TypeDefinitionRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/TypeDefinitionRegistrationOptions;>;
+getTypeHierarchyProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/TypeHierarchyRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/TypeHierarchyRegistrationOptions;>;
+getWorkspace
+ ()Lorg/eclipse/lsp4j/WorkspaceServerCapabilities;
+ ()Lorg/eclipse/lsp4j/WorkspaceServerCapabilities;
+getWorkspaceSymbolProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/WorkspaceSymbolOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/WorkspaceSymbolOptions;>;
+setCallHierarchyProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setCallHierarchyProvider
+ (Lorg/eclipse/lsp4j/CallHierarchyRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/CallHierarchyRegistrationOptions;)V
+setCallHierarchyProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/CallHierarchyRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/CallHierarchyRegistrationOptions;>;)V
+setCodeActionProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setCodeActionProvider
+ (Lorg/eclipse/lsp4j/CodeActionOptions;)V
+ (Lorg/eclipse/lsp4j/CodeActionOptions;)V
+setCodeActionProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/CodeActionOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/CodeActionOptions;>;)V
+setCodeLensProvider
+ (Lorg/eclipse/lsp4j/CodeLensOptions;)V
+ (Lorg/eclipse/lsp4j/CodeLensOptions;)V
+setColorProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setColorProvider
+ (Lorg/eclipse/lsp4j/ColorProviderOptions;)V
+ (Lorg/eclipse/lsp4j/ColorProviderOptions;)V
+setColorProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ColorProviderOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ColorProviderOptions;>;)V
+setCompletionProvider
+ (Lorg/eclipse/lsp4j/CompletionOptions;)V
+ (Lorg/eclipse/lsp4j/CompletionOptions;)V
+setDeclarationProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setDeclarationProvider
+ (Lorg/eclipse/lsp4j/DeclarationRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/DeclarationRegistrationOptions;)V
+setDeclarationProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DeclarationRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DeclarationRegistrationOptions;>;)V
+setDefinitionProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setDefinitionProvider
+ (Lorg/eclipse/lsp4j/DefinitionOptions;)V
+ (Lorg/eclipse/lsp4j/DefinitionOptions;)V
+setDefinitionProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DefinitionOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DefinitionOptions;>;)V
+setDiagnosticProvider
+ (Lorg/eclipse/lsp4j/DiagnosticRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/DiagnosticRegistrationOptions;)V
+setDocumentFormattingProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setDocumentFormattingProvider
+ (Lorg/eclipse/lsp4j/DocumentFormattingOptions;)V
+ (Lorg/eclipse/lsp4j/DocumentFormattingOptions;)V
+setDocumentFormattingProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentFormattingOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentFormattingOptions;>;)V
+setDocumentHighlightProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setDocumentHighlightProvider
+ (Lorg/eclipse/lsp4j/DocumentHighlightOptions;)V
+ (Lorg/eclipse/lsp4j/DocumentHighlightOptions;)V
+setDocumentHighlightProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentHighlightOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentHighlightOptions;>;)V
+setDocumentLinkProvider
+ (Lorg/eclipse/lsp4j/DocumentLinkOptions;)V
+ (Lorg/eclipse/lsp4j/DocumentLinkOptions;)V
+setDocumentOnTypeFormattingProvider
+ (Lorg/eclipse/lsp4j/DocumentOnTypeFormattingOptions;)V
+ (Lorg/eclipse/lsp4j/DocumentOnTypeFormattingOptions;)V
+setDocumentRangeFormattingProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setDocumentRangeFormattingProvider
+ (Lorg/eclipse/lsp4j/DocumentRangeFormattingOptions;)V
+ (Lorg/eclipse/lsp4j/DocumentRangeFormattingOptions;)V
+setDocumentRangeFormattingProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentRangeFormattingOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentRangeFormattingOptions;>;)V
+setDocumentSymbolProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setDocumentSymbolProvider
+ (Lorg/eclipse/lsp4j/DocumentSymbolOptions;)V
+ (Lorg/eclipse/lsp4j/DocumentSymbolOptions;)V
+setDocumentSymbolProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentSymbolOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/DocumentSymbolOptions;>;)V
+setExecuteCommandProvider
+ (Lorg/eclipse/lsp4j/ExecuteCommandOptions;)V
+ (Lorg/eclipse/lsp4j/ExecuteCommandOptions;)V
+setExperimental
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setFoldingRangeProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setFoldingRangeProvider
+ (Lorg/eclipse/lsp4j/FoldingRangeProviderOptions;)V
+ (Lorg/eclipse/lsp4j/FoldingRangeProviderOptions;)V
+setFoldingRangeProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/FoldingRangeProviderOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/FoldingRangeProviderOptions;>;)V
+setHoverProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setHoverProvider
+ (Lorg/eclipse/lsp4j/HoverOptions;)V
+ (Lorg/eclipse/lsp4j/HoverOptions;)V
+setHoverProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/HoverOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/HoverOptions;>;)V
+setImplementationProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setImplementationProvider
+ (Lorg/eclipse/lsp4j/ImplementationRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/ImplementationRegistrationOptions;)V
+setImplementationProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ImplementationRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ImplementationRegistrationOptions;>;)V
+setInlayHintProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setInlayHintProvider
+ (Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;)V
+setInlayHintProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;>;)V
+setInlineValueProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setInlineValueProvider
+ (Lorg/eclipse/lsp4j/InlineValueRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/InlineValueRegistrationOptions;)V
+setInlineValueProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineValueRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineValueRegistrationOptions;>;)V
+setLinkedEditingRangeProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setLinkedEditingRangeProvider
+ (Lorg/eclipse/lsp4j/LinkedEditingRangeRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/LinkedEditingRangeRegistrationOptions;)V
+setLinkedEditingRangeProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/LinkedEditingRangeRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/LinkedEditingRangeRegistrationOptions;>;)V
+setMonikerProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setMonikerProvider
+ (Lorg/eclipse/lsp4j/MonikerRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/MonikerRegistrationOptions;)V
+setMonikerProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/MonikerRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/MonikerRegistrationOptions;>;)V
+setNotebookDocumentSync
+ (Lorg/eclipse/lsp4j/NotebookDocumentSyncRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/NotebookDocumentSyncRegistrationOptions;)V
+setPositionEncoding
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setReferencesProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setReferencesProvider
+ (Lorg/eclipse/lsp4j/ReferenceOptions;)V
+ (Lorg/eclipse/lsp4j/ReferenceOptions;)V
+setReferencesProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ReferenceOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/ReferenceOptions;>;)V
+setRenameProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setRenameProvider
+ (Lorg/eclipse/lsp4j/RenameOptions;)V
+ (Lorg/eclipse/lsp4j/RenameOptions;)V
+setRenameProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/RenameOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/RenameOptions;>;)V
+setSelectionRangeProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setSelectionRangeProvider
+ (Lorg/eclipse/lsp4j/SelectionRangeRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/SelectionRangeRegistrationOptions;)V
+setSelectionRangeProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/SelectionRangeRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/SelectionRangeRegistrationOptions;>;)V
+setSemanticTokensProvider
+ (Lorg/eclipse/lsp4j/SemanticTokensWithRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/SemanticTokensWithRegistrationOptions;)V
+setSignatureHelpProvider
+ (Lorg/eclipse/lsp4j/SignatureHelpOptions;)V
+ (Lorg/eclipse/lsp4j/SignatureHelpOptions;)V
+setTextDocumentSync
+ (Lorg/eclipse/lsp4j/TextDocumentSyncKind;)V
+ (Lorg/eclipse/lsp4j/TextDocumentSyncKind;)V
+setTextDocumentSync
+ (Lorg/eclipse/lsp4j/TextDocumentSyncOptions;)V
+ (Lorg/eclipse/lsp4j/TextDocumentSyncOptions;)V
+setTextDocumentSync
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentSyncKind;Lorg/eclipse/lsp4j/TextDocumentSyncOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentSyncKind;Lorg/eclipse/lsp4j/TextDocumentSyncOptions;>;)V
+setTypeDefinitionProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setTypeDefinitionProvider
+ (Lorg/eclipse/lsp4j/TypeDefinitionRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/TypeDefinitionRegistrationOptions;)V
+setTypeDefinitionProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/TypeDefinitionRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/TypeDefinitionRegistrationOptions;>;)V
+setTypeHierarchyProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setTypeHierarchyProvider
+ (Lorg/eclipse/lsp4j/TypeHierarchyRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/TypeHierarchyRegistrationOptions;)V
+setTypeHierarchyProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/TypeHierarchyRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/TypeHierarchyRegistrationOptions;>;)V
+setWorkspace
+ (Lorg/eclipse/lsp4j/WorkspaceServerCapabilities;)V
+ (Lorg/eclipse/lsp4j/WorkspaceServerCapabilities;)V
+setWorkspaceSymbolProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setWorkspaceSymbolProvider
+ (Lorg/eclipse/lsp4j/WorkspaceSymbolOptions;)V
+ (Lorg/eclipse/lsp4j/WorkspaceSymbolOptions;)V
+setWorkspaceSymbolProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/WorkspaceSymbolOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/WorkspaceSymbolOptions;>;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -1,0 +1,20 @@
+class org/eclipse/lsp4j/launch/LSPLauncher
+
+createClientLauncher
+ (Lorg/eclipse/lsp4j/services/LanguageClient;Ljava/io/InputStream;Ljava/io/OutputStream;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageServer;>;
+ (Lorg/eclipse/lsp4j/services/LanguageClient;Ljava/io/InputStream;Ljava/io/OutputStream;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageServer;>;
+createClientLauncher
+ (Lorg/eclipse/lsp4j/services/LanguageClient;Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/util/concurrent/ExecutorService;Ljava/util/function/Function<Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageServer;>;
+ (Lorg/eclipse/lsp4j/services/LanguageClient;Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/util/concurrent/ExecutorService;Ljava/util/function/Function<Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageServer;>;
+createClientLauncher
+ (Lorg/eclipse/lsp4j/services/LanguageClient;Ljava/io/InputStream;Ljava/io/OutputStream;ZLjava/io/PrintWriter;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageServer;>;
+ (Lorg/eclipse/lsp4j/services/LanguageClient;Ljava/io/InputStream;Ljava/io/OutputStream;ZLjava/io/PrintWriter;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageServer;>;
+createServerLauncher
+ (Lorg/eclipse/lsp4j/services/LanguageServer;Ljava/io/InputStream;Ljava/io/OutputStream;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageClient;>;
+ (Lorg/eclipse/lsp4j/services/LanguageServer;Ljava/io/InputStream;Ljava/io/OutputStream;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageClient;>;
+createServerLauncher
+ (Lorg/eclipse/lsp4j/services/LanguageServer;Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/util/concurrent/ExecutorService;Ljava/util/function/Function<Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageClient;>;
+ (Lorg/eclipse/lsp4j/services/LanguageServer;Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/util/concurrent/ExecutorService;Ljava/util/function/Function<Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;>;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageClient;>;
+createServerLauncher
+ (Lorg/eclipse/lsp4j/services/LanguageServer;Ljava/io/InputStream;Ljava/io/OutputStream;ZLjava/io/PrintWriter;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageClient;>;
+ (Lorg/eclipse/lsp4j/services/LanguageServer;Ljava/io/InputStream;Ljava/io/OutputStream;ZLjava/io/PrintWriter;)Lorg/eclipse/lsp4j/jsonrpc/Launcher<Lorg/eclipse/lsp4j/services/LanguageClient;>;

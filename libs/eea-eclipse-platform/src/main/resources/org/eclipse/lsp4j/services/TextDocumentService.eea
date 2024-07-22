@@ -1,0 +1,143 @@
+class org/eclipse/lsp4j/services/TextDocumentService
+
+callHierarchyIncomingCalls
+ (Lorg/eclipse/lsp4j/CallHierarchyIncomingCallsParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/CallHierarchyIncomingCall;>;>;
+ (L1org/eclipse/lsp4j/CallHierarchyIncomingCallsParams;)L1java/util/concurrent/CompletableFuture<L1java/util/List<L1org/eclipse/lsp4j/CallHierarchyIncomingCall;>;>;
+callHierarchyOutgoingCalls
+ (Lorg/eclipse/lsp4j/CallHierarchyOutgoingCallsParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/CallHierarchyOutgoingCall;>;>;
+ (L1org/eclipse/lsp4j/CallHierarchyOutgoingCallsParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/CallHierarchyOutgoingCall;>;>;
+codeAction
+ (Lorg/eclipse/lsp4j/CodeActionParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/Command;Lorg/eclipse/lsp4j/CodeAction;>;>;>;
+ (L1org/eclipse/lsp4j/CodeActionParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/Command;Lorg/eclipse/lsp4j/CodeAction;>;>;>;
+codeLens
+ (Lorg/eclipse/lsp4j/CodeLensParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/CodeLens;>;>;
+ (L1org/eclipse/lsp4j/CodeLensParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/CodeLens;>;>;
+colorPresentation
+ (Lorg/eclipse/lsp4j/ColorPresentationParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/ColorPresentation;>;>;
+ (L1org/eclipse/lsp4j/ColorPresentationParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/ColorPresentation;>;>;
+completion
+ (Lorg/eclipse/lsp4j/CompletionParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<Lorg/eclipse/lsp4j/CompletionItem;>;Lorg/eclipse/lsp4j/CompletionList;>;>;
+ (L1org/eclipse/lsp4j/CompletionParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<Lorg/eclipse/lsp4j/CompletionItem;>;Lorg/eclipse/lsp4j/CompletionList;>;>;
+declaration
+ (Lorg/eclipse/lsp4j/DeclarationParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;Ljava/util/List<+Lorg/eclipse/lsp4j/LocationLink;>;>;>;
+ (L1org/eclipse/lsp4j/DeclarationParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;Ljava/util/List<+Lorg/eclipse/lsp4j/LocationLink;>;>;>;
+definition
+ (Lorg/eclipse/lsp4j/DefinitionParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;Ljava/util/List<+Lorg/eclipse/lsp4j/LocationLink;>;>;>;
+ (L1org/eclipse/lsp4j/DefinitionParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;Ljava/util/List<+Lorg/eclipse/lsp4j/LocationLink;>;>;>;
+diagnostic
+ (Lorg/eclipse/lsp4j/DocumentDiagnosticParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/DocumentDiagnosticReport;>;
+ (L1org/eclipse/lsp4j/DocumentDiagnosticParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/DocumentDiagnosticReport;>;
+didChange
+ (Lorg/eclipse/lsp4j/DidChangeTextDocumentParams;)V
+ (L1org/eclipse/lsp4j/DidChangeTextDocumentParams;)V
+didClose
+ (Lorg/eclipse/lsp4j/DidCloseTextDocumentParams;)V
+ (L1org/eclipse/lsp4j/DidCloseTextDocumentParams;)V
+didOpen
+ (Lorg/eclipse/lsp4j/DidOpenTextDocumentParams;)V
+ (L1org/eclipse/lsp4j/DidOpenTextDocumentParams;)V
+didSave
+ (Lorg/eclipse/lsp4j/DidSaveTextDocumentParams;)V
+ (L1org/eclipse/lsp4j/DidSaveTextDocumentParams;)V
+documentColor
+ (Lorg/eclipse/lsp4j/DocumentColorParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/ColorInformation;>;>;
+ (L1org/eclipse/lsp4j/DocumentColorParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/ColorInformation;>;>;
+documentHighlight
+ (Lorg/eclipse/lsp4j/DocumentHighlightParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/DocumentHighlight;>;>;
+ (L1org/eclipse/lsp4j/DocumentHighlightParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/DocumentHighlight;>;>;
+documentLink
+ (Lorg/eclipse/lsp4j/DocumentLinkParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/DocumentLink;>;>;
+ (L1org/eclipse/lsp4j/DocumentLinkParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/DocumentLink;>;>;
+documentLinkResolve
+ (Lorg/eclipse/lsp4j/DocumentLink;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/DocumentLink;>;
+ (L1org/eclipse/lsp4j/DocumentLink;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/DocumentLink;>;
+documentSymbol
+ (Lorg/eclipse/lsp4j/DocumentSymbolParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/SymbolInformation;Lorg/eclipse/lsp4j/DocumentSymbol;>;>;>;
+ (L1org/eclipse/lsp4j/DocumentSymbolParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/SymbolInformation;Lorg/eclipse/lsp4j/DocumentSymbol;>;>;>;
+foldingRange
+ (Lorg/eclipse/lsp4j/FoldingRangeRequestParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/FoldingRange;>;>;
+ (L1org/eclipse/lsp4j/FoldingRangeRequestParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/FoldingRange;>;>;
+formatting
+ (Lorg/eclipse/lsp4j/DocumentFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
+ (L1org/eclipse/lsp4j/DocumentFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
+hover
+ (Lorg/eclipse/lsp4j/HoverParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/Hover;>;
+ (L1org/eclipse/lsp4j/HoverParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/Hover;>;
+implementation
+ (Lorg/eclipse/lsp4j/ImplementationParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;Ljava/util/List<+Lorg/eclipse/lsp4j/LocationLink;>;>;>;
+ (L1org/eclipse/lsp4j/ImplementationParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;Ljava/util/List<+Lorg/eclipse/lsp4j/LocationLink;>;>;>;
+inlayHint
+ (Lorg/eclipse/lsp4j/InlayHintParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/InlayHint;>;>;
+ (L1org/eclipse/lsp4j/InlayHintParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/InlayHint;>;>;
+inlineValue
+ (Lorg/eclipse/lsp4j/InlineValueParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/InlineValue;>;>;
+ (L1org/eclipse/lsp4j/InlineValueParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/InlineValue;>;>;
+linkedEditingRange
+ (Lorg/eclipse/lsp4j/LinkedEditingRangeParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/LinkedEditingRanges;>;
+ (L1org/eclipse/lsp4j/LinkedEditingRangeParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/LinkedEditingRanges;>;
+moniker
+ (Lorg/eclipse/lsp4j/MonikerParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/Moniker;>;>;
+ (L1org/eclipse/lsp4j/MonikerParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/Moniker;>;>;
+onTypeFormatting
+ (Lorg/eclipse/lsp4j/DocumentOnTypeFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
+ (L1org/eclipse/lsp4j/DocumentOnTypeFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
+prepareCallHierarchy
+ (Lorg/eclipse/lsp4j/CallHierarchyPrepareParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/CallHierarchyItem;>;>;
+ (L1org/eclipse/lsp4j/CallHierarchyPrepareParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/CallHierarchyItem;>;>;
+prepareRename
+ (Lorg/eclipse/lsp4j/PrepareRenameParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<Lorg/eclipse/lsp4j/Range;Lorg/eclipse/lsp4j/PrepareRenameResult;Lorg/eclipse/lsp4j/PrepareRenameDefaultBehavior;>;>;
+ (L1org/eclipse/lsp4j/PrepareRenameParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either3<Lorg/eclipse/lsp4j/Range;Lorg/eclipse/lsp4j/PrepareRenameResult;Lorg/eclipse/lsp4j/PrepareRenameDefaultBehavior;>;>;
+prepareTypeHierarchy
+ (Lorg/eclipse/lsp4j/TypeHierarchyPrepareParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/TypeHierarchyItem;>;>;
+ (L1org/eclipse/lsp4j/TypeHierarchyPrepareParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/TypeHierarchyItem;>;>;
+rangeFormatting
+ (Lorg/eclipse/lsp4j/DocumentRangeFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
+ (L1org/eclipse/lsp4j/DocumentRangeFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
+references
+ (Lorg/eclipse/lsp4j/ReferenceParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;>;
+ (L1org/eclipse/lsp4j/ReferenceParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;>;
+rename
+ (Lorg/eclipse/lsp4j/RenameParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceEdit;>;
+ (L1org/eclipse/lsp4j/RenameParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/WorkspaceEdit;>;
+resolveCodeAction
+ (Lorg/eclipse/lsp4j/CodeAction;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/CodeAction;>;
+ (L1org/eclipse/lsp4j/CodeAction;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/CodeAction;>;
+resolveCodeLens
+ (Lorg/eclipse/lsp4j/CodeLens;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/CodeLens;>;
+ (L1org/eclipse/lsp4j/CodeLens;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/CodeLens;>;
+resolveCompletionItem
+ (Lorg/eclipse/lsp4j/CompletionItem;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/CompletionItem;>;
+ (L1org/eclipse/lsp4j/CompletionItem;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/CompletionItem;>;
+resolveInlayHint
+ (Lorg/eclipse/lsp4j/InlayHint;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/InlayHint;>;
+ (L1org/eclipse/lsp4j/InlayHint;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/InlayHint;>;
+selectionRange
+ (Lorg/eclipse/lsp4j/SelectionRangeParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/SelectionRange;>;>;
+ (L1org/eclipse/lsp4j/SelectionRangeParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/SelectionRange;>;>;
+semanticTokensFull
+ (Lorg/eclipse/lsp4j/SemanticTokensParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/SemanticTokens;>;
+ (L1org/eclipse/lsp4j/SemanticTokensParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/SemanticTokens;>;
+semanticTokensFullDelta
+ (Lorg/eclipse/lsp4j/SemanticTokensDeltaParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/SemanticTokens;Lorg/eclipse/lsp4j/SemanticTokensDelta;>;>;
+ (L1org/eclipse/lsp4j/SemanticTokensDeltaParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/SemanticTokens;Lorg/eclipse/lsp4j/SemanticTokensDelta;>;>;
+semanticTokensRange
+ (Lorg/eclipse/lsp4j/SemanticTokensRangeParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/SemanticTokens;>;
+ (L1org/eclipse/lsp4j/SemanticTokensRangeParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/SemanticTokens;>;
+signatureHelp
+ (Lorg/eclipse/lsp4j/SignatureHelpParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/SignatureHelp;>;
+ (L1org/eclipse/lsp4j/SignatureHelpParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/SignatureHelp;>;
+typeDefinition
+ (Lorg/eclipse/lsp4j/TypeDefinitionParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;Ljava/util/List<+Lorg/eclipse/lsp4j/LocationLink;>;>;>;
+ (L1org/eclipse/lsp4j/TypeDefinitionParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;Ljava/util/List<+Lorg/eclipse/lsp4j/LocationLink;>;>;>;
+typeHierarchySubtypes
+ (Lorg/eclipse/lsp4j/TypeHierarchySubtypesParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/TypeHierarchyItem;>;>;
+ (L1org/eclipse/lsp4j/TypeHierarchySubtypesParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/TypeHierarchyItem;>;>;
+typeHierarchySupertypes
+ (Lorg/eclipse/lsp4j/TypeHierarchySupertypesParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/TypeHierarchyItem;>;>;
+ (L1org/eclipse/lsp4j/TypeHierarchySupertypesParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/TypeHierarchyItem;>;>;
+willSave
+ (Lorg/eclipse/lsp4j/WillSaveTextDocumentParams;)V
+ (L1org/eclipse/lsp4j/WillSaveTextDocumentParams;)V
+willSaveWaitUntil
+ (Lorg/eclipse/lsp4j/WillSaveTextDocumentParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/TextEdit;>;>;
+ (L1org/eclipse/lsp4j/WillSaveTextDocumentParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/TextEdit;>;>;

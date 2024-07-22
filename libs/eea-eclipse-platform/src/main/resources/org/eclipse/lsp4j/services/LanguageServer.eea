@@ -1,0 +1,26 @@
+class org/eclipse/lsp4j/services/LanguageServer
+
+cancelProgress
+ (Lorg/eclipse/lsp4j/WorkDoneProgressCancelParams;)V
+ (Lorg/eclipse/lsp4j/WorkDoneProgressCancelParams;)V
+getNotebookDocumentService
+ ()Lorg/eclipse/lsp4j/services/NotebookDocumentService;
+ ()Lorg/eclipse/lsp4j/services/NotebookDocumentService;
+getTextDocumentService
+ ()Lorg/eclipse/lsp4j/services/TextDocumentService;
+ ()Lorg/eclipse/lsp4j/services/TextDocumentService;
+getWorkspaceService
+ ()Lorg/eclipse/lsp4j/services/WorkspaceService;
+ ()Lorg/eclipse/lsp4j/services/WorkspaceService;
+initialize
+ (Lorg/eclipse/lsp4j/InitializeParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/InitializeResult;>;
+ (Lorg/eclipse/lsp4j/InitializeParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/InitializeResult;>;
+initialized
+ (Lorg/eclipse/lsp4j/InitializedParams;)V
+ (Lorg/eclipse/lsp4j/InitializedParams;)V
+setTrace
+ (Lorg/eclipse/lsp4j/SetTraceParams;)V
+ (Lorg/eclipse/lsp4j/SetTraceParams;)V
+shutdown
+ ()Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
+ ()Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
