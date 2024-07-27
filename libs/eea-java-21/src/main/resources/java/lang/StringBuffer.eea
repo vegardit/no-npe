@@ -63,13 +63,13 @@ deleteCharAt
  (I)L1java/lang/StringBuffer;
 getChars
  (II[CI)V
- (II[1CI)V
+ (II[1CI)V # @Inherited(java.lang.AbstractStringBuilder)
 indexOf
  (Ljava/lang/String;)I
- (L1java/lang/String;)I
+ (L1java/lang/String;)I # @Inherited(java.lang.AbstractStringBuilder)
 indexOf
  (Ljava/lang/String;I)I
- (L1java/lang/String;I)I
+ (L1java/lang/String;I)I # @Inherited(java.lang.AbstractStringBuilder)
 insert
  (IC)Ljava/lang/StringBuffer;
  (IC)L1java/lang/StringBuffer;
@@ -108,10 +108,10 @@ insert
  (I[1CII)L1java/lang/StringBuffer;
 lastIndexOf
  (Ljava/lang/String;)I
- (L1java/lang/String;)I
+ (L1java/lang/String;)I # @Inherited(java.lang.AbstractStringBuilder)
 lastIndexOf
  (Ljava/lang/String;I)I
- (L1java/lang/String;I)I
+ (L1java/lang/String;I)I # @Inherited(java.lang.AbstractStringBuilder)
 repeat
  (II)Ljava/lang/StringBuffer;
  (II)Ljava/lang/StringBuffer;
@@ -126,13 +126,13 @@ reverse
  ()L1java/lang/StringBuffer;
 subSequence
  (II)Ljava/lang/CharSequence;
- (II)L1java/lang/CharSequence; # @Inherited(java.lang.CharSequence)
+ (II)L1java/lang/CharSequence; # @Inherited(java.lang.AbstractStringBuilder)
 substring
  (I)Ljava/lang/String;
- (I)L1java/lang/String;
+ (I)L1java/lang/String; # @Inherited(java.lang.AbstractStringBuilder)
 substring
  (II)Ljava/lang/String;
- (II)L1java/lang/String;
+ (II)L1java/lang/String; # @Inherited(java.lang.AbstractStringBuilder)
 toString
  ()Ljava/lang/String;
- ()L1java/lang/String; # @Inherited(java.lang.Object)
+ ()L1java/lang/String; # @Inherited(java.lang.AbstractStringBuilder)

@@ -439,6 +439,13 @@ public abstract class EEAGenerator {
             throw new IllegalArgumentException("No classes found for package [" + rootPackageName + "] on classpath");
 
          for (final ClassInfo classInfo : classes) {
+            if (classInfo.getName().equals("java.lang.AbstractStringBuilder")) { // https://github.com/vegardit/no-npe/issues/257
+               LOG.log(Level.DEBUG, "Scanning class [{0}]...", classInfo.getName());
+               final var eeaFile = computeEEAFile(classInfo);
+               result.put(classInfo, eeaFile);
+               continue;
+            }
+
             // skip uninteresting classes
             if (hasPackageVisibility(classInfo) || classInfo.isPrivate() || classInfo.isAnonymousInnerClass()) {
                LOG.log(Level.DEBUG, "Ignoring non-accessible classes [{0}]...", classInfo.getName());
