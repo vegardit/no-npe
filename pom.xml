@@ -117,17 +117,6 @@ check for new dependency/plugin updates using:
         </file>
       </activation>
 
-      <dependencies>
-        <dependency>
-          <!-- TODO this should actually be a plugin dependency of exec-maven-plugin but the classpath management
-               of the exec:exec goal is broken, see https://github.com/mojohaus/exec-maven-plugin/pull/432 -->
-          <groupId>com.vegardit.no-npe</groupId>
-          <artifactId>no-npe-eea-generator</artifactId>
-          <version>${project.version}</version>
-          <scope>provided</scope>
-        </dependency>
-      </dependencies>
-
       <build>
         <resources>
           <resource>
@@ -172,7 +161,7 @@ check for new dependency/plugin updates using:
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.3.0</version>
+            <version>3.4.0</version>
             <executions>
               <execution>
                 <!-- generate/update *.eea files in src/main/resources -->
@@ -183,10 +172,7 @@ check for new dependency/plugin updates using:
                 </goals>
                 <configuration>
                   <classpathScope>provided</classpathScope>
-                  <executableDependency>
-                    <groupId>com.vegardit.no-npe</groupId>
-                    <artifactId>no-npe-eea-generator</artifactId>
-                  </executableDependency>
+                  <includePluginDependencies>true</includePluginDependencies>
                   <executable>java</executable>
                   <arguments>
                     <argument>-Deea-generator.action=${eea-generator.action}</argument>
@@ -211,11 +197,8 @@ check for new dependency/plugin updates using:
                   <goal>exec</goal>
                 </goals>
                 <configuration>
-                  <classpathScope>provided</classpathScope> <!-- TODO until https://github.com/mojohaus/exec-maven-plugin/pull/432 -->
-                  <executableDependency>
-                    <groupId>com.vegardit.no-npe</groupId>
-                    <artifactId>no-npe-eea-generator</artifactId>
-                  </executableDependency>
+                  <classpathScope>provided</classpathScope>
+                  <includePluginDependencies>true</includePluginDependencies>
                   <executable>java</executable>
                   <arguments>
                     <argument>-Deea-generator.action=minimize</argument>
@@ -229,6 +212,13 @@ check for new dependency/plugin updates using:
                 </configuration>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>com.vegardit.no-npe</groupId>
+                <artifactId>no-npe-eea-generator</artifactId>
+                <version>${project.version}</version>
+              </dependency>
+            </dependencies>
           </plugin>
 
           <plugin>
