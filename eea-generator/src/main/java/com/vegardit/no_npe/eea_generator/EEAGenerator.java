@@ -270,7 +270,7 @@ public abstract class EEAGenerator {
             return new ValueWithComment(insert(member.originalSignature.value, 2, "1"), "");
 
          /*
-          * mark the parameter of single-parmeter methods as @NonNull
+          * mark the parameter of single-parameter methods as @NonNull
           * with signature matching: void (add|remove)*Listener(*Listener)
           */
          if (!methodInfo.isStatic() // non-static
