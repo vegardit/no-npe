@@ -5,10 +5,10 @@ class org/apache/commons/io/filefilter/AbstractFileFilter
  (Ljava/nio/file/FileVisitResult;Ljava/nio/file/FileVisitResult;)V
 accept
  (Ljava/io/File;)Z
- (Ljava/io/File;)Z
+ (L1java/io/File;)Z # @Inherited(org.apache.commons.io.filefilter.IOFileFilter)
 accept
  (Ljava/io/File;Ljava/lang/String;)Z
- (Ljava/io/File;Ljava/lang/String;)Z
+ (L1java/io/File;L1java/lang/String;)Z # @Inherited(org.apache.commons.io.filefilter.IOFileFilter)
 handle
  (Ljava/lang/Throwable;)Ljava/nio/file/FileVisitResult;
  (Ljava/lang/Throwable;)Ljava/nio/file/FileVisitResult;
