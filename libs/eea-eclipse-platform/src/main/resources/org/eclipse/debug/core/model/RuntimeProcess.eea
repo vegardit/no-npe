@@ -11,10 +11,10 @@ fireEvent
  (Lorg/eclipse/debug/core/DebugEvent;)V
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.PlatformObject)
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.PlatformObject)
 getAttribute
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/String;)L0java/lang/String; # @Inherited(org.eclipse.debug.core.model.IProcess)
 getLabel
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -23,13 +23,13 @@ getLaunch
  ()Lorg/eclipse/debug/core/ILaunch;
 getStreamsProxy
  ()Lorg/eclipse/debug/core/model/IStreamsProxy;
- ()Lorg/eclipse/debug/core/model/IStreamsProxy;
+ ()L0org/eclipse/debug/core/model/IStreamsProxy; # @Inherited(org.eclipse.debug.core.model.IProcess)
 getSystemProcess
  ()Ljava/lang/Process;
  ()Ljava/lang/Process;
 setAttribute
  (Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;L0java/lang/String;)V # @Inherited(org.eclipse.debug.core.model.IProcess)
 setLaunch
  (Lorg/eclipse/debug/core/ILaunch;)V
  (Lorg/eclipse/debug/core/ILaunch;)V

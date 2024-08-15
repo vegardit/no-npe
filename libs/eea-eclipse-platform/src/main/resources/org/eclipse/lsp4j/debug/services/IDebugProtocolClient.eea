@@ -1,0 +1,60 @@
+class org/eclipse/lsp4j/debug/services/IDebugProtocolClient
+
+SCHEMA_VERSION
+ Ljava/lang/String;
+ L1java/lang/String;
+
+breakpoint
+ (Lorg/eclipse/lsp4j/debug/BreakpointEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/BreakpointEventArguments;)V
+capabilities
+ (Lorg/eclipse/lsp4j/debug/CapabilitiesEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/CapabilitiesEventArguments;)V
+continued
+ (Lorg/eclipse/lsp4j/debug/ContinuedEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/ContinuedEventArguments;)V
+exited
+ (Lorg/eclipse/lsp4j/debug/ExitedEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/ExitedEventArguments;)V
+invalidated
+ (Lorg/eclipse/lsp4j/debug/InvalidatedEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/InvalidatedEventArguments;)V
+loadedSource
+ (Lorg/eclipse/lsp4j/debug/LoadedSourceEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/LoadedSourceEventArguments;)V
+memory
+ (Lorg/eclipse/lsp4j/debug/MemoryEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/MemoryEventArguments;)V
+module
+ (Lorg/eclipse/lsp4j/debug/ModuleEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/ModuleEventArguments;)V
+output
+ (Lorg/eclipse/lsp4j/debug/OutputEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/OutputEventArguments;)V
+process
+ (Lorg/eclipse/lsp4j/debug/ProcessEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/ProcessEventArguments;)V
+progressEnd
+ (Lorg/eclipse/lsp4j/debug/ProgressEndEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/ProgressEndEventArguments;)V
+progressStart
+ (Lorg/eclipse/lsp4j/debug/ProgressStartEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/ProgressStartEventArguments;)V
+progressUpdate
+ (Lorg/eclipse/lsp4j/debug/ProgressUpdateEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/ProgressUpdateEventArguments;)V
+runInTerminal
+ (Lorg/eclipse/lsp4j/debug/RunInTerminalRequestArguments;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/debug/RunInTerminalResponse;>;
+ (L1org/eclipse/lsp4j/debug/RunInTerminalRequestArguments;)L1java/util/concurrent/CompletableFuture<L1org/eclipse/lsp4j/debug/RunInTerminalResponse;>;
+startDebugging
+ (Lorg/eclipse/lsp4j/debug/StartDebuggingRequestArguments;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+ (L1org/eclipse/lsp4j/debug/StartDebuggingRequestArguments;)L1java/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
+stopped
+ (Lorg/eclipse/lsp4j/debug/StoppedEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/StoppedEventArguments;)V
+terminated
+ (Lorg/eclipse/lsp4j/debug/TerminatedEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/TerminatedEventArguments;)V
+thread
+ (Lorg/eclipse/lsp4j/debug/ThreadEventArguments;)V
+ (L1org/eclipse/lsp4j/debug/ThreadEventArguments;)V
