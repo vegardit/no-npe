@@ -14,10 +14,10 @@ super org/eclipse/lsp4j/jsonrpc/Launcher
  (Lorg/eclipse/lsp4j/jsonrpc/json/StreamMessageProducer;Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;Ljava/util/concurrent/ExecutorService;TT;Lorg/eclipse/lsp4j/jsonrpc/RemoteEndpoint;)V
 getRemoteEndpoint
  ()Lorg/eclipse/lsp4j/jsonrpc/RemoteEndpoint;
- ()Lorg/eclipse/lsp4j/jsonrpc/RemoteEndpoint;
+ ()L1org/eclipse/lsp4j/jsonrpc/RemoteEndpoint; # @Inherited(org.eclipse.lsp4j.jsonrpc.Launcher)
 getRemoteProxy
  ()TT;
- ()TT;
+ ()T1T; # @Inherited(org.eclipse.lsp4j.jsonrpc.Launcher)
 startListening
  ()Ljava/util/concurrent/Future<Ljava/lang/Void;>;
- ()Ljava/util/concurrent/Future<Ljava/lang/Void;>;
+ ()L1java/util/concurrent/Future<Ljava/lang/Void;>; # @Inherited(org.eclipse.lsp4j.jsonrpc.Launcher)
