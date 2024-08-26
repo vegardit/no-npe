@@ -79,7 +79,7 @@ jobs:
       uses: actions/checkout@v4  # https://github.com/actions/checkout
 
 
-    - name: "Install: JDK 11"
+    - name: "Install: JDK 11 ☕"
       uses: actions/setup-java@v4  # https://github.com/actions/setup-java
       with:
         distribution: temurin
@@ -87,7 +87,7 @@ jobs:
     - run: echo "JAVA11_HOME=$JAVA_HOME" >> $GITHUB_ENV
 
 
-    - name: "Install: JDK 17"
+    - name: "Install: JDK 17 ☕"
       uses: actions/setup-java@v4  # https://github.com/actions/setup-java
       with:
         distribution: temurin
@@ -95,7 +95,7 @@ jobs:
     - run: echo "JAVA17_HOME=$JAVA_HOME" >> $GITHUB_ENV
 
 
-    - name: "Install: JDK 21"
+    - name: "Install: JDK 21 ☕"
       uses: actions/setup-java@v4  # https://github.com/actions/setup-java
       with:
         distribution: temurin
@@ -103,10 +103,10 @@ jobs:
     - run: echo "JAVA21_HOME=$JAVA_HOME" >> $GITHUB_ENV
 
 
-    - name: "Install: Maven"
+    - name: "Install: Maven 📦"
       uses: stCarolas/setup-maven@v5  # https://github.com/stCarolas/setup-maven
       with:
-        maven-version: 3.9.8
+        maven-version: 3.9.9
 
 
     - name: "Cache: Restore"
@@ -168,7 +168,7 @@ jobs:
         fi
 
 
-    - name: Build with Maven
+    - name: "Build with Maven 🔨"
       if: ${{ github.ref_name == 'main' && !env.ACT }}
       env:
         GITHUB_USER: ${{ github.actor }}
