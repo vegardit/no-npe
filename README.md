@@ -9,7 +9,8 @@
 
 1. [What is it?](#what-is-it)
 1. [Usage](#usage)
-1. [Building from Sources](#building)
+   1. [Binaries](#binaries)
+   1. [Building from Sources](#building)
    1. [Validating/Updating EEA files](#validate_update)
    1. [Adding a new Maven module](#new_module)
 1. [Acknowledgement](#acknowledgement)
@@ -27,7 +28,7 @@ better static Null Analysis with the Eclipse Java Compiler (ecj).
 Usage of External Null Annotations in Eclipse is documented at
 https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.jdt.doc.user/tasks/task-using_external_null_annotations.htm
 
-### Binaries
+### <a id="binaries"></a>Binaries
 
 Latest **Release** binaries are available on Maven central, see https://search.maven.org/search?q=g%3Acom.vegardit.no-npe
 
@@ -58,7 +59,7 @@ You need to add this repository configuration to your Maven `settings.xml`:
 ```
 
 
-## <a id="building"></a>Building from Sources
+### <a id="building"></a>Building from Sources
 
 To ensure reproducible builds this Maven project inherits from the [vegardit-maven-parent](https://github.com/vegardit/vegardit-maven-parent)
 project which declares fixed versions and sensible default settings for all official Maven plug-ins.
