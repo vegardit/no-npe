@@ -227,9 +227,9 @@ check for new dependency/plugin updates using:
             <artifactId>maven-source-plugin</artifactId>
             <executions>
               <execution>
-              <!-- don't attach source jar for EEA projects -->
-              <id>attach-sources</id>
-              <phase>none</phase>
+                <!-- don't attach source jar for EEA projects -->
+                <id>attach-sources</id>
+                <phase>none</phase>
                 <goals>
                   <goal>jar</goal>
                 </goals>
