@@ -807,7 +807,7 @@ public abstract class EEAGenerator {
                         .filter(m -> m.name.equals(parsedMember.name)) //
                         .map(m -> m.name + "\n" + " " + m.originalSignature) //
                         .collect(Collectors.joining("\n"));
-                     throw new IllegalStateException("Unknown member declaration found in [" + path + "]: " + parsedMember + (candidates
+                     throw new IllegalStateException("Unknown member declaration found in [" + path + "]:\n" + parsedMember + (candidates
                         .length() > 0 ? "\nPotential candidates: \n" + candidates : ""));
                   }
                }

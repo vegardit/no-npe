@@ -128,7 +128,7 @@ public class EEAFile {
       @Override
       public String toString() {
          return name + System.lineSeparator() //
-               + " " + originalSignature //
+               + " " + originalSignature + System.lineSeparator() //
                + " " + annotatedSignature;
       }
    }
