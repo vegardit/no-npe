@@ -19,6 +19,9 @@ ofSystemLoader
 classFileLocator
  Lnet/bytebuddy/dynamic/ClassFileLocator;
  Lnet/bytebuddy/dynamic/ClassFileLocator;
+classReaderFactory
+ Lnet/bytebuddy/utility/AsmClassReader$Factory;
+ Lnet/bytebuddy/utility/AsmClassReader$Factory;
 readerMode
  Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;
  Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;
@@ -29,6 +32,12 @@ readerMode
 <init>
  (Lnet/bytebuddy/pool/TypePool$CacheProvider;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;Lnet/bytebuddy/pool/TypePool;)V
  (Lnet/bytebuddy/pool/TypePool$CacheProvider;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;Lnet/bytebuddy/pool/TypePool;)V
+<init>
+ (Lnet/bytebuddy/pool/TypePool$CacheProvider;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;Lnet/bytebuddy/utility/AsmClassReader$Factory;)V
+ (Lnet/bytebuddy/pool/TypePool$CacheProvider;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;Lnet/bytebuddy/utility/AsmClassReader$Factory;)V
+<init>
+ (Lnet/bytebuddy/pool/TypePool$CacheProvider;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;Lnet/bytebuddy/utility/AsmClassReader$Factory;Lnet/bytebuddy/pool/TypePool;)V
+ (Lnet/bytebuddy/pool/TypePool$CacheProvider;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;Lnet/bytebuddy/utility/AsmClassReader$Factory;Lnet/bytebuddy/pool/TypePool;)V
 doDescribe
  (Ljava/lang/String;)Lnet/bytebuddy/pool/TypePool$Resolution;
  (Ljava/lang/String;)Lnet/bytebuddy/pool/TypePool$Resolution;
