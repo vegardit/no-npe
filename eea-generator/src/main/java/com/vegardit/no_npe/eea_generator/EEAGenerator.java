@@ -215,7 +215,7 @@ public abstract class EEAGenerator {
 
       final var templates = new ArrayList<EEAFile>();
       if (isThrowable(classInfo)) {
-         templates.add(TEMPLATE_THROWABLE);
+         templates.add(TEMPLATE_THROWABLE); // to inherit constructor parameter annotations
       }
       templates.add(TEMPLATE_EXTERNALIZABLE);
       templates.add(TEMPLATE_SERIALIZABLE);
