@@ -61,7 +61,7 @@ public abstract class EEAGenerator {
 
    public static final String PROPERTY_ACTION = "action";
    public static final String PROPERTY_INPUT_DIRS = "input.dirs";
-   public static final String PROPERTY_INPUT_DIRS_DEFAULT = PROPERTY_INPUT_DIRS + ".default";
+   public static final String PROPERTY_INPUT_DIRS_EXTRA = PROPERTY_INPUT_DIRS + ".extra";
    public static final String PROPERTY_OUTPUT_DIR = "output.dir";
    public static final String PROPERTY_OUTPUT_DIR_DEFAULT = PROPERTY_OUTPUT_DIR + ".default";
    public static final String PROPERTY_PACKAGES_INCLUDE = "packages.include";
@@ -170,8 +170,9 @@ public abstract class EEAGenerator {
             return true;
          };
 
-         final var inputDirsProp = props.get(PROPERTY_INPUT_DIRS, props.get(PROPERTY_INPUT_DIRS_DEFAULT, "").value);
-         for (final String inputDirStr : inputDirsProp.value.split(",")) {
+         final var inputDirsProp = props.get(PROPERTY_INPUT_DIRS, "");
+         final var inputDirsExtraProp = props.get(PROPERTY_INPUT_DIRS_EXTRA, "");
+         for (final String inputDirStr : (inputDirsProp.value + ',' + inputDirsExtraProp.value).split(",")) {
             if (inputDirStr.isBlank()) {
                continue;
             }
@@ -181,7 +182,13 @@ public abstract class EEAGenerator {
                // then make it relative to the properties file
                inputDir = ((Path) inputDirsProp.source).getParent().resolve(inputDir);
             }
-            config.inputDirs.add(inputDir.toAbsolutePath().normalize());
+            inputDir = inputDir.toAbsolutePath().normalize();
+            if (!config.inputDirs.contains(inputDir)) {
+               config.inputDirs.add(inputDir);
+               if (!Files.exists(inputDir)) {
+                  LOG.log(Level.WARNING, "Input directory: " + inputDir + " does not exist!");
+               }
+            }
          }
 
          LOG.log(Level.INFO, "Effective input directories: " + config.inputDirs);

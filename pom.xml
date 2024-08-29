@@ -55,6 +55,9 @@ check for new dependency/plugin updates using:
 
   <modules>
     <module>eea-generator</module>
+    <module>libs/eea-java-11</module>
+    <module>libs/eea-java-17</module>
+    <module>libs/eea-java-21</module>
     <module>libs/eea-byte-buddy-1</module>
     <module>libs/eea-classgraph-4</module>
     <module>libs/eea-commons-configuration-2</module>
@@ -67,9 +70,6 @@ check for new dependency/plugin updates using:
     <module>libs/eea-jackson-2</module>
     <module>libs/eea-jakarta-mail-api-2</module>
     <module>libs/eea-jakarta-servlet-api-6</module>
-    <module>libs/eea-java-11</module>
-    <module>libs/eea-java-17</module>
-    <module>libs/eea-java-21</module>
     <module>libs/eea-javax-mail-api-1</module>
     <module>libs/eea-javax-portlet-api-3</module>
     <module>libs/eea-javax-servlet-api-4</module>
@@ -181,7 +181,7 @@ check for new dependency/plugin updates using:
                        adding ${project.basedir}/../eea-java-11/src/main/resources to input dirs ensures that EEAs from JDK classes get propagated
                        to EEA files in other modules, which is required because of https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2512
                     -->
-                    <argument>-Deea-generator.input.dirs.default=${project.basedir}/src/main/resources,${project.basedir}/../eea-java-11/src/main/resources</argument>
+                    <argument>-Deea-generator.input.dirs=${project.basedir}/src/main/resources,${project.basedir}/../eea-java-11/src/main/resources</argument>
                     <argument>-Deea-generator.output.dir=${project.basedir}/src/main/resources</argument> <!-- perform in-place update -->
                     <argument>-classpath</argument>
                     <classpath />
@@ -204,6 +204,7 @@ check for new dependency/plugin updates using:
                   <arguments>
                     <argument>-Deea-generator.action=minimize</argument>
                     <argument>-Deea-generator.input.dirs=${project.basedir}/src/main/resources</argument>
+                    <argument>-Deea-generator.input.dirs.extra=</argument>
                     <argument>-Deea-generator.output.dir.default=${project.build.outputDirectory}</argument>
                     <argument>-classpath</argument>
                     <classpath />
