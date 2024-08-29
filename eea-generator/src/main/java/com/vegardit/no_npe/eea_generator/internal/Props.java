@@ -86,7 +86,7 @@ public final class Props {
       }
 
       if (prop != null) {
-         LOG.log(Level.INFO, "Found property [{0}] \"{1}\" @({2})", prop.name, prop.value, prop.source);
+         LOG.log(Level.INFO, "Resolved property [{0}] \"{1}\" << {2}", prop.name, prop.value, prop.source);
          return prop;
       }
 
