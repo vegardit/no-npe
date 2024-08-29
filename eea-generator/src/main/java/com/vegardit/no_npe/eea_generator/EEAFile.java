@@ -671,4 +671,9 @@ public class EEAFile {
       Files.write(path, content, openOpts.toArray(OpenOption[]::new));
       return true;
    }
+
+   @Override
+   public String toString() {
+      return super.toString() + " [" + relativePath + "]";
+   }
 }
