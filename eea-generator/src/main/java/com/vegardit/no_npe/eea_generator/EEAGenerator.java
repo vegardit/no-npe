@@ -153,7 +153,7 @@ public abstract class EEAGenerator {
             // then make it relative to the properties file
             outputDir = ((Path) outputDirProp.source).getParent().resolve(outputDir);
          }
-         outputDir = outputDir.normalize().toAbsolutePath();
+         outputDir = outputDir.toAbsolutePath().normalize();
 
          final var config = new Config(outputDir, packages);
 
@@ -181,7 +181,7 @@ public abstract class EEAGenerator {
                // then make it relative to the properties file
                inputDir = ((Path) inputDirsProp.source).getParent().resolve(inputDir);
             }
-            config.inputDirs.add(inputDir.normalize().toAbsolutePath());
+            config.inputDirs.add(inputDir.toAbsolutePath().normalize());
          }
 
          LOG.log(Level.INFO, "Effective input directories: " + config.inputDirs);
