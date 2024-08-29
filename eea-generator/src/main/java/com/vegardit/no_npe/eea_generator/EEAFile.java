@@ -244,7 +244,7 @@ public class EEAFile {
     * @throws IOException in case the file cannot be read or contains syntax errors
     */
    public static @Nullable EEAFile loadIfExists(final Path rootPath, final String className) throws IOException {
-      final var eeaFilePath = rootPath.resolve(classNameToRelativePath(className));
+      final Path eeaFilePath = rootPath.resolve(classNameToRelativePath(className));
       if (!Files.exists(eeaFilePath)) {
          LOG.log(Level.DEBUG, "File [{0}] does not exist, skipping.", eeaFilePath);
          return null;
@@ -256,7 +256,7 @@ public class EEAFile {
     * @throws IOException in case the file cannot be read or contains syntax errors
     */
    public static EEAFile load(final Path rootPath, final String className) throws IOException {
-      final var eeaFilePath = rootPath.resolve(classNameToRelativePath(className));
+      final Path eeaFilePath = rootPath.resolve(classNameToRelativePath(className));
       return load(eeaFilePath);
    }
 
@@ -406,7 +406,7 @@ public class EEAFile {
    }
 
    public void addEmptyLine() {
-      final var lastMember = MiscUtils.findLastElement(members);
+      final ClassMember lastMember = MiscUtils.findLastElement(members);
       if (lastMember != null) {
          lastMember.isFollowedByEmptyLine = true;
       }
@@ -456,8 +456,8 @@ public class EEAFile {
 
       classHeader.applyAnnotationsAndCommentsFrom(their.classHeader, overrideOnConflict);
 
-      for (final var superType : superTypes) {
-         for (final var theirSuperType : their.superTypes) {
+      for (final ClassMember superType : superTypes) {
+         for (final ClassMember theirSuperType : their.superTypes) {
             if (superType.originalSignature.value.equals(theirSuperType.originalSignature.value)) {
                superType.applyAnnotationsAndCommentsFrom(theirSuperType, overrideOnConflict);
                break;
@@ -465,16 +465,16 @@ public class EEAFile {
          }
       }
 
-      their.members.forEach(theirMember -> {
-         final var ourMember = findMatchingClassMember(theirMember);
+      for (final ClassMember theirMember : their.members) {
+         final ClassMember ourMember = findMatchingClassMember(theirMember);
          if (ourMember == null) {
             if (addNewMembers) {
                addMember(theirMember.clone());
             }
-            return;
+         } else {
+            ourMember.applyAnnotationsAndCommentsFrom(theirMember, overrideOnConflict);
          }
-         ourMember.applyAnnotationsAndCommentsFrom(theirMember, overrideOnConflict);
-      });
+      }
    }
 
    /**
@@ -490,8 +490,8 @@ public class EEAFile {
 
    private void renderLine(final List<String> lines, final Object... newLineContent) {
       final var sb = new StringBuilder();
-      for (final var e : newLineContent) {
-         sb.append(Objects.toString(e));
+      for (final Object obj : newLineContent) {
+         sb.append(Objects.toString(obj));
       }
       lines.add(sb.toString());
    }
@@ -511,7 +511,7 @@ public class EEAFile {
        */
       renderLine(lines, ExternalAnnotationProvider.CLASS_PREFIX, //
          new ValueWithComment(classHeader.name.value.replace('.', '/'), omitComments ? "" : classHeader.name.comment));
-      final var classSignatureOriginal = classHeader.originalSignature;
+      final ValueWithComment classSignatureOriginal = classHeader.originalSignature;
       if (!classSignatureOriginal.value.isEmpty()) {
          renderLine(lines, " ", classSignatureOriginal.toString(omitComments));
          if (classHeader.hasNullAnnotations()) {
@@ -600,13 +600,13 @@ public class EEAFile {
     * @return true if modifications where written to disk, false was already up-to-date
     */
    public boolean save(final Path rootPath, final Set<SaveOption> opts) throws IOException {
-      final var path = rootPath.resolve(relativePath);
+      final Path path = rootPath.resolve(relativePath);
 
       final boolean replaceExisting = opts.contains(SaveOption.REPLACE_EXISTING);
       final boolean deleteIfEmpty = opts.contains(SaveOption.DELETE_IF_EMPTY);
       final boolean quiet = opts.contains(SaveOption.QUIET);
 
-      final var content = renderFileContent(opts);
+      final List<String> content = renderFileContent(opts);
 
       if (exists(rootPath)) {
 
@@ -660,7 +660,7 @@ public class EEAFile {
             LOG.log(Level.INFO, "Creating [{0}]...", path.toAbsolutePath());
          }
 
-         final var parentDir = path.getParent();
+         final Path parentDir = path.getParent();
          assert parentDir != null;
          Files.createDirectories(parentDir);
       }

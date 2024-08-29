@@ -134,9 +134,9 @@ public abstract class EEAGenerator {
          }
          final var props = new Props(JVM_PROPERTY_PREFIX, filePropsPath);
 
-         final var action = props.get(PROPERTY_ACTION, null).value;
+         final String action = props.get(PROPERTY_ACTION, null).value;
 
-         final var packages = "minimize".equals(action) //
+         final String[] packages = "minimize".equals(action) //
                ? new @NonNull String[0] //
                : props.get(PROPERTY_PACKAGES_INCLUDE, null).value.split(",");
 
@@ -147,7 +147,7 @@ public abstract class EEAGenerator {
 
          final var outputDirPropDefault = props.get(PROPERTY_OUTPUT_DIR_DEFAULT, "").value;
          final var outputDirProp = props.get(PROPERTY_OUTPUT_DIR, outputDirPropDefault.isEmpty() ? null : outputDirPropDefault);
-         var outputDir = Path.of(outputDirProp.value);
+         Path outputDir = Path.of(outputDirProp.value);
          if (outputDirProp.source instanceof Path && !outputDir.isAbsolute()) {
             // if the specified outputDir value is relative and was source from properties file,
             // then make it relative to the properties file
@@ -163,7 +163,7 @@ public abstract class EEAGenerator {
          config.omitRedundantAnnotatedSignatures = Boolean.parseBoolean(props.get(PROPERTY_OMIT_REDUNDAND_ANNOTATED_SIGNATURES,
             "false").value);
          config.classFilter = clazz -> {
-            for (final var classExclusion : classExclusions) {
+            for (final Pattern classExclusion : classExclusions) {
                if (classExclusion.matcher(clazz.getName()).find())
                   return false;
             }
@@ -171,11 +171,11 @@ public abstract class EEAGenerator {
          };
 
          final var inputDirsProp = props.get(PROPERTY_INPUT_DIRS, props.get(PROPERTY_INPUT_DIRS_DEFAULT, "").value);
-         for (final var inputDirStr : inputDirsProp.value.split(",")) {
+         for (final String inputDirStr : inputDirsProp.value.split(",")) {
             if (inputDirStr.isBlank()) {
                continue;
             }
-            var inputDir = Path.of(inputDirStr);
+            Path inputDir = Path.of(inputDirStr);
             if (inputDirsProp.source instanceof Path && !inputDir.isAbsolute()) {
                // if the specified inputDir value is relative and was source from properties file,
                // then make it relative to the properties file
@@ -201,7 +201,7 @@ public abstract class EEAGenerator {
                throw new IllegalArgumentException("Unsupported value for [action] parameter: " + action);
          }
       } catch (final UncheckedIOException ex) {
-         final var iox = ex.getCause();
+         final Exception iox = ex.getCause();
          sanitizeStackTraces(iox);
          throw iox;
       } catch (final Exception ex) {
@@ -222,7 +222,7 @@ public abstract class EEAGenerator {
       templates.add(TEMPLATE_OBJECT);
 
       for (final EEAFile template : templates) {
-         final var matchingMember = template.findMatchingClassMember(member);
+         final ClassMember matchingMember = template.findMatchingClassMember(member);
          if (matchingMember != null && matchingMember.hasNullAnnotations())
             return matchingMember.annotatedSignature;
       }
@@ -318,7 +318,7 @@ public abstract class EEAGenerator {
    }
 
    protected static boolean hasObjectReturnType(final EEAFile.ClassMember member) {
-      final var sig = member.originalSignature.value;
+      final String sig = member.originalSignature.value;
       // object return type: (Ljava/lang/String;)Ljava/lang/String; or (Ljava/lang/String;)TT;
       // void return type: (Ljava/lang/String;)V
       // primitive return type: (Ljava/lang/String;)B
@@ -333,7 +333,7 @@ public abstract class EEAGenerator {
       final var fields = classInfo.getDeclaredFieldInfo();
       final var methods = classInfo.getDeclaredMethodAndConstructorInfo();
 
-      final var typeSigStr = classInfo.getTypeSignatureStr();
+      final String typeSigStr = classInfo.getTypeSignatureStr();
       if (typeSigStr != null) {
 
          // class signature
@@ -488,7 +488,7 @@ public abstract class EEAGenerator {
       final var eeaFiles = new HashMap<ClassInfo, EEAFile>();
 
       long totalModifications = 0;
-      for (final var packageName : cfg.packages) {
+      for (final String packageName : cfg.packages) {
          LOG.log(Level.INFO, "Scanning EEA files of package [{0}]...", packageName);
 
          // create EEAFile instances based on class signatures found on classpath
@@ -497,7 +497,7 @@ public abstract class EEAGenerator {
 
          // extend computed EEAFiles with annotations found on matching *.eea files in input dirs
          for (final var computedEEAFile : eeaFilesOfPackage.values()) {
-            for (final var inputDir : cfg.inputDirs) {
+            for (final Path inputDir : cfg.inputDirs) {
                final var existingEEAFile = EEAFile.loadIfExists(inputDir, computedEEAFile.classHeader.name.value);
                if (existingEEAFile != null) {
                   computedEEAFile.applyAnnotationsAndCommentsFrom(existingEEAFile, true, false);
@@ -535,7 +535,7 @@ public abstract class EEAGenerator {
          if (eeaFile != null)
             return eeaFile;
 
-         for (final var inputDir : cfg.inputDirs) {
+         for (final Path inputDir : cfg.inputDirs) {
             try {
                eeaFile = EEAFile.loadIfExists(inputDir, classInfo.getName().replace('.', '/'));
                if (eeaFile != null) {
@@ -561,17 +561,19 @@ public abstract class EEAGenerator {
             superClasses.add(OBJECT_CLASS_INFO);
             final var interfaces = classInfo.getInterfaces();
 
-            eeaFile.getClassMembers().forEach(member -> {
+            for (final ClassMember member : eeaFile.getClassMembers()) {
                switch (member.getType()) {
                   case CONSTRUCTOR:
-                     return; // exclude constructors
+                     continue; // exclude constructors
                   case FIELD:
-                     if (isStaticField(classInfo, member.name.value))
-                        return; // exclude static fields
+                     if (isStaticField(classInfo, member.name.value)) {
+                        continue; // exclude static fields
+                     }
                      break;
                   case METHOD:
-                     if (isStaticMethod(classInfo, member.name.value, member.originalSignature.value))
-                        return; // exclude static methods
+                     if (isStaticMethod(classInfo, member.name.value, member.originalSignature.value)) {
+                        continue; // exclude static methods
+                     }
                      break;
                }
 
@@ -581,7 +583,7 @@ public abstract class EEAGenerator {
                /*
                 * 1) scan super classes (which have precedence) for inheritable annotated signature
                 */
-               for (final var superClass : superClasses) {
+               for (final ClassInfo superClass : superClasses) {
                   final EEAFile superClassEEA = superClass == OBJECT_CLASS_INFO //
                         ? TEMPLATE_OBJECT
                         : getSuperEEAFile.apply(superClass);
@@ -602,7 +604,7 @@ public abstract class EEAGenerator {
                 */
                boolean hasConflictingIFaceAnnotatedSignatures = false;
                if (inheritableAnnotatedSignature == null) {
-                  for (final var iface : interfaces) {
+                  for (final ClassInfo iface : interfaces) {
                      final EEAFile ifaceEEA = getSuperEEAFile.apply(iface);
                      if (ifaceEEA == null) {
                         continue;
@@ -663,7 +665,7 @@ public abstract class EEAGenerator {
                      }
                   }
                }
-            });
+            }
          });
       }
 
@@ -697,7 +699,7 @@ public abstract class EEAGenerator {
     * @return true if executing this method changes the value or comment of the target's annotated signature
     */
    private static boolean setOverridingAnnotatedSignatureComment(final ValueWithComment annotatedSignature, final String parentType) {
-      final var oldComment = annotatedSignature.comment;
+      final String oldComment = annotatedSignature.comment;
       annotatedSignature.comment = "# " + EEAFile.MARKER_OVERRIDES + "(" + parentType + ")";
       return !Objects.equals(oldComment, annotatedSignature.comment);
    }
@@ -780,7 +782,7 @@ public abstract class EEAGenerator {
    public static long validateEEAFiles(final Config config) throws IOException {
       long totalValidations = 0;
 
-      for (final var packageName : config.packages) {
+      for (final String packageName : config.packages) {
          LOG.log(Level.INFO, "Validating EEA files of package [{0}]...", packageName);
 
          final Map<Path, EEAFile> eeaFilesOfPkg = remap(computeEEAFiles(packageName, config.classFilter), v -> v.relativePath);
@@ -801,7 +803,7 @@ public abstract class EEAGenerator {
                final var parsedEEAFile = EEAFile.load(path);
 
                // ensure the EEA file does not contain declarations of non-existing fields/methods
-               for (final var parsedMember : parsedEEAFile.getClassMembers()) {
+               for (final ClassMember parsedMember : parsedEEAFile.getClassMembers()) {
                   if (computedEEAFile.findMatchingClassMember(parsedMember) == null) {
                      final var candidates = computedEEAFile.getClassMembers().stream() //
                         .filter(m -> m.name.equals(parsedMember.name)) //
