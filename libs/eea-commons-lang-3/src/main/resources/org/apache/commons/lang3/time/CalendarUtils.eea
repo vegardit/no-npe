@@ -7,7 +7,25 @@ INSTANCE
 getInstance
  ()Lorg/apache/commons/lang3/time/CalendarUtils;
  ()Lorg/apache/commons/lang3/time/CalendarUtils;
+toLocalDateTime
+ (Ljava/util/Calendar;)Ljava/time/LocalDateTime;
+ (Ljava/util/Calendar;)Ljava/time/LocalDateTime;
+toOffsetDateTime
+ (Ljava/util/Calendar;)Ljava/time/OffsetDateTime;
+ (Ljava/util/Calendar;)Ljava/time/OffsetDateTime;
+toZonedDateTime
+ (Ljava/util/Calendar;)Ljava/time/ZonedDateTime;
+ (Ljava/util/Calendar;)Ljava/time/ZonedDateTime;
 
 <init>
  (Ljava/util/Calendar;)V
  (Ljava/util/Calendar;)V
+toLocalDateTime
+ ()Ljava/time/LocalDateTime;
+ ()Ljava/time/LocalDateTime;
+toOffsetDateTime
+ ()Ljava/time/OffsetDateTime;
+ ()Ljava/time/OffsetDateTime;
+toZonedDateTime
+ ()Ljava/time/ZonedDateTime;
+ ()Ljava/time/ZonedDateTime;
