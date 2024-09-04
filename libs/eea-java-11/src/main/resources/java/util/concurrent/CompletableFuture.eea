@@ -14,7 +14,7 @@ allOf
  ([1L1java/util/concurrent/CompletableFuture<*>;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>;
 anyOf
  ([Ljava/util/concurrent/CompletableFuture<*>;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
- ([1L1java/util/concurrent/CompletableFuture<*>;)L1java/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
+ ([1L1java/util/concurrent/CompletableFuture<*>;)L1java/util/concurrent/CompletableFuture<L0java/lang/Object;>;
 completedFuture
  <U:Ljava/lang/Object;>(TU;)Ljava/util/concurrent/CompletableFuture<TU;>;
  <U:Ljava/lang/Object;>(T0U;)L1java/util/concurrent/CompletableFuture<TU;>;
@@ -87,7 +87,7 @@ defaultExecutor
  ()L1java/util/concurrent/Executor;
 exceptionally
  (Ljava/util/function/Function<Ljava/lang/Throwable;+TT;>;)Ljava/util/concurrent/CompletableFuture<TT;>;
- (L1java/util/function/Function<Ljava/lang/Throwable;+TT;>;)L1java/util/concurrent/CompletableFuture<TT;>;
+ (L1java/util/function/Function<L1java/lang/Throwable;+TT;>;)L1java/util/concurrent/CompletableFuture<TT;>;
 get
  ()TT;
  ()TT;
@@ -99,13 +99,13 @@ getNow
  (TT;)TT;
 handle
  <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;)Ljava/util/concurrent/CompletableFuture<TU;>;
- <U:Ljava/lang/Object;>(L1java/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;)L1java/util/concurrent/CompletableFuture<TU;>;
+ <U:Ljava/lang/Object;>(L1java/util/function/BiFunction<-TT;L0java/lang/Throwable;+TU;>;)L1java/util/concurrent/CompletableFuture<TU;>;
 handleAsync
  <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;)Ljava/util/concurrent/CompletableFuture<TU;>;
- <U:Ljava/lang/Object;>(L1java/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;)L1java/util/concurrent/CompletableFuture<TU;>;
+ <U:Ljava/lang/Object;>(L1java/util/function/BiFunction<-TT;L0java/lang/Throwable;+TU;>;)L1java/util/concurrent/CompletableFuture<TU;>;
 handleAsync
  <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture<TU;>;
- <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;Ljava/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<TU;>;
+ <U:Ljava/lang/Object;>(L1java/util/function/BiFunction<-TT;L0java/lang/Throwable;+TU;>;L1java/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<TU;>;
 join
  ()TT;
  ()TT;
@@ -204,10 +204,10 @@ toString
  ()L1java/lang/String; # @Inherited(java.lang.Object)
 whenComplete
  (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)Ljava/util/concurrent/CompletableFuture<TT;>;
- (L1java/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)L1java/util/concurrent/CompletableFuture<TT;>;
+ (L1java/util/function/BiConsumer<-TT;-L0java/lang/Throwable;>;)L1java/util/concurrent/CompletableFuture<TT;>;
 whenCompleteAsync
  (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)Ljava/util/concurrent/CompletableFuture<TT;>;
- (L1java/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)L1java/util/concurrent/CompletableFuture<TT;>;
+ (L1java/util/function/BiConsumer<-TT;-L0java/lang/Throwable;>;)L1java/util/concurrent/CompletableFuture<TT;>;
 whenCompleteAsync
  (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture<TT;>;
- (L1java/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;Ljava/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<TT;>;
+ (L1java/util/function/BiConsumer<-TT;-L0java/lang/Throwable;>;L1java/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<TT;>;
