@@ -17,6 +17,10 @@ on:
         description: 'Additional Maven Args'
         required: false
         default: ''
+      library:
+        description: 'Name of the library to update (e.g. eea-gson-2). If left empty all libraries are updated.'
+        required: false
+        default: ''
 
 
 defaults:
@@ -92,7 +96,9 @@ jobs:
       run: |
         set -euo pipefail
 
-        bash .ci/update-eea-files.sh ${{ github.event.inputs.additional_maven_args }}
+        bash .ci/update-eea-files.sh \
+          $( [[ -n "${{ github.event.inputs.library }}"  ]] && echo '-pl "libs/${{ github.event.inputs.library }}" -am' || true ) \
+          ${{ github.event.inputs.additional_maven_args }}
 
         updates=$(git -C . ls-files -o -m -d --exclude-standard | head -n 50 || true)  # "|| true" is to mitgate exit code 141
 
@@ -110,14 +116,14 @@ jobs:
     - name: Create PR
       id: create-pr
       uses: peter-evans/create-pull-request@v6  # https://github.com/peter-evans/create-pull-request
-      if: "${{ steps.eea_updates.outputs.updates != '' }}"
+      if: steps.eea_updates.outputs.updates
       with:
-        title: "chore: Update EEA Files"
+        title: "chore: Update ${{ github.event.inputs.library && format('{0} ', github.event.inputs.library) || '' }}EEA files"
         author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
         committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-        commit-message: "chore: Update EEA Files"
+        commit-message: "chore: Update EEA ${{ github.event.inputs.library && format('{0} ', github.event.inputs.library) || '' }}files"
         body: ${{ steps.eea_updates.outputs.updates }}
         add-paths: libs
-        branch: eea_updates
+        branch: ${{ github.event.inputs.library && format('eea_{0}_updates', github.event.inputs.library) || 'eea_updates' }}
         delete-branch: true
         token: ${{ github.token }}
