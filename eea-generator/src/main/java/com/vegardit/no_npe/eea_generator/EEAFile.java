@@ -17,9 +17,9 @@ import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Deque;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
@@ -593,7 +593,13 @@ public class EEAFile {
     * @return true if modifications where written to disk, false was already up-to-date
     */
    public boolean save(final Path rootPath, final @Nullable SaveOption... opts) throws IOException {
-      return save(rootPath, Arrays.stream(opts).filter(Objects::nonNull).collect(Collectors.toSet()));
+      final var uniqueOpts = new HashSet<SaveOption>();
+      for (final var opt : opts) {
+         if (opt != null) {
+            uniqueOpts.add(opt);
+         }
+      }
+      return save(rootPath, uniqueOpts);
    }
 
    /**
