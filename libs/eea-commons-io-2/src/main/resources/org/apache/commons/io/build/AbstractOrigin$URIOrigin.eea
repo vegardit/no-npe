@@ -10,6 +10,9 @@ super org/apache/commons/io/build/AbstractOrigin
 getFile
  ()Ljava/io/File;
  ()L1java/io/File; # @Inherited(org.apache.commons.io.build.AbstractOrigin)
+getInputStream
+ ([Ljava/nio/file/OpenOption;)Ljava/io/InputStream;
+ ([1Ljava/nio/file/OpenOption;)L1java/io/InputStream; # @Inherited(org.apache.commons.io.build.AbstractOrigin)
 getPath
  ()Ljava/nio/file/Path;
  ()L1java/nio/file/Path; # @Inherited(org.apache.commons.io.build.AbstractOrigin)
