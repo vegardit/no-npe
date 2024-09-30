@@ -4,9 +4,6 @@ super java/lang/Enum
  <Lnet/bytebuddy/build/Plugin$Engine$Source$Empty;>
  <Lnet/bytebuddy/build/Plugin$Engine$Source$Empty;>
 
-getClassFileLocator
- ()Lnet/bytebuddy/dynamic/ClassFileLocator;
- ()Lnet/bytebuddy/dynamic/ClassFileLocator;
 getManifest
  ()Ljava/util/jar/Manifest;
  ()L0java/util/jar/Manifest; # @Inherited(net.bytebuddy.build.Plugin$Engine$Source$Origin)
@@ -16,3 +13,6 @@ iterator
 read
  ()Lnet/bytebuddy/build/Plugin$Engine$Source$Origin;
  ()Lnet/bytebuddy/build/Plugin$Engine$Source$Origin;
+toClassFileLocator
+ (Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;
+ (Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;

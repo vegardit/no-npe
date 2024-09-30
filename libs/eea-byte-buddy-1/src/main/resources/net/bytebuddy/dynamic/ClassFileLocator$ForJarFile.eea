@@ -3,6 +3,12 @@ class net/bytebuddy/dynamic/ClassFileLocator$ForJarFile
 of
  (Ljava/io/File;)Lnet/bytebuddy/dynamic/ClassFileLocator;
  (Ljava/io/File;)Lnet/bytebuddy/dynamic/ClassFileLocator;
+of
+ (Ljava/io/File;Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;
+ (Ljava/io/File;Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;
+of
+ (Ljava/util/jar/JarFile;Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;
+ (Ljava/util/jar/JarFile;Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;
 ofClassPath
  ()Lnet/bytebuddy/dynamic/ClassFileLocator;
  ()Lnet/bytebuddy/dynamic/ClassFileLocator;
@@ -16,9 +22,12 @@ ofRuntimeJar
 <init>
  (Ljava/util/jar/JarFile;)V
  (Ljava/util/jar/JarFile;)V
+<init>
+ ([ILjava/util/jar/JarFile;Z)V
+ ([ILjava/util/jar/JarFile;Z)V
+doLocate
+ (Ljava/lang/String;)[B
+ (Ljava/lang/String;)[0B # @Inherited(net.bytebuddy.dynamic.ClassFileLocator$MultiReleaseAware)
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
-locate
- (Ljava/lang/String;)Lnet/bytebuddy/dynamic/ClassFileLocator$Resolution;
- (Ljava/lang/String;)Lnet/bytebuddy/dynamic/ClassFileLocator$Resolution;
+ (L0java/lang/Object;)Z # @Inherited(net.bytebuddy.dynamic.ClassFileLocator$MultiReleaseAware)

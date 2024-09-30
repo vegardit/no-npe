@@ -6,9 +6,6 @@ class net/bytebuddy/build/Plugin$Engine$Source$ForFolder
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
-getClassFileLocator
- ()Lnet/bytebuddy/dynamic/ClassFileLocator;
- ()Lnet/bytebuddy/dynamic/ClassFileLocator;
 getManifest
  ()Ljava/util/jar/Manifest;
  ()L0java/util/jar/Manifest; # @Inherited(net.bytebuddy.build.Plugin$Engine$Source$Origin)
@@ -18,3 +15,6 @@ iterator
 read
  ()Lnet/bytebuddy/build/Plugin$Engine$Source$Origin;
  ()Lnet/bytebuddy/build/Plugin$Engine$Source$Origin;
+toClassFileLocator
+ (Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;
+ (Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;

@@ -17,8 +17,8 @@ scan
  (Lnet/bytebuddy/ByteBuddy;Lnet/bytebuddy/build/Plugin$Engine$TypeStrategy;)V
  (Lnet/bytebuddy/ByteBuddy;Lnet/bytebuddy/build/Plugin$Engine$TypeStrategy;)V
 <init>
- (Lnet/bytebuddy/ByteBuddy;Lnet/bytebuddy/build/Plugin$Engine$TypeStrategy;Lnet/bytebuddy/build/Plugin$Engine$PoolStrategy;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/build/Plugin$Engine$Listener;Lnet/bytebuddy/build/Plugin$Engine$ErrorHandler;Lnet/bytebuddy/build/Plugin$Engine$Dispatcher$Factory;Lnet/bytebuddy/matcher/ElementMatcher$Junction<-Lnet/bytebuddy/description/type/TypeDescription;>;)V
- (Lnet/bytebuddy/ByteBuddy;Lnet/bytebuddy/build/Plugin$Engine$TypeStrategy;Lnet/bytebuddy/build/Plugin$Engine$PoolStrategy;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/build/Plugin$Engine$Listener;Lnet/bytebuddy/build/Plugin$Engine$ErrorHandler;Lnet/bytebuddy/build/Plugin$Engine$Dispatcher$Factory;Lnet/bytebuddy/matcher/ElementMatcher$Junction<-Lnet/bytebuddy/description/type/TypeDescription;>;)V
+ (Lnet/bytebuddy/ByteBuddy;Lnet/bytebuddy/build/Plugin$Engine$TypeStrategy;Lnet/bytebuddy/build/Plugin$Engine$PoolStrategy;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/ClassFileVersion;Lnet/bytebuddy/build/Plugin$Engine$Listener;Lnet/bytebuddy/build/Plugin$Engine$ErrorHandler;Lnet/bytebuddy/build/Plugin$Engine$Dispatcher$Factory;Lnet/bytebuddy/matcher/ElementMatcher$Junction<-Lnet/bytebuddy/description/type/TypeDescription;>;)V
+ (Lnet/bytebuddy/ByteBuddy;Lnet/bytebuddy/build/Plugin$Engine$TypeStrategy;Lnet/bytebuddy/build/Plugin$Engine$PoolStrategy;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/ClassFileVersion;Lnet/bytebuddy/build/Plugin$Engine$Listener;Lnet/bytebuddy/build/Plugin$Engine$ErrorHandler;Lnet/bytebuddy/build/Plugin$Engine$Dispatcher$Factory;Lnet/bytebuddy/matcher/ElementMatcher$Junction<-Lnet/bytebuddy/description/type/TypeDescription;>;)V
 apply
  (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/build/Plugin$Engine$Target;Ljava/util/List<+Lnet/bytebuddy/build/Plugin$Factory;>;)Lnet/bytebuddy/build/Plugin$Engine$Summary;
  (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/build/Plugin$Engine$Target;Ljava/util/List<+Lnet/bytebuddy/build/Plugin$Factory;>;)Lnet/bytebuddy/build/Plugin$Engine$Summary;
@@ -31,6 +31,9 @@ ignore
 with
  (Lnet/bytebuddy/ByteBuddy;)Lnet/bytebuddy/build/Plugin$Engine;
  (Lnet/bytebuddy/ByteBuddy;)Lnet/bytebuddy/build/Plugin$Engine;
+with
+ (Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/build/Plugin$Engine;
+ (Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/build/Plugin$Engine;
 with
  (Lnet/bytebuddy/build/Plugin$Engine$Dispatcher$Factory;)Lnet/bytebuddy/build/Plugin$Engine;
  (Lnet/bytebuddy/build/Plugin$Engine$Dispatcher$Factory;)Lnet/bytebuddy/build/Plugin$Engine;

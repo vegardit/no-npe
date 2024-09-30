@@ -15,9 +15,15 @@ retain
 store
  (Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)V
  (Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)V
+store
+ (Lnet/bytebuddy/ClassFileVersion;Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)V
+ (Lnet/bytebuddy/ClassFileVersion;Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)V
 toTypeMap
  ()Ljava/util/Map<Ljava/lang/String;[B>;
  ()Ljava/util/Map<Ljava/lang/String;[B>;
+toTypeMap
+ (Lnet/bytebuddy/ClassFileVersion;)Ljava/util/Map<Ljava/lang/String;[B>;
+ (Lnet/bytebuddy/ClassFileVersion;)Ljava/util/Map<Ljava/lang/String;[B>;
 write
  (Ljava/util/jar/Manifest;)Lnet/bytebuddy/build/Plugin$Engine$Target$Sink;
  (Ljava/util/jar/Manifest;)Lnet/bytebuddy/build/Plugin$Engine$Target$Sink;

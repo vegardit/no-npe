@@ -4,8 +4,14 @@ ofTypes
  (Ljava/util/Collection<+Ljava/lang/Class<*>;>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
  (Ljava/util/Collection<+Ljava/lang/Class<*>;>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
 ofTypes
+ (Ljava/util/Collection<+Ljava/lang/Class<*>;>;Ljava/util/Map<Lnet/bytebuddy/ClassFileVersion;Ljava/util/Collection<+Ljava/lang/Class<*>;>;>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
+ (Ljava/util/Collection<+Ljava/lang/Class<*>;>;Ljava/util/Map<Lnet/bytebuddy/ClassFileVersion;Ljava/util/Collection<+Ljava/lang/Class<*>;>;>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
+ofTypes
  (Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
  (Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
+ofTypes
+ (Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;Ljava/util/Map<Lnet/bytebuddy/ClassFileVersion;Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
+ (Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;Ljava/util/Map<Lnet/bytebuddy/ClassFileVersion;Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
 ofTypes
  ([Ljava/lang/Class<*>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
  ([Ljava/lang/Class<*>;)Lnet/bytebuddy/build/Plugin$Engine$Source;
@@ -16,9 +22,6 @@ ofTypes
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
-getClassFileLocator
- ()Lnet/bytebuddy/dynamic/ClassFileLocator;
- ()Lnet/bytebuddy/dynamic/ClassFileLocator;
 getManifest
  ()Ljava/util/jar/Manifest;
  ()L0java/util/jar/Manifest; # @Inherited(net.bytebuddy.build.Plugin$Engine$Source$Origin)
@@ -28,3 +31,6 @@ iterator
 read
  ()Lnet/bytebuddy/build/Plugin$Engine$Source$Origin;
  ()Lnet/bytebuddy/build/Plugin$Engine$Source$Origin;
+toClassFileLocator
+ (Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;
+ (Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/dynamic/ClassFileLocator;
