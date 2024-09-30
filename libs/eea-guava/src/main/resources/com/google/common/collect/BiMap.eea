@@ -8,13 +8,13 @@ super java/util/Map
 
 forcePut
  (TK;TV;)TV;
- (TK;TV;)T1V;
+ (TK;TV;)T0V;
 inverse
  ()Lcom/google/common/collect/BiMap<TV;TK;>;
  ()Lcom/google/common/collect/BiMap<TV;TK;>;
 put
  (TK;TV;)TV;
- (TK;TV;)T1V; # @Overrides(java.util.Map)
+ (TK;TV;)T0V; # @Inherited(java.util.Map)
 putAll
  (Ljava/util/Map<+TK;+TV;>;)V
  (L1java/util/Map<+TK;+TV;>;)V # @Inherited(java.util.Map)

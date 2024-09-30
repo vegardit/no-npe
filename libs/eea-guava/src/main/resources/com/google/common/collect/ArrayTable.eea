@@ -15,7 +15,7 @@ create
 
 at
  (II)TV;
- (II)T1V;
+ (II)T0V;
 cellSet
  ()Ljava/util/Set<Lcom/google/common/collect/Table$Cell<TR;TC;TV;>;>;
  ()Ljava/util/Set<Lcom/google/common/collect/Table$Cell<TR;TC;TV;>;>;
@@ -45,19 +45,19 @@ containsValue
  (Ljava/lang/Object;)Z
 erase
  (Ljava/lang/Object;Ljava/lang/Object;)TV;
- (Ljava/lang/Object;Ljava/lang/Object;)T1V;
+ (Ljava/lang/Object;Ljava/lang/Object;)T0V;
 get
  (Ljava/lang/Object;Ljava/lang/Object;)TV;
- (Ljava/lang/Object;Ljava/lang/Object;)T1V; # @Overrides(com.google.common.collect.Table)
+ (Ljava/lang/Object;Ljava/lang/Object;)T0V; # @Inherited(com.google.common.collect.Table)
 put
  (TR;TC;TV;)TV;
- (TR;TC;TV;)T1V; # @Inherited(com.google.common.collect.Table)
+ (TR;TC;TV;)T0V; # @Inherited(com.google.common.collect.Table)
 putAll
  (Lcom/google/common/collect/Table<+TR;+TC;+TV;>;)V
  (Lcom/google/common/collect/Table<+TR;+TC;+TV;>;)V
 remove
  (Ljava/lang/Object;Ljava/lang/Object;)TV;
- (Ljava/lang/Object;Ljava/lang/Object;)T1V; # @Overrides(com.google.common.collect.Table)
+ (Ljava/lang/Object;Ljava/lang/Object;)T0V; # @Inherited(com.google.common.collect.Table)
 row
  (TR;)Ljava/util/Map<TC;TV;>;
  (TR;)Ljava/util/Map<TC;TV;>;
@@ -72,7 +72,7 @@ rowMap
  ()Ljava/util/Map<TR;Ljava/util/Map<TC;TV;>;>;
 set
  (IITV;)TV;
- (IITV;)T1V;
+ (IITV;)T0V;
 toArray
  (Ljava/lang/Class<TV;>;)[[TV;
  (Ljava/lang/Class<TV;>;)[[TV;

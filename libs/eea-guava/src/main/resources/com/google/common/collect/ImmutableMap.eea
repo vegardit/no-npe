@@ -66,13 +66,13 @@ asMultimap
  ()Lcom/google/common/collect/ImmutableSetMultimap<TK;TV;>;
 compute
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)T1V; # @Overrides(java.util.Map)
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)T0V; # @Overrides(java.util.Map)
 computeIfAbsent
  (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
  (TK;L1java/util/function/Function<-TK;+T0V;>;)TV; # @Inherited(java.util.Map)
 computeIfPresent
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)T1V; # @Overrides(java.util.Map)
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)T0V; # @Overrides(java.util.Map)
 containsKey
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.util.Map)
@@ -87,34 +87,34 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)T1V; # @Overrides(java.util.Map)
+ (Ljava/lang/Object;)T0V; # @Inherited(java.util.Map)
 getOrDefault
  (Ljava/lang/Object;TV;)TV;
- (Ljava/lang/Object;TV;)T1V;
+ (Ljava/lang/Object;TV;)T0V;
 keySet
  ()Lcom/google/common/collect/ImmutableSet<TK;>;
  ()Lcom/google/common/collect/ImmutableSet<TK;>;
 merge
  (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)TV;
- (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)T1V; # @Overrides(java.util.Map)
+ (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)T0V; # @Overrides(java.util.Map)
 put
  (TK;TV;)TV;
- (TK;TV;)T1V; # @Overrides(java.util.Map)
+ (TK;TV;)T0V; # @Inherited(java.util.Map)
 putAll
  (Ljava/util/Map<+TK;+TV;>;)V
  (L1java/util/Map<+TK;+TV;>;)V # @Inherited(java.util.Map)
 putIfAbsent
  (TK;TV;)TV;
- (TK;TV;)T1V; # @Overrides(java.util.Map)
+ (TK;TV;)T0V; # @Inherited(java.util.Map)
 remove
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)T1V; # @Overrides(java.util.Map)
+ (Ljava/lang/Object;)T0V; # @Overrides(java.util.Map)
 remove
  (Ljava/lang/Object;Ljava/lang/Object;)Z
  (L0java/lang/Object;L0java/lang/Object;)Z # @Inherited(java.util.Map)
 replace
  (TK;TV;)TV;
- (TK;TV;)T1V; # @Overrides(java.util.Map)
+ (TK;TV;)T0V; # @Inherited(java.util.Map)
 replace
  (TK;TV;TV;)Z
  (TK;TV;TV;)Z
