@@ -84,10 +84,10 @@ addValueInstantiator
  (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;)Lcom/fasterxml/jackson/databind/module/SimpleModule;
 getModuleName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(com.fasterxml.jackson.databind.Module)
 getTypeId
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L1java/lang/Object; # @Inherited(com.fasterxml.jackson.databind.Module)
 registerSubtypes
  (Ljava/util/Collection<Ljava/lang/Class<*>;>;)Lcom/fasterxml/jackson/databind/module/SimpleModule;
  (Ljava/util/Collection<Ljava/lang/Class<*>;>;)Lcom/fasterxml/jackson/databind/module/SimpleModule;
@@ -129,7 +129,7 @@ setValueInstantiators
  (Lcom/fasterxml/jackson/databind/module/SimpleValueInstantiators;)V
 setupModule
  (Lcom/fasterxml/jackson/databind/Module$SetupContext;)V
- (Lcom/fasterxml/jackson/databind/Module$SetupContext;)V
+ (L1com/fasterxml/jackson/databind/Module$SetupContext;)V # @Inherited(com.fasterxml.jackson.databind.Module)
 version
  ()Lcom/fasterxml/jackson/core/Version;
- ()Lcom/fasterxml/jackson/core/Version;
+ ()L1com/fasterxml/jackson/core/Version; # @Inherited(com.fasterxml.jackson.databind.Module)

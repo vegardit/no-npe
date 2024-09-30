@@ -37,13 +37,13 @@ getContentValueHandler
  ()Ljava/lang/Object;
 getErasedSignature
  (Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
- (Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+ (L1java/lang/StringBuilder;)L1java/lang/StringBuilder; # @Inherited(com.fasterxml.jackson.databind.type.TypeBase)
 getGenericSignature
  (Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
- (Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+ (L1java/lang/StringBuilder;)L1java/lang/StringBuilder; # @Inherited(com.fasterxml.jackson.databind.type.TypeBase)
 getKeyType
  ()Lcom/fasterxml/jackson/databind/JavaType;
- ()Lcom/fasterxml/jackson/databind/JavaType;
+ ()L0com/fasterxml/jackson/databind/JavaType; # @Inherited(com.fasterxml.jackson.databind.JavaType)
 refine
  (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/type/TypeBindings;Lcom/fasterxml/jackson/databind/JavaType;[Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
  (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/type/TypeBindings;Lcom/fasterxml/jackson/databind/JavaType;[Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
@@ -52,7 +52,7 @@ toString
  ()L1java/lang/String; # @Inherited(com.fasterxml.jackson.databind.JavaType)
 withContentType
  (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
- (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
+ (Lcom/fasterxml/jackson/databind/JavaType;)L1com/fasterxml/jackson/databind/JavaType; # @Inherited(com.fasterxml.jackson.databind.JavaType)
 withContentTypeHandler
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/type/MapLikeType;
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/type/MapLikeType;
@@ -61,7 +61,7 @@ withContentValueHandler
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/type/MapLikeType;
 withHandlersFrom
  (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
- (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
+ (Lcom/fasterxml/jackson/databind/JavaType;)L1com/fasterxml/jackson/databind/JavaType; # @Inherited(com.fasterxml.jackson.databind.JavaType)
 withKeyType
  (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/type/MapLikeType;
  (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/type/MapLikeType;

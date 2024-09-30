@@ -31,7 +31,7 @@ containedType
  (I)Lcom/fasterxml/jackson/databind/JavaType;
 containedTypeName
  (I)Ljava/lang/String;
- (I)Ljava/lang/String;
+ (I)L0java/lang/String; # @Inherited(com.fasterxml.jackson.databind.JavaType)
 findSuperType
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/JavaType;
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/JavaType;
@@ -43,22 +43,22 @@ getBindings
  ()Lcom/fasterxml/jackson/databind/type/TypeBindings;
 getErasedSignature
  (Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
- (Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+ (L1java/lang/StringBuilder;)L1java/lang/StringBuilder; # @Inherited(com.fasterxml.jackson.databind.JavaType)
 getGenericSignature
  (Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
- (Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+ (L1java/lang/StringBuilder;)L1java/lang/StringBuilder; # @Inherited(com.fasterxml.jackson.databind.JavaType)
 getInterfaces
  ()Ljava/util/List<Lcom/fasterxml/jackson/databind/JavaType;>;
  ()Ljava/util/List<Lcom/fasterxml/jackson/databind/JavaType;>;
 getSuperClass
  ()Lcom/fasterxml/jackson/databind/JavaType;
- ()Lcom/fasterxml/jackson/databind/JavaType;
+ ()L0com/fasterxml/jackson/databind/JavaType; # @Inherited(com.fasterxml.jackson.databind.JavaType)
 serialize
  (Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
- (Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
+ (L1com/fasterxml/jackson/core/JsonGenerator;L1com/fasterxml/jackson/databind/SerializerProvider;)V # @Inherited(com.fasterxml.jackson.databind.JsonSerializable)
 serializeWithType
  (Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V
- (Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V
+ (L1com/fasterxml/jackson/core/JsonGenerator;L1com/fasterxml/jackson/databind/SerializerProvider;L1com/fasterxml/jackson/databind/jsontype/TypeSerializer;)V # @Inherited(com.fasterxml.jackson.databind.JsonSerializable)
 toCanonical
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(com.fasterxml.jackson.core.type.ResolvedType)
