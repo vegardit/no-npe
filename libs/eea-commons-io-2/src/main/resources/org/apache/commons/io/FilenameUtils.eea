@@ -6,7 +6,7 @@ EXTENSION_SEPARATOR_STR
 
 concat
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; # @Keep poly-null
 directoryContains
  (Ljava/lang/String;Ljava/lang/String;)Z
  (Ljava/lang/String;Ljava/lang/String;)Z
@@ -30,7 +30,7 @@ getBaseName
  (Ljava/lang/String;)Ljava/lang/String;
 getExtension
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Keep poly-null
 getFullPath
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -39,7 +39,7 @@ getFullPathNoEndSeparator
  (Ljava/lang/String;)Ljava/lang/String;
 getName
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Keep poly-null
 getPath
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -48,7 +48,7 @@ getPathNoEndSeparator
  (Ljava/lang/String;)Ljava/lang/String;
 getPrefix
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Keep poly-null
 getPrefixLength
  (Ljava/lang/String;)I
  (Ljava/lang/String;)I
@@ -81,7 +81,7 @@ normalizeNoEndSeparator
  (Ljava/lang/String;Z)Ljava/lang/String;
 removeExtension
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Keep poly-null
 separatorsToSystem
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;

@@ -44,7 +44,7 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()Ljava/lang/Object; # @Keep not annotated on purpose
 getLeft
  ()TL;
  ()TL;
@@ -53,7 +53,7 @@ getRight
  ()TR;
 map
  <T:Ljava/lang/Object;>(Ljava/util/function/Function<-TL;+TT;>;Ljava/util/function/Function<-TR;+TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/util/function/Function<-TL;+TT;>;Ljava/util/function/Function<-TR;+TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/util/function/Function<-TL;+TT;>;L1java/util/function/Function<-TR;+TT;>;)TT; # @Keep return type not annotated on purpose
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)
