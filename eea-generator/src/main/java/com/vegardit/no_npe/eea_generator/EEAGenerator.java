@@ -38,6 +38,9 @@ import org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider;
 import com.vegardit.no_npe.eea_generator.EEAFile.ClassMember;
 import com.vegardit.no_npe.eea_generator.EEAFile.SaveOption;
 import com.vegardit.no_npe.eea_generator.EEAFile.ValueWithComment;
+import com.vegardit.no_npe.eea_generator.internal.BytecodeAnalyzer;
+import com.vegardit.no_npe.eea_generator.internal.ClassGraphUtils;
+import com.vegardit.no_npe.eea_generator.internal.ClassGraphUtils.MethodReturnKind;
 import com.vegardit.no_npe.eea_generator.internal.Props;
 
 import io.github.classgraph.ClassGraph;
@@ -218,7 +221,7 @@ public abstract class EEAGenerator {
    }
 
    protected static ValueWithComment computeAnnotatedSignature(final EEAFile.ClassMember member, final ClassInfo classInfo,
-         final ClassMemberInfo memberInfo) {
+         final ClassMemberInfo memberInfo, final BytecodeAnalyzer bytecodeAnalyzer) {
 
       final var templates = new ArrayList<EEAFile>();
       if (isThrowable(classInfo)) {
@@ -238,72 +241,90 @@ public abstract class EEAGenerator {
       if (memberInfo instanceof MethodInfo) {
          final MethodInfo methodInfo = (MethodInfo) memberInfo;
 
-         /*
-          * mark the return value of builder methods as @NonNull.
-          */
-         if (classInfo.getName().endsWith("Builder") //
-               && !methodInfo.isStatic() // non-static
-               && methodInfo.isPublic() //
-               && methodInfo.getTypeDescriptor().getResultType() instanceof ClassRefTypeSignature //
-               && (methodInfo.getName().equals("build") && methodInfo.getParameterInfo().length == 0 //
-                     || Objects.equals(((ClassRefTypeSignature) methodInfo.getTypeDescriptor().getResultType()).getClassInfo(), classInfo)))
-            // (...)Lcom/example/MyBuilder -> (...)L1com/example/MyBuilder;
-            return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2, "1"),
-               "");
+         final var returnKind = ClassGraphUtils.getMethodReturnKind(methodInfo);
+         if (returnKind == MethodReturnKind.ARRAY || returnKind == MethodReturnKind.OBJECT) {
 
-         /*
-          * mark the parameter of Comparable#compareTo(Object) as @NonNull.
-          */
-         if (classInfo.implementsInterface("java.lang.Comparable") //
-               && !methodInfo.isStatic() // non-static
-               && member.originalSignature.value.endsWith(")I") // returns Integer
-               && methodInfo.isPublic() //
-               && methodInfo.getParameterInfo().length == 1 // only 1 parameter
-               && methodInfo.getParameterInfo()[0].getTypeDescriptor() instanceof ClassRefTypeSignature)
-            // (Lcom/example/Entity;)I -> (L1com/example/Entity;)I
-            return new ValueWithComment(insert(member.originalSignature.value, 2, "1"), "");
-
-         /*
-          * mark the parameter of single-parameter void methods as @NonNull,
-          * if the class name matches "*Listener" and the parameter type name matches "*Event"
-          */
-         if (classInfo.isInterface() //
-               && classInfo.getName().endsWith("Listener") //
-               && !methodInfo.isStatic() // non-static
-               && member.originalSignature.value.endsWith(")V") // returns void
-               && methodInfo.getParameterInfo().length == 1 // only 1 parameter
-               && methodInfo.getParameterInfo()[0].getTypeDescriptor().toString().endsWith("Event"))
-            // (Ljava/lang/String;)V -> (L1java/lang/String;)V
-            return new ValueWithComment(insert(member.originalSignature.value, 2, "1"), "");
-
-         /*
-          * mark the parameter of single-parameter methods as @NonNull
-          * with signature matching: void (add|remove)*Listener(*Listener)
-          */
-         if (!methodInfo.isStatic() // non-static
-               && (methodInfo.getName().startsWith("add") || methodInfo.getName().startsWith("remove")) //
-               && methodInfo.getName().endsWith("Listener") //
-               && member.originalSignature.value.endsWith(")V") // returns void
-               && methodInfo.getParameterInfo().length == 1 // only 1 parameter
-               && methodInfo.getParameterInfo()[0].getTypeDescriptor().toString().endsWith("Listener"))
-            return new ValueWithComment( //
-               member.originalSignature.value.startsWith("(") //
-                     // (Lcom/example/MyListener;)V -> (L1com/example/MyListener;)V
-                     // (TT;)V -> (T1T;)V
-                     ? insert(member.originalSignature.value, 2, "1") //
-                     // <T::Lcom/example/MyListener;>(TT;)V --> <1T::Lcom/example/MyListener;>(TT;)V
-                     : insert(member.originalSignature.value, 1, "1"), //
-               "");
-
-         if (hasObjectReturnType(member)) { // returns non-void
-            if (hasNullableAnnotation(methodInfo.getAnnotationInfo()))
+            final var returnTypeNullability = bytecodeAnalyzer.determineMethodReturnTypeNullability(methodInfo);
+            /*
+             * mark the return value of a method as nullable if the byte code analysis of the method body determines it returns null values
+             * or the method is annotated with a known nullable annotation.
+             */
+            if (returnTypeNullability.isNullable() //
+                  || hasNullableAnnotation(methodInfo.getAnnotationInfo()))
                // ()Ljava/lang/String -> ()L0java/lang/String;
                return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2, "0"),
                   "");
 
-            if (hasNonNullAnnotation(methodInfo.getAnnotationInfo()))
+            /*
+             * mark the return value of a method as non-null if the method is annotated with a non-null annotation
+             * or has a method name starting with "create".
+             */
+            if (returnTypeNullability.isNonNull() //
+                  || hasNonNullAnnotation(methodInfo.getAnnotationInfo()) //
+                  || methodInfo.getName().startsWith("create"))
                // ()Ljava/lang/String -> ()L1java/lang/String;
+               // create...(...)LLcom/example/Entity -> create...(...)L1Lcom/example/Entity;
                return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2, "1"),
+                  "");
+
+            /*
+             * mark the return value of builder methods as @NonNull.
+             */
+            if (classInfo.getName().endsWith("Builder") //
+                  && !methodInfo.isStatic() // non-static
+                  && methodInfo.isPublic() //
+                  && methodInfo.getTypeDescriptor().getResultType() instanceof ClassRefTypeSignature //
+                  && (methodInfo.getName().equals("build") && methodInfo.getParameterInfo().length == 0 //
+                        || Objects.equals(((ClassRefTypeSignature) methodInfo.getTypeDescriptor().getResultType()).getClassInfo(),
+                           classInfo)))
+               // (...)Lcom/example/MyBuilder -> (...)L1com/example/MyBuilder;
+               return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2, "1"),
+                  "");
+
+         } else {
+
+            /*
+             * mark the parameter of Comparable#compareTo(Object) as @NonNull.
+             */
+            if (classInfo.implementsInterface("java.lang.Comparable") //
+                  && !methodInfo.isStatic() // non-static
+                  && member.originalSignature.value.endsWith(")I") // returns Integer
+                  && methodInfo.isPublic() //
+                  && methodInfo.getParameterInfo().length == 1 // only 1 parameter
+                  && methodInfo.getParameterInfo()[0].getTypeDescriptor() instanceof ClassRefTypeSignature)
+               // (Lcom/example/Entity;)I -> (L1com/example/Entity;)I
+               return new ValueWithComment(insert(member.originalSignature.value, 2, "1"), "");
+
+            /*
+             * mark the parameter of single-parameter void methods as @NonNull,
+             * if the class name matches "*Listener" and the parameter type name matches "*Event"
+             */
+            if (classInfo.isInterface() //
+                  && classInfo.getName().endsWith("Listener") //
+                  && !methodInfo.isStatic() // non-static
+                  && member.originalSignature.value.endsWith(")V") // returns void
+                  && methodInfo.getParameterInfo().length == 1 // only 1 parameter
+                  && methodInfo.getParameterInfo()[0].getTypeDescriptor().toString().endsWith("Event"))
+               // (Ljava/lang/String;)V -> (L1java/lang/String;)V
+               return new ValueWithComment(insert(member.originalSignature.value, 2, "1"), "");
+
+            /*
+             * mark the parameter of single-parameter methods as @NonNull
+             * with signature matching: void (add|remove)*Listener(*Listener)
+             */
+            if (!methodInfo.isStatic() // non-static
+                  && (methodInfo.getName().startsWith("add") || methodInfo.getName().startsWith("remove")) //
+                  && methodInfo.getName().endsWith("Listener") //
+                  && member.originalSignature.value.endsWith(")V") // returns void
+                  && methodInfo.getParameterInfo().length == 1 // only 1 parameter
+                  && methodInfo.getParameterInfo()[0].getTypeDescriptor().toString().endsWith("Listener"))
+               return new ValueWithComment( //
+                  member.originalSignature.value.startsWith("(") //
+                        // (Lcom/example/MyListener;)V -> (L1com/example/MyListener;)V
+                        // (TT;)V -> (T1T;)V
+                        ? insert(member.originalSignature.value, 2, "1") //
+                        // <T::Lcom/example/MyListener;>(TT;)V --> <1T::Lcom/example/MyListener;>(TT;)V
+                        : insert(member.originalSignature.value, 1, "1"), //
                   "");
          }
       }
@@ -322,14 +343,6 @@ public abstract class EEAGenerator {
       }
 
       return new ValueWithComment(member.originalSignature.value);
-   }
-
-   protected static boolean hasObjectReturnType(final EEAFile.ClassMember member) {
-      final String sig = member.originalSignature.value;
-      // object return type: (Ljava/lang/String;)Ljava/lang/String; or (Ljava/lang/String;)TT;
-      // void return type: (Ljava/lang/String;)V
-      // primitive return type: (Ljava/lang/String;)B
-      return sig.charAt(sig.length() - 2) != ')';
    }
 
    protected static EEAFile computeEEAFile(final ClassInfo classInfo) {
@@ -390,6 +403,8 @@ public abstract class EEAGenerator {
       }
       eeaFile.addEmptyLine();
 
+      final var bytecodeAnalyzer = new BytecodeAnalyzer(classInfo);
+
       // static fields
       for (final FieldInfo f : getStaticFields(fields)) {
          if (classInfo.isEnum()) {
@@ -400,28 +415,28 @@ public abstract class EEAGenerator {
          }
 
          final var member = eeaFile.addMember(f.getName(), f.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
-         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, f);
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, f, bytecodeAnalyzer);
       }
       eeaFile.addEmptyLine();
 
       // static methods
       for (final MethodInfo m : getStaticMethods(methods)) {
          final var member = eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr());
-         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, m);
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, m, bytecodeAnalyzer);
       }
       eeaFile.addEmptyLine();
 
       // instance fields
       for (final FieldInfo f : getInstanceFields(fields)) {
          final var member = eeaFile.addMember(f.getName(), f.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
-         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, f);
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, f, bytecodeAnalyzer);
       }
       eeaFile.addEmptyLine();
 
       // instance methods
       for (final MethodInfo m : getInstanceMethods(methods)) {
          final var member = eeaFile.addMember(m.getName(), m.getTypeSignatureOrTypeDescriptorStr()); // CHECKSTYLE:IGNORE .*
-         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, m);
+         member.annotatedSignature = computeAnnotatedSignature(member, classInfo, m, bytecodeAnalyzer);
       }
       return eeaFile;
    }
