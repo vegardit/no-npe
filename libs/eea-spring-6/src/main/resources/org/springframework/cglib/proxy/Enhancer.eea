@@ -2,13 +2,13 @@ class org/springframework/cglib/proxy/Enhancer
 
 create
  (Ljava/lang/Class;Lorg/springframework/cglib/proxy/Callback;)Ljava/lang/Object;
- (Ljava/lang/Class;Lorg/springframework/cglib/proxy/Callback;)Ljava/lang/Object;
+ (Ljava/lang/Class;Lorg/springframework/cglib/proxy/Callback;)L1java/lang/Object;
 create
  (Ljava/lang/Class;[Ljava/lang/Class;Lorg/springframework/cglib/proxy/Callback;)Ljava/lang/Object;
- (Ljava/lang/Class;[Ljava/lang/Class;Lorg/springframework/cglib/proxy/Callback;)Ljava/lang/Object;
+ (Ljava/lang/Class;[Ljava/lang/Class;Lorg/springframework/cglib/proxy/Callback;)L1java/lang/Object;
 create
  (Ljava/lang/Class;[Ljava/lang/Class;Lorg/springframework/cglib/proxy/CallbackFilter;[Lorg/springframework/cglib/proxy/Callback;)Ljava/lang/Object;
- (Ljava/lang/Class;[Ljava/lang/Class;Lorg/springframework/cglib/proxy/CallbackFilter;[Lorg/springframework/cglib/proxy/Callback;)Ljava/lang/Object;
+ (Ljava/lang/Class;[Ljava/lang/Class;Lorg/springframework/cglib/proxy/CallbackFilter;[Lorg/springframework/cglib/proxy/Callback;)L1java/lang/Object;
 getMethods
  (Ljava/lang/Class;[Ljava/lang/Class;Ljava/util/List;)V
  (Ljava/lang/Class;[Ljava/lang/Class;Ljava/util/List;)V
@@ -24,13 +24,13 @@ registerStaticCallbacks
 
 create
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L1java/lang/Object;
 create
  ([Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
- ([Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+ ([Ljava/lang/Class;[Ljava/lang/Object;)L1java/lang/Object;
 createClass
  ()Ljava/lang/Class;
- ()Ljava/lang/Class;
+ ()L1java/lang/Class;
 filterConstructors
  (Ljava/lang/Class;Ljava/util/List;)V
  (Ljava/lang/Class;Ljava/util/List;)V
@@ -45,10 +45,10 @@ generateClass
  (Lorg/springframework/asm/ClassVisitor;)V
 getDefaultClassLoader
  ()Ljava/lang/ClassLoader;
- ()Ljava/lang/ClassLoader;
+ ()L0java/lang/ClassLoader;
 getProtectionDomain
  ()Ljava/security/ProtectionDomain;
- ()Ljava/security/ProtectionDomain;
+ ()L0java/security/ProtectionDomain; # @Inherited(org.springframework.cglib.core.AbstractClassGenerator)
 nextInstance
  (Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Object;)Ljava/lang/Object;
@@ -81,4 +81,4 @@ unwrapCachedValue
  (Ljava/lang/Object;)Ljava/lang/Object;
 wrapCachedClass
  (Ljava/lang/Class;)Ljava/lang/Object;
- (Ljava/lang/Class;)Ljava/lang/Object;
+ (Ljava/lang/Class;)L1java/lang/Object;

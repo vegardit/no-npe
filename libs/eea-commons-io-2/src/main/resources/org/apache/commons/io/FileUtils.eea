@@ -36,7 +36,7 @@ byteCountToDisplaySize
  (Ljava/lang/Number;)Ljava/lang/String;
 byteCountToDisplaySize
  (Ljava/math/BigInteger;)Ljava/lang/String;
- (Ljava/math/BigInteger;)Ljava/lang/String;
+ (Ljava/math/BigInteger;)L1java/lang/String;
 checksum
  (Ljava/io/File;Ljava/util/zip/Checksum;)Ljava/util/zip/Checksum;
  (Ljava/io/File;Ljava/util/zip/Checksum;)Ljava/util/zip/Checksum;
@@ -114,7 +114,7 @@ copyURLToFile
  (Ljava/net/URL;Ljava/io/File;II)V
 createParentDirectories
  (Ljava/io/File;)Ljava/io/File;
- (Ljava/io/File;)Ljava/io/File;
+ (Ljava/io/File;)L1java/io/File;
 current
  ()Ljava/io/File;
  ()Ljava/io/File;
@@ -144,19 +144,19 @@ forceMkdirParent
  (Ljava/io/File;)V
 getFile
  (Ljava/io/File;[Ljava/lang/String;)Ljava/io/File;
- (Ljava/io/File;[Ljava/lang/String;)Ljava/io/File;
+ (Ljava/io/File;[Ljava/lang/String;)L1java/io/File;
 getFile
  ([Ljava/lang/String;)Ljava/io/File;
- ([Ljava/lang/String;)Ljava/io/File;
+ ([Ljava/lang/String;)L1java/io/File;
 getTempDirectory
  ()Ljava/io/File;
- ()Ljava/io/File;
+ ()L1java/io/File;
 getTempDirectoryPath
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getUserDirectory
  ()Ljava/io/File;
- ()Ljava/io/File;
+ ()L1java/io/File;
 getUserDirectoryPath
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -300,13 +300,13 @@ newOutputStream
  (Ljava/io/File;Z)Ljava/io/OutputStream;
 openInputStream
  (Ljava/io/File;)Ljava/io/FileInputStream;
- (Ljava/io/File;)Ljava/io/FileInputStream;
+ (Ljava/io/File;)L1java/io/FileInputStream;
 openOutputStream
  (Ljava/io/File;)Ljava/io/FileOutputStream;
  (Ljava/io/File;)Ljava/io/FileOutputStream;
 openOutputStream
  (Ljava/io/File;Z)Ljava/io/FileOutputStream;
- (Ljava/io/File;Z)Ljava/io/FileOutputStream;
+ (Ljava/io/File;Z)L1java/io/FileOutputStream;
 readFileToByteArray
  (Ljava/io/File;)[B
  (Ljava/io/File;)[B
@@ -345,7 +345,7 @@ streamFiles
  (Ljava/io/File;Z[Ljava/lang/String;)Ljava/util/stream/Stream<Ljava/io/File;>;
 toFile
  (Ljava/net/URL;)Ljava/io/File;
- (Ljava/net/URL;)Ljava/io/File;
+ (Ljava/net/URL;)L0java/io/File;
 toFiles
  ([Ljava/net/URL;)[Ljava/io/File;
  ([Ljava/net/URL;)[Ljava/io/File;

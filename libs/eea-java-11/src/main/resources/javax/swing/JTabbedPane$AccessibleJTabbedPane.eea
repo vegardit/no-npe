@@ -5,10 +5,10 @@ class javax/swing/JTabbedPane$AccessibleJTabbedPane
  (Ljavax/swing/JTabbedPane;)V
 getAccessibleAt
  (Ljava/awt/Point;)Ljavax/accessibility/Accessible;
- (Ljava/awt/Point;)Ljavax/accessibility/Accessible;
+ (Ljava/awt/Point;)L0javax/accessibility/Accessible; # @Inherited(java.awt.Container$AccessibleAWTContainer)
 getAccessibleChild
  (I)Ljavax/accessibility/Accessible;
- (I)Ljavax/accessibility/Accessible;
+ (I)L0javax/accessibility/Accessible; # @Inherited(javax.swing.JComponent$AccessibleJComponent)
 getAccessibleName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -17,10 +17,10 @@ getAccessibleRole
  ()Ljavax/accessibility/AccessibleRole;
 getAccessibleSelection
  ()Ljavax/accessibility/AccessibleSelection;
- ()Ljavax/accessibility/AccessibleSelection;
+ ()L0javax/accessibility/AccessibleSelection; # @Inherited(javax.accessibility.AccessibleContext)
 getAccessibleSelection
  (I)Ljavax/accessibility/Accessible;
- (I)Ljavax/accessibility/Accessible;
+ (I)L0javax/accessibility/Accessible;
 stateChanged
  (Ljavax/swing/event/ChangeEvent;)V
  (L1javax/swing/event/ChangeEvent;)V # @Inherited(javax.swing.event.ChangeListener)

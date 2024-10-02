@@ -2,7 +2,7 @@ class javax/swing/plaf/multi/MultiTextUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 uis
  Ljava/util/Vector<Ljavax/swing/plaf/ComponentUI;>;
@@ -37,13 +37,13 @@ getNextVisualPositionFrom
  (Ljavax/swing/text/JTextComponent;ILjavax/swing/text/Position$Bias;I[Ljavax/swing/text/Position$Bias;)I
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L0java/awt/Dimension; # @Inherited(javax.swing.plaf.ComponentUI)
 getRootView
  (Ljavax/swing/text/JTextComponent;)Ljavax/swing/text/View;
  (Ljavax/swing/text/JTextComponent;)Ljavax/swing/text/View;
 getToolTipText
  (Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)Ljava/lang/String;
- (Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)Ljava/lang/String;
+ (Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)L0java/lang/String; # @Inherited(javax.swing.plaf.TextUI)
 getUIs
  ()[Ljavax/swing/plaf/ComponentUI;
  ()[Ljavax/swing/plaf/ComponentUI;

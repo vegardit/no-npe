@@ -15,19 +15,19 @@ consume
  (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;)V
 createErrorResponseMessage
  (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
- (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;)L1org/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
 createNotificationMessage
  (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;
- (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;
+ (Ljava/lang/String;Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;
 createRequestMessage
  (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;
- (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;
+ (Ljava/lang/String;Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/messages/RequestMessage;
 createResponseMessage
  (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
- (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)L1org/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
 createResultResponseMessage
  (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
- (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
 getJsonHandler
  ()Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;
  ()Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;
@@ -63,10 +63,10 @@ notify
  (Ljava/lang/String;Ljava/lang/Object;)V
 request
  (Ljava/lang/String;Ljava/lang/Object;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
- (Ljava/lang/String;Ljava/lang/Object;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
+ (Ljava/lang/String;Ljava/lang/Object;)L1java/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
 resolveMethod
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L0java/lang/String;
 sendCancelNotification
  (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;)V
  (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;)V

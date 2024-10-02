@@ -37,13 +37,13 @@ addUndoableEditListener
  (L1javax/swing/event/UndoableEditListener;)V # @Inherited(javax.swing.text.Document)
 createBranchElement
  (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/Element;
- (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/Element;
+ (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)L1javax/swing/text/Element;
 createLeafElement
  (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)Ljavax/swing/text/Element;
- (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)Ljavax/swing/text/Element;
+ (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)L1javax/swing/text/Element;
 createPosition
  (I)Ljavax/swing/text/Position;
- (I)Ljavax/swing/text/Position;
+ (I)L1javax/swing/text/Position; # @Inherited(javax.swing.text.Document)
 dump
  (Ljava/io/PrintStream;)V
  (Ljava/io/PrintStream;)V
@@ -85,7 +85,7 @@ getDocumentProperties
  ()Ljava/util/Dictionary<Ljava/lang/Object;Ljava/lang/Object;>;
 getEndPosition
  ()Ljavax/swing/text/Position;
- ()Ljavax/swing/text/Position;
+ ()L0javax/swing/text/Position;
 getListeners
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)[TT;
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)[TT;
@@ -100,7 +100,7 @@ getRootElements
  ()[Ljavax/swing/text/Element;
 getStartPosition
  ()Ljavax/swing/text/Position;
- ()Ljavax/swing/text/Position;
+ ()L0javax/swing/text/Position;
 getText
  (II)Ljava/lang/String;
  (II)Ljava/lang/String;

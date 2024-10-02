@@ -110,7 +110,7 @@ getKeysInternal
  ()Ljava/util/Iterator<Ljava/lang/String;>;
 getKeysInternal
  (Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
- (Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
+ (Ljava/lang/String;)L1java/util/Iterator<Ljava/lang/String;>; # @Inherited(org.apache.commons.configuration2.AbstractHierarchicalConfiguration)
 getList
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/Object;>;
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/Object;>;
@@ -137,7 +137,7 @@ getProperties
  (Ljava/lang/String;)Ljava/util/Properties;
 getPropertyInternal
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.apache.commons.configuration2.AbstractHierarchicalConfiguration)
 getShort
  (Ljava/lang/String;)S
  (Ljava/lang/String;)S
@@ -149,7 +149,7 @@ getShort
  (Ljava/lang/String;S)S
 getSource
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
- (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)L0org/apache/commons/configuration2/Configuration; # @Inherited(org.apache.commons.configuration2.CombinedConfiguration)
 getString
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -188,4 +188,4 @@ setPropertyInternal
  (Ljava/lang/String;Ljava/lang/Object;)V
 subset
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
- (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)L1org/apache/commons/configuration2/Configuration; # @Inherited(org.apache.commons.configuration2.BaseHierarchicalConfiguration)

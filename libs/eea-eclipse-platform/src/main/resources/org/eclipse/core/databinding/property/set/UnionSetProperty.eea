@@ -14,7 +14,7 @@ super org/eclipse/core/databinding/property/set/SetProperty
  ([Lorg/eclipse/core/databinding/property/set/ISetProperty<TS;TE;>;Ljava/lang/Object;)V
 doGetSet
  (TS;)Ljava/util/Set<TE;>;
- (TS;)Ljava/util/Set<TE;>;
+ (TS;)L1java/util/Set<TE;>; # @Inherited(org.eclipse.core.databinding.property.set.SetProperty)
 doSetSet
  (TS;Ljava/util/Set<TE;>;)V
  (TS;Ljava/util/Set<TE;>;)V
@@ -26,4 +26,4 @@ getElementType
  ()Ljava/lang/Object;
 observe
  (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
- (Lorg/eclipse/core/databinding/observable/Realm;TS;)Lorg/eclipse/core/databinding/observable/set/IObservableSet<TE;>;
+ (Lorg/eclipse/core/databinding/observable/Realm;TS;)L1org/eclipse/core/databinding/observable/set/IObservableSet<TE;>;

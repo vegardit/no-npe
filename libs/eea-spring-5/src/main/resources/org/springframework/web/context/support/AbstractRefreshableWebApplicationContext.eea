@@ -2,10 +2,10 @@ class org/springframework/web/context/support/AbstractRefreshableWebApplicationC
 
 createEnvironment
  ()Lorg/springframework/core/env/ConfigurableEnvironment;
- ()Lorg/springframework/core/env/ConfigurableEnvironment;
+ ()L1org/springframework/core/env/ConfigurableEnvironment; # @Inherited(org.springframework.context.support.AbstractApplicationContext)
 getApplicationName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.context.support.AbstractApplicationContext)
 getConfigLocations
  ()[Ljava/lang/String;
  ()[0Ljava/lang/String; # @Inherited(org.springframework.context.support.AbstractRefreshableConfigApplicationContext)
@@ -14,10 +14,10 @@ getNamespace
  ()L0java/lang/String; # @Inherited(org.springframework.web.context.ConfigurableWebApplicationContext)
 getResourceByPath
  (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
- (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+ (Ljava/lang/String;)L1org/springframework/core/io/Resource; # @Inherited(org.springframework.core.io.DefaultResourceLoader)
 getResourcePatternResolver
  ()Lorg/springframework/core/io/support/ResourcePatternResolver;
- ()Lorg/springframework/core/io/support/ResourcePatternResolver;
+ ()L1org/springframework/core/io/support/ResourcePatternResolver; # @Inherited(org.springframework.context.support.AbstractApplicationContext)
 getServletConfig
  ()Ljavax/servlet/ServletConfig;
  ()L0javax/servlet/ServletConfig; # @Inherited(org.springframework.web.context.ConfigurableWebApplicationContext)

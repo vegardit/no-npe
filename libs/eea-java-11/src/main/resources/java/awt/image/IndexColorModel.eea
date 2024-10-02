@@ -26,10 +26,10 @@ convertToIntDiscrete
  (Ljava/awt/image/Raster;Z)Ljava/awt/image/BufferedImage;
 createCompatibleSampleModel
  (II)Ljava/awt/image/SampleModel;
- (II)Ljava/awt/image/SampleModel;
+ (II)L1java/awt/image/SampleModel; # @Inherited(java.awt.image.ColorModel)
 createCompatibleWritableRaster
  (II)Ljava/awt/image/WritableRaster;
- (II)Ljava/awt/image/WritableRaster;
+ (II)L1java/awt/image/WritableRaster; # @Inherited(java.awt.image.ColorModel)
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.awt.image.ColorModel)
@@ -41,7 +41,7 @@ getBlues
  ([B)V
 getComponentSize
  ()[I
- ()[I
+ ()[0I # @Inherited(java.awt.image.ColorModel)
 getComponents
  (I[II)[I
  (I[II)[I

@@ -100,16 +100,16 @@ configurePropertiesFromAction
  (Ljavax/swing/Action;)V
 createActionListener
  ()Ljava/awt/event/ActionListener;
- ()Ljava/awt/event/ActionListener;
+ ()L1java/awt/event/ActionListener;
 createActionPropertyChangeListener
  (Ljavax/swing/Action;)Ljava/beans/PropertyChangeListener;
- (Ljavax/swing/Action;)Ljava/beans/PropertyChangeListener;
+ (Ljavax/swing/Action;)L1java/beans/PropertyChangeListener;
 createChangeListener
  ()Ljavax/swing/event/ChangeListener;
- ()Ljavax/swing/event/ChangeListener;
+ ()L1javax/swing/event/ChangeListener;
 createItemListener
  ()Ljava/awt/event/ItemListener;
- ()Ljava/awt/event/ItemListener;
+ ()L1java/awt/event/ItemListener;
 fireActionPerformed
  (Ljava/awt/event/ActionEvent;)V
  (Ljava/awt/event/ActionEvent;)V
@@ -163,7 +163,7 @@ getSelectedIcon
  ()Ljavax/swing/Icon;
 getSelectedObjects
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[0Ljava/lang/Object;
 getText
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -181,7 +181,7 @@ paintBorder
  (Ljava/awt/Graphics;)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 removeActionListener
  (Ljava/awt/event/ActionListener;)V
  (L1java/awt/event/ActionListener;)V

@@ -28,16 +28,16 @@ copyHeadersIfAbsent
  (Ljava/util/Map<Ljava/lang/String;*>;)V
 createAccessor
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/support/MessageHeaderAccessor;
- (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/support/MessageHeaderAccessor;
+ (Lorg/springframework/messaging/Message<*>;)L1org/springframework/messaging/support/MessageHeaderAccessor;
 getContentType
  ()Lorg/springframework/util/MimeType;
  ()L0org/springframework/util/MimeType;
 getDetailedLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L1java/lang/String;
 getDetailedPayloadLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L1java/lang/String;
 getErrorChannel
  ()Ljava/lang/Object;
  ()L0java/lang/Object;
@@ -55,10 +55,10 @@ getReplyChannel
  ()L0java/lang/Object;
 getShortLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L1java/lang/String;
 getShortPayloadLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L1java/lang/String;
 getTimestamp
  ()Ljava/lang/Long;
  ()L0java/lang/Long;
@@ -94,10 +94,10 @@ setReplyChannelName
  (Ljava/lang/String;)V
 toMap
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 toMessageHeaders
  ()Lorg/springframework/messaging/MessageHeaders;
- ()Lorg/springframework/messaging/MessageHeaders;
+ ()L1org/springframework/messaging/MessageHeaders;
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -2,10 +2,10 @@ class javax/swing/table/DefaultTableModel
 
 convertToVector
  ([Ljava/lang/Object;)Ljava/util/Vector<Ljava/lang/Object;>;
- ([Ljava/lang/Object;)Ljava/util/Vector<Ljava/lang/Object;>;
+ ([Ljava/lang/Object;)L0java/util/Vector<Ljava/lang/Object;>;
 convertToVector
  ([[Ljava/lang/Object;)Ljava/util/Vector<Ljava/util/Vector<Ljava/lang/Object;>;>;
- ([[Ljava/lang/Object;)Ljava/util/Vector<Ljava/util/Vector<Ljava/lang/Object;>;>;
+ ([[Ljava/lang/Object;)L0java/util/Vector<Ljava/util/Vector<Ljava/lang/Object;>;>;
 
 columnIdentifiers
  Ljava/util/Vector;
@@ -43,7 +43,7 @@ addRow
  ([Ljava/lang/Object;)V
 getColumnName
  (I)Ljava/lang/String;
- (I)Ljava/lang/String;
+ (I)L1java/lang/String; # @Inherited(javax.swing.table.AbstractTableModel)
 getDataVector
  ()Ljava/util/Vector<Ljava/util/Vector;>;
  ()Ljava/util/Vector<Ljava/util/Vector;>;

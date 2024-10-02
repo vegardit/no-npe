@@ -11,7 +11,7 @@ class org/springframework/core/io/ClassPathResource
  (Ljava/lang/String;Ljava/lang/ClassLoader;)V
 createRelative
  (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
- (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+ (Ljava/lang/String;)L1org/springframework/core/io/Resource; # @Inherited(org.springframework.core.io.AbstractResource)
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(org.springframework.core.io.AbstractResource)
@@ -20,7 +20,7 @@ getClassLoader
  ()L0java/lang/ClassLoader;
 getDescription
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getFilename
  ()Ljava/lang/String;
  ()L0java/lang/String; # @Inherited(org.springframework.core.io.AbstractResource)

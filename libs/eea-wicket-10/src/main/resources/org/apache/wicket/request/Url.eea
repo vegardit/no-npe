@@ -8,7 +8,7 @@ parse
  (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lorg/apache/wicket/request/Url;
 parse
  (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;Z)Lorg/apache/wicket/request/Url;
- (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;Z)Lorg/apache/wicket/request/Url;
+ (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;Z)L1org/apache/wicket/request/Url;
 
 <init>
  (Ljava/nio/charset/Charset;)V
@@ -30,7 +30,7 @@ addQueryParameter
  (Ljava/lang/String;Ljava/lang/Object;)V
 canonical
  ()Lorg/apache/wicket/request/Url;
- ()Lorg/apache/wicket/request/Url;
+ ()L1org/apache/wicket/request/Url;
 concatSegments
  (Ljava/util/List<Ljava/lang/String;>;)V
  (Ljava/util/List<Ljava/lang/String;>;)V
@@ -51,7 +51,7 @@ getPath
  ()Ljava/lang/String;
 getPath
  (Ljava/nio/charset/Charset;)Ljava/lang/String;
- (Ljava/nio/charset/Charset;)Ljava/lang/String;
+ (Ljava/nio/charset/Charset;)L1java/lang/String;
 getPort
  ()Ljava/lang/Integer;
  ()Ljava/lang/Integer;
@@ -60,7 +60,7 @@ getProtocol
  ()Ljava/lang/String;
 getQueryParameter
  (Ljava/lang/String;)Lorg/apache/wicket/request/Url$QueryParameter;
- (Ljava/lang/String;)Lorg/apache/wicket/request/Url$QueryParameter;
+ (Ljava/lang/String;)L0org/apache/wicket/request/Url$QueryParameter;
 getQueryParameterValue
  (Ljava/lang/String;)Lorg/apache/wicket/util/string/StringValue;
  (Ljava/lang/String;)Lorg/apache/wicket/util/string/StringValue;
@@ -72,7 +72,7 @@ getQueryString
  ()Ljava/lang/String;
 getQueryString
  (Ljava/nio/charset/Charset;)Ljava/lang/String;
- (Ljava/nio/charset/Charset;)Ljava/lang/String;
+ (Ljava/nio/charset/Charset;)L0java/lang/String;
 getSegments
  ()Ljava/util/List<Ljava/lang/String;>;
  ()Ljava/util/List<Ljava/lang/String;>;

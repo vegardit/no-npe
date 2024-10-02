@@ -32,10 +32,10 @@ call
  (Lorg/springframework/jdbc/core/CallableStatementCreator;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 createConnectionProxy
  (Ljava/sql/Connection;)Ljava/sql/Connection;
- (Ljava/sql/Connection;)Ljava/sql/Connection;
+ (Ljava/sql/Connection;)L1java/sql/Connection;
 createResultsMap
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 execute
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -65,10 +65,10 @@ extractReturnedResults
  (Ljava/sql/CallableStatement;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;I)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 getColumnMapRowMapper
  ()Lorg/springframework/jdbc/core/RowMapper<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
- ()Lorg/springframework/jdbc/core/RowMapper<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
+ ()L1org/springframework/jdbc/core/RowMapper<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
 getSingleColumnRowMapper
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/jdbc/core/RowMapper<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/jdbc/core/RowMapper<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1org/springframework/jdbc/core/RowMapper<TT;>;
 handleWarnings
  (Ljava/sql/SQLWarning;)V
  (Ljava/sql/SQLWarning;)V
@@ -80,10 +80,10 @@ handleWarnings
  (Ljava/sql/Statement;Ljava/sql/SQLException;)V
 newArgPreparedStatementSetter
  ([Ljava/lang/Object;)Lorg/springframework/jdbc/core/PreparedStatementSetter;
- ([Ljava/lang/Object;)Lorg/springframework/jdbc/core/PreparedStatementSetter;
+ ([Ljava/lang/Object;)L1org/springframework/jdbc/core/PreparedStatementSetter;
 newArgTypePreparedStatementSetter
  ([Ljava/lang/Object;[I)Lorg/springframework/jdbc/core/PreparedStatementSetter;
- ([Ljava/lang/Object;[I)Lorg/springframework/jdbc/core/PreparedStatementSetter;
+ ([Ljava/lang/Object;[I)L1org/springframework/jdbc/core/PreparedStatementSetter;
 processResultSet
  (Ljava/sql/ResultSet;Lorg/springframework/jdbc/core/ResultSetSupportingSqlParameter;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  (Ljava/sql/ResultSet;Lorg/springframework/jdbc/core/ResultSetSupportingSqlParameter;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
@@ -224,7 +224,7 @@ queryForStream
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
 translateException
  (Ljava/lang/String;Ljava/lang/String;Ljava/sql/SQLException;)Lorg/springframework/dao/DataAccessException;
- (Ljava/lang/String;Ljava/lang/String;Ljava/sql/SQLException;)Lorg/springframework/dao/DataAccessException;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/sql/SQLException;)L1org/springframework/dao/DataAccessException;
 update
  (Ljava/lang/String;)I
  (Ljava/lang/String;)I

@@ -9,7 +9,7 @@ FOCUS_ACCELERATOR_KEY
 
 addKeymap
  (Ljava/lang/String;Ljavax/swing/text/Keymap;)Ljavax/swing/text/Keymap;
- (Ljava/lang/String;Ljavax/swing/text/Keymap;)Ljavax/swing/text/Keymap;
+ (Ljava/lang/String;Ljavax/swing/text/Keymap;)L1javax/swing/text/Keymap;
 getKeymap
  (Ljava/lang/String;)Ljavax/swing/text/Keymap;
  (Ljava/lang/String;)Ljavax/swing/text/Keymap;
@@ -61,7 +61,7 @@ getHighlighter
  ()Ljavax/swing/text/Highlighter;
 getInputMethodRequests
  ()Ljava/awt/im/InputMethodRequests;
- ()Ljava/awt/im/InputMethodRequests;
+ ()L0java/awt/im/InputMethodRequests; # @Inherited(java.awt.Component)
 getKeymap
  ()Ljavax/swing/text/Keymap;
  ()Ljavax/swing/text/Keymap;
@@ -94,7 +94,7 @@ getSelectionColor
  ()Ljava/awt/Color;
 getText
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String;
 getText
  (II)Ljava/lang/String;
  (II)Ljava/lang/String;
@@ -112,7 +112,7 @@ modelToView2D
  (I)Ljava/awt/geom/Rectangle2D;
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 print
  (Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Z
  (Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Z

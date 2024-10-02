@@ -2,7 +2,7 @@ class org/eclipse/osgi/storage/bundlefile/BundleFile
 
 createURL
  (Ljava/lang/String;JLorg/eclipse/osgi/container/ModuleContainer;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;ILjava/lang/String;Ljava/net/URLStreamHandler;)Ljava/net/URL;
- (Ljava/lang/String;JLorg/eclipse/osgi/container/ModuleContainer;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;ILjava/lang/String;Ljava/net/URLStreamHandler;)Ljava/net/URL;
+ (Ljava/lang/String;JLorg/eclipse/osgi/container/ModuleContainer;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;ILjava/lang/String;Ljava/net/URLStreamHandler;)L0java/net/URL;
 fixTrailingSlash
  (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;)Ljava/lang/String;
  (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;)Ljava/lang/String;
@@ -19,7 +19,7 @@ containsDir
  (Ljava/lang/String;)Z
 createResourceURL
  (Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;Lorg/eclipse/osgi/container/Module;ILjava/lang/String;)Ljava/net/URL;
- (Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;Lorg/eclipse/osgi/container/Module;ILjava/lang/String;)Ljava/net/URL;
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;Lorg/eclipse/osgi/container/Module;ILjava/lang/String;)L1java/net/URL;
 getBaseFile
  ()Ljava/io/File;
  ()Ljava/io/File;
@@ -37,7 +37,7 @@ getFile
  (Ljava/lang/String;Z)Ljava/io/File;
 getResourceURL
  (Ljava/lang/String;Lorg/eclipse/osgi/container/Module;I)Ljava/net/URL;
- (Ljava/lang/String;Lorg/eclipse/osgi/container/Module;I)Ljava/net/URL;
+ (Ljava/lang/String;Lorg/eclipse/osgi/container/Module;I)L0java/net/URL;
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

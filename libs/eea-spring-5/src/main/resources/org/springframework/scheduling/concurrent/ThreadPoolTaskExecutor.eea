@@ -5,7 +5,7 @@ cancelRemainingTask
  (Ljava/lang/Runnable;)V
 createQueue
  (I)Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;
- (I)Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;
+ (I)L1java/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;
 execute
  (Ljava/lang/Runnable;)V
  (L1java/lang/Runnable;)V # @Inherited(org.springframework.core.task.TaskExecutor)
@@ -29,7 +29,7 @@ submit
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Ljava/util/concurrent/Future<TT;>;
 submitListenable
  (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
- (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/Runnable;)L1org/springframework/util/concurrent/ListenableFuture<*>;
 submitListenable
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>;

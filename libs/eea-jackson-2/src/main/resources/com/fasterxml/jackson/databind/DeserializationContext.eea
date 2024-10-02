@@ -72,7 +72,7 @@ bufferForInputBuffering
  ()Lcom/fasterxml/jackson/databind/util/TokenBuffer;
 bufferForInputBuffering
  (Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/util/TokenBuffer;
- (Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/util/TokenBuffer;
+ (Lcom/fasterxml/jackson/core/JsonParser;)L1com/fasterxml/jackson/databind/util/TokenBuffer;
 constructCalendar
  (Ljava/util/Date;)Ljava/util/Calendar;
  (Ljava/util/Date;)Ljava/util/Calendar;
@@ -114,7 +114,7 @@ findObjectId
  (Ljava/lang/Object;Lcom/fasterxml/jackson/annotation/ObjectIdGenerator<*>;Lcom/fasterxml/jackson/annotation/ObjectIdResolver;)Lcom/fasterxml/jackson/databind/deser/impl/ReadableObjectId;
 findRootValueDeserializer
  (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
- (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+ (Lcom/fasterxml/jackson/databind/JavaType;)L0com/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
 getActiveView
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
@@ -171,7 +171,7 @@ handleMissingInstantiator
  (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;Lcom/fasterxml/jackson/core/JsonParser;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 handleMissingTypeId
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JavaType;
- (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JavaType;
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;Ljava/lang/String;)L0com/fasterxml/jackson/databind/JavaType;
 handlePrimaryContextualization
  (Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
  (Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
@@ -183,7 +183,7 @@ handleUnexpectedToken
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/core/JsonParser;)Ljava/lang/Object;
 handleUnexpectedToken
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/core/JsonToken;Lcom/fasterxml/jackson/core/JsonParser;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/core/JsonToken;Lcom/fasterxml/jackson/core/JsonParser;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/core/JsonToken;Lcom/fasterxml/jackson/core/JsonParser;Ljava/lang/String;[Ljava/lang/Object;)L0java/lang/Object;
 handleUnexpectedToken
  (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/core/JsonParser;)Ljava/lang/Object;
  (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/core/JsonParser;)Ljava/lang/Object;
@@ -195,7 +195,7 @@ handleUnknownProperty
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Ljava/lang/Object;Ljava/lang/String;)Z
 handleUnknownTypeId
  (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JavaType;
- (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JavaType;
+ (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;Ljava/lang/String;)L0com/fasterxml/jackson/databind/JavaType;
 handleWeirdKey
  (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -237,7 +237,7 @@ keyDeserializerInstance
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/KeyDeserializer;
 leaseObjectBuffer
  ()Lcom/fasterxml/jackson/databind/util/ObjectBuffer;
- ()Lcom/fasterxml/jackson/databind/util/ObjectBuffer;
+ ()L1com/fasterxml/jackson/databind/util/ObjectBuffer;
 missingTypeIdException
  (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonMappingException;
  (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonMappingException;
@@ -255,10 +255,10 @@ readTree
  (Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/JsonNode;
 readTreeAsValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JavaType;)TT;
- <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JavaType;)TT;
+ <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JavaType;)T0T;
 readTreeAsValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class<TT;>;)T0T;
 readValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)TT;
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)TT;

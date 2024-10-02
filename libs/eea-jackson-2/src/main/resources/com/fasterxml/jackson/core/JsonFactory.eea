@@ -104,7 +104,7 @@ _createUTF8Generator
  (Ljava/io/OutputStream;Lcom/fasterxml/jackson/core/io/IOContext;)Lcom/fasterxml/jackson/core/JsonGenerator;
 _createWriter
  (Ljava/io/OutputStream;Lcom/fasterxml/jackson/core/JsonEncoding;Lcom/fasterxml/jackson/core/io/IOContext;)Ljava/io/Writer;
- (Ljava/io/OutputStream;Lcom/fasterxml/jackson/core/JsonEncoding;Lcom/fasterxml/jackson/core/io/IOContext;)Ljava/io/Writer;
+ (Ljava/io/OutputStream;Lcom/fasterxml/jackson/core/JsonEncoding;Lcom/fasterxml/jackson/core/io/IOContext;)L1java/io/Writer;
 _decorate
  (Lcom/fasterxml/jackson/core/JsonGenerator;)Lcom/fasterxml/jackson/core/JsonGenerator;
  (Lcom/fasterxml/jackson/core/JsonGenerator;)Lcom/fasterxml/jackson/core/JsonGenerator;
@@ -146,22 +146,22 @@ copy
  ()L1com/fasterxml/jackson/core/JsonFactory;
 createGenerator
  (Ljava/io/DataOutput;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (L1java/io/DataOutput;)L1com/fasterxml/jackson/core/JsonGenerator;
+ (L1java/io/DataOutput;)L1com/fasterxml/jackson/core/JsonGenerator; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createGenerator
  (Ljava/io/DataOutput;Lcom/fasterxml/jackson/core/JsonEncoding;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (L1java/io/DataOutput;L1com/fasterxml/jackson/core/JsonEncoding;)L1com/fasterxml/jackson/core/JsonGenerator;
+ (L1java/io/DataOutput;L1com/fasterxml/jackson/core/JsonEncoding;)L1com/fasterxml/jackson/core/JsonGenerator; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createGenerator
  (Ljava/io/File;Lcom/fasterxml/jackson/core/JsonEncoding;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (L1java/io/File;L1com/fasterxml/jackson/core/JsonEncoding;)L1com/fasterxml/jackson/core/JsonGenerator;
+ (L1java/io/File;L1com/fasterxml/jackson/core/JsonEncoding;)L1com/fasterxml/jackson/core/JsonGenerator; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createGenerator
  (Ljava/io/OutputStream;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (L1java/io/OutputStream;)L1com/fasterxml/jackson/core/JsonGenerator;
+ (L1java/io/OutputStream;)L1com/fasterxml/jackson/core/JsonGenerator; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createGenerator
  (Ljava/io/OutputStream;Lcom/fasterxml/jackson/core/JsonEncoding;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (L1java/io/OutputStream;L1com/fasterxml/jackson/core/JsonEncoding;)L1com/fasterxml/jackson/core/JsonGenerator;
+ (L1java/io/OutputStream;L1com/fasterxml/jackson/core/JsonEncoding;)L1com/fasterxml/jackson/core/JsonGenerator; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createGenerator
  (Ljava/io/Writer;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (L1java/io/Writer;)L1com/fasterxml/jackson/core/JsonGenerator;
+ (L1java/io/Writer;)L1com/fasterxml/jackson/core/JsonGenerator; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createJsonGenerator
  (Ljava/io/OutputStream;)Lcom/fasterxml/jackson/core/JsonGenerator;
  (L1java/io/OutputStream;)L1com/fasterxml/jackson/core/JsonGenerator;
@@ -194,40 +194,40 @@ createJsonParser
  ([1BII)L1com/fasterxml/jackson/core/JsonParser;
 createNonBlockingByteArrayParser
  ()Lcom/fasterxml/jackson/core/JsonParser;
- ()L1com/fasterxml/jackson/core/JsonParser;
+ ()L1com/fasterxml/jackson/core/JsonParser; # @Inherited(com.fasterxml.jackson.core.TokenStreamFactory)
 createNonBlockingByteBufferParser
  ()Lcom/fasterxml/jackson/core/JsonParser;
- ()L1com/fasterxml/jackson/core/JsonParser;
+ ()L1com/fasterxml/jackson/core/JsonParser; # @Inherited(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  (Ljava/io/DataInput;)Lcom/fasterxml/jackson/core/JsonParser;
- (L1java/io/DataInput;)L1com/fasterxml/jackson/core/JsonParser;
+ (L1java/io/DataInput;)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  (Ljava/io/File;)Lcom/fasterxml/jackson/core/JsonParser;
- (L1java/io/File;)L1com/fasterxml/jackson/core/JsonParser;
+ (L1java/io/File;)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  (Ljava/io/InputStream;)Lcom/fasterxml/jackson/core/JsonParser;
- (L1java/io/InputStream;)L1com/fasterxml/jackson/core/JsonParser;
+ (L1java/io/InputStream;)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  (Ljava/io/Reader;)Lcom/fasterxml/jackson/core/JsonParser;
- (L1java/io/Reader;)L1com/fasterxml/jackson/core/JsonParser;
+ (L1java/io/Reader;)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  (Ljava/lang/String;)Lcom/fasterxml/jackson/core/JsonParser;
- (L1java/lang/String;)L1com/fasterxml/jackson/core/JsonParser;
+ (L1java/lang/String;)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  (Ljava/net/URL;)Lcom/fasterxml/jackson/core/JsonParser;
- (L1java/net/URL;)L1com/fasterxml/jackson/core/JsonParser;
+ (L1java/net/URL;)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  ([B)Lcom/fasterxml/jackson/core/JsonParser;
- ([1B)L1com/fasterxml/jackson/core/JsonParser;
+ ([1B)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  ([BII)Lcom/fasterxml/jackson/core/JsonParser;
- ([1BII)L1com/fasterxml/jackson/core/JsonParser;
+ ([1BII)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  ([C)Lcom/fasterxml/jackson/core/JsonParser;
- ([1C)L1com/fasterxml/jackson/core/JsonParser;
+ ([1C)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 createParser
  ([CII)Lcom/fasterxml/jackson/core/JsonParser;
- ([1CII)L1com/fasterxml/jackson/core/JsonParser;
+ ([1CII)L1com/fasterxml/jackson/core/JsonParser; # @Overrides(com.fasterxml.jackson.core.TokenStreamFactory)
 disable
  (Lcom/fasterxml/jackson/core/JsonFactory$Feature;)Lcom/fasterxml/jackson/core/JsonFactory;
  (L1com/fasterxml/jackson/core/JsonFactory$Feature;)L1com/fasterxml/jackson/core/JsonFactory;

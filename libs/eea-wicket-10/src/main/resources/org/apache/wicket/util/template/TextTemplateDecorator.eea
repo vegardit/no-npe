@@ -12,7 +12,7 @@ asString
  ()Ljava/lang/String;
 asString
  (Ljava/util/Map<Ljava/lang/String;*>;)Ljava/lang/String;
- (Ljava/util/Map<Ljava/lang/String;*>;)Ljava/lang/String;
+ (Ljava/util/Map<Ljava/lang/String;*>;)L1java/lang/String;
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
@@ -24,10 +24,10 @@ getBeforeTemplateContents
  ()Ljava/lang/String;
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.apache.wicket.util.resource.AbstractStringResourceStream)
 getInputStream
  ()Ljava/io/InputStream;
- ()Ljava/io/InputStream;
+ ()L1java/io/InputStream; # @Inherited(org.apache.wicket.util.resource.AbstractStringResourceStream)
 getLocale
  ()Ljava/util/Locale;
  ()Ljava/util/Locale;
@@ -36,7 +36,7 @@ getString
  ()Ljava/lang/String;
 lastModifiedTime
  ()Ljava/time/Instant;
- ()Ljava/time/Instant;
+ ()L0java/time/Instant; # @Inherited(org.apache.wicket.util.resource.AbstractStringResourceStream)
 setCharset
  (Ljava/nio/charset/Charset;)V
  (Ljava/nio/charset/Charset;)V

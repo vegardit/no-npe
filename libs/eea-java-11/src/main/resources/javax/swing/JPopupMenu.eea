@@ -20,10 +20,10 @@ addPopupMenuListener
  (L1javax/swing/event/PopupMenuListener;)V
 createActionChangeListener
  (Ljavax/swing/JMenuItem;)Ljava/beans/PropertyChangeListener;
- (Ljavax/swing/JMenuItem;)Ljava/beans/PropertyChangeListener;
+ (Ljavax/swing/JMenuItem;)L1java/beans/PropertyChangeListener;
 createActionComponent
  (Ljavax/swing/Action;)Ljavax/swing/JMenuItem;
- (Ljavax/swing/Action;)Ljavax/swing/JMenuItem;
+ (Ljavax/swing/Action;)L1javax/swing/JMenuItem;
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -62,7 +62,7 @@ getUI
  ()Ljavax/swing/plaf/PopupMenuUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 insert
  (Ljava/awt/Component;I)V
  (Ljava/awt/Component;I)V
@@ -77,7 +77,7 @@ paintBorder
  (Ljava/awt/Graphics;)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 processFocusEvent
  (Ljava/awt/event/FocusEvent;)V
  (Ljava/awt/event/FocusEvent;)V

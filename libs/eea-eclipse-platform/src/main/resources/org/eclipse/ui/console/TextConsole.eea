@@ -11,7 +11,7 @@ addPatternMatchListener
  (L1org/eclipse/ui/console/IPatternMatchListener;)V
 createPage
  (Lorg/eclipse/ui/console/IConsoleView;)Lorg/eclipse/ui/part/IPageBookViewPage;
- (Lorg/eclipse/ui/console/IConsoleView;)Lorg/eclipse/ui/part/IPageBookViewPage;
+ (Lorg/eclipse/ui/console/IConsoleView;)L1org/eclipse/ui/part/IPageBookViewPage; # @Inherited(org.eclipse.ui.console.IConsole)
 getAttribute
  (Ljava/lang/String;)Ljava/lang/Object;
  (Ljava/lang/String;)Ljava/lang/Object;
@@ -26,7 +26,7 @@ getFont
  ()Lorg/eclipse/swt/graphics/Font;
 getHyperlink
  (I)Lorg/eclipse/ui/console/IHyperlink;
- (I)Lorg/eclipse/ui/console/IHyperlink;
+ (I)L0org/eclipse/ui/console/IHyperlink;
 getHyperlinks
  ()[Lorg/eclipse/ui/console/IHyperlink;
  ()[Lorg/eclipse/ui/console/IHyperlink;
@@ -35,10 +35,10 @@ getPartitioner
  ()Lorg/eclipse/ui/console/IConsoleDocumentPartitioner;
 getRegion
  (Lorg/eclipse/ui/console/IHyperlink;)Lorg/eclipse/jface/text/IRegion;
- (Lorg/eclipse/ui/console/IHyperlink;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/ui/console/IHyperlink;)L0org/eclipse/jface/text/IRegion;
 getSchedulingRule
  ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
- ()Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ ()L1org/eclipse/core/runtime/jobs/ISchedulingRule;
 removePatternMatchListener
  (Lorg/eclipse/ui/console/IPatternMatchListener;)V
  (L1org/eclipse/ui/console/IPatternMatchListener;)V

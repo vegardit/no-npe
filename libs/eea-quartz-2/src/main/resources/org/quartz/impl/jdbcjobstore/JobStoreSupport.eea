@@ -37,7 +37,7 @@ tablePrefix
 
 acquireNextTrigger
  (Ljava/sql/Connection;JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
- (Ljava/sql/Connection;JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Ljava/sql/Connection;JIJ)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>;
 acquireNextTriggers
  (JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
  (JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
@@ -97,7 +97,7 @@ executeWithoutLock
  <T:Ljava/lang/Object;>(Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;)TT;
 findFailedInstances
  (Ljava/sql/Connection;)Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
- (Ljava/sql/Connection;)Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
+ (Ljava/sql/Connection;)L1java/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
 getAttributeRestoringConnection
  (Ljava/sql/Connection;)Ljava/sql/Connection;
  (Ljava/sql/Connection;)Ljava/sql/Connection;
@@ -127,7 +127,7 @@ getDriverDelegateInitString
  ()Ljava/lang/String;
 getFiredTriggerRecordId
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getInstanceId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -229,7 +229,7 @@ pauseTrigger
  (Lorg/quartz/TriggerKey;)V
 pauseTriggerGroup
  (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
- (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/Set<Ljava/lang/String;>;
 pauseTriggers
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
@@ -298,7 +298,7 @@ resumeTrigger
  (Lorg/quartz/TriggerKey;)V
 resumeTriggerGroup
  (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
- (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/Set<Ljava/lang/String;>;
 resumeTriggers
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
@@ -385,7 +385,7 @@ triggerExists
  (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Z
 triggerFired
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)Lorg/quartz/spi/TriggerFiredBundle;
- (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)Lorg/quartz/spi/TriggerFiredBundle;
+ (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)L0org/quartz/spi/TriggerFiredBundle;
 triggeredJobComplete
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V

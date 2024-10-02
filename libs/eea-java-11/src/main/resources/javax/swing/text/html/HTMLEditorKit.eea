@@ -45,7 +45,7 @@ clone
  ()L1java/lang/Object; # @Inherited(javax.swing.text.StyledEditorKit)
 createDefaultDocument
  ()Ljavax/swing/text/Document;
- ()Ljavax/swing/text/Document;
+ ()L1javax/swing/text/Document; # @Inherited(javax.swing.text.StyledEditorKit)
 createInputAttributes
  (Ljavax/swing/text/Element;Ljavax/swing/text/MutableAttributeSet;)V
  (Ljavax/swing/text/Element;Ljavax/swing/text/MutableAttributeSet;)V
@@ -54,13 +54,13 @@ deinstall
  (Ljavax/swing/JEditorPane;)V
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
- ()Ljavax/accessibility/AccessibleContext;
+ ()L0javax/accessibility/AccessibleContext;
 getActions
  ()[Ljavax/swing/Action;
  ()[Ljavax/swing/Action;
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.text.DefaultEditorKit)
 getDefaultCursor
  ()Ljava/awt/Cursor;
  ()Ljava/awt/Cursor;
@@ -75,10 +75,10 @@ getParser
  ()Ljavax/swing/text/html/HTMLEditorKit$Parser;
 getStyleSheet
  ()Ljavax/swing/text/html/StyleSheet;
- ()Ljavax/swing/text/html/StyleSheet;
+ ()L1javax/swing/text/html/StyleSheet;
 getViewFactory
  ()Ljavax/swing/text/ViewFactory;
- ()Ljavax/swing/text/ViewFactory;
+ ()L0javax/swing/text/ViewFactory; # @Inherited(javax.swing.text.StyledEditorKit)
 insertHTML
  (Ljavax/swing/text/html/HTMLDocument;ILjava/lang/String;IILjavax/swing/text/html/HTML$Tag;)V
  (Ljavax/swing/text/html/HTMLDocument;ILjava/lang/String;IILjavax/swing/text/html/HTML$Tag;)V

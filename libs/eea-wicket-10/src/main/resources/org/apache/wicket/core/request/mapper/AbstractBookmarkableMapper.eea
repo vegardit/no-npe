@@ -30,13 +30,13 @@ getCompatibilityScore
  (L1org/apache/wicket/request/Request;)I # @Inherited(org.apache.wicket.request.IRequestMapper)
 getMatchedSegmentSizes
  (Lorg/apache/wicket/request/Url;)[I
- (Lorg/apache/wicket/request/Url;)[I
+ (Lorg/apache/wicket/request/Url;)[0I
 getPageInfo
  (Lorg/apache/wicket/core/request/handler/IPageRequestHandler;)Lorg/apache/wicket/request/mapper/info/PageInfo;
- (Lorg/apache/wicket/core/request/handler/IPageRequestHandler;)Lorg/apache/wicket/request/mapper/info/PageInfo;
+ (Lorg/apache/wicket/core/request/handler/IPageRequestHandler;)L1org/apache/wicket/request/mapper/info/PageInfo;
 getPathSegments
  ([Ljava/lang/String;)Ljava/util/List<Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$MountPathSegment;>;
- ([Ljava/lang/String;)Ljava/util/List<Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$MountPathSegment;>;
+ ([Ljava/lang/String;)L1java/util/List<Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$MountPathSegment;>;
 isFixedSegment
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -48,19 +48,19 @@ mapRequest
  (L1org/apache/wicket/request/Request;)L0org/apache/wicket/request/IRequestHandler; # @Inherited(org.apache.wicket.request.IRequestMapper)
 newPageParameters
  ()Lorg/apache/wicket/request/mapper/parameter/PageParameters;
- ()Lorg/apache/wicket/request/mapper/parameter/PageParameters;
+ ()L1org/apache/wicket/request/mapper/parameter/PageParameters;
 parseRequest
  (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;
  (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;
 processBookmarkable
  (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/IRequestHandler;
- (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/IRequestHandler;
+ (Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)L1org/apache/wicket/request/IRequestHandler;
 processHybrid
  (Lorg/apache/wicket/request/mapper/info/PageInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;Ljava/lang/Integer;)Lorg/apache/wicket/request/IRequestHandler;
- (Lorg/apache/wicket/request/mapper/info/PageInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;Ljava/lang/Integer;)Lorg/apache/wicket/request/IRequestHandler;
+ (Lorg/apache/wicket/request/mapper/info/PageInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;Ljava/lang/Integer;)L1org/apache/wicket/request/IRequestHandler;
 processListener
  (Lorg/apache/wicket/request/mapper/info/PageComponentInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/IRequestHandler;
- (Lorg/apache/wicket/request/mapper/info/PageComponentInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)Lorg/apache/wicket/request/IRequestHandler;
+ (Lorg/apache/wicket/request/mapper/info/PageComponentInfo;Ljava/lang/Class<+Lorg/apache/wicket/request/component/IRequestablePage;>;Lorg/apache/wicket/request/mapper/parameter/PageParameters;)L1org/apache/wicket/request/IRequestHandler;
 resolveUserLocale
  ()Ljava/util/Locale;
  ()Ljava/util/Locale;

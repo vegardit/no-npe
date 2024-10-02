@@ -14,7 +14,7 @@ class org/springframework/web/client/AsyncRestTemplate
  (Lorg/springframework/http/client/AsyncClientHttpRequestFactory;Lorg/springframework/web/client/RestTemplate;)V
 acceptHeaderRequestCallback
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/web/client/AsyncRequestCallback;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/web/client/AsyncRequestCallback;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1org/springframework/web/client/AsyncRequestCallback;
 delete
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
@@ -26,7 +26,7 @@ delete
  (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
 doExecute
  <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>;
 exchange
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
@@ -89,10 +89,10 @@ headersExtractor
  ()Lorg/springframework/web/client/ResponseExtractor<Lorg/springframework/http/HttpHeaders;>;
 httpEntityCallback
  <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;)Lorg/springframework/web/client/AsyncRequestCallback;
- <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;)Lorg/springframework/web/client/AsyncRequestCallback;
+ <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;)L1org/springframework/web/client/AsyncRequestCallback;
 httpEntityCallback
  <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;Ljava/lang/reflect/Type;)Lorg/springframework/web/client/AsyncRequestCallback;
- <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;Ljava/lang/reflect/Type;)Lorg/springframework/web/client/AsyncRequestCallback;
+ <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;Ljava/lang/reflect/Type;)L1org/springframework/web/client/AsyncRequestCallback;
 optionsForAllow
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;

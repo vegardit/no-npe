@@ -51,10 +51,10 @@ VISIBLE_ROW_COUNT_PROPERTY
 
 createTreeModel
  (Ljava/lang/Object;)Ljavax/swing/tree/TreeModel;
- (Ljava/lang/Object;)Ljavax/swing/tree/TreeModel;
+ (Ljava/lang/Object;)L1javax/swing/tree/TreeModel;
 getDefaultTreeModel
  ()Ljavax/swing/tree/TreeModel;
- ()Ljavax/swing/tree/TreeModel;
+ ()L1javax/swing/tree/TreeModel;
 
 cellEditor
  Ljavax/swing/tree/TreeCellEditor;
@@ -116,10 +116,10 @@ collapsePath
  (Ljavax/swing/tree/TreePath;)V
 convertValueToText
  (Ljava/lang/Object;ZZZIZ)Ljava/lang/String;
- (Ljava/lang/Object;ZZZIZ)Ljava/lang/String;
+ (Ljava/lang/Object;ZZZIZ)L1java/lang/String;
 createTreeModelListener
  ()Ljavax/swing/event/TreeModelListener;
- ()Ljavax/swing/event/TreeModelListener;
+ ()L1javax/swing/event/TreeModelListener;
 expandPath
  (Ljavax/swing/tree/TreePath;)V
  (Ljavax/swing/tree/TreePath;)V
@@ -152,10 +152,10 @@ getCellRenderer
  ()Ljavax/swing/tree/TreeCellRenderer;
 getClosestPathForLocation
  (II)Ljavax/swing/tree/TreePath;
- (II)Ljavax/swing/tree/TreePath;
+ (II)L0javax/swing/tree/TreePath;
 getDescendantToggledPaths
  (Ljavax/swing/tree/TreePath;)Ljava/util/Enumeration<Ljavax/swing/tree/TreePath;>;
- (Ljavax/swing/tree/TreePath;)Ljava/util/Enumeration<Ljavax/swing/tree/TreePath;>;
+ (Ljavax/swing/tree/TreePath;)L0java/util/Enumeration<Ljavax/swing/tree/TreePath;>;
 getDropLocation
  ()Ljavax/swing/JTree$DropLocation;
  ()Ljavax/swing/JTree$DropLocation;
@@ -164,13 +164,13 @@ getDropMode
  ()Ljavax/swing/DropMode;
 getEditingPath
  ()Ljavax/swing/tree/TreePath;
- ()Ljavax/swing/tree/TreePath;
+ ()L0javax/swing/tree/TreePath;
 getExpandedDescendants
  (Ljavax/swing/tree/TreePath;)Ljava/util/Enumeration<Ljavax/swing/tree/TreePath;>;
- (Ljavax/swing/tree/TreePath;)Ljava/util/Enumeration<Ljavax/swing/tree/TreePath;>;
+ (Ljavax/swing/tree/TreePath;)L0java/util/Enumeration<Ljavax/swing/tree/TreePath;>;
 getLastSelectedPathComponent
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object;
 getLeadSelectionPath
  ()Ljavax/swing/tree/TreePath;
  ()Ljavax/swing/tree/TreePath;
@@ -179,22 +179,22 @@ getModel
  ()Ljavax/swing/tree/TreeModel;
 getNextMatch
  (Ljava/lang/String;ILjavax/swing/text/Position$Bias;)Ljavax/swing/tree/TreePath;
- (Ljava/lang/String;ILjavax/swing/text/Position$Bias;)Ljavax/swing/tree/TreePath;
+ (Ljava/lang/String;ILjavax/swing/text/Position$Bias;)L0javax/swing/tree/TreePath;
 getPathBetweenRows
  (II)[Ljavax/swing/tree/TreePath;
  (II)[Ljavax/swing/tree/TreePath;
 getPathBounds
  (Ljavax/swing/tree/TreePath;)Ljava/awt/Rectangle;
- (Ljavax/swing/tree/TreePath;)Ljava/awt/Rectangle;
+ (Ljavax/swing/tree/TreePath;)L0java/awt/Rectangle;
 getPathForLocation
  (II)Ljavax/swing/tree/TreePath;
- (II)Ljavax/swing/tree/TreePath;
+ (II)L0javax/swing/tree/TreePath;
 getPathForRow
  (I)Ljavax/swing/tree/TreePath;
- (I)Ljavax/swing/tree/TreePath;
+ (I)L0javax/swing/tree/TreePath;
 getPreferredScrollableViewportSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension;
 getRowBounds
  (I)Ljava/awt/Rectangle;
  (I)Ljava/awt/Rectangle;
@@ -215,7 +215,7 @@ getSelectionPath
  ()Ljavax/swing/tree/TreePath;
 getSelectionPaths
  ()[Ljavax/swing/tree/TreePath;
- ()[Ljavax/swing/tree/TreePath;
+ ()[0Ljavax/swing/tree/TreePath;
 getSelectionRows
  ()[I
  ()[I
@@ -236,7 +236,7 @@ getUI
  ()Ljavax/swing/plaf/TreeUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 hasBeenExpanded
  (Ljavax/swing/tree/TreePath;)Z
  (Ljavax/swing/tree/TreePath;)Z
@@ -260,7 +260,7 @@ makeVisible
  (Ljavax/swing/tree/TreePath;)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 removeDescendantSelectedPaths
  (Ljavax/swing/tree/TreePath;Z)Z
  (Ljavax/swing/tree/TreePath;Z)Z

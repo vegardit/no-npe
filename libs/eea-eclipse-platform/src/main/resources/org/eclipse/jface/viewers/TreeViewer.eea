@@ -17,7 +17,7 @@ assertContentProviderType
  (Lorg/eclipse/jface/viewers/IContentProvider;)V
 createViewerEditor
  ()Lorg/eclipse/jface/viewers/ColumnViewerEditor;
- ()Lorg/eclipse/jface/viewers/ColumnViewerEditor;
+ ()L1org/eclipse/jface/viewers/ColumnViewerEditor; # @Overrides(org.eclipse.jface.viewers.AbstractTreeViewer)
 disassociate
  (Lorg/eclipse/swt/widgets/Item;)V
  (Lorg/eclipse/swt/widgets/Item;)V
@@ -26,13 +26,13 @@ editElement
  (Ljava/lang/Object;I)V
 getChild
  (Lorg/eclipse/swt/widgets/Widget;I)Lorg/eclipse/swt/widgets/Item;
- (Lorg/eclipse/swt/widgets/Widget;I)Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Widget;I)L0org/eclipse/swt/widgets/Item;
 getChildren
  (Lorg/eclipse/swt/widgets/Widget;)[Lorg/eclipse/swt/widgets/Item;
- (Lorg/eclipse/swt/widgets/Widget;)[Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Widget;)[0Lorg/eclipse/swt/widgets/Item;
 getColumnViewerOwner
  (I)Lorg/eclipse/swt/widgets/Widget;
- (I)Lorg/eclipse/swt/widgets/Widget;
+ (I)L0org/eclipse/swt/widgets/Widget; # @Inherited(org.eclipse.jface.viewers.AbstractTreeViewer)
 getControl
  ()Lorg/eclipse/swt/widgets/Control;
  ()L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.viewers.Viewer)
@@ -41,7 +41,7 @@ getExpanded
  (Lorg/eclipse/swt/widgets/Item;)Z
 getItemAt
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/widgets/Item;
- (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/graphics/Point;)L0org/eclipse/swt/widgets/Item; # @Inherited(org.eclipse.jface.viewers.AbstractTreeViewer)
 getItemCount
  (Lorg/eclipse/swt/widgets/Control;)I
  (Lorg/eclipse/swt/widgets/Control;)I
@@ -56,7 +56,7 @@ getLabelProvider
  ()Lorg/eclipse/jface/viewers/IBaseLabelProvider;
 getParentElement
  (Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)L0java/lang/Object; # @Inherited(org.eclipse.jface.viewers.AbstractTreeViewer)
 getParentItem
  (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/widgets/Item;
  (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/widgets/Item;
@@ -71,7 +71,7 @@ getTree
  ()Lorg/eclipse/swt/widgets/Tree;
 getViewerRowFromItem
  (Lorg/eclipse/swt/widgets/Widget;)Lorg/eclipse/jface/viewers/ViewerRow;
- (Lorg/eclipse/swt/widgets/Widget;)Lorg/eclipse/jface/viewers/ViewerRow;
+ (Lorg/eclipse/swt/widgets/Widget;)L0org/eclipse/jface/viewers/ViewerRow; # @Inherited(org.eclipse.jface.viewers.AbstractTreeViewer)
 handleTreeCollapse
  (Lorg/eclipse/swt/events/TreeEvent;)V
  (Lorg/eclipse/swt/events/TreeEvent;)V
