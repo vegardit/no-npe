@@ -54,13 +54,13 @@ STOMP_VERSION_HEADER
 
 create
  (Lorg/springframework/messaging/simp/stomp/StompCommand;)Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
- (Lorg/springframework/messaging/simp/stomp/StompCommand;)Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
+ (Lorg/springframework/messaging/simp/stomp/StompCommand;)L1org/springframework/messaging/simp/stomp/StompHeaderAccessor;
 create
  (Lorg/springframework/messaging/simp/stomp/StompCommand;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
- (Lorg/springframework/messaging/simp/stomp/StompCommand;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
+ (Lorg/springframework/messaging/simp/stomp/StompCommand;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)L1org/springframework/messaging/simp/stomp/StompHeaderAccessor;
 createForHeartbeat
  ()Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
- ()Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
+ ()L1org/springframework/messaging/simp/stomp/StompHeaderAccessor;
 getCommand
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/messaging/simp/stomp/StompCommand;
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0org/springframework/messaging/simp/stomp/StompCommand;
@@ -72,11 +72,11 @@ getPasscode
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/lang/String;
 wrap
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
- (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
+ (Lorg/springframework/messaging/Message<*>;)L1org/springframework/messaging/simp/stomp/StompHeaderAccessor;
 
 createAccessor
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/support/MessageHeaderAccessor;
- (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/support/MessageHeaderAccessor;
+ (Lorg/springframework/messaging/Message<*>;)L1org/springframework/messaging/support/MessageHeaderAccessor; # @Inherited(org.springframework.messaging.simp.SimpMessageHeaderAccessor)
 getAcceptVersion
  ()Ljava/util/Set<Ljava/lang/String;>;
  ()Ljava/util/Set<Ljava/lang/String;>;
@@ -91,7 +91,7 @@ getContentLength
  ()L0java/lang/Integer;
 getDetailedLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L1java/lang/String; # @Inherited(org.springframework.messaging.simp.SimpMessageHeaderAccessor)
 getHeartbeat
  ()[J
  ()[J
@@ -124,7 +124,7 @@ getReceiptId
  ()L0java/lang/String;
 getShortLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L1java/lang/String; # @Inherited(org.springframework.messaging.simp.SimpMessageHeaderAccessor)
 getVersion
  ()Ljava/lang/String;
  ()L0java/lang/String;

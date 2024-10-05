@@ -52,10 +52,10 @@ addIIOReadWarningListener
  (L1javax/imageio/event/IIOReadWarningListener;)V
 getAvailableLocales
  ()[Ljava/util/Locale;
- ()[Ljava/util/Locale;
+ ()[0Ljava/util/Locale;
 getDefaultReadParam
  ()Ljavax/imageio/ImageReadParam;
- ()Ljavax/imageio/ImageReadParam;
+ ()L1javax/imageio/ImageReadParam;
 getFormatName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -118,7 +118,7 @@ read
  (ILjavax/imageio/ImageReadParam;)Ljava/awt/image/BufferedImage;
 readAll
  (ILjavax/imageio/ImageReadParam;)Ljavax/imageio/IIOImage;
- (ILjavax/imageio/ImageReadParam;)Ljavax/imageio/IIOImage;
+ (ILjavax/imageio/ImageReadParam;)L1javax/imageio/IIOImage;
 readAll
  (Ljava/util/Iterator<+Ljavax/imageio/ImageReadParam;>;)Ljava/util/Iterator<Ljavax/imageio/IIOImage;>;
  (Ljava/util/Iterator<+Ljavax/imageio/ImageReadParam;>;)Ljava/util/Iterator<Ljavax/imageio/IIOImage;>;
@@ -127,10 +127,10 @@ readAsRenderedImage
  (ILjavax/imageio/ImageReadParam;)Ljava/awt/image/RenderedImage;
 readRaster
  (ILjavax/imageio/ImageReadParam;)Ljava/awt/image/Raster;
- (ILjavax/imageio/ImageReadParam;)Ljava/awt/image/Raster;
+ (ILjavax/imageio/ImageReadParam;)L1java/awt/image/Raster;
 readThumbnail
  (II)Ljava/awt/image/BufferedImage;
- (II)Ljava/awt/image/BufferedImage;
+ (II)L1java/awt/image/BufferedImage;
 readTile
  (III)Ljava/awt/image/BufferedImage;
  (III)Ljava/awt/image/BufferedImage;

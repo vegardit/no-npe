@@ -32,7 +32,7 @@ getHeaders
  (L1java/lang/String;)L0java/util/Enumeration<Ljava/lang/String;>; # @Inherited(javax.servlet.http.HttpServletRequest)
 getHttpServletMapping
  ()Ljavax/servlet/http/HttpServletMapping;
- ()Ljavax/servlet/http/HttpServletMapping;
+ ()L1javax/servlet/http/HttpServletMapping; # @Inherited(javax.servlet.http.HttpServletRequest)
 getIntHeader
  (Ljava/lang/String;)I
  (L1java/lang/String;)I # @Inherited(javax.servlet.http.HttpServletRequest)
@@ -89,7 +89,7 @@ login
  (L1java/lang/String;L1java/lang/String;)V # @Inherited(javax.servlet.http.HttpServletRequest)
 newPushBuilder
  ()Ljavax/servlet/http/PushBuilder;
- ()Ljavax/servlet/http/PushBuilder;
+ ()L0javax/servlet/http/PushBuilder; # @Inherited(javax.servlet.http.HttpServletRequest)
 upgrade
  <T::Ljavax/servlet/http/HttpUpgradeHandler;>(Ljava/lang/Class<TT;>;)TT;
  <T::Ljavax/servlet/http/HttpUpgradeHandler;>(L1java/lang/Class<TT;>;)T1T; # @Inherited(javax.servlet.http.HttpServletRequest)

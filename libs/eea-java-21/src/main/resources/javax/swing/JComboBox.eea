@@ -59,10 +59,10 @@ contentsChanged
  (L1javax/swing/event/ListDataEvent;)V # @Inherited(javax.swing.event.ListDataListener)
 createActionPropertyChangeListener
  (Ljavax/swing/Action;)Ljava/beans/PropertyChangeListener;
- (Ljavax/swing/Action;)Ljava/beans/PropertyChangeListener;
+ (Ljavax/swing/Action;)L1java/beans/PropertyChangeListener;
 createDefaultKeySelectionManager
  ()Ljavax/swing/JComboBox$KeySelectionManager;
- ()Ljavax/swing/JComboBox$KeySelectionManager;
+ ()L1javax/swing/JComboBox$KeySelectionManager;
 fireItemStateChanged
  (Ljava/awt/event/ItemEvent;)V
  (Ljava/awt/event/ItemEvent;)V
@@ -107,13 +107,13 @@ getSelectedItem
  ()Ljava/lang/Object;
 getSelectedObjects
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object;
 getUI
  ()Ljavax/swing/plaf/ComboBoxUI;
  ()Ljavax/swing/plaf/ComboBoxUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 insertItemAt
  (TE;I)V
  (TE;I)V
@@ -125,7 +125,7 @@ intervalRemoved
  (L1javax/swing/event/ListDataEvent;)V # @Inherited(javax.swing.event.ListDataListener)
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 processKeyBinding
  (Ljavax/swing/KeyStroke;Ljava/awt/event/KeyEvent;IZ)Z
  (Ljavax/swing/KeyStroke;Ljava/awt/event/KeyEvent;IZ)Z

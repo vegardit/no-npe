@@ -17,19 +17,19 @@ class org/springframework/core/io/UrlResource
  (Ljava/net/URL;)V
 createRelative
  (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
- (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+ (Ljava/lang/String;)L1org/springframework/core/io/Resource; # @Inherited(org.springframework.core.io.AbstractResource)
 createRelativeURL
  (Ljava/lang/String;)Ljava/net/URL;
- (Ljava/lang/String;)Ljava/net/URL;
+ (Ljava/lang/String;)L1java/net/URL;
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(org.springframework.core.io.AbstractResource)
 getDescription
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getFile
  ()Ljava/io/File;
- ()Ljava/io/File;
+ ()L1java/io/File; # @Inherited(org.springframework.core.io.AbstractFileResolvingResource)
 getFilename
  ()Ljava/lang/String;
  ()L0java/lang/String; # @Inherited(org.springframework.core.io.AbstractResource)
@@ -41,4 +41,4 @@ getURI
  ()Ljava/net/URI;
 getURL
  ()Ljava/net/URL;
- ()Ljava/net/URL;
+ ()L1java/net/URL; # @Inherited(org.springframework.core.io.AbstractResource)

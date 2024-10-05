@@ -29,13 +29,13 @@ getJavaFileForOutput
  (Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;Ljavax/tools/FileObject;)Ljavax/tools/JavaFileObject;
 getLocationForModule
  (Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;)Ljavax/tools/JavaFileManager$Location;
- (Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;)Ljavax/tools/JavaFileManager$Location;
+ (Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;)L1javax/tools/JavaFileManager$Location; # @Inherited(javax.tools.JavaFileManager)
 getLocationForModule
  (Ljavax/tools/JavaFileManager$Location;Ljavax/tools/JavaFileObject;)Ljavax/tools/JavaFileManager$Location;
- (Ljavax/tools/JavaFileManager$Location;Ljavax/tools/JavaFileObject;)Ljavax/tools/JavaFileManager$Location;
+ (Ljavax/tools/JavaFileManager$Location;Ljavax/tools/JavaFileObject;)L1javax/tools/JavaFileManager$Location; # @Inherited(javax.tools.JavaFileManager)
 getServiceLoader
  <S:Ljava/lang/Object;>(Ljavax/tools/JavaFileManager$Location;Ljava/lang/Class<TS;>;)Ljava/util/ServiceLoader<TS;>;
- <S:Ljava/lang/Object;>(Ljavax/tools/JavaFileManager$Location;Ljava/lang/Class<TS;>;)Ljava/util/ServiceLoader<TS;>;
+ <S:Ljava/lang/Object;>(Ljavax/tools/JavaFileManager$Location;Ljava/lang/Class<TS;>;)L1java/util/ServiceLoader<TS;>; # @Inherited(javax.tools.JavaFileManager)
 handleOption
  (Ljava/lang/String;Ljava/util/Iterator<Ljava/lang/String;>;)Z
  (Ljava/lang/String;Ljava/util/Iterator<Ljava/lang/String;>;)Z
@@ -47,7 +47,7 @@ inferBinaryName
  (Ljavax/tools/JavaFileManager$Location;Ljavax/tools/JavaFileObject;)Ljava/lang/String;
 inferModuleName
  (Ljavax/tools/JavaFileManager$Location;)Ljava/lang/String;
- (Ljavax/tools/JavaFileManager$Location;)Ljava/lang/String;
+ (Ljavax/tools/JavaFileManager$Location;)L1java/lang/String; # @Inherited(javax.tools.JavaFileManager)
 isSameFile
  (Ljavax/tools/FileObject;Ljavax/tools/FileObject;)Z
  (Ljavax/tools/FileObject;Ljavax/tools/FileObject;)Z
@@ -59,4 +59,4 @@ list
  (Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljava/util/Set<Ljavax/tools/JavaFileObject$Kind;>;Z)Ljava/lang/Iterable<Ljavax/tools/JavaFileObject;>;
 listLocationsForModules
  (Ljavax/tools/JavaFileManager$Location;)Ljava/lang/Iterable<Ljava/util/Set<Ljavax/tools/JavaFileManager$Location;>;>;
- (Ljavax/tools/JavaFileManager$Location;)Ljava/lang/Iterable<Ljava/util/Set<Ljavax/tools/JavaFileManager$Location;>;>;
+ (Ljavax/tools/JavaFileManager$Location;)L1java/lang/Iterable<Ljava/util/Set<Ljavax/tools/JavaFileManager$Location;>;>; # @Inherited(javax.tools.JavaFileManager)

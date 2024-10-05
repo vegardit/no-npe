@@ -12,31 +12,31 @@ added
  ([1L1org/eclipse/core/runtime/IExtensionPoint;)V # @Inherited(org.eclipse.core.runtime.IRegistryEventListener)
 createDefaultPage
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
- (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+ (Lorg/eclipse/ui/part/PageBook;)L1org/eclipse/ui/part/IPage; # @Inherited(org.eclipse.ui.part.PageBookView)
 createPartControl
  (Lorg/eclipse/swt/widgets/Composite;)V
  (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.PageBookView)
 createPropertySheetPage
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
- (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+ (Lorg/eclipse/ui/part/PageBook;)L1org/eclipse/ui/part/IPage;
 doCreatePage
  (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
- (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
+ (Lorg/eclipse/ui/IWorkbenchPart;)L0org/eclipse/ui/part/PageBookView$PageRec;
 doDestroyPage
  (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
  (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
 getBootstrapPart
  ()Lorg/eclipse/ui/IWorkbenchPart;
- ()Lorg/eclipse/ui/IWorkbenchPart;
+ ()L0org/eclipse/ui/IWorkbenchPart;
 getSaveablePart
  ()Lorg/eclipse/ui/ISaveablePart;
- ()Lorg/eclipse/ui/ISaveablePart;
+ ()L0org/eclipse/ui/ISaveablePart;
 getShowInContext
  ()Lorg/eclipse/ui/part/ShowInContext;
  ()Lorg/eclipse/ui/part/ShowInContext;
 getViewAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.part.PageBookView)
 init
  (Lorg/eclipse/ui/IViewSite;)V
  (Lorg/eclipse/ui/IViewSite;)V

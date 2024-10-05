@@ -36,7 +36,7 @@ _nextToken2
  ()Lcom/fasterxml/jackson/core/JsonToken;
 _nextTokenWithBuffering
  (Lcom/fasterxml/jackson/core/filter/TokenFilterContext;)Lcom/fasterxml/jackson/core/JsonToken;
- (Lcom/fasterxml/jackson/core/filter/TokenFilterContext;)Lcom/fasterxml/jackson/core/JsonToken;
+ (Lcom/fasterxml/jackson/core/filter/TokenFilterContext;)L0com/fasterxml/jackson/core/JsonToken;
 currentLocation
  ()Lcom/fasterxml/jackson/core/JsonLocation;
  ()Lcom/fasterxml/jackson/core/JsonLocation;
@@ -69,7 +69,7 @@ getDecimalValue
  ()Ljava/math/BigDecimal;
 getEmbeddedObject
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.util.JsonParserDelegate)
 getFilter
  ()Lcom/fasterxml/jackson/core/filter/TokenFilter;
  ()Lcom/fasterxml/jackson/core/filter/TokenFilter;

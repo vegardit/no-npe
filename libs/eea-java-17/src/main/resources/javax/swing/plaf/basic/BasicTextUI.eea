@@ -2,19 +2,19 @@ class javax/swing/plaf/basic/BasicTextUI
 
 create
  (Ljavax/swing/text/Element;)Ljavax/swing/text/View;
- (Ljavax/swing/text/Element;)Ljavax/swing/text/View;
+ (Ljavax/swing/text/Element;)L0javax/swing/text/View; # @Overrides(javax.swing.text.ViewFactory)
 create
  (Ljavax/swing/text/Element;II)Ljavax/swing/text/View;
- (Ljavax/swing/text/Element;II)Ljavax/swing/text/View;
+ (Ljavax/swing/text/Element;II)L0javax/swing/text/View;
 createCaret
  ()Ljavax/swing/text/Caret;
- ()Ljavax/swing/text/Caret;
+ ()L1javax/swing/text/Caret;
 createHighlighter
  ()Ljavax/swing/text/Highlighter;
- ()Ljavax/swing/text/Highlighter;
+ ()L1javax/swing/text/Highlighter;
 createKeymap
  ()Ljavax/swing/text/Keymap;
- ()Ljavax/swing/text/Keymap;
+ ()L1javax/swing/text/Keymap;
 damageRange
  (Ljavax/swing/text/JTextComponent;II)V
  (Ljavax/swing/text/JTextComponent;II)V
@@ -32,16 +32,16 @@ getKeymapName
  ()Ljava/lang/String;
 getMaximumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension;
 getMinimumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension;
 getNextVisualPositionFrom
  (Ljavax/swing/text/JTextComponent;ILjavax/swing/text/Position$Bias;I[Ljavax/swing/text/Position$Bias;)I
  (Ljavax/swing/text/JTextComponent;ILjavax/swing/text/Position$Bias;I[Ljavax/swing/text/Position$Bias;)I
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L0java/awt/Dimension; # @Inherited(javax.swing.plaf.ComponentUI)
 getPropertyPrefix
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -50,10 +50,10 @@ getRootView
  (Ljavax/swing/text/JTextComponent;)Ljavax/swing/text/View;
 getToolTipText
  (Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)Ljava/lang/String;
- (Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)Ljava/lang/String;
+ (Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)L0java/lang/String; # @Inherited(javax.swing.plaf.TextUI)
 getVisibleEditorRect
  ()Ljava/awt/Rectangle;
- ()Ljava/awt/Rectangle;
+ ()L0java/awt/Rectangle;
 installUI
  (Ljavax/swing/JComponent;)V
  (Ljavax/swing/JComponent;)V

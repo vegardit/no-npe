@@ -2,11 +2,11 @@ class org/eclipse/ui/part/FileEditorInputFactory
 
 getFactoryId
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 saveState
  (Lorg/eclipse/ui/IMemento;Lorg/eclipse/ui/part/FileEditorInput;)V
  (Lorg/eclipse/ui/IMemento;Lorg/eclipse/ui/part/FileEditorInput;)V
 
 createElement
  (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/core/runtime/IAdaptable;
- (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/core/runtime/IAdaptable;
+ (Lorg/eclipse/ui/IMemento;)L0org/eclipse/core/runtime/IAdaptable; # @Overrides(org.eclipse.ui.IElementFactory)

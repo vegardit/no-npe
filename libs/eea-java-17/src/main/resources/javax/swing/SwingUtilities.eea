@@ -2,10 +2,10 @@ class javax/swing/SwingUtilities
 
 calculateInnerArea
  (Ljavax/swing/JComponent;Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
- (Ljavax/swing/JComponent;Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
+ (Ljavax/swing/JComponent;Ljava/awt/Rectangle;)Ljava/awt/Rectangle; # @PolyNull
 computeDifference
  (Ljava/awt/Rectangle;Ljava/awt/Rectangle;)[Ljava/awt/Rectangle;
- (Ljava/awt/Rectangle;Ljava/awt/Rectangle;)[Ljava/awt/Rectangle;
+ (Ljava/awt/Rectangle;Ljava/awt/Rectangle;)[1Ljava/awt/Rectangle;
 computeIntersection
  (IIIILjava/awt/Rectangle;)Ljava/awt/Rectangle;
  (IIIILjava/awt/Rectangle;)Ljava/awt/Rectangle;
@@ -35,10 +35,10 @@ convertRectangle
  (Ljava/awt/Component;Ljava/awt/Rectangle;Ljava/awt/Component;)Ljava/awt/Rectangle;
 findFocusOwner
  (Ljava/awt/Component;)Ljava/awt/Component;
- (Ljava/awt/Component;)Ljava/awt/Component;
+ (Ljava/awt/Component;)L0java/awt/Component;
 getAccessibleAt
  (Ljava/awt/Component;Ljava/awt/Point;)Ljavax/accessibility/Accessible;
- (Ljava/awt/Component;Ljava/awt/Point;)Ljavax/accessibility/Accessible;
+ (Ljava/awt/Component;Ljava/awt/Point;)L0javax/accessibility/Accessible;
 getAccessibleChild
  (Ljava/awt/Component;I)Ljavax/accessibility/Accessible;
  (Ljava/awt/Component;I)Ljavax/accessibility/Accessible;
@@ -59,22 +59,22 @@ getAncestorOfClass
  (Ljava/lang/Class<*>;Ljava/awt/Component;)Ljava/awt/Container;
 getDeepestComponentAt
  (Ljava/awt/Component;II)Ljava/awt/Component;
- (Ljava/awt/Component;II)Ljava/awt/Component;
+ (Ljava/awt/Component;II)L0java/awt/Component;
 getLocalBounds
  (Ljava/awt/Component;)Ljava/awt/Rectangle;
- (Ljava/awt/Component;)Ljava/awt/Rectangle;
+ (Ljava/awt/Component;)L1java/awt/Rectangle;
 getRoot
  (Ljava/awt/Component;)Ljava/awt/Component;
  (Ljava/awt/Component;)Ljava/awt/Component;
 getRootPane
  (Ljava/awt/Component;)Ljavax/swing/JRootPane;
- (Ljava/awt/Component;)Ljavax/swing/JRootPane;
+ (Ljava/awt/Component;)L0javax/swing/JRootPane;
 getUIActionMap
  (Ljavax/swing/JComponent;)Ljavax/swing/ActionMap;
- (Ljavax/swing/JComponent;)Ljavax/swing/ActionMap;
+ (Ljavax/swing/JComponent;)L0javax/swing/ActionMap;
 getUIInputMap
  (Ljavax/swing/JComponent;I)Ljavax/swing/InputMap;
- (Ljavax/swing/JComponent;I)Ljavax/swing/InputMap;
+ (Ljavax/swing/JComponent;I)L0javax/swing/InputMap;
 getUnwrappedParent
  (Ljava/awt/Component;)Ljava/awt/Container;
  (Ljava/awt/Component;)Ljava/awt/Container;
@@ -83,7 +83,7 @@ getUnwrappedView
  (Ljavax/swing/JViewport;)Ljava/awt/Component;
 getWindowAncestor
  (Ljava/awt/Component;)Ljava/awt/Window;
- (Ljava/awt/Component;)Ljava/awt/Window;
+ (Ljava/awt/Component;)L0java/awt/Window;
 invokeAndWait
  (Ljava/lang/Runnable;)V
  (Ljava/lang/Runnable;)V

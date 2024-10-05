@@ -8,10 +8,10 @@ class java/awt/image/RescaleOp
  ([F[FLjava/awt/RenderingHints;)V
 createCompatibleDestImage
  (Ljava/awt/image/BufferedImage;Ljava/awt/image/ColorModel;)Ljava/awt/image/BufferedImage;
- (Ljava/awt/image/BufferedImage;Ljava/awt/image/ColorModel;)Ljava/awt/image/BufferedImage;
+ (Ljava/awt/image/BufferedImage;Ljava/awt/image/ColorModel;)L1java/awt/image/BufferedImage; # @Inherited(java.awt.image.BufferedImageOp)
 createCompatibleDestRaster
  (Ljava/awt/image/Raster;)Ljava/awt/image/WritableRaster;
- (Ljava/awt/image/Raster;)Ljava/awt/image/WritableRaster;
+ (Ljava/awt/image/Raster;)L1java/awt/image/WritableRaster; # @Inherited(java.awt.image.RasterOp)
 filter
  (Ljava/awt/image/BufferedImage;Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;
  (Ljava/awt/image/BufferedImage;Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;
@@ -29,7 +29,7 @@ getOffsets
  ([F)[F
 getPoint2D
  (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;
- (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;
+ (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)L1java/awt/geom/Point2D;
 getRenderingHints
  ()Ljava/awt/RenderingHints;
  ()Ljava/awt/RenderingHints;

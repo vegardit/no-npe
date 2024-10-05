@@ -9,7 +9,7 @@ configureWebResources
  (Lorg/springframework/web/context/support/GenericWebApplicationContext;Lorg/springframework/test/context/web/WebMergedContextConfiguration;)V
 createContext
  ()Lorg/springframework/web/context/support/GenericWebApplicationContext;
- ()Lorg/springframework/web/context/support/GenericWebApplicationContext;
+ ()L1org/springframework/web/context/support/GenericWebApplicationContext;
 customizeBeanFactory
  (Lorg/springframework/beans/factory/support/DefaultListableBeanFactory;Lorg/springframework/test/context/web/WebMergedContextConfiguration;)V
  (Lorg/springframework/beans/factory/support/DefaultListableBeanFactory;Lorg/springframework/test/context/web/WebMergedContextConfiguration;)V
@@ -24,7 +24,7 @@ loadContext
  (Lorg/springframework/test/context/MergedContextConfiguration;)Lorg/springframework/context/ApplicationContext;
 loadContext
  ([Ljava/lang/String;)Lorg/springframework/context/ApplicationContext;
- ([Ljava/lang/String;)Lorg/springframework/context/ApplicationContext;
+ ([Ljava/lang/String;)L1org/springframework/context/ApplicationContext; # @Inherited(org.springframework.test.context.SmartContextLoader)
 loadContextForAotProcessing
  (Lorg/springframework/test/context/MergedContextConfiguration;)Lorg/springframework/web/context/support/GenericWebApplicationContext;
  (Lorg/springframework/test/context/MergedContextConfiguration;)Lorg/springframework/web/context/support/GenericWebApplicationContext;

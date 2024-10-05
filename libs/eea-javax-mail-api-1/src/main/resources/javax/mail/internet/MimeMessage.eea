@@ -54,10 +54,10 @@ addRecipients
  (Ljavax/mail/Message$RecipientType;[Ljavax/mail/Address;)V
 createInternetHeaders
  (Ljava/io/InputStream;)Ljavax/mail/internet/InternetHeaders;
- (Ljava/io/InputStream;)Ljavax/mail/internet/InternetHeaders;
+ (Ljava/io/InputStream;)L1javax/mail/internet/InternetHeaders;
 createMimeMessage
  (Ljavax/mail/Session;)Ljavax/mail/internet/MimeMessage;
- (Ljavax/mail/Session;)Ljavax/mail/internet/MimeMessage;
+ (Ljavax/mail/Session;)L1javax/mail/internet/MimeMessage;
 getAllHeaderLines
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
@@ -135,7 +135,7 @@ getRawInputStream
  ()Ljava/io/InputStream;
 getReceivedDate
  ()Ljava/util/Date;
- ()Ljava/util/Date;
+ ()L0java/util/Date;
 getRecipients
  (Ljavax/mail/Message$RecipientType;)[Ljavax/mail/Address;
  (Ljavax/mail/Message$RecipientType;)[Ljavax/mail/Address;
@@ -144,13 +144,13 @@ getReplyTo
  ()[Ljavax/mail/Address;
 getSender
  ()Ljavax/mail/Address;
- ()Ljavax/mail/Address;
+ ()L0javax/mail/Address;
 getSentDate
  ()Ljava/util/Date;
- ()Ljava/util/Date;
+ ()L0java/util/Date;
 getSubject
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String;
 isMimeType
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z

@@ -17,16 +17,16 @@ createContextMenu
  (Lorg/eclipse/swt/widgets/Control;)V
 createDefaultPage
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
- (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+ (Lorg/eclipse/ui/part/PageBook;)L1org/eclipse/ui/part/IPage; # @Inherited(org.eclipse.ui.part.PageBookView)
 createPartControl
  (Lorg/eclipse/swt/widgets/Composite;)V
  (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.PageBookView)
 createViewer
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+ (Lorg/eclipse/swt/widgets/Composite;)L1org/eclipse/jface/viewers/Viewer;
 doCreatePage
  (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
- (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
+ (Lorg/eclipse/ui/IWorkbenchPart;)L0org/eclipse/ui/part/PageBookView$PageRec;
 doDestroyPage
  (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
  (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
@@ -41,7 +41,7 @@ findView
  (Ljava/lang/String;)Lorg/eclipse/ui/IViewPart;
 generatePreferenceKey
  (Lorg/eclipse/jface/action/IAction;)Ljava/lang/String;
- (Lorg/eclipse/jface/action/IAction;)Ljava/lang/String;
+ (Lorg/eclipse/jface/action/IAction;)L1java/lang/String;
 getAction
  (Ljava/lang/String;)Lorg/eclipse/jface/action/IAction;
  (Ljava/lang/String;)Lorg/eclipse/jface/action/IAction;
@@ -50,10 +50,10 @@ getAdapter
  <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.part.PageBookView)
 getBootstrapPart
  ()Lorg/eclipse/ui/IWorkbenchPart;
- ()Lorg/eclipse/ui/IWorkbenchPart;
+ ()L0org/eclipse/ui/IWorkbenchPart;
 getContextMenuManager
  ()Lorg/eclipse/jface/action/IMenuManager;
- ()Lorg/eclipse/jface/action/IMenuManager;
+ ()L0org/eclipse/jface/action/IMenuManager;
 getContextMenuManagers
  ()Ljava/util/List<Lorg/eclipse/jface/action/IMenuManager;>;
  ()Ljava/util/List<Lorg/eclipse/jface/action/IMenuManager;>;
@@ -62,7 +62,7 @@ getControl
  ()Lorg/eclipse/swt/widgets/Control;
 getDefaultControl
  ()Lorg/eclipse/swt/widgets/Control;
- ()Lorg/eclipse/swt/widgets/Control;
+ ()L0org/eclipse/swt/widgets/Control;
 getHelpContextId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -77,16 +77,16 @@ getPreferenceStore
  ()Lorg/eclipse/jface/preference/IPreferenceStore;
 getPresentation
  (Ljava/lang/String;)Lorg/eclipse/debug/ui/IDebugModelPresentation;
- (Ljava/lang/String;)Lorg/eclipse/debug/ui/IDebugModelPresentation;
+ (Ljava/lang/String;)L0org/eclipse/debug/ui/IDebugModelPresentation;
 getPresentationAttributes
  (Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  (Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 getStructuredViewer
  ()Lorg/eclipse/jface/viewers/StructuredViewer;
- ()Lorg/eclipse/jface/viewers/StructuredViewer;
+ ()L0org/eclipse/jface/viewers/StructuredViewer;
 getTextViewer
  ()Lorg/eclipse/jface/text/TextViewer;
- ()Lorg/eclipse/jface/text/TextViewer;
+ ()L0org/eclipse/jface/text/TextViewer;
 getViewer
  ()Lorg/eclipse/jface/viewers/Viewer;
  ()Lorg/eclipse/jface/viewers/Viewer;

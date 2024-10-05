@@ -39,7 +39,7 @@ findResources
  (L0java/lang/String;)L1java/util/Enumeration<L1java/net/URL;>; # @Inherited(java.lang.ClassLoader)
 getPermissions
  (Ljava/security/CodeSource;)Ljava/security/PermissionCollection;
- (Ljava/security/CodeSource;)Ljava/security/PermissionCollection;
+ (Ljava/security/CodeSource;)L1java/security/PermissionCollection; # @Inherited(java.security.SecureClassLoader)
 getResourceAsStream
  (Ljava/lang/String;)Ljava/io/InputStream;
  (L1java/lang/String;)L0java/io/InputStream; # @Inherited(java.lang.ClassLoader)

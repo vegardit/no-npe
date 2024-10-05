@@ -9,7 +9,7 @@ W3C_LENGTH_UNITS
 
 createEditorKitForContentType
  (Ljava/lang/String;)Ljavax/swing/text/EditorKit;
- (Ljava/lang/String;)Ljavax/swing/text/EditorKit;
+ (Ljava/lang/String;)L0javax/swing/text/EditorKit;
 getEditorKitClassNameForContentType
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -34,7 +34,7 @@ addHyperlinkListener
  (L1javax/swing/event/HyperlinkListener;)V
 createDefaultEditorKit
  ()Ljavax/swing/text/EditorKit;
- ()Ljavax/swing/text/EditorKit;
+ ()L1javax/swing/text/EditorKit;
 fireHyperlinkUpdate
  (Ljavax/swing/event/HyperlinkEvent;)V
  (Ljavax/swing/event/HyperlinkEvent;)V
@@ -43,7 +43,7 @@ getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String;
 getEditorKit
  ()Ljavax/swing/text/EditorKit;
  ()Ljavax/swing/text/EditorKit;
@@ -58,19 +58,19 @@ getPage
  ()Ljava/net/URL;
 getPreferredSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension;
 getStream
  (Ljava/net/URL;)Ljava/io/InputStream;
  (Ljava/net/URL;)Ljava/io/InputStream;
 getText
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(javax.swing.text.JTextComponent)
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.text.JTextComponent)
 read
  (Ljava/io/InputStream;Ljava/lang/Object;)V
  (Ljava/io/InputStream;Ljava/lang/Object;)V

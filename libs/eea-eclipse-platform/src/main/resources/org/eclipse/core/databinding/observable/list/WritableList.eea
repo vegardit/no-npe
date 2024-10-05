@@ -8,7 +8,7 @@ super org/eclipse/core/databinding/observable/list/ObservableList
 
 withElementType
  <T:Ljava/lang/Object;>(Ljava/lang/Object;)Lorg/eclipse/core/databinding/observable/list/WritableList<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Object;)Lorg/eclipse/core/databinding/observable/list/WritableList<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;)L1org/eclipse/core/databinding/observable/list/WritableList<TT;>;
 
 <init>
  (Ljava/util/Collection<TE;>;Ljava/lang/Object;)V
@@ -42,7 +42,7 @@ move
  (II)TE;
 remove
  (I)TE;
- (I)TE;
+ (I)T1E; # @Inherited(org.eclipse.core.databinding.observable.list.ObservableList)
 remove
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
@@ -54,4 +54,4 @@ retainAll
  (L1java/util/Collection<*>;)Z # @Inherited(org.eclipse.core.databinding.observable.list.ObservableList)
 set
  (ITE;)TE;
- (ITE;)TE;
+ (ITE;)T1E; # @Inherited(org.eclipse.core.databinding.observable.list.ObservableList)

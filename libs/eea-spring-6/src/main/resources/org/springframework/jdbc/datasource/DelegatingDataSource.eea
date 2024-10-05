@@ -5,10 +5,10 @@ class org/springframework/jdbc/datasource/DelegatingDataSource
  (Ljavax/sql/DataSource;)V
 createConnectionBuilder
  ()Ljava/sql/ConnectionBuilder;
- ()Ljava/sql/ConnectionBuilder;
+ ()L1java/sql/ConnectionBuilder; # @Inherited(javax.sql.DataSource)
 createShardingKeyBuilder
  ()Ljava/sql/ShardingKeyBuilder;
- ()Ljava/sql/ShardingKeyBuilder;
+ ()L1java/sql/ShardingKeyBuilder; # @Inherited(javax.sql.CommonDataSource)
 getConnection
  ()Ljava/sql/Connection;
  ()Ljava/sql/Connection;

@@ -11,7 +11,7 @@ cloneWithUrl
  (Lorg/apache/wicket/request/Url;)Lorg/apache/wicket/protocol/http/servlet/ServletWebRequest;
 generatePostParameters
  ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/wicket/util/string/StringValue;>;>;
- ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/wicket/util/string/StringValue;>;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/wicket/util/string/StringValue;>;>;
 getCharset
  ()Ljava/nio/charset/Charset;
  ()L1java/nio/charset/Charset; # @Inherited(org.apache.wicket.request.Request)
@@ -29,7 +29,7 @@ getCookies
  ()Ljava/util/List<Ljakarta/servlet/http/Cookie;>;
 getDateHeader
  (Ljava/lang/String;)Ljava/time/Instant;
- (Ljava/lang/String;)Ljava/time/Instant;
+ (Ljava/lang/String;)L0java/time/Instant;
 getFilterPath
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(org.apache.wicket.request.Request)
@@ -56,7 +56,7 @@ getUrl
  ()L1org/apache/wicket/request/Url; # @Inherited(org.apache.wicket.request.Request)
 newMultipartWebRequest
  (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
- (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
+ (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)L1org/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
 newMultipartWebRequest
  (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;Lorg/apache/commons/fileupload2/core/FileItemFactory;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
- (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;Lorg/apache/commons/fileupload2/core/FileItemFactory;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
+ (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;Lorg/apache/commons/fileupload2/core/FileItemFactory;)L1org/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;

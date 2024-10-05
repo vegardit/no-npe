@@ -8,19 +8,19 @@ visit
  (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 visitAnnotation
  (Ljava/lang/String;Z)Lorg/springframework/asm/AnnotationVisitor;
- (Ljava/lang/String;Z)Lorg/springframework/asm/AnnotationVisitor;
+ (Ljava/lang/String;Z)L0org/springframework/asm/AnnotationVisitor; # @Inherited(org.springframework.asm.ClassVisitor)
 visitAttribute
  (Lorg/springframework/asm/Attribute;)V
  (Lorg/springframework/asm/Attribute;)V
 visitField
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/asm/FieldVisitor;
- (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/asm/FieldVisitor;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)L0org/springframework/asm/FieldVisitor; # @Inherited(org.springframework.asm.ClassVisitor)
 visitInnerClass
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 visitMethod
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/asm/MethodVisitor;
- (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/asm/MethodVisitor;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L0org/springframework/asm/MethodVisitor; # @Inherited(org.springframework.asm.ClassVisitor)
 visitOuterClass
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
@@ -29,4 +29,4 @@ visitSource
  (Ljava/lang/String;Ljava/lang/String;)V
 visitTypeAnnotation
  (ILorg/springframework/asm/TypePath;Ljava/lang/String;Z)Lorg/springframework/asm/AnnotationVisitor;
- (ILorg/springframework/asm/TypePath;Ljava/lang/String;Z)Lorg/springframework/asm/AnnotationVisitor;
+ (ILorg/springframework/asm/TypePath;Ljava/lang/String;Z)L0org/springframework/asm/AnnotationVisitor; # @Inherited(org.springframework.asm.ClassVisitor)

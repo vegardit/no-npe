@@ -18,7 +18,7 @@ childConfigurationsAt
  (Ljava/lang/String;Z)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
 cloneNodeModel
  ()Lorg/apache/commons/configuration2/tree/NodeModel<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
- ()Lorg/apache/commons/configuration2/tree/NodeModel<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
+ ()L1org/apache/commons/configuration2/tree/NodeModel<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
 configurationAt
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
@@ -33,13 +33,13 @@ configurationsAt
  (Ljava/lang/String;Z)Ljava/util/List<Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;>;
 createSubConfigurationForTrackedNode
  (Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/InMemoryNodeModelSupport;)Lorg/apache/commons/configuration2/SubnodeConfiguration;
- (Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/InMemoryNodeModelSupport;)Lorg/apache/commons/configuration2/SubnodeConfiguration;
+ (Lorg/apache/commons/configuration2/tree/NodeSelector;Lorg/apache/commons/configuration2/tree/InMemoryNodeModelSupport;)L1org/apache/commons/configuration2/SubnodeConfiguration;
 getNodeModel
  ()Lorg/apache/commons/configuration2/tree/InMemoryNodeModel;
  ()Lorg/apache/commons/configuration2/tree/InMemoryNodeModel;
 getSubConfigurationNodeSelector
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/tree/NodeSelector;
- (Ljava/lang/String;)Lorg/apache/commons/configuration2/tree/NodeSelector;
+ (Ljava/lang/String;)L1org/apache/commons/configuration2/tree/NodeSelector;
 getSubConfigurationParentModel
  ()Lorg/apache/commons/configuration2/tree/InMemoryNodeModel;
  ()Lorg/apache/commons/configuration2/tree/InMemoryNodeModel;
@@ -66,4 +66,4 @@ subnodeConfigurationChanged
  (Lorg/apache/commons/configuration2/event/ConfigurationEvent;)V
 subset
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
- (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)L1org/apache/commons/configuration2/Configuration; # @Inherited(org.apache.commons.configuration2.AbstractConfiguration)

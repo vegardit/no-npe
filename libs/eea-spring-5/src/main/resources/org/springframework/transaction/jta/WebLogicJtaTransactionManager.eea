@@ -2,7 +2,7 @@ class org/springframework/transaction/jta/WebLogicJtaTransactionManager
 
 createTransaction
  (Ljava/lang/String;I)Ljavax/transaction/Transaction;
- (Ljava/lang/String;I)Ljavax/transaction/Transaction;
+ (Ljava/lang/String;I)L1javax/transaction/Transaction; # @Inherited(org.springframework.transaction.jta.JtaTransactionManager)
 doJtaBegin
  (Lorg/springframework/transaction/jta/JtaTransactionObject;Lorg/springframework/transaction/TransactionDefinition;)V
  (Lorg/springframework/transaction/jta/JtaTransactionObject;Lorg/springframework/transaction/TransactionDefinition;)V

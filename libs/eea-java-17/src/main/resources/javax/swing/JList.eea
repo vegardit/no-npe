@@ -16,13 +16,13 @@ addListSelectionListener
  (L1javax/swing/event/ListSelectionListener;)V
 createSelectionModel
  ()Ljavax/swing/ListSelectionModel;
- ()Ljavax/swing/ListSelectionModel;
+ ()L1javax/swing/ListSelectionModel;
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
 getCellBounds
  (II)Ljava/awt/Rectangle;
- (II)Ljava/awt/Rectangle;
+ (II)L0java/awt/Rectangle;
 getCellRenderer
  ()Ljavax/swing/ListCellRenderer<-TE;>;
  ()Ljavax/swing/ListCellRenderer<-TE;>;
@@ -61,7 +61,7 @@ getSelectedValue
  ()TE;
 getSelectedValues
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object;
 getSelectedValuesList
  ()Ljava/util/List<TE;>;
  ()Ljava/util/List<TE;>;
@@ -82,16 +82,16 @@ getUI
  ()Ljavax/swing/plaf/ListUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 indexToLocation
  (I)Ljava/awt/Point;
- (I)Ljava/awt/Point;
+ (I)L0java/awt/Point;
 locationToIndex
  (Ljava/awt/Point;)I
  (Ljava/awt/Point;)I
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 removeListSelectionListener
  (Ljavax/swing/event/ListSelectionListener;)V
  (L1javax/swing/event/ListSelectionListener;)V

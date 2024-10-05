@@ -11,7 +11,7 @@ class org/springframework/core/io/PathResource
  (Ljava/nio/file/Path;)V
 createRelative
  (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
- (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+ (Ljava/lang/String;)L1org/springframework/core/io/Resource; # @Inherited(org.springframework.core.io.AbstractResource)
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(org.springframework.core.io.AbstractResource)
@@ -23,10 +23,10 @@ getContentAsString
  (Ljava/nio/charset/Charset;)Ljava/lang/String;
 getDescription
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getFile
  ()Ljava/io/File;
- ()Ljava/io/File;
+ ()L1java/io/File; # @Inherited(org.springframework.core.io.AbstractResource)
 getFilename
  ()Ljava/lang/String;
  ()L0java/lang/String; # @Inherited(org.springframework.core.io.AbstractResource)
@@ -38,13 +38,13 @@ getOutputStream
  ()Ljava/io/OutputStream;
 getPath
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getURI
  ()Ljava/net/URI;
  ()Ljava/net/URI;
 getURL
  ()Ljava/net/URL;
- ()Ljava/net/URL;
+ ()L1java/net/URL; # @Inherited(org.springframework.core.io.AbstractResource)
 readableChannel
  ()Ljava/nio/channels/ReadableByteChannel;
  ()Ljava/nio/channels/ReadableByteChannel;

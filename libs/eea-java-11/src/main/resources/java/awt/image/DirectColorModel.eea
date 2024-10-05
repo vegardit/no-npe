@@ -5,10 +5,10 @@ class java/awt/image/DirectColorModel
  (Ljava/awt/color/ColorSpace;IIIIIZI)V
 coerceData
  (Ljava/awt/image/WritableRaster;Z)Ljava/awt/image/ColorModel;
- (Ljava/awt/image/WritableRaster;Z)Ljava/awt/image/ColorModel;
+ (Ljava/awt/image/WritableRaster;Z)L1java/awt/image/ColorModel; # @Inherited(java.awt.image.ColorModel)
 createCompatibleWritableRaster
  (II)Ljava/awt/image/WritableRaster;
- (II)Ljava/awt/image/WritableRaster;
+ (II)L1java/awt/image/WritableRaster; # @Inherited(java.awt.image.ColorModel)
 getAlpha
  (Ljava/lang/Object;)I
  (Ljava/lang/Object;)I
@@ -17,19 +17,19 @@ getBlue
  (Ljava/lang/Object;)I
 getComponents
  (I[II)[I
- (I[II)[I
+ (I[II)[1I # @Inherited(java.awt.image.ColorModel)
 getComponents
  (Ljava/lang/Object;[II)[I
- (Ljava/lang/Object;[II)[I
+ (Ljava/lang/Object;[II)[1I # @Inherited(java.awt.image.ColorModel)
 getDataElement
  ([II)I
  ([II)I
 getDataElements
  (ILjava/lang/Object;)Ljava/lang/Object;
- (ILjava/lang/Object;)Ljava/lang/Object;
+ (ILjava/lang/Object;)L1java/lang/Object; # @Inherited(java.awt.image.ColorModel)
 getDataElements
  ([IILjava/lang/Object;)Ljava/lang/Object;
- ([IILjava/lang/Object;)Ljava/lang/Object;
+ ([IILjava/lang/Object;)L1java/lang/Object; # @Inherited(java.awt.image.ColorModel)
 getGreen
  (Ljava/lang/Object;)I
  (Ljava/lang/Object;)I

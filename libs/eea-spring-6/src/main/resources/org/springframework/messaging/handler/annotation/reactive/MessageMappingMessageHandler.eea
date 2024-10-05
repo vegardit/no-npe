@@ -6,7 +6,7 @@ super org/springframework/messaging/handler/invocation/reactive/AbstractMethodMe
 
 createExceptionMethodResolverFor
  (Ljava/lang/Class<*>;)Lorg/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver;
- (Ljava/lang/Class<*>;)Lorg/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver;
+ (Ljava/lang/Class<*>;)L1org/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver; # @Inherited(org.springframework.messaging.handler.invocation.reactive.AbstractMethodMessageHandler)
 getCondition
  (Ljava/lang/reflect/AnnotatedElement;)Lorg/springframework/messaging/handler/CompositeMessageCondition;
  (Ljava/lang/reflect/AnnotatedElement;)L0org/springframework/messaging/handler/CompositeMessageCondition;
@@ -21,7 +21,7 @@ getDestination
  (Lorg/springframework/messaging/Message<*>;)L0org/springframework/util/RouteMatcher$Route; # @Inherited(org.springframework.messaging.handler.invocation.reactive.AbstractMethodMessageHandler)
 getDirectLookupMappings
  (Lorg/springframework/messaging/handler/CompositeMessageCondition;)Ljava/util/Set<Ljava/lang/String;>;
- (Lorg/springframework/messaging/handler/CompositeMessageCondition;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/springframework/messaging/handler/CompositeMessageCondition;)L1java/util/Set<Ljava/lang/String;>;
 getMappingComparator
  (Lorg/springframework/messaging/Message<*>;)Ljava/util/Comparator<Lorg/springframework/messaging/handler/CompositeMessageCondition;>;
  (Lorg/springframework/messaging/Message<*>;)Ljava/util/Comparator<Lorg/springframework/messaging/handler/CompositeMessageCondition;>;
@@ -42,7 +42,7 @@ handleMatch
  (Lorg/springframework/messaging/handler/CompositeMessageCondition;Lorg/springframework/messaging/handler/HandlerMethod;Lorg/springframework/messaging/Message<*>;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
 initArgumentResolvers
  ()Ljava/util/List<+Lorg/springframework/messaging/handler/invocation/reactive/HandlerMethodArgumentResolver;>;
- ()Ljava/util/List<+Lorg/springframework/messaging/handler/invocation/reactive/HandlerMethodArgumentResolver;>;
+ ()L1java/util/List<+Lorg/springframework/messaging/handler/invocation/reactive/HandlerMethodArgumentResolver;>;
 initReturnValueHandlers
  ()Ljava/util/List<+Lorg/springframework/messaging/handler/invocation/reactive/HandlerMethodReturnValueHandler;>;
  ()Ljava/util/List<+Lorg/springframework/messaging/handler/invocation/reactive/HandlerMethodReturnValueHandler;>;

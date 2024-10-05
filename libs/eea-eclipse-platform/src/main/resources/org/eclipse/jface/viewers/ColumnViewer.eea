@@ -2,7 +2,7 @@ class org/eclipse/jface/viewers/ColumnViewer
 
 createViewerEditor
  ()Lorg/eclipse/jface/viewers/ColumnViewerEditor;
- ()Lorg/eclipse/jface/viewers/ColumnViewerEditor;
+ ()L1org/eclipse/jface/viewers/ColumnViewerEditor;
 disassociate
  (Lorg/eclipse/swt/widgets/Item;)V
  (Lorg/eclipse/swt/widgets/Item;)V
@@ -14,7 +14,7 @@ firePostSelectionChanged
  (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
 getCell
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/jface/viewers/ViewerCell;
- (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/jface/viewers/ViewerCell;
+ (Lorg/eclipse/swt/graphics/Point;)L0org/eclipse/jface/viewers/ViewerCell;
 getCellEditors
  ()[Lorg/eclipse/jface/viewers/CellEditor;
  ()[Lorg/eclipse/jface/viewers/CellEditor;
@@ -32,22 +32,22 @@ getColumnViewerOwner
  (I)Lorg/eclipse/swt/widgets/Widget;
 getItem
  (II)Lorg/eclipse/swt/widgets/Item;
- (II)Lorg/eclipse/swt/widgets/Item;
+ (II)L0org/eclipse/swt/widgets/Item; # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 getItemAt
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/widgets/Item;
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/widgets/Item;
 getLabelProvider
  (I)Lorg/eclipse/jface/viewers/CellLabelProvider;
- (I)Lorg/eclipse/jface/viewers/CellLabelProvider;
+ (I)L0org/eclipse/jface/viewers/CellLabelProvider;
 getRawChildren
  (Ljava/lang/Object;)[Ljava/lang/Object;
- (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[1Ljava/lang/Object; # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 getSortedChildren
  (Ljava/lang/Object;)[Ljava/lang/Object;
  (Ljava/lang/Object;)[Ljava/lang/Object;
 getViewerRow
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/jface/viewers/ViewerRow;
- (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/jface/viewers/ViewerRow;
+ (Lorg/eclipse/swt/graphics/Point;)L0org/eclipse/jface/viewers/ViewerRow;
 getViewerRowFromItem
  (Lorg/eclipse/swt/widgets/Widget;)Lorg/eclipse/jface/viewers/ViewerRow;
  (Lorg/eclipse/swt/widgets/Widget;)Lorg/eclipse/jface/viewers/ViewerRow;

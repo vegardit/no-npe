@@ -5,10 +5,10 @@ append
  (Ljava/lang/CharSequence;Ljava/io/File;Ljava/nio/charset/Charset;)V
 asByteSink
  (Ljava/io/File;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/ByteSink;
- (Ljava/io/File;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/ByteSink;
+ (Ljava/io/File;[Lcom/google/common/io/FileWriteMode;)L1com/google/common/io/ByteSink;
 asByteSource
  (Ljava/io/File;)Lcom/google/common/io/ByteSource;
- (Ljava/io/File;)Lcom/google/common/io/ByteSource;
+ (Ljava/io/File;)L1com/google/common/io/ByteSource;
 asCharSink
  (Ljava/io/File;Ljava/nio/charset/Charset;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/CharSink;
  (Ljava/io/File;Ljava/nio/charset/Charset;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/CharSink;
@@ -29,7 +29,7 @@ createParentDirs
  (Ljava/io/File;)V
 createTempDir
  ()Ljava/io/File;
- ()Ljava/io/File;
+ ()L1java/io/File;
 equal
  (Ljava/io/File;Ljava/io/File;)Z
  (Ljava/io/File;Ljava/io/File;)Z
@@ -65,10 +65,10 @@ move
  (Ljava/io/File;Ljava/io/File;)V
 newReader
  (Ljava/io/File;Ljava/nio/charset/Charset;)Ljava/io/BufferedReader;
- (Ljava/io/File;Ljava/nio/charset/Charset;)Ljava/io/BufferedReader;
+ (Ljava/io/File;Ljava/nio/charset/Charset;)L1java/io/BufferedReader;
 newWriter
  (Ljava/io/File;Ljava/nio/charset/Charset;)Ljava/io/BufferedWriter;
- (Ljava/io/File;Ljava/nio/charset/Charset;)Ljava/io/BufferedWriter;
+ (Ljava/io/File;Ljava/nio/charset/Charset;)L1java/io/BufferedWriter;
 readBytes
  <T:Ljava/lang/Object;>(Ljava/io/File;Lcom/google/common/io/ByteProcessor<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/io/File;Lcom/google/common/io/ByteProcessor<TT;>;)T1T;
@@ -83,7 +83,7 @@ readLines
  <T:Ljava/lang/Object;>(Ljava/io/File;Ljava/nio/charset/Charset;Lcom/google/common/io/LineProcessor<TT;>;)T1T;
 simplifyPath
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
 toByteArray
  (Ljava/io/File;)[B
  (Ljava/io/File;)[B

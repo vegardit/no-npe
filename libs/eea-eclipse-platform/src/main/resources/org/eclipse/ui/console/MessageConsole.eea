@@ -27,10 +27,10 @@ appendToDocument
  (Ljava/lang/String;Lorg/eclipse/ui/console/MessageConsoleStream;)V
 createPage
  (Lorg/eclipse/ui/console/IConsoleView;)Lorg/eclipse/ui/part/IPageBookViewPage;
- (Lorg/eclipse/ui/console/IConsoleView;)Lorg/eclipse/ui/part/IPageBookViewPage;
+ (Lorg/eclipse/ui/console/IConsoleView;)L1org/eclipse/ui/part/IPageBookViewPage; # @Inherited(org.eclipse.ui.console.IOConsole)
 getInputStream
  ()Lorg/eclipse/ui/console/IOConsoleInputStream;
- ()Lorg/eclipse/ui/console/IOConsoleInputStream;
+ ()L1org/eclipse/ui/console/IOConsoleInputStream; # @Overrides(org.eclipse.ui.console.IOConsole)
 newMessageStream
  ()Lorg/eclipse/ui/console/MessageConsoleStream;
  ()L1org/eclipse/ui/console/MessageConsoleStream;

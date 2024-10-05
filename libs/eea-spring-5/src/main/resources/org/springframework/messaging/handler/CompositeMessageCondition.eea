@@ -9,7 +9,7 @@ super org/springframework/messaging/handler/MessageCondition
  ([Lorg/springframework/messaging/handler/MessageCondition<*>;)V
 combine
  (Lorg/springframework/messaging/handler/CompositeMessageCondition;)Lorg/springframework/messaging/handler/CompositeMessageCondition;
- (Lorg/springframework/messaging/handler/CompositeMessageCondition;)Lorg/springframework/messaging/handler/CompositeMessageCondition;
+ (Lorg/springframework/messaging/handler/CompositeMessageCondition;)L1org/springframework/messaging/handler/CompositeMessageCondition;
 compareTo
  (Lorg/springframework/messaging/handler/CompositeMessageCondition;Lorg/springframework/messaging/Message<*>;)I
  (Lorg/springframework/messaging/handler/CompositeMessageCondition;Lorg/springframework/messaging/Message<*>;)I
@@ -21,7 +21,7 @@ getCondition
  <T::Lorg/springframework/messaging/handler/MessageCondition<TT;>;>(Ljava/lang/Class<TT;>;)TT;
 getMatchingCondition
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/handler/CompositeMessageCondition;
- (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/handler/CompositeMessageCondition;
+ (Lorg/springframework/messaging/Message<*>;)L0org/springframework/messaging/handler/CompositeMessageCondition;
 getMessageConditions
  ()Ljava/util/List<Lorg/springframework/messaging/handler/MessageCondition<*>;>;
  ()Ljava/util/List<Lorg/springframework/messaging/handler/MessageCondition<*>;>;

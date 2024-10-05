@@ -2,14 +2,14 @@ class javax/swing/plaf/synth/SynthOptionPaneUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 createMessageArea
  ()Ljava/awt/Container;
- ()Ljava/awt/Container;
+ ()L1java/awt/Container; # @Inherited(javax.swing.plaf.basic.BasicOptionPaneUI)
 createSeparator
  ()Ljava/awt/Container;
- ()Ljava/awt/Container;
+ ()L1java/awt/Container; # @Overrides(javax.swing.plaf.basic.BasicOptionPaneUI)
 getContext
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;

@@ -14,7 +14,7 @@ doCommit
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
 doGetTransaction
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L1java/lang/Object;
 doResume
  (Ljava/lang/Object;Ljava/lang/Object;)V
  (Ljava/lang/Object;Ljava/lang/Object;)V
@@ -26,7 +26,7 @@ doSetRollbackOnly
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
 doSuspend
  (Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)L1java/lang/Object; # @Inherited(org.springframework.transaction.support.AbstractPlatformTransactionManager)
 getDataSource
  ()Ljavax/sql/DataSource;
  ()L0javax/sql/DataSource;
@@ -47,4 +47,4 @@ setDataSource
  (Ljavax/sql/DataSource;)V
 translateException
  (Ljava/lang/String;Ljava/sql/SQLException;)Ljava/lang/RuntimeException;
- (Ljava/lang/String;Ljava/sql/SQLException;)Ljava/lang/RuntimeException;
+ (Ljava/lang/String;Ljava/sql/SQLException;)L1java/lang/RuntimeException;

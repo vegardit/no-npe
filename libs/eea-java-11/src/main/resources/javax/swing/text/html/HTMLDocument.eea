@@ -15,13 +15,13 @@ create
  ([Ljavax/swing/text/DefaultStyledDocument$ElementSpec;)V
 createBranchElement
  (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/Element;
- (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/Element;
+ (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)L1javax/swing/text/Element; # @Inherited(javax.swing.text.AbstractDocument)
 createDefaultRoot
  ()Ljavax/swing/text/AbstractDocument$AbstractElement;
- ()Ljavax/swing/text/AbstractDocument$AbstractElement;
+ ()L1javax/swing/text/AbstractDocument$AbstractElement; # @Inherited(javax.swing.text.DefaultStyledDocument)
 createLeafElement
  (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)Ljavax/swing/text/Element;
- (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)Ljavax/swing/text/Element;
+ (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)L1javax/swing/text/Element; # @Inherited(javax.swing.text.AbstractDocument)
 fireChangedUpdate
  (Ljavax/swing/event/DocumentEvent;)V
  (Ljavax/swing/event/DocumentEvent;)V
@@ -39,13 +39,13 @@ getElement
  (Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/Element;
 getIterator
  (Ljavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLDocument$Iterator;
- (Ljavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLDocument$Iterator;
+ (Ljavax/swing/text/html/HTML$Tag;)L0javax/swing/text/html/HTMLDocument$Iterator;
 getParser
  ()Ljavax/swing/text/html/HTMLEditorKit$Parser;
  ()Ljavax/swing/text/html/HTMLEditorKit$Parser;
 getReader
  (I)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;
- (I)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;
+ (I)L1javax/swing/text/html/HTMLEditorKit$ParserCallback;
 getReader
  (IIILjavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;
  (IIILjavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;

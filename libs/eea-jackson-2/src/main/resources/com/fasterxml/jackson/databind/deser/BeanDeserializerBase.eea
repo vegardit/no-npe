@@ -92,7 +92,7 @@ _deserializeUsingPropertyBased
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
 _findPropertyUnwrapper
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)Lcom/fasterxml/jackson/databind/util/NameTransformer;
- (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)Lcom/fasterxml/jackson/databind/util/NameTransformer;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)L0com/fasterxml/jackson/databind/util/NameTransformer;
 _findSubclassDeserializer
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/util/TokenBuffer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/util/TokenBuffer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
@@ -125,7 +125,7 @@ asArrayDeserializer
  ()Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
 createContextual
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
- (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/BeanProperty;)L1com/fasterxml/jackson/databind/JsonDeserializer<*>; # @Inherited(com.fasterxml.jackson.databind.deser.ContextualDeserializer)
 creatorProperties
  ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
  ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
@@ -167,7 +167,7 @@ findBackReference
  (L1java/lang/String;)L0com/fasterxml/jackson/databind/deser/SettableBeanProperty; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
 findConvertingDeserializer
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
- (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)L0com/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
 findProperty
  (I)Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
  (I)Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
@@ -248,7 +248,7 @@ unwrappingDeserializer
  (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
 withBeanProperties
  (Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
- (Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
+ (Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;)L1com/fasterxml/jackson/databind/deser/BeanDeserializerBase;
 withByNameInclusion
  (Ljava/util/Set<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
  (Ljava/util/Set<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
@@ -263,7 +263,7 @@ withObjectIdReader
  (Lcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
 wrapAndThrow
  <T:Ljava/lang/Object;>(Ljava/lang/Throwable;Ljava/lang/Object;Ljava/lang/String;Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Throwable;Ljava/lang/Object;Ljava/lang/String;Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Throwable;Ljava/lang/Object;Ljava/lang/String;Lcom/fasterxml/jackson/databind/DeserializationContext;)T1T;
 wrapInstantiationProblem
  <T:Ljava/lang/Object;>(Ljava/lang/Throwable;Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/Throwable;Lcom/fasterxml/jackson/databind/DeserializationContext;)TT;

@@ -30,7 +30,7 @@ buildUserTransaction
  (Ljakarta/transaction/TransactionManager;)Ljakarta/transaction/UserTransaction;
 createTransaction
  (Ljava/lang/String;I)Ljakarta/transaction/Transaction;
- (Ljava/lang/String;I)Ljakarta/transaction/Transaction;
+ (Ljava/lang/String;I)L1jakarta/transaction/Transaction; # @Inherited(org.springframework.transaction.jta.TransactionFactory)
 doBegin
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
@@ -42,7 +42,7 @@ doCommit
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
 doGetJtaTransaction
  (Ljakarta/transaction/UserTransaction;)Lorg/springframework/transaction/jta/JtaTransactionObject;
- (Ljakarta/transaction/UserTransaction;)Lorg/springframework/transaction/jta/JtaTransactionObject;
+ (Ljakarta/transaction/UserTransaction;)L1org/springframework/transaction/jta/JtaTransactionObject;
 doGetTransaction
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -69,7 +69,7 @@ doSetRollbackOnly
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
 doSuspend
  (Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)L1java/lang/Object; # @Inherited(org.springframework.transaction.support.AbstractPlatformTransactionManager)
 findTransactionManager
  (Ljakarta/transaction/UserTransaction;)Ljakarta/transaction/TransactionManager;
  (Ljakarta/transaction/UserTransaction;)L0jakarta/transaction/TransactionManager;

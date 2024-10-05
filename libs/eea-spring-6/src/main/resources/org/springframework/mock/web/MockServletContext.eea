@@ -11,19 +11,19 @@ class org/springframework/mock/web/MockServletContext
  (Lorg/springframework/core/io/ResourceLoader;)V
 addFilter
  (Ljava/lang/String;Ljakarta/servlet/Filter;)Ljakarta/servlet/FilterRegistration$Dynamic;
- (Ljava/lang/String;Ljakarta/servlet/Filter;)Ljakarta/servlet/FilterRegistration$Dynamic;
+ (Ljava/lang/String;Ljakarta/servlet/Filter;)L1jakarta/servlet/FilterRegistration$Dynamic;
 addFilter
  (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Filter;>;)Ljakarta/servlet/FilterRegistration$Dynamic;
- (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Filter;>;)Ljakarta/servlet/FilterRegistration$Dynamic;
+ (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Filter;>;)L1jakarta/servlet/FilterRegistration$Dynamic;
 addFilter
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/FilterRegistration$Dynamic;
- (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/FilterRegistration$Dynamic;
+ (Ljava/lang/String;Ljava/lang/String;)L1jakarta/servlet/FilterRegistration$Dynamic;
 addInitParameter
  (Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/lang/String;Ljava/lang/String;)V
 addJspFile
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
- (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
+ (Ljava/lang/String;Ljava/lang/String;)L1jakarta/servlet/ServletRegistration$Dynamic;
 addListener
  (Ljava/lang/Class<+Ljava/util/EventListener;>;)V
  (Ljava/lang/Class<+Ljava/util/EventListener;>;)V
@@ -38,22 +38,22 @@ addMimeType
  (Ljava/lang/String;Lorg/springframework/http/MediaType;)V
 addServlet
  (Ljava/lang/String;Ljakarta/servlet/Servlet;)Ljakarta/servlet/ServletRegistration$Dynamic;
- (Ljava/lang/String;Ljakarta/servlet/Servlet;)Ljakarta/servlet/ServletRegistration$Dynamic;
+ (Ljava/lang/String;Ljakarta/servlet/Servlet;)L1jakarta/servlet/ServletRegistration$Dynamic;
 addServlet
  (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Servlet;>;)Ljakarta/servlet/ServletRegistration$Dynamic;
- (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Servlet;>;)Ljakarta/servlet/ServletRegistration$Dynamic;
+ (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Servlet;>;)L1jakarta/servlet/ServletRegistration$Dynamic;
 addServlet
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
- (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
+ (Ljava/lang/String;Ljava/lang/String;)L1jakarta/servlet/ServletRegistration$Dynamic;
 createFilter
  <T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)TT;
- <T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)T1T;
 createListener
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)TT;
- <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)T1T;
 createServlet
  <T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)TT;
- <T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)T1T;
 declareRoles
  ([Ljava/lang/String;)V
  ([Ljava/lang/String;)V
@@ -98,7 +98,7 @@ getInitParameterNames
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
 getJspConfigDescriptor
  ()Ljakarta/servlet/descriptor/JspConfigDescriptor;
- ()Ljakarta/servlet/descriptor/JspConfigDescriptor;
+ ()L1jakarta/servlet/descriptor/JspConfigDescriptor;
 getMimeType
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)L0java/lang/String;
@@ -113,7 +113,7 @@ getRequestCharacterEncoding
  ()L0java/lang/String;
 getRequestDispatcher
  (Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;
- (Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;
+ (Ljava/lang/String;)L1jakarta/servlet/RequestDispatcher;
 getResource
  (Ljava/lang/String;)Ljava/net/URL;
  (Ljava/lang/String;)L0java/net/URL;
@@ -122,7 +122,7 @@ getResourceAsStream
  (Ljava/lang/String;)L0java/io/InputStream;
 getResourceLocation
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
 getResourcePaths
  (Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
  (Ljava/lang/String;)L0java/util/Set<Ljava/lang/String;>;
@@ -131,7 +131,7 @@ getResponseCharacterEncoding
  ()L0java/lang/String;
 getServerInfo
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getServletContextName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -146,7 +146,7 @@ getSessionCookieConfig
  ()Ljakarta/servlet/SessionCookieConfig;
 getVirtualServerName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 log
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

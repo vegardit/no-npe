@@ -51,7 +51,7 @@ _deserializeWithExternalTypeId
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler;)Ljava/lang/Object;
 asArrayDeserializer
  ()Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
- ()Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
+ ()L1com/fasterxml/jackson/databind/deser/BeanDeserializerBase;
 deserialize
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
@@ -90,13 +90,13 @@ unwrappingDeserializer
  (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
 withBeanProperties
  (Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
- (Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
+ (Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;)L1com/fasterxml/jackson/databind/deser/BeanDeserializerBase; # @Inherited(com.fasterxml.jackson.databind.deser.BeanDeserializerBase)
 withByNameInclusion
  (Ljava/util/Set<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializer;
- (Ljava/util/Set<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializer;
+ (Ljava/util/Set<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)L1com/fasterxml/jackson/databind/deser/BeanDeserializer;
 withIgnoreAllUnknown
  (Z)Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
- (Z)Lcom/fasterxml/jackson/databind/deser/BeanDeserializerBase;
+ (Z)L1com/fasterxml/jackson/databind/deser/BeanDeserializerBase;
 withObjectIdReader
  (Lcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializer;
- (Lcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;)Lcom/fasterxml/jackson/databind/deser/BeanDeserializer;
+ (Lcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;)L1com/fasterxml/jackson/databind/deser/BeanDeserializer;

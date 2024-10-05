@@ -34,13 +34,13 @@ acceptJsonFormatVisitor
  (Lcom/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Lcom/fasterxml/jackson/databind/JavaType;)V
 createSchemaNode
  (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
- (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
+ (Ljava/lang/String;)L1com/fasterxml/jackson/databind/node/ObjectNode;
 createSchemaNode
  (Ljava/lang/String;Z)Lcom/fasterxml/jackson/databind/node/ObjectNode;
- (Ljava/lang/String;Z)Lcom/fasterxml/jackson/databind/node/ObjectNode;
+ (Ljava/lang/String;Z)L1com/fasterxml/jackson/databind/node/ObjectNode;
 findAnnotatedContentSerializer
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonSerializer<*>;
- (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonSerializer<*>;
+ (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;)L0com/fasterxml/jackson/databind/JsonSerializer<*>;
 findContextualConvertingSerializer
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)Lcom/fasterxml/jackson/databind/JsonSerializer<*>;
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)Lcom/fasterxml/jackson/databind/JsonSerializer<*>;
@@ -49,7 +49,7 @@ findConvertingContentSerializer
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)Lcom/fasterxml/jackson/databind/JsonSerializer<*>;
 findFormatFeature
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/annotation/JsonFormat$Feature;)Ljava/lang/Boolean;
- (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/annotation/JsonFormat$Feature;)Ljava/lang/Boolean;
+ (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/annotation/JsonFormat$Feature;)L0java/lang/Boolean;
 findFormatOverrides
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/annotation/JsonFormat$Value;
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/annotation/JsonFormat$Value;
@@ -67,7 +67,7 @@ getSchema
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Ljava/lang/reflect/Type;Z)Lcom/fasterxml/jackson/databind/JsonNode;
 handledType
  ()Ljava/lang/Class<TT;>;
- ()Ljava/lang/Class<TT;>;
+ ()L0java/lang/Class<TT;>; # @Inherited(com.fasterxml.jackson.databind.JsonSerializer)
 isDefaultSerializer
  (Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)Z
  (Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)Z

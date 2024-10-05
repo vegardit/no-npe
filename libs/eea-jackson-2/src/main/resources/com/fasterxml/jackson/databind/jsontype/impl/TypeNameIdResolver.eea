@@ -5,7 +5,7 @@ _defaultTypeId
  (Ljava/lang/Class<*>;)Ljava/lang/String;
 construct
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;ZZ)Lcom/fasterxml/jackson/databind/jsontype/impl/TypeNameIdResolver;
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;ZZ)Lcom/fasterxml/jackson/databind/jsontype/impl/TypeNameIdResolver;
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;ZZ)L1com/fasterxml/jackson/databind/jsontype/impl/TypeNameIdResolver;
 
 _config
  Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;
@@ -25,7 +25,7 @@ _typeFromId
  (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JavaType;
 getDescForKnownTypeIds
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Overrides(com.fasterxml.jackson.databind.jsontype.impl.TypeIdResolverBase)
 getMechanism
  ()Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;
  ()Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;
@@ -43,4 +43,4 @@ toString
  ()L1java/lang/String; # @Inherited(java.lang.Object)
 typeFromId
  (Lcom/fasterxml/jackson/databind/DatabindContext;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JavaType;
- (Lcom/fasterxml/jackson/databind/DatabindContext;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JavaType;
+ (Lcom/fasterxml/jackson/databind/DatabindContext;Ljava/lang/String;)L1com/fasterxml/jackson/databind/JavaType; # @Inherited(com.fasterxml.jackson.databind.jsontype.impl.TypeIdResolverBase)

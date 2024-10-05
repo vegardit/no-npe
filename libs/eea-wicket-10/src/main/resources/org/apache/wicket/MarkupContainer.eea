@@ -24,7 +24,7 @@ autoAdd
  (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/MarkupStream;)Z
 canDequeueTag
  (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/DequeueTagAction;
- (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/DequeueTagAction;
+ (Lorg/apache/wicket/markup/ComponentTag;)L0org/apache/wicket/DequeueTagAction;
 contains
  (Lorg/apache/wicket/Component;Z)Z
  (Lorg/apache/wicket/Component;Z)Z
@@ -42,19 +42,19 @@ findComponentToDequeue
  (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
 get
  (Ljava/lang/String;)Lorg/apache/wicket/Component;
- (Ljava/lang/String;)Lorg/apache/wicket/Component;
+ (Ljava/lang/String;)L0org/apache/wicket/Component;
 getAssociatedMarkup
  ()Lorg/apache/wicket/markup/Markup;
- ()Lorg/apache/wicket/markup/Markup;
+ ()L0org/apache/wicket/markup/Markup;
 getAssociatedMarkupStream
  (Z)Lorg/apache/wicket/markup/MarkupStream;
- (Z)Lorg/apache/wicket/markup/MarkupStream;
+ (Z)L0org/apache/wicket/markup/MarkupStream;
 getMarkup
  (Lorg/apache/wicket/Component;)Lorg/apache/wicket/markup/IMarkupFragment;
  (Lorg/apache/wicket/Component;)Lorg/apache/wicket/markup/IMarkupFragment;
 getMarkupType
  ()Lorg/apache/wicket/markup/MarkupType;
- ()Lorg/apache/wicket/markup/MarkupType;
+ ()L0org/apache/wicket/markup/MarkupType;
 getRegionMarkup
  ()Lorg/apache/wicket/markup/IMarkupFragment;
  ()Lorg/apache/wicket/markup/IMarkupFragment;
@@ -63,13 +63,13 @@ internalAdd
  (Lorg/apache/wicket/Component;)V
 iterator
  ()Ljava/util/Iterator<Lorg/apache/wicket/Component;>;
- ()Ljava/util/Iterator<Lorg/apache/wicket/Component;>;
+ ()L1java/util/Iterator<Lorg/apache/wicket/Component;>;
 iterator
  (Ljava/util/Comparator<Lorg/apache/wicket/Component;>;)Ljava/util/Iterator<Lorg/apache/wicket/Component;>;
  (Ljava/util/Comparator<Lorg/apache/wicket/Component;>;)Ljava/util/Iterator<Lorg/apache/wicket/Component;>;
 newDequeueContext
  ()Lorg/apache/wicket/DequeueContext;
- ()Lorg/apache/wicket/DequeueContext;
+ ()L0org/apache/wicket/DequeueContext;
 onComponentTagBody
  (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
  (Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
@@ -111,7 +111,7 @@ toString
  ()L1java/lang/String; # @Inherited(org.apache.wicket.Component)
 toString
  (Z)Ljava/lang/String;
- (Z)Ljava/lang/String;
+ (Z)L1java/lang/String;
 visitChildren
  <R:Ljava/lang/Object;>(Lorg/apache/wicket/util/visit/IVisitor<Lorg/apache/wicket/Component;TR;>;)TR;
  <R:Ljava/lang/Object;>(Lorg/apache/wicket/util/visit/IVisitor<Lorg/apache/wicket/Component;TR;>;)TR;

@@ -38,7 +38,7 @@ computeIfAbsent
  (TK;L1java/util/function/Function<-TK;+T0V;>;)TV; # @Inherited(java.util.concurrent.ConcurrentMap)
 computeIfPresent
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)T0V;
 containsKey
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
@@ -59,7 +59,7 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
 firstEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
- ()Ljava/util/Map$Entry<TK;TV;>;
+ ()L0java/util/Map$Entry<TK;TV;>; # @Inherited(java.util.NavigableMap)
 firstKey
  ()TK;
  ()TK;
@@ -95,7 +95,7 @@ keySet
  ()Ljava/util/NavigableSet<TK;>;
 lastEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
- ()Ljava/util/Map$Entry<TK;TV;>;
+ ()L0java/util/Map$Entry<TK;TV;>; # @Inherited(java.util.NavigableMap)
 lastKey
  ()TK;
  ()TK;
@@ -107,28 +107,28 @@ lowerKey
  (TK;)TK;
 merge
  (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)TV;
- (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)TV;
+ (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)T0V;
 navigableKeySet
  ()Ljava/util/NavigableSet<TK;>;
  ()Ljava/util/NavigableSet<TK;>;
 pollFirstEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
- ()Ljava/util/Map$Entry<TK;TV;>;
+ ()L0java/util/Map$Entry<TK;TV;>; # @Inherited(java.util.NavigableMap)
 pollLastEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
- ()Ljava/util/Map$Entry<TK;TV;>;
+ ()L0java/util/Map$Entry<TK;TV;>; # @Inherited(java.util.NavigableMap)
 put
  (TK;TV;)TV;
  (TK;TV;)T0V; # @Inherited(java.util.AbstractMap)
 putFirst
  (TK;TV;)TV;
- (TK;TV;)TV;
+ (TK;TV;)T1V; # @Inherited(java.util.SortedMap)
 putIfAbsent
  (TK;TV;)TV;
  (TK;TV;)T0V; # @Inherited(java.util.concurrent.ConcurrentMap)
 putLast
  (TK;TV;)TV;
- (TK;TV;)TV;
+ (TK;TV;)T1V; # @Inherited(java.util.SortedMap)
 remove
  (Ljava/lang/Object;)TV;
  (L0java/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)

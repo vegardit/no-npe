@@ -27,7 +27,7 @@ addToBorder
  ([Lorg/apache/wicket/Component;)Lorg/apache/wicket/markup/html/border/Border;
 canDequeueTag
  (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/DequeueTagAction;
- (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/DequeueTagAction;
+ (Lorg/apache/wicket/markup/ComponentTag;)L0org/apache/wicket/DequeueTagAction; # @Inherited(org.apache.wicket.MarkupContainer)
 findComponentToDequeue
  (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
  (Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
@@ -42,7 +42,7 @@ getRegionMarkup
  ()Lorg/apache/wicket/markup/IMarkupFragment;
 newMarkupSourcingStrategy
  ()Lorg/apache/wicket/markup/html/panel/IMarkupSourcingStrategy;
- ()Lorg/apache/wicket/markup/html/panel/IMarkupSourcingStrategy;
+ ()L1org/apache/wicket/markup/html/panel/IMarkupSourcingStrategy; # @Overrides(org.apache.wicket.Component)
 queue
  ([Lorg/apache/wicket/Component;)Lorg/apache/wicket/markup/html/border/Border;
  ([Lorg/apache/wicket/Component;)Lorg/apache/wicket/markup/html/border/Border;
@@ -69,4 +69,4 @@ replaceInBorder
  (Lorg/apache/wicket/Component;)Lorg/apache/wicket/markup/html/border/Border;
 resolve
  (Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
- (Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)Lorg/apache/wicket/Component;
+ (Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)L0org/apache/wicket/Component;

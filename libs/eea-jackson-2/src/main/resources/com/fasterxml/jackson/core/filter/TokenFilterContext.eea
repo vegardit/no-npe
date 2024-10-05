@@ -2,7 +2,7 @@ class com/fasterxml/jackson/core/filter/TokenFilterContext
 
 createRootContext
  (Lcom/fasterxml/jackson/core/filter/TokenFilter;)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
- (Lcom/fasterxml/jackson/core/filter/TokenFilter;)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
+ (Lcom/fasterxml/jackson/core/filter/TokenFilter;)L1com/fasterxml/jackson/core/filter/TokenFilterContext;
 
 _child
  Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
@@ -34,22 +34,22 @@ closeObject
  (Lcom/fasterxml/jackson/core/JsonGenerator;)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
 createChildArrayContext
  (Lcom/fasterxml/jackson/core/filter/TokenFilter;Z)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
- (Lcom/fasterxml/jackson/core/filter/TokenFilter;Z)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
+ (Lcom/fasterxml/jackson/core/filter/TokenFilter;Z)L1com/fasterxml/jackson/core/filter/TokenFilterContext;
 createChildObjectContext
  (Lcom/fasterxml/jackson/core/filter/TokenFilter;Z)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
- (Lcom/fasterxml/jackson/core/filter/TokenFilter;Z)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
+ (Lcom/fasterxml/jackson/core/filter/TokenFilter;Z)L1com/fasterxml/jackson/core/filter/TokenFilterContext;
 ensureFieldNameWritten
  (Lcom/fasterxml/jackson/core/JsonGenerator;)V
  (Lcom/fasterxml/jackson/core/JsonGenerator;)V
 findChildOf
  (Lcom/fasterxml/jackson/core/filter/TokenFilterContext;)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
- (Lcom/fasterxml/jackson/core/filter/TokenFilterContext;)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
+ (Lcom/fasterxml/jackson/core/filter/TokenFilterContext;)L0com/fasterxml/jackson/core/filter/TokenFilterContext;
 getCurrentName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getCurrentValue
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonStreamContext)
 getFilter
  ()Lcom/fasterxml/jackson/core/filter/TokenFilter;
  ()Lcom/fasterxml/jackson/core/filter/TokenFilter;
@@ -58,7 +58,7 @@ getParent
  ()Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
 nextTokenToRead
  ()Lcom/fasterxml/jackson/core/JsonToken;
- ()Lcom/fasterxml/jackson/core/JsonToken;
+ ()L0com/fasterxml/jackson/core/JsonToken;
 reset
  (ILcom/fasterxml/jackson/core/filter/TokenFilter;Z)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;
  (ILcom/fasterxml/jackson/core/filter/TokenFilter;Z)Lcom/fasterxml/jackson/core/filter/TokenFilterContext;

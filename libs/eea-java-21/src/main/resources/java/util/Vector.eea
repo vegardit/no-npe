@@ -48,7 +48,7 @@ elementAt
  (I)TE;
 elements
  ()Ljava/util/Enumeration<TE;>;
- ()Ljava/util/Enumeration<TE;>;
+ ()L1java/util/Enumeration<TE;>;
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.util.AbstractList)
@@ -90,7 +90,7 @@ listIterator
  (I)L1java/util/ListIterator<TE;>; # @Inherited(java.util.AbstractList)
 remove
  (I)TE;
- (I)TE;
+ (I)T1E; # @Inherited(java.util.AbstractList)
 remove
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
@@ -111,7 +111,7 @@ retainAll
  (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
 set
  (ITE;)TE;
- (ITE;)TE;
+ (ITE;)T1E; # @Inherited(java.util.AbstractList)
 setElementAt
  (TE;I)V
  (TE;I)V
