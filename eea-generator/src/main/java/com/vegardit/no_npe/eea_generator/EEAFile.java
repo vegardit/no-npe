@@ -17,7 +17,6 @@ import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Deque;
 import java.util.HashSet;
 import java.util.List;
@@ -25,6 +24,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.eclipse.jdt.annotation.Nullable;
 import org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider;
@@ -107,19 +107,19 @@ public class EEAFile {
          }
 
          // apply name comment
-         if (overrideOnConflict || !name.hasComment()) {
+         if (overrideOnConflict && applyFrom.name.hasComment() || !name.hasComment()) {
             name.comment = applyFrom.name.comment;
          }
 
          // apply original signature comment
-         if (overrideOnConflict || !originalSignature.hasComment()) {
+         if (overrideOnConflict && applyFrom.originalSignature.hasComment() || !originalSignature.hasComment()) {
             originalSignature.comment = applyFrom.originalSignature.comment;
          }
 
          if (overrideOnConflict || !hasNullAnnotations()) {
-            if (applyFrom.hasNullAnnotations()) {
+            if (applyFrom.hasNullAnnotations() || applyFrom.annotatedSignature.comment.contains(MARKER_KEEP)) {
                annotatedSignature = applyFrom.annotatedSignature.clone();
-            } else if (overrideOnConflict || !annotatedSignature.hasComment()) {
+            } else if (overrideOnConflict && applyFrom.annotatedSignature.hasComment() || !annotatedSignature.hasComment()) {
                annotatedSignature.comment = applyFrom.annotatedSignature.comment;
             }
          }
@@ -195,6 +195,7 @@ public class EEAFile {
    public static final String MARKER_KEEP = "@Keep";
    public static final String MARKER_OVERRIDES = "@Overrides";
    public static final String MARKER_INHERITED = "@Inherited";
+   public static final String MARKER_POLY_NULL = "@PolyNull";
 
    /**
     * Used to match the 0/1 null annotation of types generic type variables, which is especially tricky
@@ -484,8 +485,8 @@ public class EEAFile {
       return Files.exists(rootPath.resolve(relativePath));
    }
 
-   public Collection<ClassMember> getClassMembers() {
-      return members;
+   public Stream<ClassMember> getClassMembers() {
+      return members.stream();
    }
 
    private void renderLine(final List<String> lines, final Object... newLineContent) {

@@ -4,10 +4,16 @@ STATIC_STRING # a field comment
  Ljava/lang/String; # an original signature comment
  L1java/lang/String; # an annotated signature comment
 
-name # a method comment
+name # a field comment
  Ljava/lang/String;
  L1java/lang/String;
 
 <init>
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
+keepTest1 # a metod comment
+ ()Ljava/lang/String;
+ ()Ljava/lang/String; # @Keep to test preventing generator from changing it to L0
+keepTest2
+ ()Ljava/lang/String;
+ ()Ljava/lang/String; # @Keep to test preventing removal on minimization
