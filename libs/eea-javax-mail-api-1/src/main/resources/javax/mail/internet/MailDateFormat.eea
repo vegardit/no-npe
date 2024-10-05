@@ -8,16 +8,16 @@ applyPattern
  (Ljava/lang/String;)V
 clone
  ()Ljavax/mail/internet/MailDateFormat;
- ()Ljavax/mail/internet/MailDateFormat;
+ ()L1javax/mail/internet/MailDateFormat;
 format
  (Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
  (Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
 get2DigitYearStart
  ()Ljava/util/Date;
- ()Ljava/util/Date;
+ ()L1java/util/Date; # @Inherited(java.text.SimpleDateFormat)
 parse
  (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;
- (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;
+ (Ljava/lang/String;Ljava/text/ParsePosition;)L0java/util/Date; # @Inherited(java.text.SimpleDateFormat)
 set2DigitYearStart
  (Ljava/util/Date;)V
  (Ljava/util/Date;)V

@@ -2,56 +2,56 @@ class org/eclipse/ui/XMLMemento
 
 createReadRoot
  (Ljava/io/Reader;)Lorg/eclipse/ui/XMLMemento;
- (Ljava/io/Reader;)Lorg/eclipse/ui/XMLMemento;
+ (Ljava/io/Reader;)L1org/eclipse/ui/XMLMemento;
 createReadRoot
  (Ljava/io/Reader;Ljava/lang/String;)Lorg/eclipse/ui/XMLMemento;
- (Ljava/io/Reader;Ljava/lang/String;)Lorg/eclipse/ui/XMLMemento;
+ (Ljava/io/Reader;Ljava/lang/String;)L1org/eclipse/ui/XMLMemento;
 createWriteRoot
  (Ljava/lang/String;)Lorg/eclipse/ui/XMLMemento;
- (Ljava/lang/String;)Lorg/eclipse/ui/XMLMemento;
+ (Ljava/lang/String;)L1org/eclipse/ui/XMLMemento;
 
 <init>
  (Lorg/w3c/dom/Document;Lorg/w3c/dom/Element;)V
  (Lorg/w3c/dom/Document;Lorg/w3c/dom/Element;)V
 copyChild
  (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/IMemento;
- (Lorg/eclipse/ui/IMemento;)Lorg/eclipse/ui/IMemento;
+ (Lorg/eclipse/ui/IMemento;)L1org/eclipse/ui/IMemento;
 createChild
  (Ljava/lang/String;)Lorg/eclipse/ui/IMemento;
- (Ljava/lang/String;)Lorg/eclipse/ui/IMemento;
+ (Ljava/lang/String;)L1org/eclipse/ui/IMemento; # @Inherited(org.eclipse.ui.IMemento)
 createChild
  (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/ui/IMemento;
- (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/ui/IMemento;
+ (Ljava/lang/String;Ljava/lang/String;)L1org/eclipse/ui/IMemento; # @Inherited(org.eclipse.ui.IMemento)
 getAttributeKeys
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1Ljava/lang/String;
 getBoolean
  (Ljava/lang/String;)Ljava/lang/Boolean;
- (Ljava/lang/String;)Ljava/lang/Boolean;
+ (Ljava/lang/String;)L0java/lang/Boolean;
 getChild
  (Ljava/lang/String;)Lorg/eclipse/ui/IMemento;
- (Ljava/lang/String;)Lorg/eclipse/ui/IMemento;
+ (Ljava/lang/String;)L0org/eclipse/ui/IMemento;
 getChildren
  ()[Lorg/eclipse/ui/IMemento;
- ()[Lorg/eclipse/ui/IMemento;
+ ()[1Lorg/eclipse/ui/IMemento;
 getChildren
  (Ljava/lang/String;)[Lorg/eclipse/ui/IMemento;
- (Ljava/lang/String;)[Lorg/eclipse/ui/IMemento;
+ (Ljava/lang/String;)[1Lorg/eclipse/ui/IMemento;
 getFloat
  (Ljava/lang/String;)Ljava/lang/Float;
- (Ljava/lang/String;)Ljava/lang/Float;
+ (Ljava/lang/String;)L0java/lang/Float;
 getID
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getInteger
  (Ljava/lang/String;)Ljava/lang/Integer;
- (Ljava/lang/String;)Ljava/lang/Integer;
+ (Ljava/lang/String;)L0java/lang/Integer;
 getString
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L0java/lang/String;
 getTextData
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String;
 getType
  ()Ljava/lang/String;
  ()Ljava/lang/String;

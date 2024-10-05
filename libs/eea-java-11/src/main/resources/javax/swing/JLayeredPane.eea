@@ -43,7 +43,7 @@ getComponentToLayer
  ()Ljava/util/Hashtable<Ljava/awt/Component;Ljava/lang/Integer;>;
 getComponentsInLayer
  (I)[Ljava/awt/Component;
- (I)[Ljava/awt/Component;
+ (I)[1Ljava/awt/Component;
 getIndexOf
  (Ljava/awt/Component;)I
  (Ljava/awt/Component;)I
@@ -67,7 +67,7 @@ paint
  (Ljava/awt/Graphics;)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 setLayer
  (Ljava/awt/Component;I)V
  (Ljava/awt/Component;I)V

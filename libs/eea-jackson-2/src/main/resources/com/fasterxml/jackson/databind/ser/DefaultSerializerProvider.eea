@@ -21,7 +21,7 @@ _seenObjectIds
  (Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)V
 _createObjectIdMap
  ()Ljava/util/Map<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;>;
- ()Ljava/util/Map<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;>;
+ ()L1java/util/Map<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;>;
 _serializeNull
  (Lcom/fasterxml/jackson/core/JsonGenerator;)V
  (Lcom/fasterxml/jackson/core/JsonGenerator;)V
@@ -33,16 +33,16 @@ copy
  ()Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;
 createInstance
  (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/ser/SerializerFactory;)Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;
- (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/ser/SerializerFactory;)Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;
+ (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/ser/SerializerFactory;)L1com/fasterxml/jackson/databind/ser/DefaultSerializerProvider;
 findObjectId
  (Ljava/lang/Object;Lcom/fasterxml/jackson/annotation/ObjectIdGenerator<*>;)Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;
  (Ljava/lang/Object;Lcom/fasterxml/jackson/annotation/ObjectIdGenerator<*>;)Lcom/fasterxml/jackson/databind/ser/impl/WritableObjectId;
 generateJsonSchema
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/jsonschema/JsonSchema;
- (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/jsonschema/JsonSchema;
+ (Ljava/lang/Class<*>;)L1com/fasterxml/jackson/databind/jsonschema/JsonSchema;
 getGenerator
  ()Lcom/fasterxml/jackson/core/JsonGenerator;
- ()Lcom/fasterxml/jackson/core/JsonGenerator;
+ ()L0com/fasterxml/jackson/core/JsonGenerator; # @Inherited(com.fasterxml.jackson.databind.SerializerProvider)
 hasSerializerFor
  (Ljava/lang/Class<*>;Ljava/util/concurrent/atomic/AtomicReference<Ljava/lang/Throwable;>;)Z
  (Ljava/lang/Class<*>;Ljava/util/concurrent/atomic/AtomicReference<Ljava/lang/Throwable;>;)Z
@@ -66,7 +66,7 @@ serializeValue
  (Lcom/fasterxml/jackson/core/JsonGenerator;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;)V
 serializerInstance
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;
+ (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Object;)L0com/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;
 withCaches
  (Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;
  (Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;

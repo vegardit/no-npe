@@ -2,7 +2,7 @@ class javax/swing/plaf/basic/BasicProgressBarUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 boxRect
  Ljava/awt/Rectangle;
@@ -25,7 +25,7 @@ getBaselineResizeBehavior
  (Ljavax/swing/JComponent;)Ljava/awt/Component$BaselineResizeBehavior;
 getBox
  (Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
- (Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
+ (Ljava/awt/Rectangle;)L0java/awt/Rectangle;
 getMaximumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
@@ -40,7 +40,7 @@ getPreferredInnerVertical
  ()Ljava/awt/Dimension;
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension; # @Overrides(javax.swing.plaf.ComponentUI)
 getSelectionBackground
  ()Ljava/awt/Color;
  ()Ljava/awt/Color;

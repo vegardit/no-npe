@@ -10,20 +10,20 @@ theInstance
 
 create
  (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
- (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass; # @PolyNull
 create
  (Ljava/lang/reflect/Type;)Lcom/sun/tools/xjc/model/nav/NType;
- (Ljava/lang/reflect/Type;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Ljava/lang/reflect/Type;)L1com/sun/tools/xjc/model/nav/NType;
 createParameterizedType
  (Lcom/sun/tools/xjc/model/nav/NClass;[Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
- (Lcom/sun/tools/xjc/model/nav/NClass;[Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Lcom/sun/tools/xjc/model/nav/NClass;[Lcom/sun/tools/xjc/model/nav/NType;)L1com/sun/tools/xjc/model/nav/NType;
 createParameterizedType
  (Ljava/lang/Class;[Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
- (Ljava/lang/Class;[Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Ljava/lang/Class;[Lcom/sun/tools/xjc/model/nav/NType;)L1com/sun/tools/xjc/model/nav/NType;
 
 asDecl
  (Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NClass;
- (Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Lcom/sun/tools/xjc/model/nav/NType;)L0com/sun/tools/xjc/model/nav/NClass;
 asDecl
  (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
  (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
@@ -32,10 +32,10 @@ erasure
  <T:Ljava/lang/Object;>(Lcom/sun/tools/xjc/model/nav/NType;)Lcom/sun/tools/xjc/model/nav/NType;
 getBaseClass
  (Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/nav/NType;
- (Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;)Lcom/sun/tools/xjc/model/nav/NType;
+ (Lcom/sun/tools/xjc/model/nav/NType;Lcom/sun/tools/xjc/model/nav/NClass;)L0com/sun/tools/xjc/model/nav/NType;
 getClassLocation
  (Lcom/sun/tools/xjc/model/nav/NClass;)Lorg/glassfish/jaxb/core/v2/runtime/Location;
- (Lcom/sun/tools/xjc/model/nav/NClass;)Lorg/glassfish/jaxb/core/v2/runtime/Location;
+ (Lcom/sun/tools/xjc/model/nav/NClass;)L1org/glassfish/jaxb/core/v2/runtime/Location;
 getClassName
  (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/lang/String;
  (Lcom/sun/tools/xjc/model/nav/NClass;)Ljava/lang/String;
@@ -167,7 +167,7 @@ loadObjectFactory
  (Lcom/sun/tools/xjc/model/nav/NClass;Ljava/lang/String;)Lcom/sun/tools/xjc/model/nav/NClass;
 ref
  (Lcom/sun/codemodel/JClass;)Lcom/sun/tools/xjc/model/nav/NClass;
- (Lcom/sun/codemodel/JClass;)Lcom/sun/tools/xjc/model/nav/NClass;
+ (Lcom/sun/codemodel/JClass;)Lcom/sun/tools/xjc/model/nav/NClass; # @PolyNull
 ref
  (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;
  (Ljava/lang/Class;)Lcom/sun/tools/xjc/model/nav/NClass;

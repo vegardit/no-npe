@@ -12,7 +12,7 @@ _class
  (ILjava/lang/String;)Lcom/sun/codemodel/JDefinedClass;
 _class
  (ILjava/lang/String;Lcom/sun/codemodel/ClassType;)Lcom/sun/codemodel/JDefinedClass;
- (ILjava/lang/String;Lcom/sun/codemodel/ClassType;)Lcom/sun/codemodel/JDefinedClass;
+ (ILjava/lang/String;Lcom/sun/codemodel/ClassType;)L1com/sun/codemodel/JDefinedClass;
 _class
  (ILjava/lang/String;Z)Lcom/sun/codemodel/JDefinedClass;
  (ILjava/lang/String;Z)Lcom/sun/codemodel/JDefinedClass;
@@ -54,7 +54,7 @@ _package
  ()Lcom/sun/codemodel/JPackage;
 annotate
  (Lcom/sun/codemodel/JClass;)Lcom/sun/codemodel/JAnnotationUse;
- (Lcom/sun/codemodel/JClass;)Lcom/sun/codemodel/JAnnotationUse;
+ (Lcom/sun/codemodel/JClass;)L1com/sun/codemodel/JAnnotationUse;
 annotate
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lcom/sun/codemodel/JAnnotationUse;
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lcom/sun/codemodel/JAnnotationUse;
@@ -72,7 +72,7 @@ classes
  ()Ljava/util/Iterator<Lcom/sun/codemodel/JDefinedClass;>;
 constructor
  (I)Lcom/sun/codemodel/JMethod;
- (I)Lcom/sun/codemodel/JMethod;
+ (I)L1com/sun/codemodel/JMethod;
 constructors
  ()Ljava/util/Iterator<Lcom/sun/codemodel/JMethod;>;
  ()Ljava/util/Iterator<Lcom/sun/codemodel/JMethod;>;
@@ -87,7 +87,7 @@ direct
  (Ljava/lang/String;)V
 enumConstant
  (Ljava/lang/String;)Lcom/sun/codemodel/JEnumConstant;
- (Ljava/lang/String;)Lcom/sun/codemodel/JEnumConstant;
+ (Ljava/lang/String;)L1com/sun/codemodel/JEnumConstant;
 enumConstants
  ()Ljava/util/Map<Ljava/lang/String;Lcom/sun/codemodel/JEnumConstant;>;
  ()Ljava/util/Map<Ljava/lang/String;Lcom/sun/codemodel/JEnumConstant;>;
@@ -96,7 +96,7 @@ field
  (ILcom/sun/codemodel/JType;Ljava/lang/String;)Lcom/sun/codemodel/JFieldVar;
 field
  (ILcom/sun/codemodel/JType;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JFieldVar;
- (ILcom/sun/codemodel/JType;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)Lcom/sun/codemodel/JFieldVar;
+ (ILcom/sun/codemodel/JType;Ljava/lang/String;Lcom/sun/codemodel/JExpression;)L1com/sun/codemodel/JFieldVar;
 field
  (ILjava/lang/Class<*>;Ljava/lang/String;)Lcom/sun/codemodel/JFieldVar;
  (ILjava/lang/Class<*>;Ljava/lang/String;)Lcom/sun/codemodel/JFieldVar;
@@ -123,10 +123,10 @@ getClassType
  ()Lcom/sun/codemodel/ClassType;
 getConstructor
  ([Lcom/sun/codemodel/JType;)Lcom/sun/codemodel/JMethod;
- ([Lcom/sun/codemodel/JType;)Lcom/sun/codemodel/JMethod;
+ ([Lcom/sun/codemodel/JType;)L0com/sun/codemodel/JMethod;
 getMethod
  (Ljava/lang/String;[Lcom/sun/codemodel/JType;)Lcom/sun/codemodel/JMethod;
- (Ljava/lang/String;[Lcom/sun/codemodel/JType;)Lcom/sun/codemodel/JMethod;
+ (Ljava/lang/String;[Lcom/sun/codemodel/JType;)L0com/sun/codemodel/JMethod;
 getPackage
  ()Lcom/sun/codemodel/JPackage;
  ()L1com/sun/codemodel/JPackage;
@@ -144,7 +144,7 @@ listClasses
  ()[Lcom/sun/codemodel/JClass;
 method
  (ILcom/sun/codemodel/JType;Ljava/lang/String;)Lcom/sun/codemodel/JMethod;
- (ILcom/sun/codemodel/JType;Ljava/lang/String;)Lcom/sun/codemodel/JMethod;
+ (ILcom/sun/codemodel/JType;Ljava/lang/String;)L1com/sun/codemodel/JMethod;
 method
  (ILjava/lang/Class<*>;Ljava/lang/String;)Lcom/sun/codemodel/JMethod;
  (ILjava/lang/Class<*>;Ljava/lang/String;)Lcom/sun/codemodel/JMethod;
@@ -159,7 +159,7 @@ name
  ()L1java/lang/String;
 outer
  ()Lcom/sun/codemodel/JClass;
- ()L0com/sun/codemodel/JClass;
+ ()L0com/sun/codemodel/JClass; # @Inherited(com.sun.codemodel.JClass)
 parentContainer
  ()Lcom/sun/codemodel/JClassContainer;
  ()Lcom/sun/codemodel/JClassContainer;

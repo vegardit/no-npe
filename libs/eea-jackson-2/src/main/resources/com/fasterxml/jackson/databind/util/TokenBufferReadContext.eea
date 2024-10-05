@@ -2,7 +2,7 @@ class com/fasterxml/jackson/databind/util/TokenBufferReadContext
 
 createRootContext
  (Lcom/fasterxml/jackson/core/JsonStreamContext;)Lcom/fasterxml/jackson/databind/util/TokenBufferReadContext;
- (Lcom/fasterxml/jackson/core/JsonStreamContext;)Lcom/fasterxml/jackson/databind/util/TokenBufferReadContext;
+ (Lcom/fasterxml/jackson/core/JsonStreamContext;)L1com/fasterxml/jackson/databind/util/TokenBufferReadContext;
 
 _currentName
  Ljava/lang/String;
@@ -31,16 +31,16 @@ _startLocation
  (Lcom/fasterxml/jackson/databind/util/TokenBufferReadContext;II)V
 createChildArrayContext
  ()Lcom/fasterxml/jackson/databind/util/TokenBufferReadContext;
- ()Lcom/fasterxml/jackson/databind/util/TokenBufferReadContext;
+ ()L1com/fasterxml/jackson/databind/util/TokenBufferReadContext;
 createChildObjectContext
  ()Lcom/fasterxml/jackson/databind/util/TokenBufferReadContext;
- ()Lcom/fasterxml/jackson/databind/util/TokenBufferReadContext;
+ ()L1com/fasterxml/jackson/databind/util/TokenBufferReadContext;
 getCurrentName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getCurrentValue
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonStreamContext)
 getParent
  ()Lcom/fasterxml/jackson/core/JsonStreamContext;
  ()Lcom/fasterxml/jackson/core/JsonStreamContext;

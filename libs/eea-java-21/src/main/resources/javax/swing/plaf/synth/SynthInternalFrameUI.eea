@@ -2,17 +2,17 @@ class javax/swing/plaf/synth/SynthInternalFrameUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 <init>
  (Ljavax/swing/JInternalFrame;)V
  (Ljavax/swing/JInternalFrame;)V
 createComponentListener
  ()Ljava/awt/event/ComponentListener;
- ()Ljava/awt/event/ComponentListener;
+ ()L1java/awt/event/ComponentListener; # @Inherited(javax.swing.plaf.basic.BasicInternalFrameUI)
 createNorthPane
  (Ljavax/swing/JInternalFrame;)Ljavax/swing/JComponent;
- (Ljavax/swing/JInternalFrame;)Ljavax/swing/JComponent;
+ (Ljavax/swing/JInternalFrame;)L1javax/swing/JComponent; # @Inherited(javax.swing.plaf.basic.BasicInternalFrameUI)
 getContext
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;

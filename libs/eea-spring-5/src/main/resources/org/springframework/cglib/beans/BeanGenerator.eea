@@ -15,10 +15,10 @@ addProperty
  (Ljava/lang/String;Ljava/lang/Class;)V
 create
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L1java/lang/Object;
 createClass
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L1java/lang/Object;
 firstInstance
  (Ljava/lang/Class;)Ljava/lang/Object;
  (Ljava/lang/Class;)Ljava/lang/Object;
@@ -27,10 +27,10 @@ generateClass
  (Lorg/springframework/asm/ClassVisitor;)V
 getDefaultClassLoader
  ()Ljava/lang/ClassLoader;
- ()Ljava/lang/ClassLoader;
+ ()L0java/lang/ClassLoader;
 getProtectionDomain
  ()Ljava/security/ProtectionDomain;
- ()Ljava/security/ProtectionDomain;
+ ()L0java/security/ProtectionDomain; # @Inherited(org.springframework.cglib.core.AbstractClassGenerator)
 nextInstance
  (Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Object;)Ljava/lang/Object;

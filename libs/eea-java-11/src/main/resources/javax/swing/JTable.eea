@@ -2,7 +2,7 @@ class javax/swing/JTable
 
 createScrollPaneForTable
  (Ljavax/swing/JTable;)Ljavax/swing/JScrollPane;
- (Ljavax/swing/JTable;)Ljavax/swing/JScrollPane;
+ (Ljavax/swing/JTable;)L1javax/swing/JScrollPane;
 
 cellEditor
  Ljavax/swing/table/TableCellEditor;
@@ -79,16 +79,16 @@ columnSelectionChanged
  (L1javax/swing/event/ListSelectionEvent;)V # @Inherited(javax.swing.event.TableColumnModelListener)
 createDefaultColumnModel
  ()Ljavax/swing/table/TableColumnModel;
- ()Ljavax/swing/table/TableColumnModel;
+ ()L1javax/swing/table/TableColumnModel;
 createDefaultDataModel
  ()Ljavax/swing/table/TableModel;
- ()Ljavax/swing/table/TableModel;
+ ()L1javax/swing/table/TableModel;
 createDefaultSelectionModel
  ()Ljavax/swing/ListSelectionModel;
- ()Ljavax/swing/ListSelectionModel;
+ ()L1javax/swing/ListSelectionModel;
 createDefaultTableHeader
  ()Ljavax/swing/table/JTableHeader;
- ()Ljavax/swing/table/JTableHeader;
+ ()L1javax/swing/table/JTableHeader;
 editCellAt
  (IILjava/util/EventObject;)Z
  (IILjava/util/EventObject;)Z
@@ -109,7 +109,7 @@ getCellEditor
  (II)Ljavax/swing/table/TableCellEditor;
 getCellRect
  (IIZ)Ljava/awt/Rectangle;
- (IIZ)Ljava/awt/Rectangle;
+ (IIZ)L1java/awt/Rectangle;
 getCellRenderer
  (II)Ljavax/swing/table/TableCellRenderer;
  (II)Ljavax/swing/table/TableCellRenderer;
@@ -145,7 +145,7 @@ getGridColor
  ()Ljava/awt/Color;
 getIntercellSpacing
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension;
 getModel
  ()Ljavax/swing/table/TableModel;
  ()Ljavax/swing/table/TableModel;
@@ -154,10 +154,10 @@ getPreferredScrollableViewportSize
  ()Ljava/awt/Dimension;
 getPrintable
  (Ljavax/swing/JTable$PrintMode;Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Ljava/awt/print/Printable;
- (Ljavax/swing/JTable$PrintMode;Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Ljava/awt/print/Printable;
+ (Ljavax/swing/JTable$PrintMode;Ljava/text/MessageFormat;Ljava/text/MessageFormat;)L1java/awt/print/Printable;
 getRowSorter
  ()Ljavax/swing/RowSorter<+Ljavax/swing/table/TableModel;>;
- ()Ljavax/swing/RowSorter<+Ljavax/swing/table/TableModel;>;
+ ()L0javax/swing/RowSorter<+Ljavax/swing/table/TableModel;>;
 getScrollableBlockIncrement
  (Ljava/awt/Rectangle;II)I
  (Ljava/awt/Rectangle;II)I
@@ -190,13 +190,13 @@ getUI
  ()Ljavax/swing/plaf/TableUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 getValueAt
  (II)Ljava/lang/Object;
  (II)Ljava/lang/Object;
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 prepareEditor
  (Ljavax/swing/table/TableCellEditor;II)Ljava/awt/Component;
  (Ljavax/swing/table/TableCellEditor;II)Ljava/awt/Component;

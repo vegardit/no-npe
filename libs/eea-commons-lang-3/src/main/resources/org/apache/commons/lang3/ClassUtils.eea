@@ -12,7 +12,7 @@ comparator
  ()Ljava/util/Comparator<Ljava/lang/Class<*>;>;
 convertClassNamesToClasses
  (Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/Class<*>;>;
- (Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/Class<*>;>;
+ (Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/Class<*>;>; # @PolyNull
 convertClassesToClassNames
  (Ljava/util/List<Ljava/lang/Class<*>;>;)Ljava/util/List<Ljava/lang/String;>;
  (Ljava/util/List<Ljava/lang/Class<*>;>;)Ljava/util/List<Ljava/lang/String;>;
@@ -24,10 +24,10 @@ getAbbreviatedName
  (Ljava/lang/String;I)Ljava/lang/String;
 getAllInterfaces
  (Ljava/lang/Class<*>;)Ljava/util/List<Ljava/lang/Class<*>;>;
- (Ljava/lang/Class<*>;)Ljava/util/List<Ljava/lang/Class<*>;>;
+ (Ljava/lang/Class<*>;)Ljava/util/List<Ljava/lang/Class<*>;>; # @PolyNull
 getAllSuperclasses
  (Ljava/lang/Class<*>;)Ljava/util/List<Ljava/lang/Class<*>;>;
- (Ljava/lang/Class<*>;)Ljava/util/List<Ljava/lang/Class<*>;>;
+ (Ljava/lang/Class<*>;)Ljava/util/List<Ljava/lang/Class<*>;>; # @PolyNull
 getCanonicalName
  (Ljava/lang/Class<*>;)Ljava/lang/String;
  (Ljava/lang/Class<*>;)Ljava/lang/String;
@@ -105,7 +105,7 @@ getShortClassName
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 getShortClassName
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
 getSimpleName
  (Ljava/lang/Class<*>;)Ljava/lang/String;
  (Ljava/lang/Class<*>;)Ljava/lang/String;

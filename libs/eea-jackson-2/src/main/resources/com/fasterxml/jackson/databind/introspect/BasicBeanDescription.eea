@@ -2,13 +2,13 @@ class com/fasterxml/jackson/databind/introspect/BasicBeanDescription
 
 forDeserialization
  (Lcom/fasterxml/jackson/databind/introspect/POJOPropertiesCollector;)Lcom/fasterxml/jackson/databind/introspect/BasicBeanDescription;
- (Lcom/fasterxml/jackson/databind/introspect/POJOPropertiesCollector;)Lcom/fasterxml/jackson/databind/introspect/BasicBeanDescription;
+ (Lcom/fasterxml/jackson/databind/introspect/POJOPropertiesCollector;)L1com/fasterxml/jackson/databind/introspect/BasicBeanDescription;
 forOtherUse
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Lcom/fasterxml/jackson/databind/introspect/BasicBeanDescription;
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Lcom/fasterxml/jackson/databind/introspect/BasicBeanDescription;
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)L1com/fasterxml/jackson/databind/introspect/BasicBeanDescription;
 forSerialization
  (Lcom/fasterxml/jackson/databind/introspect/POJOPropertiesCollector;)Lcom/fasterxml/jackson/databind/introspect/BasicBeanDescription;
- (Lcom/fasterxml/jackson/databind/introspect/POJOPropertiesCollector;)Lcom/fasterxml/jackson/databind/introspect/BasicBeanDescription;
+ (Lcom/fasterxml/jackson/databind/introspect/POJOPropertiesCollector;)L1com/fasterxml/jackson/databind/introspect/BasicBeanDescription;
 
 _annotationIntrospector
  Lcom/fasterxml/jackson/databind/AnnotationIntrospector;
@@ -43,13 +43,13 @@ _properties
  (Lcom/fasterxml/jackson/databind/introspect/POJOPropertiesCollector;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)V
 _createConverter
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;Ljava/lang/Object;>;
- (Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;Ljava/lang/Object;>;
+ (Ljava/lang/Object;)L0com/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;Ljava/lang/Object;>;
 _findCreatorPropertyName
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedParameter;)Lcom/fasterxml/jackson/databind/PropertyName;
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedParameter;)Lcom/fasterxml/jackson/databind/PropertyName;
 _findPropertyFields
  (Ljava/util/Collection<Ljava/lang/String;>;Z)Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;>;
- (Ljava/util/Collection<Ljava/lang/String;>;Z)Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;>;
+ (Ljava/util/Collection<Ljava/lang/String;>;Z)L1java/util/LinkedHashMap<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/AnnotatedField;>;
 _properties
  ()Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;>;
  ()Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;>;
@@ -61,19 +61,19 @@ bindingsForBeanType
  ()Lcom/fasterxml/jackson/databind/type/TypeBindings;
 findAnyGetter
  ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
- ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
+ ()L0com/fasterxml/jackson/databind/introspect/AnnotatedMember;
 findAnySetterAccessor
  ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
- ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
+ ()L0com/fasterxml/jackson/databind/introspect/AnnotatedMember;
 findBackReferenceProperties
  ()Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;>;
- ()Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;>;
+ ()L0java/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;>;
 findBackReferences
  ()Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;>;
- ()Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;>;
+ ()L1java/util/List<Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;>;
 findClassDescription
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(com.fasterxml.jackson.databind.BeanDescription)
 findDefaultConstructor
  ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedConstructor;
  ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedConstructor;
@@ -82,22 +82,22 @@ findDefaultViews
  ()[Ljava/lang/Class<*>;
 findDeserializationConverter
  ()Lcom/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;Ljava/lang/Object;>;
- ()Lcom/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;Ljava/lang/Object;>;
+ ()L0com/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;Ljava/lang/Object;>;
 findExpectedFormat
  ()Lcom/fasterxml/jackson/annotation/JsonFormat$Value;
  ()Lcom/fasterxml/jackson/annotation/JsonFormat$Value;
 findFactoryMethod
  ([Ljava/lang/Class<*>;)Ljava/lang/reflect/Method;
- ([Ljava/lang/Class<*>;)Ljava/lang/reflect/Method;
+ ([Ljava/lang/Class<*>;)L0java/lang/reflect/Method;
 findFactoryMethodMetadata
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Lcom/fasterxml/jackson/databind/introspect/AnnotatedAndMetadata<Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;>;
- (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Lcom/fasterxml/jackson/databind/introspect/AnnotatedAndMetadata<Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;>;
+ (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)L0com/fasterxml/jackson/databind/introspect/AnnotatedAndMetadata<Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;>;
 findInjectables
  ()Ljava/util/Map<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;>;
  ()Ljava/util/Map<Ljava/lang/Object;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;>;
 findJsonKeyAccessor
  ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
- ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
+ ()L0com/fasterxml/jackson/databind/introspect/AnnotatedMember; # @Inherited(com.fasterxml.jackson.databind.BeanDescription)
 findJsonValueAccessor
  ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
  ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
@@ -118,16 +118,16 @@ findProperties
  ()Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;>;
 findProperty
  (Lcom/fasterxml/jackson/databind/PropertyName;)Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;
- (Lcom/fasterxml/jackson/databind/PropertyName;)Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;
+ (Lcom/fasterxml/jackson/databind/PropertyName;)L0com/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;
 findPropertyInclusion
  (Lcom/fasterxml/jackson/annotation/JsonInclude$Value;)Lcom/fasterxml/jackson/annotation/JsonInclude$Value;
  (Lcom/fasterxml/jackson/annotation/JsonInclude$Value;)Lcom/fasterxml/jackson/annotation/JsonInclude$Value;
 findSerializationConverter
  ()Lcom/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;Ljava/lang/Object;>;
- ()Lcom/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;Ljava/lang/Object;>;
+ ()L0com/fasterxml/jackson/databind/util/Converter<Ljava/lang/Object;Ljava/lang/Object;>;
 findSingleArgConstructor
  ([Ljava/lang/Class<*>;)Ljava/lang/reflect/Constructor<*>;
- ([Ljava/lang/Class<*>;)Ljava/lang/reflect/Constructor<*>;
+ ([Ljava/lang/Class<*>;)L0java/lang/reflect/Constructor<*>;
 getClassAnnotations
  ()Lcom/fasterxml/jackson/databind/util/Annotations;
  ()Lcom/fasterxml/jackson/databind/util/Annotations;
@@ -157,7 +157,7 @@ hasProperty
  (Lcom/fasterxml/jackson/databind/PropertyName;)Z
 instantiateBean
  (Z)Ljava/lang/Object;
- (Z)Ljava/lang/Object;
+ (Z)L0java/lang/Object;
 isFactoryMethod
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Z
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Z

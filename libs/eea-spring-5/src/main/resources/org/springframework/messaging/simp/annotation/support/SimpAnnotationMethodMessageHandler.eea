@@ -9,7 +9,7 @@ super org/springframework/messaging/handler/invocation/AbstractMethodMessageHand
  (Lorg/springframework/messaging/SubscribableChannel;Lorg/springframework/messaging/MessageChannel;Lorg/springframework/messaging/simp/SimpMessageSendingOperations;)V
 createExceptionHandlerMethodResolverFor
  (Ljava/lang/Class<*>;)Lorg/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver;
- (Ljava/lang/Class<*>;)Lorg/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver;
+ (Ljava/lang/Class<*>;)L1org/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getConversionService
  ()Lorg/springframework/core/convert/ConversionService;
  ()Lorg/springframework/core/convert/ConversionService;
@@ -18,7 +18,7 @@ getDestination
  (Lorg/springframework/messaging/Message<*>;)L0java/lang/String; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getDirectLookupDestinations
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;)Ljava/util/Set<Ljava/lang/String;>;
- (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;)L1java/util/Set<Ljava/lang/String;>;
 getHandlerMethodLogger
  ()Lorg/apache/commons/logging/Log;
  ()L0org/apache/commons/logging/Log; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
@@ -54,10 +54,10 @@ handleMatch
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V
 initArgumentResolvers
  ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;
- ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;
+ ()L1java/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;
 initReturnValueHandlers
  ()Ljava/util/List<+Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;
- ()Ljava/util/List<+Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;
+ ()L1java/util/List<+Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;
 isHandler
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z

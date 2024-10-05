@@ -6,7 +6,7 @@ DEFAULT_CRYPT_METHOD
 
 randomSalt
  ()[B
- ()[B
+ ()[1B
 
 <init>
  (Ljava/lang/String;[BI)V
@@ -16,13 +16,13 @@ randomSalt
  ([BI)V
 createCipher
  (Ljavax/crypto/SecretKey;Ljava/security/spec/AlgorithmParameterSpec;I)Ljavax/crypto/Cipher;
- (Ljavax/crypto/SecretKey;Ljava/security/spec/AlgorithmParameterSpec;I)Ljavax/crypto/Cipher;
+ (Ljavax/crypto/SecretKey;Ljava/security/spec/AlgorithmParameterSpec;I)L1javax/crypto/Cipher;
 createKeySpec
  ()Ljava/security/spec/KeySpec;
- ()Ljava/security/spec/KeySpec;
+ ()L1java/security/spec/KeySpec;
 createParameterSpec
  ()Ljava/security/spec/AlgorithmParameterSpec;
- ()Ljava/security/spec/AlgorithmParameterSpec;
+ ()L1java/security/spec/AlgorithmParameterSpec;
 crypt
  ([BI)[B
  ([BI)[B

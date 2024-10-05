@@ -2,14 +2,14 @@ class javax/swing/plaf/synth/SynthSliderUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 <init>
  (Ljavax/swing/JSlider;)V
  (Ljavax/swing/JSlider;)V
 createTrackListener
  (Ljavax/swing/JSlider;)Ljavax/swing/plaf/basic/BasicSliderUI$TrackListener;
- (Ljavax/swing/JSlider;)Ljavax/swing/plaf/basic/BasicSliderUI$TrackListener;
+ (Ljavax/swing/JSlider;)L1javax/swing/plaf/basic/BasicSliderUI$TrackListener; # @Inherited(javax.swing.plaf.basic.BasicSliderUI)
 getBaseline
  (Ljavax/swing/JComponent;II)I
  (Ljavax/swing/JComponent;II)I
@@ -18,13 +18,13 @@ getContext
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;
 getMinimumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension; # @Inherited(javax.swing.plaf.basic.BasicSliderUI)
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension; # @Inherited(javax.swing.plaf.basic.BasicSliderUI)
 getThumbSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension; # @Inherited(javax.swing.plaf.basic.BasicSliderUI)
 installDefaults
  (Ljavax/swing/JSlider;)V
  (Ljavax/swing/JSlider;)V

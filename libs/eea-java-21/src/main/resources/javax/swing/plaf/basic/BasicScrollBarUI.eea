@@ -2,7 +2,7 @@ class javax/swing/plaf/basic/BasicScrollBarUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 buttonListener
  Ljavax/swing/plaf/basic/BasicScrollBarUI$ArrowButtonListener;
@@ -67,28 +67,28 @@ addLayoutComponent
  (Ljava/lang/String;Ljava/awt/Component;)V
 createArrowButtonListener
  ()Ljavax/swing/plaf/basic/BasicScrollBarUI$ArrowButtonListener;
- ()Ljavax/swing/plaf/basic/BasicScrollBarUI$ArrowButtonListener;
+ ()L1javax/swing/plaf/basic/BasicScrollBarUI$ArrowButtonListener;
 createDecreaseButton
  (I)Ljavax/swing/JButton;
- (I)Ljavax/swing/JButton;
+ (I)L1javax/swing/JButton;
 createIncreaseButton
  (I)Ljavax/swing/JButton;
- (I)Ljavax/swing/JButton;
+ (I)L1javax/swing/JButton;
 createModelListener
  ()Ljavax/swing/plaf/basic/BasicScrollBarUI$ModelListener;
- ()Ljavax/swing/plaf/basic/BasicScrollBarUI$ModelListener;
+ ()L1javax/swing/plaf/basic/BasicScrollBarUI$ModelListener;
 createPropertyChangeListener
  ()Ljava/beans/PropertyChangeListener;
- ()Ljava/beans/PropertyChangeListener;
+ ()L1java/beans/PropertyChangeListener;
 createScrollListener
  ()Ljavax/swing/plaf/basic/BasicScrollBarUI$ScrollListener;
- ()Ljavax/swing/plaf/basic/BasicScrollBarUI$ScrollListener;
+ ()L1javax/swing/plaf/basic/BasicScrollBarUI$ScrollListener;
 createTrackListener
  ()Ljavax/swing/plaf/basic/BasicScrollBarUI$TrackListener;
- ()Ljavax/swing/plaf/basic/BasicScrollBarUI$TrackListener;
+ ()L1javax/swing/plaf/basic/BasicScrollBarUI$TrackListener;
 getMaximumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension;
 getMaximumThumbSize
  ()Ljava/awt/Dimension;
  ()Ljava/awt/Dimension;
@@ -97,7 +97,7 @@ getMinimumThumbSize
  ()Ljava/awt/Dimension;
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension; # @Overrides(javax.swing.plaf.ComponentUI)
 getThumbBounds
  ()Ljava/awt/Rectangle;
  ()Ljava/awt/Rectangle;

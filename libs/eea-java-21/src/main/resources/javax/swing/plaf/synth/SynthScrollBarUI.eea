@@ -2,14 +2,14 @@ class javax/swing/plaf/synth/SynthScrollBarUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 createDecreaseButton
  (I)Ljavax/swing/JButton;
- (I)Ljavax/swing/JButton;
+ (I)L1javax/swing/JButton; # @Inherited(javax.swing.plaf.basic.BasicScrollBarUI)
 createIncreaseButton
  (I)Ljavax/swing/JButton;
- (I)Ljavax/swing/JButton;
+ (I)L1javax/swing/JButton; # @Inherited(javax.swing.plaf.basic.BasicScrollBarUI)
 getContext
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;
@@ -18,7 +18,7 @@ getMinimumThumbSize
  ()Ljava/awt/Dimension;
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension; # @Inherited(javax.swing.plaf.basic.BasicScrollBarUI)
 paint
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V

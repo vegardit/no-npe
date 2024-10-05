@@ -5,7 +5,7 @@ addCustomizer
  (Lorg/springframework/cglib/core/KeyFactoryCustomizer;)V
 create
  ()Lorg/springframework/cglib/core/KeyFactory;
- ()Lorg/springframework/cglib/core/KeyFactory;
+ ()L1org/springframework/cglib/core/KeyFactory;
 firstInstance
  (Ljava/lang/Class;)Ljava/lang/Object;
  (Ljava/lang/Class;)Ljava/lang/Object;
@@ -20,7 +20,7 @@ getDefaultClassLoader
  ()Ljava/lang/ClassLoader;
 getProtectionDomain
  ()Ljava/security/ProtectionDomain;
- ()Ljava/security/ProtectionDomain;
+ ()L0java/security/ProtectionDomain; # @Inherited(org.springframework.cglib.core.AbstractClassGenerator)
 nextInstance
  (Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Object;)Ljava/lang/Object;

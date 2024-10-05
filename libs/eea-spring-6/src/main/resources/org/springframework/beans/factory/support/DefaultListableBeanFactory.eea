@@ -32,7 +32,7 @@ doResolveDependency
  (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;Lorg/springframework/beans/TypeConverter;)L0java/lang/Object;
 findAllAnnotationsOnBean
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;Z)Ljava/util/Set<TA;>;
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;Z)Ljava/util/Set<TA;>;
+ <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;Z)L1java/util/Set<TA;>;
 findAnnotationOnBean
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;)TA;
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;)T0A; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
@@ -74,7 +74,7 @@ getBeanNamesForType
  (Lorg/springframework/core/ResolvableType;ZZ)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanNamesIterator
  ()Ljava/util/Iterator<Ljava/lang/String;>;
- ()Ljava/util/Iterator<Ljava/lang/String;>;
+ ()L1java/util/Iterator<Ljava/lang/String;>;
 getBeanProvider
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
@@ -86,7 +86,7 @@ getBeanProvider
  <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
 getBeanProvider
  <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;Z)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
- <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;Z)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;Z)L1org/springframework/beans/factory/ObjectProvider<TT;>;
 getBeansOfType
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/util/Map<Ljava/lang/String;TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1java/util/Map<L1java/lang/String;TT;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)

@@ -8,7 +8,7 @@ class org/eclipse/ui/console/TextConsoleViewer
  (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/console/TextConsole;Lorg/eclipse/ui/console/IScrollLockStateProvider;)V
 createDocumentAdapter
  ()Lorg/eclipse/jface/text/IDocumentAdapter;
- ()Lorg/eclipse/jface/text/IDocumentAdapter;
+ ()L1org/eclipse/jface/text/IDocumentAdapter; # @Inherited(org.eclipse.jface.text.TextViewer)
 getHandCursor
  ()Lorg/eclipse/swt/graphics/Cursor;
  ()Lorg/eclipse/swt/graphics/Cursor;
@@ -17,7 +17,7 @@ getHyperlink
  ()Lorg/eclipse/ui/console/IHyperlink;
 getHyperlink
  (I)Lorg/eclipse/ui/console/IHyperlink;
- (I)Lorg/eclipse/ui/console/IHyperlink;
+ (I)L0org/eclipse/ui/console/IHyperlink;
 getTextCursor
  ()Lorg/eclipse/swt/graphics/Cursor;
  ()Lorg/eclipse/swt/graphics/Cursor;

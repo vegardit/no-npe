@@ -2,7 +2,7 @@ class com/sun/tools/xjc/generator/bean/BeanGenerator
 
 generate
  (Lcom/sun/tools/xjc/model/Model;Lcom/sun/tools/xjc/ErrorReceiver;)Lcom/sun/tools/xjc/outline/Outline;
- (Lcom/sun/tools/xjc/model/Model;Lcom/sun/tools/xjc/ErrorReceiver;)Lcom/sun/tools/xjc/outline/Outline;
+ (Lcom/sun/tools/xjc/model/Model;Lcom/sun/tools/xjc/ErrorReceiver;)L0com/sun/tools/xjc/outline/Outline;
 
 addRuntime
  (Ljava/lang/Class<*>;)Lcom/sun/codemodel/JClass;
@@ -33,7 +33,7 @@ getContainer
  (Lcom/sun/tools/xjc/model/CClassInfoParent;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JClassContainer;
 getElement
  (Lcom/sun/tools/xjc/model/CElementInfo;)Lcom/sun/tools/xjc/outline/ElementOutline;
- (Lcom/sun/tools/xjc/model/CElementInfo;)Lcom/sun/tools/xjc/outline/ElementOutline;
+ (Lcom/sun/tools/xjc/model/CElementInfo;)L1com/sun/tools/xjc/outline/ElementOutline;
 getEnum
  (Lcom/sun/tools/xjc/model/CEnumLeafInfo;)Lcom/sun/tools/xjc/outline/EnumOutline;
  (Lcom/sun/tools/xjc/model/CEnumLeafInfo;)Lcom/sun/tools/xjc/outline/EnumOutline;
@@ -51,10 +51,10 @@ getModel
  ()L1com/sun/tools/xjc/model/Model; # @Inherited(com.sun.tools.xjc.outline.Outline)
 getPackageContext
  (Lcom/sun/codemodel/JPackage;)Lcom/sun/tools/xjc/generator/bean/PackageOutlineImpl;
- (Lcom/sun/codemodel/JPackage;)Lcom/sun/tools/xjc/generator/bean/PackageOutlineImpl;
+ (Lcom/sun/codemodel/JPackage;)L1com/sun/tools/xjc/generator/bean/PackageOutlineImpl;
 getUsedPackages
  (Lcom/sun/tools/xjc/outline/Aspect;)[Lcom/sun/codemodel/JPackage;
  (Lcom/sun/tools/xjc/outline/Aspect;)[Lcom/sun/codemodel/JPackage;
 resolve
  (Lcom/sun/tools/xjc/model/CTypeRef;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JType;
- (Lcom/sun/tools/xjc/model/CTypeRef;Lcom/sun/tools/xjc/outline/Aspect;)Lcom/sun/codemodel/JType;
+ (Lcom/sun/tools/xjc/model/CTypeRef;Lcom/sun/tools/xjc/outline/Aspect;)L0com/sun/codemodel/JType;

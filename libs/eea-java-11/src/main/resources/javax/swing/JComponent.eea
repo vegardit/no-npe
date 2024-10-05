@@ -32,7 +32,7 @@ computeVisibleRect
  (Ljava/awt/Rectangle;)V
 createToolTip
  ()Ljavax/swing/JToolTip;
- ()Ljavax/swing/JToolTip;
+ ()L1javax/swing/JToolTip;
 firePropertyChange
  (Ljava/lang/String;CC)V
  (Ljava/lang/String;CC)V
@@ -47,7 +47,7 @@ fireVetoableChange
  (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 getActionForKeyStroke
  (Ljavax/swing/KeyStroke;)Ljava/awt/event/ActionListener;
- (Ljavax/swing/KeyStroke;)Ljava/awt/event/ActionListener;
+ (Ljavax/swing/KeyStroke;)L0java/awt/event/ActionListener;
 getActionMap
  ()Ljavax/swing/ActionMap;
  ()Ljavax/swing/ActionMap;
@@ -65,13 +65,13 @@ getBounds
  (Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
 getClientProperty
  (Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)L0java/lang/Object;
 getComponentGraphics
  (Ljava/awt/Graphics;)Ljava/awt/Graphics;
- (Ljava/awt/Graphics;)Ljava/awt/Graphics;
+ (Ljava/awt/Graphics;)L1java/awt/Graphics;
 getComponentPopupMenu
  ()Ljavax/swing/JPopupMenu;
- ()Ljavax/swing/JPopupMenu;
+ ()L0javax/swing/JPopupMenu;
 getConditionForKeyStroke
  (Ljavax/swing/KeyStroke;)I
  (Ljavax/swing/KeyStroke;)I
@@ -80,7 +80,7 @@ getFontMetrics
  (Ljava/awt/Font;)Ljava/awt/FontMetrics;
 getGraphics
  ()Ljava/awt/Graphics;
- ()Ljava/awt/Graphics;
+ ()L0java/awt/Graphics; # @Inherited(java.awt.Component)
 getInputMap
  ()Ljavax/swing/InputMap;
  ()Ljavax/swing/InputMap;
@@ -113,13 +113,13 @@ getNextFocusableComponent
  ()Ljava/awt/Component;
 getPopupLocation
  (Ljava/awt/event/MouseEvent;)Ljava/awt/Point;
- (Ljava/awt/event/MouseEvent;)Ljava/awt/Point;
+ (Ljava/awt/event/MouseEvent;)L0java/awt/Point;
 getPreferredSize
  ()Ljava/awt/Dimension;
  ()Ljava/awt/Dimension;
 getRegisteredKeyStrokes
  ()[Ljavax/swing/KeyStroke;
- ()[Ljavax/swing/KeyStroke;
+ ()[1Ljavax/swing/KeyStroke;
 getRootPane
  ()Ljavax/swing/JRootPane;
  ()Ljavax/swing/JRootPane;
@@ -128,7 +128,7 @@ getSize
  (Ljava/awt/Dimension;)Ljava/awt/Dimension;
 getToolTipLocation
  (Ljava/awt/event/MouseEvent;)Ljava/awt/Point;
- (Ljava/awt/event/MouseEvent;)Ljava/awt/Point;
+ (Ljava/awt/event/MouseEvent;)L0java/awt/Point;
 getToolTipText
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -137,7 +137,7 @@ getToolTipText
  (L1java/awt/event/MouseEvent;)Ljava/lang/String;
 getTopLevelAncestor
  ()Ljava/awt/Container;
- ()Ljava/awt/Container;
+ ()L0java/awt/Container;
 getTransferHandler
  ()Ljavax/swing/TransferHandler;
  ()Ljavax/swing/TransferHandler;
@@ -146,13 +146,13 @@ getUI
  ()Ljavax/swing/plaf/ComponentUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getVetoableChangeListeners
  ()[Ljava/beans/VetoableChangeListener;
  ()[Ljava/beans/VetoableChangeListener;
 getVisibleRect
  ()Ljava/awt/Rectangle;
- ()Ljava/awt/Rectangle;
+ ()L1java/awt/Rectangle;
 paint
  (Ljava/awt/Graphics;)V
  (Ljava/awt/Graphics;)V
@@ -170,7 +170,7 @@ paintImmediately
  (Ljava/awt/Rectangle;)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.awt.Container)
 print
  (Ljava/awt/Graphics;)V
  (Ljava/awt/Graphics;)V

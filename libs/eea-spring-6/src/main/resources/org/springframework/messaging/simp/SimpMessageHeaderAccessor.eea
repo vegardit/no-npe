@@ -36,10 +36,10 @@ USER_HEADER
 
 create
  ()Lorg/springframework/messaging/simp/SimpMessageHeaderAccessor;
- ()Lorg/springframework/messaging/simp/SimpMessageHeaderAccessor;
+ ()L1org/springframework/messaging/simp/SimpMessageHeaderAccessor;
 create
  (Lorg/springframework/messaging/simp/SimpMessageType;)Lorg/springframework/messaging/simp/SimpMessageHeaderAccessor;
- (Lorg/springframework/messaging/simp/SimpMessageType;)Lorg/springframework/messaging/simp/SimpMessageHeaderAccessor;
+ (Lorg/springframework/messaging/simp/SimpMessageType;)L1org/springframework/messaging/simp/SimpMessageHeaderAccessor;
 getDestination
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/String;
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/lang/String;
@@ -63,7 +63,7 @@ getUser
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/security/Principal;
 wrap
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/simp/SimpMessageHeaderAccessor;
- (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/simp/SimpMessageHeaderAccessor;
+ (Lorg/springframework/messaging/Message<*>;)L1org/springframework/messaging/simp/SimpMessageHeaderAccessor;
 
 <init>
  (Lorg/springframework/messaging/Message<*>;)V
@@ -73,13 +73,13 @@ wrap
  (Lorg/springframework/messaging/simp/SimpMessageType;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)V
 createAccessor
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/support/MessageHeaderAccessor;
- (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/support/MessageHeaderAccessor;
+ (Lorg/springframework/messaging/Message<*>;)L1org/springframework/messaging/support/MessageHeaderAccessor; # @Inherited(org.springframework.messaging.support.MessageHeaderAccessor)
 getDestination
  ()Ljava/lang/String;
  ()L0java/lang/String;
 getDetailedLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L1java/lang/String; # @Inherited(org.springframework.messaging.support.MessageHeaderAccessor)
 getMessageType
  ()Lorg/springframework/messaging/simp/SimpMessageType;
  ()L0org/springframework/messaging/simp/SimpMessageType;
@@ -91,7 +91,7 @@ getSessionId
  ()L0java/lang/String;
 getShortLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L1java/lang/String; # @Inherited(org.springframework.messaging.support.MessageHeaderAccessor)
 getSubscriptionId
  ()Ljava/lang/String;
  ()L0java/lang/String;

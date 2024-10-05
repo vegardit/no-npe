@@ -2,7 +2,7 @@ class com/fasterxml/jackson/databind/ObjectMapper$DefaultTypeResolverBuilder
 
 construct
  (Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTyping;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTypeResolverBuilder;
- (Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTyping;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTypeResolverBuilder;
+ (Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTyping;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)L1com/fasterxml/jackson/databind/ObjectMapper$DefaultTypeResolverBuilder;
 
 _appliesFor
  Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTyping;
@@ -22,10 +22,10 @@ _subtypeValidator
  (Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTyping;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)V
 buildTypeDeserializer
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;
- (Lcom/fasterxml/jackson/databind/DeserializationConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)L0com/fasterxml/jackson/databind/jsontype/TypeDeserializer; # @Inherited(com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder)
 buildTypeSerializer
  (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;
- (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;
+ (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/JavaType;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)L0com/fasterxml/jackson/databind/jsontype/TypeSerializer; # @Inherited(com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder)
 subTypeValidator
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;)Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;)Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;

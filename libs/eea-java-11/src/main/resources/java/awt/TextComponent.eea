@@ -12,10 +12,10 @@ getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
 getBackground
  ()Ljava/awt/Color;
- ()Ljava/awt/Color;
+ ()L0java/awt/Color; # @Inherited(java.awt.Component)
 getInputMethodRequests
  ()Ljava/awt/im/InputMethodRequests;
- ()Ljava/awt/im/InputMethodRequests;
+ ()L0java/awt/im/InputMethodRequests; # @Inherited(java.awt.Component)
 getListeners
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)[TT;
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)[TT;
@@ -30,7 +30,7 @@ getTextListeners
  ()[Ljava/awt/event/TextListener;
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.awt.Component)
 processEvent
  (Ljava/awt/AWTEvent;)V
  (Ljava/awt/AWTEvent;)V

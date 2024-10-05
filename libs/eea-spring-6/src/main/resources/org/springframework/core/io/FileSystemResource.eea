@@ -14,7 +14,7 @@ class org/springframework/core/io/FileSystemResource
  (Ljava/nio/file/Path;)V
 createRelative
  (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
- (Ljava/lang/String;)Lorg/springframework/core/io/Resource;
+ (Ljava/lang/String;)L1org/springframework/core/io/Resource; # @Inherited(org.springframework.core.io.AbstractResource)
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(org.springframework.core.io.AbstractResource)
@@ -26,7 +26,7 @@ getContentAsString
  (Ljava/nio/charset/Charset;)Ljava/lang/String;
 getDescription
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getFile
  ()Ljava/io/File;
  ()Ljava/io/File;

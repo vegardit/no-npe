@@ -18,7 +18,7 @@ vertThumbIcon
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 SLIDER_FILL
  Ljava/lang/String;
@@ -26,10 +26,10 @@ SLIDER_FILL
 
 createPropertyChangeListener
  (Ljavax/swing/JSlider;)Ljava/beans/PropertyChangeListener;
- (Ljavax/swing/JSlider;)Ljava/beans/PropertyChangeListener;
+ (Ljavax/swing/JSlider;)L1java/beans/PropertyChangeListener; # @Inherited(javax.swing.plaf.basic.BasicSliderUI)
 getThumbSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension; # @Inherited(javax.swing.plaf.basic.BasicSliderUI)
 installUI
  (Ljavax/swing/JComponent;)V
  (Ljavax/swing/JComponent;)V
