@@ -10,16 +10,27 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 import io.github.classgraph.AnnotationInfoList;
+import io.github.classgraph.ArrayTypeSignature;
+import io.github.classgraph.BaseTypeSignature;
 import io.github.classgraph.ClassInfo;
+import io.github.classgraph.ClassRefTypeSignature;
 import io.github.classgraph.FieldInfo;
 import io.github.classgraph.FieldInfoList;
 import io.github.classgraph.MethodInfo;
 import io.github.classgraph.MethodInfoList;
+import io.github.classgraph.TypeSignature;
 
 /**
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
  */
 public final class ClassGraphUtils {
+
+   public enum MethodReturnKind {
+      ARRAY,
+      PRIMITIVE,
+      OBJECT,
+      VOID
+   }
 
    private static final Set<String> NULLABLE_ANNOTATIONS = Set.of( //
       "android.annotation.Nullable", //
@@ -160,6 +171,26 @@ public final class ClassGraphUtils {
       return getFilteredAndSortedMethods(methods, false);
    }
 
+   /**
+    * Determines the return kind of the given method.
+    * This method distinguishes between methods that return objects, arrays, primitive types, or void.
+    *
+    * @param methodInfo the method whose return type is to be checked
+    * @return MethodReturnKind representing if the method returns an object, array, primitive, or void
+    */
+   public static MethodReturnKind getMethodReturnKind(final MethodInfo methodInfo) {
+      final TypeSignature returnType = methodInfo.getTypeDescriptor().getResultType();
+      if (returnType == null)
+         return MethodReturnKind.VOID;
+      if (returnType instanceof BaseTypeSignature)
+         return MethodReturnKind.PRIMITIVE;
+      if (returnType instanceof ArrayTypeSignature)
+         return MethodReturnKind.ARRAY;
+      if (returnType instanceof ClassRefTypeSignature)
+         return MethodReturnKind.OBJECT;
+      throw new IllegalStateException("Unknown method return kind: " + returnType);
+   }
+
    public static SortedSet<FieldInfo> getStaticFields(final FieldInfoList fields) {
       return getFilteredAndSortedFields(fields, true);
    }
@@ -176,12 +207,12 @@ public final class ClassGraphUtils {
       return annos.stream().anyMatch(a -> NULLABLE_ANNOTATIONS.contains(a.getName()));
    }
 
-   public static boolean hasSuperclass(final ClassInfo classInfo, final String superClassName) {
-      return !classInfo.getSuperclasses().filter(c -> c.getName().equals(superClassName)).isEmpty();
-   }
-
    public static boolean hasPackageVisibility(final ClassInfo classInfo) {
       return !classInfo.isPublic() && !classInfo.isPrivate() && !classInfo.isProtected();
+   }
+
+   public static boolean hasSuperclass(final ClassInfo classInfo, final String superClassName) {
+      return !classInfo.getSuperclasses().filter(c -> c.getName().equals(superClassName)).isEmpty();
    }
 
    public static boolean isStaticField(final ClassInfo classInfo, final String fieldName) {
