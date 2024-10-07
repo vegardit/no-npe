@@ -8,16 +8,16 @@ addProjectionListener
  (L1org/eclipse/jface/text/source/projection/IProjectionListener;)V
 computeCollapsedRegion
  (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/IRegion;
- (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/IRegion;
+ (Lorg/eclipse/jface/text/Position;)L0org/eclipse/jface/text/IRegion;
 computeCollapsedRegionAnchor
  (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/Position;
- (Lorg/eclipse/jface/text/Position;)Lorg/eclipse/jface/text/Position;
+ (Lorg/eclipse/jface/text/Position;)L0org/eclipse/jface/text/Position;
 createSlaveDocumentManager
  ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
- ()Lorg/eclipse/jface/text/ISlaveDocumentManager;
+ ()L1org/eclipse/jface/text/ISlaveDocumentManager; # @Inherited(org.eclipse.jface.text.TextViewer)
 createVisualAnnotationModel
  (Lorg/eclipse/jface/text/source/IAnnotationModel;)Lorg/eclipse/jface/text/source/IAnnotationModel;
- (Lorg/eclipse/jface/text/source/IAnnotationModel;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Lorg/eclipse/jface/text/source/IAnnotationModel;)L1org/eclipse/jface/text/source/IAnnotationModel; # @Inherited(org.eclipse.jface.text.source.SourceViewer)
 exposeModelRange
  (Lorg/eclipse/jface/text/IRegion;)Z
  (L1org/eclipse/jface/text/IRegion;)Z # @Inherited(org.eclipse.jface.text.ITextViewerExtension5)
@@ -35,7 +35,7 @@ getFindReplaceDocumentAdapter
  ()Lorg/eclipse/jface/text/FindReplaceDocumentAdapter;
 getProjectionAnnotationModel
  ()Lorg/eclipse/jface/text/source/projection/ProjectionAnnotationModel;
- ()Lorg/eclipse/jface/text/source/projection/ProjectionAnnotationModel;
+ ()L0org/eclipse/jface/text/source/projection/ProjectionAnnotationModel;
 getVisibleRegion
  ()Lorg/eclipse/jface/text/IRegion;
  ()L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.TextViewer)
@@ -71,4 +71,4 @@ updateSlaveDocument
  (Lorg/eclipse/jface/text/IDocument;II)Z
 widgetSelection2ModelSelection
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
- (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/graphics/Point;)L0org/eclipse/swt/graphics/Point; # @Overrides(org.eclipse.jface.text.TextViewer)

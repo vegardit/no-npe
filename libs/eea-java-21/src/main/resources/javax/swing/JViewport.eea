@@ -18,10 +18,10 @@ computeBlit
  (IILjava/awt/Point;Ljava/awt/Point;Ljava/awt/Dimension;Ljava/awt/Rectangle;)Z
 createLayoutManager
  ()Ljava/awt/LayoutManager;
- ()Ljava/awt/LayoutManager;
+ ()L1java/awt/LayoutManager;
 createViewListener
  ()Ljavax/swing/JViewport$ViewListener;
- ()Ljavax/swing/JViewport$ViewListener;
+ ()L1javax/swing/JViewport$ViewListener;
 firePropertyChange
  (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
@@ -45,16 +45,16 @@ getUI
  ()Ljavax/swing/plaf/ViewportUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 getView
  ()Ljava/awt/Component;
- ()Ljava/awt/Component;
+ ()L0java/awt/Component;
 getViewPosition
  ()Ljava/awt/Point;
  ()Ljava/awt/Point;
 getViewRect
  ()Ljava/awt/Rectangle;
- ()Ljava/awt/Rectangle;
+ ()L1java/awt/Rectangle;
 getViewSize
  ()Ljava/awt/Dimension;
  ()Ljava/awt/Dimension;
@@ -63,7 +63,7 @@ paint
  (Ljava/awt/Graphics;)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 remove
  (Ljava/awt/Component;)V
  (Ljava/awt/Component;)V
@@ -93,7 +93,7 @@ setViewSize
  (Ljava/awt/Dimension;)V
 toViewCoordinates
  (Ljava/awt/Dimension;)Ljava/awt/Dimension;
- (Ljava/awt/Dimension;)Ljava/awt/Dimension;
+ (Ljava/awt/Dimension;)L1java/awt/Dimension;
 toViewCoordinates
  (Ljava/awt/Point;)Ljava/awt/Point;
- (Ljava/awt/Point;)Ljava/awt/Point;
+ (Ljava/awt/Point;)L1java/awt/Point;

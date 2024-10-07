@@ -2,7 +2,7 @@ class javax/swing/plaf/basic/BasicSliderUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 changeListener
  Ljavax/swing/event/ChangeListener;
@@ -58,22 +58,22 @@ trackRect
  (Ljavax/swing/JSlider;)V
 createChangeListener
  (Ljavax/swing/JSlider;)Ljavax/swing/event/ChangeListener;
- (Ljavax/swing/JSlider;)Ljavax/swing/event/ChangeListener;
+ (Ljavax/swing/JSlider;)L1javax/swing/event/ChangeListener;
 createComponentListener
  (Ljavax/swing/JSlider;)Ljava/awt/event/ComponentListener;
- (Ljavax/swing/JSlider;)Ljava/awt/event/ComponentListener;
+ (Ljavax/swing/JSlider;)L1java/awt/event/ComponentListener;
 createFocusListener
  (Ljavax/swing/JSlider;)Ljava/awt/event/FocusListener;
- (Ljavax/swing/JSlider;)Ljava/awt/event/FocusListener;
+ (Ljavax/swing/JSlider;)L1java/awt/event/FocusListener;
 createPropertyChangeListener
  (Ljavax/swing/JSlider;)Ljava/beans/PropertyChangeListener;
- (Ljavax/swing/JSlider;)Ljava/beans/PropertyChangeListener;
+ (Ljavax/swing/JSlider;)L1java/beans/PropertyChangeListener;
 createScrollListener
  (Ljavax/swing/JSlider;)Ljavax/swing/plaf/basic/BasicSliderUI$ScrollListener;
- (Ljavax/swing/JSlider;)Ljavax/swing/plaf/basic/BasicSliderUI$ScrollListener;
+ (Ljavax/swing/JSlider;)L1javax/swing/plaf/basic/BasicSliderUI$ScrollListener;
 createTrackListener
  (Ljavax/swing/JSlider;)Ljavax/swing/plaf/basic/BasicSliderUI$TrackListener;
- (Ljavax/swing/JSlider;)Ljavax/swing/plaf/basic/BasicSliderUI$TrackListener;
+ (Ljavax/swing/JSlider;)L1javax/swing/plaf/basic/BasicSliderUI$TrackListener;
 getBaseline
  (Ljavax/swing/JComponent;II)I
  (Ljavax/swing/JComponent;II)I
@@ -85,19 +85,19 @@ getFocusColor
  ()Ljava/awt/Color;
 getHighestValue
  ()Ljava/lang/Integer;
- ()Ljava/lang/Integer;
+ ()L0java/lang/Integer;
 getHighestValueLabel
  ()Ljava/awt/Component;
- ()Ljava/awt/Component;
+ ()L0java/awt/Component;
 getHighlightColor
  ()Ljava/awt/Color;
  ()Ljava/awt/Color;
 getLowestValue
  ()Ljava/lang/Integer;
- ()Ljava/lang/Integer;
+ ()L0java/lang/Integer;
 getLowestValueLabel
  ()Ljava/awt/Component;
- ()Ljava/awt/Component;
+ ()L0java/awt/Component;
 getMaximumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
@@ -106,7 +106,7 @@ getMinimumHorizontalSize
  ()Ljava/awt/Dimension;
 getMinimumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension;
 getMinimumVerticalSize
  ()Ljava/awt/Dimension;
  ()Ljava/awt/Dimension;
@@ -115,7 +115,7 @@ getPreferredHorizontalSize
  ()Ljava/awt/Dimension;
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension; # @Overrides(javax.swing.plaf.ComponentUI)
 getPreferredVerticalSize
  ()Ljava/awt/Dimension;
  ()Ljava/awt/Dimension;
@@ -124,7 +124,7 @@ getShadowColor
  ()Ljava/awt/Color;
 getThumbSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension;
 installDefaults
  (Ljavax/swing/JSlider;)V
  (Ljavax/swing/JSlider;)V

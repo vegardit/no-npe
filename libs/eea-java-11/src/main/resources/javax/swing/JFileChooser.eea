@@ -91,7 +91,7 @@ addChoosableFileFilter
  (Ljavax/swing/filechooser/FileFilter;)V
 createDialog
  (Ljava/awt/Component;)Ljavax/swing/JDialog;
- (Ljava/awt/Component;)Ljavax/swing/JDialog;
+ (Ljava/awt/Component;)L1javax/swing/JDialog;
 ensureFileIsVisible
  (Ljava/io/File;)V
  (Ljava/io/File;)V
@@ -118,7 +118,7 @@ getApproveButtonToolTipText
  ()Ljava/lang/String;
 getChoosableFileFilters
  ()[Ljavax/swing/filechooser/FileFilter;
- ()[Ljavax/swing/filechooser/FileFilter;
+ ()[1Ljavax/swing/filechooser/FileFilter;
 getCurrentDirectory
  ()Ljava/io/File;
  ()Ljava/io/File;
@@ -148,7 +148,7 @@ getSelectedFile
  ()Ljava/io/File;
 getSelectedFiles
  ()[Ljava/io/File;
- ()[Ljava/io/File;
+ ()[1Ljava/io/File;
 getTypeDescription
  (Ljava/io/File;)Ljava/lang/String;
  (Ljava/io/File;)Ljava/lang/String;
@@ -157,13 +157,13 @@ getUI
  ()Ljavax/swing/plaf/FileChooserUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 isTraversable
  (Ljava/io/File;)Z
  (Ljava/io/File;)Z
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 removeActionListener
  (Ljava/awt/event/ActionListener;)V
  (L1java/awt/event/ActionListener;)V

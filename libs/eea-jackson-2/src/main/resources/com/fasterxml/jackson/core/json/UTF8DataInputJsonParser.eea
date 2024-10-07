@@ -30,13 +30,13 @@ _handleInvalidNumberStart
  (IZ)Lcom/fasterxml/jackson/core/JsonToken;
 _handleInvalidNumberStart
  (IZZ)Lcom/fasterxml/jackson/core/JsonToken;
- (IZZ)Lcom/fasterxml/jackson/core/JsonToken;
+ (IZZ)L0com/fasterxml/jackson/core/JsonToken;
 _handleOddName
  (I)Ljava/lang/String;
  (I)Ljava/lang/String;
 _handleUnexpectedValue
  (I)Lcom/fasterxml/jackson/core/JsonToken;
- (I)Lcom/fasterxml/jackson/core/JsonToken;
+ (I)L0com/fasterxml/jackson/core/JsonToken;
 _matchToken
  (Ljava/lang/String;I)V
  (Ljava/lang/String;I)V
@@ -81,7 +81,7 @@ getBinaryValue
  (Lcom/fasterxml/jackson/core/Base64Variant;)[B
 getInputSource
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 getText
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -90,7 +90,7 @@ getText
  (Ljava/io/Writer;)I
 getTextCharacters
  ()[C
- ()[C
+ ()[0C
 getValueAsString
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -99,16 +99,16 @@ getValueAsString
  (Ljava/lang/String;)Ljava/lang/String;
 nextBooleanValue
  ()Ljava/lang/Boolean;
- ()Ljava/lang/Boolean;
+ ()L0java/lang/Boolean; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 nextFieldName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 nextTextValue
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 nextToken
  ()Lcom/fasterxml/jackson/core/JsonToken;
- ()Lcom/fasterxml/jackson/core/JsonToken;
+ ()L0com/fasterxml/jackson/core/JsonToken;
 parseEscapedName
  ([IIIII)Ljava/lang/String;
  ([IIIII)Ljava/lang/String;

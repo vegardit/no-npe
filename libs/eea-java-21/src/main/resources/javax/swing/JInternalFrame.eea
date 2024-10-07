@@ -70,7 +70,7 @@ addInternalFrameListener
  (L1javax/swing/event/InternalFrameListener;)V
 createRootPane
  ()Ljavax/swing/JRootPane;
- ()Ljavax/swing/JRootPane;
+ ()L1javax/swing/JRootPane;
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -85,10 +85,10 @@ getDesktopPane
  ()Ljavax/swing/JDesktopPane;
 getFocusCycleRootAncestor
  ()Ljava/awt/Container;
- ()Ljava/awt/Container;
+ ()L0java/awt/Container;
 getFocusOwner
  ()Ljava/awt/Component;
- ()Ljava/awt/Component;
+ ()L0java/awt/Component;
 getFrameIcon
  ()Ljavax/swing/Icon;
  ()Ljavax/swing/Icon;
@@ -127,16 +127,16 @@ getUI
  ()Ljavax/swing/plaf/InternalFrameUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 getWarningString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String;
 paintComponent
  (Ljava/awt/Graphics;)V
  (Ljava/awt/Graphics;)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 remove
  (Ljava/awt/Component;)V
  (Ljava/awt/Component;)V

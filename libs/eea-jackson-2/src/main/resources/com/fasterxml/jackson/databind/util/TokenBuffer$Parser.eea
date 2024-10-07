@@ -51,7 +51,7 @@ getBigIntegerValue
  ()Ljava/math/BigInteger;
 getBinaryValue
  (Lcom/fasterxml/jackson/core/Base64Variant;)[B
- (Lcom/fasterxml/jackson/core/Base64Variant;)[B
+ (Lcom/fasterxml/jackson/core/Base64Variant;)[0B
 getCodec
  ()Lcom/fasterxml/jackson/core/ObjectCodec;
  ()Lcom/fasterxml/jackson/core/ObjectCodec;
@@ -66,10 +66,10 @@ getDecimalValue
  ()Ljava/math/BigDecimal;
 getEmbeddedObject
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 getNumberType
  ()Lcom/fasterxml/jackson/core/JsonParser$NumberType;
- ()Lcom/fasterxml/jackson/core/JsonParser$NumberType;
+ ()L0com/fasterxml/jackson/core/JsonParser$NumberType;
 getNumberTypeFP
  ()Lcom/fasterxml/jackson/core/JsonParser$NumberTypeFP;
  ()Lcom/fasterxml/jackson/core/JsonParser$NumberTypeFP;
@@ -81,7 +81,7 @@ getNumberValueDeferred
  ()Ljava/lang/Object;
 getObjectId
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 getParsingContext
  ()Lcom/fasterxml/jackson/core/JsonStreamContext;
  ()Lcom/fasterxml/jackson/core/JsonStreamContext;
@@ -90,7 +90,7 @@ getReadCapabilities
  ()Lcom/fasterxml/jackson/core/util/JacksonFeatureSet<Lcom/fasterxml/jackson/core/StreamReadCapability;>;
 getText
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String;
 getTextCharacters
  ()[C
  ()[C
@@ -99,19 +99,19 @@ getTokenLocation
  ()Lcom/fasterxml/jackson/core/JsonLocation;
 getTypeId
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 nextFieldName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 nextToken
  ()Lcom/fasterxml/jackson/core/JsonToken;
- ()Lcom/fasterxml/jackson/core/JsonToken;
+ ()L0com/fasterxml/jackson/core/JsonToken;
 overrideCurrentName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 peekNextToken
  ()Lcom/fasterxml/jackson/core/JsonToken;
- ()Lcom/fasterxml/jackson/core/JsonToken;
+ ()L0com/fasterxml/jackson/core/JsonToken;
 readBinaryValue
  (Lcom/fasterxml/jackson/core/Base64Variant;Ljava/io/OutputStream;)I
  (Lcom/fasterxml/jackson/core/Base64Variant;Ljava/io/OutputStream;)I

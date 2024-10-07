@@ -5,7 +5,7 @@ class java/awt/image/BandCombineOp
  ([[FLjava/awt/RenderingHints;)V
 createCompatibleDestRaster
  (Ljava/awt/image/Raster;)Ljava/awt/image/WritableRaster;
- (Ljava/awt/image/Raster;)Ljava/awt/image/WritableRaster;
+ (Ljava/awt/image/Raster;)L1java/awt/image/WritableRaster; # @Inherited(java.awt.image.RasterOp)
 filter
  (Ljava/awt/image/Raster;Ljava/awt/image/WritableRaster;)Ljava/awt/image/WritableRaster;
  (Ljava/awt/image/Raster;Ljava/awt/image/WritableRaster;)Ljava/awt/image/WritableRaster;
@@ -14,10 +14,10 @@ getBounds2D
  (Ljava/awt/image/Raster;)Ljava/awt/geom/Rectangle2D;
 getMatrix
  ()[[F
- ()[[F
+ ()[1[F
 getPoint2D
  (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;
- (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;
+ (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)L1java/awt/geom/Point2D;
 getRenderingHints
  ()Ljava/awt/RenderingHints;
  ()Ljava/awt/RenderingHints;

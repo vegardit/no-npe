@@ -11,7 +11,7 @@ super java/util/SequencedMap
 
 newLinkedHashMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)Ljava/util/LinkedHashMap<TK;TV;>;
- <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)Ljava/util/LinkedHashMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)L1java/util/LinkedHashMap<TK;TV;>;
 
 <init>
  (Ljava/util/Map<+TK;+TV;>;)V
@@ -48,16 +48,16 @@ replaceAll
  (L1java/util/function/BiFunction<-TK;-TV;+TV;>;)V # @Inherited(java.util.HashMap)
 reversed
  ()Ljava/util/SequencedMap<TK;TV;>;
- ()Ljava/util/SequencedMap<TK;TV;>;
+ ()L1java/util/SequencedMap<TK;TV;>;
 sequencedEntrySet
  ()Ljava/util/SequencedSet<Ljava/util/Map$Entry<TK;TV;>;>;
- ()Ljava/util/SequencedSet<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()L1java/util/SequencedSet<Ljava/util/Map$Entry<TK;TV;>;>; # @Inherited(java.util.SequencedMap)
 sequencedKeySet
  ()Ljava/util/SequencedSet<TK;>;
- ()Ljava/util/SequencedSet<TK;>;
+ ()L1java/util/SequencedSet<TK;>; # @Inherited(java.util.SequencedMap)
 sequencedValues
  ()Ljava/util/SequencedCollection<TV;>;
- ()Ljava/util/SequencedCollection<TV;>;
+ ()L1java/util/SequencedCollection<TV;>; # @Inherited(java.util.SequencedMap)
 values
  ()Ljava/util/Collection<TV;>;
  ()L1java/util/Collection<TV;>; # @Inherited(java.util.HashMap)

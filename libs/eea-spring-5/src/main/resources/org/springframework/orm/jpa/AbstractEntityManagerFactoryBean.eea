@@ -10,13 +10,13 @@ logger
 
 createEntityManagerFactoryProxy
  (Ljavax/persistence/EntityManagerFactory;)Ljavax/persistence/EntityManagerFactory;
- (Ljavax/persistence/EntityManagerFactory;)Ljavax/persistence/EntityManagerFactory;
+ (Ljavax/persistence/EntityManagerFactory;)L1javax/persistence/EntityManagerFactory;
 createNativeEntityManager
  (Ljava/util/Map<**>;)Ljavax/persistence/EntityManager;
- (Ljava/util/Map<**>;)Ljavax/persistence/EntityManager;
+ (Ljava/util/Map<**>;)L1javax/persistence/EntityManager; # @Inherited(org.springframework.orm.jpa.EntityManagerFactoryInfo)
 createNativeEntityManagerFactory
  ()Ljavax/persistence/EntityManagerFactory;
- ()Ljavax/persistence/EntityManagerFactory;
+ ()L1javax/persistence/EntityManagerFactory;
 getBeanClassLoader
  ()Ljava/lang/ClassLoader;
  ()Ljava/lang/ClassLoader;
@@ -46,7 +46,7 @@ getObject
  ()L0javax/persistence/EntityManagerFactory;
 getObjectType
  ()Ljava/lang/Class<+Ljavax/persistence/EntityManagerFactory;>;
- ()Ljava/lang/Class<+Ljavax/persistence/EntityManagerFactory;>;
+ ()L1java/lang/Class<+Ljavax/persistence/EntityManagerFactory;>;
 getPersistenceProvider
  ()Ljavax/persistence/spi/PersistenceProvider;
  ()L0javax/persistence/spi/PersistenceProvider; # @Inherited(org.springframework.orm.jpa.EntityManagerFactoryInfo)

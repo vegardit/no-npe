@@ -5,7 +5,7 @@ clone
  ()L1java/lang/Object; # @Inherited(javax.swing.text.EditorKit)
 createDefaultDocument
  ()Ljavax/swing/text/Document;
- ()Ljavax/swing/text/Document;
+ ()L1javax/swing/text/Document; # @Inherited(javax.swing.text.DefaultEditorKit)
 createInputAttributes
  (Ljavax/swing/text/Element;Ljavax/swing/text/MutableAttributeSet;)V
  (Ljavax/swing/text/Element;Ljavax/swing/text/MutableAttributeSet;)V
@@ -14,7 +14,7 @@ deinstall
  (Ljavax/swing/JEditorPane;)V
 getActions
  ()[Ljavax/swing/Action;
- ()[Ljavax/swing/Action;
+ ()[1Ljavax/swing/Action; # @Inherited(javax.swing.text.DefaultEditorKit)
 getCharacterAttributeRun
  ()Ljavax/swing/text/Element;
  ()Ljavax/swing/text/Element;
@@ -23,7 +23,7 @@ getInputAttributes
  ()Ljavax/swing/text/MutableAttributeSet;
 getViewFactory
  ()Ljavax/swing/text/ViewFactory;
- ()Ljavax/swing/text/ViewFactory;
+ ()L0javax/swing/text/ViewFactory; # @Inherited(javax.swing.text.DefaultEditorKit)
 install
  (Ljavax/swing/JEditorPane;)V
  (Ljavax/swing/JEditorPane;)V

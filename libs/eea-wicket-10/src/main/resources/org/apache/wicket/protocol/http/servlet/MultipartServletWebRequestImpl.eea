@@ -18,7 +18,7 @@ setUploadInfo
  (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;Lorg/apache/commons/fileupload2/core/FileItemFactory;)V
 generatePostParameters
  ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/wicket/util/string/StringValue;>;>;
- ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/wicket/util/string/StringValue;>;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/wicket/util/string/StringValue;>;>; # @Inherited(org.apache.wicket.protocol.http.servlet.ServletWebRequest)
 getFile
  (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/fileupload2/core/FileItem;>;
  (Ljava/lang/String;)Ljava/util/List<Lorg/apache/commons/fileupload2/core/FileItem;>;
@@ -27,10 +27,10 @@ getFiles
  ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/apache/commons/fileupload2/core/FileItem;>;>;
 newFileUpload
  (Ljava/lang/String;)Lorg/apache/commons/fileupload2/core/AbstractFileUpload;
- (Ljava/lang/String;)Lorg/apache/commons/fileupload2/core/AbstractFileUpload;
+ (Ljava/lang/String;)L1org/apache/commons/fileupload2/core/AbstractFileUpload;
 newMultipartWebRequest
  (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
- (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
+ (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;)L1org/apache/wicket/protocol/http/servlet/MultipartServletWebRequest; # @Inherited(org.apache.wicket.protocol.http.servlet.ServletWebRequest)
 newMultipartWebRequest
  (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;Lorg/apache/commons/fileupload2/core/FileItemFactory;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
- (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;Lorg/apache/commons/fileupload2/core/FileItemFactory;)Lorg/apache/wicket/protocol/http/servlet/MultipartServletWebRequest;
+ (Lorg/apache/wicket/util/lang/Bytes;Ljava/lang/String;Lorg/apache/commons/fileupload2/core/FileItemFactory;)L1org/apache/wicket/protocol/http/servlet/MultipartServletWebRequest; # @Inherited(org.apache.wicket.protocol.http.servlet.ServletWebRequest)

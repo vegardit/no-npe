@@ -18,7 +18,7 @@ SECURITY_UNCHECKED
 
 createURLHostForBundleID
  (Lorg/eclipse/osgi/container/ModuleContainer;J)Ljava/lang/String;
- (Lorg/eclipse/osgi/container/ModuleContainer;J)Ljava/lang/String;
+ (Lorg/eclipse/osgi/container/ModuleContainer;J)L1java/lang/String;
 
 bundleEntry
  Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
@@ -41,7 +41,7 @@ findBundleEntry
  (Ljava/net/URL;Lorg/eclipse/osgi/container/Module;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
 getHostAddress
  (Ljava/net/URL;)Ljava/net/InetAddress;
- (Ljava/net/URL;)Ljava/net/InetAddress;
+ (Ljava/net/URL;)L0java/net/InetAddress;
 hashCode
  (Ljava/net/URL;)I
  (Ljava/net/URL;)I
@@ -59,4 +59,4 @@ sameFile
  (Ljava/net/URL;Ljava/net/URL;)Z
 toExternalForm
  (Ljava/net/URL;)Ljava/lang/String;
- (Ljava/net/URL;)Ljava/lang/String;
+ (Ljava/net/URL;)L1java/lang/String; # @Inherited(java.net.URLStreamHandler)

@@ -18,7 +18,7 @@ getRefreshScope
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)Ljava/lang/String;
 getWorkingSet
  (Ljava/lang/String;)Lorg/eclipse/ui/IWorkingSet;
- (Ljava/lang/String;)Lorg/eclipse/ui/IWorkingSet;
+ (Ljava/lang/String;)L0org/eclipse/ui/IWorkingSet;
 isRefreshRecursive
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
  (Lorg/eclipse/debug/core/ILaunchConfiguration;)Z
@@ -37,10 +37,10 @@ deactivated
  (L1org/eclipse/debug/core/ILaunchConfigurationWorkingCopy;)V # @Inherited(org.eclipse.debug.ui.AbstractLaunchConfigurationTab)
 getId
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Overrides(org.eclipse.debug.ui.AbstractLaunchConfigurationTab)
 getImage
  ()Lorg/eclipse/swt/graphics/Image;
- ()Lorg/eclipse/swt/graphics/Image;
+ ()L0org/eclipse/swt/graphics/Image; # @Inherited(org.eclipse.debug.ui.AbstractLaunchConfigurationTab)
 getName
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(org.eclipse.debug.ui.ILaunchConfigurationTab)

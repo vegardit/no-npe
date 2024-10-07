@@ -21,10 +21,10 @@ checkSchemaCorrectness
  (Lcom/sun/tools/xjc/ErrorReceiver;)Z
 createParser
  ()Lcom/sun/xml/xsom/parser/XMLParser;
- ()Lcom/sun/xml/xsom/parser/XMLParser;
+ ()L1com/sun/xml/xsom/parser/XMLParser;
 createSAXSource
  (Ljava/lang/String;)Ljavax/xml/transform/sax/SAXSource;
- (Ljava/lang/String;)Ljavax/xml/transform/sax/SAXSource;
+ (Ljava/lang/String;)L1javax/xml/transform/sax/SAXSource;
 dump
  (Ljava/io/OutputStream;)V
  (Ljava/io/OutputStream;)V
@@ -42,13 +42,13 @@ getOneDocument
  ()Lorg/w3c/dom/Document;
 getParserHandler
  (Ljava/lang/String;Z)Lcom/sun/tools/xjc/reader/internalizer/DOMForest$Handler;
- (Ljava/lang/String;Z)Lcom/sun/tools/xjc/reader/internalizer/DOMForest$Handler;
+ (Ljava/lang/String;Z)L1com/sun/tools/xjc/reader/internalizer/DOMForest$Handler;
 getRootDocuments
  ()Ljava/util/Set<Ljava/lang/String;>;
  ()Ljava/util/Set<Ljava/lang/String;>;
 getSystemId
  (Lorg/w3c/dom/Document;)Ljava/lang/String;
- (Lorg/w3c/dom/Document;)Ljava/lang/String;
+ (Lorg/w3c/dom/Document;)L0java/lang/String;
 listDocuments
  ()[Lorg/w3c/dom/Document;
  ()[Lorg/w3c/dom/Document;
@@ -60,7 +60,7 @@ parse
  (Ljava/lang/String;Ljavax/xml/stream/XMLStreamReader;Z)Lorg/w3c/dom/Document;
 parse
  (Ljava/lang/String;Lorg/xml/sax/InputSource;Z)Lorg/w3c/dom/Document;
- (Ljava/lang/String;Lorg/xml/sax/InputSource;Z)Lorg/w3c/dom/Document;
+ (Ljava/lang/String;Lorg/xml/sax/InputSource;Z)L0org/w3c/dom/Document;
 parse
  (Ljava/lang/String;Z)Lorg/w3c/dom/Document;
  (Ljava/lang/String;Z)Lorg/w3c/dom/Document;

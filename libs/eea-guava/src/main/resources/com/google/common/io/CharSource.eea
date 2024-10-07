@@ -2,7 +2,7 @@ class com/google/common/io/CharSource
 
 concat
  (Ljava/lang/Iterable<+Lcom/google/common/io/CharSource;>;)Lcom/google/common/io/CharSource;
- (Ljava/lang/Iterable<+Lcom/google/common/io/CharSource;>;)Lcom/google/common/io/CharSource;
+ (Ljava/lang/Iterable<+Lcom/google/common/io/CharSource;>;)L1com/google/common/io/CharSource;
 concat
  (Ljava/util/Iterator<+Lcom/google/common/io/CharSource;>;)Lcom/google/common/io/CharSource;
  (Ljava/util/Iterator<+Lcom/google/common/io/CharSource;>;)Lcom/google/common/io/CharSource;
@@ -14,11 +14,11 @@ empty
  ()Lcom/google/common/io/CharSource;
 wrap
  (Ljava/lang/CharSequence;)Lcom/google/common/io/CharSource;
- (Ljava/lang/CharSequence;)Lcom/google/common/io/CharSource;
+ (Ljava/lang/CharSequence;)L1com/google/common/io/CharSource;
 
 asByteSource
  (Ljava/nio/charset/Charset;)Lcom/google/common/io/ByteSource;
- (Ljava/nio/charset/Charset;)Lcom/google/common/io/ByteSource;
+ (Ljava/nio/charset/Charset;)L1com/google/common/io/ByteSource;
 copyTo
  (Lcom/google/common/io/CharSink;)J
  (Lcom/google/common/io/CharSink;)J
@@ -36,7 +36,7 @@ lines
  ()Ljava/util/stream/Stream<Ljava/lang/String;>;
 openBufferedStream
  ()Ljava/io/BufferedReader;
- ()Ljava/io/BufferedReader;
+ ()L1java/io/BufferedReader;
 openStream
  ()Ljava/io/Reader;
  ()Ljava/io/Reader;

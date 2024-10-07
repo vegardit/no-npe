@@ -2,7 +2,7 @@ class java/awt/Frame
 
 getFrames
  ()[Ljava/awt/Frame;
- ()[Ljava/awt/Frame;
+ ()[1Ljava/awt/Frame;
 
 <init>
  (Ljava/awt/GraphicsConfiguration;)V
@@ -18,7 +18,7 @@ getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
 getIconImage
  ()Ljava/awt/Image;
- ()Ljava/awt/Image;
+ ()L0java/awt/Image;
 getMaximizedBounds
  ()Ljava/awt/Rectangle;
  ()Ljava/awt/Rectangle;
@@ -30,7 +30,7 @@ getTitle
  ()Ljava/lang/String;
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.awt.Container)
 remove
  (Ljava/awt/MenuComponent;)V
  (Ljava/awt/MenuComponent;)V

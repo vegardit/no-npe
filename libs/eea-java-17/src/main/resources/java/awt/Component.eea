@@ -57,22 +57,22 @@ checkImage
  (Ljava/awt/Image;Ljava/awt/image/ImageObserver;)I
 coalesceEvents
  (Ljava/awt/AWTEvent;Ljava/awt/AWTEvent;)Ljava/awt/AWTEvent;
- (Ljava/awt/AWTEvent;Ljava/awt/AWTEvent;)Ljava/awt/AWTEvent;
+ (Ljava/awt/AWTEvent;Ljava/awt/AWTEvent;)L0java/awt/AWTEvent;
 contains
  (Ljava/awt/Point;)Z
  (Ljava/awt/Point;)Z
 createImage
  (II)Ljava/awt/Image;
- (II)Ljava/awt/Image;
+ (II)L0java/awt/Image;
 createImage
  (Ljava/awt/image/ImageProducer;)Ljava/awt/Image;
- (Ljava/awt/image/ImageProducer;)Ljava/awt/Image;
+ (Ljava/awt/image/ImageProducer;)L1java/awt/Image;
 createVolatileImage
  (II)Ljava/awt/image/VolatileImage;
- (II)Ljava/awt/image/VolatileImage;
+ (II)L0java/awt/image/VolatileImage;
 createVolatileImage
  (IILjava/awt/ImageCapabilities;)Ljava/awt/image/VolatileImage;
- (IILjava/awt/ImageCapabilities;)Ljava/awt/image/VolatileImage;
+ (IILjava/awt/ImageCapabilities;)L1java/awt/image/VolatileImage;
 deliverEvent
  (Ljava/awt/Event;)V
  (Ljava/awt/Event;)V
@@ -111,7 +111,7 @@ getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
 getBackground
  ()Ljava/awt/Color;
- ()Ljava/awt/Color;
+ ()L0java/awt/Color;
 getBaselineResizeBehavior
  ()Ljava/awt/Component$BaselineResizeBehavior;
  ()Ljava/awt/Component$BaselineResizeBehavior;
@@ -159,10 +159,10 @@ getFontMetrics
  (Ljava/awt/Font;)Ljava/awt/FontMetrics;
 getForeground
  ()Ljava/awt/Color;
- ()Ljava/awt/Color;
+ ()L0java/awt/Color;
 getGraphics
  ()Ljava/awt/Graphics;
- ()Ljava/awt/Graphics;
+ ()L0java/awt/Graphics;
 getGraphicsConfiguration
  ()Ljava/awt/GraphicsConfiguration;
  ()Ljava/awt/GraphicsConfiguration;
@@ -174,13 +174,13 @@ getHierarchyListeners
  ()[Ljava/awt/event/HierarchyListener;
 getInputContext
  ()Ljava/awt/im/InputContext;
- ()Ljava/awt/im/InputContext;
+ ()L0java/awt/im/InputContext;
 getInputMethodListeners
  ()[Ljava/awt/event/InputMethodListener;
  ()[Ljava/awt/event/InputMethodListener;
 getInputMethodRequests
  ()Ljava/awt/im/InputMethodRequests;
- ()Ljava/awt/im/InputMethodRequests;
+ ()L0java/awt/im/InputMethodRequests;
 getKeyListeners
  ()[Ljava/awt/event/KeyListener;
  ()[Ljava/awt/event/KeyListener;
@@ -276,7 +276,7 @@ list
  (Ljava/io/PrintWriter;I)V
 locate
  (II)Ljava/awt/Component;
- (II)Ljava/awt/Component;
+ (II)L0java/awt/Component;
 location
  ()Ljava/awt/Point;
  ()Ljava/awt/Point;
@@ -285,7 +285,7 @@ lostFocus
  (Ljava/awt/Event;Ljava/lang/Object;)Z
 minimumSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension;
 mouseDown
  (Ljava/awt/Event;II)Z
  (Ljava/awt/Event;II)Z
@@ -312,13 +312,13 @@ paintAll
  (Ljava/awt/Graphics;)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 postEvent
  (Ljava/awt/Event;)Z
  (Ljava/awt/Event;)Z
 preferredSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension;
 prepareImage
  (Ljava/awt/Image;IILjava/awt/image/ImageObserver;)Z
  (Ljava/awt/Image;IILjava/awt/image/ImageObserver;)Z

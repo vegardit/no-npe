@@ -79,7 +79,7 @@ _handleSelfReference
  (Ljava/lang/Object;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)Z
 _new
  (Lcom/fasterxml/jackson/databind/PropertyName;)Lcom/fasterxml/jackson/databind/ser/BeanPropertyWriter;
- (Lcom/fasterxml/jackson/databind/PropertyName;)Lcom/fasterxml/jackson/databind/ser/BeanPropertyWriter;
+ (Lcom/fasterxml/jackson/databind/PropertyName;)L1com/fasterxml/jackson/databind/ser/BeanPropertyWriter;
 assignNullSerializer
  (Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;)V
  (Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;)V
@@ -109,10 +109,10 @@ getContextAnnotation
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)TA;
 getFullName
  ()Lcom/fasterxml/jackson/databind/PropertyName;
- ()Lcom/fasterxml/jackson/databind/PropertyName;
+ ()L1com/fasterxml/jackson/databind/PropertyName;
 getGenericPropertyType
  ()Ljava/lang/reflect/Type;
- ()Ljava/lang/reflect/Type;
+ ()L0java/lang/reflect/Type;
 getInternalSetting
  (Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Object;)Ljava/lang/Object;
@@ -124,7 +124,7 @@ getName
  ()Ljava/lang/String;
 getPropertyType
  ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
+ ()L0java/lang/Class<*>;
 getRawSerializationType
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
@@ -178,7 +178,7 @@ toString
  ()L1java/lang/String; # @Inherited(java.lang.Object)
 unwrappingWriter
  (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/ser/BeanPropertyWriter;
- (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/ser/BeanPropertyWriter;
+ (Lcom/fasterxml/jackson/databind/util/NameTransformer;)L1com/fasterxml/jackson/databind/ser/BeanPropertyWriter;
 wouldConflictWithName
  (Lcom/fasterxml/jackson/databind/PropertyName;)Z
  (Lcom/fasterxml/jackson/databind/PropertyName;)Z

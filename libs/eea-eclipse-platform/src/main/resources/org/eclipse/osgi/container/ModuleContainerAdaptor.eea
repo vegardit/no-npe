@@ -2,28 +2,28 @@ class org/eclipse/osgi/container/ModuleContainerAdaptor
 
 adaptModuleRevisionBuilder
  (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)Lorg/eclipse/osgi/container/ModuleRevisionBuilder;
- (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)Lorg/eclipse/osgi/container/ModuleRevisionBuilder;
+ (Lorg/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent;Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)L0org/eclipse/osgi/container/ModuleRevisionBuilder;
 associateRevision
  (Lorg/eclipse/osgi/container/ModuleRevision;Ljava/lang/Object;)V
  (Lorg/eclipse/osgi/container/ModuleRevision;Ljava/lang/Object;)V
 createModule
  (Ljava/lang/String;JLjava/util/EnumSet<Lorg/eclipse/osgi/container/Module$Settings;>;I)Lorg/eclipse/osgi/container/Module;
- (Ljava/lang/String;JLjava/util/EnumSet<Lorg/eclipse/osgi/container/Module$Settings;>;I)Lorg/eclipse/osgi/container/Module;
+ (Ljava/lang/String;JLjava/util/EnumSet<Lorg/eclipse/osgi/container/Module$Settings;>;I)L1org/eclipse/osgi/container/Module;
 createModuleLoader
  (Lorg/eclipse/osgi/container/ModuleWiring;)Lorg/eclipse/osgi/container/ModuleLoader;
- (Lorg/eclipse/osgi/container/ModuleWiring;)Lorg/eclipse/osgi/container/ModuleLoader;
+ (Lorg/eclipse/osgi/container/ModuleWiring;)L1org/eclipse/osgi/container/ModuleLoader;
 createSystemModule
  ()Lorg/eclipse/osgi/container/SystemModule;
- ()Lorg/eclipse/osgi/container/SystemModule;
+ ()L1org/eclipse/osgi/container/SystemModule;
 getDebugOptions
  ()Lorg/eclipse/osgi/service/debug/DebugOptions;
- ()Lorg/eclipse/osgi/service/debug/DebugOptions;
+ ()L0org/eclipse/osgi/service/debug/DebugOptions;
 getModuleCollisionHook
  ()Lorg/eclipse/osgi/container/ModuleCollisionHook;
  ()Lorg/eclipse/osgi/container/ModuleCollisionHook;
 getProperty
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L0java/lang/String;
 getResolverExecutor
  ()Ljava/util/concurrent/Executor;
  ()Ljava/util/concurrent/Executor;
@@ -32,10 +32,10 @@ getResolverHookFactory
  ()Lorg/osgi/framework/hooks/resolver/ResolverHookFactory;
 getRevisionInfo
  (Ljava/lang/String;J)Ljava/lang/Object;
- (Ljava/lang/String;J)Ljava/lang/Object;
+ (Ljava/lang/String;J)L0java/lang/Object;
 getScheduledExecutor
  ()Ljava/util/concurrent/ScheduledExecutorService;
- ()Ljava/util/concurrent/ScheduledExecutorService;
+ ()L0java/util/concurrent/ScheduledExecutorService;
 getStartLevelExecutor
  ()Ljava/util/concurrent/Executor;
  ()Ljava/util/concurrent/Executor;

@@ -9,7 +9,7 @@ propertyHandlerProviders
  (Lorg/eclipse/e4/ui/css/core/dom/ExtendedDocumentCSS;)V
 applyCSSProperty
  (Ljava/lang/Object;Ljava/lang/String;Lorg/w3c/dom/css/CSSValue;Ljava/lang/String;)Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;
- (Ljava/lang/Object;Ljava/lang/String;Lorg/w3c/dom/css/CSSValue;Ljava/lang/String;)Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;
+ (Ljava/lang/Object;Ljava/lang/String;Lorg/w3c/dom/css/CSSValue;Ljava/lang/String;)L0org/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;
 applyDefaultStyleDeclaration
  (Ljava/lang/Object;Z)V
  (Ljava/lang/Object;Z)V
@@ -30,25 +30,25 @@ applyStyles
  (Ljava/lang/Object;ZZ)V
 convert
  (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)L0java/lang/String;
 convert
  (Lorg/w3c/dom/css/CSSValue;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
- (Lorg/w3c/dom/css/CSSValue;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+ (Lorg/w3c/dom/css/CSSValue;Ljava/lang/Object;Ljava/lang/Object;)L0java/lang/Object;
 getCSSCompositePropertiesNames
  (Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[0Ljava/lang/String;
 getCSSElementContext
  (Ljava/lang/Object;)Lorg/eclipse/e4/ui/css/core/engine/CSSElementContext;
  (Ljava/lang/Object;)Lorg/eclipse/e4/ui/css/core/engine/CSSElementContext;
 getCSSProperties
  (Ljava/lang/Object;)Ljava/util/Collection<Ljava/lang/String;>;
- (Ljava/lang/Object;)Ljava/util/Collection<Ljava/lang/String;>;
+ (Ljava/lang/Object;)L1java/util/Collection<Ljava/lang/String;>;
 getCSSPropertyHandlers
  (Ljava/lang/String;)Ljava/util/Collection<Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;>;
- (Ljava/lang/String;)Ljava/util/Collection<Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;>;
+ (Ljava/lang/String;)L1java/util/Collection<Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandler;>;
 getCSSValueConverter
  (Ljava/lang/Object;)Lorg/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;
- (Ljava/lang/Object;)Lorg/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;
+ (Ljava/lang/Object;)L0org/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;
 getDefaultStyleDeclaration
  (Ljava/lang/Object;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
  (Ljava/lang/Object;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;
@@ -60,7 +60,7 @@ getDocumentCSS
  ()Lorg/w3c/dom/css/DocumentCSS;
 getElement
  (Ljava/lang/Object;)Lorg/w3c/dom/Element;
- (Ljava/lang/Object;)Lorg/w3c/dom/Element;
+ (Ljava/lang/Object;)L0org/w3c/dom/Element;
 getElementProvider
  ()Lorg/eclipse/e4/ui/css/core/dom/IElementProvider;
  ()Lorg/eclipse/e4/ui/css/core/dom/IElementProvider;
@@ -81,7 +81,7 @@ getResourcesRegistry
  ()Lorg/eclipse/e4/ui/css/core/resources/IResourcesRegistry;
 getStaticPseudoInstances
  (Lorg/w3c/dom/Element;)[Ljava/lang/String;
- (Lorg/w3c/dom/Element;)[Ljava/lang/String;
+ (Lorg/w3c/dom/Element;)[0Ljava/lang/String;
 getViewCSS
  ()Lorg/w3c/dom/css/ViewCSS;
  ()Lorg/w3c/dom/css/ViewCSS;
@@ -162,7 +162,7 @@ parseStyleSheet
  (Ljava/io/Reader;)Lorg/w3c/dom/stylesheets/StyleSheet;
 parseStyleSheet
  (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/stylesheets/StyleSheet;
- (Lorg/w3c/css/sac/InputSource;)Lorg/w3c/dom/stylesheets/StyleSheet;
+ (Lorg/w3c/css/sac/InputSource;)L1org/w3c/dom/stylesheets/StyleSheet;
 registerCSSPropertyHandlerProvider
  (Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandlerProvider;)V
  (Lorg/eclipse/e4/ui/css/core/dom/properties/ICSSPropertyHandlerProvider;)V
@@ -171,7 +171,7 @@ registerCSSValueConverter
  (Lorg/eclipse/e4/ui/css/core/dom/properties/converters/ICSSValueConverter;)V
 retrieveCSSProperty
  (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)L0java/lang/String;
 setElementProvider
  (Lorg/eclipse/e4/ui/css/core/dom/IElementProvider;)V
  (Lorg/eclipse/e4/ui/css/core/dom/IElementProvider;)V
