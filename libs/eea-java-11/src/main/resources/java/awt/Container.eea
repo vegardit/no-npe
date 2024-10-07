@@ -62,7 +62,7 @@ getFocusTraversalKeys
  (I)Ljava/util/Set<Ljava/awt/AWTKeyStroke;>;
 getFocusTraversalPolicy
  ()Ljava/awt/FocusTraversalPolicy;
- ()Ljava/awt/FocusTraversalPolicy;
+ ()L0java/awt/FocusTraversalPolicy;
 getInsets
  ()Ljava/awt/Insets;
  ()Ljava/awt/Insets;
@@ -101,10 +101,10 @@ list
  (Ljava/io/PrintWriter;I)V
 locate
  (II)Ljava/awt/Component;
- (II)Ljava/awt/Component;
+ (II)L0java/awt/Component; # @Inherited(java.awt.Component)
 minimumSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension; # @Inherited(java.awt.Component)
 paint
  (Ljava/awt/Graphics;)V
  (Ljava/awt/Graphics;)V
@@ -113,10 +113,10 @@ paintComponents
  (Ljava/awt/Graphics;)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.awt.Component)
 preferredSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension; # @Inherited(java.awt.Component)
 print
  (Ljava/awt/Graphics;)V
  (Ljava/awt/Graphics;)V

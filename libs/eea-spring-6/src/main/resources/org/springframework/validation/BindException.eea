@@ -59,7 +59,7 @@ getModel
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 getNestedPath
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.springframework.validation.Errors)
 getObjectName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -71,7 +71,7 @@ getRawFieldValue
  (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.validation.BindingResult)
 getSuppressedFields
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Inherited(org.springframework.validation.BindingResult)
 getTarget
  ()Ljava/lang/Object;
  ()L0java/lang/Object; # @Inherited(org.springframework.validation.BindingResult)

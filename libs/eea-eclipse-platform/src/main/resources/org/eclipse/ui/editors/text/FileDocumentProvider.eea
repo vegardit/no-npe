@@ -11,10 +11,10 @@ computeModificationStamp
  (Lorg/eclipse/core/resources/IResource;)J
 createAnnotationModel
  (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
- (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Ljava/lang/Object;)L1org/eclipse/jface/text/source/IAnnotationModel; # @Overrides(org.eclipse.ui.editors.text.StorageDocumentProvider)
 createElementInfo
  (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
- (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
+ (Ljava/lang/Object;)L1org/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo; # @Inherited(org.eclipse.ui.editors.text.StorageDocumentProvider)
 disposeElementInfo
  (Ljava/lang/Object;Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;)V
  (Ljava/lang/Object;Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;)V
@@ -32,7 +32,7 @@ doValidateState
  (Ljava/lang/Object;Ljava/lang/Object;)V
 getContentType
  (Ljava/lang/Object;)Lorg/eclipse/core/runtime/content/IContentType;
- (Ljava/lang/Object;)Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/lang/Object;)L0org/eclipse/core/runtime/content/IContentType; # @Inherited(org.eclipse.ui.editors.text.StorageDocumentProvider)
 getElementInfo
  (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
  (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
@@ -41,28 +41,28 @@ getModificationStamp
  (Ljava/lang/Object;)J
 getOperationRunner
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/operation/IRunnableContext;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/operation/IRunnableContext;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L0org/eclipse/jface/operation/IRunnableContext; # @Inherited(org.eclipse.ui.editors.text.StorageDocumentProvider)
 getPersistedEncoding
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L0java/lang/String; # @Inherited(org.eclipse.ui.editors.text.StorageDocumentProvider)
 getRefreshRule
  (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
- (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)L0org/eclipse/core/runtime/jobs/ISchedulingRule;
 getResetRule
  (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
- (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)L0org/eclipse/core/runtime/jobs/ISchedulingRule; # @Inherited(org.eclipse.ui.texteditor.AbstractDocumentProvider)
 getSaveRule
  (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
- (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)L0org/eclipse/core/runtime/jobs/ISchedulingRule; # @Inherited(org.eclipse.ui.texteditor.AbstractDocumentProvider)
 getSynchronizationStamp
  (Ljava/lang/Object;)J
  (Ljava/lang/Object;)J
 getSynchronizeRule
  (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
- (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)L0org/eclipse/core/runtime/jobs/ISchedulingRule; # @Inherited(org.eclipse.ui.texteditor.AbstractDocumentProvider)
 getValidateStateRule
  (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
- (Ljava/lang/Object;)Lorg/eclipse/core/runtime/jobs/ISchedulingRule;
+ (Ljava/lang/Object;)L0org/eclipse/core/runtime/jobs/ISchedulingRule; # @Inherited(org.eclipse.ui.texteditor.AbstractDocumentProvider)
 handleElementContentChanged
  (Lorg/eclipse/ui/IFileEditorInput;)V
  (Lorg/eclipse/ui/IFileEditorInput;)V

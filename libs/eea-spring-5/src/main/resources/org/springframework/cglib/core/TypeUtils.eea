@@ -8,19 +8,19 @@ add
  ([Lorg/springframework/asm/Type;Lorg/springframework/asm/Type;)[Lorg/springframework/asm/Type;
 add
  ([Lorg/springframework/asm/Type;[Lorg/springframework/asm/Type;)[Lorg/springframework/asm/Type;
- ([Lorg/springframework/asm/Type;[Lorg/springframework/asm/Type;)[Lorg/springframework/asm/Type;
+ ([Lorg/springframework/asm/Type;[Lorg/springframework/asm/Type;)[1Lorg/springframework/asm/Type;
 emulateClassGetName
  (Lorg/springframework/asm/Type;)Ljava/lang/String;
  (Lorg/springframework/asm/Type;)Ljava/lang/String;
 escapeType
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
 fromInternalName
  (Ljava/lang/String;)Lorg/springframework/asm/Type;
  (Ljava/lang/String;)Lorg/springframework/asm/Type;
 fromInternalNames
  ([Ljava/lang/String;)[Lorg/springframework/asm/Type;
- ([Ljava/lang/String;)[Lorg/springframework/asm/Type;
+ ([Ljava/lang/String;)[Lorg/springframework/asm/Type; # @PolyNull
 getBoxedType
  (Lorg/springframework/asm/Type;)Lorg/springframework/asm/Type;
  (Lorg/springframework/asm/Type;)Lorg/springframework/asm/Type;
@@ -44,7 +44,7 @@ getType
  (Ljava/lang/String;)Lorg/springframework/asm/Type;
 getTypes
  ([Ljava/lang/Class;)[Lorg/springframework/asm/Type;
- ([Ljava/lang/Class;)[Lorg/springframework/asm/Type;
+ ([Ljava/lang/Class;)[Lorg/springframework/asm/Type; # @PolyNull
 getUnboxedType
  (Lorg/springframework/asm/Type;)Lorg/springframework/asm/Type;
  (Lorg/springframework/asm/Type;)Lorg/springframework/asm/Type;
@@ -62,19 +62,19 @@ parseConstructor
  (Ljava/lang/String;)Lorg/springframework/cglib/core/Signature;
 parseConstructor
  ([Lorg/springframework/asm/Type;)Lorg/springframework/cglib/core/Signature;
- ([Lorg/springframework/asm/Type;)Lorg/springframework/cglib/core/Signature;
+ ([Lorg/springframework/asm/Type;)L1org/springframework/cglib/core/Signature;
 parseSignature
  (Ljava/lang/String;)Lorg/springframework/cglib/core/Signature;
- (Ljava/lang/String;)Lorg/springframework/cglib/core/Signature;
+ (Ljava/lang/String;)L1org/springframework/cglib/core/Signature;
 parseType
  (Ljava/lang/String;)Lorg/springframework/asm/Type;
  (Ljava/lang/String;)Lorg/springframework/asm/Type;
 parseTypes
  (Ljava/lang/String;)[Lorg/springframework/asm/Type;
- (Ljava/lang/String;)[Lorg/springframework/asm/Type;
+ (Ljava/lang/String;)[1Lorg/springframework/asm/Type;
 toInternalNames
  ([Lorg/springframework/asm/Type;)[Ljava/lang/String;
- ([Lorg/springframework/asm/Type;)[Ljava/lang/String;
+ ([Lorg/springframework/asm/Type;)[Ljava/lang/String; # @PolyNull
 upperFirst
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;

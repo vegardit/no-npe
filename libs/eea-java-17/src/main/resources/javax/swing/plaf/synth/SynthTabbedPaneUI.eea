@@ -2,20 +2,20 @@ class javax/swing/plaf/synth/SynthTabbedPaneUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 calculateTabWidth
  (IILjava/awt/FontMetrics;)I
  (IILjava/awt/FontMetrics;)I
 createLayoutManager
  ()Ljava/awt/LayoutManager;
- ()Ljava/awt/LayoutManager;
+ ()L1java/awt/LayoutManager; # @Inherited(javax.swing.plaf.basic.BasicTabbedPaneUI)
 createMouseListener
  ()Ljava/awt/event/MouseListener;
- ()Ljava/awt/event/MouseListener;
+ ()L1java/awt/event/MouseListener; # @Inherited(javax.swing.plaf.basic.BasicTabbedPaneUI)
 createScrollButton
  (I)Ljavax/swing/JButton;
- (I)Ljavax/swing/JButton;
+ (I)L1javax/swing/JButton; # @Inherited(javax.swing.plaf.basic.BasicTabbedPaneUI)
 getContext
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;

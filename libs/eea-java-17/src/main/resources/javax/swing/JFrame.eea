@@ -21,7 +21,7 @@ addImpl
  (Ljava/awt/Component;Ljava/lang/Object;I)V
 createRootPane
  ()Ljavax/swing/JRootPane;
- ()Ljavax/swing/JRootPane;
+ ()L1javax/swing/JRootPane;
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -33,7 +33,7 @@ getGlassPane
  ()Ljava/awt/Component;
 getGraphics
  ()Ljava/awt/Graphics;
- ()Ljava/awt/Graphics;
+ ()L0java/awt/Graphics; # @Inherited(java.awt.Component)
 getJMenuBar
  ()Ljavax/swing/JMenuBar;
  ()Ljavax/swing/JMenuBar;
@@ -48,7 +48,7 @@ getTransferHandler
  ()Ljavax/swing/TransferHandler;
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.awt.Frame)
 processWindowEvent
  (Ljava/awt/event/WindowEvent;)V
  (Ljava/awt/event/WindowEvent;)V

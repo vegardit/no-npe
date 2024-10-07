@@ -47,13 +47,13 @@ addServlet
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
 createFilter
  <T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)TT;
- <T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)T1T;
 createListener
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)TT;
- <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)T1T;
 createServlet
  <T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)TT;
- <T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)TT;
+ <T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)T1T;
 declareRoles
  ([Ljava/lang/String;)V
  ([Ljava/lang/String;)V
@@ -113,7 +113,7 @@ getRequestCharacterEncoding
  ()L0java/lang/String;
 getRequestDispatcher
  (Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;
- (Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;
+ (Ljava/lang/String;)L1jakarta/servlet/RequestDispatcher;
 getResource
  (Ljava/lang/String;)Ljava/net/URL;
  (Ljava/lang/String;)L0java/net/URL;
@@ -122,7 +122,7 @@ getResourceAsStream
  (Ljava/lang/String;)L0java/io/InputStream;
 getResourceLocation
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
 getResourcePaths
  (Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
  (Ljava/lang/String;)L0java/util/Set<Ljava/lang/String;>;
@@ -131,7 +131,7 @@ getResponseCharacterEncoding
  ()L0java/lang/String;
 getServerInfo
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getServletContextName
  ()Ljava/lang/String;
  ()Ljava/lang/String;

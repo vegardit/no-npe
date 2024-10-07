@@ -2,16 +2,16 @@ class org/eclipse/ui/editors/text/StorageDocumentProvider
 
 createAnnotationModel
  (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
- (Ljava/lang/Object;)Lorg/eclipse/jface/text/source/IAnnotationModel;
+ (Ljava/lang/Object;)L0org/eclipse/jface/text/source/IAnnotationModel; # @Overrides(org.eclipse.ui.texteditor.AbstractDocumentProvider)
 createDocument
  (Ljava/lang/Object;)Lorg/eclipse/jface/text/IDocument;
- (Ljava/lang/Object;)Lorg/eclipse/jface/text/IDocument;
+ (Ljava/lang/Object;)L0org/eclipse/jface/text/IDocument; # @Overrides(org.eclipse.ui.texteditor.AbstractDocumentProvider)
 createElementInfo
  (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
- (Ljava/lang/Object;)Lorg/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo;
+ (Ljava/lang/Object;)L1org/eclipse/ui/texteditor/AbstractDocumentProvider$ElementInfo; # @Inherited(org.eclipse.ui.texteditor.AbstractDocumentProvider)
 createEmptyDocument
  ()Lorg/eclipse/jface/text/IDocument;
- ()Lorg/eclipse/jface/text/IDocument;
+ ()L1org/eclipse/jface/text/IDocument;
 doSaveDocument
  (Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;Z)V
  (Lorg/eclipse/core/runtime/IProgressMonitor;Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;Z)V
@@ -20,19 +20,19 @@ doUpdateStateCache
  (Ljava/lang/Object;)V
 getContentType
  (Ljava/lang/Object;)Lorg/eclipse/core/runtime/content/IContentType;
- (Ljava/lang/Object;)Lorg/eclipse/core/runtime/content/IContentType;
+ (Ljava/lang/Object;)L0org/eclipse/core/runtime/content/IContentType; # @Inherited(org.eclipse.ui.texteditor.AbstractDocumentProvider)
 getDefaultEncoding
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getEncoding
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L0java/lang/String;
 getOperationRunner
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/operation/IRunnableContext;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/operation/IRunnableContext;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L0org/eclipse/jface/operation/IRunnableContext;
 getPersistedEncoding
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L0java/lang/String;
 handleCoreException
  (Lorg/eclipse/core/runtime/CoreException;Ljava/lang/String;)V
  (Lorg/eclipse/core/runtime/CoreException;Ljava/lang/String;)V

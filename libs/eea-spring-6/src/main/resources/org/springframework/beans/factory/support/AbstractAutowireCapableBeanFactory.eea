@@ -50,16 +50,16 @@ copyConfigurationFrom
  (Lorg/springframework/beans/factory/config/ConfigurableBeanFactory;)V
 createBean
  (Ljava/lang/Class<*>;IZ)Ljava/lang/Object;
- (Ljava/lang/Class<*>;IZ)Ljava/lang/Object;
+ (Ljava/lang/Class<*>;IZ)L1java/lang/Object; # @Inherited(org.springframework.beans.factory.config.AutowireCapableBeanFactory)
 createBean
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)L1java/lang/Object; # @Inherited(org.springframework.beans.factory.support.AbstractBeanFactory)
 createBean
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T1T; # @Inherited(org.springframework.beans.factory.config.AutowireCapableBeanFactory)
 createBeanInstance
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;
- (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;
+ (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)L1org/springframework/beans/BeanWrapper;
 destroyBean
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
@@ -110,7 +110,7 @@ initializeBean
  (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Ljava/lang/Object;
 instantiateBean
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Lorg/springframework/beans/BeanWrapper;
- (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Lorg/springframework/beans/BeanWrapper;
+ (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)L1org/springframework/beans/BeanWrapper;
 instantiateUsingFactoryMethod
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Object;)Lorg/springframework/beans/BeanWrapper;

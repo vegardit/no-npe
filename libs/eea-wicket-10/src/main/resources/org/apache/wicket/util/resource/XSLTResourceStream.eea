@@ -8,16 +8,16 @@ class org/apache/wicket/util/resource/XSLTResourceStream
  (Lorg/apache/wicket/util/resource/IResourceStream;Lorg/apache/wicket/util/resource/IResourceStream;Ljavax/xml/transform/TransformerFactory;)V
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.apache.wicket.util.resource.AbstractResourceStream)
 getInputStream
  ()Ljava/io/InputStream;
- ()Ljava/io/InputStream;
+ ()L1java/io/InputStream;
 getParameters
  ()Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
- ()Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ ()L0java/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
 lastModifiedTime
  ()Ljava/time/Instant;
- ()Ljava/time/Instant;
+ ()L0java/time/Instant; # @Inherited(org.apache.wicket.util.resource.AbstractResourceStream)
 length
  ()Lorg/apache/wicket/util/lang/Bytes;
- ()Lorg/apache/wicket/util/lang/Bytes;
+ ()L0org/apache/wicket/util/lang/Bytes; # @Inherited(org.apache.wicket.util.resource.AbstractResourceStream)

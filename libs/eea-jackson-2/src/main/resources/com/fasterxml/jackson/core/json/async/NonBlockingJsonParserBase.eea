@@ -46,7 +46,7 @@ _findName
  (IIII)Ljava/lang/String;
 _getText2
  (Lcom/fasterxml/jackson/core/JsonToken;)Ljava/lang/String;
- (Lcom/fasterxml/jackson/core/JsonToken;)Ljava/lang/String;
+ (Lcom/fasterxml/jackson/core/JsonToken;)L0java/lang/String;
 _nonStdToken
  (I)Ljava/lang/String;
  (I)Ljava/lang/String;
@@ -76,10 +76,10 @@ getBinaryValue
  (Lcom/fasterxml/jackson/core/Base64Variant;)[B
 getEmbeddedObject
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 getInputSource
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 getText
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -88,7 +88,7 @@ getText
  (Ljava/io/Writer;)I
 getTextCharacters
  ()[C
- ()[C
+ ()[0C
 getValueAsString
  ()Ljava/lang/String;
  ()Ljava/lang/String;

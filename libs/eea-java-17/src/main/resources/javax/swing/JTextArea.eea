@@ -17,7 +17,7 @@ append
  (Ljava/lang/String;)V
 createDefaultModel
  ()Ljavax/swing/text/Document;
- ()Ljavax/swing/text/Document;
+ ()L1javax/swing/text/Document;
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -32,13 +32,13 @@ getScrollableUnitIncrement
  (Ljava/awt/Rectangle;II)I
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 insert
  (Ljava/lang/String;I)V
  (Ljava/lang/String;I)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.text.JTextComponent)
 replaceRange
  (Ljava/lang/String;II)V
  (Ljava/lang/String;II)V

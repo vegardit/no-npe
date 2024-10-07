@@ -17,16 +17,16 @@ bind
  (Ljavax/naming/Name;Ljava/lang/Object;)V
 composeName
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)L1java/lang/String;
 composeName
  (Ljavax/naming/Name;Ljavax/naming/Name;)Ljavax/naming/Name;
  (Ljavax/naming/Name;Ljavax/naming/Name;)Ljavax/naming/Name;
 createSubcontext
  (Ljava/lang/String;)Ljavax/naming/Context;
- (Ljava/lang/String;)Ljavax/naming/Context;
+ (Ljava/lang/String;)L1javax/naming/Context; # @Inherited(javax.naming.Context)
 createSubcontext
  (Ljavax/naming/Name;)Ljavax/naming/Context;
- (Ljavax/naming/Name;)Ljavax/naming/Context;
+ (Ljavax/naming/Name;)L1javax/naming/Context; # @Inherited(javax.naming.Context)
 destroySubcontext
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -47,13 +47,13 @@ getNameParser
  (Ljavax/naming/Name;)Ljavax/naming/NameParser;
 list
  (Ljava/lang/String;)Ljavax/naming/NamingEnumeration<Ljavax/naming/NameClassPair;>;
- (Ljava/lang/String;)Ljavax/naming/NamingEnumeration<Ljavax/naming/NameClassPair;>;
+ (Ljava/lang/String;)L1javax/naming/NamingEnumeration<Ljavax/naming/NameClassPair;>;
 list
  (Ljavax/naming/Name;)Ljavax/naming/NamingEnumeration<Ljavax/naming/NameClassPair;>;
  (Ljavax/naming/Name;)Ljavax/naming/NamingEnumeration<Ljavax/naming/NameClassPair;>;
 listBindings
  (Ljava/lang/String;)Ljavax/naming/NamingEnumeration<Ljavax/naming/Binding;>;
- (Ljava/lang/String;)Ljavax/naming/NamingEnumeration<Ljavax/naming/Binding;>;
+ (Ljava/lang/String;)L1javax/naming/NamingEnumeration<Ljavax/naming/Binding;>;
 listBindings
  (Ljavax/naming/Name;)Ljavax/naming/NamingEnumeration<Ljavax/naming/Binding;>;
  (Ljavax/naming/Name;)Ljavax/naming/NamingEnumeration<Ljavax/naming/Binding;>;

@@ -8,7 +8,7 @@ class org/apache/wicket/util/resource/FileResourceStream
  (Lorg/apache/wicket/util/file/File;)V
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.apache.wicket.util.resource.AbstractResourceStream)
 getFile
  ()Lorg/apache/wicket/util/file/File;
  ()Lorg/apache/wicket/util/file/File;
@@ -17,13 +17,13 @@ getInputStream
  ()Ljava/io/InputStream;
 lastModifiedTime
  ()Ljava/time/Instant;
- ()Ljava/time/Instant;
+ ()L0java/time/Instant; # @Inherited(org.apache.wicket.util.resource.AbstractResourceStream)
 length
  ()Lorg/apache/wicket/util/lang/Bytes;
- ()Lorg/apache/wicket/util/lang/Bytes;
+ ()L0org/apache/wicket/util/lang/Bytes; # @Inherited(org.apache.wicket.util.resource.AbstractResourceStream)
 locationAsString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String;
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

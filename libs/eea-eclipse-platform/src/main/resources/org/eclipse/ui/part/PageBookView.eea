@@ -2,7 +2,7 @@ class org/eclipse/ui/part/PageBookView
 
 createDefaultPage
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
- (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
+ (Lorg/eclipse/ui/part/PageBook;)L1org/eclipse/ui/part/IPage;
 createPartControl
  (Lorg/eclipse/swt/widgets/Composite;)V
  (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.WorkbenchPart)
@@ -23,10 +23,10 @@ getBootstrapPart
  ()Lorg/eclipse/ui/IWorkbenchPart;
 getCurrentContributingPart
  ()Lorg/eclipse/ui/IWorkbenchPart;
- ()Lorg/eclipse/ui/IWorkbenchPart;
+ ()L0org/eclipse/ui/IWorkbenchPart;
 getCurrentPage
  ()Lorg/eclipse/ui/part/IPage;
- ()Lorg/eclipse/ui/part/IPage;
+ ()L0org/eclipse/ui/part/IPage;
 getDefaultPage
  ()Lorg/eclipse/ui/part/IPage;
  ()Lorg/eclipse/ui/part/IPage;
@@ -38,7 +38,7 @@ getPageRec
  (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
 getPageRec
  (Lorg/eclipse/ui/part/IPage;)Lorg/eclipse/ui/part/PageBookView$PageRec;
- (Lorg/eclipse/ui/part/IPage;)Lorg/eclipse/ui/part/PageBookView$PageRec;
+ (Lorg/eclipse/ui/part/IPage;)L0org/eclipse/ui/part/PageBookView$PageRec;
 getPageSite
  (Lorg/eclipse/ui/part/IPage;)Lorg/eclipse/ui/part/PageSite;
  (Lorg/eclipse/ui/part/IPage;)Lorg/eclipse/ui/part/PageSite;
@@ -47,7 +47,7 @@ getSelectionProvider
  ()Lorg/eclipse/ui/part/PageBookView$SelectionProvider;
 getViewAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T;
 init
  (Lorg/eclipse/ui/IViewSite;)V
  (Lorg/eclipse/ui/IViewSite;)V

@@ -12,7 +12,7 @@ deserializerForCreator
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;[Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
 deserializerForNoArgsCreator
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
- (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
+ (Lcom/fasterxml/jackson/databind/DeserializationConfig;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)L1com/fasterxml/jackson/databind/JsonDeserializer<*>;
 
 _caseInsensitive
  Ljava/lang/Boolean;
@@ -56,7 +56,7 @@ _enumClass
  ()Ljava/lang/Class<*>;
 _fromInteger
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;I)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;I)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;I)L0java/lang/Object;
 _fromString
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Object;
@@ -65,7 +65,7 @@ _getToStringLookup
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Lcom/fasterxml/jackson/databind/util/CompactStringObjectMap;
 createContextual
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
- (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/BeanProperty;)L1com/fasterxml/jackson/databind/JsonDeserializer<*>; # @Inherited(com.fasterxml.jackson.databind.deser.ContextualDeserializer)
 deserialize
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;

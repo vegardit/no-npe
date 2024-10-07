@@ -39,7 +39,7 @@ addTab
  (Ljava/lang/String;Ljavax/swing/Icon;Ljava/awt/Component;Ljava/lang/String;)V
 createChangeListener
  ()Ljavax/swing/event/ChangeListener;
- ()Ljavax/swing/event/ChangeListener;
+ ()L1javax/swing/event/ChangeListener;
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -48,7 +48,7 @@ getBackgroundAt
  (I)Ljava/awt/Color;
 getBoundsAt
  (I)Ljava/awt/Rectangle;
- (I)Ljava/awt/Rectangle;
+ (I)L0java/awt/Rectangle;
 getChangeListeners
  ()[Ljavax/swing/event/ChangeListener;
  ()[Ljavax/swing/event/ChangeListener;
@@ -69,7 +69,7 @@ getModel
  ()Ljavax/swing/SingleSelectionModel;
 getSelectedComponent
  ()Ljava/awt/Component;
- ()Ljava/awt/Component;
+ ()L0java/awt/Component;
 getTabComponentAt
  (I)Ljava/awt/Component;
  (I)Ljava/awt/Component;
@@ -87,7 +87,7 @@ getUI
  ()Ljavax/swing/plaf/TabbedPaneUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 indexOfComponent
  (Ljava/awt/Component;)I
  (Ljava/awt/Component;)I
@@ -105,7 +105,7 @@ insertTab
  (Ljava/lang/String;Ljavax/swing/Icon;Ljava/awt/Component;Ljava/lang/String;I)V
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 remove
  (Ljava/awt/Component;)V
  (Ljava/awt/Component;)V

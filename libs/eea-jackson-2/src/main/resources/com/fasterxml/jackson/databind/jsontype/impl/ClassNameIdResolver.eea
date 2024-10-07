@@ -2,7 +2,7 @@ class com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver
 
 construct
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver;
- (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver;
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)L1com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver;
 
 _subTypeValidator
  Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;
@@ -22,7 +22,7 @@ _typeFromId
  (Ljava/lang/String;Lcom/fasterxml/jackson/databind/DatabindContext;)Lcom/fasterxml/jackson/databind/JavaType;
 getDescForKnownTypeIds
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Overrides(com.fasterxml.jackson.databind.jsontype.impl.TypeIdResolverBase)
 getMechanism
  ()Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;
  ()Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;

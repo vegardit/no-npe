@@ -8,7 +8,7 @@ clone
  ()L1java/lang/Object; # @Inherited(javax.swing.text.DefaultFormatter)
 getActions
  ()[Ljavax/swing/Action;
- ()[Ljavax/swing/Action;
+ ()[0Ljavax/swing/Action; # @Inherited(javax.swing.JFormattedTextField$AbstractFormatter)
 getFields
  (I)[Ljava/text/Format$Field;
  (I)[Ljava/text/Format$Field;
@@ -38,4 +38,4 @@ stringToValue
  (Ljava/lang/String;)Ljava/lang/Object;
 valueToString
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)L1java/lang/String; # @Inherited(javax.swing.text.DefaultFormatter)

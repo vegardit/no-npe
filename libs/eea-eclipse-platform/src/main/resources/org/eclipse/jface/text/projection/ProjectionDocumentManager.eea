@@ -2,13 +2,13 @@ class org/eclipse/jface/text/projection/ProjectionDocumentManager
 
 createMasterSlaveMapping
  (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/IDocumentInformationMapping;
- (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/IDocumentInformationMapping;
+ (Lorg/eclipse/jface/text/IDocument;)L0org/eclipse/jface/text/IDocumentInformationMapping; # @Overrides(org.eclipse.jface.text.ISlaveDocumentManager)
 createProjectionDocument
  (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/projection/ProjectionDocument;
- (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/projection/ProjectionDocument;
+ (Lorg/eclipse/jface/text/IDocument;)L1org/eclipse/jface/text/projection/ProjectionDocument;
 createSlaveDocument
  (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/IDocument;
- (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/jface/text/IDocument;)L1org/eclipse/jface/text/IDocument; # @Inherited(org.eclipse.jface.text.ISlaveDocumentManager)
 documentAboutToBeChanged
  (Lorg/eclipse/jface/text/DocumentEvent;)V
  (L1org/eclipse/jface/text/DocumentEvent;)V # @Inherited(org.eclipse.jface.text.IDocumentListener)
@@ -23,10 +23,10 @@ freeSlaveDocument
  (Lorg/eclipse/jface/text/IDocument;)V
 getMasterDocument
  (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/IDocument;
- (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/jface/text/IDocument;)L0org/eclipse/jface/text/IDocument;
 getSlaveDocuments
  (Lorg/eclipse/jface/text/IDocument;)[Lorg/eclipse/jface/text/IDocument;
- (Lorg/eclipse/jface/text/IDocument;)[Lorg/eclipse/jface/text/IDocument;
+ (Lorg/eclipse/jface/text/IDocument;)[0Lorg/eclipse/jface/text/IDocument;
 isSlaveDocument
  (Lorg/eclipse/jface/text/IDocument;)Z
  (Lorg/eclipse/jface/text/IDocument;)Z

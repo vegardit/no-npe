@@ -17,7 +17,7 @@ class org/eclipse/ui/console/IOConsole
  (Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;)V
 createPage
  (Lorg/eclipse/ui/console/IConsoleView;)Lorg/eclipse/ui/part/IPageBookViewPage;
- (Lorg/eclipse/ui/console/IConsoleView;)Lorg/eclipse/ui/part/IPageBookViewPage;
+ (Lorg/eclipse/ui/console/IConsoleView;)L1org/eclipse/ui/part/IPageBookViewPage; # @Inherited(org.eclipse.ui.console.TextConsole)
 getCharset
  ()Ljava/nio/charset/Charset;
  ()Ljava/nio/charset/Charset;
@@ -26,13 +26,13 @@ getEncoding
  ()Ljava/lang/String;
 getInputStream
  ()Lorg/eclipse/ui/console/IOConsoleInputStream;
- ()Lorg/eclipse/ui/console/IOConsoleInputStream;
+ ()L0org/eclipse/ui/console/IOConsoleInputStream;
 getPartitioner
  ()Lorg/eclipse/ui/console/IConsoleDocumentPartitioner;
  ()Lorg/eclipse/ui/console/IConsoleDocumentPartitioner;
 newOutputStream
  ()Lorg/eclipse/ui/console/IOConsoleOutputStream;
- ()Lorg/eclipse/ui/console/IOConsoleOutputStream;
+ ()L1org/eclipse/ui/console/IOConsoleOutputStream;
 setInputStream
  (Ljava/io/InputStream;)V
  (Ljava/io/InputStream;)V

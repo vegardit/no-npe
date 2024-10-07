@@ -2,10 +2,10 @@ class com/fasterxml/jackson/core/json/JsonWriteContext
 
 createRootContext
  ()Lcom/fasterxml/jackson/core/json/JsonWriteContext;
- ()Lcom/fasterxml/jackson/core/json/JsonWriteContext;
+ ()L1com/fasterxml/jackson/core/json/JsonWriteContext;
 createRootContext
  (Lcom/fasterxml/jackson/core/json/DupDetector;)Lcom/fasterxml/jackson/core/json/JsonWriteContext;
- (Lcom/fasterxml/jackson/core/json/DupDetector;)Lcom/fasterxml/jackson/core/json/JsonWriteContext;
+ (Lcom/fasterxml/jackson/core/json/DupDetector;)L1com/fasterxml/jackson/core/json/JsonWriteContext;
 
 _child
  Lcom/fasterxml/jackson/core/json/JsonWriteContext;
@@ -34,22 +34,22 @@ clearAndGetParent
  ()Lcom/fasterxml/jackson/core/json/JsonWriteContext;
 createChildArrayContext
  ()Lcom/fasterxml/jackson/core/json/JsonWriteContext;
- ()Lcom/fasterxml/jackson/core/json/JsonWriteContext;
+ ()L1com/fasterxml/jackson/core/json/JsonWriteContext;
 createChildArrayContext
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/core/json/JsonWriteContext;
- (Ljava/lang/Object;)Lcom/fasterxml/jackson/core/json/JsonWriteContext;
+ (Ljava/lang/Object;)L1com/fasterxml/jackson/core/json/JsonWriteContext;
 createChildObjectContext
  ()Lcom/fasterxml/jackson/core/json/JsonWriteContext;
- ()Lcom/fasterxml/jackson/core/json/JsonWriteContext;
+ ()L1com/fasterxml/jackson/core/json/JsonWriteContext;
 createChildObjectContext
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/core/json/JsonWriteContext;
- (Ljava/lang/Object;)Lcom/fasterxml/jackson/core/json/JsonWriteContext;
+ (Ljava/lang/Object;)L1com/fasterxml/jackson/core/json/JsonWriteContext;
 getCurrentName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getCurrentValue
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonStreamContext)
 getDupDetector
  ()Lcom/fasterxml/jackson/core/json/DupDetector;
  ()Lcom/fasterxml/jackson/core/json/DupDetector;

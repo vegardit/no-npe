@@ -113,7 +113,7 @@ getEncodedString
  (Ljava/lang/String;)Ljava/lang/String;
 getEncodedString
  (Ljava/lang/String;Lorg/apache/commons/configuration2/ConfigurationDecoder;)Ljava/lang/String;
- (Ljava/lang/String;Lorg/apache/commons/configuration2/ConfigurationDecoder;)Ljava/lang/String;
+ (Ljava/lang/String;Lorg/apache/commons/configuration2/ConfigurationDecoder;)L0java/lang/String;
 getFloat
  (Ljava/lang/String;)F
  (Ljava/lang/String;)F
@@ -143,16 +143,16 @@ getKeys
  (Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
 getKeys
  (Ljava/lang/String;Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
- (Ljava/lang/String;Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
+ (Ljava/lang/String;Ljava/lang/String;)L0java/util/Iterator<Ljava/lang/String;>; # @Inherited(org.apache.commons.configuration2.ImmutableConfiguration)
 getKeysInternal
  ()Ljava/util/Iterator<Ljava/lang/String;>;
  ()Ljava/util/Iterator<Ljava/lang/String;>;
 getKeysInternal
  (Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
- (Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
+ (Ljava/lang/String;)L1java/util/Iterator<Ljava/lang/String;>;
 getKeysInternal
  (Ljava/lang/String;Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
- (Ljava/lang/String;Ljava/lang/String;)Ljava/util/Iterator<Ljava/lang/String;>;
+ (Ljava/lang/String;Ljava/lang/String;)L1java/util/Iterator<Ljava/lang/String;>;
 getList
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/Object;>;
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/Object;>;
@@ -164,7 +164,7 @@ getList
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;)Ljava/util/List<TT;>;
 getList
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;Ljava/util/List<TT;>;)Ljava/util/List<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;Ljava/util/List<TT;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/lang/String;Ljava/util/List<TT;>;)L0java/util/List<TT;>;
 getListDelimiterHandler
  ()Lorg/apache/commons/configuration2/convert/ListDelimiterHandler;
  ()Lorg/apache/commons/configuration2/convert/ListDelimiterHandler;
@@ -185,7 +185,7 @@ getProperties
  (Ljava/lang/String;)Ljava/util/Properties;
 getProperties
  (Ljava/lang/String;Ljava/util/Properties;)Ljava/util/Properties;
- (Ljava/lang/String;Ljava/util/Properties;)Ljava/util/Properties;
+ (Ljava/lang/String;Ljava/util/Properties;)L1java/util/Properties;
 getProperty
  (Ljava/lang/String;)Ljava/lang/Object;
  (Ljava/lang/String;)Ljava/lang/Object;
@@ -272,7 +272,7 @@ setSynchronizer
  (Lorg/apache/commons/configuration2/sync/Synchronizer;)V
 subset
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
- (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)L1org/apache/commons/configuration2/Configuration;
 unlock
  (Lorg/apache/commons/configuration2/sync/LockMode;)V
  (Lorg/apache/commons/configuration2/sync/LockMode;)V

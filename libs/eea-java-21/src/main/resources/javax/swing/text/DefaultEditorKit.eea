@@ -156,19 +156,19 @@ writableAction
 
 createCaret
  ()Ljavax/swing/text/Caret;
- ()Ljavax/swing/text/Caret;
+ ()L0javax/swing/text/Caret; # @Overrides(javax.swing.text.EditorKit)
 createDefaultDocument
  ()Ljavax/swing/text/Document;
- ()Ljavax/swing/text/Document;
+ ()L1javax/swing/text/Document; # @Inherited(javax.swing.text.EditorKit)
 getActions
  ()[Ljavax/swing/Action;
- ()[Ljavax/swing/Action;
+ ()[1Ljavax/swing/Action;
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 getViewFactory
  ()Ljavax/swing/text/ViewFactory;
- ()Ljavax/swing/text/ViewFactory;
+ ()L0javax/swing/text/ViewFactory;
 read
  (Ljava/io/InputStream;Ljavax/swing/text/Document;I)V
  (Ljava/io/InputStream;Ljavax/swing/text/Document;I)V

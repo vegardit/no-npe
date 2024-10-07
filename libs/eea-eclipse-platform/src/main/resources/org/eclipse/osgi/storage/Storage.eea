@@ -21,29 +21,29 @@ LIB_TEMP
 
 createStorage
  (Lorg/eclipse/osgi/internal/framework/EquinoxContainer;)Lorg/eclipse/osgi/storage/Storage;
- (Lorg/eclipse/osgi/internal/framework/EquinoxContainer;)Lorg/eclipse/osgi/storage/Storage;
+ (Lorg/eclipse/osgi/internal/framework/EquinoxContainer;)L1org/eclipse/osgi/storage/Storage;
 findEntries
  (Ljava/util/List<Lorg/eclipse/osgi/storage/BundleInfo$Generation;>;Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Enumeration<Ljava/net/URL;>;
- (Ljava/util/List<Lorg/eclipse/osgi/storage/BundleInfo$Generation;>;Ljava/lang/String;Ljava/lang/String;I)Ljava/util/Enumeration<Ljava/net/URL;>;
+ (Ljava/util/List<Lorg/eclipse/osgi/storage/BundleInfo$Generation;>;Ljava/lang/String;Ljava/lang/String;I)L0java/util/Enumeration<Ljava/net/URL;>;
 listEntryPaths
  (Ljava/util/List<Lorg/eclipse/osgi/storage/bundlefile/BundleFile;>;Ljava/lang/String;Ljava/lang/String;I)Ljava/util/List<Ljava/lang/String;>;
- (Ljava/util/List<Lorg/eclipse/osgi/storage/bundlefile/BundleFile;>;Ljava/lang/String;Ljava/lang/String;I)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/util/List<Lorg/eclipse/osgi/storage/bundlefile/BundleFile;>;Ljava/lang/String;Ljava/lang/String;I)L1java/util/List<Ljava/lang/String;>;
 sanitizeFilterInput
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
 
 copyToTempLibrary
  (Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/lang/String;)Ljava/lang/String;
- (Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/lang/String;)L0java/lang/String;
 createBundleFile
  (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;ZZ)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
- (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;ZZ)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+ (Ljava/io/File;Lorg/eclipse/osgi/storage/BundleInfo$Generation;ZZ)L1org/eclipse/osgi/storage/bundlefile/BundleFile;
 createNestedBundleFile
  (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
- (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+ (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;)L1org/eclipse/osgi/storage/bundlefile/BundleFile;
 createNestedBundleFile
  (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/util/Collection<Ljava/lang/String;>;)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
- (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/util/Collection<Ljava/lang/String;>;)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+ (Ljava/lang/String;Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Ljava/util/Collection<Ljava/lang/String;>;)L1org/eclipse/osgi/storage/bundlefile/BundleFile;
 getAdaptor
  ()Lorg/eclipse/osgi/container/ModuleContainerAdaptor;
  ()Lorg/eclipse/osgi/container/ModuleContainerAdaptor;
@@ -100,4 +100,4 @@ update
  (Lorg/eclipse/osgi/container/Module;Ljava/io/InputStream;)Lorg/eclipse/osgi/storage/BundleInfo$Generation;
 wrapBundleFile
  (Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Z)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
- (Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Z)Lorg/eclipse/osgi/storage/bundlefile/BundleFile;
+ (Lorg/eclipse/osgi/storage/bundlefile/BundleFile;Lorg/eclipse/osgi/storage/BundleInfo$Generation;Z)L1org/eclipse/osgi/storage/bundlefile/BundleFile;

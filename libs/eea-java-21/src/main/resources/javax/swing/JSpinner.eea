@@ -8,7 +8,7 @@ addChangeListener
  (L1javax/swing/event/ChangeListener;)V
 createEditor
  (Ljavax/swing/SpinnerModel;)Ljavax/swing/JComponent;
- (Ljavax/swing/SpinnerModel;)Ljavax/swing/JComponent;
+ (Ljavax/swing/SpinnerModel;)L1javax/swing/JComponent;
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -32,7 +32,7 @@ getUI
  ()Ljavax/swing/plaf/SpinnerUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 getValue
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;

@@ -5,7 +5,7 @@ class org/apache/wicket/core/util/resource/UrlResourceStream
  (Ljava/net/URL;)V
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.apache.wicket.util.resource.AbstractResourceStream)
 getInputStream
  ()Ljava/io/InputStream;
  ()Ljava/io/InputStream;
@@ -14,10 +14,10 @@ getURL
  ()Ljava/net/URL;
 lastModifiedTime
  ()Ljava/time/Instant;
- ()Ljava/time/Instant;
+ ()L0java/time/Instant; # @Inherited(org.apache.wicket.util.resource.AbstractResourceStream)
 length
  ()Lorg/apache/wicket/util/lang/Bytes;
- ()Lorg/apache/wicket/util/lang/Bytes;
+ ()L0org/apache/wicket/util/lang/Bytes; # @Inherited(org.apache.wicket.util.resource.AbstractResourceStream)
 locationAsString
  ()Ljava/lang/String;
  ()Ljava/lang/String;

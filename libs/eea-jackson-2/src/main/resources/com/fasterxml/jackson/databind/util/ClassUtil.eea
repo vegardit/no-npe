@@ -2,13 +2,13 @@ class com/fasterxml/jackson/databind/util/ClassUtil
 
 apostrophed
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
 backticked
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
 canBeABeanType
  (Ljava/lang/Class<*>;)Ljava/lang/String;
- (Ljava/lang/Class<*>;)Ljava/lang/String;
+ (Ljava/lang/Class<*>;)L0java/lang/String;
 checkAndFixAccess
  (Ljava/lang/reflect/Member;)V
  (Ljava/lang/reflect/Member;)V
@@ -29,7 +29,7 @@ closeOnFailAndThrowAsIOE
  (Lcom/fasterxml/jackson/core/JsonGenerator;Ljava/lang/Exception;)V
 createInstance
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)T0T;
 defaultValue
  (Ljava/lang/Class<*>;)Ljava/lang/Object;
  (Ljava/lang/Class<*>;)Ljava/lang/Object;
@@ -44,7 +44,7 @@ findClassAnnotations
  (Ljava/lang/Class<*>;)[Ljava/lang/annotation/Annotation;
 findConstructor
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)Ljava/lang/reflect/Constructor<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)Ljava/lang/reflect/Constructor<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)L0java/lang/reflect/Constructor<TT;>;
 findEnumType
  (Ljava/lang/Class<*>;)Ljava/lang/Class<+Ljava/lang/Enum<*>;>;
  (Ljava/lang/Class<*>;)Ljava/lang/Class<+Ljava/lang/Enum<*>;>;
@@ -59,7 +59,7 @@ findEnumType
  (Ljava/util/EnumSet<*>;)Ljava/lang/Class<+Ljava/lang/Enum<*>;>;
 findFirstAnnotatedEnumValue
  <T::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<Ljava/lang/Enum<*>;>;Ljava/lang/Class<TT;>;)Ljava/lang/Enum<*>;
- <T::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<Ljava/lang/Enum<*>;>;Ljava/lang/Class<TT;>;)Ljava/lang/Enum<*>;
+ <T::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<Ljava/lang/Enum<*>;>;Ljava/lang/Class<TT;>;)L0java/lang/Enum<*>;
 findRawSuperTypes
  (Ljava/lang/Class<*>;Ljava/lang/Class<*>;Z)Ljava/util/List<Ljava/lang/Class<*>;>;
  (Ljava/lang/Class<*>;Ljava/lang/Class<*>;Z)Ljava/util/List<Ljava/lang/Class<*>;>;
@@ -104,7 +104,7 @@ getGenericSuperclass
  (Ljava/lang/Class<*>;)Ljava/lang/reflect/Type;
 getOuterClass
  (Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
- (Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
+ (Ljava/lang/Class<*>;)L0java/lang/Class<*>;
 getPackageName
  (Ljava/lang/Class<*>;)Ljava/lang/String;
  (Ljava/lang/Class<*>;)Ljava/lang/String;
@@ -113,7 +113,7 @@ getRootCause
  (Ljava/lang/Throwable;)Ljava/lang/Throwable;
 getTypeDescription
  (Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/String;
- (Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/String;
+ (Lcom/fasterxml/jackson/databind/JavaType;)L1java/lang/String;
 hasClass
  (Ljava/lang/Object;Ljava/lang/Class<*>;)Z
  (Ljava/lang/Object;Ljava/lang/Class<*>;)Z
@@ -149,7 +149,7 @@ isJacksonStdImpl
  (Ljava/lang/Object;)Z
 isLocalType
  (Ljava/lang/Class<*>;Z)Ljava/lang/String;
- (Ljava/lang/Class<*>;Z)Ljava/lang/String;
+ (Ljava/lang/Class<*>;Z)L0java/lang/String;
 isNonStaticInnerClass
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z
@@ -182,10 +182,10 @@ nonNullString
  (Ljava/lang/String;)Ljava/lang/String;
 nullOrToString
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String; # @PolyNull
 primitiveType
  (Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
- (Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
+ (Ljava/lang/Class<*>;)L0java/lang/Class<*>;
 quotedOr
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
@@ -224,4 +224,4 @@ verifyMustOverride
  (Ljava/lang/Class<*>;Ljava/lang/Object;Ljava/lang/String;)V
 wrapperType
  (Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
- (Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
+ (Ljava/lang/Class<*>;)L1java/lang/Class<*>;

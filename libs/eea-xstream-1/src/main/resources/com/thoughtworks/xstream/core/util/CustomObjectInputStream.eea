@@ -5,7 +5,7 @@ getInstance
  (Lcom/thoughtworks/xstream/converters/DataHolder;Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream$StreamCallback;)Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream;
 getInstance
  (Lcom/thoughtworks/xstream/converters/DataHolder;Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream$StreamCallback;Lcom/thoughtworks/xstream/core/ClassLoaderReference;)Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream;
- (Lcom/thoughtworks/xstream/converters/DataHolder;Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream$StreamCallback;Lcom/thoughtworks/xstream/core/ClassLoaderReference;)Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream;
+ (Lcom/thoughtworks/xstream/converters/DataHolder;Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream$StreamCallback;Lcom/thoughtworks/xstream/core/ClassLoaderReference;)L1com/thoughtworks/xstream/core/util/CustomObjectInputStream;
 getInstance
  (Lcom/thoughtworks/xstream/converters/DataHolder;Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream$StreamCallback;Ljava/lang/ClassLoader;)Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream;
  (Lcom/thoughtworks/xstream/converters/DataHolder;Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream$StreamCallback;Ljava/lang/ClassLoader;)Lcom/thoughtworks/xstream/core/util/CustomObjectInputStream;
@@ -33,7 +33,7 @@ read
  ([1BII)I # @Inherited(java.io.ObjectInputStream)
 readFields
  ()Ljava/io/ObjectInputStream$GetField;
- ()Ljava/io/ObjectInputStream$GetField;
+ ()L1java/io/ObjectInputStream$GetField; # @Inherited(java.io.ObjectInputStream)
 readFully
  ([B)V
  ([1B)V # @Inherited(java.io.ObjectInputStream)
@@ -45,7 +45,7 @@ readLine
  ()L0java/lang/String; # @Inherited(java.io.ObjectInputStream)
 readObjectOverride
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(java.io.ObjectInputStream)
 readUTF
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.io.ObjectInputStream)

@@ -16,16 +16,16 @@ fPreferenceStore
  (Lorg/eclipse/jface/preference/IPreferenceStore;)V
 getAnnotationHover
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/source/IAnnotationHover;
- (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/source/IAnnotationHover;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L1org/eclipse/jface/text/source/IAnnotationHover; # @Overrides(org.eclipse.jface.text.source.SourceViewerConfiguration)
 getConfiguredTextHoverStateMasks
  (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[I
- (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[I
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[0I # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
 getHyperlinkDetectorTargets
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;>;
- (Lorg/eclipse/jface/text/source/ISourceViewer;)Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;>;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L1java/util/Map<Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;>;
 getHyperlinkDetectors
  (Lorg/eclipse/jface/text/source/ISourceViewer;)[Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;
- (Lorg/eclipse/jface/text/source/ISourceViewer;)[Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)[0Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;
 getHyperlinkPresenter
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/hyperlink/IHyperlinkPresenter;
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/hyperlink/IHyperlinkPresenter;
@@ -34,7 +34,7 @@ getHyperlinkStateMask
  (Lorg/eclipse/jface/text/source/ISourceViewer;)I
 getIndentPrefixes
  (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[Ljava/lang/String;
- (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[Ljava/lang/String;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[0Ljava/lang/String;
 getLineSpacing
  (Lorg/eclipse/jface/text/source/ISourceViewer;)I
  (Lorg/eclipse/jface/text/source/ISourceViewer;)I
@@ -43,10 +43,10 @@ getOverviewRulerAnnotationHover
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/source/IAnnotationHover;
 getQuickAssistAssistant
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/quickassist/IQuickAssistAssistant;
- (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/quickassist/IQuickAssistAssistant;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L0org/eclipse/jface/text/quickassist/IQuickAssistAssistant; # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
 getReconciler
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/reconciler/IReconciler;
- (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/reconciler/IReconciler;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L0org/eclipse/jface/text/reconciler/IReconciler; # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
 getRegisteredHyperlinkDetectors
  (Lorg/eclipse/jface/text/source/ISourceViewer;)[Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;
  (Lorg/eclipse/jface/text/source/ISourceViewer;)[Lorg/eclipse/jface/text/hyperlink/IHyperlinkDetector;
@@ -55,7 +55,7 @@ getTabWidth
  (Lorg/eclipse/jface/text/source/ISourceViewer;)I
 getTextHover
  (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)Lorg/eclipse/jface/text/ITextHover;
- (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)Lorg/eclipse/jface/text/ITextHover;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)L1org/eclipse/jface/text/ITextHover; # @Overrides(org.eclipse.jface.text.source.SourceViewerConfiguration)
 getUndoManager
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/IUndoManager;
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/IUndoManager;

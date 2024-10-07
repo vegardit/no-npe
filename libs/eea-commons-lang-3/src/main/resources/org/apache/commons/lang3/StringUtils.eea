@@ -150,10 +150,10 @@ equalsIgnoreCase
  (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 firstNonBlank
  <T::Ljava/lang/CharSequence;>([TT;)TT;
- <T::Ljava/lang/CharSequence;>([TT;)TT;
+ <T::Ljava/lang/CharSequence;>([TT;)T0T;
 firstNonEmpty
  <T::Ljava/lang/CharSequence;>([TT;)TT;
- <T::Ljava/lang/CharSequence;>([TT;)TT;
+ <T::Ljava/lang/CharSequence;>([TT;)T0T;
 getBytes
  (Ljava/lang/String;Ljava/lang/String;)[B
  (Ljava/lang/String;Ljava/lang/String;)[1B
@@ -288,10 +288,10 @@ isWhitespace
  (Ljava/lang/CharSequence;)Z
 join
  (Ljava/lang/Iterable<*>;C)Ljava/lang/String;
- (Ljava/lang/Iterable<*>;C)Ljava/lang/String;
+ (Ljava/lang/Iterable<*>;C)L0java/lang/String;
 join
  (Ljava/lang/Iterable<*>;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/Iterable<*>;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/Iterable<*>;Ljava/lang/String;)L0java/lang/String;
 join
  (Ljava/util/Iterator<*>;C)Ljava/lang/String;
  (Ljava/util/Iterator<*>;C)Ljava/lang/String;
@@ -348,10 +348,10 @@ join
  ([Ljava/lang/Object;CII)Ljava/lang/String;
 join
  ([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
- ([Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+ ([Ljava/lang/Object;Ljava/lang/String;)L0java/lang/String;
 join
  ([Ljava/lang/Object;Ljava/lang/String;II)Ljava/lang/String;
- ([Ljava/lang/Object;Ljava/lang/String;II)Ljava/lang/String;
+ ([Ljava/lang/Object;Ljava/lang/String;II)L0java/lang/String;
 join
  ([SC)Ljava/lang/String;
  ([SC)Ljava/lang/String;
@@ -426,7 +426,7 @@ ordinalIndexOf
  (Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)I
 overlay
  (Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String; # @PolyNull
 prependIfMissing
  (Ljava/lang/String;Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
  (Ljava/lang/String;Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
@@ -516,7 +516,7 @@ replacePattern
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 reverse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @PolyNull
 reverseDelimited
  (Ljava/lang/String;C)Ljava/lang/String;
  (Ljava/lang/String;C)Ljava/lang/String;
@@ -645,10 +645,10 @@ substringBetween
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 substringBetween
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)L0java/lang/String;
 substringsBetween
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[0Ljava/lang/String;
 swapCase
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -657,7 +657,7 @@ toCodePoints
  (Ljava/lang/CharSequence;)[I
 toEncodedString
  ([BLjava/nio/charset/Charset;)Ljava/lang/String;
- ([BLjava/nio/charset/Charset;)Ljava/lang/String;
+ ([BLjava/nio/charset/Charset;)L1java/lang/String;
 toRootLowerCase
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -666,7 +666,7 @@ toRootUpperCase
  (Ljava/lang/String;)Ljava/lang/String;
 toString
  ([BLjava/lang/String;)Ljava/lang/String;
- ([BLjava/lang/String;)Ljava/lang/String;
+ ([BLjava/lang/String;)L1java/lang/String;
 trim
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;

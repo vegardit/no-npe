@@ -5,22 +5,22 @@ class java/awt/image/BandedSampleModel
  (IIII[I[I)V
 createCompatibleSampleModel
  (II)Ljava/awt/image/SampleModel;
- (II)Ljava/awt/image/SampleModel;
+ (II)L1java/awt/image/SampleModel; # @Inherited(java.awt.image.ComponentSampleModel)
 createDataBuffer
  ()Ljava/awt/image/DataBuffer;
- ()Ljava/awt/image/DataBuffer;
+ ()L1java/awt/image/DataBuffer; # @Inherited(java.awt.image.ComponentSampleModel)
 createSubsetSampleModel
  ([I)Ljava/awt/image/SampleModel;
- ([I)Ljava/awt/image/SampleModel;
+ ([I)L1java/awt/image/SampleModel; # @Inherited(java.awt.image.ComponentSampleModel)
 getDataElements
  (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)Ljava/lang/Object;
  (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)Ljava/lang/Object;
 getPixel
  (II[ILjava/awt/image/DataBuffer;)[I
- (II[ILjava/awt/image/DataBuffer;)[I
+ (II[ILjava/awt/image/DataBuffer;)[1I # @Inherited(java.awt.image.ComponentSampleModel)
 getPixels
  (IIII[ILjava/awt/image/DataBuffer;)[I
- (IIII[ILjava/awt/image/DataBuffer;)[I
+ (IIII[ILjava/awt/image/DataBuffer;)[1I # @Inherited(java.awt.image.ComponentSampleModel)
 getSample
  (IIILjava/awt/image/DataBuffer;)I
  (IIILjava/awt/image/DataBuffer;)I
@@ -32,7 +32,7 @@ getSampleFloat
  (IIILjava/awt/image/DataBuffer;)F
 getSamples
  (IIIII[ILjava/awt/image/DataBuffer;)[I
- (IIIII[ILjava/awt/image/DataBuffer;)[I
+ (IIIII[ILjava/awt/image/DataBuffer;)[1I # @Inherited(java.awt.image.ComponentSampleModel)
 setDataElements
  (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)V
  (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)V

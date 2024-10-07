@@ -72,7 +72,7 @@ showInputDialog
  (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)Ljava/lang/String;
 showInputDialog
  (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)L0java/lang/Object;
 showInputDialog
  (Ljava/lang/Object;)Ljava/lang/String;
  (Ljava/lang/Object;)Ljava/lang/String;
@@ -99,7 +99,7 @@ showInternalInputDialog
  (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)Ljava/lang/String;
 showInternalInputDialog
  (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;ILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)L0java/lang/Object;
 showInternalMessageDialog
  (Ljava/awt/Component;Ljava/lang/Object;)V
  (Ljava/awt/Component;Ljava/lang/Object;)V
@@ -170,13 +170,13 @@ value
  (Ljava/lang/Object;IILjavax/swing/Icon;[Ljava/lang/Object;Ljava/lang/Object;)V
 createDialog
  (Ljava/awt/Component;Ljava/lang/String;)Ljavax/swing/JDialog;
- (Ljava/awt/Component;Ljava/lang/String;)Ljavax/swing/JDialog;
+ (Ljava/awt/Component;Ljava/lang/String;)L1javax/swing/JDialog;
 createDialog
  (Ljava/lang/String;)Ljavax/swing/JDialog;
- (Ljava/lang/String;)Ljavax/swing/JDialog;
+ (Ljava/lang/String;)L1javax/swing/JDialog;
 createInternalFrame
  (Ljava/awt/Component;Ljava/lang/String;)Ljavax/swing/JInternalFrame;
- (Ljava/awt/Component;Ljava/lang/String;)Ljavax/swing/JInternalFrame;
+ (Ljava/awt/Component;Ljava/lang/String;)L1javax/swing/JInternalFrame;
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -206,13 +206,13 @@ getUI
  ()Ljavax/swing/plaf/OptionPaneUI;
 getUIClassID
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 getValue
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
 paramString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 setIcon
  (Ljavax/swing/Icon;)V
  (Ljavax/swing/Icon;)V

@@ -2,35 +2,35 @@ class javax/swing/plaf/metal/MetalFileChooserUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
 
 <init>
  (Ljavax/swing/JFileChooser;)V
  (Ljavax/swing/JFileChooser;)V
 createActionMap
  ()Ljavax/swing/ActionMap;
- ()Ljavax/swing/ActionMap;
+ ()L1javax/swing/ActionMap;
 createDetailsView
  (Ljavax/swing/JFileChooser;)Ljavax/swing/JPanel;
- (Ljavax/swing/JFileChooser;)Ljavax/swing/JPanel;
+ (Ljavax/swing/JFileChooser;)L1javax/swing/JPanel;
 createDirectoryComboBoxModel
  (Ljavax/swing/JFileChooser;)Ljavax/swing/plaf/metal/MetalFileChooserUI$DirectoryComboBoxModel;
- (Ljavax/swing/JFileChooser;)Ljavax/swing/plaf/metal/MetalFileChooserUI$DirectoryComboBoxModel;
+ (Ljavax/swing/JFileChooser;)L1javax/swing/plaf/metal/MetalFileChooserUI$DirectoryComboBoxModel;
 createFilterComboBoxModel
  ()Ljavax/swing/plaf/metal/MetalFileChooserUI$FilterComboBoxModel;
- ()Ljavax/swing/plaf/metal/MetalFileChooserUI$FilterComboBoxModel;
+ ()L1javax/swing/plaf/metal/MetalFileChooserUI$FilterComboBoxModel;
 createFilterComboBoxRenderer
  ()Ljavax/swing/plaf/metal/MetalFileChooserUI$FilterComboBoxRenderer;
- ()Ljavax/swing/plaf/metal/MetalFileChooserUI$FilterComboBoxRenderer;
+ ()L1javax/swing/plaf/metal/MetalFileChooserUI$FilterComboBoxRenderer;
 createList
  (Ljavax/swing/JFileChooser;)Ljavax/swing/JPanel;
- (Ljavax/swing/JFileChooser;)Ljavax/swing/JPanel;
+ (Ljavax/swing/JFileChooser;)L1javax/swing/JPanel;
 createListSelectionListener
  (Ljavax/swing/JFileChooser;)Ljavax/swing/event/ListSelectionListener;
- (Ljavax/swing/JFileChooser;)Ljavax/swing/event/ListSelectionListener;
+ (Ljavax/swing/JFileChooser;)L1javax/swing/event/ListSelectionListener; # @Inherited(javax.swing.plaf.basic.BasicFileChooserUI)
 createPropertyChangeListener
  (Ljavax/swing/JFileChooser;)Ljava/beans/PropertyChangeListener;
- (Ljavax/swing/JFileChooser;)Ljava/beans/PropertyChangeListener;
+ (Ljavax/swing/JFileChooser;)L1java/beans/PropertyChangeListener; # @Overrides(javax.swing.plaf.basic.BasicFileChooserUI)
 ensureFileIsVisible
  (Ljavax/swing/JFileChooser;Ljava/io/File;)V
  (Ljavax/swing/JFileChooser;Ljava/io/File;)V
@@ -39,7 +39,7 @@ getActionMap
  ()Ljavax/swing/ActionMap;
 getApproveButton
  (Ljavax/swing/JFileChooser;)Ljavax/swing/JButton;
- (Ljavax/swing/JFileChooser;)Ljavax/swing/JButton;
+ (Ljavax/swing/JFileChooser;)L0javax/swing/JButton; # @Inherited(javax.swing.plaf.basic.BasicFileChooserUI)
 getBottomPanel
  ()Ljavax/swing/JPanel;
  ()Ljavax/swing/JPanel;
@@ -48,19 +48,19 @@ getButtonPanel
  ()Ljavax/swing/JPanel;
 getDirectoryName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(javax.swing.plaf.basic.BasicFileChooserUI)
 getFileName
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(javax.swing.plaf.basic.BasicFileChooserUI)
 getMaximumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension;
 getMinimumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension;
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L0java/awt/Dimension; # @Inherited(javax.swing.plaf.ComponentUI)
 installComponents
  (Ljavax/swing/JFileChooser;)V
  (Ljavax/swing/JFileChooser;)V
