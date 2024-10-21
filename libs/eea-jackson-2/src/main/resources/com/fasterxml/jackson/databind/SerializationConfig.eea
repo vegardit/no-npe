@@ -8,6 +8,9 @@ DEFAULT_PRETTY_PRINTER
  Lcom/fasterxml/jackson/core/PrettyPrinter;
  L1com/fasterxml/jackson/core/PrettyPrinter;
 
+_ctorDetector
+ Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;
+ Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;
 _defaultPrettyPrinter
  Lcom/fasterxml/jackson/core/PrettyPrinter;
  Lcom/fasterxml/jackson/core/PrettyPrinter;
@@ -18,6 +21,9 @@ _filterProvider
 <init>
  (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/core/PrettyPrinter;)V
  (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/core/PrettyPrinter;)V
+<init>
+ (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;)V
+ (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;)V
 <init>
  (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/cfg/ContextAttributes;)V
  (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/cfg/ContextAttributes;)V
@@ -48,6 +54,9 @@ _withMapperFeatures
 constructDefaultPrettyPrinter
  ()Lcom/fasterxml/jackson/core/PrettyPrinter;
  ()Lcom/fasterxml/jackson/core/PrettyPrinter;
+getConstructorDetector
+ ()Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;
+ ()Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;
 getDefaultPrettyPrinter
  ()Lcom/fasterxml/jackson/core/PrettyPrinter;
  ()Lcom/fasterxml/jackson/core/PrettyPrinter;
@@ -84,6 +93,9 @@ with
 with
  (Lcom/fasterxml/jackson/databind/SerializationFeature;[Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig;
  (Lcom/fasterxml/jackson/databind/SerializationFeature;[Lcom/fasterxml/jackson/databind/SerializationFeature;)Lcom/fasterxml/jackson/databind/SerializationConfig;
+with
+ (Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;)Lcom/fasterxml/jackson/databind/SerializationConfig;
+ (Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;)Lcom/fasterxml/jackson/databind/SerializationConfig;
 with
  (Lcom/fasterxml/jackson/databind/cfg/ContextAttributes;)Lcom/fasterxml/jackson/databind/SerializationConfig;
  (Lcom/fasterxml/jackson/databind/cfg/ContextAttributes;)L1com/fasterxml/jackson/databind/SerializationConfig;

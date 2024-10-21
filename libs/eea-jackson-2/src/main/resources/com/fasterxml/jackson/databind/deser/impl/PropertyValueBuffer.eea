@@ -1,5 +1,11 @@
 class com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer
 
+_anyParamBuffered
+ Lcom/fasterxml/jackson/databind/deser/impl/PropertyValue;
+ Lcom/fasterxml/jackson/databind/deser/impl/PropertyValue;
+_anyParamSetter
+ Lcom/fasterxml/jackson/databind/deser/SettableAnyProperty;
+ Lcom/fasterxml/jackson/databind/deser/SettableAnyProperty;
 _buffered
  Lcom/fasterxml/jackson/databind/deser/impl/PropertyValue;
  Lcom/fasterxml/jackson/databind/deser/impl/PropertyValue;
@@ -25,12 +31,18 @@ _parser
 <init>
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;ILcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;)V
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;ILcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;)V
+<init>
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;ILcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;Lcom/fasterxml/jackson/databind/deser/SettableAnyProperty;)V
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;ILcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;Lcom/fasterxml/jackson/databind/deser/SettableAnyProperty;)V
 _findMissing
  (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)L0java/lang/Object;
 assignParameter
  (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;Ljava/lang/Object;)Z
  (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;Ljava/lang/Object;)Z
+bufferAnyParameterProperty
+ (Lcom/fasterxml/jackson/databind/deser/SettableAnyProperty;Ljava/lang/String;Ljava/lang/Object;)V
+ (Lcom/fasterxml/jackson/databind/deser/SettableAnyProperty;Ljava/lang/String;Ljava/lang/Object;)V
 bufferAnyProperty
  (Lcom/fasterxml/jackson/databind/deser/SettableAnyProperty;Ljava/lang/String;Ljava/lang/Object;)V
  (Lcom/fasterxml/jackson/databind/deser/SettableAnyProperty;Ljava/lang/String;Ljava/lang/Object;)V

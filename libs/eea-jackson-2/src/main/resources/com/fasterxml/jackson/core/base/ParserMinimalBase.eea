@@ -47,7 +47,16 @@ _currToken
 _lastClearedToken
  Lcom/fasterxml/jackson/core/JsonToken;
  Lcom/fasterxml/jackson/core/JsonToken;
+_streamReadConstraints
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ Lcom/fasterxml/jackson/core/StreamReadConstraints;
 
+<init>
+ (ILcom/fasterxml/jackson/core/StreamReadConstraints;)V
+ (ILcom/fasterxml/jackson/core/StreamReadConstraints;)V
+<init>
+ (Lcom/fasterxml/jackson/core/StreamReadConstraints;)V
+ (Lcom/fasterxml/jackson/core/StreamReadConstraints;)V
 _constructError
  (Ljava/lang/String;Ljava/lang/Throwable;)Lcom/fasterxml/jackson/core/JsonParseException;
  (Ljava/lang/String;Ljava/lang/Throwable;)Lcom/fasterxml/jackson/core/JsonParseException;
@@ -66,6 +75,9 @@ _longIntegerDesc
 _longNumberDesc
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
+_nullSafeUpdateToken
+ (Lcom/fasterxml/jackson/core/JsonToken;)Lcom/fasterxml/jackson/core/JsonToken;
+ (Lcom/fasterxml/jackson/core/JsonToken;)Lcom/fasterxml/jackson/core/JsonToken;
 _reportError
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -93,6 +105,15 @@ _reportUnexpectedNumberChar
 _throwInternalReturnAny
  <T:Ljava/lang/Object;>()TT;
  <T:Ljava/lang/Object;>()TT;
+_updateToken
+ (Lcom/fasterxml/jackson/core/JsonToken;)Lcom/fasterxml/jackson/core/JsonToken;
+ (Lcom/fasterxml/jackson/core/JsonToken;)Lcom/fasterxml/jackson/core/JsonToken;
+_updateTokenToNA
+ ()Lcom/fasterxml/jackson/core/JsonToken;
+ ()Lcom/fasterxml/jackson/core/JsonToken;
+_updateTokenToNull
+ ()Lcom/fasterxml/jackson/core/JsonToken;
+ ()Lcom/fasterxml/jackson/core/JsonToken;
 _wrapError
  (Ljava/lang/String;Ljava/lang/Throwable;)V
  (Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -159,3 +180,6 @@ reportUnexpectedNumberChar
 skipChildren
  ()Lcom/fasterxml/jackson/core/JsonParser;
  ()Lcom/fasterxml/jackson/core/JsonParser;
+streamReadConstraints
+ ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ ()Lcom/fasterxml/jackson/core/StreamReadConstraints;

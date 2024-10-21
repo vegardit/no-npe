@@ -25,8 +25,8 @@ _config
  Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;
  Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;
 _creatorProperties
- Ljava/util/LinkedList<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;
- Ljava/util/LinkedList<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;
+ Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;
+ Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;
 _fieldRenameMappings
  Ljava/util/Map<Lcom/fasterxml/jackson/databind/PropertyName;Lcom/fasterxml/jackson/databind/PropertyName;>;
  Ljava/util/Map<Lcom/fasterxml/jackson/databind/PropertyName;Lcom/fasterxml/jackson/databind/PropertyName;>;
@@ -45,9 +45,9 @@ _jsonKeyAccessors
 _jsonValueAccessors
  Ljava/util/LinkedList<Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;>;
  Ljava/util/LinkedList<Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;>;
-_mutatorPrefix
- Ljava/lang/String;
- Ljava/lang/String;
+_potentialCreators
+ Lcom/fasterxml/jackson/databind/introspect/PotentialCreators;
+ Lcom/fasterxml/jackson/databind/introspect/PotentialCreators;
 _properties
  Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;
  Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;
@@ -61,12 +61,6 @@ _visibilityChecker
 <init>
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;ZLcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/introspect/AccessorNamingStrategy;)V
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;ZLcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/introspect/AccessorNamingStrategy;)V
-<init>
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;ZLcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Ljava/lang/String;)V
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;ZLcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Ljava/lang/String;)V
-_addCreatorParam
- (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedParameter;)V
- (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedParameter;)V
 _addCreators
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
@@ -97,7 +91,7 @@ _property
 _property
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;
-_removeUnwantedAccessor
+_removeUnwantedAccessors
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
 _removeUnwantedProperties
@@ -113,20 +107,14 @@ _renameWithWrappers
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
 _replaceCreatorProperty
- (Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)Z
- (Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)Z
+ (Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;)Z
+ (Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;)Z
 _resolveFieldVsGetter
  (Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;>;)Z
  (Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;>;)Z
 _sortProperties
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
  (Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
-_updateCreatorProperty
- (Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
- (Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/POJOPropertyBuilder;>;)V
-findPOJOBuilderClass
- ()Ljava/lang/Class<*>;
- ()Ljava/lang/Class<*>;
 getAnnotationIntrospector
  ()Lcom/fasterxml/jackson/databind/AnnotationIntrospector;
  ()Lcom/fasterxml/jackson/databind/AnnotationIntrospector;
@@ -166,12 +154,12 @@ getJsonKeyAccessor
 getJsonValueAccessor
  ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;
  ()L0com/fasterxml/jackson/databind/introspect/AnnotatedMember;
-getJsonValueMethod
- ()Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;
- ()L0com/fasterxml/jackson/databind/introspect/AnnotatedMethod;
 getObjectIdInfo
  ()Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;
  ()Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;
+getPotentialCreators
+ ()Lcom/fasterxml/jackson/databind/introspect/PotentialCreators;
+ ()Lcom/fasterxml/jackson/databind/introspect/PotentialCreators;
 getProperties
  ()Ljava/util/List<Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;>;
  ()L1java/util/List<Lcom/fasterxml/jackson/databind/introspect/BeanPropertyDefinition;>;

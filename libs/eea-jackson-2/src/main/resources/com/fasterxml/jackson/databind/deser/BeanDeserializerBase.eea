@@ -48,8 +48,8 @@ _serializationShape
  Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;
  Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;
 _subDeserializers
- Ljava/util/HashMap<Lcom/fasterxml/jackson/databind/type/ClassKey;Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;>;
- Ljava/util/HashMap<Lcom/fasterxml/jackson/databind/type/ClassKey;Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;>;
+ Ljava/util/concurrent/ConcurrentHashMap<Lcom/fasterxml/jackson/databind/type/ClassKey;Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;>;
+ Ljava/util/concurrent/ConcurrentHashMap<Lcom/fasterxml/jackson/databind/type/ClassKey;Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;>;
 _unwrappedPropertyHandler
  Lcom/fasterxml/jackson/databind/deser/impl/UnwrappedPropertyHandler;
  Lcom/fasterxml/jackson/databind/deser/impl/UnwrappedPropertyHandler;
@@ -87,6 +87,9 @@ _convertObjectId
 _delegateDeserializer
  ()Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
  ()Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+_delegateDeserializer
+ (Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+ (Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
 _deserializeUsingPropertyBased
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
