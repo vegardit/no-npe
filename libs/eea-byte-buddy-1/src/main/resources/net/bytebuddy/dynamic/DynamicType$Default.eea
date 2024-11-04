@@ -16,36 +16,15 @@ typeDescription
 <init>
  (Lnet/bytebuddy/description/type/TypeDescription;[BLnet/bytebuddy/implementation/LoadedTypeInitializer;Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;)V
  (Lnet/bytebuddy/description/type/TypeDescription;[BLnet/bytebuddy/implementation/LoadedTypeInitializer;Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;)V
-getAllTypes
- ()Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;
- ()L1java/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;
-getAuxiliaryTypes
- ()Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;
- ()L1java/util/Map<Lnet/bytebuddy/description/type/TypeDescription;[B>;
+getAuxiliaries
+ ()Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;
+ ()Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;
 getBytes
  ()[B
  ()[B
-getLoadedTypeInitializers
- ()Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/implementation/LoadedTypeInitializer;>;
- ()L1java/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/implementation/LoadedTypeInitializer;>;
+getLoadedTypeInitializer
+ ()Lnet/bytebuddy/implementation/LoadedTypeInitializer;
+ ()Lnet/bytebuddy/implementation/LoadedTypeInitializer;
 getTypeDescription
  ()Lnet/bytebuddy/description/type/TypeDescription;
  ()Lnet/bytebuddy/description/type/TypeDescription;
-inject
- (Ljava/io/File;)Ljava/io/File;
- (Ljava/io/File;)Ljava/io/File;
-inject
- (Ljava/io/File;Ljava/io/File;)Ljava/io/File;
- (Ljava/io/File;Ljava/io/File;)Ljava/io/File;
-locate
- (Ljava/lang/String;)Lnet/bytebuddy/dynamic/ClassFileLocator$Resolution;
- (Ljava/lang/String;)Lnet/bytebuddy/dynamic/ClassFileLocator$Resolution;
-saveIn
- (Ljava/io/File;)Ljava/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Ljava/io/File;>;
- (Ljava/io/File;)L1java/util/Map<Lnet/bytebuddy/description/type/TypeDescription;Ljava/io/File;>;
-toJar
- (Ljava/io/File;)Ljava/io/File;
- (Ljava/io/File;)Ljava/io/File;
-toJar
- (Ljava/io/File;Ljava/util/jar/Manifest;)Ljava/io/File;
- (Ljava/io/File;Ljava/util/jar/Manifest;)Ljava/io/File;

@@ -4,8 +4,8 @@ class net/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice
  (Lnet/bytebuddy/asm/Advice$WithCustomMapping;)V
  (Lnet/bytebuddy/asm/Advice$WithCustomMapping;)V
 <init>
- (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;)V
- (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;)V
+ (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;Ljava/util/List<Ljava/lang/String;>;)V
+ (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;Ljava/util/List<Ljava/lang/String;>;)V
 advice
  (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/lang/String;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
  (Lnet/bytebuddy/matcher/ElementMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/lang/String;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
@@ -18,6 +18,12 @@ advice
 advice
  (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/lang/String;Ljava/lang/String;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
  (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/lang/String;Ljava/lang/String;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
+auxiliary
+ (Ljava/util/List<Ljava/lang/String;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
+ (Ljava/util/List<Ljava/lang/String;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
+auxiliary
+ ([Ljava/lang/String;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
+ ([Ljava/lang/String;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
 include
  (Ljava/util/List<+Lnet/bytebuddy/dynamic/ClassFileLocator;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
  (Ljava/util/List<+Lnet/bytebuddy/dynamic/ClassFileLocator;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
@@ -28,8 +34,8 @@ include
  ([Lnet/bytebuddy/dynamic/ClassFileLocator;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
  ([Lnet/bytebuddy/dynamic/ClassFileLocator;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
 make
- (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
- (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;)L1net/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
+ (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;Ljava/util/List<Ljava/lang/String;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
+ (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;Ljava/util/List<Ljava/lang/String;>;)L1net/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
 transform
  (Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/ClassLoader;Lnet/bytebuddy/utility/JavaModule;Ljava/security/ProtectionDomain;)Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;
  (Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/ClassLoader;Lnet/bytebuddy/utility/JavaModule;Ljava/security/ProtectionDomain;)Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;
