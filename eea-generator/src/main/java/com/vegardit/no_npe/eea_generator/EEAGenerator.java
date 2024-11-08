@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -246,6 +247,7 @@ public abstract class EEAGenerator {
          if (returnKind == MethodReturnKind.ARRAY || returnKind == MethodReturnKind.OBJECT) {
 
             final var returnTypeNullability = bytecodeAnalyzer.determineMethodReturnTypeNullability(methodInfo);
+
             /*
              * mark the return value of a method as nullable if the byte code analysis of the method body determines it returns null values
              * or the method is annotated with a known nullable annotation.
@@ -276,6 +278,15 @@ public abstract class EEAGenerator {
                   "1"));
 
             /*
+             * mark java.util.Optional return types as @NonNull
+             */
+            if (methodInfo.getTypeDescriptor().getResultType() instanceof ClassRefTypeSignature //
+                  && Optional.class.getName().equals(((ClassRefTypeSignature) methodInfo.getTypeDescriptor().getResultType())
+                     .getFullyQualifiedClassName()))
+               return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2,
+                  "1"));
+
+            /*
              * mark the return value of builder methods as @NonNull.
              */
             if (classInfo.getName().endsWith("Builder") //
@@ -290,7 +301,6 @@ public abstract class EEAGenerator {
                   "1"));
 
          } else {
-
             /*
              * mark the parameter of Comparable#compareTo(Object) as @NonNull.
              */
@@ -333,6 +343,7 @@ public abstract class EEAGenerator {
                         ? insert(member.originalSignature.value, 2, "1") //
                         // <T::Lcom/example/MyListener;>(TT;)V --> <1T::Lcom/example/MyListener;>(TT;)V
                         : insert(member.originalSignature.value, 1, "1"));
+
          }
       }
 

@@ -2,7 +2,7 @@ class org/junit/jupiter/api/extension/ParameterContext
 
 findAnnotation
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Ljava/util/Optional<TA;>;
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Ljava/util/Optional<TA;>;
+ <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)L1java/util/Optional<TA;>; # @Inherited(org.junit.jupiter.api.extension.AnnotatedElementContext)
 findRepeatableAnnotations
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Ljava/util/List<TA;>;
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Ljava/util/List<TA;>;
@@ -17,7 +17,7 @@ getParameter
  ()Ljava/lang/reflect/Parameter;
 getTarget
  ()Ljava/util/Optional<Ljava/lang/Object;>;
- ()Ljava/util/Optional<Ljava/lang/Object;>;
+ ()L1java/util/Optional<Ljava/lang/Object;>;
 isAnnotated
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
