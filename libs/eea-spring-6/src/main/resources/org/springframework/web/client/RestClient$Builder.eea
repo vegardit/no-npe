@@ -6,12 +6,21 @@ apply
 baseUrl
  (Ljava/lang/String;)Lorg/springframework/web/client/RestClient$Builder;
  (Ljava/lang/String;)L1org/springframework/web/client/RestClient$Builder;
+baseUrl
+ (Ljava/net/URI;)Lorg/springframework/web/client/RestClient$Builder;
+ (Ljava/net/URI;)L1org/springframework/web/client/RestClient$Builder;
 build
  ()Lorg/springframework/web/client/RestClient;
  ()L1org/springframework/web/client/RestClient;
 clone
  ()Lorg/springframework/web/client/RestClient$Builder;
  ()L1org/springframework/web/client/RestClient$Builder;
+defaultCookie
+ (Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/web/client/RestClient$Builder;
+ (Ljava/lang/String;[Ljava/lang/String;)L1org/springframework/web/client/RestClient$Builder;
+defaultCookies
+ (Ljava/util/function/Consumer<Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;>;)Lorg/springframework/web/client/RestClient$Builder;
+ (Ljava/util/function/Consumer<Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;>;)L1org/springframework/web/client/RestClient$Builder;
 defaultHeader
  (Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/web/client/RestClient$Builder;
  (Ljava/lang/String;[Ljava/lang/String;)L1org/springframework/web/client/RestClient$Builder;
@@ -30,6 +39,9 @@ defaultStatusHandler
 defaultUriVariables
  (Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/web/client/RestClient$Builder;
  (Ljava/util/Map<Ljava/lang/String;*>;)L1org/springframework/web/client/RestClient$Builder;
+messageConverters
+ (Ljava/util/List<Lorg/springframework/http/converter/HttpMessageConverter<*>;>;)Lorg/springframework/web/client/RestClient$Builder;
+ (Ljava/util/List<Lorg/springframework/http/converter/HttpMessageConverter<*>;>;)L1org/springframework/web/client/RestClient$Builder;
 messageConverters
  (Ljava/util/function/Consumer<Ljava/util/List<Lorg/springframework/http/converter/HttpMessageConverter<*>;>;>;)Lorg/springframework/web/client/RestClient$Builder;
  (Ljava/util/function/Consumer<Ljava/util/List<Lorg/springframework/http/converter/HttpMessageConverter<*>;>;>;)L1org/springframework/web/client/RestClient$Builder;

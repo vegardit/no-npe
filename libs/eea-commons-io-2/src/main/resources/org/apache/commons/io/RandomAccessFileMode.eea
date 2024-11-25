@@ -4,6 +4,19 @@ super java/lang/Enum
  <Lorg/apache/commons/io/RandomAccessFileMode;>
  <Lorg/apache/commons/io/RandomAccessFileMode;>
 
+valueOf
+ ([Ljava/nio/file/OpenOption;)Lorg/apache/commons/io/RandomAccessFileMode;
+ ([Ljava/nio/file/OpenOption;)Lorg/apache/commons/io/RandomAccessFileMode;
+valueOfMode
+ (Ljava/lang/String;)Lorg/apache/commons/io/RandomAccessFileMode;
+ (Ljava/lang/String;)Lorg/apache/commons/io/RandomAccessFileMode;
+
+accept
+ (Ljava/nio/file/Path;Lorg/apache/commons/io/function/IOConsumer<Ljava/io/RandomAccessFile;>;)V
+ (Ljava/nio/file/Path;Lorg/apache/commons/io/function/IOConsumer<Ljava/io/RandomAccessFile;>;)V
+apply
+ <T:Ljava/lang/Object;>(Ljava/nio/file/Path;Lorg/apache/commons/io/function/IOFunction<Ljava/io/RandomAccessFile;TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/nio/file/Path;Lorg/apache/commons/io/function/IOFunction<Ljava/io/RandomAccessFile;TT;>;)TT;
 create
  (Ljava/io/File;)Ljava/io/RandomAccessFile;
  (Ljava/io/File;)L1java/io/RandomAccessFile;
@@ -13,6 +26,12 @@ create
 create
  (Ljava/nio/file/Path;)Ljava/io/RandomAccessFile;
  (Ljava/nio/file/Path;)L1java/io/RandomAccessFile;
-toString
+getMode
  ()Ljava/lang/String;
- ()L1java/lang/String; # @Inherited(java.lang.Enum)
+ ()Ljava/lang/String;
+implies
+ (Lorg/apache/commons/io/RandomAccessFileMode;)Z
+ (Lorg/apache/commons/io/RandomAccessFileMode;)Z
+io
+ (Ljava/lang/String;)Lorg/apache/commons/io/IORandomAccessFile;
+ (Ljava/lang/String;)L1org/apache/commons/io/IORandomAccessFile;

@@ -9,6 +9,10 @@ super org/springframework/core/codec/Encoder
  <Ljava/lang/Object;>
  <Ljava/lang/Object;>
 
+EMPTY_BYTES
+ [B
+ [1B
+
 <init>
  (TT;[Lorg/springframework/util/MimeType;)V
  (TT;[Lorg/springframework/util/MimeType;)V
@@ -18,6 +22,12 @@ canEncode
 encode
  (Lorg/reactivestreams/Publisher<*>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
  (Lorg/reactivestreams/Publisher<*>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
+encodeNonStream
+ (Lorg/reactivestreams/Publisher<*>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
+ (Lorg/reactivestreams/Publisher<*>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
+encodeStreamingValue
+ (Ljava/lang/Object;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;[B[B)Lorg/springframework/core/io/buffer/DataBuffer;
+ (Ljava/lang/Object;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;[B[B)Lorg/springframework/core/io/buffer/DataBuffer;
 encodeValue
  (Ljava/lang/Object;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/core/io/buffer/DataBuffer;
  (Ljava/lang/Object;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/core/io/buffer/DataBuffer;

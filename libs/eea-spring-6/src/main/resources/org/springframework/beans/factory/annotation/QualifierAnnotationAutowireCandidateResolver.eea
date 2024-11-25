@@ -13,8 +13,8 @@ checkQualifier
  (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;Ljava/lang/annotation/Annotation;Lorg/springframework/beans/TypeConverter;)Z
  (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;Ljava/lang/annotation/Annotation;Lorg/springframework/beans/TypeConverter;)Z
 checkQualifiers
- (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;[Ljava/lang/annotation/Annotation;)Z
- (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;[Ljava/lang/annotation/Annotation;)Z
+ (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;[Ljava/lang/annotation/Annotation;)Ljava/lang/Boolean;
+ (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;[Ljava/lang/annotation/Annotation;)L0java/lang/Boolean;
 extractValue
  (Lorg/springframework/core/annotation/AnnotationAttributes;)Ljava/lang/Object;
  (Lorg/springframework/core/annotation/AnnotationAttributes;)Ljava/lang/Object;
@@ -27,6 +27,9 @@ getFactoryMethodAnnotation
 getQualifiedElementAnnotation
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Ljava/lang/annotation/Annotation;
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)L0java/lang/annotation/Annotation;
+getSuggestedName
+ (Lorg/springframework/beans/factory/config/DependencyDescriptor;)Ljava/lang/String;
+ (Lorg/springframework/beans/factory/config/DependencyDescriptor;)L0java/lang/String; # @Inherited(org.springframework.beans.factory.support.SimpleAutowireCandidateResolver)
 getSuggestedValue
  (Lorg/springframework/beans/factory/config/DependencyDescriptor;)Ljava/lang/Object;
  (Lorg/springframework/beans/factory/config/DependencyDescriptor;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.support.SimpleAutowireCandidateResolver)

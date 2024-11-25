@@ -1,0 +1,35 @@
+class org/springframework/test/web/servlet/assertj/AbstractMockHttpServletResponseAssert
+ <SELF:Lorg/springframework/test/web/servlet/assertj/AbstractMockHttpServletResponseAssert<TSELF;TACTUAL;>;ACTUAL:Ljava/lang/Object;>
+ <SELF:Lorg/springframework/test/web/servlet/assertj/AbstractMockHttpServletResponseAssert<TSELF;TACTUAL;>;ACTUAL:Ljava/lang/Object;>
+
+super org/springframework/test/web/servlet/assertj/AbstractHttpServletResponseAssert
+ <Lorg/springframework/mock/web/MockHttpServletResponse;TSELF;TACTUAL;>
+ <Lorg/springframework/mock/web/MockHttpServletResponse;TSELF;TACTUAL;>
+
+<init>
+ (Lorg/springframework/test/http/HttpMessageContentConverter;TACTUAL;Ljava/lang/Class<*>;)V
+ (Lorg/springframework/test/http/HttpMessageContentConverter;TACTUAL;Ljava/lang/Class<*>;)V
+body
+ ()Lorg/assertj/core/api/AbstractByteArrayAssert<*>;
+ ()L1org/assertj/core/api/AbstractByteArrayAssert<*>;
+bodyJson
+ ()Lorg/springframework/test/json/AbstractJsonContentAssert<*>;
+ ()L1org/springframework/test/json/AbstractJsonContentAssert<*>;
+bodyText
+ ()Lorg/assertj/core/api/AbstractStringAssert<*>;
+ ()Lorg/assertj/core/api/AbstractStringAssert<*>;
+forwardedUrl
+ ()Lorg/springframework/test/web/UriAssert;
+ ()L1org/springframework/test/web/UriAssert;
+hasBodyTextEqualTo
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)TSELF;
+hasForwardedUrl
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)TSELF;
+hasRedirectedUrl
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)TSELF;
+redirectedUrl
+ ()Lorg/springframework/test/web/UriAssert;
+ ()L1org/springframework/test/web/UriAssert;

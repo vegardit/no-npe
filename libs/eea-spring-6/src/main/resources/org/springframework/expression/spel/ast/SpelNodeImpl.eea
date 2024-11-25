@@ -4,6 +4,9 @@ generateCodeForArgument
  (Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;Lorg/springframework/expression/spel/ast/SpelNodeImpl;Ljava/lang/String;)V
  (Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;Lorg/springframework/expression/spel/ast/SpelNodeImpl;Ljava/lang/String;)V
 generateCodeForArguments
+ (Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;Ljava/lang/reflect/Executable;[Lorg/springframework/expression/spel/ast/SpelNodeImpl;)V
+ (Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;Ljava/lang/reflect/Executable;[Lorg/springframework/expression/spel/ast/SpelNodeImpl;)V
+generateCodeForArguments
  (Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;Ljava/lang/reflect/Member;[Lorg/springframework/expression/spel/ast/SpelNodeImpl;)V
  (Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;Ljava/lang/reflect/Member;[Lorg/springframework/expression/spel/ast/SpelNodeImpl;)V
 
@@ -17,9 +20,6 @@ exitTypeDescriptor
 <init>
  (II[Lorg/springframework/expression/spel/ast/SpelNodeImpl;)V
  (II[Lorg/springframework/expression/spel/ast/SpelNodeImpl;)V
-generateCode
- (Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;)V
- (Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;)V
 getChild
  (I)Lorg/springframework/expression/spel/SpelNode;
  (I)Lorg/springframework/expression/spel/SpelNode;

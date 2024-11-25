@@ -3,6 +3,9 @@ class org/springframework/validation/method/MethodValidationResult
 create
  (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;)Lorg/springframework/validation/method/MethodValidationResult;
  (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;)L1org/springframework/validation/method/MethodValidationResult;
+create
+ (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;Ljava/util/List<Lorg/springframework/context/MessageSourceResolvable;>;)Lorg/springframework/validation/method/MethodValidationResult;
+ (Ljava/lang/Object;Ljava/lang/reflect/Method;Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;Ljava/util/List<Lorg/springframework/context/MessageSourceResolvable;>;)L1org/springframework/validation/method/MethodValidationResult;
 emptyResult
  ()Lorg/springframework/validation/method/MethodValidationResult;
  ()L1org/springframework/validation/method/MethodValidationResult;
@@ -16,9 +19,15 @@ getAllValidationResults
 getBeanResults
  ()Ljava/util/List<Lorg/springframework/validation/method/ParameterErrors;>;
  ()Ljava/util/List<Lorg/springframework/validation/method/ParameterErrors;>;
+getCrossParameterValidationResults
+ ()Ljava/util/List<Lorg/springframework/context/MessageSourceResolvable;>;
+ ()Ljava/util/List<Lorg/springframework/context/MessageSourceResolvable;>;
 getMethod
  ()Ljava/lang/reflect/Method;
  ()Ljava/lang/reflect/Method;
+getParameterValidationResults
+ ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
+ ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
 getTarget
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;

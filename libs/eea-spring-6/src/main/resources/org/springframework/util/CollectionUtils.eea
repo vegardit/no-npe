@@ -3,6 +3,12 @@ class org/springframework/util/CollectionUtils
 arrayToList
  (Ljava/lang/Object;)Ljava/util/List<*>;
  (Ljava/lang/Object;)Ljava/util/List<*>;
+compositeMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;Ljava/util/Map<TK;TV;>;)Ljava/util/Map<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;Ljava/util/Map<TK;TV;>;)L1java/util/Map<TK;TV;>;
+compositeMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;Ljava/util/Map<TK;TV;>;Ljava/util/function/BiFunction<TK;TV;TV;>;Ljava/util/function/Consumer<Ljava/util/Map<TK;TV;>;>;)Ljava/util/Map<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;Ljava/util/Map<TK;TV;>;Ljava/util/function/BiFunction<TK;TV;TV;>;Ljava/util/function/Consumer<Ljava/util/Map<TK;TV;>;>;)L1java/util/Map<TK;TV;>;
 contains
  (Ljava/util/Enumeration<*>;Ljava/lang/Object;)Z
  (Ljava/util/Enumeration<*>;Ljava/lang/Object;)Z
@@ -57,9 +63,15 @@ mergePropertiesIntoMap
 newHashMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)Ljava/util/HashMap<TK;TV;>;
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)L1java/util/HashMap<TK;TV;>;
+newHashSet
+ <E:Ljava/lang/Object;>(I)Ljava/util/HashSet<TE;>;
+ <E:Ljava/lang/Object;>(I)L1java/util/HashSet<TE;>;
 newLinkedHashMap
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)Ljava/util/LinkedHashMap<TK;TV;>;
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)L1java/util/LinkedHashMap<TK;TV;>;
+newLinkedHashSet
+ <E:Ljava/lang/Object;>(I)Ljava/util/LinkedHashSet<TE;>;
+ <E:Ljava/lang/Object;>(I)L1java/util/LinkedHashSet<TE;>;
 toArray
  <A:Ljava/lang/Object;E:TA;>(Ljava/util/Enumeration<TE;>;[TA;)[TA;
  <A:Ljava/lang/Object;E:TA;>(Ljava/util/Enumeration<TE;>;[TA;)[TA;

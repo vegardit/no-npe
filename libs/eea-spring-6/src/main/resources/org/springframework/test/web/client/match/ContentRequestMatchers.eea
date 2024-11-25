@@ -25,11 +25,20 @@ json
  (Ljava/lang/String;)Lorg/springframework/test/web/client/RequestMatcher;
  (Ljava/lang/String;)Lorg/springframework/test/web/client/RequestMatcher;
 json
+ (Ljava/lang/String;Lorg/springframework/test/json/JsonComparator;)Lorg/springframework/test/web/client/RequestMatcher;
+ (Ljava/lang/String;Lorg/springframework/test/json/JsonComparator;)Lorg/springframework/test/web/client/RequestMatcher;
+json
+ (Ljava/lang/String;Lorg/springframework/test/json/JsonCompareMode;)Lorg/springframework/test/web/client/RequestMatcher;
+ (Ljava/lang/String;Lorg/springframework/test/json/JsonCompareMode;)Lorg/springframework/test/web/client/RequestMatcher;
+json
  (Ljava/lang/String;Z)Lorg/springframework/test/web/client/RequestMatcher;
  (Ljava/lang/String;Z)Lorg/springframework/test/web/client/RequestMatcher;
 multipartData
  (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;*>;)Lorg/springframework/test/web/client/RequestMatcher;
  (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;*>;)Lorg/springframework/test/web/client/RequestMatcher;
+multipartData
+ (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;*>;Ljava/nio/charset/Charset;)Lorg/springframework/test/web/client/RequestMatcher;
+ (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;*>;Ljava/nio/charset/Charset;)Lorg/springframework/test/web/client/RequestMatcher;
 multipartDataContains
  (Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/test/web/client/RequestMatcher;
  (Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/test/web/client/RequestMatcher;

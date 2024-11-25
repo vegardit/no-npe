@@ -1,0 +1,39 @@
+class org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder
+
+super org/apache/commons/io/build/AbstractStreamBuilder
+ <Lorg/apache/commons/io/serialization/ValidatingObjectInputStream;Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;>
+ <Lorg/apache/commons/io/serialization/ValidatingObjectInputStream;Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;>
+
+accept
+ (Ljava/util/regex/Pattern;)Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+ (Ljava/util/regex/Pattern;)L1org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+accept
+ (Lorg/apache/commons/io/serialization/ClassNameMatcher;)Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+ (Lorg/apache/commons/io/serialization/ClassNameMatcher;)L1org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+accept
+ ([Ljava/lang/Class<*>;)Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+ ([Ljava/lang/Class<*>;)L1org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+accept
+ ([Ljava/lang/String;)Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+ ([Ljava/lang/String;)L1org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+get
+ ()Lorg/apache/commons/io/serialization/ValidatingObjectInputStream;
+ ()L1org/apache/commons/io/serialization/ValidatingObjectInputStream;
+getPredicate
+ ()Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+ ()Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+reject
+ (Ljava/util/regex/Pattern;)Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+ (Ljava/util/regex/Pattern;)L1org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+reject
+ (Lorg/apache/commons/io/serialization/ClassNameMatcher;)Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+ (Lorg/apache/commons/io/serialization/ClassNameMatcher;)L1org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+reject
+ ([Ljava/lang/Class<*>;)Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+ ([Ljava/lang/Class<*>;)L1org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+reject
+ ([Ljava/lang/String;)Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+ ([Ljava/lang/String;)L1org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+setPredicate
+ (Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;)Lorg/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;
+ (Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;)L1org/apache/commons/io/serialization/ValidatingObjectInputStream$Builder;

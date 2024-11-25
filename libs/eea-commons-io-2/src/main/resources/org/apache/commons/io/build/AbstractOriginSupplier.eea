@@ -30,6 +30,12 @@ newPathOrigin
 newPathOrigin
  (Ljava/nio/file/Path;)Lorg/apache/commons/io/build/AbstractOrigin$PathOrigin;
  (L1java/nio/file/Path;)L1org/apache/commons/io/build/AbstractOrigin$PathOrigin;
+newRandomAccessFileOrigin
+ (Ljava/io/RandomAccessFile;)Lorg/apache/commons/io/build/AbstractOrigin$RandomAccessFileOrigin;
+ (Ljava/io/RandomAccessFile;)L1org/apache/commons/io/build/AbstractOrigin$RandomAccessFileOrigin;
+newRandomAccessFileOrigin
+ (Lorg/apache/commons/io/IORandomAccessFile;)Lorg/apache/commons/io/build/AbstractOrigin$IORandomAccessFileOrigin;
+ (Lorg/apache/commons/io/IORandomAccessFile;)L1org/apache/commons/io/build/AbstractOrigin$IORandomAccessFileOrigin;
 newReaderOrigin
  (Ljava/io/Reader;)Lorg/apache/commons/io/build/AbstractOrigin$ReaderOrigin;
  (L1java/io/Reader;)L1org/apache/commons/io/build/AbstractOrigin$ReaderOrigin;
@@ -73,6 +79,12 @@ setPath
 setPath
  (Ljava/nio/file/Path;)TB;
  (L1java/nio/file/Path;)TB;
+setRandomAccessFile
+ (Ljava/io/RandomAccessFile;)TB;
+ (Ljava/io/RandomAccessFile;)TB;
+setRandomAccessFile
+ (Lorg/apache/commons/io/IORandomAccessFile;)TB;
+ (Lorg/apache/commons/io/IORandomAccessFile;)TB;
 setReader
  (Ljava/io/Reader;)TB;
  (L1java/io/Reader;)TB;

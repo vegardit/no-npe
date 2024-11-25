@@ -7,6 +7,9 @@ super org/springframework/context/ApplicationListener
 doExecute
  (Ljava/lang/Runnable;)V
  (Ljava/lang/Runnable;)V
+execute
+ (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V # @Inherited(org.springframework.core.task.SimpleAsyncTaskExecutor)
 getClock
  ()Ljava/time/Clock;
  ()Ljava/time/Clock;
@@ -37,9 +40,24 @@ setApplicationContext
 setClock
  (Ljava/time/Clock;)V
  (Ljava/time/Clock;)V
+setErrorHandler
+ (Lorg/springframework/util/ErrorHandler;)V
+ (Lorg/springframework/util/ErrorHandler;)V
 setTargetTaskExecutor
  (Ljava/util/concurrent/Executor;)V
  (Ljava/util/concurrent/Executor;)V
 stop
  (Ljava/lang/Runnable;)V
  (Ljava/lang/Runnable;)V
+submit
+ (Ljava/lang/Runnable;)Ljava/util/concurrent/Future<*>;
+ (Ljava/lang/Runnable;)L1java/util/concurrent/Future<*>; # @Inherited(org.springframework.core.task.SimpleAsyncTaskExecutor)
+submit
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Ljava/util/concurrent/Future<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1java/util/concurrent/Future<TT;>; # @Inherited(org.springframework.core.task.SimpleAsyncTaskExecutor)
+submitListenable
+ (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/Runnable;)L1org/springframework/util/concurrent/ListenableFuture<*>; # @Inherited(org.springframework.core.task.SimpleAsyncTaskExecutor)
+submitListenable
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>; # @Inherited(org.springframework.core.task.SimpleAsyncTaskExecutor)

@@ -1,8 +1,5 @@
 class org/springframework/aot/generate/InMemoryGeneratedFiles
 
-addFile
- (Lorg/springframework/aot/generate/GeneratedFiles$Kind;Ljava/lang/String;Lorg/springframework/core/io/InputStreamSource;)V
- (Lorg/springframework/aot/generate/GeneratedFiles$Kind;Ljava/lang/String;Lorg/springframework/core/io/InputStreamSource;)V
 getGeneratedFile
  (Lorg/springframework/aot/generate/GeneratedFiles$Kind;Ljava/lang/String;)Lorg/springframework/core/io/InputStreamSource;
  (Lorg/springframework/aot/generate/GeneratedFiles$Kind;Ljava/lang/String;)L0org/springframework/core/io/InputStreamSource;
@@ -12,3 +9,6 @@ getGeneratedFileContent
 getGeneratedFiles
  (Lorg/springframework/aot/generate/GeneratedFiles$Kind;)Ljava/util/Map<Ljava/lang/String;Lorg/springframework/core/io/InputStreamSource;>;
  (Lorg/springframework/aot/generate/GeneratedFiles$Kind;)Ljava/util/Map<Ljava/lang/String;Lorg/springframework/core/io/InputStreamSource;>;
+handleFile
+ (Lorg/springframework/aot/generate/GeneratedFiles$Kind;Ljava/lang/String;Lorg/springframework/util/function/ThrowingConsumer<Lorg/springframework/aot/generate/GeneratedFiles$FileHandler;>;)V
+ (Lorg/springframework/aot/generate/GeneratedFiles$Kind;Ljava/lang/String;Lorg/springframework/util/function/ThrowingConsumer<Lorg/springframework/aot/generate/GeneratedFiles$FileHandler;>;)V

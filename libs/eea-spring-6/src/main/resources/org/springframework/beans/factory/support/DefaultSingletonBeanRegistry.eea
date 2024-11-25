@@ -3,6 +3,9 @@ class org/springframework/beans/factory/support/DefaultSingletonBeanRegistry
 addSingleton
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
+addSingletonCallback
+ (Ljava/lang/String;Ljava/util/function/Consumer<Ljava/lang/Object;>;)V
+ (Ljava/lang/String;Ljava/util/function/Consumer<Ljava/lang/Object;>;)V
 addSingletonFactory
  (Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory<*>;)V
  (Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory<*>;)V
@@ -38,7 +41,7 @@ getSingleton
  (Ljava/lang/String;Z)L0java/lang/Object;
 getSingletonMutex
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L1java/lang/Object;
 getSingletonNames
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
@@ -48,6 +51,9 @@ hasDependentBean
 isActuallyInCreation
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
+isCurrentThreadAllowedToHoldSingletonLock
+ ()Ljava/lang/Boolean;
+ ()L0java/lang/Boolean;
 isCurrentlyInCreation
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z

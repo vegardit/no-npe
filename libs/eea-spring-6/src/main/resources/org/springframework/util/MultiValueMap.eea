@@ -6,6 +6,13 @@ super java/util/Map
  <TK;Ljava/util/List<TV;>;>
  <TK;Ljava/util/List<TV;>;>
 
+fromMultiValue
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;Ljava/util/List<TV;>;>;)Lorg/springframework/util/MultiValueMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;Ljava/util/List<TV;>;>;)L1org/springframework/util/MultiValueMap<TK;TV;>;
+fromSingleValue
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;)Lorg/springframework/util/MultiValueMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;)L1org/springframework/util/MultiValueMap<TK;TV;>;
+
 add
  (TK;TV;)V
  (TK;TV;)V
@@ -18,6 +25,9 @@ addAll
 addIfAbsent
  (TK;TV;)V
  (TK;TV;)V
+asSingleValueMap
+ ()Ljava/util/Map<TK;TV;>;
+ ()L1java/util/Map<TK;TV;>;
 getFirst
  (TK;)TV;
  (TK;)T0V;

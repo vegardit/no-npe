@@ -15,9 +15,6 @@ addRequestParameter
 addRequestPart
  (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/web/service/invoker/HttpRequestValues$Builder;
  (Ljava/lang/String;Ljava/lang/Object;)L1org/springframework/web/service/invoker/HttpRequestValues$Builder;
-addRequestPart
- <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(Ljava/lang/String;TP;Lorg/springframework/core/ResolvableType;)Lorg/springframework/web/service/invoker/HttpRequestValues$Builder;
- <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(Ljava/lang/String;TP;Lorg/springframework/core/ResolvableType;)L1org/springframework/web/service/invoker/HttpRequestValues$Builder;
 build
  ()Lorg/springframework/web/service/invoker/HttpRequestValues;
  ()L1org/springframework/web/service/invoker/HttpRequestValues;
@@ -25,17 +22,23 @@ buildMultipartBody
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
 createRequestValues
- (Lorg/springframework/http/HttpMethod;Ljava/net/URI;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/springframework/http/HttpHeaders;Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;)Lorg/springframework/web/service/invoker/HttpRequestValues;
- (Lorg/springframework/http/HttpMethod;Ljava/net/URI;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/springframework/http/HttpHeaders;Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;)L1org/springframework/web/service/invoker/HttpRequestValues;
-createRequestValues
  (Lorg/springframework/http/HttpMethod;Ljava/net/URI;Lorg/springframework/web/util/UriBuilderFactory;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/springframework/http/HttpHeaders;Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;)Lorg/springframework/web/service/invoker/HttpRequestValues;
  (Lorg/springframework/http/HttpMethod;Ljava/net/URI;Lorg/springframework/web/util/UriBuilderFactory;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lorg/springframework/http/HttpHeaders;Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Object;)L1org/springframework/web/service/invoker/HttpRequestValues;
+getAcceptMediaTypes
+ ()Ljava/util/List<Lorg/springframework/http/MediaType;>;
+ ()L0java/util/List<Lorg/springframework/http/MediaType;>; # @Inherited(org.springframework.web.service.invoker.HttpRequestValues$Metadata)
+getContentType
+ ()Lorg/springframework/http/MediaType;
+ ()L0org/springframework/http/MediaType; # @Inherited(org.springframework.web.service.invoker.HttpRequestValues$Metadata)
+getHttpMethod
+ ()Lorg/springframework/http/HttpMethod;
+ ()L0org/springframework/http/HttpMethod; # @Inherited(org.springframework.web.service.invoker.HttpRequestValues$Metadata)
+getUriTemplate
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.springframework.web.service.invoker.HttpRequestValues$Metadata)
 setAccept
  (Ljava/util/List<Lorg/springframework/http/MediaType;>;)Lorg/springframework/web/service/invoker/HttpRequestValues$Builder;
  (Ljava/util/List<Lorg/springframework/http/MediaType;>;)L1org/springframework/web/service/invoker/HttpRequestValues$Builder;
-setBody
- <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(TP;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)V
- <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(TP;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)V
 setBodyValue
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V

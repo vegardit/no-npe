@@ -6,6 +6,9 @@ class org/springframework/beans/factory/support/DefaultListableBeanFactory
 checkForAliasCircle
  (Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/lang/String;Ljava/lang/String;)V
+checkMergedBeanDefinition
+ (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;[Ljava/lang/Object;)V
+ (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;[Ljava/lang/Object;)V
 clearMergedBeanDefinition
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -96,6 +99,9 @@ getBeansOfType
 getBeansWithAnnotation
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)L1java/util/Map<L1java/lang/String;Ljava/lang/Object;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
+getBootstrapExecutor
+ ()Ljava/util/concurrent/Executor;
+ ()L0java/util/concurrent/Executor; # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 getDependencyComparator
  ()Ljava/util/Comparator<Ljava/lang/Object;>;
  ()L0java/util/Comparator<Ljava/lang/Object;>;
@@ -120,6 +126,9 @@ isBeanDefinitionOverridable
 isBeanEligibleForMetadataCaching
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
+isCurrentThreadAllowedToHoldSingletonLock
+ ()Ljava/lang/Boolean;
+ ()L0java/lang/Boolean; # @Inherited(org.springframework.beans.factory.support.DefaultSingletonBeanRegistry)
 isPrimary
  (Ljava/lang/String;Ljava/lang/Object;)Z
  (Ljava/lang/String;Ljava/lang/Object;)Z
@@ -153,6 +162,9 @@ resolveNamedBean
 setAutowireCandidateResolver
  (Lorg/springframework/beans/factory/support/AutowireCandidateResolver;)V
  (Lorg/springframework/beans/factory/support/AutowireCandidateResolver;)V
+setBootstrapExecutor
+ (Ljava/util/concurrent/Executor;)V
+ (Ljava/util/concurrent/Executor;)V
 setDependencyComparator
  (Ljava/util/Comparator<Ljava/lang/Object;>;)V
  (Ljava/util/Comparator<Ljava/lang/Object;>;)V

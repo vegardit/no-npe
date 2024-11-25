@@ -1,12 +1,5 @@
 class org/springframework/web/bind/MethodArgumentNotValidException
 
-errorsToStringList
- (Ljava/util/List<+Lorg/springframework/validation/ObjectError;>;)Ljava/util/List<Ljava/lang/String;>;
- (Ljava/util/List<+Lorg/springframework/validation/ObjectError;>;)Ljava/util/List<Ljava/lang/String;>;
-errorsToStringList
- (Ljava/util/List<+Lorg/springframework/validation/ObjectError;>;Lorg/springframework/context/MessageSource;Ljava/util/Locale;)Ljava/util/List<Ljava/lang/String;>;
- (Ljava/util/List<+Lorg/springframework/validation/ObjectError;>;Lorg/springframework/context/MessageSource;Ljava/util/Locale;)Ljava/util/List<Ljava/lang/String;>;
-
 <init>
  (Lorg/springframework/core/MethodParameter;Lorg/springframework/validation/BindingResult;)V
  (Lorg/springframework/core/MethodParameter;Lorg/springframework/validation/BindingResult;)V
@@ -28,6 +21,3 @@ getParameter
 getStatusCode
  ()Lorg/springframework/http/HttpStatusCode;
  ()Lorg/springframework/http/HttpStatusCode;
-resolveErrorMessages
- (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)Ljava/util/Map<Lorg/springframework/validation/ObjectError;Ljava/lang/String;>;
- (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)Ljava/util/Map<Lorg/springframework/validation/ObjectError;Ljava/lang/String;>;

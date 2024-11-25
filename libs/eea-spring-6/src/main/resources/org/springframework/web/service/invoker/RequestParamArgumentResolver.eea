@@ -9,3 +9,12 @@ addRequestValue
 createNamedValueInfo
  (Lorg/springframework/core/MethodParameter;)Lorg/springframework/web/service/invoker/AbstractNamedValueArgumentResolver$NamedValueInfo;
  (Lorg/springframework/core/MethodParameter;)L0org/springframework/web/service/invoker/AbstractNamedValueArgumentResolver$NamedValueInfo; # @Inherited(org.springframework.web.service.invoker.AbstractNamedValueArgumentResolver)
+createNamedValueInfo
+ (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Lorg/springframework/web/service/invoker/AbstractNamedValueArgumentResolver$NamedValueInfo;
+ (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)L0org/springframework/web/service/invoker/AbstractNamedValueArgumentResolver$NamedValueInfo; # @Inherited(org.springframework.web.service.invoker.AbstractNamedValueArgumentResolver)
+isFormOrMultipartContent
+ (Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Z
+ (Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Z
+supportsMultipleValues
+ (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Z
+ (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Z

@@ -1,6 +1,6 @@
 class org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder
 
-super org/springframework/test/web/servlet/request/ConfigurableSmartRequestBuilder
+super org/springframework/test/web/servlet/request/AbstractMockHttpServletRequestBuilder
  <Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;>
  <Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;>
 
@@ -10,9 +10,6 @@ accept
 accept
  ([Lorg/springframework/http/MediaType;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  ([Lorg/springframework/http/MediaType;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
-buildRequest
- (Ljakarta/servlet/ServletContext;)Lorg/springframework/mock/web/MockHttpServletRequest;
- (Ljakarta/servlet/ServletContext;)Lorg/springframework/mock/web/MockHttpServletRequest;
 characterEncoding
  (Ljava/lang/String;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  (Ljava/lang/String;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
@@ -37,9 +34,6 @@ contextPath
 cookie
  ([Ljakarta/servlet/http/Cookie;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  ([Ljakarta/servlet/http/Cookie;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
-createServletRequest
- (Ljakarta/servlet/ServletContext;)Lorg/springframework/mock/web/MockHttpServletRequest;
- (Ljakarta/servlet/ServletContext;)L1org/springframework/mock/web/MockHttpServletRequest;
 flashAttr
  (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  (Ljava/lang/String;Ljava/lang/Object;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
@@ -64,9 +58,6 @@ locale
 locale
  ([Ljava/util/Locale;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  ([Ljava/util/Locale;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
-merge
- (Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;)Ljava/lang/Object;
 param
  (Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  (Ljava/lang/String;[Ljava/lang/String;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
@@ -76,9 +67,6 @@ params
 pathInfo
  (Ljava/lang/String;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  (Ljava/lang/String;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
-postProcessRequest
- (Lorg/springframework/mock/web/MockHttpServletRequest;)Lorg/springframework/mock/web/MockHttpServletRequest;
- (Lorg/springframework/mock/web/MockHttpServletRequest;)Lorg/springframework/mock/web/MockHttpServletRequest;
 principal
  (Ljava/security/Principal;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  (Ljava/security/Principal;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
@@ -109,6 +97,12 @@ sessionAttr
 sessionAttrs
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
+uri
+ (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
+ (Ljava/lang/String;[Ljava/lang/Object;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
+uri
+ (Ljava/net/URI;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
+ (Ljava/net/URI;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
 with
  (Lorg/springframework/test/web/servlet/request/RequestPostProcessor;)Lorg/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;
  (Lorg/springframework/test/web/servlet/request/RequestPostProcessor;)L1org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder;

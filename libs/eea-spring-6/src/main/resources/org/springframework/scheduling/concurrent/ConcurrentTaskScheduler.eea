@@ -6,6 +6,9 @@ class org/springframework/scheduling/concurrent/ConcurrentTaskScheduler
 <init>
  (Ljava/util/concurrent/ScheduledExecutorService;)V
  (Ljava/util/concurrent/ScheduledExecutorService;)V
+execute
+ (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V # @Inherited(org.springframework.scheduling.concurrent.ConcurrentTaskExecutor)
 getClock
  ()Ljava/time/Clock;
  ()Ljava/time/Clock;
@@ -36,3 +39,15 @@ setErrorHandler
 setScheduledExecutor
  (Ljava/util/concurrent/ScheduledExecutorService;)V
  (Ljava/util/concurrent/ScheduledExecutorService;)V
+submit
+ (Ljava/lang/Runnable;)Ljava/util/concurrent/Future<*>;
+ (Ljava/lang/Runnable;)L1java/util/concurrent/Future<*>; # @Inherited(org.springframework.scheduling.concurrent.ConcurrentTaskExecutor)
+submit
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Ljava/util/concurrent/Future<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1java/util/concurrent/Future<TT;>; # @Inherited(org.springframework.scheduling.concurrent.ConcurrentTaskExecutor)
+submitListenable
+ (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+submitListenable
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;

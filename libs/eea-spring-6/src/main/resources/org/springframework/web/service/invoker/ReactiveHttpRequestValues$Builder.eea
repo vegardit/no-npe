@@ -15,9 +15,6 @@ addRequestParameter
 addRequestPart
  (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/web/service/invoker/ReactiveHttpRequestValues$Builder;
  (Ljava/lang/String;Ljava/lang/Object;)L1org/springframework/web/service/invoker/ReactiveHttpRequestValues$Builder;
-addRequestPart
- <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(Ljava/lang/String;TP;Lorg/springframework/core/ResolvableType;)Lorg/springframework/web/service/invoker/ReactiveHttpRequestValues$Builder;
- <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(Ljava/lang/String;TP;Lorg/springframework/core/ResolvableType;)L1org/springframework/web/service/invoker/ReactiveHttpRequestValues$Builder;
 addRequestPartPublisher
  <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(Ljava/lang/String;TP;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/web/service/invoker/ReactiveHttpRequestValues$Builder;
  <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(Ljava/lang/String;TP;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)L1org/springframework/web/service/invoker/ReactiveHttpRequestValues$Builder;
@@ -33,9 +30,6 @@ createRequestValues
 setAccept
  (Ljava/util/List<Lorg/springframework/http/MediaType;>;)Lorg/springframework/web/service/invoker/ReactiveHttpRequestValues$Builder;
  (Ljava/util/List<Lorg/springframework/http/MediaType;>;)L1org/springframework/web/service/invoker/ReactiveHttpRequestValues$Builder;
-setBody
- <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(TP;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)V
- <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(TP;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)V
 setBodyPublisher
  <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(TP;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)V
  <T:Ljava/lang/Object;P::Lorg/reactivestreams/Publisher<TT;>;>(TP;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)V

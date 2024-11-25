@@ -3,12 +3,15 @@ class org/springframework/validation/method/MethodValidationException
 <init>
  (Lorg/springframework/validation/method/MethodValidationResult;)V
  (Lorg/springframework/validation/method/MethodValidationResult;)V
-getAllValidationResults
- ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
- ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
+getCrossParameterValidationResults
+ ()Ljava/util/List<Lorg/springframework/context/MessageSourceResolvable;>;
+ ()Ljava/util/List<Lorg/springframework/context/MessageSourceResolvable;>;
 getMethod
  ()Ljava/lang/reflect/Method;
  ()Ljava/lang/reflect/Method;
+getParameterValidationResults
+ ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
+ ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
 getTarget
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;

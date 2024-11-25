@@ -7,11 +7,11 @@ addReturnValueHandlers
  (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;)V
  (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;)V
 brokerChannel
- (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/core/task/TaskExecutor;)Lorg/springframework/messaging/support/AbstractSubscribableChannel;
- (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/core/task/TaskExecutor;)L1org/springframework/messaging/support/AbstractSubscribableChannel;
+ (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Ljava/util/concurrent/Executor;)Lorg/springframework/messaging/support/AbstractSubscribableChannel;
+ (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Ljava/util/concurrent/Executor;)L1org/springframework/messaging/support/AbstractSubscribableChannel;
 brokerChannelExecutor
- (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)Lorg/springframework/core/task/TaskExecutor;
- (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)L1org/springframework/core/task/TaskExecutor;
+ (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)Ljava/util/concurrent/Executor;
+ (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;)Ljava/util/concurrent/Executor;
 brokerMessageConverter
  ()Lorg/springframework/messaging/converter/CompositeMessageConverter;
  ()L1org/springframework/messaging/converter/CompositeMessageConverter;
@@ -19,17 +19,17 @@ brokerMessagingTemplate
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/converter/CompositeMessageConverter;)Lorg/springframework/messaging/simp/SimpMessagingTemplate;
  (Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/support/AbstractSubscribableChannel;Lorg/springframework/messaging/converter/CompositeMessageConverter;)L1org/springframework/messaging/simp/SimpMessagingTemplate;
 clientInboundChannel
- (Lorg/springframework/core/task/TaskExecutor;)Lorg/springframework/messaging/support/AbstractSubscribableChannel;
- (Lorg/springframework/core/task/TaskExecutor;)L1org/springframework/messaging/support/AbstractSubscribableChannel;
+ (Ljava/util/concurrent/Executor;)Lorg/springframework/messaging/support/AbstractSubscribableChannel;
+ (Ljava/util/concurrent/Executor;)L1org/springframework/messaging/support/AbstractSubscribableChannel;
 clientInboundChannelExecutor
- ()Lorg/springframework/core/task/TaskExecutor;
- ()Lorg/springframework/core/task/TaskExecutor;
+ ()Ljava/util/concurrent/Executor;
+ ()Ljava/util/concurrent/Executor;
 clientOutboundChannel
- (Lorg/springframework/core/task/TaskExecutor;)Lorg/springframework/messaging/support/AbstractSubscribableChannel;
- (Lorg/springframework/core/task/TaskExecutor;)L1org/springframework/messaging/support/AbstractSubscribableChannel;
+ (Ljava/util/concurrent/Executor;)Lorg/springframework/messaging/support/AbstractSubscribableChannel;
+ (Ljava/util/concurrent/Executor;)L1org/springframework/messaging/support/AbstractSubscribableChannel;
 clientOutboundChannelExecutor
- ()Lorg/springframework/core/task/TaskExecutor;
- ()Lorg/springframework/core/task/TaskExecutor;
+ ()Ljava/util/concurrent/Executor;
+ ()Ljava/util/concurrent/Executor;
 configureClientInboundChannel
  (Lorg/springframework/messaging/simp/config/ChannelRegistration;)V
  (Lorg/springframework/messaging/simp/config/ChannelRegistration;)V

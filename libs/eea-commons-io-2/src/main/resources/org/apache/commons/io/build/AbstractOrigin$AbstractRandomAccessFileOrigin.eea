@@ -1,0 +1,35 @@
+class org/apache/commons/io/build/AbstractOrigin$AbstractRandomAccessFileOrigin
+ <T:Ljava/io/RandomAccessFile;B:Lorg/apache/commons/io/build/AbstractOrigin$AbstractRandomAccessFileOrigin<TT;TB;>;>
+ <T:Ljava/io/RandomAccessFile;B:Lorg/apache/commons/io/build/AbstractOrigin$AbstractRandomAccessFileOrigin<TT;TB;>;>
+
+super org/apache/commons/io/build/AbstractOrigin
+ <TT;TB;>
+ <TT;TB;>
+
+<init>
+ (TT;)V
+ (TT;)V
+getByteArray
+ ()[B
+ ()[1B # @Inherited(org.apache.commons.io.build.AbstractOrigin)
+getByteArray
+ (JI)[B
+ (JI)[1B # @Inherited(org.apache.commons.io.build.AbstractOrigin)
+getCharSequence
+ (Ljava/nio/charset/Charset;)Ljava/lang/CharSequence;
+ (Ljava/nio/charset/Charset;)L1java/lang/CharSequence; # @Overrides(org.apache.commons.io.build.AbstractOrigin)
+getInputStream
+ ([Ljava/nio/file/OpenOption;)Ljava/io/InputStream;
+ ([1Ljava/nio/file/OpenOption;)L1java/io/InputStream; # @Inherited(org.apache.commons.io.build.AbstractOrigin)
+getOutputStream
+ ([Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;
+ ([1Ljava/nio/file/OpenOption;)L1java/io/OutputStream; # @Inherited(org.apache.commons.io.build.AbstractOrigin)
+getRandomAccessFile
+ ([Ljava/nio/file/OpenOption;)TT;
+ ([Ljava/nio/file/OpenOption;)TT;
+getReader
+ (Ljava/nio/charset/Charset;)Ljava/io/Reader;
+ (L1java/nio/charset/Charset;)L1java/io/Reader; # @Inherited(org.apache.commons.io.build.AbstractOrigin)
+getWriter
+ (Ljava/nio/charset/Charset;[Ljava/nio/file/OpenOption;)Ljava/io/Writer;
+ (Ljava/nio/charset/Charset;[Ljava/nio/file/OpenOption;)L1java/io/Writer; # @Overrides(org.apache.commons.io.build.AbstractOrigin)

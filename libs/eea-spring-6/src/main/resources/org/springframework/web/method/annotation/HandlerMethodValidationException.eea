@@ -6,9 +6,9 @@ class org/springframework/web/method/annotation/HandlerMethodValidationException
 <init>
  (Lorg/springframework/validation/method/MethodValidationResult;Ljava/util/function/Predicate<Lorg/springframework/core/MethodParameter;>;Ljava/util/function/Predicate<Lorg/springframework/core/MethodParameter;>;)V
  (Lorg/springframework/validation/method/MethodValidationResult;Ljava/util/function/Predicate<Lorg/springframework/core/MethodParameter;>;Ljava/util/function/Predicate<Lorg/springframework/core/MethodParameter;>;)V
-getAllValidationResults
- ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
- ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
+getCrossParameterValidationResults
+ ()Ljava/util/List<Lorg/springframework/context/MessageSourceResolvable;>;
+ ()Ljava/util/List<Lorg/springframework/context/MessageSourceResolvable;>;
 getDetailMessageArguments
  ()[Ljava/lang/Object;
  ()[0Ljava/lang/Object; # @Inherited(org.springframework.web.ErrorResponseException)
@@ -18,6 +18,9 @@ getDetailMessageArguments
 getMethod
  ()Ljava/lang/reflect/Method;
  ()Ljava/lang/reflect/Method;
+getParameterValidationResults
+ ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
+ ()Ljava/util/List<Lorg/springframework/validation/method/ParameterValidationResult;>;
 getTarget
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;

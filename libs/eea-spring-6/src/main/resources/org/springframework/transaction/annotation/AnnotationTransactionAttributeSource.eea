@@ -1,14 +1,14 @@
 class org/springframework/transaction/annotation/AnnotationTransactionAttributeSource
 
 <init>
- (Ljava/util/Set<Lorg/springframework/transaction/annotation/TransactionAnnotationParser;>;)V
- (Ljava/util/Set<Lorg/springframework/transaction/annotation/TransactionAnnotationParser;>;)V
-<init>
  (Lorg/springframework/transaction/annotation/TransactionAnnotationParser;)V
  (Lorg/springframework/transaction/annotation/TransactionAnnotationParser;)V
 <init>
  ([Lorg/springframework/transaction/annotation/TransactionAnnotationParser;)V
  ([Lorg/springframework/transaction/annotation/TransactionAnnotationParser;)V
+addDefaultRollbackRule
+ (Lorg/springframework/transaction/interceptor/RollbackRuleAttribute;)V
+ (Lorg/springframework/transaction/interceptor/RollbackRuleAttribute;)V
 determineTransactionAttribute
  (Ljava/lang/reflect/AnnotatedElement;)Lorg/springframework/transaction/interceptor/TransactionAttribute;
  (Ljava/lang/reflect/AnnotatedElement;)L0org/springframework/transaction/interceptor/TransactionAttribute;

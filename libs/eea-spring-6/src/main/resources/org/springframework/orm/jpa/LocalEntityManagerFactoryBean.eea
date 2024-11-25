@@ -3,3 +3,9 @@ class org/springframework/orm/jpa/LocalEntityManagerFactoryBean
 createNativeEntityManagerFactory
  ()Ljakarta/persistence/EntityManagerFactory;
  ()L1jakarta/persistence/EntityManagerFactory; # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
+getDataSource
+ ()Ljavax/sql/DataSource;
+ ()L0javax/sql/DataSource; # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
+setDataSource
+ (Ljavax/sql/DataSource;)V
+ (Ljavax/sql/DataSource;)V

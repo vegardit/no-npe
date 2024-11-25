@@ -7,3 +7,6 @@ super org/springframework/http/codec/KotlinSerializationStringEncoder
 <init>
  (Lkotlinx/serialization/json/Json;)V
  (Lkotlinx/serialization/json/Json;)V
+encodeNonStream
+ (Lorg/reactivestreams/Publisher<*>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
+ (Lorg/reactivestreams/Publisher<*>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;

@@ -3,6 +3,9 @@ class org/springframework/http/server/reactive/AbstractServerHttpRequest
 <init>
  (Lorg/springframework/http/HttpMethod;Ljava/net/URI;Ljava/lang/String;Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
  (Lorg/springframework/http/HttpMethod;Ljava/net/URI;Ljava/lang/String;Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
+getAttributes
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 getCookies
  ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Lorg/springframework/http/HttpCookie;>;
  ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Lorg/springframework/http/HttpCookie;>;
@@ -45,3 +48,6 @@ initQueryParams
 initSslInfo
  ()Lorg/springframework/http/server/reactive/SslInfo;
  ()L0org/springframework/http/server/reactive/SslInfo;
+setAttributesSupplier
+ (Ljava/util/function/Supplier<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;)V
+ (Ljava/util/function/Supplier<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;)V

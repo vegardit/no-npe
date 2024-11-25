@@ -6,6 +6,9 @@ class org/springframework/expression/spel/support/StandardEvaluationContext
 addConstructorResolver
  (Lorg/springframework/expression/ConstructorResolver;)V
  (Lorg/springframework/expression/ConstructorResolver;)V
+addIndexAccessor
+ (Lorg/springframework/expression/IndexAccessor;)V
+ (Lorg/springframework/expression/IndexAccessor;)V
 addMethodResolver
  (Lorg/springframework/expression/MethodResolver;)V
  (Lorg/springframework/expression/MethodResolver;)V
@@ -21,6 +24,9 @@ getBeanResolver
 getConstructorResolvers
  ()Ljava/util/List<Lorg/springframework/expression/ConstructorResolver;>;
  ()Ljava/util/List<Lorg/springframework/expression/ConstructorResolver;>;
+getIndexAccessors
+ ()Ljava/util/List<Lorg/springframework/expression/IndexAccessor;>;
+ ()Ljava/util/List<Lorg/springframework/expression/IndexAccessor;>;
 getMethodResolvers
  ()Ljava/util/List<Lorg/springframework/expression/MethodResolver;>;
  ()Ljava/util/List<Lorg/springframework/expression/MethodResolver;>;
@@ -57,6 +63,9 @@ registerMethodFilter
 removeConstructorResolver
  (Lorg/springframework/expression/ConstructorResolver;)Z
  (Lorg/springframework/expression/ConstructorResolver;)Z
+removeIndexAccessor
+ (Lorg/springframework/expression/IndexAccessor;)Z
+ (Lorg/springframework/expression/IndexAccessor;)Z
 removeMethodResolver
  (Lorg/springframework/expression/MethodResolver;)Z
  (Lorg/springframework/expression/MethodResolver;)Z
@@ -69,6 +78,9 @@ setBeanResolver
 setConstructorResolvers
  (Ljava/util/List<Lorg/springframework/expression/ConstructorResolver;>;)V
  (Ljava/util/List<Lorg/springframework/expression/ConstructorResolver;>;)V
+setIndexAccessors
+ (Ljava/util/List<Lorg/springframework/expression/IndexAccessor;>;)V
+ (Ljava/util/List<Lorg/springframework/expression/IndexAccessor;>;)V
 setMethodResolvers
  (Ljava/util/List<Lorg/springframework/expression/MethodResolver;>;)V
  (Ljava/util/List<Lorg/springframework/expression/MethodResolver;>;)V

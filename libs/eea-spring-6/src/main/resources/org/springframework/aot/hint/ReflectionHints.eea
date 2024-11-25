@@ -12,6 +12,9 @@ registerConstructor
 registerField
  (Ljava/lang/reflect/Field;)Lorg/springframework/aot/hint/ReflectionHints;
  (Ljava/lang/reflect/Field;)Lorg/springframework/aot/hint/ReflectionHints;
+registerForInterfaces
+ (Ljava/lang/Class<*>;Ljava/util/function/Consumer<Lorg/springframework/aot/hint/TypeHint$Builder;>;)Lorg/springframework/aot/hint/ReflectionHints;
+ (Ljava/lang/Class<*>;Ljava/util/function/Consumer<Lorg/springframework/aot/hint/TypeHint$Builder;>;)Lorg/springframework/aot/hint/ReflectionHints;
 registerMethod
  (Ljava/lang/reflect/Method;Lorg/springframework/aot/hint/ExecutableMode;)Lorg/springframework/aot/hint/ReflectionHints;
  (Ljava/lang/reflect/Method;Lorg/springframework/aot/hint/ExecutableMode;)Lorg/springframework/aot/hint/ReflectionHints;

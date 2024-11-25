@@ -1,0 +1,36 @@
+class org/apache/commons/io/serialization/ObjectStreamClassPredicate
+
+super java/util/function/Predicate
+ <Ljava/io/ObjectStreamClass;>
+ <Ljava/io/ObjectStreamClass;>
+
+accept
+ (Ljava/util/regex/Pattern;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+ (Ljava/util/regex/Pattern;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+accept
+ (Lorg/apache/commons/io/serialization/ClassNameMatcher;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+ (Lorg/apache/commons/io/serialization/ClassNameMatcher;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+accept
+ ([Ljava/lang/Class<*>;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+ ([Ljava/lang/Class<*>;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+accept
+ ([Ljava/lang/String;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+ ([Ljava/lang/String;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+reject
+ (Ljava/util/regex/Pattern;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+ (Ljava/util/regex/Pattern;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+reject
+ (Lorg/apache/commons/io/serialization/ClassNameMatcher;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+ (Lorg/apache/commons/io/serialization/ClassNameMatcher;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+reject
+ ([Ljava/lang/Class<*>;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+ ([Ljava/lang/Class<*>;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+reject
+ ([Ljava/lang/String;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+ ([Ljava/lang/String;)Lorg/apache/commons/io/serialization/ObjectStreamClassPredicate;
+test
+ (Ljava/io/ObjectStreamClass;)Z
+ (Ljava/io/ObjectStreamClass;)Z
+test
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
