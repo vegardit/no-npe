@@ -22,6 +22,12 @@ win32_new
 addShellListener
  (Lorg/eclipse/swt/events/ShellListener;)V
  (L1org/eclipse/swt/events/ShellListener;)V
+getBounds
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+ ()L1org/eclipse/swt/graphics/Rectangle; # @Inherited(org.eclipse.swt.widgets.Control)
+getLocation
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.swt.widgets.Control)
 getMaximumSize
  ()Lorg/eclipse/swt/graphics/Point;
  ()Lorg/eclipse/swt/graphics/Point;
@@ -46,6 +52,12 @@ print
 removeShellListener
  (Lorg/eclipse/swt/events/ShellListener;)V
  (L1org/eclipse/swt/events/ShellListener;)V
+setBounds
+ (Lorg/eclipse/swt/graphics/Rectangle;)V
+ (L1org/eclipse/swt/graphics/Rectangle;)V # @Inherited(org.eclipse.swt.widgets.Control)
+setLocation
+ (Lorg/eclipse/swt/graphics/Point;)V
+ (L1org/eclipse/swt/graphics/Point;)V # @Inherited(org.eclipse.swt.widgets.Control)
 setMaximumSize
  (Lorg/eclipse/swt/graphics/Point;)V
  (Lorg/eclipse/swt/graphics/Point;)V

@@ -33,6 +33,9 @@ createSite
 findEditors
  (Lorg/eclipse/ui/IEditorInput;)[Lorg/eclipse/ui/IEditorPart;
  (Lorg/eclipse/ui/IEditorInput;)[Lorg/eclipse/ui/IEditorPart;
+getAPIPreferenceStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
 getActiveEditor
  ()Lorg/eclipse/ui/IEditorPart;
  ()L0org/eclipse/ui/IEditorPart;
@@ -63,6 +66,9 @@ getSelectedPage
 init
  (Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
  (Lorg/eclipse/ui/IEditorSite;Lorg/eclipse/ui/IEditorInput;)V
+isUpdateRequired
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)Z
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)Z
 removePageChangedListener
  (Lorg/eclipse/jface/dialogs/IPageChangedListener;)V
  (L1org/eclipse/jface/dialogs/IPageChangedListener;)V # @Inherited(org.eclipse.jface.dialogs.IPageChangeProvider)
