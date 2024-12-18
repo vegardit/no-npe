@@ -74,4 +74,26 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <dependencyLinks>
+            <dependencyLink>
+              <!--workaround for
+                  https://github.com/assertj/assertj/issues/3476
+                  https://issues.apache.org/jira/projects/MJAVADOC/issues/MJAVADOC-792
+              -->
+              <groupId>org.assertj</groupId>
+              <artifactId>assertj-core</artifactId>
+              <url>https://www.javadoc.io/doc/org.assertj/assertj-core/${assertj.version}</url>
+            </dependencyLink>
+          </dependencyLinks>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
