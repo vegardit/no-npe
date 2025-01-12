@@ -84,36 +84,36 @@ To build the project follow these steps:
    <?xml version="1.0" encoding="UTF8"?>
    <toolchains xmlns="http://maven.apache.org/TOOLCHAINS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://maven.apache.org/TOOLCHAINS/1.1.0 https://maven.apache.org/xsd/toolchains-1.1.0.xsd">
-      <toolchain>
-         <type>jdk</type>
-         <provides>
-            <version>11</version>
-            <vendor>default</vendor>
-         </provides>
-         <configuration>
-            <jdkHome>[PATH_TO_YOUR_JDK_11]</jdkHome>
-         </configuration>
-      </toolchain>
-      <toolchain>
-         <type>jdk</type>
-         <provides>
-            <version>17</version>
-            <vendor>default</vendor>
-         </provides>
-         <configuration>
-            <jdkHome>[PATH_TO_YOUR_JDK_17]</jdkHome>
-         </configuration>
-      </toolchain>
-      <toolchain>
-         <type>jdk</type>
-         <provides>
-            <version>21</version>
-            <vendor>default</vendor>
-         </provides>
-         <configuration>
-            <jdkHome>[PATH_TO_YOUR_JDK_21]</jdkHome>
-         </configuration>
-      </toolchain>
+     <toolchain>
+       <type>jdk</type>
+       <provides>
+         <version>11</version>
+         <vendor>default</vendor>
+       </provides>
+       <configuration>
+         <jdkHome>[PATH_TO_YOUR_JDK_11]</jdkHome>
+       </configuration>
+     </toolchain>
+     <toolchain>
+       <type>jdk</type>
+       <provides>
+         <version>17</version>
+         <vendor>default</vendor>
+       </provides>
+       <configuration>
+         <jdkHome>[PATH_TO_YOUR_JDK_17]</jdkHome>
+       </configuration>
+     </toolchain>
+     <toolchain>
+       <type>jdk</type>
+       <provides>
+         <version>21</version>
+         <vendor>default</vendor>
+       </provides>
+       <configuration>
+         <jdkHome>[PATH_TO_YOUR_JDK_21]</jdkHome>
+       </configuration>
+     </toolchain>
    </toolchains>
    ```
 
