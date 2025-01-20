@@ -1,8 +1,11 @@
 class net/bytebuddy/build/Plugin$Engine$Source$Filtering
 
+dropFolders
+ (Lnet/bytebuddy/build/Plugin$Engine$Source;)Lnet/bytebuddy/build/Plugin$Engine$Source;
+ (Lnet/bytebuddy/build/Plugin$Engine$Source;)L1net/bytebuddy/build/Plugin$Engine$Source;
 dropMultiReleaseClassFilesAbove
  (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/build/Plugin$Engine$Source;
- (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/ClassFileVersion;)Lnet/bytebuddy/build/Plugin$Engine$Source;
+ (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/ClassFileVersion;)L1net/bytebuddy/build/Plugin$Engine$Source;
 
 <init>
  (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/matcher/ElementMatcher<Lnet/bytebuddy/build/Plugin$Engine$Source$Element;>;)V
@@ -10,6 +13,9 @@ dropMultiReleaseClassFilesAbove
 <init>
  (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/matcher/ElementMatcher<Lnet/bytebuddy/build/Plugin$Engine$Source$Element;>;Z)V
  (Lnet/bytebuddy/build/Plugin$Engine$Source;Lnet/bytebuddy/matcher/ElementMatcher<Lnet/bytebuddy/build/Plugin$Engine$Source$Element;>;Z)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 read
  ()Lnet/bytebuddy/build/Plugin$Engine$Source$Origin;
  ()Lnet/bytebuddy/build/Plugin$Engine$Source$Origin;
