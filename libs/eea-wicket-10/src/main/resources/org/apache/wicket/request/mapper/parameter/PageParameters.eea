@@ -40,6 +40,9 @@ getAllNamed
 getAllNamedByType
  (Lorg/apache/wicket/request/mapper/parameter/INamedParameters$Type;)Ljava/util/List<Lorg/apache/wicket/request/mapper/parameter/INamedParameters$NamedPair;>;
  (Lorg/apache/wicket/request/mapper/parameter/INamedParameters$Type;)Ljava/util/List<Lorg/apache/wicket/request/mapper/parameter/INamedParameters$NamedPair;>;
+getFragment
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
 getNamedKeys
  ()Ljava/util/Set<Ljava/lang/String;>;
  ()Ljava/util/Set<Ljava/lang/String;>;
@@ -76,6 +79,9 @@ set
 set
  (Ljava/lang/String;Ljava/lang/Object;Lorg/apache/wicket/request/mapper/parameter/INamedParameters$Type;)Lorg/apache/wicket/request/mapper/parameter/PageParameters;
  (Ljava/lang/String;Ljava/lang/Object;Lorg/apache/wicket/request/mapper/parameter/INamedParameters$Type;)Lorg/apache/wicket/request/mapper/parameter/PageParameters;
+setFragment
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
 setLocale
  (Ljava/util/Locale;)Lorg/apache/wicket/request/mapper/parameter/PageParameters;
  (Ljava/util/Locale;)Lorg/apache/wicket/request/mapper/parameter/PageParameters;

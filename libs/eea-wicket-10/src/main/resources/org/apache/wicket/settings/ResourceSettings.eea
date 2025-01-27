@@ -54,6 +54,9 @@ getResourceWatcher
 getStringResourceLoaders
  ()Ljava/util/List<Lorg/apache/wicket/resource/loader/IStringResourceLoader;>;
  ()Ljava/util/List<Lorg/apache/wicket/resource/loader/IStringResourceLoader;>;
+getUrlSanitizer
+ ()Lorg/apache/wicket/request/resource/IResourceUrlSanitizer;
+ ()Lorg/apache/wicket/request/resource/IResourceUrlSanitizer;
 setCachingStrategy
  (Lorg/apache/wicket/request/resource/caching/IResourceCachingStrategy;)Lorg/apache/wicket/settings/ResourceSettings;
  (Lorg/apache/wicket/request/resource/caching/IResourceCachingStrategy;)Lorg/apache/wicket/settings/ResourceSettings;
@@ -102,6 +105,9 @@ setResourceWatcher
 setThrowExceptionOnMissingResource
  (Z)Lorg/apache/wicket/settings/ResourceSettings;
  (Z)Lorg/apache/wicket/settings/ResourceSettings;
+setUrlSanitizer
+ (Lorg/apache/wicket/request/resource/IResourceUrlSanitizer;)V
+ (Lorg/apache/wicket/request/resource/IResourceUrlSanitizer;)V
 setUseDefaultOnMissingResource
  (Z)Lorg/apache/wicket/settings/ResourceSettings;
  (Z)Lorg/apache/wicket/settings/ResourceSettings;
