@@ -3,6 +3,12 @@ class org/eclipse/lsp4j/debug/DataBreakpointInfoArguments
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getAsAddress
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
+getBytes
+ ()Ljava/lang/Integer;
+ ()Ljava/lang/Integer;
 getFrameId
  ()Ljava/lang/Integer;
  ()Ljava/lang/Integer;
@@ -15,6 +21,12 @@ getName
 getVariablesReference
  ()Ljava/lang/Integer;
  ()Ljava/lang/Integer;
+setAsAddress
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setBytes
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V
 setFrameId
  (Ljava/lang/Integer;)V
  (Ljava/lang/Integer;)V
