@@ -24,6 +24,9 @@ getSupportTerminateDebuggee
 getSupportedChecksumAlgorithms
  ()[Lorg/eclipse/lsp4j/debug/ChecksumAlgorithm;
  ()[Lorg/eclipse/lsp4j/debug/ChecksumAlgorithm;
+getSupportsANSIStyling
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
 getSupportsBreakpointLocationsRequest
  ()Ljava/lang/Boolean;
  ()Ljava/lang/Boolean;
@@ -40,6 +43,9 @@ getSupportsConditionalBreakpoints
  ()Ljava/lang/Boolean;
  ()Ljava/lang/Boolean;
 getSupportsConfigurationDoneRequest
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
+getSupportsDataBreakpointBytes
  ()Ljava/lang/Boolean;
  ()Ljava/lang/Boolean;
 getSupportsDataBreakpoints
@@ -144,6 +150,9 @@ setSupportTerminateDebuggee
 setSupportedChecksumAlgorithms
  ([Lorg/eclipse/lsp4j/debug/ChecksumAlgorithm;)V
  ([Lorg/eclipse/lsp4j/debug/ChecksumAlgorithm;)V
+setSupportsANSIStyling
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
 setSupportsBreakpointLocationsRequest
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
@@ -160,6 +169,9 @@ setSupportsConditionalBreakpoints
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
 setSupportsConfigurationDoneRequest
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setSupportsDataBreakpointBytes
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
 setSupportsDataBreakpoints

@@ -1,4 +1,4 @@
-class org/eclipse/lsp4j/debug/EvaluateArguments
+class org/eclipse/lsp4j/debug/LocationsResponse
 
 equals
  (Ljava/lang/Object;)Z
@@ -6,16 +6,10 @@ equals
 getColumn
  ()Ljava/lang/Integer;
  ()Ljava/lang/Integer;
-getContext
- ()Ljava/lang/String;
- ()Ljava/lang/String;
-getExpression
- ()Ljava/lang/String;
- ()Ljava/lang/String;
-getFormat
- ()Lorg/eclipse/lsp4j/debug/ValueFormat;
- ()Lorg/eclipse/lsp4j/debug/ValueFormat;
-getFrameId
+getEndColumn
+ ()Ljava/lang/Integer;
+ ()Ljava/lang/Integer;
+getEndLine
  ()Ljava/lang/Integer;
  ()Ljava/lang/Integer;
 getLine
@@ -27,16 +21,10 @@ getSource
 setColumn
  (Ljava/lang/Integer;)V
  (Ljava/lang/Integer;)V
-setContext
- (Ljava/lang/String;)V
- (Ljava/lang/String;)V
-setExpression
- (Ljava/lang/String;)V
- (Ljava/lang/String;)V
-setFormat
- (Lorg/eclipse/lsp4j/debug/ValueFormat;)V
- (Lorg/eclipse/lsp4j/debug/ValueFormat;)V
-setFrameId
+setEndColumn
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V
+setEndLine
  (Ljava/lang/Integer;)V
  (Ljava/lang/Integer;)V
 setLine

@@ -3,6 +3,9 @@ class org/eclipse/lsp4j/debug/Variable
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getDeclarationLocationReference
+ ()Ljava/lang/Integer;
+ ()Ljava/lang/Integer;
 getEvaluateName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -27,6 +30,12 @@ getType
 getValue
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+getValueLocationReference
+ ()Ljava/lang/Integer;
+ ()Ljava/lang/Integer;
+setDeclarationLocationReference
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V
 setEvaluateName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -51,6 +60,9 @@ setType
 setValue
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
+setValueLocationReference
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)
