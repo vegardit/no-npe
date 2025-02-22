@@ -4,27 +4,10 @@ INSTANCE
  Lorg/springframework/beans/factory/support/SimpleAutowireCandidateResolver;
  L1org/springframework/beans/factory/support/SimpleAutowireCandidateResolver;
 
+resolveAutowireCandidates
+ <T:Ljava/lang/Object;>(Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;Ljava/lang/Class<TT;>;)Ljava/util/Map<Ljava/lang/String;TT;>;
+ <T:Ljava/lang/Object;>(Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;Ljava/lang/Class<TT;>;)L1java/util/Map<Ljava/lang/String;TT;>;
+
 cloneIfNecessary
  ()Lorg/springframework/beans/factory/support/AutowireCandidateResolver;
  ()Lorg/springframework/beans/factory/support/AutowireCandidateResolver;
-getLazyResolutionProxyClass
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;)Ljava/lang/Class<*>;
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.support.AutowireCandidateResolver)
-getLazyResolutionProxyIfNecessary
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;)Ljava/lang/Object;
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.support.AutowireCandidateResolver)
-getSuggestedName
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;)Ljava/lang/String;
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;)L0java/lang/String; # @Inherited(org.springframework.beans.factory.support.AutowireCandidateResolver)
-getSuggestedValue
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;)Ljava/lang/Object;
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.support.AutowireCandidateResolver)
-hasQualifier
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;)Z
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;)Z
-isAutowireCandidate
- (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;Lorg/springframework/beans/factory/config/DependencyDescriptor;)Z
- (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;Lorg/springframework/beans/factory/config/DependencyDescriptor;)Z
-isRequired
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;)Z
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;)Z

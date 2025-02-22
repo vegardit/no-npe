@@ -12,6 +12,9 @@ cookie
 flashAttr
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
+formField
+ (Ljava/lang/String;[Ljava/lang/String;)V
+ (Ljava/lang/String;[Ljava/lang/String;)V
 getAccept
  ()Lorg/springframework/http/MediaType;
  ()L0org/springframework/http/MediaType;
@@ -30,6 +33,9 @@ getContextPath
 getFlashAttrs
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  ()L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+getFormFields
+ ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;
+ ()L0org/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;
 getParams
  ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;
  ()L0org/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;
@@ -99,6 +105,9 @@ setContextPath
 setFlashAttrs
  (Ljava/util/Map<Ljava/lang/String;+Ljava/lang/Object;>;)V
  (Ljava/util/Map<Ljava/lang/String;+Ljava/lang/Object;>;)V
+setFormFields
+ (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
 setParams
  (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
  (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
