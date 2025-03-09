@@ -27,6 +27,24 @@ assertDoesNotThrow
 assertDoesNotThrow
  <R:Ljava/lang/Object;>(Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;Lkotlin/jvm/functions/Function0<+TR;>;)TR;
  <R:Ljava/lang/Object;>(Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;Lkotlin/jvm/functions/Function0<+TR;>;)TR;
+assertNotNull
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+assertNotNull
+ (Ljava/lang/Object;Ljava/lang/String;)V
+ (Ljava/lang/Object;Ljava/lang/String;)V
+assertNotNull
+ (Ljava/lang/Object;Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;)V
+ (Ljava/lang/Object;Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;)V
+assertNull
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+assertNull
+ (Ljava/lang/Object;Ljava/lang/String;)V
+ (Ljava/lang/Object;Ljava/lang/String;)V
+assertNull
+ (Ljava/lang/Object;Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;)V
+ (Ljava/lang/Object;Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;)V
 assertTimeout
  <R:Ljava/lang/Object;>(Ljava/time/Duration;Ljava/lang/String;Lkotlin/jvm/functions/Function0<+TR;>;)TR;
  <R:Ljava/lang/Object;>(Ljava/time/Duration;Ljava/lang/String;Lkotlin/jvm/functions/Function0<+TR;>;)TR;
@@ -55,5 +73,8 @@ fail
  (Ljava/lang/Throwable;)Ljava/lang/Void;
  (Ljava/lang/Throwable;)L1java/lang/Void;
 fail
+ (Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;)Ljava/lang/Void;
+ (Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;)L1java/lang/Void;
+fail_nonNullableLambda
  (Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;)Ljava/lang/Void;
  (Lkotlin/jvm/functions/Function0<Ljava/lang/String;>;)L1java/lang/Void;

@@ -1,5 +1,11 @@
 class org/junit/jupiter/api/TestReporter
 
+publishDirectory
+ (Ljava/lang/String;Lorg/junit/jupiter/api/function/ThrowingConsumer<Ljava/nio/file/Path;>;)V
+ (Ljava/lang/String;Lorg/junit/jupiter/api/function/ThrowingConsumer<Ljava/nio/file/Path;>;)V
+publishDirectory
+ (Ljava/nio/file/Path;)V
+ (Ljava/nio/file/Path;)V
 publishEntry
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -9,3 +15,9 @@ publishEntry
 publishEntry
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+publishFile
+ (Ljava/lang/String;Lorg/junit/jupiter/api/extension/MediaType;Lorg/junit/jupiter/api/function/ThrowingConsumer<Ljava/nio/file/Path;>;)V
+ (Ljava/lang/String;Lorg/junit/jupiter/api/extension/MediaType;Lorg/junit/jupiter/api/function/ThrowingConsumer<Ljava/nio/file/Path;>;)V
+publishFile
+ (Ljava/nio/file/Path;Lorg/junit/jupiter/api/extension/MediaType;)V
+ (Ljava/nio/file/Path;Lorg/junit/jupiter/api/extension/MediaType;)V
