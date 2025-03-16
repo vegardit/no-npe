@@ -1,0 +1,30 @@
+class org/eclipse/ltk/core/refactoring/resource/CopyProjectDescriptor
+
+ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+createRefactoring
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;)Lorg/eclipse/ltk/core/refactoring/Refactoring;
+ (Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;)L0org/eclipse/ltk/core/refactoring/Refactoring; # @Overrides(org.eclipse.ltk.core.refactoring.RefactoringDescriptor)
+getNewLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getNewName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSourcePath
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+setNewLocation
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+setNewName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setProjectToCopy
+ (Lorg/eclipse/core/resources/IProject;)V
+ (Lorg/eclipse/core/resources/IProject;)V
+setResourcePath
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V

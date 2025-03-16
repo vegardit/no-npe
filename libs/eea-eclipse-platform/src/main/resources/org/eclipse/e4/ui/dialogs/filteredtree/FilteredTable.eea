@@ -1,0 +1,49 @@
+class org/eclipse/e4/ui/dialogs/filteredtree/FilteredTable
+
+super org/eclipse/jface/viewers/AbstractFilteredViewerComposite
+ <Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;>
+ <Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;>
+
+getBoldFont
+ (Ljava/lang/Object;Lorg/eclipse/e4/ui/dialogs/filteredtree/FilteredTable;Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;)Lorg/eclipse/swt/graphics/Font;
+ (Ljava/lang/Object;Lorg/eclipse/e4/ui/dialogs/filteredtree/FilteredTable;Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;)L0org/eclipse/swt/graphics/Font;
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;)V
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;)V
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;J)V
+ (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;J)V
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createFilterText
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+createTableControl
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;I)L1org/eclipse/swt/widgets/Control;
+doCreateFilterText
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
+doCreateRefreshJob
+ ()Lorg/eclipse/core/runtime/jobs/Job;
+ ()L1org/eclipse/core/runtime/jobs/Job;
+doCreateTableViewer
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/jface/viewers/TableViewer;
+ (Lorg/eclipse/swt/widgets/Composite;I)L1org/eclipse/jface/viewers/TableViewer;
+getPatternFilter
+ ()Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;
+ ()Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;
+getViewer
+ ()Lorg/eclipse/jface/viewers/TableViewer;
+ ()Lorg/eclipse/jface/viewers/TableViewer;
+init
+ (ILorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;)V
+ (ILorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;)V
+setBackground
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (L0org/eclipse/swt/graphics/Color;)V # @Inherited(org.eclipse.swt.widgets.Control)
