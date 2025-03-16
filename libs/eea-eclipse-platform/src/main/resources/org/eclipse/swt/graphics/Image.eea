@@ -1,11 +1,11 @@
 class org/eclipse/swt/graphics/Image
 
 win32_getHandle
- (Lorg/eclipse/swt/graphics/Image;I)Ljava/lang/Long;
- (Lorg/eclipse/swt/graphics/Image;I)Ljava/lang/Long;
+ (Lorg/eclipse/swt/graphics/Image;I)J
+ (Lorg/eclipse/swt/graphics/Image;I)J
 win32_new
- (Lorg/eclipse/swt/graphics/Device;IJ)Lorg/eclipse/swt/graphics/Image;
- (Lorg/eclipse/swt/graphics/Device;IJ)L1org/eclipse/swt/graphics/Image;
+ (Lorg/eclipse/swt/graphics/Device;IJI)Lorg/eclipse/swt/graphics/Image;
+ (Lorg/eclipse/swt/graphics/Device;IJI)L1org/eclipse/swt/graphics/Image;
 
 <init>
  (Lorg/eclipse/swt/graphics/Device;II)V
@@ -31,6 +31,9 @@ win32_new
 <init>
  (Lorg/eclipse/swt/graphics/Device;Lorg/eclipse/swt/graphics/ImageFileNameProvider;)V
  (Lorg/eclipse/swt/graphics/Device;Lorg/eclipse/swt/graphics/ImageFileNameProvider;)V
+<init>
+ (Lorg/eclipse/swt/graphics/Device;Lorg/eclipse/swt/graphics/ImageGcDrawer;II)V
+ (Lorg/eclipse/swt/graphics/Device;Lorg/eclipse/swt/graphics/ImageGcDrawer;II)V
 <init>
  (Lorg/eclipse/swt/graphics/Device;Lorg/eclipse/swt/graphics/Rectangle;)V
  (Lorg/eclipse/swt/graphics/Device;Lorg/eclipse/swt/graphics/Rectangle;)V
