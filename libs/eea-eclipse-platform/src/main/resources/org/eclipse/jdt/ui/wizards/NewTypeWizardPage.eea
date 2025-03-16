@@ -1,0 +1,262 @@
+class org/eclipse/jdt/ui/wizards/NewTypeWizardPage
+
+ENCLOSING
+ Ljava/lang/String;
+ L1java/lang/String;
+ENCLOSINGSELECTION
+ Ljava/lang/String;
+ L1java/lang/String;
+INTERFACES
+ Ljava/lang/String;
+ L1java/lang/String;
+METHODS
+ Ljava/lang/String;
+ L1java/lang/String;
+MODIFIERS
+ Ljava/lang/String;
+ L1java/lang/String;
+PACKAGE
+ Ljava/lang/String;
+ L1java/lang/String;
+SEALEDMODIFIERS
+ Ljava/lang/String;
+ L1java/lang/String;
+SUPER
+ Ljava/lang/String;
+ L1java/lang/String;
+TYPENAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+fAddCommentButton
+ Lorg/eclipse/jdt/internal/ui/wizards/dialogfields/SelectionButtonDialogField;
+ Lorg/eclipse/jdt/internal/ui/wizards/dialogfields/SelectionButtonDialogField;
+fEnclosingTypeStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+fModifierStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+fPackageStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+fSealedModifierStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+fSealedSuperClassStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+fSealedSuperInterfacesStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+fSuperClassStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+fSuperInterfacesStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+fTypeNameStatus
+ Lorg/eclipse/core/runtime/IStatus;
+ Lorg/eclipse/core/runtime/IStatus;
+
+<init>
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V
+<init>
+ (ZLjava/lang/String;)V
+ (ZLjava/lang/String;)V
+addSuperInterface
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+addSuperInterface
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IType;)Z
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IType;)Z
+chooseEnclosingType
+ ()Lorg/eclipse/jdt/core/IType;
+ ()L0org/eclipse/jdt/core/IType;
+choosePackage
+ ()Lorg/eclipse/jdt/core/IPackageFragment;
+ ()L0org/eclipse/jdt/core/IPackageFragment;
+chooseSuperClass
+ ()Lorg/eclipse/jdt/core/IType;
+ ()L0org/eclipse/jdt/core/IType;
+constructCUContent
+ (Lorg/eclipse/jdt/core/ICompilationUnit;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/jdt/core/ICompilationUnit;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+containerChanged
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()L1org/eclipse/core/runtime/IStatus; # @Inherited(org.eclipse.jdt.ui.wizards.NewContainerWizardPage)
+createCommentControls
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createCommentWithLinkControls
+ (Lorg/eclipse/swt/widgets/Composite;IZ)Lorg/eclipse/swt/widgets/Link;
+ (Lorg/eclipse/swt/widgets/Composite;IZ)L1org/eclipse/swt/widgets/Link;
+createEnclosingTypeControls
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createInheritedMethods
+ (Lorg/eclipse/jdt/core/IType;ZZLorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;Lorg/eclipse/core/runtime/IProgressMonitor;)[Lorg/eclipse/jdt/core/IMethod;
+ (Lorg/eclipse/jdt/core/IType;ZZLorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;Lorg/eclipse/core/runtime/IProgressMonitor;)[1Lorg/eclipse/jdt/core/IMethod;
+createMainMethod
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;)Lorg/eclipse/jdt/core/IMethod;
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;)L0org/eclipse/jdt/core/IMethod;
+createModifierControls
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createPackageControls
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createSeparator
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createSuperClassControls
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createSuperInterfacesControls
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+createType
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+createTypeMembers
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+createTypeNameControls
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+enclosingTypeChanged
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()L1org/eclipse/core/runtime/IStatus;
+getCompilationUnitName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
+getCreatedType
+ ()Lorg/eclipse/jdt/core/IType;
+ ()Lorg/eclipse/jdt/core/IType;
+getEnclosingType
+ ()Lorg/eclipse/jdt/core/IType;
+ ()L0org/eclipse/jdt/core/IType;
+getEnclosingTypeLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getEnclosingTypeText
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFileComment
+ (Lorg/eclipse/jdt/core/ICompilationUnit;)Ljava/lang/String;
+ (Lorg/eclipse/jdt/core/ICompilationUnit;)L0java/lang/String;
+getFileComment
+ (Lorg/eclipse/jdt/core/ICompilationUnit;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/jdt/core/ICompilationUnit;Ljava/lang/String;)L0java/lang/String;
+getModifiedResource
+ ()Lorg/eclipse/core/resources/IResource;
+ ()L0org/eclipse/core/resources/IResource;
+getModifiersLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPackageFragment
+ ()Lorg/eclipse/jdt/core/IPackageFragment;
+ ()L0org/eclipse/jdt/core/IPackageFragment;
+getPackageLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPackageText
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRunnable
+ ()Lorg/eclipse/jface/operation/IRunnableWithProgress;
+ ()Lorg/eclipse/jface/operation/IRunnableWithProgress;
+getSealedModifierStatus
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+getSealedSuperClassStatus
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+getSealedSuperInterfaceStatus
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+getSuperClass
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSuperClassLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSuperClassStatus
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+getSuperInterfaceStatus
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;
+getSuperInterfaces
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()L1java/util/List<Ljava/lang/String;>;
+getSuperInterfacesLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTemplate
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;)Ljava/lang/String;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;)Ljava/lang/String;
+getTemplate
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;I)Ljava/lang/String;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;I)L0java/lang/String;
+getTypeComment
+ (Lorg/eclipse/jdt/core/ICompilationUnit;)Ljava/lang/String;
+ (Lorg/eclipse/jdt/core/ICompilationUnit;)L0java/lang/String;
+getTypeComment
+ (Lorg/eclipse/jdt/core/ICompilationUnit;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/jdt/core/ICompilationUnit;Ljava/lang/String;)L0java/lang/String;
+getTypeName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTypeNameLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getUniqueJavaTypeName
+ (Lorg/eclipse/jdt/core/IPackageFragment;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/jdt/core/IPackageFragment;Ljava/lang/String;)L1java/lang/String;
+handleFieldChanged
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+initTypePage
+ (Lorg/eclipse/jdt/core/IJavaElement;)V
+ (Lorg/eclipse/jdt/core/IJavaElement;)V
+modifiersChanged
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()L1org/eclipse/core/runtime/IStatus;
+packageChanged
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()L1org/eclipse/core/runtime/IStatus;
+setEnclosingType
+ (Lorg/eclipse/jdt/core/IType;Z)V
+ (Lorg/eclipse/jdt/core/IType;Z)V
+setPackageFragment
+ (Lorg/eclipse/jdt/core/IPackageFragment;Z)V
+ (Lorg/eclipse/jdt/core/IPackageFragment;Z)V
+setSuperClass
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+setSuperClass
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;Z)V
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;Z)V
+setSuperInterfaces
+ (Ljava/util/List<Ljava/lang/String;>;Z)V
+ (Ljava/util/List<Ljava/lang/String;>;Z)V
+setSuperInterfacesList
+ (Ljava/util/List<Lorg/eclipse/jdt/core/dom/ITypeBinding;>;Z)V
+ (Ljava/util/List<Lorg/eclipse/jdt/core/dom/ITypeBinding;>;Z)V
+setTypeName
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+superClassChanged
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()L1org/eclipse/core/runtime/IStatus;
+superInterfacesChanged
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()L1org/eclipse/core/runtime/IStatus;
+typeNameChanged
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()L1org/eclipse/core/runtime/IStatus;
+validateSealedSuperInterfacesStatus
+ ()Lorg/eclipse/core/runtime/IStatus;
+ ()Lorg/eclipse/core/runtime/IStatus;

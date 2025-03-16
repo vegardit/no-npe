@@ -24,6 +24,9 @@ applyTextPresentation
 findAnnotationModel
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/source/IAnnotationModel;
  (Lorg/eclipse/jface/text/source/ISourceViewer;)L0org/eclipse/jface/text/source/IAnnotationModel;
+getInlineAnnotationColor
+ ()Lorg/eclipse/swt/graphics/Color;
+ ()Lorg/eclipse/swt/graphics/Color;
 modelChanged
  (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
  (Lorg/eclipse/jface/text/source/AnnotationModelEvent;)V
@@ -42,6 +45,9 @@ removeHighlightAnnotationType
 setAnnotationTypeColor
  (Ljava/lang/Object;Lorg/eclipse/swt/graphics/Color;)V
  (Ljava/lang/Object;Lorg/eclipse/swt/graphics/Color;)V
+setInlineAnnotationColor
+ (Lorg/eclipse/swt/graphics/Color;)V
+ (Lorg/eclipse/swt/graphics/Color;)V
 setPositionManager
  (Lorg/eclipse/jface/text/IPaintPositionManager;)V
  (L0org/eclipse/jface/text/IPaintPositionManager;)V # @Inherited(org.eclipse.jface.text.IPainter)

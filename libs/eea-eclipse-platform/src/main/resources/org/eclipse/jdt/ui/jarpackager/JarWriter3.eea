@@ -1,0 +1,32 @@
+class org/eclipse/jdt/ui/jarpackager/JarWriter3
+
+<init>
+ (Lorg/eclipse/jdt/ui/jarpackager/JarPackageData;Lorg/eclipse/swt/widgets/Shell;)V
+ (Lorg/eclipse/jdt/ui/jarpackager/JarPackageData;Lorg/eclipse/swt/widgets/Shell;)V
+addDirectories
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addDirectories
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;)V
+addDirectories
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+addEntry
+ (Ljava/util/jar/JarEntry;Ljava/io/InputStream;)V
+ (Ljava/util/jar/JarEntry;Ljava/io/InputStream;)V
+addFile
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IPath;)V
+canCreateJar
+ (Lorg/eclipse/swt/widgets/Shell;)Z
+ (Lorg/eclipse/swt/widgets/Shell;)Z
+getDirectories
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getJarOutputStream
+ ()Ljava/util/jar/JarOutputStream;
+ ()Ljava/util/jar/JarOutputStream;
+write
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IPath;)V

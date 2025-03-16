@@ -1,0 +1,32 @@
+class org/eclipse/jdt/ui/wizards/NewPackageWizardPage
+
+createControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.dialogs.IDialogPage)
+createPackage
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+createPackageControls
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+getModifiedResource
+ ()Lorg/eclipse/core/resources/IResource;
+ ()L0org/eclipse/core/resources/IResource; # @Inherited(org.eclipse.jdt.ui.wizards.NewTypeWizardPage)
+getNewPackageFragment
+ ()Lorg/eclipse/jdt/core/IPackageFragment;
+ ()Lorg/eclipse/jdt/core/IPackageFragment;
+getPackageText
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getRunnable
+ ()Lorg/eclipse/jface/operation/IRunnableWithProgress;
+ ()Lorg/eclipse/jface/operation/IRunnableWithProgress;
+handleFieldChanged
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+init
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+setPackageText
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V

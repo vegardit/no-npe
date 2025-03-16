@@ -60,6 +60,9 @@ openOutputStream
 putInfo
  (Lorg/eclipse/core/filesystem/IFileInfo;ILorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1org/eclipse/core/filesystem/IFileInfo;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+readAllBytes
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[B
+ (ILorg/eclipse/core/runtime/IProgressMonitor;)[B
 toLocalFile
  (ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File;
  (IL0org/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File; # return value not annotated on purpose
@@ -69,3 +72,6 @@ toString
 toURI
  ()Ljava/net/URI;
  ()L1java/net/URI;
+write
+ ([BILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([BILorg/eclipse/core/runtime/IProgressMonitor;)V

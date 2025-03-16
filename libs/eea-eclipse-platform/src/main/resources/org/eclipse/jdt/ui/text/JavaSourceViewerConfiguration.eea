@@ -1,0 +1,114 @@
+class org/eclipse/jdt/ui/text/JavaSourceViewerConfiguration
+
+PREFERENCE_TAB_WIDTH
+ Ljava/lang/String;
+ L1java/lang/String;
+SPACES_FOR_TABS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+<init>
+ (Lorg/eclipse/jdt/ui/text/IColorManager;Lorg/eclipse/jface/preference/IPreferenceStore;Lorg/eclipse/ui/texteditor/ITextEditor;Ljava/lang/String;)V
+ (Lorg/eclipse/jdt/ui/text/IColorManager;Lorg/eclipse/jface/preference/IPreferenceStore;Lorg/eclipse/ui/texteditor/ITextEditor;Ljava/lang/String;)V
+<init>
+ (Lorg/eclipse/jdt/ui/text/IColorManager;Lorg/eclipse/jface/preference/IPreferenceStore;Lorg/eclipse/ui/texteditor/ITextEditor;Ljava/lang/String;Z)V
+ (Lorg/eclipse/jdt/ui/text/IColorManager;Lorg/eclipse/jface/preference/IPreferenceStore;Lorg/eclipse/ui/texteditor/ITextEditor;Ljava/lang/String;Z)V
+<init>
+ (Lorg/eclipse/jdt/ui/text/JavaTextTools;Lorg/eclipse/ui/texteditor/ITextEditor;)V
+ (Lorg/eclipse/jdt/ui/text/JavaTextTools;Lorg/eclipse/ui/texteditor/ITextEditor;)V
+affectsTextPresentation
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)Z
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)Z
+getAnnotationHover
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/source/IAnnotationHover;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L1org/eclipse/jface/text/source/IAnnotationHover; # @Inherited(org.eclipse.ui.editors.text.TextSourceViewerConfiguration)
+getAutoEditStrategies
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[Lorg/eclipse/jface/text/IAutoEditStrategy;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[Lorg/eclipse/jface/text/IAutoEditStrategy;
+getCodeScanner
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+getColorManager
+ ()Lorg/eclipse/jdt/ui/text/IColorManager;
+ ()Lorg/eclipse/jdt/ui/text/IColorManager;
+getConfiguredContentTypes
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)[Ljava/lang/String;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)[Ljava/lang/String;
+getConfiguredDocumentPartitioning
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Ljava/lang/String;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L1java/lang/String; # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
+getConfiguredTextHoverStateMasks
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[I
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[1I # @Overrides(org.eclipse.ui.editors.text.TextSourceViewerConfiguration)
+getContentAssistant
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/contentassist/IContentAssistant;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L0org/eclipse/jface/text/contentassist/IContentAssistant; # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
+getContentFormatter
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/formatter/IContentFormatter;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L1org/eclipse/jface/text/formatter/IContentFormatter; # @Overrides(org.eclipse.jface.text.source.SourceViewerConfiguration)
+getDefaultPrefixes
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[Ljava/lang/String;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[0Ljava/lang/String; # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
+getDoubleClickStrategy
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)Lorg/eclipse/jface/text/ITextDoubleClickStrategy;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)L1org/eclipse/jface/text/ITextDoubleClickStrategy; # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
+getEditor
+ ()Lorg/eclipse/ui/texteditor/ITextEditor;
+ ()Lorg/eclipse/ui/texteditor/ITextEditor;
+getHierarchyPresenter
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Z)Lorg/eclipse/jface/text/information/IInformationPresenter;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Z)L0org/eclipse/jface/text/information/IInformationPresenter;
+getHyperlinkDetectorTargets
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;>;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L1java/util/Map<Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;>; # @Inherited(org.eclipse.ui.editors.text.TextSourceViewerConfiguration)
+getIndentPrefixes
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[Ljava/lang/String;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)[0Ljava/lang/String; # @Inherited(org.eclipse.ui.editors.text.TextSourceViewerConfiguration)
+getInformationControlCreator
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/IInformationControlCreator;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/IInformationControlCreator;
+getInformationPresenter
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/information/IInformationPresenter;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L1org/eclipse/jface/text/information/IInformationPresenter; # @Overrides(org.eclipse.jface.text.source.SourceViewerConfiguration)
+getJavaDocScanner
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+getMultilineCommentScanner
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+getOutlinePresenter
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Z)Lorg/eclipse/jface/text/information/IInformationPresenter;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Z)L1org/eclipse/jface/text/information/IInformationPresenter;
+getOverviewRulerAnnotationHover
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/source/IAnnotationHover;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/source/IAnnotationHover;
+getPreferenceStore
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+ ()Lorg/eclipse/jface/preference/IPreferenceStore;
+getPresentationReconciler
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/presentation/IPresentationReconciler;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L1org/eclipse/jface/text/presentation/IPresentationReconciler; # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
+getQuickAssistAssistant
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/quickassist/IQuickAssistAssistant;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L0org/eclipse/jface/text/quickassist/IQuickAssistAssistant; # @Inherited(org.eclipse.ui.editors.text.TextSourceViewerConfiguration)
+getReconciler
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/reconciler/IReconciler;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L0org/eclipse/jface/text/reconciler/IReconciler; # @Inherited(org.eclipse.ui.editors.text.TextSourceViewerConfiguration)
+getSinglelineCommentScanner
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+getStringScanner
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+ ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
+getTabWidth
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)I
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)I
+getTextHover
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)Lorg/eclipse/jface/text/ITextHover;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;)L1org/eclipse/jface/text/ITextHover; # @Inherited(org.eclipse.ui.editors.text.TextSourceViewerConfiguration)
+getTextHover
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;I)Lorg/eclipse/jface/text/ITextHover;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;I)L0org/eclipse/jface/text/ITextHover; # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
+handlePropertyChangeEvent
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
