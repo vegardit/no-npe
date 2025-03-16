@@ -7,6 +7,9 @@ TYPE
 <init>
  (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/source/ISourceViewer;)V
  (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/source/ISourceViewer;)V
+<init>
+ (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;)V
+ (Lorg/eclipse/jface/text/Position;Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;)V
 draw
  (Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/custom/StyledText;IILorg/eclipse/swt/graphics/Color;II)V
  (Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/custom/StyledText;IILorg/eclipse/swt/graphics/Color;II)V
@@ -23,6 +26,9 @@ getViewer
  ()Lorg/eclipse/jface/text/source/ISourceViewer;
  ()Lorg/eclipse/jface/text/source/ISourceViewer;
 onMouseHover
+ (Lorg/eclipse/swt/events/MouseEvent;)V
+ (Lorg/eclipse/swt/events/MouseEvent;)V
+onMouseMove
  (Lorg/eclipse/swt/events/MouseEvent;)V
  (Lorg/eclipse/swt/events/MouseEvent;)V
 onMouseOut

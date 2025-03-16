@@ -1,8 +1,14 @@
 class org/eclipse/ui/navigator/INavigatorSorterService
 
 findAvailableSorters
- (Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;)Ljava/util/Map;
- (Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;)Ljava/util/Map;
+ (Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;)Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/viewers/ViewerComparator;>;
+ (Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;)Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/viewers/ViewerComparator;>;
+findComparator
+ (Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lorg/eclipse/jface/viewers/ViewerComparator;
+ (Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lorg/eclipse/jface/viewers/ViewerComparator;
+findComparatorForParent
+ (Ljava/lang/Object;)Lorg/eclipse/jface/viewers/ViewerComparator;
+ (Ljava/lang/Object;)Lorg/eclipse/jface/viewers/ViewerComparator;
 findSorter
  (Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lorg/eclipse/jface/viewers/ViewerSorter;
  (Lorg/eclipse/ui/navigator/INavigatorContentDescriptor;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lorg/eclipse/jface/viewers/ViewerSorter;

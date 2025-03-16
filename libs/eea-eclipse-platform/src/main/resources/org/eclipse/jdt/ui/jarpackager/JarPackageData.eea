@@ -1,0 +1,128 @@
+class org/eclipse/jdt/ui/jarpackager/JarPackageData
+
+createFatJarBuilder
+ ()Lorg/eclipse/jdt/ui/jarpackager/IJarBuilder;
+ ()L1org/eclipse/jdt/ui/jarpackager/IJarBuilder;
+createJarDescriptionReader
+ (Ljava/io/InputStream;)Lorg/eclipse/jdt/ui/jarpackager/IJarDescriptionReader;
+ (Ljava/io/InputStream;)L1org/eclipse/jdt/ui/jarpackager/IJarDescriptionReader;
+createJarDescriptionWriter
+ (Ljava/io/OutputStream;)Lorg/eclipse/jdt/ui/jarpackager/IJarDescriptionWriter;
+ (Ljava/io/OutputStream;)L1org/eclipse/jdt/ui/jarpackager/IJarDescriptionWriter;
+createJarDescriptionWriter
+ (Ljava/io/OutputStream;Ljava/lang/String;)Lorg/eclipse/jdt/ui/jarpackager/IJarDescriptionWriter;
+ (Ljava/io/OutputStream;Ljava/lang/String;)L1org/eclipse/jdt/ui/jarpackager/IJarDescriptionWriter;
+createJarExportRunnable
+ (Lorg/eclipse/swt/widgets/Shell;)Lorg/eclipse/jdt/ui/jarpackager/IJarExportRunnable;
+ (Lorg/eclipse/swt/widgets/Shell;)L1org/eclipse/jdt/ui/jarpackager/IJarExportRunnable;
+createJarExportRunnable
+ ([Lorg/eclipse/jdt/ui/jarpackager/JarPackageData;Lorg/eclipse/swt/widgets/Shell;)Lorg/eclipse/jdt/ui/jarpackager/IJarExportRunnable;
+ ([Lorg/eclipse/jdt/ui/jarpackager/JarPackageData;Lorg/eclipse/swt/widgets/Shell;)L1org/eclipse/jdt/ui/jarpackager/IJarExportRunnable;
+createJarWriter
+ (Lorg/eclipse/swt/widgets/Shell;)Lorg/eclipse/jdt/ui/jarpackager/JarWriter2;
+ (Lorg/eclipse/swt/widgets/Shell;)L1org/eclipse/jdt/ui/jarpackager/JarWriter2;
+createJarWriter3
+ (Lorg/eclipse/swt/widgets/Shell;)Lorg/eclipse/jdt/ui/jarpackager/JarWriter3;
+ (Lorg/eclipse/swt/widgets/Shell;)L1org/eclipse/jdt/ui/jarpackager/JarWriter3;
+createPlainJarBuilder
+ ()Lorg/eclipse/jdt/ui/jarpackager/IJarBuilder;
+ ()L1org/eclipse/jdt/ui/jarpackager/IJarBuilder;
+findClassfilesFor
+ (Lorg/eclipse/core/resources/IFile;)[Lorg/eclipse/core/resources/IFile;
+ (Lorg/eclipse/core/resources/IFile;)[0Lorg/eclipse/core/resources/IFile;
+getAbsoluteJarLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getComment
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDescriptionFile
+ ()Lorg/eclipse/core/resources/IFile;
+ ()L0org/eclipse/core/resources/IFile;
+getDescriptionLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getElements
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+getJarBuilder
+ ()Lorg/eclipse/jdt/ui/jarpackager/IJarBuilder;
+ ()Lorg/eclipse/jdt/ui/jarpackager/IJarBuilder;
+getJarLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getLaunchConfigurationName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getManifestFile
+ ()Lorg/eclipse/core/resources/IFile;
+ ()L0org/eclipse/core/resources/IFile;
+getManifestLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getManifestMainClass
+ ()Lorg/eclipse/jdt/core/IType;
+ ()Lorg/eclipse/jdt/core/IType;
+getManifestProvider
+ ()Lorg/eclipse/jdt/ui/jarpackager/IManifestProvider;
+ ()Lorg/eclipse/jdt/ui/jarpackager/IManifestProvider;
+getManifestVersion
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPackagesToSeal
+ ()[Lorg/eclipse/jdt/core/IPackageFragment;
+ ()[Lorg/eclipse/jdt/core/IPackageFragment;
+getPackagesToUnseal
+ ()[Lorg/eclipse/jdt/core/IPackageFragment;
+ ()[Lorg/eclipse/jdt/core/IPackageFragment;
+getRefactoringDescriptors
+ ()[Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;
+ ()[Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;
+getRefactoringProjects
+ ()[Lorg/eclipse/core/resources/IProject;
+ ()[Lorg/eclipse/core/resources/IProject;
+isMainClassValid
+ (Lorg/eclipse/jface/operation/IRunnableContext;)Z
+ (Lorg/eclipse/jface/operation/IRunnableContext;)Z
+setComment
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setDescriptionLocation
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+setElements
+ ([Ljava/lang/Object;)V
+ ([Ljava/lang/Object;)V
+setJarBuilder
+ (Lorg/eclipse/jdt/ui/jarpackager/IJarBuilder;)V
+ (Lorg/eclipse/jdt/ui/jarpackager/IJarBuilder;)V
+setJarLocation
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+setLaunchConfigurationName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setManifestLocation
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+setManifestMainClass
+ (Lorg/eclipse/jdt/core/IType;)V
+ (Lorg/eclipse/jdt/core/IType;)V
+setManifestProvider
+ (Lorg/eclipse/jdt/ui/jarpackager/IManifestProvider;)V
+ (Lorg/eclipse/jdt/ui/jarpackager/IManifestProvider;)V
+setManifestVersion
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setPackagesToSeal
+ ([Lorg/eclipse/jdt/core/IPackageFragment;)V
+ ([Lorg/eclipse/jdt/core/IPackageFragment;)V
+setPackagesToUnseal
+ ([Lorg/eclipse/jdt/core/IPackageFragment;)V
+ ([Lorg/eclipse/jdt/core/IPackageFragment;)V
+setRefactoringDescriptors
+ ([Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;)V
+ ([Lorg/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy;)V
+setRefactoringProjects
+ ([Lorg/eclipse/core/resources/IProject;)V
+ ([Lorg/eclipse/core/resources/IProject;)V

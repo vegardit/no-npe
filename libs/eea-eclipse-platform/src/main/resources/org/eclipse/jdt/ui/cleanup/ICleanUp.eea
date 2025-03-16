@@ -1,0 +1,20 @@
+class org/eclipse/jdt/ui/cleanup/ICleanUp
+
+checkPostConditions
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+checkPreConditions
+ (Lorg/eclipse/jdt/core/IJavaProject;[Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+ (Lorg/eclipse/jdt/core/IJavaProject;[Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/ltk/core/refactoring/RefactoringStatus;
+createFix
+ (Lorg/eclipse/jdt/ui/cleanup/CleanUpContext;)Lorg/eclipse/jdt/ui/cleanup/ICleanUpFix;
+ (Lorg/eclipse/jdt/ui/cleanup/CleanUpContext;)L1org/eclipse/jdt/ui/cleanup/ICleanUpFix;
+getRequirements
+ ()Lorg/eclipse/jdt/ui/cleanup/CleanUpRequirements;
+ ()Lorg/eclipse/jdt/ui/cleanup/CleanUpRequirements;
+getStepDescriptions
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+setOptions
+ (Lorg/eclipse/jdt/ui/cleanup/CleanUpOptions;)V
+ (Lorg/eclipse/jdt/ui/cleanup/CleanUpOptions;)V

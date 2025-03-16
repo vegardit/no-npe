@@ -1,0 +1,17 @@
+class org/eclipse/jdt/ui/jarpackager/IJarBuilder
+
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getManifestProvider
+ ()Lorg/eclipse/jdt/ui/jarpackager/IManifestProvider;
+ ()Lorg/eclipse/jdt/ui/jarpackager/IManifestProvider;
+open
+ (Lorg/eclipse/jdt/ui/jarpackager/JarPackageData;Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/core/runtime/MultiStatus;)V
+ (Lorg/eclipse/jdt/ui/jarpackager/JarPackageData;Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/core/runtime/MultiStatus;)V
+writeArchive
+ (Ljava/util/zip/ZipFile;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/util/zip/ZipFile;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+writeFile
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/resources/IFile;Lorg/eclipse/core/runtime/IPath;)V

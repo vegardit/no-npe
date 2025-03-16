@@ -12,6 +12,12 @@ create
 create
  (Ljava/io/InputStream;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1java/io/InputStream;ZL0org/eclipse/core/runtime/IProgressMonitor;)V
+create
+ ([BILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([BILorg/eclipse/core/runtime/IProgressMonitor;)V
+create
+ ([BZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([BZZLorg/eclipse/core/runtime/IProgressMonitor;)V
 createLink
  (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1java/net/URI;IL0org/eclipse/core/runtime/IProgressMonitor;)V
@@ -54,6 +60,18 @@ getName
 move
  (Lorg/eclipse/core/runtime/IPath;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1org/eclipse/core/runtime/IPath;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
+readAllBytes
+ ()[B
+ ()[B
+readAllChars
+ ()[C
+ ()[C
+readNBytes
+ (I)[B
+ (I)[B
+readString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
 setCharset
  (Ljava/lang/String;)V
  (L0java/lang/String;)V
@@ -72,3 +90,12 @@ setContents
 setContents
  (Lorg/eclipse/core/resources/IFileState;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1org/eclipse/core/resources/IFileState;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
+setContents
+ ([BILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([BILorg/eclipse/core/runtime/IProgressMonitor;)V
+setContents
+ ([BZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([BZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+write
+ ([BZZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([BZZZLorg/eclipse/core/runtime/IProgressMonitor;)V

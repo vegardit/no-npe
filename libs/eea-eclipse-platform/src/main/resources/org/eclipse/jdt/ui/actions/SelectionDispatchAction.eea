@@ -1,0 +1,53 @@
+class org/eclipse/jdt/ui/actions/SelectionDispatchAction
+
+<init>
+ (Lorg/eclipse/ui/IWorkbenchSite;)V
+ (Lorg/eclipse/ui/IWorkbenchSite;)V
+<init>
+ (Lorg/eclipse/ui/IWorkbenchSite;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+ (Lorg/eclipse/ui/IWorkbenchSite;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+getSelection
+ ()Lorg/eclipse/jface/viewers/ISelection;
+ ()L0org/eclipse/jface/viewers/ISelection;
+getSelectionProvider
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+getShell
+ ()Lorg/eclipse/swt/widgets/Shell;
+ ()Lorg/eclipse/swt/widgets/Shell;
+getSite
+ ()Lorg/eclipse/ui/IWorkbenchSite;
+ ()Lorg/eclipse/ui/IWorkbenchSite;
+run
+ (Lorg/eclipse/jdt/internal/ui/javaeditor/JavaTextSelection;)V
+ (Lorg/eclipse/jdt/internal/ui/javaeditor/JavaTextSelection;)V
+run
+ (Lorg/eclipse/jface/text/ITextSelection;)V
+ (Lorg/eclipse/jface/text/ITextSelection;)V
+run
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+run
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+selectionChanged
+ (Lorg/eclipse/jdt/internal/ui/javaeditor/JavaTextSelection;)V
+ (Lorg/eclipse/jdt/internal/ui/javaeditor/JavaTextSelection;)V
+selectionChanged
+ (Lorg/eclipse/jface/text/ITextSelection;)V
+ (Lorg/eclipse/jface/text/ITextSelection;)V
+selectionChanged
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+selectionChanged
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+ (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+selectionChanged
+ (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
+ (L1org/eclipse/jface/viewers/SelectionChangedEvent;)V # @Inherited(org.eclipse.jface.viewers.ISelectionChangedListener)
+setSpecialSelectionProvider
+ (Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+ (Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+update
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (Lorg/eclipse/jface/viewers/ISelection;)V

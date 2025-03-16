@@ -1,0 +1,68 @@
+class org/eclipse/jdt/ui/text/java/correction/CUCorrectionProposal
+
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;ILorg/eclipse/swt/graphics/Image;)V
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;ILorg/eclipse/swt/graphics/Image;)V
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;ILorg/eclipse/swt/graphics/Image;Lorg/eclipse/jdt/core/manipulation/CUCorrectionProposalCore;)V
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;ILorg/eclipse/swt/graphics/Image;Lorg/eclipse/jdt/core/manipulation/CUCorrectionProposalCore;)V
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;I)V
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;I)V
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;ILorg/eclipse/swt/graphics/Image;)V
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;ILorg/eclipse/swt/graphics/Image;)V
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;ILorg/eclipse/swt/graphics/Image;Lorg/eclipse/jdt/core/manipulation/CUCorrectionProposalCore;)V
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;ILorg/eclipse/swt/graphics/Image;Lorg/eclipse/jdt/core/manipulation/CUCorrectionProposalCore;)V
+<init>
+ (Lorg/eclipse/jdt/core/manipulation/CUCorrectionProposalCore;Lorg/eclipse/swt/graphics/Image;)V
+ (Lorg/eclipse/jdt/core/manipulation/CUCorrectionProposalCore;Lorg/eclipse/swt/graphics/Image;)V
+addEdits
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/text/edits/TextEdit;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/text/edits/TextEdit;)V
+apply
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (L1org/eclipse/jface/text/IDocument;)V # @Inherited(org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal)
+createChange
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+ ()L1org/eclipse/ltk/core/refactoring/Change;
+createTextChange
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+ ()L1org/eclipse/ltk/core/refactoring/TextChange;
+createTextChangeLocal
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+ ()L1org/eclipse/ltk/core/refactoring/TextChange;
+createTextChangeViaDelegate
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+ ()L1org/eclipse/ltk/core/refactoring/TextChange;
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Overrides(org.eclipse.core.runtime.IAdaptable)
+getAdditionalProposalInfo
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/Object;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/Object; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension5)
+getCommandId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCompilationUnit
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+getDelegate
+ ()Lorg/eclipse/jdt/core/manipulation/CUCorrectionProposalCore;
+ ()Lorg/eclipse/jdt/core/manipulation/CUCorrectionProposalCore;
+getInitialCompilationUnit
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPreviewContent
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTextChange
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -1,0 +1,38 @@
+class org/eclipse/jdt/ui/text/java/correction/ChangeCorrectionProposal
+
+<init>
+ (Ljava/lang/String;Lorg/eclipse/ltk/core/refactoring/Change;I)V
+ (Ljava/lang/String;Lorg/eclipse/ltk/core/refactoring/Change;I)V
+<init>
+ (Ljava/lang/String;Lorg/eclipse/ltk/core/refactoring/Change;ILorg/eclipse/swt/graphics/Image;)V
+ (Ljava/lang/String;Lorg/eclipse/ltk/core/refactoring/Change;ILorg/eclipse/swt/graphics/Image;)V
+apply
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (L1org/eclipse/jface/text/IDocument;)V # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
+getAdditionalProposalInfo
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Overrides(org.eclipse.jface.text.contentassist.ICompletionProposal)
+getChange
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+ ()L0org/eclipse/ltk/core/refactoring/Change;
+getContextInformation
+ ()Lorg/eclipse/jface/text/contentassist/IContextInformation;
+ ()L0org/eclipse/jface/text/contentassist/IContextInformation; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
+getDisplayString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
+getImage
+ ()Lorg/eclipse/swt/graphics/Image;
+ ()L0org/eclipse/swt/graphics/Image; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
+getSelection
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/jface/text/IDocument;)L0org/eclipse/swt/graphics/Point; # @Overrides(org.eclipse.jface.text.contentassist.ICompletionProposal)
+getStyledDisplayString
+ ()Lorg/eclipse/jface/viewers/StyledString;
+ ()L1org/eclipse/jface/viewers/StyledString; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension6)
+performChange
+ (Lorg/eclipse/ui/IEditorPart;Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/ui/IEditorPart;Lorg/eclipse/jface/text/IDocument;)V
+setImage
+ (Lorg/eclipse/swt/graphics/Image;)V
+ (Lorg/eclipse/swt/graphics/Image;)V
