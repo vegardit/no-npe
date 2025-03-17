@@ -472,11 +472,18 @@ public class EEAFile {
          }
       }
 
+      boolean newMembersAdded = false;
       for (final ClassMember theirMember : their.members) {
          final ClassMember ourMember = findMatchingClassMember(theirMember);
          if (ourMember == null) {
-            if (addNewMembers) {
+            // add non-existing fields/method declarations if they are annotated with @Keep
+            // for compatibility to support older versions of a class
+            if (addNewMembers || theirMember.annotatedSignature.comment.contains("@Keep")) {
+               if (!newMembersAdded) {
+                  addEmptyLine();
+               }
                addMember(theirMember.clone());
+               newMembersAdded = true;
             }
          } else {
             ourMember.applyAnnotationsAndCommentsFrom(theirMember, overrideOnConflict);

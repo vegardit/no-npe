@@ -684,7 +684,9 @@ public abstract class EEAGenerator {
                      // do nothing
                   } else {
                      assert inheritedFrom != null;
-                     if (inheritableAnnotatedSignature.value.equals(member.annotatedSignature.value)) {
+                     if (member.annotatedSignature.comment.contains("@Keep")) {
+                        // do nothing
+                     } else if (inheritableAnnotatedSignature.value.equals(member.annotatedSignature.value)) {
                         if (setInheritedAnnotatedSignature(member, inheritableAnnotatedSignature, inheritedFrom.getName())) {
                            recomputeInheritance.set(true);
                         }
@@ -843,12 +845,18 @@ public abstract class EEAGenerator {
                // ensure the EEA file does not contain declarations of non-existing fields/methods
                parsedEEAFile.getClassMembers().forEach(parsedMember -> {
                   if (computedEEAFile.findMatchingClassMember(parsedMember) == null) {
+
+                     // allow non-existing fields/method declarations if they are annotated with @Keep
+                     // for compatibility to support older versions of a class
+                     if (parsedMember.annotatedSignature.comment.contains("@Keep"))
+                        return;
+
                      final var candidates = computedEEAFile.getClassMembers() //
                         .filter(m -> m.name.equals(parsedMember.name)) //
                         .map(m -> m.name + "\n" + " " + m.originalSignature) //
                         .collect(Collectors.joining("\n"));
                      throw new IllegalStateException("Unknown member declaration found in [" + path + "]:\n" + parsedMember + (candidates
-                        .length() > 0 ? "\nPotential candidates: \n" + candidates : ""));
+                        .isEmpty() ? "" : "\nPotential candidates: \n" + candidates));
                   }
                });
             });
