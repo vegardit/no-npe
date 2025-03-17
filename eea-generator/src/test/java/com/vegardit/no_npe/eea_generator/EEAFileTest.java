@@ -62,9 +62,7 @@ class EEAFileTest {
       assertThat(eeaFile.getClassMembers()).isNotEmpty();
       final var field = eeaFile.findMatchingClassMember("STATIC_STRING", "Ljava/lang/String;");
       assert field != null;
-      assertThat(field.name.comment).isEqualTo("# a field comment");
       assertThat(field.originalSignature.value).isEqualTo("Ljava/lang/String;");
-      assertThat(field.originalSignature.comment).isEqualTo("# an original signature comment");
 
       final var annotatedSignature = field.annotatedSignature;
       assertThat(annotatedSignature).isNotNull();
@@ -81,14 +79,30 @@ class EEAFileTest {
    }
 
    @Test
-   void testWrongTypeHeader() {
-      final var wrongTypePath = Path.of("src/test/resources/invalid/" + WRONG_TYPE_NAME_WITH_SLASHES + ".eea");
+   void testIllegalOriginalSignatureComments() {
       assertThatThrownBy(() -> { //
-         load(wrongTypePath);
+         load(Path.of("src/test/resources/illegal_original_signature_comments"), TestEntity.class.getName());
       }) //
          .isInstanceOf(java.io.IOException.class) //
-         .hasMessage("Mismatch between file path of [" + wrongTypePath + "] and contained class name definition [" + TestEntity.class
-            .getName() + "]");
+         .hasMessageMatching("Comments after original signatures are not supported .*");
+   }
+
+   @Test
+   void testIllegalMemberComments() {
+      assertThatThrownBy(() -> { //
+         load(Path.of("src/test/resources/illegal_member_comments"), TestEntity.class.getName());
+      }) //
+         .isInstanceOf(java.io.IOException.class) //
+         .hasMessageMatching("Comments after member name are not supported .*");
+   }
+
+   @Test
+   void testWrongTypeHeader() {
+      assertThatThrownBy(() -> { //
+         load(Path.of("src/test/resources/wrong_type"), TestEntity.class.getName());
+      }) //
+         .isInstanceOf(java.io.IOException.class) //
+         .hasMessageMatching("Mismatch between file path of \\[.*\\.eea\\] and contained class name definition .*");
    }
 
    @Test
@@ -108,7 +122,6 @@ class EEAFileTest {
       final var annotatedSignature = method.annotatedSignature;
       assert annotatedSignature != null;
       assertThat(annotatedSignature.value).isEqualTo("L1java/lang/String;");
-      assertThat(method.name.comment).isEqualTo("# a field comment");
    }
 
    @Test

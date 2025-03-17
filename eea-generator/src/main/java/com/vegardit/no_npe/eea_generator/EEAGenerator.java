@@ -835,7 +835,7 @@ public abstract class EEAGenerator {
                // ensure if the type actually exists on the class path
                final var computedEEAFile = eeaFilesOfPkg.get(relativePath);
                if (computedEEAFile == null)
-                  throw new IllegalStateException("Type [" + expectedClassName + "] defined in [" + path + "] no found on classpath.");
+                  throw new IllegalStateException("Type [" + expectedClassName + "] defined in [" + path + "] not found on classpath.");
 
                // try to parse the EEA file
                final var parsedEEAFile = EEAFile.load(path);

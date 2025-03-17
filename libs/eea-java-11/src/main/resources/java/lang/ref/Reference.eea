@@ -9,6 +9,6 @@ reachabilityFence
 clone
  ()Ljava/lang/Object;
  ()L1java/lang/Object; # @Inherited(java.lang.Object)
-get # @Keep -> to prevent "Unsafe interpretation of method return type as '@NonNull' based on the receiver type '@NonNull ...'. Type 'Reference<T>' doesn't seem to be designed with null type annotations in mind
+get
  ()TT;
- ()TT;
+ ()TT; # @Keep -> to prevent "Unsafe interpretation of method return type as '@NonNull' based on the receiver type '@NonNull ...'. Type 'Reference<T>' doesn't seem to be designed with null type annotations in mind

@@ -22,27 +22,12 @@ import com.vegardit.no_npe.eea_generator.EEAFile.SaveOption;
 class EEAGeneratorTest {
 
    @Test
-   void testVadilateValidEEAFiles() throws IOException {
+   void testValidateValidEEAFiles() throws IOException {
       final var rootPath = Path.of("src/test/resources/valid");
       final var config = new EEAGenerator.Config(rootPath, EEAGeneratorTest.class.getPackageName());
       config.inputDirs.add(rootPath);
 
       assertThat(EEAGenerator.validateEEAFiles(config)).isEqualTo(2);
-   }
-
-   @Test
-   void testVadilateInvalidEEAFiles() {
-      final var rootPath = Path.of("src/test/resources/invalid");
-      final var config = new EEAGenerator.Config(rootPath, EEAGeneratorTest.class.getPackageName());
-      config.inputDirs.add(rootPath);
-
-      final var wrongTypePath = rootPath.resolve(EEAFileTest.WRONG_TYPE_NAME_WITH_SLASHES + ".eea");
-      assertThatThrownBy(() -> {
-         EEAGenerator.validateEEAFiles(config);
-      }) //
-         .isInstanceOf(IllegalStateException.class) //
-         .hasMessage("Type [com.vegardit.no_npe.eea_generator.EEAFileTest$WrongType] defined in [" + wrongTypePath
-               + "] no found on classpath.");
    }
 
    @Test
@@ -83,15 +68,15 @@ class EEAGeneratorTest {
       assertThat(computedEeaFile.renderFileContent(Set.of(SaveOption.OMIT_MEMBERS_WITHOUT_ANNOTATED_SIGNATURE))).isEqualTo(List.of(
          "class com/vegardit/no_npe/eea_generator/EEAFileTest$TestEntity # a class comment", //
          "", //
-         "STATIC_STRING # a field comment", //
-         " Ljava/lang/String; # an original signature comment", //
+         "STATIC_STRING", //
+         " Ljava/lang/String;", //
          " L1java/lang/String; # an annotated signature comment", //
          "", //
-         "name # a field comment", //
+         "name", //
          " Ljava/lang/String;", //
          " L1java/lang/String;", //
          "", //
-         "keepTest1 # a metod comment", //
+         "keepTest1", //
          " ()Ljava/lang/String;", //
          " ()Ljava/lang/String; # @Keep to test preventing generator from changing it to L0", //
          "keepTest2", //
@@ -102,14 +87,26 @@ class EEAGeneratorTest {
 
    @Test
    void testPackageMissingOnClasspath() {
-      final var rootPath = Path.of("src/test/resources/invalid");
+      final var rootPath = Path.of("src/test/resources/valid");
       final var config = new EEAGenerator.Config(rootPath, "org.no_npe.foobar");
-      config.inputDirs.add(rootPath);
 
       assertThatThrownBy(() -> {
          EEAGenerator.validateEEAFiles(config);
       }) //
          .isInstanceOf(IllegalArgumentException.class) //
          .hasMessage("No classes found for package [org.no_npe.foobar] on classpath");
+   }
+
+   @Test
+   void testTypeMissingOnClasspath() {
+      final var rootPath = Path.of("src/test/resources/nonexistant_type");
+      final var config = new EEAGenerator.Config(rootPath, EEAGeneratorTest.class.getPackageName());
+      config.inputDirs.add(rootPath);
+
+      assertThatThrownBy(() -> {
+         EEAGenerator.validateEEAFiles(config);
+      }) //
+         .isInstanceOf(IllegalStateException.class) //
+         .hasMessageMatching("Type .*NonexistantType.* defined in .* not found on classpath.");
    }
 }

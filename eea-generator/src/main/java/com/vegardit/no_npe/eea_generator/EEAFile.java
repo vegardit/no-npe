@@ -353,6 +353,8 @@ public class EEAFile {
              */
          } else {
             final var memberName = ValueWithComment.parse(line);
+            if (!memberName.comment.isBlank())
+               throw new IOException("Comments after member name are not supported by ECJ [" + line + "] at " + path + ":" + lineNumber);
 
             // read mandatory original signature
             line = lines.pollFirst();
@@ -363,6 +365,10 @@ public class EEAFile {
             final var originalSignature = ValueWithComment.parse(line);
             if (!originalSignature.value.equals(removeNullAnnotations(originalSignature.value)))
                throw new IOException("Original signature contains null annotations at " + path + ":" + lineNumber);
+
+            if (!originalSignature.comment.isBlank())
+               throw new IOException("Comments after original signatures are not supported by ECJ [" + line + "] at " + path + ":"
+                     + lineNumber);
 
             final var member = new ClassMember(memberName, originalSignature);
             if (eeaFile.members.contains(member))
