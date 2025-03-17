@@ -19,16 +19,16 @@ getBoldFont
  (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;J)V
 createControl
  (Lorg/eclipse/swt/widgets/Composite;I)V
- (Lorg/eclipse/swt/widgets/Composite;I)V
+ (L1org/eclipse/swt/widgets/Composite;I)V # @Inherited(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
 createFilterText
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
 createTableControl
  (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/widgets/Control;
  (Lorg/eclipse/swt/widgets/Composite;I)L1org/eclipse/swt/widgets/Control;
 doCreateFilterText
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
+ (L1org/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text; # @Inherited(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
 doCreateRefreshJob
  ()Lorg/eclipse/core/runtime/jobs/Job;
  ()L1org/eclipse/core/runtime/jobs/Job;

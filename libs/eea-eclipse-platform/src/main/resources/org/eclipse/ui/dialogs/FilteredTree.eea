@@ -6,7 +6,7 @@ super org/eclipse/jface/viewers/AbstractFilteredViewerComposite
 
 getBoldFont
  (Ljava/lang/Object;Lorg/eclipse/ui/dialogs/FilteredTree;Lorg/eclipse/ui/dialogs/PatternFilter;)Lorg/eclipse/swt/graphics/Font;
- (Ljava/lang/Object;Lorg/eclipse/ui/dialogs/FilteredTree;Lorg/eclipse/ui/dialogs/PatternFilter;)L0org/eclipse/swt/graphics/Font;
+ (Ljava/lang/Object;L1org/eclipse/ui/dialogs/FilteredTree;L1org/eclipse/ui/dialogs/PatternFilter;)L0org/eclipse/swt/graphics/Font;
 
 clearButtonControl
  Lorg/eclipse/swt/widgets/Control;
@@ -23,43 +23,43 @@ treeViewer
 
 <init>
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V
 <init>
  (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;)V
- (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;)V
+ (L1org/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;)V
 <init>
  (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;Z)V
- (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;Z)V
+ (L1org/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;Z)V
 <init>
  (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;ZZ)V
- (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;ZZ)V
+ (L1org/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;ZZ)V
 <init>
  (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;ZZJ)V
- (Lorg/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;ZZJ)V
+ (L1org/eclipse/swt/widgets/Composite;ILorg/eclipse/ui/dialogs/PatternFilter;ZZJ)V
 <init>
  (Lorg/eclipse/swt/widgets/Composite;Z)V
- (Lorg/eclipse/swt/widgets/Composite;Z)V
+ (L1org/eclipse/swt/widgets/Composite;Z)V
 <init>
  (Lorg/eclipse/swt/widgets/Composite;ZZ)V
- (Lorg/eclipse/swt/widgets/Composite;ZZ)V
+ (L1org/eclipse/swt/widgets/Composite;ZZ)V
 createControl
  (Lorg/eclipse/swt/widgets/Composite;I)V
- (L1org/eclipse/swt/widgets/Composite;I)V
+ (L1org/eclipse/swt/widgets/Composite;I)V # @Inherited(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
 createFilterText
  (Lorg/eclipse/swt/widgets/Composite;)V
- (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
 createTreeControl
  (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/widgets/Control;
  (L1org/eclipse/swt/widgets/Composite;I)L1org/eclipse/swt/widgets/Control;
 doCreateFilterText
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
- (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
+ (L1org/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text; # @Inherited(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
 doCreateRefreshJob
  ()Lorg/eclipse/ui/progress/WorkbenchJob;
  ()L1org/eclipse/ui/progress/WorkbenchJob;
 doCreateTreeViewer
  (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/jface/viewers/TreeViewer;
- (Lorg/eclipse/swt/widgets/Composite;I)L1org/eclipse/jface/viewers/TreeViewer;
+ (L1org/eclipse/swt/widgets/Composite;I)L1org/eclipse/jface/viewers/TreeViewer;
 getPatternFilter
  ()Lorg/eclipse/ui/dialogs/PatternFilter;
  ()Lorg/eclipse/ui/dialogs/PatternFilter;
@@ -68,4 +68,8 @@ getViewer
  ()Lorg/eclipse/jface/viewers/TreeViewer;
 init
  (ILorg/eclipse/ui/dialogs/PatternFilter;)V
- (ILorg/eclipse/ui/dialogs/PatternFilter;)V
+ (IL1org/eclipse/ui/dialogs/PatternFilter;)V
+
+createFilterControls
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Composite;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Composite; # @Keep for compatibility with implementations of org.eclipse.ui.workbench 3.134 and lower
