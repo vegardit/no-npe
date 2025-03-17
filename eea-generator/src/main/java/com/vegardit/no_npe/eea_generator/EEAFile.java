@@ -371,7 +371,7 @@ public class EEAFile {
                      + lineNumber);
 
             final var member = new ClassMember(memberName, originalSignature);
-            if (eeaFile.members.contains(member))
+            if (eeaFile.findMatchingClassMember(member) != null)
                throw new IOException("Duplicate entry \"" + memberName.value + " " + originalSignature.value + "\" found at " + path + ":"
                      + lineNumber);
 
@@ -393,7 +393,7 @@ public class EEAFile {
             }
 
             // store the parsed member entry
-            eeaFile.members.add(member);
+            eeaFile.addMember(member);
          }
       }
       return eeaFile;
@@ -431,7 +431,7 @@ public class EEAFile {
     */
    public ClassMember addMember(final String name, final String originalSignature) {
       final var member = new ClassMember(name, originalSignature);
-      members.add(member);
+      addMember(member);
       return member;
    }
 
