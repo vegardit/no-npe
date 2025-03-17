@@ -5,7 +5,9 @@ SPDX-FileContributor: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (
 SPDX-License-Identifier: EPL-2.0
 SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -55,18 +57,6 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
           <artifactId>org.eclipse.swt</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>com.sun.jna</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-        <exclusion>
-            <groupId>jakarta.inject</groupId>
-            <artifactId>*</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>javax.annotation</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-        <exclusion>
           <groupId>org.apache.lucene</groupId>
           <artifactId>*</artifactId>
         </exclusion>
@@ -74,17 +64,7 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
           <groupId>org.apache.xmlgraphics</groupId>
           <artifactId>*</artifactId>
         </exclusion>
-        <exclusion>
-          <groupId>xml-apis</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
       </exclusions>
-    </dependency>
-
-    <dependency>
-      <groupId>org.eclipse.platform</groupId>
-      <artifactId>org.eclipse.jface</artifactId>
-      <version>3.36.0</version>
     </dependency>
 
     <dependency>
@@ -93,32 +73,11 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
       <version>0.7.300</version>
       <scope>provided</scope>
       <exclusions>
-         <exclusion>
-            <groupId>org.eclipse.platform</groupId>
-            <artifactId>org.eclipse.swt</artifactId>
-         </exclusion>
+        <exclusion>
+          <groupId>org.eclipse.platform</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
       </exclusions>
-    </dependency>
-
-    <dependency>
-      <groupId>org.eclipse.lsp4j</groupId>
-      <artifactId>org.eclipse.lsp4j</artifactId>
-      <version>0.24.0</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.eclipse.lsp4j</groupId>
-      <artifactId>org.eclipse.lsp4j.debug</artifactId>
-      <version>0.24.0</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.eclipse.jdt</groupId>
-      <artifactId>org.eclipse.jdt.ui</artifactId>
-      <version>3.34.0</version>
-      <scope>provided</scope>
     </dependency>
 
     <dependency>
@@ -127,10 +86,10 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
       <version>3.13.500</version>
       <scope>provided</scope>
       <exclusions>
-         <exclusion>
-            <groupId>org.eclipse.platform</groupId>
-            <artifactId>org.eclipse.swt</artifactId>
-         </exclusion>
+        <exclusion>
+          <groupId>org.eclipse.platform</groupId>
+          <artifactId>org.eclipse.swt</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
 
@@ -140,10 +99,18 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
       <version>3.17.100</version>
       <scope>provided</scope>
       <exclusions>
-         <exclusion>
-            <groupId>org.eclipse.platform</groupId>
-            <artifactId>org.eclipse.swt</artifactId>
-         </exclusion>
+        <exclusion>
+          <groupId>org.eclipse.platform</groupId>
+          <artifactId>org.eclipse.swt</artifactId>
+        </exclusion>
+        <exclusion>
+           <groupId>org.apache.xmlgraphics</groupId>
+           <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+           <groupId>org.tukaani</groupId>
+           <artifactId>xz</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
 
@@ -156,14 +123,6 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
         <exclusion>
           <groupId>org.eclipse.platform</groupId>
           <artifactId>org.eclipse.swt</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.sun.jna</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>javax.annotation</groupId>
-          <artifactId>*</artifactId>
         </exclusion>
         <exclusion>
           <groupId>org.apache.lucene</groupId>
@@ -183,18 +142,41 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
           <artifactId>org.eclipse.swt</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>com.sun.jna</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>javax.annotation</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-        <exclusion>
           <groupId>org.apache.lucene</groupId>
           <artifactId>*</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.eclipse.jdt</groupId>
+      <artifactId>org.eclipse.jdt.ui</artifactId>
+      <version>3.34.0</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.eclipse.platform</groupId>
+          <artifactId>org.eclipse.swt</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.commonmark</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.eclipse.lsp4j</groupId>
+      <artifactId>org.eclipse.lsp4j</artifactId>
+      <version>0.24.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.eclipse.lsp4j</groupId>
+      <artifactId>org.eclipse.lsp4j.debug</artifactId>
+      <version>0.24.0</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
