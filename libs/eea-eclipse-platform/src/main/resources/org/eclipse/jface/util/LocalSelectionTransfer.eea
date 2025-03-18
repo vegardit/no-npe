@@ -9,16 +9,16 @@ getSelection
  ()Lorg/eclipse/jface/viewers/ISelection;
 getTypeIds
  ()[I
- ()[I
+ ()[1I # @Inherited(org.eclipse.swt.dnd.Transfer)
 getTypeNames
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1L1java/lang/String; # @Inherited(org.eclipse.swt.dnd.Transfer)
 javaToNative
  (Ljava/lang/Object;Lorg/eclipse/swt/dnd/TransferData;)V
- (Ljava/lang/Object;Lorg/eclipse/swt/dnd/TransferData;)V
+ (L1java/lang/Object;L1org/eclipse/swt/dnd/TransferData;)V # @Inherited(org.eclipse.swt.dnd.ByteArrayTransfer)
 nativeToJava
  (Lorg/eclipse/swt/dnd/TransferData;)Ljava/lang/Object;
- (Lorg/eclipse/swt/dnd/TransferData;)L0java/lang/Object; # @Inherited(org.eclipse.swt.dnd.ByteArrayTransfer)
+ (L0org/eclipse/swt/dnd/TransferData;)L0java/lang/Object; # @Inherited(org.eclipse.swt.dnd.ByteArrayTransfer)
 setSelection
  (Lorg/eclipse/jface/viewers/ISelection;)V
  (Lorg/eclipse/jface/viewers/ISelection;)V
