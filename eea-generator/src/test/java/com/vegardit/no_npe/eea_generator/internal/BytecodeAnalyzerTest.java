@@ -157,29 +157,29 @@ class BytecodeAnalyzerTest {
       return staticNullableObject;
    }
 
-   @ReturnValueNullability(Nullability.DEFINITLY_NULL)
+   @ReturnValueNullability(Nullability.DEFINITELY_NULL)
    static @Nullable Object returningNull1() {
       return null;
    }
 
-   @ReturnValueNullability(Nullability.DEFINITLY_NULL)
+   @ReturnValueNullability(Nullability.DEFINITELY_NULL)
    static @Nullable Object returningNull2() {
       if (System.currentTimeMillis() == 123)
          return "Hey";
       return null;
    }
 
-   @ReturnValueNullability(Nullability.DEFINITLY_NULL)
+   @ReturnValueNullability(Nullability.DEFINITELY_NULL)
    static @Nullable Object returningNull3() {
       return System.currentTimeMillis() == 123 ? "Hey" : null;
    }
 
-   @ReturnValueNullability(Nullability.DEFINITLY_NULL)
+   @ReturnValueNullability(Nullability.DEFINITELY_NULL)
    static @Nullable Object returningNull4(final boolean condition) {
       return condition ? "Hey" : null;
    }
 
-   @ReturnValueNullability(Nullability.DEFINITLY_NULL)
+   @ReturnValueNullability(Nullability.DEFINITELY_NULL)
    static @Nullable Object returningNull5() {
       /*L0
          ACONST_NULL
@@ -193,7 +193,7 @@ class BytecodeAnalyzerTest {
       return foo;
    }
 
-   @ReturnValueNullability(Nullability.DEFINITLY_NULL)
+   @ReturnValueNullability(Nullability.DEFINITELY_NULL)
    static @Nullable String returningNull6() {
       /*L0
          ACONST_NULL

@@ -41,7 +41,7 @@ public class BytecodeAnalyzer {
       NEVER_NULL,
 
       /** at least one code branch definitely returns null */
-      DEFINITLY_NULL,
+      DEFINITELY_NULL,
 
       /** a method may or may not return null */
       UNKNOWN,
@@ -222,7 +222,7 @@ public class BytecodeAnalyzer {
                   instructions.add(new Instruction(opcode));
                   switch (opcode) {
                      case Opcodes.ACONST_NULL:
-                        operandStackNullability.push(Nullability.DEFINITLY_NULL);
+                        operandStackNullability.push(Nullability.DEFINITELY_NULL);
                         break;
                      case Opcodes.ARETURN:
                         if (operandStackNullability.isEmpty()) {
@@ -420,8 +420,8 @@ public class BytecodeAnalyzer {
          // no return statements returning objects found; nullability unknown
          return Nullability.UNKNOWN;
 
-      if (returnNullabilities.contains(Nullability.DEFINITLY_NULL))
-         return Nullability.DEFINITLY_NULL;
+      if (returnNullabilities.contains(Nullability.DEFINITELY_NULL))
+         return Nullability.DEFINITELY_NULL;
 
       if (returnNullabilities.contains(Nullability.UNKNOWN))
          return Nullability.UNKNOWN;

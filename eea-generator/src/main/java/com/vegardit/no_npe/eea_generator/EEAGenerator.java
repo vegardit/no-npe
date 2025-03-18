@@ -252,7 +252,7 @@ public abstract class EEAGenerator {
              * mark the return value of a method as nullable if the byte code analysis of the method body determines it returns null values
              * or the method is annotated with a known nullable annotation.
              */
-            if (returnTypeNullability == Nullability.DEFINITLY_NULL //
+            if (returnTypeNullability == Nullability.DEFINITELY_NULL //
                   || hasNullableAnnotation(methodInfo.getAnnotationInfo()))
                // ()Ljava/lang/String -> ()L0java/lang/String;
                return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2,
