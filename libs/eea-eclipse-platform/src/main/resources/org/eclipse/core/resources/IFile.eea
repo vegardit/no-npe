@@ -2,10 +2,10 @@ class org/eclipse/core/resources/IFile
 
 appendContents
  (Ljava/io/InputStream;ILorg/eclipse/core/runtime/IProgressMonitor;)V
- (Ljava/io/InputStream;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+ (L1java/io/InputStream;IL0org/eclipse/core/runtime/IProgressMonitor;)V
 appendContents
  (Ljava/io/InputStream;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
- (Ljava/io/InputStream;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
+ (L1java/io/InputStream;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
 create
  (Ljava/io/InputStream;ILorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1java/io/InputStream;IL0org/eclipse/core/runtime/IProgressMonitor;)V
@@ -14,10 +14,10 @@ create
  (L1java/io/InputStream;ZL0org/eclipse/core/runtime/IProgressMonitor;)V
 create
  ([BILorg/eclipse/core/runtime/IProgressMonitor;)V
- ([BILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([1BIL0org/eclipse/core/runtime/IProgressMonitor;)V
 create
  ([BZZLorg/eclipse/core/runtime/IProgressMonitor;)V
- ([BZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([1BZZL0org/eclipse/core/runtime/IProgressMonitor;)V
 createLink
  (Ljava/net/URI;ILorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1java/net/URI;IL0org/eclipse/core/runtime/IProgressMonitor;)V
@@ -62,16 +62,16 @@ move
  (L1org/eclipse/core/runtime/IPath;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
 readAllBytes
  ()[B
- ()[B
+ ()[1B
 readAllChars
  ()[C
- ()[C
+ ()[1C
 readNBytes
  (I)[B
- (I)[B
+ (I)[1B
 readString
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String;
 setCharset
  (Ljava/lang/String;)V
  (L0java/lang/String;)V
@@ -86,16 +86,16 @@ setContents
  (L1java/io/InputStream;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
 setContents
  (Lorg/eclipse/core/resources/IFileState;ILorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/resources/IFileState;IL0org/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/resources/IFileState;IL0org/eclipse/core/runtime/IProgressMonitor;)V
 setContents
  (Lorg/eclipse/core/resources/IFileState;ZZLorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1org/eclipse/core/resources/IFileState;ZZL0org/eclipse/core/runtime/IProgressMonitor;)V
 setContents
  ([BILorg/eclipse/core/runtime/IProgressMonitor;)V
- ([BILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([1BIL0org/eclipse/core/runtime/IProgressMonitor;)V
 setContents
  ([BZZLorg/eclipse/core/runtime/IProgressMonitor;)V
- ([BZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([1BZZL0org/eclipse/core/runtime/IProgressMonitor;)V
 write
  ([BZZZLorg/eclipse/core/runtime/IProgressMonitor;)V
- ([BZZZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([1BZZZL0org/eclipse/core/runtime/IProgressMonitor;)V

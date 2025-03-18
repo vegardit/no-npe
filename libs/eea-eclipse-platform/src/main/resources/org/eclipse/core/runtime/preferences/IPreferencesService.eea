@@ -2,58 +2,58 @@ class org/eclipse/core/runtime/preferences/IPreferencesService
 
 applyPreferences
  (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;)V
- (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;)V
+ (L1org/eclipse/core/runtime/preferences/IEclipsePreferences;[0Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;)V
 applyPreferences
  (Lorg/eclipse/core/runtime/preferences/IExportedPreferences;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/runtime/preferences/IExportedPreferences;)Lorg/eclipse/core/runtime/IStatus;
+ (L1org/eclipse/core/runtime/preferences/IExportedPreferences;)L1org/eclipse/core/runtime/IStatus;
 exportPreferences
  (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;Ljava/io/OutputStream;[Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;Ljava/io/OutputStream;[Ljava/lang/String;)Lorg/eclipse/core/runtime/IStatus;
+ (L1org/eclipse/core/runtime/preferences/IEclipsePreferences;L1java/io/OutputStream;[0Ljava/lang/String;)L1org/eclipse/core/runtime/IStatus;
 exportPreferences
  (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;Ljava/io/OutputStream;)V
- (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;Ljava/io/OutputStream;)V
+ (L1org/eclipse/core/runtime/preferences/IEclipsePreferences;[0Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;L1java/io/OutputStream;)V
 get
  (Ljava/lang/String;Ljava/lang/String;[Lorg/osgi/service/prefs/Preferences;)Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;[Lorg/osgi/service/prefs/Preferences;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;[0Lorg/osgi/service/prefs/Preferences;)Ljava/lang/String;
 getBoolean
  (Ljava/lang/String;Ljava/lang/String;Z[Lorg/eclipse/core/runtime/preferences/IScopeContext;)Z
- (Ljava/lang/String;Ljava/lang/String;Z[Lorg/eclipse/core/runtime/preferences/IScopeContext;)Z
+ (Ljava/lang/String;Ljava/lang/String;Z[0Lorg/eclipse/core/runtime/preferences/IScopeContext;)Z
 getByteArray
  (Ljava/lang/String;Ljava/lang/String;[B[Lorg/eclipse/core/runtime/preferences/IScopeContext;)[B
- (Ljava/lang/String;Ljava/lang/String;[B[Lorg/eclipse/core/runtime/preferences/IScopeContext;)[B
+ (Ljava/lang/String;Ljava/lang/String;[B[0Lorg/eclipse/core/runtime/preferences/IScopeContext;)[B
 getDefaultLookupOrder
  (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+ (L1java/lang/String;Ljava/lang/String;)[1L1java/lang/String;
 getDouble
  (Ljava/lang/String;Ljava/lang/String;D[Lorg/eclipse/core/runtime/preferences/IScopeContext;)D
- (Ljava/lang/String;Ljava/lang/String;D[Lorg/eclipse/core/runtime/preferences/IScopeContext;)D
+ (Ljava/lang/String;Ljava/lang/String;D[0Lorg/eclipse/core/runtime/preferences/IScopeContext;)D
 getFloat
  (Ljava/lang/String;Ljava/lang/String;F[Lorg/eclipse/core/runtime/preferences/IScopeContext;)F
- (Ljava/lang/String;Ljava/lang/String;F[Lorg/eclipse/core/runtime/preferences/IScopeContext;)F
+ (Ljava/lang/String;Ljava/lang/String;F[0Lorg/eclipse/core/runtime/preferences/IScopeContext;)F
 getInt
  (Ljava/lang/String;Ljava/lang/String;I[Lorg/eclipse/core/runtime/preferences/IScopeContext;)I
- (Ljava/lang/String;Ljava/lang/String;I[Lorg/eclipse/core/runtime/preferences/IScopeContext;)I
+ (Ljava/lang/String;Ljava/lang/String;I[0Lorg/eclipse/core/runtime/preferences/IScopeContext;)I
 getLong
  (Ljava/lang/String;Ljava/lang/String;J[Lorg/eclipse/core/runtime/preferences/IScopeContext;)J
- (Ljava/lang/String;Ljava/lang/String;J[Lorg/eclipse/core/runtime/preferences/IScopeContext;)J
+ (Ljava/lang/String;Ljava/lang/String;J[0Lorg/eclipse/core/runtime/preferences/IScopeContext;)J
 getLookupOrder
  (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+ (L1java/lang/String;Ljava/lang/String;)[1L1java/lang/String;
 getRootNode
  ()Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
- ()Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;
+ ()L1org/eclipse/core/runtime/preferences/IEclipsePreferences;
 getString
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/core/runtime/preferences/IScopeContext;)Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/core/runtime/preferences/IScopeContext;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[0Lorg/eclipse/core/runtime/preferences/IScopeContext;)Ljava/lang/String;
 importPreferences
  (Ljava/io/InputStream;)Lorg/eclipse/core/runtime/IStatus;
- (Ljava/io/InputStream;)Lorg/eclipse/core/runtime/IStatus;
+ (L1java/io/InputStream;)L1org/eclipse/core/runtime/IStatus;
 matches
  (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;)[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;
- (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;)[Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;
+ (L1org/eclipse/core/runtime/preferences/IEclipsePreferences;[0Lorg/eclipse/core/runtime/preferences/IPreferenceFilter;)[1L1org/eclipse/core/runtime/preferences/IPreferenceFilter;
 readPreferences
  (Ljava/io/InputStream;)Lorg/eclipse/core/runtime/preferences/IExportedPreferences;
- (Ljava/io/InputStream;)Lorg/eclipse/core/runtime/preferences/IExportedPreferences;
+ (L1java/io/InputStream;)L1org/eclipse/core/runtime/preferences/IExportedPreferences;
 setDefaultLookupOrder
  (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+ (L1java/lang/String;L0java/lang/String;[0Ljava/lang/String;)V

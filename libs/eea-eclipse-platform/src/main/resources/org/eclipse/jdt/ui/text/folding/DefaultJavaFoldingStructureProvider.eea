@@ -2,10 +2,10 @@ class org/eclipse/jdt/ui/text/folding/DefaultJavaFoldingStructureProvider
 
 alignRegion
  (Lorg/eclipse/jface/text/IRegion;Lorg/eclipse/jdt/ui/text/folding/DefaultJavaFoldingStructureProvider$FoldingStructureComputationContext;)Lorg/eclipse/jface/text/IRegion;
- (Lorg/eclipse/jface/text/IRegion;Lorg/eclipse/jdt/ui/text/folding/DefaultJavaFoldingStructureProvider$FoldingStructureComputationContext;)L0org/eclipse/jface/text/IRegion;
+ (L0org/eclipse/jface/text/IRegion;L1org/eclipse/jdt/ui/text/folding/DefaultJavaFoldingStructureProvider$FoldingStructureComputationContext;)L0org/eclipse/jface/text/IRegion;
 collapseElements
  ([Lorg/eclipse/jdt/core/IJavaElement;)V
- ([Lorg/eclipse/jdt/core/IJavaElement;)V
+ ([1Lorg/eclipse/jdt/core/IJavaElement;)V # @Inherited(org.eclipse.jdt.ui.text.folding.IJavaFoldingStructureProviderExtension)
 computeFoldingStructure
  (Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/ui/text/folding/DefaultJavaFoldingStructureProvider$FoldingStructureComputationContext;)V
  (Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/ui/text/folding/DefaultJavaFoldingStructureProvider$FoldingStructureComputationContext;)V
@@ -14,13 +14,13 @@ computeProjectionRanges
  (Lorg/eclipse/jdt/core/ISourceReference;Lorg/eclipse/jdt/ui/text/folding/DefaultJavaFoldingStructureProvider$FoldingStructureComputationContext;)[1Lorg/eclipse/jface/text/IRegion;
 createCommentPosition
  (Lorg/eclipse/jface/text/IRegion;)Lorg/eclipse/jface/text/Position;
- (Lorg/eclipse/jface/text/IRegion;)L1org/eclipse/jface/text/Position;
+ (L1org/eclipse/jface/text/IRegion;)L1org/eclipse/jface/text/Position;
 createMemberPosition
  (Lorg/eclipse/jface/text/IRegion;Lorg/eclipse/jdt/core/IMember;)Lorg/eclipse/jface/text/Position;
- (Lorg/eclipse/jface/text/IRegion;Lorg/eclipse/jdt/core/IMember;)L1org/eclipse/jface/text/Position;
+ (L1org/eclipse/jface/text/IRegion;L1org/eclipse/jdt/core/IMember;)L1org/eclipse/jface/text/Position;
 expandElements
  ([Lorg/eclipse/jdt/core/IJavaElement;)V
- ([Lorg/eclipse/jdt/core/IJavaElement;)V
+ ([1Lorg/eclipse/jdt/core/IJavaElement;)V # @Inherited(org.eclipse.jdt.ui.text.folding.IJavaFoldingStructureProviderExtension)
 install
  (Lorg/eclipse/ui/texteditor/ITextEditor;Lorg/eclipse/jface/text/source/projection/ProjectionViewer;)V
- (Lorg/eclipse/ui/texteditor/ITextEditor;Lorg/eclipse/jface/text/source/projection/ProjectionViewer;)V
+ (L1org/eclipse/ui/texteditor/ITextEditor;L1org/eclipse/jface/text/source/projection/ProjectionViewer;)V # @Inherited(org.eclipse.jdt.ui.text.folding.IJavaFoldingStructureProvider)
