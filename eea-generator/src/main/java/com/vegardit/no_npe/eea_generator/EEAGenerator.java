@@ -249,7 +249,7 @@ public abstract class EEAGenerator {
             final var returnTypeNullability = bytecodeAnalyzer.determineMethodReturnTypeNullability(methodInfo);
 
             /*
-             * mark the return value of a method as nullable if the byte code analysis of the method body determines it returns null values
+             * mark the return value of a method as @Nullable if the byte code analysis of the method body determines it returns null values
              * or the method is annotated with a known nullable annotation.
              */
             if (returnTypeNullability == Nullability.DEFINITELY_NULL //
@@ -266,19 +266,21 @@ public abstract class EEAGenerator {
                return new ValueWithComment(member.originalSignature.value, "# " + EEAFile.MARKER_POLY_NULL);
 
             /*
-             * mark the return value of a method as non-null if the method is annotated with a non-null annotation
-             * or has a method name starting with "create".
+             * mark the return value of a method as @NonNull if:
+             * - annotated with a non-null annotation, or
+             * - static, no-arg, named "getInstance", or
+             * - named "create..."
              */
             if (returnTypeNullability == Nullability.NEVER_NULL //
                   || hasNonNullAnnotation(methodInfo.getAnnotationInfo()) //
+                  || methodInfo.getName().equals("getInstance") && methodInfo.isStatic() && methodInfo.getParameterInfo().length == 0 //
                   || methodInfo.getName().startsWith("create"))
                // ()Ljava/lang/String -> ()L1java/lang/String;
-               // create...(...)LLcom/example/Entity -> create...(...)L1Lcom/example/Entity;
                return new ValueWithComment(insert(member.originalSignature.value, member.originalSignature.value.lastIndexOf(")") + 2,
                   "1"));
 
             /*
-             * mark java.util.Optional return types as @NonNull
+             * mark java.util.Optional return values as @NonNull
              */
             if (methodInfo.getTypeDescriptor().getResultType() instanceof ClassRefTypeSignature //
                   && Optional.class.getName().equals(((ClassRefTypeSignature) methodInfo.getTypeDescriptor().getResultType())
@@ -287,7 +289,7 @@ public abstract class EEAGenerator {
                   "1"));
 
             /*
-             * mark the return value of builder methods as @NonNull.
+             * mark the return values of builder methods as @NonNull.
              */
             if (classInfo.getName().endsWith("Builder") //
                   && !methodInfo.isStatic() // non-static
