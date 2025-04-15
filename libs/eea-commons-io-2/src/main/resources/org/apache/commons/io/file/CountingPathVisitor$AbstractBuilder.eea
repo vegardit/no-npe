@@ -1,0 +1,20 @@
+class org/apache/commons/io/file/CountingPathVisitor$AbstractBuilder
+ <T:Ljava/lang/Object;B:Lorg/apache/commons/io/file/CountingPathVisitor$AbstractBuilder<TT;TB;>;>
+ <T:Ljava/lang/Object;B:Lorg/apache/commons/io/file/CountingPathVisitor$AbstractBuilder<TT;TB;>;>
+
+super org/apache/commons/io/file/SimplePathVisitor$AbstractBuilder
+ <TT;TB;>
+ <TT;TB;>
+
+setDirectoryFilter
+ (Lorg/apache/commons/io/file/PathFilter;)TB;
+ (Lorg/apache/commons/io/file/PathFilter;)T1B;
+setDirectoryPostTransformer
+ (Ljava/util/function/UnaryOperator<Ljava/nio/file/Path;>;)TB;
+ (Ljava/util/function/UnaryOperator<Ljava/nio/file/Path;>;)T1B;
+setFileFilter
+ (Lorg/apache/commons/io/file/PathFilter;)TB;
+ (Lorg/apache/commons/io/file/PathFilter;)T1B;
+setPathCounters
+ (Lorg/apache/commons/io/file/Counters$PathCounters;)TB;
+ (Lorg/apache/commons/io/file/Counters$PathCounters;)T1B;

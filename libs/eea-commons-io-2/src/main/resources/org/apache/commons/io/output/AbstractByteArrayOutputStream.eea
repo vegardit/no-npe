@@ -1,5 +1,10 @@
 class org/apache/commons/io/output/AbstractByteArrayOutputStream
+ <T:Lorg/apache/commons/io/output/AbstractByteArrayOutputStream<TT;>;>
+ <T:Lorg/apache/commons/io/output/AbstractByteArrayOutputStream<TT;>;>
 
+asThis
+ ()TT;
+ ()TT;
 toByteArray
  ()[B
  ()[B
@@ -24,6 +29,12 @@ toString
 write
  (Ljava/io/InputStream;)I
  (Ljava/io/InputStream;)I
+write
+ (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)TT;
+ (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)TT;
+write
+ ([B)V
+ ([1B)V # @Inherited(java.io.OutputStream)
 write
  ([BII)V
  ([1BII)V # @Inherited(java.io.OutputStream)

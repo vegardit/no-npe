@@ -1,5 +1,9 @@
 class org/apache/commons/io/input/ReversedLinesFileReader
 
+super org/apache/commons/io/function/IOIterable
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
 builder
  ()Lorg/apache/commons/io/input/ReversedLinesFileReader$Builder;
  ()L1org/apache/commons/io/input/ReversedLinesFileReader$Builder;
@@ -25,6 +29,9 @@ builder
 <init>
  (Ljava/nio/file/Path;Ljava/nio/charset/Charset;)V
  (Ljava/nio/file/Path;Ljava/nio/charset/Charset;)V
+iterator
+ ()Lorg/apache/commons/io/function/IOIterator<Ljava/lang/String;>;
+ ()L1org/apache/commons/io/function/IOIterator<Ljava/lang/String;>;
 readLine
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -34,3 +41,6 @@ readLines
 toString
  (I)Ljava/lang/String;
  (I)L1java/lang/String;
+unwrap
+ ()Ljava/lang/Iterable<Ljava/lang/String;>;
+ ()L0java/lang/Iterable<Ljava/lang/String;>;
