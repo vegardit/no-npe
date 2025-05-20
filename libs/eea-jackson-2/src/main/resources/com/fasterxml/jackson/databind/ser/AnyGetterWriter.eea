@@ -16,6 +16,9 @@ _serializer
 <init>
  (Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)V
  (Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)V
+<init>
+ (Lcom/fasterxml/jackson/databind/ser/BeanPropertyWriter;Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)V
+ (Lcom/fasterxml/jackson/databind/ser/BeanPropertyWriter;Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;)V
 fixAccess
  (Lcom/fasterxml/jackson/databind/SerializationConfig;)V
  (Lcom/fasterxml/jackson/databind/SerializationConfig;)V
@@ -28,3 +31,6 @@ getAndSerialize
 resolve
  (Lcom/fasterxml/jackson/databind/SerializerProvider;)V
  (Lcom/fasterxml/jackson/databind/SerializerProvider;)V
+serializeAsField
+ (Ljava/lang/Object;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
+ (Ljava/lang/Object;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V

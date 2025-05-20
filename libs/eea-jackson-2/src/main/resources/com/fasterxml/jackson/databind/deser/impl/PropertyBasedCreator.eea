@@ -23,6 +23,9 @@ _valueInstantiator
 <init>
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;[Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;ZZ)V
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;[Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;ZZ)V
+<init>
+ (Lcom/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator;Ljava/util/HashMap<Ljava/lang/String;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;[Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)V
+ (Lcom/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator;Ljava/util/HashMap<Ljava/lang/String;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;[Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)V
 build
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer;)Ljava/lang/Object;
@@ -35,6 +38,9 @@ findCreatorProperty
 properties
  ()Ljava/util/Collection<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
  ()Ljava/util/Collection<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
+renameAll
+ (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator;
+ (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator;
 startBuilding
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;)Lcom/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/impl/ObjectIdReader;)L1com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer;

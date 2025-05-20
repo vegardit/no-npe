@@ -13,6 +13,9 @@ _reportRequiredViolation
 _this
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>()TT;
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>()TT;
+asOptional
+ ()Ljava/util/Optional<Lcom/fasterxml/jackson/databind/JsonNode;>;
+ ()L1java/util/Optional<Lcom/fasterxml/jackson/databind/JsonNode;>;
 asText
  ()Ljava/lang/String;
  ()L0java/lang/String;
@@ -79,6 +82,9 @@ findValuesAsText
 findValuesAsText
  (Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/String;>;
  (L1java/lang/String;L1java/util/List<L0java/lang/String;>;)L1java/util/List<L0java/lang/String;>;
+forEachEntry
+ (Ljava/util/function/BiConsumer<-Ljava/lang/String;-Lcom/fasterxml/jackson/databind/JsonNode;>;)V
+ (Ljava/util/function/BiConsumer<-Ljava/lang/String;-Lcom/fasterxml/jackson/databind/JsonNode;>;)V
 get
  (I)Lcom/fasterxml/jackson/databind/JsonNode;
  (I)L0com/fasterxml/jackson/databind/JsonNode;
@@ -100,6 +106,12 @@ iterator
 numberValue
  ()Ljava/lang/Number;
  ()L1java/lang/Number;
+optional
+ (I)Ljava/util/Optional<Lcom/fasterxml/jackson/databind/JsonNode;>;
+ (I)L1java/util/Optional<Lcom/fasterxml/jackson/databind/JsonNode;>;
+optional
+ (Ljava/lang/String;)Ljava/util/Optional<Lcom/fasterxml/jackson/databind/JsonNode;>;
+ (Ljava/lang/String;)L1java/util/Optional<Lcom/fasterxml/jackson/databind/JsonNode;>;
 path
  (I)Lcom/fasterxml/jackson/databind/JsonNode;
  (I)L1com/fasterxml/jackson/databind/JsonNode;
@@ -109,6 +121,9 @@ path
 properties
  ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;>;
  ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;>;
+propertyStream
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;>;
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;>;
 require
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>()TT;
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>()T1T;
@@ -136,6 +151,12 @@ toPrettyString
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)
+valueStream
+ ()Ljava/util/stream/Stream<Lcom/fasterxml/jackson/databind/JsonNode;>;
+ ()Ljava/util/stream/Stream<Lcom/fasterxml/jackson/databind/JsonNode;>;
+values
+ ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/JsonNode;>;
+ ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/JsonNode;>;
 with
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(Ljava/lang/String;)TT;
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(Ljava/lang/String;)T1T;

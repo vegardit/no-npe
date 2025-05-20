@@ -3,6 +3,12 @@ class com/fasterxml/jackson/databind/util/Converter
  <IN:Ljava/lang/Object;OUT:Ljava/lang/Object;>
 
 convert
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;TIN;)TOUT;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;TIN;)TOUT;
+convert
+ (Lcom/fasterxml/jackson/databind/SerializerProvider;TIN;)TOUT;
+ (Lcom/fasterxml/jackson/databind/SerializerProvider;TIN;)TOUT;
+convert
  (TIN;)TOUT;
  (TIN;)TOUT;
 getInputType

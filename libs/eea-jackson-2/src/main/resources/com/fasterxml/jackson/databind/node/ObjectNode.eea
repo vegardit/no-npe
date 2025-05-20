@@ -74,6 +74,9 @@ findValues
 findValuesAsText
  (Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/String;>;
  (L1java/lang/String;L1java/util/List<L0java/lang/String;>;)L1java/util/List<L0java/lang/String;>; # @Inherited(com.fasterxml.jackson.databind.JsonNode)
+forEachEntry
+ (Ljava/util/function/BiConsumer<-Ljava/lang/String;-Lcom/fasterxml/jackson/databind/JsonNode;>;)V
+ (Ljava/util/function/BiConsumer<-Ljava/lang/String;-Lcom/fasterxml/jackson/databind/JsonNode;>;)V
 get
  (I)Lcom/fasterxml/jackson/databind/JsonNode;
  (I)L0com/fasterxml/jackson/databind/JsonNode; # @Inherited(com.fasterxml.jackson.databind.node.ContainerNode)
@@ -86,6 +89,9 @@ getNodeType
 isEmpty
  (Lcom/fasterxml/jackson/databind/SerializerProvider;)Z
  (L0com/fasterxml/jackson/databind/SerializerProvider;)Z
+optional
+ (Ljava/lang/String;)Ljava/util/Optional<Lcom/fasterxml/jackson/databind/JsonNode;>;
+ (Ljava/lang/String;)L1java/util/Optional<Lcom/fasterxml/jackson/databind/JsonNode;>; # @Inherited(com.fasterxml.jackson.databind.JsonNode)
 path
  (I)Lcom/fasterxml/jackson/databind/JsonNode;
  (I)L1com/fasterxml/jackson/databind/JsonNode; # @Inherited(com.fasterxml.jackson.databind.JsonNode)
@@ -95,6 +101,9 @@ path
 properties
  ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;>;
  ()Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;>;
+propertyStream
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;>;
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;>;>;
 put
  (Ljava/lang/String;D)Lcom/fasterxml/jackson/databind/node/ObjectNode;
  (L1java/lang/String;D)L1com/fasterxml/jackson/databind/node/ObjectNode;
@@ -179,6 +188,9 @@ remove
 removeAll
  ()Lcom/fasterxml/jackson/databind/node/ObjectNode;
  ()L1com/fasterxml/jackson/databind/node/ObjectNode;
+removeIf
+ (Ljava/util/function/Predicate<-Lcom/fasterxml/jackson/databind/JsonNode;>;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
+ (Ljava/util/function/Predicate<-Lcom/fasterxml/jackson/databind/JsonNode;>;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
 replace
  (Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)Lcom/fasterxml/jackson/databind/JsonNode;
  (L1java/lang/String;L0com/fasterxml/jackson/databind/JsonNode;)L1com/fasterxml/jackson/databind/JsonNode;
@@ -209,6 +221,12 @@ setAll
 setAll
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(Ljava/util/Map<Ljava/lang/String;+Lcom/fasterxml/jackson/databind/JsonNode;>;)TT;
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(L1java/util/Map<Ljava/lang/String;+Lcom/fasterxml/jackson/databind/JsonNode;>;)T1T;
+valueStream
+ ()Ljava/util/stream/Stream<Lcom/fasterxml/jackson/databind/JsonNode;>;
+ ()Ljava/util/stream/Stream<Lcom/fasterxml/jackson/databind/JsonNode;>;
+values
+ ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/JsonNode;>;
+ ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/JsonNode;>;
 with
  (Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
  (L1java/lang/String;)L1com/fasterxml/jackson/databind/node/ObjectNode;

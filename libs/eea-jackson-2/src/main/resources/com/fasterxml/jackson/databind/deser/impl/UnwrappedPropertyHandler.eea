@@ -1,5 +1,16 @@
 class com/fasterxml/jackson/databind/deser/impl/UnwrappedPropertyHandler
 
+JSON_UNWRAPPED_NAME_PREFIX
+ Ljava/lang/String;
+ L1java/lang/String;
+
+creatorParamName
+ (I)Lcom/fasterxml/jackson/databind/PropertyName;
+ (I)L1com/fasterxml/jackson/databind/PropertyName;
+
+_creatorProperties
+ Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
+ Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
 _properties
  Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
  Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
@@ -7,12 +18,21 @@ _properties
 <init>
  (Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;)V
  (Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;)V
+<init>
+ (Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;)V
+ (Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;Ljava/util/List<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;)V
+addCreatorProperty
+ (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)V
+ (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)V
 addProperty
  (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)V
  (Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)V
 processUnwrapped
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/util/TokenBuffer;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/util/TokenBuffer;)Ljava/lang/Object;
+processUnwrappedCreatorProperties
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer;Lcom/fasterxml/jackson/databind/util/TokenBuffer;)Lcom/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer;Lcom/fasterxml/jackson/databind/util/TokenBuffer;)Lcom/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer;
 renameAll
  (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/deser/impl/UnwrappedPropertyHandler;
  (Lcom/fasterxml/jackson/databind/util/NameTransformer;)L1com/fasterxml/jackson/databind/deser/impl/UnwrappedPropertyHandler;

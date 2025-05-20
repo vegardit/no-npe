@@ -3,7 +3,13 @@ class com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver
 construct
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver;
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)L1com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver;
+construct
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver;
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)L1com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver;
 
+_allowedSubtypes
+ Ljava/util/Set<Ljava/lang/String;>;
+ Ljava/util/Set<Ljava/lang/String;>;
 _subTypeValidator
  Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;
  Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;
@@ -14,6 +20,9 @@ _subTypeValidator
 <init>
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/type/TypeFactory;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)V
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/type/TypeFactory;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)V
+<init>
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/type/TypeFactory;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)V
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/type/TypeFactory;Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)V
 _idFrom
  (Ljava/lang/Object;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/type/TypeFactory;)Ljava/lang/String;
  (Ljava/lang/Object;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/type/TypeFactory;)Ljava/lang/String;
