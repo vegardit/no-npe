@@ -30,7 +30,7 @@ if [[ -f .ci/release-trigger.sh ]]; then
    source .ci/release-trigger.sh
 fi
 
-cd $(dirname $0)/..
+cd $(dirname "$0")/..
 
 echo
 echo "###################################################"

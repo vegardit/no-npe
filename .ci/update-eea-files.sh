@@ -25,7 +25,7 @@ SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # Main
 #####################
 
-cd $(dirname $0)/..
+cd $(dirname "$0")/..
 
 echo
 echo "###################################################"
