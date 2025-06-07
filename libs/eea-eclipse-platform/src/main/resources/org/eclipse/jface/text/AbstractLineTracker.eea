@@ -5,7 +5,7 @@ computeNumberOfLines
  (L1java/lang/String;)I # @Inherited(org.eclipse.jface.text.ILineTracker)
 getLineDelimiter
  (I)Ljava/lang/String;
- (I)Ljava/lang/String;
+ (I)L0java/lang/String; # @Inherited(org.eclipse.jface.text.ILineTracker)
 getLineInformation
  (I)Lorg/eclipse/jface/text/IRegion;
  (I)L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.ILineTracker)
@@ -23,7 +23,7 @@ set
  (Ljava/lang/String;)V
 startRewriteSession
  (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
- (Lorg/eclipse/jface/text/DocumentRewriteSession;)V
+ (L1org/eclipse/jface/text/DocumentRewriteSession;)V # @Inherited(org.eclipse.jface.text.ILineTrackerExtension)
 stopRewriteSession
  (Lorg/eclipse/jface/text/DocumentRewriteSession;Ljava/lang/String;)V
- (Lorg/eclipse/jface/text/DocumentRewriteSession;Ljava/lang/String;)V
+ (L1org/eclipse/jface/text/DocumentRewriteSession;Ljava/lang/String;)V # @Inherited(org.eclipse.jface.text.ILineTrackerExtension)

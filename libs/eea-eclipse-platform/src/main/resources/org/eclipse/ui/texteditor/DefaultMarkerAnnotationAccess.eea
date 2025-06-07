@@ -44,7 +44,7 @@ getSupertypes
  (Ljava/lang/Object;)[Ljava/lang/Object;
 getType
  (Lorg/eclipse/jface/text/source/Annotation;)Ljava/lang/Object;
- (Lorg/eclipse/jface/text/source/Annotation;)Ljava/lang/Object;
+ (L1org/eclipse/jface/text/source/Annotation;)Ljava/lang/Object; # @Inherited(org.eclipse.jface.text.source.IAnnotationAccess)
 getTypeLabel
  (Lorg/eclipse/jface/text/source/Annotation;)Ljava/lang/String;
  (Lorg/eclipse/jface/text/source/Annotation;)L0java/lang/String;
@@ -53,7 +53,7 @@ hasQuickFix
  (Lorg/eclipse/jface/text/source/Annotation;)Z
 isMultiLine
  (Lorg/eclipse/jface/text/source/Annotation;)Z
- (Lorg/eclipse/jface/text/source/Annotation;)Z
+ (L1org/eclipse/jface/text/source/Annotation;)Z # @Inherited(org.eclipse.jface.text.source.IAnnotationAccess)
 isPaintable
  (Lorg/eclipse/jface/text/source/Annotation;)Z
  (Lorg/eclipse/jface/text/source/Annotation;)Z
@@ -62,7 +62,7 @@ isSubtype
  (Ljava/lang/Object;Ljava/lang/Object;)Z
 isTemporary
  (Lorg/eclipse/jface/text/source/Annotation;)Z
- (Lorg/eclipse/jface/text/source/Annotation;)Z
+ (L1org/eclipse/jface/text/source/Annotation;)Z # @Inherited(org.eclipse.jface.text.source.IAnnotationAccess)
 paint
  (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/widgets/Canvas;Lorg/eclipse/swt/graphics/Rectangle;)V
  (Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/widgets/Canvas;Lorg/eclipse/swt/graphics/Rectangle;)V
