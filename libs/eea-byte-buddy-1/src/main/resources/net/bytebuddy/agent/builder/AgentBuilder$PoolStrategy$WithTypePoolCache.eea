@@ -1,5 +1,8 @@
 class net/bytebuddy/agent/builder/AgentBuilder$PoolStrategy$WithTypePoolCache
 
+lazinessMode
+ Lnet/bytebuddy/pool/TypePool$Default$WithLazyResolution$LazinessMode;
+ Lnet/bytebuddy/pool/TypePool$Default$WithLazyResolution$LazinessMode;
 readerMode
  Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;
  Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;
@@ -7,6 +10,9 @@ readerMode
 <init>
  (Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;)V
  (Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;)V
+<init>
+ (Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;Lnet/bytebuddy/pool/TypePool$Default$WithLazyResolution$LazinessMode;)V
+ (Lnet/bytebuddy/pool/TypePool$Default$ReaderMode;Lnet/bytebuddy/pool/TypePool$Default$WithLazyResolution$LazinessMode;)V
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)

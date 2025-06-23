@@ -7,6 +7,15 @@ super java/lang/Enum
 accept
  (Lnet/bytebuddy/jar/asm/ClassVisitor;I)V
  (Lnet/bytebuddy/jar/asm/ClassVisitor;I)V
+getInterfaceInternalNames
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getInternalName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSuperClassInternalName
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(net.bytebuddy.utility.AsmClassReader)
 toWriter
  (ILnet/bytebuddy/pool/TypePool;)Lnet/bytebuddy/utility/AsmClassWriter;
  (ILnet/bytebuddy/pool/TypePool;)L0net/bytebuddy/utility/AsmClassWriter;
