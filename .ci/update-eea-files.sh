@@ -46,14 +46,15 @@ MAVEN_OPTS="$MAVEN_OPTS -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.s
 export MAVEN_OPTS="$MAVEN_OPTS -Xmx1024m -Djava.awt.headless=true -Djava.net.preferIPv4Stack=true -Dhttps.protocols=TLSv1.2"
 echo "  -> MAVEN_OPTS: $MAVEN_OPTS"
 
-MAVEN_CLI_OPTS="-e -U --batch-mode --show-version --no-transfer-progress -s .ci/maven-settings.xml -t .ci/maven-toolchains.xml"
+MAVEN_CLI_OPTS="-e -U --batch-mode --show-version --no-transfer-progress"
 
 
 echo
 echo "###################################################"
 echo "# Updating EEA Files...                           #"
 echo "###################################################"
+chmod u+x ./mvnw
 # shellcheck disable=SC2086 # (info): Double quote to prevent globbing and word splitting
-bash mvnw $MAVEN_CLI_OPTS "$@" \
+./mvnw $MAVEN_CLI_OPTS "$@" \
    help:active-profiles compile -Deea-generator.action=generate \
       | grep -v -e "\[INFO\]  .* \[0.0[0-9][0-9]s\]" # the grep command suppresses all lines from maven-buildtime-extension that report plugins with execution time <=99ms

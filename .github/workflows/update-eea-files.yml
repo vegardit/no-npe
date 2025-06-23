@@ -9,18 +9,18 @@ name: Update EEA Files
 on:
   schedule:
     # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
-    - cron: '0 5 * * *' # daily at 5 a.m.
+    - cron: "0 5 * * *"  # daily at 5 a.m.
   workflow_dispatch:
     # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch
     inputs:
-      additional_maven_args:
-        description: 'Additional Maven Args'
-        required: false
-        default: ''
+      extra-maven-args:
+        description: "Additional command-line arguments to append to all Maven invocations"
+        default: ""
+        type: string
       library:
-        description: 'Name of the library to update (e.g. eea-gson-2). If left empty all libraries are updated.'
-        required: false
-        default: ''
+        description: "Name of the library to update (e.g. eea-gson-2). If left empty all libraries are updated."
+        default: ""
+        type: string
 
 
 defaults:
@@ -56,45 +56,24 @@ jobs:
       uses: actions/checkout@v4  # https://github.com/actions/checkout
 
 
-    - name: "Install: JDK 11 ☕"
-      id: setup-java-11
-      uses: actions/setup-java@v4  # https://github.com/actions/setup-java
+    - name: "Install: JDKs ☕"
+      uses: sebthom/gha-shared/.github/actions/setup-java@v1
       with:
-        distribution: temurin
-        java-version: 11
-
-
-    - name: "Install: JDK 17 ☕"
-      id: setup-java-17
-      uses: actions/setup-java@v4  # https://github.com/actions/setup-java
-      with:
-        distribution: temurin
-        java-version: 17
-
-
-    - name: "Install: JDK 21 ☕"
-      id: setup-java-21
-      uses: actions/setup-java@v4  # https://github.com/actions/setup-java
-      with:
-        distribution: temurin
-        java-version: 21
-
-
-    - name: Set JAVA_HOME env vars
-      run: |
-        echo "JAVA11_HOME=${{ steps.setup-java-11.outputs.path }}" >> $GITHUB_ENV
-        echo "JAVA17_HOME=${{ steps.setup-java-17.outputs.path }}" >> $GITHUB_ENV
-        echo "JAVA21_HOME=${{ steps.setup-java-21.outputs.path }}" >> $GITHUB_ENV
+        jdks: 11,17,21
 
 
     - name: "Cache: Restore"
       id: cache-restore
       uses: actions/cache/restore@v4
       with:
+        # IMPORTANT: path must have exactly the same value as in the cache save step otherwise restore will fail with cache key not found
         path: |
           ~/.m2/bin
-          ~/.m2/repository
-        key: ${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
+          ~/.m2/repository/*
+          !~/.m2/repository/.cache
+          !~/.m2/repository/.meta
+          !~/.m2/repository/*SNAPSHOT*
+        key: ubuntu-latest-mvn-repo-${{ hashFiles('**/pom.xml') }}
 
 
     - name: "Update EEA Files 🔨"
@@ -103,8 +82,8 @@ jobs:
         set -euo pipefail
 
         bash .ci/update-eea-files.sh \
-          $( [[ -n "${{ github.event.inputs.library }}"  ]] && echo '-pl "libs/${{ github.event.inputs.library }}" -am' || true ) \
-          ${{ github.event.inputs.additional_maven_args }}
+          $( [[ -n "${{ inputs.library }}"  ]] && echo '-pl "libs/${{ inputs.library }}" -am' || true ) \
+          ${{ inputs.extra-maven-args }}
 
         updates=$(git -C . ls-files -o -m -d --exclude-standard | head -n 50 || true)  # "|| true" is to mitgate exit code 141
 
@@ -124,11 +103,11 @@ jobs:
       uses: peter-evans/create-pull-request@v7  # https://github.com/peter-evans/create-pull-request
       if: steps.eea_updates.outputs.updates
       with:
-        title: "chore: Update ${{ github.event.inputs.library && format('{0} ', github.event.inputs.library) || '' }}EEA files"
+        title: "chore: Update ${{ inputs.library && format('{0} ', inputs.library) || '' }}EEA files"
         author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
         committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-        commit-message: "chore: Update EEA ${{ github.event.inputs.library && format('{0} ', github.event.inputs.library) || '' }}files"
+        commit-message: "chore: Update EEA ${{ inputs.library && format('{0} ', inputs.library) || '' }}files"
         body: ${{ steps.eea_updates.outputs.updates }}
         add-paths: libs
-        branch: ${{ github.event.inputs.library && format('eea_{0}_updates', github.event.inputs.library) || 'eea_updates' }}
+        branch: ${{ inputs.library && format('eea_{0}_updates', inputs.library) || 'eea_updates' }}
         delete-branch: true
