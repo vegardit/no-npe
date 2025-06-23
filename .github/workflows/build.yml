@@ -7,33 +7,42 @@
 name: Build
 
 on:
+  schedule:
+    # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
+    - cron: "0 15 1 * *"
   push:
     branches-ignore:  # build all branches except:
-    - 'dependabot/**'  # prevent GHA triggered twice (once for commit to the branch and once for opening/syncing the PR)
+    - "dependabot/**"  # prevent GHA triggered twice (once for commit to the branch and once for opening/syncing the PR)
     tags-ignore:  # don't build tags
-    - '**'
+    - "**"
     paths-ignore:
-    - '**/*.adoc'
-    - '**/*.md'
-    - '.editorconfig'
-    - '.git*'
-    - '.github/*.yml'
-    - '.github/workflows/stale.yml'
-    - '.github/workflows/update-eea-files.yml'
+    - ".act*"
+    - "**/*.adoc"
+    - "**/*.md"
+    - ".editorconfig"
+    - ".git*"
+    - ".github/*.yml"
+    - ".github/ISSUE_TEMPLATE/*"
+    - ".github/workflows/stale.yml"
+    - ".github/workflows/update-eea-files.yml"
   pull_request:
     paths-ignore:
-    - '**/*.adoc'
-    - '**/*.md'
-    - '.editorconfig'
-    - '.git*'
-    - '.github/*.yml'
+    - ".act*"
+    - "**/*.adoc"
+    - "**/*.md"
+    - ".editorconfig"
+    - ".git*"
+    - ".github/*.yml"
+    - ".github/ISSUE_TEMPLATE/*"
+    - ".github/workflows/stale.yml"
+    - ".github/workflows/update-eea-files.yml"
   workflow_dispatch:
     # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch
     inputs:
-      additional_maven_args:
-        description: 'Additional Maven Args'
+      extra-maven-args:
+        description: "Additional command-line arguments to append to all Maven invocations"
         required: false
-        default: ''
+        default: ""
       debug-with-ssh:
         description: "Start an SSH session for debugging purposes at the end of the build:"
         default: never
@@ -44,253 +53,31 @@ on:
         default: true
         type: boolean
 
-
-defaults:
-  run:
-    shell: bash
-
-
 jobs:
-
   ###########################################################
   maven-build:
   ###########################################################
-    runs-on: ubuntu-latest  # https://github.com/actions/runner-images#available-images
-    timeout-minutes: 10
+    uses: sebthom/gha-shared/.github/workflows/reusable.maven-build.yml@v1
+    with:
+      timeout-minutes: 10
 
+      compile-jdk: 11
+      extra-jdks: 17,21
 
-    permissions:
-      contents: write
+      extra-maven-args: ${{ inputs.extra-maven-args }}
+      set-jdk-version-properties: false
+      snapshots-branch: mvn-snapshots-repo
 
+      debug-with-ssh: ${{ inputs.debug-with-ssh }}
+      debug-with-ssh-only-for-actor: ${{ inputs.debug-with-ssh-only-for-actor }}
 
-    # https://docs.github.com/en/actions/using-jobs/using-concurrency
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: false
-
-
-    steps:
-    - name: "Show: GitHub context"
-      env:
-        GITHUB_CONTEXT: ${{ toJSON(github) }}
-      run: echo $GITHUB_CONTEXT
-
-
-    - name: "Show: environment variables"
-      run: env | sort
-
-
-    - name: Git Checkout
-      uses: actions/checkout@v4  # https://github.com/actions/checkout
-
-
-    - name: "Install: JDK 11 ☕"
-      uses: actions/setup-java@v4  # https://github.com/actions/setup-java
-      with:
-        distribution: temurin
-        java-version: 11
-    - run: echo "JAVA11_HOME=$JAVA_HOME" >> $GITHUB_ENV
-
-
-    - name: "Install: JDK 17 ☕"
-      uses: actions/setup-java@v4  # https://github.com/actions/setup-java
-      with:
-        distribution: temurin
-        java-version: 17
-    - run: echo "JAVA17_HOME=$JAVA_HOME" >> $GITHUB_ENV
-
-
-    - name: "Install: JDK 21 ☕"
-      uses: actions/setup-java@v4  # https://github.com/actions/setup-java
-      with:
-        distribution: temurin
-        java-version: 21
-    - run: echo "JAVA21_HOME=$JAVA_HOME" >> $GITHUB_ENV
-
-
-    - name: "Install: Maven 📦"
-      uses: stCarolas/setup-maven@v5  # https://github.com/stCarolas/setup-maven
-      with:
-        maven-version: 3.9.9
-
-
-    - name: "Cache: Restore"
-      id: cache-restore
-      if: ${{ !env.ACT }}  # https://github.com/nektos/act#skipping-steps
-      uses: actions/cache/restore@v4  # https://github.com/actions/cache/blob/main/restore/README.md
-      with:
-        path: |
-          ~/.m2/bin
-          ~/.m2/repository
-        key: ${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
-
-
-    - name: Test with Maven
-      if: ${{ github.ref_name != 'main' || env.ACT }}
-      env:
-        GITHUB_USER: ${{ github.actor }}
-        GITHUB_API_KEY: ${{ github.token }}
-        MAY_CREATE_RELEASE: false
-      run: |
-        bash .ci/build.sh ${{ github.event.inputs.additional_maven_args }}
-
-
-    - name: Prepare Maven Snapshots Repo
-      if: ${{ github.ref_name == 'main' && !env.ACT }}
-      run: |
-        set -eux
-
-        cd /tmp
-        github_repo_url="https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}/"
-        if curl --output /dev/null --silent --head --fail "$github_repo_url/tree/mvn-snapshots-repo"; then
-          git clone https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}/ --single-branch --branch mvn-snapshots-repo mvn-snapshots-repo
-          cd mvn-snapshots-repo
-          # https://github.community/t/github-actions-bot-email-address/17204
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git reset --hard HEAD^ # revert previous commit
-        else
-          git clone https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }}/ mvn-snapshots-repo
-          cd mvn-snapshots-repo
-          git checkout --orphan mvn-snapshots-repo
-          git rm -rf .
-          cat <<EOF > index.html
-            <!DOCTYPE html>
-            <html>
-            <head>
-              <title>${{ github.repository }} - Maven Snapshots Repo</title>
-            </head>
-            <body>
-            <h1>${{ github.repository }} - Maven Snapshots Repo</h1>
-            </body>
-            </html>
-        EOF
-          git add index.html
-          # https://github.community/t/github-actions-bot-email-address/17204
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "Initialize Maven Snapshots Repo"
-        fi
-
-
-    - name: "Build with Maven 🔨"
-      if: ${{ github.ref_name == 'main' && !env.ACT }}
-      env:
-        GITHUB_USER: ${{ github.actor }}
-        GITHUB_API_KEY: ${{ secrets.GH_API_TOKEN }}
-        MAY_CREATE_RELEASE: true
-        SIGN_KEY: ${{ secrets.GPG_SIGN_KEY }}
-        SIGN_KEY_PASS: ${{ secrets.GPG_SIGN_KEY_PWD }}
-        SONATYPE_CENTRAL_USER: ${{ vars.SONATYPE_CENTRAL_USER }}
-        SONATYPE_CENTRAL_TOKEN: ${{ secrets.SONATYPE_CENTRAL_TOKEN }}
-      run: |
-        set -eu
-
-        # https://github.community/t/github-actions-bot-email-address/17204
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        bash .ci/build.sh \
-          ${{ github.event.inputs.additional_maven_args }} \
-          -DaltSnapshotDeploymentRepository=temp-snapshots-repo::file:///tmp/mvn-snapshots-repo
-
-
-    - name: Update Maven Snapshots Repo
-      if: ${{ github.ref_name == 'main' && !env.ACT }}
-      run: |
-        cd /tmp/mvn-snapshots-repo
-        if [[ $(git -C . ls-files -o -m -d --exclude-standard | wc -l) -gt 0 ]]; then
-          git add --all
-          git commit -am "Deploy snapshot version"
-          git push origin mvn-snapshots-repo --force
-        fi
-
-
-    ##################################################
-    # Cache Update
-    # See https://github.com/actions/cache/issues/342#issuecomment-1399442670
-    ##################################################
-    - name: "Cache: Delete Previous"
-      if: ${{ steps.cache-restore.outputs.cache-hit && !env.ACT }}
-      env:
-        GH_TOKEN: ${{ github.token }}
-      run: |
-        gh extension install actions/gh-actions-cache
-        # "|| true" is to avoid "Error: Resource not accessible by integration" from failing the job 
-        gh actions-cache delete ${{ steps.cache-restore.outputs.cache-primary-key }} --confirm || true
-
-    - name: "Cache: Update"
-      uses: actions/cache/save@v4  # https://github.com/actions/cache/blob/main/save/README.md
-      if: ${{ always() && !cancelled() && !env.ACT }} # save cache even fails
-      with:
-        path: |
-          ~/.m2/bin
-          ~/.m2/repository
-          !~/.m2/repository/com/vegardit/maven
-          !~/.m2/repository/*SNAPSHOT*
-        key: ${{ steps.cache-restore.outputs.cache-primary-key }}
-
-
-    ##################################################
-    # Setup SSH debug session
-    ##################################################
-    - name: "SSH session for debugging: check"
-      id: DEBUG_SSH_SESSSION_CHECK
-      if: always()
-      run: |
-        set -eu
-
-        when="${{ inputs.debug-with-ssh }}"
-
-        if [[ $when == "always" ]] || case "${{ job.status }}" in
-          success)   [[ $when == "always" ]] ;;
-          cancelled) [[ $when == "on_failure_or_cancelled" ]] ;;
-          failure)   [[ $when == "on_failure"* ]] ;;
-        esac; then
-          echo "start_ssh_session=true" | tee -a "$GITHUB_OUTPUT"
-        fi
-
-
-    - name: "SSH session for debugging: start"
-      uses: mxschmitt/action-tmate@v3  # https://github.com/mxschmitt/action-tmate
-      if: always() && steps.DEBUG_SSH_SESSSION_CHECK.outputs.start_ssh_session
-      with:
-        limit-access-to-actor: ${{ inputs.debug-with-ssh-only-for-actor }}
-
-
-  ###########################################################
-  dependabot-pr-auto-merge:
-  ###########################################################
-    needs: maven-build
-    if: ${{ github.event_name == 'pull_request' && github.actor == 'dependabot[bot]' }}
-    runs-on: ubuntu-latest
-
-    concurrency: dependabot-pr-auto-merge
+    secrets:
+      SONATYPE_CENTRAL_USER:  ${{ vars.SONATYPE_CENTRAL_USER }}
+      SONATYPE_CENTRAL_TOKEN: ${{ secrets.SONATYPE_CENTRAL_TOKEN }}
+      GPG_SIGN_KEY:           ${{ secrets.GPG_SIGN_KEY }}
+      GPG_SIGN_KEY_PWD:       ${{ secrets.GPG_SIGN_KEY_PWD }}
 
     permissions:
-      contents: write
-      pull-requests: write
-
-    steps:
-    - name: Dependabot metadata
-      id: metadata
-      uses: dependabot/fetch-metadata@v2  # https://github.com/dependabot/fetch-metadata/
-      with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
-
-
-    - name: Enable auto-merge for Dependabot PRs
-      if: |
-        ${{
-          (
-            steps.dependabot-metadata.outputs.package-ecosystem == 'github-actions' && 
-            steps.metadata.outputs.update-type == 'version-update:semver-major'
-          ) || (
-            steps.dependabot-metadata.outputs.package-ecosystem == 'maven' && 
-            steps.metadata.outputs.update-type == 'version-update:semver-minor'
-          )
-        }}
-      run: |
-        gh pr merge --auto --rebase "$PR_URL"
-      env:
-        PR_URL: ${{github.event.pull_request.html_url}}
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      actions: write        # to delete action cache entries
+      contents: write       # to create releases (commit to dev branch, create tags)
+      pull-requests: write  # for dependabot auto merges

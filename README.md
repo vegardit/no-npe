@@ -1,8 +1,8 @@
 # No NPE!
 
-[![Build Status](https://github.com/vegardit/no-npe/workflows/Build/badge.svg "GitHub Actions")](https://github.com/vegardit/no-npe/actions?query=workflow%3A%22Build%22)
-[![License](https://img.shields.io/github/license/vegardit/no-npe.svg?color=blue)](LICENSE.txt)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/vegardit/no-npe/build.yml?logo=github)](https://github.com/vegardit/no-npe/actions/workflows/build.yml)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.1%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+[![License](https://img.shields.io/github/license/vegardit/no-npe.svg?color=blue)](LICENSE.txt)
 [![Maven Central](https://img.shields.io/maven-central/v/com.vegardit.no-npe/no-npe-parent)](https://central.sonatype.com/artifact/com.vegardit.no-npe/no-npe-parent)
 
 
