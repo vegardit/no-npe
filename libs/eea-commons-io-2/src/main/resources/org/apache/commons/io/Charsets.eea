@@ -19,6 +19,12 @@ UTF_8
  Ljava/nio/charset/Charset;
  L1java/nio/charset/Charset;
 
+isAlias
+ (Ljava/nio/charset/Charset;Ljava/lang/String;)Z
+ (Ljava/nio/charset/Charset;Ljava/lang/String;)Z
+isUTF8
+ (Ljava/nio/charset/Charset;)Z
+ (Ljava/nio/charset/Charset;)Z
 requiredCharsets
  ()Ljava/util/SortedMap<Ljava/lang/String;Ljava/nio/charset/Charset;>;
  ()Ljava/util/SortedMap<Ljava/lang/String;Ljava/nio/charset/Charset;>;
@@ -34,3 +40,6 @@ toCharset
 toCharset
  (Ljava/nio/charset/Charset;Ljava/nio/charset/Charset;)Ljava/nio/charset/Charset;
  (Ljava/nio/charset/Charset;Ljava/nio/charset/Charset;)Ljava/nio/charset/Charset;
+toCharsetDefault
+ (Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/nio/charset/Charset;
+ (Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/nio/charset/Charset;
