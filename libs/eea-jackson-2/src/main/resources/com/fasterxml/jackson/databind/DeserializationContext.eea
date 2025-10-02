@@ -87,7 +87,7 @@ deserializerInstance
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
 extractScalarFromObject
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Ljava/lang/Class<*>;)Ljava/lang/String;
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Ljava/lang/Class<*>;)Ljava/lang/String;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Ljava/lang/Class<*>;)L0java/lang/String;
 findClass
  (Ljava/lang/String;)Ljava/lang/Class<*>;
  (Ljava/lang/String;)Ljava/lang/Class<*>;
@@ -103,6 +103,9 @@ findContextualValueDeserializer
 findInjectableValue
  (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Object;)Ljava/lang/Object;
+findInjectableValue
+ (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Object;Ljava/lang/Boolean;Ljava/lang/Boolean;)Ljava/lang/Object;
+ (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Object;Ljava/lang/Boolean;Ljava/lang/Boolean;)Ljava/lang/Object;
 findKeyDeserializer
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/KeyDeserializer;
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/KeyDeserializer;
@@ -238,6 +241,9 @@ keyDeserializerInstance
 leaseObjectBuffer
  ()Lcom/fasterxml/jackson/databind/util/ObjectBuffer;
  ()L1com/fasterxml/jackson/databind/util/ObjectBuffer;
+missingInjectableValueException
+ (Ljava/lang/String;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonMappingException;
+ (Ljava/lang/String;Ljava/lang/Object;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonMappingException;
 missingTypeIdException
  (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonMappingException;
  (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonMappingException;

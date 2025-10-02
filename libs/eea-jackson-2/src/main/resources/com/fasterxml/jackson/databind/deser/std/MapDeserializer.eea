@@ -44,6 +44,9 @@ _valueTypeDeserializer
 <init>
  (Lcom/fasterxml/jackson/databind/deser/std/MapDeserializer;Lcom/fasterxml/jackson/databind/KeyDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/deser/NullValueProvider;Ljava/util/Set<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)V
  (Lcom/fasterxml/jackson/databind/deser/std/MapDeserializer;Lcom/fasterxml/jackson/databind/KeyDeserializer;Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/deser/NullValueProvider;Ljava/util/Set<Ljava/lang/String;>;Ljava/util/Set<Ljava/lang/String;>;)V
+_deserializeNoNullChecks
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object;
 _deserializeUsingCreator
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)L0java/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
@@ -86,9 +89,6 @@ getMapClass
 getValueInstantiator
  ()Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;
  ()L1com/fasterxml/jackson/databind/deser/ValueInstantiator; # @Inherited(com.fasterxml.jackson.databind.deser.std.StdDeserializer)
-getValueType
- ()Lcom/fasterxml/jackson/databind/JavaType;
- ()Lcom/fasterxml/jackson/databind/JavaType;
 logicalType
  ()Lcom/fasterxml/jackson/databind/type/LogicalType;
  ()L0com/fasterxml/jackson/databind/type/LogicalType; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)

@@ -195,23 +195,35 @@ _parseIntPrimitive
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)I
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)I
 _parseIntPrimitive
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)I
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)I
+_parseIntPrimitive
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)I
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)I
 _parseInteger
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Ljava/lang/Integer;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Ljava/lang/Integer;
+_parseInteger
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Integer;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Integer;
 _parseInteger
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Integer;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Integer;
 _parseLong
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Ljava/lang/Long;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;)Ljava/lang/Long;
+_parseLong
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Long;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Long;
 _parseLong
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Long;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Long;
 _parseLongPrimitive
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)J
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)J
+_parseLongPrimitive
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)J
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)J
 _parseLongPrimitive
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)J
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/String;)J
@@ -227,6 +239,9 @@ _parseString
 _reportFailedNullCoerce
  (Lcom/fasterxml/jackson/databind/DeserializationContext;ZLjava/lang/Enum<*>;Ljava/lang/String;)V
  (Lcom/fasterxml/jackson/databind/DeserializationContext;ZLjava/lang/Enum<*>;Ljava/lang/String;)V
+_streamReadConstraints
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Lcom/fasterxml/jackson/core/StreamReadConstraints;
+ (Lcom/fasterxml/jackson/databind/DeserializationContext;)Lcom/fasterxml/jackson/core/StreamReadConstraints;
 _verifyEndArrayForSingle
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)V
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)V

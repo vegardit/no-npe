@@ -1,5 +1,8 @@
 class com/fasterxml/jackson/databind/exc/MismatchedInputException
 
+_currentToken
+ (Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/core/JsonToken;
+ (Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/core/JsonToken;
 from
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/exc/MismatchedInputException;
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;)L1com/fasterxml/jackson/databind/exc/MismatchedInputException;
@@ -10,6 +13,9 @@ from
  (Lcom/fasterxml/jackson/core/JsonParser;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/exc/MismatchedInputException;
  (Lcom/fasterxml/jackson/core/JsonParser;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/exc/MismatchedInputException;
 
+_currentToken
+ Lcom/fasterxml/jackson/core/JsonToken;
+ Lcom/fasterxml/jackson/core/JsonToken;
 _targetType
  Ljava/lang/Class<*>;
  Ljava/lang/Class<*>;
@@ -26,9 +32,15 @@ _targetType
 <init>
  (Lcom/fasterxml/jackson/core/JsonParser;Ljava/lang/String;Ljava/lang/Class<*>;)V
  (Lcom/fasterxml/jackson/core/JsonParser;Ljava/lang/String;Ljava/lang/Class<*>;)V
+getCurrentToken
+ ()Lcom/fasterxml/jackson/core/JsonToken;
+ ()Lcom/fasterxml/jackson/core/JsonToken;
 getTargetType
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
+setCurrentToken
+ (Lcom/fasterxml/jackson/core/JsonToken;)Lcom/fasterxml/jackson/databind/exc/MismatchedInputException;
+ (Lcom/fasterxml/jackson/core/JsonToken;)Lcom/fasterxml/jackson/databind/exc/MismatchedInputException;
 setTargetType
  (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/exc/MismatchedInputException;
  (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/exc/MismatchedInputException;

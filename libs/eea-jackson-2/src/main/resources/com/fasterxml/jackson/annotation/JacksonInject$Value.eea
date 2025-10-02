@@ -11,6 +11,9 @@ EMPTY
 construct
  (Ljava/lang/Object;Ljava/lang/Boolean;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
  (Ljava/lang/Object;Ljava/lang/Boolean;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
+construct
+ (Ljava/lang/Object;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
+ (Ljava/lang/Object;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
 empty
  ()Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
  ()Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
@@ -24,19 +27,25 @@ from
 _id
  Ljava/lang/Object;
  Ljava/lang/Object;
+_optional
+ Ljava/lang/Boolean;
+ Ljava/lang/Boolean;
 _useInput
  Ljava/lang/Boolean;
  Ljava/lang/Boolean;
 
 <init>
- (Ljava/lang/Object;Ljava/lang/Boolean;)V
- (Ljava/lang/Object;Ljava/lang/Boolean;)V
+ (Ljava/lang/Object;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
+ (Ljava/lang/Object;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getId
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
+getOptional
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
 getUseInput
  ()Ljava/lang/Boolean;
  ()Ljava/lang/Boolean;
@@ -49,6 +58,9 @@ valueFor
 withId
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
  (Ljava/lang/Object;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
+withOptional
+ (Ljava/lang/Boolean;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
+ (Ljava/lang/Boolean;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
 withUseInput
  (Ljava/lang/Boolean;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
  (Ljava/lang/Boolean;)Lcom/fasterxml/jackson/annotation/JacksonInject$Value;
