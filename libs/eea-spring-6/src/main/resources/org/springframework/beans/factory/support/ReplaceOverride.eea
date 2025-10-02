@@ -3,6 +3,9 @@ class org/springframework/beans/factory/support/ReplaceOverride
 <init>
  (Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/lang/String;Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V
 addTypeIdentifier
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -12,6 +15,9 @@ equals
 getMethodReplacerBeanName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+getTypeIdentifiers
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
 matches
  (Ljava/lang/reflect/Method;)Z
  (Ljava/lang/reflect/Method;)Z
