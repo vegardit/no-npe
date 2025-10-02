@@ -36,6 +36,9 @@ modifyMarkerAnnotation
 reinitialize
  (Lorg/eclipse/jface/text/IDocument;)V
  (Lorg/eclipse/jface/text/IDocument;)V
+removeAnnotation
+ (Lorg/eclipse/jface/text/source/Annotation;Z)V
+ (Lorg/eclipse/jface/text/source/Annotation;Z)V
 removeAnnotations
  (Ljava/util/List<+Lorg/eclipse/jface/text/source/Annotation;>;ZZ)V
  (Ljava/util/List<+Lorg/eclipse/jface/text/source/Annotation;>;ZZ)V
@@ -45,6 +48,9 @@ removeMarkerAnnotation
 removeMarkerUpdater
  (Lorg/eclipse/ui/texteditor/IMarkerUpdater;)V
  (Lorg/eclipse/ui/texteditor/IMarkerUpdater;)V
+removePosition
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/Position;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/jface/text/Position;)V
 retrieveMarkers
  ()[Lorg/eclipse/core/resources/IMarker;
  ()[Lorg/eclipse/core/resources/IMarker;
