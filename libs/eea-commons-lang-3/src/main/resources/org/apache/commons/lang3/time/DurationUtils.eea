@@ -3,12 +3,21 @@ class org/apache/commons/lang3/time/DurationUtils
 accept
  <T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBiConsumer<Ljava/lang/Long;Ljava/lang/Integer;TT;>;Ljava/time/Duration;)V^TT;
  <T:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableBiConsumer<Ljava/lang/Long;Ljava/lang/Integer;TT;>;Ljava/time/Duration;)V^TT;
+get
+ (Ljava/lang/String;Ljava/time/temporal/TemporalUnit;J)Ljava/time/Duration;
+ (Ljava/lang/String;Ljava/time/temporal/TemporalUnit;J)Ljava/time/Duration;
+getMillis
+ (Ljava/lang/String;J)Ljava/time/Duration;
+ (Ljava/lang/String;J)Ljava/time/Duration;
 getNanosOfMiili
  (Ljava/time/Duration;)I
  (Ljava/time/Duration;)I
 getNanosOfMilli
  (Ljava/time/Duration;)I
  (Ljava/time/Duration;)I
+getSeconds
+ (Ljava/lang/String;J)Ljava/time/Duration;
+ (Ljava/lang/String;J)Ljava/time/Duration;
 isPositive
  (Ljava/time/Duration;)Z
  (Ljava/time/Duration;)Z

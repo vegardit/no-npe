@@ -195,6 +195,18 @@ JAVA_RUNTIME_VERSION
 JAVA_SECURITY_AUTH_LOGIN_CONFIG
  Ljava/lang/String;
  L1java/lang/String;
+JAVA_SECURITY_DEBUG
+ Ljava/lang/String;
+ L1java/lang/String;
+JAVA_SECURITY_KERBEROS_CONF
+ Ljava/lang/String;
+ L1java/lang/String;
+JAVA_SECURITY_KERBEROS_KDC
+ Ljava/lang/String;
+ L1java/lang/String;
+JAVA_SECURITY_KERBEROS_REALM
+ Ljava/lang/String;
+ L1java/lang/String;
 JAVA_SECURITY_MANAGER
  Ljava/lang/String;
  L1java/lang/String;
@@ -575,6 +587,9 @@ getAwtToolkit
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getBoolean
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/util/function/BooleanSupplier;)Z
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/util/function/BooleanSupplier;)Z
+getBoolean
  (Ljava/lang/String;Ljava/util/function/BooleanSupplier;)Z
  (Ljava/lang/String;Ljava/util/function/BooleanSupplier;)Z
 getComSunJndiLdapObjectTrustSerialData
@@ -646,6 +661,9 @@ getHttpsProxyHost
 getHttpsProxyPort
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+getInt
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/util/function/IntSupplier;)I
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/util/function/IntSupplier;)I
 getInt
  (Ljava/lang/String;Ljava/util/function/IntSupplier;)I
  (Ljava/lang/String;Ljava/util/function/IntSupplier;)I
@@ -1049,6 +1067,9 @@ getLineSeparator
  (Ljava/util/function/Supplier<Ljava/lang/String;>;)Ljava/lang/String;
  (Ljava/util/function/Supplier<Ljava/lang/String;>;)Ljava/lang/String;
 getLong
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/util/function/LongSupplier;)J
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/util/function/LongSupplier;)J
+getLong
  (Ljava/lang/String;Ljava/util/function/LongSupplier;)J
  (Ljava/lang/String;Ljava/util/function/LongSupplier;)J
 getNativeEncoding
@@ -1156,3 +1177,6 @@ getUserTimezone
 getUserVariant
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+isPropertySet
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z

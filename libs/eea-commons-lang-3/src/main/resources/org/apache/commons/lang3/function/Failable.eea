@@ -24,6 +24,15 @@ apply
 applyAsDouble
  <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableDoubleBinaryOperator<TE;>;DD)D
  <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableDoubleBinaryOperator<TE;>;DD)D
+applyNonNull
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;E:Ljava/lang/Throwable;>(TT;Lorg/apache/commons/lang3/function/FailableFunction<-TT;+TR;TE;>;)TR;^TE;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;E:Ljava/lang/Throwable;>(TT;Lorg/apache/commons/lang3/function/FailableFunction<-TT;+TR;TE;>;)T0R;^TE;
+applyNonNull
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;E1:Ljava/lang/Throwable;E2:Ljava/lang/Throwable;>(TT;Lorg/apache/commons/lang3/function/FailableFunction<-TT;+TU;TE1;>;Lorg/apache/commons/lang3/function/FailableFunction<-TU;+TR;TE2;>;)TR;^TE1;^TE2;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;R:Ljava/lang/Object;E1:Ljava/lang/Throwable;E2:Ljava/lang/Throwable;>(TT;Lorg/apache/commons/lang3/function/FailableFunction<-TT;+TU;TE1;>;Lorg/apache/commons/lang3/function/FailableFunction<-TU;+TR;TE2;>;)TR;^TE1;^TE2;
+applyNonNull
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;V:Ljava/lang/Object;R:Ljava/lang/Object;E1:Ljava/lang/Throwable;E2:Ljava/lang/Throwable;E3:Ljava/lang/Throwable;>(TT;Lorg/apache/commons/lang3/function/FailableFunction<-TT;+TU;TE1;>;Lorg/apache/commons/lang3/function/FailableFunction<-TU;+TV;TE2;>;Lorg/apache/commons/lang3/function/FailableFunction<-TV;+TR;TE3;>;)TR;^TE1;^TE2;^TE3;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;V:Ljava/lang/Object;R:Ljava/lang/Object;E1:Ljava/lang/Throwable;E2:Ljava/lang/Throwable;E3:Ljava/lang/Throwable;>(TT;Lorg/apache/commons/lang3/function/FailableFunction<-TT;+TU;TE1;>;Lorg/apache/commons/lang3/function/FailableFunction<-TU;+TV;TE2;>;Lorg/apache/commons/lang3/function/FailableFunction<-TV;+TR;TE3;>;)TR;^TE1;^TE2;^TE3;
 asBiConsumer
  <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableBiConsumer<TT;TU;*>;)Ljava/util/function/BiConsumer<TT;TU;>;
  <T:Ljava/lang/Object;U:Ljava/lang/Object;>(Lorg/apache/commons/lang3/function/FailableBiConsumer<TT;TU;*>;)Ljava/util/function/BiConsumer<TT;TU;>;

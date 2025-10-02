@@ -16,6 +16,9 @@ formatSplitTime
 formatTime
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+get
+ <T:Ljava/lang/Object;>(Ljava/util/function/Supplier<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Supplier<TT;>;)TT;
 getDuration
  ()Ljava/time/Duration;
  ()Ljava/time/Duration;
@@ -31,9 +34,18 @@ getStartInstant
 getStopInstant
  ()Ljava/time/Instant;
  ()Ljava/time/Instant;
+getT
+ <T:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableSupplier<TT;TE;>;)TT;
+ <T:Ljava/lang/Object;E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableSupplier<TT;TE;>;)TT;
 getTime
  (Ljava/util/concurrent/TimeUnit;)J
  (Ljava/util/concurrent/TimeUnit;)J
+run
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+runT
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableRunnable<TE;>;)V
+ <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableRunnable<TE;>;)V
 toSplitString
  ()Ljava/lang/String;
  ()L1java/lang/String;
