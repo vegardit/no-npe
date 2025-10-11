@@ -1,0 +1,23 @@
+class javax/swing/text/StringContent
+
+createPosition
+ (I)Ljavax/swing/text/Position;
+ (I)L1javax/swing/text/Position; # @Inherited(javax.swing.text.AbstractDocument$Content)
+getChars
+ (IILjavax/swing/text/Segment;)V
+ (IILjavax/swing/text/Segment;)V
+getPositionsInRange
+ (Ljava/util/Vector;II)Ljava/util/Vector;
+ (Ljava/util/Vector;II)Ljava/util/Vector;
+getString
+ (II)Ljava/lang/String;
+ (II)L1java/lang/String;
+insertString
+ (ILjava/lang/String;)Ljavax/swing/undo/UndoableEdit;
+ (ILjava/lang/String;)L1javax/swing/undo/UndoableEdit;
+remove
+ (II)Ljavax/swing/undo/UndoableEdit;
+ (II)L1javax/swing/undo/UndoableEdit;
+updateUndoPositions
+ (Ljava/util/Vector;)V
+ (Ljava/util/Vector;)V

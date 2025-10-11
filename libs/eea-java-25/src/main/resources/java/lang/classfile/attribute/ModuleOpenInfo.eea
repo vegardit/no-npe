@@ -1,0 +1,39 @@
+class java/lang/classfile/attribute/ModuleOpenInfo
+
+of
+ (Ljava/lang/classfile/constantpool/PackageEntry;ILjava/util/List<Ljava/lang/classfile/constantpool/ModuleEntry;>;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+ (Ljava/lang/classfile/constantpool/PackageEntry;ILjava/util/List<Ljava/lang/classfile/constantpool/ModuleEntry;>;)L1java/lang/classfile/attribute/ModuleOpenInfo;
+of
+ (Ljava/lang/classfile/constantpool/PackageEntry;I[Ljava/lang/classfile/constantpool/ModuleEntry;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+ (Ljava/lang/classfile/constantpool/PackageEntry;I[Ljava/lang/classfile/constantpool/ModuleEntry;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+of
+ (Ljava/lang/classfile/constantpool/PackageEntry;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/util/List<Ljava/lang/classfile/constantpool/ModuleEntry;>;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+ (Ljava/lang/classfile/constantpool/PackageEntry;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/util/List<Ljava/lang/classfile/constantpool/ModuleEntry;>;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+of
+ (Ljava/lang/classfile/constantpool/PackageEntry;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;[Ljava/lang/classfile/constantpool/ModuleEntry;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+ (Ljava/lang/classfile/constantpool/PackageEntry;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;[Ljava/lang/classfile/constantpool/ModuleEntry;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+of
+ (Ljava/lang/constant/PackageDesc;ILjava/util/List<Ljava/lang/constant/ModuleDesc;>;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+ (Ljava/lang/constant/PackageDesc;ILjava/util/List<Ljava/lang/constant/ModuleDesc;>;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+of
+ (Ljava/lang/constant/PackageDesc;I[Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+ (Ljava/lang/constant/PackageDesc;I[Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+of
+ (Ljava/lang/constant/PackageDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/util/List<Ljava/lang/constant/ModuleDesc;>;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+ (Ljava/lang/constant/PackageDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/util/List<Ljava/lang/constant/ModuleDesc;>;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+of
+ (Ljava/lang/constant/PackageDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;[Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+ (Ljava/lang/constant/PackageDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;[Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/attribute/ModuleOpenInfo;
+
+has
+ (Ljava/lang/reflect/AccessFlag;)Z
+ (Ljava/lang/reflect/AccessFlag;)Z
+openedPackage
+ ()Ljava/lang/classfile/constantpool/PackageEntry;
+ ()Ljava/lang/classfile/constantpool/PackageEntry;
+opensFlags
+ ()Ljava/util/Set<Ljava/lang/reflect/AccessFlag;>;
+ ()Ljava/util/Set<Ljava/lang/reflect/AccessFlag;>;
+opensTo
+ ()Ljava/util/List<Ljava/lang/classfile/constantpool/ModuleEntry;>;
+ ()Ljava/util/List<Ljava/lang/classfile/constantpool/ModuleEntry;>;

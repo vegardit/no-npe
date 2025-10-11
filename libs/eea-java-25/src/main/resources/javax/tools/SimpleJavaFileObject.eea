@@ -1,0 +1,52 @@
+class javax/tools/SimpleJavaFileObject
+
+forSource
+ (Ljava/net/URI;Ljava/lang/String;)Ljavax/tools/JavaFileObject;
+ (Ljava/net/URI;Ljava/lang/String;)L1javax/tools/JavaFileObject;
+
+kind
+ Ljavax/tools/JavaFileObject$Kind;
+ Ljavax/tools/JavaFileObject$Kind;
+uri
+ Ljava/net/URI;
+ Ljava/net/URI;
+
+<init>
+ (Ljava/net/URI;Ljavax/tools/JavaFileObject$Kind;)V
+ (Ljava/net/URI;Ljavax/tools/JavaFileObject$Kind;)V
+getAccessLevel
+ ()Ljavax/lang/model/element/Modifier;
+ ()L0javax/lang/model/element/Modifier;
+getCharContent
+ (Z)Ljava/lang/CharSequence;
+ (Z)Ljava/lang/CharSequence;
+getKind
+ ()Ljavax/tools/JavaFileObject$Kind;
+ ()Ljavax/tools/JavaFileObject$Kind;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getNestingKind
+ ()Ljavax/lang/model/element/NestingKind;
+ ()L0javax/lang/model/element/NestingKind;
+isNameCompatible
+ (Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;)Z
+ (Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;)Z
+openInputStream
+ ()Ljava/io/InputStream;
+ ()L1java/io/InputStream; # @Inherited(javax.tools.FileObject)
+openOutputStream
+ ()Ljava/io/OutputStream;
+ ()L1java/io/OutputStream; # @Inherited(javax.tools.FileObject)
+openReader
+ (Z)Ljava/io/Reader;
+ (Z)L1java/io/Reader;
+openWriter
+ ()Ljava/io/Writer;
+ ()L1java/io/Writer; # @Inherited(javax.tools.FileObject)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+toUri
+ ()Ljava/net/URI;
+ ()L1java/net/URI; # @Inherited(javax.tools.FileObject)

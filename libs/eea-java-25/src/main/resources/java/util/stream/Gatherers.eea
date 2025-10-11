@@ -1,0 +1,17 @@
+class java/util/stream/Gatherers
+
+fold
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TR;>;Ljava/util/function/BiFunction<-TR;-TT;+TR;>;)Ljava/util/stream/Gatherer<TT;*TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TR;>;Ljava/util/function/BiFunction<-TR;-TT;+TR;>;)Ljava/util/stream/Gatherer<TT;*TR;>;
+mapConcurrent
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(ILjava/util/function/Function<-TT;+TR;>;)Ljava/util/stream/Gatherer<TT;*TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(ILjava/util/function/Function<-TT;+TR;>;)Ljava/util/stream/Gatherer<TT;*TR;>;
+scan
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TR;>;Ljava/util/function/BiFunction<-TR;-TT;+TR;>;)Ljava/util/stream/Gatherer<TT;*TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TR;>;Ljava/util/function/BiFunction<-TR;-TT;+TR;>;)Ljava/util/stream/Gatherer<TT;*TR;>;
+windowFixed
+ <TR:Ljava/lang/Object;>(I)Ljava/util/stream/Gatherer<TTR;*Ljava/util/List<TTR;>;>;
+ <TR:Ljava/lang/Object;>(I)Ljava/util/stream/Gatherer<TTR;*Ljava/util/List<TTR;>;>;
+windowSliding
+ <TR:Ljava/lang/Object;>(I)Ljava/util/stream/Gatherer<TTR;*Ljava/util/List<TTR;>;>;
+ <TR:Ljava/lang/Object;>(I)Ljava/util/stream/Gatherer<TTR;*Ljava/util/List<TTR;>;>;

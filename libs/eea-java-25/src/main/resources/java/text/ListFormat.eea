@@ -1,0 +1,42 @@
+class java/text/ListFormat
+
+getAvailableLocales
+ ()[Ljava/util/Locale;
+ ()[Ljava/util/Locale;
+getInstance
+ ()Ljava/text/ListFormat;
+ ()L1java/text/ListFormat;
+getInstance
+ (Ljava/util/Locale;Ljava/text/ListFormat$Type;Ljava/text/ListFormat$Style;)Ljava/text/ListFormat;
+ (Ljava/util/Locale;Ljava/text/ListFormat$Type;Ljava/text/ListFormat$Style;)L1java/text/ListFormat;
+getInstance
+ ([Ljava/lang/String;)Ljava/text/ListFormat;
+ ([Ljava/lang/String;)Ljava/text/ListFormat;
+
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+format
+ (Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
+ (L0java/lang/Object;L1java/lang/StringBuffer;L1java/text/FieldPosition;)L1java/lang/StringBuffer; # @Inherited(java.text.Format)
+format
+ (Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;
+ (Ljava/util/List<Ljava/lang/String;>;)L1java/lang/String;
+formatToCharacterIterator
+ (Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
+ (L1java/lang/Object;)L1java/text/AttributedCharacterIterator; # @Inherited(java.text.Format)
+getLocale
+ ()Ljava/util/Locale;
+ ()Ljava/util/Locale;
+getPatterns
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+parse
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+parseObject
+ (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;
+ (Ljava/lang/String;Ljava/text/ParsePosition;)L0java/lang/Object; # @Overrides(java.text.Format)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

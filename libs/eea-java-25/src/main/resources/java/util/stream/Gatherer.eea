@@ -1,0 +1,50 @@
+class java/util/stream/Gatherer
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>
+
+defaultCombiner
+ <A:Ljava/lang/Object;>()Ljava/util/function/BinaryOperator<TA;>;
+ <A:Ljava/lang/Object;>()Ljava/util/function/BinaryOperator<TA;>;
+defaultFinisher
+ <A:Ljava/lang/Object;R:Ljava/lang/Object;>()Ljava/util/function/BiConsumer<TA;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;
+ <A:Ljava/lang/Object;R:Ljava/lang/Object;>()Ljava/util/function/BiConsumer<TA;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;
+defaultInitializer
+ <A:Ljava/lang/Object;>()Ljava/util/function/Supplier<TA;>;
+ <A:Ljava/lang/Object;>()Ljava/util/function/Supplier<TA;>;
+of
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TA;>;Ljava/util/stream/Gatherer$Integrator<TA;TT;TR;>;Ljava/util/function/BinaryOperator<TA;>;Ljava/util/function/BiConsumer<TA;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;)Ljava/util/stream/Gatherer<TT;TA;TR;>;
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TA;>;Ljava/util/stream/Gatherer$Integrator<TA;TT;TR;>;Ljava/util/function/BinaryOperator<TA;>;Ljava/util/function/BiConsumer<TA;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;)L1java/util/stream/Gatherer<TT;TA;TR;>;
+of
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Gatherer$Integrator<Ljava/lang/Void;TT;TR;>;)Ljava/util/stream/Gatherer<TT;Ljava/lang/Void;TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Gatherer$Integrator<Ljava/lang/Void;TT;TR;>;)Ljava/util/stream/Gatherer<TT;Ljava/lang/Void;TR;>;
+of
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Gatherer$Integrator<Ljava/lang/Void;TT;TR;>;Ljava/util/function/BiConsumer<Ljava/lang/Void;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;)Ljava/util/stream/Gatherer<TT;Ljava/lang/Void;TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Gatherer$Integrator<Ljava/lang/Void;TT;TR;>;Ljava/util/function/BiConsumer<Ljava/lang/Void;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;)Ljava/util/stream/Gatherer<TT;Ljava/lang/Void;TR;>;
+ofSequential
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TA;>;Ljava/util/stream/Gatherer$Integrator<TA;TT;TR;>;)Ljava/util/stream/Gatherer<TT;TA;TR;>;
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TA;>;Ljava/util/stream/Gatherer$Integrator<TA;TT;TR;>;)Ljava/util/stream/Gatherer<TT;TA;TR;>;
+ofSequential
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TA;>;Ljava/util/stream/Gatherer$Integrator<TA;TT;TR;>;Ljava/util/function/BiConsumer<TA;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;)Ljava/util/stream/Gatherer<TT;TA;TR;>;
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Supplier<TA;>;Ljava/util/stream/Gatherer$Integrator<TA;TT;TR;>;Ljava/util/function/BiConsumer<TA;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;)Ljava/util/stream/Gatherer<TT;TA;TR;>;
+ofSequential
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Gatherer$Integrator<Ljava/lang/Void;TT;TR;>;)Ljava/util/stream/Gatherer<TT;Ljava/lang/Void;TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Gatherer$Integrator<Ljava/lang/Void;TT;TR;>;)Ljava/util/stream/Gatherer<TT;Ljava/lang/Void;TR;>;
+ofSequential
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Gatherer$Integrator<Ljava/lang/Void;TT;TR;>;Ljava/util/function/BiConsumer<Ljava/lang/Void;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;)Ljava/util/stream/Gatherer<TT;Ljava/lang/Void;TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/stream/Gatherer$Integrator<Ljava/lang/Void;TT;TR;>;Ljava/util/function/BiConsumer<Ljava/lang/Void;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;)Ljava/util/stream/Gatherer<TT;Ljava/lang/Void;TR;>;
+
+andThen
+ <RR:Ljava/lang/Object;>(Ljava/util/stream/Gatherer<-TR;*+TRR;>;)Ljava/util/stream/Gatherer<TT;*TRR;>;
+ <RR:Ljava/lang/Object;>(Ljava/util/stream/Gatherer<-TR;*+TRR;>;)Ljava/util/stream/Gatherer<TT;*TRR;>;
+combiner
+ ()Ljava/util/function/BinaryOperator<TA;>;
+ ()Ljava/util/function/BinaryOperator<TA;>;
+finisher
+ ()Ljava/util/function/BiConsumer<TA;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;
+ ()Ljava/util/function/BiConsumer<TA;Ljava/util/stream/Gatherer$Downstream<-TR;>;>;
+initializer
+ ()Ljava/util/function/Supplier<TA;>;
+ ()Ljava/util/function/Supplier<TA;>;
+integrator
+ ()Ljava/util/stream/Gatherer$Integrator<TA;TT;TR;>;
+ ()Ljava/util/stream/Gatherer$Integrator<TA;TT;TR;>;

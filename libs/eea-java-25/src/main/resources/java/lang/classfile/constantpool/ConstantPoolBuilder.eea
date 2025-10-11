@@ -1,0 +1,120 @@
+class java/lang/classfile/constantpool/ConstantPoolBuilder
+
+of
+ ()Ljava/lang/classfile/constantpool/ConstantPoolBuilder;
+ ()L1java/lang/classfile/constantpool/ConstantPoolBuilder;
+of
+ (Ljava/lang/classfile/ClassModel;)Ljava/lang/classfile/constantpool/ConstantPoolBuilder;
+ (Ljava/lang/classfile/ClassModel;)L1java/lang/classfile/constantpool/ConstantPoolBuilder;
+
+bsmEntry
+ (Ljava/lang/classfile/constantpool/MethodHandleEntry;Ljava/util/List<Ljava/lang/classfile/constantpool/LoadableConstantEntry;>;)Ljava/lang/classfile/BootstrapMethodEntry;
+ (Ljava/lang/classfile/constantpool/MethodHandleEntry;Ljava/util/List<Ljava/lang/classfile/constantpool/LoadableConstantEntry;>;)Ljava/lang/classfile/BootstrapMethodEntry;
+bsmEntry
+ (Ljava/lang/constant/DirectMethodHandleDesc;Ljava/util/List<Ljava/lang/constant/ConstantDesc;>;)Ljava/lang/classfile/BootstrapMethodEntry;
+ (Ljava/lang/constant/DirectMethodHandleDesc;Ljava/util/List<Ljava/lang/constant/ConstantDesc;>;)Ljava/lang/classfile/BootstrapMethodEntry;
+canWriteDirect
+ (Ljava/lang/classfile/constantpool/ConstantPool;)Z
+ (Ljava/lang/classfile/constantpool/ConstantPool;)Z
+classEntry
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/ClassEntry;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/ClassEntry;
+classEntry
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/constantpool/ClassEntry;
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/constantpool/ClassEntry;
+constantDynamicEntry
+ (Ljava/lang/classfile/BootstrapMethodEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/ConstantDynamicEntry;
+ (Ljava/lang/classfile/BootstrapMethodEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/ConstantDynamicEntry;
+constantDynamicEntry
+ (Ljava/lang/constant/DynamicConstantDesc<*>;)Ljava/lang/classfile/constantpool/ConstantDynamicEntry;
+ (Ljava/lang/constant/DynamicConstantDesc<*>;)Ljava/lang/classfile/constantpool/ConstantDynamicEntry;
+constantValueEntry
+ (Ljava/lang/constant/ConstantDesc;)Ljava/lang/classfile/constantpool/ConstantValueEntry;
+ (Ljava/lang/constant/ConstantDesc;)Ljava/lang/classfile/constantpool/ConstantValueEntry;
+doubleEntry
+ (D)Ljava/lang/classfile/constantpool/DoubleEntry;
+ (D)Ljava/lang/classfile/constantpool/DoubleEntry;
+fieldRefEntry
+ (Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/FieldRefEntry;
+ (Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/FieldRefEntry;
+fieldRefEntry
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/constantpool/FieldRefEntry;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/constantpool/FieldRefEntry;
+floatEntry
+ (F)Ljava/lang/classfile/constantpool/FloatEntry;
+ (F)Ljava/lang/classfile/constantpool/FloatEntry;
+intEntry
+ (I)Ljava/lang/classfile/constantpool/IntegerEntry;
+ (I)Ljava/lang/classfile/constantpool/IntegerEntry;
+interfaceMethodRefEntry
+ (Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;
+ (Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;
+interfaceMethodRefEntry
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;
+invokeDynamicEntry
+ (Ljava/lang/classfile/BootstrapMethodEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/InvokeDynamicEntry;
+ (Ljava/lang/classfile/BootstrapMethodEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/InvokeDynamicEntry;
+invokeDynamicEntry
+ (Ljava/lang/constant/DynamicCallSiteDesc;)Ljava/lang/classfile/constantpool/InvokeDynamicEntry;
+ (Ljava/lang/constant/DynamicCallSiteDesc;)Ljava/lang/classfile/constantpool/InvokeDynamicEntry;
+loadableConstantEntry
+ (Ljava/lang/constant/ConstantDesc;)Ljava/lang/classfile/constantpool/LoadableConstantEntry;
+ (Ljava/lang/constant/ConstantDesc;)Ljava/lang/classfile/constantpool/LoadableConstantEntry;
+longEntry
+ (J)Ljava/lang/classfile/constantpool/LongEntry;
+ (J)Ljava/lang/classfile/constantpool/LongEntry;
+methodHandleEntry
+ (ILjava/lang/classfile/constantpool/MemberRefEntry;)Ljava/lang/classfile/constantpool/MethodHandleEntry;
+ (ILjava/lang/classfile/constantpool/MemberRefEntry;)Ljava/lang/classfile/constantpool/MethodHandleEntry;
+methodHandleEntry
+ (Ljava/lang/constant/DirectMethodHandleDesc;)Ljava/lang/classfile/constantpool/MethodHandleEntry;
+ (Ljava/lang/constant/DirectMethodHandleDesc;)Ljava/lang/classfile/constantpool/MethodHandleEntry;
+methodRefEntry
+ (Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/MethodRefEntry;
+ (Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/NameAndTypeEntry;)Ljava/lang/classfile/constantpool/MethodRefEntry;
+methodRefEntry
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/MethodRefEntry;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/MethodRefEntry;
+methodTypeEntry
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/MethodTypeEntry;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/MethodTypeEntry;
+methodTypeEntry
+ (Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/MethodTypeEntry;
+ (Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/MethodTypeEntry;
+moduleEntry
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/ModuleEntry;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/ModuleEntry;
+moduleEntry
+ (Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/constantpool/ModuleEntry;
+ (Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/constantpool/ModuleEntry;
+nameAndTypeEntry
+ (Ljava/lang/String;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/constantpool/NameAndTypeEntry;
+ (Ljava/lang/String;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/constantpool/NameAndTypeEntry;
+nameAndTypeEntry
+ (Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/NameAndTypeEntry;
+ (Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/NameAndTypeEntry;
+nameAndTypeEntry
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/NameAndTypeEntry;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/NameAndTypeEntry;
+packageEntry
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/PackageEntry;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/PackageEntry;
+packageEntry
+ (Ljava/lang/constant/PackageDesc;)Ljava/lang/classfile/constantpool/PackageEntry;
+ (Ljava/lang/constant/PackageDesc;)Ljava/lang/classfile/constantpool/PackageEntry;
+stringEntry
+ (Ljava/lang/String;)Ljava/lang/classfile/constantpool/StringEntry;
+ (Ljava/lang/String;)Ljava/lang/classfile/constantpool/StringEntry;
+stringEntry
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/StringEntry;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/constantpool/StringEntry;
+utf8Entry
+ (Ljava/lang/String;)Ljava/lang/classfile/constantpool/Utf8Entry;
+ (Ljava/lang/String;)Ljava/lang/classfile/constantpool/Utf8Entry;
+utf8Entry
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/constantpool/Utf8Entry;
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/constantpool/Utf8Entry;
+utf8Entry
+ (Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/Utf8Entry;
+ (Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/constantpool/Utf8Entry;

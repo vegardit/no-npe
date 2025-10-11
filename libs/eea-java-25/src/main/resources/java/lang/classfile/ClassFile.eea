@@ -1,0 +1,60 @@
+class java/lang/classfile/ClassFile
+
+of
+ ()Ljava/lang/classfile/ClassFile;
+ ()Ljava/lang/classfile/ClassFile;
+of
+ ([Ljava/lang/classfile/ClassFile$Option;)Ljava/lang/classfile/ClassFile;
+ ([Ljava/lang/classfile/ClassFile$Option;)Ljava/lang/classfile/ClassFile;
+
+build
+ (Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/ConstantPoolBuilder;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)[B
+ (Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/ConstantPoolBuilder;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)[B
+build
+ (Ljava/lang/constant/ClassDesc;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)[B
+ (Ljava/lang/constant/ClassDesc;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)[B
+buildModule
+ (Ljava/lang/classfile/attribute/ModuleAttribute;)[B
+ (Ljava/lang/classfile/attribute/ModuleAttribute;)[B
+buildModule
+ (Ljava/lang/classfile/attribute/ModuleAttribute;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)[B
+ (Ljava/lang/classfile/attribute/ModuleAttribute;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)[B
+buildModuleTo
+ (Ljava/nio/file/Path;Ljava/lang/classfile/attribute/ModuleAttribute;)V
+ (Ljava/nio/file/Path;Ljava/lang/classfile/attribute/ModuleAttribute;)V
+buildModuleTo
+ (Ljava/nio/file/Path;Ljava/lang/classfile/attribute/ModuleAttribute;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)V
+ (Ljava/nio/file/Path;Ljava/lang/classfile/attribute/ModuleAttribute;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)V
+buildTo
+ (Ljava/nio/file/Path;Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/ConstantPoolBuilder;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)V
+ (Ljava/nio/file/Path;Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/constantpool/ConstantPoolBuilder;Ljava/util/function/Consumer<-Ljava/lang/classfile/ClassBuilder;>;)V
+buildTo
+ (Ljava/nio/file/Path;Ljava/lang/constant/ClassDesc;Ljava/util/function/Consumer<Ljava/lang/classfile/ClassBuilder;>;)V
+ (Ljava/nio/file/Path;Ljava/lang/constant/ClassDesc;Ljava/util/function/Consumer<Ljava/lang/classfile/ClassBuilder;>;)V
+parse
+ (Ljava/nio/file/Path;)Ljava/lang/classfile/ClassModel;
+ (Ljava/nio/file/Path;)Ljava/lang/classfile/ClassModel;
+parse
+ ([B)Ljava/lang/classfile/ClassModel;
+ ([B)Ljava/lang/classfile/ClassModel;
+transformClass
+ (Ljava/lang/classfile/ClassModel;Ljava/lang/classfile/ClassTransform;)[B
+ (Ljava/lang/classfile/ClassModel;Ljava/lang/classfile/ClassTransform;)[B
+transformClass
+ (Ljava/lang/classfile/ClassModel;Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/ClassTransform;)[B
+ (Ljava/lang/classfile/ClassModel;Ljava/lang/classfile/constantpool/ClassEntry;Ljava/lang/classfile/ClassTransform;)[B
+transformClass
+ (Ljava/lang/classfile/ClassModel;Ljava/lang/constant/ClassDesc;Ljava/lang/classfile/ClassTransform;)[B
+ (Ljava/lang/classfile/ClassModel;Ljava/lang/constant/ClassDesc;Ljava/lang/classfile/ClassTransform;)[B
+verify
+ (Ljava/lang/classfile/ClassModel;)Ljava/util/List<Ljava/lang/VerifyError;>;
+ (Ljava/lang/classfile/ClassModel;)Ljava/util/List<Ljava/lang/VerifyError;>;
+verify
+ (Ljava/nio/file/Path;)Ljava/util/List<Ljava/lang/VerifyError;>;
+ (Ljava/nio/file/Path;)Ljava/util/List<Ljava/lang/VerifyError;>;
+verify
+ ([B)Ljava/util/List<Ljava/lang/VerifyError;>;
+ ([B)Ljava/util/List<Ljava/lang/VerifyError;>;
+withOptions
+ ([Ljava/lang/classfile/ClassFile$Option;)Ljava/lang/classfile/ClassFile;
+ ([Ljava/lang/classfile/ClassFile$Option;)Ljava/lang/classfile/ClassFile;

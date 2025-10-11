@@ -1,0 +1,75 @@
+class java/lang/foreign/SegmentAllocator
+
+prefixAllocator
+ (Ljava/lang/foreign/MemorySegment;)Ljava/lang/foreign/SegmentAllocator;
+ (Ljava/lang/foreign/MemorySegment;)Ljava/lang/foreign/SegmentAllocator;
+slicingAllocator
+ (Ljava/lang/foreign/MemorySegment;)Ljava/lang/foreign/SegmentAllocator;
+ (Ljava/lang/foreign/MemorySegment;)L1java/lang/foreign/SegmentAllocator;
+
+allocate
+ (J)Ljava/lang/foreign/MemorySegment;
+ (J)Ljava/lang/foreign/MemorySegment;
+allocate
+ (JJ)Ljava/lang/foreign/MemorySegment;
+ (JJ)Ljava/lang/foreign/MemorySegment;
+allocate
+ (Ljava/lang/foreign/MemoryLayout;)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/MemoryLayout;)Ljava/lang/foreign/MemorySegment;
+allocate
+ (Ljava/lang/foreign/MemoryLayout;J)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/MemoryLayout;J)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/String;)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/String;)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/AddressLayout;Ljava/lang/foreign/MemorySegment;)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/AddressLayout;Ljava/lang/foreign/MemorySegment;)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfByte;B)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfByte;B)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfByte;[B)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfByte;[B)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfChar;C)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfChar;C)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfChar;[C)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfChar;[C)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfDouble;D)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfDouble;D)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfDouble;[D)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfDouble;[D)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfFloat;F)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfFloat;F)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfFloat;[F)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfFloat;[F)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfInt;I)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfInt;I)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfInt;[I)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfInt;[I)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfLong;J)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfLong;J)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfLong;[J)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfLong;[J)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfShort;S)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfShort;S)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout$OfShort;[S)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout$OfShort;[S)Ljava/lang/foreign/MemorySegment;
+allocateFrom
+ (Ljava/lang/foreign/ValueLayout;Ljava/lang/foreign/MemorySegment;Ljava/lang/foreign/ValueLayout;JJ)Ljava/lang/foreign/MemorySegment;
+ (Ljava/lang/foreign/ValueLayout;Ljava/lang/foreign/MemorySegment;Ljava/lang/foreign/ValueLayout;JJ)Ljava/lang/foreign/MemorySegment;

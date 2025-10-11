@@ -1,0 +1,53 @@
+class java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder
+
+exports
+ (Ljava/lang/classfile/attribute/ModuleExportInfo;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/classfile/attribute/ModuleExportInfo;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+exports
+ (Ljava/lang/constant/PackageDesc;I[Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/constant/PackageDesc;I[Ljava/lang/constant/ModuleDesc;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+exports
+ (Ljava/lang/constant/PackageDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;[Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/constant/PackageDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;[Ljava/lang/constant/ModuleDesc;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+moduleFlags
+ (I)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (I)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+moduleFlags
+ ([Ljava/lang/reflect/AccessFlag;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ ([Ljava/lang/reflect/AccessFlag;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+moduleName
+ (Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/constant/ModuleDesc;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+moduleVersion
+ (Ljava/lang/String;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/String;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+opens
+ (Ljava/lang/classfile/attribute/ModuleOpenInfo;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/classfile/attribute/ModuleOpenInfo;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+opens
+ (Ljava/lang/constant/PackageDesc;I[Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/constant/PackageDesc;I[Ljava/lang/constant/ModuleDesc;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+opens
+ (Ljava/lang/constant/PackageDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;[Ljava/lang/constant/ModuleDesc;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/constant/PackageDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;[Ljava/lang/constant/ModuleDesc;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+provides
+ (Ljava/lang/classfile/attribute/ModuleProvideInfo;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/classfile/attribute/ModuleProvideInfo;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+provides
+ (Ljava/lang/constant/ClassDesc;[Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/constant/ClassDesc;[Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+requires
+ (Ljava/lang/classfile/attribute/ModuleRequireInfo;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/classfile/attribute/ModuleRequireInfo;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+requires
+ (Ljava/lang/constant/ModuleDesc;ILjava/lang/String;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/constant/ModuleDesc;ILjava/lang/String;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+requires
+ (Ljava/lang/constant/ModuleDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/lang/String;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/constant/ModuleDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/lang/String;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+uses
+ (Ljava/lang/classfile/constantpool/ClassEntry;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/classfile/constantpool/ClassEntry;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+uses
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;
+ (Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/attribute/ModuleAttribute$ModuleAttributeBuilder;

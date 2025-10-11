@@ -3,12 +3,12 @@
 # SPDX-License-Identifier: EPL-2.0
 # SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
 #
-# https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions
+# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
 name: Build
 
-on:
+on:  # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
   schedule:
-    # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
+    # https://docs.github.com/en/actions/reference/choosing-when-your-workflow-runs/events-that-trigger-workflows
     - cron: "0 15 1 * *"
   push:
     branches-ignore:  # build all branches except:
@@ -37,7 +37,7 @@ on:
     - ".github/workflows/stale.yml"
     - ".github/workflows/update-eea-files.yml"
   workflow_dispatch:
-    # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch
+    # https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_dispatch
     inputs:
       extra-maven-args:
         description: "Additional command-line arguments to append to all Maven invocations"
@@ -62,7 +62,7 @@ jobs:
       timeout-minutes: 10
 
       compile-jdk: 11
-      extra-jdks: 17,21
+      extra-jdks: 17,21,25
 
       extra-maven-args: ${{ inputs.extra-maven-args }}
       set-jdk-version-properties: false

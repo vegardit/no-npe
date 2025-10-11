@@ -1,0 +1,90 @@
+class java/lang/classfile/TypeAnnotation$TargetInfo
+
+of
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;)Ljava/lang/classfile/TypeAnnotation$EmptyTarget;
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;)L1java/lang/classfile/TypeAnnotation$EmptyTarget;
+ofCastExpr
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ofClassExtends
+ (I)Ljava/lang/classfile/TypeAnnotation$SupertypeTarget;
+ (I)L1java/lang/classfile/TypeAnnotation$SupertypeTarget;
+ofClassTypeParameter
+ (I)Ljava/lang/classfile/TypeAnnotation$TypeParameterTarget;
+ (I)Ljava/lang/classfile/TypeAnnotation$TypeParameterTarget;
+ofClassTypeParameterBound
+ (II)Ljava/lang/classfile/TypeAnnotation$TypeParameterBoundTarget;
+ (II)Ljava/lang/classfile/TypeAnnotation$TypeParameterBoundTarget;
+ofConstructorInvocationTypeArgument
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ofConstructorReference
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/TypeAnnotation$OffsetTarget;
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/TypeAnnotation$OffsetTarget;
+ofConstructorReferenceTypeArgument
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ofExceptionParameter
+ (I)Ljava/lang/classfile/TypeAnnotation$CatchTarget;
+ (I)L1java/lang/classfile/TypeAnnotation$CatchTarget;
+ofField
+ ()Ljava/lang/classfile/TypeAnnotation$EmptyTarget;
+ ()Ljava/lang/classfile/TypeAnnotation$EmptyTarget;
+ofInstanceofExpr
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/TypeAnnotation$OffsetTarget;
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/TypeAnnotation$OffsetTarget;
+ofLocalVariable
+ (Ljava/util/List<Ljava/lang/classfile/TypeAnnotation$LocalVarTargetInfo;>;)Ljava/lang/classfile/TypeAnnotation$LocalVarTarget;
+ (Ljava/util/List<Ljava/lang/classfile/TypeAnnotation$LocalVarTargetInfo;>;)Ljava/lang/classfile/TypeAnnotation$LocalVarTarget;
+ofMethodFormalParameter
+ (I)Ljava/lang/classfile/TypeAnnotation$FormalParameterTarget;
+ (I)L1java/lang/classfile/TypeAnnotation$FormalParameterTarget;
+ofMethodInvocationTypeArgument
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ofMethodReceiver
+ ()Ljava/lang/classfile/TypeAnnotation$EmptyTarget;
+ ()Ljava/lang/classfile/TypeAnnotation$EmptyTarget;
+ofMethodReference
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/TypeAnnotation$OffsetTarget;
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/TypeAnnotation$OffsetTarget;
+ofMethodReferenceTypeArgument
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ (Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ofMethodReturn
+ ()Ljava/lang/classfile/TypeAnnotation$EmptyTarget;
+ ()Ljava/lang/classfile/TypeAnnotation$EmptyTarget;
+ofMethodTypeParameter
+ (I)Ljava/lang/classfile/TypeAnnotation$TypeParameterTarget;
+ (I)Ljava/lang/classfile/TypeAnnotation$TypeParameterTarget;
+ofMethodTypeParameterBound
+ (II)Ljava/lang/classfile/TypeAnnotation$TypeParameterBoundTarget;
+ (II)Ljava/lang/classfile/TypeAnnotation$TypeParameterBoundTarget;
+ofNewExpr
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/TypeAnnotation$OffsetTarget;
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/TypeAnnotation$OffsetTarget;
+ofOffset
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;Ljava/lang/classfile/Label;)Ljava/lang/classfile/TypeAnnotation$OffsetTarget;
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;Ljava/lang/classfile/Label;)L1java/lang/classfile/TypeAnnotation$OffsetTarget;
+ofResourceVariable
+ (Ljava/util/List<Ljava/lang/classfile/TypeAnnotation$LocalVarTargetInfo;>;)Ljava/lang/classfile/TypeAnnotation$LocalVarTarget;
+ (Ljava/util/List<Ljava/lang/classfile/TypeAnnotation$LocalVarTargetInfo;>;)Ljava/lang/classfile/TypeAnnotation$LocalVarTarget;
+ofThrows
+ (I)Ljava/lang/classfile/TypeAnnotation$ThrowsTarget;
+ (I)L1java/lang/classfile/TypeAnnotation$ThrowsTarget;
+ofTypeArgument
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;Ljava/lang/classfile/Label;I)Ljava/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;Ljava/lang/classfile/Label;I)L1java/lang/classfile/TypeAnnotation$TypeArgumentTarget;
+ofTypeParameter
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;I)Ljava/lang/classfile/TypeAnnotation$TypeParameterTarget;
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;I)L1java/lang/classfile/TypeAnnotation$TypeParameterTarget;
+ofTypeParameterBound
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;II)Ljava/lang/classfile/TypeAnnotation$TypeParameterBoundTarget;
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;II)L1java/lang/classfile/TypeAnnotation$TypeParameterBoundTarget;
+ofVariable
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;Ljava/util/List<Ljava/lang/classfile/TypeAnnotation$LocalVarTargetInfo;>;)Ljava/lang/classfile/TypeAnnotation$LocalVarTarget;
+ (Ljava/lang/classfile/TypeAnnotation$TargetType;Ljava/util/List<Ljava/lang/classfile/TypeAnnotation$LocalVarTargetInfo;>;)L1java/lang/classfile/TypeAnnotation$LocalVarTarget;
+
+targetType
+ ()Ljava/lang/classfile/TypeAnnotation$TargetType;
+ ()Ljava/lang/classfile/TypeAnnotation$TargetType;

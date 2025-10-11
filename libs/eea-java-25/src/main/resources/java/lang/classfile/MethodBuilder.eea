@@ -1,0 +1,18 @@
+class java/lang/classfile/MethodBuilder
+
+super java/lang/classfile/ClassFileBuilder
+ <Ljava/lang/classfile/MethodElement;Ljava/lang/classfile/MethodBuilder;>
+ <Ljava/lang/classfile/MethodElement;Ljava/lang/classfile/MethodBuilder;>
+
+transformCode
+ (Ljava/lang/classfile/CodeModel;Ljava/lang/classfile/CodeTransform;)Ljava/lang/classfile/MethodBuilder;
+ (Ljava/lang/classfile/CodeModel;Ljava/lang/classfile/CodeTransform;)L1java/lang/classfile/MethodBuilder;
+withCode
+ (Ljava/util/function/Consumer<-Ljava/lang/classfile/CodeBuilder;>;)Ljava/lang/classfile/MethodBuilder;
+ (Ljava/util/function/Consumer<-Ljava/lang/classfile/CodeBuilder;>;)L1java/lang/classfile/MethodBuilder;
+withFlags
+ (I)Ljava/lang/classfile/MethodBuilder;
+ (I)L1java/lang/classfile/MethodBuilder;
+withFlags
+ ([Ljava/lang/reflect/AccessFlag;)Ljava/lang/classfile/MethodBuilder;
+ ([Ljava/lang/reflect/AccessFlag;)L1java/lang/classfile/MethodBuilder;

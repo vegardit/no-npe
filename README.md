@@ -71,12 +71,11 @@ compatibility of the compiled artifacts with the runtime library of the required
 
 To build the project follow these steps:
 
-1. Download and install Java 11, Java 17 **AND** Java 21 SDKs, e.g. from:
-   - Java 11: https://adoptium.net/releases.html?variant=openjdk11 or https://www.azul.com/downloads/?version=java-11-lts&package=jdk#download-openjdk
-   - Java 17: https://adoptium.net/releases.html?variant=openjdk17 or https://www.azul.com/downloads/?version=java-17-lts&package=jdk#download-openjdk
-   - Java 21: https://adoptium.net/releases.html?variant=openjdk21 or https://www.azul.com/downloads/?version=java-21-lts&package=jdk#download-openjdk
-
-1. Download and install the latest [Maven distribution](https://maven.apache.org/download.cgi).
+1. Download and install Java 11, Java 17, Java 21, **AND** Java 25 SDKs, e.g. from:
+   - Java 11: https://adoptium.net/temurin/releases?version=11
+   - Java 17: https://adoptium.net/temurin/releases?version=17
+   - Java 21: https://adoptium.net/temurin/releases?version=21
+   - Java 25: https://adoptium.net/temurin/releases?version=25
 
 1. In your user home directory create the file `.m2/toolchains.xml` with the following content:
 
@@ -114,6 +113,16 @@ To build the project follow these steps:
          <jdkHome>[PATH_TO_YOUR_JDK_21]</jdkHome>
        </configuration>
      </toolchain>
+     <toolchain>
+       <type>jdk</type>
+       <provides>
+         <version>25</version>
+         <vendor>default</vendor>
+       </provides>
+       <configuration>
+         <jdkHome>[PATH_TO_YOUR_JDK_25]</jdkHome>
+       </configuration>
+     </toolchain>
    </toolchains>
    ```
 
@@ -124,7 +133,7 @@ To build the project follow these steps:
 
     - `git clone https://github.com/vegardit/no-npe`
 
-1. Run `mvn clean verify` in the project root directory. This will execute compilation, unit-testing, integration-testing and
+1. Run `mvnw clean verify` in the project root directory. This will execute compilation, unit-testing, integration-testing and
    packaging of all artifacts.
 
 

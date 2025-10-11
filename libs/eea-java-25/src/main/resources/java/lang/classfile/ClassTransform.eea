@@ -1,0 +1,38 @@
+class java/lang/classfile/ClassTransform
+
+super java/lang/classfile/ClassFileTransform
+ <Ljava/lang/classfile/ClassTransform;Ljava/lang/classfile/ClassElement;Ljava/lang/classfile/ClassBuilder;>
+ <Ljava/lang/classfile/ClassTransform;Ljava/lang/classfile/ClassElement;Ljava/lang/classfile/ClassBuilder;>
+
+ACCEPT_ALL
+ Ljava/lang/classfile/ClassTransform;
+ L1java/lang/classfile/ClassTransform;
+
+dropping
+ (Ljava/util/function/Predicate<Ljava/lang/classfile/ClassElement;>;)Ljava/lang/classfile/ClassTransform;
+ (Ljava/util/function/Predicate<Ljava/lang/classfile/ClassElement;>;)Ljava/lang/classfile/ClassTransform;
+endHandler
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/ClassBuilder;>;)Ljava/lang/classfile/ClassTransform;
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/ClassBuilder;>;)L1java/lang/classfile/ClassTransform;
+ofStateful
+ (Ljava/util/function/Supplier<Ljava/lang/classfile/ClassTransform;>;)Ljava/lang/classfile/ClassTransform;
+ (Ljava/util/function/Supplier<Ljava/lang/classfile/ClassTransform;>;)L1java/lang/classfile/ClassTransform;
+transformingFields
+ (Ljava/lang/classfile/FieldTransform;)Ljava/lang/classfile/ClassTransform;
+ (Ljava/lang/classfile/FieldTransform;)Ljava/lang/classfile/ClassTransform;
+transformingMethodBodies
+ (Ljava/lang/classfile/CodeTransform;)Ljava/lang/classfile/ClassTransform;
+ (Ljava/lang/classfile/CodeTransform;)Ljava/lang/classfile/ClassTransform;
+transformingMethodBodies
+ (Ljava/util/function/Predicate<Ljava/lang/classfile/MethodModel;>;Ljava/lang/classfile/CodeTransform;)Ljava/lang/classfile/ClassTransform;
+ (Ljava/util/function/Predicate<Ljava/lang/classfile/MethodModel;>;Ljava/lang/classfile/CodeTransform;)Ljava/lang/classfile/ClassTransform;
+transformingMethods
+ (Ljava/lang/classfile/MethodTransform;)Ljava/lang/classfile/ClassTransform;
+ (Ljava/lang/classfile/MethodTransform;)Ljava/lang/classfile/ClassTransform;
+transformingMethods
+ (Ljava/util/function/Predicate<Ljava/lang/classfile/MethodModel;>;Ljava/lang/classfile/MethodTransform;)Ljava/lang/classfile/ClassTransform;
+ (Ljava/util/function/Predicate<Ljava/lang/classfile/MethodModel;>;Ljava/lang/classfile/MethodTransform;)L1java/lang/classfile/ClassTransform;
+
+andThen
+ (Ljava/lang/classfile/ClassTransform;)Ljava/lang/classfile/ClassTransform;
+ (Ljava/lang/classfile/ClassTransform;)L1java/lang/classfile/ClassTransform;

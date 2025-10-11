@@ -1,0 +1,63 @@
+class java/lang/classfile/ClassBuilder
+
+super java/lang/classfile/ClassFileBuilder
+ <Ljava/lang/classfile/ClassElement;Ljava/lang/classfile/ClassBuilder;>
+ <Ljava/lang/classfile/ClassElement;Ljava/lang/classfile/ClassBuilder;>
+
+transformField
+ (Ljava/lang/classfile/FieldModel;Ljava/lang/classfile/FieldTransform;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/classfile/FieldModel;Ljava/lang/classfile/FieldTransform;)L1java/lang/classfile/ClassBuilder;
+transformMethod
+ (Ljava/lang/classfile/MethodModel;Ljava/lang/classfile/MethodTransform;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/classfile/MethodModel;Ljava/lang/classfile/MethodTransform;)L1java/lang/classfile/ClassBuilder;
+withField
+ (Ljava/lang/String;Ljava/lang/constant/ClassDesc;I)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/String;Ljava/lang/constant/ClassDesc;I)L1java/lang/classfile/ClassBuilder;
+withField
+ (Ljava/lang/String;Ljava/lang/constant/ClassDesc;Ljava/util/function/Consumer<-Ljava/lang/classfile/FieldBuilder;>;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/String;Ljava/lang/constant/ClassDesc;Ljava/util/function/Consumer<-Ljava/lang/classfile/FieldBuilder;>;)L1java/lang/classfile/ClassBuilder;
+withField
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;I)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;I)L1java/lang/classfile/ClassBuilder;
+withField
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/util/function/Consumer<-Ljava/lang/classfile/FieldBuilder;>;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/util/function/Consumer<-Ljava/lang/classfile/FieldBuilder;>;)L1java/lang/classfile/ClassBuilder;
+withFlags
+ (I)Ljava/lang/classfile/ClassBuilder;
+ (I)L1java/lang/classfile/ClassBuilder;
+withFlags
+ ([Ljava/lang/reflect/AccessFlag;)Ljava/lang/classfile/ClassBuilder;
+ ([Ljava/lang/reflect/AccessFlag;)L1java/lang/classfile/ClassBuilder;
+withInterfaceSymbols
+ (Ljava/util/List<Ljava/lang/constant/ClassDesc;>;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/util/List<Ljava/lang/constant/ClassDesc;>;)L1java/lang/classfile/ClassBuilder;
+withInterfaceSymbols
+ ([Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/ClassBuilder;
+ ([Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/ClassBuilder;
+withInterfaces
+ (Ljava/util/List<Ljava/lang/classfile/constantpool/ClassEntry;>;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/util/List<Ljava/lang/classfile/constantpool/ClassEntry;>;)L1java/lang/classfile/ClassBuilder;
+withInterfaces
+ ([Ljava/lang/classfile/constantpool/ClassEntry;)Ljava/lang/classfile/ClassBuilder;
+ ([Ljava/lang/classfile/constantpool/ClassEntry;)L1java/lang/classfile/ClassBuilder;
+withMethod
+ (Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;ILjava/util/function/Consumer<-Ljava/lang/classfile/MethodBuilder;>;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;ILjava/util/function/Consumer<-Ljava/lang/classfile/MethodBuilder;>;)L1java/lang/classfile/ClassBuilder;
+withMethod
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;ILjava/util/function/Consumer<-Ljava/lang/classfile/MethodBuilder;>;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;ILjava/util/function/Consumer<-Ljava/lang/classfile/MethodBuilder;>;)L1java/lang/classfile/ClassBuilder;
+withMethodBody
+ (Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;ILjava/util/function/Consumer<-Ljava/lang/classfile/CodeBuilder;>;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;ILjava/util/function/Consumer<-Ljava/lang/classfile/CodeBuilder;>;)L1java/lang/classfile/ClassBuilder;
+withMethodBody
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;ILjava/util/function/Consumer<-Ljava/lang/classfile/CodeBuilder;>;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;ILjava/util/function/Consumer<-Ljava/lang/classfile/CodeBuilder;>;)L1java/lang/classfile/ClassBuilder;
+withSuperclass
+ (Ljava/lang/classfile/constantpool/ClassEntry;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/classfile/constantpool/ClassEntry;)L1java/lang/classfile/ClassBuilder;
+withSuperclass
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/ClassBuilder;
+ (Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/ClassBuilder;
+withVersion
+ (II)Ljava/lang/classfile/ClassBuilder;
+ (II)L1java/lang/classfile/ClassBuilder;

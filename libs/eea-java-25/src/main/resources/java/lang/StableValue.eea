@@ -1,0 +1,44 @@
+class java/lang/StableValue
+ <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+function
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/Set<+TT;>;Ljava/util/function/Function<-TT;+TR;>;)Ljava/util/function/Function<TT;TR;>;
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/Set<+TT;>;Ljava/util/function/Function<-TT;+TR;>;)Ljava/util/function/Function<TT;TR;>;
+intFunction
+ <R:Ljava/lang/Object;>(ILjava/util/function/IntFunction<+TR;>;)Ljava/util/function/IntFunction<TR;>;
+ <R:Ljava/lang/Object;>(ILjava/util/function/IntFunction<+TR;>;)Ljava/util/function/IntFunction<TR;>;
+list
+ <E:Ljava/lang/Object;>(ILjava/util/function/IntFunction<+TE;>;)Ljava/util/List<TE;>;
+ <E:Ljava/lang/Object;>(ILjava/util/function/IntFunction<+TE;>;)Ljava/util/List<TE;>;
+map
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Set<TK;>;Ljava/util/function/Function<-TK;+TV;>;)Ljava/util/Map<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Set<TK;>;Ljava/util/function/Function<-TK;+TV;>;)Ljava/util/Map<TK;TV;>;
+of
+ <T:Ljava/lang/Object;>()Ljava/lang/StableValue<TT;>;
+ <T:Ljava/lang/Object;>()Ljava/lang/StableValue<TT;>;
+of
+ <T:Ljava/lang/Object;>(TT;)Ljava/lang/StableValue<TT;>;
+ <T:Ljava/lang/Object;>(TT;)Ljava/lang/StableValue<TT;>;
+supplier
+ <T:Ljava/lang/Object;>(Ljava/util/function/Supplier<+TT;>;)Ljava/util/function/Supplier<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Supplier<+TT;>;)Ljava/util/function/Supplier<TT;>;
+
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+orElse
+ (TT;)TT;
+ (TT;)TT;
+orElseSet
+ (Ljava/util/function/Supplier<+TT;>;)TT;
+ (Ljava/util/function/Supplier<+TT;>;)TT;
+orElseThrow
+ ()TT;
+ ()TT;
+setOrThrow
+ (TT;)V
+ (TT;)V
+trySet
+ (TT;)Z
+ (TT;)Z

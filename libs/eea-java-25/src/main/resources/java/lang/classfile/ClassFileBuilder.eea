@@ -1,0 +1,20 @@
+class java/lang/classfile/ClassFileBuilder
+ <E::Ljava/lang/classfile/ClassFileElement;B::Ljava/lang/classfile/ClassFileBuilder<TE;TB;>;>
+ <E::Ljava/lang/classfile/ClassFileElement;B::Ljava/lang/classfile/ClassFileBuilder<TE;TB;>;>
+
+super java/util/function/Consumer
+ <TE;>
+ <TE;>
+
+accept
+ (TE;)V
+ (TE;)V
+constantPool
+ ()Ljava/lang/classfile/constantpool/ConstantPoolBuilder;
+ ()Ljava/lang/classfile/constantpool/ConstantPoolBuilder;
+transform
+ (Ljava/lang/classfile/CompoundElement<TE;>;Ljava/lang/classfile/ClassFileTransform<*TE;TB;>;)TB;
+ (Ljava/lang/classfile/CompoundElement<TE;>;Ljava/lang/classfile/ClassFileTransform<*TE;TB;>;)T1B;
+with
+ (TE;)TB;
+ (TE;)T1B;

@@ -1,0 +1,18 @@
+class java/lang/classfile/instruction/ConstantInstruction
+
+ofArgument
+ (Ljava/lang/classfile/Opcode;I)Ljava/lang/classfile/instruction/ConstantInstruction$ArgumentConstantInstruction;
+ (Ljava/lang/classfile/Opcode;I)L1java/lang/classfile/instruction/ConstantInstruction$ArgumentConstantInstruction;
+ofIntrinsic
+ (Ljava/lang/classfile/Opcode;)Ljava/lang/classfile/instruction/ConstantInstruction$IntrinsicConstantInstruction;
+ (Ljava/lang/classfile/Opcode;)L1java/lang/classfile/instruction/ConstantInstruction$IntrinsicConstantInstruction;
+ofLoad
+ (Ljava/lang/classfile/Opcode;Ljava/lang/classfile/constantpool/LoadableConstantEntry;)Ljava/lang/classfile/instruction/ConstantInstruction$LoadConstantInstruction;
+ (Ljava/lang/classfile/Opcode;Ljava/lang/classfile/constantpool/LoadableConstantEntry;)L1java/lang/classfile/instruction/ConstantInstruction$LoadConstantInstruction;
+
+constantValue
+ ()Ljava/lang/constant/ConstantDesc;
+ ()Ljava/lang/constant/ConstantDesc;
+typeKind
+ ()Ljava/lang/classfile/TypeKind;
+ ()Ljava/lang/classfile/TypeKind;

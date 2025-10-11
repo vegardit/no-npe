@@ -1,0 +1,34 @@
+class java/io/Reader
+
+nullReader
+ ()Ljava/io/Reader;
+ ()L1java/io/Reader;
+of
+ (Ljava/lang/CharSequence;)Ljava/io/Reader;
+ (Ljava/lang/CharSequence;)L1java/io/Reader;
+
+lock
+ Ljava/lang/Object;
+ L1java/lang/Object;
+
+<init>
+ (Ljava/lang/Object;)V
+ (L1java/lang/Object;)V
+read
+ (Ljava/nio/CharBuffer;)I
+ (L1java/nio/CharBuffer;)I # @Inherited(java.lang.Readable)
+read
+ ([C)I
+ ([1C)I
+read
+ ([CII)I
+ ([1CII)I
+readAllAsString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+readAllLines
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+transferTo
+ (Ljava/io/Writer;)J
+ (L1java/io/Writer;)J

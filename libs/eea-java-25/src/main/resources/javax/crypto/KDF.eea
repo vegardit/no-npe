@@ -1,0 +1,36 @@
+class javax/crypto/KDF
+
+getInstance
+ (Ljava/lang/String;)Ljavax/crypto/KDF;
+ (Ljava/lang/String;)Ljavax/crypto/KDF;
+getInstance
+ (Ljava/lang/String;Ljava/lang/String;)Ljavax/crypto/KDF;
+ (Ljava/lang/String;Ljava/lang/String;)Ljavax/crypto/KDF;
+getInstance
+ (Ljava/lang/String;Ljava/security/Provider;)Ljavax/crypto/KDF;
+ (Ljava/lang/String;Ljava/security/Provider;)Ljavax/crypto/KDF;
+getInstance
+ (Ljava/lang/String;Ljavax/crypto/KDFParameters;)Ljavax/crypto/KDF;
+ (Ljava/lang/String;Ljavax/crypto/KDFParameters;)L1javax/crypto/KDF;
+getInstance
+ (Ljava/lang/String;Ljavax/crypto/KDFParameters;Ljava/lang/String;)Ljavax/crypto/KDF;
+ (Ljava/lang/String;Ljavax/crypto/KDFParameters;Ljava/lang/String;)Ljavax/crypto/KDF;
+getInstance
+ (Ljava/lang/String;Ljavax/crypto/KDFParameters;Ljava/security/Provider;)Ljavax/crypto/KDF;
+ (Ljava/lang/String;Ljavax/crypto/KDFParameters;Ljava/security/Provider;)Ljavax/crypto/KDF;
+
+deriveData
+ (Ljava/security/spec/AlgorithmParameterSpec;)[B
+ (Ljava/security/spec/AlgorithmParameterSpec;)[0B
+deriveKey
+ (Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;)Ljavax/crypto/SecretKey;
+ (Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;)L0javax/crypto/SecretKey;
+getAlgorithm
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getParameters
+ ()Ljavax/crypto/KDFParameters;
+ ()Ljavax/crypto/KDFParameters;
+getProviderName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;

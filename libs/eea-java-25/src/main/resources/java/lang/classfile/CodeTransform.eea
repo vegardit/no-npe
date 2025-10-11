@@ -1,0 +1,20 @@
+class java/lang/classfile/CodeTransform
+
+super java/lang/classfile/ClassFileTransform
+ <Ljava/lang/classfile/CodeTransform;Ljava/lang/classfile/CodeElement;Ljava/lang/classfile/CodeBuilder;>
+ <Ljava/lang/classfile/CodeTransform;Ljava/lang/classfile/CodeElement;Ljava/lang/classfile/CodeBuilder;>
+
+ACCEPT_ALL
+ Ljava/lang/classfile/CodeTransform;
+ L1java/lang/classfile/CodeTransform;
+
+endHandler
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder;>;)Ljava/lang/classfile/CodeTransform;
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder;>;)L1java/lang/classfile/CodeTransform;
+ofStateful
+ (Ljava/util/function/Supplier<Ljava/lang/classfile/CodeTransform;>;)Ljava/lang/classfile/CodeTransform;
+ (Ljava/util/function/Supplier<Ljava/lang/classfile/CodeTransform;>;)L1java/lang/classfile/CodeTransform;
+
+andThen
+ (Ljava/lang/classfile/CodeTransform;)Ljava/lang/classfile/CodeTransform;
+ (Ljava/lang/classfile/CodeTransform;)L1java/lang/classfile/CodeTransform;

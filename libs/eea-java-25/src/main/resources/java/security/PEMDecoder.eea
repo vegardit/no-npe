@@ -1,0 +1,24 @@
+class java/security/PEMDecoder
+
+of
+ ()Ljava/security/PEMDecoder;
+ ()Ljava/security/PEMDecoder;
+
+decode
+ (Ljava/io/InputStream;)Ljava/security/DEREncodable;
+ (Ljava/io/InputStream;)Ljava/security/DEREncodable;
+decode
+ (Ljava/lang/String;)Ljava/security/DEREncodable;
+ (Ljava/lang/String;)Ljava/security/DEREncodable;
+decode
+ <S::Ljava/security/DEREncodable;>(Ljava/io/InputStream;Ljava/lang/Class<TS;>;)TS;
+ <S::Ljava/security/DEREncodable;>(Ljava/io/InputStream;Ljava/lang/Class<TS;>;)TS;
+decode
+ <S::Ljava/security/DEREncodable;>(Ljava/lang/String;Ljava/lang/Class<TS;>;)TS;
+ <S::Ljava/security/DEREncodable;>(Ljava/lang/String;Ljava/lang/Class<TS;>;)TS;
+withDecryption
+ ([C)Ljava/security/PEMDecoder;
+ ([C)L1java/security/PEMDecoder;
+withFactory
+ (Ljava/security/Provider;)Ljava/security/PEMDecoder;
+ (Ljava/security/Provider;)L1java/security/PEMDecoder;

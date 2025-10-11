@@ -1,0 +1,27 @@
+class java/lang/classfile/attribute/ModuleRequireInfo
+
+of
+ (Ljava/lang/classfile/constantpool/ModuleEntry;ILjava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/attribute/ModuleRequireInfo;
+ (Ljava/lang/classfile/constantpool/ModuleEntry;ILjava/lang/classfile/constantpool/Utf8Entry;)L1java/lang/classfile/attribute/ModuleRequireInfo;
+of
+ (Ljava/lang/classfile/constantpool/ModuleEntry;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/attribute/ModuleRequireInfo;
+ (Ljava/lang/classfile/constantpool/ModuleEntry;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/lang/classfile/constantpool/Utf8Entry;)Ljava/lang/classfile/attribute/ModuleRequireInfo;
+of
+ (Ljava/lang/constant/ModuleDesc;ILjava/lang/String;)Ljava/lang/classfile/attribute/ModuleRequireInfo;
+ (Ljava/lang/constant/ModuleDesc;ILjava/lang/String;)Ljava/lang/classfile/attribute/ModuleRequireInfo;
+of
+ (Ljava/lang/constant/ModuleDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/lang/String;)Ljava/lang/classfile/attribute/ModuleRequireInfo;
+ (Ljava/lang/constant/ModuleDesc;Ljava/util/Collection<Ljava/lang/reflect/AccessFlag;>;Ljava/lang/String;)Ljava/lang/classfile/attribute/ModuleRequireInfo;
+
+has
+ (Ljava/lang/reflect/AccessFlag;)Z
+ (Ljava/lang/reflect/AccessFlag;)Z
+requires
+ ()Ljava/lang/classfile/constantpool/ModuleEntry;
+ ()Ljava/lang/classfile/constantpool/ModuleEntry;
+requiresFlags
+ ()Ljava/util/Set<Ljava/lang/reflect/AccessFlag;>;
+ ()Ljava/util/Set<Ljava/lang/reflect/AccessFlag;>;
+requiresVersion
+ ()Ljava/util/Optional<Ljava/lang/classfile/constantpool/Utf8Entry;>;
+ ()L1java/util/Optional<Ljava/lang/classfile/constantpool/Utf8Entry;>;

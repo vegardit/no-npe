@@ -1,0 +1,26 @@
+class java/lang/classfile/MethodTransform
+
+super java/lang/classfile/ClassFileTransform
+ <Ljava/lang/classfile/MethodTransform;Ljava/lang/classfile/MethodElement;Ljava/lang/classfile/MethodBuilder;>
+ <Ljava/lang/classfile/MethodTransform;Ljava/lang/classfile/MethodElement;Ljava/lang/classfile/MethodBuilder;>
+
+ACCEPT_ALL
+ Ljava/lang/classfile/MethodTransform;
+ L1java/lang/classfile/MethodTransform;
+
+dropping
+ (Ljava/util/function/Predicate<Ljava/lang/classfile/MethodElement;>;)Ljava/lang/classfile/MethodTransform;
+ (Ljava/util/function/Predicate<Ljava/lang/classfile/MethodElement;>;)Ljava/lang/classfile/MethodTransform;
+endHandler
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/MethodBuilder;>;)Ljava/lang/classfile/MethodTransform;
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/MethodBuilder;>;)L1java/lang/classfile/MethodTransform;
+ofStateful
+ (Ljava/util/function/Supplier<Ljava/lang/classfile/MethodTransform;>;)Ljava/lang/classfile/MethodTransform;
+ (Ljava/util/function/Supplier<Ljava/lang/classfile/MethodTransform;>;)L1java/lang/classfile/MethodTransform;
+transformingCode
+ (Ljava/lang/classfile/CodeTransform;)Ljava/lang/classfile/MethodTransform;
+ (Ljava/lang/classfile/CodeTransform;)L1java/lang/classfile/MethodTransform;
+
+andThen
+ (Ljava/lang/classfile/MethodTransform;)Ljava/lang/classfile/MethodTransform;
+ (Ljava/lang/classfile/MethodTransform;)L1java/lang/classfile/MethodTransform;

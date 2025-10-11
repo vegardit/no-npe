@@ -1,0 +1,42 @@
+class javax/swing/plaf/metal/MetalComboBoxUI
+
+createUI
+ (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
+
+createArrowButton
+ ()Ljavax/swing/JButton;
+ ()L1javax/swing/JButton; # @Inherited(javax.swing.plaf.basic.BasicComboBoxUI)
+createEditor
+ ()Ljavax/swing/ComboBoxEditor;
+ ()L1javax/swing/ComboBoxEditor; # @Inherited(javax.swing.plaf.basic.BasicComboBoxUI)
+createLayoutManager
+ ()Ljava/awt/LayoutManager;
+ ()L1java/awt/LayoutManager; # @Inherited(javax.swing.plaf.basic.BasicComboBoxUI)
+createPopup
+ ()Ljavax/swing/plaf/basic/ComboPopup;
+ ()L1javax/swing/plaf/basic/ComboPopup; # @Inherited(javax.swing.plaf.basic.BasicComboBoxUI)
+createPropertyChangeListener
+ ()Ljava/beans/PropertyChangeListener;
+ ()L1java/beans/PropertyChangeListener; # @Inherited(javax.swing.plaf.basic.BasicComboBoxUI)
+editablePropertyChanged
+ (Ljava/beans/PropertyChangeEvent;)V
+ (Ljava/beans/PropertyChangeEvent;)V
+getBaseline
+ (Ljavax/swing/JComponent;II)I
+ (Ljavax/swing/JComponent;II)I
+getMinimumSize
+ (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
+ (Ljavax/swing/JComponent;)L1java/awt/Dimension; # @Inherited(javax.swing.plaf.basic.BasicComboBoxUI)
+layoutComboBox
+ (Ljava/awt/Container;Ljavax/swing/plaf/metal/MetalComboBoxUI$MetalComboBoxLayoutManager;)V
+ (Ljava/awt/Container;Ljavax/swing/plaf/metal/MetalComboBoxUI$MetalComboBoxLayoutManager;)V
+paint
+ (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
+ (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
+paintCurrentValue
+ (Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V
+ (Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V
+paintCurrentValueBackground
+ (Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V
+ (Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V

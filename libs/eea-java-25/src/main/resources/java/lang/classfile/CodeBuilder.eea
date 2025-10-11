@@ -1,0 +1,651 @@
+class java/lang/classfile/CodeBuilder
+
+super java/lang/classfile/ClassFileBuilder
+ <Ljava/lang/classfile/CodeElement;Ljava/lang/classfile/CodeBuilder;>
+ <Ljava/lang/classfile/CodeElement;Ljava/lang/classfile/CodeBuilder;>
+
+aaload
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+aastore
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+aconst_null
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+allocateLocal
+ (Ljava/lang/classfile/TypeKind;)I
+ (Ljava/lang/classfile/TypeKind;)I
+aload
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+anewarray
+ (Ljava/lang/classfile/constantpool/ClassEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/ClassEntry;)L1java/lang/classfile/CodeBuilder;
+anewarray
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+areturn
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+arrayLoad
+ (Ljava/lang/classfile/TypeKind;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/TypeKind;)L1java/lang/classfile/CodeBuilder;
+arrayStore
+ (Ljava/lang/classfile/TypeKind;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/TypeKind;)L1java/lang/classfile/CodeBuilder;
+arraylength
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+astore
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+athrow
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+baload
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+bastore
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+bipush
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+block
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)L1java/lang/classfile/CodeBuilder;
+branch
+ (Ljava/lang/classfile/Opcode;Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Opcode;Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+caload
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+castore
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+characterRange
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;III)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;III)L1java/lang/classfile/CodeBuilder;
+checkcast
+ (Ljava/lang/classfile/constantpool/ClassEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/ClassEntry;)L1java/lang/classfile/CodeBuilder;
+checkcast
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+conversion
+ (Ljava/lang/classfile/TypeKind;Ljava/lang/classfile/TypeKind;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/TypeKind;Ljava/lang/classfile/TypeKind;)L1java/lang/classfile/CodeBuilder;
+d2f
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+d2i
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+d2l
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dadd
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+daload
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dastore
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dcmpg
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dcmpl
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dconst_0
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dconst_1
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+ddiv
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dload
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+dmul
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dneg
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+drem
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dreturn
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dstore
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+dsub
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dup
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dup2
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dup2_x1
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dup2_x2
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dup_x1
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+dup_x2
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+endLabel
+ ()Ljava/lang/classfile/Label;
+ ()Ljava/lang/classfile/Label;
+exceptionCatch
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/constantpool/ClassEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/constantpool/ClassEntry;)L1java/lang/classfile/CodeBuilder;
+exceptionCatch
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+exceptionCatch
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/util/Optional<Ljava/lang/classfile/constantpool/ClassEntry;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/util/Optional<Ljava/lang/classfile/constantpool/ClassEntry;>;)L1java/lang/classfile/CodeBuilder;
+exceptionCatchAll
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+f2d
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+f2i
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+f2l
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fadd
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+faload
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fastore
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fcmpg
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fcmpl
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fconst_0
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fconst_1
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fconst_2
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fdiv
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fieldAccess
+ (Ljava/lang/classfile/Opcode;Ljava/lang/classfile/constantpool/FieldRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Opcode;Ljava/lang/classfile/constantpool/FieldRefEntry;)L1java/lang/classfile/CodeBuilder;
+fieldAccess
+ (Ljava/lang/classfile/Opcode;Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Opcode;Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+fload
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+fmul
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fneg
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+frem
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+freturn
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+fstore
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+fsub
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+getfield
+ (Ljava/lang/classfile/constantpool/FieldRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/FieldRefEntry;)L1java/lang/classfile/CodeBuilder;
+getfield
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+getstatic
+ (Ljava/lang/classfile/constantpool/FieldRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/FieldRefEntry;)L1java/lang/classfile/CodeBuilder;
+getstatic
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+goto_
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+goto_w
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+i2b
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+i2c
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+i2d
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+i2f
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+i2l
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+i2s
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iadd
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iaload
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iand
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iastore
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iconst_0
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iconst_1
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iconst_2
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iconst_3
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iconst_4
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iconst_5
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iconst_m1
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+idiv
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+ifThen
+ (Ljava/lang/classfile/Opcode;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Opcode;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)L1java/lang/classfile/CodeBuilder;
+ifThen
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)L1java/lang/classfile/CodeBuilder;
+ifThenElse
+ (Ljava/lang/classfile/Opcode;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Opcode;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)L1java/lang/classfile/CodeBuilder;
+ifThenElse
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;)L1java/lang/classfile/CodeBuilder;
+if_acmpeq
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+if_acmpne
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+if_icmpeq
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+if_icmpge
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+if_icmpgt
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+if_icmple
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+if_icmplt
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+if_icmpne
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+ifeq
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+ifge
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+ifgt
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+ifle
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+iflt
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+ifne
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+ifnonnull
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+ifnull
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+iinc
+ (II)Ljava/lang/classfile/CodeBuilder;
+ (II)L1java/lang/classfile/CodeBuilder;
+iload
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+imul
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+ineg
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+instanceOf
+ (Ljava/lang/classfile/constantpool/ClassEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/ClassEntry;)L1java/lang/classfile/CodeBuilder;
+instanceOf
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+invoke
+ (Ljava/lang/classfile/Opcode;Ljava/lang/classfile/constantpool/MemberRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Opcode;Ljava/lang/classfile/constantpool/MemberRefEntry;)L1java/lang/classfile/CodeBuilder;
+invoke
+ (Ljava/lang/classfile/Opcode;Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;Z)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Opcode;Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;Z)L1java/lang/classfile/CodeBuilder;
+invokedynamic
+ (Ljava/lang/classfile/constantpool/InvokeDynamicEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/InvokeDynamicEntry;)L1java/lang/classfile/CodeBuilder;
+invokedynamic
+ (Ljava/lang/constant/DynamicCallSiteDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/DynamicCallSiteDesc;)L1java/lang/classfile/CodeBuilder;
+invokeinterface
+ (Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;)L1java/lang/classfile/CodeBuilder;
+invokeinterface
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)L1java/lang/classfile/CodeBuilder;
+invokespecial
+ (Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;)L1java/lang/classfile/CodeBuilder;
+invokespecial
+ (Ljava/lang/classfile/constantpool/MethodRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/MethodRefEntry;)L1java/lang/classfile/CodeBuilder;
+invokespecial
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)L1java/lang/classfile/CodeBuilder;
+invokespecial
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;Z)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;Z)L1java/lang/classfile/CodeBuilder;
+invokestatic
+ (Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/InterfaceMethodRefEntry;)L1java/lang/classfile/CodeBuilder;
+invokestatic
+ (Ljava/lang/classfile/constantpool/MethodRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/MethodRefEntry;)L1java/lang/classfile/CodeBuilder;
+invokestatic
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)L1java/lang/classfile/CodeBuilder;
+invokestatic
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;Z)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;Z)L1java/lang/classfile/CodeBuilder;
+invokevirtual
+ (Ljava/lang/classfile/constantpool/MethodRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/MethodRefEntry;)L1java/lang/classfile/CodeBuilder;
+invokevirtual
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)L1java/lang/classfile/CodeBuilder;
+ior
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+irem
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+ireturn
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+ishl
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+ishr
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+istore
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+isub
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+iushr
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+ixor
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+l2d
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+l2f
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+l2i
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+labelBinding
+ (Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+ladd
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+laload
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+land
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lastore
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lcmp
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lconst_0
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lconst_1
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+ldc
+ (Ljava/lang/classfile/constantpool/LoadableConstantEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/LoadableConstantEntry;)L1java/lang/classfile/CodeBuilder;
+ldc
+ (Ljava/lang/constant/ConstantDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ConstantDesc;)L1java/lang/classfile/CodeBuilder;
+ldiv
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lineNumber
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+lload
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+lmul
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lneg
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+loadConstant
+ (D)Ljava/lang/classfile/CodeBuilder;
+ (D)L1java/lang/classfile/CodeBuilder;
+loadConstant
+ (F)Ljava/lang/classfile/CodeBuilder;
+ (F)L1java/lang/classfile/CodeBuilder;
+loadConstant
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+loadConstant
+ (J)Ljava/lang/classfile/CodeBuilder;
+ (J)L1java/lang/classfile/CodeBuilder;
+loadConstant
+ (Ljava/lang/constant/ConstantDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ConstantDesc;)L1java/lang/classfile/CodeBuilder;
+loadLocal
+ (Ljava/lang/classfile/TypeKind;I)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/TypeKind;I)L1java/lang/classfile/CodeBuilder;
+localVariable
+ (ILjava/lang/String;Ljava/lang/constant/ClassDesc;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (ILjava/lang/String;Ljava/lang/constant/ClassDesc;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+localVariable
+ (ILjava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (ILjava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+localVariableType
+ (ILjava/lang/String;Ljava/lang/classfile/Signature;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (ILjava/lang/String;Ljava/lang/classfile/Signature;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+localVariableType
+ (ILjava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)Ljava/lang/classfile/CodeBuilder;
+ (ILjava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/constantpool/Utf8Entry;Ljava/lang/classfile/Label;Ljava/lang/classfile/Label;)L1java/lang/classfile/CodeBuilder;
+lookupswitch
+ (Ljava/lang/classfile/Label;Ljava/util/List<Ljava/lang/classfile/instruction/SwitchCase;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;Ljava/util/List<Ljava/lang/classfile/instruction/SwitchCase;>;)L1java/lang/classfile/CodeBuilder;
+lor
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lrem
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lreturn
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lshl
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lshr
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lstore
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+lsub
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lushr
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+lxor
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+monitorenter
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+monitorexit
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+multianewarray
+ (Ljava/lang/classfile/constantpool/ClassEntry;I)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/ClassEntry;I)L1java/lang/classfile/CodeBuilder;
+multianewarray
+ (Ljava/lang/constant/ClassDesc;I)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;I)L1java/lang/classfile/CodeBuilder;
+newBoundLabel
+ ()Ljava/lang/classfile/Label;
+ ()Ljava/lang/classfile/Label;
+newLabel
+ ()Ljava/lang/classfile/Label;
+ ()Ljava/lang/classfile/Label;
+new_
+ (Ljava/lang/classfile/constantpool/ClassEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/ClassEntry;)L1java/lang/classfile/CodeBuilder;
+new_
+ (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+newarray
+ (Ljava/lang/classfile/TypeKind;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/TypeKind;)L1java/lang/classfile/CodeBuilder;
+nop
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+pop
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+pop2
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+putfield
+ (Ljava/lang/classfile/constantpool/FieldRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/FieldRefEntry;)L1java/lang/classfile/CodeBuilder;
+putfield
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+putstatic
+ (Ljava/lang/classfile/constantpool/FieldRefEntry;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/constantpool/FieldRefEntry;)L1java/lang/classfile/CodeBuilder;
+putstatic
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;)L1java/lang/classfile/CodeBuilder;
+return_
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+return_
+ (Ljava/lang/classfile/TypeKind;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/TypeKind;)L1java/lang/classfile/CodeBuilder;
+saload
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+sastore
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+sipush
+ (I)Ljava/lang/classfile/CodeBuilder;
+ (I)L1java/lang/classfile/CodeBuilder;
+startLabel
+ ()Ljava/lang/classfile/Label;
+ ()Ljava/lang/classfile/Label;
+storeLocal
+ (Ljava/lang/classfile/TypeKind;I)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/TypeKind;I)L1java/lang/classfile/CodeBuilder;
+swap
+ ()Ljava/lang/classfile/CodeBuilder;
+ ()L1java/lang/classfile/CodeBuilder;
+tableswitch
+ (IILjava/lang/classfile/Label;Ljava/util/List<Ljava/lang/classfile/instruction/SwitchCase;>;)Ljava/lang/classfile/CodeBuilder;
+ (IILjava/lang/classfile/Label;Ljava/util/List<Ljava/lang/classfile/instruction/SwitchCase;>;)L1java/lang/classfile/CodeBuilder;
+tableswitch
+ (Ljava/lang/classfile/Label;Ljava/util/List<Ljava/lang/classfile/instruction/SwitchCase;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/Label;Ljava/util/List<Ljava/lang/classfile/instruction/SwitchCase;>;)L1java/lang/classfile/CodeBuilder;
+transforming
+ (Ljava/lang/classfile/CodeTransform;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/lang/classfile/CodeTransform;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder;>;)L1java/lang/classfile/CodeBuilder;
+trying
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$CatchBuilder;>;)Ljava/lang/classfile/CodeBuilder;
+ (Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;>;Ljava/util/function/Consumer<Ljava/lang/classfile/CodeBuilder$CatchBuilder;>;)L1java/lang/classfile/CodeBuilder;

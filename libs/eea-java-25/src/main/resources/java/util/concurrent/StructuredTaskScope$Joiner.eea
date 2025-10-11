@@ -1,0 +1,29 @@
+class java/util/concurrent/StructuredTaskScope$Joiner
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;R:Ljava/lang/Object;>
+
+allSuccessfulOrThrow
+ <T:Ljava/lang/Object;>()Ljava/util/concurrent/StructuredTaskScope$Joiner<TT;Ljava/util/stream/Stream<Ljava/util/concurrent/StructuredTaskScope$Subtask<TT;>;>;>;
+ <T:Ljava/lang/Object;>()L1java/util/concurrent/StructuredTaskScope$Joiner<TT;Ljava/util/stream/Stream<Ljava/util/concurrent/StructuredTaskScope$Subtask<TT;>;>;>;
+allUntil
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<Ljava/util/concurrent/StructuredTaskScope$Subtask<+TT;>;>;)Ljava/util/concurrent/StructuredTaskScope$Joiner<TT;Ljava/util/stream/Stream<Ljava/util/concurrent/StructuredTaskScope$Subtask<TT;>;>;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<Ljava/util/concurrent/StructuredTaskScope$Subtask<+TT;>;>;)L1java/util/concurrent/StructuredTaskScope$Joiner<TT;Ljava/util/stream/Stream<Ljava/util/concurrent/StructuredTaskScope$Subtask<TT;>;>;>;
+anySuccessfulResultOrThrow
+ <T:Ljava/lang/Object;>()Ljava/util/concurrent/StructuredTaskScope$Joiner<TT;TT;>;
+ <T:Ljava/lang/Object;>()L1java/util/concurrent/StructuredTaskScope$Joiner<TT;TT;>;
+awaitAll
+ <T:Ljava/lang/Object;>()Ljava/util/concurrent/StructuredTaskScope$Joiner<TT;Ljava/lang/Void;>;
+ <T:Ljava/lang/Object;>()L1java/util/concurrent/StructuredTaskScope$Joiner<TT;Ljava/lang/Void;>;
+awaitAllSuccessfulOrThrow
+ <T:Ljava/lang/Object;>()Ljava/util/concurrent/StructuredTaskScope$Joiner<TT;Ljava/lang/Void;>;
+ <T:Ljava/lang/Object;>()L1java/util/concurrent/StructuredTaskScope$Joiner<TT;Ljava/lang/Void;>;
+
+onComplete
+ (Ljava/util/concurrent/StructuredTaskScope$Subtask<+TT;>;)Z
+ (Ljava/util/concurrent/StructuredTaskScope$Subtask<+TT;>;)Z
+onFork
+ (Ljava/util/concurrent/StructuredTaskScope$Subtask<+TT;>;)Z
+ (Ljava/util/concurrent/StructuredTaskScope$Subtask<+TT;>;)Z
+result
+ ()TR;
+ ()TR;

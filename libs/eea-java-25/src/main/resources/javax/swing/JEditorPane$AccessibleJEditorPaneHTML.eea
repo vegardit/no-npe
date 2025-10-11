@@ -1,0 +1,14 @@
+class javax/swing/JEditorPane$AccessibleJEditorPaneHTML
+
+<init>
+ (Ljavax/swing/JEditorPane;)V
+ (Ljavax/swing/JEditorPane;)V
+getAccessibleAt
+ (Ljava/awt/Point;)Ljavax/accessibility/Accessible;
+ (Ljava/awt/Point;)L0javax/accessibility/Accessible; # @Inherited(java.awt.Container$AccessibleAWTContainer)
+getAccessibleChild
+ (I)Ljavax/accessibility/Accessible;
+ (I)L0javax/accessibility/Accessible; # @Inherited(javax.swing.JComponent$AccessibleJComponent)
+getAccessibleText
+ ()Ljavax/accessibility/AccessibleText;
+ ()L1javax/accessibility/AccessibleText; # @Overrides(javax.swing.text.JTextComponent$AccessibleJTextComponent)
