@@ -1,11 +1,11 @@
-class org/eclipse/swt/graphics/MonitorAwareRectangle
+class org/eclipse/swt/graphics/Rectangle$WithMonitor
 
 <init>
  (IIIILorg/eclipse/swt/widgets/Monitor;)V
  (IIIILorg/eclipse/swt/widgets/Monitor;)V
-equals
- (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z # @Inherited(org.eclipse.swt.graphics.Rectangle)
+clone
+ ()Lorg/eclipse/swt/graphics/Rectangle$WithMonitor;
+ ()L1org/eclipse/swt/graphics/Rectangle$WithMonitor;
 getMonitor
  ()Lorg/eclipse/swt/widgets/Monitor;
  ()Lorg/eclipse/swt/widgets/Monitor;

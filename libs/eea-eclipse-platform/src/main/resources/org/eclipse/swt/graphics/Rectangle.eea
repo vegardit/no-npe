@@ -1,26 +1,33 @@
 class org/eclipse/swt/graphics/Rectangle
 
+of
+ (Lorg/eclipse/swt/graphics/Point;II)Lorg/eclipse/swt/graphics/Rectangle;
+ (L1org/eclipse/swt/graphics/Point;II)L1org/eclipse/swt/graphics/Rectangle;
+
 add
  (Lorg/eclipse/swt/graphics/Rectangle;)V
- (Lorg/eclipse/swt/graphics/Rectangle;)V
+ (L1org/eclipse/swt/graphics/Rectangle;)V
+clone
+ ()Lorg/eclipse/swt/graphics/Rectangle;
+ ()L1org/eclipse/swt/graphics/Rectangle;
 contains
  (Lorg/eclipse/swt/graphics/Point;)Z
- (Lorg/eclipse/swt/graphics/Point;)Z
+ (L1org/eclipse/swt/graphics/Point;)Z
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 intersect
  (Lorg/eclipse/swt/graphics/Rectangle;)V
- (Lorg/eclipse/swt/graphics/Rectangle;)V
+ (L1org/eclipse/swt/graphics/Rectangle;)V
 intersection
  (Lorg/eclipse/swt/graphics/Rectangle;)Lorg/eclipse/swt/graphics/Rectangle;
- (Lorg/eclipse/swt/graphics/Rectangle;)Lorg/eclipse/swt/graphics/Rectangle;
+ (L1org/eclipse/swt/graphics/Rectangle;)L1org/eclipse/swt/graphics/Rectangle;
 intersects
  (Lorg/eclipse/swt/graphics/Rectangle;)Z
- (Lorg/eclipse/swt/graphics/Rectangle;)Z
+ (L1org/eclipse/swt/graphics/Rectangle;)Z
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)
 union
  (Lorg/eclipse/swt/graphics/Rectangle;)Lorg/eclipse/swt/graphics/Rectangle;
- (Lorg/eclipse/swt/graphics/Rectangle;)Lorg/eclipse/swt/graphics/Rectangle;
+ (L1org/eclipse/swt/graphics/Rectangle;)L1org/eclipse/swt/graphics/Rectangle;
