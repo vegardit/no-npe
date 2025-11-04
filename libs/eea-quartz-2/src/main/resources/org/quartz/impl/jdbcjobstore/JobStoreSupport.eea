@@ -134,6 +134,9 @@ getInstanceId
 getInstanceName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+getJobDetails
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
 getJobGroupNames
  ()Ljava/util/List<Ljava/lang/String;>;
  ()Ljava/util/List<Ljava/lang/String;>;
@@ -197,6 +200,12 @@ getTriggerState
 getTriggerState
  (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
  (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+getTriggersByJobAndTriggerGroup
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+getTriggersByJobAndTriggerGroup
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
 getTriggersForJob
  (Ljava/sql/Connection;Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
  (Ljava/sql/Connection;Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
@@ -314,6 +323,9 @@ retrieveJob
 retrieveJob
  (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
  (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
+retrieveJobs
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
 retrieveTrigger
  (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/spi/OperableTrigger;
  (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/spi/OperableTrigger;

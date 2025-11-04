@@ -107,6 +107,9 @@ getObjectFromBlob
 getSchedulerNameLiteral
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+getTriggersByJobAndTriggerGroup
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>;
 hasMisfiredTriggersInState
  (Ljava/sql/Connection;Ljava/lang/String;JILjava/util/List<Lorg/quartz/TriggerKey;>;)Z
  (Ljava/sql/Connection;Ljava/lang/String;JILjava/util/List<Lorg/quartz/TriggerKey;>;)Z
@@ -152,6 +155,12 @@ jobExists
 rtp
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
+selectBulkTriggersForCalendar
+ (Ljava/sql/Connection;Ljava/lang/String;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Ljava/sql/Connection;Ljava/lang/String;)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>;
+selectBulkTriggersForJob
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>;
 selectCalendar
  (Ljava/sql/Connection;Ljava/lang/String;)Lorg/quartz/Calendar;
  (Ljava/sql/Connection;Ljava/lang/String;)Lorg/quartz/Calendar;
@@ -173,6 +182,9 @@ selectInstancesFiredTriggerRecords
 selectJobDetail
  (Ljava/sql/Connection;Lorg/quartz/JobKey;Lorg/quartz/spi/ClassLoadHelper;)Lorg/quartz/JobDetail;
  (Ljava/sql/Connection;Lorg/quartz/JobKey;Lorg/quartz/spi/ClassLoadHelper;)L1org/quartz/JobDetail;
+selectJobDetails
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/spi/ClassLoadHelper;)Ljava/util/List<Lorg/quartz/JobDetail;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/spi/ClassLoadHelper;)L1java/util/List<Lorg/quartz/JobDetail;>;
 selectJobExecutionCount
  (Ljava/sql/Connection;Lorg/quartz/JobKey;)I
  (Ljava/sql/Connection;Lorg/quartz/JobKey;)I

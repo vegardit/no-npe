@@ -45,6 +45,9 @@ getCurrentlyExecutingJobs
 getJobDetail
  (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
  (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
+getJobDetails
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
 getJobGroupNames
  ()Ljava/util/List<Ljava/lang/String;>;
  ()Ljava/util/List<Ljava/lang/String;>;
