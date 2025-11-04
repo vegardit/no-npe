@@ -55,6 +55,9 @@ getCalendarNames
 getFiredTriggerRecordId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
+getJobDetails
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)L1java/util/List<Lorg/quartz/JobDetail;>;
 getJobGroupNames
  ()Ljava/util/List<Ljava/lang/String;>;
  ()L1java/util/List<Ljava/lang/String;>;
@@ -82,6 +85,9 @@ getTriggerWrappersForCalendar
 getTriggerWrappersForJob
  (Lorg/quartz/JobKey;)Ljava/util/ArrayList<Lorg/quartz/simpl/TriggerWrapper;>;
  (Lorg/quartz/JobKey;)L1java/util/ArrayList<Lorg/quartz/simpl/TriggerWrapper;>;
+getTriggersByJobAndTriggerGroup
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>;
 getTriggersForJob
  (Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
  (Lorg/quartz/JobKey;)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>;

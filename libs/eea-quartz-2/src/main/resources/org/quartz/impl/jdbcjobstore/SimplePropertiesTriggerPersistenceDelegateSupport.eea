@@ -74,6 +74,9 @@ insertExtendedTriggerProperties
 loadExtendedTriggerProperties
  (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
  (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
+loadExtendedTriggerPropertiesFromResultSet
+ (Ljava/sql/ResultSet;Lorg/quartz/TriggerKey;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
+ (Ljava/sql/ResultSet;Lorg/quartz/TriggerKey;)Lorg/quartz/impl/jdbcjobstore/TriggerPersistenceDelegate$TriggerPropertyBundle;
 updateExtendedTriggerProperties
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I

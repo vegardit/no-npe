@@ -12,6 +12,9 @@ checkExists
 getCalendarNames
  ()Ljava/util/List<Ljava/lang/String;>;
  ()Ljava/util/List<Ljava/lang/String;>;
+getJobDetails
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
 getJobGroupNames
  ()Ljava/util/List<Ljava/lang/String;>;
  ()Ljava/util/List<Ljava/lang/String;>;
@@ -30,6 +33,15 @@ getTriggerKeys
 getTriggerState
  (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
  (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+getTriggersByJobAndTriggerGroup
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+getTriggersByJobGroup
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+getTriggersByTriggerGroup
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
 getTriggersForJob
  (Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
  (Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
