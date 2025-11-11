@@ -9,6 +9,9 @@ super org/apache/commons/io/build/AbstractSupplier
 newByteArrayOrigin
  ([B)Lorg/apache/commons/io/build/AbstractOrigin$ByteArrayOrigin;
  ([B)L1org/apache/commons/io/build/AbstractOrigin$ByteArrayOrigin;
+newChannelOrigin
+ (Ljava/nio/channels/Channel;)Lorg/apache/commons/io/build/AbstractOrigin$ChannelOrigin;
+ (Ljava/nio/channels/Channel;)L1org/apache/commons/io/build/AbstractOrigin$ChannelOrigin;
 newCharSequenceOrigin
  (Ljava/lang/CharSequence;)Lorg/apache/commons/io/build/AbstractOrigin$CharSequenceOrigin;
  (L1java/lang/CharSequence;)L1org/apache/commons/io/build/AbstractOrigin$CharSequenceOrigin;
@@ -55,6 +58,9 @@ getOrigin
 setByteArray
  ([B)TB;
  ([1B)TB;
+setChannel
+ (Ljava/nio/channels/Channel;)TB;
+ (Ljava/nio/channels/Channel;)TB;
 setCharSequence
  (Ljava/lang/CharSequence;)TB;
  (L1java/lang/CharSequence;)TB;
