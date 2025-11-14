@@ -84,24 +84,41 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
         <artifactId>maven-javadoc-plugin</artifactId>
         <configuration>
           <dependencyLinks>
+            <!--TODO workaround for
+                https://github.com/assertj/assertj/issues/3476
+                https://issues.apache.org/jira/projects/MJAVADOC/issues/MJAVADOC-792
+            -->
             <dependencyLink>
-              <!--TODO workaround for
-                  https://github.com/assertj/assertj/issues/3476
-                  https://issues.apache.org/jira/projects/MJAVADOC/issues/MJAVADOC-792
-              -->
               <groupId>org.assertj</groupId>
               <artifactId>assertj-core</artifactId>
-              <url>https://www.javadoc.io/doc/org.assertj/assertj-core/${assertj.version}</url>
+              <url>https://www.javadoc.io/doc/org.assertj/assertj-core/${org.assertj:assertj-core:jar.version}</url>
+            </dependencyLink>
+            <dependencyLink>
+              <groupId>org.ow2.asm</groupId>
+              <artifactId>asm</artifactId>
+              <url>https://www.javadoc.io/doc/org.ow2.asm/asm/${org.ow2.asm:asm:jar.version}</url>
+            </dependencyLink>
+            <dependencyLink>
+              <groupId>org.ow2.asm</groupId>
+              <artifactId>asm-analysis</artifactId>
+              <url>https://www.javadoc.io/doc/org.ow2.asm/asm-analysis/${org.ow2.asm:asm-analysis:jar.version}</url>
+            </dependencyLink>
+            <dependencyLink>
+              <groupId>org.ow2.asm</groupId>
+              <artifactId>asm-tree</artifactId>
+              <url>https://www.javadoc.io/doc/org.ow2.asm/asm-tree/${org.ow2.asm:asm-tree:jar.version}</url>
+            </dependencyLink>
+            <dependencyLink>
+              <groupId>org.ow2.asm</groupId>
+              <artifactId>asm-util</artifactId>
+              <url>https://www.javadoc.io/doc/org.ow2.asm/asm-util/${org.ow2.asm:asm-util:jar.version}</url>
+            </dependencyLink>
+            <dependencyLink>
+              <groupId>io.github.classgraph</groupId>
+              <artifactId>classgraph</artifactId>
+              <url>https://www.javadoc.io/doc/io.github.classgraph/classgraph/${io.github.classgraph:classgraph:jar.version}</url>
             </dependencyLink>
           </dependencyLinks>
-
-          <!--TODO harden javadoc against flaky external sites to prevent e.g.
-              [ERROR] Failed to execute goal org.apache.maven.plugins:maven-javadoc-plugin:3.12.0:jar (generate-and-attach-javadoc) on project no-npe-eea-generator:
-                      MavenReportException: Error while generating Javadoc:
-              [ERROR] Exit code: 1
-              [ERROR] javadoc: error - Error fetching URL: https://asm.ow2.io/apidocs/
-          -->
-          <detectLinks>false</detectLinks>
         </configuration>
       </plugin>
     </plugins>
