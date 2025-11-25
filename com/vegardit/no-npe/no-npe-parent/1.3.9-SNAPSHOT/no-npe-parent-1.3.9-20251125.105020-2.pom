@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: © Vegard IT GmbH (https://vegardit.com) and contributors
+SPDX-FileContributor: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
+SPDX-License-Identifier: EPL-2.0
+SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
+
+check for new dependency/plugin updates using:
+  mvn -U -ntp versions:display-dependency-updates versions:display-plugin-updates
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.vegardit.maven</groupId>
+    <artifactId>vegardit-maven-parent</artifactId>
+    <version>6.1.14</version>
+  </parent>
+
+  <groupId>com.vegardit.no-npe</groupId>
+  <artifactId>no-npe-parent</artifactId>
+  <version>1.3.9-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+
+  <name>${project.artifactId}</name>
+  <description>Eclipse External (null) Annotations for better static Null Analysis</description>
+  <url>https://github.com/vegardit/no-npe</url>
+  <inceptionYear>2022</inceptionYear>
+  <organization>
+    <!-- used as Specification/Implementation-Vendor in MANIFEST.MF -->
+    <name>Vegard IT GmbH, Germany</name>
+    <url>https://vegardit.com/</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>Eclipse Public License 2.0</name>
+      <distribution>repo</distribution>
+      <url>https://spdx.org/licenses/EPL-2.0</url>
+    </license>
+  </licenses>
+
+
+  <properties>
+    <java.version>11</java.version>
+
+    <skip.license-maven-plugin.check-thirdparty-licenses>true</skip.license-maven-plugin.check-thirdparty-licenses>
+    <skip.japicmp.cmp>true</skip.japicmp.cmp>
+
+    <nexus-staging-maven-plugin.nexusUrl>https://oss.sonatype.org/</nexus-staging-maven-plugin.nexusUrl>
+
+    <eea-generator.action>validate</eea-generator.action>
+  </properties>
+
+
+  <modules>
+    <module>eea-generator</module>
+    <module>libs/eea-java-11</module>
+    <module>libs/eea-java-17</module>
+    <module>libs/eea-java-21</module>
+    <module>libs/eea-java-25</module>
+    <module>libs/eea-byte-buddy-1</module>
+    <module>libs/eea-classgraph-4</module>
+    <module>libs/eea-commons-configuration-2</module>
+    <module>libs/eea-commons-io-2</module>
+    <module>libs/eea-commons-lang-3</module>
+    <module>libs/eea-eclipse-platform</module>
+    <module>libs/eea-directory-watcher-0</module>
+    <module>libs/eea-gson-2</module>
+    <module>libs/eea-guava</module>
+    <module>libs/eea-jackson-2</module>
+    <module>libs/eea-jakarta-mail-api-2</module>
+    <module>libs/eea-jakarta-servlet-api-6</module>
+    <module>libs/eea-javax-mail-api-1</module>
+    <module>libs/eea-javax-portlet-api-3</module>
+    <module>libs/eea-javax-servlet-api-4</module>
+    <module>libs/eea-jaxb-4</module>
+    <module>libs/eea-junit-5</module>
+    <module>libs/eea-junit-6</module>
+    <module>libs/eea-osgi-core-8</module>
+    <module>libs/eea-quartz-2</module>
+    <module>libs/eea-slf4j-1</module>
+    <module>libs/eea-slf4j-2</module>
+    <module>libs/eea-snakeyaml-2</module>
+    <module>libs/eea-spring-5</module>
+    <module>libs/eea-spring-6</module>
+    <module>libs/eea-wicket-10</module>
+    <module>libs/eea-xstream-1</module>
+    <module>eea-all</module>
+  </modules>
+
+
+  <scm>
+    <!-- http://maven.apache.org/scm/git.html -->
+    <url>https://github.com/vegardit/no-npe</url>
+    <connection>scm:git:https://github.com/vegardit/no-npe.git</connection>
+    <developerConnection>scm:git:https://github.com/vegardit/no-npe.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+
+  <issueManagement>
+    <system>github.com</system>
+    <url>https://github.com/vegardit/no-npe/issues</url>
+  </issueManagement>
+
+
+  <ciManagement>
+    <system>github.com</system>
+    <url>https://github.com/vegardit/no-npe/actions</url>
+  </ciManagement>
+
+
+  <profiles>
+    <profile>
+      <id>process-eeas</id>
+      <activation>
+        <file>
+          <exists>eea-generator.properties</exists>
+        </file>
+      </activation>
+
+      <properties>
+        <failIfNoTests>false</failIfNoTests>
+      </properties>
+
+      <build>
+        <resources>
+          <resource>
+            <directory>src/main/resources</directory>
+            <excludes>
+              <exclude>**/*.eea</exclude>
+            </excludes>
+            <filtering>false</filtering>
+          </resource>
+        </resources>
+
+        <plugins>
+          <plugin>
+            <!-- https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html -->
+            <!-- https://github.com/apache/felix-dev/tree/master/tools/maven-bundle-plugin -->
+            <groupId>org.apache.felix</groupId>
+            <artifactId>maven-bundle-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>manifest@process-classes</id>
+                <phase>process-classes</phase>
+                <goals>
+                  <goal>manifest</goal>
+                </goals>
+                <configuration>
+                  <skip>false</skip>
+                  <!-- https://bnd.bndtools.org/chapters/825-instructions-ref.html -->
+                  <instructions>
+                    <!--
+                      Declares that this plugin exports its external annotations (.eea files) and
+                      be considered by clients performing annotation based null analysis.
+                      See https://bugs.eclipse.org/bugs/show_bug.cgi?id=526011 and
+                      https://github.com/eclipse-pde/eclipse.pde/commit/3f9f33643122a8109460e88362593d67fde42ed5
+                    -->
+                    <Eclipse-ExportExternalAnnotations>true</Eclipse-ExportExternalAnnotations>
+                  </instructions>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.6.2</version>
+            <executions>
+              <execution>
+                <!-- generate/update *.eea files in src/main/resources -->
+                <id>${eea-generator.action}-eeas</id>
+                <phase>generate-resources</phase>
+                <goals>
+                  <goal>exec</goal>
+                </goals>
+                <configuration>
+                  <classpathScope>provided</classpathScope>
+                  <includePluginDependencies>true</includePluginDependencies>
+                  <executable>java</executable>
+                  <arguments>
+                    <argument>-Deea-generator.action=${eea-generator.action}</argument>
+                    <!--
+                       adding ${project.basedir}/../eea-java-11/src/main/resources to input dirs ensures that EEAs from JDK classes get propagated
+                       to EEA files in other modules, which is required because of https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2512
+                    -->
+                    <argument>-Deea-generator.input.dirs=${project.basedir}/src/main/resources,${project.basedir}/../eea-java-11/src/main/resources</argument>
+                    <argument>-Deea-generator.output.dir=${project.basedir}/src/main/resources</argument> <!-- perform in-place update -->
+                    <argument>-classpath</argument>
+                    <classpath />
+                    <argument>com.vegardit.no_npe.eea_generator.EEAGenerator</argument>
+                    <argument>${project.basedir}/eea-generator.properties</argument>
+                  </arguments>
+                </configuration>
+              </execution>
+              <execution>
+                <!-- copy minified versions of *.eea files to target/classes -->
+                <id>minimize-eeas</id>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>exec</goal>
+                </goals>
+                <configuration>
+                  <classpathScope>provided</classpathScope>
+                  <includePluginDependencies>true</includePluginDependencies>
+                  <executable>java</executable>
+                  <arguments>
+                    <argument>-Deea-generator.action=minimize</argument>
+                    <argument>-Deea-generator.input.dirs=${project.basedir}/src/main/resources</argument>
+                    <argument>-Deea-generator.input.dirs.extra=</argument>
+                    <argument>-Deea-generator.output.dir.default=${project.build.outputDirectory}</argument>
+                    <argument>-classpath</argument>
+                    <classpath />
+                    <argument>com.vegardit.no_npe.eea_generator.EEAGenerator</argument>
+                    <argument>${project.basedir}/eea-generator.properties</argument>
+                  </arguments>
+                </configuration>
+              </execution>
+            </executions>
+            <dependencies>
+              <dependency>
+                <groupId>com.vegardit.no-npe</groupId>
+                <artifactId>no-npe-eea-generator</artifactId>
+                <version>${project.version}</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+              <execution>
+                <!-- don't attach source jar for EEA projects -->
+                <id>attach-sources</id>
+                <phase>none</phase>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>
