@@ -15,6 +15,9 @@ onVisitInnerClass
 onVisitMethod
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lnet/bytebuddy/jar/asm/MethodVisitor;
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L0net/bytebuddy/jar/asm/MethodVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
+onVisitModule
+ (Ljava/lang/String;ILjava/lang/String;)Lnet/bytebuddy/jar/asm/ModuleVisitor;
+ (Ljava/lang/String;ILjava/lang/String;)L0net/bytebuddy/jar/asm/ModuleVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 onVisitNestHost
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

@@ -2,6 +2,12 @@ class net/bytebuddy/dynamic/DynamicType$Builder
  <T:Ljava/lang/Object;>
  <T:Ljava/lang/Object;>
 
+adjustModule
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
+adjustModule
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
 annotateType
  (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TT;>;
  (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)L1net/bytebuddy/dynamic/DynamicType$Builder<TT;>;
@@ -194,6 +200,15 @@ modifiers
 modifiers
  ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TT;>;
  ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;)L1net/bytebuddy/dynamic/DynamicType$Builder<TT;>;
+module
+ (Ljava/lang/String;I)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
+ (Ljava/lang/String;I)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
+module
+ (Ljava/lang/String;Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
+ (Ljava/lang/String;Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
+module
+ (Ljava/lang/String;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
+ (Ljava/lang/String;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
 name
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TT;>;
  (Ljava/lang/String;)L1net/bytebuddy/dynamic/DynamicType$Builder<TT;>;

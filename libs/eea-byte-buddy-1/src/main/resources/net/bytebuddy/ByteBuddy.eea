@@ -98,6 +98,12 @@ makeInterface
 makeInterface
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TT;>;
+makeModule
+ (Ljava/lang/String;Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<*>;
+ (Ljava/lang/String;Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<*>;
+makeModule
+ (Ljava/lang/String;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<*>;
+ (Ljava/lang/String;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<*>;
 makePackage
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;

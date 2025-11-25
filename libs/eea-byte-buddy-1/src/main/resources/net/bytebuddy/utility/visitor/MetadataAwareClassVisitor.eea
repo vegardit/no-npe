@@ -18,6 +18,9 @@ onVisitInnerClass
 onVisitMethod
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lnet/bytebuddy/jar/asm/MethodVisitor;
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L0net/bytebuddy/jar/asm/MethodVisitor;
+onVisitModule
+ (Ljava/lang/String;ILjava/lang/String;)Lnet/bytebuddy/jar/asm/ModuleVisitor;
+ (Ljava/lang/String;ILjava/lang/String;)L0net/bytebuddy/jar/asm/ModuleVisitor;
 onVisitNestHost
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -33,6 +36,9 @@ onVisitPermittedSubclass
 onVisitRecordComponent
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/bytebuddy/jar/asm/RecordComponentVisitor;
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)L0net/bytebuddy/jar/asm/RecordComponentVisitor;
+onVisitSource
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
 onVisitTypeAnnotation
  (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
  (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)L0net/bytebuddy/jar/asm/AnnotationVisitor;
@@ -51,6 +57,9 @@ visitInnerClass
 visitMethod
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lnet/bytebuddy/jar/asm/MethodVisitor;
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L0net/bytebuddy/jar/asm/MethodVisitor;
+visitModule
+ (Ljava/lang/String;ILjava/lang/String;)Lnet/bytebuddy/jar/asm/ModuleVisitor;
+ (Ljava/lang/String;ILjava/lang/String;)L0net/bytebuddy/jar/asm/ModuleVisitor;
 visitNestHost
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -66,6 +75,9 @@ visitPermittedSubclass
 visitRecordComponent
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/bytebuddy/jar/asm/RecordComponentVisitor;
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)L0net/bytebuddy/jar/asm/RecordComponentVisitor;
+visitSource
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
 visitTypeAnnotation
  (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
  (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)L0net/bytebuddy/jar/asm/AnnotationVisitor;

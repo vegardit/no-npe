@@ -6,6 +6,12 @@ super net/bytebuddy/dynamic/DynamicType$Builder$AbstractBase
  <TU;>
  <TU;>
 
+adjustModule
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
+adjustModule
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
 annotateType
  (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
  (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
@@ -78,6 +84,9 @@ merge
 modifiers
  (I)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
  (I)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+module
+ (Ljava/lang/String;I)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
+ (Ljava/lang/String;I)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
 name
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;

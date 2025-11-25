@@ -64,6 +64,9 @@ visibilityBridgeStrategy
 <init>
  (Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;Lnet/bytebuddy/dynamic/scaffold/FieldRegistry;Lnet/bytebuddy/dynamic/scaffold/MethodRegistry;Lnet/bytebuddy/dynamic/scaffold/RecordComponentRegistry;Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;Lnet/bytebuddy/asm/AsmVisitorWrapper;Lnet/bytebuddy/ClassFileVersion;Lnet/bytebuddy/implementation/auxiliary/AuxiliaryType$NamingStrategy;Lnet/bytebuddy/implementation/attribute/AnnotationValueFilter$Factory;Lnet/bytebuddy/implementation/attribute/AnnotationRetention;Lnet/bytebuddy/implementation/Implementation$Context$Factory;Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;Lnet/bytebuddy/dynamic/scaffold/TypeValidation;Lnet/bytebuddy/dynamic/VisibilityBridgeStrategy;Lnet/bytebuddy/utility/AsmClassReader$Factory;Lnet/bytebuddy/utility/AsmClassWriter$Factory;Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;)V
  (Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;Lnet/bytebuddy/dynamic/scaffold/FieldRegistry;Lnet/bytebuddy/dynamic/scaffold/MethodRegistry;Lnet/bytebuddy/dynamic/scaffold/RecordComponentRegistry;Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;Lnet/bytebuddy/asm/AsmVisitorWrapper;Lnet/bytebuddy/ClassFileVersion;Lnet/bytebuddy/implementation/auxiliary/AuxiliaryType$NamingStrategy;Lnet/bytebuddy/implementation/attribute/AnnotationValueFilter$Factory;Lnet/bytebuddy/implementation/attribute/AnnotationRetention;Lnet/bytebuddy/implementation/Implementation$Context$Factory;Lnet/bytebuddy/dynamic/scaffold/MethodGraph$Compiler;Lnet/bytebuddy/dynamic/scaffold/TypeValidation;Lnet/bytebuddy/dynamic/VisibilityBridgeStrategy;Lnet/bytebuddy/utility/AsmClassReader$Factory;Lnet/bytebuddy/utility/AsmClassWriter$Factory;Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/method/MethodDescription;>;Ljava/util/List<+Lnet/bytebuddy/dynamic/DynamicType;>;)V
+adjustModule
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
+ (Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)L1net/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
 annotateType
  (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
  (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
@@ -121,6 +124,9 @@ merge
 modifiers
  (I)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
  (I)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
+module
+ (Ljava/lang/String;I)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
+ (Ljava/lang/String;I)L1net/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TU;>;
 name
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TU;>;

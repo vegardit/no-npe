@@ -1,0 +1,61 @@
+class net/bytebuddy/description/module/ModuleDescription$ForLoadedModule
+
+MODULE
+ Lnet/bytebuddy/description/module/ModuleDescription$ForLoadedModule$Module;
+ L1net/bytebuddy/description/module/ModuleDescription$ForLoadedModule$Module;
+MODULE_DESCRIPTOR
+ Lnet/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor;
+ L1net/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor;
+MODULE_DESCRIPTOR_EXPORTS
+ Lnet/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor$Exports;
+ L1net/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor$Exports;
+MODULE_DESCRIPTOR_OPENS
+ Lnet/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor$Opens;
+ L1net/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor$Opens;
+MODULE_DESCRIPTOR_PROVIDES
+ Lnet/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor$Provides;
+ L1net/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor$Provides;
+MODULE_DESCRIPTOR_REQUIRES
+ Lnet/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor$Requires;
+ L1net/bytebuddy/description/module/ModuleDescription$ForLoadedModule$ModuleDescriptor$Requires;
+OPTIONAL
+ Lnet/bytebuddy/description/module/ModuleDescription$ForLoadedModule$Optional;
+ L1net/bytebuddy/description/module/ModuleDescription$ForLoadedModule$Optional;
+
+of
+ (Ljava/lang/Object;)Lnet/bytebuddy/description/module/ModuleDescription;
+ (Ljava/lang/Object;)L1net/bytebuddy/description/module/ModuleDescription;
+
+<init>
+ (Ljava/lang/reflect/AnnotatedElement;)V
+ (Ljava/lang/reflect/AnnotatedElement;)V
+getActualName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getDeclaredAnnotations
+ ()Lnet/bytebuddy/description/annotation/AnnotationList;
+ ()L1net/bytebuddy/description/annotation/AnnotationList;
+getExports
+ ()Ljava/util/Map<Ljava/lang/String;Lnet/bytebuddy/description/module/ModuleDescription$Exports;>;
+ ()L1java/util/Map<Ljava/lang/String;Lnet/bytebuddy/description/module/ModuleDescription$Exports;>;
+getMainClass
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(net.bytebuddy.description.module.ModuleDescription)
+getOpens
+ ()Ljava/util/Map<Ljava/lang/String;Lnet/bytebuddy/description/module/ModuleDescription$Opens;>;
+ ()L1java/util/Map<Ljava/lang/String;Lnet/bytebuddy/description/module/ModuleDescription$Opens;>;
+getPackages
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getProvides
+ ()Ljava/util/Map<Ljava/lang/String;Lnet/bytebuddy/description/module/ModuleDescription$Provides;>;
+ ()L1java/util/Map<Ljava/lang/String;Lnet/bytebuddy/description/module/ModuleDescription$Provides;>;
+getRequires
+ ()Ljava/util/Map<Ljava/lang/String;Lnet/bytebuddy/description/module/ModuleDescription$Requires;>;
+ ()L1java/util/Map<Ljava/lang/String;Lnet/bytebuddy/description/module/ModuleDescription$Requires;>;
+getUses
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getVersion
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(net.bytebuddy.description.module.ModuleDescription)

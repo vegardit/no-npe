@@ -8,8 +8,8 @@ of
  (Ljava/lang/String;Lnet/bytebuddy/description/type/TypeDescription$Generic;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType;
 
 <init>
- (Ljava/lang/String;ILnet/bytebuddy/description/type/TypeDescription$Generic;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeVariableToken;>;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription$Generic;>;Ljava/util/List<+Lnet/bytebuddy/description/field/FieldDescription$Token;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<+Lnet/bytebuddy/description/method/MethodDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/type/RecordComponentDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;Lnet/bytebuddy/dynamic/scaffold/TypeInitializer;Lnet/bytebuddy/implementation/LoadedTypeInitializer;Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;Lnet/bytebuddy/description/type/TypeDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;ZZZLnet/bytebuddy/description/type/TypeDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;)V
- (Ljava/lang/String;ILnet/bytebuddy/description/type/TypeDescription$Generic;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeVariableToken;>;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription$Generic;>;Ljava/util/List<+Lnet/bytebuddy/description/field/FieldDescription$Token;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<+Lnet/bytebuddy/description/method/MethodDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/type/RecordComponentDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;Lnet/bytebuddy/dynamic/scaffold/TypeInitializer;Lnet/bytebuddy/implementation/LoadedTypeInitializer;Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;Lnet/bytebuddy/description/type/TypeDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;ZZZLnet/bytebuddy/description/type/TypeDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;)V
+ (Ljava/lang/String;ILnet/bytebuddy/description/module/ModuleDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeVariableToken;>;Lnet/bytebuddy/description/type/TypeDescription$Generic;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription$Generic;>;Ljava/util/List<+Lnet/bytebuddy/description/field/FieldDescription$Token;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<+Lnet/bytebuddy/description/method/MethodDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/type/RecordComponentDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;Lnet/bytebuddy/dynamic/scaffold/TypeInitializer;Lnet/bytebuddy/implementation/LoadedTypeInitializer;Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;Lnet/bytebuddy/description/type/TypeDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;ZZZLnet/bytebuddy/description/type/TypeDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;)V
+ (Ljava/lang/String;ILnet/bytebuddy/description/module/ModuleDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeVariableToken;>;Lnet/bytebuddy/description/type/TypeDescription$Generic;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription$Generic;>;Ljava/util/List<+Lnet/bytebuddy/description/field/FieldDescription$Token;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/List<+Lnet/bytebuddy/description/method/MethodDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/type/RecordComponentDescription$Token;>;Ljava/util/List<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;Lnet/bytebuddy/dynamic/scaffold/TypeInitializer;Lnet/bytebuddy/implementation/LoadedTypeInitializer;Lnet/bytebuddy/description/type/TypeDescription;Lnet/bytebuddy/description/method/MethodDescription$InDefinedShape;Lnet/bytebuddy/description/type/TypeDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;ZZZLnet/bytebuddy/description/type/TypeDescription;Ljava/util/List<+Lnet/bytebuddy/description/type/TypeDescription;>;)V
 getDeclaredAnnotations
  ()Lnet/bytebuddy/description/annotation/AnnotationList;
  ()L1net/bytebuddy/description/annotation/AnnotationList;
@@ -64,6 +64,9 @@ getTypeInitializer
 getTypeVariables
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
+toModuleDescription
+ ()Lnet/bytebuddy/description/module/ModuleDescription;
+ ()L0net/bytebuddy/description/module/ModuleDescription; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 validated
  ()Lnet/bytebuddy/description/type/TypeDescription;
  ()Lnet/bytebuddy/description/type/TypeDescription;
@@ -109,6 +112,9 @@ withMethod
 withModifiers
  (I)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
  (I)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
+withModuleDescription
+ (Lnet/bytebuddy/description/module/ModuleDescription;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
+ (Lnet/bytebuddy/description/module/ModuleDescription;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
 withName
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;

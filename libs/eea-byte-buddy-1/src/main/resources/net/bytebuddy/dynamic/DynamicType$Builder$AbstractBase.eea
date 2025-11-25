@@ -6,6 +6,9 @@ super net/bytebuddy/dynamic/DynamicType$Builder
  <TS;>
  <TS;>
 
+adjustModule
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TS;>;
+ ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TS;>;
 annotateType
  (Ljava/util/List<+Ljava/lang/annotation/Annotation;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TS;>;
  (Ljava/util/List<+Ljava/lang/annotation/Annotation;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TS;>;
@@ -141,6 +144,12 @@ modifiers
 modifiers
  ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TS;>;
  ([Lnet/bytebuddy/description/modifier/ModifierContributor$ForType;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TS;>;
+module
+ (Ljava/lang/String;Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TS;>;
+ (Ljava/lang/String;Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TS;>;
+module
+ (Ljava/lang/String;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TS;>;
+ (Ljava/lang/String;[Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TS;>;
 nestHost
  (Ljava/lang/Class<*>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TS;>;
  (Ljava/lang/Class<*>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TS;>;

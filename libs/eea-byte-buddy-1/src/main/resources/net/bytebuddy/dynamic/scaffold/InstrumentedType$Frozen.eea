@@ -63,6 +63,9 @@ getTypeInitializer
 getTypeVariables
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
  ()Lnet/bytebuddy/description/type/TypeList$Generic;
+toModuleDescription
+ ()Lnet/bytebuddy/description/module/ModuleDescription;
+ ()L0net/bytebuddy/description/module/ModuleDescription; # @Inherited(net.bytebuddy.description.type.TypeDescription)
 validated
  ()Lnet/bytebuddy/description/type/TypeDescription;
  ()Lnet/bytebuddy/description/type/TypeDescription;
@@ -108,6 +111,9 @@ withMethod
 withModifiers
  (I)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
  (I)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
+withModuleDescription
+ (Lnet/bytebuddy/description/module/ModuleDescription;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
+ (Lnet/bytebuddy/description/module/ModuleDescription;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
 withName
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/scaffold/InstrumentedType$WithFlexibleName;
