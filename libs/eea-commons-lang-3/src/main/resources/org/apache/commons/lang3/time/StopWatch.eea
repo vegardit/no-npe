@@ -28,6 +28,9 @@ getMessage
 getSplitDuration
  ()Ljava/time/Duration;
  ()Ljava/time/Duration;
+getSplits
+ ()Ljava/util/List<Lorg/apache/commons/lang3/time/StopWatch$Split;>;
+ ()Ljava/util/List<Lorg/apache/commons/lang3/time/StopWatch$Split;>;
 getStartInstant
  ()Ljava/time/Instant;
  ()Ljava/time/Instant;
@@ -46,6 +49,9 @@ run
 runT
  <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableRunnable<TE;>;)V
  <E:Ljava/lang/Throwable;>(Lorg/apache/commons/lang3/function/FailableRunnable<TE;>;)V
+split
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
 toSplitString
  ()Ljava/lang/String;
  ()L1java/lang/String;
