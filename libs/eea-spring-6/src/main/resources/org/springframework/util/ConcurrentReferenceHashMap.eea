@@ -15,6 +15,15 @@ super java/util/concurrent/ConcurrentMap
 <init>
  (ILorg/springframework/util/ConcurrentReferenceHashMap$ReferenceType;)V
  (ILorg/springframework/util/ConcurrentReferenceHashMap$ReferenceType;)V
+compute
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+computeIfAbsent
+ (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
+ (TK;Ljava/util/function/Function<-TK;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+computeIfPresent
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
+ (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)T0V;
 containsKey
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
@@ -39,6 +48,12 @@ getReference
 getSegment
  (I)Lorg/springframework/util/ConcurrentReferenceHashMap<TK;TV;>.Segment;
  (I)Lorg/springframework/util/ConcurrentReferenceHashMap<TK;TV;>.Segment;
+keySet
+ ()Ljava/util/Set<TK;>;
+ ()L1java/util/Set<TK;>; # @Inherited(java.util.AbstractMap)
+merge
+ (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)TV;
+ (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)T0V;
 put
  (TK;TV;)TV;
  (TK;TV;)T0V; # @Inherited(java.util.AbstractMap)
@@ -57,3 +72,6 @@ replace
 replace
  (TK;TV;TV;)Z
  (TK;TV;TV;)Z
+values
+ ()Ljava/util/Collection<TV;>;
+ ()L1java/util/Collection<TV;>; # @Inherited(java.util.AbstractMap)
