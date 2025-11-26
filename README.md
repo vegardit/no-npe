@@ -20,7 +20,7 @@
 
 ## <a name="what-is-it"></a>What is it?
 
-**No NPE!** is a repository of [Eclipse External Null Annotations](https://wiki.eclipse.org/JDT_Core/Null_Analysis/External_Annotations) for
+**No NPE!** is a repository of [Eclipse External Null Annotations](https://github.com/eclipse-jdt/eclipse.jdt.core/wiki/Null-Analysis-External-Annotations) for
 better static Null Analysis with the Eclipse Java Compiler (ecj).
 
 
@@ -281,7 +281,7 @@ generating/packaging/validating of EEA files/archives has been taken.
 - [AssertJ](https://github.com/assertj/assertj) - strongly-typed assertions for unit testing
 
 **Tutorials**
-- Null Analysis/External Annotations https://wiki.eclipse.org/JDT_Core/Null_Analysis/External_Annotations
+- Null Analysis/External Annotations https://github.com/eclipse-jdt/eclipse.jdt.core/wiki/Null-Analysis-External-Annotations
 - Using external null annotations https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.jdt.doc.user/tasks/task-using_external_null_annotations.htm
 - Type Signature Syntax https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.jdt.doc.isv/reference/api/org/eclipse/jdt/core/Signature.html
 - NullPointerException presentation given at EclipseCon Europe 2016 https://www.slideshare.net/mikervorburger/the-end-of-the-world-as-we-know-it-aka-your-last-nullpointerexception-1b-bugs
