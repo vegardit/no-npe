@@ -1,0 +1,23 @@
+class org/assertj/core/api/AbstractEnumerableAssert
+ <SELF:Lorg/assertj/core/api/AbstractEnumerableAssert<TSELF;TACTUAL;TELEMENT;>;ACTUAL:Ljava/lang/Object;ELEMENT:Ljava/lang/Object;>
+ <SELF:Lorg/assertj/core/api/AbstractEnumerableAssert<TSELF;TACTUAL;TELEMENT;>;ACTUAL:Ljava/lang/Object;ELEMENT:Ljava/lang/Object;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;TACTUAL;>
+ <TSELF;TACTUAL;>
+super org/assertj/core/api/EnumerableAssert
+ <Lorg/assertj/core/api/AbstractEnumerableAssert<TSELF;TACTUAL;TELEMENT;>;TELEMENT;>
+ <Lorg/assertj/core/api/AbstractEnumerableAssert<TSELF;TACTUAL;TELEMENT;>;TELEMENT;>
+
+<init>
+ (TACTUAL;Ljava/lang/Class<*>;)V
+ (TACTUAL;Ljava/lang/Class<*>;)V
+hasSameSizeAs
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF; # @Inherited(org.assertj.core.api.EnumerableAssert)
+inBinary
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+inHexadecimal
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)

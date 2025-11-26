@@ -1,0 +1,21 @@
+class org/assertj/core/condition/NestableCondition
+ <ACTUAL:Ljava/lang/Object;NESTED:Ljava/lang/Object;>
+ <ACTUAL:Ljava/lang/Object;NESTED:Ljava/lang/Object;>
+
+super org/assertj/core/condition/Join
+ <TACTUAL;>
+ <TACTUAL;>
+
+nestable
+ <ACTUAL:Ljava/lang/Object;>(Ljava/lang/String;[Lorg/assertj/core/api/Condition<-TACTUAL;>;)Lorg/assertj/core/api/Condition<TACTUAL;>;
+ <ACTUAL:Ljava/lang/Object;>(Ljava/lang/String;[Lorg/assertj/core/api/Condition<-TACTUAL;>;)L1org/assertj/core/api/Condition<TACTUAL;>;
+nestable
+ <ACTUAL:Ljava/lang/Object;NESTED:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/function/Function<-TACTUAL;+TNESTED;>;[Lorg/assertj/core/api/Condition<-TNESTED;>;)Lorg/assertj/core/api/Condition<TACTUAL;>;
+ <ACTUAL:Ljava/lang/Object;NESTED:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/function/Function<-TACTUAL;+TNESTED;>;[Lorg/assertj/core/api/Condition<-TNESTED;>;)L1org/assertj/core/api/Condition<TACTUAL;>;
+
+descriptionPrefix
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+matches
+ (TACTUAL;)Z
+ (TACTUAL;)Z

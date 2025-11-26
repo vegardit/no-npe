@@ -1,0 +1,33 @@
+class org/assertj/core/api/AbstractSoftAssertions
+
+assertAll
+ (Lorg/assertj/core/api/AssertionErrorCollector;)V
+ (Lorg/assertj/core/api/AssertionErrorCollector;)V
+
+errorsCollected
+ ()Ljava/util/List<Ljava/lang/Throwable;>;
+ ()Ljava/util/List<Ljava/lang/Throwable;>;
+fail
+ <T:Ljava/lang/Object;>()TT;
+ <T:Ljava/lang/Object;>()TT;
+fail
+ <T:Ljava/lang/Object;>(Ljava/lang/String;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;)T0T;
+fail
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Throwable;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Throwable;)T0T;
+fail
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;)TT;
+fail
+ <T:Ljava/lang/Object;>(Ljava/lang/Throwable;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Throwable;)TT;
+failBecauseExceptionWasNotThrown
+ (Ljava/lang/Class<+Ljava/lang/Throwable;>;)V
+ (Ljava/lang/Class<+Ljava/lang/Throwable;>;)V
+proxy
+ <SELF::Lorg/assertj/core/api/Assert<+TSELF;+TACTUAL;>;ACTUAL:Ljava/lang/Object;>(Ljava/lang/Class<TSELF;>;Ljava/lang/Class<TACTUAL;>;TACTUAL;)TSELF;
+ <SELF::Lorg/assertj/core/api/Assert<+TSELF;+TACTUAL;>;ACTUAL:Ljava/lang/Object;>(Ljava/lang/Class<TSELF;>;Ljava/lang/Class<TACTUAL;>;TACTUAL;)T1SELF; # @Inherited(org.assertj.core.api.SoftAssertionsProvider)
+shouldHaveThrown
+ (Ljava/lang/Class<+Ljava/lang/Throwable;>;)V
+ (Ljava/lang/Class<+Ljava/lang/Throwable;>;)V

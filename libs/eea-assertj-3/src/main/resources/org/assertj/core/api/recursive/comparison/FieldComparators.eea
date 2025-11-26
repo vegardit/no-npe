@@ -1,0 +1,28 @@
+class org/assertj/core/api/recursive/comparison/FieldComparators
+
+super org/assertj/core/api/recursive/comparison/FieldHolder
+ <Ljava/util/Comparator<*>;>
+ <Ljava/util/Comparator<*>;>
+
+comparatorByPatterns
+ Ljava/util/LinkedList<Lorg/assertj/core/api/recursive/comparison/ComparatorForPatterns;>;
+ Ljava/util/LinkedList<Lorg/assertj/core/api/recursive/comparison/ComparatorForPatterns;>;
+
+comparatorByFields
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Comparator<*>;>;>;
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Comparator<*>;>;>;
+comparatorByRegexFields
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/util/List<Ljava/util/regex/Pattern;>;Ljava/util/Comparator<*>;>;>;
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/util/List<Ljava/util/regex/Pattern;>;Ljava/util/Comparator<*>;>;>;
+getComparatorForField
+ (Ljava/lang/String;)Ljava/util/Comparator<*>;
+ (Ljava/lang/String;)Ljava/util/Comparator<*>;
+hasComparatorForField
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+registerComparator
+ (Ljava/lang/String;Ljava/util/Comparator<*>;)V
+ (Ljava/lang/String;Ljava/util/Comparator<*>;)V
+registerComparatorForFieldsMatchingRegexes
+ ([Ljava/lang/String;Ljava/util/Comparator<*>;)V
+ ([Ljava/lang/String;Ljava/util/Comparator<*>;)V

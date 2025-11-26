@@ -1,0 +1,53 @@
+class org/assertj/core/api/AbstractComparableAssert
+ <SELF:Lorg/assertj/core/api/AbstractComparableAssert<TSELF;TACTUAL;>;ACTUAL::Ljava/lang/Comparable<-TACTUAL;>;>
+ <SELF:Lorg/assertj/core/api/AbstractComparableAssert<TSELF;TACTUAL;>;ACTUAL::Ljava/lang/Comparable<-TACTUAL;>;>
+
+super org/assertj/core/api/AbstractObjectAssert
+ <TSELF;TACTUAL;>
+ <TSELF;TACTUAL;>
+super org/assertj/core/api/ComparableAssert
+ <TSELF;TACTUAL;>
+ <TSELF;TACTUAL;>
+
+<init>
+ (TACTUAL;Ljava/lang/Class<*>;)V
+ (TACTUAL;Ljava/lang/Class<*>;)V
+inBinary
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+inHexadecimal
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+isBetween
+ (TACTUAL;TACTUAL;)TSELF;
+ (TACTUAL;TACTUAL;)T1SELF; # @Inherited(org.assertj.core.api.ComparableAssert)
+isEqualByComparingTo
+ (TACTUAL;)TSELF;
+ (TACTUAL;)T1SELF; # @Inherited(org.assertj.core.api.ComparableAssert)
+isGreaterThan
+ (TACTUAL;)TSELF;
+ (TACTUAL;)T1SELF; # @Inherited(org.assertj.core.api.ComparableAssert)
+isGreaterThanOrEqualTo
+ (TACTUAL;)TSELF;
+ (TACTUAL;)T1SELF; # @Inherited(org.assertj.core.api.ComparableAssert)
+isLessThan
+ (TACTUAL;)TSELF;
+ (TACTUAL;)T1SELF; # @Inherited(org.assertj.core.api.ComparableAssert)
+isLessThanOrEqualTo
+ (TACTUAL;)TSELF;
+ (TACTUAL;)T1SELF; # @Inherited(org.assertj.core.api.ComparableAssert)
+isNotEqualByComparingTo
+ (TACTUAL;)TSELF;
+ (TACTUAL;)T1SELF; # @Inherited(org.assertj.core.api.ComparableAssert)
+isStrictlyBetween
+ (TACTUAL;TACTUAL;)TSELF;
+ (TACTUAL;TACTUAL;)T1SELF; # @Inherited(org.assertj.core.api.ComparableAssert)
+usingComparator
+ (Ljava/util/Comparator<-TACTUAL;>;)TSELF;
+ (Ljava/util/Comparator<-TACTUAL;>;)T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+usingComparator
+ (Ljava/util/Comparator<-TACTUAL;>;Ljava/lang/String;)TSELF;
+ (Ljava/util/Comparator<-TACTUAL;>;Ljava/lang/String;)T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+usingDefaultComparator
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)

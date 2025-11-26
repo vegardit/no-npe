@@ -1,0 +1,113 @@
+class org/assertj/core/api/RecursiveComparisonAssert
+ <SELF:Lorg/assertj/core/api/RecursiveComparisonAssert<TSELF;>;>
+ <SELF:Lorg/assertj/core/api/RecursiveComparisonAssert<TSELF;>;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;Ljava/lang/Object;>
+ <TSELF;Ljava/lang/Object;>
+
+<init>
+ (Ljava/lang/Object;Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;)V
+ (Ljava/lang/Object;Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;)V
+comparingOnlyFields
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+comparingOnlyFieldsOfTypes
+ ([Ljava/lang/Class<*>;)TSELF;
+ ([Ljava/lang/Class<*>;)T1SELF;
+getRecursiveComparisonConfiguration
+ ()Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;
+ ()Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;
+ignoringActualEmptyOptionalFields
+ ()TSELF;
+ ()T1SELF;
+ignoringActualNullFields
+ ()TSELF;
+ ()T1SELF;
+ignoringAllOverriddenEquals
+ ()TSELF;
+ ()T1SELF;
+ignoringCollectionOrder
+ ()TSELF;
+ ()T1SELF;
+ignoringCollectionOrderInFields
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+ignoringCollectionOrderInFieldsMatchingRegexes
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+ignoringExpectedNullFields
+ ()TSELF;
+ ()T1SELF;
+ignoringFields
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+ignoringFieldsMatchingRegexes
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+ignoringFieldsOfTypes
+ ([Ljava/lang/Class<*>;)Lorg/assertj/core/api/RecursiveComparisonAssert<*>;
+ ([Ljava/lang/Class<*>;)L1org/assertj/core/api/RecursiveComparisonAssert<*>;
+ignoringFieldsOfTypesMatchingRegexes
+ ([Ljava/lang/String;)Lorg/assertj/core/api/RecursiveComparisonAssert<*>;
+ ([Ljava/lang/String;)L1org/assertj/core/api/RecursiveComparisonAssert<*>;
+ignoringOverriddenEqualsForFields
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+ignoringOverriddenEqualsForFieldsMatchingRegexes
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+ignoringOverriddenEqualsForTypes
+ ([Ljava/lang/Class<*>;)TSELF;
+ ([Ljava/lang/Class<*>;)T1SELF;
+isEqualTo
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+isIn
+ (Ljava/lang/Iterable<*>;)TSELF;
+ (Ljava/lang/Iterable<*>;)T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+isIn
+ ([Ljava/lang/Object;)TSELF;
+ ([Ljava/lang/Object;)T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+isNotEqualTo
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+isNotIn
+ (Ljava/lang/Iterable<*>;)TSELF;
+ (Ljava/lang/Iterable<*>;)T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+isNotIn
+ ([Ljava/lang/Object;)TSELF;
+ ([Ljava/lang/Object;)T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+usingOverriddenEquals
+ ()TSELF;
+ ()T1SELF;
+withComparatorForFields
+ (Ljava/util/Comparator<*>;[Ljava/lang/String;)TSELF;
+ (Ljava/util/Comparator<*>;[Ljava/lang/String;)T1SELF;
+withComparatorForType
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;Ljava/lang/Class<TT;>;)TSELF;
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;Ljava/lang/Class<TT;>;)T1SELF;
+withEnumStringComparison
+ ()TSELF;
+ ()T1SELF;
+withEqualsForFields
+ (Ljava/util/function/BiPredicate<**>;[Ljava/lang/String;)TSELF;
+ (Ljava/util/function/BiPredicate<**>;[Ljava/lang/String;)T1SELF;
+withEqualsForFieldsMatchingRegexes
+ (Ljava/util/function/BiPredicate<**>;[Ljava/lang/String;)TSELF;
+ (Ljava/util/function/BiPredicate<**>;[Ljava/lang/String;)T1SELF;
+withEqualsForType
+ <T:Ljava/lang/Object;>(Ljava/util/function/BiPredicate<-TT;-TT;>;Ljava/lang/Class<TT;>;)TSELF;
+ <T:Ljava/lang/Object;>(Ljava/util/function/BiPredicate<-TT;-TT;>;Ljava/lang/Class<TT;>;)T1SELF;
+withErrorMessageForFields
+ (Ljava/lang/String;[Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;[Ljava/lang/String;)T1SELF;
+withErrorMessageForType
+ (Ljava/lang/String;Ljava/lang/Class<*>;)TSELF;
+ (Ljava/lang/String;Ljava/lang/Class<*>;)T1SELF;
+withIntrospectionStrategy
+ (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonIntrospectionStrategy;)TSELF;
+ (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonIntrospectionStrategy;)T1SELF;
+withStrictTypeChecking
+ ()TSELF;
+ ()T1SELF;

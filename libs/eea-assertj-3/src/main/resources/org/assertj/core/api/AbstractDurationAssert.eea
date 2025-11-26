@@ -1,0 +1,41 @@
+class org/assertj/core/api/AbstractDurationAssert
+ <SELF:Lorg/assertj/core/api/AbstractDurationAssert<TSELF;>;>
+ <SELF:Lorg/assertj/core/api/AbstractDurationAssert<TSELF;>;>
+
+super org/assertj/core/api/AbstractComparableAssert
+ <TSELF;Ljava/time/Duration;>
+ <TSELF;Ljava/time/Duration;>
+
+<init>
+ (Ljava/time/Duration;Ljava/lang/Class<*>;)V
+ (Ljava/time/Duration;Ljava/lang/Class<*>;)V
+hasDays
+ (J)TSELF;
+ (J)T1SELF;
+hasHours
+ (J)TSELF;
+ (J)T1SELF;
+hasMillis
+ (J)TSELF;
+ (J)T1SELF;
+hasMinutes
+ (J)TSELF;
+ (J)T1SELF;
+hasNanos
+ (J)TSELF;
+ (J)T1SELF;
+hasSeconds
+ (J)TSELF;
+ (J)T1SELF;
+isCloseTo
+ (Ljava/time/Duration;Ljava/time/Duration;)TSELF;
+ (Ljava/time/Duration;Ljava/time/Duration;)T1SELF;
+isNegative
+ ()TSELF;
+ ()T1SELF;
+isPositive
+ ()TSELF;
+ ()T1SELF;
+isZero
+ ()TSELF;
+ ()T1SELF;

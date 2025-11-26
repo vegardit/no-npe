@@ -1,0 +1,83 @@
+class org/assertj/core/api/AbstractCompletableFutureAssert
+ <SELF:Lorg/assertj/core/api/AbstractCompletableFutureAssert<TSELF;TRESULT;>;RESULT:Ljava/lang/Object;>
+ <SELF:Lorg/assertj/core/api/AbstractCompletableFutureAssert<TSELF;TRESULT;>;RESULT:Ljava/lang/Object;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;Ljava/util/concurrent/CompletableFuture<TRESULT;>;>
+ <TSELF;Ljava/util/concurrent/CompletableFuture<TRESULT;>;>
+
+<init>
+ (Ljava/util/concurrent/CompletableFuture<TRESULT;>;Ljava/lang/Class<*>;)V
+ (Ljava/util/concurrent/CompletableFuture<TRESULT;>;Ljava/lang/Class<*>;)V
+completesExceptionallyWithin
+ (JLjava/util/concurrent/TimeUnit;)Lorg/assertj/core/api/WithThrowable;
+ (JLjava/util/concurrent/TimeUnit;)Lorg/assertj/core/api/WithThrowable;
+completesExceptionallyWithin
+ (Ljava/time/Duration;)Lorg/assertj/core/api/WithThrowable;
+ (Ljava/time/Duration;)Lorg/assertj/core/api/WithThrowable;
+failsWithin
+ (JLjava/util/concurrent/TimeUnit;)Lorg/assertj/core/api/WithThrowable;
+ (JLjava/util/concurrent/TimeUnit;)Lorg/assertj/core/api/WithThrowable;
+failsWithin
+ (Ljava/time/Duration;)Lorg/assertj/core/api/WithThrowable;
+ (Ljava/time/Duration;)Lorg/assertj/core/api/WithThrowable;
+hasFailed
+ ()TSELF;
+ ()T1SELF;
+hasFailedWithThrowableThat
+ ()Lorg/assertj/core/api/AbstractThrowableAssert<*+Ljava/lang/Throwable;>;
+ ()L1org/assertj/core/api/AbstractThrowableAssert<*+Ljava/lang/Throwable;>;
+hasNotFailed
+ ()TSELF;
+ ()T1SELF;
+isCancelled
+ ()TSELF;
+ ()T1SELF;
+isCompleted
+ ()TSELF;
+ ()T1SELF;
+isCompletedExceptionally
+ ()TSELF;
+ ()T1SELF;
+isCompletedWithValue
+ (TRESULT;)TSELF;
+ (TRESULT;)T1SELF;
+isCompletedWithValueMatching
+ (Ljava/util/function/Predicate<-TRESULT;>;)TSELF;
+ (Ljava/util/function/Predicate<-TRESULT;>;)T1SELF;
+isCompletedWithValueMatching
+ (Ljava/util/function/Predicate<-TRESULT;>;Ljava/lang/String;)TSELF;
+ (Ljava/util/function/Predicate<-TRESULT;>;Ljava/lang/String;)T1SELF;
+isCompletedWithValueMatchingWithin
+ (Ljava/util/function/Predicate<TRESULT;>;Ljava/time/Duration;)TSELF;
+ (Ljava/util/function/Predicate<TRESULT;>;Ljava/time/Duration;)T1SELF;
+isDone
+ ()TSELF;
+ ()T1SELF;
+isNotCancelled
+ ()TSELF;
+ ()T1SELF;
+isNotCompleted
+ ()TSELF;
+ ()T1SELF;
+isNotCompletedExceptionally
+ ()TSELF;
+ ()T1SELF;
+isNotDone
+ ()TSELF;
+ ()T1SELF;
+newObjectAssert
+ (TRESULT;)Lorg/assertj/core/api/ObjectAssert<TRESULT;>;
+ (TRESULT;)L1org/assertj/core/api/ObjectAssert<TRESULT;>;
+succeedsWithin
+ (JLjava/util/concurrent/TimeUnit;)Lorg/assertj/core/api/ObjectAssert<TRESULT;>;
+ (JLjava/util/concurrent/TimeUnit;)L1org/assertj/core/api/ObjectAssert<TRESULT;>;
+succeedsWithin
+ (Ljava/time/Duration;)Lorg/assertj/core/api/ObjectAssert<TRESULT;>;
+ (Ljava/time/Duration;)L1org/assertj/core/api/ObjectAssert<TRESULT;>;
+succeedsWithin
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(JLjava/util/concurrent/TimeUnit;Lorg/assertj/core/api/InstanceOfAssertFactory<TRESULT;TASSERT;>;)TASSERT;
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(JLjava/util/concurrent/TimeUnit;Lorg/assertj/core/api/InstanceOfAssertFactory<TRESULT;TASSERT;>;)T1ASSERT;
+succeedsWithin
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/time/Duration;Lorg/assertj/core/api/InstanceOfAssertFactory<TRESULT;TASSERT;>;)TASSERT;
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/time/Duration;Lorg/assertj/core/api/InstanceOfAssertFactory<TRESULT;TASSERT;>;)T1ASSERT;

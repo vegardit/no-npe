@@ -1,0 +1,74 @@
+class org/assertj/core/api/AbstractOptionalAssert
+ <SELF:Lorg/assertj/core/api/AbstractOptionalAssert<TSELF;TVALUE;>;VALUE:Ljava/lang/Object;>
+ <SELF:Lorg/assertj/core/api/AbstractOptionalAssert<TSELF;TVALUE;>;VALUE:Ljava/lang/Object;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;Ljava/util/Optional<TVALUE;>;>
+ <TSELF;Ljava/util/Optional<TVALUE;>;>
+
+<init>
+ (Ljava/util/Optional<TVALUE;>;Ljava/lang/Class<*>;)V
+ (Ljava/util/Optional<TVALUE;>;Ljava/lang/Class<*>;)V
+contains
+ (TVALUE;)TSELF;
+ (TVALUE;)T1SELF;
+containsInstanceOf
+ (Ljava/lang/Class<*>;)TSELF;
+ (Ljava/lang/Class<*>;)T1SELF;
+containsSame
+ (TVALUE;)TSELF;
+ (TVALUE;)T1SELF;
+flatMap
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TVALUE;Ljava/util/Optional<TU;>;>;)Lorg/assertj/core/api/AbstractOptionalAssert<*TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TVALUE;Ljava/util/Optional<TU;>;>;)L1org/assertj/core/api/AbstractOptionalAssert<*TU;>;
+get
+ ()Lorg/assertj/core/api/AbstractObjectAssert<*TVALUE;>;
+ ()L1org/assertj/core/api/AbstractObjectAssert<*TVALUE;>;
+get
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)TASSERT;
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)T1ASSERT;
+hasValue
+ (TVALUE;)TSELF;
+ (TVALUE;)T1SELF;
+hasValueSatisfying
+ (Ljava/util/function/Consumer<TVALUE;>;)TSELF;
+ (Ljava/util/function/Consumer<TVALUE;>;)T1SELF;
+hasValueSatisfying
+ (Lorg/assertj/core/api/Condition<-TVALUE;>;)TSELF;
+ (Lorg/assertj/core/api/Condition<-TVALUE;>;)T1SELF;
+isEmpty
+ ()TSELF;
+ ()T1SELF;
+isNotEmpty
+ ()TSELF;
+ ()T1SELF;
+isNotPresent
+ ()TSELF;
+ ()T1SELF;
+isPresent
+ ()TSELF;
+ ()T1SELF;
+map
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TVALUE;+TU;>;)Lorg/assertj/core/api/AbstractOptionalAssert<*TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TVALUE;+TU;>;)L1org/assertj/core/api/AbstractOptionalAssert<*TU;>;
+usingDefaultValueComparator
+ ()TSELF;
+ ()T1SELF;
+usingFieldByFieldValueComparator
+ ()TSELF;
+ ()T1SELF;
+usingRecursiveAssertion
+ ()Lorg/assertj/core/api/RecursiveAssertionAssert;
+ ()L1org/assertj/core/api/RecursiveAssertionAssert; # @Inherited(org.assertj.core.api.AbstractAssert)
+usingRecursiveAssertion
+ (Lorg/assertj/core/api/recursive/assertion/RecursiveAssertionConfiguration;)Lorg/assertj/core/api/RecursiveAssertionAssert;
+ (Lorg/assertj/core/api/recursive/assertion/RecursiveAssertionConfiguration;)L1org/assertj/core/api/RecursiveAssertionAssert; # @Inherited(org.assertj.core.api.AbstractAssert)
+usingRecursiveComparison
+ ()Lorg/assertj/core/api/RecursiveComparisonAssert<*>;
+ ()L1org/assertj/core/api/RecursiveComparisonAssert<*>;
+usingRecursiveComparison
+ (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;)Lorg/assertj/core/api/RecursiveComparisonAssert<*>;
+ (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;)L1org/assertj/core/api/RecursiveComparisonAssert<*>;
+usingValueComparator
+ (Ljava/util/Comparator<-TVALUE;>;)TSELF;
+ (Ljava/util/Comparator<-TVALUE;>;)T1SELF;

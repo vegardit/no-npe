@@ -1,0 +1,21 @@
+class org/assertj/core/error/ShouldExist
+
+FILE_SHOULD_EXIST
+ Ljava/lang/String;
+ L1java/lang/String;
+PATH_SHOULD_EXIST
+ Ljava/lang/String;
+ L1java/lang/String;
+PATH_SHOULD_EXIST_NO_FOLLOW_LINKS
+ Ljava/lang/String;
+ L1java/lang/String;
+
+shouldExist
+ (Ljava/io/File;)Lorg/assertj/core/error/ErrorMessageFactory;
+ (Ljava/io/File;)L1org/assertj/core/error/ErrorMessageFactory;
+shouldExist
+ (Ljava/nio/file/Path;)Lorg/assertj/core/error/ErrorMessageFactory;
+ (Ljava/nio/file/Path;)Lorg/assertj/core/error/ErrorMessageFactory;
+shouldExistNoFollowLinks
+ (Ljava/nio/file/Path;)Lorg/assertj/core/error/ErrorMessageFactory;
+ (Ljava/nio/file/Path;)Lorg/assertj/core/error/ErrorMessageFactory;

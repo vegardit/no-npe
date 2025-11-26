@@ -1,0 +1,20 @@
+class org/assertj/core/api/SoftThrowableTypeAssert
+ <T:Ljava/lang/Throwable;>
+ <T:Ljava/lang/Throwable;>
+
+super org/assertj/core/api/ThrowableTypeAssert
+ <TT;>
+ <TT;>
+
+<init>
+ (Ljava/lang/Class<+TT;>;Lorg/assertj/core/api/SoftAssertionsProvider;)V
+ (Ljava/lang/Class<+TT;>;Lorg/assertj/core/api/SoftAssertionsProvider;)V
+buildThrowableTypeAssert
+ (TT;)Lorg/assertj/core/api/ThrowableAssertAlternative<TT;>;
+ (TT;)L1org/assertj/core/api/ThrowableAssertAlternative<TT;>; # @Inherited(org.assertj.core.api.ThrowableTypeAssert)
+checkThrowableType
+ (Ljava/lang/Throwable;)V
+ (Ljava/lang/Throwable;)V
+describedAs
+ (Lorg/assertj/core/description/Description;)Lorg/assertj/core/api/SoftThrowableTypeAssert<TT;>;
+ (Lorg/assertj/core/description/Description;)L1org/assertj/core/api/SoftThrowableTypeAssert<TT;>;

@@ -1,0 +1,160 @@
+class org/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration
+
+DEFAULT_RECURSIVE_COMPARISON_INTROSPECTION_STRATEGY
+ Lorg/assertj/core/api/recursive/comparison/DefaultRecursiveComparisonIntrospectionStrategy;
+ L1org/assertj/core/api/recursive/comparison/DefaultRecursiveComparisonIntrospectionStrategy;
+INDENT_LEVEL_2
+ Ljava/lang/String;
+ L1java/lang/String;
+
+builder
+ ()Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration$Builder;
+ ()L1org/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration$Builder;
+
+<init>
+ (Lorg/assertj/core/presentation/Representation;)V
+ (Lorg/assertj/core/presentation/Representation;)V
+comparatorByFields
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Comparator<*>;>;>;
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/String;Ljava/util/Comparator<*>;>;>;
+compareOnlyFields
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+compareOnlyFieldsOfTypes
+ ([Ljava/lang/Class<*>;)V
+ ([Ljava/lang/Class<*>;)V
+describeIgnoreAllActualEmptyOptionalFields
+ (Ljava/lang/StringBuilder;)V
+ (Ljava/lang/StringBuilder;)V
+describeIgnoreAllActualNullFields
+ (Ljava/lang/StringBuilder;)V
+ (Ljava/lang/StringBuilder;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getActualChildrenNodeNamesToCompare
+ (Lorg/assertj/core/api/recursive/comparison/DualValue;)Ljava/util/Set<Ljava/lang/String;>;
+ (Lorg/assertj/core/api/recursive/comparison/DualValue;)Ljava/util/Set<Ljava/lang/String;>;
+getComparatorForField
+ (Ljava/lang/String;)Ljava/util/Comparator<*>;
+ (Ljava/lang/String;)Ljava/util/Comparator<*>;
+getComparatorForType
+ (Ljava/lang/Class<*>;)Ljava/util/Comparator<*>;
+ (Ljava/lang/Class<*>;)Ljava/util/Comparator<*>;
+getComparedFields
+ ()Ljava/util/Set<Lorg/assertj/core/api/recursive/comparison/FieldLocation;>;
+ ()Ljava/util/Set<Lorg/assertj/core/api/recursive/comparison/FieldLocation;>;
+getComparedTypes
+ ()Ljava/util/Set<Ljava/lang/Class<*>;>;
+ ()Ljava/util/Set<Ljava/lang/Class<*>;>;
+getFieldComparators
+ ()Lorg/assertj/core/api/recursive/comparison/FieldComparators;
+ ()Lorg/assertj/core/api/recursive/comparison/FieldComparators;
+getIgnoredCollectionOrderInFields
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getIgnoredCollectionOrderInFieldsMatchingRegexes
+ ()Ljava/util/List<Ljava/util/regex/Pattern;>;
+ ()Ljava/util/List<Ljava/util/regex/Pattern;>;
+getIgnoredOverriddenEqualsForFields
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getIgnoredOverriddenEqualsForFieldsMatchingRegexes
+ ()Ljava/util/List<Ljava/util/regex/Pattern;>;
+ ()Ljava/util/List<Ljava/util/regex/Pattern;>;
+getIgnoredOverriddenEqualsForTypes
+ ()Ljava/util/List<Ljava/lang/Class<*>;>;
+ ()Ljava/util/List<Ljava/lang/Class<*>;>;
+getIntrospectionStrategy
+ ()Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonIntrospectionStrategy;
+ ()Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonIntrospectionStrategy;
+getMessageForField
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getMessageForType
+ (Ljava/lang/Class<*>;)Ljava/lang/String;
+ (Ljava/lang/Class<*>;)Ljava/lang/String;
+getRepresentation
+ ()Lorg/assertj/core/presentation/Representation;
+ ()Lorg/assertj/core/presentation/Representation;
+getTypeComparators
+ ()Lorg/assertj/core/internal/TypeComparators;
+ ()Lorg/assertj/core/internal/TypeComparators;
+hasComparatorForField
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasComparatorForType
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+hasCustomMessageForField
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+hasCustomMessageForType
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+ignoreCollectionOrderInFields
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+ignoreCollectionOrderInFieldsMatchingRegexes
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+ignoreOverriddenEqualsForFields
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+ignoreOverriddenEqualsForFieldsMatchingRegexes
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+ignoreOverriddenEqualsForTypes
+ ([Ljava/lang/Class<*>;)V
+ ([Ljava/lang/Class<*>;)V
+isOrIsChildOfAnyComparedFields
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)Z
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)Z
+multiLineDescription
+ (Lorg/assertj/core/presentation/Representation;)Ljava/lang/String;
+ (Lorg/assertj/core/presentation/Representation;)L1java/lang/String;
+registerComparatorForFields
+ (Ljava/util/Comparator<*>;[Ljava/lang/String;)V
+ (Ljava/util/Comparator<*>;[Ljava/lang/String;)V
+registerComparatorForType
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;Ljava/lang/Class<TT;>;)V
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;Ljava/lang/Class<TT;>;)V
+registerEqualsForFields
+ (Ljava/util/function/BiPredicate<**>;[Ljava/lang/String;)V
+ (Ljava/util/function/BiPredicate<**>;[Ljava/lang/String;)V
+registerEqualsForFieldsMatchingRegexes
+ (Ljava/util/function/BiPredicate<**>;[Ljava/lang/String;)V
+ (Ljava/util/function/BiPredicate<**>;[Ljava/lang/String;)V
+registerEqualsForType
+ <T:Ljava/lang/Object;>(Ljava/util/function/BiPredicate<-TT;-TT;>;Ljava/lang/Class<TT;>;)V
+ <T:Ljava/lang/Object;>(Ljava/util/function/BiPredicate<-TT;-TT;>;Ljava/lang/Class<TT;>;)V
+registerErrorMessageForFields
+ (Ljava/lang/String;[Ljava/lang/String;)V
+ (Ljava/lang/String;[Ljava/lang/String;)V
+registerErrorMessageForType
+ (Ljava/lang/String;Ljava/lang/Class<*>;)V
+ (Ljava/lang/String;Ljava/lang/Class<*>;)V
+registerFieldLocationToCompareBecauseOfTypesToCompare
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)V
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)V
+setIntrospectionStrategy
+ (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonIntrospectionStrategy;)V
+ (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonIntrospectionStrategy;)V
+shouldIgnore
+ (Lorg/assertj/core/api/recursive/comparison/DualValue;)Z
+ (Lorg/assertj/core/api/recursive/comparison/DualValue;)Z
+shouldIgnoreCollectionOrder
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)Z
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)Z
+shouldIgnoreOverriddenEqualsOf
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+shouldIgnoreOverriddenEqualsOf
+ (Lorg/assertj/core/api/recursive/comparison/DualValue;)Z
+ (Lorg/assertj/core/api/recursive/comparison/DualValue;)Z
+shouldNotEvaluate
+ (Lorg/assertj/core/api/recursive/comparison/DualValue;)Z
+ (Lorg/assertj/core/api/recursive/comparison/DualValue;)Z
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

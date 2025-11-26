@@ -1,0 +1,98 @@
+class org/assertj/core/api/BDDSoftAssertionsProvider
+
+then
+ (Ljava/nio/file/Path;)Lorg/assertj/core/api/PathAssert;
+ (Ljava/nio/file/Path;)L1org/assertj/core/api/PathAssert;
+then
+ (Ljava/time/Duration;)Lorg/assertj/core/api/DurationAssert;
+ (Ljava/time/Duration;)L1org/assertj/core/api/DurationAssert;
+then
+ (Ljava/time/Instant;)Lorg/assertj/core/api/InstantAssert;
+ (Ljava/time/Instant;)L1org/assertj/core/api/InstantAssert;
+then
+ (Ljava/time/LocalDate;)Lorg/assertj/core/api/LocalDateAssert;
+ (Ljava/time/LocalDate;)L1org/assertj/core/api/LocalDateAssert;
+then
+ (Ljava/time/LocalDateTime;)Lorg/assertj/core/api/LocalDateTimeAssert;
+ (Ljava/time/LocalDateTime;)L1org/assertj/core/api/LocalDateTimeAssert;
+then
+ (Ljava/time/LocalTime;)Lorg/assertj/core/api/LocalTimeAssert;
+ (Ljava/time/LocalTime;)L1org/assertj/core/api/LocalTimeAssert;
+then
+ (Ljava/time/OffsetDateTime;)Lorg/assertj/core/api/OffsetDateTimeAssert;
+ (Ljava/time/OffsetDateTime;)L1org/assertj/core/api/OffsetDateTimeAssert;
+then
+ (Ljava/time/OffsetTime;)Lorg/assertj/core/api/OffsetTimeAssert;
+ (Ljava/time/OffsetTime;)L1org/assertj/core/api/OffsetTimeAssert;
+then
+ (Ljava/time/Period;)Lorg/assertj/core/api/PeriodAssert;
+ (Ljava/time/Period;)L1org/assertj/core/api/PeriodAssert;
+then
+ (Ljava/time/YearMonth;)Lorg/assertj/core/api/YearMonthAssert;
+ (Ljava/time/YearMonth;)L1org/assertj/core/api/YearMonthAssert;
+then
+ (Ljava/time/ZonedDateTime;)Lorg/assertj/core/api/ZonedDateTimeAssert;
+ (Ljava/time/ZonedDateTime;)L1org/assertj/core/api/ZonedDateTimeAssert;
+then
+ (Ljava/util/OptionalDouble;)Lorg/assertj/core/api/OptionalDoubleAssert;
+ (Ljava/util/OptionalDouble;)L1org/assertj/core/api/OptionalDoubleAssert;
+then
+ (Ljava/util/OptionalInt;)Lorg/assertj/core/api/OptionalIntAssert;
+ (Ljava/util/OptionalInt;)L1org/assertj/core/api/OptionalIntAssert;
+then
+ (Ljava/util/OptionalLong;)Lorg/assertj/core/api/OptionalLongAssert;
+ (Ljava/util/OptionalLong;)L1org/assertj/core/api/OptionalLongAssert;
+then
+ (Ljava/util/concurrent/atomic/LongAdder;)Lorg/assertj/core/api/LongAdderAssert;
+ (Ljava/util/concurrent/atomic/LongAdder;)L1org/assertj/core/api/LongAdderAssert;
+then
+ (Ljava/util/function/DoublePredicate;)Lorg/assertj/core/api/DoublePredicateAssert;
+ (Ljava/util/function/DoublePredicate;)L1org/assertj/core/api/DoublePredicateAssert;
+then
+ (Ljava/util/function/IntPredicate;)Lorg/assertj/core/api/IntPredicateAssert;
+ (Ljava/util/function/IntPredicate;)L1org/assertj/core/api/IntPredicateAssert;
+then
+ (Ljava/util/function/LongPredicate;)Lorg/assertj/core/api/LongPredicateAssert;
+ (Ljava/util/function/LongPredicate;)L1org/assertj/core/api/LongPredicateAssert;
+then
+ (Ljava/util/regex/Matcher;)Lorg/assertj/core/api/MatcherAssert;
+ (Ljava/util/regex/Matcher;)L1org/assertj/core/api/MatcherAssert;
+then
+ (Ljava/util/stream/DoubleStream;)Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<+Ljava/lang/Double;>;Ljava/lang/Double;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Double;>;>;
+ (Ljava/util/stream/DoubleStream;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<+Ljava/lang/Double;>;Ljava/lang/Double;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Double;>;>;
+then
+ (Ljava/util/stream/IntStream;)Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<+Ljava/lang/Integer;>;Ljava/lang/Integer;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Integer;>;>;
+ (Ljava/util/stream/IntStream;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<+Ljava/lang/Integer;>;Ljava/lang/Integer;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Integer;>;>;
+then
+ (Ljava/util/stream/LongStream;)Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<+Ljava/lang/Long;>;Ljava/lang/Long;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Long;>;>;
+ (Ljava/util/stream/LongStream;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<+Ljava/lang/Long;>;Ljava/lang/Long;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Long;>;>;
+then
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/Spliterator<TELEMENT;>;)Lorg/assertj/core/api/SpliteratorAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/Spliterator<TELEMENT;>;)L1org/assertj/core/api/SpliteratorAssert<TELEMENT;>;
+then
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/stream/Stream<+TELEMENT;>;)Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<+TELEMENT;>;TELEMENT;Lorg/assertj/core/api/ObjectAssert<TELEMENT;>;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/stream/Stream<+TELEMENT;>;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<+TELEMENT;>;TELEMENT;Lorg/assertj/core/api/ObjectAssert<TELEMENT;>;>;
+then
+ <RESULT:Ljava/lang/Object;>(Ljava/util/concurrent/CompletableFuture<TRESULT;>;)Lorg/assertj/core/api/CompletableFutureAssert<TRESULT;>;
+ <RESULT:Ljava/lang/Object;>(Ljava/util/concurrent/CompletableFuture<TRESULT;>;)L1org/assertj/core/api/CompletableFutureAssert<TRESULT;>;
+then
+ <RESULT:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<TRESULT;>;)Lorg/assertj/core/api/CompletableFutureAssert<TRESULT;>;
+ <RESULT:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<TRESULT;>;)L1org/assertj/core/api/CompletableFutureAssert<TRESULT;>;
+then
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<TT;>;)Lorg/assertj/core/api/PredicateAssert<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<TT;>;)L1org/assertj/core/api/PredicateAssert<TT;>;
+then
+ <VALUE:Ljava/lang/Object;>(Ljava/util/Optional<TVALUE;>;)Lorg/assertj/core/api/OptionalAssert<TVALUE;>;
+ <VALUE:Ljava/lang/Object;>(Ljava/util/Optional<TVALUE;>;)L1org/assertj/core/api/OptionalAssert<TVALUE;>;
+thenPath
+ (Ljava/nio/file/Path;)Lorg/assertj/core/api/AbstractPathAssert<*>;
+ (Ljava/nio/file/Path;)L1org/assertj/core/api/AbstractPathAssert<*>;
+thenPredicate
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<TT;>;)Lorg/assertj/core/api/PredicateAssert<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<TT;>;)L1org/assertj/core/api/PredicateAssert<TT;>;
+thenStream
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/stream/Stream<+TELEMENT;>;)Lorg/assertj/core/api/ListAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/stream/Stream<+TELEMENT;>;)L1org/assertj/core/api/ListAssert<TELEMENT;>;
+thenTemporal
+ (Ljava/time/temporal/Temporal;)Lorg/assertj/core/api/TemporalAssert;
+ (Ljava/time/temporal/Temporal;)L1org/assertj/core/api/TemporalAssert;

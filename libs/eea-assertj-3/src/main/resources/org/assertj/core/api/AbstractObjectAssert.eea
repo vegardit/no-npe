@@ -1,0 +1,104 @@
+class org/assertj/core/api/AbstractObjectAssert
+ <SELF:Lorg/assertj/core/api/AbstractObjectAssert<TSELF;TACTUAL;>;ACTUAL:Ljava/lang/Object;>
+ <SELF:Lorg/assertj/core/api/AbstractObjectAssert<TSELF;TACTUAL;>;ACTUAL:Ljava/lang/Object;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;TACTUAL;>
+ <TSELF;TACTUAL;>
+
+<init>
+ (TACTUAL;Ljava/lang/Class<*>;)V
+ (TACTUAL;Ljava/lang/Class<*>;)V
+as
+ (Ljava/lang/String;[Ljava/lang/Object;)TSELF;
+ (Ljava/lang/String;[Ljava/lang/Object;)T1SELF; # @Inherited(org.assertj.core.api.Descriptable)
+as
+ (Lorg/assertj/core/description/Description;)TSELF;
+ (Lorg/assertj/core/description/Description;)T1SELF; # @Inherited(org.assertj.core.api.Descriptable)
+doesNotReturn
+ <T:Ljava/lang/Object;>(TT;Ljava/util/function/Function<TACTUAL;TT;>;)TSELF;
+ <T:Ljava/lang/Object;>(TT;Ljava/util/function/Function<TACTUAL;TT;>;)T1SELF;
+extracting
+ (Ljava/lang/String;)Lorg/assertj/core/api/AbstractObjectAssert<**>;
+ (Ljava/lang/String;)L1org/assertj/core/api/AbstractObjectAssert<**>;
+extracting
+ ([Ljava/lang/String;)Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>;
+ ([Ljava/lang/String;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>;
+extracting
+ ([Ljava/util/function/Function<-TACTUAL;*>;)Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>;
+ ([Ljava/util/function/Function<-TACTUAL;*>;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>;
+extracting
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/lang/String;Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)TASSERT;
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/lang/String;Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)T1ASSERT;
+extracting
+ <T:Ljava/lang/Object;>(Ljava/util/function/Function<-TACTUAL;TT;>;)Lorg/assertj/core/api/AbstractObjectAssert<*TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Function<-TACTUAL;TT;>;)L1org/assertj/core/api/AbstractObjectAssert<*TT;>;
+extracting
+ <T:Ljava/lang/Object;ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/util/function/Function<-TACTUAL;TT;>;Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)TASSERT;
+ <T:Ljava/lang/Object;ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/util/function/Function<-TACTUAL;TT;>;Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)T1ASSERT;
+extractingForProxy
+ ([Ljava/util/function/Function<-TACTUAL;*>;)Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>;
+ ([Ljava/util/function/Function<-TACTUAL;*>;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>;
+getComparatorsByType
+ ()Lorg/assertj/core/internal/TypeComparators;
+ ()L1org/assertj/core/internal/TypeComparators;
+hasAllNullFieldsOrProperties
+ ()TSELF;
+ ()T1SELF;
+hasAllNullFieldsOrPropertiesExcept
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+hasFieldOrProperty
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasFieldOrPropertyWithValue
+ (Ljava/lang/String;Ljava/lang/Object;)TSELF;
+ (Ljava/lang/String;Ljava/lang/Object;)T1SELF;
+hasNoNullFieldsOrProperties
+ ()TSELF;
+ ()T1SELF;
+hasNoNullFieldsOrPropertiesExcept
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+hasOnlyFields
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)T1SELF;
+isEqualToComparingFieldByField
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+isEqualToComparingFieldByFieldRecursively
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+isEqualToComparingOnlyGivenFields
+ (Ljava/lang/Object;[Ljava/lang/String;)TSELF;
+ (Ljava/lang/Object;[Ljava/lang/String;)T1SELF;
+isEqualToIgnoringGivenFields
+ (Ljava/lang/Object;[Ljava/lang/String;)TSELF;
+ (Ljava/lang/Object;[Ljava/lang/String;)T1SELF;
+isEqualToIgnoringNullFields
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+newObjectAssert
+ <T:Ljava/lang/Object;>(TT;)Lorg/assertj/core/api/AbstractObjectAssert<*TT;>;
+ <T:Ljava/lang/Object;>(TT;)L1org/assertj/core/api/AbstractObjectAssert<*TT;>;
+returns
+ <T:Ljava/lang/Object;>(TT;Ljava/util/function/Function<TACTUAL;TT;>;)TSELF;
+ <T:Ljava/lang/Object;>(TT;Ljava/util/function/Function<TACTUAL;TT;>;)T1SELF;
+usingComparatorForFields
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<TT;>;[Ljava/lang/String;)TSELF;
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<TT;>;[Ljava/lang/String;)T1SELF;
+usingComparatorForType
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;Ljava/lang/Class<TT;>;)TSELF;
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;Ljava/lang/Class<TT;>;)T1SELF;
+usingRecursiveAssertion
+ ()Lorg/assertj/core/api/RecursiveAssertionAssert;
+ ()L1org/assertj/core/api/RecursiveAssertionAssert; # @Inherited(org.assertj.core.api.AbstractAssert)
+usingRecursiveAssertion
+ (Lorg/assertj/core/api/recursive/assertion/RecursiveAssertionConfiguration;)Lorg/assertj/core/api/RecursiveAssertionAssert;
+ (Lorg/assertj/core/api/recursive/assertion/RecursiveAssertionConfiguration;)L1org/assertj/core/api/RecursiveAssertionAssert; # @Inherited(org.assertj.core.api.AbstractAssert)
+usingRecursiveComparison
+ ()Lorg/assertj/core/api/RecursiveComparisonAssert<*>;
+ ()L1org/assertj/core/api/RecursiveComparisonAssert<*>;
+usingRecursiveComparison
+ (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;)Lorg/assertj/core/api/RecursiveComparisonAssert<*>;
+ (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;)L1org/assertj/core/api/RecursiveComparisonAssert<*>;

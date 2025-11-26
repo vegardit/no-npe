@@ -1,0 +1,44 @@
+class org/assertj/core/api/AbstractInputStreamAssert
+ <SELF:Lorg/assertj/core/api/AbstractInputStreamAssert<TSELF;TACTUAL;>;ACTUAL:Ljava/io/InputStream;>
+ <SELF:Lorg/assertj/core/api/AbstractInputStreamAssert<TSELF;TACTUAL;>;ACTUAL:Ljava/io/InputStream;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;TACTUAL;>
+ <TSELF;TACTUAL;>
+
+<init>
+ (TACTUAL;Ljava/lang/Class<*>;)V
+ (TACTUAL;Ljava/lang/Class<*>;)V
+asString
+ (Ljava/nio/charset/Charset;)Lorg/assertj/core/api/AbstractStringAssert<*>;
+ (Ljava/nio/charset/Charset;)L1org/assertj/core/api/AbstractStringAssert<*>;
+hasBinaryContent
+ ([B)TSELF;
+ ([B)T1SELF;
+hasContent
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasContentEqualTo
+ (Ljava/io/InputStream;)TSELF;
+ (Ljava/io/InputStream;)T1SELF;
+hasDigest
+ (Ljava/lang/String;Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;Ljava/lang/String;)T1SELF;
+hasDigest
+ (Ljava/lang/String;[B)TSELF;
+ (Ljava/lang/String;[B)T1SELF;
+hasDigest
+ (Ljava/security/MessageDigest;Ljava/lang/String;)TSELF;
+ (Ljava/security/MessageDigest;Ljava/lang/String;)T1SELF;
+hasDigest
+ (Ljava/security/MessageDigest;[B)TSELF;
+ (Ljava/security/MessageDigest;[B)T1SELF;
+hasSameContentAs
+ (Ljava/io/InputStream;)TSELF;
+ (Ljava/io/InputStream;)T1SELF;
+isEmpty
+ ()TSELF;
+ ()T1SELF;
+isNotEmpty
+ ()TSELF;
+ ()T1SELF;

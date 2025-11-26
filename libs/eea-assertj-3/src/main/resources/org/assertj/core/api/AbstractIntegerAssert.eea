@@ -1,0 +1,101 @@
+class org/assertj/core/api/AbstractIntegerAssert
+ <SELF:Lorg/assertj/core/api/AbstractIntegerAssert<TSELF;>;>
+ <SELF:Lorg/assertj/core/api/AbstractIntegerAssert<TSELF;>;>
+
+super org/assertj/core/api/AbstractComparableAssert
+ <TSELF;Ljava/lang/Integer;>
+ <TSELF;Ljava/lang/Integer;>
+super org/assertj/core/api/NumberAssert
+ <TSELF;Ljava/lang/Integer;>
+ <TSELF;Ljava/lang/Integer;>
+
+<init>
+ (Ljava/lang/Integer;Ljava/lang/Class<*>;)V
+ (Ljava/lang/Integer;Ljava/lang/Class<*>;)V
+isBetween
+ (Ljava/lang/Integer;Ljava/lang/Integer;)TSELF;
+ (Ljava/lang/Integer;Ljava/lang/Integer;)T1SELF;
+isCloseTo
+ (ILorg/assertj/core/data/Offset<Ljava/lang/Integer;>;)TSELF;
+ (ILorg/assertj/core/data/Offset<Ljava/lang/Integer;>;)T1SELF;
+isCloseTo
+ (ILorg/assertj/core/data/Percentage;)TSELF;
+ (ILorg/assertj/core/data/Percentage;)T1SELF;
+isCloseTo
+ (Ljava/lang/Integer;Lorg/assertj/core/data/Offset<Ljava/lang/Integer;>;)TSELF;
+ (Ljava/lang/Integer;Lorg/assertj/core/data/Offset<Ljava/lang/Integer;>;)T1SELF;
+isCloseTo
+ (Ljava/lang/Integer;Lorg/assertj/core/data/Percentage;)TSELF;
+ (Ljava/lang/Integer;Lorg/assertj/core/data/Percentage;)T1SELF;
+isEqualTo
+ (I)TSELF;
+ (I)T1SELF;
+isEqualTo
+ (J)TSELF;
+ (J)T1SELF;
+isEven
+ ()TSELF;
+ ()T1SELF;
+isGreaterThan
+ (I)TSELF;
+ (I)T1SELF;
+isGreaterThanOrEqualTo
+ (I)TSELF;
+ (I)T1SELF;
+isLessThan
+ (I)TSELF;
+ (I)T1SELF;
+isLessThanOrEqualTo
+ (I)TSELF;
+ (I)T1SELF;
+isNegative
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isNotCloseTo
+ (ILorg/assertj/core/data/Offset<Ljava/lang/Integer;>;)TSELF;
+ (ILorg/assertj/core/data/Offset<Ljava/lang/Integer;>;)T1SELF;
+isNotCloseTo
+ (ILorg/assertj/core/data/Percentage;)TSELF;
+ (ILorg/assertj/core/data/Percentage;)T1SELF;
+isNotCloseTo
+ (Ljava/lang/Integer;Lorg/assertj/core/data/Offset<Ljava/lang/Integer;>;)TSELF;
+ (Ljava/lang/Integer;Lorg/assertj/core/data/Offset<Ljava/lang/Integer;>;)T1SELF;
+isNotCloseTo
+ (Ljava/lang/Integer;Lorg/assertj/core/data/Percentage;)TSELF;
+ (Ljava/lang/Integer;Lorg/assertj/core/data/Percentage;)T1SELF;
+isNotEqualTo
+ (I)TSELF;
+ (I)T1SELF;
+isNotNegative
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isNotPositive
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isNotZero
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isOdd
+ ()TSELF;
+ ()T1SELF;
+isOne
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isPositive
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isStrictlyBetween
+ (Ljava/lang/Integer;Ljava/lang/Integer;)TSELF;
+ (Ljava/lang/Integer;Ljava/lang/Integer;)T1SELF;
+isZero
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+usingComparator
+ (Ljava/util/Comparator<-Ljava/lang/Integer;>;)TSELF;
+ (Ljava/util/Comparator<-Ljava/lang/Integer;>;)T1SELF;
+usingComparator
+ (Ljava/util/Comparator<-Ljava/lang/Integer;>;Ljava/lang/String;)TSELF;
+ (Ljava/util/Comparator<-Ljava/lang/Integer;>;Ljava/lang/String;)T1SELF;
+usingDefaultComparator
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractComparableAssert)

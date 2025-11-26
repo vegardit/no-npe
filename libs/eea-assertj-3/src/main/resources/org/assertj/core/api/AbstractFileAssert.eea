@@ -1,0 +1,152 @@
+class org/assertj/core/api/AbstractFileAssert
+ <SELF:Lorg/assertj/core/api/AbstractFileAssert<TSELF;>;>
+ <SELF:Lorg/assertj/core/api/AbstractFileAssert<TSELF;>;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;Ljava/io/File;>
+ <TSELF;Ljava/io/File;>
+
+<init>
+ (Ljava/io/File;Ljava/lang/Class<*>;)V
+ (Ljava/io/File;Ljava/lang/Class<*>;)V
+binaryContent
+ ()Lorg/assertj/core/api/AbstractByteArrayAssert<*>;
+ ()L1org/assertj/core/api/AbstractByteArrayAssert<*>;
+canRead
+ ()TSELF;
+ ()T1SELF;
+canWrite
+ ()TSELF;
+ ()T1SELF;
+content
+ ()Lorg/assertj/core/api/AbstractStringAssert<*>;
+ ()L1org/assertj/core/api/AbstractStringAssert<*>;
+content
+ (Ljava/nio/charset/Charset;)Lorg/assertj/core/api/AbstractStringAssert<*>;
+ (Ljava/nio/charset/Charset;)L1org/assertj/core/api/AbstractStringAssert<*>;
+doesNotExist
+ ()TSELF;
+ ()T1SELF;
+exists
+ ()TSELF;
+ ()T1SELF;
+hasBinaryContent
+ ([B)TSELF;
+ ([B)T1SELF;
+hasContent
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasContentEqualTo
+ (Ljava/io/File;)TSELF;
+ (Ljava/io/File;)T1SELF;
+hasDigest
+ (Ljava/lang/String;Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;Ljava/lang/String;)T1SELF;
+hasDigest
+ (Ljava/lang/String;[B)TSELF;
+ (Ljava/lang/String;[B)T1SELF;
+hasDigest
+ (Ljava/security/MessageDigest;Ljava/lang/String;)TSELF;
+ (Ljava/security/MessageDigest;Ljava/lang/String;)T1SELF;
+hasDigest
+ (Ljava/security/MessageDigest;[B)TSELF;
+ (Ljava/security/MessageDigest;[B)T1SELF;
+hasExtension
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasFileName
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasName
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasNoExtension
+ ()TSELF;
+ ()T1SELF;
+hasNoParent
+ ()TSELF;
+ ()T1SELF;
+hasParent
+ (Ljava/io/File;)TSELF;
+ (Ljava/io/File;)T1SELF;
+hasParent
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasSameBinaryContentAs
+ (Ljava/io/File;)TSELF;
+ (Ljava/io/File;)T1SELF;
+hasSameContentAs
+ (Ljava/io/File;)TSELF;
+ (Ljava/io/File;)T1SELF;
+hasSameContentAs
+ (Ljava/io/File;Ljava/nio/charset/Charset;)TSELF;
+ (Ljava/io/File;Ljava/nio/charset/Charset;)T1SELF;
+hasSameTextualContentAs
+ (Ljava/io/File;)TSELF;
+ (Ljava/io/File;)T1SELF;
+hasSameTextualContentAs
+ (Ljava/io/File;Ljava/nio/charset/Charset;)TSELF;
+ (Ljava/io/File;Ljava/nio/charset/Charset;)T1SELF;
+hasSize
+ (J)TSELF;
+ (J)T1SELF;
+isAbsolute
+ ()TSELF;
+ ()T1SELF;
+isDirectory
+ ()TSELF;
+ ()T1SELF;
+isDirectoryContaining
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+isDirectoryContaining
+ (Ljava/util/function/Predicate<Ljava/io/File;>;)TSELF;
+ (Ljava/util/function/Predicate<Ljava/io/File;>;)T1SELF;
+isDirectoryNotContaining
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+isDirectoryNotContaining
+ (Ljava/util/function/Predicate<Ljava/io/File;>;)TSELF;
+ (Ljava/util/function/Predicate<Ljava/io/File;>;)T1SELF;
+isDirectoryRecursivelyContaining
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+isDirectoryRecursivelyContaining
+ (Ljava/util/function/Predicate<Ljava/io/File;>;)TSELF;
+ (Ljava/util/function/Predicate<Ljava/io/File;>;)T1SELF;
+isEmpty
+ ()TSELF;
+ ()T1SELF;
+isEmptyDirectory
+ ()TSELF;
+ ()T1SELF;
+isExecutable
+ ()TSELF;
+ ()T1SELF;
+isFile
+ ()TSELF;
+ ()T1SELF;
+isNotEmpty
+ ()TSELF;
+ ()T1SELF;
+isNotEmptyDirectory
+ ()TSELF;
+ ()T1SELF;
+isReadable
+ ()TSELF;
+ ()T1SELF;
+isRelative
+ ()TSELF;
+ ()T1SELF;
+isWritable
+ ()TSELF;
+ ()T1SELF;
+size
+ ()Lorg/assertj/core/api/AbstractFileSizeAssert<TSELF;>;
+ ()L1org/assertj/core/api/AbstractFileSizeAssert<TSELF;>;
+usingCharset
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+usingCharset
+ (Ljava/nio/charset/Charset;)TSELF;
+ (Ljava/nio/charset/Charset;)T1SELF;

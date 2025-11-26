@@ -1,0 +1,23 @@
+class org/assertj/core/api/AbstractIteratorAssert
+ <SELF:Lorg/assertj/core/api/AbstractIteratorAssert<TSELF;TELEMENT;>;ELEMENT:Ljava/lang/Object;>
+ <SELF:Lorg/assertj/core/api/AbstractIteratorAssert<TSELF;TELEMENT;>;ELEMENT:Ljava/lang/Object;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;Ljava/util/Iterator<+TELEMENT;>;>
+ <TSELF;Ljava/util/Iterator<+TELEMENT;>;>
+
+<init>
+ (Ljava/util/Iterator<+TELEMENT;>;Ljava/lang/Class<*>;)V
+ (Ljava/util/Iterator<+TELEMENT;>;Ljava/lang/Class<*>;)V
+hasNext
+ ()TSELF;
+ ()T1SELF;
+isExhausted
+ ()TSELF;
+ ()T1SELF;
+isUnmodifiable
+ ()TSELF;
+ ()T1SELF;
+toIterable
+ ()Lorg/assertj/core/api/IterableAssert<TELEMENT;>;
+ ()L1org/assertj/core/api/IterableAssert<TELEMENT;>;

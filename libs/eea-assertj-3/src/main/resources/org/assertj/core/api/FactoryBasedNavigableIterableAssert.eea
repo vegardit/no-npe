@@ -1,0 +1,21 @@
+class org/assertj/core/api/FactoryBasedNavigableIterableAssert
+ <SELF:Lorg/assertj/core/api/FactoryBasedNavigableIterableAssert<TSELF;TACTUAL;TELEMENT;TELEMENT_ASSERT;>;ACTUAL::Ljava/lang/Iterable<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>
+ <SELF:Lorg/assertj/core/api/FactoryBasedNavigableIterableAssert<TSELF;TACTUAL;TELEMENT;TELEMENT_ASSERT;>;ACTUAL::Ljava/lang/Iterable<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>
+
+super org/assertj/core/api/AbstractIterableAssert
+ <TSELF;TACTUAL;TELEMENT;TELEMENT_ASSERT;>
+ <TSELF;TACTUAL;TELEMENT;TELEMENT_ASSERT;>
+
+assertThat
+ <ACTUAL::Ljava/lang/Iterable<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(Ljava/lang/Iterable<+TELEMENT;>;Lorg/assertj/core/api/AssertFactory<TELEMENT;TELEMENT_ASSERT;>;)Lorg/assertj/core/api/FactoryBasedNavigableIterableAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+ <ACTUAL::Ljava/lang/Iterable<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(Ljava/lang/Iterable<+TELEMENT;>;Lorg/assertj/core/api/AssertFactory<TELEMENT;TELEMENT_ASSERT;>;)L1org/assertj/core/api/FactoryBasedNavigableIterableAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+
+<init>
+ (TACTUAL;Ljava/lang/Class<*>;Lorg/assertj/core/api/AssertFactory<TELEMENT;TELEMENT_ASSERT;>;)V
+ (TACTUAL;Ljava/lang/Class<*>;Lorg/assertj/core/api/AssertFactory<TELEMENT;TELEMENT_ASSERT;>;)V
+newAbstractIterableAssert
+ (Ljava/lang/Iterable<+TELEMENT;>;)TSELF;
+ (Ljava/lang/Iterable<+TELEMENT;>;)T1SELF;
+toAssert
+ (TELEMENT;Ljava/lang/String;)TELEMENT_ASSERT;
+ (TELEMENT;Ljava/lang/String;)TELEMENT_ASSERT;

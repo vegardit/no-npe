@@ -1,0 +1,122 @@
+class org/assertj/core/api/Assert
+ <SELF::Lorg/assertj/core/api/Assert<TSELF;TACTUAL;>;ACTUAL:Ljava/lang/Object;>
+ <SELF::Lorg/assertj/core/api/Assert<TSELF;TACTUAL;>;ACTUAL:Ljava/lang/Object;>
+
+super org/assertj/core/api/Descriptable
+ <TSELF;>
+ <TSELF;>
+super org/assertj/core/api/ExtensionPoints
+ <TSELF;TACTUAL;>
+ <TSELF;TACTUAL;>
+
+asInstanceOf
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)TASSERT;
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)T1ASSERT;
+asList
+ ()Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>;
+ ()L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>;
+asString
+ ()Lorg/assertj/core/api/AbstractCharSequenceAssert<*Ljava/lang/String;>;
+ ()L1org/assertj/core/api/AbstractCharSequenceAssert<*Ljava/lang/String;>;
+doesNotHaveSameClassAs
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+doesNotHaveSameHashCodeAs
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+doesNotHaveToString
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+doesNotHaveToString
+ (Ljava/lang/String;[Ljava/lang/Object;)TSELF;
+ (Ljava/lang/String;[Ljava/lang/Object;)T1SELF;
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+hasSameClassAs
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+hasSameHashCodeAs
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+hasToString
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasToString
+ (Ljava/lang/String;[Ljava/lang/Object;)TSELF;
+ (Ljava/lang/String;[Ljava/lang/Object;)T1SELF;
+isEqualTo
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+isExactlyInstanceOf
+ (Ljava/lang/Class<*>;)TSELF;
+ (Ljava/lang/Class<*>;)T1SELF;
+isIn
+ (Ljava/lang/Iterable<*>;)TSELF;
+ (Ljava/lang/Iterable<*>;)T1SELF;
+isIn
+ ([Ljava/lang/Object;)TSELF;
+ ([Ljava/lang/Object;)T1SELF;
+isInstanceOf
+ (Ljava/lang/Class<*>;)TSELF;
+ (Ljava/lang/Class<*>;)T1SELF;
+isInstanceOfAny
+ ([Ljava/lang/Class<*>;)TSELF;
+ ([Ljava/lang/Class<*>;)T1SELF;
+isInstanceOfSatisfying
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<TT;>;)TSELF;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<TT;>;)T1SELF;
+isNotEqualTo
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+isNotExactlyInstanceOf
+ (Ljava/lang/Class<*>;)TSELF;
+ (Ljava/lang/Class<*>;)T1SELF;
+isNotIn
+ (Ljava/lang/Iterable<*>;)TSELF;
+ (Ljava/lang/Iterable<*>;)T1SELF;
+isNotIn
+ ([Ljava/lang/Object;)TSELF;
+ ([Ljava/lang/Object;)T1SELF;
+isNotInstanceOf
+ (Ljava/lang/Class<*>;)TSELF;
+ (Ljava/lang/Class<*>;)T1SELF;
+isNotInstanceOfAny
+ ([Ljava/lang/Class<*>;)TSELF;
+ ([Ljava/lang/Class<*>;)T1SELF;
+isNotNull
+ ()TSELF;
+ ()T1SELF;
+isNotOfAnyClassIn
+ ([Ljava/lang/Class<*>;)TSELF;
+ ([Ljava/lang/Class<*>;)T1SELF;
+isNotSameAs
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+isOfAnyClassIn
+ ([Ljava/lang/Class<*>;)TSELF;
+ ([Ljava/lang/Class<*>;)T1SELF;
+isSameAs
+ (Ljava/lang/Object;)TSELF;
+ (Ljava/lang/Object;)T1SELF;
+usingComparator
+ (Ljava/util/Comparator<-TACTUAL;>;)TSELF;
+ (Ljava/util/Comparator<-TACTUAL;>;)T1SELF;
+usingComparator
+ (Ljava/util/Comparator<-TACTUAL;>;Ljava/lang/String;)TSELF;
+ (Ljava/util/Comparator<-TACTUAL;>;Ljava/lang/String;)T1SELF;
+usingDefaultComparator
+ ()TSELF;
+ ()T1SELF;
+usingEquals
+ (Ljava/util/function/BiPredicate<-TACTUAL;-TACTUAL;>;)TSELF;
+ (Ljava/util/function/BiPredicate<-TACTUAL;-TACTUAL;>;)T1SELF;
+usingEquals
+ (Ljava/util/function/BiPredicate<-TACTUAL;-TACTUAL;>;Ljava/lang/String;)TSELF;
+ (Ljava/util/function/BiPredicate<-TACTUAL;-TACTUAL;>;Ljava/lang/String;)T1SELF;
+withRepresentation
+ (Lorg/assertj/core/presentation/Representation;)TSELF;
+ (Lorg/assertj/core/presentation/Representation;)T1SELF;
+withThreadDumpOnError
+ ()TSELF;
+ ()T1SELF;

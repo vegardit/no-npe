@@ -1,0 +1,24 @@
+class org/assertj/core/condition/MappedCondition
+ <FROM:Ljava/lang/Object;TO:Ljava/lang/Object;>
+ <FROM:Ljava/lang/Object;TO:Ljava/lang/Object;>
+
+super org/assertj/core/api/Condition
+ <TFROM;>
+ <TFROM;>
+
+mappedCondition
+ <FROM:Ljava/lang/Object;TO:Ljava/lang/Object;>(Ljava/util/function/Function<TFROM;TTO;>;Lorg/assertj/core/api/Condition<TTO;>;)Lorg/assertj/core/condition/MappedCondition<TFROM;TTO;>;
+ <FROM:Ljava/lang/Object;TO:Ljava/lang/Object;>(Ljava/util/function/Function<TFROM;TTO;>;Lorg/assertj/core/api/Condition<TTO;>;)Lorg/assertj/core/condition/MappedCondition<TFROM;TTO;>;
+mappedCondition
+ <FROM:Ljava/lang/Object;TO:Ljava/lang/Object;>(Ljava/util/function/Function<TFROM;TTO;>;Lorg/assertj/core/api/Condition<TTO;>;Ljava/lang/String;[Ljava/lang/Object;)Lorg/assertj/core/condition/MappedCondition<TFROM;TTO;>;
+ <FROM:Ljava/lang/Object;TO:Ljava/lang/Object;>(Ljava/util/function/Function<TFROM;TTO;>;Lorg/assertj/core/api/Condition<TTO;>;Ljava/lang/String;[Ljava/lang/Object;)L1org/assertj/core/condition/MappedCondition<TFROM;TTO;>;
+
+buildMappingDescription
+ (TFROM;TTO;)Ljava/lang/String;
+ (TFROM;TTO;)Ljava/lang/String;
+conditionDescriptionWithStatus
+ (TFROM;)Lorg/assertj/core/description/Description;
+ (TFROM;)Lorg/assertj/core/description/Description;
+matches
+ (TFROM;)Z
+ (TFROM;)Z

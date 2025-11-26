@@ -1,0 +1,30 @@
+class org/assertj/core/api/ThrowableTypeAssert
+ <T:Ljava/lang/Throwable;>
+ <T:Ljava/lang/Throwable;>
+
+super org/assertj/core/api/Descriptable
+ <Lorg/assertj/core/api/ThrowableTypeAssert<TT;>;>
+ <Lorg/assertj/core/api/ThrowableTypeAssert<TT;>;>
+
+description
+ Lorg/assertj/core/description/Description;
+ Lorg/assertj/core/description/Description;
+expectedThrowableType
+ Ljava/lang/Class<+TT;>;
+ Ljava/lang/Class<+TT;>;
+
+<init>
+ (Ljava/lang/Class<+TT;>;)V
+ (Ljava/lang/Class<+TT;>;)V
+buildThrowableTypeAssert
+ (TT;)Lorg/assertj/core/api/ThrowableAssertAlternative<TT;>;
+ (TT;)L1org/assertj/core/api/ThrowableAssertAlternative<TT;>;
+checkThrowableType
+ (Ljava/lang/Throwable;)V
+ (Ljava/lang/Throwable;)V
+describedAs
+ (Lorg/assertj/core/description/Description;)Lorg/assertj/core/api/ThrowableTypeAssert<TT;>;
+ (Lorg/assertj/core/description/Description;)L1org/assertj/core/api/ThrowableTypeAssert<TT;>;
+isThrownBy
+ (Lorg/assertj/core/api/ThrowableAssert$ThrowingCallable;)Lorg/assertj/core/api/ThrowableAssertAlternative<TT;>;
+ (Lorg/assertj/core/api/ThrowableAssert$ThrowingCallable;)Lorg/assertj/core/api/ThrowableAssertAlternative<TT;>;

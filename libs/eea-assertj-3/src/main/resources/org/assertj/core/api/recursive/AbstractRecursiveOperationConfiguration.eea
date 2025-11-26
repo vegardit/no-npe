@@ -1,0 +1,58 @@
+class org/assertj/core/api/recursive/AbstractRecursiveOperationConfiguration
+
+DEFAULT_DELIMITER
+ Ljava/lang/String;
+ L1java/lang/String;
+
+asWrapperIfPrimitiveType
+ (Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
+ (Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
+join
+ (Ljava/util/Collection<Ljava/lang/String;>;)Ljava/lang/String;
+ (Ljava/util/Collection<Ljava/lang/String;>;)Ljava/lang/String;
+
+<init>
+ (Lorg/assertj/core/api/recursive/AbstractRecursiveOperationConfiguration$AbstractBuilder<*>;)V
+ (Lorg/assertj/core/api/recursive/AbstractRecursiveOperationConfiguration$AbstractBuilder<*>;)V
+describeIgnoredFields
+ (Ljava/lang/StringBuilder;)V
+ (Ljava/lang/StringBuilder;)V
+describeIgnoredFieldsRegexes
+ (Ljava/lang/StringBuilder;)V
+ (Ljava/lang/StringBuilder;)V
+describeIgnoredTypes
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+describeRegexes
+ (Ljava/util/List<Ljava/util/regex/Pattern;>;)Ljava/lang/String;
+ (Ljava/util/List<Ljava/util/regex/Pattern;>;)Ljava/lang/String;
+getIgnoredFields
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getIgnoredFieldsRegexes
+ ()Ljava/util/List<Ljava/util/regex/Pattern;>;
+ ()Ljava/util/List<Ljava/util/regex/Pattern;>;
+getIgnoredTypes
+ ()Ljava/util/Set<Ljava/lang/Class<*>;>;
+ ()Ljava/util/Set<Ljava/lang/Class<*>;>;
+getIgnoredTypesRegexes
+ ()Ljava/util/List<Ljava/util/regex/Pattern;>;
+ ()Ljava/util/List<Ljava/util/regex/Pattern;>;
+ignoreFields
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+ignoreFieldsMatchingRegexes
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+ignoreFieldsOfTypes
+ ([Ljava/lang/Class<*>;)V
+ ([Ljava/lang/Class<*>;)V
+ignoreFieldsOfTypesMatchingRegexes
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+matchesAnIgnoredField
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)Z
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)Z
+matchesAnIgnoredFieldRegex
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)Z
+ (Lorg/assertj/core/api/recursive/comparison/FieldLocation;)Z

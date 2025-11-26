@@ -1,0 +1,36 @@
+class org/assertj/core/internal/Futures
+
+instance
+ ()Lorg/assertj/core/internal/Futures;
+ ()Lorg/assertj/core/internal/Futures;
+
+assertCompletedExceptionallyWithin
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Exception;
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Exception;
+assertCompletedExceptionallyWithin
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;Ljava/time/Duration;)Ljava/lang/Exception;
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;Ljava/time/Duration;)Ljava/lang/Exception;
+assertFailedWithin
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Exception;
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Exception;
+assertFailedWithin
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;Ljava/time/Duration;)Ljava/lang/Exception;
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;Ljava/time/Duration;)Ljava/lang/Exception;
+assertIsCancelled
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;)V
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;)V
+assertIsDone
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;)V
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;)V
+assertIsNotCancelled
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;)V
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;)V
+assertIsNotDone
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;)V
+ (Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<*>;)V
+assertSucceededWithin
+ <RESULT:Ljava/lang/Object;>(Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<TRESULT;>;JLjava/util/concurrent/TimeUnit;)TRESULT;
+ <RESULT:Ljava/lang/Object;>(Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<TRESULT;>;JLjava/util/concurrent/TimeUnit;)TRESULT;
+assertSucceededWithin
+ <RESULT:Ljava/lang/Object;>(Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<TRESULT;>;Ljava/time/Duration;)TRESULT;
+ <RESULT:Ljava/lang/Object;>(Lorg/assertj/core/api/AssertionInfo;Ljava/util/concurrent/Future<TRESULT;>;Ljava/time/Duration;)TRESULT;

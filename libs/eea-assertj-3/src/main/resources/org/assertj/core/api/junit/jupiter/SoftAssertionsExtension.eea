@@ -1,0 +1,24 @@
+class org/assertj/core/api/junit/jupiter/SoftAssertionsExtension
+
+getAssertionErrorCollector
+ (Lorg/junit/jupiter/api/extension/ExtensionContext;)Lorg/assertj/core/api/AssertionErrorCollector;
+ (Lorg/junit/jupiter/api/extension/ExtensionContext;)Lorg/assertj/core/api/AssertionErrorCollector;
+getSoftAssertionsProvider
+ <T::Lorg/assertj/core/api/SoftAssertionsProvider;>(Lorg/junit/jupiter/api/extension/ExtensionContext;Ljava/lang/Class<TT;>;)TT;
+ <T::Lorg/assertj/core/api/SoftAssertionsProvider;>(Lorg/junit/jupiter/api/extension/ExtensionContext;Ljava/lang/Class<TT;>;)TT;
+
+afterTestExecution
+ (Lorg/junit/jupiter/api/extension/ExtensionContext;)V
+ (Lorg/junit/jupiter/api/extension/ExtensionContext;)V
+beforeEach
+ (Lorg/junit/jupiter/api/extension/ExtensionContext;)V
+ (Lorg/junit/jupiter/api/extension/ExtensionContext;)V
+postProcessTestInstance
+ (Ljava/lang/Object;Lorg/junit/jupiter/api/extension/ExtensionContext;)V
+ (Ljava/lang/Object;Lorg/junit/jupiter/api/extension/ExtensionContext;)V
+resolveParameter
+ (Lorg/junit/jupiter/api/extension/ParameterContext;Lorg/junit/jupiter/api/extension/ExtensionContext;)Ljava/lang/Object;
+ (Lorg/junit/jupiter/api/extension/ParameterContext;Lorg/junit/jupiter/api/extension/ExtensionContext;)Ljava/lang/Object;
+supportsParameter
+ (Lorg/junit/jupiter/api/extension/ParameterContext;Lorg/junit/jupiter/api/extension/ExtensionContext;)Z
+ (Lorg/junit/jupiter/api/extension/ParameterContext;Lorg/junit/jupiter/api/extension/ExtensionContext;)Z

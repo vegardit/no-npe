@@ -1,0 +1,75 @@
+class org/assertj/core/api/AbstractUrlAssert
+ <SELF:Lorg/assertj/core/api/AbstractUrlAssert<TSELF;>;>
+ <SELF:Lorg/assertj/core/api/AbstractUrlAssert<TSELF;>;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;Ljava/net/URL;>
+ <TSELF;Ljava/net/URL;>
+
+urls
+ Lorg/assertj/core/internal/Urls;
+ Lorg/assertj/core/internal/Urls;
+
+<init>
+ (Ljava/net/URL;Ljava/lang/Class<*>;)V
+ (Ljava/net/URL;Ljava/lang/Class<*>;)V
+hasAnchor
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasAuthority
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasHost
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasNoAnchor
+ ()TSELF;
+ ()T1SELF;
+hasNoHost
+ ()TSELF;
+ ()T1SELF;
+hasNoParameter
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasNoParameter
+ (Ljava/lang/String;Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;Ljava/lang/String;)T1SELF;
+hasNoParameters
+ ()TSELF;
+ ()T1SELF;
+hasNoPath
+ ()TSELF;
+ ()T1SELF;
+hasNoPort
+ ()TSELF;
+ ()T1SELF;
+hasNoQuery
+ ()TSELF;
+ ()T1SELF;
+hasNoUserInfo
+ ()TSELF;
+ ()T1SELF;
+hasParameter
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasParameter
+ (Ljava/lang/String;Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;Ljava/lang/String;)T1SELF;
+hasPath
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasPort
+ (I)TSELF;
+ (I)T1SELF;
+hasProtocol
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasQuery
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+hasUserInfo
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+isEqualToWithSortedQueryParameters
+ (Ljava/net/URL;)TSELF;
+ (Ljava/net/URL;)T1SELF;

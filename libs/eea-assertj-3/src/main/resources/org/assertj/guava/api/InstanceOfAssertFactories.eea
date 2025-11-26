@@ -1,0 +1,39 @@
+class org/assertj/guava/api/InstanceOfAssertFactories
+
+BYTE_SOURCE
+ Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/io/ByteSource;Lorg/assertj/guava/api/ByteSourceAssert;>;
+ L1org/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/io/ByteSource;Lorg/assertj/guava/api/ByteSourceAssert;>;
+MULTIMAP
+ Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Multimap;Lorg/assertj/guava/api/MultimapAssert<Ljava/lang/Object;Ljava/lang/Object;>;>;
+ L1org/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Multimap;Lorg/assertj/guava/api/MultimapAssert<Ljava/lang/Object;Ljava/lang/Object;>;>;
+MULTISET
+ Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Multiset;Lorg/assertj/guava/api/MultisetAssert<Ljava/lang/Object;>;>;
+ L1org/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Multiset;Lorg/assertj/guava/api/MultisetAssert<Ljava/lang/Object;>;>;
+OPTIONAL
+ Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/base/Optional;Lorg/assertj/guava/api/OptionalAssert<Ljava/lang/Object;>;>;
+ L1org/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/base/Optional;Lorg/assertj/guava/api/OptionalAssert<Ljava/lang/Object;>;>;
+TABLE
+ Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Table;Lorg/assertj/guava/api/TableAssert<Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;>;>;
+ L1org/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Table;Lorg/assertj/guava/api/TableAssert<Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;>;>;
+
+multimap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/lang/Class<TK;>;Ljava/lang/Class<TV;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Multimap;Lorg/assertj/guava/api/MultimapAssert<TK;TV;>;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/lang/Class<TK;>;Ljava/lang/Class<TV;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Multimap;Lorg/assertj/guava/api/MultimapAssert<TK;TV;>;>;
+multiset
+ <ELEMENT:Ljava/lang/Object;>(Ljava/lang/Class<TELEMENT;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Multiset;Lorg/assertj/guava/api/MultisetAssert<TELEMENT;>;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/lang/Class<TELEMENT;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Multiset;Lorg/assertj/guava/api/MultisetAssert<TELEMENT;>;>;
+optional
+ <VALUE:Ljava/lang/Object;>(Ljava/lang/Class<TVALUE;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/base/Optional;Lorg/assertj/guava/api/OptionalAssert<TVALUE;>;>;
+ <VALUE:Ljava/lang/Object;>(Ljava/lang/Class<TVALUE;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/base/Optional;Lorg/assertj/guava/api/OptionalAssert<TVALUE;>;>;
+range
+ <C::Ljava/lang/Comparable<TC;>;>(Ljava/lang/Class<TC;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Range;Lorg/assertj/guava/api/RangeAssert<TC;>;>;
+ <C::Ljava/lang/Comparable<TC;>;>(Ljava/lang/Class<TC;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Range;Lorg/assertj/guava/api/RangeAssert<TC;>;>;
+rangeMap
+ <K::Ljava/lang/Comparable<TK;>;V:Ljava/lang/Object;>(Ljava/lang/Class<TK;>;Ljava/lang/Class<TV;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/RangeMap;Lorg/assertj/guava/api/RangeMapAssert<TK;TV;>;>;
+ <K::Ljava/lang/Comparable<TK;>;V:Ljava/lang/Object;>(Ljava/lang/Class<TK;>;Ljava/lang/Class<TV;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/RangeMap;Lorg/assertj/guava/api/RangeMapAssert<TK;TV;>;>;
+rangeSet
+ <T::Ljava/lang/Comparable<TT;>;>(Ljava/lang/Class<TT;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/RangeSet;Lorg/assertj/guava/api/RangeSetAssert<TT;>;>;
+ <T::Ljava/lang/Comparable<TT;>;>(Ljava/lang/Class<TT;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/RangeSet;Lorg/assertj/guava/api/RangeSetAssert<TT;>;>;
+table
+ <R:Ljava/lang/Object;C:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/lang/Class<TR;>;Ljava/lang/Class<TC;>;Ljava/lang/Class<TV;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Table;Lorg/assertj/guava/api/TableAssert<TR;TC;TV;>;>;
+ <R:Ljava/lang/Object;C:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/lang/Class<TR;>;Ljava/lang/Class<TC;>;Ljava/lang/Class<TV;>;)Lorg/assertj/core/api/InstanceOfAssertFactory<Lcom/google/common/collect/Table;Lorg/assertj/guava/api/TableAssert<TR;TC;TV;>;>;

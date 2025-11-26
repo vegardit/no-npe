@@ -1,0 +1,50 @@
+class org/assertj/core/api/AbstractUniversalComparableAssert
+ <SELF:Lorg/assertj/core/api/AbstractUniversalComparableAssert<TSELF;TT;>;T:Ljava/lang/Object;>
+ <SELF:Lorg/assertj/core/api/AbstractUniversalComparableAssert<TSELF;TT;>;T:Ljava/lang/Object;>
+
+super org/assertj/core/api/AbstractObjectAssert
+ <TSELF;Ljava/lang/Comparable<TT;>;>
+ <TSELF;Ljava/lang/Comparable<TT;>;>
+
+<init>
+ (Ljava/lang/Comparable<TT;>;Ljava/lang/Class<*>;)V
+ (Ljava/lang/Comparable<TT;>;Ljava/lang/Class<*>;)V
+inBinary
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+inHexadecimal
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
+isBetween
+ (TT;TT;)TSELF;
+ (TT;TT;)T1SELF;
+isEqualByComparingTo
+ (TT;)TSELF;
+ (TT;)T1SELF;
+isGreaterThan
+ (TT;)TSELF;
+ (TT;)T1SELF;
+isGreaterThanOrEqualTo
+ (TT;)TSELF;
+ (TT;)T1SELF;
+isLessThan
+ (TT;)TSELF;
+ (TT;)T1SELF;
+isLessThanOrEqualTo
+ (TT;)TSELF;
+ (TT;)T1SELF;
+isNotEqualByComparingTo
+ (TT;)TSELF;
+ (TT;)T1SELF;
+isStrictlyBetween
+ (TT;TT;)TSELF;
+ (TT;TT;)T1SELF;
+usingComparator
+ (Ljava/util/Comparator<-Ljava/lang/Comparable<TT;>;>;)TSELF;
+ (Ljava/util/Comparator<-Ljava/lang/Comparable<TT;>;>;)T1SELF;
+usingComparator
+ (Ljava/util/Comparator<-Ljava/lang/Comparable<TT;>;>;Ljava/lang/String;)TSELF;
+ (Ljava/util/Comparator<-Ljava/lang/Comparable<TT;>;>;Ljava/lang/String;)T1SELF;
+usingDefaultComparator
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)

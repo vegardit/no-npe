@@ -1,0 +1,71 @@
+class org/assertj/core/api/AbstractBigIntegerAssert
+ <SELF:Lorg/assertj/core/api/AbstractBigIntegerAssert<TSELF;>;>
+ <SELF:Lorg/assertj/core/api/AbstractBigIntegerAssert<TSELF;>;>
+
+super org/assertj/core/api/AbstractComparableAssert
+ <TSELF;Ljava/math/BigInteger;>
+ <TSELF;Ljava/math/BigInteger;>
+super org/assertj/core/api/NumberAssert
+ <TSELF;Ljava/math/BigInteger;>
+ <TSELF;Ljava/math/BigInteger;>
+
+<init>
+ (Ljava/math/BigInteger;Ljava/lang/Class<*>;)V
+ (Ljava/math/BigInteger;Ljava/lang/Class<*>;)V
+isBetween
+ (Ljava/math/BigInteger;Ljava/math/BigInteger;)TSELF;
+ (Ljava/math/BigInteger;Ljava/math/BigInteger;)T1SELF;
+isCloseTo
+ (Ljava/math/BigInteger;Lorg/assertj/core/data/Offset<Ljava/math/BigInteger;>;)TSELF;
+ (Ljava/math/BigInteger;Lorg/assertj/core/data/Offset<Ljava/math/BigInteger;>;)T1SELF;
+isCloseTo
+ (Ljava/math/BigInteger;Lorg/assertj/core/data/Percentage;)TSELF;
+ (Ljava/math/BigInteger;Lorg/assertj/core/data/Percentage;)T1SELF;
+isEqualTo
+ (I)TSELF;
+ (I)T1SELF;
+isEqualTo
+ (J)TSELF;
+ (J)T1SELF;
+isEqualTo
+ (Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;)T1SELF;
+isNegative
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isNotCloseTo
+ (Ljava/math/BigInteger;Lorg/assertj/core/data/Offset<Ljava/math/BigInteger;>;)TSELF;
+ (Ljava/math/BigInteger;Lorg/assertj/core/data/Offset<Ljava/math/BigInteger;>;)T1SELF;
+isNotCloseTo
+ (Ljava/math/BigInteger;Lorg/assertj/core/data/Percentage;)TSELF;
+ (Ljava/math/BigInteger;Lorg/assertj/core/data/Percentage;)T1SELF;
+isNotNegative
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isNotPositive
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isNotZero
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isOne
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isPositive
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isStrictlyBetween
+ (Ljava/math/BigInteger;Ljava/math/BigInteger;)TSELF;
+ (Ljava/math/BigInteger;Ljava/math/BigInteger;)T1SELF;
+isZero
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+usingComparator
+ (Ljava/util/Comparator<-Ljava/math/BigInteger;>;)TSELF;
+ (Ljava/util/Comparator<-Ljava/math/BigInteger;>;)T1SELF;
+usingComparator
+ (Ljava/util/Comparator<-Ljava/math/BigInteger;>;Ljava/lang/String;)TSELF;
+ (Ljava/util/Comparator<-Ljava/math/BigInteger;>;Ljava/lang/String;)T1SELF;
+usingDefaultComparator
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractComparableAssert)

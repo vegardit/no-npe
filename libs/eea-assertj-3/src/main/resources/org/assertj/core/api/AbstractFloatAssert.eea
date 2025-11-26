@@ -1,0 +1,131 @@
+class org/assertj/core/api/AbstractFloatAssert
+ <SELF:Lorg/assertj/core/api/AbstractFloatAssert<TSELF;>;>
+ <SELF:Lorg/assertj/core/api/AbstractFloatAssert<TSELF;>;>
+
+super org/assertj/core/api/AbstractComparableAssert
+ <TSELF;Ljava/lang/Float;>
+ <TSELF;Ljava/lang/Float;>
+super org/assertj/core/api/FloatingPointNumberAssert
+ <TSELF;Ljava/lang/Float;>
+ <TSELF;Ljava/lang/Float;>
+
+<init>
+ (FLjava/lang/Class<*>;)V
+ (FLjava/lang/Class<*>;)V
+<init>
+ (Ljava/lang/Float;Ljava/lang/Class<*>;)V
+ (Ljava/lang/Float;Ljava/lang/Class<*>;)V
+isBetween
+ (Ljava/lang/Float;Ljava/lang/Float;)TSELF;
+ (Ljava/lang/Float;Ljava/lang/Float;)T1SELF;
+isCloseTo
+ (FLorg/assertj/core/data/Offset<Ljava/lang/Float;>;)TSELF;
+ (FLorg/assertj/core/data/Offset<Ljava/lang/Float;>;)T1SELF;
+isCloseTo
+ (FLorg/assertj/core/data/Percentage;)TSELF;
+ (FLorg/assertj/core/data/Percentage;)T1SELF;
+isCloseTo
+ (Ljava/lang/Float;Lorg/assertj/core/data/Offset<Ljava/lang/Float;>;)TSELF;
+ (Ljava/lang/Float;Lorg/assertj/core/data/Offset<Ljava/lang/Float;>;)T1SELF;
+isCloseTo
+ (Ljava/lang/Float;Lorg/assertj/core/data/Percentage;)TSELF;
+ (Ljava/lang/Float;Lorg/assertj/core/data/Percentage;)T1SELF;
+isEqualTo
+ (F)TSELF;
+ (F)T1SELF;
+isEqualTo
+ (FLorg/assertj/core/data/Offset<Ljava/lang/Float;>;)TSELF;
+ (FLorg/assertj/core/data/Offset<Ljava/lang/Float;>;)T1SELF;
+isEqualTo
+ (Ljava/lang/Float;)TSELF;
+ (Ljava/lang/Float;)T1SELF;
+isEqualTo
+ (Ljava/lang/Float;Lorg/assertj/core/data/Offset<Ljava/lang/Float;>;)TSELF;
+ (Ljava/lang/Float;Lorg/assertj/core/data/Offset<Ljava/lang/Float;>;)T1SELF;
+isFinite
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.FloatingPointNumberAssert)
+isGreaterThan
+ (F)TSELF;
+ (F)T1SELF;
+isGreaterThanOrEqualTo
+ (F)TSELF;
+ (F)T1SELF;
+isGreaterThanOrEqualTo
+ (Ljava/lang/Float;)TSELF;
+ (Ljava/lang/Float;)T1SELF;
+isInfinite
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.FloatingPointNumberAssert)
+isLessThan
+ (F)TSELF;
+ (F)T1SELF;
+isLessThanOrEqualTo
+ (F)TSELF;
+ (F)T1SELF;
+isLessThanOrEqualTo
+ (Ljava/lang/Float;)TSELF;
+ (Ljava/lang/Float;)T1SELF;
+isNaN
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.FloatingPointNumberAssert)
+isNegative
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isNotCloseTo
+ (FLorg/assertj/core/data/Offset<Ljava/lang/Float;>;)TSELF;
+ (FLorg/assertj/core/data/Offset<Ljava/lang/Float;>;)T1SELF;
+isNotCloseTo
+ (FLorg/assertj/core/data/Percentage;)TSELF;
+ (FLorg/assertj/core/data/Percentage;)T1SELF;
+isNotCloseTo
+ (Ljava/lang/Float;Lorg/assertj/core/data/Offset<Ljava/lang/Float;>;)TSELF;
+ (Ljava/lang/Float;Lorg/assertj/core/data/Offset<Ljava/lang/Float;>;)T1SELF;
+isNotCloseTo
+ (Ljava/lang/Float;Lorg/assertj/core/data/Percentage;)TSELF;
+ (Ljava/lang/Float;Lorg/assertj/core/data/Percentage;)T1SELF;
+isNotEqualTo
+ (F)TSELF;
+ (F)T1SELF;
+isNotEqualTo
+ (Ljava/lang/Float;)TSELF;
+ (Ljava/lang/Float;)T1SELF;
+isNotFinite
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.FloatingPointNumberAssert)
+isNotInfinite
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.FloatingPointNumberAssert)
+isNotNaN
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.FloatingPointNumberAssert)
+isNotNegative
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isNotPositive
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isNotZero
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isOne
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isPositive
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+isStrictlyBetween
+ (Ljava/lang/Float;Ljava/lang/Float;)TSELF;
+ (Ljava/lang/Float;Ljava/lang/Float;)T1SELF;
+isZero
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.NumberAssert)
+usingComparator
+ (Ljava/util/Comparator<-Ljava/lang/Float;>;)TSELF;
+ (Ljava/util/Comparator<-Ljava/lang/Float;>;)T1SELF;
+usingComparator
+ (Ljava/util/Comparator<-Ljava/lang/Float;>;Ljava/lang/String;)TSELF;
+ (Ljava/util/Comparator<-Ljava/lang/Float;>;Ljava/lang/String;)T1SELF;
+usingDefaultComparator
+ ()TSELF;
+ ()T1SELF; # @Inherited(org.assertj.core.api.AbstractComparableAssert)

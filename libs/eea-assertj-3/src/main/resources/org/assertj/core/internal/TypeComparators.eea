@@ -1,0 +1,22 @@
+class org/assertj/core/internal/TypeComparators
+
+super org/assertj/core/internal/TypeHolder
+ <Ljava/util/Comparator<*>;>
+ <Ljava/util/Comparator<*>;>
+
+defaultTypeComparators
+ ()Lorg/assertj/core/internal/TypeComparators;
+ ()L1org/assertj/core/internal/TypeComparators;
+
+comparatorByTypes
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/Class<*>;Ljava/util/Comparator<*>;>;>;
+ ()Ljava/util/stream/Stream<Ljava/util/Map$Entry<Ljava/lang/Class<*>;Ljava/util/Comparator<*>;>;>;
+getComparatorForType
+ (Ljava/lang/Class<*>;)Ljava/util/Comparator<*>;
+ (Ljava/lang/Class<*>;)Ljava/util/Comparator<*>;
+hasComparatorForType
+ (Ljava/lang/Class<*>;)Z
+ (Ljava/lang/Class<*>;)Z
+registerComparator
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/util/Comparator<-TT;>;)V
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/util/Comparator<-TT;>;)V

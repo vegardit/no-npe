@@ -1,0 +1,98 @@
+class org/assertj/core/api/AssertionsForInterfaceTypes
+
+assertThat
+ (Ljava/lang/CharSequence;)Lorg/assertj/core/api/AbstractCharSequenceAssert<*+Ljava/lang/CharSequence;>;
+ (Ljava/lang/CharSequence;)Lorg/assertj/core/api/AbstractCharSequenceAssert<*+Ljava/lang/CharSequence;>;
+assertThat
+ (Ljava/nio/file/Path;)Lorg/assertj/core/api/AbstractPathAssert<*>;
+ (Ljava/nio/file/Path;)Lorg/assertj/core/api/AbstractPathAssert<*>;
+assertThat
+ (Ljava/util/function/DoublePredicate;)Lorg/assertj/core/api/DoublePredicateAssert;
+ (Ljava/util/function/DoublePredicate;)Lorg/assertj/core/api/DoublePredicateAssert;
+assertThat
+ (Ljava/util/function/IntPredicate;)Lorg/assertj/core/api/IntPredicateAssert;
+ (Ljava/util/function/IntPredicate;)Lorg/assertj/core/api/IntPredicateAssert;
+assertThat
+ (Ljava/util/function/LongPredicate;)Lorg/assertj/core/api/LongPredicateAssert;
+ (Ljava/util/function/LongPredicate;)Lorg/assertj/core/api/LongPredicateAssert;
+assertThat
+ (Ljava/util/stream/DoubleStream;)Lorg/assertj/core/api/ListAssert<Ljava/lang/Double;>;
+ (Ljava/util/stream/DoubleStream;)Lorg/assertj/core/api/ListAssert<Ljava/lang/Double;>;
+assertThat
+ (Ljava/util/stream/IntStream;)Lorg/assertj/core/api/ListAssert<Ljava/lang/Integer;>;
+ (Ljava/util/stream/IntStream;)Lorg/assertj/core/api/ListAssert<Ljava/lang/Integer;>;
+assertThat
+ (Ljava/util/stream/LongStream;)Lorg/assertj/core/api/ListAssert<Ljava/lang/Long;>;
+ (Ljava/util/stream/LongStream;)Lorg/assertj/core/api/ListAssert<Ljava/lang/Long;>;
+assertThat
+ <ACTUAL::Ljava/lang/Iterable<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(Ljava/lang/Iterable<+TELEMENT;>;Lorg/assertj/core/api/AssertFactory<TELEMENT;TELEMENT_ASSERT;>;)Lorg/assertj/core/api/FactoryBasedNavigableIterableAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+ <ACTUAL::Ljava/lang/Iterable<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(Ljava/lang/Iterable<+TELEMENT;>;Lorg/assertj/core/api/AssertFactory<TELEMENT;TELEMENT_ASSERT;>;)Lorg/assertj/core/api/FactoryBasedNavigableIterableAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+assertThat
+ <ACTUAL::Ljava/lang/Iterable<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(TACTUAL;Ljava/lang/Class<TELEMENT_ASSERT;>;)Lorg/assertj/core/api/ClassBasedNavigableIterableAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+ <ACTUAL::Ljava/lang/Iterable<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(TACTUAL;Ljava/lang/Class<TELEMENT_ASSERT;>;)Lorg/assertj/core/api/ClassBasedNavigableIterableAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+assertThat
+ <ACTUAL::Ljava/util/List<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(Ljava/util/List<+TELEMENT;>;Lorg/assertj/core/api/AssertFactory<TELEMENT;TELEMENT_ASSERT;>;)Lorg/assertj/core/api/FactoryBasedNavigableListAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+ <ACTUAL::Ljava/util/List<+TELEMENT;>;ELEMENT:Ljava/lang/Object;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(Ljava/util/List<+TELEMENT;>;Lorg/assertj/core/api/AssertFactory<TELEMENT;TELEMENT_ASSERT;>;)Lorg/assertj/core/api/FactoryBasedNavigableListAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+assertThat
+ <E:Ljava/lang/Object;>(Ljava/util/Collection<+TE;>;)Lorg/assertj/core/api/AbstractCollectionAssert<*Ljava/util/Collection<+TE;>;TE;Lorg/assertj/core/api/ObjectAssert<TE;>;>;
+ <E:Ljava/lang/Object;>(Ljava/util/Collection<+TE;>;)Lorg/assertj/core/api/AbstractCollectionAssert<*Ljava/util/Collection<+TE;>;TE;Lorg/assertj/core/api/ObjectAssert<TE;>;>;
+assertThat
+ <ELEMENT:Ljava/lang/Object;>(Ljava/lang/Iterable<+TELEMENT;>;)Lorg/assertj/core/api/IterableAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/lang/Iterable<+TELEMENT;>;)Lorg/assertj/core/api/IterableAssert<TELEMENT;>;
+assertThat
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/Iterator<+TELEMENT;>;)Lorg/assertj/core/api/IteratorAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/Iterator<+TELEMENT;>;)Lorg/assertj/core/api/IteratorAssert<TELEMENT;>;
+assertThat
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/List<+TELEMENT;>;)Lorg/assertj/core/api/ListAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/List<+TELEMENT;>;)Lorg/assertj/core/api/ListAssert<TELEMENT;>;
+assertThat
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/Spliterator<TELEMENT;>;)Lorg/assertj/core/api/SpliteratorAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/Spliterator<TELEMENT;>;)Lorg/assertj/core/api/SpliteratorAssert<TELEMENT;>;
+assertThat
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/stream/Stream<+TELEMENT;>;)Lorg/assertj/core/api/ListAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/stream/Stream<+TELEMENT;>;)Lorg/assertj/core/api/ListAssert<TELEMENT;>;
+assertThat
+ <ELEMENT:Ljava/lang/Object;ACTUAL::Ljava/util/List<+TELEMENT;>;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(Ljava/util/List<+TELEMENT;>;Ljava/lang/Class<TELEMENT_ASSERT;>;)Lorg/assertj/core/api/ClassBasedNavigableListAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+ <ELEMENT:Ljava/lang/Object;ACTUAL::Ljava/util/List<+TELEMENT;>;ELEMENT_ASSERT:Lorg/assertj/core/api/AbstractAssert<TELEMENT_ASSERT;TELEMENT;>;>(Ljava/util/List<+TELEMENT;>;Ljava/lang/Class<TELEMENT_ASSERT;>;)Lorg/assertj/core/api/ClassBasedNavigableListAssert<*TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+assertThat
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;)Lorg/assertj/core/api/MapAssert<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;)Lorg/assertj/core/api/MapAssert<TK;TV;>;
+assertThat
+ <RESULT:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<TRESULT;>;)Lorg/assertj/core/api/CompletableFutureAssert<TRESULT;>;
+ <RESULT:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<TRESULT;>;)Lorg/assertj/core/api/CompletableFutureAssert<TRESULT;>;
+assertThat
+ <T::Ljava/lang/Comparable<-TT;>;>(TT;)Lorg/assertj/core/api/AbstractComparableAssert<*TT;>;
+ <T::Ljava/lang/Comparable<-TT;>;>(TT;)L1org/assertj/core/api/AbstractComparableAssert<*TT;>;
+assertThat
+ <T::Lorg/assertj/core/api/AssertDelegateTarget;>(TT;)TT;
+ <T::Lorg/assertj/core/api/AssertDelegateTarget;>(TT;)TT;
+assertThat
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<TT;>;)Lorg/assertj/core/api/PredicateAssert<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<TT;>;)Lorg/assertj/core/api/PredicateAssert<TT;>;
+assertThat
+ <T:Ljava/lang/Object;>(Lorg/assertj/core/api/AssertProvider<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lorg/assertj/core/api/AssertProvider<TT;>;)TT;
+assertThatCollection
+ <E:Ljava/lang/Object;>(Ljava/util/Collection<+TE;>;)Lorg/assertj/core/api/AbstractCollectionAssert<*Ljava/util/Collection<+TE;>;TE;Lorg/assertj/core/api/ObjectAssert<TE;>;>;
+ <E:Ljava/lang/Object;>(Ljava/util/Collection<+TE;>;)Lorg/assertj/core/api/AbstractCollectionAssert<*Ljava/util/Collection<+TE;>;TE;Lorg/assertj/core/api/ObjectAssert<TE;>;>;
+assertThatComparable
+ <T:Ljava/lang/Object;>(Ljava/lang/Comparable<TT;>;)Lorg/assertj/core/api/AbstractUniversalComparableAssert<*TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Comparable<TT;>;)L1org/assertj/core/api/AbstractUniversalComparableAssert<*TT;>;
+assertThatIterable
+ <ELEMENT:Ljava/lang/Object;>(Ljava/lang/Iterable<+TELEMENT;>;)Lorg/assertj/core/api/IterableAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/lang/Iterable<+TELEMENT;>;)Lorg/assertj/core/api/IterableAssert<TELEMENT;>;
+assertThatIterator
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/Iterator<+TELEMENT;>;)Lorg/assertj/core/api/IteratorAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/Iterator<+TELEMENT;>;)Lorg/assertj/core/api/IteratorAssert<TELEMENT;>;
+assertThatList
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/List<+TELEMENT;>;)Lorg/assertj/core/api/ListAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/List<+TELEMENT;>;)Lorg/assertj/core/api/ListAssert<TELEMENT;>;
+assertThatPath
+ (Ljava/nio/file/Path;)Lorg/assertj/core/api/AbstractPathAssert<*>;
+ (Ljava/nio/file/Path;)Lorg/assertj/core/api/AbstractPathAssert<*>;
+assertThatPredicate
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<TT;>;)Lorg/assertj/core/api/PredicateAssert<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<TT;>;)Lorg/assertj/core/api/PredicateAssert<TT;>;
+assertThatStream
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/stream/Stream<+TELEMENT;>;)Lorg/assertj/core/api/ListAssert<TELEMENT;>;
+ <ELEMENT:Ljava/lang/Object;>(Ljava/util/stream/Stream<+TELEMENT;>;)Lorg/assertj/core/api/ListAssert<TELEMENT;>;

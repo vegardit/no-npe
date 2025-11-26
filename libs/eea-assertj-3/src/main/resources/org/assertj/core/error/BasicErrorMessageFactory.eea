@@ -1,0 +1,31 @@
+class org/assertj/core/error/BasicErrorMessageFactory
+
+unquotedString
+ (Ljava/lang/String;)Ljava/lang/CharSequence;
+ (Ljava/lang/String;)L1java/lang/CharSequence;
+
+arguments
+ [Ljava/lang/Object;
+ [Ljava/lang/Object;
+format
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ljava/lang/String;[Ljava/lang/Object;)V
+ (Ljava/lang/String;[Ljava/lang/Object;)V
+create
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.assertj.core.error.ErrorMessageFactory)
+create
+ (Lorg/assertj/core/description/Description;)Ljava/lang/String;
+ (Lorg/assertj/core/description/Description;)L1java/lang/String; # @Inherited(org.assertj.core.error.ErrorMessageFactory)
+create
+ (Lorg/assertj/core/description/Description;Lorg/assertj/core/presentation/Representation;)Ljava/lang/String;
+ (Lorg/assertj/core/description/Description;Lorg/assertj/core/presentation/Representation;)L1java/lang/String; # @Inherited(org.assertj.core.error.ErrorMessageFactory)
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
