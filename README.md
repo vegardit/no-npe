@@ -31,7 +31,7 @@ https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.jdt.doc.user/tasks/
 
 ### <a id="binaries"></a>Binaries
 
-Latest **Release** binaries are available on Maven central, see https://search.maven.org/search?q=g%3Acom.vegardit.no-npe
+Latest **Release** binaries are available on Maven central, see https://central.sonatype.com/search?q=g%3Acom.vegardit.no-npe&sort=name
 
 Latest **Snapshot** binaries are available via the [mvn-snapshots-repo](https://github.com/vegardit/no-npe/tree/mvn-snapshots-repo) git branch.
 You need to add this repository configuration to your Maven `settings.xml`:
