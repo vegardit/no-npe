@@ -5,13 +5,13 @@ copy
  (Ljava/io/InputStream;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)J
 copy
  (Ljava/nio/file/Path;Ljava/io/OutputStream;)J
- (Ljava/nio/file/Path;Ljava/io/OutputStream;)J
+ (Ljava/nio/file/Path;L1java/io/OutputStream;)J
 copy
  (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
- (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
+ (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)L1java/nio/file/Path;
 createDirectories
  (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute<*>;)Ljava/nio/file/Path;
- (L1java/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
+ (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
 createDirectory
  (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute<*>;)Ljava/nio/file/Path;
  (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
@@ -29,13 +29,13 @@ createTempDirectory
  (Ljava/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
 createTempDirectory
  (Ljava/nio/file/Path;Ljava/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)Ljava/nio/file/Path;
- (Ljava/nio/file/Path;Ljava/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
+ (Ljava/nio/file/Path;L0java/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
 createTempFile
  (Ljava/lang/String;Ljava/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)Ljava/nio/file/Path;
- (Ljava/lang/String;Ljava/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
+ (Ljava/lang/String;L0java/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
 createTempFile
  (Ljava/nio/file/Path;Ljava/lang/String;Ljava/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)Ljava/nio/file/Path;
- (Ljava/nio/file/Path;Ljava/lang/String;Ljava/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
+ (Ljava/nio/file/Path;L0java/lang/String;L0java/lang/String;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
 delete
  (Ljava/nio/file/Path;)V
  (Ljava/nio/file/Path;)V
@@ -47,22 +47,22 @@ exists
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
 find
  (Ljava/nio/file/Path;ILjava/util/function/BiPredicate<Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;>;[Ljava/nio/file/FileVisitOption;)Ljava/util/stream/Stream<Ljava/nio/file/Path;>;
- (Ljava/nio/file/Path;ILjava/util/function/BiPredicate<Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;>;[Ljava/nio/file/FileVisitOption;)Ljava/util/stream/Stream<Ljava/nio/file/Path;>;
+ (Ljava/nio/file/Path;IL1java/util/function/BiPredicate<Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;>;[Ljava/nio/file/FileVisitOption;)L1java/util/stream/Stream<L1java/nio/file/Path;>;
 getAttribute
  (Ljava/nio/file/Path;Ljava/lang/String;[Ljava/nio/file/LinkOption;)Ljava/lang/Object;
- (Ljava/nio/file/Path;Ljava/lang/String;[Ljava/nio/file/LinkOption;)Ljava/lang/Object;
+ (Ljava/nio/file/Path;L1java/lang/String;[Ljava/nio/file/LinkOption;)L1java/lang/Object;
 getFileAttributeView
  <V::Ljava/nio/file/attribute/FileAttributeView;>(Ljava/nio/file/Path;Ljava/lang/Class<TV;>;[Ljava/nio/file/LinkOption;)TV;
- <V::Ljava/nio/file/attribute/FileAttributeView;>(Ljava/nio/file/Path;Ljava/lang/Class<TV;>;[Ljava/nio/file/LinkOption;)TV;
+ <V::Ljava/nio/file/attribute/FileAttributeView;>(L1java/nio/file/Path;L1java/lang/Class<TV;>;[Ljava/nio/file/LinkOption;)TV;
 getFileStore
  (Ljava/nio/file/Path;)Ljava/nio/file/FileStore;
- (Ljava/nio/file/Path;)Ljava/nio/file/FileStore;
+ (Ljava/nio/file/Path;)L1java/nio/file/FileStore;
 getLastModifiedTime
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileTime;
- (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileTime;
+ (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)L1java/nio/file/attribute/FileTime;
 getOwner
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/UserPrincipal;
- (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/UserPrincipal;
+ (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)L1java/nio/file/attribute/UserPrincipal;
 getPosixFilePermissions
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/util/Set<Ljava/nio/file/attribute/PosixFilePermission;>;
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/util/Set<Ljava/nio/file/attribute/PosixFilePermission;>;
@@ -122,13 +122,13 @@ newByteChannel
  (Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)L1java/nio/channels/SeekableByteChannel;
 newDirectoryStream
  (Ljava/nio/file/Path;)Ljava/nio/file/DirectoryStream<Ljava/nio/file/Path;>;
- (Ljava/nio/file/Path;)L1java/nio/file/DirectoryStream<Ljava/nio/file/Path;>;
+ (Ljava/nio/file/Path;)L1java/nio/file/DirectoryStream<L1java/nio/file/Path;>;
 newDirectoryStream
  (Ljava/nio/file/Path;Ljava/lang/String;)Ljava/nio/file/DirectoryStream<Ljava/nio/file/Path;>;
- (Ljava/nio/file/Path;Ljava/lang/String;)L1java/nio/file/DirectoryStream<Ljava/nio/file/Path;>;
+ (Ljava/nio/file/Path;Ljava/lang/String;)L1java/nio/file/DirectoryStream<L1java/nio/file/Path;>;
 newDirectoryStream
  (Ljava/nio/file/Path;Ljava/nio/file/DirectoryStream$Filter<-Ljava/nio/file/Path;>;)Ljava/nio/file/DirectoryStream<Ljava/nio/file/Path;>;
- (Ljava/nio/file/Path;Ljava/nio/file/DirectoryStream$Filter<-Ljava/nio/file/Path;>;)L1java/nio/file/DirectoryStream<Ljava/nio/file/Path;>;
+ (Ljava/nio/file/Path;Ljava/nio/file/DirectoryStream$Filter<-Ljava/nio/file/Path;>;)L1java/nio/file/DirectoryStream<L1java/nio/file/Path;>;
 newInputStream
  (Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;
  (Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)L1java/io/InputStream;

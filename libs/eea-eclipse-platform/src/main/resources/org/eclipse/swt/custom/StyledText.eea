@@ -1,9 +1,5 @@
 class org/eclipse/swt/custom/StyledText
 
-updateAndRefreshCarets
- (Lorg/eclipse/swt/custom/StyledText;Ljava/util/function/Consumer<Lorg/eclipse/swt/widgets/Caret;>;)V
- (Lorg/eclipse/swt/custom/StyledText;Ljava/util/function/Consumer<Lorg/eclipse/swt/widgets/Caret;>;)V
-
 <init>
  (Lorg/eclipse/swt/widgets/Composite;I)V
  (Lorg/eclipse/swt/widgets/Composite;I)V
@@ -55,6 +51,9 @@ getBlockSelectionBounds
 getContent
  ()Lorg/eclipse/swt/custom/StyledTextContent;
  ()L1org/eclipse/swt/custom/StyledTextContent;
+getData
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (L1java/lang/String;)L0java/lang/Object; # @Inherited(org.eclipse.swt.widgets.Control)
 getForeground
  ()Lorg/eclipse/swt/graphics/Color;
  ()L1org/eclipse/swt/graphics/Color; # @Inherited(org.eclipse.swt.widgets.Control)
