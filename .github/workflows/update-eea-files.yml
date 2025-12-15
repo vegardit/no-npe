@@ -64,7 +64,7 @@ jobs:
 
     - name: "Cache: Restore"
       id: cache-restore
-      uses: actions/cache/restore@v4
+      uses: actions/cache/restore@v5
       with:
         # IMPORTANT: path must have exactly the same value as in the cache save step otherwise restore will fail with cache key not found
         path: |
