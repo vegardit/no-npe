@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: © Vegard IT GmbH (https://vegardit.com) and contributors
+SPDX-FileContributor: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
+SPDX-License-Identifier: EPL-2.0
+SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.vegardit.no-npe</groupId>
+    <artifactId>no-npe-parent</artifactId>
+    <version>1.3.12-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>no-npe-eea-all</artifactId>
+  <name>${project.artifactId}</name>
+
+  <properties>
+    <failIfNoTests>false</failIfNoTests>
+  </properties>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <!-- https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html -->
+        <!-- https://github.com/apache/felix-dev/tree/master/tools/maven-bundle-plugin -->
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>manifest@process-classes</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>manifest</goal>
+            </goals>
+            <configuration>
+              <skip>false</skip>
+              <!-- https://bnd.bndtools.org/chapters/825-instructions-ref.html -->
+              <instructions>
+                <!--
+                  Declares that this plugin exports its external annotations (.eea files) and
+                  be considered by clients performing annotation based null analysis.
+                  See https://bugs.eclipse.org/bugs/show_bug.cgi?id=526011 and
+                  https://github.com/eclipse-pde/eclipse.pde/commit/3f9f33643122a8109460e88362593d67fde42ed5
+                -->
+                <Eclipse-ExportExternalAnnotations>true</Eclipse-ExportExternalAnnotations>
+              </instructions>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.gmavenplus</groupId>
+        <artifactId>gmavenplus-plugin</artifactId>
+        <executions>
+          <execution>
+            <!-- merge *.eea from all libs/... modules into target/collected-eeas -->
+            <id>collect-eeas</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
+              <scripts>
+                <script><![CDATA[
+                  def includeDirs = new TreeSet<String>()
+                  project.parent.basedir.toPath().resolve("libs").eachDir() { moduleDir ->
+                    includeDirs.add(moduleDir.resolve("src/main/resources").toString())
+                  }
+                  System.setProperty("eea-generator.action", "minimize")
+                  System.setProperty("eea-generator.input.dirs", String.join(",", includeDirs))
+                  System.setProperty("eea-generator.output.dir", project.build.outputDirectory)
+                  com.vegardit.no_npe.eea_generator.EEAGenerator.main()
+                ]]></script>
+              </scripts>
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>no-npe-eea-generator</artifactId>
+            <version>${project.version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+</project>
