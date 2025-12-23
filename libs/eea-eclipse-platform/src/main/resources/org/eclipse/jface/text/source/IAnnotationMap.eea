@@ -7,12 +7,18 @@ super java/util/Map
 entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;>;>;
  ()Ljava/util/Set<Ljava/util/Map$Entry<Lorg/eclipse/jface/text/source/Annotation;Lorg/eclipse/jface/text/Position;>;>;
+getLockObject
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.eclipse.jface.text.ISynchronizable)
 keySet
  ()Ljava/util/Set<Lorg/eclipse/jface/text/source/Annotation;>;
  ()Ljava/util/Set<Lorg/eclipse/jface/text/source/Annotation;>;
 keySetIterator
  ()Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
  ()Ljava/util/Iterator<Lorg/eclipse/jface/text/source/Annotation;>;
+setLockObject
+ (Ljava/lang/Object;)V
+ (L0java/lang/Object;)V # @Inherited(org.eclipse.jface.text.ISynchronizable)
 values
  ()Ljava/util/Collection<Lorg/eclipse/jface/text/Position;>;
  ()Ljava/util/Collection<Lorg/eclipse/jface/text/Position;>;
