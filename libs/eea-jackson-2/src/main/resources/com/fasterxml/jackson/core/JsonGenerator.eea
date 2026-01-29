@@ -29,6 +29,9 @@ _constructWriteException
 _copyCurrentContents
  (Lcom/fasterxml/jackson/core/JsonParser;)V
  (Lcom/fasterxml/jackson/core/JsonParser;)V
+_copyCurrentContentsExact
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
 _copyCurrentFloatValue
  (Lcom/fasterxml/jackson/core/JsonParser;)V
  (Lcom/fasterxml/jackson/core/JsonParser;)V
@@ -74,6 +77,9 @@ copyCurrentEventExact
 copyCurrentStructure
  (Lcom/fasterxml/jackson/core/JsonParser;)V
  (Lcom/fasterxml/jackson/core/JsonParser;)V
+copyCurrentStructureExact
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
+ (Lcom/fasterxml/jackson/core/JsonParser;)V
 currentValue
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
@@ -107,6 +113,9 @@ getSchema
 getWriteCapabilities
  ()Lcom/fasterxml/jackson/core/util/JacksonFeatureSet<Lcom/fasterxml/jackson/core/StreamWriteCapability;>;
  ()Lcom/fasterxml/jackson/core/util/JacksonFeatureSet<Lcom/fasterxml/jackson/core/StreamWriteCapability;>;
+has
+ (Lcom/fasterxml/jackson/core/StreamWriteCapability;)Z
+ (Lcom/fasterxml/jackson/core/StreamWriteCapability;)Z
 isEnabled
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Z
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Z

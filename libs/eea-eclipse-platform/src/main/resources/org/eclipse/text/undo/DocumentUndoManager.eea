@@ -1,0 +1,23 @@
+class org/eclipse/text/undo/DocumentUndoManager
+
+<init>
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V
+addDocumentUndoListener
+ (Lorg/eclipse/text/undo/IDocumentUndoListener;)V
+ (L1org/eclipse/text/undo/IDocumentUndoListener;)V # @Inherited(org.eclipse.text.undo.IDocumentUndoManager)
+connect
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+disconnect
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+getUndoContext
+ ()Lorg/eclipse/core/commands/operations/IUndoContext;
+ ()Lorg/eclipse/core/commands/operations/IUndoContext;
+removeDocumentUndoListener
+ (Lorg/eclipse/text/undo/IDocumentUndoListener;)V
+ (L1org/eclipse/text/undo/IDocumentUndoListener;)V # @Inherited(org.eclipse.text.undo.IDocumentUndoManager)
+transferUndoHistory
+ (Lorg/eclipse/text/undo/IDocumentUndoManager;)V
+ (Lorg/eclipse/text/undo/IDocumentUndoManager;)V

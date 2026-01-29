@@ -1,0 +1,20 @@
+class org/eclipse/text/templates/TemplateReaderWriter
+
+read
+ (Ljava/io/InputStream;Ljava/util/ResourceBundle;)[Lorg/eclipse/text/templates/TemplatePersistenceData;
+ (L1java/io/InputStream;L0java/util/ResourceBundle;)[1L1org/eclipse/text/templates/TemplatePersistenceData;
+read
+ (Ljava/io/Reader;)[Lorg/eclipse/text/templates/TemplatePersistenceData;
+ (L1java/io/Reader;)[1L1org/eclipse/text/templates/TemplatePersistenceData;
+read
+ (Ljava/io/Reader;Ljava/util/ResourceBundle;)[Lorg/eclipse/text/templates/TemplatePersistenceData;
+ (L1java/io/Reader;L0java/util/ResourceBundle;)[1L1org/eclipse/text/templates/TemplatePersistenceData;
+readSingle
+ (Ljava/io/Reader;Ljava/lang/String;)Lorg/eclipse/text/templates/TemplatePersistenceData;
+ (L1java/io/Reader;L0java/lang/String;)L0org/eclipse/text/templates/TemplatePersistenceData;
+save
+ ([Lorg/eclipse/text/templates/TemplatePersistenceData;Ljava/io/OutputStream;)V
+ ([1L1org/eclipse/text/templates/TemplatePersistenceData;L1java/io/OutputStream;)V
+save
+ ([Lorg/eclipse/text/templates/TemplatePersistenceData;Ljava/io/Writer;)V
+ ([1L1org/eclipse/text/templates/TemplatePersistenceData;L1java/io/Writer;)V

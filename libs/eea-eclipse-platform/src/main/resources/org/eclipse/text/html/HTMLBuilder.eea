@@ -1,0 +1,63 @@
+class org/eclipse/text/html/HTMLBuilder
+
+convertToHTMLContent
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+convertToHTMLContentWithWhitespace
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String;
+convertTopLevelFont
+ (Ljava/lang/String;ZZILjava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;ZZILjava/lang/String;)Ljava/lang/String;
+read
+ (Ljava/io/Reader;)Ljava/lang/String;
+ (Ljava/io/Reader;)L0java/lang/String;
+
+<init>
+ (Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;)V
+ (Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;)V
+addBullet
+ (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+ (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+addPageEpilog
+ (Ljava/lang/StringBuilder;)V
+ (Ljava/lang/StringBuilder;)V
+addPageProlog
+ (Ljava/lang/StringBuilder;)V
+ (Ljava/lang/StringBuilder;)V
+addParagraph
+ (Ljava/lang/StringBuilder;Ljava/io/Reader;)V
+ (Ljava/lang/StringBuilder;Ljava/io/Reader;)V
+addParagraph
+ (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+ (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+addPreFormatted
+ (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+ (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+addSmallHeader
+ (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+ (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+endBulletList
+ (Ljava/lang/StringBuilder;)V
+ (Ljava/lang/StringBuilder;)V
+insertPageProlog
+ (Ljava/lang/StringBuilder;I)V
+ (Ljava/lang/StringBuilder;I)V
+insertPageProlog
+ (Ljava/lang/StringBuilder;ILjava/lang/String;)V
+ (Ljava/lang/StringBuilder;ILjava/lang/String;)V
+insertPageProlog
+ (Ljava/lang/StringBuilder;ILjava/net/URL;)V
+ (Ljava/lang/StringBuilder;ILjava/net/URL;)V
+insertPageProlog
+ (Ljava/lang/StringBuilder;ILorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Ljava/lang/String;)V
+ (Ljava/lang/StringBuilder;ILorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Ljava/lang/String;)V
+insertStyles
+ (Ljava/lang/StringBuilder;[Ljava/lang/String;)V
+ (Ljava/lang/StringBuilder;[Ljava/lang/String;)V
+setColors
+ (Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;)V
+ (Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;Lorg/eclipse/text/html/RGB;)V
+startBulletList
+ (Ljava/lang/StringBuilder;)V
+ (Ljava/lang/StringBuilder;)V

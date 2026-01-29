@@ -1,0 +1,50 @@
+class org/eclipse/text/templates/TemplateStoreCore
+
+<init>
+ (Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;Ljava/lang/String;)V
+ (L1org/eclipse/core/runtime/preferences/IEclipsePreferences;L1java/lang/String;)V
+<init>
+ (Lorg/eclipse/text/templates/ContextTypeRegistry;Lorg/eclipse/core/runtime/preferences/IEclipsePreferences;Ljava/lang/String;)V
+ (L0org/eclipse/text/templates/ContextTypeRegistry;L1org/eclipse/core/runtime/preferences/IEclipsePreferences;L1java/lang/String;)V
+add
+ (Lorg/eclipse/text/templates/TemplatePersistenceData;)V
+ (L1org/eclipse/text/templates/TemplatePersistenceData;)V
+delete
+ (Lorg/eclipse/text/templates/TemplatePersistenceData;)V
+ (L1org/eclipse/text/templates/TemplatePersistenceData;)V
+findTemplate
+ (Ljava/lang/String;)Lorg/eclipse/jface/text/templates/Template;
+ (L1java/lang/String;)L0org/eclipse/jface/text/templates/Template;
+findTemplate
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jface/text/templates/Template;
+ (L1java/lang/String;L0java/lang/String;)L0org/eclipse/jface/text/templates/Template;
+findTemplateById
+ (Ljava/lang/String;)Lorg/eclipse/jface/text/templates/Template;
+ (L1java/lang/String;)L0org/eclipse/jface/text/templates/Template;
+getKey
+ ()Ljava/lang/String;
+ ()L1java/lang/String;
+getRegistry
+ ()Lorg/eclipse/text/templates/ContextTypeRegistry;
+ ()L0org/eclipse/text/templates/ContextTypeRegistry;
+getTemplateData
+ (Ljava/lang/String;)Lorg/eclipse/text/templates/TemplatePersistenceData;
+ (L1java/lang/String;)L0org/eclipse/text/templates/TemplatePersistenceData;
+getTemplateData
+ (Z)[Lorg/eclipse/text/templates/TemplatePersistenceData;
+ (Z)[1L1org/eclipse/text/templates/TemplatePersistenceData;
+getTemplates
+ ()[Lorg/eclipse/jface/text/templates/Template;
+ ()[1L1org/eclipse/jface/text/templates/Template;
+getTemplates
+ (Ljava/lang/String;)[Lorg/eclipse/jface/text/templates/Template;
+ (L0java/lang/String;)[1L1org/eclipse/jface/text/templates/Template;
+handleException
+ (Ljava/io/IOException;)V
+ (L1java/io/IOException;)V
+internalAdd
+ (Lorg/eclipse/text/templates/TemplatePersistenceData;)V
+ (L1org/eclipse/text/templates/TemplatePersistenceData;)V
+internalGetTemplates
+ ()Ljava/util/List<Lorg/eclipse/text/templates/TemplatePersistenceData;>;
+ ()L1java/util/List<L1org/eclipse/text/templates/TemplatePersistenceData;>;

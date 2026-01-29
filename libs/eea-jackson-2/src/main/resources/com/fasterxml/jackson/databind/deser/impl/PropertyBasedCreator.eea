@@ -1,9 +1,6 @@
 class com/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator
 
 construct
- (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;[Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)Lcom/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator;
- (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;[Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;)Lcom/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator;
-construct
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;[Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;)Lcom/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;[Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;Lcom/fasterxml/jackson/databind/deser/impl/BeanPropertyMap;)Lcom/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator;
 construct
@@ -13,6 +10,9 @@ construct
 _allProperties
  [Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
  [Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;
+_injectablePropIndexes
+ Ljava/util/BitSet;
+ Ljava/util/BitSet;
 _propertyLookup
  Ljava/util/HashMap<Ljava/lang/String;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
  Ljava/util/HashMap<Ljava/lang/String;Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;

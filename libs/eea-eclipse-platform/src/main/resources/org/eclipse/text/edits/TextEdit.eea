@@ -1,0 +1,69 @@
+class org/eclipse/text/edits/TextEdit
+
+getCoverage
+ ([Lorg/eclipse/text/edits/TextEdit;)Lorg/eclipse/jface/text/IRegion;
+ ([Lorg/eclipse/text/edits/TextEdit;)L0org/eclipse/jface/text/IRegion;
+
+<init>
+ (Lorg/eclipse/text/edits/TextEdit;)V
+ (Lorg/eclipse/text/edits/TextEdit;)V
+accept
+ (Lorg/eclipse/text/edits/TextEditVisitor;)V
+ (Lorg/eclipse/text/edits/TextEditVisitor;)V
+accept0
+ (Lorg/eclipse/text/edits/TextEditVisitor;)V
+ (Lorg/eclipse/text/edits/TextEditVisitor;)V
+acceptChildren
+ (Lorg/eclipse/text/edits/TextEditVisitor;)V
+ (Lorg/eclipse/text/edits/TextEditVisitor;)V
+addChild
+ (Lorg/eclipse/text/edits/TextEdit;)V
+ (Lorg/eclipse/text/edits/TextEdit;)V
+addChildren
+ ([Lorg/eclipse/text/edits/TextEdit;)V
+ ([Lorg/eclipse/text/edits/TextEdit;)V
+apply
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/text/edits/UndoEdit;
+ (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/text/edits/UndoEdit;
+apply
+ (Lorg/eclipse/jface/text/IDocument;I)Lorg/eclipse/text/edits/UndoEdit;
+ (Lorg/eclipse/jface/text/IDocument;I)Lorg/eclipse/text/edits/UndoEdit;
+copy
+ ()Lorg/eclipse/text/edits/TextEdit;
+ ()Lorg/eclipse/text/edits/TextEdit;
+covers
+ (Lorg/eclipse/text/edits/TextEdit;)Z
+ (Lorg/eclipse/text/edits/TextEdit;)Z
+doCopy
+ ()Lorg/eclipse/text/edits/TextEdit;
+ ()Lorg/eclipse/text/edits/TextEdit;
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getChildren
+ ()[Lorg/eclipse/text/edits/TextEdit;
+ ()[Lorg/eclipse/text/edits/TextEdit;
+getParent
+ ()Lorg/eclipse/text/edits/TextEdit;
+ ()Lorg/eclipse/text/edits/TextEdit;
+getRegion
+ ()Lorg/eclipse/jface/text/IRegion;
+ ()L1org/eclipse/jface/text/IRegion;
+getRoot
+ ()Lorg/eclipse/text/edits/TextEdit;
+ ()Lorg/eclipse/text/edits/TextEdit;
+postProcessCopy
+ (Lorg/eclipse/text/edits/TextEditCopier;)V
+ (Lorg/eclipse/text/edits/TextEditCopier;)V
+removeChild
+ (I)Lorg/eclipse/text/edits/TextEdit;
+ (I)Lorg/eclipse/text/edits/TextEdit;
+removeChild
+ (Lorg/eclipse/text/edits/TextEdit;)Z
+ (Lorg/eclipse/text/edits/TextEdit;)Z
+removeChildren
+ ()[Lorg/eclipse/text/edits/TextEdit;
+ ()[Lorg/eclipse/text/edits/TextEdit;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

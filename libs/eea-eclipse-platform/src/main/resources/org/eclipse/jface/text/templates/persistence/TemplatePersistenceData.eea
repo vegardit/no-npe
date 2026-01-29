@@ -11,16 +11,16 @@ class org/eclipse/jface/text/templates/persistence/TemplatePersistenceData
  (Lorg/eclipse/text/templates/TemplatePersistenceData;)V
 equals
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+ (L0java/lang/Object;)Z # @Inherited(org.eclipse.text.templates.TemplatePersistenceData)
 getId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getTemplate
  ()Lorg/eclipse/jface/text/templates/Template;
- ()Lorg/eclipse/jface/text/templates/Template;
+ ()L1org/eclipse/jface/text/templates/Template; # @Inherited(org.eclipse.text.templates.TemplatePersistenceData)
 getUniqueIdForEquals
  ()Ljava/util/UUID;
- ()Ljava/util/UUID;
+ ()L1java/util/UUID; # @Inherited(org.eclipse.text.templates.TemplatePersistenceData)
 setTemplate
  (Lorg/eclipse/jface/text/templates/Template;)V
- (Lorg/eclipse/jface/text/templates/Template;)V
+ (L0org/eclipse/jface/text/templates/Template;)V # @Inherited(org.eclipse.text.templates.TemplatePersistenceData)
