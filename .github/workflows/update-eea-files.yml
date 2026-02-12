@@ -62,6 +62,18 @@ jobs:
         jdks: 11,17,21,25
 
 
+    - name: "Configure Maven JDK ☕"
+      run: |
+        set -euo pipefail
+        JAVA_HOME="$JAVA25_HOME"
+        if [[ "${RUNNER_OS:-}" == "Windows" ]]; then
+          echo "${JAVA_HOME}\\bin" >>"$GITHUB_PATH"
+        else
+          echo "${JAVA_HOME}/bin" >>"$GITHUB_PATH"
+        fi
+        echo "JAVA_HOME=${JAVA_HOME}" >>"$GITHUB_ENV"
+
+
     - name: "Cache: Restore"
       id: cache-restore
       uses: actions/cache/restore@v5
