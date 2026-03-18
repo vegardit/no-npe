@@ -27,10 +27,10 @@ read
  (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.ReadableByteChannel)
 read
  ([Ljava/nio/ByteBuffer;)J
- ([Ljava/nio/ByteBuffer;)J
+ ([1Ljava/nio/ByteBuffer;)J # @Inherited(java.nio.channels.ScatteringByteChannel)
 read
  ([Ljava/nio/ByteBuffer;II)J
- ([Ljava/nio/ByteBuffer;II)J
+ ([1Ljava/nio/ByteBuffer;II)J # @Inherited(java.nio.channels.ScatteringByteChannel)
 setOption
  <T:Ljava/lang/Object;>(Ljava/net/SocketOption<TT;>;TT;)Ljava/nio/channels/SocketChannel;
  <T:Ljava/lang/Object;>(Ljava/net/SocketOption<TT;>;TT;)Ljava/nio/channels/SocketChannel;
@@ -48,7 +48,7 @@ write
  (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.WritableByteChannel)
 write
  ([Ljava/nio/ByteBuffer;)J
- ([Ljava/nio/ByteBuffer;)J
+ ([1Ljava/nio/ByteBuffer;)J # @Inherited(java.nio.channels.GatheringByteChannel)
 write
  ([Ljava/nio/ByteBuffer;II)J
- ([Ljava/nio/ByteBuffer;II)J
+ ([1Ljava/nio/ByteBuffer;II)J # @Inherited(java.nio.channels.GatheringByteChannel)
