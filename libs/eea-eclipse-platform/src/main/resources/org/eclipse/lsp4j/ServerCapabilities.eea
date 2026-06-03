@@ -63,6 +63,9 @@ getImplementationProvider
 getInlayHintProvider
  ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;>;
  ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;>;
+getInlineCompletionProvider
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineCompletionRegistrationOptions;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineCompletionRegistrationOptions;>;
 getInlineValueProvider
  ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineValueRegistrationOptions;>;
  ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineValueRegistrationOptions;>;
@@ -93,6 +96,9 @@ getSemanticTokensProvider
 getSignatureHelpProvider
  ()Lorg/eclipse/lsp4j/SignatureHelpOptions;
  ()Lorg/eclipse/lsp4j/SignatureHelpOptions;
+getTextDocument
+ ()Lorg/eclipse/lsp4j/TextDocumentServerCapabilities;
+ ()Lorg/eclipse/lsp4j/TextDocumentServerCapabilities;
 getTextDocumentSync
  ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentSyncKind;Lorg/eclipse/lsp4j/TextDocumentSyncOptions;>;
  ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Lorg/eclipse/lsp4j/TextDocumentSyncKind;Lorg/eclipse/lsp4j/TextDocumentSyncOptions;>;
@@ -246,6 +252,15 @@ setInlayHintProvider
 setInlayHintProvider
  (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;>;)V
  (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlayHintRegistrationOptions;>;)V
+setInlineCompletionProvider
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setInlineCompletionProvider
+ (Lorg/eclipse/lsp4j/InlineCompletionRegistrationOptions;)V
+ (Lorg/eclipse/lsp4j/InlineCompletionRegistrationOptions;)V
+setInlineCompletionProvider
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineCompletionRegistrationOptions;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/Boolean;Lorg/eclipse/lsp4j/InlineCompletionRegistrationOptions;>;)V
 setInlineValueProvider
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
@@ -312,6 +327,9 @@ setSemanticTokensProvider
 setSignatureHelpProvider
  (Lorg/eclipse/lsp4j/SignatureHelpOptions;)V
  (Lorg/eclipse/lsp4j/SignatureHelpOptions;)V
+setTextDocument
+ (Lorg/eclipse/lsp4j/TextDocumentServerCapabilities;)V
+ (Lorg/eclipse/lsp4j/TextDocumentServerCapabilities;)V
 setTextDocumentSync
  (Lorg/eclipse/lsp4j/TextDocumentSyncKind;)V
  (Lorg/eclipse/lsp4j/TextDocumentSyncKind;)V

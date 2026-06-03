@@ -12,12 +12,18 @@ class org/eclipse/lsp4j/CompletionList
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getApplyKind
+ ()Lorg/eclipse/lsp4j/CompletionApplyKind;
+ ()Lorg/eclipse/lsp4j/CompletionApplyKind;
 getItemDefaults
  ()Lorg/eclipse/lsp4j/CompletionItemDefaults;
  ()Lorg/eclipse/lsp4j/CompletionItemDefaults;
 getItems
  ()Ljava/util/List<Lorg/eclipse/lsp4j/CompletionItem;>;
  ()Ljava/util/List<Lorg/eclipse/lsp4j/CompletionItem;>;
+setApplyKind
+ (Lorg/eclipse/lsp4j/CompletionApplyKind;)V
+ (Lorg/eclipse/lsp4j/CompletionApplyKind;)V
 setItemDefaults
  (Lorg/eclipse/lsp4j/CompletionItemDefaults;)V
  (Lorg/eclipse/lsp4j/CompletionItemDefaults;)V

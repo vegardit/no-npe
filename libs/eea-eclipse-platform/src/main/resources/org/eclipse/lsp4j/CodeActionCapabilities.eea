@@ -21,6 +21,9 @@ getDataSupport
 getDisabledSupport
  ()Ljava/lang/Boolean;
  ()Ljava/lang/Boolean;
+getDocumentationSupport
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
 getHonorsChangeAnnotations
  ()Ljava/lang/Boolean;
  ()Ljava/lang/Boolean;
@@ -30,6 +33,9 @@ getIsPreferredSupport
 getResolveSupport
  ()Lorg/eclipse/lsp4j/CodeActionResolveSupportCapabilities;
  ()Lorg/eclipse/lsp4j/CodeActionResolveSupportCapabilities;
+getTagSupport
+ ()Lorg/eclipse/lsp4j/CodeActionTagSupportCapabilities;
+ ()Lorg/eclipse/lsp4j/CodeActionTagSupportCapabilities;
 setCodeActionLiteralSupport
  (Lorg/eclipse/lsp4j/CodeActionLiteralSupportCapabilities;)V
  (Lorg/eclipse/lsp4j/CodeActionLiteralSupportCapabilities;)V
@@ -37,6 +43,9 @@ setDataSupport
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
 setDisabledSupport
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setDocumentationSupport
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
 setHonorsChangeAnnotations
@@ -48,6 +57,9 @@ setIsPreferredSupport
 setResolveSupport
  (Lorg/eclipse/lsp4j/CodeActionResolveSupportCapabilities;)V
  (Lorg/eclipse/lsp4j/CodeActionResolveSupportCapabilities;)V
+setTagSupport
+ (Lorg/eclipse/lsp4j/CodeActionTagSupportCapabilities;)V
+ (Lorg/eclipse/lsp4j/CodeActionTagSupportCapabilities;)V
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(org.eclipse.lsp4j.DynamicRegistrationCapabilities)

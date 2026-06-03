@@ -1,0 +1,21 @@
+class org/apache/commons/io/channels/FilterSeekableByteChannel
+ <C::Ljava/nio/channels/SeekableByteChannel;>
+ <C::Ljava/nio/channels/SeekableByteChannel;>
+
+super org/apache/commons/io/channels/FilterByteChannel
+ <TC;>
+ <TC;>
+
+forSeekableByteChannel
+ ()Lorg/apache/commons/io/channels/FilterSeekableByteChannel$Builder;
+ ()L1org/apache/commons/io/channels/FilterSeekableByteChannel$Builder;
+
+<init>
+ (TC;)V
+ (TC;)V
+position
+ (J)Ljava/nio/channels/SeekableByteChannel;
+ (J)L1java/nio/channels/SeekableByteChannel; # @Inherited(java.nio.channels.SeekableByteChannel)
+truncate
+ (J)Ljava/nio/channels/SeekableByteChannel;
+ (J)L1java/nio/channels/SeekableByteChannel; # @Inherited(java.nio.channels.SeekableByteChannel)

@@ -1,0 +1,18 @@
+class org/apache/commons/io/channels/FilterWritableByteChannel
+ <C::Ljava/nio/channels/WritableByteChannel;>
+ <C::Ljava/nio/channels/WritableByteChannel;>
+
+super org/apache/commons/io/channels/FilterChannel
+ <TC;>
+ <TC;>
+
+forWritableByteChannel
+ ()Lorg/apache/commons/io/channels/FilterWritableByteChannel$Builder;
+ ()L1org/apache/commons/io/channels/FilterWritableByteChannel$Builder;
+
+<init>
+ (TC;)V
+ (TC;)V
+write
+ (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.WritableByteChannel)

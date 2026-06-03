@@ -1,0 +1,146 @@
+class org/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture
+ <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super java/util/concurrent/CompletableFuture
+ <TT;>
+ <TT;>
+
+<init>
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+acceptEither
+ (Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Consumer<-TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Consumer<-TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+acceptEitherAsync
+ (Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Consumer<-TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Consumer<-TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+acceptEitherAsync
+ (Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Consumer<-TT;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Consumer<-TT;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+applyToEither
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Function<-TT;TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Function<-TT;TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+applyToEitherAsync
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Function<-TT;TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Function<-TT;TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+applyToEitherAsync
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Function<-TT;TU;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Function<-TT;TU;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+completeAsync
+ (Ljava/util/function/Supplier<+TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ (Ljava/util/function/Supplier<+TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+completeAsync
+ (Ljava/util/function/Supplier<+TT;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ (Ljava/util/function/Supplier<+TT;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+completeOnTimeout
+ (TT;JLjava/util/concurrent/TimeUnit;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ (TT;JLjava/util/concurrent/TimeUnit;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+copy
+ ()Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+exceptionally
+ (Ljava/util/function/Function<Ljava/lang/Throwable;+TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ (Ljava/util/function/Function<Ljava/lang/Throwable;+TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+getRoot
+ ()Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<*>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<*>;
+handle
+ <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+handleAsync
+ <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+handleAsync
+ <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/BiFunction<-TT;Ljava/lang/Throwable;+TU;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+newIncompleteFuture
+ ()Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ ()L1org/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+orTimeout
+ (JLjava/util/concurrent/TimeUnit;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ (JLjava/util/concurrent/TimeUnit;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+runAfterBoth
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+runAfterBothAsync
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+runAfterBothAsync
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+runAfterEither
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+runAfterEitherAsync
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+runAfterEitherAsync
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+thenAccept
+ (Ljava/util/function/Consumer<-TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/function/Consumer<-TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+thenAcceptAsync
+ (Ljava/util/function/Consumer<-TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/function/Consumer<-TT;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+thenAcceptAsync
+ (Ljava/util/function/Consumer<-TT;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/util/function/Consumer<-TT;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+thenAcceptBoth
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiConsumer<-TT;-TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiConsumer<-TT;-TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+thenAcceptBothAsync
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiConsumer<-TT;-TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiConsumer<-TT;-TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+thenAcceptBothAsync
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiConsumer<-TT;-TU;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ <U:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiConsumer<-TT;-TU;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+thenApply
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+thenApplyAsync
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TU;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+thenApplyAsync
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TU;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TU;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+thenCombine
+ <U:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiFunction<-TT;-TU;+TV;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TV;>;
+ <U:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiFunction<-TT;-TU;+TV;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TV;>;
+thenCombineAsync
+ <U:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiFunction<-TT;-TU;+TV;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TV;>;
+ <U:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiFunction<-TT;-TU;+TV;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TV;>;
+thenCombineAsync
+ <U:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiFunction<-TT;-TU;+TV;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TV;>;
+ <U:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/concurrent/CompletionStage<+TU;>;Ljava/util/function/BiFunction<-TT;-TU;+TV;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TV;>;
+thenCompose
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+Ljava/util/concurrent/CompletionStage<TU;>;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+Ljava/util/concurrent/CompletionStage<TU;>;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+thenComposeAsync
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+Ljava/util/concurrent/CompletionStage<TU;>;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+Ljava/util/concurrent/CompletionStage<TU;>;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+thenComposeAsync
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+Ljava/util/concurrent/CompletionStage<TU;>;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+ <U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+Ljava/util/concurrent/CompletionStage<TU;>;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TU;>;
+thenRun
+ (Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+thenRunAsync
+ (Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/lang/Runnable;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+thenRunAsync
+ (Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+ (Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Void;>;
+toCompletableFuture
+ ()Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+whenComplete
+ (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+whenCompleteAsync
+ (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+whenCompleteAsync
+ (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;
+ (Ljava/util/function/BiConsumer<-TT;-Ljava/lang/Throwable;>;Ljava/util/concurrent/Executor;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<TT;>;

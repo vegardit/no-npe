@@ -9,7 +9,13 @@ dynamicContainer
 dynamicContainer
  (Ljava/lang/String;Ljava/util/stream/Stream<+Lorg/junit/jupiter/api/DynamicNode;>;)Lorg/junit/jupiter/api/DynamicContainer;
  (Ljava/lang/String;Ljava/util/stream/Stream<+Lorg/junit/jupiter/api/DynamicNode;>;)Lorg/junit/jupiter/api/DynamicContainer;
+dynamicContainer
+ (Ljava/util/function/Consumer<-Lorg/junit/jupiter/api/DynamicContainer$Configuration;>;)Lorg/junit/jupiter/api/DynamicContainer;
+ (Ljava/util/function/Consumer<-Lorg/junit/jupiter/api/DynamicContainer$Configuration;>;)L1org/junit/jupiter/api/DynamicContainer;
 
+getChildExecutionMode
+ ()Ljava/util/Optional<Lorg/junit/jupiter/api/parallel/ExecutionMode;>;
+ ()L1java/util/Optional<Lorg/junit/jupiter/api/parallel/ExecutionMode;>;
 getChildren
  ()Ljava/util/stream/Stream<+Lorg/junit/jupiter/api/DynamicNode;>;
  ()Ljava/util/stream/Stream<+Lorg/junit/jupiter/api/DynamicNode;>;
