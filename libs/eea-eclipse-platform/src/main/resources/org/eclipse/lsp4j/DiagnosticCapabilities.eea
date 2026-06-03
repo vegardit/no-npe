@@ -9,12 +9,42 @@ class org/eclipse/lsp4j/DiagnosticCapabilities
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(org.eclipse.lsp4j.DynamicRegistrationCapabilities)
+getCodeDescriptionSupport
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
+getDataSupport
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
+getMarkupMessageSupport
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
 getRelatedDocumentSupport
  ()Ljava/lang/Boolean;
  ()Ljava/lang/Boolean;
+getRelatedInformation
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
+getTagSupport
+ ()Lorg/eclipse/lsp4j/DiagnosticsTagSupport;
+ ()Lorg/eclipse/lsp4j/DiagnosticsTagSupport;
+setCodeDescriptionSupport
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setDataSupport
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setMarkupMessageSupport
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
 setRelatedDocumentSupport
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
+setRelatedInformation
+ (Ljava/lang/Boolean;)V
+ (Ljava/lang/Boolean;)V
+setTagSupport
+ (Lorg/eclipse/lsp4j/DiagnosticsTagSupport;)V
+ (Lorg/eclipse/lsp4j/DiagnosticsTagSupport;)V
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(org.eclipse.lsp4j.DynamicRegistrationCapabilities)

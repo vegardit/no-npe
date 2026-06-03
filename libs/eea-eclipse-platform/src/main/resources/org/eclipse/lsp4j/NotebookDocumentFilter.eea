@@ -7,8 +7,8 @@ getNotebookType
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getPattern
- ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/RelativePattern;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/RelativePattern;>;
 getScheme
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -18,6 +18,12 @@ setNotebookType
 setPattern
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
+setPattern
+ (Lorg/eclipse/lsp4j/RelativePattern;)V
+ (Lorg/eclipse/lsp4j/RelativePattern;)V
+setPattern
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/RelativePattern;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/RelativePattern;>;)V
 setScheme
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

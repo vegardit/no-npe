@@ -6,6 +6,9 @@ dynamicTest
 dynamicTest
  (Ljava/lang/String;Lorg/junit/jupiter/api/function/Executable;)Lorg/junit/jupiter/api/DynamicTest;
  (Ljava/lang/String;Lorg/junit/jupiter/api/function/Executable;)L1org/junit/jupiter/api/DynamicTest;
+dynamicTest
+ (Ljava/util/function/Consumer<-Lorg/junit/jupiter/api/DynamicTest$Configuration;>;)Lorg/junit/jupiter/api/DynamicTest;
+ (Ljava/util/function/Consumer<-Lorg/junit/jupiter/api/DynamicTest$Configuration;>;)L1org/junit/jupiter/api/DynamicTest;
 stream
  <T::Lorg/junit/jupiter/api/Named<TE;>;E::Lorg/junit/jupiter/api/function/Executable;>(Ljava/util/Iterator<+TT;>;)Ljava/util/stream/Stream<Lorg/junit/jupiter/api/DynamicTest;>;
  <T::Lorg/junit/jupiter/api/Named<TE;>;E::Lorg/junit/jupiter/api/function/Executable;>(Ljava/util/Iterator<+TT;>;)Ljava/util/stream/Stream<Lorg/junit/jupiter/api/DynamicTest;>;

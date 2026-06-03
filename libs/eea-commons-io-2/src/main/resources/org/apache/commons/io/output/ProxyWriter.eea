@@ -15,6 +15,12 @@ append
 handleIOException
  (Ljava/io/IOException;)V
  (Ljava/io/IOException;)V
+setReference
+ (Ljava/io/Writer;)Lorg/apache/commons/io/output/ProxyWriter;
+ (Ljava/io/Writer;)Lorg/apache/commons/io/output/ProxyWriter;
+unwrap
+ ()Ljava/io/Writer;
+ ()Ljava/io/Writer;
 write
  (Ljava/lang/String;)V
  (L1java/lang/String;)V # @Inherited(java.io.Writer)

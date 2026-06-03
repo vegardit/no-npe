@@ -1,0 +1,21 @@
+class org/apache/commons/io/channels/FilterByteChannel
+ <C::Ljava/nio/channels/ByteChannel;>
+ <C::Ljava/nio/channels/ByteChannel;>
+
+super org/apache/commons/io/channels/FilterChannel
+ <TC;>
+ <TC;>
+
+forByteChannel
+ ()Lorg/apache/commons/io/channels/FilterByteChannel$Builder;
+ ()L1org/apache/commons/io/channels/FilterByteChannel$Builder;
+
+<init>
+ (TC;)V
+ (TC;)V
+read
+ (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.ReadableByteChannel)
+write
+ (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.WritableByteChannel)

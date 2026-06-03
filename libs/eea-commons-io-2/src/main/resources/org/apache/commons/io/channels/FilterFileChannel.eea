@@ -1,0 +1,57 @@
+class org/apache/commons/io/channels/FilterFileChannel
+
+forFilterFileChannel
+ ()Lorg/apache/commons/io/channels/FilterFileChannel$Builder;
+ ()L1org/apache/commons/io/channels/FilterFileChannel$Builder;
+
+<init>
+ (Ljava/nio/channels/FileChannel;)V
+ (Ljava/nio/channels/FileChannel;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+lock
+ (JJZ)Ljava/nio/channels/FileLock;
+ (JJZ)L1java/nio/channels/FileLock; # @Inherited(java.nio.channels.FileChannel)
+map
+ (Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;
+ (L1java/nio/channels/FileChannel$MapMode;JJ)L1java/nio/MappedByteBuffer; # @Inherited(java.nio.channels.FileChannel)
+position
+ (J)Ljava/nio/channels/FileChannel;
+ (J)L1java/nio/channels/FileChannel; # @Inherited(java.nio.channels.FileChannel)
+read
+ (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.FileChannel)
+read
+ (Ljava/nio/ByteBuffer;J)I
+ (L1java/nio/ByteBuffer;J)I # @Inherited(java.nio.channels.FileChannel)
+read
+ ([Ljava/nio/ByteBuffer;II)J
+ ([1Ljava/nio/ByteBuffer;II)J # @Inherited(java.nio.channels.FileChannel)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+transferFrom
+ (Ljava/nio/channels/ReadableByteChannel;JJ)J
+ (L1java/nio/channels/ReadableByteChannel;JJ)J # @Inherited(java.nio.channels.FileChannel)
+transferTo
+ (JJLjava/nio/channels/WritableByteChannel;)J
+ (JJL1java/nio/channels/WritableByteChannel;)J # @Inherited(java.nio.channels.FileChannel)
+truncate
+ (J)Ljava/nio/channels/FileChannel;
+ (J)Ljava/nio/channels/FileChannel;
+tryLock
+ (JJZ)Ljava/nio/channels/FileLock;
+ (JJZ)L0java/nio/channels/FileLock; # @Inherited(java.nio.channels.FileChannel)
+unwrap
+ ()Ljava/nio/channels/FileChannel;
+ ()Ljava/nio/channels/FileChannel;
+write
+ (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.FileChannel)
+write
+ (Ljava/nio/ByteBuffer;J)I
+ (L1java/nio/ByteBuffer;J)I # @Inherited(java.nio.channels.FileChannel)
+write
+ ([Ljava/nio/ByteBuffer;II)J
+ ([1Ljava/nio/ByteBuffer;II)J # @Inherited(java.nio.channels.FileChannel)

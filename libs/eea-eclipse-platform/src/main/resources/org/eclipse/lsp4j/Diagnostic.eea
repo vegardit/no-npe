@@ -22,8 +22,8 @@ getData
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
 getMessage
- ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/MarkupContent;>;
+ ()Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/MarkupContent;>;
 getRange
  ()Lorg/eclipse/lsp4j/Range;
  ()Lorg/eclipse/lsp4j/Range;
@@ -57,6 +57,12 @@ setData
 setMessage
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
+setMessage
+ (Lorg/eclipse/lsp4j/MarkupContent;)V
+ (Lorg/eclipse/lsp4j/MarkupContent;)V
+setMessage
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/MarkupContent;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Lorg/eclipse/lsp4j/MarkupContent;>;)V
 setRange
  (Lorg/eclipse/lsp4j/Range;)V
  (Lorg/eclipse/lsp4j/Range;)V

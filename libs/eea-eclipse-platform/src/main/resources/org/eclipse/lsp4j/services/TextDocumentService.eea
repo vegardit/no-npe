@@ -69,6 +69,9 @@ implementation
 inlayHint
  (Lorg/eclipse/lsp4j/InlayHintParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/InlayHint;>;>;
  (L1org/eclipse/lsp4j/InlayHintParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/InlayHint;>;>;
+inlineCompletion
+ (Lorg/eclipse/lsp4j/InlineCompletionParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<Lorg/eclipse/lsp4j/InlineCompletionItem;>;Lorg/eclipse/lsp4j/InlineCompletionList;>;>;
+ (Lorg/eclipse/lsp4j/InlineCompletionParams;)Ljava/util/concurrent/CompletableFuture<Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/util/List<Lorg/eclipse/lsp4j/InlineCompletionItem;>;Lorg/eclipse/lsp4j/InlineCompletionList;>;>;
 inlineValue
  (Lorg/eclipse/lsp4j/InlineValueParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/InlineValue;>;>;
  (L1org/eclipse/lsp4j/InlineValueParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<Lorg/eclipse/lsp4j/InlineValue;>;>;
@@ -93,6 +96,9 @@ prepareTypeHierarchy
 rangeFormatting
  (Lorg/eclipse/lsp4j/DocumentRangeFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
  (L1org/eclipse/lsp4j/DocumentRangeFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
+rangesFormatting
+ (Lorg/eclipse/lsp4j/DocumentRangesFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
+ (Lorg/eclipse/lsp4j/DocumentRangesFormattingParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/TextEdit;>;>;
 references
  (Lorg/eclipse/lsp4j/ReferenceParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;>;
  (L1org/eclipse/lsp4j/ReferenceParams;)Ljava/util/concurrent/CompletableFuture<Ljava/util/List<+Lorg/eclipse/lsp4j/Location;>;>;
