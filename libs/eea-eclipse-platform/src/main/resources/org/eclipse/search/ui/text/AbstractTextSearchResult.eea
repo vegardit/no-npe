@@ -36,6 +36,12 @@ getMatchSet
 getMatches
  (Ljava/lang/Object;)[Lorg/eclipse/search/ui/text/Match;
  (L0java/lang/Object;)[1L1org/eclipse/search/ui/text/Match;
+hasMatches
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+removeElements
+ (Ljava/util/Collection<*>;)V
+ (Ljava/util/Collection<*>;)V
 removeListener
  (Lorg/eclipse/search/ui/ISearchResultListener;)V
  (L1org/eclipse/search/ui/ISearchResultListener;)V # @Inherited(org.eclipse.search.ui.ISearchResult)
@@ -48,3 +54,6 @@ removeMatches
 setActiveMatchFilters
  ([Lorg/eclipse/search/ui/text/MatchFilter;)V
  ([0L1org/eclipse/search/ui/text/MatchFilter;)V
+updateMatch
+ (Lorg/eclipse/search/ui/text/Match;Lorg/eclipse/jface/text/Position;)V
+ (Lorg/eclipse/search/ui/text/Match;Lorg/eclipse/jface/text/Position;)V
