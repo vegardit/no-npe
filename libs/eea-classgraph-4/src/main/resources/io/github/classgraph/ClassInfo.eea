@@ -98,6 +98,12 @@ getDeclaredFieldInfo
 getDeclaredFieldInfo
  (Ljava/lang/String;)Lio/github/classgraph/FieldInfo;
  (Ljava/lang/String;)L0io/github/classgraph/FieldInfo;
+getDeclaredFieldInfoWithAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/FieldInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/FieldInfoList;
+getDeclaredFieldInfoWithAnnotation
+ (Ljava/lang/String;)Lio/github/classgraph/FieldInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/FieldInfoList;
 getDeclaredMethodAndConstructorInfo
  ()Lio/github/classgraph/MethodInfoList;
  ()L1io/github/classgraph/MethodInfoList;
@@ -107,6 +113,12 @@ getDeclaredMethodInfo
 getDeclaredMethodInfo
  (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
  (Ljava/lang/String;)L1io/github/classgraph/MethodInfoList;
+getDeclaredMethodInfoWithAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/MethodInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/MethodInfoList;
+getDeclaredMethodInfoWithAnnotation
+ (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
 getEnumConstantObjects
  ()Ljava/util/List<Ljava/lang/Object;>;
  ()L1java/util/List<Ljava/lang/Object;>;
@@ -122,6 +134,12 @@ getFieldInfo
 getFieldInfo
  (Ljava/lang/String;)Lio/github/classgraph/FieldInfo;
  (Ljava/lang/String;)L0io/github/classgraph/FieldInfo;
+getFieldInfoWithAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/FieldInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/FieldInfoList;
+getFieldInfoWithAnnotation
+ (Ljava/lang/String;)Lio/github/classgraph/FieldInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/FieldInfoList;
 getFullyQualifiedDefiningMethodName
  ()Ljava/lang/String;
  ()L0java/lang/String;
@@ -143,6 +161,12 @@ getMethodInfo
 getMethodInfo
  (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
  (Ljava/lang/String;)L1io/github/classgraph/MethodInfoList;
+getMethodInfoWithAnnotation
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/MethodInfoList;
+ (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Lio/github/classgraph/MethodInfoList;
+getMethodInfoWithAnnotation
+ (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
+ (Ljava/lang/String;)Lio/github/classgraph/MethodInfoList;
 getMethodParameterAnnotations
  ()Lio/github/classgraph/ClassInfoList;
  ()L1io/github/classgraph/ClassInfoList;
@@ -179,6 +203,9 @@ getSourceFile
 getSubclasses
  ()Lio/github/classgraph/ClassInfoList;
  ()L1io/github/classgraph/ClassInfoList;
+getSubinterfaces
+ ()Lio/github/classgraph/ClassInfoList;
+ ()Lio/github/classgraph/ClassInfoList;
 getSuperclass
  ()Lio/github/classgraph/ClassInfo;
  ()L0io/github/classgraph/ClassInfo;
