@@ -1,5 +1,12 @@
 class org/apache/wicket/ajax/AjaxRequestHandler
 
+listeners
+ Ljava/util/Set<Lorg/apache/wicket/ajax/AjaxRequestTarget$IListener;>;
+ Ljava/util/Set<Lorg/apache/wicket/ajax/AjaxRequestTarget$IListener;>;
+respondListeners
+ Ljava/util/Set<Lorg/apache/wicket/ajax/AjaxRequestTarget$ITargetRespondListener;>;
+ Ljava/util/Set<Lorg/apache/wicket/ajax/AjaxRequestTarget$ITargetRespondListener;>;
+
 <init>
  (Lorg/apache/wicket/Page;)V
  (Lorg/apache/wicket/Page;)V
@@ -24,6 +31,9 @@ getLogData
 getUpdate
  ()Lorg/apache/wicket/page/PartialPageUpdate;
  ()Lorg/apache/wicket/page/PartialPageUpdate;
+newPartialPageUpdate
+ (Lorg/apache/wicket/Page;)Lorg/apache/wicket/page/PartialPageUpdate;
+ (Lorg/apache/wicket/Page;)L1org/apache/wicket/page/PartialPageUpdate;
 registerRespondListener
  (Lorg/apache/wicket/ajax/AjaxRequestTarget$ITargetRespondListener;)V
  (Lorg/apache/wicket/ajax/AjaxRequestTarget$ITargetRespondListener;)V
