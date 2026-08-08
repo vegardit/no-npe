@@ -1,0 +1,29 @@
+class org/springframework/web/accept/DefaultApiVersionStrategy
+
+<init>
+ (Ljava/util/List<Lorg/springframework/web/accept/ApiVersionResolver;>;Lorg/springframework/web/accept/ApiVersionParser<*>;Ljava/lang/Boolean;Ljava/lang/String;ZLjava/util/function/Predicate<Ljava/lang/Comparable<*>;>;Lorg/springframework/web/accept/ApiVersionDeprecationHandler;)V
+ (Ljava/util/List<Lorg/springframework/web/accept/ApiVersionResolver;>;Lorg/springframework/web/accept/ApiVersionParser<*>;Ljava/lang/Boolean;Ljava/lang/String;ZLjava/util/function/Predicate<Ljava/lang/Comparable<*>;>;Lorg/springframework/web/accept/ApiVersionDeprecationHandler;)V
+addMappedVersion
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+addSupportedVersion
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+getDefaultVersion
+ ()Ljava/lang/Comparable<*>;
+ ()Ljava/lang/Comparable<*>;
+handleDeprecations
+ (Ljava/lang/Comparable<*>;Ljava/lang/Object;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V
+ (Ljava/lang/Comparable<*>;Ljava/lang/Object;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V
+parseVersion
+ (Ljava/lang/String;)Ljava/lang/Comparable<*>;
+ (Ljava/lang/String;)Ljava/lang/Comparable<*>;
+resolveVersion
+ (Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;
+ (Ljakarta/servlet/http/HttpServletRequest;)L0java/lang/String;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+validateVersion
+ (Ljava/lang/Comparable<*>;Ljakarta/servlet/http/HttpServletRequest;)V
+ (Ljava/lang/Comparable<*>;Ljakarta/servlet/http/HttpServletRequest;)V

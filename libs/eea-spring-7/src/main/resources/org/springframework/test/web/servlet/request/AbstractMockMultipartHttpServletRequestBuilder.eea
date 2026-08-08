@@ -1,0 +1,26 @@
+class org/springframework/test/web/servlet/request/AbstractMockMultipartHttpServletRequestBuilder
+ <B:Lorg/springframework/test/web/servlet/request/AbstractMockMultipartHttpServletRequestBuilder<TB;>;>
+ <B:Lorg/springframework/test/web/servlet/request/AbstractMockMultipartHttpServletRequestBuilder<TB;>;>
+
+super org/springframework/test/web/servlet/request/AbstractMockHttpServletRequestBuilder
+ <TB;>
+ <TB;>
+
+<init>
+ (Lorg/springframework/http/HttpMethod;)V
+ (Lorg/springframework/http/HttpMethod;)V
+createServletRequest
+ (Ljakarta/servlet/ServletContext;)Lorg/springframework/mock/web/MockHttpServletRequest;
+ (Ljakarta/servlet/ServletContext;)L1org/springframework/mock/web/MockHttpServletRequest; # @Inherited(org.springframework.test.web.servlet.request.AbstractMockHttpServletRequestBuilder)
+file
+ (Ljava/lang/String;[B)TB;
+ (Ljava/lang/String;[B)T1B;
+file
+ (Lorg/springframework/mock/web/MockMultipartFile;)TB;
+ (Lorg/springframework/mock/web/MockMultipartFile;)T1B;
+merge
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Object;)Ljava/lang/Object;
+part
+ ([Ljakarta/servlet/http/Part;)TB;
+ ([Ljakarta/servlet/http/Part;)T1B;

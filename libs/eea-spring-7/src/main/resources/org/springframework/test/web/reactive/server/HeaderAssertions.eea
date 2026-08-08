@@ -1,0 +1,18 @@
+class org/springframework/test/web/reactive/server/HeaderAssertions
+
+super org/springframework/test/web/support/AbstractHeaderAssertions
+ <Lorg/springframework/test/web/reactive/server/ExchangeResult;Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;>
+ <Lorg/springframework/test/web/reactive/server/ExchangeResult;Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;>
+
+assertWithDiagnostics
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+getResponseHeaders
+ ()Lorg/springframework/http/HttpHeaders;
+ ()Lorg/springframework/http/HttpHeaders;
+value
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+values
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/Iterable<Ljava/lang/String;>;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/Iterable<Ljava/lang/String;>;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;

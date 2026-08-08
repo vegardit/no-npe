@@ -1,0 +1,41 @@
+class org/springframework/core/retry/RetryPolicy$Builder
+
+backOff
+ (Lorg/springframework/util/backoff/BackOff;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (Lorg/springframework/util/backoff/BackOff;)L1org/springframework/core/retry/RetryPolicy$Builder;
+build
+ ()Lorg/springframework/core/retry/RetryPolicy;
+ ()L1org/springframework/core/retry/RetryPolicy;
+delay
+ (Ljava/time/Duration;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (Ljava/time/Duration;)L1org/springframework/core/retry/RetryPolicy$Builder;
+excludes
+ (Ljava/util/Collection<Ljava/lang/Class<+Ljava/lang/Throwable;>;>;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (Ljava/util/Collection<Ljava/lang/Class<+Ljava/lang/Throwable;>;>;)L1org/springframework/core/retry/RetryPolicy$Builder;
+excludes
+ ([Ljava/lang/Class<+Ljava/lang/Throwable;>;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ ([Ljava/lang/Class<+Ljava/lang/Throwable;>;)L1org/springframework/core/retry/RetryPolicy$Builder;
+includes
+ (Ljava/util/Collection<Ljava/lang/Class<+Ljava/lang/Throwable;>;>;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (Ljava/util/Collection<Ljava/lang/Class<+Ljava/lang/Throwable;>;>;)L1org/springframework/core/retry/RetryPolicy$Builder;
+includes
+ ([Ljava/lang/Class<+Ljava/lang/Throwable;>;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ ([Ljava/lang/Class<+Ljava/lang/Throwable;>;)L1org/springframework/core/retry/RetryPolicy$Builder;
+jitter
+ (Ljava/time/Duration;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (Ljava/time/Duration;)L1org/springframework/core/retry/RetryPolicy$Builder;
+maxDelay
+ (Ljava/time/Duration;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (Ljava/time/Duration;)L1org/springframework/core/retry/RetryPolicy$Builder;
+maxRetries
+ (J)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (J)L1org/springframework/core/retry/RetryPolicy$Builder;
+multiplier
+ (D)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (D)L1org/springframework/core/retry/RetryPolicy$Builder;
+predicate
+ (Ljava/util/function/Predicate<Ljava/lang/Throwable;>;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (Ljava/util/function/Predicate<Ljava/lang/Throwable;>;)L1org/springframework/core/retry/RetryPolicy$Builder;
+timeout
+ (Ljava/time/Duration;)Lorg/springframework/core/retry/RetryPolicy$Builder;
+ (Ljava/time/Duration;)L1org/springframework/core/retry/RetryPolicy$Builder;

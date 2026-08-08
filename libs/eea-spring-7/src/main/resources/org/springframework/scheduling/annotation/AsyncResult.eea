@@ -1,0 +1,24 @@
+class org/springframework/scheduling/annotation/AsyncResult
+ <V:Ljava/lang/Object;>
+ <V:Ljava/lang/Object;>
+
+super java/util/concurrent/Future
+ <TV;>
+ <TV;>
+
+forExecutionException
+ <V:Ljava/lang/Object;>(Ljava/lang/Throwable;)Ljava/util/concurrent/Future<TV;>;
+ <V:Ljava/lang/Object;>(Ljava/lang/Throwable;)L1java/util/concurrent/Future<TV;>;
+forValue
+ <V:Ljava/lang/Object;>(TV;)Ljava/util/concurrent/Future<TV;>;
+ <V:Ljava/lang/Object;>(TV;)L1java/util/concurrent/Future<TV;>;
+
+<init>
+ (TV;)V
+ (TV;)V
+get
+ ()TV;
+ ()T0V;
+get
+ (JLjava/util/concurrent/TimeUnit;)TV;
+ (JLjava/util/concurrent/TimeUnit;)T0V; # @Overrides(java.util.concurrent.Future)

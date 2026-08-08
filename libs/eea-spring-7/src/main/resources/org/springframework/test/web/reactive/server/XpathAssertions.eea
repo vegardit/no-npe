@@ -1,0 +1,21 @@
+class org/springframework/test/web/reactive/server/XpathAssertions
+
+super org/springframework/test/web/support/AbstractXpathAssertions
+ <Lorg/springframework/test/web/reactive/server/WebTestClient$BodyContentSpec;>
+ <Lorg/springframework/test/web/reactive/server/WebTestClient$BodyContentSpec;>
+
+getContent
+ ()[B
+ ()[B
+getResponseHeaders
+ ()Ljava/util/Optional<Lorg/springframework/http/HttpHeaders;>;
+ ()L1java/util/Optional<Lorg/springframework/http/HttpHeaders;>; # @Inherited(org.springframework.test.web.support.AbstractXpathAssertions)
+nodeCount
+ (Lorg/hamcrest/Matcher<-Ljava/lang/Integer;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$BodyContentSpec;
+ (Lorg/hamcrest/Matcher<-Ljava/lang/Integer;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$BodyContentSpec;
+number
+ (Lorg/hamcrest/Matcher<-Ljava/lang/Double;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$BodyContentSpec;
+ (Lorg/hamcrest/Matcher<-Ljava/lang/Double;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$BodyContentSpec;
+string
+ (Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$BodyContentSpec;
+ (Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$BodyContentSpec;

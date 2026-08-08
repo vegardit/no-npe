@@ -1,0 +1,18 @@
+class org/springframework/http/codec/json/KotlinSerializationJsonDecoder
+
+super org/springframework/http/codec/KotlinSerializationStringDecoder
+ <Lkotlinx/serialization/json/Json;>
+ <Lkotlinx/serialization/json/Json;>
+
+<init>
+ (Ljava/util/function/Predicate<Lorg/springframework/core/ResolvableType;>;)V
+ (Ljava/util/function/Predicate<Lorg/springframework/core/ResolvableType;>;)V
+<init>
+ (Lkotlinx/serialization/json/Json;)V
+ (Lkotlinx/serialization/json/Json;)V
+<init>
+ (Lkotlinx/serialization/json/Json;Ljava/util/function/Predicate<Lorg/springframework/core/ResolvableType;>;)V
+ (Lkotlinx/serialization/json/Json;Ljava/util/function/Predicate<Lorg/springframework/core/ResolvableType;>;)V
+decode
+ (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Ljava/lang/Object;>;
+ (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Ljava/lang/Object;>;

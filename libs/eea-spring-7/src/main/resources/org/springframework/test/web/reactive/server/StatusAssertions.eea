@@ -1,0 +1,15 @@
+class org/springframework/test/web/reactive/server/StatusAssertions
+
+super org/springframework/test/web/support/AbstractStatusAssertions
+ <Lorg/springframework/test/web/reactive/server/ExchangeResult;Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;>
+ <Lorg/springframework/test/web/reactive/server/ExchangeResult;Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;>
+
+assertWithDiagnostics
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+getStatus
+ ()Lorg/springframework/http/HttpStatusCode;
+ ()Lorg/springframework/http/HttpStatusCode;
+value
+ (Lorg/hamcrest/Matcher<-Ljava/lang/Integer;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+ (Lorg/hamcrest/Matcher<-Ljava/lang/Integer;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;

@@ -1,0 +1,52 @@
+class org/springframework/test/web/servlet/client/RestTestClient
+
+RESTTESTCLIENT_REQUEST_ID
+ Ljava/lang/String;
+ L1java/lang/String;
+
+bindTo
+ (Lorg/springframework/test/web/servlet/MockMvc;)Lorg/springframework/test/web/servlet/client/RestTestClient$Builder<*>;
+ (Lorg/springframework/test/web/servlet/MockMvc;)Lorg/springframework/test/web/servlet/client/RestTestClient$Builder<*>;
+bindToApplicationContext
+ (Lorg/springframework/web/context/WebApplicationContext;)Lorg/springframework/test/web/servlet/client/RestTestClient$WebAppContextSetupBuilder;
+ (Lorg/springframework/web/context/WebApplicationContext;)L1org/springframework/test/web/servlet/client/RestTestClient$WebAppContextSetupBuilder;
+bindToController
+ ([Ljava/lang/Object;)Lorg/springframework/test/web/servlet/client/RestTestClient$StandaloneSetupBuilder;
+ ([Ljava/lang/Object;)L1org/springframework/test/web/servlet/client/RestTestClient$StandaloneSetupBuilder;
+bindToRouterFunction
+ ([Lorg/springframework/web/servlet/function/RouterFunction<*>;)Lorg/springframework/test/web/servlet/client/RestTestClient$RouterFunctionSetupBuilder;
+ ([Lorg/springframework/web/servlet/function/RouterFunction<*>;)L1org/springframework/test/web/servlet/client/RestTestClient$RouterFunctionSetupBuilder;
+bindToServer
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$Builder<*>;
+ ()L1org/springframework/test/web/servlet/client/RestTestClient$Builder<*>;
+bindToServer
+ (Lorg/springframework/http/client/ClientHttpRequestFactory;)Lorg/springframework/test/web/servlet/client/RestTestClient$Builder<*>;
+ (Lorg/springframework/http/client/ClientHttpRequestFactory;)L1org/springframework/test/web/servlet/client/RestTestClient$Builder<*>;
+
+delete
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestHeadersUriSpec<*>;
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestHeadersUriSpec<*>;
+get
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestHeadersUriSpec<*>;
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestHeadersUriSpec<*>;
+head
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestHeadersUriSpec<*>;
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestHeadersUriSpec<*>;
+method
+ (Lorg/springframework/http/HttpMethod;)Lorg/springframework/test/web/servlet/client/RestTestClient$RequestBodyUriSpec;
+ (Lorg/springframework/http/HttpMethod;)Lorg/springframework/test/web/servlet/client/RestTestClient$RequestBodyUriSpec;
+mutate
+ <B::Lorg/springframework/test/web/servlet/client/RestTestClient$Builder<TB;>;>()Lorg/springframework/test/web/servlet/client/RestTestClient$Builder<TB;>;
+ <B::Lorg/springframework/test/web/servlet/client/RestTestClient$Builder<TB;>;>()Lorg/springframework/test/web/servlet/client/RestTestClient$Builder<TB;>;
+options
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestHeadersUriSpec<*>;
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestHeadersUriSpec<*>;
+patch
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestBodyUriSpec;
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestBodyUriSpec;
+post
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestBodyUriSpec;
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestBodyUriSpec;
+put
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestBodyUriSpec;
+ ()Lorg/springframework/test/web/servlet/client/RestTestClient$RequestBodyUriSpec;

@@ -1,0 +1,18 @@
+class org/springframework/core/task/TaskCallback
+ <V:Ljava/lang/Object;E:Ljava/lang/Exception;>
+ <V:Ljava/lang/Object;E:Ljava/lang/Exception;>
+
+super java/util/concurrent/Callable
+ <TV;>
+ <TV;>
+
+from
+ (Ljava/lang/Runnable;)Lorg/springframework/core/task/TaskCallback<Ljava/lang/Void;Ljava/lang/RuntimeException;>;
+ (Ljava/lang/Runnable;)Lorg/springframework/core/task/TaskCallback<Ljava/lang/Void;Ljava/lang/RuntimeException;>;
+from
+ <V:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TV;>;)Lorg/springframework/core/task/TaskCallback<TV;Ljava/lang/Exception;>;
+ <V:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TV;>;)Lorg/springframework/core/task/TaskCallback<TV;Ljava/lang/Exception;>;
+
+call
+ ()TV;^TE;
+ ()TV;^TE;

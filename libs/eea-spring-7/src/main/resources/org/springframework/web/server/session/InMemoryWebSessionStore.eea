@@ -1,0 +1,29 @@
+class org/springframework/web/server/session/InMemoryWebSessionStore
+
+createWebSession
+ ()Lreactor/core/publisher/Mono<Lorg/springframework/web/server/WebSession;>;
+ ()L1reactor/core/publisher/Mono<Lorg/springframework/web/server/WebSession;>; # @Inherited(org.springframework.web.server.session.WebSessionStore)
+getClock
+ ()Ljava/time/Clock;
+ ()Ljava/time/Clock;
+getDefaultMaxIdleTime
+ ()Ljava/time/Duration;
+ ()Ljava/time/Duration;
+getSessions
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/springframework/web/server/WebSession;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/springframework/web/server/WebSession;>;
+removeSession
+ (Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
+ (Ljava/lang/String;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
+retrieveSession
+ (Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/springframework/web/server/WebSession;>;
+ (Ljava/lang/String;)Lreactor/core/publisher/Mono<Lorg/springframework/web/server/WebSession;>;
+setClock
+ (Ljava/time/Clock;)V
+ (Ljava/time/Clock;)V
+setDefaultMaxIdleTime
+ (Ljava/time/Duration;)V
+ (Ljava/time/Duration;)V
+updateLastAccessTime
+ (Lorg/springframework/web/server/WebSession;)Lreactor/core/publisher/Mono<Lorg/springframework/web/server/WebSession;>;
+ (Lorg/springframework/web/server/WebSession;)Lreactor/core/publisher/Mono<Lorg/springframework/web/server/WebSession;>;

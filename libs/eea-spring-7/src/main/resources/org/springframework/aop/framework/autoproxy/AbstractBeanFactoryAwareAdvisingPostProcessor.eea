@@ -1,0 +1,15 @@
+class org/springframework/aop/framework/autoproxy/AbstractBeanFactoryAwareAdvisingPostProcessor
+
+beanFactory
+ Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+ Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;
+
+isEligible
+ (Ljava/lang/Object;Ljava/lang/String;)Z
+ (Ljava/lang/Object;Ljava/lang/String;)Z
+prepareProxyFactory
+ (Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/aop/framework/ProxyFactory;
+ (Ljava/lang/Object;Ljava/lang/String;)L1org/springframework/aop/framework/ProxyFactory; # @Inherited(org.springframework.aop.framework.AbstractAdvisingBeanPostProcessor)
+setBeanFactory
+ (Lorg/springframework/beans/factory/BeanFactory;)V
+ (Lorg/springframework/beans/factory/BeanFactory;)V

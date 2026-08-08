@@ -1,0 +1,84 @@
+class org/springframework/http/converter/AbstractJacksonHttpMessageConverter
+ <T:Ltools/jackson/databind/ObjectMapper;>
+ <T:Ltools/jackson/databind/ObjectMapper;>
+
+super org/springframework/http/converter/AbstractSmartHttpMessageConverter
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
+defaultMapper
+ TT;
+ TT;
+
+<init>
+ (Ltools/jackson/databind/cfg/MapperBuilder<TT;*>;Lorg/springframework/http/MediaType;)V
+ (Ltools/jackson/databind/cfg/MapperBuilder<TT;*>;Lorg/springframework/http/MediaType;)V
+<init>
+ (Ltools/jackson/databind/cfg/MapperBuilder<TT;*>;[Lorg/springframework/http/MediaType;)V
+ (Ltools/jackson/databind/cfg/MapperBuilder<TT;*>;[Lorg/springframework/http/MediaType;)V
+<init>
+ (TT;)V
+ (TT;)V
+<init>
+ (TT;Lorg/springframework/http/MediaType;)V
+ (TT;Lorg/springframework/http/MediaType;)V
+<init>
+ (TT;[Lorg/springframework/http/MediaType;)V
+ (TT;[Lorg/springframework/http/MediaType;)V
+canRead
+ (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/MediaType;)Z
+ (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/MediaType;)Z
+canWrite
+ (Lorg/springframework/core/ResolvableType;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Lorg/springframework/core/ResolvableType;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+customizeReader
+ (Ltools/jackson/databind/ObjectReader;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/ObjectReader;
+ (Ltools/jackson/databind/ObjectReader;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/ObjectReader;
+customizeWriter
+ (Ltools/jackson/databind/ObjectWriter;Ltools/jackson/databind/JavaType;Lorg/springframework/http/MediaType;)Ltools/jackson/databind/ObjectWriter;
+ (Ltools/jackson/databind/ObjectWriter;Ltools/jackson/databind/JavaType;Lorg/springframework/http/MediaType;)Ltools/jackson/databind/ObjectWriter;
+getCharset
+ (Lorg/springframework/http/MediaType;)Ljava/nio/charset/Charset;
+ (Lorg/springframework/http/MediaType;)Ljava/nio/charset/Charset;
+getJavaType
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType;
+getJsonEncoding
+ (Lorg/springframework/http/MediaType;)Ltools/jackson/core/JsonEncoding;
+ (Lorg/springframework/http/MediaType;)Ltools/jackson/core/JsonEncoding;
+getMapper
+ ()TT;
+ ()TT;
+getMappersForType
+ (Ljava/lang/Class<*>;)Ljava/util/Map<Lorg/springframework/http/MediaType;TT;>;
+ (Ljava/lang/Class<*>;)Ljava/util/Map<Lorg/springframework/http/MediaType;TT;>;
+getMediaTypesForProblemDetail
+ ()Ljava/util/List<Lorg/springframework/http/MediaType;>;
+ ()Ljava/util/List<Lorg/springframework/http/MediaType;>;
+getSupportedMediaTypes
+ (Ljava/lang/Class<*>;)Ljava/util/List<Lorg/springframework/http/MediaType;>;
+ (Ljava/lang/Class<*>;)Ljava/util/List<Lorg/springframework/http/MediaType;>;
+read
+ (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/Object;
+ (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/Object;
+readInternal
+ (Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
+ (Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
+registerMappersForType
+ (Ljava/lang/Class<*>;Ljava/util/function/Consumer<Ljava/util/Map<Lorg/springframework/http/MediaType;TT;>;>;)V
+ (Ljava/lang/Class<*>;Ljava/util/function/Consumer<Ljava/util/Map<Lorg/springframework/http/MediaType;TT;>;>;)V
+setSupportedMediaTypes
+ (Ljava/util/List<Lorg/springframework/http/MediaType;>;)V
+ (Ljava/util/List<Lorg/springframework/http/MediaType;>;)V
+supportsRepeatableWrites
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+writeInternal
+ (Ljava/lang/Object;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpOutputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+ (Ljava/lang/Object;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpOutputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+writePrefix
+ (Ltools/jackson/core/JsonGenerator;Ljava/lang/Object;)V
+ (Ltools/jackson/core/JsonGenerator;Ljava/lang/Object;)V
+writeSuffix
+ (Ltools/jackson/core/JsonGenerator;Ljava/lang/Object;)V
+ (Ltools/jackson/core/JsonGenerator;Ljava/lang/Object;)V

@@ -1,0 +1,30 @@
+class org/springframework/util/MultiValueMapCollector
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super java/util/stream/Collector
+ <TT;Lorg/springframework/util/MultiValueMap<TK;TV;>;Lorg/springframework/util/MultiValueMap<TK;TV;>;>
+ <TT;Lorg/springframework/util/MultiValueMap<TK;TV;>;Lorg/springframework/util/MultiValueMap<TK;TV;>;>
+
+indexingBy
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/function/Function<TV;TK;>;)Lorg/springframework/util/MultiValueMapCollector<TV;TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/function/Function<TV;TK;>;)L1org/springframework/util/MultiValueMapCollector<TV;TK;TV;>;
+of
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/function/Function<TT;TK;>;Ljava/util/function/Function<TT;TV;>;)Lorg/springframework/util/MultiValueMapCollector<TT;TK;TV;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/function/Function<TT;TK;>;Ljava/util/function/Function<TT;TV;>;)L1org/springframework/util/MultiValueMapCollector<TT;TK;TV;>;
+
+accumulator
+ ()Ljava/util/function/BiConsumer<Lorg/springframework/util/MultiValueMap<TK;TV;>;TT;>;
+ ()Ljava/util/function/BiConsumer<Lorg/springframework/util/MultiValueMap<TK;TV;>;TT;>;
+characteristics
+ ()Ljava/util/Set<Ljava/util/stream/Collector$Characteristics;>;
+ ()L1java/util/Set<L1java/util/stream/Collector$Characteristics;>; # @Inherited(java.util.stream.Collector)
+combiner
+ ()Ljava/util/function/BinaryOperator<Lorg/springframework/util/MultiValueMap<TK;TV;>;>;
+ ()Ljava/util/function/BinaryOperator<Lorg/springframework/util/MultiValueMap<TK;TV;>;>;
+finisher
+ ()Ljava/util/function/Function<Lorg/springframework/util/MultiValueMap<TK;TV;>;Lorg/springframework/util/MultiValueMap<TK;TV;>;>;
+ ()Ljava/util/function/Function<Lorg/springframework/util/MultiValueMap<TK;TV;>;Lorg/springframework/util/MultiValueMap<TK;TV;>;>;
+supplier
+ ()Ljava/util/function/Supplier<Lorg/springframework/util/MultiValueMap<TK;TV;>;>;
+ ()Ljava/util/function/Supplier<Lorg/springframework/util/MultiValueMap<TK;TV;>;>;

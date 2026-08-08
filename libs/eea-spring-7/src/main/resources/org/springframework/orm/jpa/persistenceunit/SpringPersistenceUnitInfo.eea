@@ -1,0 +1,38 @@
+class org/springframework/orm/jpa/persistenceunit/SpringPersistenceUnitInfo
+
+<init>
+ (Ljava/lang/ClassLoader;)V
+ (Ljava/lang/ClassLoader;)V
+<init>
+ (Lorg/springframework/instrument/classloading/LoadTimeWeaver;)V
+ (Lorg/springframework/instrument/classloading/LoadTimeWeaver;)V
+addQualifierAnnotationName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addTransformer
+ (Ljakarta/persistence/spi/ClassTransformer;)V
+ (Ljakarta/persistence/spi/ClassTransformer;)V
+apply
+ (Ljakarta/persistence/PersistenceConfiguration;Lorg/springframework/jdbc/datasource/lookup/DataSourceLookup;)V
+ (Ljakarta/persistence/PersistenceConfiguration;Lorg/springframework/jdbc/datasource/lookup/DataSourceLookup;)V
+apply
+ (Lorg/springframework/orm/jpa/persistenceunit/PersistenceManagedTypes;)V
+ (Lorg/springframework/orm/jpa/persistenceunit/PersistenceManagedTypes;)V
+asStandardPersistenceUnitInfo
+ ()Ljakarta/persistence/spi/PersistenceUnitInfo;
+ ()Ljakarta/persistence/spi/PersistenceUnitInfo;
+getClassLoader
+ ()Ljava/lang/ClassLoader;
+ ()Ljava/lang/ClassLoader;
+getNewTempClassLoader
+ ()Ljava/lang/ClassLoader;
+ ()L1java/lang/ClassLoader;
+getQualifierAnnotationNames
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()Ljava/util/List<Ljava/lang/String;>;
+getScopeAnnotationName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+setScopeAnnotationName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

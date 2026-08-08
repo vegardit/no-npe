@@ -1,0 +1,31 @@
+class org/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder
+
+super org/springframework/test/web/servlet/htmlunit/MockMvcWebConnectionBuilderSupport
+ <Lorg/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;>
+ <Lorg/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;>
+
+mockMvcSetup
+ (Lorg/springframework/test/web/servlet/MockMvc;)Lorg/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;
+ (Lorg/springframework/test/web/servlet/MockMvc;)L1org/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;
+webAppContextSetup
+ (Lorg/springframework/web/context/WebApplicationContext;)Lorg/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;
+ (Lorg/springframework/web/context/WebApplicationContext;)L1org/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;
+webAppContextSetup
+ (Lorg/springframework/web/context/WebApplicationContext;Lorg/springframework/test/web/servlet/setup/MockMvcConfigurer;)Lorg/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;
+ (Lorg/springframework/web/context/WebApplicationContext;Lorg/springframework/test/web/servlet/setup/MockMvcConfigurer;)L1org/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;
+
+<init>
+ (Lorg/springframework/test/web/servlet/MockMvc;)V
+ (Lorg/springframework/test/web/servlet/MockMvc;)V
+<init>
+ (Lorg/springframework/web/context/WebApplicationContext;)V
+ (Lorg/springframework/web/context/WebApplicationContext;)V
+<init>
+ (Lorg/springframework/web/context/WebApplicationContext;Lorg/springframework/test/web/servlet/setup/MockMvcConfigurer;)V
+ (Lorg/springframework/web/context/WebApplicationContext;Lorg/springframework/test/web/servlet/setup/MockMvcConfigurer;)V
+build
+ ()Lorg/htmlunit/WebClient;
+ ()L1org/htmlunit/WebClient;
+withDelegate
+ (Lorg/htmlunit/WebClient;)Lorg/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;
+ (Lorg/htmlunit/WebClient;)L1org/springframework/test/web/servlet/htmlunit/MockMvcWebClientBuilder;

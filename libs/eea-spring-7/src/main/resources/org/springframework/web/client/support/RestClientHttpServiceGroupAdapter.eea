@@ -1,0 +1,15 @@
+class org/springframework/web/client/support/RestClientHttpServiceGroupAdapter
+
+super org/springframework/web/service/registry/HttpServiceGroupAdapter
+ <Lorg/springframework/web/client/RestClient$Builder;>
+ <Lorg/springframework/web/client/RestClient$Builder;>
+
+createClientBuilder
+ ()Lorg/springframework/web/client/RestClient$Builder;
+ ()L1org/springframework/web/client/RestClient$Builder;
+createExchangeAdapter
+ (Lorg/springframework/web/client/RestClient$Builder;)Lorg/springframework/web/service/invoker/HttpExchangeAdapter;
+ (Lorg/springframework/web/client/RestClient$Builder;)L1org/springframework/web/service/invoker/HttpExchangeAdapter;
+getConfigurerType
+ ()Ljava/lang/Class<+Lorg/springframework/web/service/registry/HttpServiceGroupConfigurer<Lorg/springframework/web/client/RestClient$Builder;>;>;
+ ()L1java/lang/Class<+Lorg/springframework/web/service/registry/HttpServiceGroupConfigurer<Lorg/springframework/web/client/RestClient$Builder;>;>;

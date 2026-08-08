@@ -1,0 +1,32 @@
+class org/springframework/orm/jpa/LocalEntityManagerFactoryBean
+
+<init>
+ (Ljakarta/persistence/PersistenceConfiguration;)V
+ (Ljakarta/persistence/PersistenceConfiguration;)V
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+createNativeEntityManagerFactory
+ ()Ljakarta/persistence/EntityManagerFactory;
+ ()L1jakarta/persistence/EntityManagerFactory; # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
+getDataSource
+ ()Ljavax/sql/DataSource;
+ ()L0javax/sql/DataSource; # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
+getPersistenceConfiguration
+ ()Ljakarta/persistence/PersistenceConfiguration;
+ ()Ljakarta/persistence/PersistenceConfiguration;
+setDataSource
+ (Ljavax/sql/DataSource;)V
+ (Ljavax/sql/DataSource;)V
+setPackagesToScan
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setPersistenceConfiguration
+ (Ljakarta/persistence/PersistenceConfiguration;)V
+ (Ljakarta/persistence/PersistenceConfiguration;)V
+setPersistenceUnitName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setResourceLoader
+ (Lorg/springframework/core/io/ResourceLoader;)V
+ (Lorg/springframework/core/io/ResourceLoader;)V

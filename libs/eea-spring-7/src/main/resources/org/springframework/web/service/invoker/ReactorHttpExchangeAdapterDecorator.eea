@@ -1,0 +1,50 @@
+class org/springframework/web/service/invoker/ReactorHttpExchangeAdapterDecorator
+
+<init>
+ (Lorg/springframework/web/service/invoker/HttpExchangeAdapter;)V
+ (Lorg/springframework/web/service/invoker/HttpExchangeAdapter;)V
+exchange
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)V
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)V
+exchangeForBodilessEntity
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lorg/springframework/http/ResponseEntity<Ljava/lang/Void;>;
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lorg/springframework/http/ResponseEntity<Ljava/lang/Void;>;
+exchangeForBodilessEntityMono
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity<Ljava/lang/Void;>;>;
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity<Ljava/lang/Void;>;>;
+exchangeForBody
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)T0T; # @Inherited(org.springframework.web.service.invoker.HttpExchangeAdapterDecorator)
+exchangeForBodyFlux
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lreactor/core/publisher/Flux<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lreactor/core/publisher/Flux<TT;>;
+exchangeForBodyMono
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lreactor/core/publisher/Mono<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lreactor/core/publisher/Mono<TT;>;
+exchangeForEntity
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/http/ResponseEntity<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/http/ResponseEntity<TT;>;
+exchangeForEntityFlux
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Flux<TT;>;>;>;
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity<Lreactor/core/publisher/Flux<TT;>;>;>;
+exchangeForEntityMono
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Lorg/springframework/web/service/invoker/HttpRequestValues;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lreactor/core/publisher/Mono<Lorg/springframework/http/ResponseEntity<TT;>;>;
+exchangeForHeaders
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lorg/springframework/http/HttpHeaders;
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lorg/springframework/http/HttpHeaders;
+exchangeForHeadersMono
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lreactor/core/publisher/Mono<Lorg/springframework/http/HttpHeaders;>;
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lreactor/core/publisher/Mono<Lorg/springframework/http/HttpHeaders;>;
+exchangeForMono
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
+ (Lorg/springframework/web/service/invoker/HttpRequestValues;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
+getBlockTimeout
+ ()Ljava/time/Duration;
+ ()L0java/time/Duration; # @Inherited(org.springframework.web.service.invoker.ReactorHttpExchangeAdapter)
+getHttpExchangeAdapter
+ ()Lorg/springframework/web/service/invoker/ReactorHttpExchangeAdapter;
+ ()Lorg/springframework/web/service/invoker/ReactorHttpExchangeAdapter;
+getReactiveAdapterRegistry
+ ()Lorg/springframework/core/ReactiveAdapterRegistry;
+ ()Lorg/springframework/core/ReactiveAdapterRegistry;

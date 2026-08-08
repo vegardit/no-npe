@@ -1,0 +1,68 @@
+class org/springframework/core/env/AbstractPropertyResolver
+
+DEFAULT_PLACEHOLDER_ESCAPE_CHARACTER_PROPERTY_NAME
+ Ljava/lang/String;
+ L1java/lang/String;
+
+getDefaultEscapeCharacter
+ ()Ljava/lang/Character;
+ ()L0java/lang/Character;
+
+logger
+ Lorg/apache/commons/logging/Log;
+ Lorg/apache/commons/logging/Log;
+
+containsProperty
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+convertValueIfNecessary
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)T0T;
+getConversionService
+ ()Lorg/springframework/core/convert/support/ConfigurableConversionService;
+ ()L1org/springframework/core/convert/support/ConfigurableConversionService;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.core.env.PropertyResolver)
+getProperty
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+getProperty
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;TT;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;TT;)TT;
+getPropertyAsRawString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L0java/lang/String;
+getRequiredProperty
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getRequiredProperty
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
+resolveNestedPlaceholders
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+resolvePlaceholders
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+resolveRequiredPlaceholders
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+setConversionService
+ (Lorg/springframework/core/convert/support/ConfigurableConversionService;)V
+ (Lorg/springframework/core/convert/support/ConfigurableConversionService;)V
+setEscapeCharacter
+ (Ljava/lang/Character;)V
+ (Ljava/lang/Character;)V
+setPlaceholderPrefix
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setPlaceholderSuffix
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setRequiredProperties
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setValueSeparator
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

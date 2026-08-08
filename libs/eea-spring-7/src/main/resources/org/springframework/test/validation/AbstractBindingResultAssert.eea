@@ -1,0 +1,26 @@
+class org/springframework/test/validation/AbstractBindingResultAssert
+ <SELF:Lorg/springframework/test/validation/AbstractBindingResultAssert<TSELF;>;>
+ <SELF:Lorg/springframework/test/validation/AbstractBindingResultAssert<TSELF;>;>
+
+super org/assertj/core/api/AbstractAssert
+ <TSELF;Lorg/springframework/validation/BindingResult;>
+ <TSELF;Lorg/springframework/validation/BindingResult;>
+
+<init>
+ (Ljava/lang/String;Lorg/springframework/validation/BindingResult;Ljava/lang/Class<*>;)V
+ (Ljava/lang/String;Lorg/springframework/validation/BindingResult;Ljava/lang/Class<*>;)V
+hasErrorsCount
+ (I)TSELF;
+ (I)TSELF;
+hasFieldErrorCode
+ (Ljava/lang/String;Ljava/lang/String;)TSELF;
+ (Ljava/lang/String;Ljava/lang/String;)TSELF;
+hasFieldErrors
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)TSELF;
+hasOnlyFieldErrors
+ ([Ljava/lang/String;)TSELF;
+ ([Ljava/lang/String;)TSELF;
+unexpectedBindingResult
+ (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/AssertionError;
+ (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/AssertionError;

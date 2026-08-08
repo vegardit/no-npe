@@ -1,0 +1,20 @@
+class org/springframework/core/io/buffer/JettyDataBufferFactory
+
+allocateBuffer
+ ()Lorg/springframework/core/io/buffer/JettyDataBuffer;
+ ()L1org/springframework/core/io/buffer/JettyDataBuffer;
+allocateBuffer
+ (I)Lorg/springframework/core/io/buffer/JettyDataBuffer;
+ (I)L1org/springframework/core/io/buffer/JettyDataBuffer;
+join
+ (Ljava/util/List<+Lorg/springframework/core/io/buffer/DataBuffer;>;)Lorg/springframework/core/io/buffer/JettyDataBuffer;
+ (Ljava/util/List<+Lorg/springframework/core/io/buffer/DataBuffer;>;)L1org/springframework/core/io/buffer/JettyDataBuffer;
+wrap
+ (Ljava/nio/ByteBuffer;)Lorg/springframework/core/io/buffer/JettyDataBuffer;
+ (Ljava/nio/ByteBuffer;)L1org/springframework/core/io/buffer/JettyDataBuffer;
+wrap
+ (Lorg/eclipse/jetty/io/Content$Chunk;)Lorg/springframework/core/io/buffer/JettyDataBuffer;
+ (Lorg/eclipse/jetty/io/Content$Chunk;)L1org/springframework/core/io/buffer/JettyDataBuffer;
+wrap
+ ([B)Lorg/springframework/core/io/buffer/JettyDataBuffer;
+ ([B)L1org/springframework/core/io/buffer/JettyDataBuffer;

@@ -1,0 +1,18 @@
+class org/springframework/scheduling/concurrent/DefaultManagedAwareThreadFactory
+
+logger
+ Lorg/apache/commons/logging/Log;
+ Lorg/apache/commons/logging/Log;
+
+newThread
+ (Ljava/lang/Runnable;)Ljava/lang/Thread;
+ (L1java/lang/Runnable;)L1java/lang/Thread; # @Inherited(org.springframework.scheduling.concurrent.CustomizableThreadFactory)
+setJndiEnvironment
+ (Ljava/util/Properties;)V
+ (Ljava/util/Properties;)V
+setJndiName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setJndiTemplate
+ (Lorg/springframework/jndi/JndiTemplate;)V
+ (Lorg/springframework/jndi/JndiTemplate;)V

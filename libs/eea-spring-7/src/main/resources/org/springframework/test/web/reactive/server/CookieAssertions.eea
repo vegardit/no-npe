@@ -1,0 +1,24 @@
+class org/springframework/test/web/reactive/server/CookieAssertions
+
+super org/springframework/test/web/support/AbstractCookieAssertions
+ <Lorg/springframework/test/web/reactive/server/ExchangeResult;Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;>
+ <Lorg/springframework/test/web/reactive/server/ExchangeResult;Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;>
+
+assertWithDiagnostics
+ (Ljava/lang/Runnable;)V
+ (Ljava/lang/Runnable;)V
+domain
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+getResponseCookies
+ ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Lorg/springframework/http/ResponseCookie;>;
+ ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Lorg/springframework/http/ResponseCookie;>;
+maxAge
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/Long;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/Long;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+path
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+value
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
+ (Ljava/lang/String;Lorg/hamcrest/Matcher<-Ljava/lang/String;>;)Lorg/springframework/test/web/reactive/server/WebTestClient$ResponseSpec;
