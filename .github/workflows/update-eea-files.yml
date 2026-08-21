@@ -97,7 +97,7 @@ jobs:
           $( [[ -n "${{ inputs.library }}"  ]] && echo '-pl "libs/${{ inputs.library }}" -am' || true ) \
           ${{ inputs.extra-maven-args }}
 
-        updates=$(git -C . ls-files -o -m -d --exclude-standard | head -n 50 || true)  # "|| true" is to mitgate exit code 141
+        updates=$(git -C . ls-files -o -m -d --exclude-standard -- libs | head -n 50 || true)  # "|| true" is to mitgate exit code 141
 
         if [[ -z $updates ]]; then
           echo "updates=" >> "$GITHUB_OUTPUT"
