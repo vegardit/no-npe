@@ -123,6 +123,15 @@ public abstract class EEAGenerator {
       }
    }
 
+   private static Path resolvePath(final String pathValue, final Object source) {
+      Path path = Path.of(pathValue);
+      if (source instanceof Path && !path.isAbsolute()) {
+         // Property-file paths must keep the same meaning when the generator is launched from another working directory.
+         path = ((Path) source).getParent().resolve(path);
+      }
+      return path.toAbsolutePath().normalize();
+   }
+
    /**
     * args[0]: optional path to properties file
     */
@@ -136,6 +145,10 @@ public abstract class EEAGenerator {
             filePropsPath = Path.of(args[0]);
          } else if (Files.exists(DEFAULT_PROPERTES_FILE)) {
             filePropsPath = DEFAULT_PROPERTES_FILE;
+         }
+         if (filePropsPath != null) {
+            // Props retains this path as value provenance; making it absolute also gives bare filenames a usable parent directory.
+            filePropsPath = filePropsPath.toAbsolutePath().normalize();
          }
          final var props = new Props(JVM_PROPERTY_PREFIX, filePropsPath);
 
@@ -152,13 +165,7 @@ public abstract class EEAGenerator {
 
          final var outputDirPropDefault = props.get(PROPERTY_OUTPUT_DIR_DEFAULT, "").value;
          final var outputDirProp = props.get(PROPERTY_OUTPUT_DIR, outputDirPropDefault.isEmpty() ? null : outputDirPropDefault);
-         Path outputDir = Path.of(outputDirProp.value);
-         if (outputDirProp.source instanceof Path && !outputDir.isAbsolute()) {
-            // if the specified outputDir value is relative and was source from properties file,
-            // then make it relative to the properties file
-            outputDir = ((Path) outputDirProp.source).getParent().resolve(outputDir);
-         }
-         outputDir = outputDir.toAbsolutePath().normalize();
+         final Path outputDir = resolvePath(outputDirProp.value, outputDirProp.source);
 
          final var config = new Config(outputDir, packages);
 
@@ -177,21 +184,18 @@ public abstract class EEAGenerator {
 
          final var inputDirsProp = props.get(PROPERTY_INPUT_DIRS, "");
          final var inputDirsExtraProp = props.get(PROPERTY_INPUT_DIRS_EXTRA, "");
-         for (final String inputDirStr : (inputDirsProp.value + ',' + inputDirsExtraProp.value).split(",")) {
-            if (inputDirStr.isBlank()) {
-               continue;
-            }
-            Path inputDir = Path.of(inputDirStr);
-            if (inputDirsProp.source instanceof Path && !inputDir.isAbsolute()) {
-               // if the specified inputDir value is relative and was source from properties file,
-               // then make it relative to the properties file
-               inputDir = ((Path) inputDirsProp.source).getParent().resolve(inputDir);
-            }
-            inputDir = inputDir.toAbsolutePath().normalize();
-            if (!config.inputDirs.contains(inputDir)) {
-               config.inputDirs.add(inputDir);
-               if (!Files.exists(inputDir)) {
-                  LOG.log(Level.WARNING, "Input directory: " + inputDir + " does not exist!");
+         // The primary and extra lists can have different sources because JVM properties override file properties independently.
+         for (final var inputDirs : List.of(inputDirsProp, inputDirsExtraProp)) {
+            for (final String inputDirStr : inputDirs.value.split(",")) {
+               if (inputDirStr.isBlank()) {
+                  continue;
+               }
+               final Path inputDir = resolvePath(inputDirStr, inputDirs.source);
+               if (!config.inputDirs.contains(inputDir)) {
+                  config.inputDirs.add(inputDir);
+                  if (!Files.exists(inputDir)) {
+                     LOG.log(Level.WARNING, "Input directory: " + inputDir + " does not exist!");
+                  }
                }
             }
          }
@@ -306,7 +310,8 @@ public abstract class EEAGenerator {
             /*
              * mark the parameter of Comparable#compareTo(Object) as @NonNull.
              */
-            if (classInfo.implementsInterface("java.lang.Comparable") //
+            if (methodInfo.getName().equals("compareTo") //
+                  && classInfo.implementsInterface("java.lang.Comparable") //
                   && !methodInfo.isStatic() // non-static
                   && member.originalSignature.value.endsWith(")I") // returns Integer
                   && methodInfo.isPublic() //
@@ -608,9 +613,8 @@ public abstract class EEAGenerator {
                   case CONSTRUCTOR:
                      return; // exclude constructors
                   case FIELD:
-                     if (isStaticField(classInfo, member.name.value))
-                        return; // exclude static fields
-                     break;
+                     // A declared subclass field hides a matching superclass field; it does not override its nullability contract.
+                     return;
                   case METHOD:
                      if (isStaticMethod(classInfo, member.name.value, member.originalSignature.value))
                         return; // exclude static methods
@@ -767,6 +771,10 @@ public abstract class EEAGenerator {
 
       if (cfg.inputDirs.isEmpty())
          throw new IllegalArgumentException("No input.dirs specified!");
+
+      // An existing empty source intentionally clears stale output; missing sources instead indicate failed input discovery.
+      if (cfg.inputDirs.stream().noneMatch(Files::isDirectory))
+         throw new IllegalArgumentException("None of the specified input.dirs exist!");
 
       LOG.log(Level.INFO, "Minimizing EEA files...");
 
