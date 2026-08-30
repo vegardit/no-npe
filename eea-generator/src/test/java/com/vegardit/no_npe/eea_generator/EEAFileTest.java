@@ -19,9 +19,10 @@ import org.junit.jupiter.api.Test;
 import com.vegardit.no_npe.eea_generator.EEAFile.SaveOption;
 
 /**
+ * Verifies EEA parsing, merging, marker ownership, and source/artifact rendering rules.
+ *
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
  */
-@SuppressWarnings("null")
 class EEAFileTest {
 
    public static final class TestEntity {
@@ -94,6 +95,122 @@ class EEAFileTest {
       }) //
          .isInstanceOf(java.io.IOException.class) //
          .hasMessageMatching("Comments after member name are not supported .*");
+   }
+
+   @Test
+   void testMetadataOnlyContractSurvivesSourceCompaction() {
+      final var eeaFile = new EEAFile("test.MetadataOnly");
+      final var member = eeaFile.addMember("identity", "(Ljava/lang/Object;)Ljava/lang/Object;");
+      member.annotatedSignature.comment = "# " + MARKER_GENERATED + "(PolyNull)";
+
+      final Set<SaveOption> sourceCompaction = Set.of(SaveOption.OMIT_MEMBERS_WITHOUT_ANNOTATED_SIGNATURE,
+         SaveOption.OMIT_REDUNDANT_ANNOTATED_SIGNATURES);
+      assertThat(eeaFile.renderFileContent(sourceCompaction)).contains( //
+         "identity", //
+         " (Ljava/lang/Object;)Ljava/lang/Object; # " + MARKER_GENERATED + "(PolyNull)");
+
+      // Minimized artifacts intentionally discard source-only markers and therefore no longer need this member.
+      assertThat(eeaFile.renderFileContent(Set.of( //
+         SaveOption.OMIT_COMMENTS, //
+         SaveOption.OMIT_MEMBERS_WITHOUT_ANNOTATED_SIGNATURE, //
+         SaveOption.OMIT_REDUNDANT_ANNOTATED_SIGNATURES))).doesNotContain("identity");
+   }
+
+   @Test
+   void testInheritedSignatureOmissionRetainsOverridesAndExplicitKeeps() {
+      final var eeaFile = new EEAFile("test.Child");
+      for (final String[] memberAndComment : new String[][] { //
+         {"inherited", "# @Inherited(test.Parent)"}, //
+         {"overriding", "# @Overrides(test.Parent)"}, //
+         {"keptInherited", "# @Inherited(test.Parent) @Keep"} //
+      }) {
+         final var member = eeaFile.addMember(memberAndComment[0], "()Ljava/lang/String;");
+         member.annotatedSignature.value = "()L1java/lang/String;";
+         member.annotatedSignature.comment = memberAndComment[1];
+      }
+
+      // Artifact rendering strips ownership comments, but it must consult them first to remove only redundant inheritance.
+      final var renderedContent = eeaFile.renderFileContent(Set.of( //
+         SaveOption.OMIT_COMMENTS, //
+         SaveOption.OMIT_MEMBERS_WITH_INHERITED_ANNOTATED_SIGNATURES));
+      assertThat(renderedContent).doesNotContain("inherited").contains("overriding", "keptInherited");
+   }
+
+   @Test
+   void testGeneratorMetadataUsesAnnotatedSignatureComment() {
+      final var member = new EEAFile.ClassMember("identity", "(Ljava/lang/Object;)Ljava/lang/Object;");
+      member.name.comment = "# " + MARKER_GENERATED;
+      member.originalSignature.comment = "# " + MARKER_POLY_NULL;
+
+      // ECJ permits contract metadata only on the annotated-signature line. The in-memory helpers must enforce the same
+      // boundary so source compaction cannot retain and render a member that the loader would later reject.
+      assertThat(member.hasGeneratedMarker()).isFalse();
+      assertThat(member.hasPolyNullMarker()).isFalse();
+      assertThat(member.hasSourceContractMarker()).isFalse();
+
+      member.annotatedSignature.comment = "# " + MARKER_GENERATED + "(PolyNull)";
+      assertThat(member.hasGeneratedMarker()).isTrue();
+      assertThat(member.hasPolyNullMarker()).isTrue();
+      assertThat(member.hasSourceContractMarker()).isTrue();
+
+      member.annotatedSignature.comment = "";
+      member.name.comment = "# " + MARKER_KEEP;
+      assertThat(member.hasKeepMarker()).isFalse();
+      assertThat(member.hasSourceContractMarker()).isFalse();
+
+      // @Keep protects the complete member, but EEA member metadata belongs on the annotated-signature line.
+      member.annotatedSignature.comment = "# " + MARKER_KEEP;
+      assertThat(member.hasKeepMarker()).isTrue();
+      assertThat(member.hasSourceContractMarker()).isTrue();
+   }
+
+   @Test
+   void testGeneratorMarkersRequireWholeTokens() {
+      final var member = new EEAFile.ClassMember("identity", "(Ljava/lang/Object;)Ljava/lang/Object;");
+      member.annotatedSignature.comment = "# @GeneratedBackup @Generated(2)Suffix @PolyNullable @Inherited(test.Parent)Suffix @Overrides()";
+
+      // Control markers, including @Keep, require whole tokens so similarly named prose cannot change generator policy.
+      assertThat(member.hasGeneratedMarker()).isFalse();
+      assertThat(member.hasPolyNullMarker()).isFalse();
+      assertThat(member.hasSourceContractMarker()).isFalse();
+      assertThat(getRelationshipMarkerParent(member.annotatedSignature.comment, MARKER_INHERITED)).isNull();
+      assertThat(getRelationshipMarkerParent(member.annotatedSignature.comment, MARKER_OVERRIDES)).isNull();
+
+      // EEA comments permit omitting the whitespace after '#'; that introducer is a token boundary, not marker text.
+      member.annotatedSignature.comment = "#@Generated";
+      assertThat(member.hasGeneratedMarker()).isTrue();
+      assertThat(removeCommentMarker(member.annotatedSignature.comment, MARKER_GENERATED)).isEmpty();
+      member.annotatedSignature.comment = "# @Generated(2,23,PolyNull) explanation";
+      final var generatedMarker = findGeneratedMarker(member.annotatedSignature.comment);
+      assertThat(generatedMarker).isNotNull();
+      assert generatedMarker != null;
+      assertThat(generatedMarker.arguments).isEqualTo("2,23,PolyNull");
+      assertThat(member.hasPolyNullMarker()).isTrue();
+      assertThat(removeGeneratedMarker(member.annotatedSignature.comment)).isEqualTo("# explanation");
+      member.annotatedSignature.comment = "#@Generated";
+      assertThat(member.hasGeneratedMarker()).isTrue();
+      assertThat(removeGeneratedMarker(member.annotatedSignature.comment)).isEmpty();
+      member.annotatedSignature.comment = "#@PolyNull";
+      assertThat(member.hasPolyNullMarker()).isTrue();
+      member.annotatedSignature.comment = "#@Inherited(test.Parent)";
+      assertThat(getRelationshipMarkerParent(member.annotatedSignature.comment, MARKER_INHERITED)).isEqualTo("test.Parent");
+      assertThat(removeRelationshipMarker(member.annotatedSignature.comment, MARKER_INHERITED)).isEmpty();
+      member.annotatedSignature.comment = "#@Overrides(test.Parent)";
+      assertThat(getRelationshipMarkerParent(member.annotatedSignature.comment, MARKER_OVERRIDES)).isEqualTo("test.Parent");
+
+      member.annotatedSignature.comment = "# @Generated @PolyNull @Inherited(test.Parent$Nested) explanation";
+      assertThat(member.hasGeneratedMarker()).isTrue();
+      assertThat(member.hasPolyNullMarker()).isTrue();
+      assertThat(member.hasSourceContractMarker()).isTrue();
+      assertThat(getRelationshipMarkerParent(member.annotatedSignature.comment, MARKER_INHERITED)).isEqualTo("test.Parent$Nested");
+      assertThat(removeRelationshipMarker(member.annotatedSignature.comment, MARKER_INHERITED)).isEqualTo(
+         "# @Generated @PolyNull explanation");
+
+      member.annotatedSignature.comment = "# @KeepReason";
+      assertThat(member.hasKeepMarker()).isFalse();
+
+      member.annotatedSignature.comment = "# @Keep";
+      assertThat(member.hasKeepMarker()).isTrue();
    }
 
    @Test

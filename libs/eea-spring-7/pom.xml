@@ -19,6 +19,12 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
   <artifactId>no-npe-eea-spring-7</artifactId>
   <name>${project.artifactId}</name>
 
+  <properties>
+    <!-- Align the generator JVM and inherited JDK contracts with Spring 7's Java 17 baseline. -->
+    <jdk.version>17</jdk.version>
+    <eea-generator.input.dirs>${project.basedir}/src/main/resources,${project.basedir}/../eea-java-17/src/main/resources</eea-generator.input.dirs>
+  </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>

@@ -32,7 +32,7 @@ import org.eclipse.jdt.internal.compiler.classfmt.ExternalAnnotationProvider;
 import com.vegardit.no_npe.eea_generator.internal.MiscUtils;
 
 /**
- * Represents an .eea file.
+ * Represents an .eea file. Parses, merges, validates, and renders Eclipse external annotation source files.
  *
  * See https://wiki.eclipse.org/JDT_Core/Null_Analysis/External_Annotations#File_layout
  *
@@ -81,6 +81,32 @@ public class EEAFile {
          return new ClassMember(name.clone(), originalSignature.clone(), annotatedSignature.clone());
       }
 
+      public boolean hasKeepMarker() {
+         // ECJ accepts member comments only on the annotated-signature line, so source markers must live there too.
+         return hasCommentMarker(annotatedSignature.comment, MARKER_KEEP);
+      }
+
+      public boolean hasGeneratedMarker() {
+         /*
+          * Generator-owned and PolyNull metadata is valid only on the annotated-signature line, where EEA source
+          * comments are emitted and accepted. @Keep remains member-wide above for compatibility with older files.
+          */
+         return findGeneratedMarker(annotatedSignature.comment) != null;
+      }
+
+      public boolean hasPolyNullMarker() {
+         return hasPolyNullContractMarker(annotatedSignature.comment);
+      }
+
+      public boolean hasSourceContractMarker() {
+         // These comments affect a later generator run even when the EEA signature contains no 0/1 marker. Source
+         // compaction must retain them; minimize explicitly omits comments and may still discard the redundant
+         // member.
+         return hasKeepMarker() || hasGeneratedMarker() || hasPolyNullMarker() //
+               || getRelationshipMarkerParent(annotatedSignature.comment, MARKER_INHERITED) != null //
+               || getRelationshipMarkerParent(annotatedSignature.comment, MARKER_OVERRIDES) != null;
+      }
+
       public boolean hasNullAnnotations() {
          return !annotatedSignature.value.equals(originalSignature.value);
       }
@@ -106,6 +132,11 @@ public class EEAFile {
             return;
          }
 
+         if (hasKeepMarker())
+            // @Keep protects the complete member across layered input directories, not only from later generator
+            // policy.
+            return;
+
          // apply name comment
          if (overrideOnConflict && applyFrom.name.hasComment() || !name.hasComment()) {
             name.comment = applyFrom.name.comment;
@@ -116,8 +147,24 @@ public class EEAFile {
             originalSignature.comment = applyFrom.originalSignature.comment;
          }
 
+         if (!overrideOnConflict && getType() == Type.METHOD && hasPolyNullMarker() && !hasNullAnnotations()) {
+            if (applyFrom.hasNullAnnotations()) {
+               /*
+                * Minimize normally retains the first source's complete annotated signature. Metadata-only PolyNull
+                * is the exception: it owns the unqualified return without blocking later positional evidence.
+                */
+               annotatedSignature.value = removeTopLevelMethodReturnNullAnnotation(originalSignature.value,
+                  applyFrom.annotatedSignature.value);
+            }
+            return;
+         }
+
          if (overrideOnConflict || !hasNullAnnotations()) {
-            if (applyFrom.hasNullAnnotations() || applyFrom.annotatedSignature.comment.contains(MARKER_KEEP)) {
+            if (applyFrom.hasNullAnnotations() || applyFrom.hasSourceContractMarker()) {
+               // Source-only markers can change ownership or nullness semantics without a 0/1 marker. Copying only
+               // their
+               // comment onto our computed value would create an unintended positional merge before policy is
+               // applied.
                annotatedSignature = applyFrom.annotatedSignature.clone();
             } else if (overrideOnConflict && applyFrom.annotatedSignature.hasComment() || !annotatedSignature.hasComment()) {
                annotatedSignature.comment = applyFrom.annotatedSignature.comment;
@@ -193,9 +240,171 @@ public class EEAFile {
    private static final Logger LOG = System.getLogger(EEAFile.class.getName());
 
    public static final String MARKER_KEEP = "@Keep";
+   public static final String MARKER_GENERATED = "@Generated";
    public static final String MARKER_OVERRIDES = "@Overrides";
    public static final String MARKER_INHERITED = "@Inherited";
    public static final String MARKER_POLY_NULL = "@PolyNull";
+
+   /**
+    * Locates either an unscoped bare marker or a structured marker whose arguments describe exact generated contract elements.
+    */
+   static final class GeneratedMarkerRange {
+      final @Nullable String arguments;
+      final int markerEnd;
+      final int markerStart;
+
+      GeneratedMarkerRange(final int markerStart, final int markerEnd, final @Nullable String arguments) {
+         this.arguments = arguments;
+         this.markerEnd = markerEnd;
+         this.markerStart = markerStart;
+      }
+
+      boolean isUnscoped() {
+         return arguments == null;
+      }
+   }
+
+   private static final class RelationshipMarkerRange {
+      final int markerEnd;
+      final int markerStart;
+      final int parentEnd;
+      final int parentStart;
+
+      RelationshipMarkerRange(final int markerStart, final int parentStart, final int parentEnd, final int markerEnd) {
+         this.markerStart = markerStart;
+         this.parentStart = parentStart;
+         this.parentEnd = parentEnd;
+         this.markerEnd = markerEnd;
+      }
+   }
+
+   static @Nullable String getRelationshipMarkerParent(final String comment, final String marker) {
+      final RelationshipMarkerRange markerRange = findRelationshipMarkerRange(comment, marker);
+      return markerRange == null ? null : comment.substring(markerRange.parentStart, markerRange.parentEnd);
+   }
+
+   static @Nullable GeneratedMarkerRange findGeneratedMarker(final String comment) {
+      int markerStart = comment.indexOf(MARKER_GENERATED);
+      while (markerStart >= 0) {
+         if (hasTokenBoundaryBefore(comment, markerStart)) {
+            final int markerNameEnd = markerStart + MARKER_GENERATED.length();
+            if (hasTokenBoundaryAfter(comment, markerNameEnd))
+               return new GeneratedMarkerRange(markerStart, markerNameEnd, null);
+
+            if (markerNameEnd < comment.length() && comment.charAt(markerNameEnd) == '(') {
+               final int argumentsEnd = comment.indexOf(')', markerNameEnd + 1);
+               final int markerEnd = argumentsEnd + 1;
+               if (argumentsEnd >= 0 && hasTokenBoundaryAfter(comment, markerEnd)) {
+                  return new GeneratedMarkerRange(markerStart, markerEnd, comment.substring(markerNameEnd + 1, argumentsEnd));
+               }
+            }
+         }
+         markerStart = comment.indexOf(MARKER_GENERATED, markerStart + 1);
+      }
+      return null;
+   }
+
+   static boolean hasPolyNullContractMarker(final String comment) {
+      // Standalone @PolyNull is manual evidence, while the PolyNull token inside @Generated(...) is generated
+      // evidence. Both forms describe the same contract even though their ownership differs.
+      if (hasCommentMarker(comment, MARKER_POLY_NULL))
+         return true;
+
+      final GeneratedMarkerRange generatedMarker = findGeneratedMarker(comment);
+      if (generatedMarker == null)
+         return false;
+      final String arguments = generatedMarker.arguments;
+      if (arguments == null)
+         return false;
+      for (final String argument : arguments.split(",", -1)) {
+         if ("PolyNull".equals(argument.strip()))
+            return true;
+      }
+      return false;
+   }
+
+   static boolean hasCommentMarker(final String comment, final String marker) {
+      // Ownership markers are tokens, not keywords embedded in prose or longer user-defined marker names.
+      int markerStart = comment.indexOf(marker);
+      while (markerStart >= 0) {
+         final int markerEnd = markerStart + marker.length();
+         if (hasTokenBoundaryBefore(comment, markerStart) && hasTokenBoundaryAfter(comment, markerEnd))
+            return true;
+         markerStart = comment.indexOf(marker, markerStart + 1);
+      }
+      return false;
+   }
+
+   static String removeCommentMarker(final String comment, final String marker) {
+      int markerStart = comment.indexOf(marker);
+      while (markerStart >= 0) {
+         final int markerEnd = markerStart + marker.length();
+         if (hasTokenBoundaryBefore(comment, markerStart) && hasTokenBoundaryAfter(comment, markerEnd))
+            return removeCommentRange(comment, markerStart, markerEnd);
+         markerStart = comment.indexOf(marker, markerStart + 1);
+      }
+      return comment;
+   }
+
+   static String removeGeneratedMarker(final String comment) {
+      final GeneratedMarkerRange markerRange = findGeneratedMarker(comment);
+      return markerRange == null ? comment : removeCommentRange(comment, markerRange.markerStart, markerRange.markerEnd);
+   }
+
+   static String removeRelationshipMarker(final String comment, final String marker) {
+      final RelationshipMarkerRange markerRange = findRelationshipMarkerRange(comment, marker);
+      if (markerRange == null)
+         return comment;
+      return removeCommentRange(comment, markerRange.markerStart, markerRange.markerEnd);
+   }
+
+   private static String removeCommentRange(final String comment, final int markerStart, final int markerEnd) {
+      final String beforeMarker = comment.substring(0, markerStart).trim();
+      final String afterMarker = comment.substring(markerEnd).trim();
+      final String remainingComment = (beforeMarker + " " + afterMarker).trim();
+      return "#".equals(remainingComment) ? "" : remainingComment;
+   }
+
+   private static @Nullable RelationshipMarkerRange findRelationshipMarkerRange(final String comment, final String marker) {
+      final String prefix = marker + "(";
+      int markerStart = comment.indexOf(prefix);
+      while (markerStart >= 0) {
+         final int parentStart = markerStart + prefix.length();
+         final int parentEnd = comment.indexOf(')', parentStart);
+         final int markerEnd = parentEnd + 1;
+         // A malformed parent reference must not grant generator ownership to the surrounding signature.
+         if (parentEnd > parentStart && hasTokenBoundaryBefore(comment, markerStart) && hasTokenBoundaryAfter(comment, markerEnd)
+               && isBinaryClassName(comment.substring(parentStart, parentEnd)))
+            return new RelationshipMarkerRange(markerStart, parentStart, parentEnd, markerEnd);
+         markerStart = comment.indexOf(prefix, markerStart + 1);
+      }
+      return null;
+   }
+
+   private static boolean hasTokenBoundaryAfter(final String comment, final int markerEnd) {
+      return markerEnd == comment.length() || markerEnd < comment.length() && Character.isWhitespace(comment.charAt(markerEnd));
+   }
+
+   private static boolean hasTokenBoundaryBefore(final String comment, final int markerStart) {
+      // Whitespace after the EEA comment introducer is optional, so a leading '#' is also a token boundary.
+      return markerStart == 0 || markerStart == 1 && comment.charAt(0) == '#' || Character.isWhitespace(comment.charAt(markerStart - 1));
+   }
+
+   private static boolean isBinaryClassName(final String className) {
+      boolean atSegmentStart = true;
+      for (int i = 0; i < className.length(); i++) {
+         final char ch = className.charAt(i);
+         if (ch == '.') {
+            if (atSegmentStart)
+               return false;
+            atSegmentStart = true;
+         } else if (atSegmentStart ? Character.isJavaIdentifierStart(ch) : Character.isJavaIdentifierPart(ch)) {
+            atSegmentStart = false;
+         } else
+            return false;
+      }
+      return !atSegmentStart;
+   }
 
    /**
     * Used to match the 0/1 null annotation of types generic type variables, which is especially tricky
@@ -231,6 +440,38 @@ public class EEAFile {
 
       strippedSignature = replaceAll(strippedSignature, PATTERN_CAPTURE_NULL_ANNOTATION_OF_TYPENAMES, 1, match -> "");
       return strippedSignature;
+   }
+
+   private static String removeTopLevelMethodReturnNullAnnotation(final String originalSignature, final String annotatedSignature) {
+      final int returnTypeStart = originalSignature.lastIndexOf(')') + 1;
+      if (returnTypeStart <= 0 || returnTypeStart >= originalSignature.length())
+         throw new IllegalArgumentException("Not a method signature: " + originalSignature);
+
+      final char returnTypeMarker = originalSignature.charAt(returnTypeStart);
+      if (returnTypeMarker != 'L' && returnTypeMarker != 'T' && returnTypeMarker != '[')
+         return annotatedSignature;
+
+      int originalIndex = 0;
+      for (int annotatedIndex = 0; annotatedIndex < annotatedSignature.length(); annotatedIndex++) {
+         final char annotatedChar = annotatedSignature.charAt(annotatedIndex);
+         if (originalIndex < originalSignature.length() && annotatedChar == originalSignature.charAt(originalIndex)) {
+            if (originalIndex == returnTypeStart) {
+               // EEA encodes root reference nullness immediately after L, T, or [ in the annotated signature.
+               final int annotationIndex = annotatedIndex + 1;
+               if (annotationIndex < annotatedSignature.length()) {
+                  final char annotation = annotatedSignature.charAt(annotationIndex);
+                  if (annotation == ExternalAnnotationProvider.NULLABLE || annotation == ExternalAnnotationProvider.NONNULL)
+                     return annotatedSignature.substring(0, annotationIndex) + annotatedSignature.substring(annotationIndex + 1);
+               }
+               return annotatedSignature;
+            }
+            originalIndex++;
+         } else if (annotatedChar != ExternalAnnotationProvider.NULLABLE && annotatedChar != ExternalAnnotationProvider.NONNULL)
+            throw new IllegalArgumentException("Annotated signature does not match original signature [" + originalSignature + "]: "
+                  + annotatedSignature);
+      }
+      throw new IllegalArgumentException("Annotated signature does not match original signature [" + originalSignature + "]: "
+            + annotatedSignature);
    }
 
    public final ClassMember classHeader;
@@ -478,7 +719,7 @@ public class EEAFile {
          if (ourMember == null) {
             // add non-existing fields/method declarations if they are annotated with @Keep
             // for compatibility to support older versions of a class
-            if (addNewMembers || theirMember.annotatedSignature.comment.contains("@Keep")) {
+            if (addNewMembers || theirMember.hasKeepMarker()) {
                if (!newMembersAdded) {
                   addEmptyLine();
                }
@@ -571,26 +812,27 @@ public class EEAFile {
        */
       final ClassMember lastMember = findLastElement(members);
       for (final ClassMember member : members) {
-         final boolean keep = member.name.comment.contains(MARKER_KEEP) //
-               || member.originalSignature.comment.contains(MARKER_KEEP) //
-               || member.annotatedSignature.comment.contains(MARKER_KEEP);
-
+         final boolean retainSourceContract = !omitComments && member.hasSourceContractMarker();
          if (omitMembersWithoutAnnotatedSignature //
-               && !keep //
+               && !retainSourceContract //
                && !member.hasNullAnnotations()) {
             continue;
          }
+         /*
+          * Only an exact inherited contract is redundant. @Overrides carries child-local positions that consumers
+          * cannot recover from the parent and therefore must remain in the rendered artifact.
+          */
          if (omitMembersWithInheritedAnnotatedSignature //
-               && !keep //
+               && !member.hasKeepMarker() //
                && member.hasNullAnnotations() //
-               && contains(member.annotatedSignature.comment, MARKER_OVERRIDES)) {
+               && getRelationshipMarkerParent(member.annotatedSignature.comment, MARKER_INHERITED) != null) {
             continue;
          }
 
          renderLine(lines, member.name.toString(omitComments));
          renderLine(lines, " ", member.originalSignature.toString(omitComments));
 
-         if (!omitRedundantAnnotatedSignatures || member.hasNullAnnotations()) {
+         if (!omitRedundantAnnotatedSignatures || retainSourceContract || member.hasNullAnnotations()) {
             renderLine(lines, " ", member.annotatedSignature.toString(omitComments));
          }
 
