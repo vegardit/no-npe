@@ -75,6 +75,7 @@ class EEAGeneratorTest {
       }
    }
 
+   @NonNullByDefault({}) // Relationship tests supply all parent evidence through explicit annotations or stored EEAs.
    public abstract static class ExplicitParameterParent {
       public abstract void clearInherited(String first, Object second);
 
@@ -93,6 +94,7 @@ class EEAGeneratorTest {
       public abstract void update(String first, Object second);
    }
 
+   @NonNullByDefault({}) // Do not let the test package's compile-time default become implicit child evidence.
    public static final class ExplicitParameterChild extends ExplicitParameterParent {
       @Override
       public void clearInherited(final String first, final Object second) {
@@ -115,7 +117,7 @@ class EEAGeneratorTest {
       }
 
       @Override
-      public List<String> merge(final List<String> values) {
+      public List<String> merge(final @NonNull List<String> values) {
          return values;
       }
 
@@ -168,8 +170,11 @@ class EEAGeneratorTest {
       }
    }
 
+   @NonNullByDefault({}) // The classfile contract under test must come only from the annotations declared below.
    public static final class ExplicitParameterAnnotations {
-      public String combine(final @Nullable String nullable, final String nonNull, final List<String> values, final int count) {
+      @NonNull
+      public String combine(final @Nullable String nullable, final @NonNull String nonNull, final @NonNull List<String> values,
+            final int count) {
          return nullable == null ? nonNull : nullable + values.size() + count;
       }
 
