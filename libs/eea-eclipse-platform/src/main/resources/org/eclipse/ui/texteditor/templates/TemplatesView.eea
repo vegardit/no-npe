@@ -2,7 +2,7 @@ class org/eclipse/ui/texteditor/templates/TemplatesView
 
 ID
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 createDefaultPage
  (Lorg/eclipse/ui/part/PageBook;)Lorg/eclipse/ui/part/IPage;
@@ -12,22 +12,22 @@ createPartControl
  (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.part.PageBookView)
 doCreatePage
  (Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;
- (Lorg/eclipse/ui/IWorkbenchPart;)L0org/eclipse/ui/part/PageBookView$PageRec;
+ (L1org/eclipse/ui/IWorkbenchPart;)L0org/eclipse/ui/part/PageBookView$PageRec; # @Generated(2,34)
 doDestroyPage
  (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
- (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/ui/part/PageBookView$PageRec;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;L1org/eclipse/ui/part/PageBookView$PageRec;)V # @Generated(33)
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.part.PageBookView)
 getBootstrapPart
  ()Lorg/eclipse/ui/IWorkbenchPart;
- ()L0org/eclipse/ui/IWorkbenchPart;
+ ()L0org/eclipse/ui/IWorkbenchPart; # @Generated
 getSelectedTemplates
  ()[Lorg/eclipse/jface/text/templates/persistence/TemplatePersistenceData;
- ()[0Lorg/eclipse/jface/text/templates/persistence/TemplatePersistenceData;
+ ()[0Lorg/eclipse/jface/text/templates/persistence/TemplatePersistenceData; # @Generated(3)
 getTemplateStore
  ()Lorg/eclipse/jface/text/templates/persistence/TemplateStore;
- ()L0org/eclipse/jface/text/templates/persistence/TemplateStore;
+ ()L0org/eclipse/jface/text/templates/persistence/TemplateStore; # @Generated
 isImportant
  (Lorg/eclipse/ui/IWorkbenchPart;)Z
  (Lorg/eclipse/ui/IWorkbenchPart;)Z

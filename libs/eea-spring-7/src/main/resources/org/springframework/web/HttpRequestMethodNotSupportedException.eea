@@ -5,7 +5,7 @@ class org/springframework/web/HttpRequestMethodNotSupportedException
  (L0java/lang/String;)V
 <init>
  (Ljava/lang/String;Ljava/util/Collection<Ljava/lang/String;>;)V
- (Ljava/lang/String;Ljava/util/Collection<Ljava/lang/String;>;)V
+ (Ljava/lang/String;L0java/util/Collection<Ljava/lang/String;>;)V # @Generated(20)
 getBody
  ()Lorg/springframework/http/ProblemDetail;
  ()Lorg/springframework/http/ProblemDetail;
@@ -14,16 +14,16 @@ getDetailMessageArguments
  ()[0Ljava/lang/Object; # @Inherited(org.springframework.web.ErrorResponse)
 getHeaders
  ()Lorg/springframework/http/HttpHeaders;
- ()Lorg/springframework/http/HttpHeaders;
+ ()L1org/springframework/http/HttpHeaders; # @Inherited(org.springframework.web.ErrorResponse)
 getMethod
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getStatusCode
  ()Lorg/springframework/http/HttpStatusCode;
- ()Lorg/springframework/http/HttpStatusCode;
+ ()L1org/springframework/http/HttpStatusCode; # @Generated
 getSupportedHttpMethods
  ()Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;
- ()L0java/util/Set<Lorg/springframework/http/HttpMethod;>;
+ ()L0java/util/Set<Lorg/springframework/http/HttpMethod;>; # @Generated(3)
 getSupportedMethods
  ()[Ljava/lang/String;
- ()[0Ljava/lang/String;
+ ()[0Ljava/lang/String; # @Generated(3)

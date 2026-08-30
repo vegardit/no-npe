@@ -5,7 +5,7 @@ logger
  Lorg/apache/commons/logging/Log;
 server
  Ljavax/management/MBeanServer;
- L0javax/management/MBeanServer;
+ L0javax/management/MBeanServer; # @Generated
 
 doRegister
  (Ljava/lang/Object;Ljavax/management/ObjectName;)V
@@ -18,7 +18,7 @@ getRegisteredObjectNames
  ()[Ljavax/management/ObjectName;
 getServer
  ()Ljavax/management/MBeanServer;
- ()L0javax/management/MBeanServer;
+ ()L0javax/management/MBeanServer; # @Generated
 onRegister
  (Ljavax/management/ObjectName;)V
  (Ljavax/management/ObjectName;)V
@@ -33,4 +33,4 @@ setRegistrationPolicy
  (Lorg/springframework/jmx/support/RegistrationPolicy;)V
 setServer
  (Ljavax/management/MBeanServer;)V
- (Ljavax/management/MBeanServer;)V
+ (L0javax/management/MBeanServer;)V # @Generated

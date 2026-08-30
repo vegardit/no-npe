@@ -2,11 +2,11 @@ class org/springframework/core/env/AbstractPropertyResolver
 
 DEFAULT_PLACEHOLDER_ESCAPE_CHARACTER_PROPERTY_NAME
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 getDefaultEscapeCharacter
  ()Ljava/lang/Character;
- ()L0java/lang/Character;
+ ()L0java/lang/Character; # @Generated
 
 logger
  Lorg/apache/commons/logging/Log;
@@ -17,10 +17,10 @@ containsProperty
  (Ljava/lang/String;)Z
 convertValueIfNecessary
  <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/lang/Class<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;L0java/lang/Class<TT;>;)T0T; # @Generated(42,65)
 getConversionService
  ()Lorg/springframework/core/convert/support/ConfigurableConversionService;
- ()L1org/springframework/core/convert/support/ConfigurableConversionService;
+ ()L1org/springframework/core/convert/support/ConfigurableConversionService; # @Generated
 getProperty
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.core.env.PropertyResolver)
@@ -32,16 +32,16 @@ getProperty
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;TT;)TT;
 getPropertyAsRawString
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Generated(21)
 getRequiredProperty
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)L1java/lang/String; # @Generated(21)
 getRequiredProperty
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)T1T; # @Generated(65)
 resolveNestedPlaceholders
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/String;)Ljava/lang/String; # @Generated(2)
 resolvePlaceholders
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -53,7 +53,7 @@ setConversionService
  (Lorg/springframework/core/convert/support/ConfigurableConversionService;)V
 setEscapeCharacter
  (Ljava/lang/Character;)V
- (Ljava/lang/Character;)V
+ (L0java/lang/Character;)V # @Inherited(org.springframework.core.env.ConfigurablePropertyResolver)
 setPlaceholderPrefix
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -65,4 +65,4 @@ setRequiredProperties
  ([Ljava/lang/String;)V
 setValueSeparator
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Inherited(org.springframework.core.env.ConfigurablePropertyResolver)

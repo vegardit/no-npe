@@ -11,7 +11,7 @@ class com/fasterxml/jackson/databind/deser/std/ArrayBlockingQueueDeserializer
  (Lcom/fasterxml/jackson/databind/deser/std/ArrayBlockingQueueDeserializer;)V
 _deserializeFromArray
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/util/Collection<Ljava/lang/Object;>;)Ljava/util/Collection<Ljava/lang/Object;>;
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/util/Collection<Ljava/lang/Object;>;)Ljava/util/Collection<Ljava/lang/Object;>;
+ (L1com/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/util/Collection<Ljava/lang/Object;>;)L1java/util/Collection<Ljava/lang/Object;>; # @Overrides(com.fasterxml.jackson.databind.deser.std.CollectionDeserializer)
 createDefaultInstance
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/util/Collection<Ljava/lang/Object;>;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)L0java/util/Collection<Ljava/lang/Object;>; # @Overrides(com.fasterxml.jackson.databind.deser.std.CollectionDeserializer)
@@ -20,4 +20,4 @@ deserializeWithType
  (L1com/fasterxml/jackson/core/JsonParser;L1com/fasterxml/jackson/databind/DeserializationContext;L1com/fasterxml/jackson/databind/jsontype/TypeDeserializer;)L0java/lang/Object; # @Inherited(com.fasterxml.jackson.databind.deser.std.CollectionDeserializer)
 withResolved
  (Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/deser/NullValueProvider;Ljava/lang/Boolean;)Lcom/fasterxml/jackson/databind/deser/std/ArrayBlockingQueueDeserializer;
- (Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/deser/NullValueProvider;Ljava/lang/Boolean;)Lcom/fasterxml/jackson/databind/deser/std/ArrayBlockingQueueDeserializer;
+ (Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Lcom/fasterxml/jackson/databind/JsonDeserializer<*>;Lcom/fasterxml/jackson/databind/jsontype/TypeDeserializer;Lcom/fasterxml/jackson/databind/deser/NullValueProvider;Ljava/lang/Boolean;)L1com/fasterxml/jackson/databind/deser/std/ArrayBlockingQueueDeserializer; # @Generated(240)

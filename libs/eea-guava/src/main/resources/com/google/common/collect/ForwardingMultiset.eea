@@ -14,7 +14,7 @@ add
  (TE;I)I
 count
  (Ljava/lang/Object;)I
- (Ljava/lang/Object;)I
+ (L0java/lang/Object;)I # @Inherited(com.google.common.collect.Multiset)
 delegate
  ()Lcom/google/common/collect/Multiset<TE;>;
  ()Lcom/google/common/collect/Multiset<TE;>;
@@ -29,7 +29,7 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 remove
  (Ljava/lang/Object;I)I
- (Ljava/lang/Object;I)I
+ (L0java/lang/Object;I)I # @Inherited(com.google.common.collect.Multiset)
 setCount
  (TE;I)I
  (TE;I)I
@@ -41,22 +41,22 @@ standardAdd
  (TE;)Z
 standardAddAll
  (Ljava/util/Collection<+TE;>;)Z
- (Ljava/util/Collection<+TE;>;)Z
+ (L1java/util/Collection<+TE;>;)Z # @Inherited(com.google.common.collect.ForwardingCollection)
 standardContains
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(com.google.common.collect.ForwardingCollection)
 standardCount
  (Ljava/lang/Object;)I
- (Ljava/lang/Object;)I
+ (L0java/lang/Object;)I # @Generated
 standardEquals
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Generated
 standardIterator
  ()Ljava/util/Iterator<TE;>;
- ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Generated(3)
 standardRemove
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(com.google.common.collect.ForwardingCollection)
 standardRemoveAll
  (Ljava/util/Collection<*>;)Z
  (Ljava/util/Collection<*>;)Z
@@ -71,4 +71,4 @@ standardSetCount
  (TE;II)Z
 standardToString
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Inherited(com.google.common.collect.ForwardingCollection)

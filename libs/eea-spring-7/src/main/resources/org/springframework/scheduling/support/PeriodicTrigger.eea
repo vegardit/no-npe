@@ -2,7 +2,7 @@ class org/springframework/scheduling/support/PeriodicTrigger
 
 <init>
  (JLjava/util/concurrent/TimeUnit;)V
- (JLjava/util/concurrent/TimeUnit;)V
+ (JL0java/util/concurrent/TimeUnit;)V # @Generated
 <init>
  (Ljava/time/Duration;)V
  (Ljava/time/Duration;)V
@@ -11,16 +11,16 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getInitialDelayDuration
  ()Ljava/time/Duration;
- ()L0java/time/Duration;
+ ()L0java/time/Duration; # @Generated
 getPeriodDuration
  ()Ljava/time/Duration;
  ()Ljava/time/Duration;
 getTimeUnit
  ()Ljava/util/concurrent/TimeUnit;
- ()Ljava/util/concurrent/TimeUnit;
+ ()L1java/util/concurrent/TimeUnit; # @Generated
 nextExecution
  (Lorg/springframework/scheduling/TriggerContext;)Ljava/time/Instant;
- (Lorg/springframework/scheduling/TriggerContext;)L0java/time/Instant; # @Inherited(org.springframework.scheduling.Trigger)
+ (L1org/springframework/scheduling/TriggerContext;)L0java/time/Instant; # @Overrides(org.springframework.scheduling.Trigger)
 setInitialDelay
  (Ljava/time/Duration;)V
  (Ljava/time/Duration;)V

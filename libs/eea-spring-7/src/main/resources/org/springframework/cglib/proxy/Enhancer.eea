@@ -33,7 +33,7 @@ createClass
  ()L1java/lang/Class;
 filterConstructors
  (Ljava/lang/Class;Ljava/util/List;)V
- (Ljava/lang/Class;Ljava/util/List;)V
+ (Ljava/lang/Class;L1java/util/List;)V # @Generated(19)
 firstInstance
  (Ljava/lang/Class;)Ljava/lang/Object;
  (Ljava/lang/Class;)Ljava/lang/Object;
@@ -45,7 +45,7 @@ generateClass
  (Lorg/springframework/asm/ClassVisitor;)V
 getDefaultClassLoader
  ()Ljava/lang/ClassLoader;
- ()L0java/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Generated
 getProtectionDomain
  ()Ljava/security/ProtectionDomain;
  ()L0java/security/ProtectionDomain; # @Inherited(org.springframework.cglib.core.AbstractClassGenerator)
@@ -81,4 +81,4 @@ unwrapCachedValue
  (Ljava/lang/Object;)Ljava/lang/Object;
 wrapCachedClass
  (Ljava/lang/Class;)Ljava/lang/Object;
- (Ljava/lang/Class;)L1java/lang/Object;
+ (L1java/lang/Class;)L1java/lang/Object; # @Generated(2,20)

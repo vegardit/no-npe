@@ -14,16 +14,16 @@ super org/springframework/http/converter/AbstractSmartHttpMessageConverter
  (TT;[Lorg/springframework/http/MediaType;)V
 canRead
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/MediaType;)Z
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/MediaType;)Z
+ (L1org/springframework/core/ResolvableType;L0org/springframework/http/MediaType;)Z # @Overrides(org.springframework.http.converter.SmartHttpMessageConverter)
 canWrite
  (Lorg/springframework/core/ResolvableType;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Lorg/springframework/core/ResolvableType;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Lorg/springframework/core/ResolvableType;Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.SmartHttpMessageConverter)
 getSupportedMediaTypes
  (Ljava/lang/Class<*>;)Ljava/util/List<Lorg/springframework/http/MediaType;>;
  (Ljava/lang/Class<*>;)Ljava/util/List<Lorg/springframework/http/MediaType;>;
 read
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/Object;
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/Object;
+ (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpInputMessage;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/Object; # @Generated(86)
 readInternal
  (Lkotlinx/serialization/KSerializer<Ljava/lang/Object;>;TT;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
  (Lkotlinx/serialization/KSerializer<Ljava/lang/Object;>;TT;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
@@ -38,4 +38,4 @@ writeInternal
  (Ljava/lang/Object;Lkotlinx/serialization/KSerializer<Ljava/lang/Object;>;TT;Lorg/springframework/http/HttpOutputMessage;)V
 writeInternal
  (Ljava/lang/Object;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpOutputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
- (Ljava/lang/Object;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpOutputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+ (Ljava/lang/Object;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpOutputMessage;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V # @Generated(105)

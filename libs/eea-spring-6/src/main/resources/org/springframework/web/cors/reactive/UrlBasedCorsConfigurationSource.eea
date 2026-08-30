@@ -5,10 +5,10 @@ class org/springframework/web/cors/reactive/UrlBasedCorsConfigurationSource
  (Lorg/springframework/web/util/pattern/PathPatternParser;)V
 getCorsConfiguration
  (Lorg/springframework/web/server/ServerWebExchange;)Lorg/springframework/web/cors/CorsConfiguration;
- (Lorg/springframework/web/server/ServerWebExchange;)L0org/springframework/web/cors/CorsConfiguration; # @Inherited(org.springframework.web.cors.reactive.CorsConfigurationSource)
+ (L1org/springframework/web/server/ServerWebExchange;)L0org/springframework/web/cors/CorsConfiguration; # @Overrides(org.springframework.web.cors.reactive.CorsConfigurationSource)
 registerCorsConfiguration
  (Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;)V
  (Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;)V
 setCorsConfigurations
  (Ljava/util/Map<Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;>;)V
- (Ljava/util/Map<Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;>;)V
+ (L0java/util/Map<Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;>;)V # @Generated(2)

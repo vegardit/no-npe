@@ -9,7 +9,7 @@ doSetInput
  (Lorg/eclipse/ui/IEditorInput;)V
 editorContextMenuAboutToShow
  (Lorg/eclipse/jface/action/IMenuManager;)V
- (Lorg/eclipse/jface/action/IMenuManager;)V
+ (L1org/eclipse/jface/action/IMenuManager;)V # @Inherited(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor)
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.texteditor.AbstractDecoratedTextEditor)
@@ -21,7 +21,7 @@ getStatusHeader
  (Lorg/eclipse/core/runtime/IStatus;)L1java/lang/String; # @Inherited(org.eclipse.ui.texteditor.StatusTextEditor)
 getStatusMessage
  (Lorg/eclipse/core/runtime/IStatus;)Ljava/lang/String;
- (Lorg/eclipse/core/runtime/IStatus;)Ljava/lang/String;
+ (L1org/eclipse/core/runtime/IStatus;)Ljava/lang/String; # @Inherited(org.eclipse.ui.texteditor.StatusTextEditor)
 handlePreferenceStoreChanged
  (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
- (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (L1org/eclipse/jface/util/PropertyChangeEvent;)V # @Generated

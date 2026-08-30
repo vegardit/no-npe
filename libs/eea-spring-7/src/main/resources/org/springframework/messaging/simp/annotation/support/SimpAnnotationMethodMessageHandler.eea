@@ -18,28 +18,28 @@ getConversionService
  ()Lorg/springframework/core/convert/ConversionService;
 getDestination
  (Lorg/springframework/messaging/Message<*>;)Ljava/lang/String;
- (Lorg/springframework/messaging/Message<*>;)L0java/lang/String; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
+ (L1org/springframework/messaging/Message<*>;)L0java/lang/String; # @Overrides(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getDirectLookupDestinations
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;)Ljava/util/Set<Ljava/lang/String;>;
- (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;)L1java/util/Set<Ljava/lang/String;>;
+ (L1org/springframework/messaging/simp/SimpMessageMappingInfo;)L1java/util/Set<Ljava/lang/String;>; # @Generated(2,62)
 getHandlerMethodLogger
  ()Lorg/apache/commons/logging/Log;
  ()L0org/apache/commons/logging/Log; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getHeaderInitializer
  ()Lorg/springframework/messaging/support/MessageHeaderInitializer;
- ()L0org/springframework/messaging/support/MessageHeaderInitializer;
+ ()L0org/springframework/messaging/support/MessageHeaderInitializer; # @Generated
 getLookupDestination
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
+ (L0java/lang/String;)L0java/lang/String; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getMappingComparator
  (Lorg/springframework/messaging/Message<*>;)Ljava/util/Comparator<Lorg/springframework/messaging/simp/SimpMessageMappingInfo;>;
  (Lorg/springframework/messaging/Message<*>;)Ljava/util/Comparator<Lorg/springframework/messaging/simp/SimpMessageMappingInfo;>;
 getMappingForMethod
  (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)Lorg/springframework/messaging/simp/SimpMessageMappingInfo;
- (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo;
+ (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo; # @Generated(49)
 getMatchingMapping
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/simp/SimpMessageMappingInfo;
- (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/Message<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo;
+ (L1org/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/Message<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo; # @Generated(2,104)
 getMessageConverter
  ()Lorg/springframework/messaging/converter/MessageConverter;
  ()Lorg/springframework/messaging/converter/MessageConverter;
@@ -51,16 +51,16 @@ getReturnValueHandlerLogger
  ()L0org/apache/commons/logging/Log; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getValidator
  ()Lorg/springframework/validation/Validator;
- ()L0org/springframework/validation/Validator;
+ ()L0org/springframework/validation/Validator; # @Generated
 handleMatch
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V
- (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V
+ (L1org/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V # @Generated(2)
 initArgumentResolvers
  ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;
- ()L1java/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;
+ ()L1java/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>; # @Generated(3)
 initReturnValueHandlers
  ()Ljava/util/List<+Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;
- ()L1java/util/List<+Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;
+ ()L1java/util/List<+Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>; # @Generated(3)
 isHandler
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z
@@ -72,13 +72,13 @@ setConversionService
  (Lorg/springframework/core/convert/ConversionService;)V
 setDestinationPrefixes
  (Ljava/util/Collection<Ljava/lang/String;>;)V
- (Ljava/util/Collection<Ljava/lang/String;>;)V
+ (L0java/util/Collection<Ljava/lang/String;>;)V # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 setEmbeddedValueResolver
  (Lorg/springframework/util/StringValueResolver;)V
  (Lorg/springframework/util/StringValueResolver;)V
 setHeaderInitializer
  (Lorg/springframework/messaging/support/MessageHeaderInitializer;)V
- (Lorg/springframework/messaging/support/MessageHeaderInitializer;)V
+ (L0org/springframework/messaging/support/MessageHeaderInitializer;)V # @Generated
 setMessageConverter
  (Lorg/springframework/messaging/converter/MessageConverter;)V
  (Lorg/springframework/messaging/converter/MessageConverter;)V
@@ -87,7 +87,7 @@ setPathMatcher
  (Lorg/springframework/util/PathMatcher;)V
 setValidator
  (Lorg/springframework/validation/Validator;)V
- (Lorg/springframework/validation/Validator;)V
+ (L0org/springframework/validation/Validator;)V # @Generated
 stop
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V # @Inherited(org.springframework.context.SmartLifecycle)

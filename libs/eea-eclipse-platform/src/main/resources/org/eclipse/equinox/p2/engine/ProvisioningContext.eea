@@ -2,38 +2,38 @@ class org/eclipse/equinox/p2/engine/ProvisioningContext
 
 CHECK_AUTHORITIES
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FOLLOW_ARTIFACT_REPOSITORY_REFERENCES
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FOLLOW_REPOSITORY_REFERENCES
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 <init>
  (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
  (Lorg/eclipse/equinox/p2/core/IProvisioningAgent;)V
 getArtifactDescriptors
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;>;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;>;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;>; # @Generated(46)
 getArtifactKeys
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>; # @Generated(46)
 getArtifactRepositories
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;>;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;>;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/repository/artifact/IArtifactRepository;>; # @Generated(46)
 getArtifactSources
  (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;>;
- (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;Lorg/eclipse/core/runtime/IProgressMonitor;)L1java/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;>;
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;Lorg/eclipse/core/runtime/IProgressMonitor;)L1java/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IArtifactKey;>;>; # @Generated(117)
 getExtraInstallableUnits
  ()Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
  ()Ljava/util/List<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
 getInstallableUnitSources
  (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;>;
- (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;Lorg/eclipse/core/runtime/IProgressMonitor;)L1java/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;>;
+ (Ljava/util/Collection<+Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;Lorg/eclipse/core/runtime/IProgressMonitor;)L1java/util/Map<Ljava/net/URI;Ljava/util/Set<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;>; # @Generated(121)
 getMetadata
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/equinox/p2/query/IQueryable<Lorg/eclipse/equinox/p2/metadata/IInstallableUnit;>; # @Generated(46)
 getProperties
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;

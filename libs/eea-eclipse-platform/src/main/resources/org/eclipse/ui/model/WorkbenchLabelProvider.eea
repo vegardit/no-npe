@@ -2,7 +2,7 @@ class org/eclipse/ui/model/WorkbenchLabelProvider
 
 getDecoratingWorkbenchLabelProvider
  ()Lorg/eclipse/jface/viewers/ILabelProvider;
- ()L1org/eclipse/jface/viewers/ILabelProvider;
+ ()L1org/eclipse/jface/viewers/ILabelProvider; # @Generated
 
 decorateImage
  (Lorg/eclipse/jface/resource/ImageDescriptor;Ljava/lang/Object;)Lorg/eclipse/jface/resource/ImageDescriptor;
@@ -27,13 +27,13 @@ getDecorationStyle
  (Ljava/lang/Object;)Lorg/eclipse/jface/viewers/StyledString$Styler;
 getFont
  (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Font;
- (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Font; # @Inherited(org.eclipse.jface.viewers.IFontProvider)
+ (L1java/lang/Object;)L0org/eclipse/swt/graphics/Font; # @Overrides(org.eclipse.jface.viewers.IFontProvider)
 getForeground
  (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Color;
  (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Color; # @Inherited(org.eclipse.jface.viewers.IColorProvider)
 getImage
  (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Image;
- (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Image; # @Inherited(org.eclipse.jface.viewers.LabelProvider)
+ (L1java/lang/Object;)L0org/eclipse/swt/graphics/Image; # @Inherited(org.eclipse.jface.viewers.LabelProvider)
 getStyledText
  (Ljava/lang/Object;)Lorg/eclipse/jface/viewers/StyledString;
  (Ljava/lang/Object;)Lorg/eclipse/jface/viewers/StyledString;

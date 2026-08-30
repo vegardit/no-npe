@@ -16,7 +16,7 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 iterator
  (Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/ClassLoader;Lnet/bytebuddy/utility/JavaModule;Ljava/lang/Class<*>;Ljava/security/ProtectionDomain;)Ljava/util/Iterator<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer;>;
- (Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/ClassLoader;Lnet/bytebuddy/utility/JavaModule;Ljava/lang/Class<*>;Ljava/security/ProtectionDomain;)Ljava/util/Iterator<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer;>;
+ (Lnet/bytebuddy/description/type/TypeDescription;L0java/lang/ClassLoader;L0net/bytebuddy/utility/JavaModule;L0java/lang/Class<*>;L0java/security/ProtectionDomain;)Ljava/util/Iterator<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer;>; # @Inherited(net.bytebuddy.agent.builder.ResettableClassFileTransformer)
 reset
  (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy$DiscoveryStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy$BatchAllocator;Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy$Listener;)Z
  (Ljava/lang/instrument/Instrumentation;Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy$DiscoveryStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy$BatchAllocator;Lnet/bytebuddy/agent/builder/AgentBuilder$RedefinitionStrategy$Listener;)Z
@@ -25,7 +25,7 @@ substitute
  (Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;)V
 transform
  (Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/Class<*>;Ljava/security/ProtectionDomain;[B)[B
- (Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/Class<*>;Ljava/security/ProtectionDomain;[B)[0B # @Inherited(java.lang.instrument.ClassFileTransformer)
+ (L0java/lang/ClassLoader;L0java/lang/String;L0java/lang/Class<*>;L0java/security/ProtectionDomain;[B)[0B # @Overrides(java.lang.instrument.ClassFileTransformer)
 unwrap
  ()Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;
  ()Lnet/bytebuddy/agent/builder/ResettableClassFileTransformer;

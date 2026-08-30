@@ -2,22 +2,22 @@ class com/fasterxml/jackson/core/base/GeneratorBase
 
 WRITE_BINARY
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 WRITE_BOOLEAN
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 WRITE_NULL
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 WRITE_NUMBER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 WRITE_RAW
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 WRITE_STRING
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 _ioContext
  Lcom/fasterxml/jackson/core/io/IOContext;
@@ -43,7 +43,7 @@ _writeContext
  (ILcom/fasterxml/jackson/core/ObjectCodec;Lcom/fasterxml/jackson/core/json/JsonWriteContext;)V
 _asString
  (Ljava/math/BigDecimal;)Ljava/lang/String;
- (Ljava/math/BigDecimal;)Ljava/lang/String;
+ (L1java/math/BigDecimal;)Ljava/lang/String; # @Generated(2)
 _checkRangeBoundsForByteArray
  ([BII)V
  ([BII)V
@@ -52,10 +52,10 @@ _checkRangeBoundsForCharArray
  ([CII)V
 _checkRangeBoundsForString
  (Ljava/lang/String;II)V
- (Ljava/lang/String;II)V
+ (L1java/lang/String;II)V # @Generated
 _constructDefaultPrettyPrinter
  ()Lcom/fasterxml/jackson/core/PrettyPrinter;
- ()L1com/fasterxml/jackson/core/PrettyPrinter;
+ ()L1com/fasterxml/jackson/core/PrettyPrinter; # @Generated
 _verifyValueWrite
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -64,13 +64,13 @@ assignCurrentValue
  (Ljava/lang/Object;)V
 currentValue
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 disable
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (L1com/fasterxml/jackson/core/JsonGenerator$Feature;)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated(2,53)
 enable
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (L1com/fasterxml/jackson/core/JsonGenerator$Feature;)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated(2,53)
 getCodec
  ()Lcom/fasterxml/jackson/core/ObjectCodec;
  ()Lcom/fasterxml/jackson/core/ObjectCodec;
@@ -82,16 +82,16 @@ ioContext
  ()Lcom/fasterxml/jackson/core/io/IOContext;
 isEnabled
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Z
- (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Z
+ (L1com/fasterxml/jackson/core/JsonGenerator$Feature;)Z # @Generated
 overrideStdFeatures
  (II)Lcom/fasterxml/jackson/core/JsonGenerator;
- (II)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (II)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated
 setCodec
  (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (Lcom/fasterxml/jackson/core/ObjectCodec;)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated(43)
 setFeatureMask
  (I)Lcom/fasterxml/jackson/core/JsonGenerator;
- (I)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (I)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated
 useDefaultPrettyPrinter
  ()Lcom/fasterxml/jackson/core/JsonGenerator;
  ()Lcom/fasterxml/jackson/core/JsonGenerator;
@@ -103,13 +103,13 @@ writeBinary
  (Lcom/fasterxml/jackson/core/Base64Variant;Ljava/io/InputStream;I)I
 writeFieldName
  (Lcom/fasterxml/jackson/core/SerializableString;)V
- (Lcom/fasterxml/jackson/core/SerializableString;)V
+ (L1com/fasterxml/jackson/core/SerializableString;)V # @Generated
 writeObject
  (Ljava/lang/Object;)V
  (L1java/lang/Object;)V # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 writeRawValue
  (Lcom/fasterxml/jackson/core/SerializableString;)V
- (Lcom/fasterxml/jackson/core/SerializableString;)V
+ (L1com/fasterxml/jackson/core/SerializableString;)V # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 writeRawValue
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -124,7 +124,7 @@ writeStartObject
  (Ljava/lang/Object;)V
 writeString
  (Lcom/fasterxml/jackson/core/SerializableString;)V
- (Lcom/fasterxml/jackson/core/SerializableString;)V
+ (L1com/fasterxml/jackson/core/SerializableString;)V # @Generated
 writeTree
  (Lcom/fasterxml/jackson/core/TreeNode;)V
  (Lcom/fasterxml/jackson/core/TreeNode;)V

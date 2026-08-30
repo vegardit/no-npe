@@ -5,7 +5,7 @@ DO_NOT_PROXY
  [1Ljava/lang/Object;
 PROXY_WITHOUT_ADDITIONAL_INTERCEPTORS
  [Ljava/lang/Object;
- [1Ljava/lang/Object;
+ [1Ljava/lang/Object; # @Generated(1)
 
 logger
  Lorg/apache/commons/logging/Log;
@@ -13,10 +13,10 @@ logger
 
 buildAdvisors
  (Ljava/lang/String;[Ljava/lang/Object;)[Lorg/springframework/aop/Advisor;
- (Ljava/lang/String;[Ljava/lang/Object;)[1Lorg/springframework/aop/Advisor;
+ (L0java/lang/String;[0Ljava/lang/Object;)[1Lorg/springframework/aop/Advisor; # @Generated(2,20,40)
 createProxy
  (Ljava/lang/Class<*>;Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/aop/TargetSource;)Ljava/lang/Object;
- (Ljava/lang/Class<*>;Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/aop/TargetSource;)L1java/lang/Object;
+ (Ljava/lang/Class<*>;L0java/lang/String;[0Ljava/lang/Object;Lorg/springframework/aop/TargetSource;)L1java/lang/Object; # @Generated(22,40)
 customizeProxyFactory
  (Lorg/springframework/aop/framework/ProxyFactory;)V
  (Lorg/springframework/aop/framework/ProxyFactory;)V
@@ -28,25 +28,25 @@ determineCandidateConstructors
  (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
 getAdvicesAndAdvisorsForBean
  (Ljava/lang/Class<*>;Ljava/lang/String;Lorg/springframework/aop/TargetSource;)[Ljava/lang/Object;
- (Ljava/lang/Class<*>;Ljava/lang/String;Lorg/springframework/aop/TargetSource;)[0Ljava/lang/Object;
+ (Ljava/lang/Class<*>;Ljava/lang/String;L0org/springframework/aop/TargetSource;)[0Ljava/lang/Object; # @Generated(40,79)
 getBeanFactory
  ()Lorg/springframework/beans/factory/BeanFactory;
- ()L0org/springframework/beans/factory/BeanFactory;
+ ()L0org/springframework/beans/factory/BeanFactory; # @Generated
 getCacheKey
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/Class<*>;L0java/lang/String;)Ljava/lang/Object; # @Generated(22)
 getCustomTargetSource
  (Ljava/lang/Class<*>;Ljava/lang/String;)Lorg/springframework/aop/TargetSource;
- (Ljava/lang/Class<*>;Ljava/lang/String;)L0org/springframework/aop/TargetSource;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)L0org/springframework/aop/TargetSource; # @Generated(41)
 getEarlyBeanReference
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+ (L1java/lang/Object;Ljava/lang/String;)Ljava/lang/Object; # @Generated(2)
 isInfrastructureClass
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z
 postProcessAfterInitialization
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/Object;Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.config.BeanPostProcessor)
+ (L0java/lang/Object;Ljava/lang/String;)L0java/lang/Object; # @Overrides(org.springframework.beans.factory.config.BeanPostProcessor)
 postProcessBeforeInstantiation
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Object;
  (Ljava/lang/Class<*>;Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
@@ -70,7 +70,7 @@ setInterceptorNames
  ([Ljava/lang/String;)V
 shouldProxyTargetClass
  (Ljava/lang/Class<*>;Ljava/lang/String;)Z
- (Ljava/lang/Class<*>;Ljava/lang/String;)Z
+ (Ljava/lang/Class<*>;L0java/lang/String;)Z # @Generated(22)
 shouldSkip
  (Ljava/lang/Class<*>;Ljava/lang/String;)Z
  (Ljava/lang/Class<*>;Ljava/lang/String;)Z

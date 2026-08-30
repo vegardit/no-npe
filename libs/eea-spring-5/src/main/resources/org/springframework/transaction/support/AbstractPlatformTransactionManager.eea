@@ -6,10 +6,10 @@ logger
 
 commit
  (Lorg/springframework/transaction/TransactionStatus;)V
- (Lorg/springframework/transaction/TransactionStatus;)V
+ (L1org/springframework/transaction/TransactionStatus;)V # @Generated
 determineTimeout
  (Lorg/springframework/transaction/TransactionDefinition;)I
- (Lorg/springframework/transaction/TransactionDefinition;)I
+ (L1org/springframework/transaction/TransactionDefinition;)I # @Generated
 doBegin
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
@@ -24,7 +24,7 @@ doGetTransaction
  ()Ljava/lang/Object;
 doResume
  (Ljava/lang/Object;Ljava/lang/Object;)V
- (Ljava/lang/Object;Ljava/lang/Object;)V
+ (L0java/lang/Object;Ljava/lang/Object;)V # @Generated(2)
 doRollback
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
@@ -36,7 +36,7 @@ doSuspend
  (Ljava/lang/Object;)Ljava/lang/Object;
 getTransaction
  (Lorg/springframework/transaction/TransactionDefinition;)Lorg/springframework/transaction/TransactionStatus;
- (Lorg/springframework/transaction/TransactionDefinition;)Lorg/springframework/transaction/TransactionStatus;
+ (L0org/springframework/transaction/TransactionDefinition;)Lorg/springframework/transaction/TransactionStatus; # @Inherited(org.springframework.transaction.PlatformTransactionManager)
 invokeAfterCompletion
  (Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;I)V
  (Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;I)V
@@ -45,34 +45,34 @@ isExistingTransaction
  (Ljava/lang/Object;)Z
 newTransactionStatus
  (Lorg/springframework/transaction/TransactionDefinition;Ljava/lang/Object;ZZZLjava/lang/Object;)Lorg/springframework/transaction/support/DefaultTransactionStatus;
- (Lorg/springframework/transaction/TransactionDefinition;Ljava/lang/Object;ZZZLjava/lang/Object;)L1org/springframework/transaction/support/DefaultTransactionStatus;
+ (L1org/springframework/transaction/TransactionDefinition;L0java/lang/Object;ZZZL0java/lang/Object;)L1org/springframework/transaction/support/DefaultTransactionStatus; # @Generated(2,57,78,97)
 prepareForCommit
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
 prepareSynchronization
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;Lorg/springframework/transaction/TransactionDefinition;)V
- (Lorg/springframework/transaction/support/DefaultTransactionStatus;Lorg/springframework/transaction/TransactionDefinition;)V
+ (L1org/springframework/transaction/support/DefaultTransactionStatus;Lorg/springframework/transaction/TransactionDefinition;)V # @Generated(2)
 prepareTransactionStatus
  (Lorg/springframework/transaction/TransactionDefinition;Ljava/lang/Object;ZZZLjava/lang/Object;)Lorg/springframework/transaction/support/DefaultTransactionStatus;
- (Lorg/springframework/transaction/TransactionDefinition;Ljava/lang/Object;ZZZLjava/lang/Object;)Lorg/springframework/transaction/support/DefaultTransactionStatus;
+ (Lorg/springframework/transaction/TransactionDefinition;L0java/lang/Object;ZZZL0java/lang/Object;)Lorg/springframework/transaction/support/DefaultTransactionStatus; # @Generated(57,78)
 registerAfterCompletionWithExistingTransaction
  (Ljava/lang/Object;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
  (Ljava/lang/Object;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
 resume
  (Ljava/lang/Object;Lorg/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;)V
- (Ljava/lang/Object;Lorg/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;)V
+ (L0java/lang/Object;L0org/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;)V # @Generated(2,20)
 rollback
  (Lorg/springframework/transaction/TransactionStatus;)V
- (Lorg/springframework/transaction/TransactionStatus;)V
+ (L1org/springframework/transaction/TransactionStatus;)V # @Generated
 setTransactionSynchronizationName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 suspend
  (Ljava/lang/Object;)Lorg/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;
- (Ljava/lang/Object;)L0org/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;
+ (L0java/lang/Object;)L0org/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder; # @Generated(2,21)
 triggerBeforeCommit
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
- (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+ (L1org/springframework/transaction/support/DefaultTransactionStatus;)V # @Generated
 triggerBeforeCompletion
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
- (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+ (L1org/springframework/transaction/support/DefaultTransactionStatus;)V # @Generated

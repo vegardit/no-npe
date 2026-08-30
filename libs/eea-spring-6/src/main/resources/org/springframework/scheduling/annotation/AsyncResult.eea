@@ -8,14 +8,14 @@ super org/springframework/util/concurrent/ListenableFuture
 
 forExecutionException
  <V:Ljava/lang/Object;>(Ljava/lang/Throwable;)Lorg/springframework/util/concurrent/ListenableFuture<TV;>;
- <V:Ljava/lang/Object;>(Ljava/lang/Throwable;)L1org/springframework/util/concurrent/ListenableFuture<TV;>;
+ <V:Ljava/lang/Object;>(Ljava/lang/Throwable;)L1org/springframework/util/concurrent/ListenableFuture<TV;>; # @Generated(46)
 forValue
  <V:Ljava/lang/Object;>(TV;)Lorg/springframework/util/concurrent/ListenableFuture<TV;>;
- <V:Ljava/lang/Object;>(TV;)L1org/springframework/util/concurrent/ListenableFuture<TV;>;
+ <V:Ljava/lang/Object;>(TV;)L1org/springframework/util/concurrent/ListenableFuture<TV;>; # @Generated(28)
 
 <init>
  (TV;)V
- (TV;)V
+ (T0V;)V # @Generated
 addCallback
  (Lorg/springframework/util/concurrent/ListenableFutureCallback<-TV;>;)V
  (Lorg/springframework/util/concurrent/ListenableFutureCallback<-TV;>;)V
@@ -24,10 +24,10 @@ addCallback
  (Lorg/springframework/util/concurrent/SuccessCallback<-TV;>;Lorg/springframework/util/concurrent/FailureCallback;)V
 completable
  ()Ljava/util/concurrent/CompletableFuture<TV;>;
- ()Ljava/util/concurrent/CompletableFuture<TV;>;
+ ()L1java/util/concurrent/CompletableFuture<TV;>; # @Generated(3)
 get
  ()TV;
- ()T0V;
+ ()T0V; # @Generated
 get
  (JLjava/util/concurrent/TimeUnit;)TV;
- (JLjava/util/concurrent/TimeUnit;)T0V; # @Overrides(java.util.concurrent.Future)
+ (JL1java/util/concurrent/TimeUnit;)T0V; # @Overrides(java.util.concurrent.Future)

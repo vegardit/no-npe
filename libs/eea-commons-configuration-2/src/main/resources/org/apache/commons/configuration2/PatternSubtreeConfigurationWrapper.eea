@@ -2,7 +2,7 @@ class org/apache/commons/configuration2/PatternSubtreeConfigurationWrapper
 
 <init>
  (Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;Ljava/lang/String;)V
- (Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;Ljava/lang/String;)V
+ (Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;L1java/lang/String;)V # @Generated(119)
 addEventListener
  <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventListener<-TT;>;)V
  <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventListener<-TT;>;)V
@@ -17,7 +17,7 @@ clearPropertyDirect
  (Ljava/lang/String;)V
 clearTreeInternal
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)L1java/lang/Object; # @Generated(21)
 configurationAt
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
@@ -74,7 +74,7 @@ getDouble
  (Ljava/lang/String;Ljava/lang/Double;)Ljava/lang/Double;
 getEventListeners
  <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;)Ljava/util/Collection<Lorg/apache/commons/configuration2/event/EventListener<-TT;>;>;
- <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;)Ljava/util/Collection<Lorg/apache/commons/configuration2/event/EventListener<-TT;>;>;
+ <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;)L1java/util/Collection<Lorg/apache/commons/configuration2/event/EventListener<-TT;>;>; # @Inherited(org.apache.commons.configuration2.event.BaseEventSource)
 getExpressionEngine
  ()Lorg/apache/commons/configuration2/tree/ExpressionEngine;
  ()Lorg/apache/commons/configuration2/tree/ExpressionEngine;
@@ -143,7 +143,7 @@ getString
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 getStringArray
  (Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[1Ljava/lang/String; # @Inherited(org.apache.commons.configuration2.AbstractConfiguration)
 interpolatedConfiguration
  ()Lorg/apache/commons/configuration2/Configuration;
  ()L1org/apache/commons/configuration2/Configuration; # @Inherited(org.apache.commons.configuration2.BaseHierarchicalConfiguration)

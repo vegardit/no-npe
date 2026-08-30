@@ -11,13 +11,13 @@ class org/springframework/context/annotation/ClassPathBeanDefinitionScanner
  (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;ZLorg/springframework/core/env/Environment;)V
 <init>
  (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;ZLorg/springframework/core/env/Environment;Lorg/springframework/core/io/ResourceLoader;)V
- (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;ZLorg/springframework/core/env/Environment;Lorg/springframework/core/io/ResourceLoader;)V
+ (Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;ZLorg/springframework/core/env/Environment;L0org/springframework/core/io/ResourceLoader;)V # @Generated(111)
 checkCandidate
  (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Z
  (Ljava/lang/String;Lorg/springframework/beans/factory/config/BeanDefinition;)Z
 doScan
  ([Ljava/lang/String;)Ljava/util/Set<Lorg/springframework/beans/factory/config/BeanDefinitionHolder;>;
- ([Ljava/lang/String;)L1java/util/Set<Lorg/springframework/beans/factory/config/BeanDefinitionHolder;>;
+ ([Ljava/lang/String;)L1java/util/Set<Lorg/springframework/beans/factory/config/BeanDefinitionHolder;>; # @Generated(22)
 getBeanDefinitionDefaults
  ()Lorg/springframework/beans/factory/support/BeanDefinitionDefaults;
  ()Lorg/springframework/beans/factory/support/BeanDefinitionDefaults;
@@ -26,10 +26,10 @@ getRegistry
  ()L0org/springframework/beans/factory/support/BeanDefinitionRegistry; # @Inherited(org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider)
 isCompatible
  (Lorg/springframework/beans/factory/config/BeanDefinition;Lorg/springframework/beans/factory/config/BeanDefinition;)Z
- (Lorg/springframework/beans/factory/config/BeanDefinition;Lorg/springframework/beans/factory/config/BeanDefinition;)Z
+ (L1org/springframework/beans/factory/config/BeanDefinition;Lorg/springframework/beans/factory/config/BeanDefinition;)Z # @Generated(2)
 postProcessBeanDefinition
  (Lorg/springframework/beans/factory/support/AbstractBeanDefinition;Ljava/lang/String;)V
- (Lorg/springframework/beans/factory/support/AbstractBeanDefinition;Ljava/lang/String;)V
+ (L1org/springframework/beans/factory/support/AbstractBeanDefinition;Ljava/lang/String;)V # @Generated(2)
 registerBeanDefinition
  (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)V
  (Lorg/springframework/beans/factory/config/BeanDefinitionHolder;Lorg/springframework/beans/factory/support/BeanDefinitionRegistry;)V
@@ -38,16 +38,16 @@ scan
  ([Ljava/lang/String;)I
 setAutowireCandidatePatterns
  ([Ljava/lang/String;)V
- ([Ljava/lang/String;)V
+ ([0Ljava/lang/String;)V # @Generated(2)
 setBeanDefinitionDefaults
  (Lorg/springframework/beans/factory/support/BeanDefinitionDefaults;)V
- (Lorg/springframework/beans/factory/support/BeanDefinitionDefaults;)V
+ (L0org/springframework/beans/factory/support/BeanDefinitionDefaults;)V # @Generated
 setBeanNameGenerator
  (Lorg/springframework/beans/factory/support/BeanNameGenerator;)V
- (Lorg/springframework/beans/factory/support/BeanNameGenerator;)V
+ (L0org/springframework/beans/factory/support/BeanNameGenerator;)V # @Generated
 setScopeMetadataResolver
  (Lorg/springframework/context/annotation/ScopeMetadataResolver;)V
- (Lorg/springframework/context/annotation/ScopeMetadataResolver;)V
+ (L0org/springframework/context/annotation/ScopeMetadataResolver;)V # @Generated
 setScopedProxyMode
  (Lorg/springframework/context/annotation/ScopedProxyMode;)V
  (Lorg/springframework/context/annotation/ScopedProxyMode;)V

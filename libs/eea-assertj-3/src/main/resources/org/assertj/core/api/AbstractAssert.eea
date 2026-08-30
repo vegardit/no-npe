@@ -28,7 +28,7 @@ objects
 
 <init>
  (TACTUAL;Ljava/lang/Class<*>;)V
- (TACTUAL;Ljava/lang/Class<*>;)V
+ (TACTUAL;L1java/lang/Class<*>;)V # @Generated(10)
 actual
  ()TACTUAL;
  ()TACTUAL;
@@ -37,7 +37,7 @@ areEqual
  (Ljava/lang/Object;Ljava/lang/Object;)Z
 asInstanceOf
  <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)TASSERT;
- <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)T1ASSERT; # @Inherited(org.assertj.core.api.Assert)
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(L1org/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)T1ASSERT; # @Overrides(org.assertj.core.api.Assert)
 asList
  ()Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>;
  ()L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<*>;Ljava/lang/Object;Lorg/assertj/core/api/ObjectAssert<Ljava/lang/Object;>;>; # @Inherited(org.assertj.core.api.Assert)
@@ -79,10 +79,10 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 extracting
  <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/lang/String;Lorg/assertj/core/api/AssertFactory<Ljava/lang/Object;TASSERT;>;)TASSERT;
- <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/lang/String;Lorg/assertj/core/api/AssertFactory<Ljava/lang/Object;TASSERT;>;)T1ASSERT;
+ <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/lang/String;L1org/assertj/core/api/AssertFactory<Ljava/lang/Object;TASSERT;>;)T1ASSERT; # @Generated(70)
 extracting
  <T:Ljava/lang/Object;ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/util/function/Function<-TACTUAL;+TT;>;Lorg/assertj/core/api/AssertFactory<TT;TASSERT;>;)TASSERT;
- <T:Ljava/lang/Object;ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Ljava/util/function/Function<-TACTUAL;+TT;>;Lorg/assertj/core/api/AssertFactory<TT;TASSERT;>;)T1ASSERT;
+ <T:Ljava/lang/Object;ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(L1java/util/function/Function<-TACTUAL;+TT;>;L1org/assertj/core/api/AssertFactory<TT;TASSERT;>;)T1ASSERT; # @Generated(72,116)
 failWithActualExpectedAndMessage
  (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
  (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
@@ -91,7 +91,7 @@ failWithMessage
  (Ljava/lang/String;[Ljava/lang/Object;)V
 failure
  (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/AssertionError;
- (Ljava/lang/String;[Ljava/lang/Object;)L1java/lang/AssertionError;
+ (Ljava/lang/String;[Ljava/lang/Object;)L1java/lang/AssertionError; # @Generated(40)
 failureWithActualExpected
  (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/AssertionError;
  (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/AssertionError;
@@ -145,7 +145,7 @@ isInstanceOfAny
  ([Ljava/lang/Class<*>;)T1SELF; # @Inherited(org.assertj.core.api.Assert)
 isInstanceOfSatisfying
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<TT;>;)TSELF;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<TT;>;)T1SELF; # @Inherited(org.assertj.core.api.Assert)
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;L1java/util/function/Consumer<TT;>;)T1SELF; # @Overrides(org.assertj.core.api.Assert)
 isNot
  (Lorg/assertj/core/api/Condition<-TACTUAL;>;)TSELF;
  (Lorg/assertj/core/api/Condition<-TACTUAL;>;)T1SELF; # @Inherited(org.assertj.core.api.ExtensionPoints)
@@ -190,7 +190,7 @@ matches
  (Ljava/util/function/Predicate<-TACTUAL;>;Ljava/lang/String;)T1SELF;
 newListAssertInstance
  <E:Ljava/lang/Object;>(Ljava/util/List<+TE;>;)Lorg/assertj/core/api/AbstractListAssert<*Ljava/util/List<+TE;>;TE;Lorg/assertj/core/api/ObjectAssert<TE;>;>;
- <E:Ljava/lang/Object;>(Ljava/util/List<+TE;>;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<+TE;>;TE;Lorg/assertj/core/api/ObjectAssert<TE;>;>;
+ <E:Ljava/lang/Object;>(Ljava/util/List<+TE;>;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<+TE;>;TE;Lorg/assertj/core/api/ObjectAssert<TE;>;>; # @Generated(47)
 overridingErrorMessage
  (Ljava/lang/String;[Ljava/lang/Object;)TSELF;
  (Ljava/lang/String;[Ljava/lang/Object;)T1SELF;
@@ -238,10 +238,10 @@ usingEquals
  (Ljava/util/function/BiPredicate<-TACTUAL;-TACTUAL;>;Ljava/lang/String;)T1SELF; # @Inherited(org.assertj.core.api.Assert)
 usingRecursiveAssertion
  ()Lorg/assertj/core/api/RecursiveAssertionAssert;
- ()L1org/assertj/core/api/RecursiveAssertionAssert;
+ ()L1org/assertj/core/api/RecursiveAssertionAssert; # @Generated
 usingRecursiveAssertion
  (Lorg/assertj/core/api/recursive/assertion/RecursiveAssertionConfiguration;)Lorg/assertj/core/api/RecursiveAssertionAssert;
- (Lorg/assertj/core/api/recursive/assertion/RecursiveAssertionConfiguration;)L1org/assertj/core/api/RecursiveAssertionAssert;
+ (Lorg/assertj/core/api/recursive/assertion/RecursiveAssertionConfiguration;)L1org/assertj/core/api/RecursiveAssertionAssert; # @Generated(77)
 usingRecursiveComparison
  ()Lorg/assertj/core/api/RecursiveComparisonAssert<*>;
  ()Lorg/assertj/core/api/RecursiveComparisonAssert<*>;

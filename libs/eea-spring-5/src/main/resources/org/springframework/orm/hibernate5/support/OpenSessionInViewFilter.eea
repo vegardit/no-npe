@@ -2,11 +2,11 @@ class org/springframework/orm/hibernate5/support/OpenSessionInViewFilter
 
 DEFAULT_SESSION_FACTORY_BEAN_NAME
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 doFilterInternal
  (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/FilterChain;)V
- (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/FilterChain;)V
+ (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;L1javax/servlet/FilterChain;)V # @Generated(81)
 getSessionFactoryBeanName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -18,7 +18,7 @@ lookupSessionFactory
  (Ljavax/servlet/http/HttpServletRequest;)Lorg/hibernate/SessionFactory;
 openSession
  (Lorg/hibernate/SessionFactory;)Lorg/hibernate/Session;
- (Lorg/hibernate/SessionFactory;)Lorg/hibernate/Session;
+ (L1org/hibernate/SessionFactory;)Lorg/hibernate/Session; # @Generated(2)
 setSessionFactoryBeanName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

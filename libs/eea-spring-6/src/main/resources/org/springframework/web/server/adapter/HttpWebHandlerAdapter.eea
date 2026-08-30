@@ -5,19 +5,19 @@ class org/springframework/web/server/adapter/HttpWebHandlerAdapter
  (Lorg/springframework/web/server/WebHandler;)V
 createExchange
  (Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;)Lorg/springframework/web/server/ServerWebExchange;
- (Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;)L1org/springframework/web/server/ServerWebExchange;
+ (Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;)L1org/springframework/web/server/ServerWebExchange; # @Generated(124)
 formatRequest
  (Lorg/springframework/http/server/reactive/ServerHttpRequest;)Ljava/lang/String;
- (Lorg/springframework/http/server/reactive/ServerHttpRequest;)L1java/lang/String;
+ (L1org/springframework/http/server/reactive/ServerHttpRequest;)L1java/lang/String; # @Generated(2,63)
 getApplicationContext
  ()Lorg/springframework/context/ApplicationContext;
- ()L0org/springframework/context/ApplicationContext;
+ ()L0org/springframework/context/ApplicationContext; # @Generated
 getCodecConfigurer
  ()Lorg/springframework/http/codec/ServerCodecConfigurer;
  ()Lorg/springframework/http/codec/ServerCodecConfigurer;
 getForwardedHeaderTransformer
  ()Lorg/springframework/web/server/adapter/ForwardedHeaderTransformer;
- ()L0org/springframework/web/server/adapter/ForwardedHeaderTransformer;
+ ()L0org/springframework/web/server/adapter/ForwardedHeaderTransformer; # @Generated
 getLocaleContextResolver
  ()Lorg/springframework/web/server/i18n/LocaleContextResolver;
  ()Lorg/springframework/web/server/i18n/LocaleContextResolver;
@@ -32,7 +32,7 @@ getSessionManager
  ()Lorg/springframework/web/server/session/WebSessionManager;
 handle
  (Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
- (Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
+ (Lorg/springframework/http/server/reactive/ServerHttpRequest;L1org/springframework/http/server/reactive/ServerHttpResponse;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>; # @Generated(62)
 setApplicationContext
  (Lorg/springframework/context/ApplicationContext;)V
  (Lorg/springframework/context/ApplicationContext;)V
@@ -41,7 +41,7 @@ setCodecConfigurer
  (Lorg/springframework/http/codec/ServerCodecConfigurer;)V
 setForwardedHeaderTransformer
  (Lorg/springframework/web/server/adapter/ForwardedHeaderTransformer;)V
- (Lorg/springframework/web/server/adapter/ForwardedHeaderTransformer;)V
+ (L0org/springframework/web/server/adapter/ForwardedHeaderTransformer;)V # @Generated
 setLocaleContextResolver
  (Lorg/springframework/web/server/i18n/LocaleContextResolver;)V
  (Lorg/springframework/web/server/i18n/LocaleContextResolver;)V

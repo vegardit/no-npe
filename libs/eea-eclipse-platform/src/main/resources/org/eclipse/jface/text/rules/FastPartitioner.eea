@@ -21,7 +21,7 @@ computePartitioning
  (II)[1L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentPartitioner)
 computePartitioning
  (IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
- (IIZ)[L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension2)
+ (IIZ)[1L1org/eclipse/jface/text/ITypedRegion; # @Overrides(org.eclipse.jface.text.IDocumentPartitionerExtension2)
 connect
  (Lorg/eclipse/jface/text/IDocument;)V
  (L1org/eclipse/jface/text/IDocument;)V # @Inherited(org.eclipse.jface.text.IDocumentPartitioner)
@@ -39,7 +39,7 @@ documentChanged2
  (L1org/eclipse/jface/text/DocumentEvent;)L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension)
 findClosestPosition
  (I)Lorg/eclipse/jface/text/TypedPosition;
- (I)L0org/eclipse/jface/text/TypedPosition;
+ (I)L0org/eclipse/jface/text/TypedPosition; # @Generated
 getActiveRewriteSession
  ()Lorg/eclipse/jface/text/DocumentRewriteSession;
  ()L0org/eclipse/jface/text/DocumentRewriteSession; # @Inherited(org.eclipse.jface.text.IDocumentPartitionerExtension3)
@@ -66,7 +66,7 @@ getPositions
  ()[Lorg/eclipse/jface/text/Position;
 getTokenContentType
  (Lorg/eclipse/jface/text/rules/IToken;)Ljava/lang/String;
- (Lorg/eclipse/jface/text/rules/IToken;)L0java/lang/String;
+ (L1org/eclipse/jface/text/rules/IToken;)L0java/lang/String; # @Generated(2,40)
 isSupportedContentType
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z

@@ -2,16 +2,16 @@ class org/springframework/web/filter/AbstractRequestLoggingFilter
 
 DEFAULT_AFTER_MESSAGE_PREFIX
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 DEFAULT_AFTER_MESSAGE_SUFFIX
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 DEFAULT_BEFORE_MESSAGE_PREFIX
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 DEFAULT_BEFORE_MESSAGE_SUFFIX
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 afterRequest
  (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)V
@@ -21,19 +21,19 @@ beforeRequest
  (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;)V
 createMessage
  (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
- (Ljakarta/servlet/http/HttpServletRequest;Ljava/lang/String;Ljava/lang/String;)L1java/lang/String;
+ (L1jakarta/servlet/http/HttpServletRequest;Ljava/lang/String;Ljava/lang/String;)L1java/lang/String; # @Generated(2,80)
 doFilterInternal
  (Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;Ljakarta/servlet/FilterChain;)V
- (Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;Ljakarta/servlet/FilterChain;)V
+ (Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;L1jakarta/servlet/FilterChain;)V # @Generated(85)
 getHeaderPredicate
  ()Ljava/util/function/Predicate<Ljava/lang/String;>;
- ()L0java/util/function/Predicate<Ljava/lang/String;>;
+ ()L0java/util/function/Predicate<Ljava/lang/String;>; # @Generated(3)
 getMessagePayload
  (Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;
- (Ljakarta/servlet/http/HttpServletRequest;)L0java/lang/String;
+ (Ljakarta/servlet/http/HttpServletRequest;)L0java/lang/String; # @Generated(44)
 getQueryParamPredicate
  ()Ljava/util/function/Predicate<Ljava/lang/String;>;
- ()Ljava/util/function/Predicate<Ljava/lang/String;>;
+ ()L0java/util/function/Predicate<Ljava/lang/String;>; # @Generated(3)
 setAfterMessagePrefix
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -48,10 +48,10 @@ setBeforeMessageSuffix
  (Ljava/lang/String;)V
 setHeaderPredicate
  (Ljava/util/function/Predicate<Ljava/lang/String;>;)V
- (Ljava/util/function/Predicate<Ljava/lang/String;>;)V
+ (L0java/util/function/Predicate<Ljava/lang/String;>;)V # @Generated(2)
 setQueryParamPredicate
  (Ljava/util/function/Predicate<Ljava/lang/String;>;)V
- (Ljava/util/function/Predicate<Ljava/lang/String;>;)V
+ (L0java/util/function/Predicate<Ljava/lang/String;>;)V # @Generated(2)
 shouldLog
  (Ljakarta/servlet/http/HttpServletRequest;)Z
  (Ljakarta/servlet/http/HttpServletRequest;)Z

@@ -6,7 +6,7 @@ super org/springframework/core/codec/AbstractSingleValueEncoder
 
 canEncode
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
+ (L1org/springframework/core/ResolvableType;L0org/springframework/util/MimeType;)Z # @Overrides(org.springframework.core.codec.AbstractEncoder)
 encode
  (Lorg/springframework/core/io/Resource;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
- (Lorg/springframework/core/io/Resource;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
+ (Lorg/springframework/core/io/Resource;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>; # @Generated(135,170)

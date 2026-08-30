@@ -8,7 +8,7 @@ super org/springframework/messaging/core/MessageSendingOperations
 
 CONVERSION_HINT_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 logger
  Lorg/apache/commons/logging/Log;
@@ -22,31 +22,31 @@ convertAndSend
  (Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
 convertAndSend
  (Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/springframework/messaging/core/MessagePostProcessor;)V
- (Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/springframework/messaging/core/MessagePostProcessor;)V
+ (Ljava/lang/Object;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;L0org/springframework/messaging/core/MessagePostProcessor;)V # @Inherited(org.springframework.messaging.core.MessageSendingOperations)
 convertAndSend
  (Ljava/lang/Object;Lorg/springframework/messaging/core/MessagePostProcessor;)V
- (Ljava/lang/Object;Lorg/springframework/messaging/core/MessagePostProcessor;)V
+ (Ljava/lang/Object;L0org/springframework/messaging/core/MessagePostProcessor;)V # @Inherited(org.springframework.messaging.core.MessageSendingOperations)
 convertAndSend
  (TD;Ljava/lang/Object;)V
  (TD;Ljava/lang/Object;)V
 convertAndSend
  (TD;Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
- (TD;Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+ (TD;Ljava/lang/Object;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V # @Inherited(org.springframework.messaging.core.MessageSendingOperations)
 convertAndSend
  (TD;Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/springframework/messaging/core/MessagePostProcessor;)V
- (TD;Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/springframework/messaging/core/MessagePostProcessor;)V
+ (TD;Ljava/lang/Object;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;L0org/springframework/messaging/core/MessagePostProcessor;)V # @Inherited(org.springframework.messaging.core.MessageSendingOperations)
 convertAndSend
  (TD;Ljava/lang/Object;Lorg/springframework/messaging/core/MessagePostProcessor;)V
- (TD;Ljava/lang/Object;Lorg/springframework/messaging/core/MessagePostProcessor;)V
+ (TD;Ljava/lang/Object;L0org/springframework/messaging/core/MessagePostProcessor;)V # @Inherited(org.springframework.messaging.core.MessageSendingOperations)
 doConvert
  (Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/springframework/messaging/core/MessagePostProcessor;)Lorg/springframework/messaging/Message<*>;
- (Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Lorg/springframework/messaging/core/MessagePostProcessor;)Lorg/springframework/messaging/Message<*>;
+ (Ljava/lang/Object;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;L0org/springframework/messaging/core/MessagePostProcessor;)Lorg/springframework/messaging/Message<*>; # @Generated(20,73)
 doSend
  (TD;Lorg/springframework/messaging/Message<*>;)V
  (TD;Lorg/springframework/messaging/Message<*>;)V
 getDefaultDestination
  ()TD;
- ()T0D;
+ ()T0D; # @Generated
 getMessageConverter
  ()Lorg/springframework/messaging/converter/MessageConverter;
  ()Lorg/springframework/messaging/converter/MessageConverter;
@@ -55,7 +55,7 @@ getRequiredDefaultDestination
  ()TD;
 processHeadersToSend
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(2,56)
 send
  (Lorg/springframework/messaging/Message<*>;)V
  (Lorg/springframework/messaging/Message<*>;)V
@@ -64,7 +64,7 @@ send
  (TD;Lorg/springframework/messaging/Message<*>;)V
 setDefaultDestination
  (TD;)V
- (TD;)V
+ (T0D;)V # @Generated
 setMessageConverter
  (Lorg/springframework/messaging/converter/MessageConverter;)V
  (Lorg/springframework/messaging/converter/MessageConverter;)V

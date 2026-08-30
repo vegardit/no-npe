@@ -2,7 +2,7 @@ class org/eclipse/ui/navigator/resources/ProjectExplorer
 
 VIEW_ID
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 createCommonActionGroup
  ()Lorg/eclipse/ui/actions/ActionGroup;
@@ -33,10 +33,10 @@ init
  (Lorg/eclipse/ui/IViewSite;Lorg/eclipse/ui/IMemento;)V
 initListeners
  (Lorg/eclipse/jface/viewers/TreeViewer;)V
- (Lorg/eclipse/jface/viewers/TreeViewer;)V
+ (L1org/eclipse/jface/viewers/TreeViewer;)V # @Inherited(org.eclipse.ui.navigator.CommonNavigator)
 saveState
  (Lorg/eclipse/ui/IMemento;)V
- (Lorg/eclipse/ui/IMemento;)V
+ (L1org/eclipse/ui/IMemento;)V # @Inherited(org.eclipse.ui.navigator.CommonNavigator)
 setWorkingSetLabel
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

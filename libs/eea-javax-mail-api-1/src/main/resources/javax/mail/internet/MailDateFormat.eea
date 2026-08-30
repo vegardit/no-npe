@@ -11,22 +11,22 @@ clone
  ()L1javax/mail/internet/MailDateFormat;
 format
  (Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
- (Ljava/util/Date;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
+ (Ljava/util/Date;Ljava/lang/StringBuffer;L1java/text/FieldPosition;)Ljava/lang/StringBuffer; # @Inherited(java.text.SimpleDateFormat)
 get2DigitYearStart
  ()Ljava/util/Date;
  ()L1java/util/Date; # @Inherited(java.text.SimpleDateFormat)
 parse
  (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;
- (Ljava/lang/String;Ljava/text/ParsePosition;)L0java/util/Date; # @Inherited(java.text.SimpleDateFormat)
+ (L1java/lang/String;L1java/text/ParsePosition;)L0java/util/Date; # @Overrides(java.text.SimpleDateFormat)
 set2DigitYearStart
  (Ljava/util/Date;)V
- (Ljava/util/Date;)V
+ (L1java/util/Date;)V # @Inherited(java.text.SimpleDateFormat)
 setCalendar
  (Ljava/util/Calendar;)V
  (Ljava/util/Calendar;)V
 setDateFormatSymbols
  (Ljava/text/DateFormatSymbols;)V
- (Ljava/text/DateFormatSymbols;)V
+ (L1java/text/DateFormatSymbols;)V # @Inherited(java.text.SimpleDateFormat)
 setNumberFormat
  (Ljava/text/NumberFormat;)V
  (Ljava/text/NumberFormat;)V

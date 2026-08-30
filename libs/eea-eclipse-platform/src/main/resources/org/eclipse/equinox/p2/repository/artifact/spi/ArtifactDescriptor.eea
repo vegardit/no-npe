@@ -2,16 +2,16 @@ class org/eclipse/equinox/p2/repository/artifact/spi/ArtifactDescriptor
 
 MEMBER_ARTIFACT_KEY
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 MEMBER_PROCESSING_STEPS
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 MEMBER_PROPERTIES
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 MEMBER_REPOSITORY
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 key
  Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
@@ -28,7 +28,7 @@ properties
  (Lorg/eclipse/equinox/p2/metadata/IArtifactKey;)V
 <init>
  (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
- (Lorg/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V
+ (L1org/eclipse/equinox/p2/repository/artifact/IArtifactDescriptor;)V # @Generated
 addProperties
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
@@ -40,13 +40,13 @@ getArtifactKey
  ()Lorg/eclipse/equinox/p2/metadata/IArtifactKey;
 getMember
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)Ljava/lang/Object;
+ (L1java/lang/String;)Ljava/lang/Object; # @Generated(2)
 getProcessingSteps
  ()[Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;
  ()[Lorg/eclipse/equinox/p2/repository/artifact/IProcessingStepDescriptor;
 getProperties
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
- ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/lang/String;>; # @Generated(3)
 getProperty
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;

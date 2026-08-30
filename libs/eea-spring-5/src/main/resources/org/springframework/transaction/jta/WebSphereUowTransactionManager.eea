@@ -2,17 +2,17 @@ class org/springframework/transaction/jta/WebSphereUowTransactionManager
 
 DEFAULT_UOW_MANAGER_NAME
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 <init>
  (Lcom/ibm/wsspi/uow/UOWManager;)V
  (Lcom/ibm/wsspi/uow/UOWManager;)V
 doRegisterAfterCompletionWithJtaTransaction
  (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
- (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
+ (L1org/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V # @Inherited(org.springframework.transaction.jta.JtaTransactionManager)
 execute
  <T:Ljava/lang/Object;>(Lorg/springframework/transaction/TransactionDefinition;Lorg/springframework/transaction/support/TransactionCallback<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/transaction/TransactionDefinition;Lorg/springframework/transaction/support/TransactionCallback<TT;>;)T0T; # @Inherited(org.springframework.transaction.support.CallbackPreferringPlatformTransactionManager)
+ <T:Ljava/lang/Object;>(L0org/springframework/transaction/TransactionDefinition;Lorg/springframework/transaction/support/TransactionCallback<TT;>;)T0T; # @Inherited(org.springframework.transaction.support.CallbackPreferringPlatformTransactionManager)
 lookupDefaultUowManager
  ()Lcom/ibm/wsspi/uow/UOWManager;
  ()Lcom/ibm/wsspi/uow/UOWManager;

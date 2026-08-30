@@ -10,7 +10,7 @@ uis
 
 contains
  (Ljavax/swing/JComponent;II)Z
- (Ljavax/swing/JComponent;II)Z
+ (L1javax/swing/JComponent;II)Z # @Inherited(javax.swing.plaf.ComponentUI)
 getAccessibleChild
  (Ljavax/swing/JComponent;I)Ljavax/accessibility/Accessible;
  (Ljavax/swing/JComponent;I)Ljavax/accessibility/Accessible;
@@ -25,7 +25,7 @@ getMinimumSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
 getPopup
  (Ljavax/swing/JPopupMenu;II)Ljavax/swing/Popup;
- (Ljavax/swing/JPopupMenu;II)Ljavax/swing/Popup;
+ (L1javax/swing/JPopupMenu;II)Ljavax/swing/Popup; # @Inherited(javax.swing.plaf.PopupMenuUI)
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
  (Ljavax/swing/JComponent;)L0java/awt/Dimension; # @Inherited(javax.swing.plaf.ComponentUI)
@@ -37,7 +37,7 @@ installUI
  (Ljavax/swing/JComponent;)V
 isPopupTrigger
  (Ljava/awt/event/MouseEvent;)Z
- (Ljava/awt/event/MouseEvent;)Z
+ (L1java/awt/event/MouseEvent;)Z # @Inherited(javax.swing.plaf.PopupMenuUI)
 paint
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
@@ -46,4 +46,4 @@ uninstallUI
  (Ljavax/swing/JComponent;)V
 update
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
- (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
+ (Ljava/awt/Graphics;L1javax/swing/JComponent;)V # @Inherited(javax.swing.plaf.ComponentUI)

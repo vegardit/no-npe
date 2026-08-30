@@ -6,16 +6,16 @@ super org/springframework/http/converter/HttpMessageConverter
 
 canRead
  (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.HttpMessageConverter)
 canWrite
  (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.HttpMessageConverter)
 getDefaultContentType
  ()Lorg/springframework/http/MediaType;
- ()L0org/springframework/http/MediaType;
+ ()L0org/springframework/http/MediaType; # @Generated
 getSupportedMediaTypes
  ()Ljava/util/List<Lorg/springframework/http/MediaType;>;
- ()Ljava/util/List<Lorg/springframework/http/MediaType;>;
+ ()L1java/util/List<Lorg/springframework/http/MediaType;>; # @Generated(3)
 process
  (Ljavax/imageio/ImageReadParam;)V
  (Ljavax/imageio/ImageReadParam;)V
@@ -24,13 +24,13 @@ process
  (Ljavax/imageio/ImageWriteParam;)V
 read
  (Ljava/lang/Class<+Ljava/awt/image/BufferedImage;>;Lorg/springframework/http/HttpInputMessage;)Ljava/awt/image/BufferedImage;
- (Ljava/lang/Class<+Ljava/awt/image/BufferedImage;>;Lorg/springframework/http/HttpInputMessage;)Ljava/awt/image/BufferedImage;
+ (L0java/lang/Class<+Ljava/awt/image/BufferedImage;>;L1org/springframework/http/HttpInputMessage;)Ljava/awt/image/BufferedImage; # @Generated(2,52)
 setCacheDir
  (Ljava/io/File;)V
- (Ljava/io/File;)V
+ (L1java/io/File;)V # @Generated
 setDefaultContentType
  (Lorg/springframework/http/MediaType;)V
- (Lorg/springframework/http/MediaType;)V
+ (L0org/springframework/http/MediaType;)V # @Generated
 write
  (Ljava/awt/image/BufferedImage;Lorg/springframework/http/MediaType;Lorg/springframework/http/HttpOutputMessage;)V
- (Ljava/awt/image/BufferedImage;Lorg/springframework/http/MediaType;Lorg/springframework/http/HttpOutputMessage;)V
+ (Ljava/awt/image/BufferedImage;L0org/springframework/http/MediaType;L1org/springframework/http/HttpOutputMessage;)V # @Generated(32,68)

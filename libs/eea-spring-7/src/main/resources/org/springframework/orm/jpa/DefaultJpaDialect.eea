@@ -2,22 +2,22 @@ class org/springframework/orm/jpa/DefaultJpaDialect
 
 beginTransaction
  (Ljakarta/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)Ljava/lang/Object;
- (Ljakarta/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.JpaDialect)
+ (L1jakarta/persistence/EntityManager;L1org/springframework/transaction/TransactionDefinition;)L0java/lang/Object; # @Overrides(org.springframework.orm.jpa.JpaDialect)
 cleanupTransaction
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L0java/lang/Object;)V # @Inherited(org.springframework.orm.jpa.JpaDialect)
 deriveEntityAgent
  (Ljakarta/persistence/EntityManager;Ljava/util/Map<**>;)Ljava/lang/Object;
- (Ljakarta/persistence/EntityManager;Ljava/util/Map<**>;)L0java/lang/Object;
+ (Ljakarta/persistence/EntityManager;L0java/util/Map<**>;)L0java/lang/Object; # @Generated(37,57)
 getJdbcConnection
  (Ljakarta/persistence/EntityManager;Z)Lorg/springframework/jdbc/datasource/ConnectionHandle;
  (Ljakarta/persistence/EntityManager;Z)L0org/springframework/jdbc/datasource/ConnectionHandle; # @Inherited(org.springframework.orm.jpa.JpaDialect)
 prepareFlushMode
  (Ljakarta/persistence/EntityManager;Z)Ljava/lang/Object;
- (Ljakarta/persistence/EntityManager;Z)L0java/lang/Object;
+ (Ljakarta/persistence/EntityManager;Z)L0java/lang/Object; # @Generated(39)
 prepareTransaction
  (Ljakarta/persistence/EntityManager;ZLjava/lang/String;)Ljava/lang/Object;
- (Ljakarta/persistence/EntityManager;ZLjava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.JpaDialect)
+ (Ljakarta/persistence/EntityManager;ZL0java/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.JpaDialect)
 releaseJdbcConnection
  (Lorg/springframework/jdbc/datasource/ConnectionHandle;Ljakarta/persistence/EntityManager;)V
  (Lorg/springframework/jdbc/datasource/ConnectionHandle;Ljakarta/persistence/EntityManager;)V

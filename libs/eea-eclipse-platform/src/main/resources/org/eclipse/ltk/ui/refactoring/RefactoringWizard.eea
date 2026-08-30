@@ -8,7 +8,7 @@ class org/eclipse/ltk/ui/refactoring/RefactoringWizard
  (Lorg/eclipse/ltk/core/refactoring/RefactoringContext;I)V
 addPage
  (Lorg/eclipse/jface/wizard/IWizardPage;)V
- (Lorg/eclipse/jface/wizard/IWizardPage;)V
+ (L1org/eclipse/jface/wizard/IWizardPage;)V # @Inherited(org.eclipse.jface.wizard.Wizard)
 getChange
  ()Lorg/eclipse/ltk/core/refactoring/Change;
  ()Lorg/eclipse/ltk/core/refactoring/Change;
@@ -41,7 +41,7 @@ internalIsYesNoStyle
  (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;)Z
 internalPerformFinish
  (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/PerformChangeOperation;)Lorg/eclipse/ltk/internal/ui/refactoring/FinishResult;
- (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/PerformChangeOperation;)Lorg/eclipse/ltk/internal/ui/refactoring/FinishResult;
+ (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;L1org/eclipse/ltk/core/refactoring/PerformChangeOperation;)L1org/eclipse/ltk/internal/ui/refactoring/FinishResult; # @Generated(55,113)
 internalSetChange
  (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/Change;)V
  (Lorg/eclipse/ltk/internal/ui/refactoring/InternalAPI;Lorg/eclipse/ltk/core/refactoring/Change;)V

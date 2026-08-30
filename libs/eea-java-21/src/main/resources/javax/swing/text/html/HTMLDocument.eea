@@ -2,7 +2,7 @@ class javax/swing/text/html/HTMLDocument
 
 AdditionalComments
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 <init>
  (Ljavax/swing/text/AbstractDocument$Content;Ljavax/swing/text/html/StyleSheet;)V
@@ -27,25 +27,25 @@ fireChangedUpdate
  (Ljavax/swing/event/DocumentEvent;)V
 fireUndoableEditUpdate
  (Ljavax/swing/event/UndoableEditEvent;)V
- (Ljavax/swing/event/UndoableEditEvent;)V
+ (L1javax/swing/event/UndoableEditEvent;)V # @Inherited(javax.swing.text.AbstractDocument)
 getBase
  ()Ljava/net/URL;
  ()Ljava/net/URL;
 getElement
  (Ljava/lang/String;)Ljavax/swing/text/Element;
- (Ljava/lang/String;)Ljavax/swing/text/Element;
+ (Ljava/lang/String;)L0javax/swing/text/Element; # @Generated(21)
 getElement
  (Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/Element;
  (Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/Element;
 getIterator
  (Ljavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLDocument$Iterator;
- (Ljavax/swing/text/html/HTML$Tag;)L0javax/swing/text/html/HTMLDocument$Iterator;
+ (L1javax/swing/text/html/HTML$Tag;)L0javax/swing/text/html/HTMLDocument$Iterator; # @Generated(2,35)
 getParser
  ()Ljavax/swing/text/html/HTMLEditorKit$Parser;
  ()Ljavax/swing/text/html/HTMLEditorKit$Parser;
 getReader
  (I)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;
- (I)L1javax/swing/text/html/HTMLEditorKit$ParserCallback;
+ (I)L1javax/swing/text/html/HTMLEditorKit$ParserCallback; # @Generated
 getReader
  (IIILjavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;
  (IIILjavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;
@@ -69,10 +69,10 @@ insertBeforeStart
  (Ljavax/swing/text/Element;Ljava/lang/String;)V
 insertUpdate
  (Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;Ljavax/swing/text/AttributeSet;)V
- (Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;Ljavax/swing/text/AttributeSet;)V
+ (L1javax/swing/text/AbstractDocument$DefaultDocumentEvent;Ljavax/swing/text/AttributeSet;)V # @Inherited(javax.swing.text.DefaultStyledDocument)
 processHTMLFrameHyperlinkEvent
  (Ljavax/swing/text/html/HTMLFrameHyperlinkEvent;)V
- (Ljavax/swing/text/html/HTMLFrameHyperlinkEvent;)V
+ (L1javax/swing/text/html/HTMLFrameHyperlinkEvent;)V # @Generated
 setBase
  (Ljava/net/URL;)V
  (Ljava/net/URL;)V
@@ -84,7 +84,7 @@ setOuterHTML
  (Ljavax/swing/text/Element;Ljava/lang/String;)V
 setParagraphAttributes
  (IILjavax/swing/text/AttributeSet;Z)V
- (IILjavax/swing/text/AttributeSet;Z)V
+ (IIL1javax/swing/text/AttributeSet;Z)V # @Inherited(javax.swing.text.DefaultStyledDocument)
 setParser
  (Ljavax/swing/text/html/HTMLEditorKit$Parser;)V
  (Ljavax/swing/text/html/HTMLEditorKit$Parser;)V

@@ -2,38 +2,38 @@ class org/springframework/web/ErrorResponse
 
 builder
  (Ljava/lang/Throwable;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;)Lorg/springframework/web/ErrorResponse$Builder;
- (Ljava/lang/Throwable;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;)Lorg/springframework/web/ErrorResponse$Builder;
+ (Ljava/lang/Throwable;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;)L1org/springframework/web/ErrorResponse$Builder; # @Generated(83)
 builder
  (Ljava/lang/Throwable;Lorg/springframework/http/ProblemDetail;)Lorg/springframework/web/ErrorResponse$Builder;
- (Ljava/lang/Throwable;Lorg/springframework/http/ProblemDetail;)L1org/springframework/web/ErrorResponse$Builder;
+ (Ljava/lang/Throwable;Lorg/springframework/http/ProblemDetail;)L1org/springframework/web/ErrorResponse$Builder; # @Generated(64)
 create
  (Ljava/lang/Throwable;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;)Lorg/springframework/web/ErrorResponse;
  (Ljava/lang/Throwable;Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;)L1org/springframework/web/ErrorResponse;
 getDefaultDetailMessageCode
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/Class<*>;Ljava/lang/String;)L1java/lang/String;
+ (L1java/lang/Class<*>;L0java/lang/String;)L1java/lang/String; # @Generated(2,22,41)
 getDefaultTitleMessageCode
  (Ljava/lang/Class<*>;)Ljava/lang/String;
- (Ljava/lang/Class<*>;)L1java/lang/String;
+ (L1java/lang/Class<*>;)L1java/lang/String; # @Generated(2,23)
 getDefaultTypeMessageCode
  (Ljava/lang/Class<*>;)Ljava/lang/String;
- (Ljava/lang/Class<*>;)L1java/lang/String;
+ (L1java/lang/Class<*>;)L1java/lang/String; # @Generated(2,23)
 
 getBody
  ()Lorg/springframework/http/ProblemDetail;
  ()Lorg/springframework/http/ProblemDetail;
 getDetailMessageArguments
  ()[Ljava/lang/Object;
- ()[0Ljava/lang/Object;
+ ()[0Ljava/lang/Object; # @Generated(3)
 getDetailMessageArguments
  (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)[Ljava/lang/Object;
- (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)[0Ljava/lang/Object;
+ (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)[0Ljava/lang/Object; # @Generated(64)
 getDetailMessageCode
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getHeaders
  ()Lorg/springframework/http/HttpHeaders;
- ()Lorg/springframework/http/HttpHeaders;
+ ()L1org/springframework/http/HttpHeaders; # @Generated
 getStatusCode
  ()Lorg/springframework/http/HttpStatusCode;
  ()Lorg/springframework/http/HttpStatusCode;
@@ -45,4 +45,4 @@ getTypeMessageCode
  ()Ljava/lang/String;
 updateAndGetBody
  (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)Lorg/springframework/http/ProblemDetail;
- (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)Lorg/springframework/http/ProblemDetail;
+ (L0org/springframework/context/MessageSource;Ljava/util/Locale;)Lorg/springframework/http/ProblemDetail; # @Generated(2)

@@ -5,7 +5,7 @@ getResourceSuffix
  ()L1java/lang/String; # @Inherited(org.springframework.test.context.web.GenericXmlWebContextLoader)
 getResourceSuffixes
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Inherited(org.springframework.test.context.support.AbstractContextLoader)
 loadBeanDefinitions
  (Lorg/springframework/web/context/support/GenericWebApplicationContext;Lorg/springframework/test/context/web/WebMergedContextConfiguration;)V
- (Lorg/springframework/web/context/support/GenericWebApplicationContext;Lorg/springframework/test/context/web/WebMergedContextConfiguration;)V
+ (Lorg/springframework/web/context/support/GenericWebApplicationContext;L1org/springframework/test/context/web/WebMergedContextConfiguration;)V # @Inherited(org.springframework.test.context.web.GenericXmlWebContextLoader)

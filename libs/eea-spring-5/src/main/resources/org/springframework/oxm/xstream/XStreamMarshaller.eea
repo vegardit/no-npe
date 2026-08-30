@@ -2,7 +2,7 @@ class org/springframework/oxm/xstream/XStreamMarshaller
 
 DEFAULT_ENCODING
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 buildXStream
  ()Lcom/thoughtworks/xstream/XStream;
@@ -12,10 +12,10 @@ configureXStream
  (Lcom/thoughtworks/xstream/XStream;)V
 constructXStream
  ()Lcom/thoughtworks/xstream/XStream;
- ()Lcom/thoughtworks/xstream/XStream;
+ ()L1com/thoughtworks/xstream/XStream; # @Generated
 convertXStreamException
  (Ljava/lang/Exception;Z)Lorg/springframework/oxm/XmlMappingException;
- (Ljava/lang/Exception;Z)L1org/springframework/oxm/XmlMappingException;
+ (Ljava/lang/Exception;Z)L1org/springframework/oxm/XmlMappingException; # @Generated(25)
 customizeXStream
  (Lcom/thoughtworks/xstream/XStream;)V
  (Lcom/thoughtworks/xstream/XStream;)V
@@ -33,16 +33,16 @@ marshalOutputStream
  (Ljava/lang/Object;Ljava/io/OutputStream;)V
 marshalOutputStream
  (Ljava/lang/Object;Ljava/io/OutputStream;Lcom/thoughtworks/xstream/converters/DataHolder;)V
- (Ljava/lang/Object;Ljava/io/OutputStream;Lcom/thoughtworks/xstream/converters/DataHolder;)V
+ (Ljava/lang/Object;Ljava/io/OutputStream;L0com/thoughtworks/xstream/converters/DataHolder;)V # @Generated(42)
 marshalSaxHandlers
  (Ljava/lang/Object;Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;)V
- (Ljava/lang/Object;Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;)V
+ (Ljava/lang/Object;Lorg/xml/sax/ContentHandler;L0org/xml/sax/ext/LexicalHandler;)V # @Inherited(org.springframework.oxm.support.AbstractMarshaller)
 marshalWriter
  (Ljava/lang/Object;Ljava/io/Writer;)V
  (Ljava/lang/Object;Ljava/io/Writer;)V
 marshalWriter
  (Ljava/lang/Object;Ljava/io/Writer;Lcom/thoughtworks/xstream/converters/DataHolder;)V
- (Ljava/lang/Object;Ljava/io/Writer;Lcom/thoughtworks/xstream/converters/DataHolder;)V
+ (Ljava/lang/Object;Ljava/io/Writer;L0com/thoughtworks/xstream/converters/DataHolder;)V # @Generated(36)
 marshalXmlEventWriter
  (Ljava/lang/Object;Ljavax/xml/stream/XMLEventWriter;)V
  (Ljava/lang/Object;Ljavax/xml/stream/XMLEventWriter;)V
@@ -123,19 +123,19 @@ unmarshalInputStream
  (Ljava/io/InputStream;)Ljava/lang/Object;
 unmarshalInputStream
  (Ljava/io/InputStream;Lcom/thoughtworks/xstream/converters/DataHolder;)Ljava/lang/Object;
- (Ljava/io/InputStream;Lcom/thoughtworks/xstream/converters/DataHolder;)Ljava/lang/Object;
+ (Ljava/io/InputStream;L0com/thoughtworks/xstream/converters/DataHolder;)Ljava/lang/Object; # @Generated(23)
 unmarshalReader
  (Ljava/io/Reader;)Ljava/lang/Object;
  (Ljava/io/Reader;)Ljava/lang/Object;
 unmarshalReader
  (Ljava/io/Reader;Lcom/thoughtworks/xstream/converters/DataHolder;)Ljava/lang/Object;
- (Ljava/io/Reader;Lcom/thoughtworks/xstream/converters/DataHolder;)Ljava/lang/Object;
+ (Ljava/io/Reader;L0com/thoughtworks/xstream/converters/DataHolder;)Ljava/lang/Object; # @Generated(18)
 unmarshalSaxReader
  (Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)Ljava/lang/Object;
  (Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)Ljava/lang/Object;
 unmarshalStreamSource
  (Ljavax/xml/transform/stream/StreamSource;)Ljava/lang/Object;
- (Ljavax/xml/transform/stream/StreamSource;)Ljava/lang/Object;
+ (L1javax/xml/transform/stream/StreamSource;)Ljava/lang/Object; # @Inherited(org.springframework.oxm.support.AbstractMarshaller)
 unmarshalXmlEventReader
  (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;
  (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;

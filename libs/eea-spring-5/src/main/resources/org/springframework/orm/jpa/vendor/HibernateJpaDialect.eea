@@ -2,25 +2,25 @@ class org/springframework/orm/jpa/vendor/HibernateJpaDialect
 
 beginTransaction
  (Ljavax/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)Ljava/lang/Object;
- (Ljavax/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
+ (L1javax/persistence/EntityManager;L1org/springframework/transaction/TransactionDefinition;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 cleanupTransaction
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L0java/lang/Object;)V # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 convertHibernateAccessException
  (Lorg/hibernate/HibernateException;)Lorg/springframework/dao/DataAccessException;
- (Lorg/hibernate/HibernateException;)Lorg/springframework/dao/DataAccessException;
+ (Lorg/hibernate/HibernateException;)L1org/springframework/dao/DataAccessException; # @Generated(37)
 getJdbcConnection
  (Ljavax/persistence/EntityManager;Z)Lorg/springframework/jdbc/datasource/ConnectionHandle;
  (Ljavax/persistence/EntityManager;Z)L0org/springframework/jdbc/datasource/ConnectionHandle; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 getSession
  (Ljavax/persistence/EntityManager;)Lorg/hibernate/engine/spi/SessionImplementor;
- (Ljavax/persistence/EntityManager;)Lorg/hibernate/engine/spi/SessionImplementor;
+ (L1javax/persistence/EntityManager;)Lorg/hibernate/engine/spi/SessionImplementor; # @Generated(2)
 prepareFlushMode
  (Lorg/hibernate/Session;Z)Lorg/hibernate/FlushMode;
- (Lorg/hibernate/Session;Z)L0org/hibernate/FlushMode;
+ (L1org/hibernate/Session;Z)L0org/hibernate/FlushMode; # @Generated(2,27)
 prepareTransaction
  (Ljavax/persistence/EntityManager;ZLjava/lang/String;)Ljava/lang/Object;
- (Ljavax/persistence/EntityManager;ZLjava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
+ (Ljavax/persistence/EntityManager;ZL0java/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 setJdbcExceptionTranslator
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V

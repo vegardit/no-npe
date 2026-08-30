@@ -2,64 +2,64 @@ class org/springframework/jmx/export/assembler/AbstractReflectiveMBeanInfoAssemb
 
 FIELD_CLASS
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_CURRENCY_TIME_LIMIT
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_DEFAULT
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_DISPLAY_NAME
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_GET_METHOD
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_LOG
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_LOG_FILE
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_METRIC_CATEGORY
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_METRIC_TYPE
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_PERSIST_LOCATION
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_PERSIST_NAME
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_PERSIST_PERIOD
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_PERSIST_POLICY
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_ROLE
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_SET_METHOD
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_UNITS
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FIELD_VISIBILITY
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ROLE_GETTER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ROLE_OPERATION
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ROLE_SETTER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 applyCurrencyTimeLimit
  (Ljavax/management/Descriptor;I)V
@@ -69,10 +69,10 @@ applyDefaultCurrencyTimeLimit
  (Ljavax/management/Descriptor;)V
 createModelMBeanOperationInfo
  (Ljava/lang/reflect/Method;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/modelmbean/ModelMBeanOperationInfo;
- (Ljava/lang/reflect/Method;Ljava/lang/String;Ljava/lang/String;)L1javax/management/modelmbean/ModelMBeanOperationInfo;
+ (Ljava/lang/reflect/Method;Ljava/lang/String;Ljava/lang/String;)L1javax/management/modelmbean/ModelMBeanOperationInfo; # @Generated(65)
 getAttributeDescription
  (Ljava/beans/PropertyDescriptor;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/beans/PropertyDescriptor;Ljava/lang/String;)Ljava/lang/String;
+ (L1java/beans/PropertyDescriptor;Ljava/lang/String;)Ljava/lang/String; # @Generated(2)
 getAttributeInfo
  (Ljava/lang/Object;Ljava/lang/String;)[Ljavax/management/modelmbean/ModelMBeanAttributeInfo;
  (Ljava/lang/Object;Ljava/lang/String;)[Ljavax/management/modelmbean/ModelMBeanAttributeInfo;
@@ -81,19 +81,19 @@ getClassForDescriptor
  (Ljava/lang/Object;)Ljava/lang/Class<*>;
 getDefaultCurrencyTimeLimit
  ()Ljava/lang/Integer;
- ()L0java/lang/Integer;
+ ()L0java/lang/Integer; # @Generated
 getOperationDescription
  (Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String; # @Generated(2)
 getOperationInfo
  (Ljava/lang/Object;Ljava/lang/String;)[Ljavax/management/modelmbean/ModelMBeanOperationInfo;
  (Ljava/lang/Object;Ljava/lang/String;)[Ljavax/management/modelmbean/ModelMBeanOperationInfo;
 getOperationParameters
  (Ljava/lang/reflect/Method;Ljava/lang/String;)[Ljavax/management/MBeanParameterInfo;
- (Ljava/lang/reflect/Method;Ljava/lang/String;)[1Ljavax/management/MBeanParameterInfo;
+ (Ljava/lang/reflect/Method;Ljava/lang/String;)[1Ljavax/management/MBeanParameterInfo; # @Generated(47)
 getParameterNameDiscoverer
  ()Lorg/springframework/core/ParameterNameDiscoverer;
- ()L0org/springframework/core/ParameterNameDiscoverer;
+ ()L0org/springframework/core/ParameterNameDiscoverer; # @Generated
 includeOperation
  (Ljava/lang/reflect/Method;Ljava/lang/String;)Z
  (Ljava/lang/reflect/Method;Ljava/lang/String;)Z
@@ -105,7 +105,7 @@ includeWriteAttribute
  (Ljava/lang/reflect/Method;Ljava/lang/String;)Z
 populateAttributeDescriptor
  (Ljavax/management/Descriptor;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/String;)V
- (Ljavax/management/Descriptor;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/String;)V
+ (Ljavax/management/Descriptor;L0java/lang/reflect/Method;L0java/lang/reflect/Method;Ljava/lang/String;)V # @Generated(31,57)
 populateMBeanDescriptor
  (Ljavax/management/Descriptor;Ljava/lang/Object;Ljava/lang/String;)V
  (Ljavax/management/Descriptor;Ljava/lang/Object;Ljava/lang/String;)V
@@ -114,7 +114,7 @@ populateOperationDescriptor
  (Ljavax/management/Descriptor;Ljava/lang/reflect/Method;Ljava/lang/String;)V
 setDefaultCurrencyTimeLimit
  (Ljava/lang/Integer;)V
- (Ljava/lang/Integer;)V
+ (L0java/lang/Integer;)V # @Generated
 setParameterNameDiscoverer
  (Lorg/springframework/core/ParameterNameDiscoverer;)V
- (Lorg/springframework/core/ParameterNameDiscoverer;)V
+ (L0org/springframework/core/ParameterNameDiscoverer;)V # @Generated

@@ -11,7 +11,7 @@ addSelectionListener
  (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/events/SelectionListener;)V
 addTreeListener
  (Lorg/eclipse/jface/viewers/ITreeViewerListener;)V
- (L1org/eclipse/jface/viewers/ITreeViewerListener;)V
+ (L1org/eclipse/jface/viewers/ITreeViewerListener;)V # @Generated
 addTreeListener
  (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/events/TreeListener;)V
  (Lorg/eclipse/swt/widgets/Control;Lorg/eclipse/swt/events/TreeListener;)V
@@ -20,7 +20,7 @@ assertContentProviderType
  (Lorg/eclipse/jface/viewers/IContentProvider;)V
 associate
  (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Item;)V
- (Ljava/lang/Object;Lorg/eclipse/swt/widgets/Item;)V
+ (Ljava/lang/Object;L1org/eclipse/swt/widgets/Item;)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
 buildLabel
  (Lorg/eclipse/jface/viewers/ViewerLabel;Ljava/lang/Object;)V
  (Lorg/eclipse/jface/viewers/ViewerLabel;Ljava/lang/Object;)V
@@ -41,16 +41,16 @@ createViewerEditor
  ()L0org/eclipse/jface/viewers/ColumnViewerEditor; # @Overrides(org.eclipse.jface.viewers.ColumnViewer)
 disassociate
  (Lorg/eclipse/swt/widgets/Item;)V
- (Lorg/eclipse/swt/widgets/Item;)V
+ (L1org/eclipse/swt/widgets/Item;)V # @Inherited(org.eclipse.jface.viewers.ColumnViewer)
 doFindInputItem
  (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
- (Ljava/lang/Object;)L0org/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;)L0org/eclipse/swt/widgets/Widget; # @Generated(21)
 doFindItem
  (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
- (Ljava/lang/Object;)L0org/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;)L0org/eclipse/swt/widgets/Widget; # @Generated(21)
 doUpdateItem
  (Lorg/eclipse/swt/widgets/Item;Ljava/lang/Object;)V
- (Lorg/eclipse/swt/widgets/Item;Ljava/lang/Object;)V
+ (L1org/eclipse/swt/widgets/Item;Ljava/lang/Object;)V # @Generated(2)
 doUpdateItem
  (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;Z)V
  (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;Z)V
@@ -77,22 +77,22 @@ getChildren
  (Lorg/eclipse/swt/widgets/Widget;[Ljava/lang/Object;)[Lorg/eclipse/swt/widgets/Item;
 getColumnViewerOwner
  (I)Lorg/eclipse/swt/widgets/Widget;
- (I)L0org/eclipse/swt/widgets/Widget;
+ (I)L0org/eclipse/swt/widgets/Widget; # @Generated
 getExpanded
  (Lorg/eclipse/swt/widgets/Item;)Z
  (Lorg/eclipse/swt/widgets/Item;)Z
 getExpandedElements
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object; # @Generated(3)
 getExpandedState
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
 getExpandedTreePaths
  ()[Lorg/eclipse/jface/viewers/TreePath;
- ()[Lorg/eclipse/jface/viewers/TreePath;
+ ()[1Lorg/eclipse/jface/viewers/TreePath; # @Generated(3)
 getItemAt
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/widgets/Item;
- (Lorg/eclipse/swt/graphics/Point;)L0org/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/graphics/Point;)L0org/eclipse/swt/widgets/Item; # @Generated(35)
 getItemCount
  (Lorg/eclipse/swt/widgets/Control;)I
  (Lorg/eclipse/swt/widgets/Control;)I
@@ -104,16 +104,16 @@ getItems
  (Lorg/eclipse/swt/widgets/Item;)[Lorg/eclipse/swt/widgets/Item;
 getNextItem
  (Lorg/eclipse/swt/widgets/Item;Z)Lorg/eclipse/swt/widgets/Item;
- (Lorg/eclipse/swt/widgets/Item;Z)L0org/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Item;Z)L0org/eclipse/swt/widgets/Item; # @Generated(34)
 getParentElement
  (Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;)L0java/lang/Object;
+ (Ljava/lang/Object;)L0java/lang/Object; # @Generated(21)
 getParentItem
  (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/widgets/Item;
  (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/widgets/Item;
 getPreviousItem
  (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/swt/widgets/Item;
- (Lorg/eclipse/swt/widgets/Item;)L0org/eclipse/swt/widgets/Item;
+ (Lorg/eclipse/swt/widgets/Item;)L0org/eclipse/swt/widgets/Item; # @Generated(33)
 getRawChildren
  (Ljava/lang/Object;)[Ljava/lang/Object;
  (Ljava/lang/Object;)[1Ljava/lang/Object; # @Inherited(org.eclipse.jface.viewers.ColumnViewer)
@@ -125,7 +125,7 @@ getSelection
  (Lorg/eclipse/swt/widgets/Control;)[Lorg/eclipse/swt/widgets/Item;
 getSelectionFromWidget
  ()Ljava/util/List;
- ()Ljava/util/List;
+ ()L1java/util/List; # @Generated
 getSortedChildren
  (Ljava/lang/Object;)[Ljava/lang/Object;
  (Ljava/lang/Object;)[1Ljava/lang/Object; # @Inherited(org.eclipse.jface.viewers.ColumnViewer)
@@ -134,13 +134,13 @@ getStructuredSelection
  ()Lorg/eclipse/jface/viewers/ITreeSelection;
 getTreePathFromItem
  (Lorg/eclipse/swt/widgets/Item;)Lorg/eclipse/jface/viewers/TreePath;
- (Lorg/eclipse/swt/widgets/Item;)L1org/eclipse/jface/viewers/TreePath;
+ (Lorg/eclipse/swt/widgets/Item;)L1org/eclipse/jface/viewers/TreePath; # @Generated(33)
 getViewerRowFromItem
  (Lorg/eclipse/swt/widgets/Widget;)Lorg/eclipse/jface/viewers/ViewerRow;
- (Lorg/eclipse/swt/widgets/Widget;)L0org/eclipse/jface/viewers/ViewerRow;
+ (Lorg/eclipse/swt/widgets/Widget;)L0org/eclipse/jface/viewers/ViewerRow; # @Generated(35)
 getVisibleExpandedElements
  ()[Ljava/lang/Object;
- ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object; # @Generated(3)
 handleDoubleSelect
  (Lorg/eclipse/swt/events/SelectionEvent;)V
  (Lorg/eclipse/swt/events/SelectionEvent;)V
@@ -170,7 +170,7 @@ internalCollapseToLevel
  (Lorg/eclipse/swt/widgets/Widget;I)V
 internalExpand
  (Ljava/lang/Object;Z)Lorg/eclipse/swt/widgets/Widget;
- (Ljava/lang/Object;Z)L0org/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;Z)L0org/eclipse/swt/widgets/Widget; # @Generated(22)
 internalExpandToLevel
  (Lorg/eclipse/swt/widgets/Widget;I)V
  (Lorg/eclipse/swt/widgets/Widget;I)V
@@ -179,13 +179,13 @@ internalFindItems
  (Ljava/lang/Object;)[Lorg/eclipse/swt/widgets/Widget;
 internalGetWidgetToSelect
  (Ljava/lang/Object;)Lorg/eclipse/swt/widgets/Widget;
- (Ljava/lang/Object;)L0org/eclipse/swt/widgets/Widget;
+ (Ljava/lang/Object;)L0org/eclipse/swt/widgets/Widget; # @Generated(21)
 internalInitializeTree
  (Lorg/eclipse/swt/widgets/Control;)V
  (Lorg/eclipse/swt/widgets/Control;)V
 internalIsInputOrEmptyPath
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L1java/lang/Object;)Z # @Generated
 internalRefresh
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
@@ -206,7 +206,7 @@ isExpandable
  (Ljava/lang/Object;)Z
 isSameSelection
  (Ljava/util/List<Lorg/eclipse/swt/widgets/Item;>;[Lorg/eclipse/swt/widgets/Item;)Z
- (Ljava/util/List<Lorg/eclipse/swt/widgets/Item;>;[Lorg/eclipse/swt/widgets/Item;)Z
+ (L1java/util/List<Lorg/eclipse/swt/widgets/Item;>;[Lorg/eclipse/swt/widgets/Item;)Z # @Generated(2)
 newItem
  (Lorg/eclipse/swt/widgets/Widget;II)Lorg/eclipse/swt/widgets/Item;
  (Lorg/eclipse/swt/widgets/Widget;II)Lorg/eclipse/swt/widgets/Item;
@@ -224,7 +224,7 @@ removeAll
  (Lorg/eclipse/swt/widgets/Control;)V
 removeTreeListener
  (Lorg/eclipse/jface/viewers/ITreeViewerListener;)V
- (L1org/eclipse/jface/viewers/ITreeViewerListener;)V
+ (L1org/eclipse/jface/viewers/ITreeViewerListener;)V # @Generated
 reveal
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
@@ -269,4 +269,4 @@ updateChildren
  (Lorg/eclipse/swt/widgets/Widget;Ljava/lang/Object;[Ljava/lang/Object;)V
 updatePlus
  (Lorg/eclipse/swt/widgets/Item;Ljava/lang/Object;)V
- (Lorg/eclipse/swt/widgets/Item;Ljava/lang/Object;)V
+ (L1org/eclipse/swt/widgets/Item;Ljava/lang/Object;)V # @Generated(2)

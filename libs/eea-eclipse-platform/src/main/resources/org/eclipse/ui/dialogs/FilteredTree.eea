@@ -6,7 +6,7 @@ super org/eclipse/jface/viewers/AbstractFilteredViewerComposite
 
 getBoldFont
  (Ljava/lang/Object;Lorg/eclipse/ui/dialogs/FilteredTree;Lorg/eclipse/ui/dialogs/PatternFilter;)Lorg/eclipse/swt/graphics/Font;
- (Ljava/lang/Object;L1org/eclipse/ui/dialogs/FilteredTree;L1org/eclipse/ui/dialogs/PatternFilter;)L0org/eclipse/swt/graphics/Font;
+ (Ljava/lang/Object;L1org/eclipse/ui/dialogs/FilteredTree;L1org/eclipse/ui/dialogs/PatternFilter;)L0org/eclipse/swt/graphics/Font; # @Generated(20,96)
 
 clearButtonControl
  Lorg/eclipse/swt/widgets/Control;
@@ -53,13 +53,13 @@ createTreeControl
  (L1org/eclipse/swt/widgets/Composite;I)L1org/eclipse/swt/widgets/Control;
 doCreateFilterText
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
- (L1org/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text; # @Inherited(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Text; # @Overrides(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
 doCreateRefreshJob
  ()Lorg/eclipse/ui/progress/WorkbenchJob;
- ()L1org/eclipse/ui/progress/WorkbenchJob;
+ ()L1org/eclipse/ui/progress/WorkbenchJob; # @Generated
 doCreateTreeViewer
  (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/jface/viewers/TreeViewer;
- (L1org/eclipse/swt/widgets/Composite;I)L1org/eclipse/jface/viewers/TreeViewer;
+ (L1org/eclipse/swt/widgets/Composite;I)L1org/eclipse/jface/viewers/TreeViewer; # @Generated(39)
 getPatternFilter
  ()Lorg/eclipse/ui/dialogs/PatternFilter;
  ()Lorg/eclipse/ui/dialogs/PatternFilter;

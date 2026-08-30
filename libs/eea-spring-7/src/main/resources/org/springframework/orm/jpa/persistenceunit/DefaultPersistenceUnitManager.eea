@@ -2,13 +2,13 @@ class org/springframework/orm/jpa/persistenceunit/DefaultPersistenceUnitManager
 
 DEFAULT_PERSISTENCE_XML_LOCATION
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ORIGINAL_DEFAULT_PERSISTENCE_UNIT_NAME
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ORIGINAL_DEFAULT_PERSISTENCE_UNIT_ROOT_LOCATION
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 logger
  Lorg/apache/commons/logging/Log;
@@ -16,43 +16,43 @@ logger
 
 getDataSourceLookup
  ()Lorg/springframework/jdbc/datasource/lookup/DataSourceLookup;
- ()L0org/springframework/jdbc/datasource/lookup/DataSourceLookup;
+ ()L0org/springframework/jdbc/datasource/lookup/DataSourceLookup; # @Generated
 getDefaultDataSource
  ()Ljavax/sql/DataSource;
- ()L0javax/sql/DataSource;
+ ()L0javax/sql/DataSource; # @Generated
 getDefaultJtaDataSource
  ()Ljavax/sql/DataSource;
- ()L0javax/sql/DataSource;
+ ()L0javax/sql/DataSource; # @Generated
 getLoadTimeWeaver
  ()Lorg/springframework/instrument/classloading/LoadTimeWeaver;
- ()L0org/springframework/instrument/classloading/LoadTimeWeaver;
+ ()L0org/springframework/instrument/classloading/LoadTimeWeaver; # @Generated
 getPersistenceUnitInfo
  (Ljava/lang/String;)Lorg/springframework/orm/jpa/persistenceunit/MutablePersistenceUnitInfo;
- (Ljava/lang/String;)L0org/springframework/orm/jpa/persistenceunit/MutablePersistenceUnitInfo;
+ (Ljava/lang/String;)L0org/springframework/orm/jpa/persistenceunit/MutablePersistenceUnitInfo; # @Generated(21)
 getPersistenceUnitPostProcessors
  ()[Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitPostProcessor;
- ()[0Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitPostProcessor;
+ ()[0Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitPostProcessor; # @Generated(3)
 obtainDefaultPersistenceUnitInfo
  ()Ljakarta/persistence/spi/PersistenceUnitInfo;
  ()Ljakarta/persistence/spi/PersistenceUnitInfo;
 obtainPersistenceUnitInfo
  (Ljava/lang/String;)Ljakarta/persistence/spi/PersistenceUnitInfo;
- (Ljava/lang/String;)Ljakarta/persistence/spi/PersistenceUnitInfo;
+ (Ljava/lang/String;)L1jakarta/persistence/spi/PersistenceUnitInfo; # @Generated(21)
 postProcessPersistenceUnitInfo
  (Lorg/springframework/orm/jpa/persistenceunit/MutablePersistenceUnitInfo;)V
  (Lorg/springframework/orm/jpa/persistenceunit/MutablePersistenceUnitInfo;)V
 setDataSourceLookup
  (Lorg/springframework/jdbc/datasource/lookup/DataSourceLookup;)V
- (Lorg/springframework/jdbc/datasource/lookup/DataSourceLookup;)V
+ (L0org/springframework/jdbc/datasource/lookup/DataSourceLookup;)V # @Generated
 setDataSources
  (Ljava/util/Map<Ljava/lang/String;Ljavax/sql/DataSource;>;)V
  (Ljava/util/Map<Ljava/lang/String;Ljavax/sql/DataSource;>;)V
 setDefaultDataSource
  (Ljavax/sql/DataSource;)V
- (Ljavax/sql/DataSource;)V
+ (L0javax/sql/DataSource;)V # @Generated
 setDefaultJtaDataSource
  (Ljavax/sql/DataSource;)V
- (Ljavax/sql/DataSource;)V
+ (L0javax/sql/DataSource;)V # @Generated
 setDefaultPersistenceUnitName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -64,7 +64,7 @@ setDefaultToOneFetchType
  (Ljakarta/persistence/FetchType;)V
 setLoadTimeWeaver
  (Lorg/springframework/instrument/classloading/LoadTimeWeaver;)V
- (Lorg/springframework/instrument/classloading/LoadTimeWeaver;)V
+ (L0org/springframework/instrument/classloading/LoadTimeWeaver;)V # @Generated
 setManagedClassNameFilter
  (Lorg/springframework/orm/jpa/persistenceunit/ManagedClassNameFilter;)V
  (Lorg/springframework/orm/jpa/persistenceunit/ManagedClassNameFilter;)V
@@ -82,7 +82,7 @@ setPersistenceConfiguration
  (Ljakarta/persistence/PersistenceConfiguration;)V
 setPersistenceUnitPostProcessors
  ([Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitPostProcessor;)V
- ([Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitPostProcessor;)V
+ ([0Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitPostProcessor;)V # @Generated(2)
 setPersistenceXmlLocation
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -91,7 +91,7 @@ setPersistenceXmlLocations
  ([Ljava/lang/String;)V
 setResourceLoader
  (Lorg/springframework/core/io/ResourceLoader;)V
- (Lorg/springframework/core/io/ResourceLoader;)V
+ (L1org/springframework/core/io/ResourceLoader;)V # @Generated
 setSharedCacheMode
  (Ljakarta/persistence/SharedCacheMode;)V
  (Ljakarta/persistence/SharedCacheMode;)V

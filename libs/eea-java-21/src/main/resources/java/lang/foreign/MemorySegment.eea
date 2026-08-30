@@ -2,7 +2,7 @@ class java/lang/foreign/MemorySegment
 
 NULL
  Ljava/lang/foreign/MemorySegment;
- L1java/lang/foreign/MemorySegment;
+ L1java/lang/foreign/MemorySegment; # @Generated
 
 copy
  (Ljava/lang/Object;ILjava/lang/foreign/MemorySegment;Ljava/lang/foreign/ValueLayout;JI)V
@@ -21,38 +21,38 @@ mismatch
  (Ljava/lang/foreign/MemorySegment;JJLjava/lang/foreign/MemorySegment;JJ)J
 ofAddress
  (J)Ljava/lang/foreign/MemorySegment;
- (J)Ljava/lang/foreign/MemorySegment;
+ (J)L1java/lang/foreign/MemorySegment; # @Generated
 ofArray
  ([B)Ljava/lang/foreign/MemorySegment;
- ([B)Ljava/lang/foreign/MemorySegment;
+ ([B)L1java/lang/foreign/MemorySegment; # @Generated(5)
 ofArray
  ([C)Ljava/lang/foreign/MemorySegment;
- ([C)Ljava/lang/foreign/MemorySegment;
+ ([C)L1java/lang/foreign/MemorySegment; # @Generated(5)
 ofArray
  ([D)Ljava/lang/foreign/MemorySegment;
- ([D)Ljava/lang/foreign/MemorySegment;
+ ([D)L1java/lang/foreign/MemorySegment; # @Generated(5)
 ofArray
  ([F)Ljava/lang/foreign/MemorySegment;
- ([F)Ljava/lang/foreign/MemorySegment;
+ ([F)L1java/lang/foreign/MemorySegment; # @Generated(5)
 ofArray
  ([I)Ljava/lang/foreign/MemorySegment;
- ([I)Ljava/lang/foreign/MemorySegment;
+ ([I)L1java/lang/foreign/MemorySegment; # @Generated(5)
 ofArray
  ([J)Ljava/lang/foreign/MemorySegment;
- ([J)Ljava/lang/foreign/MemorySegment;
+ ([J)L1java/lang/foreign/MemorySegment; # @Generated(5)
 ofArray
  ([S)Ljava/lang/foreign/MemorySegment;
- ([S)Ljava/lang/foreign/MemorySegment;
+ ([S)L1java/lang/foreign/MemorySegment; # @Generated(5)
 ofBuffer
  (Ljava/nio/Buffer;)Ljava/lang/foreign/MemorySegment;
- (Ljava/nio/Buffer;)Ljava/lang/foreign/MemorySegment;
+ (Ljava/nio/Buffer;)L1java/lang/foreign/MemorySegment; # @Generated(20)
 
 asByteBuffer
  ()Ljava/nio/ByteBuffer;
  ()Ljava/nio/ByteBuffer;
 asOverlappingSlice
  (Ljava/lang/foreign/MemorySegment;)Ljava/util/Optional<Ljava/lang/foreign/MemorySegment;>;
- (Ljava/lang/foreign/MemorySegment;)L1java/util/Optional<Ljava/lang/foreign/MemorySegment;>;
+ (Ljava/lang/foreign/MemorySegment;)L1java/util/Optional<Ljava/lang/foreign/MemorySegment;>; # @Generated(36)
 asReadOnly
  ()Ljava/lang/foreign/MemorySegment;
  ()Ljava/lang/foreign/MemorySegment;
@@ -67,10 +67,10 @@ asSlice
  (JJJ)Ljava/lang/foreign/MemorySegment;
 asSlice
  (JLjava/lang/foreign/MemoryLayout;)Ljava/lang/foreign/MemorySegment;
- (JLjava/lang/foreign/MemoryLayout;)Ljava/lang/foreign/MemorySegment;
+ (JL1java/lang/foreign/MemoryLayout;)Ljava/lang/foreign/MemorySegment; # @Generated(3)
 copyFrom
  (Ljava/lang/foreign/MemorySegment;)Ljava/lang/foreign/MemorySegment;
- (Ljava/lang/foreign/MemorySegment;)Ljava/lang/foreign/MemorySegment;
+ (L1java/lang/foreign/MemorySegment;)L1java/lang/foreign/MemorySegment; # @Generated(2,36)
 elements
  (Ljava/lang/foreign/MemoryLayout;)Ljava/util/stream/Stream<Ljava/lang/foreign/MemorySegment;>;
  (Ljava/lang/foreign/MemoryLayout;)Ljava/util/stream/Stream<Ljava/lang/foreign/MemorySegment;>;
@@ -82,70 +82,70 @@ fill
  (B)Ljava/lang/foreign/MemorySegment;
 get
  (Ljava/lang/foreign/AddressLayout;J)Ljava/lang/foreign/MemorySegment;
+ (L1java/lang/foreign/AddressLayout;J)Ljava/lang/foreign/MemorySegment; # @Generated(2)
+get
+ (Ljava/lang/foreign/ValueLayout$OfBoolean;J)Z
+ (L1java/lang/foreign/ValueLayout$OfBoolean;J)Z # @Generated
+get
+ (Ljava/lang/foreign/ValueLayout$OfByte;J)B
+ (L1java/lang/foreign/ValueLayout$OfByte;J)B # @Generated
+get
+ (Ljava/lang/foreign/ValueLayout$OfChar;J)C
+ (L1java/lang/foreign/ValueLayout$OfChar;J)C # @Generated
+get
+ (Ljava/lang/foreign/ValueLayout$OfDouble;J)D
+ (L1java/lang/foreign/ValueLayout$OfDouble;J)D # @Generated
+get
+ (Ljava/lang/foreign/ValueLayout$OfFloat;J)F
+ (L1java/lang/foreign/ValueLayout$OfFloat;J)F # @Generated
+get
+ (Ljava/lang/foreign/ValueLayout$OfInt;J)I
+ (L1java/lang/foreign/ValueLayout$OfInt;J)I # @Generated
+get
+ (Ljava/lang/foreign/ValueLayout$OfLong;J)J
+ (L1java/lang/foreign/ValueLayout$OfLong;J)J # @Generated
+get
+ (Ljava/lang/foreign/ValueLayout$OfShort;J)S
+ (L1java/lang/foreign/ValueLayout$OfShort;J)S # @Generated
+getAtIndex
  (Ljava/lang/foreign/AddressLayout;J)Ljava/lang/foreign/MemorySegment;
-get
- (Ljava/lang/foreign/ValueLayout$OfBoolean;J)Z
- (Ljava/lang/foreign/ValueLayout$OfBoolean;J)Z
-get
- (Ljava/lang/foreign/ValueLayout$OfByte;J)B
- (Ljava/lang/foreign/ValueLayout$OfByte;J)B
-get
- (Ljava/lang/foreign/ValueLayout$OfChar;J)C
- (Ljava/lang/foreign/ValueLayout$OfChar;J)C
-get
- (Ljava/lang/foreign/ValueLayout$OfDouble;J)D
- (Ljava/lang/foreign/ValueLayout$OfDouble;J)D
-get
- (Ljava/lang/foreign/ValueLayout$OfFloat;J)F
- (Ljava/lang/foreign/ValueLayout$OfFloat;J)F
-get
- (Ljava/lang/foreign/ValueLayout$OfInt;J)I
- (Ljava/lang/foreign/ValueLayout$OfInt;J)I
-get
- (Ljava/lang/foreign/ValueLayout$OfLong;J)J
- (Ljava/lang/foreign/ValueLayout$OfLong;J)J
-get
- (Ljava/lang/foreign/ValueLayout$OfShort;J)S
- (Ljava/lang/foreign/ValueLayout$OfShort;J)S
-getAtIndex
- (Ljava/lang/foreign/AddressLayout;J)Ljava/lang/foreign/MemorySegment;
- (Ljava/lang/foreign/AddressLayout;J)Ljava/lang/foreign/MemorySegment;
+ (L1java/lang/foreign/AddressLayout;J)Ljava/lang/foreign/MemorySegment; # @Generated(2)
 getAtIndex
  (Ljava/lang/foreign/ValueLayout$OfBoolean;J)Z
- (Ljava/lang/foreign/ValueLayout$OfBoolean;J)Z
+ (L1java/lang/foreign/ValueLayout$OfBoolean;J)Z # @Generated
 getAtIndex
  (Ljava/lang/foreign/ValueLayout$OfByte;J)B
- (Ljava/lang/foreign/ValueLayout$OfByte;J)B
+ (L1java/lang/foreign/ValueLayout$OfByte;J)B # @Generated
 getAtIndex
  (Ljava/lang/foreign/ValueLayout$OfChar;J)C
- (Ljava/lang/foreign/ValueLayout$OfChar;J)C
+ (L1java/lang/foreign/ValueLayout$OfChar;J)C # @Generated
 getAtIndex
  (Ljava/lang/foreign/ValueLayout$OfDouble;J)D
- (Ljava/lang/foreign/ValueLayout$OfDouble;J)D
+ (L1java/lang/foreign/ValueLayout$OfDouble;J)D # @Generated
 getAtIndex
  (Ljava/lang/foreign/ValueLayout$OfFloat;J)F
- (Ljava/lang/foreign/ValueLayout$OfFloat;J)F
+ (L1java/lang/foreign/ValueLayout$OfFloat;J)F # @Generated
 getAtIndex
  (Ljava/lang/foreign/ValueLayout$OfInt;J)I
- (Ljava/lang/foreign/ValueLayout$OfInt;J)I
+ (L1java/lang/foreign/ValueLayout$OfInt;J)I # @Generated
 getAtIndex
  (Ljava/lang/foreign/ValueLayout$OfLong;J)J
- (Ljava/lang/foreign/ValueLayout$OfLong;J)J
+ (L1java/lang/foreign/ValueLayout$OfLong;J)J # @Generated
 getAtIndex
  (Ljava/lang/foreign/ValueLayout$OfShort;J)S
- (Ljava/lang/foreign/ValueLayout$OfShort;J)S
+ (L1java/lang/foreign/ValueLayout$OfShort;J)S # @Generated
 getUtf8String
  (J)Ljava/lang/String;
- (J)Ljava/lang/String;
+ (J)L1java/lang/String; # @Generated
 heapBase
  ()Ljava/util/Optional<Ljava/lang/Object;>;
- ()L1java/util/Optional<Ljava/lang/Object;>;
+ ()L1java/util/Optional<Ljava/lang/Object;>; # @Generated(3)
 isAccessibleBy
  (Ljava/lang/Thread;)Z
  (Ljava/lang/Thread;)Z
 mismatch
  (Ljava/lang/foreign/MemorySegment;)J
- (Ljava/lang/foreign/MemorySegment;)J
+ (L1java/lang/foreign/MemorySegment;)J # @Generated
 reinterpret
  (J)Ljava/lang/foreign/MemorySegment;
  (J)Ljava/lang/foreign/MemorySegment;
@@ -163,61 +163,61 @@ segmentOffset
  (Ljava/lang/foreign/MemorySegment;)J
 set
  (Ljava/lang/foreign/AddressLayout;JLjava/lang/foreign/MemorySegment;)V
+ (L1java/lang/foreign/AddressLayout;JLjava/lang/foreign/MemorySegment;)V # @Generated(2)
+set
+ (Ljava/lang/foreign/ValueLayout$OfBoolean;JZ)V
+ (L1java/lang/foreign/ValueLayout$OfBoolean;JZ)V # @Generated
+set
+ (Ljava/lang/foreign/ValueLayout$OfByte;JB)V
+ (L1java/lang/foreign/ValueLayout$OfByte;JB)V # @Generated
+set
+ (Ljava/lang/foreign/ValueLayout$OfChar;JC)V
+ (L1java/lang/foreign/ValueLayout$OfChar;JC)V # @Generated
+set
+ (Ljava/lang/foreign/ValueLayout$OfDouble;JD)V
+ (L1java/lang/foreign/ValueLayout$OfDouble;JD)V # @Generated
+set
+ (Ljava/lang/foreign/ValueLayout$OfFloat;JF)V
+ (L1java/lang/foreign/ValueLayout$OfFloat;JF)V # @Generated
+set
+ (Ljava/lang/foreign/ValueLayout$OfInt;JI)V
+ (L1java/lang/foreign/ValueLayout$OfInt;JI)V # @Generated
+set
+ (Ljava/lang/foreign/ValueLayout$OfLong;JJ)V
+ (L1java/lang/foreign/ValueLayout$OfLong;JJ)V # @Generated
+set
+ (Ljava/lang/foreign/ValueLayout$OfShort;JS)V
+ (L1java/lang/foreign/ValueLayout$OfShort;JS)V # @Generated
+setAtIndex
  (Ljava/lang/foreign/AddressLayout;JLjava/lang/foreign/MemorySegment;)V
-set
- (Ljava/lang/foreign/ValueLayout$OfBoolean;JZ)V
- (Ljava/lang/foreign/ValueLayout$OfBoolean;JZ)V
-set
- (Ljava/lang/foreign/ValueLayout$OfByte;JB)V
- (Ljava/lang/foreign/ValueLayout$OfByte;JB)V
-set
- (Ljava/lang/foreign/ValueLayout$OfChar;JC)V
- (Ljava/lang/foreign/ValueLayout$OfChar;JC)V
-set
- (Ljava/lang/foreign/ValueLayout$OfDouble;JD)V
- (Ljava/lang/foreign/ValueLayout$OfDouble;JD)V
-set
- (Ljava/lang/foreign/ValueLayout$OfFloat;JF)V
- (Ljava/lang/foreign/ValueLayout$OfFloat;JF)V
-set
- (Ljava/lang/foreign/ValueLayout$OfInt;JI)V
- (Ljava/lang/foreign/ValueLayout$OfInt;JI)V
-set
- (Ljava/lang/foreign/ValueLayout$OfLong;JJ)V
- (Ljava/lang/foreign/ValueLayout$OfLong;JJ)V
-set
- (Ljava/lang/foreign/ValueLayout$OfShort;JS)V
- (Ljava/lang/foreign/ValueLayout$OfShort;JS)V
-setAtIndex
- (Ljava/lang/foreign/AddressLayout;JLjava/lang/foreign/MemorySegment;)V
- (Ljava/lang/foreign/AddressLayout;JLjava/lang/foreign/MemorySegment;)V
+ (L1java/lang/foreign/AddressLayout;JLjava/lang/foreign/MemorySegment;)V # @Generated(2)
 setAtIndex
  (Ljava/lang/foreign/ValueLayout$OfBoolean;JZ)V
- (Ljava/lang/foreign/ValueLayout$OfBoolean;JZ)V
+ (L1java/lang/foreign/ValueLayout$OfBoolean;JZ)V # @Generated
 setAtIndex
  (Ljava/lang/foreign/ValueLayout$OfByte;JB)V
- (Ljava/lang/foreign/ValueLayout$OfByte;JB)V
+ (L1java/lang/foreign/ValueLayout$OfByte;JB)V # @Generated
 setAtIndex
  (Ljava/lang/foreign/ValueLayout$OfChar;JC)V
- (Ljava/lang/foreign/ValueLayout$OfChar;JC)V
+ (L1java/lang/foreign/ValueLayout$OfChar;JC)V # @Generated
 setAtIndex
  (Ljava/lang/foreign/ValueLayout$OfDouble;JD)V
- (Ljava/lang/foreign/ValueLayout$OfDouble;JD)V
+ (L1java/lang/foreign/ValueLayout$OfDouble;JD)V # @Generated
 setAtIndex
  (Ljava/lang/foreign/ValueLayout$OfFloat;JF)V
- (Ljava/lang/foreign/ValueLayout$OfFloat;JF)V
+ (L1java/lang/foreign/ValueLayout$OfFloat;JF)V # @Generated
 setAtIndex
  (Ljava/lang/foreign/ValueLayout$OfInt;JI)V
- (Ljava/lang/foreign/ValueLayout$OfInt;JI)V
+ (L1java/lang/foreign/ValueLayout$OfInt;JI)V # @Generated
 setAtIndex
  (Ljava/lang/foreign/ValueLayout$OfLong;JJ)V
- (Ljava/lang/foreign/ValueLayout$OfLong;JJ)V
+ (L1java/lang/foreign/ValueLayout$OfLong;JJ)V # @Generated
 setAtIndex
  (Ljava/lang/foreign/ValueLayout$OfShort;JS)V
- (Ljava/lang/foreign/ValueLayout$OfShort;JS)V
+ (L1java/lang/foreign/ValueLayout$OfShort;JS)V # @Generated
 setUtf8String
  (JLjava/lang/String;)V
- (JLjava/lang/String;)V
+ (JL1java/lang/String;)V # @Generated
 spliterator
  (Ljava/lang/foreign/MemoryLayout;)Ljava/util/Spliterator<Ljava/lang/foreign/MemorySegment;>;
  (Ljava/lang/foreign/MemoryLayout;)Ljava/util/Spliterator<Ljava/lang/foreign/MemorySegment;>;

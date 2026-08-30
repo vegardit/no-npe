@@ -47,16 +47,16 @@ _valueTypeSerializer
  (Lcom/fasterxml/jackson/databind/ser/impl/MapEntrySerializer;Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;Ljava/lang/Object;Z)V
 _findAndAddDynamic
  (Lcom/fasterxml/jackson/databind/ser/impl/PropertySerializerMap;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/SerializerProvider;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;
- (Lcom/fasterxml/jackson/databind/ser/impl/PropertySerializerMap;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/SerializerProvider;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;
+ (L1com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/SerializerProvider;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>; # @Generated(2)
 _findAndAddDynamic
  (Lcom/fasterxml/jackson/databind/ser/impl/PropertySerializerMap;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/SerializerProvider;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;
- (Lcom/fasterxml/jackson/databind/ser/impl/PropertySerializerMap;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/SerializerProvider;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>;
+ (L1com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/SerializerProvider;)Lcom/fasterxml/jackson/databind/JsonSerializer<Ljava/lang/Object;>; # @Generated(2)
 _withValueTypeSerializer
  (Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)Lcom/fasterxml/jackson/databind/ser/ContainerSerializer<*>;
- (Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)Lcom/fasterxml/jackson/databind/ser/ContainerSerializer<*>;
+ (Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)L1com/fasterxml/jackson/databind/ser/ContainerSerializer<*>; # @Generated(59)
 createContextual
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonSerializer<*>;
- (Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;)L1com/fasterxml/jackson/databind/JsonSerializer<*>; # @Inherited(com.fasterxml.jackson.databind.ser.ContextualSerializer)
+ (L1com/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/BeanProperty;)L1com/fasterxml/jackson/databind/JsonSerializer<*>; # @Overrides(com.fasterxml.jackson.databind.ser.ContextualSerializer)
 getContentSerializer
  ()Lcom/fasterxml/jackson/databind/JsonSerializer<*>;
  ()Lcom/fasterxml/jackson/databind/JsonSerializer<*>;
@@ -68,19 +68,19 @@ hasSingleElement
  (Ljava/util/Map$Entry<**>;)Z
 isEmpty
  (Lcom/fasterxml/jackson/databind/SerializerProvider;Ljava/util/Map$Entry<**>;)Z
- (Lcom/fasterxml/jackson/databind/SerializerProvider;Ljava/util/Map$Entry<**>;)Z
+ (Lcom/fasterxml/jackson/databind/SerializerProvider;L1java/util/Map$Entry<**>;)Z # @Generated(53)
 serialize
  (Ljava/util/Map$Entry<**>;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
- (Ljava/util/Map$Entry<**>;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
+ (Ljava/util/Map$Entry<**>;L1com/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V # @Generated(27)
 serializeDynamic
  (Ljava/util/Map$Entry<**>;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
- (Ljava/util/Map$Entry<**>;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V
+ (L1java/util/Map$Entry<**>;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;)V # @Generated(2)
 serializeWithType
  (Ljava/util/Map$Entry<**>;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V
- (Ljava/util/Map$Entry<**>;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V
+ (Ljava/util/Map$Entry<**>;L1com/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;L1com/fasterxml/jackson/databind/jsontype/TypeSerializer;)V # @Generated(27,120)
 withContentInclusion
  (Ljava/lang/Object;Z)Lcom/fasterxml/jackson/databind/ser/impl/MapEntrySerializer;
- (Ljava/lang/Object;Z)Lcom/fasterxml/jackson/databind/ser/impl/MapEntrySerializer;
+ (Ljava/lang/Object;Z)L1com/fasterxml/jackson/databind/ser/impl/MapEntrySerializer; # @Generated(22)
 withResolved
  (Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;Ljava/lang/Object;Z)Lcom/fasterxml/jackson/databind/ser/impl/MapEntrySerializer;
- (Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;Ljava/lang/Object;Z)L1com/fasterxml/jackson/databind/ser/impl/MapEntrySerializer;
+ (Lcom/fasterxml/jackson/databind/BeanProperty;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;Lcom/fasterxml/jackson/databind/JsonSerializer<*>;Ljava/lang/Object;Z)L1com/fasterxml/jackson/databind/ser/impl/MapEntrySerializer; # @Generated(167)

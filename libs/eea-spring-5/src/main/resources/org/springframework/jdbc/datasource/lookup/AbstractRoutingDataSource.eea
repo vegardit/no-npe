@@ -2,10 +2,10 @@ class org/springframework/jdbc/datasource/lookup/AbstractRoutingDataSource
 
 determineCurrentLookupKey
  ()Ljava/lang/Object;
- ()L0java/lang/Object;
+ ()L0java/lang/Object; # @Generated
 determineTargetDataSource
  ()Ljavax/sql/DataSource;
- ()Ljavax/sql/DataSource;
+ ()L1javax/sql/DataSource; # @Generated
 getConnection
  ()Ljava/sql/Connection;
  ()Ljava/sql/Connection;
@@ -14,13 +14,13 @@ getConnection
  (Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;
 getResolvedDataSources
  ()Ljava/util/Map<Ljava/lang/Object;Ljavax/sql/DataSource;>;
- ()Ljava/util/Map<Ljava/lang/Object;Ljavax/sql/DataSource;>;
+ ()L1java/util/Map<Ljava/lang/Object;Ljavax/sql/DataSource;>; # @Generated(3)
 getResolvedDefaultDataSource
  ()Ljavax/sql/DataSource;
- ()L0javax/sql/DataSource;
+ ()L0javax/sql/DataSource; # @Generated
 isWrapperFor
  (Ljava/lang/Class<*>;)Z
- (Ljava/lang/Class<*>;)Z
+ (L1java/lang/Class<*>;)Z # @Inherited(org.springframework.jdbc.datasource.AbstractDataSource)
 resolveSpecifiedDataSource
  (Ljava/lang/Object;)Ljavax/sql/DataSource;
  (Ljava/lang/Object;)Ljavax/sql/DataSource;
@@ -29,7 +29,7 @@ resolveSpecifiedLookupKey
  (Ljava/lang/Object;)Ljava/lang/Object;
 setDataSourceLookup
  (Lorg/springframework/jdbc/datasource/lookup/DataSourceLookup;)V
- (Lorg/springframework/jdbc/datasource/lookup/DataSourceLookup;)V
+ (L0org/springframework/jdbc/datasource/lookup/DataSourceLookup;)V # @Generated
 setDefaultTargetDataSource
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
@@ -38,4 +38,4 @@ setTargetDataSources
  (Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
 unwrap
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T1T; # @Inherited(org.springframework.jdbc.datasource.AbstractDataSource)

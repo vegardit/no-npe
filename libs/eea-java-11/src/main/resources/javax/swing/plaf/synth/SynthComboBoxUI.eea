@@ -2,7 +2,7 @@ class javax/swing/plaf/synth/SynthComboBoxUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI; # @Generated(27)
 
 createArrowButton
  ()Ljavax/swing/JButton;
@@ -21,10 +21,10 @@ getContext
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/synth/SynthContext;
 getDefaultSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension; # @Inherited(javax.swing.plaf.basic.BasicComboBoxUI)
 installUI
  (Ljavax/swing/JComponent;)V
- (Ljavax/swing/JComponent;)V
+ (L1javax/swing/JComponent;)V # @Inherited(javax.swing.plaf.basic.BasicComboBoxUI)
 paint
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
@@ -33,7 +33,7 @@ paint
  (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;)V
 paintBorder
  (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V
- (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V
+ (L1javax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V # @Generated(2)
 paintCurrentValue
  (Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V
  (Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V
@@ -45,4 +45,4 @@ uninstallUI
  (Ljavax/swing/JComponent;)V
 update
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
- (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
+ (Ljava/awt/Graphics;L1javax/swing/JComponent;)V # @Inherited(javax.swing.plaf.ComponentUI)

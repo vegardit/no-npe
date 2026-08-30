@@ -24,7 +24,7 @@ acceptContentVisitor
  (Lcom/fasterxml/jackson/databind/jsonFormatVisitors/JsonArrayFormatVisitor;)V
 acceptJsonFormatVisitor
  (Lcom/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Lcom/fasterxml/jackson/databind/JavaType;)V
- (Lcom/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Lcom/fasterxml/jackson/databind/JavaType;)V
+ (L1com/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Lcom/fasterxml/jackson/databind/JavaType;)V # @Inherited(com.fasterxml.jackson.databind.ser.std.StdSerializer)
 contentSchema
  ()Lcom/fasterxml/jackson/databind/JsonNode;
  ()Lcom/fasterxml/jackson/databind/JsonNode;
@@ -39,4 +39,4 @@ isEmpty
  (Lcom/fasterxml/jackson/databind/SerializerProvider;TT;)Z
 serializeWithType
  (TT;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V
- (TT;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V
+ (TT;Lcom/fasterxml/jackson/core/JsonGenerator;L1com/fasterxml/jackson/databind/SerializerProvider;Lcom/fasterxml/jackson/databind/jsontype/TypeSerializer;)V # @Inherited(com.fasterxml.jackson.databind.JsonSerializer)

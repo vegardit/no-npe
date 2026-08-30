@@ -8,7 +8,7 @@ class org/springframework/jdbc/core/JdbcTemplate
  (Ljavax/sql/DataSource;Z)V
 <init>
  (Lorg/springframework/jdbc/support/JdbcAccessor;)V
- (Lorg/springframework/jdbc/support/JdbcAccessor;)V
+ (L1org/springframework/jdbc/support/JdbcAccessor;)V # @Generated
 applyStatementSettings
  (Ljava/sql/Statement;)V
  (Ljava/sql/Statement;)V
@@ -17,28 +17,28 @@ batchUpdate
  (Ljava/lang/String;Ljava/util/List<[Ljava/lang/Object;>;)[I
 batchUpdate
  (Ljava/lang/String;Ljava/util/List<[Ljava/lang/Object;>;[I)[I
- (Ljava/lang/String;Ljava/util/List<[Ljava/lang/Object;>;[I)[I
+ (Ljava/lang/String;L1java/util/List<[Ljava/lang/Object;>;[I)[I # @Generated(20)
 batchUpdate
  (Ljava/lang/String;Lorg/springframework/jdbc/core/BatchPreparedStatementSetter;)[I
- (Ljava/lang/String;Lorg/springframework/jdbc/core/BatchPreparedStatementSetter;)[I
+ (Ljava/lang/String;L1org/springframework/jdbc/core/BatchPreparedStatementSetter;)[0I # @Generated(20,81)
 batchUpdate
  (Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/BatchPreparedStatementSetter;Lorg/springframework/jdbc/support/KeyHolder;)[I
- (Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/BatchPreparedStatementSetter;Lorg/springframework/jdbc/support/KeyHolder;)[I
+ (Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/BatchPreparedStatementSetter;Lorg/springframework/jdbc/support/KeyHolder;)[0I # @Generated(163)
 batchUpdate
  ([Ljava/lang/String;)[I
- ([Ljava/lang/String;)[I
+ ([Ljava/lang/String;)[0I # @Generated(22)
 batchUpdate
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/Collection<TT;>;ILorg/springframework/jdbc/core/ParameterizedPreparedStatementSetter<TT;>;)[[I
- <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/Collection<TT;>;ILorg/springframework/jdbc/core/ParameterizedPreparedStatementSetter<TT;>;)[[I
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/Collection<TT;>;ILorg/springframework/jdbc/core/ParameterizedPreparedStatementSetter<TT;>;)[0[I # @Generated(144)
 call
  (Lorg/springframework/jdbc/core/CallableStatementCreator;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Lorg/springframework/jdbc/core/CallableStatementCreator;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Lorg/springframework/jdbc/core/CallableStatementCreator;L1java/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(58,121)
 createConnectionProxy
  (Ljava/sql/Connection;)Ljava/sql/Connection;
  (Ljava/sql/Connection;)L1java/sql/Connection;
 createResultsMap
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- ()L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(3)
 execute
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -50,10 +50,10 @@ execute
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementCallback<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 execute
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/CallableStatementCreator;Lorg/springframework/jdbc/core/CallableStatementCallback<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/CallableStatementCreator;Lorg/springframework/jdbc/core/CallableStatementCallback<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(L1org/springframework/jdbc/core/CallableStatementCreator;L1org/springframework/jdbc/core/CallableStatementCallback<TT;>;)T0T; # @Overrides(org.springframework.jdbc.core.JdbcOperations)
 execute
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/ConnectionCallback<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/ConnectionCallback<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(L1org/springframework/jdbc/core/ConnectionCallback<TT;>;)T0T; # @Overrides(org.springframework.jdbc.core.JdbcOperations)
 execute
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/PreparedStatementCallback<TT;>;)TT;
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/PreparedStatementCallback<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
@@ -62,19 +62,19 @@ execute
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/StatementCallback<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 extractOutputParameters
  (Ljava/sql/CallableStatement;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/sql/CallableStatement;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/sql/CallableStatement;L1java/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;)L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(30,93)
 extractReturnedResults
  (Ljava/sql/CallableStatement;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;I)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/sql/CallableStatement;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;Ljava/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;I)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/sql/CallableStatement;L0java/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;L0java/util/List<Lorg/springframework/jdbc/core/SqlParameter;>;I)L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(30,92,156)
 getColumnMapRowMapper
  ()Lorg/springframework/jdbc/core/RowMapper<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
- ()L1org/springframework/jdbc/core/RowMapper<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
+ ()L1org/springframework/jdbc/core/RowMapper<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>; # @Generated(3)
 getSingleColumnRowMapper
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/jdbc/core/RowMapper<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1org/springframework/jdbc/core/RowMapper<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1org/springframework/jdbc/core/RowMapper<TT;>; # @Generated(47)
 handleWarnings
  (Ljava/sql/SQLWarning;)V
- (Ljava/sql/SQLWarning;)V
+ (L0java/sql/SQLWarning;)V # @Generated
 handleWarnings
  (Ljava/sql/Statement;)V
  (Ljava/sql/Statement;)V
@@ -83,64 +83,64 @@ handleWarnings
  (Ljava/sql/Statement;Ljava/sql/SQLException;)V
 newArgPreparedStatementSetter
  ([Ljava/lang/Object;)Lorg/springframework/jdbc/core/PreparedStatementSetter;
- ([Ljava/lang/Object;)L1org/springframework/jdbc/core/PreparedStatementSetter;
+ ([0Ljava/lang/Object;)L1org/springframework/jdbc/core/PreparedStatementSetter; # @Generated(2,22)
 newArgTypePreparedStatementSetter
  ([Ljava/lang/Object;[I)Lorg/springframework/jdbc/core/PreparedStatementSetter;
- ([Ljava/lang/Object;[I)L1org/springframework/jdbc/core/PreparedStatementSetter;
+ ([0Ljava/lang/Object;[I)L1org/springframework/jdbc/core/PreparedStatementSetter; # @Generated(2,24)
 processResultSet
  (Ljava/sql/ResultSet;Lorg/springframework/jdbc/core/ResultSetSupportingSqlParameter;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/sql/ResultSet;Lorg/springframework/jdbc/core/ResultSetSupportingSqlParameter;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (L0java/sql/ResultSet;Lorg/springframework/jdbc/core/ResultSetSupportingSqlParameter;)L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(2,86)
 query
  (Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
- (Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
+ (Ljava/lang/String;L0org/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowCallbackHandler;)V # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  (Ljava/lang/String;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
  (Ljava/lang/String;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
 query
  (Ljava/lang/String;Lorg/springframework/jdbc/core/RowCallbackHandler;[Ljava/lang/Object;)V
- (Ljava/lang/String;Lorg/springframework/jdbc/core/RowCallbackHandler;[Ljava/lang/Object;)V
+ (Ljava/lang/String;Lorg/springframework/jdbc/core/RowCallbackHandler;[0Ljava/lang/Object;)V # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  (Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
- (Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
+ (Ljava/lang/String;[0Ljava/lang/Object;Lorg/springframework/jdbc/core/RowCallbackHandler;)V # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  (Ljava/lang/String;[Ljava/lang/Object;[ILorg/springframework/jdbc/core/RowCallbackHandler;)V
- (Ljava/lang/String;[Ljava/lang/Object;[ILorg/springframework/jdbc/core/RowCallbackHandler;)V
+ (Ljava/lang/String;[0Ljava/lang/Object;[ILorg/springframework/jdbc/core/RowCallbackHandler;)V # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  (Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
  (Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;L0org/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;L0org/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;[Ljava/lang/Object;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;[Ljava/lang/Object;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;[0Ljava/lang/Object;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>;
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;[Ljava/lang/Object;)Ljava/util/List<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;[Ljava/lang/Object;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;[0Ljava/lang/Object;)Ljava/util/List<TT;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;[ILorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;[ILorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/List<TT;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 query
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;L0org/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T; # @Generated(80)
 query
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)TT;
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/ResultSetExtractor<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
@@ -152,100 +152,100 @@ queryForList
  (Ljava/lang/String;)Ljava/util/List<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
 queryForList
  (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
- (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
+ (Ljava/lang/String;[0Ljava/lang/Object;)Ljava/util/List<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForList
  (Ljava/lang/String;[Ljava/lang/Object;[I)Ljava/util/List<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
- (Ljava/lang/String;[Ljava/lang/Object;[I)Ljava/util/List<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>;
+ (Ljava/lang/String;[0Ljava/lang/Object;[I)Ljava/util/List<Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForList
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
 queryForList
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Ljava/util/List<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;[0Ljava/lang/Object;)Ljava/util/List<TT;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForList
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForList
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILjava/lang/Class<TT;>;)Ljava/util/List<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILjava/lang/Class<TT;>;)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;[ILjava/lang/Class<TT;>;)Ljava/util/List<TT;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForMap
  (Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  (Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 queryForMap
  (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/lang/String;[0Ljava/lang/Object;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForMap
  (Ljava/lang/String;[Ljava/lang/Object;[I)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/lang/String;[Ljava/lang/Object;[I)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/lang/String;[0Ljava/lang/Object;[I)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForObject
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForObject
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;[0Ljava/lang/Object;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForObject
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForObject
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;[Ljava/lang/Object;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;[Ljava/lang/Object;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;[0Ljava/lang/Object;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForObject
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForObject
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/jdbc/core/RowMapper<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;Lorg/springframework/jdbc/core/RowMapper<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;Lorg/springframework/jdbc/core/RowMapper<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForObject
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILjava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILjava/lang/Class<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;[ILjava/lang/Class<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForObject
  <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILorg/springframework/jdbc/core/RowMapper<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;[ILorg/springframework/jdbc/core/RowMapper<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[0Ljava/lang/Object;[ILorg/springframework/jdbc/core/RowMapper<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForRowSet
  (Ljava/lang/String;)Lorg/springframework/jdbc/support/rowset/SqlRowSet;
  (Ljava/lang/String;)Lorg/springframework/jdbc/support/rowset/SqlRowSet;
 queryForRowSet
  (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/jdbc/support/rowset/SqlRowSet;
- (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/jdbc/support/rowset/SqlRowSet;
+ (Ljava/lang/String;[0Ljava/lang/Object;)Lorg/springframework/jdbc/support/rowset/SqlRowSet; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForRowSet
  (Ljava/lang/String;[Ljava/lang/Object;[I)Lorg/springframework/jdbc/support/rowset/SqlRowSet;
- (Ljava/lang/String;[Ljava/lang/Object;[I)Lorg/springframework/jdbc/support/rowset/SqlRowSet;
+ (Ljava/lang/String;[0Ljava/lang/Object;[I)Lorg/springframework/jdbc/support/rowset/SqlRowSet; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForStream
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;L0org/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForStream
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
 queryForStream
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;[Ljava/lang/Object;)Ljava/util/stream/Stream<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;[Ljava/lang/Object;)Ljava/util/stream/Stream<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/RowMapper<TT;>;[0Ljava/lang/Object;)Ljava/util/stream/Stream<TT;>; # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 queryForStream
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
- <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;L0org/springframework/jdbc/core/PreparedStatementSetter;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>; # @Generated(80)
 queryForStream
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
  <T:Ljava/lang/Object;>(Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
 translateException
  (Ljava/lang/String;Ljava/lang/String;Ljava/sql/SQLException;)Lorg/springframework/dao/DataAccessException;
- (Ljava/lang/String;Ljava/lang/String;Ljava/sql/SQLException;)L1org/springframework/dao/DataAccessException;
+ (Ljava/lang/String;L0java/lang/String;Ljava/sql/SQLException;)L1org/springframework/dao/DataAccessException; # @Generated(20,62)
 update
  (Ljava/lang/String;)I
  (Ljava/lang/String;)I
 update
  (Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;)I
- (Ljava/lang/String;Lorg/springframework/jdbc/core/PreparedStatementSetter;)I
+ (Ljava/lang/String;L0org/springframework/jdbc/core/PreparedStatementSetter;)I # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 update
  (Ljava/lang/String;[Ljava/lang/Object;)I
- (Ljava/lang/String;[Ljava/lang/Object;)I
+ (Ljava/lang/String;[0Ljava/lang/Object;)I # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 update
  (Ljava/lang/String;[Ljava/lang/Object;[I)I
- (Ljava/lang/String;[Ljava/lang/Object;[I)I
+ (Ljava/lang/String;[0Ljava/lang/Object;[I)I # @Inherited(org.springframework.jdbc.core.JdbcOperations)
 update
  (Lorg/springframework/jdbc/core/PreparedStatementCreator;)I
  (Lorg/springframework/jdbc/core/PreparedStatementCreator;)I
 update
  (Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/PreparedStatementSetter;)I
- (Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/core/PreparedStatementSetter;)I
+ (Lorg/springframework/jdbc/core/PreparedStatementCreator;L0org/springframework/jdbc/core/PreparedStatementSetter;)I # @Generated(58)
 update
  (Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/support/KeyHolder;)I
  (Lorg/springframework/jdbc/core/PreparedStatementCreator;Lorg/springframework/jdbc/support/KeyHolder;)I

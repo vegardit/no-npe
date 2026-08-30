@@ -2,32 +2,32 @@ class org/springframework/expression/spel/support/SimpleEvaluationContext
 
 forPropertyAccessors
  ([Lorg/springframework/expression/PropertyAccessor;)Lorg/springframework/expression/spel/support/SimpleEvaluationContext$Builder;
- ([Lorg/springframework/expression/PropertyAccessor;)L1org/springframework/expression/spel/support/SimpleEvaluationContext$Builder;
+ ([Lorg/springframework/expression/PropertyAccessor;)L1org/springframework/expression/spel/support/SimpleEvaluationContext$Builder; # @Generated(53)
 forReadOnlyDataBinding
  ()Lorg/springframework/expression/spel/support/SimpleEvaluationContext$Builder;
- ()Lorg/springframework/expression/spel/support/SimpleEvaluationContext$Builder;
+ ()L1org/springframework/expression/spel/support/SimpleEvaluationContext$Builder; # @Generated
 forReadWriteDataBinding
  ()Lorg/springframework/expression/spel/support/SimpleEvaluationContext$Builder;
- ()Lorg/springframework/expression/spel/support/SimpleEvaluationContext$Builder;
+ ()L1org/springframework/expression/spel/support/SimpleEvaluationContext$Builder; # @Generated
 
 assignVariable
  (Ljava/lang/String;Ljava/util/function/Supplier<Lorg/springframework/expression/TypedValue;>;)Lorg/springframework/expression/TypedValue;
- (Ljava/lang/String;Ljava/util/function/Supplier<Lorg/springframework/expression/TypedValue;>;)Lorg/springframework/expression/TypedValue;
+ (Ljava/lang/String;L1java/util/function/Supplier<Lorg/springframework/expression/TypedValue;>;)Lorg/springframework/expression/TypedValue; # @Inherited(org.springframework.expression.EvaluationContext)
 getBeanResolver
  ()Lorg/springframework/expression/BeanResolver;
  ()L0org/springframework/expression/BeanResolver; # @Inherited(org.springframework.expression.EvaluationContext)
 getIndexAccessors
  ()Ljava/util/List<Lorg/springframework/expression/IndexAccessor;>;
- ()Ljava/util/List<Lorg/springframework/expression/IndexAccessor;>;
+ ()L1java/util/List<Lorg/springframework/expression/IndexAccessor;>; # @Inherited(org.springframework.expression.EvaluationContext)
 getMethodResolvers
  ()Ljava/util/List<Lorg/springframework/expression/MethodResolver;>;
- ()Ljava/util/List<Lorg/springframework/expression/MethodResolver;>;
+ ()L1java/util/List<Lorg/springframework/expression/MethodResolver;>; # @Inherited(org.springframework.expression.EvaluationContext)
 getOperatorOverloader
  ()Lorg/springframework/expression/OperatorOverloader;
  ()Lorg/springframework/expression/OperatorOverloader;
 getPropertyAccessors
  ()Ljava/util/List<Lorg/springframework/expression/PropertyAccessor;>;
- ()Ljava/util/List<Lorg/springframework/expression/PropertyAccessor;>;
+ ()L1java/util/List<Lorg/springframework/expression/PropertyAccessor;>; # @Inherited(org.springframework.expression.EvaluationContext)
 getRootObject
  ()Lorg/springframework/expression/TypedValue;
  ()Lorg/springframework/expression/TypedValue;
@@ -45,4 +45,4 @@ lookupVariable
  (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.expression.EvaluationContext)
 setVariable
  (Ljava/lang/String;Ljava/lang/Object;)V
- (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;L0java/lang/Object;)V # @Inherited(org.springframework.expression.EvaluationContext)

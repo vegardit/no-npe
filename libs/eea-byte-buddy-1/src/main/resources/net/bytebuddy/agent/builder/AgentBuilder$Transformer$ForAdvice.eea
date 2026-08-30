@@ -38,10 +38,10 @@ include
  ([Lnet/bytebuddy/dynamic/ClassFileLocator;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
 make
  (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;Ljava/util/List<Ljava/lang/String;>;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
- (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;Ljava/util/List<Ljava/lang/String;>;)L1net/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
+ (Lnet/bytebuddy/asm/Advice$WithCustomMapping;Lnet/bytebuddy/asm/Advice$ExceptionHandler;Lnet/bytebuddy/implementation/bytecode/assign/Assigner;Lnet/bytebuddy/dynamic/ClassFileLocator;Lnet/bytebuddy/agent/builder/AgentBuilder$PoolStrategy;Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;Ljava/util/List<Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice$Entry;>;Ljava/util/List<Ljava/lang/String;>;)L1net/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice; # @Generated(423)
 transform
  (Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/ClassLoader;Lnet/bytebuddy/utility/JavaModule;Ljava/security/ProtectionDomain;)Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;
- (Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/ClassLoader;Lnet/bytebuddy/utility/JavaModule;Ljava/security/ProtectionDomain;)Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;
+ (Lnet/bytebuddy/dynamic/DynamicType$Builder<*>;Lnet/bytebuddy/description/type/TypeDescription;L0java/lang/ClassLoader;L0net/bytebuddy/utility/JavaModule;L0java/security/ProtectionDomain;)Lnet/bytebuddy/dynamic/DynamicType$Builder<*>; # @Inherited(net.bytebuddy.agent.builder.AgentBuilder$Transformer)
 with
  (Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
  (Lnet/bytebuddy/agent/builder/AgentBuilder$LocationStrategy;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
@@ -56,4 +56,4 @@ withExceptionHandler
  (Lnet/bytebuddy/asm/Advice$ExceptionHandler;)Lnet/bytebuddy/agent/builder/AgentBuilder$Transformer$ForAdvice;
 wrap
  (Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/ClassLoader;Lnet/bytebuddy/utility/JavaModule;Ljava/security/ProtectionDomain;Lnet/bytebuddy/asm/Advice;)Lnet/bytebuddy/asm/AsmVisitorWrapper$ForDeclaredMethods$MethodVisitorWrapper;
- (Lnet/bytebuddy/description/type/TypeDescription;Ljava/lang/ClassLoader;Lnet/bytebuddy/utility/JavaModule;Ljava/security/ProtectionDomain;Lnet/bytebuddy/asm/Advice;)Lnet/bytebuddy/asm/AsmVisitorWrapper$ForDeclaredMethods$MethodVisitorWrapper;
+ (Lnet/bytebuddy/description/type/TypeDescription;L0java/lang/ClassLoader;L0net/bytebuddy/utility/JavaModule;L0java/security/ProtectionDomain;Lnet/bytebuddy/asm/Advice;)Lnet/bytebuddy/asm/AsmVisitorWrapper$ForDeclaredMethods$MethodVisitorWrapper; # @Generated(50,73,107)

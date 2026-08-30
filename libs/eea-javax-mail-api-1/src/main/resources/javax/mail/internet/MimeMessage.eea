@@ -36,7 +36,7 @@ headers
  (Ljavax/mail/Session;Ljava/io/InputStream;)V
 <init>
  (Ljavax/mail/internet/MimeMessage;)V
- (Ljavax/mail/internet/MimeMessage;)V
+ (L1javax/mail/internet/MimeMessage;)V # @Generated
 addFrom
  ([Ljavax/mail/Address;)V
  ([Ljavax/mail/Address;)V
@@ -54,10 +54,10 @@ addRecipients
  (Ljavax/mail/Message$RecipientType;[Ljavax/mail/Address;)V
 createInternetHeaders
  (Ljava/io/InputStream;)Ljavax/mail/internet/InternetHeaders;
- (Ljava/io/InputStream;)L1javax/mail/internet/InternetHeaders;
+ (Ljava/io/InputStream;)L1javax/mail/internet/InternetHeaders; # @Generated(24)
 createMimeMessage
  (Ljavax/mail/Session;)Ljavax/mail/internet/MimeMessage;
- (Ljavax/mail/Session;)L1javax/mail/internet/MimeMessage;
+ (Ljavax/mail/Session;)L1javax/mail/internet/MimeMessage; # @Generated(23)
 getAllHeaderLines
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
@@ -84,7 +84,7 @@ getContentStream
  ()Ljava/io/InputStream;
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
 getDataHandler
  ()Ljavax/activation/DataHandler;
  ()Ljavax/activation/DataHandler;
@@ -135,22 +135,22 @@ getRawInputStream
  ()Ljava/io/InputStream;
 getReceivedDate
  ()Ljava/util/Date;
- ()L0java/util/Date;
+ ()L0java/util/Date; # @Generated
 getRecipients
  (Ljavax/mail/Message$RecipientType;)[Ljavax/mail/Address;
- (Ljavax/mail/Message$RecipientType;)[Ljavax/mail/Address;
+ (Ljavax/mail/Message$RecipientType;)[0Ljavax/mail/Address; # @Generated(37)
 getReplyTo
  ()[Ljavax/mail/Address;
  ()[Ljavax/mail/Address;
 getSender
  ()Ljavax/mail/Address;
- ()L0javax/mail/Address;
+ ()L0javax/mail/Address; # @Generated
 getSentDate
  ()Ljava/util/Date;
- ()L0java/util/Date;
+ ()L0java/util/Date; # @Generated
 getSubject
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 isMimeType
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -174,7 +174,7 @@ setContent
  (Ljava/lang/Object;Ljava/lang/String;)V
 setContent
  (Ljavax/mail/Multipart;)V
- (Ljavax/mail/Multipart;)V
+ (L1javax/mail/Multipart;)V # @Generated
 setContentID
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

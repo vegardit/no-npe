@@ -17,19 +17,19 @@ super org/springframework/http/converter/GenericHttpMessageConverter
  ([Lorg/springframework/http/MediaType;)V
 canRead
  (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/reflect/Type;L0java/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.GenericHttpMessageConverter)
 canWrite
  (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (L0java/lang/reflect/Type;Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.GenericHttpMessageConverter)
 supports
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z
 write
  (TT;Ljava/lang/reflect/Type;Lorg/springframework/http/MediaType;Lorg/springframework/http/HttpOutputMessage;)V
- (TT;Ljava/lang/reflect/Type;Lorg/springframework/http/MediaType;Lorg/springframework/http/HttpOutputMessage;)V
+ (TT;L0java/lang/reflect/Type;L0org/springframework/http/MediaType;L1org/springframework/http/HttpOutputMessage;)V # @Overrides(org.springframework.http.converter.GenericHttpMessageConverter)
 writeInternal
  (TT;Ljava/lang/reflect/Type;Lorg/springframework/http/HttpOutputMessage;)V
- (TT;Ljava/lang/reflect/Type;Lorg/springframework/http/HttpOutputMessage;)V
+ (TT;L0java/lang/reflect/Type;Lorg/springframework/http/HttpOutputMessage;)V # @Generated(5)
 writeInternal
  (TT;Lorg/springframework/http/HttpOutputMessage;)V
  (TT;Lorg/springframework/http/HttpOutputMessage;)V

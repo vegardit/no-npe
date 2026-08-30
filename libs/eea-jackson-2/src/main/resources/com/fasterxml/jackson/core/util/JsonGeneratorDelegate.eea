@@ -18,22 +18,22 @@ canUseSchema
  (Lcom/fasterxml/jackson/core/FormatSchema;)Z
 copyCurrentEvent
  (Lcom/fasterxml/jackson/core/JsonParser;)V
- (Lcom/fasterxml/jackson/core/JsonParser;)V
+ (L1com/fasterxml/jackson/core/JsonParser;)V # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 copyCurrentStructure
  (Lcom/fasterxml/jackson/core/JsonParser;)V
- (Lcom/fasterxml/jackson/core/JsonParser;)V
+ (L1com/fasterxml/jackson/core/JsonParser;)V # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 currentValue
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 delegate
  ()Lcom/fasterxml/jackson/core/JsonGenerator;
  ()Lcom/fasterxml/jackson/core/JsonGenerator;
 disable
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated(53)
 enable
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated(53)
 getCharacterEscapes
  ()Lcom/fasterxml/jackson/core/io/CharacterEscapes;
  ()L0com/fasterxml/jackson/core/io/CharacterEscapes; # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
@@ -69,31 +69,31 @@ isEnabled
  (Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Z
 overrideFormatFeatures
  (II)Lcom/fasterxml/jackson/core/JsonGenerator;
- (II)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (II)L1com/fasterxml/jackson/core/JsonGenerator; # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 overrideStdFeatures
  (II)Lcom/fasterxml/jackson/core/JsonGenerator;
- (II)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (II)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated
 setCharacterEscapes
  (Lcom/fasterxml/jackson/core/io/CharacterEscapes;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (Lcom/fasterxml/jackson/core/io/CharacterEscapes;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (Lcom/fasterxml/jackson/core/io/CharacterEscapes;)L1com/fasterxml/jackson/core/JsonGenerator; # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 setCodec
  (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (Lcom/fasterxml/jackson/core/ObjectCodec;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (Lcom/fasterxml/jackson/core/ObjectCodec;)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated(43)
 setCurrentValue
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
 setFeatureMask
  (I)Lcom/fasterxml/jackson/core/JsonGenerator;
- (I)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (I)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated
 setHighestNonEscapedChar
  (I)Lcom/fasterxml/jackson/core/JsonGenerator;
- (I)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (I)L1com/fasterxml/jackson/core/JsonGenerator; # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 setPrettyPrinter
  (Lcom/fasterxml/jackson/core/PrettyPrinter;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (Lcom/fasterxml/jackson/core/PrettyPrinter;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (Lcom/fasterxml/jackson/core/PrettyPrinter;)L1com/fasterxml/jackson/core/JsonGenerator; # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 setRootValueSeparator
  (Lcom/fasterxml/jackson/core/SerializableString;)Lcom/fasterxml/jackson/core/JsonGenerator;
- (Lcom/fasterxml/jackson/core/SerializableString;)Lcom/fasterxml/jackson/core/JsonGenerator;
+ (Lcom/fasterxml/jackson/core/SerializableString;)L1com/fasterxml/jackson/core/JsonGenerator; # @Generated(50)
 setSchema
  (Lcom/fasterxml/jackson/core/FormatSchema;)V
  (Lcom/fasterxml/jackson/core/FormatSchema;)V
@@ -102,7 +102,7 @@ streamWriteConstraints
  ()Lcom/fasterxml/jackson/core/StreamWriteConstraints;
 useDefaultPrettyPrinter
  ()Lcom/fasterxml/jackson/core/JsonGenerator;
- ()Lcom/fasterxml/jackson/core/JsonGenerator;
+ ()L1com/fasterxml/jackson/core/JsonGenerator; # @Generated
 version
  ()Lcom/fasterxml/jackson/core/Version;
  ()Lcom/fasterxml/jackson/core/Version;
@@ -162,7 +162,7 @@ writePOJO
  (Ljava/lang/Object;)V
 writeRaw
  (Lcom/fasterxml/jackson/core/SerializableString;)V
- (Lcom/fasterxml/jackson/core/SerializableString;)V
+ (L1com/fasterxml/jackson/core/SerializableString;)V # @Inherited(com.fasterxml.jackson.core.JsonGenerator)
 writeRaw
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

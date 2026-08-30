@@ -8,7 +8,7 @@ class org/springframework/http/server/reactive/AbstractServerHttpResponse
  (Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/http/HttpHeaders;)V
 addCookie
  (Lorg/springframework/http/ResponseCookie;)V
- (Lorg/springframework/http/ResponseCookie;)V
+ (L1org/springframework/http/ResponseCookie;)V # @Generated
 beforeCommit
  (Ljava/util/function/Supplier<+Lreactor/core/publisher/Mono<Ljava/lang/Void;>;>;)V
  (Ljava/util/function/Supplier<+Lreactor/core/publisher/Mono<Ljava/lang/Void;>;>;)V
@@ -20,7 +20,7 @@ doCommit
  ()Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
 doCommit
  (Ljava/util/function/Supplier<+Lreactor/core/publisher/Mono<Ljava/lang/Void;>;>;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
- (Ljava/util/function/Supplier<+Lreactor/core/publisher/Mono<Ljava/lang/Void;>;>;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
+ (L0java/util/function/Supplier<+Lreactor/core/publisher/Mono<Ljava/lang/Void;>;>;)Lreactor/core/publisher/Mono<Ljava/lang/Void;>; # @Generated(2)
 getCookies
  ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Lorg/springframework/http/ResponseCookie;>;
  ()Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Lorg/springframework/http/ResponseCookie;>;
@@ -38,19 +38,19 @@ getStatusCode
  ()L0org/springframework/http/HttpStatus; # @Inherited(org.springframework.http.server.reactive.ServerHttpResponse)
 getStatusCodeValue
  ()Ljava/lang/Integer;
- ()L0java/lang/Integer;
+ ()L0java/lang/Integer; # @Generated
 setComplete
  ()Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
  ()Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
 setRawStatusCode
  (Ljava/lang/Integer;)Z
- (Ljava/lang/Integer;)Z
+ (L0java/lang/Integer;)Z # @Inherited(org.springframework.http.server.reactive.ServerHttpResponse)
 setStatusCode
  (Lorg/springframework/http/HttpStatus;)Z
- (Lorg/springframework/http/HttpStatus;)Z
+ (L0org/springframework/http/HttpStatus;)Z # @Inherited(org.springframework.http.server.reactive.ServerHttpResponse)
 setStatusCodeValue
  (Ljava/lang/Integer;)V
- (Ljava/lang/Integer;)V
+ (L0java/lang/Integer;)V # @Generated
 touchDataBuffer
  (Lorg/springframework/core/io/buffer/DataBuffer;)V
  (Lorg/springframework/core/io/buffer/DataBuffer;)V

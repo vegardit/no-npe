@@ -2,7 +2,7 @@ class java/lang/ClassLoader
 
 getPlatformClassLoader
  ()Ljava/lang/ClassLoader;
- ()L1java/lang/ClassLoader;
+ ()L1java/lang/ClassLoader; # @Generated
 getSystemClassLoader
  ()Ljava/lang/ClassLoader;
  ()L1java/lang/ClassLoader;
@@ -11,7 +11,7 @@ getSystemResource
  (L1java/lang/String;)L0java/net/URL;
 getSystemResourceAsStream
  (Ljava/lang/String;)Ljava/io/InputStream;
- (L1java/lang/String;)L0java/io/InputStream;
+ (L1java/lang/String;)L0java/io/InputStream; # @Generated(21)
 getSystemResources
  (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
  (L1java/lang/String;)L1java/util/Enumeration<L1java/net/URL;>;
@@ -24,7 +24,7 @@ getSystemResources
  (L0java/lang/String;L0java/lang/ClassLoader;)V
 defineClass
  (Ljava/lang/String;Ljava/nio/ByteBuffer;Ljava/security/ProtectionDomain;)Ljava/lang/Class<*>;
- (L0java/lang/String;L1java/nio/ByteBuffer;L0java/security/ProtectionDomain;)L1java/lang/Class<*>;
+ (L0java/lang/String;L1java/nio/ByteBuffer;L0java/security/ProtectionDomain;)L1java/lang/Class<*>; # @Generated(20)
 defineClass
  (Ljava/lang/String;[BII)Ljava/lang/Class<*>;
  (L0java/lang/String;[1BII)L1java/lang/Class<*>;
@@ -36,37 +36,37 @@ defineClass
  ([1BII)L1java/lang/Class<*>;
 definePackage
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;)Ljava/lang/Package;
- (L1java/lang/String;L0java/lang/String;L0java/lang/String;L0java/lang/String;L0java/lang/String;L0java/lang/String;L0java/lang/String;L0java/net/URL;)L1java/lang/Package;
+ (L1java/lang/String;L0java/lang/String;L0java/lang/String;L0java/lang/String;L0java/lang/String;L0java/lang/String;L0java/lang/String;L0java/net/URL;)L1java/lang/Package; # @Generated(143)
 findClass
  (Ljava/lang/String;)Ljava/lang/Class<*>;
  (L0java/lang/String;)L1java/lang/Class<*>;
 findClass
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Class<*>;
- (L0java/lang/String;L0java/lang/String;)L0java/lang/Class<*>;
+ (L0java/lang/String;L0java/lang/String;)L0java/lang/Class<*>; # @Generated(39)
 findLibrary
  (Ljava/lang/String;)Ljava/lang/String;
- (L0java/lang/String;)L0java/lang/String;
+ (L0java/lang/String;)L0java/lang/String; # @Generated(21)
 findLoadedClass
  (Ljava/lang/String;)Ljava/lang/Class<*>;
- (L0java/lang/String;)L0java/lang/Class<*>;
+ (L0java/lang/String;)L0java/lang/Class<*>; # @Generated(21)
 findResource
  (Ljava/lang/String;)Ljava/net/URL;
- (L0java/lang/String;)L0java/net/URL;
+ (L0java/lang/String;)L0java/net/URL; # @Generated(21)
 findResource
  (Ljava/lang/String;Ljava/lang/String;)Ljava/net/URL;
- (L0java/lang/String;L0java/lang/String;)L0java/net/URL;
+ (L0java/lang/String;L0java/lang/String;)L0java/net/URL; # @Generated(39)
 findResources
  (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
- (L0java/lang/String;)L1java/util/Enumeration<L1java/net/URL;>;
+ (L0java/lang/String;)L1java/util/Enumeration<L1java/net/URL;>; # @Generated(21)
 findSystemClass
  (Ljava/lang/String;)Ljava/lang/Class<*>;
  (L1java/lang/String;)L1java/lang/Class<*>;
 getClassLoadingLock
  (Ljava/lang/String;)Ljava/lang/Object;
- (L0java/lang/String;)L1java/lang/Object;
+ (L0java/lang/String;)L1java/lang/Object; # @Generated(21)
 getDefinedPackage
  (Ljava/lang/String;)Ljava/lang/Package;
- (L1java/lang/String;)L0java/lang/Package;
+ (L1java/lang/String;)L0java/lang/Package; # @Generated(21)
 getDefinedPackages
  ()[Ljava/lang/Package;
  ()[1L1java/lang/Package;
@@ -81,16 +81,16 @@ getPackages
  ()[1L1java/lang/Package;
 getParent
  ()Ljava/lang/ClassLoader;
- ()L0java/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Generated
 getResource
  (Ljava/lang/String;)Ljava/net/URL;
  (L1java/lang/String;)L0java/net/URL;
 getResourceAsStream
  (Ljava/lang/String;)Ljava/io/InputStream;
- (L1java/lang/String;)L0java/io/InputStream;
+ (L1java/lang/String;)L0java/io/InputStream; # @Generated(21)
 getResources
  (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
- (L1java/lang/String;)L1java/util/Enumeration<L1java/net/URL;>;
+ (L1java/lang/String;)L1java/util/Enumeration<L1java/net/URL;>; # @Generated(21)
 getUnnamedModule
  ()Ljava/lang/Module;
  ()L1java/lang/Module;
@@ -99,13 +99,13 @@ loadClass
  (L1java/lang/String;)L1java/lang/Class<*>;
 loadClass
  (Ljava/lang/String;Z)Ljava/lang/Class<*>;
- (L1java/lang/String;Z)L1java/lang/Class<*>;
+ (L1java/lang/String;Z)L1java/lang/Class<*>; # @Generated(22)
 resolveClass
  (Ljava/lang/Class<*>;)V
  (L1java/lang/Class<*>;)V
 resources
  (Ljava/lang/String;)Ljava/util/stream/Stream<Ljava/net/URL;>;
- (L1java/lang/String;)L1java/util/stream/Stream<L1java/net/URL;>;
+ (L1java/lang/String;)L1java/util/stream/Stream<L1java/net/URL;>; # @Generated(21)
 setClassAssertionStatus
  (Ljava/lang/String;Z)V
  (L0java/lang/String;Z)V
@@ -114,4 +114,4 @@ setPackageAssertionStatus
  (L0java/lang/String;Z)V
 setSigners
  (Ljava/lang/Class<*>;[Ljava/lang/Object;)V
- (L1java/lang/Class<*>;[1Ljava/lang/Object;)V
+ (L1java/lang/Class<*>;[1Ljava/lang/Object;)V # @Generated(2)

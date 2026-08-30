@@ -8,7 +8,7 @@ enumerate
  ([1L1java/lang/Thread;)I
 getAllStackTraces
  ()Ljava/util/Map<Ljava/lang/Thread;[Ljava/lang/StackTraceElement;>;
- ()L1java/util/Map<L1java/lang/Thread;[1L1java/lang/StackTraceElement;>;
+ ()L1java/util/Map<L1java/lang/Thread;[1L1java/lang/StackTraceElement;>; # @Generated(3)
 getDefaultUncaughtExceptionHandler
  ()Ljava/lang/Thread$UncaughtExceptionHandler;
  ()L0java/lang/Thread$UncaughtExceptionHandler;
@@ -17,10 +17,10 @@ holdsLock
  (L1java/lang/Object;)Z
 ofPlatform
  ()Ljava/lang/Thread$Builder$OfPlatform;
- ()L1java/lang/Thread$Builder$OfPlatform;
+ ()L1java/lang/Thread$Builder$OfPlatform; # @Generated
 ofVirtual
  ()Ljava/lang/Thread$Builder$OfVirtual;
- ()L1java/lang/Thread$Builder$OfVirtual;
+ ()L1java/lang/Thread$Builder$OfVirtual; # @Generated
 setDefaultUncaughtExceptionHandler
  (Ljava/lang/Thread$UncaughtExceptionHandler;)V
  (L0java/lang/Thread$UncaughtExceptionHandler;)V
@@ -29,7 +29,7 @@ sleep
  (Ljava/time/Duration;)V
 startVirtualThread
  (Ljava/lang/Runnable;)Ljava/lang/Thread;
- (Ljava/lang/Runnable;)Ljava/lang/Thread;
+ (Ljava/lang/Runnable;)L1java/lang/Thread; # @Generated(23)
 
 <init>
  (Ljava/lang/Runnable;)V
@@ -60,7 +60,7 @@ clone
  ()L1java/lang/Object; # @Inherited(java.lang.Object)
 getContextClassLoader
  ()Ljava/lang/ClassLoader;
- ()L0java/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Generated
 getName
  ()Ljava/lang/String;
  ()L1java/lang/String;
@@ -72,10 +72,10 @@ getState
  ()L1java/lang/Thread$State;
 getThreadGroup
  ()Ljava/lang/ThreadGroup;
- ()L0java/lang/ThreadGroup;
+ ()L0java/lang/ThreadGroup; # @Generated
 getUncaughtExceptionHandler
  ()Ljava/lang/Thread$UncaughtExceptionHandler;
- ()L0java/lang/Thread$UncaughtExceptionHandler;
+ ()L0java/lang/Thread$UncaughtExceptionHandler; # @Generated
 join
  (Ljava/time/Duration;)Z
  (Ljava/time/Duration;)Z

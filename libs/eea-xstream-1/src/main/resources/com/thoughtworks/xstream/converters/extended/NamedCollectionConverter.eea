@@ -8,10 +8,10 @@ class com/thoughtworks/xstream/converters/extended/NamedCollectionConverter
  (Ljava/lang/Class;Lcom/thoughtworks/xstream/mapper/Mapper;Ljava/lang/String;Ljava/lang/Class;)V
 readBareItem
  (Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;Lcom/thoughtworks/xstream/converters/UnmarshallingContext;Ljava/lang/Object;)Ljava/lang/Object;
- (Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;Lcom/thoughtworks/xstream/converters/UnmarshallingContext;Ljava/lang/Object;)L0java/lang/Object;
+ (Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;L1com/thoughtworks/xstream/converters/UnmarshallingContext;Ljava/lang/Object;)L0java/lang/Object; # @Overrides(com.thoughtworks.xstream.converters.collections.AbstractCollectionConverter)
 writeCompleteItem
  (Ljava/lang/Object;Lcom/thoughtworks/xstream/converters/MarshallingContext;Lcom/thoughtworks/xstream/io/HierarchicalStreamWriter;)V
  (Ljava/lang/Object;Lcom/thoughtworks/xstream/converters/MarshallingContext;Lcom/thoughtworks/xstream/io/HierarchicalStreamWriter;)V
 writeItem
  (Ljava/lang/Object;Lcom/thoughtworks/xstream/converters/MarshallingContext;Lcom/thoughtworks/xstream/io/HierarchicalStreamWriter;)V
- (Ljava/lang/Object;Lcom/thoughtworks/xstream/converters/MarshallingContext;Lcom/thoughtworks/xstream/io/HierarchicalStreamWriter;)V
+ (Ljava/lang/Object;Lcom/thoughtworks/xstream/converters/MarshallingContext;L1com/thoughtworks/xstream/io/HierarchicalStreamWriter;)V # @Generated(76)

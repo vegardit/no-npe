@@ -6,10 +6,10 @@ super org/springframework/core/codec/AbstractEncoder
 
 canEncode
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
+ (L1org/springframework/core/ResolvableType;L0org/springframework/util/MimeType;)Z # @Overrides(org.springframework.core.codec.AbstractEncoder)
 encode
  (Lorg/reactivestreams/Publisher<+Lio/netty/buffer/ByteBuf;>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
- (Lorg/reactivestreams/Publisher<+Lio/netty/buffer/ByteBuf;>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
+ (Lorg/reactivestreams/Publisher<+Lio/netty/buffer/ByteBuf;>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>; # @Generated(156,191)
 encodeValue
  (Lio/netty/buffer/ByteBuf;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/core/io/buffer/DataBuffer;
- (Lio/netty/buffer/ByteBuf;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/core/io/buffer/DataBuffer;
+ (Lio/netty/buffer/ByteBuf;L1org/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/core/io/buffer/DataBuffer; # @Generated(27,122,157)

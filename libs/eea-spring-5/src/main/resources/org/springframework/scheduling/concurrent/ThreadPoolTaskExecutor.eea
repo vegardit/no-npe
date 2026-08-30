@@ -5,7 +5,7 @@ cancelRemainingTask
  (Ljava/lang/Runnable;)V
 createQueue
  (I)Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;
- (I)L1java/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;
+ (I)L1java/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>; # @Generated(4)
 execute
  (Ljava/lang/Runnable;)V
  (L1java/lang/Runnable;)V # @Inherited(org.springframework.core.task.TaskExecutor)
@@ -17,7 +17,7 @@ getThreadPoolExecutor
  ()Ljava/util/concurrent/ThreadPoolExecutor;
 initializeExecutor
  (Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)Ljava/util/concurrent/ExecutorService;
- (Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)Ljava/util/concurrent/ExecutorService;
+ (Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)L1java/util/concurrent/ExecutorService; # @Generated(86)
 setTaskDecorator
  (Lorg/springframework/core/task/TaskDecorator;)V
  (Lorg/springframework/core/task/TaskDecorator;)V
@@ -29,7 +29,7 @@ submit
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Ljava/util/concurrent/Future<TT;>;
 submitListenable
  (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
- (Ljava/lang/Runnable;)L1org/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/Runnable;)L1org/springframework/util/concurrent/ListenableFuture<*>; # @Generated(23)
 submitListenable
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>; # @Generated(61)

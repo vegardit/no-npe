@@ -2,16 +2,16 @@ class org/springframework/http/client/SimpleClientHttpRequestFactory
 
 createAsyncRequest
  (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)Lorg/springframework/http/client/AsyncClientHttpRequest;
- (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)L1org/springframework/http/client/AsyncClientHttpRequest; # @Inherited(org.springframework.http.client.AsyncClientHttpRequestFactory)
+ (L1java/net/URI;L1org/springframework/http/HttpMethod;)L1org/springframework/http/client/AsyncClientHttpRequest; # @Overrides(org.springframework.http.client.AsyncClientHttpRequestFactory)
 createRequest
  (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)Lorg/springframework/http/client/ClientHttpRequest;
- (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)L1org/springframework/http/client/ClientHttpRequest; # @Inherited(org.springframework.http.client.ClientHttpRequestFactory)
+ (L1java/net/URI;L1org/springframework/http/HttpMethod;)L1org/springframework/http/client/ClientHttpRequest; # @Overrides(org.springframework.http.client.ClientHttpRequestFactory)
 openConnection
  (Ljava/net/URL;Ljava/net/Proxy;)Ljava/net/HttpURLConnection;
- (Ljava/net/URL;Ljava/net/Proxy;)Ljava/net/HttpURLConnection;
+ (L1java/net/URL;L0java/net/Proxy;)Ljava/net/HttpURLConnection; # @Generated(2,16)
 prepareConnection
  (Ljava/net/HttpURLConnection;Ljava/lang/String;)V
- (Ljava/net/HttpURLConnection;Ljava/lang/String;)V
+ (L1java/net/HttpURLConnection;Ljava/lang/String;)V # @Generated(2)
 setProxy
  (Ljava/net/Proxy;)V
  (Ljava/net/Proxy;)V

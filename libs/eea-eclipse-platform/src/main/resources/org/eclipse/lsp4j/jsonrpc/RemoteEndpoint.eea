@@ -18,13 +18,13 @@ createErrorResponseMessage
  (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseError;)L1org/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
 createNotificationMessage
  (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;
- (Ljava/lang/String;Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;
+ (Ljava/lang/String;Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/messages/NotificationMessage; # @Generated(39)
 createRequestMessage
  (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;
- (Ljava/lang/String;Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/messages/RequestMessage;
+ (Ljava/lang/String;Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/messages/RequestMessage; # @Generated(39)
 createResponseMessage
  (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
- (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)L1org/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
+ (L1org/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)L1org/eclipse/lsp4j/jsonrpc/messages/ResponseMessage; # @Generated(2,54)
 createResultResponseMessage
  (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
  (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;
@@ -33,10 +33,10 @@ getJsonHandler
  ()Lorg/eclipse/lsp4j/jsonrpc/json/MessageJsonHandler;
 handle
  (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
- (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;L1java/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V # @Generated(46)
 handleCancellation
  (Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;)Z
- (Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;)Z
+ (L1org/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;)Z # @Generated
 handleNotification
  (Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;)V
  (Lorg/eclipse/lsp4j/jsonrpc/messages/NotificationMessage;)V
@@ -45,28 +45,28 @@ handleRequest
  (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;)V
 handleRequestIssues
  (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
- (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/RequestMessage;L1java/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V # @Generated(53)
 handleResponse
  (Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;)V
- (Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;)V
+ (L1org/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;)V # @Generated
 handleResponseIssues
  (Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
- (Lorg/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+ (L1org/eclipse/lsp4j/jsonrpc/messages/ResponseMessage;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V # @Generated(2)
 isCancellation
  (Ljava/lang/Throwable;)Z
  (Ljava/lang/Throwable;)Z
 logIssues
  (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
- (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;Ljava/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V
+ (Lorg/eclipse/lsp4j/jsonrpc/messages/Message;L1java/util/List<Lorg/eclipse/lsp4j/jsonrpc/messages/MessageIssue;>;)V # @Generated(46)
 notify
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
 request
  (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Object;>;
- (Ljava/lang/String;Ljava/lang/Object;)Lorg/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Object;>;
+ (Ljava/lang/String;Ljava/lang/Object;)L1org/eclipse/lsp4j/jsonrpc/JsonRpcRequestFuture<Ljava/lang/Object;>; # @Generated(39)
 resolveMethod
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Generated(21)
 sendCancelNotification
  (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;)V
  (Lorg/eclipse/lsp4j/jsonrpc/messages/Either<Ljava/lang/String;Ljava/lang/Number;>;)V

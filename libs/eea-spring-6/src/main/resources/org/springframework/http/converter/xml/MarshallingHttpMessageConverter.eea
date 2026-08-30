@@ -12,13 +12,13 @@ super org/springframework/http/converter/xml/AbstractXmlHttpMessageConverter
  (Lorg/springframework/oxm/Marshaller;Lorg/springframework/oxm/Unmarshaller;)V
 canRead
  (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.AbstractHttpMessageConverter)
 canWrite
  (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.AbstractHttpMessageConverter)
 readFromSource
  (Ljava/lang/Class<*>;Lorg/springframework/http/HttpHeaders;Ljavax/xml/transform/Source;)Ljava/lang/Object;
- (Ljava/lang/Class<*>;Lorg/springframework/http/HttpHeaders;Ljavax/xml/transform/Source;)Ljava/lang/Object;
+ (L1java/lang/Class<*>;Lorg/springframework/http/HttpHeaders;Ljavax/xml/transform/Source;)Ljava/lang/Object; # @Generated(2)
 setMarshaller
  (Lorg/springframework/oxm/Marshaller;)V
  (Lorg/springframework/oxm/Marshaller;)V

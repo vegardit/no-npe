@@ -2,10 +2,10 @@ class org/quartz/impl/jdbcjobstore/JobStoreSupport
 
 LOCK_STATE_ACCESS
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 LOCK_TRIGGER_ACCESS
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 calendarCache
  Ljava/util/HashMap<Ljava/lang/String;Lorg/quartz/Calendar;>;
@@ -37,19 +37,19 @@ tablePrefix
 
 acquireNextTrigger
  (Ljava/sql/Connection;JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
- (Ljava/sql/Connection;JIJ)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Ljava/sql/Connection;JIJ)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>; # @Generated(27)
 acquireNextTriggers
  (JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
  (JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
 calcFailedIfAfter
  (Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;)J
- (Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;)J
+ (L1org/quartz/impl/jdbcjobstore/SchedulerStateRecord;)J # @Generated
 calendarExists
  (Ljava/sql/Connection;Ljava/lang/String;)Z
  (Ljava/sql/Connection;Ljava/lang/String;)Z
 checkBlockedState
  (Ljava/sql/Connection;Lorg/quartz/JobKey;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/sql/Connection;Lorg/quartz/JobKey;Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/sql/Connection;Lorg/quartz/JobKey;L1java/lang/String;)Ljava/lang/String; # @Generated(42)
 checkExists
  (Ljava/sql/Connection;Lorg/quartz/JobKey;)Z
  (Ljava/sql/Connection;Lorg/quartz/JobKey;)Z
@@ -79,7 +79,7 @@ clusterCheckIn
  (Ljava/sql/Connection;)Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
 clusterRecover
  (Ljava/sql/Connection;Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;)V
- (Ljava/sql/Connection;Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;)V
+ (Ljava/sql/Connection;L1java/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;)V # @Generated(23)
 commitConnection
  (Ljava/sql/Connection;)V
  (Ljava/sql/Connection;)V
@@ -97,7 +97,7 @@ executeWithoutLock
  <T:Ljava/lang/Object;>(Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;)TT;
 findFailedInstances
  (Ljava/sql/Connection;)Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
- (Ljava/sql/Connection;)L1java/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
+ (Ljava/sql/Connection;)L1java/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>; # @Generated(24)
 getAttributeRestoringConnection
  (Ljava/sql/Connection;)Ljava/sql/Connection;
  (Ljava/sql/Connection;)Ljava/sql/Connection;
@@ -127,7 +127,7 @@ getDriverDelegateInitString
  ()Ljava/lang/String;
 getFiredTriggerRecordId
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Generated
 getInstanceId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -196,7 +196,7 @@ getTriggerNames
  (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Lorg/quartz/TriggerKey;>;
 getTriggerState
  (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
- (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+ (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)L1org/quartz/Trigger$TriggerState; # @Generated(47)
 getTriggerState
  (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
  (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
@@ -238,7 +238,7 @@ pauseTrigger
  (Lorg/quartz/TriggerKey;)V
 pauseTriggerGroup
  (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
- (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/Set<Ljava/lang/String;>;
+ (Ljava/sql/Connection;L1org/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/Set<Ljava/lang/String;>; # @Generated(23,88)
 pauseTriggers
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
@@ -247,10 +247,10 @@ recoverJobs
  (Ljava/sql/Connection;)V
 recoverMisfiredJobs
  (Ljava/sql/Connection;Z)Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$RecoverMisfiredJobsResult;
- (Ljava/sql/Connection;Z)Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$RecoverMisfiredJobsResult;
+ (Ljava/sql/Connection;Z)L1org/quartz/impl/jdbcjobstore/JobStoreSupport$RecoverMisfiredJobsResult; # @Generated(25)
 releaseAcquiredTrigger
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)V
- (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)V
+ (Ljava/sql/Connection;L1org/quartz/spi/OperableTrigger;)V # @Generated(23)
 releaseAcquiredTrigger
  (Lorg/quartz/spi/OperableTrigger;)V
  (Lorg/quartz/spi/OperableTrigger;)V
@@ -307,7 +307,7 @@ resumeTrigger
  (Lorg/quartz/TriggerKey;)V
 resumeTriggerGroup
  (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
- (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/Set<Ljava/lang/String;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/Set<Ljava/lang/String;>; # @Generated(88)
 resumeTriggers
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
@@ -376,7 +376,7 @@ storeCalendar
  (Ljava/sql/Connection;Ljava/lang/String;Lorg/quartz/Calendar;ZZ)V
 storeJob
  (Ljava/sql/Connection;Lorg/quartz/JobDetail;Z)V
- (Ljava/sql/Connection;Lorg/quartz/JobDetail;Z)V
+ (Ljava/sql/Connection;L1org/quartz/JobDetail;Z)V # @Generated(23)
 storeJob
  (Lorg/quartz/JobDetail;Z)V
  (Lorg/quartz/JobDetail;Z)V
@@ -388,7 +388,7 @@ storeJobsAndTriggers
  (Ljava/util/Map<Lorg/quartz/JobDetail;Ljava/util/Set<+Lorg/quartz/Trigger;>;>;Z)V
 storeTrigger
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;ZLjava/lang/String;ZZ)V
- (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;ZLjava/lang/String;ZZ)V
+ (Ljava/sql/Connection;L1org/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;ZLjava/lang/String;ZZ)V # @Generated(23)
 storeTrigger
  (Lorg/quartz/spi/OperableTrigger;Z)V
  (Lorg/quartz/spi/OperableTrigger;Z)V
@@ -397,10 +397,10 @@ triggerExists
  (Ljava/sql/Connection;Lorg/quartz/TriggerKey;)Z
 triggerFired
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)Lorg/quartz/spi/TriggerFiredBundle;
- (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;)L0org/quartz/spi/TriggerFiredBundle;
+ (Ljava/sql/Connection;L1org/quartz/spi/OperableTrigger;)L0org/quartz/spi/TriggerFiredBundle; # @Generated(23,56)
 triggeredJobComplete
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V
- (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V
+ (Ljava/sql/Connection;L1org/quartz/spi/OperableTrigger;L1org/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V # @Generated(23,55)
 triggeredJobComplete
  (Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V
  (Lorg/quartz/spi/OperableTrigger;Lorg/quartz/JobDetail;Lorg/quartz/Trigger$CompletedExecutionInstruction;)V

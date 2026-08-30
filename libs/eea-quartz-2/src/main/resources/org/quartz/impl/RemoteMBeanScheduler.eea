@@ -20,7 +20,7 @@ deleteCalendar
  (Ljava/lang/String;)Z
 deleteJob
  (Lorg/quartz/JobKey;)Z
- (Lorg/quartz/JobKey;)Z
+ (L1org/quartz/JobKey;)Z # @Generated
 deleteJobs
  (Ljava/util/List<Lorg/quartz/JobKey;>;)Z
  (Ljava/util/List<Lorg/quartz/JobKey;>;)Z
@@ -44,7 +44,7 @@ getCurrentlyExecutingJobs
  ()Ljava/util/List<Lorg/quartz/JobExecutionContext;>;
 getJobDetail
  (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
- (Lorg/quartz/JobKey;)Lorg/quartz/JobDetail;
+ (L1org/quartz/JobKey;)L1org/quartz/JobDetail; # @Generated(2,22)
 getJobDetails
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/List<Lorg/quartz/JobDetail;>;
@@ -53,13 +53,13 @@ getJobGroupNames
  ()Ljava/util/List<Ljava/lang/String;>;
 getJobKeys
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)Ljava/util/Set<Lorg/quartz/JobKey;>;
- (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)L1java/util/Set<Lorg/quartz/JobKey;>;
+ (L1org/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)L1java/util/Set<Lorg/quartz/JobKey;>; # @Generated(2,63)
 getListenerManager
  ()Lorg/quartz/ListenerManager;
  ()Lorg/quartz/ListenerManager;
 getMetaData
  ()Lorg/quartz/SchedulerMetaData;
- ()Lorg/quartz/SchedulerMetaData;
+ ()L1org/quartz/SchedulerMetaData; # @Generated
 getPausedTriggerGroups
  ()Ljava/util/Set<Ljava/lang/String;>;
  ()Ljava/util/Set<Ljava/lang/String;>;
@@ -83,7 +83,7 @@ getTriggerKeys
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Lorg/quartz/TriggerKey;>;
 getTriggerState
  (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
- (Lorg/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState;
+ (L1org/quartz/TriggerKey;)Lorg/quartz/Trigger$TriggerState; # @Generated(2)
 getTriggersOfJob
  (Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/Trigger;>;
  (Lorg/quartz/JobKey;)Ljava/util/List<Lorg/quartz/Trigger;>;
@@ -92,40 +92,40 @@ interrupt
  (Ljava/lang/String;)Z
 interrupt
  (Lorg/quartz/JobKey;)Z
- (Lorg/quartz/JobKey;)Z
+ (L1org/quartz/JobKey;)Z # @Generated
 invoke
  (Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;
  (Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;
 pauseJob
  (Lorg/quartz/JobKey;)V
- (Lorg/quartz/JobKey;)V
+ (L1org/quartz/JobKey;)V # @Generated
 pauseJobs
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V
- (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V
+ (L1org/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V # @Generated(2)
 pauseTrigger
  (Lorg/quartz/TriggerKey;)V
- (Lorg/quartz/TriggerKey;)V
+ (L1org/quartz/TriggerKey;)V # @Generated
 pauseTriggers
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V
- (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V
+ (L1org/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V # @Generated(2)
 rescheduleJob
  (Lorg/quartz/TriggerKey;Lorg/quartz/Trigger;)Ljava/util/Date;
  (Lorg/quartz/TriggerKey;Lorg/quartz/Trigger;)Ljava/util/Date;
 resetTriggerFromErrorState
  (Lorg/quartz/TriggerKey;)V
- (Lorg/quartz/TriggerKey;)V
+ (L1org/quartz/TriggerKey;)V # @Generated
 resumeJob
  (Lorg/quartz/JobKey;)V
- (Lorg/quartz/JobKey;)V
+ (L1org/quartz/JobKey;)V # @Generated
 resumeJobs
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V
- (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V
+ (L1org/quartz/impl/matchers/GroupMatcher<Lorg/quartz/JobKey;>;)V # @Generated(2)
 resumeTrigger
  (Lorg/quartz/TriggerKey;)V
- (Lorg/quartz/TriggerKey;)V
+ (L1org/quartz/TriggerKey;)V # @Generated
 resumeTriggers
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V
- (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V
+ (L1org/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)V # @Generated(2)
 scheduleJob
  (Lorg/quartz/JobDetail;Ljava/util/Set<+Lorg/quartz/Trigger;>;Z)V
  (Lorg/quartz/JobDetail;Ljava/util/Set<+Lorg/quartz/Trigger;>;Z)V
@@ -155,7 +155,7 @@ triggerJob
  (Lorg/quartz/JobKey;Lorg/quartz/JobDataMap;)V
 unscheduleJob
  (Lorg/quartz/TriggerKey;)Z
- (Lorg/quartz/TriggerKey;)Z
+ (L1org/quartz/TriggerKey;)Z # @Generated
 unscheduleJobs
  (Ljava/util/List<Lorg/quartz/TriggerKey;>;)Z
  (Ljava/util/List<Lorg/quartz/TriggerKey;>;)Z

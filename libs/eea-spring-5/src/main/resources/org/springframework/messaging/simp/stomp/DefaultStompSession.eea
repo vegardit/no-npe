@@ -2,7 +2,7 @@ class org/springframework/messaging/simp/stomp/DefaultStompSession
 
 EMPTY_PAYLOAD
  [B
- [1B
+ [1B # @Generated
 
 <init>
  (Lorg/springframework/messaging/simp/stomp/StompSessionHandler;Lorg/springframework/messaging/simp/stomp/StompHeaders;)V
@@ -12,7 +12,7 @@ acknowledge
  (Ljava/lang/String;Z)Lorg/springframework/messaging/simp/stomp/StompSession$Receiptable;
 acknowledge
  (Lorg/springframework/messaging/simp/stomp/StompHeaders;Z)Lorg/springframework/messaging/simp/stomp/StompSession$Receiptable;
- (Lorg/springframework/messaging/simp/stomp/StompHeaders;Z)L1org/springframework/messaging/simp/stomp/StompSession$Receiptable;
+ (Lorg/springframework/messaging/simp/stomp/StompHeaders;Z)L1org/springframework/messaging/simp/stomp/StompSession$Receiptable; # @Generated(59)
 afterConnectFailure
  (Ljava/lang/Throwable;)V
  (Ljava/lang/Throwable;)V
@@ -21,10 +21,10 @@ afterConnected
  (Lorg/springframework/messaging/tcp/TcpConnection<[B>;)V
 disconnect
  (Lorg/springframework/messaging/simp/stomp/StompHeaders;)V
- (Lorg/springframework/messaging/simp/stomp/StompHeaders;)V
+ (L0org/springframework/messaging/simp/stomp/StompHeaders;)V # @Generated
 getConnectHeaders
  ()Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
- ()Lorg/springframework/messaging/simp/stomp/StompHeaderAccessor;
+ ()L1org/springframework/messaging/simp/stomp/StompHeaderAccessor; # @Generated
 getMessageConverter
  ()Lorg/springframework/messaging/converter/MessageConverter;
  ()Lorg/springframework/messaging/converter/MessageConverter;
@@ -39,7 +39,7 @@ getSessionId
  ()Ljava/lang/String;
 getTaskScheduler
  ()Lorg/springframework/scheduling/TaskScheduler;
- ()L0org/springframework/scheduling/TaskScheduler;
+ ()L0org/springframework/scheduling/TaskScheduler; # @Generated
 handleFailure
  (Ljava/lang/Throwable;)V
  (Ljava/lang/Throwable;)V
@@ -51,16 +51,16 @@ send
  (Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/messaging/simp/stomp/StompSession$Receiptable;
 send
  (Lorg/springframework/messaging/simp/stomp/StompHeaders;Ljava/lang/Object;)Lorg/springframework/messaging/simp/stomp/StompSession$Receiptable;
- (Lorg/springframework/messaging/simp/stomp/StompHeaders;Ljava/lang/Object;)L1org/springframework/messaging/simp/stomp/StompSession$Receiptable;
+ (L1org/springframework/messaging/simp/stomp/StompHeaders;Ljava/lang/Object;)L1org/springframework/messaging/simp/stomp/StompSession$Receiptable; # @Generated(2,76)
 setMessageConverter
  (Lorg/springframework/messaging/converter/MessageConverter;)V
  (Lorg/springframework/messaging/converter/MessageConverter;)V
 setTaskScheduler
  (Lorg/springframework/scheduling/TaskScheduler;)V
- (Lorg/springframework/scheduling/TaskScheduler;)V
+ (L0org/springframework/scheduling/TaskScheduler;)V # @Generated
 subscribe
  (Ljava/lang/String;Lorg/springframework/messaging/simp/stomp/StompFrameHandler;)Lorg/springframework/messaging/simp/stomp/StompSession$Subscription;
  (Ljava/lang/String;Lorg/springframework/messaging/simp/stomp/StompFrameHandler;)Lorg/springframework/messaging/simp/stomp/StompSession$Subscription;
 subscribe
  (Lorg/springframework/messaging/simp/stomp/StompHeaders;Lorg/springframework/messaging/simp/stomp/StompFrameHandler;)Lorg/springframework/messaging/simp/stomp/StompSession$Subscription;
- (Lorg/springframework/messaging/simp/stomp/StompHeaders;Lorg/springframework/messaging/simp/stomp/StompFrameHandler;)L1org/springframework/messaging/simp/stomp/StompSession$Subscription;
+ (L1org/springframework/messaging/simp/stomp/StompHeaders;Lorg/springframework/messaging/simp/stomp/StompFrameHandler;)L1org/springframework/messaging/simp/stomp/StompSession$Subscription; # @Generated(2,118)

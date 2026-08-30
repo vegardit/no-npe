@@ -6,7 +6,7 @@ logger
 
 convertJaxbException
  (Ljavax/xml/bind/JAXBException;)Lorg/springframework/oxm/XmlMappingException;
- (Ljavax/xml/bind/JAXBException;)L1org/springframework/oxm/XmlMappingException;
+ (Ljavax/xml/bind/JAXBException;)L1org/springframework/oxm/XmlMappingException; # @Generated(33)
 createMarshaller
  ()Ljavax/xml/bind/Marshaller;
  ()L1javax/xml/bind/Marshaller;
@@ -15,16 +15,16 @@ createUnmarshaller
  ()L1javax/xml/bind/Unmarshaller;
 getClassesToBeBound
  ()[Ljava/lang/Class<*>;
- ()[0Ljava/lang/Class<*>;
+ ()[0Ljava/lang/Class<*>; # @Generated(3)
 getContextPath
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 getJaxbContext
  ()Ljavax/xml/bind/JAXBContext;
  ()Ljavax/xml/bind/JAXBContext;
 getPackagesToScan
  ()[Ljava/lang/String;
- ()[0Ljava/lang/String;
+ ()[0Ljava/lang/String; # @Generated(3)
 initJaxbMarshaller
  (Ljavax/xml/bind/Marshaller;)V
  (Ljavax/xml/bind/Marshaller;)V
@@ -36,7 +36,7 @@ marshal
  (Ljava/lang/Object;Ljavax/xml/transform/Result;)V
 marshal
  (Ljava/lang/Object;Ljavax/xml/transform/Result;Lorg/springframework/oxm/mime/MimeContainer;)V
- (Ljava/lang/Object;Ljavax/xml/transform/Result;Lorg/springframework/oxm/mime/MimeContainer;)V
+ (Ljava/lang/Object;Ljavax/xml/transform/Result;L0org/springframework/oxm/mime/MimeContainer;)V # @Inherited(org.springframework.oxm.mime.MimeMarshaller)
 setAdapters
  ([Ljavax/xml/bind/annotation/adapters/XmlAdapter<**>;)V
  ([Ljavax/xml/bind/annotation/adapters/XmlAdapter<**>;)V
@@ -45,10 +45,10 @@ setBeanClassLoader
  (Ljava/lang/ClassLoader;)V
 setClassesToBeBound
  ([Ljava/lang/Class<*>;)V
- ([Ljava/lang/Class<*>;)V
+ ([0Ljava/lang/Class<*>;)V # @Generated(2)
 setContextPath
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setContextPaths
  ([Ljava/lang/String;)V
  ([Ljava/lang/String;)V
@@ -66,7 +66,7 @@ setMarshallerProperties
  (Ljava/util/Map<Ljava/lang/String;*>;)V
 setPackagesToScan
  ([Ljava/lang/String;)V
- ([Ljava/lang/String;)V
+ ([0Ljava/lang/String;)V # @Generated(2)
 setSchema
  (Lorg/springframework/core/io/Resource;)V
  (Lorg/springframework/core/io/Resource;)V
@@ -99,7 +99,7 @@ unmarshal
  (Ljavax/xml/transform/Source;)Ljava/lang/Object;
 unmarshal
  (Ljavax/xml/transform/Source;Lorg/springframework/oxm/mime/MimeContainer;)Ljava/lang/Object;
- (Ljavax/xml/transform/Source;Lorg/springframework/oxm/mime/MimeContainer;)Ljava/lang/Object;
+ (Ljavax/xml/transform/Source;L0org/springframework/oxm/mime/MimeContainer;)Ljava/lang/Object; # @Inherited(org.springframework.oxm.mime.MimeUnmarshaller)
 unmarshalStaxSource
  (Ljavax/xml/bind/Unmarshaller;Ljavax/xml/transform/Source;)Ljava/lang/Object;
- (Ljavax/xml/bind/Unmarshaller;Ljavax/xml/transform/Source;)Ljava/lang/Object;
+ (L1javax/xml/bind/Unmarshaller;Ljavax/xml/transform/Source;)Ljava/lang/Object; # @Generated(2)

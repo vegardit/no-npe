@@ -11,13 +11,13 @@ getAttributes
  ([Ljava/lang/String;)L1javax/management/AttributeList; # @Inherited(javax.management.modelmbean.RequiredModelMBean)
 invoke
  (Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;
+ (L1java/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object; # @Inherited(javax.management.modelmbean.RequiredModelMBean)
 setAttribute
  (Ljavax/management/Attribute;)V
- (Ljavax/management/Attribute;)V
+ (L1javax/management/Attribute;)V # @Inherited(javax.management.modelmbean.RequiredModelMBean)
 setAttributes
  (Ljavax/management/AttributeList;)Ljavax/management/AttributeList;
- (Ljavax/management/AttributeList;)L1javax/management/AttributeList; # @Inherited(javax.management.modelmbean.RequiredModelMBean)
+ (L1javax/management/AttributeList;)L1javax/management/AttributeList; # @Inherited(javax.management.modelmbean.RequiredModelMBean)
 setManagedResource
  (Ljava/lang/Object;Ljava/lang/String;)V
- (Ljava/lang/Object;Ljava/lang/String;)V
+ (L1java/lang/Object;L1java/lang/String;)V # @Overrides(javax.management.modelmbean.RequiredModelMBean)

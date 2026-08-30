@@ -11,40 +11,40 @@ super java/util/concurrent/CompletionStage
 
 allOf
  ([Ljava/util/concurrent/CompletableFuture<*>;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
- ([1L1java/util/concurrent/CompletableFuture<*>;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>;
+ ([1L1java/util/concurrent/CompletableFuture<*>;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>; # @Generated(47)
 anyOf
  ([Ljava/util/concurrent/CompletableFuture<*>;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Object;>;
  ([1L1java/util/concurrent/CompletableFuture<*>;)L1java/util/concurrent/CompletableFuture<L0java/lang/Object;>;
 completedFuture
  <U:Ljava/lang/Object;>(TU;)Ljava/util/concurrent/CompletableFuture<TU;>;
- <U:Ljava/lang/Object;>(T0U;)L1java/util/concurrent/CompletableFuture<TU;>;
+ <U:Ljava/lang/Object;>(T0U;)L1java/util/concurrent/CompletableFuture<TU;>; # @Generated(28)
 completedStage
  <U:Ljava/lang/Object;>(TU;)Ljava/util/concurrent/CompletionStage<TU;>;
- <U:Ljava/lang/Object;>(TU;)L1java/util/concurrent/CompletionStage<TU;>;
+ <U:Ljava/lang/Object;>(TU;)L1java/util/concurrent/CompletionStage<TU;>; # @Generated(28)
 delayedExecutor
  (JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Executor;
- (JL1java/util/concurrent/TimeUnit;)L1java/util/concurrent/Executor;
+ (JL1java/util/concurrent/TimeUnit;)L1java/util/concurrent/Executor; # @Generated(35)
 delayedExecutor
  (JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/Executor;
- (JL1java/util/concurrent/TimeUnit;L1java/util/concurrent/Executor;)L1java/util/concurrent/Executor;
+ (JL1java/util/concurrent/TimeUnit;L1java/util/concurrent/Executor;)L1java/util/concurrent/Executor; # @Generated(66)
 failedFuture
  <U:Ljava/lang/Object;>(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletableFuture<TU;>;
- <U:Ljava/lang/Object;>(L1java/lang/Throwable;)L1java/util/concurrent/CompletableFuture<TU;>;
+ <U:Ljava/lang/Object;>(L1java/lang/Throwable;)L1java/util/concurrent/CompletableFuture<TU;>; # @Generated(46)
 failedStage
  <U:Ljava/lang/Object;>(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletionStage<TU;>;
- <U:Ljava/lang/Object;>(L1java/lang/Throwable;)L1java/util/concurrent/CompletionStage<TU;>;
+ <U:Ljava/lang/Object;>(L1java/lang/Throwable;)L1java/util/concurrent/CompletionStage<TU;>; # @Generated(46)
 runAsync
  (Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
- (L1java/lang/Runnable;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>;
+ (L1java/lang/Runnable;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>; # @Generated(23)
 runAsync
  (Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
- (L1java/lang/Runnable;L1java/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>;
+ (L1java/lang/Runnable;L1java/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>; # @Generated(54)
 supplyAsync
  <U:Ljava/lang/Object;>(Ljava/util/function/Supplier<TU;>;)Ljava/util/concurrent/CompletableFuture<TU;>;
- <U:Ljava/lang/Object;>(L1java/util/function/Supplier<TU;>;)L1java/util/concurrent/CompletableFuture<TU;>;
+ <U:Ljava/lang/Object;>(L1java/util/function/Supplier<TU;>;)L1java/util/concurrent/CompletableFuture<TU;>; # @Generated(59)
 supplyAsync
  <U:Ljava/lang/Object;>(Ljava/util/function/Supplier<TU;>;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture<TU;>;
- <U:Ljava/lang/Object;>(L1java/util/function/Supplier<TU;>;L1java/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<TU;>;
+ <U:Ljava/lang/Object;>(L1java/util/function/Supplier<TU;>;L1java/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<TU;>; # @Generated(90)
 
 acceptEither
  (Ljava/util/concurrent/CompletionStage<+TT;>;Ljava/util/function/Consumer<-TT;>;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
@@ -72,13 +72,13 @@ completeAsync
  (L1java/util/function/Supplier<+TT;>;)L1java/util/concurrent/CompletableFuture<T0T;>;
 completeAsync
  (Ljava/util/function/Supplier<+TT;>;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture<TT;>;
- (L1java/util/function/Supplier<+TT;>;L1java/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<TT;>;
+ (L1java/util/function/Supplier<+TT;>;L1java/util/concurrent/Executor;)L1java/util/concurrent/CompletableFuture<TT;>; # @Generated(37,69)
 completeExceptionally
  (Ljava/lang/Throwable;)Z
  (L1java/lang/Throwable;)Z
 completeOnTimeout
  (TT;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/CompletableFuture<TT;>;
- (TT;JL1java/util/concurrent/TimeUnit;)L1java/util/concurrent/CompletableFuture<TT;>;
+ (TT;JL1java/util/concurrent/TimeUnit;)L1java/util/concurrent/CompletableFuture<TT;>; # @Generated(38)
 copy
  ()Ljava/util/concurrent/CompletableFuture<TT;>;
  ()L1java/util/concurrent/CompletableFuture<TT;>;
@@ -93,7 +93,7 @@ get
  ()TT;
 get
  (JLjava/util/concurrent/TimeUnit;)TT;
- (JL1java/util/concurrent/TimeUnit;)TT;
+ (JL1java/util/concurrent/TimeUnit;)TT; # @Generated(3)
 getNow
  (TT;)TT;
  (TT;)TT;
@@ -114,7 +114,7 @@ minimalCompletionStage
  ()L1java/util/concurrent/CompletionStage<TT;>;
 newIncompleteFuture
  <U:Ljava/lang/Object;>()Ljava/util/concurrent/CompletableFuture<TU;>;
- <U:Ljava/lang/Object;>()L1java/util/concurrent/CompletableFuture<TU;>;
+ <U:Ljava/lang/Object;>()L1java/util/concurrent/CompletableFuture<TU;>; # @Generated(25)
 obtrudeException
  (Ljava/lang/Throwable;)V
  (L1java/lang/Throwable;)V
@@ -123,7 +123,7 @@ obtrudeValue
  (TT;)V
 orTimeout
  (JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/CompletableFuture<TT;>;
- (JL1java/util/concurrent/TimeUnit;)L1java/util/concurrent/CompletableFuture<TT;>;
+ (JL1java/util/concurrent/TimeUnit;)L1java/util/concurrent/CompletableFuture<TT;>; # @Generated(35)
 runAfterBoth
  (Ljava/util/concurrent/CompletionStage<*>;Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture<Ljava/lang/Void;>;
  (L1java/util/concurrent/CompletionStage<*>;L1java/lang/Runnable;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>;

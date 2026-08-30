@@ -2,19 +2,19 @@ class org/springframework/orm/jpa/support/PersistenceAnnotationBeanPostProcessor
 
 findDefaultEntityManagerFactory
  (Ljava/lang/String;)Ljavax/persistence/EntityManagerFactory;
- (Ljava/lang/String;)Ljavax/persistence/EntityManagerFactory;
+ (L0java/lang/String;)Ljavax/persistence/EntityManagerFactory; # @Generated(2)
 findEntityManagerFactory
  (Ljava/lang/String;Ljava/lang/String;)Ljavax/persistence/EntityManagerFactory;
- (Ljava/lang/String;Ljava/lang/String;)Ljavax/persistence/EntityManagerFactory;
+ (L0java/lang/String;L0java/lang/String;)Ljavax/persistence/EntityManagerFactory; # @Generated(2,20)
 findNamedEntityManagerFactory
  (Ljava/lang/String;Ljava/lang/String;)Ljavax/persistence/EntityManagerFactory;
- (Ljava/lang/String;Ljava/lang/String;)Ljavax/persistence/EntityManagerFactory;
+ (Ljava/lang/String;L0java/lang/String;)Ljavax/persistence/EntityManagerFactory; # @Generated(20)
 getPersistenceContext
  (Ljava/lang/String;Z)Ljavax/persistence/EntityManager;
- (Ljava/lang/String;Z)L0javax/persistence/EntityManager;
+ (L0java/lang/String;Z)L0javax/persistence/EntityManager; # @Generated(2,22)
 getPersistenceUnit
  (Ljava/lang/String;)Ljavax/persistence/EntityManagerFactory;
- (Ljava/lang/String;)L0javax/persistence/EntityManagerFactory;
+ (L0java/lang/String;)L0javax/persistence/EntityManagerFactory; # @Generated(2,21)
 lookup
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<TT;>;)TT;
@@ -26,7 +26,7 @@ postProcessMergedBeanDefinition
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/Class<*>;Ljava/lang/String;)V
 postProcessProperties
  (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
- (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
+ (Lorg/springframework/beans/PropertyValues;L1java/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Overrides(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 postProcessPropertyValues
  (Lorg/springframework/beans/PropertyValues;[Ljava/beans/PropertyDescriptor;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
  (Lorg/springframework/beans/PropertyValues;[Ljava/beans/PropertyDescriptor;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
@@ -41,7 +41,7 @@ setBeanFactory
  (Lorg/springframework/beans/factory/BeanFactory;)V
 setDefaultPersistenceUnitName
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setExtendedPersistenceContexts
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V

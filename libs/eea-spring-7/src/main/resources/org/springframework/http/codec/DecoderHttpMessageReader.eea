@@ -8,13 +8,13 @@ super org/springframework/http/codec/HttpMessageReader
 
 <init>
  (Lorg/springframework/core/codec/Decoder<TT;>;)V
- (Lorg/springframework/core/codec/Decoder<TT;>;)V
+ (L1org/springframework/core/codec/Decoder<TT;>;)V # @Generated(2)
 canRead
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/MediaType;)Z
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/MediaType;)Z
+ (Lorg/springframework/core/ResolvableType;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.codec.HttpMessageReader)
 getContentType
  (Lorg/springframework/http/HttpMessage;)Lorg/springframework/http/MediaType;
- (Lorg/springframework/http/HttpMessage;)L0org/springframework/http/MediaType;
+ (L1org/springframework/http/HttpMessage;)L0org/springframework/http/MediaType; # @Generated(2,41)
 getDecoder
  ()Lorg/springframework/core/codec/Decoder<TT;>;
  ()Lorg/springframework/core/codec/Decoder<TT;>;
@@ -23,22 +23,22 @@ getReadHints
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 getReadHints
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/ReactiveHttpInputMessage;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/ReactiveHttpInputMessage;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/ReactiveHttpInputMessage;)L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(95)
 getReadableMediaTypes
  ()Ljava/util/List<Lorg/springframework/http/MediaType;>;
  ()Ljava/util/List<Lorg/springframework/http/MediaType;>;
 getReadableMediaTypes
  (Lorg/springframework/core/ResolvableType;)Ljava/util/List<Lorg/springframework/http/MediaType;>;
- (Lorg/springframework/core/ResolvableType;)Ljava/util/List<Lorg/springframework/http/MediaType;>;
+ (Lorg/springframework/core/ResolvableType;)L1java/util/List<Lorg/springframework/http/MediaType;>; # @Generated(44)
 read
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<TT;>;
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<TT;>;
 read
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/ReactiveHttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<TT;>;
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/ReactiveHttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<TT;>;
+ (Lorg/springframework/core/ResolvableType;L1org/springframework/http/ReactiveHttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<TT;>; # @Generated(43)
 readMono
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<TT;>;
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/server/reactive/ServerHttpRequest;Lorg/springframework/http/server/reactive/ServerHttpResponse;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<TT;>;
 readMono
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/ReactiveHttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<TT;>;
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/http/ReactiveHttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<TT;>;
+ (Lorg/springframework/core/ResolvableType;L1org/springframework/http/ReactiveHttpInputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<TT;>; # @Generated(43)

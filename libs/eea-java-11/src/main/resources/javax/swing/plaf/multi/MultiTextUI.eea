@@ -10,7 +10,7 @@ uis
 
 contains
  (Ljavax/swing/JComponent;II)Z
- (Ljavax/swing/JComponent;II)Z
+ (L1javax/swing/JComponent;II)Z # @Inherited(javax.swing.plaf.ComponentUI)
 damageRange
  (Ljavax/swing/text/JTextComponent;II)V
  (Ljavax/swing/text/JTextComponent;II)V
@@ -67,7 +67,7 @@ uninstallUI
  (Ljavax/swing/JComponent;)V
 update
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
- (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
+ (Ljava/awt/Graphics;L1javax/swing/JComponent;)V # @Inherited(javax.swing.plaf.ComponentUI)
 viewToModel
  (Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)I
  (Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)I
@@ -76,4 +76,4 @@ viewToModel
  (Ljavax/swing/text/JTextComponent;Ljava/awt/Point;[Ljavax/swing/text/Position$Bias;)I
 viewToModel2D
  (Ljavax/swing/text/JTextComponent;Ljava/awt/geom/Point2D;[Ljavax/swing/text/Position$Bias;)I
- (Ljavax/swing/text/JTextComponent;Ljava/awt/geom/Point2D;[Ljavax/swing/text/Position$Bias;)I
+ (Ljavax/swing/text/JTextComponent;L1java/awt/geom/Point2D;[Ljavax/swing/text/Position$Bias;)I # @Inherited(javax.swing.plaf.TextUI)

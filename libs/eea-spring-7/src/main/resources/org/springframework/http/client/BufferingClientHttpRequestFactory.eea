@@ -5,10 +5,10 @@ class org/springframework/http/client/BufferingClientHttpRequestFactory
  (Lorg/springframework/http/client/ClientHttpRequestFactory;)V
 <init>
  (Lorg/springframework/http/client/ClientHttpRequestFactory;Ljava/util/function/BiPredicate<Ljava/net/URI;Lorg/springframework/http/HttpMethod;>;)V
- (Lorg/springframework/http/client/ClientHttpRequestFactory;Ljava/util/function/BiPredicate<Ljava/net/URI;Lorg/springframework/http/HttpMethod;>;)V
+ (Lorg/springframework/http/client/ClientHttpRequestFactory;L0java/util/function/BiPredicate<Ljava/net/URI;Lorg/springframework/http/HttpMethod;>;)V # @Generated(60)
 createRequest
  (Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/client/ClientHttpRequestFactory;)Lorg/springframework/http/client/ClientHttpRequest;
- (Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/client/ClientHttpRequestFactory;)L1org/springframework/http/client/ClientHttpRequest; # @Inherited(org.springframework.http.client.AbstractClientHttpRequestFactoryWrapper)
+ (Ljava/net/URI;Lorg/springframework/http/HttpMethod;L1org/springframework/http/client/ClientHttpRequestFactory;)L1org/springframework/http/client/ClientHttpRequest; # @Overrides(org.springframework.http.client.AbstractClientHttpRequestFactoryWrapper)
 shouldBuffer
  (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)Z
  (Ljava/net/URI;Lorg/springframework/http/HttpMethod;)Z

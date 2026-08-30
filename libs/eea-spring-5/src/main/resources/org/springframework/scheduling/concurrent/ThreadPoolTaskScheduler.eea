@@ -5,7 +5,7 @@ cancelRemainingTask
  (Ljava/lang/Runnable;)V
 createExecutor
  (ILjava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)Ljava/util/concurrent/ScheduledExecutorService;
- (ILjava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)L1java/util/concurrent/ScheduledExecutorService;
+ (ILjava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)L1java/util/concurrent/ScheduledExecutorService; # @Generated(87)
 execute
  (Ljava/lang/Runnable;)V
  (L1java/lang/Runnable;)V # @Inherited(org.springframework.core.task.TaskExecutor)
@@ -14,7 +14,7 @@ execute
  (Ljava/lang/Runnable;J)V
 getClock
  ()Ljava/time/Clock;
- ()Ljava/time/Clock;
+ ()L1java/time/Clock; # @Inherited(org.springframework.scheduling.TaskScheduler)
 getScheduledExecutor
  ()Ljava/util/concurrent/ScheduledExecutorService;
  ()Ljava/util/concurrent/ScheduledExecutorService;
@@ -26,7 +26,7 @@ initializeExecutor
  (Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)Ljava/util/concurrent/ExecutorService;
 schedule
  (Ljava/lang/Runnable;Ljava/util/Date;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/util/Date;)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;L1java/util/Date;)Ljava/util/concurrent/ScheduledFuture<*>; # @Generated(22)
 schedule
  (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)Ljava/util/concurrent/ScheduledFuture<*>;
  (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)L0java/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
@@ -35,13 +35,13 @@ scheduleAtFixedRate
  (Ljava/lang/Runnable;J)Ljava/util/concurrent/ScheduledFuture<*>;
 scheduleAtFixedRate
  (Ljava/lang/Runnable;Ljava/util/Date;J)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/util/Date;J)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;L1java/util/Date;J)Ljava/util/concurrent/ScheduledFuture<*>; # @Generated(22)
 scheduleWithFixedDelay
  (Ljava/lang/Runnable;J)Ljava/util/concurrent/ScheduledFuture<*>;
  (Ljava/lang/Runnable;J)Ljava/util/concurrent/ScheduledFuture<*>;
 scheduleWithFixedDelay
  (Ljava/lang/Runnable;Ljava/util/Date;J)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/util/Date;J)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;L1java/util/Date;J)Ljava/util/concurrent/ScheduledFuture<*>; # @Generated(22)
 setClock
  (Ljava/time/Clock;)V
  (Ljava/time/Clock;)V
@@ -56,7 +56,7 @@ submit
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Ljava/util/concurrent/Future<TT;>;
 submitListenable
  (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
- (Ljava/lang/Runnable;)L1org/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/Runnable;)L1org/springframework/util/concurrent/ListenableFuture<*>; # @Generated(23)
 submitListenable
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>; # @Generated(61)

@@ -2,7 +2,7 @@ class java/security/cert/PKIXParameters
 
 <init>
  (Ljava/security/KeyStore;)V
- (Ljava/security/KeyStore;)V
+ (L1java/security/KeyStore;)V # @Generated
 <init>
  (Ljava/util/Set<Ljava/security/cert/TrustAnchor;>;)V
  (Ljava/util/Set<Ljava/security/cert/TrustAnchor;>;)V
@@ -17,13 +17,13 @@ clone
  ()L1java/lang/Object; # @Inherited(java.lang.Object)
 getCertPathCheckers
  ()Ljava/util/List<Ljava/security/cert/PKIXCertPathChecker;>;
- ()Ljava/util/List<Ljava/security/cert/PKIXCertPathChecker;>;
+ ()L1java/util/List<Ljava/security/cert/PKIXCertPathChecker;>; # @Generated(3)
 getCertStores
  ()Ljava/util/List<Ljava/security/cert/CertStore;>;
- ()Ljava/util/List<Ljava/security/cert/CertStore;>;
+ ()L1java/util/List<Ljava/security/cert/CertStore;>; # @Generated(3)
 getDate
  ()Ljava/util/Date;
- ()L0java/util/Date;
+ ()L0java/util/Date; # @Generated
 getInitialPolicies
  ()Ljava/util/Set<Ljava/lang/String;>;
  ()Ljava/util/Set<Ljava/lang/String;>;
@@ -32,7 +32,7 @@ getSigProvider
  ()Ljava/lang/String;
 getTargetCertConstraints
  ()Ljava/security/cert/CertSelector;
- ()L0java/security/cert/CertSelector;
+ ()L0java/security/cert/CertSelector; # @Generated
 getTrustAnchors
  ()Ljava/util/Set<Ljava/security/cert/TrustAnchor;>;
  ()Ljava/util/Set<Ljava/security/cert/TrustAnchor;>;
@@ -56,7 +56,7 @@ setTargetCertConstraints
  (Ljava/security/cert/CertSelector;)V
 setTrustAnchors
  (Ljava/util/Set<Ljava/security/cert/TrustAnchor;>;)V
- (Ljava/util/Set<Ljava/security/cert/TrustAnchor;>;)V
+ (L1java/util/Set<Ljava/security/cert/TrustAnchor;>;)V # @Generated(2)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

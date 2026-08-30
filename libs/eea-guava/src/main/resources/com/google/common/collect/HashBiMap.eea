@@ -11,13 +11,13 @@ super com/google/common/collect/BiMap
 
 create
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>()Lcom/google/common/collect/HashBiMap<TK;TV;>;
- <K:Ljava/lang/Object;V:Ljava/lang/Object;>()L1com/google/common/collect/HashBiMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>()L1com/google/common/collect/HashBiMap<TK;TV;>; # @Generated(45)
 create
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)Lcom/google/common/collect/HashBiMap<TK;TV;>;
- <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)L1com/google/common/collect/HashBiMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(I)L1com/google/common/collect/HashBiMap<TK;TV;>; # @Generated(46)
 create
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<+TK;+TV;>;)Lcom/google/common/collect/HashBiMap<TK;TV;>;
- <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<+TK;+TV;>;)L1com/google/common/collect/HashBiMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(L1java/util/Map<+TK;+TV;>;)L1com/google/common/collect/HashBiMap<TK;TV;>; # @Generated(44,70)
 
 containsKey
  (Ljava/lang/Object;)Z
@@ -33,10 +33,10 @@ forcePut
  (TK;TV;)T0V; # @Inherited(com.google.common.collect.BiMap)
 get
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)
+ (L0java/lang/Object;)T0V; # @Overrides(java.util.AbstractMap)
 inverse
  ()Lcom/google/common/collect/BiMap<TV;TK;>;
- ()Lcom/google/common/collect/BiMap<TV;TK;>;
+ ()L1com/google/common/collect/BiMap<TV;TK;>; # @Generated(3)
 keySet
  ()Ljava/util/Set<TK;>;
  ()L1java/util/Set<TK;>; # @Inherited(java.util.AbstractMap)
@@ -45,7 +45,7 @@ put
  (TK;TV;)T0V; # @Inherited(java.util.AbstractMap)
 remove
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)T0V; # @Overrides(java.util.AbstractMap)
+ (L0java/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)
 replaceAll
  (Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)V
  (L1java/util/function/BiFunction<-TK;-TV;+TV;>;)V # @Inherited(java.util.Map)

@@ -2,7 +2,7 @@ class org/apache/wicket/csp/ContentSecurityPolicySettings
 
 NONCE_KEY
  Lorg/apache/wicket/MetaDataKey<Ljava/lang/String;>;
- L1org/apache/wicket/MetaDataKey<Ljava/lang/String;>;
+ L1org/apache/wicket/MetaDataKey<Ljava/lang/String;>; # @Generated(1)
 
 <init>
  (Lorg/apache/wicket/Application;)V
@@ -15,7 +15,7 @@ createNonce
  ()L1java/lang/String;
 enforce
  (Lorg/apache/wicket/protocol/http/WebApplication;)V
- (Lorg/apache/wicket/protocol/http/WebApplication;)V
+ (L1org/apache/wicket/protocol/http/WebApplication;)V # @Generated
 getConfiguration
  ()Ljava/util/Map<Lorg/apache/wicket/csp/CSPHeaderMode;Lorg/apache/wicket/csp/CSPHeaderConfiguration;>;
  ()Ljava/util/Map<Lorg/apache/wicket/csp/CSPHeaderMode;Lorg/apache/wicket/csp/CSPHeaderConfiguration;>;
@@ -24,7 +24,7 @@ getHeaderWriter
  ()Lorg/apache/wicket/csp/CSPHeaderWriter;
 getNonce
  (Lorg/apache/wicket/request/cycle/RequestCycle;)Ljava/lang/String;
- (Lorg/apache/wicket/request/cycle/RequestCycle;)Ljava/lang/String;
+ (L1org/apache/wicket/request/cycle/RequestCycle;)L1java/lang/String; # @Generated(2,49)
 mustProtectRequest
  (Lorg/apache/wicket/request/IRequestHandler;)Z
  (Lorg/apache/wicket/request/IRequestHandler;)Z
@@ -33,7 +33,7 @@ reporting
  ()Lorg/apache/wicket/csp/CSPHeaderConfiguration;
 setNonceCreator
  (Ljava/util/function/Supplier<Ljava/lang/String;>;)Lorg/apache/wicket/csp/ContentSecurityPolicySettings;
- (Ljava/util/function/Supplier<Ljava/lang/String;>;)Lorg/apache/wicket/csp/ContentSecurityPolicySettings;
+ (Ljava/util/function/Supplier<Ljava/lang/String;>;)L1org/apache/wicket/csp/ContentSecurityPolicySettings; # @Generated(52)
 setProtectedFilter
  (Ljava/util/function/Predicate<Lorg/apache/wicket/request/IRequestHandler;>;)Lorg/apache/wicket/csp/ContentSecurityPolicySettings;
- (Ljava/util/function/Predicate<Lorg/apache/wicket/request/IRequestHandler;>;)Lorg/apache/wicket/csp/ContentSecurityPolicySettings;
+ (Ljava/util/function/Predicate<Lorg/apache/wicket/request/IRequestHandler;>;)L1org/apache/wicket/csp/ContentSecurityPolicySettings; # @Generated(78)

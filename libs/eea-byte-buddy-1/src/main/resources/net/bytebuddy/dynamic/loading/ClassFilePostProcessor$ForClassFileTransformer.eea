@@ -2,7 +2,7 @@ class net/bytebuddy/dynamic/loading/ClassFilePostProcessor$ForClassFileTransform
 
 ALL_PRIVILEGES
  Ljava/security/ProtectionDomain;
- L1java/security/ProtectionDomain;
+ L1java/security/ProtectionDomain; # @Generated
 
 <init>
  (Ljava/lang/instrument/ClassFileTransformer;)V
@@ -12,4 +12,4 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 transform
  (Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/security/ProtectionDomain;[B)[B
- (Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/security/ProtectionDomain;[B)[B
+ (L0java/lang/ClassLoader;L1java/lang/String;L0java/security/ProtectionDomain;[B)[B # @Overrides(net.bytebuddy.dynamic.loading.ClassFilePostProcessor)

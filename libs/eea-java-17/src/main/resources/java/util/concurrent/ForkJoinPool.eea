@@ -2,7 +2,7 @@ class java/util/concurrent/ForkJoinPool
 
 defaultForkJoinWorkerThreadFactory
  Ljava/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory;
- L1java/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory;
+ L1java/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory; # @Generated
 
 commonPool
  ()Ljava/util/concurrent/ForkJoinPool;
@@ -16,10 +16,10 @@ managedBlock
  (IL1java/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory;L0java/lang/Thread$UncaughtExceptionHandler;Z)V
 <init>
  (ILjava/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory;Ljava/lang/Thread$UncaughtExceptionHandler;ZIIILjava/util/function/Predicate<-Ljava/util/concurrent/ForkJoinPool;>;JLjava/util/concurrent/TimeUnit;)V
- (IL1java/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory;L0java/lang/Thread$UncaughtExceptionHandler;ZIIIL0java/util/function/Predicate<-Ljava/util/concurrent/ForkJoinPool;>;JL1java/util/concurrent/TimeUnit;)V
+ (IL1java/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory;L0java/lang/Thread$UncaughtExceptionHandler;ZIIIL0java/util/function/Predicate<-Ljava/util/concurrent/ForkJoinPool;>;JL1java/util/concurrent/TimeUnit;)V # @Generated(182)
 awaitQuiescence
  (JLjava/util/concurrent/TimeUnit;)Z
- (JL1java/util/concurrent/TimeUnit;)Z
+ (JL1java/util/concurrent/TimeUnit;)Z # @Generated
 awaitTermination
  (JLjava/util/concurrent/TimeUnit;)Z
  (JL1java/util/concurrent/TimeUnit;)Z # @Inherited(java.util.concurrent.ExecutorService)
@@ -40,7 +40,7 @@ getUncaughtExceptionHandler
  ()L0java/lang/Thread$UncaughtExceptionHandler;
 invoke
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/ForkJoinTask<TT;>;)TT;
- <T:Ljava/lang/Object;>(L1java/util/concurrent/ForkJoinTask<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/util/concurrent/ForkJoinTask<TT;>;)TT; # @Generated(24)
 invokeAll
  <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)Ljava/util/List<Ljava/util/concurrent/Future<TT;>;>;
  <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)L1java/util/List<L1java/util/concurrent/Future<TT;>;>; # @Inherited(java.util.concurrent.AbstractExecutorService)
@@ -49,7 +49,7 @@ invokeAll
  <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;JL1java/util/concurrent/TimeUnit;)L1java/util/List<L1java/util/concurrent/Future<TT;>;>; # @Inherited(java.util.concurrent.AbstractExecutorService)
 invokeAny
  <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)TT;
- <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)TT; # @Inherited(java.util.concurrent.AbstractExecutorService)
+ <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)T0T; # @Inherited(java.util.concurrent.AbstractExecutorService)
 invokeAny
  <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;JLjava/util/concurrent/TimeUnit;)TT;
  <T:Ljava/lang/Object;>(L1java/util/Collection<+L1java/util/concurrent/Callable<TT;>;>;JL1java/util/concurrent/TimeUnit;)TT; # @Inherited(java.util.concurrent.AbstractExecutorService)

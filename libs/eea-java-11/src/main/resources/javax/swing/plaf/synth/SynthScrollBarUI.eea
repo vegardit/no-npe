@@ -2,7 +2,7 @@ class javax/swing/plaf/synth/SynthScrollBarUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI; # @Generated(27)
 
 createDecreaseButton
  (I)Ljavax/swing/JButton;
@@ -18,25 +18,25 @@ getMinimumThumbSize
  ()Ljava/awt/Dimension;
 getPreferredSize
  (Ljavax/swing/JComponent;)Ljava/awt/Dimension;
- (Ljavax/swing/JComponent;)L1java/awt/Dimension; # @Inherited(javax.swing.plaf.basic.BasicScrollBarUI)
+ (L1javax/swing/JComponent;)L1java/awt/Dimension; # @Overrides(javax.swing.plaf.basic.BasicScrollBarUI)
 paint
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
- (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
+ (L1java/awt/Graphics;Ljavax/swing/JComponent;)V # @Inherited(javax.swing.plaf.basic.BasicScrollBarUI)
 paint
  (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;)V
  (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;)V
 paintBorder
  (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V
- (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V
+ (L1javax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V # @Generated(2)
 paintThumb
  (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;Ljava/awt/Rectangle;)V
- (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;Ljava/awt/Rectangle;)V
+ (L1javax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;Ljava/awt/Rectangle;)V # @Generated(2)
 paintTrack
  (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;Ljava/awt/Rectangle;)V
- (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;Ljava/awt/Rectangle;)V
+ (L1javax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;Ljava/awt/Rectangle;)V # @Generated(2)
 propertyChange
  (Ljava/beans/PropertyChangeEvent;)V
  (L1java/beans/PropertyChangeEvent;)V # @Inherited(java.beans.PropertyChangeListener)
 update
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
- (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
+ (Ljava/awt/Graphics;L1javax/swing/JComponent;)V # @Inherited(javax.swing.plaf.ComponentUI)

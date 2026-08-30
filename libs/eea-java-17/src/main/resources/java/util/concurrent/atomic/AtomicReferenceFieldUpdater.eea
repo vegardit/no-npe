@@ -4,11 +4,11 @@ class java/util/concurrent/atomic/AtomicReferenceFieldUpdater
 
 newUpdater
  <U:Ljava/lang/Object;W:Ljava/lang/Object;>(Ljava/lang/Class<TU;>;Ljava/lang/Class<TW;>;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater<TU;TW;>;
- <U:Ljava/lang/Object;W:Ljava/lang/Object;>(Ljava/lang/Class<TU;>;Ljava/lang/Class<TW;>;Ljava/lang/String;)L1java/util/concurrent/atomic/AtomicReferenceFieldUpdater<TU;TW;>;
+ <U:Ljava/lang/Object;W:Ljava/lang/Object;>(Ljava/lang/Class<TU;>;Ljava/lang/Class<TW;>;Ljava/lang/String;)L1java/util/concurrent/atomic/AtomicReferenceFieldUpdater<TU;TW;>; # @Generated(107)
 
 accumulateAndGet
  (TT;TV;Ljava/util/function/BinaryOperator<TV;>;)TV;
- (TT;TV;Ljava/util/function/BinaryOperator<TV;>;)TV;
+ (TT;TV;L1java/util/function/BinaryOperator<TV;>;)TV; # @Generated(8)
 compareAndSet
  (TT;TV;TV;)Z
  (TT;TV;TV;)Z
@@ -17,13 +17,13 @@ get
  (TT;)TV;
 getAndAccumulate
  (TT;TV;Ljava/util/function/BinaryOperator<TV;>;)TV;
- (TT;TV;Ljava/util/function/BinaryOperator<TV;>;)TV;
+ (TT;TV;L1java/util/function/BinaryOperator<TV;>;)TV; # @Generated(8)
 getAndSet
  (TT;TV;)TV;
  (TT;TV;)TV;
 getAndUpdate
  (TT;Ljava/util/function/UnaryOperator<TV;>;)TV;
- (TT;Ljava/util/function/UnaryOperator<TV;>;)TV;
+ (TT;L1java/util/function/UnaryOperator<TV;>;)TV; # @Generated(5)
 lazySet
  (TT;TV;)V
  (TT;TV;)V
@@ -32,7 +32,7 @@ set
  (TT;TV;)V
 updateAndGet
  (TT;Ljava/util/function/UnaryOperator<TV;>;)TV;
- (TT;Ljava/util/function/UnaryOperator<TV;>;)TV;
+ (TT;L1java/util/function/UnaryOperator<TV;>;)TV; # @Generated(5)
 weakCompareAndSet
  (TT;TV;TV;)Z
  (TT;TV;TV;)Z

@@ -14,7 +14,7 @@ getAdditionalProposalInfo
  ()L1java/lang/String; # @Overrides(org.eclipse.jface.text.contentassist.ICompletionProposal)
 getChange
  ()Lorg/eclipse/ltk/core/refactoring/Change;
- ()L0org/eclipse/ltk/core/refactoring/Change;
+ ()L0org/eclipse/ltk/core/refactoring/Change; # @Generated
 getContextInformation
  ()Lorg/eclipse/jface/text/contentassist/IContextInformation;
  ()L0org/eclipse/jface/text/contentassist/IContextInformation; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
@@ -26,7 +26,7 @@ getImage
  ()L0org/eclipse/swt/graphics/Image; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
 getSelection
  (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/swt/graphics/Point;
- (Lorg/eclipse/jface/text/IDocument;)L0org/eclipse/swt/graphics/Point; # @Overrides(org.eclipse.jface.text.contentassist.ICompletionProposal)
+ (L1org/eclipse/jface/text/IDocument;)L0org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
 getStyledDisplayString
  ()Lorg/eclipse/jface/viewers/StyledString;
  ()L1org/eclipse/jface/viewers/StyledString; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension6)

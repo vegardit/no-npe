@@ -2,7 +2,7 @@ class javax/management/remote/JMXConnectorServer
 
 AUTHENTICATOR
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 <init>
  (Ljavax/management/MBeanServer;)V
@@ -24,13 +24,13 @@ getMBeanServer
  ()Ljavax/management/MBeanServer;
 getNotificationInfo
  ()[Ljavax/management/MBeanNotificationInfo;
- ()[Ljavax/management/MBeanNotificationInfo;
+ ()[1Ljavax/management/MBeanNotificationInfo; # @Generated(3)
 postRegister
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
 preRegister
  (Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;
- (Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;
+ (Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)L1javax/management/ObjectName; # @Generated(62)
 setMBeanServerForwarder
  (Ljavax/management/remote/MBeanServerForwarder;)V
  (Ljavax/management/remote/MBeanServerForwarder;)V

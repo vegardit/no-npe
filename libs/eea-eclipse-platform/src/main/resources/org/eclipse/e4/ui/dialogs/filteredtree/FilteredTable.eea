@@ -6,7 +6,7 @@ super org/eclipse/jface/viewers/AbstractFilteredViewerComposite
 
 getBoldFont
  (Ljava/lang/Object;Lorg/eclipse/e4/ui/dialogs/filteredtree/FilteredTable;Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;)Lorg/eclipse/swt/graphics/Font;
- (Ljava/lang/Object;Lorg/eclipse/e4/ui/dialogs/filteredtree/FilteredTable;Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;)L0org/eclipse/swt/graphics/Font;
+ (Ljava/lang/Object;L1org/eclipse/e4/ui/dialogs/filteredtree/FilteredTable;Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;)L0org/eclipse/swt/graphics/Font; # @Generated(20,129)
 
 <init>
  (Lorg/eclipse/swt/widgets/Composite;)V
@@ -28,13 +28,13 @@ createTableControl
  (Lorg/eclipse/swt/widgets/Composite;I)L1org/eclipse/swt/widgets/Control;
 doCreateFilterText
  (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text;
- (L1org/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Text; # @Inherited(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Text; # @Overrides(org.eclipse.jface.viewers.AbstractFilteredViewerComposite)
 doCreateRefreshJob
  ()Lorg/eclipse/core/runtime/jobs/Job;
- ()L1org/eclipse/core/runtime/jobs/Job;
+ ()L1org/eclipse/core/runtime/jobs/Job; # @Generated
 doCreateTableViewer
  (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/jface/viewers/TableViewer;
- (Lorg/eclipse/swt/widgets/Composite;I)L1org/eclipse/jface/viewers/TableViewer;
+ (Lorg/eclipse/swt/widgets/Composite;I)L1org/eclipse/jface/viewers/TableViewer; # @Generated(39)
 getPatternFilter
  ()Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;
  ()Lorg/eclipse/e4/ui/dialogs/filteredtree/PatternFilter;

@@ -17,7 +17,7 @@ execute
  (Ljava/lang/Runnable;J)V
 getDefaultWorkManager
  ()Ljavax/resource/spi/work/WorkManager;
- ()L1javax/resource/spi/work/WorkManager;
+ ()L1javax/resource/spi/work/WorkManager; # @Generated
 scheduleWork
  (Ljavax/resource/spi/work/Work;)V
  (Ljavax/resource/spi/work/Work;)V
@@ -26,13 +26,13 @@ scheduleWork
  (Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)V
 setBootstrapContext
  (Ljavax/resource/spi/BootstrapContext;)V
- (Ljavax/resource/spi/BootstrapContext;)V
+ (L1javax/resource/spi/BootstrapContext;)V # @Generated
 setTaskDecorator
  (Lorg/springframework/core/task/TaskDecorator;)V
  (Lorg/springframework/core/task/TaskDecorator;)V
 setWorkListener
  (Ljavax/resource/spi/work/WorkListener;)V
- (Ljavax/resource/spi/work/WorkListener;)V
+ (L0javax/resource/spi/work/WorkListener;)V # @Generated
 setWorkManager
  (Ljavax/resource/spi/work/WorkManager;)V
  (Ljavax/resource/spi/work/WorkManager;)V
@@ -47,13 +47,13 @@ startWork
  (Ljavax/resource/spi/work/Work;JLjavax/resource/spi/work/ExecutionContext;Ljavax/resource/spi/work/WorkListener;)J
 submit
  (Ljava/lang/Runnable;)Ljava/util/concurrent/Future<*>;
- (Ljava/lang/Runnable;)L1java/util/concurrent/Future<*>;
+ (Ljava/lang/Runnable;)L1java/util/concurrent/Future<*>; # @Generated(23)
 submit
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Ljava/util/concurrent/Future<TT;>;
- <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1java/util/concurrent/Future<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1java/util/concurrent/Future<TT;>; # @Generated(61)
 submitListenable
  (Ljava/lang/Runnable;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
- (Ljava/lang/Runnable;)L1org/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/Runnable;)L1org/springframework/util/concurrent/ListenableFuture<*>; # @Generated(23)
 submitListenable
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>; # @Generated(61)

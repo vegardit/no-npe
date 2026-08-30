@@ -2,22 +2,22 @@ class org/springframework/expression/spel/support/MapAccessor
 
 canRead
  (Lorg/springframework/expression/EvaluationContext;Ljava/lang/Object;Ljava/lang/String;)Z
- (Lorg/springframework/expression/EvaluationContext;Ljava/lang/Object;Ljava/lang/String;)Z
+ (Lorg/springframework/expression/EvaluationContext;L0java/lang/Object;Ljava/lang/String;)Z # @Inherited(org.springframework.expression.PropertyAccessor)
 canWrite
  (Lorg/springframework/expression/EvaluationContext;Ljava/lang/Object;Ljava/lang/String;)Z
- (Lorg/springframework/expression/EvaluationContext;Ljava/lang/Object;Ljava/lang/String;)Z
+ (Lorg/springframework/expression/EvaluationContext;L0java/lang/Object;Ljava/lang/String;)Z # @Inherited(org.springframework.expression.PropertyAccessor)
 generateCode
  (Ljava/lang/String;Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;)V
- (Ljava/lang/String;Lorg/springframework/asm/MethodVisitor;Lorg/springframework/expression/spel/CodeFlow;)V
+ (Ljava/lang/String;L1org/springframework/asm/MethodVisitor;L1org/springframework/expression/spel/CodeFlow;)V # @Generated(20,59)
 getPropertyType
  ()Ljava/lang/Class<*>;
- ()L1java/lang/Class<*>;
+ ()L1java/lang/Class<*>; # @Generated(3)
 getSpecificTargetClasses
  ()[Ljava/lang/Class<*>;
  ()[0Ljava/lang/Class<*>; # @Inherited(org.springframework.expression.TargetedAccessor)
 read
  (Lorg/springframework/expression/EvaluationContext;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/expression/TypedValue;
- (Lorg/springframework/expression/EvaluationContext;Ljava/lang/Object;Ljava/lang/String;)L1org/springframework/expression/TypedValue;
+ (Lorg/springframework/expression/EvaluationContext;L0java/lang/Object;Ljava/lang/String;)L1org/springframework/expression/TypedValue; # @Overrides(org.springframework.expression.PropertyAccessor)
 write
  (Lorg/springframework/expression/EvaluationContext;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
- (Lorg/springframework/expression/EvaluationContext;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+ (Lorg/springframework/expression/EvaluationContext;L0java/lang/Object;Ljava/lang/String;L0java/lang/Object;)V # @Inherited(org.springframework.expression.PropertyAccessor)

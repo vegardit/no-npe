@@ -2,7 +2,7 @@ class org/springframework/instrument/classloading/ShadowingClassLoader
 
 DEFAULT_EXCLUDED_PACKAGES
  [Ljava/lang/String;
- [1Ljava/lang/String;
+ [1Ljava/lang/String; # @Generated(1)
 
 <init>
  (Ljava/lang/ClassLoader;)V
@@ -21,7 +21,7 @@ getResource
  (L1java/lang/String;)L0java/net/URL; # @Inherited(java.lang.ClassLoader)
 getResourceAsStream
  (Ljava/lang/String;)Ljava/io/InputStream;
- (Ljava/lang/String;)L0java/io/InputStream; # @Overrides(java.lang.ClassLoader)
+ (L1java/lang/String;)L0java/io/InputStream; # @Inherited(java.lang.ClassLoader)
 getResources
  (Ljava/lang/String;)Ljava/util/Enumeration<Ljava/net/URL;>;
  (L1java/lang/String;)L1java/util/Enumeration<L1java/net/URL;>; # @Inherited(java.lang.ClassLoader)

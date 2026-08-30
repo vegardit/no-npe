@@ -2,28 +2,28 @@ class org/springframework/remoting/httpinvoker/AbstractHttpInvokerRequestExecuto
 
 CONTENT_TYPE_SERIALIZED_OBJECT
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ENCODING_GZIP
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 HTTP_HEADER_ACCEPT_ENCODING
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 HTTP_HEADER_ACCEPT_LANGUAGE
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 HTTP_HEADER_CONTENT_ENCODING
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 HTTP_HEADER_CONTENT_LENGTH
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 HTTP_HEADER_CONTENT_TYPE
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 HTTP_METHOD_POST
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 logger
  Lorg/apache/commons/logging/Log;
@@ -31,7 +31,7 @@ logger
 
 createObjectInputStream
  (Ljava/io/InputStream;Ljava/lang/String;)Ljava/io/ObjectInputStream;
- (Ljava/io/InputStream;Ljava/lang/String;)L1java/io/ObjectInputStream;
+ (Ljava/io/InputStream;L0java/lang/String;)L1java/io/ObjectInputStream; # @Generated(23,42)
 decorateInputStream
  (Ljava/io/InputStream;)Ljava/io/InputStream;
  (Ljava/io/InputStream;)Ljava/io/InputStream;
@@ -43,25 +43,25 @@ doExecuteRequest
  (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Ljava/io/ByteArrayOutputStream;)Lorg/springframework/remoting/support/RemoteInvocationResult;
 doReadRemoteInvocationResult
  (Ljava/io/ObjectInputStream;)Lorg/springframework/remoting/support/RemoteInvocationResult;
- (Ljava/io/ObjectInputStream;)Lorg/springframework/remoting/support/RemoteInvocationResult;
+ (L1java/io/ObjectInputStream;)Lorg/springframework/remoting/support/RemoteInvocationResult; # @Generated(2)
 doWriteRemoteInvocation
  (Lorg/springframework/remoting/support/RemoteInvocation;Ljava/io/ObjectOutputStream;)V
- (Lorg/springframework/remoting/support/RemoteInvocation;Ljava/io/ObjectOutputStream;)V
+ (Lorg/springframework/remoting/support/RemoteInvocation;L1java/io/ObjectOutputStream;)V # @Generated(57)
 executeRequest
  (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/springframework/remoting/support/RemoteInvocation;)Lorg/springframework/remoting/support/RemoteInvocationResult;
  (Lorg/springframework/remoting/httpinvoker/HttpInvokerClientConfiguration;Lorg/springframework/remoting/support/RemoteInvocation;)Lorg/springframework/remoting/support/RemoteInvocationResult;
 getBeanClassLoader
  ()Ljava/lang/ClassLoader;
- ()L0java/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Generated
 getByteArrayOutputStream
  (Lorg/springframework/remoting/support/RemoteInvocation;)Ljava/io/ByteArrayOutputStream;
- (Lorg/springframework/remoting/support/RemoteInvocation;)Ljava/io/ByteArrayOutputStream;
+ (Lorg/springframework/remoting/support/RemoteInvocation;)L1java/io/ByteArrayOutputStream; # @Generated(58)
 getContentType
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 readRemoteInvocationResult
  (Ljava/io/InputStream;Ljava/lang/String;)Lorg/springframework/remoting/support/RemoteInvocationResult;
- (Ljava/io/InputStream;Ljava/lang/String;)Lorg/springframework/remoting/support/RemoteInvocationResult;
+ (Ljava/io/InputStream;L0java/lang/String;)Lorg/springframework/remoting/support/RemoteInvocationResult; # @Generated(23)
 setBeanClassLoader
  (Ljava/lang/ClassLoader;)V
  (Ljava/lang/ClassLoader;)V

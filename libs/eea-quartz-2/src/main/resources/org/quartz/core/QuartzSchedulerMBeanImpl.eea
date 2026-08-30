@@ -27,25 +27,25 @@ deleteJob
  (Ljava/lang/String;Ljava/lang/String;)Z
 getAllJobDetails
  ()Ljavax/management/openmbean/TabularData;
- ()Ljavax/management/openmbean/TabularData;
+ ()L1javax/management/openmbean/TabularData; # @Generated
 getAllTriggers
  ()Ljava/util/List<Ljavax/management/openmbean/CompositeData;>;
- ()Ljava/util/List<Ljavax/management/openmbean/CompositeData;>;
+ ()L1java/util/List<Ljavax/management/openmbean/CompositeData;>; # @Generated(3)
 getCalendarNames
  ()Ljava/util/List<Ljava/lang/String;>;
  ()Ljava/util/List<Ljava/lang/String;>;
 getCurrentlyExecutingJobs
  ()Ljavax/management/openmbean/TabularData;
- ()Ljavax/management/openmbean/TabularData;
+ ()L1javax/management/openmbean/TabularData; # @Generated
 getJobDetail
  (Ljava/lang/String;Ljava/lang/String;)Ljavax/management/openmbean/CompositeData;
- (Ljava/lang/String;Ljava/lang/String;)Ljavax/management/openmbean/CompositeData;
+ (Ljava/lang/String;Ljava/lang/String;)L1javax/management/openmbean/CompositeData; # @Generated(39)
 getJobGroupNames
  ()Ljava/util/List<Ljava/lang/String;>;
  ()Ljava/util/List<Ljava/lang/String;>;
 getJobNames
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
- (Ljava/lang/String;)L1java/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)L1java/util/List<Ljava/lang/String;>; # @Generated(21)
 getJobStoreClassName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -54,13 +54,13 @@ getName
  ()L1java/lang/String; # @Inherited(org.quartz.JobListener)
 getNotificationInfo
  ()[Ljavax/management/MBeanNotificationInfo;
- ()[Ljavax/management/MBeanNotificationInfo;
+ ()[1Ljavax/management/MBeanNotificationInfo; # @Generated(3)
 getPausedTriggerGroups
  ()Ljava/util/Set<Ljava/lang/String;>;
  ()Ljava/util/Set<Ljava/lang/String;>;
 getPerformanceMetrics
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Long;>;
- ()L1java/util/Map<Ljava/lang/String;Ljava/lang/Long;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/lang/Long;>; # @Generated(3)
 getSchedulerInstanceId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -72,19 +72,19 @@ getThreadPoolClassName
  ()Ljava/lang/String;
 getTrigger
  (Ljava/lang/String;Ljava/lang/String;)Ljavax/management/openmbean/CompositeData;
- (Ljava/lang/String;Ljava/lang/String;)Ljavax/management/openmbean/CompositeData;
+ (Ljava/lang/String;Ljava/lang/String;)L1javax/management/openmbean/CompositeData; # @Generated(39)
 getTriggerGroupNames
  ()Ljava/util/List<Ljava/lang/String;>;
  ()Ljava/util/List<Ljava/lang/String;>;
 getTriggerNames
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
- (Ljava/lang/String;)L1java/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)L1java/util/List<Ljava/lang/String;>; # @Generated(21)
 getTriggerState
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 getTriggersOfJob
  (Ljava/lang/String;Ljava/lang/String;)Ljava/util/List<Ljavax/management/openmbean/CompositeData;>;
- (Ljava/lang/String;Ljava/lang/String;)Ljava/util/List<Ljavax/management/openmbean/CompositeData;>;
+ (Ljava/lang/String;Ljava/lang/String;)L1java/util/List<Ljavax/management/openmbean/CompositeData;>; # @Generated(39)
 getVersion
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -99,16 +99,16 @@ jobAdded
  (Lorg/quartz/JobDetail;)V
 jobDeleted
  (Lorg/quartz/JobKey;)V
- (Lorg/quartz/JobKey;)V
+ (L1org/quartz/JobKey;)V # @Generated
 jobExecutionVetoed
  (Lorg/quartz/JobExecutionContext;)V
  (L1org/quartz/JobExecutionContext;)V # @Inherited(org.quartz.JobListener)
 jobPaused
  (Lorg/quartz/JobKey;)V
- (Lorg/quartz/JobKey;)V
+ (L1org/quartz/JobKey;)V # @Generated
 jobResumed
  (Lorg/quartz/JobKey;)V
- (Lorg/quartz/JobKey;)V
+ (L1org/quartz/JobKey;)V # @Generated
 jobScheduled
  (Lorg/quartz/Trigger;)V
  (Lorg/quartz/Trigger;)V
@@ -117,7 +117,7 @@ jobToBeExecuted
  (L1org/quartz/JobExecutionContext;)V # @Inherited(org.quartz.JobListener)
 jobUnscheduled
  (Lorg/quartz/TriggerKey;)V
- (Lorg/quartz/TriggerKey;)V
+ (L1org/quartz/TriggerKey;)V # @Generated
 jobWasExecuted
  (Lorg/quartz/JobExecutionContext;Lorg/quartz/JobExecutionException;)V
  (L1org/quartz/JobExecutionContext;L0org/quartz/JobExecutionException;)V # @Inherited(org.quartz.JobListener)
@@ -213,7 +213,7 @@ scheduleJob
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
 schedulerError
  (Ljava/lang/String;Lorg/quartz/SchedulerException;)V
- (Ljava/lang/String;Lorg/quartz/SchedulerException;)V
+ (Ljava/lang/String;L1org/quartz/SchedulerException;)V # @Generated(20)
 sendNotification
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -225,7 +225,7 @@ sendNotification
  (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)V
 triggerFinalized
  (Lorg/quartz/Trigger;)V
- (Lorg/quartz/Trigger;)V
+ (L1org/quartz/Trigger;)V # @Generated
 triggerJob
  (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
  (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V

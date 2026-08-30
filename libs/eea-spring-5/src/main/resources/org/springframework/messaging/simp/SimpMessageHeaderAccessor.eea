@@ -2,120 +2,120 @@ class org/springframework/messaging/simp/SimpMessageHeaderAccessor
 
 CONNECT_MESSAGE_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 DESTINATION_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 DISCONNECT_MESSAGE_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 HEART_BEAT_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 IGNORE_ERROR
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 MESSAGE_TYPE_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ORIGINAL_DESTINATION
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 SESSION_ATTRIBUTES
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 SESSION_ID_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 SUBSCRIPTION_ID_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 USER_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 create
  ()Lorg/springframework/messaging/simp/SimpMessageHeaderAccessor;
- ()L1org/springframework/messaging/simp/SimpMessageHeaderAccessor;
+ ()L1org/springframework/messaging/simp/SimpMessageHeaderAccessor; # @Generated
 create
  (Lorg/springframework/messaging/simp/SimpMessageType;)Lorg/springframework/messaging/simp/SimpMessageHeaderAccessor;
- (Lorg/springframework/messaging/simp/SimpMessageType;)L1org/springframework/messaging/simp/SimpMessageHeaderAccessor;
+ (Lorg/springframework/messaging/simp/SimpMessageType;)L1org/springframework/messaging/simp/SimpMessageHeaderAccessor; # @Generated(55)
 getDestination
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/String;
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/lang/String;
+ (L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/lang/String; # @Generated(2,56)
 getHeartbeat
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)[J
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)[0J
+ (L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)[0J # @Generated(2,56)
 getMessageType
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/messaging/simp/SimpMessageType;
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0org/springframework/messaging/simp/SimpMessageType;
+ (L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0org/springframework/messaging/simp/SimpMessageType; # @Generated(2,56)
 getSessionAttributes
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(2,56)
 getSessionId
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/String;
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/lang/String;
+ (L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/lang/String; # @Generated(2,56)
 getSubscriptionId
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/String;
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/lang/String;
+ (L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/lang/String; # @Generated(2,56)
 getUser
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/security/Principal;
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/security/Principal;
+ (L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L0java/security/Principal; # @Generated(2,56)
 wrap
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/simp/SimpMessageHeaderAccessor;
- (Lorg/springframework/messaging/Message<*>;)L1org/springframework/messaging/simp/SimpMessageHeaderAccessor;
+ (Lorg/springframework/messaging/Message<*>;)L1org/springframework/messaging/simp/SimpMessageHeaderAccessor; # @Generated(45)
 
 <init>
  (Lorg/springframework/messaging/Message<*>;)V
  (Lorg/springframework/messaging/Message<*>;)V
 <init>
  (Lorg/springframework/messaging/simp/SimpMessageType;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)V
- (Lorg/springframework/messaging/simp/SimpMessageType;Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)V
+ (Lorg/springframework/messaging/simp/SimpMessageType;L0java/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;)V # @Generated(54)
 createAccessor
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/support/MessageHeaderAccessor;
  (Lorg/springframework/messaging/Message<*>;)L1org/springframework/messaging/support/MessageHeaderAccessor; # @Inherited(org.springframework.messaging.support.MessageHeaderAccessor)
 getDestination
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 getDetailedLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)L1java/lang/String; # @Inherited(org.springframework.messaging.support.MessageHeaderAccessor)
+ (L0java/lang/Object;)L1java/lang/String; # @Inherited(org.springframework.messaging.support.MessageHeaderAccessor)
 getMessageType
  ()Lorg/springframework/messaging/simp/SimpMessageType;
- ()L0org/springframework/messaging/simp/SimpMessageType;
+ ()L0org/springframework/messaging/simp/SimpMessageType; # @Generated
 getSessionAttributes
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- ()L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ ()L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(3)
 getSessionId
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 getShortLogMessage
  (Ljava/lang/Object;)Ljava/lang/String;
  (Ljava/lang/Object;)L1java/lang/String; # @Inherited(org.springframework.messaging.support.MessageHeaderAccessor)
 getSubscriptionId
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 getUser
  ()Ljava/security/Principal;
- ()L0java/security/Principal;
+ ()L0java/security/Principal; # @Generated
 setDestination
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setMessageTypeIfNotSet
  (Lorg/springframework/messaging/simp/SimpMessageType;)V
  (Lorg/springframework/messaging/simp/SimpMessageType;)V
 setSessionAttributes
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
- (Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+ (L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V # @Generated(2)
 setSessionId
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setSubscriptionId
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setUser
  (Ljava/security/Principal;)V
- (Ljava/security/Principal;)V
+ (L0java/security/Principal;)V # @Generated
 setUserChangeCallback
  (Ljava/util/function/Consumer<Ljava/security/Principal;>;)V
  (Ljava/util/function/Consumer<Ljava/security/Principal;>;)V

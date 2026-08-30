@@ -2,20 +2,20 @@ class org/springframework/orm/jpa/support/OpenEntityManagerInViewFilter
 
 DEFAULT_ENTITY_MANAGER_FACTORY_BEAN_NAME
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 createEntityManager
  (Ljakarta/persistence/EntityManagerFactory;)Ljakarta/persistence/EntityManager;
- (Ljakarta/persistence/EntityManagerFactory;)L1jakarta/persistence/EntityManager;
+ (L1jakarta/persistence/EntityManagerFactory;)L1jakarta/persistence/EntityManager; # @Generated(2)
 doFilterInternal
  (Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;Ljakarta/servlet/FilterChain;)V
- (Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;Ljakarta/servlet/FilterChain;)V
+ (Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;L1jakarta/servlet/FilterChain;)V # @Generated(85)
 getEntityManagerFactoryBeanName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 getPersistenceUnitName
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 lookupEntityManagerFactory
  ()Ljakarta/persistence/EntityManagerFactory;
  ()Ljakarta/persistence/EntityManagerFactory;
@@ -24,7 +24,7 @@ lookupEntityManagerFactory
  (Ljakarta/servlet/http/HttpServletRequest;)Ljakarta/persistence/EntityManagerFactory;
 setEntityManagerFactoryBeanName
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setPersistenceUnitName
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated

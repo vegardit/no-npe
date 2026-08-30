@@ -2,16 +2,16 @@ class java/text/ListFormat
 
 getAvailableLocales
  ()[Ljava/util/Locale;
- ()[Ljava/util/Locale;
+ ()[1Ljava/util/Locale; # @Generated(3)
 getInstance
  ()Ljava/text/ListFormat;
- ()L1java/text/ListFormat;
+ ()L1java/text/ListFormat; # @Generated
 getInstance
  (Ljava/util/Locale;Ljava/text/ListFormat$Type;Ljava/text/ListFormat$Style;)Ljava/text/ListFormat;
- (Ljava/util/Locale;Ljava/text/ListFormat$Type;Ljava/text/ListFormat$Style;)L1java/text/ListFormat;
+ (Ljava/util/Locale;Ljava/text/ListFormat$Type;Ljava/text/ListFormat$Style;)L1java/text/ListFormat; # @Generated(76)
 getInstance
  ([Ljava/lang/String;)Ljava/text/ListFormat;
- ([Ljava/lang/String;)Ljava/text/ListFormat;
+ ([Ljava/lang/String;)L1java/text/ListFormat; # @Generated(22)
 
 equals
  (Ljava/lang/Object;)Z
@@ -30,13 +30,13 @@ getLocale
  ()Ljava/util/Locale;
 getPatterns
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Generated(3)
 parse
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
 parseObject
  (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;
- (Ljava/lang/String;Ljava/text/ParsePosition;)L0java/lang/Object; # @Overrides(java.text.Format)
+ (L1java/lang/String;L1java/text/ParsePosition;)L0java/lang/Object; # @Inherited(java.text.Format)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

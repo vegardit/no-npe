@@ -17,7 +17,7 @@ batchUpdate
  (Ljava/lang/String;[Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Lorg/springframework/jdbc/support/KeyHolder;)[I
 batchUpdate
  (Ljava/lang/String;[Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Lorg/springframework/jdbc/support/KeyHolder;[Ljava/lang/String;)[I
- (Ljava/lang/String;[Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Lorg/springframework/jdbc/support/KeyHolder;[Ljava/lang/String;)[I
+ (Ljava/lang/String;[Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Lorg/springframework/jdbc/support/KeyHolder;[0Ljava/lang/String;)[I # @Generated(126)
 execute
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;Lorg/springframework/jdbc/core/PreparedStatementCallback<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;Lorg/springframework/jdbc/core/PreparedStatementCallback<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations)
@@ -41,10 +41,10 @@ getPreparedStatementCreator
  (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)Lorg/springframework/jdbc/core/PreparedStatementCreator;
 getPreparedStatementCreator
  (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Ljava/util/function/Consumer<Lorg/springframework/jdbc/core/PreparedStatementCreatorFactory;>;)Lorg/springframework/jdbc/core/PreparedStatementCreator;
- (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Ljava/util/function/Consumer<Lorg/springframework/jdbc/core/PreparedStatementCreatorFactory;>;)Lorg/springframework/jdbc/core/PreparedStatementCreator;
+ (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;L0java/util/function/Consumer<Lorg/springframework/jdbc/core/PreparedStatementCreatorFactory;>;)Lorg/springframework/jdbc/core/PreparedStatementCreator; # @Generated(81)
 getPreparedStatementCreatorFactory
  (Lorg/springframework/jdbc/core/namedparam/ParsedSql;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)Lorg/springframework/jdbc/core/PreparedStatementCreatorFactory;
- (Lorg/springframework/jdbc/core/namedparam/ParsedSql;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)L1org/springframework/jdbc/core/PreparedStatementCreatorFactory;
+ (Lorg/springframework/jdbc/core/namedparam/ParsedSql;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)L1org/springframework/jdbc/core/PreparedStatementCreatorFactory; # @Generated(116)
 query
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;Lorg/springframework/jdbc/core/RowCallbackHandler;)V
@@ -86,10 +86,10 @@ queryForList
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
 queryForMap
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(57)
 queryForMap
  (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(82)
 queryForObject
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;Ljava/lang/Class<TT;>;)T0T; # @Inherited(org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations)
@@ -107,7 +107,7 @@ queryForRowSet
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/jdbc/support/rowset/SqlRowSet;
 queryForRowSet
  (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)Lorg/springframework/jdbc/support/rowset/SqlRowSet;
- (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)Lorg/springframework/jdbc/support/rowset/SqlRowSet;
+ (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;)L0org/springframework/jdbc/support/rowset/SqlRowSet; # @Generated(82)
 queryForStream
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;Lorg/springframework/jdbc/core/RowMapper<TT;>;)Ljava/util/stream/Stream<TT;>;
@@ -125,4 +125,4 @@ update
  (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Lorg/springframework/jdbc/support/KeyHolder;)I
 update
  (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Lorg/springframework/jdbc/support/KeyHolder;[Ljava/lang/String;)I
- (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Lorg/springframework/jdbc/support/KeyHolder;[Ljava/lang/String;)I
+ (Ljava/lang/String;Lorg/springframework/jdbc/core/namedparam/SqlParameterSource;Lorg/springframework/jdbc/support/KeyHolder;[0Ljava/lang/String;)I # @Generated(125)

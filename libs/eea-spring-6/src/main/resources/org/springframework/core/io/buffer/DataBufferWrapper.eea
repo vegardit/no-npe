@@ -11,7 +11,7 @@ asByteBuffer
  (II)Ljava/nio/ByteBuffer;
 asInputStream
  ()Ljava/io/InputStream;
- ()Ljava/io/InputStream;
+ ()L1java/io/InputStream; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
 asInputStream
  (Z)Ljava/io/InputStream;
  (Z)L1java/io/InputStream; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
@@ -26,7 +26,7 @@ dataBuffer
  ()Lorg/springframework/core/io/buffer/DataBuffer;
 ensureCapacity
  (I)Lorg/springframework/core/io/buffer/DataBuffer;
- (I)Lorg/springframework/core/io/buffer/DataBuffer;
+ (I)L1org/springframework/core/io/buffer/DataBuffer; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
 ensureWritable
  (I)Lorg/springframework/core/io/buffer/DataBuffer;
  (I)Lorg/springframework/core/io/buffer/DataBuffer;
@@ -71,7 +71,7 @@ toByteBuffer
  (ILjava/nio/ByteBuffer;II)V
 toByteBuffer
  (Ljava/nio/ByteBuffer;)V
- (Ljava/nio/ByteBuffer;)V
+ (L1java/nio/ByteBuffer;)V # @Inherited(org.springframework.core.io.buffer.DataBuffer)
 toString
  (IILjava/nio/charset/Charset;)Ljava/lang/String;
  (IILjava/nio/charset/Charset;)Ljava/lang/String;
@@ -86,7 +86,7 @@ write
  (B)Lorg/springframework/core/io/buffer/DataBuffer;
 write
  (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lorg/springframework/core/io/buffer/DataBuffer;
- (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lorg/springframework/core/io/buffer/DataBuffer;
+ (L1java/lang/CharSequence;Ljava/nio/charset/Charset;)L1org/springframework/core/io/buffer/DataBuffer; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
 write
  ([B)Lorg/springframework/core/io/buffer/DataBuffer;
  ([B)Lorg/springframework/core/io/buffer/DataBuffer;

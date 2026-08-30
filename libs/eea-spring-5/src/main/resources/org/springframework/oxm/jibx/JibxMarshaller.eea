@@ -2,7 +2,7 @@ class org/springframework/oxm/jibx/JibxMarshaller
 
 convertJibxException
  (Lorg/jibx/runtime/JiBXException;Z)Lorg/springframework/oxm/XmlMappingException;
- (Lorg/jibx/runtime/JiBXException;Z)L1org/springframework/oxm/XmlMappingException;
+ (Lorg/jibx/runtime/JiBXException;Z)L1org/springframework/oxm/XmlMappingException; # @Generated(36)
 createMarshallingContext
  ()Lorg/jibx/runtime/IMarshallingContext;
  ()L1org/jibx/runtime/IMarshallingContext;
@@ -20,7 +20,7 @@ marshalOutputStream
  (Ljava/lang/Object;Ljava/io/OutputStream;)V
 marshalSaxHandlers
  (Ljava/lang/Object;Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;)V
- (Ljava/lang/Object;Lorg/xml/sax/ContentHandler;Lorg/xml/sax/ext/LexicalHandler;)V
+ (Ljava/lang/Object;Lorg/xml/sax/ContentHandler;L0org/xml/sax/ext/LexicalHandler;)V # @Inherited(org.springframework.oxm.support.AbstractMarshaller)
 marshalWriter
  (Ljava/lang/Object;Ljava/io/Writer;)V
  (Ljava/lang/Object;Ljava/io/Writer;)V
@@ -71,7 +71,7 @@ unmarshalReader
  (Ljava/io/Reader;)Ljava/lang/Object;
 unmarshalSaxReader
  (Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)Ljava/lang/Object;
- (Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)Ljava/lang/Object;
+ (Lorg/xml/sax/XMLReader;L1org/xml/sax/InputSource;)Ljava/lang/Object; # @Generated(25)
 unmarshalXmlEventReader
  (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;
  (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;

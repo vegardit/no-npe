@@ -8,18 +8,18 @@ super org/eclipse/equinox/p2/query/IQueryResult
 
 EMPTY_COLLECTOR
  Lorg/eclipse/equinox/p2/query/Collector<*>;
- L1org/eclipse/equinox/p2/query/Collector<*>;
+ L1org/eclipse/equinox/p2/query/Collector<*>; # @Generated(1)
 
 emptyCollector
  <T:Ljava/lang/Object;>()Lorg/eclipse/equinox/p2/query/Collector<TT;>;
- <T:Ljava/lang/Object;>()Lorg/eclipse/equinox/p2/query/Collector<TT;>;
+ <T:Ljava/lang/Object;>()L1org/eclipse/equinox/p2/query/Collector<TT;>; # @Generated(25)
 
 accept
  (TT;)Z
  (TT;)Z
 addAll
  (Lorg/eclipse/equinox/p2/query/IQueryResult<TT;>;)V
- (Lorg/eclipse/equinox/p2/query/IQueryResult<TT;>;)V
+ (L1org/eclipse/equinox/p2/query/IQueryResult<TT;>;)V # @Generated(2)
 getCollection
  ()Ljava/util/Collection<TT;>;
  ()Ljava/util/Collection<TT;>;
@@ -28,16 +28,16 @@ iterator
  ()L1java/util/Iterator<TT;>; # @Inherited(org.eclipse.equinox.p2.query.IQueryResult)
 query
  (Lorg/eclipse/equinox/p2/query/IQuery<TT;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryResult<TT;>;
- (Lorg/eclipse/equinox/p2/query/IQuery<TT;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryResult<TT;>;
+ (L1org/eclipse/equinox/p2/query/IQuery<TT;>;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/equinox/p2/query/IQueryResult<TT;>; # @Generated(2)
 stream
  ()Ljava/util/stream/Stream<TT;>;
- ()Ljava/util/stream/Stream<TT;>;
+ ()L1java/util/stream/Stream<TT;>; # @Inherited(org.eclipse.equinox.p2.query.IQueryResult)
 toArray
  (Ljava/lang/Class<TT;>;)[TT;
  (Ljava/lang/Class<TT;>;)[TT;
 toSet
  ()Ljava/util/Set<TT;>;
- ()L1java/util/Set<TT;>;
+ ()L1java/util/Set<TT;>; # @Generated(3)
 toUnmodifiableSet
  ()Ljava/util/Set<TT;>;
  ()Ljava/util/Set<TT;>;

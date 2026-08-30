@@ -2,7 +2,7 @@ class java/awt/ScrollPane
 
 addImpl
  (Ljava/awt/Component;Ljava/lang/Object;I)V
- (Ljava/awt/Component;Ljava/lang/Object;I)V
+ (L1java/awt/Component;Ljava/lang/Object;I)V # @Inherited(java.awt.Container)
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -11,13 +11,13 @@ getHAdjustable
  ()Ljava/awt/Adjustable;
 getScrollPosition
  ()Ljava/awt/Point;
- ()Ljava/awt/Point;
+ ()L1java/awt/Point; # @Generated
 getVAdjustable
  ()Ljava/awt/Adjustable;
  ()Ljava/awt/Adjustable;
 getViewportSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L1java/awt/Dimension; # @Generated
 paramString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.awt.Container)

@@ -2,7 +2,7 @@ class org/eclipse/ui/texteditor/AbstractDecoratedTextEditor
 
 DEFAULT_OVERVIEW_RULER_CONTEXT_MENU_ID
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 fAnnotationAccess
  Lorg/eclipse/jface/text/source/IAnnotationAccess;
@@ -19,34 +19,34 @@ fSourceViewerDecorationSupport
 
 collectContextMenuPreferencePages
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Generated(3)
 collectOverviewRulerMenuPreferencePages
  ()[Ljava/lang/String;
- ()[Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Generated(3)
 collectRulerMenuPreferencePages
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
 configureSourceViewerDecorationSupport
  (Lorg/eclipse/ui/texteditor/SourceViewerDecorationSupport;)V
- (Lorg/eclipse/ui/texteditor/SourceViewerDecorationSupport;)V
+ (L1org/eclipse/ui/texteditor/SourceViewerDecorationSupport;)V # @Generated
 createAnnotationAccess
  ()Lorg/eclipse/jface/text/source/IAnnotationAccess;
- ()L1org/eclipse/jface/text/source/IAnnotationAccess;
+ ()L1org/eclipse/jface/text/source/IAnnotationAccess; # @Generated
 createAnnotationRulerColumn
  (Lorg/eclipse/jface/text/source/CompositeRuler;)Lorg/eclipse/jface/text/source/IVerticalRulerColumn;
- (L1org/eclipse/jface/text/source/CompositeRuler;)Lorg/eclipse/jface/text/source/IVerticalRulerColumn;
+ (L1org/eclipse/jface/text/source/CompositeRuler;)L1org/eclipse/jface/text/source/IVerticalRulerColumn; # @Generated(49)
 createChangeHover
  ()Lorg/eclipse/jface/text/source/LineChangeHover;
- ()L1org/eclipse/jface/text/source/LineChangeHover;
+ ()L1org/eclipse/jface/text/source/LineChangeHover; # @Generated
 createChangeRulerColumn
  ()Lorg/eclipse/jface/text/source/IChangeRulerColumn;
- ()L1org/eclipse/jface/text/source/IChangeRulerColumn;
+ ()L1org/eclipse/jface/text/source/IChangeRulerColumn; # @Generated
 createColumnSupport
  ()Lorg/eclipse/ui/texteditor/rulers/IColumnSupport;
  ()L1org/eclipse/ui/texteditor/rulers/IColumnSupport; # @Overrides(org.eclipse.ui.texteditor.AbstractTextEditor)
 createCompositeRuler
  ()Lorg/eclipse/jface/text/source/CompositeRuler;
- ()L1org/eclipse/jface/text/source/CompositeRuler;
+ ()L1org/eclipse/jface/text/source/CompositeRuler; # @Generated
 createContextMenuListener
  ()Lorg/eclipse/jface/action/IMenuListener;
  ()L1org/eclipse/jface/action/IMenuListener; # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
@@ -55,13 +55,13 @@ createLineNumberRulerColumn
  ()L1org/eclipse/jface/text/source/IVerticalRulerColumn;
 createOverviewRuler
  (Lorg/eclipse/jface/text/source/ISharedTextColors;)Lorg/eclipse/jface/text/source/IOverviewRuler;
- (Lorg/eclipse/jface/text/source/ISharedTextColors;)L1org/eclipse/jface/text/source/IOverviewRuler;
+ (Lorg/eclipse/jface/text/source/ISharedTextColors;)L1org/eclipse/jface/text/source/IOverviewRuler; # @Generated(52)
 createPartControl
  (Lorg/eclipse/swt/widgets/Composite;)V
  (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.texteditor.StatusTextEditor)
 createShowInTargetList
  ()[Ljava/lang/String;
- ()[1Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Generated(3)
 createSourceViewer
  (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)Lorg/eclipse/jface/text/source/ISourceViewer;
  (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)L1org/eclipse/jface/text/source/ISourceViewer; # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
@@ -76,7 +76,7 @@ doSetInput
  (Lorg/eclipse/ui/IEditorInput;)V
 editorContextMenuAboutToShow
  (Lorg/eclipse/jface/action/IMenuManager;)V
- (Lorg/eclipse/jface/action/IMenuManager;)V
+ (L1org/eclipse/jface/action/IMenuManager;)V # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
@@ -106,10 +106,10 @@ getSourceViewerDecorationSupport
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/ui/texteditor/SourceViewerDecorationSupport;
 getUndoRedoOperationApprover
  (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IOperationApprover;
- (Lorg/eclipse/core/commands/operations/IUndoContext;)Lorg/eclipse/core/commands/operations/IOperationApprover;
+ (Lorg/eclipse/core/commands/operations/IUndoContext;)L1org/eclipse/core/commands/operations/IOperationApprover; # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
 gotoAnnotation
  (Z)Lorg/eclipse/jface/text/source/Annotation;
- (Z)Lorg/eclipse/jface/text/source/Annotation;
+ (Z)L0org/eclipse/jface/text/source/Annotation; # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
 gotoMarker
  (Lorg/eclipse/core/resources/IMarker;)V
  (Lorg/eclipse/core/resources/IMarker;)V
@@ -127,16 +127,16 @@ isNavigationTarget
  (Lorg/eclipse/jface/text/source/Annotation;)Z
 openSaveErrorDialog
  (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/CoreException;)V
- (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/CoreException;)V
+ (Ljava/lang/String;Ljava/lang/String;L1org/eclipse/core/runtime/CoreException;)V # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
 overviewRulerContextMenuAboutToShow
  (Lorg/eclipse/jface/action/IMenuManager;)V
- (Lorg/eclipse/jface/action/IMenuManager;)V
+ (L1org/eclipse/jface/action/IMenuManager;)V # @Generated
 performSaveAs
  (Lorg/eclipse/core/runtime/IProgressMonitor;)V
  (Lorg/eclipse/core/runtime/IProgressMonitor;)V
 rulerContextMenuAboutToShow
  (Lorg/eclipse/jface/action/IMenuManager;)V
- (Lorg/eclipse/jface/action/IMenuManager;)V
+ (L1org/eclipse/jface/action/IMenuManager;)V # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
 setDocumentProvider
  (Lorg/eclipse/ui/IEditorInput;)V
  (Lorg/eclipse/ui/IEditorInput;)V
@@ -145,7 +145,7 @@ setOverviewRulerContextMenuId
  (Ljava/lang/String;)V
 showRevisionInformation
  (Lorg/eclipse/jface/text/revisions/RevisionInformation;Ljava/lang/String;)V
- (Lorg/eclipse/jface/text/revisions/RevisionInformation;Ljava/lang/String;)V
+ (L1org/eclipse/jface/text/revisions/RevisionInformation;Ljava/lang/String;)V # @Generated(2)
 updateMarkerViews
  (Lorg/eclipse/jface/text/source/Annotation;)V
  (Lorg/eclipse/jface/text/source/Annotation;)V

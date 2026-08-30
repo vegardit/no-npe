@@ -2,7 +2,7 @@ class org/apache/commons/io/file/AccumulatorPathVisitor
 
 builder
  ()Lorg/apache/commons/io/file/AccumulatorPathVisitor$Builder;
- ()L1org/apache/commons/io/file/AccumulatorPathVisitor$Builder;
+ ()L1org/apache/commons/io/file/AccumulatorPathVisitor$Builder; # @Generated
 withBigIntegerCounters
  ()Lorg/apache/commons/io/file/AccumulatorPathVisitor;
  ()L1org/apache/commons/io/file/AccumulatorPathVisitor;
@@ -30,10 +30,10 @@ equals
  (L0java/lang/Object;)Z # @Inherited(org.apache.commons.io.file.CountingPathVisitor)
 getDirList
  ()Ljava/util/List<Ljava/nio/file/Path;>;
- ()L1java/util/List<Ljava/nio/file/Path;>;
+ ()L1java/util/List<Ljava/nio/file/Path;>; # @Generated(3)
 getFileList
  ()Ljava/util/List<Ljava/nio/file/Path;>;
- ()L1java/util/List<Ljava/nio/file/Path;>;
+ ()L1java/util/List<Ljava/nio/file/Path;>; # @Generated(3)
 relativizeDirectories
  (Ljava/nio/file/Path;ZLjava/util/Comparator<-Ljava/nio/file/Path;>;)Ljava/util/List<Ljava/nio/file/Path;>;
  (Ljava/nio/file/Path;ZLjava/util/Comparator<-Ljava/nio/file/Path;>;)Ljava/util/List<Ljava/nio/file/Path;>;
@@ -45,4 +45,4 @@ updateDirCounter
  (Ljava/nio/file/Path;Ljava/io/IOException;)V
 updateFileCounters
  (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)V
- (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)V
+ (Ljava/nio/file/Path;L1java/nio/file/attribute/BasicFileAttributes;)V # @Inherited(org.apache.commons.io.file.CountingPathVisitor)

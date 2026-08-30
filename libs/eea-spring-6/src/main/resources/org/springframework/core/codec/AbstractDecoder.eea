@@ -15,10 +15,10 @@ logger
  ([Lorg/springframework/util/MimeType;)V
 canDecode
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
+ (Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;)Z # @Inherited(org.springframework.core.codec.Decoder)
 decodeToMono
  (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<TT;>;
- (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<TT;>;
+ (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<TT;>; # @Inherited(org.springframework.core.codec.Decoder)
 getDecodableMimeTypes
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;

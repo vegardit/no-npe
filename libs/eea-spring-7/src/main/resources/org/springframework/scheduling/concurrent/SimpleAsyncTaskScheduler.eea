@@ -12,10 +12,10 @@ execute
  (L1java/lang/Runnable;)V # @Inherited(org.springframework.core.task.SimpleAsyncTaskExecutor)
 getClock
  ()Ljava/time/Clock;
- ()Ljava/time/Clock;
+ ()L1java/time/Clock; # @Inherited(org.springframework.scheduling.TaskScheduler)
 onApplicationEvent
  (Lorg/springframework/context/event/ContextClosedEvent;)V
- (Lorg/springframework/context/event/ContextClosedEvent;)V
+ (L1org/springframework/context/event/ContextClosedEvent;)V # @Generated
 schedule
  (Ljava/lang/Runnable;Ljava/time/Instant;)Ljava/util/concurrent/ScheduledFuture<*>;
  (Ljava/lang/Runnable;Ljava/time/Instant;)Ljava/util/concurrent/ScheduledFuture<*>;
@@ -24,16 +24,16 @@ schedule
  (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)L0java/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleAtFixedRate
  (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleAtFixedRate
  (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;Ljava/time/Instant;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleWithFixedDelay
  (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleWithFixedDelay
  (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;Ljava/time/Instant;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 setApplicationContext
  (Lorg/springframework/context/ApplicationContext;)V
  (Lorg/springframework/context/ApplicationContext;)V
@@ -48,7 +48,7 @@ setTargetTaskExecutor
  (Ljava/util/concurrent/Executor;)V
 stop
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V # @Inherited(org.springframework.context.SmartLifecycle)
 submit
  (Ljava/lang/Runnable;)Ljava/util/concurrent/Future<*>;
  (Ljava/lang/Runnable;)L1java/util/concurrent/Future<*>; # @Inherited(org.springframework.core.task.SimpleAsyncTaskExecutor)

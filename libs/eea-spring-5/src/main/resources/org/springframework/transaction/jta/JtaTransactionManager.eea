@@ -2,13 +2,13 @@ class org/springframework/transaction/jta/JtaTransactionManager
 
 DEFAULT_TRANSACTION_SYNCHRONIZATION_REGISTRY_NAME
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 DEFAULT_USER_TRANSACTION_NAME
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 FALLBACK_TRANSACTION_MANAGER_NAMES
  [Ljava/lang/String;
- [1Ljava/lang/String;
+ [1Ljava/lang/String; # @Generated(1)
 
 <init>
  (Ljavax/transaction/TransactionManager;)V
@@ -30,7 +30,7 @@ buildUserTransaction
  (Ljavax/transaction/TransactionManager;)Ljavax/transaction/UserTransaction;
 createTransaction
  (Ljava/lang/String;I)Ljavax/transaction/Transaction;
- (Ljava/lang/String;I)L1javax/transaction/Transaction; # @Inherited(org.springframework.transaction.jta.TransactionFactory)
+ (L0java/lang/String;I)L1javax/transaction/Transaction; # @Inherited(org.springframework.transaction.jta.TransactionFactory)
 doBegin
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
@@ -39,64 +39,64 @@ doCleanupAfterCompletion
  (Ljava/lang/Object;)V
 doCommit
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
- (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+ (L1org/springframework/transaction/support/DefaultTransactionStatus;)V # @Generated
 doGetJtaTransaction
  (Ljavax/transaction/UserTransaction;)Lorg/springframework/transaction/jta/JtaTransactionObject;
- (Ljavax/transaction/UserTransaction;)L1org/springframework/transaction/jta/JtaTransactionObject;
+ (Ljavax/transaction/UserTransaction;)L1org/springframework/transaction/jta/JtaTransactionObject; # @Generated(38)
 doGetTransaction
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
 doJtaBegin
  (Lorg/springframework/transaction/jta/JtaTransactionObject;Lorg/springframework/transaction/TransactionDefinition;)V
- (Lorg/springframework/transaction/jta/JtaTransactionObject;Lorg/springframework/transaction/TransactionDefinition;)V
+ (L1org/springframework/transaction/jta/JtaTransactionObject;L1org/springframework/transaction/TransactionDefinition;)V # @Generated(2,60)
 doJtaResume
  (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V
- (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V
+ (L0org/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V # @Generated(2)
 doJtaSuspend
  (Lorg/springframework/transaction/jta/JtaTransactionObject;)Ljava/lang/Object;
  (Lorg/springframework/transaction/jta/JtaTransactionObject;)Ljava/lang/Object;
 doRegisterAfterCompletionWithJtaTransaction
  (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
- (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
+ (L1org/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V # @Generated(2)
 doResume
  (Ljava/lang/Object;Ljava/lang/Object;)V
- (Ljava/lang/Object;Ljava/lang/Object;)V
+ (L0java/lang/Object;Ljava/lang/Object;)V # @Inherited(org.springframework.transaction.support.AbstractPlatformTransactionManager)
 doRollback
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
- (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+ (L1org/springframework/transaction/support/DefaultTransactionStatus;)V # @Generated
 doSetRollbackOnly
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
- (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
+ (L1org/springframework/transaction/support/DefaultTransactionStatus;)V # @Generated
 doSuspend
  (Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Object;)Ljava/lang/Object;
 findTransactionManager
  (Ljavax/transaction/UserTransaction;)Ljavax/transaction/TransactionManager;
- (Ljavax/transaction/UserTransaction;)L0javax/transaction/TransactionManager;
+ (L0javax/transaction/UserTransaction;)L0javax/transaction/TransactionManager; # @Generated(2,38)
 findTransactionSynchronizationRegistry
  (Ljavax/transaction/UserTransaction;Ljavax/transaction/TransactionManager;)Ljavax/transaction/TransactionSynchronizationRegistry;
- (Ljavax/transaction/UserTransaction;Ljavax/transaction/TransactionManager;)L0javax/transaction/TransactionSynchronizationRegistry;
+ (L0javax/transaction/UserTransaction;L0javax/transaction/TransactionManager;)L0javax/transaction/TransactionSynchronizationRegistry; # @Generated(2,37,76)
 findUserTransaction
  ()Ljavax/transaction/UserTransaction;
- ()L0javax/transaction/UserTransaction;
+ ()L0javax/transaction/UserTransaction; # @Generated
 getJndiEnvironment
  ()Ljava/util/Properties;
- ()L0java/util/Properties;
+ ()L0java/util/Properties; # @Generated
 getJndiTemplate
  ()Lorg/springframework/jndi/JndiTemplate;
  ()Lorg/springframework/jndi/JndiTemplate;
 getTransactionManager
  ()Ljavax/transaction/TransactionManager;
- ()L0javax/transaction/TransactionManager;
+ ()L0javax/transaction/TransactionManager; # @Generated
 getTransactionSynchronizationRegistry
  ()Ljavax/transaction/TransactionSynchronizationRegistry;
- ()L0javax/transaction/TransactionSynchronizationRegistry;
+ ()L0javax/transaction/TransactionSynchronizationRegistry; # @Generated
 getUserTransaction
  ()Ljavax/transaction/UserTransaction;
- ()L0javax/transaction/UserTransaction;
+ ()L0javax/transaction/UserTransaction; # @Generated
 isExistingTransaction
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L1java/lang/Object;)Z # @Generated
 lookupTransactionManager
  (Ljava/lang/String;)Ljavax/transaction/TransactionManager;
  (Ljava/lang/String;)Ljavax/transaction/TransactionManager;
@@ -111,34 +111,34 @@ registerAfterCompletionWithExistingTransaction
  (Ljava/lang/Object;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
 retrieveTransactionManager
  ()Ljavax/transaction/TransactionManager;
- ()L0javax/transaction/TransactionManager;
+ ()L0javax/transaction/TransactionManager; # @Generated
 retrieveTransactionSynchronizationRegistry
  ()Ljavax/transaction/TransactionSynchronizationRegistry;
- ()L0javax/transaction/TransactionSynchronizationRegistry;
+ ()L0javax/transaction/TransactionSynchronizationRegistry; # @Generated
 retrieveUserTransaction
  ()Ljavax/transaction/UserTransaction;
- ()L0javax/transaction/UserTransaction;
+ ()L0javax/transaction/UserTransaction; # @Generated
 setJndiEnvironment
  (Ljava/util/Properties;)V
- (Ljava/util/Properties;)V
+ (L0java/util/Properties;)V # @Generated
 setJndiTemplate
  (Lorg/springframework/jndi/JndiTemplate;)V
  (Lorg/springframework/jndi/JndiTemplate;)V
 setTransactionManager
  (Ljavax/transaction/TransactionManager;)V
- (Ljavax/transaction/TransactionManager;)V
+ (L0javax/transaction/TransactionManager;)V # @Generated
 setTransactionManagerName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 setTransactionSynchronizationRegistry
  (Ljavax/transaction/TransactionSynchronizationRegistry;)V
- (Ljavax/transaction/TransactionSynchronizationRegistry;)V
+ (L0javax/transaction/TransactionSynchronizationRegistry;)V # @Generated
 setTransactionSynchronizationRegistryName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 setUserTransaction
  (Ljavax/transaction/UserTransaction;)V
- (Ljavax/transaction/UserTransaction;)V
+ (L0javax/transaction/UserTransaction;)V # @Generated
 setUserTransactionName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

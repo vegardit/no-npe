@@ -17,7 +17,7 @@ fillContentProvider
  (L1org/eclipse/ui/dialogs/FilteredItemsSelectionDialog$AbstractContentProvider;L1org/eclipse/ui/dialogs/FilteredItemsSelectionDialog$ItemsFilter;L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.ui.dialogs.FilteredItemsSelectionDialog)
 fillViewMenu
  (Lorg/eclipse/jface/action/IMenuManager;)V
- (Lorg/eclipse/jface/action/IMenuManager;)V
+ (L1org/eclipse/jface/action/IMenuManager;)V # @Inherited(org.eclipse.ui.dialogs.FilteredItemsSelectionDialog)
 getDialogSettings
  ()Lorg/eclipse/jface/dialogs/IDialogSettings;
  ()Lorg/eclipse/jface/dialogs/IDialogSettings;
@@ -29,16 +29,16 @@ getItemsComparator
  ()Ljava/util/Comparator<Lorg/eclipse/core/resources/IResource;>;
 getResult
  ()[Ljava/lang/Object;
- ()[0Ljava/lang/Object;
+ ()[0Ljava/lang/Object; # @Generated(3)
 restoreDialog
  (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
- (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+ (L1org/eclipse/jface/dialogs/IDialogSettings;)V # @Inherited(org.eclipse.ui.dialogs.FilteredItemsSelectionDialog)
 setTitle
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 storeDialog
  (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
- (Lorg/eclipse/jface/dialogs/IDialogSettings;)V
+ (L1org/eclipse/jface/dialogs/IDialogSettings;)V # @Inherited(org.eclipse.ui.dialogs.FilteredItemsSelectionDialog)
 validateItem
  (Ljava/lang/Object;)Lorg/eclipse/core/runtime/IStatus;
  (L1java/lang/Object;)L1org/eclipse/core/runtime/IStatus; # @Inherited(org.eclipse.ui.dialogs.FilteredItemsSelectionDialog)

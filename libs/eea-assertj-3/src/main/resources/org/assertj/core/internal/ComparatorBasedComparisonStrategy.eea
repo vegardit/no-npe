@@ -8,7 +8,7 @@ class org/assertj/core/internal/ComparatorBasedComparisonStrategy
  (Ljava/util/Comparator;Ljava/lang/String;)V
 <init>
  (Lorg/assertj/core/internal/DescribableComparator<*>;)V
- (Lorg/assertj/core/internal/DescribableComparator<*>;)V
+ (L1org/assertj/core/internal/DescribableComparator<*>;)V # @Generated(2)
 areEqual
  (Ljava/lang/Object;Ljava/lang/Object;)Z
  (Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -17,7 +17,7 @@ asText
  ()L1java/lang/String; # @Inherited(org.assertj.core.internal.ComparisonStrategy)
 duplicatesFrom
  (Ljava/lang/Iterable<*>;)Ljava/lang/Iterable<*>;
- (Ljava/lang/Iterable<*>;)Ljava/lang/Iterable<*>;
+ (Ljava/lang/Iterable<*>;)L1java/lang/Iterable<*>; # @Inherited(org.assertj.core.internal.AbstractComparisonStrategy)
 getComparator
  ()Ljava/util/Comparator<*>;
  ()Ljava/util/Comparator<*>;
@@ -38,16 +38,16 @@ iterablesRemoveFirst
  (Ljava/lang/Iterable<*>;Ljava/lang/Object;)V
 newSetUsingComparisonStrategy
  ()Ljava/util/Set<Ljava/lang/Object;>;
- ()L1java/util/Set<Ljava/lang/Object;>;
+ ()L1java/util/Set<Ljava/lang/Object;>; # @Generated(3)
 stringContains
  (Ljava/lang/String;Ljava/lang/String;)Z
- (Ljava/lang/String;Ljava/lang/String;)Z
+ (L1java/lang/String;L1java/lang/String;)Z # @Generated(2,20)
 stringEndsWith
  (Ljava/lang/String;Ljava/lang/String;)Z
- (Ljava/lang/String;Ljava/lang/String;)Z
+ (L1java/lang/String;L1java/lang/String;)Z # @Generated(2,20)
 stringStartsWith
  (Ljava/lang/String;Ljava/lang/String;)Z
- (Ljava/lang/String;Ljava/lang/String;)Z
+ (L1java/lang/String;L1java/lang/String;)Z # @Generated(2,20)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -8,19 +8,19 @@ detectDefaultConfigurationClasses
  (Ljava/lang/Class<*>;)[Ljava/lang/Class<*>;
 generateDefaultLocations
  (Ljava/lang/Class<*>;)[Ljava/lang/String;
- (Ljava/lang/Class<*>;)[Ljava/lang/String;
+ (Ljava/lang/Class<*>;)[1Ljava/lang/String; # @Inherited(org.springframework.test.context.support.AbstractContextLoader)
 getResourceSuffix
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 loadBeanDefinitions
  (Lorg/springframework/context/support/GenericApplicationContext;Lorg/springframework/test/context/MergedContextConfiguration;)V
- (Lorg/springframework/context/support/GenericApplicationContext;Lorg/springframework/test/context/MergedContextConfiguration;)V
+ (Lorg/springframework/context/support/GenericApplicationContext;L1org/springframework/test/context/MergedContextConfiguration;)V # @Inherited(org.springframework.test.context.support.AbstractGenericContextLoader)
 modifyLocations
  (Ljava/lang/Class<*>;[Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/Class<*>;[Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/Class<*>;[Ljava/lang/String;)[1Ljava/lang/String; # @Inherited(org.springframework.test.context.support.AbstractContextLoader)
 processContextConfiguration
  (Lorg/springframework/test/context/ContextConfigurationAttributes;)V
- (Lorg/springframework/test/context/ContextConfigurationAttributes;)V
+ (L1org/springframework/test/context/ContextConfigurationAttributes;)V # @Inherited(org.springframework.test.context.support.AbstractContextLoader)
 validateMergedContextConfiguration
  (Lorg/springframework/test/context/MergedContextConfiguration;)V
- (Lorg/springframework/test/context/MergedContextConfiguration;)V
+ (L1org/springframework/test/context/MergedContextConfiguration;)V # @Generated

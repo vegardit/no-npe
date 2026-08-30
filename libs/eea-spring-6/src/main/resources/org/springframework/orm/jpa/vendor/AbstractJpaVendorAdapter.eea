@@ -5,7 +5,7 @@ getDatabase
  ()Lorg/springframework/orm/jpa/vendor/Database;
 getDatabasePlatform
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 getEntityManagerFactoryInterface
  ()Ljava/lang/Class<+Ljakarta/persistence/EntityManagerFactory;>;
  ()L1java/lang/Class<+Ljakarta/persistence/EntityManagerFactory;>; # @Inherited(org.springframework.orm.jpa.JpaVendorAdapter)
@@ -17,7 +17,7 @@ getJpaDialect
  ()L0org/springframework/orm/jpa/JpaDialect; # @Inherited(org.springframework.orm.jpa.JpaVendorAdapter)
 getJpaPropertyMap
  ()Ljava/util/Map<Ljava/lang/String;*>;
- ()Ljava/util/Map<Ljava/lang/String;*>;
+ ()L1java/util/Map<Ljava/lang/String;*>; # @Inherited(org.springframework.orm.jpa.JpaVendorAdapter)
 getJpaPropertyMap
  (Ljakarta/persistence/spi/PersistenceUnitInfo;)Ljava/util/Map<Ljava/lang/String;*>;
  (Ljakarta/persistence/spi/PersistenceUnitInfo;)Ljava/util/Map<Ljava/lang/String;*>;
@@ -35,4 +35,4 @@ setDatabase
  (Lorg/springframework/orm/jpa/vendor/Database;)V
 setDatabasePlatform
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated

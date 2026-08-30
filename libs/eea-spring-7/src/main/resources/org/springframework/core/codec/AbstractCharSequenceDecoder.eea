@@ -18,10 +18,10 @@ DEFAULT_DELIMITERS
  (Ljava/util/List<Ljava/lang/String;>;Z[Lorg/springframework/util/MimeType;)V
 decode
  (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<TT;>;
- (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<TT;>;
+ (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<TT;>; # @Inherited(org.springframework.core.codec.AbstractDataBufferDecoder)
 decode
  (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)TT;
- (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)T0T; # @Inherited(org.springframework.core.codec.Decoder)
+ (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)T0T; # @Inherited(org.springframework.core.codec.Decoder)
 decodeInternal
  (Lorg/springframework/core/io/buffer/DataBuffer;Ljava/nio/charset/Charset;)TT;
  (Lorg/springframework/core/io/buffer/DataBuffer;Ljava/nio/charset/Charset;)TT;

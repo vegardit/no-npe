@@ -8,19 +8,19 @@ addListener
  (L1org/eclipse/jface/viewers/ILabelProviderListener;)V # @Inherited(org.eclipse.jface.viewers.BaseLabelProvider)
 getBackground
  (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Color;
- (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Color; # @Inherited(org.eclipse.jface.viewers.IColorProvider)
+ (L1java/lang/Object;)L0org/eclipse/swt/graphics/Color; # @Overrides(org.eclipse.jface.viewers.IColorProvider)
 getDecorationContext
  ()Lorg/eclipse/jface/viewers/IDecorationContext;
  ()Lorg/eclipse/jface/viewers/IDecorationContext;
 getFont
  (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Font;
- (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Font; # @Inherited(org.eclipse.jface.viewers.IFontProvider)
+ (L1java/lang/Object;)L0org/eclipse/swt/graphics/Font; # @Overrides(org.eclipse.jface.viewers.IFontProvider)
 getForeground
  (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Color;
- (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Color; # @Inherited(org.eclipse.jface.viewers.IColorProvider)
+ (L1java/lang/Object;)L0org/eclipse/swt/graphics/Color; # @Overrides(org.eclipse.jface.viewers.IColorProvider)
 getImage
  (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Image;
- (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Image; # @Inherited(org.eclipse.jface.viewers.LabelProvider)
+ (L1java/lang/Object;)L0org/eclipse/swt/graphics/Image; # @Inherited(org.eclipse.jface.viewers.LabelProvider)
 getLabelDecorator
  ()Lorg/eclipse/jface/viewers/ILabelDecorator;
  ()Lorg/eclipse/jface/viewers/ILabelDecorator;
@@ -47,7 +47,7 @@ updateForDecorationReady
  (Lorg/eclipse/jface/viewers/ViewerLabel;Ljava/lang/Object;)V
 updateLabel
  (Lorg/eclipse/jface/viewers/ViewerLabel;Ljava/lang/Object;)V
- (Lorg/eclipse/jface/viewers/ViewerLabel;Ljava/lang/Object;)V
+ (L1org/eclipse/jface/viewers/ViewerLabel;Ljava/lang/Object;)V # @Generated(2)
 updateLabel
  (Lorg/eclipse/jface/viewers/ViewerLabel;Lorg/eclipse/jface/viewers/TreePath;)V
- (Lorg/eclipse/jface/viewers/ViewerLabel;Lorg/eclipse/jface/viewers/TreePath;)V
+ (L1org/eclipse/jface/viewers/ViewerLabel;L1org/eclipse/jface/viewers/TreePath;)V # @Generated(2,41)

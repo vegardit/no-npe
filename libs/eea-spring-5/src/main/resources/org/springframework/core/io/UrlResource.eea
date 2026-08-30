@@ -8,10 +8,10 @@ class org/springframework/core/io/UrlResource
  (Ljava/lang/String;Ljava/lang/String;)V
 <init>
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;L0java/lang/String;)V # @Generated(38)
 <init>
  (Ljava/net/URI;)V
- (Ljava/net/URI;)V
+ (L1java/net/URI;)V # @Generated
 <init>
  (Ljava/net/URL;)V
  (Ljava/net/URL;)V
@@ -20,13 +20,13 @@ createRelative
  (Ljava/lang/String;)L1org/springframework/core/io/Resource; # @Inherited(org.springframework.core.io.AbstractResource)
 createRelativeURL
  (Ljava/lang/String;)Ljava/net/URL;
- (Ljava/lang/String;)L1java/net/URL;
+ (L1java/lang/String;)L1java/net/URL; # @Generated(2,21)
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(org.springframework.core.io.AbstractResource)
 getDescription
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Generated
 getFile
  ()Ljava/io/File;
  ()Ljava/io/File;
@@ -38,7 +38,7 @@ getInputStream
  ()Ljava/io/InputStream;
 getURI
  ()Ljava/net/URI;
- ()Ljava/net/URI;
+ ()L1java/net/URI; # @Inherited(org.springframework.core.io.AbstractResource)
 getURL
  ()Ljava/net/URL;
  ()Ljava/net/URL;

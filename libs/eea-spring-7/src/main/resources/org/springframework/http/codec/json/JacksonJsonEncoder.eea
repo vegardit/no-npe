@@ -9,7 +9,7 @@ super org/springframework/http/codec/AbstractJacksonEncoder
  (Ltools/jackson/databind/json/JsonMapper$Builder;)V
 <init>
  (Ltools/jackson/databind/json/JsonMapper$Builder;[Lorg/springframework/util/MimeType;)V
- (Ltools/jackson/databind/json/JsonMapper$Builder;[Lorg/springframework/util/MimeType;)V
+ (L1tools/jackson/databind/json/JsonMapper$Builder;[Lorg/springframework/util/MimeType;)V # @Generated(2)
 <init>
  (Ltools/jackson/databind/json/JsonMapper;)V
  (Ltools/jackson/databind/json/JsonMapper;)V
@@ -18,10 +18,10 @@ super org/springframework/http/codec/AbstractJacksonEncoder
  (Ltools/jackson/databind/json/JsonMapper;[Lorg/springframework/util/MimeType;)V
 canEncode
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
+ (Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;)Z # @Inherited(org.springframework.http.codec.AbstractJacksonEncoder)
 customizeWriter
  (Ltools/jackson/databind/ObjectWriter;Lorg/springframework/util/MimeType;Lorg/springframework/core/ResolvableType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ltools/jackson/databind/ObjectWriter;
- (Ltools/jackson/databind/ObjectWriter;Lorg/springframework/util/MimeType;Lorg/springframework/core/ResolvableType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ltools/jackson/databind/ObjectWriter;
+ (Ltools/jackson/databind/ObjectWriter;L0org/springframework/util/MimeType;Lorg/springframework/core/ResolvableType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ltools/jackson/databind/ObjectWriter; # @Inherited(org.springframework.http.codec.AbstractJacksonEncoder)
 getMediaTypesForProblemDetail
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;
- ()Ljava/util/List<Lorg/springframework/util/MimeType;>;
+ ()L1java/util/List<Lorg/springframework/util/MimeType;>; # @Inherited(org.springframework.http.codec.JacksonCodecSupport)

@@ -35,13 +35,13 @@ computeIndexInPositionList
  (Ljava/util/List<+Lorg/eclipse/jface/text/Position;>;I)I
 computeIndexInPositionList
  (Ljava/util/List<+Lorg/eclipse/jface/text/Position;>;IZ)I
- (Ljava/util/List<+Lorg/eclipse/jface/text/Position;>;IZ)I
+ (L1java/util/List<+Lorg/eclipse/jface/text/Position;>;IZ)I # @Generated(2)
 computeNumberOfLines
  (Ljava/lang/String;)I
  (L1java/lang/String;)I # @Inherited(org.eclipse.jface.text.IDocument)
 computePartitioning
  (II)[Lorg/eclipse/jface/text/ITypedRegion;
- (II)[L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocument)
+ (II)[0L1org/eclipse/jface/text/ITypedRegion; # @Overrides(org.eclipse.jface.text.IDocument)
 computePartitioning
  (Ljava/lang/String;IIZ)[Lorg/eclipse/jface/text/ITypedRegion;
  (L1java/lang/String;IIZ)[L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
@@ -95,7 +95,7 @@ getDefaultLineDelimiter
  ()L0java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 getDocumentListeners
  ()Ljava/util/List<Lorg/eclipse/jface/text/IDocumentListener;>;
- ()Ljava/util/List<Lorg/eclipse/jface/text/IDocumentListener;>;
+ ()L1java/util/List<Lorg/eclipse/jface/text/IDocumentListener;>; # @Generated(3)
 getDocumentManagedPositions
  ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/jface/text/Position;>;>;
  ()Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Lorg/eclipse/jface/text/Position;>;>;
@@ -107,7 +107,7 @@ getDocumentPartitioner
  (L1java/lang/String;)L0org/eclipse/jface/text/IDocumentPartitioner; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
 getDocumentPartitioningListeners
  ()Ljava/util/List<Lorg/eclipse/jface/text/IDocumentPartitioningListener;>;
- ()Ljava/util/List<Lorg/eclipse/jface/text/IDocumentPartitioningListener;>;
+ ()L1java/util/List<Lorg/eclipse/jface/text/IDocumentPartitioningListener;>; # @Generated(3)
 getLegalContentTypes
  ()[Ljava/lang/String;
  ()[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
@@ -146,7 +146,7 @@ getPositions
  (L1java/lang/String;)[1L1org/eclipse/jface/text/Position; # @Inherited(org.eclipse.jface.text.IDocument)
 getPositions
  (Ljava/lang/String;IIZZ)[Lorg/eclipse/jface/text/Position;
- (Ljava/lang/String;IIZZ)[1Lorg/eclipse/jface/text/Position;
+ (Ljava/lang/String;IIZZ)[1Lorg/eclipse/jface/text/Position; # @Generated(25)
 getStore
  ()Lorg/eclipse/jface/text/ITextStore;
  ()Lorg/eclipse/jface/text/ITextStore;

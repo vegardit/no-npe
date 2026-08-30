@@ -5,10 +5,10 @@ class org/springframework/web/client/ExtractingResponseErrorHandler
  (Ljava/util/List<Lorg/springframework/http/converter/HttpMessageConverter<*>;>;)V
 handleError
  (Lorg/springframework/http/client/ClientHttpResponse;Lorg/springframework/http/HttpStatusCode;Ljava/net/URI;Lorg/springframework/http/HttpMethod;)V
- (Lorg/springframework/http/client/ClientHttpResponse;Lorg/springframework/http/HttpStatusCode;Ljava/net/URI;Lorg/springframework/http/HttpMethod;)V
+ (Lorg/springframework/http/client/ClientHttpResponse;L1org/springframework/http/HttpStatusCode;L0java/net/URI;L0org/springframework/http/HttpMethod;)V # @Overrides(org.springframework.web.client.DefaultResponseErrorHandler)
 hasError
  (Lorg/springframework/http/HttpStatusCode;)Z
- (Lorg/springframework/http/HttpStatusCode;)Z
+ (L1org/springframework/http/HttpStatusCode;)Z # @Inherited(org.springframework.web.client.DefaultResponseErrorHandler)
 setMessageConverters
  (Ljava/util/List<Lorg/springframework/http/converter/HttpMessageConverter<*>;>;)V
  (Ljava/util/List<Lorg/springframework/http/converter/HttpMessageConverter<*>;>;)V

@@ -2,33 +2,33 @@ class org/springframework/web/context/ContextLoader
 
 CONFIG_LOCATION_PARAM
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 CONTEXT_CLASS_PARAM
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 CONTEXT_ID_PARAM
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 CONTEXT_INITIALIZER_CLASSES_PARAM
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 GLOBAL_INITIALIZER_CLASSES_PARAM
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 getCurrentWebApplicationContext
  ()Lorg/springframework/web/context/WebApplicationContext;
- ()L0org/springframework/web/context/WebApplicationContext;
+ ()L0org/springframework/web/context/WebApplicationContext; # @Generated
 
 <init>
  (Lorg/springframework/web/context/WebApplicationContext;)V
  (Lorg/springframework/web/context/WebApplicationContext;)V
 closeWebApplicationContext
  (Ljakarta/servlet/ServletContext;)V
- (Ljakarta/servlet/ServletContext;)V
+ (L1jakarta/servlet/ServletContext;)V # @Generated
 configureAndRefreshWebApplicationContext
  (Lorg/springframework/web/context/ConfigurableWebApplicationContext;Ljakarta/servlet/ServletContext;)V
- (Lorg/springframework/web/context/ConfigurableWebApplicationContext;Ljakarta/servlet/ServletContext;)V
+ (L1org/springframework/web/context/ConfigurableWebApplicationContext;L1jakarta/servlet/ServletContext;)V # @Generated(2,69)
 createWebApplicationContext
  (Ljakarta/servlet/ServletContext;)Lorg/springframework/web/context/WebApplicationContext;
  (Ljakarta/servlet/ServletContext;)L1org/springframework/web/context/WebApplicationContext;
@@ -37,16 +37,16 @@ customizeContext
  (Ljakarta/servlet/ServletContext;Lorg/springframework/web/context/ConfigurableWebApplicationContext;)V
 determineContextClass
  (Ljakarta/servlet/ServletContext;)Ljava/lang/Class<*>;
- (Ljakarta/servlet/ServletContext;)Ljava/lang/Class<*>;
+ (L1jakarta/servlet/ServletContext;)Ljava/lang/Class<*>; # @Generated(2)
 determineContextInitializerClasses
  (Ljakarta/servlet/ServletContext;)Ljava/util/List<Ljava/lang/Class<Lorg/springframework/context/ApplicationContextInitializer<Lorg/springframework/context/ConfigurableApplicationContext;>;>;>;
- (Ljakarta/servlet/ServletContext;)L1java/util/List<Ljava/lang/Class<Lorg/springframework/context/ApplicationContextInitializer<Lorg/springframework/context/ConfigurableApplicationContext;>;>;>;
+ (L1jakarta/servlet/ServletContext;)L1java/util/List<Ljava/lang/Class<Lorg/springframework/context/ApplicationContextInitializer<Lorg/springframework/context/ConfigurableApplicationContext;>;>;>; # @Generated(2,35)
 initWebApplicationContext
  (Ljakarta/servlet/ServletContext;)Lorg/springframework/web/context/WebApplicationContext;
- (Ljakarta/servlet/ServletContext;)Lorg/springframework/web/context/WebApplicationContext;
+ (L1jakarta/servlet/ServletContext;)Lorg/springframework/web/context/WebApplicationContext; # @Generated(2)
 loadParentContext
  (Ljakarta/servlet/ServletContext;)Lorg/springframework/context/ApplicationContext;
- (Ljakarta/servlet/ServletContext;)L0org/springframework/context/ApplicationContext;
+ (Ljakarta/servlet/ServletContext;)L0org/springframework/context/ApplicationContext; # @Generated(35)
 setContextInitializers
  ([Lorg/springframework/context/ApplicationContextInitializer<*>;)V
- ([Lorg/springframework/context/ApplicationContextInitializer<*>;)V
+ ([0Lorg/springframework/context/ApplicationContextInitializer<*>;)V # @Generated(2)

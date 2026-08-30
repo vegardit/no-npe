@@ -9,10 +9,10 @@ logger
  (Lorg/hibernate/SessionFactory;)V
 applyNamedParameterToQuery
  (Lorg/hibernate/query/Query<*>;Ljava/lang/String;Ljava/lang/Object;)V
- (Lorg/hibernate/query/Query<*>;Ljava/lang/String;Ljava/lang/Object;)V
+ (L1org/hibernate/query/Query<*>;Ljava/lang/String;Ljava/lang/Object;)V # @Generated(2)
 bulkUpdate
  (Ljava/lang/String;[Ljava/lang/Object;)I
- (Ljava/lang/String;[Ljava/lang/Object;)I
+ (Ljava/lang/String;[0Ljava/lang/Object;)I # @Generated(20)
 checkWriteOperationAllowed
  (Lorg/hibernate/Session;)V
  (Lorg/hibernate/Session;)V
@@ -24,19 +24,19 @@ contains
  (Ljava/lang/Object;)Z
 createSessionProxy
  (Lorg/hibernate/Session;)Lorg/hibernate/Session;
- (Lorg/hibernate/Session;)L1org/hibernate/Session;
+ (L1org/hibernate/Session;)L1org/hibernate/Session; # @Generated(2)
 delete
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
 delete
  (Ljava/lang/Object;Lorg/hibernate/LockMode;)V
- (Ljava/lang/Object;Lorg/hibernate/LockMode;)V
+ (Ljava/lang/Object;L0org/hibernate/LockMode;)V # @Generated(20)
 delete
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
 delete
  (Ljava/lang/String;Ljava/lang/Object;Lorg/hibernate/LockMode;)V
- (Ljava/lang/String;Ljava/lang/Object;Lorg/hibernate/LockMode;)V
+ (Ljava/lang/String;Ljava/lang/Object;L0org/hibernate/LockMode;)V # @Generated(38)
 deleteAll
  (Ljava/util/Collection<*>;)V
  (Ljava/util/Collection<*>;)V
@@ -45,7 +45,7 @@ disableFilters
  (Lorg/hibernate/Session;)V
 doExecute
  <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;Z)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;Z)T0T;
+ <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;Z)T0T; # @Generated(85)
 enableFilter
  (Ljava/lang/String;)Lorg/hibernate/Filter;
  (Ljava/lang/String;)Lorg/hibernate/Filter;
@@ -60,10 +60,10 @@ execute
  <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;)T0T; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
 executeWithNativeSession
  <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(Lorg/springframework/orm/hibernate5/HibernateCallback<TT;>;)T0T; # @Generated(84)
 find
  (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<*>;
- (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<*>;
+ (Ljava/lang/String;[0Ljava/lang/Object;)Ljava/util/List<*>; # @Generated(20)
 findByCriteria
  (Lorg/hibernate/criterion/DetachedCriteria;)Ljava/util/List<*>;
  (Lorg/hibernate/criterion/DetachedCriteria;)Ljava/util/List<*>;
@@ -75,7 +75,7 @@ findByExample
  <T:Ljava/lang/Object;>(Ljava/lang/String;TT;)Ljava/util/List<TT;>;
 findByExample
  <T:Ljava/lang/Object;>(Ljava/lang/String;TT;II)Ljava/util/List<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;TT;II)Ljava/util/List<TT;>;
+ <T:Ljava/lang/Object;>(L0java/lang/String;TT;II)Ljava/util/List<TT;>; # @Generated(24)
 findByExample
  <T:Ljava/lang/Object;>(TT;)Ljava/util/List<TT;>;
  <T:Ljava/lang/Object;>(TT;)Ljava/util/List<TT;>;
@@ -90,13 +90,13 @@ findByNamedParam
  (Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<*>;
 findByNamedQuery
  (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<*>;
- (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<*>;
+ (Ljava/lang/String;[0Ljava/lang/Object;)Ljava/util/List<*>; # @Generated(20)
 findByNamedQueryAndNamedParam
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List<*>;
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List<*>;
 findByNamedQueryAndNamedParam
  (Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<*>;
- (Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/List<*>;
+ (Ljava/lang/String;[0Ljava/lang/String;[0Ljava/lang/Object;)Ljava/util/List<*>; # @Generated(20,39)
 findByNamedQueryAndValueBean
  (Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List<*>;
  (Ljava/lang/String;Ljava/lang/Object;)Ljava/util/List<*>;
@@ -108,28 +108,28 @@ get
  (Ljava/lang/String;Ljava/io/Serializable;)L0java/lang/Object; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
 get
  (Ljava/lang/String;Ljava/io/Serializable;Lorg/hibernate/LockMode;)Ljava/lang/Object;
- (Ljava/lang/String;Ljava/io/Serializable;Lorg/hibernate/LockMode;)L0java/lang/Object; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
+ (Ljava/lang/String;Ljava/io/Serializable;L0org/hibernate/LockMode;)L0java/lang/Object; # @Overrides(org.springframework.orm.hibernate5.HibernateOperations)
 get
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;)T0T; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
 get
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;Lorg/hibernate/LockMode;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;Lorg/hibernate/LockMode;)T0T; # @Inherited(org.springframework.orm.hibernate5.HibernateOperations)
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;L0org/hibernate/LockMode;)T0T; # @Overrides(org.springframework.orm.hibernate5.HibernateOperations)
 getFilterNames
  ()[Ljava/lang/String;
- ()[0Ljava/lang/String;
+ ()[0Ljava/lang/String; # @Generated(3)
 getQueryCacheRegion
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 getSessionFactory
  ()Lorg/hibernate/SessionFactory;
- ()L0org/hibernate/SessionFactory;
+ ()L0org/hibernate/SessionFactory; # @Generated
 initialize
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
 iterate
  (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Iterator<*>;
- (Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Iterator<*>;
+ (Ljava/lang/String;[0Ljava/lang/Object;)Ljava/util/Iterator<*>; # @Generated(20)
 load
  (Ljava/lang/Object;Ljava/io/Serializable;)V
  (Ljava/lang/Object;Ljava/io/Serializable;)V
@@ -138,13 +138,13 @@ load
  (Ljava/lang/String;Ljava/io/Serializable;)Ljava/lang/Object;
 load
  (Ljava/lang/String;Ljava/io/Serializable;Lorg/hibernate/LockMode;)Ljava/lang/Object;
- (Ljava/lang/String;Ljava/io/Serializable;Lorg/hibernate/LockMode;)Ljava/lang/Object;
+ (Ljava/lang/String;Ljava/io/Serializable;L0org/hibernate/LockMode;)Ljava/lang/Object; # @Generated(42)
 load
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;)TT;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;)TT;
 load
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;Lorg/hibernate/LockMode;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;Lorg/hibernate/LockMode;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Ljava/io/Serializable;L0org/hibernate/LockMode;)TT; # @Generated(68)
 loadAll
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/util/List<TT;>;
@@ -162,7 +162,7 @@ merge
  <T:Ljava/lang/Object;>(TT;)TT;
 obtainSessionFactory
  ()Lorg/hibernate/SessionFactory;
- ()Lorg/hibernate/SessionFactory;
+ ()L0org/hibernate/SessionFactory; # @Generated
 persist
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
@@ -180,7 +180,7 @@ refresh
  (Ljava/lang/Object;)V
 refresh
  (Ljava/lang/Object;Lorg/hibernate/LockMode;)V
- (Ljava/lang/Object;Lorg/hibernate/LockMode;)V
+ (Ljava/lang/Object;L0org/hibernate/LockMode;)V # @Generated(20)
 replicate
  (Ljava/lang/Object;Lorg/hibernate/ReplicationMode;)V
  (Ljava/lang/Object;Lorg/hibernate/ReplicationMode;)V
@@ -201,22 +201,22 @@ saveOrUpdate
  (Ljava/lang/String;Ljava/lang/Object;)V
 setFilterNames
  ([Ljava/lang/String;)V
- ([Ljava/lang/String;)V
+ ([0Ljava/lang/String;)V # @Generated(2)
 setQueryCacheRegion
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setSessionFactory
  (Lorg/hibernate/SessionFactory;)V
- (Lorg/hibernate/SessionFactory;)V
+ (L0org/hibernate/SessionFactory;)V # @Generated
 update
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
 update
  (Ljava/lang/Object;Lorg/hibernate/LockMode;)V
- (Ljava/lang/Object;Lorg/hibernate/LockMode;)V
+ (Ljava/lang/Object;L0org/hibernate/LockMode;)V # @Generated(20)
 update
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
 update
  (Ljava/lang/String;Ljava/lang/Object;Lorg/hibernate/LockMode;)V
- (Ljava/lang/String;Ljava/lang/Object;Lorg/hibernate/LockMode;)V
+ (Ljava/lang/String;Ljava/lang/Object;L0org/hibernate/LockMode;)V # @Generated(38)

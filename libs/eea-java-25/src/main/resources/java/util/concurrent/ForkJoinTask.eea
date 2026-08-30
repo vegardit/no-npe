@@ -8,46 +8,46 @@ super java/util/concurrent/Future
 
 adapt
  (Ljava/lang/Runnable;)Ljava/util/concurrent/ForkJoinTask<*>;
- (L1java/lang/Runnable;)L1java/util/concurrent/ForkJoinTask<*>;
+ (L1java/lang/Runnable;)L1java/util/concurrent/ForkJoinTask<*>; # @Generated(23)
 adapt
  <T:Ljava/lang/Object;>(Ljava/lang/Runnable;TT;)Ljava/util/concurrent/ForkJoinTask<TT;>;
- <T:Ljava/lang/Object;>(L1java/lang/Runnable;TT;)L1java/util/concurrent/ForkJoinTask<TT;>;
+ <T:Ljava/lang/Object;>(L1java/lang/Runnable;TT;)L1java/util/concurrent/ForkJoinTask<TT;>; # @Generated(48)
 adapt
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<+TT;>;)Ljava/util/concurrent/ForkJoinTask<TT;>;
- <T:Ljava/lang/Object;>(L1java/util/concurrent/Callable<+TT;>;)L1java/util/concurrent/ForkJoinTask<TT;>;
+ <T:Ljava/lang/Object;>(L1java/util/concurrent/Callable<+TT;>;)L1java/util/concurrent/ForkJoinTask<TT;>; # @Generated(62)
 adaptInterruptible
  (Ljava/lang/Runnable;)Ljava/util/concurrent/ForkJoinTask<*>;
- (Ljava/lang/Runnable;)L1java/util/concurrent/ForkJoinTask<*>;
+ (Ljava/lang/Runnable;)L1java/util/concurrent/ForkJoinTask<*>; # @Generated(23)
 adaptInterruptible
  <T:Ljava/lang/Object;>(Ljava/lang/Runnable;TT;)Ljava/util/concurrent/ForkJoinTask<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Runnable;TT;)L1java/util/concurrent/ForkJoinTask<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Runnable;TT;)L1java/util/concurrent/ForkJoinTask<TT;>; # @Generated(48)
 adaptInterruptible
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<+TT;>;)Ljava/util/concurrent/ForkJoinTask<TT;>;
- <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<+TT;>;)L1java/util/concurrent/ForkJoinTask<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<+TT;>;)L1java/util/concurrent/ForkJoinTask<TT;>; # @Generated(62)
 getPool
  ()Ljava/util/concurrent/ForkJoinPool;
- ()L0java/util/concurrent/ForkJoinPool;
+ ()L0java/util/concurrent/ForkJoinPool; # @Generated
 invokeAll
  (Ljava/util/concurrent/ForkJoinTask<*>;Ljava/util/concurrent/ForkJoinTask<*>;)V
- (L1java/util/concurrent/ForkJoinTask<*>;L1java/util/concurrent/ForkJoinTask<*>;)V
+ (L1java/util/concurrent/ForkJoinTask<*>;L1java/util/concurrent/ForkJoinTask<*>;)V # @Generated(2,40)
 invokeAll
  ([Ljava/util/concurrent/ForkJoinTask<*>;)V
  ([1L1java/util/concurrent/ForkJoinTask<*>;)V
 invokeAll
  <T:Ljava/util/concurrent/ForkJoinTask<*>;>(Ljava/util/Collection<TT;>;)Ljava/util/Collection<TT;>;
- <T:Ljava/util/concurrent/ForkJoinTask<*>;>(L1java/util/Collection<TT;>;)L1java/util/Collection<TT;>;
+ <T:Ljava/util/concurrent/ForkJoinTask<*>;>(L1java/util/Collection<TT;>;)L1java/util/Collection<TT;>; # @Generated(44)
 peekNextLocalTask
  ()Ljava/util/concurrent/ForkJoinTask<*>;
- ()L0java/util/concurrent/ForkJoinTask<*>;
+ ()L0java/util/concurrent/ForkJoinTask<*>; # @Generated(3)
 pollNextLocalTask
  ()Ljava/util/concurrent/ForkJoinTask<*>;
- ()L0java/util/concurrent/ForkJoinTask<*>;
+ ()L0java/util/concurrent/ForkJoinTask<*>; # @Generated(3)
 pollSubmission
  ()Ljava/util/concurrent/ForkJoinTask<*>;
- ()L0java/util/concurrent/ForkJoinTask<*>;
+ ()L0java/util/concurrent/ForkJoinTask<*>; # @Generated(3)
 pollTask
  ()Ljava/util/concurrent/ForkJoinTask<*>;
- ()L0java/util/concurrent/ForkJoinTask<*>;
+ ()L0java/util/concurrent/ForkJoinTask<*>; # @Generated(3)
 
 complete
  (TV;)V
@@ -57,10 +57,10 @@ completeExceptionally
  (Ljava/lang/Throwable;)V
 exceptionNow
  ()Ljava/lang/Throwable;
- ()Ljava/lang/Throwable;
+ ()L1java/lang/Throwable; # @Generated
 fork
  ()Ljava/util/concurrent/ForkJoinTask<TV;>;
- ()L1java/util/concurrent/ForkJoinTask<TV;>;
+ ()L1java/util/concurrent/ForkJoinTask<TV;>; # @Generated(3)
 get
  ()TV;
  ()TV;
@@ -81,10 +81,10 @@ join
  ()TV;
 quietlyJoin
  (JLjava/util/concurrent/TimeUnit;)Z
- (JLjava/util/concurrent/TimeUnit;)Z
+ (JL1java/util/concurrent/TimeUnit;)Z # @Generated
 quietlyJoinUninterruptibly
  (JLjava/util/concurrent/TimeUnit;)Z
- (JLjava/util/concurrent/TimeUnit;)Z
+ (JL1java/util/concurrent/TimeUnit;)Z # @Generated
 resultNow
  ()TV;
  ()TV;
@@ -93,4 +93,4 @@ setRawResult
  (TV;)V
 state
  ()Ljava/util/concurrent/Future$State;
- ()Ljava/util/concurrent/Future$State;
+ ()L1java/util/concurrent/Future$State; # @Inherited(java.util.concurrent.Future)

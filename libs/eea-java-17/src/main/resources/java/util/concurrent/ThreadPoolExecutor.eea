@@ -11,7 +11,7 @@ class java/util/concurrent/ThreadPoolExecutor
  (IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;Ljava/util/concurrent/ThreadFactory;)V
 <init>
  (IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)V
- (IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)V
+ (IIJL1java/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;Ljava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)V # @Generated(5)
 afterExecute
  (Ljava/lang/Runnable;Ljava/lang/Throwable;)V
  (Ljava/lang/Runnable;Ljava/lang/Throwable;)V
@@ -26,7 +26,7 @@ execute
  (L1java/lang/Runnable;)V # @Inherited(java.util.concurrent.Executor)
 getKeepAliveTime
  (Ljava/util/concurrent/TimeUnit;)J
- (Ljava/util/concurrent/TimeUnit;)J
+ (L1java/util/concurrent/TimeUnit;)J # @Generated
 getQueue
  ()Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;
  ()Ljava/util/concurrent/BlockingQueue<Ljava/lang/Runnable;>;
@@ -41,7 +41,7 @@ remove
  (Ljava/lang/Runnable;)Z
 setKeepAliveTime
  (JLjava/util/concurrent/TimeUnit;)V
- (JLjava/util/concurrent/TimeUnit;)V
+ (JL1java/util/concurrent/TimeUnit;)V # @Generated
 setRejectedExecutionHandler
  (Ljava/util/concurrent/RejectedExecutionHandler;)V
  (Ljava/util/concurrent/RejectedExecutionHandler;)V

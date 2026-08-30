@@ -2,26 +2,26 @@ class org/eclipse/osgi/container/ModuleContainer
 
 createRequirement
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/osgi/resource/Requirement;
- (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;*>;)L1org/osgi/resource/Requirement;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/Map<Ljava/lang/String;*>;)L1org/osgi/resource/Requirement; # @Generated(110)
 toString
  (Lorg/osgi/resource/Capability;)Ljava/lang/String;
- (Lorg/osgi/resource/Capability;)L1java/lang/String;
+ (L1org/osgi/resource/Capability;)L1java/lang/String; # @Generated(2,33)
 toString
  (Lorg/osgi/resource/Requirement;)Ljava/lang/String;
- (Lorg/osgi/resource/Requirement;)L1java/lang/String;
+ (L1org/osgi/resource/Requirement;)L1java/lang/String; # @Generated(2,34)
 toString
  (Lorg/osgi/resource/Resource;)Ljava/lang/String;
- (Lorg/osgi/resource/Resource;)Ljava/lang/String;
+ (L1org/osgi/resource/Resource;)Ljava/lang/String; # @Generated(2)
 
 <init>
  (Lorg/eclipse/osgi/container/ModuleContainerAdaptor;Lorg/eclipse/osgi/container/ModuleDatabase;)V
- (Lorg/eclipse/osgi/container/ModuleContainerAdaptor;Lorg/eclipse/osgi/container/ModuleDatabase;)V
+ (L1org/eclipse/osgi/container/ModuleContainerAdaptor;Lorg/eclipse/osgi/container/ModuleDatabase;)V # @Generated(2)
 getAdaptor
  ()Lorg/eclipse/osgi/container/ModuleContainerAdaptor;
  ()Lorg/eclipse/osgi/container/ModuleContainerAdaptor;
 getDependencyClosure
  (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;)Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;
- (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;)Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;
+ (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;)L1java/util/Collection<Lorg/eclipse/osgi/container/Module;>; # @Generated(62)
 getFrameworkStartLevel
  ()Lorg/osgi/framework/startlevel/FrameworkStartLevel;
  ()Lorg/osgi/framework/startlevel/FrameworkStartLevel;
@@ -36,13 +36,13 @@ getModule
  (Ljava/lang/String;)Lorg/eclipse/osgi/container/Module;
 getModules
  ()Ljava/util/List<Lorg/eclipse/osgi/container/Module;>;
- ()Ljava/util/List<Lorg/eclipse/osgi/container/Module;>;
+ ()L1java/util/List<Lorg/eclipse/osgi/container/Module;>; # @Generated(3)
 getRemovalPending
  ()Ljava/util/Collection<Lorg/eclipse/osgi/container/ModuleRevision;>;
- ()Ljava/util/Collection<Lorg/eclipse/osgi/container/ModuleRevision;>;
+ ()L1java/util/Collection<Lorg/eclipse/osgi/container/ModuleRevision;>; # @Generated(3)
 install
  (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)Lorg/eclipse/osgi/container/Module;
- (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)Lorg/eclipse/osgi/container/Module;
+ (Lorg/eclipse/osgi/container/Module;Ljava/lang/String;L1org/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)Lorg/eclipse/osgi/container/Module; # @Generated(55)
 optionsChanged
  (Lorg/eclipse/osgi/service/debug/DebugOptions;)V
  (Lorg/eclipse/osgi/service/debug/DebugOptions;)V
@@ -54,13 +54,13 @@ resolve
  (Ljava/util/Collection<Lorg/eclipse/osgi/container/Module;>;Z)Lorg/eclipse/osgi/report/resolution/ResolutionReport;
 resolveDynamic
  (Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevision;)Lorg/eclipse/osgi/container/ModuleWire;
- (Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevision;)L0org/eclipse/osgi/container/ModuleWire;
+ (Ljava/lang/String;Lorg/eclipse/osgi/container/ModuleRevision;)L0org/eclipse/osgi/container/ModuleWire; # @Generated(64)
 store
  (Ljava/io/DataOutputStream;Z)V
  (Ljava/io/DataOutputStream;Z)V
 uninstall
  (Lorg/eclipse/osgi/container/Module;)V
- (Lorg/eclipse/osgi/container/Module;)V
+ (L1org/eclipse/osgi/container/Module;)V # @Generated
 update
  (Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)V
- (Lorg/eclipse/osgi/container/Module;Lorg/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)V
+ (L1org/eclipse/osgi/container/Module;L1org/eclipse/osgi/container/ModuleRevisionBuilder;Ljava/lang/Object;)V # @Generated(2,37)

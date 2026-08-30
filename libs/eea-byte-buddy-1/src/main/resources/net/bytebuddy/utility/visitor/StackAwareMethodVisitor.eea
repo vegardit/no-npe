@@ -2,7 +2,7 @@ class net/bytebuddy/utility/visitor/StackAwareMethodVisitor
 
 UNADJUSTED_PROPERTY
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 of
  (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/description/method/MethodDescription;)Lnet/bytebuddy/jar/asm/MethodVisitor;
@@ -10,7 +10,7 @@ of
 
 <init>
  (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/description/method/MethodDescription;)V
- (Lnet/bytebuddy/jar/asm/MethodVisitor;Lnet/bytebuddy/description/method/MethodDescription;)V
+ (Lnet/bytebuddy/jar/asm/MethodVisitor;L1net/bytebuddy/description/method/MethodDescription;)V # @Generated(39)
 drainStack
  (IILnet/bytebuddy/implementation/bytecode/StackSize;)I
  (IILnet/bytebuddy/implementation/bytecode/StackSize;)I
@@ -22,7 +22,7 @@ visitFieldInsn
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 visitFrame
  (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
- (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+ (II[0Ljava/lang/Object;I[0Ljava/lang/Object;)V # @Generated(4,24)
 visitInvokeDynamicInsn
  (Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Handle;[Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/String;Lnet/bytebuddy/jar/asm/Handle;[Ljava/lang/Object;)V
@@ -49,7 +49,7 @@ visitTableSwitchInsn
  (IILnet/bytebuddy/jar/asm/Label;[Lnet/bytebuddy/jar/asm/Label;)V
 visitTryCatchBlock
  (Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Ljava/lang/String;)V
- (Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Ljava/lang/String;)V
+ (Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;Lnet/bytebuddy/jar/asm/Label;L0java/lang/String;)V # @Generated(89)
 visitTypeInsn
  (ILjava/lang/String;)V
  (ILjava/lang/String;)V

@@ -11,13 +11,13 @@ createExceptionHandlerMethodResolverFor
  (Ljava/lang/Class<*>;)L1org/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver;
 createHandlerMethod
  (Ljava/lang/Object;Ljava/lang/reflect/Method;)Lorg/springframework/messaging/handler/HandlerMethod;
- (Ljava/lang/Object;Ljava/lang/reflect/Method;)L1org/springframework/messaging/handler/HandlerMethod;
+ (Ljava/lang/Object;Ljava/lang/reflect/Method;)L1org/springframework/messaging/handler/HandlerMethod; # @Generated(47)
 detectHandlerMethods
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
 getApplicationContext
  ()Lorg/springframework/context/ApplicationContext;
- ()L0org/springframework/context/ApplicationContext;
+ ()L0org/springframework/context/ApplicationContext; # @Generated
 getArgumentResolvers
  ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;
  ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;
@@ -29,7 +29,7 @@ getCustomReturnValueHandlers
  ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;
 getDestination
  (Lorg/springframework/messaging/Message<*>;)Ljava/lang/String;
- (Lorg/springframework/messaging/Message<*>;)L0java/lang/String;
+ (Lorg/springframework/messaging/Message<*>;)L0java/lang/String; # @Generated(45)
 getDestinationPrefixes
  ()Ljava/util/Collection<Ljava/lang/String;>;
  ()Ljava/util/Collection<Ljava/lang/String;>;
@@ -38,34 +38,34 @@ getDirectLookupDestinations
  (TT;)Ljava/util/Set<Ljava/lang/String;>;
 getExceptionHandlerMethod
  (Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/Exception;)Lorg/springframework/messaging/handler/invocation/InvocableHandlerMethod;
- (Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/Exception;)L0org/springframework/messaging/handler/invocation/InvocableHandlerMethod;
+ (L1org/springframework/messaging/handler/HandlerMethod;Ljava/lang/Exception;)L0org/springframework/messaging/handler/invocation/InvocableHandlerMethod; # @Generated(2,77)
 getHandlerMethodLogger
  ()Lorg/apache/commons/logging/Log;
- ()L0org/apache/commons/logging/Log;
+ ()L0org/apache/commons/logging/Log; # @Generated
 getHandlerMethods
  ()Ljava/util/Map<TT;Lorg/springframework/messaging/handler/HandlerMethod;>;
- ()Ljava/util/Map<TT;Lorg/springframework/messaging/handler/HandlerMethod;>;
+ ()L1java/util/Map<TT;Lorg/springframework/messaging/handler/HandlerMethod;>; # @Generated(3)
 getLookupDestination
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (L0java/lang/String;)L0java/lang/String; # @Generated(2,21)
 getMappingComparator
  (Lorg/springframework/messaging/Message<*>;)Ljava/util/Comparator<TT;>;
  (Lorg/springframework/messaging/Message<*>;)Ljava/util/Comparator<TT;>;
 getMappingForMethod
  (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)TT;
- (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)T0T;
+ (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)T0T; # @Generated(49)
 getMatchingMapping
  (TT;Lorg/springframework/messaging/Message<*>;)TT;
- (TT;Lorg/springframework/messaging/Message<*>;)T0T;
+ (TT;Lorg/springframework/messaging/Message<*>;)T0T; # @Generated(48)
 getReturnValueHandlerLogger
  ()Lorg/apache/commons/logging/Log;
- ()L0org/apache/commons/logging/Log;
+ ()L0org/apache/commons/logging/Log; # @Generated
 getReturnValueHandlers
  ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;
  ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;
 handleMatch
  (TT;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V
- (TT;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V
+ (TT;L1org/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V # @Generated(5)
 handleMessage
  (Lorg/springframework/messaging/Message<*>;)V
  (Lorg/springframework/messaging/Message<*>;)V
@@ -95,22 +95,22 @@ registerHandlerMethod
  (Ljava/lang/Object;Ljava/lang/reflect/Method;TT;)V
 setApplicationContext
  (Lorg/springframework/context/ApplicationContext;)V
- (Lorg/springframework/context/ApplicationContext;)V
+ (L0org/springframework/context/ApplicationContext;)V # @Generated
 setArgumentResolvers
  (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;)V
- (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;)V
+ (L0java/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;)V # @Generated(2)
 setCustomArgumentResolvers
  (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;)V
- (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;)V
+ (L0java/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;)V # @Generated(2)
 setCustomReturnValueHandlers
  (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;)V
- (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;)V
+ (L0java/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;)V # @Generated(2)
 setDestinationPrefixes
  (Ljava/util/Collection<Ljava/lang/String;>;)V
- (Ljava/util/Collection<Ljava/lang/String;>;)V
+ (L0java/util/Collection<Ljava/lang/String;>;)V # @Generated(2)
 setReturnValueHandlers
  (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;)V
- (Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;)V
+ (L0java/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>;)V # @Generated(2)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

@@ -6,22 +6,22 @@ logger
 
 <init>
  (Ljava/sql/DatabaseMetaData;)V
- (Ljava/sql/DatabaseMetaData;)V
+ (L1java/sql/DatabaseMetaData;)V # @Generated
 byPassReturnParameter
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
 catalogNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
+ (L0java/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 createDefaultInOutParameter
  (Ljava/lang/String;Lorg/springframework/jdbc/core/metadata/CallParameterMetaData;)Lorg/springframework/jdbc/core/SqlParameter;
- (Ljava/lang/String;Lorg/springframework/jdbc/core/metadata/CallParameterMetaData;)L1org/springframework/jdbc/core/SqlParameter; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
+ (Ljava/lang/String;L1org/springframework/jdbc/core/metadata/CallParameterMetaData;)L1org/springframework/jdbc/core/SqlParameter; # @Overrides(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 createDefaultInParameter
  (Ljava/lang/String;Lorg/springframework/jdbc/core/metadata/CallParameterMetaData;)Lorg/springframework/jdbc/core/SqlParameter;
- (Ljava/lang/String;Lorg/springframework/jdbc/core/metadata/CallParameterMetaData;)L1org/springframework/jdbc/core/SqlParameter; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
+ (Ljava/lang/String;L1org/springframework/jdbc/core/metadata/CallParameterMetaData;)L1org/springframework/jdbc/core/SqlParameter; # @Overrides(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 createDefaultOutParameter
  (Ljava/lang/String;Lorg/springframework/jdbc/core/metadata/CallParameterMetaData;)Lorg/springframework/jdbc/core/SqlParameter;
- (Ljava/lang/String;Lorg/springframework/jdbc/core/metadata/CallParameterMetaData;)L1org/springframework/jdbc/core/SqlParameter; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
+ (Ljava/lang/String;L1org/springframework/jdbc/core/metadata/CallParameterMetaData;)L1org/springframework/jdbc/core/SqlParameter; # @Overrides(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 getCallParameterMetaData
  ()Ljava/util/List<Lorg/springframework/jdbc/core/metadata/CallParameterMetaData;>;
  ()Ljava/util/List<Lorg/springframework/jdbc/core/metadata/CallParameterMetaData;>;
@@ -33,22 +33,22 @@ initializeWithMetaData
  (Ljava/sql/DatabaseMetaData;)V
 initializeWithProcedureColumnMetaData
  (Ljava/sql/DatabaseMetaData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/sql/DatabaseMetaData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/sql/DatabaseMetaData;L0java/lang/String;L0java/lang/String;L0java/lang/String;)V # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 metaDataCatalogNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
+ (L0java/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 metaDataSchemaNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
+ (L0java/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 namedParameterBindingToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L1java/lang/String;
+ (L0java/lang/String;)L1java/lang/String; # @Overrides(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 parameterNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
+ (L0java/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 procedureNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
+ (L0java/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
 schemaNameToUse
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)
+ (L0java/lang/String;)L0java/lang/String; # @Inherited(org.springframework.jdbc.core.metadata.CallMetaDataProvider)

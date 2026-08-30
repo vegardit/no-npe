@@ -11,23 +11,23 @@ super java/util/concurrent/ConcurrentMap
 
 newKeySet
  <K:Ljava/lang/Object;>()Ljava/util/concurrent/ConcurrentHashMap$KeySetView<TK;Ljava/lang/Boolean;>;
- <K:Ljava/lang/Object;>()L1java/util/concurrent/ConcurrentHashMap$KeySetView<TK;Ljava/lang/Boolean;>;
+ <K:Ljava/lang/Object;>()L1java/util/concurrent/ConcurrentHashMap$KeySetView<TK;Ljava/lang/Boolean;>; # @Generated(25)
 newKeySet
  <K:Ljava/lang/Object;>(I)Ljava/util/concurrent/ConcurrentHashMap$KeySetView<TK;Ljava/lang/Boolean;>;
- <K:Ljava/lang/Object;>(I)L1java/util/concurrent/ConcurrentHashMap$KeySetView<TK;Ljava/lang/Boolean;>;
+ <K:Ljava/lang/Object;>(I)L1java/util/concurrent/ConcurrentHashMap$KeySetView<TK;Ljava/lang/Boolean;>; # @Generated(26)
 
 <init>
  (Ljava/util/Map<+TK;+TV;>;)V
- (L1java/util/Map<+TK;+TV;>;)V
+ (L1java/util/Map<+TK;+TV;>;)V # @Generated(2)
 compute
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (T1K;L1java/util/function/BiFunction<-TK;-TV;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+ (T1K;L1java/util/function/BiFunction<-TK;-T0V;+T0V;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 computeIfAbsent
  (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
- (T1K;L1java/util/function/Function<-TK;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+ (T1K;L1java/util/function/Function<-TK;+T0V;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 computeIfPresent
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (T1K;L1java/util/function/BiFunction<-TK;-TV;+TV;>;)T0V;
+ (T1K;L1java/util/function/BiFunction<-TK;-TV;+T0V;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 contains
  (Ljava/lang/Object;)Z
  (L1java/lang/Object;)Z
@@ -39,7 +39,7 @@ containsValue
  (L1java/lang/Object;)Z # @Overrides(java.util.AbstractMap)
 elements
  ()Ljava/util/Enumeration<TV;>;
- ()L1java/util/Enumeration<TV;>;
+ ()L1java/util/Enumeration<TV;>; # @Generated(3)
 entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
  ()L1java/util/Set<L1java/util/Map$Entry<TK;TV;>;>; # @Inherited(java.util.AbstractMap)
@@ -78,19 +78,19 @@ get
  (L1java/lang/Object;)T0V; # @Overrides(java.util.AbstractMap)
 getOrDefault
  (Ljava/lang/Object;TV;)TV;
- (L1java/lang/Object;TV;)TV;
+ (L1java/lang/Object;TV;)T0V; # @Generated(24) @Overrides(java.util.concurrent.ConcurrentMap)
 keySet
  ()Ljava/util/concurrent/ConcurrentHashMap$KeySetView<TK;TV;>;
- ()L1java/util/concurrent/ConcurrentHashMap$KeySetView<TK;TV;>;
+ ()L1java/util/concurrent/ConcurrentHashMap$KeySetView<TK;TV;>; # @Generated(3)
 keySet
  (TV;)Ljava/util/concurrent/ConcurrentHashMap$KeySetView<TK;TV;>;
- (T1V;)L1java/util/concurrent/ConcurrentHashMap$KeySetView<TK;TV;>;
+ (T1V;)L1java/util/concurrent/ConcurrentHashMap$KeySetView<TK;TV;>; # @Generated(6)
 keys
  ()Ljava/util/Enumeration<TK;>;
- ()L1java/util/Enumeration<TK;>;
+ ()L1java/util/Enumeration<TK;>; # @Generated(3)
 merge
  (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)TV;
- (T1K;T1V;L1java/util/function/BiFunction<-TV;-TV;+TV;>;)T0V;
+ (T1K;T1V;L1java/util/function/BiFunction<-TV;-TV;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 put
  (TK;TV;)TV;
  (T1K;T1V;)T0V; # @Overrides(java.util.AbstractMap)

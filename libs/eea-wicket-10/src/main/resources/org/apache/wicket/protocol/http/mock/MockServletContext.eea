@@ -5,19 +5,19 @@ class org/apache/wicket/protocol/http/mock/MockServletContext
  (Lorg/apache/wicket/Application;Ljava/lang/String;)V
 addFilter
  (Ljava/lang/String;Ljakarta/servlet/Filter;)Ljakarta/servlet/FilterRegistration$Dynamic;
- (Ljava/lang/String;Ljakarta/servlet/Filter;)L0jakarta/servlet/FilterRegistration$Dynamic;
+ (Ljava/lang/String;Ljakarta/servlet/Filter;)L0jakarta/servlet/FilterRegistration$Dynamic; # @Generated(45)
 addFilter
  (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Filter;>;)Ljakarta/servlet/FilterRegistration$Dynamic;
- (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Filter;>;)L0jakarta/servlet/FilterRegistration$Dynamic;
+ (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Filter;>;)L0jakarta/servlet/FilterRegistration$Dynamic; # @Generated(65)
 addFilter
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/FilterRegistration$Dynamic;
- (Ljava/lang/String;Ljava/lang/String;)L0jakarta/servlet/FilterRegistration$Dynamic;
+ (Ljava/lang/String;Ljava/lang/String;)L0jakarta/servlet/FilterRegistration$Dynamic; # @Generated(39)
 addInitParameter
  (Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/lang/String;Ljava/lang/String;)V
 addJspFile
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
- (Ljava/lang/String;Ljava/lang/String;)L0jakarta/servlet/ServletRegistration$Dynamic;
+ (Ljava/lang/String;Ljava/lang/String;)L0jakarta/servlet/ServletRegistration$Dynamic; # @Generated(39)
 addListener
  (Ljava/lang/Class<+Ljava/util/EventListener;>;)V
  (Ljava/lang/Class<+Ljava/util/EventListener;>;)V
@@ -26,7 +26,7 @@ addListener
  (Ljava/lang/String;)V
 addListener
  <T::Ljava/util/EventListener;>(TT;)V
- <1T::Ljava/util/EventListener;>(TT;)V
+ <1T::Ljava/util/EventListener;>(T1T;)V # @Generated(32)
 addMimeType
  (Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/lang/String;Ljava/lang/String;)V
@@ -35,19 +35,19 @@ addServlet
  (Ljava/lang/String;Ljakarta/servlet/Servlet;)Ljakarta/servlet/ServletRegistration$Dynamic;
 addServlet
  (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Servlet;>;)Ljakarta/servlet/ServletRegistration$Dynamic;
- (Ljava/lang/String;Ljava/lang/Class<+Ljakarta/servlet/Servlet;>;)Ljakarta/servlet/ServletRegistration$Dynamic;
+ (Ljava/lang/String;L1java/lang/Class<+Ljakarta/servlet/Servlet;>;)Ljakarta/servlet/ServletRegistration$Dynamic; # @Generated(20)
 addServlet
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
 createFilter
  <T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)TT;
- <T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)T0T;
+ <T::Ljakarta/servlet/Filter;>(Ljava/lang/Class<TT;>;)T0T; # @Generated(54)
 createListener
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)TT;
- <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)T0T;
+ <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)T0T; # @Generated(55)
 createServlet
  <T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)TT;
- <T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)T1T;
+ <T::Ljakarta/servlet/Servlet;>(L1java/lang/Class<TT;>;)T1T; # @Generated(32)
 declareRoles
  ([Ljava/lang/String;)V
  ([Ljava/lang/String;)V
@@ -56,67 +56,67 @@ getAttribute
  (Ljava/lang/String;)Ljava/lang/Object;
 getAttributeNames
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
- ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()L1java/util/Enumeration<Ljava/lang/String;>; # @Generated(3)
 getClassLoader
  ()Ljava/lang/ClassLoader;
- ()L0java/lang/ClassLoader;
+ ()L0java/lang/ClassLoader; # @Generated
 getContext
  (Ljava/lang/String;)Ljakarta/servlet/ServletContext;
- (Ljava/lang/String;)Ljakarta/servlet/ServletContext;
+ (Ljava/lang/String;)L1jakarta/servlet/ServletContext; # @Generated(21)
 getContextPath
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Generated
 getDefaultSessionTrackingModes
  ()Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;
- ()Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;
+ ()L1java/util/Set<Ljakarta/servlet/SessionTrackingMode;>; # @Generated(3)
 getEffectiveSessionTrackingModes
  ()Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;
  ()Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;
 getFilterRegistration
  (Ljava/lang/String;)Ljakarta/servlet/FilterRegistration;
- (Ljava/lang/String;)L0jakarta/servlet/FilterRegistration;
+ (Ljava/lang/String;)L0jakarta/servlet/FilterRegistration; # @Generated(21)
 getFilterRegistrations
  ()Ljava/util/Map<Ljava/lang/String;+Ljakarta/servlet/FilterRegistration;>;
- ()L0java/util/Map<Ljava/lang/String;+Ljakarta/servlet/FilterRegistration;>;
+ ()L0java/util/Map<Ljava/lang/String;+Ljakarta/servlet/FilterRegistration;>; # @Generated(3)
 getInitParameter
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
 getInitParameterNames
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
- ()Ljava/util/Enumeration<Ljava/lang/String;>;
+ ()L1java/util/Enumeration<Ljava/lang/String;>; # @Generated(3)
 getJspConfigDescriptor
  ()Ljakarta/servlet/descriptor/JspConfigDescriptor;
- ()L0jakarta/servlet/descriptor/JspConfigDescriptor;
+ ()L0jakarta/servlet/descriptor/JspConfigDescriptor; # @Generated
 getMimeType
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (L1java/lang/String;)L0java/lang/String; # @Generated(2,21)
 getNamedDispatcher
  (Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;
  (Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;
 getRealPath
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Generated(21)
 getRequestCharacterEncoding
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getRequestDispatcher
  (Ljava/lang/String;)Ljakarta/servlet/RequestDispatcher;
- (Ljava/lang/String;)L1jakarta/servlet/RequestDispatcher;
+ (Ljava/lang/String;)L1jakarta/servlet/RequestDispatcher; # @Generated(21)
 getResource
  (Ljava/lang/String;)Ljava/net/URL;
- (Ljava/lang/String;)Ljava/net/URL;
+ (L1java/lang/String;)Ljava/net/URL; # @Generated(2)
 getResourceAsStream
  (Ljava/lang/String;)Ljava/io/InputStream;
- (Ljava/lang/String;)L0java/io/InputStream;
+ (Ljava/lang/String;)L0java/io/InputStream; # @Generated(21)
 getResourcePaths
  (Ljava/lang/String;)Ljava/util/Set<Ljava/lang/String;>;
- (Ljava/lang/String;)L0java/util/Set<Ljava/lang/String;>;
+ (Ljava/lang/String;)L0java/util/Set<Ljava/lang/String;>; # @Generated(21)
 getResponseCharacterEncoding
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getServerInfo
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Generated
 getServletContextName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -131,7 +131,7 @@ getSessionCookieConfig
  ()Ljakarta/servlet/SessionCookieConfig;
 getVirtualServerName
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Generated
 log
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

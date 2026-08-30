@@ -11,7 +11,7 @@ class org/eclipse/ui/ide/undo/CopyResourcesOperation
  ([Lorg/eclipse/core/resources/IResource;[Lorg/eclipse/core/runtime/IPath;Ljava/lang/String;)V
 computeUndoableStatus
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/core/runtime/IStatus; # @Inherited(org.eclipse.ui.ide.undo.AbstractWorkspaceOperation)
 copy
  (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
  (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
@@ -20,7 +20,7 @@ doExecute
  (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
 doUndo
  (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
- (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
+ (L1org/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V # @Generated(2)
 updateResourceChangeDescriptionFactory
  (Lorg/eclipse/core/resources/mapping/IResourceChangeDescriptionFactory;I)Z
  (Lorg/eclipse/core/resources/mapping/IResourceChangeDescriptionFactory;I)Z

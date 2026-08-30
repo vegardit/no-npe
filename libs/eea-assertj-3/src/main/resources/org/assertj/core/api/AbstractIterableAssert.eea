@@ -243,7 +243,7 @@ filteredOn
  (Ljava/lang/String;Ljava/lang/Object;)T1SELF;
 filteredOn
  (Ljava/lang/String;Lorg/assertj/core/api/filter/FilterOperator<*>;)TSELF;
- (Ljava/lang/String;Lorg/assertj/core/api/filter/FilterOperator<*>;)T1SELF;
+ (Ljava/lang/String;L1org/assertj/core/api/filter/FilterOperator<*>;)T1SELF; # @Generated(20)
 filteredOn
  (Ljava/util/function/Predicate<-TELEMENT;>;)TSELF;
  (Ljava/util/function/Predicate<-TELEMENT;>;)T1SELF;
@@ -324,7 +324,7 @@ hasOnlyElementsOfTypes
  ([Ljava/lang/Class<*>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
 hasOnlyOneElementSatisfying
  (Ljava/util/function/Consumer<-TELEMENT;>;)TSELF;
- (Ljava/util/function/Consumer<-TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
+ (L1java/util/function/Consumer<-TELEMENT;>;)T1SELF; # @Overrides(org.assertj.core.api.ObjectEnumerableAssert)
 hasSameClassAs
  (Ljava/lang/Object;)TSELF;
  (Ljava/lang/Object;)T1SELF; # @Inherited(org.assertj.core.api.AbstractAssert)
@@ -465,7 +465,7 @@ map
  <V:Ljava/lang/Object;EXCEPTION:Ljava/lang/Exception;>(Lorg/assertj/core/api/iterable/ThrowingExtractor<-TELEMENT;TV;TEXCEPTION;>;)L1org/assertj/core/api/AbstractListAssert<*Ljava/util/List<+TV;>;TV;Lorg/assertj/core/api/ObjectAssert<TV;>;>;
 navigationDescription
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L1java/lang/String;
+ (Ljava/lang/String;)L1java/lang/String; # @Generated(21)
 newAbstractIterableAssert
  (Ljava/lang/Iterable<+TELEMENT;>;)TSELF;
  (Ljava/lang/Iterable<+TELEMENT;>;)TSELF;
@@ -522,7 +522,7 @@ singleElement
  <ASSERT:Lorg/assertj/core/api/AbstractAssert<**>;>(Lorg/assertj/core/api/InstanceOfAssertFactory<*TASSERT;>;)T1ASSERT;
 size
  ()Lorg/assertj/core/api/AbstractIterableSizeAssert<TSELF;TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
- ()L1org/assertj/core/api/AbstractIterableSizeAssert<TSELF;TACTUAL;TELEMENT;TELEMENT_ASSERT;>;
+ ()L1org/assertj/core/api/AbstractIterableSizeAssert<TSELF;TACTUAL;TELEMENT;TELEMENT_ASSERT;>; # @Generated(3)
 startsWith
  ([TELEMENT;)TSELF;
  ([TELEMENT;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)

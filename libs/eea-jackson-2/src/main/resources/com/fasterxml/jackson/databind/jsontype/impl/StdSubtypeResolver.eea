@@ -9,31 +9,31 @@ _registeredSubtypes
  (Lcom/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver;)V
 _collectAndResolve
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/jsontype/NamedType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;Ljava/util/HashMap<Lcom/fasterxml/jackson/databind/jsontype/NamedType;Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)V
- (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/jsontype/NamedType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;Ljava/util/HashMap<Lcom/fasterxml/jackson/databind/jsontype/NamedType;Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)V
+ (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;L1com/fasterxml/jackson/databind/jsontype/NamedType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/AnnotationIntrospector;L1java/util/HashMap<Lcom/fasterxml/jackson/databind/jsontype/NamedType;Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)V # @Generated(60,218)
 _collectAndResolveByTypeId
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/jsontype/NamedType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Ljava/util/Set<Ljava/lang/Class<*>;>;Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)V
- (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/jsontype/NamedType;Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Ljava/util/Set<Ljava/lang/Class<*>;>;Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)V
+ (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;L1com/fasterxml/jackson/databind/jsontype/NamedType;L1com/fasterxml/jackson/databind/cfg/MapperConfig<*>;L1java/util/Set<Ljava/lang/Class<*>;>;Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)V # @Generated(60,111,163)
 _combineNamedAndUnnamed
  (Ljava/lang/Class<*>;Ljava/util/Set<Ljava/lang/Class<*>;>;Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
- (Ljava/lang/Class<*>;Ljava/util/Set<Ljava/lang/Class<*>;>;Ljava/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)L1java/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
+ (Ljava/lang/Class<*>;L1java/util/Set<Ljava/lang/Class<*>;>;L1java/util/Map<Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;)L1java/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>; # @Generated(22,59,146)
 collectAndResolveSubtypesByClass
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)L1java/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
+ (L1com/fasterxml/jackson/databind/cfg/MapperConfig<*>;L1com/fasterxml/jackson/databind/introspect/AnnotatedClass;)L1java/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>; # @Overrides(com.fasterxml.jackson.databind.jsontype.SubtypeResolver)
 collectAndResolveSubtypesByClass
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JavaType;)L1java/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
+ (L1com/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JavaType;)L1java/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>; # @Overrides(com.fasterxml.jackson.databind.jsontype.SubtypeResolver)
 collectAndResolveSubtypesByTypeId
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
+ (L1com/fasterxml/jackson/databind/cfg/MapperConfig<*>;L1com/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>; # @Overrides(com.fasterxml.jackson.databind.jsontype.SubtypeResolver)
 collectAndResolveSubtypesByTypeId
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>;
+ (L1com/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;L1com/fasterxml/jackson/databind/JavaType;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/jsontype/NamedType;>; # @Overrides(com.fasterxml.jackson.databind.jsontype.SubtypeResolver)
 copy
  ()Lcom/fasterxml/jackson/databind/jsontype/SubtypeResolver;
- ()L1com/fasterxml/jackson/databind/jsontype/SubtypeResolver;
+ ()L1com/fasterxml/jackson/databind/jsontype/SubtypeResolver; # @Inherited(com.fasterxml.jackson.databind.jsontype.SubtypeResolver)
 registerSubtypes
  (Ljava/util/Collection<Ljava/lang/Class<*>;>;)V
- (Ljava/util/Collection<Ljava/lang/Class<*>;>;)V
+ (L1java/util/Collection<Ljava/lang/Class<*>;>;)V # @Generated(2)
 registerSubtypes
  ([Lcom/fasterxml/jackson/databind/jsontype/NamedType;)V
  ([Lcom/fasterxml/jackson/databind/jsontype/NamedType;)V

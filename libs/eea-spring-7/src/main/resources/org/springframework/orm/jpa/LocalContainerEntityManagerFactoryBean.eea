@@ -5,7 +5,7 @@ createNativeEntityManagerFactory
  ()L1jakarta/persistence/EntityManagerFactory; # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
 determinePersistenceUnitInfo
  (Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitManager;)Ljakarta/persistence/spi/PersistenceUnitInfo;
- (Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitManager;)Ljakarta/persistence/spi/PersistenceUnitInfo;
+ (L1org/springframework/orm/jpa/persistenceunit/PersistenceUnitManager;)Ljakarta/persistence/spi/PersistenceUnitInfo; # @Generated(2)
 getDataSource
  ()Ljavax/sql/DataSource;
  ()L0javax/sql/DataSource; # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
@@ -20,13 +20,13 @@ postProcessEntityManagerFactory
  (Ljakarta/persistence/EntityManagerFactory;Ljakarta/persistence/spi/PersistenceUnitInfo;)V
 setDataSource
  (Ljavax/sql/DataSource;)V
- (Ljavax/sql/DataSource;)V
+ (L0javax/sql/DataSource;)V # @Generated
 setDefaultToOneFetchType
  (Ljakarta/persistence/FetchType;)V
  (Ljakarta/persistence/FetchType;)V
 setJtaDataSource
  (Ljavax/sql/DataSource;)V
- (Ljavax/sql/DataSource;)V
+ (L0javax/sql/DataSource;)V # @Generated
 setLoadTimeWeaver
  (Lorg/springframework/instrument/classloading/LoadTimeWeaver;)V
  (Lorg/springframework/instrument/classloading/LoadTimeWeaver;)V
@@ -44,13 +44,13 @@ setPackagesToScan
  ([Ljava/lang/String;)V
 setPersistenceConfiguration
  (Ljakarta/persistence/PersistenceConfiguration;)V
- (Ljakarta/persistence/PersistenceConfiguration;)V
+ (L1jakarta/persistence/PersistenceConfiguration;)V # @Generated
 setPersistenceUnitManager
  (Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitManager;)V
  (Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitManager;)V
 setPersistenceUnitName
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Inherited(org.springframework.orm.jpa.AbstractEntityManagerFactoryBean)
 setPersistenceUnitPostProcessors
  ([Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitPostProcessor;)V
  ([Lorg/springframework/orm/jpa/persistenceunit/PersistenceUnitPostProcessor;)V

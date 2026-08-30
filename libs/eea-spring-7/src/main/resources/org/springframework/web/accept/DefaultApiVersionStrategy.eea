@@ -2,7 +2,7 @@ class org/springframework/web/accept/DefaultApiVersionStrategy
 
 <init>
  (Ljava/util/List<Lorg/springframework/web/accept/ApiVersionResolver;>;Lorg/springframework/web/accept/ApiVersionParser<*>;Ljava/lang/Boolean;Ljava/lang/String;ZLjava/util/function/Predicate<Ljava/lang/Comparable<*>;>;Lorg/springframework/web/accept/ApiVersionDeprecationHandler;)V
- (Ljava/util/List<Lorg/springframework/web/accept/ApiVersionResolver;>;Lorg/springframework/web/accept/ApiVersionParser<*>;Ljava/lang/Boolean;Ljava/lang/String;ZLjava/util/function/Predicate<Ljava/lang/Comparable<*>;>;Lorg/springframework/web/accept/ApiVersionDeprecationHandler;)V
+ (Ljava/util/List<Lorg/springframework/web/accept/ApiVersionResolver;>;Lorg/springframework/web/accept/ApiVersionParser<*>;L0java/lang/Boolean;L0java/lang/String;ZL0java/util/function/Predicate<Ljava/lang/Comparable<*>;>;L0org/springframework/web/accept/ApiVersionDeprecationHandler;)V # @Generated(123,142,161,218)
 addMappedVersion
  ([Ljava/lang/String;)V
  ([Ljava/lang/String;)V
@@ -11,7 +11,7 @@ addSupportedVersion
  ([Ljava/lang/String;)V
 getDefaultVersion
  ()Ljava/lang/Comparable<*>;
- ()Ljava/lang/Comparable<*>;
+ ()L0java/lang/Comparable<*>; # @Inherited(org.springframework.web.accept.ApiVersionStrategy)
 handleDeprecations
  (Ljava/lang/Comparable<*>;Ljava/lang/Object;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V
  (Ljava/lang/Comparable<*>;Ljava/lang/Object;Ljakarta/servlet/http/HttpServletRequest;Ljakarta/servlet/http/HttpServletResponse;)V
@@ -20,10 +20,10 @@ parseVersion
  (Ljava/lang/String;)Ljava/lang/Comparable<*>;
 resolveVersion
  (Ljakarta/servlet/http/HttpServletRequest;)Ljava/lang/String;
- (Ljakarta/servlet/http/HttpServletRequest;)L0java/lang/String;
+ (Ljakarta/servlet/http/HttpServletRequest;)L0java/lang/String; # @Inherited(org.springframework.web.accept.ApiVersionStrategy)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)
 validateVersion
  (Ljava/lang/Comparable<*>;Ljakarta/servlet/http/HttpServletRequest;)V
- (Ljava/lang/Comparable<*>;Ljakarta/servlet/http/HttpServletRequest;)V
+ (L0java/lang/Comparable<*>;Ljakarta/servlet/http/HttpServletRequest;)V # @Inherited(org.springframework.web.accept.ApiVersionStrategy)

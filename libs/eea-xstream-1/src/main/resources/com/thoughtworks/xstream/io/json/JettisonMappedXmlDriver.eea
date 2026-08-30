@@ -18,7 +18,7 @@ mof
  (Lorg/codehaus/jettison/mapped/Configuration;Z)V
 createReader
  (Ljava/io/File;)Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;
- (Ljava/io/File;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Inherited(com.thoughtworks.xstream.io.AbstractDriver)
+ (L1java/io/File;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Overrides(com.thoughtworks.xstream.io.AbstractDriver)
 createReader
  (Ljava/io/InputStream;)Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;
  (Ljava/io/InputStream;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Inherited(com.thoughtworks.xstream.io.HierarchicalStreamDriver)
@@ -27,7 +27,7 @@ createReader
  (Ljava/io/Reader;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Inherited(com.thoughtworks.xstream.io.HierarchicalStreamDriver)
 createReader
  (Ljava/net/URL;)Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;
- (Ljava/net/URL;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Inherited(com.thoughtworks.xstream.io.AbstractDriver)
+ (L1java/net/URL;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Inherited(com.thoughtworks.xstream.io.AbstractDriver)
 createWriter
  (Ljava/io/OutputStream;)Lcom/thoughtworks/xstream/io/HierarchicalStreamWriter;
  (Ljava/io/OutputStream;)L1com/thoughtworks/xstream/io/HierarchicalStreamWriter; # @Inherited(com.thoughtworks.xstream.io.HierarchicalStreamDriver)

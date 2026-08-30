@@ -62,13 +62,13 @@ offerFirst
  (T1E;)Z # @Inherited(java.util.concurrent.BlockingDeque)
 offerFirst
  (TE;JLjava/util/concurrent/TimeUnit;)Z
- (T1E;JLjava/util/concurrent/TimeUnit;)Z # @Inherited(java.util.concurrent.BlockingDeque)
+ (T1E;JL1java/util/concurrent/TimeUnit;)Z # @Overrides(java.util.concurrent.BlockingDeque)
 offerLast
  (TE;)Z
  (T1E;)Z # @Inherited(java.util.concurrent.BlockingDeque)
 offerLast
  (TE;JLjava/util/concurrent/TimeUnit;)Z
- (T1E;JLjava/util/concurrent/TimeUnit;)Z # @Inherited(java.util.concurrent.BlockingDeque)
+ (T1E;JL1java/util/concurrent/TimeUnit;)Z # @Overrides(java.util.concurrent.BlockingDeque)
 peek
  ()TE;
  ()T0E; # @Inherited(java.util.concurrent.BlockingDeque)
@@ -89,13 +89,13 @@ pollFirst
  ()T0E; # @Inherited(java.util.Deque)
 pollFirst
  (JLjava/util/concurrent/TimeUnit;)TE;
- (JL1java/util/concurrent/TimeUnit;)TE; # @Inherited(java.util.concurrent.BlockingDeque)
+ (JL1java/util/concurrent/TimeUnit;)T0E; # @Overrides(java.util.concurrent.BlockingDeque)
 pollLast
  ()TE;
  ()T0E; # @Inherited(java.util.Deque)
 pollLast
  (JLjava/util/concurrent/TimeUnit;)TE;
- (JL1java/util/concurrent/TimeUnit;)TE; # @Inherited(java.util.concurrent.BlockingDeque)
+ (JL1java/util/concurrent/TimeUnit;)T0E; # @Overrides(java.util.concurrent.BlockingDeque)
 pop
  ()TE;
  ()T1E; # @Inherited(java.util.Deque)

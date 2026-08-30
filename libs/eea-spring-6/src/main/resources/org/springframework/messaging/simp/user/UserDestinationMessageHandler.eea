@@ -5,13 +5,13 @@ class org/springframework/messaging/simp/user/UserDestinationMessageHandler
  (Lorg/springframework/messaging/SubscribableChannel;Lorg/springframework/messaging/SubscribableChannel;Lorg/springframework/messaging/simp/user/UserDestinationResolver;)V
 getBroadcastDestination
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 getBrokerMessagingTemplate
  ()Lorg/springframework/messaging/core/MessageSendingOperations<Ljava/lang/String;>;
  ()Lorg/springframework/messaging/core/MessageSendingOperations<Ljava/lang/String;>;
 getHeaderInitializer
  ()Lorg/springframework/messaging/support/MessageHeaderInitializer;
- ()L0org/springframework/messaging/support/MessageHeaderInitializer;
+ ()L0org/springframework/messaging/support/MessageHeaderInitializer; # @Generated
 getUserDestinationResolver
  ()Lorg/springframework/messaging/simp/user/UserDestinationResolver;
  ()Lorg/springframework/messaging/simp/user/UserDestinationResolver;
@@ -20,13 +20,13 @@ handleMessage
  (Lorg/springframework/messaging/Message<*>;)V
 setBroadcastDestination
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setHeaderInitializer
  (Lorg/springframework/messaging/support/MessageHeaderInitializer;)V
- (Lorg/springframework/messaging/support/MessageHeaderInitializer;)V
+ (L0org/springframework/messaging/support/MessageHeaderInitializer;)V # @Generated
 stop
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V # @Inherited(org.springframework.context.SmartLifecycle)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

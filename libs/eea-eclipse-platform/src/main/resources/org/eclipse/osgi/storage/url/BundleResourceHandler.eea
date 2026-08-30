@@ -2,23 +2,23 @@ class org/eclipse/osgi/storage/url/BundleResourceHandler
 
 BID_FWKID_SEPARATOR
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 OSGI_ENTRY_URL_PROTOCOL
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 OSGI_RESOURCE_URL_PROTOCOL
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 SECURITY_CHECKED
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 SECURITY_UNCHECKED
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 createURLHostForBundleID
  (Lorg/eclipse/osgi/container/ModuleContainer;J)Ljava/lang/String;
- (Lorg/eclipse/osgi/container/ModuleContainer;J)L1java/lang/String;
+ (L1org/eclipse/osgi/container/ModuleContainer;J)L1java/lang/String; # @Generated(2,48)
 
 bundleEntry
  Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
@@ -35,28 +35,28 @@ checkAuthorization
  (Lorg/eclipse/osgi/container/Module;)Z
 equals
  (Ljava/net/URL;Ljava/net/URL;)Z
- (Ljava/net/URL;Ljava/net/URL;)Z
+ (L1java/net/URL;L1java/net/URL;)Z # @Inherited(org.eclipse.equinox.plurl.PlurlStreamHandlerBase)
 findBundleEntry
  (Ljava/net/URL;Lorg/eclipse/osgi/container/Module;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
  (Ljava/net/URL;Lorg/eclipse/osgi/container/Module;)Lorg/eclipse/osgi/storage/bundlefile/BundleEntry;
 getHostAddress
  (Ljava/net/URL;)Ljava/net/InetAddress;
- (Ljava/net/URL;)L0java/net/InetAddress;
+ (L1java/net/URL;)L0java/net/InetAddress; # @Overrides(org.eclipse.equinox.plurl.PlurlStreamHandlerBase)
 hashCode
  (Ljava/net/URL;)I
- (Ljava/net/URL;)I
+ (L1java/net/URL;)I # @Inherited(org.eclipse.equinox.plurl.PlurlStreamHandlerBase)
 hostsEqual
  (Ljava/net/URL;Ljava/net/URL;)Z
- (Ljava/net/URL;Ljava/net/URL;)Z
+ (L1java/net/URL;L1java/net/URL;)Z # @Generated(2,16)
 openConnection
  (Ljava/net/URL;)Ljava/net/URLConnection;
- (Ljava/net/URL;)Ljava/net/URLConnection;
+ (Ljava/net/URL;)L1java/net/URLConnection; # @Generated(17)
 parseURL
  (Ljava/net/URL;Ljava/lang/String;II)V
- (Ljava/net/URL;Ljava/lang/String;II)V
+ (L1java/net/URL;Ljava/lang/String;II)V # @Inherited(java.net.URLStreamHandler)
 sameFile
  (Ljava/net/URL;Ljava/net/URL;)Z
- (Ljava/net/URL;Ljava/net/URL;)Z
+ (L1java/net/URL;L1java/net/URL;)Z # @Inherited(org.eclipse.equinox.plurl.PlurlStreamHandlerBase)
 toExternalForm
  (Ljava/net/URL;)Ljava/lang/String;
- (Ljava/net/URL;)L1java/lang/String; # @Inherited(org.eclipse.equinox.plurl.PlurlStreamHandlerBase)
+ (L1java/net/URL;)L1java/lang/String; # @Inherited(org.eclipse.equinox.plurl.PlurlStreamHandlerBase)

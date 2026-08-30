@@ -36,7 +36,7 @@ headers
  (Ljakarta/mail/Session;Ljava/io/InputStream;)V
 <init>
  (Ljakarta/mail/internet/MimeMessage;)V
- (Ljakarta/mail/internet/MimeMessage;)V
+ (L1jakarta/mail/internet/MimeMessage;)V # @Generated
 addFrom
  ([Ljakarta/mail/Address;)V
  ([Ljakarta/mail/Address;)V
@@ -54,10 +54,10 @@ addRecipients
  (Ljakarta/mail/Message$RecipientType;[Ljakarta/mail/Address;)V
 createInternetHeaders
  (Ljava/io/InputStream;)Ljakarta/mail/internet/InternetHeaders;
- (Ljava/io/InputStream;)L1jakarta/mail/internet/InternetHeaders;
+ (Ljava/io/InputStream;)L1jakarta/mail/internet/InternetHeaders; # @Generated(24)
 createMimeMessage
  (Ljakarta/mail/Session;)Ljakarta/mail/internet/MimeMessage;
- (Ljakarta/mail/Session;)L1jakarta/mail/internet/MimeMessage;
+ (Ljakarta/mail/Session;)L1jakarta/mail/internet/MimeMessage; # @Generated(25)
 getAllHeaderLines
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
@@ -84,7 +84,7 @@ getContentStream
  ()Ljava/io/InputStream;
 getContentType
  ()Ljava/lang/String;
- ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
 getDataHandler
  ()Ljakarta/activation/DataHandler;
  ()Ljakarta/activation/DataHandler;
@@ -135,22 +135,22 @@ getRawInputStream
  ()Ljava/io/InputStream;
 getReceivedDate
  ()Ljava/util/Date;
- ()L0java/util/Date;
+ ()L0java/util/Date; # @Generated
 getRecipients
  (Ljakarta/mail/Message$RecipientType;)[Ljakarta/mail/Address;
- (Ljakarta/mail/Message$RecipientType;)[Ljakarta/mail/Address;
+ (Ljakarta/mail/Message$RecipientType;)[0Ljakarta/mail/Address; # @Generated(39)
 getReplyTo
  ()[Ljakarta/mail/Address;
  ()[Ljakarta/mail/Address;
 getSender
  ()Ljakarta/mail/Address;
- ()L0jakarta/mail/Address;
+ ()L0jakarta/mail/Address; # @Generated
 getSentDate
  ()Ljava/util/Date;
- ()L0java/util/Date;
+ ()L0java/util/Date; # @Generated
 getSubject
  ()Ljava/lang/String;
- ()L0java/lang/String;
+ ()L0java/lang/String; # @Generated
 isMimeType
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -171,7 +171,7 @@ reply
  (ZZ)Ljakarta/mail/Message;
 setContent
  (Ljakarta/mail/Multipart;)V
- (Ljakarta/mail/Multipart;)V
+ (L1jakarta/mail/Multipart;)V # @Generated
 setContent
  (Ljava/lang/Object;Ljava/lang/String;)V
  (Ljava/lang/Object;Ljava/lang/String;)V

@@ -6,22 +6,22 @@ super org/springframework/http/converter/AbstractGenericHttpMessageConverter
 
 canRead
  (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.AbstractHttpMessageConverter)
 canRead
  (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/reflect/Type;L0java/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.AbstractGenericHttpMessageConverter)
 canWrite
  (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.AbstractHttpMessageConverter)
 canWrite
  (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (L0java/lang/reflect/Type;L0java/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Overrides(org.springframework.http.converter.AbstractGenericHttpMessageConverter)
 getDefaultContentType
  (Ljava/lang/Object;)Lorg/springframework/http/MediaType;
- (Ljava/lang/Object;)Lorg/springframework/http/MediaType;
+ (L1java/lang/Object;)Lorg/springframework/http/MediaType; # @Generated(2)
 read
  (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
- (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
+ (Ljava/lang/reflect/Type;L0java/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object; # @Generated(26)
 readInternal
  (Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Lorg/springframework/core/io/support/ResourceRegion;
  (Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Lorg/springframework/core/io/support/ResourceRegion;
@@ -30,7 +30,7 @@ supportsRepeatableWrites
  (Ljava/lang/Object;)Z
 writeInternal
  (Ljava/lang/Object;Ljava/lang/reflect/Type;Lorg/springframework/http/HttpOutputMessage;)V
- (Ljava/lang/Object;Ljava/lang/reflect/Type;Lorg/springframework/http/HttpOutputMessage;)V
+ (Ljava/lang/Object;L0java/lang/reflect/Type;Lorg/springframework/http/HttpOutputMessage;)V # @Generated(20)
 writeResourceRegion
  (Lorg/springframework/core/io/support/ResourceRegion;Lorg/springframework/http/HttpOutputMessage;)V
- (Lorg/springframework/core/io/support/ResourceRegion;Lorg/springframework/http/HttpOutputMessage;)V
+ (L1org/springframework/core/io/support/ResourceRegion;L1org/springframework/http/HttpOutputMessage;)V # @Generated(2,54)

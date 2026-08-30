@@ -2,22 +2,22 @@ class javax/swing/text/AbstractDocument
 
 BAD_LOCATION
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 BidiElementName
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ContentElementName
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ElementNameAttribute
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 ParagraphElementName
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 SectionElementName
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 listenerList
  Ljavax/swing/event/EventListenerList;
@@ -37,10 +37,10 @@ addUndoableEditListener
  (L1javax/swing/event/UndoableEditListener;)V # @Inherited(javax.swing.text.Document)
 createBranchElement
  (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/Element;
- (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)L1javax/swing/text/Element;
+ (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)L1javax/swing/text/Element; # @Generated(60)
 createLeafElement
  (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)Ljavax/swing/text/Element;
- (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)L1javax/swing/text/Element;
+ (Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)L1javax/swing/text/Element; # @Generated(62)
 createPosition
  (I)Ljavax/swing/text/Position;
  (I)L1javax/swing/text/Position; # @Inherited(javax.swing.text.Document)
@@ -58,7 +58,7 @@ fireRemoveUpdate
  (Ljavax/swing/event/DocumentEvent;)V
 fireUndoableEditUpdate
  (Ljavax/swing/event/UndoableEditEvent;)V
- (Ljavax/swing/event/UndoableEditEvent;)V
+ (L1javax/swing/event/UndoableEditEvent;)V # @Generated
 getAttributeContext
  ()Ljavax/swing/text/AbstractDocument$AttributeContext;
  ()Ljavax/swing/text/AbstractDocument$AttributeContext;
@@ -85,7 +85,7 @@ getDocumentProperties
  ()Ljava/util/Dictionary<Ljava/lang/Object;Ljava/lang/Object;>;
 getEndPosition
  ()Ljavax/swing/text/Position;
- ()L0javax/swing/text/Position;
+ ()L0javax/swing/text/Position; # @Generated
 getListeners
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)[TT;
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)[TT;
@@ -97,10 +97,10 @@ getProperty
  (Ljava/lang/Object;)Ljava/lang/Object;
 getRootElements
  ()[Ljavax/swing/text/Element;
- ()[1Ljavax/swing/text/Element;
+ ()[1Ljavax/swing/text/Element; # @Generated(3)
 getStartPosition
  ()Ljavax/swing/text/Position;
- ()L0javax/swing/text/Position;
+ ()L0javax/swing/text/Position; # @Generated
 getText
  (II)Ljava/lang/String;
  (II)Ljava/lang/String;
@@ -133,7 +133,7 @@ removeUpdate
  (Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V
 render
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V # @Generated
 replace
  (IILjava/lang/String;Ljavax/swing/text/AttributeSet;)V
  (IILjava/lang/String;Ljavax/swing/text/AttributeSet;)V

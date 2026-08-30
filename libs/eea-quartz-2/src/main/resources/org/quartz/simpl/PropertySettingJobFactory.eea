@@ -2,7 +2,7 @@ class org/quartz/simpl/PropertySettingJobFactory
 
 newJob
  (Lorg/quartz/spi/TriggerFiredBundle;Lorg/quartz/Scheduler;)Lorg/quartz/Job;
- (Lorg/quartz/spi/TriggerFiredBundle;Lorg/quartz/Scheduler;)Lorg/quartz/Job;
+ (L1org/quartz/spi/TriggerFiredBundle;L1org/quartz/Scheduler;)Lorg/quartz/Job; # @Overrides(org.quartz.simpl.SimpleJobFactory)
 setBeanProps
  (Ljava/lang/Object;Lorg/quartz/JobDataMap;)V
- (Ljava/lang/Object;Lorg/quartz/JobDataMap;)V
+ (Ljava/lang/Object;L1org/quartz/JobDataMap;)V # @Generated(20)

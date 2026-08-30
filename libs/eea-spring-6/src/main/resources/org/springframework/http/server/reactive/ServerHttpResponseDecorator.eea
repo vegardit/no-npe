@@ -2,7 +2,7 @@ class org/springframework/http/server/reactive/ServerHttpResponseDecorator
 
 getNativeResponse
  <T:Ljava/lang/Object;>(Lorg/springframework/http/server/reactive/ServerHttpResponse;)TT;
- <T:Ljava/lang/Object;>(Lorg/springframework/http/server/reactive/ServerHttpResponse;)TT;
+ <T:Ljava/lang/Object;>(L1org/springframework/http/server/reactive/ServerHttpResponse;)TT; # @Generated(24)
 
 <init>
  (Lorg/springframework/http/server/reactive/ServerHttpResponse;)V
@@ -36,10 +36,10 @@ setComplete
  ()Lreactor/core/publisher/Mono<Ljava/lang/Void;>;
 setRawStatusCode
  (Ljava/lang/Integer;)Z
- (Ljava/lang/Integer;)Z
+ (L0java/lang/Integer;)Z # @Inherited(org.springframework.http.server.reactive.ServerHttpResponse)
 setStatusCode
  (Lorg/springframework/http/HttpStatusCode;)Z
- (Lorg/springframework/http/HttpStatusCode;)Z
+ (L0org/springframework/http/HttpStatusCode;)Z # @Inherited(org.springframework.http.server.reactive.ServerHttpResponse)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

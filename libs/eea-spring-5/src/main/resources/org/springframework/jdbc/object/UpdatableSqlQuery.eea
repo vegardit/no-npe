@@ -11,7 +11,7 @@ super org/springframework/jdbc/object/SqlQuery
  (Ljavax/sql/DataSource;Ljava/lang/String;)V
 newRowMapper
  ([Ljava/lang/Object;Ljava/util/Map<**>;)Lorg/springframework/jdbc/core/RowMapper<TT;>;
- ([Ljava/lang/Object;Ljava/util/Map<**>;)L1org/springframework/jdbc/core/RowMapper<TT;>;
+ ([0Ljava/lang/Object;L0java/util/Map<**>;)L1org/springframework/jdbc/core/RowMapper<TT;>; # @Overrides(org.springframework.jdbc.object.SqlQuery)
 updateRow
  (Ljava/sql/ResultSet;ILjava/util/Map<**>;)TT;
- (Ljava/sql/ResultSet;ILjava/util/Map<**>;)TT;
+ (Ljava/sql/ResultSet;IL0java/util/Map<**>;)TT; # @Generated(23)

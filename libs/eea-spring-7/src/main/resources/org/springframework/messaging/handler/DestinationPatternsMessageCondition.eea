@@ -6,32 +6,32 @@ super org/springframework/messaging/handler/AbstractMessageCondition
 
 LOOKUP_DESTINATION_HEADER
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 <init>
  ([Ljava/lang/String;)V
  ([Ljava/lang/String;)V
 <init>
  ([Ljava/lang/String;Lorg/springframework/util/PathMatcher;)V
- ([Ljava/lang/String;Lorg/springframework/util/PathMatcher;)V
+ ([Ljava/lang/String;L0org/springframework/util/PathMatcher;)V # @Generated(21)
 <init>
  ([Ljava/lang/String;Lorg/springframework/util/RouteMatcher;)V
  ([Ljava/lang/String;Lorg/springframework/util/RouteMatcher;)V
 combine
  (Lorg/springframework/messaging/handler/DestinationPatternsMessageCondition;)Lorg/springframework/messaging/handler/DestinationPatternsMessageCondition;
- (Lorg/springframework/messaging/handler/DestinationPatternsMessageCondition;)L1org/springframework/messaging/handler/DestinationPatternsMessageCondition;
+ (Lorg/springframework/messaging/handler/DestinationPatternsMessageCondition;)L1org/springframework/messaging/handler/DestinationPatternsMessageCondition; # @Generated(78)
 compareTo
  (Lorg/springframework/messaging/handler/DestinationPatternsMessageCondition;Lorg/springframework/messaging/Message<*>;)I
- (Lorg/springframework/messaging/handler/DestinationPatternsMessageCondition;Lorg/springframework/messaging/Message<*>;)I
+ (Lorg/springframework/messaging/handler/DestinationPatternsMessageCondition;L1org/springframework/messaging/Message<*>;)I # @Generated(77)
 getContent
  ()Ljava/util/Collection<Ljava/lang/String;>;
  ()Ljava/util/Collection<Ljava/lang/String;>;
 getMatchingCondition
  (Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/handler/DestinationPatternsMessageCondition;
- (Lorg/springframework/messaging/Message<*>;)L0org/springframework/messaging/handler/DestinationPatternsMessageCondition;
+ (L1org/springframework/messaging/Message<*>;)L0org/springframework/messaging/handler/DestinationPatternsMessageCondition; # @Generated(2,45)
 getPatterns
  ()Ljava/util/Set<Ljava/lang/String;>;
  ()Ljava/util/Set<Ljava/lang/String;>;
 getToStringInfix
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Generated

@@ -12,13 +12,13 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getCacheOperations
  (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)Ljava/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>;
- (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)L0java/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>; # @Inherited(org.springframework.cache.interceptor.CacheOperationSource)
+ (L1java/lang/reflect/Method;L0java/lang/Class<*>;)L0java/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>; # @Overrides(org.springframework.cache.interceptor.CacheOperationSource)
 isMatch
  (Ljava/lang/String;Ljava/lang/String;)Z
  (Ljava/lang/String;Ljava/lang/String;)Z
 setNameMap
  (Ljava/util/Map<Ljava/lang/String;Ljava/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>;>;)V
- (Ljava/util/Map<Ljava/lang/String;Ljava/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>;>;)V
+ (L1java/util/Map<Ljava/lang/String;Ljava/util/Collection<Lorg/springframework/cache/interceptor/CacheOperation;>;>;)V # @Generated(2)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

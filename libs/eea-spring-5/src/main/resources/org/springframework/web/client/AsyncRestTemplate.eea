@@ -14,7 +14,7 @@ class org/springframework/web/client/AsyncRestTemplate
  (Lorg/springframework/http/client/AsyncClientHttpRequestFactory;Lorg/springframework/web/client/RestTemplate;)V
 acceptHeaderRequestCallback
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/web/client/AsyncRequestCallback;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1org/springframework/web/client/AsyncRequestCallback;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1org/springframework/web/client/AsyncRequestCallback; # @Generated(47)
 delete
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
@@ -26,34 +26,34 @@ delete
  (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
 doExecute
  <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;L0org/springframework/web/client/AsyncRequestCallback;L0org/springframework/web/client/ResponseExtractor<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>; # @Generated(75,128,184)
 exchange
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;L0org/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 exchange
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;L0org/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 exchange
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;L0org/springframework/http/HttpEntity<*>;L1org/springframework/core/ParameterizedTypeReference<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Overrides(org.springframework.web.client.AsyncRestOperations)
 exchange
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;L0org/springframework/http/HttpEntity<*>;L1org/springframework/core/ParameterizedTypeReference<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Overrides(org.springframework.web.client.AsyncRestOperations)
 exchange
  <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;L0org/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 exchange
  <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;L0org/springframework/http/HttpEntity<*>;L1org/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Overrides(org.springframework.web.client.AsyncRestOperations)
 execute
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;L0org/springframework/web/client/AsyncRequestCallback;L0org/springframework/web/client/ResponseExtractor<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 execute
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;L0org/springframework/web/client/AsyncRequestCallback;L0org/springframework/web/client/ResponseExtractor<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 execute
  <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;L0org/springframework/web/client/AsyncRequestCallback;L0org/springframework/web/client/ResponseExtractor<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 getErrorHandler
  ()Lorg/springframework/web/client/ResponseErrorHandler;
  ()Lorg/springframework/web/client/ResponseErrorHandler;
@@ -89,46 +89,46 @@ headersExtractor
  ()Lorg/springframework/web/client/ResponseExtractor<Lorg/springframework/http/HttpHeaders;>;
 httpEntityCallback
  <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;)Lorg/springframework/web/client/AsyncRequestCallback;
- <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;)L1org/springframework/web/client/AsyncRequestCallback;
+ <T:Ljava/lang/Object;>(L0org/springframework/http/HttpEntity<TT;>;)L1org/springframework/web/client/AsyncRequestCallback; # @Generated(24,67)
 httpEntityCallback
  <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;Ljava/lang/reflect/Type;)Lorg/springframework/web/client/AsyncRequestCallback;
- <T:Ljava/lang/Object;>(Lorg/springframework/http/HttpEntity<TT;>;Ljava/lang/reflect/Type;)L1org/springframework/web/client/AsyncRequestCallback;
+ <T:Ljava/lang/Object;>(L0org/springframework/http/HttpEntity<TT;>;Ljava/lang/reflect/Type;)L1org/springframework/web/client/AsyncRequestCallback; # @Generated(24,91)
 optionsForAllow
  (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
- (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
+ (Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;*>;)L1org/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>; # @Generated(57)
 optionsForAllow
  (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
- (Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
+ (Ljava/lang/String;[Ljava/lang/Object;)L1org/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>; # @Generated(40)
 optionsForAllow
  (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
- (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>;
+ (Ljava/net/URI;)L1org/springframework/util/concurrent/ListenableFuture<Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;>; # @Generated(17)
 postForEntity
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;L0org/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 postForEntity
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;L0org/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 postForEntity
  <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/net/URI;L0org/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 postForLocation
  (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
- (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
+ (Ljava/lang/String;L0org/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)L1org/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>; # @Overrides(org.springframework.web.client.AsyncRestOperations)
 postForLocation
  (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
- (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
+ (Ljava/lang/String;L0org/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)L1org/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>; # @Overrides(org.springframework.web.client.AsyncRestOperations)
 postForLocation
  (Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
- (Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;)Lorg/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>;
+ (Ljava/net/URI;L0org/springframework/http/HttpEntity<*>;)L1org/springframework/util/concurrent/ListenableFuture<Ljava/net/URI;>; # @Overrides(org.springframework.web.client.AsyncRestOperations)
 put
  (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
- (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/String;L0org/springframework/http/HttpEntity<*>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 put
  (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
- (Ljava/lang/String;Lorg/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/lang/String;L0org/springframework/http/HttpEntity<*>;[Ljava/lang/Object;)Lorg/springframework/util/concurrent/ListenableFuture<*>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 put
  (Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
- (Ljava/net/URI;Lorg/springframework/http/HttpEntity<*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
+ (Ljava/net/URI;L0org/springframework/http/HttpEntity<*>;)Lorg/springframework/util/concurrent/ListenableFuture<*>; # @Inherited(org.springframework.web.client.AsyncRestOperations)
 responseEntityExtractor
  <T:Ljava/lang/Object;>(Ljava/lang/reflect/Type;)Lorg/springframework/web/client/ResponseExtractor<Lorg/springframework/http/ResponseEntity<TT;>;>;
  <T:Ljava/lang/Object;>(Ljava/lang/reflect/Type;)Lorg/springframework/web/client/ResponseExtractor<Lorg/springframework/http/ResponseEntity<TT;>;>;

@@ -2,130 +2,130 @@ class java/util/stream/Collectors
 
 averagingDouble
  <T:Ljava/lang/Object;>(Ljava/util/function/ToDoubleFunction<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/lang/Double;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/ToDoubleFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Double;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/ToDoubleFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Double;>; # @Generated(68)
 averagingInt
  <T:Ljava/lang/Object;>(Ljava/util/function/ToIntFunction<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/lang/Double;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/ToIntFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Double;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/ToIntFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Double;>; # @Generated(65)
 averagingLong
  <T:Ljava/lang/Object;>(Ljava/util/function/ToLongFunction<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/lang/Double;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/ToLongFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Double;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/ToLongFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Double;>; # @Generated(66)
 collectingAndThen
  <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;RR:Ljava/lang/Object;>(Ljava/util/stream/Collector<TT;TA;TR;>;Ljava/util/function/Function<TR;TRR;>;)Ljava/util/stream/Collector<TT;TA;TRR;>;
- <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;RR:Ljava/lang/Object;>(Ljava/util/stream/Collector<TT;TA;TR;>;Ljava/util/function/Function<TR;TRR;>;)L1java/util/stream/Collector<TT;TA;TRR;>;
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;RR:Ljava/lang/Object;>(L1java/util/stream/Collector<TT;TA;TR;>;Ljava/util/function/Function<TR;TRR;>;)L1java/util/stream/Collector<TT;TA;TRR;>; # @Generated(85,163)
 counting
  <T:Ljava/lang/Object;>()Ljava/util/stream/Collector<TT;*Ljava/lang/Long;>;
- <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*Ljava/lang/Long;>;
+ <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*Ljava/lang/Long;>; # @Generated(25)
 filtering
  <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Predicate<-TT;>;Ljava/util/stream/Collector<-TT;TA;TR;>;)Ljava/util/stream/Collector<TT;*TR;>;
- <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Predicate<-TT;>;Ljava/util/stream/Collector<-TT;TA;TR;>;)L1java/util/stream/Collector<TT;*TR;>;
+ <T:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Predicate<-TT;>;L1java/util/stream/Collector<-TT;TA;TR;>;)L1java/util/stream/Collector<TT;*TR;>; # @Generated(100,141)
 flatMapping
  <T:Ljava/lang/Object;U:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+Ljava/util/stream/Stream<+TU;>;>;Ljava/util/stream/Collector<-TU;TA;TR;>;)Ljava/util/stream/Collector<TT;*TR;>;
- <T:Ljava/lang/Object;U:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+Ljava/util/stream/Stream<+TU;>;>;Ljava/util/stream/Collector<-TU;TA;TR;>;)L1java/util/stream/Collector<TT;*TR;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+Ljava/util/stream/Stream<+TU;>;>;L1java/util/stream/Collector<-TU;TA;TR;>;)L1java/util/stream/Collector<TT;*TR;>; # @Generated(151,192)
 groupingBy
  <T:Ljava/lang/Object;K:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Map<TK;Ljava/util/List<TT;>;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;Ljava/util/List<TT;>;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;Ljava/util/List<TT;>;>;>; # @Generated(84)
 groupingBy
  <T:Ljava/lang/Object;K:Ljava/lang/Object;A:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Map<TK;TD;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;A:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TD;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;A:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TD;>;>; # @Generated(164)
 groupingBy
  <T:Ljava/lang/Object;K:Ljava/lang/Object;D:Ljava/lang/Object;A:Ljava/lang/Object;M::Ljava/util/Map<TK;TD;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Supplier<TM;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)Ljava/util/stream/Collector<TT;*TM;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;D:Ljava/lang/Object;A:Ljava/lang/Object;M::Ljava/util/Map<TK;TD;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Supplier<TM;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*TM;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;D:Ljava/lang/Object;A:Ljava/lang/Object;M::Ljava/util/Map<TK;TD;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Supplier<TM;>;L1java/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*TM;>; # @Generated(183,224)
 groupingByConcurrent
  <T:Ljava/lang/Object;K:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;)Ljava/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;Ljava/util/List<TT;>;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;)L1java/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;Ljava/util/List<TT;>;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;)L1java/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;Ljava/util/List<TT;>;>;>; # @Generated(84)
 groupingByConcurrent
  <T:Ljava/lang/Object;K:Ljava/lang/Object;A:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)Ljava/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;TD;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;A:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;TD;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;A:Ljava/lang/Object;D:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;TD;>;>; # @Generated(164)
 groupingByConcurrent
  <T:Ljava/lang/Object;K:Ljava/lang/Object;A:Ljava/lang/Object;D:Ljava/lang/Object;M::Ljava/util/concurrent/ConcurrentMap<TK;TD;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Supplier<TM;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)Ljava/util/stream/Collector<TT;*TM;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;A:Ljava/lang/Object;D:Ljava/lang/Object;M::Ljava/util/concurrent/ConcurrentMap<TK;TD;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Supplier<TM;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*TM;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;A:Ljava/lang/Object;D:Ljava/lang/Object;M::Ljava/util/concurrent/ConcurrentMap<TK;TD;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Supplier<TM;>;L1java/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*TM;>; # @Generated(204,245)
 joining
  ()Ljava/util/stream/Collector<Ljava/lang/CharSequence;*Ljava/lang/String;>;
- ()L1java/util/stream/Collector<Ljava/lang/CharSequence;*L1java/lang/String;>;
+ ()L1java/util/stream/Collector<Ljava/lang/CharSequence;*L1java/lang/String;>; # @Generated(3)
 joining
  (Ljava/lang/CharSequence;)Ljava/util/stream/Collector<Ljava/lang/CharSequence;*Ljava/lang/String;>;
- (L1java/lang/CharSequence;)L1java/util/stream/Collector<Ljava/lang/CharSequence;*L1java/lang/String;>;
+ (L1java/lang/CharSequence;)L1java/util/stream/Collector<Ljava/lang/CharSequence;*L1java/lang/String;>; # @Generated(27)
 joining
  (Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/util/stream/Collector<Ljava/lang/CharSequence;*Ljava/lang/String;>;
- (L1java/lang/CharSequence;L1java/lang/CharSequence;L1java/lang/CharSequence;)L1java/util/stream/Collector<Ljava/lang/CharSequence;*L1java/lang/String;>;
+ (L1java/lang/CharSequence;L1java/lang/CharSequence;L1java/lang/CharSequence;)L1java/util/stream/Collector<Ljava/lang/CharSequence;*L1java/lang/String;>; # @Generated(75)
 mapping
  <T:Ljava/lang/Object;U:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TU;>;Ljava/util/stream/Collector<-TU;TA;TR;>;)Ljava/util/stream/Collector<TT;*TR;>;
- <T:Ljava/lang/Object;U:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TU;>;Ljava/util/stream/Collector<-TU;TA;TR;>;)L1java/util/stream/Collector<TT;*TR;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;A:Ljava/lang/Object;R:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TU;>;L1java/util/stream/Collector<-TU;TA;TR;>;)L1java/util/stream/Collector<TT;*TR;>; # @Generated(123,164)
 maxBy
  <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Optional<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/Optional<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/Optional<TT;>;>; # @Generated(53)
 minBy
  <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Optional<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/Optional<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Comparator<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/Optional<TT;>;>; # @Generated(53)
 partitioningBy
  <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Map<Ljava/lang/Boolean;Ljava/util/List<TT;>;>;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<Ljava/lang/Boolean;Ljava/util/List<TT;>;>;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/Predicate<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<Ljava/lang/Boolean;Ljava/util/List<TT;>;>;>; # @Generated(61)
 partitioningBy
  <T:Ljava/lang/Object;D:Ljava/lang/Object;A:Ljava/lang/Object;>(Ljava/util/function/Predicate<-TT;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Map<Ljava/lang/Boolean;TD;>;>;
- <T:Ljava/lang/Object;D:Ljava/lang/Object;A:Ljava/lang/Object;>(Ljava/util/function/Predicate<-TT;>;Ljava/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<Ljava/lang/Boolean;TD;>;>;
+ <T:Ljava/lang/Object;D:Ljava/lang/Object;A:Ljava/lang/Object;>(Ljava/util/function/Predicate<-TT;>;L1java/util/stream/Collector<-TT;TA;TD;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<Ljava/lang/Boolean;TD;>;>; # @Generated(100,141)
 reducing
  <T:Ljava/lang/Object;>(Ljava/util/function/BinaryOperator<TT;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Optional<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/BinaryOperator<TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/Optional<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/BinaryOperator<TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/Optional<TT;>;>; # @Generated(65)
 reducing
  <T:Ljava/lang/Object;>(TT;Ljava/util/function/BinaryOperator<TT;>;)Ljava/util/stream/Collector<TT;*TT;>;
- <T:Ljava/lang/Object;>(TT;Ljava/util/function/BinaryOperator<TT;>;)L1java/util/stream/Collector<TT;*TT;>;
+ <T:Ljava/lang/Object;>(TT;Ljava/util/function/BinaryOperator<TT;>;)L1java/util/stream/Collector<TT;*TT;>; # @Generated(68)
 reducing
  <T:Ljava/lang/Object;U:Ljava/lang/Object;>(TU;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)Ljava/util/stream/Collector<TT;*TU;>;
- <T:Ljava/lang/Object;U:Ljava/lang/Object;>(TU;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)L1java/util/stream/Collector<TT;*TU;>;
+ <T:Ljava/lang/Object;U:Ljava/lang/Object;>(TU;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)L1java/util/stream/Collector<TT;*TU;>; # @Generated(127)
 summarizingDouble
  <T:Ljava/lang/Object;>(Ljava/util/function/ToDoubleFunction<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/util/DoubleSummaryStatistics;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/ToDoubleFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/DoubleSummaryStatistics;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/ToDoubleFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/DoubleSummaryStatistics;>; # @Generated(68)
 summarizingInt
  <T:Ljava/lang/Object;>(Ljava/util/function/ToIntFunction<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/util/IntSummaryStatistics;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/ToIntFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/IntSummaryStatistics;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/ToIntFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/IntSummaryStatistics;>; # @Generated(65)
 summarizingLong
  <T:Ljava/lang/Object;>(Ljava/util/function/ToLongFunction<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/util/LongSummaryStatistics;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/ToLongFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/LongSummaryStatistics;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/ToLongFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/util/LongSummaryStatistics;>; # @Generated(66)
 summingDouble
  <T:Ljava/lang/Object;>(Ljava/util/function/ToDoubleFunction<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/lang/Double;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/ToDoubleFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Double;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/ToDoubleFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Double;>; # @Generated(68)
 summingInt
  <T:Ljava/lang/Object;>(Ljava/util/function/ToIntFunction<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/lang/Integer;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/ToIntFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Integer;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/ToIntFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Integer;>; # @Generated(65)
 summingLong
  <T:Ljava/lang/Object;>(Ljava/util/function/ToLongFunction<-TT;>;)Ljava/util/stream/Collector<TT;*Ljava/lang/Long;>;
- <T:Ljava/lang/Object;>(Ljava/util/function/ToLongFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Long;>;
+ <T:Ljava/lang/Object;>(Ljava/util/function/ToLongFunction<-TT;>;)L1java/util/stream/Collector<TT;*Ljava/lang/Long;>; # @Generated(66)
 toCollection
  <T:Ljava/lang/Object;C::Ljava/util/Collection<TT;>;>(Ljava/util/function/Supplier<TC;>;)Ljava/util/stream/Collector<TT;*TC;>;
- <T:Ljava/lang/Object;C::Ljava/util/Collection<TT;>;>(L1java/util/function/Supplier<TC;>;)L1java/util/stream/Collector<TT;*T1C;>;
+ <T:Ljava/lang/Object;C::Ljava/util/Collection<TT;>;>(L1java/util/function/Supplier<TC;>;)L1java/util/stream/Collector<TT;*T1C;>; # @Generated(89)
 toConcurrentMap
  <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;)Ljava/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;TU;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;TU;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;TU;>;>; # @Generated(143)
 toConcurrentMap
  <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)Ljava/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;TU;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;TU;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/concurrent/ConcurrentMap<TK;TU;>;>; # @Generated(183)
 toConcurrentMap
  <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;M::Ljava/util/concurrent/ConcurrentMap<TK;TU;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;Ljava/util/function/Supplier<TM;>;)Ljava/util/stream/Collector<TT;*TM;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;M::Ljava/util/concurrent/ConcurrentMap<TK;TU;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;Ljava/util/function/Supplier<TM;>;)L1java/util/stream/Collector<TT;*TM;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;M::Ljava/util/concurrent/ConcurrentMap<TK;TU;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;Ljava/util/function/Supplier<TM;>;)L1java/util/stream/Collector<TT;*TM;>; # @Generated(264)
 toList
  <T:Ljava/lang/Object;>()Ljava/util/stream/Collector<TT;*Ljava/util/List<TT;>;>;
- <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*L1java/util/List<TT;>;>;
+ <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*L1java/util/List<TT;>;>; # @Generated(25)
 toMap
  <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>; # @Generated(143)
 toMap
  <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>; # @Generated(183)
 toMap
  <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;M::Ljava/util/Map<TK;TU;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;Ljava/util/function/Supplier<TM;>;)Ljava/util/stream/Collector<TT;*TM;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;M::Ljava/util/Map<TK;TU;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;Ljava/util/function/Supplier<TM;>;)L1java/util/stream/Collector<TT;*TM;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;M::Ljava/util/Map<TK;TU;>;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;Ljava/util/function/Supplier<TM;>;)L1java/util/stream/Collector<TT;*TM;>; # @Generated(243)
 toSet
  <T:Ljava/lang/Object;>()Ljava/util/stream/Collector<TT;*Ljava/util/Set<TT;>;>;
- <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*L1java/util/Set<TT;>;>;
+ <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*L1java/util/Set<TT;>;>; # @Generated(25)
 toUnmodifiableList
  <T:Ljava/lang/Object;>()Ljava/util/stream/Collector<TT;*Ljava/util/List<TT;>;>;
- <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*Ljava/util/List<TT;>;>;
+ <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*Ljava/util/List<TT;>;>; # @Generated(25)
 toUnmodifiableMap
  <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>; # @Generated(143)
 toUnmodifiableMap
  <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)Ljava/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>;
- <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>;
+ <T:Ljava/lang/Object;K:Ljava/lang/Object;U:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;+TK;>;Ljava/util/function/Function<-TT;+TU;>;Ljava/util/function/BinaryOperator<TU;>;)L1java/util/stream/Collector<TT;*Ljava/util/Map<TK;TU;>;>; # @Generated(183)
 toUnmodifiableSet
  <T:Ljava/lang/Object;>()Ljava/util/stream/Collector<TT;*Ljava/util/Set<TT;>;>;
- <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*Ljava/util/Set<TT;>;>;
+ <T:Ljava/lang/Object;>()L1java/util/stream/Collector<TT;*Ljava/util/Set<TT;>;>; # @Generated(25)

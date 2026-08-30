@@ -2,7 +2,7 @@ class javax/swing/JComponent
 
 TOOL_TIP_TEXT_KEY
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 getDefaultLocale
  ()Ljava/util/Locale;
@@ -23,16 +23,16 @@ ui
 
 addAncestorListener
  (Ljavax/swing/event/AncestorListener;)V
- (L1javax/swing/event/AncestorListener;)V
+ (L1javax/swing/event/AncestorListener;)V # @Generated
 addVetoableChangeListener
  (Ljava/beans/VetoableChangeListener;)V
- (L1java/beans/VetoableChangeListener;)V
+ (L1java/beans/VetoableChangeListener;)V # @Generated
 computeVisibleRect
  (Ljava/awt/Rectangle;)V
  (Ljava/awt/Rectangle;)V
 createToolTip
  ()Ljavax/swing/JToolTip;
- ()L1javax/swing/JToolTip;
+ ()L1javax/swing/JToolTip; # @Generated
 firePropertyChange
  (Ljava/lang/String;CC)V
  (Ljava/lang/String;CC)V
@@ -47,7 +47,7 @@ fireVetoableChange
  (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 getActionForKeyStroke
  (Ljavax/swing/KeyStroke;)Ljava/awt/event/ActionListener;
- (Ljavax/swing/KeyStroke;)L0java/awt/event/ActionListener;
+ (Ljavax/swing/KeyStroke;)L0java/awt/event/ActionListener; # @Generated(26)
 getActionMap
  ()Ljavax/swing/ActionMap;
  ()Ljavax/swing/ActionMap;
@@ -56,22 +56,22 @@ getAncestorListeners
  ()[Ljavax/swing/event/AncestorListener;
 getBaselineResizeBehavior
  ()Ljava/awt/Component$BaselineResizeBehavior;
- ()Ljava/awt/Component$BaselineResizeBehavior;
+ ()L1java/awt/Component$BaselineResizeBehavior; # @Inherited(java.awt.Component)
 getBorder
  ()Ljavax/swing/border/Border;
  ()Ljavax/swing/border/Border;
 getBounds
  (Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
- (Ljava/awt/Rectangle;)Ljava/awt/Rectangle;
+ (Ljava/awt/Rectangle;)L1java/awt/Rectangle; # @Inherited(java.awt.Component)
 getClientProperty
  (Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;)L0java/lang/Object;
+ (Ljava/lang/Object;)L0java/lang/Object; # @Generated(21)
 getComponentGraphics
  (Ljava/awt/Graphics;)Ljava/awt/Graphics;
  (Ljava/awt/Graphics;)L1java/awt/Graphics;
 getComponentPopupMenu
  ()Ljavax/swing/JPopupMenu;
- ()L0javax/swing/JPopupMenu;
+ ()L0javax/swing/JPopupMenu; # @Generated
 getConditionForKeyStroke
  (Ljavax/swing/KeyStroke;)I
  (Ljavax/swing/KeyStroke;)I
@@ -101,34 +101,34 @@ getListeners
  <T::Ljava/util/EventListener;>(Ljava/lang/Class<TT;>;)[TT;
 getLocation
  (Ljava/awt/Point;)Ljava/awt/Point;
- (Ljava/awt/Point;)Ljava/awt/Point;
+ (Ljava/awt/Point;)L1java/awt/Point; # @Inherited(java.awt.Component)
 getMaximumSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L0java/awt/Dimension; # @Inherited(java.awt.Container)
 getMinimumSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L0java/awt/Dimension; # @Generated
 getNextFocusableComponent
  ()Ljava/awt/Component;
  ()Ljava/awt/Component;
 getPopupLocation
  (Ljava/awt/event/MouseEvent;)Ljava/awt/Point;
- (Ljava/awt/event/MouseEvent;)L0java/awt/Point;
+ (Ljava/awt/event/MouseEvent;)L0java/awt/Point; # @Generated(30)
 getPreferredSize
  ()Ljava/awt/Dimension;
- ()Ljava/awt/Dimension;
+ ()L0java/awt/Dimension; # @Generated
 getRegisteredKeyStrokes
  ()[Ljavax/swing/KeyStroke;
- ()[1Ljavax/swing/KeyStroke;
+ ()[1Ljavax/swing/KeyStroke; # @Generated(3)
 getRootPane
  ()Ljavax/swing/JRootPane;
  ()Ljavax/swing/JRootPane;
 getSize
  (Ljava/awt/Dimension;)Ljava/awt/Dimension;
- (Ljava/awt/Dimension;)Ljava/awt/Dimension;
+ (Ljava/awt/Dimension;)L1java/awt/Dimension; # @Inherited(java.awt.Component)
 getToolTipLocation
  (Ljava/awt/event/MouseEvent;)Ljava/awt/Point;
- (Ljava/awt/event/MouseEvent;)L0java/awt/Point;
+ (Ljava/awt/event/MouseEvent;)L0java/awt/Point; # @Generated(30)
 getToolTipText
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -146,13 +146,13 @@ getUI
  ()Ljavax/swing/plaf/ComponentUI;
 getUIClassID
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Generated
 getVetoableChangeListeners
  ()[Ljava/beans/VetoableChangeListener;
  ()[Ljava/beans/VetoableChangeListener;
 getVisibleRect
  ()Ljava/awt/Rectangle;
- ()L1java/awt/Rectangle;
+ ()L1java/awt/Rectangle; # @Generated
 paint
  (Ljava/awt/Graphics;)V
  (Ljava/awt/Graphics;)V
@@ -194,7 +194,7 @@ processKeyBinding
  (Ljavax/swing/KeyStroke;Ljava/awt/event/KeyEvent;IZ)Z
 processKeyEvent
  (Ljava/awt/event/KeyEvent;)V
- (Ljava/awt/event/KeyEvent;)V
+ (L1java/awt/event/KeyEvent;)V # @Generated
 processMouseEvent
  (Ljava/awt/event/MouseEvent;)V
  (Ljava/awt/event/MouseEvent;)V
@@ -212,10 +212,10 @@ registerKeyboardAction
  (Ljava/awt/event/ActionListener;Ljavax/swing/KeyStroke;I)V
 removeAncestorListener
  (Ljavax/swing/event/AncestorListener;)V
- (L1javax/swing/event/AncestorListener;)V
+ (L1javax/swing/event/AncestorListener;)V # @Generated
 removeVetoableChangeListener
  (Ljava/beans/VetoableChangeListener;)V
- (L1java/beans/VetoableChangeListener;)V
+ (L1java/beans/VetoableChangeListener;)V # @Generated
 repaint
  (Ljava/awt/Rectangle;)V
  (Ljava/awt/Rectangle;)V

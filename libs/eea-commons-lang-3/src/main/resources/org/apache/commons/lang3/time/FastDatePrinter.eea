@@ -11,7 +11,7 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 format
  (J)Ljava/lang/String;
- (J)Ljava/lang/String;
+ (J)L1java/lang/String; # @Generated
 format
  (JLjava/lang/StringBuffer;)Ljava/lang/StringBuffer;
  (JLjava/lang/StringBuffer;)Ljava/lang/StringBuffer;
@@ -20,13 +20,13 @@ format
  (Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
 format
  (Ljava/util/Calendar;)Ljava/lang/String;
- (Ljava/util/Calendar;)L1java/lang/String;
+ (Ljava/util/Calendar;)L1java/lang/String; # @Generated(23)
 format
  (Ljava/util/Calendar;Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
- (Ljava/util/Calendar;Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
+ (L1java/util/Calendar;Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer; # @Generated(2)
 format
  (Ljava/util/Date;)Ljava/lang/String;
- (Ljava/util/Date;)Ljava/lang/String;
+ (Ljava/util/Date;)L1java/lang/String; # @Generated(19)
 format
  (Ljava/util/Date;Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
  (Ljava/util/Date;Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
@@ -35,7 +35,7 @@ format
  <B::Ljava/lang/Appendable;>(JTB;)TB;
 format
  <B::Ljava/lang/Appendable;>(Ljava/util/Calendar;TB;)TB;
- <B::Ljava/lang/Appendable;>(Ljava/util/Calendar;TB;)TB;
+ <B::Ljava/lang/Appendable;>(L1java/util/Calendar;TB;)TB; # @Generated(29)
 format
  <B::Ljava/lang/Appendable;>(Ljava/util/Date;TB;)TB;
  <B::Ljava/lang/Appendable;>(Ljava/util/Date;TB;)TB;
@@ -50,13 +50,13 @@ getTimeZone
  ()Ljava/util/TimeZone;
 parsePattern
  ()Ljava/util/List<Lorg/apache/commons/lang3/time/FastDatePrinter$Rule;>;
- ()L1java/util/List<Lorg/apache/commons/lang3/time/FastDatePrinter$Rule;>;
+ ()L1java/util/List<Lorg/apache/commons/lang3/time/FastDatePrinter$Rule;>; # @Generated(3)
 parseToken
  (Ljava/lang/String;[I)Ljava/lang/String;
- (Ljava/lang/String;[I)L1java/lang/String;
+ (L1java/lang/String;[I)L1java/lang/String; # @Generated(2,23)
 selectNumberRule
  (II)Lorg/apache/commons/lang3/time/FastDatePrinter$NumberRule;
- (II)L1org/apache/commons/lang3/time/FastDatePrinter$NumberRule;
+ (II)L1org/apache/commons/lang3/time/FastDatePrinter$NumberRule; # @Generated
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

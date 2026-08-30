@@ -9,16 +9,16 @@ super org/springframework/http/codec/HttpMessageEncoder
  (Lcom/google/protobuf/util/JsonFormat$Printer;)V
 canEncode
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
+ (L1org/springframework/core/ResolvableType;L0org/springframework/util/MimeType;)Z # @Overrides(org.springframework.core.codec.Encoder)
 encode
  (Lorg/reactivestreams/Publisher<+Lcom/google/protobuf/Message;>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
- (Lorg/reactivestreams/Publisher<+Lcom/google/protobuf/Message;>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>;
+ (Lorg/reactivestreams/Publisher<+Lcom/google/protobuf/Message;>;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lorg/springframework/core/io/buffer/DataBuffer;>; # @Generated(160,195)
 encodeValue
  (Lcom/google/protobuf/Message;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/core/io/buffer/DataBuffer;
- (Lcom/google/protobuf/Message;Lorg/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/core/io/buffer/DataBuffer;
+ (Lcom/google/protobuf/Message;L1org/springframework/core/io/buffer/DataBufferFactory;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/springframework/core/io/buffer/DataBuffer; # @Generated(31,126,161)
 getEncodableMimeTypes
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;
 getStreamingMediaTypes
  ()Ljava/util/List<Lorg/springframework/http/MediaType;>;
- ()Ljava/util/List<Lorg/springframework/http/MediaType;>;
+ ()L1java/util/List<Lorg/springframework/http/MediaType;>; # @Generated(3)

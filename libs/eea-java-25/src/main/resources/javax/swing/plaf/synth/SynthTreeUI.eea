@@ -2,7 +2,7 @@ class javax/swing/plaf/synth/SynthTreeUI
 
 createUI
  (Ljavax/swing/JComponent;)Ljavax/swing/plaf/ComponentUI;
- (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI;
+ (Ljavax/swing/JComponent;)L1javax/swing/plaf/ComponentUI; # @Generated(27)
 
 createDefaultCellEditor
  ()Ljavax/swing/tree/TreeCellEditor;
@@ -12,7 +12,7 @@ createDefaultCellRenderer
  ()L1javax/swing/tree/TreeCellRenderer; # @Inherited(javax.swing.plaf.basic.BasicTreeUI)
 drawCentered
  (Ljava/awt/Component;Ljava/awt/Graphics;Ljavax/swing/Icon;II)V
- (Ljava/awt/Component;Ljava/awt/Graphics;Ljavax/swing/Icon;II)V
+ (Ljava/awt/Component;Ljava/awt/Graphics;L1javax/swing/Icon;II)V # @Inherited(javax.swing.plaf.basic.BasicTreeUI)
 getCollapsedIcon
  ()Ljavax/swing/Icon;
  ()Ljavax/swing/Icon;
@@ -27,16 +27,16 @@ paint
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
 paint
  (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;)V
- (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;)V
+ (L1javax/swing/plaf/synth/SynthContext;L1java/awt/Graphics;)V # @Generated(2,39)
 paintBorder
  (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V
- (Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V
+ (L1javax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V # @Generated(2)
 paintDropLine
  (Ljava/awt/Graphics;)V
  (Ljava/awt/Graphics;)V
 paintExpandControl
  (Ljava/awt/Graphics;Ljava/awt/Rectangle;Ljava/awt/Insets;Ljava/awt/Rectangle;Ljavax/swing/tree/TreePath;IZZZ)V
- (Ljava/awt/Graphics;Ljava/awt/Rectangle;Ljava/awt/Insets;Ljava/awt/Rectangle;Ljavax/swing/tree/TreePath;IZZZ)V
+ (Ljava/awt/Graphics;Ljava/awt/Rectangle;Ljava/awt/Insets;Ljava/awt/Rectangle;L1javax/swing/tree/TreePath;IZZZ)V # @Inherited(javax.swing.plaf.basic.BasicTreeUI)
 paintHorizontalLine
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;III)V
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;III)V
@@ -54,4 +54,4 @@ propertyChange
  (L1java/beans/PropertyChangeEvent;)V # @Inherited(java.beans.PropertyChangeListener)
 update
  (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
- (Ljava/awt/Graphics;Ljavax/swing/JComponent;)V
+ (Ljava/awt/Graphics;L1javax/swing/JComponent;)V # @Inherited(javax.swing.plaf.ComponentUI)

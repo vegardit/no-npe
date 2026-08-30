@@ -2,28 +2,28 @@ class org/apache/commons/io/file/PathUtils
 
 EMPTY_COPY_OPTIONS
  [Ljava/nio/file/CopyOption;
- [1Ljava/nio/file/CopyOption;
+ [1Ljava/nio/file/CopyOption; # @Generated(1)
 EMPTY_DELETE_OPTION_ARRAY
  [Lorg/apache/commons/io/file/DeleteOption;
- [1Lorg/apache/commons/io/file/DeleteOption;
+ [1Lorg/apache/commons/io/file/DeleteOption; # @Generated(1)
 EMPTY_FILE_ATTRIBUTE_ARRAY
  [Ljava/nio/file/attribute/FileAttribute<*>;
- [1Ljava/nio/file/attribute/FileAttribute<*>;
+ [1Ljava/nio/file/attribute/FileAttribute<*>; # @Generated(1)
 EMPTY_FILE_VISIT_OPTION_ARRAY
  [Ljava/nio/file/FileVisitOption;
- [1Ljava/nio/file/FileVisitOption;
+ [1Ljava/nio/file/FileVisitOption; # @Generated(1)
 EMPTY_LINK_OPTION_ARRAY
  [Ljava/nio/file/LinkOption;
- [1Ljava/nio/file/LinkOption;
+ [1Ljava/nio/file/LinkOption; # @Generated(1)
 EMPTY_OPEN_OPTION_ARRAY
  [Ljava/nio/file/OpenOption;
- [1Ljava/nio/file/OpenOption;
+ [1Ljava/nio/file/OpenOption; # @Generated(1)
 EMPTY_PATH_ARRAY
  [Ljava/nio/file/Path;
- [1Ljava/nio/file/Path;
+ [1Ljava/nio/file/Path; # @Generated(1)
 NOFOLLOW_LINK_OPTION_ARRAY
  [Ljava/nio/file/LinkOption;
- [1Ljava/nio/file/LinkOption;
+ [1Ljava/nio/file/LinkOption; # @Generated(1)
 
 cleanDirectory
  (Ljava/nio/file/Path;)Lorg/apache/commons/io/file/Counters$PathCounters;
@@ -36,19 +36,19 @@ contentEquals
  (Ljava/nio/file/FileSystem;Ljava/nio/file/FileSystem;)Z
 copy
  (Lorg/apache/commons/io/function/IOSupplier<Ljava/io/InputStream;>;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)J
- (Lorg/apache/commons/io/function/IOSupplier<Ljava/io/InputStream;>;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)J
+ (L1org/apache/commons/io/function/IOSupplier<Ljava/io/InputStream;>;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)J # @Generated(2)
 copyDirectory
  (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Lorg/apache/commons/io/file/Counters$PathCounters;
- (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Lorg/apache/commons/io/file/Counters$PathCounters;
+ (L1java/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Lorg/apache/commons/io/file/Counters$PathCounters; # @Generated(2)
 copyFile
  (Ljava/net/URL;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
  (Ljava/net/URL;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
 copyFileToDirectory
  (Ljava/net/URL;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
- (Ljava/net/URL;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
+ (L1java/net/URL;L1java/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path; # @Generated(2,16)
 copyFileToDirectory
  (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
- (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
+ (L1java/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path; # @Generated(2)
 countDirectory
  (Ljava/nio/file/Path;)Lorg/apache/commons/io/file/Counters$PathCounters;
  (Ljava/nio/file/Path;)Lorg/apache/commons/io/file/Counters$PathCounters;
@@ -57,7 +57,7 @@ countDirectoryAsBigInteger
  (Ljava/nio/file/Path;)Lorg/apache/commons/io/file/Counters$PathCounters;
 createParentDirectories
  (Ljava/nio/file/Path;Ljava/nio/file/LinkOption;[Ljava/nio/file/attribute/FileAttribute<*>;)Ljava/nio/file/Path;
- (Ljava/nio/file/Path;Ljava/nio/file/LinkOption;[Ljava/nio/file/attribute/FileAttribute<*>;)L0java/nio/file/Path;
+ (Ljava/nio/file/Path;Ljava/nio/file/LinkOption;[Ljava/nio/file/attribute/FileAttribute<*>;)L0java/nio/file/Path; # @Generated(92)
 createParentDirectories
  (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute<*>;)Ljava/nio/file/Path;
  (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/file/Path;
@@ -84,13 +84,13 @@ deleteDirectory
  (Ljava/nio/file/Path;[Lorg/apache/commons/io/file/DeleteOption;)Lorg/apache/commons/io/file/Counters$PathCounters;
 deleteFile
  (Ljava/nio/file/Path;)Lorg/apache/commons/io/file/Counters$PathCounters;
- (Ljava/nio/file/Path;)Lorg/apache/commons/io/file/Counters$PathCounters;
+ (Ljava/nio/file/Path;)L1org/apache/commons/io/file/Counters$PathCounters; # @Generated(23)
 deleteFile
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;[Lorg/apache/commons/io/file/DeleteOption;)Lorg/apache/commons/io/file/Counters$PathCounters;
- (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;[Lorg/apache/commons/io/file/DeleteOption;)Lorg/apache/commons/io/file/Counters$PathCounters;
+ (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;[Lorg/apache/commons/io/file/DeleteOption;)L1org/apache/commons/io/file/Counters$PathCounters; # @Generated(92)
 deleteFile
  (Ljava/nio/file/Path;[Lorg/apache/commons/io/file/DeleteOption;)Lorg/apache/commons/io/file/Counters$PathCounters;
- (Ljava/nio/file/Path;[Lorg/apache/commons/io/file/DeleteOption;)Lorg/apache/commons/io/file/Counters$PathCounters;
+ (Ljava/nio/file/Path;[Lorg/apache/commons/io/file/DeleteOption;)L1org/apache/commons/io/file/Counters$PathCounters; # @Generated(65)
 deleteOnExit
  (Ljava/nio/file/Path;)V
  (Ljava/nio/file/Path;)V
@@ -117,34 +117,34 @@ filter
  (Lorg/apache/commons/io/file/PathFilter;[Ljava/nio/file/Path;)[Ljava/nio/file/Path;
 getAclEntryList
  (Ljava/nio/file/Path;)Ljava/util/List<Ljava/nio/file/attribute/AclEntry;>;
- (Ljava/nio/file/Path;)Ljava/util/List<Ljava/nio/file/attribute/AclEntry;>;
+ (Ljava/nio/file/Path;)L0java/util/List<Ljava/nio/file/attribute/AclEntry;>; # @Generated(23)
 getAclFileAttributeView
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/AclFileAttributeView;
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/AclFileAttributeView;
 getBaseName
  (Ljava/nio/file/Path;)Ljava/lang/String;
- (Ljava/nio/file/Path;)L0java/lang/String;
+ (Ljava/nio/file/Path;)L0java/lang/String; # @Generated(23)
 getDosFileAttributeView
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/DosFileAttributeView;
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/DosFileAttributeView;
 getExtension
  (Ljava/nio/file/Path;)Ljava/lang/String;
- (Ljava/nio/file/Path;)L0java/lang/String;
+ (Ljava/nio/file/Path;)L0java/lang/String; # @Generated(23)
 getFileName
  <R:Ljava/lang/Object;>(Ljava/nio/file/Path;Ljava/util/function/Function<Ljava/nio/file/Path;TR;>;)TR;
- <R:Ljava/lang/Object;>(Ljava/nio/file/Path;Ljava/util/function/Function<Ljava/nio/file/Path;TR;>;)T0R;
+ <R:Ljava/lang/Object;>(Ljava/nio/file/Path;Ljava/util/function/Function<Ljava/nio/file/Path;TR;>;)T0R; # @Generated(99)
 getFileNameString
  (Ljava/nio/file/Path;)Ljava/lang/String;
  (Ljava/nio/file/Path;)Ljava/lang/String;
 getLastModifiedFileTime
  (Ljava/io/File;)Ljava/nio/file/attribute/FileTime;
- (Ljava/io/File;)Ljava/nio/file/attribute/FileTime;
+ (L1java/io/File;)Ljava/nio/file/attribute/FileTime; # @Generated(2)
 getLastModifiedFileTime
  (Ljava/net/URI;)Ljava/nio/file/attribute/FileTime;
  (Ljava/net/URI;)Ljava/nio/file/attribute/FileTime;
 getLastModifiedFileTime
  (Ljava/net/URL;)Ljava/nio/file/attribute/FileTime;
- (Ljava/net/URL;)Ljava/nio/file/attribute/FileTime;
+ (L1java/net/URL;)Ljava/nio/file/attribute/FileTime; # @Generated(2)
 getLastModifiedFileTime
  (Ljava/nio/file/Path;Ljava/nio/file/attribute/FileTime;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileTime;
  (Ljava/nio/file/Path;Ljava/nio/file/attribute/FileTime;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileTime;
@@ -153,7 +153,7 @@ getLastModifiedFileTime
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileTime;
 getPath
  (Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;
- (Ljava/lang/String;Ljava/lang/String;)L0java/nio/file/Path;
+ (Ljava/lang/String;Ljava/lang/String;)L0java/nio/file/Path; # @Generated(39)
 getPosixFileAttributeView
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/PosixFileAttributeView;
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/PosixFileAttributeView;
@@ -186,7 +186,7 @@ isNewer
  (Ljava/nio/file/Path;Ljava/time/Instant;[Ljava/nio/file/LinkOption;)Z
 isNewer
  (Ljava/nio/file/Path;Ljava/time/chrono/ChronoZonedDateTime<*>;[Ljava/nio/file/LinkOption;)Z
- (Ljava/nio/file/Path;Ljava/time/chrono/ChronoZonedDateTime<*>;[Ljava/nio/file/LinkOption;)Z
+ (Ljava/nio/file/Path;L1java/time/chrono/ChronoZonedDateTime<*>;[Ljava/nio/file/LinkOption;)Z # @Generated(22)
 isOlder
  (Ljava/nio/file/Path;J[Ljava/nio/file/LinkOption;)Z
  (Ljava/nio/file/Path;J[Ljava/nio/file/LinkOption;)Z
@@ -213,10 +213,10 @@ newOutputStream
  (Ljava/nio/file/Path;Z)Ljava/io/OutputStream;
 noFollowLinkOptionArray
  ()[Ljava/nio/file/LinkOption;
- ()[1Ljava/nio/file/LinkOption;
+ ()[1Ljava/nio/file/LinkOption; # @Generated(3)
 readAttributes
  <A::Ljava/nio/file/attribute/BasicFileAttributes;>(Ljava/nio/file/Path;Ljava/lang/Class<TA;>;[Ljava/nio/file/LinkOption;)TA;
- <A::Ljava/nio/file/attribute/BasicFileAttributes;>(Ljava/nio/file/Path;Ljava/lang/Class<TA;>;[Ljava/nio/file/LinkOption;)T0A;
+ <A::Ljava/nio/file/attribute/BasicFileAttributes;>(Ljava/nio/file/Path;Ljava/lang/Class<TA;>;[Ljava/nio/file/LinkOption;)T0A; # @Generated(122)
 readBasicFileAttributes
  (Ljava/nio/file/Path;)Ljava/nio/file/attribute/BasicFileAttributes;
  (Ljava/nio/file/Path;)Ljava/nio/file/attribute/BasicFileAttributes;
@@ -237,7 +237,7 @@ readPosixFileAttributes
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/PosixFileAttributes;
 readString
  (Ljava/nio/file/Path;Ljava/nio/charset/Charset;)Ljava/lang/String;
- (Ljava/nio/file/Path;Ljava/nio/charset/Charset;)L1java/lang/String;
+ (Ljava/nio/file/Path;Ljava/nio/charset/Charset;)L1java/lang/String; # @Generated(49)
 setLastModifiedTime
  (Ljava/nio/file/Path;Ljava/nio/file/Path;)V
  (Ljava/nio/file/Path;Ljava/nio/file/Path;)V

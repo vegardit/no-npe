@@ -20,7 +20,7 @@ clearPropertyDirect
  (Ljava/lang/String;)V
 clearTreeInternal
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)L1java/lang/Object; # @Generated(21)
 configurationAt
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
@@ -158,13 +158,13 @@ getString
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 getStringArray
  (Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[1Ljava/lang/String; # @Inherited(org.apache.commons.configuration2.AbstractConfiguration)
 interpolatedConfiguration
  ()Lorg/apache/commons/configuration2/Configuration;
  ()L1org/apache/commons/configuration2/Configuration; # @Inherited(org.apache.commons.configuration2.BaseHierarchicalConfiguration)
 removeConfiguration
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
- (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
+ (Ljava/lang/String;)L0org/apache/commons/configuration2/Configuration; # @Inherited(org.apache.commons.configuration2.CombinedConfiguration)
 removeConfiguration
  (Lorg/apache/commons/configuration2/Configuration;)Z
  (Lorg/apache/commons/configuration2/Configuration;)Z

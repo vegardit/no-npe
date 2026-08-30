@@ -5,16 +5,16 @@ class org/springframework/web/service/invoker/RequestParamArgumentResolver
  (Lorg/springframework/core/convert/ConversionService;)V
 addRequestValue
  (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Builder;)V
- (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Builder;)V
+ (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/core/MethodParameter;L1org/springframework/web/service/invoker/HttpRequestValues$Builder;)V # @Generated(80)
 createNamedValueInfo
  (Lorg/springframework/core/MethodParameter;)Lorg/springframework/web/service/invoker/AbstractNamedValueArgumentResolver$NamedValueInfo;
  (Lorg/springframework/core/MethodParameter;)L0org/springframework/web/service/invoker/AbstractNamedValueArgumentResolver$NamedValueInfo; # @Inherited(org.springframework.web.service.invoker.AbstractNamedValueArgumentResolver)
 createNamedValueInfo
  (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Lorg/springframework/web/service/invoker/AbstractNamedValueArgumentResolver$NamedValueInfo;
- (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)L0org/springframework/web/service/invoker/AbstractNamedValueArgumentResolver$NamedValueInfo; # @Inherited(org.springframework.web.service.invoker.AbstractNamedValueArgumentResolver)
+ (L1org/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)L0org/springframework/web/service/invoker/AbstractNamedValueArgumentResolver$NamedValueInfo; # @Overrides(org.springframework.web.service.invoker.AbstractNamedValueArgumentResolver)
 isFormOrMultipartContent
  (Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Z
- (Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Z
+ (L1org/springframework/web/service/invoker/HttpRequestValues$Metadata;)Z # @Generated
 supportsMultipleValues
  (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Z
  (Lorg/springframework/core/MethodParameter;Lorg/springframework/web/service/invoker/HttpRequestValues$Metadata;)Z

@@ -2,10 +2,10 @@ class org/eclipse/jdt/ui/text/JavaSourceViewerConfiguration
 
 PREFERENCE_TAB_WIDTH
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 SPACES_FOR_TABS
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 <init>
  (Lorg/eclipse/jdt/ui/text/IColorManager;Lorg/eclipse/jface/preference/IPreferenceStore;Lorg/eclipse/ui/texteditor/ITextEditor;Ljava/lang/String;)V
@@ -15,7 +15,7 @@ SPACES_FOR_TABS
  (L1org/eclipse/jdt/ui/text/IColorManager;L1org/eclipse/jface/preference/IPreferenceStore;L0org/eclipse/ui/texteditor/ITextEditor;L0java/lang/String;Z)V
 <init>
  (Lorg/eclipse/jdt/ui/text/JavaTextTools;Lorg/eclipse/ui/texteditor/ITextEditor;)V
- (Lorg/eclipse/jdt/ui/text/JavaTextTools;Lorg/eclipse/ui/texteditor/ITextEditor;)V
+ (L1org/eclipse/jdt/ui/text/JavaTextTools;Lorg/eclipse/ui/texteditor/ITextEditor;)V # @Generated(2)
 affectsTextPresentation
  (Lorg/eclipse/jface/util/PropertyChangeEvent;)Z
  (L1org/eclipse/jface/util/PropertyChangeEvent;)Z
@@ -57,7 +57,7 @@ getEditor
  ()L0org/eclipse/ui/texteditor/ITextEditor;
 getHierarchyPresenter
  (Lorg/eclipse/jface/text/source/ISourceViewer;Z)Lorg/eclipse/jface/text/information/IInformationPresenter;
- (Lorg/eclipse/jface/text/source/ISourceViewer;Z)L0org/eclipse/jface/text/information/IInformationPresenter;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Z)L0org/eclipse/jface/text/information/IInformationPresenter; # @Generated(49)
 getHyperlinkDetectorTargets
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;>;
  (Lorg/eclipse/jface/text/source/ISourceViewer;)L1java/util/Map<Ljava/lang/String;Lorg/eclipse/core/runtime/IAdaptable;>; # @Inherited(org.eclipse.ui.editors.text.TextSourceViewerConfiguration)
@@ -78,10 +78,10 @@ getMultilineCommentScanner
  ()Lorg/eclipse/jface/text/rules/RuleBasedScanner;
 getOutlinePresenter
  (Lorg/eclipse/jface/text/source/ISourceViewer;Z)Lorg/eclipse/jface/text/information/IInformationPresenter;
- (Lorg/eclipse/jface/text/source/ISourceViewer;Z)L1org/eclipse/jface/text/information/IInformationPresenter;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;Z)L1org/eclipse/jface/text/information/IInformationPresenter; # @Generated(49)
 getOverviewRulerAnnotationHover
  (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/source/IAnnotationHover;
- (Lorg/eclipse/jface/text/source/ISourceViewer;)Lorg/eclipse/jface/text/source/IAnnotationHover;
+ (Lorg/eclipse/jface/text/source/ISourceViewer;)L1org/eclipse/jface/text/source/IAnnotationHover; # @Inherited(org.eclipse.ui.editors.text.TextSourceViewerConfiguration)
 getPreferenceStore
  ()Lorg/eclipse/jface/preference/IPreferenceStore;
  ()Lorg/eclipse/jface/preference/IPreferenceStore;
@@ -111,4 +111,4 @@ getTextHover
  (Lorg/eclipse/jface/text/source/ISourceViewer;Ljava/lang/String;I)L0org/eclipse/jface/text/ITextHover; # @Inherited(org.eclipse.jface.text.source.SourceViewerConfiguration)
 handlePropertyChangeEvent
  (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
- (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (L1org/eclipse/jface/util/PropertyChangeEvent;)V # @Generated

@@ -21,37 +21,37 @@ canConvertFrom
  (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;)Z
 canConvertTo
  (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;)Z
- (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;)Z
+ (L1java/lang/Object;L0org/springframework/messaging/MessageHeaders;)Z # @Generated(2,20)
 convertFromInternal
  (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;Ljava/lang/Object;)Ljava/lang/Object;
- (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;Ljava/lang/Object;)L0java/lang/Object;
+ (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;L0java/lang/Object;)L0java/lang/Object; # @Generated(64,83)
 convertToInternal
  (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;Ljava/lang/Object;)L0java/lang/Object;
+ (Ljava/lang/Object;L0org/springframework/messaging/MessageHeaders;L0java/lang/Object;)L0java/lang/Object; # @Generated(20,66,85)
 fromMessage
  (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;)Ljava/lang/Object;
  (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;)L0java/lang/Object; # @Inherited(org.springframework.messaging.converter.MessageConverter)
 fromMessage
  (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;Ljava/lang/Object;)Ljava/lang/Object;
- (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;Ljava/lang/Object;)L0java/lang/Object; # @Inherited(org.springframework.messaging.converter.SmartMessageConverter)
+ (Lorg/springframework/messaging/Message<*>;Ljava/lang/Class<*>;L0java/lang/Object;)L0java/lang/Object; # @Inherited(org.springframework.messaging.converter.SmartMessageConverter)
 getContentTypeResolver
  ()Lorg/springframework/messaging/converter/ContentTypeResolver;
- ()L0org/springframework/messaging/converter/ContentTypeResolver;
+ ()L0org/springframework/messaging/converter/ContentTypeResolver; # @Generated
 getDefaultContentType
  (Ljava/lang/Object;)Lorg/springframework/util/MimeType;
- (Ljava/lang/Object;)L0org/springframework/util/MimeType;
+ (Ljava/lang/Object;)L0org/springframework/util/MimeType; # @Generated(21)
 getMimeType
  (Lorg/springframework/messaging/MessageHeaders;)Lorg/springframework/util/MimeType;
- (Lorg/springframework/messaging/MessageHeaders;)L0org/springframework/util/MimeType;
+ (L0org/springframework/messaging/MessageHeaders;)L0org/springframework/util/MimeType; # @Generated(2,49)
 getSerializedPayloadClass
  ()Ljava/lang/Class<*>;
  ()Ljava/lang/Class<*>;
 getSupportedMimeTypes
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;
- ()Ljava/util/List<Lorg/springframework/util/MimeType;>;
+ ()L1java/util/List<Lorg/springframework/util/MimeType;>; # @Generated(3)
 setContentTypeResolver
  (Lorg/springframework/messaging/converter/ContentTypeResolver;)V
- (Lorg/springframework/messaging/converter/ContentTypeResolver;)V
+ (L0org/springframework/messaging/converter/ContentTypeResolver;)V # @Generated
 setSerializedPayloadClass
  (Ljava/lang/Class<*>;)V
  (Ljava/lang/Class<*>;)V
@@ -60,10 +60,10 @@ supports
  (Ljava/lang/Class<*>;)Z
 supportsMimeType
  (Lorg/springframework/messaging/MessageHeaders;)Z
- (Lorg/springframework/messaging/MessageHeaders;)Z
+ (L0org/springframework/messaging/MessageHeaders;)Z # @Generated
 toMessage
  (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;)Lorg/springframework/messaging/Message<*>;
- (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;)L0org/springframework/messaging/Message<*>; # @Inherited(org.springframework.messaging.converter.MessageConverter)
+ (Ljava/lang/Object;L0org/springframework/messaging/MessageHeaders;)L0org/springframework/messaging/Message<*>; # @Inherited(org.springframework.messaging.converter.MessageConverter)
 toMessage
  (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;Ljava/lang/Object;)Lorg/springframework/messaging/Message<*>;
- (Ljava/lang/Object;Lorg/springframework/messaging/MessageHeaders;Ljava/lang/Object;)L0org/springframework/messaging/Message<*>; # @Inherited(org.springframework.messaging.converter.SmartMessageConverter)
+ (Ljava/lang/Object;L0org/springframework/messaging/MessageHeaders;L0java/lang/Object;)L0org/springframework/messaging/Message<*>; # @Inherited(org.springframework.messaging.converter.SmartMessageConverter)

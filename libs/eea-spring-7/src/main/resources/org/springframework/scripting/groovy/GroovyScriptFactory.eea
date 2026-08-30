@@ -5,19 +5,19 @@ class org/springframework/scripting/groovy/GroovyScriptFactory
  (Ljava/lang/String;)V
 <init>
  (Ljava/lang/String;Lorg/codehaus/groovy/control/CompilerConfiguration;)V
- (Ljava/lang/String;Lorg/codehaus/groovy/control/CompilerConfiguration;)V
+ (Ljava/lang/String;L0org/codehaus/groovy/control/CompilerConfiguration;)V # @Generated(20)
 <init>
  (Ljava/lang/String;Lorg/springframework/scripting/groovy/GroovyObjectCustomizer;)V
- (Ljava/lang/String;Lorg/springframework/scripting/groovy/GroovyObjectCustomizer;)V
+ (Ljava/lang/String;L0org/springframework/scripting/groovy/GroovyObjectCustomizer;)V # @Generated(20)
 <init>
  (Ljava/lang/String;[Lorg/codehaus/groovy/control/customizers/CompilationCustomizer;)V
  (Ljava/lang/String;[Lorg/codehaus/groovy/control/customizers/CompilationCustomizer;)V
 buildGroovyClassLoader
  (Ljava/lang/ClassLoader;)Lgroovy/lang/GroovyClassLoader;
- (Ljava/lang/ClassLoader;)L1groovy/lang/GroovyClassLoader;
+ (L0java/lang/ClassLoader;)L1groovy/lang/GroovyClassLoader; # @Generated(2,26)
 executeScript
  (Lorg/springframework/scripting/ScriptSource;Ljava/lang/Class<*>;)Ljava/lang/Object;
- (Lorg/springframework/scripting/ScriptSource;Ljava/lang/Class<*>;)L0java/lang/Object;
+ (Lorg/springframework/scripting/ScriptSource;Ljava/lang/Class<*>;)L0java/lang/Object; # @Generated(67)
 getGroovyClassLoader
  ()Lgroovy/lang/GroovyClassLoader;
  ()Lgroovy/lang/GroovyClassLoader;
@@ -29,13 +29,13 @@ getScriptSourceLocator
  ()Ljava/lang/String;
 getScriptedObject
  (Lorg/springframework/scripting/ScriptSource;[Ljava/lang/Class<*>;)Ljava/lang/Object;
- (Lorg/springframework/scripting/ScriptSource;[Ljava/lang/Class<*>;)L0java/lang/Object; # @Inherited(org.springframework.scripting.ScriptFactory)
+ (Lorg/springframework/scripting/ScriptSource;[0Ljava/lang/Class<*>;)L0java/lang/Object; # @Inherited(org.springframework.scripting.ScriptFactory)
 getScriptedObjectType
  (Lorg/springframework/scripting/ScriptSource;)Ljava/lang/Class<*>;
- (Lorg/springframework/scripting/ScriptSource;)L0java/lang/Class<*>; # @Inherited(org.springframework.scripting.ScriptFactory)
+ (L1org/springframework/scripting/ScriptSource;)L0java/lang/Class<*>; # @Overrides(org.springframework.scripting.ScriptFactory)
 requiresScriptedObjectRefresh
  (Lorg/springframework/scripting/ScriptSource;)Z
- (Lorg/springframework/scripting/ScriptSource;)Z
+ (L1org/springframework/scripting/ScriptSource;)Z # @Generated
 setBeanClassLoader
  (Ljava/lang/ClassLoader;)V
  (Ljava/lang/ClassLoader;)V

@@ -27,16 +27,16 @@ currentTokenLocation
  ()Lcom/fasterxml/jackson/core/JsonLocation;
 currentValue
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 delegate
  ()Lcom/fasterxml/jackson/core/JsonParser;
  ()Lcom/fasterxml/jackson/core/JsonParser;
 disable
  (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Lcom/fasterxml/jackson/core/JsonParser;
- (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Lcom/fasterxml/jackson/core/JsonParser;
+ (L1com/fasterxml/jackson/core/JsonParser$Feature;)L1com/fasterxml/jackson/core/JsonParser; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 enable
  (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Lcom/fasterxml/jackson/core/JsonParser;
- (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Lcom/fasterxml/jackson/core/JsonParser;
+ (L1com/fasterxml/jackson/core/JsonParser$Feature;)L1com/fasterxml/jackson/core/JsonParser; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 getBigIntegerValue
  ()Ljava/math/BigInteger;
  ()Ljava/math/BigInteger;
@@ -78,7 +78,7 @@ getNumberType
  ()Lcom/fasterxml/jackson/core/JsonParser$NumberType;
 getNumberTypeFP
  ()Lcom/fasterxml/jackson/core/JsonParser$NumberTypeFP;
- ()Lcom/fasterxml/jackson/core/JsonParser$NumberTypeFP;
+ ()L1com/fasterxml/jackson/core/JsonParser$NumberTypeFP; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 getNumberValue
  ()Ljava/lang/Number;
  ()Ljava/lang/Number;
@@ -126,7 +126,7 @@ hasToken
  (Lcom/fasterxml/jackson/core/JsonToken;)Z
 isEnabled
  (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Z
- (Lcom/fasterxml/jackson/core/JsonParser$Feature;)Z
+ (L1com/fasterxml/jackson/core/JsonParser$Feature;)Z # @Inherited(com.fasterxml.jackson.core.JsonParser)
 nextToken
  ()Lcom/fasterxml/jackson/core/JsonToken;
  ()Lcom/fasterxml/jackson/core/JsonToken;
@@ -138,10 +138,10 @@ overrideCurrentName
  (Ljava/lang/String;)V
 overrideFormatFeatures
  (II)Lcom/fasterxml/jackson/core/JsonParser;
- (II)Lcom/fasterxml/jackson/core/JsonParser;
+ (II)L1com/fasterxml/jackson/core/JsonParser; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 overrideStdFeatures
  (II)Lcom/fasterxml/jackson/core/JsonParser;
- (II)Lcom/fasterxml/jackson/core/JsonParser;
+ (II)L1com/fasterxml/jackson/core/JsonParser; # @Generated
 readBinaryValue
  (Lcom/fasterxml/jackson/core/Base64Variant;Ljava/io/OutputStream;)I
  (Lcom/fasterxml/jackson/core/Base64Variant;Ljava/io/OutputStream;)I
@@ -153,13 +153,13 @@ setCurrentValue
  (Ljava/lang/Object;)V
 setFeatureMask
  (I)Lcom/fasterxml/jackson/core/JsonParser;
- (I)Lcom/fasterxml/jackson/core/JsonParser;
+ (I)L1com/fasterxml/jackson/core/JsonParser; # @Inherited(com.fasterxml.jackson.core.JsonParser)
 setSchema
  (Lcom/fasterxml/jackson/core/FormatSchema;)V
  (Lcom/fasterxml/jackson/core/FormatSchema;)V
 skipChildren
  ()Lcom/fasterxml/jackson/core/JsonParser;
- ()Lcom/fasterxml/jackson/core/JsonParser;
+ ()L1com/fasterxml/jackson/core/JsonParser; # @Generated
 streamReadConstraints
  ()Lcom/fasterxml/jackson/core/StreamReadConstraints;
  ()Lcom/fasterxml/jackson/core/StreamReadConstraints;

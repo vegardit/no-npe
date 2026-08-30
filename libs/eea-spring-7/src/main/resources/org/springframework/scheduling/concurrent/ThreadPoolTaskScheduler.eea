@@ -2,13 +2,13 @@ class org/springframework/scheduling/concurrent/ThreadPoolTaskScheduler
 
 createExecutor
  (ILjava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)Ljava/util/concurrent/ScheduledExecutorService;
- (ILjava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)L1java/util/concurrent/ScheduledExecutorService;
+ (ILjava/util/concurrent/ThreadFactory;Ljava/util/concurrent/RejectedExecutionHandler;)L1java/util/concurrent/ScheduledExecutorService; # @Generated(87)
 execute
  (Ljava/lang/Runnable;)V
  (L1java/lang/Runnable;)V # @Inherited(org.springframework.core.task.TaskExecutor)
 getClock
  ()Ljava/time/Clock;
- ()Ljava/time/Clock;
+ ()L1java/time/Clock; # @Inherited(org.springframework.scheduling.TaskScheduler)
 getScheduledExecutor
  ()Ljava/util/concurrent/ScheduledExecutorService;
  ()Ljava/util/concurrent/ScheduledExecutorService;
@@ -26,16 +26,16 @@ schedule
  (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)L0java/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleAtFixedRate
  (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleAtFixedRate
  (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;Ljava/time/Instant;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleWithFixedDelay
  (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleWithFixedDelay
  (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
+ (Ljava/lang/Runnable;Ljava/time/Instant;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 setClock
  (Ljava/time/Clock;)V
  (Ljava/time/Clock;)V
