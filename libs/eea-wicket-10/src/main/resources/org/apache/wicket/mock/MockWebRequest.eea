@@ -26,7 +26,7 @@ getClientUrl
  ()L1org/apache/wicket/request/Url; # @Inherited(org.apache.wicket.request.Request)
 getContainerRequest
  ()Ljava/lang/Object;
- ()L0java/lang/Object; # @Inherited(org.apache.wicket.request.Request)
+ ()L1java/lang/Object; # @Overrides(org.apache.wicket.request.Request)
 getContextPath
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(org.apache.wicket.request.Request)
@@ -41,7 +41,7 @@ getFilterPath
  ()L1java/lang/String; # @Inherited(org.apache.wicket.request.Request)
 getHeader
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L1java/lang/String;
+ (Ljava/lang/String;)L0java/lang/String; # @Generated(21)
 getHeaders
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
  (Ljava/lang/String;)L1java/util/List<Ljava/lang/String;>; # @Generated(21)

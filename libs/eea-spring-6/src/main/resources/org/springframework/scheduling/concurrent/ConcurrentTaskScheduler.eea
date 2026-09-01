@@ -20,16 +20,16 @@ schedule
  (Ljava/lang/Runnable;Lorg/springframework/scheduling/Trigger;)L0java/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
 scheduleAtFixedRate
  (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
+ (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
 scheduleAtFixedRate
  (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Instant;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
+ (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
 scheduleWithFixedDelay
  (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
+ (Ljava/lang/Runnable;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
 scheduleWithFixedDelay
  (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
- (Ljava/lang/Runnable;Ljava/time/Instant;L1java/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>; # @Inherited(org.springframework.scheduling.TaskScheduler)
+ (Ljava/lang/Runnable;Ljava/time/Instant;Ljava/time/Duration;)Ljava/util/concurrent/ScheduledFuture<*>;
 setClock
  (Ljava/time/Clock;)V
  (Ljava/time/Clock;)V
@@ -38,7 +38,7 @@ setErrorHandler
  (Lorg/springframework/util/ErrorHandler;)V
 setScheduledExecutor
  (Ljava/util/concurrent/ScheduledExecutorService;)V
- (L0java/util/concurrent/ScheduledExecutorService;)V # @Generated
+ (Ljava/util/concurrent/ScheduledExecutorService;)V
 submit
  (Ljava/lang/Runnable;)Ljava/util/concurrent/Future<*>;
  (Ljava/lang/Runnable;)L1java/util/concurrent/Future<*>; # @Inherited(org.springframework.scheduling.concurrent.ConcurrentTaskExecutor)

@@ -62,16 +62,16 @@ visitAttribute
  (Lorg/springframework/asm/Attribute;)V
 visitField
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/asm/FieldVisitor;
- (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)L0org/springframework/asm/FieldVisitor; # @Inherited(org.springframework.asm.ClassVisitor)
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)L1org/springframework/asm/FieldVisitor; # @Overrides(org.springframework.asm.ClassVisitor)
 visitInnerClass
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 visitMethod
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/asm/MethodVisitor;
- (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L0org/springframework/asm/MethodVisitor; # @Inherited(org.springframework.asm.ClassVisitor)
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L1org/springframework/asm/MethodVisitor; # @Overrides(org.springframework.asm.ClassVisitor)
 visitModule
  (Ljava/lang/String;ILjava/lang/String;)Lorg/springframework/asm/ModuleVisitor;
- (Ljava/lang/String;ILjava/lang/String;)L0org/springframework/asm/ModuleVisitor; # @Inherited(org.springframework.asm.ClassVisitor)
+ (Ljava/lang/String;ILjava/lang/String;)L1org/springframework/asm/ModuleVisitor; # @Overrides(org.springframework.asm.ClassVisitor)
 visitNestHost
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -86,7 +86,7 @@ visitPermittedSubclass
  (Ljava/lang/String;)V
 visitRecordComponent
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/asm/RecordComponentVisitor;
- (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)L0org/springframework/asm/RecordComponentVisitor; # @Inherited(org.springframework.asm.ClassVisitor)
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)L1org/springframework/asm/RecordComponentVisitor; # @Overrides(org.springframework.asm.ClassVisitor)
 visitSource
  (Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/lang/String;Ljava/lang/String;)V

@@ -135,7 +135,7 @@ findPOJOBuilder
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)L0java/lang/Class<*>; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findPOJOBuilderConfig
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Lcom/fasterxml/jackson/databind/annotation/JsonPOJOBuilder$Value;
- (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)L1com/fasterxml/jackson/databind/annotation/JsonPOJOBuilder$Value; # @Overrides(com.fasterxml.jackson.databind.AnnotationIntrospector)
+ (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)L0com/fasterxml/jackson/databind/annotation/JsonPOJOBuilder$Value; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findPolymorphicTypeInfo
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Value;
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;)L0com/fasterxml/jackson/annotation/JsonTypeInfo$Value; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
@@ -258,7 +258,7 @@ isIgnorableType
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)L0java/lang/Boolean; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 isTypeId
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)Ljava/lang/Boolean;
- (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)L0java/lang/Boolean; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
+ (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)L1java/lang/Boolean; # @Overrides(com.fasterxml.jackson.databind.AnnotationIntrospector)
 readResolve
  ()Ljava/lang/Object;
  ()L1java/lang/Object; # @Generated

@@ -191,7 +191,7 @@ getEmptyValue
  (L1com/fasterxml/jackson/databind/DeserializationContext;)Ljava/lang/Object; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
 getKnownPropertyNames
  ()Ljava/util/Collection<Ljava/lang/Object;>;
- ()L0java/util/Collection<L1java/lang/Object;>; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
+ ()L1java/util/Collection<L1java/lang/Object;>; # @Overrides(com.fasterxml.jackson.databind.JsonDeserializer)
 getNullAccessPattern
  ()Lcom/fasterxml/jackson/databind/util/AccessPattern;
  ()L1com/fasterxml/jackson/databind/util/AccessPattern; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
@@ -200,7 +200,7 @@ getObjectIdReader
  ()L0com/fasterxml/jackson/databind/deser/impl/ObjectIdReader; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
 getValueInstantiator
  ()Lcom/fasterxml/jackson/databind/deser/ValueInstantiator;
- ()L1com/fasterxml/jackson/databind/deser/ValueInstantiator; # @Inherited(com.fasterxml.jackson.databind.deser.std.StdDeserializer)
+ ()L0com/fasterxml/jackson/databind/deser/ValueInstantiator; # @Inherited(com.fasterxml.jackson.databind.deser.std.StdDeserializer)
 getValueType
  ()Lcom/fasterxml/jackson/databind/JavaType;
  ()Lcom/fasterxml/jackson/databind/JavaType;
@@ -233,7 +233,7 @@ injectValues
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Ljava/lang/Object;)V
 logicalType
  ()Lcom/fasterxml/jackson/databind/type/LogicalType;
- ()L0com/fasterxml/jackson/databind/type/LogicalType; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
+ ()L1com/fasterxml/jackson/databind/type/LogicalType; # @Overrides(com.fasterxml.jackson.databind.JsonDeserializer)
 properties
  ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
  ()Ljava/util/Iterator<Lcom/fasterxml/jackson/databind/deser/SettableBeanProperty;>;
@@ -245,7 +245,7 @@ resolve
  (Lcom/fasterxml/jackson/databind/DeserializationContext;)V
 supportsUpdate
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
- (L1com/fasterxml/jackson/databind/DeserializationConfig;)L0java/lang/Boolean; # @Inherited(com.fasterxml.jackson.databind.JsonDeserializer)
+ (L1com/fasterxml/jackson/databind/DeserializationConfig;)L1java/lang/Boolean; # @Overrides(com.fasterxml.jackson.databind.JsonDeserializer)
 unwrappingDeserializer
  (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
  (Lcom/fasterxml/jackson/databind/util/NameTransformer;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;

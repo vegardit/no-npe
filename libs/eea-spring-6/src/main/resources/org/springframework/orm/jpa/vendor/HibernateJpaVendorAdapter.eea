@@ -14,7 +14,7 @@ getJpaDialect
  ()Lorg/springframework/orm/jpa/vendor/HibernateJpaDialect;
 getJpaPropertyMap
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- ()L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(3)
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
 getJpaPropertyMap
  (Ljakarta/persistence/spi/PersistenceUnitInfo;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  (Ljakarta/persistence/spi/PersistenceUnitInfo;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
@@ -23,4 +23,4 @@ getPersistenceProvider
  ()Ljakarta/persistence/spi/PersistenceProvider;
 getPersistenceProviderRootPackage
  ()Ljava/lang/String;
- ()L0java/lang/String; # @Inherited(org.springframework.orm.jpa.vendor.AbstractJpaVendorAdapter)
+ ()L1java/lang/String; # @Overrides(org.springframework.orm.jpa.vendor.AbstractJpaVendorAdapter)

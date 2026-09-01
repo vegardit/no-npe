@@ -23,7 +23,7 @@ mapHandler
  (L1org/apache/wicket/request/IRequestHandler;)L0org/apache/wicket/request/Url; # @Inherited(org.apache.wicket.core.request.mapper.AbstractBookmarkableMapper)
 mapRequest
  (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/request/IRequestHandler;
- (L1org/apache/wicket/request/Request;)L0org/apache/wicket/request/IRequestHandler; # @Inherited(org.apache.wicket.core.request.mapper.AbstractBookmarkableMapper)
+ (L1org/apache/wicket/request/Request;)L1org/apache/wicket/request/IRequestHandler; # @Overrides(org.apache.wicket.core.request.mapper.AbstractBookmarkableMapper)
 parseRequest
  (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;
  (Lorg/apache/wicket/request/Request;)Lorg/apache/wicket/core/request/mapper/AbstractBookmarkableMapper$UrlInfo;

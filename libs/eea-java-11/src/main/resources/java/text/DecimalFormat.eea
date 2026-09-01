@@ -26,7 +26,7 @@ format
  (JLjava/lang/StringBuffer;L1java/text/FieldPosition;)Ljava/lang/StringBuffer; # @Generated(27)
 format
  (Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;
- (L0java/lang/Object;L1java/lang/StringBuffer;L1java/text/FieldPosition;)L1java/lang/StringBuffer; # @Inherited(java.text.NumberFormat)
+ (L1java/lang/Object;L1java/lang/StringBuffer;L1java/text/FieldPosition;)L1java/lang/StringBuffer; # @Inherited(java.text.NumberFormat)
 formatToCharacterIterator
  (Ljava/lang/Object;)Ljava/text/AttributedCharacterIterator;
  (L1java/lang/Object;)L1java/text/AttributedCharacterIterator; # @Inherited(java.text.Format)
@@ -53,7 +53,7 @@ getRoundingMode
  ()L1java/math/RoundingMode; # @Inherited(java.text.NumberFormat)
 parse
  (Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Number;
- (L1java/lang/String;L1java/text/ParsePosition;)L1java/lang/Number; # @Inherited(java.text.NumberFormat)
+ (L1java/lang/String;L1java/text/ParsePosition;)L0java/lang/Number; # @Overrides(java.text.NumberFormat)
 setCurrency
  (Ljava/util/Currency;)V
  (Ljava/util/Currency;)V

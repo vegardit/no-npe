@@ -33,10 +33,10 @@ contains
  (L1java/lang/Object;)Z
 containsKey
  (Ljava/lang/Object;)Z
- (L1java/lang/Object;)Z # @Overrides(java.util.AbstractMap)
+ (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
 containsValue
  (Ljava/lang/Object;)Z
- (L1java/lang/Object;)Z # @Overrides(java.util.AbstractMap)
+ (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
 elements
  ()Ljava/util/Enumeration<TV;>;
  ()L1java/util/Enumeration<TV;>; # @Generated(3)
@@ -93,13 +93,13 @@ merge
  (T1K;T1V;L1java/util/function/BiFunction<-TV;-TV;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 put
  (TK;TV;)TV;
- (T1K;T1V;)T0V; # @Overrides(java.util.AbstractMap)
+ (TK;TV;)T0V; # @Inherited(java.util.AbstractMap)
 putAll
  (Ljava/util/Map<+TK;+TV;>;)V
  (L1java/util/Map<+TK;+TV;>;)V # @Inherited(java.util.AbstractMap)
 putIfAbsent
  (TK;TV;)TV;
- (T1K;T1V;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+ (TK;TV;)T0V; # @Inherited(java.util.concurrent.ConcurrentMap)
 reduce
  <U:Ljava/lang/Object;>(JLjava/util/function/BiFunction<-TK;-TV;+TU;>;Ljava/util/function/BiFunction<-TU;-TU;+TU;>;)TU;
  <U:Ljava/lang/Object;>(JL1java/util/function/BiFunction<-TK;-TV;+TU;>;L1java/util/function/BiFunction<-TU;-TU;+TU;>;)TU;
@@ -159,13 +159,13 @@ reduceValuesToLong
  (JL1java/util/function/ToLongFunction<-TV;>;JL1java/util/function/LongBinaryOperator;)J
 remove
  (Ljava/lang/Object;)TV;
- (L1java/lang/Object;)T0V; # @Overrides(java.util.AbstractMap)
+ (L0java/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)
 remove
  (Ljava/lang/Object;Ljava/lang/Object;)Z
- (L1java/lang/Object;L0java/lang/Object;)Z # @Overrides(java.util.concurrent.ConcurrentMap)
+ (L0java/lang/Object;L0java/lang/Object;)Z # @Inherited(java.util.concurrent.ConcurrentMap)
 replace
  (TK;TV;)TV;
- (T1K;T1V;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+ (TK;TV;)T0V; # @Inherited(java.util.concurrent.ConcurrentMap)
 replace
  (TK;TV;TV;)Z
  (T1K;T1V;T1V;)Z

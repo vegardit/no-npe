@@ -14,7 +14,7 @@ getUnresolvedActions
  ()Ljava/lang/String;
 getUnresolvedCerts
  ()[Ljava/security/cert/Certificate;
- ()[1Ljava/security/cert/Certificate;
+ ()[0Ljava/security/cert/Certificate; # @Generated(3)
 getUnresolvedName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -26,7 +26,7 @@ implies
  (Ljava/security/Permission;)Z
 newPermissionCollection
  ()Ljava/security/PermissionCollection;
- ()L1java/security/PermissionCollection; # @Inherited(java.security.Permission)
+ ()L1java/security/PermissionCollection; # @Overrides(java.security.Permission)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.security.Permission)

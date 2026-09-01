@@ -60,7 +60,7 @@ isParentOf
  (L1org/eclipse/core/filesystem/IFileStore;)Z # @Inherited(org.eclipse.core.filesystem.IFileStore)
 mkdir
  (ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/filesystem/IFileStore;
- (IL0org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/core/filesystem/IFileStore; # @Inherited(org.eclipse.core.filesystem.IFileStore)
+ (IL0org/eclipse/core/runtime/IProgressMonitor;)L0org/eclipse/core/filesystem/IFileStore; # @Overrides(org.eclipse.core.filesystem.IFileStore)
 move
  (Lorg/eclipse/core/filesystem/IFileStore;ILorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1org/eclipse/core/filesystem/IFileStore;IL0org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.core.filesystem.IFileStore)
@@ -69,7 +69,7 @@ openInputStream
  (IL0org/eclipse/core/runtime/IProgressMonitor;)L1java/io/InputStream; # @Inherited(org.eclipse.core.filesystem.IFileStore)
 openOutputStream
  (ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/OutputStream;
- (IL0org/eclipse/core/runtime/IProgressMonitor;)L1java/io/OutputStream; # @Inherited(org.eclipse.core.filesystem.IFileStore)
+ (IL0org/eclipse/core/runtime/IProgressMonitor;)L0java/io/OutputStream; # @Overrides(org.eclipse.core.filesystem.IFileStore)
 putInfo
  (Lorg/eclipse/core/filesystem/IFileInfo;ILorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1org/eclipse/core/filesystem/IFileInfo;IL0org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.core.filesystem.IFileStore)

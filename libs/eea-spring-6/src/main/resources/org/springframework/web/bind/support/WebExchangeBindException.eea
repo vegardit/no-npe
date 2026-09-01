@@ -23,10 +23,10 @@ getBindingResult
  ()Lorg/springframework/validation/BindingResult;
 getDetailMessageArguments
  ()[Ljava/lang/Object;
- ()[0Ljava/lang/Object; # @Inherited(org.springframework.web.ErrorResponseException)
+ ()[1Ljava/lang/Object; # @Overrides(org.springframework.web.ErrorResponseException)
 getDetailMessageArguments
  (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)[Ljava/lang/Object;
- (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)[0Ljava/lang/Object; # @Inherited(org.springframework.web.ErrorResponse)
+ (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)[1Ljava/lang/Object; # @Overrides(org.springframework.web.ErrorResponse)
 getFieldError
  ()Lorg/springframework/validation/FieldError;
  ()L0org/springframework/validation/FieldError; # @Inherited(org.springframework.validation.Errors)
@@ -56,7 +56,7 @@ getGlobalErrors
  ()Ljava/util/List<Lorg/springframework/validation/ObjectError;>;
 getMessage
  ()Ljava/lang/String;
- ()L0java/lang/String; # @Inherited(org.springframework.web.server.ResponseStatusException)
+ ()L1java/lang/String; # @Inherited(org.springframework.web.server.ResponseStatusException)
 getModel
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
