@@ -86,7 +86,7 @@ getActiveRewriteSession
  ()L0org/eclipse/jface/text/DocumentRewriteSession; # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 getContentType
  (I)Ljava/lang/String;
- (I)L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
+ (I)L0java/lang/String; # @Overrides(org.eclipse.jface.text.IDocument)
 getContentType
  (Ljava/lang/String;IZ)Ljava/lang/String;
  (L1java/lang/String;IZ)L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
@@ -110,7 +110,7 @@ getDocumentPartitioningListeners
  ()L1java/util/List<Lorg/eclipse/jface/text/IDocumentPartitioningListener;>; # @Generated(3)
 getLegalContentTypes
  ()[Ljava/lang/String;
- ()[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
+ ()[0L1java/lang/String; # @Overrides(org.eclipse.jface.text.IDocument)
 getLegalContentTypes
  (Ljava/lang/String;)[Ljava/lang/String;
  (L1java/lang/String;)[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
@@ -128,7 +128,7 @@ getLineInformationOfOffset
  (I)L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.IDocument)
 getPartition
  (I)Lorg/eclipse/jface/text/ITypedRegion;
- (I)L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocument)
+ (I)L0org/eclipse/jface/text/ITypedRegion; # @Overrides(org.eclipse.jface.text.IDocument)
 getPartition
  (Ljava/lang/String;IZ)Lorg/eclipse/jface/text/ITypedRegion;
  (L1java/lang/String;IZ)L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)

@@ -2,19 +2,19 @@ class org/springframework/orm/jpa/vendor/HibernateJpaDialect
 
 beginTransaction
  (Ljakarta/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)Ljava/lang/Object;
- (L1jakarta/persistence/EntityManager;L1org/springframework/transaction/TransactionDefinition;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
+ (L1jakarta/persistence/EntityManager;L1org/springframework/transaction/TransactionDefinition;)L1java/lang/Object; # @Overrides(org.springframework.orm.jpa.DefaultJpaDialect)
 cleanupTransaction
  (Ljava/lang/Object;)V
  (L0java/lang/Object;)V # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 convertHibernateAccessException
  (Lorg/hibernate/HibernateException;)Lorg/springframework/dao/DataAccessException;
- (Lorg/hibernate/HibernateException;)L1org/springframework/dao/DataAccessException; # @Generated(37)
+ (Lorg/hibernate/HibernateException;)Lorg/springframework/dao/DataAccessException;
 getIdentifier
  (Lorg/hibernate/HibernateException;)Ljava/lang/Object;
  (Lorg/hibernate/HibernateException;)L0java/lang/Object; # @Generated(37)
 getJdbcConnection
  (Ljakarta/persistence/EntityManager;Z)Lorg/springframework/jdbc/datasource/ConnectionHandle;
- (Ljakarta/persistence/EntityManager;Z)L0org/springframework/jdbc/datasource/ConnectionHandle; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
+ (Ljakarta/persistence/EntityManager;Z)L1org/springframework/jdbc/datasource/ConnectionHandle; # @Overrides(org.springframework.orm.jpa.DefaultJpaDialect)
 getSession
  (Ljakarta/persistence/EntityManager;)Lorg/hibernate/engine/spi/SessionImplementor;
  (L1jakarta/persistence/EntityManager;)Lorg/hibernate/engine/spi/SessionImplementor; # @Generated(2)
@@ -23,7 +23,7 @@ prepareFlushMode
  (L1org/hibernate/Session;Z)L0org/hibernate/FlushMode; # @Generated(2,27)
 prepareTransaction
  (Ljakarta/persistence/EntityManager;ZLjava/lang/String;)Ljava/lang/Object;
- (Ljakarta/persistence/EntityManager;ZL0java/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
+ (Ljakarta/persistence/EntityManager;ZL0java/lang/String;)L1java/lang/Object; # @Overrides(org.springframework.orm.jpa.DefaultJpaDialect)
 setJdbcExceptionTranslator
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
  (L0org/springframework/jdbc/support/SQLExceptionTranslator;)V # @Generated

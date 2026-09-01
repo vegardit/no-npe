@@ -157,7 +157,7 @@ getFindReplaceTarget
  ()L1org/eclipse/jface/text/IFindReplaceTarget; # @Inherited(org.eclipse.jface.text.ITextViewer)
 getHoverEventLocation
  ()Lorg/eclipse/swt/graphics/Point;
- ()L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.ITextViewerExtension2)
+ ()L0org/eclipse/swt/graphics/Point; # @Overrides(org.eclipse.jface.text.ITextViewerExtension2)
 getInput
  ()Ljava/lang/Object;
  ()L0java/lang/Object; # @Inherited(org.eclipse.jface.viewers.Viewer)
@@ -382,4 +382,4 @@ widgetRange2ModelRange
  (Lorg/eclipse/jface/text/IRegion;)L0org/eclipse/jface/text/IRegion; # @Generated(35)
 widgetSelection2ModelSelection
  (Lorg/eclipse/swt/graphics/Point;)Lorg/eclipse/swt/graphics/Point;
- (Lorg/eclipse/swt/graphics/Point;)L1org/eclipse/swt/graphics/Point;
+ (Lorg/eclipse/swt/graphics/Point;)L0org/eclipse/swt/graphics/Point; # @Generated(35)

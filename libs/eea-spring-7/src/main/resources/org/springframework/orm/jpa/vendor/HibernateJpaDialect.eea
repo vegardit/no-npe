@@ -2,7 +2,7 @@ class org/springframework/orm/jpa/vendor/HibernateJpaDialect
 
 beginTransaction
  (Ljakarta/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)Ljava/lang/Object;
- (L1jakarta/persistence/EntityManager;L1org/springframework/transaction/TransactionDefinition;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
+ (L1jakarta/persistence/EntityManager;L1org/springframework/transaction/TransactionDefinition;)L1java/lang/Object; # @Overrides(org.springframework.orm.jpa.DefaultJpaDialect)
 cleanupTransaction
  (Ljava/lang/Object;)V
  (L0java/lang/Object;)V # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
@@ -11,13 +11,13 @@ deriveEntityAgent
  (L1jakarta/persistence/EntityManager;L0java/util/Map<**>;)Lorg/hibernate/StatelessSession; # @Generated(2,37)
 getJdbcConnection
  (Ljakarta/persistence/EntityManager;Z)Lorg/springframework/jdbc/datasource/ConnectionHandle;
- (L1jakarta/persistence/EntityManager;Z)L0org/springframework/jdbc/datasource/ConnectionHandle; # @Overrides(org.springframework.orm.jpa.DefaultJpaDialect)
+ (L1jakarta/persistence/EntityManager;Z)L1org/springframework/jdbc/datasource/ConnectionHandle; # @Overrides(org.springframework.orm.jpa.DefaultJpaDialect)
 prepareFlushMode
  (Lorg/hibernate/Session;Z)Lorg/hibernate/FlushMode;
  (L1org/hibernate/Session;Z)L0org/hibernate/FlushMode; # @Generated(2,27)
 prepareTransaction
  (Ljakarta/persistence/EntityManager;ZLjava/lang/String;)Ljava/lang/Object;
- (L1jakarta/persistence/EntityManager;ZL0java/lang/String;)L0java/lang/Object; # @Overrides(org.springframework.orm.jpa.DefaultJpaDialect)
+ (L1jakarta/persistence/EntityManager;ZL0java/lang/String;)L1java/lang/Object; # @Overrides(org.springframework.orm.jpa.DefaultJpaDialect)
 setJdbcExceptionTranslator
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
  (L0org/springframework/jdbc/support/SQLExceptionTranslator;)V # @Generated

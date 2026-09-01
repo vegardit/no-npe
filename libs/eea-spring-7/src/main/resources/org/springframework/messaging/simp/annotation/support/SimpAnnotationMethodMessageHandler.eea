@@ -24,7 +24,7 @@ getDirectLookupDestinations
  (L1org/springframework/messaging/simp/SimpMessageMappingInfo;)L1java/util/Set<Ljava/lang/String;>; # @Generated(2,62)
 getHandlerMethodLogger
  ()Lorg/apache/commons/logging/Log;
- ()L0org/apache/commons/logging/Log; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
+ ()L1org/apache/commons/logging/Log; # @Overrides(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getHeaderInitializer
  ()Lorg/springframework/messaging/support/MessageHeaderInitializer;
  ()L0org/springframework/messaging/support/MessageHeaderInitializer; # @Generated
@@ -48,7 +48,7 @@ getPathMatcher
  ()Lorg/springframework/util/PathMatcher;
 getReturnValueHandlerLogger
  ()Lorg/apache/commons/logging/Log;
- ()L0org/apache/commons/logging/Log; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
+ ()L1org/apache/commons/logging/Log; # @Overrides(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getValidator
  ()Lorg/springframework/validation/Validator;
  ()L0org/springframework/validation/Validator; # @Generated

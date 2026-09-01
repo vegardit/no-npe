@@ -41,13 +41,13 @@ getPrefixCompletionText
  (L1org/eclipse/jface/text/IDocument;I)L0java/lang/CharSequence; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension3)
 getSelection
  (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/swt/graphics/Point;
- (L1org/eclipse/jface/text/IDocument;)L0org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposal)
+ (L1org/eclipse/jface/text/IDocument;)L1org/eclipse/swt/graphics/Point; # @Overrides(org.eclipse.jface.text.contentassist.ICompletionProposal)
 getTemplate
  ()Lorg/eclipse/jface/text/templates/Template;
  ()Lorg/eclipse/jface/text/templates/Template;
 getTriggerCharacters
  ()[C
- ()[0C # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension)
+ ()[1C # @Overrides(org.eclipse.jface.text.contentassist.ICompletionProposalExtension)
 isValidFor
  (Lorg/eclipse/jface/text/IDocument;I)Z
  (L1org/eclipse/jface/text/IDocument;I)Z # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension)

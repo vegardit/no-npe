@@ -136,7 +136,7 @@ findPolymorphicTypeInfo
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;)L0com/fasterxml/jackson/annotation/JsonTypeInfo$Value; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findPropertyAccess
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Lcom/fasterxml/jackson/annotation/JsonProperty$Access;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;)L0com/fasterxml/jackson/annotation/JsonProperty$Access; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
+ (Lcom/fasterxml/jackson/databind/introspect/Annotated;)L1com/fasterxml/jackson/annotation/JsonProperty$Access; # @Overrides(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findPropertyAliases
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/util/List<Lcom/fasterxml/jackson/databind/PropertyName;>;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)L0java/util/List<Lcom/fasterxml/jackson/databind/PropertyName;>; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)

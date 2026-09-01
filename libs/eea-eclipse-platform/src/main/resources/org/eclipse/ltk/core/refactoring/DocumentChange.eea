@@ -11,7 +11,7 @@ commit
  (L1org/eclipse/jface/text/IDocument;L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.ltk.core.refactoring.TextChange)
 createUndoChange
  (Lorg/eclipse/text/edits/UndoEdit;)Lorg/eclipse/ltk/core/refactoring/Change;
- (L1org/eclipse/text/edits/UndoEdit;)L0org/eclipse/ltk/core/refactoring/Change; # @Inherited(org.eclipse.ltk.core.refactoring.TextChange)
+ (L1org/eclipse/text/edits/UndoEdit;)L1org/eclipse/ltk/core/refactoring/Change; # @Overrides(org.eclipse.ltk.core.refactoring.TextChange)
 getModifiedElement
  ()Ljava/lang/Object;
  ()Ljava/lang/Object;
