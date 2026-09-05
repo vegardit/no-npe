@@ -4,11 +4,25 @@
  */
 package com.vegardit.no_npe.eea_generator.internal;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import java.util.concurrent.ConcurrentHashMap;
 
+import org.eclipse.jdt.annotation.Nullable;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.Opcodes;
+
+import io.github.classgraph.AnnotationEnumValue;
+import io.github.classgraph.AnnotationInfo;
 import io.github.classgraph.AnnotationInfoList;
 import io.github.classgraph.ArrayTypeSignature;
 import io.github.classgraph.BaseTypeSignature;
@@ -21,9 +35,17 @@ import io.github.classgraph.MethodInfoList;
 import io.github.classgraph.TypeSignature;
 
 /**
+ * Provides filtered ClassGraph member views and nullness-annotation classification for EEA inference.
+ *
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
  */
 public final class ClassGraphUtils {
+
+   private static final String JSR305_NONNULL_ANNOTATION = "javax.annotation.Nonnull";
+   private static final String JSR305_TYPE_QUALIFIER_NICKNAME_ANNOTATION = "javax.annotation.meta.TypeQualifierNickname";
+   private static final String JSR305_NONNULL_DESCRIPTOR = "Ljavax/annotation/Nonnull;";
+   private static final String JSR305_TYPE_QUALIFIER_NICKNAME_DESCRIPTOR = "Ljavax/annotation/meta/TypeQualifierNickname;";
+   private static final Map<String, Optional<String>> JSR305_NICKNAME_WHEN_CACHE = new ConcurrentHashMap<>();
 
    public enum MethodReturnKind {
       ARRAY,
@@ -55,6 +77,7 @@ public final class ClassGraphUtils {
       "org.eclipse.jdt.annotation.Nullable", //
       "org.eclipse.sisu.Nullable", //
       "org.jetbrains.annotations.Nullable", //
+      "org.jspecify.annotations.Nullable", //
       "org.jmlspecs.annotation.Nullable", //
       "org.netbeans.api.annotations.common.CheckForNull", //
       "org.netbeans.api.annotations.common.NullAllowed", //
@@ -73,7 +96,7 @@ public final class ClassGraphUtils {
       "edu.umd.cs.findbugs.annotations.NonNull", //
       "io.reactivex.annotations.NonNull", //
       "io.reactivex.rxjava3.annotations.NonNull", //
-      "javax.annotation.Nonnull", //
+      JSR305_NONNULL_ANNOTATION, //
       "javax.validation.constraints.NotNull", //
       "jakarta.annotation.Nonnull", //
       "jakarta.validation.constraints.NotNull", //
@@ -84,6 +107,7 @@ public final class ClassGraphUtils {
       "org.checkerframework.checker.nullness.qual.NonNull", //
       "org.eclipse.jdt.annotation.NonNull", //
       "org.jetbrains.annotations.NotNull", //
+      "org.jspecify.annotations.NonNull", //
       "org.jmlspecs.annotation.NonNull", //
       "org.netbeans.api.annotations.common.NonNull", //
       "org.springframework.lang.NonNull", //
@@ -200,11 +224,133 @@ public final class ClassGraphUtils {
    }
 
    public static boolean hasNonNullAnnotation(final AnnotationInfoList annos) {
-      return annos.stream().anyMatch(a -> NONNULL_ANNOTATIONS.contains(a.getName()));
+      for (final var anno : annos) {
+         final String annotationName = anno.getName();
+         if (JSR305_NONNULL_ANNOTATION.equals(annotationName)) {
+            // Declaration annotation lists can contain an expanded meta-annotation. JSR-305 defaults to ALWAYS, but its
+            // weaker values must not be collapsed into an unsound non-null EEA marker.
+            if ("ALWAYS".equals(getJsr305NonnullWhen(anno)))
+               return true;
+            continue;
+         }
+         if (NONNULL_ANNOTATIONS.contains(annotationName))
+            return true;
+
+         if ("ALWAYS".equals(getJsr305NicknameWhen(anno)))
+            return true;
+      }
+      return false;
+   }
+
+   public static boolean hasNonNullAnnotation(final AnnotationInfoList annos, final @Nullable AnnotationInfoList typeAnnos) {
+      // ClassGraph returns null, rather than an empty list, when the type-use has no annotations.
+      return hasNonNullAnnotation(annos) || typeAnnos != null && hasNonNullAnnotation(typeAnnos);
    }
 
    public static boolean hasNullableAnnotation(final AnnotationInfoList annos) {
-      return annos.stream().anyMatch(a -> NULLABLE_ANNOTATIONS.contains(a.getName()));
+      for (final var anno : annos) {
+         if (NULLABLE_ANNOTATIONS.contains(anno.getName()))
+            return true;
+
+         final String when = getJsr305NonnullWhen(anno);
+         // MAYBE permits null and NEVER means the @Nonnull predicate never holds. UNKNOWN provides no usable contract.
+         if ("MAYBE".equals(when) || "NEVER".equals(when))
+            return true;
+
+         final String nicknameWhen = getJsr305NicknameWhen(anno);
+         if ("MAYBE".equals(nicknameWhen) || "NEVER".equals(nicknameWhen))
+            return true;
+      }
+      return false;
+   }
+
+   public static boolean hasNullableAnnotation(final AnnotationInfoList annos, final @Nullable AnnotationInfoList typeAnnos) {
+      return hasNullableAnnotation(annos) || typeAnnos != null && hasNullableAnnotation(typeAnnos);
+   }
+
+   public static @Nullable AnnotationInfoList getTopLevelValueTypeAnnotationInfo(final @Nullable TypeSignature typeSignature) {
+      if (typeSignature == null)
+         return null;
+      if (typeSignature instanceof ClassRefTypeSignature) {
+         final var classRefType = (ClassRefTypeSignature) typeSignature;
+         if (!classRefType.getSuffixes().isEmpty()) {
+            /* ClassGraph stores Outer annotations on the root and Inner annotations on the final suffix. The Java value
+             * has type Inner, while ECJ's EEA marker after the initial L qualifies that complete nested-class value. An
+             * unannotated suffix must stay unknown; falling back to the root would promote an Outer-only annotation. */
+            final var suffixAnnotations = classRefType.getSuffixTypeAnnotationInfo();
+            return suffixAnnotations == null || suffixAnnotations.isEmpty() ? null : suffixAnnotations.get(suffixAnnotations.size() - 1);
+         }
+      }
+      return typeSignature.getTypeAnnotationInfo();
+   }
+
+   private static @Nullable String getJsr305NonnullWhen(final AnnotationInfo annotation) {
+      if (!JSR305_NONNULL_ANNOTATION.equals(annotation.getName()))
+         return null;
+
+      final Object when = annotation.getParameterValues().getValue("when");
+      return when == null ? "ALWAYS" : when instanceof AnnotationEnumValue ? ((AnnotationEnumValue) when).getValueName() : null;
+   }
+
+   private static @Nullable String getJsr305NicknameWhen(final AnnotationInfo annotation) {
+      // Only the explicit JSR-305 meta-annotation grants alias semantics; annotation names alone are not evidence.
+      final ClassInfo annotationClass = annotation.getClassInfo();
+      if (annotationClass != null) {
+         final AnnotationInfoList metaAnnotations = annotationClass.getAnnotationInfo();
+         if (metaAnnotations.stream().anyMatch(meta -> JSR305_TYPE_QUALIFIER_NICKNAME_ANNOTATION.equals(meta.getName()))) {
+            for (final var metaAnnotation : metaAnnotations) {
+               final String when = getJsr305NonnullWhen(metaAnnotation);
+               if (when != null)
+                  return when;
+            }
+         }
+      }
+
+      final String annotationName = Objects.requireNonNull(annotation.getName());
+      // The supported CLI keeps one classpath for the JVM lifetime, so this process-wide cache cannot cross scan inputs.
+      // If the generator gains multi-classpath in-process use, scope this cache to one scan. Cache absent results too,
+      // because this fallback is reached for every use of an unrecognized annotation outside the accepted package scan.
+      return JSR305_NICKNAME_WHEN_CACHE.computeIfAbsent(annotationName, name -> Optional.ofNullable(readJsr305NicknameWhen(name))).orElse(
+         null);
+   }
+
+   @SuppressWarnings("null")
+   private static @Nullable String readJsr305NicknameWhen(final String annotationClassName) {
+      final String resourceName = annotationClassName.replace('.', '/') + ".class";
+      final ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
+      try (@SuppressWarnings("resource")
+      InputStream classBytes = contextClassLoader == null ? ClassGraphUtils.class.getResourceAsStream("/" + resourceName)
+            : contextClassLoader.getResourceAsStream(resourceName)) {
+         if (classBytes == null)
+            return null;
+         final boolean[] isNickname = {false};
+         final @Nullable String[] nonnullWhen = {null};
+         new ClassReader(classBytes).accept(new ClassVisitor(Opcodes.ASM9) {
+            @Override
+            public @Nullable AnnotationVisitor visitAnnotation(final @Nullable String descriptor, final boolean visible) {
+               if (JSR305_TYPE_QUALIFIER_NICKNAME_DESCRIPTOR.equals(descriptor)) {
+                  isNickname[0] = true;
+               } else if (JSR305_NONNULL_DESCRIPTOR.equals(descriptor)) {
+                  nonnullWhen[0] = "ALWAYS";
+                  return new AnnotationVisitor(Opcodes.ASM9) {
+                     @Override
+                     public void visitEnum(final @Nullable String name, final @Nullable String enumDescriptor,
+                           final @Nullable String value) {
+                        if ("when".equals(name)) {
+                           nonnullWhen[0] = value;
+                        }
+                     }
+                  };
+               }
+               return null;
+            }
+         }, ClassReader.SKIP_CODE | ClassReader.SKIP_DEBUG | ClassReader.SKIP_FRAMES);
+         return isNickname[0] ? nonnullWhen[0] : null;
+      } catch (final IOException | IllegalArgumentException ex) {
+         /* The accepted-package filter can omit the nickname declaration from ClassGraph's model. Reading only the
+          * annotation class preserves CLASS-retained metadata without loading it; unavailable metadata stays unknown. */
+         return null;
+      }
    }
 
    public static boolean hasPackageVisibility(final ClassInfo classInfo) {

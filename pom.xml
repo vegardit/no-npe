@@ -50,7 +50,10 @@ check for new dependency/plugin updates using:
 
     <nexus-staging-maven-plugin.nexusUrl>https://oss.sonatype.org/</nexus-staging-maven-plugin.nexusUrl>
 
+    <!-- Source generation updates in place by default; overrides support non-destructive clean comparisons. -->
     <eea-generator.action>validate</eea-generator.action>
+    <eea-generator.input.dirs>${project.basedir}/src/main/resources,${project.basedir}/../eea-java-11/src/main/resources</eea-generator.input.dirs>
+    <eea-generator.output.dir>${project.basedir}/src/main/resources</eea-generator.output.dir>
   </properties>
 
 
@@ -187,11 +190,11 @@ check for new dependency/plugin updates using:
                   <arguments>
                     <argument>-Deea-generator.action=${eea-generator.action}</argument>
                     <!--
-                       adding ${project.basedir}/../eea-java-11/src/main/resources to input dirs ensures that EEAs from JDK classes get propagated
+                       the default input dirs include ${project.basedir}/../eea-java-11/src/main/resources so JDK EEAs get propagated
                        to EEA files in other modules, which is required because of https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2512
                     -->
-                    <argument>-Deea-generator.input.dirs=${project.basedir}/src/main/resources,${project.basedir}/../eea-java-11/src/main/resources</argument>
-                    <argument>-Deea-generator.output.dir=${project.basedir}/src/main/resources</argument> <!-- perform in-place update -->
+                    <argument>-Deea-generator.input.dirs=${eea-generator.input.dirs}</argument>
+                    <argument>-Deea-generator.output.dir=${eea-generator.output.dir}</argument> <!-- perform in-place update by default -->
                     <argument>-classpath</argument>
                     <classpath />
                     <argument>com.vegardit.no_npe.eea_generator.EEAGenerator</argument>
@@ -213,6 +216,7 @@ check for new dependency/plugin updates using:
                   <arguments>
                     <argument>-Deea-generator.action=minimize</argument>
                     <argument>-Deea-generator.input.dirs=${project.basedir}/src/main/resources</argument>
+                    <!-- The module source tree already contains propagated contracts; do not re-read predecessor inputs. -->
                     <argument>-Deea-generator.input.dirs.extra=</argument>
                     <argument>-Deea-generator.output.dir.default=${project.build.outputDirectory}</argument>
                     <argument>-classpath</argument>

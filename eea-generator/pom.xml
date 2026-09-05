@@ -58,6 +58,11 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
+      <artifactId>asm-analysis</artifactId>
+      <version>9.10.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
       <artifactId>asm-util</artifactId>
       <version>9.10.1</version>
     </dependency>
@@ -72,6 +77,25 @@ SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <version>3.0.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jspecify</groupId>
+      <artifactId>jspecify</artifactId>
+      <version>1.0.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <!-- Regression fixture for CachedReturnPlugin's null-sentinel bytecode. -->
+      <groupId>net.bytebuddy</groupId>
+      <artifactId>byte-buddy</artifactId>
+      <version>1.18.11</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
