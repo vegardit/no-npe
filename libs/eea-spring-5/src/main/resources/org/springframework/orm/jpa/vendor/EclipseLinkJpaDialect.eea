@@ -5,4 +5,4 @@ beginTransaction
  (L1javax/persistence/EntityManager;L1org/springframework/transaction/TransactionDefinition;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 getJdbcConnection
  (Ljavax/persistence/EntityManager;Z)Lorg/springframework/jdbc/datasource/ConnectionHandle;
- (Ljavax/persistence/EntityManager;Z)L0org/springframework/jdbc/datasource/ConnectionHandle; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
+ (Ljavax/persistence/EntityManager;Z)L1org/springframework/jdbc/datasource/ConnectionHandle; # @Overrides(org.springframework.orm.jpa.DefaultJpaDialect)

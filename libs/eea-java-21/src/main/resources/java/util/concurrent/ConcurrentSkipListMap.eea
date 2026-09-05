@@ -44,7 +44,7 @@ containsKey
  (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
 containsValue
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
+ (L1java/lang/Object;)Z # @Overrides(java.util.AbstractMap)
 descendingKeySet
  ()Ljava/util/NavigableSet<TK;>;
  ()Ljava/util/NavigableSet<TK;>;
@@ -134,7 +134,7 @@ remove
  (L0java/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)
 remove
  (Ljava/lang/Object;Ljava/lang/Object;)Z
- (L0java/lang/Object;L0java/lang/Object;)Z # @Inherited(java.util.concurrent.ConcurrentMap)
+ (L1java/lang/Object;L0java/lang/Object;)Z # @Overrides(java.util.concurrent.ConcurrentMap)
 replace
  (TK;TV;)TV;
  (T1K;T1V;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)

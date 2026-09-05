@@ -11,13 +11,13 @@ changedUpdate
  (L1javax/swing/event/DocumentEvent;)V # @Inherited(javax.swing.event.DocumentListener)
 getAccessibleAction
  ()Ljavax/accessibility/AccessibleAction;
- ()L0javax/accessibility/AccessibleAction; # @Inherited(javax.accessibility.AccessibleContext)
+ ()L1javax/accessibility/AccessibleAction; # @Overrides(javax.accessibility.AccessibleContext)
 getAccessibleActionDescription
  (I)Ljava/lang/String;
  (I)L0java/lang/String; # @Generated
 getAccessibleEditableText
  ()Ljavax/accessibility/AccessibleEditableText;
- ()L0javax/accessibility/AccessibleEditableText; # @Inherited(javax.accessibility.AccessibleContext)
+ ()L1javax/accessibility/AccessibleEditableText; # @Overrides(javax.accessibility.AccessibleContext)
 getAccessibleRole
  ()Ljavax/accessibility/AccessibleRole;
  ()L1javax/accessibility/AccessibleRole; # @Inherited(javax.swing.JComponent$AccessibleJComponent)
@@ -26,7 +26,7 @@ getAccessibleStateSet
  ()Ljavax/accessibility/AccessibleStateSet;
 getAccessibleText
  ()Ljavax/accessibility/AccessibleText;
- ()L0javax/accessibility/AccessibleText; # @Inherited(javax.accessibility.AccessibleContext)
+ ()L1javax/accessibility/AccessibleText; # @Overrides(javax.accessibility.AccessibleContext)
 getAfterIndex
  (II)Ljava/lang/String;
  (II)Ljava/lang/String;
