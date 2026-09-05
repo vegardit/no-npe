@@ -8,7 +8,7 @@ checkManagedBean
  (Ljava/lang/Object;)V
 getAttributeDescription
  (Ljava/beans/PropertyDescriptor;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/beans/PropertyDescriptor;Ljava/lang/String;)Ljava/lang/String;
+ (L1java/beans/PropertyDescriptor;Ljava/lang/String;)Ljava/lang/String; # @Inherited(org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler)
 getDescription
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/Object;Ljava/lang/String;)L1java/lang/String;
@@ -17,7 +17,7 @@ getNotificationInfo
  (Ljava/lang/Object;Ljava/lang/String;)[1Ljavax/management/modelmbean/ModelMBeanNotificationInfo; # @Inherited(org.springframework.jmx.export.assembler.AbstractMBeanInfoAssembler)
 getOperationDescription
  (Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String; # @Inherited(org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler)
 getOperationParameters
  (Ljava/lang/reflect/Method;Ljava/lang/String;)[Ljavax/management/MBeanParameterInfo;
  (Ljava/lang/reflect/Method;Ljava/lang/String;)[1Ljavax/management/MBeanParameterInfo; # @Inherited(org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler)

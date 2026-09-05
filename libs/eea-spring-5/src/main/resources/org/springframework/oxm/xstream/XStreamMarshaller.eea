@@ -12,7 +12,7 @@ configureXStream
  (Lcom/thoughtworks/xstream/XStream;)V
 constructXStream
  ()Lcom/thoughtworks/xstream/XStream;
- ()Lcom/thoughtworks/xstream/XStream;
+ ()L1com/thoughtworks/xstream/XStream; # @Generated
 convertXStreamException
  (Ljava/lang/Exception;Z)Lorg/springframework/oxm/XmlMappingException;
  (Ljava/lang/Exception;Z)L1org/springframework/oxm/XmlMappingException; # @Generated(25)
@@ -135,7 +135,7 @@ unmarshalSaxReader
  (Lorg/xml/sax/XMLReader;Lorg/xml/sax/InputSource;)Ljava/lang/Object;
 unmarshalStreamSource
  (Ljavax/xml/transform/stream/StreamSource;)Ljava/lang/Object;
- (Ljavax/xml/transform/stream/StreamSource;)Ljava/lang/Object;
+ (L1javax/xml/transform/stream/StreamSource;)Ljava/lang/Object; # @Inherited(org.springframework.oxm.support.AbstractMarshaller)
 unmarshalXmlEventReader
  (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;
  (Ljavax/xml/stream/XMLEventReader;)Ljava/lang/Object;

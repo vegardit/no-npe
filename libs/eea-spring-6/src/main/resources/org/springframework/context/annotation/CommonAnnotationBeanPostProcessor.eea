@@ -23,13 +23,13 @@ postProcessMergedBeanDefinition
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/Class<*>;Ljava/lang/String;)V
 postProcessProperties
  (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
- (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
+ (Lorg/springframework/beans/PropertyValues;L1java/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Overrides(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 processAheadOfTime
  (Lorg/springframework/beans/factory/support/RegisteredBean;)Lorg/springframework/beans/factory/aot/BeanRegistrationAotContribution;
- (Lorg/springframework/beans/factory/support/RegisteredBean;)L0org/springframework/beans/factory/aot/BeanRegistrationAotContribution; # @Inherited(org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor)
+ (L1org/springframework/beans/factory/support/RegisteredBean;)L0org/springframework/beans/factory/aot/BeanRegistrationAotContribution; # @Inherited(org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor)
 processInjection
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L1java/lang/Object;)V # @Generated
 resetBeanDefinition
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

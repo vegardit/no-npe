@@ -23,7 +23,7 @@ alwaysExpect
  <T:TB;>(Lorg/springframework/test/web/servlet/ResultMatcher;)T1T; # @Inherited(org.springframework.test.web.servlet.setup.ConfigurableMockMvcBuilder)
 apply
  <T:TB;>(Lorg/springframework/test/web/servlet/setup/MockMvcConfigurer;)TT;
- <T:TB;>(Lorg/springframework/test/web/servlet/setup/MockMvcConfigurer;)T1T; # @Inherited(org.springframework.test.web.servlet.setup.ConfigurableMockMvcBuilder)
+ <T:TB;>(L1org/springframework/test/web/servlet/setup/MockMvcConfigurer;)T1T; # @Overrides(org.springframework.test.web.servlet.setup.ConfigurableMockMvcBuilder)
 build
  ()Lorg/springframework/test/web/servlet/MockMvc;
  ()L1org/springframework/test/web/servlet/MockMvc; # @Inherited(org.springframework.test.web.servlet.MockMvcBuilder)
@@ -41,4 +41,4 @@ initWebAppContext
  ()Lorg/springframework/web/context/WebApplicationContext;
 self
  <T:TB;>()TT;
- <T:TB;>()TT;
+ <T:TB;>()T1T; # @Generated(10)

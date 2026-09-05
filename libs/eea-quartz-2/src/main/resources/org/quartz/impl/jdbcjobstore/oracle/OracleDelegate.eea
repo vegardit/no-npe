@@ -42,25 +42,25 @@ getObjectFromBlob
  (Ljava/sql/ResultSet;Ljava/lang/String;)Ljava/lang/Object;
 insertCalendar
  (Ljava/sql/Connection;Ljava/lang/String;Lorg/quartz/Calendar;)I
- (Ljava/sql/Connection;Ljava/lang/String;Lorg/quartz/Calendar;)I
+ (L1java/sql/Connection;Ljava/lang/String;Lorg/quartz/Calendar;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 insertJobDetail
  (Ljava/sql/Connection;Lorg/quartz/JobDetail;)I
- (Ljava/sql/Connection;Lorg/quartz/JobDetail;)I
+ (L1java/sql/Connection;L1org/quartz/JobDetail;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 insertTrigger
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
- (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
+ (L1java/sql/Connection;L1org/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 updateCalendar
  (Ljava/sql/Connection;Ljava/lang/String;Lorg/quartz/Calendar;)I
- (Ljava/sql/Connection;Ljava/lang/String;Lorg/quartz/Calendar;)I
+ (L1java/sql/Connection;Ljava/lang/String;Lorg/quartz/Calendar;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 updateJobData
  (Ljava/sql/Connection;Lorg/quartz/JobDetail;)I
- (Ljava/sql/Connection;Lorg/quartz/JobDetail;)I
+ (L1java/sql/Connection;L1org/quartz/JobDetail;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 updateJobDetail
  (Ljava/sql/Connection;Lorg/quartz/JobDetail;)I
- (Ljava/sql/Connection;Lorg/quartz/JobDetail;)I
+ (L1java/sql/Connection;L1org/quartz/JobDetail;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 updateTrigger
  (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
- (Ljava/sql/Connection;Lorg/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I
+ (L1java/sql/Connection;L1org/quartz/spi/OperableTrigger;Ljava/lang/String;Lorg/quartz/JobDetail;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 writeDataToBlob
  (Ljava/sql/ResultSet;I[B)Ljava/sql/Blob;
- (Ljava/sql/ResultSet;I[B)Ljava/sql/Blob;
+ (L1java/sql/ResultSet;I[B)L1java/sql/Blob; # @Generated(2,26)

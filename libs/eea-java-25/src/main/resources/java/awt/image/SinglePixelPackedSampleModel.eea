@@ -2,7 +2,7 @@ class java/awt/image/SinglePixelPackedSampleModel
 
 <init>
  (IIII[I)V
- (IIII[I)V
+ (IIII[1I)V # @Generated
 <init>
  (III[I)V
  (III[I)V
@@ -26,16 +26,16 @@ getBitOffsets
  ()[1I # @Generated
 getDataElements
  (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)Ljava/lang/Object;
- (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)Ljava/lang/Object;
+ (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)L1java/lang/Object; # @Generated(50)
 getPixel
  (II[ILjava/awt/image/DataBuffer;)[I
- (II[ILjava/awt/image/DataBuffer;)[1I # @Inherited(java.awt.image.SampleModel)
+ (II[IL1java/awt/image/DataBuffer;)[1I # @Overrides(java.awt.image.SampleModel)
 getPixels
  (IIII[ILjava/awt/image/DataBuffer;)[I
  (IIII[ILjava/awt/image/DataBuffer;)[1I # @Inherited(java.awt.image.SampleModel)
 getSample
  (IIILjava/awt/image/DataBuffer;)I
- (IIILjava/awt/image/DataBuffer;)I
+ (IIIL1java/awt/image/DataBuffer;)I # @Generated
 getSampleSize
  ()[I
  ()[1I # @Generated
@@ -47,13 +47,13 @@ setDataElements
  (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)V
 setPixel
  (II[ILjava/awt/image/DataBuffer;)V
- (II[ILjava/awt/image/DataBuffer;)V
+ (II[IL1java/awt/image/DataBuffer;)V # @Generated(6)
 setPixels
  (IIII[ILjava/awt/image/DataBuffer;)V
  (IIII[ILjava/awt/image/DataBuffer;)V
 setSample
  (IIIILjava/awt/image/DataBuffer;)V
- (IIIILjava/awt/image/DataBuffer;)V
+ (IIIIL1java/awt/image/DataBuffer;)V # @Generated
 setSamples
  (IIIII[ILjava/awt/image/DataBuffer;)V
  (IIIII[ILjava/awt/image/DataBuffer;)V

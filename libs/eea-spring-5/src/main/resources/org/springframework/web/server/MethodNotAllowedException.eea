@@ -5,16 +5,16 @@ class org/springframework/web/server/MethodNotAllowedException
  (Ljava/lang/String;Ljava/util/Collection<Lorg/springframework/http/HttpMethod;>;)V
 <init>
  (Lorg/springframework/http/HttpMethod;Ljava/util/Collection<Lorg/springframework/http/HttpMethod;>;)V
- (Lorg/springframework/http/HttpMethod;Ljava/util/Collection<Lorg/springframework/http/HttpMethod;>;)V
+ (L1org/springframework/http/HttpMethod;Ljava/util/Collection<Lorg/springframework/http/HttpMethod;>;)V # @Generated(2)
 getHeaders
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
- ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/lang/String;>; # @Inherited(org.springframework.web.server.ResponseStatusException)
 getHttpMethod
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getResponseHeaders
  ()Lorg/springframework/http/HttpHeaders;
- ()Lorg/springframework/http/HttpHeaders;
+ ()L1org/springframework/http/HttpHeaders; # @Inherited(org.springframework.web.server.ResponseStatusException)
 getSupportedMethods
  ()Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;
  ()Ljava/util/Set<Lorg/springframework/http/HttpMethod;>;

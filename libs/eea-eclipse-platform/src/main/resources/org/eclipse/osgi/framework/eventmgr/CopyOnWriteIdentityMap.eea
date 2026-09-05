@@ -8,7 +8,7 @@ super java/util/Map
 
 <init>
  (Lorg/eclipse/osgi/framework/eventmgr/CopyOnWriteIdentityMap<+TK;+TV;>;)V
- (Lorg/eclipse/osgi/framework/eventmgr/CopyOnWriteIdentityMap<+TK;+TV;>;)V
+ (L1org/eclipse/osgi/framework/eventmgr/CopyOnWriteIdentityMap<+TK;+TV;>;)V # @Generated(2)
 containsKey
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.util.Map)
@@ -20,13 +20,13 @@ entrySet
  ()L1java/util/Set<L1java/util/Map$Entry<TK;TV;>;>; # @Inherited(java.util.Map)
 get
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)T0V; # @Inherited(java.util.Map)
+ (L1java/lang/Object;)T0V; # @Overrides(java.util.Map)
 keySet
  ()Ljava/util/Set<TK;>;
  ()L1java/util/Set<TK;>; # @Inherited(java.util.Map)
 put
  (TK;TV;)TV;
- (TK;TV;)T0V; # @Inherited(java.util.Map)
+ (T1K;TV;)T0V; # @Overrides(java.util.Map)
 putAll
  (Ljava/util/Map<+TK;+TV;>;)V
  (L1java/util/Map<+TK;+TV;>;)V # @Inherited(java.util.Map)

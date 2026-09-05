@@ -5,16 +5,16 @@ addJobListener
  (L1org/quartz/JobListener;)V # @Inherited(org.quartz.ListenerManager)
 addJobListener
  (Lorg/quartz/JobListener;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;>;)V
- (Lorg/quartz/JobListener;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;>;)V
+ (L1org/quartz/JobListener;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;>;)V # @Generated(2)
 addJobListener
  (Lorg/quartz/JobListener;Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;)V
- (Lorg/quartz/JobListener;Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;)V
+ (L1org/quartz/JobListener;Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;)V # @Generated(2)
 addJobListener
  (Lorg/quartz/JobListener;[Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;)V
  (Lorg/quartz/JobListener;[Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;)V
 addJobListenerMatcher
  (Ljava/lang/String;Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;)Z
- (Ljava/lang/String;Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;)Z
+ (Ljava/lang/String;L1org/quartz/Matcher<Lorg/quartz/JobKey;>;)Z # @Generated(20)
 addSchedulerListener
  (Lorg/quartz/SchedulerListener;)V
  (L1org/quartz/SchedulerListener;)V # @Inherited(org.quartz.ListenerManager)
@@ -23,16 +23,16 @@ addTriggerListener
  (L1org/quartz/TriggerListener;)V # @Inherited(org.quartz.ListenerManager)
 addTriggerListener
  (Lorg/quartz/TriggerListener;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;>;)V
- (Lorg/quartz/TriggerListener;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;>;)V
+ (L1org/quartz/TriggerListener;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;>;)V # @Generated(2)
 addTriggerListener
  (Lorg/quartz/TriggerListener;Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;)V
- (Lorg/quartz/TriggerListener;Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;)V
+ (L1org/quartz/TriggerListener;L1org/quartz/Matcher<Lorg/quartz/TriggerKey;>;)V # @Generated(2,30)
 addTriggerListener
  (Lorg/quartz/TriggerListener;[Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;)V
  (Lorg/quartz/TriggerListener;[Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;)V
 addTriggerListenerMatcher
  (Ljava/lang/String;Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;)Z
- (Ljava/lang/String;Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;)Z
+ (Ljava/lang/String;L1org/quartz/Matcher<Lorg/quartz/TriggerKey;>;)Z # @Generated(20)
 getJobListener
  (Ljava/lang/String;)Lorg/quartz/JobListener;
  (Ljava/lang/String;)Lorg/quartz/JobListener;
@@ -41,10 +41,10 @@ getJobListenerMatchers
  (Ljava/lang/String;)Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;>;
 getJobListeners
  ()Ljava/util/List<Lorg/quartz/JobListener;>;
- ()Ljava/util/List<Lorg/quartz/JobListener;>;
+ ()L1java/util/List<Lorg/quartz/JobListener;>; # @Generated(3)
 getSchedulerListeners
  ()Ljava/util/List<Lorg/quartz/SchedulerListener;>;
- ()Ljava/util/List<Lorg/quartz/SchedulerListener;>;
+ ()L1java/util/List<Lorg/quartz/SchedulerListener;>; # @Generated(3)
 getTriggerListener
  (Ljava/lang/String;)Lorg/quartz/TriggerListener;
  (Ljava/lang/String;)Lorg/quartz/TriggerListener;
@@ -53,13 +53,13 @@ getTriggerListenerMatchers
  (Ljava/lang/String;)Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;>;
 getTriggerListeners
  ()Ljava/util/List<Lorg/quartz/TriggerListener;>;
- ()Ljava/util/List<Lorg/quartz/TriggerListener;>;
+ ()L1java/util/List<Lorg/quartz/TriggerListener;>; # @Generated(3)
 removeJobListener
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
 removeJobListenerMatcher
  (Ljava/lang/String;Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;)Z
- (Ljava/lang/String;Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;)Z
+ (Ljava/lang/String;L1org/quartz/Matcher<Lorg/quartz/JobKey;>;)Z # @Generated(20)
 removeSchedulerListener
  (Lorg/quartz/SchedulerListener;)Z
  (Lorg/quartz/SchedulerListener;)Z
@@ -68,10 +68,10 @@ removeTriggerListener
  (Ljava/lang/String;)Z
 removeTriggerListenerMatcher
  (Ljava/lang/String;Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;)Z
- (Ljava/lang/String;Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;)Z
+ (Ljava/lang/String;L1org/quartz/Matcher<Lorg/quartz/TriggerKey;>;)Z # @Generated(20)
 setJobListenerMatchers
  (Ljava/lang/String;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;>;)Z
- (Ljava/lang/String;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;>;)Z
+ (Ljava/lang/String;L1java/util/List<Lorg/quartz/Matcher<Lorg/quartz/JobKey;>;>;)Z # @Generated(20)
 setTriggerListenerMatchers
  (Ljava/lang/String;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;>;)Z
- (Ljava/lang/String;Ljava/util/List<Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;>;)Z
+ (Ljava/lang/String;L1java/util/List<Lorg/quartz/Matcher<Lorg/quartz/TriggerKey;>;>;)Z # @Generated(20)

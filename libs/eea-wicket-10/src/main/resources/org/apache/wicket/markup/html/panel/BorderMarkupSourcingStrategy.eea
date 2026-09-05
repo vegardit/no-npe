@@ -2,7 +2,7 @@ class org/apache/wicket/markup/html/panel/BorderMarkupSourcingStrategy
 
 getMarkup
  (Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/Component;)Lorg/apache/wicket/markup/IMarkupFragment;
- (Lorg/apache/wicket/MarkupContainer;Lorg/apache/wicket/Component;)L0org/apache/wicket/markup/IMarkupFragment;
+ (L1org/apache/wicket/MarkupContainer;Lorg/apache/wicket/Component;)L0org/apache/wicket/markup/IMarkupFragment; # @Overrides(org.apache.wicket.markup.html.panel.AssociatedMarkupSourcingStrategy)
 onComponentTagBody
  (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
- (Lorg/apache/wicket/Component;Lorg/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V
+ (Lorg/apache/wicket/Component;L1org/apache/wicket/markup/MarkupStream;Lorg/apache/wicket/markup/ComponentTag;)V # @Inherited(org.apache.wicket.markup.html.panel.AbstractMarkupSourcingStrategy)

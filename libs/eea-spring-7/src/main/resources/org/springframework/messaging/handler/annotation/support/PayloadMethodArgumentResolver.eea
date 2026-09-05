@@ -14,13 +14,13 @@ isEmptyPayload
  (Ljava/lang/Object;)Z
 resolveArgument
  (Lorg/springframework/core/MethodParameter;Lorg/springframework/messaging/Message<*>;)Ljava/lang/Object;
- (Lorg/springframework/core/MethodParameter;Lorg/springframework/messaging/Message<*>;)L0java/lang/Object; # @Inherited(org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolver)
+ (L1org/springframework/core/MethodParameter;L1org/springframework/messaging/Message<*>;)L0java/lang/Object; # @Overrides(org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolver)
 resolveTargetClass
  (Lorg/springframework/core/MethodParameter;Lorg/springframework/messaging/Message<*>;)Ljava/lang/Class<*>;
- (Lorg/springframework/core/MethodParameter;Lorg/springframework/messaging/Message<*>;)Ljava/lang/Class<*>;
+ (L1org/springframework/core/MethodParameter;Lorg/springframework/messaging/Message<*>;)Ljava/lang/Class<*>; # @Generated(2)
 supportsParameter
  (Lorg/springframework/core/MethodParameter;)Z
- (Lorg/springframework/core/MethodParameter;)Z
+ (L1org/springframework/core/MethodParameter;)Z # @Generated
 validate
  (Lorg/springframework/messaging/Message<*>;Lorg/springframework/core/MethodParameter;Ljava/lang/Object;)V
  (Lorg/springframework/messaging/Message<*>;Lorg/springframework/core/MethodParameter;Ljava/lang/Object;)V

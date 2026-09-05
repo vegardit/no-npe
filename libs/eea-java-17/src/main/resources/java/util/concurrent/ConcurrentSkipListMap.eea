@@ -17,7 +17,7 @@ super java/util/concurrent/ConcurrentNavigableMap
  (Ljava/util/Map<+TK;+TV;>;)V
 <init>
  (Ljava/util/SortedMap<TK;+TV;>;)V
- (Ljava/util/SortedMap<TK;+TV;>;)V
+ (L1java/util/SortedMap<TK;+TV;>;)V # @Generated(2)
 ceilingEntry
  (TK;)Ljava/util/Map$Entry<TK;TV;>;
  (TK;)Ljava/util/Map$Entry<TK;TV;>;
@@ -50,7 +50,7 @@ descendingKeySet
  ()Ljava/util/NavigableSet<TK;>;
 descendingMap
  ()Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
- ()Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
+ ()L1java/util/concurrent/ConcurrentNavigableMap<TK;TV;>; # @Generated(3)
 entrySet
  ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
  ()L1java/util/Set<L1java/util/Map$Entry<TK;TV;>;>; # @Inherited(java.util.AbstractMap)
@@ -83,7 +83,7 @@ headMap
  (TK;)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
 headMap
  (TK;Z)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
- (TK;Z)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
+ (T1K;Z)L1java/util/concurrent/ConcurrentNavigableMap<TK;TV;>; # @Generated(2,7)
 higherEntry
  (TK;)Ljava/util/Map$Entry<TK;TV;>;
  (TK;)Ljava/util/Map$Entry<TK;TV;>;
@@ -92,7 +92,7 @@ higherKey
  (TK;)TK;
 keySet
  ()Ljava/util/NavigableSet<TK;>;
- ()Ljava/util/NavigableSet<TK;>;
+ ()L1java/util/NavigableSet<TK;>; # @Generated(3)
 lastEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
  ()Ljava/util/Map$Entry<TK;TV;>;
@@ -107,10 +107,10 @@ lowerKey
  (TK;)TK;
 merge
  (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)TV;
- (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)T0V;
+ (T1K;T1V;L1java/util/function/BiFunction<-TV;-TV;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 navigableKeySet
  ()Ljava/util/NavigableSet<TK;>;
- ()Ljava/util/NavigableSet<TK;>;
+ ()L1java/util/NavigableSet<TK;>; # @Generated(3)
 pollFirstEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
  ()Ljava/util/Map$Entry<TK;TV;>;
@@ -119,10 +119,10 @@ pollLastEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
 put
  (TK;TV;)TV;
- (TK;TV;)T0V; # @Inherited(java.util.AbstractMap)
+ (TK;T1V;)T0V; # @Overrides(java.util.AbstractMap)
 putIfAbsent
  (TK;TV;)TV;
- (TK;TV;)T0V; # @Inherited(java.util.concurrent.ConcurrentMap)
+ (TK;T1V;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 remove
  (Ljava/lang/Object;)TV;
  (L0java/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)
@@ -131,10 +131,10 @@ remove
  (L0java/lang/Object;L0java/lang/Object;)Z # @Inherited(java.util.concurrent.ConcurrentMap)
 replace
  (TK;TV;)TV;
- (TK;TV;)T0V; # @Inherited(java.util.concurrent.ConcurrentMap)
+ (T1K;T1V;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 replace
  (TK;TV;TV;)Z
- (TK;TV;TV;)Z
+ (T1K;T1V;T1V;)Z # @Generated(2,5,8)
 replaceAll
  (Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)V
  (L1java/util/function/BiFunction<-TK;-TV;+TV;>;)V # @Inherited(java.util.concurrent.ConcurrentMap)
@@ -143,13 +143,13 @@ subMap
  (TK;TK;)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
 subMap
  (TK;ZTK;Z)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
- (TK;ZTK;Z)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
+ (T1K;ZT1K;Z)L1java/util/concurrent/ConcurrentNavigableMap<TK;TV;>; # @Generated(2,6,11)
 tailMap
  (TK;)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
  (TK;)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
 tailMap
  (TK;Z)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
- (TK;Z)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
+ (T1K;Z)L1java/util/concurrent/ConcurrentNavigableMap<TK;TV;>; # @Generated(2,7)
 values
  ()Ljava/util/Collection<TV;>;
  ()L1java/util/Collection<TV;>; # @Inherited(java.util.AbstractMap)

@@ -8,7 +8,7 @@ accept
  (Lnet/bytebuddy/jar/asm/ClassVisitor;I)V
 getInterfaceInternalNames
  ()Ljava/util/List<Ljava/lang/String;>;
- ()Ljava/util/List<Ljava/lang/String;>;
+ ()L1java/util/List<Ljava/lang/String;>; # @Generated(3)
 getInternalName
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -17,4 +17,4 @@ getSuperClassInternalName
  ()L0java/lang/String; # @Inherited(net.bytebuddy.utility.AsmClassReader)
 unwrap
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)T0T; # @Inherited(net.bytebuddy.utility.AsmClassReader)
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Overrides(net.bytebuddy.utility.AsmClassReader)

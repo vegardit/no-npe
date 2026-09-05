@@ -5,16 +5,16 @@ class org/eclipse/ui/ide/undo/DeleteResourcesOperation
  ([Lorg/eclipse/core/resources/IResource;Ljava/lang/String;Z)V
 appendDescriptiveText
  (Ljava/lang/StringBuffer;)V
- (Ljava/lang/StringBuffer;)V
+ (L1java/lang/StringBuffer;)V # @Inherited(org.eclipse.ui.ide.undo.AbstractWorkspaceOperation)
 computeExecutionStatus
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/core/runtime/IStatus; # @Inherited(org.eclipse.ui.ide.undo.AbstractWorkspaceOperation)
 computeRedoableStatus
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/core/runtime/IStatus; # @Inherited(org.eclipse.ui.ide.undo.AbstractWorkspaceOperation)
 computeUndoableStatus
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
- (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/core/runtime/IStatus; # @Inherited(org.eclipse.ui.ide.undo.AbstractWorkspaceOperation)
 doExecute
  (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V
  (Lorg/eclipse/core/runtime/IProgressMonitor;Lorg/eclipse/core/runtime/IAdaptable;)V

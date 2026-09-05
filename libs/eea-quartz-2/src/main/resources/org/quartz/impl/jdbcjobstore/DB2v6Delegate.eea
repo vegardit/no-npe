@@ -15,13 +15,13 @@ SELECT_NUM_TRIGGERS_FOR_JOB
 
 selectNumCalendars
  (Ljava/sql/Connection;)I
- (Ljava/sql/Connection;)I
+ (L1java/sql/Connection;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 selectNumJobs
  (Ljava/sql/Connection;)I
- (Ljava/sql/Connection;)I
+ (L1java/sql/Connection;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 selectNumTriggers
  (Ljava/sql/Connection;)I
- (Ljava/sql/Connection;)I
+ (L1java/sql/Connection;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)
 selectNumTriggersForJob
  (Ljava/sql/Connection;Lorg/quartz/JobKey;)I
- (Ljava/sql/Connection;Lorg/quartz/JobKey;)I
+ (L1java/sql/Connection;L1org/quartz/JobKey;)I # @Inherited(org.quartz.impl.jdbcjobstore.StdJDBCDelegate)

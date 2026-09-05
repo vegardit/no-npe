@@ -48,10 +48,10 @@ createDefaultDocument
  ()L1javax/swing/text/Document; # @Inherited(javax.swing.text.StyledEditorKit)
 createInputAttributes
  (Ljavax/swing/text/Element;Ljavax/swing/text/MutableAttributeSet;)V
- (Ljavax/swing/text/Element;Ljavax/swing/text/MutableAttributeSet;)V
+ (L1javax/swing/text/Element;L1javax/swing/text/MutableAttributeSet;)V # @Overrides(javax.swing.text.StyledEditorKit)
 deinstall
  (Ljavax/swing/JEditorPane;)V
- (Ljavax/swing/JEditorPane;)V
+ (L1javax/swing/JEditorPane;)V # @Inherited(javax.swing.text.StyledEditorKit)
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()L0javax/accessibility/AccessibleContext; # @Generated
@@ -81,13 +81,13 @@ getViewFactory
  ()L0javax/swing/text/ViewFactory; # @Inherited(javax.swing.text.StyledEditorKit)
 insertHTML
  (Ljavax/swing/text/html/HTMLDocument;ILjava/lang/String;IILjavax/swing/text/html/HTML$Tag;)V
- (Ljavax/swing/text/html/HTMLDocument;ILjava/lang/String;IILjavax/swing/text/html/HTML$Tag;)V
+ (L1javax/swing/text/html/HTMLDocument;ILjava/lang/String;IILjavax/swing/text/html/HTML$Tag;)V # @Generated(2)
 install
  (Ljavax/swing/JEditorPane;)V
- (Ljavax/swing/JEditorPane;)V
+ (L1javax/swing/JEditorPane;)V # @Inherited(javax.swing.text.StyledEditorKit)
 read
  (Ljava/io/Reader;Ljavax/swing/text/Document;I)V
- (Ljava/io/Reader;Ljavax/swing/text/Document;I)V
+ (L1java/io/Reader;L1javax/swing/text/Document;I)V # @Inherited(javax.swing.text.DefaultEditorKit)
 setDefaultCursor
  (Ljava/awt/Cursor;)V
  (Ljava/awt/Cursor;)V
@@ -99,4 +99,4 @@ setStyleSheet
  (Ljavax/swing/text/html/StyleSheet;)V
 write
  (Ljava/io/Writer;Ljavax/swing/text/Document;II)V
- (Ljava/io/Writer;Ljavax/swing/text/Document;II)V
+ (L1java/io/Writer;L1javax/swing/text/Document;II)V # @Inherited(javax.swing.text.DefaultEditorKit)

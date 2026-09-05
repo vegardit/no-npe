@@ -17,7 +17,7 @@ class org/springframework/web/server/ResponseStatusException
  (Lorg/springframework/http/HttpStatusCode;Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 getHeaders
  ()Lorg/springframework/http/HttpHeaders;
- ()Lorg/springframework/http/HttpHeaders;
+ ()L1org/springframework/http/HttpHeaders; # @Inherited(org.springframework.web.ErrorResponseException)
 getMessage
  ()Ljava/lang/String;
  ()L0java/lang/String; # @Inherited(org.springframework.web.ErrorResponseException)
@@ -26,7 +26,7 @@ getReason
  ()L0java/lang/String; # @Generated
 getResponseHeaders
  ()Lorg/springframework/http/HttpHeaders;
- ()Lorg/springframework/http/HttpHeaders;
+ ()L1org/springframework/http/HttpHeaders; # @Generated
 updateAndGetBody
  (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)Lorg/springframework/http/ProblemDetail;
  (Lorg/springframework/context/MessageSource;Ljava/util/Locale;)Lorg/springframework/http/ProblemDetail;

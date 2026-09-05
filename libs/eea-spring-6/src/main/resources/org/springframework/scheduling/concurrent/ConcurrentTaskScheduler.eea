@@ -11,7 +11,7 @@ execute
  (L1java/lang/Runnable;)V # @Inherited(org.springframework.scheduling.concurrent.ConcurrentTaskExecutor)
 getClock
  ()Ljava/time/Clock;
- ()Ljava/time/Clock;
+ ()L1java/time/Clock; # @Inherited(org.springframework.scheduling.TaskScheduler)
 schedule
  (Ljava/lang/Runnable;Ljava/time/Instant;)Ljava/util/concurrent/ScheduledFuture<*>;
  (Ljava/lang/Runnable;Ljava/time/Instant;)Ljava/util/concurrent/ScheduledFuture<*>;

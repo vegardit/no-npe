@@ -14,13 +14,13 @@ get
  (TK;Ljava/util/concurrent/Callable<+1TV;>;)T1V; # @Inherited(com.google.common.cache.Cache)
 getAllPresent
  (Ljava/lang/Iterable<+Ljava/lang/Object;>;)Lcom/google/common/collect/ImmutableMap<TK;TV;>;
- (Ljava/lang/Iterable<+Ljava/lang/Object;>;)L1com/google/common/collect/ImmutableMap<TK;TV;>; # @Inherited(com.google.common.cache.Cache)
+ (L1java/lang/Iterable<+Ljava/lang/Object;>;)L1com/google/common/collect/ImmutableMap<TK;TV;>; # @Overrides(com.google.common.cache.Cache)
 invalidate
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
 invalidateAll
  (Ljava/lang/Iterable<+Ljava/lang/Object;>;)V
- (Ljava/lang/Iterable<+Ljava/lang/Object;>;)V
+ (L1java/lang/Iterable<+Ljava/lang/Object;>;)V # @Generated(2)
 put
  (TK;TV;)V
  (TK;TV;)V

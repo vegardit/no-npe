@@ -5,7 +5,7 @@ class org/apache/commons/configuration2/DynamicCombinedConfiguration
  (Lorg/apache/commons/configuration2/tree/NodeCombiner;)V
 addConfiguration
  (Lorg/apache/commons/configuration2/Configuration;Ljava/lang/String;Ljava/lang/String;)V
- (Lorg/apache/commons/configuration2/Configuration;Ljava/lang/String;Ljava/lang/String;)V
+ (L1org/apache/commons/configuration2/Configuration;Ljava/lang/String;Ljava/lang/String;)V # @Inherited(org.apache.commons.configuration2.CombinedConfiguration)
 addEventListener
  <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventListener<-TT;>;)V
  <T:Lorg/apache/commons/configuration2/event/Event;>(Lorg/apache/commons/configuration2/event/EventType<TT;>;Lorg/apache/commons/configuration2/event/EventListener<-TT;>;)V
@@ -20,7 +20,7 @@ clearPropertyDirect
  (Ljava/lang/String;)V
 clearTreeInternal
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)L1java/lang/Object; # @Generated(21)
 configurationAt
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/HierarchicalConfiguration<Lorg/apache/commons/configuration2/tree/ImmutableNode;>;
@@ -149,7 +149,7 @@ getShort
  (Ljava/lang/String;S)S
 getSource
  (Ljava/lang/String;)Lorg/apache/commons/configuration2/Configuration;
- (Ljava/lang/String;)L0org/apache/commons/configuration2/Configuration; # @Inherited(org.apache.commons.configuration2.CombinedConfiguration)
+ (L1java/lang/String;)L0org/apache/commons/configuration2/Configuration; # @Inherited(org.apache.commons.configuration2.CombinedConfiguration)
 getString
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)Ljava/lang/String;
@@ -158,7 +158,7 @@ getString
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 getStringArray
  (Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/String;)[1Ljava/lang/String; # @Inherited(org.apache.commons.configuration2.AbstractConfiguration)
 interpolatedConfiguration
  ()Lorg/apache/commons/configuration2/Configuration;
  ()L1org/apache/commons/configuration2/Configuration; # @Inherited(org.apache.commons.configuration2.BaseHierarchicalConfiguration)
@@ -182,7 +182,7 @@ setLoggerName
  (Ljava/lang/String;)V
 setNodeCombiner
  (Lorg/apache/commons/configuration2/tree/NodeCombiner;)V
- (Lorg/apache/commons/configuration2/tree/NodeCombiner;)V
+ (L1org/apache/commons/configuration2/tree/NodeCombiner;)V # @Inherited(org.apache.commons.configuration2.CombinedConfiguration)
 setPropertyInternal
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V

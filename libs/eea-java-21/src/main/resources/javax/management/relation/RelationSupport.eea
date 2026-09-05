@@ -5,7 +5,7 @@ class javax/management/relation/RelationSupport
  (Ljava/lang/String;Ljavax/management/ObjectName;Ljava/lang/String;Ljavax/management/relation/RoleList;)V
 <init>
  (Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/MBeanServer;Ljava/lang/String;Ljavax/management/relation/RoleList;)V
- (Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/MBeanServer;Ljava/lang/String;Ljavax/management/relation/RoleList;)V
+ (Ljava/lang/String;Ljavax/management/ObjectName;L1javax/management/MBeanServer;Ljava/lang/String;Ljavax/management/relation/RoleList;)V # @Generated(49)
 getAllRoles
  ()Ljavax/management/relation/RoleResult;
  ()Ljavax/management/relation/RoleResult;
@@ -23,19 +23,19 @@ getRelationTypeName
  ()Ljava/lang/String;
 getRole
  (Ljava/lang/String;)Ljava/util/List<Ljavax/management/ObjectName;>;
- (Ljava/lang/String;)Ljava/util/List<Ljavax/management/ObjectName;>;
+ (L1java/lang/String;)Ljava/util/List<Ljavax/management/ObjectName;>; # @Generated(2)
 getRoleCardinality
  (Ljava/lang/String;)Ljava/lang/Integer;
- (Ljava/lang/String;)Ljava/lang/Integer;
+ (L1java/lang/String;)L1java/lang/Integer; # @Generated(2,21)
 getRoles
  ([Ljava/lang/String;)Ljavax/management/relation/RoleResult;
- ([Ljava/lang/String;)Ljavax/management/relation/RoleResult;
+ ([1Ljava/lang/String;)Ljavax/management/relation/RoleResult; # @Generated(2)
 handleMBeanUnregistration
  (Ljavax/management/ObjectName;Ljava/lang/String;)V
- (Ljavax/management/ObjectName;Ljava/lang/String;)V
+ (L1javax/management/ObjectName;L1java/lang/String;)V # @Generated(2,31)
 isInRelationService
  ()Ljava/lang/Boolean;
- ()Ljava/lang/Boolean;
+ ()L1java/lang/Boolean; # @Generated
 postRegister
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
@@ -47,10 +47,10 @@ retrieveAllRoles
  ()L1javax/management/relation/RoleList; # @Generated
 setRelationServiceManagementFlag
  (Ljava/lang/Boolean;)V
- (Ljava/lang/Boolean;)V
+ (L1java/lang/Boolean;)V # @Generated
 setRole
  (Ljavax/management/relation/Role;)V
- (Ljavax/management/relation/Role;)V
+ (L1javax/management/relation/Role;)V # @Generated
 setRoles
  (Ljavax/management/relation/RoleList;)Ljavax/management/relation/RoleResult;
- (Ljavax/management/relation/RoleList;)Ljavax/management/relation/RoleResult;
+ (L1javax/management/relation/RoleList;)Ljavax/management/relation/RoleResult; # @Generated(2)

@@ -2,10 +2,10 @@ class org/quartz/utils/counter/CounterManagerImpl
 
 <init>
  (Ljava/util/Timer;)V
- (Ljava/util/Timer;)V
+ (L1java/util/Timer;)V # @Generated
 createCounter
  (Lorg/quartz/utils/counter/CounterConfig;)Lorg/quartz/utils/counter/Counter;
- (Lorg/quartz/utils/counter/CounterConfig;)L1org/quartz/utils/counter/Counter; # @Inherited(org.quartz.utils.counter.CounterManager)
+ (L1org/quartz/utils/counter/CounterConfig;)L1org/quartz/utils/counter/Counter; # @Overrides(org.quartz.utils.counter.CounterManager)
 shutdownCounter
  (Lorg/quartz/utils/counter/Counter;)V
  (Lorg/quartz/utils/counter/Counter;)V

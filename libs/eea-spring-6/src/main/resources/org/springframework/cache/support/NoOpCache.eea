@@ -23,7 +23,7 @@ getName
  ()Ljava/lang/String;
 getNativeCache
  ()Ljava/lang/Object;
- ()Ljava/lang/Object;
+ ()L1java/lang/Object; # @Generated
 put
  (Ljava/lang/Object;Ljava/lang/Object;)V
  (Ljava/lang/Object;Ljava/lang/Object;)V
@@ -35,4 +35,4 @@ retrieve
  (Ljava/lang/Object;)L0java/util/concurrent/CompletableFuture<*>; # @Inherited(org.springframework.cache.Cache)
 retrieve
  <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/util/function/Supplier<Ljava/util/concurrent/CompletableFuture<TT;>;>;)Ljava/util/concurrent/CompletableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Object;Ljava/util/function/Supplier<Ljava/util/concurrent/CompletableFuture<TT;>;>;)Ljava/util/concurrent/CompletableFuture<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Object;L1java/util/function/Supplier<Ljava/util/concurrent/CompletableFuture<TT;>;>;)Ljava/util/concurrent/CompletableFuture<TT;>; # @Generated(42)

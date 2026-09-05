@@ -21,7 +21,7 @@ findAnnotationDeclaringClassForTypes
  (Ljava/util/List<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;>;Ljava/lang/Class<*>;)L0java/lang/Class<*>;
 getAnnotation
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/annotation/Annotation;Ljava/lang/Class<TA;>;)TA;
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/annotation/Annotation;Ljava/lang/Class<TA;>;)T0A;
+ <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/annotation/Annotation;L1java/lang/Class<TA;>;)T0A; # @Generated(73,96)
 getAnnotation
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class<TA;>;)TA;
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class<TA;>;)T0A; # @Generated(99)
@@ -93,10 +93,10 @@ isCandidateClass
  (Ljava/lang/Class<*>;Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
 isCandidateClass
  (Ljava/lang/Class<*>;Ljava/lang/String;)Z
- (Ljava/lang/Class<*>;Ljava/lang/String;)Z
+ (Ljava/lang/Class<*>;L1java/lang/String;)Z # @Generated(22)
 isCandidateClass
  (Ljava/lang/Class<*>;Ljava/util/Collection<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;>;)Z
- (Ljava/lang/Class<*>;Ljava/util/Collection<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;>;)Z
+ (Ljava/lang/Class<*>;L1java/util/Collection<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;>;)Z # @Generated(22)
 isInJavaLangAnnotationPackage
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -111,7 +111,7 @@ postProcessAnnotationAttributes
  (Ljava/lang/Object;Lorg/springframework/core/annotation/AnnotationAttributes;Z)V
 registerDefaultValues
  (Lorg/springframework/core/annotation/AnnotationAttributes;)V
- (Lorg/springframework/core/annotation/AnnotationAttributes;)V
+ (L1org/springframework/core/annotation/AnnotationAttributes;)V # @Generated
 synthesizeAnnotation
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)TA;
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)TA;
@@ -123,4 +123,4 @@ synthesizeAnnotation
  <A::Ljava/lang/annotation/Annotation;>(TA;Ljava/lang/reflect/AnnotatedElement;)TA;
 validateAnnotation
  (Ljava/lang/annotation/Annotation;)V
- (Ljava/lang/annotation/Annotation;)V
+ (L1java/lang/annotation/Annotation;)V # @Generated

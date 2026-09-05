@@ -2,31 +2,31 @@ class javax/management/relation/RelationService
 
 addRelation
  (Ljavax/management/ObjectName;)V
- (Ljavax/management/ObjectName;)V
+ (L1javax/management/ObjectName;)V # @Generated
 addRelationType
  (Ljavax/management/relation/RelationType;)V
- (Ljavax/management/relation/RelationType;)V
+ (L1javax/management/relation/RelationType;)V # @Generated
 checkRoleReading
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Integer;
- (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Integer;
+ (L1java/lang/String;L1java/lang/String;)Ljava/lang/Integer; # @Generated(2,20)
 checkRoleWriting
  (Ljavax/management/relation/Role;Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Integer;
- (Ljavax/management/relation/Role;Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Integer;
+ (L1javax/management/relation/Role;L1java/lang/String;L1java/lang/Boolean;)Ljava/lang/Integer; # @Generated(2,34,52)
 createRelation
  (Ljava/lang/String;Ljava/lang/String;Ljavax/management/relation/RoleList;)V
- (Ljava/lang/String;Ljava/lang/String;Ljavax/management/relation/RoleList;)V
+ (L1java/lang/String;L1java/lang/String;Ljavax/management/relation/RoleList;)V # @Generated(2,20)
 createRelationType
  (Ljava/lang/String;[Ljavax/management/relation/RoleInfo;)V
- (Ljava/lang/String;[Ljavax/management/relation/RoleInfo;)V
+ (L1java/lang/String;[1Ljavax/management/relation/RoleInfo;)V # @Generated(2,20)
 findAssociatedMBeans
  (Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map<Ljavax/management/ObjectName;Ljava/util/List<Ljava/lang/String;>;>;
- (Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)L1java/util/Map<Ljavax/management/ObjectName;Ljava/util/List<Ljava/lang/String;>;>;
+ (L1javax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)L1java/util/Map<Ljavax/management/ObjectName;Ljava/util/List<Ljava/lang/String;>;>; # @Generated(2,68)
 findReferencingRelations
  (Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;
- (Ljavax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)L1java/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>;
+ (L1javax/management/ObjectName;Ljava/lang/String;Ljava/lang/String;)L1java/util/Map<Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;>; # @Generated(2,68)
 findRelationsOfType
  (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
- (Ljava/lang/String;)L1java/util/List<Ljava/lang/String;>;
+ (L1java/lang/String;)L1java/util/List<Ljava/lang/String;>; # @Generated(2,21)
 getAllRelationIds
  ()Ljava/util/List<Ljava/lang/String;>;
  ()L1java/util/List<Ljava/lang/String;>; # @Generated(3)
@@ -35,43 +35,43 @@ getAllRelationTypeNames
  ()L1java/util/List<Ljava/lang/String;>; # @Generated(3)
 getAllRoles
  (Ljava/lang/String;)Ljavax/management/relation/RoleResult;
- (Ljava/lang/String;)Ljavax/management/relation/RoleResult;
+ (L1java/lang/String;)Ljavax/management/relation/RoleResult; # @Generated(2)
 getNotificationInfo
  ()[Ljavax/management/MBeanNotificationInfo;
- ()[Ljavax/management/MBeanNotificationInfo;
+ ()[1Ljavax/management/MBeanNotificationInfo; # @Generated(3)
 getReferencedMBeans
  (Ljava/lang/String;)Ljava/util/Map<Ljavax/management/ObjectName;Ljava/util/List<Ljava/lang/String;>;>;
- (Ljava/lang/String;)Ljava/util/Map<Ljavax/management/ObjectName;Ljava/util/List<Ljava/lang/String;>;>;
+ (L1java/lang/String;)Ljava/util/Map<Ljavax/management/ObjectName;Ljava/util/List<Ljava/lang/String;>;>; # @Generated(2)
 getRelationTypeName
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/String;)Ljava/lang/String; # @Generated(2)
 getRole
  (Ljava/lang/String;Ljava/lang/String;)Ljava/util/List<Ljavax/management/ObjectName;>;
  (Ljava/lang/String;Ljava/lang/String;)L1java/util/List<Ljavax/management/ObjectName;>;
 getRoleCardinality
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Integer;
- (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Integer;
+ (L1java/lang/String;L1java/lang/String;)Ljava/lang/Integer; # @Generated(2,20)
 getRoleInfo
  (Ljava/lang/String;Ljava/lang/String;)Ljavax/management/relation/RoleInfo;
- (Ljava/lang/String;Ljava/lang/String;)Ljavax/management/relation/RoleInfo;
+ (L1java/lang/String;L1java/lang/String;)Ljavax/management/relation/RoleInfo; # @Generated(2,20)
 getRoleInfos
  (Ljava/lang/String;)Ljava/util/List<Ljavax/management/relation/RoleInfo;>;
- (Ljava/lang/String;)Ljava/util/List<Ljavax/management/relation/RoleInfo;>;
+ (L1java/lang/String;)Ljava/util/List<Ljavax/management/relation/RoleInfo;>; # @Generated(2)
 getRoles
  (Ljava/lang/String;[Ljava/lang/String;)Ljavax/management/relation/RoleResult;
- (Ljava/lang/String;[Ljava/lang/String;)Ljavax/management/relation/RoleResult;
+ (L1java/lang/String;[1Ljava/lang/String;)Ljavax/management/relation/RoleResult; # @Generated(2,20)
 handleNotification
  (Ljavax/management/Notification;Ljava/lang/Object;)V
- (Ljavax/management/Notification;Ljava/lang/Object;)V
+ (L1javax/management/Notification;Ljava/lang/Object;)V # @Generated(2)
 hasRelation
  (Ljava/lang/String;)Ljava/lang/Boolean;
- (Ljava/lang/String;)Ljava/lang/Boolean;
+ (L1java/lang/String;)L1java/lang/Boolean; # @Generated(2,21)
 isRelation
  (Ljavax/management/ObjectName;)Ljava/lang/String;
  (Ljavax/management/ObjectName;)Ljava/lang/String;
 isRelationMBean
  (Ljava/lang/String;)Ljavax/management/ObjectName;
- (Ljava/lang/String;)L0javax/management/ObjectName;
+ (L1java/lang/String;)L0javax/management/ObjectName; # @Generated(2,21)
 postRegister
  (Ljava/lang/Boolean;)V
  (Ljava/lang/Boolean;)V
@@ -80,25 +80,25 @@ preRegister
  (Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;
 removeRelation
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
 removeRelationType
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
 sendRelationCreationNotification
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
 sendRelationRemovalNotification
  (Ljava/lang/String;Ljava/util/List<Ljavax/management/ObjectName;>;)V
- (Ljava/lang/String;Ljava/util/List<Ljavax/management/ObjectName;>;)V
+ (L1java/lang/String;Ljava/util/List<Ljavax/management/ObjectName;>;)V # @Generated(2)
 sendRoleUpdateNotification
  (Ljava/lang/String;Ljavax/management/relation/Role;Ljava/util/List<Ljavax/management/ObjectName;>;)V
- (Ljava/lang/String;Ljavax/management/relation/Role;Ljava/util/List<Ljavax/management/ObjectName;>;)V
+ (L1java/lang/String;L1javax/management/relation/Role;L1java/util/List<Ljavax/management/ObjectName;>;)V # @Generated(2,20,52)
 setRole
  (Ljava/lang/String;Ljavax/management/relation/Role;)V
- (Ljava/lang/String;Ljavax/management/relation/Role;)V
+ (L1java/lang/String;L1javax/management/relation/Role;)V # @Generated(2,20)
 setRoles
  (Ljava/lang/String;Ljavax/management/relation/RoleList;)Ljavax/management/relation/RoleResult;
- (Ljava/lang/String;Ljavax/management/relation/RoleList;)Ljavax/management/relation/RoleResult;
+ (L1java/lang/String;L1javax/management/relation/RoleList;)Ljavax/management/relation/RoleResult; # @Generated(2,20)
 updateRoleMap
  (Ljava/lang/String;Ljavax/management/relation/Role;Ljava/util/List<Ljavax/management/ObjectName;>;)V
- (Ljava/lang/String;Ljavax/management/relation/Role;Ljava/util/List<Ljavax/management/ObjectName;>;)V
+ (L1java/lang/String;L1javax/management/relation/Role;L1java/util/List<Ljavax/management/ObjectName;>;)V # @Generated(2,20,52)

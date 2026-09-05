@@ -8,31 +8,31 @@ class java/awt/image/RescaleOp
  ([F[FLjava/awt/RenderingHints;)V
 createCompatibleDestImage
  (Ljava/awt/image/BufferedImage;Ljava/awt/image/ColorModel;)Ljava/awt/image/BufferedImage;
- (Ljava/awt/image/BufferedImage;Ljava/awt/image/ColorModel;)L1java/awt/image/BufferedImage; # @Inherited(java.awt.image.BufferedImageOp)
+ (L1java/awt/image/BufferedImage;Ljava/awt/image/ColorModel;)L1java/awt/image/BufferedImage; # @Overrides(java.awt.image.BufferedImageOp)
 createCompatibleDestRaster
  (Ljava/awt/image/Raster;)Ljava/awt/image/WritableRaster;
- (Ljava/awt/image/Raster;)L1java/awt/image/WritableRaster; # @Inherited(java.awt.image.RasterOp)
+ (L1java/awt/image/Raster;)L1java/awt/image/WritableRaster; # @Overrides(java.awt.image.RasterOp)
 filter
  (Ljava/awt/image/BufferedImage;Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;
- (Ljava/awt/image/BufferedImage;Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;
+ (L1java/awt/image/BufferedImage;Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage; # @Generated(2)
 filter
  (Ljava/awt/image/Raster;Ljava/awt/image/WritableRaster;)Ljava/awt/image/WritableRaster;
  (Ljava/awt/image/Raster;Ljava/awt/image/WritableRaster;)Ljava/awt/image/WritableRaster;
 getBounds2D
  (Ljava/awt/image/BufferedImage;)Ljava/awt/geom/Rectangle2D;
- (Ljava/awt/image/BufferedImage;)Ljava/awt/geom/Rectangle2D;
+ (L1java/awt/image/BufferedImage;)Ljava/awt/geom/Rectangle2D; # @Generated(2)
 getBounds2D
  (Ljava/awt/image/Raster;)Ljava/awt/geom/Rectangle2D;
- (Ljava/awt/image/Raster;)Ljava/awt/geom/Rectangle2D;
+ (L1java/awt/image/Raster;)Ljava/awt/geom/Rectangle2D; # @Generated(2)
 getOffsets
  ([F)[F
- ([F)[F
+ ([F)[1F # @Generated(5)
 getPoint2D
  (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Ljava/awt/geom/Point2D;
- (Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)L1java/awt/geom/Point2D;
+ (L1java/awt/geom/Point2D;Ljava/awt/geom/Point2D;)L1java/awt/geom/Point2D; # @Generated(2,49)
 getRenderingHints
  ()Ljava/awt/RenderingHints;
  ()Ljava/awt/RenderingHints;
 getScaleFactors
  ([F)[F
- ([F)[F
+ ([F)[1F # @Generated(5)

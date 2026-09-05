@@ -9,25 +9,25 @@ determineCandidateConstructors
  (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
 determineRequiredStatus
  (Lorg/springframework/core/annotation/AnnotationAttributes;)Z
- (Lorg/springframework/core/annotation/AnnotationAttributes;)Z
+ (L1org/springframework/core/annotation/AnnotationAttributes;)Z # @Generated
 determineRequiredStatus
  (Lorg/springframework/core/annotation/MergedAnnotation<*>;)Z
- (Lorg/springframework/core/annotation/MergedAnnotation<*>;)Z
+ (L1org/springframework/core/annotation/MergedAnnotation<*>;)Z # @Generated(2)
 findAutowireCandidates
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/util/Map<Ljava/lang/String;TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/util/Map<Ljava/lang/String;TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1java/util/Map<Ljava/lang/String;TT;>; # @Generated(47)
 postProcessMergedBeanDefinition
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/Class<*>;Ljava/lang/String;)V
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/Class<*>;Ljava/lang/String;)V
 postProcessProperties
  (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
- (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
+ (Lorg/springframework/beans/PropertyValues;L1java/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Overrides(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 postProcessPropertyValues
  (Lorg/springframework/beans/PropertyValues;[Ljava/beans/PropertyDescriptor;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
  (Lorg/springframework/beans/PropertyValues;[Ljava/beans/PropertyDescriptor;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 processInjection
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L1java/lang/Object;)V # @Generated
 resetBeanDefinition
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

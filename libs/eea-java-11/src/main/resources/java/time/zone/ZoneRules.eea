@@ -5,14 +5,14 @@ of
  (L1java/time/ZoneOffset;)L1java/time/zone/ZoneRules; # @Generated(2,25)
 of
  (Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;Ljava/util/List<Ljava/time/zone/ZoneOffsetTransition;>;Ljava/util/List<Ljava/time/zone/ZoneOffsetTransition;>;Ljava/util/List<Ljava/time/zone/ZoneOffsetTransitionRule;>;)Ljava/time/zone/ZoneRules;
- (L1java/time/ZoneOffset;Ljava/time/ZoneOffset;Ljava/util/List<Ljava/time/zone/ZoneOffsetTransition;>;Ljava/util/List<Ljava/time/zone/ZoneOffsetTransition;>;Ljava/util/List<Ljava/time/zone/ZoneOffsetTransitionRule;>;)L1java/time/zone/ZoneRules;
+ (L1java/time/ZoneOffset;L1java/time/ZoneOffset;L1java/util/List<Ljava/time/zone/ZoneOffsetTransition;>;L1java/util/List<Ljava/time/zone/ZoneOffsetTransition;>;L1java/util/List<Ljava/time/zone/ZoneOffsetTransitionRule;>;)L1java/time/zone/ZoneRules; # @Generated(2,24,46,101,156,216)
 
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getDaylightSavings
  (Ljava/time/Instant;)Ljava/time/Duration;
- (Ljava/time/Instant;)Ljava/time/Duration;
+ (Ljava/time/Instant;)L1java/time/Duration; # @Generated(22)
 getOffset
  (Ljava/time/Instant;)Ljava/time/ZoneOffset;
  (Ljava/time/Instant;)Ljava/time/ZoneOffset;
@@ -30,7 +30,7 @@ getTransitionRules
  ()Ljava/util/List<Ljava/time/zone/ZoneOffsetTransitionRule;>;
 getTransitions
  ()Ljava/util/List<Ljava/time/zone/ZoneOffsetTransition;>;
- ()Ljava/util/List<Ljava/time/zone/ZoneOffsetTransition;>;
+ ()L1java/util/List<Ljava/time/zone/ZoneOffsetTransition;>; # @Generated(3)
 getValidOffsets
  (Ljava/time/LocalDateTime;)Ljava/util/List<Ljava/time/ZoneOffset;>;
  (Ljava/time/LocalDateTime;)Ljava/util/List<Ljava/time/ZoneOffset;>;

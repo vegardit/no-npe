@@ -17,7 +17,7 @@ class javax/swing/JFormattedTextField
  (Ljavax/swing/JFormattedTextField$AbstractFormatterFactory;Ljava/lang/Object;)V
 getActions
  ()[Ljavax/swing/Action;
- ()[Ljavax/swing/Action;
+ ()[1Ljavax/swing/Action; # @Inherited(javax.swing.JTextField)
 getFormatter
  ()Ljavax/swing/JFormattedTextField$AbstractFormatter;
  ()Ljavax/swing/JFormattedTextField$AbstractFormatter;
@@ -32,13 +32,13 @@ getValue
  ()Ljava/lang/Object;
 processFocusEvent
  (Ljava/awt/event/FocusEvent;)V
- (Ljava/awt/event/FocusEvent;)V
+ (L1java/awt/event/FocusEvent;)V # @Generated
 processInputMethodEvent
  (Ljava/awt/event/InputMethodEvent;)V
- (Ljava/awt/event/InputMethodEvent;)V
+ (L1java/awt/event/InputMethodEvent;)V # @Inherited(javax.swing.text.JTextComponent)
 setDocument
  (Ljavax/swing/text/Document;)V
- (Ljavax/swing/text/Document;)V
+ (L1javax/swing/text/Document;)V # @Inherited(javax.swing.JTextField)
 setFormatter
  (Ljavax/swing/JFormattedTextField$AbstractFormatter;)V
  (Ljavax/swing/JFormattedTextField$AbstractFormatter;)V

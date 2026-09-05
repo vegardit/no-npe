@@ -2,13 +2,13 @@ class org/eclipse/equinox/plurl/PlurlStreamHandlerBase
 
 equals
  (Ljava/net/URL;Ljava/net/URL;)Z
- (Ljava/net/URL;Ljava/net/URL;)Z
+ (L1java/net/URL;L1java/net/URL;)Z # @Inherited(java.net.URLStreamHandler)
 getHostAddress
  (Ljava/net/URL;)Ljava/net/InetAddress;
- (Ljava/net/URL;)Ljava/net/InetAddress;
+ (L1java/net/URL;)Ljava/net/InetAddress; # @Inherited(java.net.URLStreamHandler)
 hashCode
  (Ljava/net/URL;)I
- (Ljava/net/URL;)I
+ (L1java/net/URL;)I # @Inherited(java.net.URLStreamHandler)
 hostsEqual
  (Ljava/net/URL;Ljava/net/URL;)Z
  (Ljava/net/URL;Ljava/net/URL;)Z
@@ -23,13 +23,13 @@ parseURL
  (Lorg/eclipse/equinox/plurl/PlurlStreamHandler$PlurlSetter;Ljava/net/URL;Ljava/lang/String;II)V
 sameFile
  (Ljava/net/URL;Ljava/net/URL;)Z
- (Ljava/net/URL;Ljava/net/URL;)Z
+ (L1java/net/URL;L1java/net/URL;)Z # @Inherited(java.net.URLStreamHandler)
 setURL
  (Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
  (Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 setURL
  (Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/net/URL;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V # @Inherited(java.net.URLStreamHandler)
 toExternalForm
  (Ljava/net/URL;)Ljava/lang/String;
- (Ljava/net/URL;)L1java/lang/String; # @Inherited(java.net.URLStreamHandler)
+ (L1java/net/URL;)L1java/lang/String; # @Inherited(java.net.URLStreamHandler)

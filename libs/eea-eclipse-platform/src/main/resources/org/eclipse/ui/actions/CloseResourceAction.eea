@@ -33,13 +33,13 @@ getProblemsTitle
  ()Ljava/lang/String;
 getSelectedNonResources
  ()Ljava/util/List<*>;
- ()Ljava/util/List<*>;
+ ()L1java/util/List<*>; # @Inherited(org.eclipse.ui.actions.SelectionListenerAction)
 getSelectedResources
  ()Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;
- ()Ljava/util/List<+Lorg/eclipse/core/resources/IResource;>;
+ ()L1java/util/List<+Lorg/eclipse/core/resources/IResource;>; # @Inherited(org.eclipse.ui.actions.SelectionListenerAction)
 invokeOperation
  (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IProgressMonitor;)V
- (Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IProgressMonitor;)V # @Generated(2)
 resourceChanged
  (Lorg/eclipse/core/resources/IResourceChangeEvent;)V
  (L1org/eclipse/core/resources/IResourceChangeEvent;)V # @Inherited(org.eclipse.core.resources.IResourceChangeListener)

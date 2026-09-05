@@ -17,10 +17,10 @@ getPeriodDuration
  ()Ljava/time/Duration;
 getTimeUnit
  ()Ljava/util/concurrent/TimeUnit;
- ()Ljava/util/concurrent/TimeUnit;
+ ()L1java/util/concurrent/TimeUnit; # @Generated
 nextExecution
  (Lorg/springframework/scheduling/TriggerContext;)Ljava/time/Instant;
- (Lorg/springframework/scheduling/TriggerContext;)L0java/time/Instant; # @Inherited(org.springframework.scheduling.Trigger)
+ (L1org/springframework/scheduling/TriggerContext;)L0java/time/Instant; # @Overrides(org.springframework.scheduling.Trigger)
 setInitialDelay
  (Ljava/time/Duration;)V
  (Ljava/time/Duration;)V

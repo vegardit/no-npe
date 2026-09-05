@@ -71,7 +71,7 @@ _typeFactory
  (Lcom/fasterxml/jackson/databind/ObjectMapper;Lcom/fasterxml/jackson/core/JsonFactory;)V
 _assertNotNull
  (Ljava/lang/String;Ljava/lang/Object;)V
- (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;L1java/lang/Object;)V # @Generated(20)
 _checkInvalidCopy
  (Ljava/lang/Class<*>;)V
  (Ljava/lang/Class<*>;)V
@@ -80,7 +80,7 @@ _configAndWriteValue
  (Lcom/fasterxml/jackson/core/JsonGenerator;Ljava/lang/Object;)V
 _constructDefaultTypeResolverBuilder
  (Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTyping;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/jsontype/TypeResolverBuilder<*>;
- (Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTyping;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/jsontype/TypeResolverBuilder<*>;
+ (Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTyping;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)L1com/fasterxml/jackson/databind/jsontype/TypeResolverBuilder<*>; # @Generated(128)
 _convert
  (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Object;
  (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Object;
@@ -89,7 +89,7 @@ _findRootDeserializer
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
 _initForReading
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/core/JsonToken;
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/core/JsonToken;
+ (L1com/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)L1com/fasterxml/jackson/core/JsonToken; # @Generated(2,83)
 _newReader
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Lcom/fasterxml/jackson/databind/ObjectReader;
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)L1com/fasterxml/jackson/databind/ObjectReader; # @Generated(57)
@@ -119,7 +119,7 @@ _serializerProvider
  (Lcom/fasterxml/jackson/databind/SerializationConfig;)Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;
 _verifyNoTrailingTokens
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/JavaType;)V
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/JavaType;)V
+ (L1com/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/JavaType;)V # @Generated(2)
 _verifySchemaType
  (Lcom/fasterxml/jackson/core/FormatSchema;)V
  (Lcom/fasterxml/jackson/core/FormatSchema;)V
@@ -608,7 +608,7 @@ registerModule
  (L1com/fasterxml/jackson/databind/Module;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(2,42)
 registerModules
  (Ljava/lang/Iterable<+Lcom/fasterxml/jackson/databind/Module;>;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Ljava/lang/Iterable<+Lcom/fasterxml/jackson/databind/Module;>;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (L1java/lang/Iterable<+Lcom/fasterxml/jackson/databind/Module;>;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(2,65)
 registerModules
  ([Lcom/fasterxml/jackson/databind/Module;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  ([1L1com/fasterxml/jackson/databind/Module;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(43)
@@ -623,7 +623,7 @@ registerSubtypes
  ([1L1java/lang/Class<*>;)V
 setAccessorNaming
  (Lcom/fasterxml/jackson/databind/introspect/AccessorNamingStrategy$Provider;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/databind/introspect/AccessorNamingStrategy$Provider;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/databind/introspect/AccessorNamingStrategy$Provider;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(78)
 setAnnotationIntrospector
  (Lcom/fasterxml/jackson/databind/AnnotationIntrospector;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (L1com/fasterxml/jackson/databind/AnnotationIntrospector;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(58)
@@ -635,7 +635,7 @@ setBase64Variant
  (L1com/fasterxml/jackson/core/Base64Variant;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(45)
 setCacheProvider
  (Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/databind/cfg/CacheProvider;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (L1com/fasterxml/jackson/databind/cfg/CacheProvider;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(2,53)
 setConfig
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (L1com/fasterxml/jackson/databind/DeserializationConfig;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(57)
@@ -644,40 +644,40 @@ setConfig
  (L1com/fasterxml/jackson/databind/SerializationConfig;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(55)
 setConstructorDetector
  (Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/databind/cfg/ConstructorDetector;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(59)
 setDateFormat
  (Ljava/text/DateFormat;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (L1java/text/DateFormat;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(25)
 setDefaultAttributes
  (Lcom/fasterxml/jackson/databind/cfg/ContextAttributes;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/databind/cfg/ContextAttributes;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/databind/cfg/ContextAttributes;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(57)
 setDefaultLeniency
  (Ljava/lang/Boolean;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Ljava/lang/Boolean;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Ljava/lang/Boolean;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(22)
 setDefaultMergeable
  (Ljava/lang/Boolean;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Ljava/lang/Boolean;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Ljava/lang/Boolean;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(22)
 setDefaultPrettyPrinter
  (Lcom/fasterxml/jackson/core/PrettyPrinter;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (L1com/fasterxml/jackson/core/PrettyPrinter;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(45)
 setDefaultPropertyInclusion
  (Lcom/fasterxml/jackson/annotation/JsonInclude$Include;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/annotation/JsonInclude$Include;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/annotation/JsonInclude$Include;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(57)
 setDefaultPropertyInclusion
  (Lcom/fasterxml/jackson/annotation/JsonInclude$Value;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/annotation/JsonInclude$Value;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/annotation/JsonInclude$Value;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(55)
 setDefaultSetterInfo
  (Lcom/fasterxml/jackson/annotation/JsonSetter$Value;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/annotation/JsonSetter$Value;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/annotation/JsonSetter$Value;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(54)
 setDefaultTyping
  (Lcom/fasterxml/jackson/databind/jsontype/TypeResolverBuilder<*>;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (L0com/fasterxml/jackson/databind/jsontype/TypeResolverBuilder<*>;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(67)
 setDefaultVisibility
  (Lcom/fasterxml/jackson/annotation/JsonAutoDetect$Value;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/annotation/JsonAutoDetect$Value;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/annotation/JsonAutoDetect$Value;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(58)
 setEnumNamingStrategy
  (Lcom/fasterxml/jackson/databind/EnumNamingStrategy;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/databind/EnumNamingStrategy;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/databind/EnumNamingStrategy;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(54)
 setFilterProvider
  (Lcom/fasterxml/jackson/databind/ser/FilterProvider;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (L1com/fasterxml/jackson/databind/ser/FilterProvider;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(54)
@@ -707,7 +707,7 @@ setNodeFactory
  (L1com/fasterxml/jackson/databind/node/JsonNodeFactory;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(56)
 setPolymorphicTypeValidator
  (Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/ObjectMapper;
- (Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+ (Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)L1com/fasterxml/jackson/databind/ObjectMapper; # @Generated(69)
 setPropertyInclusion
  (Lcom/fasterxml/jackson/annotation/JsonInclude$Value;)Lcom/fasterxml/jackson/databind/ObjectMapper;
  (L1com/fasterxml/jackson/annotation/JsonInclude$Value;)L1com/fasterxml/jackson/databind/ObjectMapper;

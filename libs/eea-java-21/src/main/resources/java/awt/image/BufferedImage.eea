@@ -2,10 +2,10 @@ class java/awt/image/BufferedImage
 
 <init>
  (IIILjava/awt/image/IndexColorModel;)V
- (IIILjava/awt/image/IndexColorModel;)V
+ (IIIL1java/awt/image/IndexColorModel;)V # @Generated
 <init>
  (Ljava/awt/image/ColorModel;Ljava/awt/image/WritableRaster;ZLjava/util/Hashtable<**>;)V
- (Ljava/awt/image/ColorModel;Ljava/awt/image/WritableRaster;ZLjava/util/Hashtable<**>;)V
+ (L1java/awt/image/ColorModel;L1java/awt/image/WritableRaster;ZLjava/util/Hashtable<**>;)V # @Generated(2,29)
 addTileObserver
  (Ljava/awt/image/TileObserver;)V
  (Ljava/awt/image/TileObserver;)V
@@ -23,10 +23,10 @@ getColorModel
  ()Ljava/awt/image/ColorModel;
 getData
  ()Ljava/awt/image/Raster;
- ()Ljava/awt/image/Raster;
+ ()L1java/awt/image/Raster; # @Generated
 getData
  (Ljava/awt/Rectangle;)Ljava/awt/image/Raster;
- (Ljava/awt/Rectangle;)Ljava/awt/image/Raster;
+ (L1java/awt/Rectangle;)L1java/awt/image/Raster; # @Generated(2,23)
 getGraphics
  ()Ljava/awt/Graphics;
  ()Ljava/awt/Graphics;
@@ -35,7 +35,7 @@ getHeight
  (Ljava/awt/image/ImageObserver;)I
 getProperty
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L1java/lang/Object; # @Inherited(java.awt.image.RenderedImage)
+ (L1java/lang/String;)L1java/lang/Object; # @Overrides(java.awt.image.RenderedImage)
 getProperty
  (Ljava/lang/String;Ljava/awt/image/ImageObserver;)Ljava/lang/Object;
  (Ljava/lang/String;Ljava/awt/image/ImageObserver;)Ljava/lang/Object;
@@ -59,7 +59,7 @@ getSources
  ()L0java/util/Vector<Ljava/awt/image/RenderedImage;>; # @Generated(3)
 getSubimage
  (IIII)Ljava/awt/image/BufferedImage;
- (IIII)Ljava/awt/image/BufferedImage;
+ (IIII)L1java/awt/image/BufferedImage; # @Generated
 getTile
  (II)Ljava/awt/image/Raster;
  (II)Ljava/awt/image/Raster;
@@ -77,7 +77,7 @@ removeTileObserver
  (Ljava/awt/image/TileObserver;)V
 setData
  (Ljava/awt/image/Raster;)V
- (Ljava/awt/image/Raster;)V
+ (L1java/awt/image/Raster;)V # @Generated
 setRGB
  (IIII[III)V
  (IIII[III)V

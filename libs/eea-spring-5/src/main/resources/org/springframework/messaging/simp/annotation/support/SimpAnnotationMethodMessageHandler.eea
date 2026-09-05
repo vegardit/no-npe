@@ -15,10 +15,10 @@ getConversionService
  ()Lorg/springframework/core/convert/ConversionService;
 getDestination
  (Lorg/springframework/messaging/Message<*>;)Ljava/lang/String;
- (Lorg/springframework/messaging/Message<*>;)L0java/lang/String; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
+ (L1org/springframework/messaging/Message<*>;)L0java/lang/String; # @Overrides(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getDirectLookupDestinations
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;)Ljava/util/Set<Ljava/lang/String;>;
- (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;)L1java/util/Set<Ljava/lang/String;>;
+ (L1org/springframework/messaging/simp/SimpMessageMappingInfo;)L1java/util/Set<Ljava/lang/String;>; # @Generated(2,62)
 getHandlerMethodLogger
  ()Lorg/apache/commons/logging/Log;
  ()L0org/apache/commons/logging/Log; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
@@ -36,7 +36,7 @@ getMappingForMethod
  (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo; # @Generated(49)
 getMatchingMapping
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/simp/SimpMessageMappingInfo;
- (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/Message<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo;
+ (L1org/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/Message<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo; # @Generated(2,104)
 getMessageConverter
  ()Lorg/springframework/messaging/converter/MessageConverter;
  ()Lorg/springframework/messaging/converter/MessageConverter;
@@ -51,7 +51,7 @@ getValidator
  ()L0org/springframework/validation/Validator; # @Generated
 handleMatch
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V
- (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V
+ (L1org/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V # @Generated(2)
 initArgumentResolvers
  ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;
  ()L1java/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>; # @Generated(3)
@@ -87,4 +87,4 @@ setValidator
  (Lorg/springframework/validation/Validator;)V
 stop
  (Ljava/lang/Runnable;)V
- (Ljava/lang/Runnable;)V
+ (L1java/lang/Runnable;)V # @Inherited(org.springframework.context.SmartLifecycle)
