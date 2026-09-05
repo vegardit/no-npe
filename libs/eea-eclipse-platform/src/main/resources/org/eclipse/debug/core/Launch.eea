@@ -5,10 +5,10 @@ class org/eclipse/debug/core/Launch
  (Lorg/eclipse/debug/core/ILaunchConfiguration;Ljava/lang/String;Lorg/eclipse/debug/core/model/ISourceLocator;)V
 addDebugTarget
  (Lorg/eclipse/debug/core/model/IDebugTarget;)V
- (L1org/eclipse/debug/core/model/IDebugTarget;)V # @Inherited(org.eclipse.debug.core.ILaunch)
+ (L0org/eclipse/debug/core/model/IDebugTarget;)V # @Overrides(org.eclipse.debug.core.ILaunch)
 addProcess
  (Lorg/eclipse/debug/core/model/IProcess;)V
- (L1org/eclipse/debug/core/model/IProcess;)V # @Inherited(org.eclipse.debug.core.ILaunch)
+ (L0org/eclipse/debug/core/model/IProcess;)V # @Overrides(org.eclipse.debug.core.ILaunch)
 addProcesses
  ([Lorg/eclipse/debug/core/model/IProcess;)V
  ([0Lorg/eclipse/debug/core/model/IProcess;)V # @Generated(2)
@@ -71,10 +71,10 @@ launchRemoved
  (L1org/eclipse/debug/core/ILaunch;)V # @Inherited(org.eclipse.debug.core.ILaunchListener)
 removeDebugTarget
  (Lorg/eclipse/debug/core/model/IDebugTarget;)V
- (L1org/eclipse/debug/core/model/IDebugTarget;)V # @Inherited(org.eclipse.debug.core.ILaunch)
+ (L0org/eclipse/debug/core/model/IDebugTarget;)V # @Overrides(org.eclipse.debug.core.ILaunch)
 removeProcess
  (Lorg/eclipse/debug/core/model/IProcess;)V
- (L1org/eclipse/debug/core/model/IProcess;)V # @Inherited(org.eclipse.debug.core.ILaunch)
+ (L0org/eclipse/debug/core/model/IProcess;)V # @Overrides(org.eclipse.debug.core.ILaunch)
 setAttribute
  (Ljava/lang/String;Ljava/lang/String;)V
  (L1java/lang/String;L0java/lang/String;)V # @Inherited(org.eclipse.debug.core.ILaunch)

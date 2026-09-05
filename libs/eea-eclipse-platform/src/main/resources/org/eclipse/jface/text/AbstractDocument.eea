@@ -17,7 +17,7 @@ addPosition
  (L1org/eclipse/jface/text/Position;)V # @Inherited(org.eclipse.jface.text.IDocument)
 addPositionCategory
  (Ljava/lang/String;)V
- (L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.IDocument)
+ (L0java/lang/String;)V # @Overrides(org.eclipse.jface.text.IDocument)
 addPositionUpdater
  (Lorg/eclipse/jface/text/IPositionUpdater;)V
  (L1org/eclipse/jface/text/IPositionUpdater;)V # @Inherited(org.eclipse.jface.text.IDocument)
@@ -47,10 +47,10 @@ computePartitioning
  (L1java/lang/String;IIZ)[L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
 containsPosition
  (Ljava/lang/String;II)Z
- (L1java/lang/String;II)Z # @Inherited(org.eclipse.jface.text.IDocument)
+ (L0java/lang/String;II)Z # @Overrides(org.eclipse.jface.text.IDocument)
 containsPositionCategory
  (Ljava/lang/String;)Z
- (L1java/lang/String;)Z # @Inherited(org.eclipse.jface.text.IDocument)
+ (L0java/lang/String;)Z # @Overrides(org.eclipse.jface.text.IDocument)
 doFireDocumentChanged
  (Lorg/eclipse/jface/text/DocumentEvent;)V
  (Lorg/eclipse/jface/text/DocumentEvent;)V
@@ -86,7 +86,7 @@ getActiveRewriteSession
  ()L0org/eclipse/jface/text/DocumentRewriteSession; # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 getContentType
  (I)Ljava/lang/String;
- (I)L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
+ (I)L0java/lang/String; # @Overrides(org.eclipse.jface.text.IDocument)
 getContentType
  (Ljava/lang/String;IZ)Ljava/lang/String;
  (L1java/lang/String;IZ)L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
@@ -110,7 +110,7 @@ getDocumentPartitioningListeners
  ()L1java/util/List<Lorg/eclipse/jface/text/IDocumentPartitioningListener;>; # @Generated(3)
 getLegalContentTypes
  ()[Ljava/lang/String;
- ()[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocument)
+ ()[0L1java/lang/String; # @Overrides(org.eclipse.jface.text.IDocument)
 getLegalContentTypes
  (Ljava/lang/String;)[Ljava/lang/String;
  (L1java/lang/String;)[1L1java/lang/String; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
@@ -128,7 +128,7 @@ getLineInformationOfOffset
  (I)L1org/eclipse/jface/text/IRegion; # @Inherited(org.eclipse.jface.text.IDocument)
 getPartition
  (I)Lorg/eclipse/jface/text/ITypedRegion;
- (I)L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocument)
+ (I)L0org/eclipse/jface/text/ITypedRegion; # @Overrides(org.eclipse.jface.text.IDocument)
 getPartition
  (Ljava/lang/String;IZ)Lorg/eclipse/jface/text/ITypedRegion;
  (L1java/lang/String;IZ)L1org/eclipse/jface/text/ITypedRegion; # @Inherited(org.eclipse.jface.text.IDocumentExtension3)
@@ -173,13 +173,13 @@ removeDocumentRewriteSessionListener
  (L1org/eclipse/jface/text/IDocumentRewriteSessionListener;)V # @Inherited(org.eclipse.jface.text.IDocumentExtension4)
 removePosition
  (Ljava/lang/String;Lorg/eclipse/jface/text/Position;)V
- (L1java/lang/String;L1org/eclipse/jface/text/Position;)V # @Inherited(org.eclipse.jface.text.IDocument)
+ (L1java/lang/String;L0org/eclipse/jface/text/Position;)V # @Overrides(org.eclipse.jface.text.IDocument)
 removePosition
  (Lorg/eclipse/jface/text/Position;)V
  (L1org/eclipse/jface/text/Position;)V # @Inherited(org.eclipse.jface.text.IDocument)
 removePositionCategory
  (Ljava/lang/String;)V
- (L1java/lang/String;)V # @Inherited(org.eclipse.jface.text.IDocument)
+ (L0java/lang/String;)V # @Overrides(org.eclipse.jface.text.IDocument)
 removePositionUpdater
  (Lorg/eclipse/jface/text/IPositionUpdater;)V
  (L1org/eclipse/jface/text/IPositionUpdater;)V # @Inherited(org.eclipse.jface.text.IDocument)

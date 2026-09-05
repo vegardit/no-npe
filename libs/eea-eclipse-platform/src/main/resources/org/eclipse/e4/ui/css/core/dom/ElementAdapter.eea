@@ -15,7 +15,7 @@ appendChild
  (L1org/w3c/dom/Node;)L1org/w3c/dom/Node; # @Inherited(org.w3c.dom.Node)
 cloneNode
  (Z)Lorg/w3c/dom/Node;
- (Z)L1org/w3c/dom/Node; # @Inherited(org.w3c.dom.Node)
+ (Z)L0org/w3c/dom/Node; # @Overrides(org.w3c.dom.Node)
 compareDocumentPosition
  (Lorg/w3c/dom/Node;)S
  (Lorg/w3c/dom/Node;)S
@@ -48,10 +48,10 @@ getElement
  (Ljava/lang/Object;)Lorg/w3c/dom/Element;
 getElementsByTagName
  (Ljava/lang/String;)Lorg/w3c/dom/NodeList;
- (Ljava/lang/String;)L1org/w3c/dom/NodeList; # @Inherited(org.w3c.dom.Element)
+ (Ljava/lang/String;)L0org/w3c/dom/NodeList; # @Overrides(org.w3c.dom.Element)
 getElementsByTagNameNS
  (Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/NodeList;
- (Ljava/lang/String;Ljava/lang/String;)L1org/w3c/dom/NodeList; # @Inherited(org.w3c.dom.Element)
+ (Ljava/lang/String;Ljava/lang/String;)L0org/w3c/dom/NodeList; # @Overrides(org.w3c.dom.Element)
 getFeature
  (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
  (Ljava/lang/String;Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.w3c.dom.Node)
@@ -111,7 +111,7 @@ hasAttributeNS
  (Ljava/lang/String;Ljava/lang/String;)Z
 insertBefore
  (Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
- (L1org/w3c/dom/Node;L0org/w3c/dom/Node;)L1org/w3c/dom/Node; # @Inherited(org.w3c.dom.Node)
+ (L1org/w3c/dom/Node;L0org/w3c/dom/Node;)L0org/w3c/dom/Node; # @Overrides(org.w3c.dom.Node)
 isDefaultNamespace
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -150,10 +150,10 @@ removeAttributeNode
  (Lorg/w3c/dom/Attr;)L0org/w3c/dom/Attr; # @Generated(21)
 removeChild
  (Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
- (L1org/w3c/dom/Node;)L1org/w3c/dom/Node; # @Inherited(org.w3c.dom.Node)
+ (L1org/w3c/dom/Node;)L0org/w3c/dom/Node; # @Overrides(org.w3c.dom.Node)
 replaceChild
  (Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
- (L1org/w3c/dom/Node;L1org/w3c/dom/Node;)L1org/w3c/dom/Node; # @Inherited(org.w3c.dom.Node)
+ (L1org/w3c/dom/Node;L1org/w3c/dom/Node;)L0org/w3c/dom/Node; # @Overrides(org.w3c.dom.Node)
 setAttribute
  (Ljava/lang/String;Ljava/lang/String;)V
  (Ljava/lang/String;Ljava/lang/String;)V

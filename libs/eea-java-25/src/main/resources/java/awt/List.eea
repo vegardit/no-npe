@@ -17,7 +17,7 @@ addItem
  (Ljava/lang/String;I)V
 addItemListener
  (Ljava/awt/event/ItemListener;)V
- (L1java/awt/event/ItemListener;)V # @Inherited(java.awt.ItemSelectable)
+ (L0java/awt/event/ItemListener;)V # @Overrides(java.awt.ItemSelectable)
 getAccessibleContext
  ()Ljavax/accessibility/AccessibleContext;
  ()Ljavax/accessibility/AccessibleContext;
@@ -92,7 +92,7 @@ removeActionListener
  (L1java/awt/event/ActionListener;)V
 removeItemListener
  (Ljava/awt/event/ItemListener;)V
- (L1java/awt/event/ItemListener;)V # @Inherited(java.awt.ItemSelectable)
+ (L0java/awt/event/ItemListener;)V # @Overrides(java.awt.ItemSelectable)
 replaceItem
  (Ljava/lang/String;I)V
  (Ljava/lang/String;I)V
