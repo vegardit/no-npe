@@ -2,7 +2,7 @@ class org/apache/commons/io/FileUtils
 
 EMPTY_FILE_ARRAY
  [Ljava/io/File;
- [1Ljava/io/File;
+ [1Ljava/io/File; # @Generated(1)
 ONE_EB_BI
  Ljava/math/BigInteger;
  L1java/math/BigInteger;
@@ -36,16 +36,16 @@ ONE_ZB
 
 byteCountToDisplaySize
  (J)Ljava/lang/String;
- (J)L1java/lang/String;
+ (J)L1java/lang/String; # @Generated
 byteCountToDisplaySize
  (Ljava/lang/Number;)Ljava/lang/String;
- (L1java/lang/Number;)L1java/lang/String;
+ (L1java/lang/Number;)L1java/lang/String; # @Generated(2,21)
 byteCountToDisplaySize
  (Ljava/math/BigInteger;)Ljava/lang/String;
- (L1java/math/BigInteger;)L1java/lang/String;
+ (L1java/math/BigInteger;)L1java/lang/String; # @Generated(2,25)
 checksum
  (Ljava/io/File;Ljava/util/zip/Checksum;)Ljava/util/zip/Checksum;
- (L1java/io/File;L1java/util/zip/Checksum;)L1java/util/zip/Checksum;
+ (L1java/io/File;L1java/util/zip/Checksum;)L1java/util/zip/Checksum; # @Generated(2,16)
 checksumCRC32
  (Ljava/io/File;)J
  (L1java/io/File;)J
@@ -60,7 +60,7 @@ contentEqualsIgnoreEOL
  (L0java/io/File;L0java/io/File;L0java/lang/String;)Z
 convertFileCollectionToFileArray
  (Ljava/util/Collection<Ljava/io/File;>;)[Ljava/io/File;
- (L1java/util/Collection<Ljava/io/File;>;)[1Ljava/io/File;
+ (L1java/util/Collection<Ljava/io/File;>;)[1Ljava/io/File; # @Generated(2)
 copyDirectory
  (Ljava/io/File;Ljava/io/File;)V
  (Ljava/io/File;Ljava/io/File;)V
@@ -72,13 +72,13 @@ copyDirectory
  (L1java/io/File;L1java/io/File;L0java/io/FileFilter;Z)V
 copyDirectory
  (Ljava/io/File;Ljava/io/File;Ljava/io/FileFilter;Z[Ljava/nio/file/CopyOption;)V
- (L1java/io/File;L1java/io/File;L0java/io/FileFilter;Z[Ljava/nio/file/CopyOption;)V
+ (L1java/io/File;L1java/io/File;L0java/io/FileFilter;Z[Ljava/nio/file/CopyOption;)V # @Generated(2,16)
 copyDirectory
  (Ljava/io/File;Ljava/io/File;Z)V
  (L1java/io/File;L1java/io/File;Z)V
 copyDirectoryToDirectory
  (Ljava/io/File;Ljava/io/File;)V
- (L1java/io/File;L1java/io/File;)V
+ (L1java/io/File;L1java/io/File;)V # @Generated(2)
 copyFile
  (Ljava/io/File;Ljava/io/File;)V
  (Ljava/io/File;Ljava/io/File;)V
@@ -156,13 +156,13 @@ getFile
  ([Ljava/lang/String;)L1java/io/File;
 getTempDirectory
  ()Ljava/io/File;
- ()L1java/io/File;
+ ()L1java/io/File; # @Generated
 getTempDirectoryPath
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 getUserDirectory
  ()Ljava/io/File;
- ()L1java/io/File;
+ ()L1java/io/File; # @Generated
 getUserDirectoryPath
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -279,7 +279,7 @@ listFiles
  (Ljava/io/File;Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)Ljava/util/Collection<Ljava/io/File;>;
 listFiles
  (Ljava/io/File;[Ljava/lang/String;Z)Ljava/util/Collection<Ljava/io/File;>;
- (Ljava/io/File;[Ljava/lang/String;Z)L1java/util/Collection<Ljava/io/File;>;
+ (Ljava/io/File;[Ljava/lang/String;Z)L1java/util/Collection<Ljava/io/File;>; # @Generated(37)
 listFilesAndDirs
  (Ljava/io/File;Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)Ljava/util/Collection<Ljava/io/File;>;
  (Ljava/io/File;Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)Ljava/util/Collection<Ljava/io/File;>;
@@ -303,19 +303,19 @@ moveToDirectory
  (Ljava/io/File;Ljava/io/File;Z)V
 newOutputStream
  (Ljava/io/File;Z)Ljava/io/OutputStream;
- (L1java/io/File;Z)L1java/io/OutputStream;
+ (L1java/io/File;Z)L1java/io/OutputStream; # @Generated(2)
 openInputStream
  (Ljava/io/File;)Ljava/io/FileInputStream;
- (L1java/io/File;)L1java/io/FileInputStream;
+ (L1java/io/File;)L1java/io/FileInputStream; # @Generated(2,17)
 openOutputStream
  (Ljava/io/File;)Ljava/io/FileOutputStream;
- (L1java/io/File;)L1java/io/FileOutputStream;
+ (L1java/io/File;)L1java/io/FileOutputStream; # @Generated(17)
 openOutputStream
  (Ljava/io/File;Z)Ljava/io/FileOutputStream;
- (L1java/io/File;Z)L1java/io/FileOutputStream;
+ (L1java/io/File;Z)L1java/io/FileOutputStream; # @Generated(2,18)
 readFileToByteArray
  (Ljava/io/File;)[B
- (L1java/io/File;)[1B
+ (L1java/io/File;)[1B # @Generated(2,17)
 readFileToString
  (Ljava/io/File;)Ljava/lang/String;
  (L1java/io/File;)L1java/lang/String;
@@ -360,7 +360,7 @@ toURLs
  ([Ljava/io/File;)[1Ljava/net/URL;
 touch
  (Ljava/io/File;)V
- (L1java/io/File;)V
+ (L1java/io/File;)V # @Generated
 waitFor
  (Ljava/io/File;I)Z
  (Ljava/io/File;I)Z

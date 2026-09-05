@@ -2,10 +2,10 @@ class org/quartz/impl/jdbcjobstore/JobStoreSupport
 
 LOCK_STATE_ACCESS
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 LOCK_TRIGGER_ACCESS
  Ljava/lang/String;
- L1java/lang/String;
+ L1java/lang/String; # @Generated
 
 calendarCache
  Ljava/util/HashMap<Ljava/lang/String;Lorg/quartz/Calendar;>;
@@ -37,7 +37,7 @@ tablePrefix
 
 acquireNextTrigger
  (Ljava/sql/Connection;JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
- (Ljava/sql/Connection;JIJ)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>;
+ (Ljava/sql/Connection;JIJ)L1java/util/List<Lorg/quartz/spi/OperableTrigger;>; # @Generated(27)
 acquireNextTriggers
  (JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
  (JIJ)Ljava/util/List<Lorg/quartz/spi/OperableTrigger;>;
@@ -97,7 +97,7 @@ executeWithoutLock
  <T:Ljava/lang/Object;>(Lorg/quartz/impl/jdbcjobstore/JobStoreSupport$TransactionCallback<TT;>;)TT;
 findFailedInstances
  (Ljava/sql/Connection;)Ljava/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
- (Ljava/sql/Connection;)L1java/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>;
+ (Ljava/sql/Connection;)L1java/util/List<Lorg/quartz/impl/jdbcjobstore/SchedulerStateRecord;>; # @Generated(24)
 getAttributeRestoringConnection
  (Ljava/sql/Connection;)Ljava/sql/Connection;
  (Ljava/sql/Connection;)Ljava/sql/Connection;
@@ -127,7 +127,7 @@ getDriverDelegateInitString
  ()Ljava/lang/String;
 getFiredTriggerRecordId
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Generated
 getInstanceId
  ()Ljava/lang/String;
  ()Ljava/lang/String;
@@ -307,7 +307,7 @@ resumeTrigger
  (Lorg/quartz/TriggerKey;)V
 resumeTriggerGroup
  (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
- (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/Set<Ljava/lang/String;>;
+ (Ljava/sql/Connection;Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)L1java/util/Set<Ljava/lang/String;>; # @Generated(88)
 resumeTriggers
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
  (Lorg/quartz/impl/matchers/GroupMatcher<Lorg/quartz/TriggerKey;>;)Ljava/util/Set<Ljava/lang/String;>;
