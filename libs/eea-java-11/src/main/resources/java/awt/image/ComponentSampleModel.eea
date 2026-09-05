@@ -18,7 +18,7 @@ createCompatibleSampleModel
  (II)L1java/awt/image/SampleModel; # @Inherited(java.awt.image.SampleModel)
 createDataBuffer
  ()Ljava/awt/image/DataBuffer;
- ()L1java/awt/image/DataBuffer; # @Inherited(java.awt.image.SampleModel)
+ ()L1java/awt/image/DataBuffer; # @Keep Constructor validation makes the data-type switch exhaustive.
 createSubsetSampleModel
  ([I)Ljava/awt/image/SampleModel;
  ([I)L1java/awt/image/SampleModel; # @Inherited(java.awt.image.SampleModel)

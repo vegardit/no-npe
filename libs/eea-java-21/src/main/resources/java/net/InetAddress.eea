@@ -24,13 +24,13 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAddress
  ()[B
- ()[1B
+ ()[1B # @Imported Constructible InetAddress implementations override the base stub with an address.
 getCanonicalHostName
  ()Ljava/lang/String;
  ()L1java/lang/String;
 getHostAddress
  ()Ljava/lang/String;
- ()L1java/lang/String;
+ ()L1java/lang/String; # @Imported Constructible InetAddress implementations override the base stub with an address string.
 getHostName
  ()Ljava/lang/String;
  ()L1java/lang/String;

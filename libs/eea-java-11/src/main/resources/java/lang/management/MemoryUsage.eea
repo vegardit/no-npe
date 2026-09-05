@@ -2,7 +2,7 @@ class java/lang/management/MemoryUsage
 
 from
  (Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/MemoryUsage;
- (Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/MemoryUsage;
+ (Ljavax/management/openmbean/CompositeData;)Ljava/lang/management/MemoryUsage; # @PolyNull @Keep Null input returns null; non-null input returns a MemoryUsage or throws.
 
 toString
  ()Ljava/lang/String;

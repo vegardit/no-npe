@@ -21,22 +21,22 @@ newKeySet
  (L1java/util/Map<+TK;+TV;>;)V
 compute
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (T1K;L1java/util/function/BiFunction<-TK;-TV;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+ (T1K;L1java/util/function/BiFunction<-T1K;-T0V;+TV;>;)TV; # @Imported The callback key is non-null; EEA approximates return nullness through V.
 computeIfAbsent
  (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
- (T1K;L1java/util/function/Function<-TK;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+ (T1K;L1java/util/function/Function<-T1K;+TV;>;)TV; # @Imported The callback key is non-null; EEA approximates return nullness through V.
 computeIfPresent
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (T1K;L1java/util/function/BiFunction<-TK;-TV;+TV;>;)T0V;
+ (T1K;L1java/util/function/BiFunction<-T1K;-T1V;+T0V;>;)T0V; # @Imported The callback key and current value are non-null; its result and the method return may be null.
 contains
  (Ljava/lang/Object;)Z
  (L1java/lang/Object;)Z
 containsKey
  (Ljava/lang/Object;)Z
- (L1java/lang/Object;)Z # @Overrides(java.util.AbstractMap)
+ (L1java/lang/Object;)Z # @Imported ConcurrentHashMap rejects null keys.
 containsValue
  (Ljava/lang/Object;)Z
- (L1java/lang/Object;)Z # @Overrides(java.util.AbstractMap)
+ (L1java/lang/Object;)Z # @Imported ConcurrentHashMap rejects null values.
 elements
  ()Ljava/util/Enumeration<TV;>;
  ()L1java/util/Enumeration<TV;>; # @Generated(3)
@@ -93,13 +93,13 @@ merge
  (T1K;T1V;L1java/util/function/BiFunction<-TV;-TV;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 put
  (TK;TV;)TV;
- (T1K;T1V;)T0V; # @Overrides(java.util.AbstractMap)
+ (T1K;T1V;)T0V; # @Generated(9) @Overrides(java.util.AbstractMap)
 putAll
  (Ljava/util/Map<+TK;+TV;>;)V
  (L1java/util/Map<+TK;+TV;>;)V # @Inherited(java.util.AbstractMap)
 putIfAbsent
  (TK;TV;)TV;
- (T1K;T1V;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+ (T1K;T1V;)T0V; # @Generated(9) @Overrides(java.util.concurrent.ConcurrentMap)
 reduce
  <U:Ljava/lang/Object;>(JLjava/util/function/BiFunction<-TK;-TV;+TU;>;Ljava/util/function/BiFunction<-TU;-TU;+TU;>;)TU;
  <U:Ljava/lang/Object;>(JL1java/util/function/BiFunction<-TK;-TV;+TU;>;L1java/util/function/BiFunction<-TU;-TU;+TU;>;)TU; # @Generated(25,70)
@@ -159,10 +159,10 @@ reduceValuesToLong
  (JL1java/util/function/ToLongFunction<-TV;>;JL1java/util/function/LongBinaryOperator;)J # @Generated(3,45)
 remove
  (Ljava/lang/Object;)TV;
- (L1java/lang/Object;)T0V; # @Overrides(java.util.AbstractMap)
+ (L1java/lang/Object;)T0V; # @Imported ConcurrentHashMap rejects null keys.
 remove
  (Ljava/lang/Object;Ljava/lang/Object;)Z
- (L1java/lang/Object;L0java/lang/Object;)Z # @Overrides(java.util.concurrent.ConcurrentMap)
+ (L1java/lang/Object;L0java/lang/Object;)Z # @Imported ConcurrentHashMap rejects null keys; a null value cannot match.
 replace
  (TK;TV;)TV;
  (T1K;T1V;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)

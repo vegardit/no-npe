@@ -2,7 +2,7 @@ class org/eclipse/jface/viewers/IColorProvider
 
 getBackground
  (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Color;
- (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Color;
+ (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Color; # @Keep Viewer elements are non-null; implementations define return nullness.
 getForeground
  (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Color;
- (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Color;
+ (L1java/lang/Object;)Lorg/eclipse/swt/graphics/Color; # @Keep Viewer elements are non-null; implementations define return nullness.

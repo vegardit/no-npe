@@ -47,13 +47,13 @@ ofEntries
 
 compute
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (TK;L1java/util/function/BiFunction<-TK;-T0V;+T0V;>;)T0V;
+ (TK;L1java/util/function/BiFunction<-TK;-T0V;+TV;>;)TV; # @Imported Return nullness follows the remapping function; EEA approximates this through V.
 computeIfAbsent
  (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
- (TK;L1java/util/function/Function<-TK;+T0V;>;)TV;
+ (TK;L1java/util/function/Function<-TK;+TV;>;)TV; # @Imported Return nullness follows the mapping function; EEA approximates this through V.
 computeIfPresent
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (TK;L1java/util/function/BiFunction<-TK;-TV;+T0V;>;)T0V;
+ (TK;L1java/util/function/BiFunction<-TK;-T1V;+T0V;>;)T0V; # @Imported The generator misses -T1V: the callback runs only when the current value is non-null.
 containsKey
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z
@@ -74,7 +74,7 @@ get
  (Ljava/lang/Object;)T0V;
 getOrDefault
  (Ljava/lang/Object;TV;)TV;
- (Ljava/lang/Object;TV;)TV;
+ (Ljava/lang/Object;TV;)TV; # @Imported Return nullness follows V through either the stored or default value.
 keySet
  ()Ljava/util/Set<TK;>;
  ()L1java/util/Set<TK;>;

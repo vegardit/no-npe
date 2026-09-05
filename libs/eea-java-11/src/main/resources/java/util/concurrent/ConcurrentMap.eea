@@ -8,10 +8,10 @@ super java/util/Map
 
 compute
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (TK;L1java/util/function/BiFunction<-TK;-T0V;+T0V;>;)T0V; # @Inherited(java.util.Map)
+ (TK;L1java/util/function/BiFunction<-TK;-T0V;+TV;>;)TV; # @Keep Return nullness follows the remapping function; EEA approximates this through V.
 computeIfAbsent
  (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
- (TK;L1java/util/function/Function<-TK;+T0V;>;)TV; # @Inherited(java.util.Map)
+ (TK;L1java/util/function/Function<-TK;+TV;>;)TV; # @Keep Return nullness follows the mapping function; EEA approximates this through V.
 computeIfPresent
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
  (TK;L1java/util/function/BiFunction<-TK;-T1V;+T0V;>;)T0V; # @Inherited(java.util.Map)

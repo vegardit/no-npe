@@ -8,7 +8,7 @@ invokeAll
  <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;JL1java/util/concurrent/TimeUnit;)L1java/util/List<L1java/util/concurrent/Future<TT;>;>; # @Inherited(java.util.concurrent.ExecutorService)
 invokeAny
  <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)TT;
- <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)TT; # @Inherited(java.util.concurrent.ExecutorService)
+ <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)TT; # @Keep Return nullness follows T; doInvokeAny is called with timed=false, so the TimeoutException fallback is unreachable.
 invokeAny
  <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;JLjava/util/concurrent/TimeUnit;)TT;
  <T:Ljava/lang/Object;>(L1java/util/Collection<+L1java/util/concurrent/Callable<TT;>;>;JL1java/util/concurrent/TimeUnit;)TT; # @Inherited(java.util.concurrent.ExecutorService)

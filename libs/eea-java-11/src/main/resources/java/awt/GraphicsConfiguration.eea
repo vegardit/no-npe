@@ -8,10 +8,10 @@ createCompatibleImage
  (III)L1java/awt/image/BufferedImage;
 createCompatibleVolatileImage
  (II)Ljava/awt/image/VolatileImage;
- (II)L1java/awt/image/VolatileImage;
+ (II)L1java/awt/image/VolatileImage; # @Keep The delegated call uses no capabilities, so the caught AWTException is unreachable.
 createCompatibleVolatileImage
  (III)Ljava/awt/image/VolatileImage;
- (III)L1java/awt/image/VolatileImage;
+ (III)L1java/awt/image/VolatileImage; # @Keep The delegated call uses no capabilities, so the caught AWTException is unreachable.
 createCompatibleVolatileImage
  (IILjava/awt/ImageCapabilities;)Ljava/awt/image/VolatileImage;
  (IILjava/awt/ImageCapabilities;)L1java/awt/image/VolatileImage;

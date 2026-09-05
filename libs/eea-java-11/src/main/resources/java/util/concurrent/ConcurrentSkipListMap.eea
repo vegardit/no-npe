@@ -32,13 +32,13 @@ comparator
  ()Ljava/util/Comparator<-TK;>;
 compute
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (TK;L1java/util/function/BiFunction<-TK;-T0V;+T0V;>;)T0V; # @Inherited(java.util.concurrent.ConcurrentMap)
+ (T1K;L1java/util/function/BiFunction<-T1K;-T0V;+TV;>;)TV; # @Keep Keys passed to the method and callback are non-null; EEA approximates return nullness through V.
 computeIfAbsent
  (TK;Ljava/util/function/Function<-TK;+TV;>;)TV;
- (TK;L1java/util/function/Function<-TK;+T0V;>;)TV; # @Inherited(java.util.concurrent.ConcurrentMap)
+ (T1K;L1java/util/function/Function<-T1K;+TV;>;)TV; # @Keep Keys passed to the method and callback are non-null; EEA approximates return nullness through V.
 computeIfPresent
  (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)TV;
- (TK;Ljava/util/function/BiFunction<-TK;-TV;+TV;>;)T0V;
+ (T1K;L1java/util/function/BiFunction<-T1K;-T1V;+T0V;>;)T0V; # @Keep Keys and the callback's current value are non-null; its result and the method return may be null.
 containsKey
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)

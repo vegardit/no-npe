@@ -2,7 +2,7 @@ class org/eclipse/jface/viewers/ITableLabelProvider
 
 getColumnImage
  (Ljava/lang/Object;I)Lorg/eclipse/swt/graphics/Image;
- (L0java/lang/Object;I)L0org/eclipse/swt/graphics/Image;
+ (L0java/lang/Object;I)Lorg/eclipse/swt/graphics/Image; # @Keep The API may pass null when no input is set; return nullness is implementation-specific.
 getColumnText
  (Ljava/lang/Object;I)Ljava/lang/String;
- (L0java/lang/Object;I)L0java/lang/String;
+ (L0java/lang/Object;I)Ljava/lang/String; # @Keep The API may pass null when no input is set; return nullness is implementation-specific.

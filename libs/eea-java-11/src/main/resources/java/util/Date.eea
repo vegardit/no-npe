@@ -22,7 +22,7 @@ before
  (L1java/util/Date;)Z
 clone
  ()Ljava/lang/Object;
- ()L1java/lang/Object; # @Inherited(java.lang.Object)
+ ()L1java/lang/Object; # @Keep All cloned objects implement Cloneable, so the fallback is unreachable.
 compareTo
  (Ljava/util/Date;)I
  (L1java/util/Date;)I # @Generated
