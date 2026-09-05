@@ -23,7 +23,7 @@ doGetTransaction
  ()L1java/lang/Object; # @Generated
 doResume
  (Ljava/lang/Object;Ljava/lang/Object;)V
- (Ljava/lang/Object;Ljava/lang/Object;)V
+ (L0java/lang/Object;L1java/lang/Object;)V # @Overrides(org.springframework.transaction.support.AbstractPlatformTransactionManager)
 doRollback
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
  (L1org/springframework/transaction/support/DefaultTransactionStatus;)V # @Generated
@@ -56,28 +56,28 @@ isExistingTransaction
  (L1java/lang/Object;)Z # @Generated
 obtainEntityManagerFactory
  ()Ljakarta/persistence/EntityManagerFactory;
- ()Ljakarta/persistence/EntityManagerFactory;
+ ()L0jakarta/persistence/EntityManagerFactory; # @Generated
 setBeanFactory
  (Lorg/springframework/beans/factory/BeanFactory;)V
  (Lorg/springframework/beans/factory/BeanFactory;)V
 setDataSource
  (Ljavax/sql/DataSource;)V
- (Ljavax/sql/DataSource;)V
+ (L0javax/sql/DataSource;)V # @Generated
 setEntityManagerFactory
  (Ljakarta/persistence/EntityManagerFactory;)V
- (Ljakarta/persistence/EntityManagerFactory;)V
+ (L0jakarta/persistence/EntityManagerFactory;)V # @Generated
 setEntityManagerInitializer
  (Ljava/util/function/Consumer<Ljakarta/persistence/EntityManager;>;)V
  (Ljava/util/function/Consumer<Ljakarta/persistence/EntityManager;>;)V
 setJpaDialect
  (Lorg/springframework/orm/jpa/JpaDialect;)V
- (Lorg/springframework/orm/jpa/JpaDialect;)V
+ (L0org/springframework/orm/jpa/JpaDialect;)V # @Generated
 setJpaProperties
  (Ljava/util/Properties;)V
- (Ljava/util/Properties;)V
+ (L0java/util/Properties;)V # @Generated
 setJpaPropertyMap
  (Ljava/util/Map<Ljava/lang/String;*>;)V
- (Ljava/util/Map<Ljava/lang/String;*>;)V
+ (L0java/util/Map<Ljava/lang/String;*>;)V # @Generated(2)
 setPersistenceUnitName
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated

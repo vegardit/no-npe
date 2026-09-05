@@ -9,16 +9,16 @@ super org/springframework/core/codec/AbstractDecoder
  ([Lorg/springframework/util/MimeType;)V
 canDecode
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
+ (L1org/springframework/core/ResolvableType;L0org/springframework/util/MimeType;)Z # @Overrides(org.springframework.core.codec.AbstractDecoder)
 decode
  (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Ljava/lang/Object;>;
- (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Ljava/lang/Object;>;
+ (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;L1org/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Ljava/lang/Object;>; # @Generated(82,123,158)
 decode
  (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/Object;
- (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L1java/lang/Object;
+ (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)L1java/lang/Object; # @Generated(90,125,179)
 decodeToMono
  (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<Ljava/lang/Object;>;
- (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<Ljava/lang/Object;>;
+ (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<Ljava/lang/Object;>; # @Generated(123,158)
 getUnmarshallerProcessor
  ()Ljava/util/function/Function<Ljakarta/xml/bind/Unmarshaller;Ljakarta/xml/bind/Unmarshaller;>;
  ()Ljava/util/function/Function<Ljakarta/xml/bind/Unmarshaller;Ljakarta/xml/bind/Unmarshaller;>;

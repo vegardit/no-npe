@@ -5,7 +5,7 @@ beginTransaction
  (Ljakarta/persistence/EntityManager;Lorg/springframework/transaction/TransactionDefinition;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 cleanupTransaction
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L0java/lang/Object;)V # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 convertHibernateAccessException
  (Lorg/hibernate/HibernateException;)Lorg/springframework/dao/DataAccessException;
  (Lorg/hibernate/HibernateException;)Lorg/springframework/dao/DataAccessException;
@@ -26,7 +26,7 @@ prepareTransaction
  (Ljakarta/persistence/EntityManager;ZLjava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)
 setJdbcExceptionTranslator
  (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
- (Lorg/springframework/jdbc/support/SQLExceptionTranslator;)V
+ (L0org/springframework/jdbc/support/SQLExceptionTranslator;)V # @Generated
 translateExceptionIfPossible
  (Ljava/lang/RuntimeException;)Lorg/springframework/dao/DataAccessException;
  (Ljava/lang/RuntimeException;)L0org/springframework/dao/DataAccessException; # @Inherited(org.springframework.orm.jpa.DefaultJpaDialect)

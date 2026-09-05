@@ -193,7 +193,7 @@ WWW_AUTHENTICATE
 
 encodeBasicAuth
  (Ljava/lang/String;Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/String;Ljava/nio/charset/Charset;)L1java/lang/String;
+ (Ljava/lang/String;Ljava/lang/String;L0java/nio/charset/Charset;)L1java/lang/String; # @Generated(38,65)
 formatHeaders
  (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)Ljava/lang/String;
  (L1org/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)Ljava/lang/String; # @Generated(2)
@@ -205,14 +205,14 @@ readOnlyHttpHeaders
  (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)L1org/springframework/http/HttpHeaders;
 writableHttpHeaders
  (Lorg/springframework/http/HttpHeaders;)Lorg/springframework/http/HttpHeaders;
- (Lorg/springframework/http/HttpHeaders;)Lorg/springframework/http/HttpHeaders;
+ (Lorg/springframework/http/HttpHeaders;)Lorg/springframework/http/HttpHeaders; # @Generated(PolyNull)
 
 <init>
  (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
  (Lorg/springframework/util/MultiValueMap<Ljava/lang/String;Ljava/lang/String;>;)V
 add
  (Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;L0java/lang/String;)V # @Generated(20)
 addAll
  (Ljava/lang/String;Ljava/util/List<+Ljava/lang/String;>;)V
  (Ljava/lang/String;Ljava/util/List<+Ljava/lang/String;>;)V
@@ -350,7 +350,7 @@ remove
  (Ljava/lang/Object;)Ljava/util/List<Ljava/lang/String;>;
 set
  (Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;L0java/lang/String;)V # @Generated(20)
 setAccept
  (Ljava/util/List<Lorg/springframework/http/MediaType;>;)V
  (Ljava/util/List<Lorg/springframework/http/MediaType;>;)V
@@ -374,7 +374,7 @@ setAccessControlAllowMethods
  (Ljava/util/List<Lorg/springframework/http/HttpMethod;>;)V
 setAccessControlAllowOrigin
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setAccessControlExposeHeaders
  (Ljava/util/List<Ljava/lang/String;>;)V
  (Ljava/util/List<Ljava/lang/String;>;)V
@@ -386,7 +386,7 @@ setAccessControlRequestHeaders
  (Ljava/util/List<Ljava/lang/String;>;)V
 setAccessControlRequestMethod
  (Lorg/springframework/http/HttpMethod;)V
- (Lorg/springframework/http/HttpMethod;)V
+ (L0org/springframework/http/HttpMethod;)V # @Generated
 setAll
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
  (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
@@ -401,13 +401,13 @@ setBasicAuth
  (Ljava/lang/String;Ljava/lang/String;)V
 setBasicAuth
  (Ljava/lang/String;Ljava/lang/String;Ljava/nio/charset/Charset;)V
- (Ljava/lang/String;Ljava/lang/String;Ljava/nio/charset/Charset;)V
+ (Ljava/lang/String;Ljava/lang/String;L0java/nio/charset/Charset;)V # @Generated(38)
 setBearerAuth
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 setCacheControl
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setCacheControl
  (Lorg/springframework/http/CacheControl;)V
  (L1org/springframework/http/CacheControl;)V # @Generated
@@ -422,13 +422,13 @@ setContentDisposition
  (L1org/springframework/http/ContentDisposition;)V # @Generated
 setContentDispositionFormData
  (Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;L0java/lang/String;)V # @Generated(20)
 setContentLanguage
  (Ljava/util/Locale;)V
- (Ljava/util/Locale;)V
+ (L0java/util/Locale;)V # @Generated
 setContentType
  (Lorg/springframework/http/MediaType;)V
- (Lorg/springframework/http/MediaType;)V
+ (L0org/springframework/http/MediaType;)V # @Generated
 setDate
  (Ljava/lang/String;J)V
  (Ljava/lang/String;J)V
@@ -440,7 +440,7 @@ setDate
  (Ljava/time/ZonedDateTime;)V
 setETag
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setExpires
  (Ljava/time/Instant;)V
  (Ljava/time/Instant;)V
@@ -449,7 +449,7 @@ setExpires
  (Ljava/time/ZonedDateTime;)V
 setHost
  (Ljava/net/InetSocketAddress;)V
- (Ljava/net/InetSocketAddress;)V
+ (L0java/net/InetSocketAddress;)V # @Generated
 setIfMatch
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -485,19 +485,19 @@ setLastModified
  (L1java/time/ZonedDateTime;)V # @Generated
 setLocation
  (Ljava/net/URI;)V
- (Ljava/net/URI;)V
+ (L0java/net/URI;)V # @Generated
 setOrigin
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setPragma
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setRange
  (Ljava/util/List<Lorg/springframework/http/HttpRange;>;)V
  (Ljava/util/List<Lorg/springframework/http/HttpRange;>;)V
 setUpgrade
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 setVary
  (Ljava/util/List<Ljava/lang/String;>;)V
  (Ljava/util/List<Ljava/lang/String;>;)V

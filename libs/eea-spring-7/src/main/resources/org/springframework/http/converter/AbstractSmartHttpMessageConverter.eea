@@ -17,10 +17,10 @@ super org/springframework/http/converter/SmartHttpMessageConverter
  ([Lorg/springframework/http/MediaType;)V
 canRead
  (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.AbstractHttpMessageConverter)
 canWrite
  (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
- (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
+ (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.AbstractHttpMessageConverter)
 readInternal
  (Ljava/lang/Class<+TT;>;Lorg/springframework/http/HttpInputMessage;)TT;
  (Ljava/lang/Class<+TT;>;Lorg/springframework/http/HttpInputMessage;)TT;
@@ -29,10 +29,10 @@ supports
  (Ljava/lang/Class<*>;)Z
 write
  (TT;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/MediaType;Lorg/springframework/http/HttpOutputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
- (TT;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/MediaType;Lorg/springframework/http/HttpOutputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+ (TT;Lorg/springframework/core/ResolvableType;L0org/springframework/http/MediaType;L1org/springframework/http/HttpOutputMessage;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V # @Overrides(org.springframework.http.converter.SmartHttpMessageConverter)
 writeInternal
  (TT;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpOutputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
- (TT;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpOutputMessage;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V
+ (TT;Lorg/springframework/core/ResolvableType;Lorg/springframework/http/HttpOutputMessage;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)V # @Generated(90)
 writeInternal
  (TT;Lorg/springframework/http/HttpOutputMessage;)V
  (TT;Lorg/springframework/http/HttpOutputMessage;)V

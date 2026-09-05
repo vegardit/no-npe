@@ -83,7 +83,7 @@ _constructDefaultTypeResolverBuilder
  (Lcom/fasterxml/jackson/databind/ObjectMapper$DefaultTyping;Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator;)L1com/fasterxml/jackson/databind/jsontype/TypeResolverBuilder<*>; # @Generated(128)
 _convert
  (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Object;
- (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Object;
+ (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/JavaType;)L0java/lang/Object; # @Generated(62)
 _findRootDeserializer
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
  (Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
@@ -107,13 +107,13 @@ _newWriter
  (Lcom/fasterxml/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/core/PrettyPrinter;)L1com/fasterxml/jackson/databind/ObjectWriter; # @Generated(138)
 _readMapAndClose
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Object;
+ (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)L0java/lang/Object; # @Generated(83)
 _readTreeAndClose
  (Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/JsonNode;
  (Lcom/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/JsonNode;
 _readValue
  (Lcom/fasterxml/jackson/databind/DeserializationConfig;Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/databind/DeserializationConfig;Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Object;
+ (L1com/fasterxml/jackson/databind/DeserializationConfig;L1com/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)L0java/lang/Object; # @Generated(2,56,137)
 _serializerProvider
  (Lcom/fasterxml/jackson/databind/SerializationConfig;)Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;
  (Lcom/fasterxml/jackson/databind/SerializationConfig;)Lcom/fasterxml/jackson/databind/ser/DefaultSerializerProvider;
@@ -122,7 +122,7 @@ _verifyNoTrailingTokens
  (L1com/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;Lcom/fasterxml/jackson/databind/JavaType;)V # @Generated(2)
 _verifySchemaType
  (Lcom/fasterxml/jackson/core/FormatSchema;)V
- (Lcom/fasterxml/jackson/core/FormatSchema;)V
+ (L0com/fasterxml/jackson/core/FormatSchema;)V # @Generated
 _writeValueAndClose
  (Lcom/fasterxml/jackson/core/JsonGenerator;Ljava/lang/Object;)V
  (Lcom/fasterxml/jackson/core/JsonGenerator;Ljava/lang/Object;)V
@@ -752,13 +752,13 @@ treeToValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/TreeNode;Lcom/fasterxml/jackson/core/type/TypeReference<TT;>;)TT;
 treeToValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/TreeNode;Lcom/fasterxml/jackson/databind/JavaType;)TT;
- <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/TreeNode;Lcom/fasterxml/jackson/databind/JavaType;)TT;
+ <T:Ljava/lang/Object;>(L0com/fasterxml/jackson/core/TreeNode;Lcom/fasterxml/jackson/databind/JavaType;)T0T; # @Generated(24,103)
 treeToValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/TreeNode;Ljava/lang/Class<TT;>;)TT;
  <T:Ljava/lang/Object;>(L1com/fasterxml/jackson/core/TreeNode;L1java/lang/Class<TT;>;)T1T;
 updateValue
  <T:Ljava/lang/Object;>(TT;Ljava/lang/Object;)TT;
- <T:Ljava/lang/Object;>(TT;Ljava/lang/Object;)TT;
+ <T:Ljava/lang/Object;>(T0T;Ljava/lang/Object;)T0T; # @Generated(24,46)
 valueToTree
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(Ljava/lang/Object;)TT;
  <T:Lcom/fasterxml/jackson/databind/JsonNode;>(L0java/lang/Object;)T0T;

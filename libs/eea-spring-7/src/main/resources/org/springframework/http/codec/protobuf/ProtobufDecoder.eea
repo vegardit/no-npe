@@ -9,16 +9,16 @@ super org/springframework/core/codec/Decoder
  (Lcom/google/protobuf/ExtensionRegistry;)V
 canDecode
  (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
- (Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;)Z
+ (L1org/springframework/core/ResolvableType;L0org/springframework/util/MimeType;)Z # @Overrides(org.springframework.core.codec.Decoder)
 decode
  (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lcom/google/protobuf/Message;>;
- (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lcom/google/protobuf/Message;>;
+ (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Flux<Lcom/google/protobuf/Message;>; # @Generated(123,158)
 decode
  (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lcom/google/protobuf/Message;
- (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lcom/google/protobuf/Message;
+ (Lorg/springframework/core/io/buffer/DataBuffer;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lcom/google/protobuf/Message; # @Generated(90,125)
 decodeToMono
  (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<Lcom/google/protobuf/Message;>;
- (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;Lorg/springframework/util/MimeType;Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<Lcom/google/protobuf/Message;>;
+ (Lorg/reactivestreams/Publisher<Lorg/springframework/core/io/buffer/DataBuffer;>;Lorg/springframework/core/ResolvableType;L0org/springframework/util/MimeType;L0java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lreactor/core/publisher/Mono<Lcom/google/protobuf/Message;>; # @Generated(123,158)
 getDecodableMimeTypes
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;
  ()Ljava/util/List<Lorg/springframework/util/MimeType;>;

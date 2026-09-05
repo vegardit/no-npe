@@ -30,7 +30,7 @@ getHeaderInitializer
  ()L0org/springframework/messaging/support/MessageHeaderInitializer; # @Generated
 getLookupDestination
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
+ (L0java/lang/String;)L0java/lang/String; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getMappingComparator
  (Lorg/springframework/messaging/Message<*>;)Ljava/util/Comparator<Lorg/springframework/messaging/simp/SimpMessageMappingInfo;>;
  (Lorg/springframework/messaging/Message<*>;)Ljava/util/Comparator<Lorg/springframework/messaging/simp/SimpMessageMappingInfo;>;
@@ -66,19 +66,19 @@ isHandler
  (Ljava/lang/Class<*>;)Z
 resolveEmbeddedValuesInDestinations
  ([Ljava/lang/String;)[Ljava/lang/String;
- ([Ljava/lang/String;)[Ljava/lang/String;
+ ([Ljava/lang/String;)[Ljava/lang/String; # @Generated(PolyNull)
 setConversionService
  (Lorg/springframework/core/convert/ConversionService;)V
  (Lorg/springframework/core/convert/ConversionService;)V
 setDestinationPrefixes
  (Ljava/util/Collection<Ljava/lang/String;>;)V
- (Ljava/util/Collection<Ljava/lang/String;>;)V
+ (L0java/util/Collection<Ljava/lang/String;>;)V # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 setEmbeddedValueResolver
  (Lorg/springframework/util/StringValueResolver;)V
  (Lorg/springframework/util/StringValueResolver;)V
 setHeaderInitializer
  (Lorg/springframework/messaging/support/MessageHeaderInitializer;)V
- (Lorg/springframework/messaging/support/MessageHeaderInitializer;)V
+ (L0org/springframework/messaging/support/MessageHeaderInitializer;)V # @Generated
 setMessageConverter
  (Lorg/springframework/messaging/converter/MessageConverter;)V
  (Lorg/springframework/messaging/converter/MessageConverter;)V
@@ -87,7 +87,7 @@ setPathMatcher
  (Lorg/springframework/util/PathMatcher;)V
 setValidator
  (Lorg/springframework/validation/Validator;)V
- (Lorg/springframework/validation/Validator;)V
+ (L0org/springframework/validation/Validator;)V # @Generated
 stop
  (Ljava/lang/Runnable;)V
  (L1java/lang/Runnable;)V # @Inherited(org.springframework.context.SmartLifecycle)

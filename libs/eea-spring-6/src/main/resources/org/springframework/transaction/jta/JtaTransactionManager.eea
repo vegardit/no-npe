@@ -27,10 +27,10 @@ applyTimeout
  (Lorg/springframework/transaction/jta/JtaTransactionObject;I)V
 buildUserTransaction
  (Ljakarta/transaction/TransactionManager;)Ljakarta/transaction/UserTransaction;
- (Ljakarta/transaction/TransactionManager;)Ljakarta/transaction/UserTransaction;
+ (Ljakarta/transaction/TransactionManager;)Ljakarta/transaction/UserTransaction; # @Generated(PolyNull)
 createTransaction
  (Ljava/lang/String;I)Ljakarta/transaction/Transaction;
- (Ljava/lang/String;I)L1jakarta/transaction/Transaction; # @Inherited(org.springframework.transaction.jta.TransactionFactory)
+ (L0java/lang/String;I)L1jakarta/transaction/Transaction; # @Inherited(org.springframework.transaction.jta.TransactionFactory)
 doBegin
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
@@ -51,7 +51,7 @@ doJtaBegin
  (L1org/springframework/transaction/jta/JtaTransactionObject;L1org/springframework/transaction/TransactionDefinition;)V # @Generated(2,60)
 doJtaResume
  (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V
- (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V
+ (L0org/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V # @Generated(2)
 doJtaSuspend
  (Lorg/springframework/transaction/jta/JtaTransactionObject;)Ljava/lang/Object;
  (Lorg/springframework/transaction/jta/JtaTransactionObject;)Ljava/lang/Object;
@@ -60,7 +60,7 @@ doRegisterAfterCompletionWithJtaTransaction
  (L1org/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V # @Generated(2)
 doResume
  (Ljava/lang/Object;Ljava/lang/Object;)V
- (Ljava/lang/Object;Ljava/lang/Object;)V
+ (L0java/lang/Object;Ljava/lang/Object;)V # @Inherited(org.springframework.transaction.support.AbstractPlatformTransactionManager)
 doRollback
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
  (L1org/springframework/transaction/support/DefaultTransactionStatus;)V # @Generated
@@ -72,10 +72,10 @@ doSuspend
  (Ljava/lang/Object;)Ljava/lang/Object;
 findTransactionManager
  (Ljakarta/transaction/UserTransaction;)Ljakarta/transaction/TransactionManager;
- (Ljakarta/transaction/UserTransaction;)L0jakarta/transaction/TransactionManager;
+ (L0jakarta/transaction/UserTransaction;)L0jakarta/transaction/TransactionManager; # @Generated(2,40)
 findTransactionSynchronizationRegistry
  (Ljakarta/transaction/UserTransaction;Ljakarta/transaction/TransactionManager;)Ljakarta/transaction/TransactionSynchronizationRegistry;
- (Ljakarta/transaction/UserTransaction;Ljakarta/transaction/TransactionManager;)L0jakarta/transaction/TransactionSynchronizationRegistry;
+ (L0jakarta/transaction/UserTransaction;L0jakarta/transaction/TransactionManager;)L0jakarta/transaction/TransactionSynchronizationRegistry; # @Generated(2,39,80)
 findUserTransaction
  ()Ljakarta/transaction/UserTransaction;
  ()L0jakarta/transaction/UserTransaction; # @Generated
@@ -120,25 +120,25 @@ retrieveUserTransaction
  ()L0jakarta/transaction/UserTransaction; # @Generated
 setJndiEnvironment
  (Ljava/util/Properties;)V
- (Ljava/util/Properties;)V
+ (L0java/util/Properties;)V # @Generated
 setJndiTemplate
  (Lorg/springframework/jndi/JndiTemplate;)V
  (Lorg/springframework/jndi/JndiTemplate;)V
 setTransactionManager
  (Ljakarta/transaction/TransactionManager;)V
- (Ljakarta/transaction/TransactionManager;)V
+ (L0jakarta/transaction/TransactionManager;)V # @Generated
 setTransactionManagerName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 setTransactionSynchronizationRegistry
  (Ljakarta/transaction/TransactionSynchronizationRegistry;)V
- (Ljakarta/transaction/TransactionSynchronizationRegistry;)V
+ (L0jakarta/transaction/TransactionSynchronizationRegistry;)V # @Generated
 setTransactionSynchronizationRegistryName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 setUserTransaction
  (Ljakarta/transaction/UserTransaction;)V
- (Ljakarta/transaction/UserTransaction;)V
+ (L0jakarta/transaction/UserTransaction;)V # @Generated
 setUserTransactionName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

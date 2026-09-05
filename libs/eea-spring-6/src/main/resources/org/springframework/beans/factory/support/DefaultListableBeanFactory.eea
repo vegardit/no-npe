@@ -6,7 +6,7 @@ STRICT_LOCKING_PROPERTY_NAME
 
 <init>
  (Lorg/springframework/beans/factory/BeanFactory;)V
- (Lorg/springframework/beans/factory/BeanFactory;)V
+ (L0org/springframework/beans/factory/BeanFactory;)V # @Generated
 addSingleton
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
@@ -18,7 +18,7 @@ checkForAliasCircle
  (Ljava/lang/String;Ljava/lang/String;)V
 checkMergedBeanDefinition
  (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;[Ljava/lang/Object;)V
- (Lorg/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;[Ljava/lang/Object;)V
+ (L1org/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/String;[0Ljava/lang/Object;)V # @Inherited(org.springframework.beans.factory.support.AbstractBeanFactory)
 clearMergedBeanDefinition
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -42,7 +42,7 @@ determinePrimaryCandidate
  (L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>;Ljava/lang/Class<*>;)L0java/lang/String; # @Generated(2,76)
 doResolveDependency
  (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;Lorg/springframework/beans/TypeConverter;)Ljava/lang/Object;
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;Lorg/springframework/beans/TypeConverter;)L0java/lang/Object;
+ (L1org/springframework/beans/factory/config/DependencyDescriptor;L0java/lang/String;L0java/util/Set<Ljava/lang/String;>;L0org/springframework/beans/TypeConverter;)L0java/lang/Object; # @Generated(2,65,83,118,160)
 findAllAnnotationsOnBean
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;Z)Ljava/util/Set<TA;>;
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;Z)L1java/util/Set<TA;>; # @Generated(82)
@@ -54,7 +54,7 @@ findAnnotationOnBean
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/String;Ljava/lang/Class<TA;>;Z)T0A; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 findAutowireCandidates
  (Ljava/lang/String;Ljava/lang/Class<*>;Lorg/springframework/beans/factory/config/DependencyDescriptor;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
- (Ljava/lang/String;Ljava/lang/Class<*>;Lorg/springframework/beans/factory/config/DependencyDescriptor;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
+ (L0java/lang/String;Ljava/lang/Class<*>;L1org/springframework/beans/factory/config/DependencyDescriptor;)L1java/util/Map<Ljava/lang/String;Ljava/lang/Object;>; # @Generated(2,40,104)
 getAutowireCandidateResolver
  ()Lorg/springframework/beans/factory/support/AutowireCandidateResolver;
  ()Lorg/springframework/beans/factory/support/AutowireCandidateResolver;
@@ -63,7 +63,7 @@ getBean
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
 getBean
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;[Ljava/lang/Object;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;[Ljava/lang/Object;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;[0Ljava/lang/Object;)T1T; # @Generated(46,66)
 getBeanDefinition
  (Ljava/lang/String;)Lorg/springframework/beans/factory/config/BeanDefinition;
  (Ljava/lang/String;)L1org/springframework/beans/factory/config/BeanDefinition; # @Generated(21)
@@ -75,10 +75,10 @@ getBeanNamesForAnnotation
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanNamesForType
  (Ljava/lang/Class<*>;)[Ljava/lang/String;
- (Ljava/lang/Class<*>;)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
+ (L0java/lang/Class<*>;)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanNamesForType
  (Ljava/lang/Class<*>;ZZ)[Ljava/lang/String;
- (Ljava/lang/Class<*>;ZZ)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
+ (L0java/lang/Class<*>;ZZ)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeanNamesForType
  (Lorg/springframework/core/ResolvableType;)[Ljava/lang/String;
  (Lorg/springframework/core/ResolvableType;)[L1java/lang/String; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
@@ -102,10 +102,10 @@ getBeanProvider
  <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;Z)L1org/springframework/beans/factory/ObjectProvider<TT;>; # @Generated(67)
 getBeansOfType
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Ljava/util/Map<Ljava/lang/String;TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1java/util/Map<L1java/lang/String;TT;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
+ <T:Ljava/lang/Object;>(L0java/lang/Class<TT;>;)L1java/util/Map<L1java/lang/String;TT;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeansOfType
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;ZZ)Ljava/util/Map<Ljava/lang/String;TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;ZZ)L1java/util/Map<L1java/lang/String;TT;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
+ <T:Ljava/lang/Object;>(L0java/lang/Class<TT;>;ZZ)L1java/util/Map<L1java/lang/String;TT;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
 getBeansWithAnnotation
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)L1java/util/Map<L1java/lang/String;Ljava/lang/Object;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
@@ -144,7 +144,7 @@ isPrimary
  (Ljava/lang/String;Ljava/lang/Object;)Z
 matchesBeanName
  (Ljava/lang/String;Ljava/lang/String;)Z
- (Ljava/lang/String;Ljava/lang/String;)Z
+ (Ljava/lang/String;L0java/lang/String;)Z # @Generated(20)
 obtainInstanceFromSupplier
  (Ljava/util/function/Supplier<*>;Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Ljava/lang/Object;
  (L1java/util/function/Supplier<*>;Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory)
@@ -153,7 +153,7 @@ registerBeanDefinition
  (Ljava/lang/String;L1org/springframework/beans/factory/config/BeanDefinition;)V # @Generated(20)
 registerResolvableDependency
  (Ljava/lang/Class<*>;Ljava/lang/Object;)V
- (Ljava/lang/Class<*>;Ljava/lang/Object;)V
+ (Ljava/lang/Class<*>;L0java/lang/Object;)V # @Inherited(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
 registerSingleton
  (Ljava/lang/String;Ljava/lang/Object;)V
  (Ljava/lang/String;Ljava/lang/Object;)V
@@ -165,7 +165,7 @@ resetBeanDefinition
  (Ljava/lang/String;)V
 resolveDependency
  (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;Lorg/springframework/beans/TypeConverter;)Ljava/lang/Object;
- (Lorg/springframework/beans/factory/config/DependencyDescriptor;Ljava/lang/String;Ljava/util/Set<Ljava/lang/String;>;Lorg/springframework/beans/TypeConverter;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.config.AutowireCapableBeanFactory)
+ (L1org/springframework/beans/factory/config/DependencyDescriptor;L0java/lang/String;L0java/util/Set<Ljava/lang/String;>;L0org/springframework/beans/TypeConverter;)L0java/lang/Object; # @Overrides(org.springframework.beans.factory.config.AutowireCapableBeanFactory)
 resolveNamedBean
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/config/NamedBeanHolder<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/config/NamedBeanHolder<TT;>;
@@ -174,13 +174,13 @@ setAutowireCandidateResolver
  (Lorg/springframework/beans/factory/support/AutowireCandidateResolver;)V
 setBootstrapExecutor
  (Ljava/util/concurrent/Executor;)V
- (Ljava/util/concurrent/Executor;)V
+ (L0java/util/concurrent/Executor;)V # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 setDependencyComparator
  (Ljava/util/Comparator<Ljava/lang/Object;>;)V
- (Ljava/util/Comparator<Ljava/lang/Object;>;)V
+ (L0java/util/Comparator<Ljava/lang/Object;>;)V # @Generated(2)
 setSerializationId
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L0java/lang/String;)V # @Generated
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

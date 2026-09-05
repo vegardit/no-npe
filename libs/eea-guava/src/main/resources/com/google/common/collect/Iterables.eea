@@ -29,7 +29,7 @@ consumingIterable
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<TT;>;)L1java/lang/Iterable<TT;>; # @Generated(50)
 contains
  (Ljava/lang/Iterable<*>;Ljava/lang/Object;)Z
- (Ljava/lang/Iterable<*>;Ljava/lang/Object;)Z
+ (Ljava/lang/Iterable<*>;L0java/lang/Object;)Z # @Generated(25)
 cycle
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<TT;>;)Ljava/lang/Iterable<TT;>;
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<TT;>;)L1java/lang/Iterable<TT;>; # @Generated(50)
@@ -47,13 +47,13 @@ filter
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<TT;>;Lcom/google/common/base/Predicate<-TT;>;)L1java/lang/Iterable<TT;>; # @Generated(90)
 find
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+TT;>;Lcom/google/common/base/Predicate<-TT;>;TT;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+TT;>;Lcom/google/common/base/Predicate<-TT;>;TT;)T0T;
+ <T:Ljava/lang/Object;>(L1java/lang/Iterable<+TT;>;Lcom/google/common/base/Predicate<-TT;>;T0T;)T0T; # @Generated(24,90,94)
 find
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<TT;>;Lcom/google/common/base/Predicate<-TT;>;)TT;
  <T:Ljava/lang/Object;>(L1java/lang/Iterable<TT;>;Lcom/google/common/base/Predicate<-TT;>;)T1T; # @Generated(24)
 frequency
  (Ljava/lang/Iterable<*>;Ljava/lang/Object;)I
- (Ljava/lang/Iterable<*>;Ljava/lang/Object;)I
+ (L1java/lang/Iterable<*>;L0java/lang/Object;)I # @Generated(2,25)
 get
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+TT;>;ITT;)TT;
  <T:Ljava/lang/Object;>(L1java/lang/Iterable<+TT;>;ITT;)T1T; # @Generated(24)
@@ -125,4 +125,4 @@ unmodifiableIterable
  <E:Ljava/lang/Object;>(Lcom/google/common/collect/ImmutableCollection<TE;>;)L1java/lang/Iterable<TE;>; # @Generated(77)
 unmodifiableIterable
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+TT;>;)Ljava/lang/Iterable<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+TT;>;)Ljava/lang/Iterable<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+TT;>;)Ljava/lang/Iterable<TT;>; # @Generated(PolyNull)

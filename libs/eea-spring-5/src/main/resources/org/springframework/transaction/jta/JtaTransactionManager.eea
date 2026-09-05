@@ -27,10 +27,10 @@ applyTimeout
  (Lorg/springframework/transaction/jta/JtaTransactionObject;I)V
 buildUserTransaction
  (Ljavax/transaction/TransactionManager;)Ljavax/transaction/UserTransaction;
- (Ljavax/transaction/TransactionManager;)Ljavax/transaction/UserTransaction;
+ (Ljavax/transaction/TransactionManager;)Ljavax/transaction/UserTransaction; # @Generated(PolyNull)
 createTransaction
  (Ljava/lang/String;I)Ljavax/transaction/Transaction;
- (Ljava/lang/String;I)L1javax/transaction/Transaction; # @Inherited(org.springframework.transaction.jta.TransactionFactory)
+ (L0java/lang/String;I)L1javax/transaction/Transaction; # @Inherited(org.springframework.transaction.jta.TransactionFactory)
 doBegin
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
  (Ljava/lang/Object;Lorg/springframework/transaction/TransactionDefinition;)V
@@ -51,7 +51,7 @@ doJtaBegin
  (L1org/springframework/transaction/jta/JtaTransactionObject;L1org/springframework/transaction/TransactionDefinition;)V # @Generated(2,60)
 doJtaResume
  (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V
- (Lorg/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V
+ (L0org/springframework/transaction/jta/JtaTransactionObject;Ljava/lang/Object;)V # @Generated(2)
 doJtaSuspend
  (Lorg/springframework/transaction/jta/JtaTransactionObject;)Ljava/lang/Object;
  (Lorg/springframework/transaction/jta/JtaTransactionObject;)Ljava/lang/Object;
@@ -60,7 +60,7 @@ doRegisterAfterCompletionWithJtaTransaction
  (L1org/springframework/transaction/jta/JtaTransactionObject;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V # @Generated(2)
 doResume
  (Ljava/lang/Object;Ljava/lang/Object;)V
- (Ljava/lang/Object;Ljava/lang/Object;)V
+ (L0java/lang/Object;Ljava/lang/Object;)V # @Inherited(org.springframework.transaction.support.AbstractPlatformTransactionManager)
 doRollback
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
  (L1org/springframework/transaction/support/DefaultTransactionStatus;)V # @Generated
@@ -72,10 +72,10 @@ doSuspend
  (Ljava/lang/Object;)Ljava/lang/Object;
 findTransactionManager
  (Ljavax/transaction/UserTransaction;)Ljavax/transaction/TransactionManager;
- (Ljavax/transaction/UserTransaction;)L0javax/transaction/TransactionManager;
+ (L0javax/transaction/UserTransaction;)L0javax/transaction/TransactionManager; # @Generated(2,38)
 findTransactionSynchronizationRegistry
  (Ljavax/transaction/UserTransaction;Ljavax/transaction/TransactionManager;)Ljavax/transaction/TransactionSynchronizationRegistry;
- (Ljavax/transaction/UserTransaction;Ljavax/transaction/TransactionManager;)L0javax/transaction/TransactionSynchronizationRegistry;
+ (L0javax/transaction/UserTransaction;L0javax/transaction/TransactionManager;)L0javax/transaction/TransactionSynchronizationRegistry; # @Generated(2,37,76)
 findUserTransaction
  ()Ljavax/transaction/UserTransaction;
  ()L0javax/transaction/UserTransaction; # @Generated
@@ -120,25 +120,25 @@ retrieveUserTransaction
  ()L0javax/transaction/UserTransaction; # @Generated
 setJndiEnvironment
  (Ljava/util/Properties;)V
- (Ljava/util/Properties;)V
+ (L0java/util/Properties;)V # @Generated
 setJndiTemplate
  (Lorg/springframework/jndi/JndiTemplate;)V
  (Lorg/springframework/jndi/JndiTemplate;)V
 setTransactionManager
  (Ljavax/transaction/TransactionManager;)V
- (Ljavax/transaction/TransactionManager;)V
+ (L0javax/transaction/TransactionManager;)V # @Generated
 setTransactionManagerName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 setTransactionSynchronizationRegistry
  (Ljavax/transaction/TransactionSynchronizationRegistry;)V
- (Ljavax/transaction/TransactionSynchronizationRegistry;)V
+ (L0javax/transaction/TransactionSynchronizationRegistry;)V # @Generated
 setTransactionSynchronizationRegistryName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 setUserTransaction
  (Ljavax/transaction/UserTransaction;)V
- (Ljavax/transaction/UserTransaction;)V
+ (L0javax/transaction/UserTransaction;)V # @Generated
 setUserTransactionName
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V

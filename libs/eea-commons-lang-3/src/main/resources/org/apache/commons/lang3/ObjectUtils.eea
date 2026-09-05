@@ -9,7 +9,7 @@ CONST
  <T:Ljava/lang/Object;>(TT;)TT;
 allNotNull
  ([Ljava/lang/Object;)Z
- ([Ljava/lang/Object;)Z
+ ([0Ljava/lang/Object;)Z # @Generated(2)
 allNull
  ([Ljava/lang/Object;)Z
  ([Ljava/lang/Object;)Z
@@ -24,7 +24,7 @@ clone
  <T:Ljava/lang/Object;>(TT;)T0T; # @Generated(28)
 cloneIfPossible
  <T:Ljava/lang/Object;>(TT;)TT;
- <T:Ljava/lang/Object;>(TT;)TT;
+ <T:Ljava/lang/Object;>(TT;)TT; # @Generated(PolyNull)
 compare
  <T::Ljava/lang/Comparable<-TT;>;>(TT;TT;)I
  <T::L0java/lang/Comparable<-TT;>;>(TT;TT;)I
@@ -33,7 +33,7 @@ compare
  <T::L0java/lang/Comparable<-TT;>;>(TT;TT;Z)I
 defaultIfNull
  <T:Ljava/lang/Object;>(TT;TT;)TT;
- <T:Ljava/lang/Object;>(TT;TT;)TT;
+ <T:Ljava/lang/Object;>(TT;TT;)TT; # @Generated(PolyNull)
 equals
  (Ljava/lang/Object;Ljava/lang/Object;)Z
  (Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -42,7 +42,7 @@ firstNonNull
  <T:Ljava/lang/Object;>([TT;)TT;
 getClass
  <T:Ljava/lang/Object;>(TT;)Ljava/lang/Class<TT;>;
- <T:Ljava/lang/Object;>(TT;)Ljava/lang/Class<TT;>;
+ <T:Ljava/lang/Object;>(T0T;)L0java/lang/Class<TT;>; # @Generated(24,28)
 getFirstNonNull
  <T:Ljava/lang/Object;>([Ljava/util/function/Supplier<TT;>;)TT;
  <T:Ljava/lang/Object;>([Ljava/util/function/Supplier<TT;>;)TT;
@@ -51,7 +51,7 @@ getIfNull
  <T:Ljava/lang/Object;>(TT;Ljava/util/function/Supplier<TT;>;)TT;
 getIfNull
  <T:Ljava/lang/Object;>(TT;TT;)TT;
- <T:Ljava/lang/Object;>(TT;TT;)TT;
+ <T:Ljava/lang/Object;>(T0T;TT;)TT; # @Generated(24,PolyNull)
 hashCode
  (Ljava/lang/Object;)I
  (Ljava/lang/Object;)I
@@ -69,7 +69,7 @@ identityToString
  (L1java/lang/Appendable;L1java/lang/Object;)V # @Generated(2,24)
 identityToString
  (Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/Object;)Ljava/lang/String; # @PolyNull
+ (L0java/lang/Object;)Ljava/lang/String; # @Generated(2,PolyNull)
 identityToString
  (Ljava/lang/StringBuffer;Ljava/lang/Object;)V
  (L1java/lang/StringBuffer;L1java/lang/Object;)V # @Generated(2,26)
@@ -81,16 +81,16 @@ identityToString
  (L1org/apache/commons/lang3/text/StrBuilder;L1java/lang/Object;)V # @Generated(2,44)
 isArray
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Generated
 isEmpty
  (Ljava/lang/Object;)Z
- (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Generated
 isNotEmpty
  (Ljava/lang/Object;)Z
  (Ljava/lang/Object;)Z
 max
  <T::Ljava/lang/Comparable<-TT;>;>([TT;)TT;
- <T::Ljava/lang/Comparable<-TT;>;>([TT;)TT;
+ <T::Ljava/lang/Comparable<-TT;>;>([TT;)T0T; # @Generated(40)
 median
  <T::Ljava/lang/Comparable<-TT;>;>([TT;)TT;
  <T::Ljava/lang/Comparable<-TT;>;>([TT;)TT;
@@ -99,7 +99,7 @@ median
  <T:Ljava/lang/Object;>(L1java/util/Comparator<TT;>;[TT;)TT; # @Generated(24)
 min
  <T::Ljava/lang/Comparable<-TT;>;>([TT;)TT;
- <T::Ljava/lang/Comparable<-TT;>;>([TT;)TT;
+ <T::Ljava/lang/Comparable<-TT;>;>([TT;)T0T; # @Generated(40)
 mode
  <T:Ljava/lang/Object;>([TT;)TT;
  <T:Ljava/lang/Object;>([TT;)T0T; # @Generated(29)

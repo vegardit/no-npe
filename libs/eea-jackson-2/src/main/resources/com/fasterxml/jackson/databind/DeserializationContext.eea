@@ -60,7 +60,7 @@ _getDateFormat
  ()Ljava/text/DateFormat;
 _isCompatible
  (Ljava/lang/Class<*>;Ljava/lang/Object;)Z
- (Ljava/lang/Class<*>;Ljava/lang/Object;)Z
+ (Ljava/lang/Class<*>;L0java/lang/Object;)Z # @Generated(22)
 _shapeForToken
  (Lcom/fasterxml/jackson/core/JsonToken;)Ljava/lang/String;
  (Lcom/fasterxml/jackson/core/JsonToken;)L1java/lang/String; # @Generated(41)
@@ -81,7 +81,7 @@ constructSpecializedType
  (L1com/fasterxml/jackson/databind/JavaType;Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/JavaType; # @Generated(2)
 constructType
  (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/JavaType;
- (Ljava/lang/Class<*>;)Lcom/fasterxml/jackson/databind/JavaType;
+ (L0java/lang/Class<*>;)L0com/fasterxml/jackson/databind/JavaType; # @Generated(2,23)
 deserializerInstance
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
@@ -99,7 +99,7 @@ findCoercionFromBlankString
  (Lcom/fasterxml/jackson/databind/type/LogicalType;Ljava/lang/Class<*>;Lcom/fasterxml/jackson/databind/cfg/CoercionAction;)Lcom/fasterxml/jackson/databind/cfg/CoercionAction;
 findContextualValueDeserializer
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
- (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/BeanProperty;)L0com/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>; # @Generated(89)
 findInjectableValue
  (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Object;)Ljava/lang/Object;
@@ -108,7 +108,7 @@ findInjectableValue
  (Ljava/lang/Object;Lcom/fasterxml/jackson/databind/BeanProperty;Ljava/lang/Object;Ljava/lang/Boolean;Ljava/lang/Boolean;)Ljava/lang/Object;
 findKeyDeserializer
  (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/KeyDeserializer;
- (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/BeanProperty;)Lcom/fasterxml/jackson/databind/KeyDeserializer;
+ (Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/BeanProperty;)L0com/fasterxml/jackson/databind/KeyDeserializer; # @Generated(89)
 findNonContextualValueDeserializer
  (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
  (Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JsonDeserializer<Ljava/lang/Object;>;
@@ -138,7 +138,7 @@ getConfig
  ()Lcom/fasterxml/jackson/databind/DeserializationConfig;
 getContextualType
  ()Lcom/fasterxml/jackson/databind/JavaType;
- ()Lcom/fasterxml/jackson/databind/JavaType;
+ ()L0com/fasterxml/jackson/databind/JavaType; # @Generated
 getDatatypeFeatures
  ()Lcom/fasterxml/jackson/databind/cfg/DatatypeFeatures;
  ()Lcom/fasterxml/jackson/databind/cfg/DatatypeFeatures;
@@ -201,10 +201,10 @@ handleUnknownTypeId
  (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/String;Lcom/fasterxml/jackson/databind/jsontype/TypeIdResolver;Ljava/lang/String;)L0com/fasterxml/jackson/databind/JavaType; # @Generated(136)
 handleWeirdKey
  (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
- (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+ (Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)L0java/lang/Object; # @Generated(78)
 handleWeirdNativeValue
  (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Object;Lcom/fasterxml/jackson/core/JsonParser;)Ljava/lang/Object;
- (Lcom/fasterxml/jackson/databind/JavaType;Ljava/lang/Object;Lcom/fasterxml/jackson/core/JsonParser;)Ljava/lang/Object;
+ (L1com/fasterxml/jackson/databind/JavaType;Ljava/lang/Object;Lcom/fasterxml/jackson/core/JsonParser;)L0java/lang/Object; # @Generated(2,101)
 handleWeirdNumberValue
  (Ljava/lang/Class<*>;Ljava/lang/Number;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
  (Ljava/lang/Class<*>;Ljava/lang/Number;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -261,10 +261,10 @@ readTree
  (L1com/fasterxml/jackson/core/JsonParser;)Lcom/fasterxml/jackson/databind/JsonNode; # @Generated(2)
 readTreeAsValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JavaType;)TT;
- <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JavaType;)T0T;
+ <T:Ljava/lang/Object;>(L0com/fasterxml/jackson/databind/JsonNode;Lcom/fasterxml/jackson/databind/JavaType;)T0T; # @Generated(24,107)
 readTreeAsValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class<TT;>;)T0T;
+ <T:Ljava/lang/Object;>(L0com/fasterxml/jackson/databind/JsonNode;Ljava/lang/Class<TT;>;)T0T; # @Generated(24,88)
 readValue
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)TT;
  <T:Ljava/lang/Object;>(Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/JavaType;)TT;

@@ -24,7 +24,7 @@ doGetTransaction
  ()Ljava/lang/Object;
 doResume
  (Ljava/lang/Object;Ljava/lang/Object;)V
- (Ljava/lang/Object;Ljava/lang/Object;)V
+ (L0java/lang/Object;Ljava/lang/Object;)V # @Generated(2)
 doRollback
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
@@ -36,7 +36,7 @@ doSuspend
  (Ljava/lang/Object;)Ljava/lang/Object;
 getTransaction
  (Lorg/springframework/transaction/TransactionDefinition;)Lorg/springframework/transaction/TransactionStatus;
- (Lorg/springframework/transaction/TransactionDefinition;)Lorg/springframework/transaction/TransactionStatus;
+ (L0org/springframework/transaction/TransactionDefinition;)Lorg/springframework/transaction/TransactionStatus; # @Inherited(org.springframework.transaction.PlatformTransactionManager)
 getTransactionExecutionListeners
  ()Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;
  ()Ljava/util/Collection<Lorg/springframework/transaction/TransactionExecutionListener;>;
@@ -57,7 +57,7 @@ registerAfterCompletionWithExistingTransaction
  (Ljava/lang/Object;Ljava/util/List<Lorg/springframework/transaction/support/TransactionSynchronization;>;)V
 resume
  (Ljava/lang/Object;Lorg/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;)V
- (Ljava/lang/Object;Lorg/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;)V
+ (L0java/lang/Object;L0org/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;)V # @Generated(2,20)
 rollback
  (Lorg/springframework/transaction/TransactionStatus;)V
  (L1org/springframework/transaction/TransactionStatus;)V # @Generated
@@ -69,7 +69,7 @@ setTransactionSynchronizationName
  (Ljava/lang/String;)V
 suspend
  (Ljava/lang/Object;)Lorg/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;
- (Ljava/lang/Object;)L0org/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder;
+ (L0java/lang/Object;)L0org/springframework/transaction/support/AbstractPlatformTransactionManager$SuspendedResourcesHolder; # @Generated(2,21)
 triggerBeforeCommit
  (Lorg/springframework/transaction/support/DefaultTransactionStatus;)V
  (L1org/springframework/transaction/support/DefaultTransactionStatus;)V # @Generated

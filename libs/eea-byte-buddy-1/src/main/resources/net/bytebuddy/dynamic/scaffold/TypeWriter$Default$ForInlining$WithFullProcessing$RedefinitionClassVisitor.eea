@@ -8,16 +8,16 @@ onVisitAnnotation
  (Ljava/lang/String;Z)L0net/bytebuddy/jar/asm/AnnotationVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 onVisitField
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lnet/bytebuddy/jar/asm/FieldVisitor;
- (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)L0net/bytebuddy/jar/asm/FieldVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
+ (ILjava/lang/String;Ljava/lang/String;L0java/lang/String;L0java/lang/Object;)L0net/bytebuddy/jar/asm/FieldVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 onVisitInnerClass
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
- (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+ (L1java/lang/String;L0java/lang/String;L0java/lang/String;I)V # @Overrides(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 onVisitMethod
  (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lnet/bytebuddy/jar/asm/MethodVisitor;
- (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L0net/bytebuddy/jar/asm/MethodVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
+ (IL1java/lang/String;Ljava/lang/String;L0java/lang/String;[0Ljava/lang/String;)L0net/bytebuddy/jar/asm/MethodVisitor; # @Overrides(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 onVisitModule
  (Ljava/lang/String;ILjava/lang/String;)Lnet/bytebuddy/jar/asm/ModuleVisitor;
- (Ljava/lang/String;ILjava/lang/String;)L0net/bytebuddy/jar/asm/ModuleVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
+ (Ljava/lang/String;IL0java/lang/String;)L0net/bytebuddy/jar/asm/ModuleVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 onVisitNestHost
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -26,25 +26,25 @@ onVisitNestMember
  (Ljava/lang/String;)V
 onVisitOuterClass
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;L0java/lang/String;L0java/lang/String;)V # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 onVisitPermittedSubclass
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 onVisitRecordComponent
  (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/bytebuddy/jar/asm/RecordComponentVisitor;
- (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)L0net/bytebuddy/jar/asm/RecordComponentVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
+ (Ljava/lang/String;Ljava/lang/String;L0java/lang/String;)L0net/bytebuddy/jar/asm/RecordComponentVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 onVisitTypeAnnotation
  (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)Lnet/bytebuddy/jar/asm/AnnotationVisitor;
  (ILnet/bytebuddy/jar/asm/TypePath;Ljava/lang/String;Z)L0net/bytebuddy/jar/asm/AnnotationVisitor; # @Inherited(net.bytebuddy.utility.visitor.MetadataAwareClassVisitor)
 redefine
  (Lnet/bytebuddy/description/method/MethodDescription;ZILjava/lang/String;)Lnet/bytebuddy/jar/asm/MethodVisitor;
- (Lnet/bytebuddy/description/method/MethodDescription;ZILjava/lang/String;)L0net/bytebuddy/jar/asm/MethodVisitor;
+ (Lnet/bytebuddy/description/method/MethodDescription;ZIL0java/lang/String;)L0net/bytebuddy/jar/asm/MethodVisitor; # @Generated(56,75)
 redefine
  (Lnet/bytebuddy/dynamic/scaffold/TypeWriter$FieldPool$Record;Ljava/lang/Object;ILjava/lang/String;)Lnet/bytebuddy/jar/asm/FieldVisitor;
- (Lnet/bytebuddy/dynamic/scaffold/TypeWriter$FieldPool$Record;Ljava/lang/Object;ILjava/lang/String;)L0net/bytebuddy/jar/asm/FieldVisitor;
+ (L1net/bytebuddy/dynamic/scaffold/TypeWriter$FieldPool$Record;L0java/lang/Object;IL0java/lang/String;)L0net/bytebuddy/jar/asm/FieldVisitor; # @Generated(2,62,81,100)
 redefine
  (Lnet/bytebuddy/dynamic/scaffold/TypeWriter$RecordComponentPool$Record;Ljava/lang/String;)Lnet/bytebuddy/jar/asm/RecordComponentVisitor;
- (Lnet/bytebuddy/dynamic/scaffold/TypeWriter$RecordComponentPool$Record;Ljava/lang/String;)L0net/bytebuddy/jar/asm/RecordComponentVisitor;
+ (L1net/bytebuddy/dynamic/scaffold/TypeWriter$RecordComponentPool$Record;L0java/lang/String;)L0net/bytebuddy/jar/asm/RecordComponentVisitor; # @Generated(2,72,91)
 visit
  (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
  (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V

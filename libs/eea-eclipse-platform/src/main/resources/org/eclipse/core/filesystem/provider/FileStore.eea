@@ -75,7 +75,7 @@ putInfo
  (L1org/eclipse/core/filesystem/IFileInfo;IL0org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.core.filesystem.IFileStore)
 toLocalFile
  (ILorg/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File;
- (IL0org/eclipse/core/runtime/IProgressMonitor;)Ljava/io/File; # @Inherited(org.eclipse.core.filesystem.IFileStore)
+ (IL0org/eclipse/core/runtime/IProgressMonitor;)L0java/io/File; # @Overrides(org.eclipse.core.filesystem.IFileStore)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)
