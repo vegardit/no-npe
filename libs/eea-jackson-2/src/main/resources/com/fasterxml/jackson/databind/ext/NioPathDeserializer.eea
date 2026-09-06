@@ -4,6 +4,23 @@ super com/fasterxml/jackson/databind/deser/std/StdScalarDeserializer
  <Ljava/nio/file/Path;>
  <Ljava/nio/file/Path;>
 
+DEFAULT_ALLOWED_SCHEMES
+ Ljava/util/Collection<Ljava/lang/String;>;
+ Ljava/util/Collection<Ljava/lang/String;>;
+
+_allowedSchemes
+ Ljava/util/Collection<Ljava/lang/String;>;
+ Ljava/util/Collection<Ljava/lang/String;>;
+
+<init>
+ (Ljava/util/Collection<Ljava/lang/String;>;)V
+ (L1java/util/Collection<Ljava/lang/String;>;)V # @Generated(2)
+_allowedSchemesDesc
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+_isSchemeAllowed
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
 deserialize
  (Lcom/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/nio/file/Path;
  (L1com/fasterxml/jackson/core/JsonParser;Lcom/fasterxml/jackson/databind/DeserializationContext;)Ljava/nio/file/Path; # @Generated(2)

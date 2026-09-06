@@ -7,9 +7,15 @@ super org/springframework/core/serializer/Deserializer
 <init>
  (Ljava/lang/ClassLoader;)V
  (L0java/lang/ClassLoader;)V # @Generated
+<init>
+ (Ljava/lang/ClassLoader;Ljava/io/ObjectInputFilter;)V
+ (L0java/lang/ClassLoader;L0java/io/ObjectInputFilter;)V # @Generated(2,25)
 deserialize
  (Ljava/io/InputStream;)Ljava/lang/Object;
  (Ljava/io/InputStream;)Ljava/lang/Object;
 getClassLoader
  ()Ljava/lang/ClassLoader;
  ()L0java/lang/ClassLoader; # @Generated
+getObjectInputFilter
+ ()Ljava/io/ObjectInputFilter;
+ ()L0java/io/ObjectInputFilter; # @Generated
