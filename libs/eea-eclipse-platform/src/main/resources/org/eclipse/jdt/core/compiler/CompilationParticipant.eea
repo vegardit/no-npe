@@ -1,0 +1,32 @@
+class org/eclipse/jdt/core/compiler/CompilationParticipant
+
+aboutToBuild
+ (Lorg/eclipse/jdt/core/IJavaProject;)I
+ (Lorg/eclipse/jdt/core/IJavaProject;)I
+buildFinished
+ (Lorg/eclipse/jdt/core/IJavaProject;)V
+ (Lorg/eclipse/jdt/core/IJavaProject;)V
+buildStarting
+ ([Lorg/eclipse/jdt/core/compiler/BuildContext;Z)V
+ ([Lorg/eclipse/jdt/core/compiler/BuildContext;Z)V
+cleanStarting
+ (Lorg/eclipse/jdt/core/IJavaProject;)V
+ (Lorg/eclipse/jdt/core/IJavaProject;)V
+getAnnotationProcessorPaths
+ (Lorg/eclipse/jdt/core/IJavaProject;Z)[Ljava/net/URI;
+ (Lorg/eclipse/jdt/core/IJavaProject;Z)[0Ljava/net/URI; # @Generated(39)
+getGeneratedSourcePaths
+ (Lorg/eclipse/jdt/core/IJavaProject;Z)[Lorg/eclipse/core/resources/IContainer;
+ (Lorg/eclipse/jdt/core/IJavaProject;Z)[0Lorg/eclipse/core/resources/IContainer; # @Generated(39)
+isActive
+ (Lorg/eclipse/jdt/core/IJavaProject;)Z
+ (Lorg/eclipse/jdt/core/IJavaProject;)Z
+postProcess
+ (Lorg/eclipse/jdt/core/compiler/BuildContext;Ljava/io/ByteArrayInputStream;)Ljava/util/Optional<[B>;
+ (Lorg/eclipse/jdt/core/compiler/BuildContext;Ljava/io/ByteArrayInputStream;)L1java/util/Optional<[B>; # @Generated(77)
+processAnnotations
+ ([Lorg/eclipse/jdt/core/compiler/BuildContext;)V
+ ([Lorg/eclipse/jdt/core/compiler/BuildContext;)V
+reconcile
+ (Lorg/eclipse/jdt/core/compiler/ReconcileContext;)V
+ (Lorg/eclipse/jdt/core/compiler/ReconcileContext;)V

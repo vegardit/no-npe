@@ -1,0 +1,29 @@
+class org/eclipse/jdt/core/search/SearchParticipant
+
+getDescription
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getDocument
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/search/SearchDocument;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/search/SearchDocument;
+indexDocument
+ (Lorg/eclipse/jdt/core/search/SearchDocument;Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/jdt/core/search/SearchDocument;Lorg/eclipse/core/runtime/IPath;)V
+indexResolvedDocument
+ (Lorg/eclipse/jdt/core/search/SearchDocument;Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/jdt/core/search/SearchDocument;Lorg/eclipse/core/runtime/IPath;)V
+locateMatches
+ ([Lorg/eclipse/jdt/core/search/SearchDocument;Lorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/jdt/core/search/SearchDocument;Lorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+removeIndex
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+resolveDocument
+ (Lorg/eclipse/jdt/core/search/SearchDocument;)V
+ (Lorg/eclipse/jdt/core/search/SearchDocument;)V
+scheduleDocumentIndexing
+ (Lorg/eclipse/jdt/core/search/SearchDocument;Lorg/eclipse/core/runtime/IPath;)V
+ (L1org/eclipse/jdt/core/search/SearchDocument;L1org/eclipse/core/runtime/IPath;)V # @Generated(2,46)
+selectIndexes
+ (Lorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/core/search/IJavaSearchScope;)[Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/core/search/IJavaSearchScope;)[Lorg/eclipse/core/runtime/IPath;

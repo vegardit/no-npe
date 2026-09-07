@@ -1,0 +1,32 @@
+class org/eclipse/team/ui/synchronize/SyncInfoCompareInput
+
+<init>
+ (Ljava/lang/String;Lorg/eclipse/team/core/synchronize/SyncInfo;)V
+ (L1java/lang/String;L1org/eclipse/team/core/synchronize/SyncInfo;)V # @Generated(2,20)
+<init>
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;Lorg/eclipse/team/core/synchronize/SyncInfo;)V
+ (L1org/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;L1org/eclipse/team/core/synchronize/SyncInfo;)V # @Generated(2,65)
+<init>
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizeParticipant;Lorg/eclipse/team/core/synchronize/SyncInfo;)V
+ (L1org/eclipse/team/ui/synchronize/ISynchronizeParticipant;L1org/eclipse/team/core/synchronize/SyncInfo;)V # @Generated(2,59)
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.team.ui.synchronize.SaveableCompareEditorInput)
+getNavigator
+ ()Lorg/eclipse/compare/ICompareNavigator;
+ ()Lorg/eclipse/compare/ICompareNavigator;
+getSyncInfo
+ ()Lorg/eclipse/team/core/synchronize/SyncInfo;
+ ()Lorg/eclipse/team/core/synchronize/SyncInfo;
+getToolTipText
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.compare.CompareEditorInput)
+prepareCompareInput
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/compare/structuremergeviewer/ICompareInput;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/compare/structuremergeviewer/ICompareInput; # @Generated(2)
+resourceChanged
+ (Lorg/eclipse/core/resources/IResourceChangeEvent;)V
+ (L1org/eclipse/core/resources/IResourceChangeEvent;)V # @Inherited(org.eclipse.core.resources.IResourceChangeListener)

@@ -1,0 +1,31 @@
+class org/eclipse/jdt/core/CorrectionEngine
+
+getAllWarningTokens
+ ()[Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Generated(3)
+getProblemArguments
+ (Lorg/eclipse/core/resources/IMarker;)[Ljava/lang/String;
+ (L1org/eclipse/core/resources/IMarker;)[Ljava/lang/String; # @Generated(2)
+getWarningToken
+ (I)Ljava/lang/String;
+ (I)L0java/lang/String; # @Generated
+
+compilationUnit
+ Lorg/eclipse/jdt/core/ICompilationUnit;
+ Lorg/eclipse/jdt/core/ICompilationUnit;
+completionRequestor
+ Lorg/eclipse/jdt/core/CompletionRequestor;
+ Lorg/eclipse/jdt/core/CompletionRequestor;
+correctionRequestor
+ Lorg/eclipse/jdt/core/ICorrectionRequestor;
+ Lorg/eclipse/jdt/core/ICorrectionRequestor;
+
+<init>
+ (Ljava/util/Map;)V
+ (Ljava/util/Map;)V
+computeCorrections
+ (Lorg/eclipse/core/resources/IMarker;Lorg/eclipse/jdt/core/ICompilationUnit;ILorg/eclipse/jdt/core/ICorrectionRequestor;)V
+ (Lorg/eclipse/core/resources/IMarker;Lorg/eclipse/jdt/core/ICompilationUnit;ILorg/eclipse/jdt/core/ICorrectionRequestor;)V
+computeCorrections
+ (Lorg/eclipse/jdt/core/compiler/IProblem;Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/jdt/core/ICorrectionRequestor;)V
+ (L1org/eclipse/jdt/core/compiler/IProblem;Lorg/eclipse/jdt/core/ICompilationUnit;L1org/eclipse/jdt/core/ICorrectionRequestor;)V # @Generated(2,81)

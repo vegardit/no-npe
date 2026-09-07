@@ -1,0 +1,45 @@
+class org/eclipse/emf/common/util/BasicEMap$DelegatingMap
+
+super org/eclipse/emf/common/util/EMap$InternalMapView
+ <TK;TV;>
+ <TK;TV;>
+
+<init>
+ (Lorg/eclipse/emf/common/util/BasicEMap;)V
+ (Lorg/eclipse/emf/common/util/BasicEMap;)V
+containsKey
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.Map)
+containsValue
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.Map)
+eMap
+ ()Lorg/eclipse/emf/common/util/EMap<TK;TV;>;
+ ()Lorg/eclipse/emf/common/util/EMap<TK;TV;>;
+entrySet
+ ()Ljava/util/Set<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()L1java/util/Set<L1java/util/Map$Entry<TK;TV;>;>; # @Inherited(java.util.Map)
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+get
+ (Ljava/lang/Object;)TV;
+ (Ljava/lang/Object;)T0V; # @Inherited(java.util.Map)
+keySet
+ ()Ljava/util/Set<TK;>;
+ ()L1java/util/Set<TK;>; # @Inherited(java.util.Map)
+put
+ (TK;TV;)TV;
+ (TK;TV;)T0V; # @Inherited(java.util.Map)
+putAll
+ (Ljava/util/Map<+TK;+TV;>;)V
+ (L1java/util/Map<+TK;+TV;>;)V # @Inherited(java.util.Map)
+remove
+ (Ljava/lang/Object;)TV;
+ (L0java/lang/Object;)T0V; # @Inherited(java.util.Map)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+values
+ ()Ljava/util/Collection<TV;>;
+ ()L1java/util/Collection<TV;>; # @Inherited(java.util.Map)

@@ -1,0 +1,70 @@
+class org/eclipse/emf/common/util/BasicDiagnostic
+
+toDiagnostic
+ (Ljava/lang/Throwable;)Lorg/eclipse/emf/common/util/Diagnostic;
+ (Ljava/lang/Throwable;)Lorg/eclipse/emf/common/util/Diagnostic;
+toDiagnostic
+ (Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/emf/common/util/Diagnostic;
+ (Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/emf/common/util/Diagnostic;
+toIStatus
+ (Lorg/eclipse/emf/common/util/Diagnostic;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/emf/common/util/Diagnostic;)Lorg/eclipse/core/runtime/IStatus;
+toIStatus
+ (Lorg/eclipse/emf/common/util/DiagnosticException;)Lorg/eclipse/core/runtime/IStatus;
+ (L1org/eclipse/emf/common/util/DiagnosticException;)L1org/eclipse/core/runtime/IStatus; # @Generated(2,52)
+
+children
+ Ljava/util/List<Lorg/eclipse/emf/common/util/Diagnostic;>;
+ Ljava/util/List<Lorg/eclipse/emf/common/util/Diagnostic;>;
+data
+ Ljava/util/List<*>;
+ Ljava/util/List<*>;
+message
+ Ljava/lang/String;
+ Ljava/lang/String;
+source
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (ILjava/lang/String;ILjava/lang/String;[Ljava/lang/Object;)V
+ (ILjava/lang/String;ILjava/lang/String;[Ljava/lang/Object;)V
+<init>
+ (Ljava/lang/String;ILjava/lang/String;[Ljava/lang/Object;)V
+ (Ljava/lang/String;ILjava/lang/String;[Ljava/lang/Object;)V
+<init>
+ (Ljava/lang/String;ILjava/util/List<+Lorg/eclipse/emf/common/util/Diagnostic;>;Ljava/lang/String;[Ljava/lang/Object;)V
+ (Ljava/lang/String;ILjava/util/List<+Lorg/eclipse/emf/common/util/Diagnostic;>;Ljava/lang/String;[Ljava/lang/Object;)V
+add
+ (Lorg/eclipse/emf/common/util/Diagnostic;)V
+ (L1org/eclipse/emf/common/util/Diagnostic;)V # @Generated
+addAll
+ (Lorg/eclipse/emf/common/util/Diagnostic;)V
+ (L1org/eclipse/emf/common/util/Diagnostic;)V # @Generated
+dataAsList
+ ([Ljava/lang/Object;)Ljava/util/List<*>;
+ ([Ljava/lang/Object;)L1java/util/List<*>; # @Generated(22)
+getChildren
+ ()Ljava/util/List<Lorg/eclipse/emf/common/util/Diagnostic;>;
+ ()Ljava/util/List<Lorg/eclipse/emf/common/util/Diagnostic;>;
+getData
+ ()Ljava/util/List<*>;
+ ()Ljava/util/List<*>;
+getException
+ ()Ljava/lang/Throwable;
+ ()L0java/lang/Throwable; # @Generated
+getMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSource
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+merge
+ (Lorg/eclipse/emf/common/util/Diagnostic;)V
+ (L1org/eclipse/emf/common/util/Diagnostic;)V # @Generated
+setSource
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

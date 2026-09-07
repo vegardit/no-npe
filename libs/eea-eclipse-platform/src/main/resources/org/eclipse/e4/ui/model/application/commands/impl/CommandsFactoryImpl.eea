@@ -10,10 +10,10 @@ init
 
 convertToString
  (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
- (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (L1org/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)L0java/lang/String; # @Inherited(org.eclipse.emf.ecore.impl.EFactoryImpl)
 create
  (Lorg/eclipse/emf/ecore/EClass;)Lorg/eclipse/emf/ecore/EObject;
- (L1org/eclipse/emf/ecore/EClass;)L1org/eclipse/emf/ecore/EObject; # @Generated(2)
+ (L1org/eclipse/emf/ecore/EClass;)L1org/eclipse/emf/ecore/EObject; # @Generated(2) @Overrides(org.eclipse.emf.ecore.impl.EFactoryImpl)
 createBindingContext
  ()Lorg/eclipse/e4/ui/model/application/commands/MBindingContext;
  ()L1org/eclipse/e4/ui/model/application/commands/MBindingContext; # @Inherited(org.eclipse.e4.ui.model.application.commands.MCommandsFactory)
@@ -31,7 +31,7 @@ createCommandParameter
  ()L1org/eclipse/e4/ui/model/application/commands/MCommandParameter; # @Inherited(org.eclipse.e4.ui.model.application.commands.MCommandsFactory)
 createFromString
  (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
- (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)L1java/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/String;)L1java/lang/Object; # @Generated(35) @Overrides(org.eclipse.emf.ecore.impl.EFactoryImpl)
 createHandler
  ()Lorg/eclipse/e4/ui/model/application/commands/MHandler;
  ()L1org/eclipse/e4/ui/model/application/commands/MHandler; # @Inherited(org.eclipse.e4.ui.model.application.commands.MCommandsFactory)

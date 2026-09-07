@@ -1,0 +1,14 @@
+class org/eclipse/compare/patch/IFilePatch2
+
+apply
+ (Lorg/eclipse/compare/patch/ReaderCreator;Lorg/eclipse/compare/patch/PatchConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/compare/patch/IFilePatchResult;
+ (Lorg/eclipse/compare/patch/ReaderCreator;Lorg/eclipse/compare/patch/PatchConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/compare/patch/IFilePatchResult;
+getHeader
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getHunks
+ ()[Lorg/eclipse/compare/patch/IHunk;
+ ()[Lorg/eclipse/compare/patch/IHunk;
+getTargetPath
+ (Lorg/eclipse/compare/patch/PatchConfiguration;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/compare/patch/PatchConfiguration;)Lorg/eclipse/core/runtime/IPath;

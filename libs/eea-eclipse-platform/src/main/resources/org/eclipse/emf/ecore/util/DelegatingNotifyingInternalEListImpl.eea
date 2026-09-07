@@ -1,0 +1,47 @@
+class org/eclipse/emf/ecore/util/DelegatingNotifyingInternalEListImpl
+ <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super org/eclipse/emf/common/notify/impl/DelegatingNotifyingListImpl
+ <TE;>
+ <TE;>
+super org/eclipse/emf/ecore/util/InternalEList
+ <TE;>
+ <TE;>
+
+<init>
+ (Ljava/util/Collection<+TE;>;)V
+ (Ljava/util/Collection<+TE;>;)V
+basicContains
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+basicContainsAll
+ (Ljava/util/Collection<*>;)Z
+ (Ljava/util/Collection<*>;)Z
+basicGet
+ (I)TE;
+ (I)TE;
+basicIndexOf
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+basicIterator
+ ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(org.eclipse.emf.common.util.AbstractEList)
+basicLastIndexOf
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+basicList
+ ()Ljava/util/List<TE;>;
+ ()Ljava/util/List<TE;>;
+basicListIterator
+ ()Ljava/util/ListIterator<TE;>;
+ ()L1java/util/ListIterator<TE;>; # @Inherited(org.eclipse.emf.common.util.AbstractEList)
+basicListIterator
+ (I)Ljava/util/ListIterator<TE;>;
+ (I)L1java/util/ListIterator<TE;>; # @Inherited(org.eclipse.emf.common.util.AbstractEList)
+basicToArray
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+basicToArray
+ <T:Ljava/lang/Object;>([TT;)[TT;
+ <T:Ljava/lang/Object;>([TT;)[TT;

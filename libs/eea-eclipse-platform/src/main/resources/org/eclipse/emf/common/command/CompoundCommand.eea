@@ -1,0 +1,72 @@
+class org/eclipse/emf/common/command/CompoundCommand
+
+commandList
+ Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;
+ Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;
+
+<init>
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V
+<init>
+ (ILjava/lang/String;Ljava/lang/String;)V
+ (ILjava/lang/String;Ljava/lang/String;)V
+<init>
+ (ILjava/lang/String;Ljava/lang/String;Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+ (ILjava/lang/String;Ljava/lang/String;Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+<init>
+ (ILjava/lang/String;Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+ (ILjava/lang/String;Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+<init>
+ (ILjava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+ (ILjava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+<init>
+ (Ljava/lang/String;Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+ (Ljava/lang/String;Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+<init>
+ (Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+ (Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;)V
+append
+ (Lorg/eclipse/emf/common/command/Command;)V
+ (Lorg/eclipse/emf/common/command/Command;)V
+appendAndExecute
+ (Lorg/eclipse/emf/common/command/Command;)Z
+ (L0org/eclipse/emf/common/command/Command;)Z # @Generated
+appendIfCanExecute
+ (Lorg/eclipse/emf/common/command/Command;)Z
+ (L0org/eclipse/emf/common/command/Command;)Z # @Generated
+getAffectedObjects
+ ()Ljava/util/Collection<*>;
+ ()L1java/util/Collection<*>; # @Inherited(org.eclipse.emf.common.command.AbstractCommand)
+getCommandList
+ ()Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;
+ ()Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;
+getDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMergedAffectedObjectsCollection
+ ()Ljava/util/Collection<*>;
+ ()L1java/util/Collection<*>; # @Generated(3)
+getMergedResultCollection
+ ()Ljava/util/Collection<*>;
+ ()L1java/util/Collection<*>; # @Generated(3)
+getResult
+ ()Ljava/util/Collection<*>;
+ ()L1java/util/Collection<*>; # @Inherited(org.eclipse.emf.common.command.AbstractCommand)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.emf.common.command.AbstractCommand)
+unwrap
+ ()Lorg/eclipse/emf/common/command/Command;
+ ()Lorg/eclipse/emf/common/command/Command;

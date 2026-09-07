@@ -1,0 +1,26 @@
+class org/eclipse/team/core/mapping/IResourceDiffTree
+
+accept
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;Lorg/eclipse/team/core/diff/IDiffVisitor;)V
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;Lorg/eclipse/team/core/diff/IDiffVisitor;)V
+getAffectedResources
+ ()[Lorg/eclipse/core/resources/IResource;
+ ()[Lorg/eclipse/core/resources/IResource;
+getDiff
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/diff/IDiff;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/diff/IDiff;
+getDiffs
+ (Lorg/eclipse/core/resources/IResource;I)[Lorg/eclipse/team/core/diff/IDiff;
+ (Lorg/eclipse/core/resources/IResource;I)[Lorg/eclipse/team/core/diff/IDiff;
+getDiffs
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;)[Lorg/eclipse/team/core/diff/IDiff;
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;)[Lorg/eclipse/team/core/diff/IDiff;
+getResource
+ (Lorg/eclipse/team/core/diff/IDiff;)Lorg/eclipse/core/resources/IResource;
+ (Lorg/eclipse/team/core/diff/IDiff;)Lorg/eclipse/core/resources/IResource;
+hasMatchingDiffs
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;Lorg/eclipse/team/core/diff/FastDiffFilter;)Z
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;Lorg/eclipse/team/core/diff/FastDiffFilter;)Z
+members
+ (Lorg/eclipse/core/resources/IResource;)[Lorg/eclipse/core/resources/IResource;
+ (Lorg/eclipse/core/resources/IResource;)[Lorg/eclipse/core/resources/IResource;

@@ -1,0 +1,35 @@
+class org/eclipse/jdt/debug/core/IJavaBreakpoint
+
+addBreakpointListener
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+addInstanceFilter
+ (Lorg/eclipse/jdt/debug/core/IJavaObject;)V
+ (Lorg/eclipse/jdt/debug/core/IJavaObject;)V
+getBreakpointListeners
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getInstanceFilters
+ ()[Lorg/eclipse/jdt/debug/core/IJavaObject;
+ ()[Lorg/eclipse/jdt/debug/core/IJavaObject;
+getThreadFilter
+ (Lorg/eclipse/jdt/debug/core/IJavaDebugTarget;)Lorg/eclipse/jdt/debug/core/IJavaThread;
+ (Lorg/eclipse/jdt/debug/core/IJavaDebugTarget;)Lorg/eclipse/jdt/debug/core/IJavaThread;
+getThreadFilters
+ ()[Lorg/eclipse/jdt/debug/core/IJavaThread;
+ ()[Lorg/eclipse/jdt/debug/core/IJavaThread;
+getTypeName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+removeBreakpointListener
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removeInstanceFilter
+ (Lorg/eclipse/jdt/debug/core/IJavaObject;)V
+ (Lorg/eclipse/jdt/debug/core/IJavaObject;)V
+removeThreadFilter
+ (Lorg/eclipse/jdt/debug/core/IJavaDebugTarget;)V
+ (Lorg/eclipse/jdt/debug/core/IJavaDebugTarget;)V
+setThreadFilter
+ (Lorg/eclipse/jdt/debug/core/IJavaThread;)V
+ (Lorg/eclipse/jdt/debug/core/IJavaThread;)V

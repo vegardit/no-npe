@@ -1,0 +1,94 @@
+class org/eclipse/team/ui/synchronize/ModelSynchronizeParticipant
+
+ALL_MODEL_PROVIDERS_VISIBLE
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+PROP_ACTIVE_SAVEABLE
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+PROP_DIRTY
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+PROP_ENABLED_MODEL_PROVIDERS
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+P_VISIBLE_MODEL_PROVIDER
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+createParticipant
+ (Lorg/eclipse/team/core/mapping/provider/SynchronizationContext;Ljava/lang/String;)Lorg/eclipse/team/ui/synchronize/ModelSynchronizeParticipant;
+ (Lorg/eclipse/team/core/mapping/provider/SynchronizationContext;Ljava/lang/String;)L1org/eclipse/team/ui/synchronize/ModelSynchronizeParticipant; # @Generated(84)
+
+<init>
+ (Lorg/eclipse/team/core/mapping/provider/SynchronizationContext;)V
+ (Lorg/eclipse/team/core/mapping/provider/SynchronizationContext;)V
+asCompareInput
+ (Ljava/lang/Object;)Lorg/eclipse/compare/structuremergeviewer/ICompareInput;
+ (Ljava/lang/Object;)L0org/eclipse/compare/structuremergeviewer/ICompareInput; # @Generated(21)
+checkForBufferChange
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/team/ui/mapping/ISynchronizationCompareInput;ZLorg/eclipse/core/runtime/IProgressMonitor;)Z
+ (Lorg/eclipse/swt/widgets/Shell;L1org/eclipse/team/ui/mapping/ISynchronizationCompareInput;ZLorg/eclipse/core/runtime/IProgressMonitor;)Z # @Generated(33)
+createMergeActionGroup
+ ()Lorg/eclipse/team/ui/synchronize/ModelSynchronizeParticipantActionGroup;
+ ()L1org/eclipse/team/ui/synchronize/ModelSynchronizeParticipantActionGroup; # @Generated
+createPage
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)Lorg/eclipse/ui/part/IPageBookViewPage;
+ (L1org/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)L1org/eclipse/ui/part/IPageBookViewPage; # @Generated(2,66)
+createScopeManager
+ ([Lorg/eclipse/core/resources/mapping/ResourceMapping;)Lorg/eclipse/team/core/mapping/ISynchronizationScopeManager;
+ ([Lorg/eclipse/core/resources/mapping/ResourceMapping;)L1org/eclipse/team/core/mapping/ISynchronizationScopeManager; # @Generated(56)
+getActiveSaveable
+ ()Lorg/eclipse/team/ui/mapping/SaveableComparison;
+ ()Lorg/eclipse/team/ui/mapping/SaveableComparison;
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.PlatformObject)
+getContext
+ ()Lorg/eclipse/team/core/mapping/ISynchronizationContext;
+ ()Lorg/eclipse/team/core/mapping/ISynchronizationContext;
+getEnabledModelProviders
+ ()[Lorg/eclipse/core/resources/mapping/ModelProvider;
+ ()[Lorg/eclipse/core/resources/mapping/ModelProvider;
+getLongTaskName
+ ([Lorg/eclipse/core/resources/mapping/ResourceMapping;)Ljava/lang/String;
+ ([Lorg/eclipse/core/resources/mapping/ResourceMapping;)L1java/lang/String; # @Generated(56)
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getPreferencePages
+ ()[Lorg/eclipse/jface/preference/PreferencePage;
+ ()[1Lorg/eclipse/jface/preference/PreferencePage; # @Inherited(org.eclipse.team.ui.synchronize.AbstractSynchronizeParticipant)
+getShortName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getShortTaskName
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+hasCompareInputFor
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+init
+ (Ljava/lang/String;Lorg/eclipse/ui/IMemento;)V
+ (Ljava/lang/String;L1org/eclipse/ui/IMemento;)V # @Inherited(org.eclipse.team.ui.synchronize.AbstractSynchronizeParticipant)
+initializeConfiguration
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V
+ (L1org/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V # @Generated
+initializeContext
+ (Lorg/eclipse/team/core/mapping/provider/SynchronizationContext;)V
+ (Lorg/eclipse/team/core/mapping/provider/SynchronizationContext;)V
+refresh
+ (Lorg/eclipse/ui/IWorkbenchSite;[Lorg/eclipse/core/resources/mapping/ResourceMapping;)V
+ (Lorg/eclipse/ui/IWorkbenchSite;[Lorg/eclipse/core/resources/mapping/ResourceMapping;)V
+restoreContext
+ (Lorg/eclipse/team/core/mapping/ISynchronizationScopeManager;)Lorg/eclipse/team/core/mapping/provider/MergeContext;
+ (Lorg/eclipse/team/core/mapping/ISynchronizationScopeManager;)Lorg/eclipse/team/core/mapping/provider/MergeContext;
+run
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (L1org/eclipse/ui/IMemento;)V # @Inherited(org.eclipse.team.ui.synchronize.AbstractSynchronizeParticipant)
+setActiveSaveable
+ (Lorg/eclipse/team/ui/mapping/SaveableComparison;)V
+ (Lorg/eclipse/team/ui/mapping/SaveableComparison;)V

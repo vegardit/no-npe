@@ -1,0 +1,72 @@
+class org/eclipse/emf/ecore/change/util/ChangeRecorder
+
+eObjectToProxyURIMap
+ Ljava/util/Map<Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/common/util/URI;>;
+ Ljava/util/Map<Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/common/util/URI;>;
+originalTargetObjects
+ Ljava/util/List<Lorg/eclipse/emf/common/notify/Notifier;>;
+ Ljava/util/List<Lorg/eclipse/emf/common/notify/Notifier;>;
+targetObjects
+ Ljava/util/List<Lorg/eclipse/emf/common/notify/Notifier;>;
+ Ljava/util/List<Lorg/eclipse/emf/common/notify/Notifier;>;
+
+<init>
+ (Ljava/util/Collection<*>;)V
+ (Ljava/util/Collection<*>;)V
+<init>
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+<init>
+ (Lorg/eclipse/emf/ecore/resource/Resource;)V
+ (Lorg/eclipse/emf/ecore/resource/Resource;)V
+<init>
+ (Lorg/eclipse/emf/ecore/resource/ResourceSet;)V
+ (Lorg/eclipse/emf/ecore/resource/ResourceSet;)V
+addAdapter
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+beginRecording
+ (Ljava/util/Collection<*>;)V
+ (Ljava/util/Collection<*>;)V
+beginRecording
+ (Lorg/eclipse/emf/ecore/change/ChangeDescription;Ljava/util/Collection<*>;)V
+ (Lorg/eclipse/emf/ecore/change/ChangeDescription;L1java/util/Collection<*>;)V # @Generated(50)
+getEObjectToProxyURIMap
+ ()Ljava/util/Map<Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/common/util/URI;>;
+ ()Ljava/util/Map<Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/common/util/URI;>;
+getTarget
+ ()Lorg/eclipse/emf/common/notify/Notifier;
+ ()L0org/eclipse/emf/common/notify/Notifier; # @Generated
+handleFeature
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/ecore/EReference;Lorg/eclipse/emf/common/notify/Notification;Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/ecore/EReference;L1org/eclipse/emf/common/notify/Notification;Lorg/eclipse/emf/ecore/EObject;)V # @Generated(78)
+handleResource
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+ (L1org/eclipse/emf/common/notify/Notification;)V # @Generated
+handleTarget
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+isAdapterForType
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isOrphan
+ (Lorg/eclipse/emf/ecore/EObject;)Z
+ (L1org/eclipse/emf/ecore/EObject;)Z # @Generated
+notifyChanged
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+ (L1org/eclipse/emf/common/notify/Notification;)V # @Generated
+removeAdapter
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+ (L1org/eclipse/emf/common/notify/Notifier;)V # @Generated
+setEObjectToProxyURIMap
+ (Ljava/util/Map<Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/common/util/URI;>;)V
+ (Ljava/util/Map<Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/common/util/URI;>;)V
+setTarget
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+shouldRecord
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/ecore/EReference;Lorg/eclipse/emf/common/notify/Notification;Lorg/eclipse/emf/ecore/EObject;)Z
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/ecore/EReference;Lorg/eclipse/emf/common/notify/Notification;Lorg/eclipse/emf/ecore/EObject;)Z
+unsetTarget
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+ (Lorg/eclipse/emf/common/notify/Notifier;)V

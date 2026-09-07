@@ -1,0 +1,50 @@
+class org/eclipse/team/core/subscribers/Subscriber
+
+accept
+ ([Lorg/eclipse/core/resources/IResource;ILorg/eclipse/team/core/diff/IDiffVisitor;)V
+ ([1Lorg/eclipse/core/resources/IResource;ILorg/eclipse/team/core/diff/IDiffVisitor;)V # @Generated(2)
+accept
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;Lorg/eclipse/team/core/diff/IDiffVisitor;)V
+ ([1Lorg/eclipse/core/resources/mapping/ResourceTraversal;Lorg/eclipse/team/core/diff/IDiffVisitor;)V # @Generated(2)
+addListener
+ (Lorg/eclipse/team/core/subscribers/ISubscriberChangeListener;)V
+ (L1org/eclipse/team/core/subscribers/ISubscriberChangeListener;)V # @Generated
+collectOutOfSync
+ ([Lorg/eclipse/core/resources/IResource;ILorg/eclipse/team/core/synchronize/SyncInfoSet;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([1Lorg/eclipse/core/resources/IResource;ILorg/eclipse/team/core/synchronize/SyncInfoSet;L1org/eclipse/core/runtime/IProgressMonitor;)V # @Generated(2,89)
+fireTeamResourceChange
+ ([Lorg/eclipse/team/core/subscribers/ISubscriberChangeEvent;)V
+ ([Lorg/eclipse/team/core/subscribers/ISubscriberChangeEvent;)V
+getDiff
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/diff/IDiff;
+ (Lorg/eclipse/core/resources/IResource;)L0org/eclipse/team/core/diff/IDiff; # @Generated(41)
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getResourceComparator
+ ()Lorg/eclipse/team/core/variants/IResourceVariantComparator;
+ ()Lorg/eclipse/team/core/variants/IResourceVariantComparator;
+getState
+ (Lorg/eclipse/core/resources/mapping/ResourceMapping;ILorg/eclipse/core/runtime/IProgressMonitor;)I
+ (L1org/eclipse/core/resources/mapping/ResourceMapping;ILorg/eclipse/core/runtime/IProgressMonitor;)I # @Generated(2)
+getSyncInfo
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/synchronize/SyncInfo;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/synchronize/SyncInfo;
+isSupervised
+ (Lorg/eclipse/core/resources/IResource;)Z
+ (Lorg/eclipse/core/resources/IResource;)Z
+members
+ (Lorg/eclipse/core/resources/IResource;)[Lorg/eclipse/core/resources/IResource;
+ (Lorg/eclipse/core/resources/IResource;)[Lorg/eclipse/core/resources/IResource;
+refresh
+ ([Lorg/eclipse/core/resources/IResource;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/core/resources/IResource;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+refresh
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([1Lorg/eclipse/core/resources/mapping/ResourceTraversal;L1org/eclipse/core/runtime/IProgressMonitor;)V # @Generated(2,57)
+removeListener
+ (Lorg/eclipse/team/core/subscribers/ISubscriberChangeListener;)V
+ (L1org/eclipse/team/core/subscribers/ISubscriberChangeListener;)V # @Generated
+roots
+ ()[Lorg/eclipse/core/resources/IResource;
+ ()[Lorg/eclipse/core/resources/IResource;

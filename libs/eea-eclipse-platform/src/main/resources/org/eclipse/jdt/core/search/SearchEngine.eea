@@ -1,0 +1,126 @@
+class org/eclipse/jdt/core/search/SearchEngine
+
+createHierarchyScope
+ (Lorg/eclipse/jdt/core/IType;)Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ (L1org/eclipse/jdt/core/IType;)L1org/eclipse/jdt/core/search/IJavaSearchScope; # @Generated(2,31)
+createHierarchyScope
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ (L1org/eclipse/jdt/core/IType;Lorg/eclipse/jdt/core/WorkingCopyOwner;)L1org/eclipse/jdt/core/search/IJavaSearchScope; # @Generated(2,70)
+createJavaSearchScope
+ (Z[Lorg/eclipse/jdt/core/IJavaElement;I)Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ (Z[1Lorg/eclipse/jdt/core/IJavaElement;I)L1org/eclipse/jdt/core/search/IJavaSearchScope; # @Generated(3,41)
+createJavaSearchScope
+ (Z[Lorg/eclipse/jdt/core/IJavaElement;Z)Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ (Z[1Lorg/eclipse/jdt/core/IJavaElement;Z)L1org/eclipse/jdt/core/search/IJavaSearchScope; # @Generated(3,41)
+createJavaSearchScope
+ ([Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ ([1Lorg/eclipse/core/resources/IResource;)L1org/eclipse/jdt/core/search/IJavaSearchScope; # @Generated(2,42)
+createJavaSearchScope
+ ([Lorg/eclipse/jdt/core/IJavaElement;)Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ ([1Lorg/eclipse/jdt/core/IJavaElement;)L1org/eclipse/jdt/core/search/IJavaSearchScope; # @Generated(2,39)
+createJavaSearchScope
+ ([Lorg/eclipse/jdt/core/IJavaElement;I)Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ ([1Lorg/eclipse/jdt/core/IJavaElement;I)L1org/eclipse/jdt/core/search/IJavaSearchScope; # @Generated(2,40)
+createJavaSearchScope
+ ([Lorg/eclipse/jdt/core/IJavaElement;Z)Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ ([1Lorg/eclipse/jdt/core/IJavaElement;Z)L1org/eclipse/jdt/core/search/IJavaSearchScope; # @Generated(2,40)
+createMethodNameMatch
+ (Lorg/eclipse/jdt/core/IMethod;I)Lorg/eclipse/jdt/core/search/MethodNameMatch;
+ (Lorg/eclipse/jdt/core/IMethod;I)L1org/eclipse/jdt/core/search/MethodNameMatch; # @Generated(34)
+createOrSearchPattern
+ (Lorg/eclipse/jdt/core/search/ISearchPattern;Lorg/eclipse/jdt/core/search/ISearchPattern;)Lorg/eclipse/jdt/core/search/ISearchPattern;
+ (L1org/eclipse/jdt/core/search/ISearchPattern;L1org/eclipse/jdt/core/search/ISearchPattern;)L1org/eclipse/jdt/core/search/ISearchPattern; # @Generated(2,46,91)
+createSearchPattern
+ (Ljava/lang/String;IIZ)Lorg/eclipse/jdt/core/search/ISearchPattern;
+ (L1java/lang/String;IIZ)L1org/eclipse/jdt/core/search/ISearchPattern; # @Generated(2,24)
+createSearchPattern
+ (Lorg/eclipse/jdt/core/IJavaElement;I)Lorg/eclipse/jdt/core/search/ISearchPattern;
+ (Lorg/eclipse/jdt/core/IJavaElement;I)L1org/eclipse/jdt/core/search/ISearchPattern; # @Generated(39)
+createStrictHierarchyScope
+ (Lorg/eclipse/jdt/core/IJavaProject;Lorg/eclipse/jdt/core/IType;ZZLorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ (Lorg/eclipse/jdt/core/IJavaProject;L1org/eclipse/jdt/core/IType;ZZLorg/eclipse/jdt/core/WorkingCopyOwner;)L1org/eclipse/jdt/core/search/IJavaSearchScope; # @Generated(37,107)
+createTypeNameMatch
+ (Lorg/eclipse/jdt/core/IType;I)Lorg/eclipse/jdt/core/search/TypeNameMatch;
+ (Lorg/eclipse/jdt/core/IType;I)L1org/eclipse/jdt/core/search/TypeNameMatch; # @Generated(32)
+createWorkspaceScope
+ ()Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+ ()Lorg/eclipse/jdt/core/search/IJavaSearchScope;
+getDefaultSearchParticipant
+ ()Lorg/eclipse/jdt/core/search/SearchParticipant;
+ ()L1org/eclipse/jdt/core/search/SearchParticipant; # @Generated
+getSearchParticipants
+ ()[Lorg/eclipse/jdt/core/search/SearchParticipant;
+ ()[1Lorg/eclipse/jdt/core/search/SearchParticipant; # @Generated(3)
+
+<init>
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+<init>
+ ([Lorg/eclipse/jdt/core/ICompilationUnit;)V
+ ([Lorg/eclipse/jdt/core/ICompilationUnit;)V
+<init>
+ ([Lorg/eclipse/jdt/core/IWorkingCopy;)V
+ ([1Lorg/eclipse/jdt/core/IWorkingCopy;)V # @Generated(2)
+search
+ (Lorg/eclipse/core/resources/IWorkspace;Ljava/lang/String;IILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/IJavaSearchResultCollector;)V
+ (Lorg/eclipse/core/resources/IWorkspace;L1java/lang/String;IILorg/eclipse/jdt/core/search/IJavaSearchScope;L1org/eclipse/jdt/core/search/IJavaSearchResultCollector;)V # @Generated(41,107)
+search
+ (Lorg/eclipse/core/resources/IWorkspace;Lorg/eclipse/jdt/core/IJavaElement;ILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/IJavaSearchResultCollector;)V
+ (Lorg/eclipse/core/resources/IWorkspace;Lorg/eclipse/jdt/core/IJavaElement;ILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/IJavaSearchResultCollector;)V
+search
+ (Lorg/eclipse/core/resources/IWorkspace;Lorg/eclipse/jdt/core/search/ISearchPattern;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/IJavaSearchResultCollector;)V
+ (Lorg/eclipse/core/resources/IWorkspace;L1org/eclipse/jdt/core/search/ISearchPattern;Lorg/eclipse/jdt/core/search/IJavaSearchScope;L1org/eclipse/jdt/core/search/IJavaSearchResultCollector;)V # @Generated(41,131)
+search
+ (Lorg/eclipse/jdt/core/search/SearchPattern;[Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/jdt/core/search/SearchPattern;[Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllMethodNames
+ ([CI[CILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/MethodNameMatchRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([CI[CILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/MethodNameMatchRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllMethodNames
+ ([CI[CILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/MethodNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([CI[CILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/MethodNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllMethodNames
+ ([CI[CI[CI[CILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/MethodNameMatchRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([CI[CI[CI[CILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/MethodNameMatchRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllMethodNames
+ ([CI[CI[CI[CILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/MethodNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([CI[CI[CI[CILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/MethodNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllTypeNames
+ (Lorg/eclipse/core/resources/IWorkspace;[C[CIZILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/ITypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/resources/IWorkspace;[C[CIZILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/ITypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllTypeNames
+ ([CI[CIILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameMatchRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([CI[CIILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameMatchRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllTypeNames
+ ([CI[CIILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([CI[CIILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllTypeNames
+ ([C[CIILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/ITypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([C[CIILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/ITypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllTypeNames
+ ([C[CIILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([C[CIILorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllTypeNames
+ ([[C[[CLorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameMatchRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([[C[[CLorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameMatchRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchAllTypeNames
+ ([[C[[CLorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([[C[[CLorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/jdt/core/search/TypeNameRequestor;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+searchDeclarationsOfAccessedFields
+ (Lorg/eclipse/core/resources/IWorkspace;Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/core/search/IJavaSearchResultCollector;)V
+ (Lorg/eclipse/core/resources/IWorkspace;Lorg/eclipse/jdt/core/IJavaElement;L1org/eclipse/jdt/core/search/IJavaSearchResultCollector;)V # @Generated(76)
+searchDeclarationsOfAccessedFields
+ (Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+searchDeclarationsOfReferencedTypes
+ (Lorg/eclipse/core/resources/IWorkspace;Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/core/search/IJavaSearchResultCollector;)V
+ (Lorg/eclipse/core/resources/IWorkspace;Lorg/eclipse/jdt/core/IJavaElement;L1org/eclipse/jdt/core/search/IJavaSearchResultCollector;)V # @Generated(76)
+searchDeclarationsOfReferencedTypes
+ (Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+searchDeclarationsOfSentMessages
+ (Lorg/eclipse/core/resources/IWorkspace;Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/core/search/IJavaSearchResultCollector;)V
+ (Lorg/eclipse/core/resources/IWorkspace;Lorg/eclipse/jdt/core/IJavaElement;L1org/eclipse/jdt/core/search/IJavaSearchResultCollector;)V # @Generated(76)
+searchDeclarationsOfSentMessages
+ (Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/jdt/core/search/SearchRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V

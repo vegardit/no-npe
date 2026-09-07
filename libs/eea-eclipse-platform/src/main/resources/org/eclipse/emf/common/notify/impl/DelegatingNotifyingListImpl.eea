@@ -1,0 +1,122 @@
+class org/eclipse/emf/common/notify/impl/DelegatingNotifyingListImpl
+ <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super org/eclipse/emf/common/util/DelegatingEList
+ <TE;>
+ <TE;>
+super org/eclipse/emf/common/notify/NotifyingList
+ <TE;>
+ <TE;>
+
+<init>
+ (Ljava/util/Collection<+TE;>;)V
+ (Ljava/util/Collection<+TE;>;)V
+addAllUnique
+ (ILjava/util/Collection<+TE;>;)Z
+ (IL1java/util/Collection<+TE;>;)Z # @Inherited(org.eclipse.emf.common.util.DelegatingEList)
+addAllUnique
+ (I[Ljava/lang/Object;II)Z
+ (I[Ljava/lang/Object;II)Z
+addAllUnique
+ (Ljava/util/Collection<+TE;>;)Z
+ (L1java/util/Collection<+TE;>;)Z # @Inherited(org.eclipse.emf.common.util.DelegatingEList)
+addAllUnique
+ ([Ljava/lang/Object;II)Z
+ ([Ljava/lang/Object;II)Z
+addUnique
+ (ITE;)V
+ (ITE;)V
+addUnique
+ (TE;)V
+ (TE;)V
+basicAdd
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+basicRemove
+ (Ljava/lang/Object;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (Ljava/lang/Object;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+basicSet
+ (ITE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (ITE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+createNotification
+ (ILjava/lang/Object;Ljava/lang/Object;I)Lorg/eclipse/emf/common/notify/impl/NotificationImpl;
+ (ILjava/lang/Object;Ljava/lang/Object;I)Lorg/eclipse/emf/common/notify/impl/NotificationImpl;
+createNotification
+ (ILjava/lang/Object;Ljava/lang/Object;IZ)Lorg/eclipse/emf/common/notify/impl/NotificationImpl;
+ (ILjava/lang/Object;Ljava/lang/Object;IZ)L1org/eclipse/emf/common/notify/impl/NotificationImpl; # @Generated(42)
+createNotificationChain
+ (I)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (I)L0org/eclipse/emf/common/notify/NotificationChain; # @Generated
+dispatchNotification
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+doAddAllUnique
+ (ILjava/util/Collection<+TE;>;)Z
+ (IL1java/util/Collection<+TE;>;)Z # @Generated(3)
+doAddAllUnique
+ (I[Ljava/lang/Object;II)Z
+ (I[Ljava/lang/Object;II)Z
+doAddAllUnique
+ (Ljava/util/Collection<+TE;>;)Z
+ (L1java/util/Collection<+TE;>;)Z # @Generated(2)
+doAddAllUnique
+ ([Ljava/lang/Object;II)Z
+ ([Ljava/lang/Object;II)Z
+doAddUnique
+ (ITE;)V
+ (ITE;)V
+doAddUnique
+ (TE;)V
+ (TE;)V
+doMove
+ (II)TE;
+ (II)TE;
+doRemove
+ (I)TE;
+ (I)TE;
+doRemoveAll
+ (Ljava/util/Collection<*>;)Z
+ (Ljava/util/Collection<*>;)Z
+doSetUnique
+ (ITE;)TE;
+ (ITE;)TE;
+getFeature
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Generated
+getFeatureID
+ (Ljava/lang/Class<*>;)I
+ (Ljava/lang/Class<*>;)I
+getNotifier
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Generated
+inverseAdd
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain; # @Generated(PolyNull)
+inverseRemove
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain; # @Generated(PolyNull)
+move
+ (II)TE;
+ (II)TE;
+remove
+ (I)TE;
+ (I)T0E; # @Generated
+removeAll
+ (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(org.eclipse.emf.common.util.DelegatingEList)
+resolve
+ (TE;)TE;
+ (TE;)TE; # @Generated(PolyNull)
+setUnique
+ (ITE;)TE;
+ (ITE;)T0E; # @Generated(7)
+shadowAdd
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain; # @Generated(PolyNull)
+shadowRemove
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain; # @Generated(PolyNull)
+shadowSet
+ (TE;TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (TE;TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain; # @Generated(PolyNull)

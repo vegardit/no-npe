@@ -1,0 +1,93 @@
+class org/eclipse/emf/ecore/resource/impl/ResourceSetImpl
+
+adapterFactories
+ Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/common/notify/AdapterFactory;>;
+ Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/common/notify/AdapterFactory;>;
+loadOptions
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+packageRegistry
+ Lorg/eclipse/emf/ecore/EPackage$Registry;
+ Lorg/eclipse/emf/ecore/EPackage$Registry;
+resourceFactoryRegistry
+ Lorg/eclipse/emf/ecore/resource/Resource$Factory$Registry;
+ Lorg/eclipse/emf/ecore/resource/Resource$Factory$Registry;
+resourceLocator
+ Lorg/eclipse/emf/ecore/resource/impl/ResourceSetImpl$ResourceLocator;
+ Lorg/eclipse/emf/ecore/resource/impl/ResourceSetImpl$ResourceLocator;
+resources
+ Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource;>;
+ Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource;>;
+uriConverter
+ Lorg/eclipse/emf/ecore/resource/URIConverter;
+ Lorg/eclipse/emf/ecore/resource/URIConverter;
+uriResourceMap
+ Ljava/util/Map<Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/ecore/resource/Resource;>;
+ Ljava/util/Map<Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/ecore/resource/Resource;>;
+
+createResource
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/ecore/resource/Resource;
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/ecore/resource/Resource;
+createResource
+ (Lorg/eclipse/emf/common/util/URI;Ljava/lang/String;)Lorg/eclipse/emf/ecore/resource/Resource;
+ (Lorg/eclipse/emf/common/util/URI;Ljava/lang/String;)L0org/eclipse/emf/ecore/resource/Resource; # @Generated(54)
+delegatedGetResource
+ (Lorg/eclipse/emf/common/util/URI;Z)Lorg/eclipse/emf/ecore/resource/Resource;
+ (L1org/eclipse/emf/common/util/URI;Z)L0org/eclipse/emf/ecore/resource/Resource; # @Generated(2,37)
+demandCreateResource
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/ecore/resource/Resource;
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/ecore/resource/Resource;
+demandLoad
+ (Lorg/eclipse/emf/ecore/resource/Resource;)V
+ (L1org/eclipse/emf/ecore/resource/Resource;)V # @Generated
+demandLoadHelper
+ (Lorg/eclipse/emf/ecore/resource/Resource;)V
+ (Lorg/eclipse/emf/ecore/resource/Resource;)V
+getAdapterFactories
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/common/notify/AdapterFactory;>;
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/common/notify/AdapterFactory;>;
+getAllContents
+ ()Lorg/eclipse/emf/common/util/TreeIterator<Lorg/eclipse/emf/common/notify/Notifier;>;
+ ()L1org/eclipse/emf/common/util/TreeIterator<Lorg/eclipse/emf/common/notify/Notifier;>; # @Generated(3)
+getEObject
+ (Lorg/eclipse/emf/common/util/URI;Z)Lorg/eclipse/emf/ecore/EObject;
+ (L1org/eclipse/emf/common/util/URI;Z)L0org/eclipse/emf/ecore/EObject; # @Generated(2,37)
+getLoadOptions
+ ()Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ ()Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+getPackageRegistry
+ ()Lorg/eclipse/emf/ecore/EPackage$Registry;
+ ()Lorg/eclipse/emf/ecore/EPackage$Registry;
+getResource
+ (Lorg/eclipse/emf/common/util/URI;Z)Lorg/eclipse/emf/ecore/resource/Resource;
+ (Lorg/eclipse/emf/common/util/URI;Z)L0org/eclipse/emf/ecore/resource/Resource; # @Generated(37)
+getResourceFactoryRegistry
+ ()Lorg/eclipse/emf/ecore/resource/Resource$Factory$Registry;
+ ()Lorg/eclipse/emf/ecore/resource/Resource$Factory$Registry;
+getResources
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource;>;
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource;>;
+getURIConverter
+ ()Lorg/eclipse/emf/ecore/resource/URIConverter;
+ ()Lorg/eclipse/emf/ecore/resource/URIConverter;
+getURIResourceMap
+ ()Ljava/util/Map<Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/ecore/resource/Resource;>;
+ ()Ljava/util/Map<Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/ecore/resource/Resource;>;
+handleDemandLoadException
+ (Lorg/eclipse/emf/ecore/resource/Resource;Ljava/io/IOException;)V
+ (Lorg/eclipse/emf/ecore/resource/Resource;Ljava/io/IOException;)V
+setPackageRegistry
+ (Lorg/eclipse/emf/ecore/EPackage$Registry;)V
+ (Lorg/eclipse/emf/ecore/EPackage$Registry;)V
+setResourceFactoryRegistry
+ (Lorg/eclipse/emf/ecore/resource/Resource$Factory$Registry;)V
+ (Lorg/eclipse/emf/ecore/resource/Resource$Factory$Registry;)V
+setURIConverter
+ (Lorg/eclipse/emf/ecore/resource/URIConverter;)V
+ (Lorg/eclipse/emf/ecore/resource/URIConverter;)V
+setURIResourceMap
+ (Ljava/util/Map<Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/ecore/resource/Resource;>;)V
+ (Ljava/util/Map<Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/ecore/resource/Resource;>;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

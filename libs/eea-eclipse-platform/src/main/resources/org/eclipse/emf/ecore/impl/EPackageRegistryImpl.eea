@@ -1,0 +1,45 @@
+class org/eclipse/emf/ecore/impl/EPackageRegistryImpl
+
+super java/util/HashMap
+ <Ljava/lang/String;Ljava/lang/Object;>
+ <Ljava/lang/String;Ljava/lang/Object;>
+
+classLoaderToRegistryMap
+ Ljava/util/Map<Ljava/lang/ClassLoader;Lorg/eclipse/emf/ecore/EPackage$Registry;>;
+ Ljava/util/Map<Ljava/lang/ClassLoader;Lorg/eclipse/emf/ecore/EPackage$Registry;>;
+
+createGlobalRegistry
+ ()Lorg/eclipse/emf/ecore/EPackage$Registry;
+ ()Lorg/eclipse/emf/ecore/EPackage$Registry;
+doPrivileged
+ <T:Ljava/lang/Object;>(Ljava/security/PrivilegedAction<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/security/PrivilegedAction<TT;>;)TT;
+getRegistry
+ (Ljava/lang/ClassLoader;)Lorg/eclipse/emf/ecore/EPackage$Registry;
+ (Ljava/lang/ClassLoader;)L0org/eclipse/emf/ecore/EPackage$Registry; # @Generated(26)
+
+delegateRegistry
+ Lorg/eclipse/emf/ecore/EPackage$Registry;
+ Lorg/eclipse/emf/ecore/EPackage$Registry;
+
+<init>
+ (Lorg/eclipse/emf/ecore/EPackage$Registry;)V
+ (Lorg/eclipse/emf/ecore/EPackage$Registry;)V
+containsKey
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.HashMap)
+delegatedGetEFactory
+ (Ljava/lang/String;)Lorg/eclipse/emf/ecore/EFactory;
+ (Ljava/lang/String;)L0org/eclipse/emf/ecore/EFactory; # @Generated(21)
+delegatedGetEPackage
+ (Ljava/lang/String;)Lorg/eclipse/emf/ecore/EPackage;
+ (Ljava/lang/String;)L0org/eclipse/emf/ecore/EPackage; # @Generated(21)
+getEFactory
+ (Ljava/lang/String;)Lorg/eclipse/emf/ecore/EFactory;
+ (Ljava/lang/String;)Lorg/eclipse/emf/ecore/EFactory;
+getEPackage
+ (Ljava/lang/String;)Lorg/eclipse/emf/ecore/EPackage;
+ (Ljava/lang/String;)L0org/eclipse/emf/ecore/EPackage; # @Generated(21)
+initialize
+ (Lorg/eclipse/emf/ecore/EPackage;)V
+ (Lorg/eclipse/emf/ecore/EPackage;)V

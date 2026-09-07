@@ -1,0 +1,33 @@
+class org/eclipse/emf/common/archive/ArchiveURLConnection
+
+urlString
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljava/net/URL;)V
+ (L1java/net/URL;)V # @Generated
+createInputStream
+ (Ljava/lang/String;)Ljava/io/InputStream;
+ (Ljava/lang/String;)Ljava/io/InputStream;
+createOutputStream
+ (Ljava/lang/String;)Ljava/io/OutputStream;
+ (Ljava/lang/String;)Ljava/io/OutputStream;
+getInputStream
+ ()Ljava/io/InputStream;
+ ()L1java/io/InputStream; # @Inherited(java.net.URLConnection)
+getNestedURL
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getOutputStream
+ ()Ljava/io/OutputStream;
+ ()L1java/io/OutputStream; # @Inherited(java.net.URLConnection)
+yield
+ (Ljava/util/zip/ZipEntry;Ljava/io/InputStream;)Ljava/io/InputStream;
+ (Ljava/util/zip/ZipEntry;Ljava/io/InputStream;)Ljava/io/InputStream; # @Generated(PolyNull)
+yield
+ (Ljava/util/zip/ZipEntry;Ljava/io/OutputStream;)Ljava/io/OutputStream;
+ (Ljava/util/zip/ZipEntry;Ljava/io/OutputStream;)Ljava/io/OutputStream; # @Generated(PolyNull)

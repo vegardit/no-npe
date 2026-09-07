@@ -1,0 +1,41 @@
+class org/eclipse/emf/ecore/resource/impl/ResourceImpl$ContentsEList
+ <E:Ljava/lang/Object;:Lorg/eclipse/emf/ecore/EObject;>
+ <E:Ljava/lang/Object;:Lorg/eclipse/emf/ecore/EObject;>
+
+super org/eclipse/emf/ecore/util/NotifyingInternalEListImpl
+ <TE;>
+ <TE;>
+super org/eclipse/emf/ecore/util/InternalEList
+ <TE;>
+ <TE;>
+
+<init>
+ (Lorg/eclipse/emf/ecore/resource/impl/ResourceImpl;)V
+ (Lorg/eclipse/emf/ecore/resource/impl/ResourceImpl;)V
+contains
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.eclipse.emf.common.util.BasicEList)
+didAdd
+ (ITE;)V
+ (ITE;)V
+didClear
+ (I[Ljava/lang/Object;)V
+ (I[0Ljava/lang/Object;)V # @Inherited(org.eclipse.emf.common.util.AbstractEList)
+didRemove
+ (ITE;)V
+ (ITE;)V
+didSet
+ (ITE;TE;)V
+ (ITE;TE;)V
+getNotifier
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.eclipse.emf.common.notify.impl.NotifyingListImpl)
+inverseAdd
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (T1E;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain; # @Overrides(org.eclipse.emf.common.notify.impl.NotifyingListImpl)
+inverseRemove
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (T1E;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain; # @Overrides(org.eclipse.emf.common.notify.impl.NotifyingListImpl)
+newData
+ (I)[Ljava/lang/Object;
+ (I)[1Ljava/lang/Object; # @Inherited(org.eclipse.emf.common.util.BasicEList)

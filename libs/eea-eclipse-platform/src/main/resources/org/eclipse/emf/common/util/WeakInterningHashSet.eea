@@ -1,0 +1,85 @@
+class org/eclipse/emf/common/util/WeakInterningHashSet
+ <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/AbstractSet
+ <TE;>
+ <TE;>
+super org/eclipse/emf/common/util/InterningSet
+ <TE;>
+ <TE;>
+
+NULL_ENTRY
+ Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<Ljava/lang/Object;>;
+ L1org/eclipse/emf/common/util/WeakInterningHashSet$Entry<Ljava/lang/Object;>; # @Generated(1)
+PRIME_CAPACITIES
+ [I
+ [1I # @Generated
+
+entries
+ [Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+ [Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+externalQueue
+ Ljava/lang/ref/ReferenceQueue<Ljava/lang/Object;>;
+ Ljava/lang/ref/ReferenceQueue<Ljava/lang/Object;>;
+internalQueue
+ Ljava/lang/ref/ReferenceQueue<TE;>;
+ Ljava/lang/ref/ReferenceQueue<TE;>;
+
+add
+ (TE;)Z
+ (TE;)Z
+addEntry
+ (ILorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;)V
+ (ILorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;)V
+asInstance
+ (Ljava/lang/Object;)TE;
+ (Ljava/lang/Object;)TE; # @Generated(PolyNull)
+contains
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+equals
+ (TE;TE;)Z
+ (T1E;TE;)Z # @Generated(2)
+get
+ (TE;)TE;
+ (TE;)T0E; # @Generated(6)
+getEntry
+ (I)Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+ (I)L0org/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>; # @Generated(4)
+hashCode
+ (TE;)I
+ (T1E;)I # @Generated
+intern
+ (TE;)TE;
+ (TE;)T0E; # @Generated(6)
+iterator
+ ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(java.util.AbstractCollection)
+newEntries
+ (I)[Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+ (I)[1Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>; # @Generated(4)
+newEntry
+ (TE;I)Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+ (TE;I)Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+newExternalEntry
+ (TE;I)Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+ (TE;I)L1org/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>; # @Generated(7)
+newInternalEntry
+ (TE;I)Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+ (TE;I)L1org/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>; # @Generated(7)
+nullEntry
+ ()Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+ ()L1org/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>; # @Generated(3)
+putEntry
+ (ILorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;)V
+ (IL1org/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;)V # @Generated(3)
+remove
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+removeEntry
+ (ILorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;)Z
+ (ILorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;)Z
+removeEntry
+ (Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;)V
+ (L1org/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;)V # @Generated(2)

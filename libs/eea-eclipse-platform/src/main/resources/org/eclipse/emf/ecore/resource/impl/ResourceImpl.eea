@@ -1,0 +1,181 @@
+class org/eclipse/emf/ecore/resource/impl/ResourceImpl
+
+getDefaultURIConverter
+ ()Lorg/eclipse/emf/ecore/resource/URIConverter;
+ ()Lorg/eclipse/emf/ecore/resource/URIConverter;
+mergeMaps
+ (Ljava/util/Map<**>;Ljava/util/Map<**>;)Ljava/util/Map<**>;
+ (L0java/util/Map<**>;Ljava/util/Map<**>;)Ljava/util/Map<**>; # @Generated(2,PolyNull)
+
+contents
+ Lorg/eclipse/emf/ecore/resource/impl/ResourceImpl$ContentsEList<Lorg/eclipse/emf/ecore/EObject;>;
+ Lorg/eclipse/emf/ecore/resource/impl/ResourceImpl$ContentsEList<Lorg/eclipse/emf/ecore/EObject;>;
+defaultDeleteOptions
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+defaultLoadOptions
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+defaultSaveOptions
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+errors
+ Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource$Diagnostic;>;
+ Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource$Diagnostic;>;
+intrinsicIDToEObjectMap
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EObject;>;
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EObject;>;
+modificationTrackingAdapter
+ Lorg/eclipse/emf/common/notify/Adapter;
+ Lorg/eclipse/emf/common/notify/Adapter;
+resourceSet
+ Lorg/eclipse/emf/ecore/resource/ResourceSet;
+ Lorg/eclipse/emf/ecore/resource/ResourceSet;
+unloadingContents
+ Ljava/util/List<Lorg/eclipse/emf/ecore/EObject;>;
+ Ljava/util/List<Lorg/eclipse/emf/ecore/EObject;>;
+uri
+ Lorg/eclipse/emf/common/util/URI;
+ Lorg/eclipse/emf/common/util/URI;
+warnings
+ Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource$Diagnostic;>;
+ Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource$Diagnostic;>;
+
+<init>
+ (Lorg/eclipse/emf/common/util/URI;)V
+ (Lorg/eclipse/emf/common/util/URI;)V
+addModificationTrackingAdapters
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+attached
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+attachedHelper
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+basicSetResourceSet
+ (Lorg/eclipse/emf/ecore/resource/ResourceSet;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (Lorg/eclipse/emf/ecore/resource/ResourceSet;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+createModificationTrackingAdapter
+ ()Lorg/eclipse/emf/common/notify/Adapter;
+ ()L1org/eclipse/emf/common/notify/Adapter; # @Generated
+delete
+ (Ljava/util/Map<**>;)V
+ (Ljava/util/Map<**>;)V
+detached
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+detachedHelper
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+doLoad
+ (Ljava/io/InputStream;Ljava/util/Map<**>;)V
+ (Ljava/io/InputStream;Ljava/util/Map<**>;)V
+doSave
+ (Ljava/io/OutputStream;Ljava/util/Map<**>;)V
+ (Ljava/io/OutputStream;Ljava/util/Map<**>;)V
+getAllContents
+ ()Lorg/eclipse/emf/common/util/TreeIterator<Lorg/eclipse/emf/ecore/EObject;>;
+ ()L1org/eclipse/emf/common/util/TreeIterator<Lorg/eclipse/emf/ecore/EObject;>; # @Generated(3)
+getAllProperContents
+ (Ljava/util/List<Lorg/eclipse/emf/ecore/EObject;>;)Lorg/eclipse/emf/common/util/TreeIterator<Lorg/eclipse/emf/ecore/EObject;>;
+ (Ljava/util/List<Lorg/eclipse/emf/ecore/EObject;>;)L1org/eclipse/emf/common/util/TreeIterator<Lorg/eclipse/emf/ecore/EObject;>; # @Generated(52)
+getAllProperContents
+ (Lorg/eclipse/emf/ecore/EObject;)Lorg/eclipse/emf/common/util/TreeIterator<Lorg/eclipse/emf/ecore/EObject;>;
+ (Lorg/eclipse/emf/ecore/EObject;)L1org/eclipse/emf/common/util/TreeIterator<Lorg/eclipse/emf/ecore/EObject;>; # @Generated(34)
+getContents
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/EObject;>;
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/EObject;>;
+getEObject
+ (Ljava/lang/String;)Lorg/eclipse/emf/ecore/EObject;
+ (L1java/lang/String;)Lorg/eclipse/emf/ecore/EObject; # @Generated(2)
+getEObject
+ (Ljava/util/List<Ljava/lang/String;>;)Lorg/eclipse/emf/ecore/EObject;
+ (L1java/util/List<Ljava/lang/String;>;)L0org/eclipse/emf/ecore/EObject; # @Generated(2,39)
+getEObjectByID
+ (Ljava/lang/String;)Lorg/eclipse/emf/ecore/EObject;
+ (Ljava/lang/String;)L0org/eclipse/emf/ecore/EObject; # @Generated(21)
+getEObjectForURIFragmentRootSegment
+ (Ljava/lang/String;)Lorg/eclipse/emf/ecore/EObject;
+ (L1java/lang/String;)L0org/eclipse/emf/ecore/EObject; # @Generated(2,21)
+getErrors
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource$Diagnostic;>;
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource$Diagnostic;>;
+getIDForEObject
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+ (L1org/eclipse/emf/ecore/EObject;)Ljava/lang/String; # @Generated(2)
+getIntrinsicIDToEObjectMap
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EObject;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EObject;>;
+getResourceSet
+ ()Lorg/eclipse/emf/ecore/resource/ResourceSet;
+ ()Lorg/eclipse/emf/ecore/resource/ResourceSet;
+getURI
+ ()Lorg/eclipse/emf/common/util/URI;
+ ()Lorg/eclipse/emf/common/util/URI;
+getURIConverter
+ ()Lorg/eclipse/emf/ecore/resource/URIConverter;
+ ()Lorg/eclipse/emf/ecore/resource/URIConverter;
+getURIFragment
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+ (L1org/eclipse/emf/ecore/EObject;)Ljava/lang/String; # @Generated(2)
+getURIFragmentRootSegment
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EObject;)L1java/lang/String; # @Generated(34)
+getUnloadingContents
+ ()Ljava/util/List<Lorg/eclipse/emf/ecore/EObject;>;
+ ()L1java/util/List<Lorg/eclipse/emf/ecore/EObject;>; # @Generated(3)
+getWarnings
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource$Diagnostic;>;
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/resource/Resource$Diagnostic;>;
+handleLoadResponse
+ (Ljava/util/Map<**>;Ljava/util/Map<**>;)V
+ (L1java/util/Map<**>;Ljava/util/Map<**>;)V # @Generated(2)
+handleSaveResponse
+ (Ljava/util/Map<**>;Ljava/util/Map<**>;)V
+ (L1java/util/Map<**>;Ljava/util/Map<**>;)V # @Generated(2)
+isContentZipEntry
+ (Ljava/util/zip/ZipEntry;)Z
+ (Ljava/util/zip/ZipEntry;)Z
+load
+ (Ljava/io/InputStream;Ljava/util/Map<**>;)V
+ (Ljava/io/InputStream;Ljava/util/Map<**>;)V
+load
+ (Ljava/util/Map<**>;)V
+ (Ljava/util/Map<**>;)V
+newContentZipEntry
+ ()Ljava/util/zip/ZipEntry;
+ ()L1java/util/zip/ZipEntry; # @Generated
+removeModificationTrackingAdapters
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+save
+ (Ljava/io/OutputStream;Ljava/util/Map<**>;)V
+ (Ljava/io/OutputStream;Ljava/util/Map<**>;)V
+save
+ (Ljava/util/Map<**>;)V
+ (Ljava/util/Map<**>;)V
+saveOnlyIfChangedWithFileBuffer
+ (Ljava/util/Map<**>;)V
+ (Ljava/util/Map<**>;)V
+saveOnlyIfChangedWithMemoryBuffer
+ (Ljava/util/Map<**>;)V
+ (Ljava/util/Map<**>;)V
+setIntrinsicIDToEObjectMap
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EObject;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EObject;>;)V
+setLoaded
+ (Z)Lorg/eclipse/emf/common/notify/Notification;
+ (Z)L0org/eclipse/emf/common/notify/Notification; # @Generated
+setURI
+ (Lorg/eclipse/emf/common/util/URI;)V
+ (Lorg/eclipse/emf/common/util/URI;)V
+toKeyString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+unloaded
+ (Lorg/eclipse/emf/ecore/InternalEObject;)V
+ (L1org/eclipse/emf/ecore/InternalEObject;)V # @Generated

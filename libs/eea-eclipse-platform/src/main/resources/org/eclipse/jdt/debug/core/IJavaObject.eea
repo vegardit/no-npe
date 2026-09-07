@@ -1,0 +1,29 @@
+class org/eclipse/jdt/debug/core/IJavaObject
+
+getField
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jdt/debug/core/IJavaFieldVariable;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jdt/debug/core/IJavaFieldVariable;
+getField
+ (Ljava/lang/String;Z)Lorg/eclipse/jdt/debug/core/IJavaFieldVariable;
+ (Ljava/lang/String;Z)Lorg/eclipse/jdt/debug/core/IJavaFieldVariable;
+getLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getOwningThread
+ ()Lorg/eclipse/jdt/debug/core/IJavaThread;
+ ()Lorg/eclipse/jdt/debug/core/IJavaThread;
+getReferringObjects
+ (J)[Lorg/eclipse/jdt/debug/core/IJavaObject;
+ (J)[Lorg/eclipse/jdt/debug/core/IJavaObject;
+getWaitingThreads
+ ()[Lorg/eclipse/jdt/debug/core/IJavaThread;
+ ()[Lorg/eclipse/jdt/debug/core/IJavaThread;
+sendMessage
+ (Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/jdt/debug/core/IJavaValue;Lorg/eclipse/jdt/debug/core/IJavaThread;Ljava/lang/String;)Lorg/eclipse/jdt/debug/core/IJavaValue;
+ (Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/jdt/debug/core/IJavaValue;Lorg/eclipse/jdt/debug/core/IJavaThread;Ljava/lang/String;)Lorg/eclipse/jdt/debug/core/IJavaValue;
+sendMessage
+ (Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/jdt/debug/core/IJavaValue;Lorg/eclipse/jdt/debug/core/IJavaThread;Z)Lorg/eclipse/jdt/debug/core/IJavaValue;
+ (Ljava/lang/String;Ljava/lang/String;[Lorg/eclipse/jdt/debug/core/IJavaValue;Lorg/eclipse/jdt/debug/core/IJavaThread;Z)Lorg/eclipse/jdt/debug/core/IJavaValue;
+setLabel
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

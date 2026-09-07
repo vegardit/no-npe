@@ -1,0 +1,90 @@
+class org/eclipse/emf/common/util/Pool
+ <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super org/eclipse/emf/common/util/WeakInterningHashSet
+ <TE;>
+ <TE;>
+
+primaryAccessUnits
+ Lorg/eclipse/emf/common/util/Pool$AccessUnit$Queue<TE;>;
+ Lorg/eclipse/emf/common/util/Pool$AccessUnit$Queue<TE;>;
+readLock
+ Ljava/util/concurrent/locks/Lock;
+ Ljava/util/concurrent/locks/Lock;
+readWriteLock
+ Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+ Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+writeLock
+ Ljava/util/concurrent/locks/Lock;
+ Ljava/util/concurrent/locks/Lock;
+
+<init>
+ (ILorg/eclipse/emf/common/util/Pool$AccessUnit$Queue<TE;>;)V
+ (ILorg/eclipse/emf/common/util/Pool$AccessUnit$Queue<TE;>;)V
+<init>
+ (ILorg/eclipse/emf/common/util/Pool$AccessUnit$Queue<TE;>;Ljava/lang/ref/ReferenceQueue<Ljava/lang/Object;>;)V
+ (ILorg/eclipse/emf/common/util/Pool$AccessUnit$Queue<TE;>;Ljava/lang/ref/ReferenceQueue<Ljava/lang/Object;>;)V
+access
+ (ZLorg/eclipse/emf/common/util/Pool$AccessUnit<TE;>;)V
+ (ZL1org/eclipse/emf/common/util/Pool$AccessUnit<TE;>;)V # @Generated(3)
+add
+ (TE;)Z
+ (TE;)Z
+addEntry
+ (ZTE;Lorg/eclipse/emf/common/util/Pool$AccessUnit<TE;>;)TE;
+ (ZTE;L1org/eclipse/emf/common/util/Pool$AccessUnit<TE;>;)TE; # @Generated(6,PolyNull)
+contains
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+containsAll
+ (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
+doIntern
+ (ZLorg/eclipse/emf/common/util/Pool$AccessUnit<TE;>;)TE;
+ (ZL1org/eclipse/emf/common/util/Pool$AccessUnit<TE;>;)TE; # @Generated(3)
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.AbstractSet)
+get
+ (TE;)TE;
+ (TE;)T0E; # @Inherited(org.eclipse.emf.common.util.WeakInterningHashSet)
+getEntry
+ (I)Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+ (I)L0org/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>; # @Inherited(org.eclipse.emf.common.util.WeakInterningHashSet)
+getReadLock
+ ()Ljava/util/concurrent/locks/Lock;
+ ()Ljava/util/concurrent/locks/Lock;
+getWriteLock
+ ()Ljava/util/concurrent/locks/Lock;
+ ()Ljava/util/concurrent/locks/Lock;
+intern
+ (TE;)TE;
+ (TE;)T0E; # @Inherited(org.eclipse.emf.common.util.WeakInterningHashSet)
+iterator
+ ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(org.eclipse.emf.common.util.WeakInterningHashSet)
+newDefaultAccessUnits
+ ()Lorg/eclipse/emf/common/util/Pool$AccessUnit$Queue<TE;>;
+ ()L1org/eclipse/emf/common/util/Pool$AccessUnit$Queue<TE;>; # @Generated(3)
+newExternalEntry
+ (TE;I)Lorg/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>;
+ (TE;I)L1org/eclipse/emf/common/util/WeakInterningHashSet$Entry<TE;>; # @Inherited(org.eclipse.emf.common.util.WeakInterningHashSet)
+remove
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+removeAll
+ (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractSet)
+retainAll
+ (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
+toArray
+ ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object; # @Inherited(java.util.AbstractCollection)
+toArray
+ <T:Ljava/lang/Object;>([TT;)[TT;
+ <T:Ljava/lang/Object;>([1TT;)[1TT; # @Inherited(java.util.AbstractCollection)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.util.AbstractCollection)

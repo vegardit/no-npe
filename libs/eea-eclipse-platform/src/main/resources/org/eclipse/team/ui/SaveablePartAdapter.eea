@@ -1,0 +1,17 @@
+class org/eclipse/team/ui/SaveablePartAdapter
+
+addPropertyListener
+ (Lorg/eclipse/ui/IPropertyListener;)V
+ (L1org/eclipse/ui/IPropertyListener;)V # @Inherited(org.eclipse.ui.IWorkbenchPart)
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
+getSite
+ ()Lorg/eclipse/ui/IWorkbenchPartSite;
+ ()L0org/eclipse/ui/IWorkbenchPartSite; # @Generated
+getTitleToolTip
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Overrides(org.eclipse.ui.IWorkbenchPart)
+removePropertyListener
+ (Lorg/eclipse/ui/IPropertyListener;)V
+ (L1org/eclipse/ui/IPropertyListener;)V # @Inherited(org.eclipse.ui.IWorkbenchPart)

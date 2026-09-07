@@ -1,0 +1,29 @@
+class org/eclipse/jdt/core/refactoring/CompilationUnitChange
+
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;)V
+ (L1java/lang/String;L1org/eclipse/jdt/core/ICompilationUnit;)V # @Generated(2,20)
+acquireDocument
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/text/IDocument;
+ (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/jface/text/IDocument; # @Inherited(org.eclipse.ltk.core.refactoring.TextFileChange)
+createUndoChange
+ (Lorg/eclipse/text/edits/UndoEdit;Lorg/eclipse/ltk/core/refactoring/ContentStamp;)Lorg/eclipse/ltk/core/refactoring/Change;
+ (L1org/eclipse/text/edits/UndoEdit;Lorg/eclipse/ltk/core/refactoring/ContentStamp;)L0org/eclipse/ltk/core/refactoring/Change; # @Overrides(org.eclipse.ltk.core.refactoring.TextFileChange)
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+getCompilationUnit
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+getDescriptor
+ ()Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;
+ ()L0org/eclipse/ltk/core/refactoring/ChangeDescriptor; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
+getModifiedElement
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+releaseDocument
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/jface/text/IDocument;L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.ltk.core.refactoring.TextFileChange)
+setDescriptor
+ (Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;)V
+ (Lorg/eclipse/ltk/core/refactoring/ChangeDescriptor;)V

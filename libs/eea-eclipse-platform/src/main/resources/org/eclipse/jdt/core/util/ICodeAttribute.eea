@@ -1,0 +1,20 @@
+class org/eclipse/jdt/core/util/ICodeAttribute
+
+getAttributes
+ ()[Lorg/eclipse/jdt/core/util/IClassFileAttribute;
+ ()[Lorg/eclipse/jdt/core/util/IClassFileAttribute;
+getBytecodes
+ ()[B
+ ()[B
+getExceptionTable
+ ()[Lorg/eclipse/jdt/core/util/IExceptionTableEntry;
+ ()[Lorg/eclipse/jdt/core/util/IExceptionTableEntry;
+getLineNumberAttribute
+ ()Lorg/eclipse/jdt/core/util/ILineNumberAttribute;
+ ()Lorg/eclipse/jdt/core/util/ILineNumberAttribute;
+getLocalVariableAttribute
+ ()Lorg/eclipse/jdt/core/util/ILocalVariableAttribute;
+ ()Lorg/eclipse/jdt/core/util/ILocalVariableAttribute;
+traverse
+ (Lorg/eclipse/jdt/core/util/IBytecodeVisitor;)V
+ (Lorg/eclipse/jdt/core/util/IBytecodeVisitor;)V

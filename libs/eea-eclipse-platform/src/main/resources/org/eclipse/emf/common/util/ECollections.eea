@@ -1,0 +1,87 @@
+class org/eclipse/emf/common/util/ECollections
+
+EMPTY_ELIST
+ Lorg/eclipse/emf/common/util/EList<*>;
+ L1org/eclipse/emf/common/util/EList<*>; # @Generated(1)
+EMPTY_EMAP
+ Lorg/eclipse/emf/common/util/EMap<**>;
+ L1org/eclipse/emf/common/util/EMap<**>; # @Generated(1)
+
+asEList
+ <T:Ljava/lang/Object;>(Ljava/util/List<TT;>;)Lorg/eclipse/emf/common/util/EList<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/List<TT;>;)L1org/eclipse/emf/common/util/EList<TT;>; # @Generated(46)
+asEList
+ <T:Ljava/lang/Object;>([TT;)Lorg/eclipse/emf/common/util/EList<TT;>;
+ <T:Ljava/lang/Object;>([1TT;)L1org/eclipse/emf/common/util/EList<TT;>; # @Generated(24,29)
+asEMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;)Lorg/eclipse/emf/common/util/EMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;)L1org/eclipse/emf/common/util/EMap<TK;TV;>; # @Generated(68)
+emptyEList
+ <T:Ljava/lang/Object;>()Lorg/eclipse/emf/common/util/EList<TT;>;
+ <T:Ljava/lang/Object;>()L1org/eclipse/emf/common/util/EList<TT;>; # @Generated(25)
+emptyEMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>()Lorg/eclipse/emf/common/util/EMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>()L1org/eclipse/emf/common/util/EMap<TK;TV;>; # @Generated(45)
+indexOf
+ (Ljava/util/List<*>;Ljava/lang/Object;I)I
+ (L1java/util/List<*>;Ljava/lang/Object;I)I # @Generated(2)
+move
+ <T:Ljava/lang/Object;>(Ljava/util/List<TT;>;II)TT;
+ <T:Ljava/lang/Object;>(L1java/util/List<TT;>;II)TT; # @Generated(24)
+move
+ <T:Ljava/lang/Object;>(Ljava/util/List<TT;>;ITT;)V
+ <T:Ljava/lang/Object;>(L1java/util/List<TT;>;ITT;)V # @Generated(24)
+newBasicEList
+ <T:Ljava/lang/Object;>()Lorg/eclipse/emf/common/util/BasicEList<TT;>;
+ <T:Ljava/lang/Object;>()L1org/eclipse/emf/common/util/BasicEList<TT;>; # @Generated(25)
+newBasicEList
+ <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+TT;>;)Lorg/eclipse/emf/common/util/BasicEList<TT;>;
+ <T:Ljava/lang/Object;>(L1java/lang/Iterable<+TT;>;)L1org/eclipse/emf/common/util/BasicEList<TT;>; # @Generated(24,51)
+newBasicEList
+ <T:Ljava/lang/Object;>(Ljava/util/Iterator<+TT;>;)Lorg/eclipse/emf/common/util/BasicEList<TT;>;
+ <T:Ljava/lang/Object;>(L1java/util/Iterator<+TT;>;)L1org/eclipse/emf/common/util/BasicEList<TT;>; # @Generated(24,51)
+newBasicEList
+ <T:Ljava/lang/Object;>([TT;)Lorg/eclipse/emf/common/util/BasicEList<TT;>;
+ <T:Ljava/lang/Object;>([1TT;)L1org/eclipse/emf/common/util/BasicEList<TT;>; # @Generated(24,29)
+newBasicEListWithCapacity
+ <T:Ljava/lang/Object;>(I)Lorg/eclipse/emf/common/util/BasicEList<TT;>;
+ <T:Ljava/lang/Object;>(I)L1org/eclipse/emf/common/util/BasicEList<TT;>; # @Generated(26)
+newBasicEListWithExpectedSize
+ <T:Ljava/lang/Object;>(I)Lorg/eclipse/emf/common/util/BasicEList<TT;>;
+ <T:Ljava/lang/Object;>(I)L1org/eclipse/emf/common/util/BasicEList<TT;>; # @Generated(26)
+reverse
+ (Lorg/eclipse/emf/common/util/EList<*>;)V
+ (L1org/eclipse/emf/common/util/EList<*>;)V # @Generated(2)
+setEList
+ <T:Ljava/lang/Object;>(Lorg/eclipse/emf/common/util/EList<TT;>;Ljava/util/List<+TT;>;)V
+ <T:Ljava/lang/Object;>(L1org/eclipse/emf/common/util/EList<TT;>;L1java/util/List<+TT;>;)V # @Generated(24,64)
+singletonEList
+ <T:Ljava/lang/Object;>(TT;)Lorg/eclipse/emf/common/util/EList<TT;>;
+ <T:Ljava/lang/Object;>(TT;)L1org/eclipse/emf/common/util/EList<TT;>; # @Generated(28)
+singletonEMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(TK;TV;)Lorg/eclipse/emf/common/util/EMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(TK;TV;)L1org/eclipse/emf/common/util/EMap<TK;TV;>; # @Generated(51)
+sort
+ (Lorg/eclipse/emf/common/util/EList<*>;)V
+ (L1org/eclipse/emf/common/util/EList<*>;)V # @Generated(2)
+sort
+ <T:Ljava/lang/Object;>(Lorg/eclipse/emf/common/util/EList<TT;>;Ljava/util/Comparator<-TT;>;)V
+ <T:Ljava/lang/Object;>(L1org/eclipse/emf/common/util/EList<TT;>;Ljava/util/Comparator<-TT;>;)V # @Generated(24)
+synchronizedInterningSet
+ <T:Ljava/lang/Object;>(Lorg/eclipse/emf/common/util/InterningSet<TT;>;)Lorg/eclipse/emf/common/util/InterningSet<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/emf/common/util/InterningSet<TT;>;)L1org/eclipse/emf/common/util/InterningSet<TT;>; # @Generated(72)
+toEList
+ <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+TT;>;)Lorg/eclipse/emf/common/util/EList<TT;>;
+ <T:Ljava/lang/Object;>(L1java/lang/Iterable<+TT;>;)L1org/eclipse/emf/common/util/EList<TT;>; # @Generated(24,51)
+toEList
+ <T:Ljava/lang/Object;>(Ljava/util/Iterator<+TT;>;)Lorg/eclipse/emf/common/util/EList<TT;>;
+ <T:Ljava/lang/Object;>(L1java/util/Iterator<+TT;>;)L1org/eclipse/emf/common/util/EList<TT;>; # @Generated(24,51)
+unmodifiableEList
+ <T:Ljava/lang/Object;>(Ljava/util/List<+TT;>;)Lorg/eclipse/emf/common/util/EList<TT;>;
+ <T:Ljava/lang/Object;>(Ljava/util/List<+TT;>;)L1org/eclipse/emf/common/util/EList<TT;>; # @Generated(47)
+unmodifiableEList
+ <T:Ljava/lang/Object;>(Lorg/eclipse/emf/common/util/EList<+TT;>;)Lorg/eclipse/emf/common/util/EList<TT;>;
+ <T:Ljava/lang/Object;>(Lorg/eclipse/emf/common/util/EList<+TT;>;)L1org/eclipse/emf/common/util/EList<TT;>; # @Generated(66)
+unmodifiableEMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Lorg/eclipse/emf/common/util/EMap<+TK;+TV;>;)Lorg/eclipse/emf/common/util/EMap<TK;TV;>;
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Lorg/eclipse/emf/common/util/EMap<+TK;+TV;>;)L1org/eclipse/emf/common/util/EMap<TK;TV;>; # @Generated(89)

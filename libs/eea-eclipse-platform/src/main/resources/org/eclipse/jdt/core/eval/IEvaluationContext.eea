@@ -1,0 +1,65 @@
+class org/eclipse/jdt/core/eval/IEvaluationContext
+
+allVariables
+ ()[Lorg/eclipse/jdt/core/eval/IGlobalVariable;
+ ()[Lorg/eclipse/jdt/core/eval/IGlobalVariable;
+codeComplete
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/CompletionRequestor;)V
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/CompletionRequestor;)V
+codeComplete
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+codeComplete
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+codeComplete
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+codeComplete
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/ICodeCompletionRequestor;)V
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/ICodeCompletionRequestor;)V
+codeComplete
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/ICompletionRequestor;)V
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/ICompletionRequestor;)V
+codeComplete
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/ICompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+ (Ljava/lang/String;ILorg/eclipse/jdt/core/ICompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+codeSelect
+ (Ljava/lang/String;II)[Lorg/eclipse/jdt/core/IJavaElement;
+ (Ljava/lang/String;II)[Lorg/eclipse/jdt/core/IJavaElement;
+codeSelect
+ (Ljava/lang/String;IILorg/eclipse/jdt/core/WorkingCopyOwner;)[Lorg/eclipse/jdt/core/IJavaElement;
+ (Ljava/lang/String;IILorg/eclipse/jdt/core/WorkingCopyOwner;)[Lorg/eclipse/jdt/core/IJavaElement;
+deleteVariable
+ (Lorg/eclipse/jdt/core/eval/IGlobalVariable;)V
+ (Lorg/eclipse/jdt/core/eval/IGlobalVariable;)V
+evaluateCodeSnippet
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/eval/ICodeSnippetRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/eval/ICodeSnippetRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+evaluateCodeSnippet
+ (Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[ILorg/eclipse/jdt/core/IType;ZZLorg/eclipse/jdt/core/eval/ICodeSnippetRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[ILorg/eclipse/jdt/core/IType;ZZLorg/eclipse/jdt/core/eval/ICodeSnippetRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+evaluateVariable
+ (Lorg/eclipse/jdt/core/eval/IGlobalVariable;Lorg/eclipse/jdt/core/eval/ICodeSnippetRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/jdt/core/eval/IGlobalVariable;Lorg/eclipse/jdt/core/eval/ICodeSnippetRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getPackageName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProject
+ ()Lorg/eclipse/jdt/core/IJavaProject;
+ ()Lorg/eclipse/jdt/core/IJavaProject;
+newVariable
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jdt/core/eval/IGlobalVariable;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jdt/core/eval/IGlobalVariable;
+setImports
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+setPackageName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+validateImports
+ (Lorg/eclipse/jdt/core/eval/ICodeSnippetRequestor;)V
+ (Lorg/eclipse/jdt/core/eval/ICodeSnippetRequestor;)V

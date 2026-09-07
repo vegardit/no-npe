@@ -1,0 +1,29 @@
+class org/eclipse/team/ui/synchronize/ModelParticipantMergeOperation
+
+<init>
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/team/core/mapping/ISynchronizationScopeManager;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;Lorg/eclipse/team/core/mapping/ISynchronizationScopeManager;)V
+belongsTo
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+createMergeContext
+ ()Lorg/eclipse/team/core/mapping/provider/SynchronizationContext;
+ ()Lorg/eclipse/team/core/mapping/provider/SynchronizationContext;
+createParticipant
+ ()Lorg/eclipse/team/ui/synchronize/ModelSynchronizeParticipant;
+ ()L1org/eclipse/team/ui/synchronize/ModelSynchronizeParticipant; # @Generated
+execute
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.team.ui.synchronize.ModelMergeOperation)
+executeMerge
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.team.ui.synchronize.ModelMergeOperation)
+getContext
+ ()Lorg/eclipse/team/core/mapping/ISynchronizationContext;
+ ()L0org/eclipse/team/core/mapping/ISynchronizationContext; # @Inherited(org.eclipse.team.ui.synchronize.ModelOperation)
+getPreviewRequestMessage
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.team.ui.synchronize.ModelOperation)
+initializeContext
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V

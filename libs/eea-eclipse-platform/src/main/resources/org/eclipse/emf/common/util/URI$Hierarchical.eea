@@ -1,0 +1,139 @@
+class org/eclipse/emf/common/util/URI$Hierarchical
+
+accumulate
+ ([Ljava/lang/String;ILjava/lang/String;Z)I
+ ([Ljava/lang/String;ILjava/lang/String;Z)I
+
+authority
+ Ljava/lang/String;
+ Ljava/lang/String;
+device
+ Ljava/lang/String;
+ Ljava/lang/String;
+query
+ Ljava/lang/String;
+ Ljava/lang/String;
+scheme
+ Ljava/lang/String;
+ Ljava/lang/String;
+segments
+ [Ljava/lang/String;
+ [Ljava/lang/String;
+toString
+ Ljava/lang/ref/WeakReference<Ljava/lang/String;>;
+ Ljava/lang/ref/WeakReference<Ljava/lang/String;>;
+
+<init>
+ (IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;)V
+ (IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;)V
+appendFileExtension
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (L1java/lang/String;)L1org/eclipse/emf/common/util/URI; # @Overrides(org.eclipse.emf.common.util.URI)
+appendQuery
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;)L1org/eclipse/emf/common/util/URI; # @Inherited(org.eclipse.emf.common.util.URI)
+appendSegment
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (L1java/lang/String;)L1org/eclipse/emf/common/util/URI; # @Overrides(org.eclipse.emf.common.util.URI)
+appendSegments
+ ([Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ ([1Ljava/lang/String;)L1org/eclipse/emf/common/util/URI; # @Overrides(org.eclipse.emf.common.util.URI)
+authority
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+cacheString
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+collapseSegments
+ (Z)[Ljava/lang/String;
+ (Z)[Ljava/lang/String;
+deresolve
+ (Lorg/eclipse/emf/common/util/URI;ZZZ)Lorg/eclipse/emf/common/util/URI;
+ (L1org/eclipse/emf/common/util/URI;ZZZ)L1org/eclipse/emf/common/util/URI; # @Overrides(org.eclipse.emf.common.util.URI)
+device
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+devicePath
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+fileExtension
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+findRelativePath
+ (Lorg/eclipse/emf/common/util/URI;Z)[Ljava/lang/String;
+ (L1org/eclipse/emf/common/util/URI;Z)[Ljava/lang/String; # @Generated(2)
+getCachedString
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+host
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+lastSegment
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+matches
+ (IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;)Z
+ (IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;)Z
+matches
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+matches
+ (Ljava/lang/String;Ljava/lang/String;)Z
+ (Ljava/lang/String;Ljava/lang/String;)Z
+mergePath
+ (Lorg/eclipse/emf/common/util/URI;Z)[Ljava/lang/String;
+ (L1org/eclipse/emf/common/util/URI;Z)[Ljava/lang/String; # @Generated(2)
+path
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+port
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+query
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+rawSegments
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+replacePrefix
+ (Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+ (L1org/eclipse/emf/common/util/URI;L1org/eclipse/emf/common/util/URI;)L0org/eclipse/emf/common/util/URI; # @Inherited(org.eclipse.emf.common.util.URI)
+resolve
+ (Lorg/eclipse/emf/common/util/URI;Z)Lorg/eclipse/emf/common/util/URI;
+ (L1org/eclipse/emf/common/util/URI;Z)L1org/eclipse/emf/common/util/URI; # @Inherited(org.eclipse.emf.common.util.URI)
+scheme
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+segment
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;
+segments
+ ()[Ljava/lang/String;
+ ()[1Ljava/lang/String; # @Generated(3)
+segmentsEqual
+ (Lorg/eclipse/emf/common/util/URI;)Z
+ (L1org/eclipse/emf/common/util/URI;)Z # @Generated
+segmentsList
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()L1java/util/List<Ljava/lang/String;>; # @Inherited(org.eclipse.emf.common.util.URI)
+toFileString
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+toPlatformString
+ (Z)Ljava/lang/String;
+ (Z)L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+trimFileExtension
+ ()Lorg/eclipse/emf/common/util/URI;
+ ()L1org/eclipse/emf/common/util/URI; # @Inherited(org.eclipse.emf.common.util.URI)
+trimQuery
+ ()Lorg/eclipse/emf/common/util/URI;
+ ()L1org/eclipse/emf/common/util/URI; # @Inherited(org.eclipse.emf.common.util.URI)
+trimSegments
+ (I)Lorg/eclipse/emf/common/util/URI;
+ (I)L1org/eclipse/emf/common/util/URI; # @Inherited(org.eclipse.emf.common.util.URI)
+userInfo
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(org.eclipse.emf.common.util.URI)

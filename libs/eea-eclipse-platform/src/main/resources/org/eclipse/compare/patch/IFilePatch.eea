@@ -1,0 +1,11 @@
+class org/eclipse/compare/patch/IFilePatch
+
+apply
+ (Lorg/eclipse/core/resources/IStorage;Lorg/eclipse/compare/patch/PatchConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/compare/patch/IFilePatchResult;
+ (Lorg/eclipse/core/resources/IStorage;Lorg/eclipse/compare/patch/PatchConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/compare/patch/IFilePatchResult;
+getHeader
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTargetPath
+ (Lorg/eclipse/compare/patch/PatchConfiguration;)Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/compare/patch/PatchConfiguration;)Lorg/eclipse/core/runtime/IPath;

@@ -1,0 +1,35 @@
+class org/eclipse/jdt/launching/environments/IExecutionEnvironment
+
+getAccessRules
+ (Lorg/eclipse/jdt/launching/IVMInstall;[Lorg/eclipse/jdt/launching/LibraryLocation;Lorg/eclipse/jdt/core/IJavaProject;)[[Lorg/eclipse/jdt/core/IAccessRule;
+ (Lorg/eclipse/jdt/launching/IVMInstall;[Lorg/eclipse/jdt/launching/LibraryLocation;Lorg/eclipse/jdt/core/IJavaProject;)[[Lorg/eclipse/jdt/core/IAccessRule;
+getCompatibleVM
+ ()Lorg/eclipse/jdt/launching/IVMInstall;
+ ()Lorg/eclipse/jdt/launching/IVMInstall;
+getCompatibleVMs
+ ()[Lorg/eclipse/jdt/launching/IVMInstall;
+ ()[Lorg/eclipse/jdt/launching/IVMInstall;
+getComplianceOptions
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getDefaultVM
+ ()Lorg/eclipse/jdt/launching/IVMInstall;
+ ()Lorg/eclipse/jdt/launching/IVMInstall;
+getDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getProfileProperties
+ ()Ljava/util/Properties;
+ ()Ljava/util/Properties;
+getSubEnvironments
+ ()[Lorg/eclipse/jdt/launching/environments/IExecutionEnvironment;
+ ()[Lorg/eclipse/jdt/launching/environments/IExecutionEnvironment;
+isStrictlyCompatible
+ (Lorg/eclipse/jdt/launching/IVMInstall;)Z
+ (Lorg/eclipse/jdt/launching/IVMInstall;)Z
+setDefaultVM
+ (Lorg/eclipse/jdt/launching/IVMInstall;)V
+ (Lorg/eclipse/jdt/launching/IVMInstall;)V

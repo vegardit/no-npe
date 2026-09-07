@@ -1,0 +1,778 @@
+class org/eclipse/emf/ecore/xml/type/impl/XMLTypeFactoryImpl
+
+EDATE_FORMATS
+ [Ljava/text/DateFormat;
+ [1Ljava/text/DateFormat; # @Generated(1)
+
+getPackage
+ ()Lorg/eclipse/emf/ecore/xml/type/XMLTypePackage;
+ ()Lorg/eclipse/emf/ecore/xml/type/XMLTypePackage;
+init
+ ()Lorg/eclipse/emf/ecore/xml/type/XMLTypeFactory;
+ ()L1org/eclipse/emf/ecore/xml/type/XMLTypeFactory; # @Generated
+
+booleanValueOf
+ (Ljava/lang/String;)Ljava/lang/Boolean;
+ (Ljava/lang/String;)L1java/lang/Boolean; # @Generated(21)
+convertAnySimpleType
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertAnySimpleTypeToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertAnyURI
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertAnyURIToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertBase64Binary
+ ([B)Ljava/lang/String;
+ ([0B)Ljava/lang/String; # @Generated(2,PolyNull)
+convertBase64BinaryToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertBoolean
+ (Z)Ljava/lang/String;
+ (Z)L1java/lang/String; # @Generated
+convertBooleanObject
+ (Ljava/lang/Boolean;)Ljava/lang/String;
+ (L0java/lang/Boolean;)L0java/lang/String; # @Generated(2,22)
+convertBooleanObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertBooleanToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertByte
+ (B)Ljava/lang/String;
+ (B)L1java/lang/String; # @Generated
+convertByteObject
+ (Ljava/lang/Byte;)Ljava/lang/String;
+ (L0java/lang/Byte;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertByteObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertByteToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertDate
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertDate
+ (Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/lang/String;
+ (L0javax/xml/datatype/XMLGregorianCalendar;)L0java/lang/String; # @Generated(2,44)
+convertDateTime
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertDateTime
+ (Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/lang/String;
+ (L0javax/xml/datatype/XMLGregorianCalendar;)L0java/lang/String; # @Generated(2,44)
+convertDateTimeToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertDateToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertDecimal
+ (Ljava/math/BigDecimal;)Ljava/lang/String;
+ (L0java/math/BigDecimal;)L0java/lang/String; # @Generated(2,25)
+convertDecimalToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertDouble
+ (D)Ljava/lang/String;
+ (D)Ljava/lang/String;
+convertDoubleObject
+ (Ljava/lang/Double;)Ljava/lang/String;
+ (L0java/lang/Double;)L0java/lang/String; # @Generated(2,21)
+convertDoubleObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertDoubleToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertDuration
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertDuration
+ (Ljavax/xml/datatype/Duration;)Ljava/lang/String;
+ (L0javax/xml/datatype/Duration;)L0java/lang/String; # @Generated(2,32)
+convertDurationToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertENTITIES
+ (Ljava/util/List<+Ljava/lang/String;>;)Ljava/lang/String;
+ (Ljava/util/List<+Ljava/lang/String;>;)Ljava/lang/String;
+convertENTITIESBase
+ (Ljava/util/List<+Ljava/lang/String;>;)Ljava/lang/String;
+ (L0java/util/List<+Ljava/lang/String;>;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertENTITIESBaseToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)Ljava/lang/String; # @Generated(35,PolyNull)
+convertENTITIESToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertENTITY
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertENTITYToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertFloat
+ (F)Ljava/lang/String;
+ (F)Ljava/lang/String;
+convertFloatObject
+ (Ljava/lang/Float;)Ljava/lang/String;
+ (L0java/lang/Float;)L0java/lang/String; # @Generated(2,20)
+convertFloatObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertFloatToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertGDay
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertGDay
+ (Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/lang/String;
+ (L0javax/xml/datatype/XMLGregorianCalendar;)L0java/lang/String; # @Generated(2,44)
+convertGDayToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertGMonth
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertGMonth
+ (Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/lang/String;
+ (L0javax/xml/datatype/XMLGregorianCalendar;)L0java/lang/String; # @Generated(2,44)
+convertGMonthDay
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertGMonthDay
+ (Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/lang/String;
+ (L0javax/xml/datatype/XMLGregorianCalendar;)L0java/lang/String; # @Generated(2,44)
+convertGMonthDayToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertGMonthToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertGYear
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertGYear
+ (Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/lang/String;
+ (L0javax/xml/datatype/XMLGregorianCalendar;)L0java/lang/String; # @Generated(2,44)
+convertGYearMonth
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertGYearMonth
+ (Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/lang/String;
+ (L0javax/xml/datatype/XMLGregorianCalendar;)L0java/lang/String; # @Generated(2,44)
+convertGYearMonthToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertGYearToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertHexBinary
+ ([B)Ljava/lang/String;
+ ([0B)Ljava/lang/String; # @Generated(2,PolyNull)
+convertHexBinaryToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertID
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertIDREF
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertIDREFS
+ (Ljava/util/List<+Ljava/lang/String;>;)Ljava/lang/String;
+ (Ljava/util/List<+Ljava/lang/String;>;)Ljava/lang/String;
+convertIDREFSBase
+ (Ljava/util/List<+Ljava/lang/String;>;)Ljava/lang/String;
+ (L0java/util/List<+Ljava/lang/String;>;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertIDREFSBaseToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertIDREFSToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertIDREFToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertIDToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertInt
+ (I)Ljava/lang/String;
+ (I)L1java/lang/String; # @Generated
+convertIntObject
+ (Ljava/lang/Integer;)Ljava/lang/String;
+ (L0java/lang/Integer;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertIntObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertIntToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertInteger
+ (Ljava/math/BigInteger;)Ljava/lang/String;
+ (L0java/math/BigInteger;)L0java/lang/String; # @Generated(2,25)
+convertIntegerToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertLanguage
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertLanguageToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertLong
+ (J)Ljava/lang/String;
+ (J)L1java/lang/String; # @Generated
+convertLongObject
+ (Ljava/lang/Long;)Ljava/lang/String;
+ (L0java/lang/Long;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertLongObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertLongToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertNCName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertNCNameToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertNMTOKEN
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertNMTOKENS
+ (Ljava/util/List<+Ljava/lang/String;>;)Ljava/lang/String;
+ (Ljava/util/List<+Ljava/lang/String;>;)Ljava/lang/String;
+convertNMTOKENSBase
+ (Ljava/util/List<+Ljava/lang/String;>;)Ljava/lang/String;
+ (L0java/util/List<+Ljava/lang/String;>;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertNMTOKENSBaseToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)Ljava/lang/String; # @Generated(35,PolyNull)
+convertNMTOKENSToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertNMTOKENToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertNOTATION
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+convertNOTATION
+ (Ljavax/xml/namespace/QName;)Ljava/lang/String;
+ (Ljavax/xml/namespace/QName;)Ljava/lang/String;
+convertNOTATIONToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertNameToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertNegativeInteger
+ (Ljava/math/BigInteger;)Ljava/lang/String;
+ (Ljava/math/BigInteger;)Ljava/lang/String;
+convertNegativeIntegerToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertNonNegativeInteger
+ (Ljava/math/BigInteger;)Ljava/lang/String;
+ (L0java/math/BigInteger;)L0java/lang/String; # @Generated(2,25)
+convertNonNegativeIntegerToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertNonPositiveInteger
+ (Ljava/math/BigInteger;)Ljava/lang/String;
+ (L0java/math/BigInteger;)L0java/lang/String; # @Generated(2,25)
+convertNonPositiveIntegerToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertNormalizedString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertNormalizedStringToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertPositiveInteger
+ (Ljava/math/BigInteger;)Ljava/lang/String;
+ (Ljava/math/BigInteger;)Ljava/lang/String;
+convertPositiveIntegerToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertQName
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/Object;)Ljava/lang/String;
+convertQName
+ (Ljavax/xml/namespace/QName;)Ljava/lang/String;
+ (L0javax/xml/namespace/QName;)L0java/lang/String; # @Generated(2,30)
+convertQNameToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertShort
+ (S)Ljava/lang/String;
+ (S)L1java/lang/String; # @Generated
+convertShortObject
+ (Ljava/lang/Short;)Ljava/lang/String;
+ (L0java/lang/Short;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertShortObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertShortToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertStringToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertTime
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L0java/lang/Object;)L0java/lang/String; # @Generated(2,21)
+convertTime
+ (Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/lang/String;
+ (L0javax/xml/datatype/XMLGregorianCalendar;)L0java/lang/String; # @Generated(2,44)
+convertTimeToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (L1org/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)L0java/lang/String; # @Inherited(org.eclipse.emf.ecore.impl.EFactoryImpl)
+convertToken
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+convertTokenToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String; # @Generated(PolyNull)
+convertUnsignedByte
+ (S)Ljava/lang/String;
+ (S)L1java/lang/String; # @Generated
+convertUnsignedByteObject
+ (Ljava/lang/Short;)Ljava/lang/String;
+ (L0java/lang/Short;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertUnsignedByteObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertUnsignedByteToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertUnsignedInt
+ (J)Ljava/lang/String;
+ (J)L1java/lang/String; # @Generated
+convertUnsignedIntObject
+ (Ljava/lang/Long;)Ljava/lang/String;
+ (L0java/lang/Long;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertUnsignedIntObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertUnsignedIntToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertUnsignedLong
+ (Ljava/math/BigInteger;)Ljava/lang/String;
+ (Ljava/math/BigInteger;)Ljava/lang/String;
+convertUnsignedLongToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+convertUnsignedShort
+ (I)Ljava/lang/String;
+ (I)L1java/lang/String; # @Generated
+convertUnsignedShortObject
+ (Ljava/lang/Integer;)Ljava/lang/String;
+ (L0java/lang/Integer;)Ljava/lang/String; # @Generated(2,PolyNull)
+convertUnsignedShortObjectToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+convertUnsignedShortToString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/Object;)L0java/lang/String; # @Generated(35,54)
+create
+ (Lorg/eclipse/emf/ecore/EClass;)Lorg/eclipse/emf/ecore/EObject;
+ (L1org/eclipse/emf/ecore/EClass;)Lorg/eclipse/emf/ecore/EObject; # @Inherited(org.eclipse.emf.ecore.impl.EFactoryImpl)
+createAnySimpleType
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/String;)Ljava/lang/Object; # @Generated(PolyNull)
+createAnySimpleTypeFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createAnyType
+ ()Lorg/eclipse/emf/ecore/xml/type/AnyType;
+ ()L1org/eclipse/emf/ecore/xml/type/AnyType; # @Generated
+createAnyURI
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+createAnyURIFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createBase64Binary
+ (Ljava/lang/String;)[B
+ (L0java/lang/String;)[B # @Generated(2,PolyNull)
+createBase64BinaryFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)[B
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)[B
+createBoolean
+ (Ljava/lang/String;)Z
+ (L0java/lang/String;)Z # @Generated
+createBooleanFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Boolean;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Boolean;
+createBooleanObject
+ (Ljava/lang/String;)Ljava/lang/Boolean;
+ (L0java/lang/String;)L0java/lang/Boolean; # @Generated(2,21)
+createBooleanObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Boolean;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/String;)L0java/lang/Boolean; # @Generated(35,54)
+createByte
+ (Ljava/lang/String;)B
+ (L0java/lang/String;)B # @Generated
+createByteFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Byte;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Byte;
+createByteObject
+ (Ljava/lang/String;)Ljava/lang/Byte;
+ (L0java/lang/String;)Ljava/lang/Byte; # @Generated(2,PolyNull)
+createByteObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Byte;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Byte;
+createDate
+ (Ljava/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar;
+ (L0java/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar; # @Generated(2,PolyNull)
+createDateFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createDateTime
+ (Ljava/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar;
+ (L0java/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar; # @Generated(2,PolyNull)
+createDateTimeFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createDecimal
+ (Ljava/lang/String;)Ljava/math/BigDecimal;
+ (L0java/lang/String;)Ljava/math/BigDecimal; # @Generated(2,PolyNull)
+createDecimalFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigDecimal;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigDecimal;
+createDouble
+ (Ljava/lang/String;)D
+ (L0java/lang/String;)D # @Generated
+createDoubleFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Double;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Double;
+createDoubleObject
+ (Ljava/lang/String;)Ljava/lang/Double;
+ (L0java/lang/String;)Ljava/lang/Double; # @Generated(2,PolyNull)
+createDoubleObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Double;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Double;
+createDuration
+ (Ljava/lang/String;)Ljavax/xml/datatype/Duration;
+ (L0java/lang/String;)Ljavax/xml/datatype/Duration; # @Generated(2,PolyNull)
+createDurationFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createENTITIES
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+createENTITIESBase
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (L0java/lang/String;)Ljava/util/List<Ljava/lang/String;>; # @Generated(2,PolyNull)
+createENTITIESBaseFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+createENTITIESFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+createENTITY
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+createENTITYFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createFloat
+ (Ljava/lang/String;)F
+ (L0java/lang/String;)F # @Generated
+createFloatFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Float;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Float;
+createFloatObject
+ (Ljava/lang/String;)Ljava/lang/Float;
+ (L0java/lang/String;)Ljava/lang/Float; # @Generated(2,PolyNull)
+createFloatObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Float;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Float;
+createFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (L1org/eclipse/emf/ecore/EDataType;L0java/lang/String;)L0java/lang/Object; # @Overrides(org.eclipse.emf.ecore.impl.EFactoryImpl)
+createGDay
+ (Ljava/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar;
+ (L0java/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar; # @Generated(2,PolyNull)
+createGDayFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createGMonth
+ (Ljava/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar;
+ (L0java/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar; # @Generated(2,PolyNull)
+createGMonthDay
+ (Ljava/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar;
+ (L0java/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar; # @Generated(2,PolyNull)
+createGMonthDayFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createGMonthFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createGYear
+ (Ljava/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar;
+ (L0java/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar; # @Generated(2,PolyNull)
+createGYearFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createGYearMonth
+ (Ljava/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar;
+ (L0java/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar; # @Generated(2,PolyNull)
+createGYearMonthFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createHexBinary
+ (Ljava/lang/String;)[B
+ (L0java/lang/String;)[B # @Generated(2,PolyNull)
+createHexBinaryFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)[B
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)[B
+createID
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+createIDFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createIDREF
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+createIDREFFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createIDREFS
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+createIDREFSBase
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (L0java/lang/String;)Ljava/util/List<Ljava/lang/String;>; # @Generated(2,PolyNull)
+createIDREFSBaseFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+createIDREFSFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+createInt
+ (Ljava/lang/String;)I
+ (L0java/lang/String;)I # @Generated
+createIntFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Integer;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Integer;
+createIntObject
+ (Ljava/lang/String;)Ljava/lang/Integer;
+ (L0java/lang/String;)Ljava/lang/Integer; # @Generated(2,PolyNull)
+createIntObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Integer;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Integer;
+createInteger
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (L0java/lang/String;)Ljava/math/BigInteger; # @Generated(2,PolyNull)
+createIntegerFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+createLanguage
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+createLanguageFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createLong
+ (Ljava/lang/String;)J
+ (L0java/lang/String;)J # @Generated
+createLongFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Long;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Long;
+createLongObject
+ (Ljava/lang/String;)Ljava/lang/Long;
+ (L0java/lang/String;)Ljava/lang/Long; # @Generated(2,PolyNull)
+createLongObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Long;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Long;
+createNCName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+createNCNameFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createNMTOKEN
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+createNMTOKENFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createNMTOKENS
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+createNMTOKENSBase
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (L0java/lang/String;)Ljava/util/List<Ljava/lang/String;>; # @Generated(2,PolyNull)
+createNMTOKENSBaseFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+createNMTOKENSFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+createNOTATION
+ (Ljava/lang/String;)Ljavax/xml/namespace/QName;
+ (Ljava/lang/String;)Ljavax/xml/namespace/QName;
+createNOTATIONFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createName
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+createNameFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createNegativeInteger
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+createNegativeIntegerFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+createNonNegativeInteger
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (L0java/lang/String;)Ljava/math/BigInteger; # @Generated(2,PolyNull)
+createNonNegativeIntegerFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+createNonPositiveInteger
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (L0java/lang/String;)Ljava/math/BigInteger; # @Generated(2,PolyNull)
+createNonPositiveIntegerFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+createNormalizedString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+createNormalizedStringFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createPositiveInteger
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+createPositiveIntegerFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+createProcessingInstruction
+ ()Lorg/eclipse/emf/ecore/xml/type/ProcessingInstruction;
+ ()L1org/eclipse/emf/ecore/xml/type/ProcessingInstruction; # @Generated
+createQName
+ (Ljava/lang/String;)Ljavax/xml/namespace/QName;
+ (Ljava/lang/String;)Ljavax/xml/namespace/QName; # @Generated(PolyNull)
+createQName
+ (Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/namespace/QName;
+ (Ljava/lang/String;L1java/lang/String;)L1javax/xml/namespace/QName; # @Generated(20,39)
+createQName
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/namespace/QName;
+ (Ljava/lang/String;L1java/lang/String;Ljava/lang/String;)L1javax/xml/namespace/QName; # @Generated(20,57)
+createQNameFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createShort
+ (Ljava/lang/String;)S
+ (L0java/lang/String;)S # @Generated
+createShortFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Short;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Short;
+createShortObject
+ (Ljava/lang/String;)Ljava/lang/Short;
+ (L0java/lang/String;)Ljava/lang/Short; # @Generated(2,PolyNull)
+createShortObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Short;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Short;
+createSimpleAnyType
+ ()Lorg/eclipse/emf/ecore/xml/type/SimpleAnyType;
+ ()L1org/eclipse/emf/ecore/xml/type/SimpleAnyType; # @Generated
+createString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+createStringFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+createTime
+ (Ljava/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar;
+ (L0java/lang/String;)Ljavax/xml/datatype/XMLGregorianCalendar; # @Generated(2,PolyNull)
+createTimeFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Object;
+createToken
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+createTokenFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/String;
+createUnsignedByte
+ (Ljava/lang/String;)S
+ (L0java/lang/String;)S # @Generated
+createUnsignedByteFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Short;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Short;
+createUnsignedByteObject
+ (Ljava/lang/String;)Ljava/lang/Short;
+ (L0java/lang/String;)Ljava/lang/Short; # @Generated(2,PolyNull)
+createUnsignedByteObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Short;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Short;
+createUnsignedInt
+ (Ljava/lang/String;)J
+ (L0java/lang/String;)J # @Generated
+createUnsignedIntFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Long;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Long;
+createUnsignedIntObject
+ (Ljava/lang/String;)Ljava/lang/Long;
+ (L0java/lang/String;)Ljava/lang/Long; # @Generated(2,PolyNull)
+createUnsignedIntObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Long;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Long;
+createUnsignedLong
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+createUnsignedLongFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/math/BigInteger;
+createUnsignedShort
+ (Ljava/lang/String;)I
+ (L0java/lang/String;)I # @Generated
+createUnsignedShortFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Integer;
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Integer;
+createUnsignedShortObject
+ (Ljava/lang/String;)Ljava/lang/Integer;
+ (L0java/lang/String;)Ljava/lang/Integer; # @Generated(2,PolyNull)
+createUnsignedShortObjectFromString
+ (Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/String;)Ljava/lang/Integer;
+ (Lorg/eclipse/emf/ecore/EDataType;L0java/lang/String;)Ljava/lang/Integer; # @Generated(35,PolyNull)
+createXMLTypeDocumentRoot
+ ()Lorg/eclipse/emf/ecore/xml/type/XMLTypeDocumentRoot;
+ ()L1org/eclipse/emf/ecore/xml/type/XMLTypeDocumentRoot; # @Generated
+getXMLTypePackage
+ ()Lorg/eclipse/emf/ecore/xml/type/XMLTypePackage;
+ ()Lorg/eclipse/emf/ecore/xml/type/XMLTypePackage;
+primitiveBooleanValueOf
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z

@@ -1,0 +1,38 @@
+class org/eclipse/jdt/core/manipulation/CUCorrectionProposalCore
+
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;I)V
+ (L1java/lang/String;L1org/eclipse/jdt/core/ICompilationUnit;I)V # @Generated(2,20)
+<init>
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;I)V
+ (L1java/lang/String;L1org/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;I)V # @Generated(2,20)
+<init>
+ (Lorg/eclipse/jdt/core/manipulation/ICUCorrectionProposal;Ljava/lang/String;Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;I)V
+ (Lorg/eclipse/jdt/core/manipulation/ICUCorrectionProposal;L1java/lang/String;L1org/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/ltk/core/refactoring/TextChange;I)V # @Generated(59,77)
+addEdits
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/text/edits/TextEdit;)V
+ (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/text/edits/TextEdit;)V
+createChange
+ ()Lorg/eclipse/ltk/core/refactoring/Change;
+ ()L1org/eclipse/ltk/core/refactoring/Change; # @Inherited(org.eclipse.jdt.core.manipulation.ChangeCorrectionProposalCore)
+createTextChange
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+getAdditionalProposalInfo
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L1java/lang/Object; # @Overrides(org.eclipse.jdt.core.manipulation.ChangeCorrectionProposalCore)
+getCompilationUnit
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+getNewChange
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+ ()L1org/eclipse/ltk/core/refactoring/TextChange; # @Generated
+getPreviewContent
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTextChange
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+ ()Lorg/eclipse/ltk/core/refactoring/TextChange;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

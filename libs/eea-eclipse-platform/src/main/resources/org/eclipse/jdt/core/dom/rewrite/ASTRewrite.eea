@@ -1,0 +1,69 @@
+class org/eclipse/jdt/core/dom/rewrite/ASTRewrite
+
+create
+ (Lorg/eclipse/jdt/core/dom/AST;)Lorg/eclipse/jdt/core/dom/rewrite/ASTRewrite;
+ (Lorg/eclipse/jdt/core/dom/AST;)L1org/eclipse/jdt/core/dom/rewrite/ASTRewrite; # @Generated(33)
+
+<init>
+ (Lorg/eclipse/jdt/core/dom/AST;)V
+ (Lorg/eclipse/jdt/core/dom/AST;)V
+createCopyTarget
+ (Lorg/eclipse/jdt/core/dom/ASTNode;)Lorg/eclipse/jdt/core/dom/ASTNode;
+ (L1org/eclipse/jdt/core/dom/ASTNode;)Lorg/eclipse/jdt/core/dom/ASTNode; # @Generated(2)
+createGroupNode
+ ([Lorg/eclipse/jdt/core/dom/ASTNode;)Lorg/eclipse/jdt/core/dom/ASTNode;
+ ([1Lorg/eclipse/jdt/core/dom/ASTNode;)L1org/eclipse/jdt/core/dom/ASTNode; # @Generated(2,38)
+createMoveTarget
+ (Lorg/eclipse/jdt/core/dom/ASTNode;)Lorg/eclipse/jdt/core/dom/ASTNode;
+ (L1org/eclipse/jdt/core/dom/ASTNode;)Lorg/eclipse/jdt/core/dom/ASTNode; # @Generated(2)
+createStringPlaceholder
+ (Ljava/lang/String;I)Lorg/eclipse/jdt/core/dom/ASTNode;
+ (L1java/lang/String;I)L1org/eclipse/jdt/core/dom/ASTNode; # @Generated(2,22)
+get
+ (Lorg/eclipse/jdt/core/dom/ASTNode;Lorg/eclipse/jdt/core/dom/StructuralPropertyDescriptor;)Ljava/lang/Object;
+ (L1org/eclipse/jdt/core/dom/ASTNode;L1org/eclipse/jdt/core/dom/StructuralPropertyDescriptor;)Ljava/lang/Object; # @Generated(2,36)
+getAST
+ ()Lorg/eclipse/jdt/core/dom/AST;
+ ()Lorg/eclipse/jdt/core/dom/AST;
+getExtendedSourceRangeComputer
+ ()Lorg/eclipse/jdt/core/dom/rewrite/TargetSourceRangeComputer;
+ ()Lorg/eclipse/jdt/core/dom/rewrite/TargetSourceRangeComputer;
+getListRewrite
+ (Lorg/eclipse/jdt/core/dom/ASTNode;Lorg/eclipse/jdt/core/dom/ChildListPropertyDescriptor;)Lorg/eclipse/jdt/core/dom/rewrite/ListRewrite;
+ (L1org/eclipse/jdt/core/dom/ASTNode;L1org/eclipse/jdt/core/dom/ChildListPropertyDescriptor;)L1org/eclipse/jdt/core/dom/rewrite/ListRewrite; # @Generated(2,36,91)
+getNodeStore
+ ()Lorg/eclipse/jdt/internal/core/dom/rewrite/NodeInfoStore;
+ ()Lorg/eclipse/jdt/internal/core/dom/rewrite/NodeInfoStore;
+getProperty
+ (Ljava/lang/String;)Ljava/lang/Object;
+ (L1java/lang/String;)L0java/lang/Object; # @Generated(2,21)
+getRewriteEventStore
+ ()Lorg/eclipse/jdt/internal/core/dom/rewrite/RewriteEventStore;
+ ()Lorg/eclipse/jdt/internal/core/dom/rewrite/RewriteEventStore;
+remove
+ (Lorg/eclipse/jdt/core/dom/ASTNode;Lorg/eclipse/text/edits/TextEditGroup;)V
+ (L1org/eclipse/jdt/core/dom/ASTNode;Lorg/eclipse/text/edits/TextEditGroup;)V # @Generated(2)
+replace
+ (Lorg/eclipse/jdt/core/dom/ASTNode;Lorg/eclipse/jdt/core/dom/ASTNode;Lorg/eclipse/text/edits/TextEditGroup;)V
+ (L1org/eclipse/jdt/core/dom/ASTNode;Lorg/eclipse/jdt/core/dom/ASTNode;Lorg/eclipse/text/edits/TextEditGroup;)V # @Generated(2)
+rewriteAST
+ ()Lorg/eclipse/text/edits/TextEdit;
+ ()Lorg/eclipse/text/edits/TextEdit;
+rewriteAST
+ (Lorg/eclipse/jface/text/IDocument;Ljava/util/Map;)Lorg/eclipse/text/edits/TextEdit;
+ (L1org/eclipse/jface/text/IDocument;Ljava/util/Map;)Lorg/eclipse/text/edits/TextEdit; # @Generated(2)
+set
+ (Lorg/eclipse/jdt/core/dom/ASTNode;Lorg/eclipse/jdt/core/dom/StructuralPropertyDescriptor;Ljava/lang/Object;Lorg/eclipse/text/edits/TextEditGroup;)V
+ (L1org/eclipse/jdt/core/dom/ASTNode;L1org/eclipse/jdt/core/dom/StructuralPropertyDescriptor;Ljava/lang/Object;Lorg/eclipse/text/edits/TextEditGroup;)V # @Generated(2,36)
+setProperty
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (L1java/lang/String;Ljava/lang/Object;)V # @Generated(2)
+setTargetSourceRangeComputer
+ (Lorg/eclipse/jdt/core/dom/rewrite/TargetSourceRangeComputer;)V
+ (Lorg/eclipse/jdt/core/dom/rewrite/TargetSourceRangeComputer;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+track
+ (Lorg/eclipse/jdt/core/dom/ASTNode;)Lorg/eclipse/jdt/core/dom/rewrite/ITrackedNodePosition;
+ (L1org/eclipse/jdt/core/dom/ASTNode;)L1org/eclipse/jdt/core/dom/rewrite/ITrackedNodePosition; # @Generated(2,37)

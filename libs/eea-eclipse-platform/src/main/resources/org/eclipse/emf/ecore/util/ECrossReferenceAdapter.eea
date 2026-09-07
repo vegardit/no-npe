@@ -1,0 +1,91 @@
+class org/eclipse/emf/ecore/util/ECrossReferenceAdapter
+
+getCrossReferenceAdapter
+ (Lorg/eclipse/emf/common/notify/Notifier;)Lorg/eclipse/emf/ecore/util/ECrossReferenceAdapter;
+ (L1org/eclipse/emf/common/notify/Notifier;)L0org/eclipse/emf/ecore/util/ECrossReferenceAdapter; # @Generated(2,43)
+
+inverseCrossReferencer
+ Lorg/eclipse/emf/ecore/util/ECrossReferenceAdapter$InverseCrossReferencer;
+ Lorg/eclipse/emf/ecore/util/ECrossReferenceAdapter$InverseCrossReferencer;
+unloadedEObjects
+ Ljava/util/Map<Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/resource/Resource;>;
+ Ljava/util/Map<Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/resource/Resource;>;
+unloadedResources
+ Ljava/util/Set<Lorg/eclipse/emf/ecore/resource/Resource;>;
+ Ljava/util/Set<Lorg/eclipse/emf/ecore/resource/Resource;>;
+
+addAdapter
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+ (L1org/eclipse/emf/common/notify/Notifier;)V # @Generated
+createInverseCrossReferencer
+ ()Lorg/eclipse/emf/ecore/util/ECrossReferenceAdapter$InverseCrossReferencer;
+ ()L1org/eclipse/emf/ecore/util/ECrossReferenceAdapter$InverseCrossReferencer; # @Generated
+getInverseReferences
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>;
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>;
+getInverseReferences
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EReference;Z)Ljava/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>;
+ (Lorg/eclipse/emf/ecore/EObject;L1org/eclipse/emf/ecore/EReference;Z)L1java/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>; # @Generated(33,69)
+getInverseReferences
+ (Lorg/eclipse/emf/ecore/EObject;Z)Ljava/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>;
+ (L1org/eclipse/emf/ecore/EObject;Z)L1java/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>; # @Generated(2,35)
+getNonNavigableInverseReferences
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>;
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>;
+getNonNavigableInverseReferences
+ (Lorg/eclipse/emf/ecore/EObject;Z)Ljava/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>;
+ (Lorg/eclipse/emf/ecore/EObject;Z)Ljava/util/Collection<Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;>;
+getTarget
+ ()Lorg/eclipse/emf/common/notify/Notifier;
+ ()L0org/eclipse/emf/common/notify/Notifier; # @Generated
+handleContainment
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+ (L1org/eclipse/emf/common/notify/Notification;)V # @Generated
+handleCrossReference
+ (Lorg/eclipse/emf/ecore/EReference;Lorg/eclipse/emf/common/notify/Notification;)V
+ (Lorg/eclipse/emf/ecore/EReference;L1org/eclipse/emf/common/notify/Notification;)V # @Generated(36)
+isAdapterForType
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+isIncluded
+ (Lorg/eclipse/emf/ecore/EReference;)Z
+ (L1org/eclipse/emf/ecore/EReference;)Z # @Generated
+notifyChanged
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+removeAdapter
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+ (L1org/eclipse/emf/common/notify/Notifier;)V # @Generated
+resolveAll
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (L1org/eclipse/emf/ecore/EObject;)V # @Generated
+resolveProxy
+ (Lorg/eclipse/emf/ecore/resource/Resource;Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature$Setting;)V
+ (Lorg/eclipse/emf/ecore/resource/Resource;Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EObject;L1org/eclipse/emf/ecore/EStructuralFeature$Setting;)V # @Generated(105)
+selfAdapt
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+ (L1org/eclipse/emf/common/notify/Notification;)V # @Generated
+setTarget
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+setTarget
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+setTarget
+ (Lorg/eclipse/emf/ecore/resource/Resource;)V
+ (L1org/eclipse/emf/ecore/resource/Resource;)V # @Generated
+setTarget
+ (Lorg/eclipse/emf/ecore/resource/ResourceSet;)V
+ (L1org/eclipse/emf/ecore/resource/ResourceSet;)V # @Generated
+unsetTarget
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+ (Lorg/eclipse/emf/common/notify/Notifier;)V
+unsetTarget
+ (Lorg/eclipse/emf/ecore/EObject;)V
+ (Lorg/eclipse/emf/ecore/EObject;)V
+unsetTarget
+ (Lorg/eclipse/emf/ecore/resource/Resource;)V
+ (L1org/eclipse/emf/ecore/resource/Resource;)V # @Generated
+unsetTarget
+ (Lorg/eclipse/emf/ecore/resource/ResourceSet;)V
+ (L1org/eclipse/emf/ecore/resource/ResourceSet;)V # @Generated

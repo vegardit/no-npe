@@ -1,0 +1,63 @@
+class org/eclipse/compare/CompareViewerPane
+
+clearToolBar
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (Lorg/eclipse/swt/widgets/Composite;)V
+getToolBarManager
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/action/ToolBarManager;
+ (Lorg/eclipse/swt/widgets/Composite;)L0org/eclipse/jface/action/ToolBarManager; # @Generated(38)
+
+<init>
+ (Lorg/eclipse/swt/widgets/Composite;I)V
+ (L1org/eclipse/swt/widgets/Composite;I)V # @Generated
+addDoubleClickListener
+ (Lorg/eclipse/jface/viewers/IDoubleClickListener;)V
+ (L1org/eclipse/jface/viewers/IDoubleClickListener;)V # @Generated
+addOpenListener
+ (Lorg/eclipse/jface/viewers/IOpenListener;)V
+ (L1org/eclipse/jface/viewers/IOpenListener;)V # @Generated
+addSelectionChangedListener
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
+createTopLeft
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Generated(38)
+doubleClick
+ (Lorg/eclipse/jface/viewers/DoubleClickEvent;)V
+ (L1org/eclipse/jface/viewers/DoubleClickEvent;)V # @Inherited(org.eclipse.jface.viewers.IDoubleClickListener)
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
+getInput
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getSelection
+ ()Lorg/eclipse/jface/viewers/ISelection;
+ ()L0org/eclipse/jface/viewers/ISelection; # @Overrides(org.eclipse.jface.viewers.ISelectionProvider)
+open
+ (Lorg/eclipse/jface/viewers/OpenEvent;)V
+ (L1org/eclipse/jface/viewers/OpenEvent;)V # @Inherited(org.eclipse.jface.viewers.IOpenListener)
+removeDoubleClickListener
+ (Lorg/eclipse/jface/viewers/IDoubleClickListener;)V
+ (L1org/eclipse/jface/viewers/IDoubleClickListener;)V # @Generated
+removeOpenListener
+ (Lorg/eclipse/jface/viewers/IOpenListener;)V
+ (L1org/eclipse/jface/viewers/IOpenListener;)V # @Generated
+removeSelectionChangedListener
+ (Lorg/eclipse/jface/viewers/ISelectionChangedListener;)V
+ (L1org/eclipse/jface/viewers/ISelectionChangedListener;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
+selectionChanged
+ (Lorg/eclipse/jface/viewers/SelectionChangedEvent;)V
+ (L1org/eclipse/jface/viewers/SelectionChangedEvent;)V # @Inherited(org.eclipse.jface.viewers.ISelectionChangedListener)
+setImage
+ (Lorg/eclipse/swt/graphics/Image;)V
+ (Lorg/eclipse/swt/graphics/Image;)V
+setInput
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setSelection
+ (Lorg/eclipse/jface/viewers/ISelection;)V
+ (L1org/eclipse/jface/viewers/ISelection;)V # @Inherited(org.eclipse.jface.viewers.ISelectionProvider)
+setText
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

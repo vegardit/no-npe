@@ -1,0 +1,43 @@
+class org/eclipse/emf/common/util/URI$URIPool
+
+super org/eclipse/emf/common/util/Pool
+ <Lorg/eclipse/emf/common/util/URI;>
+ <Lorg/eclipse/emf/common/util/URI;>
+
+cachedToStrings
+ Ljava/lang/ref/ReferenceQueue<Ljava/lang/String;>;
+ Ljava/lang/ref/ReferenceQueue<Ljava/lang/String;>;
+fileAccessUnits
+ Lorg/eclipse/emf/common/util/URI$URIPool$FileAccessUnit$Queue;
+ Lorg/eclipse/emf/common/util/URI$URIPool$FileAccessUnit$Queue;
+platformAccessUnits
+ Lorg/eclipse/emf/common/util/URI$URIPool$PlatformAccessUnit$Queue;
+ Lorg/eclipse/emf/common/util/URI$URIPool$PlatformAccessUnit$Queue;
+stringAccessUnits
+ Lorg/eclipse/emf/common/util/URI$URIPool$StringAccessUnit$Queue;
+ Lorg/eclipse/emf/common/util/URI$URIPool$StringAccessUnit$Queue;
+uriComponentsAccessUnits
+ Lorg/eclipse/emf/common/util/URI$URIPool$URIComponentsAccessUnit$Queue;
+ Lorg/eclipse/emf/common/util/URI$URIPool$URIComponentsAccessUnit$Queue;
+
+<init>
+ (Ljava/lang/ref/ReferenceQueue<Ljava/lang/Object;>;)V
+ (Ljava/lang/ref/ReferenceQueue<Ljava/lang/Object;>;)V
+intern
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (L0java/lang/String;)L0org/eclipse/emf/common/util/URI; # @Generated(2,21)
+intern
+ (Ljava/lang/String;Ljava/lang/String;Z)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;Ljava/lang/String;Z)Lorg/eclipse/emf/common/util/URI;
+intern
+ (ZIZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (ZIZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+intern
+ (ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;I)Lorg/eclipse/emf/common/util/URI;
+ (ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;I)Lorg/eclipse/emf/common/util/URI;
+internFile
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+newCachedToString
+ (Lorg/eclipse/emf/common/util/URI;Ljava/lang/String;)Ljava/lang/ref/WeakReference<Ljava/lang/String;>;
+ (Lorg/eclipse/emf/common/util/URI;Ljava/lang/String;)L1java/lang/ref/WeakReference<Ljava/lang/String;>; # @Generated(54)

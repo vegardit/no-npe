@@ -1,0 +1,98 @@
+class org/eclipse/team/ui/mapping/SynchronizationContentProvider
+
+diffsChanged
+ (Lorg/eclipse/team/core/diff/IDiffChangeEvent;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/team/core/diff/IDiffChangeEvent;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getChildren
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (L1java/lang/Object;)[1L1java/lang/Object; # @Inherited(org.eclipse.jface.viewers.ITreeContentProvider)
+getChildrenInContext
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;Ljava/lang/Object;[1Ljava/lang/Object;)[Ljava/lang/Object; # @Generated(75)
+getChildrenInScope
+ (Lorg/eclipse/team/core/mapping/ISynchronizationScope;Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+ (Lorg/eclipse/team/core/mapping/ISynchronizationScope;Ljava/lang/Object;[1Ljava/lang/Object;)[Ljava/lang/Object; # @Generated(73)
+getConfiguration
+ ()Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;
+ ()L0org/eclipse/team/ui/synchronize/ISynchronizePageConfiguration; # @Generated
+getContext
+ ()Lorg/eclipse/team/core/mapping/ISynchronizationContext;
+ ()L0org/eclipse/team/core/mapping/ISynchronizationContext; # @Generated
+getDelegateChildren
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+getDelegateContentProvider
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+ ()Lorg/eclipse/jface/viewers/ITreeContentProvider;
+getElements
+ (Ljava/lang/Object;)[Ljava/lang/Object;
+ (L0java/lang/Object;)[1L1java/lang/Object; # @Inherited(org.eclipse.jface.viewers.ITreeContentProvider)
+getExtensionSite
+ ()Lorg/eclipse/ui/navigator/ICommonContentExtensionSite;
+ ()Lorg/eclipse/ui/navigator/ICommonContentExtensionSite;
+getModelProvider
+ ()Lorg/eclipse/core/resources/mapping/ModelProvider;
+ ()Lorg/eclipse/core/resources/mapping/ModelProvider;
+getModelProviderId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getModelRoot
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getParent
+ (Ljava/lang/Object;)Ljava/lang/Object;
+ (L1java/lang/Object;)L0java/lang/Object; # @Inherited(org.eclipse.jface.viewers.ITreeContentProvider)
+getScope
+ ()Lorg/eclipse/team/core/mapping/ISynchronizationScope;
+ ()L0org/eclipse/team/core/mapping/ISynchronizationScope; # @Generated
+getTraversals
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;Ljava/lang/Object;)[Lorg/eclipse/core/resources/mapping/ResourceTraversal;
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;Ljava/lang/Object;)[Lorg/eclipse/core/resources/mapping/ResourceTraversal;
+getViewer
+ ()Lorg/eclipse/jface/viewers/Viewer;
+ ()Lorg/eclipse/jface/viewers/Viewer;
+handleException
+ (Lorg/eclipse/core/runtime/CoreException;)V
+ (L1org/eclipse/core/runtime/CoreException;)V # @Generated
+hasChildren
+ (Ljava/lang/Object;)Z
+ (L1java/lang/Object;)Z # @Inherited(org.eclipse.jface.viewers.ITreeContentProvider)
+hasChildrenInContext
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;Ljava/lang/Object;)Z
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;Ljava/lang/Object;)Z
+hasChildrenInScope
+ (Lorg/eclipse/team/core/mapping/ISynchronizationScope;Ljava/lang/Object;)Z
+ (Lorg/eclipse/team/core/mapping/ISynchronizationScope;Ljava/lang/Object;)Z
+init
+ (Lorg/eclipse/ui/navigator/ICommonContentExtensionSite;)V
+ (L1org/eclipse/ui/navigator/ICommonContentExtensionSite;)V # @Inherited(org.eclipse.ui.navigator.ICommonContentProvider)
+inputChanged
+ (Lorg/eclipse/jface/viewers/Viewer;Ljava/lang/Object;Ljava/lang/Object;)V
+ (L1org/eclipse/jface/viewers/Viewer;L0java/lang/Object;L0java/lang/Object;)V # @Inherited(org.eclipse.jface.viewers.IContentProvider)
+isInScope
+ (Lorg/eclipse/team/core/mapping/ISynchronizationScope;Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Lorg/eclipse/team/core/mapping/ISynchronizationScope;Ljava/lang/Object;Ljava/lang/Object;)Z
+isInitialized
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;)Z
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;)Z
+isVisible
+ (Lorg/eclipse/team/core/diff/IDiff;)Z
+ (L1org/eclipse/team/core/diff/IDiff;)Z # @Generated
+isVisible
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;Ljava/lang/Object;)Z
+ (L1org/eclipse/team/core/mapping/ISynchronizationContext;Ljava/lang/Object;)Z # @Generated(2)
+propertyChange
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (L1org/eclipse/jface/util/PropertyChangeEvent;)V # @Inherited(org.eclipse.jface.util.IPropertyChangeListener)
+propertyChanged
+ (Lorg/eclipse/team/core/diff/IDiffTree;I[Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/team/core/diff/IDiffTree;I[Lorg/eclipse/core/runtime/IPath;)V
+requestInitialization
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;)V
+ (Lorg/eclipse/team/core/mapping/ISynchronizationContext;)V
+restoreState
+ (Lorg/eclipse/ui/IMemento;)V
+ (L1org/eclipse/ui/IMemento;)V # @Inherited(org.eclipse.ui.navigator.IMementoAware)
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (L1org/eclipse/ui/IMemento;)V # @Inherited(org.eclipse.ui.navigator.IMementoAware)

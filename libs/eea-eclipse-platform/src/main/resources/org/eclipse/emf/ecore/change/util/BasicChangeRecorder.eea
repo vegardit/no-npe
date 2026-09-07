@@ -1,0 +1,48 @@
+class org/eclipse/emf/ecore/change/util/BasicChangeRecorder
+
+changeDescription
+ Lorg/eclipse/emf/ecore/change/ChangeDescription;
+ Lorg/eclipse/emf/ecore/change/ChangeDescription;
+
+createChangeDescription
+ ()Lorg/eclipse/emf/ecore/change/ChangeDescription;
+ ()Lorg/eclipse/emf/ecore/change/ChangeDescription;
+createFeatureChange
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;Z)Lorg/eclipse/emf/ecore/change/FeatureChange;
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;Z)Lorg/eclipse/emf/ecore/change/FeatureChange;
+createResourceChange
+ (Lorg/eclipse/emf/ecore/resource/Resource;Lorg/eclipse/emf/common/util/EList<Ljava/lang/Object;>;)Lorg/eclipse/emf/ecore/change/ResourceChange;
+ (Lorg/eclipse/emf/ecore/resource/Resource;Lorg/eclipse/emf/common/util/EList<Ljava/lang/Object;>;)Lorg/eclipse/emf/ecore/change/ResourceChange;
+endRecording
+ ()Lorg/eclipse/emf/ecore/change/ChangeDescription;
+ ()L0org/eclipse/emf/ecore/change/ChangeDescription; # @Generated
+finalizeChange
+ (Lorg/eclipse/emf/ecore/change/FeatureChange;Lorg/eclipse/emf/ecore/EObject;)V
+ (L1org/eclipse/emf/ecore/change/FeatureChange;Lorg/eclipse/emf/ecore/EObject;)V # @Generated(2)
+finalizeChange
+ (Lorg/eclipse/emf/ecore/change/ResourceChange;)V
+ (L1org/eclipse/emf/ecore/change/ResourceChange;)V # @Generated
+getChangeDescription
+ ()Lorg/eclipse/emf/ecore/change/ChangeDescription;
+ ()Lorg/eclipse/emf/ecore/change/ChangeDescription;
+getFeatureChange
+ (Ljava/util/List<Lorg/eclipse/emf/ecore/change/FeatureChange;>;Lorg/eclipse/emf/ecore/EStructuralFeature;)Lorg/eclipse/emf/ecore/change/FeatureChange;
+ (L1java/util/List<Lorg/eclipse/emf/ecore/change/FeatureChange;>;Lorg/eclipse/emf/ecore/EStructuralFeature;)L0org/eclipse/emf/ecore/change/FeatureChange; # @Generated(2,107)
+getFeatureChanges
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/util/List<Lorg/eclipse/emf/ecore/change/FeatureChange;>;
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/util/List<Lorg/eclipse/emf/ecore/change/FeatureChange;>;
+getResourceChange
+ (Lorg/eclipse/emf/ecore/resource/Resource;)Lorg/eclipse/emf/ecore/change/ResourceChange;
+ (Lorg/eclipse/emf/ecore/resource/Resource;)L0org/eclipse/emf/ecore/change/ResourceChange; # @Generated(44)
+getResourceChanges
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/change/ResourceChange;>;
+ ()Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/ecore/change/ResourceChange;>;
+setChangeDescription
+ (Lorg/eclipse/emf/ecore/change/ChangeDescription;)V
+ (Lorg/eclipse/emf/ecore/change/ChangeDescription;)V
+shouldRecord
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/ecore/EObject;)Z
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/ecore/EObject;)Z
+summarize
+ ()Lorg/eclipse/emf/ecore/change/ChangeDescription;
+ ()L0org/eclipse/emf/ecore/change/ChangeDescription; # @Generated

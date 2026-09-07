@@ -1,0 +1,23 @@
+class org/eclipse/team/core/subscribers/SubscriberMergeContext
+
+<init>
+ (Lorg/eclipse/team/core/subscribers/Subscriber;Lorg/eclipse/team/core/mapping/ISynchronizationScopeManager;)V
+ (L1org/eclipse/team/core/subscribers/Subscriber;Lorg/eclipse/team/core/mapping/ISynchronizationScopeManager;)V # @Generated(2)
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.team.core.mapping.provider.MergeContext)
+getDiffFilter
+ ()Lorg/eclipse/team/core/diff/DiffFilter;
+ ()L0org/eclipse/team/core/diff/DiffFilter; # @Generated
+getSubscriber
+ ()Lorg/eclipse/team/core/subscribers/Subscriber;
+ ()Lorg/eclipse/team/core/subscribers/Subscriber;
+getSyncInfo
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/synchronize/SyncInfo;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/synchronize/SyncInfo;
+refresh
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/core/resources/mapping/ResourceTraversal;ILorg/eclipse/core/runtime/IProgressMonitor;)V
+runInBackground
+ (Lorg/eclipse/core/resources/IWorkspaceRunnable;)V
+ (Lorg/eclipse/core/resources/IWorkspaceRunnable;)V

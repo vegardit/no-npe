@@ -1,0 +1,99 @@
+class org/eclipse/emf/ecore/util/EcoreEMap
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super org/eclipse/emf/common/util/BasicEMap
+ <TK;TV;>
+ <TK;TV;>
+super org/eclipse/emf/ecore/util/InternalEList$Unsettable
+ <Ljava/util/Map$Entry<TK;TV;>;>
+ <Ljava/util/Map$Entry<TK;TV;>;>
+
+entryClass
+ Ljava/lang/Class<*>;
+ Ljava/lang/Class<*>;
+entryEClass
+ Lorg/eclipse/emf/ecore/EClass;
+ Lorg/eclipse/emf/ecore/EClass;
+
+<init>
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/Class<*>;Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/common/util/BasicEMap$Entry<TK;TV;>;>;)V
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/Class<*>;Lorg/eclipse/emf/common/util/EList<Lorg/eclipse/emf/common/util/BasicEMap$Entry<TK;TV;>;>;)V
+<init>
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/Class<*>;Lorg/eclipse/emf/ecore/InternalEObject;I)V
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/Class<*>;Lorg/eclipse/emf/ecore/InternalEObject;I)V
+<init>
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/Class<*>;Lorg/eclipse/emf/ecore/InternalEObject;II)V
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/Class<*>;Lorg/eclipse/emf/ecore/InternalEObject;II)V
+addAllUnique
+ (ILjava/util/Collection<+Ljava/util/Map$Entry<TK;TV;>;>;)Z
+ (ILjava/util/Collection<+Ljava/util/Map$Entry<TK;TV;>;>;)Z
+addAllUnique
+ (Ljava/util/Collection<+Ljava/util/Map$Entry<TK;TV;>;>;)Z
+ (Ljava/util/Collection<+Ljava/util/Map$Entry<TK;TV;>;>;)Z
+addUnique
+ (ILjava/util/Map$Entry<TK;TV;>;)V
+ (ILjava/util/Map$Entry<TK;TV;>;)V
+addUnique
+ (Ljava/util/Map$Entry<TK;TV;>;)V
+ (Ljava/util/Map$Entry<TK;TV;>;)V
+basicAdd
+ (Ljava/util/Map$Entry<TK;TV;>;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (Ljava/util/Map$Entry<TK;TV;>;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+basicContains
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+basicContainsAll
+ (Ljava/util/Collection<*>;)Z
+ (Ljava/util/Collection<*>;)Z
+basicGet
+ (I)Lorg/eclipse/emf/common/util/BasicEMap$Entry<TK;TV;>;
+ (I)Lorg/eclipse/emf/common/util/BasicEMap$Entry<TK;TV;>;
+basicIndexOf
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+basicIterator
+ ()Ljava/util/Iterator<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()Ljava/util/Iterator<Ljava/util/Map$Entry<TK;TV;>;>;
+basicLastIndexOf
+ (Ljava/lang/Object;)I
+ (Ljava/lang/Object;)I
+basicList
+ ()Ljava/util/List<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()Ljava/util/List<Ljava/util/Map$Entry<TK;TV;>;>;
+basicListIterator
+ ()Ljava/util/ListIterator<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()Ljava/util/ListIterator<Ljava/util/Map$Entry<TK;TV;>;>;
+basicListIterator
+ (I)Ljava/util/ListIterator<Ljava/util/Map$Entry<TK;TV;>;>;
+ (I)Ljava/util/ListIterator<Ljava/util/Map$Entry<TK;TV;>;>;
+basicRemove
+ (Ljava/lang/Object;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (Ljava/lang/Object;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+basicToArray
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+basicToArray
+ <T:Ljava/lang/Object;>([TT;)[TT;
+ <T:Ljava/lang/Object;>([TT;)[TT;
+get
+ (Z)Ljava/lang/Object;
+ (Z)Ljava/lang/Object;
+getEObject
+ ()Lorg/eclipse/emf/ecore/EObject;
+ ()Lorg/eclipse/emf/ecore/EObject;
+getEStructuralFeature
+ ()Lorg/eclipse/emf/ecore/EStructuralFeature;
+ ()Lorg/eclipse/emf/ecore/EStructuralFeature;
+newEntry
+ (ITK;TV;)Lorg/eclipse/emf/common/util/BasicEMap$Entry<TK;TV;>;
+ (ITK;TV;)L1org/eclipse/emf/common/util/BasicEMap$Entry<TK;TV;>; # @Inherited(org.eclipse.emf.common.util.BasicEMap)
+newList
+ ()Lorg/eclipse/emf/common/util/BasicEList<Lorg/eclipse/emf/common/util/BasicEMap$Entry<TK;TV;>;>;
+ ()L1org/eclipse/emf/common/util/BasicEList<Lorg/eclipse/emf/common/util/BasicEMap$Entry<TK;TV;>;>; # @Inherited(org.eclipse.emf.common.util.BasicEMap)
+set
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setUnique
+ (ILjava/util/Map$Entry<TK;TV;>;)Ljava/util/Map$Entry<TK;TV;>;
+ (ILjava/util/Map$Entry<TK;TV;>;)Ljava/util/Map$Entry<TK;TV;>;

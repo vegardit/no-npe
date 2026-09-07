@@ -1,0 +1,180 @@
+class org/eclipse/jdt/core/IJavaProject
+
+CLASSPATH_FILE_NAME
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+decodeClasspathEntry
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IClasspathEntry;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IClasspathEntry;
+determineModulesOfProjectsWithNonEmptyClasspath
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+encodeClasspathEntry
+ (Lorg/eclipse/jdt/core/IClasspathEntry;)Ljava/lang/String;
+ (Lorg/eclipse/jdt/core/IClasspathEntry;)Ljava/lang/String;
+findContainingClasspathEntry
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/jdt/core/IClasspathEntry;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/jdt/core/IClasspathEntry;
+findElement
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IJavaElement;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IJavaElement;
+findElement
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jdt/core/IJavaElement;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jdt/core/IJavaElement;
+findElement
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IJavaElement;
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IJavaElement;
+findModule
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IModuleDescription;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IModuleDescription;
+findPackageFragment
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jdt/core/IPackageFragment;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jdt/core/IPackageFragment;
+findPackageFragmentRoot
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+findPackageFragmentRoots
+ (Lorg/eclipse/jdt/core/IClasspathEntry;)[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+ (Lorg/eclipse/jdt/core/IClasspathEntry;)[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+findType
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IType;
+findType
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jdt/core/IType;
+findType
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+findType
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IType;
+findType
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+findType
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+findType
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/IType;
+findType
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+findUnfilteredPackageFragmentRoots
+ (Lorg/eclipse/jdt/core/IClasspathEntry;)[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+ (Lorg/eclipse/jdt/core/IClasspathEntry;)[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+getAllPackageFragmentRoots
+ ()[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+ ()[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+getClasspathEntryFor
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jdt/core/IClasspathEntry;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/jdt/core/IClasspathEntry;
+getModuleDescription
+ ()Lorg/eclipse/jdt/core/IModuleDescription;
+ ()Lorg/eclipse/jdt/core/IModuleDescription;
+getModuleDescription
+ (I)Lorg/eclipse/jdt/core/IModuleDescription;
+ (I)Lorg/eclipse/jdt/core/IModuleDescription;
+getNonJavaResources
+ ()[Ljava/lang/Object;
+ ()[Ljava/lang/Object;
+getOption
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String;
+getOptions
+ (Z)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ (Z)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getOutputLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+getOwnModuleDescription
+ ()Lorg/eclipse/jdt/core/IModuleDescription;
+ ()Lorg/eclipse/jdt/core/IModuleDescription;
+getOwnModuleDescription
+ (I)Lorg/eclipse/jdt/core/IModuleDescription;
+ (I)Lorg/eclipse/jdt/core/IModuleDescription;
+getPackageFragmentRoot
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+getPackageFragmentRoot
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+getPackageFragmentRoots
+ ()[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+ ()[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+getPackageFragmentRoots
+ (Lorg/eclipse/jdt/core/IClasspathEntry;)[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+ (Lorg/eclipse/jdt/core/IClasspathEntry;)[Lorg/eclipse/jdt/core/IPackageFragmentRoot;
+getPackageFragments
+ ()[Lorg/eclipse/jdt/core/IPackageFragment;
+ ()[Lorg/eclipse/jdt/core/IPackageFragment;
+getProject
+ ()Lorg/eclipse/core/resources/IProject;
+ ()Lorg/eclipse/core/resources/IProject;
+getRawClasspath
+ ()[Lorg/eclipse/jdt/core/IClasspathEntry;
+ ()[Lorg/eclipse/jdt/core/IClasspathEntry;
+getReferencedClasspathEntries
+ ()[Lorg/eclipse/jdt/core/IClasspathEntry;
+ ()[Lorg/eclipse/jdt/core/IClasspathEntry;
+getRequiredProjectNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getResolvedClasspath
+ (Z)[Lorg/eclipse/jdt/core/IClasspathEntry;
+ (Z)[Lorg/eclipse/jdt/core/IClasspathEntry;
+hasClasspathCycle
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;)Z
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;)Z
+isOnClasspath
+ (Lorg/eclipse/core/resources/IResource;)Z
+ (Lorg/eclipse/core/resources/IResource;)Z
+isOnClasspath
+ (Lorg/eclipse/jdt/core/IJavaElement;)Z
+ (Lorg/eclipse/jdt/core/IJavaElement;)Z
+newEvaluationContext
+ ()Lorg/eclipse/jdt/core/eval/IEvaluationContext;
+ ()Lorg/eclipse/jdt/core/eval/IEvaluationContext;
+newTypeHierarchy
+ (Lorg/eclipse/jdt/core/IRegion;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/jdt/core/IRegion;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newTypeHierarchy
+ (Lorg/eclipse/jdt/core/IRegion;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/jdt/core/IRegion;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newTypeHierarchy
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/core/IRegion;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/core/IRegion;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newTypeHierarchy
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/core/IRegion;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/core/IRegion;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+readOutputLocation
+ ()Lorg/eclipse/core/runtime/IPath;
+ ()Lorg/eclipse/core/runtime/IPath;
+readRawClasspath
+ ()[Lorg/eclipse/jdt/core/IClasspathEntry;
+ ()[Lorg/eclipse/jdt/core/IClasspathEntry;
+setOption
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+setOptions
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+setOutputLocation
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+setRawClasspath
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+setRawClasspath
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;Lorg/eclipse/core/runtime/IPath;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+setRawClasspath
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+setRawClasspath
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+setRawClasspath
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;[Lorg/eclipse/jdt/core/IClasspathEntry;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([Lorg/eclipse/jdt/core/IClasspathEntry;[Lorg/eclipse/jdt/core/IClasspathEntry;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V

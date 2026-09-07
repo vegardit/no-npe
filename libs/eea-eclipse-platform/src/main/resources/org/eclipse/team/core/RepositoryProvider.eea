@@ -1,0 +1,60 @@
+class org/eclipse/team/core/RepositoryProvider
+
+getAllProviderTypeIds
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getProvider
+ (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/team/core/RepositoryProvider;
+ (Lorg/eclipse/core/resources/IProject;)L0org/eclipse/team/core/RepositoryProvider; # @Generated(40)
+getProvider
+ (Lorg/eclipse/core/resources/IProject;Ljava/lang/String;)Lorg/eclipse/team/core/RepositoryProvider;
+ (Lorg/eclipse/core/resources/IProject;Ljava/lang/String;)L0org/eclipse/team/core/RepositoryProvider; # @Generated(58)
+isShared
+ (Lorg/eclipse/core/resources/IProject;)Z
+ (L1org/eclipse/core/resources/IProject;)Z # @Generated
+map
+ (Lorg/eclipse/core/resources/IProject;Ljava/lang/String;)V
+ (L1org/eclipse/core/resources/IProject;Ljava/lang/String;)V # @Generated(2)
+unmap
+ (Lorg/eclipse/core/resources/IProject;)V
+ (L1org/eclipse/core/resources/IProject;)V # @Generated
+
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
+getFileHistoryProvider
+ ()Lorg/eclipse/team/core/history/IFileHistoryProvider;
+ ()L0org/eclipse/team/core/history/IFileHistoryProvider; # @Generated
+getFileModificationValidator
+ ()Lorg/eclipse/core/resources/IFileModificationValidator;
+ ()L0org/eclipse/core/resources/IFileModificationValidator; # @Generated
+getFileModificationValidator2
+ ()Lorg/eclipse/core/resources/team/FileModificationValidator;
+ ()L0org/eclipse/core/resources/team/FileModificationValidator; # @Generated
+getID
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMoveDeleteHook
+ ()Lorg/eclipse/core/resources/team/IMoveDeleteHook;
+ ()L0org/eclipse/core/resources/team/IMoveDeleteHook; # @Generated
+getProject
+ ()Lorg/eclipse/core/resources/IProject;
+ ()L1org/eclipse/core/resources/IProject; # @Inherited(org.eclipse.core.resources.IProjectNature)
+getRuleFactory
+ ()Lorg/eclipse/core/resources/IResourceRuleFactory;
+ ()L1org/eclipse/core/resources/IResourceRuleFactory; # @Generated
+getSubscriber
+ ()Lorg/eclipse/team/core/subscribers/Subscriber;
+ ()L0org/eclipse/team/core/subscribers/Subscriber; # @Generated
+setProject
+ (Lorg/eclipse/core/resources/IProject;)V
+ (L1org/eclipse/core/resources/IProject;)V # @Inherited(org.eclipse.core.resources.IProjectNature)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+validateCreateLink
+ (Lorg/eclipse/core/resources/IResource;ILjava/net/URI;)Lorg/eclipse/core/runtime/IStatus;
+ (L1org/eclipse/core/resources/IResource;ILjava/net/URI;)Lorg/eclipse/core/runtime/IStatus; # @Generated(2)
+validateCreateLink
+ (Lorg/eclipse/core/resources/IResource;ILorg/eclipse/core/runtime/IPath;)Lorg/eclipse/core/runtime/IStatus;
+ (Lorg/eclipse/core/resources/IResource;ILorg/eclipse/core/runtime/IPath;)L1org/eclipse/core/runtime/IStatus; # @Generated(74)

@@ -1,0 +1,51 @@
+class org/eclipse/team/ui/synchronize/SaveableCompareEditorInput
+
+createFileElement
+ (Lorg/eclipse/core/resources/IFile;)Lorg/eclipse/compare/ITypedElement;
+ (L1org/eclipse/core/resources/IFile;)L1org/eclipse/compare/ITypedElement; # @Generated(2,37)
+
+<init>
+ (Lorg/eclipse/compare/CompareConfiguration;Lorg/eclipse/ui/IWorkbenchPage;)V
+ (L1org/eclipse/compare/CompareConfiguration;Lorg/eclipse/ui/IWorkbenchPage;)V # @Generated(2)
+addCompareInputChangeListener
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/structuremergeviewer/ICompareInputChangeListener;)V
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/structuremergeviewer/ICompareInputChangeListener;)V
+createSaveable
+ ()Lorg/eclipse/ui/Saveable;
+ ()L1org/eclipse/ui/Saveable; # @Generated
+findContentViewer
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+getActiveSaveables
+ ()[Lorg/eclipse/ui/Saveable;
+ ()[1Lorg/eclipse/ui/Saveable; # @Generated(3)
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.compare.CompareEditorInput)
+getCompareInput
+ ()Lorg/eclipse/compare/structuremergeviewer/ICompareInput;
+ ()Lorg/eclipse/compare/structuremergeviewer/ICompareInput;
+getImageDescriptor
+ ()Lorg/eclipse/jface/resource/ImageDescriptor;
+ ()L0org/eclipse/jface/resource/ImageDescriptor; # @Inherited(org.eclipse.compare.CompareEditorInput)
+getSaveable
+ ()Lorg/eclipse/ui/Saveable;
+ ()Lorg/eclipse/ui/Saveable;
+getSaveables
+ ()[Lorg/eclipse/ui/Saveable;
+ ()[Lorg/eclipse/ui/Saveable;
+getTitleImage
+ ()Lorg/eclipse/swt/graphics/Image;
+ ()Lorg/eclipse/swt/graphics/Image;
+prepareCompareInput
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/compare/structuremergeviewer/ICompareInput;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/compare/structuremergeviewer/ICompareInput;
+prepareInput
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L0java/lang/Object; # @Generated(46)
+registerContextMenu
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+removeCompareInputChangeListener
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/structuremergeviewer/ICompareInputChangeListener;)V
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/structuremergeviewer/ICompareInputChangeListener;)V

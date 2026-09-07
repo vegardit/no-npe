@@ -1,0 +1,33 @@
+class org/eclipse/emf/common/command/BasicCommandStack
+
+commandList
+ Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;
+ Ljava/util/List<Lorg/eclipse/emf/common/command/Command;>;
+listeners
+ Ljava/util/Collection<Lorg/eclipse/emf/common/command/CommandStackListener;>;
+ Ljava/util/Collection<Lorg/eclipse/emf/common/command/CommandStackListener;>;
+mostRecentCommand
+ Lorg/eclipse/emf/common/command/Command;
+ Lorg/eclipse/emf/common/command/Command;
+
+addCommandStackListener
+ (Lorg/eclipse/emf/common/command/CommandStackListener;)V
+ (L1org/eclipse/emf/common/command/CommandStackListener;)V # @Inherited(org.eclipse.emf.common.command.CommandStack)
+execute
+ (Lorg/eclipse/emf/common/command/Command;)V
+ (L0org/eclipse/emf/common/command/Command;)V # @Generated
+getMostRecentCommand
+ ()Lorg/eclipse/emf/common/command/Command;
+ ()Lorg/eclipse/emf/common/command/Command;
+getRedoCommand
+ ()Lorg/eclipse/emf/common/command/Command;
+ ()L0org/eclipse/emf/common/command/Command; # @Generated
+getUndoCommand
+ ()Lorg/eclipse/emf/common/command/Command;
+ ()L0org/eclipse/emf/common/command/Command; # @Generated
+handleError
+ (Ljava/lang/Exception;)V
+ (Ljava/lang/Exception;)V
+removeCommandStackListener
+ (Lorg/eclipse/emf/common/command/CommandStackListener;)V
+ (L1org/eclipse/emf/common/command/CommandStackListener;)V # @Inherited(org.eclipse.emf.common.command.CommandStack)

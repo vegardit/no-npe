@@ -1,0 +1,310 @@
+class org/eclipse/emf/common/util/URI
+
+ARCHIVE_SCHEMES
+ [Ljava/lang/String;
+ [Ljava/lang/String;
+ARCHIVE_SEPARATOR
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+AUTHORITY_SEPARATOR
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+HEX_DIGITS
+ [C
+ [1C # @Generated
+NO_SEGMENTS
+ [Ljava/lang/String;
+ [Ljava/lang/String;
+ONE_EMPTY_SEGMENT
+ [Ljava/lang/String;
+ [Ljava/lang/String;
+ONE_SELF_SEGMENT
+ [Ljava/lang/String;
+ [Ljava/lang/String;
+POOL
+ Lorg/eclipse/emf/common/util/URI$URIPool;
+ L1org/eclipse/emf/common/util/URI$URIPool; # @Generated
+SCHEME_ARCHIVE
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SCHEME_FILE
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SCHEME_HTTP
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SCHEME_JAR
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SCHEME_PLATFORM
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SCHEME_ZIP
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SEGMENT_EMPTY
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SEGMENT_PARENT
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SEGMENT_PLUGIN
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SEGMENT_RESOURCE
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SEGMENT_SELF
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+appendEscaped
+ (Ljava/lang/StringBuffer;B)V
+ (L1java/lang/StringBuffer;B)V # @Generated
+contains
+ (Ljava/lang/String;JJ)Z
+ (L1java/lang/String;JJ)Z # @Generated
+createDeviceURI
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (L1java/lang/String;)Lorg/eclipse/emf/common/util/URI; # @Generated(2)
+createFileURI
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+createGenericURI
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (L1java/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI; # @Generated(2)
+createHierarchicalURI
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+createHierarchicalURI
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+createHierarchicalURI
+ ([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ ([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+createPlatformPluginURI
+ (Ljava/lang/String;Z)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;Z)Lorg/eclipse/emf/common/util/URI;
+createPlatformResourceURI
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+createPlatformResourceURI
+ (Ljava/lang/String;Z)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;Z)Lorg/eclipse/emf/common/util/URI;
+createURI
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (L1java/lang/String;)Lorg/eclipse/emf/common/util/URI; # @Generated(2)
+createURI
+ (Ljava/lang/String;Z)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;Z)Lorg/eclipse/emf/common/util/URI;
+createURI
+ (Ljava/lang/String;ZI)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;ZI)Lorg/eclipse/emf/common/util/URI;
+createURIWithCache
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (L1java/lang/String;)Lorg/eclipse/emf/common/util/URI; # @Generated(2)
+decode
+ (Ljava/lang/String;)Ljava/lang/String;
+ (L0java/lang/String;)Ljava/lang/String; # @Generated(2,PolyNull)
+encode
+ (Ljava/lang/String;JJZ)Ljava/lang/String;
+ (L0java/lang/String;JJZ)Ljava/lang/String; # @Generated(2,PolyNull)
+encodeAuthority
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String; # @Generated(PolyNull)
+encodeFragment
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String; # @Generated(PolyNull)
+encodeOpaquePart
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String; # @Generated(PolyNull)
+encodeQuery
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String; # @Generated(PolyNull)
+encodeSegment
+ (Ljava/lang/String;Z)Ljava/lang/String;
+ (Ljava/lang/String;Z)Ljava/lang/String; # @Generated(PolyNull)
+encodeURI
+ (Ljava/lang/String;ZI)Ljava/lang/String;
+ (L0java/lang/String;ZI)Ljava/lang/String; # @Generated(2,PolyNull)
+equals
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+firstInvalidSegment
+ ([Ljava/lang/String;)Ljava/lang/String;
+ ([0Ljava/lang/String;)L0java/lang/String; # @Generated(2,22)
+highBitmask
+ (Ljava/lang/String;)J
+ (L1java/lang/String;)J # @Generated
+isArchiveScheme
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+isEscaped
+ (Ljava/lang/String;I)Z
+ (L1java/lang/String;I)Z # @Generated
+lowBitmask
+ (Ljava/lang/String;)J
+ (L1java/lang/String;)J # @Generated
+main
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+splitInternFragment
+ (Ljava/lang/String;)Ljava/lang/CharSequence;
+ (L1java/lang/String;)Ljava/lang/CharSequence; # @Generated(2)
+validArchiveAuthority
+ (Ljava/lang/String;)Z
+ (L0java/lang/String;)Z # @Generated
+validAuthority
+ (Ljava/lang/String;)Z
+ (L0java/lang/String;)Z # @Generated
+validDevice
+ (Ljava/lang/String;)Z
+ (L0java/lang/String;)Z # @Generated
+validFragment
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+validJarAuthority
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+validOpaquePart
+ (Ljava/lang/String;)Z
+ (L0java/lang/String;)Z # @Generated
+validQuery
+ (Ljava/lang/String;)Z
+ (L0java/lang/String;)Z # @Generated
+validScheme
+ (Ljava/lang/String;)Z
+ (L0java/lang/String;)Z # @Generated
+validSegment
+ (Ljava/lang/String;)Z
+ (L0java/lang/String;)Z # @Generated
+validSegments
+ ([Ljava/lang/String;)Z
+ ([0Ljava/lang/String;)Z # @Generated(2)
+validateURI
+ (ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+ (ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+
+appendFileExtension
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;)L1org/eclipse/emf/common/util/URI; # @Generated(21)
+appendFragment
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (L0java/lang/String;)L1org/eclipse/emf/common/util/URI; # @Generated(2,21)
+appendQuery
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;)L1org/eclipse/emf/common/util/URI; # @Generated(21)
+appendSegment
+ (Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ (Ljava/lang/String;)L1org/eclipse/emf/common/util/URI; # @Generated(21)
+appendSegments
+ ([Ljava/lang/String;)Lorg/eclipse/emf/common/util/URI;
+ ([Ljava/lang/String;)L1org/eclipse/emf/common/util/URI; # @Generated(22)
+authority
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+cacheString
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+collapseSegments
+ (Z)[Ljava/lang/String;
+ (Z)[Ljava/lang/String;
+deresolve
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+deresolve
+ (Lorg/eclipse/emf/common/util/URI;ZZZ)Lorg/eclipse/emf/common/util/URI;
+ (Lorg/eclipse/emf/common/util/URI;ZZZ)L1org/eclipse/emf/common/util/URI; # @Generated(39)
+device
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+devicePath
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+fileExtension
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+fragment
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+getCachedString
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+host
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+lastSegment
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+matches
+ (IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;)Z
+ (IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;Ljava/lang/String;)Z
+matches
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+matches
+ (Ljava/lang/String;Ljava/lang/String;)Z
+ (Ljava/lang/String;Ljava/lang/String;)Z
+opaquePart
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+path
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+port
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+query
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+rawAppendFragment
+ (Ljava/lang/CharSequence;)Lorg/eclipse/emf/common/util/URI;
+ (L0java/lang/CharSequence;)L1org/eclipse/emf/common/util/URI; # @Generated(2,27)
+rawSegments
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+replacePrefix
+ (Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+ (L1org/eclipse/emf/common/util/URI;L1org/eclipse/emf/common/util/URI;)L0org/eclipse/emf/common/util/URI; # @Generated(2,35,69)
+resolve
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+resolve
+ (Lorg/eclipse/emf/common/util/URI;Z)Lorg/eclipse/emf/common/util/URI;
+ (L1org/eclipse/emf/common/util/URI;Z)L1org/eclipse/emf/common/util/URI; # @Generated(2,37)
+scheme
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+segment
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;
+segments
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+segmentsEqual
+ (Lorg/eclipse/emf/common/util/URI;)Z
+ (Lorg/eclipse/emf/common/util/URI;)Z
+segmentsList
+ ()Ljava/util/List<Ljava/lang/String;>;
+ ()L1java/util/List<Ljava/lang/String;>; # @Generated(3)
+toFileString
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+toPlatformString
+ (Z)Ljava/lang/String;
+ (Z)L0java/lang/String; # @Generated
+trimFileExtension
+ ()Lorg/eclipse/emf/common/util/URI;
+ ()L1org/eclipse/emf/common/util/URI; # @Generated
+trimFragment
+ ()Lorg/eclipse/emf/common/util/URI;
+ ()L1org/eclipse/emf/common/util/URI; # @Generated
+trimQuery
+ ()Lorg/eclipse/emf/common/util/URI;
+ ()L1org/eclipse/emf/common/util/URI; # @Generated
+trimSegments
+ (I)Lorg/eclipse/emf/common/util/URI;
+ (I)L1org/eclipse/emf/common/util/URI; # @Generated
+userInfo
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated

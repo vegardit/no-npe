@@ -1,0 +1,30 @@
+class org/eclipse/team/ui/history/HistoryPageSaveablePart
+
+showHistoryInDialog
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/Object;)Z
+ (Lorg/eclipse/swt/widgets/Shell;Ljava/lang/Object;)Z
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/compare/CompareConfiguration;Lorg/eclipse/team/ui/history/IHistoryPageSource;Ljava/lang/Object;)V
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/compare/CompareConfiguration;Lorg/eclipse/team/ui/history/IHistoryPageSource;Ljava/lang/Object;)V
+contentChanged
+ (Lorg/eclipse/compare/IContentChangeNotifier;)V
+ (Lorg/eclipse/compare/IContentChangeNotifier;)V
+createPage
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/action/ToolBarManager;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/action/ToolBarManager;)Lorg/eclipse/swt/widgets/Control;
+getCompareInput
+ (Lorg/eclipse/jface/viewers/ISelection;)Lorg/eclipse/compare/structuremergeviewer/ICompareInput;
+ (L0org/eclipse/jface/viewers/ISelection;)L0org/eclipse/compare/structuremergeviewer/ICompareInput; # @Inherited(org.eclipse.team.ui.PageSaveablePart)
+getSelectionProvider
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+getTitle
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ui.IWorkbenchPart)
+getTitleImage
+ ()Lorg/eclipse/swt/graphics/Image;
+ ()L0org/eclipse/swt/graphics/Image; # @Generated
+prepareInput
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/CompareConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/CompareConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V

@@ -1,0 +1,37 @@
+class org/eclipse/emf/ecore/change/util/ChangeAdapterFactory
+
+modelPackage
+ Lorg/eclipse/emf/ecore/change/ChangePackage;
+ Lorg/eclipse/emf/ecore/change/ChangePackage;
+
+modelSwitch
+ Lorg/eclipse/emf/ecore/change/util/ChangeSwitch<Lorg/eclipse/emf/common/notify/Adapter;>;
+ Lorg/eclipse/emf/ecore/change/util/ChangeSwitch<Lorg/eclipse/emf/common/notify/Adapter;>;
+
+createAdapter
+ (Lorg/eclipse/emf/common/notify/Notifier;)Lorg/eclipse/emf/common/notify/Adapter;
+ (Lorg/eclipse/emf/common/notify/Notifier;)L1org/eclipse/emf/common/notify/Adapter; # @Inherited(org.eclipse.emf.common.notify.impl.AdapterFactoryImpl)
+createChangeDescriptionAdapter
+ ()Lorg/eclipse/emf/common/notify/Adapter;
+ ()L0org/eclipse/emf/common/notify/Adapter; # @Generated
+createEObjectAdapter
+ ()Lorg/eclipse/emf/common/notify/Adapter;
+ ()L0org/eclipse/emf/common/notify/Adapter; # @Generated
+createEObjectToChangesMapEntryAdapter
+ ()Lorg/eclipse/emf/common/notify/Adapter;
+ ()L0org/eclipse/emf/common/notify/Adapter; # @Generated
+createFeatureChangeAdapter
+ ()Lorg/eclipse/emf/common/notify/Adapter;
+ ()L0org/eclipse/emf/common/notify/Adapter; # @Generated
+createFeatureMapEntryAdapter
+ ()Lorg/eclipse/emf/common/notify/Adapter;
+ ()L0org/eclipse/emf/common/notify/Adapter; # @Generated
+createListChangeAdapter
+ ()Lorg/eclipse/emf/common/notify/Adapter;
+ ()L0org/eclipse/emf/common/notify/Adapter; # @Generated
+createResourceChangeAdapter
+ ()Lorg/eclipse/emf/common/notify/Adapter;
+ ()L0org/eclipse/emf/common/notify/Adapter; # @Generated
+isFactoryForType
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z

@@ -1,0 +1,27 @@
+class org/eclipse/jdt/launching/sourcelookup/containers/JavaProjectSourceContainer
+
+TYPE_ID
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+<init>
+ (Lorg/eclipse/jdt/core/IJavaProject;)V
+ (Lorg/eclipse/jdt/core/IJavaProject;)V
+createSourceContainers
+ ()[Lorg/eclipse/debug/core/sourcelookup/ISourceContainer;
+ ()[1Lorg/eclipse/debug/core/sourcelookup/ISourceContainer; # @Inherited(org.eclipse.debug.core.sourcelookup.containers.CompositeSourceContainer)
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+findSourceElements
+ (Ljava/lang/String;)[Ljava/lang/Object;
+ (L1java/lang/String;)[1Ljava/lang/Object; # @Inherited(org.eclipse.debug.core.sourcelookup.containers.CompositeSourceContainer)
+getJavaProject
+ ()Lorg/eclipse/jdt/core/IJavaProject;
+ ()Lorg/eclipse/jdt/core/IJavaProject;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getType
+ ()Lorg/eclipse/debug/core/sourcelookup/ISourceContainerType;
+ ()L0org/eclipse/debug/core/sourcelookup/ISourceContainerType; # @Inherited(org.eclipse.debug.core.sourcelookup.ISourceContainer)

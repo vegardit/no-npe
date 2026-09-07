@@ -1,0 +1,158 @@
+class org/eclipse/jdt/core/IType
+
+codeComplete
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/CompletionRequestor;)V
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/CompletionRequestor;)V
+codeComplete
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+codeComplete
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+codeComplete
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/CompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+codeComplete
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/ICompletionRequestor;)V
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/ICompletionRequestor;)V
+codeComplete
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/ICompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+ ([CII[[C[[C[IZLorg/eclipse/jdt/core/ICompletionRequestor;Lorg/eclipse/jdt/core/WorkingCopyOwner;)V
+createField
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IField;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IField;
+createInitializer
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IInitializer;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IInitializer;
+createMethod
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IMethod;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IMethod;
+createType
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+findMethods
+ (Lorg/eclipse/jdt/core/IMethod;)[Lorg/eclipse/jdt/core/IMethod;
+ (Lorg/eclipse/jdt/core/IMethod;)[Lorg/eclipse/jdt/core/IMethod;
+getChildrenForCategory
+ (Ljava/lang/String;)[Lorg/eclipse/jdt/core/IJavaElement;
+ (Ljava/lang/String;)[Lorg/eclipse/jdt/core/IJavaElement;
+getClassFile
+ ()Lorg/eclipse/jdt/core/IOrdinaryClassFile;
+ ()Lorg/eclipse/jdt/core/IOrdinaryClassFile;
+getElementName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getField
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IField;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IField;
+getFields
+ ()[Lorg/eclipse/jdt/core/IField;
+ ()[Lorg/eclipse/jdt/core/IField;
+getFullyQualifiedName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getFullyQualifiedName
+ (C)Ljava/lang/String;
+ (C)Ljava/lang/String;
+getFullyQualifiedParameterizedName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInitializer
+ (I)Lorg/eclipse/jdt/core/IInitializer;
+ (I)Lorg/eclipse/jdt/core/IInitializer;
+getInitializers
+ ()[Lorg/eclipse/jdt/core/IInitializer;
+ ()[Lorg/eclipse/jdt/core/IInitializer;
+getKey
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMethod
+ (Ljava/lang/String;[Ljava/lang/String;)Lorg/eclipse/jdt/core/IMethod;
+ (Ljava/lang/String;[Ljava/lang/String;)Lorg/eclipse/jdt/core/IMethod;
+getMethods
+ ()[Lorg/eclipse/jdt/core/IMethod;
+ ()[Lorg/eclipse/jdt/core/IMethod;
+getPackageFragment
+ ()Lorg/eclipse/jdt/core/IPackageFragment;
+ ()Lorg/eclipse/jdt/core/IPackageFragment;
+getPermittedSubtypeNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getRecordComponent
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IField;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IField;
+getRecordComponents
+ ()[Lorg/eclipse/jdt/core/IField;
+ ()[1Lorg/eclipse/jdt/core/IField; # @Generated(3)
+getSuperInterfaceNames
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getSuperInterfaceTypeSignatures
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getSuperclassName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSuperclassTypeSignature
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getType
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IType;
+getTypeParameter
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/ITypeParameter;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/ITypeParameter;
+getTypeParameterSignatures
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getTypeParameters
+ ()[Lorg/eclipse/jdt/core/ITypeParameter;
+ ()[Lorg/eclipse/jdt/core/ITypeParameter;
+getTypeQualifiedName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTypeQualifiedName
+ (C)Ljava/lang/String;
+ (C)Ljava/lang/String;
+getTypes
+ ()[Lorg/eclipse/jdt/core/IType;
+ ()[Lorg/eclipse/jdt/core/IType;
+loadTypeHierachy
+ (Ljava/io/InputStream;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Ljava/io/InputStream;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newSupertypeHierarchy
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newSupertypeHierarchy
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newSupertypeHierarchy
+ ([Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ ([Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newSupertypeHierarchy
+ ([Lorg/eclipse/jdt/core/IWorkingCopy;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ ([Lorg/eclipse/jdt/core/IWorkingCopy;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newTypeHierarchy
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newTypeHierarchy
+ (Lorg/eclipse/jdt/core/IJavaProject;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/jdt/core/IJavaProject;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newTypeHierarchy
+ (Lorg/eclipse/jdt/core/IJavaProject;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/jdt/core/IJavaProject;Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newTypeHierarchy
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newTypeHierarchy
+ ([Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ ([Lorg/eclipse/jdt/core/ICompilationUnit;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+newTypeHierarchy
+ ([Lorg/eclipse/jdt/core/IWorkingCopy;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+ ([Lorg/eclipse/jdt/core/IWorkingCopy;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ITypeHierarchy;
+resolveType
+ (Ljava/lang/String;)[[Ljava/lang/String;
+ (Ljava/lang/String;)[[Ljava/lang/String;
+resolveType
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)[[Ljava/lang/String;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/WorkingCopyOwner;)[[Ljava/lang/String;

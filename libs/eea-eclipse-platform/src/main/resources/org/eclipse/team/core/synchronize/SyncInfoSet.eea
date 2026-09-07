@@ -1,0 +1,74 @@
+class org/eclipse/team/core/synchronize/SyncInfoSet
+
+<init>
+ ([Lorg/eclipse/team/core/synchronize/SyncInfo;)V
+ ([1Lorg/eclipse/team/core/synchronize/SyncInfo;)V # @Generated(2)
+add
+ (Lorg/eclipse/team/core/synchronize/SyncInfo;)V
+ (L1org/eclipse/team/core/synchronize/SyncInfo;)V # @Generated
+addAll
+ (Lorg/eclipse/team/core/synchronize/SyncInfoSet;)V
+ (L1org/eclipse/team/core/synchronize/SyncInfoSet;)V # @Generated
+addError
+ (Lorg/eclipse/team/core/ITeamStatus;)V
+ (L1org/eclipse/team/core/ITeamStatus;)V # @Generated
+addSyncSetChangedListener
+ (Lorg/eclipse/team/core/synchronize/ISyncInfoSetChangeListener;)V
+ (L1org/eclipse/team/core/synchronize/ISyncInfoSetChangeListener;)V # @Generated
+connect
+ (Lorg/eclipse/team/core/synchronize/ISyncInfoSetChangeListener;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/team/core/synchronize/ISyncInfoSetChangeListener;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+createEmptyChangeEvent
+ ()Lorg/eclipse/team/core/synchronize/SyncInfoSetChangeEvent;
+ ()L1org/eclipse/team/core/synchronize/SyncInfoSetChangeEvent; # @Generated
+endInput
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getChangeEvent
+ ()Lorg/eclipse/team/core/synchronize/SyncInfoSetChangeEvent;
+ ()Lorg/eclipse/team/core/synchronize/SyncInfoSetChangeEvent;
+getErrors
+ ()[Lorg/eclipse/team/core/ITeamStatus;
+ ()[Lorg/eclipse/team/core/ITeamStatus;
+getListeners
+ ()[Lorg/eclipse/team/core/synchronize/ISyncInfoSetChangeListener;
+ ()[Lorg/eclipse/team/core/synchronize/ISyncInfoSetChangeListener;
+getNodes
+ (Lorg/eclipse/team/core/synchronize/FastSyncInfoFilter;)[Lorg/eclipse/team/core/synchronize/SyncInfo;
+ (Lorg/eclipse/team/core/synchronize/FastSyncInfoFilter;)[Lorg/eclipse/team/core/synchronize/SyncInfo;
+getResources
+ ()[Lorg/eclipse/core/resources/IResource;
+ ()[Lorg/eclipse/core/resources/IResource;
+getSyncInfo
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/synchronize/SyncInfo;
+ (L1org/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/synchronize/SyncInfo; # @Generated(2)
+getSyncInfos
+ ()[Lorg/eclipse/team/core/synchronize/SyncInfo;
+ ()[Lorg/eclipse/team/core/synchronize/SyncInfo;
+hasNodes
+ (Lorg/eclipse/team/core/synchronize/FastSyncInfoFilter;)Z
+ (Lorg/eclipse/team/core/synchronize/FastSyncInfoFilter;)Z
+internalAdd
+ (Lorg/eclipse/team/core/synchronize/SyncInfo;)V
+ (L1org/eclipse/team/core/synchronize/SyncInfo;)V # @Generated
+internalRemove
+ (Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/core/synchronize/SyncInfo;
+ (L1org/eclipse/core/resources/IResource;)L0org/eclipse/team/core/synchronize/SyncInfo; # @Generated(2,41)
+iterator
+ ()Ljava/util/Iterator;
+ ()Ljava/util/Iterator;
+rejectNodes
+ (Lorg/eclipse/team/core/synchronize/FastSyncInfoFilter;)V
+ (Lorg/eclipse/team/core/synchronize/FastSyncInfoFilter;)V
+remove
+ (Lorg/eclipse/core/resources/IResource;)V
+ (Lorg/eclipse/core/resources/IResource;)V
+removeAll
+ ([Lorg/eclipse/core/resources/IResource;)V
+ ([1Lorg/eclipse/core/resources/IResource;)V # @Generated(2)
+removeSyncSetChangedListener
+ (Lorg/eclipse/team/core/synchronize/ISyncInfoSetChangeListener;)V
+ (L1org/eclipse/team/core/synchronize/ISyncInfoSetChangeListener;)V # @Generated
+selectNodes
+ (Lorg/eclipse/team/core/synchronize/FastSyncInfoFilter;)V
+ (Lorg/eclipse/team/core/synchronize/FastSyncInfoFilter;)V

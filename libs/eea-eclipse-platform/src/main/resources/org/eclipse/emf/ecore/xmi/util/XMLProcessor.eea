@@ -1,0 +1,82 @@
+class org/eclipse/emf/ecore/xmi/util/XMLProcessor
+
+STAR_EXTENSION
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+XML_EXTENSION
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+XML_URI
+ Lorg/eclipse/emf/common/util/URI;
+ Lorg/eclipse/emf/common/util/URI;
+
+ecoreBuilder
+ Lorg/eclipse/emf/ecore/xmi/EcoreBuilder;
+ Lorg/eclipse/emf/ecore/xmi/EcoreBuilder;
+extendedMetaData
+ Lorg/eclipse/emf/ecore/util/ExtendedMetaData;
+ Lorg/eclipse/emf/ecore/util/ExtendedMetaData;
+loadOptions
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+registrations
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/resource/Resource$Factory;>;
+ Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/resource/Resource$Factory;>;
+registry
+ Lorg/eclipse/emf/ecore/EPackage$Registry;
+ Lorg/eclipse/emf/ecore/EPackage$Registry;
+saveOptions
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+ Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;
+
+<init>
+ (Ljava/util/Collection<Lorg/eclipse/emf/common/util/URI;>;)V
+ (Ljava/util/Collection<Lorg/eclipse/emf/common/util/URI;>;)V
+<init>
+ (Lorg/eclipse/emf/common/util/URI;)V
+ (Lorg/eclipse/emf/common/util/URI;)V
+<init>
+ (Lorg/eclipse/emf/ecore/EPackage$Registry;)V
+ (Lorg/eclipse/emf/ecore/EPackage$Registry;)V
+createEcoreBuilder
+ ()Lorg/eclipse/emf/ecore/xmi/EcoreBuilder;
+ ()L1org/eclipse/emf/ecore/xmi/EcoreBuilder; # @Generated
+createExtendedMetaData
+ ()Lorg/eclipse/emf/ecore/util/ExtendedMetaData;
+ ()L1org/eclipse/emf/ecore/util/ExtendedMetaData; # @Generated
+createResourceSet
+ ()Lorg/eclipse/emf/ecore/resource/ResourceSet;
+ ()L1org/eclipse/emf/ecore/resource/ResourceSet; # @Generated
+getEPackageRegistry
+ ()Lorg/eclipse/emf/ecore/EPackage$Registry;
+ ()Lorg/eclipse/emf/ecore/EPackage$Registry;
+getExtendedMetaData
+ ()Lorg/eclipse/emf/ecore/util/ExtendedMetaData;
+ ()Lorg/eclipse/emf/ecore/util/ExtendedMetaData;
+getRegistrations
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/resource/Resource$Factory;>;
+ ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/resource/Resource$Factory;>;
+load
+ (Ljava/io/InputStream;Ljava/util/Map<**>;)Lorg/eclipse/emf/ecore/resource/Resource;
+ (Ljava/io/InputStream;Ljava/util/Map<**>;)Lorg/eclipse/emf/ecore/resource/Resource;
+load
+ (Ljava/lang/String;Ljava/util/Map<**>;)Lorg/eclipse/emf/ecore/resource/Resource;
+ (L1java/lang/String;Ljava/util/Map<**>;)Lorg/eclipse/emf/ecore/resource/Resource; # @Generated(2)
+load
+ (Lorg/w3c/dom/Node;Ljava/util/Map<**>;)Lorg/eclipse/emf/ecore/resource/Resource;
+ (Lorg/w3c/dom/Node;Ljava/util/Map<**>;)Lorg/eclipse/emf/ecore/resource/Resource;
+load
+ (Lorg/xml/sax/InputSource;Ljava/util/Map<**>;)Lorg/eclipse/emf/ecore/resource/Resource;
+ (Lorg/xml/sax/InputSource;Ljava/util/Map<**>;)Lorg/eclipse/emf/ecore/resource/Resource;
+save
+ (Ljava/io/OutputStream;Lorg/eclipse/emf/ecore/resource/Resource;Ljava/util/Map<**>;)V
+ (Ljava/io/OutputStream;L1org/eclipse/emf/ecore/resource/Resource;Ljava/util/Map<**>;)V # @Generated(24)
+save
+ (Ljava/io/Writer;Lorg/eclipse/emf/ecore/resource/Resource;Ljava/util/Map<**>;)V
+ (Ljava/io/Writer;L1org/eclipse/emf/ecore/resource/Resource;Ljava/util/Map<**>;)V # @Generated(18)
+save
+ (Lorg/w3c/dom/Document;Lorg/eclipse/emf/ecore/resource/Resource;Lorg/eclipse/emf/ecore/xmi/DOMHandler;Ljava/util/Map<**>;)V
+ (Lorg/w3c/dom/Document;L1org/eclipse/emf/ecore/resource/Resource;Lorg/eclipse/emf/ecore/xmi/DOMHandler;Ljava/util/Map<**>;)V # @Generated(24)
+saveToString
+ (Lorg/eclipse/emf/ecore/resource/Resource;Ljava/util/Map<**>;)Ljava/lang/String;
+ (L1org/eclipse/emf/ecore/resource/Resource;Ljava/util/Map<**>;)L1java/lang/String; # @Generated(2,63)

@@ -1,0 +1,38 @@
+class org/eclipse/team/ui/PageSaveablePart
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/compare/CompareConfiguration;)V
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/compare/CompareConfiguration;)V
+createPage
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/action/ToolBarManager;)Lorg/eclipse/swt/widgets/Control;
+ (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/action/ToolBarManager;)Lorg/eclipse/swt/widgets/Control;
+createPartControl
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.ui.IWorkbenchPart)
+doSave
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getCompareInput
+ (Lorg/eclipse/jface/viewers/ISelection;)Lorg/eclipse/compare/structuremergeviewer/ICompareInput;
+ (L0org/eclipse/jface/viewers/ISelection;)L0org/eclipse/compare/structuremergeviewer/ICompareInput; # @Generated(2,41)
+getControl
+ ()Lorg/eclipse/swt/widgets/Control;
+ ()Lorg/eclipse/swt/widgets/Control;
+getSelectionProvider
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+ ()Lorg/eclipse/jface/viewers/ISelectionProvider;
+getShell
+ ()Lorg/eclipse/swt/widgets/Shell;
+ ()Lorg/eclipse/swt/widgets/Shell;
+prepareCompareInput
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;)V
+ (L0org/eclipse/compare/structuremergeviewer/ICompareInput;)V # @Generated
+prepareInput
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/CompareConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/CompareConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+setNavigator
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V
+ (L1org/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V # @Generated
+setPageDescription
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

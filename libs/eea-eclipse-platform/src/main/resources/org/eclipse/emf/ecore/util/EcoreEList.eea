@@ -1,0 +1,99 @@
+class org/eclipse/emf/ecore/util/EcoreEList
+ <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super org/eclipse/emf/ecore/util/NotifyingInternalEListImpl
+ <TE;>
+ <TE;>
+super org/eclipse/emf/ecore/util/InternalEList$Unsettable
+ <TE;>
+ <TE;>
+
+dataClass
+ Ljava/lang/Class<*>;
+ Ljava/lang/Class<*>;
+owner
+ Lorg/eclipse/emf/ecore/InternalEObject;
+ Lorg/eclipse/emf/ecore/InternalEObject;
+
+<init>
+ (Ljava/lang/Class<*>;Lorg/eclipse/emf/ecore/InternalEObject;)V
+ (Ljava/lang/Class<*>;Lorg/eclipse/emf/ecore/InternalEObject;)V
+contains
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.eclipse.emf.common.util.BasicEList)
+createNotification
+ (ILjava/lang/Object;Ljava/lang/Object;IZ)Lorg/eclipse/emf/common/notify/impl/NotificationImpl;
+ (ILjava/lang/Object;Ljava/lang/Object;IZ)L1org/eclipse/emf/common/notify/impl/NotificationImpl; # @Inherited(org.eclipse.emf.common.notify.impl.NotifyingListImpl)
+createNotification
+ (IZZ)Lorg/eclipse/emf/common/notify/impl/NotificationImpl;
+ (IZZ)L1org/eclipse/emf/common/notify/impl/NotificationImpl; # @Generated
+dispatchNotification
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+ (Lorg/eclipse/emf/common/notify/Notification;)V
+get
+ (Z)Ljava/lang/Object;
+ (Z)L1java/lang/Object; # @Generated
+getEObject
+ ()Lorg/eclipse/emf/ecore/EObject;
+ ()Lorg/eclipse/emf/ecore/EObject;
+getEStructuralFeature
+ ()Lorg/eclipse/emf/ecore/EStructuralFeature;
+ ()Lorg/eclipse/emf/ecore/EStructuralFeature;
+getFeature
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.eclipse.emf.common.notify.impl.NotifyingListImpl)
+getFeatureType
+ ()Lorg/eclipse/emf/ecore/EClassifier;
+ ()Lorg/eclipse/emf/ecore/EClassifier;
+getInverseEReference
+ ()Lorg/eclipse/emf/ecore/EReference;
+ ()Lorg/eclipse/emf/ecore/EReference;
+getInverseFeatureClass
+ ()Ljava/lang/Class<*>;
+ ()Ljava/lang/Class<*>;
+getNotifier
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(org.eclipse.emf.common.notify.impl.NotifyingListImpl)
+indexOf
+ (Ljava/lang/Object;)I
+ (L0java/lang/Object;)I # @Inherited(org.eclipse.emf.common.util.BasicEList)
+inverseAdd
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (T1E;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain; # @Overrides(org.eclipse.emf.common.notify.impl.NotifyingListImpl)
+inverseRemove
+ (TE;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain;
+ (T1E;Lorg/eclipse/emf/common/notify/NotificationChain;)Lorg/eclipse/emf/common/notify/NotificationChain; # @Overrides(org.eclipse.emf.common.notify.impl.NotifyingListImpl)
+isInstance
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+lastIndexOf
+ (Ljava/lang/Object;)I
+ (L0java/lang/Object;)I # @Inherited(org.eclipse.emf.common.util.BasicEList)
+newData
+ (I)[Ljava/lang/Object;
+ (I)[1Ljava/lang/Object; # @Inherited(org.eclipse.emf.common.util.BasicEList)
+resolve
+ (ILorg/eclipse/emf/ecore/EObject;)Lorg/eclipse/emf/ecore/EObject;
+ (ILorg/eclipse/emf/ecore/EObject;)Lorg/eclipse/emf/ecore/EObject;
+resolve
+ (ITE;)TE;
+ (ITE;)TE; # @Inherited(org.eclipse.emf.common.util.AbstractEList)
+resolve
+ (TE;)TE;
+ (TE;)TE; # @Inherited(org.eclipse.emf.common.notify.impl.NotifyingListImpl)
+resolveProxy
+ (Lorg/eclipse/emf/ecore/EObject;)Lorg/eclipse/emf/ecore/EObject;
+ (L1org/eclipse/emf/ecore/EObject;)Lorg/eclipse/emf/ecore/EObject; # @Generated(2)
+set
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+toArray
+ ()[Ljava/lang/Object;
+ ()[1Ljava/lang/Object; # @Inherited(org.eclipse.emf.common.util.BasicEList)
+toArray
+ <T:Ljava/lang/Object;>([TT;)[TT;
+ <T:Ljava/lang/Object;>([1TT;)[1TT; # @Inherited(org.eclipse.emf.common.util.BasicEList)
+validate
+ (ITE;)TE;
+ (ITE;)TE; # @Generated(PolyNull) @Inherited(org.eclipse.emf.common.util.AbstractEList)

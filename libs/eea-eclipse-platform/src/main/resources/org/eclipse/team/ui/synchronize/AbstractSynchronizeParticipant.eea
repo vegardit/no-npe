@@ -1,0 +1,73 @@
+class org/eclipse/team/ui/synchronize/AbstractSynchronizeParticipant
+
+P_PINNED
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+P_SCHEDULED
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+configElement
+ Lorg/eclipse/core/runtime/IConfigurationElement;
+ Lorg/eclipse/core/runtime/IConfigurationElement;
+
+addPropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Inherited(org.eclipse.team.ui.synchronize.ISynchronizeParticipant)
+createPageConfiguration
+ ()Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;
+ ()L1org/eclipse/team/ui/synchronize/ISynchronizePageConfiguration; # @Generated
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+firePropertyChange
+ (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+getHelpContextId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getImageDescriptor
+ ()Lorg/eclipse/jface/resource/ImageDescriptor;
+ ()Lorg/eclipse/jface/resource/ImageDescriptor;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPreferencePages
+ ()[Lorg/eclipse/jface/preference/PreferencePage;
+ ()[1Lorg/eclipse/jface/preference/PreferencePage; # @Generated(3)
+getSecondaryId
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+init
+ (Ljava/lang/String;Lorg/eclipse/ui/IMemento;)V
+ (Ljava/lang/String;L1org/eclipse/ui/IMemento;)V # @Generated(20)
+initializeConfiguration
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V
+prepareCompareInput
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizeModelElement;Lorg/eclipse/compare/CompareConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizeModelElement;Lorg/eclipse/compare/CompareConfiguration;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+removePropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Inherited(org.eclipse.team.ui.synchronize.ISynchronizeParticipant)
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (L1org/eclipse/ui/IMemento;)V # @Generated
+setImageDescriptor
+ (Lorg/eclipse/jface/resource/ImageDescriptor;)V
+ (Lorg/eclipse/jface/resource/ImageDescriptor;)V
+setInitializationData
+ (Lorg/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;Ljava/lang/Object;)V
+ (L1org/eclipse/core/runtime/IConfigurationElement;Ljava/lang/String;Ljava/lang/Object;)V # @Generated(2)
+setInitializationData
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizeParticipantDescriptor;)V
+ (L1org/eclipse/team/ui/synchronize/ISynchronizeParticipantDescriptor;)V # @Generated
+setName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setSecondaryId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

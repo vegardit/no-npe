@@ -1,0 +1,33 @@
+class org/eclipse/emf/ecore/xmi/impl/EMOFHelperImpl
+
+objectsWithGenericTypeList
+ Ljava/util/Set<Lorg/eclipse/emf/ecore/EObject;>;
+ Ljava/util/Set<Lorg/eclipse/emf/ecore/EObject;>;
+propertyClass
+ Lorg/eclipse/emf/ecore/EClass;
+ Lorg/eclipse/emf/ecore/EClass;
+propertyFeatureList
+ Ljava/util/List<Lorg/eclipse/emf/ecore/EObject;>;
+ Ljava/util/List<Lorg/eclipse/emf/ecore/EObject;>;
+
+<init>
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource;)V
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource;)V
+createObject
+ (Lorg/eclipse/emf/ecore/EFactory;Lorg/eclipse/emf/ecore/EClassifier;)Lorg/eclipse/emf/ecore/EObject;
+ (Lorg/eclipse/emf/ecore/EFactory;Lorg/eclipse/emf/ecore/EClassifier;)L0org/eclipse/emf/ecore/EObject; # @Inherited(org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl)
+getFeature
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/String;Ljava/lang/String;Z)Lorg/eclipse/emf/ecore/EStructuralFeature;
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/String;Ljava/lang/String;Z)L0org/eclipse/emf/ecore/EStructuralFeature; # @Inherited(org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl)
+getHREF
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+ (L1org/eclipse/emf/ecore/EObject;)L0java/lang/String; # @Inherited(org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl)
+getType
+ (Lorg/eclipse/emf/ecore/EFactory;Ljava/lang/String;)Lorg/eclipse/emf/ecore/EClassifier;
+ (L1org/eclipse/emf/ecore/EFactory;Ljava/lang/String;)L0org/eclipse/emf/ecore/EClassifier; # @Overrides(org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl)
+getValue
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;)Ljava/lang/Object;
+ (L1org/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;)Ljava/lang/Object; # @Inherited(org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl)
+setValue
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;I)V
+ (L1org/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;I)V # @Inherited(org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl)

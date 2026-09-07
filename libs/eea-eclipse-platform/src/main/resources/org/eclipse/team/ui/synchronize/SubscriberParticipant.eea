@@ -1,0 +1,84 @@
+class org/eclipse/team/ui/synchronize/SubscriberParticipant
+
+getMatchingParticipant
+ (Ljava/lang/String;[Lorg/eclipse/core/resources/IResource;)Lorg/eclipse/team/ui/synchronize/SubscriberParticipant;
+ (Ljava/lang/String;[Lorg/eclipse/core/resources/IResource;)L0org/eclipse/team/ui/synchronize/SubscriberParticipant; # @Generated(60)
+
+<init>
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizeScope;)V
+ (L1org/eclipse/team/ui/synchronize/ISynchronizeScope;)V # @Generated
+createPage
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)Lorg/eclipse/ui/part/IPageBookViewPage;
+ (L1org/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)L1org/eclipse/ui/part/IPageBookViewPage; # @Generated(2,66)
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.PlatformObject)
+getLongTaskName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLongTaskName
+ ([Lorg/eclipse/core/resources/IResource;)Ljava/lang/String;
+ ([1Lorg/eclipse/core/resources/IResource;)L1java/lang/String; # @Generated(2,42)
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getRefreshSchedule
+ ()Lorg/eclipse/team/internal/ui/synchronize/SubscriberRefreshSchedule;
+ ()Lorg/eclipse/team/internal/ui/synchronize/SubscriberRefreshSchedule;
+getResources
+ ()[Lorg/eclipse/core/resources/IResource;
+ ()[Lorg/eclipse/core/resources/IResource;
+getScope
+ ()Lorg/eclipse/team/ui/synchronize/ISynchronizeScope;
+ ()Lorg/eclipse/team/ui/synchronize/ISynchronizeScope;
+getShortName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getShortTaskName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getSubscriber
+ ()Lorg/eclipse/team/core/subscribers/Subscriber;
+ ()L0org/eclipse/team/core/subscribers/Subscriber; # @Generated
+getSubscriberSyncInfoCollector
+ ()Lorg/eclipse/team/internal/core/subscribers/SubscriberSyncInfoCollector;
+ ()Lorg/eclipse/team/internal/core/subscribers/SubscriberSyncInfoCollector;
+getSyncInfoSet
+ ()Lorg/eclipse/team/core/synchronize/SyncInfoTree;
+ ()Lorg/eclipse/team/core/synchronize/SyncInfoTree;
+init
+ (Ljava/lang/String;Lorg/eclipse/ui/IMemento;)V
+ (Ljava/lang/String;L1org/eclipse/ui/IMemento;)V # @Inherited(org.eclipse.team.ui.synchronize.AbstractSynchronizeParticipant)
+initializeConfiguration
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V
+ (L1org/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V # @Generated
+propertyChange
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (L1org/eclipse/jface/util/PropertyChangeEvent;)V # @Inherited(org.eclipse.jface.util.IPropertyChangeListener)
+refresh
+ ([Lorg/eclipse/core/resources/IResource;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/ui/IWorkbenchSite;)V
+ ([Lorg/eclipse/core/resources/IResource;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/ui/IWorkbenchSite;)V
+refreshInDialog
+ (Lorg/eclipse/swt/widgets/Shell;[Lorg/eclipse/core/resources/IResource;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;Lorg/eclipse/ui/IWorkbenchSite;)V
+ (Lorg/eclipse/swt/widgets/Shell;[Lorg/eclipse/core/resources/IResource;Ljava/lang/String;Ljava/lang/String;Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;Lorg/eclipse/ui/IWorkbenchSite;)V
+refreshNow
+ ([Lorg/eclipse/core/resources/IResource;Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ ([Lorg/eclipse/core/resources/IResource;L1java/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus; # @Generated(41)
+run
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+ (Lorg/eclipse/ui/IWorkbenchPart;)V
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (L1org/eclipse/ui/IMemento;)V # @Inherited(org.eclipse.team.ui.synchronize.AbstractSynchronizeParticipant)
+setRefreshSchedule
+ (Lorg/eclipse/team/internal/ui/synchronize/SubscriberRefreshSchedule;)V
+ (Lorg/eclipse/team/internal/ui/synchronize/SubscriberRefreshSchedule;)V
+setSubscriber
+ (Lorg/eclipse/team/core/subscribers/Subscriber;)V
+ (L1org/eclipse/team/core/subscribers/Subscriber;)V # @Generated
+setSyncInfoFilter
+ (Lorg/eclipse/team/core/synchronize/SyncInfoFilter;)V
+ (Lorg/eclipse/team/core/synchronize/SyncInfoFilter;)V
+validateConfiguration
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V
+ (Lorg/eclipse/team/ui/synchronize/ISynchronizePageConfiguration;)V

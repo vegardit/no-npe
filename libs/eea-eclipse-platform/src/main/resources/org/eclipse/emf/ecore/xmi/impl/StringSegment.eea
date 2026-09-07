@@ -1,0 +1,76 @@
+class org/eclipse/emf/ecore/xmi/impl/StringSegment
+
+super org/eclipse/emf/common/util/BasicEList
+ <Lorg/eclipse/emf/ecore/xmi/impl/StringSegment$Element;>
+ <Lorg/eclipse/emf/ecore/xmi/impl/StringSegment$Element;>
+
+buffer
+ [C
+ [C
+cursor
+ Lorg/eclipse/emf/ecore/xmi/impl/StringSegment$Element;
+ Lorg/eclipse/emf/ecore/xmi/impl/StringSegment$Element;
+firstString
+ Ljava/lang/String;
+ Ljava/lang/String;
+lineSeparator
+ Ljava/lang/String;
+ Ljava/lang/String;
+outputbytes
+ [B
+ [B
+outputchars
+ [C
+ [C
+temporaryFile
+ Ljava/io/Writer;
+ Ljava/io/Writer;
+temporaryFileName
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+add
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+getChars
+ ([CI)I
+ ([CI)I
+getTemporaryFileName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+iterator
+ ()Ljava/util/Iterator<Lorg/eclipse/emf/ecore/xmi/impl/StringSegment$Element;>;
+ ()L1java/util/Iterator<Lorg/eclipse/emf/ecore/xmi/impl/StringSegment$Element;>; # @Generated(3)
+listIterator
+ ()Ljava/util/ListIterator<Lorg/eclipse/emf/ecore/xmi/impl/StringSegment$Element;>;
+ ()L1java/util/ListIterator<Lorg/eclipse/emf/ecore/xmi/impl/StringSegment$Element;>; # @Generated(3)
+mark
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+newData
+ (I)[Ljava/lang/Object;
+ (I)[1Ljava/lang/Object; # @Inherited(org.eclipse.emf.common.util.BasicEList)
+resetToMark
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+setLineSeparator
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setTemporaryFileName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+stringIterator
+ ()Ljava/util/Iterator<Ljava/lang/String;>;
+ ()L1java/util/Iterator<Ljava/lang/String;>; # @Generated(3)
+write
+ (Ljava/io/OutputStreamWriter;I)V
+ (Ljava/io/OutputStreamWriter;I)V
+write
+ (Ljava/io/Writer;I)V
+ (L1java/io/Writer;I)V # @Generated
+writeAscii
+ (Ljava/io/OutputStream;I)V
+ (L1java/io/OutputStream;I)V # @Generated

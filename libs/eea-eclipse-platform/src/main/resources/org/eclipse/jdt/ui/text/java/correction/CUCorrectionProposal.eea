@@ -26,7 +26,7 @@ apply
  (L1org/eclipse/jface/text/IDocument;)V # @Inherited(org.eclipse.jdt.ui.text.java.correction.ChangeCorrectionProposal)
 createChange
  ()Lorg/eclipse/ltk/core/refactoring/Change;
- ()L1org/eclipse/ltk/core/refactoring/Change;
+ ()L1org/eclipse/ltk/core/refactoring/Change; # @Inherited(org.eclipse.jdt.core.manipulation.ChangeCorrectionProposalCore)
 createTextChange
  ()Lorg/eclipse/ltk/core/refactoring/TextChange;
  ()L1org/eclipse/ltk/core/refactoring/TextChange;
@@ -38,10 +38,10 @@ createTextChangeViaDelegate
  ()L1org/eclipse/ltk/core/refactoring/TextChange;
 getAdapter
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
- <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.IAdaptable)
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.jdt.core.manipulation.ChangeCorrectionProposalCore)
 getAdditionalProposalInfo
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/Object;
- (L1org/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/Object; # @Inherited(org.eclipse.jface.text.contentassist.ICompletionProposalExtension5)
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)L0java/lang/Object; # @Inherited(org.eclipse.jdt.core.manipulation.ChangeCorrectionProposalCore)
 getCommandId
  ()Ljava/lang/String;
  ()L0java/lang/String; # @Inherited(org.eclipse.jdt.ui.text.java.correction.ICommandAccess)

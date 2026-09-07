@@ -2,10 +2,10 @@ class org/eclipse/ltk/ui/refactoring/model/AbstractSynchronizationLabelProvider
 
 decorateText
  (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
- (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+ (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String; # @Inherited(org.eclipse.team.ui.synchronize.AbstractSynchronizeLabelProvider)
 getDiff
  (Ljava/lang/Object;)Lorg/eclipse/team/core/diff/IDiff;
- (Ljava/lang/Object;)Lorg/eclipse/team/core/diff/IDiff;
+ (Ljava/lang/Object;)L0org/eclipse/team/core/diff/IDiff; # @Inherited(org.eclipse.team.ui.synchronize.AbstractSynchronizeLabelProvider)
 getDirection
  (Ljava/lang/Object;)I
  (Ljava/lang/Object;)I

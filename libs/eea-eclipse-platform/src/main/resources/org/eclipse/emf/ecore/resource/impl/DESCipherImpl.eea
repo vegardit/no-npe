@@ -1,0 +1,34 @@
+class org/eclipse/emf/ecore/resource/impl/DESCipherImpl
+
+ENCRYPTION_SCHEME
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+UNICODE_FORMAT
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+key
+ Ljavax/crypto/SecretKey;
+ Ljavax/crypto/SecretKey;
+stringKey
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+decrypt
+ (Ljava/io/InputStream;)Ljava/io/InputStream;
+ (Ljava/io/InputStream;)L1java/io/InputStream; # @Generated(24)
+encrypt
+ (Ljava/io/OutputStream;)Ljava/io/OutputStream;
+ (Ljava/io/OutputStream;)L1java/io/OutputStream; # @Generated(25)
+finish
+ (Ljava/io/InputStream;)V
+ (Ljava/io/InputStream;)V
+finish
+ (Ljava/io/OutputStream;)V
+ (L1java/io/OutputStream;)V # @Generated
+getKey
+ ()Ljavax/crypto/SecretKey;
+ ()Ljavax/crypto/SecretKey;

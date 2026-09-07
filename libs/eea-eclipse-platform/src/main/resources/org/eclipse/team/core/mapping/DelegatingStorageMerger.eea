@@ -1,0 +1,24 @@
+class org/eclipse/team/core/mapping/DelegatingStorageMerger
+
+createTextMerger
+ ()Lorg/eclipse/team/core/mapping/IStorageMerger;
+ ()Lorg/eclipse/team/core/mapping/IStorageMerger;
+getContentType
+ (Lorg/eclipse/core/resources/IStorage;)Lorg/eclipse/core/runtime/content/IContentType;
+ (L1org/eclipse/core/resources/IStorage;)L0org/eclipse/core/runtime/content/IContentType; # @Generated(2,40)
+getExtension
+ (Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/String;)L0java/lang/String; # @Generated(2,21)
+getInstance
+ ()Lorg/eclipse/team/core/mapping/IStorageMerger;
+ ()L1org/eclipse/team/core/mapping/IStorageMerger; # @Generated
+
+createDelegateMerger
+ (Lorg/eclipse/core/resources/IStorage;)Lorg/eclipse/team/core/mapping/IStorageMerger;
+ (Lorg/eclipse/core/resources/IStorage;)Lorg/eclipse/team/core/mapping/IStorageMerger;
+getType
+ (Lorg/eclipse/core/resources/IStorage;)I
+ (Lorg/eclipse/core/resources/IStorage;)I
+merge
+ (Ljava/io/OutputStream;Ljava/lang/String;Lorg/eclipse/core/resources/IStorage;Lorg/eclipse/core/resources/IStorage;Lorg/eclipse/core/resources/IStorage;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;
+ (Ljava/io/OutputStream;Ljava/lang/String;Lorg/eclipse/core/resources/IStorage;Lorg/eclipse/core/resources/IStorage;Lorg/eclipse/core/resources/IStorage;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/core/runtime/IStatus;

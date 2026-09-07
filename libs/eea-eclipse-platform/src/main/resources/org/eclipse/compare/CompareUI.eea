@@ -1,0 +1,96 @@
+class org/eclipse/compare/CompareUI
+
+COMPARE_VIEWER_TITLE
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+DESC_CTOOL_NEXT
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+DESC_CTOOL_PREV
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+DESC_DTOOL_NEXT
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+DESC_DTOOL_PREV
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+DESC_ETOOL_NEXT
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+DESC_ETOOL_PREV
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+ Lorg/eclipse/jface/resource/ImageDescriptor;
+PLUGIN_ID
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+PREFERENCE_PAGE_ID
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+addStructureViewerAlias
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+createStreamMerger
+ (Ljava/lang/String;)Lorg/eclipse/compare/IStreamMerger;
+ (Ljava/lang/String;)Lorg/eclipse/compare/IStreamMerger;
+createStreamMerger
+ (Lorg/eclipse/core/runtime/content/IContentType;)Lorg/eclipse/compare/IStreamMerger;
+ (Lorg/eclipse/core/runtime/content/IContentType;)Lorg/eclipse/compare/IStreamMerger;
+createStructureCreator
+ (Lorg/eclipse/compare/ITypedElement;)Lorg/eclipse/compare/structuremergeviewer/IStructureCreator;
+ (L1org/eclipse/compare/ITypedElement;)L0org/eclipse/compare/structuremergeviewer/IStructureCreator; # @Generated(2,38)
+disposeOnShutdown
+ (Lorg/eclipse/swt/graphics/Image;)V
+ (Lorg/eclipse/swt/graphics/Image;)V
+findContentViewer
+ (Lorg/eclipse/jface/viewers/Viewer;Ljava/lang/Object;Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/compare/CompareConfiguration;)Lorg/eclipse/jface/viewers/Viewer;
+ (Lorg/eclipse/jface/viewers/Viewer;Ljava/lang/Object;Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/compare/CompareConfiguration;)Lorg/eclipse/jface/viewers/Viewer;
+findContentViewer
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/compare/CompareConfiguration;)Lorg/eclipse/jface/viewers/Viewer;
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/compare/CompareConfiguration;)Lorg/eclipse/jface/viewers/Viewer;
+findStructureViewer
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/compare/CompareConfiguration;)Lorg/eclipse/jface/viewers/Viewer;
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/compare/CompareConfiguration;)Lorg/eclipse/jface/viewers/Viewer;
+getDocument
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/IDocument;
+ (Ljava/lang/Object;)Lorg/eclipse/jface/text/IDocument;
+getImage
+ (Ljava/lang/String;)Lorg/eclipse/swt/graphics/Image;
+ (Ljava/lang/String;)Lorg/eclipse/swt/graphics/Image;
+getImage
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/swt/graphics/Image;
+ (Lorg/eclipse/core/runtime/IAdaptable;)Lorg/eclipse/swt/graphics/Image;
+getPlugin
+ ()Lorg/eclipse/ui/plugin/AbstractUIPlugin;
+ ()Lorg/eclipse/ui/plugin/AbstractUIPlugin;
+getResourceBundle
+ ()Ljava/util/ResourceBundle;
+ ()Ljava/util/ResourceBundle;
+openCompareDialog
+ (Lorg/eclipse/compare/CompareEditorInput;)V
+ (Lorg/eclipse/compare/CompareEditorInput;)V
+openCompareEditor
+ (Lorg/eclipse/compare/CompareEditorInput;)V
+ (Lorg/eclipse/compare/CompareEditorInput;)V
+openCompareEditor
+ (Lorg/eclipse/compare/CompareEditorInput;Z)V
+ (Lorg/eclipse/compare/CompareEditorInput;Z)V
+openCompareEditorOnPage
+ (Lorg/eclipse/compare/CompareEditorInput;Lorg/eclipse/ui/IWorkbenchPage;)V
+ (Lorg/eclipse/compare/CompareEditorInput;Lorg/eclipse/ui/IWorkbenchPage;)V
+registerDocument
+ (Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;)V
+ (Ljava/lang/Object;Lorg/eclipse/jface/text/IDocument;)V
+registerImageDescriptor
+ (Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;)V
+ (Ljava/lang/String;Lorg/eclipse/jface/resource/ImageDescriptor;)V
+removeAllStructureViewerAliases
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+reuseCompareEditor
+ (Lorg/eclipse/compare/CompareEditorInput;Lorg/eclipse/ui/IReusableEditor;)V
+ (Lorg/eclipse/compare/CompareEditorInput;Lorg/eclipse/ui/IReusableEditor;)V
+unregisterDocument
+ (Lorg/eclipse/jface/text/IDocument;)V
+ (Lorg/eclipse/jface/text/IDocument;)V

@@ -1,0 +1,85 @@
+class org/eclipse/jdt/core/search/SearchPattern
+
+camelCaseMatch
+ (Ljava/lang/String;IILjava/lang/String;II)Z
+ (Ljava/lang/String;IILjava/lang/String;II)Z
+camelCaseMatch
+ (Ljava/lang/String;IILjava/lang/String;IIZ)Z
+ (Ljava/lang/String;IILjava/lang/String;IIZ)Z
+camelCaseMatch
+ (Ljava/lang/String;Ljava/lang/String;)Z
+ (L0java/lang/String;Ljava/lang/String;)Z # @Generated(2)
+camelCaseMatch
+ (Ljava/lang/String;Ljava/lang/String;Z)Z
+ (L0java/lang/String;Ljava/lang/String;Z)Z # @Generated(2)
+createAndPattern
+ (Lorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/core/search/SearchPattern;)Lorg/eclipse/jdt/core/search/SearchPattern;
+ (L1org/eclipse/jdt/core/search/SearchPattern;L1org/eclipse/jdt/core/search/SearchPattern;)L1org/eclipse/jdt/core/search/SearchPattern; # @Generated(2,45,89)
+createOrPattern
+ (Lorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/core/search/SearchPattern;)Lorg/eclipse/jdt/core/search/SearchPattern;
+ (L1org/eclipse/jdt/core/search/SearchPattern;L1org/eclipse/jdt/core/search/SearchPattern;)L1org/eclipse/jdt/core/search/SearchPattern; # @Generated(2,45,89)
+createPattern
+ (Ljava/lang/String;III)Lorg/eclipse/jdt/core/search/SearchPattern;
+ (L0java/lang/String;III)L0org/eclipse/jdt/core/search/SearchPattern; # @Generated(2,24)
+createPattern
+ (Lorg/eclipse/jdt/core/IJavaElement;I)Lorg/eclipse/jdt/core/search/SearchPattern;
+ (Lorg/eclipse/jdt/core/IJavaElement;I)Lorg/eclipse/jdt/core/search/SearchPattern;
+createPattern
+ (Lorg/eclipse/jdt/core/IJavaElement;II)Lorg/eclipse/jdt/core/search/SearchPattern;
+ (Lorg/eclipse/jdt/core/IJavaElement;II)L0org/eclipse/jdt/core/search/SearchPattern; # @Generated(40)
+getMatchingRegions
+ (Ljava/lang/String;Ljava/lang/String;I)[I
+ (Ljava/lang/String;L0java/lang/String;I)[0I # @Generated(20,40)
+validateMatchRule
+ (Ljava/lang/String;I)I
+ (Ljava/lang/String;I)I
+
+focus
+ Lorg/eclipse/jdt/core/IJavaElement;
+ Lorg/eclipse/jdt/core/IJavaElement;
+indexQualifierQuery
+ [C
+ [C
+
+acceptMatch
+ (Ljava/lang/String;Ljava/lang/String;CLorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;)V
+ (Ljava/lang/String;Ljava/lang/String;CLorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;)V
+acceptMatch
+ (Ljava/lang/String;Ljava/lang/String;CLorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Ljava/lang/String;Ljava/lang/String;CLorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;L1org/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/core/runtime/IProgressMonitor;)V # @Generated(187)
+clone
+ ()Lorg/eclipse/jdt/core/search/SearchPattern;
+ ()Lorg/eclipse/jdt/core/search/SearchPattern;
+currentPattern
+ ()Lorg/eclipse/jdt/core/search/SearchPattern;
+ ()L1org/eclipse/jdt/core/search/SearchPattern; # @Generated
+decodeIndexKey
+ ([C)V
+ ([C)V
+findIndexMatches
+ (Lorg/eclipse/jdt/internal/core/index/Index;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/jdt/internal/core/index/Index;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+findIndexMatches
+ (Lorg/eclipse/jdt/internal/core/index/Index;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/jdt/internal/core/index/Index;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;ZLorg/eclipse/core/runtime/IProgressMonitor;)V # @Generated(2)
+getBlankPattern
+ ()Lorg/eclipse/jdt/core/search/SearchPattern;
+ ()Lorg/eclipse/jdt/core/search/SearchPattern;
+getIndexCategories
+ ()[[C
+ ()[1[C # @Generated(3)
+getIndexKey
+ ()[C
+ ()[0C # @Generated
+matchesDecodedKey
+ (Lorg/eclipse/jdt/core/search/SearchPattern;)Z
+ (Lorg/eclipse/jdt/core/search/SearchPattern;)Z
+matchesName
+ ([C[C)Z
+ ([0C[C)Z # @Generated(2)
+queryIn
+ (Lorg/eclipse/jdt/internal/core/index/Index;)[Lorg/eclipse/jdt/internal/core/index/EntryResult;
+ (L1org/eclipse/jdt/internal/core/index/Index;)[Lorg/eclipse/jdt/internal/core/index/EntryResult; # @Generated(2)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

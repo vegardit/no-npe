@@ -1,0 +1,50 @@
+class org/eclipse/team/core/diff/provider/DiffTree
+
+accept
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/team/core/diff/IDiffVisitor;I)V
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/team/core/diff/IDiffVisitor;I)V
+add
+ (Lorg/eclipse/team/core/diff/IDiff;)V
+ (L1org/eclipse/team/core/diff/IDiff;)V # @Generated
+addDiffChangeListener
+ (Lorg/eclipse/team/core/diff/IDiffChangeListener;)V
+ (L1org/eclipse/team/core/diff/IDiffChangeListener;)V # @Inherited(org.eclipse.team.core.diff.IDiffTree)
+clearBusy
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+endInput
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getChildren
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/runtime/IPath;
+ (Lorg/eclipse/core/runtime/IPath;)[Lorg/eclipse/core/runtime/IPath;
+getDiff
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/team/core/diff/IDiff;
+ (Lorg/eclipse/core/runtime/IPath;)Lorg/eclipse/team/core/diff/IDiff;
+getDiffs
+ ()[Lorg/eclipse/team/core/diff/IDiff;
+ ()[Lorg/eclipse/team/core/diff/IDiff;
+getPaths
+ ()[Lorg/eclipse/core/runtime/IPath;
+ ()[Lorg/eclipse/core/runtime/IPath;
+getProperty
+ (Lorg/eclipse/core/runtime/IPath;I)Z
+ (Lorg/eclipse/core/runtime/IPath;I)Z
+hasMatchingDiffs
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/team/core/diff/FastDiffFilter;)Z
+ (Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/team/core/diff/FastDiffFilter;)Z
+remove
+ (Lorg/eclipse/core/runtime/IPath;)V
+ (Lorg/eclipse/core/runtime/IPath;)V
+removeDiffChangeListener
+ (Lorg/eclipse/team/core/diff/IDiffChangeListener;)V
+ (L1org/eclipse/team/core/diff/IDiffChangeListener;)V # @Inherited(org.eclipse.team.core.diff.IDiffTree)
+reportError
+ (Lorg/eclipse/core/runtime/IStatus;)V
+ (Lorg/eclipse/core/runtime/IStatus;)V
+setBusy
+ ([Lorg/eclipse/team/core/diff/IDiff;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([1Lorg/eclipse/team/core/diff/IDiff;Lorg/eclipse/core/runtime/IProgressMonitor;)V # @Generated(2)
+setPropertyToRoot
+ (Lorg/eclipse/team/core/diff/IDiff;IZ)V
+ (L1org/eclipse/team/core/diff/IDiff;IZ)V # @Generated

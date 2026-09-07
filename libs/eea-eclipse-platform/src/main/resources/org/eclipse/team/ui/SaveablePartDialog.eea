@@ -1,0 +1,26 @@
+class org/eclipse/team/ui/SaveablePartDialog
+
+<init>
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/team/ui/ISaveableWorkbenchPart;)V
+ (Lorg/eclipse/swt/widgets/Shell;Lorg/eclipse/team/ui/ISaveableWorkbenchPart;)V
+configureShell
+ (Lorg/eclipse/swt/widgets/Shell;)V
+ (L1org/eclipse/swt/widgets/Shell;)V # @Inherited(org.eclipse.jface.window.Window)
+createButtonsForButtonBar
+ (Lorg/eclipse/swt/widgets/Composite;)V
+ (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.dialogs.Dialog)
+createDialogArea
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.jface.dialogs.Dialog)
+getDialogBoundsSettings
+ ()Lorg/eclipse/jface/dialogs/IDialogSettings;
+ ()L0org/eclipse/jface/dialogs/IDialogSettings; # @Inherited(org.eclipse.jface.dialogs.Dialog)
+getInitialSize
+ ()Lorg/eclipse/swt/graphics/Point;
+ ()L1org/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.dialogs.Dialog)
+getInput
+ ()Lorg/eclipse/team/ui/ISaveableWorkbenchPart;
+ ()Lorg/eclipse/team/ui/ISaveableWorkbenchPart;
+setHelpContextId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

@@ -1,0 +1,86 @@
+class org/eclipse/jdt/core/ICompilationUnit
+
+applyTextEdit
+ (Lorg/eclipse/text/edits/TextEdit;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/text/edits/UndoEdit;
+ (Lorg/eclipse/text/edits/TextEdit;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/text/edits/UndoEdit;
+becomeWorkingCopy
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+becomeWorkingCopy
+ (Lorg/eclipse/jdt/core/IProblemRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/jdt/core/IProblemRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+commitWorkingCopy
+ (ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+ (ZLorg/eclipse/core/runtime/IProgressMonitor;)V
+createImport
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IImportDeclaration;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ILorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IImportDeclaration;
+createImport
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IImportDeclaration;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IImportDeclaration;
+createPackageDeclaration
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IPackageDeclaration;
+ (Ljava/lang/String;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IPackageDeclaration;
+createType
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/IJavaElement;ZLorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/IType;
+findElements
+ (Lorg/eclipse/jdt/core/IJavaElement;)[Lorg/eclipse/jdt/core/IJavaElement;
+ (Lorg/eclipse/jdt/core/IJavaElement;)[Lorg/eclipse/jdt/core/IJavaElement;
+findWorkingCopy
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/ICompilationUnit;
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;)Lorg/eclipse/jdt/core/ICompilationUnit;
+getAllTypes
+ ()[Lorg/eclipse/jdt/core/IType;
+ ()[Lorg/eclipse/jdt/core/IType;
+getCustomOptions
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/lang/String;>; # @Generated(3)
+getImport
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IImportDeclaration;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IImportDeclaration;
+getImportContainer
+ ()Lorg/eclipse/jdt/core/IImportContainer;
+ ()Lorg/eclipse/jdt/core/IImportContainer;
+getImports
+ ()[Lorg/eclipse/jdt/core/IImportDeclaration;
+ ()[Lorg/eclipse/jdt/core/IImportDeclaration;
+getOptions
+ (Z)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ (Z)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getOwner
+ ()Lorg/eclipse/jdt/core/WorkingCopyOwner;
+ ()Lorg/eclipse/jdt/core/WorkingCopyOwner;
+getPackageDeclaration
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IPackageDeclaration;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IPackageDeclaration;
+getPackageDeclarations
+ ()[Lorg/eclipse/jdt/core/IPackageDeclaration;
+ ()[Lorg/eclipse/jdt/core/IPackageDeclaration;
+getPrimary
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+getType
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IType;
+ (Ljava/lang/String;)Lorg/eclipse/jdt/core/IType;
+getTypes
+ ()[Lorg/eclipse/jdt/core/IType;
+ ()[Lorg/eclipse/jdt/core/IType;
+getWorkingCopy
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ICompilationUnit;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ICompilationUnit;
+getWorkingCopy
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/jdt/core/IProblemRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ICompilationUnit;
+ (Lorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/jdt/core/IProblemRequestor;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/ICompilationUnit;
+reconcile
+ (IILorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/dom/CompilationUnit;
+ (IILorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/dom/CompilationUnit;
+reconcile
+ (IZLorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/dom/CompilationUnit;
+ (IZLorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/dom/CompilationUnit;
+reconcile
+ (IZZLorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/dom/CompilationUnit;
+ (IZZLorg/eclipse/jdt/core/WorkingCopyOwner;Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jdt/core/dom/CompilationUnit;
+setOptions
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V

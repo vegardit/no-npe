@@ -1,0 +1,114 @@
+class org/eclipse/jdt/core/dom/rewrite/ImportRewrite
+
+create
+ (Lorg/eclipse/jdt/core/ICompilationUnit;Z)Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite;
+ (L1org/eclipse/jdt/core/ICompilationUnit;Z)L1org/eclipse/jdt/core/dom/rewrite/ImportRewrite; # @Generated(2,43)
+create
+ (Lorg/eclipse/jdt/core/dom/CompilationUnit;Z)Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite;
+ (L1org/eclipse/jdt/core/dom/CompilationUnit;Z)L1org/eclipse/jdt/core/dom/rewrite/ImportRewrite; # @Generated(2,46)
+getPackageBindingsForModule
+ (Lorg/eclipse/jdt/core/dom/IModuleBinding;Lorg/eclipse/jdt/core/IJavaProject;)Ljava/util/List<Lorg/eclipse/jdt/core/dom/IPackageBinding;>;
+ (Lorg/eclipse/jdt/core/dom/IModuleBinding;Lorg/eclipse/jdt/core/IJavaProject;)L1java/util/List<Lorg/eclipse/jdt/core/dom/IPackageBinding;>; # @Generated(79)
+getPackageNamesForModule
+ (Lorg/eclipse/jdt/core/dom/IModuleBinding;Lorg/eclipse/jdt/core/IJavaProject;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/jdt/core/dom/IModuleBinding;Lorg/eclipse/jdt/core/IJavaProject;)L1java/util/List<Ljava/lang/String;>; # @Generated(79)
+
+addAnnotation
+ (Lorg/eclipse/jdt/core/dom/IAnnotationBinding;Lorg/eclipse/jdt/core/dom/AST;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Lorg/eclipse/jdt/core/dom/Annotation;
+ (L1org/eclipse/jdt/core/dom/IAnnotationBinding;L1org/eclipse/jdt/core/dom/AST;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)L1org/eclipse/jdt/core/dom/Annotation; # @Generated(2,47,147)
+addImport
+ (Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/String;)L1java/lang/String; # @Generated(2,21)
+addImport
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Ljava/lang/String;
+ (L1java/lang/String;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)L1java/lang/String; # @Generated(2,90)
+addImport
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;)Ljava/lang/String;
+ (L1org/eclipse/jdt/core/dom/ITypeBinding;)Ljava/lang/String; # @Generated(2)
+addImport
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;Lorg/eclipse/jdt/core/dom/AST;)Lorg/eclipse/jdt/core/dom/Type;
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;Lorg/eclipse/jdt/core/dom/AST;)L1org/eclipse/jdt/core/dom/Type; # @Generated(72)
+addImport
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;Lorg/eclipse/jdt/core/dom/AST;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Lorg/eclipse/jdt/core/dom/Type;
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;Lorg/eclipse/jdt/core/dom/AST;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)L1org/eclipse/jdt/core/dom/Type; # @Generated(141)
+addImport
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;Lorg/eclipse/jdt/core/dom/AST;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$TypeLocation;)Lorg/eclipse/jdt/core/dom/Type;
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;Lorg/eclipse/jdt/core/dom/AST;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$TypeLocation;)L1org/eclipse/jdt/core/dom/Type; # @Generated(202)
+addImport
+ (Lorg/eclipse/jdt/core/dom/ITypeBinding;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Ljava/lang/String;
+ (L1org/eclipse/jdt/core/dom/ITypeBinding;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Ljava/lang/String; # @Generated(2)
+addImportFromSignature
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/dom/AST;)Lorg/eclipse/jdt/core/dom/Type;
+ (L1java/lang/String;Lorg/eclipse/jdt/core/dom/AST;)Lorg/eclipse/jdt/core/dom/Type; # @Generated(2)
+addImportFromSignature
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/dom/AST;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Lorg/eclipse/jdt/core/dom/Type;
+ (L1java/lang/String;Lorg/eclipse/jdt/core/dom/AST;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Lorg/eclipse/jdt/core/dom/Type; # @Generated(2)
+addModuleImport
+ (Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V
+ (Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;)V
+addModuleImport
+ (Ljava/lang/String;Lorg/eclipse/jdt/core/dom/IModuleBinding;)Ljava/lang/String;
+ (Ljava/lang/String;L0org/eclipse/jdt/core/dom/IModuleBinding;)Ljava/lang/String; # @Generated(20,PolyNull)
+addStaticImport
+ (Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+ (L1java/lang/String;Ljava/lang/String;Z)Ljava/lang/String; # @Generated(2,PolyNull)
+addStaticImport
+ (Ljava/lang/String;Ljava/lang/String;ZLorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Ljava/lang/String;
+ (L1java/lang/String;Ljava/lang/String;ZLorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Ljava/lang/String; # @Generated(2,PolyNull)
+addStaticImport
+ (Lorg/eclipse/jdt/core/dom/IBinding;)Ljava/lang/String;
+ (L1org/eclipse/jdt/core/dom/IBinding;)Ljava/lang/String; # @Generated(2)
+addStaticImport
+ (Lorg/eclipse/jdt/core/dom/IBinding;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Ljava/lang/String;
+ (L1org/eclipse/jdt/core/dom/IBinding;Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;)Ljava/lang/String; # @Generated(2)
+getAddedImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getAddedModuleExportedPackages
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+ (Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
+getAddedModuleImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getAddedStaticImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getCompilationUnit
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+ ()Lorg/eclipse/jdt/core/ICompilationUnit;
+getCreatedImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getCreatedModuleImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getCreatedStaticImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getDefaultImportRewriteContext
+ ()Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;
+ ()Lorg/eclipse/jdt/core/dom/rewrite/ImportRewrite$ImportRewriteContext;
+getRemovedImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getRemovedModuleImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+getRemovedStaticImports
+ ()[Ljava/lang/String;
+ ()[Ljava/lang/String;
+removeImport
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removeModuleImport
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+removeStaticImport
+ (Ljava/lang/String;)Z
+ (Ljava/lang/String;)Z
+rewriteImports
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/text/edits/TextEdit;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/text/edits/TextEdit;
+setImportOrder
+ ([Ljava/lang/String;)V
+ ([1Ljava/lang/String;)V # @Generated(2)

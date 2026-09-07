@@ -1,0 +1,140 @@
+class org/eclipse/emf/ecore/xmi/XMLHelper
+
+addPrefix
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+convertToString
+ (Lorg/eclipse/emf/ecore/EFactory;Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EFactory;Lorg/eclipse/emf/ecore/EDataType;Ljava/lang/Object;)Ljava/lang/String;
+createObject
+ (Lorg/eclipse/emf/ecore/EFactory;Ljava/lang/String;)Lorg/eclipse/emf/ecore/EObject;
+ (Lorg/eclipse/emf/ecore/EFactory;Ljava/lang/String;)Lorg/eclipse/emf/ecore/EObject;
+createObject
+ (Lorg/eclipse/emf/ecore/EFactory;Lorg/eclipse/emf/ecore/EClassifier;)Lorg/eclipse/emf/ecore/EObject;
+ (Lorg/eclipse/emf/ecore/EFactory;Lorg/eclipse/emf/ecore/EClassifier;)Lorg/eclipse/emf/ecore/EObject;
+deresolve
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+ (Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+getAnyContentPrefixToURIMapping
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+getDanglingHREFException
+ ()Lorg/eclipse/emf/ecore/xmi/DanglingHREFException;
+ ()Lorg/eclipse/emf/ecore/xmi/DanglingHREFException;
+getExtendedMetaData
+ ()Lorg/eclipse/emf/ecore/util/ExtendedMetaData;
+ ()Lorg/eclipse/emf/ecore/util/ExtendedMetaData;
+getFeature
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/ecore/EStructuralFeature;
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/emf/ecore/EStructuralFeature;
+getFeature
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/String;Ljava/lang/String;Z)Lorg/eclipse/emf/ecore/EStructuralFeature;
+ (Lorg/eclipse/emf/ecore/EClass;Ljava/lang/String;Ljava/lang/String;Z)Lorg/eclipse/emf/ecore/EStructuralFeature;
+getFeatureKind
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;)I
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;)I
+getHREF
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+getID
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+getIDREF
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EObject;)Ljava/lang/String;
+getJavaEncoding
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getName
+ (Lorg/eclipse/emf/ecore/ENamedElement;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/ENamedElement;)Ljava/lang/String;
+getNamespaceURI
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getNoNamespacePackage
+ ()Lorg/eclipse/emf/ecore/EPackage;
+ ()Lorg/eclipse/emf/ecore/EPackage;
+getPrefix
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getPrefix
+ (Lorg/eclipse/emf/ecore/EPackage;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EPackage;)Ljava/lang/String;
+getPrefixToNamespaceMap
+ ()Lorg/eclipse/emf/common/util/EMap<Ljava/lang/String;Ljava/lang/String;>;
+ ()Lorg/eclipse/emf/common/util/EMap<Ljava/lang/String;Ljava/lang/String;>;
+getPrefixes
+ (Lorg/eclipse/emf/ecore/EPackage;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/emf/ecore/EPackage;)Ljava/util/List<Ljava/lang/String;>;
+getQName
+ (Lorg/eclipse/emf/ecore/EClass;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EClass;)Ljava/lang/String;
+getQName
+ (Lorg/eclipse/emf/ecore/EDataType;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EDataType;)Ljava/lang/String;
+getQName
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EStructuralFeature;)Ljava/lang/String;
+getResource
+ ()Lorg/eclipse/emf/ecore/xmi/XMLResource;
+ ()Lorg/eclipse/emf/ecore/xmi/XMLResource;
+getType
+ (Lorg/eclipse/emf/ecore/EFactory;Ljava/lang/String;)Lorg/eclipse/emf/ecore/EClassifier;
+ (Lorg/eclipse/emf/ecore/EFactory;Ljava/lang/String;)Lorg/eclipse/emf/ecore/EClassifier;
+getURI
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getValue
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;)Ljava/lang/Object;
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;)Ljava/lang/Object;
+getXMLEncoding
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getXMLMap
+ ()Lorg/eclipse/emf/ecore/xmi/XMLResource$XMLMap;
+ ()Lorg/eclipse/emf/ecore/xmi/XMLResource$XMLMap;
+packages
+ ()[Lorg/eclipse/emf/ecore/EPackage;
+ ()[Lorg/eclipse/emf/ecore/EPackage;
+popContext
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EFactory;>;)V
+ (Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EFactory;>;)V
+populateNameInfo
+ (Lorg/eclipse/emf/ecore/xmi/NameInfo;Lorg/eclipse/emf/ecore/EClass;)V
+ (Lorg/eclipse/emf/ecore/xmi/NameInfo;Lorg/eclipse/emf/ecore/EClass;)V
+populateNameInfo
+ (Lorg/eclipse/emf/ecore/xmi/NameInfo;Lorg/eclipse/emf/ecore/EDataType;)V
+ (Lorg/eclipse/emf/ecore/xmi/NameInfo;Lorg/eclipse/emf/ecore/EDataType;)V
+populateNameInfo
+ (Lorg/eclipse/emf/ecore/xmi/NameInfo;Lorg/eclipse/emf/ecore/EStructuralFeature;)V
+ (Lorg/eclipse/emf/ecore/xmi/NameInfo;Lorg/eclipse/emf/ecore/EStructuralFeature;)V
+resolve
+ (Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+ (Lorg/eclipse/emf/common/util/URI;Lorg/eclipse/emf/common/util/URI;)Lorg/eclipse/emf/common/util/URI;
+setAnySimpleType
+ (Lorg/eclipse/emf/ecore/EClass;)V
+ (Lorg/eclipse/emf/ecore/EClass;)V
+setExtendedMetaData
+ (Lorg/eclipse/emf/ecore/util/ExtendedMetaData;)V
+ (Lorg/eclipse/emf/ecore/util/ExtendedMetaData;)V
+setManyReference
+ (Lorg/eclipse/emf/ecore/xmi/XMLHelper$ManyReference;Ljava/lang/String;)Ljava/util/List<Lorg/eclipse/emf/ecore/xmi/XMIException;>;
+ (Lorg/eclipse/emf/ecore/xmi/XMLHelper$ManyReference;Ljava/lang/String;)Ljava/util/List<Lorg/eclipse/emf/ecore/xmi/XMIException;>;
+setNoNamespacePackage
+ (Lorg/eclipse/emf/ecore/EPackage;)V
+ (Lorg/eclipse/emf/ecore/EPackage;)V
+setOptions
+ (Ljava/util/Map<**>;)V
+ (Ljava/util/Map<**>;)V
+setPrefixToNamespaceMap
+ (Lorg/eclipse/emf/common/util/EMap<Ljava/lang/String;Ljava/lang/String;>;)V
+ (Lorg/eclipse/emf/common/util/EMap<Ljava/lang/String;Ljava/lang/String;>;)V
+setProcessDanglingHREF
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setValue
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;I)V
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;I)V
+setXMLMap
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource$XMLMap;)V
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource$XMLMap;)V

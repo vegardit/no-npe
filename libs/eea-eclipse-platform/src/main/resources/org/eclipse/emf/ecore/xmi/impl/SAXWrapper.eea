@@ -1,0 +1,69 @@
+class org/eclipse/emf/ecore/xmi/impl/SAXWrapper
+
+handler
+ Lorg/eclipse/emf/ecore/xmi/impl/XMLHandler;
+ Lorg/eclipse/emf/ecore/xmi/impl/XMLHandler;
+
+<init>
+ (Lorg/eclipse/emf/ecore/xmi/impl/XMLHandler;)V
+ (Lorg/eclipse/emf/ecore/xmi/impl/XMLHandler;)V
+characters
+ ([CII)V
+ ([1CII)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+comment
+ ([CII)V
+ ([CII)V
+endElement
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;L1java/lang/String;L1java/lang/String;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+endEntity
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+endPrefixMapping
+ (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+error
+ (Lorg/xml/sax/SAXParseException;)V
+ (L1org/xml/sax/SAXParseException;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+fatalError
+ (Lorg/xml/sax/SAXParseException;)V
+ (L1org/xml/sax/SAXParseException;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+ignorableWhitespace
+ ([CII)V
+ ([1CII)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+notationDecl
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+prepare
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource;Lorg/eclipse/emf/ecore/xmi/XMLHelper;Ljava/util/Map<**>;)V
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource;Lorg/eclipse/emf/ecore/xmi/XMLHelper;Ljava/util/Map<**>;)V
+processingInstruction
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;L0java/lang/String;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+resolveEntity
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;
+ (L0java/lang/String;L0java/lang/String;)L0org/xml/sax/InputSource; # @Inherited(org.xml.sax.helpers.DefaultHandler)
+setDocumentLocator
+ (Lorg/xml/sax/Locator;)V
+ (L1org/xml/sax/Locator;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+skippedEntity
+ (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+startDTD
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+startElement
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V
+ (L1java/lang/String;L1java/lang/String;L1java/lang/String;L1org/xml/sax/Attributes;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+startEntity
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+startPrefixMapping
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;L1java/lang/String;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)
+unparsedEntityDecl
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+warning
+ (Lorg/xml/sax/SAXParseException;)V
+ (L1org/xml/sax/SAXParseException;)V # @Inherited(org.xml.sax.helpers.DefaultHandler)

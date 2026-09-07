@@ -1,0 +1,52 @@
+class org/eclipse/emf/ecore/xmi/impl/XMLLoadImpl
+
+SAX_LEXICAL_PROPERTY
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+helper
+ Lorg/eclipse/emf/ecore/xmi/XMLHelper;
+ Lorg/eclipse/emf/ecore/xmi/XMLHelper;
+is
+ Ljava/io/InputStream;
+ Ljava/io/InputStream;
+options
+ Ljava/util/Map<**>;
+ Ljava/util/Map<**>;
+resource
+ Lorg/eclipse/emf/ecore/xmi/XMLResource;
+ Lorg/eclipse/emf/ecore/xmi/XMLResource;
+
+<init>
+ (Lorg/eclipse/emf/ecore/xmi/XMLHelper;)V
+ (Lorg/eclipse/emf/ecore/xmi/XMLHelper;)V
+createDefaultHandler
+ ()Lorg/eclipse/emf/ecore/xmi/XMLDefaultHandler;
+ ()Lorg/eclipse/emf/ecore/xmi/XMLDefaultHandler;
+getEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+load
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource;Ljava/io/InputStream;Ljava/util/Map<**>;)V
+ (L1org/eclipse/emf/ecore/xmi/XMLResource;Ljava/io/InputStream;Ljava/util/Map<**>;)V # @Generated(2)
+load
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource;Lorg/w3c/dom/Node;Ljava/util/Map<**>;)V
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource;Lorg/w3c/dom/Node;L1java/util/Map<**>;)V # @Generated(59)
+load
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource;Lorg/xml/sax/InputSource;Ljava/util/Map<**>;)V
+ (Lorg/eclipse/emf/ecore/xmi/XMLResource;Lorg/xml/sax/InputSource;L1java/util/Map<**>;)V # @Generated(66)
+makeDefaultHandler
+ ()Lorg/xml/sax/helpers/DefaultHandler;
+ ()L1org/xml/sax/helpers/DefaultHandler; # @Generated
+makeParser
+ ()Ljavax/xml/parsers/SAXParser;
+ ()Ljavax/xml/parsers/SAXParser;
+readBuffer
+ ()[B
+ ()[1B # @Generated
+traverse
+ (Lorg/w3c/dom/Node;Lorg/eclipse/emf/ecore/xmi/impl/XMLLoadImpl$AttributesProxy;Lorg/xml/sax/helpers/DefaultHandler;Lorg/xml/sax/ext/LexicalHandler;)V
+ (L0org/w3c/dom/Node;Lorg/eclipse/emf/ecore/xmi/impl/XMLLoadImpl$AttributesProxy;Lorg/xml/sax/helpers/DefaultHandler;Lorg/xml/sax/ext/LexicalHandler;)V # @Generated(2)
+traverseElement
+ (Lorg/w3c/dom/Element;Lorg/eclipse/emf/ecore/xmi/impl/XMLLoadImpl$AttributesProxy;Lorg/xml/sax/helpers/DefaultHandler;Lorg/xml/sax/ext/LexicalHandler;)V
+ (L1org/w3c/dom/Element;Lorg/eclipse/emf/ecore/xmi/impl/XMLLoadImpl$AttributesProxy;L1org/xml/sax/helpers/DefaultHandler;Lorg/xml/sax/ext/LexicalHandler;)V # @Generated(2,83)

@@ -1,0 +1,33 @@
+class org/eclipse/emf/common/util/AbstractTreeIterator
+ <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super org/eclipse/emf/common/util/BasicEList
+ <Ljava/util/Iterator<+TE;>;>
+ <Ljava/util/Iterator<+TE;>;>
+super org/eclipse/emf/common/util/TreeIterator
+ <TE;>
+ <TE;>
+
+nextPruneIterator
+ Ljava/util/Iterator<+TE;>;
+ Ljava/util/Iterator<+TE;>;
+nextRemoveIterator
+ Ljava/util/Iterator<+TE;>;
+ Ljava/util/Iterator<+TE;>;
+object
+ Ljava/lang/Object;
+ Ljava/lang/Object;
+
+<init>
+ (Ljava/lang/Object;Z)V
+ (Ljava/lang/Object;Z)V
+<init>
+ (TE;)V
+ (TE;)V
+getChildren
+ (Ljava/lang/Object;)Ljava/util/Iterator<+TE;>;
+ (Ljava/lang/Object;)Ljava/util/Iterator<+TE;>;
+next
+ ()TE;
+ ()TE;

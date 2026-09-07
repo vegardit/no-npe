@@ -1,0 +1,199 @@
+class org/eclipse/emf/ecore/util/BasicEAnnotationValidator
+
+loadEPackage
+ (Ljava/lang/String;)Lorg/eclipse/emf/ecore/EPackage;
+ (Ljava/lang/String;)L0org/eclipse/emf/ecore/EPackage; # @Generated(21)
+
+annotationName
+ Ljava/lang/String;
+ Ljava/lang/String;
+annotationSource
+ Ljava/lang/String;
+ Ljava/lang/String;
+assistant
+ Lorg/eclipse/emf/ecore/util/BasicEAnnotationValidator$Assistant;
+ Lorg/eclipse/emf/ecore/util/BasicEAnnotationValidator$Assistant;
+diagnosticSource
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+convertPropertyAttributeValueToLiteralItem
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EAttribute;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EObject;L1org/eclipse/emf/ecore/EAttribute;Ljava/lang/Object;)Ljava/lang/String; # @Generated(33)
+convertPropertyReferenceValueToLiteralItem
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EReference;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EReference;L0java/lang/Object;)L0java/lang/String; # @Generated(67,86)
+convertPropertyValueToLiteral
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EObject;L1org/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;)Ljava/lang/String; # @Generated(33)
+convertPropertyValueToLiteralItem
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/lang/Object;)Ljava/lang/String;
+createAssistant
+ ()Lorg/eclipse/emf/ecore/util/BasicEAnnotationValidator$Assistant;
+ ()L1org/eclipse/emf/ecore/util/BasicEAnnotationValidator$Assistant; # @Generated
+createDiagnostic
+ (IILjava/lang/String;[Ljava/lang/Object;)Lorg/eclipse/emf/common/util/BasicDiagnostic;
+ (IILjava/lang/String;[Ljava/lang/Object;)L1org/eclipse/emf/common/util/BasicDiagnostic; # @Generated(42)
+createInstance
+ (Lorg/eclipse/emf/ecore/EClass;Lorg/eclipse/emf/ecore/EAnnotation;)Lorg/eclipse/emf/ecore/EObject;
+ (L1org/eclipse/emf/ecore/EClass;L1org/eclipse/emf/ecore/EAnnotation;)Lorg/eclipse/emf/ecore/EObject; # @Generated(2,32)
+createValueDiagnostic
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EStructuralFeature;)Lorg/eclipse/emf/common/util/BasicDiagnostic;
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;L1java/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EStructuralFeature;)Lorg/eclipse/emf/common/util/BasicDiagnostic; # @Generated(74)
+getAllValidAnnotations
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>;)Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>;
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>;)L1java/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>; # @Generated(135)
+getAnnotationSource
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getAssistant
+ ()Lorg/eclipse/emf/ecore/util/BasicEAnnotationValidator$Assistant;
+ ()Lorg/eclipse/emf/ecore/util/BasicEAnnotationValidator$Assistant;
+getEcoreResourceLocator
+ ()Lorg/eclipse/emf/common/util/ResourceLocator;
+ ()L1org/eclipse/emf/common/util/ResourceLocator; # @Generated
+getProperties
+ (Lorg/eclipse/emf/ecore/EModelElement;)Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EStructuralFeature;>;
+ (Lorg/eclipse/emf/ecore/EModelElement;)L1java/util/Map<Ljava/lang/String;Lorg/eclipse/emf/ecore/EStructuralFeature;>; # @Generated(40)
+getPropertyClasses
+ (Lorg/eclipse/emf/ecore/EModelElement;)Ljava/util/List<Lorg/eclipse/emf/ecore/EClass;>;
+ (Lorg/eclipse/emf/ecore/EModelElement;)Ljava/util/List<Lorg/eclipse/emf/ecore/EClass;>;
+getResourceLocator
+ ()Lorg/eclipse/emf/common/util/ResourceLocator;
+ ()Lorg/eclipse/emf/common/util/ResourceLocator;
+getRootEValidator
+ (Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Lorg/eclipse/emf/ecore/EValidator;
+ (Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)L1org/eclipse/emf/ecore/EValidator; # @Generated(56)
+getString
+ (Lorg/eclipse/emf/common/util/ResourceLocator;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+ (L1org/eclipse/emf/common/util/ResourceLocator;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; # @Generated(2)
+getValidAnnotations
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>;)Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>;
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;L1java/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>;)L1java/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>; # @Generated(74,135)
+getValidContents
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EObject;>;)Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EObject;>;
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EObject;>;)Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EObject;>; # @Generated(PolyNull)
+getValidLocationDescription
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getValidReferences
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<*>;)Ljava/util/Collection<*>;
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<*>;)Ljava/util/Collection<*>; # @Generated(PolyNull)
+initialize
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EAnnotation;)Lorg/eclipse/emf/ecore/EObject;
+ (Lorg/eclipse/emf/ecore/EObject;L1org/eclipse/emf/ecore/EAnnotation;)Lorg/eclipse/emf/ecore/EObject; # @Generated(33,PolyNull)
+isAnnotationsSupported
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;)Z
+isApplicable
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;)Z
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;)Z
+isContentsSupported
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;)Z
+isDuplicateValid
+ (Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EAnnotation;)Z
+ (Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EAnnotation;)Z
+isIncludedProperty
+ (Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EClass;Lorg/eclipse/emf/ecore/EStructuralFeature;)Z
+ (Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EClass;Lorg/eclipse/emf/ecore/EStructuralFeature;)Z
+isReferencesSupported
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;)Z
+isValidLocation
+ (Lorg/eclipse/emf/ecore/EAnnotation;)Z
+ (L1org/eclipse/emf/ecore/EAnnotation;)Z # @Generated
+isValidLocation
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;)Z
+join
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;
+ (Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;
+reportDuplicate
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(109)
+reportIgnoredAnnotations
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EAnnotation;>;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(134)
+reportIgnoredContents
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EObject;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EObject;>;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(130)
+reportIgnoredEntry
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;L1java/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(74,133)
+reportIgnoredReferences
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EObject;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Collection<+Lorg/eclipse/emf/ecore/EObject;>;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(130)
+reportInvalidAnnotation
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EAnnotation;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(109)
+reportInvalidContent
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EObject;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(105)
+reportInvalidLocation
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(37)
+reportInvalidReference
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EObject;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EObject;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(105)
+reportInvalidReferenceLiteral
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EReference;Ljava/lang/String;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;L1org/eclipse/emf/ecore/EReference;Ljava/lang/String;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(133,185)
+reportInvalidValueLiteral
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EAttribute;Ljava/lang/String;Lorg/eclipse/emf/ecore/EDataType;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/lang/RuntimeException;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EAttribute;Ljava/lang/String;Lorg/eclipse/emf/ecore/EDataType;L1org/eclipse/emf/common/util/DiagnosticChain;L1java/lang/RuntimeException;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(218,263)
+reportMissingEntry
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/lang/String;Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/lang/String;Lorg/eclipse/emf/ecore/EStructuralFeature;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(134)
+reportMissingRequiredEntryValue
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/util/List<Ljava/lang/Object;>;L1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(152)
+reportTooFewValues
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/util/List<Ljava/lang/Object;>;IILorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/util/List<Ljava/lang/Object;>;IIL1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(213)
+reportTooManyValues
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/util/List<Ljava/lang/Object;>;IILorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/util/List<Ljava/lang/Object;>;IIL1org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)V # @Generated(213)
+split
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Ljava/util/List<Ljava/lang/String;>;
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Ljava/util/List<Ljava/lang/String;>;
+validate
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (L1org/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(2)
+validateAnnotations
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (L1org/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(2)
+validateAttributeDetailLiteralValue
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EAttribute;Ljava/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;L1java/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;L1org/eclipse/emf/ecore/EAttribute;Ljava/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(74,133)
+validateAttributeDetailValueLiteral
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EAttribute;Ljava/lang/String;Ljava/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;L1org/eclipse/emf/ecore/EAttribute;Ljava/lang/String;Ljava/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(133)
+validateContents
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (L1org/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(2)
+validateDetail
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;L0org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(133)
+validateDetails
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (L1org/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(2)
+validateFeatureDetail
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EStructuralFeature;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+validateFeatureDetailValue
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EStructuralFeature;Ljava/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;L1org/eclipse/emf/ecore/EStructuralFeature;L1java/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(133,175)
+validateReferenceDetailLiteralValue
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EReference;Ljava/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;L1java/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;L1org/eclipse/emf/ecore/EReference;Ljava/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(74,133)
+validateReferenceDetailValueLiteral
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EReference;Ljava/lang/String;Ljava/util/List<Ljava/lang/Object;>;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Ljava/util/Map$Entry<Ljava/lang/String;Ljava/lang/String;>;Lorg/eclipse/emf/ecore/EReference;Ljava/lang/String;Ljava/util/List<Ljava/lang/Object;>;L0org/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(221)
+validateReferences
+ (Lorg/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z
+ (L1org/eclipse/emf/ecore/EAnnotation;Lorg/eclipse/emf/ecore/EModelElement;Lorg/eclipse/emf/common/util/DiagnosticChain;Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;)Z # @Generated(2)

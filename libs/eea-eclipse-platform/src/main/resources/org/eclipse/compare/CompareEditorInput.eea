@@ -1,0 +1,171 @@
+class org/eclipse/compare/CompareEditorInput
+
+DIRTY_STATE
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+PROP_SELECTED_EDITION
+ Ljava/lang/String;
+ Ljava/lang/String;
+PROP_TITLE
+ Ljava/lang/String;
+ Ljava/lang/String;
+PROP_TITLE_IMAGE
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Lorg/eclipse/compare/CompareConfiguration;)V
+ (L1org/eclipse/compare/CompareConfiguration;)V # @Generated
+addCompareInputChangeListener
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/structuremergeviewer/ICompareInputChangeListener;)V
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/structuremergeviewer/ICompareInputChangeListener;)V
+addPropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (L0org/eclipse/jface/util/IPropertyChangeListener;)V # @Overrides(org.eclipse.compare.IPropertyChangeNotifier)
+belongsTo
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+contributeToToolBar
+ (Lorg/eclipse/jface/action/ToolBarManager;)V
+ (L1org/eclipse/jface/action/ToolBarManager;)V # @Generated
+createContentViewerSwitchingPane
+ (Lorg/eclipse/compare/Splitter;ILorg/eclipse/compare/CompareEditorInput;)Lorg/eclipse/compare/CompareViewerSwitchingPane;
+ (L1org/eclipse/compare/Splitter;ILorg/eclipse/compare/CompareEditorInput;)L1org/eclipse/compare/CompareViewerSwitchingPane; # @Generated(2,74)
+createContents
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;)Lorg/eclipse/swt/widgets/Control; # @Generated(2)
+createDiffViewer
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/jface/viewers/Viewer; # @Generated(2,38)
+createOutlineContents
+ (Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/widgets/Control;
+ (L1org/eclipse/swt/widgets/Composite;I)L1org/eclipse/swt/widgets/Control; # @Generated(2,39)
+createStructureInputPane
+ (Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/compare/CompareViewerPane;
+ (L1org/eclipse/swt/widgets/Composite;)L1org/eclipse/compare/CompareViewerPane; # @Generated(2,38)
+findContentViewer
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+findStructureViewer
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+ (Lorg/eclipse/jface/viewers/Viewer;Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/jface/viewers/Viewer;
+firePropertyChange
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+ (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
+flushLeftViewers
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+flushRightViewers
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+flushViewers
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+getActionBars
+ ()Lorg/eclipse/ui/IActionBars;
+ ()L0org/eclipse/ui/IActionBars; # @Generated
+getAdapter
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)T0T; # @Inherited(org.eclipse.core.runtime.PlatformObject)
+getCancelButtonLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getCompareConfiguration
+ ()Lorg/eclipse/compare/CompareConfiguration;
+ ()Lorg/eclipse/compare/CompareConfiguration;
+getCompareResult
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getContainer
+ ()Lorg/eclipse/compare/ICompareContainer;
+ ()Lorg/eclipse/compare/ICompareContainer;
+getContentViewerDescriptor
+ ()Lorg/eclipse/compare/internal/ViewerDescriptor;
+ ()Lorg/eclipse/compare/internal/ViewerDescriptor;
+getImageDescriptor
+ ()Lorg/eclipse/jface/resource/ImageDescriptor;
+ ()L0org/eclipse/jface/resource/ImageDescriptor; # @Inherited(org.eclipse.ui.IEditorInput)
+getMessage
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ui.IEditorInput)
+getNavigator
+ ()Lorg/eclipse/compare/ICompareNavigator;
+ ()Lorg/eclipse/compare/ICompareNavigator;
+getOKButtonLabel
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getPersistable
+ ()Lorg/eclipse/ui/IPersistableElement;
+ ()L0org/eclipse/ui/IPersistableElement; # @Inherited(org.eclipse.ui.IEditorInput)
+getSelectedEdition
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Generated
+getServiceLocator
+ ()Lorg/eclipse/ui/services/IServiceLocator;
+ ()L0org/eclipse/ui/services/IServiceLocator; # @Generated
+getStructureViewerDescriptor
+ ()Lorg/eclipse/compare/internal/ViewerDescriptor;
+ ()Lorg/eclipse/compare/internal/ViewerDescriptor;
+getTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTitleImage
+ ()Lorg/eclipse/swt/graphics/Image;
+ ()Lorg/eclipse/swt/graphics/Image;
+getToolTipText
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.eclipse.ui.IEditorInput)
+getWorkbenchPart
+ ()Lorg/eclipse/ui/IWorkbenchPart;
+ ()L0org/eclipse/ui/IWorkbenchPart; # @Generated
+prepareInput
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/Object;
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)Ljava/lang/Object;
+registerContextMenu
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+ (Lorg/eclipse/jface/action/MenuManager;Lorg/eclipse/jface/viewers/ISelectionProvider;)V
+removeCompareInputChangeListener
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/structuremergeviewer/ICompareInputChangeListener;)V
+ (Lorg/eclipse/compare/structuremergeviewer/ICompareInput;Lorg/eclipse/compare/structuremergeviewer/ICompareInputChangeListener;)V
+removePropertyChangeListener
+ (Lorg/eclipse/jface/util/IPropertyChangeListener;)V
+ (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Inherited(org.eclipse.compare.IPropertyChangeNotifier)
+run
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.jface.operation.IRunnableWithProgress)
+run
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+ (ZZLorg/eclipse/jface/operation/IRunnableWithProgress;)V
+runAsynchronously
+ (Lorg/eclipse/jface/operation/IRunnableWithProgress;)V
+ (Lorg/eclipse/jface/operation/IRunnableWithProgress;)V
+save
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+saveChanges
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ (Lorg/eclipse/core/runtime/IProgressMonitor;)V
+setContainer
+ (Lorg/eclipse/compare/ICompareContainer;)V
+ (L1org/eclipse/compare/ICompareContainer;)V # @Generated
+setContentViewerDescriptor
+ (Lorg/eclipse/compare/internal/ViewerDescriptor;)V
+ (Lorg/eclipse/compare/internal/ViewerDescriptor;)V
+setHelpContextId
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setStatusMessage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setStructureViewerDescriptor
+ (Lorg/eclipse/compare/internal/ViewerDescriptor;)V
+ (Lorg/eclipse/compare/internal/ViewerDescriptor;)V
+setTitle
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

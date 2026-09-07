@@ -1,0 +1,128 @@
+class org/eclipse/emf/common/util/AbstractEList
+ <E:Ljava/lang/Object;>
+ <E:Ljava/lang/Object;>
+
+super java/util/AbstractList
+ <TE;>
+ <TE;>
+super org/eclipse/emf/common/util/EList
+ <TE;>
+ <TE;>
+
+add
+ (ITE;)V
+ (ITE;)V
+add
+ (TE;)Z
+ (TE;)Z
+addAll
+ (ILjava/util/Collection<+TE;>;)Z
+ (IL1java/util/Collection<+TE;>;)Z # @Inherited(java.util.AbstractList)
+addAll
+ (Ljava/util/Collection<+TE;>;)Z
+ (L1java/util/Collection<+TE;>;)Z # @Inherited(java.util.AbstractCollection)
+addAllUnique
+ (ILjava/util/Collection<+TE;>;)Z
+ (ILjava/util/Collection<+TE;>;)Z
+addAllUnique
+ (I[Ljava/lang/Object;II)Z
+ (I[Ljava/lang/Object;II)Z
+addAllUnique
+ (Ljava/util/Collection<+TE;>;)Z
+ (Ljava/util/Collection<+TE;>;)Z
+addAllUnique
+ ([Ljava/lang/Object;II)Z
+ ([Ljava/lang/Object;II)Z
+addUnique
+ (ITE;)V
+ (ITE;)V
+addUnique
+ (TE;)V
+ (TE;)V
+basicGet
+ (I)TE;
+ (I)TE;
+basicIterator
+ ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Generated(3)
+basicList
+ ()Ljava/util/List<TE;>;
+ ()Ljava/util/List<TE;>;
+basicListIterator
+ ()Ljava/util/ListIterator<TE;>;
+ ()L1java/util/ListIterator<TE;>; # @Generated(3)
+basicListIterator
+ (I)Ljava/util/ListIterator<TE;>;
+ (I)L1java/util/ListIterator<TE;>; # @Generated(4)
+didAdd
+ (ITE;)V
+ (ITE;)V
+didClear
+ (I[Ljava/lang/Object;)V
+ (I[0Ljava/lang/Object;)V # @Generated(3)
+didMove
+ (ITE;I)V
+ (ITE;I)V
+didRemove
+ (ITE;)V
+ (ITE;)V
+didSet
+ (ITE;TE;)V
+ (ITE;TE;)V
+equalObjects
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.util.AbstractList)
+getDuplicates
+ (Ljava/util/Collection<*>;)Ljava/util/Collection<TE;>;
+ (L1java/util/Collection<*>;)L1java/util/Collection<TE;>; # @Generated(2,28)
+getNonDuplicates
+ (Ljava/util/Collection<+TE;>;)Ljava/util/Collection<TE;>;
+ (L1java/util/Collection<+TE;>;)L1java/util/Collection<TE;>; # @Generated(2,31)
+iterator
+ ()Ljava/util/Iterator<TE;>;
+ ()L1java/util/Iterator<TE;>; # @Inherited(java.util.AbstractList)
+listIterator
+ ()Ljava/util/ListIterator<TE;>;
+ ()L1java/util/ListIterator<TE;>; # @Inherited(java.util.AbstractList)
+listIterator
+ (I)Ljava/util/ListIterator<TE;>;
+ (I)L1java/util/ListIterator<TE;>; # @Inherited(java.util.AbstractList)
+move
+ (II)TE;
+ (II)TE;
+move
+ (ITE;)V
+ (ITE;)V
+primitiveGet
+ (I)TE;
+ (I)TE;
+remove
+ (I)TE;
+ (I)TE;
+remove
+ (Ljava/lang/Object;)Z
+ (Ljava/lang/Object;)Z
+removeAll
+ (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
+resolve
+ (ITE;)TE;
+ (ITE;)TE; # @Generated(PolyNull)
+retainAll
+ (Ljava/util/Collection<*>;)Z
+ (L1java/util/Collection<*>;)Z # @Inherited(java.util.AbstractCollection)
+set
+ (ITE;)TE;
+ (ITE;)TE;
+setUnique
+ (ITE;)TE;
+ (ITE;)TE;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.util.AbstractCollection)
+validate
+ (ITE;)TE;
+ (ITE;)TE; # @Generated(PolyNull)

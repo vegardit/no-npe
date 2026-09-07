@@ -1,0 +1,32 @@
+class org/eclipse/team/ui/mapping/SynchronizationLabelProvider
+
+getContext
+ ()Lorg/eclipse/team/core/mapping/ISynchronizationContext;
+ ()Lorg/eclipse/team/core/mapping/ISynchronizationContext;
+getDescription
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L1java/lang/Object;)L0java/lang/String; # @Overrides(org.eclipse.ui.navigator.IDescriptionProvider)
+getExtensionSite
+ ()Lorg/eclipse/ui/navigator/ICommonContentExtensionSite;
+ ()Lorg/eclipse/ui/navigator/ICommonContentExtensionSite;
+getImage
+ (Ljava/lang/Object;)Lorg/eclipse/swt/graphics/Image;
+ (L1java/lang/Object;)L0org/eclipse/swt/graphics/Image; # @Inherited(org.eclipse.team.ui.synchronize.AbstractSynchronizeLabelProvider)
+getModelRoot
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getScope
+ ()Lorg/eclipse/team/core/mapping/ISynchronizationScope;
+ ()Lorg/eclipse/team/core/mapping/ISynchronizationScope;
+getText
+ (Ljava/lang/Object;)Ljava/lang/String;
+ (L1java/lang/Object;)Ljava/lang/String; # @Inherited(org.eclipse.team.ui.synchronize.AbstractSynchronizeLabelProvider)
+init
+ (Lorg/eclipse/ui/navigator/ICommonContentExtensionSite;)V
+ (L1org/eclipse/ui/navigator/ICommonContentExtensionSite;)V # @Inherited(org.eclipse.ui.navigator.ICommonLabelProvider)
+restoreState
+ (Lorg/eclipse/ui/IMemento;)V
+ (L1org/eclipse/ui/IMemento;)V # @Inherited(org.eclipse.ui.navigator.IMementoAware)
+saveState
+ (Lorg/eclipse/ui/IMemento;)V
+ (L1org/eclipse/ui/IMemento;)V # @Inherited(org.eclipse.ui.navigator.IMementoAware)
