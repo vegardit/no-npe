@@ -589,9 +589,30 @@ The existing exact `Unsafe.throwException(Throwable)` contract is also recognize
 ### Bytecode return contracts
 
 Return inference imports a helper's bytecode summary only when the call has one fixed runtime target.
+An overridable virtual call qualifies when every possible receiver is allocated as the exact declared owner.
+Conditionally replacing an incoming receiver does not establish that proof, even after a non-null check or a copy to an alias.
 Non-constructor `invokespecial` calls use the same current-class or immediate-superclass declaration restriction as
 non-returning method proofs.
 An indirect symbolic ancestor does not qualify, even when its body already has a cached non-null summary.
+
+Helper summaries preserve return dependencies across classes.
+For example, calling an identity helper with a non-null constant can prove a non-null return, while forwarding a caller
+parameter preserves its `PolyNull` dependency.
+Dependencies are mapped through each call's actual arguments, including reordered arguments and nested calls.
+Unknown or cyclic helpers remain unknown, and a cached body does not bypass the call's dispatch restrictions.
+
+A conditional assignment must not hide a nullable original argument that can still reach the return.
+If the analysis cannot preserve that possible value, the helper summary stays unknown.
+This also applies when value analysis proves the assignment unreachable.
+
+Standard `LambdaMetafactory` bootstrap calls prove that a lambda or method-reference object is non-null.
+This applies to ordinary, capturing, and serializable lambdas; it does not prove that invoking the lambda returns non-null.
+Standard string-concatenation factories also qualify, while arbitrary `invokedynamic` bootstraps remain unknown.
+
+A successful `instanceof` test proves the tested reference non-null on its true edge.
+This recognizes returns such as `value instanceof String ? (String) value : ""`.
+A saved test result retains the original reference's identity; it does not refine a replacement assigned to the same local.
+A failed test supplies no nullness fact, and a merged test of different references does not qualify.
 
 `Object.clone()` has a separate proof that checks the selected method through the caller's superclass chain.
 A superclass call must reach `Object` without an intervening clone declaration, and the receiver's class must implement
@@ -605,8 +626,8 @@ Naming `Object.clone()` in the instruction alone does not establish either fact.
 The generator derives parameter contracts from bytecode:
 
 - It infers `NonNull` when every reachable normal return requires the parameter to be non-null.
-  A successful instance-method call proves its receiver non-null.
-  The non-null edge of an explicit `null` guard supplies the same fact.
+  A successful instance-method call, field access, array access, or monitor operation proves its receiver or array non-null.
+  The non-null edge of an explicit `null` guard and the true edge of an `instanceof` test supply the same fact.
   A call to an exactly resolved helper can also prove that an argument must be non-null for the call to return normally.
 - It infers `Nullable` when a direct guard at method entry sends `null` through a straight, side-effect-free path to a
   normal return.
@@ -620,13 +641,20 @@ The proofs have these boundaries:
 
 - `IFNULL` and `IFNONNULL` guards qualify when the tested value resolves to exactly one original parameter.
   A local alias or cast still qualifies, while a reassigned local or a value merged from several producers does not.
-- Non-null guard facts are kept only on the non-null control-flow edge.
+  If the jump and fall-through share one successor, the guard supplies no edge-specific nullness fact.
+- A successful `instanceof` test also qualifies when its operand resolves to one original parameter.
+  Copies saved in ordinary Boolean locals qualify, while ambiguous or computed Boolean values do not.
+  A reassigned Boolean parameter remains unknown because a caller-supplied value can bypass the type test.
+- Guard facts are kept only on the edge proving non-nullness.
   A method with a normal path that accepts null therefore does not receive `NonNull`.
 - The `Nullable` proof is intentionally narrower.
   Only an initial guard qualifies, and its null arm may prepare a constant or local return value but may not call, take a
   conditional branch, throw, or enter an exception handler before returning.
   Later checks, conditional null returns, and null arms containing cleanup or other executable behavior remain unknown.
 - `invokevirtual`, `invokeinterface`, and non-constructor `invokespecial` calls qualify as non-null receiver evidence.
+- Instance-field reads and writes, array length, primitive and reference array reads and writes, and monitor entry and exit
+  qualify as direct dereferences.
+  They prove the container non-null, without qualifying a field value, array element, or value being stored.
 - The three Java 11 `Objects.requireNonNull(...)` overloads qualify as non-null evidence for their first argument.
   That intrinsic does not qualify message arguments, `requireNonNullElse(...)`, or `requireNonNullElseGet(...)`.
 - Other calls, including constructors, propagate non-null parameter requirements proven from the helper's bytecode.
@@ -641,14 +669,14 @@ The proofs have these boundaries:
 - Non-null evidence must occur on every path that returns normally, and the method must have at least one reachable normal
   return.
   A conditional call followed by a normal return and an always-throwing method therefore remain unknown.
-- A qualifying call inside a region protected by an explicit catch of `NullPointerException`, `RuntimeException`, `Exception`,
-  or `Throwable` does not qualify, even when the handler rethrows.
+- A call or direct dereference inside a region protected by an explicit catch of `NullPointerException`, `RuntimeException`,
+  `Exception`, or `Throwable` does not qualify, even when the handler rethrows.
   The analysis deliberately does not turn a failure handled by such a catch into a parameter contract.
-- Facts established by a call are carried only along its normal control-flow edge.
+- Facts established by a call or direct dereference are carried only along its normal control-flow edge.
   Exception handlers receive the facts that were known before the throwing instruction.
   This is deliberately conservative for checked-exception handlers that return normally.
 - A synthetic catch-all used for `finally` is not treated as an explicit NPE-capable catch.
-  A normal `finally` path can retain the proof, while a handler path that returns without the successful call cannot.
+  A normal `finally` path can retain the proof, while a handler path that returns without the successful operation cannot.
 - Native calls such as `System.arraycopy(...)` supply no bytecode proof for their arguments.
 - Abstract or native methods, unsupported bytecode, and methods outside the analysis budget remain unknown.
 - Helper traversal has its own depth budget and stops at active recursion cycles.
@@ -721,6 +749,8 @@ A static-final reference field is marked non-null only when a recognized annotat
 analysis proves that every normal completion of the class initializer assigns a non-null value.
 Finality alone is not evidence because an initializer such as `System.getProperty(...)` can return `null`.
 When initializer analysis is unsupported or inconclusive, the field remains unspecified rather than being marked nullable.
+Standard lambda and string-concatenation factories supply non-null initializer values under the same bootstrap checks used
+for return inference.
 
 This proof models the field after successful class initialization, matching ordinary source-level nullness contracts.
 Code reached recursively while `<clinit>` is still running can observe the JVM default `null` before assignment; that
@@ -749,6 +779,12 @@ requiring a separate branch that returns `null`.
 Every reachable normal return must forward the same original reference parameter; local aliases and casts preserve this
 identity.
 A proven non-null return, such as forwarding an argument after rejecting `null`, retains its stronger non-null contract.
+
+Complete helper summaries can carry the same parameter dependencies through calls within or across classes.
+A complete dependency on one caller parameter does not need a separate local null-return branch.
+Competing parameter dependencies still need evidence of a null return or an independent non-null alternative.
+Loads from reassigned entry-parameter slots remain unknown when the original value and a replacement merge ambiguously,
+including when that value is passed through an identity helper.
 
 Bytecode analysis also recognizes guarded fallback control flow.
 When one return alternative depends on an input and every other reachable alternative is proven non-null, the result can

@@ -245,10 +245,20 @@ public class BytecodeAnalyzer {
       final Set<Integer> parameterLocalSlots;
       final @Nullable String privateThisFieldKey;
       final Set<String> requiredNonNullFieldsForNullConstantPath;
+      final @Nullable FlowValue instanceOfOperand;
 
       FlowValue(final SourceValue source, final Set<Integer> parameterLocalSlots, final FlowNullness nullness,
             final boolean nullConstantPath, final boolean mayHaveNonConstantNullPath, final @Nullable String privateThisFieldKey,
             final Set<String> requiredNonNullFieldsForNullConstantPath) {
+         this(source, parameterLocalSlots, nullness, nullConstantPath, mayHaveNonConstantNullPath, privateThisFieldKey,
+            requiredNonNullFieldsForNullConstantPath, null);
+      }
+
+      // Keep the immutable analysis facts explicit; grouping them only to shorten this internal constructor would hide their independence.
+      // CHECKSTYLE:IGNORE ParameterNumber FOR NEXT 3 LINES
+      FlowValue(final SourceValue source, final Set<Integer> parameterLocalSlots, final FlowNullness nullness,
+            final boolean nullConstantPath, final boolean mayHaveNonConstantNullPath, final @Nullable String privateThisFieldKey,
+            final Set<String> requiredNonNullFieldsForNullConstantPath, final @Nullable FlowValue instanceOfOperand) {
          super(source.size, source.insns);
          this.parameterLocalSlots = Set.copyOf(parameterLocalSlots);
          this.nullness = nullness;
@@ -256,6 +266,7 @@ public class BytecodeAnalyzer {
          this.mayHaveNonConstantNullPath = mayHaveNonConstantNullPath;
          this.privateThisFieldKey = privateThisFieldKey;
          this.requiredNonNullFieldsForNullConstantPath = Set.copyOf(requiredNonNullFieldsForNullConstantPath);
+         this.instanceOfOperand = instanceOfOperand;
       }
 
       @Override
@@ -265,16 +276,16 @@ public class BytecodeAnalyzer {
          if (!(obj instanceof FlowValue))
             return false;
          final FlowValue other = (FlowValue) obj;
-         return mayHaveNonConstantNullPath == other.mayHaveNonConstantNullPath && nullConstantPath == other.nullConstantPath
-               && nullness == other.nullness && Objects.equals(privateThisFieldKey, other.privateThisFieldKey) && parameterLocalSlots
-                  .equals(other.parameterLocalSlots) && requiredNonNullFieldsForNullConstantPath.equals(
-                     other.requiredNonNullFieldsForNullConstantPath) && super.equals(other);
+         return instanceOfOperand == other.instanceOfOperand && mayHaveNonConstantNullPath == other.mayHaveNonConstantNullPath
+               && nullConstantPath == other.nullConstantPath && nullness == other.nullness && Objects.equals(privateThisFieldKey,
+                  other.privateThisFieldKey) && parameterLocalSlots.equals(other.parameterLocalSlots)
+               && requiredNonNullFieldsForNullConstantPath.equals(other.requiredNonNullFieldsForNullConstantPath) && super.equals(other);
       }
 
       @Override
       public int hashCode() {
          return Objects.hash(super.hashCode(), parameterLocalSlots, nullness, nullConstantPath, mayHaveNonConstantNullPath,
-            privateThisFieldKey, requiredNonNullFieldsForNullConstantPath);
+            privateThisFieldKey, requiredNonNullFieldsForNullConstantPath, System.identityHashCode(instanceOfOperand));
       }
 
       FlowValue withNullness(final FlowNullness refinedNullness) {
@@ -286,18 +297,18 @@ public class BytecodeAnalyzer {
          return nullness == refinedNullness && nullConstantPath == refinedNullConstantPath
                && mayHaveNonConstantNullPath == refinedNonConstantNullPath ? this
                      : new FlowValue(this, parameterLocalSlots, refinedNullness, refinedNullConstantPath, refinedNonConstantNullPath,
-                        privateThisFieldKey, refinedRequiredFields);
+                        privateThisFieldKey, refinedRequiredFields, instanceOfOperand);
       }
 
       FlowValue withNullConstantRequirements(final Set<String> requiredFields) {
          return requiredNonNullFieldsForNullConstantPath.equals(requiredFields) ? this
                : new FlowValue(this, parameterLocalSlots, nullness, nullConstantPath, mayHaveNonConstantNullPath, privateThisFieldKey,
-                  requiredFields);
+                  requiredFields, instanceOfOperand);
       }
 
       FlowValue withPrivateThisFieldKey(final String fieldKey) {
          return new FlowValue(this, parameterLocalSlots, nullness, nullConstantPath, mayHaveNonConstantNullPath, fieldKey,
-            requiredNonNullFieldsForNullConstantPath);
+            requiredNonNullFieldsForNullConstantPath, instanceOfOperand);
       }
    }
 
@@ -352,6 +363,12 @@ public class BytecodeAnalyzer {
          if ((opcode == Opcodes.IFNULL || opcode == Opcodes.IFNONNULL) && getStackSize() > 0) {
             testedOpcode = opcode;
             testedValue = getStack(getStackSize() - 1);
+         } else if ((opcode == Opcodes.IFEQ || opcode == Opcodes.IFNE) && getStackSize() > 0) {
+            final SourceValue condition = getStack(getStackSize() - 1);
+            if (condition instanceof FlowValue) {
+               testedOpcode = opcode;
+               testedValue = ((FlowValue) condition).instanceOfOperand;
+            }
          }
 
          super.execute(instruction, interpreter);
@@ -397,7 +414,11 @@ public class BytecodeAnalyzer {
          init(unrefinedFrame);
          super.initJumpTarget(opcode, target);
 
-         final boolean isNullEdge = opcode == Opcodes.IFNULL ? target != null : target == null;
+         final boolean isInstanceOfTest = opcode == Opcodes.IFEQ || opcode == Opcodes.IFNE;
+         final boolean isNullEdge = opcode == Opcodes.IFNULL || opcode == Opcodes.IFEQ ? target != null : target == null;
+         if (isInstanceOfTest && isNullEdge)
+            // A failed type test also accepts non-null values of other types, so it supplies no nullness refinement.
+            return;
          final FlowValue testedFlowValue = (FlowValue) tested;
          final boolean impossibleEdge = isNullEdge ? testedFlowValue.nullness == FlowNullness.NEVER_NULL
                : testedFlowValue.nullness == FlowNullness.DEFINITELY_NULL;
@@ -567,18 +588,23 @@ public class BytecodeAnalyzer {
       UNKNOWN
    }
 
-   /** Carries reachable-return evidence, including exact entry-parameter identity independently of conditional dependencies. */
+   /** Carries return and receiver-type evidence with the entry-value identity that ordinary producer sets lose at merges. */
    private static final class ReturnFlowFacts {
-      static final ReturnFlowFacts UNKNOWN = new ReturnFlowFacts(ReturnEvidence.UNKNOWN, Set.of(), null);
+      static final ReturnFlowFacts UNKNOWN = new ReturnFlowFacts(ReturnEvidence.UNKNOWN, Set.of(), Set.of(), Set.of(), null);
 
       final ReturnEvidence evidence;
       final Set<AbstractInsnNode> provenNonNullLoads;
+      final Set<AbstractInsnNode> loadsRetainingEntryParameter;
+      final Set<AbstractInsnNode> exactReceiverCalls;
       final @Nullable Integer exactReturnedParameterIndex;
 
       ReturnFlowFacts(final ReturnEvidence evidence, final Set<AbstractInsnNode> provenNonNullLoads,
+            final Set<AbstractInsnNode> loadsRetainingEntryParameter, final Set<AbstractInsnNode> exactReceiverCalls,
             final @Nullable Integer exactReturnedParameterIndex) {
          this.evidence = evidence;
          this.provenNonNullLoads = Set.copyOf(provenNonNullLoads);
+         this.loadsRetainingEntryParameter = Set.copyOf(loadsRetainingEntryParameter);
+         this.exactReceiverCalls = Set.copyOf(exactReceiverCalls);
          this.exactReturnedParameterIndex = exactReturnedParameterIndex;
       }
    }
@@ -631,12 +657,12 @@ public class BytecodeAnalyzer {
       final List<Set<Integer>> guaranteedNullParameters;
       final Map<AbstractInsnNode, Integer> instructionIndexes;
       final AbstractInsnNode[] instructions;
-      final Set<AbstractInsnNode> provenNonNullLoads;
+      final ReturnFlowFacts returnFlowFacts;
       final Map<Integer, Integer> referenceParameterIndexesByLocalSlot;
 
       MethodAnalysis(final AbstractInsnNode[] instructions, final Frame<SourceValue>[] frames,
             final Map<AbstractInsnNode, Integer> instructionIndexes, final Map<Integer, Integer> referenceParameterIndexesByLocalSlot,
-            final ParameterFlowFacts parameterFlowFacts, final Set<AbstractInsnNode> provenNonNullLoads) {
+            final ParameterFlowFacts parameterFlowFacts, final ReturnFlowFacts returnFlowFacts) {
          this.instructions = instructions;
          this.frames = frames;
          this.instructionIndexes = instructionIndexes;
@@ -644,7 +670,7 @@ public class BytecodeAnalyzer {
          guaranteedNullParameters = parameterFlowFacts.guaranteedNullParameters;
          guaranteedNonNullParameters = parameterFlowFacts.guaranteedNonNullParameters;
          definitelyNullableParameters = parameterFlowFacts.definitelyNullableParameters;
-         this.provenNonNullLoads = provenNonNullLoads;
+         this.returnFlowFacts = returnFlowFacts;
       }
    }
 
@@ -833,9 +859,9 @@ public class BytecodeAnalyzer {
          try {
             final var analyzer = new BytecodeAnalyzer(resolvedOwner, this);
             final DependencySummary resolvedSummary = analyzer.determineMethodDependencySummary(resolvedMethod);
-            if (resolvedSummary.proven && resolvedSummary.hasNonNullReturn && resolvedSummary.parameterIndexes.isEmpty()) {
-               /* Cross-class parameter dependencies would have to be remapped through every call site. For now, only
-                * the parameter-independent result needed to establish an unconditional non-null return crosses owners. */
+            if (resolvedSummary.proven) {
+               /* Cache dependencies in the callee's descriptor coordinates. Each caller maps them to its own argument
+                * producers, so a constant argument at one call site cannot strengthen another caller's contract. */
                result = resolvedSummary;
             }
          } finally {
@@ -1381,6 +1407,30 @@ public class BytecodeAnalyzer {
                .equals(descriptor) || "(Ljava/lang/Class;[I)Ljava/lang/Object;".equals(descriptor));
    }
 
+   private static boolean isKnownNonNullDynamicFactory(final InvokeDynamicInsnNode instruction) {
+      final int returnSort = Type.getReturnType(instruction.desc).getSort();
+      if (returnSort != Type.OBJECT && returnSort != Type.ARRAY || instruction.bsm.getTag() != Opcodes.H_INVOKESTATIC)
+         return false;
+
+      final String owner = instruction.bsm.getOwner();
+      final String name = instruction.bsm.getName();
+      final String descriptor = instruction.bsm.getDesc();
+      /* The bootstrap identifies the factory; the invokedynamic name identifies its functional method. A non-null
+       * lambda object says nothing about the value returned when that functional method is invoked later. */
+      if ("java/lang/invoke/LambdaMetafactory".equals(owner))
+         return "metafactory".equals(name) && ("(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;"
+               + "Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;"
+               + "Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;").equals(descriptor) || "altMetafactory".equals(name)
+                     && ("(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;"
+                           + "Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;").equals(descriptor);
+      // Keep all dynamic-factory consumers aligned; arbitrary bootstraps may produce null even with a familiar call-site name.
+      return "java/lang/invoke/StringConcatFactory".equals(owner) && ("makeConcat".equals(name)
+            && "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;".equals(
+               descriptor) || "makeConcatWithConstants".equals(name) && ("(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;"
+                     + "Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;").equals(
+                        descriptor));
+   }
+
    private @Nullable List<ClassNode> resolveNestClasses() {
       final ClassNode nestHost;
       if (classNode.nestHostClass == null) {
@@ -1626,6 +1676,10 @@ public class BytecodeAnalyzer {
 
          final SourceValue source = super.unaryOperation(instruction, value);
          switch (instruction.getOpcode()) {
+            case Opcodes.INSTANCEOF:
+               /* Preserve the tested reference itself, not its local slot. A saved Boolean must not refine a replacement
+                * assigned to that slot later; copies retain identity and ambiguous merges discard it below. */
+               return new FlowValue(source, Set.of(), FlowNullness.NEVER_NULL, false, false, null, Set.of(), (FlowValue) value);
             case Opcodes.ANEWARRAY:
             case Opcodes.NEWARRAY:
                return createdValue(source, FlowNullness.NEVER_NULL);
@@ -1674,7 +1728,7 @@ public class BytecodeAnalyzer {
          } else {
             final InvokeDynamicInsnNode method = (InvokeDynamicInsnNode) instruction;
             returnType = Type.getReturnType(method.desc);
-            knownNonNull = isKnownNonNullMethod(method.getOpcode(), method.bsm.getOwner(), method.name, method.desc);
+            knownNonNull = isKnownNonNullDynamicFactory(method);
          }
          return createdValue(source, knownNonNull ? FlowNullness.NEVER_NULL : nullnessForType(returnType));
       }
@@ -1702,6 +1756,10 @@ public class BytecodeAnalyzer {
          final String mergedPrivateFieldKey = Objects.equals(firstFlowValue.privateThisFieldKey, secondFlowValue.privateThisFieldKey)
                ? firstFlowValue.privateThisFieldKey
                : null;
+         // A true result can refine an alias only when every incoming Boolean tested the same reference value.
+         final FlowValue mergedInstanceOfOperand = firstFlowValue.instanceOfOperand == secondFlowValue.instanceOfOperand
+               ? firstFlowValue.instanceOfOperand
+               : null;
          final Set<String> mergedRequiredFields;
          if (firstFlowValue.nullConstantPath && secondFlowValue.nullConstantPath) {
             mergedRequiredFields = new HashSet<>(firstFlowValue.requiredNonNullFieldsForNullConstantPath);
@@ -1714,22 +1772,22 @@ public class BytecodeAnalyzer {
             mergedRequiredFields = Set.of();
          }
 
-         if (mergedSize == first.size && mergedNullness == firstFlowValue.nullness
-               && mergedNullConstantPath == firstFlowValue.nullConstantPath
+         if (mergedInstanceOfOperand == firstFlowValue.instanceOfOperand && mergedSize == first.size
+               && mergedNullness == firstFlowValue.nullness && mergedNullConstantPath == firstFlowValue.nullConstantPath
                && mergedNonConstantNullPath == firstFlowValue.mayHaveNonConstantNullPath && Objects.equals(mergedPrivateFieldKey,
                   firstFlowValue.privateThisFieldKey) && mergedSources.equals(first.insns) && mergedParameterSlots.equals(
                      firstFlowValue.parameterLocalSlots) && mergedRequiredFields.equals(
                         firstFlowValue.requiredNonNullFieldsForNullConstantPath))
             return first;
-         if (mergedSize == second.size && mergedNullness == secondFlowValue.nullness
-               && mergedNullConstantPath == secondFlowValue.nullConstantPath
+         if (mergedInstanceOfOperand == secondFlowValue.instanceOfOperand && mergedSize == second.size
+               && mergedNullness == secondFlowValue.nullness && mergedNullConstantPath == secondFlowValue.nullConstantPath
                && mergedNonConstantNullPath == secondFlowValue.mayHaveNonConstantNullPath && Objects.equals(mergedPrivateFieldKey,
                   secondFlowValue.privateThisFieldKey) && mergedSources.equals(second.insns) && mergedParameterSlots.equals(
                      secondFlowValue.parameterLocalSlots) && mergedRequiredFields.equals(
                         secondFlowValue.requiredNonNullFieldsForNullConstantPath))
             return second;
          return new FlowValue(new SourceValue(mergedSize, mergedSources), mergedParameterSlots, mergedNullness, mergedNullConstantPath,
-            mergedNonConstantNullPath, mergedPrivateFieldKey, mergedRequiredFields);
+            mergedNonConstantNullPath, mergedPrivateFieldKey, mergedRequiredFields, mergedInstanceOfOperand);
       }
    }
 
@@ -1786,6 +1844,8 @@ public class BytecodeAnalyzer {
             return ((LdcInsnNode) source).cst instanceof ConstantDynamic ? null : Set.of();
          case Opcodes.INVOKESTATIC:
             return isPrimitiveWrapperValueOf((MethodInsnNode) source) ? Set.of() : null;
+         case Opcodes.INVOKEDYNAMIC:
+            return isKnownNonNullDynamicFactory((InvokeDynamicInsnNode) source) ? Set.of() : null;
          case Opcodes.GETSTATIC:
             // A field read inside <clinit> may occur before that field's assignment, even if its final value is non-null.
             return null;
@@ -1943,14 +2003,18 @@ public class BytecodeAnalyzer {
       return areAllSourcesProven(value, source -> determineNonNullSourceDependencies(source, frames, instructionIndexes));
    }
 
-   private static boolean isExactAllocationValue(final SourceValue value, final String owner, final Frame<SourceValue>[] frames,
-         final Map<AbstractInsnNode, Integer> instructionIndexes) {
-      return areAllSourcesProven(value, source -> {
-         if (source.getOpcode() == Opcodes.NEW)
-            // Equality is deliberately strict: resolving an inherited target for NEW Sub / INVOKEVIRTUAL Base is outside this proof.
-            return owner.equals(((TypeInsnNode) source).desc) ? Set.of() : null;
-         return determineForwardedSourceDependencies(source, frames, instructionIndexes);
-      });
+   private static boolean isExactAllocationValue(final SourceValue value, final String owner) {
+      /* FlowInterpreter preserves entry values through copies and joins. A surviving parameter or this value prevents
+       * an exact runtime type even when a guard proves it non-null; ordinary producer unions lose that alternative. */
+      if (!(value instanceof FlowValue) || !((FlowValue) value).parameterLocalSlots.isEmpty() || value.insns.isEmpty())
+         return false;
+      // Flow copies and casts retain the original producers, so every remaining alternative must allocate this exact owner.
+      for (final AbstractInsnNode source : value.insns) {
+         if (source.getOpcode() != Opcodes.NEW || !owner.equals(((TypeInsnNode) source).desc))
+            // NEW Sub / INVOKEVIRTUAL Base needs inherited-method resolution, which is outside this proof.
+            return false;
+      }
+      return true;
    }
 
    private static void mergeFieldState(final boolean[] states, final boolean[] reached, final Deque<Integer> pendingInstructions,
@@ -2194,21 +2258,56 @@ public class BytecodeAnalyzer {
       return determineDependencies(value, source -> {
          final DependencyExpansion expansion = determineDirectParameterExpansion(source, frames, instructionIndexes,
             referenceParameterIndexesByLocalSlot);
-         /* Cached producers still require a visit and merge from each parent. Charge the complete outgoing edge set
-          * before traversal so shared provenance cannot hide quadratic work behind a linear number of expansions.
-          * Precharging conservatively includes edges that an early failure might leave unvisited.
-          * Resolving an expansion only reads its fixed frame; failed proofs still consume the producer's own unit. */
-         final Set<AbstractInsnNode> dependencies = expansion.dependencies;
-         final long work = 1L + (dependencies == null ? 0 : dependencies.size());
-         if (parameterContext != null && !parameterContext.budget.tryConsume(work)) {
-            // An incomplete proof must not warm a reusable helper summary; independent local facts remain available.
-            parameterContext.cacheable = false;
-            /* Finish an admitted method's local proof before any helper traversal starts. Its cost still exhausts the
-             * common allowance, preventing siblings or descendants from multiplying this uninterruptible fallback work. */
-            if (!finishLocalProof)
-               return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
+         return chargeParameterExpansion(expansion, parameterContext, finishLocalProof);
+      });
+   }
+
+   private static DependencyExpansion chargeParameterExpansion(final DependencyExpansion expansion,
+         final @Nullable ParameterAnalysisContext parameterContext, final boolean finishLocalProof) {
+      /* Cached producers still require a visit and merge from each parent. Charge all outgoing edges before traversal
+       * so shared provenance cannot hide quadratic work. Failed proofs still consume the producer's own unit. */
+      final Set<AbstractInsnNode> dependencies = expansion.dependencies;
+      final long work = 1L + (dependencies == null ? 0 : dependencies.size());
+      if (parameterContext != null && !parameterContext.budget.tryConsume(work)) {
+         // An incomplete proof must not warm a reusable helper summary; independent local facts remain available.
+         parameterContext.cacheable = false;
+         /* Finish an admitted method's local proof before helper traversal. Its cost still exhausts the common allowance,
+          * preventing siblings or descendants from multiplying this uninterruptible fallback work. */
+         if (!finishLocalProof)
+            return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
+      }
+      return expansion;
+   }
+
+   @SuppressWarnings("null")
+   private static DependencySummary determineInstanceOfParameterDependencies(final SourceValue condition, final Frame<SourceValue>[] frames,
+         final Map<AbstractInsnNode, Integer> instructionIndexes, final Map<Integer, Integer> referenceParameterIndexesByLocalSlot,
+         final int parameterLocalSlotCount, final ParameterAnalysisContext parameterContext) {
+      /* Keep Boolean copies and reference operands in one memoized proof. Restarting at each INSTANCEOF would retrace
+       * shared reference aliases for every merged test; the common traversal also retains cycle and edge-work checks. */
+      return determineDependencies(condition, source -> {
+         final Integer sourceIndex = instructionIndexes.get(source);
+         final Frame<SourceValue> frame = sourceIndex == null ? null : frames[sourceIndex];
+         DependencyExpansion expansion = DependencyExpansion.terminal(DependencySummary.UNKNOWN);
+         if (frame != null) {
+            final int opcode = source.getOpcode();
+            if (opcode == Opcodes.ILOAD) {
+               final int localSlot = ((VarInsnNode) source).var;
+               /* A Boolean parameter may keep its caller-supplied true value on a path without the assignment. Producer
+                * sets omit that entry path, just as for reassigned reference parameters, so only ordinary locals qualify. */
+               if (localSlot >= parameterLocalSlotCount) {
+                  expansion = DependencyExpansion.forwarded(frame.getLocal(localSlot));
+               }
+            } else if (opcode == Opcodes.ISTORE || opcode == Opcodes.INSTANCEOF) {
+               if (frame.getStackSize() > 0) {
+                  expansion = DependencyExpansion.forwarded(frame.getStack(frame.getStackSize() - 1));
+               }
+            } else {
+               // Valid bytecode separates Boolean and reference producers; arbitrary Boolean computations still fail this resolver.
+               expansion = determineDirectParameterExpansion(source, frames, instructionIndexes, referenceParameterIndexesByLocalSlot);
+            }
          }
-         return expansion;
+         return chargeParameterExpansion(expansion, parameterContext, true);
       });
    }
 
@@ -2446,8 +2545,9 @@ public class BytecodeAnalyzer {
 
          DependencySummary testedValueDependencies = DependencySummary.UNKNOWN;
          Integer jumpTargetIndex = null;
+         // A shared jump/fall-through successor carries both outcomes and cannot establish a null-only return dependency.
          if ((opcode == Opcodes.IFNULL || opcode == Opcodes.IFNONNULL) && frames[instructionIndex] != null && frames[instructionIndex]
-            .getStackSize() > 0) {
+            .getStackSize() > 0 && hasDistinctConditionalSuccessors(instructionIndex, controlFlow)) {
             testedValueDependencies = determineDirectParameterDependencies(frames[instructionIndex].getStack(frames[instructionIndex]
                .getStackSize() - 1), frames, instructionIndexes, referenceParameterIndexesByLocalSlot);
             jumpTargetIndex = instructionIndexes.get(((JumpInsnNode) instruction).label);
@@ -2471,11 +2571,34 @@ public class BytecodeAnalyzer {
       return states;
    }
 
+   private static @Nullable SourceValue determineDereferencedValue(final AbstractInsnNode instruction, final Frame<SourceValue> frame) {
+      final int opcode = instruction.getOpcode();
+      final int distanceFromTop;
+      if (opcode == Opcodes.GETFIELD || opcode == Opcodes.ARRAYLENGTH || opcode == Opcodes.MONITORENTER || opcode == Opcodes.MONITOREXIT) {
+         distanceFromTop = 1;
+      } else if (opcode == Opcodes.PUTFIELD || opcode >= Opcodes.IALOAD && opcode <= Opcodes.SALOAD) {
+         distanceFromTop = 2;
+      } else if (opcode >= Opcodes.IASTORE && opcode <= Opcodes.SASTORE) {
+         distanceFromTop = 3;
+      } else {
+         return null;
+      }
+      /* ASM stores one entry per value, including long and double. Successful access checks the receiver or array;
+       * it does not establish that a loaded field or array element is non-null. ATHROW has no normal continuation. */
+      return frame.getStackSize() < distanceFromTop ? null : frame.getStack(frame.getStackSize() - distanceFromTop);
+   }
+
    @SuppressWarnings("null")
-   private static Map<AbstractInsnNode, DependencySummary> determineLocalParameterChecks(final AbstractInsnNode[] instructions,
-         final Frame<SourceValue>[] frames, final ControlFlowAnalyzer controlFlow, final Map<AbstractInsnNode, Integer> instructionIndexes,
-         final Map<Integer, Integer> referenceParameterIndexesByLocalSlot,
+   private static Map<AbstractInsnNode, DependencySummary> determineLocalParameterChecks(final MethodNode method,
+         final AbstractInsnNode[] instructions, final Frame<SourceValue>[] frames, final ControlFlowAnalyzer controlFlow,
+         final Map<AbstractInsnNode, Integer> instructionIndexes,
          final Set<AbstractInsnNode> instructionsProtectedByNullPointerExceptionHandler, final ParameterAnalysisContext parameterContext) {
+      final Map<Integer, Integer> referenceParameterIndexesByLocalSlot = determineReferenceParameterIndexesByLocalSlot(method);
+      int parameterLocalSlotCount = (method.access & Opcodes.ACC_STATIC) == 0 ? 1 : 0;
+      for (final Type argumentType : Type.getArgumentTypes(method.desc)) {
+         // Include primitive arguments and category-2 padding when separating saved Boolean locals from entry parameters.
+         parameterLocalSlotCount += argumentType.getSize();
+      }
       final Map<AbstractInsnNode, DependencySummary> result = new IdentityHashMap<>();
       for (int i = 0; i < instructions.length; i++) {
          final Frame<SourceValue> frame = frames[i];
@@ -2499,6 +2622,12 @@ public class BytecodeAnalyzer {
          } else if ((opcode == Opcodes.IFNULL || opcode == Opcodes.IFNONNULL) && frame.getStackSize() > 0
                && hasDistinctConditionalSuccessors(i, controlFlow)) {
             checkedValue = frame.getStack(frame.getStackSize() - 1);
+         } else if ((opcode == Opcodes.IFEQ || opcode == Opcodes.IFNE) && frame.getStackSize() > 0 && hasDistinctConditionalSuccessors(i,
+            controlFlow)) {
+            result.put(instruction, determineInstanceOfParameterDependencies(frame.getStack(frame.getStackSize() - 1), frames,
+               instructionIndexes, referenceParameterIndexesByLocalSlot, parameterLocalSlotCount, parameterContext));
+         } else if (!instructionsProtectedByNullPointerExceptionHandler.contains(instruction)) {
+            checkedValue = determineDereferencedValue(instruction, frame);
          }
          if (checkedValue != null) {
             result.put(instruction, determineDirectParameterDependencies(checkedValue, frames, instructionIndexes,
@@ -2530,7 +2659,7 @@ public class BytecodeAnalyzer {
        * descending into any helper, so its work is charged even when recursion prevents summary caching. Retaining
        * these results also preserves local facts after delegated exhaustion and avoids retracing them on CFG revisits. */
       final Map<AbstractInsnNode, DependencySummary> localChecks = parameterContext == null ? Map.of()
-            : determineLocalParameterChecks(instructions, frames, controlFlow, instructionIndexes, referenceParameterIndexesByLocalSlot,
+            : determineLocalParameterChecks(method, instructions, frames, controlFlow, instructionIndexes,
                instructionsProtectedByNullPointerExceptionHandler, parameterContext);
       reached[0] = true;
       pendingInstructions.add(0);
@@ -2542,15 +2671,15 @@ public class BytecodeAnalyzer {
          final int opcode = instruction.getOpcode();
 
          Set<Integer> normalCompletionState = incomingState;
+         final DependencySummary localCheck = localChecks.getOrDefault(instruction, DependencySummary.UNKNOWN);
+         // Branch checks apply to one edge only; direct dereferences and calls apply after normal completion.
+         if (localCheck.proven && !(instruction instanceof JumpInsnNode) && localCheck.parameterIndexes.size() == 1) {
+            normalCompletionState = addDependencies(normalCompletionState, localCheck.parameterIndexes);
+         }
          if (instruction instanceof MethodInsnNode) {
             final MethodInsnNode call = (MethodInsnNode) instruction;
             final Set<Integer> provenParameters = new HashSet<>();
             if (inferParameterContracts && !instructionsProtectedByNullPointerExceptionHandler.contains(instruction)) {
-               final DependencySummary localCheck = localChecks.getOrDefault(instruction, DependencySummary.UNKNOWN);
-               // A merged receiver or checked argument cannot establish a requirement on each of its possible producers.
-               if (localCheck.proven && localCheck.parameterIndexes.size() == 1) {
-                  provenParameters.add(localCheck.parameterIndexes.iterator().next());
-               }
                if (parameterContext != null && parameterContext.remainingDepth > 0) {
                   final SourceValue[] arguments = determineArgumentValues(call, frames[instructionIndex]);
                   final Map<Integer, Integer> callerParametersByArgument = new HashMap<>();
@@ -2594,13 +2723,14 @@ public class BytecodeAnalyzer {
                   }
                }
             }
-            normalCompletionState = addDependencies(incomingState, provenParameters);
+            normalCompletionState = addDependencies(normalCompletionState, provenParameters);
          }
 
          DependencySummary testedValueDependencies = DependencySummary.UNKNOWN;
          Integer jumpTargetIndex = null;
-         if (inferParameterContracts && (opcode == Opcodes.IFNULL || opcode == Opcodes.IFNONNULL) && frames[instructionIndex] != null
-               && frames[instructionIndex].getStackSize() > 0 && hasDistinctConditionalSuccessors(instructionIndex, controlFlow)) {
+         if (inferParameterContracts && (opcode == Opcodes.IFNULL || opcode == Opcodes.IFNONNULL || opcode == Opcodes.IFEQ
+               || opcode == Opcodes.IFNE) && frames[instructionIndex] != null && frames[instructionIndex].getStackSize() > 0
+               && hasDistinctConditionalSuccessors(instructionIndex, controlFlow)) {
             testedValueDependencies = localChecks.getOrDefault(instruction, DependencySummary.UNKNOWN);
             jumpTargetIndex = instructionIndexes.get(((JumpInsnNode) instruction).label);
          }
@@ -2608,10 +2738,11 @@ public class BytecodeAnalyzer {
          for (final int successor : controlFlow.normalSuccessors.get(instructionIndex)) {
             Set<Integer> outgoingState = normalCompletionState;
             if (jumpTargetIndex != null && testedValueDependencies.proven && testedValueDependencies.parameterIndexes.size() == 1) {
-               final boolean isNonNullEdge = successor == jumpTargetIndex ? opcode == Opcodes.IFNONNULL : opcode == Opcodes.IFNULL;
+               final boolean isNonNullEdge = successor == jumpTargetIndex ? opcode == Opcodes.IFNONNULL || opcode == Opcodes.IFNE
+                     : opcode == Opcodes.IFNULL || opcode == Opcodes.IFEQ;
                if (isNonNullEdge) {
-                  /* A null guard proves its tested parameter non-null only on the corresponding edge. Keeping this in
-                   * parameter-contract analysis prevents the new fact from broadening return-dependency inference. */
+                  /* Null guards and successful type tests prove a parameter non-null only on the corresponding edge.
+                   * A failed instanceof test is not evidence that the parameter is null. */
                   outgoingState = addDependencies(normalCompletionState, testedValueDependencies.parameterIndexes);
                }
             }
@@ -2627,7 +2758,7 @@ public class BytecodeAnalyzer {
    }
 
    @SuppressWarnings("null")
-   private MethodAnalysis analyzeMethod(final MethodNode method, final Set<AbstractInsnNode> provenNonNullLoads,
+   private MethodAnalysis analyzeMethod(final MethodNode method, final ReturnFlowFacts returnFlowFacts,
          final @Nullable ParameterAnalysisContext parameterContext) throws AnalyzerException {
       final AbstractInsnNode[] instructions = method.instructions.toArray();
       final var controlFlow = new ControlFlowAnalyzer(instructions, this::isProvenNonReturningCall);
@@ -2647,7 +2778,7 @@ public class BytecodeAnalyzer {
          frames, controlFlow, instructionIndexes, parameterIndexes) //
             : Set.of();
       return new MethodAnalysis(instructions, frames, instructionIndexes, parameterIndexes, new ParameterFlowFacts(guaranteedNullParameters,
-         guaranteedNonNullParameters, definitelyNullableParameters), provenNonNullLoads);
+         guaranteedNonNullParameters, definitelyNullableParameters), returnFlowFacts);
    }
 
    private DependencySummary determineMethodDependencySummary(final MethodNode method) {
@@ -2679,7 +2810,7 @@ public class BytecodeAnalyzer {
                 * without them and need one equivalent flow pass so their conditional non-null alternative is retained. */
                final ReturnFlowFacts returnFlowFacts = availableReturnFlowFacts == null ? determineReturnFlowFacts(method)
                      : availableReturnFlowFacts;
-               result = determineMethodDependencySummary(analyzeMethod(method, returnFlowFacts.provenNonNullLoads, null));
+               result = determineMethodDependencySummary(analyzeMethod(method, returnFlowFacts, null));
             }
          } catch (final AnalyzerException ex) {
             // Dependency analysis only adds positive evidence; unsupported bytecode must leave the result unknown.
@@ -2751,11 +2882,16 @@ public class BytecodeAnalyzer {
             final Frame<SourceValue> frame = analysis.frames[sourceIndex];
             if (frame == null || localSlot >= frame.getLocals())
                return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
-            if (analysis.provenNonNullLoads.contains(source))
+            if (analysis.returnFlowFacts.provenNonNullLoads.contains(source))
                /* The value's original producer may be unknown, as with ConcurrentHashMap.getOrDefault's get() call.
                 * At this exact load, however, the flow edge has already proven the current local non-null. */
                return DependencyExpansion.terminal(DependencySummary.NON_NULL);
             final SourceValue localValue = frame.getLocal(localSlot);
+            if (!localValue.insns.isEmpty() && analysis.returnFlowFacts.loadsRetainingEntryParameter.contains(source))
+               /* SourceInterpreter loses entry values when it unions assignment producers. A surviving entry value prevents
+                * a replacement-only dependency, even when flow analysis pruned the assignment path. Untouched structural
+                * loads have no assignment producers and retain their entry dependency below. */
+               return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
             if (localSlot == 0 && parameterIndex == null && localValue.insns.isEmpty())
                /* In valid bytecode, a source-less reference in slot zero that is not a reference parameter can only be
                 * the receiver; static locals require a producer. The JVM checks that receiver before method entry. */
@@ -2781,6 +2917,9 @@ public class BytecodeAnalyzer {
          case Opcodes.INVOKESTATIC:
          case Opcodes.INVOKEINTERFACE:
             return determineMethodCallExpansion((MethodInsnNode) source, sourceIndex, analysis);
+         case Opcodes.INVOKEDYNAMIC:
+            return DependencyExpansion.terminal(isKnownNonNullDynamicFactory((InvokeDynamicInsnNode) source) ? DependencySummary.NON_NULL
+                  : DependencySummary.UNKNOWN);
          default:
             return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
       }
@@ -2795,26 +2934,27 @@ public class BytecodeAnalyzer {
       if (!hasExactSpecialTarget(call))
          // Check each caller before lookup: the resolver caches the named body, not its dispatch eligibility.
          return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
-      final int opcode = call.getOpcode();
       final Frame<SourceValue> frame = callerAnalysis.frames[instructionIndex];
-      final SourceValue receiver = determineReceiverValue(call, frame);
-      final boolean receiverHasExactType = receiver != null && opcode == Opcodes.INVOKEVIRTUAL && isExactAllocationValue(receiver,
-         call.owner, callerAnalysis.frames, callerAnalysis.instructionIndexes);
-      if (!call.owner.equals(classNode.name))
-         return DependencyExpansion.terminal(methodSummaryResolver.determineExternalMethodSummary(call, receiverHasExactType));
-
-      final MethodNode calledMethod = findMethodNode(call.name, call.desc);
-      if (calledMethod == null)
-         return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
-      final boolean ownerIsFinal = (classNode.access & Opcodes.ACC_FINAL) != 0;
-      final boolean methodIsFinal = (calledMethod.access & Opcodes.ACC_FINAL) != 0;
-      final boolean isOverridableVirtualCall = opcode == Opcodes.INVOKEVIRTUAL && !ownerIsFinal && !methodIsFinal;
-      if (opcode == Opcodes.INVOKEINTERFACE || isOverridableVirtualCall && !receiverHasExactType)
-         /* A classpath scan cannot prove that consumers will not add another subclass. The declared body is safe only
-          * for statically bound calls, final dispatch, or an exact allocation at this call site; an override may
-          * otherwise have a different null contract. */
-         return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
-      final DependencySummary calledMethodSummary = determineMethodDependencySummary(calledMethod);
+      // Only completed flow analysis can authorize exact dispatch; missing flow facts leave this proof unavailable.
+      final boolean receiverHasExactType = callerAnalysis.returnFlowFacts.exactReceiverCalls.contains(call);
+      final DependencySummary calledMethodSummary;
+      if (call.owner.equals(classNode.name)) {
+         final int opcode = call.getOpcode();
+         final MethodNode calledMethod = findMethodNode(call.name, call.desc);
+         if (calledMethod == null)
+            return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
+         final boolean ownerIsFinal = (classNode.access & Opcodes.ACC_FINAL) != 0;
+         final boolean methodIsFinal = (calledMethod.access & Opcodes.ACC_FINAL) != 0;
+         final boolean isOverridableVirtualCall = opcode == Opcodes.INVOKEVIRTUAL && !ownerIsFinal && !methodIsFinal;
+         if (opcode == Opcodes.INVOKEINTERFACE || isOverridableVirtualCall && !receiverHasExactType)
+            /* A classpath scan cannot prove that consumers will not add another subclass. The declared body is safe only
+             * for statically bound calls, final dispatch, or an exact allocation at this call site; an override may
+             * otherwise have a different null contract. */
+            return DependencyExpansion.terminal(DependencySummary.UNKNOWN);
+         calledMethodSummary = determineMethodDependencySummary(calledMethod);
+      } else {
+         calledMethodSummary = methodSummaryResolver.determineExternalMethodSummary(call, receiverHasExactType);
+      }
       if (!calledMethodSummary.proven || calledMethodSummary.parameterIndexes.isEmpty())
          return DependencyExpansion.terminal(calledMethodSummary);
 
@@ -2997,6 +3137,8 @@ public class BytecodeAnalyzer {
          // Provenance uses entry local slots; returned dependencies use descriptor indexes, excluding this and wide-slot padding.
          final Map<Integer, Integer> referenceParameterIndexes = determineReferenceParameterIndexesByLocalSlot(methodNode);
          final Set<AbstractInsnNode> provenNonNullLoads = Collections.newSetFromMap(new IdentityHashMap<>());
+         final Set<AbstractInsnNode> loadsRetainingEntryParameter = Collections.newSetFromMap(new IdentityHashMap<>());
+         final Set<AbstractInsnNode> exactReceiverCalls = Collections.newSetFromMap(new IdentityHashMap<>());
          for (int i = 0; i < instructions.length; i++) {
             final Frame<SourceValue> frame = frames[i];
             if (frame == null) {
@@ -3014,9 +3156,24 @@ public class BytecodeAnalyzer {
                final int localSlot = ((VarInsnNode) instructions[i]).var;
                if (localSlot < frame.getLocals()) {
                   final SourceValue localValue = frame.getLocal(localSlot);
-                  if (localValue instanceof FlowValue && ((FlowValue) localValue).nullness == FlowNullness.NEVER_NULL) {
-                     provenNonNullLoads.add(instructions[i]);
+                  if (localValue instanceof FlowValue) {
+                     final FlowValue flowValue = (FlowValue) localValue;
+                     if (flowValue.nullness == FlowNullness.NEVER_NULL) {
+                        provenNonNullLoads.add(instructions[i]);
+                     } else if (referenceParameterIndexes.containsKey(localSlot) && flowValue.parameterLocalSlots.contains(localSlot)) {
+                        /* Only entry-parameter slots can retain a producer-less value beside an assignment. An ordinary
+                         * local has an initialization producer, so its merged alternatives remain traceable. Keep untouched
+                         * entry loads too: structural analysis can retain assignments from branches pruned by this flow pass. */
+                        loadsRetainingEntryParameter.add(instructions[i]);
+                     }
                   }
+               }
+            }
+            if (opcode == Opcodes.INVOKEVIRTUAL) {
+               final MethodInsnNode call = (MethodInsnNode) instructions[i];
+               final SourceValue receiver = determineReceiverValue(call, frame);
+               if (receiver != null && isExactAllocationValue(receiver, call.owner)) {
+                  exactReceiverCalls.add(call);
                }
             }
             if (opcode != Opcodes.ARETURN) {
@@ -3056,9 +3213,8 @@ public class BytecodeAnalyzer {
          final ReturnEvidence evidence = hasProvenNullReturn ? ReturnEvidence.PROVEN_NULL
                : hasReachableReturn && allReturnsAreNonNull ? ReturnEvidence.PROVEN_NON_NULL : ReturnEvidence.UNKNOWN;
          // No normal return supplies no identity evidence, even though neither all-returns check encountered a counterexample.
-         return new ReturnFlowFacts(evidence, provenNonNullLoads, hasReachableReturn && allReturnsForwardSameParameter
-               ? exactReturnedParameterIndex
-               : null);
+         return new ReturnFlowFacts(evidence, provenNonNullLoads, loadsRetainingEntryParameter, exactReceiverCalls, hasReachableReturn
+               && allReturnsForwardSameParameter ? exactReturnedParameterIndex : null);
       } catch (final AnalyzerException ex) {
          // Flow analysis contributes only positive evidence; unsupported bytecode must remain unknown.
          System.getLogger(BytecodeAnalyzer.class.getName()).log(System.Logger.Level.WARNING, "Failed to analyze control flow of "
@@ -3138,7 +3294,7 @@ public class BytecodeAnalyzer {
       }
 
       try {
-         final MethodAnalysis analysis = analyzeMethod(methodNode, Set.of(), context);
+         final MethodAnalysis analysis = analyzeMethod(methodNode, ReturnFlowFacts.UNKNOWN, context);
          @Nullable
          Set<Integer> definitelyNonNullParameters = null;
          for (int i = 0; i < analysis.instructions.length; i++) {
@@ -3254,9 +3410,10 @@ public class BytecodeAnalyzer {
          return new MethodReturnAnalysis(Nullability.DEFINITELY_NULL, Set.of());
       }
 
-      if (dependencySummary.proven && dependencySummary.hasNonNullReturn && !dependencySummary.parameterIndexes.isEmpty())
-         /* Without exact forwarding, a mixed summary can still prove both the nullable parameter-dependent path and
-          * an independent non-null alternative. This is the getOrDefault-style PolyNull contract. */
+      if (dependencySummary.proven && !dependencySummary.parameterIndexes.isEmpty() && (dependencySummary.hasNonNullReturn
+            || dependencySummary.parameterIndexes.size() == 1))
+         /* A complete single-parameter proof can establish forwarding through helpers without a local null branch.
+          * Preserve the existing boundary for competing parameters: those need null-return evidence or a non-null alternative. */
          return new MethodReturnAnalysis(Nullability.POLY_NULL, dependencySummary.parameterIndexes);
 
       return new MethodReturnAnalysis(Nullability.UNKNOWN, Set.of());
