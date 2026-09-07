@@ -2,7 +2,7 @@ class org/eclipse/ui/navigator/CommonViewer
 
 <init>
  (Ljava/lang/String;Lorg/eclipse/swt/widgets/Composite;I)V
- (Ljava/lang/String;Lorg/eclipse/swt/widgets/Composite;I)V
+ (Ljava/lang/String;L1org/eclipse/swt/widgets/Composite;I)V # @Generated(20)
 add
  (Ljava/lang/Object;[Ljava/lang/Object;)V
  (L1java/lang/Object;[1Ljava/lang/Object;)V # @Overrides(org.eclipse.jface.viewers.AbstractTreeViewer)
@@ -35,7 +35,7 @@ handleDispose
  (L1org/eclipse/swt/events/DisposeEvent;)V # @Inherited(org.eclipse.jface.viewers.ColumnViewer)
 handleDoubleSelect
  (Lorg/eclipse/swt/events/SelectionEvent;)V
- (Lorg/eclipse/swt/events/SelectionEvent;)V
+ (L1org/eclipse/swt/events/SelectionEvent;)V # @Inherited(org.eclipse.jface.viewers.AbstractTreeViewer)
 handleLabelProviderChanged
  (Lorg/eclipse/jface/viewers/LabelProviderChangedEvent;)V
  (L1org/eclipse/jface/viewers/LabelProviderChangedEvent;)V # @Inherited(org.eclipse.jface.viewers.StructuredViewer)
@@ -65,7 +65,7 @@ refresh
  (Ljava/lang/Object;Z)V
 remove
  ([Ljava/lang/Object;)V
- ([1Ljava/lang/Object;)V # @Generated(2)
+ ([1Ljava/lang/Object;)V # @Inherited(org.eclipse.jface.viewers.AbstractTreeViewer)
 removeWithoutRefresh
  ([Ljava/lang/Object;)V
  ([Ljava/lang/Object;)V

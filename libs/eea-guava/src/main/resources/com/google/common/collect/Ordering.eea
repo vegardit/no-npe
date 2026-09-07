@@ -14,7 +14,7 @@ arbitrary
  ()L1com/google/common/collect/Ordering<Ljava/lang/Object;>; # @Generated(3)
 compound
  <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+Ljava/util/Comparator<-TT;>;>;)Lcom/google/common/collect/Ordering<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Iterable<+Ljava/util/Comparator<-TT;>;>;)L1com/google/common/collect/Ordering<TT;>; # @Generated(76)
+ <T:Ljava/lang/Object;>(L1java/lang/Iterable<+Ljava/util/Comparator<-TT;>;>;)L1com/google/common/collect/Ordering<TT;>; # @Generated(24,76)
 explicit
  <T:Ljava/lang/Object;>(Ljava/util/List<TT;>;)Lcom/google/common/collect/Ordering<TT;>;
  <T:Ljava/lang/Object;>(L1java/util/List<TT;>;)L1com/google/common/collect/Ordering<TT;>; # @Generated(24,46)
@@ -26,7 +26,7 @@ from
  <T:Ljava/lang/Object;>(L1com/google/common/collect/Ordering<TT;>;)L1com/google/common/collect/Ordering<TT;>; # @Generated(24,66)
 from
  <T:Ljava/lang/Object;>(Ljava/util/Comparator<TT;>;)Lcom/google/common/collect/Ordering<TT;>;
- <T:Ljava/lang/Object;>(Ljava/util/Comparator<TT;>;)Lcom/google/common/collect/Ordering<TT;>; # @Generated(PolyNull)
+ <T:Ljava/lang/Object;>(L1java/util/Comparator<TT;>;)L1com/google/common/collect/Ordering<TT;>; # @Generated(24,52)
 natural
  <C::Ljava/lang/Comparable;>()Lcom/google/common/collect/Ordering<TC;>;
  <C::Ljava/lang/Comparable;>()L1com/google/common/collect/Ordering<TC;>; # @Generated(30)
@@ -51,7 +51,7 @@ greatestOf
  <E:TT;>(Ljava/util/Iterator<TE;>;I)Ljava/util/List<TE;>;
 immutableSortedCopy
  <E:TT;>(Ljava/lang/Iterable<TE;>;)Lcom/google/common/collect/ImmutableList<TE;>;
- <E:TT;>(Ljava/lang/Iterable<TE;>;)L1com/google/common/collect/ImmutableList<TE;>; # @Generated(35)
+ <E:TT;>(L1java/lang/Iterable<TE;>;)L1com/google/common/collect/ImmutableList<TE;>; # @Generated(9,35)
 isOrdered
  (Ljava/lang/Iterable<+TT;>;)Z
  (L1java/lang/Iterable<+TT;>;)Z # @Generated(2)
@@ -78,7 +78,7 @@ max
  <E:TT;>(TE;TE;)T1E;
 max
  <E:TT;>(TE;TE;TE;[TE;)TE;
- <E:TT;>(TE;TE;TE;[TE;)T1E;
+ <E:TT;>(TE;TE;TE;[1TE;)T1E; # @Generated(18)
 min
  <E:TT;>(Ljava/lang/Iterable<TE;>;)TE;
  <E:TT;>(L1java/lang/Iterable<TE;>;)T1E; # @Generated(9)
@@ -90,7 +90,7 @@ min
  <E:TT;>(TE;TE;)T1E;
 min
  <E:TT;>(TE;TE;TE;[TE;)TE;
- <E:TT;>(TE;TE;TE;[TE;)T1E;
+ <E:TT;>(TE;TE;TE;[1TE;)T1E; # @Generated(18)
 nullsFirst
  <S:TT;>()Lcom/google/common/collect/Ordering<TS;>;
  <S:TT;>()L1com/google/common/collect/Ordering<TS;>; # @Generated(10)
@@ -105,4 +105,4 @@ reverse
  <S:TT;>()L1com/google/common/collect/Ordering<TS;>; # @Generated(10)
 sortedCopy
  <E:TT;>(Ljava/lang/Iterable<TE;>;)Ljava/util/List<TE;>;
- <E:TT;>(Ljava/lang/Iterable<TE;>;)L1java/util/List<TE;>; # @Generated(35)
+ <E:TT;>(L1java/lang/Iterable<TE;>;)L1java/util/List<TE;>; # @Generated(9,35)

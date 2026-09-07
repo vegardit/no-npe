@@ -7,7 +7,7 @@ eventuallyClosing
  <C:Ljava/lang/Object;:Ljava/lang/AutoCloseable;>(L1com/google/common/util/concurrent/ListenableFuture<TC;>;L1java/util/concurrent/Executor;)L1com/google/common/util/concurrent/ClosingFuture<TC;>; # @Generated(50,107,139)
 from
  <V:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/ListenableFuture<TV;>;)Lcom/google/common/util/concurrent/ClosingFuture<TV;>;
- <V:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/ListenableFuture<TV;>;)L1com/google/common/util/concurrent/ClosingFuture<TV;>; # @Generated(82)
+ <V:Ljava/lang/Object;>(L1com/google/common/util/concurrent/ListenableFuture<TV;>;)L1com/google/common/util/concurrent/ClosingFuture<TV;>; # @Generated(24,82)
 submit
  <V:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/ClosingFuture$ClosingCallable<TV;>;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ClosingFuture<TV;>;
  <V:Ljava/lang/Object;>(L1com/google/common/util/concurrent/ClosingFuture$ClosingCallable<TV;>;L1java/util/concurrent/Executor;)L1com/google/common/util/concurrent/ClosingFuture<TV;>; # @Generated(24,94,126)
@@ -40,7 +40,7 @@ whenAllSucceed
  <V1:Ljava/lang/Object;V2:Ljava/lang/Object;V3:Ljava/lang/Object;V4:Ljava/lang/Object;V5:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/ClosingFuture<TV1;>;Lcom/google/common/util/concurrent/ClosingFuture<TV2;>;Lcom/google/common/util/concurrent/ClosingFuture<TV3;>;Lcom/google/common/util/concurrent/ClosingFuture<TV4;>;Lcom/google/common/util/concurrent/ClosingFuture<TV5;>;)L1com/google/common/util/concurrent/ClosingFuture$Combiner5<TV1;TV2;TV3;TV4;TV5;>; # @Generated(385)
 withoutCloser
  <V:Ljava/lang/Object;U:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/AsyncFunction<TV;TU;>;)Lcom/google/common/util/concurrent/ClosingFuture$AsyncClosingFunction<TV;TU;>;
- <V:Ljava/lang/Object;U:Ljava/lang/Object;>(L1com/google/common/util/concurrent/AsyncFunction<TV;TU;>;)L1com/google/common/util/concurrent/ClosingFuture$AsyncClosingFunction<TV;TU;>; # @Generated(44)
+ <V:Ljava/lang/Object;U:Ljava/lang/Object;>(L1com/google/common/util/concurrent/AsyncFunction<TV;TU;>;)L1com/google/common/util/concurrent/ClosingFuture$AsyncClosingFunction<TV;TU;>; # @Generated(44,102)
 
 catching
  <X:Ljava/lang/Throwable;>(Ljava/lang/Class<TX;>;Lcom/google/common/util/concurrent/ClosingFuture$ClosingFunction<-TX;+TV;>;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ClosingFuture<TV;>;
@@ -56,7 +56,7 @@ finishToValueAndCloser
  (L1com/google/common/util/concurrent/ClosingFuture$ValueAndCloserConsumer<-TV;>;Ljava/util/concurrent/Executor;)V # @Generated(2)
 statusFuture
  ()Lcom/google/common/util/concurrent/ListenableFuture<*>;
- ()Lcom/google/common/util/concurrent/ListenableFuture<*>;
+ ()L1com/google/common/util/concurrent/ListenableFuture<*>; # @Generated(3)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

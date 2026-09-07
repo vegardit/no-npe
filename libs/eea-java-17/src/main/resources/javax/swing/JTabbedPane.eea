@@ -12,10 +12,10 @@ model
 
 add
  (Ljava/awt/Component;)Ljava/awt/Component;
- (Ljava/awt/Component;)Ljava/awt/Component; # @Generated(PolyNull) @Inherited(java.awt.Container)
+ (L1java/awt/Component;)L1java/awt/Component; # @Overrides(java.awt.Container)
 add
  (Ljava/awt/Component;I)Ljava/awt/Component;
- (Ljava/awt/Component;I)Ljava/awt/Component; # @Generated(PolyNull) @Inherited(java.awt.Container)
+ (L1java/awt/Component;I)L1java/awt/Component; # @Overrides(java.awt.Container)
 add
  (Ljava/awt/Component;Ljava/lang/Object;)V
  (Ljava/awt/Component;Ljava/lang/Object;)V
@@ -108,7 +108,7 @@ paramString
  ()L1java/lang/String; # @Inherited(javax.swing.JComponent)
 remove
  (Ljava/awt/Component;)V
- (Ljava/awt/Component;)V
+ (L1java/awt/Component;)V # @Inherited(java.awt.Container)
 removeChangeListener
  (Ljavax/swing/event/ChangeListener;)V
  (L1javax/swing/event/ChangeListener;)V # @Generated

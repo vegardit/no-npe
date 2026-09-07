@@ -5,7 +5,7 @@ class org/eclipse/ui/actions/MoveFilesAndFoldersOperation
  (Lorg/eclipse/swt/widgets/Shell;)V
 copy
  ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
- ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V
+ ([1Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;Lorg/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.ui.actions.CopyFilesAndFoldersOperation)
 getDeepCheckQuestion
  (Lorg/eclipse/core/resources/IResource;)Ljava/lang/String;
  (L1org/eclipse/core/resources/IResource;)L1java/lang/String; # @Inherited(org.eclipse.ui.actions.CopyFilesAndFoldersOperation)
@@ -23,4 +23,4 @@ getUndoableCopyOrMoveOperation
  ([Lorg/eclipse/core/resources/IResource;Lorg/eclipse/core/runtime/IPath;)L1org/eclipse/ui/ide/undo/AbstractWorkspaceOperation; # @Inherited(org.eclipse.ui.actions.CopyFilesAndFoldersOperation)
 validateDestination
  (Lorg/eclipse/core/resources/IContainer;[Lorg/eclipse/core/resources/IResource;)Ljava/lang/String;
- (L1org/eclipse/core/resources/IContainer;[Lorg/eclipse/core/resources/IResource;)L0java/lang/String; # @Inherited(org.eclipse.ui.actions.CopyFilesAndFoldersOperation)
+ (L1org/eclipse/core/resources/IContainer;[1Lorg/eclipse/core/resources/IResource;)L0java/lang/String; # @Overrides(org.eclipse.ui.actions.CopyFilesAndFoldersOperation)

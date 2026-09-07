@@ -2,7 +2,7 @@ class java/nio/file/Files
 
 copy
  (Ljava/io/InputStream;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)J
- (L1java/io/InputStream;L1java/nio/file/Path;[Ljava/nio/file/CopyOption;)J # @Generated(2,23)
+ (L1java/io/InputStream;L1java/nio/file/Path;[1Ljava/nio/file/CopyOption;)J # @Generated(2,23,43)
 copy
  (Ljava/nio/file/Path;Ljava/io/OutputStream;)J
  (L1java/nio/file/Path;L1java/io/OutputStream;)J # @Generated(2,22)
@@ -44,7 +44,7 @@ deleteIfExists
  (L1java/nio/file/Path;)Z # @Generated
 exists
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
- (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
+ (Ljava/nio/file/Path;[1Ljava/nio/file/LinkOption;)Z # @Generated(22)
 find
  (Ljava/nio/file/Path;ILjava/util/function/BiPredicate<Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;>;[Ljava/nio/file/FileVisitOption;)Ljava/util/stream/Stream<Ljava/nio/file/Path;>;
  (Ljava/nio/file/Path;IL1java/util/function/BiPredicate<Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;>;[1Ljava/nio/file/FileVisitOption;)L1java/util/stream/Stream<L1java/nio/file/Path;>; # @Generated(122)
@@ -68,7 +68,7 @@ getPosixFilePermissions
  (L1java/nio/file/Path;[Ljava/nio/file/LinkOption;)L1java/util/Set<L1java/nio/file/attribute/PosixFilePermission;>; # @Generated(2)
 isDirectory
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
- (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
+ (Ljava/nio/file/Path;[1Ljava/nio/file/LinkOption;)Z # @Generated(22)
 isExecutable
  (Ljava/nio/file/Path;)Z
  (Ljava/nio/file/Path;)Z
@@ -80,7 +80,7 @@ isReadable
  (Ljava/nio/file/Path;)Z
 isRegularFile
  (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
- (Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
+ (Ljava/nio/file/Path;[1Ljava/nio/file/LinkOption;)Z # @Generated(22)
 isSameFile
  (Ljava/nio/file/Path;Ljava/nio/file/Path;)Z
  (L1java/nio/file/Path;Ljava/nio/file/Path;)Z # @Generated(2)
@@ -119,7 +119,7 @@ newByteChannel
  (L1java/nio/file/Path;Ljava/util/Set<+Ljava/nio/file/OpenOption;>;[Ljava/nio/file/attribute/FileAttribute<*>;)L1java/nio/channels/SeekableByteChannel; # @Generated(2)
 newByteChannel
  (Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/nio/channels/SeekableByteChannel;
- (L1java/nio/file/Path;[Ljava/nio/file/OpenOption;)L1java/nio/channels/SeekableByteChannel; # @Generated(2)
+ (L1java/nio/file/Path;[1Ljava/nio/file/OpenOption;)L1java/nio/channels/SeekableByteChannel; # @Generated(2,22)
 newDirectoryStream
  (Ljava/nio/file/Path;)Ljava/nio/file/DirectoryStream<Ljava/nio/file/Path;>;
  (L1java/nio/file/Path;)L1java/nio/file/DirectoryStream<L1java/nio/file/Path;>; # @Generated(2)
@@ -188,7 +188,7 @@ walk
  (L1java/nio/file/Path;[1Ljava/nio/file/FileVisitOption;)L1java/util/stream/Stream<L1java/nio/file/Path;>; # @Generated(22)
 walkFileTree
  (Ljava/nio/file/Path;Ljava/nio/file/FileVisitor<-Ljava/nio/file/Path;>;)Ljava/nio/file/Path;
- (L1java/nio/file/Path;Ljava/nio/file/FileVisitor<-L1java/nio/file/Path;>;)L1java/nio/file/Path;
+ (L1java/nio/file/Path;Ljava/nio/file/FileVisitor<-L1java/nio/file/Path;>;)L1java/nio/file/Path; # @Generated(73)
 walkFileTree
  (Ljava/nio/file/Path;Ljava/util/Set<Ljava/nio/file/FileVisitOption;>;ILjava/nio/file/FileVisitor<-Ljava/nio/file/Path;>;)Ljava/nio/file/Path;
  (L1java/nio/file/Path;L1java/util/Set<Ljava/nio/file/FileVisitOption;>;IL1java/nio/file/FileVisitor<-L1java/nio/file/Path;>;)L1java/nio/file/Path; # @Generated(22,122)
@@ -197,7 +197,7 @@ write
  (L1java/nio/file/Path;L1java/lang/Iterable<+Ljava/lang/CharSequence;>;L1java/nio/charset/Charset;[Ljava/nio/file/OpenOption;)L1java/nio/file/Path; # @Generated(2,22,69,123)
 write
  (Ljava/nio/file/Path;Ljava/lang/Iterable<+Ljava/lang/CharSequence;>;[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
- (L1java/nio/file/Path;L1java/lang/Iterable<+Ljava/lang/CharSequence;>;[Ljava/nio/file/OpenOption;)L1java/nio/file/Path; # @Generated(2,22)
+ (L1java/nio/file/Path;L1java/lang/Iterable<+Ljava/lang/CharSequence;>;[Ljava/nio/file/OpenOption;)L1java/nio/file/Path; # @Generated(2,22,97)
 write
  (Ljava/nio/file/Path;[B[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
  (L1java/nio/file/Path;[1B[Ljava/nio/file/OpenOption;)L1java/nio/file/Path; # @Generated(2,22,52)
@@ -206,4 +206,4 @@ writeString
  (L1java/nio/file/Path;L1java/lang/CharSequence;L1java/nio/charset/Charset;[Ljava/nio/file/OpenOption;)L1java/nio/file/Path; # @Generated(2,22,46,100)
 writeString
  (Ljava/nio/file/Path;Ljava/lang/CharSequence;[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
- (L1java/nio/file/Path;L1java/lang/CharSequence;[Ljava/nio/file/OpenOption;)L1java/nio/file/Path; # @Generated(2,22)
+ (L1java/nio/file/Path;L1java/lang/CharSequence;[Ljava/nio/file/OpenOption;)L1java/nio/file/Path; # @Generated(2,22,74)

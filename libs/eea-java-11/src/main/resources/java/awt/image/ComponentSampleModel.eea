@@ -21,7 +21,7 @@ createDataBuffer
  ()L1java/awt/image/DataBuffer; # @Keep Constructor validation makes the data-type switch exhaustive.
 createSubsetSampleModel
  ([I)Ljava/awt/image/SampleModel;
- ([I)L1java/awt/image/SampleModel; # @Inherited(java.awt.image.SampleModel)
+ ([1I)L1java/awt/image/SampleModel; # @Overrides(java.awt.image.SampleModel)
 equals
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
@@ -33,7 +33,7 @@ getBankIndices
  ()[1I # @Generated
 getDataElements
  (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)Ljava/lang/Object;
- (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)L1java/lang/Object; # @Generated(50)
+ (IILjava/lang/Object;Ljava/awt/image/DataBuffer;)Ljava/lang/Object;
 getPixel
  (II[ILjava/awt/image/DataBuffer;)[I
  (II[ILjava/awt/image/DataBuffer;)[1I # @Inherited(java.awt.image.SampleModel)
