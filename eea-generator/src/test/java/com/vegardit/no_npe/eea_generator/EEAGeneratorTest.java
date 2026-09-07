@@ -71,6 +71,61 @@ class EEAGeneratorTest {
       public abstract int hashCode();
    }
 
+   /** Supplies parent contracts from EEA inputs without declaration-local return evidence. */
+   @NonNullByDefault({})
+   public abstract static class ManualReturnParent {
+      public abstract Object create(Object selector, String value);
+
+      public abstract Object nullable(Object selector, String value);
+
+      public abstract Object identity(Object selector, String value);
+
+      public abstract List<String> generic(List<String> values);
+   }
+
+   /** Lets a stale generated parent return change during the same inheritance pass as the child. */
+   @NonNullByDefault({})
+   public abstract static class ManualReturnMiddle extends ManualReturnParent {
+      @Override
+      public abstract Object create(Object selector, String value);
+   }
+
+   /** Separates unknown virtual returns from direct nullable and PolyNull evidence on overrides. */
+   @NonNullByDefault({})
+   public static class ManualReturnFactoryImpl extends ManualReturnMiddle {
+      @Override
+      public Object create(final Object selector, final String value) {
+         selector.hashCode();
+         // Like UiFactoryImpl, this body delegates to an overridable helper whose stock implementation is non-null.
+         return createValue(value);
+      }
+
+      protected Object createValue(final String value) {
+         return value == null ? new Object() : value;
+      }
+
+      @Override
+      public Object nullable(final Object selector, final String value) {
+         selector.hashCode();
+         return null;
+      }
+
+      @Override
+      public Object identity(final Object selector, final String value) {
+         selector.hashCode();
+         return value;
+      }
+
+      @Override
+      public List<String> generic(final List<String> values) {
+         return createValues(values);
+      }
+
+      protected List<String> createValues(final List<String> values) {
+         return values == null ? List.of() : values;
+      }
+   }
+
    public static class HiddenFieldParent {
       public String value = "";
    }
@@ -2362,6 +2417,160 @@ class EEAGeneratorTest {
    }
 
    @Test
+   void testGeneratePreservesManualNonNullOverrideReturn(@TempDir final Path tempDir) throws IOException {
+      final String signature = "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;";
+      final var parent = new EEAFile(ManualReturnParent.class.getName());
+      parent.addMember("create", signature).annotatedSignature.value = "(Ljava/lang/Object;L0java/lang/String;)L0java/lang/Object;";
+
+      for (final var mode : EEAGenerator.GenerationMode.values()) {
+         final Path outputDir = tempDir.resolve(mode.name());
+         parent.save(outputDir, SaveOption.REPLACE_EXISTING);
+         final var child = new EEAFile(ManualReturnFactoryImpl.class.getName());
+         final var member = child.addMember("create", signature);
+         member.annotatedSignature.value = "(L1java/lang/Object;Ljava/lang/String;)L1java/lang/Object;";
+         // The return is a manual refinement; only the dereferenced selector is already generated-owned.
+         member.annotatedSignature.comment = "# @Generated(2)";
+         child.save(outputDir, SaveOption.REPLACE_EXISTING);
+
+         final var config = new EEAGenerator.Config(outputDir, EEAGeneratorTest.class.getPackageName());
+         config.inputDirs.add(outputDir);
+         config.classFilter = info -> info.getName().equals(ManualReturnFactoryImpl.class.getName()) //
+               || info.getName().equals(ManualReturnParent.class.getName());
+         config.generationMode = mode;
+         EEAGenerator.generateEEAFiles(config);
+
+         final var generated = EEAFile.load(outputDir, ManualReturnFactoryImpl.class.getName());
+         assertAnnotatedSignature(generated, "create", signature, "(L1java/lang/Object;L0java/lang/String;)L1java/lang/Object;");
+         assertAnnotatedSignatureComment(generated, "create", signature, "# @Generated(2,20) @Overrides(" + ManualReturnParent.class
+            .getName() + ")");
+         // Reload the emitted ownership as input: a bare relationship would lose the manual return on the next run.
+         assertThat(EEAGenerator.generateEEAFiles(config)).isZero();
+      }
+   }
+
+   @Test
+   void testManualNonNullOverrideReturnRequiresManualInput(@TempDir final Path tempDir) throws IOException {
+      final String signature = "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;";
+      for (final var mode : EEAGenerator.GenerationMode.values()) {
+         for (final boolean generatedReturn : new boolean[] {false, true}) {
+            final Path outputDir = tempDir.resolve(mode.name()).resolve(Boolean.toString(generatedReturn));
+            final var parent = new EEAFile(ManualReturnParent.class.getName());
+            parent.addMember("create", signature).annotatedSignature.value = "(Ljava/lang/Object;L0java/lang/String;)L0java/lang/Object;";
+            parent.save(outputDir, SaveOption.REPLACE_EXISTING);
+            final var child = new EEAFile(ManualReturnFactoryImpl.class.getName());
+            final var member = child.addMember("create", signature);
+            member.annotatedSignature.value = generatedReturn ? "(L1java/lang/Object;Ljava/lang/String;)L1java/lang/Object;"
+                  : "(L1java/lang/Object;Ljava/lang/String;)Ljava/lang/Object;";
+            member.annotatedSignature.comment = generatedReturn ? "# @Generated(2,39)" : "# @Generated(2)";
+            child.save(outputDir, SaveOption.REPLACE_EXISTING);
+
+            final var config = new EEAGenerator.Config(outputDir, EEAGeneratorTest.class.getPackageName());
+            config.inputDirs.add(outputDir);
+            config.classFilter = info -> info.getName().equals(ManualReturnFactoryImpl.class.getName()) //
+                  || info.getName().equals(ManualReturnParent.class.getName());
+            config.generationMode = mode;
+            EEAGenerator.generateEEAFiles(config);
+
+            // Full mode must replace stale generated non-null evidence; additive mode retains it with generated ownership.
+            final boolean retainGeneratedReturn = generatedReturn && mode == EEAGenerator.GenerationMode.ADDITIVE;
+            final var generated = EEAFile.load(outputDir, ManualReturnFactoryImpl.class.getName());
+            assertAnnotatedSignature(generated, "create", signature, retainGeneratedReturn
+                  ? "(L1java/lang/Object;L0java/lang/String;)L1java/lang/Object;"
+                  : "(L1java/lang/Object;L0java/lang/String;)L0java/lang/Object;");
+            assertAnnotatedSignatureComment(generated, "create", signature, "# @Overrides(" + ManualReturnParent.class.getName() + ")");
+            assertThat(EEAGenerator.generateEEAFiles(config)).isZero();
+         }
+      }
+   }
+
+   @Test
+   void testManualNonNullOverrideReturnKeepsOtherEvidenceIndependent(@TempDir final Path tempDir) throws IOException {
+      final String signature = "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;";
+      final String genericSignature = "(Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/String;>;";
+      for (final var mode : EEAGenerator.GenerationMode.values()) {
+         final Path outputDir = tempDir.resolve(mode.name());
+         final var parent = new EEAFile(ManualReturnParent.class.getName());
+         final var child = new EEAFile(ManualReturnFactoryImpl.class.getName());
+         for (final String method : List.of("nullable", "identity")) {
+            parent.addMember(method, signature).annotatedSignature.value = "(Ljava/lang/Object;L0java/lang/String;)L0java/lang/Object;";
+            final var member = child.addMember(method, signature);
+            member.annotatedSignature.value = "(L1java/lang/Object;Ljava/lang/String;)L1java/lang/Object;";
+            member.annotatedSignature.comment = "# @Generated(2)";
+         }
+         parent.addMember("generic",
+            genericSignature).annotatedSignature.value = "(Ljava/util/List<L1java/lang/String;>;)L0java/util/List<L0java/lang/String;>;";
+         child.addMember("generic",
+            genericSignature).annotatedSignature.value = "(Ljava/util/List<L0java/lang/String;>;)L1java/util/List<L1java/lang/String;>;";
+         parent.save(outputDir, SaveOption.REPLACE_EXISTING);
+         child.save(outputDir, SaveOption.REPLACE_EXISTING);
+
+         final var config = new EEAGenerator.Config(outputDir, EEAGeneratorTest.class.getPackageName());
+         config.inputDirs.add(outputDir);
+         config.classFilter = info -> info.getName().equals(ManualReturnFactoryImpl.class.getName()) //
+               || info.getName().equals(ManualReturnParent.class.getName());
+         config.generationMode = mode;
+         EEAGenerator.generateEEAFiles(config);
+
+         final boolean full = mode == EEAGenerator.GenerationMode.FULL;
+         final var generated = EEAFile.load(outputDir, ManualReturnFactoryImpl.class.getName());
+         // A manual return does not defeat direct nullable or PolyNull evidence in full mode.
+         assertAnnotatedSignature(generated, "nullable", signature, full ? "(L1java/lang/Object;L0java/lang/String;)L0java/lang/Object;"
+               : "(L1java/lang/Object;L0java/lang/String;)L1java/lang/Object;");
+         assertAnnotatedSignatureComment(generated, "nullable", signature, (full ? "# " : "# @Generated(2,20) ") + "@Overrides("
+               + ManualReturnParent.class.getName() + ")");
+         assertAnnotatedSignature(generated, "identity", signature, full ? "(L1java/lang/Object;L0java/lang/String;)Ljava/lang/Object;"
+               : "(L1java/lang/Object;L0java/lang/String;)L1java/lang/Object;");
+         assertAnnotatedSignatureComment(generated, "identity", signature, (full ? "# @Generated(2,20,PolyNull) " : "# @Generated(2,20) ")
+               + "@Overrides(" + ManualReturnParent.class.getName() + ")");
+         // Only the top-level return refines the parent. Nested parameter and return markers still use normal positional precedence.
+         assertAnnotatedSignature(generated, "generic", genericSignature, full
+               ? "(Ljava/util/List<L1java/lang/String;>;)L1java/util/List<L0java/lang/String;>;"
+               : "(Ljava/util/List<L0java/lang/String;>;)L1java/util/List<L1java/lang/String;>;");
+         assertAnnotatedSignatureComment(generated, "generic", genericSignature, full ? "# @Generated(18,55) @Overrides("
+               + ManualReturnParent.class.getName() + ")" : "");
+         assertThat(EEAGenerator.generateEEAFiles(config)).isZero();
+      }
+   }
+
+   @Test
+   void testManualNonNullOverrideReturnSurvivesParentReconciliation(@TempDir final Path tempDir) throws IOException {
+      final String signature = "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;";
+      for (final boolean staleParent : new boolean[] {false, true}) {
+         final Path outputDir = tempDir.resolve(Boolean.toString(staleParent));
+         final var parent = new EEAFile(ManualReturnParent.class.getName());
+         parent.addMember("create", signature).annotatedSignature.value = "(Ljava/lang/Object;L0java/lang/String;)L0java/lang/Object;";
+         parent.save(outputDir, SaveOption.REPLACE_EXISTING);
+         final var middle = new EEAFile(ManualReturnMiddle.class.getName());
+         final var middleMember = middle.addMember("create", signature);
+         middleMember.annotatedSignature.value = staleParent ? "(Ljava/lang/Object;L0java/lang/String;)L1java/lang/Object;"
+               : "(Ljava/lang/Object;L0java/lang/String;)L0java/lang/Object;";
+         // A child visited before this stale parent can temporarily agree with it and acquire generated ownership.
+         middleMember.annotatedSignature.comment = "# @Inherited(" + ManualReturnParent.class.getName() + ")";
+         middle.save(outputDir, SaveOption.REPLACE_EXISTING);
+         final var child = new EEAFile(ManualReturnFactoryImpl.class.getName());
+         final var member = child.addMember("create", signature);
+         member.annotatedSignature.value = "(L1java/lang/Object;Ljava/lang/String;)L1java/lang/Object;";
+         member.annotatedSignature.comment = "# @Generated(2)";
+         child.save(outputDir, SaveOption.REPLACE_EXISTING);
+
+         final var config = new EEAGenerator.Config(outputDir, EEAGeneratorTest.class.getPackageName());
+         config.inputDirs.add(outputDir);
+         final Set<String> classes = Set.of(ManualReturnParent.class.getName(), ManualReturnMiddle.class.getName(),
+            ManualReturnFactoryImpl.class.getName());
+         config.classFilter = info -> classes.contains(info.getName());
+         EEAGenerator.generateEEAFiles(config);
+
+         assertAnnotatedSignature(EEAFile.load(outputDir, ManualReturnMiddle.class.getName()), "create", signature,
+            "(Ljava/lang/Object;L0java/lang/String;)L0java/lang/Object;");
+         final var generated = EEAFile.load(outputDir, ManualReturnFactoryImpl.class.getName());
+         assertAnnotatedSignature(generated, "create", signature, "(L1java/lang/Object;L0java/lang/String;)L1java/lang/Object;");
+         assertAnnotatedSignatureComment(generated, "create", signature, "# @Generated(2,20) @Overrides(" + ManualReturnMiddle.class
+            .getName() + ")");
+         assertThat(EEAGenerator.generateEEAFiles(config)).isZero();
+      }
+   }
+
+   @Test
    void testRelationshipOwnershipDoesNotClaimIndependentChildEvidence(@TempDir final Path tempDir) throws IOException {
       final Path inputDir = tempDir.resolve("input");
       final Path outputDir = tempDir.resolve("output");
@@ -2685,16 +2894,11 @@ class EEAGeneratorTest {
             "# @Overrides(java.lang.Object) Object explanation");
          assertAnnotatedSignature(explicitChild, "equals", "(Ljava/lang/Object;)Z", "(L1java/lang/Object;)Z");
 
-         // A value actually read from disk is preserved by additive mode; a provisional template default is not.
-         final boolean additive = mode == EEAGenerator.GenerationMode.ADDITIVE;
+         // A nullable Object contract permits this independently maintained non-null override in both modes.
          final var generatedChild = EEAFile.load(config.outputDir, ObjectContractOverride.class.getName());
-         assertAnnotatedSignature(generatedChild, "toString", "()Ljava/lang/String;", additive //
-               ? "()L1java/lang/String;" //
-               : "()L0java/lang/String;");
-         // A bare relationship would claim generated ownership of the manual value retained by additive mode.
-         assertAnnotatedSignatureComment(generatedChild, "toString", "()Ljava/lang/String;", additive //
-               ? "# child explanation" //
-               : "# @Inherited(java.lang.Object) child explanation");
+         assertAnnotatedSignature(generatedChild, "toString", "()Ljava/lang/String;", "()L1java/lang/String;");
+         // No generated positions remain, so even a bare relationship would incorrectly claim the manual return.
+         assertAnnotatedSignatureComment(generatedChild, "toString", "()Ljava/lang/String;", "# child explanation");
       }
    }
 

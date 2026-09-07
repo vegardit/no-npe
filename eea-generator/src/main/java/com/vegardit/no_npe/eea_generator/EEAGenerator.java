@@ -991,7 +991,7 @@ public abstract class EEAGenerator {
 
       final var eeaFiles = new HashMap<ClassInfo, EEAFile>();
       final var generatedMemberEvidence = new HashMap<ClassMember, GeneratedMemberEvidence>();
-      // Additive protection belongs to input contracts, not to provisional values produced by earlier inheritance passes.
+      // Manual return refinements and additive protection belong to inputs, not to provisional inheritance results.
       final var storedInputContracts = new HashMap<ClassMember, ValueWithComment>();
       // All packages and inheritance in this invocation share its working Object contract; other invocations cannot see it.
       final EEAFile objectTemplate = createObjectTemplate();
@@ -1045,10 +1045,8 @@ public abstract class EEAGenerator {
                final ValueWithComment layeredInput = layeredInputSignatures.get(member);
                if (layeredInput != null) {
                   member.annotatedSignature = layeredInput;
-                  if (cfg.generationMode == GenerationMode.ADDITIVE) {
-                     // Snapshot before generated metadata changes the working signature; full generation needs no extra retained copy.
-                     storedInputContracts.put(member, layeredInput.clone());
-                  }
+                  // Full generation also needs original ownership: a provisional parent can temporarily claim a matching manual return.
+                  storedInputContracts.put(member, layeredInput.clone());
                } else {
                   final GeneratedMemberEvidence generatedEvidence = generatedMemberEvidence.get(member);
                   if (generatedEvidence != null) {
@@ -1272,7 +1270,7 @@ public abstract class EEAGenerator {
                      ? new ValueWithComment(member.originalSignature.value) //
                      : generatedEvidence.annotatedSignature;
                final ReconciledContract currentRelationshipContract = createCurrentRelationshipContract(member.originalSignature.value,
-                  inheritableAnnotatedSignature, currentLocalSignature);
+                  inheritableAnnotatedSignature, currentLocalSignature, inputContract);
                final ReconciledContract reconciledContract = reconcileGeneratedContract(member, currentRelationshipContract,
                   cfg.generationMode, inputContract, generatedEvidence == null //
                         ? null //
@@ -1440,7 +1438,8 @@ public abstract class EEAGenerator {
    }
 
    private static ReconciledContract createCurrentRelationshipContract(final String originalSignature,
-         final ValueWithComment inheritableAnnotatedSignature, final ValueWithComment generatedLocalSignature) {
+         final ValueWithComment inheritableAnnotatedSignature, final ValueWithComment generatedLocalSignature,
+         final @Nullable ValueWithComment inputContract) {
       final char[] relationshipAnnotations = extractNullAnnotations(originalSignature, inheritableAnnotatedSignature.value);
       // Ownership is relative to the child: evidence copied from a parent is generator-managed in the child even
       // when the parent stores that evidence as manual.
@@ -1461,6 +1460,17 @@ public abstract class EEAGenerator {
           * parent return marker while leaving the parent's independent parameter and nested-type evidence intact.
           */
          relationshipAnnotations[returnPosition] = 0;
+         relationshipOwnership.positions.clear(returnPosition);
+      } else if (returnPosition >= 0 && relationshipAnnotations[returnPosition] == '0' && localAnnotations[returnPosition] == 0
+            && inputContract != null && !EEAFile.hasPolyNullContractMarker(inputContract.comment) && extractNullAnnotations(
+               originalSignature, inputContract.value)[returnPosition] == '1' && !readGeneratedOwnership(originalSignature,
+                  inputContract).positions.get(returnPosition)) {
+         /* A nullable parent permits a stronger manual return on its override. This does not apply to parameters or
+          * nested types, and local concrete or PolyNull evidence still follows the normal reconciliation rules.
+          * A stored PolyNull also owns the return meaning; a concrete marker beside it is not an independent guarantee.
+          * Restore the input's manual ownership even if an earlier pass claimed its value through a provisional parent;
+          * merely omitting the nullable evidence would make the result depend on inheritance traversal order. */
+         relationshipAnnotations[returnPosition] = '1';
          relationshipOwnership.positions.clear(returnPosition);
       }
       relationshipOwnership.polyNull = hasLocalPolyNull;

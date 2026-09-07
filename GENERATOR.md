@@ -433,7 +433,7 @@ precedence.
 ## Generator update rules
 
 `generate` reconciles each raw-signature position independently.
-Current evidence wins at its exact position.
+After the inheritance refinements below, current evidence wins at its exact position.
 Current silence withdraws only evidence recorded as generated-owned; manual evidence survives.
 
 `generate-additive` accepts compatible additions and matching evidence but never removes or changes a stored nullness value.
@@ -491,8 +491,17 @@ top-level return marker:
 In every row, compatible parameter, component, nested-type, and other independent positions still follow the positional
 rules above.
 
-Inheritance is evaluated against the current parent-plus-local contract and then reconciled by the same positional and
-PolyNull rules:
+Inheritance combines the current parent and local evidence before applying the positional and PolyNull rules above.
+A nullable parent return permits an override with a stronger, manually maintained non-null return.
+When the override's own analysis supplies no return evidence, both generation modes preserve that top-level return as manual.
+The generator uses the original input ownership, so provisional inheritance passes cannot change whether the return qualifies.
+
+This refinement does not protect generated-owned returns from replacement during `generate`.
+Local concrete or PolyNull return evidence still follows the normal reconciliation rules.
+Parameter, array-component, and generic-argument positions also keep their normal positional precedence.
+`@Keep` is not needed solely to retain this compatible manual return.
+
+Relationship selection and refresh follow these rules:
 
 | Current relationship state | Result |
 |-|-|
