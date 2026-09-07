@@ -1,8 +1,11 @@
-class org/eclipse/jdt/ui/wizards/NewClassWizardPage
+class org/eclipse/jdt/ui/wizards/NewCompactWizardPage
 
 createControl
  (Lorg/eclipse/swt/widgets/Composite;)V
  (L1org/eclipse/swt/widgets/Composite;)V # @Inherited(org.eclipse.jface.dialogs.IDialogPage)
+createMainMethod
+ (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;)Lorg/eclipse/jdt/core/IMethod;
+ (L0org/eclipse/jdt/core/IType;Lorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;)L0org/eclipse/jdt/core/IMethod; # @Inherited(org.eclipse.jdt.ui.wizards.NewTypeWizardPage)
 createTypeMembers
  (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;Lorg/eclipse/core/runtime/IProgressMonitor;)V
  (Lorg/eclipse/jdt/core/IType;Lorg/eclipse/jdt/ui/wizards/NewTypeWizardPage$ImportsManager;Lorg/eclipse/core/runtime/IProgressMonitor;)V
@@ -12,3 +15,6 @@ handleFieldChanged
 init
  (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
  (Lorg/eclipse/jface/viewers/IStructuredSelection;)V
+initTypePage
+ (Lorg/eclipse/jdt/core/IJavaElement;)V
+ (Lorg/eclipse/jdt/core/IJavaElement;)V
