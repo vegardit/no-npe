@@ -434,6 +434,78 @@ class EEAGeneratorTest {
       }
    }
 
+   /** Keeps identical forwarding bodies separate so annotations and stored ownership can vary without helper-call evidence. */
+   @NonNullByDefault({})
+   public static final class ExactIdentityReturn {
+      public static Object identity(final Object value) {
+         return value;
+      }
+
+      @SuppressWarnings("unused")
+      public Object withUnrelated(final long wide, final Object value, final Object unrelated) {
+         return value;
+      }
+
+      public static Object kept(final Object value) {
+         return value;
+      }
+
+      public static Object imported(final Object value) {
+         return value;
+      }
+
+      public static Object conflict(final Object value) {
+         return value;
+      }
+
+      public static Object storedPoly(final Object value) {
+         return value;
+      }
+
+      @Nullable
+      public static Object nullableReturn(final Object value) {
+         return value;
+      }
+
+      @NonNull
+      public static Object nonNullReturn(final Object value) {
+         return value;
+      }
+
+      public static Object nonNullInput(final @NonNull Object value) {
+         return value;
+      }
+   }
+
+   /** Supplies parent contracts only through EEA inputs, after the child's initial local inference. */
+   @NonNullByDefault({})
+   public interface InheritedIdentityParent {
+      Object fresh(Object value, Object unrelated);
+
+      Object partial(Object value, Object unrelated);
+
+      Object storedPoly(Object value, Object unrelated);
+   }
+
+   /** Distinguishes provisional forwarding evidence from stored child contracts during inheritance. */
+   @NonNullByDefault({})
+   public static final class InheritedIdentityChild implements InheritedIdentityParent {
+      @Override
+      public Object fresh(final Object value, final Object unrelated) {
+         return value;
+      }
+
+      @Override
+      public Object partial(final Object value, final Object unrelated) {
+         return value;
+      }
+
+      @Override
+      public Object storedPoly(final Object value, final Object unrelated) {
+         return value;
+      }
+   }
+
    @NonNullByDefault({})
    public abstract static class PolyNullUnknownReturn {
       public abstract Object generatedUnknown(Object value);
@@ -1522,6 +1594,118 @@ class EEAGeneratorTest {
    }
 
    @Test
+   void testGenerateExactIdentityReturnContracts(@TempDir final Path tempDir) throws IOException {
+      final String signature = "(Ljava/lang/Object;)Ljava/lang/Object;";
+      final String wideSignature = "(JLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;";
+      final var computed = EEAGenerator.computeEEAFiles(EEAGeneratorTest.class.getPackageName(), classInfo -> classInfo.getName().equals(
+         ExactIdentityReturn.class.getName())).values().iterator().next();
+      assertAnnotatedSignature(computed, "identity", signature, signature);
+      assertAnnotatedSignatureComment(computed, "identity", signature, "# @Generated(PolyNull)");
+      // Explicit result annotations retain precedence over exact bytecode identity.
+      assertAnnotatedSignature(computed, "nullableReturn", signature, "(Ljava/lang/Object;)L0java/lang/Object;");
+      assertAnnotatedSignature(computed, "nonNullReturn", signature, "(Ljava/lang/Object;)L1java/lang/Object;");
+
+      final Path inputDir = tempDir.resolve("input");
+      final Path upstreamDir = tempDir.resolve("upstream");
+      final var stored = new EEAFile(ExactIdentityReturn.class.getName());
+      final var unrelated = stored.addMember("withUnrelated", wideSignature);
+      unrelated.annotatedSignature.value = "(JL1java/lang/Object;L0java/lang/Object;)Ljava/lang/Object;";
+      final var kept = stored.addMember("kept", signature);
+      kept.annotatedSignature.value = "(L1java/lang/Object;)L0java/lang/Object;";
+      kept.annotatedSignature.comment = "# @Keep";
+      final var conflict = stored.addMember("conflict", signature);
+      conflict.annotatedSignature.value = "(Ljava/lang/Object;)L0java/lang/Object;";
+      final var storedPoly = stored.addMember("storedPoly", signature);
+      storedPoly.annotatedSignature.value = "(L1java/lang/Object;)Ljava/lang/Object;";
+      storedPoly.annotatedSignature.comment = "# @Generated(PolyNull)";
+      stored.save(inputDir, SaveOption.REPLACE_EXISTING);
+
+      final var upstream = new EEAFile(ExactIdentityReturn.class.getName());
+      final var imported = upstream.addMember("imported", signature);
+      imported.annotatedSignature.value = kept.annotatedSignature.value;
+      imported.annotatedSignature.comment = "# @Keep";
+      upstream.save(upstreamDir, SaveOption.REPLACE_EXISTING);
+
+      for (final var mode : EEAGenerator.GenerationMode.values()) {
+         final Path outputDir = tempDir.resolve(mode.name());
+         final var config = new EEAGenerator.Config(outputDir, EEAGeneratorTest.class.getPackageName());
+         config.classFilter = classInfo -> classInfo.getName().equals(ExactIdentityReturn.class.getName());
+         config.generationMode = mode;
+         config.inputDirs.add(inputDir);
+         config.inputDirs.add(upstreamDir);
+         EEAGenerator.generateEEAFiles(config);
+         final var generated = EEAFile.load(outputDir, ExactIdentityReturn.class.getName());
+         assertAnnotatedSignature(generated, "identity", signature, signature);
+         assertAnnotatedSignatureComment(generated, "identity", signature, "# @Generated(PolyNull)");
+         // Positional ownership is recorded when the computed annotation evidence is reconciled for generation.
+         assertAnnotatedSignatureComment(generated, "nullableReturn", signature, "# @Generated(21)");
+         assertAnnotatedSignatureComment(generated, "nonNullReturn", signature, "# @Generated(21)");
+         // Reconciliation uses the forwarded input only, after mapping past this and the wide primitive parameter.
+         assertAnnotatedSignature(generated, "withUnrelated", wideSignature,
+            "(JL1java/lang/Object;L0java/lang/Object;)L1java/lang/Object;");
+         assertAnnotatedSignatureComment(generated, "withUnrelated", wideSignature, "# @Generated(40)");
+         assertAnnotatedSignature(generated, "nonNullInput", signature, "(L1java/lang/Object;)L1java/lang/Object;");
+         assertAnnotatedSignatureComment(generated, "nonNullInput", signature, "# @Generated(2,21)");
+         assertAnnotatedSignature(generated, "kept", signature, kept.annotatedSignature.value);
+         assertAnnotatedSignatureComment(generated, "kept", signature, "# @Keep");
+         assertAnnotatedSignature(generated, "imported", signature, imported.annotatedSignature.value);
+         assertAnnotatedSignatureComment(generated, "imported", signature, "# @Imported");
+         // New identity evidence follows the same full/additive conflict policy as other generated PolyNull evidence.
+         final boolean full = mode == EEAGenerator.GenerationMode.FULL;
+         assertAnnotatedSignature(generated, "conflict", signature, full ? signature : conflict.annotatedSignature.value);
+         assertAnnotatedSignatureComment(generated, "conflict", signature, full ? "# @Generated(PolyNull)" : "");
+         // Unlike fresh evidence, a real input PolyNull contract remains protected from refinement in additive mode.
+         assertAnnotatedSignature(generated, "storedPoly", signature, full ? "(L1java/lang/Object;)L1java/lang/Object;"
+               : storedPoly.annotatedSignature.value);
+         assertAnnotatedSignatureComment(generated, "storedPoly", signature, full ? "# @Generated(21)" : "# @Generated(PolyNull)");
+         config.inputDirs.set(0, outputDir);
+         assertThat(EEAGenerator.generateEEAFiles(config)).isZero();
+      }
+   }
+
+   @Test
+   void testGenerateRefinesFreshPolyNullAfterInheritance(@TempDir final Path tempDir) throws IOException {
+      final String signature = "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;";
+      final String nonNullSignature = "(L1java/lang/Object;Ljava/lang/Object;)L1java/lang/Object;";
+      final Path input = tempDir.resolve("input");
+      final var parent = new EEAFile(InheritedIdentityParent.class.getName());
+      for (final String method : List.of("fresh", "partial", "storedPoly")) {
+         parent.addMember(method, signature).annotatedSignature.value = nonNullSignature;
+      }
+      parent.save(input, SaveOption.REPLACE_EXISTING);
+      final var child = new EEAFile(InheritedIdentityChild.class.getName());
+      // A stored unrelated position must not turn this run's new PolyNull into a stored PolyNull contract.
+      child.addMember("partial", signature).annotatedSignature.value = "(Ljava/lang/Object;L0java/lang/Object;)Ljava/lang/Object;";
+      child.addMember("storedPoly", signature).annotatedSignature.comment = "# @Generated(PolyNull)";
+      child.save(input, SaveOption.REPLACE_EXISTING);
+
+      for (final var mode : EEAGenerator.GenerationMode.values()) {
+         final Path output = tempDir.resolve(mode.name());
+         final var config = new EEAGenerator.Config(output, EEAGeneratorTest.class.getPackageName());
+         config.classFilter = info -> info.getName().equals(InheritedIdentityChild.class.getName());
+         config.generationMode = mode;
+         config.inputDirs.add(input);
+         EEAGenerator.generateEEAFiles(config);
+         final var generated = EEAFile.load(output, InheritedIdentityChild.class.getName());
+         // Only the later inheritance pass supplies the dependent parameter's non-null contract.
+         assertAnnotatedSignature(generated, "fresh", signature, nonNullSignature);
+         assertAnnotatedSignature(generated, "partial", signature, "(L1java/lang/Object;L0java/lang/Object;)L1java/lang/Object;");
+         final boolean full = mode == EEAGenerator.GenerationMode.FULL;
+         assertAnnotatedSignature(generated, "storedPoly", signature, full ? nonNullSignature
+               : "(L1java/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
+         for (final String method : List.of("fresh", "partial", "storedPoly")) {
+            final var member = generated.findMatchingClassMember(method, signature);
+            assertThat(member).isNotNull();
+            assert member != null;
+            assertThat(member.hasPolyNullMarker()).as(method + " in " + mode).isEqualTo(!full && "storedPoly".equals(method));
+         }
+         // Keep the parent available while the completed child becomes the next run's actual stored input.
+         config.inputDirs.add(0, output);
+         assertThat(EEAGenerator.generateEEAFiles(config)).isZero();
+      }
+   }
+
+   @Test
    void testGenerateReconcilesPolyNullReturnsAndPreservesIndependentAnnotations(@TempDir final Path tempDir) throws IOException {
       final Path inputDir = tempDir.resolve("input");
       final Path outputDir = tempDir.resolve("output");
@@ -2398,8 +2582,9 @@ class EEAGeneratorTest {
       final var generatedGenericChildMethod = generatedChildEEAFile.findMatchingClassMember("merge", genericMethodSignature);
       assertThat(generatedGenericChildMethod).isNotNull();
       assert generatedGenericChildMethod != null;
+      // Exact forwarding under the child's non-null parameter contract narrows the return; nested parent contracts still apply.
       assertThat(generatedGenericChildMethod.annotatedSignature.value).isEqualTo(
-         "(L1java/util/List<L0java/lang/String;>;)L0java/util/List<L1java/lang/String;>;");
+         "(L1java/util/List<L0java/lang/String;>;)L1java/util/List<L1java/lang/String;>;");
       assertThat(generatedGenericChildMethod.annotatedSignature.comment).isEqualTo("# @Overrides(" + ExplicitParameterParent.class.getName()
             + ")");
 

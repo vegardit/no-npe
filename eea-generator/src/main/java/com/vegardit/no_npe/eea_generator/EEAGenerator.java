@@ -991,6 +991,8 @@ public abstract class EEAGenerator {
 
       final var eeaFiles = new HashMap<ClassInfo, EEAFile>();
       final var generatedMemberEvidence = new HashMap<ClassMember, GeneratedMemberEvidence>();
+      // Additive protection belongs to input contracts, not to provisional values produced by earlier inheritance passes.
+      final var storedInputContracts = new HashMap<ClassMember, ValueWithComment>();
       // All packages and inheritance in this invocation share its working Object contract; other invocations cannot see it.
       final EEAFile objectTemplate = createObjectTemplate();
       final List<Path> inputDirs = getEffectiveInputDirs(cfg);
@@ -1043,6 +1045,10 @@ public abstract class EEAGenerator {
                final ValueWithComment layeredInput = layeredInputSignatures.get(member);
                if (layeredInput != null) {
                   member.annotatedSignature = layeredInput;
+                  if (cfg.generationMode == GenerationMode.ADDITIVE) {
+                     // Snapshot before generated metadata changes the working signature; full generation needs no extra retained copy.
+                     storedInputContracts.put(member, layeredInput.clone());
+                  }
                } else {
                   final GeneratedMemberEvidence generatedEvidence = generatedMemberEvidence.get(member);
                   if (generatedEvidence != null) {
@@ -1060,14 +1066,11 @@ public abstract class EEAGenerator {
 
                final boolean hasRelationshipMarker = getRelationshipParent(member.annotatedSignature.comment) != null;
                if (!hasRelationshipMarker) {
-                  // Relationship-owned contracts are deferred until the current parent EEA is known. Resetting
-                  // them here
-                  // would discard the parent identity needed to distinguish an unavailable EEA from an empty
-                  // contract.
+                  // Relationship-owned contracts are deferred until the current parent EEA is known. Resetting them here
+                  // would discard the parent identity needed to distinguish an unavailable EEA from an empty contract.
                   // Both generation modes may own other unprotected local contracts; additive mode decides below
-                  // whether the
-                  // proposed contract retains all stored evidence.
-                  resetGeneratedAnnotatedSignature(member, generatedEvidence, false, cfg.generationMode);
+                  // whether the proposed contract retains all stored evidence.
+                  resetGeneratedAnnotatedSignature(member, generatedEvidence, false, cfg.generationMode, storedInputContracts.get(member));
                }
             });
          }
@@ -1228,6 +1231,7 @@ public abstract class EEAGenerator {
                   return;
 
                final GeneratedMemberEvidence generatedEvidence = generatedMemberEvidence.get(member);
+               final ValueWithComment inputContract = storedInputContracts.get(member);
                final boolean hasGeneratedRelationshipMarker = previousRelationshipParent != null;
                final boolean canDiscardStoredRelationship = !previousRelationshipParentIsAncestor //
                      || previousRelationshipParentEEAAvailable;
@@ -1246,7 +1250,7 @@ public abstract class EEAGenerator {
                   // back to current local inference instead of retaining annotations from a formerly selected
                   // parent.
                   if (hasGeneratedRelationshipMarker && canDiscardStoredRelationship && generatedEvidence != null //
-                        && resetGeneratedAnnotatedSignature(member, generatedEvidence, true, cfg.generationMode)) {
+                        && resetGeneratedAnnotatedSignature(member, generatedEvidence, true, cfg.generationMode, inputContract)) {
                      recomputeInheritance.set(true);
                   }
                   return;
@@ -1257,7 +1261,7 @@ public abstract class EEAGenerator {
                   // contract. Preserve the stored relationship only in the former case to avoid destructive
                   // guesses.
                   if (hasGeneratedRelationshipMarker && canDiscardStoredRelationship && generatedEvidence != null //
-                        && resetGeneratedAnnotatedSignature(member, generatedEvidence, true, cfg.generationMode)) {
+                        && resetGeneratedAnnotatedSignature(member, generatedEvidence, true, cfg.generationMode, inputContract)) {
                      recomputeInheritance.set(true);
                   }
                   return;
@@ -1269,8 +1273,8 @@ public abstract class EEAGenerator {
                      : generatedEvidence.annotatedSignature;
                final ReconciledContract currentRelationshipContract = createCurrentRelationshipContract(member.originalSignature.value,
                   inheritableAnnotatedSignature, currentLocalSignature);
-               final ReconciledContract reconciledContract = reconcileContract(member.originalSignature.value, member.annotatedSignature,
-                  currentRelationshipContract, cfg.generationMode, generatedEvidence == null //
+               final ReconciledContract reconciledContract = reconcileGeneratedContract(member, currentRelationshipContract,
+                  cfg.generationMode, inputContract, generatedEvidence == null //
                         ? null //
                         : generatedEvidence.polyNullDependencyPositions);
                if (inheritedFrom == OBJECT_CLASS_INFO && currentLocalSignature.comment.isEmpty()) {
@@ -1289,7 +1293,7 @@ public abstract class EEAGenerator {
                      .getName());
                setGeneratedOwnershipMarker(member.originalSignature.value, reconciledContract.annotatedSignature,
                   reconciledContract.ownership);
-               if (applyGeneratedAnnotatedSignature(member, reconciledContract.annotatedSignature, cfg.generationMode)) {
+               if (applyGeneratedAnnotatedSignature(member, reconciledContract.annotatedSignature, cfg.generationMode, inputContract)) {
                   recomputeInheritance.set(true);
                }
             });
@@ -1313,18 +1317,32 @@ public abstract class EEAGenerator {
     * @return true if executing this method changes the value or comment of the target's annotated signature
     */
    private static boolean resetGeneratedAnnotatedSignature(final ClassMember target, final GeneratedMemberEvidence generatedEvidence,
-         final boolean discardStoredRelationship, final GenerationMode generationMode) {
+         final boolean discardStoredRelationship, final GenerationMode generationMode, final @Nullable ValueWithComment inputContract) {
       final var currentContract = new ReconciledContract(generatedEvidence.annotatedSignature, createGeneratedOwnership(
          target.originalSignature.value, generatedEvidence.annotatedSignature));
-      final ReconciledContract reconciledContract = reconcileContract(target.originalSignature.value, target.annotatedSignature,
-         currentContract, generationMode, generatedEvidence.polyNullDependencyPositions);
+      final ReconciledContract reconciledContract = reconcileGeneratedContract(target, currentContract, generationMode, inputContract,
+         generatedEvidence.polyNullDependencyPositions);
       if (discardStoredRelationship) {
          // Positional evidence can remain useful after its old parent disappears, but the relationship itself
          // cannot.
          removeRelationshipMarker(reconciledContract.annotatedSignature);
       }
       setGeneratedOwnershipMarker(target.originalSignature.value, reconciledContract.annotatedSignature, reconciledContract.ownership);
-      return applyGeneratedAnnotatedSignature(target, reconciledContract.annotatedSignature, generationMode);
+      return applyGeneratedAnnotatedSignature(target, reconciledContract.annotatedSignature, generationMode, inputContract);
+   }
+
+   private static ReconciledContract reconcileGeneratedContract(final ClassMember target, final ReconciledContract currentContract,
+         final GenerationMode generationMode, final @Nullable ValueWithComment inputContract,
+         final @Nullable BitSet polyNullDependencyPositions) {
+      /* Every pass must use the actual additive input baseline. Otherwise a newly inferred PolyNull can protect itself
+       * from refinement when a later parent supplies a non-null parameter, even if an unrelated stored position exists. */
+      if (generationMode == GenerationMode.ADDITIVE && inputContract != null)
+         return reconcileContract(target.originalSignature.value, inputContract, currentContract, generationMode,
+            polyNullDependencyPositions);
+
+      // Without stored evidence, both modes may finish current inference; full generation keeps its existing working-state rules.
+      return reconcileContract(target.originalSignature.value, target.annotatedSignature, currentContract, GenerationMode.FULL,
+         polyNullDependencyPositions);
    }
 
    private static boolean hasLayeredInputContract(final ClassMember member) {
@@ -1776,16 +1794,18 @@ public abstract class EEAGenerator {
     * @return true if the proposed signature is allowed and changes the target
     */
    private static boolean applyGeneratedAnnotatedSignature(final ClassMember target, final ValueWithComment proposedAnnotatedSignature,
-         final GenerationMode generationMode) {
-      final ValueWithComment storedAnnotatedSignature = target.annotatedSignature;
-      if (generationMode == GenerationMode.ADDITIVE //
-            && !isAdditiveContractUpdate(target.originalSignature.value, storedAnnotatedSignature, proposedAnnotatedSignature))
+         final GenerationMode generationMode, final @Nullable ValueWithComment inputContract) {
+      final ValueWithComment previousAnnotatedSignature = target.annotatedSignature;
+      // Reconciliation and this final guard must protect the same input, not a provisional value from this invocation.
+      if (generationMode == GenerationMode.ADDITIVE && inputContract != null //
+            && !isAdditiveContractUpdate(target.originalSignature.value, inputContract, proposedAnnotatedSignature))
          // Keep the stored value in memory as well as on disk. Descendants must inherit the contract this run will
          // actually write, not a destructive parent update that additive mode rejected.
          return false;
       target.annotatedSignature = proposedAnnotatedSignature;
-      return !Objects.equals(storedAnnotatedSignature.value, proposedAnnotatedSignature.value) //
-            || !Objects.equals(storedAnnotatedSignature.comment, proposedAnnotatedSignature.comment);
+      // Compare with the working value to detect convergence, even when additive compatibility used an older input baseline.
+      return !Objects.equals(previousAnnotatedSignature.value, proposedAnnotatedSignature.value) //
+            || !Objects.equals(previousAnnotatedSignature.comment, proposedAnnotatedSignature.comment);
    }
 
    private static boolean isAdditiveContractUpdate(final String originalSignature, final ValueWithComment storedAnnotatedSignature,

@@ -19,11 +19,13 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Map;
 import java.util.Objects;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
+import org.eclipse.jdt.annotation.NonNullByDefault;
 import org.eclipse.jdt.annotation.Nullable;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -42,6 +44,106 @@ import io.github.classgraph.ScanResult;
  * @author Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (https://vegardit.com)
  */
 class BytecodeAnalyzerTest {
+
+   /** Separates exact entry-value forwarding from other returns that merely depend on an argument. */
+   @NonNullByDefault({})
+   static final class IdentityReturns {
+      static Object direct(final Object value) {
+         return value;
+      }
+
+      static Object alias(final Object value) {
+         final Object alias = value;
+         return alias;
+      }
+
+      static String cast(final Object value) {
+         return (String) value;
+      }
+
+      static Object branches(final Object value, final boolean first) {
+         if (first)
+            return value;
+         return value;
+      }
+
+      static Object merge(final Object value, final boolean first) {
+         return first ? value : value;
+      }
+
+      @SuppressWarnings("unused")
+      static Object staticWide(final long unrelated, final Object value) {
+         return value;
+      }
+
+      @SuppressWarnings("unused")
+      Object[] instanceWide(final double unrelated, final Object[] value) {
+         // The descriptor index excludes this and counts double once despite its two local slots.
+         return value;
+      }
+
+      static Object overwritten(Object value, final Object replacement) {
+         value = replacement;
+         return value;
+      }
+
+      static Object mixedParameters(final Object first, final Object second, final boolean useFirst) {
+         return useFirst ? first : second;
+      }
+
+      static Object conditionalOverwrite(Object value, final Object replacement, final boolean replace) {
+         if (replace) {
+            value = replacement;
+         }
+         return value;
+      }
+
+      static Object mismatchThenSame(final Object first, final Object second, final int branch) {
+         // Later matching returns must not erase the earlier disagreement about the original parameter.
+         if (branch == 0)
+            return second;
+         if (branch == 1)
+            return first;
+         return first;
+      }
+
+      static Object unknownAlternative(final Object value, final boolean useValue) {
+         return useValue ? value : System.getProperty("no-npe.identity-test");
+      }
+
+      static Object nullAlternative(final Object value, final boolean useValue) {
+         return useValue ? value : null;
+      }
+
+      static Object caughtUnknown(final Object value) {
+         try {
+            System.getProperty("no-npe.identity-test");
+            return value;
+         } catch (final SecurityException ex) {
+            return System.getProperty("no-npe.identity-fallback");
+         }
+      }
+
+      static Object guarded(final Object value) {
+         if (value == null)
+            throw new IllegalArgumentException();
+         return value;
+      }
+
+      static Object afterArraycopy(final Object source, final Object destination, final int length) {
+         // The existing dependency analysis proves destination non-null on normal completion of the native call.
+         System.arraycopy(source, 0, destination, 0, length);
+         return destination;
+      }
+
+      Object receiver() {
+         return this;
+      }
+
+      static Object alwaysThrows(final Object value) {
+         throw new IllegalArgumentException(String.valueOf(value));
+      }
+   }
 
    static final class ExternalStaticFields {
       static final Integer INTEGER_ONE = Integer.valueOf(1);
@@ -448,9 +550,10 @@ class BytecodeAnalyzerTest {
             throw new IllegalArgumentException();
       }
 
-      @NonNullParameterIndexes({})
+      @NonNullParameterIndexes({0})
       @NullableParameterIndexes({})
       static boolean lateNullReturnAfterRejection(final @Nullable Object value) {
+         // The private helper rejects null before the later guard; delegation must retain its non-null requirement.
          rejectNullWithoutContract(value);
          if (value == null)
             return false;
@@ -493,8 +596,9 @@ class BytecodeAnalyzerTest {
 
       @NonNullParameterIndexes({})
       static void objectsRequireNonNullConditionally(final @Nullable Object value, final boolean rejectNull) {
-         if (rejectNull)
+         if (rejectNull) {
             Objects.requireNonNull(value);
+         }
       }
 
       @NonNullParameterIndexes({})
@@ -1875,6 +1979,43 @@ class BytecodeAnalyzerTest {
 
    @Test
    @SuppressWarnings("null")
+   void testExactIdentityReturnDependencies() {
+      final String className = IdentityReturns.class.getName();
+      try (ScanResult scanResult = new ClassGraph().enableAllInfo().acceptClasses(className).scan()) {
+         final var classInfo = scanResult.getClassInfo(className);
+         assert classInfo != null;
+         final var analyzer = new BytecodeAnalyzer(classInfo, new BytecodeAnalyzer.StaticFieldResolver(scanResult));
+         Map.of("direct", 0, "alias", 0, "cast", 0, "branches", 0, "merge", 0, "staticWide", 1, "instanceWide", 1, "overwritten", 1)
+            .forEach((methodName, parameterIndex) -> {
+               final var result = analyzer.determineMethodReturnAnalysis(classInfo.getMethodInfo(methodName).get(0));
+               assertThat(result.getNullability()).as(methodName).isEqualTo(Nullability.POLY_NULL);
+               assertThat(result.getNullDependentParameterIndexes()).as(methodName).containsExactly(parameterIndex);
+            });
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testIdentityReturnProofPreservesOtherEvidence() {
+      final String className = IdentityReturns.class.getName();
+      try (ScanResult scanResult = new ClassGraph().enableAllInfo().acceptClasses(className).scan()) {
+         final var classInfo = scanResult.getClassInfo(className);
+         assert classInfo != null;
+         final var analyzer = new BytecodeAnalyzer(classInfo, new BytecodeAnalyzer.StaticFieldResolver(scanResult));
+         // A competing origin defeats identity, while guards and this retain their stronger non-null evidence.
+         Map.of("mixedParameters", Nullability.UNKNOWN, "conditionalOverwrite", Nullability.UNKNOWN, "mismatchThenSame",
+            Nullability.UNKNOWN, "unknownAlternative", Nullability.UNKNOWN, "nullAlternative", Nullability.DEFINITELY_NULL, "caughtUnknown",
+            Nullability.UNKNOWN, "guarded", Nullability.NEVER_NULL, "receiver", Nullability.NEVER_NULL, "alwaysThrows", Nullability.UNKNOWN,
+            "afterArraycopy", Nullability.NEVER_NULL).forEach((methodName, expected) -> {
+               final var result = analyzer.determineMethodReturnAnalysis(classInfo.getMethodInfo(methodName).get(0));
+               assertThat(result.getNullability()).as(methodName).isEqualTo(expected);
+               assertThat(result.getNullDependentParameterIndexes()).as(methodName).isEmpty();
+            });
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
    void testDeepReturnProvenanceDoesNotOverflow(@TempDir final Path tempDir) throws IOException {
       final String className = "test/DeepReturnProvenance";
       writeClass(tempDir, className, createClassWithDeepReturnProvenance(className));
@@ -1888,9 +2029,10 @@ class BytecodeAnalyzerTest {
          assert classInfo != null;
          final var analyzer = new BytecodeAnalyzer(classInfo, new BytecodeAnalyzer.StaticFieldResolver(scanResult));
 
-         // Identity-style dependency evidence must remain unknown without a reachable null-return path.
-         assertThat(analyzer.determineMethodReturnTypeNullability(classInfo.getMethodInfo("identity").get(0))).isEqualTo(
-            Nullability.UNKNOWN);
+         // Exact forwarding proves PolyNull without a null branch; deep aliases must not require recursive provenance walks.
+         final var result = analyzer.determineMethodReturnAnalysis(classInfo.getMethodInfo("identity").get(0));
+         assertThat(result.getNullability()).isEqualTo(Nullability.POLY_NULL);
+         assertThat(result.getNullDependentParameterIndexes()).containsExactly(0);
       }
    }
 

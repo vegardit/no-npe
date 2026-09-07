@@ -279,6 +279,11 @@ when every dependent parameter is effectively non-null.
 An unrelated nullable parameter does not prevent this refinement.
 If any dependent parameter remains nullable or unspecified, the return remains PolyNull.
 
+Both generation modes apply this refinement to newly inferred contracts, including when the dependent parameter's non-null
+contract is inherited.
+`generate-additive` still preserves a conflicting stored PolyNull contract.
+This protection applies to input contracts; intermediate results computed during the same run do not block refinement.
+
 Stored manual or imported PolyNull evidence has no persisted dependency information and is therefore not refined merely
 because some stored parameters are non-null.
 It continues to follow the normal ownership and generation-mode rules.
@@ -569,7 +574,11 @@ through several helpers.
 The call's normal successor is removed, but its exception edges remain reachable.
 Consequently, a handler that catches the helper's exception and returns normally still contributes to the inferred contract.
 
-The proof requires one fixed runtime target: static, special, private, and final calls qualify, as do calls on final classes.
+The proof requires one fixed runtime target: static, private, and final calls qualify, as do calls on final classes.
+Constructors also qualify.
+A non-constructor `invokespecial` call qualifies only when its declaration is on the current class or immediate superclass.
+An indirect symbolic ancestor can select an intermediate declaration instead, even when the named method is private and
+accessible through the same nest.
 A package-private virtual helper also qualifies when it is invoked from its declaring class and no same-package subclass in
 the accepted package scan overrides it.
 This closed-package rule supports internal library guards without treating public or protected extension points as fixed.
@@ -577,13 +586,28 @@ This closed-package rule supports internal library guards without treating publi
 Abstract, native, unresolved, over-budget, and recursively cyclic helpers remain unknown.
 The existing exact `Unsafe.throwException(Throwable)` contract is also recognized as a terminal call.
 
+### Bytecode return contracts
+
+Return inference imports a helper's bytecode summary only when the call has one fixed runtime target.
+Non-constructor `invokespecial` calls use the same current-class or immediate-superclass declaration restriction as
+non-returning method proofs.
+An indirect symbolic ancestor does not qualify, even when its body already has a cached non-null summary.
+
+`Object.clone()` has a separate proof that checks the selected method through the caller's superclass chain.
+A superclass call must reach `Object` without an intervening clone declaration, and the receiver's class must implement
+`Cloneable` directly or through its hierarchy.
+Only then can the call supply non-null return evidence and exclude an otherwise unreachable `CloneNotSupportedException`
+handler.
+Naming `Object.clone()` in the instruction alone does not establish either fact.
+
 ### Bytecode parameter contracts
 
-The generator derives parameter contracts from two direct bytecode patterns:
+The generator derives parameter contracts from bytecode:
 
 - It infers `NonNull` when every reachable normal return requires the parameter to be non-null.
   A successful instance-method call proves its receiver non-null.
   The non-null edge of an explicit `null` guard supplies the same fact.
+  A call to an exactly resolved helper can also prove that an argument must be non-null for the call to return normally.
 - It infers `Nullable` when a direct guard at method entry sends `null` through a straight, side-effect-free path to a
   normal return.
   This recognizes patterns such as `if (value == null) return false` without treating every conditional null return as a
@@ -604,9 +628,17 @@ The proofs have these boundaries:
   Later checks, conditional null returns, and null arms containing cleanup or other executable behavior remain unknown.
 - `invokevirtual`, `invokeinterface`, and non-constructor `invokespecial` calls qualify as non-null receiver evidence.
 - The three Java 11 `Objects.requireNonNull(...)` overloads qualify as non-null evidence for their first argument.
-  Message arguments, `requireNonNullElse(...)`, and `requireNonNullElseGet(...)` do not qualify.
-  Other static calls and constructor calls do not qualify.
-- Receiver evidence must occur on every path that returns normally, and the method must have at least one reachable normal
+  That intrinsic does not qualify message arguments, `requireNonNullElse(...)`, or `requireNonNullElseGet(...)`.
+- Other calls, including constructors, propagate non-null parameter requirements proven from the helper's bytecode.
+  Static, private, and final methods and methods declared on final classes qualify.
+  A non-constructor `super` call qualifies only when its declaration is on the immediate superclass, including private calls
+  allowed by nest access.
+  Overridable virtual calls and inherited symbolic owners remain unknown; no declaration-contract or closed-package
+  assumption is used for argument requirements.
+- A helper argument must resolve to exactly one original caller parameter.
+  Aliases, casts, reordered arguments, and repeated arguments qualify; reassigned locals and ambiguous producers do not.
+  Receiver and argument evidence are independent, and nullable acceptance is not propagated through calls.
+- Non-null evidence must occur on every path that returns normally, and the method must have at least one reachable normal
   return.
   A conditional call followed by a normal return and an always-throwing method therefore remain unknown.
 - A qualifying call inside a region protected by an explicit catch of `NullPointerException`, `RuntimeException`, `Exception`,
@@ -617,8 +649,18 @@ The proofs have these boundaries:
   This is deliberately conservative for checked-exception handlers that return normally.
 - A synthetic catch-all used for `finally` is not treated as an explicit NPE-capable catch.
   A normal `finally` path can retain the proof, while a handler path that returns without the successful call cannot.
-- Calls such as `System.arraycopy(...)` do not qualify because the parameter is an argument, not the invoked receiver.
+- Native calls such as `System.arraycopy(...)` supply no bytecode proof for their arguments.
 - Abstract or native methods, unsupported bytecode, and methods outside the analysis budget remain unknown.
+- Helper traversal has its own depth budget and stops at active recursion cycles.
+  Calls in one root analysis also share a work budget for estimated frame and exception-handler work and for visiting
+  local-check and helper-argument producers and their dependency edges, including edges to cached producers.
+  Failed proofs also consume this allowance.
+  Each admitted method computes its local checks once before traversing helpers.
+  Those local checks finish even if they exhaust the allowance, so independent local facts survive the cutoff.
+  Exhaustion skips further helper proofs and logs one warning for that root.
+- Cached summaries preserve the remaining depth budget and consume the same work allowance as uncached proofs.
+  Results that encounter a cycle or reach a depth or work cutoff are not reused.
+  A cutoff can hide a cycle, so reusing its partial proof could change contracts with cache warmth.
 
 For a type-variable parameter, the marker is placed on the parameter use as described in
 [Generic parameter nullness](#generic-parameter-nullness).
@@ -701,6 +743,12 @@ it nullable or non-null:
 ([Ljava/lang/Boolean;Z)[Z
 ([Ljava/lang/Boolean;Z)[Z # @Generated(PolyNull)
 ```
+
+Bytecode analysis recognizes exact forwarding, such as `Object identity(Object value) { return value; }`, without
+requiring a separate branch that returns `null`.
+Every reachable normal return must forward the same original reference parameter; local aliases and casts preserve this
+identity.
+A proven non-null return, such as forwarding an argument after rejecting `null`, retains its stronger non-null contract.
 
 Bytecode analysis also recognizes guarded fallback control flow.
 When one return alternative depends on an input and every other reachable alternative is proven non-null, the result can
