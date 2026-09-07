@@ -16,7 +16,7 @@ defaultObjectMapper
  (Lcom/fasterxml/jackson/databind/ObjectMapper;Lorg/springframework/http/MediaType;)V
 <init>
  (Lcom/fasterxml/jackson/databind/ObjectMapper;[Lorg/springframework/http/MediaType;)V
- (Lcom/fasterxml/jackson/databind/ObjectMapper;[Lorg/springframework/http/MediaType;)V
+ (Lcom/fasterxml/jackson/databind/ObjectMapper;[1Lorg/springframework/http/MediaType;)V # @Generated(47)
 canRead
  (Ljava/lang/Class<*>;Lorg/springframework/http/MediaType;)Z
  (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.AbstractHttpMessageConverter)
@@ -28,10 +28,10 @@ canWrite
  (Ljava/lang/Class<*>;L0org/springframework/http/MediaType;)Z # @Inherited(org.springframework.http.converter.AbstractHttpMessageConverter)
 customizeReader
  (Lcom/fasterxml/jackson/databind/ObjectReader;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/ObjectReader;
- (Lcom/fasterxml/jackson/databind/ObjectReader;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/ObjectReader;
+ (Lcom/fasterxml/jackson/databind/ObjectReader;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/ObjectReader; # @Generated(PolyNull)
 customizeWriter
  (Lcom/fasterxml/jackson/databind/ObjectWriter;Lcom/fasterxml/jackson/databind/JavaType;Lorg/springframework/http/MediaType;)Lcom/fasterxml/jackson/databind/ObjectWriter;
- (Lcom/fasterxml/jackson/databind/ObjectWriter;L0com/fasterxml/jackson/databind/JavaType;L0org/springframework/http/MediaType;)Lcom/fasterxml/jackson/databind/ObjectWriter; # @Generated(47,88)
+ (Lcom/fasterxml/jackson/databind/ObjectWriter;L0com/fasterxml/jackson/databind/JavaType;L0org/springframework/http/MediaType;)Lcom/fasterxml/jackson/databind/ObjectWriter; # @Generated(47,88,PolyNull)
 getCharset
  (Lorg/springframework/http/MediaType;)Ljava/nio/charset/Charset;
  (L0org/springframework/http/MediaType;)Ljava/nio/charset/Charset; # @Generated(2)
@@ -64,16 +64,16 @@ logWarningIfNecessary
  (Ljava/lang/reflect/Type;L0java/lang/Throwable;)V # @Generated(26)
 read
  (Ljava/lang/reflect/Type;Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
- (Ljava/lang/reflect/Type;L0java/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object; # @Generated(26)
+ (Ljava/lang/reflect/Type;L0java/lang/Class<*>;L1org/springframework/http/HttpInputMessage;)Ljava/lang/Object; # @Generated(26,46)
 readInternal
  (Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
- (Ljava/lang/Class<*>;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object;
+ (Ljava/lang/Class<*>;L1org/springframework/http/HttpInputMessage;)Ljava/lang/Object; # @Generated(22)
 registerObjectMappersForType
  (Ljava/lang/Class<*>;Ljava/util/function/Consumer<Ljava/util/Map<Lorg/springframework/http/MediaType;Lcom/fasterxml/jackson/databind/ObjectMapper;>;>;)V
  (Ljava/lang/Class<*>;L1java/util/function/Consumer<Ljava/util/Map<Lorg/springframework/http/MediaType;Lcom/fasterxml/jackson/databind/ObjectMapper;>;>;)V # @Generated(22)
 setObjectMapper
  (Lcom/fasterxml/jackson/databind/ObjectMapper;)V
- (Lcom/fasterxml/jackson/databind/ObjectMapper;)V
+ (L1com/fasterxml/jackson/databind/ObjectMapper;)V # @Generated
 setSupportedMediaTypes
  (Ljava/util/List<Lorg/springframework/http/MediaType;>;)V
  (Ljava/util/List<Lorg/springframework/http/MediaType;>;)V

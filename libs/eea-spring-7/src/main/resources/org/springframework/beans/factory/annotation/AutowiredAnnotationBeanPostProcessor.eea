@@ -6,7 +6,7 @@ logger
 
 determineBeanType
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
 determineCandidateConstructors
  (Ljava/lang/Class<*>;Ljava/lang/String;)[Ljava/lang/reflect/Constructor<*>;
  (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
@@ -18,7 +18,7 @@ postProcessMergedBeanDefinition
  (L1org/springframework/beans/factory/support/RootBeanDefinition;Ljava/lang/Class<*>;Ljava/lang/String;)V # @Generated(2)
 postProcessProperties
  (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
- (Lorg/springframework/beans/PropertyValues;L1java/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Overrides(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
+ (Lorg/springframework/beans/PropertyValues;L1java/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues; # @Generated(44,PolyNull) @Overrides(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 processAheadOfTime
  (Lorg/springframework/beans/factory/support/RegisteredBean;)Lorg/springframework/beans/factory/aot/BeanRegistrationAotContribution;
  (L1org/springframework/beans/factory/support/RegisteredBean;)L0org/springframework/beans/factory/aot/BeanRegistrationAotContribution; # @Overrides(org.springframework.beans.factory.aot.BeanRegistrationAotProcessor)
@@ -30,7 +30,7 @@ resetBeanDefinition
  (Ljava/lang/String;)V
 setAutowiredAnnotationType
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)V
- (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)V
+ (L1java/lang/Class<+Ljava/lang/annotation/Annotation;>;)V # @Generated(2)
 setAutowiredAnnotationTypes
  (Ljava/util/Set<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;>;)V
  (Ljava/util/Set<Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;>;)V

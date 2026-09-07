@@ -5,7 +5,7 @@ attributeNames
  ()[Ljava/lang/String;
 computeAttribute
  <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/function/Function<Ljava/lang/String;TT;>;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/util/function/Function<Ljava/lang/String;TT;>;)T0T; # @Inherited(org.springframework.core.AttributeAccessor)
+ <T:Ljava/lang/Object;>(L1java/lang/String;L1java/util/function/Function<Ljava/lang/String;TT;>;)T0T; # @Inherited(org.springframework.core.AttributeAccessor)
 copyAttributesFrom
  (Lorg/springframework/core/AttributeAccessor;)V
  (L1org/springframework/core/AttributeAccessor;)V # @Generated
@@ -14,13 +14,13 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 getAttribute
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.core.AttributeAccessor)
+ (L1java/lang/String;)L0java/lang/Object; # @Overrides(org.springframework.core.AttributeAccessor)
 hasAttribute
  (Ljava/lang/String;)Z
- (Ljava/lang/String;)Z
+ (L1java/lang/String;)Z # @Generated
 removeAttribute
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.core.AttributeAccessor)
+ (L1java/lang/String;)L0java/lang/Object; # @Overrides(org.springframework.core.AttributeAccessor)
 setAttribute
  (Ljava/lang/String;Ljava/lang/Object;)V
- (Ljava/lang/String;L0java/lang/Object;)V # @Inherited(org.springframework.core.AttributeAccessor)
+ (L1java/lang/String;L0java/lang/Object;)V # @Overrides(org.springframework.core.AttributeAccessor)

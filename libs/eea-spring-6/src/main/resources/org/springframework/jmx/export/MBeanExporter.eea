@@ -5,7 +5,7 @@ adaptMBeanIfPossible
  (L1java/lang/Object;)L0javax/management/DynamicMBean; # @Generated(2,21)
 addExcludedBean
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
 createAndConfigureMBean
  (Ljava/lang/Object;Ljava/lang/String;)Ljavax/management/modelmbean/ModelMBean;
  (Ljava/lang/Object;Ljava/lang/String;)L1javax/management/modelmbean/ModelMBean;
@@ -32,10 +32,10 @@ registerBeanNameOrInstance
  (Ljava/lang/Object;Ljava/lang/String;)Ljavax/management/ObjectName;
 registerManagedResource
  (Ljava/lang/Object;)Ljavax/management/ObjectName;
- (Ljava/lang/Object;)Ljavax/management/ObjectName;
+ (L1java/lang/Object;)Ljavax/management/ObjectName; # @Generated(2)
 registerManagedResource
  (Ljava/lang/Object;Ljavax/management/ObjectName;)V
- (L1java/lang/Object;Ljavax/management/ObjectName;)V # @Generated(2)
+ (L1java/lang/Object;L1javax/management/ObjectName;)V # @Generated(2,20)
 setAssembler
  (Lorg/springframework/jmx/export/assembler/MBeanInfoAssembler;)V
  (Lorg/springframework/jmx/export/assembler/MBeanInfoAssembler;)V
@@ -68,4 +68,4 @@ setNotificationListeners
  ([Lorg/springframework/jmx/export/NotificationListenerBean;)V
 unregisterManagedResource
  (Ljavax/management/ObjectName;)V
- (Ljavax/management/ObjectName;)V
+ (L1javax/management/ObjectName;)V # @Generated

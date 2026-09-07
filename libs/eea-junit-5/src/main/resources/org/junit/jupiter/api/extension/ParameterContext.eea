@@ -2,10 +2,10 @@ class org/junit/jupiter/api/extension/ParameterContext
 
 findAnnotation
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Ljava/util/Optional<TA;>;
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)L1java/util/Optional<TA;>; # @Inherited(org.junit.jupiter.api.extension.AnnotatedElementContext)
+ <A::Ljava/lang/annotation/Annotation;>(L1java/lang/Class<TA;>;)L1java/util/Optional<TA;>; # @Inherited(org.junit.jupiter.api.extension.AnnotatedElementContext)
 findRepeatableAnnotations
  <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)Ljava/util/List<TA;>;
- <A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)L1java/util/List<TA;>; # @Inherited(org.junit.jupiter.api.extension.AnnotatedElementContext)
+ <A::Ljava/lang/annotation/Annotation;>(L1java/lang/Class<TA;>;)L1java/util/List<TA;>; # @Inherited(org.junit.jupiter.api.extension.AnnotatedElementContext)
 getAnnotatedElement
  ()Ljava/lang/reflect/AnnotatedElement;
  ()Ljava/lang/reflect/AnnotatedElement;
@@ -20,4 +20,4 @@ getTarget
  ()L1java/util/Optional<Ljava/lang/Object;>; # @Generated(3)
 isAnnotated
  (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
- (Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z
+ (L1java/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z # @Inherited(org.junit.jupiter.api.extension.AnnotatedElementContext)

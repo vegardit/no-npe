@@ -11,16 +11,16 @@ arrayElementSetter
  (Ljava/lang/Class<*>;)Ljava/lang/invoke/MethodHandle;
 arrayElementVarHandle
  (Ljava/lang/Class<*>;)Ljava/lang/invoke/VarHandle;
- (Ljava/lang/Class<*>;)Ljava/lang/invoke/VarHandle;
+ (L1java/lang/Class<*>;)Ljava/lang/invoke/VarHandle; # @Generated(2)
 arrayLength
  (Ljava/lang/Class<*>;)Ljava/lang/invoke/MethodHandle;
  (Ljava/lang/Class<*>;)Ljava/lang/invoke/MethodHandle;
 byteArrayViewVarHandle
  (Ljava/lang/Class<*>;Ljava/nio/ByteOrder;)Ljava/lang/invoke/VarHandle;
- (Ljava/lang/Class<*>;L1java/nio/ByteOrder;)Ljava/lang/invoke/VarHandle; # @Generated(22)
+ (L1java/lang/Class<*>;L1java/nio/ByteOrder;)Ljava/lang/invoke/VarHandle; # @Generated(2,22)
 byteBufferViewVarHandle
  (Ljava/lang/Class<*>;Ljava/nio/ByteOrder;)Ljava/lang/invoke/VarHandle;
- (Ljava/lang/Class<*>;L1java/nio/ByteOrder;)Ljava/lang/invoke/VarHandle; # @Generated(22)
+ (L1java/lang/Class<*>;L1java/nio/ByteOrder;)Ljava/lang/invoke/VarHandle; # @Generated(2,22)
 catchException
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/Class<+Ljava/lang/Throwable;>;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodHandle;Ljava/lang/Class<+Ljava/lang/Throwable;>;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2,74)
@@ -29,37 +29,37 @@ classData
  <T:Ljava/lang/Object;>(L1java/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;L1java/lang/Class<TT;>;)T0T; # @Generated(24,81,104)
 classDataAt
  <T:Ljava/lang/Object;>(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class<TT;>;I)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class<TT;>;I)T0T; # @Generated(105)
+ <T:Ljava/lang/Object;>(L1java/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/Class<TT;>;I)T0T; # @Generated(24,105)
 collectArguments
  (Ljava/lang/invoke/MethodHandle;ILjava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodHandle;IL1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2,34)
 collectCoordinates
  (Ljava/lang/invoke/VarHandle;ILjava/lang/invoke/MethodHandle;)Ljava/lang/invoke/VarHandle;
- (Ljava/lang/invoke/VarHandle;ILjava/lang/invoke/MethodHandle;)L1java/lang/invoke/VarHandle; # @Generated(63)
+ (L1java/lang/invoke/VarHandle;IL1java/lang/invoke/MethodHandle;)L1java/lang/invoke/VarHandle; # @Generated(2,31,63)
 constant
  (Ljava/lang/Class<*>;Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/Class<*>;Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
 countedLoop
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
- (L1java/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
+ (L1java/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2,64)
 countedLoop
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2,33,95)
 doWhileLoop
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
- (Ljava/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(33)
+ (Ljava/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(33,64)
 dropArguments
  (Ljava/lang/invoke/MethodHandle;ILjava/util/List<Ljava/lang/Class<*>;>;)Ljava/lang/invoke/MethodHandle;
- (Ljava/lang/invoke/MethodHandle;IL1java/util/List<Ljava/lang/Class<*>;>;)Ljava/lang/invoke/MethodHandle; # @Generated(34)
+ (L1java/lang/invoke/MethodHandle;IL1java/util/List<Ljava/lang/Class<*>;>;)Ljava/lang/invoke/MethodHandle; # @Generated(2,34)
 dropArguments
  (Ljava/lang/invoke/MethodHandle;I[Ljava/lang/Class<*>;)Ljava/lang/invoke/MethodHandle;
- (Ljava/lang/invoke/MethodHandle;I[1Ljava/lang/Class<*>;)Ljava/lang/invoke/MethodHandle; # @Generated(34)
+ (L1java/lang/invoke/MethodHandle;I[1Ljava/lang/Class<*>;)Ljava/lang/invoke/MethodHandle; # @Generated(2,34)
 dropArgumentsToMatch
  (Ljava/lang/invoke/MethodHandle;ILjava/util/List<Ljava/lang/Class<*>;>;I)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodHandle;IL1java/util/List<Ljava/lang/Class<*>;>;I)Ljava/lang/invoke/MethodHandle; # @Generated(2,34)
 dropCoordinates
  (Ljava/lang/invoke/VarHandle;I[Ljava/lang/Class<*>;)Ljava/lang/invoke/VarHandle;
- (Ljava/lang/invoke/VarHandle;I[Ljava/lang/Class<*>;)Ljava/lang/invoke/VarHandle;
+ (L1java/lang/invoke/VarHandle;I[1Ljava/lang/Class<*>;)Ljava/lang/invoke/VarHandle; # @Generated(2,31)
 dropReturn
  (Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
@@ -71,25 +71,25 @@ exactInvoker
  (L1java/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
 explicitCastArguments
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
- (L1java/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
+ (L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; # @Generated(2,33)
 filterArguments
  (Ljava/lang/invoke/MethodHandle;I[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
- (Ljava/lang/invoke/MethodHandle;I[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
+ (L1java/lang/invoke/MethodHandle;I[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
 filterCoordinates
  (Ljava/lang/invoke/VarHandle;I[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/VarHandle;
- (Ljava/lang/invoke/VarHandle;I[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/VarHandle;
+ (L1java/lang/invoke/VarHandle;I[1Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/VarHandle; # @Generated(2,31)
 filterReturnValue
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2,33)
 filterValue
  (Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/VarHandle;
- (Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)L1java/lang/invoke/VarHandle; # @Generated(93)
+ (L1java/lang/invoke/VarHandle;L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)L1java/lang/invoke/VarHandle; # @Generated(2,30,61,93)
 foldArguments
  (Ljava/lang/invoke/MethodHandle;ILjava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodHandle;IL1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2,34)
 foldArguments
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
- (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
+ (L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2,33)
 guardWithTest
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2,33,64)
@@ -98,10 +98,10 @@ identity
  (L1java/lang/Class<*>;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
 insertArguments
  (Ljava/lang/invoke/MethodHandle;I[Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;
- (Ljava/lang/invoke/MethodHandle;I[Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;
+ (L1java/lang/invoke/MethodHandle;I[Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
 insertCoordinates
  (Ljava/lang/invoke/VarHandle;I[Ljava/lang/Object;)Ljava/lang/invoke/VarHandle;
- (Ljava/lang/invoke/VarHandle;I[Ljava/lang/Object;)Ljava/lang/invoke/VarHandle;
+ (L1java/lang/invoke/VarHandle;I[1Ljava/lang/Object;)Ljava/lang/invoke/VarHandle; # @Generated(2,31)
 invoker
  (Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
@@ -113,13 +113,13 @@ lookup
  ()L1java/lang/invoke/MethodHandles$Lookup; # @Generated
 loop
  ([[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
- ([[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
+ ([1[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
 permuteArguments
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;[I)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodType;[1I)Ljava/lang/invoke/MethodHandle; # @Generated(2,33,62)
 permuteCoordinates
  (Ljava/lang/invoke/VarHandle;Ljava/util/List<Ljava/lang/Class<*>;>;[I)Ljava/lang/invoke/VarHandle;
- (Ljava/lang/invoke/VarHandle;Ljava/util/List<Ljava/lang/Class<*>;>;[I)L1java/lang/invoke/VarHandle; # @Generated(71)
+ (L1java/lang/invoke/VarHandle;L1java/util/List<Ljava/lang/Class<*>;>;[1I)L1java/lang/invoke/VarHandle; # @Generated(2,30,68,71)
 privateLookupIn
  (Ljava/lang/Class<*>;Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/invoke/MethodHandles$Lookup;
  (Ljava/lang/Class<*>;Ljava/lang/invoke/MethodHandles$Lookup;)L1java/lang/invoke/MethodHandles$Lookup; # @Generated(62)
@@ -128,7 +128,7 @@ publicLookup
  ()L1java/lang/invoke/MethodHandles$Lookup; # @Generated
 reflectAs
  <T::Ljava/lang/reflect/Member;>(Ljava/lang/Class<TT;>;Ljava/lang/invoke/MethodHandle;)TT;
- <T::Ljava/lang/reflect/Member;>(Ljava/lang/Class<TT;>;Ljava/lang/invoke/MethodHandle;)TT;
+ <T::Ljava/lang/reflect/Member;>(Ljava/lang/Class<TT;>;L1java/lang/invoke/MethodHandle;)TT; # @Generated(55)
 spreadInvoker
  (Ljava/lang/invoke/MethodType;I)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/invoke/MethodType;I)Ljava/lang/invoke/MethodHandle; # @Generated(2)
@@ -140,7 +140,7 @@ throwException
  (Ljava/lang/Class<*>;Ljava/lang/Class<+Ljava/lang/Throwable;>;)Ljava/lang/invoke/MethodHandle;
 tryFinally
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
- (L1java/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2)
+ (L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(2,33)
 varHandleExactInvoker
  (Ljava/lang/invoke/VarHandle$AccessMode;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;
  (Ljava/lang/invoke/VarHandle$AccessMode;L1java/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; # @Generated(41)
@@ -149,7 +149,7 @@ varHandleInvoker
  (Ljava/lang/invoke/VarHandle$AccessMode;L1java/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle; # @Generated(41)
 whileLoop
  (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;
- (Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(64)
+ (Ljava/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;L1java/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle; # @Generated(33,64)
 zero
  (Ljava/lang/Class<*>;)Ljava/lang/invoke/MethodHandle;
  (L1java/lang/Class<*>;)Ljava/lang/invoke/MethodHandle; # @Generated(2)

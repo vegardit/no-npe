@@ -2,7 +2,7 @@ class org/springframework/core/task/support/TaskExecutorAdapter
 
 <init>
  (Ljava/util/concurrent/Executor;)V
- (Ljava/util/concurrent/Executor;)V
+ (L1java/util/concurrent/Executor;)V # @Generated
 doExecute
  (Ljava/util/concurrent/Executor;Lorg/springframework/core/task/TaskDecorator;Ljava/lang/Runnable;)V
  (L1java/util/concurrent/Executor;L0org/springframework/core/task/TaskDecorator;Ljava/lang/Runnable;)V # @Generated(2,33)
@@ -14,7 +14,7 @@ setTaskDecorator
  (Lorg/springframework/core/task/TaskDecorator;)V
 submit
  (Ljava/lang/Runnable;)Ljava/util/concurrent/Future<*>;
- (Ljava/lang/Runnable;)L1java/util/concurrent/Future<*>; # @Inherited(org.springframework.core.task.AsyncTaskExecutor)
+ (L1java/lang/Runnable;)L1java/util/concurrent/Future<*>; # @Inherited(org.springframework.core.task.AsyncTaskExecutor)
 submit
  <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)Ljava/util/concurrent/Future<TT;>;
- <T:Ljava/lang/Object;>(Ljava/util/concurrent/Callable<TT;>;)L1java/util/concurrent/Future<TT;>; # @Inherited(org.springframework.core.task.AsyncTaskExecutor)
+ <T:Ljava/lang/Object;>(L1java/util/concurrent/Callable<TT;>;)L1java/util/concurrent/Future<TT;>; # @Inherited(org.springframework.core.task.AsyncTaskExecutor)

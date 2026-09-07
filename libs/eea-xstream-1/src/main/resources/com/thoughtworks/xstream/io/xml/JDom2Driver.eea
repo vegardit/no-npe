@@ -8,7 +8,7 @@ createBuilder
  ()L1org/jdom2/input/SAXBuilder; # @Generated
 createReader
  (Ljava/io/File;)Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;
- (Ljava/io/File;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Inherited(com.thoughtworks.xstream.io.AbstractDriver)
+ (L1java/io/File;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Inherited(com.thoughtworks.xstream.io.AbstractDriver)
 createReader
  (Ljava/io/InputStream;)Lcom/thoughtworks/xstream/io/HierarchicalStreamReader;
  (Ljava/io/InputStream;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Inherited(com.thoughtworks.xstream.io.HierarchicalStreamDriver)
@@ -20,7 +20,7 @@ createReader
  (L1java/net/URL;)L1com/thoughtworks/xstream/io/HierarchicalStreamReader; # @Inherited(com.thoughtworks.xstream.io.AbstractDriver)
 createWriter
  (Ljava/io/OutputStream;)Lcom/thoughtworks/xstream/io/HierarchicalStreamWriter;
- (Ljava/io/OutputStream;)L1com/thoughtworks/xstream/io/HierarchicalStreamWriter; # @Inherited(com.thoughtworks.xstream.io.HierarchicalStreamDriver)
+ (L1java/io/OutputStream;)L1com/thoughtworks/xstream/io/HierarchicalStreamWriter; # @Overrides(com.thoughtworks.xstream.io.HierarchicalStreamDriver)
 createWriter
  (Ljava/io/Writer;)Lcom/thoughtworks/xstream/io/HierarchicalStreamWriter;
  (Ljava/io/Writer;)L1com/thoughtworks/xstream/io/HierarchicalStreamWriter; # @Inherited(com.thoughtworks.xstream.io.HierarchicalStreamDriver)

@@ -23,7 +23,7 @@ addFilterRegistration
  (L1jakarta/servlet/FilterRegistration;)V # @Generated
 addInitParameter
  (Ljava/lang/String;Ljava/lang/String;)V
- (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;Ljava/lang/String;)V # @Generated(2)
 addJspFile
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
  (Ljava/lang/String;Ljava/lang/String;)Ljakarta/servlet/ServletRegistration$Dynamic;
@@ -38,7 +38,7 @@ addListener
  <1T::Ljava/util/EventListener;>(T1T;)V # @Generated(32)
 addMimeType
  (Ljava/lang/String;Lorg/springframework/http/MediaType;)V
- (Ljava/lang/String;Lorg/springframework/http/MediaType;)V
+ (L1java/lang/String;Lorg/springframework/http/MediaType;)V # @Generated(2)
 addServlet
  (Ljava/lang/String;Ljakarta/servlet/Servlet;)Ljakarta/servlet/ServletRegistration$Dynamic;
  (Ljava/lang/String;Ljakarta/servlet/Servlet;)Ljakarta/servlet/ServletRegistration$Dynamic;
@@ -59,10 +59,10 @@ createServlet
  <T::Ljakarta/servlet/Servlet;>(Ljava/lang/Class<TT;>;)T1T;
 declareRoles
  ([Ljava/lang/String;)V
- ([Ljava/lang/String;)V
+ ([1Ljava/lang/String;)V # @Generated(2)
 getAttribute
  (Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/String;)L0java/lang/Object; # @Generated(21)
+ (L1java/lang/String;)L0java/lang/Object; # @Generated(2,21)
 getAttributeNames
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
  ()L1java/util/Enumeration<Ljava/lang/String;>; # @Generated(3)
@@ -95,7 +95,7 @@ getFilterRegistrations
  ()Ljava/util/Map<Ljava/lang/String;+Ljakarta/servlet/FilterRegistration;>;
 getInitParameter
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)L0java/lang/String; # @Generated(21)
+ (L1java/lang/String;)L0java/lang/String; # @Generated(2,21)
 getInitParameterNames
  ()Ljava/util/Enumeration<Ljava/lang/String;>;
  ()L1java/util/Enumeration<Ljava/lang/String;>; # @Generated(3)
@@ -161,13 +161,13 @@ registerContext
  (Ljava/lang/String;Ljakarta/servlet/ServletContext;)V
 registerNamedDispatcher
  (Ljava/lang/String;Ljakarta/servlet/RequestDispatcher;)V
- (Ljava/lang/String;Ljakarta/servlet/RequestDispatcher;)V
+ (L1java/lang/String;L1jakarta/servlet/RequestDispatcher;)V # @Generated(2,20)
 removeAttribute
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
 setAttribute
  (Ljava/lang/String;Ljava/lang/Object;)V
- (Ljava/lang/String;L0java/lang/Object;)V # @Generated(20)
+ (L1java/lang/String;L0java/lang/Object;)V # @Generated(2,20)
 setContextPath
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -176,7 +176,7 @@ setDefaultServletName
  (Ljava/lang/String;)V
 setInitParameter
  (Ljava/lang/String;Ljava/lang/String;)Z
- (Ljava/lang/String;Ljava/lang/String;)Z
+ (L1java/lang/String;Ljava/lang/String;)Z # @Generated(2)
 setRequestCharacterEncoding
  (Ljava/lang/String;)V
  (L0java/lang/String;)V # @Generated
@@ -191,4 +191,4 @@ setSessionTrackingModes
  (Ljava/util/Set<Ljakarta/servlet/SessionTrackingMode;>;)V
 unregisterNamedDispatcher
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated

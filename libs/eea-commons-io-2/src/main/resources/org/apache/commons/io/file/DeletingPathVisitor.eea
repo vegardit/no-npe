@@ -21,7 +21,7 @@ equals
  (L0java/lang/Object;)Z # @Inherited(org.apache.commons.io.file.CountingPathVisitor)
 postVisitDirectory
  (Ljava/nio/file/Path;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;
- (Ljava/nio/file/Path;Ljava/io/IOException;)L1java/nio/file/FileVisitResult; # @Inherited(org.apache.commons.io.file.CountingPathVisitor)
+ (L1java/nio/file/Path;Ljava/io/IOException;)L1java/nio/file/FileVisitResult; # @Overrides(org.apache.commons.io.file.CountingPathVisitor)
 preVisitDirectory
  (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
  (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)L1java/nio/file/FileVisitResult; # @Inherited(org.apache.commons.io.file.CountingPathVisitor)

@@ -24,7 +24,7 @@ clearMergedBeanDefinition
  (Ljava/lang/String;)V
 containsBeanDefinition
  (Ljava/lang/String;)Z
- (Ljava/lang/String;)Z
+ (L1java/lang/String;)Z # @Generated
 copyConfigurationFrom
  (Lorg/springframework/beans/factory/config/ConfigurableBeanFactory;)V
  (L1org/springframework/beans/factory/config/ConfigurableBeanFactory;)V # @Inherited(org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory)
@@ -63,7 +63,7 @@ getBean
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
 getBean
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;[Ljava/lang/Object;)TT;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;[0Ljava/lang/Object;)T1T; # @Overrides(org.springframework.beans.factory.BeanFactory)
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;[0Ljava/lang/Object;)T1T; # @Overrides(org.springframework.beans.factory.BeanFactory)
 getBeanDefinition
  (Ljava/lang/String;)Lorg/springframework/beans/factory/config/BeanDefinition;
  (Ljava/lang/String;)L1org/springframework/beans/factory/config/BeanDefinition; # @Generated(21)
@@ -90,13 +90,13 @@ getBeanNamesIterator
  ()L1java/util/Iterator<Ljava/lang/String;>; # @Generated(3)
 getBeanProvider
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>; # @Generated(24)
 getBeanProvider
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;Z)L1org/springframework/beans/factory/ObjectProvider<TT;>; # @Inherited(org.springframework.beans.factory.ListableBeanFactory)
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;Z)L1org/springframework/beans/factory/ObjectProvider<TT;>; # @Overrides(org.springframework.beans.factory.ListableBeanFactory)
 getBeanProvider
  <T:Ljava/lang/Object;>(Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
- <T:Ljava/lang/Object;>(Lorg/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
+ <T:Ljava/lang/Object;>(L1org/springframework/core/ParameterizedTypeReference<TT;>;)Lorg/springframework/beans/factory/ObjectProvider<TT;>; # @Generated(24)
 getBeanProvider
  <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
  <T:Ljava/lang/Object;>(Lorg/springframework/core/ResolvableType;)Lorg/springframework/beans/factory/ObjectProvider<TT;>;
@@ -162,10 +162,10 @@ registerBeanDefinition
  (Ljava/lang/String;L1org/springframework/beans/factory/config/BeanDefinition;)V # @Generated(20)
 registerResolvableDependency
  (Ljava/lang/Class<*>;Ljava/lang/Object;)V
- (Ljava/lang/Class<*>;L0java/lang/Object;)V # @Inherited(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
+ (L1java/lang/Class<*>;L0java/lang/Object;)V # @Overrides(org.springframework.beans.factory.config.ConfigurableListableBeanFactory)
 registerSingleton
  (Ljava/lang/String;Ljava/lang/Object;)V
- (Ljava/lang/String;Ljava/lang/Object;)V
+ (L1java/lang/String;L1java/lang/Object;)V # @Inherited(org.springframework.beans.factory.support.DefaultSingletonBeanRegistry)
 removeBeanDefinition
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -177,10 +177,10 @@ resolveDependency
  (L1org/springframework/beans/factory/config/DependencyDescriptor;L0java/lang/String;L0java/util/Set<Ljava/lang/String;>;L0org/springframework/beans/TypeConverter;)L0java/lang/Object; # @Overrides(org.springframework.beans.factory.config.AutowireCapableBeanFactory)
 resolveNamedBean
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/config/NamedBeanHolder<TT;>;
- <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/beans/factory/config/NamedBeanHolder<TT;>;
+ <T:Ljava/lang/Object;>(L1java/lang/Class<TT;>;)Lorg/springframework/beans/factory/config/NamedBeanHolder<TT;>; # @Generated(24)
 setAutowireCandidateResolver
  (Lorg/springframework/beans/factory/support/AutowireCandidateResolver;)V
- (Lorg/springframework/beans/factory/support/AutowireCandidateResolver;)V
+ (L1org/springframework/beans/factory/support/AutowireCandidateResolver;)V # @Generated
 setBootstrapExecutor
  (Ljava/util/concurrent/Executor;)V
  (L0java/util/concurrent/Executor;)V # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)

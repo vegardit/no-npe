@@ -2,7 +2,7 @@ class org/springframework/jmx/export/assembler/MetadataMBeanInfoAssembler
 
 <init>
  (Lorg/springframework/jmx/export/metadata/JmxAttributeSource;)V
- (Lorg/springframework/jmx/export/metadata/JmxAttributeSource;)V
+ (L1org/springframework/jmx/export/metadata/JmxAttributeSource;)V # @Generated
 checkManagedBean
  (Ljava/lang/Object;)V
  (Ljava/lang/Object;)V
@@ -26,7 +26,7 @@ includeBean
  (Ljava/lang/Class<*>;Ljava/lang/String;)Z
 includeOperation
  (Ljava/lang/reflect/Method;Ljava/lang/String;)Z
- (Ljava/lang/reflect/Method;Ljava/lang/String;)Z
+ (L1java/lang/reflect/Method;Ljava/lang/String;)Z # @Generated(2)
 includeReadAttribute
  (Ljava/lang/reflect/Method;Ljava/lang/String;)Z
  (Ljava/lang/reflect/Method;Ljava/lang/String;)Z
@@ -35,7 +35,7 @@ includeWriteAttribute
  (Ljava/lang/reflect/Method;Ljava/lang/String;)Z
 populateAttributeDescriptor
  (Ljavax/management/Descriptor;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/String;)V
- (Ljavax/management/Descriptor;L0java/lang/reflect/Method;L0java/lang/reflect/Method;Ljava/lang/String;)V # @Inherited(org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler)
+ (L1javax/management/Descriptor;L0java/lang/reflect/Method;L0java/lang/reflect/Method;Ljava/lang/String;)V # @Overrides(org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler)
 populateMBeanDescriptor
  (Ljavax/management/Descriptor;Ljava/lang/Object;Ljava/lang/String;)V
  (Ljavax/management/Descriptor;Ljava/lang/Object;Ljava/lang/String;)V
@@ -44,4 +44,4 @@ populateOperationDescriptor
  (Ljavax/management/Descriptor;Ljava/lang/reflect/Method;Ljava/lang/String;)V
 setAttributeSource
  (Lorg/springframework/jmx/export/metadata/JmxAttributeSource;)V
- (Lorg/springframework/jmx/export/metadata/JmxAttributeSource;)V
+ (L1org/springframework/jmx/export/metadata/JmxAttributeSource;)V # @Generated

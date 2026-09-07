@@ -7,11 +7,11 @@ create
  <K:Ljava/lang/Object;>()L1com/google/common/util/concurrent/AtomicLongMap<TK;>; # @Generated(25)
 create
  <K:Ljava/lang/Object;>(Ljava/util/Map<+TK;+Ljava/lang/Long;>;)Lcom/google/common/util/concurrent/AtomicLongMap<TK;>;
- <K:Ljava/lang/Object;>(Ljava/util/Map<+TK;+Ljava/lang/Long;>;)L1com/google/common/util/concurrent/AtomicLongMap<TK;>; # @Generated(63)
+ <K:Ljava/lang/Object;>(L1java/util/Map<+TK;+Ljava/lang/Long;>;)L1com/google/common/util/concurrent/AtomicLongMap<TK;>; # @Generated(24,63)
 
 accumulateAndGet
  (TK;JLjava/util/function/LongBinaryOperator;)J
- (TK;JLjava/util/function/LongBinaryOperator;)J
+ (TK;JL1java/util/function/LongBinaryOperator;)J # @Generated(6)
 addAndGet
  (TK;J)J
  (TK;J)J
@@ -29,7 +29,7 @@ get
  (TK;)J
 getAndAccumulate
  (TK;JLjava/util/function/LongBinaryOperator;)J
- (TK;JLjava/util/function/LongBinaryOperator;)J
+ (TK;JL1java/util/function/LongBinaryOperator;)J # @Generated(6)
 getAndAdd
  (TK;J)J
  (TK;J)J
@@ -41,7 +41,7 @@ getAndIncrement
  (TK;)J
 getAndUpdate
  (TK;Ljava/util/function/LongUnaryOperator;)J
- (TK;Ljava/util/function/LongUnaryOperator;)J
+ (TK;L1java/util/function/LongUnaryOperator;)J # @Generated(5)
 incrementAndGet
  (TK;)J
  (TK;)J
@@ -62,4 +62,4 @@ toString
  ()L1java/lang/String; # @Inherited(java.lang.Object)
 updateAndGet
  (TK;Ljava/util/function/LongUnaryOperator;)J
- (TK;Ljava/util/function/LongUnaryOperator;)J
+ (TK;L1java/util/function/LongUnaryOperator;)J # @Generated(5)

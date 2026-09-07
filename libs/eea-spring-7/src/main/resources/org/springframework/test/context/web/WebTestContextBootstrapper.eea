@@ -2,7 +2,7 @@ class org/springframework/test/context/web/WebTestContextBootstrapper
 
 getDefaultContextLoaderClass
  (Ljava/lang/Class<*>;)Ljava/lang/Class<+Lorg/springframework/test/context/ContextLoader;>;
- (Ljava/lang/Class<*>;)L1java/lang/Class<+Lorg/springframework/test/context/ContextLoader;>; # @Inherited(org.springframework.test.context.support.DefaultTestContextBootstrapper)
+ (L1java/lang/Class<*>;)L1java/lang/Class<+Lorg/springframework/test/context/ContextLoader;>; # @Overrides(org.springframework.test.context.support.DefaultTestContextBootstrapper)
 processMergedContextConfiguration
  (Lorg/springframework/test/context/MergedContextConfiguration;)Lorg/springframework/test/context/MergedContextConfiguration;
- (L1org/springframework/test/context/MergedContextConfiguration;)L1org/springframework/test/context/MergedContextConfiguration; # @Generated(2,64)
+ (L1org/springframework/test/context/MergedContextConfiguration;)L1org/springframework/test/context/MergedContextConfiguration; # @Overrides(org.springframework.test.context.support.AbstractTestContextBootstrapper)

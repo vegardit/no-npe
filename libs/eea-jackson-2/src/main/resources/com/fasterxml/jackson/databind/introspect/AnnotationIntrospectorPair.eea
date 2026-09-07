@@ -25,13 +25,13 @@ allIntrospectors
  ()L1java/util/Collection<Lcom/fasterxml/jackson/databind/AnnotationIntrospector;>; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 allIntrospectors
  (Ljava/util/Collection<Lcom/fasterxml/jackson/databind/AnnotationIntrospector;>;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/AnnotationIntrospector;>;
- (L1java/util/Collection<Lcom/fasterxml/jackson/databind/AnnotationIntrospector;>;)Ljava/util/Collection<Lcom/fasterxml/jackson/databind/AnnotationIntrospector;>; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
+ (L1java/util/Collection<Lcom/fasterxml/jackson/databind/AnnotationIntrospector;>;)L1java/util/Collection<Lcom/fasterxml/jackson/databind/AnnotationIntrospector;>; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findAndAddVirtualProperties
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Ljava/util/List<Lcom/fasterxml/jackson/databind/ser/BeanPropertyWriter;>;)V
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Ljava/util/List<Lcom/fasterxml/jackson/databind/ser/BeanPropertyWriter;>;)V
 findAutoDetectVisibility
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker<*>;)Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker<*>;
- (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker<*>;)Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker<*>;
+ (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker<*>;)Lcom/fasterxml/jackson/databind/introspect/VisibilityChecker<*>; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findClassDescription
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/String;
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)L0java/lang/String; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
@@ -79,10 +79,10 @@ findEnumValue
  (L1java/lang/Enum<*>;)Ljava/lang/String; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findEnumValues
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String;
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String;
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findEnumValues
  (Ljava/lang/Class<*>;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String;
- (Ljava/lang/Class<*>;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String;
+ (Ljava/lang/Class<*>;[Ljava/lang/Enum<*>;[Ljava/lang/String;)[Ljava/lang/String; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findFilterId
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)Ljava/lang/Object;
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)L0java/lang/Object; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
@@ -124,7 +124,7 @@ findObjectIdInfo
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;)L0com/fasterxml/jackson/databind/introspect/ObjectIdInfo; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findObjectReferenceInfo
  (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;)Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;
- (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;)Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;
+ (Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo;)Lcom/fasterxml/jackson/databind/introspect/ObjectIdInfo; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 findPOJOBuilder
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)Ljava/lang/Class<*>;
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedClass;)L0java/lang/Class<*>; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
@@ -259,10 +259,10 @@ isTypeId
  (Lcom/fasterxml/jackson/databind/introspect/AnnotatedMember;)L0java/lang/Boolean; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 refineDeserializationType
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 refineSerializationType
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
- (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType;
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/Annotated;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/JavaType; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)
 resolveSetterConflict
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;Lcom/fasterxml/jackson/databind/introspect/AnnotatedMethod;)L0com/fasterxml/jackson/databind/introspect/AnnotatedMethod; # @Inherited(com.fasterxml.jackson.databind.AnnotationIntrospector)

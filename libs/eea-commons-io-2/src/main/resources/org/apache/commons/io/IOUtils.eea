@@ -105,10 +105,10 @@ closeQuietly
  ([0Ljava/io/Closeable;)V # @Generated(2)
 closeQuietlySuppress
  <T:Ljava/lang/Throwable;>(Ljava/io/Closeable;TT;)TT;
- <T:Ljava/lang/Throwable;>(Ljava/io/Closeable;T1T;)TT; # @Generated(46)
+ <T:Ljava/lang/Throwable;>(Ljava/io/Closeable;T1T;)T1T; # @Generated(46,50)
 consume
  (Ljava/io/InputStream;)J
- (L1java/io/InputStream;)J
+ (L1java/io/InputStream;)J # @Generated
 consume
  (Ljava/io/Reader;)J
  (L1java/io/Reader;)J
@@ -126,34 +126,34 @@ copy
  (L1java/io/ByteArrayOutputStream;)L1org/apache/commons/io/input/QueueInputStream; # @Generated(2,34)
 copy
  (Ljava/io/InputStream;Ljava/io/OutputStream;)I
- (L1java/io/InputStream;L1java/io/OutputStream;)I
+ (L1java/io/InputStream;L1java/io/OutputStream;)I # @Generated(2,23)
 copy
  (Ljava/io/InputStream;Ljava/io/OutputStream;I)J
- (L1java/io/InputStream;L1java/io/OutputStream;I)J
+ (L1java/io/InputStream;L1java/io/OutputStream;I)J # @Generated(2,23)
 copy
  (Ljava/io/InputStream;Ljava/io/Writer;)V
- (L1java/io/InputStream;L1java/io/Writer;)V
+ (L1java/io/InputStream;L1java/io/Writer;)V # @Generated(2)
 copy
  (Ljava/io/InputStream;Ljava/io/Writer;Ljava/lang/String;)V
- (L1java/io/InputStream;L1java/io/Writer;L0java/lang/String;)V
+ (L1java/io/InputStream;L1java/io/Writer;L0java/lang/String;)V # @Generated(2)
 copy
  (Ljava/io/InputStream;Ljava/io/Writer;Ljava/nio/charset/Charset;)V
- (L1java/io/InputStream;L1java/io/Writer;L0java/nio/charset/Charset;)V
+ (L1java/io/InputStream;L1java/io/Writer;L0java/nio/charset/Charset;)V # @Generated(2)
 copy
  (Ljava/io/Reader;Ljava/io/OutputStream;)V
- (L1java/io/Reader;L1java/io/OutputStream;)V
+ (L1java/io/Reader;L1java/io/OutputStream;)V # @Generated(18)
 copy
  (Ljava/io/Reader;Ljava/io/OutputStream;Ljava/lang/String;)V
- (L1java/io/Reader;L1java/io/OutputStream;L0java/lang/String;)V
+ (L1java/io/Reader;L1java/io/OutputStream;L0java/lang/String;)V # @Generated(18)
 copy
  (Ljava/io/Reader;Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
- (L1java/io/Reader;L1java/io/OutputStream;L0java/nio/charset/Charset;)V
+ (L1java/io/Reader;L1java/io/OutputStream;L0java/nio/charset/Charset;)V # @Generated(18)
 copy
  (Ljava/io/Reader;Ljava/io/Writer;)I
  (L1java/io/Reader;L1java/io/Writer;)I
 copy
  (Ljava/io/Reader;Ljava/lang/Appendable;)J
- (L1java/io/Reader;L1java/lang/Appendable;)J
+ (L1java/io/Reader;L1java/lang/Appendable;)J # @Generated(2)
 copy
  (Ljava/io/Reader;Ljava/lang/Appendable;Ljava/nio/CharBuffer;)J
  (L1java/io/Reader;L1java/lang/Appendable;Ljava/nio/CharBuffer;)J # @Generated(2)
@@ -165,7 +165,7 @@ copy
  (L1java/net/URL;L1java/io/OutputStream;)J # @Generated(2)
 copyLarge
  (Ljava/io/InputStream;Ljava/io/OutputStream;)J
- (L1java/io/InputStream;L1java/io/OutputStream;)J
+ (L1java/io/InputStream;L1java/io/OutputStream;)J # @Generated(2,23)
 copyLarge
  (Ljava/io/InputStream;Ljava/io/OutputStream;JJ)J
  (L1java/io/InputStream;L1java/io/OutputStream;JJ)J
@@ -201,55 +201,55 @@ length
  ([0Ljava/lang/Object;)I # @Generated(2)
 lineIterator
  (Ljava/io/InputStream;Ljava/lang/String;)Lorg/apache/commons/io/LineIterator;
- (L1java/io/InputStream;L0java/lang/String;)L1org/apache/commons/io/LineIterator; # @Generated(42)
+ (L1java/io/InputStream;L0java/lang/String;)L1org/apache/commons/io/LineIterator; # @Generated(2,42)
 lineIterator
  (Ljava/io/InputStream;Ljava/nio/charset/Charset;)Lorg/apache/commons/io/LineIterator;
- (L1java/io/InputStream;L0java/nio/charset/Charset;)L1org/apache/commons/io/LineIterator; # @Generated(50)
+ (L1java/io/InputStream;L0java/nio/charset/Charset;)L1org/apache/commons/io/LineIterator; # @Generated(2,50)
 lineIterator
  (Ljava/io/Reader;)Lorg/apache/commons/io/LineIterator;
- (L1java/io/Reader;)L1org/apache/commons/io/LineIterator; # @Generated(19)
+ (L1java/io/Reader;)L1org/apache/commons/io/LineIterator; # @Generated(2,19)
 read
  (Ljava/io/InputStream;[B)I
- (L1java/io/InputStream;[1B)I
+ (L1java/io/InputStream;[1B)I # @Generated(23)
 read
  (Ljava/io/InputStream;[BII)I
- (L1java/io/InputStream;[1BII)I
+ (L1java/io/InputStream;[1BII)I # @Generated(23)
 read
  (Ljava/io/Reader;[C)I
- (L1java/io/Reader;[1C)I
+ (L1java/io/Reader;[1C)I # @Generated(18)
 read
  (Ljava/io/Reader;[CII)I
- (L1java/io/Reader;[1CII)I
+ (L1java/io/Reader;[1CII)I # @Generated(18)
 read
  (Ljava/nio/channels/ReadableByteChannel;Ljava/nio/ByteBuffer;)I
  (L1java/nio/channels/ReadableByteChannel;L1java/nio/ByteBuffer;)I # @Generated(41)
 readFully
  (Ljava/io/InputStream;I)[B
- (L1java/io/InputStream;I)[1B # @Generated(25)
+ (L1java/io/InputStream;I)[1B # @Generated(2,25)
 readFully
  (Ljava/io/InputStream;[B)V
- (L1java/io/InputStream;[1B)V
+ (L1java/io/InputStream;[1B)V # @Generated(23)
 readFully
  (Ljava/io/InputStream;[BII)V
- (L1java/io/InputStream;[1BII)V
+ (L1java/io/InputStream;[1BII)V # @Generated(23)
 readFully
  (Ljava/io/Reader;[C)V
- (L1java/io/Reader;[1C)V
+ (L1java/io/Reader;[1C)V # @Generated(18)
 readFully
  (Ljava/io/Reader;[CII)V
- (L1java/io/Reader;[1CII)V
+ (L1java/io/Reader;[1CII)V # @Generated(18)
 readFully
  (Ljava/nio/channels/ReadableByteChannel;Ljava/nio/ByteBuffer;)V
  (L1java/nio/channels/ReadableByteChannel;L1java/nio/ByteBuffer;)V # @Generated(41)
 readLines
  (Ljava/io/InputStream;)Ljava/util/List<Ljava/lang/String;>;
- (L1java/io/InputStream;)L1java/util/List<Ljava/lang/String;>;
+ (L1java/io/InputStream;)L1java/util/List<Ljava/lang/String;>; # @Generated(2)
 readLines
  (Ljava/io/InputStream;Ljava/lang/String;)Ljava/util/List<Ljava/lang/String;>;
- (L1java/io/InputStream;L1java/lang/String;)L1java/util/List<L1java/lang/String;>;
+ (L1java/io/InputStream;L1java/lang/String;)L1java/util/List<L1java/lang/String;>; # @Generated(2)
 readLines
  (Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/util/List<Ljava/lang/String;>;
- (L1java/io/InputStream;L1java/nio/charset/Charset;)L1java/util/List<L1java/lang/String;>;
+ (L1java/io/InputStream;L1java/nio/charset/Charset;)L1java/util/List<L1java/lang/String;>; # @Generated(2)
 readLines
  (Ljava/io/Reader;)Ljava/util/List<Ljava/lang/String;>;
  (L1java/io/Reader;)L1java/util/List<L1java/lang/String;>;
@@ -321,7 +321,7 @@ toByteArray
  (L1java/io/InputStream;II)[B # @Generated(2)
 toByteArray
  (Ljava/io/InputStream;J)[B
- (L1java/io/InputStream;J)[1B # @Generated(25)
+ (L1java/io/InputStream;J)[1B # @Generated(2,25)
 toByteArray
  (Ljava/io/Reader;)[B
  (L1java/io/Reader;)[1B
@@ -339,34 +339,34 @@ toByteArray
  (L1java/net/URI;)[1B # @Generated(2)
 toByteArray
  (Ljava/net/URL;)[B
- (L1java/net/URL;)[1B
+ (L1java/net/URL;)[1B # @Generated(2)
 toByteArray
  (Ljava/net/URLConnection;)[B
  (L1java/net/URLConnection;)[1B # @Generated(2)
 toCharArray
  (Ljava/io/InputStream;)[C
- (L1java/io/InputStream;)[1C # @Generated(24)
+ (L1java/io/InputStream;)[1C # @Generated(2,24)
 toCharArray
  (Ljava/io/InputStream;Ljava/lang/String;)[C
- (L1java/io/InputStream;L0java/lang/String;)[1C # @Generated(42)
+ (L1java/io/InputStream;L0java/lang/String;)[1C # @Generated(2,42)
 toCharArray
  (Ljava/io/InputStream;Ljava/nio/charset/Charset;)[C
- (L1java/io/InputStream;L0java/nio/charset/Charset;)[1C # @Generated(50)
+ (L1java/io/InputStream;L0java/nio/charset/Charset;)[1C # @Generated(2,50)
 toCharArray
  (Ljava/io/Reader;)[C
  (L1java/io/Reader;)[1C # @Generated(19)
 toInputStream
  (Ljava/lang/CharSequence;)Ljava/io/InputStream;
- (L1java/lang/CharSequence;)L1java/io/InputStream; # @Generated(27)
+ (L1java/lang/CharSequence;)L1java/io/InputStream; # @Generated(2,27)
 toInputStream
  (Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/io/InputStream;
- (L1java/lang/CharSequence;L0java/lang/String;)L1java/io/InputStream; # @Generated(45)
+ (L1java/lang/CharSequence;L0java/lang/String;)L1java/io/InputStream; # @Generated(2,45)
 toInputStream
  (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Ljava/io/InputStream;
  (L1java/lang/CharSequence;L0java/nio/charset/Charset;)L1java/io/InputStream; # @Generated(2,53)
 toInputStream
  (Ljava/lang/String;)Ljava/io/InputStream;
- (L1java/lang/String;)L1java/io/InputStream; # @Generated(21)
+ (L1java/lang/String;)L1java/io/InputStream; # @Generated(2,21)
 toInputStream
  (Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;
  (L1java/lang/String;Ljava/lang/String;)L1java/io/InputStream; # @Generated(2,39)
@@ -387,19 +387,19 @@ toString
  (L1java/io/Reader;)L1java/lang/String; # @Generated(19)
 toString
  (Ljava/net/URI;)Ljava/lang/String;
- (L1java/net/URI;)L1java/lang/String;
+ (L1java/net/URI;)L1java/lang/String; # @Generated(2)
 toString
  (Ljava/net/URI;Ljava/lang/String;)Ljava/lang/String;
- (L1java/net/URI;L0java/lang/String;)L1java/lang/String;
+ (L1java/net/URI;L0java/lang/String;)L1java/lang/String; # @Generated(2)
 toString
  (Ljava/net/URI;Ljava/nio/charset/Charset;)Ljava/lang/String;
  (L1java/net/URI;L0java/nio/charset/Charset;)L1java/lang/String; # @Generated(2)
 toString
  (Ljava/net/URL;)Ljava/lang/String;
- (L1java/net/URL;)L1java/lang/String;
+ (L1java/net/URL;)L1java/lang/String; # @Generated(2)
 toString
  (Ljava/net/URL;Ljava/lang/String;)Ljava/lang/String;
- (L1java/net/URL;Ljava/lang/String;)L1java/lang/String;
+ (L1java/net/URL;Ljava/lang/String;)L1java/lang/String; # @Generated(2)
 toString
  (Ljava/net/URL;Ljava/nio/charset/Charset;)Ljava/lang/String;
  (L1java/net/URL;Ljava/nio/charset/Charset;)L1java/lang/String; # @Generated(2)

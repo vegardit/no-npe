@@ -6,19 +6,19 @@ quoteReplacement
 
 appendReplacement
  (Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
- (L1java/lang/StringBuffer;L1java/lang/String;)L1java/util/regex/Matcher; # @Generated(2,45)
+ (L1java/lang/StringBuffer;L1java/lang/String;)L1java/util/regex/Matcher; # @Generated(2,26,45)
 appendReplacement
  (Ljava/lang/StringBuilder;Ljava/lang/String;)Ljava/util/regex/Matcher;
- (L1java/lang/StringBuilder;L1java/lang/String;)L1java/util/regex/Matcher; # @Generated(2,46)
+ (L1java/lang/StringBuilder;L1java/lang/String;)L1java/util/regex/Matcher; # @Generated(2,27,46)
 appendTail
  (Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
- (L1java/lang/StringBuffer;)L1java/lang/StringBuffer; # @Generated(2)
+ (L1java/lang/StringBuffer;)L1java/lang/StringBuffer; # @Generated(2,27)
 appendTail
  (Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
- (L1java/lang/StringBuilder;)L1java/lang/StringBuilder; # @Generated(2)
+ (L1java/lang/StringBuilder;)L1java/lang/StringBuilder; # @Generated(2,28)
 end
  (Ljava/lang/String;)I
- (L1java/lang/String;)I
+ (L1java/lang/String;)I # @Inherited(java.util.regex.MatchResult)
 group
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.util.regex.MatchResult)
@@ -27,7 +27,7 @@ group
  (I)Ljava/lang/String; # @Keep not annotated on purpose
 group
  (Ljava/lang/String;)Ljava/lang/String;
- (L1java/lang/String;)L0java/lang/String; # @Generated(21)
+ (L1java/lang/String;)L0java/lang/String; # @Overrides(java.util.regex.MatchResult)
 namedGroups
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;
  ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/Integer;>;
@@ -60,7 +60,7 @@ results
  ()L1java/util/stream/Stream<L1java/util/regex/MatchResult;>; # @Generated(3)
 start
  (Ljava/lang/String;)I
- (L1java/lang/String;)I
+ (L1java/lang/String;)I # @Inherited(java.util.regex.MatchResult)
 toMatchResult
  ()Ljava/util/regex/MatchResult;
  ()L1java/util/regex/MatchResult; # @Generated

@@ -2,7 +2,7 @@ class com/google/common/base/Throwables
 
 getCausalChain
  (Ljava/lang/Throwable;)Ljava/util/List<Ljava/lang/Throwable;>;
- (Ljava/lang/Throwable;)L1java/util/List<Ljava/lang/Throwable;>; # @Generated(24)
+ (L1java/lang/Throwable;)L1java/util/List<Ljava/lang/Throwable;>; # @Generated(2,24)
 getCauseAs
  <X:Ljava/lang/Throwable;>(Ljava/lang/Throwable;Ljava/lang/Class<TX;>;)TX;
  <X:Ljava/lang/Throwable;>(L1java/lang/Throwable;L1java/lang/Class<TX;>;)T0X; # @Generated(27,48,71)
@@ -14,7 +14,7 @@ getStackTraceAsString
  (L1java/lang/Throwable;)L1java/lang/String; # @Generated(2,24)
 lazyStackTrace
  (Ljava/lang/Throwable;)Ljava/util/List<Ljava/lang/StackTraceElement;>;
- (Ljava/lang/Throwable;)L1java/util/List<Ljava/lang/StackTraceElement;>; # @Generated(24)
+ (L1java/lang/Throwable;)L1java/util/List<Ljava/lang/StackTraceElement;>; # @Generated(2,24)
 propagate
  (Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
  (Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
@@ -26,13 +26,13 @@ propagateIfPossible
  (L0java/lang/Throwable;)V # @Generated
 propagateIfPossible
  <X1:Ljava/lang/Throwable;X2:Ljava/lang/Throwable;>(Ljava/lang/Throwable;Ljava/lang/Class<TX1;>;Ljava/lang/Class<TX2;>;)V^TX1;^TX2;
- <X1:Ljava/lang/Throwable;X2:Ljava/lang/Throwable;>(L0java/lang/Throwable;Ljava/lang/Class<TX1;>;Ljava/lang/Class<TX2;>;)V^TX1;^TX2; # @Generated(52)
+ <X1:Ljava/lang/Throwable;X2:Ljava/lang/Throwable;>(L0java/lang/Throwable;Ljava/lang/Class<TX1;>;L1java/lang/Class<TX2;>;)V^TX1;^TX2; # @Generated(52,96)
 propagateIfPossible
  <X:Ljava/lang/Throwable;>(Ljava/lang/Throwable;Ljava/lang/Class<TX;>;)V^TX;
  <X:Ljava/lang/Throwable;>(L0java/lang/Throwable;Ljava/lang/Class<TX;>;)V^TX; # @Generated(27)
 throwIfInstanceOf
  <X:Ljava/lang/Throwable;>(Ljava/lang/Throwable;Ljava/lang/Class<TX;>;)V^TX;
- <X:Ljava/lang/Throwable;>(Ljava/lang/Throwable;L1java/lang/Class<TX;>;)V^TX; # @Generated(48)
+ <X:Ljava/lang/Throwable;>(L1java/lang/Throwable;L1java/lang/Class<TX;>;)V^TX; # @Generated(27,48)
 throwIfUnchecked
  (Ljava/lang/Throwable;)V
- (Ljava/lang/Throwable;)V
+ (L1java/lang/Throwable;)V # @Generated

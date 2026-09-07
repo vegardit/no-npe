@@ -2,7 +2,7 @@ class org/springframework/core/io/buffer/DataBufferWrapper
 
 <init>
  (Lorg/springframework/core/io/buffer/DataBuffer;)V
- (Lorg/springframework/core/io/buffer/DataBuffer;)V
+ (L1org/springframework/core/io/buffer/DataBuffer;)V # @Generated
 asByteBuffer
  ()Ljava/nio/ByteBuffer;
  ()Ljava/nio/ByteBuffer;
@@ -56,13 +56,13 @@ toString
  (IILjava/nio/charset/Charset;)Ljava/lang/String;
 toString
  (Ljava/nio/charset/Charset;)Ljava/lang/String;
- (Ljava/nio/charset/Charset;)Ljava/lang/String;
+ (L1java/nio/charset/Charset;)Ljava/lang/String; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
 write
  (B)Lorg/springframework/core/io/buffer/DataBuffer;
  (B)Lorg/springframework/core/io/buffer/DataBuffer;
 write
  (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lorg/springframework/core/io/buffer/DataBuffer;
- (L1java/lang/CharSequence;Ljava/nio/charset/Charset;)L1org/springframework/core/io/buffer/DataBuffer; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
+ (L1java/lang/CharSequence;L1java/nio/charset/Charset;)L1org/springframework/core/io/buffer/DataBuffer; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
 write
  ([B)Lorg/springframework/core/io/buffer/DataBuffer;
  ([B)Lorg/springframework/core/io/buffer/DataBuffer;

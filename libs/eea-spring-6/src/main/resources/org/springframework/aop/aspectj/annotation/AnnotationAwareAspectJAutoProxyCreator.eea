@@ -5,7 +5,7 @@ findCandidateAdvisors
  ()Ljava/util/List<Lorg/springframework/aop/Advisor;>;
 initBeanFactory
  (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
- (Lorg/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V
+ (L1org/springframework/beans/factory/config/ConfigurableListableBeanFactory;)V # @Inherited(org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator)
 isEligibleAspectBean
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -14,7 +14,7 @@ isInfrastructureClass
  (Ljava/lang/Class<*>;)Z
 setAspectJAdvisorFactory
  (Lorg/springframework/aop/aspectj/annotation/AspectJAdvisorFactory;)V
- (Lorg/springframework/aop/aspectj/annotation/AspectJAdvisorFactory;)V
+ (L1org/springframework/aop/aspectj/annotation/AspectJAdvisorFactory;)V # @Generated
 setIncludePatterns
  (Ljava/util/List<Ljava/lang/String;>;)V
  (L1java/util/List<Ljava/lang/String;>;)V # @Generated(2)

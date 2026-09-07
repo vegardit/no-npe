@@ -2,7 +2,7 @@ class com/google/common/util/concurrent/ListeningExecutorService
 
 awaitTermination
  (Ljava/time/Duration;)Z
- (Ljava/time/Duration;)Z
+ (L1java/time/Duration;)Z # @Generated
 invokeAll
  <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)Ljava/util/List<Ljava/util/concurrent/Future<TT;>;>;
  <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;)L1java/util/List<L1java/util/concurrent/Future<TT;>;>; # @Inherited(java.util.concurrent.ExecutorService)
@@ -11,10 +11,10 @@ invokeAll
  <T:Ljava/lang/Object;>(L1java/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;JL1java/util/concurrent/TimeUnit;)L1java/util/List<L1java/util/concurrent/Future<TT;>;>; # @Inherited(java.util.concurrent.ExecutorService)
 invokeAll
  <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;Ljava/time/Duration;)Ljava/util/List<Ljava/util/concurrent/Future<TT;>;>;
- <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;Ljava/time/Duration;)Ljava/util/List<Ljava/util/concurrent/Future<TT;>;>;
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;L1java/time/Duration;)Ljava/util/List<Ljava/util/concurrent/Future<TT;>;>; # @Generated(85)
 invokeAny
  <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;Ljava/time/Duration;)TT;
- <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;Ljava/time/Duration;)TT;
+ <T:Ljava/lang/Object;>(Ljava/util/Collection<+Ljava/util/concurrent/Callable<TT;>;>;L1java/time/Duration;)TT; # @Generated(85)
 submit
  (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture<*>;
  (Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture<*>;

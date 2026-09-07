@@ -17,10 +17,10 @@ of
  <K::Ljava/lang/Comparable<*>;V:Ljava/lang/Object;>()L1com/google/common/collect/ImmutableRangeMap<TK;TV;>; # @Generated(53)
 of
  <K::Ljava/lang/Comparable<*>;V:Ljava/lang/Object;>(Lcom/google/common/collect/Range<TK;>;TV;)Lcom/google/common/collect/ImmutableRangeMap<TK;TV;>;
- <K::Ljava/lang/Comparable<*>;V:Ljava/lang/Object;>(Lcom/google/common/collect/Range<TK;>;TV;)L1com/google/common/collect/ImmutableRangeMap<TK;TV;>; # @Generated(94)
+ <K::Ljava/lang/Comparable<*>;V:Ljava/lang/Object;>(L1com/google/common/collect/Range<TK;>;T1V;)L1com/google/common/collect/ImmutableRangeMap<TK;TV;>; # @Generated(52,90,94)
 toImmutableRangeMap
  <T:Ljava/lang/Object;K::Ljava/lang/Comparable<-TK;>;V:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;Lcom/google/common/collect/Range<TK;>;>;Ljava/util/function/Function<-TT;+TV;>;)Ljava/util/stream/Collector<TT;*Lcom/google/common/collect/ImmutableRangeMap<TK;TV;>;>;
- <T:Ljava/lang/Object;K::Ljava/lang/Comparable<-TK;>;V:Ljava/lang/Object;>(Ljava/util/function/Function<-TT;Lcom/google/common/collect/Range<TK;>;>;Ljava/util/function/Function<-TT;+TV;>;)L1java/util/stream/Collector<TT;*Lcom/google/common/collect/ImmutableRangeMap<TK;TV;>;>; # @Generated(188)
+ <T:Ljava/lang/Object;K::Ljava/lang/Comparable<-TK;>;V:Ljava/lang/Object;>(L1java/util/function/Function<-TT;Lcom/google/common/collect/Range<TK;>;>;L1java/util/function/Function<-TT;+TV;>;)L1java/util/stream/Collector<TT;*Lcom/google/common/collect/ImmutableRangeMap<TK;TV;>;>; # @Generated(75,148,188)
 
 asDescendingMapOfRanges
  ()Lcom/google/common/collect/ImmutableMap<Lcom/google/common/collect/Range<TK;>;TV;>;
@@ -33,10 +33,10 @@ equals
  (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
 get
  (TK;)TV;
- (TK;)T0V; # @Inherited(com.google.common.collect.RangeMap)
+ (T1K;)T0V; # @Overrides(com.google.common.collect.RangeMap)
 getEntry
  (TK;)Ljava/util/Map$Entry<Lcom/google/common/collect/Range<TK;>;TV;>;
- (TK;)L0java/util/Map$Entry<Lcom/google/common/collect/Range<TK;>;TV;>; # @Inherited(com.google.common.collect.RangeMap)
+ (T1K;)L0java/util/Map$Entry<Lcom/google/common/collect/Range<TK;>;TV;>; # @Overrides(com.google.common.collect.RangeMap)
 merge
  (Lcom/google/common/collect/Range<TK;>;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)V
  (Lcom/google/common/collect/Range<TK;>;T0V;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)V # @Inherited(com.google.common.collect.RangeMap)
@@ -57,7 +57,7 @@ span
  ()L1com/google/common/collect/Range<TK;>; # @Generated(3)
 subRangeMap
  (Lcom/google/common/collect/Range<TK;>;)Lcom/google/common/collect/ImmutableRangeMap<TK;TV;>;
- (Lcom/google/common/collect/Range<TK;>;)L1com/google/common/collect/ImmutableRangeMap<TK;TV;>; # @Generated(41)
+ (L1com/google/common/collect/Range<TK;>;)L1com/google/common/collect/ImmutableRangeMap<TK;TV;>; # @Generated(2,41)
 toString
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Inherited(java.lang.Object)

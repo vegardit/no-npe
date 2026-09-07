@@ -2,10 +2,10 @@ class com/google/common/io/ByteSource
 
 concat
  (Ljava/lang/Iterable<+Lcom/google/common/io/ByteSource;>;)Lcom/google/common/io/ByteSource;
- (Ljava/lang/Iterable<+Lcom/google/common/io/ByteSource;>;)L1com/google/common/io/ByteSource; # @Generated(59)
+ (L1java/lang/Iterable<+Lcom/google/common/io/ByteSource;>;)L1com/google/common/io/ByteSource; # @Generated(2,59)
 concat
  (Ljava/util/Iterator<+Lcom/google/common/io/ByteSource;>;)Lcom/google/common/io/ByteSource;
- (Ljava/util/Iterator<+Lcom/google/common/io/ByteSource;>;)L1com/google/common/io/ByteSource; # @Generated(59)
+ (L1java/util/Iterator<+Lcom/google/common/io/ByteSource;>;)L1com/google/common/io/ByteSource; # @Generated(2,59)
 concat
  ([Lcom/google/common/io/ByteSource;)Lcom/google/common/io/ByteSource;
  ([Lcom/google/common/io/ByteSource;)L1com/google/common/io/ByteSource; # @Generated(37)
@@ -18,16 +18,16 @@ wrap
 
 asCharSource
  (Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
- (Ljava/nio/charset/Charset;)L1com/google/common/io/CharSource; # @Generated(29)
+ (L1java/nio/charset/Charset;)L1com/google/common/io/CharSource; # @Generated(2,29)
 contentEquals
  (Lcom/google/common/io/ByteSource;)Z
- (Lcom/google/common/io/ByteSource;)Z
+ (L1com/google/common/io/ByteSource;)Z # @Generated
 copyTo
  (Lcom/google/common/io/ByteSink;)J
- (Lcom/google/common/io/ByteSink;)J
+ (L1com/google/common/io/ByteSink;)J # @Generated
 copyTo
  (Ljava/io/OutputStream;)J
- (Ljava/io/OutputStream;)J
+ (L1java/io/OutputStream;)J # @Generated
 hash
  (Lcom/google/common/hash/HashFunction;)Lcom/google/common/hash/HashCode;
  (L1com/google/common/hash/HashFunction;)Lcom/google/common/hash/HashCode; # @Generated(2)
@@ -42,7 +42,7 @@ read
  ()[B
 read
  <T:Ljava/lang/Object;>(Lcom/google/common/io/ByteProcessor<TT;>;)TT;
- <T:Ljava/lang/Object;>(Lcom/google/common/io/ByteProcessor<TT;>;)T1T;
+ <T:Ljava/lang/Object;>(L1com/google/common/io/ByteProcessor<TT;>;)T1T; # @Generated(24)
 sizeIfKnown
  ()Lcom/google/common/base/Optional<Ljava/lang/Long;>;
  ()L1com/google/common/base/Optional<Ljava/lang/Long;>; # @Generated(3)

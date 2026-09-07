@@ -6,10 +6,10 @@ super org/springframework/messaging/handler/invocation/AbstractMethodMessageHand
 
 <init>
  (Lorg/springframework/messaging/SubscribableChannel;Lorg/springframework/messaging/MessageChannel;Lorg/springframework/messaging/simp/SimpMessageSendingOperations;)V
- (Lorg/springframework/messaging/SubscribableChannel;Lorg/springframework/messaging/MessageChannel;Lorg/springframework/messaging/simp/SimpMessageSendingOperations;)V
+ (L1org/springframework/messaging/SubscribableChannel;L1org/springframework/messaging/MessageChannel;L1org/springframework/messaging/simp/SimpMessageSendingOperations;)V # @Generated(2,53,99)
 createExceptionHandlerMethodResolverFor
  (Ljava/lang/Class<*>;)Lorg/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver;
- (Ljava/lang/Class<*>;)L1org/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver; # @Inherited(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
+ (L1java/lang/Class<*>;)L1org/springframework/messaging/handler/invocation/AbstractExceptionHandlerMethodResolver; # @Overrides(org.springframework.messaging.handler.invocation.AbstractMethodMessageHandler)
 getConversionService
  ()Lorg/springframework/core/convert/ConversionService;
  ()Lorg/springframework/core/convert/ConversionService;
@@ -33,7 +33,7 @@ getMappingComparator
  (Lorg/springframework/messaging/Message<*>;)Ljava/util/Comparator<Lorg/springframework/messaging/simp/SimpMessageMappingInfo;>;
 getMappingForMethod
  (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)Lorg/springframework/messaging/simp/SimpMessageMappingInfo;
- (Ljava/lang/reflect/Method;Ljava/lang/Class<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo; # @Generated(49)
+ (L1java/lang/reflect/Method;Ljava/lang/Class<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo; # @Generated(2,49)
 getMatchingMapping
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/Message<*>;)Lorg/springframework/messaging/simp/SimpMessageMappingInfo;
  (L1org/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/Message<*>;)L0org/springframework/messaging/simp/SimpMessageMappingInfo; # @Generated(2,104)
@@ -51,7 +51,7 @@ getValidator
  ()L0org/springframework/validation/Validator; # @Generated
 handleMatch
  (Lorg/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V
- (L1org/springframework/messaging/simp/SimpMessageMappingInfo;Lorg/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;Lorg/springframework/messaging/Message<*>;)V # @Generated(2)
+ (L1org/springframework/messaging/simp/SimpMessageMappingInfo;L1org/springframework/messaging/handler/HandlerMethod;Ljava/lang/String;L1org/springframework/messaging/Message<*>;)V # @Generated(2,61,132)
 initArgumentResolvers
  ()Ljava/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>;
  ()L1java/util/List<Lorg/springframework/messaging/handler/invocation/HandlerMethodArgumentResolver;>; # @Generated(3)
@@ -60,7 +60,7 @@ initReturnValueHandlers
  ()L1java/util/List<+Lorg/springframework/messaging/handler/invocation/HandlerMethodReturnValueHandler;>; # @Generated(3)
 isHandler
  (Ljava/lang/Class<*>;)Z
- (Ljava/lang/Class<*>;)Z
+ (L1java/lang/Class<*>;)Z # @Generated(2)
 resolveEmbeddedValuesInDestinations
  ([Ljava/lang/String;)[Ljava/lang/String;
  ([Ljava/lang/String;)[Ljava/lang/String; # @Generated(PolyNull)
@@ -81,7 +81,7 @@ setMessageConverter
  (Lorg/springframework/messaging/converter/MessageConverter;)V
 setPathMatcher
  (Lorg/springframework/util/PathMatcher;)V
- (Lorg/springframework/util/PathMatcher;)V
+ (L1org/springframework/util/PathMatcher;)V # @Generated
 setValidator
  (Lorg/springframework/validation/Validator;)V
  (L0org/springframework/validation/Validator;)V # @Generated

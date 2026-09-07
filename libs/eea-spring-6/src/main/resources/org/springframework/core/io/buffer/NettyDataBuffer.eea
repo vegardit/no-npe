@@ -26,10 +26,10 @@ getNativeBuffer
  ()Lio/netty/buffer/ByteBuf;
 indexOf
  (Ljava/util/function/IntPredicate;I)I
- (Ljava/util/function/IntPredicate;I)I
+ (L1java/util/function/IntPredicate;I)I # @Generated
 lastIndexOf
  (Ljava/util/function/IntPredicate;I)I
- (Ljava/util/function/IntPredicate;I)I
+ (L1java/util/function/IntPredicate;I)I # @Generated
 read
  ([B)Lorg/springframework/core/io/buffer/NettyDataBuffer;
  ([B)L1org/springframework/core/io/buffer/NettyDataBuffer; # @Generated(5)
@@ -65,10 +65,10 @@ toString
  ()L1java/lang/String; # @Inherited(java.lang.Object)
 toString
  (IILjava/nio/charset/Charset;)Ljava/lang/String;
- (IILjava/nio/charset/Charset;)Ljava/lang/String;
+ (IIL1java/nio/charset/Charset;)Ljava/lang/String; # @Generated(4)
 toString
  (Ljava/nio/charset/Charset;)Ljava/lang/String;
- (Ljava/nio/charset/Charset;)Ljava/lang/String;
+ (L1java/nio/charset/Charset;)Ljava/lang/String; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
 touch
  (Ljava/lang/Object;)Lorg/springframework/core/io/buffer/PooledDataBuffer;
  (Ljava/lang/Object;)L1org/springframework/core/io/buffer/PooledDataBuffer; # @Generated(21)
@@ -80,7 +80,7 @@ write
  (B)L1org/springframework/core/io/buffer/NettyDataBuffer; # @Generated
 write
  (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lorg/springframework/core/io/buffer/DataBuffer;
- (L1java/lang/CharSequence;Ljava/nio/charset/Charset;)L1org/springframework/core/io/buffer/DataBuffer; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
+ (L1java/lang/CharSequence;L1java/nio/charset/Charset;)L1org/springframework/core/io/buffer/DataBuffer; # @Inherited(org.springframework.core.io.buffer.DataBuffer)
 write
  ([B)Lorg/springframework/core/io/buffer/NettyDataBuffer;
  ([B)L1org/springframework/core/io/buffer/NettyDataBuffer; # @Generated(5)

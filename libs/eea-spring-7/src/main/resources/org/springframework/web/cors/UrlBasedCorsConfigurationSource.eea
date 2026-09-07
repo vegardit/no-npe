@@ -2,10 +2,10 @@ class org/springframework/web/cors/UrlBasedCorsConfigurationSource
 
 <init>
  (Lorg/springframework/web/util/pattern/PathPatternParser;)V
- (Lorg/springframework/web/util/pattern/PathPatternParser;)V
+ (L1org/springframework/web/util/pattern/PathPatternParser;)V # @Generated
 getCorsConfiguration
  (Ljakarta/servlet/http/HttpServletRequest;)Lorg/springframework/web/cors/CorsConfiguration;
- (Ljakarta/servlet/http/HttpServletRequest;)L0org/springframework/web/cors/CorsConfiguration; # @Inherited(org.springframework.web.cors.CorsConfigurationSource)
+ (L1jakarta/servlet/http/HttpServletRequest;)L0org/springframework/web/cors/CorsConfiguration; # @Overrides(org.springframework.web.cors.CorsConfigurationSource)
 getCorsConfigurations
  ()Ljava/util/Map<Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;>;
  ()Ljava/util/Map<Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;>;
@@ -20,4 +20,4 @@ setPathMatcher
  (Lorg/springframework/util/PathMatcher;)V
 setUrlPathHelper
  (Lorg/springframework/web/util/UrlPathHelper;)V
- (Lorg/springframework/web/util/UrlPathHelper;)V
+ (L1org/springframework/web/util/UrlPathHelper;)V # @Generated

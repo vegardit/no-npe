@@ -14,13 +14,13 @@ super org/assertj/core/api/ArraySortedAssert
 
 <init>
  ([TELEMENT;Ljava/lang/Class<*>;)V
- ([TELEMENT;Ljava/lang/Class<*>;)V
+ ([TELEMENT;L1java/lang/Class<*>;)V # @Generated(12)
 allMatch
  (Ljava/util/function/Predicate<-TELEMENT;>;)TSELF;
  (Ljava/util/function/Predicate<-TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
 allMatch
  (Ljava/util/function/Predicate<-TELEMENT;>;Ljava/lang/String;)TSELF;
- (Ljava/util/function/Predicate<-TELEMENT;>;Ljava/lang/String;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
+ (Ljava/util/function/Predicate<-TELEMENT;>;L1java/lang/String;)T1SELF; # @Overrides(org.assertj.core.api.ObjectEnumerableAssert)
 allSatisfy
  (Ljava/util/function/Consumer<-TELEMENT;>;)TSELF;
  (Ljava/util/function/Consumer<-TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
@@ -32,7 +32,7 @@ anyMatch
  (Ljava/util/function/Predicate<-TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
 anyMatch
  (Ljava/util/function/Predicate<-TELEMENT;>;Ljava/lang/String;)TSELF;
- (Ljava/util/function/Predicate<-TELEMENT;>;Ljava/lang/String;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
+ (Ljava/util/function/Predicate<-TELEMENT;>;L1java/lang/String;)T1SELF; # @Overrides(org.assertj.core.api.ObjectEnumerableAssert)
 anySatisfy
  (Ljava/util/function/Consumer<-TELEMENT;>;)TSELF;
  (Ljava/util/function/Consumer<-TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
@@ -128,7 +128,7 @@ containsOnlyOnceForProxy
  ([TELEMENT;)TSELF;
 containsSequence
  (Ljava/lang/Iterable<+TELEMENT;>;)TSELF;
- (Ljava/lang/Iterable<+TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
+ (L1java/lang/Iterable<+TELEMENT;>;)T1SELF; # @Overrides(org.assertj.core.api.ObjectEnumerableAssert)
 containsSequence
  ([TELEMENT;)TSELF;
  ([TELEMENT;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
@@ -137,7 +137,7 @@ containsSequenceForProxy
  ([TELEMENT;)TSELF;
 containsSubsequence
  (Ljava/lang/Iterable<+TELEMENT;>;)TSELF;
- (Ljava/lang/Iterable<+TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
+ (L1java/lang/Iterable<+TELEMENT;>;)T1SELF; # @Overrides(org.assertj.core.api.ObjectEnumerableAssert)
 containsSubsequence
  ([TELEMENT;)TSELF;
  ([TELEMENT;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
@@ -164,7 +164,7 @@ doesNotContainNull
  ()T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
 doesNotContainSequence
  (Ljava/lang/Iterable<+TELEMENT;>;)TSELF;
- (Ljava/lang/Iterable<+TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
+ (L1java/lang/Iterable<+TELEMENT;>;)T1SELF; # @Overrides(org.assertj.core.api.ObjectEnumerableAssert)
 doesNotContainSequence
  ([TELEMENT;)TSELF;
  ([TELEMENT;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
@@ -173,7 +173,7 @@ doesNotContainSequenceForProxy
  ([TELEMENT;)TSELF;
 doesNotContainSubsequence
  (Ljava/lang/Iterable<+TELEMENT;>;)TSELF;
- (Ljava/lang/Iterable<+TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
+ (L1java/lang/Iterable<+TELEMENT;>;)T1SELF; # @Overrides(org.assertj.core.api.ObjectEnumerableAssert)
 doesNotContainSubsequence
  ([TELEMENT;)TSELF;
  ([TELEMENT;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
@@ -341,7 +341,7 @@ isSubsetOf
  ([TELEMENT;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
 isSubsetOfForProxy
  ([TELEMENT;)TSELF;
- ([TELEMENT;)TSELF;
+ ([1TELEMENT;)TSELF; # @Generated(2)
 navigationDescription
  (Ljava/lang/String;)Ljava/lang/String;
  (Ljava/lang/String;)L1java/lang/String; # @Generated(21)
@@ -356,7 +356,7 @@ noneMatch
  (Ljava/util/function/Predicate<-TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
 noneMatch
  (Ljava/util/function/Predicate<-TELEMENT;>;Ljava/lang/String;)TSELF;
- (Ljava/util/function/Predicate<-TELEMENT;>;Ljava/lang/String;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
+ (Ljava/util/function/Predicate<-TELEMENT;>;L1java/lang/String;)T1SELF; # @Overrides(org.assertj.core.api.ObjectEnumerableAssert)
 noneSatisfy
  (Ljava/util/function/Consumer<-TELEMENT;>;)TSELF;
  (Ljava/util/function/Consumer<-TELEMENT;>;)T1SELF; # @Inherited(org.assertj.core.api.ObjectEnumerableAssert)
@@ -443,13 +443,13 @@ usingRecursiveFieldByFieldElementComparator
  ()T1SELF;
 usingRecursiveFieldByFieldElementComparator
  (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;)TSELF;
- (Lorg/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;)T1SELF;
+ (L1org/assertj/core/api/recursive/comparison/RecursiveComparisonConfiguration;)T1SELF; # @Generated(2)
 usingRecursiveFieldByFieldElementComparatorIgnoringFields
  ([Ljava/lang/String;)TSELF;
  ([Ljava/lang/String;)T1SELF;
 usingRecursiveFieldByFieldElementComparatorOnFields
  ([Ljava/lang/String;)TSELF;
- ([Ljava/lang/String;)T1SELF;
+ ([1Ljava/lang/String;)T1SELF; # @Generated(2)
 zipSatisfy
  <OTHER_ELEMENT:Ljava/lang/Object;>([TOTHER_ELEMENT;Ljava/util/function/BiConsumer<-TELEMENT;TOTHER_ELEMENT;>;)TSELF;
  <OTHER_ELEMENT:Ljava/lang/Object;>([TOTHER_ELEMENT;Ljava/util/function/BiConsumer<-TELEMENT;TOTHER_ELEMENT;>;)T1SELF;

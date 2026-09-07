@@ -5,16 +5,16 @@ createBeanDefinitionReader
  (Lorg/springframework/context/support/GenericApplicationContext;)L1org/springframework/beans/factory/support/BeanDefinitionReader; # @Inherited(org.springframework.test.context.support.AbstractGenericContextLoader)
 detectDefaultConfigurationClasses
  (Ljava/lang/Class<*>;)[Ljava/lang/Class<*>;
- (Ljava/lang/Class<*>;)[Ljava/lang/Class<*>;
+ (L1java/lang/Class<*>;)[Ljava/lang/Class<*>; # @Generated(2)
 generateDefaultLocations
  (Ljava/lang/Class<*>;)[Ljava/lang/String;
- (Ljava/lang/Class<*>;)[1Ljava/lang/String; # @Inherited(org.springframework.test.context.support.AbstractContextLoader)
+ (L1java/lang/Class<*>;)[1Ljava/lang/String; # @Inherited(org.springframework.test.context.support.AbstractContextLoader)
 getResourceSuffix
  ()Ljava/lang/String;
  ()Ljava/lang/String;
 loadBeanDefinitions
  (Lorg/springframework/context/support/GenericApplicationContext;Lorg/springframework/test/context/MergedContextConfiguration;)V
- (Lorg/springframework/context/support/GenericApplicationContext;L1org/springframework/test/context/MergedContextConfiguration;)V # @Inherited(org.springframework.test.context.support.AbstractGenericContextLoader)
+ (L1org/springframework/context/support/GenericApplicationContext;L1org/springframework/test/context/MergedContextConfiguration;)V # @Overrides(org.springframework.test.context.support.AbstractGenericContextLoader)
 modifyLocations
  (Ljava/lang/Class<*>;[Ljava/lang/String;)[Ljava/lang/String;
  (Ljava/lang/Class<*>;[Ljava/lang/String;)[1Ljava/lang/String; # @Inherited(org.springframework.test.context.support.AbstractContextLoader)

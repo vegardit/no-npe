@@ -20,10 +20,10 @@ super java/util/concurrent/ConcurrentNavigableMap
  (L1java/util/SortedMap<TK;+TV;>;)V # @Generated(2)
 ceilingEntry
  (TK;)Ljava/util/Map$Entry<TK;TV;>;
- (TK;)Ljava/util/Map$Entry<TK;TV;>;
+ (T1K;)Ljava/util/Map$Entry<TK;TV;>; # @Generated(2)
 ceilingKey
  (TK;)TK;
- (TK;)T0K; # @Generated(6)
+ (T1K;)T0K; # @Generated(2,6)
 clone
  ()Ljava/util/concurrent/ConcurrentSkipListMap<TK;TV;>;
  ()L1java/util/concurrent/ConcurrentSkipListMap<TK;TV;>;
@@ -41,7 +41,7 @@ computeIfPresent
  (T1K;L1java/util/function/BiFunction<-T1K;-T1V;+T0V;>;)T0V; # @Keep Keys and the callback's current value are non-null; its result and the method return may be null.
 containsKey
  (Ljava/lang/Object;)Z
- (L0java/lang/Object;)Z # @Inherited(java.util.AbstractMap)
+ (L1java/lang/Object;)Z # @Overrides(java.util.AbstractMap)
 containsValue
  (Ljava/lang/Object;)Z
  (L1java/lang/Object;)Z # @Overrides(java.util.AbstractMap)
@@ -65,19 +65,19 @@ firstKey
  ()TK;
 floorEntry
  (TK;)Ljava/util/Map$Entry<TK;TV;>;
- (TK;)Ljava/util/Map$Entry<TK;TV;>;
+ (T1K;)Ljava/util/Map$Entry<TK;TV;>; # @Generated(2)
 floorKey
  (TK;)TK;
- (TK;)T0K; # @Generated(6)
+ (T1K;)T0K; # @Generated(2,6)
 forEach
  (Ljava/util/function/BiConsumer<-TK;-TV;>;)V
  (L1java/util/function/BiConsumer<-TK;-TV;>;)V # @Inherited(java.util.concurrent.ConcurrentMap)
 get
  (Ljava/lang/Object;)TV;
- (Ljava/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)
+ (L1java/lang/Object;)T0V; # @Overrides(java.util.AbstractMap)
 getOrDefault
  (Ljava/lang/Object;TV;)TV;
- (Ljava/lang/Object;TV;)TV; # @Generated(PolyNull) @Inherited(java.util.concurrent.ConcurrentMap)
+ (L1java/lang/Object;TV;)TV; # @Generated(2,PolyNull) @Overrides(java.util.concurrent.ConcurrentMap)
 headMap
  (TK;)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
  (TK;)Ljava/util/concurrent/ConcurrentNavigableMap<TK;TV;>;
@@ -86,10 +86,10 @@ headMap
  (T1K;Z)L1java/util/concurrent/ConcurrentNavigableMap<TK;TV;>; # @Generated(2,7)
 higherEntry
  (TK;)Ljava/util/Map$Entry<TK;TV;>;
- (TK;)Ljava/util/Map$Entry<TK;TV;>;
+ (T1K;)Ljava/util/Map$Entry<TK;TV;>; # @Generated(2)
 higherKey
  (TK;)TK;
- (TK;)T0K; # @Generated(6)
+ (T1K;)T0K; # @Generated(2,6)
 keySet
  ()Ljava/util/NavigableSet<TK;>;
  ()L1java/util/NavigableSet<TK;>; # @Generated(3)
@@ -101,10 +101,10 @@ lastKey
  ()TK;
 lowerEntry
  (TK;)Ljava/util/Map$Entry<TK;TV;>;
- (TK;)Ljava/util/Map$Entry<TK;TV;>;
+ (T1K;)Ljava/util/Map$Entry<TK;TV;>; # @Generated(2)
 lowerKey
  (TK;)TK;
- (TK;)T0K; # @Generated(6)
+ (T1K;)T0K; # @Generated(2,6)
 merge
  (TK;TV;Ljava/util/function/BiFunction<-TV;-TV;+TV;>;)TV;
  (T1K;T1V;L1java/util/function/BiFunction<-TV;-TV;+TV;>;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
@@ -119,13 +119,13 @@ pollLastEntry
  ()Ljava/util/Map$Entry<TK;TV;>;
 put
  (TK;TV;)TV;
- (TK;T1V;)T0V; # @Overrides(java.util.AbstractMap)
+ (T1K;T1V;)T0V; # @Overrides(java.util.AbstractMap)
 putIfAbsent
  (TK;TV;)TV;
- (TK;T1V;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
+ (T1K;T1V;)T0V; # @Overrides(java.util.concurrent.ConcurrentMap)
 remove
  (Ljava/lang/Object;)TV;
- (L0java/lang/Object;)T0V; # @Inherited(java.util.AbstractMap)
+ (L1java/lang/Object;)T0V; # @Overrides(java.util.AbstractMap)
 remove
  (Ljava/lang/Object;Ljava/lang/Object;)Z
  (L1java/lang/Object;L0java/lang/Object;)Z # @Overrides(java.util.concurrent.ConcurrentMap)

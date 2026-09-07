@@ -5,16 +5,16 @@ class org/springframework/beans/factory/support/AbstractBeanFactory
  (L0org/springframework/beans/factory/BeanFactory;)V # @Generated
 addBeanPostProcessor
  (Lorg/springframework/beans/factory/config/BeanPostProcessor;)V
- (Lorg/springframework/beans/factory/config/BeanPostProcessor;)V
+ (L1org/springframework/beans/factory/config/BeanPostProcessor;)V # @Generated
 addBeanPostProcessors
  (Ljava/util/Collection<+Lorg/springframework/beans/factory/config/BeanPostProcessor;>;)V
  (Ljava/util/Collection<+Lorg/springframework/beans/factory/config/BeanPostProcessor;>;)V
 addEmbeddedValueResolver
  (Lorg/springframework/util/StringValueResolver;)V
- (Lorg/springframework/util/StringValueResolver;)V
+ (L1org/springframework/util/StringValueResolver;)V # @Generated
 addPropertyEditorRegistrar
  (Lorg/springframework/beans/PropertyEditorRegistrar;)V
- (Lorg/springframework/beans/PropertyEditorRegistrar;)V
+ (L1org/springframework/beans/PropertyEditorRegistrar;)V # @Generated
 afterPrototypeCreation
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -53,7 +53,7 @@ destroyBean
  (Ljava/lang/String;Ljava/lang/Object;)V
 destroyBean
  (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/support/RootBeanDefinition;)V
- (Ljava/lang/String;Ljava/lang/Object;Lorg/springframework/beans/factory/support/RootBeanDefinition;)V
+ (Ljava/lang/String;L1java/lang/Object;L1org/springframework/beans/factory/support/RootBeanDefinition;)V # @Generated(20,38)
 destroyScopedBean
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -128,7 +128,7 @@ getPropertyEditorRegistrars
  ()Ljava/util/Set<Lorg/springframework/beans/PropertyEditorRegistrar;>;
 getRegisteredScope
  (Ljava/lang/String;)Lorg/springframework/beans/factory/config/Scope;
- (Ljava/lang/String;)L0org/springframework/beans/factory/config/Scope; # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
+ (L1java/lang/String;)L0org/springframework/beans/factory/config/Scope; # @Overrides(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 getRegisteredScopeNames
  ()[Ljava/lang/String;
  ()[Ljava/lang/String;
@@ -197,7 +197,7 @@ predictBeanType
  (Ljava/lang/String;L1org/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Class<*>;)L0java/lang/Class<*>; # @Generated(20,104)
 registerCustomEditor
  (Ljava/lang/Class<*>;Ljava/lang/Class<+Ljava/beans/PropertyEditor;>;)V
- (Ljava/lang/Class<*>;Ljava/lang/Class<+Ljava/beans/PropertyEditor;>;)V
+ (L1java/lang/Class<*>;L1java/lang/Class<+Ljava/beans/PropertyEditor;>;)V # @Generated(2,22)
 registerCustomEditors
  (Lorg/springframework/beans/PropertyEditorRegistry;)V
  (Lorg/springframework/beans/PropertyEditorRegistry;)V
@@ -206,7 +206,7 @@ registerDisposableBeanIfNecessary
  (Ljava/lang/String;Ljava/lang/Object;L1org/springframework/beans/factory/support/RootBeanDefinition;)V # @Generated(38)
 registerScope
  (Ljava/lang/String;Lorg/springframework/beans/factory/config/Scope;)V
- (Ljava/lang/String;Lorg/springframework/beans/factory/config/Scope;)V
+ (L1java/lang/String;L1org/springframework/beans/factory/config/Scope;)V # @Generated(2,20)
 removeSingletonIfCreatedForTypeCheckOnly
  (Ljava/lang/String;)Z
  (Ljava/lang/String;)Z
@@ -221,7 +221,7 @@ resolveEmbeddedValue
  (L0java/lang/String;)L0java/lang/String; # @Overrides(org.springframework.beans.factory.config.ConfigurableBeanFactory)
 setApplicationStartup
  (Lorg/springframework/core/metrics/ApplicationStartup;)V
- (Lorg/springframework/core/metrics/ApplicationStartup;)V
+ (L1org/springframework/core/metrics/ApplicationStartup;)V # @Generated
 setBeanClassLoader
  (Ljava/lang/ClassLoader;)V
  (L0java/lang/ClassLoader;)V # @Inherited(org.springframework.beans.factory.config.ConfigurableBeanFactory)
@@ -245,4 +245,4 @@ setTypeConverter
  (Lorg/springframework/beans/TypeConverter;)V
 transformedBeanName
  (Ljava/lang/String;)Ljava/lang/String;
- (Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/String;)Ljava/lang/String; # @Generated(2)

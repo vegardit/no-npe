@@ -8,7 +8,7 @@ addSingletonCallback
  (Ljava/lang/String;Ljava/util/function/Consumer<Ljava/lang/Object;>;)V
 addSingletonFactory
  (Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory<*>;)V
- (Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory<*>;)V
+ (Ljava/lang/String;L1org/springframework/beans/factory/ObjectFactory<*>;)V # @Generated(20)
 afterSingletonCreation
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
@@ -35,7 +35,7 @@ getSingleton
  (Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.config.SingletonBeanRegistry)
 getSingleton
  (Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory<*>;)Ljava/lang/Object;
- (Ljava/lang/String;Lorg/springframework/beans/factory/ObjectFactory<*>;)Ljava/lang/Object;
+ (L1java/lang/String;Lorg/springframework/beans/factory/ObjectFactory<*>;)Ljava/lang/Object; # @Generated(2)
 getSingleton
  (Ljava/lang/String;Z)Ljava/lang/Object;
  (Ljava/lang/String;Z)L0java/lang/Object; # @Generated(22)
@@ -56,7 +56,7 @@ isCurrentThreadAllowedToHoldSingletonLock
  ()L0java/lang/Boolean; # @Generated
 isCurrentlyInCreation
  (Ljava/lang/String;)Z
- (Ljava/lang/String;)Z
+ (L1java/lang/String;)Z # @Generated
 isDependent
  (Ljava/lang/String;Ljava/lang/String;)Z
  (Ljava/lang/String;Ljava/lang/String;)Z
@@ -77,10 +77,10 @@ registerDisposableBean
  (Ljava/lang/String;Lorg/springframework/beans/factory/DisposableBean;)V
 registerSingleton
  (Ljava/lang/String;Ljava/lang/Object;)V
- (Ljava/lang/String;Ljava/lang/Object;)V
+ (L1java/lang/String;L1java/lang/Object;)V # @Generated(2,20)
 removeSingleton
  (Ljava/lang/String;)V
  (Ljava/lang/String;)V
 setCurrentlyInCreation
  (Ljava/lang/String;Z)V
- (Ljava/lang/String;Z)V
+ (L1java/lang/String;Z)V # @Generated

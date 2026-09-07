@@ -10,10 +10,10 @@ logger
 
 afterCompletion
  (Lorg/springframework/web/context/request/WebRequest;Ljava/lang/Exception;)V
- (Lorg/springframework/web/context/request/WebRequest;L0java/lang/Exception;)V # @Inherited(org.springframework.web.context.request.WebRequestInterceptor)
+ (L1org/springframework/web/context/request/WebRequest;L0java/lang/Exception;)V # @Overrides(org.springframework.web.context.request.WebRequestInterceptor)
 afterConcurrentHandlingStarted
  (Lorg/springframework/web/context/request/WebRequest;)V
- (Lorg/springframework/web/context/request/WebRequest;)V
+ (L1org/springframework/web/context/request/WebRequest;)V # @Generated
 getParticipateAttributeName
  ()Ljava/lang/String;
  ()L1java/lang/String; # @Generated
@@ -28,7 +28,7 @@ postHandle
  (Lorg/springframework/web/context/request/WebRequest;L0org/springframework/ui/ModelMap;)V # @Inherited(org.springframework.web.context.request.WebRequestInterceptor)
 preHandle
  (Lorg/springframework/web/context/request/WebRequest;)V
- (Lorg/springframework/web/context/request/WebRequest;)V
+ (L1org/springframework/web/context/request/WebRequest;)V # @Generated
 setSessionFactory
  (Lorg/hibernate/SessionFactory;)V
  (L0org/hibernate/SessionFactory;)V # @Generated

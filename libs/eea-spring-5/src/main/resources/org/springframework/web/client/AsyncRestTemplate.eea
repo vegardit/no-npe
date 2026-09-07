@@ -2,7 +2,7 @@ class org/springframework/web/client/AsyncRestTemplate
 
 <init>
  (Lorg/springframework/core/task/AsyncListenableTaskExecutor;)V
- (Lorg/springframework/core/task/AsyncListenableTaskExecutor;)V
+ (L1org/springframework/core/task/AsyncListenableTaskExecutor;)V # @Generated
 <init>
  (Lorg/springframework/http/client/AsyncClientHttpRequestFactory;)V
  (Lorg/springframework/http/client/AsyncClientHttpRequestFactory;)V
@@ -11,7 +11,7 @@ class org/springframework/web/client/AsyncRestTemplate
  (Lorg/springframework/http/client/AsyncClientHttpRequestFactory;Lorg/springframework/http/client/ClientHttpRequestFactory;)V
 <init>
  (Lorg/springframework/http/client/AsyncClientHttpRequestFactory;Lorg/springframework/web/client/RestTemplate;)V
- (Lorg/springframework/http/client/AsyncClientHttpRequestFactory;Lorg/springframework/web/client/RestTemplate;)V
+ (Lorg/springframework/http/client/AsyncClientHttpRequestFactory;L1org/springframework/web/client/RestTemplate;)V # @Generated(65)
 acceptHeaderRequestCallback
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)Lorg/springframework/web/client/AsyncRequestCallback;
  <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)L1org/springframework/web/client/AsyncRequestCallback; # @Generated(47)
@@ -26,7 +26,7 @@ delete
  (Ljava/net/URI;)Lorg/springframework/util/concurrent/ListenableFuture<*>;
 doExecute
  <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;Lorg/springframework/web/client/AsyncRequestCallback;Lorg/springframework/web/client/ResponseExtractor<TT;>;)Lorg/springframework/util/concurrent/ListenableFuture<TT;>;
- <T:Ljava/lang/Object;>(Ljava/net/URI;Lorg/springframework/http/HttpMethod;L0org/springframework/web/client/AsyncRequestCallback;L0org/springframework/web/client/ResponseExtractor<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>; # @Generated(75,128,184)
+ <T:Ljava/lang/Object;>(L1java/net/URI;L1org/springframework/http/HttpMethod;L0org/springframework/web/client/AsyncRequestCallback;L0org/springframework/web/client/ResponseExtractor<TT;>;)L1org/springframework/util/concurrent/ListenableFuture<TT;>; # @Generated(24,38,75,128,184)
 exchange
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;Lorg/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>;
  <T:Ljava/lang/Object;>(Ljava/lang/String;Lorg/springframework/http/HttpMethod;L0org/springframework/http/HttpEntity<*>;Ljava/lang/Class<TT;>;Ljava/util/Map<Ljava/lang/String;*>;)Lorg/springframework/util/concurrent/ListenableFuture<Lorg/springframework/http/ResponseEntity<TT;>;>; # @Inherited(org.springframework.web.client.AsyncRestOperations)

@@ -22,7 +22,7 @@ customizeProxyFactory
  (Lorg/springframework/aop/framework/ProxyFactory;)V
 determineBeanType
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>;
- (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>; # @Generated(PolyNull)
+ (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>; # @Generated(PolyNull) @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
 determineCandidateConstructors
  (Ljava/lang/Class<*>;Ljava/lang/String;)[Ljava/lang/reflect/Constructor<*>;
  (Ljava/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
@@ -40,7 +40,7 @@ getCustomTargetSource
  (Ljava/lang/Class<*>;Ljava/lang/String;)L0org/springframework/aop/TargetSource; # @Generated(41)
 getEarlyBeanReference
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
- (L1java/lang/Object;Ljava/lang/String;)Ljava/lang/Object; # @Generated(2)
+ (L1java/lang/Object;Ljava/lang/String;)Ljava/lang/Object; # @Overrides(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)
 isInfrastructureClass
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z
@@ -52,7 +52,7 @@ postProcessBeforeInstantiation
  (Ljava/lang/Class<*>;Ljava/lang/String;)L0java/lang/Object; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 postProcessProperties
  (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues;
- (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)L0org/springframework/beans/PropertyValues; # @Inherited(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
+ (Lorg/springframework/beans/PropertyValues;Ljava/lang/Object;Ljava/lang/String;)Lorg/springframework/beans/PropertyValues; # @Generated(PolyNull) @Overrides(org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor)
 predictBeanType
  (Ljava/lang/Class<*>;Ljava/lang/String;)Ljava/lang/Class<*>;
  (Ljava/lang/Class<*>;Ljava/lang/String;)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor)

@@ -26,10 +26,10 @@ autowire
  (L1java/lang/Class<*>;IZ)Ljava/lang/Object; # @Generated(2)
 autowireBean
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L1java/lang/Object;)V # @Generated
 autowireBeanProperties
  (Ljava/lang/Object;IZ)V
- (Ljava/lang/Object;IZ)V
+ (L1java/lang/Object;IZ)V # @Generated
 autowireByName
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/AbstractBeanDefinition;Lorg/springframework/beans/BeanWrapper;Lorg/springframework/beans/MutablePropertyValues;)V
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/AbstractBeanDefinition;Lorg/springframework/beans/BeanWrapper;Lorg/springframework/beans/MutablePropertyValues;)V
@@ -62,7 +62,7 @@ createBeanInstance
  (Ljava/lang/String;L1org/springframework/beans/factory/support/RootBeanDefinition;[0Ljava/lang/Object;)L1org/springframework/beans/BeanWrapper; # @Generated(20,82)
 destroyBean
  (Ljava/lang/Object;)V
- (Ljava/lang/Object;)V
+ (L1java/lang/Object;)V # @Generated
 determineConstructorsFromBeanPostProcessors
  (Ljava/lang/Class<*>;Ljava/lang/String;)[Ljava/lang/reflect/Constructor<*>;
  (L0java/lang/Class<*>;Ljava/lang/String;)[0Ljava/lang/reflect/Constructor<*>; # @Generated(2,41)
@@ -122,7 +122,7 @@ invokeInitMethods
  (Ljava/lang/String;Ljava/lang/Object;L0org/springframework/beans/factory/support/RootBeanDefinition;)V # @Generated(38)
 isExcludedFromDependencyCheck
  (Ljava/beans/PropertyDescriptor;)Z
- (Ljava/beans/PropertyDescriptor;)Z
+ (L1java/beans/PropertyDescriptor;)Z # @Generated
 obtainInstanceFromSupplier
  (Ljava/util/function/Supplier<*>;Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)Ljava/lang/Object;
  (L1java/util/function/Supplier<*>;Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;)L0java/lang/Object; # @Generated(2,115)
@@ -131,7 +131,7 @@ populateBean
  (Ljava/lang/String;L1org/springframework/beans/factory/support/RootBeanDefinition;L0org/springframework/beans/BeanWrapper;)V # @Generated(20,82)
 postProcessObjectFromFactoryBean
  (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
- (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+ (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object; # @Inherited(org.springframework.beans.factory.support.FactoryBeanRegistrySupport)
 predictBeanType
  (Ljava/lang/String;Lorg/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Class<*>;)Ljava/lang/Class<*>;
  (Ljava/lang/String;L1org/springframework/beans/factory/support/RootBeanDefinition;[Ljava/lang/Class<*>;)L0java/lang/Class<*>; # @Inherited(org.springframework.beans.factory.support.AbstractBeanFactory)

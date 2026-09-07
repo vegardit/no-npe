@@ -8,29 +8,29 @@ super com/google/common/util/concurrent/GwtFluentFutureCatchingSpecialization
 
 from
  <V:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/FluentFuture<TV;>;)Lcom/google/common/util/concurrent/FluentFuture<TV;>;
- <V:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/FluentFuture<TV;>;)L1com/google/common/util/concurrent/FluentFuture<TV;>; # @Generated(78)
+ <V:Ljava/lang/Object;>(L1com/google/common/util/concurrent/FluentFuture<TV;>;)L1com/google/common/util/concurrent/FluentFuture<TV;>; # @Generated(24,78)
 from
  <V:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/ListenableFuture<TV;>;)Lcom/google/common/util/concurrent/FluentFuture<TV;>;
  <V:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/ListenableFuture<TV;>;)Lcom/google/common/util/concurrent/FluentFuture<TV;>; # @Generated(PolyNull)
 
 addCallback
  (Lcom/google/common/util/concurrent/FutureCallback<-TV;>;Ljava/util/concurrent/Executor;)V
- (Lcom/google/common/util/concurrent/FutureCallback<-TV;>;Ljava/util/concurrent/Executor;)V
+ (L1com/google/common/util/concurrent/FutureCallback<-TV;>;Ljava/util/concurrent/Executor;)V # @Generated(2)
 catching
  <X:Ljava/lang/Throwable;>(Ljava/lang/Class<TX;>;Lcom/google/common/base/Function<-TX;+TV;>;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/FluentFuture<TV;>;
- <X:Ljava/lang/Throwable;>(Ljava/lang/Class<TX;>;Lcom/google/common/base/Function<-TX;+TV;>;Ljava/util/concurrent/Executor;)L1com/google/common/util/concurrent/FluentFuture<TV;>; # @Generated(124)
+ <X:Ljava/lang/Throwable;>(L1java/lang/Class<TX;>;L1com/google/common/base/Function<-TX;+TV;>;L1java/util/concurrent/Executor;)L1com/google/common/util/concurrent/FluentFuture<TV;>; # @Generated(27,49,92,124)
 catchingAsync
  <X:Ljava/lang/Throwable;>(Ljava/lang/Class<TX;>;Lcom/google/common/util/concurrent/AsyncFunction<-TX;+TV;>;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/FluentFuture<TV;>;
- <X:Ljava/lang/Throwable;>(Ljava/lang/Class<TX;>;Lcom/google/common/util/concurrent/AsyncFunction<-TX;+TV;>;Ljava/util/concurrent/Executor;)L1com/google/common/util/concurrent/FluentFuture<TV;>; # @Generated(140)
+ <X:Ljava/lang/Throwable;>(L1java/lang/Class<TX;>;L1com/google/common/util/concurrent/AsyncFunction<-TX;+TV;>;L1java/util/concurrent/Executor;)L1com/google/common/util/concurrent/FluentFuture<TV;>; # @Generated(27,49,108,140)
 transform
  <T:Ljava/lang/Object;>(Lcom/google/common/base/Function<-TV;TT;>;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/FluentFuture<TT;>;
- <T:Ljava/lang/Object;>(Lcom/google/common/base/Function<-TV;TT;>;Ljava/util/concurrent/Executor;)L1com/google/common/util/concurrent/FluentFuture<TT;>; # @Generated(98)
+ <T:Ljava/lang/Object;>(L1com/google/common/base/Function<-TV;TT;>;L1java/util/concurrent/Executor;)L1com/google/common/util/concurrent/FluentFuture<TT;>; # @Generated(24,66,98)
 transformAsync
  <T:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/AsyncFunction<-TV;TT;>;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/FluentFuture<TT;>;
- <T:Ljava/lang/Object;>(Lcom/google/common/util/concurrent/AsyncFunction<-TV;TT;>;Ljava/util/concurrent/Executor;)L1com/google/common/util/concurrent/FluentFuture<TT;>; # @Generated(114)
+ <T:Ljava/lang/Object;>(L1com/google/common/util/concurrent/AsyncFunction<-TV;TT;>;L1java/util/concurrent/Executor;)L1com/google/common/util/concurrent/FluentFuture<TT;>; # @Generated(24,82,114)
 withTimeout
  (JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lcom/google/common/util/concurrent/FluentFuture<TV;>;
  (JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lcom/google/common/util/concurrent/FluentFuture<TV;>;
 withTimeout
  (Ljava/time/Duration;Ljava/util/concurrent/ScheduledExecutorService;)Lcom/google/common/util/concurrent/FluentFuture<TV;>;
- (Ljava/time/Duration;Ljava/util/concurrent/ScheduledExecutorService;)Lcom/google/common/util/concurrent/FluentFuture<TV;>;
+ (L1java/time/Duration;Ljava/util/concurrent/ScheduledExecutorService;)Lcom/google/common/util/concurrent/FluentFuture<TV;>; # @Generated(2)

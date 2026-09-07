@@ -17,7 +17,7 @@ adjustModule
  (Ljava/util/Collection<+Lnet/bytebuddy/description/modifier/ModifierContributor$ForModule;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$ModuleDefinition<TT;>;
 annotateType
  (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TT;>;
- (Ljava/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)L1net/bytebuddy/dynamic/DynamicType$Builder<TT;>; # @Inherited(net.bytebuddy.dynamic.DynamicType$Builder)
+ (L1java/util/Collection<+Lnet/bytebuddy/description/annotation/AnnotationDescription;>;)L1net/bytebuddy/dynamic/DynamicType$Builder<TT;>; # @Overrides(net.bytebuddy.dynamic.DynamicType$Builder)
 attribute
  (Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TT;>;
  (Lnet/bytebuddy/implementation/attribute/TypeAttributeAppender;)L1net/bytebuddy/dynamic/DynamicType$Builder<TT;>; # @Inherited(net.bytebuddy.dynamic.DynamicType$Builder)
@@ -89,7 +89,7 @@ recordComponent
  (Lnet/bytebuddy/matcher/LatentMatcher<-Lnet/bytebuddy/description/type/RecordComponentDescription;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder$RecordComponentDefinition<TT;>;
 require
  (Ljava/util/Collection<Lnet/bytebuddy/dynamic/DynamicType;>;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TT;>;
- (Ljava/util/Collection<Lnet/bytebuddy/dynamic/DynamicType;>;)L1net/bytebuddy/dynamic/DynamicType$Builder<TT;>; # @Inherited(net.bytebuddy.dynamic.DynamicType$Builder)
+ (L1java/util/Collection<Lnet/bytebuddy/dynamic/DynamicType;>;)L1net/bytebuddy/dynamic/DynamicType$Builder<TT;>; # @Overrides(net.bytebuddy.dynamic.DynamicType$Builder)
 suffix
  (Ljava/lang/String;)Lnet/bytebuddy/dynamic/DynamicType$Builder<TT;>;
  (Ljava/lang/String;)L1net/bytebuddy/dynamic/DynamicType$Builder<TT;>; # @Inherited(net.bytebuddy.dynamic.DynamicType$Builder)

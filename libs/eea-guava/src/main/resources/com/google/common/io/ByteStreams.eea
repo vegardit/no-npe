@@ -2,19 +2,19 @@ class com/google/common/io/ByteStreams
 
 copy
  (Ljava/io/InputStream;Ljava/io/OutputStream;)J
- (L1java/io/InputStream;Ljava/io/OutputStream;)J # @Generated(2)
+ (L1java/io/InputStream;L1java/io/OutputStream;)J # @Generated(2,23)
 copy
  (Ljava/nio/channels/ReadableByteChannel;Ljava/nio/channels/WritableByteChannel;)J
- (L1java/nio/channels/ReadableByteChannel;Ljava/nio/channels/WritableByteChannel;)J # @Generated(2)
+ (L1java/nio/channels/ReadableByteChannel;L1java/nio/channels/WritableByteChannel;)J # @Generated(2,41)
 exhaust
  (Ljava/io/InputStream;)J
  (L1java/io/InputStream;)J # @Generated
 limit
  (Ljava/io/InputStream;J)Ljava/io/InputStream;
- (Ljava/io/InputStream;J)L1java/io/InputStream; # @Generated(25)
+ (L1java/io/InputStream;J)L1java/io/InputStream; # @Generated(2,25)
 newDataInput
  (Ljava/io/ByteArrayInputStream;)Lcom/google/common/io/ByteArrayDataInput;
- (Ljava/io/ByteArrayInputStream;)L1com/google/common/io/ByteArrayDataInput; # @Generated(33)
+ (L1java/io/ByteArrayInputStream;)L1com/google/common/io/ByteArrayDataInput; # @Generated(2,33)
 newDataInput
  ([B)Lcom/google/common/io/ByteArrayDataInput;
  ([B)L1com/google/common/io/ByteArrayDataInput; # @Generated(5)
@@ -29,25 +29,25 @@ newDataOutput
  (I)L1com/google/common/io/ByteArrayDataOutput; # @Generated
 newDataOutput
  (Ljava/io/ByteArrayOutputStream;)Lcom/google/common/io/ByteArrayDataOutput;
- (Ljava/io/ByteArrayOutputStream;)L1com/google/common/io/ByteArrayDataOutput; # @Generated(34)
+ (L1java/io/ByteArrayOutputStream;)L1com/google/common/io/ByteArrayDataOutput; # @Generated(2,34)
 nullOutputStream
  ()Ljava/io/OutputStream;
  ()L1java/io/OutputStream; # @Generated
 read
  (Ljava/io/InputStream;[BII)I
- (Ljava/io/InputStream;[BII)I
+ (L1java/io/InputStream;[1BII)I # @Generated(2,23)
 readBytes
  <T:Ljava/lang/Object;>(Ljava/io/InputStream;Lcom/google/common/io/ByteProcessor<TT;>;)TT;
  <T:Ljava/lang/Object;>(L1java/io/InputStream;L1com/google/common/io/ByteProcessor<TT;>;)T1T; # @Generated(24,45)
 readFully
  (Ljava/io/InputStream;[B)V
- (Ljava/io/InputStream;[B)V
+ (L1java/io/InputStream;[1B)V # @Generated(2,23)
 readFully
  (Ljava/io/InputStream;[BII)V
- (Ljava/io/InputStream;[BII)V
+ (L1java/io/InputStream;[1BII)V # @Generated(2,23)
 skipFully
  (Ljava/io/InputStream;J)V
  (Ljava/io/InputStream;J)V
 toByteArray
  (Ljava/io/InputStream;)[B
- (Ljava/io/InputStream;)[B
+ (L1java/io/InputStream;)[B # @Generated(2)

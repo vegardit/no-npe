@@ -67,7 +67,7 @@ createSourceViewer
  (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)L1org/eclipse/jface/text/source/ISourceViewer; # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
 createStatusControl
  (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/swt/widgets/Control;
- (Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/core/runtime/IStatus;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.ui.texteditor.StatusTextEditor)
+ (L1org/eclipse/swt/widgets/Composite;Lorg/eclipse/core/runtime/IStatus;)L1org/eclipse/swt/widgets/Control; # @Inherited(org.eclipse.ui.texteditor.StatusTextEditor)
 createVerticalRuler
  ()Lorg/eclipse/jface/text/source/IVerticalRuler;
  ()L1org/eclipse/jface/text/source/IVerticalRuler; # @Inherited(org.eclipse.ui.texteditor.AbstractTextEditor)
@@ -142,7 +142,7 @@ setDocumentProvider
  (Lorg/eclipse/ui/IEditorInput;)V
 setOverviewRulerContextMenuId
  (Ljava/lang/String;)V
- (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
 showRevisionInformation
  (Lorg/eclipse/jface/text/revisions/RevisionInformation;Ljava/lang/String;)V
  (L1org/eclipse/jface/text/revisions/RevisionInformation;Ljava/lang/String;)V # @Generated(2)

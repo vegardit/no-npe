@@ -2,7 +2,7 @@ class org/eclipse/ltk/core/refactoring/DocumentChange
 
 <init>
  (Ljava/lang/String;Lorg/eclipse/jface/text/IDocument;)V
- (Ljava/lang/String;Lorg/eclipse/jface/text/IDocument;)V
+ (L1java/lang/String;L1org/eclipse/jface/text/IDocument;)V # @Generated(2,20)
 acquireDocument
  (Lorg/eclipse/core/runtime/IProgressMonitor;)Lorg/eclipse/jface/text/IDocument;
  (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/jface/text/IDocument; # @Inherited(org.eclipse.ltk.core.refactoring.TextChange)
@@ -23,7 +23,7 @@ isValid
  (L1org/eclipse/core/runtime/IProgressMonitor;)L1org/eclipse/ltk/core/refactoring/RefactoringStatus; # @Inherited(org.eclipse.ltk.core.refactoring.Change)
 performEdits
  (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/text/edits/UndoEdit;
- (Lorg/eclipse/jface/text/IDocument;)Lorg/eclipse/text/edits/UndoEdit;
+ (L1org/eclipse/jface/text/IDocument;)Lorg/eclipse/text/edits/UndoEdit; # @Inherited(org.eclipse.ltk.core.refactoring.TextChange)
 releaseDocument
  (Lorg/eclipse/jface/text/IDocument;Lorg/eclipse/core/runtime/IProgressMonitor;)V
  (L1org/eclipse/jface/text/IDocument;L1org/eclipse/core/runtime/IProgressMonitor;)V # @Inherited(org.eclipse.ltk.core.refactoring.TextChange)
