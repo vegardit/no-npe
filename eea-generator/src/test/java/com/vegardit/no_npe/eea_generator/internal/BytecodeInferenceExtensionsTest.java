@@ -17,6 +17,8 @@ import java.net.URLClassLoader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
 import java.util.function.Supplier;
 
 import org.eclipse.jdt.annotation.NonNullByDefault;
@@ -252,6 +254,150 @@ class BytecodeInferenceExtensionsTest {
       }
    }
 
+   /** Exercises null predicates without turning saved booleans into facts about later replacement values. */
+   @NonNullByDefault({})
+   public static final class NullPredicates {
+      public static Object nonNullFallback(final Object value) {
+         return Objects.nonNull(value) ? value : "";
+      }
+
+      public static Object isNullFallback(final Object value) {
+         return Objects.isNull(value) ? "" : value;
+      }
+
+      public static Object required(final Object value) {
+         if (Objects.isNull(value))
+            throw new IllegalArgumentException();
+         return value;
+      }
+
+      public static Object savedRequired(final Object value) {
+         final boolean present = Objects.nonNull(value);
+         if (!present)
+            throw new IllegalArgumentException();
+         return value;
+      }
+
+      public static Object savedFallback(final Object value) {
+         final Object alias = value;
+         final boolean missing = Objects.isNull(alias);
+         return missing ? "" : alias;
+      }
+
+      public static Object nullReturn(final Object value) {
+         return Objects.isNull(value) ? value : "";
+      }
+
+      public static Object reassigned(Object value, final Object replacement) {
+         final boolean present = Objects.nonNull(value);
+         value = replacement;
+         // The original argument was tested; the new value may still be null on the true edge.
+         return present ? value : "";
+      }
+
+      public static Object mixedReferences(final Object first, final Object second, final boolean useFirst) {
+         final boolean present = useFirst ? Objects.nonNull(first) : Objects.nonNull(second);
+         if (!present)
+            throw new IllegalArgumentException();
+         return first;
+      }
+
+      public static Object mixedPredicates(final Object value, final boolean invert) {
+         final boolean accepted = invert ? Objects.isNull(value) : Objects.nonNull(value);
+         if (!accepted)
+            throw new IllegalArgumentException();
+         return value;
+      }
+
+      public static Object overwrittenBoolean(boolean accepted, final Object value, final boolean test) {
+         if (test) {
+            accepted = Objects.nonNull(value);
+         }
+         if (!accepted)
+            throw new IllegalArgumentException();
+         return value;
+      }
+
+      public static Object caught(final Object value) {
+         try {
+            if (Objects.isNull(value))
+               throw new IllegalArgumentException();
+            return value;
+         } catch (final IllegalArgumentException ex) {
+            // A successful handler keeps null acceptable even though the normal arm rejects it.
+            return null;
+         }
+      }
+   }
+
+   /** Distinguishes documented JDK factories from nullable alternatives and unrelated methods named of. */
+   @NonNullByDefault({})
+   @SuppressWarnings("null") // The caught null argument deliberately exercises a failing JDK factory call.
+   public static final class FactoryFields {
+      public static final List<?> EMPTY = List.of();
+      public static final List<?> SINGLE = List.of("present");
+      public static final List<?> VARARGS = List.of(new Object[] {"first", "second"});
+      public static final List<?> CONDITIONAL = System.nanoTime() == 0 ? null : List.of();
+      public static final List<?> CUSTOM = of();
+      public static final List<?> CAUGHT;
+
+      static {
+         List<?> value;
+         try {
+            value = List.of(missingValue());
+         } catch (final NullPointerException ex) {
+            value = null;
+         }
+         CAUGHT = value;
+      }
+
+      private static Object missingValue() {
+         // Keep the deliberate runtime failure compilable against List.of's non-null parameter annotation.
+         return null;
+      }
+
+      public static List<?> empty() {
+         return EMPTY;
+      }
+
+      public static List<?> of() {
+         return null;
+      }
+   }
+
+   /** Checks native getClass results without treating exception handlers or similarly named overloads as non-null. */
+   @NonNullByDefault({})
+   public static final class RuntimeClasses {
+      public static Class<?> object(final Object value) {
+         return value.getClass();
+      }
+
+      public static Class<?> inherited(final ReturnHelpers value) {
+         return value.getClass();
+      }
+
+      public static Class<?> array(final Object[] value) {
+         return value.getClass();
+      }
+
+      public static Class<?> caught(final Object value) {
+         try {
+            return value.getClass();
+         } catch (final NullPointerException ex) {
+            return null;
+         }
+      }
+
+      public static Class<?> overloaded(final RuntimeClasses value) {
+         return value.getClass(0);
+      }
+
+      @SuppressWarnings("unused") // The overload exists only to keep name-only call matching from qualifying its null result.
+      public Class<?> getClass(final int ignored) {
+         return null;
+      }
+   }
+
    @NonNullByDefault({})
    public static class ReturnHelpers {
       public static Object identity(final Object value) {
@@ -277,6 +423,10 @@ class BytecodeInferenceExtensionsTest {
 
       public static Object nullable(final Object value, final boolean missing) {
          return missing ? null : value;
+      }
+
+      public static Object nonNullFallback(final Object value) {
+         return value == null ? new Object() : value;
       }
 
       public static Object conditionalOverwrite(Object value, final Object replacement, final boolean replace) {
@@ -338,6 +488,31 @@ class BytecodeInferenceExtensionsTest {
 
       public static Object nullArgument() {
          return ReturnHelpers.identity(null);
+      }
+
+      public static Object nestedNullArgument() {
+         return ReturnHelpers.identity(ReturnHelpers.identity(null));
+      }
+
+      public static Object reorderedNullArgument() {
+         return ReturnHelpers.second("present", 1L, null);
+      }
+
+      public static Object nullArgumentWithFallback() {
+         return ReturnHelpers.nonNullFallback(null);
+      }
+
+      public static Object nullArgumentWithAlternative() {
+         // The helper has a PolyNull dependency, but this call selects its non-null alternative.
+         return ReturnHelpers.alternate(null, false);
+      }
+
+      public static Object fixedNullArgument(final ReturnHelpers helper) {
+         return helper.fixed(null);
+      }
+
+      public static Object virtualNullArgument(final ReturnHelpers helper) {
+         return helper.virtual(null);
       }
 
       public static Object nullableHelper(final Object value, final boolean missing) {
@@ -568,6 +743,142 @@ class BytecodeInferenceExtensionsTest {
 
    @Test
    @SuppressWarnings("null")
+   void testNullPredicateContracts() {
+      try (ScanResult scan = scanFixtures()) {
+         final ClassInfo owner = scan.getClassInfo(NullPredicates.class.getName());
+         final var analyzer = new BytecodeAnalyzer(owner, new BytecodeAnalyzer.StaticFieldResolver(scan));
+         for (final String method : new String[] {"nonNullFallback", "isNullFallback", "required", "savedRequired", "savedFallback"}) {
+            assertReturn(analyzer, owner, method, Nullability.NEVER_NULL);
+         }
+         for (final String method : new String[] {"required", "savedRequired"}) {
+            assertRequirements(analyzer, owner, method, 0);
+         }
+         for (final String method : new String[] {"nonNullFallback", "isNullFallback", "savedFallback"}) {
+            assertRequirements(analyzer, owner, method);
+            assertThat(analyzer.determineDefinitelyNullableMethodParameters(owner.getMethodInfo(method).get(0))).as(method).containsExactly(
+               0);
+         }
+         assertReturn(analyzer, owner, "nullReturn", Nullability.POLY_NULL, 0);
+         assertReturn(analyzer, owner, "reassigned", Nullability.POLY_NULL, 1);
+         assertReturn(analyzer, owner, "mixedReferences", Nullability.POLY_NULL, 0);
+         assertReturn(analyzer, owner, "mixedPredicates", Nullability.POLY_NULL, 0);
+         assertReturn(analyzer, owner, "overwrittenBoolean", Nullability.POLY_NULL, 1);
+         assertReturn(analyzer, owner, "caught", Nullability.DEFINITELY_NULL);
+         for (final String method : new String[] {"reassigned", "mixedReferences", "mixedPredicates", "overwrittenBoolean", "caught"}) {
+            assertRequirements(analyzer, owner, method);
+         }
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testStaticInitializerFactoryContracts() {
+      try (ScanResult scan = scanFixtures()) {
+         final ClassInfo owner = scan.getClassInfo(FactoryFields.class.getName());
+         final var analyzer = new BytecodeAnalyzer(owner, new BytecodeAnalyzer.StaticFieldResolver(scan));
+         for (final String field : new String[] {"EMPTY", "SINGLE", "VARARGS"}) {
+            assertThat(analyzer.isDefinitelyNonNullStaticField(Objects.requireNonNull(owner.getFieldInfo(field)))).as(field).isTrue();
+         }
+         for (final String field : new String[] {"CONDITIONAL", "CUSTOM", "CAUGHT"}) {
+            // One successful factory call cannot qualify other writes, including a handler's null assignment.
+            assertThat(analyzer.isDefinitelyNonNullStaticField(Objects.requireNonNull(owner.getFieldInfo(field)))).as(field).isFalse();
+         }
+         assertReturn(analyzer, owner, "empty", Nullability.NEVER_NULL);
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testGetClassCallContracts() {
+      try (ScanResult scan = scanFixtures()) {
+         final ClassInfo owner = scan.getClassInfo(RuntimeClasses.class.getName());
+         final var analyzer = new BytecodeAnalyzer(owner, new BytecodeAnalyzer.StaticFieldResolver(scan));
+         for (final String method : new String[] {"object", "inherited", "array"}) {
+            assertReturn(analyzer, owner, method, Nullability.NEVER_NULL);
+            assertRequirements(analyzer, owner, method, 0);
+         }
+         assertReturn(analyzer, owner, "caught", Nullability.DEFINITELY_NULL);
+         assertRequirements(analyzer, owner, "caught");
+         assertReturn(analyzer, owner, "overloaded", Nullability.UNKNOWN);
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testNullForwardingUsesExactReturns() {
+      try (ScanResult scan = scanFixtures()) {
+         final ClassInfo owner = scan.getClassInfo(Returns.class.getName());
+         for (final boolean warmFirst : new boolean[] {false, true}) {
+            final var analyzer = new BytecodeAnalyzer(owner, new BytecodeAnalyzer.StaticFieldResolver(scan));
+            if (warmFirst) {
+               assertReturn(analyzer, owner, "constant", Nullability.NEVER_NULL);
+            }
+            for (final String method : new String[] {"nullArgument", "nestedNullArgument", "reorderedNullArgument", "fixedNullArgument"}) {
+               assertReturn(analyzer, owner, method, Nullability.DEFINITELY_NULL);
+            }
+            // Null input alone does not invert a PolyNull implication or close an overridable call's dispatch.
+            assertReturn(analyzer, owner, "nullArgumentWithFallback", Nullability.NEVER_NULL);
+            assertReturn(analyzer, owner, "nullArgumentWithAlternative", Nullability.UNKNOWN);
+            assertReturn(analyzer, owner, "virtualNullArgument", Nullability.UNKNOWN);
+            assertReturn(analyzer, owner, "constant", Nullability.NEVER_NULL);
+            assertReturn(analyzer, owner, "forwarding", Nullability.POLY_NULL, 0);
+         }
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testNullForwardingDepthLimitPreservesLocalEvidence(@TempDir final Path directory) throws Exception {
+      final String owner = "test/DeepNullForwarding";
+      final String descriptor = "(Ljava/lang/Object;)Ljava/lang/Object;";
+      final int lastMethod = 140;
+      final var writer = new ClassWriter(ClassWriter.COMPUTE_MAXS | ClassWriter.COMPUTE_FRAMES);
+      writer.visit(Opcodes.V11, Opcodes.ACC_PUBLIC, owner, null, "java/lang/Object", null);
+      for (int i = 0; i <= lastMethod; i++) {
+         final var method = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "chain" + i, descriptor, null, null);
+         method.visitCode();
+         if (i < lastMethod) {
+            /* The discarded call still enters the value interpreter. Depth exhaustion there must escape ASM's wrapper
+             * without caching a partial summary or discarding the independent return of the entry argument. */
+            method.visitInsn(Opcodes.ACONST_NULL);
+            method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "chain" + (i + 1), descriptor, false);
+            method.visitInsn(Opcodes.POP);
+         }
+         method.visitVarInsn(Opcodes.ALOAD, 0);
+         method.visitInsn(Opcodes.ARETURN);
+         method.visitMaxs(0, 0);
+         method.visitEnd();
+      }
+      for (final String name : new String[] {"deep", "localNull", "shallow"}) {
+         final var method = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, name, "()Ljava/lang/Object;", null, null);
+         method.visitCode();
+         method.visitInsn(Opcodes.ACONST_NULL);
+         method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "chain" + ("shallow".equals(name) ? lastMethod - 1 : 0), descriptor, false);
+         if ("localNull".equals(name)) {
+            method.visitInsn(Opcodes.POP);
+            method.visitInsn(Opcodes.ACONST_NULL);
+         }
+         method.visitInsn(Opcodes.ARETURN);
+         method.visitMaxs(0, 0);
+         method.visitEnd();
+      }
+      writer.visitEnd();
+      Files.createDirectories(directory.resolve("test"));
+      Files.write(directory.resolve(owner + ".class"), writer.toByteArray());
+      try (var loader = new URLClassLoader(new URL[] {directory.toUri().toURL()}, getClass().getClassLoader());
+           ScanResult scan = new ClassGraph().enableAllInfo().overrideClasspath(directory.toString()).acceptPackages("test").scan()) {
+         assertThat(loader.loadClass(owner.replace('/', '.')).getMethod("deep").invoke(null)).isNull();
+         final ClassInfo info = scan.getClassInfo(owner.replace('/', '.'));
+         final var analyzer = new BytecodeAnalyzer(info);
+         assertReturn(analyzer, info, "deep", Nullability.UNKNOWN);
+         assertReturn(analyzer, info, "localNull", Nullability.DEFINITELY_NULL);
+         assertReturn(analyzer, info, "shallow", Nullability.DEFINITELY_NULL);
+         assertReturn(analyzer, info, "chain0", Nullability.POLY_NULL, 0);
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
    void testReturnDependenciesAcrossClasses() {
       try (ScanResult scan = scanFixtures()) {
          final ClassInfo owner = scan.getClassInfo(Returns.class.getName());
@@ -580,7 +891,8 @@ class BytecodeInferenceExtensionsTest {
             assertReturn(analyzer, owner, method, Nullability.POLY_NULL, 0);
          }
          assertReturn(analyzer, owner, "fixed", Nullability.POLY_NULL, 1);
-         assertReturn(analyzer, owner, "nullArgument", Nullability.UNKNOWN);
+         // Exact argument forwarding now preserves a null constant, just as it already preserves a non-null constant.
+         assertReturn(analyzer, owner, "nullArgument", Nullability.DEFINITELY_NULL);
          assertReturn(analyzer, owner, "nullableHelper", Nullability.UNKNOWN);
          assertReturn(analyzer, owner, "overwrittenHelper", Nullability.UNKNOWN);
          assertReturn(analyzer, owner, "overwrittenArgument", Nullability.UNKNOWN);
@@ -723,7 +1035,9 @@ class BytecodeInferenceExtensionsTest {
       final var config = new EEAGenerator.Config(output, getClass().getPackageName());
       config.inputDirs.add(input);
       config.classFilter = info -> info.getName().equals(Dereferences.class.getName()) || info.getName().equals(Functions.class.getName())
-            || info.getName().equals(Returns.class.getName()) || info.getName().equals(TypeTests.class.getName());
+            || info.getName().equals(Returns.class.getName()) || info.getName().equals(TypeTests.class.getName()) || info.getName().equals(
+               NullPredicates.class.getName()) || info.getName().equals(FactoryFields.class.getName()) || info.getName().equals(
+                  RuntimeClasses.class.getName());
       for (final var mode : EEAGenerator.GenerationMode.values()) {
          config.generationMode = mode;
          EEAGenerator.generateEEAFiles(config);
@@ -733,6 +1047,12 @@ class BytecodeInferenceExtensionsTest {
          assertSignature(EEAFile.load(output, Functions.class.getName()), "lambda", "()L1java/util/function/Supplier<Ljava/lang/String;>;");
          assertSignature(EEAFile.load(output, TypeTests.class.getName()), "fallback", "(Ljava/lang/Object;)L1java/lang/String;");
          assertSignature(EEAFile.load(output, Returns.class.getName()), "constant", "()L1java/lang/Object;");
+         assertSignature(EEAFile.load(output, Returns.class.getName()), "nullArgument", "()L0java/lang/Object;");
+         assertSignature(EEAFile.load(output, NullPredicates.class.getName()), "required", "(L1java/lang/Object;)L1java/lang/Object;");
+         assertSignature(EEAFile.load(output, NullPredicates.class.getName()), "isNullFallback",
+            "(L0java/lang/Object;)L1java/lang/Object;");
+         assertSignature(EEAFile.load(output, FactoryFields.class.getName()), "EMPTY", "L1java/util/List<*>;");
+         assertSignature(EEAFile.load(output, RuntimeClasses.class.getName()), "object", "(L1java/lang/Object;)L1java/lang/Class<*>;");
          final var forwarding = EEAFile.load(output, Returns.class.getName()).getClassMembers().filter(member -> member.name.value.equals(
             "forwarding")).findFirst().orElseThrow();
          assertThat(forwarding.annotatedSignature.value).isEqualTo("(Ljava/lang/Object;)Ljava/lang/Object;");
@@ -743,7 +1063,8 @@ class BytecodeInferenceExtensionsTest {
    @SuppressWarnings("null") // ClassGraph's scan result is unannotated but present after successful scanning.
    private static ScanResult scanFixtures() {
       return new ClassGraph().enableAllInfo().acceptClasses(Dereferences.class.getName(), Functions.class.getName(), TypeTests.class
-         .getName(), ReturnHelpers.class.getName(), Returns.class.getName()).scan();
+         .getName(), ReturnHelpers.class.getName(), Returns.class.getName(), NullPredicates.class.getName(), FactoryFields.class.getName(),
+         RuntimeClasses.class.getName()).scan();
    }
 
    @SuppressWarnings("null")

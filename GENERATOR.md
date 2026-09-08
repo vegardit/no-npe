@@ -610,6 +610,13 @@ parameter preserves its `PolyNull` dependency.
 Dependencies are mapped through each call's actual arguments, including reordered arguments and nested calls.
 Unknown or cyclic helpers remain unknown, and a cached body does not bypass the call's dispatch restrictions.
 
+An explicit null argument also reaches the caller's return when a fixed-target helper is proven to return that exact
+entry argument on every normal return.
+This proof supports copies and casts; an ordinary `PolyNull` dependency alone is insufficient because the helper may
+replace null with a non-null fallback.
+Null forwarding uses static or special calls and final dispatch, without depending on receiver-allocation facts from
+unfinished flow analysis.
+
 A conditional assignment must not hide a nullable original argument that can still reach the return.
 If the analysis cannot preserve that possible value, the helper summary stays unknown.
 This also applies when value analysis proves the assignment unreachable.
@@ -619,9 +626,16 @@ This applies to ordinary, capturing, and serializable lambdas; it does not prove
 Standard string-concatenation factories also qualify, while arbitrary `invokedynamic` bootstraps remain unknown.
 
 A successful `instanceof` test proves the tested reference non-null on its true edge.
-This recognizes returns such as `value instanceof String ? (String) value : ""`.
+The exact `Objects.isNull(Object)` and `Objects.nonNull(Object)` predicates establish nullness on both Boolean outcomes.
+This recognizes returns such as `value instanceof String ? (String) value : ""` and `Objects.isNull(value) ? "" : value`.
 A saved test result retains the original reference's identity; it does not refine a replacement assigned to the same local.
-A failed test supplies no nullness fact, and a merged test of different references does not qualify.
+A failed `instanceof` test supplies no nullness fact.
+A merged test of different references or different predicates does not qualify for value refinement.
+
+All Java 11 `List.of(...)` overloads supply non-null return evidence, including the varargs form.
+`getClass()` supplies the same evidence when its exact signature resolves to the final `Object.getClass()` method,
+including inherited and array calls.
+These contracts describe normal completion; a reachable handler that returns null still contributes null evidence.
 
 `Object.clone()` has a separate proof that checks the selected method through the caller's superclass chain.
 A superclass call must reach `Object` without an intervening clone declaration, and the receiver's class must implement
@@ -636,7 +650,8 @@ The generator derives parameter contracts from bytecode:
 
 - It infers `NonNull` when every reachable normal return requires the parameter to be non-null.
   A successful instance-method call, field access, array access, or monitor operation proves its receiver or array non-null.
-  The non-null edge of an explicit `null` guard and the true edge of an `instanceof` test supply the same fact.
+  The non-null edge of an explicit `null` guard or recognized `Objects` predicate, and the true edge of an `instanceof`
+  test, supply the same fact.
   A call to an exactly resolved helper can also prove that an argument must be non-null for the call to return normally.
 - It infers `Nullable` when a direct guard at method entry sends `null` through a straight, side-effect-free path to a
   normal return.
@@ -652,11 +667,14 @@ The proofs have these boundaries:
   A local alias or cast still qualifies, while a reassigned local or a value merged from several producers does not.
   If the jump and fall-through share one successor, the guard supplies no edge-specific nullness fact.
 - A successful `instanceof` test also qualifies when its operand resolves to one original parameter.
+  The exact `Objects.isNull(Object)` and `Objects.nonNull(Object)` predicates qualify on their non-null outcome.
   Copies saved in ordinary Boolean locals qualify, while ambiguous or computed Boolean values do not.
-  A reassigned Boolean parameter remains unknown because a caller-supplied value can bypass the type test.
+  Opposite predicates merged into one Boolean do not qualify.
+  A reassigned Boolean parameter remains unknown because a caller-supplied value can bypass the test.
 - Guard facts are kept only on the edge proving non-nullness.
   A method with a normal path that accepts null therefore does not receive `NonNull`.
 - The `Nullable` proof is intentionally narrower.
+  A recognized `Objects` predicate and its saved Boolean copies can prepare the initial guard.
   Only an initial guard qualifies, and its null arm may prepare a constant or local return value but may not call, take a
   conditional branch, throw, or enter an exception handler before returning.
   Later checks, conditional null returns, and null arms containing cleanup or other executable behavior remain unknown.
@@ -760,6 +778,10 @@ Finality alone is not evidence because an initializer such as `System.getPropert
 When initializer analysis is unsupported or inconclusive, the field remains unspecified rather than being marked nullable.
 Standard lambda and string-concatenation factories supply non-null initializer values under the same bootstrap checks used
 for return inference.
+Primitive-wrapper `valueOf` factories and all Java 11 `List.of(...)` overloads use the same exact call contracts as return
+inference.
+A non-null factory result does not prove the final field value when another normal path assigns null, including a caught
+factory failure.
 
 This proof models the field after successful class initialization, matching ordinary source-level nullness contracts.
 Code reached recursively while `<clinit>` is still running can observe the JVM default `null` before assignment; that
