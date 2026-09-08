@@ -1,0 +1,57 @@
+class org/objectweb/asm/util/TraceClassVisitor
+
+p
+ Lorg/objectweb/asm/util/Printer;
+ Lorg/objectweb/asm/util/Printer;
+
+<init>
+ (Ljava/io/PrintWriter;)V
+ (Ljava/io/PrintWriter;)V
+<init>
+ (Lorg/objectweb/asm/ClassVisitor;Ljava/io/PrintWriter;)V
+ (Lorg/objectweb/asm/ClassVisitor;Ljava/io/PrintWriter;)V
+<init>
+ (Lorg/objectweb/asm/ClassVisitor;Lorg/objectweb/asm/util/Printer;Ljava/io/PrintWriter;)V
+ (Lorg/objectweb/asm/ClassVisitor;Lorg/objectweb/asm/util/Printer;Ljava/io/PrintWriter;)V
+visit
+ (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+ (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+visitAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (Ljava/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (Lorg/objectweb/asm/Attribute;)V
+visitField
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/objectweb/asm/FieldVisitor;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)L1org/objectweb/asm/FieldVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitInnerClass
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+visitMethod
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/objectweb/asm/MethodVisitor;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L1org/objectweb/asm/MethodVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitModule
+ (Ljava/lang/String;ILjava/lang/String;)Lorg/objectweb/asm/ModuleVisitor;
+ (Ljava/lang/String;ILjava/lang/String;)L1org/objectweb/asm/ModuleVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitNestHost
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitNestMember
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitOuterClass
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+visitPermittedSubclass
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitRecordComponent
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/objectweb/asm/RecordComponentVisitor;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)L1org/objectweb/asm/RecordComponentVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitSource
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+visitTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)

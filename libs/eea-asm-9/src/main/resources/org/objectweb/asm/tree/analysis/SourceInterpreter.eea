@@ -1,0 +1,33 @@
+class org/objectweb/asm/tree/analysis/SourceInterpreter
+
+super org/objectweb/asm/tree/analysis/Interpreter
+ <Lorg/objectweb/asm/tree/analysis/SourceValue;>
+ <Lorg/objectweb/asm/tree/analysis/SourceValue;>
+
+binaryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/SourceValue;Lorg/objectweb/asm/tree/analysis/SourceValue;)Lorg/objectweb/asm/tree/analysis/SourceValue;
+ (L1org/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/SourceValue;Lorg/objectweb/asm/tree/analysis/SourceValue;)L1org/objectweb/asm/tree/analysis/SourceValue; # @Generated(2,134)
+copyOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/SourceValue;)Lorg/objectweb/asm/tree/analysis/SourceValue;
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;L1org/objectweb/asm/tree/analysis/SourceValue;)L1org/objectweb/asm/tree/analysis/SourceValue; # @Generated(43,89)
+merge
+ (Lorg/objectweb/asm/tree/analysis/SourceValue;Lorg/objectweb/asm/tree/analysis/SourceValue;)Lorg/objectweb/asm/tree/analysis/SourceValue;
+ (L1org/objectweb/asm/tree/analysis/SourceValue;L1org/objectweb/asm/tree/analysis/SourceValue;)L1org/objectweb/asm/tree/analysis/SourceValue; # @Generated(2,47,93)
+naryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Ljava/util/List<+Lorg/objectweb/asm/tree/analysis/SourceValue;>;)Lorg/objectweb/asm/tree/analysis/SourceValue;
+ (L1org/objectweb/asm/tree/AbstractInsnNode;Ljava/util/List<+Lorg/objectweb/asm/tree/analysis/SourceValue;>;)L1org/objectweb/asm/tree/analysis/SourceValue; # @Generated(2,108)
+newOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;)Lorg/objectweb/asm/tree/analysis/SourceValue;
+ (L1org/objectweb/asm/tree/AbstractInsnNode;)L1org/objectweb/asm/tree/analysis/SourceValue; # @Generated(2,44)
+newValue
+ (Lorg/objectweb/asm/Type;)Lorg/objectweb/asm/tree/analysis/SourceValue;
+ (Lorg/objectweb/asm/Type;)L0org/objectweb/asm/tree/analysis/SourceValue; # @Generated(27)
+returnOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/SourceValue;Lorg/objectweb/asm/tree/analysis/SourceValue;)V
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/SourceValue;Lorg/objectweb/asm/tree/analysis/SourceValue;)V
+ternaryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/SourceValue;Lorg/objectweb/asm/tree/analysis/SourceValue;Lorg/objectweb/asm/tree/analysis/SourceValue;)Lorg/objectweb/asm/tree/analysis/SourceValue;
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/SourceValue;Lorg/objectweb/asm/tree/analysis/SourceValue;Lorg/objectweb/asm/tree/analysis/SourceValue;)L1org/objectweb/asm/tree/analysis/SourceValue; # @Generated(179)
+unaryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/SourceValue;)Lorg/objectweb/asm/tree/analysis/SourceValue;
+ (L1org/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/SourceValue;)L1org/objectweb/asm/tree/analysis/SourceValue; # @Generated(2,89)

@@ -1,0 +1,21 @@
+class org/objectweb/asm/commons/ModuleHashesAttribute
+
+algorithm
+ Ljava/lang/String;
+ Ljava/lang/String;
+hashes
+ Ljava/util/List<[B>;
+ Ljava/util/List<[B>;
+modules
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+
+<init>
+ (Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<[B>;)V
+ (Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<[B>;)V
+read
+ (Lorg/objectweb/asm/ClassReader;II[CI[Lorg/objectweb/asm/Label;)Lorg/objectweb/asm/Attribute;
+ (L1org/objectweb/asm/ClassReader;II[CI[Lorg/objectweb/asm/Label;)L1org/objectweb/asm/Attribute; # @Inherited(org.objectweb.asm.Attribute)
+write
+ (Lorg/objectweb/asm/ClassWriter;[BIII)Lorg/objectweb/asm/ByteVector;
+ (L1org/objectweb/asm/ClassWriter;[BIII)L1org/objectweb/asm/ByteVector; # @Generated(2,39)

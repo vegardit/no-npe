@@ -1,0 +1,17 @@
+class org/objectweb/asm/util/CheckFieldAdapter
+
+<init>
+ (ILorg/objectweb/asm/FieldVisitor;)V
+ (ILorg/objectweb/asm/FieldVisitor;)V
+<init>
+ (Lorg/objectweb/asm/FieldVisitor;)V
+ (Lorg/objectweb/asm/FieldVisitor;)V
+visitAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (L1java/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.FieldVisitor)
+visitAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (L1org/objectweb/asm/Attribute;)V # @Generated
+visitTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;L1java/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.FieldVisitor)

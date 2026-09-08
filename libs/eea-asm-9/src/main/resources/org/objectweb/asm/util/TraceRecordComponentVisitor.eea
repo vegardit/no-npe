@@ -1,0 +1,21 @@
+class org/objectweb/asm/util/TraceRecordComponentVisitor
+
+printer
+ Lorg/objectweb/asm/util/Printer;
+ Lorg/objectweb/asm/util/Printer;
+
+<init>
+ (Lorg/objectweb/asm/RecordComponentVisitor;Lorg/objectweb/asm/util/Printer;)V
+ (Lorg/objectweb/asm/RecordComponentVisitor;Lorg/objectweb/asm/util/Printer;)V
+<init>
+ (Lorg/objectweb/asm/util/Printer;)V
+ (Lorg/objectweb/asm/util/Printer;)V
+visitAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (Ljava/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.RecordComponentVisitor)
+visitAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (Lorg/objectweb/asm/Attribute;)V
+visitTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.RecordComponentVisitor)

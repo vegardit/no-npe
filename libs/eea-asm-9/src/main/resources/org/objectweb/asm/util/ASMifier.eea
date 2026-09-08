@@ -1,0 +1,205 @@
+class org/objectweb/asm/util/ASMifier
+
+main
+ ([Ljava/lang/String;)V
+ ([Ljava/lang/String;)V
+
+labelNames
+ Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/String;>;
+ Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/String;>;
+name
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (ILjava/lang/String;I)V
+ (ILjava/lang/String;I)V
+appendConstant
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+appendLabel
+ (Lorg/objectweb/asm/Label;)V
+ (Lorg/objectweb/asm/Label;)V
+createASMifier
+ (Ljava/lang/String;I)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;I)L1org/objectweb/asm/util/ASMifier; # @Generated(22)
+declareLabel
+ (Lorg/objectweb/asm/Label;)V
+ (Lorg/objectweb/asm/Label;)V
+visit
+ (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+ (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+visit
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+visitAnnotableParameterCount
+ (IZ)Lorg/objectweb/asm/util/ASMifier;
+ (IZ)L1org/objectweb/asm/util/ASMifier; # @Generated
+visitAnnotation
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;Ljava/lang/String;)L1org/objectweb/asm/util/ASMifier; # @Generated(39)
+visitAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;Z)L1org/objectweb/asm/util/ASMifier; # @Generated(22)
+visitAnnotationDefault
+ ()Lorg/objectweb/asm/util/ASMifier;
+ ()L1org/objectweb/asm/util/ASMifier; # @Generated
+visitArray
+ (Ljava/lang/String;)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;)L1org/objectweb/asm/util/ASMifier; # @Generated(21)
+visitAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (L1org/objectweb/asm/Attribute;)V # @Generated
+visitClassAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitClassAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (Lorg/objectweb/asm/Attribute;)V
+visitClassTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitEnum
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+visitExport
+ (Ljava/lang/String;I[Ljava/lang/String;)V
+ (Ljava/lang/String;I[Ljava/lang/String;)V
+visitField
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/objectweb/asm/util/ASMifier;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)L1org/objectweb/asm/util/ASMifier; # @Generated(76)
+visitFieldAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitFieldAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (Lorg/objectweb/asm/Attribute;)V
+visitFieldInsn
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+visitFieldTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitFrame
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+visitInnerClass
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+visitInsnAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitInvokeDynamicInsn
+ (Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Handle;[Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Handle;[1Ljava/lang/Object;)V # @Generated(64)
+visitJumpInsn
+ (ILorg/objectweb/asm/Label;)V
+ (ILorg/objectweb/asm/Label;)V
+visitLabel
+ (Lorg/objectweb/asm/Label;)V
+ (Lorg/objectweb/asm/Label;)V
+visitLdcInsn
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+visitLineNumber
+ (ILorg/objectweb/asm/Label;)V
+ (ILorg/objectweb/asm/Label;)V
+visitLocalVariable
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;I)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;I)V
+visitLocalVariableAnnotation
+ (ILorg/objectweb/asm/TypePath;[Lorg/objectweb/asm/Label;[Lorg/objectweb/asm/Label;[ILjava/lang/String;Z)Lorg/objectweb/asm/util/Printer;
+ (ILorg/objectweb/asm/TypePath;[1Lorg/objectweb/asm/Label;[1Lorg/objectweb/asm/Label;[1ILjava/lang/String;Z)L1org/objectweb/asm/util/Printer; # @Generated(31,57,83,105)
+visitLookupSwitchInsn
+ (Lorg/objectweb/asm/Label;[I[Lorg/objectweb/asm/Label;)V
+ (Lorg/objectweb/asm/Label;[1I[1Lorg/objectweb/asm/Label;)V # @Generated(27,29)
+visitMainClass
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitMethod
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/objectweb/asm/util/ASMifier;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L1org/objectweb/asm/util/ASMifier; # @Generated(77)
+visitMethodAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitMethodAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (Lorg/objectweb/asm/Attribute;)V
+visitMethodInsn
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+visitMethodTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitModule
+ (Ljava/lang/String;ILjava/lang/String;)Lorg/objectweb/asm/util/Printer;
+ (Ljava/lang/String;ILjava/lang/String;)L1org/objectweb/asm/util/Printer; # @Generated(40)
+visitMultiANewArrayInsn
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+visitNestHost
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitNestMember
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitOpen
+ (Ljava/lang/String;I[Ljava/lang/String;)V
+ (Ljava/lang/String;I[Ljava/lang/String;)V
+visitOuterClass
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+visitPackage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitParameter
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+visitParameterAnnotation
+ (ILjava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (ILjava/lang/String;Z)L1org/objectweb/asm/util/ASMifier; # @Generated(23)
+visitPermittedSubclass
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitProvide
+ (Ljava/lang/String;[Ljava/lang/String;)V
+ (Ljava/lang/String;[1Ljava/lang/String;)V # @Generated(20)
+visitRecordComponent
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)L1org/objectweb/asm/util/ASMifier; # @Generated(57)
+visitRecordComponentAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitRecordComponentAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (Lorg/objectweb/asm/Attribute;)V
+visitRecordComponentTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitRequire
+ (Ljava/lang/String;ILjava/lang/String;)V
+ (Ljava/lang/String;ILjava/lang/String;)V
+visitSource
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+visitTableSwitchInsn
+ (IILorg/objectweb/asm/Label;[Lorg/objectweb/asm/Label;)V
+ (IILorg/objectweb/asm/Label;[1Lorg/objectweb/asm/Label;)V # @Generated(29)
+visitTryCatchAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitTryCatchBlock
+ (Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Ljava/lang/String;)V
+ (Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Ljava/lang/String;)V
+visitTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+visitTypeAnnotation
+ (Ljava/lang/String;ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/util/ASMifier;
+ (Ljava/lang/String;ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)L1org/objectweb/asm/util/ASMifier; # @Generated(69)
+visitTypeInsn
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V
+visitUse
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

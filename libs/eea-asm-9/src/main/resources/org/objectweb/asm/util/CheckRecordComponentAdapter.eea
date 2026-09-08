@@ -1,0 +1,17 @@
+class org/objectweb/asm/util/CheckRecordComponentAdapter
+
+<init>
+ (ILorg/objectweb/asm/RecordComponentVisitor;)V
+ (ILorg/objectweb/asm/RecordComponentVisitor;)V
+<init>
+ (Lorg/objectweb/asm/RecordComponentVisitor;)V
+ (Lorg/objectweb/asm/RecordComponentVisitor;)V
+visitAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (L1java/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.RecordComponentVisitor)
+visitAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (L1org/objectweb/asm/Attribute;)V # @Generated
+visitTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;L1java/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.RecordComponentVisitor)

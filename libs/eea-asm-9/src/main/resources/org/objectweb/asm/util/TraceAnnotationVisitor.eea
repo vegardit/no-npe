@@ -1,0 +1,20 @@
+class org/objectweb/asm/util/TraceAnnotationVisitor
+
+<init>
+ (Lorg/objectweb/asm/AnnotationVisitor;Lorg/objectweb/asm/util/Printer;)V
+ (Lorg/objectweb/asm/AnnotationVisitor;Lorg/objectweb/asm/util/Printer;)V
+<init>
+ (Lorg/objectweb/asm/util/Printer;)V
+ (Lorg/objectweb/asm/util/Printer;)V
+visit
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+visitAnnotation
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/objectweb/asm/AnnotationVisitor;
+ (Ljava/lang/String;Ljava/lang/String;)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.AnnotationVisitor)
+visitArray
+ (Ljava/lang/String;)Lorg/objectweb/asm/AnnotationVisitor;
+ (Ljava/lang/String;)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.AnnotationVisitor)
+visitEnum
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V

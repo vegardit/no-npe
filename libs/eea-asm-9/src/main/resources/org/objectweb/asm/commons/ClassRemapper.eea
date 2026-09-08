@@ -1,0 +1,72 @@
+class org/objectweb/asm/commons/ClassRemapper
+
+className
+ Ljava/lang/String;
+ Ljava/lang/String;
+remapper
+ Lorg/objectweb/asm/commons/Remapper;
+ Lorg/objectweb/asm/commons/Remapper;
+
+<init>
+ (ILorg/objectweb/asm/ClassVisitor;Lorg/objectweb/asm/commons/Remapper;)V
+ (ILorg/objectweb/asm/ClassVisitor;Lorg/objectweb/asm/commons/Remapper;)V
+<init>
+ (Lorg/objectweb/asm/ClassVisitor;Lorg/objectweb/asm/commons/Remapper;)V
+ (Lorg/objectweb/asm/ClassVisitor;Lorg/objectweb/asm/commons/Remapper;)V
+createAnnotationRemapper
+ (Ljava/lang/String;Lorg/objectweb/asm/AnnotationVisitor;)Lorg/objectweb/asm/AnnotationVisitor;
+ (Ljava/lang/String;Lorg/objectweb/asm/AnnotationVisitor;)L1org/objectweb/asm/AnnotationVisitor; # @Generated(58)
+createAnnotationRemapper
+ (Lorg/objectweb/asm/AnnotationVisitor;)Lorg/objectweb/asm/AnnotationVisitor;
+ (Lorg/objectweb/asm/AnnotationVisitor;)L1org/objectweb/asm/AnnotationVisitor; # @Generated(40)
+createFieldRemapper
+ (Lorg/objectweb/asm/FieldVisitor;)Lorg/objectweb/asm/FieldVisitor;
+ (Lorg/objectweb/asm/FieldVisitor;)L1org/objectweb/asm/FieldVisitor; # @Generated(35)
+createMethodRemapper
+ (Lorg/objectweb/asm/MethodVisitor;)Lorg/objectweb/asm/MethodVisitor;
+ (Lorg/objectweb/asm/MethodVisitor;)L1org/objectweb/asm/MethodVisitor; # @Generated(36)
+createModuleRemapper
+ (Lorg/objectweb/asm/ModuleVisitor;)Lorg/objectweb/asm/ModuleVisitor;
+ (Lorg/objectweb/asm/ModuleVisitor;)L1org/objectweb/asm/ModuleVisitor; # @Generated(36)
+createRecordComponentRemapper
+ (Lorg/objectweb/asm/RecordComponentVisitor;)Lorg/objectweb/asm/RecordComponentVisitor;
+ (Lorg/objectweb/asm/RecordComponentVisitor;)L1org/objectweb/asm/RecordComponentVisitor; # @Generated(45)
+visit
+ (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+ (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+visitAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (Ljava/lang/String;Z)L0org/objectweb/asm/AnnotationVisitor; # @Inherited(org.objectweb.asm.ClassVisitor)
+visitAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (Lorg/objectweb/asm/Attribute;)V
+visitField
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/objectweb/asm/FieldVisitor;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)L0org/objectweb/asm/FieldVisitor; # @Inherited(org.objectweb.asm.ClassVisitor)
+visitInnerClass
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+visitMethod
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/objectweb/asm/MethodVisitor;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L0org/objectweb/asm/MethodVisitor; # @Inherited(org.objectweb.asm.ClassVisitor)
+visitModule
+ (Ljava/lang/String;ILjava/lang/String;)Lorg/objectweb/asm/ModuleVisitor;
+ (Ljava/lang/String;ILjava/lang/String;)L0org/objectweb/asm/ModuleVisitor; # @Inherited(org.objectweb.asm.ClassVisitor)
+visitNestHost
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitNestMember
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitOuterClass
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+visitPermittedSubclass
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitRecordComponent
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/objectweb/asm/RecordComponentVisitor;
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)L0org/objectweb/asm/RecordComponentVisitor; # @Inherited(org.objectweb.asm.ClassVisitor)
+visitTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)L0org/objectweb/asm/AnnotationVisitor; # @Inherited(org.objectweb.asm.ClassVisitor)

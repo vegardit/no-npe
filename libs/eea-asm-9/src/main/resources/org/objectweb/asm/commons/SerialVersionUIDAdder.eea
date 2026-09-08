@@ -1,0 +1,23 @@
+class org/objectweb/asm/commons/SerialVersionUIDAdder
+
+<init>
+ (ILorg/objectweb/asm/ClassVisitor;)V
+ (ILorg/objectweb/asm/ClassVisitor;)V
+<init>
+ (Lorg/objectweb/asm/ClassVisitor;)V
+ (Lorg/objectweb/asm/ClassVisitor;)V
+computeSHAdigest
+ ([B)[B
+ ([B)[B
+visit
+ (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+ (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+visitField
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/objectweb/asm/FieldVisitor;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)L0org/objectweb/asm/FieldVisitor; # @Inherited(org.objectweb.asm.ClassVisitor)
+visitInnerClass
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+visitMethod
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/objectweb/asm/MethodVisitor;
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)L0org/objectweb/asm/MethodVisitor; # @Inherited(org.objectweb.asm.ClassVisitor)

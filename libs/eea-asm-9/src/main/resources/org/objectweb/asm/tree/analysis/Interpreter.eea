@@ -1,0 +1,43 @@
+class org/objectweb/asm/tree/analysis/Interpreter
+ <V::Lorg/objectweb/asm/tree/analysis/Value;>
+ <V::Lorg/objectweb/asm/tree/analysis/Value;>
+
+binaryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;TV;)TV;
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;TV;)TV;
+copyOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;)TV;
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;)TV;
+merge
+ (TV;TV;)TV;
+ (TV;TV;)TV;
+naryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Ljava/util/List<+TV;>;)TV;
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Ljava/util/List<+TV;>;)TV;
+newEmptyValue
+ (I)TV;
+ (I)TV;
+newExceptionValue
+ (Lorg/objectweb/asm/tree/TryCatchBlockNode;Lorg/objectweb/asm/tree/analysis/Frame<TV;>;Lorg/objectweb/asm/Type;)TV;
+ (Lorg/objectweb/asm/tree/TryCatchBlockNode;Lorg/objectweb/asm/tree/analysis/Frame<TV;>;Lorg/objectweb/asm/Type;)TV;
+newOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;)TV;
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;)TV;
+newParameterValue
+ (ZILorg/objectweb/asm/Type;)TV;
+ (ZILorg/objectweb/asm/Type;)TV;
+newReturnTypeValue
+ (Lorg/objectweb/asm/Type;)TV;
+ (Lorg/objectweb/asm/Type;)TV;
+newValue
+ (Lorg/objectweb/asm/Type;)TV;
+ (Lorg/objectweb/asm/Type;)TV;
+returnOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;TV;)V
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;TV;)V
+ternaryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;TV;TV;)TV;
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;TV;TV;)TV;
+unaryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;)TV;
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;TV;)TV;

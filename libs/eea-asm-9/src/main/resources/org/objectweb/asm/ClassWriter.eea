@@ -1,0 +1,95 @@
+class org/objectweb/asm/ClassWriter
+
+<init>
+ (Lorg/objectweb/asm/ClassReader;I)V
+ (Lorg/objectweb/asm/ClassReader;I)V
+getClassLoader
+ ()Ljava/lang/ClassLoader;
+ ()Ljava/lang/ClassLoader;
+getCommonSuperClass
+ (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ (L1java/lang/String;L1java/lang/String;)L1java/lang/String; # @Generated(2,20,39)
+newClass
+ (Ljava/lang/String;)I
+ (L1java/lang/String;)I # @Generated
+newConst
+ (Ljava/lang/Object;)I
+ (L1java/lang/Object;)I # @Generated
+newConstantDynamic
+ (Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Handle;[Ljava/lang/Object;)I
+ (L1java/lang/String;L1java/lang/String;L1org/objectweb/asm/Handle;[1Ljava/lang/Object;)I # @Generated(2,20,38,64)
+newField
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+ (L1java/lang/String;L1java/lang/String;L1java/lang/String;)I # @Generated(2,20,38)
+newHandle
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+newHandle
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)I
+ (IL1java/lang/String;L1java/lang/String;L1java/lang/String;Z)I # @Generated(3,21,39)
+newInvokeDynamic
+ (Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Handle;[Ljava/lang/Object;)I
+ (L1java/lang/String;L1java/lang/String;L1org/objectweb/asm/Handle;[1Ljava/lang/Object;)I # @Generated(2,20,38,64)
+newMethod
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)I
+ (L1java/lang/String;L1java/lang/String;L1java/lang/String;Z)I # @Generated(2,20,38)
+newMethodType
+ (Ljava/lang/String;)I
+ (L1java/lang/String;)I # @Generated
+newModule
+ (Ljava/lang/String;)I
+ (L1java/lang/String;)I # @Generated
+newNameType
+ (Ljava/lang/String;Ljava/lang/String;)I
+ (L1java/lang/String;L1java/lang/String;)I # @Generated(2,20)
+newPackage
+ (Ljava/lang/String;)I
+ (L1java/lang/String;)I # @Generated
+newUTF8
+ (Ljava/lang/String;)I
+ (L1java/lang/String;)I # @Generated
+toByteArray
+ ()[B
+ ()[B
+visit
+ (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+ (IIL1java/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V # @Generated(4)
+visitAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (L1java/lang/String;Z)L0org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (L1org/objectweb/asm/Attribute;)V # @Generated
+visitField
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/objectweb/asm/FieldVisitor;
+ (IL1java/lang/String;L1java/lang/String;Ljava/lang/String;Ljava/lang/Object;)L1org/objectweb/asm/FieldVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitInnerClass
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+ (L1java/lang/String;Ljava/lang/String;Ljava/lang/String;I)V # @Generated(2)
+visitMethod
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/objectweb/asm/MethodVisitor;
+ (IL1java/lang/String;L1java/lang/String;Ljava/lang/String;[Ljava/lang/String;)L1org/objectweb/asm/MethodVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitModule
+ (Ljava/lang/String;ILjava/lang/String;)Lorg/objectweb/asm/ModuleVisitor;
+ (L1java/lang/String;ILjava/lang/String;)L1org/objectweb/asm/ModuleVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitNestHost
+ (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
+visitNestMember
+ (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
+visitOuterClass
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;Ljava/lang/String;Ljava/lang/String;)V # @Generated(2)
+visitPermittedSubclass
+ (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
+visitRecordComponent
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/objectweb/asm/RecordComponentVisitor;
+ (L1java/lang/String;L1java/lang/String;Ljava/lang/String;)L1org/objectweb/asm/RecordComponentVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)
+visitSource
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+visitTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;L1java/lang/String;Z)L0org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.ClassVisitor)

@@ -1,0 +1,86 @@
+class org/objectweb/asm/util/CheckMethodAdapter
+
+<init>
+ (IILjava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/MethodVisitor;Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/Integer;>;)V
+ (IILjava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/MethodVisitor;Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/Integer;>;)V
+<init>
+ (ILjava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/MethodVisitor;Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/Integer;>;)V
+ (ILjava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/MethodVisitor;Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/Integer;>;)V
+<init>
+ (ILorg/objectweb/asm/MethodVisitor;Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/Integer;>;)V
+ (ILorg/objectweb/asm/MethodVisitor;Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/Integer;>;)V
+<init>
+ (Lorg/objectweb/asm/MethodVisitor;)V
+ (Lorg/objectweb/asm/MethodVisitor;)V
+<init>
+ (Lorg/objectweb/asm/MethodVisitor;Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/Integer;>;)V
+ (Lorg/objectweb/asm/MethodVisitor;Ljava/util/Map<Lorg/objectweb/asm/Label;Ljava/lang/Integer;>;)V
+visitAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (L1java/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.MethodVisitor)
+visitAnnotationDefault
+ ()Lorg/objectweb/asm/AnnotationVisitor;
+ ()L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.MethodVisitor)
+visitAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (L1org/objectweb/asm/Attribute;)V # @Generated
+visitFieldInsn
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (IL1java/lang/String;L1java/lang/String;L1java/lang/String;)V # @Generated(3,21,39)
+visitFrame
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+ (II[Ljava/lang/Object;I[Ljava/lang/Object;)V
+visitInsnAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;L1java/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.MethodVisitor)
+visitInvokeDynamicInsn
+ (Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Handle;[Ljava/lang/Object;)V
+ (L1java/lang/String;L1java/lang/String;L1org/objectweb/asm/Handle;[1Ljava/lang/Object;)V # @Generated(2,20,38,64)
+visitJumpInsn
+ (ILorg/objectweb/asm/Label;)V
+ (IL1org/objectweb/asm/Label;)V # @Generated
+visitLabel
+ (Lorg/objectweb/asm/Label;)V
+ (L1org/objectweb/asm/Label;)V # @Generated
+visitLdcInsn
+ (Ljava/lang/Object;)V
+ (L1java/lang/Object;)V # @Generated
+visitLineNumber
+ (ILorg/objectweb/asm/Label;)V
+ (IL1org/objectweb/asm/Label;)V # @Generated
+visitLocalVariable
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;I)V
+ (L1java/lang/String;L1java/lang/String;Ljava/lang/String;L1org/objectweb/asm/Label;L1org/objectweb/asm/Label;I)V # @Generated(2,20,56,81)
+visitLocalVariableAnnotation
+ (ILorg/objectweb/asm/TypePath;[Lorg/objectweb/asm/Label;[Lorg/objectweb/asm/Label;[ILjava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;[1Lorg/objectweb/asm/Label;[1Lorg/objectweb/asm/Label;[1IL1java/lang/String;Z)L0org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.MethodVisitor)
+visitLookupSwitchInsn
+ (Lorg/objectweb/asm/Label;[I[Lorg/objectweb/asm/Label;)V
+ (L1org/objectweb/asm/Label;[1I[1Lorg/objectweb/asm/Label;)V # @Generated(2,27,29)
+visitMethodInsn
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+visitMultiANewArrayInsn
+ (Ljava/lang/String;I)V
+ (L1java/lang/String;I)V # @Generated
+visitParameter
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+visitParameterAnnotation
+ (ILjava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (IL1java/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.MethodVisitor)
+visitTableSwitchInsn
+ (IILorg/objectweb/asm/Label;[Lorg/objectweb/asm/Label;)V
+ (IIL1org/objectweb/asm/Label;[1Lorg/objectweb/asm/Label;)V # @Generated(4,29)
+visitTryCatchAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;L1java/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.MethodVisitor)
+visitTryCatchBlock
+ (Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Ljava/lang/String;)V
+ (L1org/objectweb/asm/Label;L1org/objectweb/asm/Label;L1org/objectweb/asm/Label;Ljava/lang/String;)V # @Generated(2,27,52)
+visitTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;L1java/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.MethodVisitor)
+visitTypeInsn
+ (ILjava/lang/String;)V
+ (IL1java/lang/String;)V # @Generated

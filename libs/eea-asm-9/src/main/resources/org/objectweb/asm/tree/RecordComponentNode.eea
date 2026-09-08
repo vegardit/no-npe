@@ -1,0 +1,45 @@
+class org/objectweb/asm/tree/RecordComponentNode
+
+attrs
+ Ljava/util/List<Lorg/objectweb/asm/Attribute;>;
+ Ljava/util/List<Lorg/objectweb/asm/Attribute;>;
+descriptor
+ Ljava/lang/String;
+ Ljava/lang/String;
+invisibleAnnotations
+ Ljava/util/List<Lorg/objectweb/asm/tree/AnnotationNode;>;
+ Ljava/util/List<Lorg/objectweb/asm/tree/AnnotationNode;>;
+invisibleTypeAnnotations
+ Ljava/util/List<Lorg/objectweb/asm/tree/TypeAnnotationNode;>;
+ Ljava/util/List<Lorg/objectweb/asm/tree/TypeAnnotationNode;>;
+name
+ Ljava/lang/String;
+ Ljava/lang/String;
+signature
+ Ljava/lang/String;
+ Ljava/lang/String;
+visibleAnnotations
+ Ljava/util/List<Lorg/objectweb/asm/tree/AnnotationNode;>;
+ Ljava/util/List<Lorg/objectweb/asm/tree/AnnotationNode;>;
+visibleTypeAnnotations
+ Ljava/util/List<Lorg/objectweb/asm/tree/TypeAnnotationNode;>;
+ Ljava/util/List<Lorg/objectweb/asm/tree/TypeAnnotationNode;>;
+
+<init>
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+accept
+ (Lorg/objectweb/asm/ClassVisitor;)V
+ (L1org/objectweb/asm/ClassVisitor;)V # @Generated
+visitAnnotation
+ (Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (Ljava/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.RecordComponentVisitor)
+visitAttribute
+ (Lorg/objectweb/asm/Attribute;)V
+ (Lorg/objectweb/asm/Attribute;)V
+visitTypeAnnotation
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)Lorg/objectweb/asm/AnnotationVisitor;
+ (ILorg/objectweb/asm/TypePath;Ljava/lang/String;Z)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.RecordComponentVisitor)

@@ -1,0 +1,60 @@
+class org/objectweb/asm/tree/ModuleNode
+
+exports
+ Ljava/util/List<Lorg/objectweb/asm/tree/ModuleExportNode;>;
+ Ljava/util/List<Lorg/objectweb/asm/tree/ModuleExportNode;>;
+mainClass
+ Ljava/lang/String;
+ Ljava/lang/String;
+name
+ Ljava/lang/String;
+ Ljava/lang/String;
+opens
+ Ljava/util/List<Lorg/objectweb/asm/tree/ModuleOpenNode;>;
+ Ljava/util/List<Lorg/objectweb/asm/tree/ModuleOpenNode;>;
+packages
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+provides
+ Ljava/util/List<Lorg/objectweb/asm/tree/ModuleProvideNode;>;
+ Ljava/util/List<Lorg/objectweb/asm/tree/ModuleProvideNode;>;
+requires
+ Ljava/util/List<Lorg/objectweb/asm/tree/ModuleRequireNode;>;
+ Ljava/util/List<Lorg/objectweb/asm/tree/ModuleRequireNode;>;
+uses
+ Ljava/util/List<Ljava/lang/String;>;
+ Ljava/util/List<Ljava/lang/String;>;
+version
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (ILjava/lang/String;ILjava/lang/String;Ljava/util/List<Lorg/objectweb/asm/tree/ModuleRequireNode;>;Ljava/util/List<Lorg/objectweb/asm/tree/ModuleExportNode;>;Ljava/util/List<Lorg/objectweb/asm/tree/ModuleOpenNode;>;Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Lorg/objectweb/asm/tree/ModuleProvideNode;>;)V
+ (ILjava/lang/String;ILjava/lang/String;Ljava/util/List<Lorg/objectweb/asm/tree/ModuleRequireNode;>;Ljava/util/List<Lorg/objectweb/asm/tree/ModuleExportNode;>;Ljava/util/List<Lorg/objectweb/asm/tree/ModuleOpenNode;>;Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Lorg/objectweb/asm/tree/ModuleProvideNode;>;)V
+<init>
+ (Ljava/lang/String;ILjava/lang/String;)V
+ (Ljava/lang/String;ILjava/lang/String;)V
+accept
+ (Lorg/objectweb/asm/ClassVisitor;)V
+ (L1org/objectweb/asm/ClassVisitor;)V # @Generated
+visitExport
+ (Ljava/lang/String;I[Ljava/lang/String;)V
+ (Ljava/lang/String;I[Ljava/lang/String;)V
+visitMainClass
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitOpen
+ (Ljava/lang/String;I[Ljava/lang/String;)V
+ (Ljava/lang/String;I[Ljava/lang/String;)V
+visitPackage
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+visitProvide
+ (Ljava/lang/String;[Ljava/lang/String;)V
+ (Ljava/lang/String;[Ljava/lang/String;)V
+visitRequire
+ (Ljava/lang/String;ILjava/lang/String;)V
+ (Ljava/lang/String;ILjava/lang/String;)V
+visitUse
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V

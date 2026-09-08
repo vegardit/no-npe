@@ -1,0 +1,30 @@
+class org/objectweb/asm/tree/AnnotationNode
+
+desc
+ Ljava/lang/String;
+ Ljava/lang/String;
+values
+ Ljava/util/List<Ljava/lang/Object;>;
+ Ljava/util/List<Ljava/lang/Object;>;
+
+<init>
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+accept
+ (Lorg/objectweb/asm/AnnotationVisitor;)V
+ (L0org/objectweb/asm/AnnotationVisitor;)V # @Generated
+visit
+ (Ljava/lang/String;Ljava/lang/Object;)V
+ (Ljava/lang/String;Ljava/lang/Object;)V
+visitAnnotation
+ (Ljava/lang/String;Ljava/lang/String;)Lorg/objectweb/asm/AnnotationVisitor;
+ (Ljava/lang/String;Ljava/lang/String;)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.AnnotationVisitor)
+visitArray
+ (Ljava/lang/String;)Lorg/objectweb/asm/AnnotationVisitor;
+ (Ljava/lang/String;)L1org/objectweb/asm/AnnotationVisitor; # @Overrides(org.objectweb.asm.AnnotationVisitor)
+visitEnum
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V

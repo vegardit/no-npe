@@ -1,0 +1,29 @@
+class org/objectweb/asm/tree/analysis/BasicVerifier
+
+binaryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;)Lorg/objectweb/asm/tree/analysis/BasicValue;
+ (L1org/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;)L0org/objectweb/asm/tree/analysis/BasicValue; # @Inherited(org.objectweb.asm.tree.analysis.BasicInterpreter)
+copyOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;)Lorg/objectweb/asm/tree/analysis/BasicValue;
+ (L1org/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;)Lorg/objectweb/asm/tree/analysis/BasicValue; # @Generated(2,PolyNull) @Overrides(org.objectweb.asm.tree.analysis.BasicInterpreter)
+getElementValue
+ (Lorg/objectweb/asm/tree/analysis/BasicValue;)Lorg/objectweb/asm/tree/analysis/BasicValue;
+ (Lorg/objectweb/asm/tree/analysis/BasicValue;)L1org/objectweb/asm/tree/analysis/BasicValue; # @Generated(47)
+isArrayValue
+ (Lorg/objectweb/asm/tree/analysis/BasicValue;)Z
+ (L1org/objectweb/asm/tree/analysis/BasicValue;)Z # @Generated
+isSubTypeOf
+ (Lorg/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;)Z
+ (L1org/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;)Z # @Generated(2)
+naryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Ljava/util/List<+Lorg/objectweb/asm/tree/analysis/BasicValue;>;)Lorg/objectweb/asm/tree/analysis/BasicValue;
+ (L1org/objectweb/asm/tree/AbstractInsnNode;L1java/util/List<+Lorg/objectweb/asm/tree/analysis/BasicValue;>;)Lorg/objectweb/asm/tree/analysis/BasicValue; # @Overrides(org.objectweb.asm.tree.analysis.BasicInterpreter)
+returnOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;)V
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;)V
+ternaryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;)Lorg/objectweb/asm/tree/analysis/BasicValue;
+ (L1org/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;Lorg/objectweb/asm/tree/analysis/BasicValue;)L0org/objectweb/asm/tree/analysis/BasicValue; # @Overrides(org.objectweb.asm.tree.analysis.BasicInterpreter)
+unaryOperation
+ (Lorg/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;)Lorg/objectweb/asm/tree/analysis/BasicValue;
+ (L1org/objectweb/asm/tree/AbstractInsnNode;Lorg/objectweb/asm/tree/analysis/BasicValue;)L0org/objectweb/asm/tree/analysis/BasicValue; # @Inherited(org.objectweb.asm.tree.analysis.BasicInterpreter)
