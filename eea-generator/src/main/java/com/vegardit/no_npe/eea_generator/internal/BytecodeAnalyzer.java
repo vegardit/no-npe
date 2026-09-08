@@ -1974,6 +1974,54 @@ public class BytecodeAnalyzer {
       if (opcode != Opcodes.INVOKESTATIC)
          return false;
 
+      if ("java/util/Objects".equals(owner))
+         /* These are result contracts. Else/ElseGet can accept a null first argument and must not become parameter checks;
+          * even a supplier returning null causes an exception instead of a normal null result. */
+         return isObjectsRequireNonNull(opcode, owner, methodName, descriptor) || "requireNonNullElse".equals(methodName)
+               && "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;".equals(descriptor) || "requireNonNullElseGet".equals(
+                  methodName) && "(Ljava/lang/Object;Ljava/util/function/Supplier;)Ljava/lang/Object;".equals(descriptor);
+
+      if ("java/util/Collections".equals(owner)) {
+         // Empty and singleton factories always return containers, including singletons whose elements are null.
+         switch (methodName) {
+            case "emptyList":
+               return "()Ljava/util/List;".equals(descriptor);
+            case "emptySet":
+               return "()Ljava/util/Set;".equals(descriptor);
+            case "emptyMap":
+               return "()Ljava/util/Map;".equals(descriptor);
+            case "singleton":
+               return "(Ljava/lang/Object;)Ljava/util/Set;".equals(descriptor);
+            case "singletonList":
+               return "(Ljava/lang/Object;)Ljava/util/List;".equals(descriptor);
+            case "singletonMap":
+               return "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;".equals(descriptor);
+            default:
+               return false;
+         }
+      }
+
+      if ("java/util/Arrays".equals(owner)) {
+         if ("asList".equals(methodName))
+            return "([Ljava/lang/Object;)Ljava/util/List;".equals(descriptor);
+         final String indexes;
+         if ("copyOf".equals(methodName)) {
+            indexes = "I";
+         } else if ("copyOfRange".equals(methodName)) {
+            indexes = "II";
+         } else {
+            return false;
+         }
+         final String array = Type.getReturnType(descriptor).getDescriptor();
+         final boolean objectArray = "[Ljava/lang/Object;".equals(array);
+         /* Generic copies erase to Object[]; only the eight primitive array types have specialized overloads.
+          * An explicit array class is supported only by the generic overload. Null padding does not qualify elements. */
+         if (!objectArray && (array.length() != 2 || array.charAt(0) != '[' || "ZBCSIJFD".indexOf(array.charAt(1)) < 0))
+            return false;
+         return ("(" + array + indexes + ")" + array).equals(descriptor) || objectArray && ("(" + array + indexes + "Ljava/lang/Class;)"
+               + array).equals(descriptor);
+      }
+
       final boolean isMap = "java/util/Map".equals(owner);
       if (!isMap && !"java/util/List".equals(owner) && !"java/util/Set".equals(owner))
          return false;
@@ -2633,12 +2681,17 @@ public class BytecodeAnalyzer {
          "<init>");
    }
 
+   @SuppressWarnings("null") // ASM leaves these fields unannotated, but a parsed method reference supplies all three strings.
    private static boolean isObjectsRequireNonNull(final MethodInsnNode call) {
-      if (call.getOpcode() != Opcodes.INVOKESTATIC || !call.owner.equals("java/util/Objects") || !call.name.equals("requireNonNull"))
+      return isObjectsRequireNonNull(call.getOpcode(), call.owner, call.name, call.desc);
+   }
+
+   private static boolean isObjectsRequireNonNull(final int opcode, final String owner, final String methodName, final String descriptor) {
+      if (opcode != Opcodes.INVOKESTATIC || !"java/util/Objects".equals(owner) || !"requireNonNull".equals(methodName))
          return false;
 
-      // Match only the Java 11 overloads whose normal completion proves that their first argument was non-null.
-      switch (call.desc) {
+      // Share these exact overloads between result inference and the stronger proof about the first argument.
+      switch (descriptor) {
          case "(Ljava/lang/Object;)Ljava/lang/Object;":
          case "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;":
          case "(Ljava/lang/Object;Ljava/util/function/Supplier;)Ljava/lang/Object;":

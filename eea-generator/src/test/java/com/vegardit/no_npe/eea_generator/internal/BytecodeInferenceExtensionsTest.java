@@ -17,6 +17,7 @@ import java.net.URLClassLoader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -377,7 +378,7 @@ class BytecodeInferenceExtensionsTest {
       }
 
       private static Object missingValue() {
-         // Keep the deliberate runtime failure compilable against List.of's non-null parameter annotation.
+         // Keep deliberate runtime failures compilable against the factories' non-null parameter annotations.
          return null;
       }
 
@@ -399,6 +400,96 @@ class BytecodeInferenceExtensionsTest {
 
       public static Map<?, ?> map() {
          return MAP_EMPTY;
+      }
+   }
+
+   /** Exercises non-null factory results without requiring non-null inputs or elements. */
+   @NonNullByDefault({})
+   @SuppressWarnings("null") // Null elements and caught factory failures are intentional regression inputs.
+   public static final class AdditionalFactories {
+      public static final Object REQUIRED = Objects.requireNonNull(System.getProperty("java.version"));
+      public static final Object REQUIRED_MESSAGE = Objects.requireNonNull(System.getProperty("java.version"), "missing");
+      public static final Object REQUIRED_SUPPLIER = Objects.requireNonNull(System.getProperty("java.version"), () -> "missing");
+      public static final Object DEFAULT = Objects.requireNonNullElse(null, "fallback");
+      public static final Object DEFAULT_SUPPLIER = Objects.requireNonNullElseGet(null, Object::new);
+      public static final List<Object> EMPTY_LIST = Collections.emptyList();
+      public static final Set<Object> EMPTY_SET = Collections.emptySet();
+      public static final Map<Object, Object> EMPTY_MAP = Collections.emptyMap();
+      public static final List<Object> SINGLETON_LIST = Collections.singletonList(null);
+      public static final Set<Object> SINGLETON_SET = Collections.singleton(null);
+      public static final Map<Object, Object> SINGLETON_MAP = Collections.singletonMap(null, null);
+      public static final List<Object> ARRAY_LIST = Arrays.asList(new Object[] {null});
+      public static final Object[] COPY = Arrays.copyOf(new Object[0], 1);
+      public static final Object[] RANGE = Arrays.copyOfRange(new Object[0], 0, 1);
+      public static final String[] TYPED_COPY = Arrays.copyOf(new Object[0], 1, String[].class);
+      public static final String[] TYPED_RANGE = Arrays.copyOfRange(new Object[0], 0, 1, String[].class);
+      public static final boolean[] BOOLEAN_COPY = Arrays.copyOf(new boolean[0], 1);
+      public static final boolean[] BOOLEAN_RANGE = Arrays.copyOfRange(new boolean[0], 0, 1);
+      public static final byte[] BYTE_COPY = Arrays.copyOf(new byte[0], 1);
+      public static final byte[] BYTE_RANGE = Arrays.copyOfRange(new byte[0], 0, 1);
+      public static final char[] CHAR_COPY = Arrays.copyOf(new char[0], 1);
+      public static final char[] CHAR_RANGE = Arrays.copyOfRange(new char[0], 0, 1);
+      public static final short[] SHORT_COPY = Arrays.copyOf(new short[0], 1);
+      public static final short[] SHORT_RANGE = Arrays.copyOfRange(new short[0], 0, 1);
+      public static final int[] INT_COPY = Arrays.copyOf(new int[0], 1);
+      public static final int[] INT_RANGE = Arrays.copyOfRange(new int[0], 0, 1);
+      public static final long[] LONG_COPY = Arrays.copyOf(new long[0], 1);
+      public static final long[] LONG_RANGE = Arrays.copyOfRange(new long[0], 0, 1);
+      public static final float[] FLOAT_COPY = Arrays.copyOf(new float[0], 1);
+      public static final float[] FLOAT_RANGE = Arrays.copyOfRange(new float[0], 0, 1);
+      public static final double[] DOUBLE_COPY = Arrays.copyOf(new double[0], 1);
+      public static final double[] DOUBLE_RANGE = Arrays.copyOfRange(new double[0], 0, 1);
+      public static final List<?> CONDITIONAL = System.nanoTime() == 0 ? null : Collections.emptyList();
+      public static final List<?> CUSTOM = emptyList();
+      public static final Object CAUGHT_DEFAULT;
+      public static final Object[] CAUGHT_COPY;
+
+      static {
+         Object value;
+         try {
+            value = Objects.requireNonNullElse(null, FactoryFields.missingValue());
+         } catch (final NullPointerException ex) {
+            value = null;
+         }
+         CAUGHT_DEFAULT = value;
+         Object[] copy;
+         try {
+            copy = Arrays.copyOf(new Object[0], -1);
+         } catch (final NegativeArraySizeException ex) {
+            copy = null;
+         }
+         CAUGHT_COPY = copy;
+      }
+
+      public static List<?> emptyList() {
+         return null;
+      }
+
+      public static Object defaultValue(final Object value, final Object fallback) {
+         return Objects.requireNonNullElse(value, fallback);
+      }
+
+      public static Object suppliedDefault(final Object value, final Supplier<Object> fallback) {
+         return Objects.requireNonNullElseGet(value, fallback);
+      }
+
+      public static Object originalAfterDefault(final Object value) {
+         Objects.requireNonNullElse(value, "fallback");
+         // A non-null replacement does not change the caller's original reference.
+         return value;
+      }
+
+      public static Object caughtDefault(final Object value, final Object fallback) {
+         try {
+            return Objects.requireNonNullElse(value, fallback);
+         } catch (final NullPointerException ex) {
+            return null;
+         }
+      }
+
+      public static Object copiedElement() {
+         // Padding makes this element null even though the copied array is non-null.
+         return Arrays.copyOf(new Object[0], 1)[0];
       }
    }
 
@@ -829,6 +920,29 @@ class BytecodeInferenceExtensionsTest {
 
    @Test
    @SuppressWarnings("null")
+   void testAdditionalStaticFactoryContracts() {
+      try (ScanResult scan = scanFixtures()) {
+         final ClassInfo owner = scan.getClassInfo(AdditionalFactories.class.getName());
+         final var analyzer = new BytecodeAnalyzer(owner, new BytecodeAnalyzer.StaticFieldResolver(scan));
+         final Set<String> nullableFields = Set.of("CONDITIONAL", "CUSTOM", "CAUGHT_DEFAULT", "CAUGHT_COPY");
+         for (final var field : owner.getDeclaredFieldInfo()) {
+            assertThat(analyzer.isDefinitelyNonNullStaticField(field)).as(field.getName()).isEqualTo(!nullableFields.contains(field
+               .getName()));
+         }
+         for (final String method : new String[] {"defaultValue", "suppliedDefault"}) {
+            assertReturn(analyzer, owner, method, Nullability.NEVER_NULL);
+            // Either argument can be null on a successful call; the other path supplies the non-null result.
+            assertRequirements(analyzer, owner, method);
+         }
+         assertReturn(analyzer, owner, "originalAfterDefault", Nullability.POLY_NULL, 0);
+         assertRequirements(analyzer, owner, "originalAfterDefault");
+         assertReturn(analyzer, owner, "caughtDefault", Nullability.DEFINITELY_NULL);
+         assertReturn(analyzer, owner, "copiedElement", Nullability.UNKNOWN);
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
    void testFactoryContractsRequireExactSignatures(@TempDir final Path directory) throws IOException {
       final String[][] calls = { //
          {"java/util/Set", "of", "(Ljava/lang/Object;)Ljava/util/List;"}, //
@@ -840,6 +954,20 @@ class BytecodeInferenceExtensionsTest {
          {"java/util/Map", "ofEntries", "([Ljava/lang/Object;)Ljava/util/Map;"}, //
          {"java/util/Map", "copyOf", "(Ljava/util/Collection;)Ljava/util/Map;"}, //
          {"java/util/List", "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/List;"}, //
+         {"java/util/Objects", "requireNonNull", "(Ljava/lang/Object;I)Ljava/lang/Object;"}, //
+         {"java/util/Objects", "requireNonNullElse", "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;"}, //
+         {"java/util/Objects", "requireNonNullElseGet", "(Ljava/lang/Object;Ljava/util/concurrent/Callable;)Ljava/lang/Object;"}, //
+         {"java/util/Collections", "emptyList", "()Ljava/util/Collection;"}, //
+         {"java/util/Collections", "singleton", "(Ljava/lang/Object;)Ljava/util/List;"}, //
+         {"java/util/Collections", "singletonList", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/List;"}, //
+         {"java/util/Collections", "singletonMap", "(Ljava/lang/Object;)Ljava/util/Map;"}, //
+         {"java/util/Arrays", "asList", "(Ljava/lang/Object;)Ljava/util/List;"}, //
+         {"java/util/Arrays", "asList", "([Ljava/lang/String;)Ljava/util/List;"}, //
+         {"java/util/Arrays", "copyOf", "([Ljava/lang/String;I)[Ljava/lang/String;"}, //
+         {"java/util/Arrays", "copyOf", "([II)[J"}, //
+         {"java/util/Arrays", "copyOf", "([IILjava/lang/Class;)[I"}, //
+         {"java/util/Arrays", "copyOfRange", "([Ljava/lang/Object;I)[Ljava/lang/Object;"}, //
+         {"java/util/Arrays", "copyOfRange", "([[III)[[I"}, //
       };
       final String ownerName = "test/InvalidFactories";
       final var writer = new ClassWriter(ClassWriter.COMPUTE_FRAMES | ClassWriter.COMPUTE_MAXS);
@@ -849,11 +977,14 @@ class BytecodeInferenceExtensionsTest {
          final var method = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "invalid" + index, "()Ljava/lang/Object;", null,
             null);
          method.visitCode();
-         for (int argument = 0; argument < Type.getArgumentTypes(call[2]).length; argument++) {
-            method.visitInsn(Opcodes.ACONST_NULL);
+         for (final Type argument : Type.getArgumentTypes(call[2])) {
+            // Keep operand types valid so only the nonexistent overload is under test.
+            method.visitInsn(argument.getSort() == Type.INT ? Opcodes.ICONST_0 : Opcodes.ACONST_NULL);
          }
          // These unresolved overloads are never executed; a familiar owner and name must not turn them into known contracts.
-         method.visitMethodInsn(Opcodes.INVOKESTATIC, call[0], call[1], call[2], true);
+         final boolean interfaceOwner = "java/util/List".equals(call[0]) || "java/util/Set".equals(call[0]) || "java/util/Map".equals(
+            call[0]);
+         method.visitMethodInsn(Opcodes.INVOKESTATIC, call[0], call[1], call[2], interfaceOwner);
          method.visitInsn(Opcodes.ARETURN);
          method.visitMaxs(0, 0);
          method.visitEnd();
@@ -1120,7 +1251,7 @@ class BytecodeInferenceExtensionsTest {
       config.classFilter = info -> info.getName().equals(Dereferences.class.getName()) || info.getName().equals(Functions.class.getName())
             || info.getName().equals(Returns.class.getName()) || info.getName().equals(TypeTests.class.getName()) || info.getName().equals(
                NullPredicates.class.getName()) || info.getName().equals(FactoryFields.class.getName()) || info.getName().equals(
-                  RuntimeClasses.class.getName());
+                  AdditionalFactories.class.getName()) || info.getName().equals(RuntimeClasses.class.getName());
       for (final var mode : EEAGenerator.GenerationMode.values()) {
          config.generationMode = mode;
          EEAGenerator.generateEEAFiles(config);
@@ -1137,6 +1268,13 @@ class BytecodeInferenceExtensionsTest {
          assertSignature(EEAFile.load(output, FactoryFields.class.getName()), "EMPTY", "L1java/util/List<*>;");
          assertSignature(EEAFile.load(output, FactoryFields.class.getName()), "SET_EMPTY", "L1java/util/Set<*>;");
          assertSignature(EEAFile.load(output, FactoryFields.class.getName()), "MAP_COPY", "L1java/util/Map<**>;");
+         final EEAFile additionalFactories = EEAFile.load(output, AdditionalFactories.class.getName());
+         assertSignature(additionalFactories, "DEFAULT", "L1java/lang/Object;");
+         assertSignature(additionalFactories, "SINGLETON_LIST", "L1java/util/List<Ljava/lang/Object;>;");
+         assertSignature(additionalFactories, "COPY", "[1Ljava/lang/Object;");
+         assertSignature(additionalFactories, "TYPED_RANGE", "[1Ljava/lang/String;");
+         assertSignature(additionalFactories, "CAUGHT_COPY", "[Ljava/lang/Object;");
+         assertSignature(additionalFactories, "defaultValue", "(Ljava/lang/Object;Ljava/lang/Object;)L1java/lang/Object;");
          assertSignature(EEAFile.load(output, RuntimeClasses.class.getName()), "object", "(L1java/lang/Object;)L1java/lang/Class<*>;");
          final var forwarding = EEAFile.load(output, Returns.class.getName()).getClassMembers().filter(member -> member.name.value.equals(
             "forwarding")).findFirst().orElseThrow();
@@ -1149,7 +1287,7 @@ class BytecodeInferenceExtensionsTest {
    private static ScanResult scanFixtures() {
       return new ClassGraph().enableAllInfo().acceptClasses(Dereferences.class.getName(), Functions.class.getName(), TypeTests.class
          .getName(), ReturnHelpers.class.getName(), Returns.class.getName(), NullPredicates.class.getName(), FactoryFields.class.getName(),
-         RuntimeClasses.class.getName()).scan();
+         AdditionalFactories.class.getName(), RuntimeClasses.class.getName()).scan();
    }
 
    @SuppressWarnings("null")

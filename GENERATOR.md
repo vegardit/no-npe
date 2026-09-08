@@ -645,10 +645,19 @@ A merged test of different references or different predicates does not qualify f
 A comparison with null establishes nullness on both outcomes.
 Equality with a non-null reference proves the other reference non-null, while inequality supplies no nullness fact.
 
-All Java 11 `List.of(...)`, `Set.of(...)`, and `Map.of(...)` overloads supply non-null return evidence, including the List and
-Set varargs forms.
-`Map.ofEntries(...)`, `List.copyOf(...)`, `Set.copyOf(...)`, and `Map.copyOf(...)` supply the same evidence.
-These factory contracts qualify the returned collection reference, without annotating its generic arguments.
+The following Java 11 static calls supply non-null result evidence:
+
+- All three `Objects.requireNonNull(...)` overloads, plus `Objects.requireNonNullElse(...)` and
+  `Objects.requireNonNullElseGet(...)`.
+  The two defaulting methods do not establish non-nullness of the original argument.
+- All `List.of(...)`, `Set.of(...)`, and `Map.of(...)` overloads, including the List and Set varargs forms.
+  `Map.ofEntries(...)`, `List.copyOf(...)`, `Set.copyOf(...)`, and `Map.copyOf(...)` also qualify.
+- `Collections.emptyList()`, `emptySet()`, `emptyMap()`, `singleton(...)`, `singletonList(...)`, and `singletonMap(...)`.
+- `Arrays.asList(...)` and all `Arrays.copyOf(...)` and `copyOfRange(...)` overloads, including primitive arrays and copies
+  with an explicit array class.
+
+These contracts qualify only the returned reference, without annotating generic arguments or array elements.
+Copied reference arrays can contain null padding.
 `getClass()` supplies the same evidence when its exact signature resolves to the final `Object.getClass()` method,
 including inherited and array calls.
 These contracts describe normal completion; a reachable handler that returns null still contributes null evidence.
@@ -794,7 +803,7 @@ Finality alone is not evidence because an initializer such as `System.getPropert
 When initializer analysis is unsupported or inconclusive, the field remains unspecified rather than being marked nullable.
 Standard lambda and string-concatenation factories supply non-null initializer values under the same bootstrap checks used
 for return inference.
-Primitive-wrapper `valueOf` factories and the collection factories listed under
+Primitive-wrapper `valueOf` factories and the static calls listed under
 [bytecode return contracts](#bytecode-return-contracts) use the same exact call contracts as return inference.
 A non-null factory result does not prove the final field value when another normal path assigns null, including a caught
 factory failure.
