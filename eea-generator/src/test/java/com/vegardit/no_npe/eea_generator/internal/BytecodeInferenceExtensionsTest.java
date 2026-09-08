@@ -18,7 +18,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
+import java.util.Set;
 import java.util.function.Supplier;
 
 import org.eclipse.jdt.annotation.NonNullByDefault;
@@ -28,6 +30,7 @@ import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Handle;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.Type;
 
 import com.vegardit.no_npe.eea_generator.EEAFile;
 import com.vegardit.no_npe.eea_generator.EEAFile.SaveOption;
@@ -337,9 +340,24 @@ class BytecodeInferenceExtensionsTest {
       public static final List<?> EMPTY = List.of();
       public static final List<?> SINGLE = List.of("present");
       public static final List<?> VARARGS = List.of(new Object[] {"first", "second"});
+      public static final Set<?> SET_EMPTY = Set.of();
+      public static final Set<?> SET_SINGLE = Set.of("present");
+      public static final Set<?> SET_TEN = Set.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+      public static final Set<?> SET_VARARGS = Set.of(new Object[] {"first", "second"});
+      public static final Map<?, ?> MAP_EMPTY = Map.of();
+      public static final Map<?, ?> MAP_SINGLE = Map.of("key", "value");
+      public static final Map<?, ?> MAP_TEN = Map.of(1, "one", 2, "two", 3, "three", 4, "four", 5, "five", 6, "six", 7, "seven", 8, "eight",
+         9, "nine", 10, "ten");
+      public static final Map<?, ?> MAP_ENTRIES = Map.ofEntries(Map.entry("key", "value"));
+      public static final List<?> LIST_COPY = List.copyOf(Arrays.asList("present"));
+      public static final Set<?> SET_COPY = Set.copyOf(Arrays.asList("present"));
+      public static final Map<?, ?> MAP_COPY = Map.copyOf(Map.of("key", "value"));
       public static final List<?> CONDITIONAL = System.nanoTime() == 0 ? null : List.of();
       public static final List<?> CUSTOM = of();
       public static final List<?> CAUGHT;
+      public static final Set<?> SET_CONDITIONAL = System.nanoTime() == 0 ? null : Set.of();
+      public static final Map<?, ?> MAP_CUSTOM = mapOf();
+      public static final Map<?, ?> MAP_CAUGHT;
 
       static {
          List<?> value;
@@ -349,6 +367,13 @@ class BytecodeInferenceExtensionsTest {
             value = null;
          }
          CAUGHT = value;
+         Map<?, ?> map;
+         try {
+            map = Map.of(missingValue(), "value");
+         } catch (final NullPointerException ex) {
+            map = null;
+         }
+         MAP_CAUGHT = map;
       }
 
       private static Object missingValue() {
@@ -362,6 +387,18 @@ class BytecodeInferenceExtensionsTest {
 
       public static List<?> of() {
          return null;
+      }
+
+      public static Map<?, ?> mapOf() {
+         return null;
+      }
+
+      public static Set<?> set() {
+         return SET_EMPTY;
+      }
+
+      public static Map<?, ?> map() {
+         return MAP_EMPTY;
       }
    }
 
@@ -776,14 +813,60 @@ class BytecodeInferenceExtensionsTest {
       try (ScanResult scan = scanFixtures()) {
          final ClassInfo owner = scan.getClassInfo(FactoryFields.class.getName());
          final var analyzer = new BytecodeAnalyzer(owner, new BytecodeAnalyzer.StaticFieldResolver(scan));
-         for (final String field : new String[] {"EMPTY", "SINGLE", "VARARGS"}) {
+         for (final String field : new String[] {"EMPTY", "SINGLE", "VARARGS", "SET_EMPTY", "SET_SINGLE", "SET_TEN", "SET_VARARGS",
+            "MAP_EMPTY", "MAP_SINGLE", "MAP_TEN", "MAP_ENTRIES", "LIST_COPY", "SET_COPY", "MAP_COPY"}) {
             assertThat(analyzer.isDefinitelyNonNullStaticField(Objects.requireNonNull(owner.getFieldInfo(field)))).as(field).isTrue();
          }
-         for (final String field : new String[] {"CONDITIONAL", "CUSTOM", "CAUGHT"}) {
+         for (final String field : new String[] {"CONDITIONAL", "CUSTOM", "CAUGHT", "SET_CONDITIONAL", "MAP_CUSTOM", "MAP_CAUGHT"}) {
             // One successful factory call cannot qualify other writes, including a handler's null assignment.
             assertThat(analyzer.isDefinitelyNonNullStaticField(Objects.requireNonNull(owner.getFieldInfo(field)))).as(field).isFalse();
          }
          assertReturn(analyzer, owner, "empty", Nullability.NEVER_NULL);
+         assertReturn(analyzer, owner, "set", Nullability.NEVER_NULL);
+         assertReturn(analyzer, owner, "map", Nullability.NEVER_NULL);
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testFactoryContractsRequireExactSignatures(@TempDir final Path directory) throws IOException {
+      final String[][] calls = { //
+         {"java/util/Set", "of", "(Ljava/lang/Object;)Ljava/util/List;"}, //
+         {"java/util/Set", "of", "(" + "Ljava/lang/Object;".repeat(11) + ")Ljava/util/Set;"}, //
+         {"java/util/Set", "copyOf", "(Ljava/util/Set;)Ljava/util/Set;"}, //
+         {"java/util/Map", "of", "(Ljava/lang/Object;)Ljava/util/Map;"}, //
+         {"java/util/Map", "of", "([Ljava/lang/Object;)Ljava/util/Map;"}, //
+         {"java/util/Map", "of", "(" + "Ljava/lang/Object;".repeat(22) + ")Ljava/util/Map;"}, //
+         {"java/util/Map", "ofEntries", "([Ljava/lang/Object;)Ljava/util/Map;"}, //
+         {"java/util/Map", "copyOf", "(Ljava/util/Collection;)Ljava/util/Map;"}, //
+         {"java/util/List", "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/List;"}, //
+      };
+      final String ownerName = "test/InvalidFactories";
+      final var writer = new ClassWriter(ClassWriter.COMPUTE_FRAMES | ClassWriter.COMPUTE_MAXS);
+      writer.visit(Opcodes.V11, Opcodes.ACC_PUBLIC, ownerName, null, "java/lang/Object", null);
+      for (int index = 0; index < calls.length; index++) {
+         final String[] call = calls[index];
+         final var method = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "invalid" + index, "()Ljava/lang/Object;", null,
+            null);
+         method.visitCode();
+         for (int argument = 0; argument < Type.getArgumentTypes(call[2]).length; argument++) {
+            method.visitInsn(Opcodes.ACONST_NULL);
+         }
+         // These unresolved overloads are never executed; a familiar owner and name must not turn them into known contracts.
+         method.visitMethodInsn(Opcodes.INVOKESTATIC, call[0], call[1], call[2], true);
+         method.visitInsn(Opcodes.ARETURN);
+         method.visitMaxs(0, 0);
+         method.visitEnd();
+      }
+      writer.visitEnd();
+      Files.createDirectories(directory.resolve("test"));
+      Files.write(directory.resolve(ownerName + ".class"), writer.toByteArray());
+      try (ScanResult scan = new ClassGraph().enableAllInfo().overrideClasspath(directory.toString()).acceptPackages("test").scan()) {
+         final ClassInfo owner = scan.getClassInfo(ownerName.replace('/', '.'));
+         final var analyzer = new BytecodeAnalyzer(owner, new BytecodeAnalyzer.StaticFieldResolver(scan));
+         for (int index = 0; index < calls.length; index++) {
+            assertReturn(analyzer, owner, "invalid" + index, Nullability.UNKNOWN);
+         }
       }
    }
 
@@ -1052,6 +1135,8 @@ class BytecodeInferenceExtensionsTest {
          assertSignature(EEAFile.load(output, NullPredicates.class.getName()), "isNullFallback",
             "(L0java/lang/Object;)L1java/lang/Object;");
          assertSignature(EEAFile.load(output, FactoryFields.class.getName()), "EMPTY", "L1java/util/List<*>;");
+         assertSignature(EEAFile.load(output, FactoryFields.class.getName()), "SET_EMPTY", "L1java/util/Set<*>;");
+         assertSignature(EEAFile.load(output, FactoryFields.class.getName()), "MAP_COPY", "L1java/util/Map<**>;");
          assertSignature(EEAFile.load(output, RuntimeClasses.class.getName()), "object", "(L1java/lang/Object;)L1java/lang/Class<*>;");
          final var forwarding = EEAFile.load(output, Returns.class.getName()).getClassMembers().filter(member -> member.name.value.equals(
             "forwarding")).findFirst().orElseThrow();

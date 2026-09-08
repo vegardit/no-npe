@@ -621,6 +621,15 @@ A conditional assignment must not hide a nullable original argument that can sti
 If the analysis cannot preserve that possible value, the helper summary stays unknown.
 This also applies when value analysis proves the assignment unreachable.
 
+After a successful non-constructor instance-method call, field or array access, or monitor operation, return analysis treats
+the receiver or array as non-null.
+The three Java 11 `Objects.requireNonNull(...)` overloads establish the same fact about their first argument.
+The fact follows surviving local and stack aliases, without qualifying a loaded field value, array element, later field
+read, or replacement assigned to a local.
+At a control-flow join, references remain aliases only when every incoming path agrees.
+Sharing possible producers is not enough; a direct copy of the selected value after the join still qualifies.
+It applies only after normal completion; exception handlers retain the facts known before the operation.
+
 Standard `LambdaMetafactory` bootstrap calls prove that a lambda or method-reference object is non-null.
 This applies to ordinary, capturing, and serializable lambdas; it does not prove that invoking the lambda returns non-null.
 Standard string-concatenation factories also qualify, while arbitrary `invokedynamic` bootstraps remain unknown.
@@ -632,7 +641,14 @@ A saved test result retains the original reference's identity; it does not refin
 A failed `instanceof` test supplies no nullness fact.
 A merged test of different references or different predicates does not qualify for value refinement.
 
-All Java 11 `List.of(...)` overloads supply non-null return evidence, including the varargs form.
+`IF_ACMPEQ` and `IF_ACMPNE` also refine returned values when one operand is proven null or non-null.
+A comparison with null establishes nullness on both outcomes.
+Equality with a non-null reference proves the other reference non-null, while inequality supplies no nullness fact.
+
+All Java 11 `List.of(...)`, `Set.of(...)`, and `Map.of(...)` overloads supply non-null return evidence, including the List and
+Set varargs forms.
+`Map.ofEntries(...)`, `List.copyOf(...)`, `Set.copyOf(...)`, and `Map.copyOf(...)` supply the same evidence.
+These factory contracts qualify the returned collection reference, without annotating its generic arguments.
 `getClass()` supplies the same evidence when its exact signature resolves to the final `Object.getClass()` method,
 including inherited and array calls.
 These contracts describe normal completion; a reachable handler that returns null still contributes null evidence.
@@ -778,8 +794,8 @@ Finality alone is not evidence because an initializer such as `System.getPropert
 When initializer analysis is unsupported or inconclusive, the field remains unspecified rather than being marked nullable.
 Standard lambda and string-concatenation factories supply non-null initializer values under the same bootstrap checks used
 for return inference.
-Primitive-wrapper `valueOf` factories and all Java 11 `List.of(...)` overloads use the same exact call contracts as return
-inference.
+Primitive-wrapper `valueOf` factories and the collection factories listed under
+[bytecode return contracts](#bytecode-return-contracts) use the same exact call contracts as return inference.
 A non-null factory result does not prove the final field value when another normal path assigns null, including a caught
 factory failure.
 

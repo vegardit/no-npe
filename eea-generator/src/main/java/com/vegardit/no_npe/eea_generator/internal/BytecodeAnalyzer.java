@@ -240,15 +240,15 @@ public class BytecodeAnalyzer {
 
    /** Describes which nullness fact a reference predicate establishes for each Boolean outcome. */
    private enum ReferencePredicate {
-      INSTANCE_OF,
+      NON_NULL_ON_TRUE,
       IS_NULL,
       NON_NULL;
 
       FlowNullness edgeNullness(final int opcode, final boolean jumpTaken) {
-         // IFEQ jumps on false; direct null branches and IFNE jump on the predicate's true outcome.
-         final boolean result = jumpTaken != (opcode == Opcodes.IFEQ);
-         if (this == INSTANCE_OF)
-            // A failed type test includes non-null objects of other types.
+         // Reference comparisons test equality; IF_ACMPNE, like IFEQ for a Boolean predicate, jumps on the false outcome.
+         final boolean result = jumpTaken != (opcode == Opcodes.IFEQ || opcode == Opcodes.IF_ACMPNE);
+         if (this == NON_NULL_ON_TRUE)
+            // A failed type test or inequality with a non-null reference still admits other non-null objects.
             return result ? FlowNullness.NEVER_NULL : FlowNullness.UNKNOWN;
          return result == (this == IS_NULL) ? FlowNullness.DEFINITELY_NULL : FlowNullness.NEVER_NULL;
       }
@@ -283,6 +283,11 @@ public class BytecodeAnalyzer {
       final @Nullable String privateThisFieldKey;
       final Set<String> requiredNonNullFieldsForNullConstantPath;
       final @Nullable ReferenceTest referenceTest;
+
+      FlowValue(final FlowValue source, final @Nullable ReferenceTest referenceTest) {
+         this(source, source.parameterLocalSlots, source.nullness, source.nullConstantPath, source.mayHaveNonConstantNullPath,
+            source.privateThisFieldKey, source.requiredNonNullFieldsForNullConstantPath, referenceTest);
+      }
 
       FlowValue(final SourceValue source, final Set<Integer> parameterLocalSlots, final FlowNullness nullness,
             final boolean nullConstantPath, final boolean mayHaveNonConstantNullPath, final @Nullable String privateThisFieldKey,
@@ -413,9 +418,34 @@ public class BytecodeAnalyzer {
                   testedPredicate = test.predicate;
                }
             }
+         } else if ((opcode == Opcodes.IF_ACMPEQ || opcode == Opcodes.IF_ACMPNE) && getStackSize() > 1) {
+            final SourceValue first = getStack(getStackSize() - 2);
+            final SourceValue second = getStack(getStackSize() - 1);
+            if (first instanceof FlowValue && second instanceof FlowValue) {
+               final FlowNullness firstNullness = ((FlowValue) first).nullness;
+               final FlowNullness secondNullness = ((FlowValue) second).nullness;
+               /* Prefer a known-null operand: it establishes facts on both edges. A known non-null operand only proves
+                * the other reference non-null on equality; inequality is not a null test. */
+               if (firstNullness == FlowNullness.DEFINITELY_NULL || secondNullness == FlowNullness.DEFINITELY_NULL) {
+                  testedValue = firstNullness == FlowNullness.DEFINITELY_NULL ? second : first;
+                  testedPredicate = ReferencePredicate.IS_NULL;
+               } else if (firstNullness == FlowNullness.NEVER_NULL || secondNullness == FlowNullness.NEVER_NULL) {
+                  testedValue = firstNullness == FlowNullness.NEVER_NULL ? second : first;
+                  testedPredicate = ReferencePredicate.NON_NULL_ON_TRUE;
+               }
+               if (testedValue != null) {
+                  testedOpcode = opcode;
+               }
+            }
          }
 
+         final SourceValue checkedValue = determineNullCheckedValue(instruction, this);
          super.execute(instruction, interpreter);
+         if (checkedValue != null) {
+            /* Capture the consumed operand before execution, but refine only the normal continuation. ASM constructs
+             * handler frames from the incoming state, where the checked reference may still be null. */
+            refineNullness(checkedValue, FlowNullness.NEVER_NULL);
+         }
          if (instruction instanceof MethodInsnNode && nonReturningCallResolver.isNonReturning((MethodInsnNode) instruction)) {
             /* ASM builds exception-handler frames from the pre-invocation state. Marking this post-invocation frame dead
              * therefore suppresses only the impossible normal continuation. */
@@ -459,20 +489,27 @@ public class BytecodeAnalyzer {
          init(unrefinedFrame);
          super.initJumpTarget(opcode, target);
 
-         final FlowNullness refinedNullness = predicate.edgeNullness(opcode, target != null);
-         if (refinedNullness == FlowNullness.UNKNOWN)
+         refineNullness(tested, predicate.edgeNullness(opcode, target != null));
+      }
+
+      private void refineNullness(final SourceValue tested, final FlowNullness refinedNullness) {
+         if (refinedNullness == FlowNullness.UNKNOWN || !(tested instanceof FlowValue))
             return;
          final boolean isNullEdge = refinedNullness == FlowNullness.DEFINITELY_NULL;
          final FlowValue testedFlowValue = (FlowValue) tested;
          final boolean impossibleEdge = isNullEdge ? testedFlowValue.nullness == FlowNullness.NEVER_NULL
                : testedFlowValue.nullness == FlowNullness.DEFINITELY_NULL;
          if (impossibleEdge) {
-            // ASM's structural CFG includes both conditional successors; the value proof makes this one impossible.
+            // Structural control flow retains this edge even when its required nullness contradicts the actual value.
             reachable = false;
             return;
          }
 
          final FlowValue refinedValue = testedFlowValue.withNullness(refinedNullness);
+         if (refinedValue == tested)
+            // Most receiver accesses already have a non-null value, so avoid scanning the frame again without a change.
+            return;
+         // Only surviving aliases inherit the fact; a later field read or replacement local is an independent value.
          for (int i = 0; i < getLocals(); i++) {
             if (getLocal(i) == tested) {
                setLocal(i, refinedValue);
@@ -499,7 +536,62 @@ public class BytecodeAnalyzer {
                return true;
             }
          }
-         return super.merge(incoming, interpreter);
+         if (!(interpreter instanceof FlowInterpreter))
+            // Completion analysis also uses this frame, but its plain SourceValues carry no value-alias contracts.
+            return super.merge(incoming, interpreter);
+         if (getStackSize() != incoming.getStackSize())
+            throw new AnalyzerException(null, "Incompatible stack heights");
+
+         /* Pointwise value equality is weaker than aliasing: a producer-set union can reuse either operand without
+          * proving that two slots hold the same reference. Intersect the identity pairs from both incoming frames. */
+         final Map<FlowValue, Map<FlowValue, FlowValue>> valuesByInputs = new IdentityHashMap<>();
+         final Set<FlowValue> claimedValues = Collections.newSetFromMap(new IdentityHashMap<>());
+         boolean changed = false;
+         for (int index = 0; index < getLocals() + getStackSize(); index++) {
+            final boolean local = index < getLocals();
+            final int stackIndex = index - getLocals();
+            final FlowValue previous = (FlowValue) (local ? getLocal(index) : getStack(stackIndex));
+            // FlowInterpreter initializes every active slot; unused locals contain an explicit unknown value.
+            final FlowValue next = (FlowValue) Objects.requireNonNull(local ? incoming.getLocal(index) : incoming.getStack(stackIndex));
+            final FlowValue merged = mergeValue(previous, next, interpreter, valuesByInputs, claimedValues);
+            if (merged != previous) {
+               if (local) {
+                  setLocal(index, merged);
+               } else {
+                  setStack(stackIndex, merged);
+               }
+               // Losing an alias must revisit successors even when all ordinary FlowValue facts remain equal.
+               changed = true;
+            }
+         }
+         return changed;
+      }
+
+      private static FlowValue mergeValue(final FlowValue first, final FlowValue second, final Interpreter<SourceValue> interpreter,
+            final Map<FlowValue, Map<FlowValue, FlowValue>> valuesByInputs, final Set<FlowValue> claimedValues) {
+         final Map<FlowValue, FlowValue> valuesBySecond = valuesByInputs.computeIfAbsent(first, unused -> new IdentityHashMap<>());
+         final FlowValue cached = valuesBySecond.get(second);
+         if (cached != null)
+            return cached;
+
+         // Reusing stable fact values lets unchanged alias groups converge when loop edges are visited again.
+         FlowValue merged = (FlowValue) interpreter.merge(first, second);
+         final ReferenceTest test = merged.referenceTest;
+         if (test != null) {
+            /* The interpreter retains a predicate only when both inputs capture the identical reference. Include that
+             * hidden reference in the same merge: otherwise a split local could inherit another local's saved test. */
+            final FlowValue operand = mergeValue(test.operand, test.operand, interpreter, valuesByInputs, claimedValues);
+            if (operand != test.operand) {
+               merged = new FlowValue(merged, new ReferenceTest(operand, test.predicate));
+            }
+         }
+         if (!claimedValues.add(merged)) {
+            // Different input pairs cannot acquire a shared identity merely because the abstract facts coincide.
+            merged = new FlowValue(merged, merged.referenceTest);
+            claimedValues.add(merged);
+         }
+         valuesBySecond.put(second, merged);
+         return merged;
       }
    }
 
@@ -1733,7 +1825,7 @@ public class BytecodeAnalyzer {
                /* Preserve the tested reference itself, not its local slot. A saved Boolean must not refine a replacement
                 * assigned to that slot later; copies retain identity and ambiguous merges discard it below. */
                return new FlowValue(source, Set.of(), FlowNullness.NEVER_NULL, false, false, null, Set.of(), new ReferenceTest(
-                  (FlowValue) value, ReferencePredicate.INSTANCE_OF));
+                  (FlowValue) value, ReferencePredicate.NON_NULL_ON_TRUE));
             case Opcodes.ANEWARRAY:
             case Opcodes.NEWARRAY:
                return createdValue(source, FlowNullness.NEVER_NULL);
@@ -1879,15 +1971,28 @@ public class BytecodeAnalyzer {
          final String descriptor) {
       if (isPrimitiveWrapperValueOf(opcode, owner, methodName, descriptor))
          return true;
-      if (opcode != Opcodes.INVOKESTATIC || !"java/util/List".equals(owner) || !"of".equals(methodName) || !"Ljava/util/List;".equals(Type
-         .getReturnType(descriptor).getDescriptor()))
+      if (opcode != Opcodes.INVOKESTATIC)
          return false;
 
-      // Every Java 11 List.of overload returns a list or throws, including null-rejecting element and varargs forms.
+      final boolean isMap = "java/util/Map".equals(owner);
+      if (!isMap && !"java/util/List".equals(owner) && !"java/util/Set".equals(owner))
+         return false;
+      if (!("L" + owner + ";").equals(Type.getReturnType(descriptor).getDescriptor()))
+         return false;
+
+      /* These exact Java 11 factories return a collection or throw, even when they reuse their input or reject null
+       * elements. The contract qualifies only the returned reference, not its generic arguments or array contents. */
       final Type[] arguments = Type.getArgumentTypes(descriptor);
-      if (arguments.length == 1 && "[Ljava/lang/Object;".equals(arguments[0].getDescriptor()))
+      if ("copyOf".equals(methodName))
+         return arguments.length == 1 && (isMap ? "Ljava/util/Map;" : "Ljava/util/Collection;").equals(arguments[0].getDescriptor());
+      if (isMap && "ofEntries".equals(methodName))
+         return arguments.length == 1 && "[Ljava/util/Map$Entry;".equals(arguments[0].getDescriptor());
+      if (!"of".equals(methodName))
+         return false;
+      if (!isMap && arguments.length == 1 && "[Ljava/lang/Object;".equals(arguments[0].getDescriptor()))
          return true;
-      if (arguments.length > 10)
+      // Map.of has paired key/value arguments and no Object[] overload; List.of and Set.of accept up to ten fixed elements.
+      if (arguments.length > (isMap ? 20 : 10) || isMap && arguments.length % 2 != 0)
          return false;
       for (final Type argument : arguments) {
          if (!"Ljava/lang/Object;".equals(argument.getDescriptor()))
@@ -2409,7 +2514,7 @@ public class BytecodeAnalyzer {
             } else if (opcode == Opcodes.ISTORE || opcode == Opcodes.INSTANCEOF || source instanceof MethodInsnNode
                   && objectsReferencePredicate((MethodInsnNode) source) != null) {
                if (opcode == Opcodes.INSTANCEOF) {
-                  predicates.add(ReferencePredicate.INSTANCE_OF);
+                  predicates.add(ReferencePredicate.NON_NULL_ON_TRUE);
                } else if (source instanceof MethodInsnNode) {
                   predicates.add(Objects.requireNonNull(objectsReferencePredicate((MethodInsnNode) source)));
                }
@@ -2425,7 +2530,7 @@ public class BytecodeAnalyzer {
       });
       // Merged opposite predicates cannot attach either polarity to their shared parameter dependency.
       return predicates.size() == 1 ? new ParameterCheck(dependencies, predicates.iterator().next())
-            : new ParameterCheck(DependencySummary.UNKNOWN, ReferencePredicate.INSTANCE_OF);
+            : new ParameterCheck(DependencySummary.UNKNOWN, ReferencePredicate.NON_NULL_ON_TRUE);
    }
 
    @SuppressWarnings("null")
@@ -2708,6 +2813,21 @@ public class BytecodeAnalyzer {
       return frame.getStackSize() < distanceFromTop ? null : frame.getStack(frame.getStackSize() - distanceFromTop);
    }
 
+   private static @Nullable SourceValue determineNullCheckedValue(final AbstractInsnNode instruction, final Frame<SourceValue> frame) {
+      if (!(instruction instanceof MethodInsnNode))
+         return determineDereferencedValue(instruction, frame);
+      final MethodInsnNode call = (MethodInsnNode) instruction;
+      // Receiver checks do not depend on virtual dispatch; an ordinary static argument needs its own call contract.
+      if (isNullRejectingReceiverCall(call))
+         return determineReceiverValue(call, frame);
+      if (isObjectsRequireNonNull(call)) {
+         final SourceValue[] arguments = determineArgumentValues(call, frame);
+         // The checked reference supplies the fact; message arguments retain their independent contracts.
+         return arguments.length == 0 ? null : arguments[0];
+      }
+      return null;
+   }
+
    @SuppressWarnings("null")
    private static Map<AbstractInsnNode, ParameterCheck> determineBranchParameterChecks(final MethodNode method,
          final AbstractInsnNode[] instructions, final Frame<SourceValue>[] frames, final ControlFlowAnalyzer controlFlow,
@@ -2750,21 +2870,8 @@ public class BytecodeAnalyzer {
          if (!isReachableFrame(frame))
             continue;
          final AbstractInsnNode instruction = instructions[i];
-         SourceValue checkedValue = null;
-         if (instruction instanceof MethodInsnNode && !instructionsProtectedByNullPointerExceptionHandler.contains(instruction)) {
-            final MethodInsnNode call = (MethodInsnNode) instruction;
-            if (isNullRejectingReceiverCall(call)) {
-               checkedValue = determineReceiverValue(call, frame);
-            } else if (isObjectsRequireNonNull(call)) {
-               final SourceValue[] arguments = determineArgumentValues(call, frame);
-               if (arguments.length > 0) {
-                  // Only the checked value supplies a local fact; message arguments retain their independent contracts.
-                  checkedValue = arguments[0];
-               }
-            }
-         } else if (!instructionsProtectedByNullPointerExceptionHandler.contains(instruction)) {
-            checkedValue = determineDereferencedValue(instruction, frame);
-         }
+         final SourceValue checkedValue = instructionsProtectedByNullPointerExceptionHandler.contains(instruction) ? null
+               : determineNullCheckedValue(instruction, frame);
          if (checkedValue != null) {
             result.put(instruction, determineDirectParameterDependencies(checkedValue, frames, instructionIndexes,
                referenceParameterIndexesByLocalSlot, parameterContext, true));
