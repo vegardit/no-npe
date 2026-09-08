@@ -8,7 +8,7 @@ doResolve
  (L1org/eclipse/jface/text/ITextViewer;L1org/eclipse/core/runtime/IProgressMonitor;)L1java/util/concurrent/CompletableFuture<L0java/lang/Void;>; # @Generated(82)
 draw
  (Lorg/eclipse/swt/graphics/GC;Lorg/eclipse/swt/custom/StyledText;Lorg/eclipse/swt/graphics/Color;II)Lorg/eclipse/swt/graphics/Point;
- (L1org/eclipse/swt/graphics/GC;L1org/eclipse/swt/custom/StyledText;L1org/eclipse/swt/graphics/Color;II)Lorg/eclipse/swt/graphics/Point; # @Inherited(org.eclipse.jface.text.codemining.ICodeMining)
+ (L1org/eclipse/swt/graphics/GC;L1org/eclipse/swt/custom/StyledText;L1org/eclipse/swt/graphics/Color;II)L1org/eclipse/swt/graphics/Point; # @Overrides(org.eclipse.jface.text.codemining.ICodeMining)
 getAction
  ()Ljava/util/function/Consumer<Lorg/eclipse/swt/events/MouseEvent;>;
  ()L0java/util/function/Consumer<L1org/eclipse/swt/events/MouseEvent;>; # @Inherited(org.eclipse.jface.text.codemining.ICodeMining)
