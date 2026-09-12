@@ -1,0 +1,20 @@
+class org/commonmark/parser/InlineParserContext
+
+getCustomDelimiterProcessors
+ ()Ljava/util/List<Lorg/commonmark/parser/delimiter/DelimiterProcessor;>;
+ ()Ljava/util/List<Lorg/commonmark/parser/delimiter/DelimiterProcessor;>;
+getCustomInlineContentParserFactories
+ ()Ljava/util/List<Lorg/commonmark/parser/beta/InlineContentParserFactory;>;
+ ()Ljava/util/List<Lorg/commonmark/parser/beta/InlineContentParserFactory;>;
+getCustomLinkMarkers
+ ()Ljava/util/Set<Ljava/lang/Character;>;
+ ()Ljava/util/Set<Ljava/lang/Character;>;
+getCustomLinkProcessors
+ ()Ljava/util/List<Lorg/commonmark/parser/beta/LinkProcessor;>;
+ ()Ljava/util/List<Lorg/commonmark/parser/beta/LinkProcessor;>;
+getDefinition
+ <D:Ljava/lang/Object;>(Ljava/lang/Class<TD;>;Ljava/lang/String;)TD;
+ <D:Ljava/lang/Object;>(Ljava/lang/Class<TD;>;Ljava/lang/String;)TD;
+getLinkReferenceDefinition
+ (Ljava/lang/String;)Lorg/commonmark/node/LinkReferenceDefinition;
+ (Ljava/lang/String;)Lorg/commonmark/node/LinkReferenceDefinition;

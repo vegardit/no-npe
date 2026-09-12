@@ -1,0 +1,23 @@
+class org/commonmark/node/ListItem
+
+accept
+ (Lorg/commonmark/node/Visitor;)V
+ (L1org/commonmark/node/Visitor;)V # @Inherited(org.commonmark.node.Node)
+appendChild
+ (Lorg/commonmark/node/Block;)V
+ (Lorg/commonmark/node/Block;)V
+appendChild
+ (Lorg/commonmark/node/Node;)V
+ (L1org/commonmark/node/Node;)V # @Inherited(org.commonmark.node.Node)
+getContentIndent
+ ()Ljava/lang/Integer;
+ ()Ljava/lang/Integer;
+getMarkerIndent
+ ()Ljava/lang/Integer;
+ ()Ljava/lang/Integer;
+setContentIndent
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V
+setMarkerIndent
+ (Ljava/lang/Integer;)V
+ (Ljava/lang/Integer;)V

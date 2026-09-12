@@ -1,0 +1,23 @@
+class org/commonmark/node/Link
+
+<init>
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+accept
+ (Lorg/commonmark/node/Visitor;)V
+ (L1org/commonmark/node/Visitor;)V # @Inherited(org.commonmark.node.Node)
+getDestination
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTitle
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+setDestination
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setTitle
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+toStringAttributes
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.commonmark.node.Node)

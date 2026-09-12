@@ -1,0 +1,23 @@
+class org/commonmark/parser/block/BlockParser
+
+addLine
+ (Lorg/commonmark/parser/SourceLine;)V
+ (Lorg/commonmark/parser/SourceLine;)V
+addSourceSpan
+ (Lorg/commonmark/node/SourceSpan;)V
+ (Lorg/commonmark/node/SourceSpan;)V
+canContain
+ (Lorg/commonmark/node/Block;)Z
+ (Lorg/commonmark/node/Block;)Z
+getBlock
+ ()Lorg/commonmark/node/Block;
+ ()Lorg/commonmark/node/Block;
+getDefinitions
+ ()Ljava/util/List<Lorg/commonmark/node/DefinitionMap<*>;>;
+ ()Ljava/util/List<Lorg/commonmark/node/DefinitionMap<*>;>;
+parseInlines
+ (Lorg/commonmark/parser/InlineParser;)V
+ (Lorg/commonmark/parser/InlineParser;)V
+tryContinue
+ (Lorg/commonmark/parser/block/ParserState;)Lorg/commonmark/parser/block/BlockContinue;
+ (Lorg/commonmark/parser/block/ParserState;)Lorg/commonmark/parser/block/BlockContinue;
