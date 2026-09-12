@@ -1,0 +1,30 @@
+class org/apache/commons/compress/utils/MultiReadOnlySeekableByteChannel
+
+forFiles
+ ([Ljava/io/File;)Ljava/nio/channels/SeekableByteChannel;
+ ([1Ljava/io/File;)Ljava/nio/channels/SeekableByteChannel; # @Generated(2)
+forPaths
+ ([Ljava/nio/file/Path;)Ljava/nio/channels/SeekableByteChannel;
+ ([1Ljava/nio/file/Path;)Ljava/nio/channels/SeekableByteChannel; # @Generated(2)
+forSeekableByteChannels
+ ([Ljava/nio/channels/SeekableByteChannel;)Ljava/nio/channels/SeekableByteChannel;
+ ([1Ljava/nio/channels/SeekableByteChannel;)Ljava/nio/channels/SeekableByteChannel; # @Generated(2)
+
+<init>
+ (Ljava/util/List<Ljava/nio/channels/SeekableByteChannel;>;)V
+ (L1java/util/List<Ljava/nio/channels/SeekableByteChannel;>;)V # @Generated(2)
+position
+ (J)Ljava/nio/channels/SeekableByteChannel;
+ (J)L1java/nio/channels/SeekableByteChannel; # @Inherited(java.nio.channels.SeekableByteChannel)
+position
+ (JJ)Ljava/nio/channels/SeekableByteChannel;
+ (JJ)Ljava/nio/channels/SeekableByteChannel;
+read
+ (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.SeekableByteChannel)
+truncate
+ (J)Ljava/nio/channels/SeekableByteChannel;
+ (J)L1java/nio/channels/SeekableByteChannel; # @Inherited(java.nio.channels.SeekableByteChannel)
+write
+ (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Inherited(java.nio.channels.SeekableByteChannel)

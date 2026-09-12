@@ -1,0 +1,130 @@
+class org/apache/commons/compress/compressors/CompressorStreamFactory
+
+BROTLI
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+BZIP2
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+DEFLATE
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+DEFLATE64
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+GZIP
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+LZ4_BLOCK
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+LZ4_FRAMED
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+LZMA
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+PACK200
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SNAPPY_FRAMED
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SNAPPY_RAW
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+XZ
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+Z
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+ZSTANDARD
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+detect
+ (Ljava/io/InputStream;)Ljava/lang/String;
+ (L1java/io/InputStream;)L1java/lang/String; # @Generated(2,24)
+findAvailableCompressorInputStreamProviders
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/compressors/CompressorStreamProvider;>;
+ ()L1java/util/SortedMap<L1java/lang/String;L1org/apache/commons/compress/compressors/CompressorStreamProvider;>;
+findAvailableCompressorOutputStreamProviders
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/compressors/CompressorStreamProvider;>;
+ ()L1java/util/SortedMap<L1java/lang/String;L1org/apache/commons/compress/compressors/CompressorStreamProvider;>;
+getBrotli
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getBzip2
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getDeflate
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getDeflate64
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getGzip
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getLZ4Block
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getLZ4Framed
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getLzma
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getPack200
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getSingleton
+ ()Lorg/apache/commons/compress/compressors/CompressorStreamFactory;
+ ()L1org/apache/commons/compress/compressors/CompressorStreamFactory; # @Generated
+getSnappyFramed
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getSnappyRaw
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getXz
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getZ
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+getZstandard
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Generated
+
+createCompressorInputStream
+ (Ljava/io/InputStream;)Lorg/apache/commons/compress/compressors/CompressorInputStream;
+ (L1java/io/InputStream;)Lorg/apache/commons/compress/compressors/CompressorInputStream; # @Generated(2)
+createCompressorInputStream
+ (Ljava/io/InputStream;Ljava/util/Set<Ljava/lang/String;>;)Lorg/apache/commons/compress/compressors/CompressorInputStream;
+ (L1java/io/InputStream;L1java/util/Set<Ljava/lang/String;>;)Lorg/apache/commons/compress/compressors/CompressorInputStream; # @Generated(2,23)
+createCompressorInputStream
+ (Ljava/lang/String;Ljava/io/InputStream;)Lorg/apache/commons/compress/compressors/CompressorInputStream;
+ (Ljava/lang/String;Ljava/io/InputStream;)Lorg/apache/commons/compress/compressors/CompressorInputStream;
+createCompressorInputStream
+ (Ljava/lang/String;Ljava/io/InputStream;Z)Lorg/apache/commons/compress/compressors/CompressorInputStream;
+ (L1java/lang/String;L1java/io/InputStream;Z)L1org/apache/commons/compress/compressors/CompressorInputStream; # @Overrides(org.apache.commons.compress.compressors.CompressorStreamProvider)
+createCompressorOutputStream
+ (Ljava/lang/String;Ljava/io/OutputStream;)Lorg/apache/commons/compress/compressors/CompressorOutputStream<+Ljava/io/OutputStream;>;
+ (L1java/lang/String;L1java/io/OutputStream;)Lorg/apache/commons/compress/compressors/CompressorOutputStream<+Ljava/io/OutputStream;>; # @Generated(2,20)
+getCompressorInputStreamProviders
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/compressors/CompressorStreamProvider;>;
+ ()L1java/util/SortedMap<L1java/lang/String;L1org/apache/commons/compress/compressors/CompressorStreamProvider;>;
+getCompressorOutputStreamProviders
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/compressors/CompressorStreamProvider;>;
+ ()L1java/util/SortedMap<L1java/lang/String;L1org/apache/commons/compress/compressors/CompressorStreamProvider;>;
+getDecompressUntilEOF
+ ()Ljava/lang/Boolean;
+ ()Ljava/lang/Boolean;
+getInputStreamCompressorNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()L1java/util/Set<L1java/lang/String;>; # @Inherited(org.apache.commons.compress.compressors.CompressorStreamProvider)
+getOutputStreamCompressorNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()L1java/util/Set<L1java/lang/String;>; # @Inherited(org.apache.commons.compress.compressors.CompressorStreamProvider)

@@ -1,0 +1,43 @@
+class org/apache/commons/compress/archivers/zip/ZipArchiveInputStream
+
+super org/apache/commons/compress/archivers/ArchiveInputStream
+ <Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>
+ <Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>
+
+matches
+ ([BI)Z
+ ([BI)Z
+
+<init>
+ (Ljava/io/InputStream;)V
+ (Ljava/io/InputStream;)V
+<init>
+ (Ljava/io/InputStream;Ljava/lang/String;)V
+ (Ljava/io/InputStream;Ljava/lang/String;)V
+<init>
+ (Ljava/io/InputStream;Ljava/lang/String;Z)V
+ (Ljava/io/InputStream;Ljava/lang/String;Z)V
+<init>
+ (Ljava/io/InputStream;Ljava/lang/String;ZZ)V
+ (Ljava/io/InputStream;Ljava/lang/String;ZZ)V
+<init>
+ (Ljava/io/InputStream;Ljava/lang/String;ZZZ)V
+ (Ljava/io/InputStream;Ljava/lang/String;ZZZ)V
+canReadEntryData
+ (Lorg/apache/commons/compress/archivers/ArchiveEntry;)Z
+ (Lorg/apache/commons/compress/archivers/ArchiveEntry;)Z
+createZstdInputStream
+ (Ljava/io/InputStream;)Ljava/io/InputStream;
+ (Ljava/io/InputStream;)L1java/io/InputStream; # @Generated(24)
+getNextEntry
+ ()Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;
+ ()Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;
+getNextZipEntry
+ ()Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;
+ ()L0org/apache/commons/compress/archivers/zip/ZipArchiveEntry; # @Generated
+read
+ ([BII)I
+ ([1BII)I # @Inherited(java.io.FilterInputStream)
+setExtraFieldSupport
+ (Ljava/util/function/Function<Lorg/apache/commons/compress/archivers/zip/ZipShort;Lorg/apache/commons/compress/archivers/zip/ZipExtraField;>;)Lorg/apache/commons/compress/archivers/zip/ZipArchiveInputStream;
+ (Ljava/util/function/Function<Lorg/apache/commons/compress/archivers/zip/ZipShort;Lorg/apache/commons/compress/archivers/zip/ZipExtraField;>;)L1org/apache/commons/compress/archivers/zip/ZipArchiveInputStream; # @Generated(143)

@@ -1,0 +1,107 @@
+class org/apache/commons/compress/archivers/zip/ZipArchiveEntry
+
+<init>
+ (Ljava/io/File;Ljava/lang/String;)V
+ (L1java/io/File;Ljava/lang/String;)V # @Generated(2)
+<init>
+ (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
+<init>
+ (Ljava/nio/file/Path;Ljava/lang/String;[Ljava/nio/file/LinkOption;)V
+ (L1java/nio/file/Path;Ljava/lang/String;[1Ljava/nio/file/LinkOption;)V # @Generated(2,40)
+<init>
+ (Ljava/util/zip/ZipEntry;)V
+ (L1java/util/zip/ZipEntry;)V # @Generated
+<init>
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;)V
+ (L1org/apache/commons/compress/archivers/zip/ZipArchiveEntry;)V # @Generated
+addAsFirstExtraField
+ (Lorg/apache/commons/compress/archivers/zip/ZipExtraField;)V
+ (L1org/apache/commons/compress/archivers/zip/ZipExtraField;)V # @Generated
+addExtraField
+ (Lorg/apache/commons/compress/archivers/zip/ZipExtraField;)V
+ (Lorg/apache/commons/compress/archivers/zip/ZipExtraField;)V
+clone
+ ()Ljava/lang/Object;
+ ()L1java/lang/Object; # @Inherited(java.util.zip.ZipEntry)
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getCentralDirectoryExtra
+ ()[B
+ ()[1B # @Generated
+getCommentSource
+ ()Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry$CommentSource;
+ ()Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry$CommentSource;
+getExtraField
+ (Lorg/apache/commons/compress/archivers/zip/ZipShort;)Lorg/apache/commons/compress/archivers/zip/ZipExtraField;
+ (Lorg/apache/commons/compress/archivers/zip/ZipShort;)L0org/apache/commons/compress/archivers/zip/ZipExtraField; # @Generated(55)
+getExtraFields
+ ()[Lorg/apache/commons/compress/archivers/zip/ZipExtraField;
+ ()[Lorg/apache/commons/compress/archivers/zip/ZipExtraField;
+getExtraFields
+ (Lorg/apache/commons/compress/archivers/zip/ExtraFieldParsingBehavior;)[Lorg/apache/commons/compress/archivers/zip/ZipExtraField;
+ (Lorg/apache/commons/compress/archivers/zip/ExtraFieldParsingBehavior;)[Lorg/apache/commons/compress/archivers/zip/ZipExtraField;
+getExtraFields
+ (Z)[Lorg/apache/commons/compress/archivers/zip/ZipExtraField;
+ (Z)[Lorg/apache/commons/compress/archivers/zip/ZipExtraField;
+getGeneralPurposeBit
+ ()Lorg/apache/commons/compress/archivers/zip/GeneralPurposeBit;
+ ()Lorg/apache/commons/compress/archivers/zip/GeneralPurposeBit;
+getLastModifiedDate
+ ()Ljava/util/Date;
+ ()L1java/util/Date; # @Generated
+getLocalFileDataExtra
+ ()[B
+ ()[1B # @Generated
+getName
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.util.zip.ZipEntry)
+getNameSource
+ ()Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry$NameSource;
+ ()Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry$NameSource;
+getRawName
+ ()[B
+ ()[0B # @Generated
+getUnparseableExtraFieldData
+ ()Lorg/apache/commons/compress/archivers/zip/UnparseableExtraFieldData;
+ ()Lorg/apache/commons/compress/archivers/zip/UnparseableExtraFieldData;
+removeExtraField
+ (Lorg/apache/commons/compress/archivers/zip/ZipShort;)V
+ (Lorg/apache/commons/compress/archivers/zip/ZipShort;)V
+setCentralDirectoryExtra
+ ([B)V
+ ([1B)V # @Generated
+setCommentSource
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry$CommentSource;)V
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry$CommentSource;)V
+setCreationTime
+ (Ljava/nio/file/attribute/FileTime;)Ljava/util/zip/ZipEntry;
+ (L1java/nio/file/attribute/FileTime;)L1java/util/zip/ZipEntry; # @Inherited(java.util.zip.ZipEntry)
+setExtra
+ ([B)V
+ ([1B)V # @Overrides(java.util.zip.ZipEntry)
+setExtraFields
+ ([Lorg/apache/commons/compress/archivers/zip/ZipExtraField;)V
+ ([Lorg/apache/commons/compress/archivers/zip/ZipExtraField;)V
+setGeneralPurposeBit
+ (Lorg/apache/commons/compress/archivers/zip/GeneralPurposeBit;)V
+ (Lorg/apache/commons/compress/archivers/zip/GeneralPurposeBit;)V
+setLastAccessTime
+ (Ljava/nio/file/attribute/FileTime;)Ljava/util/zip/ZipEntry;
+ (L1java/nio/file/attribute/FileTime;)L1java/util/zip/ZipEntry; # @Inherited(java.util.zip.ZipEntry)
+setLastModifiedTime
+ (Ljava/nio/file/attribute/FileTime;)Ljava/util/zip/ZipEntry;
+ (L1java/nio/file/attribute/FileTime;)L1java/util/zip/ZipEntry; # @Inherited(java.util.zip.ZipEntry)
+setName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setName
+ (Ljava/lang/String;[B)V
+ (Ljava/lang/String;[B)V
+setNameSource
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry$NameSource;)V
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry$NameSource;)V
+setTime
+ (Ljava/nio/file/attribute/FileTime;)V
+ (L1java/nio/file/attribute/FileTime;)V # @Generated

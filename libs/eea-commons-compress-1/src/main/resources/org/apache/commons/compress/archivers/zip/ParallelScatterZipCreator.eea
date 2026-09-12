@@ -1,0 +1,35 @@
+class org/apache/commons/compress/archivers/zip/ParallelScatterZipCreator
+
+<init>
+ (Ljava/util/concurrent/ExecutorService;)V
+ (Ljava/util/concurrent/ExecutorService;)V
+<init>
+ (Ljava/util/concurrent/ExecutorService;Lorg/apache/commons/compress/parallel/ScatterGatherBackingStoreSupplier;)V
+ (Ljava/util/concurrent/ExecutorService;Lorg/apache/commons/compress/parallel/ScatterGatherBackingStoreSupplier;)V
+<init>
+ (Ljava/util/concurrent/ExecutorService;Lorg/apache/commons/compress/parallel/ScatterGatherBackingStoreSupplier;I)V
+ (Ljava/util/concurrent/ExecutorService;Lorg/apache/commons/compress/parallel/ScatterGatherBackingStoreSupplier;I)V
+addArchiveEntry
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;Lorg/apache/commons/compress/parallel/InputStreamSupplier;)V
+ (L1org/apache/commons/compress/archivers/zip/ZipArchiveEntry;Lorg/apache/commons/compress/parallel/InputStreamSupplier;)V # @Generated(2)
+addArchiveEntry
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntryRequestSupplier;)V
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntryRequestSupplier;)V
+createCallable
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;Lorg/apache/commons/compress/parallel/InputStreamSupplier;)Ljava/util/concurrent/Callable<Lorg/apache/commons/compress/archivers/zip/ScatterZipOutputStream;>;
+ (L1org/apache/commons/compress/archivers/zip/ZipArchiveEntry;Lorg/apache/commons/compress/parallel/InputStreamSupplier;)L1java/util/concurrent/Callable<Lorg/apache/commons/compress/archivers/zip/ScatterZipOutputStream;>; # @Generated(2,120)
+createCallable
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntryRequestSupplier;)Ljava/util/concurrent/Callable<Lorg/apache/commons/compress/archivers/zip/ScatterZipOutputStream;>;
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntryRequestSupplier;)L1java/util/concurrent/Callable<Lorg/apache/commons/compress/archivers/zip/ScatterZipOutputStream;>; # @Generated(77)
+getStatisticsMessage
+ ()Lorg/apache/commons/compress/archivers/zip/ScatterStatistics;
+ ()L1org/apache/commons/compress/archivers/zip/ScatterStatistics; # @Generated
+submit
+ (Ljava/util/concurrent/Callable<+Ljava/lang/Object;>;)V
+ (Ljava/util/concurrent/Callable<+Ljava/lang/Object;>;)V
+submitStreamAwareCallable
+ (Ljava/util/concurrent/Callable<+Lorg/apache/commons/compress/archivers/zip/ScatterZipOutputStream;>;)V
+ (Ljava/util/concurrent/Callable<+Lorg/apache/commons/compress/archivers/zip/ScatterZipOutputStream;>;)V
+writeTo
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveOutputStream;)V
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveOutputStream;)V

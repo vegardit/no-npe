@@ -1,0 +1,61 @@
+class org/apache/commons/compress/archivers/tar/TarArchiveInputStream
+
+super org/apache/commons/compress/archivers/ArchiveInputStream
+ <Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;>
+ <Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;>
+
+matches
+ ([BI)Z
+ ([BI)Z
+
+<init>
+ (Ljava/io/InputStream;)V
+ (Ljava/io/InputStream;)V
+<init>
+ (Ljava/io/InputStream;I)V
+ (Ljava/io/InputStream;I)V
+<init>
+ (Ljava/io/InputStream;II)V
+ (Ljava/io/InputStream;II)V
+<init>
+ (Ljava/io/InputStream;IILjava/lang/String;)V
+ (Ljava/io/InputStream;IILjava/lang/String;)V
+<init>
+ (Ljava/io/InputStream;IILjava/lang/String;Z)V
+ (Ljava/io/InputStream;IILjava/lang/String;Z)V
+<init>
+ (Ljava/io/InputStream;ILjava/lang/String;)V
+ (Ljava/io/InputStream;ILjava/lang/String;)V
+<init>
+ (Ljava/io/InputStream;Ljava/lang/String;)V
+ (Ljava/io/InputStream;Ljava/lang/String;)V
+<init>
+ (Ljava/io/InputStream;Z)V
+ (Ljava/io/InputStream;Z)V
+canReadEntryData
+ (Lorg/apache/commons/compress/archivers/ArchiveEntry;)Z
+ (Lorg/apache/commons/compress/archivers/ArchiveEntry;)Z
+getCurrentEntry
+ ()Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;
+ ()Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;
+getLongNameData
+ ()[B
+ ()[0B # @Generated
+getNextEntry
+ ()Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;
+ ()Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;
+getNextTarEntry
+ ()Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;
+ ()L0org/apache/commons/compress/archivers/tar/TarArchiveEntry; # @Generated
+isEOFRecord
+ ([B)Z
+ ([0B)Z # @Generated
+read
+ ([BII)I
+ ([1BII)I # @Inherited(java.io.FilterInputStream)
+readRecord
+ ()[B
+ ()[0B # @Generated
+setCurrentEntry
+ (Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;)V
+ (Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;)V

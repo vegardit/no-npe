@@ -1,0 +1,36 @@
+class org/apache/commons/compress/archivers/tar/TarArchiveOutputStream
+
+super org/apache/commons/compress/archivers/ArchiveOutputStream
+ <Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;>
+ <Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;>
+
+<init>
+ (Ljava/io/OutputStream;)V
+ (Ljava/io/OutputStream;)V
+<init>
+ (Ljava/io/OutputStream;I)V
+ (Ljava/io/OutputStream;I)V
+<init>
+ (Ljava/io/OutputStream;II)V
+ (Ljava/io/OutputStream;II)V
+<init>
+ (Ljava/io/OutputStream;IILjava/lang/String;)V
+ (Ljava/io/OutputStream;IILjava/lang/String;)V
+<init>
+ (Ljava/io/OutputStream;ILjava/lang/String;)V
+ (Ljava/io/OutputStream;ILjava/lang/String;)V
+<init>
+ (Ljava/io/OutputStream;Ljava/lang/String;)V
+ (Ljava/io/OutputStream;Ljava/lang/String;)V
+createArchiveEntry
+ (Ljava/io/File;Ljava/lang/String;)Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;
+ (L1java/io/File;Ljava/lang/String;)L1org/apache/commons/compress/archivers/tar/TarArchiveEntry; # @Generated(2,35)
+createArchiveEntry
+ (Ljava/nio/file/Path;Ljava/lang/String;[Ljava/nio/file/LinkOption;)Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;
+ (L1java/nio/file/Path;Ljava/lang/String;[1Ljava/nio/file/LinkOption;)L1org/apache/commons/compress/archivers/tar/TarArchiveEntry; # @Generated(2,40,68)
+putArchiveEntry
+ (Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;)V
+ (L1org/apache/commons/compress/archivers/tar/TarArchiveEntry;)V # @Generated
+write
+ ([BII)V
+ ([1BII)V # @Inherited(java.io.FilterOutputStream)

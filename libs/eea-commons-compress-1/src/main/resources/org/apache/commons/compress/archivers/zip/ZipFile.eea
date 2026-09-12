@@ -1,0 +1,90 @@
+class org/apache/commons/compress/archivers/zip/ZipFile
+
+builder
+ ()Lorg/apache/commons/compress/archivers/zip/ZipFile$Builder;
+ ()L1org/apache/commons/compress/archivers/zip/ZipFile$Builder; # @Generated
+closeQuietly
+ (Lorg/apache/commons/compress/archivers/zip/ZipFile;)V
+ (Lorg/apache/commons/compress/archivers/zip/ZipFile;)V
+
+<init>
+ (Ljava/io/File;)V
+ (L1java/io/File;)V # @Generated
+<init>
+ (Ljava/io/File;Ljava/lang/String;)V
+ (L1java/io/File;Ljava/lang/String;)V # @Generated(2)
+<init>
+ (Ljava/io/File;Ljava/lang/String;Z)V
+ (L1java/io/File;Ljava/lang/String;Z)V # @Generated(2)
+<init>
+ (Ljava/io/File;Ljava/lang/String;ZZ)V
+ (L1java/io/File;Ljava/lang/String;ZZ)V # @Generated(2)
+<init>
+ (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
+<init>
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;Ljava/lang/String;)V # @Generated(2)
+<init>
+ (Ljava/nio/channels/SeekableByteChannel;)V
+ (Ljava/nio/channels/SeekableByteChannel;)V
+<init>
+ (Ljava/nio/channels/SeekableByteChannel;Ljava/lang/String;)V
+ (Ljava/nio/channels/SeekableByteChannel;Ljava/lang/String;)V
+<init>
+ (Ljava/nio/channels/SeekableByteChannel;Ljava/lang/String;Ljava/lang/String;Z)V
+ (Ljava/nio/channels/SeekableByteChannel;Ljava/lang/String;Ljava/lang/String;Z)V
+<init>
+ (Ljava/nio/channels/SeekableByteChannel;Ljava/lang/String;Ljava/lang/String;ZZ)V
+ (Ljava/nio/channels/SeekableByteChannel;Ljava/lang/String;Ljava/lang/String;ZZ)V
+<init>
+ (Ljava/nio/file/Path;)V
+ (L1java/nio/file/Path;)V # @Generated
+<init>
+ (Ljava/nio/file/Path;Ljava/lang/String;)V
+ (L1java/nio/file/Path;Ljava/lang/String;)V # @Generated(2)
+<init>
+ (Ljava/nio/file/Path;Ljava/lang/String;Z)V
+ (L1java/nio/file/Path;Ljava/lang/String;Z)V # @Generated(2)
+<init>
+ (Ljava/nio/file/Path;Ljava/lang/String;ZZ)V
+ (L1java/nio/file/Path;Ljava/lang/String;ZZ)V # @Generated(2)
+canReadEntryData
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;)Z
+ (L1org/apache/commons/compress/archivers/zip/ZipArchiveEntry;)Z # @Generated
+copyRawEntries
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveOutputStream;Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntryPredicate;)V
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveOutputStream;Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntryPredicate;)V
+getContentBeforeFirstLocalFileHeader
+ ()Ljava/io/InputStream;
+ ()L0java/io/InputStream; # @Generated
+getEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getEntries
+ ()Ljava/util/Enumeration<Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>;
+ ()L1java/util/Enumeration<Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>; # @Generated(3)
+getEntries
+ (Ljava/lang/String;)Ljava/lang/Iterable<Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>;
+ (Ljava/lang/String;)Ljava/lang/Iterable<Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>;
+getEntriesInPhysicalOrder
+ ()Ljava/util/Enumeration<Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>;
+ ()L1java/util/Enumeration<Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>; # @Generated(3)
+getEntriesInPhysicalOrder
+ (Ljava/lang/String;)Ljava/lang/Iterable<Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>;
+ (Ljava/lang/String;)L1java/lang/Iterable<Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>; # @Generated(21)
+getEntry
+ (Ljava/lang/String;)Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;
+ (Ljava/lang/String;)L0org/apache/commons/compress/archivers/zip/ZipArchiveEntry; # @Generated(21)
+getInputStream
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;)Ljava/io/InputStream;
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;)L0java/io/InputStream; # @Generated(62)
+getRawInputStream
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;)Ljava/io/InputStream;
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;)L0java/io/InputStream; # @Generated(62)
+getUnixSymlink
+ (Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;)Ljava/lang/String;
+ (L0org/apache/commons/compress/archivers/zip/ZipArchiveEntry;)L0java/lang/String; # @Generated(2,62)
+stream
+ ()Lorg/apache/commons/io/function/IOStream<+Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>;
+ ()Lorg/apache/commons/io/function/IOStream<+Lorg/apache/commons/compress/archivers/zip/ZipArchiveEntry;>;

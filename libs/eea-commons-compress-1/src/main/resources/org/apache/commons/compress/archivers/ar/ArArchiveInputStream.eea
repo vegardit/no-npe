@@ -1,0 +1,22 @@
+class org/apache/commons/compress/archivers/ar/ArArchiveInputStream
+
+super org/apache/commons/compress/archivers/ArchiveInputStream
+ <Lorg/apache/commons/compress/archivers/ar/ArArchiveEntry;>
+ <Lorg/apache/commons/compress/archivers/ar/ArArchiveEntry;>
+
+matches
+ ([BI)Z
+ ([BI)Z
+
+<init>
+ (Ljava/io/InputStream;)V
+ (Ljava/io/InputStream;)V
+getNextArEntry
+ ()Lorg/apache/commons/compress/archivers/ar/ArArchiveEntry;
+ ()L0org/apache/commons/compress/archivers/ar/ArArchiveEntry; # @Generated
+getNextEntry
+ ()Lorg/apache/commons/compress/archivers/ar/ArArchiveEntry;
+ ()Lorg/apache/commons/compress/archivers/ar/ArArchiveEntry;
+read
+ ([BII)I
+ ([1BII)I # @Inherited(java.io.FilterInputStream)

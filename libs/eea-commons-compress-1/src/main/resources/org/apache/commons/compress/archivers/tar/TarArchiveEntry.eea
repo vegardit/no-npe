@@ -1,0 +1,158 @@
+class org/apache/commons/compress/archivers/tar/TarArchiveEntry
+
+<init>
+ (Ljava/io/File;)V
+ (L1java/io/File;)V # @Generated
+<init>
+ (Ljava/io/File;Ljava/lang/String;)V
+ (L1java/io/File;Ljava/lang/String;)V # @Generated(2)
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ljava/lang/String;B)V
+ (Ljava/lang/String;B)V
+<init>
+ (Ljava/lang/String;BZ)V
+ (Ljava/lang/String;BZ)V
+<init>
+ (Ljava/lang/String;Z)V
+ (Ljava/lang/String;Z)V
+<init>
+ (Ljava/nio/file/Path;)V
+ (L1java/nio/file/Path;)V # @Generated
+<init>
+ (Ljava/nio/file/Path;Ljava/lang/String;[Ljava/nio/file/LinkOption;)V
+ (L1java/nio/file/Path;Ljava/lang/String;[1Ljava/nio/file/LinkOption;)V # @Generated(2,40)
+<init>
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;[BLorg/apache/commons/compress/archivers/zip/ZipEncoding;Z)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;[1BLorg/apache/commons/compress/archivers/zip/ZipEncoding;Z)V # @Generated(55)
+<init>
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;[BLorg/apache/commons/compress/archivers/zip/ZipEncoding;ZJ)V
+ (Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;[1BLorg/apache/commons/compress/archivers/zip/ZipEncoding;ZJ)V # @Generated(55)
+<init>
+ ([B)V
+ ([B)V
+<init>
+ ([BLorg/apache/commons/compress/archivers/zip/ZipEncoding;)V
+ ([1BLorg/apache/commons/compress/archivers/zip/ZipEncoding;)V # @Generated(2)
+<init>
+ ([BLorg/apache/commons/compress/archivers/zip/ZipEncoding;Z)V
+ ([1BLorg/apache/commons/compress/archivers/zip/ZipEncoding;Z)V # @Generated(2)
+<init>
+ ([BLorg/apache/commons/compress/archivers/zip/ZipEncoding;ZJ)V
+ ([1BLorg/apache/commons/compress/archivers/zip/ZipEncoding;ZJ)V # @Generated(2)
+addPaxHeader
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (L1java/lang/String;Ljava/lang/String;)V # @Generated(2)
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+equals
+ (Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;)Z
+ (L0org/apache/commons/compress/archivers/tar/TarArchiveEntry;)Z # @Generated
+getCreationTime
+ ()Ljava/nio/file/attribute/FileTime;
+ ()Ljava/nio/file/attribute/FileTime;
+getDirectoryEntries
+ ()[Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;
+ ()[Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;
+getExtraPaxHeader
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+getExtraPaxHeaders
+ ()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ ()L1java/util/Map<Ljava/lang/String;Ljava/lang/String;>; # @Generated(3)
+getFile
+ ()Ljava/io/File;
+ ()L0java/io/File; # @Generated
+getGroupName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getLastAccessTime
+ ()Ljava/nio/file/attribute/FileTime;
+ ()Ljava/nio/file/attribute/FileTime;
+getLastModifiedDate
+ ()Ljava/util/Date;
+ ()Ljava/util/Date;
+getLastModifiedTime
+ ()Ljava/nio/file/attribute/FileTime;
+ ()Ljava/nio/file/attribute/FileTime;
+getLinkName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getModTime
+ ()Ljava/util/Date;
+ ()Ljava/util/Date;
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getOrderedSparseHeaders
+ ()Ljava/util/List<Lorg/apache/commons/compress/archivers/tar/TarArchiveStructSparse;>;
+ ()L1java/util/List<Lorg/apache/commons/compress/archivers/tar/TarArchiveStructSparse;>; # @Generated(3)
+getPath
+ ()Ljava/nio/file/Path;
+ ()Ljava/nio/file/Path;
+getSparseHeaders
+ ()Ljava/util/List<Lorg/apache/commons/compress/archivers/tar/TarArchiveStructSparse;>;
+ ()Ljava/util/List<Lorg/apache/commons/compress/archivers/tar/TarArchiveStructSparse;>;
+getStatusChangeTime
+ ()Ljava/nio/file/attribute/FileTime;
+ ()Ljava/nio/file/attribute/FileTime;
+getUserName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+isDescendent
+ (Lorg/apache/commons/compress/archivers/tar/TarArchiveEntry;)Z
+ (L1org/apache/commons/compress/archivers/tar/TarArchiveEntry;)Z # @Generated
+parseTarHeader
+ ([B)V
+ ([B)V
+parseTarHeader
+ ([BLorg/apache/commons/compress/archivers/zip/ZipEncoding;)V
+ ([1BLorg/apache/commons/compress/archivers/zip/ZipEncoding;)V # @Generated(2)
+setCreationTime
+ (Ljava/nio/file/attribute/FileTime;)V
+ (Ljava/nio/file/attribute/FileTime;)V
+setGroupName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setLastAccessTime
+ (Ljava/nio/file/attribute/FileTime;)V
+ (Ljava/nio/file/attribute/FileTime;)V
+setLastModifiedTime
+ (Ljava/nio/file/attribute/FileTime;)V
+ (L1java/nio/file/attribute/FileTime;)V # @Generated
+setLinkName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setModTime
+ (Ljava/nio/file/attribute/FileTime;)V
+ (Ljava/nio/file/attribute/FileTime;)V
+setModTime
+ (Ljava/util/Date;)V
+ (Ljava/util/Date;)V
+setName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+setNames
+ (Ljava/lang/String;Ljava/lang/String;)V
+ (Ljava/lang/String;Ljava/lang/String;)V
+setSparseHeaders
+ (Ljava/util/List<Lorg/apache/commons/compress/archivers/tar/TarArchiveStructSparse;>;)V
+ (Ljava/util/List<Lorg/apache/commons/compress/archivers/tar/TarArchiveStructSparse;>;)V
+setStatusChangeTime
+ (Ljava/nio/file/attribute/FileTime;)V
+ (Ljava/nio/file/attribute/FileTime;)V
+setUserName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+writeEntryHeader
+ ([B)V
+ ([B)V
+writeEntryHeader
+ ([BLorg/apache/commons/compress/archivers/zip/ZipEncoding;Z)V
+ ([1BL1org/apache/commons/compress/archivers/zip/ZipEncoding;Z)V # @Generated(2,4)

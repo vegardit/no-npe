@@ -1,0 +1,63 @@
+class org/apache/commons/compress/harmony/unpack200/bytecode/ByteCode
+
+getByteCode
+ (I)Lorg/apache/commons/compress/harmony/unpack200/bytecode/ByteCode;
+ (I)Lorg/apache/commons/compress/harmony/unpack200/bytecode/ByteCode;
+
+<init>
+ (I[Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassFileEntry;)V
+ (I[Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassFileEntry;)V
+applyByteCodeTargetFixup
+ (Lorg/apache/commons/compress/harmony/unpack200/bytecode/CodeAttribute;)V
+ (Lorg/apache/commons/compress/harmony/unpack200/bytecode/CodeAttribute;)V
+doWrite
+ (Ljava/io/DataOutputStream;)V
+ (Ljava/io/DataOutputStream;)V
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(org.apache.commons.compress.harmony.unpack200.bytecode.ClassFileEntry)
+extractOperands
+ (Lorg/apache/commons/compress/harmony/unpack200/bytecode/OperandManager;Lorg/apache/commons/compress/harmony/unpack200/Segment;I)V
+ (Lorg/apache/commons/compress/harmony/unpack200/bytecode/OperandManager;Lorg/apache/commons/compress/harmony/unpack200/Segment;I)V
+getByteCodeForm
+ ()Lorg/apache/commons/compress/harmony/unpack200/bytecode/forms/ByteCodeForm;
+ ()Lorg/apache/commons/compress/harmony/unpack200/bytecode/forms/ByteCodeForm;
+getByteCodeTargets
+ ()[I
+ ()[I
+getName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getNestedClassFileEntries
+ ()[Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassFileEntry;
+ ()[1Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassFileEntry; # @Inherited(org.apache.commons.compress.harmony.unpack200.bytecode.ClassFileEntry)
+getNestedPosition
+ (I)[I
+ (I)[I
+getNestedPositions
+ ()[[I
+ ()[[I
+getRewrite
+ ()[I
+ ()[I
+resolve
+ (Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassConstantPool;)V
+ (Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassConstantPool;)V
+setByteCodeTargets
+ ([I)V
+ ([I)V
+setNested
+ ([Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassFileEntry;)V
+ ([Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassFileEntry;)V
+setNestedPositions
+ ([[I)V
+ ([[I)V
+setOperandBytes
+ ([I)V
+ ([1I)V # @Generated
+setRewrite
+ ([I)V
+ ([I)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(org.apache.commons.compress.harmony.unpack200.bytecode.ClassFileEntry)

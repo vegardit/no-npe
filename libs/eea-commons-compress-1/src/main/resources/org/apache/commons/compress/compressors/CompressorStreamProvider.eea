@@ -1,0 +1,14 @@
+class org/apache/commons/compress/compressors/CompressorStreamProvider
+
+createCompressorInputStream
+ (Ljava/lang/String;Ljava/io/InputStream;Z)Lorg/apache/commons/compress/compressors/CompressorInputStream;
+ (Ljava/lang/String;Ljava/io/InputStream;Z)L1org/apache/commons/compress/compressors/CompressorInputStream;
+createCompressorOutputStream
+ <T:Ljava/io/OutputStream;>(Ljava/lang/String;TT;)Lorg/apache/commons/compress/compressors/CompressorOutputStream<TT;>;
+ <T:Ljava/io/OutputStream;>(Ljava/lang/String;TT;)L1org/apache/commons/compress/compressors/CompressorOutputStream<TT;>;
+getInputStreamCompressorNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()L1java/util/Set<L1java/lang/String;>;
+getOutputStreamCompressorNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()L1java/util/Set<L1java/lang/String;>;

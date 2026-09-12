@@ -1,0 +1,88 @@
+class org/apache/commons/compress/archivers/ArchiveStreamFactory
+
+APK
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+APKM
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+APKS
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+AR
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+ARJ
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+CPIO
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+DEFAULT
+ Lorg/apache/commons/compress/archivers/ArchiveStreamFactory;
+ L1org/apache/commons/compress/archivers/ArchiveStreamFactory; # @Generated
+DUMP
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+JAR
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+SEVEN_Z
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+TAR
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+XAPK
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+ZIP
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
+
+detect
+ (Ljava/io/InputStream;)Ljava/lang/String;
+ (L1java/io/InputStream;)L1java/lang/String; # @Generated(2,24)
+findAvailableArchiveInputStreamProviders
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/archivers/ArchiveStreamProvider;>;
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/archivers/ArchiveStreamProvider;>;
+findAvailableArchiveOutputStreamProviders
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/archivers/ArchiveStreamProvider;>;
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/archivers/ArchiveStreamProvider;>;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+createArchiveInputStream
+ <I:Lorg/apache/commons/compress/archivers/ArchiveInputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(Ljava/io/InputStream;)TI;
+ <I:Lorg/apache/commons/compress/archivers/ArchiveInputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(L1java/io/InputStream;)TI; # @Generated(119)
+createArchiveInputStream
+ <I:Lorg/apache/commons/compress/archivers/ArchiveInputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(Ljava/lang/String;Ljava/io/InputStream;)TI;
+ <I:Lorg/apache/commons/compress/archivers/ArchiveInputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(Ljava/lang/String;Ljava/io/InputStream;)TI;
+createArchiveInputStream
+ <I:Lorg/apache/commons/compress/archivers/ArchiveInputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;)TI;
+ <I:Lorg/apache/commons/compress/archivers/ArchiveInputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(L1java/lang/String;L1java/io/InputStream;Ljava/lang/String;)TI; # @Generated(119,137)
+createArchiveOutputStream
+ <O:Lorg/apache/commons/compress/archivers/ArchiveOutputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(Ljava/lang/String;Ljava/io/OutputStream;)TO;
+ <O:Lorg/apache/commons/compress/archivers/ArchiveOutputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(Ljava/lang/String;Ljava/io/OutputStream;)TO;
+createArchiveOutputStream
+ <O:Lorg/apache/commons/compress/archivers/ArchiveOutputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(Ljava/lang/String;Ljava/io/OutputStream;Ljava/lang/String;)TO;
+ <O:Lorg/apache/commons/compress/archivers/ArchiveOutputStream<+Lorg/apache/commons/compress/archivers/ArchiveEntry;>;>(L1java/lang/String;L1java/io/OutputStream;Ljava/lang/String;)TO; # @Generated(120,138)
+getArchiveInputStreamProviders
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/archivers/ArchiveStreamProvider;>;
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/archivers/ArchiveStreamProvider;>;
+getArchiveOutputStreamProviders
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/archivers/ArchiveStreamProvider;>;
+ ()Ljava/util/SortedMap<Ljava/lang/String;Lorg/apache/commons/compress/archivers/ArchiveStreamProvider;>;
+getEntryEncoding
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getInputStreamArchiveNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()L1java/util/Set<Ljava/lang/String;>; # @Generated(3)
+getOutputStreamArchiveNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()L1java/util/Set<Ljava/lang/String;>; # @Generated(3)
+setEntryEncoding
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
