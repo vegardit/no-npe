@@ -59,7 +59,7 @@ jobs:
   ###########################################################
     uses: sebthom/gha-shared/.github/workflows/reusable.maven-build.yml@v1
     with:
-      timeout-minutes: 10
+      timeout-minutes: 20
 
       compile-jdk: 11
       extra-jdks: 17,21,25
