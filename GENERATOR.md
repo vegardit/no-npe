@@ -724,9 +724,16 @@ The proofs have these boundaries:
 - A call or direct dereference inside a region protected by an explicit catch of `NullPointerException`, `RuntimeException`,
   `Exception`, or `Throwable` does not qualify, even when the handler rethrows.
   The analysis deliberately does not turn a failure handled by such a catch into a parameter contract.
-- Facts established by a call or direct dereference are carried only along its normal control-flow edge.
-  Exception handlers receive the facts that were known before the throwing instruction.
-  This is deliberately conservative for checked-exception handlers that return normally.
+- Normal-completion requirements apply only to normal control-flow edges.
+  Exception handlers receive the facts known before the throwing instruction unless a separate exception proof applies.
+- A handler for a resolved checked-exception family can also receive facts proven for every matching exceptional exit.
+  An instance call proves its receiver non-null on such an exit because a null receiver throws an unchecked exception.
+  Exactly resolved helpers can prove argument requirements before a checked exception escapes.
+  An exception that can occur before validation supplies no such requirement.
+  Handler order, catch-all entries, and shared handler paths remain part of the proof.
+  Only proven impossible checked-exception edges are removed; unknown calls and explicit throws remain possible.
+  The two `Objects.requireNonNull` overloads without callbacks cannot throw a checked exception.
+  The supplier overload has no such guarantee because its callback can throw before null rejection completes.
 - A synthetic catch-all used for `finally` is not treated as an explicit NPE-capable catch.
   A normal `finally` path can retain the proof, while a handler path that returns without the successful operation cannot.
 - Native calls such as `System.arraycopy(...)` supply no bytecode proof for their arguments.
@@ -734,11 +741,17 @@ The proofs have these boundaries:
 - Helper traversal has its own depth budget and stops at active recursion cycles.
   Calls in one root analysis also share a work budget for estimated frame and exception-handler work and for visiting
   local-check and helper-argument producers and their dependency edges, including edges to cached producers.
+  Checked-exception exit proofs and exception-hierarchy resolution use the same allowance.
   Failed proofs also consume this allowance.
   Each admitted method computes its local checks once before traversing helpers.
   Those local checks finish even if they exhaust the allowance, so independent local facts survive the cutoff.
+  A helper's normal-return summary is requested only when it can establish a requirement for an input not already known
+  to be non-null on that edge.
+  Checked-exit helper traversal can also stop once every input is non-null before the call.
+  That conservative fallback keeps the exit possible and is separate from cached exception proofs.
   Exhaustion skips further helper proofs and logs one warning for that root.
-- Cached summaries preserve the remaining depth budget and consume the same work allowance as uncached proofs.
+- Cached summaries distinguish normal completion from each queried checked-exception family.
+  They preserve the remaining depth budget and consume the same work allowance as uncached proofs.
   Results that encounter a cycle or reach a depth or work cutoff are not reused.
   A cutoff can hide a cycle, so reusing its partial proof could change contracts with cache warmth.
 

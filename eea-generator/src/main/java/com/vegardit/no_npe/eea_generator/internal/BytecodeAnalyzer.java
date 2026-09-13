@@ -119,11 +119,19 @@ public class BytecodeAnalyzer {
 
       private final Set<Integer> definitelyNonNullParameterIndexes;
       private final Set<Integer> definitelyNullableParameterIndexes;
+      // Conditional exit evidence stays internal; it is not a caller-facing parameter contract.
+      private final CheckedExceptionSummary checkedException;
 
       private MethodParameterAnalysis(final Set<Integer> definitelyNullableParameterIndexes,
             final Set<Integer> definitelyNonNullParameterIndexes) {
+         this(definitelyNullableParameterIndexes, definitelyNonNullParameterIndexes, CheckedExceptionSummary.UNKNOWN);
+      }
+
+      private MethodParameterAnalysis(final Set<Integer> definitelyNullableParameterIndexes,
+            final Set<Integer> definitelyNonNullParameterIndexes, final CheckedExceptionSummary checkedException) {
          this.definitelyNullableParameterIndexes = Set.copyOf(definitelyNullableParameterIndexes);
          this.definitelyNonNullParameterIndexes = Set.copyOf(definitelyNonNullParameterIndexes);
+         this.checkedException = checkedException;
       }
 
       public Set<Integer> getDefinitelyNonNullParameterIndexes() {
@@ -780,15 +788,53 @@ public class BytecodeAnalyzer {
       }
    }
 
+   /** Describes every exit matching one checked exception type, including a proven absence of such exits. */
+   private static final class CheckedExceptionSummary {
+      static final CheckedExceptionSummary UNKNOWN = new CheckedExceptionSummary(true, Set.of());
+      static final CheckedExceptionSummary IMPOSSIBLE = new CheckedExceptionSummary(false, Set.of());
+
+      final boolean possible;
+      final Set<Integer> nonNullParameters;
+
+      CheckedExceptionSummary(final boolean possible, final Set<Integer> nonNullParameters) {
+         this.possible = possible;
+         this.nonNullParameters = Set.copyOf(nonNullParameters);
+      }
+
+      CheckedExceptionSummary merge(final CheckedExceptionSummary other) {
+         if (!possible)
+            return other;
+         if (!other.possible)
+            return this;
+         // Unknown is a possible exit with no guarantees; it must never act like an impossible path at a join.
+         final Set<Integer> commonParameters = new HashSet<>(nonNullParameters);
+         commonParameters.retainAll(other.nonNullParameters);
+         return new CheckedExceptionSummary(true, commonParameters);
+      }
+   }
+
+   /** Keeps reachability separate from an empty must-fact set after impossible checked-exception edges are removed. */
+   private static final class NonNullParameterFacts {
+      final List<Set<Integer>> states;
+      final boolean[] reached;
+      final CheckedExceptionSummary checkedException;
+
+      NonNullParameterFacts(final List<Set<Integer>> states, final boolean[] reached, final CheckedExceptionSummary checkedException) {
+         this.states = states;
+         this.reached = reached;
+         this.checkedException = checkedException;
+      }
+   }
+
    private static final class ParameterFlowFacts {
       final Set<Integer> definitelyNullableParameters;
-      final List<Set<Integer>> guaranteedNonNullParameters;
+      final NonNullParameterFacts nonNullFacts;
       final List<Set<Integer>> guaranteedNullParameters;
 
-      ParameterFlowFacts(final List<Set<Integer>> guaranteedNullParameters, final List<Set<Integer>> guaranteedNonNullParameters,
+      ParameterFlowFacts(final List<Set<Integer>> guaranteedNullParameters, final NonNullParameterFacts nonNullFacts,
             final Set<Integer> definitelyNullableParameters) {
          this.guaranteedNullParameters = guaranteedNullParameters;
-         this.guaranteedNonNullParameters = guaranteedNonNullParameters;
+         this.nonNullFacts = nonNullFacts;
          this.definitelyNullableParameters = definitelyNullableParameters;
       }
    }
@@ -797,6 +843,7 @@ public class BytecodeAnalyzer {
       final Set<Integer> definitelyNullableParameters;
       final Frame<SourceValue>[] frames;
       final List<Set<Integer>> guaranteedNonNullParameters;
+      final NonNullParameterFacts nonNullFacts;
       final List<Set<Integer>> guaranteedNullParameters;
       final Map<AbstractInsnNode, Integer> instructionIndexes;
       final AbstractInsnNode[] instructions;
@@ -811,7 +858,8 @@ public class BytecodeAnalyzer {
          this.instructionIndexes = instructionIndexes;
          this.referenceParameterIndexesByLocalSlot = referenceParameterIndexesByLocalSlot;
          guaranteedNullParameters = parameterFlowFacts.guaranteedNullParameters;
-         guaranteedNonNullParameters = parameterFlowFacts.guaranteedNonNullParameters;
+         nonNullFacts = parameterFlowFacts.nonNullFacts;
+         guaranteedNonNullParameters = nonNullFacts.states;
          definitelyNullableParameters = parameterFlowFacts.definitelyNullableParameters;
          this.returnFlowFacts = returnFlowFacts;
       }
@@ -930,7 +978,15 @@ public class BytecodeAnalyzer {
       @SuppressWarnings("null")
       private MethodParameterAnalysis determineParameterSummary(final ClassNode owner, final MethodNode method,
             final ParameterAnalysisContext context) {
-         final String key = owner.name + '\0' + methodKey(method.name, method.desc);
+         return determineParameterSummary(owner, method, context, null);
+      }
+
+      @SuppressWarnings("null")
+      private MethodParameterAnalysis determineParameterSummary(final ClassNode owner, final MethodNode method,
+            final ParameterAnalysisContext context, final @Nullable String checkedExceptionType) {
+         // Normal completion and different exception filters are distinct proofs, but consume the same recursion/work allowance.
+         final String key = owner.name + '\0' + methodKey(method.name, method.desc) + '\0' + (checkedExceptionType == null ? ""
+               : checkedExceptionType);
          // Check cycles before cache lookup: a warm summary must not bypass the active-call boundary of a cold traversal.
          if (!parameterSummariesBeingComputed.add(key)) {
             context.cacheable = false;
@@ -958,7 +1014,8 @@ public class BytecodeAnalyzer {
             }
             /* A cached proof that does not fit must be recomputed within the remaining allowance. Declining it outright
              * would discard local evidence that a cold traversal can still establish before its descendants are cut off. */
-            final MethodParameterAnalysis result = new BytecodeAnalyzer(owner, this).determineMethodParameterAnalysis(method, context);
+            final MethodParameterAnalysis result = new BytecodeAnalyzer(owner, this).determineMethodParameterAnalysis(method, context,
+               checkedExceptionType);
             if (context.cacheable) {
                parameterSummaries.put(cacheKey, new ParameterSummary(result, workBefore - context.budget.remainingWork));
             }
@@ -2933,10 +2990,112 @@ public class BytecodeAnalyzer {
       return result;
    }
 
+   /** Resolves only exception families disjoint from both RuntimeException and Error, without loading library classes. */
    @SuppressWarnings("null")
-   private List<Set<Integer>> determineGuaranteedNonNullParameters(final MethodNode method, final AbstractInsnNode[] instructions,
-         final Frame<SourceValue>[] frames, final ControlFlowAnalyzer controlFlow, final Map<AbstractInsnNode, Integer> instructionIndexes,
-         final Map<AbstractInsnNode, ParameterCheck> branchChecks, final @Nullable ParameterAnalysisContext parameterContext) {
+   private @Nullable Set<String> determineCheckedExceptionHierarchy(final String exceptionType, final ParameterAnalysisContext context) {
+      final Set<String> hierarchy = new HashSet<>();
+      String currentType = exceptionType;
+      while (hierarchy.add(currentType)) {
+         if (!context.budget.tryConsume(1)) {
+            context.cacheable = false;
+            return null;
+         }
+         if ("java/lang/RuntimeException".equals(currentType) || "java/lang/Error".equals(currentType) || "java/lang/Throwable".equals(
+            currentType) || "java/lang/Object".equals(currentType))
+            return null;
+         if ("java/lang/Exception".equals(currentType)) {
+            if (currentType.equals(exceptionType))
+               // A catch of Exception also accepts unchecked null-check failures, so it needs the original conservative rule.
+               return null;
+            hierarchy.add("java/lang/Throwable");
+            return hierarchy;
+         }
+         final ClassNode type = currentType.equals(classNode.name) ? classNode : methodSummaryResolver.resolveClass(currentType);
+         if (type == null || type.superName == null)
+            return null;
+         currentType = type.superName;
+      }
+      // A malformed cyclic hierarchy is not evidence that a handler excludes null-check failures.
+      return null;
+   }
+
+   @SuppressWarnings("null")
+   private CheckedExceptionSummary determineInstructionCheckedException(final AbstractInsnNode instruction, final String exceptionType,
+         final Frame<SourceValue>[] frames, final Map<AbstractInsnNode, Integer> instructionIndexes,
+         final Map<Integer, Integer> parameterIndexes, final ParameterAnalysisContext context) {
+      if (!(instruction instanceof MethodInsnNode))
+         /* Only calls and ATHROW can produce a checked exception. Loads, branches, field access and allocation can
+          * have unchecked/VM failures, which cannot enter a handler from the checked-only families admitted above. */
+         return instruction.getOpcode() == Opcodes.ATHROW || instruction instanceof InvokeDynamicInsnNode //
+               ? CheckedExceptionSummary.UNKNOWN
+               : CheckedExceptionSummary.IMPOSSIBLE;
+
+      final MethodInsnNode call = (MethodInsnNode) instruction;
+      if (isObjectsRequireNonNull(call) && ("(Ljava/lang/Object;)Ljava/lang/Object;".equals(call.desc)
+            || "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;".equals(call.desc)))
+         /* Extend the existing Objects intrinsic only for the overloads without callbacks. A message supplier can
+          * itself throw a checked exception through bytecode even though its Java declaration has no throws clause. */
+         return CheckedExceptionSummary.IMPOSSIBLE;
+
+      // A merged value can be non-null without requiring any one of its possible source parameters.
+      final Set<Integer> provenParameters = new HashSet<>();
+      final Frame<SourceValue> frame = frames[Objects.requireNonNull(instructionIndexes.get(instruction))];
+      if (isNullRejectingReceiverCall(call)) {
+         final SourceValue receiver = determineReceiverValue(call, frame);
+         if (receiver != null) {
+            final DependencySummary dependencies = determineDirectParameterDependencies(receiver, frames, instructionIndexes,
+               parameterIndexes, context);
+            if (dependencies.proven && dependencies.parameterIndexes.size() == 1) {
+               /* A checked exception from an instance call comes from its body: the JVM's earlier null-receiver and
+                * linkage failures are unchecked. This receiver proof is independent of the selected method body. */
+               provenParameters.addAll(dependencies.parameterIndexes);
+            }
+         }
+      }
+      if (context.remainingDepth > 0) {
+         final var childContext = new ParameterAnalysisContext(context.remainingDepth - 1, context.budget);
+         final CheckedExceptionSummary called = determineCalledMethodParameterAnalysis(call, childContext, exceptionType).checkedException;
+         context.cacheable &= childContext.cacheable;
+         if (!called.possible)
+            return CheckedExceptionSummary.IMPOSSIBLE;
+         final SourceValue[] arguments = determineArgumentValues(call, frame);
+         for (final int parameterIndex : called.nonNullParameters) {
+            final DependencySummary dependencies = determineDirectParameterDependencies(arguments[parameterIndex], frames,
+               instructionIndexes, parameterIndexes, context);
+            if (dependencies.proven && dependencies.parameterIndexes.size() == 1) {
+               provenParameters.addAll(dependencies.parameterIndexes);
+            }
+         }
+      }
+      return new CheckedExceptionSummary(true, provenParameters);
+   }
+
+   private CheckedExceptionSummary instructionCheckedException(final AbstractInsnNode instruction, final String exceptionType,
+         final Frame<SourceValue>[] frames, final Map<AbstractInsnNode, Integer> instructionIndexes,
+         final Map<Integer, Integer> parameterIndexes, final ParameterAnalysisContext context,
+         final Map<AbstractInsnNode, Map<String, CheckedExceptionSummary>> transfers) {
+      // Reusing each optional proof prevents CFG revisits from charging the same work again.
+      return transfers.computeIfAbsent(instruction, unused -> new HashMap<>()).computeIfAbsent(exceptionType,
+         unused -> determineInstructionCheckedException(instruction, exceptionType, frames, instructionIndexes, parameterIndexes, context));
+   }
+
+   @SuppressWarnings("null")
+   private static boolean isExceptionCovered(final List<TryCatchBlockNode> handlers, final int beforeIndex, final Set<String> hierarchy) {
+      for (int i = 0; i < beforeIndex; i++) {
+         final String caughtType = handlers.get(i).type;
+         if (caughtType == null || hierarchy.contains(caughtType))
+            return true;
+      }
+      // A narrower catch covers only part of this family. Keeping the remaining possibility is conservative.
+      return false;
+   }
+
+   @SuppressWarnings("null")
+   private NonNullParameterFacts determineGuaranteedNonNullParameters(final MethodNode method, final Frame<SourceValue>[] frames,
+         final ControlFlowAnalyzer controlFlow, final Map<AbstractInsnNode, Integer> instructionIndexes,
+         final Map<AbstractInsnNode, ParameterCheck> branchChecks, final @Nullable ParameterAnalysisContext parameterContext,
+         final @Nullable String checkedExceptionType) {
+      final AbstractInsnNode[] instructions = method.instructions.toArray();
       final Map<Integer, Integer> referenceParameterIndexesByLocalSlot = determineReferenceParameterIndexesByLocalSlot(method);
       // The context selects parameter evidence as well as its recursion budget; return analysis supplies no context.
       final boolean inferParameterContracts = parameterContext != null;
@@ -2944,10 +3103,10 @@ public class BytecodeAnalyzer {
       for (int i = 0; i < instructions.length; i++) {
          states.add(Set.of());
       }
-      if (instructions.length == 0)
-         return states;
-
       final boolean[] reached = new boolean[instructions.length];
+      if (instructions.length == 0)
+         return new NonNullParameterFacts(states, reached, CheckedExceptionSummary.UNKNOWN);
+
       final Deque<Integer> pendingInstructions = new ArrayDeque<>();
       final Set<AbstractInsnNode> instructionsProtectedByNullPointerExceptionHandler = inferParameterContracts
             ? determineInstructionsProtectedByNullPointerExceptionHandler(method)
@@ -2958,6 +3117,28 @@ public class BytecodeAnalyzer {
       final Map<AbstractInsnNode, DependencySummary> localChecks = parameterContext == null ? Map.of()
             : determineLocalParameterChecks(method, instructions, frames, instructionIndexes,
                instructionsProtectedByNullPointerExceptionHandler, parameterContext);
+      final Map<TryCatchBlockNode, Set<String>> checkedHandlers = new IdentityHashMap<>();
+      final Map<Integer, List<TryCatchBlockNode>> handlersAtInstruction = new HashMap<>();
+      if (parameterContext != null) {
+         for (final TryCatchBlockNode handler : method.tryCatchBlocks) {
+            final Set<String> hierarchy = handler.type == null ? null : determineCheckedExceptionHierarchy(handler.type, parameterContext);
+            if (hierarchy != null) {
+               checkedHandlers.put(handler, hierarchy);
+            }
+            /* ASM has already validated the handler labels, and the index contains every instruction. Preserve table
+             * order and catch-all entries because an earlier broad catch can shadow a later checked catch. */
+            final int startIndex = Objects.requireNonNull(instructionIndexes.get(handler.start));
+            final int endIndex = Objects.requireNonNull(instructionIndexes.get(handler.end));
+            for (int i = startIndex; i < endIndex; i++) {
+               handlersAtInstruction.computeIfAbsent(i, unused -> new ArrayList<>()).add(handler);
+            }
+         }
+      }
+      final Set<String> escapingHierarchy = checkedExceptionType == null || parameterContext == null ? null
+            : determineCheckedExceptionHierarchy(checkedExceptionType, parameterContext);
+      CheckedExceptionSummary checkedExit = escapingHierarchy == null ? CheckedExceptionSummary.UNKNOWN
+            : CheckedExceptionSummary.IMPOSSIBLE;
+      final Map<AbstractInsnNode, Map<String, CheckedExceptionSummary>> checkedTransfers = new IdentityHashMap<>();
       reached[0] = true;
       pendingInstructions.add(0);
 
@@ -2985,7 +3166,11 @@ public class BytecodeAnalyzer {
                      final DependencySummary dependencies = determineDirectParameterDependencies(arguments[argumentIndex], frames,
                         instructionIndexes, referenceParameterIndexesByLocalSlot, parameterContext);
                      if (dependencies.proven && dependencies.parameterIndexes.size() == 1) {
-                        callerParametersByArgument.put(argumentIndex, dependencies.parameterIndexes.iterator().next());
+                        final int callerParameter = dependencies.parameterIndexes.iterator().next();
+                        // A redundant normal-return proof can exhaust the allowance needed to qualify other inputs.
+                        if (!normalCompletionState.contains(callerParameter)) {
+                           callerParametersByArgument.put(argumentIndex, callerParameter);
+                        }
                      }
                   }
                   // Resolve a helper only when one of its arguments can establish an original caller-parameter fact.
@@ -3038,18 +3223,66 @@ public class BytecodeAnalyzer {
             }
             mergeGuaranteedNonNullParameters(states, reached, pendingInstructions, successor, outgoingState);
          }
-         for (final int successor : controlFlow.exceptionSuccessors.get(instructionIndex)) {
-            /* A call may throw before its receiver or arguments are checked. New facts belong only to normal completion;
-             * handlers retain the incoming facts even when the helper rejects null with an exception other than NPE. */
-            mergeGuaranteedNonNullParameters(states, reached, pendingInstructions, successor, incomingState);
+         if (parameterContext == null) {
+            for (final int successor : controlFlow.exceptionSuccessors.get(instructionIndex)) {
+               // Return dependencies retain their existing evidence boundary; these additional proofs qualify parameters only.
+               mergeGuaranteedNonNullParameters(states, reached, pendingInstructions, successor, incomingState);
+            }
+            continue;
+         }
+         /* A possible checked exit retains every parameter guarantee when all inputs were non-null before this call.
+          * Keep simple opcode proofs and queries for helpers with no reference parameters to prove unreachable handlers.
+          * This fallback stays outside the transfer cache: a later join can remove incoming facts and need the full proof. */
+         final boolean skipDelegatedExceptionProof = instruction instanceof MethodInsnNode && !referenceParameterIndexesByLocalSlot
+            .isEmpty() && incomingState.containsAll(referenceParameterIndexesByLocalSlot.values());
+         final List<TryCatchBlockNode> handlers = handlersAtInstruction.getOrDefault(instructionIndex, List.of());
+         for (int handlerIndex = 0; handlerIndex < handlers.size(); handlerIndex++) {
+            final TryCatchBlockNode handler = handlers.get(handlerIndex);
+            if (!controlFlow.exceptionSuccessors.get(instructionIndex).contains(instructionIndexes.get(handler.handler))) {
+               continue;
+            }
+            final Set<String> hierarchy = checkedHandlers.get(handler);
+            Set<Integer> exceptionalState = incomingState;
+            if (hierarchy != null) {
+               if (isExceptionCovered(handlers, handlerIndex, hierarchy)) {
+                  continue;
+               }
+               final CheckedExceptionSummary transfer = skipDelegatedExceptionProof ? CheckedExceptionSummary.UNKNOWN
+                     : instructionCheckedException(instruction, handler.type, frames, instructionIndexes,
+                        referenceParameterIndexesByLocalSlot, parameterContext, checkedTransfers);
+               if (!transfer.possible) {
+                  continue;
+               }
+               exceptionalState = addDependencies(incomingState, transfer.nonNullParameters);
+            }
+            /* Normal-completion requirements must not leak here. A helper can throw before checking its arguments;
+             * only its proof for this particular checked-exception family can add facts on the exceptional edge. */
+            mergeGuaranteedNonNullParameters(states, reached, pendingInstructions, Objects.requireNonNull(instructionIndexes.get(
+               handler.handler)), exceptionalState);
+         }
+         if (escapingHierarchy != null && checkedExceptionType != null && !isExceptionCovered(handlers, handlers.size(),
+            escapingHierarchy)) {
+            final CheckedExceptionSummary transfer = skipDelegatedExceptionProof ? CheckedExceptionSummary.UNKNOWN
+                  : instructionCheckedException(instruction, checkedExceptionType, frames, instructionIndexes,
+                     referenceParameterIndexesByLocalSlot, parameterContext, checkedTransfers);
+            if (transfer.possible) {
+               checkedExit = checkedExit.merge(new CheckedExceptionSummary(true, addDependencies(incomingState,
+                  transfer.nonNullParameters)));
+            }
          }
       }
-      return states;
+      return new NonNullParameterFacts(states, reached, checkedExit);
    }
 
    @SuppressWarnings("null")
    private MethodAnalysis analyzeMethod(final MethodNode method, final ReturnFlowFacts returnFlowFacts,
          final @Nullable ParameterAnalysisContext parameterContext) throws AnalyzerException {
+      return analyzeMethod(method, returnFlowFacts, parameterContext, null);
+   }
+
+   @SuppressWarnings("null")
+   private MethodAnalysis analyzeMethod(final MethodNode method, final ReturnFlowFacts returnFlowFacts,
+         final @Nullable ParameterAnalysisContext parameterContext, final @Nullable String checkedExceptionType) throws AnalyzerException {
       final AbstractInsnNode[] instructions = method.instructions.toArray();
       final var controlFlow = new ControlFlowAnalyzer(instructions, this::isProvenNonReturningCall);
       final Frame<SourceValue>[] frames = controlFlow.analyze(classNode.name, method);
@@ -3065,13 +3298,13 @@ public class BytecodeAnalyzer {
          branchChecks);
       /* Parameter requirements and return dependencies use different evidence. In particular, delegated parameter
        * requirements must not silently broaden return inference, and the native arraycopy intrinsic remains return-only. */
-      final List<Set<Integer>> guaranteedNonNullParameters = determineGuaranteedNonNullParameters(method, instructions, frames, controlFlow,
-         instructionIndexes, branchChecks, parameterContext);
+      final NonNullParameterFacts nonNullFacts = determineGuaranteedNonNullParameters(method, frames, controlFlow, instructionIndexes,
+         branchChecks, parameterContext, checkedExceptionType);
       final Set<Integer> definitelyNullableParameters = parameterContext != null ? determineDefinitelyNullableParameters(instructions,
          controlFlow, instructionIndexes, branchChecks) //
             : Set.of();
       return new MethodAnalysis(instructions, frames, instructionIndexes, parameterIndexes, new ParameterFlowFacts(guaranteedNullParameters,
-         guaranteedNonNullParameters, definitelyNullableParameters), returnFlowFacts);
+         nonNullFacts, definitelyNullableParameters), returnFlowFacts);
    }
 
    private DependencySummary determineMethodDependencySummary(final MethodNode method) {
@@ -3602,6 +3835,12 @@ public class BytecodeAnalyzer {
    @SuppressWarnings("null")
    private MethodParameterAnalysis determineCalledMethodParameterAnalysis(final MethodInsnNode call,
          final ParameterAnalysisContext context) {
+      return determineCalledMethodParameterAnalysis(call, context, null);
+   }
+
+   @SuppressWarnings("null")
+   private MethodParameterAnalysis determineCalledMethodParameterAnalysis(final MethodInsnNode call, final ParameterAnalysisContext context,
+         final @Nullable String checkedExceptionType) {
       final ClassNode owner = call.owner.equals(classNode.name) ? classNode : methodSummaryResolver.resolveClass(call.owner);
       if (owner == null)
          return MethodParameterAnalysis.EMPTY;
@@ -3614,13 +3853,15 @@ public class BytecodeAnalyzer {
          return MethodParameterAnalysis.EMPTY;
 
       // Eligibility is a call-site property and must be checked even when the declared body's summary is already cached.
-      return methodSummaryResolver.determineParameterSummary(owner, method, context);
+      return methodSummaryResolver.determineParameterSummary(owner, method, context, checkedExceptionType);
    }
 
    @SuppressWarnings({"null", "unused"})
-   private MethodParameterAnalysis determineMethodParameterAnalysis(final MethodNode methodNode, final ParameterAnalysisContext context) {
-      if ((methodNode.access & (Opcodes.ACC_ABSTRACT | Opcodes.ACC_NATIVE)) != 0 || determineReferenceParameterIndexesByLocalSlot(
-         methodNode).isEmpty())
+   private MethodParameterAnalysis determineMethodParameterAnalysis(final MethodNode methodNode, final ParameterAnalysisContext context,
+         final @Nullable String checkedExceptionType) {
+      // A helper with no reference parameters can still prove that a checked-exception handler is unreachable.
+      if ((methodNode.access & (Opcodes.ACC_ABSTRACT | Opcodes.ACC_NATIVE)) != 0 || checkedExceptionType == null
+            && determineReferenceParameterIndexesByLocalSlot(methodNode).isEmpty())
          return MethodParameterAnalysis.EMPTY;
       if (!isWithinAnalysisBudget(methodNode)) {
          logAnalysisBudgetExceeded(classNode.name, methodNode);
@@ -3628,11 +3869,12 @@ public class BytecodeAnalyzer {
       }
 
       try {
-         final MethodAnalysis analysis = analyzeMethod(methodNode, ReturnFlowFacts.UNKNOWN, context);
+         final MethodAnalysis analysis = analyzeMethod(methodNode, ReturnFlowFacts.UNKNOWN, context, checkedExceptionType);
          @Nullable
          Set<Integer> definitelyNonNullParameters = null;
          for (int i = 0; i < analysis.instructions.length; i++) {
-            if (!isReachableFrame(analysis.frames[i]) || !isNormalReturnInstruction(analysis.instructions[i].getOpcode())) {
+            if (!analysis.nonNullFacts.reached[i] || !isReachableFrame(analysis.frames[i]) || !isNormalReturnInstruction(
+               analysis.instructions[i].getOpcode())) {
                continue;
             }
 
@@ -3644,9 +3886,9 @@ public class BytecodeAnalyzer {
             }
          }
 
-         // An always-throwing method supplies no successful execution from which to infer a caller-facing contract.
+         // An always-throwing method has no caller-facing contract, but its checked exits can still inform a caller's catch.
          if (definitelyNonNullParameters == null)
-            return MethodParameterAnalysis.EMPTY;
+            return new MethodParameterAnalysis(Set.of(), Set.of(), analysis.nonNullFacts.checkedException);
 
          final Set<Integer> definitelyNullableParameters = new HashSet<>(analysis.definitelyNullableParameters);
          final Set<Integer> conflictingParameters = new HashSet<>(definitelyNullableParameters);
@@ -3655,7 +3897,8 @@ public class BytecodeAnalyzer {
           * either caller-facing contract and makes the anomaly local to the affected parameter. */
          definitelyNullableParameters.removeAll(conflictingParameters);
          definitelyNonNullParameters.removeAll(conflictingParameters);
-         return new MethodParameterAnalysis(definitelyNullableParameters, definitelyNonNullParameters);
+         return new MethodParameterAnalysis(definitelyNullableParameters, definitelyNonNullParameters,
+            analysis.nonNullFacts.checkedException);
       } catch (final AnalyzerException ex) {
          // Parameter inference contributes only positive evidence; unsupported bytecode leaves every parameter unknown.
          System.getLogger(BytecodeAnalyzer.class.getName()).log(System.Logger.Level.WARNING, "Failed to analyze parameter nullness of "

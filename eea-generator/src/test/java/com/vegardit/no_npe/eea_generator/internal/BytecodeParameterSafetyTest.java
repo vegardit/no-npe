@@ -7,13 +7,19 @@ package com.vegardit.no_npe.eea_generator.internal;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.Objects;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
+import java.util.logging.StreamHandler;
 import java.util.stream.Stream;
 
 import org.eclipse.jdt.annotation.Nullable;
@@ -60,6 +66,8 @@ class BytecodeParameterSafetyTest {
           * shared allowance is exhausted, while the wrapper's independent receiver check must survive. This checks
           * the fallback contract without depending on machine speed or leaving a timed-out analysis running. */
          assertRequirements(analyzer, classInfo, "withLocalFact", 1);
+         // An expensive helper for an already checked input must leave room for the other input's delegated proof.
+         assertRequirements(analyzer, classInfo, "withAlreadyProvenFact", 0, 1);
          assertRequirements(analyzer, classInfo, "warmLeaf", 0);
          // A fresh root gets a new allowance, but a warmed leaf cannot bypass an exhausted caller's allowance.
          assertRequirements(analyzer, classInfo, "withLocalFact", 1);
@@ -90,7 +98,34 @@ class BytecodeParameterSafetyTest {
             assertRequirements(analyzer, classInfo, "partial", 0, 1);
             assertRequirements(analyzer, classInfo, "step0");
             assertRequirements(analyzer, classInfo, "withLocalFact", 1);
+            assertRequirements(analyzer, classInfo, "withAlreadyProvenFact", 0, 1);
          }
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testAlreadyKnownCheckedExitFactsKeepBudget(@TempDir final Path directory) throws IOException {
+      final String owner = "test/CheckedExitWork";
+      writeClass(directory, owner, createBranchingHelpers(owner, false));
+      try (ScanResult scan = new ClassGraph().enableAllInfo().enableSystemJarsAndModules().overrideClasspath(directory.toString())
+         .acceptClasses(owner.replace('/', '.')).scan()) {
+         final ClassInfo classInfo = scan.getClassInfo(owner.replace('/', '.'));
+         final var analyzer = new BytecodeAnalyzer(classInfo, new BytecodeAnalyzer.StaticFieldResolver(scan));
+         // The warning is the observable regression; a timing threshold would depend on the build machine.
+         final var warnings = new ByteArrayOutputStream();
+         final var handler = new StreamHandler(warnings, new SimpleFormatter());
+         handler.setEncoding(StandardCharsets.UTF_8.name());
+         handler.setLevel(Level.WARNING);
+         final var logger = Logger.getLogger(BytecodeAnalyzer.class.getName());
+         logger.addHandler(handler);
+         try {
+            assertRequirements(analyzer, classInfo, "withAlreadyProvenCheckedFact", 0);
+         } finally {
+            logger.removeHandler(handler);
+            handler.close();
+         }
+         assertThat(warnings.toString(StandardCharsets.UTF_8)).isEmpty();
       }
    }
 
@@ -277,10 +312,10 @@ class BytecodeParameterSafetyTest {
             final var analyzer = new BytecodeAnalyzer(classInfo, new BytecodeAnalyzer.StaticFieldResolver(scan));
             /* Each helper fits separately, but repeated local walks must consume the shared allowance even when a
              * cycle prevents summary caching. Both the helper's late local check and the root's local check survive;
-             * only the late delegated proof is optional. */
-            assertRequirements(analyzer, classInfo, "expensive", 0, 2, 3);
+             * only the late delegated proof is optional. Distinct inputs keep all three helper calls relevant. */
+            assertRequirements(analyzer, classInfo, "expensive", 0, 2, 3, 4);
             assertRequirements(analyzer, classInfo, "warm", 0);
-            assertRequirements(analyzer, classInfo, "expensive", 0, 2, 3);
+            assertRequirements(analyzer, classInfo, "expensive", 0, 2, 3, 4);
          }
       }
    }
@@ -329,10 +364,11 @@ class BytecodeParameterSafetyTest {
       helper.visitEnd();
 
       final var root = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "expensive",
-         "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V", null, null);
+         "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V", null, null);
       root.visitCode();
       for (int call = 0; call < 3; call++) {
-         root.visitVarInsn(Opcodes.ALOAD, 0);
+         // The second call must qualify a new input; repeating the first proof is now correctly skipped.
+         root.visitVarInsn(Opcodes.ALOAD, call == 1 ? 4 : 0);
          if (call == 2) {
             // Earlier calls must not supply this fact, or the third helper's local fallback would go untested.
             root.visitVarInsn(Opcodes.ALOAD, 2);
@@ -511,6 +547,45 @@ class BytecodeParameterSafetyTest {
       local.visitInsn(Opcodes.RETURN);
       local.visitMaxs(0, 0);
       local.visitEnd();
+
+      final var alreadyProven = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "withAlreadyProvenFact", localDescriptor, null,
+         null);
+      alreadyProven.visitCode();
+      alreadyProven.visitVarInsn(Opcodes.ALOAD, 0);
+      alreadyProven.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
+      alreadyProven.visitInsn(Opcodes.POP);
+      alreadyProven.visitVarInsn(Opcodes.ALOAD, 0);
+      alreadyProven.visitInsn(Opcodes.ICONST_1);
+      alreadyProven.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "step0", descriptor, false);
+      alreadyProven.visitVarInsn(Opcodes.ALOAD, 1);
+      alreadyProven.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "leaf", "(Ljava/lang/Object;)V", false);
+      alreadyProven.visitInsn(Opcodes.RETURN);
+      alreadyProven.visitMaxs(0, 0);
+      alreadyProven.visitEnd();
+
+      final var checked = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "withAlreadyProvenCheckedFact",
+         "(Ljava/lang/Object;)V", null, null);
+      final var start = new Label();
+      final var end = new Label();
+      final var handler = new Label();
+      final var done = new Label();
+      checked.visitTryCatchBlock(start, end, handler, "java/io/IOException");
+      checked.visitCode();
+      checked.visitVarInsn(Opcodes.ALOAD, 0);
+      checked.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
+      checked.visitInsn(Opcodes.POP);
+      checked.visitLabel(start);
+      checked.visitVarInsn(Opcodes.ALOAD, 0);
+      checked.visitInsn(Opcodes.ICONST_1);
+      checked.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "step0", descriptor, false);
+      checked.visitLabel(end);
+      checked.visitJumpInsn(Opcodes.GOTO, done);
+      checked.visitLabel(handler);
+      checked.visitInsn(Opcodes.POP);
+      checked.visitLabel(done);
+      checked.visitInsn(Opcodes.RETURN);
+      checked.visitMaxs(0, 0);
+      checked.visitEnd();
       writer.visitEnd();
       return Objects.requireNonNull(writer.toByteArray());
    }
