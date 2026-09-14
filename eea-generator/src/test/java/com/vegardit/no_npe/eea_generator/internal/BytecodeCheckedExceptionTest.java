@@ -57,6 +57,20 @@ class BytecodeCheckedExceptionTest {
          // The body is intentionally empty so its bytecode proves the absence of checked exits.
       }
 
+      @SuppressWarnings("unused") // A constant argument creates an empty parameter request, while reachability still needs proof.
+      static void noCheckedFailure(final Object ignored) throws IOException {
+         // An unused declared parameter must not prevent the same checked-exit proof as the zero-argument helper.
+      }
+
+      static Object impossibleParameterizedHandler(final Object value) {
+         try {
+            noCheckedFailure("constant");
+         } catch (final IOException ex) {
+            return value;
+         }
+         return Objects.requireNonNull(value);
+      }
+
       static Object impossibleHandler(final Object value) {
          try {
             noCheckedFailure();
@@ -182,6 +196,7 @@ class BytecodeCheckedExceptionTest {
          assertRequirements(analyzer, info, "aliasedReturn", 0);
          assertRequirements(analyzer, info, "receiverReturn", 0);
          assertRequirements(analyzer, info, "impossibleHandler", 0);
+         assertRequirements(analyzer, info, "impossibleParameterizedHandler", 0);
          assertRequirements(analyzer, info, "ambiguousReturn");
          assertRequirements(analyzer, info, "failureBeforeCheck");
          assertRequirements(analyzer, info, "catchesNullFailure");
@@ -296,6 +311,71 @@ class BytecodeCheckedExceptionTest {
          assertRequirements(analyzer, info, "shadowed", 0);
          assertRequirements(analyzer, info, "catchAllFirst", 0);
          assertRequirements(analyzer, info, "narrowFirst");
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testCheckedRequestsAfterControlFlowJoin(@TempDir final Path directory) throws IOException {
+      final String owner = "test/CheckedRequestJoin";
+      final var writer = new ClassWriter(ClassWriter.COMPUTE_FRAMES | ClassWriter.COMPUTE_MAXS);
+      writer.visit(Opcodes.V11, Opcodes.ACC_PUBLIC | Opcodes.ACC_FINAL, owner, null, "java/lang/Object", null);
+      writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC | Opcodes.ACC_NATIVE, "checkedWork", "()V", null, null).visitEnd();
+      final String helperDescriptor = "(Ljava/lang/Object;Ljava/lang/Object;)V";
+      final var helper = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "checkBoth", helperDescriptor, null, null);
+      helper.visitCode();
+      for (int parameter = 0; parameter < 2; parameter++) {
+         helper.visitVarInsn(Opcodes.ALOAD, parameter);
+         helper.visitMethodInsn(Opcodes.INVOKESTATIC, "java/util/Objects", "requireNonNull", "(Ljava/lang/Object;)Ljava/lang/Object;",
+            false);
+         helper.visitInsn(Opcodes.POP);
+      }
+      helper.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "checkedWork", "()V", false);
+      helper.visitInsn(Opcodes.RETURN);
+      helper.visitMaxs(0, 0);
+      helper.visitEnd();
+
+      final var method = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "joined", "(Ljava/lang/Object;Ljava/lang/Object;Z)V",
+         null, null);
+      final var slow = new Label();
+      final var start = new Label();
+      final var end = new Label();
+      final var handler = new Label();
+      final var done = new Label();
+      method.visitTryCatchBlock(start, end, handler, "java/io/IOException");
+      method.visitCode();
+      method.visitVarInsn(Opcodes.ILOAD, 2);
+      method.visitJumpInsn(Opcodes.IFEQ, slow);
+      method.visitVarInsn(Opcodes.ALOAD, 0);
+      method.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
+      method.visitInsn(Opcodes.POP);
+      method.visitJumpInsn(Opcodes.GOTO, start);
+      method.visitLabel(slow);
+      /* Reach the common call first with input 0 known, then revisit without that fact. The second checked transfer
+       * must request both inputs instead of reusing the first visit's narrower cached transfer. */
+      for (int padding = 0; padding < 32; padding++) {
+         method.visitInsn(Opcodes.NOP);
+      }
+      method.visitLabel(start);
+      method.visitVarInsn(Opcodes.ALOAD, 0);
+      method.visitVarInsn(Opcodes.ALOAD, 1);
+      method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "checkBoth", helperDescriptor, false);
+      method.visitLabel(end);
+      method.visitJumpInsn(Opcodes.GOTO, done);
+      method.visitLabel(handler);
+      method.visitInsn(Opcodes.POP);
+      method.visitLabel(done);
+      method.visitInsn(Opcodes.RETURN);
+      method.visitMaxs(0, 0);
+      method.visitEnd();
+      writer.visitEnd();
+      final Path classFile = directory.resolve(owner + ".class");
+      Files.createDirectories(classFile.getParent());
+      Files.write(classFile, writer.toByteArray());
+      try (ScanResult scan = new ClassGraph().enableAllInfo().enableSystemJarsAndModules().overrideClasspath(directory.toString())
+         .acceptClasses(owner.replace('/', '.')).scan()) {
+         final ClassInfo info = scan.getClassInfo(owner.replace('/', '.'));
+         assertRequirements(new BytecodeAnalyzer(info, new BytecodeAnalyzer.StaticFieldResolver(scan)), info, "joined", 0, 1);
       }
    }
 

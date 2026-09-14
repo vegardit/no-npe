@@ -34,7 +34,7 @@ import io.github.classgraph.ClassInfo;
 import io.github.classgraph.ScanResult;
 
 /**
- * Verifies parameter-proof work accounting, shared local provenance, and the actual superclass dispatch boundary.
+ * Verifies requested parameter proofs, work accounting, shared local provenance, and the actual superclass dispatch boundary.
  *
  * @author Vegard IT GmbH (https://vegardit.com) and contributors
  */
@@ -88,14 +88,14 @@ class BytecodeParameterSafetyTest {
                assertRequirements(analyzer, classInfo, "warm", 0);
                assertRequirements(analyzer, classInfo, "warmLocal", 0, 1);
             }
-            // A cached suffix that no longer fits still has a local check that cold, limited analysis would retain.
-            assertRequirements(analyzer, classInfo, "partial", 0, 1);
+            // The prefix uses a distinct input so the suffix still requests both inputs and exercises cached-cost fallback.
+            assertRequirements(analyzer, classInfo, "partial", 1, 2);
             /* A single suffix fits, but its two uses exceed the root allowance. Cached proofs must carry their work
              * cost or this result would change with analysis order even though the bytecode is identical. */
             assertRequirements(analyzer, classInfo, "step0");
             assertRequirements(analyzer, classInfo, "warm", 0);
             assertRequirements(analyzer, classInfo, "warmLocal", 0, 1);
-            assertRequirements(analyzer, classInfo, "partial", 0, 1);
+            assertRequirements(analyzer, classInfo, "partial", 1, 2);
             assertRequirements(analyzer, classInfo, "step0");
             assertRequirements(analyzer, classInfo, "withLocalFact", 1);
             assertRequirements(analyzer, classInfo, "withAlreadyProvenFact", 0, 1);
@@ -112,21 +112,69 @@ class BytecodeParameterSafetyTest {
          .acceptClasses(owner.replace('/', '.')).scan()) {
          final ClassInfo classInfo = scan.getClassInfo(owner.replace('/', '.'));
          final var analyzer = new BytecodeAnalyzer(classInfo, new BytecodeAnalyzer.StaticFieldResolver(scan));
-         // The warning is the observable regression; a timing threshold would depend on the build machine.
-         final var warnings = new ByteArrayOutputStream();
-         final var handler = new StreamHandler(warnings, new SimpleFormatter());
-         handler.setEncoding(StandardCharsets.UTF_8.name());
-         handler.setLevel(Level.WARNING);
-         final var logger = Logger.getLogger(BytecodeAnalyzer.class.getName());
-         logger.addHandler(handler);
-         try {
-            assertRequirements(analyzer, classInfo, "withAlreadyProvenCheckedFact", 0);
-         } finally {
-            logger.removeHandler(handler);
-            handler.close();
-         }
-         assertThat(warnings.toString(StandardCharsets.UTF_8)).isEmpty();
+         // A later delegated proof must survive; quiet logs alone no longer demonstrate that redundant work was avoided.
+         assertThat(captureWarnings(() -> assertRequirements(analyzer, classInfo, "checkedThenCheck", 0, 1))).isEmpty();
       }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testRequestedParametersAndCacheWarmth(@TempDir final Path directory) throws IOException {
+      final String owner = "test/RequestedParameterWork";
+      writeClass(directory, owner, createBranchingHelpers(owner, false));
+      try (ScanResult scan = new ClassGraph().enableAllInfo().enableSystemJarsAndModules().overrideClasspath(directory.toString())
+         .acceptClasses(owner.replace('/', '.')).scan()) {
+         final ClassInfo info = scan.getClassInfo(owner.replace('/', '.'));
+         for (final boolean warmFirst : new boolean[] {false, true}) {
+            final var analyzer = new BytecodeAnalyzer(info, new BytecodeAnalyzer.StaticFieldResolver(scan));
+            if (warmFirst) {
+               assertRequirements(analyzer, info, "secondRequested", 0, 1);
+            }
+            /* Both wrappers query the same helper at the same depth. Its cheap second-input proof must neither spend
+             * the first-input budget nor let a warmed subset bypass that budget on a later first-input request. */
+            assertRequirements(analyzer, info, "firstRequested");
+            assertRequirements(analyzer, info, "secondRequested", 0, 1);
+            assertRequirements(analyzer, info, "firstRequested");
+            assertRequirements(analyzer, info, "checkedSecondRequested", 0, 1);
+            assertRequirements(analyzer, info, "receiverThenCheck", 0, 1);
+            assertRequirements(analyzer, info, "checkedReachabilityThenCheck", 0);
+         }
+      }
+   }
+
+   @Test
+   @SuppressWarnings("null")
+   void testCutoffWarningsRequireUnfinishedContracts(@TempDir final Path directory) throws IOException {
+      final String owner = "test/ParameterCutoffWarnings";
+      writeClass(directory, owner, createBranchingHelpers(owner, false));
+      try (ScanResult scan = new ClassGraph().enableAllInfo().overrideClasspath(directory.toString()).acceptClasses(owner.replace('/', '.'))
+         .scan()) {
+         final ClassInfo info = scan.getClassInfo(owner.replace('/', '.'));
+         final var analyzer = new BytecodeAnalyzer(info, new BytecodeAnalyzer.StaticFieldResolver(scan));
+         /* Every fixture exhausts optional work. Completed non-null or nullable contracts need no warning, while
+          * an unresolved sibling must still expose the cutoff instead of silently losing evidence. */
+         assertThat(captureWarnings(() -> assertRequirements(analyzer, info, "completeAfterBudget", 0))).isEmpty();
+         assertThat(captureWarnings(() -> assertThat(analyzer.determineDefinitelyNullableMethodParameters(info.getMethodInfo(
+            "nullableAfterBudget").get(0))).containsExactly(0))).isEmpty();
+         assertThat(captureWarnings(() -> assertRequirements(analyzer, info, "withLocalFact", 1))).contains(
+            "Skipping optional delegated parameter evidence of " + owner + ".withLocalFact");
+      }
+   }
+
+   private static String captureWarnings(final Runnable action) throws IOException {
+      final var warnings = new ByteArrayOutputStream();
+      final var handler = new StreamHandler(warnings, new SimpleFormatter());
+      handler.setEncoding(StandardCharsets.UTF_8.name());
+      handler.setLevel(Level.WARNING);
+      final var logger = Logger.getLogger(BytecodeAnalyzer.class.getName());
+      logger.addHandler(handler);
+      try {
+         action.run();
+      } finally {
+         logger.removeHandler(handler);
+         handler.close();
+      }
+      return warnings.toString(StandardCharsets.UTF_8);
    }
 
    @Test
@@ -516,12 +564,13 @@ class BytecodeParameterSafetyTest {
       localSuffix.visitMaxs(0, 0);
       localSuffix.visitEnd();
       for (final boolean partial : new boolean[] {false, true}) {
-         final var caller = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, partial ? "partial" : "warmLocal", localDescriptor,
-            null, null);
+         final var caller = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, partial ? "partial" : "warmLocal", partial
+               ? "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V"
+               : localDescriptor, null, null);
          caller.visitCode();
          if (partial) {
-            // Spend most of the allowance before the same localSuffix call site, keeping its remaining depth identical.
-            caller.visitVarInsn(Opcodes.ALOAD, 0);
+            // A distinct input spends the prefix allowance without shrinking the suffix's two-input request.
+            caller.visitVarInsn(Opcodes.ALOAD, 2);
             caller.visitInsn(Opcodes.ICONST_1);
             caller.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "step1", descriptor, false);
          }
@@ -586,8 +635,196 @@ class BytecodeParameterSafetyTest {
       checked.visitInsn(Opcodes.RETURN);
       checked.visitMaxs(0, 0);
       checked.visitEnd();
+      writeRequestedParameterFixtures(writer, owner);
       writer.visitEnd();
       return Objects.requireNonNull(writer.toByteArray());
+   }
+
+   private static void writeRequestedParameterFixtures(final ClassWriter writer, final String owner) {
+      final String pairDescriptor = "(Ljava/lang/Object;Ljava/lang/Object;)V";
+      final String stepDescriptor = "(Ljava/lang/Object;I)V";
+      // Proving the absence of checked exits requires both branches at every level and exceeds the shared allowance.
+      for (int step = 0; step < 21; step++) {
+         final var method = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "pureStep" + step, "()V", null, null);
+         method.visitCode();
+         if (step < 20) {
+            final var alternative = new Label();
+            final var done = new Label();
+            method.visitInsn(Opcodes.ICONST_0);
+            method.visitJumpInsn(Opcodes.IFEQ, alternative);
+            method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "pureStep" + (step + 1), "()V", false);
+            method.visitJumpInsn(Opcodes.GOTO, done);
+            method.visitLabel(alternative);
+            method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "pureStep" + (step + 1), "()V", false);
+            method.visitLabel(done);
+         }
+         method.visitInsn(Opcodes.RETURN);
+         method.visitMaxs(0, 0);
+         method.visitEnd();
+      }
+      writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC | Opcodes.ACC_NATIVE, "checkedWork", "()V", null, null).visitEnd();
+      for (final boolean checked : new boolean[] {false, true}) {
+         final var helper = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, checked ? "selectiveChecked" : "selective",
+            pairDescriptor, null, null);
+         helper.visitCode();
+         if (checked) {
+            // Validate before the expensive branch so every checked exit retains the requested second input.
+            helper.visitVarInsn(Opcodes.ALOAD, 1);
+            helper.visitMethodInsn(Opcodes.INVOKESTATIC, "java/util/Objects", "requireNonNull", "(Ljava/lang/Object;)Ljava/lang/Object;",
+               false);
+            helper.visitInsn(Opcodes.POP);
+         }
+         helper.visitVarInsn(Opcodes.ALOAD, 0);
+         helper.visitInsn(Opcodes.ICONST_1);
+         helper.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "step0", stepDescriptor, false);
+         if (checked) {
+            helper.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "checkedWork", "()V", false);
+         } else {
+            helper.visitVarInsn(Opcodes.ALOAD, 1);
+            helper.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "leaf", "(Ljava/lang/Object;)V", false);
+         }
+         helper.visitInsn(Opcodes.RETURN);
+         helper.visitMaxs(0, 0);
+         helper.visitEnd();
+      }
+      for (final String variant : new String[] {"firstRequested", "secondRequested", "checkedSecondRequested"}) {
+         final boolean first = "firstRequested".equals(variant);
+         final boolean checked = "checkedSecondRequested".equals(variant);
+         final var method = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, variant, pairDescriptor, null, null);
+         final var start = new Label();
+         final var end = new Label();
+         final var handler = new Label();
+         final var done = new Label();
+         if (checked) {
+            method.visitTryCatchBlock(start, end, handler, "java/io/IOException");
+         }
+         method.visitCode();
+         method.visitLabel(start);
+         for (int argument = 0; argument < 2; argument++) {
+            if (first == (argument == 0)) {
+               method.visitVarInsn(Opcodes.ALOAD, 0);
+            } else {
+               // This argument belongs to the helper, but cannot establish a requirement for an original caller input.
+               method.visitTypeInsn(Opcodes.NEW, "java/lang/Object");
+               method.visitInsn(Opcodes.DUP);
+               method.visitMethodInsn(Opcodes.INVOKESPECIAL, "java/lang/Object", "<init>", "()V", false);
+            }
+         }
+         method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, checked ? "selectiveChecked" : "selective", pairDescriptor, false);
+         method.visitLabel(end);
+         if (checked) {
+            method.visitJumpInsn(Opcodes.GOTO, done);
+            method.visitLabel(handler);
+            method.visitInsn(Opcodes.POP);
+         }
+         method.visitLabel(done);
+         method.visitVarInsn(Opcodes.ALOAD, 1);
+         method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "leaf", "(Ljava/lang/Object;)V", false);
+         method.visitInsn(Opcodes.RETURN);
+         method.visitMaxs(0, 0);
+         method.visitEnd();
+      }
+
+      final var receiverWork = writer.visitMethod(Opcodes.ACC_PUBLIC, "receiverWork", "()V", null, null);
+      receiverWork.visitCode();
+      receiverWork.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "pureStep0", "()V", false);
+      receiverWork.visitInsn(Opcodes.RETURN);
+      receiverWork.visitMaxs(0, 0);
+      receiverWork.visitEnd();
+      final String receiverDescriptor = "(L" + owner + ";)V";
+      final var receiver = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "receiverChecked", receiverDescriptor, null, null);
+      final var start = new Label();
+      final var end = new Label();
+      final var handler = new Label();
+      final var done = new Label();
+      receiver.visitTryCatchBlock(start, end, handler, "java/io/IOException");
+      receiver.visitCode();
+      receiver.visitLabel(start);
+      receiver.visitVarInsn(Opcodes.ALOAD, 0);
+      receiver.visitMethodInsn(Opcodes.INVOKEVIRTUAL, owner, "receiverWork", "()V", false);
+      receiver.visitLabel(end);
+      receiver.visitJumpInsn(Opcodes.GOTO, done);
+      receiver.visitLabel(handler);
+      receiver.visitInsn(Opcodes.POP);
+      receiver.visitLabel(done);
+      receiver.visitInsn(Opcodes.RETURN);
+      receiver.visitMaxs(0, 0);
+      receiver.visitEnd();
+      final var unknown = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "unknownThenExpensive", "()V", null, null);
+      unknown.visitCode();
+      unknown.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "checkedWork", "()V", false);
+      unknown.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "pureStep0", "()V", false);
+      unknown.visitInsn(Opcodes.RETURN);
+      unknown.visitMaxs(0, 0);
+      unknown.visitEnd();
+      final var reachability = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, "checkedReachabilityThenCheck",
+         "(Ljava/lang/Object;)V", null, null);
+      final var queryStart = new Label();
+      final var queryEnd = new Label();
+      final var queryHandler = new Label();
+      final var queryDone = new Label();
+      reachability.visitTryCatchBlock(queryStart, queryEnd, queryHandler, "java/io/IOException");
+      reachability.visitCode();
+      reachability.visitLabel(queryStart);
+      reachability.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "unknownThenExpensive", "()V", false);
+      reachability.visitLabel(queryEnd);
+      reachability.visitJumpInsn(Opcodes.GOTO, queryDone);
+      reachability.visitLabel(queryHandler);
+      reachability.visitInsn(Opcodes.POP);
+      reachability.visitLabel(queryDone);
+      // A possible checked exit already answers the empty request; later helper traversal would hide this caller proof.
+      reachability.visitVarInsn(Opcodes.ALOAD, 0);
+      reachability.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "leaf", "(Ljava/lang/Object;)V", false);
+      reachability.visitInsn(Opcodes.RETURN);
+      reachability.visitMaxs(0, 0);
+      reachability.visitEnd();
+      for (final boolean receiverCall : new boolean[] {false, true}) {
+         final var method = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, receiverCall ? "receiverThenCheck"
+               : "checkedThenCheck", receiverCall ? "(L" + owner + ";Ljava/lang/Object;)V" : pairDescriptor, null, null);
+         method.visitCode();
+         method.visitVarInsn(Opcodes.ALOAD, 0);
+         method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, receiverCall ? "receiverChecked" : "withAlreadyProvenCheckedFact", receiverCall
+               ? receiverDescriptor
+               : "(Ljava/lang/Object;)V", false);
+         // A later proof makes redundant checked-exit traversal observable even if the inner root's warnings are suppressed.
+         method.visitVarInsn(Opcodes.ALOAD, 1);
+         method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "leaf", "(Ljava/lang/Object;)V", false);
+         method.visitInsn(Opcodes.RETURN);
+         method.visitMaxs(0, 0);
+         method.visitEnd();
+      }
+
+      for (final boolean nullable : new boolean[] {false, true}) {
+         final var method = writer.visitMethod(Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC, nullable ? "nullableAfterBudget"
+               : "completeAfterBudget", "(Ljava/lang/Object;)V", null, null);
+         method.visitCode();
+         if (nullable) {
+            final var nonNull = new Label();
+            method.visitVarInsn(Opcodes.ALOAD, 0);
+            method.visitJumpInsn(Opcodes.IFNONNULL, nonNull);
+            method.visitInsn(Opcodes.RETURN);
+            method.visitLabel(nonNull);
+            method.visitVarInsn(Opcodes.ALOAD, 0);
+            method.visitVarInsn(Opcodes.ASTORE, 1);
+            // Mandatory local provenance still exhausts the allowance despite the entry guard's completed nullable contract.
+            for (int alias = 0; alias < 1_000; alias++) {
+               method.visitVarInsn(Opcodes.ALOAD, 1);
+               method.visitVarInsn(Opcodes.ASTORE, 1);
+            }
+         } else {
+            method.visitVarInsn(Opcodes.ALOAD, 0);
+            method.visitInsn(Opcodes.ICONST_1);
+            method.visitMethodInsn(Opcodes.INVOKESTATIC, owner, "step0", stepDescriptor, false);
+         }
+         for (int check = 0; check < (nullable ? 1_000 : 1); check++) {
+            method.visitVarInsn(Opcodes.ALOAD, nullable ? 1 : 0);
+            method.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/lang/Object", "hashCode", "()I", false);
+            method.visitInsn(Opcodes.POP);
+         }
+         method.visitInsn(Opcodes.RETURN);
+         method.visitMaxs(0, 0);
+         method.visitEnd();
+      }
    }
 
    private static byte[] createRepeatedArgumentCalls(final String owner, final boolean parameterSource) {

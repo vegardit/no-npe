@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.eclipse.jdt.annotation.NonNull;
 import org.eclipse.jdt.annotation.NonNullByDefault;
@@ -761,22 +762,24 @@ public class BytecodeAnalyzer {
    }
 
    /**
-    * Carries recursion depth and a shared work allowance, keeping traversal-limited results out of reusable summaries.
+    * Carries the requested parameter facts and shared traversal limits, keeping partial proofs out of reusable summaries.
     */
    private static final class ParameterAnalysisContext {
       final int remainingDepth;
       final AnalysisWorkBudget budget;
+      final Set<Integer> requestedParameters;
       boolean cacheable = true;
 
-      ParameterAnalysisContext(final int remainingDepth, final AnalysisWorkBudget budget) {
+      ParameterAnalysisContext(final int remainingDepth, final AnalysisWorkBudget budget, final Set<Integer> requestedParameters) {
          // Parameter recursion must not consume the depth budget used to establish non-returning calls or return values.
          this.remainingDepth = remainingDepth;
          this.budget = budget;
+         this.requestedParameters = Set.copyOf(requestedParameters);
       }
    }
 
    /**
-    * Retains a complete parameter proof and its logical work cost so cache warmth cannot expand a caller's allowance.
+    * Retains a completed request and its logical work cost so cache warmth cannot expand a caller's allowance.
     */
    private static final class ParameterSummary {
       final MethodParameterAnalysis analysis;
@@ -996,9 +999,10 @@ public class BytecodeAnalyzer {
             /* At the depth boundary, skipped descendants can hide a cycle to a future caller. Retain local facts for
              * this traversal, but do not let that partial proof or its ancestors bypass the cycle check in a later run. */
             context.cacheable &= context.remainingDepth > 0;
-            /* Depth is part of the proof's inputs. A summary computed near a root cannot authorize a deeper call that
-             * would exhaust its budget without that cached result. */
-            final String cacheKey = key + '\0' + context.remainingDepth;
+            /* Depth and requested inputs select the proof and its cost. A cheap subset must not stand in for another
+             * request. Sorting makes the key independent of set iteration order. Keep subsets out of the active-cycle
+             * key above so changing requests cannot bypass recursion limits. */
+            final String cacheKey = key + '\0' + context.remainingDepth + '\0' + new TreeSet<>(context.requestedParameters);
             final ParameterSummary cached = parameterSummaries.get(cacheKey);
             if (cached != null && cached.work <= context.budget.remainingWork) {
                // Replay the complete cost, including descendants, instead of letting a cache hit authorize extra proof.
@@ -3020,9 +3024,32 @@ public class BytecodeAnalyzer {
    }
 
    @SuppressWarnings("null")
+   private static Map<Integer, Integer> determineRequestedParameterArguments(final MethodInsnNode call, final Frame<SourceValue>[] frames,
+         final Map<AbstractInsnNode, Integer> instructionIndexes, final Map<Integer, Integer> parameterIndexes,
+         final ParameterAnalysisContext context, final Set<Integer> requestedParameters, final Set<Integer> knownParameters) {
+      // Redundant argument walks and helper proofs can consume the allowance needed to qualify another caller input.
+      if (knownParameters.containsAll(requestedParameters))
+         return Map.of();
+      final SourceValue[] arguments = determineArgumentValues(call, frames[Objects.requireNonNull(instructionIndexes.get(call))]);
+      final Map<Integer, Integer> callerParametersByArgument = new HashMap<>();
+      for (int argumentIndex = 0; argumentIndex < arguments.length; argumentIndex++) {
+         final DependencySummary dependencies = determineDirectParameterDependencies(arguments[argumentIndex], frames, instructionIndexes,
+            parameterIndexes, context);
+         // A requirement on a derived or ambiguous argument does not prove a requirement on an individual input.
+         if (dependencies.proven && dependencies.parameterIndexes.size() == 1) {
+            final int callerParameter = dependencies.parameterIndexes.iterator().next();
+            if (requestedParameters.contains(callerParameter) && !knownParameters.contains(callerParameter)) {
+               callerParametersByArgument.put(argumentIndex, callerParameter);
+            }
+         }
+      }
+      return callerParametersByArgument;
+   }
+
+   @SuppressWarnings("null")
    private CheckedExceptionSummary determineInstructionCheckedException(final AbstractInsnNode instruction, final String exceptionType,
          final Frame<SourceValue>[] frames, final Map<AbstractInsnNode, Integer> instructionIndexes,
-         final Map<Integer, Integer> parameterIndexes, final ParameterAnalysisContext context) {
+         final Map<Integer, Integer> parameterIndexes, final ParameterAnalysisContext context, final Set<Integer> requestedParameters) {
       if (!(instruction instanceof MethodInsnNode))
          /* Only calls and ATHROW can produce a checked exception. Loads, branches, field access and allocation can
           * have unchecked/VM failures, which cannot enter a handler from the checked-only families admitted above. */
@@ -3039,8 +3066,8 @@ public class BytecodeAnalyzer {
 
       // A merged value can be non-null without requiring any one of its possible source parameters.
       final Set<Integer> provenParameters = new HashSet<>();
-      final Frame<SourceValue> frame = frames[Objects.requireNonNull(instructionIndexes.get(instruction))];
       if (isNullRejectingReceiverCall(call)) {
+         final Frame<SourceValue> frame = frames[Objects.requireNonNull(instructionIndexes.get(instruction))];
          final SourceValue receiver = determineReceiverValue(call, frame);
          if (receiver != null) {
             final DependencySummary dependencies = determineDirectParameterDependencies(receiver, frames, instructionIndexes,
@@ -3052,31 +3079,49 @@ public class BytecodeAnalyzer {
             }
          }
       }
+      /* The receiver can finish the requested proof before the body is analyzed. Keep the checked exit possible;
+       * an empty request still asks whether that exit is impossible and must not take this shortcut. */
+      if (!requestedParameters.isEmpty() && provenParameters.containsAll(requestedParameters))
+         return new CheckedExceptionSummary(true, provenParameters);
       if (context.remainingDepth > 0) {
-         final var childContext = new ParameterAnalysisContext(context.remainingDepth - 1, context.budget);
+         final Map<Integer, Integer> callerParametersByArgument = determineRequestedParameterArguments(call, frames, instructionIndexes,
+            parameterIndexes, context, requestedParameters, provenParameters);
+         // Even without transferable arguments, the helper can prove a checked-exception handler unreachable.
+         final var childContext = new ParameterAnalysisContext(context.remainingDepth - 1, context.budget, callerParametersByArgument
+            .keySet());
          final CheckedExceptionSummary called = determineCalledMethodParameterAnalysis(call, childContext, exceptionType).checkedException;
          context.cacheable &= childContext.cacheable;
          if (!called.possible)
             return CheckedExceptionSummary.IMPOSSIBLE;
-         final SourceValue[] arguments = determineArgumentValues(call, frame);
          for (final int parameterIndex : called.nonNullParameters) {
-            final DependencySummary dependencies = determineDirectParameterDependencies(arguments[parameterIndex], frames,
-               instructionIndexes, parameterIndexes, context);
-            if (dependencies.proven && dependencies.parameterIndexes.size() == 1) {
-               provenParameters.addAll(dependencies.parameterIndexes);
+            final Integer callerParameter = callerParametersByArgument.get(parameterIndex);
+            if (callerParameter != null) {
+               provenParameters.add(callerParameter);
             }
          }
       }
       return new CheckedExceptionSummary(true, provenParameters);
    }
 
+   // Incoming facts vary by CFG visit; the other arguments describe the fixed proof inputs and its cache.
+   // CHECKSTYLE:IGNORE ParameterNumber FOR NEXT 4 LINES
    private CheckedExceptionSummary instructionCheckedException(final AbstractInsnNode instruction, final String exceptionType,
          final Frame<SourceValue>[] frames, final Map<AbstractInsnNode, Integer> instructionIndexes,
-         final Map<Integer, Integer> parameterIndexes, final ParameterAnalysisContext context,
+         final Map<Integer, Integer> parameterIndexes, final ParameterAnalysisContext context, final Set<Integer> incomingState,
          final Map<AbstractInsnNode, Map<String, CheckedExceptionSummary>> transfers) {
-      // Reusing each optional proof prevents CFG revisits from charging the same work again.
-      return transfers.computeIfAbsent(instruction, unused -> new HashMap<>()).computeIfAbsent(exceptionType,
-         unused -> determineInstructionCheckedException(instruction, exceptionType, frames, instructionIndexes, parameterIndexes, context));
+      /* A possible checked exit preserves facts established before the call. Keep this fallback outside the cache,
+       * and retain opcode proofs and empty requests that can establish an unreachable checked-exception handler. */
+      if (instruction instanceof MethodInsnNode && !context.requestedParameters.isEmpty() && incomingState.containsAll(
+         context.requestedParameters))
+         return CheckedExceptionSummary.UNKNOWN;
+      final Set<Integer> requestedParameters = new HashSet<>(context.requestedParameters);
+      requestedParameters.removeAll(incomingState);
+      /* A later CFG join can remove incoming facts and require more from this same instruction. Sort the missing
+       * facts for a stable request key; a cached subset must not hide evidence needed by the later visit. */
+      final String key = exceptionType + '\0' + new TreeSet<>(requestedParameters);
+      return transfers.computeIfAbsent(instruction, unused -> new HashMap<>()).computeIfAbsent(key,
+         unused -> determineInstructionCheckedException(instruction, exceptionType, frames, instructionIndexes, parameterIndexes, context,
+            requestedParameters));
    }
 
    @SuppressWarnings("null")
@@ -3159,23 +3204,13 @@ public class BytecodeAnalyzer {
             final Set<Integer> provenParameters = new HashSet<>();
             if (inferParameterContracts && !instructionsProtectedByNullPointerExceptionHandler.contains(instruction)) {
                if (parameterContext != null && parameterContext.remainingDepth > 0) {
-                  final SourceValue[] arguments = determineArgumentValues(call, frames[instructionIndex]);
-                  final Map<Integer, Integer> callerParametersByArgument = new HashMap<>();
-                  // A requirement on a derived or ambiguous argument does not prove a requirement on an individual input.
-                  for (int argumentIndex = 0; argumentIndex < arguments.length; argumentIndex++) {
-                     final DependencySummary dependencies = determineDirectParameterDependencies(arguments[argumentIndex], frames,
-                        instructionIndexes, referenceParameterIndexesByLocalSlot, parameterContext);
-                     if (dependencies.proven && dependencies.parameterIndexes.size() == 1) {
-                        final int callerParameter = dependencies.parameterIndexes.iterator().next();
-                        // A redundant normal-return proof can exhaust the allowance needed to qualify other inputs.
-                        if (!normalCompletionState.contains(callerParameter)) {
-                           callerParametersByArgument.put(argumentIndex, callerParameter);
-                        }
-                     }
-                  }
+                  final Map<Integer, Integer> callerParametersByArgument = determineRequestedParameterArguments(call, frames,
+                     instructionIndexes, referenceParameterIndexesByLocalSlot, parameterContext, parameterContext.requestedParameters,
+                     normalCompletionState);
                   // Resolve a helper only when one of its arguments can establish an original caller-parameter fact.
                   if (!callerParametersByArgument.isEmpty()) {
-                     final var childContext = new ParameterAnalysisContext(parameterContext.remainingDepth - 1, parameterContext.budget);
+                     final var childContext = new ParameterAnalysisContext(parameterContext.remainingDepth - 1, parameterContext.budget,
+                        callerParametersByArgument.keySet());
                      final MethodParameterAnalysis calledAnalysis = determineCalledMethodParameterAnalysis(call, childContext);
                      /* Keep independent local facts, but propagate traversal limits through every caller so a partial
                       * result cannot become reusable merely because the cycle, depth, or work cutoff occurred several calls below. */
@@ -3230,11 +3265,6 @@ public class BytecodeAnalyzer {
             }
             continue;
          }
-         /* A possible checked exit retains every parameter guarantee when all inputs were non-null before this call.
-          * Keep simple opcode proofs and queries for helpers with no reference parameters to prove unreachable handlers.
-          * This fallback stays outside the transfer cache: a later join can remove incoming facts and need the full proof. */
-         final boolean skipDelegatedExceptionProof = instruction instanceof MethodInsnNode && !referenceParameterIndexesByLocalSlot
-            .isEmpty() && incomingState.containsAll(referenceParameterIndexesByLocalSlot.values());
          final List<TryCatchBlockNode> handlers = handlersAtInstruction.getOrDefault(instructionIndex, List.of());
          for (int handlerIndex = 0; handlerIndex < handlers.size(); handlerIndex++) {
             final TryCatchBlockNode handler = handlers.get(handlerIndex);
@@ -3247,9 +3277,8 @@ public class BytecodeAnalyzer {
                if (isExceptionCovered(handlers, handlerIndex, hierarchy)) {
                   continue;
                }
-               final CheckedExceptionSummary transfer = skipDelegatedExceptionProof ? CheckedExceptionSummary.UNKNOWN
-                     : instructionCheckedException(instruction, handler.type, frames, instructionIndexes,
-                        referenceParameterIndexesByLocalSlot, parameterContext, checkedTransfers);
+               final CheckedExceptionSummary transfer = instructionCheckedException(instruction, handler.type, frames, instructionIndexes,
+                  referenceParameterIndexesByLocalSlot, parameterContext, incomingState, checkedTransfers);
                if (!transfer.possible) {
                   continue;
                }
@@ -3262,12 +3291,15 @@ public class BytecodeAnalyzer {
          }
          if (escapingHierarchy != null && checkedExceptionType != null && !isExceptionCovered(handlers, handlers.size(),
             escapingHierarchy)) {
-            final CheckedExceptionSummary transfer = skipDelegatedExceptionProof ? CheckedExceptionSummary.UNKNOWN
-                  : instructionCheckedException(instruction, checkedExceptionType, frames, instructionIndexes,
-                     referenceParameterIndexesByLocalSlot, parameterContext, checkedTransfers);
+            final CheckedExceptionSummary transfer = instructionCheckedException(instruction, checkedExceptionType, frames,
+               instructionIndexes, referenceParameterIndexesByLocalSlot, parameterContext, incomingState, checkedTransfers);
             if (transfer.possible) {
                checkedExit = checkedExit.merge(new CheckedExceptionSummary(true, addDependencies(incomingState,
                   transfer.nonNullParameters)));
+               /* Exit guarantees can only shrink as more paths join. Once none of the requested facts survive,
+                * further traversal cannot improve this checked proof. An empty request finishes at the first possible exit. */
+               if (Collections.disjoint(checkedExit.nonNullParameters, parameterContext.requestedParameters))
+                  return new NonNullParameterFacts(states, reached, CheckedExceptionSummary.UNKNOWN);
             }
          }
       }
@@ -3820,10 +3852,13 @@ public class BytecodeAnalyzer {
       final MethodNode methodNode = findMethodNode(methodName, methodDescriptor);
       if (methodNode == null)
          return MethodParameterAnalysis.EMPTY;
+      final Set<Integer> requestedParameters = Set.copyOf(determineReferenceParameterIndexesByLocalSlot(methodNode).values());
       final var budget = new AnalysisWorkBudget(MAX_PARAMETER_ANALYSIS_WORK);
       final var result = methodSummaryResolver.determineParameterSummary(classNode, methodNode, new ParameterAnalysisContext(
-         MAX_METHOD_SUMMARY_DEPTH, budget));
-      if (budget.exceeded) {
+         MAX_METHOD_SUMMARY_DEPTH, budget, requestedParameters));
+      // An inner cutoff can leave the root fully qualified by independent facts; warn only about unfinished parameter contracts.
+      if (budget.exceeded && requestedParameters.stream().anyMatch(parameter -> !result.definitelyNonNullParameterIndexes.contains(
+         parameter) && !result.definitelyNullableParameterIndexes.contains(parameter))) {
          // Report once per root, rather than once for every sibling skipped after the common allowance is exhausted.
          System.getLogger(BytecodeAnalyzer.class.getName()).log(System.Logger.Level.WARNING,
             "Skipping optional delegated parameter evidence of {0}.{1}{2}: cumulative analysis work exceeded {3}", classNode.name,
@@ -3859,9 +3894,9 @@ public class BytecodeAnalyzer {
    @SuppressWarnings({"null", "unused"})
    private MethodParameterAnalysis determineMethodParameterAnalysis(final MethodNode methodNode, final ParameterAnalysisContext context,
          final @Nullable String checkedExceptionType) {
-      // A helper with no reference parameters can still prove that a checked-exception handler is unreachable.
+      // An empty parameter request can still prove that a checked-exception handler is unreachable.
       if ((methodNode.access & (Opcodes.ACC_ABSTRACT | Opcodes.ACC_NATIVE)) != 0 || checkedExceptionType == null
-            && determineReferenceParameterIndexesByLocalSlot(methodNode).isEmpty())
+            && context.requestedParameters.isEmpty())
          return MethodParameterAnalysis.EMPTY;
       if (!isWithinAnalysisBudget(methodNode)) {
          logAnalysisBudgetExceeded(classNode.name, methodNode);
@@ -3870,6 +3905,9 @@ public class BytecodeAnalyzer {
 
       try {
          final MethodAnalysis analysis = analyzeMethod(methodNode, ReturnFlowFacts.UNKNOWN, context, checkedExceptionType);
+         // A checked-only query can finish before normal flow converges; never publish its partial normal-return facts.
+         if (checkedExceptionType != null)
+            return new MethodParameterAnalysis(Set.of(), Set.of(), analysis.nonNullFacts.checkedException);
          @Nullable
          Set<Integer> definitelyNonNullParameters = null;
          for (int i = 0; i < analysis.instructions.length; i++) {
@@ -3886,9 +3924,9 @@ public class BytecodeAnalyzer {
             }
          }
 
-         // An always-throwing method has no caller-facing contract, but its checked exits can still inform a caller's catch.
+         // Without a reachable normal return there is no caller-facing parameter contract.
          if (definitelyNonNullParameters == null)
-            return new MethodParameterAnalysis(Set.of(), Set.of(), analysis.nonNullFacts.checkedException);
+            return MethodParameterAnalysis.EMPTY;
 
          final Set<Integer> definitelyNullableParameters = new HashSet<>(analysis.definitelyNullableParameters);
          final Set<Integer> conflictingParameters = new HashSet<>(definitelyNullableParameters);

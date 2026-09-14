@@ -745,13 +745,18 @@ The proofs have these boundaries:
   Failed proofs also consume this allowance.
   Each admitted method computes its local checks once before traversing helpers.
   Those local checks finish even if they exhaust the allowance, so independent local facts survive the cutoff.
-  A helper's normal-return summary is requested only when it can establish a requirement for an input not already known
-  to be non-null on that edge.
-  Checked-exit helper traversal can also stop once every input is non-null before the call.
-  That conservative fallback keeps the exit possible and is separate from cached exception proofs.
-  Exhaustion skips further helper proofs and logs one warning for that root.
+  Helpers are asked only about arguments that can establish a still-needed requirement for an original caller input.
+  Checked-exit helper traversal can also stop once incoming facts and the call's receiver check cover the requested inputs.
+  These conservative fallbacks keep the exit possible.
+  A checked-exit query with no requested parameters still analyzes whether the exit is impossible.
+  Checked-exit queries stop once possible exits leave no requested guarantee; further paths cannot improve that proof.
+  They do not publish normal-return facts from their potentially unfinished control-flow traversal.
+  Exhaustion skips further helper proofs and logs one warning for the root if any reference parameter remains unqualified.
+  Independent non-null and nullable proofs can finish the root's contracts despite an inner cutoff.
 - Cached summaries distinguish normal completion from each queried checked-exception family.
-  They preserve the remaining depth budget and consume the same work allowance as uncached proofs.
+  They preserve the requested parameter subset and remaining depth budget, and consume the same work allowance as uncached
+  proofs.
+  Checked-exit transfers also distinguish the facts still needed at each control-flow visit.
   Results that encounter a cycle or reach a depth or work cutoff are not reused.
   A cutoff can hide a cycle, so reusing its partial proof could change contracts with cache warmth.
 
