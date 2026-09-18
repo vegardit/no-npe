@@ -1,0 +1,16 @@
+class tools/jackson/databind/ext/sql/JavaSqlTimeSerializer
+
+super tools/jackson/databind/ser/std/StdScalarSerializer
+ <Ljava/sql/Time;>
+ <Ljava/sql/Time;>
+
+instance
+ Ltools/jackson/databind/ext/sql/JavaSqlTimeSerializer;
+ L1tools/jackson/databind/ext/sql/JavaSqlTimeSerializer; # @Generated
+
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdScalarSerializer)
+serialize
+ (Ljava/sql/Time;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1java/sql/Time;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2,17)

@@ -1,0 +1,25 @@
+class tools/jackson/databind/deser/jdk/StringDeserializer
+
+super tools/jackson/databind/deser/std/StdScalarDeserializer
+ <Ljava/lang/String;>
+ <Ljava/lang/String;>
+
+instance
+ Ltools/jackson/databind/deser/jdk/StringDeserializer;
+ L1tools/jackson/databind/deser/jdk/StringDeserializer; # @Generated
+
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/lang/String;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/lang/String; # @Generated(2)
+deserializeWithType
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/String;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/String;
+getEmptyValue
+ (Ltools/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Ltools/jackson/databind/DeserializationContext;)L1java/lang/Object; # @Generated(50)
+getNullValue
+ (Ltools/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Ltools/jackson/databind/DeserializationContext;)L0java/lang/Object; # @Inherited(tools.jackson.databind.ValueDeserializer)
+logicalType
+ ()Ltools/jackson/databind/type/LogicalType;
+ ()L1tools/jackson/databind/type/LogicalType; # @Inherited(tools.jackson.databind.deser.std.StdScalarDeserializer)

@@ -1,0 +1,30 @@
+class tools/jackson/databind/ext/XMLGregorianCalendarSerializer
+
+super tools/jackson/databind/ser/std/StdSerializer
+ <Ljavax/xml/datatype/XMLGregorianCalendar;>
+ <Ljavax/xml/datatype/XMLGregorianCalendar;>
+
+<init>
+ (Ltools/jackson/databind/ValueSerializer<*>;)V
+ (Ltools/jackson/databind/ValueSerializer<*>;)V
+_convert
+ (Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/util/Calendar;
+ (L0javax/xml/datatype/XMLGregorianCalendar;)L0java/util/Calendar; # @Generated(2,44)
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdSerializer)
+createContextual
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueSerializer<*>;
+ (L1tools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueSerializer<*>; # @Overrides(tools.jackson.databind.ValueSerializer)
+getDelegatee
+ ()Ltools/jackson/databind/ValueSerializer<*>;
+ ()L0tools/jackson/databind/ValueSerializer<*>; # @Inherited(tools.jackson.databind.ValueSerializer)
+isEmpty
+ (Ltools/jackson/databind/SerializationContext;Ljavax/xml/datatype/XMLGregorianCalendar;)Z
+ (Ltools/jackson/databind/SerializationContext;Ljavax/xml/datatype/XMLGregorianCalendar;)Z
+serialize
+ (Ljavax/xml/datatype/XMLGregorianCalendar;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljavax/xml/datatype/XMLGregorianCalendar;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+serializeWithType
+ (Ljavax/xml/datatype/XMLGregorianCalendar;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (Ljavax/xml/datatype/XMLGregorianCalendar;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;L1tools/jackson/databind/jsontype/TypeSerializer;)V # @Generated(122)

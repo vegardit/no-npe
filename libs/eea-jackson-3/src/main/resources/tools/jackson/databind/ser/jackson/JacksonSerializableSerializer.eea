@@ -1,0 +1,22 @@
+class tools/jackson/databind/ser/jackson/JacksonSerializableSerializer
+
+super tools/jackson/databind/ser/std/StdSerializer
+ <Ltools/jackson/databind/JacksonSerializable;>
+ <Ltools/jackson/databind/JacksonSerializable;>
+
+instance
+ Ltools/jackson/databind/ser/jackson/JacksonSerializableSerializer;
+ L1tools/jackson/databind/ser/jackson/JacksonSerializableSerializer; # @Generated
+
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdSerializer)
+isEmpty
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/JacksonSerializable;)Z
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/JacksonSerializable;)Z
+serialize
+ (Ltools/jackson/databind/JacksonSerializable;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1tools/jackson/databind/JacksonSerializable;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2)
+serializeWithType
+ (Ltools/jackson/databind/JacksonSerializable;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (L1tools/jackson/databind/JacksonSerializable;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V # @Generated(2)

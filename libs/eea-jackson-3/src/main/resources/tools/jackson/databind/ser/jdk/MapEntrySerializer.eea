@@ -1,0 +1,71 @@
+class tools/jackson/databind/ser/jdk/MapEntrySerializer
+
+super tools/jackson/databind/ser/std/StdContainerSerializer
+ <Ljava/util/Map$Entry<**>;>
+ <Ljava/util/Map$Entry<**>;>
+
+MARKER_FOR_EMPTY
+ Ljava/lang/Object;
+ Ljava/lang/Object;
+
+_entryType
+ Ltools/jackson/databind/JavaType;
+ Ltools/jackson/databind/JavaType;
+_keySerializer
+ Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+ Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+_keyType
+ Ltools/jackson/databind/JavaType;
+ Ltools/jackson/databind/JavaType;
+_suppressableValue
+ Ljava/lang/Object;
+ Ljava/lang/Object;
+_valueSerializer
+ Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+ Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+_valueType
+ Ltools/jackson/databind/JavaType;
+ Ltools/jackson/databind/JavaType;
+_valueTypeSerializer
+ Ltools/jackson/databind/jsontype/TypeSerializer;
+ Ltools/jackson/databind/jsontype/TypeSerializer;
+
+<init>
+ (Ltools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;ZLtools/jackson/databind/jsontype/TypeSerializer;Ltools/jackson/databind/BeanProperty;)V
+ (L1tools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;ZLtools/jackson/databind/jsontype/TypeSerializer;Ltools/jackson/databind/BeanProperty;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/ser/jdk/MapEntrySerializer;Ltools/jackson/databind/BeanProperty;Ltools/jackson/databind/jsontype/TypeSerializer;Ltools/jackson/databind/ValueSerializer<*>;Ltools/jackson/databind/ValueSerializer<*>;Ljava/lang/Object;Z)V
+ (L1tools/jackson/databind/ser/jdk/MapEntrySerializer;Ltools/jackson/databind/BeanProperty;Ltools/jackson/databind/jsontype/TypeSerializer;Ltools/jackson/databind/ValueSerializer<*>;Ltools/jackson/databind/ValueSerializer<*>;Ljava/lang/Object;Z)V # @Generated(2)
+_withValueTypeSerializer
+ (Ltools/jackson/databind/jsontype/TypeSerializer;)Ltools/jackson/databind/ser/std/StdContainerSerializer<*>;
+ (Ltools/jackson/databind/jsontype/TypeSerializer;)L1tools/jackson/databind/ser/std/StdContainerSerializer<*>; # @Generated(51)
+createContextual
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueSerializer<*>;
+ (L1tools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueSerializer<*>; # @Overrides(tools.jackson.databind.ValueSerializer)
+getContentSerializer
+ ()Ltools/jackson/databind/ValueSerializer<*>;
+ ()Ltools/jackson/databind/ValueSerializer<*>;
+getContentType
+ ()Ltools/jackson/databind/JavaType;
+ ()Ltools/jackson/databind/JavaType;
+hasSingleElement
+ (Ljava/util/Map$Entry<**>;)Z
+ (Ljava/util/Map$Entry<**>;)Z
+isEmpty
+ (Ltools/jackson/databind/SerializationContext;Ljava/util/Map$Entry<**>;)Z
+ (Ltools/jackson/databind/SerializationContext;L1java/util/Map$Entry<**>;)Z # @Generated(47)
+serialize
+ (Ljava/util/Map$Entry<**>;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljava/util/Map$Entry<**>;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(27)
+serializeDynamic
+ (Ljava/util/Map$Entry<**>;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1java/util/Map$Entry<**>;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2)
+serializeWithType
+ (Ljava/util/Map$Entry<**>;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (Ljava/util/Map$Entry<**>;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;L1tools/jackson/databind/jsontype/TypeSerializer;)V # @Generated(27,106)
+withContentInclusion
+ (Ljava/lang/Object;Z)Ltools/jackson/databind/ser/jdk/MapEntrySerializer;
+ (Ljava/lang/Object;Z)L1tools/jackson/databind/ser/jdk/MapEntrySerializer; # @Generated(22)
+withResolved
+ (Ltools/jackson/databind/BeanProperty;Ltools/jackson/databind/ValueSerializer<*>;Ltools/jackson/databind/ValueSerializer<*>;Ljava/lang/Object;Z)Ltools/jackson/databind/ser/jdk/MapEntrySerializer;
+ (Ltools/jackson/databind/BeanProperty;Ltools/jackson/databind/ValueSerializer<*>;Ltools/jackson/databind/ValueSerializer<*>;Ljava/lang/Object;Z)L1tools/jackson/databind/ser/jdk/MapEntrySerializer; # @Generated(145)

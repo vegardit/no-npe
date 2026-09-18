@@ -1,0 +1,15 @@
+class tools/jackson/databind/deser/jdk/AtomicBooleanDeserializer
+
+super tools/jackson/databind/deser/std/StdScalarDeserializer
+ <Ljava/util/concurrent/atomic/AtomicBoolean;>
+ <Ljava/util/concurrent/atomic/AtomicBoolean;>
+
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/util/concurrent/atomic/AtomicBoolean;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)L0java/util/concurrent/atomic/AtomicBoolean; # @Generated(2,81)
+getEmptyValue
+ (Ltools/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Ltools/jackson/databind/DeserializationContext;)L1java/lang/Object; # @Generated(50)
+logicalType
+ ()Ltools/jackson/databind/type/LogicalType;
+ ()L1tools/jackson/databind/type/LogicalType; # @Inherited(tools.jackson.databind.deser.std.StdScalarDeserializer)

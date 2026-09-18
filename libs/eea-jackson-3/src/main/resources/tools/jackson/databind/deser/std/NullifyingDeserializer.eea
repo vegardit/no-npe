@@ -1,0 +1,19 @@
+class tools/jackson/databind/deser/std/NullifyingDeserializer
+
+super tools/jackson/databind/deser/std/StdDeserializer
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
+instance
+ Ltools/jackson/databind/deser/std/NullifyingDeserializer;
+ L1tools/jackson/databind/deser/std/NullifyingDeserializer; # @Generated
+
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)L0java/lang/Object; # @Generated(2,81)
+deserializeWithType
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;L1tools/jackson/databind/jsontype/TypeDeserializer;)L0java/lang/Object; # @Overrides(tools.jackson.databind.deser.std.StdDeserializer)
+supportsUpdate
+ (Ltools/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+ (Ltools/jackson/databind/DeserializationConfig;)L1java/lang/Boolean; # @Overrides(tools.jackson.databind.ValueDeserializer)

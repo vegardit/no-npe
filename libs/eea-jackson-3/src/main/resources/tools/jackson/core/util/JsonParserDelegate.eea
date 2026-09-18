@@ -1,0 +1,150 @@
+class tools/jackson/core/util/JsonParserDelegate
+
+delegate
+ Ltools/jackson/core/JsonParser;
+ Ltools/jackson/core/JsonParser;
+
+<init>
+ (Ltools/jackson/core/JsonParser;)V
+ (Ltools/jackson/core/JsonParser;)V
+assignCurrentValue
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+currentLocation
+ ()Ltools/jackson/core/TokenStreamLocation;
+ ()Ltools/jackson/core/TokenStreamLocation;
+currentName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+currentNameMatch
+ (Ltools/jackson/core/sym/PropertyNameMatcher;)I
+ (Ltools/jackson/core/sym/PropertyNameMatcher;)I
+currentToken
+ ()Ltools/jackson/core/JsonToken;
+ ()Ltools/jackson/core/JsonToken;
+currentTokenLocation
+ ()Ltools/jackson/core/TokenStreamLocation;
+ ()Ltools/jackson/core/TokenStreamLocation;
+currentValue
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+delegate
+ ()Ltools/jackson/core/JsonParser;
+ ()Ltools/jackson/core/JsonParser;
+getBigIntegerValue
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+getBinaryValue
+ (Ltools/jackson/core/Base64Variant;)[B
+ (Ltools/jackson/core/Base64Variant;)[B
+getDecimalValue
+ ()Ljava/math/BigDecimal;
+ ()Ljava/math/BigDecimal;
+getEmbeddedObject
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getLastClearedToken
+ ()Ltools/jackson/core/JsonToken;
+ ()Ltools/jackson/core/JsonToken;
+getNumberType
+ ()Ltools/jackson/core/JsonParser$NumberType;
+ ()Ltools/jackson/core/JsonParser$NumberType;
+getNumberTypeFP
+ ()Ltools/jackson/core/JsonParser$NumberTypeFP;
+ ()Ltools/jackson/core/JsonParser$NumberTypeFP;
+getNumberValue
+ ()Ljava/lang/Number;
+ ()Ljava/lang/Number;
+getNumberValueDeferred
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getNumberValueExact
+ ()Ljava/lang/Number;
+ ()Ljava/lang/Number;
+getObjectId
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(tools.jackson.core.JsonParser)
+getSchema
+ ()Ltools/jackson/core/FormatSchema;
+ ()L0tools/jackson/core/FormatSchema; # @Inherited(tools.jackson.core.JsonParser)
+getString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getString
+ (Ljava/io/Writer;)I
+ (Ljava/io/Writer;)I
+getStringCharacters
+ ()[C
+ ()[C
+getTypeId
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(tools.jackson.core.JsonParser)
+getValueAsString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getValueAsString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+hasToken
+ (Ltools/jackson/core/JsonToken;)Z
+ (Ltools/jackson/core/JsonToken;)Z
+isEnabled
+ (Ltools/jackson/core/StreamReadFeature;)Z
+ (Ltools/jackson/core/StreamReadFeature;)Z
+nextName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+nextName
+ (Ltools/jackson/core/SerializableString;)Z
+ (Ltools/jackson/core/SerializableString;)Z
+nextNameMatch
+ (Ltools/jackson/core/sym/PropertyNameMatcher;)I
+ (Ltools/jackson/core/sym/PropertyNameMatcher;)I
+nextToken
+ ()Ltools/jackson/core/JsonToken;
+ ()Ltools/jackson/core/JsonToken;
+nextValue
+ ()Ltools/jackson/core/JsonToken;
+ ()Ltools/jackson/core/JsonToken;
+nonBlockingInputFeeder
+ ()Ltools/jackson/core/async/NonBlockingInputFeeder;
+ ()L0tools/jackson/core/async/NonBlockingInputFeeder; # @Inherited(tools.jackson.core.JsonParser)
+objectReadContext
+ ()Ltools/jackson/core/ObjectReadContext;
+ ()Ltools/jackson/core/ObjectReadContext;
+readBinaryValue
+ (Ltools/jackson/core/Base64Variant;Ljava/io/OutputStream;)I
+ (Ltools/jackson/core/Base64Variant;Ljava/io/OutputStream;)I
+readString
+ (Ljava/io/Writer;)J
+ (Ljava/io/Writer;)J
+readValueAs
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/Class<TT;>;)TT;
+readValueAs
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/type/ResolvedType;)TT;
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/type/ResolvedType;)TT;
+readValueAs
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/type/TypeReference<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/type/TypeReference<TT;>;)TT;
+readValueAsTree
+ <T::Ltools/jackson/core/TreeNode;>()TT;
+ <T::Ltools/jackson/core/TreeNode;>()TT;
+skipChildren
+ ()Ltools/jackson/core/JsonParser;
+ ()L1tools/jackson/core/JsonParser; # @Generated
+streamReadCapabilities
+ ()Ltools/jackson/core/util/JacksonFeatureSet<Ltools/jackson/core/StreamReadCapability;>;
+ ()Ltools/jackson/core/util/JacksonFeatureSet<Ltools/jackson/core/StreamReadCapability;>;
+streamReadConstraints
+ ()Ltools/jackson/core/StreamReadConstraints;
+ ()Ltools/jackson/core/StreamReadConstraints;
+streamReadContext
+ ()Ltools/jackson/core/TokenStreamContext;
+ ()Ltools/jackson/core/TokenStreamContext;
+streamReadInputSource
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+version
+ ()Ltools/jackson/core/Version;
+ ()Ltools/jackson/core/Version;

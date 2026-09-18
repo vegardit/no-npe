@@ -1,0 +1,21 @@
+class tools/jackson/databind/deser/CollectingProblemHandler
+
+getBucket
+ (Ltools/jackson/databind/DeserializationContext;)Ljava/util/List<Ltools/jackson/databind/exc/CollectedProblem;>;
+ (L1tools/jackson/databind/DeserializationContext;)L0java/util/List<Ltools/jackson/databind/exc/CollectedProblem;>; # @Generated(2,50)
+
+handleInstantiationProblem
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;
+ (L1tools/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/Object;L1java/lang/Throwable;)L0java/lang/Object; # @Overrides(tools.jackson.databind.deser.DeserializationProblemHandler)
+handleUnknownProperty
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/core/JsonParser;Ltools/jackson/databind/ValueDeserializer<*>;Ljava/lang/Object;Ljava/lang/String;)Z
+ (L1tools/jackson/databind/DeserializationContext;Ltools/jackson/core/JsonParser;Ltools/jackson/databind/ValueDeserializer<*>;Ljava/lang/Object;Ljava/lang/String;)Z # @Generated(2)
+handleWeirdKey
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
+ (L1tools/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/String;)L1java/lang/Object; # @Overrides(tools.jackson.databind.deser.DeserializationProblemHandler)
+handleWeirdNumberValue
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/Number;Ljava/lang/String;)Ljava/lang/Object;
+ (L1tools/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/Number;Ljava/lang/String;)L1java/lang/Object; # @Overrides(tools.jackson.databind.deser.DeserializationProblemHandler)
+handleWeirdStringValue
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
+ (L1tools/jackson/databind/DeserializationContext;Ljava/lang/Class<*>;Ljava/lang/String;Ljava/lang/String;)L1java/lang/Object; # @Overrides(tools.jackson.databind.deser.DeserializationProblemHandler)

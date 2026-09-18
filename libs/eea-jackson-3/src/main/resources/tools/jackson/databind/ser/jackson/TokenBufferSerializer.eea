@@ -1,0 +1,15 @@
+class tools/jackson/databind/ser/jackson/TokenBufferSerializer
+
+super tools/jackson/databind/ser/std/StdSerializer
+ <Ltools/jackson/databind/util/TokenBuffer;>
+ <Ltools/jackson/databind/util/TokenBuffer;>
+
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdSerializer)
+serialize
+ (Ltools/jackson/databind/util/TokenBuffer;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1tools/jackson/databind/util/TokenBuffer;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2)
+serializeWithType
+ (Ltools/jackson/databind/util/TokenBuffer;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (Ltools/jackson/databind/util/TokenBuffer;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;L1tools/jackson/databind/jsontype/TypeSerializer;)V # @Generated(122)

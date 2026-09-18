@@ -1,0 +1,231 @@
+class tools/jackson/databind/type/TypeFactory
+
+super tools/jackson/core/util/Snapshottable
+ <Ltools/jackson/databind/type/TypeFactory;>
+ <Ltools/jackson/databind/type/TypeFactory;>
+
+CORE_TYPE_BOOL
+ Ltools/jackson/databind/type/SimpleType;
+ L1tools/jackson/databind/type/SimpleType; # @Generated
+CORE_TYPE_COMPARABLE
+ Ltools/jackson/databind/type/SimpleType;
+ L1tools/jackson/databind/type/SimpleType; # @Generated
+CORE_TYPE_DOUBLE
+ Ltools/jackson/databind/type/SimpleType;
+ L1tools/jackson/databind/type/SimpleType; # @Generated
+CORE_TYPE_ENUM
+ Ltools/jackson/databind/type/SimpleType;
+ L1tools/jackson/databind/type/SimpleType; # @Generated
+CORE_TYPE_INT
+ Ltools/jackson/databind/type/SimpleType;
+ L1tools/jackson/databind/type/SimpleType; # @Generated
+CORE_TYPE_JSON_NODE
+ Ltools/jackson/databind/type/SimpleType;
+ L1tools/jackson/databind/type/SimpleType; # @Generated
+CORE_TYPE_LONG
+ Ltools/jackson/databind/type/SimpleType;
+ L1tools/jackson/databind/type/SimpleType; # @Generated
+CORE_TYPE_OBJECT
+ Ltools/jackson/databind/type/SimpleType;
+ L1tools/jackson/databind/type/SimpleType; # @Generated
+CORE_TYPE_STRING
+ Ltools/jackson/databind/type/SimpleType;
+ L1tools/jackson/databind/type/SimpleType; # @Generated
+EMPTY_BINDINGS
+ Ltools/jackson/databind/type/TypeBindings;
+ Ltools/jackson/databind/type/TypeBindings;
+
+_findWellKnownSimple
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType;
+ (L1java/lang/Class<*>;)L0tools/jackson/databind/JavaType; # @Generated(2,23)
+createDefaultInstance
+ ()Ltools/jackson/databind/type/TypeFactory;
+ ()L1tools/jackson/databind/type/TypeFactory; # @Generated
+rawClass
+ (Ljava/lang/reflect/Type;)Ljava/lang/Class<*>;
+ (L1java/lang/reflect/Type;)Ljava/lang/Class<*>; # @Generated(2)
+unknownType
+ ()Ltools/jackson/databind/JavaType;
+ ()L1tools/jackson/databind/JavaType; # @Generated
+unsafeSimpleType
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType;
+ (L1java/lang/Class<*>;)L1tools/jackson/databind/JavaType; # @Generated(2,23)
+
+_classLoader
+ Ljava/lang/ClassLoader;
+ Ljava/lang/ClassLoader;
+_modifiers
+ [Ltools/jackson/databind/type/TypeModifier;
+ [Ltools/jackson/databind/type/TypeModifier;
+_typeCache
+ Ltools/jackson/databind/util/LookupCache<Ljava/lang/Object;Ltools/jackson/databind/JavaType;>;
+ Ltools/jackson/databind/util/LookupCache<Ljava/lang/Object;Ltools/jackson/databind/JavaType;>;
+
+<init>
+ (Ltools/jackson/databind/util/LookupCache<Ljava/lang/Object;Ltools/jackson/databind/JavaType;>;)V
+ (L1tools/jackson/databind/util/LookupCache<Ljava/lang/Object;Ltools/jackson/databind/JavaType;>;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/util/LookupCache<Ljava/lang/Object;Ltools/jackson/databind/JavaType;>;[Ltools/jackson/databind/type/TypeModifier;Ljava/lang/ClassLoader;)V
+ (L1tools/jackson/databind/util/LookupCache<Ljava/lang/Object;Ltools/jackson/databind/JavaType;>;[Ltools/jackson/databind/type/TypeModifier;Ljava/lang/ClassLoader;)V # @Generated(2)
+_applyModifiers
+ (Ljava/lang/reflect/Type;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/reflect/Type;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType; # @Generated(PolyNull)
+_constructSimple
+ (Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/Class<*>;L1tools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType; # @Generated(22)
+_findPrimitive
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)L0java/lang/Class<*>; # @Generated(21)
+_fromAny
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/reflect/Type;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;L1java/lang/reflect/Type;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType; # @Generated(42)
+_fromArrayType
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/reflect/GenericArrayType;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;L1java/lang/reflect/GenericArrayType;Ltools/jackson/databind/type/TypeBindings;)L1tools/jackson/databind/JavaType; # @Generated(42,121)
+_fromClass
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;L1java/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType; # @Generated(42)
+_fromParamType
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/reflect/ParameterizedType;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;L1java/lang/reflect/ParameterizedType;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType; # @Generated(42)
+_fromVariable
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/reflect/TypeVariable<*>;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;L1java/lang/reflect/TypeVariable<*>;L1tools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType; # @Generated(42,77)
+_fromWellKnownClass
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[Ltools/jackson/databind/JavaType;)L0tools/jackson/databind/JavaType; # @Generated(172)
+_fromWellKnownInterface
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[1Ltools/jackson/databind/JavaType;)L0tools/jackson/databind/JavaType; # @Generated(137,172)
+_fromWildcard
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/reflect/WildcardType;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;L1java/lang/reflect/WildcardType;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType; # @Generated(42)
+_isSelfReferentialTypeParameter
+ (Ljava/lang/reflect/TypeVariable<*>;Ljava/lang/Class<*>;)Z
+ (L1java/lang/reflect/TypeVariable<*>;Ljava/lang/Class<*>;)Z # @Generated(2)
+_newSimpleType
+ (Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (L1java/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[Ltools/jackson/databind/JavaType;)L1tools/jackson/databind/JavaType; # @Generated(2,132)
+_referenceType
+ (Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (L1java/lang/Class<*>;L1tools/jackson/databind/type/TypeBindings;Ltools/jackson/databind/JavaType;[Ltools/jackson/databind/JavaType;)L1tools/jackson/databind/JavaType; # @Generated(2,22,132)
+_resolveSuperClass
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;L1java/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;)L0tools/jackson/databind/JavaType; # @Generated(42,105)
+_resolveSuperInterfaces
+ (Ltools/jackson/databind/type/ClassStack;Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;)[Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/type/ClassStack;L1java/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;)[1Ltools/jackson/databind/JavaType; # @Generated(42,105)
+_unknownType
+ ()Ltools/jackson/databind/JavaType;
+ ()L1tools/jackson/databind/JavaType; # @Generated
+classForName
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+classForName
+ (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class<*>;
+ (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class<*>;
+constructArrayType
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/type/ArrayType;
+ (Ljava/lang/Class<*>;)L1tools/jackson/databind/type/ArrayType; # @Generated(23)
+constructArrayType
+ (Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/type/ArrayType;
+ (L1tools/jackson/databind/JavaType;)L1tools/jackson/databind/type/ArrayType; # @Generated(2,36)
+constructCollectionLikeType
+ (Ljava/lang/Class<*>;Ljava/lang/Class<*>;)Ltools/jackson/databind/type/CollectionLikeType;
+ (Ljava/lang/Class<*>;Ljava/lang/Class<*>;)Ltools/jackson/databind/type/CollectionLikeType;
+constructCollectionLikeType
+ (Ljava/lang/Class<*>;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/type/CollectionLikeType;
+ (L1java/lang/Class<*>;Ltools/jackson/databind/JavaType;)L1tools/jackson/databind/type/CollectionLikeType; # @Generated(2,56)
+constructCollectionType
+ (Ljava/lang/Class<+Ljava/util/Collection;>;Ljava/lang/Class<*>;)Ltools/jackson/databind/type/CollectionType;
+ (Ljava/lang/Class<+Ljava/util/Collection;>;Ljava/lang/Class<*>;)Ltools/jackson/databind/type/CollectionType;
+constructCollectionType
+ (Ljava/lang/Class<+Ljava/util/Collection;>;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/type/CollectionType;
+ (L1java/lang/Class<+Ljava/util/Collection;>;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/type/CollectionType; # @Generated(2)
+constructFromCanonical
+ (Ljava/lang/String;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/String;)Ltools/jackson/databind/JavaType;
+constructGeneralizedType
+ (Ltools/jackson/databind/JavaType;Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType;
+ (L1tools/jackson/databind/JavaType;Ljava/lang/Class<*>;)L1tools/jackson/databind/JavaType; # @Generated(2,56)
+constructMapLikeType
+ (Ljava/lang/Class<*>;Ljava/lang/Class<*>;Ljava/lang/Class<*>;)Ltools/jackson/databind/type/MapLikeType;
+ (Ljava/lang/Class<*>;Ljava/lang/Class<*>;Ljava/lang/Class<*>;)Ltools/jackson/databind/type/MapLikeType;
+constructMapLikeType
+ (Ljava/lang/Class<*>;Ltools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/type/MapLikeType;
+ (L1java/lang/Class<*>;Ltools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;)L1tools/jackson/databind/type/MapLikeType; # @Generated(2,89)
+constructMapType
+ (Ljava/lang/Class<+Ljava/util/Map;>;Ljava/lang/Class<*>;Ljava/lang/Class<*>;)Ltools/jackson/databind/type/MapType;
+ (Ljava/lang/Class<+Ljava/util/Map;>;Ljava/lang/Class<*>;Ljava/lang/Class<*>;)Ltools/jackson/databind/type/MapType;
+constructMapType
+ (Ljava/lang/Class<+Ljava/util/Map;>;Ltools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/type/MapType;
+ (L1java/lang/Class<+Ljava/util/Map;>;Ltools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/type/MapType; # @Generated(2)
+constructParametricType
+ (Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/Class<*>;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+constructParametricType
+ (Ljava/lang/Class<*>;[Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/Class<*>;[1Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType; # @Generated(22)
+constructParametricType
+ (Ljava/lang/Class<*>;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/Class<*>;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+constructRawCollectionLikeType
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/type/CollectionLikeType;
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/type/CollectionLikeType;
+constructRawCollectionType
+ (Ljava/lang/Class<+Ljava/util/Collection;>;)Ltools/jackson/databind/type/CollectionType;
+ (Ljava/lang/Class<+Ljava/util/Collection;>;)Ltools/jackson/databind/type/CollectionType;
+constructRawMapLikeType
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/type/MapLikeType;
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/type/MapLikeType;
+constructRawMapType
+ (Ljava/lang/Class<+Ljava/util/Map;>;)Ltools/jackson/databind/type/MapType;
+ (Ljava/lang/Class<+Ljava/util/Map;>;)Ltools/jackson/databind/type/MapType;
+constructReferenceType
+ (Ljava/lang/Class<*>;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (L1java/lang/Class<*>;Ltools/jackson/databind/JavaType;)L1tools/jackson/databind/JavaType; # @Generated(2,56)
+constructSimpleType
+ (Ljava/lang/Class<*>;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/Class<*>;[Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+constructSpecializedType
+ (Ltools/jackson/databind/JavaType;Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/JavaType;Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType;
+constructSpecializedType
+ (Ltools/jackson/databind/JavaType;Ljava/lang/Class<*>;Z)Ltools/jackson/databind/JavaType;
+ (L1tools/jackson/databind/JavaType;Ljava/lang/Class<*>;Z)Ltools/jackson/databind/JavaType; # @Generated(2)
+constructType
+ (Ljava/lang/reflect/Type;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/reflect/Type;)Ltools/jackson/databind/JavaType;
+constructType
+ (Ltools/jackson/core/type/TypeReference<*>;)Ltools/jackson/databind/JavaType;
+ (L1tools/jackson/core/type/TypeReference<*>;)Ltools/jackson/databind/JavaType; # @Generated(2)
+findClass
+ (Ljava/lang/String;)Ljava/lang/Class<*>;
+ (L1java/lang/String;)Ljava/lang/Class<*>; # @Generated(2)
+findFirstTypeParameter
+ (Ltools/jackson/databind/JavaType;Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType;
+ (L1tools/jackson/databind/JavaType;Ljava/lang/Class<*>;)Ltools/jackson/databind/JavaType; # @Generated(2)
+findTypeParameters
+ (Ltools/jackson/databind/JavaType;Ljava/lang/Class<*>;)[Ltools/jackson/databind/JavaType;
+ (L1tools/jackson/databind/JavaType;Ljava/lang/Class<*>;)[Ltools/jackson/databind/JavaType; # @Generated(2)
+getClassLoader
+ ()Ljava/lang/ClassLoader;
+ ()Ljava/lang/ClassLoader;
+moreSpecificType
+ (Ltools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (L0tools/jackson/databind/JavaType;Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType; # @Generated(2,PolyNull)
+resolveMemberType
+ (Ljava/lang/reflect/Type;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+ (Ljava/lang/reflect/Type;Ltools/jackson/databind/type/TypeBindings;)Ltools/jackson/databind/JavaType;
+snapshot
+ ()Ltools/jackson/databind/type/TypeFactory;
+ ()L1tools/jackson/databind/type/TypeFactory; # @Generated
+withCache
+ (Ltools/jackson/databind/util/LookupCache<Ljava/lang/Object;Ltools/jackson/databind/JavaType;>;)Ltools/jackson/databind/type/TypeFactory;
+ (L1tools/jackson/databind/util/LookupCache<Ljava/lang/Object;Ltools/jackson/databind/JavaType;>;)L1tools/jackson/databind/type/TypeFactory; # @Generated(2,97)
+withClassLoader
+ (Ljava/lang/ClassLoader;)Ltools/jackson/databind/type/TypeFactory;
+ (Ljava/lang/ClassLoader;)L1tools/jackson/databind/type/TypeFactory; # @Generated(26)
+withModifier
+ (Ltools/jackson/databind/type/TypeModifier;)Ltools/jackson/databind/type/TypeFactory;
+ (Ltools/jackson/databind/type/TypeModifier;)L1tools/jackson/databind/type/TypeFactory; # @Generated(45)

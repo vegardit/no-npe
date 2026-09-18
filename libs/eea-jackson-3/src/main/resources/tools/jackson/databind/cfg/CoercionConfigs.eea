@@ -1,0 +1,43 @@
+class tools/jackson/databind/cfg/CoercionConfigs
+
+super tools/jackson/core/util/Snapshottable
+ <Ltools/jackson/databind/cfg/CoercionConfigs;>
+ <Ltools/jackson/databind/cfg/CoercionConfigs;>
+
+_defaultAction
+ Ltools/jackson/databind/cfg/CoercionAction;
+ Ltools/jackson/databind/cfg/CoercionAction;
+_defaultCoercions
+ Ltools/jackson/databind/cfg/MutableCoercionConfig;
+ Ltools/jackson/databind/cfg/MutableCoercionConfig;
+_perClassCoercions
+ Ljava/util/Map<Ljava/lang/Class<*>;Ltools/jackson/databind/cfg/MutableCoercionConfig;>;
+ Ljava/util/Map<Ljava/lang/Class<*>;Ltools/jackson/databind/cfg/MutableCoercionConfig;>;
+_perTypeCoercions
+ [Ltools/jackson/databind/cfg/MutableCoercionConfig;
+ [Ltools/jackson/databind/cfg/MutableCoercionConfig;
+
+<init>
+ (Ltools/jackson/databind/cfg/CoercionAction;Ltools/jackson/databind/cfg/MutableCoercionConfig;[Ltools/jackson/databind/cfg/MutableCoercionConfig;Ljava/util/Map<Ljava/lang/Class<*>;Ltools/jackson/databind/cfg/MutableCoercionConfig;>;)V
+ (Ltools/jackson/databind/cfg/CoercionAction;Ltools/jackson/databind/cfg/MutableCoercionConfig;[Ltools/jackson/databind/cfg/MutableCoercionConfig;Ljava/util/Map<Ljava/lang/Class<*>;Ltools/jackson/databind/cfg/MutableCoercionConfig;>;)V
+_isScalarType
+ (Ltools/jackson/databind/type/LogicalType;)Z
+ (Ltools/jackson/databind/type/LogicalType;)Z
+defaultCoercions
+ ()Ltools/jackson/databind/cfg/MutableCoercionConfig;
+ ()Ltools/jackson/databind/cfg/MutableCoercionConfig;
+findCoercion
+ (Ltools/jackson/databind/DeserializationConfig;Ltools/jackson/databind/type/LogicalType;Ljava/lang/Class<*>;Ltools/jackson/databind/cfg/CoercionInputShape;)Ltools/jackson/databind/cfg/CoercionAction;
+ (Ltools/jackson/databind/DeserializationConfig;Ltools/jackson/databind/type/LogicalType;Ljava/lang/Class<*>;Ltools/jackson/databind/cfg/CoercionInputShape;)Ltools/jackson/databind/cfg/CoercionAction;
+findCoercionFromBlankString
+ (Ltools/jackson/databind/DeserializationConfig;Ltools/jackson/databind/type/LogicalType;Ljava/lang/Class<*>;Ltools/jackson/databind/cfg/CoercionAction;)Ltools/jackson/databind/cfg/CoercionAction;
+ (Ltools/jackson/databind/DeserializationConfig;Ltools/jackson/databind/type/LogicalType;Ljava/lang/Class<*>;Ltools/jackson/databind/cfg/CoercionAction;)Ltools/jackson/databind/cfg/CoercionAction; # @Generated(PolyNull)
+findOrCreateCoercion
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/cfg/MutableCoercionConfig;
+ (Ljava/lang/Class<*>;)L1tools/jackson/databind/cfg/MutableCoercionConfig; # @Generated(23)
+findOrCreateCoercion
+ (Ltools/jackson/databind/type/LogicalType;)Ltools/jackson/databind/cfg/MutableCoercionConfig;
+ (L1tools/jackson/databind/type/LogicalType;)L1tools/jackson/databind/cfg/MutableCoercionConfig; # @Generated(2,44)
+snapshot
+ ()Ltools/jackson/databind/cfg/CoercionConfigs;
+ ()L1tools/jackson/databind/cfg/CoercionConfigs; # @Generated

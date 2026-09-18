@@ -1,0 +1,20 @@
+class tools/jackson/databind/ser/jackson/RawSerializer
+ <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super tools/jackson/databind/ser/std/StdSerializer
+ <TT;>
+ <TT;>
+
+<init>
+ (Ljava/lang/Class<*>;)V
+ (Ljava/lang/Class<*>;)V
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdSerializer)
+serialize
+ (TT;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (T1T;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2,5)
+serializeWithType
+ (TT;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (TT;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;L1tools/jackson/databind/jsontype/TypeSerializer;)V # @Inherited(tools.jackson.databind.ValueSerializer)

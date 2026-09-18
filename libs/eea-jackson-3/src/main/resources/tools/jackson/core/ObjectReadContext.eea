@@ -1,0 +1,51 @@
+class tools/jackson/core/ObjectReadContext
+
+empty
+ ()Ltools/jackson/core/ObjectReadContext;
+ ()Ltools/jackson/core/ObjectReadContext;
+
+createArrayNode
+ ()Ltools/jackson/core/tree/ArrayTreeNode;
+ ()Ltools/jackson/core/tree/ArrayTreeNode;
+createObjectNode
+ ()Ltools/jackson/core/tree/ObjectTreeNode;
+ ()Ltools/jackson/core/tree/ObjectTreeNode;
+createParser
+ (Ljava/io/InputStream;)Ltools/jackson/core/JsonParser;
+ (Ljava/io/InputStream;)Ltools/jackson/core/JsonParser;
+createParser
+ (Ljava/io/Reader;)Ltools/jackson/core/JsonParser;
+ (Ljava/io/Reader;)Ltools/jackson/core/JsonParser;
+createParser
+ (Ljava/lang/String;)Ltools/jackson/core/JsonParser;
+ (Ljava/lang/String;)Ltools/jackson/core/JsonParser;
+createParser
+ ([B)Ltools/jackson/core/JsonParser;
+ ([B)Ltools/jackson/core/JsonParser;
+createParser
+ ([BII)Ltools/jackson/core/JsonParser;
+ ([BII)Ltools/jackson/core/JsonParser;
+getSchema
+ ()Ltools/jackson/core/FormatSchema;
+ ()Ltools/jackson/core/FormatSchema;
+readTree
+ <T::Ltools/jackson/core/TreeNode;>(Ltools/jackson/core/JsonParser;)TT;
+ <T::Ltools/jackson/core/TreeNode;>(Ltools/jackson/core/JsonParser;)TT;
+readValue
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/JsonParser;Ljava/lang/Class<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/JsonParser;Ljava/lang/Class<TT;>;)TT;
+readValue
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/JsonParser;Ltools/jackson/core/type/ResolvedType;)TT;
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/JsonParser;Ltools/jackson/core/type/ResolvedType;)TT;
+readValue
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/JsonParser;Ltools/jackson/core/type/TypeReference<TT;>;)TT;
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/JsonParser;Ltools/jackson/core/type/TypeReference<TT;>;)TT;
+streamReadConstraints
+ ()Ltools/jackson/core/StreamReadConstraints;
+ ()Ltools/jackson/core/StreamReadConstraints;
+tokenStreamFactory
+ ()Ltools/jackson/core/TokenStreamFactory;
+ ()Ltools/jackson/core/TokenStreamFactory;
+treeAsTokens
+ (Ltools/jackson/core/TreeNode;)Ltools/jackson/core/JsonParser;
+ (L1tools/jackson/core/TreeNode;)Ltools/jackson/core/JsonParser; # @Generated(2)

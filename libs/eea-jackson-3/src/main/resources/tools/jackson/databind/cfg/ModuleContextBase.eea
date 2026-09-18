@@ -1,0 +1,129 @@
+class tools/jackson/databind/cfg/ModuleContextBase
+
+_builder
+ Ltools/jackson/databind/cfg/MapperBuilder<**>;
+ Ltools/jackson/databind/cfg/MapperBuilder<**>;
+_configOverrides
+ Ltools/jackson/databind/cfg/ConfigOverrides;
+ Ltools/jackson/databind/cfg/ConfigOverrides;
+
+<init>
+ (Ltools/jackson/databind/cfg/MapperBuilder<**>;Ltools/jackson/databind/cfg/ConfigOverrides;)V
+ (Ltools/jackson/databind/cfg/MapperBuilder<**>;Ltools/jackson/databind/cfg/ConfigOverrides;)V
+_deserializerFactory
+ ()Ltools/jackson/databind/deser/DeserializerFactory;
+ ()Ltools/jackson/databind/deser/DeserializerFactory;
+_serializerFactory
+ ()Ltools/jackson/databind/ser/SerializerFactory;
+ ()Ltools/jackson/databind/ser/SerializerFactory;
+_set
+ (Ltools/jackson/databind/deser/DeserializerFactory;)V
+ (Ltools/jackson/databind/deser/DeserializerFactory;)V
+_set
+ (Ltools/jackson/databind/ser/SerializerFactory;)V
+ (Ltools/jackson/databind/ser/SerializerFactory;)V
+_streamFactory
+ ()Ltools/jackson/core/TokenStreamFactory;
+ ()Ltools/jackson/core/TokenStreamFactory;
+addAbstractTypeResolver
+ (Ltools/jackson/databind/AbstractTypeResolver;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/AbstractTypeResolver;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(48)
+addDeserializerModifier
+ (Ltools/jackson/databind/deser/ValueDeserializerModifier;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/deser/ValueDeserializerModifier;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(59)
+addDeserializers
+ (Ltools/jackson/databind/deser/Deserializers;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/deser/Deserializers;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(47)
+addHandler
+ (Ltools/jackson/databind/deser/DeserializationProblemHandler;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/deser/DeserializationProblemHandler;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(63)
+addKeyDeserializers
+ (Ltools/jackson/databind/deser/KeyDeserializers;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/deser/KeyDeserializers;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(50)
+addKeySerializers
+ (Ltools/jackson/databind/ser/Serializers;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/ser/Serializers;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(43)
+addSerializerModifier
+ (Ltools/jackson/databind/ser/ValueSerializerModifier;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/ser/ValueSerializerModifier;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(55)
+addSerializers
+ (Ltools/jackson/databind/ser/Serializers;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/ser/Serializers;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(43)
+addTypeModifier
+ (Ltools/jackson/databind/type/TypeModifier;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/type/TypeModifier;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(45)
+addValueInstantiators
+ (Ltools/jackson/databind/deser/ValueInstantiators;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/deser/ValueInstantiators;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(52)
+appendAnnotationIntrospector
+ (Ltools/jackson/databind/AnnotationIntrospector;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/AnnotationIntrospector;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(50)
+applyChanges
+ (Ltools/jackson/databind/cfg/MapperBuilder<**>;)V
+ (Ltools/jackson/databind/cfg/MapperBuilder<**>;)V
+configOverride
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/cfg/MutableConfigOverride;
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/cfg/MutableConfigOverride;
+datatypeFeatures
+ ()Ltools/jackson/databind/cfg/DatatypeFeatures;
+ ()Ltools/jackson/databind/cfg/DatatypeFeatures;
+getFormatName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getMapperVersion
+ ()Ltools/jackson/core/Version;
+ ()Ltools/jackson/core/Version;
+getOwner
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+insertAnnotationIntrospector
+ (Ltools/jackson/databind/AnnotationIntrospector;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/AnnotationIntrospector;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(50)
+isEnabled
+ (Ltools/jackson/core/StreamReadFeature;)Z
+ (Ltools/jackson/core/StreamReadFeature;)Z
+isEnabled
+ (Ltools/jackson/core/StreamWriteFeature;)Z
+ (Ltools/jackson/core/StreamWriteFeature;)Z
+isEnabled
+ (Ltools/jackson/core/TokenStreamFactory$Feature;)Z
+ (L1tools/jackson/core/TokenStreamFactory$Feature;)Z # @Generated
+isEnabled
+ (Ltools/jackson/databind/DeserializationFeature;)Z
+ (Ltools/jackson/databind/DeserializationFeature;)Z
+isEnabled
+ (Ltools/jackson/databind/MapperFeature;)Z
+ (Ltools/jackson/databind/MapperFeature;)Z
+isEnabled
+ (Ltools/jackson/databind/SerializationFeature;)Z
+ (Ltools/jackson/databind/SerializationFeature;)Z
+isEnabled
+ (Ltools/jackson/databind/cfg/DatatypeFeature;)Z
+ (Ltools/jackson/databind/cfg/DatatypeFeature;)Z
+overrideDefaultNullKeySerializer
+ (Ltools/jackson/databind/ValueSerializer<*>;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/ValueSerializer<*>;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(46)
+overrideDefaultNullValueSerializer
+ (Ltools/jackson/databind/ValueSerializer<*>;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ltools/jackson/databind/ValueSerializer<*>;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(46)
+overrideInjectableValues
+ (Ljava/util/function/UnaryOperator<Ltools/jackson/databind/InjectableValues;>;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (L1java/util/function/UnaryOperator<Ltools/jackson/databind/InjectableValues;>;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(2,80)
+registerSubtypes
+ (Ljava/util/Collection<Ljava/lang/Class<*>;>;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ljava/util/Collection<Ljava/lang/Class<*>;>;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(47)
+registerSubtypes
+ ([Ljava/lang/Class<*>;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ ([Ljava/lang/Class<*>;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(24)
+registerSubtypes
+ ([Ltools/jackson/databind/jsontype/NamedType;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ ([Ltools/jackson/databind/jsontype/NamedType;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(47)
+setMixIn
+ (Ljava/lang/Class<*>;Ljava/lang/Class<*>;)Ltools/jackson/databind/JacksonModule$SetupContext;
+ (Ljava/lang/Class<*>;Ljava/lang/Class<*>;)L1tools/jackson/databind/JacksonModule$SetupContext; # @Generated(43)
+tokenStreamFactory
+ ()Ltools/jackson/core/TokenStreamFactory;
+ ()Ltools/jackson/core/TokenStreamFactory;
+typeFactory
+ ()Ltools/jackson/databind/type/TypeFactory;
+ ()Ltools/jackson/databind/type/TypeFactory;

@@ -1,0 +1,14 @@
+class tools/jackson/core/json/async/NonBlockingByteBufferJsonParser
+
+<init>
+ (Ltools/jackson/core/ObjectReadContext;Ltools/jackson/core/io/IOContext;IILtools/jackson/core/sym/ByteQuadsCanonicalizer;)V
+ (Ltools/jackson/core/ObjectReadContext;L1tools/jackson/core/io/IOContext;IILtools/jackson/core/sym/ByteQuadsCanonicalizer;)V # @Generated(40)
+feedInput
+ (Ljava/nio/ByteBuffer;)V
+ (L1java/nio/ByteBuffer;)V # @Generated
+nonBlockingInputFeeder
+ ()Ltools/jackson/core/async/NonBlockingInputFeeder;
+ ()L1tools/jackson/core/async/NonBlockingInputFeeder; # @Overrides(tools.jackson.core.JsonParser)
+releaseBuffered
+ (Ljava/io/OutputStream;)I
+ (Ljava/io/OutputStream;)I

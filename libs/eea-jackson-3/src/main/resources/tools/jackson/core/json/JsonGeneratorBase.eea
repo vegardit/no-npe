@@ -1,0 +1,70 @@
+class tools/jackson/core/json/JsonGeneratorBase
+
+DEFAULT_OUTPUT_ESCAPES
+ [I
+ [I
+
+_characterEscapes
+ Ltools/jackson/core/io/CharacterEscapes;
+ Ltools/jackson/core/io/CharacterEscapes;
+_outputEscapes
+ [I
+ [I
+_prettyPrinter
+ Ltools/jackson/core/PrettyPrinter;
+ Ltools/jackson/core/PrettyPrinter;
+_rootValueSeparator
+ Ltools/jackson/core/SerializableString;
+ Ltools/jackson/core/SerializableString;
+_streamWriteContext
+ Ltools/jackson/core/json/JsonWriteContext;
+ Ltools/jackson/core/json/JsonWriteContext;
+
+<init>
+ (Ltools/jackson/core/ObjectWriteContext;Ltools/jackson/core/io/IOContext;IILtools/jackson/core/SerializableString;Ltools/jackson/core/PrettyPrinter;Ltools/jackson/core/io/CharacterEscapes;I)V
+ (Ltools/jackson/core/ObjectWriteContext;L1tools/jackson/core/io/IOContext;IILtools/jackson/core/SerializableString;Ltools/jackson/core/PrettyPrinter;Ltools/jackson/core/io/CharacterEscapes;I)V # @Generated(41)
+_reportCantWriteValueExpectName
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+_verifyPrettyValueWrite
+ (Ljava/lang/String;I)V
+ (Ljava/lang/String;I)V
+assignCurrentValue
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+currentValue
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getCharacterEscapes
+ ()Ltools/jackson/core/io/CharacterEscapes;
+ ()L0tools/jackson/core/io/CharacterEscapes; # @Inherited(tools.jackson.core.JsonGenerator)
+getPrettyPrinter
+ ()Ltools/jackson/core/PrettyPrinter;
+ ()L0tools/jackson/core/PrettyPrinter; # @Inherited(tools.jackson.core.JsonGenerator)
+has
+ (Ltools/jackson/core/StreamWriteCapability;)Z
+ (L1tools/jackson/core/StreamWriteCapability;)Z # @Inherited(tools.jackson.core.base.GeneratorBase)
+isEnabled
+ (Ltools/jackson/core/json/JsonWriteFeature;)Z
+ (L1tools/jackson/core/json/JsonWriteFeature;)Z # @Generated
+setCharacterEscapes
+ (Ltools/jackson/core/io/CharacterEscapes;)Ltools/jackson/core/JsonGenerator;
+ (Ltools/jackson/core/io/CharacterEscapes;)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.JsonGenerator)
+streamWriteCapabilities
+ ()Ltools/jackson/core/util/JacksonFeatureSet<Ltools/jackson/core/StreamWriteCapability;>;
+ ()Ltools/jackson/core/util/JacksonFeatureSet<Ltools/jackson/core/StreamWriteCapability;>;
+streamWriteContext
+ ()Ltools/jackson/core/TokenStreamContext;
+ ()Ltools/jackson/core/TokenStreamContext;
+version
+ ()Ltools/jackson/core/Version;
+ ()Ltools/jackson/core/Version;
+writePropertyId
+ (J)Ltools/jackson/core/JsonGenerator;
+ (J)L1tools/jackson/core/JsonGenerator; # @Generated
+writeStartArray
+ (Ljava/lang/Object;I)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;I)L1tools/jackson/core/JsonGenerator; # @Generated(22)
+writeStartObject
+ (Ljava/lang/Object;I)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;I)L1tools/jackson/core/JsonGenerator; # @Generated(22)

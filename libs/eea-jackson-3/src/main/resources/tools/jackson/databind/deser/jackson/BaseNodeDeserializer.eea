@@ -1,0 +1,63 @@
+class tools/jackson/databind/deser/jackson/BaseNodeDeserializer
+ <T:Ltools/jackson/databind/JsonNode;>
+ <T:Ltools/jackson/databind/JsonNode;>
+
+super tools/jackson/databind/deser/std/StdDeserializer
+ <TT;>
+ <TT;>
+
+_supportsUpdates
+ Ljava/lang/Boolean;
+ Ljava/lang/Boolean;
+
+<init>
+ (Ljava/lang/Class<TT;>;Ljava/lang/Boolean;)V
+ (L1java/lang/Class<TT;>;Ljava/lang/Boolean;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/deser/jackson/BaseNodeDeserializer<*>;ZZ)V
+ (L1tools/jackson/databind/deser/jackson/BaseNodeDeserializer<*>;ZZ)V # @Generated(2)
+_createWithMerge
+ (ZZ)Ltools/jackson/databind/deser/jackson/BaseNodeDeserializer<*>;
+ (ZZ)Ltools/jackson/databind/deser/jackson/BaseNodeDeserializer<*>;
+_deserializeAnyScalar
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ltools/jackson/databind/JsonNode;
+ (L1tools/jackson/core/JsonParser;L1tools/jackson/databind/DeserializationContext;)Ltools/jackson/databind/JsonNode; # @Generated(2,33)
+_deserializeContainerNoRecursion
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/JsonNodeFactory;Ltools/jackson/databind/deser/jackson/BaseNodeDeserializer$ContainerStack;Ltools/jackson/databind/node/ContainerNode<*>;)Ltools/jackson/databind/node/ContainerNode<*>;
+ (L1tools/jackson/core/JsonParser;L1tools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/JsonNodeFactory;L1tools/jackson/databind/deser/jackson/BaseNodeDeserializer$ContainerStack;Ltools/jackson/databind/node/ContainerNode<*>;)Ltools/jackson/databind/node/ContainerNode<*>; # @Generated(2,33,125,PolyNull)
+_deserializeObjectAtName
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/JsonNodeFactory;Ltools/jackson/databind/deser/jackson/BaseNodeDeserializer$ContainerStack;)Ltools/jackson/databind/node/ObjectNode;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;L1tools/jackson/databind/node/JsonNodeFactory;Ltools/jackson/databind/deser/jackson/BaseNodeDeserializer$ContainerStack;)Ltools/jackson/databind/node/ObjectNode; # @Generated(2,80)
+_deserializeRareScalar
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ltools/jackson/databind/JsonNode;
+ (L1tools/jackson/core/JsonParser;L1tools/jackson/databind/DeserializationContext;)Ltools/jackson/databind/JsonNode; # @Generated(2,33)
+_fromEmbedded
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ltools/jackson/databind/JsonNode;
+ (L1tools/jackson/core/JsonParser;L1tools/jackson/databind/DeserializationContext;)Ltools/jackson/databind/JsonNode; # @Generated(2,33)
+_fromFloat
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/JsonNodeFactory;)Ltools/jackson/databind/JsonNode;
+ (L1tools/jackson/core/JsonParser;L1tools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/JsonNodeFactory;)Ltools/jackson/databind/JsonNode; # @Generated(2,33)
+_fromInt
+ (Ltools/jackson/core/JsonParser;ILtools/jackson/databind/node/JsonNodeFactory;)Ltools/jackson/databind/JsonNode;
+ (L1tools/jackson/core/JsonParser;IL1tools/jackson/databind/node/JsonNodeFactory;)Ltools/jackson/databind/JsonNode; # @Generated(2,34)
+_fromInt
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/JsonNodeFactory;)Ltools/jackson/databind/JsonNode;
+ (L1tools/jackson/core/JsonParser;L1tools/jackson/databind/DeserializationContext;L1tools/jackson/databind/node/JsonNodeFactory;)Ltools/jackson/databind/JsonNode; # @Generated(2,33,80)
+_handleDuplicateProperty
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/JsonNodeFactory;Ljava/lang/String;Ltools/jackson/databind/node/ObjectNode;Ltools/jackson/databind/JsonNode;Ltools/jackson/databind/JsonNode;)V
+ (Ltools/jackson/core/JsonParser;L1tools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/JsonNodeFactory;Ljava/lang/String;Ltools/jackson/databind/node/ObjectNode;Ltools/jackson/databind/JsonNode;Ltools/jackson/databind/JsonNode;)V # @Generated(33)
+createContextual
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueDeserializer<*>;
+ (L1tools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueDeserializer<*>; # @Overrides(tools.jackson.databind.ValueDeserializer)
+deserializeWithType
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;L1tools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object; # @Inherited(tools.jackson.databind.deser.std.StdDeserializer)
+logicalType
+ ()Ltools/jackson/databind/type/LogicalType;
+ ()L1tools/jackson/databind/type/LogicalType; # @Overrides(tools.jackson.databind.ValueDeserializer)
+supportsUpdate
+ (Ltools/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+ (Ltools/jackson/databind/DeserializationConfig;)L0java/lang/Boolean; # @Inherited(tools.jackson.databind.ValueDeserializer)
+updateObject
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/ObjectNode;Ltools/jackson/databind/deser/jackson/BaseNodeDeserializer$ContainerStack;)Ltools/jackson/databind/JsonNode;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/node/ObjectNode;Ltools/jackson/databind/deser/jackson/BaseNodeDeserializer$ContainerStack;)Ltools/jackson/databind/JsonNode; # @Generated(2)

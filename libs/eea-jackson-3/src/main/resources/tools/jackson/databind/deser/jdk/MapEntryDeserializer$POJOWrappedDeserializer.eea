@@ -1,0 +1,49 @@
+class tools/jackson/databind/deser/jdk/MapEntryDeserializer$POJOWrappedDeserializer
+
+super tools/jackson/databind/deser/std/StdDeserializer
+ <Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>;>
+ <Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>;>
+
+_keyDeserializer
+ Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;
+ Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;
+_keyTypeDeserializer
+ Ltools/jackson/databind/jsontype/TypeDeserializer;
+ Ltools/jackson/databind/jsontype/TypeDeserializer;
+_valueDeserializer
+ Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;
+ Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;
+_valueTypeDeserializer
+ Ltools/jackson/databind/jsontype/TypeDeserializer;
+ Ltools/jackson/databind/jsontype/TypeDeserializer;
+
+<init>
+ (Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/JavaType;)V # @Generated
+<init>
+ (Ltools/jackson/databind/deser/jdk/MapEntryDeserializer$POJOWrappedDeserializer;Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;Ltools/jackson/databind/jsontype/TypeDeserializer;Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;Ltools/jackson/databind/jsontype/TypeDeserializer;)V
+ (L1tools/jackson/databind/deser/jdk/MapEntryDeserializer$POJOWrappedDeserializer;Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;Ltools/jackson/databind/jsontype/TypeDeserializer;Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;Ltools/jackson/databind/jsontype/TypeDeserializer;)V # @Generated(2)
+_createContextual2
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueDeserializer<*>;
+ (L1tools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueDeserializer<*>; # @Generated(2)
+createContextual
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueDeserializer<*>;
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueDeserializer<*>; # @Inherited(tools.jackson.databind.ValueDeserializer)
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>; # @Generated(2)
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>;)Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>;)Ljava/util/Map$Entry<Ljava/lang/Object;Ljava/lang/Object;>;
+deserializeWithType
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;L1tools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object; # @Inherited(tools.jackson.databind.deser.std.StdDeserializer)
+logicalType
+ ()Ltools/jackson/databind/type/LogicalType;
+ ()L1tools/jackson/databind/type/LogicalType; # @Overrides(tools.jackson.databind.ValueDeserializer)
+withResolved
+ (Ltools/jackson/databind/ValueDeserializer<*>;Ltools/jackson/databind/jsontype/TypeDeserializer;Ltools/jackson/databind/ValueDeserializer<*>;Ltools/jackson/databind/jsontype/TypeDeserializer;)Ltools/jackson/databind/deser/jdk/MapEntryDeserializer$POJOWrappedDeserializer;
+ (Ltools/jackson/databind/ValueDeserializer<*>;Ltools/jackson/databind/jsontype/TypeDeserializer;Ltools/jackson/databind/ValueDeserializer<*>;Ltools/jackson/databind/jsontype/TypeDeserializer;)L1tools/jackson/databind/deser/jdk/MapEntryDeserializer$POJOWrappedDeserializer; # @Generated(193)
+wrapAndThrow
+ <BOGUS:Ljava/lang/Object;>(Ltools/jackson/databind/DeserializationContext;Ljava/lang/Throwable;Ljava/lang/Object;Ljava/lang/String;)TBOGUS;
+ <BOGUS:Ljava/lang/Object;>(Ltools/jackson/databind/DeserializationContext;Ljava/lang/Throwable;Ljava/lang/Object;Ljava/lang/String;)TBOGUS;

@@ -1,0 +1,38 @@
+class tools/jackson/databind/ser/jdk/EnumSerializer
+
+super tools/jackson/databind/ser/std/StdScalarSerializer
+ <Ljava/lang/Enum<*>;>
+ <Ljava/lang/Enum<*>;>
+
+_isShapeWrittenUsingNumber
+ (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/annotation/JsonFormat$Value;ZLjava/lang/Boolean;)Ljava/lang/Boolean;
+ (Ljava/lang/Class<*>;Lcom/fasterxml/jackson/annotation/JsonFormat$Value;ZLjava/lang/Boolean;)Ljava/lang/Boolean; # @Generated(PolyNull)
+construct
+ (Ljava/lang/Class<*>;Ltools/jackson/databind/SerializationConfig;Ltools/jackson/databind/BeanDescription;Lcom/fasterxml/jackson/annotation/JsonFormat$Value;)Ltools/jackson/databind/ser/jdk/EnumSerializer;
+ (Ljava/lang/Class<*>;L1tools/jackson/databind/SerializationConfig;L1tools/jackson/databind/BeanDescription;Lcom/fasterxml/jackson/annotation/JsonFormat$Value;)L1tools/jackson/databind/ser/jdk/EnumSerializer; # @Generated(22,66,158)
+
+_enumValuesToWrite
+ Ltools/jackson/databind/util/EnumValuesToWrite;
+ Ltools/jackson/databind/util/EnumValuesToWrite;
+_serializeAsNumber
+ Ljava/lang/Boolean;
+ Ljava/lang/Boolean;
+
+<init>
+ (Ltools/jackson/databind/util/EnumValuesToWrite;Ljava/lang/Boolean;)V
+ (L1tools/jackson/databind/util/EnumValuesToWrite;Ljava/lang/Boolean;)V # @Generated(2)
+_serializeAsNumber
+ (Ltools/jackson/databind/SerializationContext;)Z
+ (Ltools/jackson/databind/SerializationContext;)Z
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdScalarSerializer)
+createContextual
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueSerializer<*>;
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueSerializer<*>; # @Inherited(tools.jackson.databind.ValueSerializer)
+getEnumValues
+ ()Ltools/jackson/databind/util/EnumValues;
+ ()Ltools/jackson/databind/util/EnumValues;
+serialize
+ (Ljava/lang/Enum<*>;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljava/lang/Enum<*>;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(21)

@@ -1,0 +1,36 @@
+class tools/jackson/databind/ser/bean/UnwrappingBeanPropertyWriter
+
+_nameTransformer
+ Ltools/jackson/databind/util/NameTransformer;
+ Ltools/jackson/databind/util/NameTransformer;
+
+<init>
+ (Ltools/jackson/databind/ser/BeanPropertyWriter;Ltools/jackson/databind/util/NameTransformer;)V
+ (L1tools/jackson/databind/ser/BeanPropertyWriter;Ltools/jackson/databind/util/NameTransformer;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/ser/bean/UnwrappingBeanPropertyWriter;Ltools/jackson/databind/util/NameTransformer;Ltools/jackson/core/io/SerializedString;)V
+ (L1tools/jackson/databind/ser/bean/UnwrappingBeanPropertyWriter;Ltools/jackson/databind/util/NameTransformer;Ltools/jackson/core/io/SerializedString;)V # @Generated(2)
+_depositSchemaProperty
+ (Ltools/jackson/databind/node/ObjectNode;Ltools/jackson/databind/JsonNode;)V
+ (L1tools/jackson/databind/node/ObjectNode;L1tools/jackson/databind/JsonNode;)V # @Overrides(tools.jackson.databind.ser.BeanPropertyWriter)
+_findAndAddDynamic
+ (Ltools/jackson/databind/ser/impl/PropertySerializerMap;Ljava/lang/Class<*>;Ltools/jackson/databind/SerializationContext;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+ (L1tools/jackson/databind/ser/impl/PropertySerializerMap;Ljava/lang/Class<*>;L1tools/jackson/databind/SerializationContext;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>; # @Inherited(tools.jackson.databind.ser.BeanPropertyWriter)
+_new
+ (Ltools/jackson/databind/util/NameTransformer;Ltools/jackson/core/io/SerializedString;)Ltools/jackson/databind/ser/bean/UnwrappingBeanPropertyWriter;
+ (Ltools/jackson/databind/util/NameTransformer;Ltools/jackson/core/io/SerializedString;)L1tools/jackson/databind/ser/bean/UnwrappingBeanPropertyWriter; # @Generated(88)
+assignSerializer
+ (Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;)V
+ (Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;)V
+depositSchemaProperty
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonObjectFormatVisitor;Ltools/jackson/databind/SerializationContext;)V
+ (L0tools/jackson/databind/jsonFormatVisitors/JsonObjectFormatVisitor;L1tools/jackson/databind/SerializationContext;)V # @Overrides(tools.jackson.databind.ser.BeanPropertyWriter)
+findUnwrappingSerializer
+ (Ltools/jackson/databind/SerializationContext;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+ (Ltools/jackson/databind/SerializationContext;)L0tools/jackson/databind/ValueSerializer<Ljava/lang/Object;>; # @Generated(48)
+rename
+ (Ltools/jackson/databind/util/NameTransformer;)Ltools/jackson/databind/ser/bean/UnwrappingBeanPropertyWriter;
+ (L1tools/jackson/databind/util/NameTransformer;)Ltools/jackson/databind/ser/bean/UnwrappingBeanPropertyWriter; # @Generated(2)
+serializeAsProperty
+ (Ljava/lang/Object;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljava/lang/Object;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V

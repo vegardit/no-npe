@@ -1,0 +1,61 @@
+class tools/jackson/databind/ser/std/DelegatingSerializer
+
+super tools/jackson/databind/ser/std/StdSerializer
+ <Ljava/lang/Object;>
+ <Ljava/lang/Object;>
+
+_delegatee
+ Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+ Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+
+<init>
+ (Ltools/jackson/databind/ValueSerializer<*>;)V
+ (L1tools/jackson/databind/ValueSerializer<*>;)V # @Generated(2)
+_newIfChanged
+ (Ltools/jackson/databind/ValueSerializer<*>;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+ (Ltools/jackson/databind/ValueSerializer<*>;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdSerializer)
+createContextual
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueSerializer<*>;
+ (L1tools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueSerializer<*>; # @Overrides(tools.jackson.databind.ValueSerializer)
+getDelegatee
+ ()Ltools/jackson/databind/ValueSerializer<*>;
+ ()L0tools/jackson/databind/ValueSerializer<*>; # @Inherited(tools.jackson.databind.ValueSerializer)
+handledType
+ ()Ljava/lang/Class<*>;
+ ()L1java/lang/Class<*>; # @Inherited(tools.jackson.databind.ser.std.StdSerializer)
+isEmpty
+ (Ltools/jackson/databind/SerializationContext;Ljava/lang/Object;)Z
+ (Ltools/jackson/databind/SerializationContext;Ljava/lang/Object;)Z
+newDelegatingInstance
+ (Ltools/jackson/databind/ValueSerializer<*>;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+ (Ltools/jackson/databind/ValueSerializer<*>;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+properties
+ ()Ljava/util/Iterator<Ltools/jackson/databind/ser/PropertyWriter;>;
+ ()Ljava/util/Iterator<Ltools/jackson/databind/ser/PropertyWriter;>;
+replaceDelegatee
+ (Ltools/jackson/databind/ValueSerializer<*>;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+ (Ltools/jackson/databind/ValueSerializer<*>;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+resolve
+ (Ltools/jackson/databind/SerializationContext;)V
+ (Ltools/jackson/databind/SerializationContext;)V
+serialize
+ (Ljava/lang/Object;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljava/lang/Object;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+serializeWithType
+ (Ljava/lang/Object;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (Ljava/lang/Object;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+unwrappingSerializer
+ (Ltools/jackson/databind/util/NameTransformer;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+ (Ltools/jackson/databind/util/NameTransformer;)Ltools/jackson/databind/ValueSerializer<Ljava/lang/Object;>;
+withFilterId
+ (Ljava/lang/Object;)Ltools/jackson/databind/ValueSerializer<*>;
+ (Ljava/lang/Object;)L1tools/jackson/databind/ValueSerializer<*>; # @Inherited(tools.jackson.databind.ValueSerializer)
+withFormatOverrides
+ (Ltools/jackson/databind/SerializationConfig;Lcom/fasterxml/jackson/annotation/JsonFormat$Value;)Ltools/jackson/databind/ValueSerializer<*>;
+ (Ltools/jackson/databind/SerializationConfig;L1com/fasterxml/jackson/annotation/JsonFormat$Value;)L0tools/jackson/databind/ValueSerializer<*>; # @Inherited(tools.jackson.databind.ValueSerializer)
+withIgnoredProperties
+ (Ljava/util/Set<Ljava/lang/String;>;)Ltools/jackson/databind/ValueSerializer<*>;
+ (Ljava/util/Set<Ljava/lang/String;>;)L1tools/jackson/databind/ValueSerializer<*>; # @Inherited(tools.jackson.databind.ValueSerializer)

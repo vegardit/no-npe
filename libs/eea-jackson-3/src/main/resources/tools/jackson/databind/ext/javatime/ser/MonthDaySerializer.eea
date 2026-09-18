@@ -1,0 +1,28 @@
+class tools/jackson/databind/ext/javatime/ser/MonthDaySerializer
+
+super tools/jackson/databind/ext/javatime/ser/JSR310FormattedSerializerBase
+ <Ljava/time/MonthDay;>
+ <Ljava/time/MonthDay;>
+
+INSTANCE
+ Ltools/jackson/databind/ext/javatime/ser/MonthDaySerializer;
+ L1tools/jackson/databind/ext/javatime/ser/MonthDaySerializer; # @Generated
+
+<init>
+ (Ljava/time/format/DateTimeFormatter;)V
+ (Ljava/time/format/DateTimeFormatter;)V
+_serializeAsArrayContents
+ (Ljava/time/MonthDay;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1java/time/MonthDay;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2,22)
+serializationShape
+ (Ltools/jackson/databind/SerializationContext;)Ltools/jackson/core/JsonToken;
+ (Ltools/jackson/databind/SerializationContext;)L1tools/jackson/core/JsonToken; # @Generated(48)
+serialize
+ (Ljava/time/MonthDay;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljava/time/MonthDay;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(22)
+serializeWithType
+ (Ljava/time/MonthDay;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (Ljava/time/MonthDay;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;L1tools/jackson/databind/jsontype/TypeSerializer;)V # @Generated(101)
+withFormat
+ (Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;)Ltools/jackson/databind/ext/javatime/ser/MonthDaySerializer;
+ (Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;)L1tools/jackson/databind/ext/javatime/ser/MonthDaySerializer; # @Generated(109)

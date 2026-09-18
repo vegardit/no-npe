@@ -1,0 +1,16 @@
+class tools/jackson/databind/ext/DOMSerializer
+
+super tools/jackson/databind/ser/std/StdSerializer
+ <Lorg/w3c/dom/Node;>
+ <Lorg/w3c/dom/Node;>
+
+transformerFactory
+ Ljavax/xml/transform/TransformerFactory;
+ Ljavax/xml/transform/TransformerFactory;
+
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L0tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Overrides(tools.jackson.databind.ser.std.StdSerializer)
+serialize
+ (Lorg/w3c/dom/Node;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Lorg/w3c/dom/Node;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V

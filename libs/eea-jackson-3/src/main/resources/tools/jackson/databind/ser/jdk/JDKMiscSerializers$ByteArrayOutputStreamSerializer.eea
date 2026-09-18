@@ -1,0 +1,12 @@
+class tools/jackson/databind/ser/jdk/JDKMiscSerializers$ByteArrayOutputStreamSerializer
+
+super tools/jackson/databind/ser/std/StdScalarSerializer
+ <Ljava/io/ByteArrayOutputStream;>
+ <Ljava/io/ByteArrayOutputStream;>
+
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdScalarSerializer)
+serialize
+ (Ljava/io/ByteArrayOutputStream;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1java/io/ByteArrayOutputStream;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2,33)

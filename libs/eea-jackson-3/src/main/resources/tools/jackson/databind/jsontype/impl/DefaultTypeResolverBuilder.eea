@@ -1,0 +1,45 @@
+class tools/jackson/databind/jsontype/impl/DefaultTypeResolverBuilder
+
+_appliesFor
+ Ltools/jackson/databind/DefaultTyping;
+ Ltools/jackson/databind/DefaultTyping;
+_subtypeValidator
+ Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;
+ Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;
+
+<init>
+ (Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;Ltools/jackson/databind/DefaultTyping;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;)V
+ (Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;Ltools/jackson/databind/DefaultTyping;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;)V
+<init>
+ (Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;Ltools/jackson/databind/DefaultTyping;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;Ljava/lang/String;)V
+ (Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;Ltools/jackson/databind/DefaultTyping;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;Ljava/lang/String;)V
+<init>
+ (Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;Ltools/jackson/databind/DefaultTyping;Ljava/lang/String;)V
+ (Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;Ltools/jackson/databind/DefaultTyping;Ljava/lang/String;)V
+<init>
+ (Ltools/jackson/databind/jsontype/impl/DefaultTypeResolverBuilder;Ljava/lang/Class<*>;)V
+ (L1tools/jackson/databind/jsontype/impl/DefaultTypeResolverBuilder;Ljava/lang/Class<*>;)V # @Generated(2)
+_unwrapArrayType
+ (Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/JavaType;)L1tools/jackson/databind/JavaType; # @Generated(36)
+_unwrapReferenceType
+ (Ltools/jackson/databind/JavaType;)Ltools/jackson/databind/JavaType;
+ (Ltools/jackson/databind/JavaType;)L1tools/jackson/databind/JavaType; # @Generated(36)
+buildTypeDeserializer
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/JavaType;Ljava/util/Collection<Ltools/jackson/databind/jsontype/NamedType;>;)Ltools/jackson/databind/jsontype/TypeDeserializer;
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/JavaType;Ljava/util/Collection<Ltools/jackson/databind/jsontype/NamedType;>;)L0tools/jackson/databind/jsontype/TypeDeserializer; # @Inherited(tools.jackson.databind.jsontype.impl.StdTypeResolverBuilder)
+buildTypeSerializer
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/JavaType;Ljava/util/Collection<Ltools/jackson/databind/jsontype/NamedType;>;)Ltools/jackson/databind/jsontype/TypeSerializer;
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/JavaType;Ljava/util/Collection<Ltools/jackson/databind/jsontype/NamedType;>;)L0tools/jackson/databind/jsontype/TypeSerializer; # @Inherited(tools.jackson.databind.jsontype.impl.StdTypeResolverBuilder)
+subTypeValidator
+ (Ltools/jackson/databind/DatabindContext;)Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;
+ (L1tools/jackson/databind/DatabindContext;)Ltools/jackson/databind/jsontype/PolymorphicTypeValidator; # @Inherited(tools.jackson.databind.jsontype.impl.StdTypeResolverBuilder)
+typeIdVisibility
+ (Z)Ltools/jackson/databind/jsontype/impl/DefaultTypeResolverBuilder;
+ (Z)L1tools/jackson/databind/jsontype/impl/DefaultTypeResolverBuilder; # @Generated
+useForType
+ (Ltools/jackson/databind/JavaType;)Z
+ (L1tools/jackson/databind/JavaType;)Z # @Generated
+withDefaultImpl
+ (Ljava/lang/Class<*>;)Ltools/jackson/databind/jsontype/impl/DefaultTypeResolverBuilder;
+ (Ljava/lang/Class<*>;)L1tools/jackson/databind/jsontype/impl/DefaultTypeResolverBuilder; # @Generated(23)

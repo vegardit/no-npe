@@ -1,0 +1,210 @@
+class tools/jackson/core/util/JsonGeneratorDelegate
+
+delegate
+ Ltools/jackson/core/JsonGenerator;
+ Ltools/jackson/core/JsonGenerator;
+
+<init>
+ (Ltools/jackson/core/JsonGenerator;)V
+ (Ltools/jackson/core/JsonGenerator;)V
+<init>
+ (Ltools/jackson/core/JsonGenerator;Z)V
+ (Ltools/jackson/core/JsonGenerator;Z)V
+assignCurrentValue
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+configure
+ (Ltools/jackson/core/StreamWriteFeature;Z)Ltools/jackson/core/JsonGenerator;
+ (Ltools/jackson/core/StreamWriteFeature;Z)L1tools/jackson/core/JsonGenerator; # @Generated(43)
+copyCurrentEvent
+ (Ltools/jackson/core/JsonParser;)V
+ (L1tools/jackson/core/JsonParser;)V # @Inherited(tools.jackson.core.JsonGenerator)
+copyCurrentStructure
+ (Ltools/jackson/core/JsonParser;)V
+ (L1tools/jackson/core/JsonParser;)V # @Inherited(tools.jackson.core.JsonGenerator)
+currentValue
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+delegate
+ ()Ltools/jackson/core/JsonGenerator;
+ ()Ltools/jackson/core/JsonGenerator;
+getCharacterEscapes
+ ()Ltools/jackson/core/io/CharacterEscapes;
+ ()L0tools/jackson/core/io/CharacterEscapes; # @Inherited(tools.jackson.core.JsonGenerator)
+getPrettyPrinter
+ ()Ltools/jackson/core/PrettyPrinter;
+ ()L0tools/jackson/core/PrettyPrinter; # @Inherited(tools.jackson.core.JsonGenerator)
+getSchema
+ ()Ltools/jackson/core/FormatSchema;
+ ()L0tools/jackson/core/FormatSchema; # @Inherited(tools.jackson.core.JsonGenerator)
+has
+ (Ltools/jackson/core/StreamWriteCapability;)Z
+ (Ltools/jackson/core/StreamWriteCapability;)Z
+isEnabled
+ (Ltools/jackson/core/StreamWriteFeature;)Z
+ (Ltools/jackson/core/StreamWriteFeature;)Z
+objectWriteContext
+ ()Ltools/jackson/core/ObjectWriteContext;
+ ()Ltools/jackson/core/ObjectWriteContext;
+streamWriteCapabilities
+ ()Ltools/jackson/core/util/JacksonFeatureSet<Ltools/jackson/core/StreamWriteCapability;>;
+ ()Ltools/jackson/core/util/JacksonFeatureSet<Ltools/jackson/core/StreamWriteCapability;>;
+streamWriteContext
+ ()Ltools/jackson/core/TokenStreamContext;
+ ()Ltools/jackson/core/TokenStreamContext;
+streamWriteOutputTarget
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+version
+ ()Ltools/jackson/core/Version;
+ ()Ltools/jackson/core/Version;
+writeArray
+ ([DII)Ltools/jackson/core/JsonGenerator;
+ ([1DII)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.JsonGenerator)
+writeArray
+ ([III)Ltools/jackson/core/JsonGenerator;
+ ([1III)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.JsonGenerator)
+writeArray
+ ([JII)Ltools/jackson/core/JsonGenerator;
+ ([1JII)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.JsonGenerator)
+writeArray
+ ([Ljava/lang/String;II)Ltools/jackson/core/JsonGenerator;
+ ([1Ljava/lang/String;II)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.JsonGenerator)
+writeBinary
+ (Ltools/jackson/core/Base64Variant;Ljava/io/InputStream;I)I
+ (Ltools/jackson/core/Base64Variant;Ljava/io/InputStream;I)I
+writeBinary
+ (Ltools/jackson/core/Base64Variant;[BII)Ltools/jackson/core/JsonGenerator;
+ (Ltools/jackson/core/Base64Variant;[BII)L1tools/jackson/core/JsonGenerator; # @Generated(41)
+writeBoolean
+ (Z)Ltools/jackson/core/JsonGenerator;
+ (Z)L1tools/jackson/core/JsonGenerator; # @Generated
+writeComment
+ (Ljava/lang/String;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/String;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeEmbeddedObject
+ (Ljava/lang/Object;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.JsonGenerator)
+writeEndArray
+ ()Ltools/jackson/core/JsonGenerator;
+ ()L1tools/jackson/core/JsonGenerator; # @Generated
+writeEndObject
+ ()Ltools/jackson/core/JsonGenerator;
+ ()L1tools/jackson/core/JsonGenerator; # @Generated
+writeName
+ (Ljava/lang/String;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/String;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeName
+ (Ltools/jackson/core/SerializableString;)Ltools/jackson/core/JsonGenerator;
+ (Ltools/jackson/core/SerializableString;)L1tools/jackson/core/JsonGenerator; # @Generated(42)
+writeNull
+ ()Ltools/jackson/core/JsonGenerator;
+ ()L1tools/jackson/core/JsonGenerator; # @Generated
+writeNumber
+ (D)Ltools/jackson/core/JsonGenerator;
+ (D)L1tools/jackson/core/JsonGenerator; # @Generated
+writeNumber
+ (F)Ltools/jackson/core/JsonGenerator;
+ (F)L1tools/jackson/core/JsonGenerator; # @Generated
+writeNumber
+ (I)Ltools/jackson/core/JsonGenerator;
+ (I)L1tools/jackson/core/JsonGenerator; # @Generated
+writeNumber
+ (J)Ltools/jackson/core/JsonGenerator;
+ (J)L1tools/jackson/core/JsonGenerator; # @Generated
+writeNumber
+ (Ljava/lang/String;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/String;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeNumber
+ (Ljava/math/BigDecimal;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/math/BigDecimal;)L1tools/jackson/core/JsonGenerator; # @Generated(25)
+writeNumber
+ (Ljava/math/BigInteger;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/math/BigInteger;)L1tools/jackson/core/JsonGenerator; # @Generated(25)
+writeNumber
+ (S)Ltools/jackson/core/JsonGenerator;
+ (S)L1tools/jackson/core/JsonGenerator; # @Generated
+writeNumber
+ ([CII)Ltools/jackson/core/JsonGenerator;
+ ([1CII)L1tools/jackson/core/JsonGenerator; # @Overrides(tools.jackson.core.JsonGenerator)
+writeObjectId
+ (Ljava/lang/Object;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeObjectRef
+ (Ljava/lang/Object;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeOmittedProperty
+ (Ljava/lang/String;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/String;)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.JsonGenerator)
+writePOJO
+ (Ljava/lang/Object;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writePropertyId
+ (J)Ltools/jackson/core/JsonGenerator;
+ (J)L1tools/jackson/core/JsonGenerator; # @Generated
+writeRaw
+ (C)Ltools/jackson/core/JsonGenerator;
+ (C)L1tools/jackson/core/JsonGenerator; # @Generated
+writeRaw
+ (Ljava/lang/String;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/String;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeRaw
+ (Ljava/lang/String;II)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/String;II)L1tools/jackson/core/JsonGenerator; # @Generated(23)
+writeRaw
+ (Ltools/jackson/core/SerializableString;)Ltools/jackson/core/JsonGenerator;
+ (L1tools/jackson/core/SerializableString;)L1tools/jackson/core/JsonGenerator; # @Overrides(tools.jackson.core.JsonGenerator)
+writeRaw
+ ([CII)Ltools/jackson/core/JsonGenerator;
+ ([CII)L1tools/jackson/core/JsonGenerator; # @Generated(7)
+writeRawUTF8String
+ ([BII)Ltools/jackson/core/JsonGenerator;
+ ([BII)L1tools/jackson/core/JsonGenerator; # @Generated(7)
+writeRawValue
+ (Ljava/lang/String;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/String;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeRawValue
+ (Ljava/lang/String;II)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/String;II)L1tools/jackson/core/JsonGenerator; # @Generated(23)
+writeRawValue
+ ([CII)Ltools/jackson/core/JsonGenerator;
+ ([CII)L1tools/jackson/core/JsonGenerator; # @Generated(7)
+writeStartArray
+ ()Ltools/jackson/core/JsonGenerator;
+ ()L1tools/jackson/core/JsonGenerator; # @Generated
+writeStartArray
+ (Ljava/lang/Object;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeStartArray
+ (Ljava/lang/Object;I)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;I)L1tools/jackson/core/JsonGenerator; # @Generated(22)
+writeStartObject
+ ()Ltools/jackson/core/JsonGenerator;
+ ()L1tools/jackson/core/JsonGenerator; # @Generated
+writeStartObject
+ (Ljava/lang/Object;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeStartObject
+ (Ljava/lang/Object;I)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;I)L1tools/jackson/core/JsonGenerator; # @Generated(22)
+writeString
+ (Ljava/io/Reader;I)Ltools/jackson/core/JsonGenerator;
+ (Ljava/io/Reader;I)L1tools/jackson/core/JsonGenerator; # @Generated(20)
+writeString
+ (Ljava/lang/String;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/String;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeString
+ (Ltools/jackson/core/SerializableString;)Ltools/jackson/core/JsonGenerator;
+ (Ltools/jackson/core/SerializableString;)L1tools/jackson/core/JsonGenerator; # @Generated(42)
+writeString
+ ([CII)Ltools/jackson/core/JsonGenerator;
+ ([CII)L1tools/jackson/core/JsonGenerator; # @Generated(7)
+writeTree
+ (Ltools/jackson/core/TreeNode;)Ltools/jackson/core/JsonGenerator;
+ (Ltools/jackson/core/TreeNode;)L1tools/jackson/core/JsonGenerator; # @Generated(32)
+writeTypeId
+ (Ljava/lang/Object;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;)L1tools/jackson/core/JsonGenerator; # @Generated(21)
+writeUTF8String
+ ([BII)Ltools/jackson/core/JsonGenerator;
+ ([BII)L1tools/jackson/core/JsonGenerator; # @Generated(7)

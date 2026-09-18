@@ -1,0 +1,87 @@
+class tools/jackson/databind/BeanDescription
+
+_type
+ Ltools/jackson/databind/JavaType;
+ Ltools/jackson/databind/JavaType;
+
+<init>
+ (Ltools/jackson/databind/JavaType;)V
+ (Ltools/jackson/databind/JavaType;)V
+findAnyGetter
+ ()Ltools/jackson/databind/introspect/AnnotatedMember;
+ ()Ltools/jackson/databind/introspect/AnnotatedMember;
+findAnySetterAccessor
+ ()Ltools/jackson/databind/introspect/AnnotatedMember;
+ ()Ltools/jackson/databind/introspect/AnnotatedMember;
+findBackReferences
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/BeanPropertyDefinition;>;
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/BeanPropertyDefinition;>;
+findDefaultConstructor
+ ()Ltools/jackson/databind/introspect/AnnotatedConstructor;
+ ()Ltools/jackson/databind/introspect/AnnotatedConstructor;
+findDefaultViews
+ ()[Ljava/lang/Class<*>;
+ ()[Ljava/lang/Class<*>;
+findInjectables
+ ()Ljava/util/Map<Ljava/lang/Object;Ltools/jackson/databind/introspect/AnnotatedMember;>;
+ ()Ljava/util/Map<Ljava/lang/Object;Ltools/jackson/databind/introspect/AnnotatedMember;>;
+findJsonKeyAccessor
+ ()Ltools/jackson/databind/introspect/AnnotatedMember;
+ ()L0tools/jackson/databind/introspect/AnnotatedMember; # @Generated
+findJsonValueAccessor
+ ()Ltools/jackson/databind/introspect/AnnotatedMember;
+ ()Ltools/jackson/databind/introspect/AnnotatedMember;
+findMethod
+ (Ljava/lang/String;[Ljava/lang/Class<*>;)Ltools/jackson/databind/introspect/AnnotatedMethod;
+ (Ljava/lang/String;[Ljava/lang/Class<*>;)Ltools/jackson/databind/introspect/AnnotatedMethod;
+findProperties
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/BeanPropertyDefinition;>;
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/BeanPropertyDefinition;>;
+findPropertyInclusion
+ (Lcom/fasterxml/jackson/annotation/JsonInclude$Value;)Lcom/fasterxml/jackson/annotation/JsonInclude$Value;
+ (Lcom/fasterxml/jackson/annotation/JsonInclude$Value;)Lcom/fasterxml/jackson/annotation/JsonInclude$Value;
+getBeanClass
+ ()Ljava/lang/Class<*>;
+ ()Ljava/lang/Class<*>;
+getClassAnnotations
+ ()Ltools/jackson/databind/util/Annotations;
+ ()Ltools/jackson/databind/util/Annotations;
+getClassInfo
+ ()Ltools/jackson/databind/introspect/AnnotatedClass;
+ ()Ltools/jackson/databind/introspect/AnnotatedClass;
+getConstructors
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/AnnotatedConstructor;>;
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/AnnotatedConstructor;>;
+getConstructorsWithMode
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/AnnotatedAndMetadata<Ltools/jackson/databind/introspect/AnnotatedConstructor;Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;>;>;
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/AnnotatedAndMetadata<Ltools/jackson/databind/introspect/AnnotatedConstructor;Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;>;>;
+getFactoryMethods
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/AnnotatedMethod;>;
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/AnnotatedMethod;>;
+getFactoryMethodsWithMode
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/AnnotatedAndMetadata<Ltools/jackson/databind/introspect/AnnotatedMethod;Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;>;>;
+ ()Ljava/util/List<Ltools/jackson/databind/introspect/AnnotatedAndMetadata<Ltools/jackson/databind/introspect/AnnotatedMethod;Lcom/fasterxml/jackson/annotation/JsonCreator$Mode;>;>;
+getIgnoredPropertyNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getNonRescuedIgnoredPropertyNames
+ ()Ljava/util/Set<Ljava/lang/String;>;
+ ()Ljava/util/Set<Ljava/lang/String;>;
+getObjectIdInfo
+ ()Ltools/jackson/databind/introspect/ObjectIdInfo;
+ ()Ltools/jackson/databind/introspect/ObjectIdInfo;
+getPotentialCreators
+ ()Ltools/jackson/databind/introspect/PotentialCreators;
+ ()Ltools/jackson/databind/introspect/PotentialCreators;
+getPropertyIgnorals
+ ()Lcom/fasterxml/jackson/annotation/JsonIgnoreProperties$Value;
+ ()L0com/fasterxml/jackson/annotation/JsonIgnoreProperties$Value; # @Generated
+getType
+ ()Ltools/jackson/databind/JavaType;
+ ()Ltools/jackson/databind/JavaType;
+instantiateBean
+ (Z)Ljava/lang/Object;
+ (Z)Ljava/lang/Object;
+supplier
+ ()Ltools/jackson/databind/BeanDescription$Supplier;
+ ()Ltools/jackson/databind/BeanDescription$Supplier;

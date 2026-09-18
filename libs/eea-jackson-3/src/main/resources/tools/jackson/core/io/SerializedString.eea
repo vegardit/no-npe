@@ -1,0 +1,66 @@
+class tools/jackson/core/io/SerializedString
+
+_jdkSerializeValue
+ Ljava/lang/String;
+ Ljava/lang/String;
+_quotedChars
+ [C
+ [C
+_quotedUTF8Ref
+ [B
+ [B
+_unquotedUTF8Ref
+ [B
+ [B
+_value
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ljava/lang/String;)V
+ (L1java/lang/String;)V # @Generated
+appendQuoted
+ ([CI)I
+ ([1CI)I # @Generated
+appendQuotedUTF8
+ ([BI)I
+ ([1BI)I # @Generated
+appendUnquoted
+ ([CI)I
+ ([1CI)I # @Generated
+appendUnquotedUTF8
+ ([BI)I
+ ([1BI)I # @Generated
+asQuotedChars
+ ()[C
+ ()[C
+asQuotedUTF8
+ ()[B
+ ()[B
+asUnquotedUTF8
+ ()[B
+ ()[B
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(java.lang.Object)
+getValue
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+putQuotedUTF8
+ (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Generated
+putUnquotedUTF8
+ (Ljava/nio/ByteBuffer;)I
+ (L1java/nio/ByteBuffer;)I # @Generated
+readResolve
+ ()Ljava/lang/Object;
+ ()L1java/lang/Object; # @Generated
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+writeQuotedUTF8
+ (Ljava/io/OutputStream;)I
+ (L1java/io/OutputStream;)I # @Generated
+writeUnquotedUTF8
+ (Ljava/io/OutputStream;)I
+ (L1java/io/OutputStream;)I # @Generated

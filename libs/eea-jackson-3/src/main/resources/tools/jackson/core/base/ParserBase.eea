@@ -1,0 +1,103 @@
+class tools/jackson/core/base/ParserBase
+
+growArrayBy
+ ([II)[I
+ ([II)[1I # @Generated(6)
+
+_binaryValue
+ [B
+ [B
+_byteArrayBuilder
+ Ltools/jackson/core/util/ByteArrayBuilder;
+ Ltools/jackson/core/util/ByteArrayBuilder;
+_numberBigDecimal
+ Ljava/math/BigDecimal;
+ Ljava/math/BigDecimal;
+_numberBigInt
+ Ljava/math/BigInteger;
+ Ljava/math/BigInteger;
+_numberString
+ Ljava/lang/String;
+ Ljava/lang/String;
+_textBuffer
+ Ltools/jackson/core/util/TextBuffer;
+ Ltools/jackson/core/util/TextBuffer;
+
+<init>
+ (Ltools/jackson/core/ObjectReadContext;Ltools/jackson/core/io/IOContext;I)V
+ (Ltools/jackson/core/ObjectReadContext;L1tools/jackson/core/io/IOContext;I)V # @Generated(40)
+_contentReference
+ ()Ltools/jackson/core/io/ContentReference;
+ ()Ltools/jackson/core/io/ContentReference;
+_contentReferenceRedacted
+ ()Ltools/jackson/core/io/ContentReference;
+ ()L1tools/jackson/core/io/ContentReference; # @Generated
+_convertBigDecimalToBigInteger
+ (Ljava/math/BigDecimal;)Ljava/math/BigInteger;
+ (L1java/math/BigDecimal;)Ljava/math/BigInteger; # @Generated(2)
+_decodeBase64Escape
+ (Ltools/jackson/core/Base64Variant;CI)I
+ (Ltools/jackson/core/Base64Variant;CI)I
+_decodeBase64Escape
+ (Ltools/jackson/core/Base64Variant;II)I
+ (Ltools/jackson/core/Base64Variant;II)I
+_getBigDecimal
+ ()Ljava/math/BigDecimal;
+ ()Ljava/math/BigDecimal;
+_getBigInteger
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+_getByteArrayBuilder
+ ()Ltools/jackson/core/util/ByteArrayBuilder;
+ ()Ltools/jackson/core/util/ByteArrayBuilder;
+_growNameDecodeBuffer
+ ([II)[I
+ ([1II)[1I # @Generated(2,6)
+_handleBase64MissingPadding
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/Base64Variant;)TT;
+ <T:Ljava/lang/Object;>(L1tools/jackson/core/Base64Variant;)TT; # @Generated(24)
+_reportInvalidBase64Char
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/Base64Variant;II)TT;
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/Base64Variant;II)TT;
+_reportInvalidBase64Char
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/Base64Variant;IILjava/lang/String;)TT;
+ <T:Ljava/lang/Object;>(Ltools/jackson/core/Base64Variant;IILjava/lang/String;)TT;
+assignCurrentValue
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+currentValue
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Generated
+getBigIntegerValue
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+getBinaryValue
+ (Ltools/jackson/core/Base64Variant;)[B
+ (Ltools/jackson/core/Base64Variant;)[B
+getDecimalValue
+ ()Ljava/math/BigDecimal;
+ ()Ljava/math/BigDecimal;
+getNumberType
+ ()Ltools/jackson/core/JsonParser$NumberType;
+ ()L0tools/jackson/core/JsonParser$NumberType; # @Generated
+getNumberValue
+ ()Ljava/lang/Number;
+ ()Ljava/lang/Number;
+getNumberValueDeferred
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getNumberValueExact
+ ()Ljava/lang/Number;
+ ()Ljava/lang/Number;
+reset
+ (ZIII)Ltools/jackson/core/JsonToken;
+ (ZIII)Ltools/jackson/core/JsonToken;
+resetAsNaN
+ (Ljava/lang/String;D)Ltools/jackson/core/JsonToken;
+ (Ljava/lang/String;D)L1tools/jackson/core/JsonToken; # @Generated(22)
+resetFloat
+ (ZIII)Ltools/jackson/core/JsonToken;
+ (ZIII)L1tools/jackson/core/JsonToken; # @Generated
+resetInt
+ (ZI)Ltools/jackson/core/JsonToken;
+ (ZI)L1tools/jackson/core/JsonToken; # @Generated

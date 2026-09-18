@@ -1,0 +1,22 @@
+class tools/jackson/databind/deser/jdk/NumberDeserializers$BigIntegerDeserializer
+
+super tools/jackson/databind/deser/std/StdScalarDeserializer
+ <Ljava/math/BigInteger;>
+ <Ljava/math/BigInteger;>
+
+instance
+ Ltools/jackson/databind/deser/jdk/NumberDeserializers$BigIntegerDeserializer;
+ L1tools/jackson/databind/deser/jdk/NumberDeserializers$BigIntegerDeserializer; # @Generated
+
+createContextual
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueDeserializer<*>;
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueDeserializer<*>; # @Inherited(tools.jackson.databind.ValueDeserializer)
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/math/BigInteger;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/math/BigInteger; # @Generated(2)
+getEmptyValue
+ (Ltools/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Ltools/jackson/databind/DeserializationContext;)L1java/lang/Object; # @Generated(50)
+logicalType
+ ()Ltools/jackson/databind/type/LogicalType;
+ ()L1tools/jackson/databind/type/LogicalType; # @Inherited(tools.jackson.databind.deser.std.StdScalarDeserializer)

@@ -1,0 +1,32 @@
+class tools/jackson/databind/ext/javatime/ser/InstantSerializerBase
+ <T::Ljava/time/temporal/Temporal;>
+ <T::Ljava/time/temporal/Temporal;>
+
+super tools/jackson/databind/ext/javatime/ser/JSR310FormattedSerializerBase
+ <TT;>
+ <TT;>
+
+<init>
+ (Ljava/lang/Class<TT;>;Ljava/util/function/ToLongFunction<TT;>;Ljava/util/function/ToLongFunction<TT;>;Ljava/util/function/ToIntFunction<TT;>;Ljava/time/format/DateTimeFormatter;)V
+ (Ljava/lang/Class<TT;>;Ljava/util/function/ToLongFunction<TT;>;Ljava/util/function/ToLongFunction<TT;>;Ljava/util/function/ToIntFunction<TT;>;Ljava/time/format/DateTimeFormatter;)V
+<init>
+ (Ltools/jackson/databind/ext/javatime/ser/InstantSerializerBase<TT;>;Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;)V
+ (L1tools/jackson/databind/ext/javatime/ser/InstantSerializerBase<TT;>;Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;)V # @Generated(2)
+_acceptTimestampVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Generated(2)
+_truncateToMillis
+ (TT;)TT;
+ (TT;)TT; # @Generated(PolyNull)
+formatValue
+ (TT;Ltools/jackson/databind/SerializationContext;)Ljava/lang/String;
+ (T1T;Ltools/jackson/databind/SerializationContext;)Ljava/lang/String; # @Generated(2)
+serializationShape
+ (Ltools/jackson/databind/SerializationContext;)Ltools/jackson/core/JsonToken;
+ (Ltools/jackson/databind/SerializationContext;)L1tools/jackson/core/JsonToken; # @Generated(48)
+serialize
+ (TT;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (TT;L1tools/jackson/core/JsonGenerator;L1tools/jackson/databind/SerializationContext;)V # @Generated(5,39)
+withFormat
+ (Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;)Ltools/jackson/databind/ext/javatime/ser/JSR310FormattedSerializerBase<*>;
+ (Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;)Ltools/jackson/databind/ext/javatime/ser/JSR310FormattedSerializerBase<*>;

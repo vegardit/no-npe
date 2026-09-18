@@ -1,0 +1,33 @@
+class tools/jackson/core/filter/JsonPointerBasedFilter
+
+_pathToMatch
+ Ltools/jackson/core/JsonPointer;
+ Ltools/jackson/core/JsonPointer;
+
+<init>
+ (Ljava/lang/String;)V
+ (Ljava/lang/String;)V
+<init>
+ (Ltools/jackson/core/JsonPointer;)V
+ (Ltools/jackson/core/JsonPointer;)V
+<init>
+ (Ltools/jackson/core/JsonPointer;Z)V
+ (Ltools/jackson/core/JsonPointer;Z)V
+construct
+ (Ltools/jackson/core/JsonPointer;Z)Ltools/jackson/core/filter/JsonPointerBasedFilter;
+ (Ltools/jackson/core/JsonPointer;Z)L1tools/jackson/core/filter/JsonPointerBasedFilter; # @Generated(36)
+filterStartArray
+ ()Ltools/jackson/core/filter/TokenFilter;
+ ()L1tools/jackson/core/filter/TokenFilter; # @Inherited(tools.jackson.core.filter.TokenFilter)
+filterStartObject
+ ()Ltools/jackson/core/filter/TokenFilter;
+ ()L1tools/jackson/core/filter/TokenFilter; # @Inherited(tools.jackson.core.filter.TokenFilter)
+includeElement
+ (I)Ltools/jackson/core/filter/TokenFilter;
+ (I)L0tools/jackson/core/filter/TokenFilter; # @Overrides(tools.jackson.core.filter.TokenFilter)
+includeProperty
+ (Ljava/lang/String;)Ltools/jackson/core/filter/TokenFilter;
+ (Ljava/lang/String;)L0tools/jackson/core/filter/TokenFilter; # @Overrides(tools.jackson.core.filter.TokenFilter)
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(tools.jackson.core.filter.TokenFilter)

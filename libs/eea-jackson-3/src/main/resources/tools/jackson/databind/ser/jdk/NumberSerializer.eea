@@ -1,0 +1,29 @@
+class tools/jackson/databind/ser/jdk/NumberSerializer
+
+super tools/jackson/databind/ser/std/StdScalarSerializer
+ <Ljava/lang/Number;>
+ <Ljava/lang/Number;>
+
+instance
+ Ltools/jackson/databind/ser/jdk/NumberSerializer;
+ L1tools/jackson/databind/ser/jdk/NumberSerializer; # @Generated
+
+bigDecimalAsStringSerializer
+ ()Ltools/jackson/databind/ValueSerializer<*>;
+ ()L1tools/jackson/databind/ValueSerializer<*>; # @Generated(3)
+createStringSerializer
+ (Ltools/jackson/databind/SerializationContext;Lcom/fasterxml/jackson/annotation/JsonFormat$Value;Z)Ltools/jackson/databind/ser/std/ToStringSerializerBase;
+ (Ltools/jackson/databind/SerializationContext;Lcom/fasterxml/jackson/annotation/JsonFormat$Value;Z)L1tools/jackson/databind/ser/std/ToStringSerializerBase; # @Generated(100)
+
+<init>
+ (Ljava/lang/Class<+Ljava/lang/Number;>;)V
+ (Ljava/lang/Class<+Ljava/lang/Number;>;)V
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdScalarSerializer)
+createContextual
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueSerializer<*>;
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueSerializer<*>; # @Inherited(tools.jackson.databind.ValueSerializer)
+serialize
+ (Ljava/lang/Number;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1java/lang/Number;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2,20)

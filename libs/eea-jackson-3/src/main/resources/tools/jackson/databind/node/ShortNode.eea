@@ -1,0 +1,60 @@
+class tools/jackson/databind/node/ShortNode
+
+valueOf
+ (S)Ltools/jackson/databind/node/ShortNode;
+ (S)L1tools/jackson/databind/node/ShortNode; # @Generated
+
+_asBoolean
+ ()Ljava/lang/Boolean;
+ ()L1java/lang/Boolean; # @Overrides(tools.jackson.databind.node.BaseJsonNode)
+_asString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Overrides(tools.jackson.databind.node.NumericNode)
+asIntOpt
+ ()Ljava/util/OptionalInt;
+ ()L1java/util/OptionalInt; # @Inherited(tools.jackson.databind.node.NumericNode)
+asLongOpt
+ ()Ljava/util/OptionalLong;
+ ()L1java/util/OptionalLong; # @Inherited(tools.jackson.databind.node.NumericNode)
+asShortOpt
+ ()Ljava/util/Optional<Ljava/lang/Short;>;
+ ()L1java/util/Optional<Ljava/lang/Short;>; # @Inherited(tools.jackson.databind.node.NumericNode)
+bigIntegerValue
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+bigIntegerValue
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger;
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger; # @Inherited(tools.jackson.databind.node.BaseJsonNode)
+bigIntegerValueOpt
+ ()Ljava/util/Optional<Ljava/math/BigInteger;>;
+ ()L1java/util/Optional<Ljava/math/BigInteger;>; # @Inherited(tools.jackson.databind.node.NumericIntNode)
+decimalValue
+ ()Ljava/math/BigDecimal;
+ ()Ljava/math/BigDecimal;
+decimalValue
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal; # @Inherited(tools.jackson.databind.node.BaseJsonNode)
+decimalValueOpt
+ ()Ljava/util/Optional<Ljava/math/BigDecimal;>;
+ ()L1java/util/Optional<Ljava/math/BigDecimal;>; # @Inherited(tools.jackson.databind.node.NumericIntNode)
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(tools.jackson.databind.JsonNode)
+intValueOpt
+ ()Ljava/util/OptionalInt;
+ ()L1java/util/OptionalInt; # @Inherited(tools.jackson.databind.node.NumericNode)
+longValueOpt
+ ()Ljava/util/OptionalLong;
+ ()L1java/util/OptionalLong; # @Inherited(tools.jackson.databind.node.NumericNode)
+numberType
+ ()Ltools/jackson/core/JsonParser$NumberType;
+ ()L1tools/jackson/core/JsonParser$NumberType; # @Overrides(tools.jackson.databind.node.NumericNode)
+numberValue
+ ()Ljava/lang/Number;
+ ()L1java/lang/Number; # @Generated
+serialize
+ (Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2)
+shortValueOpt
+ ()Ljava/util/Optional<Ljava/lang/Short;>;
+ ()L1java/util/Optional<Ljava/lang/Short;>; # @Inherited(tools.jackson.databind.node.NumericNode)

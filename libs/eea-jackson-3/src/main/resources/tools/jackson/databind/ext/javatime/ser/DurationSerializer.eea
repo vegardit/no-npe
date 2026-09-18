@@ -1,0 +1,46 @@
+class tools/jackson/databind/ext/javatime/ser/DurationSerializer
+
+super tools/jackson/databind/ext/javatime/ser/JSR310FormattedSerializerBase
+ <Ljava/time/Duration;>
+ <Ljava/time/Duration;>
+
+INSTANCE
+ Ltools/jackson/databind/ext/javatime/ser/DurationSerializer;
+ L1tools/jackson/databind/ext/javatime/ser/DurationSerializer; # @Generated
+
+<init>
+ (Ltools/jackson/databind/ext/javatime/ser/DurationSerializer;Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;)V
+ (L1tools/jackson/databind/ext/javatime/ser/DurationSerializer;Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/ext/javatime/ser/DurationSerializer;Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
+ (L1tools/jackson/databind/ext/javatime/ser/DurationSerializer;Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Ljava/lang/Boolean;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/ext/javatime/ser/DurationSerializer;Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;)V
+ (L1tools/jackson/databind/ext/javatime/ser/DurationSerializer;Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;)V # @Generated(2)
+_acceptTimestampVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Generated(2)
+_useDateTimeFormatter
+ (Ltools/jackson/databind/SerializationContext;Lcom/fasterxml/jackson/annotation/JsonFormat$Value;)Ljava/time/format/DateTimeFormatter;
+ (Ltools/jackson/databind/SerializationContext;Lcom/fasterxml/jackson/annotation/JsonFormat$Value;)L0java/time/format/DateTimeFormatter; # @Generated(99)
+createContextual
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueSerializer<*>;
+ (Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueSerializer<*>; # @Inherited(tools.jackson.databind.ValueSerializer)
+getTimestampsFeature
+ ()Ltools/jackson/databind/cfg/DateTimeFeature;
+ ()L1tools/jackson/databind/cfg/DateTimeFeature; # @Generated
+serializationShape
+ (Ltools/jackson/databind/SerializationContext;)Ltools/jackson/core/JsonToken;
+ (Ltools/jackson/databind/SerializationContext;)L1tools/jackson/core/JsonToken; # @Generated(48)
+serialize
+ (Ljava/time/Duration;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljava/time/Duration;L1tools/jackson/core/JsonGenerator;L1tools/jackson/databind/SerializationContext;)V # @Generated(22,56)
+withConverter
+ (Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;)Ltools/jackson/databind/ext/javatime/ser/DurationSerializer;
+ (Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;)L1tools/jackson/databind/ext/javatime/ser/DurationSerializer; # @Generated(67)
+withFeatures
+ (Ljava/lang/Boolean;Ljava/lang/Boolean;)Ltools/jackson/databind/ext/javatime/ser/JSR310FormattedSerializerBase<*>;
+ (Ljava/lang/Boolean;Ljava/lang/Boolean;)L1tools/jackson/databind/ext/javatime/ser/JSR310FormattedSerializerBase<*>; # @Generated(41)
+withFormat
+ (Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;)Ltools/jackson/databind/ext/javatime/ser/DurationSerializer;
+ (Ljava/time/format/DateTimeFormatter;Ljava/lang/Boolean;Lcom/fasterxml/jackson/annotation/JsonFormat$Shape;)L1tools/jackson/databind/ext/javatime/ser/DurationSerializer; # @Generated(109)

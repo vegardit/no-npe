@@ -1,0 +1,17 @@
+class tools/jackson/databind/ser/impl/UnknownSerializer
+
+<init>
+ (Ljava/lang/Class<*>;)V
+ (Ljava/lang/Class<*>;)V
+failForEmpty
+ (Ltools/jackson/databind/SerializationContext;Ljava/lang/Object;)V
+ (L1tools/jackson/databind/SerializationContext;L1java/lang/Object;)V # @Generated(2,47)
+isEmpty
+ (Ltools/jackson/databind/SerializationContext;Ljava/lang/Object;)Z
+ (Ltools/jackson/databind/SerializationContext;Ljava/lang/Object;)Z
+serialize
+ (Ljava/lang/Object;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljava/lang/Object;L1tools/jackson/core/JsonGenerator;L1tools/jackson/databind/SerializationContext;)V # @Overrides(tools.jackson.databind.ser.std.ToEmptyObjectSerializer)
+serializeWithType
+ (Ljava/lang/Object;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (Ljava/lang/Object;Ltools/jackson/core/JsonGenerator;L1tools/jackson/databind/SerializationContext;L1tools/jackson/databind/jsontype/TypeSerializer;)V # @Overrides(tools.jackson.databind.ser.std.ToEmptyObjectSerializer)

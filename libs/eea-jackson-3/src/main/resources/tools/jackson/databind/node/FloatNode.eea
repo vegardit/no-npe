@@ -1,0 +1,39 @@
+class tools/jackson/databind/node/FloatNode
+
+valueOf
+ (F)Ltools/jackson/databind/node/FloatNode;
+ (F)L1tools/jackson/databind/node/FloatNode; # @Generated
+
+_asBigIntegerValueUnchecked
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+_asDecimalValueUnchecked
+ ()Ljava/math/BigDecimal;
+ ()L1java/math/BigDecimal; # @Generated
+_asString
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(tools.jackson.databind.node.NumericNode)
+asDoubleOpt
+ ()Ljava/util/OptionalDouble;
+ ()L1java/util/OptionalDouble; # @Inherited(tools.jackson.databind.node.NumericNode)
+asFloatOpt
+ ()Ljava/util/Optional<Ljava/lang/Float;>;
+ ()L1java/util/Optional<Ljava/lang/Float;>; # @Inherited(tools.jackson.databind.node.NumericNode)
+doubleValueOpt
+ ()Ljava/util/OptionalDouble;
+ ()L1java/util/OptionalDouble; # @Inherited(tools.jackson.databind.node.NumericNode)
+equals
+ (Ljava/lang/Object;)Z
+ (L0java/lang/Object;)Z # @Inherited(tools.jackson.databind.JsonNode)
+floatValueOpt
+ ()Ljava/util/Optional<Ljava/lang/Float;>;
+ ()L1java/util/Optional<Ljava/lang/Float;>; # @Inherited(tools.jackson.databind.node.NumericNode)
+numberType
+ ()Ltools/jackson/core/JsonParser$NumberType;
+ ()L1tools/jackson/core/JsonParser$NumberType; # @Overrides(tools.jackson.databind.node.NumericNode)
+numberValue
+ ()Ljava/lang/Number;
+ ()L1java/lang/Number; # @Generated
+serialize
+ (Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2)

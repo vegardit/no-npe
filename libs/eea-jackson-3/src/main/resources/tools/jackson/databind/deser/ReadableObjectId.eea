@@ -1,0 +1,54 @@
+class tools/jackson/databind/deser/ReadableObjectId
+
+_item
+ Ljava/lang/Object;
+ Ljava/lang/Object;
+_key
+ Lcom/fasterxml/jackson/annotation/ObjectIdGenerator$IdKey;
+ Lcom/fasterxml/jackson/annotation/ObjectIdGenerator$IdKey;
+_referringProperties
+ Ljava/util/LinkedList<Ltools/jackson/databind/deser/ReadableObjectId$Referring;>;
+ Ljava/util/LinkedList<Ltools/jackson/databind/deser/ReadableObjectId$Referring;>;
+_resolvedReferringProperties
+ Ljava/util/List<Ltools/jackson/databind/deser/ReadableObjectId$Referring;>;
+ Ljava/util/List<Ltools/jackson/databind/deser/ReadableObjectId$Referring;>;
+_resolver
+ Lcom/fasterxml/jackson/annotation/ObjectIdResolver;
+ Lcom/fasterxml/jackson/annotation/ObjectIdResolver;
+
+<init>
+ (Lcom/fasterxml/jackson/annotation/ObjectIdGenerator$IdKey;)V
+ (Lcom/fasterxml/jackson/annotation/ObjectIdGenerator$IdKey;)V
+appendReferring
+ (Ltools/jackson/databind/deser/ReadableObjectId$Referring;)V
+ (Ltools/jackson/databind/deser/ReadableObjectId$Referring;)V
+bindItem
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/Object;)V
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/Object;)V
+getKey
+ ()Lcom/fasterxml/jackson/annotation/ObjectIdGenerator$IdKey;
+ ()Lcom/fasterxml/jackson/annotation/ObjectIdGenerator$IdKey;
+getResolver
+ ()Lcom/fasterxml/jackson/annotation/ObjectIdResolver;
+ ()Lcom/fasterxml/jackson/annotation/ObjectIdResolver;
+notifyReferringsOfRebind
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+ (Ljava/lang/Object;Ljava/lang/Object;)V
+referringProperties
+ ()Ljava/util/Iterator<Ltools/jackson/databind/deser/ReadableObjectId$Referring;>;
+ ()Ljava/util/Iterator<Ltools/jackson/databind/deser/ReadableObjectId$Referring;>;
+resolve
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+setResolver
+ (Lcom/fasterxml/jackson/annotation/ObjectIdResolver;)V
+ (Lcom/fasterxml/jackson/annotation/ObjectIdResolver;)V
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)
+tryReplaceBoundItem
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+ (Ljava/lang/Object;Ljava/lang/Object;)Z
+tryToResolveUnresolved
+ (Ltools/jackson/databind/DeserializationContext;)Z
+ (Ltools/jackson/databind/DeserializationContext;)Z

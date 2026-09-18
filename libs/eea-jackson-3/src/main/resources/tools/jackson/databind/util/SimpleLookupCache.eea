@@ -1,0 +1,33 @@
+class tools/jackson/databind/util/SimpleLookupCache
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+ <K:Ljava/lang/Object;V:Ljava/lang/Object;>
+
+super tools/jackson/databind/util/LookupCache
+ <TK;TV;>
+ <TK;TV;>
+
+_map
+ Ltools/jackson/databind/util/internal/PrivateMaxEntriesMap<TK;TV;>;
+ Ltools/jackson/databind/util/internal/PrivateMaxEntriesMap<TK;TV;>;
+
+contents
+ (Ljava/util/function/BiConsumer<TK;TV;>;)V
+ (Ljava/util/function/BiConsumer<TK;TV;>;)V
+emptyCopy
+ ()Ltools/jackson/databind/util/LookupCache<TK;TV;>;
+ ()L1tools/jackson/databind/util/LookupCache<TK;TV;>; # @Generated(3)
+get
+ (TK;)TV;
+ (TK;)TV;
+put
+ (TK;TV;)TV;
+ (T1K;T1V;)TV; # @Generated(2,5)
+putIfAbsent
+ (TK;TV;)TV;
+ (T1K;T1V;)TV; # @Generated(2,5)
+readResolve
+ ()Ljava/lang/Object;
+ ()L1java/lang/Object; # @Generated
+snapshot
+ ()Ltools/jackson/databind/util/SimpleLookupCache<TK;TV;>;
+ ()L1tools/jackson/databind/util/SimpleLookupCache<TK;TV;>; # @Generated(3)

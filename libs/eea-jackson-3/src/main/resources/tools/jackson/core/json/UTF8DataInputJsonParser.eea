@@ -1,0 +1,124 @@
+class tools/jackson/core/json/UTF8DataInputJsonParser
+
+_icLatin1
+ [I
+ [I
+
+_inputData
+ Ljava/io/DataInput;
+ Ljava/io/DataInput;
+_quadBuffer
+ [I
+ [I
+_symbols
+ Ltools/jackson/core/sym/ByteQuadsCanonicalizer;
+ Ltools/jackson/core/sym/ByteQuadsCanonicalizer;
+
+<init>
+ (Ltools/jackson/core/ObjectReadContext;Ltools/jackson/core/io/IOContext;IILjava/io/DataInput;Ltools/jackson/core/sym/ByteQuadsCanonicalizer;I)V
+ (Ltools/jackson/core/ObjectReadContext;L1tools/jackson/core/io/IOContext;IILjava/io/DataInput;Ltools/jackson/core/sym/ByteQuadsCanonicalizer;I)V # @Generated(40)
+_currentLocationMinusOne
+ ()Ltools/jackson/core/TokenStreamLocation;
+ ()Ltools/jackson/core/TokenStreamLocation;
+_decodeBase64
+ (Ltools/jackson/core/Base64Variant;)[B
+ (L1tools/jackson/core/Base64Variant;)[1B # @Generated(2,37)
+_getText2
+ (Ltools/jackson/core/JsonToken;)Ljava/lang/String;
+ (L0tools/jackson/core/JsonToken;)L0java/lang/String; # @Generated(2,33)
+_handleApos
+ ()Ltools/jackson/core/JsonToken;
+ ()L1tools/jackson/core/JsonToken; # @Generated
+_handleInvalidNumberStart
+ (IZ)Ltools/jackson/core/JsonToken;
+ (IZ)Ltools/jackson/core/JsonToken;
+_handleInvalidNumberStart
+ (IZZ)Ltools/jackson/core/JsonToken;
+ (IZZ)L0tools/jackson/core/JsonToken; # @Generated
+_handleOddName
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;
+_handleUnexpectedValue
+ (I)Ltools/jackson/core/JsonToken;
+ (I)L0tools/jackson/core/JsonToken; # @Generated
+_matchToken
+ (Ljava/lang/String;I)V
+ (L1java/lang/String;I)V # @Generated
+_parseAposName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+_parseFloatThatStartsWithPeriod
+ (ZZ)Ltools/jackson/core/JsonToken;
+ (ZZ)Ltools/jackson/core/JsonToken;
+_parseName
+ (I)Ljava/lang/String;
+ (I)Ljava/lang/String;
+_parseNegNumber
+ ()Ltools/jackson/core/JsonToken;
+ ()Ltools/jackson/core/JsonToken;
+_parsePosNumber
+ ()Ltools/jackson/core/JsonToken;
+ ()Ltools/jackson/core/JsonToken;
+_parseUnsignedNumber
+ (I)Ltools/jackson/core/JsonToken;
+ (I)Ltools/jackson/core/JsonToken;
+_readBinary
+ (Ltools/jackson/core/Base64Variant;Ljava/io/OutputStream;[B)I
+ (L1tools/jackson/core/Base64Variant;Ljava/io/OutputStream;[1B)I # @Generated(2,58)
+_reportInvalidToken
+ (ILjava/lang/String;)V
+ (ILjava/lang/String;)V
+_reportInvalidToken
+ (ILjava/lang/String;Ljava/lang/String;)V
+ (IL1java/lang/String;Ljava/lang/String;)V # @Generated(3)
+currentLocation
+ ()Ltools/jackson/core/TokenStreamLocation;
+ ()L1tools/jackson/core/TokenStreamLocation; # @Generated
+currentTokenLocation
+ ()Ltools/jackson/core/TokenStreamLocation;
+ ()L1tools/jackson/core/TokenStreamLocation; # @Generated
+getBinaryValue
+ (Ltools/jackson/core/Base64Variant;)[B
+ (Ltools/jackson/core/Base64Variant;)[B
+getString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getString
+ (Ljava/io/Writer;)I
+ (Ljava/io/Writer;)I
+getStringCharacters
+ ()[C
+ ()[0C # @Generated
+getValueAsString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getValueAsString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String;
+nextBooleanValue
+ ()Ljava/lang/Boolean;
+ ()L0java/lang/Boolean; # @Inherited(tools.jackson.core.JsonParser)
+nextName
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(tools.jackson.core.base.ParserMinimalBase)
+nextStringValue
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(tools.jackson.core.JsonParser)
+nextToken
+ ()Ltools/jackson/core/JsonToken;
+ ()L0tools/jackson/core/JsonToken; # @Generated
+parseEscapedName
+ ([IIIII)Ljava/lang/String;
+ ([IIIII)Ljava/lang/String;
+readBinaryValue
+ (Ltools/jackson/core/Base64Variant;Ljava/io/OutputStream;)I
+ (Ltools/jackson/core/Base64Variant;Ljava/io/OutputStream;)I
+readString
+ (Ljava/io/Writer;)J
+ (Ljava/io/Writer;)J
+releaseBuffered
+ (Ljava/io/OutputStream;)I
+ (Ljava/io/OutputStream;)I
+streamReadInputSource
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;

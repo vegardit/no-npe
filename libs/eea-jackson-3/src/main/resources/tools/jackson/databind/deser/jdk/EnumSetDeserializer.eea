@@ -1,0 +1,61 @@
+class tools/jackson/databind/deser/jdk/EnumSetDeserializer
+
+super tools/jackson/databind/deser/std/StdDeserializer
+ <Ljava/util/EnumSet<*>;>
+ <Ljava/util/EnumSet<*>;>
+
+_enumDeserializer
+ Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Enum<*>;>;
+ Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Enum<*>;>;
+_enumType
+ Ltools/jackson/databind/JavaType;
+ Ltools/jackson/databind/JavaType;
+_nullProvider
+ Ltools/jackson/databind/deser/NullValueProvider;
+ Ltools/jackson/databind/deser/NullValueProvider;
+_unwrapSingle
+ Ljava/lang/Boolean;
+ Ljava/lang/Boolean;
+
+<init>
+ (Ltools/jackson/databind/JavaType;Ltools/jackson/databind/ValueDeserializer<*>;)V
+ (L1tools/jackson/databind/JavaType;Ltools/jackson/databind/ValueDeserializer<*>;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/deser/jdk/EnumSetDeserializer;Ltools/jackson/databind/ValueDeserializer<*>;Ltools/jackson/databind/deser/NullValueProvider;Ljava/lang/Boolean;)V
+ (L1tools/jackson/databind/deser/jdk/EnumSetDeserializer;Ltools/jackson/databind/ValueDeserializer<*>;Ltools/jackson/databind/deser/NullValueProvider;Ljava/lang/Boolean;)V # @Generated(2)
+_deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/util/EnumSet;)Ljava/util/EnumSet<*>;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/util/EnumSet;)Ljava/util/EnumSet<*>; # @Generated(PolyNull)
+createContextual
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueDeserializer<*>;
+ (L1tools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueDeserializer<*>; # @Overrides(tools.jackson.databind.ValueDeserializer)
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/util/EnumSet<*>;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/util/EnumSet<*>; # @Generated(2)
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/util/EnumSet<*>;)Ljava/util/EnumSet<*>;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/util/EnumSet<*>;)Ljava/util/EnumSet<*>; # @Generated(2)
+deserializeWithType
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;L1tools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object; # @Inherited(tools.jackson.databind.deser.std.StdDeserializer)
+getEmptyAccessPattern
+ ()Ltools/jackson/databind/util/AccessPattern;
+ ()L1tools/jackson/databind/util/AccessPattern; # @Inherited(tools.jackson.databind.ValueDeserializer)
+getEmptyValue
+ (Ltools/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+ (Ltools/jackson/databind/DeserializationContext;)Ljava/lang/Object;
+handleNonArray
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/util/EnumSet;)Ljava/util/EnumSet<*>;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/util/EnumSet;)Ljava/util/EnumSet<*>;
+logicalType
+ ()Ltools/jackson/databind/type/LogicalType;
+ ()L1tools/jackson/databind/type/LogicalType; # @Overrides(tools.jackson.databind.ValueDeserializer)
+supportsUpdate
+ (Ltools/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+ (Ltools/jackson/databind/DeserializationConfig;)L1java/lang/Boolean; # @Overrides(tools.jackson.databind.ValueDeserializer)
+withDeserializer
+ (Ltools/jackson/databind/ValueDeserializer<*>;)Ltools/jackson/databind/deser/jdk/EnumSetDeserializer;
+ (Ltools/jackson/databind/ValueDeserializer<*>;)L1tools/jackson/databind/deser/jdk/EnumSetDeserializer; # @Generated(48)
+withResolved
+ (Ltools/jackson/databind/ValueDeserializer<*>;Ltools/jackson/databind/deser/NullValueProvider;Ljava/lang/Boolean;)Ltools/jackson/databind/deser/jdk/EnumSetDeserializer;
+ (Ltools/jackson/databind/ValueDeserializer<*>;Ltools/jackson/databind/deser/NullValueProvider;Ljava/lang/Boolean;)L1tools/jackson/databind/deser/jdk/EnumSetDeserializer; # @Generated(115)

@@ -1,0 +1,72 @@
+class tools/jackson/databind/jsontype/impl/TypeDeserializerBase
+
+_baseType
+ Ltools/jackson/databind/JavaType;
+ Ltools/jackson/databind/JavaType;
+_defaultImpl
+ Ltools/jackson/databind/JavaType;
+ Ltools/jackson/databind/JavaType;
+_defaultImplDeserializer
+ Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;
+ Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;
+_deserializers
+ Ljava/util/Map<Ljava/lang/String;Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;>;
+ Ljava/util/Map<Ljava/lang/String;Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;>;
+_idResolver
+ Ltools/jackson/databind/jsontype/TypeIdResolver;
+ Ltools/jackson/databind/jsontype/TypeIdResolver;
+_property
+ Ltools/jackson/databind/BeanProperty;
+ Ltools/jackson/databind/BeanProperty;
+_typePropertyName
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ltools/jackson/databind/JavaType;Ltools/jackson/databind/jsontype/TypeIdResolver;Ljava/lang/String;ZLtools/jackson/databind/JavaType;)V
+ (Ltools/jackson/databind/JavaType;Ltools/jackson/databind/jsontype/TypeIdResolver;Ljava/lang/String;ZLtools/jackson/databind/JavaType;)V
+<init>
+ (Ltools/jackson/databind/jsontype/impl/TypeDeserializerBase;Ltools/jackson/databind/BeanProperty;)V
+ (L1tools/jackson/databind/jsontype/impl/TypeDeserializerBase;Ltools/jackson/databind/BeanProperty;)V # @Generated(2)
+_deserializeWithNativeTypeId
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/lang/Object;)Ljava/lang/Object;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/lang/Object;)Ljava/lang/Object;
+_findDefaultImplDeserializer
+ (Ltools/jackson/databind/DeserializationContext;)Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;
+ (Ltools/jackson/databind/DeserializationContext;)L0tools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>; # @Generated(50)
+_findDeserializer
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/String;)Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/String;)Ltools/jackson/databind/ValueDeserializer<Ljava/lang/Object;>;
+_handleMissingTypeId
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/String;)Ltools/jackson/databind/JavaType;
+ (L1tools/jackson/databind/DeserializationContext;Ljava/lang/String;)Ltools/jackson/databind/JavaType; # @Generated(2)
+_handleUnknownTypeId
+ (Ltools/jackson/databind/DeserializationContext;Ljava/lang/String;)Ltools/jackson/databind/JavaType;
+ (L1tools/jackson/databind/DeserializationContext;Ljava/lang/String;)Ltools/jackson/databind/JavaType; # @Generated(2)
+baseType
+ ()Ltools/jackson/databind/JavaType;
+ ()Ltools/jackson/databind/JavaType;
+baseTypeName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+deserializeTypedWithKnownTypeId
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Object;
+ (Ltools/jackson/core/JsonParser;L1tools/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/lang/Object; # @Inherited(tools.jackson.databind.jsontype.TypeDeserializer)
+forProperty
+ (Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/jsontype/TypeDeserializer;
+ (Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/jsontype/TypeDeserializer;
+getDefaultImpl
+ ()Ljava/lang/Class<*>;
+ ()Ljava/lang/Class<*>;
+getPropertyName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+getTypeIdResolver
+ ()Ltools/jackson/databind/jsontype/TypeIdResolver;
+ ()Ltools/jackson/databind/jsontype/TypeIdResolver;
+getTypeInclusion
+ ()Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;
+ ()Lcom/fasterxml/jackson/annotation/JsonTypeInfo$As;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(java.lang.Object)

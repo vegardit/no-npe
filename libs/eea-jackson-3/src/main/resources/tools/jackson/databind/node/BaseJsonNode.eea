@@ -1,0 +1,228 @@
+class tools/jackson/databind/node/BaseJsonNode
+
+OPT_FALSE
+ Ljava/util/Optional<Ljava/lang/Boolean;>;
+ Ljava/util/Optional<Ljava/lang/Boolean;>;
+OPT_TRUE
+ Ljava/util/Optional<Ljava/lang/Boolean;>;
+ Ljava/util/Optional<Ljava/lang/Boolean;>;
+
+_asBoolean
+ ()Ljava/lang/Boolean;
+ ()L0java/lang/Boolean; # @Generated
+_asString
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+_jsonPointerIfValid
+ (Ljava/lang/String;)Ltools/jackson/core/JsonPointer;
+ (L1java/lang/String;)L0tools/jackson/core/JsonPointer; # @Generated(2,21)
+_reportBigDecimalConversionNaNFail
+ (Ljava/lang/String;)Ljava/math/BigDecimal;
+ (Ljava/lang/String;)Ljava/math/BigDecimal;
+_reportBigIntegerConversionFractionFail
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+_reportBigIntegerConversionNaNFail
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+ (Ljava/lang/String;)Ljava/math/BigInteger;
+_reportCoercionFail
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<*>;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<*>;)TT;
+_reportCoercionFail
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<*>;Ljava/lang/String;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<*>;Ljava/lang/String;)TT;
+_reportConversionFail
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<*>;Ljava/lang/String;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;Ljava/lang/Class<*>;Ljava/lang/String;)TT;
+_reportDoubleConversionRangeFail
+ (Ljava/lang/String;)D
+ (Ljava/lang/String;)D
+_reportFloatConversionRangeFail
+ (Ljava/lang/String;)F
+ (Ljava/lang/String;)F
+_reportIntConversionFractionFail
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+_reportIntConversionNaNFail
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+_reportIntConversionRangeFail
+ (Ljava/lang/String;)I
+ (Ljava/lang/String;)I
+_reportLongConversionFractionFail
+ (Ljava/lang/String;)J
+ (Ljava/lang/String;)J
+_reportLongConversionNaNFail
+ (Ljava/lang/String;)J
+ (Ljava/lang/String;)J
+_reportLongConversionRangeFail
+ (Ljava/lang/String;)J
+ (Ljava/lang/String;)J
+_reportShortConversionFractionFail
+ (Ljava/lang/String;)S
+ (Ljava/lang/String;)S
+_reportShortConversionRangeFail
+ (Ljava/lang/String;)S
+ (Ljava/lang/String;)S
+_reportWrongNodeType
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;)TT;
+ <T:Ljava/lang/Object;>(Ljava/lang/String;[Ljava/lang/Object;)TT;
+_valueDesc
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+_withArray
+ (Ltools/jackson/core/JsonPointer;Ltools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;Z)Ltools/jackson/databind/node/ArrayNode;
+ (Ltools/jackson/core/JsonPointer;Ltools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;Z)L0tools/jackson/databind/node/ArrayNode; # @Generated(115)
+_withObject
+ (Ltools/jackson/core/JsonPointer;Ltools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;Z)Ltools/jackson/databind/node/ObjectNode;
+ (Ltools/jackson/core/JsonPointer;Ltools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;Z)L0tools/jackson/databind/node/ObjectNode; # @Generated(115)
+_withXxxMayReplace
+ (Ltools/jackson/databind/JsonNode;Ltools/jackson/databind/JsonNode$OverwriteMode;)Z
+ (Ltools/jackson/databind/JsonNode;L1tools/jackson/databind/JsonNode$OverwriteMode;)Z # @Generated(35)
+_withXxxVerifyReplace
+ (Ltools/jackson/core/JsonPointer;Ltools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;ZLtools/jackson/databind/JsonNode;)V
+ (Ltools/jackson/core/JsonPointer;Ltools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;ZLtools/jackson/databind/JsonNode;)V
+asArray
+ ()Ltools/jackson/databind/node/ArrayNode;
+ ()Ltools/jackson/databind/node/ArrayNode;
+asArrayOpt
+ ()Ljava/util/Optional<Ltools/jackson/databind/node/ArrayNode;>;
+ ()L1java/util/Optional<Ltools/jackson/databind/node/ArrayNode;>; # @Inherited(tools.jackson.databind.JsonNode)
+asBigInteger
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+asBigInteger
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger;
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger; # @Generated(PolyNull)
+asBigIntegerOpt
+ ()Ljava/util/Optional<Ljava/math/BigInteger;>;
+ ()L1java/util/Optional<Ljava/math/BigInteger;>; # @Inherited(tools.jackson.databind.JsonNode)
+asBooleanOpt
+ ()Ljava/util/Optional<Ljava/lang/Boolean;>;
+ ()L1java/util/Optional<Ljava/lang/Boolean;>; # @Inherited(tools.jackson.databind.JsonNode)
+asDecimal
+ ()Ljava/math/BigDecimal;
+ ()Ljava/math/BigDecimal;
+asDecimal
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal; # @Generated(PolyNull)
+asDecimalOpt
+ ()Ljava/util/Optional<Ljava/math/BigDecimal;>;
+ ()L1java/util/Optional<Ljava/math/BigDecimal;>; # @Inherited(tools.jackson.databind.JsonNode)
+asDoubleOpt
+ ()Ljava/util/OptionalDouble;
+ ()L1java/util/OptionalDouble; # @Generated
+asFloatOpt
+ ()Ljava/util/Optional<Ljava/lang/Float;>;
+ ()L1java/util/Optional<Ljava/lang/Float;>; # @Inherited(tools.jackson.databind.JsonNode)
+asIntOpt
+ ()Ljava/util/OptionalInt;
+ ()L1java/util/OptionalInt; # @Generated
+asLongOpt
+ ()Ljava/util/OptionalLong;
+ ()L1java/util/OptionalLong; # @Generated
+asObject
+ ()Ltools/jackson/databind/node/ObjectNode;
+ ()Ltools/jackson/databind/node/ObjectNode;
+asObjectOpt
+ ()Ljava/util/Optional<Ltools/jackson/databind/node/ObjectNode;>;
+ ()L1java/util/Optional<Ltools/jackson/databind/node/ObjectNode;>; # @Inherited(tools.jackson.databind.JsonNode)
+asShortOpt
+ ()Ljava/util/Optional<Ljava/lang/Short;>;
+ ()L1java/util/Optional<Ljava/lang/Short;>; # @Inherited(tools.jackson.databind.JsonNode)
+asString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+asString
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+asStringOpt
+ ()Ljava/util/Optional<Ljava/lang/String;>;
+ ()L1java/util/Optional<Ljava/lang/String;>; # @Inherited(tools.jackson.databind.JsonNode)
+asToken
+ ()Ltools/jackson/core/JsonToken;
+ ()Ltools/jackson/core/JsonToken;
+bigIntegerValue
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+bigIntegerValue
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger;
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger; # @Generated(PolyNull)
+bigIntegerValueOpt
+ ()Ljava/util/Optional<Ljava/math/BigInteger;>;
+ ()L1java/util/Optional<Ljava/math/BigInteger;>; # @Inherited(tools.jackson.databind.JsonNode)
+binaryValue
+ ()[B
+ ()[B
+booleanValueOpt
+ ()Ljava/util/Optional<Ljava/lang/Boolean;>;
+ ()L1java/util/Optional<Ljava/lang/Boolean;>; # @Inherited(tools.jackson.databind.JsonNode)
+decimalValue
+ ()Ljava/math/BigDecimal;
+ ()Ljava/math/BigDecimal;
+decimalValue
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal; # @Generated(PolyNull)
+decimalValueOpt
+ ()Ljava/util/Optional<Ljava/math/BigDecimal;>;
+ ()L1java/util/Optional<Ljava/math/BigDecimal;>; # @Inherited(tools.jackson.databind.JsonNode)
+doubleValueOpt
+ ()Ljava/util/OptionalDouble;
+ ()L1java/util/OptionalDouble; # @Generated
+findPath
+ (Ljava/lang/String;)Ltools/jackson/databind/JsonNode;
+ (Ljava/lang/String;)L1tools/jackson/databind/JsonNode; # @Generated(21)
+floatValueOpt
+ ()Ljava/util/Optional<Ljava/lang/Float;>;
+ ()L1java/util/Optional<Ljava/lang/Float;>; # @Inherited(tools.jackson.databind.JsonNode)
+intValueOpt
+ ()Ljava/util/OptionalInt;
+ ()L1java/util/OptionalInt; # @Generated
+longValueOpt
+ ()Ljava/util/OptionalLong;
+ ()L1java/util/OptionalLong; # @Generated
+numberType
+ ()Ltools/jackson/core/JsonParser$NumberType;
+ ()L0tools/jackson/core/JsonParser$NumberType; # @Generated
+numberValue
+ ()Ljava/lang/Number;
+ ()Ljava/lang/Number;
+required
+ (I)Ltools/jackson/databind/JsonNode;
+ (I)Ltools/jackson/databind/JsonNode;
+required
+ (Ljava/lang/String;)Ltools/jackson/databind/JsonNode;
+ (Ljava/lang/String;)Ltools/jackson/databind/JsonNode;
+serialize
+ (Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+serializeWithType
+ (Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+shortValueOpt
+ ()Ljava/util/Optional<Ljava/lang/Short;>;
+ ()L1java/util/Optional<Ljava/lang/Short;>; # @Inherited(tools.jackson.databind.JsonNode)
+stringValue
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+stringValue
+ (Ljava/lang/String;)Ljava/lang/String;
+ (Ljava/lang/String;)Ljava/lang/String; # @Generated(PolyNull)
+stringValueOpt
+ ()Ljava/util/Optional<Ljava/lang/String;>;
+ ()L1java/util/Optional<Ljava/lang/String;>; # @Inherited(tools.jackson.databind.JsonNode)
+toPrettyString
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+toString
+ ()Ljava/lang/String;
+ ()L1java/lang/String; # @Inherited(tools.jackson.databind.JsonNode)
+traverse
+ (Ltools/jackson/core/ObjectReadContext;)Ltools/jackson/core/JsonParser;
+ (L1tools/jackson/core/ObjectReadContext;)L1tools/jackson/core/JsonParser; # @Generated(2,41)
+withArray
+ (Ltools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;Z)Ltools/jackson/databind/node/ArrayNode;
+ (L1tools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;Z)L0tools/jackson/databind/node/ArrayNode; # @Generated(2,83)
+withObject
+ (Ltools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;Z)Ltools/jackson/databind/node/ObjectNode;
+ (L1tools/jackson/core/JsonPointer;Ltools/jackson/databind/JsonNode$OverwriteMode;Z)L0tools/jackson/databind/node/ObjectNode; # @Generated(2,83)

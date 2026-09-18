@@ -1,0 +1,47 @@
+class tools/jackson/databind/ext/javatime/deser/DurationDeserializer
+
+super tools/jackson/databind/ext/javatime/deser/JSR310DeserializerBase
+ <Ljava/time/Duration;>
+ <Ljava/time/Duration;>
+
+INSTANCE
+ Ltools/jackson/databind/ext/javatime/deser/DurationDeserializer;
+ L1tools/jackson/databind/ext/javatime/deser/DurationDeserializer; # @Generated
+
+_durationUnitConverter
+ Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;
+ Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;
+_readTimestampsAsNanosOverride
+ Ljava/lang/Boolean;
+ Ljava/lang/Boolean;
+
+<init>
+ (Ltools/jackson/databind/ext/javatime/deser/DurationDeserializer;Ljava/lang/Boolean;)V
+ (L1tools/jackson/databind/ext/javatime/deser/DurationDeserializer;Ljava/lang/Boolean;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/ext/javatime/deser/DurationDeserializer;Ljava/lang/Boolean;Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;Ljava/lang/Boolean;)V
+ (L1tools/jackson/databind/ext/javatime/deser/DurationDeserializer;Ljava/lang/Boolean;Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;Ljava/lang/Boolean;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/ext/javatime/deser/DurationDeserializer;Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;)V
+ (L1tools/jackson/databind/ext/javatime/deser/DurationDeserializer;Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;)V # @Generated(2)
+_fromString
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/lang/String;)Ljava/time/Duration;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;L1java/lang/String;)Ljava/time/Duration; # @Generated(80)
+_fromTimestamp
+ (Ltools/jackson/databind/DeserializationContext;J)Ljava/time/Duration;
+ (Ltools/jackson/databind/DeserializationContext;J)Ljava/time/Duration;
+createContextual
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)Ltools/jackson/databind/ValueDeserializer<*>;
+ (Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/BeanProperty;)L1tools/jackson/databind/ValueDeserializer<*>; # @Inherited(tools.jackson.databind.ValueDeserializer)
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/time/Duration;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)L0java/time/Duration; # @Generated(2,81)
+shouldReadTimestampsAsNanoseconds
+ (Ltools/jackson/databind/DeserializationContext;)Z
+ (Ltools/jackson/databind/DeserializationContext;)Z
+withConverter
+ (Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;)Ltools/jackson/databind/ext/javatime/deser/DurationDeserializer;
+ (Ltools/jackson/databind/ext/javatime/util/DurationUnitConverter;)L1tools/jackson/databind/ext/javatime/deser/DurationDeserializer; # @Generated(67)
+withLeniency
+ (Ljava/lang/Boolean;)Ltools/jackson/databind/ext/javatime/deser/DurationDeserializer;
+ (Ljava/lang/Boolean;)L1tools/jackson/databind/ext/javatime/deser/DurationDeserializer; # @Generated(22)

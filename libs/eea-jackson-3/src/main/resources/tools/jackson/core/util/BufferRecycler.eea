@@ -1,0 +1,40 @@
+class tools/jackson/core/util/BufferRecycler
+
+super tools/jackson/core/util/RecyclerPool$WithPool
+ <Ltools/jackson/core/util/BufferRecycler;>
+ <Ltools/jackson/core/util/BufferRecycler;>
+
+_byteBuffers
+ Ljava/util/concurrent/atomic/AtomicReferenceArray<[B>;
+ Ljava/util/concurrent/atomic/AtomicReferenceArray<[B>;
+_charBuffers
+ Ljava/util/concurrent/atomic/AtomicReferenceArray<[C>;
+ Ljava/util/concurrent/atomic/AtomicReferenceArray<[C>;
+
+allocByteBuffer
+ (I)[B
+ (I)[B
+allocByteBuffer
+ (II)[B
+ (II)[B
+allocCharBuffer
+ (I)[C
+ (I)[C
+allocCharBuffer
+ (II)[C
+ (II)[C
+balloc
+ (I)[B
+ (I)[1B # @Generated
+calloc
+ (I)[C
+ (I)[1C # @Generated
+releaseByteBuffer
+ (I[B)V
+ (I[B)V
+releaseCharBuffer
+ (I[C)V
+ (I[C)V
+withPool
+ (Ltools/jackson/core/util/RecyclerPool<Ltools/jackson/core/util/BufferRecycler;>;)Ltools/jackson/core/util/BufferRecycler;
+ (L1tools/jackson/core/util/RecyclerPool<Ltools/jackson/core/util/BufferRecycler;>;)L1tools/jackson/core/util/BufferRecycler; # @Generated(2,83)

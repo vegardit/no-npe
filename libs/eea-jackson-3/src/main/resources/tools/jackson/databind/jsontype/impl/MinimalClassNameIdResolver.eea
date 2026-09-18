@@ -1,0 +1,28 @@
+class tools/jackson/databind/jsontype/impl/MinimalClassNameIdResolver
+
+construct
+ (Ltools/jackson/databind/JavaType;Ljava/util/Collection<Ltools/jackson/databind/jsontype/NamedType;>;Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;)Ltools/jackson/databind/jsontype/impl/MinimalClassNameIdResolver;
+ (L1tools/jackson/databind/JavaType;Ljava/util/Collection<Ltools/jackson/databind/jsontype/NamedType;>;Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;)L1tools/jackson/databind/jsontype/impl/MinimalClassNameIdResolver; # @Generated(2,161)
+
+_basePackageName
+ Ljava/lang/String;
+ Ljava/lang/String;
+_basePackagePrefix
+ Ljava/lang/String;
+ Ljava/lang/String;
+
+<init>
+ (Ltools/jackson/databind/JavaType;Ljava/util/Collection<Ltools/jackson/databind/jsontype/NamedType;>;Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;)V
+ (L1tools/jackson/databind/JavaType;Ljava/util/Collection<Ltools/jackson/databind/jsontype/NamedType;>;Ltools/jackson/databind/jsontype/PolymorphicTypeValidator;)V # @Generated(2)
+_typeFromId
+ (Ltools/jackson/databind/DatabindContext;Ljava/lang/String;)Ltools/jackson/databind/JavaType;
+ (L1tools/jackson/databind/DatabindContext;L1java/lang/String;)L0tools/jackson/databind/JavaType; # @Overrides(tools.jackson.databind.jsontype.impl.ClassNameIdResolver)
+getMechanism
+ ()Lcom/fasterxml/jackson/annotation/JsonTypeInfo$Id;
+ ()L1com/fasterxml/jackson/annotation/JsonTypeInfo$Id; # @Inherited(tools.jackson.databind.jsontype.impl.ClassNameIdResolver)
+idFromValue
+ (Ltools/jackson/databind/DatabindContext;Ljava/lang/Object;)Ljava/lang/String;
+ (Ltools/jackson/databind/DatabindContext;L1java/lang/Object;)Ljava/lang/String; # @Inherited(tools.jackson.databind.jsontype.impl.ClassNameIdResolver)
+idFromValueAndType
+ (Ltools/jackson/databind/DatabindContext;Ljava/lang/Object;Ljava/lang/Class<*>;)Ljava/lang/String;
+ (Ltools/jackson/databind/DatabindContext;Ljava/lang/Object;Ljava/lang/Class<*>;)L1java/lang/String; # @Generated(81)

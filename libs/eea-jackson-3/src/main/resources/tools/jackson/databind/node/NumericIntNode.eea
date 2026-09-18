@@ -1,0 +1,50 @@
+class tools/jackson/databind/node/NumericIntNode
+
+asBigInteger
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+asBigInteger
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger;
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger; # @Inherited(tools.jackson.databind.node.BaseJsonNode)
+asBigIntegerOpt
+ ()Ljava/util/Optional<Ljava/math/BigInteger;>;
+ ()L1java/util/Optional<Ljava/math/BigInteger;>; # @Inherited(tools.jackson.databind.node.NumericNode)
+asDecimal
+ ()Ljava/math/BigDecimal;
+ ()Ljava/math/BigDecimal;
+asDecimal
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal; # @Inherited(tools.jackson.databind.node.BaseJsonNode)
+asDecimalOpt
+ ()Ljava/util/Optional<Ljava/math/BigDecimal;>;
+ ()L1java/util/Optional<Ljava/math/BigDecimal;>; # @Inherited(tools.jackson.databind.node.NumericNode)
+asDoubleOpt
+ ()Ljava/util/OptionalDouble;
+ ()L1java/util/OptionalDouble; # @Inherited(tools.jackson.databind.node.NumericNode)
+asFloatOpt
+ ()Ljava/util/Optional<Ljava/lang/Float;>;
+ ()L1java/util/Optional<Ljava/lang/Float;>; # @Inherited(tools.jackson.databind.node.NumericNode)
+asToken
+ ()Ltools/jackson/core/JsonToken;
+ ()L1tools/jackson/core/JsonToken; # @Generated
+bigIntegerValue
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+bigIntegerValue
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger;
+ (Ljava/math/BigInteger;)Ljava/math/BigInteger; # @Inherited(tools.jackson.databind.node.BaseJsonNode)
+bigIntegerValueOpt
+ ()Ljava/util/Optional<Ljava/math/BigInteger;>;
+ ()L1java/util/Optional<Ljava/math/BigInteger;>; # @Inherited(tools.jackson.databind.node.NumericNode)
+decimalValue
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+ (Ljava/math/BigDecimal;)Ljava/math/BigDecimal; # @Inherited(tools.jackson.databind.node.BaseJsonNode)
+decimalValueOpt
+ ()Ljava/util/Optional<Ljava/math/BigDecimal;>;
+ ()L1java/util/Optional<Ljava/math/BigDecimal;>; # @Inherited(tools.jackson.databind.node.NumericNode)
+doubleValueOpt
+ ()Ljava/util/OptionalDouble;
+ ()L1java/util/OptionalDouble; # @Inherited(tools.jackson.databind.node.NumericNode)
+floatValueOpt
+ ()Ljava/util/Optional<Ljava/lang/Float;>;
+ ()L1java/util/Optional<Ljava/lang/Float;>; # @Inherited(tools.jackson.databind.node.NumericNode)

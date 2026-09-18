@@ -1,0 +1,15 @@
+class tools/jackson/databind/ext/jdk8/OptionalIntSerializer
+
+super tools/jackson/databind/ser/std/StdScalarSerializer
+ <Ljava/util/OptionalInt;>
+ <Ljava/util/OptionalInt;>
+
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdScalarSerializer)
+isEmpty
+ (Ltools/jackson/databind/SerializationContext;Ljava/util/OptionalInt;)Z
+ (Ltools/jackson/databind/SerializationContext;L0java/util/OptionalInt;)Z # @Generated(47)
+serialize
+ (Ljava/util/OptionalInt;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1java/util/OptionalInt;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2,25)

@@ -1,0 +1,117 @@
+class tools/jackson/databind/util/TokenBuffer$Parser
+
+_byteBuilder
+ Ltools/jackson/core/util/ByteArrayBuilder;
+ Ltools/jackson/core/util/ByteArrayBuilder;
+_location
+ Ltools/jackson/core/TokenStreamLocation;
+ Ltools/jackson/core/TokenStreamLocation;
+_parsingContext
+ Ltools/jackson/databind/util/TokenBufferReadContext;
+ Ltools/jackson/databind/util/TokenBufferReadContext;
+_segment
+ Ltools/jackson/databind/util/TokenBuffer$Segment;
+ Ltools/jackson/databind/util/TokenBuffer$Segment;
+_source
+ Ltools/jackson/databind/util/TokenBuffer;
+ Ltools/jackson/databind/util/TokenBuffer;
+_streamReadConstraints
+ Ltools/jackson/core/StreamReadConstraints;
+ Ltools/jackson/core/StreamReadConstraints;
+
+<init>
+ (Ltools/jackson/core/ObjectReadContext;Ltools/jackson/databind/util/TokenBuffer;Ltools/jackson/databind/util/TokenBuffer$Segment;ZZLtools/jackson/core/TokenStreamContext;Ltools/jackson/core/StreamReadConstraints;)V
+ (L1tools/jackson/core/ObjectReadContext;Ltools/jackson/databind/util/TokenBuffer;Ltools/jackson/databind/util/TokenBuffer$Segment;ZZLtools/jackson/core/TokenStreamContext;Ltools/jackson/core/StreamReadConstraints;)V # @Generated(2)
+_convertNumberToInt
+ (Ljava/lang/Number;)I
+ (L1java/lang/Number;)I # @Generated
+_convertNumberToLong
+ (Ljava/lang/Number;)J
+ (L1java/lang/Number;)J # @Generated
+_currentObject
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+assignCurrentValue
+ (Ljava/lang/Object;)V
+ (Ljava/lang/Object;)V
+currentLocation
+ ()Ltools/jackson/core/TokenStreamLocation;
+ ()Ltools/jackson/core/TokenStreamLocation;
+currentName
+ ()Ljava/lang/String;
+ ()Ljava/lang/String;
+currentTokenLocation
+ ()Ltools/jackson/core/TokenStreamLocation;
+ ()Ltools/jackson/core/TokenStreamLocation;
+currentValue
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getBigIntegerValue
+ ()Ljava/math/BigInteger;
+ ()Ljava/math/BigInteger;
+getBinaryValue
+ (Ltools/jackson/core/Base64Variant;)[B
+ (Ltools/jackson/core/Base64Variant;)[0B # @Generated(37)
+getDecimalValue
+ ()Ljava/math/BigDecimal;
+ ()Ljava/math/BigDecimal;
+getEmbeddedObject
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(tools.jackson.core.base.ParserMinimalBase)
+getNumberType
+ ()Ltools/jackson/core/JsonParser$NumberType;
+ ()L0tools/jackson/core/JsonParser$NumberType; # @Generated
+getNumberTypeFP
+ ()Ltools/jackson/core/JsonParser$NumberTypeFP;
+ ()L1tools/jackson/core/JsonParser$NumberTypeFP; # @Inherited(tools.jackson.core.base.ParserMinimalBase)
+getNumberValue
+ ()Ljava/lang/Number;
+ ()Ljava/lang/Number;
+getNumberValueDeferred
+ ()Ljava/lang/Object;
+ ()Ljava/lang/Object;
+getObjectId
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(tools.jackson.core.JsonParser)
+getString
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Generated
+getStringCharacters
+ ()[C
+ ()[0C # @Generated
+getTypeId
+ ()Ljava/lang/Object;
+ ()L0java/lang/Object; # @Inherited(tools.jackson.core.JsonParser)
+nextName
+ ()Ljava/lang/String;
+ ()L0java/lang/String; # @Inherited(tools.jackson.core.base.ParserMinimalBase)
+nextNameMatch
+ (Ltools/jackson/core/sym/PropertyNameMatcher;)I
+ (Ltools/jackson/core/sym/PropertyNameMatcher;)I
+nextToken
+ ()Ltools/jackson/core/JsonToken;
+ ()L0tools/jackson/core/JsonToken; # @Generated
+peekNextToken
+ ()Ltools/jackson/core/JsonToken;
+ ()L0tools/jackson/core/JsonToken; # @Generated
+readBinaryValue
+ (Ltools/jackson/core/Base64Variant;Ljava/io/OutputStream;)I
+ (Ltools/jackson/core/Base64Variant;Ljava/io/OutputStream;)I
+setLocation
+ (Ltools/jackson/core/TokenStreamLocation;)V
+ (Ltools/jackson/core/TokenStreamLocation;)V
+streamReadCapabilities
+ ()Ltools/jackson/core/util/JacksonFeatureSet<Ltools/jackson/core/StreamReadCapability;>;
+ ()Ltools/jackson/core/util/JacksonFeatureSet<Ltools/jackson/core/StreamReadCapability;>;
+streamReadConstraints
+ ()Ltools/jackson/core/StreamReadConstraints;
+ ()Ltools/jackson/core/StreamReadConstraints;
+streamReadContext
+ ()Ltools/jackson/core/TokenStreamContext;
+ ()Ltools/jackson/core/TokenStreamContext;
+streamReadInputSource
+ ()Ltools/jackson/databind/util/TokenBuffer;
+ ()Ltools/jackson/databind/util/TokenBuffer;
+version
+ ()Ltools/jackson/core/Version;
+ ()Ltools/jackson/core/Version;

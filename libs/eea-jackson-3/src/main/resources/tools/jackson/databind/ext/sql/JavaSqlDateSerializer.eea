@@ -1,0 +1,22 @@
+class tools/jackson/databind/ext/sql/JavaSqlDateSerializer
+
+super tools/jackson/databind/ser/jdk/DateTimeSerializerBase
+ <Ljava/sql/Date;>
+ <Ljava/sql/Date;>
+
+instance
+ Ltools/jackson/databind/ext/sql/JavaSqlDateSerializer;
+ L1tools/jackson/databind/ext/sql/JavaSqlDateSerializer; # @Generated
+
+<init>
+ (Ljava/lang/Boolean;Ljava/text/DateFormat;)V
+ (Ljava/lang/Boolean;Ljava/text/DateFormat;)V
+_timestamp
+ (Ljava/sql/Date;)J
+ (L0java/sql/Date;)J # @Generated
+serialize
+ (Ljava/sql/Date;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljava/sql/Date;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+withFormat
+ (Ljava/lang/Boolean;Ljava/text/DateFormat;)Ltools/jackson/databind/ext/sql/JavaSqlDateSerializer;
+ (Ljava/lang/Boolean;Ljava/text/DateFormat;)L1tools/jackson/databind/ext/sql/JavaSqlDateSerializer; # @Generated(44)

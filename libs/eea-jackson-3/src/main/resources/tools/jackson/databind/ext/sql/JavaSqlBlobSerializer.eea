@@ -1,0 +1,25 @@
+class tools/jackson/databind/ext/sql/JavaSqlBlobSerializer
+
+super tools/jackson/databind/ser/std/StdScalarSerializer
+ <Ljava/sql/Blob;>
+ <Ljava/sql/Blob;>
+
+instance
+ Ltools/jackson/databind/ext/sql/JavaSqlBlobSerializer;
+ L1tools/jackson/databind/ext/sql/JavaSqlBlobSerializer; # @Generated
+
+_writeValue
+ (Ljava/sql/Blob;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1java/sql/Blob;L1tools/jackson/core/JsonGenerator;L1tools/jackson/databind/SerializationContext;)V # @Generated(2,17,51)
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdScalarSerializer)
+isEmpty
+ (Ltools/jackson/databind/SerializationContext;Ljava/sql/Blob;)Z
+ (Ltools/jackson/databind/SerializationContext;L0java/sql/Blob;)Z # @Generated(47)
+serialize
+ (Ljava/sql/Blob;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (Ljava/sql/Blob;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+serializeWithType
+ (Ljava/sql/Blob;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ (Ljava/sql/Blob;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;L1tools/jackson/databind/jsontype/TypeSerializer;)V # @Generated(96)

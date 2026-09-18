@@ -1,0 +1,15 @@
+class tools/jackson/databind/deser/jdk/ByteBufferDeserializer
+
+super tools/jackson/databind/deser/std/StdScalarDeserializer
+ <Ljava/nio/ByteBuffer;>
+ <Ljava/nio/ByteBuffer;>
+
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)Ljava/nio/ByteBuffer;
+ (L1tools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;)L1java/nio/ByteBuffer; # @Generated(2,81)
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer; # @Generated(PolyNull)
+logicalType
+ ()Ltools/jackson/databind/type/LogicalType;
+ ()L1tools/jackson/databind/type/LogicalType; # @Inherited(tools.jackson.databind.deser.std.StdScalarDeserializer)

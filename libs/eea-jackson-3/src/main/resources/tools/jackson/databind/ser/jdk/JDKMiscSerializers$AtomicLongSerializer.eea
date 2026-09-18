@@ -1,0 +1,12 @@
+class tools/jackson/databind/ser/jdk/JDKMiscSerializers$AtomicLongSerializer
+
+super tools/jackson/databind/ser/std/StdScalarSerializer
+ <Ljava/util/concurrent/atomic/AtomicLong;>
+ <Ljava/util/concurrent/atomic/AtomicLong;>
+
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdScalarSerializer)
+serialize
+ (Ljava/util/concurrent/atomic/AtomicLong;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1java/util/concurrent/atomic/AtomicLong;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2,42)

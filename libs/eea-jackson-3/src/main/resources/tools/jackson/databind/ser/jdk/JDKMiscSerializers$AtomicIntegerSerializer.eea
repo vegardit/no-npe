@@ -1,0 +1,12 @@
+class tools/jackson/databind/ser/jdk/JDKMiscSerializers$AtomicIntegerSerializer
+
+super tools/jackson/databind/ser/std/StdScalarSerializer
+ <Ljava/util/concurrent/atomic/AtomicInteger;>
+ <Ljava/util/concurrent/atomic/AtomicInteger;>
+
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdScalarSerializer)
+serialize
+ (Ljava/util/concurrent/atomic/AtomicInteger;Ltools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ (L1java/util/concurrent/atomic/AtomicInteger;L1tools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V # @Generated(2,45)

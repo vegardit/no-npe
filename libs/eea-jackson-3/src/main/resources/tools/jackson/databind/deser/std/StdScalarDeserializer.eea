@@ -1,0 +1,38 @@
+class tools/jackson/databind/deser/std/StdScalarDeserializer
+ <T:Ljava/lang/Object;>
+ <T:Ljava/lang/Object;>
+
+super tools/jackson/databind/deser/std/StdDeserializer
+ <TT;>
+ <TT;>
+
+<init>
+ (Ljava/lang/Class<*>;)V
+ (L1java/lang/Class<*>;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/JavaType;)V # @Generated
+<init>
+ (Ltools/jackson/databind/deser/std/StdDeserializer<*>;)V
+ (L1tools/jackson/databind/deser/std/StdDeserializer<*>;)V # @Generated(2)
+<init>
+ (Ltools/jackson/databind/deser/std/StdScalarDeserializer<*>;)V
+ (L1tools/jackson/databind/deser/std/StdScalarDeserializer<*>;)V # @Generated(2)
+deserialize
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;TT;)TT;
+ (Ltools/jackson/core/JsonParser;L1tools/jackson/databind/DeserializationContext;TT;)TT; # @Inherited(tools.jackson.databind.ValueDeserializer)
+deserializeWithType
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;Ltools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object;
+ (Ltools/jackson/core/JsonParser;Ltools/jackson/databind/DeserializationContext;L1tools/jackson/databind/jsontype/TypeDeserializer;)Ljava/lang/Object; # @Inherited(tools.jackson.databind.deser.std.StdDeserializer)
+getEmptyAccessPattern
+ ()Ltools/jackson/databind/util/AccessPattern;
+ ()L1tools/jackson/databind/util/AccessPattern; # @Inherited(tools.jackson.databind.ValueDeserializer)
+getNullAccessPattern
+ ()Ltools/jackson/databind/util/AccessPattern;
+ ()L1tools/jackson/databind/util/AccessPattern; # @Inherited(tools.jackson.databind.ValueDeserializer)
+logicalType
+ ()Ltools/jackson/databind/type/LogicalType;
+ ()L1tools/jackson/databind/type/LogicalType; # @Overrides(tools.jackson.databind.ValueDeserializer)
+supportsUpdate
+ (Ltools/jackson/databind/DeserializationConfig;)Ljava/lang/Boolean;
+ (Ltools/jackson/databind/DeserializationConfig;)L1java/lang/Boolean; # @Overrides(tools.jackson.databind.ValueDeserializer)

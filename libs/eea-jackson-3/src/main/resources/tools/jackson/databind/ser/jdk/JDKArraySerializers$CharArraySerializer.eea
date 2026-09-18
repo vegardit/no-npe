@@ -1,0 +1,18 @@
+class tools/jackson/databind/ser/jdk/JDKArraySerializers$CharArraySerializer
+
+super tools/jackson/databind/ser/std/StdSerializer
+ <[C>
+ <[C>
+
+acceptJsonFormatVisitor
+ (Ltools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V
+ (L1tools/jackson/databind/jsonFormatVisitors/JsonFormatVisitorWrapper;Ltools/jackson/databind/JavaType;)V # @Inherited(tools.jackson.databind.ser.std.StdSerializer)
+isEmpty
+ (Ltools/jackson/databind/SerializationContext;[C)Z
+ (Ltools/jackson/databind/SerializationContext;[1C)Z # @Generated(47)
+serialize
+ ([CLtools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;)V
+ ([1CL1tools/jackson/core/JsonGenerator;L1tools/jackson/databind/SerializationContext;)V # @Generated(2,4,38)
+serializeWithType
+ ([CLtools/jackson/core/JsonGenerator;Ltools/jackson/databind/SerializationContext;Ltools/jackson/databind/jsontype/TypeSerializer;)V
+ ([1CLtools/jackson/core/JsonGenerator;L1tools/jackson/databind/SerializationContext;L1tools/jackson/databind/jsontype/TypeSerializer;)V # @Generated(2,38,83)
