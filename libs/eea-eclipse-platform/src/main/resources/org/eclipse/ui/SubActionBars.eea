@@ -24,7 +24,7 @@ firePropertyChange
  (Lorg/eclipse/jface/util/PropertyChangeEvent;)V
 getGlobalActionHandler
  (Ljava/lang/String;)Lorg/eclipse/jface/action/IAction;
- (Ljava/lang/String;)L0org/eclipse/jface/action/IAction; # @Generated(21)
+ (Ljava/lang/String;)L0org/eclipse/jface/action/IAction; # @Inherited(org.eclipse.ui.IActionBars)
 getGlobalActionHandlers
  ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/action/IAction;>;
  ()Ljava/util/Map<Ljava/lang/String;Lorg/eclipse/jface/action/IAction;>;
@@ -36,7 +36,7 @@ getParent
  ()Lorg/eclipse/ui/IActionBars;
 getServiceLocator
  ()Lorg/eclipse/ui/services/IServiceLocator;
- ()Lorg/eclipse/ui/services/IServiceLocator;
+ ()L1org/eclipse/ui/services/IServiceLocator; # @Inherited(org.eclipse.ui.IActionBars)
 getStatusLineManager
  ()Lorg/eclipse/jface/action/IStatusLineManager;
  ()Lorg/eclipse/jface/action/IStatusLineManager;
@@ -51,7 +51,7 @@ removePropertyChangeListener
  (L1org/eclipse/jface/util/IPropertyChangeListener;)V # @Generated
 setGlobalActionHandler
  (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
- (Ljava/lang/String;Lorg/eclipse/jface/action/IAction;)V
+ (Ljava/lang/String;L0org/eclipse/jface/action/IAction;)V # @Inherited(org.eclipse.ui.IActionBars)
 setServiceLocator
  (Lorg/eclipse/ui/services/IServiceLocator;)V
  (L1org/eclipse/ui/services/IServiceLocator;)V # @Generated
