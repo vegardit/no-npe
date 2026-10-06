@@ -1,11 +1,18 @@
 class org/apache/commons/lang3/builder/RecursiveToStringStyle
 
+builder
+ ()Lorg/apache/commons/lang3/builder/RecursiveToStringStyle$Builder;
+ ()L1org/apache/commons/lang3/builder/RecursiveToStringStyle$Builder; # @Generated
+
 accept
  (Ljava/lang/Class<*>;)Z
  (Ljava/lang/Class<*>;)Z
 appendDetail
  (Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/lang/Object;)V
- (L1java/lang/StringBuffer;Ljava/lang/String;L1java/lang/Object;)V # @Overrides(org.apache.commons.lang3.builder.ToStringStyle)
+ (L1java/lang/StringBuffer;Ljava/lang/String;Ljava/lang/Object;)V # @Inherited(org.apache.commons.lang3.builder.ToStringStyle)
 appendDetail
  (Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/util/Collection<*>;)V
- (L1java/lang/StringBuffer;Ljava/lang/String;L1java/util/Collection<*>;)V # @Overrides(org.apache.commons.lang3.builder.ToStringStyle)
+ (L1java/lang/StringBuffer;Ljava/lang/String;L1java/util/Collection<*>;)V # @Inherited(org.apache.commons.lang3.builder.ToStringStyle)
+appendInternal
+ (Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/lang/Object;Z)V
+ (Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/lang/Object;Z)V
