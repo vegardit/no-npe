@@ -25,6 +25,18 @@ getFilterContext
 streamWriteContext
  ()Ltools/jackson/core/TokenStreamContext;
  ()Ltools/jackson/core/TokenStreamContext;
+writeArray
+ ([DII)Ltools/jackson/core/JsonGenerator;
+ ([1DII)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.util.JsonGeneratorDelegate)
+writeArray
+ ([III)Ltools/jackson/core/JsonGenerator;
+ ([1III)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.util.JsonGeneratorDelegate)
+writeArray
+ ([JII)Ltools/jackson/core/JsonGenerator;
+ ([1JII)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.util.JsonGeneratorDelegate)
+writeArray
+ ([Ljava/lang/String;II)Ltools/jackson/core/JsonGenerator;
+ ([1Ljava/lang/String;II)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.util.JsonGeneratorDelegate)
 writeBinary
  (Ltools/jackson/core/Base64Variant;Ljava/io/InputStream;I)I
  (Ltools/jackson/core/Base64Variant;Ljava/io/InputStream;I)I
@@ -37,6 +49,9 @@ writeBoolean
 writeComment
  (Ljava/lang/String;)Ltools/jackson/core/JsonGenerator;
  (Ljava/lang/String;)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.util.JsonGeneratorDelegate)
+writeEmbeddedObject
+ (Ljava/lang/Object;)Ltools/jackson/core/JsonGenerator;
+ (Ljava/lang/Object;)L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.util.JsonGeneratorDelegate)
 writeEndArray
  ()Ltools/jackson/core/JsonGenerator;
  ()L1tools/jackson/core/JsonGenerator; # @Inherited(tools.jackson.core.util.JsonGeneratorDelegate)
