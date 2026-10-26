@@ -5,6 +5,8 @@ SPDX-FileContributor: Sebastian Thomschke (https://sebthom.de), Vegard IT GmbH (
 SPDX-License-Identifier: EPL-2.0
 SPDX-ArtifactOfProjectHomePage: https://github.com/vegardit/no-npe
 
+Configures the reactor and shared build for the EEA generator and annotation libraries.
+
 check for new dependency/plugin updates using:
   mvn -U -ntp versions:display-dependency-updates versions:display-plugin-updates
 -->
@@ -188,8 +190,14 @@ check for new dependency/plugin updates using:
                   <goal>exec</goal>
                 </goals>
                 <configuration>
-                  <classpathScope>provided</classpathScope>
+                  <!-- Compile scope includes provided target libraries and the generator's transitive dependencies. -->
+                  <classpathScope>compile</classpathScope>
                   <includePluginDependencies>true</includePluginDependencies>
+                  <!-- Resolve the generator's dependencies separately from the Exec plugin's own ASM dependencies. -->
+                  <executableDependency>
+                    <groupId>com.vegardit.no-npe</groupId>
+                    <artifactId>no-npe-eea-generator</artifactId>
+                  </executableDependency>
                   <executable>java</executable>
                   <arguments>
                     <argument>-Deea-generator.action=${eea-generator.action}</argument>
@@ -214,8 +222,13 @@ check for new dependency/plugin updates using:
                   <goal>exec</goal>
                 </goals>
                 <configuration>
-                  <classpathScope>provided</classpathScope>
+                  <classpathScope>compile</classpathScope>
                   <includePluginDependencies>true</includePluginDependencies>
+                  <!-- Packaging uses the same isolated generator dependencies as source validation and generation. -->
+                  <executableDependency>
+                    <groupId>com.vegardit.no-npe</groupId>
+                    <artifactId>no-npe-eea-generator</artifactId>
+                  </executableDependency>
                   <executable>java</executable>
                   <arguments>
                     <argument>-Deea-generator.action=minimize</argument>

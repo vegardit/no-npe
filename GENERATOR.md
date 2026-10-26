@@ -81,8 +81,12 @@ them into the packaged JAR during `process-resources`:
               <goal>exec</goal>
             </goals>
             <configuration>
-              <classpathScope>provided</classpathScope>
+              <classpathScope>compile</classpathScope>
               <includePluginDependencies>true</includePluginDependencies>
+              <executableDependency>
+                <groupId>com.vegardit.no-npe</groupId>
+                <artifactId>no-npe-eea-generator</artifactId>
+              </executableDependency>
               <executable>java</executable>
               <arguments>
                 <argument>-Deea-generator.action=${eea-generator.action}</argument>
@@ -102,8 +106,12 @@ them into the packaged JAR during `process-resources`:
               <goal>exec</goal>
             </goals>
             <configuration>
-              <classpathScope>provided</classpathScope>
+              <classpathScope>compile</classpathScope>
               <includePluginDependencies>true</includePluginDependencies>
+              <executableDependency>
+                <groupId>com.vegardit.no-npe</groupId>
+                <artifactId>no-npe-eea-generator</artifactId>
+              </executableDependency>
               <executable>java</executable>
               <arguments>
                 <argument>-Deea-generator.action=minimize</argument>
@@ -134,6 +142,13 @@ them into the packaged JAR during `process-resources`:
 Replace the target-library coordinates and use a generator version available from
 [Maven Central](https://central.sonatype.com/artifact/com.vegardit.no-npe/no-npe-eea-generator).
 Run Maven with a JDK that can load the target library.
+
+Both executions select the generator with `executableDependency` so its dependencies are resolved separately from the
+Exec plugin's own dependencies.
+This prevents the plugin's ASM version from overriding the version required by the generator.
+Use `classpathScope=compile` to include the target library declared as `provided` and the generator's transitive
+dependencies.
+With `executableDependency`, the `provided` classpath scope omits those transitive generator dependencies.
 
 Configure the packages to scan in `eea-generator.properties`:
 
