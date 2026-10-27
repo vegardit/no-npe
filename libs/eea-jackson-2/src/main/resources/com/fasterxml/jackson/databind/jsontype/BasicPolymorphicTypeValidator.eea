@@ -7,6 +7,9 @@ builder
 _baseTypeMatchers
  [Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;
  [Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;
+_explicitArrayTypes
+ Ljava/util/Set<Ljava/lang/Class<*>;>;
+ Ljava/util/Set<Ljava/lang/Class<*>;>;
 _invalidBaseTypes
  Ljava/util/Set<Ljava/lang/Class<*>;>;
  Ljava/util/Set<Ljava/lang/Class<*>;>;
@@ -23,6 +26,12 @@ _subTypeNameMatchers
 <init>
  (Ljava/util/Set<Ljava/lang/Class<*>;>;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$NameMatcher;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;Z)V
  (Ljava/util/Set<Ljava/lang/Class<*>;>;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$NameMatcher;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;Z)V
+<init>
+ (Ljava/util/Set<Ljava/lang/Class<*>;>;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$NameMatcher;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;ZLjava/util/Set<Ljava/lang/Class<*>;>;)V
+ (Ljava/util/Set<Ljava/lang/Class<*>;>;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$NameMatcher;[Lcom/fasterxml/jackson/databind/jsontype/BasicPolymorphicTypeValidator$TypeMatcher;ZLjava/util/Set<Ljava/lang/Class<*>;>;)V
+isArrayTypeAllowedExplicitly
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;Lcom/fasterxml/jackson/databind/JavaType;)Z
+ (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;L1com/fasterxml/jackson/databind/JavaType;)Z # @Generated(95)
 validateBaseType
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;Lcom/fasterxml/jackson/databind/JavaType;)Lcom/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator$Validity;
  (Lcom/fasterxml/jackson/databind/cfg/MapperConfig<*>;L1com/fasterxml/jackson/databind/JavaType;)L1com/fasterxml/jackson/databind/jsontype/PolymorphicTypeValidator$Validity; # @Overrides(com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator$Base)
