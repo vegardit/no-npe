@@ -115,11 +115,13 @@ class EEAFileTest {
          "imported", //
          " ()Ljava/lang/Object; # " + MARKER_IMPORTED);
 
-      // Minimized artifacts intentionally discard source-only markers and therefore no longer need this member.
+      // Minimization may discard generated metadata, but imported protection must survive comment removal.
       assertThat(eeaFile.renderFileContent(Set.of( //
          SaveOption.OMIT_COMMENTS, //
          SaveOption.OMIT_MEMBERS_WITHOUT_ANNOTATED_SIGNATURE, //
-         SaveOption.OMIT_REDUNDANT_ANNOTATED_SIGNATURES))).doesNotContain("identity", "imported");
+         SaveOption.OMIT_REDUNDANT_ANNOTATED_SIGNATURES))) //
+            .containsSubsequence("imported", " ()Ljava/lang/Object;", " ()Ljava/lang/Object;") //
+            .doesNotContain("identity", " ()Ljava/lang/Object; # " + MARKER_IMPORTED);
    }
 
    @Test

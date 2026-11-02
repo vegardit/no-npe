@@ -108,8 +108,7 @@ public class EEAFile {
 
       public boolean hasSourceContractMarker() {
          // These comments affect a later generator run even when the EEA signature contains no 0/1 marker. Source
-         // compaction must retain them; minimize explicitly omits comments and may still discard the redundant
-         // member.
+         // compaction retains them all; minimization retains protected contracts even when it omits their comments.
          return hasProtectedContractMarker() || hasGeneratedMarker() || hasPolyNullMarker() //
                || getRelationshipMarkerParent(annotatedSignature.comment, MARKER_INHERITED) != null //
                || getRelationshipMarkerParent(annotatedSignature.comment, MARKER_OVERRIDES) != null;
@@ -837,7 +836,8 @@ public class EEAFile {
        */
       final ClassMember lastMember = findLastElement(members);
       for (final ClassMember member : members) {
-         final boolean retainSourceContract = !omitComments && member.hasSourceContractMarker();
+         // Protected unannotated members keep EEA files that tell ECJ a generic library type supports null analysis.
+         final boolean retainSourceContract = member.hasProtectedContractMarker() || !omitComments && member.hasSourceContractMarker();
          if (omitMembersWithoutAnnotatedSignature //
                && !retainSourceContract //
                && !member.hasNullAnnotations()) {

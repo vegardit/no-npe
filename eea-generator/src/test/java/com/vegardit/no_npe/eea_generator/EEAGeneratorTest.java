@@ -3074,6 +3074,53 @@ class EEAGeneratorTest {
    }
 
    @Test
+   void testMinimizePreservesProtectedSupplierContracts(@TempDir final Path tempDir) throws Exception {
+      final Path source = tempDir.resolve("SupplierConsumer.java");
+      Files.writeString(source, String.join(System.lineSeparator(), //
+         "import java.util.function.Supplier;", //
+         "import org.eclipse.jdt.annotation.*;", //
+         "@NonNullByDefault", //
+         "final class SupplierConsumer {", //
+         "  static String nonNull(Supplier<String> supplier) { return supplier.get(); }", //
+         "  static @Nullable String nullable(Supplier<@Nullable String> supplier) { return supplier.get(); }", //
+         "}"));
+      // Keep installed EEA dependencies off the compiler classpath so they cannot hide a missing minimized file.
+      final Path annotationJar = Path.of(NonNullByDefault.class.getProtectionDomain().getCodeSource().getLocation().toURI());
+      final Path compilerProperties = Path.of(System.getProperty("basedir", "."), ".settings", "org.eclipse.jdt.core.prefs");
+
+      for (final String marker : List.of(EEAFile.MARKER_KEEP, EEAFile.MARKER_IMPORTED)) {
+         final Path inputDir = tempDir.resolve(marker + "/input");
+         final var supplier = new EEAFile("java.util.function.Supplier");
+         supplier.classHeader.originalSignature.value = "<T:Ljava/lang/Object;>";
+         supplier.classHeader.annotatedSignature.value = supplier.classHeader.originalSignature.value;
+         supplier.addMember("get", "()TT;").annotatedSignature.comment = "# " + marker;
+         supplier.save(inputDir, SaveOption.REPLACE_EXISTING);
+
+         final var config = new EEAGenerator.Config(tempDir.resolve(marker + "/minimized"));
+         config.inputDirs.add(inputDir);
+         assertThat(EEAGenerator.minimizeEEAFiles(config)).as(marker).isOne();
+         assertThat(Files.readAllLines(config.outputDir.resolve(supplier.relativePath))).containsExactly( //
+            "class java/util/function/Supplier", //
+            " <T:Ljava/lang/Object;>", //
+            "get", //
+            " ()TT;", //
+            " ()TT;");
+         assertThat(EEAGenerator.minimizeEEAFiles(config)).as(marker).isZero();
+
+         final var compilerOutput = new StringWriter();
+         final String[] compilerArguments = { //
+            "-properties", compilerProperties.toAbsolutePath().toString(), "-source", "11", "-target", "11", "-proc:none", //
+            "-classpath", config.outputDir + File.pathSeparator + annotationJar, "-annotationpath", "CLASSPATH", //
+            "-d", "none", source.toString() //
+         };
+         final boolean compiled = BatchCompiler.compile(compilerArguments, new PrintWriter(compilerOutput), new PrintWriter(compilerOutput),
+            null);
+         assertThat(compiled).as("Supplier contract protected by %s:%n%s", marker, compilerOutput).isTrue();
+         assertThat(compilerOutput.toString()).as(marker).isEmpty();
+      }
+   }
+
+   @Test
    void testMinimizePreservesPolyNullReturnWhileAddingIndependentParameterAnnotation(@TempDir final Path tempDir) throws IOException {
       final Path firstInputDir = tempDir.resolve("first-input");
       final Path secondInputDir = tempDir.resolve("second-input");

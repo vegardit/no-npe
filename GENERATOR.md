@@ -927,13 +927,16 @@ Add `@Keep` when that manual value conflicts with current evidence or the comple
 | `input.dirs` | Comma-separated EEA root directories read during generation or minimization. During generation, the first entry is local and later entries are upstream. Direct `minimize` requires at least one existing effective input directory. | n/a |
 | `input.dirs.extra` | Comma-separated upstream EEA roots appended to `input.dirs`, normally immediate predecessor sources in a version chain. | n/a |
 | `deleteIfEmpty` | Delete or skip generated files with no remaining members after rendering. Minimization always deletes empty output. | `true` |
-| `omitClassMembersWithoutNullAnnotation` | Omit generated declarations without null markers unless they contain source-only contract metadata. Minimization always omits them. | `false` |
-| `omitRedundantAnnotatedSignatures` | Omit redundant generated annotated-signature lines unless they contain source-only contract metadata. Minimization always omits them. | `false` |
+| `omitClassMembersWithoutNullAnnotation` | Omit generated declarations without null markers unless they contain source-only contract metadata. Minimization retains only those protected by `@Keep` or `@Imported`. | `false` |
+| `omitRedundantAnnotatedSignatures` | Omit redundant generated annotated-signature lines unless they contain source-only contract metadata. Minimization retains only those protected by `@Keep` or `@Imported`. | `false` |
 
 `minimize` always writes compact artifacts.
-It omits source comments, members without null annotations, and redundant annotated-signature lines, and it deletes empty
-output.
-A member retained only by source ownership or relationship metadata can disappear after those comments are removed.
+It omits source comments and deletes empty output.
+It also omits members without null annotations and redundant annotated-signature lines, except for members protected by
+`@Keep` or `@Imported`.
+These protected members retain both signature lines even when the signatures are identical.
+This preserves EEA files such as `Supplier.eea`, whose presence lets ECJ trust nullness supplied by generic type arguments.
+Other members retained only by source ownership or relationship metadata can disappear after those comments are removed.
 The generation rendering options do not weaken this fixed minimization policy.
 
 The sample Maven launcher forwards `action`, `input.dirs`, and `output.dir` as JVM system properties.
