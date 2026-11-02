@@ -3,6 +3,9 @@ class org/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener
 ERROR_MESSAGE
  Ljava/lang/String;
  L1java/lang/String; # @Generated
+RECORDED_METHOD
+ Ljava/lang/String;
+ L1java/lang/String; # @Generated
 
 <init>
  ([Lorg/apache/wicket/protocol/http/IResourceIsolationPolicy;)V
@@ -34,6 +37,9 @@ onEndRequest
 onRequestHandlerResolved
  (Lorg/apache/wicket/request/cycle/RequestCycle;Lorg/apache/wicket/request/IRequestHandler;)V
  (Lorg/apache/wicket/request/cycle/RequestCycle;Lorg/apache/wicket/request/IRequestHandler;)V
+recordOrigin
+ (Ljakarta/servlet/http/HttpServletRequest;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;
+ (L1jakarta/servlet/http/HttpServletRequest;)L1java/util/Map<Ljava/lang/String;Ljava/lang/String;>; # @Generated(2,44)
 setDisallowedOutcomeAction
  (Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener$CsrfAction;)Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener;
  (Lorg/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener$CsrfAction;)L1org/apache/wicket/protocol/http/ResourceIsolationRequestCycleListener; # @Generated(85)
