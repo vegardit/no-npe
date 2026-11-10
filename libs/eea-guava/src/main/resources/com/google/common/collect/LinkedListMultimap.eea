@@ -19,6 +19,9 @@ create
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(Lcom/google/common/collect/Multimap<+TK;+TV;>;)Lcom/google/common/collect/LinkedListMultimap<TK;TV;>;
  <K:Ljava/lang/Object;V:Ljava/lang/Object;>(L1com/google/common/collect/Multimap<+TK;+TV;>;)L1com/google/common/collect/LinkedListMultimap<TK;TV;>; # @Generated(44,91)
 
+asMap
+ ()Ljava/util/Map<TK;Ljava/util/Collection<TV;>;>;
+ ()L1java/util/Map<TK;Ljava/util/Collection<TV;>;>; # @Generated(3)
 containsKey
  (Ljava/lang/Object;)Z
  (L0java/lang/Object;)Z # @Inherited(com.google.common.collect.Multimap)
@@ -27,10 +30,16 @@ containsValue
  (L0java/lang/Object;)Z # @Inherited(com.google.common.collect.Multimap)
 entries
  ()Ljava/util/List<Ljava/util/Map$Entry<TK;TV;>;>;
- ()Ljava/util/List<Ljava/util/Map$Entry<TK;TV;>;>;
+ ()L1java/util/List<Ljava/util/Map$Entry<TK;TV;>;>; # @Generated(3)
 get
  (TK;)Ljava/util/List<TV;>;
  (TK;)L1java/util/List<TV;>; # @Generated(6)
+keySet
+ ()Ljava/util/Set<TK;>;
+ ()L1java/util/Set<TK;>; # @Inherited(com.google.common.collect.Multimap)
+keys
+ ()Lcom/google/common/collect/Multiset<TK;>;
+ ()L1com/google/common/collect/Multiset<TK;>; # @Generated(3)
 put
  (TK;TV;)Z
  (TK;TV;)Z
@@ -42,4 +51,4 @@ replaceValues
  (TK;L1java/lang/Iterable<+TV;>;)L1java/util/List<TV;>; # @Generated(5,32)
 values
  ()Ljava/util/List<TV;>;
- ()Ljava/util/List<TV;>;
+ ()L1java/util/List<TV;>; # @Generated(3)
